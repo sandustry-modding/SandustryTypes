@@ -35114,31 +35114,17 @@ Declaration files use `export namespace` because it is the usual `.d.ts` pattern
 npm install @sandustry-modding/types
 ```
 
-#### Project config (preferred)
+#### Ambient types (preferred)
 
-Add the package to `compilerOptions.types` in `tsconfig.json` or `jsconfig.json`:
-
-```json
-{
-  "compilerOptions": {
-    "types": ["@sandustry-modding/types"]
-  }
-}
-```
-
-If you already list other packages in `types` (for example `"react"` or `"node"`), keep those entries and add `"@sandustry-modding/types"` to the same array. A non-empty `types` list replaces TypeScript’s default auto-inclusion of all `@types/*` packages.
-
-`jsconfig.json` uses the same shape for JavaScript mods.
-
-#### Per-file reference
-
-You can also pull the ambient types into one file:
+Pull the host `sandkit` ambient into your project with a triple-slash reference. Put it at the top of `main.js` / `worker.js`, or in a small ambient `.d.ts` that your `tsconfig` / `jsconfig` includes:
 
 ```ts
 /// <reference types="@sandustry-modding/types" />
 ```
 
-That triple-slash directive works in `.ts` and `.js` (including checked JS with `checkJs`). Put it at the top of `main.js` / `worker.js`, or in a small ambient `.d.ts` included by your project.
+That works in `.ts` and `.js` (including checked JS with `checkJs`).
+
+Do **not** list `@sandustry-modding/types` under `compilerOptions.types`. That list only loads packages from `node_modules/@types` (for example `"react"` or `"node"`).
 
 Deep declaration modules are also available, for example:
 

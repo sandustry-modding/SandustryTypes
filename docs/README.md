@@ -23,27 +23,15 @@ Community TypeScript reference for the live Sandustry `sandkit` host API. Packag
 npm install @sandustry-modding/types
 ```
 
-### Project config (preferred)
+### Ambient types (preferred)
 
-In `tsconfig.json` or `jsconfig.json`:
-
-```json
-{
-  "compilerOptions": {
-    "types": ["@sandustry-modding/types"]
-  }
-}
-```
-
-If `types` already lists other packages (for example `"react"` or `"node"`), add `"@sandustry-modding/types"` to that array. A non-empty `types` list replaces auto-inclusion of all `@types/*` packages.
-
-### Per-file reference
+Pull the host `sandkit` ambient into your project with a triple-slash reference. Put it at the top of `main.js` / `worker.js`, or in a small ambient `.d.ts` that your `tsconfig` / `jsconfig` includes:
 
 ```ts
 /// <reference types="@sandustry-modding/types" />
 ```
 
-Works in `.ts` and `.js` (including checked JS). Put it at the top of a source file, or in an ambient `.d.ts` included by the project.
+Works in `.ts` and `.js` (including checked JS). Do **not** list `@sandustry-modding/types` under `compilerOptions.types` — that list only loads packages from `node_modules/@types`.
 
 Use the ambient `sandkit` free name in `main.js`. In `worker.js`, type the API as `WorkerSandkitApi` — worker and main surfaces overlap but are not interchangeable.
 

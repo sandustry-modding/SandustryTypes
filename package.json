@@ -1,6 +1,6 @@
 {
   "name": "@sandustry-modding/types",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "TypeScript declarations and API docs for the Sandustry Sandkit host API",
   "license": "MIT",
   "repository": {
@@ -17,14 +17,61 @@
       "types": "./src/global.d.ts"
     },
     "./package.json": "./package.json",
-    "./*": {
-      "types": "./src/*"
+    "./sandkit": {
+      "types": "./src/sandkit/index.d.ts"
+    },
+    "./sandkit/*": {
+      "types": [
+        "./src/sandkit/*.d.ts",
+        "./src/sandkit/*/index.d.ts"
+      ]
+    },
+    "./sandkit/*/*": {
+      "types": [
+        "./src/sandkit/*/*.d.ts",
+        "./src/sandkit/*/*/index.d.ts"
+      ]
+    },
+    "./sandkit/*/*/*": {
+      "types": [
+        "./src/sandkit/*/*/*.d.ts",
+        "./src/sandkit/*/*/*/index.d.ts"
+      ]
+    },
+    "./shared": {
+      "types": "./src/shared/index.d.ts"
+    },
+    "./shared/*": {
+      "types": [
+        "./src/shared/*.d.ts",
+        "./src/shared/*/index.d.ts"
+      ]
+    },
+    "./shared/*/*": {
+      "types": [
+        "./src/shared/*/*.d.ts",
+        "./src/shared/*/*/index.d.ts"
+      ]
+    },
+    "./worker": {
+      "types": "./src/worker/index.d.ts"
+    },
+    "./worker/*": {
+      "types": [
+        "./src/worker/*.d.ts",
+        "./src/worker/*/index.d.ts"
+      ]
+    },
+    "./worker/*/*": {
+      "types": [
+        "./src/worker/*/*.d.ts",
+        "./src/worker/*/*/index.d.ts"
+      ]
     }
   },
   "files": [
     "src/**/*.d.ts",
     "CHANGELOG.md",
-    "docs/Changelog.md",
     "LICENSE",
     "README.md"
   ],
@@ -33,7 +80,10 @@
     "docs:api": "node scripts/generate-api-docs.mjs",
     "docs:serve": "npx --yes docsify-cli serve docs",
     "test": "node --test scripts/api-search.test.js",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "verify-package": "node scripts/verify-package.mjs",
+    "validate": "npm run typecheck && npm test && npm run verify-package",
+    "prepack": "npm run validate"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",

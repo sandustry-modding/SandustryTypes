@@ -212,13 +212,21 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
 }
 
 /* Group titles only (plain text). Top-level page links also wrap in <p>. */
-.sidebar-nav > ul > li > p:not(:has(a)) {
+.sidebar-nav > ul > li > p:not(:has(a)),
+.sidebar-nav > ul > li.group > p.group-title {
   margin: 1.1em 0 0.35em;
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--theme-color);
+}
+
+/* Space between site links (…Browse) and the API tree / Sandkit entry. */
+.sidebar-nav > ul > li.group:has(a[href*="modules"]) + li {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--theme-color) 35%, var(--sidebar-border-color, #2a2a2a));
 }
 
 /* Prose links: no underline (matches SandustryTypes). */
