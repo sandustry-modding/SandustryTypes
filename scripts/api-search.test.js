@@ -68,7 +68,7 @@ test("qualifiedNameToSlug and apiPathToRouteFile use runtime-style URLs", () => 
   );
 });
 
-test("qualifyApiMarkdown sets search titles and keeps short heading ids", () => {
+test("qualifyApiMarkdown keeps local member headings and stores the runtime path", () => {
   const src = `# settings
 
 ## Functions
@@ -86,8 +86,10 @@ A value.
   const out = qualifyApiMarkdown(src, "sandkit.api.settings");
   assert.match(out, /^# sandkit\.api\.settings$/m);
   assert.match(out, /^## Functions <!-- \{docsify-ignore\} -->$/m);
-  assert.match(out, /^### sandkit\.api\.settings\.get\(\) :id=get$/m);
-  assert.match(out, /^### sandkit\.api\.settings\.ConfigValueV1 :id=configvaluev1$/m);
+  assert.match(out, /^### get\(\) :id=get$/m);
+  assert.match(out, /<code>sandkit\.api\.settings\.get\(\)<\/code>/);
+  assert.match(out, /^### ConfigValueV1 :id=configvaluev1$/m);
+  assert.match(out, /<code>sandkit\.api\.settings\.ConfigValueV1<\/code>/);
 });
 
 test("qualifyApiMarkdown marks worker members without breaking the main-thread name", () => {
@@ -99,7 +101,8 @@ test("qualifyApiMarkdown marks worker members without breaking the main-thread n
 `;
   const out = qualifyApiMarkdown(src, "sandkit.api.elements (worker)");
   assert.match(out, /^# sandkit\.api\.elements \(worker\)$/m);
-  assert.match(out, /^### sandkit\.api\.elements\.register\(\) \(worker\) :id=register$/m);
+  assert.match(out, /^### register\(\) :id=register$/m);
+  assert.match(out, /<code>sandkit\.api\.elements\.register\(\) \(worker\)<\/code>/);
 });
 
 test("mdFileToSearchPath matches Docsify getFile paths", () => {
@@ -107,7 +110,9 @@ test("mdFileToSearchPath matches Docsify getFile paths", () => {
   assert.equal(mdFileToSearchPath("quick-start.md"), "/quick-start");
   assert.equal(mdFileToSearchPath("api/sandkit.api.settings.md"), "/api/sandkit.api.settings");
   assert.equal(mdFileToSearchPath("api/_sidebar.md"), null);
+  assert.equal(mdFileToSearchPath("full.md"), null);
   assert.equal(mdFileToSearchPath("api/full.md"), null);
+  assert.equal(mdFileToSearchPath("modules.md"), "/modules");
   assert.equal(mdFileToSearchPath("api/global/README.md"), null);
   assert.equal(mdFileToSearchPath("AGENTS.md"), null);
 });

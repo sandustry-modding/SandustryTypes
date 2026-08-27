@@ -39,10 +39,12 @@ const MAIN_API_GROUPS = [
   {
     title: "World & simulation",
     names: [
+      "grid",
       "world",
+      "pickups",
       "elements",
       "terrains",
-      "grid",
+      "entities",
       "fire",
       "excavation",
       "reactions",
@@ -62,6 +64,9 @@ const MAIN_API_GROUPS = [
       "energy",
       "structureBehaviors",
       "patterns",
+      "pipes",
+      "factory",
+      "blueprints",
     ],
   },
   {
@@ -89,6 +94,7 @@ const MAIN_API_GROUPS = [
       "utils",
       "constants",
       "gameConfig",
+      "game",
     ],
   },
 ];
@@ -164,12 +170,17 @@ const workerNs = snapshotNamespaceTree(OUT, "worker");
 const engineNs = snapshotNamespaceTree(OUT, "engine");
 
 const linkMap = flattenApiRoutes(OUT);
-writeModuleIndex(OUT, linkMap, mainNs, workerNs, engineNs);
-writeFullPage(OUT, linkMap, mainNs, workerNs, engineNs);
-rewriteGeneratedNavLinks(OUT, linkMap);
+const leftoverTypedocIndex = join(OUT, "modules.md");
+if (existsSync(leftoverTypedocIndex)) {
+  rmSync(leftoverTypedocIndex, { force: true });
+}
+writeModuleIndex(DOCS, linkMap, mainNs, workerNs, engineNs);
+writeFullPage(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
+writeApiSidebar(OUT, linkMap, mainNs, workerNs, engineNs);
+rewriteGeneratedNavLinks(DOCS, linkMap);
 writeSearchPaths(DOCS);
 
-console.log("Wrote API docs to docs/api/");
+console.log("Wrote API docs to docs/api/ (index: docs/modules.md, docs/full.md)");
 
 /**
  * @typedef {{ name: string, typedocRel: string, children: NamespaceNode[] }} NamespaceNode
@@ -266,13 +277,13 @@ function rewriteGeneratedNavLinks(outDir, linkMap) {
 
 /**
  * Expanded Module index with thematic groups.
- * @param {string} outDir
+ * @param {string} docsDir
  * @param {Map<string, string>} linkMap
  * @param {NamespaceNode[]} mainNs
  * @param {NamespaceNode[]} workerNs
  * @param {NamespaceNode[]} engineNs
  */
-function writeModuleIndex(outDir, linkMap, mainNs, workerNs, engineNs) {
+function writeModuleIndex(docsDir, linkMap, mainNs, workerNs, engineNs) {
   const href = (typedocRel) => linkMap.get(`api/${typedocRel}`) || `api/${typedocRel}`;
   const p = (slug) => `api/${slug}.md`;
 
@@ -282,11 +293,11 @@ function writeModuleIndex(outDir, linkMap, mainNs, workerNs, engineNs) {
     "",
     "# Sandkit API",
     "",
-    "Sandkit namespaces used by mods. Use groups below to find a namespace, or open [Full API reference](api/full.md).",
+    "Sandkit namespaces used by mods. Use groups below to find a namespace, or open [Full API reference](full.md).",
     "",
     "## Roots",
     "",
-    `- [Full API reference](${p("full")}) — all namespaces on one page`,
+    "- [Full API reference](full.md) — all namespaces on one page",
     `- [Main thread](${p("sandkit.api")}) — \`sandkit.api\``,
     `- [Worker](${p("sandkit.api.worker")}) — worker-thread \`sandkit.api\``,
     `- [Engine](${p("sandkit.engine")}) — \`sandkit.engine\``,
@@ -324,7 +335,7 @@ function writeModuleIndex(outDir, linkMap, mainNs, workerNs, engineNs) {
     "",
   ];
 
-  writeFileSync(join(outDir, "modules.md"), `${lines.join("\n")}\n`);
+  writeFileSync(join(docsDir, "modules.md"), `${lines.join("\n")}\n`);
 }
 
 /**
@@ -521,13 +532,14 @@ function typedocSignatureToTs(source) {
 
 /**
  * One Markdown page with every API section inlined (module order, then leftovers).
+ * @param {string} docsDir
  * @param {string} outDir
  * @param {Map<string, string>} linkMap
  * @param {NamespaceNode[]} mainNs
  * @param {NamespaceNode[]} workerNs
  * @param {NamespaceNode[]} engineNs
  */
-function writeFullPage(outDir, linkMap, mainNs, workerNs, engineNs) {
+function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
   const href = (typedocRel) => linkMap.get(`api/${typedocRel}`) || `api/${typedocRel}`;
   const routeName = (apiHref) => String(apiHref).replace(/^api\//, "");
 
@@ -569,7 +581,7 @@ function writeFullPage(outDir, linkMap, mainNs, workerNs, engineNs) {
   const parts = [
     "# Sandkit API (full) <!-- {docsify-ignore-all} -->",
     "",
-    "Every generated API page on one document. Use the [Module index](api/modules.md) when you only need one namespace.",
+    "Every generated API page on one document. Use the [Module index](modules.md) when you only need one namespace.",
     "",
   ];
 
@@ -581,7 +593,128 @@ function writeFullPage(outDir, linkMap, mainNs, workerNs, engineNs) {
     parts.push(body, "", "---", "");
   }
 
-  writeFileSync(join(outDir, "full.md"), `${parts.join("\n").trimEnd()}\n`);
+  writeFileSync(join(docsDir, "full.md"), `${parts.join("\n").trimEnd()}\n`);
+}
+
+/**
+ * Nested Docsify sidebar for `/api/*` pages. Links resolve from the docs root.
+ * @param {string} outDir
+ * @param {Map<string, string>} linkMap
+ * @param {NamespaceNode[]} mainNs
+ * @param {NamespaceNode[]} workerNs
+ * @param {NamespaceNode[]} engineNs
+ */
+function writeApiSidebar(outDir, linkMap, mainNs, workerNs, engineNs) {
+  const href = (typedocRel) => linkMap.get(`api/${typedocRel}`) || `api/${typedocRel}`;
+  const used = new Set();
+
+  const pad = (level) => "  ".repeat(level);
+  const link = (level, label, apiHref) => {
+    const file = String(apiHref).replace(/^api\//, "");
+    const md = file.endsWith(".md") ? file : `${file}.md`;
+    used.add(md);
+    return `${pad(level)}- [${label}](api/${md})`;
+  };
+  const heading = (level, title) => `${pad(level)}- ${title}`;
+
+  const nodeLines = (node, level) => {
+    /** @type {string[]} */
+    const lines = [link(level, node.name, href(node.typedocRel))];
+    for (const child of node.children) {
+      lines.push(...nodeLines(child, level + 1));
+    }
+    return lines;
+  };
+
+  const grouped = (nodes, groups, level) => {
+    const byName = new Map(nodes.map((n) => [n.name, n]));
+    const seen = new Set();
+    /** @type {string[]} */
+    const out = [];
+    for (const group of groups) {
+      const members = group.names.map((name) => byName.get(name)).filter(Boolean);
+      if (!members.length) continue;
+      out.push(heading(level, group.title));
+      for (const node of members) {
+        seen.add(node.name);
+        out.push(...nodeLines(node, level + 1));
+      }
+    }
+    const leftover = nodes.filter((n) => !seen.has(n.name));
+    if (leftover.length) {
+      out.push(heading(level, "Other"));
+      for (const node of leftover) {
+        out.push(...nodeLines(node, level + 1));
+      }
+    }
+    return out;
+  };
+
+  const ifFile = (filename, level, label) => {
+    if (!existsSync(join(outDir, filename))) return [];
+    return [link(level, label, `api/${filename}`)];
+  };
+
+  /** @type {string[]} */
+  const lines = [
+    "- [Home](/)",
+    "- [Changelog](Changelog.md)",
+    "- [Official Sandkit API](https://sandustry.com/sandkit.html ':target=_blank')",
+    "- [Mod template](https://sandustry-modding.github.io/SandustryModTemplate/#/ ':target=_blank')",
+    "",
+    "- Browse",
+    "  - [Namespaces](modules.md)",
+    "  - [Full API reference](full.md)",
+    "",
+    "- Root",
+    ...ifFile("sandkit.md", 1, "sandkit"),
+    ...ifFile("sandkit.api.md", 1, "sandkit.api"),
+    ...ifFile("sandkit.api.worker.md", 1, "sandkit.api (worker)"),
+    ...ifFile("sandkit.engine.md", 1, "sandkit.engine"),
+    ...ifFile("sandkit.react.md", 1, "sandkit.react"),
+    "",
+    "- Main thread",
+    ...grouped(mainNs, MAIN_API_GROUPS, 1),
+    "",
+    "- Worker thread",
+    ...workerNs.flatMap((node) => nodeLines(node, 1)),
+    "",
+    "- Engine",
+    ...ifFile("sandkit.engine.api.md", 1, "sandkit.engine.api"),
+    ...grouped(engineNs, ENGINE_API_GROUPS, 1),
+    "",
+    "- Enums",
+    ...ifFile("sandkit.enums.md", 1, "Overview"),
+  ];
+
+  const enums = [...linkMap.values()]
+    .filter((h) => /^api\/sandkit\.enums\.[A-Za-z][\w]*\.md$/.test(h))
+    .map((h) => h.replace(/^api\//, ""))
+    .sort((a, b) => a.localeCompare(b));
+  for (const file of enums) {
+    const name = file.replace(/^sandkit\.enums\./, "").replace(/\.md$/, "");
+    lines.push(link(1, name, `api/${file}`));
+  }
+
+  lines.push("", "- Shared types");
+  for (const name of ["asset", "engine", "jsonvalue", "nominal", "player"]) {
+    lines.push(...ifFile(`shared.${name}.md`, 1, name));
+  }
+
+  const skip = new Set(["_sidebar.md"]);
+  const leftovers = readdirSync(outDir)
+    .filter((name) => name.endsWith(".md") && !skip.has(name) && !used.has(name))
+    .sort((a, b) => a.localeCompare(b));
+  if (leftovers.length) {
+    lines.push("", "- Other");
+    for (const file of leftovers) {
+      const label = file.replace(/\.md$/, "");
+      lines.push(link(1, label, `api/${file}`));
+    }
+  }
+
+  lines.push("");
+  writeFileSync(join(outDir, "_sidebar.md"), `${lines.join("\n").trimEnd()}\n`);
 }
 
 /**

@@ -120,9 +120,10 @@ export function qualifyApiMarkdown(content, qualified) {
     const name = fn ? fn[1] : ident ? ident[1] : null;
     if (!name) return line;
 
+    const local = fn ? `${name}()` : name;
     const core = fn ? `${base}.${name}()` : `${base}.${name}`;
-    const display = worker ? `${core} (worker)` : core;
-    return `### ${display} :id=${name.toLowerCase()}`;
+    const qname = worker ? `${core} (worker)` : core;
+    return `### ${local} :id=${name.toLowerCase()}\n\n<p class="smt-member-path"><code>${qname}</code></p>`;
   });
 
   return out;
