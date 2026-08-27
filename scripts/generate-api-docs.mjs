@@ -192,9 +192,12 @@ console.log("Wrote API docs to docs/api/ (index: docs/modules.md, docs/full.md)"
  * @returns {NamespaceNode[]}
  */
 function snapshotNamespaceTree(outDir, modulePath) {
-  const nsDir = join(outDir, modulePath, "namespaces");
-  if (!existsSync(nsDir)) return [];
-  return listNamespaceNodes(nsDir, `${modulePath}/namespaces`);
+  for (const prefix of ["", "src/"]) {
+    const nsDir = join(outDir, prefix + modulePath, "namespaces");
+    if (!existsSync(nsDir)) continue;
+    return listNamespaceNodes(nsDir, `${prefix}${modulePath}/namespaces`);
+  }
+  return [];
 }
 
 /**
@@ -240,6 +243,10 @@ function flattenApiRoutes(outDir) {
     if (!routeFile) continue;
 
     linkMap.set(`api/${rel}`, `api/${routeFile}`);
+    const relWithoutSrc = rel.replace(/^src\//, "");
+    if (relWithoutSrc !== rel) {
+      linkMap.set(`api/${relWithoutSrc}`, `api/${routeFile}`);
+    }
     pages.push({
       routeFile,
       content: readFileSync(filePath, "utf8"),

@@ -1,6 +1,6 @@
 # sandkit.enums.AuthorizationType
 
-Defined in: [sandkit/enums/index.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L32)
+Defined in: [sandkit/enums/index.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L32)
 
 Zone rules that restrict player abilities.
 
@@ -14,7 +14,7 @@ Zone rules that restrict player abilities.
 NoJetpack: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L33)
+Defined in: [sandkit/enums/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L33)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:33](https://github.com/sandustry-modding/S
 NoGrab: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L34)
+Defined in: [sandkit/enums/index.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L34)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [sandkit/enums/index.d.ts:34](https://github.com/sandustry-modding/S
 NoBuild: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L35)
+Defined in: [sandkit/enums/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L35)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [sandkit/enums/index.d.ts:35](https://github.com/sandustry-modding/S
 NoTool: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L36)
+Defined in: [sandkit/enums/index.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L36)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [sandkit/enums/index.d.ts:36](https://github.com/sandustry-modding/S
 NoExcavation: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L37)
+Defined in: [sandkit/enums/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L37)
 
 ***
 
@@ -74,4 +74,4 @@ Defined in: [sandkit/enums/index.d.ts:37](https://github.com/sandustry-modding/S
 NoToolExceptFlamethrower: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L38)
+Defined in: [sandkit/enums/index.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L38)

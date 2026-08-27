@@ -13,7 +13,7 @@ Main thread only.
 get(key: string): JsonValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/gameconfig.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/gameconfig.d.ts#L12)
+Defined in: [sandkit/api/gameconfig.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L12)
 
 Returns a config value by key, or undefined when missing.
 
@@ -39,7 +39,7 @@ Game config key (merged defaults and overrides).
 getAll(): JsonObjectV1
 ```
 
-Defined in: [sandkit/api/gameconfig.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/gameconfig.d.ts#L14)
+Defined in: [sandkit/api/gameconfig.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L14)
 
 Returns the full config object.
 

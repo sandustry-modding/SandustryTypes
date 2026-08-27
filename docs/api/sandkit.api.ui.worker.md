@@ -14,7 +14,7 @@ Main thread adds richer UI APIs on top of this shape.
 
 <p class="smt-member-path"><code>sandkit.api.ui.I18nTextKey (worker)</code></p>
 
-Defined in: [shared/api/ui.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L23)
+Defined in: [shared/api/ui.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L23)
 
 Translation key with optional parameter substitution.
 
@@ -26,7 +26,7 @@ Translation key with optional parameter substitution.
 key: string
 ```
 
-Defined in: [shared/api/ui.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L25)
+Defined in: [shared/api/ui.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L25)
 
 Namespaced translation key (for example `ui|save|save`).
 
@@ -36,7 +36,7 @@ Namespaced translation key (for example `ui|save|save`).
 optional params?: Record<string, string | number>
 ```
 
-Defined in: [shared/api/ui.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L27)
+Defined in: [shared/api/ui.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L27)
 
 Values merged into the translated string.
 
@@ -46,7 +46,7 @@ Values merged into the translated string.
 
 <p class="smt-member-path"><code>sandkit.api.ui.I18nTranslatable (worker)</code></p>
 
-Defined in: [shared/api/ui.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L31)
+Defined in: [shared/api/ui.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L31)
 
 Value returned by `sandkit.api.i18n.translatable`.
 
@@ -58,7 +58,7 @@ Value returned by `sandkit.api.i18n.translatable`.
 \_\_translatable: true
 ```
 
-Defined in: [shared/api/ui.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L32)
+Defined in: [shared/api/ui.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L32)
 
 ##### key
 
@@ -66,7 +66,7 @@ Defined in: [shared/api/ui.d.ts:32](https://github.com/sandustry-modding/Sandust
 key: string
 ```
 
-Defined in: [shared/api/ui.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L33)
+Defined in: [shared/api/ui.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L33)
 
 ##### fallback
 
@@ -74,7 +74,7 @@ Defined in: [shared/api/ui.d.ts:33](https://github.com/sandustry-modding/Sandust
 fallback: string
 ```
 
-Defined in: [shared/api/ui.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L34)
+Defined in: [shared/api/ui.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L34)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [shared/api/ui.d.ts:34](https://github.com/sandustry-modding/Sandust
 
 <p class="smt-member-path"><code>sandkit.api.ui.ToastOptions (worker)</code></p>
 
-Defined in: [shared/api/ui.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L38)
+Defined in: [shared/api/ui.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L38)
 
 Cooldown, style, and auto-dismiss options for [toast](#toast).
 
@@ -94,7 +94,7 @@ Cooldown, style, and auto-dismiss options for [toast](#toast).
 optional cooldown?: number
 ```
 
-Defined in: [shared/api/ui.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L40)
+Defined in: [shared/api/ui.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L40)
 
 Minimum ms before the same toast can show again.
 
@@ -104,7 +104,7 @@ Minimum ms before the same toast can show again.
 optional cooldownKey?: string
 ```
 
-Defined in: [shared/api/ui.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L45)
+Defined in: [shared/api/ui.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L45)
 
 Dedupe key paired with [ToastOptions.cooldown](#cooldown).
 Defaults to the message string or `message.key`.
@@ -115,7 +115,7 @@ Defaults to the message string or `message.key`.
 optional duration?: number | false
 ```
 
-Defined in: [shared/api/ui.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L50)
+Defined in: [shared/api/ui.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L50)
 
 Auto-dismiss delay in ms. Default `5000`.
 Set `false` to keep the toast until another toast replaces it.
@@ -126,7 +126,7 @@ Set `false` to keep the toast until another toast replaces it.
 optional variant?: string & object | "danger" | "hint" | "hole"
 ```
 
-Defined in: [shared/api/ui.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L52)
+Defined in: [shared/api/ui.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L52)
 
 Visual style applied to the toast body.
 
@@ -140,7 +140,7 @@ Visual style applied to the toast body.
 LocalizedText = string | I18nTextKey | I18nTranslatable
 ```
 
-Defined in: [shared/api/ui.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L17)
+Defined in: [shared/api/ui.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L17)
 
 Plain text, translation key object, or i18n translatable value.
 
@@ -154,7 +154,7 @@ Plain text, translation key object, or i18n translatable value.
 toast(message: LocalizedText, options?: ToastOptions): void
 ```
 
-Defined in: [shared/api/ui.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L14)
+Defined in: [shared/api/ui.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L14)
 
 Show a short on-screen toast message.
 

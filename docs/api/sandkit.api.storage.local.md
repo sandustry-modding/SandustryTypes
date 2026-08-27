@@ -12,7 +12,7 @@ Local session storage without mod id scope.
 get(key: string): JsonValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/storage.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/storage.d.ts#L42)
+Defined in: [sandkit/api/storage.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L42)
 
 Read a local storage value by key.
 
@@ -38,7 +38,7 @@ Storage key.
 set(key: string, value: JsonValueV1): void
 ```
 
-Defined in: [sandkit/api/storage.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/storage.d.ts#L48)
+Defined in: [sandkit/api/storage.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L48)
 
 Write a local storage value by key.
 
@@ -70,7 +70,7 @@ JSON-serializable value.
 remove(key: string): void
 ```
 
-Defined in: [sandkit/api/storage.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/storage.d.ts#L53)
+Defined in: [sandkit/api/storage.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L53)
 
 Remove a local storage key.
 

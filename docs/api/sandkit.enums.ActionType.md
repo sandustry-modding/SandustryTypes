@@ -1,6 +1,6 @@
 # sandkit.enums.ActionType
 
-Defined in: [sandkit/enums/index.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L24)
+Defined in: [sandkit/enums/index.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L24)
 
 High-level action channel (weapon, building, tool, mod).
 
@@ -14,7 +14,7 @@ High-level action channel (weapon, building, tool, mod).
 Weapon: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L25)
+Defined in: [sandkit/enums/index.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L25)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:25](https://github.com/sandustry-modding/S
 Building: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L26)
+Defined in: [sandkit/enums/index.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L26)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [sandkit/enums/index.d.ts:26](https://github.com/sandustry-modding/S
 Tool: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L27)
+Defined in: [sandkit/enums/index.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L27)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [sandkit/enums/index.d.ts:27](https://github.com/sandustry-modding/S
 Mod: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L28)
+Defined in: [sandkit/enums/index.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L28)

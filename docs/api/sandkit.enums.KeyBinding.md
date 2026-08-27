@@ -1,6 +1,6 @@
 # sandkit.enums.KeyBinding
 
-Defined in: [sandkit/enums/index.d.ts:181](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L181)
+Defined in: [sandkit/enums/index.d.ts:181](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L181)
 
 Named input bindings (settings keys).
 
@@ -14,7 +14,7 @@ Named input bindings (settings keys).
 OpenBuildMenu: "OpenBuildMenu"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L182)
+Defined in: [sandkit/enums/index.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L182)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:182](https://github.com/sandustry-modding/
 GrapplingHook: "GrapplingHook"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L183)
+Defined in: [sandkit/enums/index.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L183)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [sandkit/enums/index.d.ts:183](https://github.com/sandustry-modding/
 Escape: "Escape"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L184)
+Defined in: [sandkit/enums/index.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L184)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [sandkit/enums/index.d.ts:184](https://github.com/sandustry-modding/
 OpenTechTree: "OpenTechTree"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L185)
+Defined in: [sandkit/enums/index.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L185)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [sandkit/enums/index.d.ts:185](https://github.com/sandustry-modding/
 OpenInventory: "OpenInventory"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:186](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L186)
+Defined in: [sandkit/enums/index.d.ts:186](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L186)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [sandkit/enums/index.d.ts:186](https://github.com/sandustry-modding/
 ReverseBuildDirection: "ReverseBuildDirection"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:187](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L187)
+Defined in: [sandkit/enums/index.d.ts:187](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L187)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [sandkit/enums/index.d.ts:187](https://github.com/sandustry-modding/
 Marquee: "Marquee"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L188)
+Defined in: [sandkit/enums/index.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L188)
 
 ***
 
@@ -98,7 +98,7 @@ Defined in: [sandkit/enums/index.d.ts:188](https://github.com/sandustry-modding/
 Pause: "Pause"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L189)
+Defined in: [sandkit/enums/index.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L189)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: [sandkit/enums/index.d.ts:189](https://github.com/sandustry-modding/
 Copy: "Copy"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L190)
+Defined in: [sandkit/enums/index.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L190)
 
 ***
 
@@ -122,7 +122,7 @@ Defined in: [sandkit/enums/index.d.ts:190](https://github.com/sandustry-modding/
 Paste: "Paste"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L191)
+Defined in: [sandkit/enums/index.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L191)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: [sandkit/enums/index.d.ts:191](https://github.com/sandustry-modding/
 Flip: "Flip"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L192)
+Defined in: [sandkit/enums/index.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L192)
 
 ***
 
@@ -146,7 +146,7 @@ Defined in: [sandkit/enums/index.d.ts:192](https://github.com/sandustry-modding/
 Delete: "Delete"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L193)
+Defined in: [sandkit/enums/index.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L193)
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: [sandkit/enums/index.d.ts:193](https://github.com/sandustry-modding/
 PauseCamera: "PauseCamera"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L194)
+Defined in: [sandkit/enums/index.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L194)
 
 ***
 
@@ -170,7 +170,7 @@ Defined in: [sandkit/enums/index.d.ts:194](https://github.com/sandustry-modding/
 OpenUpgrades: "OpenUpgrades"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L195)
+Defined in: [sandkit/enums/index.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L195)
 
 ***
 
@@ -182,7 +182,7 @@ Defined in: [sandkit/enums/index.d.ts:195](https://github.com/sandustry-modding/
 BuildMode: "BuildMode"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L196)
+Defined in: [sandkit/enums/index.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L196)
 
 ***
 
@@ -194,7 +194,7 @@ Defined in: [sandkit/enums/index.d.ts:196](https://github.com/sandustry-modding/
 Demolish: "Demolish"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L197)
+Defined in: [sandkit/enums/index.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L197)
 
 ***
 
@@ -206,7 +206,7 @@ Defined in: [sandkit/enums/index.d.ts:197](https://github.com/sandustry-modding/
 Hover: "Hover"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:198](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L198)
+Defined in: [sandkit/enums/index.d.ts:198](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L198)
 
 ***
 
@@ -218,7 +218,7 @@ Defined in: [sandkit/enums/index.d.ts:198](https://github.com/sandustry-modding/
 Ruler: "Ruler"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L199)
+Defined in: [sandkit/enums/index.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L199)
 
 ***
 
@@ -230,7 +230,7 @@ Defined in: [sandkit/enums/index.d.ts:199](https://github.com/sandustry-modding/
 Left: "Left"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L200)
+Defined in: [sandkit/enums/index.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L200)
 
 ***
 
@@ -242,7 +242,7 @@ Defined in: [sandkit/enums/index.d.ts:200](https://github.com/sandustry-modding/
 Right: "Right"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L201)
+Defined in: [sandkit/enums/index.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L201)
 
 ***
 
@@ -254,7 +254,7 @@ Defined in: [sandkit/enums/index.d.ts:201](https://github.com/sandustry-modding/
 Boost: "Boost"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L202)
+Defined in: [sandkit/enums/index.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L202)
 
 ***
 
@@ -266,7 +266,7 @@ Defined in: [sandkit/enums/index.d.ts:202](https://github.com/sandustry-modding/
 Descend: "Descend"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L203)
+Defined in: [sandkit/enums/index.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L203)
 
 ***
 
@@ -278,7 +278,7 @@ Defined in: [sandkit/enums/index.d.ts:203](https://github.com/sandustry-modding/
 SprintBoost: "SprintBoost"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L204)
+Defined in: [sandkit/enums/index.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L204)
 
 ***
 
@@ -290,7 +290,7 @@ Defined in: [sandkit/enums/index.d.ts:204](https://github.com/sandustry-modding/
 OverrideReplaceStructures: "OverrideReplaceStructures"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L205)
+Defined in: [sandkit/enums/index.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L205)
 
 ***
 
@@ -302,7 +302,7 @@ Defined in: [sandkit/enums/index.d.ts:205](https://github.com/sandustry-modding/
 QuickSave: "QuickSave"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L206)
+Defined in: [sandkit/enums/index.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L206)
 
 ***
 
@@ -314,7 +314,7 @@ Defined in: [sandkit/enums/index.d.ts:206](https://github.com/sandustry-modding/
 QuickLoad: "QuickLoad"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:207](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L207)
+Defined in: [sandkit/enums/index.d.ts:207](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L207)
 
 ***
 
@@ -326,4 +326,4 @@ Defined in: [sandkit/enums/index.d.ts:207](https://github.com/sandustry-modding/
 ToggleGameHud: "ToggleGameHud"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L208)
+Defined in: [sandkit/enums/index.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L208)

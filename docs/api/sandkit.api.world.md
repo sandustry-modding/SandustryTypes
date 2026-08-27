@@ -20,7 +20,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 runWhenSimulationIdle(callback: () => void): void
 ```
 
-Defined in: [sandkit/api/world.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/world.d.ts#L64)
+Defined in: [sandkit/api/world.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L64)
 
 #### Parameters
 
@@ -49,7 +49,7 @@ Use [grid.mutate](api/sandkit.api.grid.md#mutate) instead.
 redrawAroundCellWhenIdle(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/world.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/world.d.ts#L70)
+Defined in: [sandkit/api/world.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L70)
 
 #### Parameters
 

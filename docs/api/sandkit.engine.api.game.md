@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 load(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/game.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/game.d.ts#L15)
+Defined in: [sandkit/engine/api/game.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L15)
 
 Load a saved game into the session.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 save(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/game.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/game.d.ts#L20)
+Defined in: [sandkit/engine/api/game.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L20)
 
 Save the current session.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 start(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/game.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/game.d.ts#L25)
+Defined in: [sandkit/engine/api/game.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L25)
 
 Start a new game session.
 

@@ -14,7 +14,7 @@
 SharedArray = Uint8Array | Uint16Array | Uint32Array | Int8Array | Int16Array | Int32Array | Float32Array | Float64Array
 ```
 
-Defined in: [shared/api/shared.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/shared.d.ts#L28)
+Defined in: [shared/api/shared.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L28)
 
 Typed array backing a shared buffer.
 
@@ -31,6 +31,6 @@ returns the matching `*Array` constructor for the configured type.
 SharedArrayType = "uint8" | "uint16" | "uint32" | "int8" | "int16" | "int32" | "float32" | "float64"
 ```
 
-Defined in: [shared/api/shared.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/shared.d.ts#L39)
+Defined in: [shared/api/shared.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L39)
 
 Discriminator for the underlying typed array kind.

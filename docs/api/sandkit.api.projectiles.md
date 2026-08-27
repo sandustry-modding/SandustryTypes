@@ -6,7 +6,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileDefinition</code></p>
 
-Defined in: [sandkit/api/projectiles.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L54)
+Defined in: [sandkit/api/projectiles.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L54)
 
 Mod-registered projectile definition.
 
@@ -24,7 +24,7 @@ Mod-registered projectile definition.
 id: string
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L55)
+Defined in: [sandkit/api/projectiles.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L55)
 
 ##### sprite
 
@@ -32,7 +32,7 @@ Defined in: [sandkit/api/projectiles.d.ts:55](https://github.com/sandustry-moddi
 sprite: object
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L56)
+Defined in: [sandkit/api/projectiles.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L56)
 
 ###### id
 
@@ -52,7 +52,7 @@ optional tint?: number
 getOptions: () => Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L61)
+Defined in: [sandkit/api/projectiles.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L61)
 
 Returns spawn-time physics and visual options.
 
@@ -66,7 +66,7 @@ Returns spawn-time physics and visual options.
 optional getModData?: (state: unknown, projectile: Projectile) => Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L63)
+Defined in: [sandkit/api/projectiles.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L63)
 
 Optional per-projectile mutable data factory.
 
@@ -90,7 +90,7 @@ Optional per-projectile mutable data factory.
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileBlueprint</code></p>
 
-Defined in: [sandkit/api/projectiles.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L68)
+Defined in: [sandkit/api/projectiles.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L68)
 
 Blueprint used to spawn a projectile.
 
@@ -102,7 +102,7 @@ Blueprint used to spawn a projectile.
 opts: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L69)
+Defined in: [sandkit/api/projectiles.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L69)
 
 ##### type
 
@@ -110,7 +110,7 @@ Defined in: [sandkit/api/projectiles.d.ts:69](https://github.com/sandustry-moddi
 type: unknown
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L70)
+Defined in: [sandkit/api/projectiles.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L70)
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: [sandkit/api/projectiles.d.ts:70](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.Projectile</code></p>
 
-Defined in: [sandkit/api/projectiles.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L74)
+Defined in: [sandkit/api/projectiles.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L74)
 
 Active projectile instance.
 
@@ -136,7 +136,7 @@ Active projectile instance.
 id: number
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L75)
+Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L75)
 
 ##### x
 
@@ -144,7 +144,7 @@ Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-moddi
 x: number
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L76)
+Defined in: [sandkit/api/projectiles.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L76)
 
 ##### y
 
@@ -152,7 +152,7 @@ Defined in: [sandkit/api/projectiles.d.ts:76](https://github.com/sandustry-moddi
 y: number
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L77)
+Defined in: [sandkit/api/projectiles.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L77)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -164,7 +164,7 @@ Defined in: [sandkit/api/projectiles.d.ts:77](https://github.com/sandustry-moddi
 register(definition: ProjectileDefinition): void
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L13)
+Defined in: [sandkit/api/projectiles.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L13)
 
 Register a projectile definition.
 
@@ -190,7 +190,7 @@ Projectile id, sprite, and runtime options factory.
 getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L19)
+Defined in: [sandkit/api/projectiles.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L19)
 
 Return a projectile definition by string id.
 
@@ -216,7 +216,7 @@ Registered projectile id.
 createBlueprintFromId(projectileId: string): ProjectileBlueprint
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L26)
+Defined in: [sandkit/api/projectiles.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L26)
 
 Build a spawn blueprint from a projectile string id.
 
@@ -244,7 +244,7 @@ Blueprint passed to [spawnAtWorld](#spawnatworld).
 getAll(): Projectile[]
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L29)
+Defined in: [sandkit/api/projectiles.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L29)
 
 Return all active projectiles.
 
@@ -262,7 +262,7 @@ Return all active projectiles.
 getById(projectileId: number): Projectile | undefined
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L35)
+Defined in: [sandkit/api/projectiles.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L35)
 
 Return a projectile by numeric id.
 
@@ -288,7 +288,7 @@ Runtime projectile id.
 remove(projectile: Projectile): void
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L41)
+Defined in: [sandkit/api/projectiles.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L41)
 
 Remove a projectile from the world.
 
@@ -314,7 +314,7 @@ Projectile instance to remove.
 spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: ProjectileBlueprint): Projectile
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L51)
+Defined in: [sandkit/api/projectiles.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L51)
 
 Spawn a projectile at world position with angle and blueprint.
 

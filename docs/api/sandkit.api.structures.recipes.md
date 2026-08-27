@@ -14,7 +14,7 @@ Structure recipe registration by machine kind.
 register(id: "planterBox", definition: PlanterBoxRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L246)
+Defined in: [sandkit/api/structures.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L246)
 
 Register a planter box recipe.
 
@@ -46,7 +46,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 register(id: "shaker", definition: ShakerRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L255)
+Defined in: [sandkit/api/structures.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L255)
 
 Register a shaker recipe.
 
@@ -78,7 +78,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 register(id: "kineticPress", definition: KineticPressRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:264](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L264)
+Defined in: [sandkit/api/structures.d.ts:264](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L264)
 
 Register a kinetic press recipe.
 
@@ -110,7 +110,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 register(id: "condenser" | "steamDryer" | "synthesizer" | "snowmaker" | "smelter", definition: WeightedRefineryRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:273](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L273)
+Defined in: [sandkit/api/structures.d.ts:273](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L273)
 
 Register a weighted refinery machine recipe.
 

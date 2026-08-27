@@ -12,7 +12,7 @@ Short-lived visual effect lights.
 createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
-Defined in: [sandkit/api/lights.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L18)
+Defined in: [sandkit/api/lights.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L18)
 
 Create a temporary light at world coordinates.
 
@@ -54,7 +54,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.ligh
 removeById(lightId: number): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L26)
+Defined in: [sandkit/api/lights.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L26)
 
 Remove a temporary light by its id.
 

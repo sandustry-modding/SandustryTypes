@@ -16,7 +16,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 const CYCLE\_COLOR: unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L12)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L12)
 
 Sentinel value for cycling through predefined colors.
 
@@ -28,7 +28,7 @@ Sentinel value for cycling through predefined colors.
 const NO\_COLOR: unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L14)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L14)
 
 Sentinel value for no color selected.
 
@@ -40,7 +40,7 @@ Sentinel value for no color selected.
 const PREDEFINED\_COLORS: unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L16)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L16)
 
 List of predefined palette colors.
 
@@ -52,7 +52,7 @@ List of predefined palette colors.
 const RANDOM\_COLOR: unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L18)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L18)
 
 Sentinel value for a random palette color.
 
@@ -66,7 +66,7 @@ Sentinel value for a random palette color.
 closePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L23)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L23)
 
 Close the active color palette UI.
 
@@ -92,7 +92,7 @@ Game state first, then method-specific arguments.
 getActivePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L28)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L28)
 
 Return the active palette identifier.
 
@@ -118,7 +118,7 @@ Game state first, then method-specific arguments.
 getCycleColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L33)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L33)
 
 Return the next color in the cycle.
 
@@ -144,7 +144,7 @@ Game state first, then method-specific arguments.
 getRandomColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L38)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L38)
 
 Return a random predefined color.
 
@@ -170,7 +170,7 @@ Game state first, then method-specific arguments.
 hexToRgba(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L43)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L43)
 
 Convert a hex color string to RGBA components.
 
@@ -196,7 +196,7 @@ Game state first, then method-specific arguments.
 renderColorButton(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L48)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L48)
 
 Render a color-picker button in the UI.
 
@@ -222,7 +222,7 @@ Game state first, then method-specific arguments.
 renderColorSection(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L53)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L53)
 
 Render a color section in the UI.
 
@@ -248,7 +248,7 @@ Game state first, then method-specific arguments.
 renderPalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L58)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L58)
 
 Render the full color palette UI.
 
@@ -274,7 +274,7 @@ Game state first, then method-specific arguments.
 rgbaToHex(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L63)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L63)
 
 Convert RGBA components to a hex color string.
 
@@ -300,7 +300,7 @@ Game state first, then method-specific arguments.
 setActivePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L68)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L68)
 
 Set the active palette identifier.
 
@@ -326,7 +326,7 @@ Game state first, then method-specific arguments.
 togglePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L73)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L73)
 
 Open or close the color palette UI.
 

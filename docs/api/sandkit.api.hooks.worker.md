@@ -12,7 +12,7 @@ Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook point
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookContext (worker)</code></p>
 
-Defined in: worker/api/hooks.d.ts:39
+Defined in: [worker/api/hooks.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L39)
 
 Context passed to intercept hook callbacks.
 
@@ -24,7 +24,7 @@ Context passed to intercept hook callbacks.
 cancelled: boolean
 ```
 
-Defined in: worker/api/hooks.d.ts:43
+Defined in: [worker/api/hooks.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L43)
 
 True after [cancel](#cancel) was called on this context.
 
@@ -36,7 +36,7 @@ True after [cancel](#cancel) was called on this context.
 cancel(): void
 ```
 
-Defined in: worker/api/hooks.d.ts:41
+Defined in: [worker/api/hooks.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L41)
 
 When called, the intercepted action is skipped.
 
@@ -50,7 +50,7 @@ When called, the intercepted action is skipped.
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookGuard (worker)</code></p>
 
-Defined in: worker/api/hooks.d.ts:47
+Defined in: [worker/api/hooks.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L47)
 
 Guard filter for worker hook registration.
 
@@ -62,7 +62,7 @@ Guard filter for worker hook registration.
 optional elementType?: ElementType
 ```
 
-Defined in: worker/api/hooks.d.ts:49
+Defined in: [worker/api/hooks.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L49)
 
 Required for element-scoped intercept hooks and optional on emit.
 
@@ -72,7 +72,7 @@ Required for element-scoped intercept hooks and optional on emit.
 optional terrainType?: number
 ```
 
-Defined in: worker/api/hooks.d.ts:51
+Defined in: [worker/api/hooks.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L51)
 
 Required for terrain-scoped event guards; optional on emit.
 
@@ -82,7 +82,7 @@ Required for terrain-scoped event guards; optional on emit.
 
 <p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookOptions (worker)</code></p>
 
-Defined in: worker/api/hooks.d.ts:61
+Defined in: [worker/api/hooks.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L61)
 
 Options for [modify](#modify).
 
@@ -94,7 +94,7 @@ Options for [modify](#modify).
 optional guard?: HookGuard
 ```
 
-Defined in: worker/api/hooks.d.ts:62
+Defined in: [worker/api/hooks.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L62)
 
 ##### priority?
 
@@ -102,7 +102,7 @@ Defined in: worker/api/hooks.d.ts:62
 optional priority?: number
 ```
 
-Defined in: worker/api/hooks.d.ts:63
+Defined in: [worker/api/hooks.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L63)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: worker/api/hooks.d.ts:63
 
 <p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookMap (worker)</code></p>
 
-Defined in: worker/api/hooks.d.ts:87
+Defined in: [worker/api/hooks.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L87)
 
 Intercept hook argument shapes keyed by hook id.
 
@@ -122,7 +122,7 @@ Intercept hook argument shapes keyed by hook id.
 cell:process: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:88
+Defined in: [worker/api/hooks.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L88)
 
 ##### element:update
 
@@ -130,7 +130,7 @@ Defined in: worker/api/hooks.d.ts:88
 element:update: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:89
+Defined in: [worker/api/hooks.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L89)
 
 ##### element:move
 
@@ -138,7 +138,7 @@ Defined in: worker/api/hooks.d.ts:89
 element:move: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:90
+Defined in: [worker/api/hooks.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L90)
 
 ##### element:move:blocked
 
@@ -146,7 +146,7 @@ Defined in: worker/api/hooks.d.ts:90
 element:move:blocked: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:91
+Defined in: [worker/api/hooks.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L91)
 
 ##### ~~element:blocked~~
 
@@ -154,7 +154,7 @@ Defined in: worker/api/hooks.d.ts:91
 element:blocked: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:93
+Defined in: [worker/api/hooks.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L93)
 
 ###### Deprecated
 
@@ -166,7 +166,7 @@ Use `"element:move:blocked"` instead.
 element:duration:expire: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:94
+Defined in: [worker/api/hooks.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L94)
 
 ##### ~~element:duration~~
 
@@ -174,7 +174,7 @@ Defined in: worker/api/hooks.d.ts:94
 element:duration: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:96
+Defined in: [worker/api/hooks.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L96)
 
 ###### Deprecated
 
@@ -186,7 +186,7 @@ Use `"element:duration:expire"` instead.
 fire:element:burn: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:97
+Defined in: [worker/api/hooks.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L97)
 
 ##### shaker:elementOn
 
@@ -194,7 +194,7 @@ Defined in: worker/api/hooks.d.ts:97
 shaker:elementOn: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:98
+Defined in: [worker/api/hooks.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L98)
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
@@ -206,7 +206,7 @@ Defined in: worker/api/hooks.d.ts:98
 InterceptHookOptions<K *extends* InterceptHookId> = K *extends* ElementGuardedInterceptHookId ? object : object
 ```
 
-Defined in: worker/api/hooks.d.ts:55
+Defined in: [worker/api/hooks.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L55)
 
 Options for [intercept](#intercept).
 
@@ -226,7 +226,7 @@ Options for [intercept](#intercept).
 ElementGuardedInterceptHookId = "cell:process" | "element:update" | "element:move:blocked" | "element:blocked" | "element:duration:expire" | "element:duration"
 ```
 
-Defined in: worker/api/hooks.d.ts:67
+Defined in: [worker/api/hooks.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L67)
 
 Intercept hook ids with a required element guard.
 
@@ -240,7 +240,7 @@ Intercept hook ids with a required element guard.
 InterceptHookId = LooseString<ElementGuardedInterceptHookId | "element:move" | "fire:element:burn" | "shaker:elementOn">
 ```
 
-Defined in: worker/api/hooks.d.ts:76
+Defined in: [worker/api/hooks.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L76)
 
 Known worker intercept hook ids plus custom strings.
 
@@ -254,7 +254,7 @@ Known worker intercept hook ids plus custom strings.
 ModifyHookId = LooseString<string>
 ```
 
-Defined in: worker/api/hooks.d.ts:84
+Defined in: [worker/api/hooks.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L84)
 
 Known worker modify hook ids plus custom strings.
 
@@ -268,7 +268,7 @@ Known worker modify hook ids plus custom strings.
 ModifyHookMap = Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:102
+Defined in: [worker/api/hooks.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L102)
 
 Modify hook argument shapes keyed by hook id. Unlisted ids use `unknown`.
 
@@ -282,7 +282,7 @@ Modify hook argument shapes keyed by hook id. Unlisted ids use `unknown`.
 InterceptHookArgs<K *extends* InterceptHookId> = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown
 ```
 
-Defined in: worker/api/hooks.d.ts:105
+Defined in: [worker/api/hooks.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L105)
 
 Intercept hook args for a given hook id.
 
@@ -302,7 +302,7 @@ Intercept hook args for a given hook id.
 ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof ModifyHookMap ? ModifyHookMap[K] : unknown
 ```
 
-Defined in: worker/api/hooks.d.ts:109
+Defined in: [worker/api/hooks.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L109)
 
 Modify hook args for a given hook id.
 
@@ -322,7 +322,7 @@ Modify hook args for a given hook id.
 intercept<K *extends* InterceptHookId>(hookId: K, callback: (args: InterceptHookArgs<K>, context: HookContext) => void, options?: InterceptHookOptions<K>): () => void
 ```
 
-Defined in: worker/api/hooks.d.ts:18
+Defined in: [worker/api/hooks.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L18)
 
 Register an intercept hook on this worker. Returns an unsubscribe function.
 
@@ -370,7 +370,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.ho
 modify<K *extends* ModifyHookId>(hookId: K, callback: (args: ModifyHookArgs<K>) => void, options?: ModifyHookOptions): () => void
 ```
 
-Defined in: worker/api/hooks.d.ts:32
+Defined in: [worker/api/hooks.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L32)
 
 Register a modifier hook on this worker. Returns an unsubscribe function.
 

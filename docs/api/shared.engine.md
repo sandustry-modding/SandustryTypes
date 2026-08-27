@@ -10,7 +10,7 @@
 EngineFn = (...args: unknown[]) => unknown
 ```
 
-Defined in: [shared/engine.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/engine.d.ts#L11)
+Defined in: [shared/engine.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L11)
 
 **`Internal`**
 
@@ -36,7 +36,7 @@ Stub for an unresolved engine method.
 EngineOverlapNs = Record<string, EngineFn | Record<string, unknown> | unknown>
 ```
 
-Defined in: [shared/engine.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/engine.d.ts#L17)
+Defined in: [shared/engine.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L17)
 
 **`Internal`**
 

@@ -6,7 +6,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.sprites.SpriteLoadOptions</code></p>
 
-Defined in: [sandkit/api/sprites.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L40)
+Defined in: [sandkit/api/sprites.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L40)
 
 Options for [load](#load) and [loadFromMod](#loadfrommod).
 
@@ -24,7 +24,7 @@ Options for [load](#load) and [loadFromMod](#loadfrommod).
 optional tint?: number
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L42)
+Defined in: [sandkit/api/sprites.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L42)
 
 Packed RGB tint applied after load.
 
@@ -38,7 +38,7 @@ Packed RGB tint applied after load.
 LoadedSprite = unknown
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L37)
+Defined in: [sandkit/api/sprites.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L37)
 
 Loaded sprite handle (runtime texture or display object).
 
@@ -52,7 +52,7 @@ Loaded sprite handle (runtime texture or display object).
 load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L15)
+Defined in: [sandkit/api/sprites.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L15)
 
 Load a sprite from a URL path.
 
@@ -90,7 +90,7 @@ Optional tint and load options.
 loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions): Promise<void>
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L22)
+Defined in: [sandkit/api/sprites.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L22)
 
 Load a sprite from the calling mod folder.
 
@@ -128,7 +128,7 @@ Optional tint and load options.
 getById(spriteId: string): unknown
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L27)
+Defined in: [sandkit/api/sprites.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L27)
 
 Return a loaded sprite by id.
 
@@ -154,7 +154,7 @@ Sprite id from [load](#load) or [loadFromMod](#loadfrommod).
 hideAllPlayerModSprites(): void
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L29)
+Defined in: [sandkit/api/sprites.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L29)
 
 Hide all player mod-attached sprites.
 
@@ -172,7 +172,7 @@ Hide all player mod-attached sprites.
 rotatePlayerModSprites(angle: number): void
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L34)
+Defined in: [sandkit/api/sprites.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L34)
 
 Rotate all player mod-attached sprites by angle.
 

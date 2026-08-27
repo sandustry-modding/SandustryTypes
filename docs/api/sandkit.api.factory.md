@@ -18,7 +18,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fact
 FactoryProcessId = "shakeWetSand" | "pressBurntResidue" | "growFlowers" | "condenseFlorin"
 ```
 
-Defined in: sandkit/api/factory.d.ts:33
+Defined in: [sandkit/api/factory.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L33)
 
 Built-in factory process identifiers.
 
@@ -32,7 +32,7 @@ Built-in factory process identifiers.
 getLevel(): number
 ```
 
-Defined in: sandkit/api/factory.d.ts:14
+Defined in: [sandkit/api/factory.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L14)
 
 Return the current factory level.
 
@@ -54,7 +54,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fact
 getProcessCount(processId: FactoryProcessId): number
 ```
 
-Defined in: sandkit/api/factory.d.ts:22
+Defined in: [sandkit/api/factory.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L22)
 
 Return completed count for a factory process.
 
@@ -84,7 +84,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fact
 getProcessRate(processId: FactoryProcessId): number
 ```
 
-Defined in: sandkit/api/factory.d.ts:30
+Defined in: [sandkit/api/factory.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L30)
 
 Return completion rate for a factory process.
 

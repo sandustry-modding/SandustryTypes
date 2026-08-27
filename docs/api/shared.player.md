@@ -6,7 +6,7 @@
 
 <p class="smt-member-path"><code>shared.player.Player</code></p>
 
-Defined in: [shared/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L34)
+Defined in: [shared/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L34)
 
 Live player state snapshot (read-only shape for mods).
 
@@ -20,7 +20,7 @@ Reflects `sandkit.engine.state` / store player fields exposed to mods.
 x: number
 ```
 
-Defined in: [shared/player.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L36)
+Defined in: [shared/player.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L36)
 
 Player hitbox left edge in world pixels.
 
@@ -30,7 +30,7 @@ Player hitbox left edge in world pixels.
 y: number
 ```
 
-Defined in: [shared/player.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L38)
+Defined in: [shared/player.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L38)
 
 Player hitbox top edge in world pixels.
 
@@ -40,7 +40,7 @@ Player hitbox top edge in world pixels.
 width: number
 ```
 
-Defined in: [shared/player.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L40)
+Defined in: [shared/player.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L40)
 
 Player hitbox width in world pixels.
 
@@ -50,7 +50,7 @@ Player hitbox width in world pixels.
 height: number
 ```
 
-Defined in: [shared/player.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L42)
+Defined in: [shared/player.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L42)
 
 Player hitbox height in world pixels.
 
@@ -60,7 +60,7 @@ Player hitbox height in world pixels.
 velocity: Vector2
 ```
 
-Defined in: [shared/player.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L44)
+Defined in: [shared/player.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L44)
 
 Current movement velocity in pixels per second.
 
@@ -70,7 +70,7 @@ Current movement velocity in pixels per second.
 threshold: Vector2
 ```
 
-Defined in: [shared/player.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L46)
+Defined in: [shared/player.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L46)
 
 Movement threshold accumulator used by physics.
 
@@ -80,7 +80,7 @@ Movement threshold accumulator used by physics.
 onGround: boolean
 ```
 
-Defined in: [shared/player.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L51)
+Defined in: [shared/player.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L51)
 
 Spawn flag. Live physics does not update this field.
 Use `sandkit.api.player.isOnGround()` (solid cells 1px below the hitbox).
@@ -91,7 +91,7 @@ Use `sandkit.api.player.isOnGround()` (solid cells 1px below the hitbox).
 speedCapOverdrive: object
 ```
 
-Defined in: [shared/player.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L53)
+Defined in: [shared/player.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L53)
 
 Temporary speed-cap bonuses applied on each axis.
 
@@ -173,7 +173,7 @@ releaseBonus: number
 inventory: InventoryItem[]
 ```
 
-Defined in: [shared/player.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L70)
+Defined in: [shared/player.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L70)
 
 Items currently held in the player inventory.
 
@@ -183,7 +183,7 @@ Items currently held in the player inventory.
 buildings: number[]
 ```
 
-Defined in: [shared/player.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L72)
+Defined in: [shared/player.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L72)
 
 Structure type ids the player has unlocked for building.
 
@@ -193,7 +193,7 @@ Structure type ids the player has unlocked for building.
 tech: object
 ```
 
-Defined in: [shared/player.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L74)
+Defined in: [shared/player.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L74)
 
 Tech tree nodes and their unlock metadata.
 
@@ -207,7 +207,7 @@ Tech tree nodes and their unlock metadata.
 lockedTechs: object
 ```
 
-Defined in: [shared/player.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L104)
+Defined in: [shared/player.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L104)
 
 Tech ids explicitly locked for this save.
 
@@ -221,7 +221,7 @@ Tech ids explicitly locked for this save.
 action: null
 ```
 
-Defined in: [shared/player.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L106)
+Defined in: [shared/player.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L106)
 
 Active world action, or null when idle.
 
@@ -231,7 +231,7 @@ Active world action, or null when idle.
 hotbar: object
 ```
 
-Defined in: [shared/player.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L108)
+Defined in: [shared/player.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L108)
 
 Hotbar slots, active indices, and item sprites.
 
@@ -259,7 +259,7 @@ bars: AssetRef[][]
 grapplingHook: boolean
 ```
 
-Defined in: [shared/player.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L114)
+Defined in: [shared/player.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L114)
 
 True when the grappling hook is equipped or active.
 
@@ -269,7 +269,7 @@ True when the grappling hook is equipped or active.
 cooldowns: object
 ```
 
-Defined in: [shared/player.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L116)
+Defined in: [shared/player.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L116)
 
 Cooldown timestamps for movement particles and slowdown.
 
@@ -327,7 +327,7 @@ last: number
 isHovering: boolean
 ```
 
-Defined in: [shared/player.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L130)
+Defined in: [shared/player.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L130)
 
 True when hover movement mode is active.
 
@@ -337,7 +337,7 @@ True when hover movement mode is active.
 weaponsMeta: object
 ```
 
-Defined in: [shared/player.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L132)
+Defined in: [shared/player.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L132)
 
 Per-weapon runtime metadata.
 
@@ -383,7 +383,7 @@ reloading: boolean
 
 <p class="smt-member-path"><code>shared.player.InventoryItem</code></p>
 
-Defined in: [shared/player.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L146)
+Defined in: [shared/player.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L146)
 
 One hotbar or inventory item entry.
 
@@ -395,7 +395,7 @@ One hotbar or inventory item entry.
 id: number
 ```
 
-Defined in: [shared/player.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L147)
+Defined in: [shared/player.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L147)
 
 ##### itemType
 
@@ -403,7 +403,7 @@ Defined in: [shared/player.d.ts:147](https://github.com/sandustry-modding/Sandus
 itemType: number
 ```
 
-Defined in: [shared/player.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L148)
+Defined in: [shared/player.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L148)
 
 ##### abilities
 
@@ -411,7 +411,7 @@ Defined in: [shared/player.d.ts:148](https://github.com/sandustry-modding/Sandus
 abilities: object[]
 ```
 
-Defined in: [shared/player.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L149)
+Defined in: [shared/player.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L149)
 
 ###### type
 
@@ -459,7 +459,7 @@ last: number
 nameKey: string
 ```
 
-Defined in: [shared/player.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L169)
+Defined in: [shared/player.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L169)
 
 ##### descriptionKey
 
@@ -467,7 +467,7 @@ Defined in: [shared/player.d.ts:169](https://github.com/sandustry-modding/Sandus
 descriptionKey: string
 ```
 
-Defined in: [shared/player.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L170)
+Defined in: [shared/player.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L170)
 
 ##### categoryKey
 
@@ -475,7 +475,7 @@ Defined in: [shared/player.d.ts:170](https://github.com/sandustry-modding/Sandus
 categoryKey: "excavation" | "utility" | "drones"
 ```
 
-Defined in: [shared/player.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L171)
+Defined in: [shared/player.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L171)
 
 ##### sprite?
 
@@ -483,7 +483,7 @@ Defined in: [shared/player.d.ts:171](https://github.com/sandustry-modding/Sandus
 optional sprite?: AssetRef
 ```
 
-Defined in: [shared/player.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L172)
+Defined in: [shared/player.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L172)
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
@@ -495,7 +495,7 @@ Defined in: [shared/player.d.ts:172](https://github.com/sandustry-modding/Sandus
 CellCoordinates = [number, number]
 ```
 
-Defined in: [shared/player.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L14)
+Defined in: [shared/player.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L14)
 
 Grid cell position as `[cellX, cellY]`.
 
@@ -511,7 +511,7 @@ Cell coordinates match `sandkit.api.*AtCell` helpers: column first, then row.
 Vector2 = object
 ```
 
-Defined in: [shared/player.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L22)
+Defined in: [shared/player.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L22)
 
 2D vector in world or cell space.
 
@@ -526,7 +526,7 @@ depending on the API.
 x: number
 ```
 
-Defined in: [shared/player.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L24)
+Defined in: [shared/player.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L24)
 
 Horizontal component.
 
@@ -536,6 +536,6 @@ Horizontal component.
 y: number
 ```
 
-Defined in: [shared/player.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L26)
+Defined in: [shared/player.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L26)
 
 Vertical component.

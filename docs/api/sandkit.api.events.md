@@ -9,7 +9,7 @@ Main thread only. The `events` object is frozen; do not replace `on` or `emit`.
 
 <p class="smt-member-path"><code>sandkit.api.events.PlayerCollisionPreparePayload</code></p>
 
-Defined in: [sandkit/api/events.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L30)
+Defined in: [sandkit/api/events.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L30)
 
 Mutable payload for `player:collision:prepare`.
 Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
@@ -22,7 +22,7 @@ Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
 phaseThroughTerrain: boolean
 ```
 
-Defined in: [sandkit/api/events.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L32)
+Defined in: [sandkit/api/events.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L32)
 
 When true, terrain collision is skipped this sub-step.
 
@@ -32,7 +32,7 @@ When true, terrain collision is skipped this sub-step.
 phaseThroughStructures: boolean
 ```
 
-Defined in: [sandkit/api/events.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L34)
+Defined in: [sandkit/api/events.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L34)
 
 When true, structure collision is skipped this sub-step.
 
@@ -42,7 +42,7 @@ When true, structure collision is skipped this sub-step.
 maxStepCells: number
 ```
 
-Defined in: [sandkit/api/events.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L36)
+Defined in: [sandkit/api/events.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L36)
 
 Max cells the player can step up when blocked horizontally (1–8).
 
@@ -52,7 +52,7 @@ Max cells the player can step up when blocked horizontally (1–8).
 
 <p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap</code></p>
 
-Defined in: [sandkit/api/events.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L40)
+Defined in: [sandkit/api/events.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L40)
 
 Known event payloads. Unlisted ids still use `unknown`.
 
@@ -64,7 +64,7 @@ Known event payloads. Unlisted ids still use `unknown`.
 item:used: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L41)
+Defined in: [sandkit/api/events.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L41)
 
 ###### itemId
 
@@ -108,7 +108,7 @@ prepared: Readonly<Record<string, unknown>>
 frame:render: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L49)
+Defined in: [sandkit/api/events.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L49)
 
 ##### scene:game:started
 
@@ -116,7 +116,7 @@ Defined in: [sandkit/api/events.d.ts:49](https://github.com/sandustry-modding/Sa
 scene:game:started: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L50)
+Defined in: [sandkit/api/events.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L50)
 
 ##### ~~scene:started:game~~
 
@@ -124,7 +124,7 @@ Defined in: [sandkit/api/events.d.ts:50](https://github.com/sandustry-modding/Sa
 scene:started:game: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L52)
+Defined in: [sandkit/api/events.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L52)
 
 ###### Deprecated
 
@@ -136,7 +136,7 @@ Use `"scene:game:started"` instead.
 earlyAccess:completed: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L53)
+Defined in: [sandkit/api/events.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L53)
 
 ##### ~~earlyAccess:complete~~
 
@@ -144,7 +144,7 @@ Defined in: [sandkit/api/events.d.ts:53](https://github.com/sandustry-modding/Sa
 earlyAccess:complete: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L55)
+Defined in: [sandkit/api/events.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L55)
 
 ###### Deprecated
 
@@ -156,7 +156,7 @@ Use `"earlyAccess:completed"` instead.
 terrain:destroyed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L56)
+Defined in: [sandkit/api/events.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L56)
 
 ###### cellX
 
@@ -202,7 +202,7 @@ Use cellY instead.
 fog:cellRevealed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L65)
+Defined in: [sandkit/api/events.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L65)
 
 ###### cellX
 
@@ -242,7 +242,7 @@ Use cellY instead.
 upgrade:levelSelected: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L73)
+Defined in: [sandkit/api/events.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L73)
 
 ###### itemId
 
@@ -268,7 +268,7 @@ level: number
 building:placed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L78)
+Defined in: [sandkit/api/events.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L78)
 
 ###### structure
 
@@ -306,7 +306,7 @@ isCopied: boolean
 building:removed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L85)
+Defined in: [sandkit/api/events.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L85)
 
 ###### structureId
 
@@ -338,7 +338,7 @@ isBatch: boolean
 structures:placed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L91)
+Defined in: [sandkit/api/events.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L91)
 
 ###### structures
 
@@ -352,7 +352,7 @@ structures: unknown[]
 structures:removed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L92)
+Defined in: [sandkit/api/events.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L92)
 
 ###### removed
 
@@ -378,7 +378,7 @@ byMove: boolean
 structures:moved: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L97)
+Defined in: [sandkit/api/events.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L97)
 
 ###### moved
 
@@ -398,7 +398,7 @@ failedToPlace: unknown[]
 game:ready: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L101)
+Defined in: [sandkit/api/events.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L101)
 
 ##### game:started
 
@@ -406,7 +406,7 @@ Defined in: [sandkit/api/events.d.ts:101](https://github.com/sandustry-modding/S
 game:started: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L102)
+Defined in: [sandkit/api/events.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L102)
 
 ##### tutorial:stepChanged
 
@@ -414,7 +414,7 @@ Defined in: [sandkit/api/events.d.ts:102](https://github.com/sandustry-modding/S
 tutorial:stepChanged: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L103)
+Defined in: [sandkit/api/events.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L103)
 
 ###### step
 
@@ -428,7 +428,7 @@ step: unknown
 tutorial:completed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L104)
+Defined in: [sandkit/api/events.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L104)
 
 ###### skipped
 
@@ -442,7 +442,7 @@ skipped: boolean
 tech:unlocked: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L105)
+Defined in: [sandkit/api/events.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L105)
 
 ###### techId
 
@@ -462,7 +462,7 @@ suppressMusic: boolean
 worldItem:pickedUp: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L109)
+Defined in: [sandkit/api/events.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L109)
 
 ###### worldItemId
 
@@ -482,7 +482,7 @@ type: string
 resource:collected: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L113)
+Defined in: [sandkit/api/events.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L113)
 
 ###### resourceId
 
@@ -520,7 +520,7 @@ cellY: number
 player:collision:prepare: PlayerCollisionPreparePayload
 ```
 
-Defined in: [sandkit/api/events.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L120)
+Defined in: [sandkit/api/events.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L120)
 
 ##### player:moved
 
@@ -528,7 +528,7 @@ Defined in: [sandkit/api/events.d.ts:120](https://github.com/sandustry-modding/S
 player:moved: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L121)
+Defined in: [sandkit/api/events.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L121)
 
 ###### dt?
 
@@ -556,7 +556,7 @@ optional state?: unknown
 EventId = LooseString<keyof EventPayloadMap>
 ```
 
-Defined in: [sandkit/api/events.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L133)
+Defined in: [sandkit/api/events.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L133)
 
 Known event names plus any custom string id.
 
@@ -570,7 +570,7 @@ Known event names plus any custom string id.
 EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
 ```
 
-Defined in: [sandkit/api/events.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L136)
+Defined in: [sandkit/api/events.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L136)
 
 Event payload type for a given event id.
 
@@ -590,7 +590,7 @@ Event payload type for a given event id.
 on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void
 ```
 
-Defined in: [sandkit/api/events.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L15)
+Defined in: [sandkit/api/events.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L15)
 
 Subscribes to an event. Returns an unsubscribe function.
 
@@ -632,7 +632,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.even
 emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>): void
 ```
 
-Defined in: [sandkit/api/events.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L24)
+Defined in: [sandkit/api/events.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L24)
 
 Emits an event with a payload to all subscribers.
 

@@ -10,7 +10,7 @@
 int(min: number, max: number): number
 ```
 
-Defined in: [sandkit/api/random.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/random.d.ts#L14)
+Defined in: [sandkit/api/random.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/random.d.ts#L14)
 
 Return a random integer in the inclusive range.
 
@@ -42,7 +42,7 @@ Maximum value (inclusive).
 float(min: number, max: number): number
 ```
 
-Defined in: [sandkit/api/random.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/random.d.ts#L20)
+Defined in: [sandkit/api/random.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/random.d.ts#L20)
 
 Return a random float in the inclusive range.
 

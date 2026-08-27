@@ -18,7 +18,7 @@ Temporary lights live under [lights.temporary](api/sandkit.api.lights.temporary.
 createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
-Defined in: worker/api/effects.d.ts:25
+Defined in: [worker/api/effects.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L25)
 
 Spawn a named screen-space or world effect.
 
@@ -64,7 +64,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.ef
 createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
-Defined in: worker/api/effects.d.ts:36
+Defined in: [worker/api/effects.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L36)
 
 #### Parameters
 

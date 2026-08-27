@@ -12,7 +12,7 @@ Per-structure processing enablement and registration.
 register(id: string & object, definition: StructureProcessingDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L294)
+Defined in: [sandkit/api/structures.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L294)
 
 Register a custom processing definition by id.
 
@@ -48,7 +48,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 setEnabledAtCell(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L305)
+Defined in: [sandkit/api/structures.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L305)
 
 Enable or disable processing at a cell.
 
@@ -76,7 +76,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 setEnabledAt(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L311)
+Defined in: [sandkit/api/structures.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L311)
 
 #### Parameters
 

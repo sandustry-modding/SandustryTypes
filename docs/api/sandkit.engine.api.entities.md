@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 createLight(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L15)
+Defined in: [sandkit/engine/api/entities.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L15)
 
 Create a light entity attached to a parent.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L20)
+Defined in: [sandkit/engine/api/entities.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L20)
 
 Return all live entities.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 getAllByType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L25)
+Defined in: [sandkit/engine/api/entities.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L25)
 
 Return all entities of one type.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 getAllTypeDefs(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L30)
+Defined in: [sandkit/engine/api/entities.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L30)
 
 Return all registered entity type definitions.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 getSprite(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L35)
+Defined in: [sandkit/engine/api/entities.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L35)
 
 Return the sprite for an entity.
 
@@ -148,7 +148,7 @@ Game state first, then method-specific arguments.
 getTypeDef(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L40)
+Defined in: [sandkit/engine/api/entities.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L40)
 
 Return one entity type definition by id.
 
@@ -174,7 +174,7 @@ Game state first, then method-specific arguments.
 launch(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L45)
+Defined in: [sandkit/engine/api/entities.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L45)
 
 Launch an entity with velocity or trajectory.
 
@@ -200,7 +200,7 @@ Game state first, then method-specific arguments.
 registerSpawner(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L50)
+Defined in: [sandkit/engine/api/entities.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L50)
 
 Register an entity spawner behavior.
 
@@ -226,7 +226,7 @@ Game state first, then method-specific arguments.
 registerType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L55)
+Defined in: [sandkit/engine/api/entities.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L55)
 
 Register a custom entity type.
 
@@ -252,7 +252,7 @@ Game state first, then method-specific arguments.
 spawn(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L60)
+Defined in: [sandkit/engine/api/entities.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L60)
 
 Spawn an entity instance.
 
@@ -278,7 +278,7 @@ Game state first, then method-specific arguments.
 startCapture(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L65)
+Defined in: [sandkit/engine/api/entities.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L65)
 
 Start capturing entities for a tool or effect.
 

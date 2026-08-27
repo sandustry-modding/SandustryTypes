@@ -24,7 +24,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L70)
+Defined in: [worker/api/elements.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L70)
 
 Create an element at a cell immediately on this worker.
 
@@ -52,7 +52,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L83)
+Defined in: [worker/api/elements.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L83)
 
 Replace the element at a cell immediately on this worker.
 
@@ -80,7 +80,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L95)
+Defined in: [worker/api/elements.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L95)
 
 Remove the element at a cell immediately on this worker.
 
@@ -108,7 +108,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L109)
+Defined in: [worker/api/elements.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L109)
 
 Move an element between cells immediately on this worker.
 
@@ -158,7 +158,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
 ```
 
-Defined in: [worker/api/elements.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L125)
+Defined in: [worker/api/elements.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L125)
 
 Teleport an element between cells immediately on this worker.
 
@@ -206,7 +206,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L142)
+Defined in: [worker/api/elements.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L142)
 
 Swap elements between two cells immediately on this worker.
 
@@ -254,7 +254,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L153)
+Defined in: [worker/api/elements.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L153)
 
 #### Parameters
 
@@ -296,7 +296,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 markMovementBlockedByIndex(elementIndex: number): void
 ```
 
-Defined in: [worker/api/elements.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L166)
+Defined in: [worker/api/elements.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L166)
 
 Mark an element index as movement-blocked for this tick.
 
@@ -324,7 +324,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.el
 markMovementBlockedByElementIndex(elementIndex: number): void
 ```
 
-Defined in: [worker/api/elements.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L172)
+Defined in: [worker/api/elements.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L172)
 
 #### Parameters
 
@@ -354,7 +354,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setVelocityAtCell(...args: number, number, [Vector2]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L183)
+Defined in: [worker/api/elements.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L183)
 
 Set particle velocity at a cell immediately on this worker.
 
@@ -384,7 +384,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L195)
+Defined in: [worker/api/elements.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L195)
 
 Add velocity to a particle at a cell immediately on this worker.
 
@@ -414,7 +414,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 convertToParticleAtCell(...args: number, number, [Vector2]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L208)
+Defined in: [worker/api/elements.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L208)
 
 Convert a cell element to a particle immediately on this worker.
 
@@ -444,7 +444,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 convertFromParticleAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:218](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L218)
+Defined in: [worker/api/elements.d.ts:218](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L218)
 
 Convert a particle back to a solid element immediately on this worker.
 
@@ -474,7 +474,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:230](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L230)
+Defined in: [worker/api/elements.d.ts:230](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L230)
 
 Set a data field on the element at a cell immediately on this worker.
 
@@ -504,7 +504,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 refreshColorAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [worker/api/elements.d.ts:241](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L241)
+Defined in: [worker/api/elements.d.ts:241](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L241)
 
 Refresh the rendered color at a cell immediately on this worker.
 
@@ -532,7 +532,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 setPhysicsAtCell(...args: [number, number, number]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L251)
+Defined in: [worker/api/elements.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L251)
 
 Set the physics skip mode at a cell immediately on this worker.
 
@@ -560,7 +560,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 setDurationAtCell(...args: [number, number, number, object]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:263](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L263)
+Defined in: [worker/api/elements.d.ts:263](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L263)
 
 Set element duration at a cell immediately on this worker.
 

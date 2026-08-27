@@ -1,6 +1,6 @@
 # sandkit.enums.PickupType
 
-Defined in: [sandkit/enums/index.d.ts:413](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L413)
+Defined in: [sandkit/enums/index.d.ts:413](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L413)
 
 Pickups and interactable world items.
 
@@ -14,7 +14,7 @@ Pickups and interactable world items.
 Artifact: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:414](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L414)
+Defined in: [sandkit/enums/index.d.ts:414](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L414)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:414](https://github.com/sandustry-modding/
 GlyphKey: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:415](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L415)
+Defined in: [sandkit/enums/index.d.ts:415](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L415)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [sandkit/enums/index.d.ts:415](https://github.com/sandustry-modding/
 Stratacore: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:416](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L416)
+Defined in: [sandkit/enums/index.d.ts:416](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L416)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [sandkit/enums/index.d.ts:416](https://github.com/sandustry-modding/
 Orb: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L417)
+Defined in: [sandkit/enums/index.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L417)

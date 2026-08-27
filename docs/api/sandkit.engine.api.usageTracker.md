@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 clear(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/usageTracker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/usageTracker.d.ts#L15)
+Defined in: [sandkit/engine/api/usageTracker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L15)
 
 Clear recorded usage statistics.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 getLatest(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/usageTracker.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/usageTracker.d.ts#L20)
+Defined in: [sandkit/engine/api/usageTracker.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L20)
 
 Return the most recently used item or structure.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 getMostUsed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/usageTracker.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/usageTracker.d.ts#L25)
+Defined in: [sandkit/engine/api/usageTracker.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L25)
 
 Return the most frequently used item or structure.
 

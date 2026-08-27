@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 refresh(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/shadows.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/shadows.d.ts#L15)
+Defined in: [sandkit/engine/api/shadows.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L15)
 
 Refresh shadows for the whole visible area.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 refreshRadius(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/shadows.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/shadows.d.ts#L20)
+Defined in: [sandkit/engine/api/shadows.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L20)
 
 Refresh shadows within a circular radius.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 refreshRect(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/shadows.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/shadows.d.ts#L25)
+Defined in: [sandkit/engine/api/shadows.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L25)
 
 Refresh shadows within a rectangle.
 

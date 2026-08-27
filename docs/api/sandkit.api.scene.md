@@ -10,7 +10,7 @@
 getActive(): Scene
 ```
 
-Defined in: [sandkit/api/scene.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/scene.d.ts#L14)
+Defined in: [sandkit/api/scene.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/scene.d.ts#L14)
 
 Return the active scene.
 

@@ -10,7 +10,7 @@
 FieldId = LooseString<never>
 ```
 
-Defined in: [sandkit/api/settings.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/settings.d.ts#L25)
+Defined in: [sandkit/api/settings.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L25)
 
 Settings field id. Any string is allowed.
 
@@ -24,7 +24,7 @@ Settings field id. Any string is allowed.
 ConfigValueV1 = string | number | boolean | null
 ```
 
-Defined in: [sandkit/api/settings.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/settings.d.ts#L28)
+Defined in: [sandkit/api/settings.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L28)
 
 Settings field value shape.
 
@@ -38,7 +38,7 @@ Settings field value shape.
 get(fieldId: string & object): ConfigValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/settings.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/settings.d.ts#L15)
+Defined in: [sandkit/api/settings.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L15)
 
 Return a settings field value by id.
 
@@ -64,7 +64,7 @@ Settings field identifier.
 getAll(): Readonly<Record<string, ConfigValueV1>>
 ```
 
-Defined in: [sandkit/api/settings.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/settings.d.ts#L17)
+Defined in: [sandkit/api/settings.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L17)
 
 Return all settings as a read-only map.
 
@@ -82,7 +82,7 @@ Return all settings as a read-only map.
 onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void
 ```
 
-Defined in: [sandkit/api/settings.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/settings.d.ts#L22)
+Defined in: [sandkit/api/settings.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L22)
 
 Subscribe to settings changes. Return an unsubscribe function.
 

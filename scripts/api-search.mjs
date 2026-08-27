@@ -36,6 +36,7 @@ export function apiPathToQualifiedName(relPosix) {
 
   p = p.replace(/\/README\.md$/, "");
   p = p.replace(/\.md$/, "");
+  p = p.replace(/^src\//, "");
 
   // Flat slug routes: sandkit.api.settings / sandkit.api.elements.worker
   if (p.includes(".") && !p.includes("/")) {

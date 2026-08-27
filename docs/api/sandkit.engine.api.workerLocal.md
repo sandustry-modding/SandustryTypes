@@ -17,7 +17,7 @@ Available on worker threads only. Values do not persist across workers.
 clear(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/workerLocal.d.ts#L14)
+Defined in: [sandkit/engine/api/workerLocal.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L14)
 
 Remove all keys from worker-local storage.
 
@@ -43,7 +43,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 get(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/workerLocal.d.ts#L19)
+Defined in: [sandkit/engine/api/workerLocal.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L19)
 
 Return a value by key, or undefined when missing.
 
@@ -69,7 +69,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 getOrInit(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/workerLocal.d.ts#L24)
+Defined in: [sandkit/engine/api/workerLocal.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L24)
 
 Return a value by key, initializing it when missing.
 
@@ -95,7 +95,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 set(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/workerLocal.d.ts#L29)
+Defined in: [sandkit/engine/api/workerLocal.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L29)
 
 Store a value by key.
 

@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 decrementConvergenceBuffer(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L15)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L15)
 
 Decrease the convergence buffer by one step.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 getCrystalMined(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L20)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L20)
 
 Return total crystal mined for swarm consoles.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 getDiskRadiusCells(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L25)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L25)
 
 Return the disk radius in cells for a console.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 getEntityType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L30)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L30)
 
 Return the entity type used by swarm consoles.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 getNearestConvergence(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L35)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L35)
 
 Return the nearest convergence point.
 
@@ -148,7 +148,7 @@ Game state first, then method-specific arguments.
 getPendingConvergence(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L40)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L40)
 
 Return the pending convergence target.
 
@@ -174,7 +174,7 @@ Game state first, then method-specific arguments.
 getPlacedConsoles(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L45)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L45)
 
 Return all placed swarm console structures.
 
@@ -200,7 +200,7 @@ Game state first, then method-specific arguments.
 getRadiusPx(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L50)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L50)
 
 Return the console effect radius in pixels.
 
@@ -226,7 +226,7 @@ Game state first, then method-specific arguments.
 isSpawnJammed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L55)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L55)
 
 Return whether swarm spawn is currently jammed.
 
@@ -252,7 +252,7 @@ Game state first, then method-specific arguments.
 registerEntityType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L60)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L60)
 
 Register the entity type for swarm consoles.
 
@@ -278,7 +278,7 @@ Game state first, then method-specific arguments.
 resetAllConvergenceBuffers(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L65)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L65)
 
 Reset convergence buffers on all consoles.
 
@@ -304,7 +304,7 @@ Game state first, then method-specific arguments.
 setSpawnJammed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L70)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L70)
 
 Set whether swarm spawn is jammed.
 

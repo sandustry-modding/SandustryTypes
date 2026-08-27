@@ -17,7 +17,7 @@ Main thread only.
 getSnappedPositionAtCell(...args: CellCoordinates): Vector2
 ```
 
-Defined in: [sandkit/api/building.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L73)
+Defined in: [sandkit/api/building.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L73)
 
 Return the snapped world position for placement at the cell.
 
@@ -43,7 +43,7 @@ Snapped world position in pixels.
 isBlockedAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/building.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L81)
+Defined in: [sandkit/api/building.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L81)
 
 Return true when placement is blocked at the cell.
 
@@ -69,7 +69,7 @@ True when a structure cannot be placed at the cell.
 cancelPlacement(): void
 ```
 
-Defined in: [sandkit/api/building.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L84)
+Defined in: [sandkit/api/building.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L84)
 
 Cancel the current structure placement preview.
 
@@ -87,7 +87,7 @@ Cancel the current structure placement preview.
 selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef | null
 ```
 
-Defined in: [sandkit/api/building.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L91)
+Defined in: [sandkit/api/building.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L91)
 
 Select a structure for placement by type or id.
 

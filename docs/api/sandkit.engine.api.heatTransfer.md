@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 absorbAdjacentElements(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L15)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L15)
 
 Absorb heat from adjacent elements into a cell.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 addTemperature(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L20)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L20)
 
 Add temperature to a cell or region.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 computeDiffusedTemperatures(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L25)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L25)
 
 Compute diffused temperatures for connected cells.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 computeEqualizedTemperature(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L30)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L30)
 
 Compute one equalized temperature across connected cells.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 consumeTemperatureNear(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L35)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L35)
 
 Consume temperature near a point or cell.
 
@@ -148,7 +148,7 @@ Game state first, then method-specific arguments.
 ensureTemperature(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L40)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L40)
 
 Ensure a cell has at least the given temperature.
 
@@ -174,7 +174,7 @@ Game state first, then method-specific arguments.
 equalizeConnected(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L45)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L45)
 
 Equalize temperature across a connected component.
 

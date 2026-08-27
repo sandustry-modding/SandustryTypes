@@ -17,7 +17,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fire
 canBurnElementAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/fire.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L17)
+Defined in: [sandkit/api/fire.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L17)
 
 Returns true when the element at the cell can burn.
 
@@ -45,7 +45,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fire
 burnElementAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/fire.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L26)
+Defined in: [sandkit/api/fire.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L26)
 
 Burn the element at the cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -71,7 +71,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 burnElementAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/fire.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L32)
+Defined in: [sandkit/api/fire.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L32)
 
 #### Parameters
 

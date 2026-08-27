@@ -6,7 +6,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.processing.WeightedRecipeOutput</code></p>
 
-Defined in: [sandkit/api/processing.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L30)
+Defined in: [sandkit/api/processing.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L30)
 
 Weighted element output entry shared by machine recipes.
 
@@ -18,7 +18,7 @@ Weighted element output entry shared by machine recipes.
 elementType: ElementType
 ```
 
-Defined in: [sandkit/api/processing.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L32)
+Defined in: [sandkit/api/processing.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L32)
 
 Output element type (1–255).
 
@@ -28,7 +28,7 @@ Output element type (1–255).
 chance: number
 ```
 
-Defined in: [sandkit/api/processing.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L34)
+Defined in: [sandkit/api/processing.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L34)
 
 Output probability from 0 to 1.
 
@@ -38,7 +38,7 @@ Output probability from 0 to 1.
 
 <p class="smt-member-path"><code>sandkit.api.processing.PlanterBoxRecipeDefinitionV1</code></p>
 
-Defined in: [sandkit/api/processing.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L38)
+Defined in: [sandkit/api/processing.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L38)
 
 Planter box grower recipe definition.
 
@@ -50,7 +50,7 @@ Planter box grower recipe definition.
 input: ElementType
 ```
 
-Defined in: [sandkit/api/processing.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L40)
+Defined in: [sandkit/api/processing.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L40)
 
 Input element type placed on the grower.
 
@@ -60,7 +60,7 @@ Input element type placed on the grower.
 output: ElementType
 ```
 
-Defined in: [sandkit/api/processing.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L42)
+Defined in: [sandkit/api/processing.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L42)
 
 Output element type produced by the grower.
 
@@ -70,7 +70,7 @@ Output element type produced by the grower.
 optional chance?: number
 ```
 
-Defined in: [sandkit/api/processing.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L44)
+Defined in: [sandkit/api/processing.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L44)
 
 Success chance from 0 to 1. Default 1.
 
@@ -80,7 +80,7 @@ Success chance from 0 to 1. Default 1.
 
 <p class="smt-member-path"><code>sandkit.api.processing.ShakerRecipeDefinitionV1</code></p>
 
-Defined in: [sandkit/api/processing.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L48)
+Defined in: [sandkit/api/processing.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L48)
 
 Shaker recipe definition.
 
@@ -92,7 +92,7 @@ Shaker recipe definition.
 input: ElementType
 ```
 
-Defined in: [sandkit/api/processing.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L50)
+Defined in: [sandkit/api/processing.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L50)
 
 Input element type dropped on the shaker.
 
@@ -102,7 +102,7 @@ Input element type dropped on the shaker.
 outputsAbove: WeightedRecipeOutput[]
 ```
 
-Defined in: [sandkit/api/processing.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L52)
+Defined in: [sandkit/api/processing.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L52)
 
 Weighted outputs ejected upward.
 
@@ -112,7 +112,7 @@ Weighted outputs ejected upward.
 outputsBelow: WeightedRecipeOutput[]
 ```
 
-Defined in: [sandkit/api/processing.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L54)
+Defined in: [sandkit/api/processing.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L54)
 
 Weighted outputs ejected downward.
 
@@ -122,7 +122,7 @@ Weighted outputs ejected downward.
 
 <p class="smt-member-path"><code>sandkit.api.processing.KineticPressRecipeDefinitionV1</code></p>
 
-Defined in: [sandkit/api/processing.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L58)
+Defined in: [sandkit/api/processing.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L58)
 
 Kinetic press recipe definition.
 
@@ -134,7 +134,7 @@ Kinetic press recipe definition.
 input: ElementType
 ```
 
-Defined in: [sandkit/api/processing.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L60)
+Defined in: [sandkit/api/processing.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L60)
 
 Input element type processed by the press.
 
@@ -144,7 +144,7 @@ Input element type processed by the press.
 minimumDownwardVelocity: number
 ```
 
-Defined in: [sandkit/api/processing.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L62)
+Defined in: [sandkit/api/processing.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L62)
 
 Minimum downward velocity required to trigger the press.
 
@@ -154,7 +154,7 @@ Minimum downward velocity required to trigger the press.
 outputs: WeightedRecipeOutput[]
 ```
 
-Defined in: [sandkit/api/processing.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L64)
+Defined in: [sandkit/api/processing.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L64)
 
 Weighted outputs produced by the press.
 
@@ -168,7 +168,7 @@ Weighted outputs produced by the press.
 registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/processing.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L15)
+Defined in: [sandkit/api/processing.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L15)
 
 Register a planter box grower recipe.
 
@@ -194,7 +194,7 @@ Grower input/output recipe.
 registerShaker(definition: ShakerRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/processing.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L21)
+Defined in: [sandkit/api/processing.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L21)
 
 Register a shaker recipe.
 
@@ -220,7 +220,7 @@ Shaker input and weighted outputs.
 registerKineticPress(definition: KineticPressRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/processing.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L27)
+Defined in: [sandkit/api/processing.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L27)
 
 Register a kinetic press recipe.
 

@@ -1,6 +1,6 @@
 # sandkit.enums.ElementType
 
-Defined in: [sandkit/enums/index.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L129)
+Defined in: [sandkit/enums/index.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L129)
 
 Built-in element type ids (prefer API string ids when registering mods).
 
@@ -14,7 +14,7 @@ Built-in element type ids (prefer API string ids when registering mods).
 Sand: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L130)
+Defined in: [sandkit/enums/index.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L130)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:130](https://github.com/sandustry-modding/
 Particle: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L131)
+Defined in: [sandkit/enums/index.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L131)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [sandkit/enums/index.d.ts:131](https://github.com/sandustry-modding/
 Water: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L132)
+Defined in: [sandkit/enums/index.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L132)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [sandkit/enums/index.d.ts:132](https://github.com/sandustry-modding/
 WetSand: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L133)
+Defined in: [sandkit/enums/index.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L133)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [sandkit/enums/index.d.ts:133](https://github.com/sandustry-modding/
 Sandium: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L134)
+Defined in: [sandkit/enums/index.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L134)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [sandkit/enums/index.d.ts:134](https://github.com/sandustry-modding/
 Residue: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L135)
+Defined in: [sandkit/enums/index.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L135)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [sandkit/enums/index.d.ts:135](https://github.com/sandustry-modding/
 Gold: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L136)
+Defined in: [sandkit/enums/index.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L136)
 
 ***
 
@@ -98,7 +98,7 @@ Defined in: [sandkit/enums/index.d.ts:136](https://github.com/sandustry-modding/
 Gloom: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L137)
+Defined in: [sandkit/enums/index.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L137)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: [sandkit/enums/index.d.ts:137](https://github.com/sandustry-modding/
 Shake: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L138)
+Defined in: [sandkit/enums/index.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L138)
 
 ***
 
@@ -122,7 +122,7 @@ Defined in: [sandkit/enums/index.d.ts:138](https://github.com/sandustry-modding/
 Steam: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L139)
+Defined in: [sandkit/enums/index.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L139)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: [sandkit/enums/index.d.ts:139](https://github.com/sandustry-modding/
 Fire: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L140)
+Defined in: [sandkit/enums/index.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L140)
 
 ***
 
@@ -146,7 +146,7 @@ Defined in: [sandkit/enums/index.d.ts:140](https://github.com/sandustry-modding/
 FreezingIce: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L141)
+Defined in: [sandkit/enums/index.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L141)
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: [sandkit/enums/index.d.ts:141](https://github.com/sandustry-modding/
 Flame: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L142)
+Defined in: [sandkit/enums/index.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L142)
 
 ***
 
@@ -170,7 +170,7 @@ Defined in: [sandkit/enums/index.d.ts:142](https://github.com/sandustry-modding/
 BurntResidue: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L143)
+Defined in: [sandkit/enums/index.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L143)
 
 ***
 
@@ -182,7 +182,7 @@ Defined in: [sandkit/enums/index.d.ts:143](https://github.com/sandustry-modding/
 Seed: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L144)
+Defined in: [sandkit/enums/index.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L144)
 
 ***
 
@@ -194,7 +194,7 @@ Defined in: [sandkit/enums/index.d.ts:144](https://github.com/sandustry-modding/
 WetSeed: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L145)
+Defined in: [sandkit/enums/index.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L145)
 
 ***
 
@@ -206,7 +206,7 @@ Defined in: [sandkit/enums/index.d.ts:145](https://github.com/sandustry-modding/
 Seedling: 17
 ```
 
-Defined in: [sandkit/enums/index.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L146)
+Defined in: [sandkit/enums/index.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L146)
 
 ***
 
@@ -218,7 +218,7 @@ Defined in: [sandkit/enums/index.d.ts:146](https://github.com/sandustry-modding/
 Petalium: 18
 ```
 
-Defined in: [sandkit/enums/index.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L147)
+Defined in: [sandkit/enums/index.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L147)
 
 ***
 
@@ -230,7 +230,7 @@ Defined in: [sandkit/enums/index.d.ts:147](https://github.com/sandustry-modding/
 Lava: 19
 ```
 
-Defined in: [sandkit/enums/index.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L148)
+Defined in: [sandkit/enums/index.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L148)
 
 ***
 
@@ -242,4 +242,4 @@ Defined in: [sandkit/enums/index.d.ts:148](https://github.com/sandustry-modding/
 Basalt: 20
 ```
 
-Defined in: [sandkit/enums/index.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L149)
+Defined in: [sandkit/enums/index.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L149)

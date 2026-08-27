@@ -1,6 +1,6 @@
 # sandkit.api.building.StructureType
 
-Defined in: [sandkit/api/building.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L10)
+Defined in: [sandkit/api/building.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L10)
 
 Built-in structure type ids used during placement.
 
@@ -14,7 +14,7 @@ Built-in structure type ids used during placement.
 ConveyorLeft: 1
 ```
 
-Defined in: [sandkit/api/building.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L12)
+Defined in: [sandkit/api/building.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L12)
 
 Left-facing conveyor belt.
 
@@ -28,7 +28,7 @@ Left-facing conveyor belt.
 ConveyorRight: 2
 ```
 
-Defined in: [sandkit/api/building.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L14)
+Defined in: [sandkit/api/building.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L14)
 
 Right-facing conveyor belt.
 
@@ -42,7 +42,7 @@ Right-facing conveyor belt.
 ShakerLeft: 3
 ```
 
-Defined in: [sandkit/api/building.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L16)
+Defined in: [sandkit/api/building.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L16)
 
 Left-facing shaker.
 
@@ -56,7 +56,7 @@ Left-facing shaker.
 ShakerRight: 4
 ```
 
-Defined in: [sandkit/api/building.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L18)
+Defined in: [sandkit/api/building.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L18)
 
 Right-facing shaker.
 
@@ -70,7 +70,7 @@ Right-facing shaker.
 LauncherUp: 5
 ```
 
-Defined in: [sandkit/api/building.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L20)
+Defined in: [sandkit/api/building.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L20)
 
 Up-facing launcher.
 
@@ -84,7 +84,7 @@ Up-facing launcher.
 LauncherLeft: 6
 ```
 
-Defined in: [sandkit/api/building.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L22)
+Defined in: [sandkit/api/building.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L22)
 
 Left-facing launcher.
 
@@ -98,7 +98,7 @@ Left-facing launcher.
 LauncherRight: 7
 ```
 
-Defined in: [sandkit/api/building.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L24)
+Defined in: [sandkit/api/building.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L24)
 
 Right-facing launcher.
 
@@ -112,7 +112,7 @@ Right-facing launcher.
 SplitterLeft: 8
 ```
 
-Defined in: [sandkit/api/building.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L26)
+Defined in: [sandkit/api/building.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L26)
 
 Left-facing splitter.
 
@@ -126,7 +126,7 @@ Left-facing splitter.
 SplitterRight: 9
 ```
 
-Defined in: [sandkit/api/building.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L28)
+Defined in: [sandkit/api/building.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L28)
 
 Right-facing splitter.
 
@@ -140,7 +140,7 @@ Right-facing splitter.
 Dropper: 10
 ```
 
-Defined in: [sandkit/api/building.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L30)
+Defined in: [sandkit/api/building.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L30)
 
 Dropper structure.
 
@@ -154,7 +154,7 @@ Dropper structure.
 Foundation: 11
 ```
 
-Defined in: [sandkit/api/building.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L32)
+Defined in: [sandkit/api/building.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L32)
 
 Foundation block.
 
@@ -168,7 +168,7 @@ Foundation block.
 FoundationAngledLeft: 12
 ```
 
-Defined in: [sandkit/api/building.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L34)
+Defined in: [sandkit/api/building.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L34)
 
 Angled foundation facing left.
 
@@ -182,7 +182,7 @@ Angled foundation facing left.
 FoundationTriangleLeftDel: 13
 ```
 
-Defined in: [sandkit/api/building.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L36)
+Defined in: [sandkit/api/building.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L36)
 
 Left triangle foundation (deprecated id).
 
@@ -196,7 +196,7 @@ Left triangle foundation (deprecated id).
 FoundationAngledRight: 14
 ```
 
-Defined in: [sandkit/api/building.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L38)
+Defined in: [sandkit/api/building.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L38)
 
 Angled foundation facing right.
 
@@ -210,7 +210,7 @@ Angled foundation facing right.
 FoundationTriangleRightDel: 15
 ```
 
-Defined in: [sandkit/api/building.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L40)
+Defined in: [sandkit/api/building.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L40)
 
 Right triangle foundation (deprecated id).
 
@@ -224,7 +224,7 @@ Right triangle foundation (deprecated id).
 Collector: 16
 ```
 
-Defined in: [sandkit/api/building.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L42)
+Defined in: [sandkit/api/building.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L42)
 
 Collector structure.
 
@@ -238,7 +238,7 @@ Collector structure.
 FilterLeft: 17
 ```
 
-Defined in: [sandkit/api/building.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L44)
+Defined in: [sandkit/api/building.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L44)
 
 Left-facing filter.
 
@@ -252,7 +252,7 @@ Left-facing filter.
 FilterRight: 18
 ```
 
-Defined in: [sandkit/api/building.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L46)
+Defined in: [sandkit/api/building.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L46)
 
 Right-facing filter.
 
@@ -266,7 +266,7 @@ Right-facing filter.
 SlidingFoundation: 19
 ```
 
-Defined in: [sandkit/api/building.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L48)
+Defined in: [sandkit/api/building.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L48)
 
 Sliding foundation block.
 
@@ -280,7 +280,7 @@ Sliding foundation block.
 VelocitySoaker: 20
 ```
 
-Defined in: [sandkit/api/building.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L50)
+Defined in: [sandkit/api/building.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L50)
 
 Velocity soaker structure.
 
@@ -294,7 +294,7 @@ Velocity soaker structure.
 Grower: 21
 ```
 
-Defined in: [sandkit/api/building.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L52)
+Defined in: [sandkit/api/building.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L52)
 
 Grower structure.
 
@@ -308,7 +308,7 @@ Grower structure.
 SoundBox: 22
 ```
 
-Defined in: [sandkit/api/building.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L54)
+Defined in: [sandkit/api/building.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L54)
 
 Sound box structure.
 
@@ -322,7 +322,7 @@ Sound box structure.
 Pipe: 23
 ```
 
-Defined in: [sandkit/api/building.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L56)
+Defined in: [sandkit/api/building.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L56)
 
 Pipe segment.
 
@@ -336,7 +336,7 @@ Pipe segment.
 Pump: 24
 ```
 
-Defined in: [sandkit/api/building.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L58)
+Defined in: [sandkit/api/building.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L58)
 
 Pump structure.
 
@@ -350,7 +350,7 @@ Pump structure.
 LiquidVent: 25
 ```
 
-Defined in: [sandkit/api/building.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L60)
+Defined in: [sandkit/api/building.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L60)
 
 Liquid vent structure.
 
@@ -364,7 +364,7 @@ Liquid vent structure.
 Light: 26
 ```
 
-Defined in: [sandkit/api/building.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L62)
+Defined in: [sandkit/api/building.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L62)
 
 Light structure.
 
@@ -378,6 +378,6 @@ Light structure.
 GloomEmitter: 27
 ```
 
-Defined in: [sandkit/api/building.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L64)
+Defined in: [sandkit/api/building.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L64)
 
 Gloom emitter structure.

@@ -13,7 +13,7 @@ Main thread only.
 AssetProviderV1 = object
 ```
 
-Defined in: [sandkit/api/assets.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L7)
+Defined in: [sandkit/api/assets.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L7)
 
 Describes a mod or pack that supplies assets for a kind.
 
@@ -25,7 +25,7 @@ Describes a mod or pack that supplies assets for a kind.
 id: ` ${string}:${string}:${string} `
 ```
 
-Defined in: [sandkit/api/assets.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L8)
+Defined in: [sandkit/api/assets.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L8)
 
 ##### kind
 
@@ -33,7 +33,7 @@ Defined in: [sandkit/api/assets.d.ts:8](https://github.com/sandustry-modding/San
 kind: string
 ```
 
-Defined in: [sandkit/api/assets.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L9)
+Defined in: [sandkit/api/assets.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L9)
 
 ##### localId?
 
@@ -41,7 +41,7 @@ Defined in: [sandkit/api/assets.d.ts:9](https://github.com/sandustry-modding/San
 optional localId?: string
 ```
 
-Defined in: [sandkit/api/assets.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L10)
+Defined in: [sandkit/api/assets.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L10)
 
 ##### modId?
 
@@ -49,7 +49,7 @@ Defined in: [sandkit/api/assets.d.ts:10](https://github.com/sandustry-modding/Sa
 optional modId?: number
 ```
 
-Defined in: [sandkit/api/assets.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L11)
+Defined in: [sandkit/api/assets.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L11)
 
 ##### modName
 
@@ -57,7 +57,7 @@ Defined in: [sandkit/api/assets.d.ts:11](https://github.com/sandustry-modding/Sa
 modName: string
 ```
 
-Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L12)
+Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L12)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -69,7 +69,7 @@ Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/Sa
 getUrl(relativePath: string): string
 ```
 
-Defined in: [sandkit/api/assets.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L18)
+Defined in: [sandkit/api/assets.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L18)
 
 Resolves a path under the mod folder to a loadable URL.
 
@@ -95,7 +95,7 @@ Path relative to the calling mod folder.
 getSelectedProvider(kind: string): AssetProviderV1 | null
 ```
 
-Defined in: [sandkit/api/assets.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L23)
+Defined in: [sandkit/api/assets.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L23)
 
 Returns the selected provider for an asset kind, or null.
 
@@ -121,7 +121,7 @@ Asset kind identifier.
 selectProvider(kind: string, providerId: string | null): boolean
 ```
 
-Defined in: [sandkit/api/assets.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L29)
+Defined in: [sandkit/api/assets.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L29)
 
 Selects a provider for an asset kind. Returns true on success.
 

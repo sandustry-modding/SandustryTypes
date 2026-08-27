@@ -16,7 +16,7 @@ Shared `sandkit.api.player` base — player position and collision queries.
 getPositionAtWorld(): Vector2
 ```
 
-Defined in: [shared/api/player.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/player.d.ts#L15)
+Defined in: [shared/api/player.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L15)
 
 Return the player center position in world pixels.
 
@@ -38,7 +38,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 getWorldPosition(): Vector2
 ```
 
-Defined in: [shared/api/player.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/player.d.ts#L21)
+Defined in: [shared/api/player.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L21)
 
 #### Returns
 
@@ -62,7 +62,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 isCollidingWithCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/player.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/player.d.ts#L31)
+Defined in: [shared/api/player.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L31)
 
 Return true when the player hitbox overlaps the cell.
 
@@ -92,7 +92,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 isWithinRadiusOfCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [shared/api/player.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/player.d.ts#L42)
+Defined in: [shared/api/player.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L42)
 
 Return true when the player is within `radius` cells of the point.
 

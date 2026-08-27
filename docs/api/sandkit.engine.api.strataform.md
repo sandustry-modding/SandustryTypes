@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getDefaultConfig(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/strataform.d.ts#L15)
+Defined in: [sandkit/engine/api/strataform.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L15)
 
 Return the default strataform configuration.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 getRegisteredTypes(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/strataform.d.ts#L20)
+Defined in: [sandkit/engine/api/strataform.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L20)
 
 Return all registered strataform types.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 registerType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/strataform.d.ts#L25)
+Defined in: [sandkit/engine/api/strataform.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L25)
 
 Register a custom strataform type.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 trigger(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/strataform.d.ts#L30)
+Defined in: [sandkit/engine/api/strataform.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L30)
 
 Trigger a strataform event at a location.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 triggerByType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/strataform.d.ts#L35)
+Defined in: [sandkit/engine/api/strataform.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L35)
 
 Trigger a strataform event by type id.
 

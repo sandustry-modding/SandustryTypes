@@ -14,7 +14,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pick
 
 <p class="smt-member-path"><code>sandkit.api.pickups.WorldItemLight</code></p>
 
-Defined in: sandkit/api/pickups.d.ts:21
+Defined in: [sandkit/api/pickups.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L21)
 
 Optional point light attached when spawning a pickup.
 
@@ -26,7 +26,7 @@ Optional point light attached when spawning a pickup.
 optional brightness?: number
 ```
 
-Defined in: sandkit/api/pickups.d.ts:23
+Defined in: [sandkit/api/pickups.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L23)
 
 Light brightness multiplier. Default 1.
 
@@ -36,7 +36,7 @@ Light brightness multiplier. Default 1.
 optional size?: number
 ```
 
-Defined in: sandkit/api/pickups.d.ts:25
+Defined in: [sandkit/api/pickups.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L25)
 
 Light radius in world pixels. Default 100.
 
@@ -46,7 +46,7 @@ Light radius in world pixels. Default 100.
 optional color?: [number, number, number] | [number, number, number, number]
 ```
 
-Defined in: sandkit/api/pickups.d.ts:27
+Defined in: [sandkit/api/pickups.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L27)
 
 RGB or RGBA color components in 0–1 range.
 
@@ -56,7 +56,7 @@ RGB or RGBA color components in 0–1 range.
 
 <p class="smt-member-path"><code>sandkit.api.pickups.WorldItem</code></p>
 
-Defined in: sandkit/api/pickups.d.ts:31
+Defined in: [sandkit/api/pickups.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L31)
 
 Active world pickup instance.
 
@@ -68,7 +68,7 @@ Active world pickup instance.
 id: number
 ```
 
-Defined in: sandkit/api/pickups.d.ts:32
+Defined in: [sandkit/api/pickups.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L32)
 
 ##### x
 
@@ -76,7 +76,7 @@ Defined in: sandkit/api/pickups.d.ts:32
 x: number
 ```
 
-Defined in: sandkit/api/pickups.d.ts:33
+Defined in: [sandkit/api/pickups.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L33)
 
 ##### y
 
@@ -84,7 +84,7 @@ Defined in: sandkit/api/pickups.d.ts:33
 y: number
 ```
 
-Defined in: sandkit/api/pickups.d.ts:34
+Defined in: [sandkit/api/pickups.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L34)
 
 ##### type
 
@@ -92,7 +92,7 @@ Defined in: sandkit/api/pickups.d.ts:34
 type: PickupType
 ```
 
-Defined in: sandkit/api/pickups.d.ts:35
+Defined in: [sandkit/api/pickups.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L35)
 
 ##### data
 
@@ -100,7 +100,7 @@ Defined in: sandkit/api/pickups.d.ts:35
 data: Record<string, unknown>
 ```
 
-Defined in: sandkit/api/pickups.d.ts:36
+Defined in: [sandkit/api/pickups.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L36)
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
@@ -112,7 +112,7 @@ Defined in: sandkit/api/pickups.d.ts:36
 PickupType = PickupType
 ```
 
-Defined in: sandkit/api/pickups.d.ts:12
+Defined in: [sandkit/api/pickups.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L12)
 
 Official pickup type discriminator.
 
@@ -124,7 +124,7 @@ Official pickup type discriminator.
 WorldItemType = PickupType
 ```
 
-Defined in: sandkit/api/pickups.d.ts:18
+Defined in: [sandkit/api/pickups.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L18)
 
 #### Deprecated
 
@@ -144,7 +144,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem
 ```
 
-Defined in: sandkit/api/pickups.d.ts:50
+Defined in: [sandkit/api/pickups.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L50)
 
 Spawn a pickup at world position.
 
@@ -200,7 +200,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pick
 remove(pickup: WorldItem): void
 ```
 
-Defined in: sandkit/api/pickups.d.ts:58
+Defined in: [sandkit/api/pickups.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L58)
 
 Remove a pickup instance from the world.
 
@@ -228,7 +228,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pick
 destroy(pickup: WorldItem): void
 ```
 
-Defined in: sandkit/api/pickups.d.ts:64
+Defined in: [sandkit/api/pickups.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L64)
 
 #### Parameters
 
@@ -258,7 +258,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 pickUp(pickup: WorldItem): boolean
 ```
 
-Defined in: sandkit/api/pickups.d.ts:73
+Defined in: [sandkit/api/pickups.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L73)
 
 Pick up a world item into inventory.
 
@@ -290,7 +290,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pick
 getAll(): WorldItem[]
 ```
 
-Defined in: sandkit/api/pickups.d.ts:80
+Defined in: [sandkit/api/pickups.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L80)
 
 Return all active pickups.
 
@@ -312,7 +312,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pick
 getById(pickupId: number): WorldItem | undefined
 ```
 
-Defined in: sandkit/api/pickups.d.ts:88
+Defined in: [sandkit/api/pickups.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L88)
 
 Return a pickup by numeric id.
 

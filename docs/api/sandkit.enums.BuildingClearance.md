@@ -1,6 +1,6 @@
 # sandkit.enums.BuildingClearance
 
-Defined in: [sandkit/enums/index.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L48)
+Defined in: [sandkit/enums/index.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L48)
 
 Result of a build placement check.
 
@@ -14,7 +14,7 @@ Result of a build placement check.
 Available: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L49)
+Defined in: [sandkit/enums/index.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L49)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:49](https://github.com/sandustry-modding/S
 FullyBlocked: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L50)
+Defined in: [sandkit/enums/index.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L50)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [sandkit/enums/index.d.ts:50](https://github.com/sandustry-modding/S
 PartiallyBlocked: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L51)
+Defined in: [sandkit/enums/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L51)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [sandkit/enums/index.d.ts:51](https://github.com/sandustry-modding/S
 CanBeReplaced: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L52)
+Defined in: [sandkit/enums/index.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L52)

@@ -10,7 +10,7 @@
 getDrawPositionAtCell(...args: CellCoordinates): Vector2
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L16)
+Defined in: [sandkit/api/rendering.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L16)
 
 Return screen draw position for a grid cell.
 
@@ -34,7 +34,7 @@ Return screen draw position for a grid cell.
 getDrawPositionAtWorld(worldX: number, worldY: number): Vector2
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L24)
+Defined in: [sandkit/api/rendering.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L24)
 
 Return screen draw position for a world-space point.
 
@@ -70,7 +70,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.rend
 getGridMetrics(): object
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L26)
+Defined in: [sandkit/api/rendering.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L26)
 
 Return cell size and snap grid metrics.
 
@@ -100,7 +100,7 @@ snapGridCellSize: number
 getOverlayViewportSize(): object
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L28)
+Defined in: [sandkit/api/rendering.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L28)
 
 Return overlay viewport width and height in pixels.
 
@@ -130,7 +130,7 @@ height: number
 withOverlayContext<T>(callback: (context: CanvasRenderingContext2D) => T): T
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L33)
+Defined in: [sandkit/api/rendering.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L33)
 
 Run a callback with the overlay canvas context.
 

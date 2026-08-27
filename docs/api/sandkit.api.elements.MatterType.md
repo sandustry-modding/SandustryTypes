@@ -1,6 +1,6 @@
 # sandkit.api.elements.MatterType
 
-Defined in: [shared/api/elements.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L41)
+Defined in: [shared/api/elements.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L41)
 
 Physical behaviour category for an element.
 
@@ -18,7 +18,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 Solid: 1
 ```
 
-Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L42)
+Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L42)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/S
 Liquid: 2
 ```
 
-Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L43)
+Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L43)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/S
 Particle: 3
 ```
 
-Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L44)
+Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L44)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/S
 Gas: 4
 ```
 
-Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L45)
+Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L45)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/S
 Static: 5
 ```
 
-Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L46)
+Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L46)
 
 ***
 
@@ -78,7 +78,7 @@ Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/S
 Slushy: 6
 ```
 
-Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L47)
+Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L47)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/S
 Wisp: 7
 ```
 
-Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L48)
+Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L48)
 
 ***
 
@@ -102,4 +102,4 @@ Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/S
 Powder: 8
 ```
 
-Defined in: [shared/api/elements.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L49)
+Defined in: [shared/api/elements.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L49)

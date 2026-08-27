@@ -19,6 +19,10 @@ test("apiPathToQualifiedName maps TypeDoc files to runtime names", () => {
     "sandkit.api.settings",
   );
   assert.equal(
+    apiPathToQualifiedName("src/sandkit/api/namespaces/settings/README.md"),
+    "sandkit.api.settings",
+  );
+  assert.equal(
     apiPathToQualifiedName("sandkit/api/namespaces/ui/namespaces/overlays/README.md"),
     "sandkit.api.ui.overlays",
   );

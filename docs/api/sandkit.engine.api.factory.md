@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 addViabilityGold(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L15)
+Defined in: [sandkit/engine/api/factory.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L15)
 
 Add viability gold toward the next factory tier.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 canUnlockNextTier(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L20)
+Defined in: [sandkit/engine/api/factory.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L20)
 
 Return whether the next factory tier can be unlocked.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 ensureProcessAtLeast(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L25)
+Defined in: [sandkit/engine/api/factory.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L25)
 
 Ensure at least the given process count has been recorded.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 flushDeferredLevelUps(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L30)
+Defined in: [sandkit/engine/api/factory.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L30)
 
 Apply deferred factory level-ups.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 getLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L35)
+Defined in: [sandkit/engine/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L35)
 
 Return the current factory level.
 
@@ -148,7 +148,7 @@ Game state first, then method-specific arguments.
 getProcessCount(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L40)
+Defined in: [sandkit/engine/api/factory.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L40)
 
 Return total recorded process count.
 
@@ -174,7 +174,7 @@ Game state first, then method-specific arguments.
 getProcessRate(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L45)
+Defined in: [sandkit/engine/api/factory.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L45)
 
 Return the current process rate.
 
@@ -200,7 +200,7 @@ Game state first, then method-specific arguments.
 recordProcess(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L50)
+Defined in: [sandkit/engine/api/factory.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L50)
 
 Record one factory process event.
 
@@ -226,7 +226,7 @@ Game state first, then method-specific arguments.
 unlockNextTier(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L55)
+Defined in: [sandkit/engine/api/factory.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L55)
 
 Unlock the next factory tier.
 

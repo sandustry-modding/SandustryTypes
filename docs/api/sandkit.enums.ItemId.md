@@ -1,6 +1,6 @@
 # sandkit.enums.ItemId
 
-Defined in: [sandkit/enums/index.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L153)
+Defined in: [sandkit/enums/index.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L153)
 
 Built-in hotbar item ids.
 
@@ -14,7 +14,7 @@ Built-in hotbar item ids.
 Shovel: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L154)
+Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L154)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/
 Grabber: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L155)
+Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L155)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/
 Demolisher: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L156)
+Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L156)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/
 GrapplingHook: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L157)
+Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L157)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/
 Vacuum: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L158)
+Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L158)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/
 Gun: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L159)
+Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L159)
 
 ***
 
@@ -86,7 +86,7 @@ Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/
 Copier: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L160)
+Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L160)
 
 ***
 
@@ -98,7 +98,7 @@ Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/
 RocketLauncher: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L161)
+Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L161)
 
 ***
 
@@ -110,7 +110,7 @@ Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/
 Digger: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L162)
+Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L162)
 
 ***
 
@@ -122,7 +122,7 @@ Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/
 Shotgun: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L163)
+Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L163)
 
 ***
 
@@ -134,7 +134,7 @@ Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/
 Teleporter: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L164)
+Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L164)
 
 ***
 
@@ -146,7 +146,7 @@ Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/
 Flamethrower: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L165)
+Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L165)
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/
 PipeRemover: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L166)
+Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L166)
 
 ***
 
@@ -170,7 +170,7 @@ Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/
 Hauler: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L167)
+Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L167)
 
 ***
 
@@ -182,7 +182,7 @@ Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/
 Cryoblaster: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L168)
+Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L168)
 
 ***
 
@@ -194,4 +194,4 @@ Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/
 MegaShotgun: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L169)
+Defined in: [sandkit/enums/index.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L169)

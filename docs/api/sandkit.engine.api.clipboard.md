@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 activate(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L15)
+Defined in: [sandkit/engine/api/clipboard.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L15)
 
 Activate the clipboard tool or mode.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 clear(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L20)
+Defined in: [sandkit/engine/api/clipboard.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L20)
 
 Clear the current clipboard contents.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 get(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L25)
+Defined in: [sandkit/engine/api/clipboard.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L25)
 
 Return the current clipboard payload.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 getHistory(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L30)
+Defined in: [sandkit/engine/api/clipboard.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L30)
 
 Return clipboard history entries.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 getSignalLinks(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L35)
+Defined in: [sandkit/engine/api/clipboard.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L35)
 
 Return signal links stored on the clipboard.
 
@@ -148,7 +148,7 @@ Game state first, then method-specific arguments.
 selectFromHistory(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L40)
+Defined in: [sandkit/engine/api/clipboard.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L40)
 
 Restore a clipboard entry from history.
 
@@ -174,7 +174,7 @@ Game state first, then method-specific arguments.
 set(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L45)
+Defined in: [sandkit/engine/api/clipboard.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L45)
 
 Set the clipboard payload.
 

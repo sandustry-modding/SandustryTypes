@@ -9,7 +9,7 @@ Main thread only.
 
 <p class="smt-member-path"><code>sandkit.api.cooldown.Cooldown</code></p>
 
-Defined in: [sandkit/api/cooldown.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L20)
+Defined in: [sandkit/api/cooldown.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L20)
 
 Cooldown state object passed to [check](#check) and [isReady](#isready).
 
@@ -21,7 +21,7 @@ Cooldown state object passed to [check](#check) and [isReady](#isready).
 last: number
 ```
 
-Defined in: [sandkit/api/cooldown.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L22)
+Defined in: [sandkit/api/cooldown.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L22)
 
 Timestamp when the cooldown was last triggered (game time).
 
@@ -31,7 +31,7 @@ Timestamp when the cooldown was last triggered (game time).
 time: number
 ```
 
-Defined in: [sandkit/api/cooldown.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L24)
+Defined in: [sandkit/api/cooldown.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L24)
 
 Cooldown duration in milliseconds.
 
@@ -45,7 +45,7 @@ Cooldown duration in milliseconds.
 check(cooldown: Cooldown, overrideTime?: number): boolean
 ```
 
-Defined in: [sandkit/api/cooldown.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L11)
+Defined in: [sandkit/api/cooldown.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L11)
 
 Starts the cooldown when ready and returns true; otherwise returns false.
 
@@ -77,7 +77,7 @@ Optional timestamp (ms) instead of current game time.
 isReady(cooldown: Cooldown, overrideTime?: number): boolean
 ```
 
-Defined in: [sandkit/api/cooldown.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L17)
+Defined in: [sandkit/api/cooldown.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L17)
 
 Returns true when the cooldown has elapsed.
 

@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 enqueue(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L15)
+Defined in: [sandkit/engine/api/queue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L15)
 
 Enqueue work to run on a future tick.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 enqueueInTicks(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L20)
+Defined in: [sandkit/engine/api/queue.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L20)
 
 Enqueue work to run after a tick delay.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 enqueueSkipTick(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L25)
+Defined in: [sandkit/engine/api/queue.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L25)
 
 Enqueue work that skips the current tick.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 process(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L30)
+Defined in: [sandkit/engine/api/queue.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L30)
 
 Process pending queue items for the current tick.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 registerHandler(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L35)
+Defined in: [sandkit/engine/api/queue.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L35)
 
 Register a handler for a queue item type.
 
@@ -148,7 +148,7 @@ Game state first, then method-specific arguments.
 removeByKey(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L40)
+Defined in: [sandkit/engine/api/queue.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L40)
 
 Remove queued items by key.
 

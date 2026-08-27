@@ -12,7 +12,7 @@ Grabber tool size and state.
 setSize(size: number): void
 ```
 
-Defined in: [sandkit/api/tools.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tools.d.ts#L15)
+Defined in: [sandkit/api/tools.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L15)
 
 Set grabber radius size.
 
@@ -38,7 +38,7 @@ Grab radius in cells.
 getSize(): number
 ```
 
-Defined in: [sandkit/api/tools.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tools.d.ts#L21)
+Defined in: [sandkit/api/tools.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L21)
 
 Return current grabber radius size.
 
@@ -58,7 +58,7 @@ Grab radius in cells.
 isActive(): boolean
 ```
 
-Defined in: [sandkit/api/tools.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tools.d.ts#L27)
+Defined in: [sandkit/api/tools.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L27)
 
 Return true when grabber tool is active.
 
@@ -78,7 +78,7 @@ True when the grabber is the active tool.
 isLoaded(): boolean
 ```
 
-Defined in: [sandkit/api/tools.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tools.d.ts#L33)
+Defined in: [sandkit/api/tools.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L33)
 
 Return true when grabber holds elements.
 

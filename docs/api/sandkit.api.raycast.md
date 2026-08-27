@@ -10,7 +10,7 @@
 castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistance: number): Vector2 & object | null
 ```
 
-Defined in: [sandkit/api/raycast.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/raycast.d.ts#L18)
+Defined in: [sandkit/api/raycast.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/raycast.d.ts#L18)
 
 Cast a ray from world position. Return hit point and distance, or null.
 

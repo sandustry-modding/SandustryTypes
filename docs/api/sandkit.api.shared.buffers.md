@@ -12,7 +12,7 @@ Shared buffer ensure and lookup.
 ensure(key: string, config: object): SharedArray
 ```
 
-Defined in: [sandkit/api/shared.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/shared.d.ts#L21)
+Defined in: [sandkit/api/shared.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L21)
 
 Create or return a named shared buffer with type and length.
 
@@ -52,7 +52,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.shar
 create(key: string, config: object): SharedArray
 ```
 
-Defined in: [sandkit/api/shared.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/shared.d.ts#L27)
+Defined in: [sandkit/api/shared.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L27)
 
 #### Parameters
 
@@ -92,7 +92,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 get(key: string): SharedArray | undefined
 ```
 
-Defined in: [shared/api/shared.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/shared.d.ts#L19)
+Defined in: [shared/api/shared.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L19)
 
 Look up a named shared buffer without creating it.
 

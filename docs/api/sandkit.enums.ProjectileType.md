@@ -1,6 +1,6 @@
 # sandkit.enums.ProjectileType
 
-Defined in: [sandkit/enums/index.d.ts:233](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L233)
+Defined in: [sandkit/enums/index.d.ts:233](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L233)
 
 Projectile kinds spawned by weapons and tools.
 
@@ -14,7 +14,7 @@ Projectile kinds spawned by weapons and tools.
 Bullet: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:234](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L234)
+Defined in: [sandkit/enums/index.d.ts:234](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L234)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:234](https://github.com/sandustry-modding/
 Rocket: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:235](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L235)
+Defined in: [sandkit/enums/index.d.ts:235](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L235)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [sandkit/enums/index.d.ts:235](https://github.com/sandustry-modding/
 GrapplingHook: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:236](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L236)
+Defined in: [sandkit/enums/index.d.ts:236](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L236)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [sandkit/enums/index.d.ts:236](https://github.com/sandustry-modding/
 Fire: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:237](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L237)
+Defined in: [sandkit/enums/index.d.ts:237](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L237)
 
 ***
 
@@ -62,7 +62,7 @@ Defined in: [sandkit/enums/index.d.ts:237](https://github.com/sandustry-modding/
 Digger: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:238](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L238)
+Defined in: [sandkit/enums/index.d.ts:238](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L238)
 
 ***
 
@@ -74,4 +74,4 @@ Defined in: [sandkit/enums/index.d.ts:238](https://github.com/sandustry-modding/
 Mod: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:239](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L239)
+Defined in: [sandkit/enums/index.d.ts:239](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L239)

@@ -19,7 +19,7 @@ main-thread APIs.
 getIndex(): number
 ```
 
-Defined in: [worker/api/worker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/worker.d.ts#L14)
+Defined in: [worker/api/worker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L14)
 
 Return the zero-based index of this worker in the worker pool.
 
@@ -39,7 +39,7 @@ Worker index (`0` … `getCount() - 1`).
 getCount(): number
 ```
 
-Defined in: [worker/api/worker.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/worker.d.ts#L19)
+Defined in: [worker/api/worker.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L19)
 
 Return the total number of simulation workers.
 

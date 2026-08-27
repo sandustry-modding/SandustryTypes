@@ -10,7 +10,7 @@
 getTimeMs(): number
 ```
 
-Defined in: [sandkit/api/time.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/time.d.ts#L10)
+Defined in: [sandkit/api/time.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/time.d.ts#L10)
 
 Return elapsed game time in milliseconds.
 
@@ -28,7 +28,7 @@ Return elapsed game time in milliseconds.
 getTick(): number
 ```
 
-Defined in: [sandkit/api/time.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/time.d.ts#L12)
+Defined in: [sandkit/api/time.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/time.d.ts#L12)
 
 Return the current simulation tick number.
 

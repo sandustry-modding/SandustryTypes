@@ -10,7 +10,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.tech.TechDefinition</code></p>
 
-Defined in: [sandkit/api/tech.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L98)
+Defined in: [sandkit/api/tech.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L98)
 
 Tech definition shape.
 
@@ -28,7 +28,7 @@ Tech definition shape.
 optional nameKey?: string
 ```
 
-Defined in: [sandkit/api/tech.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L100)
+Defined in: [sandkit/api/tech.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L100)
 
 Display name translation key.
 
@@ -38,7 +38,7 @@ Display name translation key.
 optional descriptionKey?: string
 ```
 
-Defined in: [sandkit/api/tech.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L102)
+Defined in: [sandkit/api/tech.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L102)
 
 Description translation key.
 
@@ -48,7 +48,7 @@ Description translation key.
 
 <p class="smt-member-path"><code>sandkit.api.tech.TechGridPosition</code></p>
 
-Defined in: [sandkit/api/tech.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L107)
+Defined in: [sandkit/api/tech.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L107)
 
 Position on the tech grid.
 
@@ -60,7 +60,7 @@ Position on the tech grid.
 x: number
 ```
 
-Defined in: [sandkit/api/tech.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L108)
+Defined in: [sandkit/api/tech.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L108)
 
 ##### y
 
@@ -68,7 +68,7 @@ Defined in: [sandkit/api/tech.d.ts:108](https://github.com/sandustry-modding/San
 y: number
 ```
 
-Defined in: [sandkit/api/tech.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L109)
+Defined in: [sandkit/api/tech.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L109)
 
 ***
 
@@ -76,7 +76,7 @@ Defined in: [sandkit/api/tech.d.ts:109](https://github.com/sandustry-modding/San
 
 <p class="smt-member-path"><code>sandkit.api.tech.ConservatoryUnlocks</code></p>
 
-Defined in: [sandkit/api/tech.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L113)
+Defined in: [sandkit/api/tech.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L113)
 
 Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory.md#appendunlock).
 
@@ -88,7 +88,7 @@ Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory
 optional structures?: readonly string[]
 ```
 
-Defined in: [sandkit/api/tech.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L115)
+Defined in: [sandkit/api/tech.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L115)
 
 Structure ids to unlock.
 
@@ -98,7 +98,7 @@ Structure ids to unlock.
 optional items?: readonly string[]
 ```
 
-Defined in: [sandkit/api/tech.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L117)
+Defined in: [sandkit/api/tech.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L117)
 
 Item ids to unlock.
 
@@ -112,7 +112,7 @@ Item ids to unlock.
 TechGridId = Tech | LooseString<never> | TaggedNumber<"tech">
 ```
 
-Defined in: [sandkit/api/tech.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L95)
+Defined in: [sandkit/api/tech.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L95)
 
 Tech grid node id.
 Built-in [TechEnum](api/sandkit.enums.Tech.md) values autocomplete; custom string ids and tagged handles are allowed.
@@ -127,7 +127,7 @@ Built-in [TechEnum](api/sandkit.enums.Tech.md) values autocomplete; custom strin
 getDefinitionById(techId: TechGridId): TechDefinition | undefined
 ```
 
-Defined in: [sandkit/api/tech.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L18)
+Defined in: [sandkit/api/tech.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L18)
 
 Return a tech definition by string id.
 
@@ -157,7 +157,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L27)
+Defined in: [sandkit/api/tech.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L27)
 
 Patch fields on an existing tech definition.
 
@@ -193,7 +193,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 registerDefinition(techId: TechGridId, definition: TechDefinition): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L36)
+Defined in: [sandkit/api/tech.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L36)
 
 Register a new tech definition by id.
 
@@ -227,7 +227,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 addDefinition(techId: TechGridId, definition: TechDefinition): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L42)
+Defined in: [sandkit/api/tech.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L42)
 
 #### Parameters
 
@@ -261,7 +261,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 registerNode(techId: TechGridId, definition: TechDefinition, options: object): TechGridPosition
 ```
 
-Defined in: [sandkit/api/tech.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L52)
+Defined in: [sandkit/api/tech.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L52)
 
 Register a tech node on the grid with parent and position options.
 
@@ -309,7 +309,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 isLockedById(techId: TechGridId): boolean
 ```
 
-Defined in: [sandkit/api/tech.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L60)
+Defined in: [sandkit/api/tech.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L60)
 
 Return true when a tech entry is locked.
 
@@ -339,7 +339,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 setLockedById(techId: TechGridId, locked: boolean): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L69)
+Defined in: [sandkit/api/tech.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L69)
 
 Set locked state for a tech entry by id.
 
@@ -375,7 +375,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 isResearchedById(techId: TechGridId): boolean
 ```
 
-Defined in: [sandkit/api/tech.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L77)
+Defined in: [sandkit/api/tech.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L77)
 
 Return true when a tech entry has been researched.
 

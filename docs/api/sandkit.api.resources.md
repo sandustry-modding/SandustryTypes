@@ -10,7 +10,7 @@
 collectFluxiteAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/resources.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/resources.d.ts#L16)
+Defined in: [sandkit/api/resources.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L16)
 
 Collect fluxite at the given cell.
 
@@ -34,7 +34,7 @@ Collect fluxite at the given cell.
 updateEnergy(amount: number, options?: object): void
 ```
 
-Defined in: [sandkit/api/resources.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/resources.d.ts#L22)
+Defined in: [sandkit/api/resources.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L22)
 
 Update stored energy by amount with optional UI deferral.
 

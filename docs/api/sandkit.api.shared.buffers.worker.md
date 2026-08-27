@@ -12,7 +12,7 @@ Named shared memory buffers for worker threads.
 require(key: string, config: object): SharedArray
 ```
 
-Defined in: [worker/api/shared.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/shared.d.ts#L28)
+Defined in: [worker/api/shared.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/shared.d.ts#L28)
 
 Attach to a named shared buffer on this worker.
 

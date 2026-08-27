@@ -1,6 +1,6 @@
 # sandkit.enums.AbilityType
 
-Defined in: [sandkit/enums/index.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L9)
+Defined in: [sandkit/enums/index.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L9)
 
 Item ability categories (dig, shoot, spray, laser).
 
@@ -14,7 +14,7 @@ Item ability categories (dig, shoot, spray, laser).
 Dig: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L10)
+Defined in: [sandkit/enums/index.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L10)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:10](https://github.com/sandustry-modding/S
 Shoot: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L11)
+Defined in: [sandkit/enums/index.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L11)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [sandkit/enums/index.d.ts:11](https://github.com/sandustry-modding/S
 Spray: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L12)
+Defined in: [sandkit/enums/index.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L12)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [sandkit/enums/index.d.ts:12](https://github.com/sandustry-modding/S
 Laser: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L13)
+Defined in: [sandkit/enums/index.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L13)

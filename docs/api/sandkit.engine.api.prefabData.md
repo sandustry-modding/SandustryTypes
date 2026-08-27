@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabData.d.ts#L15)
+Defined in: [sandkit/engine/api/prefabData.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L15)
 
 Return all prefab data entries.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 getAllMetadata(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabData.d.ts#L20)
+Defined in: [sandkit/engine/api/prefabData.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L20)
 
 Return metadata for all prefabs.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 getArtifactLocations(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabData.d.ts#L25)
+Defined in: [sandkit/engine/api/prefabData.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L25)
 
 Return artifact locations for prefabs.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 getAtCell(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabData.d.ts#L30)
+Defined in: [sandkit/engine/api/prefabData.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L30)
 
 Return prefab data at one grid cell.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 getMetadata(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabData.d.ts#L35)
+Defined in: [sandkit/engine/api/prefabData.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L35)
 
 Return metadata for one prefab.
 

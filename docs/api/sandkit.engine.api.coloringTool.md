@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 colorStructure(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L15)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L15)
 
 Apply a color to one structure.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 floodFillColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L20)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L20)
 
 Flood-fill connected structures with a color.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 getColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L25)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L25)
 
 Return the color on a structure.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 isColorableStructure(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L30)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L30)
 
 Return whether a structure can be colored.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 isMatchColorMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L35)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L35)
 
 Return whether match-color mode is active.
 
@@ -148,7 +148,7 @@ Game state first, then method-specific arguments.
 isPaintBucketMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L40)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L40)
 
 Return whether paint-bucket mode is active.
 
@@ -174,7 +174,7 @@ Game state first, then method-specific arguments.
 setColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L45)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L45)
 
 Set the color on a structure.
 
@@ -200,7 +200,7 @@ Game state first, then method-specific arguments.
 toggleMatchColorMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L50)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L50)
 
 Toggle match-color mode on or off.
 
@@ -226,7 +226,7 @@ Game state first, then method-specific arguments.
 togglePaintBucketMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L55)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L55)
 
 Toggle paint-bucket mode on or off.
 

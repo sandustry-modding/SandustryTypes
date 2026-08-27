@@ -19,7 +19,7 @@ larger `sandkit.api` surface; do not assume parity.
 emitEvent<Payload = any>(eventId: string, payload: Payload): void
 ```
 
-Defined in: [worker/api/main.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/main.d.ts#L15)
+Defined in: [worker/api/main.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/main.d.ts#L15)
 
 Emit a custom event on the main thread.
 

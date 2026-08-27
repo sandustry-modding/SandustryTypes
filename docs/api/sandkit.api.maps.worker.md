@@ -12,7 +12,7 @@ Shared `sandkit.api.maps` base — active custom map metadata.
 
 <p class="smt-member-path"><code>sandkit.api.maps.ActiveMapV1 (worker)</code></p>
 
-Defined in: [shared/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L18)
+Defined in: [shared/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L18)
 
 Active custom map record (version 1 schema).
 
@@ -32,7 +32,7 @@ Shape varies by map. Known fields are optional; additional keys may exist.
 optional id?: string
 ```
 
-Defined in: [shared/api/maps.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L19)
+Defined in: [shared/api/maps.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L19)
 
 ##### deployment?
 
@@ -40,7 +40,7 @@ Defined in: [shared/api/maps.d.ts:19](https://github.com/sandustry-modding/Sandu
 optional deployment?: unknown
 ```
 
-Defined in: [shared/api/maps.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L20)
+Defined in: [shared/api/maps.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L20)
 
 ##### spawn?
 
@@ -48,7 +48,7 @@ Defined in: [shared/api/maps.d.ts:20](https://github.com/sandustry-modding/Sandu
 optional spawn?: unknown
 ```
 
-Defined in: [shared/api/maps.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L21)
+Defined in: [shared/api/maps.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L21)
 
 ##### topBounds?
 
@@ -56,7 +56,7 @@ Defined in: [shared/api/maps.d.ts:21](https://github.com/sandustry-modding/Sandu
 optional topBounds?: object
 ```
 
-Defined in: [shared/api/maps.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L22)
+Defined in: [shared/api/maps.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L22)
 
 ###### soft?
 
@@ -76,7 +76,7 @@ optional hard?: number
 optional parallax?: unknown
 ```
 
-Defined in: [shared/api/maps.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L26)
+Defined in: [shared/api/maps.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L26)
 
 ##### depthLight?
 
@@ -84,7 +84,7 @@ Defined in: [shared/api/maps.d.ts:26](https://github.com/sandustry-modding/Sandu
 optional depthLight?: unknown
 ```
 
-Defined in: [shared/api/maps.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L27)
+Defined in: [shared/api/maps.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L27)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -96,7 +96,7 @@ Defined in: [shared/api/maps.d.ts:27](https://github.com/sandustry-modding/Sandu
 getActive(): Readonly<ActiveMapV1> | null
 ```
 
-Defined in: [shared/api/maps.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L11)
+Defined in: [shared/api/maps.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L11)
 
 Return the currently loaded custom map definition.
 

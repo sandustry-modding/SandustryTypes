@@ -10,7 +10,7 @@
 AssetProviderV1 = AssetProviderV1
 ```
 
-Defined in: [sandkit/api/mods.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/mods.d.ts#L17)
+Defined in: [sandkit/api/mods.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L17)
 
 Asset provider entry shape.
 
@@ -24,7 +24,7 @@ Asset provider entry shape.
 getProviders(kind: string): readonly AssetProviderV1[]
 ```
 
-Defined in: [sandkit/api/mods.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/mods.d.ts#L15)
+Defined in: [sandkit/api/mods.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L15)
 
 Return asset providers registered for a kind string.
 

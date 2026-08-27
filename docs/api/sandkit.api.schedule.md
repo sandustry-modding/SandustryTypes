@@ -10,7 +10,7 @@
 nextTick(callback: () => void): void
 ```
 
-Defined in: [sandkit/api/schedule.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/schedule.d.ts#L13)
+Defined in: [sandkit/api/schedule.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/schedule.d.ts#L13)
 
 Run a callback on the next game tick.
 

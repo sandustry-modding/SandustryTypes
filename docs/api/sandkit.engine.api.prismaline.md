@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 consume(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismaline.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prismaline.d.ts#L15)
+Defined in: [sandkit/engine/api/prismaline.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L15)
 
 Consume prismaline from the player or world.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 getAvailable(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismaline.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prismaline.d.ts#L20)
+Defined in: [sandkit/engine/api/prismaline.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L20)
 
 Return available prismaline amount.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 getConsumed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismaline.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prismaline.d.ts#L25)
+Defined in: [sandkit/engine/api/prismaline.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L25)
 
 Return total prismaline consumed so far.
 

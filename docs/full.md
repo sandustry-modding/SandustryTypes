@@ -20,7 +20,7 @@ Mirrors on-disk `src/sandkit/` and the host free variable: `api`, `engine`,
 SandkitApi = object
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L8)
+Defined in: [sandkit/api/sandkit-api.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L8)
 
 Composed main-thread `sandkit.api` object type.
 
@@ -36,7 +36,7 @@ Use this type when typing the host `sandkit.api` value as a whole.
 action: action
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L10)
+Defined in: [sandkit/api/sandkit-api.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L10)
 
 Player action and custom action data.
 
@@ -46,7 +46,7 @@ Player action and custom action data.
 assets: assets
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L12)
+Defined in: [sandkit/api/sandkit-api.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L12)
 
 Mod asset URLs and provider selection.
 
@@ -56,7 +56,7 @@ Mod asset URLs and provider selection.
 authorization: authorization
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L14)
+Defined in: [sandkit/api/sandkit-api.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L14)
 
 Build authorization checks.
 
@@ -66,7 +66,7 @@ Build authorization checks.
 building: building
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L16)
+Defined in: [sandkit/api/sandkit-api.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L16)
 
 Building mode and placement.
 
@@ -76,7 +76,7 @@ Building mode and placement.
 blueprints: blueprints
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L18)
+Defined in: [sandkit/api/sandkit-api.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L18)
 
 Structure blueprint serialize and localize helpers.
 
@@ -86,7 +86,7 @@ Structure blueprint serialize and localize helpers.
 camera: camera
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L20)
+Defined in: [sandkit/api/sandkit-api.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L20)
 
 Camera position and bounds.
 
@@ -96,7 +96,7 @@ Camera position and bounds.
 collector: collector
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L22)
+Defined in: [sandkit/api/sandkit-api.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L22)
 
 Collector machine helpers.
 
@@ -106,7 +106,7 @@ Collector machine helpers.
 constants: constants
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L24)
+Defined in: [sandkit/api/sandkit-api.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L24)
 
 Shared game constants.
 
@@ -116,7 +116,7 @@ Shared game constants.
 cooldown: cooldown
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L26)
+Defined in: [sandkit/api/sandkit-api.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L26)
 
 Cooldown timers.
 
@@ -126,7 +126,7 @@ Cooldown timers.
 discoveries: discoveries
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L28)
+Defined in: [sandkit/api/sandkit-api.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L28)
 
 Discovery tracking.
 
@@ -136,7 +136,7 @@ Discovery tracking.
 effects: effects
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L30)
+Defined in: [sandkit/api/sandkit-api.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L30)
 
 Visual and gameplay effects.
 
@@ -146,7 +146,7 @@ Visual and gameplay effects.
 elements: elements
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L32)
+Defined in: [sandkit/api/sandkit-api.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L32)
 
 Element types and cell mutations.
 
@@ -156,7 +156,7 @@ Element types and cell mutations.
 entities: entities
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L34)
+Defined in: [sandkit/api/sandkit-api.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L34)
 
 Entity spawn, capture, and lifecycle.
 
@@ -166,7 +166,7 @@ Entity spawn, capture, and lifecycle.
 energy: energy
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L36)
+Defined in: [sandkit/api/sandkit-api.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L36)
 
 Energy network helpers.
 
@@ -176,7 +176,7 @@ Energy network helpers.
 events: events
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L38)
+Defined in: [sandkit/api/sandkit-api.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L38)
 
 Game event subscription.
 
@@ -186,7 +186,7 @@ Game event subscription.
 excavation: excavation
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L40)
+Defined in: [sandkit/api/sandkit-api.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L40)
 
 Excavation helpers.
 
@@ -196,7 +196,7 @@ Excavation helpers.
 fire: fire
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L42)
+Defined in: [sandkit/api/sandkit-api.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L42)
 
 Fire and burning helpers.
 
@@ -206,7 +206,7 @@ Fire and burning helpers.
 factory: factory
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L44)
+Defined in: [sandkit/api/sandkit-api.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L44)
 
 Factory progression level and process counters.
 
@@ -216,7 +216,7 @@ Factory progression level and process counters.
 game: game
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L46)
+Defined in: [sandkit/api/sandkit-api.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L46)
 
 Game session start helpers.
 
@@ -226,7 +226,7 @@ Game session start helpers.
 gameConfig: gameConfig
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L48)
+Defined in: [sandkit/api/sandkit-api.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L48)
 
 Game configuration values.
 
@@ -236,7 +236,7 @@ Game configuration values.
 grid: grid
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L53)
+Defined in: [sandkit/api/sandkit-api.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L53)
 
 Cell queries, deferred mutations, fog, and redraw.
 Official name for the former `api.world` surface.
@@ -247,7 +247,7 @@ Official name for the former `api.world` surface.
 hooks: hooks
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L55)
+Defined in: [sandkit/api/sandkit-api.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L55)
 
 Intercept and modify hooks.
 
@@ -257,7 +257,7 @@ Intercept and modify hooks.
 i18n: i18n
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L57)
+Defined in: [sandkit/api/sandkit-api.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L57)
 
 Localization strings.
 
@@ -267,7 +267,7 @@ Localization strings.
 input: input
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L59)
+Defined in: [sandkit/api/sandkit-api.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L59)
 
 Input state and bindings.
 
@@ -277,7 +277,7 @@ Input state and bindings.
 items: items
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L61)
+Defined in: [sandkit/api/sandkit-api.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L61)
 
 Item definitions and inventory.
 
@@ -287,7 +287,7 @@ Item definitions and inventory.
 lights: lights
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L63)
+Defined in: [sandkit/api/sandkit-api.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L63)
 
 Dynamic light sources.
 
@@ -297,7 +297,7 @@ Dynamic light sources.
 maps: maps
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L65)
+Defined in: [sandkit/api/sandkit-api.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L65)
 
 Map selection and session start.
 
@@ -307,7 +307,7 @@ Map selection and session start.
 mods: mods
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L67)
+Defined in: [sandkit/api/sandkit-api.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L67)
 
 Mod asset provider lookup.
 
@@ -317,7 +317,7 @@ Mod asset provider lookup.
 patterns: patterns
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L69)
+Defined in: [sandkit/api/sandkit-api.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L69)
 
 Excavation pattern helpers.
 
@@ -327,7 +327,7 @@ Excavation pattern helpers.
 pipes: pipes
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L71)
+Defined in: [sandkit/api/sandkit-api.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L71)
 
 Pipe network queries and enablement.
 
@@ -337,7 +337,7 @@ Pipe network queries and enablement.
 pickups: pickups
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L73)
+Defined in: [sandkit/api/sandkit-api.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L73)
 
 World pickup spawn, collect, and lookup.
 
@@ -347,7 +347,7 @@ World pickup spawn, collect, and lookup.
 player: player
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L75)
+Defined in: [sandkit/api/sandkit-api.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L75)
 
 Player position, movement, and inventory.
 
@@ -357,7 +357,7 @@ Player position, movement, and inventory.
 processing: processing
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L77)
+Defined in: [sandkit/api/sandkit-api.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L77)
 
 Processing recipe registration.
 
@@ -367,7 +367,7 @@ Processing recipe registration.
 progression: progression
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L79)
+Defined in: [sandkit/api/sandkit-api.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L79)
 
 Story progression completion.
 
@@ -377,7 +377,7 @@ Story progression completion.
 projectiles: projectiles
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L81)
+Defined in: [sandkit/api/sandkit-api.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L81)
 
 Projectile spawn and lifecycle.
 
@@ -387,7 +387,7 @@ Projectile spawn and lifecycle.
 random: random
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L83)
+Defined in: [sandkit/api/sandkit-api.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L83)
 
 Game random number helpers.
 
@@ -397,7 +397,7 @@ Game random number helpers.
 raycast: raycast
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L85)
+Defined in: [sandkit/api/sandkit-api.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L85)
 
 World raycast queries.
 
@@ -407,7 +407,7 @@ World raycast queries.
 reactions: reactions
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L87)
+Defined in: [sandkit/api/sandkit-api.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L87)
 
 Element contact reactions.
 
@@ -417,7 +417,7 @@ Element contact reactions.
 rendering: rendering
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L89)
+Defined in: [sandkit/api/sandkit-api.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L89)
 
 Screen drawing and overlay canvas.
 
@@ -427,7 +427,7 @@ Screen drawing and overlay canvas.
 resources: resources
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L91)
+Defined in: [sandkit/api/sandkit-api.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L91)
 
 Fluxite and energy resources.
 
@@ -437,7 +437,7 @@ Fluxite and energy resources.
 scene: scene
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L93)
+Defined in: [sandkit/api/sandkit-api.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L93)
 
 Active game scene.
 
@@ -447,7 +447,7 @@ Active game scene.
 schedule: schedule
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L95)
+Defined in: [sandkit/api/sandkit-api.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L95)
 
 Next-tick callback scheduling.
 
@@ -457,7 +457,7 @@ Next-tick callback scheduling.
 settings: settings
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L97)
+Defined in: [sandkit/api/sandkit-api.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L97)
 
 Game settings read and change events.
 
@@ -467,7 +467,7 @@ Game settings read and change events.
 shared: shared
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L99)
+Defined in: [sandkit/api/sandkit-api.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L99)
 
 Cross-thread shared buffers.
 
@@ -477,7 +477,7 @@ Cross-thread shared buffers.
 signals: signals
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L101)
+Defined in: [sandkit/api/sandkit-api.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L101)
 
 Signal target registration.
 
@@ -487,7 +487,7 @@ Signal target registration.
 sound: sound
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L103)
+Defined in: [sandkit/api/sandkit-api.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L103)
 
 Sound playback and stop controls.
 
@@ -497,7 +497,7 @@ Sound playback and stop controls.
 sprites: sprites
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L105)
+Defined in: [sandkit/api/sandkit-api.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L105)
 
 Sprite load and transforms.
 
@@ -507,7 +507,7 @@ Sprite load and transforms.
 storage: storage
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L107)
+Defined in: [sandkit/api/sandkit-api.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L107)
 
 Per-mod and local storage.
 
@@ -517,7 +517,7 @@ Per-mod and local storage.
 structureBehaviors: structureBehaviors
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L109)
+Defined in: [sandkit/api/sandkit-api.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L109)
 
 Conveyor and launcher behaviors.
 
@@ -527,7 +527,7 @@ Conveyor and launcher behaviors.
 structures: structures
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L111)
+Defined in: [sandkit/api/sandkit-api.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L111)
 
 Structure registration and queries.
 
@@ -537,7 +537,7 @@ Structure registration and queries.
 tech: tech
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L113)
+Defined in: [sandkit/api/sandkit-api.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L113)
 
 Tech tree definitions and locks.
 
@@ -547,7 +547,7 @@ Tech tree definitions and locks.
 terrains: terrains
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L115)
+Defined in: [sandkit/api/sandkit-api.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L115)
 
 Terrain registration and mutations.
 
@@ -557,7 +557,7 @@ Terrain registration and mutations.
 time: time
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L117)
+Defined in: [sandkit/api/sandkit-api.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L117)
 
 Game time and tick counter.
 
@@ -567,7 +567,7 @@ Game time and tick counter.
 tools: tools
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L119)
+Defined in: [sandkit/api/sandkit-api.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L119)
 
 Tool-specific helpers.
 
@@ -577,7 +577,7 @@ Tool-specific helpers.
 triggers: triggers
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L121)
+Defined in: [sandkit/api/sandkit-api.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L121)
 
 Interval trigger registration.
 
@@ -587,7 +587,7 @@ Interval trigger registration.
 ui: ui
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L123)
+Defined in: [sandkit/api/sandkit-api.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L123)
 
 UI overlays, dialogs, and navigation.
 
@@ -597,7 +597,7 @@ UI overlays, dialogs, and navigation.
 upgrades: upgrades
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L125)
+Defined in: [sandkit/api/sandkit-api.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L125)
 
 Upgrade categories and levels.
 
@@ -607,7 +607,7 @@ Upgrade categories and levels.
 utils: utils
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L127)
+Defined in: [sandkit/api/sandkit-api.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L127)
 
 Vector math helpers.
 
@@ -617,7 +617,7 @@ Vector math helpers.
 workers: workers
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L129)
+Defined in: [sandkit/api/sandkit-api.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L129)
 
 Worker post-update control.
 
@@ -627,7 +627,7 @@ Worker post-update control.
 world: world
 ```
 
-Defined in: [sandkit/api/sandkit-api.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sandkit-api.d.ts#L133)
+Defined in: [sandkit/api/sandkit-api.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L133)
 
 ###### Deprecated
 
@@ -643,7 +643,7 @@ Use [grid](#grid) for cell APIs and [pickups](#pickups) for world items.
 Sandkit = object
 ```
 
-Defined in: [sandkit/index.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/index.d.ts#L22)
+Defined in: [sandkit/index.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L22)
 
 Shape of the host-injected `sandkit` free variable in mod `main.js`.
 
@@ -655,7 +655,7 @@ Shape of the host-injected `sandkit` free variable in mod `main.js`.
 api: SandkitApi
 ```
 
-Defined in: [sandkit/index.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/index.d.ts#L24)
+Defined in: [sandkit/index.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L24)
 
 Public mod API. See [sandkit.api](#api-1).
 
@@ -665,7 +665,7 @@ Public mod API. See [sandkit.api](#api-1).
 apiVersion: number
 ```
 
-Defined in: [sandkit/index.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/index.d.ts#L26)
+Defined in: [sandkit/index.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L26)
 
 Sandkit API version number (live value is `1`).
 
@@ -675,7 +675,7 @@ Sandkit API version number (live value is `1`).
 engine: SandkitEngine
 ```
 
-Defined in: [sandkit/index.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/index.d.ts#L31)
+Defined in: [sandkit/index.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L31)
 
 **`Internal`**
 
@@ -687,7 +687,7 @@ State-first internals. See [SandkitEngine](api/sandkit.engine.md#sandkitengine).
 enums: SandkitEnums
 ```
 
-Defined in: [sandkit/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/index.d.ts#L33)
+Defined in: [sandkit/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L33)
 
 Runtime enum bags. See [sandkit.enums](#enums-1).
 
@@ -697,7 +697,7 @@ Runtime enum bags. See [sandkit.enums](#enums-1).
 react: SandkitReact
 ```
 
-Defined in: [sandkit/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/index.d.ts#L35)
+Defined in: [sandkit/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L35)
 
 Host React package. See [SandkitReact](api/sandkit.react.md#sandkitreact).
 
@@ -707,7 +707,7 @@ Host React package. See [SandkitReact](api/sandkit.react.md#sandkitreact).
 state: SandkitState
 ```
 
-Defined in: [sandkit/index.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/index.d.ts#L40)
+Defined in: [sandkit/index.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L40)
 
 Game state. Same object as `sandkit.engine.state` at runtime.
 See [SandkitState](api/sandkit.engine.md#sandkitstate).
@@ -801,7 +801,7 @@ Main thread only.
 Action = AssetRef
 ```
 
-Defined in: [sandkit/api/action.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/action.d.ts#L9)
+Defined in: [sandkit/api/action.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L9)
 
 Hotbar action asset reference.
 
@@ -815,7 +815,7 @@ Hotbar action asset reference.
 getActive(): AssetRef
 ```
 
-Defined in: [sandkit/api/action.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/action.d.ts#L15)
+Defined in: [sandkit/api/action.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L15)
 
 Return the action slot the player is using.
 
@@ -835,7 +835,7 @@ Active hotbar action reference.
 getSelected(): AssetRef
 ```
 
-Defined in: [sandkit/api/action.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/action.d.ts#L21)
+Defined in: [sandkit/api/action.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L21)
 
 Return the action slot selected in the hotbar.
 
@@ -855,7 +855,7 @@ Selected hotbar action reference.
 setCustomData<Input>(data: Input): void
 ```
 
-Defined in: [sandkit/api/action.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/action.d.ts#L27)
+Defined in: [sandkit/api/action.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L27)
 
 Store custom data on the active action handler.
 
@@ -894,7 +894,7 @@ Main thread only.
 AssetProviderV1 = object
 ```
 
-Defined in: [sandkit/api/assets.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L7)
+Defined in: [sandkit/api/assets.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L7)
 
 Describes a mod or pack that supplies assets for a kind.
 
@@ -906,7 +906,7 @@ Describes a mod or pack that supplies assets for a kind.
 id: ` ${string}:${string}:${string} `
 ```
 
-Defined in: [sandkit/api/assets.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L8)
+Defined in: [sandkit/api/assets.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L8)
 
 ###### kind
 
@@ -914,7 +914,7 @@ Defined in: [sandkit/api/assets.d.ts:8](https://github.com/sandustry-modding/San
 kind: string
 ```
 
-Defined in: [sandkit/api/assets.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L9)
+Defined in: [sandkit/api/assets.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L9)
 
 ###### localId?
 
@@ -922,7 +922,7 @@ Defined in: [sandkit/api/assets.d.ts:9](https://github.com/sandustry-modding/San
 optional localId?: string
 ```
 
-Defined in: [sandkit/api/assets.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L10)
+Defined in: [sandkit/api/assets.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L10)
 
 ###### modId?
 
@@ -930,7 +930,7 @@ Defined in: [sandkit/api/assets.d.ts:10](https://github.com/sandustry-modding/Sa
 optional modId?: number
 ```
 
-Defined in: [sandkit/api/assets.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L11)
+Defined in: [sandkit/api/assets.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L11)
 
 ###### modName
 
@@ -938,7 +938,7 @@ Defined in: [sandkit/api/assets.d.ts:11](https://github.com/sandustry-modding/Sa
 modName: string
 ```
 
-Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L12)
+Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L12)
 
 ### Functions <!-- {docsify-ignore} -->
 
@@ -950,7 +950,7 @@ Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/Sa
 getUrl(relativePath: string): string
 ```
 
-Defined in: [sandkit/api/assets.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L18)
+Defined in: [sandkit/api/assets.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L18)
 
 Resolves a path under the mod folder to a loadable URL.
 
@@ -976,7 +976,7 @@ Path relative to the calling mod folder.
 getSelectedProvider(kind: string): AssetProviderV1 | null
 ```
 
-Defined in: [sandkit/api/assets.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L23)
+Defined in: [sandkit/api/assets.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L23)
 
 Returns the selected provider for an asset kind, or null.
 
@@ -1002,7 +1002,7 @@ Asset kind identifier.
 selectProvider(kind: string, providerId: string | null): boolean
 ```
 
-Defined in: [sandkit/api/assets.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/assets.d.ts#L29)
+Defined in: [sandkit/api/assets.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L29)
 
 Selects a provider for an asset kind. Returns true on success.
 
@@ -1041,7 +1041,7 @@ Main thread only.
 canBuildAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/authorization.d.ts#L14)
+Defined in: [sandkit/api/authorization.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L14)
 
 Return true when the player may place a structure at the cell.
 
@@ -1067,7 +1067,7 @@ True when building is allowed in the authorization zone.
 canGrabAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/authorization.d.ts#L22)
+Defined in: [sandkit/api/authorization.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L22)
 
 Return true when the player may grab at the cell.
 
@@ -1093,7 +1093,7 @@ True when grabbing is allowed in the authorization zone.
 canUseTool(player: Player, isFlamethrower?: boolean): boolean
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/authorization.d.ts#L30)
+Defined in: [sandkit/api/authorization.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L30)
 
 Return true when the player may use a tool.
 
@@ -1127,7 +1127,7 @@ True when tool use is allowed for the player.
 canUseToolAtCell(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/authorization.d.ts#L39)
+Defined in: [sandkit/api/authorization.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L39)
 
 Return true when the player may use a tool at the cell.
 
@@ -1153,7 +1153,7 @@ True when tool use is allowed at the cell.
 getZoneIdAtCell(...args: CellCoordinates): number
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/authorization.d.ts#L47)
+Defined in: [sandkit/api/authorization.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L47)
 
 Return the authorization zone id at the cell.
 
@@ -1179,7 +1179,7 @@ Numeric zone id for the cell.
 getPlayerZoneId(): number
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/authorization.d.ts#L53)
+Defined in: [sandkit/api/authorization.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L53)
 
 Return the authorization zone id for the player.
 
@@ -1207,7 +1207,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.blue
 
 <p class="smt-member-path"><code>sandkit.api.blueprints.BlueprintStructure</code></p>
 
-Defined in: sandkit/api/blueprints.d.ts:28
+Defined in: [sandkit/api/blueprints.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L28)
 
 Serialized structure entry used in blueprints.
 
@@ -1225,7 +1225,7 @@ Serialized structure entry used in blueprints.
 x: number
 ```
 
-Defined in: sandkit/api/blueprints.d.ts:29
+Defined in: [sandkit/api/blueprints.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L29)
 
 ###### y
 
@@ -1233,7 +1233,7 @@ Defined in: sandkit/api/blueprints.d.ts:29
 y: number
 ```
 
-Defined in: sandkit/api/blueprints.d.ts:30
+Defined in: [sandkit/api/blueprints.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L30)
 
 ### Functions <!-- {docsify-ignore} -->
 
@@ -1245,7 +1245,7 @@ Defined in: sandkit/api/blueprints.d.ts:30
 serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
 ```
 
-Defined in: sandkit/api/blueprints.d.ts:17
+Defined in: [sandkit/api/blueprints.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L17)
 
 Serialize live structure instances into blueprint records.
 
@@ -1275,7 +1275,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.blue
 localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]
 ```
 
-Defined in: sandkit/api/blueprints.d.ts:25
+Defined in: [sandkit/api/blueprints.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L25)
 
 Localize blueprint structure records for placement.
 
@@ -1316,7 +1316,7 @@ Main thread only.
 getSnappedPositionAtCell(...args: CellCoordinates): Vector2
 ```
 
-Defined in: [sandkit/api/building.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L73)
+Defined in: [sandkit/api/building.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L73)
 
 Return the snapped world position for placement at the cell.
 
@@ -1342,7 +1342,7 @@ Snapped world position in pixels.
 isBlockedAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/building.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L81)
+Defined in: [sandkit/api/building.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L81)
 
 Return true when placement is blocked at the cell.
 
@@ -1368,7 +1368,7 @@ True when a structure cannot be placed at the cell.
 cancelPlacement(): void
 ```
 
-Defined in: [sandkit/api/building.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L84)
+Defined in: [sandkit/api/building.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L84)
 
 Cancel the current structure placement preview.
 
@@ -1386,7 +1386,7 @@ Cancel the current structure placement preview.
 selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef | null
 ```
 
-Defined in: [sandkit/api/building.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L91)
+Defined in: [sandkit/api/building.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L91)
 
 Select a structure for placement by type or id.
 
@@ -1421,7 +1421,7 @@ Main thread only.
 snapToPlayer(): void
 ```
 
-Defined in: [sandkit/api/camera.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/camera.d.ts#L7)
+Defined in: [sandkit/api/camera.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L7)
 
 Snap the camera to the player position.
 
@@ -1439,7 +1439,7 @@ Snap the camera to the player position.
 setFocusAtWorld(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/camera.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/camera.d.ts#L15)
+Defined in: [sandkit/api/camera.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L15)
 
 Move camera focus to world coordinates.
 
@@ -1473,7 +1473,7 @@ True when focus was applied.
 releaseFocus(options?: object): boolean
 ```
 
-Defined in: [sandkit/api/camera.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/camera.d.ts#L22)
+Defined in: [sandkit/api/camera.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L22)
 
 Release scripted focus and return control to the player.
 
@@ -1510,7 +1510,7 @@ Main thread only.
 getValueFromCellId(cellId: CellId): number
 ```
 
-Defined in: [sandkit/api/collector.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/collector.d.ts#L14)
+Defined in: [sandkit/api/collector.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L14)
 
 Returns the collector value for a cell id.
 
@@ -1536,7 +1536,7 @@ Packed cell identifier.
 getValueByType(elementType: ElementType): number
 ```
 
-Defined in: [sandkit/api/collector.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/collector.d.ts#L19)
+Defined in: [sandkit/api/collector.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L19)
 
 Returns the collector value for an element type.
 
@@ -1562,7 +1562,7 @@ Numeric element type id.
 isCellIdCollectable(cellId: CellId): boolean
 ```
 
-Defined in: [sandkit/api/collector.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/collector.d.ts#L24)
+Defined in: [sandkit/api/collector.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L24)
 
 Returns true when the cell id can be collected.
 
@@ -1588,7 +1588,7 @@ Packed cell identifier.
 isCellIdCollectableForSprite(cellId: CellId): boolean
 ```
 
-Defined in: [sandkit/api/collector.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/collector.d.ts#L29)
+Defined in: [sandkit/api/collector.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L29)
 
 Returns true when the cell id can be collected for sprite display.
 
@@ -1614,7 +1614,7 @@ Packed cell identifier.
 notifyPickupAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/collector.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/collector.d.ts#L35)
+Defined in: [sandkit/api/collector.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L35)
 
 Notifies collector logic that a pickup happened at the cell.
 
@@ -1642,7 +1642,7 @@ Notifies collector logic that a pickup happened at the cell.
 const physics: Readonly<{ normal: 0; skip: 1; aggressiveSkip: 2; }>
 ```
 
-Defined in: [sandkit/api/constants.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/constants.d.ts#L13)
+Defined in: [sandkit/api/constants.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/constants.d.ts#L13)
 
 Skip-physics modes for element physics fields.
 
@@ -1659,7 +1659,7 @@ Main thread only.
 
 <p class="smt-member-path"><code>sandkit.api.cooldown.Cooldown</code></p>
 
-Defined in: [sandkit/api/cooldown.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L20)
+Defined in: [sandkit/api/cooldown.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L20)
 
 Cooldown state object passed to [check](#check) and [isReady](#isready).
 
@@ -1671,7 +1671,7 @@ Cooldown state object passed to [check](#check) and [isReady](#isready).
 last: number
 ```
 
-Defined in: [sandkit/api/cooldown.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L22)
+Defined in: [sandkit/api/cooldown.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L22)
 
 Timestamp when the cooldown was last triggered (game time).
 
@@ -1681,7 +1681,7 @@ Timestamp when the cooldown was last triggered (game time).
 time: number
 ```
 
-Defined in: [sandkit/api/cooldown.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L24)
+Defined in: [sandkit/api/cooldown.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L24)
 
 Cooldown duration in milliseconds.
 
@@ -1695,7 +1695,7 @@ Cooldown duration in milliseconds.
 check(cooldown: Cooldown, overrideTime?: number): boolean
 ```
 
-Defined in: [sandkit/api/cooldown.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L11)
+Defined in: [sandkit/api/cooldown.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L11)
 
 Starts the cooldown when ready and returns true; otherwise returns false.
 
@@ -1727,7 +1727,7 @@ Optional timestamp (ms) instead of current game time.
 isReady(cooldown: Cooldown, overrideTime?: number): boolean
 ```
 
-Defined in: [sandkit/api/cooldown.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L17)
+Defined in: [sandkit/api/cooldown.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L17)
 
 Returns true when the cooldown has elapsed.
 
@@ -1766,7 +1766,7 @@ Main thread only.
 addElementByType(elementType: ElementType): void
 ```
 
-Defined in: [sandkit/api/discoveries.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/discoveries.d.ts#L12)
+Defined in: [sandkit/api/discoveries.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L12)
 
 Marks an element type as discovered for the player.
 
@@ -1792,7 +1792,7 @@ Numeric element type id.
 addTerrainByType(terrainType: TerrainType): void
 ```
 
-Defined in: [sandkit/api/discoveries.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/discoveries.d.ts#L17)
+Defined in: [sandkit/api/discoveries.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L17)
 
 Marks a terrain type as discovered for the player.
 
@@ -1821,7 +1821,7 @@ Main thread only. Temporary lights live under [lights.temporary](api/sandkit.api
 
 <p class="smt-member-path"><code>sandkit.api.effects.LaserEffectOptions</code></p>
 
-Defined in: [sandkit/api/effects.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L97)
+Defined in: [sandkit/api/effects.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L97)
 
 Options for laser beam effects.
 
@@ -1833,7 +1833,7 @@ Options for laser beam effects.
 optional width?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L99)
+Defined in: [sandkit/api/effects.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L99)
 
 Beam width in pixels.
 
@@ -1843,7 +1843,7 @@ Beam width in pixels.
 optional brightness?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L101)
+Defined in: [sandkit/api/effects.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L101)
 
 Beam brightness multiplier.
 
@@ -1853,7 +1853,7 @@ Beam brightness multiplier.
 optional color?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L103)
+Defined in: [sandkit/api/effects.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L103)
 
 Beam color as a packed integer.
 
@@ -1863,7 +1863,7 @@ Beam color as a packed integer.
 optional glow?: boolean
 ```
 
-Defined in: [sandkit/api/effects.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L105)
+Defined in: [sandkit/api/effects.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L105)
 
 When true, draws a glow around the beam.
 
@@ -1873,7 +1873,7 @@ When true, draws a glow around the beam.
 
 <p class="smt-member-path"><code>sandkit.api.effects.LaserEffectHandle</code></p>
 
-Defined in: [sandkit/api/effects.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L109)
+Defined in: [sandkit/api/effects.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L109)
 
 Handle returned by createLaserAtWorld.
 
@@ -1885,7 +1885,7 @@ Handle returned by createLaserAtWorld.
 destroy(): void
 ```
 
-Defined in: [sandkit/api/effects.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L111)
+Defined in: [sandkit/api/effects.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L111)
 
 Removes the laser from the scene.
 
@@ -1899,7 +1899,7 @@ Removes the laser from the scene.
 
 <p class="smt-member-path"><code>sandkit.api.effects.DistortionEffectOptions</code></p>
 
-Defined in: [sandkit/api/effects.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L115)
+Defined in: [sandkit/api/effects.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L115)
 
 Options for distortion wave effects.
 
@@ -1911,7 +1911,7 @@ Options for distortion wave effects.
 optional style?: "implode" | "explode"
 ```
 
-Defined in: [sandkit/api/effects.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L117)
+Defined in: [sandkit/api/effects.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L117)
 
 Distortion style: implode or explode.
 
@@ -1921,7 +1921,7 @@ Distortion style: implode or explode.
 optional duration?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L119)
+Defined in: [sandkit/api/effects.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L119)
 
 Effect duration in seconds.
 
@@ -1931,7 +1931,7 @@ Effect duration in seconds.
 optional maxRadius?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L121)
+Defined in: [sandkit/api/effects.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L121)
 
 Maximum radius of the wave.
 
@@ -1941,7 +1941,7 @@ Maximum radius of the wave.
 optional intensity?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L123)
+Defined in: [sandkit/api/effects.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L123)
 
 Visual intensity of the distortion.
 
@@ -1951,7 +1951,7 @@ Visual intensity of the distortion.
 optional color?: [number, number, number, number]
 ```
 
-Defined in: [sandkit/api/effects.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L125)
+Defined in: [sandkit/api/effects.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L125)
 
 RGBA color components for the effect.
 
@@ -1961,7 +1961,7 @@ RGBA color components for the effect.
 
 <p class="smt-member-path"><code>sandkit.api.effects.EffectOptions</code></p>
 
-Defined in: [shared/api/effects.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L35)
+Defined in: [shared/api/effects.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L35)
 
 Generic duration and radius options for world effects.
 
@@ -1973,7 +1973,7 @@ Generic duration and radius options for world effects.
 optional duration?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L36)
+Defined in: [shared/api/effects.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L36)
 
 ###### maxRadius?
 
@@ -1981,7 +1981,7 @@ Defined in: [shared/api/effects.d.ts:36](https://github.com/sandustry-modding/Sa
 optional maxRadius?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L37)
+Defined in: [shared/api/effects.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L37)
 
 ###### intensity?
 
@@ -1989,7 +1989,7 @@ Defined in: [shared/api/effects.d.ts:37](https://github.com/sandustry-modding/Sa
 optional intensity?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L38)
+Defined in: [shared/api/effects.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L38)
 
 ***
 
@@ -1997,7 +1997,7 @@ Defined in: [shared/api/effects.d.ts:38](https://github.com/sandustry-modding/Sa
 
 <p class="smt-member-path"><code>sandkit.api.effects.TemporaryLightOptions</code></p>
 
-Defined in: [shared/api/effects.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L41)
+Defined in: [shared/api/effects.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L41)
 
 Options for [createLightAtWorld](#createlightatworld).
 
@@ -2009,7 +2009,7 @@ Options for [createLightAtWorld](#createlightatworld).
 optional brightness?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L42)
+Defined in: [shared/api/effects.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L42)
 
 ###### duration?
 
@@ -2017,7 +2017,7 @@ Defined in: [shared/api/effects.d.ts:42](https://github.com/sandustry-modding/Sa
 optional duration?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L43)
+Defined in: [shared/api/effects.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L43)
 
 ###### durationMs?
 
@@ -2025,7 +2025,7 @@ Defined in: [shared/api/effects.d.ts:43](https://github.com/sandustry-modding/Sa
 optional durationMs?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L44)
+Defined in: [shared/api/effects.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L44)
 
 ###### size?
 
@@ -2033,7 +2033,7 @@ Defined in: [shared/api/effects.d.ts:44](https://github.com/sandustry-modding/Sa
 optional size?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L45)
+Defined in: [shared/api/effects.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L45)
 
 ###### color?
 
@@ -2041,7 +2041,7 @@ Defined in: [shared/api/effects.d.ts:45](https://github.com/sandustry-modding/Sa
 optional color?: [number, number, number, number]
 ```
 
-Defined in: [shared/api/effects.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L46)
+Defined in: [shared/api/effects.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L46)
 
 ###### decay
 
@@ -2049,7 +2049,7 @@ Defined in: [shared/api/effects.d.ts:46](https://github.com/sandustry-modding/Sa
 decay: number
 ```
 
-Defined in: [shared/api/effects.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L48)
+Defined in: [shared/api/effects.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L48)
 
 Light decay rate after spawn.
 
@@ -2059,7 +2059,7 @@ Light decay rate after spawn.
 optional unclamped?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L49)
+Defined in: [shared/api/effects.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L49)
 
 ###### skipDedup?
 
@@ -2067,7 +2067,7 @@ Defined in: [shared/api/effects.d.ts:49](https://github.com/sandustry-modding/Sa
 optional skipDedup?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L50)
+Defined in: [shared/api/effects.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L50)
 
 ###### useLightZones?
 
@@ -2075,7 +2075,7 @@ Defined in: [shared/api/effects.d.ts:50](https://github.com/sandustry-modding/Sa
 optional useLightZones?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L51)
+Defined in: [shared/api/effects.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L51)
 
 ###### noopIfFull?
 
@@ -2083,7 +2083,7 @@ Defined in: [shared/api/effects.d.ts:51](https://github.com/sandustry-modding/Sa
 optional noopIfFull?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L52)
+Defined in: [shared/api/effects.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L52)
 
 ###### priority?
 
@@ -2091,7 +2091,7 @@ Defined in: [shared/api/effects.d.ts:52](https://github.com/sandustry-modding/Sa
 optional priority?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L53)
+Defined in: [shared/api/effects.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L53)
 
 ###### dedupKey
 
@@ -2099,7 +2099,7 @@ Defined in: [shared/api/effects.d.ts:53](https://github.com/sandustry-modding/Sa
 dedupKey: string
 ```
 
-Defined in: [shared/api/effects.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L55)
+Defined in: [shared/api/effects.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L55)
 
 Dedupe key when the light pool is full or dedup is enabled.
 
@@ -2109,7 +2109,7 @@ Dedupe key when the light pool is full or dedup is enabled.
 
 <p class="smt-member-path"><code>sandkit.api.effects.ParticleEffectOptions</code></p>
 
-Defined in: [shared/api/effects.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L58)
+Defined in: [shared/api/effects.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L58)
 
 Options for [createParticlesAtWorld](#createparticlesatworld).
 
@@ -2121,7 +2121,7 @@ Options for [createParticlesAtWorld](#createparticlesatworld).
 optional count?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L59)
+Defined in: [shared/api/effects.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L59)
 
 ###### velocity?
 
@@ -2129,7 +2129,7 @@ Defined in: [shared/api/effects.d.ts:59](https://github.com/sandustry-modding/Sa
 optional velocity?: Vector2
 ```
 
-Defined in: [shared/api/effects.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L60)
+Defined in: [shared/api/effects.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L60)
 
 ###### minSpeed?
 
@@ -2137,7 +2137,7 @@ Defined in: [shared/api/effects.d.ts:60](https://github.com/sandustry-modding/Sa
 optional minSpeed?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L61)
+Defined in: [shared/api/effects.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L61)
 
 ###### maxSpeed?
 
@@ -2145,7 +2145,7 @@ Defined in: [shared/api/effects.d.ts:61](https://github.com/sandustry-modding/Sa
 optional maxSpeed?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L62)
+Defined in: [shared/api/effects.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L62)
 
 ###### color?
 
@@ -2153,7 +2153,7 @@ Defined in: [shared/api/effects.d.ts:62](https://github.com/sandustry-modding/Sa
 optional color?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L64)
+Defined in: [shared/api/effects.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L64)
 
 Hex code. No alpha.
 
@@ -2163,7 +2163,7 @@ Hex code. No alpha.
 optional minSize?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L65)
+Defined in: [shared/api/effects.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L65)
 
 ###### maxSize?
 
@@ -2171,7 +2171,7 @@ Defined in: [shared/api/effects.d.ts:65](https://github.com/sandustry-modding/Sa
 optional maxSize?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L66)
+Defined in: [shared/api/effects.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L66)
 
 ###### minLifetime?
 
@@ -2179,7 +2179,7 @@ Defined in: [shared/api/effects.d.ts:66](https://github.com/sandustry-modding/Sa
 optional minLifetime?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L67)
+Defined in: [shared/api/effects.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L67)
 
 ###### maxLifetime?
 
@@ -2187,7 +2187,7 @@ Defined in: [shared/api/effects.d.ts:67](https://github.com/sandustry-modding/Sa
 optional maxLifetime?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L68)
+Defined in: [shared/api/effects.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L68)
 
 ###### background?
 
@@ -2195,7 +2195,7 @@ Defined in: [shared/api/effects.d.ts:68](https://github.com/sandustry-modding/Sa
 optional background?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L69)
+Defined in: [shared/api/effects.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L69)
 
 ###### imageName?
 
@@ -2203,7 +2203,7 @@ Defined in: [shared/api/effects.d.ts:69](https://github.com/sandustry-modding/Sa
 optional imageName?: string
 ```
 
-Defined in: [shared/api/effects.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L70)
+Defined in: [shared/api/effects.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L70)
 
 ###### fadeOutOnly?
 
@@ -2211,7 +2211,7 @@ Defined in: [shared/api/effects.d.ts:70](https://github.com/sandustry-modding/Sa
 optional fadeOutOnly?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L71)
+Defined in: [shared/api/effects.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L71)
 
 ###### fadeStart?
 
@@ -2219,7 +2219,7 @@ Defined in: [shared/api/effects.d.ts:71](https://github.com/sandustry-modding/Sa
 optional fadeStart?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L72)
+Defined in: [shared/api/effects.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L72)
 
 ###### fadeEnd?
 
@@ -2227,7 +2227,7 @@ Defined in: [shared/api/effects.d.ts:72](https://github.com/sandustry-modding/Sa
 optional fadeEnd?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L73)
+Defined in: [shared/api/effects.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L73)
 
 ###### damp?
 
@@ -2235,7 +2235,7 @@ Defined in: [shared/api/effects.d.ts:73](https://github.com/sandustry-modding/Sa
 optional damp?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L74)
+Defined in: [shared/api/effects.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L74)
 
 ### Functions <!-- {docsify-ignore} -->
 
@@ -2247,7 +2247,7 @@ Defined in: [shared/api/effects.d.ts:74](https://github.com/sandustry-modding/Sa
 createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
-Defined in: [sandkit/api/effects.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L24)
+Defined in: [sandkit/api/effects.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L24)
 
 Creates a named screen effect at world coordinates.
 
@@ -2293,7 +2293,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effe
 createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
-Defined in: [sandkit/api/effects.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L35)
+Defined in: [sandkit/api/effects.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L35)
 
 ##### Parameters
 
@@ -2333,7 +2333,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): object
 ```
 
-Defined in: [sandkit/api/effects.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L56)
+Defined in: [sandkit/api/effects.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L56)
 
 ##### Parameters
 
@@ -2383,7 +2383,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 createDistortionWaveAtWorld(worldX: number, worldY: number, options?: DistortionEffectOptions): void
 ```
 
-Defined in: [sandkit/api/effects.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L70)
+Defined in: [sandkit/api/effects.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L70)
 
 Creates a distortion wave effect at world coordinates.
 
@@ -2425,7 +2425,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effe
 createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, endWorldY: number, options?: LaserEffectOptions): LaserEffectHandle
 ```
 
-Defined in: [sandkit/api/effects.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L82)
+Defined in: [sandkit/api/effects.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L82)
 
 Creates a laser beam between two world points. Returns a handle to destroy it.
 
@@ -2477,7 +2477,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effe
 removeLightById(lightId: number): void
 ```
 
-Defined in: [sandkit/api/effects.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L94)
+Defined in: [sandkit/api/effects.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L94)
 
 ##### Parameters
 
@@ -2507,7 +2507,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectOptions): void
 ```
 
-Defined in: [shared/api/effects.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L24)
+Defined in: [shared/api/effects.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L24)
 
 Emit particles at world coordinates.
 
@@ -2556,7 +2556,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 
 <p class="smt-member-path"><code>sandkit.api.elements.InteractionStructureMetadata</code></p>
 
-Defined in: [sandkit/api/elements.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L87)
+Defined in: [sandkit/api/elements.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L87)
 
 Optional tooltip metadata on structure interactions.
 
@@ -2568,7 +2568,7 @@ Optional tooltip metadata on structure interactions.
 optional textKey?: string
 ```
 
-Defined in: [sandkit/api/elements.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L89)
+Defined in: [sandkit/api/elements.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L89)
 
 i18n key for custom interaction label text.
 
@@ -2578,7 +2578,7 @@ i18n key for custom interaction label text.
 optional crossedOutWhen?: object
 ```
 
-Defined in: [sandkit/api/elements.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L91)
+Defined in: [sandkit/api/elements.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L91)
 
 Hide the label when a data field matches a value.
 
@@ -2600,7 +2600,7 @@ equals: number
 optional visibleWhen?: object
 ```
 
-Defined in: [sandkit/api/elements.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L93)
+Defined in: [sandkit/api/elements.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L93)
 
 Show the label only when a data field matches a value.
 
@@ -2622,7 +2622,7 @@ equals: number
 optional onlyWhenTranslated?: boolean
 ```
 
-Defined in: [sandkit/api/elements.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L95)
+Defined in: [sandkit/api/elements.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L95)
 
 Require the text key to exist in the active locale.
 
@@ -2632,7 +2632,7 @@ Require the text key to exist in the active locale.
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementCreateOptions</code></p>
 
-Defined in: [shared/api/elements.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L80)
+Defined in: [shared/api/elements.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L80)
 
 Options for [createAtCell](#createatcell), replace, and related create helpers.
 
@@ -2648,7 +2648,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 optional data?: Record<string, unknown>
 ```
 
-Defined in: [shared/api/elements.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L82)
+Defined in: [shared/api/elements.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L82)
 
 Initial element data bag.
 
@@ -2658,7 +2658,7 @@ Initial element data bag.
 optional density?: number
 ```
 
-Defined in: [shared/api/elements.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L84)
+Defined in: [shared/api/elements.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L84)
 
 Override element density.
 
@@ -2668,7 +2668,7 @@ Override element density.
 optional durationTicks?: number
 ```
 
-Defined in: [shared/api/elements.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L90)
+Defined in: [shared/api/elements.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L90)
 
 Set both max and remaining duration in simulation ticks.
 
@@ -2682,7 +2682,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 optional duration?: number
 ```
 
-Defined in: [shared/api/elements.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L95)
+Defined in: [shared/api/elements.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L95)
 
 ###### Deprecated
 
@@ -2698,7 +2698,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 optional isFreeFalling?: boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L97)
+Defined in: [shared/api/elements.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L97)
 
 Override free-fall state on spawn.
 
@@ -2708,7 +2708,7 @@ Override free-fall state on spawn.
 optional dataFields?: object
 ```
 
-Defined in: [shared/api/elements.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L99)
+Defined in: [shared/api/elements.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L99)
 
 Override default data fields 1–4.
 
@@ -2742,7 +2742,7 @@ optional field4?: number
 optional particle?: object
 ```
 
-Defined in: [shared/api/elements.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L106)
+Defined in: [shared/api/elements.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L106)
 
 Spawn as a particle with the given velocity.
 
@@ -2758,7 +2758,7 @@ velocity: Vector2
 optional skipCollectorCheck?: boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L110)
+Defined in: [shared/api/elements.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L110)
 
 Skip collector accounting when placing the element.
 
@@ -2768,7 +2768,7 @@ Skip collector accounting when placing the element.
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementRemovalOptions</code></p>
 
-Defined in: [shared/api/elements.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L118)
+Defined in: [shared/api/elements.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L118)
 
 Options for element removal helpers.
 
@@ -2784,7 +2784,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 optional skipCollectorCheck?: boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L120)
+Defined in: [shared/api/elements.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L120)
 
 Skip collector accounting when removing the element.
 
@@ -2798,7 +2798,7 @@ Skip collector accounting when removing the element.
 InteractionDestroyer = object
 ```
 
-Defined in: [sandkit/api/elements.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L99)
+Defined in: [sandkit/api/elements.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L99)
 
 Interaction that destroys specific items.
 
@@ -2810,7 +2810,7 @@ Interaction that destroys specific items.
 kind: "destroyer"
 ```
 
-Defined in: [sandkit/api/elements.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L100)
+Defined in: [sandkit/api/elements.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L100)
 
 ###### items
 
@@ -2818,7 +2818,7 @@ Defined in: [sandkit/api/elements.d.ts:100](https://github.com/sandustry-modding
 items: readonly string[]
 ```
 
-Defined in: [sandkit/api/elements.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L102)
+Defined in: [sandkit/api/elements.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L102)
 
 Item ids removed by this interaction (for example `"drill"`).
 
@@ -2832,7 +2832,7 @@ Item ids removed by this interaction (for example `"drill"`).
 InteractionStructure = InteractionStructureMetadata & object
 ```
 
-Defined in: [sandkit/api/elements.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L106)
+Defined in: [sandkit/api/elements.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L106)
 
 Interaction that affects specific structures.
 
@@ -2862,7 +2862,7 @@ Structure ids shown in the interaction tooltip.
 InteractionEntity = object
 ```
 
-Defined in: [sandkit/api/elements.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L113)
+Defined in: [sandkit/api/elements.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L113)
 
 Interaction that affects specific entities.
 
@@ -2874,7 +2874,7 @@ Interaction that affects specific entities.
 kind: "entity"
 ```
 
-Defined in: [sandkit/api/elements.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L114)
+Defined in: [sandkit/api/elements.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L114)
 
 ###### entities
 
@@ -2882,7 +2882,7 @@ Defined in: [sandkit/api/elements.d.ts:114](https://github.com/sandustry-modding
 entities: readonly string[]
 ```
 
-Defined in: [sandkit/api/elements.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L116)
+Defined in: [sandkit/api/elements.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L116)
 
 Entity type ids referenced by the interaction.
 
@@ -2896,7 +2896,7 @@ Entity type ids referenced by the interaction.
 InteractionFlammable = object
 ```
 
-Defined in: [sandkit/api/elements.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L120)
+Defined in: [sandkit/api/elements.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L120)
 
 Interaction that marks the element as flammable.
 
@@ -2908,7 +2908,7 @@ Interaction that marks the element as flammable.
 kind: "flammable"
 ```
 
-Defined in: [sandkit/api/elements.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L120)
+Defined in: [sandkit/api/elements.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L120)
 
 ***
 
@@ -2920,7 +2920,7 @@ Defined in: [sandkit/api/elements.d.ts:120](https://github.com/sandustry-modding
 InteractionMeltable = object
 ```
 
-Defined in: [sandkit/api/elements.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L122)
+Defined in: [sandkit/api/elements.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L122)
 
 Interaction that marks the element as meltable.
 
@@ -2932,7 +2932,7 @@ Interaction that marks the element as meltable.
 kind: "meltable"
 ```
 
-Defined in: [sandkit/api/elements.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L122)
+Defined in: [sandkit/api/elements.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L122)
 
 ***
 
@@ -2944,7 +2944,7 @@ Defined in: [sandkit/api/elements.d.ts:122](https://github.com/sandustry-modding
 InteractionFreezable = object
 ```
 
-Defined in: [sandkit/api/elements.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L124)
+Defined in: [sandkit/api/elements.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L124)
 
 Interaction that marks the element as freezable.
 
@@ -2956,7 +2956,7 @@ Interaction that marks the element as freezable.
 kind: "freezable"
 ```
 
-Defined in: [sandkit/api/elements.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L124)
+Defined in: [sandkit/api/elements.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L124)
 
 ***
 
@@ -2968,7 +2968,7 @@ Defined in: [sandkit/api/elements.d.ts:124](https://github.com/sandustry-modding
 InteractionCustom = InteractionStructureMetadata & object
 ```
 
-Defined in: [sandkit/api/elements.d.ts:126](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L126)
+Defined in: [sandkit/api/elements.d.ts:126](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L126)
 
 Interaction handled by custom mod logic and tooltip text.
 
@@ -2990,7 +2990,7 @@ kind: "custom"
 Interaction = InteractionDestroyer | InteractionStructure | InteractionEntity | InteractionFlammable | InteractionMeltable | InteractionFreezable | InteractionCustom
 ```
 
-Defined in: [sandkit/api/elements.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L129)
+Defined in: [sandkit/api/elements.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L129)
 
 Union of element interaction kinds for tool and structure logic.
 
@@ -3004,7 +3004,7 @@ Union of element interaction kinds for tool and structure logic.
 ElementType = ElementType | TaggedNumber<"elementType">
 ```
 
-Defined in: [shared/api/elements.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L20)
+Defined in: [shared/api/elements.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L20)
 
 Numeric element type handle.
 Built-in [ElementTypeEnum](api/sandkit.enums.ElementType.md) values autocomplete; [getTypeById](#gettypebyid) returns a tagged handle.
@@ -3023,7 +3023,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 ElementId = LooseString<never>
 ```
 
-Defined in: [shared/api/elements.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L27)
+Defined in: [shared/api/elements.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L27)
 
 Mod or built-in element string id.
 
@@ -3041,7 +3041,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 ElementRef = ElementType | ElementId
 ```
 
-Defined in: [shared/api/elements.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L34)
+Defined in: [shared/api/elements.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L34)
 
 Type handle or string id accepted by lookup helpers.
 
@@ -3059,7 +3059,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 ElementDefinition = object
 ```
 
-Defined in: [shared/api/elements.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L57)
+Defined in: [shared/api/elements.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L57)
 
 Mod-registered element definition snapshot.
 
@@ -3075,7 +3075,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 id: string
 ```
 
-Defined in: [shared/api/elements.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L58)
+Defined in: [shared/api/elements.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L58)
 
 ###### nameKey
 
@@ -3083,7 +3083,7 @@ Defined in: [shared/api/elements.d.ts:58](https://github.com/sandustry-modding/S
 nameKey: string
 ```
 
-Defined in: [shared/api/elements.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L59)
+Defined in: [shared/api/elements.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L59)
 
 ###### defaultDataFields?
 
@@ -3091,7 +3091,7 @@ Defined in: [shared/api/elements.d.ts:59](https://github.com/sandustry-modding/S
 optional defaultDataFields?: object
 ```
 
-Defined in: [shared/api/elements.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L60)
+Defined in: [shared/api/elements.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L60)
 
 ###### Index Signature
 
@@ -3103,7 +3103,7 @@ Defined in: [shared/api/elements.d.ts:60](https://github.com/sandustry-modding/S
 colors: object
 ```
 
-Defined in: [shared/api/elements.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L61)
+Defined in: [shared/api/elements.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L61)
 
 ###### variantFromDataField1?
 
@@ -3147,7 +3147,7 @@ variants: [number, number, number][]
 density: number
 ```
 
-Defined in: [shared/api/elements.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L70)
+Defined in: [shared/api/elements.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L70)
 
 ###### matterType
 
@@ -3155,7 +3155,7 @@ Defined in: [shared/api/elements.d.ts:70](https://github.com/sandustry-modding/S
 matterType: MatterType
 ```
 
-Defined in: [shared/api/elements.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L71)
+Defined in: [shared/api/elements.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L71)
 
 ###### getExtraProps?
 
@@ -3163,7 +3163,7 @@ Defined in: [shared/api/elements.d.ts:71](https://github.com/sandustry-modding/S
 optional getExtraProps?: () => object
 ```
 
-Defined in: [shared/api/elements.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L72)
+Defined in: [shared/api/elements.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L72)
 
 ###### Returns
 
@@ -3185,7 +3185,7 @@ data: Record<PropertyKey, any>
 getRegisteredTypes(): ElementType[]
 ```
 
-Defined in: [sandkit/api/elements.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L142)
+Defined in: [sandkit/api/elements.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L142)
 
 Returns all registered element type ids.
 
@@ -3207,7 +3207,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 register(definition: ElementDefinition): object
 ```
 
-Defined in: [sandkit/api/elements.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L151)
+Defined in: [sandkit/api/elements.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L151)
 
 Registers a new element and returns its assigned type id.
 
@@ -3245,7 +3245,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 updateDefinition(elementTypeOrId: ElementRef, partial: Partial<ElementDefinition>): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L160)
+Defined in: [sandkit/api/elements.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L160)
 
 Updates fields on an existing element definition.
 
@@ -3281,7 +3281,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 addInteractionInfo(elementTypeOrId: ElementRef, interaction: Interaction): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L169)
+Defined in: [sandkit/api/elements.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L169)
 
 Adds an interaction entry to an element definition.
 
@@ -3317,7 +3317,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 getNameByType(elementType: ElementType): string
 ```
 
-Defined in: [sandkit/api/elements.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L177)
+Defined in: [sandkit/api/elements.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L177)
 
 Returns the display name for an element type.
 
@@ -3347,7 +3347,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 findFreeCellInStructure(structureCellX: number, structureCellY: number, structureSizeCells: number): Vector2 | null
 ```
 
-Defined in: [sandkit/api/elements.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L188)
+Defined in: [sandkit/api/elements.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L188)
 
 Finds a free cell inside a structure footprint, or null.
 
@@ -3391,7 +3391,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L199)
+Defined in: [sandkit/api/elements.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L199)
 
 Create an element at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -3417,7 +3417,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L205)
+Defined in: [sandkit/api/elements.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L205)
 
 ##### Parameters
 
@@ -3447,7 +3447,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L216)
+Defined in: [sandkit/api/elements.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L216)
 
 Replace the element at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -3473,7 +3473,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:222](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L222)
+Defined in: [sandkit/api/elements.d.ts:222](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L222)
 
 ##### Parameters
 
@@ -3503,7 +3503,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:232](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L232)
+Defined in: [sandkit/api/elements.d.ts:232](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L232)
 
 Remove the element at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -3529,7 +3529,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:238](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L238)
+Defined in: [sandkit/api/elements.d.ts:238](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L238)
 
 ##### Parameters
 
@@ -3559,7 +3559,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:249](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L249)
+Defined in: [sandkit/api/elements.d.ts:249](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L249)
 
 Move an element between cells. Main-entry writes are deferred; reads see the old grid.
 
@@ -3605,7 +3605,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L255)
+Defined in: [sandkit/api/elements.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L255)
 
 ##### Parameters
 
@@ -3647,7 +3647,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setVelocityAtCell(...args: number, number, [Vector2]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:265](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L265)
+Defined in: [sandkit/api/elements.d.ts:265](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L265)
 
 Set particle velocity at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -3673,7 +3673,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:271](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L271)
+Defined in: [sandkit/api/elements.d.ts:271](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L271)
 
 ##### Parameters
 
@@ -3703,7 +3703,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 addParticleVelocityAtCell(...args: number, number, [Vector2, number]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:282](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L282)
+Defined in: [sandkit/api/elements.d.ts:282](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L282)
 
 Add velocity to a particle at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -3729,7 +3729,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:288](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L288)
+Defined in: [sandkit/api/elements.d.ts:288](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L288)
 
 ##### Parameters
 
@@ -3759,7 +3759,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 convertToParticleAtCell(...args: number, number, [Vector2]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L298)
+Defined in: [sandkit/api/elements.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L298)
 
 Convert a cell element to a particle. Main-entry writes are deferred; reads see the old grid.
 
@@ -3785,7 +3785,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:304](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L304)
+Defined in: [sandkit/api/elements.d.ts:304](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L304)
 
 ##### Parameters
 
@@ -3815,7 +3815,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 convertFromParticleAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:313](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L313)
+Defined in: [sandkit/api/elements.d.ts:313](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L313)
 
 Convert a particle back to a solid element. Main-entry writes are deferred; reads see the old grid.
 
@@ -3841,7 +3841,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:319](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L319)
+Defined in: [sandkit/api/elements.d.ts:319](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L319)
 
 ##### Parameters
 
@@ -3871,7 +3871,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:330](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L330)
+Defined in: [sandkit/api/elements.d.ts:330](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L330)
 
 Set a data field on the element at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -3897,7 +3897,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:336](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L336)
+Defined in: [sandkit/api/elements.d.ts:336](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L336)
 
 ##### Parameters
 
@@ -3927,7 +3927,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 refreshColorAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:345](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L345)
+Defined in: [sandkit/api/elements.d.ts:345](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L345)
 
 Refresh the rendered color at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -3953,7 +3953,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 refreshColorAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:351](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L351)
+Defined in: [sandkit/api/elements.d.ts:351](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L351)
 
 ##### Parameters
 
@@ -3983,7 +3983,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setPhysicsAtCell(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:361](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L361)
+Defined in: [sandkit/api/elements.d.ts:361](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L361)
 
 Set the physics skip mode at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -4009,7 +4009,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 setPhysicsAtCellWhenIdle(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L367)
+Defined in: [sandkit/api/elements.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L367)
 
 ##### Parameters
 
@@ -4039,7 +4039,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setDurationAtCell(...args: [number, number, number, object]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:378](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L378)
+Defined in: [sandkit/api/elements.d.ts:378](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L378)
 
 Set element duration at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -4065,7 +4065,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 setDurationAtCellWhenIdle(...args: [number, number, number, object]): void
 ```
 
-Defined in: [sandkit/api/elements.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/elements.d.ts#L384)
+Defined in: [sandkit/api/elements.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L384)
 
 ##### Parameters
 
@@ -4095,7 +4095,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 getIdByType(elementType: ElementType): string & object
 ```
 
-Defined in: [shared/api/elements.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L129)
+Defined in: [shared/api/elements.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L129)
 
 Return the mod string id for a numeric element type.
 
@@ -4125,7 +4125,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 getTypeById(elementId: string & object): ElementType
 ```
 
-Defined in: [shared/api/elements.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L137)
+Defined in: [shared/api/elements.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L137)
 
 Resolve a mod element string id to a type handle.
 
@@ -4153,7 +4153,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 getTypeFromId(elementId: string & object): ElementType
 ```
 
-Defined in: [shared/api/elements.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L143)
+Defined in: [shared/api/elements.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L143)
 
 ##### Parameters
 
@@ -4183,7 +4183,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 ```
 
-Defined in: [shared/api/elements.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L151)
+Defined in: [shared/api/elements.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L151)
 
 Look up the definition for a type handle.
 
@@ -4213,7 +4213,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 getTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
-Defined in: [shared/api/elements.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L160)
+Defined in: [shared/api/elements.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L160)
 
 Return the raw element type at a cell (may differ from resolved type).
 
@@ -4241,7 +4241,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
-Defined in: [shared/api/elements.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L169)
+Defined in: [shared/api/elements.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L169)
 
 Return the resolved element type after overlays and particles.
 
@@ -4269,7 +4269,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 ```
 
-Defined in: [shared/api/elements.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L177)
+Defined in: [shared/api/elements.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L177)
 
 Return the resolved element type from a packed cell id.
 
@@ -4299,7 +4299,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number; } | null
 ```
 
-Defined in: [shared/api/elements.d.ts:186](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L186)
+Defined in: [shared/api/elements.d.ts:186](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L186)
 
 Return element index, particle flag, and ids at a cell.
 
@@ -4327,7 +4327,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 ```
 
-Defined in: [shared/api/elements.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L195)
+Defined in: [shared/api/elements.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L195)
 
 Return the matter category at a cell, or null when empty.
 
@@ -4355,7 +4355,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 isTypeAtCell(...args: number, number, [ElementRef]): boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L205)
+Defined in: [shared/api/elements.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L205)
 
 Return true when the cell holds the given element type or id.
 
@@ -4383,7 +4383,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 isFreeFallingAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L214)
+Defined in: [shared/api/elements.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L214)
 
 Return true when the element at the cell is falling.
 
@@ -4411,7 +4411,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 ```
 
-Defined in: [shared/api/elements.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L223)
+Defined in: [shared/api/elements.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L223)
 
 Return per-cell velocity for moving elements.
 
@@ -4439,7 +4439,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 ```
 
-Defined in: [shared/api/elements.d.ts:233](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L233)
+Defined in: [shared/api/elements.d.ts:233](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L233)
 
 Read element data field 1–4 at a cell.
 
@@ -4470,7 +4470,7 @@ Main thread only.
 
 <p class="smt-member-path"><code>sandkit.api.energy.EnergyRegisterTypeOptions</code></p>
 
-Defined in: [sandkit/api/energy.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L56)
+Defined in: [sandkit/api/energy.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L56)
 
 Options for [registerType](#registertype).
 
@@ -4488,7 +4488,7 @@ Options for [registerType](#registertype).
 optional capacity?: number
 ```
 
-Defined in: [sandkit/api/energy.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L58)
+Defined in: [sandkit/api/energy.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L58)
 
 Maximum stored energy for storage nodes.
 
@@ -4498,7 +4498,7 @@ Maximum stored energy for storage nodes.
 optional energyType?: string
 ```
 
-Defined in: [sandkit/api/energy.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L60)
+Defined in: [sandkit/api/energy.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L60)
 
 Energy type id when multiple networks exist.
 
@@ -4508,7 +4508,7 @@ Energy type id when multiple networks exist.
 
 <p class="smt-member-path"><code>sandkit.api.energy.EnergyAddOptions</code></p>
 
-Defined in: [sandkit/api/energy.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L65)
+Defined in: [sandkit/api/energy.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L65)
 
 Options for [addAtCell](#addatcell).
 
@@ -4526,7 +4526,7 @@ Options for [addAtCell](#addatcell).
 optional energyType?: string
 ```
 
-Defined in: [sandkit/api/energy.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L67)
+Defined in: [sandkit/api/energy.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L67)
 
 Energy type id when multiple networks exist.
 
@@ -4540,7 +4540,7 @@ Energy type id when multiple networks exist.
 registerType(structureId: string, type: "storage" | "conductor", options?: EnergyRegisterTypeOptions): void
 ```
 
-Defined in: [sandkit/api/energy.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L14)
+Defined in: [sandkit/api/energy.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L14)
 
 Registers an energy type on a structure as conductor or storage.
 
@@ -4578,7 +4578,7 @@ Capacity and energy-type options for storage nodes.
 addAtCell(...args: number, number, number, [EnergyAddOptions]): number
 ```
 
-Defined in: [sandkit/api/energy.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L22)
+Defined in: [sandkit/api/energy.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L22)
 
 Adds energy at a cell. Returns the amount actually added.
 
@@ -4602,7 +4602,7 @@ Adds energy at a cell. Returns the amount actually added.
 consume(amount: number, options?: object): number
 ```
 
-Defined in: [sandkit/api/energy.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L28)
+Defined in: [sandkit/api/energy.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L28)
 
 Consumes energy from the global pool. Returns the amount consumed.
 
@@ -4636,7 +4636,7 @@ When `allOrNothing` is true, consume zero unless the full amount is available.
 consumeExcludingNetworkAtCell(...args: [number, number, number]): number
 ```
 
-Defined in: [sandkit/api/energy.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L37)
+Defined in: [sandkit/api/energy.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L37)
 
 Consumes energy from networks other than the one at the cell.
 
@@ -4660,7 +4660,7 @@ Consumes energy from networks other than the one at the cell.
 getNetworkAtCell(...args: CellCoordinates): object[]
 ```
 
-Defined in: [sandkit/api/energy.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L43)
+Defined in: [sandkit/api/energy.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L43)
 
 Returns energy network nodes connected at the cell.
 
@@ -4684,7 +4684,7 @@ Returns energy network nodes connected at the cell.
 getNetworkFreeCapacityAtCell(...args: CellCoordinates): number
 ```
 
-Defined in: [sandkit/api/energy.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L53)
+Defined in: [sandkit/api/energy.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L53)
 
 Returns free storage capacity in the network at the cell.
 
@@ -4716,7 +4716,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 
 <p class="smt-member-path"><code>sandkit.api.entities.Entity</code></p>
 
-Defined in: sandkit/api/entities.d.ts:71
+Defined in: [sandkit/api/entities.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L71)
 
 Active entity instance in the world.
 
@@ -4734,7 +4734,7 @@ Active entity instance in the world.
 id: number
 ```
 
-Defined in: sandkit/api/entities.d.ts:72
+Defined in: [sandkit/api/entities.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L72)
 
 ###### x
 
@@ -4742,7 +4742,7 @@ Defined in: sandkit/api/entities.d.ts:72
 x: number
 ```
 
-Defined in: sandkit/api/entities.d.ts:73
+Defined in: [sandkit/api/entities.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L73)
 
 ###### y
 
@@ -4750,7 +4750,7 @@ Defined in: sandkit/api/entities.d.ts:73
 y: number
 ```
 
-Defined in: sandkit/api/entities.d.ts:74
+Defined in: [sandkit/api/entities.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L74)
 
 ###### targetX?
 
@@ -4758,7 +4758,7 @@ Defined in: sandkit/api/entities.d.ts:74
 optional targetX?: number
 ```
 
-Defined in: sandkit/api/entities.d.ts:75
+Defined in: [sandkit/api/entities.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L75)
 
 ###### targetY?
 
@@ -4766,7 +4766,7 @@ Defined in: sandkit/api/entities.d.ts:75
 optional targetY?: number
 ```
 
-Defined in: sandkit/api/entities.d.ts:76
+Defined in: [sandkit/api/entities.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L76)
 
 ### Functions <!-- {docsify-ignore} -->
 
@@ -4778,7 +4778,7 @@ Defined in: sandkit/api/entities.d.ts:76
 getById(entityId: number): Entity | undefined
 ```
 
-Defined in: sandkit/api/entities.d.ts:15
+Defined in: [sandkit/api/entities.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L15)
 
 Return one live entity by runtime id.
 
@@ -4808,7 +4808,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 getAllByType(entityTypeId: string): Entity[]
 ```
 
-Defined in: sandkit/api/entities.d.ts:23
+Defined in: [sandkit/api/entities.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L23)
 
 Return all live entities of one type.
 
@@ -4838,7 +4838,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
 ```
 
-Defined in: sandkit/api/entities.d.ts:34
+Defined in: [sandkit/api/entities.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L34)
 
 Spawn an entity at world position.
 
@@ -4882,7 +4882,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 remove(entityId: number): void
 ```
 
-Defined in: sandkit/api/entities.d.ts:42
+Defined in: [sandkit/api/entities.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L42)
 
 Remove an entity from the world.
 
@@ -4912,7 +4912,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 launch(entityId: number, angleRadians: number, speed?: number): void
 ```
 
-Defined in: sandkit/api/entities.d.ts:52
+Defined in: [sandkit/api/entities.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L52)
 
 Launch an entity with angle and optional speed.
 
@@ -4954,7 +4954,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 startCapture(entityId: number): void
 ```
 
-Defined in: sandkit/api/entities.d.ts:60
+Defined in: [sandkit/api/entities.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L60)
 
 Start capture for an entity (for example vacuum capture).
 
@@ -4984,7 +4984,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 collect(entityId: number): void
 ```
 
-Defined in: sandkit/api/entities.d.ts:68
+Defined in: [sandkit/api/entities.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L68)
 
 Collect an entity (for example into inventory or storage).
 
@@ -5017,7 +5017,7 @@ Main thread only. The `events` object is frozen; do not replace `on` or `emit`.
 
 <p class="smt-member-path"><code>sandkit.api.events.PlayerCollisionPreparePayload</code></p>
 
-Defined in: [sandkit/api/events.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L30)
+Defined in: [sandkit/api/events.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L30)
 
 Mutable payload for `player:collision:prepare`.
 Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
@@ -5030,7 +5030,7 @@ Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
 phaseThroughTerrain: boolean
 ```
 
-Defined in: [sandkit/api/events.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L32)
+Defined in: [sandkit/api/events.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L32)
 
 When true, terrain collision is skipped this sub-step.
 
@@ -5040,7 +5040,7 @@ When true, terrain collision is skipped this sub-step.
 phaseThroughStructures: boolean
 ```
 
-Defined in: [sandkit/api/events.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L34)
+Defined in: [sandkit/api/events.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L34)
 
 When true, structure collision is skipped this sub-step.
 
@@ -5050,7 +5050,7 @@ When true, structure collision is skipped this sub-step.
 maxStepCells: number
 ```
 
-Defined in: [sandkit/api/events.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L36)
+Defined in: [sandkit/api/events.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L36)
 
 Max cells the player can step up when blocked horizontally (1–8).
 
@@ -5060,7 +5060,7 @@ Max cells the player can step up when blocked horizontally (1–8).
 
 <p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap</code></p>
 
-Defined in: [sandkit/api/events.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L40)
+Defined in: [sandkit/api/events.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L40)
 
 Known event payloads. Unlisted ids still use `unknown`.
 
@@ -5072,7 +5072,7 @@ Known event payloads. Unlisted ids still use `unknown`.
 item:used: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L41)
+Defined in: [sandkit/api/events.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L41)
 
 ###### itemId
 
@@ -5116,7 +5116,7 @@ prepared: Readonly<Record<string, unknown>>
 frame:render: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L49)
+Defined in: [sandkit/api/events.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L49)
 
 ###### scene:game:started
 
@@ -5124,7 +5124,7 @@ Defined in: [sandkit/api/events.d.ts:49](https://github.com/sandustry-modding/Sa
 scene:game:started: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L50)
+Defined in: [sandkit/api/events.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L50)
 
 ###### ~~scene:started:game~~
 
@@ -5132,7 +5132,7 @@ Defined in: [sandkit/api/events.d.ts:50](https://github.com/sandustry-modding/Sa
 scene:started:game: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L52)
+Defined in: [sandkit/api/events.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L52)
 
 ###### Deprecated
 
@@ -5144,7 +5144,7 @@ Use `"scene:game:started"` instead.
 earlyAccess:completed: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L53)
+Defined in: [sandkit/api/events.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L53)
 
 ###### ~~earlyAccess:complete~~
 
@@ -5152,7 +5152,7 @@ Defined in: [sandkit/api/events.d.ts:53](https://github.com/sandustry-modding/Sa
 earlyAccess:complete: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L55)
+Defined in: [sandkit/api/events.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L55)
 
 ###### Deprecated
 
@@ -5164,7 +5164,7 @@ Use `"earlyAccess:completed"` instead.
 terrain:destroyed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L56)
+Defined in: [sandkit/api/events.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L56)
 
 ###### cellX
 
@@ -5210,7 +5210,7 @@ Use cellY instead.
 fog:cellRevealed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L65)
+Defined in: [sandkit/api/events.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L65)
 
 ###### cellX
 
@@ -5250,7 +5250,7 @@ Use cellY instead.
 upgrade:levelSelected: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L73)
+Defined in: [sandkit/api/events.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L73)
 
 ###### itemId
 
@@ -5276,7 +5276,7 @@ level: number
 building:placed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L78)
+Defined in: [sandkit/api/events.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L78)
 
 ###### structure
 
@@ -5314,7 +5314,7 @@ isCopied: boolean
 building:removed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L85)
+Defined in: [sandkit/api/events.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L85)
 
 ###### structureId
 
@@ -5346,7 +5346,7 @@ isBatch: boolean
 structures:placed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L91)
+Defined in: [sandkit/api/events.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L91)
 
 ###### structures
 
@@ -5360,7 +5360,7 @@ structures: unknown[]
 structures:removed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L92)
+Defined in: [sandkit/api/events.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L92)
 
 ###### removed
 
@@ -5386,7 +5386,7 @@ byMove: boolean
 structures:moved: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L97)
+Defined in: [sandkit/api/events.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L97)
 
 ###### moved
 
@@ -5406,7 +5406,7 @@ failedToPlace: unknown[]
 game:ready: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L101)
+Defined in: [sandkit/api/events.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L101)
 
 ###### game:started
 
@@ -5414,7 +5414,7 @@ Defined in: [sandkit/api/events.d.ts:101](https://github.com/sandustry-modding/S
 game:started: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/events.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L102)
+Defined in: [sandkit/api/events.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L102)
 
 ###### tutorial:stepChanged
 
@@ -5422,7 +5422,7 @@ Defined in: [sandkit/api/events.d.ts:102](https://github.com/sandustry-modding/S
 tutorial:stepChanged: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L103)
+Defined in: [sandkit/api/events.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L103)
 
 ###### step
 
@@ -5436,7 +5436,7 @@ step: unknown
 tutorial:completed: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L104)
+Defined in: [sandkit/api/events.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L104)
 
 ###### skipped
 
@@ -5450,7 +5450,7 @@ skipped: boolean
 tech:unlocked: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L105)
+Defined in: [sandkit/api/events.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L105)
 
 ###### techId
 
@@ -5470,7 +5470,7 @@ suppressMusic: boolean
 worldItem:pickedUp: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L109)
+Defined in: [sandkit/api/events.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L109)
 
 ###### worldItemId
 
@@ -5490,7 +5490,7 @@ type: string
 resource:collected: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L113)
+Defined in: [sandkit/api/events.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L113)
 
 ###### resourceId
 
@@ -5528,7 +5528,7 @@ cellY: number
 player:collision:prepare: PlayerCollisionPreparePayload
 ```
 
-Defined in: [sandkit/api/events.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L120)
+Defined in: [sandkit/api/events.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L120)
 
 ###### player:moved
 
@@ -5536,7 +5536,7 @@ Defined in: [sandkit/api/events.d.ts:120](https://github.com/sandustry-modding/S
 player:moved: object
 ```
 
-Defined in: [sandkit/api/events.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L121)
+Defined in: [sandkit/api/events.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L121)
 
 ###### dt?
 
@@ -5564,7 +5564,7 @@ optional state?: unknown
 EventId = LooseString<keyof EventPayloadMap>
 ```
 
-Defined in: [sandkit/api/events.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L133)
+Defined in: [sandkit/api/events.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L133)
 
 Known event names plus any custom string id.
 
@@ -5578,7 +5578,7 @@ Known event names plus any custom string id.
 EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
 ```
 
-Defined in: [sandkit/api/events.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L136)
+Defined in: [sandkit/api/events.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L136)
 
 Event payload type for a given event id.
 
@@ -5598,7 +5598,7 @@ Event payload type for a given event id.
 on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void
 ```
 
-Defined in: [sandkit/api/events.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L15)
+Defined in: [sandkit/api/events.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L15)
 
 Subscribes to an event. Returns an unsubscribe function.
 
@@ -5640,7 +5640,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.even
 emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>): void
 ```
 
-Defined in: [sandkit/api/events.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/events.d.ts#L24)
+Defined in: [sandkit/api/events.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L24)
 
 Emits an event with a payload to all subscribers.
 
@@ -5689,7 +5689,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.exca
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationProfileDefinitionV1</code></p>
 
-Defined in: [sandkit/api/excavation.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L21)
+Defined in: [sandkit/api/excavation.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L21)
 
 Excavation tool profile definition.
 
@@ -5701,7 +5701,7 @@ Excavation tool profile definition.
 optional pattern?: number[][]
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L23)
+Defined in: [sandkit/api/excavation.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L23)
 
 Dig pattern grid; non-zero cells are removed.
 
@@ -5711,7 +5711,7 @@ Dig pattern grid; non-zero cells are removed.
 power: number
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L25)
+Defined in: [sandkit/api/excavation.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L25)
 
 Dig strength applied to matched cells. Clamped to 0–1000.
 
@@ -5721,7 +5721,7 @@ Dig strength applied to matched cells. Clamped to 0–1000.
 optional options?: ExcavationProfileOptions
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L27)
+Defined in: [sandkit/api/excavation.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L27)
 
 Optional profile-specific excavation flags.
 
@@ -5731,7 +5731,7 @@ Optional profile-specific excavation flags.
 optional terrainRules?: readonly ExcavationTerrainRule[]
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L29)
+Defined in: [sandkit/api/excavation.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L29)
 
 Per-terrain output and damage rules.
 
@@ -5741,7 +5741,7 @@ Per-terrain output and damage rules.
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationProfileOptions</code></p>
 
-Defined in: [sandkit/api/excavation.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L33)
+Defined in: [sandkit/api/excavation.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L33)
 
 Options attached to an excavation profile definition.
 
@@ -5753,7 +5753,7 @@ Options attached to an excavation profile definition.
 optional fromGun?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L34)
+Defined in: [sandkit/api/excavation.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L34)
 
 ###### fromRocketExplosion?
 
@@ -5761,7 +5761,7 @@ Defined in: [sandkit/api/excavation.d.ts:34](https://github.com/sandustry-moddin
 optional fromRocketExplosion?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L35)
+Defined in: [sandkit/api/excavation.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L35)
 
 ###### fromDrill?
 
@@ -5769,7 +5769,7 @@ Defined in: [sandkit/api/excavation.d.ts:35](https://github.com/sandustry-moddin
 optional fromDrill?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L36)
+Defined in: [sandkit/api/excavation.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L36)
 
 ###### useLiteralOutVelocity?
 
@@ -5777,7 +5777,7 @@ Defined in: [sandkit/api/excavation.d.ts:36](https://github.com/sandustry-moddin
 optional useLiteralOutVelocity?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L37)
+Defined in: [sandkit/api/excavation.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L37)
 
 ###### destroyNonDestructible?
 
@@ -5785,7 +5785,7 @@ Defined in: [sandkit/api/excavation.d.ts:37](https://github.com/sandustry-moddin
 optional destroyNonDestructible?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L38)
+Defined in: [sandkit/api/excavation.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L38)
 
 ###### forceRemoveAll?
 
@@ -5793,7 +5793,7 @@ Defined in: [sandkit/api/excavation.d.ts:38](https://github.com/sandustry-moddin
 optional forceRemoveAll?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L39)
+Defined in: [sandkit/api/excavation.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L39)
 
 ###### drillTierDamage?
 
@@ -5801,7 +5801,7 @@ Defined in: [sandkit/api/excavation.d.ts:39](https://github.com/sandustry-moddin
 optional drillTierDamage?: number
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L41)
+Defined in: [sandkit/api/excavation.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L41)
 
 Clamped to 0–1000 when set.
 
@@ -5811,7 +5811,7 @@ Clamped to 0–1000 when set.
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationTerrainRule</code></p>
 
-Defined in: [sandkit/api/excavation.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L45)
+Defined in: [sandkit/api/excavation.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L45)
 
 Terrain match rule within an excavation profile.
 
@@ -5823,7 +5823,7 @@ Terrain match rule within an excavation profile.
 cellType: TerrainRef
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L47)
+Defined in: [sandkit/api/excavation.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L47)
 
 Terrain cell type to match.
 
@@ -5833,7 +5833,7 @@ Terrain cell type to match.
 optional terrainType?: TerrainRef
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L52)
+Defined in: [sandkit/api/excavation.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L52)
 
 ###### Deprecated
 
@@ -5849,7 +5849,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias in 
 optional damage?: number
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L54)
+Defined in: [sandkit/api/excavation.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L54)
 
 Damage applied when this rule matches.
 
@@ -5859,7 +5859,7 @@ Damage applied when this rule matches.
 optional outputElementType?: ElementRef
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L56)
+Defined in: [sandkit/api/excavation.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L56)
 
 Element type produced when this terrain is excavated.
 
@@ -5873,7 +5873,7 @@ Element type produced when this terrain is excavated.
 registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/excavation.d.ts#L18)
+Defined in: [sandkit/api/excavation.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L18)
 
 Registers an excavation profile by id.
 
@@ -5921,7 +5921,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fact
 FactoryProcessId = "shakeWetSand" | "pressBurntResidue" | "growFlowers" | "condenseFlorin"
 ```
 
-Defined in: sandkit/api/factory.d.ts:33
+Defined in: [sandkit/api/factory.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L33)
 
 Built-in factory process identifiers.
 
@@ -5935,7 +5935,7 @@ Built-in factory process identifiers.
 getLevel(): number
 ```
 
-Defined in: sandkit/api/factory.d.ts:14
+Defined in: [sandkit/api/factory.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L14)
 
 Return the current factory level.
 
@@ -5957,7 +5957,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fact
 getProcessCount(processId: FactoryProcessId): number
 ```
 
-Defined in: sandkit/api/factory.d.ts:22
+Defined in: [sandkit/api/factory.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L22)
 
 Return completed count for a factory process.
 
@@ -5987,7 +5987,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fact
 getProcessRate(processId: FactoryProcessId): number
 ```
 
-Defined in: sandkit/api/factory.d.ts:30
+Defined in: [sandkit/api/factory.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L30)
 
 Return completion rate for a factory process.
 
@@ -6028,7 +6028,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fire
 canBurnElementAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/fire.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L17)
+Defined in: [sandkit/api/fire.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L17)
 
 Returns true when the element at the cell can burn.
 
@@ -6056,7 +6056,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fire
 burnElementAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/fire.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L26)
+Defined in: [sandkit/api/fire.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L26)
 
 Burn the element at the cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -6082,7 +6082,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 burnElementAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/fire.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L32)
+Defined in: [sandkit/api/fire.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L32)
 
 ##### Parameters
 
@@ -6120,7 +6120,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.game
 
 <p class="smt-member-path"><code>sandkit.api.game.GameStartOptions</code></p>
 
-Defined in: sandkit/api/game.d.ts:18
+Defined in: [sandkit/api/game.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L18)
 
 Options for [start](#start).
 
@@ -6132,7 +6132,7 @@ Options for [start](#start).
 optional skipIntro?: boolean
 ```
 
-Defined in: sandkit/api/game.d.ts:20
+Defined in: [sandkit/api/game.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L20)
 
 When true, skip the intro sequence.
 
@@ -6146,7 +6146,7 @@ When true, skip the intro sequence.
 start(options?: GameStartOptions): void
 ```
 
-Defined in: sandkit/api/game.d.ts:15
+Defined in: [sandkit/api/game.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L15)
 
 Start or restart the game session.
 
@@ -6183,7 +6183,7 @@ Main thread only.
 get(key: string): JsonValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/gameconfig.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/gameconfig.d.ts#L12)
+Defined in: [sandkit/api/gameconfig.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L12)
 
 Returns a config value by key, or undefined when missing.
 
@@ -6209,7 +6209,7 @@ Game config key (merged defaults and overrides).
 getAll(): JsonObjectV1
 ```
 
-Defined in: [sandkit/api/gameconfig.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/gameconfig.d.ts#L14)
+Defined in: [sandkit/api/gameconfig.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L14)
 
 Returns the full config object.
 
@@ -6235,7 +6235,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriter</code></p>
 
-Defined in: [sandkit/api/grid.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L104)
+Defined in: [sandkit/api/grid.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L104)
 
 Deferred element and terrain mutations passed to [mutate](#mutate).
 
@@ -6247,7 +6247,7 @@ Deferred element and terrain mutations passed to [mutate](#mutate).
 elements: GridMutationWriterElements
 ```
 
-Defined in: [sandkit/api/grid.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L106)
+Defined in: [sandkit/api/grid.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L106)
 
 Element cell mutations inside a [mutate](#mutate) callback.
 
@@ -6257,7 +6257,7 @@ Element cell mutations inside a [mutate](#mutate) callback.
 terrains: GridMutationWriterTerrains
 ```
 
-Defined in: [sandkit/api/grid.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L108)
+Defined in: [sandkit/api/grid.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L108)
 
 Terrain cell mutations inside a [mutate](#mutate) callback.
 
@@ -6267,7 +6267,7 @@ Terrain cell mutations inside a [mutate](#mutate) callback.
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriterElements</code></p>
 
-Defined in: [sandkit/api/grid.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L112)
+Defined in: [sandkit/api/grid.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L112)
 
 Element writers available on [GridMutationWriter.elements](#elements).
 
@@ -6279,7 +6279,7 @@ Element writers available on [GridMutationWriter.elements](#elements).
 createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L122)
+Defined in: [sandkit/api/grid.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L122)
 
 Create an element at a cell inside a [mutate](#mutate) callback.
 
@@ -6303,7 +6303,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L133)
+Defined in: [sandkit/api/grid.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L133)
 
 Replace the element at a cell inside a [mutate](#mutate) callback.
 
@@ -6327,7 +6327,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L143)
+Defined in: [sandkit/api/grid.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L143)
 
 Remove the element at a cell inside a [mutate](#mutate) callback.
 
@@ -6351,7 +6351,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriterTerrains</code></p>
 
-Defined in: [sandkit/api/grid.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L147)
+Defined in: [sandkit/api/grid.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L147)
 
 Terrain writers available on [GridMutationWriter.terrains](#terrains).
 
@@ -6363,7 +6363,7 @@ Terrain writers available on [GridMutationWriter.terrains](#terrains).
 createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L157)
+Defined in: [sandkit/api/grid.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L157)
 
 Create terrain at a cell inside a [mutate](#mutate) callback.
 
@@ -6387,7 +6387,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L168)
+Defined in: [sandkit/api/grid.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L168)
 
 Replace terrain at a cell inside a [mutate](#mutate) callback.
 
@@ -6411,7 +6411,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L178)
+Defined in: [sandkit/api/grid.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L178)
 
 Remove terrain at a cell inside a [mutate](#mutate) callback.
 
@@ -6435,7 +6435,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridDimensions</code></p>
 
-Defined in: shared/api/grid.d.ts:73
+Defined in: [shared/api/grid.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L73)
 
 World grid width and height in cells.
 
@@ -6447,7 +6447,7 @@ World grid width and height in cells.
 widthCells: number
 ```
 
-Defined in: shared/api/grid.d.ts:75
+Defined in: [shared/api/grid.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L75)
 
 Grid width in cells.
 
@@ -6457,7 +6457,7 @@ Grid width in cells.
 heightCells: number
 ```
 
-Defined in: shared/api/grid.d.ts:77
+Defined in: [shared/api/grid.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L77)
 
 Grid height in cells.
 
@@ -6467,7 +6467,7 @@ Grid height in cells.
 
 <p class="smt-member-path"><code>sandkit.api.grid.ExcavateOptions</code></p>
 
-Defined in: shared/api/grid.d.ts:81
+Defined in: [shared/api/grid.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L81)
 
 Flags that control how [excavateAtCell](#excavateatcell) resolves damage and drops.
 
@@ -6479,7 +6479,7 @@ Flags that control how [excavateAtCell](#excavateatcell) resolves damage and dro
 optional fromGun?: boolean
 ```
 
-Defined in: shared/api/grid.d.ts:83
+Defined in: [shared/api/grid.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L83)
 
 Treat the dig as gun fire for terrain resistance checks.
 
@@ -6489,7 +6489,7 @@ Treat the dig as gun fire for terrain resistance checks.
 optional fromRocketExplosion?: boolean
 ```
 
-Defined in: shared/api/grid.d.ts:85
+Defined in: [shared/api/grid.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L85)
 
 Treat the dig as rocket or dynamite explosion damage.
 
@@ -6499,7 +6499,7 @@ Treat the dig as rocket or dynamite explosion damage.
 optional fromDrill?: boolean
 ```
 
-Defined in: shared/api/grid.d.ts:87
+Defined in: [shared/api/grid.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L87)
 
 Treat the dig as drill damage.
 
@@ -6509,7 +6509,7 @@ Treat the dig as drill damage.
 optional useLiteralOutVelocity?: boolean
 ```
 
-Defined in: shared/api/grid.d.ts:89
+Defined in: [shared/api/grid.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L89)
 
 Use outVelocity literally instead of deriving ejection speed.
 
@@ -6519,7 +6519,7 @@ Use outVelocity literally instead of deriving ejection speed.
 optional destroyNonDestructible?: boolean
 ```
 
-Defined in: shared/api/grid.d.ts:91
+Defined in: [shared/api/grid.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L91)
 
 Allow removing terrain marked non-destructible.
 
@@ -6529,7 +6529,7 @@ Allow removing terrain marked non-destructible.
 optional forceRemoveAll?: boolean
 ```
 
-Defined in: shared/api/grid.d.ts:93
+Defined in: [shared/api/grid.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L93)
 
 Force-remove all matched cells regardless of normal rules.
 
@@ -6539,7 +6539,7 @@ Force-remove all matched cells regardless of normal rules.
 optional drillTierDamage?: number
 ```
 
-Defined in: shared/api/grid.d.ts:95
+Defined in: [shared/api/grid.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L95)
 
 Extra drill-tier damage when [fromDrill](#fromdrill) is true. Clamped to 0–1000.
 
@@ -6553,7 +6553,7 @@ Extra drill-tier damage when [fromDrill](#fromdrill) is true. Clamped to 0–100
 CellId = CellId
 ```
 
-Defined in: shared/api/grid.d.ts:70
+Defined in: [shared/api/grid.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L70)
 
 Packed cell id from [getCellIdAtCell](#getcellidatcell).
 
@@ -6567,7 +6567,7 @@ Packed cell id from [getCellIdAtCell](#getcellidatcell).
 mutate(callback: (writer: GridMutationWriter) => void): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L53)
+Defined in: [sandkit/api/grid.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L53)
 
 Run deferred grid mutations on the main thread. Reads see the old grid until
 mutations apply.
@@ -6599,7 +6599,7 @@ Receives a writer for element and terrain cell mutations.
 revealFogAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L62)
+Defined in: [sandkit/api/grid.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L62)
 
 Reveal fog of war at a cell.
 
@@ -6627,7 +6627,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 redrawAroundCell(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L72)
+Defined in: [sandkit/api/grid.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L72)
 
 Request redraw around a cell.
 
@@ -6655,7 +6655,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) => void): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L83)
+Defined in: [sandkit/api/grid.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L83)
 
 Calls the callback for each cell inside a circle.
 
@@ -6703,7 +6703,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 forEachCellInRectangle(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L95)
+Defined in: [sandkit/api/grid.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L95)
 
 Calls the callback for each cell in a rectangle.
 
@@ -6729,7 +6729,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/grid.d.ts#L101)
+Defined in: [sandkit/api/grid.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L101)
 
 ##### Parameters
 
@@ -6759,7 +6759,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 getCellIdAtCell(...args: CellCoordinates): CellId
 ```
 
-Defined in: shared/api/grid.d.ts:21
+Defined in: [shared/api/grid.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L21)
 
 Return the packed cell id at grid coordinates.
 
@@ -6789,7 +6789,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 isCellEmptyAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: shared/api/grid.d.ts:30
+Defined in: [shared/api/grid.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L30)
 
 Return true when the cell has no element or terrain content.
 
@@ -6817,7 +6817,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 isTerrainAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: shared/api/grid.d.ts:39
+Defined in: [shared/api/grid.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L39)
 
 Return true when the cell holds terrain (not an element).
 
@@ -6845,7 +6845,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 reportActivityAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: shared/api/grid.d.ts:48
+Defined in: [shared/api/grid.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L48)
 
 Mark the cell active for simulation this tick.
 
@@ -6873,7 +6873,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): void
 ```
 
-Defined in: shared/api/grid.d.ts:60
+Defined in: [shared/api/grid.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L60)
 
 Apply excavation damage and eject velocity at a cell.
 
@@ -6901,7 +6901,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid
 getDimensions(): GridDimensions
 ```
 
-Defined in: shared/api/grid.d.ts:67
+Defined in: [shared/api/grid.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L67)
 
 Return the world grid size in cells.
 
@@ -6926,7 +6926,7 @@ Main thread only.
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookContext</code></p>
 
-Defined in: [sandkit/api/hooks.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L37)
+Defined in: [sandkit/api/hooks.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L37)
 
 Context passed to intercept hook callbacks.
 
@@ -6938,7 +6938,7 @@ Context passed to intercept hook callbacks.
 cancelled: boolean
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L41)
+Defined in: [sandkit/api/hooks.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L41)
 
 True after [cancel](#cancel) was called on this context.
 
@@ -6950,7 +6950,7 @@ True after [cancel](#cancel) was called on this context.
 cancel(): void
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L39)
+Defined in: [sandkit/api/hooks.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L39)
 
 When called, the intercepted action is skipped.
 
@@ -6964,7 +6964,7 @@ When called, the intercepted action is skipped.
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookOptions</code></p>
 
-Defined in: [sandkit/api/hooks.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L45)
+Defined in: [sandkit/api/hooks.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L45)
 
 Options shared by intercept and modify hooks.
 
@@ -6982,7 +6982,7 @@ Options shared by intercept and modify hooks.
 optional priority?: number
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L47)
+Defined in: [sandkit/api/hooks.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L47)
 
 Run this hook before others with lower priority.
 
@@ -6992,7 +6992,7 @@ Run this hook before others with lower priority.
 
 <p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookMap</code></p>
 
-Defined in: [sandkit/api/hooks.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L137)
+Defined in: [sandkit/api/hooks.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L137)
 
 Intercept hook argument shapes keyed by hook id.
 
@@ -7004,7 +7004,7 @@ Intercept hook argument shapes keyed by hook id.
 item:use: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L138)
+Defined in: [sandkit/api/hooks.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L138)
 
 ###### itemId
 
@@ -7042,7 +7042,7 @@ prepared: Record<string, unknown>
 teleport:effect:create: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L145)
+Defined in: [sandkit/api/hooks.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L145)
 
 ###### ~~teleport:effect~~
 
@@ -7050,7 +7050,7 @@ Defined in: [sandkit/api/hooks.d.ts:145](https://github.com/sandustry-modding/Sa
 teleport:effect: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L147)
+Defined in: [sandkit/api/hooks.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L147)
 
 ###### Deprecated
 
@@ -7062,7 +7062,7 @@ Use `"teleport:effect:create"` instead.
 action:start: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L148)
+Defined in: [sandkit/api/hooks.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L148)
 
 ###### Type Declaration
 
@@ -7086,7 +7086,7 @@ optional id?: string
 action:intercept: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L150)
+Defined in: [sandkit/api/hooks.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L150)
 
 ###### Type Declaration
 
@@ -7114,7 +7114,7 @@ Use `"action:start"` instead.
 input:keyDown: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L151)
+Defined in: [sandkit/api/hooks.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L151)
 
 ###### key?
 
@@ -7140,7 +7140,7 @@ optional event?: Event
 input:keydown: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L153)
+Defined in: [sandkit/api/hooks.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L153)
 
 ###### ~~key?~~
 
@@ -7170,7 +7170,7 @@ Use `"input:keyDown"` instead.
 input:keyUp: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L154)
+Defined in: [sandkit/api/hooks.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L154)
 
 ###### key?
 
@@ -7196,7 +7196,7 @@ optional event?: Event
 input:keyup: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L156)
+Defined in: [sandkit/api/hooks.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L156)
 
 ###### ~~key?~~
 
@@ -7226,7 +7226,7 @@ Use `"input:keyUp"` instead.
 placePoints:suppress: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L157)
+Defined in: [sandkit/api/hooks.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L157)
 
 ###### Type Declaration
 
@@ -7242,7 +7242,7 @@ optional type?: string
 placePoints:isSuppressed: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L159)
+Defined in: [sandkit/api/hooks.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L159)
 
 ###### Type Declaration
 
@@ -7262,7 +7262,7 @@ Use `"placePoints:suppress"` instead.
 placePoints:directionalArrows:suppress: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L160)
+Defined in: [sandkit/api/hooks.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L160)
 
 ###### Type Declaration
 
@@ -7278,7 +7278,7 @@ optional type?: string
 placePoints:directionalArrows:isSuppressed: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L162)
+Defined in: [sandkit/api/hooks.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L162)
 
 ###### Type Declaration
 
@@ -7298,7 +7298,7 @@ Use `"placePoints:directionalArrows:suppress"` instead.
 entity:update: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L163)
+Defined in: [sandkit/api/hooks.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L163)
 
 ###### entityTypeId
 
@@ -7384,7 +7384,7 @@ timeSeconds: number
 building:place: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L178)
+Defined in: [sandkit/api/hooks.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L178)
 
 ###### structureId
 
@@ -7416,7 +7416,7 @@ optional data?: Record<string, unknown>
 building:clearShape: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L184)
+Defined in: [sandkit/api/hooks.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L184)
 
 ###### structure
 
@@ -7430,7 +7430,7 @@ structure: Record<string, unknown>
 input:scroll: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L185)
+Defined in: [sandkit/api/hooks.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L185)
 
 ###### Type Declaration
 
@@ -7446,7 +7446,7 @@ deltaY: number
 input:boostDown: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:186](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L186)
+Defined in: [sandkit/api/hooks.d.ts:186](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L186)
 
 ###### ~~input:boost-down~~
 
@@ -7454,7 +7454,7 @@ Defined in: [sandkit/api/hooks.d.ts:186](https://github.com/sandustry-modding/Sa
 input:boost-down: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L188)
+Defined in: [sandkit/api/hooks.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L188)
 
 ###### Deprecated
 
@@ -7466,7 +7466,7 @@ Use `"input:boostDown"` instead.
 input:descendDown: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L189)
+Defined in: [sandkit/api/hooks.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L189)
 
 ###### ~~input:descend-down~~
 
@@ -7474,7 +7474,7 @@ Defined in: [sandkit/api/hooks.d.ts:189](https://github.com/sandustry-modding/Sa
 input:descend-down: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L191)
+Defined in: [sandkit/api/hooks.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L191)
 
 ###### Deprecated
 
@@ -7486,7 +7486,7 @@ Use `"input:descendDown"` instead.
 input:escape: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L192)
+Defined in: [sandkit/api/hooks.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L192)
 
 ###### interactable:suppressHover
 
@@ -7494,7 +7494,7 @@ Defined in: [sandkit/api/hooks.d.ts:192](https://github.com/sandustry-modding/Sa
 interactable:suppressHover: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L193)
+Defined in: [sandkit/api/hooks.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L193)
 
 ###### Type Declaration
 
@@ -7516,7 +7516,7 @@ optional structure?: Record<string, unknown>
 fire:element:ignite: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L194)
+Defined in: [sandkit/api/hooks.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L194)
 
 ###### x
 
@@ -7542,7 +7542,7 @@ elementType: number
 projectile:fire:overStructure: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L195)
+Defined in: [sandkit/api/hooks.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L195)
 
 ###### projectile
 
@@ -7568,7 +7568,7 @@ y: number
 projectile:hit: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L196)
+Defined in: [sandkit/api/hooks.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L196)
 
 ###### projectile
 
@@ -7588,7 +7588,7 @@ travelResult: Record<string, unknown>
 player:position:commit: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L197)
+Defined in: [sandkit/api/hooks.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L197)
 
 ###### previousWorldX
 
@@ -7632,7 +7632,7 @@ velocityY: number
 progression:purchase: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L205)
+Defined in: [sandkit/api/hooks.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L205)
 
 ###### domain
 
@@ -7664,7 +7664,7 @@ costs: Record<string, unknown>
 
 <p class="smt-member-path"><code>sandkit.api.hooks.ModifierHookMap</code></p>
 
-Defined in: [sandkit/api/hooks.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L214)
+Defined in: [sandkit/api/hooks.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L214)
 
 Modify hook argument shapes keyed by hook id.
 
@@ -7676,7 +7676,7 @@ Modify hook argument shapes keyed by hook id.
 excavation:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:215](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L215)
+Defined in: [sandkit/api/hooks.d.ts:215](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L215)
 
 ###### sourceId
 
@@ -7732,7 +7732,7 @@ drillTierDamage: number
 locator:scan:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L225)
+Defined in: [sandkit/api/hooks.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L225)
 
 ###### originWorldX
 
@@ -7800,7 +7800,7 @@ triangulationLensOverride: boolean | null
 vacuum:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:237](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L237)
+Defined in: [sandkit/api/hooks.d.ts:237](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L237)
 
 ###### nozzleCellX
 
@@ -7838,7 +7838,7 @@ pattern: number[][]
 vacuum:element:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:244](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L244)
+Defined in: [sandkit/api/hooks.d.ts:244](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L244)
 
 ###### elementType
 
@@ -7876,7 +7876,7 @@ visibleInPicker: boolean
 player:movement:prepare: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L251)
+Defined in: [sandkit/api/hooks.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L251)
 
 ###### ~~player:movement~~
 
@@ -7884,7 +7884,7 @@ Defined in: [sandkit/api/hooks.d.ts:251](https://github.com/sandustry-modding/Sa
 player:movement: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L253)
+Defined in: [sandkit/api/hooks.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L253)
 
 ###### Deprecated
 
@@ -7896,7 +7896,7 @@ Use `"player:movement:prepare"` instead.
 building:placementLimit:prepare: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L254)
+Defined in: [sandkit/api/hooks.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L254)
 
 ###### Type Declaration
 
@@ -7912,7 +7912,7 @@ maxCount: number | null
 building:placementLimit: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:256](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L256)
+Defined in: [sandkit/api/hooks.d.ts:256](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L256)
 
 ###### Type Declaration
 
@@ -7932,7 +7932,7 @@ Use `"building:placementLimit:prepare"` instead.
 building:placement-limit: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:258](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L258)
+Defined in: [sandkit/api/hooks.d.ts:258](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L258)
 
 ###### Type Declaration
 
@@ -7952,7 +7952,7 @@ Use `"building:placementLimit:prepare"` instead.
 fluxEmanator:processing:prepare: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:259](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L259)
+Defined in: [sandkit/api/hooks.d.ts:259](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L259)
 
 ###### Type Declaration
 
@@ -7968,7 +7968,7 @@ speedMultiplier: number
 fluxEmanator:processing: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:261](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L261)
+Defined in: [sandkit/api/hooks.d.ts:261](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L261)
 
 ###### Type Declaration
 
@@ -7988,7 +7988,7 @@ Use `"fluxEmanator:processing:prepare"` instead.
 flux-emanator:processing: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:263](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L263)
+Defined in: [sandkit/api/hooks.d.ts:263](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L263)
 
 ###### Type Declaration
 
@@ -8008,7 +8008,7 @@ Use `"fluxEmanator:processing:prepare"` instead.
 render:pipes:prepare: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:264](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L264)
+Defined in: [sandkit/api/hooks.d.ts:264](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L264)
 
 ###### Type Declaration
 
@@ -8024,7 +8024,7 @@ optional layer?: string
 render:pipes: object & Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:266](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L266)
+Defined in: [sandkit/api/hooks.d.ts:266](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L266)
 
 ###### Type Declaration
 
@@ -8044,7 +8044,7 @@ Use `"render:pipes:prepare"` instead.
 structures:moved:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:267](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L267)
+Defined in: [sandkit/api/hooks.d.ts:267](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L267)
 
 ###### moved
 
@@ -8064,7 +8064,7 @@ failedToPlace: unknown[]
 structures:removed:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:271](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L271)
+Defined in: [sandkit/api/hooks.d.ts:271](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L271)
 
 ###### removed
 
@@ -8090,7 +8090,7 @@ byMove: boolean
 weapon:reload:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:276](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L276)
+Defined in: [sandkit/api/hooks.d.ts:276](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L276)
 
 ###### weaponId
 
@@ -8116,7 +8116,7 @@ maxAmmo: number
 projectile:travel:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:281](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L281)
+Defined in: [sandkit/api/hooks.d.ts:281](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L281)
 
 ###### projectileType
 
@@ -8154,7 +8154,7 @@ collidesWithStructures: boolean
 projectile:impact:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:288](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L288)
+Defined in: [sandkit/api/hooks.d.ts:288](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L288)
 
 ###### projectileType
 
@@ -8208,7 +8208,7 @@ Use radiusCells instead.
 player:collision:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L298)
+Defined in: [sandkit/api/hooks.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L298)
 
 ###### phaseThroughTerrain
 
@@ -8234,7 +8234,7 @@ maxStepCells: number
 trigger:schedule:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:303](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L303)
+Defined in: [sandkit/api/hooks.d.ts:303](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L303)
 
 ###### triggerId
 
@@ -8260,7 +8260,7 @@ sequentialRuns: number
 progression:cost:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:308](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L308)
+Defined in: [sandkit/api/hooks.d.ts:308](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L308)
 
 ###### domain
 
@@ -8298,7 +8298,7 @@ amount: number
 resource:collection:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:315](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L315)
+Defined in: [sandkit/api/hooks.d.ts:315](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L315)
 
 ###### resourceId
 
@@ -8342,7 +8342,7 @@ feedback: "silent" | "default"
 resource:delivery:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L323)
+Defined in: [sandkit/api/hooks.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L323)
 
 ###### resourceId
 
@@ -8410,7 +8410,7 @@ feedback: "silent" | "default"
 resource:balance:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L335)
+Defined in: [sandkit/api/hooks.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L335)
 
 ###### resourceId
 
@@ -8430,7 +8430,7 @@ balance: number
 gold:removal:prepare: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L339)
+Defined in: [sandkit/api/hooks.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L339)
 
 ###### requestedAmount
 
@@ -8450,7 +8450,7 @@ shortfall: number
 gold:removal:settle: object
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:343](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L343)
+Defined in: [sandkit/api/hooks.d.ts:343](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L343)
 
 ###### requestedAmount
 
@@ -8480,7 +8480,7 @@ shortfall: number
 InterceptHookOptions<K *extends* InterceptHookId> = HookOptions & K *extends* "item:use" ? object : K *extends* "entity:update" ? object : K *extends* "building:place" ? object : K *extends* "projectile:fire:overStructure" | "projectile:hit" ? object : Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L52)
+Defined in: [sandkit/api/hooks.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L52)
 
 Options for [intercept](#intercept).
 
@@ -8500,7 +8500,7 @@ Options for [intercept](#intercept).
 ModifyHookOptions = HookOptions & { weaponIds?: string[]; priority?: number; } | { projectileTypes?: string[]; priority?: number; } | { triggerIds?: string[]; priority?: number; } | { resourceIds?: string[]; priority?: number; } | Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L64)
+Defined in: [sandkit/api/hooks.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L64)
 
 Options for [modify](#modify).
 
@@ -8514,7 +8514,7 @@ Options for [modify](#modify).
 InterceptHookId = LooseString<"item:use" | "teleport:effect:create" | "teleport:effect" | "action:start" | "action:intercept" | "input:keyDown" | "input:keydown" | "input:keyUp" | "input:keyup" | "placePoints:suppress" | "placePoints:isSuppressed" | "placePoints:directionalArrows:suppress" | "placePoints:directionalArrows:isSuppressed" | "entity:update" | "building:place" | "building:clearShape" | "input:scroll" | "input:boostDown" | "input:boost-down" | "input:descendDown" | "input:descend-down" | "input:escape" | "interactable:suppressHover" | "fire:element:ignite" | "projectile:fire:overStructure" | "projectile:hit" | "player:position:commit" | "progression:purchase">
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L74)
+Defined in: [sandkit/api/hooks.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L74)
 
 Known main-thread intercept hook ids plus custom strings.
 
@@ -8528,7 +8528,7 @@ Known main-thread intercept hook ids plus custom strings.
 ModifyHookId = LooseString<"excavation:prepare" | "locator:scan:prepare" | "vacuum:prepare" | "vacuum:element:prepare" | "player:movement:prepare" | "player:movement" | "building:placementLimit:prepare" | "building:placementLimit" | "building:placement-limit" | "fluxEmanator:processing:prepare" | "fluxEmanator:processing" | "flux-emanator:processing" | "render:pipes:prepare" | "render:pipes" | "structures:moved:prepare" | "structures:removed:prepare" | "weapon:reload:prepare" | "projectile:travel:prepare" | "projectile:impact:prepare" | "player:collision:prepare" | "trigger:schedule:prepare" | "progression:cost:prepare" | "resource:collection:prepare" | "resource:delivery:prepare" | "resource:balance:prepare" | "gold:removal:prepare" | "gold:removal:settle">
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L106)
+Defined in: [sandkit/api/hooks.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L106)
 
 Known main-thread modify hook ids plus custom strings.
 
@@ -8542,7 +8542,7 @@ Known main-thread modify hook ids plus custom strings.
 InterceptHookArgs<K *extends* InterceptHookId> = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:351](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L351)
+Defined in: [sandkit/api/hooks.d.ts:351](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L351)
 
 Intercept hook args for a given hook id.
 
@@ -8562,7 +8562,7 @@ Intercept hook args for a given hook id.
 ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof ModifierHookMap ? ModifierHookMap[K] : unknown
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:355](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L355)
+Defined in: [sandkit/api/hooks.d.ts:355](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L355)
 
 Modify hook args for a given hook id.
 
@@ -8582,7 +8582,7 @@ Modify hook args for a given hook id.
 intercept<K *extends* InterceptHookId>(hookId: K, callback: (args: InterceptHookArgs<K>, context: HookContext) => void, options?: InterceptHookOptions<K>): () => void
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L16)
+Defined in: [sandkit/api/hooks.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L16)
 
 Registers an intercept hook. Returns an unsubscribe function.
 
@@ -8630,7 +8630,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.hook
 modify<K *extends* ModifyHookId>(hookId: K, callback: (args: ModifyHookArgs<K>) => void, options?: ModifyHookOptions): () => void
 ```
 
-Defined in: [sandkit/api/hooks.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/hooks.d.ts#L30)
+Defined in: [sandkit/api/hooks.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L30)
 
 Registers a modifier hook. Returns an unsubscribe function.
 
@@ -8681,7 +8681,7 @@ Main thread only.
 
 <p class="smt-member-path"><code>sandkit.api.i18n.I18nNumberFormatOptions</code></p>
 
-Defined in: [sandkit/api/i18n.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L168)
+Defined in: [sandkit/api/i18n.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L168)
 
 Number format options for [formatNumber](#formatnumber).
 
@@ -8699,7 +8699,7 @@ Number format options for [formatNumber](#formatnumber).
 optional minimumFractionDigits?: number
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L170)
+Defined in: [sandkit/api/i18n.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L170)
 
 Minimum fraction digits.
 
@@ -8709,7 +8709,7 @@ Minimum fraction digits.
 optional maximumFractionDigits?: number
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L172)
+Defined in: [sandkit/api/i18n.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L172)
 
 Maximum fraction digits.
 
@@ -8719,7 +8719,7 @@ Maximum fraction digits.
 optional useGrouping?: boolean
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L174)
+Defined in: [sandkit/api/i18n.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L174)
 
 When true, use grouping separators.
 
@@ -8733,7 +8733,7 @@ When true, use grouping separators.
 Locale = LooseString<"en">
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L165)
+Defined in: [sandkit/api/i18n.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L165)
 
 Locale code. `"en"` autocompletes; any locale string is allowed.
 
@@ -8747,7 +8747,7 @@ Locale code. `"en"` autocompletes; any locale string is allowed.
 t(key: string, params?: Record<string, string | number>): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L15)
+Defined in: [sandkit/api/i18n.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L15)
 
 Translates a key with optional parameter substitution.
 
@@ -8783,7 +8783,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 register(locale: Locale, translations: Record<string, string>): void
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L24)
+Defined in: [sandkit/api/i18n.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L24)
 
 Registers translation strings for a locale.
 
@@ -8819,7 +8819,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 getLocale(): Locale
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L31)
+Defined in: [sandkit/api/i18n.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L31)
 
 Returns the active locale code.
 
@@ -8841,7 +8841,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 hasTranslation(key: string, locale?: Locale): boolean
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L40)
+Defined in: [sandkit/api/i18n.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L40)
 
 Returns true when a translation exists for the key.
 
@@ -8877,7 +8877,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 setLocale(locale: Locale): Promise<void>
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L48)
+Defined in: [sandkit/api/i18n.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L48)
 
 Sets the active locale.
 
@@ -8907,7 +8907,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 getLanguages(): object[]
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L55)
+Defined in: [sandkit/api/i18n.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L55)
 
 Returns metadata for all known languages.
 
@@ -8929,7 +8929,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 getAvailableLocales(): Locale[]
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L62)
+Defined in: [sandkit/api/i18n.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L62)
 
 Returns locale codes that have registered translations.
 
@@ -8951,7 +8951,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 formatNumber(value: number, options?: I18nNumberFormatOptions): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L71)
+Defined in: [sandkit/api/i18n.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L71)
 
 Formats a number for the active locale.
 
@@ -8987,7 +8987,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 joinKey(...parts: string[]): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L79)
+Defined in: [sandkit/api/i18n.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L79)
 
 Joins key parts into a single translation key.
 
@@ -9015,7 +9015,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 key(...parts: string[]): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L85)
+Defined in: [sandkit/api/i18n.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L85)
 
 ##### Parameters
 
@@ -9045,7 +9045,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 getName(definition: object): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L93)
+Defined in: [sandkit/api/i18n.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L93)
 
 Returns the display name from a definition with nameKey or name.
 
@@ -9081,7 +9081,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 getDescription(definition: object): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L101)
+Defined in: [sandkit/api/i18n.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L101)
 
 Returns the description from a definition with descriptionKey or description.
 
@@ -9117,7 +9117,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 createTranslatable(key: string, fallback: string): object
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L110)
+Defined in: [sandkit/api/i18n.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L110)
 
 Creates a translatable string object with a fallback.
 
@@ -9169,7 +9169,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 translatable(key: string, fallback: string): object
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L116)
+Defined in: [sandkit/api/i18n.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L116)
 
 ##### Parameters
 
@@ -9221,7 +9221,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setGlobal(key: string, value: string | (() => string)): void
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L125)
+Defined in: [sandkit/api/i18n.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L125)
 
 Sets a global string or lazy resolver used in translations.
 
@@ -9257,7 +9257,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 getGlobal(key: string): string | undefined
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L133)
+Defined in: [sandkit/api/i18n.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L133)
 
 Returns a global translation helper value.
 
@@ -9287,7 +9287,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 removeGlobal(key: string): void
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L141)
+Defined in: [sandkit/api/i18n.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L141)
 
 Removes a global translation helper value.
 
@@ -9315,7 +9315,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 clearGlobal(key: string): void
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L147)
+Defined in: [sandkit/api/i18n.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L147)
 
 ##### Parameters
 
@@ -9345,7 +9345,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 getGlobals(): Record<string, string>
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L154)
+Defined in: [sandkit/api/i18n.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L154)
 
 Returns all global translation helper values.
 
@@ -9367,7 +9367,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n
 formatKeyForDisplay(keyCode: string): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/i18n.d.ts#L162)
+Defined in: [sandkit/api/i18n.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L162)
 
 Formats a key code for display in UI.
 
@@ -9400,7 +9400,7 @@ Main thread only.
 
 <p class="smt-member-path"><code>sandkit.api.input.InputBindingHandlers</code></p>
 
-Defined in: [sandkit/api/input.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L98)
+Defined in: [sandkit/api/input.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L98)
 
 Handlers invoked when a binding is pressed or released.
 
@@ -9412,7 +9412,7 @@ Handlers invoked when a binding is pressed or released.
 optional down?: () => void
 ```
 
-Defined in: [sandkit/api/input.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L100)
+Defined in: [sandkit/api/input.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L100)
 
 Called when the binding is pressed.
 
@@ -9426,7 +9426,7 @@ Called when the binding is pressed.
 optional up?: () => void
 ```
 
-Defined in: [sandkit/api/input.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L102)
+Defined in: [sandkit/api/input.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L102)
 
 Called when the binding is released.
 
@@ -9440,7 +9440,7 @@ Called when the binding is released.
 
 <p class="smt-member-path"><code>sandkit.api.input.InputBindingDefinition</code></p>
 
-Defined in: [sandkit/api/input.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L106)
+Defined in: [sandkit/api/input.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L106)
 
 Definition for a registered input binding.
 
@@ -9458,7 +9458,7 @@ Definition for a registered input binding.
 displayName: string
 ```
 
-Defined in: [sandkit/api/input.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L108)
+Defined in: [sandkit/api/input.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L108)
 
 Display name shown in settings.
 
@@ -9468,7 +9468,7 @@ Display name shown in settings.
 optional displayNameKey?: string
 ```
 
-Defined in: [sandkit/api/input.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L110)
+Defined in: [sandkit/api/input.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L110)
 
 i18n key for the display name (overrides displayName when set).
 
@@ -9478,7 +9478,7 @@ i18n key for the display name (overrides displayName when set).
 category: string
 ```
 
-Defined in: [sandkit/api/input.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L112)
+Defined in: [sandkit/api/input.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L112)
 
 Settings category for grouping.
 
@@ -9488,7 +9488,7 @@ Settings category for grouping.
 handlers: InputBindingHandlers
 ```
 
-Defined in: [sandkit/api/input.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L114)
+Defined in: [sandkit/api/input.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L114)
 
 Press and release handlers.
 
@@ -9502,7 +9502,7 @@ Press and release handlers.
 BindingId = LooseString<` ${KeyBinding} `>
 ```
 
-Defined in: [sandkit/api/input.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L77)
+Defined in: [sandkit/api/input.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L77)
 
 Binding id. Vanilla [KeyBindingEnum](api/sandkit.enums.KeyBinding.md) names autocomplete; custom ids are allowed.
 
@@ -9516,7 +9516,7 @@ Binding id. Vanilla [KeyBindingEnum](api/sandkit.enums.KeyBinding.md) names auto
 KeyCode = LooseString<"Shift" | "Alt" | "Control" | "Meta" | "ShiftLeft" | "ShiftRight" | "AltLeft" | "AltRight" | "ControlLeft" | "ControlRight" | "MetaLeft" | "MetaRight">
 ```
 
-Defined in: [sandkit/api/input.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L82)
+Defined in: [sandkit/api/input.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L82)
 
 KeyboardEvent.code, a modifier alias (`Shift`), or a chord (`Control+KeyC`).
 
@@ -9530,7 +9530,7 @@ KeyboardEvent.code, a modifier alias (`Shift`), or a chord (`Control+KeyC`).
 registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputBindingDefinition): BindingId
 ```
 
-Defined in: [sandkit/api/input.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L16)
+Defined in: [sandkit/api/input.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L16)
 
 Register a key binding and return its binding id.
 
@@ -9570,7 +9570,7 @@ The registered binding id.
 getMouseCellPosition(): object
 ```
 
-Defined in: [sandkit/api/input.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L22)
+Defined in: [sandkit/api/input.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L22)
 
 Return the mouse position in cell coordinates.
 
@@ -9602,7 +9602,7 @@ y: number
 getBoundKeys(bindingId: BindingId): KeyCode[]
 ```
 
-Defined in: [sandkit/api/input.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L31)
+Defined in: [sandkit/api/input.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L31)
 
 Return the keys currently bound to a binding id.
 
@@ -9632,7 +9632,7 @@ Session `input.keys` is keyed by `KeyboardEvent.code`. Modifier aliases
 getDisplayKey(bindingId: BindingId, defaultLabel?: string): string
 ```
 
-Defined in: [sandkit/api/input.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L39)
+Defined in: [sandkit/api/input.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L39)
 
 Return a display label for the bound key.
 
@@ -9666,7 +9666,7 @@ Human-readable key label for UI.
 triggerBinding(bindingId: BindingId): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L45)
+Defined in: [sandkit/api/input.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L45)
 
 Fire the binding down handler as if the key was pressed.
 
@@ -9692,7 +9692,7 @@ Registered binding id.
 pressBinding(bindingId: BindingId): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L51)
+Defined in: [sandkit/api/input.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L51)
 
 Fire the binding down handler without a matching release.
 
@@ -9718,7 +9718,7 @@ Registered binding id.
 releaseBinding(bindingId: BindingId): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L57)
+Defined in: [sandkit/api/input.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L57)
 
 Fire the binding up handler.
 
@@ -9744,7 +9744,7 @@ Registered binding id.
 resetMouseState(): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L60)
+Defined in: [sandkit/api/input.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L60)
 
 Clear internal mouse button state.
 
@@ -9762,7 +9762,7 @@ Clear internal mouse button state.
 isCtrlHeld(): boolean
 ```
 
-Defined in: [sandkit/api/input.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L66)
+Defined in: [sandkit/api/input.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L66)
 
 Return true when Ctrl is held.
 
@@ -9782,7 +9782,7 @@ True when the Ctrl modifier is down.
 isAltHeld(): boolean
 ```
 
-Defined in: [sandkit/api/input.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L72)
+Defined in: [sandkit/api/input.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L72)
 
 Return true when Alt is held.
 
@@ -9805,7 +9805,7 @@ Main thread only.
 
 <p class="smt-member-path"><code>sandkit.api.items.ItemDefinition</code></p>
 
-Defined in: [sandkit/api/items.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L10)
+Defined in: [sandkit/api/items.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L10)
 
 Definition for a mod-registered inventory item.
 
@@ -9833,7 +9833,7 @@ Definition for a mod-registered inventory item.
 optional handleAction?: (state: State, action: Action) => unknown
 ```
 
-Defined in: [sandkit/api/items.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L12)
+Defined in: [sandkit/api/items.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L12)
 
 Handles item use actions.
 
@@ -9857,7 +9857,7 @@ Handles item use actions.
 optional afterRender?: (state: State) => void
 ```
 
-Defined in: [sandkit/api/items.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L14)
+Defined in: [sandkit/api/items.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L14)
 
 Called after the item is rendered each frame.
 
@@ -9881,7 +9881,7 @@ Called after the item is rendered each frame.
 ItemId = ItemId | LooseString<never>
 ```
 
-Defined in: [sandkit/api/items.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L52)
+Defined in: [sandkit/api/items.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L52)
 
 Inventory item id.
 Built-in [ItemIdEnum](api/sandkit.enums.ItemId.md) values autocomplete; custom string ids are allowed.
@@ -9896,7 +9896,7 @@ Built-in [ItemIdEnum](api/sandkit.enums.ItemId.md) values autocomplete; custom s
 ItemType = ItemType | TaggedNumber<"itemType">
 ```
 
-Defined in: [sandkit/api/items.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L57)
+Defined in: [sandkit/api/items.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L57)
 
 Item category handle.
 Built-in [ItemTypeEnum](api/sandkit.enums.ItemType.md) values autocomplete.
@@ -9911,7 +9911,7 @@ Built-in [ItemTypeEnum](api/sandkit.enums.ItemType.md) values autocomplete.
 ModItem = unknown
 ```
 
-Defined in: [sandkit/api/items.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L59)
+Defined in: [sandkit/api/items.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L59)
 
 Runtime item instance (not yet typed in declarations).
 
@@ -9925,7 +9925,7 @@ Runtime item instance (not yet typed in declarations).
 register(definition: ItemDefinition): void
 ```
 
-Defined in: [sandkit/api/items.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L22)
+Defined in: [sandkit/api/items.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L22)
 
 Registers a new item definition.
 
@@ -9951,7 +9951,7 @@ Item id, handlers, and display metadata.
 updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
 ```
 
-Defined in: [sandkit/api/items.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L28)
+Defined in: [sandkit/api/items.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L28)
 
 Updates fields on an existing item definition.
 
@@ -9983,7 +9983,7 @@ Fields to merge into the definition.
 getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 ```
 
-Defined in: [sandkit/api/items.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L33)
+Defined in: [sandkit/api/items.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L33)
 
 Returns the item definition for an id, or undefined.
 
@@ -10009,7 +10009,7 @@ Registered item id.
 createFromId(itemId: ItemId): unknown
 ```
 
-Defined in: [sandkit/api/items.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L38)
+Defined in: [sandkit/api/items.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L38)
 
 Creates a runtime item instance from an id.
 
@@ -10035,7 +10035,7 @@ Registered item id.
 getActive(): ItemDefinition<unknown, unknown> | undefined
 ```
 
-Defined in: [sandkit/api/items.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L40)
+Defined in: [sandkit/api/items.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L40)
 
 Returns the item definition for the active hotbar slot.
 
@@ -10053,7 +10053,7 @@ Returns the item definition for the active hotbar slot.
 isActiveById(itemId: ItemId, itemType?: ItemType): boolean
 ```
 
-Defined in: [sandkit/api/items.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L46)
+Defined in: [sandkit/api/items.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L46)
 
 Returns true when the given item is the active hotbar item.
 
@@ -10093,7 +10093,7 @@ Main thread only.
 
 <p class="smt-member-path"><code>sandkit.api.lights.TemporaryLightHandle</code></p>
 
-Defined in: [sandkit/api/lights.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L75)
+Defined in: [sandkit/api/lights.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L75)
 
 Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createatworld).
 
@@ -10105,7 +10105,7 @@ Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.
 lightId: number | null
 ```
 
-Defined in: [sandkit/api/lights.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L77)
+Defined in: [sandkit/api/lights.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L77)
 
 Assigned temporary light id, or null when creation failed.
 
@@ -10115,7 +10115,7 @@ Assigned temporary light id, or null when creation failed.
 index: number | null
 ```
 
-Defined in: [sandkit/api/lights.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L82)
+Defined in: [sandkit/api/lights.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L82)
 
 ###### Deprecated
 
@@ -10131,7 +10131,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias on 
 
 <p class="smt-member-path"><code>sandkit.api.lights.PersistentLightOptions</code></p>
 
-Defined in: [sandkit/api/lights.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L89)
+Defined in: [sandkit/api/lights.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L89)
 
 Options for persistent world lights.
 
@@ -10149,7 +10149,7 @@ Options for persistent world lights.
 optional brightness?: number
 ```
 
-Defined in: [sandkit/api/lights.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L91)
+Defined in: [sandkit/api/lights.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L91)
 
 Light brightness multiplier.
 
@@ -10159,7 +10159,7 @@ Light brightness multiplier.
 optional size?: number
 ```
 
-Defined in: [sandkit/api/lights.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L93)
+Defined in: [sandkit/api/lights.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L93)
 
 Light radius in pixels.
 
@@ -10169,7 +10169,7 @@ Light radius in pixels.
 optional color?: [number, number, number, number]
 ```
 
-Defined in: [sandkit/api/lights.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L95)
+Defined in: [sandkit/api/lights.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L95)
 
 RGBA color components.
 
@@ -10183,7 +10183,7 @@ RGBA color components.
 TemporaryLightOptions = TemporaryLightOptions
 ```
 
-Defined in: [sandkit/api/lights.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L86)
+Defined in: [sandkit/api/lights.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L86)
 
 Options for temporary lights.
 
@@ -10197,7 +10197,7 @@ Options for temporary lights.
 PersistentLightHandle = unknown
 ```
 
-Defined in: [sandkit/api/lights.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L100)
+Defined in: [sandkit/api/lights.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L100)
 
 Handle returned from [persistent.createAtWorld](api/sandkit.api.lights.persistent.md#createatworld).
 
@@ -10225,7 +10225,7 @@ Lights that persist in the world save.
 createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions): unknown
 ```
 
-Defined in: [sandkit/api/lights.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L45)
+Defined in: [sandkit/api/lights.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L45)
 
 Create a persistent light at world coordinates.
 
@@ -10267,7 +10267,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.ligh
 removeAtWorld(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L54)
+Defined in: [sandkit/api/lights.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L54)
 
 Remove the persistent light at world coordinates.
 
@@ -10303,7 +10303,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.ligh
 fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L64)
+Defined in: [sandkit/api/lights.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L64)
 
 Fade out the persistent light at world coordinates over durationMs.
 
@@ -10345,7 +10345,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.ligh
 markDirty(): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L71)
+Defined in: [sandkit/api/lights.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L71)
 
 Mark persistent lights dirty so they are saved on the next flush.
 
@@ -10373,7 +10373,7 @@ Short-lived visual effect lights.
 createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
-Defined in: [sandkit/api/lights.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L18)
+Defined in: [sandkit/api/lights.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L18)
 
 Create a temporary light at world coordinates.
 
@@ -10415,7 +10415,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.ligh
 removeById(lightId: number): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/lights.d.ts#L26)
+Defined in: [sandkit/api/lights.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L26)
 
 Remove a temporary light by its id.
 
@@ -10445,7 +10445,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.ligh
 
 <p class="smt-member-path"><code>sandkit.api.maps.ArtifactLocation</code></p>
 
-Defined in: [sandkit/api/maps.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L33)
+Defined in: [sandkit/api/maps.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L33)
 
 Artifact location entry from [getArtifactLocations](#getartifactlocations).
 
@@ -10463,7 +10463,7 @@ Artifact location entry from [getArtifactLocations](#getartifactlocations).
 cellX: number
 ```
 
-Defined in: [sandkit/api/maps.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L34)
+Defined in: [sandkit/api/maps.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L34)
 
 ###### cellY
 
@@ -10471,7 +10471,7 @@ Defined in: [sandkit/api/maps.d.ts:34](https://github.com/sandustry-modding/Sand
 cellY: number
 ```
 
-Defined in: [sandkit/api/maps.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L35)
+Defined in: [sandkit/api/maps.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L35)
 
 ###### name
 
@@ -10479,7 +10479,7 @@ Defined in: [sandkit/api/maps.d.ts:35](https://github.com/sandustry-modding/Sand
 name: string
 ```
 
-Defined in: [sandkit/api/maps.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L36)
+Defined in: [sandkit/api/maps.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L36)
 
 ***
 
@@ -10487,7 +10487,7 @@ Defined in: [sandkit/api/maps.d.ts:36](https://github.com/sandustry-modding/Sand
 
 <p class="smt-member-path"><code>sandkit.api.maps.AvailableMapV1</code></p>
 
-Defined in: [sandkit/api/maps.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L41)
+Defined in: [sandkit/api/maps.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L41)
 
 Available map entry shape.
 
@@ -10505,7 +10505,7 @@ Available map entry shape.
 id: string
 ```
 
-Defined in: [sandkit/api/maps.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L43)
+Defined in: [sandkit/api/maps.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L43)
 
 Map identifier passed to [start](#start).
 
@@ -10515,7 +10515,7 @@ Map identifier passed to [start](#start).
 optional name?: string
 ```
 
-Defined in: [sandkit/api/maps.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L45)
+Defined in: [sandkit/api/maps.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L45)
 
 Display name or translation key.
 
@@ -10529,7 +10529,7 @@ Display name or translation key.
 getAvailable(): readonly Readonly<AvailableMapV1>[]
 ```
 
-Defined in: [sandkit/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L18)
+Defined in: [sandkit/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L18)
 
 Return maps the player can start.
 
@@ -10547,7 +10547,7 @@ readonly `Readonly`\<[`AvailableMapV1`](#availablemapv1)\>[]
 start(mapId: string): boolean
 ```
 
-Defined in: [sandkit/api/maps.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L23)
+Defined in: [sandkit/api/maps.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L23)
 
 Start a map by id. Return true when start succeeds.
 
@@ -10573,7 +10573,7 @@ Custom map identifier.
 getArtifactLocations(): readonly ArtifactLocation[]
 ```
 
-Defined in: [sandkit/api/maps.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L30)
+Defined in: [sandkit/api/maps.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L30)
 
 Return artifact marker locations for the active map.
 
@@ -10615,7 +10615,7 @@ Re-exports [ActiveMapV1](api/sandkit.api.maps.worker.md#activemapv1)
 AssetProviderV1 = AssetProviderV1
 ```
 
-Defined in: [sandkit/api/mods.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/mods.d.ts#L17)
+Defined in: [sandkit/api/mods.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L17)
 
 Asset provider entry shape.
 
@@ -10629,7 +10629,7 @@ Asset provider entry shape.
 getProviders(kind: string): readonly AssetProviderV1[]
 ```
 
-Defined in: [sandkit/api/mods.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/mods.d.ts#L15)
+Defined in: [sandkit/api/mods.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L15)
 
 Return asset providers registered for a kind string.
 
@@ -10659,7 +10659,7 @@ readonly [`AssetProviderV1`](api/sandkit.api.assets.md#assetproviderv1)[]
 PatternExcavateOptions = ExcavateOptions
 ```
 
-Defined in: [sandkit/api/patterns.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/patterns.d.ts#L31)
+Defined in: [sandkit/api/patterns.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L31)
 
 Options for pattern-based excavation. Same shape as [shared.api.world.ExcavateOptions](api/sandkit.api.grid.md#excavateoptions).
 
@@ -10673,7 +10673,7 @@ Options for pattern-based excavation. Same shape as [shared.api.world.ExcavateOp
 createCircle(size: number): number[][]
 ```
 
-Defined in: [sandkit/api/patterns.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/patterns.d.ts#L17)
+Defined in: [sandkit/api/patterns.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L17)
 
 Build a circular excavation pattern matrix for the given size.
 
@@ -10701,7 +10701,7 @@ Square matrix with `1` inside the circle and `0` outside.
 excavateAtCell(...args: [number, number, number[][], Vector2, number, ExcavateOptions]): void
 ```
 
-Defined in: [sandkit/api/patterns.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/patterns.d.ts#L28)
+Defined in: [sandkit/api/patterns.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L28)
 
 Excavate at a cell using a pattern matrix and output velocity.
 
@@ -10733,7 +10733,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pick
 
 <p class="smt-member-path"><code>sandkit.api.pickups.WorldItemLight</code></p>
 
-Defined in: sandkit/api/pickups.d.ts:21
+Defined in: [sandkit/api/pickups.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L21)
 
 Optional point light attached when spawning a pickup.
 
@@ -10745,7 +10745,7 @@ Optional point light attached when spawning a pickup.
 optional brightness?: number
 ```
 
-Defined in: sandkit/api/pickups.d.ts:23
+Defined in: [sandkit/api/pickups.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L23)
 
 Light brightness multiplier. Default 1.
 
@@ -10755,7 +10755,7 @@ Light brightness multiplier. Default 1.
 optional size?: number
 ```
 
-Defined in: sandkit/api/pickups.d.ts:25
+Defined in: [sandkit/api/pickups.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L25)
 
 Light radius in world pixels. Default 100.
 
@@ -10765,7 +10765,7 @@ Light radius in world pixels. Default 100.
 optional color?: [number, number, number] | [number, number, number, number]
 ```
 
-Defined in: sandkit/api/pickups.d.ts:27
+Defined in: [sandkit/api/pickups.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L27)
 
 RGB or RGBA color components in 0–1 range.
 
@@ -10775,7 +10775,7 @@ RGB or RGBA color components in 0–1 range.
 
 <p class="smt-member-path"><code>sandkit.api.pickups.WorldItem</code></p>
 
-Defined in: sandkit/api/pickups.d.ts:31
+Defined in: [sandkit/api/pickups.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L31)
 
 Active world pickup instance.
 
@@ -10787,7 +10787,7 @@ Active world pickup instance.
 id: number
 ```
 
-Defined in: sandkit/api/pickups.d.ts:32
+Defined in: [sandkit/api/pickups.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L32)
 
 ###### x
 
@@ -10795,7 +10795,7 @@ Defined in: sandkit/api/pickups.d.ts:32
 x: number
 ```
 
-Defined in: sandkit/api/pickups.d.ts:33
+Defined in: [sandkit/api/pickups.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L33)
 
 ###### y
 
@@ -10803,7 +10803,7 @@ Defined in: sandkit/api/pickups.d.ts:33
 y: number
 ```
 
-Defined in: sandkit/api/pickups.d.ts:34
+Defined in: [sandkit/api/pickups.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L34)
 
 ###### type
 
@@ -10811,7 +10811,7 @@ Defined in: sandkit/api/pickups.d.ts:34
 type: PickupType
 ```
 
-Defined in: sandkit/api/pickups.d.ts:35
+Defined in: [sandkit/api/pickups.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L35)
 
 ###### data
 
@@ -10819,7 +10819,7 @@ Defined in: sandkit/api/pickups.d.ts:35
 data: Record<string, unknown>
 ```
 
-Defined in: sandkit/api/pickups.d.ts:36
+Defined in: [sandkit/api/pickups.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L36)
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
@@ -10831,7 +10831,7 @@ Defined in: sandkit/api/pickups.d.ts:36
 PickupType = PickupType
 ```
 
-Defined in: sandkit/api/pickups.d.ts:12
+Defined in: [sandkit/api/pickups.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L12)
 
 Official pickup type discriminator.
 
@@ -10843,7 +10843,7 @@ Official pickup type discriminator.
 WorldItemType = PickupType
 ```
 
-Defined in: sandkit/api/pickups.d.ts:18
+Defined in: [sandkit/api/pickups.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L18)
 
 ##### Deprecated
 
@@ -10863,7 +10863,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem
 ```
 
-Defined in: sandkit/api/pickups.d.ts:50
+Defined in: [sandkit/api/pickups.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L50)
 
 Spawn a pickup at world position.
 
@@ -10919,7 +10919,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pick
 remove(pickup: WorldItem): void
 ```
 
-Defined in: sandkit/api/pickups.d.ts:58
+Defined in: [sandkit/api/pickups.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L58)
 
 Remove a pickup instance from the world.
 
@@ -10947,7 +10947,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pick
 destroy(pickup: WorldItem): void
 ```
 
-Defined in: sandkit/api/pickups.d.ts:64
+Defined in: [sandkit/api/pickups.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L64)
 
 ##### Parameters
 
@@ -10977,7 +10977,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 pickUp(pickup: WorldItem): boolean
 ```
 
-Defined in: sandkit/api/pickups.d.ts:73
+Defined in: [sandkit/api/pickups.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L73)
 
 Pick up a world item into inventory.
 
@@ -11009,7 +11009,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pick
 getAll(): WorldItem[]
 ```
 
-Defined in: sandkit/api/pickups.d.ts:80
+Defined in: [sandkit/api/pickups.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L80)
 
 Return all active pickups.
 
@@ -11031,7 +11031,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pick
 getById(pickupId: number): WorldItem | undefined
 ```
 
-Defined in: sandkit/api/pickups.d.ts:88
+Defined in: [sandkit/api/pickups.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L88)
 
 Return a pickup by numeric id.
 
@@ -11069,7 +11069,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipe
 
 <p class="smt-member-path"><code>sandkit.api.pipes.PipeVentCell</code></p>
 
-Defined in: sandkit/api/pipes.d.ts:49
+Defined in: [sandkit/api/pipes.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L49)
 
 Connected vent cell position.
 
@@ -11087,7 +11087,7 @@ Connected vent cell position.
 cellX: number
 ```
 
-Defined in: sandkit/api/pipes.d.ts:50
+Defined in: [sandkit/api/pipes.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L50)
 
 ###### cellY
 
@@ -11095,7 +11095,7 @@ Defined in: sandkit/api/pipes.d.ts:50
 cellY: number
 ```
 
-Defined in: sandkit/api/pipes.d.ts:51
+Defined in: [sandkit/api/pipes.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L51)
 
 ### Functions <!-- {docsify-ignore} -->
 
@@ -11107,7 +11107,7 @@ Defined in: sandkit/api/pipes.d.ts:51
 isAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: sandkit/api/pipes.d.ts:18
+Defined in: [sandkit/api/pipes.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L18)
 
 Return true when a pipe occupies the cell.
 
@@ -11135,7 +11135,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipe
 isEnabledAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: sandkit/api/pipes.d.ts:27
+Defined in: [sandkit/api/pipes.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L27)
 
 Return true when pipe flow is enabled at the cell.
 
@@ -11163,7 +11163,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipe
 getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[]
 ```
 
-Defined in: sandkit/api/pipes.d.ts:36
+Defined in: [sandkit/api/pipes.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L36)
 
 Return connected liquid vent cell positions for the pipe at a cell.
 
@@ -11191,7 +11191,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipe
 setEnabledAtCell(...args: [number, number, boolean]): void
 ```
 
-Defined in: sandkit/api/pipes.d.ts:46
+Defined in: [sandkit/api/pipes.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L46)
 
 Enable or disable pipe flow at a cell.
 
@@ -11228,7 +11228,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipe
 setPositionAtWorld(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L32)
+Defined in: [sandkit/api/player.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L32)
 
 Set the player world position.
 
@@ -11262,7 +11262,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 setWorldPosition(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L38)
+Defined in: [sandkit/api/player.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L38)
 
 ##### Parameters
 
@@ -11296,7 +11296,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setVelocity(velocityX: number, velocityY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L47)
+Defined in: [sandkit/api/player.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L47)
 
 Set the player velocity.
 
@@ -11332,7 +11332,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 setMovementSpeedMultiplier(multiplier: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L56)
+Defined in: [sandkit/api/player.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L56)
 
 Set the movement speed multiplier.
 
@@ -11363,7 +11363,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 setMovementMode(mode: "normal" | "hover"): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L65)
+Defined in: [sandkit/api/player.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L65)
 
 Set movement mode to normal or hover.
 
@@ -11395,7 +11395,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 isOnGround(): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L75)
+Defined in: [sandkit/api/player.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L75)
 
 Return true when the player is on ground.
 Tests solid cells 1 pixel below the hitbox. Do not use `player.onGround`
@@ -11421,7 +11421,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 teleportToGround(): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L82)
+Defined in: [sandkit/api/player.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L82)
 
 Move the player down until ground is found.
 
@@ -11443,7 +11443,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 isPositionClearAtWorld(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L92)
+Defined in: [sandkit/api/player.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L92)
 
 Return true when the world position has no collision.
 
@@ -11479,7 +11479,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 isWorldPositionClear(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L98)
+Defined in: [sandkit/api/player.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L98)
 
 ##### Parameters
 
@@ -11551,7 +11551,7 @@ Player building unlock helpers.
 unlockById(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L125)
+Defined in: [sandkit/api/player.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L125)
 
 Unlock a structure type for building.
 
@@ -11579,7 +11579,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 unlockByType(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L131)
+Defined in: [sandkit/api/player.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L131)
 
 ##### Parameters
 
@@ -11609,7 +11609,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 removeById(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L139)
+Defined in: [sandkit/api/player.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L139)
 
 Remove a structure unlock from the player.
 
@@ -11645,7 +11645,7 @@ Player inventory helpers.
 addById(itemId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L108)
+Defined in: [sandkit/api/player.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L108)
 
 Add an item to inventory by item id.
 
@@ -11673,7 +11673,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 addFromId(itemId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L114)
+Defined in: [sandkit/api/player.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L114)
 
 ##### Parameters
 
@@ -11703,7 +11703,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 
 <p class="smt-member-path"><code>sandkit.api.processing.WeightedRecipeOutput</code></p>
 
-Defined in: [sandkit/api/processing.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L30)
+Defined in: [sandkit/api/processing.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L30)
 
 Weighted element output entry shared by machine recipes.
 
@@ -11715,7 +11715,7 @@ Weighted element output entry shared by machine recipes.
 elementType: ElementType
 ```
 
-Defined in: [sandkit/api/processing.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L32)
+Defined in: [sandkit/api/processing.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L32)
 
 Output element type (1–255).
 
@@ -11725,7 +11725,7 @@ Output element type (1–255).
 chance: number
 ```
 
-Defined in: [sandkit/api/processing.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L34)
+Defined in: [sandkit/api/processing.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L34)
 
 Output probability from 0 to 1.
 
@@ -11735,7 +11735,7 @@ Output probability from 0 to 1.
 
 <p class="smt-member-path"><code>sandkit.api.processing.PlanterBoxRecipeDefinitionV1</code></p>
 
-Defined in: [sandkit/api/processing.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L38)
+Defined in: [sandkit/api/processing.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L38)
 
 Planter box grower recipe definition.
 
@@ -11747,7 +11747,7 @@ Planter box grower recipe definition.
 input: ElementType
 ```
 
-Defined in: [sandkit/api/processing.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L40)
+Defined in: [sandkit/api/processing.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L40)
 
 Input element type placed on the grower.
 
@@ -11757,7 +11757,7 @@ Input element type placed on the grower.
 output: ElementType
 ```
 
-Defined in: [sandkit/api/processing.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L42)
+Defined in: [sandkit/api/processing.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L42)
 
 Output element type produced by the grower.
 
@@ -11767,7 +11767,7 @@ Output element type produced by the grower.
 optional chance?: number
 ```
 
-Defined in: [sandkit/api/processing.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L44)
+Defined in: [sandkit/api/processing.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L44)
 
 Success chance from 0 to 1. Default 1.
 
@@ -11777,7 +11777,7 @@ Success chance from 0 to 1. Default 1.
 
 <p class="smt-member-path"><code>sandkit.api.processing.ShakerRecipeDefinitionV1</code></p>
 
-Defined in: [sandkit/api/processing.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L48)
+Defined in: [sandkit/api/processing.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L48)
 
 Shaker recipe definition.
 
@@ -11789,7 +11789,7 @@ Shaker recipe definition.
 input: ElementType
 ```
 
-Defined in: [sandkit/api/processing.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L50)
+Defined in: [sandkit/api/processing.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L50)
 
 Input element type dropped on the shaker.
 
@@ -11799,7 +11799,7 @@ Input element type dropped on the shaker.
 outputsAbove: WeightedRecipeOutput[]
 ```
 
-Defined in: [sandkit/api/processing.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L52)
+Defined in: [sandkit/api/processing.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L52)
 
 Weighted outputs ejected upward.
 
@@ -11809,7 +11809,7 @@ Weighted outputs ejected upward.
 outputsBelow: WeightedRecipeOutput[]
 ```
 
-Defined in: [sandkit/api/processing.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L54)
+Defined in: [sandkit/api/processing.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L54)
 
 Weighted outputs ejected downward.
 
@@ -11819,7 +11819,7 @@ Weighted outputs ejected downward.
 
 <p class="smt-member-path"><code>sandkit.api.processing.KineticPressRecipeDefinitionV1</code></p>
 
-Defined in: [sandkit/api/processing.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L58)
+Defined in: [sandkit/api/processing.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L58)
 
 Kinetic press recipe definition.
 
@@ -11831,7 +11831,7 @@ Kinetic press recipe definition.
 input: ElementType
 ```
 
-Defined in: [sandkit/api/processing.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L60)
+Defined in: [sandkit/api/processing.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L60)
 
 Input element type processed by the press.
 
@@ -11841,7 +11841,7 @@ Input element type processed by the press.
 minimumDownwardVelocity: number
 ```
 
-Defined in: [sandkit/api/processing.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L62)
+Defined in: [sandkit/api/processing.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L62)
 
 Minimum downward velocity required to trigger the press.
 
@@ -11851,7 +11851,7 @@ Minimum downward velocity required to trigger the press.
 outputs: WeightedRecipeOutput[]
 ```
 
-Defined in: [sandkit/api/processing.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L64)
+Defined in: [sandkit/api/processing.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L64)
 
 Weighted outputs produced by the press.
 
@@ -11865,7 +11865,7 @@ Weighted outputs produced by the press.
 registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/processing.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L15)
+Defined in: [sandkit/api/processing.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L15)
 
 Register a planter box grower recipe.
 
@@ -11891,7 +11891,7 @@ Grower input/output recipe.
 registerShaker(definition: ShakerRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/processing.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L21)
+Defined in: [sandkit/api/processing.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L21)
 
 Register a shaker recipe.
 
@@ -11917,7 +11917,7 @@ Shaker input and weighted outputs.
 registerKineticPress(definition: KineticPressRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/processing.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L27)
+Defined in: [sandkit/api/processing.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L27)
 
 Register a kinetic press recipe.
 
@@ -11943,7 +11943,7 @@ Press input, velocity threshold, and outputs.
 
 <p class="smt-member-path"><code>sandkit.api.progression.ProgressionCompletionRequestV1</code></p>
 
-Defined in: [sandkit/api/progression.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/progression.d.ts#L17)
+Defined in: [sandkit/api/progression.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L17)
 
 Progression completion request shape.
 
@@ -11961,7 +11961,7 @@ Progression completion request shape.
 id: string
 ```
 
-Defined in: [sandkit/api/progression.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/progression.d.ts#L19)
+Defined in: [sandkit/api/progression.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L19)
 
 Progression step or quest identifier.
 
@@ -11975,7 +11975,7 @@ Progression step or quest identifier.
 complete(request: ProgressionCompletionRequestV1): boolean
 ```
 
-Defined in: [sandkit/api/progression.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/progression.d.ts#L14)
+Defined in: [sandkit/api/progression.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L14)
 
 Mark a progression step complete. Return true when completion succeeds.
 
@@ -12001,7 +12001,7 @@ Progression id and optional metadata for the step.
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileDefinition</code></p>
 
-Defined in: [sandkit/api/projectiles.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L54)
+Defined in: [sandkit/api/projectiles.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L54)
 
 Mod-registered projectile definition.
 
@@ -12019,7 +12019,7 @@ Mod-registered projectile definition.
 id: string
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L55)
+Defined in: [sandkit/api/projectiles.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L55)
 
 ###### sprite
 
@@ -12027,7 +12027,7 @@ Defined in: [sandkit/api/projectiles.d.ts:55](https://github.com/sandustry-moddi
 sprite: object
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L56)
+Defined in: [sandkit/api/projectiles.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L56)
 
 ###### id
 
@@ -12047,7 +12047,7 @@ optional tint?: number
 getOptions: () => Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L61)
+Defined in: [sandkit/api/projectiles.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L61)
 
 Returns spawn-time physics and visual options.
 
@@ -12061,7 +12061,7 @@ Returns spawn-time physics and visual options.
 optional getModData?: (state: unknown, projectile: Projectile) => Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L63)
+Defined in: [sandkit/api/projectiles.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L63)
 
 Optional per-projectile mutable data factory.
 
@@ -12085,7 +12085,7 @@ Optional per-projectile mutable data factory.
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileBlueprint</code></p>
 
-Defined in: [sandkit/api/projectiles.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L68)
+Defined in: [sandkit/api/projectiles.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L68)
 
 Blueprint used to spawn a projectile.
 
@@ -12097,7 +12097,7 @@ Blueprint used to spawn a projectile.
 opts: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L69)
+Defined in: [sandkit/api/projectiles.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L69)
 
 ###### type
 
@@ -12105,7 +12105,7 @@ Defined in: [sandkit/api/projectiles.d.ts:69](https://github.com/sandustry-moddi
 type: unknown
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L70)
+Defined in: [sandkit/api/projectiles.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L70)
 
 ***
 
@@ -12113,7 +12113,7 @@ Defined in: [sandkit/api/projectiles.d.ts:70](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.Projectile</code></p>
 
-Defined in: [sandkit/api/projectiles.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L74)
+Defined in: [sandkit/api/projectiles.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L74)
 
 Active projectile instance.
 
@@ -12131,7 +12131,7 @@ Active projectile instance.
 id: number
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L75)
+Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L75)
 
 ###### x
 
@@ -12139,7 +12139,7 @@ Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-moddi
 x: number
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L76)
+Defined in: [sandkit/api/projectiles.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L76)
 
 ###### y
 
@@ -12147,7 +12147,7 @@ Defined in: [sandkit/api/projectiles.d.ts:76](https://github.com/sandustry-moddi
 y: number
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L77)
+Defined in: [sandkit/api/projectiles.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L77)
 
 ### Functions <!-- {docsify-ignore} -->
 
@@ -12159,7 +12159,7 @@ Defined in: [sandkit/api/projectiles.d.ts:77](https://github.com/sandustry-moddi
 register(definition: ProjectileDefinition): void
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L13)
+Defined in: [sandkit/api/projectiles.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L13)
 
 Register a projectile definition.
 
@@ -12185,7 +12185,7 @@ Projectile id, sprite, and runtime options factory.
 getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L19)
+Defined in: [sandkit/api/projectiles.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L19)
 
 Return a projectile definition by string id.
 
@@ -12211,7 +12211,7 @@ Registered projectile id.
 createBlueprintFromId(projectileId: string): ProjectileBlueprint
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L26)
+Defined in: [sandkit/api/projectiles.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L26)
 
 Build a spawn blueprint from a projectile string id.
 
@@ -12239,7 +12239,7 @@ Blueprint passed to [spawnAtWorld](#spawnatworld).
 getAll(): Projectile[]
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L29)
+Defined in: [sandkit/api/projectiles.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L29)
 
 Return all active projectiles.
 
@@ -12257,7 +12257,7 @@ Return all active projectiles.
 getById(projectileId: number): Projectile | undefined
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L35)
+Defined in: [sandkit/api/projectiles.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L35)
 
 Return a projectile by numeric id.
 
@@ -12283,7 +12283,7 @@ Runtime projectile id.
 remove(projectile: Projectile): void
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L41)
+Defined in: [sandkit/api/projectiles.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L41)
 
 Remove a projectile from the world.
 
@@ -12309,7 +12309,7 @@ Projectile instance to remove.
 spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: ProjectileBlueprint): Projectile
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/projectiles.d.ts#L51)
+Defined in: [sandkit/api/projectiles.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L51)
 
 Spawn a projectile at world position with angle and blueprint.
 
@@ -12359,7 +12359,7 @@ The spawned projectile instance.
 int(min: number, max: number): number
 ```
 
-Defined in: [sandkit/api/random.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/random.d.ts#L14)
+Defined in: [sandkit/api/random.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/random.d.ts#L14)
 
 Return a random integer in the inclusive range.
 
@@ -12391,7 +12391,7 @@ Maximum value (inclusive).
 float(min: number, max: number): number
 ```
 
-Defined in: [sandkit/api/random.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/random.d.ts#L20)
+Defined in: [sandkit/api/random.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/random.d.ts#L20)
 
 Return a random float in the inclusive range.
 
@@ -12427,7 +12427,7 @@ Maximum value (inclusive).
 castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistance: number): Vector2 & object | null
 ```
 
-Defined in: [sandkit/api/raycast.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/raycast.d.ts#L18)
+Defined in: [sandkit/api/raycast.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/raycast.d.ts#L18)
 
 Cast a ray from world position. Return hit point and distance, or null.
 
@@ -12471,7 +12471,7 @@ Maximum ray length in pixels.
 
 <p class="smt-member-path"><code>sandkit.api.reactions.ContactRecipeDefinitionV1</code></p>
 
-Defined in: [sandkit/api/reactions.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/reactions.d.ts#L18)
+Defined in: [sandkit/api/reactions.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L18)
 
 Contact reaction recipe definition.
 
@@ -12483,7 +12483,7 @@ Contact reaction recipe definition.
 inputA: ElementType
 ```
 
-Defined in: [sandkit/api/reactions.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/reactions.d.ts#L20)
+Defined in: [sandkit/api/reactions.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L20)
 
 First reacting element type.
 
@@ -12493,7 +12493,7 @@ First reacting element type.
 inputB: ElementType
 ```
 
-Defined in: [sandkit/api/reactions.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/reactions.d.ts#L22)
+Defined in: [sandkit/api/reactions.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L22)
 
 Second reacting element type.
 
@@ -12503,7 +12503,7 @@ Second reacting element type.
 outputA: ElementType | null
 ```
 
-Defined in: [sandkit/api/reactions.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/reactions.d.ts#L24)
+Defined in: [sandkit/api/reactions.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L24)
 
 Element type produced from input A, or null for no output.
 
@@ -12513,7 +12513,7 @@ Element type produced from input A, or null for no output.
 outputB: ElementType | null
 ```
 
-Defined in: [sandkit/api/reactions.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/reactions.d.ts#L26)
+Defined in: [sandkit/api/reactions.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L26)
 
 Element type produced from input B, or null for no output.
 
@@ -12523,7 +12523,7 @@ Element type produced from input B, or null for no output.
 optional orientation?: "any" | "stacked"
 ```
 
-Defined in: [sandkit/api/reactions.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/reactions.d.ts#L28)
+Defined in: [sandkit/api/reactions.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L28)
 
 Contact layout requirement. Default `"any"`.
 
@@ -12537,7 +12537,7 @@ Contact layout requirement. Default `"any"`.
 registerContact(definition: ContactRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/reactions.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/reactions.d.ts#L15)
+Defined in: [sandkit/api/reactions.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L15)
 
 Register a contact reaction between elements.
 
@@ -12567,7 +12567,7 @@ Contact recipe inputs, outputs, and orientation.
 getDrawPositionAtCell(...args: CellCoordinates): Vector2
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L16)
+Defined in: [sandkit/api/rendering.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L16)
 
 Return screen draw position for a grid cell.
 
@@ -12591,7 +12591,7 @@ Return screen draw position for a grid cell.
 getDrawPositionAtWorld(worldX: number, worldY: number): Vector2
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L24)
+Defined in: [sandkit/api/rendering.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L24)
 
 Return screen draw position for a world-space point.
 
@@ -12627,7 +12627,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.rend
 getGridMetrics(): object
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L26)
+Defined in: [sandkit/api/rendering.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L26)
 
 Return cell size and snap grid metrics.
 
@@ -12657,7 +12657,7 @@ snapGridCellSize: number
 getOverlayViewportSize(): object
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L28)
+Defined in: [sandkit/api/rendering.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L28)
 
 Return overlay viewport width and height in pixels.
 
@@ -12687,7 +12687,7 @@ height: number
 withOverlayContext<T>(callback: (context: CanvasRenderingContext2D) => T): T
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L33)
+Defined in: [sandkit/api/rendering.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L33)
 
 Run a callback with the overlay canvas context.
 
@@ -12723,7 +12723,7 @@ Receives the overlay 2D context; return value is passed through.
 collectFluxiteAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/resources.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/resources.d.ts#L16)
+Defined in: [sandkit/api/resources.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L16)
 
 Collect fluxite at the given cell.
 
@@ -12747,7 +12747,7 @@ Collect fluxite at the given cell.
 updateEnergy(amount: number, options?: object): void
 ```
 
-Defined in: [sandkit/api/resources.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/resources.d.ts#L22)
+Defined in: [sandkit/api/resources.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L22)
 
 Update stored energy by amount with optional UI deferral.
 
@@ -12785,7 +12785,7 @@ When `deferUi` is true, skip immediate UI refresh.
 getActive(): Scene
 ```
 
-Defined in: [sandkit/api/scene.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/scene.d.ts#L14)
+Defined in: [sandkit/api/scene.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/scene.d.ts#L14)
 
 Return the active scene.
 
@@ -12815,7 +12815,7 @@ Re-exports [Scene](api/sandkit.enums.Scene.md)
 nextTick(callback: () => void): void
 ```
 
-Defined in: [sandkit/api/schedule.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/schedule.d.ts#L13)
+Defined in: [sandkit/api/schedule.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/schedule.d.ts#L13)
 
 Run a callback on the next game tick.
 
@@ -12845,7 +12845,7 @@ Function invoked once on the next tick.
 FieldId = LooseString<never>
 ```
 
-Defined in: [sandkit/api/settings.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/settings.d.ts#L25)
+Defined in: [sandkit/api/settings.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L25)
 
 Settings field id. Any string is allowed.
 
@@ -12859,7 +12859,7 @@ Settings field id. Any string is allowed.
 ConfigValueV1 = string | number | boolean | null
 ```
 
-Defined in: [sandkit/api/settings.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/settings.d.ts#L28)
+Defined in: [sandkit/api/settings.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L28)
 
 Settings field value shape.
 
@@ -12873,7 +12873,7 @@ Settings field value shape.
 get(fieldId: string & object): ConfigValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/settings.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/settings.d.ts#L15)
+Defined in: [sandkit/api/settings.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L15)
 
 Return a settings field value by id.
 
@@ -12899,7 +12899,7 @@ Settings field identifier.
 getAll(): Readonly<Record<string, ConfigValueV1>>
 ```
 
-Defined in: [sandkit/api/settings.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/settings.d.ts#L17)
+Defined in: [sandkit/api/settings.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L17)
 
 Return all settings as a read-only map.
 
@@ -12917,7 +12917,7 @@ Return all settings as a read-only map.
 onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void
 ```
 
-Defined in: [sandkit/api/settings.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/settings.d.ts#L22)
+Defined in: [sandkit/api/settings.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L22)
 
 Subscribe to settings changes. Return an unsubscribe function.
 
@@ -12951,7 +12951,7 @@ Called with the full settings map after a change.
 SharedArray = Uint8Array | Uint16Array | Uint32Array | Int8Array | Int16Array | Int32Array | Float32Array | Float64Array
 ```
 
-Defined in: [shared/api/shared.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/shared.d.ts#L28)
+Defined in: [shared/api/shared.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L28)
 
 Typed array backing a shared buffer.
 
@@ -12968,7 +12968,7 @@ returns the matching `*Array` constructor for the configured type.
 SharedArrayType = "uint8" | "uint16" | "uint32" | "int8" | "int16" | "int32" | "float32" | "float64"
 ```
 
-Defined in: [shared/api/shared.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/shared.d.ts#L39)
+Defined in: [shared/api/shared.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L39)
 
 Discriminator for the underlying typed array kind.
 
@@ -12988,7 +12988,7 @@ Shared buffer ensure and lookup.
 ensure(key: string, config: object): SharedArray
 ```
 
-Defined in: [sandkit/api/shared.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/shared.d.ts#L21)
+Defined in: [sandkit/api/shared.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L21)
 
 Create or return a named shared buffer with type and length.
 
@@ -13028,7 +13028,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.shar
 create(key: string, config: object): SharedArray
 ```
 
-Defined in: [sandkit/api/shared.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/shared.d.ts#L27)
+Defined in: [sandkit/api/shared.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L27)
 
 ##### Parameters
 
@@ -13068,7 +13068,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 get(key: string): SharedArray | undefined
 ```
 
-Defined in: [shared/api/shared.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/shared.d.ts#L19)
+Defined in: [shared/api/shared.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L19)
 
 Look up a named shared buffer without creating it.
 
@@ -13108,7 +13108,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.shar
 StructureType = unknown
 ```
 
-Defined in: [sandkit/api/signals.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/signals.d.ts#L20)
+Defined in: [sandkit/api/signals.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L20)
 
 Structure type id or enum value.
 
@@ -13122,7 +13122,7 @@ Structure type id or enum value.
 Structure = unknown
 ```
 
-Defined in: [sandkit/api/signals.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/signals.d.ts#L22)
+Defined in: [sandkit/api/signals.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L22)
 
 Structure instance in the world.
 
@@ -13136,7 +13136,7 @@ Structure instance in the world.
 SignalTargetPayloadV1 = unknown
 ```
 
-Defined in: [sandkit/api/signals.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/signals.d.ts#L24)
+Defined in: [sandkit/api/signals.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L24)
 
 Payload delivered to a signal target handler.
 
@@ -13156,7 +13156,7 @@ Signal target registration for structure types.
 register(structureTypeOrId: unknown, apply: (structure: unknown, payload: unknown) => void): void
 ```
 
-Defined in: [sandkit/api/signals.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/signals.d.ts#L16)
+Defined in: [sandkit/api/signals.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L16)
 
 Register a handler when a signal targets a structure type.
 
@@ -13188,7 +13188,7 @@ Called when a signal reaches a matching structure.
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundHandle</code></p>
 
-Defined in: [sandkit/api/sound.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L75)
+Defined in: [sandkit/api/sound.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L75)
 
 Handle returned from a play call.
 
@@ -13200,7 +13200,7 @@ Handle returned from a play call.
 stop(): void
 ```
 
-Defined in: [sandkit/api/sound.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L77)
+Defined in: [sandkit/api/sound.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L77)
 
 Stop this sound instance.
 
@@ -13214,7 +13214,7 @@ Stop this sound instance.
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundLayer</code></p>
 
-Defined in: [sandkit/api/sound.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L81)
+Defined in: [sandkit/api/sound.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L81)
 
 One layer in a layered sound.
 
@@ -13232,7 +13232,7 @@ One layer in a layered sound.
 soundId: string
 ```
 
-Defined in: [sandkit/api/sound.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L83)
+Defined in: [sandkit/api/sound.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L83)
 
 Sound id for this layer.
 
@@ -13242,7 +13242,7 @@ Sound id for this layer.
 optional volume?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L85)
+Defined in: [sandkit/api/sound.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L85)
 
 Layer volume multiplier.
 
@@ -13252,7 +13252,7 @@ Layer volume multiplier.
 optional delay?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L87)
+Defined in: [sandkit/api/sound.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L87)
 
 Delay in milliseconds before this layer plays.
 
@@ -13262,7 +13262,7 @@ Delay in milliseconds before this layer plays.
 optional playbackRate?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L89)
+Defined in: [sandkit/api/sound.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L89)
 
 Playback rate for this layer.
 
@@ -13272,7 +13272,7 @@ Playback rate for this layer.
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundOptions</code></p>
 
-Defined in: [sandkit/api/sound.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L94)
+Defined in: [sandkit/api/sound.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L94)
 
 Options passed to sound play helpers.
 
@@ -13290,7 +13290,7 @@ Options passed to sound play helpers.
 optional volume?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L96)
+Defined in: [sandkit/api/sound.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L96)
 
 Volume multiplier (0–1 typical).
 
@@ -13300,7 +13300,7 @@ Volume multiplier (0–1 typical).
 optional playbackRate?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L98)
+Defined in: [sandkit/api/sound.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L98)
 
 Playback rate multiplier.
 
@@ -13310,7 +13310,7 @@ Playback rate multiplier.
 optional position?: object
 ```
 
-Defined in: [sandkit/api/sound.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L100)
+Defined in: [sandkit/api/sound.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L100)
 
 World position for distance attenuation.
 
@@ -13332,7 +13332,7 @@ y: number
 optional loop?: boolean
 ```
 
-Defined in: [sandkit/api/sound.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L102)
+Defined in: [sandkit/api/sound.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L102)
 
 When true, loop until stopped.
 
@@ -13342,7 +13342,7 @@ When true, loop until stopped.
 optional rateLimitKey?: string
 ```
 
-Defined in: [sandkit/api/sound.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L104)
+Defined in: [sandkit/api/sound.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L104)
 
 Key used with rateLimitMs to dedupe rapid replays.
 
@@ -13352,7 +13352,7 @@ Key used with rateLimitMs to dedupe rapid replays.
 optional rateLimitMs?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L106)
+Defined in: [sandkit/api/sound.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L106)
 
 Minimum ms between plays with the same rateLimitKey.
 
@@ -13362,7 +13362,7 @@ Minimum ms between plays with the same rateLimitKey.
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundLayersOptions</code></p>
 
-Defined in: [sandkit/api/sound.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L111)
+Defined in: [sandkit/api/sound.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L111)
 
 Shared options for [playLayers](#playlayers).
 
@@ -13374,7 +13374,7 @@ Shared options for [playLayers](#playlayers).
 optional position?: object
 ```
 
-Defined in: [sandkit/api/sound.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L113)
+Defined in: [sandkit/api/sound.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L113)
 
 World position applied to all layers.
 
@@ -13396,7 +13396,7 @@ y: number
 optional volume?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L115)
+Defined in: [sandkit/api/sound.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L115)
 
 Volume multiplier applied to all layers.
 
@@ -13406,7 +13406,7 @@ Volume multiplier applied to all layers.
 optional rateLimitKey?: string
 ```
 
-Defined in: [sandkit/api/sound.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L117)
+Defined in: [sandkit/api/sound.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L117)
 
 Key used with rateLimitMs to dedupe rapid replays.
 
@@ -13416,7 +13416,7 @@ Key used with rateLimitMs to dedupe rapid replays.
 optional rateLimitMs?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L119)
+Defined in: [sandkit/api/sound.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L119)
 
 Minimum ms between plays with the same rateLimitKey.
 
@@ -13430,7 +13430,7 @@ Minimum ms between plays with the same rateLimitKey.
 play(soundId: string, options?: SoundOptions): SoundHandle
 ```
 
-Defined in: [sandkit/api/sound.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L16)
+Defined in: [sandkit/api/sound.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L16)
 
 Play a sound by id with optional options.
 
@@ -13466,7 +13466,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.soun
 playActive(soundId: string, options?: SoundOptions): SoundHandle
 ```
 
-Defined in: [sandkit/api/sound.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L25)
+Defined in: [sandkit/api/sound.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L25)
 
 Play a sound on the active sound channel.
 
@@ -13502,7 +13502,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.soun
 playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[]
 ```
 
-Defined in: [sandkit/api/sound.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L34)
+Defined in: [sandkit/api/sound.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L34)
 
 Play multiple sound layers with shared options.
 
@@ -13538,7 +13538,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.soun
 calculateDistanceOptionsAtWorld(worldX: number, worldY: number, baseVolume?: number): SoundOptions
 ```
 
-Defined in: [sandkit/api/sound.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L44)
+Defined in: [sandkit/api/sound.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L44)
 
 Build distance-based volume options for a world position.
 
@@ -13580,7 +13580,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.soun
 stopBySoundId(soundId: string): void
 ```
 
-Defined in: [sandkit/api/sound.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L52)
+Defined in: [sandkit/api/sound.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L52)
 
 Stop a sound by id.
 
@@ -13608,7 +13608,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.soun
 stopById(soundId: string): void
 ```
 
-Defined in: [sandkit/api/sound.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L58)
+Defined in: [sandkit/api/sound.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L58)
 
 ##### Parameters
 
@@ -13638,7 +13638,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 stopActive(): void
 ```
 
-Defined in: [sandkit/api/sound.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L65)
+Defined in: [sandkit/api/sound.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L65)
 
 Stop the active sound channel.
 
@@ -13660,7 +13660,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.soun
 stopAll(): void
 ```
 
-Defined in: [sandkit/api/sound.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sound.d.ts#L72)
+Defined in: [sandkit/api/sound.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L72)
 
 Stop all playing sounds.
 
@@ -13682,7 +13682,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.soun
 
 <p class="smt-member-path"><code>sandkit.api.sprites.SpriteLoadOptions</code></p>
 
-Defined in: [sandkit/api/sprites.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L40)
+Defined in: [sandkit/api/sprites.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L40)
 
 Options for [load](#load) and [loadFromMod](#loadfrommod).
 
@@ -13700,7 +13700,7 @@ Options for [load](#load) and [loadFromMod](#loadfrommod).
 optional tint?: number
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L42)
+Defined in: [sandkit/api/sprites.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L42)
 
 Packed RGB tint applied after load.
 
@@ -13714,7 +13714,7 @@ Packed RGB tint applied after load.
 LoadedSprite = unknown
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L37)
+Defined in: [sandkit/api/sprites.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L37)
 
 Loaded sprite handle (runtime texture or display object).
 
@@ -13728,7 +13728,7 @@ Loaded sprite handle (runtime texture or display object).
 load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L15)
+Defined in: [sandkit/api/sprites.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L15)
 
 Load a sprite from a URL path.
 
@@ -13766,7 +13766,7 @@ Optional tint and load options.
 loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions): Promise<void>
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L22)
+Defined in: [sandkit/api/sprites.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L22)
 
 Load a sprite from the calling mod folder.
 
@@ -13804,7 +13804,7 @@ Optional tint and load options.
 getById(spriteId: string): unknown
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L27)
+Defined in: [sandkit/api/sprites.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L27)
 
 Return a loaded sprite by id.
 
@@ -13830,7 +13830,7 @@ Sprite id from [load](#load) or [loadFromMod](#loadfrommod).
 hideAllPlayerModSprites(): void
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L29)
+Defined in: [sandkit/api/sprites.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L29)
 
 Hide all player mod-attached sprites.
 
@@ -13848,7 +13848,7 @@ Hide all player mod-attached sprites.
 rotatePlayerModSprites(angle: number): void
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L34)
+Defined in: [sandkit/api/sprites.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L34)
 
 Rotate all player mod-attached sprites by angle.
 
@@ -13882,7 +13882,7 @@ Rotation in radians.
 ensure(modId: string): JsonObjectV1
 ```
 
-Defined in: [sandkit/api/storage.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/storage.d.ts#L15)
+Defined in: [sandkit/api/storage.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L15)
 
 Ensure storage exists for a mod id.
 
@@ -13908,7 +13908,7 @@ Mod identifier (typically `modinfo.id`).
 get(modId: string, key: string): JsonValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/storage.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/storage.d.ts#L21)
+Defined in: [sandkit/api/storage.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L21)
 
 Read a value from mod storage by key.
 
@@ -13940,7 +13940,7 @@ Storage key.
 set(modId: string, key: string, value: JsonValueV1): void
 ```
 
-Defined in: [sandkit/api/storage.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/storage.d.ts#L28)
+Defined in: [sandkit/api/storage.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L28)
 
 Write a value to mod storage by key.
 
@@ -13978,7 +13978,7 @@ JSON-serializable value.
 remove(modId: string, key: string): void
 ```
 
-Defined in: [sandkit/api/storage.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/storage.d.ts#L34)
+Defined in: [sandkit/api/storage.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L34)
 
 Remove a key from mod storage.
 
@@ -14016,7 +14016,7 @@ Local session storage without mod id scope.
 get(key: string): JsonValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/storage.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/storage.d.ts#L42)
+Defined in: [sandkit/api/storage.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L42)
 
 Read a local storage value by key.
 
@@ -14042,7 +14042,7 @@ Storage key.
 set(key: string, value: JsonValueV1): void
 ```
 
-Defined in: [sandkit/api/storage.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/storage.d.ts#L48)
+Defined in: [sandkit/api/storage.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L48)
 
 Write a local storage value by key.
 
@@ -14074,7 +14074,7 @@ JSON-serializable value.
 remove(key: string): void
 ```
 
-Defined in: [sandkit/api/storage.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/storage.d.ts#L53)
+Defined in: [sandkit/api/storage.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L53)
 
 Remove a local storage key.
 
@@ -14104,7 +14104,7 @@ Storage key.
 registerConveyorType(structureId: string, options?: object): void
 ```
 
-Defined in: [sandkit/api/structureBehaviors.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structureBehaviors.d.ts#L16)
+Defined in: [sandkit/api/structureBehaviors.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L16)
 
 Register conveyor behavior for a structure type.
 
@@ -14158,7 +14158,7 @@ Transport offset, velocity, distance, and run direction.
 registerLauncherType(definition: object): void
 ```
 
-Defined in: [sandkit/api/structureBehaviors.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structureBehaviors.d.ts#L21)
+Defined in: [sandkit/api/structureBehaviors.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L21)
 
 Register launcher behavior for up, left, and right launcher types.
 
@@ -14211,7 +14211,7 @@ Launcher type ids, velocities, and optional shared buffer key.
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBuildMode</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:315](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L315)
+Defined in: [sandkit/api/structures.d.ts:315](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L315)
 
 Build mode entry for a structure definition.
 
@@ -14223,7 +14223,7 @@ Build mode entry for a structure definition.
 type: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:316](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L316)
+Defined in: [sandkit/api/structures.d.ts:316](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L316)
 
 ###### directions?
 
@@ -14231,7 +14231,7 @@ Defined in: [sandkit/api/structures.d.ts:316](https://github.com/sandustry-moddi
 optional directions?: string[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L317)
+Defined in: [sandkit/api/structures.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L317)
 
 ***
 
@@ -14239,7 +14239,7 @@ Defined in: [sandkit/api/structures.d.ts:317](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureVariant</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:321](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L321)
+Defined in: [sandkit/api/structures.d.ts:321](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L321)
 
 Rotated variant entry for a structure definition.
 
@@ -14251,7 +14251,7 @@ Rotated variant entry for a structure definition.
 id: StructureRef
 ```
 
-Defined in: [sandkit/api/structures.d.ts:322](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L322)
+Defined in: [sandkit/api/structures.d.ts:322](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L322)
 
 ###### angles
 
@@ -14259,7 +14259,7 @@ Defined in: [sandkit/api/structures.d.ts:322](https://github.com/sandustry-moddi
 angles: number[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L323)
+Defined in: [sandkit/api/structures.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L323)
 
 ***
 
@@ -14267,7 +14267,7 @@ Defined in: [sandkit/api/structures.d.ts:323](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRender</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:327](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L327)
+Defined in: [sandkit/api/structures.d.ts:327](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L327)
 
 Render settings for a structure definition.
 
@@ -14279,7 +14279,7 @@ Render settings for a structure definition.
 optional imageName?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:328](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L328)
+Defined in: [sandkit/api/structures.d.ts:328](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L328)
 
 ###### size?
 
@@ -14287,7 +14287,7 @@ Defined in: [sandkit/api/structures.d.ts:328](https://github.com/sandustry-moddi
 optional size?: object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L329)
+Defined in: [sandkit/api/structures.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L329)
 
 ###### width
 
@@ -14307,7 +14307,7 @@ height: number
 optional offset?: object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:330](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L330)
+Defined in: [sandkit/api/structures.d.ts:330](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L330)
 
 ###### x
 
@@ -14327,7 +14327,7 @@ y: number
 
 <p class="smt-member-path"><code>sandkit.api.structures.SandkitStructureDefinition</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:334](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L334)
+Defined in: [sandkit/api/structures.d.ts:334](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L334)
 
 Full structure definition registered with the game.
 
@@ -14345,7 +14345,7 @@ Full structure definition registered with the game.
 id: string & object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L335)
+Defined in: [sandkit/api/structures.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L335)
 
 ###### nameKey?
 
@@ -14353,7 +14353,7 @@ Defined in: [sandkit/api/structures.d.ts:335](https://github.com/sandustry-moddi
 optional nameKey?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:336](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L336)
+Defined in: [sandkit/api/structures.d.ts:336](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L336)
 
 ###### descriptionKey?
 
@@ -14361,7 +14361,7 @@ Defined in: [sandkit/api/structures.d.ts:336](https://github.com/sandustry-moddi
 optional descriptionKey?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:337](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L337)
+Defined in: [sandkit/api/structures.d.ts:337](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L337)
 
 ###### categoryKey?
 
@@ -14369,7 +14369,7 @@ Defined in: [sandkit/api/structures.d.ts:337](https://github.com/sandustry-moddi
 optional categoryKey?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L338)
+Defined in: [sandkit/api/structures.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L338)
 
 ###### order?
 
@@ -14377,7 +14377,7 @@ Defined in: [sandkit/api/structures.d.ts:338](https://github.com/sandustry-moddi
 optional order?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L339)
+Defined in: [sandkit/api/structures.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L339)
 
 ###### buildModes?
 
@@ -14385,7 +14385,7 @@ Defined in: [sandkit/api/structures.d.ts:339](https://github.com/sandustry-moddi
 optional buildModes?: StructureBuildMode[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:340](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L340)
+Defined in: [sandkit/api/structures.d.ts:340](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L340)
 
 ###### shape?
 
@@ -14393,7 +14393,7 @@ Defined in: [sandkit/api/structures.d.ts:340](https://github.com/sandustry-moddi
 optional shape?: number[][]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:341](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L341)
+Defined in: [sandkit/api/structures.d.ts:341](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L341)
 
 ###### variants?
 
@@ -14401,7 +14401,7 @@ Defined in: [sandkit/api/structures.d.ts:341](https://github.com/sandustry-moddi
 optional variants?: StructureVariant[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:342](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L342)
+Defined in: [sandkit/api/structures.d.ts:342](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L342)
 
 ###### render?
 
@@ -14409,7 +14409,7 @@ Defined in: [sandkit/api/structures.d.ts:342](https://github.com/sandustry-moddi
 optional render?: StructureRender
 ```
 
-Defined in: [sandkit/api/structures.d.ts:343](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L343)
+Defined in: [sandkit/api/structures.d.ts:343](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L343)
 
 ###### defaultData?
 
@@ -14417,7 +14417,7 @@ Defined in: [sandkit/api/structures.d.ts:343](https://github.com/sandustry-moddi
 optional defaultData?: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/structures.d.ts:344](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L344)
+Defined in: [sandkit/api/structures.d.ts:344](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L344)
 
 ***
 
@@ -14425,7 +14425,7 @@ Defined in: [sandkit/api/structures.d.ts:344](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBuildOptions</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L349)
+Defined in: [sandkit/api/structures.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L349)
 
 Options passed to [buildAtCell](#buildatcell).
 
@@ -14441,7 +14441,7 @@ Options passed to [buildAtCell](#buildatcell).
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRemovalOptions</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:354](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L354)
+Defined in: [sandkit/api/structures.d.ts:354](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L354)
 
 Options passed to [removeAtCell](#removeatcell).
 
@@ -14453,7 +14453,7 @@ Options passed to [removeAtCell](#removeatcell).
 optional removeCells?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:356](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L356)
+Defined in: [sandkit/api/structures.d.ts:356](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L356)
 
 Also remove underlying terrain cells in the footprint.
 
@@ -14463,7 +14463,7 @@ Also remove underlying terrain cells in the footprint.
 optional skipVisuals?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L358)
+Defined in: [sandkit/api/structures.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L358)
 
 Skip visual teardown effects.
 
@@ -14473,7 +14473,7 @@ Skip visual teardown effects.
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBulkRemovalOptions</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:362](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L362)
+Defined in: [sandkit/api/structures.d.ts:362](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L362)
 
 Options passed to bulk structure removal helpers.
 
@@ -14485,7 +14485,7 @@ Options passed to bulk structure removal helpers.
 optional removeCells?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:363](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L363)
+Defined in: [sandkit/api/structures.d.ts:363](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L363)
 
 ###### skipVisuals?
 
@@ -14493,7 +14493,7 @@ Defined in: [sandkit/api/structures.d.ts:363](https://github.com/sandustry-moddi
 optional skipVisuals?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:364](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L364)
+Defined in: [sandkit/api/structures.d.ts:364](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L364)
 
 ###### preserveUnselectable?
 
@@ -14501,7 +14501,7 @@ Defined in: [sandkit/api/structures.d.ts:364](https://github.com/sandustry-moddi
 optional preserveUnselectable?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:366](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L366)
+Defined in: [sandkit/api/structures.d.ts:366](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L366)
 
 When set, only remove structures at these positions.
 
@@ -14511,7 +14511,7 @@ When set, only remove structures at these positions.
 optional onlyPositions?: Vector2[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L367)
+Defined in: [sandkit/api/structures.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L367)
 
 ***
 
@@ -14519,7 +14519,7 @@ Defined in: [sandkit/api/structures.d.ts:367](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureProcessingContext</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:375](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L375)
+Defined in: [sandkit/api/structures.d.ts:375](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L375)
 
 Context passed to structure processing callbacks.
 
@@ -14535,7 +14535,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
-Defined in: [sandkit/api/structures.d.ts:381](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L381)
+Defined in: [sandkit/api/structures.d.ts:381](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L381)
 
 Return the resolved element type at a cell, or null.
 
@@ -14559,7 +14559,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 getElementTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
-Defined in: [sandkit/api/structures.d.ts:387](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L387)
+Defined in: [sandkit/api/structures.d.ts:387](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L387)
 
 ###### Parameters
 
@@ -14585,7 +14585,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias in 
 isCellEmptyAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:394](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L394)
+Defined in: [sandkit/api/structures.d.ts:394](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L394)
 
 Return true when the cell has no element or terrain.
 
@@ -14609,7 +14609,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 isCellEmpty(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:400](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L400)
+Defined in: [sandkit/api/structures.d.ts:400](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L400)
 
 ###### Parameters
 
@@ -14635,7 +14635,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias in 
 commit(mutations: unknown): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:408](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L408)
+Defined in: [sandkit/api/structures.d.ts:408](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L408)
 
 Commit batched grid mutations from the processing callback.
 
@@ -14659,7 +14659,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 
 #### ~~StructureProcessorDefinitionV1~~
 
-Defined in: [sandkit/api/structures.d.ts:415](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L415)
+Defined in: [sandkit/api/structures.d.ts:415](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L415)
 
 ##### Deprecated
 
@@ -14677,7 +14677,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 intervalMs: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L417)
+Defined in: [sandkit/api/structures.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L417)
 
 Tick interval in milliseconds. Must be > 0.
 
@@ -14687,7 +14687,7 @@ Tick interval in milliseconds. Must be > 0.
 process: (structure: Structure, context: StructureProcessingContext) => void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:419](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L419)
+Defined in: [sandkit/api/structures.d.ts:419](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L419)
 
 Synchronous callback invoked for each structure instance.
 
@@ -14711,7 +14711,7 @@ Synchronous callback invoked for each structure instance.
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigIntegerField</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:428](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L428)
+Defined in: [sandkit/api/structures.d.ts:428](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L428)
 
 Integer placement field with optional bounds.
 
@@ -14723,7 +14723,7 @@ Integer placement field with optional bounds.
 type: "integer"
 ```
 
-Defined in: [sandkit/api/structures.d.ts:429](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L429)
+Defined in: [sandkit/api/structures.d.ts:429](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L429)
 
 ###### id
 
@@ -14731,7 +14731,7 @@ Defined in: [sandkit/api/structures.d.ts:429](https://github.com/sandustry-moddi
 id: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:430](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L430)
+Defined in: [sandkit/api/structures.d.ts:430](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L430)
 
 ###### labelKey
 
@@ -14739,7 +14739,7 @@ Defined in: [sandkit/api/structures.d.ts:430](https://github.com/sandustry-moddi
 labelKey: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:431](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L431)
+Defined in: [sandkit/api/structures.d.ts:431](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L431)
 
 ###### min?
 
@@ -14747,7 +14747,7 @@ Defined in: [sandkit/api/structures.d.ts:431](https://github.com/sandustry-moddi
 optional min?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:432](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L432)
+Defined in: [sandkit/api/structures.d.ts:432](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L432)
 
 ###### max?
 
@@ -14755,7 +14755,7 @@ Defined in: [sandkit/api/structures.d.ts:432](https://github.com/sandustry-moddi
 optional max?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:433](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L433)
+Defined in: [sandkit/api/structures.d.ts:433](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L433)
 
 ###### default?
 
@@ -14763,7 +14763,7 @@ Defined in: [sandkit/api/structures.d.ts:433](https://github.com/sandustry-moddi
 optional default?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:434](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L434)
+Defined in: [sandkit/api/structures.d.ts:434](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L434)
 
 ***
 
@@ -14771,7 +14771,7 @@ Defined in: [sandkit/api/structures.d.ts:434](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigChoiceField</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:438](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L438)
+Defined in: [sandkit/api/structures.d.ts:438](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L438)
 
 Choice placement field with labeled options.
 
@@ -14783,7 +14783,7 @@ Choice placement field with labeled options.
 type: "choice"
 ```
 
-Defined in: [sandkit/api/structures.d.ts:439](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L439)
+Defined in: [sandkit/api/structures.d.ts:439](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L439)
 
 ###### id
 
@@ -14791,7 +14791,7 @@ Defined in: [sandkit/api/structures.d.ts:439](https://github.com/sandustry-moddi
 id: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:440](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L440)
+Defined in: [sandkit/api/structures.d.ts:440](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L440)
 
 ###### labelKey
 
@@ -14799,7 +14799,7 @@ Defined in: [sandkit/api/structures.d.ts:440](https://github.com/sandustry-moddi
 labelKey: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L441)
+Defined in: [sandkit/api/structures.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L441)
 
 ###### options
 
@@ -14807,7 +14807,7 @@ Defined in: [sandkit/api/structures.d.ts:441](https://github.com/sandustry-moddi
 options: readonly object[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:442](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L442)
+Defined in: [sandkit/api/structures.d.ts:442](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L442)
 
 ***
 
@@ -14815,7 +14815,7 @@ Defined in: [sandkit/api/structures.d.ts:442](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigDefinition</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:449](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L449)
+Defined in: [sandkit/api/structures.d.ts:449](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L449)
 
 Placement rule definition for a structure type.
 
@@ -14827,7 +14827,7 @@ Placement rule definition for a structure type.
 structureId: string & object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:450](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L450)
+Defined in: [sandkit/api/structures.d.ts:450](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L450)
 
 ###### fields
 
@@ -14835,7 +14835,7 @@ Defined in: [sandkit/api/structures.d.ts:450](https://github.com/sandustry-moddi
 fields: PlacementConfigField[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:451](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L451)
+Defined in: [sandkit/api/structures.d.ts:451](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L451)
 
 ***
 
@@ -14843,7 +14843,7 @@ Defined in: [sandkit/api/structures.d.ts:451](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.WeightedRefineryRecipeDefinitionV1</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:462](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L462)
+Defined in: [sandkit/api/structures.d.ts:462](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L462)
 
 Weighted refinery recipe definition shape.
 
@@ -14855,7 +14855,7 @@ Weighted refinery recipe definition shape.
 input: ElementType
 ```
 
-Defined in: [sandkit/api/structures.d.ts:463](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L463)
+Defined in: [sandkit/api/structures.d.ts:463](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L463)
 
 ###### outputs
 
@@ -14863,7 +14863,7 @@ Defined in: [sandkit/api/structures.d.ts:463](https://github.com/sandustry-moddi
 outputs: WeightedRecipeOutput[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:464](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L464)
+Defined in: [sandkit/api/structures.d.ts:464](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L464)
 
 ***
 
@@ -14871,7 +14871,7 @@ Defined in: [sandkit/api/structures.d.ts:464](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureProcessingDefinitionV1</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:468](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L468)
+Defined in: [sandkit/api/structures.d.ts:468](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L468)
 
 Custom structure processing definition shape.
 
@@ -14883,7 +14883,7 @@ Custom structure processing definition shape.
 structureType: StructureRef
 ```
 
-Defined in: [sandkit/api/structures.d.ts:469](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L469)
+Defined in: [sandkit/api/structures.d.ts:469](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L469)
 
 ###### intervalMs
 
@@ -14891,7 +14891,7 @@ Defined in: [sandkit/api/structures.d.ts:469](https://github.com/sandustry-moddi
 intervalMs: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:470](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L470)
+Defined in: [sandkit/api/structures.d.ts:470](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L470)
 
 ###### process
 
@@ -14899,7 +14899,7 @@ Defined in: [sandkit/api/structures.d.ts:470](https://github.com/sandustry-moddi
 process: (structure: Structure, context: StructureProcessingContext) => void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:471](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L471)
+Defined in: [sandkit/api/structures.d.ts:471](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L471)
 
 ###### Parameters
 
@@ -14925,7 +14925,7 @@ Defined in: [sandkit/api/structures.d.ts:471](https://github.com/sandustry-moddi
 PlacementConfigField = PlacementConfigIntegerField | PlacementConfigChoiceField
 ```
 
-Defined in: [sandkit/api/structures.d.ts:423](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L423)
+Defined in: [sandkit/api/structures.d.ts:423](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L423)
 
 Placement hotbar field definition.
 
@@ -14939,7 +14939,7 @@ Placement hotbar field definition.
 PlanterBoxRecipeDefinitionV1 = PlanterBoxRecipeDefinitionV1
 ```
 
-Defined in: [sandkit/api/structures.d.ts:455](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L455)
+Defined in: [sandkit/api/structures.d.ts:455](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L455)
 
 Planter box recipe definition shape.
 
@@ -14953,7 +14953,7 @@ Planter box recipe definition shape.
 ShakerRecipeDefinitionV1 = ShakerRecipeDefinitionV1
 ```
 
-Defined in: [sandkit/api/structures.d.ts:457](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L457)
+Defined in: [sandkit/api/structures.d.ts:457](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L457)
 
 Shaker recipe definition shape.
 
@@ -14967,7 +14967,7 @@ Shaker recipe definition shape.
 KineticPressRecipeDefinitionV1 = KineticPressRecipeDefinitionV1
 ```
 
-Defined in: [sandkit/api/structures.d.ts:459](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L459)
+Defined in: [sandkit/api/structures.d.ts:459](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L459)
 
 Kinetic press recipe definition shape.
 
@@ -14981,7 +14981,7 @@ Kinetic press recipe definition shape.
 register(definition: SandkitStructureDefinition, options?: object): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L71)
+Defined in: [sandkit/api/structures.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L71)
 
 Register a new structure definition.
 
@@ -15019,7 +15019,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStructureDefinition>, options?: object): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L81)
+Defined in: [sandkit/api/structures.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L81)
 
 Patch fields on an existing structure definition.
 
@@ -15063,7 +15063,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 registerVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L91)
+Defined in: [sandkit/api/structures.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L91)
 
 Add a rotated variant to a base structure type.
 
@@ -15111,7 +15111,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L97)
+Defined in: [sandkit/api/structures.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L97)
 
 ##### Parameters
 
@@ -15157,7 +15157,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 registerPlacementConfig(definition: PlacementConfigDefinition): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L105)
+Defined in: [sandkit/api/structures.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L105)
 
 Register placement rules for a structure.
 
@@ -15187,7 +15187,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 getAvailableTypes(): Set<StructureRef>
 ```
 
-Defined in: [sandkit/api/structures.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L112)
+Defined in: [sandkit/api/structures.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L112)
 
 Return structure types available for building.
 
@@ -15207,7 +15207,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 getUnlockedTypes(): Set<StructureRef>
 ```
 
-Defined in: [sandkit/api/structures.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L118)
+Defined in: [sandkit/api/structures.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L118)
 
 ##### Returns
 
@@ -15231,7 +15231,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 isBlockedByPlayerAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L127)
+Defined in: [sandkit/api/structures.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L127)
 
 Return true when the player blocks building at the cell.
 
@@ -15259,7 +15259,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 isLauncherAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L136)
+Defined in: [sandkit/api/structures.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L136)
 
 Return true when a launcher structure is at the cell.
 
@@ -15287,7 +15287,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 isLockedByType(structureType: StructureRef): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L147)
+Defined in: [sandkit/api/structures.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L147)
 
 Return structure lock state for a type.
 
@@ -15318,7 +15318,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 isUnlockedByType(structureType: StructureRef): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L153)
+Defined in: [sandkit/api/structures.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L153)
 
 ##### Parameters
 
@@ -15348,7 +15348,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 mapValueToSpritesheetIndex(value: number, thresholds: number[]): number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L163)
+Defined in: [sandkit/api/structures.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L163)
 
 Map a numeric value through thresholds to a spritesheet index.
 
@@ -15386,7 +15386,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 buildAtCell(...args: number, number, [StructureRef, StructureBuildOptions]): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L174)
+Defined in: [sandkit/api/structures.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L174)
 
 Build a structure at a cell. Main-thread writes are deferred.
 
@@ -15412,7 +15412,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOptions]): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L180)
+Defined in: [sandkit/api/structures.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L180)
 
 ##### Parameters
 
@@ -15442,7 +15442,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 removeAtCell(...args: number, number, [StructureRemovalOptions]): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L190)
+Defined in: [sandkit/api/structures.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L190)
 
 Remove a structure at a cell. Main-thread writes are deferred.
 
@@ -15468,7 +15468,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L196)
+Defined in: [sandkit/api/structures.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L196)
 
 ##### Parameters
 
@@ -15498,7 +15498,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L208)
+Defined in: [sandkit/api/structures.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L208)
 
 Remove structures between two cells. Main-thread writes are deferred.
 
@@ -15550,7 +15550,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L214)
+Defined in: [sandkit/api/structures.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L214)
 
 ##### Parameters
 
@@ -15596,7 +15596,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L223)
+Defined in: [sandkit/api/structures.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L223)
 
 Remove structures at many cells. Main-thread writes are deferred.
 
@@ -15630,7 +15630,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:229](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L229)
+Defined in: [sandkit/api/structures.d.ts:229](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L229)
 
 ##### Parameters
 
@@ -15662,7 +15662,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:235](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L235)
+Defined in: [sandkit/api/structures.d.ts:235](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L235)
 
 ##### Parameters
 
@@ -15854,7 +15854,7 @@ Per-structure processing enablement and registration.
 register(id: string & object, definition: StructureProcessingDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L294)
+Defined in: [sandkit/api/structures.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L294)
 
 Register a custom processing definition by id.
 
@@ -15890,7 +15890,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 setEnabledAtCell(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L305)
+Defined in: [sandkit/api/structures.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L305)
 
 Enable or disable processing at a cell.
 
@@ -15918,7 +15918,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 setEnabledAt(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L311)
+Defined in: [sandkit/api/structures.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L311)
 
 ##### Parameters
 
@@ -15972,7 +15972,7 @@ Structure recipe registration by machine kind.
 register(id: "planterBox", definition: PlanterBoxRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L246)
+Defined in: [sandkit/api/structures.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L246)
 
 Register a planter box recipe.
 
@@ -16004,7 +16004,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 register(id: "shaker", definition: ShakerRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L255)
+Defined in: [sandkit/api/structures.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L255)
 
 Register a shaker recipe.
 
@@ -16036,7 +16036,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 register(id: "kineticPress", definition: KineticPressRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:264](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L264)
+Defined in: [sandkit/api/structures.d.ts:264](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L264)
 
 Register a kinetic press recipe.
 
@@ -16068,7 +16068,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 register(id: "condenser" | "steamDryer" | "synthesizer" | "snowmaker" | "smelter", definition: WeightedRefineryRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:273](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L273)
+Defined in: [sandkit/api/structures.d.ts:273](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L273)
 
 Register a weighted refinery machine recipe.
 
@@ -16108,7 +16108,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 
 <p class="smt-member-path"><code>sandkit.api.tech.TechDefinition</code></p>
 
-Defined in: [sandkit/api/tech.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L98)
+Defined in: [sandkit/api/tech.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L98)
 
 Tech definition shape.
 
@@ -16126,7 +16126,7 @@ Tech definition shape.
 optional nameKey?: string
 ```
 
-Defined in: [sandkit/api/tech.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L100)
+Defined in: [sandkit/api/tech.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L100)
 
 Display name translation key.
 
@@ -16136,7 +16136,7 @@ Display name translation key.
 optional descriptionKey?: string
 ```
 
-Defined in: [sandkit/api/tech.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L102)
+Defined in: [sandkit/api/tech.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L102)
 
 Description translation key.
 
@@ -16146,7 +16146,7 @@ Description translation key.
 
 <p class="smt-member-path"><code>sandkit.api.tech.TechGridPosition</code></p>
 
-Defined in: [sandkit/api/tech.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L107)
+Defined in: [sandkit/api/tech.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L107)
 
 Position on the tech grid.
 
@@ -16158,7 +16158,7 @@ Position on the tech grid.
 x: number
 ```
 
-Defined in: [sandkit/api/tech.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L108)
+Defined in: [sandkit/api/tech.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L108)
 
 ###### y
 
@@ -16166,7 +16166,7 @@ Defined in: [sandkit/api/tech.d.ts:108](https://github.com/sandustry-modding/San
 y: number
 ```
 
-Defined in: [sandkit/api/tech.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L109)
+Defined in: [sandkit/api/tech.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L109)
 
 ***
 
@@ -16174,7 +16174,7 @@ Defined in: [sandkit/api/tech.d.ts:109](https://github.com/sandustry-modding/San
 
 <p class="smt-member-path"><code>sandkit.api.tech.ConservatoryUnlocks</code></p>
 
-Defined in: [sandkit/api/tech.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L113)
+Defined in: [sandkit/api/tech.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L113)
 
 Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory.md#appendunlock).
 
@@ -16186,7 +16186,7 @@ Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory
 optional structures?: readonly string[]
 ```
 
-Defined in: [sandkit/api/tech.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L115)
+Defined in: [sandkit/api/tech.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L115)
 
 Structure ids to unlock.
 
@@ -16196,7 +16196,7 @@ Structure ids to unlock.
 optional items?: readonly string[]
 ```
 
-Defined in: [sandkit/api/tech.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L117)
+Defined in: [sandkit/api/tech.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L117)
 
 Item ids to unlock.
 
@@ -16210,7 +16210,7 @@ Item ids to unlock.
 TechGridId = Tech | LooseString<never> | TaggedNumber<"tech">
 ```
 
-Defined in: [sandkit/api/tech.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L95)
+Defined in: [sandkit/api/tech.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L95)
 
 Tech grid node id.
 Built-in [TechEnum](api/sandkit.enums.Tech.md) values autocomplete; custom string ids and tagged handles are allowed.
@@ -16225,7 +16225,7 @@ Built-in [TechEnum](api/sandkit.enums.Tech.md) values autocomplete; custom strin
 getDefinitionById(techId: TechGridId): TechDefinition | undefined
 ```
 
-Defined in: [sandkit/api/tech.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L18)
+Defined in: [sandkit/api/tech.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L18)
 
 Return a tech definition by string id.
 
@@ -16255,7 +16255,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L27)
+Defined in: [sandkit/api/tech.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L27)
 
 Patch fields on an existing tech definition.
 
@@ -16291,7 +16291,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 registerDefinition(techId: TechGridId, definition: TechDefinition): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L36)
+Defined in: [sandkit/api/tech.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L36)
 
 Register a new tech definition by id.
 
@@ -16325,7 +16325,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 addDefinition(techId: TechGridId, definition: TechDefinition): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L42)
+Defined in: [sandkit/api/tech.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L42)
 
 ##### Parameters
 
@@ -16359,7 +16359,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 registerNode(techId: TechGridId, definition: TechDefinition, options: object): TechGridPosition
 ```
 
-Defined in: [sandkit/api/tech.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L52)
+Defined in: [sandkit/api/tech.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L52)
 
 Register a tech node on the grid with parent and position options.
 
@@ -16407,7 +16407,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 isLockedById(techId: TechGridId): boolean
 ```
 
-Defined in: [sandkit/api/tech.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L60)
+Defined in: [sandkit/api/tech.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L60)
 
 Return true when a tech entry is locked.
 
@@ -16437,7 +16437,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 setLockedById(techId: TechGridId, locked: boolean): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L69)
+Defined in: [sandkit/api/tech.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L69)
 
 Set locked state for a tech entry by id.
 
@@ -16473,7 +16473,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 isResearchedById(techId: TechGridId): boolean
 ```
 
-Defined in: [sandkit/api/tech.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L77)
+Defined in: [sandkit/api/tech.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L77)
 
 Return true when a tech entry has been researched.
 
@@ -16509,7 +16509,7 @@ Conservatory unlock wiring for built-in tech nodes.
 appendUnlock(techId: TechGridId, unlocks: ConservatoryUnlocks): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tech.d.ts#L88)
+Defined in: [sandkit/api/tech.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L88)
 
 Append structure or item unlocks to a conservatory tech node.
 
@@ -16545,7 +16545,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainDefinition</code></p>
 
-Defined in: [sandkit/api/terrains.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L53)
+Defined in: [sandkit/api/terrains.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L53)
 
 Terrain definition shape with typed element interactions.
 
@@ -16575,7 +16575,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 optional interactions?: readonly Interaction[]
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L55)
+Defined in: [sandkit/api/terrains.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L55)
 
 Tooltip interactions shown for this terrain.
 
@@ -16589,7 +16589,7 @@ Tooltip interactions shown for this terrain.
 register(definition: TerrainDefinition): object
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L65)
+Defined in: [sandkit/api/terrains.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L65)
 
 Register a new terrain definition.
 
@@ -16627,7 +16627,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L74)
+Defined in: [sandkit/api/terrains.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L74)
 
 Patch fields on an existing terrain definition.
 
@@ -16663,7 +16663,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L85)
+Defined in: [sandkit/api/terrains.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L85)
 
 Create terrain at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -16689,7 +16689,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L91)
+Defined in: [sandkit/api/terrains.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L91)
 
 ##### Parameters
 
@@ -16719,7 +16719,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L102)
+Defined in: [sandkit/api/terrains.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L102)
 
 Replace terrain at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -16745,7 +16745,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L108)
+Defined in: [sandkit/api/terrains.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L108)
 
 ##### Parameters
 
@@ -16775,7 +16775,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L118)
+Defined in: [sandkit/api/terrains.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L118)
 
 Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -16801,7 +16801,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L124)
+Defined in: [sandkit/api/terrains.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L124)
 
 ##### Parameters
 
@@ -16831,7 +16831,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setHitPointsAtCell(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L134)
+Defined in: [sandkit/api/terrains.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L134)
 
 Set terrain hit points at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -16857,7 +16857,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 setHpAtCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L140)
+Defined in: [sandkit/api/terrains.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L140)
 
 ##### Parameters
 
@@ -16885,7 +16885,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setHpAtCellWhenIdle(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L146)
+Defined in: [sandkit/api/terrains.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L146)
 
 ##### Parameters
 
@@ -17039,7 +17039,7 @@ Re-exports [TerrainDataAtCell](api/sandkit.api.terrains.worker.md#terraindataatc
 getTimeMs(): number
 ```
 
-Defined in: [sandkit/api/time.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/time.d.ts#L10)
+Defined in: [sandkit/api/time.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/time.d.ts#L10)
 
 Return elapsed game time in milliseconds.
 
@@ -17057,7 +17057,7 @@ Return elapsed game time in milliseconds.
 getTick(): number
 ```
 
-Defined in: [sandkit/api/time.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/time.d.ts#L12)
+Defined in: [sandkit/api/time.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/time.d.ts#L12)
 
 Return the current simulation tick number.
 
@@ -17089,7 +17089,7 @@ Grabber tool size and state.
 setSize(size: number): void
 ```
 
-Defined in: [sandkit/api/tools.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tools.d.ts#L15)
+Defined in: [sandkit/api/tools.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L15)
 
 Set grabber radius size.
 
@@ -17115,7 +17115,7 @@ Grab radius in cells.
 getSize(): number
 ```
 
-Defined in: [sandkit/api/tools.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tools.d.ts#L21)
+Defined in: [sandkit/api/tools.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L21)
 
 Return current grabber radius size.
 
@@ -17135,7 +17135,7 @@ Grab radius in cells.
 isActive(): boolean
 ```
 
-Defined in: [sandkit/api/tools.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tools.d.ts#L27)
+Defined in: [sandkit/api/tools.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L27)
 
 Return true when grabber tool is active.
 
@@ -17155,7 +17155,7 @@ True when the grabber is the active tool.
 isLoaded(): boolean
 ```
 
-Defined in: [sandkit/api/tools.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/tools.d.ts#L33)
+Defined in: [sandkit/api/tools.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L33)
 
 Return true when grabber holds elements.
 
@@ -17175,7 +17175,7 @@ True when the grabber buffer is not empty.
 
 <p class="smt-member-path"><code>sandkit.api.triggers.MainTriggerDefinition</code></p>
 
-Defined in: [sandkit/api/triggers.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/triggers.d.ts#L17)
+Defined in: [sandkit/api/triggers.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L17)
 
 Main-thread trigger definition shape.
 
@@ -17193,7 +17193,7 @@ Main-thread trigger definition shape.
 interval: number
 ```
 
-Defined in: [sandkit/api/triggers.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/triggers.d.ts#L19)
+Defined in: [sandkit/api/triggers.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L19)
 
 Interval between callbacks in simulation ticks.
 
@@ -17203,7 +17203,7 @@ Interval between callbacks in simulation ticks.
 callback: () => void
 ```
 
-Defined in: [sandkit/api/triggers.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/triggers.d.ts#L21)
+Defined in: [sandkit/api/triggers.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L21)
 
 Called each time the trigger fires.
 
@@ -17221,7 +17221,7 @@ Called each time the trigger fires.
 register(triggerId: string, definition: MainTriggerDefinition): void
 ```
 
-Defined in: [sandkit/api/triggers.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/triggers.d.ts#L14)
+Defined in: [sandkit/api/triggers.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L14)
 
 Register a repeating trigger with interval and callback.
 
@@ -17258,7 +17258,7 @@ Interval in ticks and callback to invoke.
 
 <p class="smt-member-path"><code>sandkit.api.ui.TooltipMessageData</code></p>
 
-Defined in: [sandkit/api/ui.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L137)
+Defined in: [sandkit/api/ui.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L137)
 
 Message tooltip with localized body text.
 
@@ -17270,7 +17270,7 @@ Message tooltip with localized body text.
 type: "message"
 ```
 
-Defined in: [sandkit/api/ui.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L139)
+Defined in: [sandkit/api/ui.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L139)
 
 Discriminator for tooltip renderer selection.
 
@@ -17280,7 +17280,7 @@ Discriminator for tooltip renderer selection.
 text: LocalizedText
 ```
 
-Defined in: [sandkit/api/ui.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L141)
+Defined in: [sandkit/api/ui.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L141)
 
 Message body as localized text.
 
@@ -17290,7 +17290,7 @@ Message body as localized text.
 
 <p class="smt-member-path"><code>sandkit.api.ui.Focusable</code></p>
 
-Defined in: [sandkit/api/ui.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L145)
+Defined in: [sandkit/api/ui.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L145)
 
 Focusable element state from useFocusable.
 
@@ -17308,7 +17308,7 @@ Focusable element state from useFocusable.
 readonly ref: RefObject<T>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L147)
+Defined in: [sandkit/api/ui.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L147)
 
 Ref to attach to the focusable element.
 
@@ -17318,7 +17318,7 @@ Ref to attach to the focusable element.
 readonly focused: boolean
 ```
 
-Defined in: [sandkit/api/ui.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L149)
+Defined in: [sandkit/api/ui.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L149)
 
 True when the element has controller focus.
 
@@ -17328,7 +17328,7 @@ True when the element has controller focus.
 readonly focus: () => void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L151)
+Defined in: [sandkit/api/ui.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L151)
 
 Move controller focus to this element.
 
@@ -17342,7 +17342,7 @@ Move controller focus to this element.
 
 <p class="smt-member-path"><code>sandkit.api.ui.FocusOptions</code></p>
 
-Defined in: [sandkit/api/ui.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L155)
+Defined in: [sandkit/api/ui.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L155)
 
 Options for useFocusable registration.
 
@@ -17354,7 +17354,7 @@ Options for useFocusable registration.
 readonly id: string
 ```
 
-Defined in: [sandkit/api/ui.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L157)
+Defined in: [sandkit/api/ui.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L157)
 
 Unique id within the focus scope.
 
@@ -17364,7 +17364,7 @@ Unique id within the focus scope.
 readonly scope: string
 ```
 
-Defined in: [sandkit/api/ui.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L159)
+Defined in: [sandkit/api/ui.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L159)
 
 Focus scope id this element belongs to.
 
@@ -17374,7 +17374,7 @@ Focus scope id this element belongs to.
 readonly onActivate: (element?: HTMLElement) => void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L161)
+Defined in: [sandkit/api/ui.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L161)
 
 Called when the element is activated (A button / Enter).
 
@@ -17394,7 +17394,7 @@ Called when the element is activated (A button / Enter).
 readonly optional onFocus?: () => void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L163)
+Defined in: [sandkit/api/ui.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L163)
 
 Called when the element receives focus.
 
@@ -17408,7 +17408,7 @@ Called when the element receives focus.
 readonly optional disabled?: boolean
 ```
 
-Defined in: [sandkit/api/ui.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L165)
+Defined in: [sandkit/api/ui.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L165)
 
 When true, skip this element during navigation.
 
@@ -17418,7 +17418,7 @@ When true, skip this element during navigation.
 readonly optional x?: number
 ```
 
-Defined in: [sandkit/api/ui.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L167)
+Defined in: [sandkit/api/ui.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L167)
 
 Optional grid column for spatial navigation.
 
@@ -17428,7 +17428,7 @@ Optional grid column for spatial navigation.
 readonly optional y?: number
 ```
 
-Defined in: [sandkit/api/ui.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L169)
+Defined in: [sandkit/api/ui.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L169)
 
 Optional grid row for spatial navigation.
 
@@ -17438,7 +17438,7 @@ Optional grid row for spatial navigation.
 readonly optional neighbors?: Partial<Record<"left" | "right" | "up" | "down", string>>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L171)
+Defined in: [sandkit/api/ui.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L171)
 
 Neighbor ids for directional navigation.
 
@@ -17448,7 +17448,7 @@ Neighbor ids for directional navigation.
 readonly optional scrollIntoView?: boolean
 ```
 
-Defined in: [sandkit/api/ui.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L173)
+Defined in: [sandkit/api/ui.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L173)
 
 When true, scroll the element into view on focus.
 
@@ -17462,7 +17462,7 @@ When true, scroll the element into view on focus.
 OverlaySlot = LooseString<"hotbar" | "global">
 ```
 
-Defined in: [sandkit/api/ui.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L122)
+Defined in: [sandkit/api/ui.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L122)
 
 Overlay slot name. Known vanilla slots autocomplete; any string is allowed.
 
@@ -17476,7 +17476,7 @@ Overlay slot name. Known vanilla slots autocomplete; any string is allowed.
 ComponentId = ComponentId | LooseString<never>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L128)
+Defined in: [sandkit/api/ui.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L128)
 
 Registered UI component id.
 Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) values autocomplete; custom string ids are allowed.
@@ -17491,7 +17491,7 @@ Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) values autocomplete
 ComponentUpdateOptions = Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L131)
+Defined in: [sandkit/api/ui.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L131)
 
 Component-specific update payload passed to [update](#update).
 
@@ -17505,7 +17505,7 @@ Component-specific update payload passed to [update](#update).
 TooltipData = TooltipMessageData
 ```
 
-Defined in: [sandkit/api/ui.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L134)
+Defined in: [sandkit/api/ui.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L134)
 
 Tooltip payload shown near the cursor or UI target.
 
@@ -17519,7 +17519,7 @@ Tooltip payload shown near the cursor or UI target.
 update(componentId: ComponentId, options?: ComponentUpdateOptions): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L26)
+Defined in: [sandkit/api/ui.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L26)
 
 Update a registered UI component by id.
 
@@ -17551,7 +17551,7 @@ Component-specific update payload.
 openPauseMenu(): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L29)
+Defined in: [sandkit/api/ui.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L29)
 
 Open the pause menu.
 
@@ -17569,7 +17569,7 @@ Open the pause menu.
 showTooltip(data: TooltipMessageData): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L35)
+Defined in: [sandkit/api/ui.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L35)
 
 Show a tooltip with the given data.
 
@@ -17595,7 +17595,7 @@ Tooltip type and localized content.
 alert(message: LocalizedText, title?: LocalizedText): Promise<void>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L43)
+Defined in: [sandkit/api/ui.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L43)
 
 Show an alert dialog.
 
@@ -17629,7 +17629,7 @@ Promise that resolves when the user dismisses the dialog.
 confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L51)
+Defined in: [sandkit/api/ui.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L51)
 
 Show a confirm dialog.
 
@@ -17663,7 +17663,7 @@ Promise that resolves with true when confirmed, or false when cancelled.
 prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L62)
+Defined in: [sandkit/api/ui.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L62)
 
 Show a prompt dialog.
 
@@ -17715,7 +17715,7 @@ Promise that resolves with entered text, or null when cancelled.
 inject(componentId: ComponentId, component: ComponentType<Record<string, never>>): () => void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L70)
+Defined in: [sandkit/api/ui.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L70)
 
 Mount a React component by id.
 
@@ -17779,7 +17779,7 @@ Controller focus and scope navigation hooks.
 useFocusable<T *extends* HTMLElement = HTMLDivElement>(options: FocusOptions): Focusable<T>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L103)
+Defined in: [sandkit/api/ui.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L103)
 
 React hook for a focusable UI element in a scope.
 
@@ -17813,7 +17813,7 @@ Ref, focus state, and a focus helper.
 useFocusScope(options: object): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L109)
+Defined in: [sandkit/api/ui.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L109)
 
 React hook to register a focus scope with back handling.
 
@@ -17857,7 +17857,7 @@ Scope id, priority, default focus, and back handler.
 controllerFocusClass(focused: boolean): string
 ```
 
-Defined in: [sandkit/api/ui.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L116)
+Defined in: [sandkit/api/ui.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L116)
 
 Return CSS class for controller focus ring state.
 
@@ -17891,7 +17891,7 @@ Overlay slot registration and updates.
 register(slot: OverlaySlot, overlayId: string, render: () => ReactNode): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L80)
+Defined in: [sandkit/api/ui.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L80)
 
 Register a render function in an overlay slot.
 
@@ -17929,7 +17929,7 @@ Function that returns React content.
 unregister(slot: OverlaySlot, overlayId: string): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L87)
+Defined in: [sandkit/api/ui.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L87)
 
 Remove an overlay from a slot.
 
@@ -17961,7 +17961,7 @@ Overlay id passed to [register](#register).
 update(slot: OverlaySlot): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L93)
+Defined in: [sandkit/api/ui.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L93)
 
 Request a re-render for all overlays in a slot.
 
@@ -17987,7 +17987,7 @@ Slot name to refresh.
 
 <p class="smt-member-path"><code>sandkit.api.upgrades.UpgradeDefinition</code></p>
 
-Defined in: [sandkit/api/upgrades.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L49)
+Defined in: [sandkit/api/upgrades.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L49)
 
 Upgrade definition registered for an item.
 
@@ -18005,7 +18005,7 @@ Upgrade definition registered for an item.
 itemId: string
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L50)
+Defined in: [sandkit/api/upgrades.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L50)
 
 ###### itemNameKey?
 
@@ -18013,7 +18013,7 @@ Defined in: [sandkit/api/upgrades.d.ts:50](https://github.com/sandustry-modding/
 optional itemNameKey?: string
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L51)
+Defined in: [sandkit/api/upgrades.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L51)
 
 ###### categoryId?
 
@@ -18021,7 +18021,7 @@ Defined in: [sandkit/api/upgrades.d.ts:51](https://github.com/sandustry-modding/
 optional categoryId?: string
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L52)
+Defined in: [sandkit/api/upgrades.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L52)
 
 ###### upgrade
 
@@ -18029,7 +18029,7 @@ Defined in: [sandkit/api/upgrades.d.ts:52](https://github.com/sandustry-modding/
 upgrade: object
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L53)
+Defined in: [sandkit/api/upgrades.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L53)
 
 ###### id
 
@@ -18073,7 +18073,7 @@ optional oneOff?: boolean
 
 <p class="smt-member-path"><code>sandkit.api.upgrades.UpgradeCategoryDefinition</code></p>
 
-Defined in: [sandkit/api/upgrades.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L65)
+Defined in: [sandkit/api/upgrades.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L65)
 
 Upgrade category definition shape.
 
@@ -18091,7 +18091,7 @@ Upgrade category definition shape.
 id: string
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L67)
+Defined in: [sandkit/api/upgrades.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L67)
 
 Category identifier referenced by upgrades.
 
@@ -18101,7 +18101,7 @@ Category identifier referenced by upgrades.
 optional nameKey?: string
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L69)
+Defined in: [sandkit/api/upgrades.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L69)
 
 Display name translation key.
 
@@ -18115,7 +18115,7 @@ Display name translation key.
 registerCategory(definition: UpgradeCategoryDefinition): void
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L13)
+Defined in: [sandkit/api/upgrades.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L13)
 
 Register an upgrade category.
 
@@ -18141,7 +18141,7 @@ Category id and display metadata.
 register(definition: UpgradeDefinition): void
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L18)
+Defined in: [sandkit/api/upgrades.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L18)
 
 Register an upgrade definition.
 
@@ -18167,7 +18167,7 @@ Item id, upgrade id, costs, and level metadata.
 updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefinition>): void
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L25)
+Defined in: [sandkit/api/upgrades.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L25)
 
 Patch fields on an existing upgrade definition.
 
@@ -18205,7 +18205,7 @@ Fields to merge into the definition.
 getLevelById(itemId: string, upgradeId: string): number
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L31)
+Defined in: [sandkit/api/upgrades.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L31)
 
 Return the current purchased level for an upgrade.
 
@@ -18237,7 +18237,7 @@ Upgrade id within the item.
 getAvailableLevelById(itemId: string, upgradeId: string): number
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L37)
+Defined in: [sandkit/api/upgrades.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L37)
 
 Return the maximum available level for an upgrade.
 
@@ -18269,7 +18269,7 @@ Upgrade id within the item.
 setLevelById(itemId: string, upgradeId: string, level: number): void
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/upgrades.d.ts#L46)
+Defined in: [sandkit/api/upgrades.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L46)
 
 Set the purchased level for an upgrade.
 
@@ -18315,7 +18315,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.upgr
 getDistance(pointA: Vector2, pointB: Vector2): number
 ```
 
-Defined in: [sandkit/api/utils.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/utils.d.ts#L18)
+Defined in: [sandkit/api/utils.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L18)
 
 Return distance between two points.
 
@@ -18351,7 +18351,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.util
 getDirection(pointA: Vector2, pointB: Vector2): Vector2
 ```
 
-Defined in: [sandkit/api/utils.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/utils.d.ts#L27)
+Defined in: [sandkit/api/utils.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L27)
 
 Return normalized direction from point A to point B.
 
@@ -18387,7 +18387,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.util
 getAngle(pointA: Vector2, pointB: Vector2): number
 ```
 
-Defined in: [sandkit/api/utils.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/utils.d.ts#L36)
+Defined in: [sandkit/api/utils.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L36)
 
 Return angle in radians from point A to point B.
 
@@ -18423,7 +18423,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.util
 getCoordinatesBetweenCells(pointA: Vector2, pointB: Vector2): Vector2[]
 ```
 
-Defined in: [sandkit/api/utils.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/utils.d.ts#L45)
+Defined in: [sandkit/api/utils.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L45)
 
 Return grid cells along a line between two points.
 
@@ -18457,7 +18457,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.util
 getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 ```
 
-Defined in: [sandkit/api/utils.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/utils.d.ts#L51)
+Defined in: [sandkit/api/utils.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L51)
 
 ##### Parameters
 
@@ -18495,7 +18495,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setPostUpdateEnabled(enabled: boolean): void
 ```
 
-Defined in: [sandkit/api/workers.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/workers.d.ts#L13)
+Defined in: [sandkit/api/workers.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/workers.d.ts#L13)
 
 Enable or disable worker post-update callbacks.
 
@@ -18535,7 +18535,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 runWhenSimulationIdle(callback: () => void): void
 ```
 
-Defined in: [sandkit/api/world.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/world.d.ts#L64)
+Defined in: [sandkit/api/world.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L64)
 
 ##### Parameters
 
@@ -18564,7 +18564,7 @@ Use [grid.mutate](api/sandkit.api.grid.md#mutate) instead.
 redrawAroundCellWhenIdle(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/world.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/world.d.ts#L70)
+Defined in: [sandkit/api/world.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L70)
 
 ##### Parameters
 
@@ -18738,7 +18738,7 @@ Temporary lights live under [lights.temporary](api/sandkit.api.lights.temporary.
 createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
-Defined in: worker/api/effects.d.ts:25
+Defined in: [worker/api/effects.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L25)
 
 Spawn a named screen-space or world effect.
 
@@ -18784,7 +18784,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.ef
 createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
-Defined in: worker/api/effects.d.ts:36
+Defined in: [worker/api/effects.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L36)
 
 ##### Parameters
 
@@ -18868,7 +18868,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L70)
+Defined in: [worker/api/elements.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L70)
 
 Create an element at a cell immediately on this worker.
 
@@ -18896,7 +18896,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L83)
+Defined in: [worker/api/elements.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L83)
 
 Replace the element at a cell immediately on this worker.
 
@@ -18924,7 +18924,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L95)
+Defined in: [worker/api/elements.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L95)
 
 Remove the element at a cell immediately on this worker.
 
@@ -18952,7 +18952,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L109)
+Defined in: [worker/api/elements.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L109)
 
 Move an element between cells immediately on this worker.
 
@@ -19002,7 +19002,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
 ```
 
-Defined in: [worker/api/elements.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L125)
+Defined in: [worker/api/elements.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L125)
 
 Teleport an element between cells immediately on this worker.
 
@@ -19050,7 +19050,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L142)
+Defined in: [worker/api/elements.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L142)
 
 Swap elements between two cells immediately on this worker.
 
@@ -19098,7 +19098,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L153)
+Defined in: [worker/api/elements.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L153)
 
 ##### Parameters
 
@@ -19140,7 +19140,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 markMovementBlockedByIndex(elementIndex: number): void
 ```
 
-Defined in: [worker/api/elements.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L166)
+Defined in: [worker/api/elements.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L166)
 
 Mark an element index as movement-blocked for this tick.
 
@@ -19168,7 +19168,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.el
 markMovementBlockedByElementIndex(elementIndex: number): void
 ```
 
-Defined in: [worker/api/elements.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L172)
+Defined in: [worker/api/elements.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L172)
 
 ##### Parameters
 
@@ -19198,7 +19198,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setVelocityAtCell(...args: number, number, [Vector2]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L183)
+Defined in: [worker/api/elements.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L183)
 
 Set particle velocity at a cell immediately on this worker.
 
@@ -19228,7 +19228,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L195)
+Defined in: [worker/api/elements.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L195)
 
 Add velocity to a particle at a cell immediately on this worker.
 
@@ -19258,7 +19258,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 convertToParticleAtCell(...args: number, number, [Vector2]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L208)
+Defined in: [worker/api/elements.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L208)
 
 Convert a cell element to a particle immediately on this worker.
 
@@ -19288,7 +19288,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 convertFromParticleAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:218](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L218)
+Defined in: [worker/api/elements.d.ts:218](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L218)
 
 Convert a particle back to a solid element immediately on this worker.
 
@@ -19318,7 +19318,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:230](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L230)
+Defined in: [worker/api/elements.d.ts:230](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L230)
 
 Set a data field on the element at a cell immediately on this worker.
 
@@ -19348,7 +19348,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 refreshColorAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [worker/api/elements.d.ts:241](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L241)
+Defined in: [worker/api/elements.d.ts:241](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L241)
 
 Refresh the rendered color at a cell immediately on this worker.
 
@@ -19376,7 +19376,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 setPhysicsAtCell(...args: [number, number, number]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L251)
+Defined in: [worker/api/elements.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L251)
 
 Set the physics skip mode at a cell immediately on this worker.
 
@@ -19404,7 +19404,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 setDurationAtCell(...args: [number, number, number, object]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:263](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/elements.d.ts#L263)
+Defined in: [worker/api/elements.d.ts:263](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L263)
 
 Set element duration at a cell immediately on this worker.
 
@@ -19600,7 +19600,7 @@ Worker-thread `sandkit.api.events` — subscribe to and emit worker-scoped event
 
 <p class="smt-member-path"><code>sandkit.api.events.EventGuard (worker)</code></p>
 
-Defined in: worker/api/events.d.ts:39
+Defined in: [worker/api/events.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L39)
 
 Guard filter for worker events.
 
@@ -19612,7 +19612,7 @@ Guard filter for worker events.
 optional elementType?: ElementType
 ```
 
-Defined in: worker/api/events.d.ts:41
+Defined in: [worker/api/events.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L41)
 
 Required when subscribing to `element:moved`. Optional on emit.
 
@@ -19622,7 +19622,7 @@ Required when subscribing to `element:moved`. Optional on emit.
 optional terrainType?: number
 ```
 
-Defined in: worker/api/events.d.ts:43
+Defined in: [worker/api/events.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L43)
 
 Required when subscribing to `terrain:updated`. Optional on emit.
 
@@ -19632,7 +19632,7 @@ Required when subscribing to `terrain:updated`. Optional on emit.
 
 <p class="smt-member-path"><code>sandkit.api.events.EventEmitOptions (worker)</code></p>
 
-Defined in: worker/api/events.d.ts:55
+Defined in: [worker/api/events.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L55)
 
 Options for [emit](#emit).
 
@@ -19644,7 +19644,7 @@ Options for [emit](#emit).
 optional guard?: EventGuard
 ```
 
-Defined in: worker/api/events.d.ts:56
+Defined in: [worker/api/events.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L56)
 
 ***
 
@@ -19652,7 +19652,7 @@ Defined in: worker/api/events.d.ts:56
 
 <p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap (worker)</code></p>
 
-Defined in: worker/api/events.d.ts:60
+Defined in: [worker/api/events.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L60)
 
 Known worker event payloads. Unlisted ids still use `unknown`.
 
@@ -19664,7 +19664,7 @@ Known worker event payloads. Unlisted ids still use `unknown`.
 element:moved: Record<string, unknown>
 ```
 
-Defined in: worker/api/events.d.ts:61
+Defined in: [worker/api/events.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L61)
 
 ###### terrain:updated
 
@@ -19672,7 +19672,7 @@ Defined in: worker/api/events.d.ts:61
 terrain:updated: Record<string, unknown>
 ```
 
-Defined in: worker/api/events.d.ts:62
+Defined in: [worker/api/events.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L62)
 
 ###### ~~terrain:update~~
 
@@ -19680,7 +19680,7 @@ Defined in: worker/api/events.d.ts:62
 terrain:update: Record<string, unknown>
 ```
 
-Defined in: worker/api/events.d.ts:64
+Defined in: [worker/api/events.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L64)
 
 ###### Deprecated
 
@@ -19692,7 +19692,7 @@ Use `"terrain:updated"` instead.
 worker:update:post: Record<string, unknown>
 ```
 
-Defined in: worker/api/events.d.ts:65
+Defined in: [worker/api/events.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L65)
 
 ###### ~~update:post~~
 
@@ -19700,7 +19700,7 @@ Defined in: worker/api/events.d.ts:65
 update:post: Record<string, unknown>
 ```
 
-Defined in: worker/api/events.d.ts:67
+Defined in: [worker/api/events.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L67)
 
 ###### Deprecated
 
@@ -19716,7 +19716,7 @@ Use `"worker:update:post"` instead.
 EventOnOptions<K *extends* EventId> = K *extends* "element:moved" ? object : K *extends* "terrain:updated" | "terrain:update" ? object : object
 ```
 
-Defined in: worker/api/events.d.ts:47
+Defined in: [worker/api/events.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L47)
 
 Options for [on](#on).
 
@@ -19736,7 +19736,7 @@ Options for [on](#on).
 EventId = LooseString<keyof EventPayloadMap>
 ```
 
-Defined in: worker/api/events.d.ts:71
+Defined in: [worker/api/events.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L71)
 
 Known worker event names plus any custom string id.
 
@@ -19750,7 +19750,7 @@ Known worker event names plus any custom string id.
 EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
 ```
 
-Defined in: worker/api/events.d.ts:74
+Defined in: [worker/api/events.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L74)
 
 Event payload type for a given event id.
 
@@ -19770,7 +19770,7 @@ Event payload type for a given event id.
 on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void, options?: EventOnOptions<K>): () => void
 ```
 
-Defined in: worker/api/events.d.ts:18
+Defined in: [worker/api/events.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L18)
 
 Subscribe to a worker event. Returns an unsubscribe function.
 
@@ -19818,7 +19818,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.ev
 emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>, options?: EventEmitOptions): void
 ```
 
-Defined in: worker/api/events.d.ts:32
+Defined in: [worker/api/events.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L32)
 
 Emit a worker event with a payload to subscribers.
 
@@ -19878,7 +19878,7 @@ Worker burns are immediate. Main thread defers burns with `burnElementAtCell`.
 canBurnElementAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: worker/api/fire.d.ts:18
+Defined in: [worker/api/fire.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L18)
 
 Return true when the element at the cell can burn.
 
@@ -19906,7 +19906,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.fi
 burnElementAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: worker/api/fire.d.ts:28
+Defined in: [worker/api/fire.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L28)
 
 Burn the element at the cell immediately on this worker.
 
@@ -20026,7 +20026,7 @@ Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook point
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookContext (worker)</code></p>
 
-Defined in: worker/api/hooks.d.ts:39
+Defined in: [worker/api/hooks.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L39)
 
 Context passed to intercept hook callbacks.
 
@@ -20038,7 +20038,7 @@ Context passed to intercept hook callbacks.
 cancelled: boolean
 ```
 
-Defined in: worker/api/hooks.d.ts:43
+Defined in: [worker/api/hooks.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L43)
 
 True after [cancel](#cancel) was called on this context.
 
@@ -20050,7 +20050,7 @@ True after [cancel](#cancel) was called on this context.
 cancel(): void
 ```
 
-Defined in: worker/api/hooks.d.ts:41
+Defined in: [worker/api/hooks.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L41)
 
 When called, the intercepted action is skipped.
 
@@ -20064,7 +20064,7 @@ When called, the intercepted action is skipped.
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookGuard (worker)</code></p>
 
-Defined in: worker/api/hooks.d.ts:47
+Defined in: [worker/api/hooks.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L47)
 
 Guard filter for worker hook registration.
 
@@ -20076,7 +20076,7 @@ Guard filter for worker hook registration.
 optional elementType?: ElementType
 ```
 
-Defined in: worker/api/hooks.d.ts:49
+Defined in: [worker/api/hooks.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L49)
 
 Required for element-scoped intercept hooks and optional on emit.
 
@@ -20086,7 +20086,7 @@ Required for element-scoped intercept hooks and optional on emit.
 optional terrainType?: number
 ```
 
-Defined in: worker/api/hooks.d.ts:51
+Defined in: [worker/api/hooks.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L51)
 
 Required for terrain-scoped event guards; optional on emit.
 
@@ -20096,7 +20096,7 @@ Required for terrain-scoped event guards; optional on emit.
 
 <p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookOptions (worker)</code></p>
 
-Defined in: worker/api/hooks.d.ts:61
+Defined in: [worker/api/hooks.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L61)
 
 Options for [modify](#modify).
 
@@ -20108,7 +20108,7 @@ Options for [modify](#modify).
 optional guard?: HookGuard
 ```
 
-Defined in: worker/api/hooks.d.ts:62
+Defined in: [worker/api/hooks.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L62)
 
 ###### priority?
 
@@ -20116,7 +20116,7 @@ Defined in: worker/api/hooks.d.ts:62
 optional priority?: number
 ```
 
-Defined in: worker/api/hooks.d.ts:63
+Defined in: [worker/api/hooks.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L63)
 
 ***
 
@@ -20124,7 +20124,7 @@ Defined in: worker/api/hooks.d.ts:63
 
 <p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookMap (worker)</code></p>
 
-Defined in: worker/api/hooks.d.ts:87
+Defined in: [worker/api/hooks.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L87)
 
 Intercept hook argument shapes keyed by hook id.
 
@@ -20136,7 +20136,7 @@ Intercept hook argument shapes keyed by hook id.
 cell:process: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:88
+Defined in: [worker/api/hooks.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L88)
 
 ###### element:update
 
@@ -20144,7 +20144,7 @@ Defined in: worker/api/hooks.d.ts:88
 element:update: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:89
+Defined in: [worker/api/hooks.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L89)
 
 ###### element:move
 
@@ -20152,7 +20152,7 @@ Defined in: worker/api/hooks.d.ts:89
 element:move: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:90
+Defined in: [worker/api/hooks.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L90)
 
 ###### element:move:blocked
 
@@ -20160,7 +20160,7 @@ Defined in: worker/api/hooks.d.ts:90
 element:move:blocked: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:91
+Defined in: [worker/api/hooks.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L91)
 
 ###### ~~element:blocked~~
 
@@ -20168,7 +20168,7 @@ Defined in: worker/api/hooks.d.ts:91
 element:blocked: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:93
+Defined in: [worker/api/hooks.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L93)
 
 ###### Deprecated
 
@@ -20180,7 +20180,7 @@ Use `"element:move:blocked"` instead.
 element:duration:expire: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:94
+Defined in: [worker/api/hooks.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L94)
 
 ###### ~~element:duration~~
 
@@ -20188,7 +20188,7 @@ Defined in: worker/api/hooks.d.ts:94
 element:duration: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:96
+Defined in: [worker/api/hooks.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L96)
 
 ###### Deprecated
 
@@ -20200,7 +20200,7 @@ Use `"element:duration:expire"` instead.
 fire:element:burn: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:97
+Defined in: [worker/api/hooks.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L97)
 
 ###### shaker:elementOn
 
@@ -20208,7 +20208,7 @@ Defined in: worker/api/hooks.d.ts:97
 shaker:elementOn: Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:98
+Defined in: [worker/api/hooks.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L98)
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
@@ -20220,7 +20220,7 @@ Defined in: worker/api/hooks.d.ts:98
 InterceptHookOptions<K *extends* InterceptHookId> = K *extends* ElementGuardedInterceptHookId ? object : object
 ```
 
-Defined in: worker/api/hooks.d.ts:55
+Defined in: [worker/api/hooks.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L55)
 
 Options for [intercept](#intercept).
 
@@ -20240,7 +20240,7 @@ Options for [intercept](#intercept).
 ElementGuardedInterceptHookId = "cell:process" | "element:update" | "element:move:blocked" | "element:blocked" | "element:duration:expire" | "element:duration"
 ```
 
-Defined in: worker/api/hooks.d.ts:67
+Defined in: [worker/api/hooks.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L67)
 
 Intercept hook ids with a required element guard.
 
@@ -20254,7 +20254,7 @@ Intercept hook ids with a required element guard.
 InterceptHookId = LooseString<ElementGuardedInterceptHookId | "element:move" | "fire:element:burn" | "shaker:elementOn">
 ```
 
-Defined in: worker/api/hooks.d.ts:76
+Defined in: [worker/api/hooks.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L76)
 
 Known worker intercept hook ids plus custom strings.
 
@@ -20268,7 +20268,7 @@ Known worker intercept hook ids plus custom strings.
 ModifyHookId = LooseString<string>
 ```
 
-Defined in: worker/api/hooks.d.ts:84
+Defined in: [worker/api/hooks.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L84)
 
 Known worker modify hook ids plus custom strings.
 
@@ -20282,7 +20282,7 @@ Known worker modify hook ids plus custom strings.
 ModifyHookMap = Record<string, unknown>
 ```
 
-Defined in: worker/api/hooks.d.ts:102
+Defined in: [worker/api/hooks.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L102)
 
 Modify hook argument shapes keyed by hook id. Unlisted ids use `unknown`.
 
@@ -20296,7 +20296,7 @@ Modify hook argument shapes keyed by hook id. Unlisted ids use `unknown`.
 InterceptHookArgs<K *extends* InterceptHookId> = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown
 ```
 
-Defined in: worker/api/hooks.d.ts:105
+Defined in: [worker/api/hooks.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L105)
 
 Intercept hook args for a given hook id.
 
@@ -20316,7 +20316,7 @@ Intercept hook args for a given hook id.
 ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof ModifyHookMap ? ModifyHookMap[K] : unknown
 ```
 
-Defined in: worker/api/hooks.d.ts:109
+Defined in: [worker/api/hooks.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L109)
 
 Modify hook args for a given hook id.
 
@@ -20336,7 +20336,7 @@ Modify hook args for a given hook id.
 intercept<K *extends* InterceptHookId>(hookId: K, callback: (args: InterceptHookArgs<K>, context: HookContext) => void, options?: InterceptHookOptions<K>): () => void
 ```
 
-Defined in: worker/api/hooks.d.ts:18
+Defined in: [worker/api/hooks.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L18)
 
 Register an intercept hook on this worker. Returns an unsubscribe function.
 
@@ -20384,7 +20384,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.ho
 modify<K *extends* ModifyHookId>(hookId: K, callback: (args: ModifyHookArgs<K>) => void, options?: ModifyHookOptions): () => void
 ```
 
-Defined in: worker/api/hooks.d.ts:32
+Defined in: [worker/api/hooks.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L32)
 
 Register a modifier hook on this worker. Returns an unsubscribe function.
 
@@ -20452,7 +20452,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.li
 
 <p class="smt-member-path"><code>sandkit.api.lights.temporary.TemporaryLightHandle (worker)</code></p>
 
-Defined in: worker/api/lights.d.ts:19
+Defined in: [worker/api/lights.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L19)
 
 Handle returned by [createAtWorld](#createatworld).
 
@@ -20464,7 +20464,7 @@ Handle returned by [createAtWorld](#createatworld).
 lightId: number | null
 ```
 
-Defined in: worker/api/lights.d.ts:21
+Defined in: [worker/api/lights.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L21)
 
 Runtime light id, or null when the pool is full.
 
@@ -20474,7 +20474,7 @@ Runtime light id, or null when the pool is full.
 optional index?: number | null
 ```
 
-Defined in: worker/api/lights.d.ts:26
+Defined in: [worker/api/lights.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L26)
 
 ###### Deprecated
 
@@ -20494,7 +20494,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 TemporaryLightOptions = TemporaryLightOptions
 ```
 
-Defined in: worker/api/lights.d.ts:16
+Defined in: [worker/api/lights.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L16)
 
 Options for [createAtWorld](#createatworld).
 
@@ -20508,7 +20508,7 @@ Options for [createAtWorld](#createatworld).
 createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
-Defined in: worker/api/lights.d.ts:37
+Defined in: [worker/api/lights.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L37)
 
 Create a temporary light at world coordinates.
 
@@ -20563,7 +20563,7 @@ larger `sandkit.api` surface; do not assume parity.
 emitEvent<Payload = any>(eventId: string, payload: Payload): void
 ```
 
-Defined in: [worker/api/main.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/main.d.ts#L15)
+Defined in: [worker/api/main.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/main.d.ts#L15)
 
 Emit a custom event on the main thread.
 
@@ -20607,7 +20607,7 @@ Shared `sandkit.api.maps` base — active custom map metadata.
 
 <p class="smt-member-path"><code>sandkit.api.maps.ActiveMapV1 (worker)</code></p>
 
-Defined in: [shared/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L18)
+Defined in: [shared/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L18)
 
 Active custom map record (version 1 schema).
 
@@ -20627,7 +20627,7 @@ Shape varies by map. Known fields are optional; additional keys may exist.
 optional id?: string
 ```
 
-Defined in: [shared/api/maps.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L19)
+Defined in: [shared/api/maps.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L19)
 
 ###### deployment?
 
@@ -20635,7 +20635,7 @@ Defined in: [shared/api/maps.d.ts:19](https://github.com/sandustry-modding/Sandu
 optional deployment?: unknown
 ```
 
-Defined in: [shared/api/maps.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L20)
+Defined in: [shared/api/maps.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L20)
 
 ###### spawn?
 
@@ -20643,7 +20643,7 @@ Defined in: [shared/api/maps.d.ts:20](https://github.com/sandustry-modding/Sandu
 optional spawn?: unknown
 ```
 
-Defined in: [shared/api/maps.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L21)
+Defined in: [shared/api/maps.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L21)
 
 ###### topBounds?
 
@@ -20651,7 +20651,7 @@ Defined in: [shared/api/maps.d.ts:21](https://github.com/sandustry-modding/Sandu
 optional topBounds?: object
 ```
 
-Defined in: [shared/api/maps.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L22)
+Defined in: [shared/api/maps.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L22)
 
 ###### soft?
 
@@ -20671,7 +20671,7 @@ optional hard?: number
 optional parallax?: unknown
 ```
 
-Defined in: [shared/api/maps.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L26)
+Defined in: [shared/api/maps.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L26)
 
 ###### depthLight?
 
@@ -20679,7 +20679,7 @@ Defined in: [shared/api/maps.d.ts:26](https://github.com/sandustry-modding/Sandu
 optional depthLight?: unknown
 ```
 
-Defined in: [shared/api/maps.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L27)
+Defined in: [shared/api/maps.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L27)
 
 ### Functions <!-- {docsify-ignore} -->
 
@@ -20691,7 +20691,7 @@ Defined in: [shared/api/maps.d.ts:27](https://github.com/sandustry-modding/Sandu
 getActive(): Readonly<ActiveMapV1> | null
 ```
 
-Defined in: [shared/api/maps.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L11)
+Defined in: [shared/api/maps.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L11)
 
 Return the currently loaded custom map definition.
 
@@ -20721,7 +20721,7 @@ Shared `sandkit.api.player` base — player position and collision queries.
 getPositionAtWorld(): Vector2
 ```
 
-Defined in: [shared/api/player.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/player.d.ts#L15)
+Defined in: [shared/api/player.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L15)
 
 Return the player center position in world pixels.
 
@@ -20743,7 +20743,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 getWorldPosition(): Vector2
 ```
 
-Defined in: [shared/api/player.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/player.d.ts#L21)
+Defined in: [shared/api/player.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L21)
 
 ##### Returns
 
@@ -20767,7 +20767,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 isCollidingWithCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/player.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/player.d.ts#L31)
+Defined in: [shared/api/player.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L31)
 
 Return true when the player hitbox overlaps the cell.
 
@@ -20797,7 +20797,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 isWithinRadiusOfCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [shared/api/player.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/player.d.ts#L42)
+Defined in: [shared/api/player.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L42)
 
 Return true when the player is within `radius` cells of the point.
 
@@ -20869,7 +20869,7 @@ Named shared memory buffers for worker threads.
 require(key: string, config: object): SharedArray
 ```
 
-Defined in: [worker/api/shared.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/shared.d.ts#L28)
+Defined in: [worker/api/shared.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/shared.d.ts#L28)
 
 Attach to a named shared buffer on this worker.
 
@@ -20932,7 +20932,7 @@ Shared `sandkit.api.structures` base — structure lookup and mutation.
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureData (worker)</code></p>
 
-Defined in: [shared/api/structures.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L163)
+Defined in: [shared/api/structures.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L163)
 
 Per-structure custom data bag.
 
@@ -20950,7 +20950,7 @@ Per-structure custom data bag.
 optional elementId?: string | null
 ```
 
-Defined in: [shared/api/structures.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L164)
+Defined in: [shared/api/structures.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L164)
 
 ###### elementType?
 
@@ -20958,7 +20958,7 @@ Defined in: [shared/api/structures.d.ts:164](https://github.com/sandustry-moddin
 optional elementType?: TaggedNumber<"elementType"> | null
 ```
 
-Defined in: [shared/api/structures.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L165)
+Defined in: [shared/api/structures.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L165)
 
 ***
 
@@ -20966,7 +20966,7 @@ Defined in: [shared/api/structures.d.ts:165](https://github.com/sandustry-moddin
 
 <p class="smt-member-path"><code>sandkit.api.structures.Structure (worker)</code></p>
 
-Defined in: [shared/api/structures.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L170)
+Defined in: [shared/api/structures.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L170)
 
 Live structure instance in the world grid.
 
@@ -20984,7 +20984,7 @@ Live structure instance in the world grid.
 x: number
 ```
 
-Defined in: [shared/api/structures.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L171)
+Defined in: [shared/api/structures.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L171)
 
 ###### y
 
@@ -20992,7 +20992,7 @@ Defined in: [shared/api/structures.d.ts:171](https://github.com/sandustry-moddin
 y: number
 ```
 
-Defined in: [shared/api/structures.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L172)
+Defined in: [shared/api/structures.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L172)
 
 ###### trapped?
 
@@ -21000,7 +21000,7 @@ Defined in: [shared/api/structures.d.ts:172](https://github.com/sandustry-moddin
 optional trapped?: boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L173)
+Defined in: [shared/api/structures.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L173)
 
 ###### data?
 
@@ -21008,7 +21008,7 @@ Defined in: [shared/api/structures.d.ts:173](https://github.com/sandustry-moddin
 optional data?: StructureData
 ```
 
-Defined in: [shared/api/structures.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L174)
+Defined in: [shared/api/structures.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L174)
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
@@ -21020,7 +21020,7 @@ Defined in: [shared/api/structures.d.ts:174](https://github.com/sandustry-moddin
 StructureType = StructureType | TaggedNumber<"structureType">
 ```
 
-Defined in: [shared/api/structures.d.ts:179](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L179)
+Defined in: [shared/api/structures.d.ts:179](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L179)
 
 Numeric structure type handle. Built-in enum values autocomplete.
 
@@ -21034,7 +21034,7 @@ Numeric structure type handle. Built-in enum values autocomplete.
 StructureId = LooseString<never>
 ```
 
-Defined in: [shared/api/structures.d.ts:181](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L181)
+Defined in: [shared/api/structures.d.ts:181](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L181)
 
 Mod or built-in structure string id.
 
@@ -21048,7 +21048,7 @@ Mod or built-in structure string id.
 StructureRef = StructureType | StructureId
 ```
 
-Defined in: [shared/api/structures.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L183)
+Defined in: [shared/api/structures.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L183)
 
 Type handle or string id accepted by lookup helpers.
 
@@ -21062,7 +21062,7 @@ Type handle or string id accepted by lookup helpers.
 forEachOfType(structureTypeOrId: StructureRef, callback: (structure: Structure) => void): void
 ```
 
-Defined in: [shared/api/structures.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L18)
+Defined in: [shared/api/structures.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L18)
 
 Invoke a callback for every structure of the given type.
 
@@ -21098,7 +21098,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 getAtCell(...args: CellCoordinates): Structure | null
 ```
 
-Defined in: [shared/api/structures.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L27)
+Defined in: [shared/api/structures.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L27)
 
 Return the structure at a cell, or null when none.
 
@@ -21126,7 +21126,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 getDefinitionByType(structureType: StructureRef): any
 ```
 
-Defined in: [shared/api/structures.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L35)
+Defined in: [shared/api/structures.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L35)
 
 Return the mod-registered or built-in definition for a structure type.
 
@@ -21156,7 +21156,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 getTypeById(structureId: string & object): StructureType
 ```
 
-Defined in: [shared/api/structures.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L43)
+Defined in: [shared/api/structures.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L43)
 
 Map a structure string id to its runtime type value.
 
@@ -21184,7 +21184,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 getTypeFromId(structureId: string & object): StructureType
 ```
 
-Defined in: [shared/api/structures.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L49)
+Defined in: [shared/api/structures.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L49)
 
 ##### Parameters
 
@@ -21214,7 +21214,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 hasBuiltAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L58)
+Defined in: [shared/api/structures.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L58)
 
 Return true when a completed structure occupies the cell.
 
@@ -21242,7 +21242,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 isType(structure: Structure | null, structureId: string & object): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L67)
+Defined in: [shared/api/structures.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L67)
 
 Return true when the structure matches the given id.
 
@@ -21278,7 +21278,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 isTypeAtCell(...args: [number, number, string & object]): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L77)
+Defined in: [shared/api/structures.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L77)
 
 Return true when the cell structure matches the given id.
 
@@ -21306,7 +21306,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 setSpritesheetIndex(structure: Structure, index: number): void
 ```
 
-Defined in: [shared/api/structures.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L86)
+Defined in: [shared/api/structures.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L86)
 
 Set the spritesheet frame index on a structure instance.
 
@@ -21342,7 +21342,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 setSpritesheetIndexAtCell(...args: [number, number, number]): void
 ```
 
-Defined in: [shared/api/structures.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L96)
+Defined in: [shared/api/structures.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L96)
 
 Set spritesheet frame index for the structure at a cell.
 
@@ -21370,7 +21370,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 setSpritesheetIndexByValue(structure: Structure, value: number, thresholds: number[]): void
 ```
 
-Defined in: [shared/api/structures.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L106)
+Defined in: [shared/api/structures.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L106)
 
 Pick spritesheet index from a value and threshold table on a structure.
 
@@ -21412,7 +21412,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 setSpritesheetIndexByValueAtCell(...args: [number, number, number, number[]]): void
 ```
 
-Defined in: [shared/api/structures.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L117)
+Defined in: [shared/api/structures.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L117)
 
 Same as [setSpritesheetIndexByValue](#setspritesheetindexbyvalue) for the structure at a cell.
 
@@ -21440,7 +21440,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 update(structure: Structure, options?: object): void
 ```
 
-Defined in: [shared/api/structures.d.ts:126](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L126)
+Defined in: [shared/api/structures.d.ts:126](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L126)
 
 Push structure field changes to simulation.
 
@@ -21478,7 +21478,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 updateData(structure: Structure, partial: any, options?: object): void
 ```
 
-Defined in: [shared/api/structures.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L136)
+Defined in: [shared/api/structures.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L136)
 
 Merge partial data onto a structure.
 
@@ -21520,7 +21520,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 setData(structure: Structure, partial: any, options?: object): void
 ```
 
-Defined in: [shared/api/structures.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L142)
+Defined in: [shared/api/structures.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L142)
 
 ##### Parameters
 
@@ -21566,7 +21566,7 @@ Structure processing enablement checks.
 isEnabledAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L153)
+Defined in: [shared/api/structures.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L153)
 
 Return true when processing is enabled at the cell.
 
@@ -21592,7 +21592,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.st
 isEnabledAt(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L159)
+Defined in: [shared/api/structures.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L159)
 
 ##### Parameters
 
@@ -21631,7 +21631,7 @@ Worker-entry mutations are immediate. Main thread defers matching helpers in
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainDefinition (worker)</code></p>
 
-Defined in: [shared/api/terrains.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L20)
+Defined in: [shared/api/terrains.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L20)
 
 Terrain definition shape for register and [getDefinitionByType](#getdefinitionbytype).
 
@@ -21653,7 +21653,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 id: string
 ```
 
-Defined in: [shared/api/terrains.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L22)
+Defined in: [shared/api/terrains.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L22)
 
 Unique mod-scoped terrain id.
 
@@ -21663,7 +21663,7 @@ Unique mod-scoped terrain id.
 optional nameKey?: string
 ```
 
-Defined in: [shared/api/terrains.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L24)
+Defined in: [shared/api/terrains.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L24)
 
 i18n key for the terrain display name.
 
@@ -21673,7 +21673,7 @@ i18n key for the terrain display name.
 optional hp?: number
 ```
 
-Defined in: [shared/api/terrains.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L26)
+Defined in: [shared/api/terrains.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L26)
 
 Default terrain hit points.
 
@@ -21683,7 +21683,7 @@ Default terrain hit points.
 optional materialId?: number
 ```
 
-Defined in: [shared/api/terrains.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L28)
+Defined in: [shared/api/terrains.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L28)
 
 Material id used for rendering. Must be > obstacle breakpoint and < 150.
 
@@ -21693,7 +21693,7 @@ Material id used for rendering. Must be > obstacle breakpoint and < 150.
 optional metaColor?: number
 ```
 
-Defined in: [shared/api/terrains.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L30)
+Defined in: [shared/api/terrains.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L30)
 
 UI/meta color as 0xRRGGBB.
 
@@ -21703,7 +21703,7 @@ UI/meta color as 0xRRGGBB.
 optional colorHSL?: [number, number, number]
 ```
 
-Defined in: [shared/api/terrains.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L32)
+Defined in: [shared/api/terrains.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L32)
 
 Base terrain color as HSL components.
 
@@ -21713,7 +21713,7 @@ Base terrain color as HSL components.
 optional excavationRequirements?: readonly string[]
 ```
 
-Defined in: [shared/api/terrains.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L34)
+Defined in: [shared/api/terrains.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L34)
 
 Tool item ids required to excavate this terrain.
 
@@ -21723,7 +21723,7 @@ Tool item ids required to excavate this terrain.
 optional interactions?: readonly object[]
 ```
 
-Defined in: [shared/api/terrains.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L36)
+Defined in: [shared/api/terrains.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L36)
 
 Tooltip interactions shown for this terrain.
 
@@ -21733,7 +21733,7 @@ Tooltip interactions shown for this terrain.
 optional output?: object
 ```
 
-Defined in: [shared/api/terrains.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L38)
+Defined in: [shared/api/terrains.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L38)
 
 Default element drop when the terrain is destroyed.
 
@@ -21755,7 +21755,7 @@ chance: number
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainDataAtCell (worker)</code></p>
 
-Defined in: [shared/api/terrains.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L50)
+Defined in: [shared/api/terrains.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L50)
 
 Terrain cell data returned by [getDataAtCell](#getdataatcell).
 
@@ -21771,7 +21771,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 cellType: TerrainType
 ```
 
-Defined in: [shared/api/terrains.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L52)
+Defined in: [shared/api/terrains.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L52)
 
 Numeric terrain cell type.
 
@@ -21781,7 +21781,7 @@ Numeric terrain cell type.
 hitPoints: number | null
 ```
 
-Defined in: [shared/api/terrains.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L58)
+Defined in: [shared/api/terrains.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L58)
 
 Current hit points, or null when the terrain has no hp.
 
@@ -21795,7 +21795,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 optional hp?: number | null
 ```
 
-Defined in: [shared/api/terrains.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L63)
+Defined in: [shared/api/terrains.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L63)
 
 ###### Deprecated
 
@@ -21811,7 +21811,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainMutationOptions (worker)</code></p>
 
-Defined in: [shared/api/terrains.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L206)
+Defined in: [shared/api/terrains.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L206)
 
 Options for terrain create, replace, or remove calls.
 
@@ -21827,7 +21827,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 optional skipShadow?: boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L208)
+Defined in: [shared/api/terrains.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L208)
 
 Skip shadow updates around the changed cell.
 
@@ -21841,7 +21841,7 @@ Skip shadow updates around the changed cell.
 TerrainType = CellType | TaggedNumber<"terrainType">
 ```
 
-Defined in: [shared/api/terrains.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L216)
+Defined in: [shared/api/terrains.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L216)
 
 Numeric terrain / [CellTypeEnum](api/sandkit.enums.CellType.md) handle.
 
@@ -21859,7 +21859,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 TerrainId = LooseString<never>
 ```
 
-Defined in: [shared/api/terrains.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L223)
+Defined in: [shared/api/terrains.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L223)
 
 Mod or built-in terrain string id.
 
@@ -21877,7 +21877,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 TerrainRef = TerrainType | TerrainId
 ```
 
-Defined in: [shared/api/terrains.d.ts:230](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L230)
+Defined in: [shared/api/terrains.d.ts:230](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L230)
 
 Type handle or string id accepted by mutation helpers.
 
@@ -21895,7 +21895,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 getIdByType(terrainType: TerrainType): string & object
 ```
 
-Defined in: [shared/api/terrains.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L72)
+Defined in: [shared/api/terrains.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L72)
 
 Return the mod string id for a numeric terrain type.
 
@@ -21925,7 +21925,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 getTypeById(terrainId: string & object): TerrainType
 ```
 
-Defined in: [shared/api/terrains.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L80)
+Defined in: [shared/api/terrains.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L80)
 
 Resolve a terrain string id to a numeric cell type.
 
@@ -21953,7 +21953,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 getTypeFromId(terrainId: string & object): TerrainType
 ```
 
-Defined in: [shared/api/terrains.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L86)
+Defined in: [shared/api/terrains.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L86)
 
 ##### Parameters
 
@@ -21983,7 +21983,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 ```
 
-Defined in: [shared/api/terrains.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L94)
+Defined in: [shared/api/terrains.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L94)
 
 Look up the definition for a terrain type.
 
@@ -22013,7 +22013,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 getTypeAtCell(...args: CellCoordinates): TerrainType | null
 ```
 
-Defined in: [shared/api/terrains.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L103)
+Defined in: [shared/api/terrains.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L103)
 
 Return the terrain cell type at a cell, or null when none.
 
@@ -22041,7 +22041,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 ```
 
-Defined in: [shared/api/terrains.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L113)
+Defined in: [shared/api/terrains.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L113)
 
 Return terrain cell type and hit points at a cell.
 
@@ -22071,7 +22071,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 isAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L122)
+Defined in: [shared/api/terrains.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L122)
 
 Return true when any terrain occupies the cell.
 
@@ -22099,7 +22099,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 isTypeAtCell(...args: [number, number, string & object]): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L132)
+Defined in: [shared/api/terrains.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L132)
 
 Return true when the cell terrain matches the given id.
 
@@ -22127,7 +22127,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 isCellIdTerrain(cellId: CellId): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L140)
+Defined in: [shared/api/terrains.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L140)
 
 Return true when a packed cell id refers to terrain.
 
@@ -22157,7 +22157,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 damageAtCell(...args: [number, number, number]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L150)
+Defined in: [shared/api/terrains.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L150)
 
 Apply damage to terrain at a cell.
 
@@ -22185,7 +22185,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terr
 createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L161)
+Defined in: [shared/api/terrains.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L161)
 
 Place terrain at an empty cell. Worker-entry writes are immediate.
 
@@ -22213,7 +22213,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L172)
+Defined in: [shared/api/terrains.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L172)
 
 Replace existing terrain at a cell. Worker-entry writes are immediate.
 
@@ -22241,7 +22241,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L182)
+Defined in: [shared/api/terrains.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L182)
 
 Remove terrain from a cell. Worker-entry writes are immediate.
 
@@ -22269,7 +22269,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 setHitPointsAtCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L193)
+Defined in: [shared/api/terrains.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L193)
 
 Set terrain hit points at a cell. Worker-entry writes are immediate.
 
@@ -22297,7 +22297,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 setHpAtCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/terrains.d.ts#L199)
+Defined in: [shared/api/terrains.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L199)
 
 ##### Parameters
 
@@ -22335,7 +22335,7 @@ Main thread adds richer UI APIs on top of this shape.
 
 <p class="smt-member-path"><code>sandkit.api.ui.I18nTextKey (worker)</code></p>
 
-Defined in: [shared/api/ui.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L23)
+Defined in: [shared/api/ui.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L23)
 
 Translation key with optional parameter substitution.
 
@@ -22347,7 +22347,7 @@ Translation key with optional parameter substitution.
 key: string
 ```
 
-Defined in: [shared/api/ui.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L25)
+Defined in: [shared/api/ui.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L25)
 
 Namespaced translation key (for example `ui|save|save`).
 
@@ -22357,7 +22357,7 @@ Namespaced translation key (for example `ui|save|save`).
 optional params?: Record<string, string | number>
 ```
 
-Defined in: [shared/api/ui.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L27)
+Defined in: [shared/api/ui.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L27)
 
 Values merged into the translated string.
 
@@ -22367,7 +22367,7 @@ Values merged into the translated string.
 
 <p class="smt-member-path"><code>sandkit.api.ui.I18nTranslatable (worker)</code></p>
 
-Defined in: [shared/api/ui.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L31)
+Defined in: [shared/api/ui.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L31)
 
 Value returned by `sandkit.api.i18n.translatable`.
 
@@ -22379,7 +22379,7 @@ Value returned by `sandkit.api.i18n.translatable`.
 \_\_translatable: true
 ```
 
-Defined in: [shared/api/ui.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L32)
+Defined in: [shared/api/ui.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L32)
 
 ###### key
 
@@ -22387,7 +22387,7 @@ Defined in: [shared/api/ui.d.ts:32](https://github.com/sandustry-modding/Sandust
 key: string
 ```
 
-Defined in: [shared/api/ui.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L33)
+Defined in: [shared/api/ui.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L33)
 
 ###### fallback
 
@@ -22395,7 +22395,7 @@ Defined in: [shared/api/ui.d.ts:33](https://github.com/sandustry-modding/Sandust
 fallback: string
 ```
 
-Defined in: [shared/api/ui.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L34)
+Defined in: [shared/api/ui.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L34)
 
 ***
 
@@ -22403,7 +22403,7 @@ Defined in: [shared/api/ui.d.ts:34](https://github.com/sandustry-modding/Sandust
 
 <p class="smt-member-path"><code>sandkit.api.ui.ToastOptions (worker)</code></p>
 
-Defined in: [shared/api/ui.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L38)
+Defined in: [shared/api/ui.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L38)
 
 Cooldown, style, and auto-dismiss options for [toast](#toast).
 
@@ -22415,7 +22415,7 @@ Cooldown, style, and auto-dismiss options for [toast](#toast).
 optional cooldown?: number
 ```
 
-Defined in: [shared/api/ui.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L40)
+Defined in: [shared/api/ui.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L40)
 
 Minimum ms before the same toast can show again.
 
@@ -22425,7 +22425,7 @@ Minimum ms before the same toast can show again.
 optional cooldownKey?: string
 ```
 
-Defined in: [shared/api/ui.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L45)
+Defined in: [shared/api/ui.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L45)
 
 Dedupe key paired with [ToastOptions.cooldown](#cooldown).
 Defaults to the message string or `message.key`.
@@ -22436,7 +22436,7 @@ Defaults to the message string or `message.key`.
 optional duration?: number | false
 ```
 
-Defined in: [shared/api/ui.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L50)
+Defined in: [shared/api/ui.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L50)
 
 Auto-dismiss delay in ms. Default `5000`.
 Set `false` to keep the toast until another toast replaces it.
@@ -22447,7 +22447,7 @@ Set `false` to keep the toast until another toast replaces it.
 optional variant?: string & object | "danger" | "hint" | "hole"
 ```
 
-Defined in: [shared/api/ui.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L52)
+Defined in: [shared/api/ui.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L52)
 
 Visual style applied to the toast body.
 
@@ -22461,7 +22461,7 @@ Visual style applied to the toast body.
 LocalizedText = string | I18nTextKey | I18nTranslatable
 ```
 
-Defined in: [shared/api/ui.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L17)
+Defined in: [shared/api/ui.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L17)
 
 Plain text, translation key object, or i18n translatable value.
 
@@ -22475,7 +22475,7 @@ Plain text, translation key object, or i18n translatable value.
 toast(message: LocalizedText, options?: ToastOptions): void
 ```
 
-Defined in: [shared/api/ui.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L14)
+Defined in: [shared/api/ui.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L14)
 
 Show a short on-screen toast message.
 
@@ -22520,7 +22520,7 @@ main-thread APIs.
 getIndex(): number
 ```
 
-Defined in: [worker/api/worker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/worker.d.ts#L14)
+Defined in: [worker/api/worker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L14)
 
 Return the zero-based index of this worker in the worker pool.
 
@@ -22540,7 +22540,7 @@ Worker index (`0` … `getCount() - 1`).
 getCount(): number
 ```
 
-Defined in: [worker/api/worker.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/worker.d.ts#L19)
+Defined in: [worker/api/worker.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L19)
 
 Return the total number of simulation workers.
 
@@ -22638,7 +22638,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getDigLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L15)
+Defined in: [sandkit/engine/api/augments.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L15)
 
 Return the current dig augment level.
 
@@ -22664,7 +22664,7 @@ Game state first, then method-specific arguments.
 getGunLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L20)
+Defined in: [sandkit/engine/api/augments.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L20)
 
 Return the current gun augment level.
 
@@ -22690,7 +22690,7 @@ Game state first, then method-specific arguments.
 getPhaseLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L25)
+Defined in: [sandkit/engine/api/augments.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L25)
 
 Return the current phase augment level.
 
@@ -22716,7 +22716,7 @@ Game state first, then method-specific arguments.
 getRocketAmmoLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L30)
+Defined in: [sandkit/engine/api/augments.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L30)
 
 Return the current rocket ammo augment level.
 
@@ -22742,7 +22742,7 @@ Game state first, then method-specific arguments.
 getRocketReloadLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L35)
+Defined in: [sandkit/engine/api/augments.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L35)
 
 Return the current rocket reload augment level.
 
@@ -22768,7 +22768,7 @@ Game state first, then method-specific arguments.
 getSprintCapLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L40)
+Defined in: [sandkit/engine/api/augments.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L40)
 
 Return the current sprint cap augment level.
 
@@ -22794,7 +22794,7 @@ Game state first, then method-specific arguments.
 hasBigDig(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L45)
+Defined in: [sandkit/engine/api/augments.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L45)
 
 Return whether the big-dig augment is unlocked.
 
@@ -22820,7 +22820,7 @@ Game state first, then method-specific arguments.
 hasBulletSpeed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L50)
+Defined in: [sandkit/engine/api/augments.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L50)
 
 Return whether the bullet-speed augment is unlocked.
 
@@ -22846,7 +22846,7 @@ Game state first, then method-specific arguments.
 hasBulletTracer(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L55)
+Defined in: [sandkit/engine/api/augments.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L55)
 
 Return whether the bullet-tracer augment is unlocked.
 
@@ -22872,7 +22872,7 @@ Game state first, then method-specific arguments.
 hasKickstartBoost(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L60)
+Defined in: [sandkit/engine/api/augments.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L60)
 
 Return whether the kickstart-boost augment is unlocked.
 
@@ -22898,7 +22898,7 @@ Game state first, then method-specific arguments.
 hasPhaseDash(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L65)
+Defined in: [sandkit/engine/api/augments.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L65)
 
 Return whether the phase-dash augment is unlocked.
 
@@ -22924,7 +22924,7 @@ Game state first, then method-specific arguments.
 hasPhaseDashCharge(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L70)
+Defined in: [sandkit/engine/api/augments.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L70)
 
 Return whether the phase-dash-charge augment is unlocked.
 
@@ -22950,7 +22950,7 @@ Game state first, then method-specific arguments.
 hasRideBoost(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L75)
+Defined in: [sandkit/engine/api/augments.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L75)
 
 Return whether the ride-boost augment is unlocked.
 
@@ -22976,7 +22976,7 @@ Game state first, then method-specific arguments.
 hasRocketDamage(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L80)
+Defined in: [sandkit/engine/api/augments.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L80)
 
 Return whether the rocket-damage augment is unlocked.
 
@@ -23002,7 +23002,7 @@ Game state first, then method-specific arguments.
 hasRocketWarhead(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L85)
+Defined in: [sandkit/engine/api/augments.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L85)
 
 Return whether the rocket-warhead augment is unlocked.
 
@@ -23028,7 +23028,7 @@ Game state first, then method-specific arguments.
 hasSprintPower(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L90)
+Defined in: [sandkit/engine/api/augments.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L90)
 
 Return whether the sprint-power augment is unlocked.
 
@@ -23054,7 +23054,7 @@ Game state first, then method-specific arguments.
 hasTripleShot(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/augments.d.ts#L95)
+Defined in: [sandkit/engine/api/augments.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L95)
 
 Return whether the triple-shot augment is unlocked.
 
@@ -23092,7 +23092,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 ensureProducedAtLeast(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/auralite.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/auralite.d.ts#L15)
+Defined in: [sandkit/engine/api/auralite.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L15)
 
 Ensure at least the given amount of auralite has been produced.
 
@@ -23118,7 +23118,7 @@ Game state first, then method-specific arguments.
 getProduced(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/auralite.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/auralite.d.ts#L20)
+Defined in: [sandkit/engine/api/auralite.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L20)
 
 Return total auralite produced so far.
 
@@ -23156,7 +23156,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 delete(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L15)
+Defined in: [sandkit/engine/api/blueprints.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L15)
 
 Delete a saved blueprint. Runtime property name is `delete`.
 
@@ -23182,7 +23182,7 @@ Game state first, then method-specific arguments.
 exportAllString(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L21)
+Defined in: [sandkit/engine/api/blueprints.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L21)
 
 Export all blueprints as one string.
 
@@ -23208,7 +23208,7 @@ Game state first, then method-specific arguments.
 exportString(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L26)
+Defined in: [sandkit/engine/api/blueprints.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L26)
 
 Export one blueprint as a string.
 
@@ -23234,7 +23234,7 @@ Game state first, then method-specific arguments.
 getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L31)
+Defined in: [sandkit/engine/api/blueprints.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L31)
 
 Return all saved blueprints.
 
@@ -23260,7 +23260,7 @@ Game state first, then method-specific arguments.
 importString(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L36)
+Defined in: [sandkit/engine/api/blueprints.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L36)
 
 Import a blueprint from a string.
 
@@ -23286,7 +23286,7 @@ Game state first, then method-specific arguments.
 load(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L41)
+Defined in: [sandkit/engine/api/blueprints.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L41)
 
 Load a blueprint into the active session.
 
@@ -23312,7 +23312,7 @@ Game state first, then method-specific arguments.
 save(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L46)
+Defined in: [sandkit/engine/api/blueprints.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L46)
 
 Save the current selection as a blueprint.
 
@@ -23350,7 +23350,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 activate(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L15)
+Defined in: [sandkit/engine/api/clipboard.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L15)
 
 Activate the clipboard tool or mode.
 
@@ -23376,7 +23376,7 @@ Game state first, then method-specific arguments.
 clear(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L20)
+Defined in: [sandkit/engine/api/clipboard.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L20)
 
 Clear the current clipboard contents.
 
@@ -23402,7 +23402,7 @@ Game state first, then method-specific arguments.
 get(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L25)
+Defined in: [sandkit/engine/api/clipboard.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L25)
 
 Return the current clipboard payload.
 
@@ -23428,7 +23428,7 @@ Game state first, then method-specific arguments.
 getHistory(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L30)
+Defined in: [sandkit/engine/api/clipboard.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L30)
 
 Return clipboard history entries.
 
@@ -23454,7 +23454,7 @@ Game state first, then method-specific arguments.
 getSignalLinks(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L35)
+Defined in: [sandkit/engine/api/clipboard.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L35)
 
 Return signal links stored on the clipboard.
 
@@ -23480,7 +23480,7 @@ Game state first, then method-specific arguments.
 selectFromHistory(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L40)
+Defined in: [sandkit/engine/api/clipboard.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L40)
 
 Restore a clipboard entry from history.
 
@@ -23506,7 +23506,7 @@ Game state first, then method-specific arguments.
 set(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/clipboard.d.ts#L45)
+Defined in: [sandkit/engine/api/clipboard.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L45)
 
 Set the clipboard payload.
 
@@ -23544,7 +23544,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 colorStructure(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L15)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L15)
 
 Apply a color to one structure.
 
@@ -23570,7 +23570,7 @@ Game state first, then method-specific arguments.
 floodFillColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L20)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L20)
 
 Flood-fill connected structures with a color.
 
@@ -23596,7 +23596,7 @@ Game state first, then method-specific arguments.
 getColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L25)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L25)
 
 Return the color on a structure.
 
@@ -23622,7 +23622,7 @@ Game state first, then method-specific arguments.
 isColorableStructure(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L30)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L30)
 
 Return whether a structure can be colored.
 
@@ -23648,7 +23648,7 @@ Game state first, then method-specific arguments.
 isMatchColorMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L35)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L35)
 
 Return whether match-color mode is active.
 
@@ -23674,7 +23674,7 @@ Game state first, then method-specific arguments.
 isPaintBucketMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L40)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L40)
 
 Return whether paint-bucket mode is active.
 
@@ -23700,7 +23700,7 @@ Game state first, then method-specific arguments.
 setColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L45)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L45)
 
 Set the color on a structure.
 
@@ -23726,7 +23726,7 @@ Game state first, then method-specific arguments.
 toggleMatchColorMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L50)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L50)
 
 Toggle match-color mode on or off.
 
@@ -23752,7 +23752,7 @@ Game state first, then method-specific arguments.
 togglePaintBucketMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/coloringTool.d.ts#L55)
+Defined in: [sandkit/engine/api/coloringTool.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L55)
 
 Toggle paint-bucket mode on or off.
 
@@ -23788,7 +23788,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 const CYCLE\_COLOR: unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L12)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L12)
 
 Sentinel value for cycling through predefined colors.
 
@@ -23800,7 +23800,7 @@ Sentinel value for cycling through predefined colors.
 const NO\_COLOR: unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L14)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L14)
 
 Sentinel value for no color selected.
 
@@ -23812,7 +23812,7 @@ Sentinel value for no color selected.
 const PREDEFINED\_COLORS: unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L16)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L16)
 
 List of predefined palette colors.
 
@@ -23824,7 +23824,7 @@ List of predefined palette colors.
 const RANDOM\_COLOR: unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L18)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L18)
 
 Sentinel value for a random palette color.
 
@@ -23838,7 +23838,7 @@ Sentinel value for a random palette color.
 closePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L23)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L23)
 
 Close the active color palette UI.
 
@@ -23864,7 +23864,7 @@ Game state first, then method-specific arguments.
 getActivePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L28)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L28)
 
 Return the active palette identifier.
 
@@ -23890,7 +23890,7 @@ Game state first, then method-specific arguments.
 getCycleColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L33)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L33)
 
 Return the next color in the cycle.
 
@@ -23916,7 +23916,7 @@ Game state first, then method-specific arguments.
 getRandomColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L38)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L38)
 
 Return a random predefined color.
 
@@ -23942,7 +23942,7 @@ Game state first, then method-specific arguments.
 hexToRgba(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L43)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L43)
 
 Convert a hex color string to RGBA components.
 
@@ -23968,7 +23968,7 @@ Game state first, then method-specific arguments.
 renderColorButton(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L48)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L48)
 
 Render a color-picker button in the UI.
 
@@ -23994,7 +23994,7 @@ Game state first, then method-specific arguments.
 renderColorSection(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L53)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L53)
 
 Render a color section in the UI.
 
@@ -24020,7 +24020,7 @@ Game state first, then method-specific arguments.
 renderPalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L58)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L58)
 
 Render the full color palette UI.
 
@@ -24046,7 +24046,7 @@ Game state first, then method-specific arguments.
 rgbaToHex(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L63)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L63)
 
 Convert RGBA components to a hex color string.
 
@@ -24072,7 +24072,7 @@ Game state first, then method-specific arguments.
 setActivePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L68)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L68)
 
 Set the active palette identifier.
 
@@ -24098,7 +24098,7 @@ Game state first, then method-specific arguments.
 togglePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/colorPicker.d.ts#L73)
+Defined in: [sandkit/engine/api/colorPicker.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L73)
 
 Open or close the color palette UI.
 
@@ -24136,7 +24136,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 registerType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/conveyors.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/conveyors.d.ts#L15)
+Defined in: [sandkit/engine/api/conveyors.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/conveyors.d.ts#L15)
 
 Register a custom conveyor type.
 
@@ -24174,7 +24174,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 register(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/debug.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/debug.d.ts#L15)
+Defined in: [sandkit/engine/api/debug.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/debug.d.ts#L15)
 
 Register a debug overlay or helper.
 
@@ -24212,7 +24212,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 kill(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/drones.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/drones.d.ts#L15)
+Defined in: [sandkit/engine/api/drones.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/drones.d.ts#L15)
 
 Remove one or more drones.
 
@@ -24238,7 +24238,7 @@ Game state first, then method-specific arguments.
 spawn(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/drones.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/drones.d.ts#L20)
+Defined in: [sandkit/engine/api/drones.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/drones.d.ts#L20)
 
 Spawn a drone instance.
 
@@ -24276,7 +24276,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 createLight(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L15)
+Defined in: [sandkit/engine/api/entities.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L15)
 
 Create a light entity attached to a parent.
 
@@ -24302,7 +24302,7 @@ Game state first, then method-specific arguments.
 getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L20)
+Defined in: [sandkit/engine/api/entities.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L20)
 
 Return all live entities.
 
@@ -24328,7 +24328,7 @@ Game state first, then method-specific arguments.
 getAllByType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L25)
+Defined in: [sandkit/engine/api/entities.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L25)
 
 Return all entities of one type.
 
@@ -24354,7 +24354,7 @@ Game state first, then method-specific arguments.
 getAllTypeDefs(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L30)
+Defined in: [sandkit/engine/api/entities.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L30)
 
 Return all registered entity type definitions.
 
@@ -24380,7 +24380,7 @@ Game state first, then method-specific arguments.
 getSprite(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L35)
+Defined in: [sandkit/engine/api/entities.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L35)
 
 Return the sprite for an entity.
 
@@ -24406,7 +24406,7 @@ Game state first, then method-specific arguments.
 getTypeDef(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L40)
+Defined in: [sandkit/engine/api/entities.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L40)
 
 Return one entity type definition by id.
 
@@ -24432,7 +24432,7 @@ Game state first, then method-specific arguments.
 launch(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L45)
+Defined in: [sandkit/engine/api/entities.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L45)
 
 Launch an entity with velocity or trajectory.
 
@@ -24458,7 +24458,7 @@ Game state first, then method-specific arguments.
 registerSpawner(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L50)
+Defined in: [sandkit/engine/api/entities.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L50)
 
 Register an entity spawner behavior.
 
@@ -24484,7 +24484,7 @@ Game state first, then method-specific arguments.
 registerType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L55)
+Defined in: [sandkit/engine/api/entities.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L55)
 
 Register a custom entity type.
 
@@ -24510,7 +24510,7 @@ Game state first, then method-specific arguments.
 spawn(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L60)
+Defined in: [sandkit/engine/api/entities.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L60)
 
 Spawn an entity instance.
 
@@ -24536,7 +24536,7 @@ Game state first, then method-specific arguments.
 startCapture(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/entities.d.ts#L65)
+Defined in: [sandkit/engine/api/entities.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L65)
 
 Start capturing entities for a tool or effect.
 
@@ -24574,7 +24574,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 define(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/extensions.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/extensions.d.ts#L15)
+Defined in: [sandkit/engine/api/extensions.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/extensions.d.ts#L15)
 
 Define a structure extension type.
 
@@ -24612,7 +24612,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 addViabilityGold(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L15)
+Defined in: [sandkit/engine/api/factory.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L15)
 
 Add viability gold toward the next factory tier.
 
@@ -24638,7 +24638,7 @@ Game state first, then method-specific arguments.
 canUnlockNextTier(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L20)
+Defined in: [sandkit/engine/api/factory.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L20)
 
 Return whether the next factory tier can be unlocked.
 
@@ -24664,7 +24664,7 @@ Game state first, then method-specific arguments.
 ensureProcessAtLeast(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L25)
+Defined in: [sandkit/engine/api/factory.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L25)
 
 Ensure at least the given process count has been recorded.
 
@@ -24690,7 +24690,7 @@ Game state first, then method-specific arguments.
 flushDeferredLevelUps(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L30)
+Defined in: [sandkit/engine/api/factory.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L30)
 
 Apply deferred factory level-ups.
 
@@ -24716,7 +24716,7 @@ Game state first, then method-specific arguments.
 getLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L35)
+Defined in: [sandkit/engine/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L35)
 
 Return the current factory level.
 
@@ -24742,7 +24742,7 @@ Game state first, then method-specific arguments.
 getProcessCount(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L40)
+Defined in: [sandkit/engine/api/factory.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L40)
 
 Return total recorded process count.
 
@@ -24768,7 +24768,7 @@ Game state first, then method-specific arguments.
 getProcessRate(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L45)
+Defined in: [sandkit/engine/api/factory.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L45)
 
 Return the current process rate.
 
@@ -24794,7 +24794,7 @@ Game state first, then method-specific arguments.
 recordProcess(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L50)
+Defined in: [sandkit/engine/api/factory.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L50)
 
 Record one factory process event.
 
@@ -24820,7 +24820,7 @@ Game state first, then method-specific arguments.
 unlockNextTier(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/factory.d.ts#L55)
+Defined in: [sandkit/engine/api/factory.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L55)
 
 Unlock the next factory tier.
 
@@ -24858,7 +24858,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 generate(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/foliage.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/foliage.d.ts#L15)
+Defined in: [sandkit/engine/api/foliage.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L15)
 
 Generate foliage for a region or world chunk.
 
@@ -24884,7 +24884,7 @@ Game state first, then method-specific arguments.
 getClusters(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/foliage.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/foliage.d.ts#L20)
+Defined in: [sandkit/engine/api/foliage.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L20)
 
 Return foliage cluster data.
 
@@ -24910,7 +24910,7 @@ Game state first, then method-specific arguments.
 getContainer(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/foliage.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/foliage.d.ts#L25)
+Defined in: [sandkit/engine/api/foliage.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L25)
 
 Return the foliage render container.
 
@@ -24936,7 +24936,7 @@ Game state first, then method-specific arguments.
 hasProcgenData(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/foliage.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/foliage.d.ts#L30)
+Defined in: [sandkit/engine/api/foliage.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L30)
 
 Return whether procgen foliage data exists for a location.
 
@@ -24974,7 +24974,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/foundationColorPicker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/foundationColorPicker.d.ts#L15)
+Defined in: [sandkit/engine/api/foundationColorPicker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foundationColorPicker.d.ts#L15)
 
 Return the color on a foundation tile.
 
@@ -25012,7 +25012,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 load(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/game.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/game.d.ts#L15)
+Defined in: [sandkit/engine/api/game.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L15)
 
 Load a saved game into the session.
 
@@ -25038,7 +25038,7 @@ Game state first, then method-specific arguments.
 save(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/game.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/game.d.ts#L20)
+Defined in: [sandkit/engine/api/game.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L20)
 
 Save the current session.
 
@@ -25064,7 +25064,7 @@ Game state first, then method-specific arguments.
 start(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/game.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/game.d.ts#L25)
+Defined in: [sandkit/engine/api/game.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L25)
 
 Start a new game session.
 
@@ -25102,7 +25102,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 absorbAdjacentElements(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L15)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L15)
 
 Absorb heat from adjacent elements into a cell.
 
@@ -25128,7 +25128,7 @@ Game state first, then method-specific arguments.
 addTemperature(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L20)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L20)
 
 Add temperature to a cell or region.
 
@@ -25154,7 +25154,7 @@ Game state first, then method-specific arguments.
 computeDiffusedTemperatures(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L25)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L25)
 
 Compute diffused temperatures for connected cells.
 
@@ -25180,7 +25180,7 @@ Game state first, then method-specific arguments.
 computeEqualizedTemperature(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L30)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L30)
 
 Compute one equalized temperature across connected cells.
 
@@ -25206,7 +25206,7 @@ Game state first, then method-specific arguments.
 consumeTemperatureNear(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L35)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L35)
 
 Consume temperature near a point or cell.
 
@@ -25232,7 +25232,7 @@ Game state first, then method-specific arguments.
 ensureTemperature(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L40)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L40)
 
 Ensure a cell has at least the given temperature.
 
@@ -25258,7 +25258,7 @@ Game state first, then method-specific arguments.
 equalizeConnected(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/heatTransfer.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/heatTransfer.d.ts#L45)
+Defined in: [sandkit/engine/api/heatTransfer.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L45)
 
 Equalize temperature across a connected component.
 
@@ -25296,7 +25296,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 registerType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/launchers.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/launchers.d.ts#L15)
+Defined in: [sandkit/engine/api/launchers.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/launchers.d.ts#L15)
 
 Register a custom launcher type.
 
@@ -25334,7 +25334,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/lightColorPicker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/lightColorPicker.d.ts#L15)
+Defined in: [sandkit/engine/api/lightColorPicker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/lightColorPicker.d.ts#L15)
 
 Return the color on a light structure.
 
@@ -25372,7 +25372,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getMatterTypeFromId(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/matters.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/matters.d.ts#L15)
+Defined in: [sandkit/engine/api/matters.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L15)
 
 Resolve a matter type from an id string.
 
@@ -25398,7 +25398,7 @@ Game state first, then method-specific arguments.
 register(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/matters.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/matters.d.ts#L20)
+Defined in: [sandkit/engine/api/matters.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L20)
 
 Register a custom matter type.
 
@@ -25424,7 +25424,7 @@ Game state first, then method-specific arguments.
 runSolidUpdate(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/matters.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/matters.d.ts#L25)
+Defined in: [sandkit/engine/api/matters.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L25)
 
 Run one solid-matter update step.
 
@@ -25462,7 +25462,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 register(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/misc.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/misc.d.ts#L15)
+Defined in: [sandkit/engine/api/misc.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/misc.d.ts#L15)
 
 Register a miscellaneous structure behavior.
 
@@ -25500,7 +25500,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getMarkers(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/portals.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/portals.d.ts#L15)
+Defined in: [sandkit/engine/api/portals.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/portals.d.ts#L15)
 
 Return portal markers in the world.
 
@@ -25538,7 +25538,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabData.d.ts#L15)
+Defined in: [sandkit/engine/api/prefabData.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L15)
 
 Return all prefab data entries.
 
@@ -25564,7 +25564,7 @@ Game state first, then method-specific arguments.
 getAllMetadata(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabData.d.ts#L20)
+Defined in: [sandkit/engine/api/prefabData.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L20)
 
 Return metadata for all prefabs.
 
@@ -25590,7 +25590,7 @@ Game state first, then method-specific arguments.
 getArtifactLocations(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabData.d.ts#L25)
+Defined in: [sandkit/engine/api/prefabData.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L25)
 
 Return artifact locations for prefabs.
 
@@ -25616,7 +25616,7 @@ Game state first, then method-specific arguments.
 getAtCell(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabData.d.ts#L30)
+Defined in: [sandkit/engine/api/prefabData.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L30)
 
 Return prefab data at one grid cell.
 
@@ -25642,7 +25642,7 @@ Game state first, then method-specific arguments.
 getMetadata(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabData.d.ts#L35)
+Defined in: [sandkit/engine/api/prefabData.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L35)
 
 Return metadata for one prefab.
 
@@ -25680,7 +25680,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getPlacementByName(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabDecor.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabDecor.d.ts#L15)
+Defined in: [sandkit/engine/api/prefabDecor.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabDecor.d.ts#L15)
 
 Return a decor placement definition by name.
 
@@ -25706,7 +25706,7 @@ Game state first, then method-specific arguments.
 replaceDecor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabDecor.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabDecor.d.ts#L20)
+Defined in: [sandkit/engine/api/prefabDecor.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabDecor.d.ts#L20)
 
 Replace decor instances in a region or prefab.
 
@@ -25744,7 +25744,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 localizeBlueprintStructures(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabulator.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabulator.d.ts#L15)
+Defined in: [sandkit/engine/api/prefabulator.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabulator.d.ts#L15)
 
 Convert serialized blueprint structures to world-local coordinates.
 
@@ -25770,7 +25770,7 @@ Game state first, then method-specific arguments.
 serializeBlueprintStructures(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabulator.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prefabulator.d.ts#L20)
+Defined in: [sandkit/engine/api/prefabulator.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabulator.d.ts#L20)
 
 Serialize blueprint structures for prefab storage.
 
@@ -25808,7 +25808,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 consume(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismaline.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prismaline.d.ts#L15)
+Defined in: [sandkit/engine/api/prismaline.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L15)
 
 Consume prismaline from the player or world.
 
@@ -25834,7 +25834,7 @@ Game state first, then method-specific arguments.
 getAvailable(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismaline.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prismaline.d.ts#L20)
+Defined in: [sandkit/engine/api/prismaline.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L20)
 
 Return available prismaline amount.
 
@@ -25860,7 +25860,7 @@ Game state first, then method-specific arguments.
 getConsumed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismaline.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prismaline.d.ts#L25)
+Defined in: [sandkit/engine/api/prismaline.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L25)
 
 Return total prismaline consumed so far.
 
@@ -25898,7 +25898,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 consume(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismite.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prismite.d.ts#L15)
+Defined in: [sandkit/engine/api/prismite.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L15)
 
 Consume prismite from the player or world.
 
@@ -25924,7 +25924,7 @@ Game state first, then method-specific arguments.
 getAvailable(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismite.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prismite.d.ts#L20)
+Defined in: [sandkit/engine/api/prismite.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L20)
 
 Return available prismite amount.
 
@@ -25950,7 +25950,7 @@ Game state first, then method-specific arguments.
 getConsumed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismite.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/prismite.d.ts#L25)
+Defined in: [sandkit/engine/api/prismite.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L25)
 
 Return total prismite consumed so far.
 
@@ -25988,7 +25988,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 enqueue(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L15)
+Defined in: [sandkit/engine/api/queue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L15)
 
 Enqueue work to run on a future tick.
 
@@ -26014,7 +26014,7 @@ Game state first, then method-specific arguments.
 enqueueInTicks(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L20)
+Defined in: [sandkit/engine/api/queue.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L20)
 
 Enqueue work to run after a tick delay.
 
@@ -26040,7 +26040,7 @@ Game state first, then method-specific arguments.
 enqueueSkipTick(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L25)
+Defined in: [sandkit/engine/api/queue.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L25)
 
 Enqueue work that skips the current tick.
 
@@ -26066,7 +26066,7 @@ Game state first, then method-specific arguments.
 process(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L30)
+Defined in: [sandkit/engine/api/queue.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L30)
 
 Process pending queue items for the current tick.
 
@@ -26092,7 +26092,7 @@ Game state first, then method-specific arguments.
 registerHandler(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L35)
+Defined in: [sandkit/engine/api/queue.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L35)
 
 Register a handler for a queue item type.
 
@@ -26118,7 +26118,7 @@ Game state first, then method-specific arguments.
 removeByKey(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/queue.d.ts#L40)
+Defined in: [sandkit/engine/api/queue.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L40)
 
 Remove queued items by key.
 
@@ -26156,7 +26156,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 refresh(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/shadows.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/shadows.d.ts#L15)
+Defined in: [sandkit/engine/api/shadows.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L15)
 
 Refresh shadows for the whole visible area.
 
@@ -26182,7 +26182,7 @@ Game state first, then method-specific arguments.
 refreshRadius(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/shadows.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/shadows.d.ts#L20)
+Defined in: [sandkit/engine/api/shadows.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L20)
 
 Refresh shadows within a circular radius.
 
@@ -26208,7 +26208,7 @@ Game state first, then method-specific arguments.
 refreshRect(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/shadows.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/shadows.d.ts#L25)
+Defined in: [sandkit/engine/api/shadows.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L25)
 
 Refresh shadows within a rectangle.
 
@@ -26246,7 +26246,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getDefaultConfig(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/strataform.d.ts#L15)
+Defined in: [sandkit/engine/api/strataform.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L15)
 
 Return the default strataform configuration.
 
@@ -26272,7 +26272,7 @@ Game state first, then method-specific arguments.
 getRegisteredTypes(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/strataform.d.ts#L20)
+Defined in: [sandkit/engine/api/strataform.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L20)
 
 Return all registered strataform types.
 
@@ -26298,7 +26298,7 @@ Game state first, then method-specific arguments.
 registerType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/strataform.d.ts#L25)
+Defined in: [sandkit/engine/api/strataform.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L25)
 
 Register a custom strataform type.
 
@@ -26324,7 +26324,7 @@ Game state first, then method-specific arguments.
 trigger(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/strataform.d.ts#L30)
+Defined in: [sandkit/engine/api/strataform.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L30)
 
 Trigger a strataform event at a location.
 
@@ -26350,7 +26350,7 @@ Game state first, then method-specific arguments.
 triggerByType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/strataform.d.ts#L35)
+Defined in: [sandkit/engine/api/strataform.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L35)
 
 Trigger a strataform event by type id.
 
@@ -26388,7 +26388,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 decrementConvergenceBuffer(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L15)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L15)
 
 Decrease the convergence buffer by one step.
 
@@ -26414,7 +26414,7 @@ Game state first, then method-specific arguments.
 getCrystalMined(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L20)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L20)
 
 Return total crystal mined for swarm consoles.
 
@@ -26440,7 +26440,7 @@ Game state first, then method-specific arguments.
 getDiskRadiusCells(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L25)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L25)
 
 Return the disk radius in cells for a console.
 
@@ -26466,7 +26466,7 @@ Game state first, then method-specific arguments.
 getEntityType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L30)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L30)
 
 Return the entity type used by swarm consoles.
 
@@ -26492,7 +26492,7 @@ Game state first, then method-specific arguments.
 getNearestConvergence(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L35)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L35)
 
 Return the nearest convergence point.
 
@@ -26518,7 +26518,7 @@ Game state first, then method-specific arguments.
 getPendingConvergence(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L40)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L40)
 
 Return the pending convergence target.
 
@@ -26544,7 +26544,7 @@ Game state first, then method-specific arguments.
 getPlacedConsoles(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L45)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L45)
 
 Return all placed swarm console structures.
 
@@ -26570,7 +26570,7 @@ Game state first, then method-specific arguments.
 getRadiusPx(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L50)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L50)
 
 Return the console effect radius in pixels.
 
@@ -26596,7 +26596,7 @@ Game state first, then method-specific arguments.
 isSpawnJammed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L55)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L55)
 
 Return whether swarm spawn is currently jammed.
 
@@ -26622,7 +26622,7 @@ Game state first, then method-specific arguments.
 registerEntityType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L60)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L60)
 
 Register the entity type for swarm consoles.
 
@@ -26648,7 +26648,7 @@ Game state first, then method-specific arguments.
 resetAllConvergenceBuffers(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L65)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L65)
 
 Reset convergence buffers on all consoles.
 
@@ -26674,7 +26674,7 @@ Game state first, then method-specific arguments.
 setSpawnJammed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/swarmConsole.d.ts#L70)
+Defined in: [sandkit/engine/api/swarmConsole.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L70)
 
 Set whether swarm spawn is jammed.
 
@@ -26712,7 +26712,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 cancelSelection(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/sweeperDrone.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/sweeperDrone.d.ts#L15)
+Defined in: [sandkit/engine/api/sweeperDrone.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/sweeperDrone.d.ts#L15)
 
 Cancel the active sweeper drone selection.
 
@@ -26750,7 +26750,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 add(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/teleportZones.d.ts#L15)
+Defined in: [sandkit/engine/api/teleportZones.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L15)
 
 Add a teleport zone to the world.
 
@@ -26776,7 +26776,7 @@ Game state first, then method-specific arguments.
 getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/teleportZones.d.ts#L20)
+Defined in: [sandkit/engine/api/teleportZones.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L20)
 
 Return all teleport zones.
 
@@ -26802,7 +26802,7 @@ Game state first, then method-specific arguments.
 getAtCell(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/teleportZones.d.ts#L25)
+Defined in: [sandkit/engine/api/teleportZones.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L25)
 
 Return the teleport zone at one grid cell.
 
@@ -26828,7 +26828,7 @@ Game state first, then method-specific arguments.
 getById(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/teleportZones.d.ts#L30)
+Defined in: [sandkit/engine/api/teleportZones.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L30)
 
 Return one teleport zone by id.
 
@@ -26854,7 +26854,7 @@ Game state first, then method-specific arguments.
 remove(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/teleportZones.d.ts#L35)
+Defined in: [sandkit/engine/api/teleportZones.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L35)
 
 Remove a teleport zone.
 
@@ -26880,7 +26880,7 @@ Game state first, then method-specific arguments.
 spawnDefaultParticles(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/teleportZones.d.ts#L40)
+Defined in: [sandkit/engine/api/teleportZones.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L40)
 
 Spawn default particles at a teleport zone.
 
@@ -26906,7 +26906,7 @@ Game state first, then method-specific arguments.
 teleportPlayerTo(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/teleportZones.d.ts#L45)
+Defined in: [sandkit/engine/api/teleportZones.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L45)
 
 Teleport the player to a zone or position.
 
@@ -26944,7 +26944,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 areAllTargetsBuilt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L15)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L15)
 
 Return whether all active tutorial targets are built.
 
@@ -26970,7 +26970,7 @@ Game state first, then method-specific arguments.
 areFamilyTargetsBuilt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L20)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L20)
 
 Return whether all targets in a structure family are built.
 
@@ -26996,7 +26996,7 @@ Game state first, then method-specific arguments.
 canPlaceAtActiveTarget(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L25)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L25)
 
 Return whether placement is allowed at the active target.
 
@@ -27022,7 +27022,7 @@ Game state first, then method-specific arguments.
 getFoundationMoveDests(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L30)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L30)
 
 Return foundation move destination cells for the tutorial step.
 
@@ -27048,7 +27048,7 @@ Game state first, then method-specific arguments.
 getFoundationMoveSources(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L35)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L35)
 
 Return foundation move source cells for the tutorial step.
 
@@ -27074,7 +27074,7 @@ Game state first, then method-specific arguments.
 getTargets(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L40)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L40)
 
 Return build targets for the current tutorial step.
 
@@ -27100,7 +27100,7 @@ Game state first, then method-specific arguments.
 hasDefinition(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L45)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L45)
 
 Return whether a tutorial build definition exists.
 
@@ -27126,7 +27126,7 @@ Game state first, then method-specific arguments.
 isStepConstrained(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L50)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L50)
 
 Return whether the current step restricts building.
 
@@ -27152,7 +27152,7 @@ Game state first, then method-specific arguments.
 matchesFoundationMove(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L55)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L55)
 
 Return whether a foundation move matches tutorial rules.
 
@@ -27178,7 +27178,7 @@ Game state first, then method-specific arguments.
 matchesFoundationRemove(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L60)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L60)
 
 Return whether a foundation remove matches tutorial rules.
 
@@ -27204,7 +27204,7 @@ Game state first, then method-specific arguments.
 shouldProtectActiveTargetAt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L65)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L65)
 
 Return whether the active target should be protected at a cell.
 
@@ -27242,7 +27242,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 clear(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/usageTracker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/usageTracker.d.ts#L15)
+Defined in: [sandkit/engine/api/usageTracker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L15)
 
 Clear recorded usage statistics.
 
@@ -27268,7 +27268,7 @@ Game state first, then method-specific arguments.
 getLatest(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/usageTracker.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/usageTracker.d.ts#L20)
+Defined in: [sandkit/engine/api/usageTracker.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L20)
 
 Return the most recently used item or structure.
 
@@ -27294,7 +27294,7 @@ Game state first, then method-specific arguments.
 getMostUsed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/usageTracker.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/usageTracker.d.ts#L25)
+Defined in: [sandkit/engine/api/usageTracker.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L25)
 
 Return the most frequently used item or structure.
 
@@ -27332,7 +27332,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getPaletteData(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/wall.d.ts#L15)
+Defined in: [sandkit/engine/api/wall.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L15)
 
 Return wall palette data for rendering.
 
@@ -27358,7 +27358,7 @@ Game state first, then method-specific arguments.
 getWallDataAt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/wall.d.ts#L20)
+Defined in: [sandkit/engine/api/wall.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L20)
 
 Return wall tile data at one cell.
 
@@ -27384,7 +27384,7 @@ Game state first, then method-specific arguments.
 getWallDataSize(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/wall.d.ts#L25)
+Defined in: [sandkit/engine/api/wall.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L25)
 
 Return the byte size of wall tile data.
 
@@ -27410,7 +27410,7 @@ Game state first, then method-specific arguments.
 setWallDataAt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/wall.d.ts#L30)
+Defined in: [sandkit/engine/api/wall.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L30)
 
 Set wall tile data at one cell.
 
@@ -27447,7 +27447,7 @@ Available on worker threads only. Values do not persist across workers.
 clear(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/workerLocal.d.ts#L14)
+Defined in: [sandkit/engine/api/workerLocal.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L14)
 
 Remove all keys from worker-local storage.
 
@@ -27473,7 +27473,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 get(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/workerLocal.d.ts#L19)
+Defined in: [sandkit/engine/api/workerLocal.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L19)
 
 Return a value by key, or undefined when missing.
 
@@ -27499,7 +27499,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 getOrInit(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/workerLocal.d.ts#L24)
+Defined in: [sandkit/engine/api/workerLocal.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L24)
 
 Return a value by key, initializing it when missing.
 
@@ -27525,7 +27525,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 set(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/workerLocal.d.ts#L29)
+Defined in: [sandkit/engine/api/workerLocal.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L29)
 
 Store a value by key.
 
@@ -27581,7 +27581,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 SandkitEnums = object
 ```
 
-Defined in: [sandkit/enums/index.d.ts:431](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L431)
+Defined in: [sandkit/enums/index.d.ts:431](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L431)
 
 Composed `sandkit.enums` object.
 
@@ -27593,7 +27593,7 @@ Composed `sandkit.enums` object.
 AbilityType: *typeof* AbilityType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:432](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L432)
+Defined in: [sandkit/enums/index.d.ts:432](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L432)
 
 ###### ActionState
 
@@ -27601,7 +27601,7 @@ Defined in: [sandkit/enums/index.d.ts:432](https://github.com/sandustry-modding/
 ActionState: *typeof* ActionState
 ```
 
-Defined in: [sandkit/enums/index.d.ts:433](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L433)
+Defined in: [sandkit/enums/index.d.ts:433](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L433)
 
 ###### ActionType
 
@@ -27609,7 +27609,7 @@ Defined in: [sandkit/enums/index.d.ts:433](https://github.com/sandustry-modding/
 ActionType: *typeof* ActionType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:434](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L434)
+Defined in: [sandkit/enums/index.d.ts:434](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L434)
 
 ###### AuthorizationType
 
@@ -27617,7 +27617,7 @@ Defined in: [sandkit/enums/index.d.ts:434](https://github.com/sandustry-modding/
 AuthorizationType: *typeof* AuthorizationType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:435](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L435)
+Defined in: [sandkit/enums/index.d.ts:435](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L435)
 
 ###### BuildMode
 
@@ -27625,7 +27625,7 @@ Defined in: [sandkit/enums/index.d.ts:435](https://github.com/sandustry-modding/
 BuildMode: *typeof* BuildMode
 ```
 
-Defined in: [sandkit/enums/index.d.ts:436](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L436)
+Defined in: [sandkit/enums/index.d.ts:436](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L436)
 
 ###### BuildingClearance
 
@@ -27633,7 +27633,7 @@ Defined in: [sandkit/enums/index.d.ts:436](https://github.com/sandustry-modding/
 BuildingClearance: *typeof* BuildingClearance
 ```
 
-Defined in: [sandkit/enums/index.d.ts:437](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L437)
+Defined in: [sandkit/enums/index.d.ts:437](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L437)
 
 ###### CellType
 
@@ -27641,7 +27641,7 @@ Defined in: [sandkit/enums/index.d.ts:437](https://github.com/sandustry-modding/
 CellType: *typeof* CellType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:438](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L438)
+Defined in: [sandkit/enums/index.d.ts:438](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L438)
 
 ###### ComponentId
 
@@ -27649,7 +27649,7 @@ Defined in: [sandkit/enums/index.d.ts:438](https://github.com/sandustry-modding/
 ComponentId: *typeof* ComponentId
 ```
 
-Defined in: [sandkit/enums/index.d.ts:439](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L439)
+Defined in: [sandkit/enums/index.d.ts:439](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L439)
 
 ###### DroneType
 
@@ -27657,7 +27657,7 @@ Defined in: [sandkit/enums/index.d.ts:439](https://github.com/sandustry-modding/
 DroneType: *typeof* DroneType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:440](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L440)
+Defined in: [sandkit/enums/index.d.ts:440](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L440)
 
 ###### ElementType
 
@@ -27665,7 +27665,7 @@ Defined in: [sandkit/enums/index.d.ts:440](https://github.com/sandustry-modding/
 ElementType: *typeof* ElementType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L441)
+Defined in: [sandkit/enums/index.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L441)
 
 ###### ItemId
 
@@ -27673,7 +27673,7 @@ Defined in: [sandkit/enums/index.d.ts:441](https://github.com/sandustry-modding/
 ItemId: *typeof* ItemId
 ```
 
-Defined in: [sandkit/enums/index.d.ts:442](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L442)
+Defined in: [sandkit/enums/index.d.ts:442](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L442)
 
 ###### ItemType
 
@@ -27681,7 +27681,7 @@ Defined in: [sandkit/enums/index.d.ts:442](https://github.com/sandustry-modding/
 ItemType: *typeof* ItemType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:443](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L443)
+Defined in: [sandkit/enums/index.d.ts:443](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L443)
 
 ###### KeyBinding
 
@@ -27689,7 +27689,7 @@ Defined in: [sandkit/enums/index.d.ts:443](https://github.com/sandustry-modding/
 KeyBinding: *typeof* KeyBinding
 ```
 
-Defined in: [sandkit/enums/index.d.ts:444](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L444)
+Defined in: [sandkit/enums/index.d.ts:444](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L444)
 
 ###### KeyState
 
@@ -27697,7 +27697,7 @@ Defined in: [sandkit/enums/index.d.ts:444](https://github.com/sandustry-modding/
 KeyState: *typeof* KeyState
 ```
 
-Defined in: [sandkit/enums/index.d.ts:445](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L445)
+Defined in: [sandkit/enums/index.d.ts:445](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L445)
 
 ###### MatterType
 
@@ -27705,7 +27705,7 @@ Defined in: [sandkit/enums/index.d.ts:445](https://github.com/sandustry-modding/
 MatterType: *typeof* MatterType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:446](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L446)
+Defined in: [sandkit/enums/index.d.ts:446](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L446)
 
 ###### ProjectileType
 
@@ -27713,7 +27713,7 @@ Defined in: [sandkit/enums/index.d.ts:446](https://github.com/sandustry-modding/
 ProjectileType: *typeof* ProjectileType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:447](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L447)
+Defined in: [sandkit/enums/index.d.ts:447](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L447)
 
 ###### ReloadType
 
@@ -27721,7 +27721,7 @@ Defined in: [sandkit/enums/index.d.ts:447](https://github.com/sandustry-modding/
 ReloadType: *typeof* ReloadType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:448](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L448)
+Defined in: [sandkit/enums/index.d.ts:448](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L448)
 
 ###### Scene
 
@@ -27729,7 +27729,7 @@ Defined in: [sandkit/enums/index.d.ts:448](https://github.com/sandustry-modding/
 Scene: *typeof* Scene
 ```
 
-Defined in: [sandkit/enums/index.d.ts:449](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L449)
+Defined in: [sandkit/enums/index.d.ts:449](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L449)
 
 ###### StructureType
 
@@ -27737,7 +27737,7 @@ Defined in: [sandkit/enums/index.d.ts:449](https://github.com/sandustry-modding/
 StructureType: *typeof* StructureType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:450](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L450)
+Defined in: [sandkit/enums/index.d.ts:450](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L450)
 
 ###### Tech
 
@@ -27745,7 +27745,7 @@ Defined in: [sandkit/enums/index.d.ts:450](https://github.com/sandustry-modding/
 Tech: *typeof* Tech
 ```
 
-Defined in: [sandkit/enums/index.d.ts:451](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L451)
+Defined in: [sandkit/enums/index.d.ts:451](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L451)
 
 ###### TechStatus
 
@@ -27753,7 +27753,7 @@ Defined in: [sandkit/enums/index.d.ts:451](https://github.com/sandustry-modding/
 TechStatus: *typeof* TechStatus
 ```
 
-Defined in: [sandkit/enums/index.d.ts:452](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L452)
+Defined in: [sandkit/enums/index.d.ts:452](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L452)
 
 ###### PickupType
 
@@ -27761,7 +27761,7 @@ Defined in: [sandkit/enums/index.d.ts:452](https://github.com/sandustry-modding/
 PickupType: *typeof* PickupType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:453](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L453)
+Defined in: [sandkit/enums/index.d.ts:453](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L453)
 
 ###### ~~WorldItemType~~
 
@@ -27769,7 +27769,7 @@ Defined in: [sandkit/enums/index.d.ts:453](https://github.com/sandustry-modding/
 WorldItemType: *typeof* WorldItemType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:457](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L457)
+Defined in: [sandkit/enums/index.d.ts:457](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L457)
 
 ###### Deprecated
 
@@ -27779,7 +27779,7 @@ Use [PickupType](api/sandkit.enums.PickupType.md) instead.
 
 ## sandkit.enums.AbilityType
 
-Defined in: [sandkit/enums/index.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L9)
+Defined in: [sandkit/enums/index.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L9)
 
 Item ability categories (dig, shoot, spray, laser).
 
@@ -27793,7 +27793,7 @@ Item ability categories (dig, shoot, spray, laser).
 Dig: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L10)
+Defined in: [sandkit/enums/index.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L10)
 
 ***
 
@@ -27805,7 +27805,7 @@ Defined in: [sandkit/enums/index.d.ts:10](https://github.com/sandustry-modding/S
 Shoot: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L11)
+Defined in: [sandkit/enums/index.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L11)
 
 ***
 
@@ -27817,7 +27817,7 @@ Defined in: [sandkit/enums/index.d.ts:11](https://github.com/sandustry-modding/S
 Spray: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L12)
+Defined in: [sandkit/enums/index.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L12)
 
 ***
 
@@ -27829,13 +27829,13 @@ Defined in: [sandkit/enums/index.d.ts:12](https://github.com/sandustry-modding/S
 Laser: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L13)
+Defined in: [sandkit/enums/index.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L13)
 
 ---
 
 ## sandkit.enums.ActionState
 
-Defined in: [sandkit/enums/index.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L17)
+Defined in: [sandkit/enums/index.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L17)
 
 Phases of a held or repeated player action.
 
@@ -27849,7 +27849,7 @@ Phases of a held or repeated player action.
 Start: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L18)
+Defined in: [sandkit/enums/index.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L18)
 
 ***
 
@@ -27861,7 +27861,7 @@ Defined in: [sandkit/enums/index.d.ts:18](https://github.com/sandustry-modding/S
 Active: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L19)
+Defined in: [sandkit/enums/index.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L19)
 
 ***
 
@@ -27873,13 +27873,13 @@ Defined in: [sandkit/enums/index.d.ts:19](https://github.com/sandustry-modding/S
 End: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L20)
+Defined in: [sandkit/enums/index.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L20)
 
 ---
 
 ## sandkit.enums.ActionType
 
-Defined in: [sandkit/enums/index.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L24)
+Defined in: [sandkit/enums/index.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L24)
 
 High-level action channel (weapon, building, tool, mod).
 
@@ -27893,7 +27893,7 @@ High-level action channel (weapon, building, tool, mod).
 Weapon: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L25)
+Defined in: [sandkit/enums/index.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L25)
 
 ***
 
@@ -27905,7 +27905,7 @@ Defined in: [sandkit/enums/index.d.ts:25](https://github.com/sandustry-modding/S
 Building: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L26)
+Defined in: [sandkit/enums/index.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L26)
 
 ***
 
@@ -27917,7 +27917,7 @@ Defined in: [sandkit/enums/index.d.ts:26](https://github.com/sandustry-modding/S
 Tool: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L27)
+Defined in: [sandkit/enums/index.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L27)
 
 ***
 
@@ -27929,13 +27929,13 @@ Defined in: [sandkit/enums/index.d.ts:27](https://github.com/sandustry-modding/S
 Mod: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L28)
+Defined in: [sandkit/enums/index.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L28)
 
 ---
 
 ## sandkit.enums.AuthorizationType
 
-Defined in: [sandkit/enums/index.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L32)
+Defined in: [sandkit/enums/index.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L32)
 
 Zone rules that restrict player abilities.
 
@@ -27949,7 +27949,7 @@ Zone rules that restrict player abilities.
 NoJetpack: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L33)
+Defined in: [sandkit/enums/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L33)
 
 ***
 
@@ -27961,7 +27961,7 @@ Defined in: [sandkit/enums/index.d.ts:33](https://github.com/sandustry-modding/S
 NoGrab: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L34)
+Defined in: [sandkit/enums/index.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L34)
 
 ***
 
@@ -27973,7 +27973,7 @@ Defined in: [sandkit/enums/index.d.ts:34](https://github.com/sandustry-modding/S
 NoBuild: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L35)
+Defined in: [sandkit/enums/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L35)
 
 ***
 
@@ -27985,7 +27985,7 @@ Defined in: [sandkit/enums/index.d.ts:35](https://github.com/sandustry-modding/S
 NoTool: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L36)
+Defined in: [sandkit/enums/index.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L36)
 
 ***
 
@@ -27997,7 +27997,7 @@ Defined in: [sandkit/enums/index.d.ts:36](https://github.com/sandustry-modding/S
 NoExcavation: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L37)
+Defined in: [sandkit/enums/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L37)
 
 ***
 
@@ -28009,13 +28009,13 @@ Defined in: [sandkit/enums/index.d.ts:37](https://github.com/sandustry-modding/S
 NoToolExceptFlamethrower: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L38)
+Defined in: [sandkit/enums/index.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L38)
 
 ---
 
 ## sandkit.enums.BuildingClearance
 
-Defined in: [sandkit/enums/index.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L48)
+Defined in: [sandkit/enums/index.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L48)
 
 Result of a build placement check.
 
@@ -28029,7 +28029,7 @@ Result of a build placement check.
 Available: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L49)
+Defined in: [sandkit/enums/index.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L49)
 
 ***
 
@@ -28041,7 +28041,7 @@ Defined in: [sandkit/enums/index.d.ts:49](https://github.com/sandustry-modding/S
 FullyBlocked: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L50)
+Defined in: [sandkit/enums/index.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L50)
 
 ***
 
@@ -28053,7 +28053,7 @@ Defined in: [sandkit/enums/index.d.ts:50](https://github.com/sandustry-modding/S
 PartiallyBlocked: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L51)
+Defined in: [sandkit/enums/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L51)
 
 ***
 
@@ -28065,13 +28065,13 @@ Defined in: [sandkit/enums/index.d.ts:51](https://github.com/sandustry-modding/S
 CanBeReplaced: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L52)
+Defined in: [sandkit/enums/index.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L52)
 
 ---
 
 ## sandkit.enums.BuildMode
 
-Defined in: [sandkit/enums/index.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L42)
+Defined in: [sandkit/enums/index.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L42)
 
 Linear vs rectangular structure placement.
 
@@ -28085,7 +28085,7 @@ Linear vs rectangular structure placement.
 Linear: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L43)
+Defined in: [sandkit/enums/index.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L43)
 
 ***
 
@@ -28097,13 +28097,13 @@ Defined in: [sandkit/enums/index.d.ts:43](https://github.com/sandustry-modding/S
 Rectangular: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L44)
+Defined in: [sandkit/enums/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L44)
 
 ---
 
 ## sandkit.enums.CellType
 
-Defined in: [sandkit/enums/index.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L56)
+Defined in: [sandkit/enums/index.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L56)
 
 Terrain / special cell kinds in the simulation grid.
 
@@ -28117,7 +28117,7 @@ Terrain / special cell kinds in the simulation grid.
 Empty: 0
 ```
 
-Defined in: [sandkit/enums/index.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L57)
+Defined in: [sandkit/enums/index.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L57)
 
 ***
 
@@ -28129,7 +28129,7 @@ Defined in: [sandkit/enums/index.d.ts:57](https://github.com/sandustry-modding/S
 Element: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L58)
+Defined in: [sandkit/enums/index.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L58)
 
 ***
 
@@ -28141,7 +28141,7 @@ Defined in: [sandkit/enums/index.d.ts:58](https://github.com/sandustry-modding/S
 Dirt: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L59)
+Defined in: [sandkit/enums/index.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L59)
 
 ***
 
@@ -28153,7 +28153,7 @@ Defined in: [sandkit/enums/index.d.ts:59](https://github.com/sandustry-modding/S
 SporeSoil: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L60)
+Defined in: [sandkit/enums/index.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L60)
 
 ***
 
@@ -28165,7 +28165,7 @@ Defined in: [sandkit/enums/index.d.ts:60](https://github.com/sandustry-modding/S
 Fog: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L61)
+Defined in: [sandkit/enums/index.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L61)
 
 ***
 
@@ -28177,7 +28177,7 @@ Defined in: [sandkit/enums/index.d.ts:61](https://github.com/sandustry-modding/S
 FogJetpackBlock: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L62)
+Defined in: [sandkit/enums/index.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L62)
 
 ***
 
@@ -28189,7 +28189,7 @@ Defined in: [sandkit/enums/index.d.ts:62](https://github.com/sandustry-modding/S
 FogWater: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L63)
+Defined in: [sandkit/enums/index.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L63)
 
 ***
 
@@ -28201,7 +28201,7 @@ Defined in: [sandkit/enums/index.d.ts:63](https://github.com/sandustry-modding/S
 FreezingIceSoil: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L64)
+Defined in: [sandkit/enums/index.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L64)
 
 ***
 
@@ -28213,7 +28213,7 @@ Defined in: [sandkit/enums/index.d.ts:64](https://github.com/sandustry-modding/S
 Divider: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L65)
+Defined in: [sandkit/enums/index.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L65)
 
 ***
 
@@ -28225,7 +28225,7 @@ Defined in: [sandkit/enums/index.d.ts:65](https://github.com/sandustry-modding/S
 Grass: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L66)
+Defined in: [sandkit/enums/index.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L66)
 
 ***
 
@@ -28237,7 +28237,7 @@ Defined in: [sandkit/enums/index.d.ts:66](https://github.com/sandustry-modding/S
 Moss: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L67)
+Defined in: [sandkit/enums/index.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L67)
 
 ***
 
@@ -28249,7 +28249,7 @@ Defined in: [sandkit/enums/index.d.ts:67](https://github.com/sandustry-modding/S
 GoldSoil: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L68)
+Defined in: [sandkit/enums/index.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L68)
 
 ***
 
@@ -28261,7 +28261,7 @@ Defined in: [sandkit/enums/index.d.ts:68](https://github.com/sandustry-modding/S
 Petal: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L69)
+Defined in: [sandkit/enums/index.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L69)
 
 ***
 
@@ -28273,7 +28273,7 @@ Defined in: [sandkit/enums/index.d.ts:69](https://github.com/sandustry-modding/S
 FogLava: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L70)
+Defined in: [sandkit/enums/index.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L70)
 
 ***
 
@@ -28285,7 +28285,7 @@ Defined in: [sandkit/enums/index.d.ts:70](https://github.com/sandustry-modding/S
 Fluxite: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L71)
+Defined in: [sandkit/enums/index.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L71)
 
 ***
 
@@ -28297,7 +28297,7 @@ Defined in: [sandkit/enums/index.d.ts:71](https://github.com/sandustry-modding/S
 Block: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L72)
+Defined in: [sandkit/enums/index.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L72)
 
 ***
 
@@ -28309,7 +28309,7 @@ Defined in: [sandkit/enums/index.d.ts:72](https://github.com/sandustry-modding/S
 SlidingBlock: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L73)
+Defined in: [sandkit/enums/index.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L73)
 
 ***
 
@@ -28321,7 +28321,7 @@ Defined in: [sandkit/enums/index.d.ts:73](https://github.com/sandustry-modding/S
 SlidingBlockLeft: 17
 ```
 
-Defined in: [sandkit/enums/index.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L74)
+Defined in: [sandkit/enums/index.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L74)
 
 ***
 
@@ -28333,7 +28333,7 @@ Defined in: [sandkit/enums/index.d.ts:74](https://github.com/sandustry-modding/S
 SlidingBlockRight: 18
 ```
 
-Defined in: [sandkit/enums/index.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L75)
+Defined in: [sandkit/enums/index.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L75)
 
 ***
 
@@ -28345,7 +28345,7 @@ Defined in: [sandkit/enums/index.d.ts:75](https://github.com/sandustry-modding/S
 ConveyorLeft: 19
 ```
 
-Defined in: [sandkit/enums/index.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L76)
+Defined in: [sandkit/enums/index.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L76)
 
 ***
 
@@ -28357,7 +28357,7 @@ Defined in: [sandkit/enums/index.d.ts:76](https://github.com/sandustry-modding/S
 ConveyorRight: 20
 ```
 
-Defined in: [sandkit/enums/index.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L77)
+Defined in: [sandkit/enums/index.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L77)
 
 ***
 
@@ -28369,7 +28369,7 @@ Defined in: [sandkit/enums/index.d.ts:77](https://github.com/sandustry-modding/S
 ShakerLeft: 21
 ```
 
-Defined in: [sandkit/enums/index.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L78)
+Defined in: [sandkit/enums/index.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L78)
 
 ***
 
@@ -28381,7 +28381,7 @@ Defined in: [sandkit/enums/index.d.ts:78](https://github.com/sandustry-modding/S
 ShakerRight: 22
 ```
 
-Defined in: [sandkit/enums/index.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L79)
+Defined in: [sandkit/enums/index.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L79)
 
 ***
 
@@ -28393,7 +28393,7 @@ Defined in: [sandkit/enums/index.d.ts:79](https://github.com/sandustry-modding/S
 Stone: 23
 ```
 
-Defined in: [sandkit/enums/index.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L80)
+Defined in: [sandkit/enums/index.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L80)
 
 ***
 
@@ -28405,7 +28405,7 @@ Defined in: [sandkit/enums/index.d.ts:80](https://github.com/sandustry-modding/S
 VelocitySoaker: 24
 ```
 
-Defined in: [sandkit/enums/index.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L81)
+Defined in: [sandkit/enums/index.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L81)
 
 ***
 
@@ -28417,7 +28417,7 @@ Defined in: [sandkit/enums/index.d.ts:81](https://github.com/sandustry-modding/S
 Ice: 25
 ```
 
-Defined in: [sandkit/enums/index.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L82)
+Defined in: [sandkit/enums/index.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L82)
 
 ***
 
@@ -28429,7 +28429,7 @@ Defined in: [sandkit/enums/index.d.ts:82](https://github.com/sandustry-modding/S
 Grower: 26
 ```
 
-Defined in: [sandkit/enums/index.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L83)
+Defined in: [sandkit/enums/index.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L83)
 
 ***
 
@@ -28441,7 +28441,7 @@ Defined in: [sandkit/enums/index.d.ts:83](https://github.com/sandustry-modding/S
 NascentWater: 27
 ```
 
-Defined in: [sandkit/enums/index.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L84)
+Defined in: [sandkit/enums/index.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L84)
 
 ***
 
@@ -28453,7 +28453,7 @@ Defined in: [sandkit/enums/index.d.ts:84](https://github.com/sandustry-modding/S
 SandiumSoil: 28
 ```
 
-Defined in: [sandkit/enums/index.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L85)
+Defined in: [sandkit/enums/index.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L85)
 
 ***
 
@@ -28465,7 +28465,7 @@ Defined in: [sandkit/enums/index.d.ts:85](https://github.com/sandustry-modding/S
 Obsidian: 29
 ```
 
-Defined in: [sandkit/enums/index.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L86)
+Defined in: [sandkit/enums/index.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L86)
 
 ***
 
@@ -28477,13 +28477,13 @@ Defined in: [sandkit/enums/index.d.ts:86](https://github.com/sandustry-modding/S
 Crackstone: 30
 ```
 
-Defined in: [sandkit/enums/index.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L87)
+Defined in: [sandkit/enums/index.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L87)
 
 ---
 
 ## sandkit.enums.ComponentId
 
-Defined in: [sandkit/enums/index.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L91)
+Defined in: [sandkit/enums/index.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L91)
 
 UI component ids for HUD and menu routing.
 
@@ -28497,7 +28497,7 @@ UI component ids for HUD and menu routing.
 Hotbar: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L92)
+Defined in: [sandkit/enums/index.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L92)
 
 ***
 
@@ -28509,7 +28509,7 @@ Defined in: [sandkit/enums/index.d.ts:92](https://github.com/sandustry-modding/S
 SoundBoxConfig: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L93)
+Defined in: [sandkit/enums/index.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L93)
 
 ***
 
@@ -28521,7 +28521,7 @@ Defined in: [sandkit/enums/index.d.ts:93](https://github.com/sandustry-modding/S
 Root: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L94)
+Defined in: [sandkit/enums/index.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L94)
 
 ***
 
@@ -28533,7 +28533,7 @@ Defined in: [sandkit/enums/index.d.ts:94](https://github.com/sandustry-modding/S
 Menu: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L95)
+Defined in: [sandkit/enums/index.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L95)
 
 ***
 
@@ -28545,7 +28545,7 @@ Defined in: [sandkit/enums/index.d.ts:95](https://github.com/sandustry-modding/S
 Management: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L96)
+Defined in: [sandkit/enums/index.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L96)
 
 ***
 
@@ -28557,7 +28557,7 @@ Defined in: [sandkit/enums/index.d.ts:96](https://github.com/sandustry-modding/S
 FilterConfig: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L97)
+Defined in: [sandkit/enums/index.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L97)
 
 ***
 
@@ -28569,7 +28569,7 @@ Defined in: [sandkit/enums/index.d.ts:97](https://github.com/sandustry-modding/S
 Resources: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L98)
+Defined in: [sandkit/enums/index.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L98)
 
 ***
 
@@ -28581,7 +28581,7 @@ Defined in: [sandkit/enums/index.d.ts:98](https://github.com/sandustry-modding/S
 TechTree: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L99)
+Defined in: [sandkit/enums/index.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L99)
 
 ***
 
@@ -28593,7 +28593,7 @@ Defined in: [sandkit/enums/index.d.ts:99](https://github.com/sandustry-modding/S
 Tutorial: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L100)
+Defined in: [sandkit/enums/index.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L100)
 
 ***
 
@@ -28605,7 +28605,7 @@ Defined in: [sandkit/enums/index.d.ts:100](https://github.com/sandustry-modding/
 Loader: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L101)
+Defined in: [sandkit/enums/index.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L101)
 
 ***
 
@@ -28617,7 +28617,7 @@ Defined in: [sandkit/enums/index.d.ts:101](https://github.com/sandustry-modding/
 Options: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L102)
+Defined in: [sandkit/enums/index.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L102)
 
 ***
 
@@ -28629,7 +28629,7 @@ Defined in: [sandkit/enums/index.d.ts:102](https://github.com/sandustry-modding/
 ShortcutHelper: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L103)
+Defined in: [sandkit/enums/index.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L103)
 
 ***
 
@@ -28641,7 +28641,7 @@ Defined in: [sandkit/enums/index.d.ts:103](https://github.com/sandustry-modding/
 Upgrades: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L104)
+Defined in: [sandkit/enums/index.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L104)
 
 ***
 
@@ -28653,7 +28653,7 @@ Defined in: [sandkit/enums/index.d.ts:104](https://github.com/sandustry-modding/
 Tooltip: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L105)
+Defined in: [sandkit/enums/index.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L105)
 
 ***
 
@@ -28665,7 +28665,7 @@ Defined in: [sandkit/enums/index.d.ts:105](https://github.com/sandustry-modding/
 Notifications: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L106)
+Defined in: [sandkit/enums/index.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L106)
 
 ***
 
@@ -28677,7 +28677,7 @@ Defined in: [sandkit/enums/index.d.ts:106](https://github.com/sandustry-modding/
 Objectives: 17
 ```
 
-Defined in: [sandkit/enums/index.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L107)
+Defined in: [sandkit/enums/index.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L107)
 
 ***
 
@@ -28689,7 +28689,7 @@ Defined in: [sandkit/enums/index.d.ts:107](https://github.com/sandustry-modding/
 DroneAdminList: 18
 ```
 
-Defined in: [sandkit/enums/index.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L108)
+Defined in: [sandkit/enums/index.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L108)
 
 ***
 
@@ -28701,7 +28701,7 @@ Defined in: [sandkit/enums/index.d.ts:108](https://github.com/sandustry-modding/
 HotbarOverlays: 19
 ```
 
-Defined in: [sandkit/enums/index.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L109)
+Defined in: [sandkit/enums/index.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L109)
 
 ***
 
@@ -28713,7 +28713,7 @@ Defined in: [sandkit/enums/index.d.ts:109](https://github.com/sandustry-modding/
 IntroScreen: 20
 ```
 
-Defined in: [sandkit/enums/index.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L110)
+Defined in: [sandkit/enums/index.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L110)
 
 ***
 
@@ -28725,7 +28725,7 @@ Defined in: [sandkit/enums/index.d.ts:110](https://github.com/sandustry-modding/
 StoryNotifications: 21
 ```
 
-Defined in: [sandkit/enums/index.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L111)
+Defined in: [sandkit/enums/index.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L111)
 
 ***
 
@@ -28737,7 +28737,7 @@ Defined in: [sandkit/enums/index.d.ts:111](https://github.com/sandustry-modding/
 FactoryProgress: 22
 ```
 
-Defined in: [sandkit/enums/index.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L112)
+Defined in: [sandkit/enums/index.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L112)
 
 ***
 
@@ -28749,7 +28749,7 @@ Defined in: [sandkit/enums/index.d.ts:112](https://github.com/sandustry-modding/
 Dialogs: 23
 ```
 
-Defined in: [sandkit/enums/index.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L113)
+Defined in: [sandkit/enums/index.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L113)
 
 ***
 
@@ -28761,7 +28761,7 @@ Defined in: [sandkit/enums/index.d.ts:113](https://github.com/sandustry-modding/
 GlobalOverlays: 24
 ```
 
-Defined in: [sandkit/enums/index.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L114)
+Defined in: [sandkit/enums/index.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L114)
 
 ***
 
@@ -28773,7 +28773,7 @@ Defined in: [sandkit/enums/index.d.ts:114](https://github.com/sandustry-modding/
 Lexicon: 25
 ```
 
-Defined in: [sandkit/enums/index.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L115)
+Defined in: [sandkit/enums/index.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L115)
 
 ***
 
@@ -28785,7 +28785,7 @@ Defined in: [sandkit/enums/index.d.ts:115](https://github.com/sandustry-modding/
 ModsScreen: 26
 ```
 
-Defined in: [sandkit/enums/index.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L116)
+Defined in: [sandkit/enums/index.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L116)
 
 ***
 
@@ -28797,7 +28797,7 @@ Defined in: [sandkit/enums/index.d.ts:116](https://github.com/sandustry-modding/
 CustomMapsScreen: 27
 ```
 
-Defined in: [sandkit/enums/index.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L117)
+Defined in: [sandkit/enums/index.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L117)
 
 ***
 
@@ -28809,7 +28809,7 @@ Defined in: [sandkit/enums/index.d.ts:117](https://github.com/sandustry-modding/
 CinematicPanel: 28
 ```
 
-Defined in: [sandkit/enums/index.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L118)
+Defined in: [sandkit/enums/index.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L118)
 
 ***
 
@@ -28821,13 +28821,13 @@ Defined in: [sandkit/enums/index.d.ts:118](https://github.com/sandustry-modding/
 Feedback: 29
 ```
 
-Defined in: [sandkit/enums/index.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L119)
+Defined in: [sandkit/enums/index.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L119)
 
 ---
 
 ## sandkit.enums.DroneType
 
-Defined in: [sandkit/enums/index.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L123)
+Defined in: [sandkit/enums/index.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L123)
 
 Autonomous drone kinds.
 
@@ -28841,7 +28841,7 @@ Autonomous drone kinds.
 Digger: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L124)
+Defined in: [sandkit/enums/index.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L124)
 
 ***
 
@@ -28853,13 +28853,13 @@ Defined in: [sandkit/enums/index.d.ts:124](https://github.com/sandustry-modding/
 Hauler: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L125)
+Defined in: [sandkit/enums/index.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L125)
 
 ---
 
 ## sandkit.enums.ElementType
 
-Defined in: [sandkit/enums/index.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L129)
+Defined in: [sandkit/enums/index.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L129)
 
 Built-in element type ids (prefer API string ids when registering mods).
 
@@ -28873,7 +28873,7 @@ Built-in element type ids (prefer API string ids when registering mods).
 Sand: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L130)
+Defined in: [sandkit/enums/index.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L130)
 
 ***
 
@@ -28885,7 +28885,7 @@ Defined in: [sandkit/enums/index.d.ts:130](https://github.com/sandustry-modding/
 Particle: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L131)
+Defined in: [sandkit/enums/index.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L131)
 
 ***
 
@@ -28897,7 +28897,7 @@ Defined in: [sandkit/enums/index.d.ts:131](https://github.com/sandustry-modding/
 Water: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L132)
+Defined in: [sandkit/enums/index.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L132)
 
 ***
 
@@ -28909,7 +28909,7 @@ Defined in: [sandkit/enums/index.d.ts:132](https://github.com/sandustry-modding/
 WetSand: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L133)
+Defined in: [sandkit/enums/index.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L133)
 
 ***
 
@@ -28921,7 +28921,7 @@ Defined in: [sandkit/enums/index.d.ts:133](https://github.com/sandustry-modding/
 Sandium: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L134)
+Defined in: [sandkit/enums/index.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L134)
 
 ***
 
@@ -28933,7 +28933,7 @@ Defined in: [sandkit/enums/index.d.ts:134](https://github.com/sandustry-modding/
 Residue: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L135)
+Defined in: [sandkit/enums/index.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L135)
 
 ***
 
@@ -28945,7 +28945,7 @@ Defined in: [sandkit/enums/index.d.ts:135](https://github.com/sandustry-modding/
 Gold: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L136)
+Defined in: [sandkit/enums/index.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L136)
 
 ***
 
@@ -28957,7 +28957,7 @@ Defined in: [sandkit/enums/index.d.ts:136](https://github.com/sandustry-modding/
 Gloom: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L137)
+Defined in: [sandkit/enums/index.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L137)
 
 ***
 
@@ -28969,7 +28969,7 @@ Defined in: [sandkit/enums/index.d.ts:137](https://github.com/sandustry-modding/
 Shake: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L138)
+Defined in: [sandkit/enums/index.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L138)
 
 ***
 
@@ -28981,7 +28981,7 @@ Defined in: [sandkit/enums/index.d.ts:138](https://github.com/sandustry-modding/
 Steam: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L139)
+Defined in: [sandkit/enums/index.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L139)
 
 ***
 
@@ -28993,7 +28993,7 @@ Defined in: [sandkit/enums/index.d.ts:139](https://github.com/sandustry-modding/
 Fire: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L140)
+Defined in: [sandkit/enums/index.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L140)
 
 ***
 
@@ -29005,7 +29005,7 @@ Defined in: [sandkit/enums/index.d.ts:140](https://github.com/sandustry-modding/
 FreezingIce: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L141)
+Defined in: [sandkit/enums/index.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L141)
 
 ***
 
@@ -29017,7 +29017,7 @@ Defined in: [sandkit/enums/index.d.ts:141](https://github.com/sandustry-modding/
 Flame: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L142)
+Defined in: [sandkit/enums/index.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L142)
 
 ***
 
@@ -29029,7 +29029,7 @@ Defined in: [sandkit/enums/index.d.ts:142](https://github.com/sandustry-modding/
 BurntResidue: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L143)
+Defined in: [sandkit/enums/index.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L143)
 
 ***
 
@@ -29041,7 +29041,7 @@ Defined in: [sandkit/enums/index.d.ts:143](https://github.com/sandustry-modding/
 Seed: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L144)
+Defined in: [sandkit/enums/index.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L144)
 
 ***
 
@@ -29053,7 +29053,7 @@ Defined in: [sandkit/enums/index.d.ts:144](https://github.com/sandustry-modding/
 WetSeed: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L145)
+Defined in: [sandkit/enums/index.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L145)
 
 ***
 
@@ -29065,7 +29065,7 @@ Defined in: [sandkit/enums/index.d.ts:145](https://github.com/sandustry-modding/
 Seedling: 17
 ```
 
-Defined in: [sandkit/enums/index.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L146)
+Defined in: [sandkit/enums/index.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L146)
 
 ***
 
@@ -29077,7 +29077,7 @@ Defined in: [sandkit/enums/index.d.ts:146](https://github.com/sandustry-modding/
 Petalium: 18
 ```
 
-Defined in: [sandkit/enums/index.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L147)
+Defined in: [sandkit/enums/index.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L147)
 
 ***
 
@@ -29089,7 +29089,7 @@ Defined in: [sandkit/enums/index.d.ts:147](https://github.com/sandustry-modding/
 Lava: 19
 ```
 
-Defined in: [sandkit/enums/index.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L148)
+Defined in: [sandkit/enums/index.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L148)
 
 ***
 
@@ -29101,13 +29101,13 @@ Defined in: [sandkit/enums/index.d.ts:148](https://github.com/sandustry-modding/
 Basalt: 20
 ```
 
-Defined in: [sandkit/enums/index.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L149)
+Defined in: [sandkit/enums/index.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L149)
 
 ---
 
 ## sandkit.enums.ItemId
 
-Defined in: [sandkit/enums/index.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L153)
+Defined in: [sandkit/enums/index.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L153)
 
 Built-in hotbar item ids.
 
@@ -29121,7 +29121,7 @@ Built-in hotbar item ids.
 Shovel: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L154)
+Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L154)
 
 ***
 
@@ -29133,7 +29133,7 @@ Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/
 Grabber: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L155)
+Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L155)
 
 ***
 
@@ -29145,7 +29145,7 @@ Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/
 Demolisher: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L156)
+Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L156)
 
 ***
 
@@ -29157,7 +29157,7 @@ Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/
 GrapplingHook: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L157)
+Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L157)
 
 ***
 
@@ -29169,7 +29169,7 @@ Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/
 Vacuum: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L158)
+Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L158)
 
 ***
 
@@ -29181,7 +29181,7 @@ Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/
 Gun: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L159)
+Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L159)
 
 ***
 
@@ -29193,7 +29193,7 @@ Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/
 Copier: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L160)
+Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L160)
 
 ***
 
@@ -29205,7 +29205,7 @@ Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/
 RocketLauncher: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L161)
+Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L161)
 
 ***
 
@@ -29217,7 +29217,7 @@ Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/
 Digger: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L162)
+Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L162)
 
 ***
 
@@ -29229,7 +29229,7 @@ Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/
 Shotgun: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L163)
+Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L163)
 
 ***
 
@@ -29241,7 +29241,7 @@ Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/
 Teleporter: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L164)
+Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L164)
 
 ***
 
@@ -29253,7 +29253,7 @@ Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/
 Flamethrower: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L165)
+Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L165)
 
 ***
 
@@ -29265,7 +29265,7 @@ Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/
 PipeRemover: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L166)
+Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L166)
 
 ***
 
@@ -29277,7 +29277,7 @@ Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/
 Hauler: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L167)
+Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L167)
 
 ***
 
@@ -29289,7 +29289,7 @@ Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/
 Cryoblaster: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L168)
+Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L168)
 
 ***
 
@@ -29301,13 +29301,13 @@ Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/
 MegaShotgun: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L169)
+Defined in: [sandkit/enums/index.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L169)
 
 ---
 
 ## sandkit.enums.ItemType
 
-Defined in: [sandkit/enums/index.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L173)
+Defined in: [sandkit/enums/index.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L173)
 
 Item category (weapon, tool, consumable, mod).
 
@@ -29321,7 +29321,7 @@ Item category (weapon, tool, consumable, mod).
 Weapon: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L174)
+Defined in: [sandkit/enums/index.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L174)
 
 ***
 
@@ -29333,7 +29333,7 @@ Defined in: [sandkit/enums/index.d.ts:174](https://github.com/sandustry-modding/
 Tool: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:175](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L175)
+Defined in: [sandkit/enums/index.d.ts:175](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L175)
 
 ***
 
@@ -29345,7 +29345,7 @@ Defined in: [sandkit/enums/index.d.ts:175](https://github.com/sandustry-modding/
 Consumable: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:176](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L176)
+Defined in: [sandkit/enums/index.d.ts:176](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L176)
 
 ***
 
@@ -29357,13 +29357,13 @@ Defined in: [sandkit/enums/index.d.ts:176](https://github.com/sandustry-modding/
 Mod: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L177)
+Defined in: [sandkit/enums/index.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L177)
 
 ---
 
 ## sandkit.enums.KeyBinding
 
-Defined in: [sandkit/enums/index.d.ts:181](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L181)
+Defined in: [sandkit/enums/index.d.ts:181](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L181)
 
 Named input bindings (settings keys).
 
@@ -29377,7 +29377,7 @@ Named input bindings (settings keys).
 OpenBuildMenu: "OpenBuildMenu"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L182)
+Defined in: [sandkit/enums/index.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L182)
 
 ***
 
@@ -29389,7 +29389,7 @@ Defined in: [sandkit/enums/index.d.ts:182](https://github.com/sandustry-modding/
 GrapplingHook: "GrapplingHook"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L183)
+Defined in: [sandkit/enums/index.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L183)
 
 ***
 
@@ -29401,7 +29401,7 @@ Defined in: [sandkit/enums/index.d.ts:183](https://github.com/sandustry-modding/
 Escape: "Escape"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L184)
+Defined in: [sandkit/enums/index.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L184)
 
 ***
 
@@ -29413,7 +29413,7 @@ Defined in: [sandkit/enums/index.d.ts:184](https://github.com/sandustry-modding/
 OpenTechTree: "OpenTechTree"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L185)
+Defined in: [sandkit/enums/index.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L185)
 
 ***
 
@@ -29425,7 +29425,7 @@ Defined in: [sandkit/enums/index.d.ts:185](https://github.com/sandustry-modding/
 OpenInventory: "OpenInventory"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:186](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L186)
+Defined in: [sandkit/enums/index.d.ts:186](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L186)
 
 ***
 
@@ -29437,7 +29437,7 @@ Defined in: [sandkit/enums/index.d.ts:186](https://github.com/sandustry-modding/
 ReverseBuildDirection: "ReverseBuildDirection"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:187](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L187)
+Defined in: [sandkit/enums/index.d.ts:187](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L187)
 
 ***
 
@@ -29449,7 +29449,7 @@ Defined in: [sandkit/enums/index.d.ts:187](https://github.com/sandustry-modding/
 Marquee: "Marquee"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L188)
+Defined in: [sandkit/enums/index.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L188)
 
 ***
 
@@ -29461,7 +29461,7 @@ Defined in: [sandkit/enums/index.d.ts:188](https://github.com/sandustry-modding/
 Pause: "Pause"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L189)
+Defined in: [sandkit/enums/index.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L189)
 
 ***
 
@@ -29473,7 +29473,7 @@ Defined in: [sandkit/enums/index.d.ts:189](https://github.com/sandustry-modding/
 Copy: "Copy"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L190)
+Defined in: [sandkit/enums/index.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L190)
 
 ***
 
@@ -29485,7 +29485,7 @@ Defined in: [sandkit/enums/index.d.ts:190](https://github.com/sandustry-modding/
 Paste: "Paste"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L191)
+Defined in: [sandkit/enums/index.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L191)
 
 ***
 
@@ -29497,7 +29497,7 @@ Defined in: [sandkit/enums/index.d.ts:191](https://github.com/sandustry-modding/
 Flip: "Flip"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L192)
+Defined in: [sandkit/enums/index.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L192)
 
 ***
 
@@ -29509,7 +29509,7 @@ Defined in: [sandkit/enums/index.d.ts:192](https://github.com/sandustry-modding/
 Delete: "Delete"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L193)
+Defined in: [sandkit/enums/index.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L193)
 
 ***
 
@@ -29521,7 +29521,7 @@ Defined in: [sandkit/enums/index.d.ts:193](https://github.com/sandustry-modding/
 PauseCamera: "PauseCamera"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L194)
+Defined in: [sandkit/enums/index.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L194)
 
 ***
 
@@ -29533,7 +29533,7 @@ Defined in: [sandkit/enums/index.d.ts:194](https://github.com/sandustry-modding/
 OpenUpgrades: "OpenUpgrades"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L195)
+Defined in: [sandkit/enums/index.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L195)
 
 ***
 
@@ -29545,7 +29545,7 @@ Defined in: [sandkit/enums/index.d.ts:195](https://github.com/sandustry-modding/
 BuildMode: "BuildMode"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L196)
+Defined in: [sandkit/enums/index.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L196)
 
 ***
 
@@ -29557,7 +29557,7 @@ Defined in: [sandkit/enums/index.d.ts:196](https://github.com/sandustry-modding/
 Demolish: "Demolish"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L197)
+Defined in: [sandkit/enums/index.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L197)
 
 ***
 
@@ -29569,7 +29569,7 @@ Defined in: [sandkit/enums/index.d.ts:197](https://github.com/sandustry-modding/
 Hover: "Hover"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:198](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L198)
+Defined in: [sandkit/enums/index.d.ts:198](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L198)
 
 ***
 
@@ -29581,7 +29581,7 @@ Defined in: [sandkit/enums/index.d.ts:198](https://github.com/sandustry-modding/
 Ruler: "Ruler"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L199)
+Defined in: [sandkit/enums/index.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L199)
 
 ***
 
@@ -29593,7 +29593,7 @@ Defined in: [sandkit/enums/index.d.ts:199](https://github.com/sandustry-modding/
 Left: "Left"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L200)
+Defined in: [sandkit/enums/index.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L200)
 
 ***
 
@@ -29605,7 +29605,7 @@ Defined in: [sandkit/enums/index.d.ts:200](https://github.com/sandustry-modding/
 Right: "Right"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L201)
+Defined in: [sandkit/enums/index.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L201)
 
 ***
 
@@ -29617,7 +29617,7 @@ Defined in: [sandkit/enums/index.d.ts:201](https://github.com/sandustry-modding/
 Boost: "Boost"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L202)
+Defined in: [sandkit/enums/index.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L202)
 
 ***
 
@@ -29629,7 +29629,7 @@ Defined in: [sandkit/enums/index.d.ts:202](https://github.com/sandustry-modding/
 Descend: "Descend"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L203)
+Defined in: [sandkit/enums/index.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L203)
 
 ***
 
@@ -29641,7 +29641,7 @@ Defined in: [sandkit/enums/index.d.ts:203](https://github.com/sandustry-modding/
 SprintBoost: "SprintBoost"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L204)
+Defined in: [sandkit/enums/index.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L204)
 
 ***
 
@@ -29653,7 +29653,7 @@ Defined in: [sandkit/enums/index.d.ts:204](https://github.com/sandustry-modding/
 OverrideReplaceStructures: "OverrideReplaceStructures"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L205)
+Defined in: [sandkit/enums/index.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L205)
 
 ***
 
@@ -29665,7 +29665,7 @@ Defined in: [sandkit/enums/index.d.ts:205](https://github.com/sandustry-modding/
 QuickSave: "QuickSave"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L206)
+Defined in: [sandkit/enums/index.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L206)
 
 ***
 
@@ -29677,7 +29677,7 @@ Defined in: [sandkit/enums/index.d.ts:206](https://github.com/sandustry-modding/
 QuickLoad: "QuickLoad"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:207](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L207)
+Defined in: [sandkit/enums/index.d.ts:207](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L207)
 
 ***
 
@@ -29689,13 +29689,13 @@ Defined in: [sandkit/enums/index.d.ts:207](https://github.com/sandustry-modding/
 ToggleGameHud: "ToggleGameHud"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L208)
+Defined in: [sandkit/enums/index.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L208)
 
 ---
 
 ## sandkit.enums.KeyState
 
-Defined in: [sandkit/enums/index.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L212)
+Defined in: [sandkit/enums/index.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L212)
 
 Key transition state for input polling.
 
@@ -29709,7 +29709,7 @@ Key transition state for input polling.
 Up: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:213](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L213)
+Defined in: [sandkit/enums/index.d.ts:213](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L213)
 
 ***
 
@@ -29721,7 +29721,7 @@ Defined in: [sandkit/enums/index.d.ts:213](https://github.com/sandustry-modding/
 Down: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L214)
+Defined in: [sandkit/enums/index.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L214)
 
 ***
 
@@ -29733,7 +29733,7 @@ Defined in: [sandkit/enums/index.d.ts:214](https://github.com/sandustry-modding/
 Pressed: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:215](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L215)
+Defined in: [sandkit/enums/index.d.ts:215](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L215)
 
 ***
 
@@ -29745,7 +29745,7 @@ Defined in: [sandkit/enums/index.d.ts:215](https://github.com/sandustry-modding/
 Released: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L216)
+Defined in: [sandkit/enums/index.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L216)
 
 ***
 
@@ -29757,13 +29757,13 @@ Defined in: [sandkit/enums/index.d.ts:216](https://github.com/sandustry-modding/
 All: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:217](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L217)
+Defined in: [sandkit/enums/index.d.ts:217](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L217)
 
 ---
 
 ## sandkit.enums.MatterType
 
-Defined in: [sandkit/enums/index.d.ts:221](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L221)
+Defined in: [sandkit/enums/index.d.ts:221](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L221)
 
 Physical behaviour category for elements (mirrors shared API enum).
 
@@ -29777,7 +29777,7 @@ Physical behaviour category for elements (mirrors shared API enum).
 Solid: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:222](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L222)
+Defined in: [sandkit/enums/index.d.ts:222](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L222)
 
 ***
 
@@ -29789,7 +29789,7 @@ Defined in: [sandkit/enums/index.d.ts:222](https://github.com/sandustry-modding/
 Liquid: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L223)
+Defined in: [sandkit/enums/index.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L223)
 
 ***
 
@@ -29801,7 +29801,7 @@ Defined in: [sandkit/enums/index.d.ts:223](https://github.com/sandustry-modding/
 Particle: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L224)
+Defined in: [sandkit/enums/index.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L224)
 
 ***
 
@@ -29813,7 +29813,7 @@ Defined in: [sandkit/enums/index.d.ts:224](https://github.com/sandustry-modding/
 Gas: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L225)
+Defined in: [sandkit/enums/index.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L225)
 
 ***
 
@@ -29825,7 +29825,7 @@ Defined in: [sandkit/enums/index.d.ts:225](https://github.com/sandustry-modding/
 Static: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:226](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L226)
+Defined in: [sandkit/enums/index.d.ts:226](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L226)
 
 ***
 
@@ -29837,7 +29837,7 @@ Defined in: [sandkit/enums/index.d.ts:226](https://github.com/sandustry-modding/
 Slushy: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:227](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L227)
+Defined in: [sandkit/enums/index.d.ts:227](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L227)
 
 ***
 
@@ -29849,7 +29849,7 @@ Defined in: [sandkit/enums/index.d.ts:227](https://github.com/sandustry-modding/
 Wisp: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:228](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L228)
+Defined in: [sandkit/enums/index.d.ts:228](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L228)
 
 ***
 
@@ -29861,13 +29861,13 @@ Defined in: [sandkit/enums/index.d.ts:228](https://github.com/sandustry-modding/
 Powder: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:229](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L229)
+Defined in: [sandkit/enums/index.d.ts:229](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L229)
 
 ---
 
 ## sandkit.enums.PickupType
 
-Defined in: [sandkit/enums/index.d.ts:413](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L413)
+Defined in: [sandkit/enums/index.d.ts:413](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L413)
 
 Pickups and interactable world items.
 
@@ -29881,7 +29881,7 @@ Pickups and interactable world items.
 Artifact: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:414](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L414)
+Defined in: [sandkit/enums/index.d.ts:414](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L414)
 
 ***
 
@@ -29893,7 +29893,7 @@ Defined in: [sandkit/enums/index.d.ts:414](https://github.com/sandustry-modding/
 GlyphKey: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:415](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L415)
+Defined in: [sandkit/enums/index.d.ts:415](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L415)
 
 ***
 
@@ -29905,7 +29905,7 @@ Defined in: [sandkit/enums/index.d.ts:415](https://github.com/sandustry-modding/
 Stratacore: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:416](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L416)
+Defined in: [sandkit/enums/index.d.ts:416](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L416)
 
 ***
 
@@ -29917,13 +29917,13 @@ Defined in: [sandkit/enums/index.d.ts:416](https://github.com/sandustry-modding/
 Orb: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L417)
+Defined in: [sandkit/enums/index.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L417)
 
 ---
 
 ## sandkit.enums.ProjectileType
 
-Defined in: [sandkit/enums/index.d.ts:233](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L233)
+Defined in: [sandkit/enums/index.d.ts:233](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L233)
 
 Projectile kinds spawned by weapons and tools.
 
@@ -29937,7 +29937,7 @@ Projectile kinds spawned by weapons and tools.
 Bullet: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:234](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L234)
+Defined in: [sandkit/enums/index.d.ts:234](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L234)
 
 ***
 
@@ -29949,7 +29949,7 @@ Defined in: [sandkit/enums/index.d.ts:234](https://github.com/sandustry-modding/
 Rocket: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:235](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L235)
+Defined in: [sandkit/enums/index.d.ts:235](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L235)
 
 ***
 
@@ -29961,7 +29961,7 @@ Defined in: [sandkit/enums/index.d.ts:235](https://github.com/sandustry-modding/
 GrapplingHook: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:236](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L236)
+Defined in: [sandkit/enums/index.d.ts:236](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L236)
 
 ***
 
@@ -29973,7 +29973,7 @@ Defined in: [sandkit/enums/index.d.ts:236](https://github.com/sandustry-modding/
 Fire: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:237](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L237)
+Defined in: [sandkit/enums/index.d.ts:237](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L237)
 
 ***
 
@@ -29985,7 +29985,7 @@ Defined in: [sandkit/enums/index.d.ts:237](https://github.com/sandustry-modding/
 Digger: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:238](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L238)
+Defined in: [sandkit/enums/index.d.ts:238](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L238)
 
 ***
 
@@ -29997,13 +29997,13 @@ Defined in: [sandkit/enums/index.d.ts:238](https://github.com/sandustry-modding/
 Mod: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:239](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L239)
+Defined in: [sandkit/enums/index.d.ts:239](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L239)
 
 ---
 
 ## sandkit.enums.ReloadType
 
-Defined in: [sandkit/enums/index.d.ts:243](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L243)
+Defined in: [sandkit/enums/index.d.ts:243](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L243)
 
 Weapon reload behaviour.
 
@@ -30017,7 +30017,7 @@ Weapon reload behaviour.
 Clip: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:244](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L244)
+Defined in: [sandkit/enums/index.d.ts:244](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L244)
 
 ***
 
@@ -30029,7 +30029,7 @@ Defined in: [sandkit/enums/index.d.ts:244](https://github.com/sandustry-modding/
 Single: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:245](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L245)
+Defined in: [sandkit/enums/index.d.ts:245](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L245)
 
 ***
 
@@ -30041,13 +30041,13 @@ Defined in: [sandkit/enums/index.d.ts:245](https://github.com/sandustry-modding/
 OverTime: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L246)
+Defined in: [sandkit/enums/index.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L246)
 
 ---
 
 ## sandkit.enums.Scene
 
-Defined in: [sandkit/enums/index.d.ts:250](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L250)
+Defined in: [sandkit/enums/index.d.ts:250](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L250)
 
 Top-level game scene (menu, intro, deploy, in-game).
 
@@ -30061,7 +30061,7 @@ Top-level game scene (menu, intro, deploy, in-game).
 MainMenu: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L251)
+Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L251)
 
 ***
 
@@ -30073,7 +30073,7 @@ Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/
 Intro: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L252)
+Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L252)
 
 ***
 
@@ -30085,7 +30085,7 @@ Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/
 Deploy: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L253)
+Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L253)
 
 ***
 
@@ -30097,13 +30097,13 @@ Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/
 Game: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L254)
+Defined in: [sandkit/enums/index.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L254)
 
 ---
 
 ## sandkit.enums.StructureType
 
-Defined in: [sandkit/enums/index.d.ts:258](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L258)
+Defined in: [sandkit/enums/index.d.ts:258](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L258)
 
 Built-in structure type ids.
 
@@ -30117,7 +30117,7 @@ Built-in structure type ids.
 ConveyorLeft: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:259](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L259)
+Defined in: [sandkit/enums/index.d.ts:259](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L259)
 
 ***
 
@@ -30129,7 +30129,7 @@ Defined in: [sandkit/enums/index.d.ts:259](https://github.com/sandustry-modding/
 ConveyorRight: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:260](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L260)
+Defined in: [sandkit/enums/index.d.ts:260](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L260)
 
 ***
 
@@ -30141,7 +30141,7 @@ Defined in: [sandkit/enums/index.d.ts:260](https://github.com/sandustry-modding/
 ShakerLeft: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:261](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L261)
+Defined in: [sandkit/enums/index.d.ts:261](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L261)
 
 ***
 
@@ -30153,7 +30153,7 @@ Defined in: [sandkit/enums/index.d.ts:261](https://github.com/sandustry-modding/
 ShakerRight: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:262](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L262)
+Defined in: [sandkit/enums/index.d.ts:262](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L262)
 
 ***
 
@@ -30165,7 +30165,7 @@ Defined in: [sandkit/enums/index.d.ts:262](https://github.com/sandustry-modding/
 LauncherUp: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:263](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L263)
+Defined in: [sandkit/enums/index.d.ts:263](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L263)
 
 ***
 
@@ -30177,7 +30177,7 @@ Defined in: [sandkit/enums/index.d.ts:263](https://github.com/sandustry-modding/
 LauncherLeft: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:264](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L264)
+Defined in: [sandkit/enums/index.d.ts:264](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L264)
 
 ***
 
@@ -30189,7 +30189,7 @@ Defined in: [sandkit/enums/index.d.ts:264](https://github.com/sandustry-modding/
 LauncherRight: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:265](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L265)
+Defined in: [sandkit/enums/index.d.ts:265](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L265)
 
 ***
 
@@ -30201,7 +30201,7 @@ Defined in: [sandkit/enums/index.d.ts:265](https://github.com/sandustry-modding/
 SplitterLeft: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:266](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L266)
+Defined in: [sandkit/enums/index.d.ts:266](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L266)
 
 ***
 
@@ -30213,7 +30213,7 @@ Defined in: [sandkit/enums/index.d.ts:266](https://github.com/sandustry-modding/
 SplitterRight: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:267](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L267)
+Defined in: [sandkit/enums/index.d.ts:267](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L267)
 
 ***
 
@@ -30225,7 +30225,7 @@ Defined in: [sandkit/enums/index.d.ts:267](https://github.com/sandustry-modding/
 Dropper: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:268](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L268)
+Defined in: [sandkit/enums/index.d.ts:268](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L268)
 
 ***
 
@@ -30237,7 +30237,7 @@ Defined in: [sandkit/enums/index.d.ts:268](https://github.com/sandustry-modding/
 Foundation: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:269](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L269)
+Defined in: [sandkit/enums/index.d.ts:269](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L269)
 
 ***
 
@@ -30249,7 +30249,7 @@ Defined in: [sandkit/enums/index.d.ts:269](https://github.com/sandustry-modding/
 FoundationAngledLeft: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:270](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L270)
+Defined in: [sandkit/enums/index.d.ts:270](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L270)
 
 ***
 
@@ -30261,7 +30261,7 @@ Defined in: [sandkit/enums/index.d.ts:270](https://github.com/sandustry-modding/
 FoundationTriangleLeftDel: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:271](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L271)
+Defined in: [sandkit/enums/index.d.ts:271](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L271)
 
 ***
 
@@ -30273,7 +30273,7 @@ Defined in: [sandkit/enums/index.d.ts:271](https://github.com/sandustry-modding/
 FoundationAngledRight: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:272](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L272)
+Defined in: [sandkit/enums/index.d.ts:272](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L272)
 
 ***
 
@@ -30285,7 +30285,7 @@ Defined in: [sandkit/enums/index.d.ts:272](https://github.com/sandustry-modding/
 FoundationTriangleRightDel: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:273](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L273)
+Defined in: [sandkit/enums/index.d.ts:273](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L273)
 
 ***
 
@@ -30297,7 +30297,7 @@ Defined in: [sandkit/enums/index.d.ts:273](https://github.com/sandustry-modding/
 Collector: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:274](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L274)
+Defined in: [sandkit/enums/index.d.ts:274](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L274)
 
 ***
 
@@ -30309,7 +30309,7 @@ Defined in: [sandkit/enums/index.d.ts:274](https://github.com/sandustry-modding/
 FilterLeft: 17
 ```
 
-Defined in: [sandkit/enums/index.d.ts:275](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L275)
+Defined in: [sandkit/enums/index.d.ts:275](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L275)
 
 ***
 
@@ -30321,7 +30321,7 @@ Defined in: [sandkit/enums/index.d.ts:275](https://github.com/sandustry-modding/
 FilterRight: 18
 ```
 
-Defined in: [sandkit/enums/index.d.ts:276](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L276)
+Defined in: [sandkit/enums/index.d.ts:276](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L276)
 
 ***
 
@@ -30333,7 +30333,7 @@ Defined in: [sandkit/enums/index.d.ts:276](https://github.com/sandustry-modding/
 SlidingFoundation: 19
 ```
 
-Defined in: [sandkit/enums/index.d.ts:277](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L277)
+Defined in: [sandkit/enums/index.d.ts:277](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L277)
 
 ***
 
@@ -30345,7 +30345,7 @@ Defined in: [sandkit/enums/index.d.ts:277](https://github.com/sandustry-modding/
 VelocitySoaker: 20
 ```
 
-Defined in: [sandkit/enums/index.d.ts:278](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L278)
+Defined in: [sandkit/enums/index.d.ts:278](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L278)
 
 ***
 
@@ -30357,7 +30357,7 @@ Defined in: [sandkit/enums/index.d.ts:278](https://github.com/sandustry-modding/
 Grower: 21
 ```
 
-Defined in: [sandkit/enums/index.d.ts:279](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L279)
+Defined in: [sandkit/enums/index.d.ts:279](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L279)
 
 ***
 
@@ -30369,7 +30369,7 @@ Defined in: [sandkit/enums/index.d.ts:279](https://github.com/sandustry-modding/
 SoundBox: 22
 ```
 
-Defined in: [sandkit/enums/index.d.ts:280](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L280)
+Defined in: [sandkit/enums/index.d.ts:280](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L280)
 
 ***
 
@@ -30381,7 +30381,7 @@ Defined in: [sandkit/enums/index.d.ts:280](https://github.com/sandustry-modding/
 Pipe: 23
 ```
 
-Defined in: [sandkit/enums/index.d.ts:281](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L281)
+Defined in: [sandkit/enums/index.d.ts:281](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L281)
 
 ***
 
@@ -30393,7 +30393,7 @@ Defined in: [sandkit/enums/index.d.ts:281](https://github.com/sandustry-modding/
 Pump: 24
 ```
 
-Defined in: [sandkit/enums/index.d.ts:282](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L282)
+Defined in: [sandkit/enums/index.d.ts:282](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L282)
 
 ***
 
@@ -30405,7 +30405,7 @@ Defined in: [sandkit/enums/index.d.ts:282](https://github.com/sandustry-modding/
 LiquidVent: 25
 ```
 
-Defined in: [sandkit/enums/index.d.ts:283](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L283)
+Defined in: [sandkit/enums/index.d.ts:283](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L283)
 
 ***
 
@@ -30417,7 +30417,7 @@ Defined in: [sandkit/enums/index.d.ts:283](https://github.com/sandustry-modding/
 Light: 26
 ```
 
-Defined in: [sandkit/enums/index.d.ts:284](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L284)
+Defined in: [sandkit/enums/index.d.ts:284](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L284)
 
 ***
 
@@ -30429,13 +30429,13 @@ Defined in: [sandkit/enums/index.d.ts:284](https://github.com/sandustry-modding/
 FluxEmanator: 27
 ```
 
-Defined in: [sandkit/enums/index.d.ts:285](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L285)
+Defined in: [sandkit/enums/index.d.ts:285](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L285)
 
 ---
 
 ## sandkit.enums.Tech
 
-Defined in: [sandkit/enums/index.d.ts:289](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L289)
+Defined in: [sandkit/enums/index.d.ts:289](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L289)
 
 Tech tree node ids (mixed numeric and string keys).
 
@@ -30449,7 +30449,7 @@ Tech tree node ids (mixed numeric and string keys).
 Shaker: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L290)
+Defined in: [sandkit/enums/index.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L290)
 
 ***
 
@@ -30461,7 +30461,7 @@ Defined in: [sandkit/enums/index.d.ts:290](https://github.com/sandustry-modding/
 Conveyors: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:291](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L291)
+Defined in: [sandkit/enums/index.d.ts:291](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L291)
 
 ***
 
@@ -30473,7 +30473,7 @@ Defined in: [sandkit/enums/index.d.ts:291](https://github.com/sandustry-modding/
 Guns1: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:292](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L292)
+Defined in: [sandkit/enums/index.d.ts:292](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L292)
 
 ***
 
@@ -30485,7 +30485,7 @@ Defined in: [sandkit/enums/index.d.ts:292](https://github.com/sandustry-modding/
 Filters1: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:293](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L293)
+Defined in: [sandkit/enums/index.d.ts:293](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L293)
 
 ***
 
@@ -30497,7 +30497,7 @@ Defined in: [sandkit/enums/index.d.ts:293](https://github.com/sandustry-modding/
 Flamethrower: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L294)
+Defined in: [sandkit/enums/index.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L294)
 
 ***
 
@@ -30509,7 +30509,7 @@ Defined in: [sandkit/enums/index.d.ts:294](https://github.com/sandustry-modding/
 Gun: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:295](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L295)
+Defined in: [sandkit/enums/index.d.ts:295](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L295)
 
 ***
 
@@ -30521,7 +30521,7 @@ Defined in: [sandkit/enums/index.d.ts:295](https://github.com/sandustry-modding/
 KineticPress: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:296](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L296)
+Defined in: [sandkit/enums/index.d.ts:296](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L296)
 
 ***
 
@@ -30533,7 +30533,7 @@ Defined in: [sandkit/enums/index.d.ts:296](https://github.com/sandustry-modding/
 Guns2: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:297](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L297)
+Defined in: [sandkit/enums/index.d.ts:297](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L297)
 
 ***
 
@@ -30545,7 +30545,7 @@ Defined in: [sandkit/enums/index.d.ts:297](https://github.com/sandustry-modding/
 Drones1: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L298)
+Defined in: [sandkit/enums/index.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L298)
 
 ***
 
@@ -30557,7 +30557,7 @@ Defined in: [sandkit/enums/index.d.ts:298](https://github.com/sandustry-modding/
 Upgrading2: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:299](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L299)
+Defined in: [sandkit/enums/index.d.ts:299](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L299)
 
 ***
 
@@ -30569,7 +30569,7 @@ Defined in: [sandkit/enums/index.d.ts:299](https://github.com/sandustry-modding/
 Filters2: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:300](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L300)
+Defined in: [sandkit/enums/index.d.ts:300](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L300)
 
 ***
 
@@ -30581,7 +30581,7 @@ Defined in: [sandkit/enums/index.d.ts:300](https://github.com/sandustry-modding/
 Upgrading3: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:301](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L301)
+Defined in: [sandkit/enums/index.d.ts:301](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L301)
 
 ***
 
@@ -30593,7 +30593,7 @@ Defined in: [sandkit/enums/index.d.ts:301](https://github.com/sandustry-modding/
 Upgrading4: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:302](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L302)
+Defined in: [sandkit/enums/index.d.ts:302](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L302)
 
 ***
 
@@ -30605,7 +30605,7 @@ Defined in: [sandkit/enums/index.d.ts:302](https://github.com/sandustry-modding/
 Upgrading5: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:303](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L303)
+Defined in: [sandkit/enums/index.d.ts:303](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L303)
 
 ***
 
@@ -30617,7 +30617,7 @@ Defined in: [sandkit/enums/index.d.ts:303](https://github.com/sandustry-modding/
 Upgrading6: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:304](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L304)
+Defined in: [sandkit/enums/index.d.ts:304](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L304)
 
 ***
 
@@ -30629,7 +30629,7 @@ Defined in: [sandkit/enums/index.d.ts:304](https://github.com/sandustry-modding/
 Upgrading7: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L305)
+Defined in: [sandkit/enums/index.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L305)
 
 ***
 
@@ -30641,7 +30641,7 @@ Defined in: [sandkit/enums/index.d.ts:305](https://github.com/sandustry-modding/
 Upgrading8: 17
 ```
 
-Defined in: [sandkit/enums/index.d.ts:306](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L306)
+Defined in: [sandkit/enums/index.d.ts:306](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L306)
 
 ***
 
@@ -30653,7 +30653,7 @@ Defined in: [sandkit/enums/index.d.ts:306](https://github.com/sandustry-modding/
 Upgrading9: 18
 ```
 
-Defined in: [sandkit/enums/index.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L307)
+Defined in: [sandkit/enums/index.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L307)
 
 ***
 
@@ -30665,7 +30665,7 @@ Defined in: [sandkit/enums/index.d.ts:307](https://github.com/sandustry-modding/
 Upgrading10: 19
 ```
 
-Defined in: [sandkit/enums/index.d.ts:308](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L308)
+Defined in: [sandkit/enums/index.d.ts:308](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L308)
 
 ***
 
@@ -30677,7 +30677,7 @@ Defined in: [sandkit/enums/index.d.ts:308](https://github.com/sandustry-modding/
 PlanterBox: 20
 ```
 
-Defined in: [sandkit/enums/index.d.ts:309](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L309)
+Defined in: [sandkit/enums/index.d.ts:309](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L309)
 
 ***
 
@@ -30689,7 +30689,7 @@ Defined in: [sandkit/enums/index.d.ts:309](https://github.com/sandustry-modding/
 Thermo: 21
 ```
 
-Defined in: [sandkit/enums/index.d.ts:310](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L310)
+Defined in: [sandkit/enums/index.d.ts:310](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L310)
 
 ***
 
@@ -30701,7 +30701,7 @@ Defined in: [sandkit/enums/index.d.ts:310](https://github.com/sandustry-modding/
 Rocket: 22
 ```
 
-Defined in: [sandkit/enums/index.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L311)
+Defined in: [sandkit/enums/index.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L311)
 
 ***
 
@@ -30713,7 +30713,7 @@ Defined in: [sandkit/enums/index.d.ts:311](https://github.com/sandustry-modding/
 Pipes: 23
 ```
 
-Defined in: [sandkit/enums/index.d.ts:312](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L312)
+Defined in: [sandkit/enums/index.d.ts:312](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L312)
 
 ***
 
@@ -30725,7 +30725,7 @@ Defined in: [sandkit/enums/index.d.ts:312](https://github.com/sandustry-modding/
 StaticLights: 24
 ```
 
-Defined in: [sandkit/enums/index.d.ts:313](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L313)
+Defined in: [sandkit/enums/index.d.ts:313](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L313)
 
 ***
 
@@ -30737,7 +30737,7 @@ Defined in: [sandkit/enums/index.d.ts:313](https://github.com/sandustry-modding/
 Drones2: 25
 ```
 
-Defined in: [sandkit/enums/index.d.ts:314](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L314)
+Defined in: [sandkit/enums/index.d.ts:314](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L314)
 
 ***
 
@@ -30749,7 +30749,7 @@ Defined in: [sandkit/enums/index.d.ts:314](https://github.com/sandustry-modding/
 Smelter: 26
 ```
 
-Defined in: [sandkit/enums/index.d.ts:315](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L315)
+Defined in: [sandkit/enums/index.d.ts:315](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L315)
 
 ***
 
@@ -30761,7 +30761,7 @@ Defined in: [sandkit/enums/index.d.ts:315](https://github.com/sandustry-modding/
 Tools4: 27
 ```
 
-Defined in: [sandkit/enums/index.d.ts:316](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L316)
+Defined in: [sandkit/enums/index.d.ts:316](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L316)
 
 ***
 
@@ -30773,7 +30773,7 @@ Defined in: [sandkit/enums/index.d.ts:316](https://github.com/sandustry-modding/
 Guns3: 28
 ```
 
-Defined in: [sandkit/enums/index.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L317)
+Defined in: [sandkit/enums/index.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L317)
 
 ***
 
@@ -30785,7 +30785,7 @@ Defined in: [sandkit/enums/index.d.ts:317](https://github.com/sandustry-modding/
 Pipes2: 29
 ```
 
-Defined in: [sandkit/enums/index.d.ts:318](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L318)
+Defined in: [sandkit/enums/index.d.ts:318](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L318)
 
 ***
 
@@ -30797,7 +30797,7 @@ Defined in: [sandkit/enums/index.d.ts:318](https://github.com/sandustry-modding/
 ConveyorsMk2: 30
 ```
 
-Defined in: [sandkit/enums/index.d.ts:319](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L319)
+Defined in: [sandkit/enums/index.d.ts:319](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L319)
 
 ***
 
@@ -30809,7 +30809,7 @@ Defined in: [sandkit/enums/index.d.ts:319](https://github.com/sandustry-modding/
 Lights2: 31
 ```
 
-Defined in: [sandkit/enums/index.d.ts:320](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L320)
+Defined in: [sandkit/enums/index.d.ts:320](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L320)
 
 ***
 
@@ -30821,7 +30821,7 @@ Defined in: [sandkit/enums/index.d.ts:320](https://github.com/sandustry-modding/
 Refining6: 32
 ```
 
-Defined in: [sandkit/enums/index.d.ts:321](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L321)
+Defined in: [sandkit/enums/index.d.ts:321](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L321)
 
 ***
 
@@ -30833,7 +30833,7 @@ Defined in: [sandkit/enums/index.d.ts:321](https://github.com/sandustry-modding/
 Refining7: 33
 ```
 
-Defined in: [sandkit/enums/index.d.ts:322](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L322)
+Defined in: [sandkit/enums/index.d.ts:322](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L322)
 
 ***
 
@@ -30845,7 +30845,7 @@ Defined in: [sandkit/enums/index.d.ts:322](https://github.com/sandustry-modding/
 Guns4: 34
 ```
 
-Defined in: [sandkit/enums/index.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L323)
+Defined in: [sandkit/enums/index.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L323)
 
 ***
 
@@ -30857,7 +30857,7 @@ Defined in: [sandkit/enums/index.d.ts:323](https://github.com/sandustry-modding/
 Guns5: 35
 ```
 
-Defined in: [sandkit/enums/index.d.ts:324](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L324)
+Defined in: [sandkit/enums/index.d.ts:324](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L324)
 
 ***
 
@@ -30869,7 +30869,7 @@ Defined in: [sandkit/enums/index.d.ts:324](https://github.com/sandustry-modding/
 Tools5: 36
 ```
 
-Defined in: [sandkit/enums/index.d.ts:325](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L325)
+Defined in: [sandkit/enums/index.d.ts:325](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L325)
 
 ***
 
@@ -30881,7 +30881,7 @@ Defined in: [sandkit/enums/index.d.ts:325](https://github.com/sandustry-modding/
 Tools6: 37
 ```
 
-Defined in: [sandkit/enums/index.d.ts:326](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L326)
+Defined in: [sandkit/enums/index.d.ts:326](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L326)
 
 ***
 
@@ -30893,7 +30893,7 @@ Defined in: [sandkit/enums/index.d.ts:326](https://github.com/sandustry-modding/
 Filters3: 38
 ```
 
-Defined in: [sandkit/enums/index.d.ts:327](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L327)
+Defined in: [sandkit/enums/index.d.ts:327](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L327)
 
 ***
 
@@ -30905,7 +30905,7 @@ Defined in: [sandkit/enums/index.d.ts:327](https://github.com/sandustry-modding/
 Filters4: 39
 ```
 
-Defined in: [sandkit/enums/index.d.ts:328](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L328)
+Defined in: [sandkit/enums/index.d.ts:328](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L328)
 
 ***
 
@@ -30917,7 +30917,7 @@ Defined in: [sandkit/enums/index.d.ts:328](https://github.com/sandustry-modding/
 Pipes3: 40
 ```
 
-Defined in: [sandkit/enums/index.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L329)
+Defined in: [sandkit/enums/index.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L329)
 
 ***
 
@@ -30929,7 +30929,7 @@ Defined in: [sandkit/enums/index.d.ts:329](https://github.com/sandustry-modding/
 Pipes4: 41
 ```
 
-Defined in: [sandkit/enums/index.d.ts:330](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L330)
+Defined in: [sandkit/enums/index.d.ts:330](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L330)
 
 ***
 
@@ -30941,7 +30941,7 @@ Defined in: [sandkit/enums/index.d.ts:330](https://github.com/sandustry-modding/
 Logistics3: 42
 ```
 
-Defined in: [sandkit/enums/index.d.ts:331](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L331)
+Defined in: [sandkit/enums/index.d.ts:331](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L331)
 
 ***
 
@@ -30953,7 +30953,7 @@ Defined in: [sandkit/enums/index.d.ts:331](https://github.com/sandustry-modding/
 Logistics4: 43
 ```
 
-Defined in: [sandkit/enums/index.d.ts:332](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L332)
+Defined in: [sandkit/enums/index.d.ts:332](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L332)
 
 ***
 
@@ -30965,7 +30965,7 @@ Defined in: [sandkit/enums/index.d.ts:332](https://github.com/sandustry-modding/
 Lights3: 44
 ```
 
-Defined in: [sandkit/enums/index.d.ts:333](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L333)
+Defined in: [sandkit/enums/index.d.ts:333](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L333)
 
 ***
 
@@ -30977,7 +30977,7 @@ Defined in: [sandkit/enums/index.d.ts:333](https://github.com/sandustry-modding/
 Lights4: 45
 ```
 
-Defined in: [sandkit/enums/index.d.ts:334](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L334)
+Defined in: [sandkit/enums/index.d.ts:334](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L334)
 
 ***
 
@@ -30989,7 +30989,7 @@ Defined in: [sandkit/enums/index.d.ts:334](https://github.com/sandustry-modding/
 Drones3: 46
 ```
 
-Defined in: [sandkit/enums/index.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L335)
+Defined in: [sandkit/enums/index.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L335)
 
 ***
 
@@ -31001,7 +31001,7 @@ Defined in: [sandkit/enums/index.d.ts:335](https://github.com/sandustry-modding/
 Drones4: 47
 ```
 
-Defined in: [sandkit/enums/index.d.ts:336](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L336)
+Defined in: [sandkit/enums/index.d.ts:336](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L336)
 
 ***
 
@@ -31013,7 +31013,7 @@ Defined in: [sandkit/enums/index.d.ts:336](https://github.com/sandustry-modding/
 Alien: 48
 ```
 
-Defined in: [sandkit/enums/index.d.ts:337](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L337)
+Defined in: [sandkit/enums/index.d.ts:337](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L337)
 
 ***
 
@@ -31025,7 +31025,7 @@ Defined in: [sandkit/enums/index.d.ts:337](https://github.com/sandustry-modding/
 Electricity: 49
 ```
 
-Defined in: [sandkit/enums/index.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L338)
+Defined in: [sandkit/enums/index.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L338)
 
 ***
 
@@ -31037,7 +31037,7 @@ Defined in: [sandkit/enums/index.d.ts:338](https://github.com/sandustry-modding/
 AlienCore: 50
 ```
 
-Defined in: [sandkit/enums/index.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L339)
+Defined in: [sandkit/enums/index.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L339)
 
 ***
 
@@ -31049,7 +31049,7 @@ Defined in: [sandkit/enums/index.d.ts:339](https://github.com/sandustry-modding/
 Emanators1: 51
 ```
 
-Defined in: [sandkit/enums/index.d.ts:340](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L340)
+Defined in: [sandkit/enums/index.d.ts:340](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L340)
 
 ***
 
@@ -31061,7 +31061,7 @@ Defined in: [sandkit/enums/index.d.ts:340](https://github.com/sandustry-modding/
 AlienPlasmaConduits: 52
 ```
 
-Defined in: [sandkit/enums/index.d.ts:341](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L341)
+Defined in: [sandkit/enums/index.d.ts:341](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L341)
 
 ***
 
@@ -31073,7 +31073,7 @@ Defined in: [sandkit/enums/index.d.ts:341](https://github.com/sandustry-modding/
 AlienQuantumMatrix: 53
 ```
 
-Defined in: [sandkit/enums/index.d.ts:342](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L342)
+Defined in: [sandkit/enums/index.d.ts:342](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L342)
 
 ***
 
@@ -31085,7 +31085,7 @@ Defined in: [sandkit/enums/index.d.ts:342](https://github.com/sandustry-modding/
 AlienPlasmaCore: 54
 ```
 
-Defined in: [sandkit/enums/index.d.ts:343](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L343)
+Defined in: [sandkit/enums/index.d.ts:343](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L343)
 
 ***
 
@@ -31097,7 +31097,7 @@ Defined in: [sandkit/enums/index.d.ts:343](https://github.com/sandustry-modding/
 AlienVoidEngine: 55
 ```
 
-Defined in: [sandkit/enums/index.d.ts:344](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L344)
+Defined in: [sandkit/enums/index.d.ts:344](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L344)
 
 ***
 
@@ -31109,7 +31109,7 @@ Defined in: [sandkit/enums/index.d.ts:344](https://github.com/sandustry-modding/
 FlareGun: 56
 ```
 
-Defined in: [sandkit/enums/index.d.ts:345](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L345)
+Defined in: [sandkit/enums/index.d.ts:345](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L345)
 
 ***
 
@@ -31121,7 +31121,7 @@ Defined in: [sandkit/enums/index.d.ts:345](https://github.com/sandustry-modding/
 Sweeper: 57
 ```
 
-Defined in: [sandkit/enums/index.d.ts:346](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L346)
+Defined in: [sandkit/enums/index.d.ts:346](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L346)
 
 ***
 
@@ -31133,7 +31133,7 @@ Defined in: [sandkit/enums/index.d.ts:346](https://github.com/sandustry-modding/
 Utilities3: 58
 ```
 
-Defined in: [sandkit/enums/index.d.ts:347](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L347)
+Defined in: [sandkit/enums/index.d.ts:347](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L347)
 
 ***
 
@@ -31145,7 +31145,7 @@ Defined in: [sandkit/enums/index.d.ts:347](https://github.com/sandustry-modding/
 Cryoblaster: 59
 ```
 
-Defined in: [sandkit/enums/index.d.ts:348](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L348)
+Defined in: [sandkit/enums/index.d.ts:348](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L348)
 
 ***
 
@@ -31157,7 +31157,7 @@ Defined in: [sandkit/enums/index.d.ts:348](https://github.com/sandustry-modding/
 Vacuum: 60
 ```
 
-Defined in: [sandkit/enums/index.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L349)
+Defined in: [sandkit/enums/index.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L349)
 
 ***
 
@@ -31169,7 +31169,7 @@ Defined in: [sandkit/enums/index.d.ts:349](https://github.com/sandustry-modding/
 Utilities6: 61
 ```
 
-Defined in: [sandkit/enums/index.d.ts:350](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L350)
+Defined in: [sandkit/enums/index.d.ts:350](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L350)
 
 ***
 
@@ -31181,7 +31181,7 @@ Defined in: [sandkit/enums/index.d.ts:350](https://github.com/sandustry-modding/
 Utilities7: 62
 ```
 
-Defined in: [sandkit/enums/index.d.ts:351](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L351)
+Defined in: [sandkit/enums/index.d.ts:351](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L351)
 
 ***
 
@@ -31193,7 +31193,7 @@ Defined in: [sandkit/enums/index.d.ts:351](https://github.com/sandustry-modding/
 Filters: 63
 ```
 
-Defined in: [sandkit/enums/index.d.ts:352](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L352)
+Defined in: [sandkit/enums/index.d.ts:352](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L352)
 
 ***
 
@@ -31205,7 +31205,7 @@ Defined in: [sandkit/enums/index.d.ts:352](https://github.com/sandustry-modding/
 AdvancedFilters: 64
 ```
 
-Defined in: [sandkit/enums/index.d.ts:353](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L353)
+Defined in: [sandkit/enums/index.d.ts:353](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L353)
 
 ***
 
@@ -31217,7 +31217,7 @@ Defined in: [sandkit/enums/index.d.ts:353](https://github.com/sandustry-modding/
 Infrastructure3: 65
 ```
 
-Defined in: [sandkit/enums/index.d.ts:354](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L354)
+Defined in: [sandkit/enums/index.d.ts:354](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L354)
 
 ***
 
@@ -31229,7 +31229,7 @@ Defined in: [sandkit/enums/index.d.ts:354](https://github.com/sandustry-modding/
 Decorations1: 66
 ```
 
-Defined in: [sandkit/enums/index.d.ts:355](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L355)
+Defined in: [sandkit/enums/index.d.ts:355](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L355)
 
 ***
 
@@ -31241,7 +31241,7 @@ Defined in: [sandkit/enums/index.d.ts:355](https://github.com/sandustry-modding/
 Decorations2: 67
 ```
 
-Defined in: [sandkit/enums/index.d.ts:356](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L356)
+Defined in: [sandkit/enums/index.d.ts:356](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L356)
 
 ***
 
@@ -31253,7 +31253,7 @@ Defined in: [sandkit/enums/index.d.ts:356](https://github.com/sandustry-modding/
 Decorations3: 68
 ```
 
-Defined in: [sandkit/enums/index.d.ts:357](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L357)
+Defined in: [sandkit/enums/index.d.ts:357](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L357)
 
 ***
 
@@ -31265,7 +31265,7 @@ Defined in: [sandkit/enums/index.d.ts:357](https://github.com/sandustry-modding/
 Blocks1: 69
 ```
 
-Defined in: [sandkit/enums/index.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L358)
+Defined in: [sandkit/enums/index.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L358)
 
 ***
 
@@ -31277,7 +31277,7 @@ Defined in: [sandkit/enums/index.d.ts:358](https://github.com/sandustry-modding/
 Drill: 70
 ```
 
-Defined in: [sandkit/enums/index.d.ts:359](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L359)
+Defined in: [sandkit/enums/index.d.ts:359](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L359)
 
 ***
 
@@ -31289,7 +31289,7 @@ Defined in: [sandkit/enums/index.d.ts:359](https://github.com/sandustry-modding/
 SteamTurbine: 71
 ```
 
-Defined in: [sandkit/enums/index.d.ts:360](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L360)
+Defined in: [sandkit/enums/index.d.ts:360](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L360)
 
 ***
 
@@ -31301,7 +31301,7 @@ Defined in: [sandkit/enums/index.d.ts:360](https://github.com/sandustry-modding/
 Electricity3: 72
 ```
 
-Defined in: [sandkit/enums/index.d.ts:361](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L361)
+Defined in: [sandkit/enums/index.d.ts:361](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L361)
 
 ***
 
@@ -31313,7 +31313,7 @@ Defined in: [sandkit/enums/index.d.ts:361](https://github.com/sandustry-modding/
 Electricity4: 73
 ```
 
-Defined in: [sandkit/enums/index.d.ts:362](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L362)
+Defined in: [sandkit/enums/index.d.ts:362](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L362)
 
 ***
 
@@ -31325,7 +31325,7 @@ Defined in: [sandkit/enums/index.d.ts:362](https://github.com/sandustry-modding/
 Logic1: 74
 ```
 
-Defined in: [sandkit/enums/index.d.ts:363](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L363)
+Defined in: [sandkit/enums/index.d.ts:363](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L363)
 
 ***
 
@@ -31337,7 +31337,7 @@ Defined in: [sandkit/enums/index.d.ts:363](https://github.com/sandustry-modding/
 Logic2: 75
 ```
 
-Defined in: [sandkit/enums/index.d.ts:364](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L364)
+Defined in: [sandkit/enums/index.d.ts:364](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L364)
 
 ***
 
@@ -31349,7 +31349,7 @@ Defined in: [sandkit/enums/index.d.ts:364](https://github.com/sandustry-modding/
 Logic3: 76
 ```
 
-Defined in: [sandkit/enums/index.d.ts:365](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L365)
+Defined in: [sandkit/enums/index.d.ts:365](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L365)
 
 ***
 
@@ -31361,7 +31361,7 @@ Defined in: [sandkit/enums/index.d.ts:365](https://github.com/sandustry-modding/
 Logic4: 77
 ```
 
-Defined in: [sandkit/enums/index.d.ts:366](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L366)
+Defined in: [sandkit/enums/index.d.ts:366](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L366)
 
 ***
 
@@ -31373,7 +31373,7 @@ Defined in: [sandkit/enums/index.d.ts:366](https://github.com/sandustry-modding/
 Various1: 78
 ```
 
-Defined in: [sandkit/enums/index.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L367)
+Defined in: [sandkit/enums/index.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L367)
 
 ***
 
@@ -31385,7 +31385,7 @@ Defined in: [sandkit/enums/index.d.ts:367](https://github.com/sandustry-modding/
 Various2: 79
 ```
 
-Defined in: [sandkit/enums/index.d.ts:368](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L368)
+Defined in: [sandkit/enums/index.d.ts:368](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L368)
 
 ***
 
@@ -31397,7 +31397,7 @@ Defined in: [sandkit/enums/index.d.ts:368](https://github.com/sandustry-modding/
 Various3: 80
 ```
 
-Defined in: [sandkit/enums/index.d.ts:369](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L369)
+Defined in: [sandkit/enums/index.d.ts:369](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L369)
 
 ***
 
@@ -31409,7 +31409,7 @@ Defined in: [sandkit/enums/index.d.ts:369](https://github.com/sandustry-modding/
 Locator: 81
 ```
 
-Defined in: [sandkit/enums/index.d.ts:370](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L370)
+Defined in: [sandkit/enums/index.d.ts:370](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L370)
 
 ***
 
@@ -31421,7 +31421,7 @@ Defined in: [sandkit/enums/index.d.ts:370](https://github.com/sandustry-modding/
 QuantumPortal: 82
 ```
 
-Defined in: [sandkit/enums/index.d.ts:371](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L371)
+Defined in: [sandkit/enums/index.d.ts:371](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L371)
 
 ***
 
@@ -31433,7 +31433,7 @@ Defined in: [sandkit/enums/index.d.ts:371](https://github.com/sandustry-modding/
 VoidRift: 83
 ```
 
-Defined in: [sandkit/enums/index.d.ts:372](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L372)
+Defined in: [sandkit/enums/index.d.ts:372](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L372)
 
 ***
 
@@ -31445,7 +31445,7 @@ Defined in: [sandkit/enums/index.d.ts:372](https://github.com/sandustry-modding/
 Blink: 84
 ```
 
-Defined in: [sandkit/enums/index.d.ts:373](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L373)
+Defined in: [sandkit/enums/index.d.ts:373](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L373)
 
 ***
 
@@ -31457,7 +31457,7 @@ Defined in: [sandkit/enums/index.d.ts:373](https://github.com/sandustry-modding/
 Recall: 85
 ```
 
-Defined in: [sandkit/enums/index.d.ts:374](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L374)
+Defined in: [sandkit/enums/index.d.ts:374](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L374)
 
 ***
 
@@ -31469,7 +31469,7 @@ Defined in: [sandkit/enums/index.d.ts:374](https://github.com/sandustry-modding/
 ImplosionGun: 86
 ```
 
-Defined in: [sandkit/enums/index.d.ts:375](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L375)
+Defined in: [sandkit/enums/index.d.ts:375](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L375)
 
 ***
 
@@ -31481,7 +31481,7 @@ Defined in: [sandkit/enums/index.d.ts:375](https://github.com/sandustry-modding/
 Refining8: 87
 ```
 
-Defined in: [sandkit/enums/index.d.ts:376](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L376)
+Defined in: [sandkit/enums/index.d.ts:376](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L376)
 
 ***
 
@@ -31493,7 +31493,7 @@ Defined in: [sandkit/enums/index.d.ts:376](https://github.com/sandustry-modding/
 Tools7: 88
 ```
 
-Defined in: [sandkit/enums/index.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L377)
+Defined in: [sandkit/enums/index.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L377)
 
 ***
 
@@ -31505,7 +31505,7 @@ Defined in: [sandkit/enums/index.d.ts:377](https://github.com/sandustry-modding/
 Diggers: 89
 ```
 
-Defined in: [sandkit/enums/index.d.ts:378](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L378)
+Defined in: [sandkit/enums/index.d.ts:378](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L378)
 
 ***
 
@@ -31517,7 +31517,7 @@ Defined in: [sandkit/enums/index.d.ts:378](https://github.com/sandustry-modding/
 Haulers: 90
 ```
 
-Defined in: [sandkit/enums/index.d.ts:379](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L379)
+Defined in: [sandkit/enums/index.d.ts:379](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L379)
 
 ***
 
@@ -31529,7 +31529,7 @@ Defined in: [sandkit/enums/index.d.ts:379](https://github.com/sandustry-modding/
 Map: 91
 ```
 
-Defined in: [sandkit/enums/index.d.ts:380](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L380)
+Defined in: [sandkit/enums/index.d.ts:380](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L380)
 
 ***
 
@@ -31541,7 +31541,7 @@ Defined in: [sandkit/enums/index.d.ts:380](https://github.com/sandustry-modding/
 ColoringTool: 92
 ```
 
-Defined in: [sandkit/enums/index.d.ts:381](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L381)
+Defined in: [sandkit/enums/index.d.ts:381](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L381)
 
 ***
 
@@ -31553,7 +31553,7 @@ Defined in: [sandkit/enums/index.d.ts:381](https://github.com/sandustry-modding/
 SignalGate: 93
 ```
 
-Defined in: [sandkit/enums/index.d.ts:382](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L382)
+Defined in: [sandkit/enums/index.d.ts:382](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L382)
 
 ***
 
@@ -31565,7 +31565,7 @@ Defined in: [sandkit/enums/index.d.ts:382](https://github.com/sandustry-modding/
 GrapplingHook: 94
 ```
 
-Defined in: [sandkit/enums/index.d.ts:383](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L383)
+Defined in: [sandkit/enums/index.d.ts:383](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L383)
 
 ***
 
@@ -31577,7 +31577,7 @@ Defined in: [sandkit/enums/index.d.ts:383](https://github.com/sandustry-modding/
 GlassFoundation: 95
 ```
 
-Defined in: [sandkit/enums/index.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L384)
+Defined in: [sandkit/enums/index.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L384)
 
 ***
 
@@ -31589,7 +31589,7 @@ Defined in: [sandkit/enums/index.d.ts:384](https://github.com/sandustry-modding/
 PrecisionTools: 96
 ```
 
-Defined in: [sandkit/enums/index.d.ts:385](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L385)
+Defined in: [sandkit/enums/index.d.ts:385](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L385)
 
 ***
 
@@ -31601,7 +31601,7 @@ Defined in: [sandkit/enums/index.d.ts:385](https://github.com/sandustry-modding/
 SignalDevices: 97
 ```
 
-Defined in: [sandkit/enums/index.d.ts:386](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L386)
+Defined in: [sandkit/enums/index.d.ts:386](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L386)
 
 ***
 
@@ -31613,7 +31613,7 @@ Defined in: [sandkit/enums/index.d.ts:386](https://github.com/sandustry-modding/
 SignalControls: 98
 ```
 
-Defined in: [sandkit/enums/index.d.ts:387](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L387)
+Defined in: [sandkit/enums/index.d.ts:387](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L387)
 
 ***
 
@@ -31625,7 +31625,7 @@ Defined in: [sandkit/enums/index.d.ts:387](https://github.com/sandustry-modding/
 LogicGates: 99
 ```
 
-Defined in: [sandkit/enums/index.d.ts:388](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L388)
+Defined in: [sandkit/enums/index.d.ts:388](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L388)
 
 ***
 
@@ -31637,7 +31637,7 @@ Defined in: [sandkit/enums/index.d.ts:388](https://github.com/sandustry-modding/
 RetroConsole: 100
 ```
 
-Defined in: [sandkit/enums/index.d.ts:389](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L389)
+Defined in: [sandkit/enums/index.d.ts:389](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L389)
 
 ***
 
@@ -31649,7 +31649,7 @@ Defined in: [sandkit/enums/index.d.ts:389](https://github.com/sandustry-modding/
 WallTool: 101
 ```
 
-Defined in: [sandkit/enums/index.d.ts:390](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L390)
+Defined in: [sandkit/enums/index.d.ts:390](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L390)
 
 ***
 
@@ -31661,7 +31661,7 @@ Defined in: [sandkit/enums/index.d.ts:390](https://github.com/sandustry-modding/
 Corraller: 102
 ```
 
-Defined in: [sandkit/enums/index.d.ts:391](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L391)
+Defined in: [sandkit/enums/index.d.ts:391](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L391)
 
 ***
 
@@ -31673,7 +31673,7 @@ Defined in: [sandkit/enums/index.d.ts:391](https://github.com/sandustry-modding/
 PlainFoundation: 103
 ```
 
-Defined in: [sandkit/enums/index.d.ts:392](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L392)
+Defined in: [sandkit/enums/index.d.ts:392](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L392)
 
 ***
 
@@ -31685,7 +31685,7 @@ Defined in: [sandkit/enums/index.d.ts:392](https://github.com/sandustry-modding/
 ClearingFrame: 104
 ```
 
-Defined in: [sandkit/enums/index.d.ts:393](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L393)
+Defined in: [sandkit/enums/index.d.ts:393](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L393)
 
 ***
 
@@ -31697,7 +31697,7 @@ Defined in: [sandkit/enums/index.d.ts:393](https://github.com/sandustry-modding/
 Heatmap: 105
 ```
 
-Defined in: [sandkit/enums/index.d.ts:394](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L394)
+Defined in: [sandkit/enums/index.d.ts:394](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L394)
 
 ***
 
@@ -31709,7 +31709,7 @@ Defined in: [sandkit/enums/index.d.ts:394](https://github.com/sandustry-modding/
 MiningLaser: 106
 ```
 
-Defined in: [sandkit/enums/index.d.ts:395](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L395)
+Defined in: [sandkit/enums/index.d.ts:395](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L395)
 
 ***
 
@@ -31721,7 +31721,7 @@ Defined in: [sandkit/enums/index.d.ts:395](https://github.com/sandustry-modding/
 GoldBattery: 107
 ```
 
-Defined in: [sandkit/enums/index.d.ts:396](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L396)
+Defined in: [sandkit/enums/index.d.ts:396](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L396)
 
 ***
 
@@ -31733,7 +31733,7 @@ Defined in: [sandkit/enums/index.d.ts:396](https://github.com/sandustry-modding/
 Hover: 108
 ```
 
-Defined in: [sandkit/enums/index.d.ts:397](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L397)
+Defined in: [sandkit/enums/index.d.ts:397](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L397)
 
 ***
 
@@ -31745,7 +31745,7 @@ Defined in: [sandkit/enums/index.d.ts:397](https://github.com/sandustry-modding/
 SprintBoost: 109
 ```
 
-Defined in: [sandkit/enums/index.d.ts:398](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L398)
+Defined in: [sandkit/enums/index.d.ts:398](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L398)
 
 ***
 
@@ -31757,7 +31757,7 @@ Defined in: [sandkit/enums/index.d.ts:398](https://github.com/sandustry-modding/
 CritterFence: 110
 ```
 
-Defined in: [sandkit/enums/index.d.ts:399](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L399)
+Defined in: [sandkit/enums/index.d.ts:399](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L399)
 
 ***
 
@@ -31769,13 +31769,13 @@ Defined in: [sandkit/enums/index.d.ts:399](https://github.com/sandustry-modding/
 FluxEmanator: "fluxEmanator"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:400](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L400)
+Defined in: [sandkit/enums/index.d.ts:400](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L400)
 
 ---
 
 ## sandkit.enums.TechStatus
 
-Defined in: [sandkit/enums/index.d.ts:404](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L404)
+Defined in: [sandkit/enums/index.d.ts:404](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L404)
 
 Visibility and research state of a tech node.
 
@@ -31789,7 +31789,7 @@ Visibility and research state of a tech node.
 Available: 0
 ```
 
-Defined in: [sandkit/enums/index.d.ts:405](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L405)
+Defined in: [sandkit/enums/index.d.ts:405](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L405)
 
 ***
 
@@ -31801,7 +31801,7 @@ Defined in: [sandkit/enums/index.d.ts:405](https://github.com/sandustry-modding/
 Visible: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:406](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L406)
+Defined in: [sandkit/enums/index.d.ts:406](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L406)
 
 ***
 
@@ -31813,7 +31813,7 @@ Defined in: [sandkit/enums/index.d.ts:406](https://github.com/sandustry-modding/
 Researched: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:407](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L407)
+Defined in: [sandkit/enums/index.d.ts:407](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L407)
 
 ***
 
@@ -31825,7 +31825,7 @@ Defined in: [sandkit/enums/index.d.ts:407](https://github.com/sandustry-modding/
 Unknown: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:408](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L408)
+Defined in: [sandkit/enums/index.d.ts:408](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L408)
 
 ***
 
@@ -31837,13 +31837,13 @@ Defined in: [sandkit/enums/index.d.ts:408](https://github.com/sandustry-modding/
 Hidden: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:409](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L409)
+Defined in: [sandkit/enums/index.d.ts:409](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L409)
 
 ---
 
 ## sandkit.enums.WorldItemType
 
-Defined in: [sandkit/enums/index.d.ts:423](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L423)
+Defined in: [sandkit/enums/index.d.ts:423](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L423)
 
 ### Deprecated
 
@@ -31857,7 +31857,7 @@ Use [PickupType](api/sandkit.enums.PickupType.md) instead.
 Artifact: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L424)
+Defined in: [sandkit/enums/index.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L424)
 
 ***
 
@@ -31867,7 +31867,7 @@ Defined in: [sandkit/enums/index.d.ts:424](https://github.com/sandustry-modding/
 GlyphKey: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:425](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L425)
+Defined in: [sandkit/enums/index.d.ts:425](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L425)
 
 ***
 
@@ -31877,7 +31877,7 @@ Defined in: [sandkit/enums/index.d.ts:425](https://github.com/sandustry-modding/
 Stratacore: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:426](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L426)
+Defined in: [sandkit/enums/index.d.ts:426](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L426)
 
 ***
 
@@ -31887,7 +31887,7 @@ Defined in: [sandkit/enums/index.d.ts:426](https://github.com/sandustry-modding/
 Orb: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:427](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L427)
+Defined in: [sandkit/enums/index.d.ts:427](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L427)
 
 ---
 
@@ -31903,7 +31903,7 @@ Defined in: [sandkit/enums/index.d.ts:427](https://github.com/sandustry-modding/
 SandkitReact = object
 ```
 
-Defined in: [sandkit/react.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L8)
+Defined in: [sandkit/react.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L8)
 
 Host React runtime at `sandkit.react`.
 
@@ -31927,7 +31927,7 @@ Additional host exports not listed here.
 optional Fragment?: unknown
 ```
 
-Defined in: [sandkit/react.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L36)
+Defined in: [sandkit/react.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L36)
 
 Fragment symbol (host copy).
 
@@ -31937,7 +31937,7 @@ Fragment symbol (host copy).
 optional Component?: unknown
 ```
 
-Defined in: [sandkit/react.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L38)
+Defined in: [sandkit/react.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L38)
 
 Base class component (host copy).
 
@@ -31947,7 +31947,7 @@ Base class component (host copy).
 optional PureComponent?: unknown
 ```
 
-Defined in: [sandkit/react.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L40)
+Defined in: [sandkit/react.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L40)
 
 Pure class component (host copy).
 
@@ -31957,7 +31957,7 @@ Pure class component (host copy).
 optional StrictMode?: unknown
 ```
 
-Defined in: [sandkit/react.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L42)
+Defined in: [sandkit/react.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L42)
 
 Strict mode wrapper (host copy).
 
@@ -31967,7 +31967,7 @@ Strict mode wrapper (host copy).
 optional Suspense?: unknown
 ```
 
-Defined in: [sandkit/react.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L44)
+Defined in: [sandkit/react.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L44)
 
 Suspense boundary (host copy).
 
@@ -31977,7 +31977,7 @@ Suspense boundary (host copy).
 optional version?: string
 ```
 
-Defined in: [sandkit/react.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L46)
+Defined in: [sandkit/react.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L46)
 
 React version string from the host bundle.
 
@@ -31989,7 +31989,7 @@ React version string from the host bundle.
 optional createElement(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L10)
+Defined in: [sandkit/react.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L10)
 
 Create a React element (host copy).
 
@@ -32009,7 +32009,7 @@ Create a React element (host copy).
 optional createContext(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L12)
+Defined in: [sandkit/react.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L12)
 
 Create a React context (host copy).
 
@@ -32029,7 +32029,7 @@ Create a React context (host copy).
 optional createRef(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L14)
+Defined in: [sandkit/react.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L14)
 
 Create a ref object (host copy).
 
@@ -32049,7 +32049,7 @@ Create a ref object (host copy).
 optional forwardRef(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L16)
+Defined in: [sandkit/react.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L16)
 
 Wrap a component to forward refs (host copy).
 
@@ -32069,7 +32069,7 @@ Wrap a component to forward refs (host copy).
 optional memo(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L18)
+Defined in: [sandkit/react.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L18)
 
 Memoize a component (host copy).
 
@@ -32089,7 +32089,7 @@ Memoize a component (host copy).
 optional lazy(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L20)
+Defined in: [sandkit/react.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L20)
 
 Lazy-load a component (host copy).
 
@@ -32109,7 +32109,7 @@ Lazy-load a component (host copy).
 optional useState(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L22)
+Defined in: [sandkit/react.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L22)
 
 State hook (host copy).
 
@@ -32129,7 +32129,7 @@ State hook (host copy).
 optional useEffect(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L24)
+Defined in: [sandkit/react.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L24)
 
 Effect hook (host copy).
 
@@ -32149,7 +32149,7 @@ Effect hook (host copy).
 optional useLayoutEffect(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L26)
+Defined in: [sandkit/react.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L26)
 
 Layout effect hook (host copy).
 
@@ -32169,7 +32169,7 @@ Layout effect hook (host copy).
 optional useMemo(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L28)
+Defined in: [sandkit/react.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L28)
 
 Memo hook (host copy).
 
@@ -32189,7 +32189,7 @@ Memo hook (host copy).
 optional useCallback(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L30)
+Defined in: [sandkit/react.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L30)
 
 Callback hook (host copy).
 
@@ -32209,7 +32209,7 @@ Callback hook (host copy).
 optional useRef(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L32)
+Defined in: [sandkit/react.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L32)
 
 Ref hook (host copy).
 
@@ -32229,7 +32229,7 @@ Ref hook (host copy).
 optional useContext(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/react.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/react.d.ts#L34)
+Defined in: [sandkit/react.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L34)
 
 Context hook (host copy).
 
@@ -32253,7 +32253,7 @@ Context hook (host copy).
 
 <p class="smt-member-path"><code>shared.asset.AssetRef</code></p>
 
-Defined in: [shared/asset.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/asset.d.ts#L9)
+Defined in: [shared/asset.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/asset.d.ts#L9)
 
 Reference to a loaded sprite or texture asset.
 
@@ -32265,7 +32265,7 @@ Reference to a loaded sprite or texture asset.
 id: number
 ```
 
-Defined in: [shared/asset.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/asset.d.ts#L11)
+Defined in: [shared/asset.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/asset.d.ts#L11)
 
 Runtime asset id.
 
@@ -32275,7 +32275,7 @@ Runtime asset id.
 type: number
 ```
 
-Defined in: [shared/asset.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/asset.d.ts#L13)
+Defined in: [shared/asset.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/asset.d.ts#L13)
 
 Asset category discriminator used by the renderer.
 
@@ -32293,7 +32293,7 @@ Asset category discriminator used by the renderer.
 EngineFn = (...args: unknown[]) => unknown
 ```
 
-Defined in: [shared/engine.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/engine.d.ts#L11)
+Defined in: [shared/engine.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L11)
 
 **`Internal`**
 
@@ -32319,7 +32319,7 @@ Stub for an unresolved engine method.
 EngineOverlapNs = Record<string, EngineFn | Record<string, unknown> | unknown>
 ```
 
-Defined in: [shared/engine.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/engine.d.ts#L17)
+Defined in: [shared/engine.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L17)
 
 **`Internal`**
 
@@ -32335,7 +32335,7 @@ Loose bag for namespaces that overlap `sandkit.api` (different names / state-fir
 
 <p class="smt-member-path"><code>shared.jsonvalue.JsonObjectV1</code></p>
 
-Defined in: [shared/jsonvalue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/jsonvalue.d.ts#L15)
+Defined in: [shared/jsonvalue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/jsonvalue.d.ts#L15)
 
 JSON object with string keys and [JsonValueV1](#jsonvaluev1) values.
 
@@ -32357,7 +32357,7 @@ Use for open-ended config bags and serialized mod data.
 JsonValueV1 = string | number | boolean | JsonObjectV1 | JsonValueV1[] | null
 ```
 
-Defined in: [shared/jsonvalue.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/jsonvalue.d.ts#L24)
+Defined in: [shared/jsonvalue.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/jsonvalue.d.ts#L24)
 
 JSON value: primitive, object, array, or null.
 
@@ -32377,7 +32377,7 @@ Does not include `undefined` — omit keys instead.
 LooseString<T *extends* string> = T | string & object
 ```
 
-Defined in: [shared/nominal.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/nominal.d.ts#L16)
+Defined in: [shared/nominal.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L16)
 
 Known string literals plus any other string.
 `T | string` collapses to `string` and drops autocomplete.
@@ -32398,7 +32398,7 @@ Known string literals plus any other string.
 LooseNumber<T *extends* number> = T | number & object
 ```
 
-Defined in: [shared/nominal.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/nominal.d.ts#L22)
+Defined in: [shared/nominal.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L22)
 
 Known numeric literals plus any other number.
 `T | number` collapses to `number` and drops autocomplete.
@@ -32419,7 +32419,7 @@ Known numeric literals plus any other number.
 TaggedNumber<Tag *extends* string> = number & object
 ```
 
-Defined in: [shared/nominal.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/nominal.d.ts#L28)
+Defined in: [shared/nominal.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L28)
 
 Number handle that does not mix with a different tag.
 Plain `number` is not assignable; numeric literals and enum members are.
@@ -32448,7 +32448,7 @@ readonly optional \_\_tag?: Tag
 CellId = TaggedNumber<"cellId">
 ```
 
-Defined in: [shared/nominal.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/nominal.d.ts#L31)
+Defined in: [shared/nominal.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L31)
 
 Packed simulation cell id from `world.getCellIdAtCell`.
 
@@ -32462,7 +32462,7 @@ Packed simulation cell id from `world.getCellIdAtCell`.
 
 <p class="smt-member-path"><code>shared.player.Player</code></p>
 
-Defined in: [shared/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L34)
+Defined in: [shared/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L34)
 
 Live player state snapshot (read-only shape for mods).
 
@@ -32476,7 +32476,7 @@ Reflects `sandkit.engine.state` / store player fields exposed to mods.
 x: number
 ```
 
-Defined in: [shared/player.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L36)
+Defined in: [shared/player.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L36)
 
 Player hitbox left edge in world pixels.
 
@@ -32486,7 +32486,7 @@ Player hitbox left edge in world pixels.
 y: number
 ```
 
-Defined in: [shared/player.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L38)
+Defined in: [shared/player.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L38)
 
 Player hitbox top edge in world pixels.
 
@@ -32496,7 +32496,7 @@ Player hitbox top edge in world pixels.
 width: number
 ```
 
-Defined in: [shared/player.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L40)
+Defined in: [shared/player.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L40)
 
 Player hitbox width in world pixels.
 
@@ -32506,7 +32506,7 @@ Player hitbox width in world pixels.
 height: number
 ```
 
-Defined in: [shared/player.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L42)
+Defined in: [shared/player.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L42)
 
 Player hitbox height in world pixels.
 
@@ -32516,7 +32516,7 @@ Player hitbox height in world pixels.
 velocity: Vector2
 ```
 
-Defined in: [shared/player.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L44)
+Defined in: [shared/player.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L44)
 
 Current movement velocity in pixels per second.
 
@@ -32526,7 +32526,7 @@ Current movement velocity in pixels per second.
 threshold: Vector2
 ```
 
-Defined in: [shared/player.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L46)
+Defined in: [shared/player.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L46)
 
 Movement threshold accumulator used by physics.
 
@@ -32536,7 +32536,7 @@ Movement threshold accumulator used by physics.
 onGround: boolean
 ```
 
-Defined in: [shared/player.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L51)
+Defined in: [shared/player.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L51)
 
 Spawn flag. Live physics does not update this field.
 Use `sandkit.api.player.isOnGround()` (solid cells 1px below the hitbox).
@@ -32547,7 +32547,7 @@ Use `sandkit.api.player.isOnGround()` (solid cells 1px below the hitbox).
 speedCapOverdrive: object
 ```
 
-Defined in: [shared/player.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L53)
+Defined in: [shared/player.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L53)
 
 Temporary speed-cap bonuses applied on each axis.
 
@@ -32629,7 +32629,7 @@ releaseBonus: number
 inventory: InventoryItem[]
 ```
 
-Defined in: [shared/player.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L70)
+Defined in: [shared/player.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L70)
 
 Items currently held in the player inventory.
 
@@ -32639,7 +32639,7 @@ Items currently held in the player inventory.
 buildings: number[]
 ```
 
-Defined in: [shared/player.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L72)
+Defined in: [shared/player.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L72)
 
 Structure type ids the player has unlocked for building.
 
@@ -32649,7 +32649,7 @@ Structure type ids the player has unlocked for building.
 tech: object
 ```
 
-Defined in: [shared/player.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L74)
+Defined in: [shared/player.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L74)
 
 Tech tree nodes and their unlock metadata.
 
@@ -32663,7 +32663,7 @@ Tech tree nodes and their unlock metadata.
 lockedTechs: object
 ```
 
-Defined in: [shared/player.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L104)
+Defined in: [shared/player.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L104)
 
 Tech ids explicitly locked for this save.
 
@@ -32677,7 +32677,7 @@ Tech ids explicitly locked for this save.
 action: null
 ```
 
-Defined in: [shared/player.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L106)
+Defined in: [shared/player.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L106)
 
 Active world action, or null when idle.
 
@@ -32687,7 +32687,7 @@ Active world action, or null when idle.
 hotbar: object
 ```
 
-Defined in: [shared/player.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L108)
+Defined in: [shared/player.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L108)
 
 Hotbar slots, active indices, and item sprites.
 
@@ -32715,7 +32715,7 @@ bars: AssetRef[][]
 grapplingHook: boolean
 ```
 
-Defined in: [shared/player.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L114)
+Defined in: [shared/player.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L114)
 
 True when the grappling hook is equipped or active.
 
@@ -32725,7 +32725,7 @@ True when the grappling hook is equipped or active.
 cooldowns: object
 ```
 
-Defined in: [shared/player.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L116)
+Defined in: [shared/player.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L116)
 
 Cooldown timestamps for movement particles and slowdown.
 
@@ -32783,7 +32783,7 @@ last: number
 isHovering: boolean
 ```
 
-Defined in: [shared/player.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L130)
+Defined in: [shared/player.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L130)
 
 True when hover movement mode is active.
 
@@ -32793,7 +32793,7 @@ True when hover movement mode is active.
 weaponsMeta: object
 ```
 
-Defined in: [shared/player.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L132)
+Defined in: [shared/player.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L132)
 
 Per-weapon runtime metadata.
 
@@ -32839,7 +32839,7 @@ reloading: boolean
 
 <p class="smt-member-path"><code>shared.player.InventoryItem</code></p>
 
-Defined in: [shared/player.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L146)
+Defined in: [shared/player.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L146)
 
 One hotbar or inventory item entry.
 
@@ -32851,7 +32851,7 @@ One hotbar or inventory item entry.
 id: number
 ```
 
-Defined in: [shared/player.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L147)
+Defined in: [shared/player.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L147)
 
 ###### itemType
 
@@ -32859,7 +32859,7 @@ Defined in: [shared/player.d.ts:147](https://github.com/sandustry-modding/Sandus
 itemType: number
 ```
 
-Defined in: [shared/player.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L148)
+Defined in: [shared/player.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L148)
 
 ###### abilities
 
@@ -32867,7 +32867,7 @@ Defined in: [shared/player.d.ts:148](https://github.com/sandustry-modding/Sandus
 abilities: object[]
 ```
 
-Defined in: [shared/player.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L149)
+Defined in: [shared/player.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L149)
 
 ###### type
 
@@ -32915,7 +32915,7 @@ last: number
 nameKey: string
 ```
 
-Defined in: [shared/player.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L169)
+Defined in: [shared/player.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L169)
 
 ###### descriptionKey
 
@@ -32923,7 +32923,7 @@ Defined in: [shared/player.d.ts:169](https://github.com/sandustry-modding/Sandus
 descriptionKey: string
 ```
 
-Defined in: [shared/player.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L170)
+Defined in: [shared/player.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L170)
 
 ###### categoryKey
 
@@ -32931,7 +32931,7 @@ Defined in: [shared/player.d.ts:170](https://github.com/sandustry-modding/Sandus
 categoryKey: "excavation" | "utility" | "drones"
 ```
 
-Defined in: [shared/player.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L171)
+Defined in: [shared/player.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L171)
 
 ###### sprite?
 
@@ -32939,7 +32939,7 @@ Defined in: [shared/player.d.ts:171](https://github.com/sandustry-modding/Sandus
 optional sprite?: AssetRef
 ```
 
-Defined in: [shared/player.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L172)
+Defined in: [shared/player.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L172)
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
@@ -32951,7 +32951,7 @@ Defined in: [shared/player.d.ts:172](https://github.com/sandustry-modding/Sandus
 CellCoordinates = [number, number]
 ```
 
-Defined in: [shared/player.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L14)
+Defined in: [shared/player.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L14)
 
 Grid cell position as `[cellX, cellY]`.
 
@@ -32967,7 +32967,7 @@ Cell coordinates match `sandkit.api.*AtCell` helpers: column first, then row.
 Vector2 = object
 ```
 
-Defined in: [shared/player.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L22)
+Defined in: [shared/player.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L22)
 
 2D vector in world or cell space.
 
@@ -32982,7 +32982,7 @@ depending on the API.
 x: number
 ```
 
-Defined in: [shared/player.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L24)
+Defined in: [shared/player.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L24)
 
 Horizontal component.
 
@@ -32992,7 +32992,7 @@ Horizontal component.
 y: number
 ```
 
-Defined in: [shared/player.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L26)
+Defined in: [shared/player.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L26)
 
 Vertical component.
 
@@ -33000,7 +33000,7 @@ Vertical component.
 
 ## sandkit.api.building.StructureType
 
-Defined in: [sandkit/api/building.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L10)
+Defined in: [sandkit/api/building.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L10)
 
 Built-in structure type ids used during placement.
 
@@ -33014,7 +33014,7 @@ Built-in structure type ids used during placement.
 ConveyorLeft: 1
 ```
 
-Defined in: [sandkit/api/building.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L12)
+Defined in: [sandkit/api/building.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L12)
 
 Left-facing conveyor belt.
 
@@ -33028,7 +33028,7 @@ Left-facing conveyor belt.
 ConveyorRight: 2
 ```
 
-Defined in: [sandkit/api/building.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L14)
+Defined in: [sandkit/api/building.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L14)
 
 Right-facing conveyor belt.
 
@@ -33042,7 +33042,7 @@ Right-facing conveyor belt.
 ShakerLeft: 3
 ```
 
-Defined in: [sandkit/api/building.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L16)
+Defined in: [sandkit/api/building.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L16)
 
 Left-facing shaker.
 
@@ -33056,7 +33056,7 @@ Left-facing shaker.
 ShakerRight: 4
 ```
 
-Defined in: [sandkit/api/building.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L18)
+Defined in: [sandkit/api/building.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L18)
 
 Right-facing shaker.
 
@@ -33070,7 +33070,7 @@ Right-facing shaker.
 LauncherUp: 5
 ```
 
-Defined in: [sandkit/api/building.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L20)
+Defined in: [sandkit/api/building.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L20)
 
 Up-facing launcher.
 
@@ -33084,7 +33084,7 @@ Up-facing launcher.
 LauncherLeft: 6
 ```
 
-Defined in: [sandkit/api/building.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L22)
+Defined in: [sandkit/api/building.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L22)
 
 Left-facing launcher.
 
@@ -33098,7 +33098,7 @@ Left-facing launcher.
 LauncherRight: 7
 ```
 
-Defined in: [sandkit/api/building.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L24)
+Defined in: [sandkit/api/building.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L24)
 
 Right-facing launcher.
 
@@ -33112,7 +33112,7 @@ Right-facing launcher.
 SplitterLeft: 8
 ```
 
-Defined in: [sandkit/api/building.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L26)
+Defined in: [sandkit/api/building.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L26)
 
 Left-facing splitter.
 
@@ -33126,7 +33126,7 @@ Left-facing splitter.
 SplitterRight: 9
 ```
 
-Defined in: [sandkit/api/building.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L28)
+Defined in: [sandkit/api/building.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L28)
 
 Right-facing splitter.
 
@@ -33140,7 +33140,7 @@ Right-facing splitter.
 Dropper: 10
 ```
 
-Defined in: [sandkit/api/building.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L30)
+Defined in: [sandkit/api/building.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L30)
 
 Dropper structure.
 
@@ -33154,7 +33154,7 @@ Dropper structure.
 Foundation: 11
 ```
 
-Defined in: [sandkit/api/building.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L32)
+Defined in: [sandkit/api/building.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L32)
 
 Foundation block.
 
@@ -33168,7 +33168,7 @@ Foundation block.
 FoundationAngledLeft: 12
 ```
 
-Defined in: [sandkit/api/building.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L34)
+Defined in: [sandkit/api/building.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L34)
 
 Angled foundation facing left.
 
@@ -33182,7 +33182,7 @@ Angled foundation facing left.
 FoundationTriangleLeftDel: 13
 ```
 
-Defined in: [sandkit/api/building.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L36)
+Defined in: [sandkit/api/building.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L36)
 
 Left triangle foundation (deprecated id).
 
@@ -33196,7 +33196,7 @@ Left triangle foundation (deprecated id).
 FoundationAngledRight: 14
 ```
 
-Defined in: [sandkit/api/building.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L38)
+Defined in: [sandkit/api/building.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L38)
 
 Angled foundation facing right.
 
@@ -33210,7 +33210,7 @@ Angled foundation facing right.
 FoundationTriangleRightDel: 15
 ```
 
-Defined in: [sandkit/api/building.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L40)
+Defined in: [sandkit/api/building.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L40)
 
 Right triangle foundation (deprecated id).
 
@@ -33224,7 +33224,7 @@ Right triangle foundation (deprecated id).
 Collector: 16
 ```
 
-Defined in: [sandkit/api/building.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L42)
+Defined in: [sandkit/api/building.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L42)
 
 Collector structure.
 
@@ -33238,7 +33238,7 @@ Collector structure.
 FilterLeft: 17
 ```
 
-Defined in: [sandkit/api/building.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L44)
+Defined in: [sandkit/api/building.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L44)
 
 Left-facing filter.
 
@@ -33252,7 +33252,7 @@ Left-facing filter.
 FilterRight: 18
 ```
 
-Defined in: [sandkit/api/building.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L46)
+Defined in: [sandkit/api/building.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L46)
 
 Right-facing filter.
 
@@ -33266,7 +33266,7 @@ Right-facing filter.
 SlidingFoundation: 19
 ```
 
-Defined in: [sandkit/api/building.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L48)
+Defined in: [sandkit/api/building.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L48)
 
 Sliding foundation block.
 
@@ -33280,7 +33280,7 @@ Sliding foundation block.
 VelocitySoaker: 20
 ```
 
-Defined in: [sandkit/api/building.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L50)
+Defined in: [sandkit/api/building.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L50)
 
 Velocity soaker structure.
 
@@ -33294,7 +33294,7 @@ Velocity soaker structure.
 Grower: 21
 ```
 
-Defined in: [sandkit/api/building.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L52)
+Defined in: [sandkit/api/building.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L52)
 
 Grower structure.
 
@@ -33308,7 +33308,7 @@ Grower structure.
 SoundBox: 22
 ```
 
-Defined in: [sandkit/api/building.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L54)
+Defined in: [sandkit/api/building.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L54)
 
 Sound box structure.
 
@@ -33322,7 +33322,7 @@ Sound box structure.
 Pipe: 23
 ```
 
-Defined in: [sandkit/api/building.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L56)
+Defined in: [sandkit/api/building.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L56)
 
 Pipe segment.
 
@@ -33336,7 +33336,7 @@ Pipe segment.
 Pump: 24
 ```
 
-Defined in: [sandkit/api/building.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L58)
+Defined in: [sandkit/api/building.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L58)
 
 Pump structure.
 
@@ -33350,7 +33350,7 @@ Pump structure.
 LiquidVent: 25
 ```
 
-Defined in: [sandkit/api/building.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L60)
+Defined in: [sandkit/api/building.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L60)
 
 Liquid vent structure.
 
@@ -33364,7 +33364,7 @@ Liquid vent structure.
 Light: 26
 ```
 
-Defined in: [sandkit/api/building.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L62)
+Defined in: [sandkit/api/building.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L62)
 
 Light structure.
 
@@ -33378,7 +33378,7 @@ Light structure.
 GloomEmitter: 27
 ```
 
-Defined in: [sandkit/api/building.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/building.d.ts#L64)
+Defined in: [sandkit/api/building.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L64)
 
 Gloom emitter structure.
 
@@ -33386,7 +33386,7 @@ Gloom emitter structure.
 
 ## sandkit.api.elements.MatterType
 
-Defined in: [shared/api/elements.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L41)
+Defined in: [shared/api/elements.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L41)
 
 Physical behaviour category for an element.
 
@@ -33404,7 +33404,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elem
 Solid: 1
 ```
 
-Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L42)
+Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L42)
 
 ***
 
@@ -33416,7 +33416,7 @@ Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/S
 Liquid: 2
 ```
 
-Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L43)
+Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L43)
 
 ***
 
@@ -33428,7 +33428,7 @@ Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/S
 Particle: 3
 ```
 
-Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L44)
+Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L44)
 
 ***
 
@@ -33440,7 +33440,7 @@ Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/S
 Gas: 4
 ```
 
-Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L45)
+Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L45)
 
 ***
 
@@ -33452,7 +33452,7 @@ Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/S
 Static: 5
 ```
 
-Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L46)
+Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L46)
 
 ***
 
@@ -33464,7 +33464,7 @@ Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/S
 Slushy: 6
 ```
 
-Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L47)
+Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L47)
 
 ***
 
@@ -33476,7 +33476,7 @@ Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/S
 Wisp: 7
 ```
 
-Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L48)
+Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L48)
 
 ***
 
@@ -33488,7 +33488,7 @@ Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/S
 Powder: 8
 ```
 
-Defined in: [shared/api/elements.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/elements.d.ts#L49)
+Defined in: [shared/api/elements.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L49)
 
 ---
 
@@ -33609,7 +33609,7 @@ See [sandkit.api](api/sandkit.md#api-1) for the main-thread public API.
 WorkerSandkitApi = object
 ```
 
-Defined in: [worker/sandkit-api.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L14)
+Defined in: [worker/sandkit-api.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L14)
 
 Composed worker-thread `sandkit.api` object.
 
@@ -33631,7 +33631,7 @@ Main and worker surfaces overlap but are not interchangeable. Do not use
 constants: constants
 ```
 
-Defined in: [worker/sandkit-api.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L15)
+Defined in: [worker/sandkit-api.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L15)
 
 ###### collector
 
@@ -33639,7 +33639,7 @@ Defined in: [worker/sandkit-api.d.ts:15](https://github.com/sandustry-modding/Sa
 collector: collector
 ```
 
-Defined in: [worker/sandkit-api.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L16)
+Defined in: [worker/sandkit-api.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L16)
 
 ###### effects
 
@@ -33647,7 +33647,7 @@ Defined in: [worker/sandkit-api.d.ts:16](https://github.com/sandustry-modding/Sa
 effects: effects
 ```
 
-Defined in: [worker/sandkit-api.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L17)
+Defined in: [worker/sandkit-api.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L17)
 
 ###### elements
 
@@ -33655,7 +33655,7 @@ Defined in: [worker/sandkit-api.d.ts:17](https://github.com/sandustry-modding/Sa
 elements: elements
 ```
 
-Defined in: [worker/sandkit-api.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L18)
+Defined in: [worker/sandkit-api.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L18)
 
 ###### events
 
@@ -33663,7 +33663,7 @@ Defined in: [worker/sandkit-api.d.ts:18](https://github.com/sandustry-modding/Sa
 events: events
 ```
 
-Defined in: [worker/sandkit-api.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L19)
+Defined in: [worker/sandkit-api.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L19)
 
 ###### fire
 
@@ -33671,7 +33671,7 @@ Defined in: [worker/sandkit-api.d.ts:19](https://github.com/sandustry-modding/Sa
 fire: fire
 ```
 
-Defined in: [worker/sandkit-api.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L20)
+Defined in: [worker/sandkit-api.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L20)
 
 ###### grid
 
@@ -33679,7 +33679,7 @@ Defined in: [worker/sandkit-api.d.ts:20](https://github.com/sandustry-modding/Sa
 grid: grid
 ```
 
-Defined in: [worker/sandkit-api.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L21)
+Defined in: [worker/sandkit-api.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L21)
 
 ###### hooks
 
@@ -33687,7 +33687,7 @@ Defined in: [worker/sandkit-api.d.ts:21](https://github.com/sandustry-modding/Sa
 hooks: hooks
 ```
 
-Defined in: [worker/sandkit-api.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L22)
+Defined in: [worker/sandkit-api.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L22)
 
 ###### lights
 
@@ -33695,7 +33695,7 @@ Defined in: [worker/sandkit-api.d.ts:22](https://github.com/sandustry-modding/Sa
 lights: lights
 ```
 
-Defined in: [worker/sandkit-api.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L23)
+Defined in: [worker/sandkit-api.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L23)
 
 ###### main
 
@@ -33703,7 +33703,7 @@ Defined in: [worker/sandkit-api.d.ts:23](https://github.com/sandustry-modding/Sa
 main: main
 ```
 
-Defined in: [worker/sandkit-api.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L24)
+Defined in: [worker/sandkit-api.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L24)
 
 ###### maps
 
@@ -33711,7 +33711,7 @@ Defined in: [worker/sandkit-api.d.ts:24](https://github.com/sandustry-modding/Sa
 maps: maps
 ```
 
-Defined in: [worker/sandkit-api.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L25)
+Defined in: [worker/sandkit-api.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L25)
 
 ###### patterns
 
@@ -33719,7 +33719,7 @@ Defined in: [worker/sandkit-api.d.ts:25](https://github.com/sandustry-modding/Sa
 patterns: patterns
 ```
 
-Defined in: [worker/sandkit-api.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L26)
+Defined in: [worker/sandkit-api.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L26)
 
 ###### player
 
@@ -33727,7 +33727,7 @@ Defined in: [worker/sandkit-api.d.ts:26](https://github.com/sandustry-modding/Sa
 player: player
 ```
 
-Defined in: [worker/sandkit-api.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L27)
+Defined in: [worker/sandkit-api.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L27)
 
 ###### random
 
@@ -33735,7 +33735,7 @@ Defined in: [worker/sandkit-api.d.ts:27](https://github.com/sandustry-modding/Sa
 random: random
 ```
 
-Defined in: [worker/sandkit-api.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L28)
+Defined in: [worker/sandkit-api.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L28)
 
 ###### shared
 
@@ -33743,7 +33743,7 @@ Defined in: [worker/sandkit-api.d.ts:28](https://github.com/sandustry-modding/Sa
 shared: shared
 ```
 
-Defined in: [worker/sandkit-api.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L29)
+Defined in: [worker/sandkit-api.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L29)
 
 ###### structures
 
@@ -33751,7 +33751,7 @@ Defined in: [worker/sandkit-api.d.ts:29](https://github.com/sandustry-modding/Sa
 structures: structures
 ```
 
-Defined in: [worker/sandkit-api.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L30)
+Defined in: [worker/sandkit-api.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L30)
 
 ###### terrains
 
@@ -33759,7 +33759,7 @@ Defined in: [worker/sandkit-api.d.ts:30](https://github.com/sandustry-modding/Sa
 terrains: terrains
 ```
 
-Defined in: [worker/sandkit-api.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L31)
+Defined in: [worker/sandkit-api.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L31)
 
 ###### ui
 
@@ -33767,7 +33767,7 @@ Defined in: [worker/sandkit-api.d.ts:31](https://github.com/sandustry-modding/Sa
 ui: ui
 ```
 
-Defined in: [worker/sandkit-api.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L32)
+Defined in: [worker/sandkit-api.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L32)
 
 ###### utils
 
@@ -33775,7 +33775,7 @@ Defined in: [worker/sandkit-api.d.ts:32](https://github.com/sandustry-modding/Sa
 utils: utils
 ```
 
-Defined in: [worker/sandkit-api.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L33)
+Defined in: [worker/sandkit-api.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L33)
 
 ###### worker
 
@@ -33783,7 +33783,7 @@ Defined in: [worker/sandkit-api.d.ts:33](https://github.com/sandustry-modding/Sa
 worker: worker
 ```
 
-Defined in: [worker/sandkit-api.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L34)
+Defined in: [worker/sandkit-api.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L34)
 
 ###### ~~world~~
 
@@ -33791,7 +33791,7 @@ Defined in: [worker/sandkit-api.d.ts:34](https://github.com/sandustry-modding/Sa
 world: world
 ```
 
-Defined in: [worker/sandkit-api.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/sandkit-api.d.ts#L39)
+Defined in: [worker/sandkit-api.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L39)
 
 ###### Deprecated
 
@@ -33903,7 +33903,7 @@ complete or correct.
 
 <p class="smt-member-path"><code>sandkit.engine.SandkitEngine</code></p>
 
-Defined in: [sandkit/engine/index.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L132)
+Defined in: [sandkit/engine/index.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L132)
 
 **`Internal`**
 
@@ -33920,7 +33920,7 @@ At runtime `sandkit.engine.state === sandkit.state`.
 api: SandkitEngineApi
 ```
 
-Defined in: [sandkit/engine/index.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L133)
+Defined in: [sandkit/engine/index.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L133)
 
 ###### state
 
@@ -33928,7 +33928,7 @@ Defined in: [sandkit/engine/index.d.ts:133](https://github.com/sandustry-modding
 state: SandkitState
 ```
 
-Defined in: [sandkit/engine/index.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L134)
+Defined in: [sandkit/engine/index.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L134)
 
 ***
 
@@ -33936,7 +33936,7 @@ Defined in: [sandkit/engine/index.d.ts:134](https://github.com/sandustry-modding
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsoleDisplay</code></p>
 
-Defined in: [sandkit/engine/retro-console.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L14)
+Defined in: [sandkit/engine/retro-console.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L14)
 
 **`Internal`**
 
@@ -33950,7 +33950,7 @@ Low-resolution display buffer for a Retro Console game.
 width: number
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L15)
+Defined in: [sandkit/engine/retro-console.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L15)
 
 ###### height
 
@@ -33958,7 +33958,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:15](https://github.com/sandustry-
 height: number
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L16)
+Defined in: [sandkit/engine/retro-console.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L16)
 
 ##### Methods
 
@@ -33968,7 +33968,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:16](https://github.com/sandustry-
 clearScreen(value?: RetroConsolePixel): void
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L18)
+Defined in: [sandkit/engine/retro-console.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L18)
 
 Clear the framebuffer. Optional fill value defaults to off.
 
@@ -33988,7 +33988,7 @@ Clear the framebuffer. Optional fill value defaults to off.
 drawPixel(x: number, y: number, value: RetroConsolePixel): void
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L20)
+Defined in: [sandkit/engine/retro-console.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L20)
 
 Set one pixel in the framebuffer.
 
@@ -34016,7 +34016,7 @@ Set one pixel in the framebuffer.
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsoleInput</code></p>
 
-Defined in: [sandkit/engine/retro-console.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L24)
+Defined in: [sandkit/engine/retro-console.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L24)
 
 **`Internal`**
 
@@ -34030,7 +34030,7 @@ Directional input from the Retro Console controls.
 x: number
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L25)
+Defined in: [sandkit/engine/retro-console.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L25)
 
 ###### y
 
@@ -34038,7 +34038,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:25](https://github.com/sandustry-
 y: number
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L26)
+Defined in: [sandkit/engine/retro-console.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L26)
 
 ***
 
@@ -34046,7 +34046,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:26](https://github.com/sandustry-
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsoleGameOptions</code></p>
 
-Defined in: [sandkit/engine/retro-console.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L30)
+Defined in: [sandkit/engine/retro-console.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L30)
 
 **`Internal`**
 
@@ -34060,7 +34060,7 @@ Display size options for a registered Retro Console game.
 width: number
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L31)
+Defined in: [sandkit/engine/retro-console.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L31)
 
 ###### height
 
@@ -34068,7 +34068,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:31](https://github.com/sandustry-
 height: number
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L32)
+Defined in: [sandkit/engine/retro-console.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L32)
 
 ***
 
@@ -34076,7 +34076,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:32](https://github.com/sandustry-
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsoleGame</code></p>
 
-Defined in: [sandkit/engine/retro-console.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L36)
+Defined in: [sandkit/engine/retro-console.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L36)
 
 **`Internal`**
 
@@ -34096,7 +34096,7 @@ Retro Console game definition passed to [RetroConsoleApi.registerGame](#register
 id: string
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L37)
+Defined in: [sandkit/engine/retro-console.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L37)
 
 ###### name
 
@@ -34104,7 +34104,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:37](https://github.com/sandustry-
 name: string
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L38)
+Defined in: [sandkit/engine/retro-console.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L38)
 
 ###### options?
 
@@ -34112,7 +34112,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:38](https://github.com/sandustry-
 optional options?: RetroConsoleGameOptions
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L39)
+Defined in: [sandkit/engine/retro-console.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L39)
 
 ##### Methods
 
@@ -34122,7 +34122,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:39](https://github.com/sandustry-
 init(display: RetroConsoleDisplay): TState
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L41)
+Defined in: [sandkit/engine/retro-console.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L41)
 
 Create initial game state and draw the first frame.
 
@@ -34142,7 +34142,7 @@ Create initial game state and draw the first frame.
 update(display: RetroConsoleDisplay, state: TState): TState
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L43)
+Defined in: [sandkit/engine/retro-console.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L43)
 
 Advance one frame and return updated game state.
 
@@ -34166,7 +34166,7 @@ Advance one frame and return updated game state.
 optional handleInput(display: RetroConsoleDisplay, state: TState, input: RetroConsoleInput): TState
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L45)
+Defined in: [sandkit/engine/retro-console.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L45)
 
 Handle player input when provided.
 
@@ -34194,7 +34194,7 @@ Handle player input when provided.
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsoleApi</code></p>
 
-Defined in: [sandkit/engine/retro-console.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L49)
+Defined in: [sandkit/engine/retro-console.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L49)
 
 **`Internal`**
 
@@ -34208,7 +34208,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:49](https://github.com/sandustry-
 registerGame<TState>(game: RetroConsoleGame<TState>): void
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L51)
+Defined in: [sandkit/engine/retro-console.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L51)
 
 Register a Retro Console mini-game.
 
@@ -34238,7 +34238,7 @@ Register a Retro Console mini-game.
 SandkitEngineApi = object
 ```
 
-Defined in: [sandkit/engine/index.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L32)
+Defined in: [sandkit/engine/index.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L32)
 
 **`Internal`**
 
@@ -34255,7 +34255,7 @@ Engine-only namespaces are declared under `api/`.
 action: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L34)
+Defined in: [sandkit/engine/index.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L34)
 
 ###### authorization
 
@@ -34263,7 +34263,7 @@ Defined in: [sandkit/engine/index.d.ts:34](https://github.com/sandustry-modding/
 authorization: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L35)
+Defined in: [sandkit/engine/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L35)
 
 ###### building
 
@@ -34271,7 +34271,7 @@ Defined in: [sandkit/engine/index.d.ts:35](https://github.com/sandustry-modding/
 building: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L36)
+Defined in: [sandkit/engine/index.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L36)
 
 ###### camera
 
@@ -34279,7 +34279,7 @@ Defined in: [sandkit/engine/index.d.ts:36](https://github.com/sandustry-modding/
 camera: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L37)
+Defined in: [sandkit/engine/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L37)
 
 ###### collector
 
@@ -34287,7 +34287,7 @@ Defined in: [sandkit/engine/index.d.ts:37](https://github.com/sandustry-modding/
 collector: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L38)
+Defined in: [sandkit/engine/index.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L38)
 
 ###### constants
 
@@ -34295,7 +34295,7 @@ Defined in: [sandkit/engine/index.d.ts:38](https://github.com/sandustry-modding/
 constants: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L39)
+Defined in: [sandkit/engine/index.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L39)
 
 ###### cooldown
 
@@ -34303,7 +34303,7 @@ Defined in: [sandkit/engine/index.d.ts:39](https://github.com/sandustry-modding/
 cooldown: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L40)
+Defined in: [sandkit/engine/index.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L40)
 
 ###### discoveries
 
@@ -34311,7 +34311,7 @@ Defined in: [sandkit/engine/index.d.ts:40](https://github.com/sandustry-modding/
 discoveries: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L41)
+Defined in: [sandkit/engine/index.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L41)
 
 ###### effects
 
@@ -34319,7 +34319,7 @@ Defined in: [sandkit/engine/index.d.ts:41](https://github.com/sandustry-modding/
 effects: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L42)
+Defined in: [sandkit/engine/index.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L42)
 
 ###### elements
 
@@ -34327,7 +34327,7 @@ Defined in: [sandkit/engine/index.d.ts:42](https://github.com/sandustry-modding/
 elements: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L43)
+Defined in: [sandkit/engine/index.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L43)
 
 ###### energy
 
@@ -34335,7 +34335,7 @@ Defined in: [sandkit/engine/index.d.ts:43](https://github.com/sandustry-modding/
 energy: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L44)
+Defined in: [sandkit/engine/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L44)
 
 ###### events
 
@@ -34343,7 +34343,7 @@ Defined in: [sandkit/engine/index.d.ts:44](https://github.com/sandustry-modding/
 events: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L45)
+Defined in: [sandkit/engine/index.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L45)
 
 ###### excavation
 
@@ -34351,7 +34351,7 @@ Defined in: [sandkit/engine/index.d.ts:45](https://github.com/sandustry-modding/
 excavation: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L46)
+Defined in: [sandkit/engine/index.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L46)
 
 ###### fire
 
@@ -34359,7 +34359,7 @@ Defined in: [sandkit/engine/index.d.ts:46](https://github.com/sandustry-modding/
 fire: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L47)
+Defined in: [sandkit/engine/index.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L47)
 
 ###### grid
 
@@ -34367,7 +34367,7 @@ Defined in: [sandkit/engine/index.d.ts:47](https://github.com/sandustry-modding/
 grid: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L48)
+Defined in: [sandkit/engine/index.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L48)
 
 ###### hooks
 
@@ -34375,7 +34375,7 @@ Defined in: [sandkit/engine/index.d.ts:48](https://github.com/sandustry-modding/
 hooks: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L49)
+Defined in: [sandkit/engine/index.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L49)
 
 ###### i18n
 
@@ -34383,7 +34383,7 @@ Defined in: [sandkit/engine/index.d.ts:49](https://github.com/sandustry-modding/
 i18n: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L50)
+Defined in: [sandkit/engine/index.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L50)
 
 ###### input
 
@@ -34391,7 +34391,7 @@ Defined in: [sandkit/engine/index.d.ts:50](https://github.com/sandustry-modding/
 input: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L51)
+Defined in: [sandkit/engine/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L51)
 
 ###### items
 
@@ -34399,7 +34399,7 @@ Defined in: [sandkit/engine/index.d.ts:51](https://github.com/sandustry-modding/
 items: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L52)
+Defined in: [sandkit/engine/index.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L52)
 
 ###### lights
 
@@ -34407,7 +34407,7 @@ Defined in: [sandkit/engine/index.d.ts:52](https://github.com/sandustry-modding/
 lights: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L53)
+Defined in: [sandkit/engine/index.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L53)
 
 ###### maps
 
@@ -34415,7 +34415,7 @@ Defined in: [sandkit/engine/index.d.ts:53](https://github.com/sandustry-modding/
 maps: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L54)
+Defined in: [sandkit/engine/index.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L54)
 
 ###### patterns
 
@@ -34423,7 +34423,7 @@ Defined in: [sandkit/engine/index.d.ts:54](https://github.com/sandustry-modding/
 patterns: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L55)
+Defined in: [sandkit/engine/index.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L55)
 
 ###### player
 
@@ -34431,7 +34431,7 @@ Defined in: [sandkit/engine/index.d.ts:55](https://github.com/sandustry-modding/
 player: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L56)
+Defined in: [sandkit/engine/index.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L56)
 
 ###### processing
 
@@ -34439,7 +34439,7 @@ Defined in: [sandkit/engine/index.d.ts:56](https://github.com/sandustry-modding/
 processing: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L57)
+Defined in: [sandkit/engine/index.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L57)
 
 ###### progression
 
@@ -34447,7 +34447,7 @@ Defined in: [sandkit/engine/index.d.ts:57](https://github.com/sandustry-modding/
 progression: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L58)
+Defined in: [sandkit/engine/index.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L58)
 
 ###### projectiles
 
@@ -34455,7 +34455,7 @@ Defined in: [sandkit/engine/index.d.ts:58](https://github.com/sandustry-modding/
 projectiles: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L59)
+Defined in: [sandkit/engine/index.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L59)
 
 ###### random
 
@@ -34463,7 +34463,7 @@ Defined in: [sandkit/engine/index.d.ts:59](https://github.com/sandustry-modding/
 random: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L60)
+Defined in: [sandkit/engine/index.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L60)
 
 ###### raycast
 
@@ -34471,7 +34471,7 @@ Defined in: [sandkit/engine/index.d.ts:60](https://github.com/sandustry-modding/
 raycast: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L61)
+Defined in: [sandkit/engine/index.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L61)
 
 ###### reactions
 
@@ -34479,7 +34479,7 @@ Defined in: [sandkit/engine/index.d.ts:61](https://github.com/sandustry-modding/
 reactions: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L62)
+Defined in: [sandkit/engine/index.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L62)
 
 ###### rendering
 
@@ -34487,7 +34487,7 @@ Defined in: [sandkit/engine/index.d.ts:62](https://github.com/sandustry-modding/
 rendering: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L63)
+Defined in: [sandkit/engine/index.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L63)
 
 ###### resources
 
@@ -34495,7 +34495,7 @@ Defined in: [sandkit/engine/index.d.ts:63](https://github.com/sandustry-modding/
 resources: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L64)
+Defined in: [sandkit/engine/index.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L64)
 
 ###### scene
 
@@ -34503,7 +34503,7 @@ Defined in: [sandkit/engine/index.d.ts:64](https://github.com/sandustry-modding/
 scene: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L65)
+Defined in: [sandkit/engine/index.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L65)
 
 ###### schedule
 
@@ -34511,7 +34511,7 @@ Defined in: [sandkit/engine/index.d.ts:65](https://github.com/sandustry-modding/
 schedule: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L66)
+Defined in: [sandkit/engine/index.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L66)
 
 ###### signals
 
@@ -34519,7 +34519,7 @@ Defined in: [sandkit/engine/index.d.ts:66](https://github.com/sandustry-modding/
 signals: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L67)
+Defined in: [sandkit/engine/index.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L67)
 
 ###### sound
 
@@ -34527,7 +34527,7 @@ Defined in: [sandkit/engine/index.d.ts:67](https://github.com/sandustry-modding/
 sound: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L68)
+Defined in: [sandkit/engine/index.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L68)
 
 ###### sprites
 
@@ -34535,7 +34535,7 @@ Defined in: [sandkit/engine/index.d.ts:68](https://github.com/sandustry-modding/
 sprites: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L69)
+Defined in: [sandkit/engine/index.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L69)
 
 ###### storage
 
@@ -34543,7 +34543,7 @@ Defined in: [sandkit/engine/index.d.ts:69](https://github.com/sandustry-modding/
 storage: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L70)
+Defined in: [sandkit/engine/index.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L70)
 
 ###### structures
 
@@ -34551,7 +34551,7 @@ Defined in: [sandkit/engine/index.d.ts:70](https://github.com/sandustry-modding/
 structures: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L71)
+Defined in: [sandkit/engine/index.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L71)
 
 ###### tech
 
@@ -34559,7 +34559,7 @@ Defined in: [sandkit/engine/index.d.ts:71](https://github.com/sandustry-modding/
 tech: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L72)
+Defined in: [sandkit/engine/index.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L72)
 
 ###### terrains
 
@@ -34567,7 +34567,7 @@ Defined in: [sandkit/engine/index.d.ts:72](https://github.com/sandustry-modding/
 terrains: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L73)
+Defined in: [sandkit/engine/index.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L73)
 
 ###### tools
 
@@ -34575,7 +34575,7 @@ Defined in: [sandkit/engine/index.d.ts:73](https://github.com/sandustry-modding/
 tools: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L74)
+Defined in: [sandkit/engine/index.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L74)
 
 ###### triggers
 
@@ -34583,7 +34583,7 @@ Defined in: [sandkit/engine/index.d.ts:74](https://github.com/sandustry-modding/
 triggers: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L75)
+Defined in: [sandkit/engine/index.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L75)
 
 ###### ui
 
@@ -34591,7 +34591,7 @@ Defined in: [sandkit/engine/index.d.ts:75](https://github.com/sandustry-modding/
 ui: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L76)
+Defined in: [sandkit/engine/index.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L76)
 
 ###### upgrades
 
@@ -34599,7 +34599,7 @@ Defined in: [sandkit/engine/index.d.ts:76](https://github.com/sandustry-modding/
 upgrades: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L77)
+Defined in: [sandkit/engine/index.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L77)
 
 ###### utils
 
@@ -34607,7 +34607,7 @@ Defined in: [sandkit/engine/index.d.ts:77](https://github.com/sandustry-modding/
 utils: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L78)
+Defined in: [sandkit/engine/index.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L78)
 
 ###### workers
 
@@ -34615,7 +34615,7 @@ Defined in: [sandkit/engine/index.d.ts:78](https://github.com/sandustry-modding/
 workers: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L79)
+Defined in: [sandkit/engine/index.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L79)
 
 ###### world
 
@@ -34623,7 +34623,7 @@ Defined in: [sandkit/engine/index.d.ts:79](https://github.com/sandustry-modding/
 world: EngineOverlapNs
 ```
 
-Defined in: [sandkit/engine/index.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L80)
+Defined in: [sandkit/engine/index.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L80)
 
 ###### augments
 
@@ -34631,7 +34631,7 @@ Defined in: [sandkit/engine/index.d.ts:80](https://github.com/sandustry-modding/
 augments: augments
 ```
 
-Defined in: [sandkit/engine/index.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L83)
+Defined in: [sandkit/engine/index.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L83)
 
 ###### auralite
 
@@ -34639,7 +34639,7 @@ Defined in: [sandkit/engine/index.d.ts:83](https://github.com/sandustry-modding/
 auralite: auralite
 ```
 
-Defined in: [sandkit/engine/index.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L84)
+Defined in: [sandkit/engine/index.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L84)
 
 ###### blueprints
 
@@ -34647,7 +34647,7 @@ Defined in: [sandkit/engine/index.d.ts:84](https://github.com/sandustry-modding/
 blueprints: blueprints
 ```
 
-Defined in: [sandkit/engine/index.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L85)
+Defined in: [sandkit/engine/index.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L85)
 
 ###### clipboard
 
@@ -34655,7 +34655,7 @@ Defined in: [sandkit/engine/index.d.ts:85](https://github.com/sandustry-modding/
 clipboard: clipboard
 ```
 
-Defined in: [sandkit/engine/index.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L86)
+Defined in: [sandkit/engine/index.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L86)
 
 ###### colorPicker
 
@@ -34663,7 +34663,7 @@ Defined in: [sandkit/engine/index.d.ts:86](https://github.com/sandustry-modding/
 colorPicker: colorPicker
 ```
 
-Defined in: [sandkit/engine/index.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L87)
+Defined in: [sandkit/engine/index.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L87)
 
 ###### coloringTool
 
@@ -34671,7 +34671,7 @@ Defined in: [sandkit/engine/index.d.ts:87](https://github.com/sandustry-modding/
 coloringTool: coloringTool
 ```
 
-Defined in: [sandkit/engine/index.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L88)
+Defined in: [sandkit/engine/index.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L88)
 
 ###### conveyors
 
@@ -34679,7 +34679,7 @@ Defined in: [sandkit/engine/index.d.ts:88](https://github.com/sandustry-modding/
 conveyors: conveyors
 ```
 
-Defined in: [sandkit/engine/index.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L89)
+Defined in: [sandkit/engine/index.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L89)
 
 ###### debug
 
@@ -34687,7 +34687,7 @@ Defined in: [sandkit/engine/index.d.ts:89](https://github.com/sandustry-modding/
 debug: debug
 ```
 
-Defined in: [sandkit/engine/index.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L90)
+Defined in: [sandkit/engine/index.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L90)
 
 ###### drones
 
@@ -34695,7 +34695,7 @@ Defined in: [sandkit/engine/index.d.ts:90](https://github.com/sandustry-modding/
 drones: drones
 ```
 
-Defined in: [sandkit/engine/index.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L91)
+Defined in: [sandkit/engine/index.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L91)
 
 ###### entities
 
@@ -34703,7 +34703,7 @@ Defined in: [sandkit/engine/index.d.ts:91](https://github.com/sandustry-modding/
 entities: entities
 ```
 
-Defined in: [sandkit/engine/index.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L92)
+Defined in: [sandkit/engine/index.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L92)
 
 ###### extensions
 
@@ -34711,7 +34711,7 @@ Defined in: [sandkit/engine/index.d.ts:92](https://github.com/sandustry-modding/
 extensions: extensions
 ```
 
-Defined in: [sandkit/engine/index.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L93)
+Defined in: [sandkit/engine/index.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L93)
 
 ###### factory
 
@@ -34719,7 +34719,7 @@ Defined in: [sandkit/engine/index.d.ts:93](https://github.com/sandustry-modding/
 factory: factory
 ```
 
-Defined in: [sandkit/engine/index.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L94)
+Defined in: [sandkit/engine/index.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L94)
 
 ###### foliage
 
@@ -34727,7 +34727,7 @@ Defined in: [sandkit/engine/index.d.ts:94](https://github.com/sandustry-modding/
 foliage: foliage
 ```
 
-Defined in: [sandkit/engine/index.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L95)
+Defined in: [sandkit/engine/index.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L95)
 
 ###### foundationColorPicker
 
@@ -34735,7 +34735,7 @@ Defined in: [sandkit/engine/index.d.ts:95](https://github.com/sandustry-modding/
 foundationColorPicker: foundationColorPicker
 ```
 
-Defined in: [sandkit/engine/index.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L96)
+Defined in: [sandkit/engine/index.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L96)
 
 ###### game
 
@@ -34743,7 +34743,7 @@ Defined in: [sandkit/engine/index.d.ts:96](https://github.com/sandustry-modding/
 game: game
 ```
 
-Defined in: [sandkit/engine/index.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L97)
+Defined in: [sandkit/engine/index.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L97)
 
 ###### heatTransfer
 
@@ -34751,7 +34751,7 @@ Defined in: [sandkit/engine/index.d.ts:97](https://github.com/sandustry-modding/
 heatTransfer: heatTransfer
 ```
 
-Defined in: [sandkit/engine/index.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L98)
+Defined in: [sandkit/engine/index.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L98)
 
 ###### launchers
 
@@ -34759,7 +34759,7 @@ Defined in: [sandkit/engine/index.d.ts:98](https://github.com/sandustry-modding/
 launchers: launchers
 ```
 
-Defined in: [sandkit/engine/index.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L99)
+Defined in: [sandkit/engine/index.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L99)
 
 ###### lightColorPicker
 
@@ -34767,7 +34767,7 @@ Defined in: [sandkit/engine/index.d.ts:99](https://github.com/sandustry-modding/
 lightColorPicker: lightColorPicker
 ```
 
-Defined in: [sandkit/engine/index.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L100)
+Defined in: [sandkit/engine/index.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L100)
 
 ###### matters
 
@@ -34775,7 +34775,7 @@ Defined in: [sandkit/engine/index.d.ts:100](https://github.com/sandustry-modding
 matters: matters
 ```
 
-Defined in: [sandkit/engine/index.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L101)
+Defined in: [sandkit/engine/index.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L101)
 
 ###### misc
 
@@ -34783,7 +34783,7 @@ Defined in: [sandkit/engine/index.d.ts:101](https://github.com/sandustry-modding
 misc: misc
 ```
 
-Defined in: [sandkit/engine/index.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L102)
+Defined in: [sandkit/engine/index.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L102)
 
 ###### portals
 
@@ -34791,7 +34791,7 @@ Defined in: [sandkit/engine/index.d.ts:102](https://github.com/sandustry-modding
 portals: portals
 ```
 
-Defined in: [sandkit/engine/index.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L103)
+Defined in: [sandkit/engine/index.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L103)
 
 ###### prefabData
 
@@ -34799,7 +34799,7 @@ Defined in: [sandkit/engine/index.d.ts:103](https://github.com/sandustry-modding
 prefabData: prefabData
 ```
 
-Defined in: [sandkit/engine/index.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L104)
+Defined in: [sandkit/engine/index.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L104)
 
 ###### prefabDecor
 
@@ -34807,7 +34807,7 @@ Defined in: [sandkit/engine/index.d.ts:104](https://github.com/sandustry-modding
 prefabDecor: prefabDecor
 ```
 
-Defined in: [sandkit/engine/index.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L105)
+Defined in: [sandkit/engine/index.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L105)
 
 ###### prefabulator
 
@@ -34815,7 +34815,7 @@ Defined in: [sandkit/engine/index.d.ts:105](https://github.com/sandustry-modding
 prefabulator: prefabulator
 ```
 
-Defined in: [sandkit/engine/index.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L106)
+Defined in: [sandkit/engine/index.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L106)
 
 ###### prismaline
 
@@ -34823,7 +34823,7 @@ Defined in: [sandkit/engine/index.d.ts:106](https://github.com/sandustry-modding
 prismaline: prismaline
 ```
 
-Defined in: [sandkit/engine/index.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L107)
+Defined in: [sandkit/engine/index.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L107)
 
 ###### prismite
 
@@ -34831,7 +34831,7 @@ Defined in: [sandkit/engine/index.d.ts:107](https://github.com/sandustry-modding
 prismite: prismite
 ```
 
-Defined in: [sandkit/engine/index.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L108)
+Defined in: [sandkit/engine/index.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L108)
 
 ###### queue
 
@@ -34839,7 +34839,7 @@ Defined in: [sandkit/engine/index.d.ts:108](https://github.com/sandustry-modding
 queue: queue
 ```
 
-Defined in: [sandkit/engine/index.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L109)
+Defined in: [sandkit/engine/index.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L109)
 
 ###### shadows
 
@@ -34847,7 +34847,7 @@ Defined in: [sandkit/engine/index.d.ts:109](https://github.com/sandustry-modding
 shadows: shadows
 ```
 
-Defined in: [sandkit/engine/index.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L110)
+Defined in: [sandkit/engine/index.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L110)
 
 ###### strataform
 
@@ -34855,7 +34855,7 @@ Defined in: [sandkit/engine/index.d.ts:110](https://github.com/sandustry-modding
 strataform: strataform
 ```
 
-Defined in: [sandkit/engine/index.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L111)
+Defined in: [sandkit/engine/index.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L111)
 
 ###### swarmConsole
 
@@ -34863,7 +34863,7 @@ Defined in: [sandkit/engine/index.d.ts:111](https://github.com/sandustry-modding
 swarmConsole: swarmConsole
 ```
 
-Defined in: [sandkit/engine/index.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L112)
+Defined in: [sandkit/engine/index.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L112)
 
 ###### sweeperDrone
 
@@ -34871,7 +34871,7 @@ Defined in: [sandkit/engine/index.d.ts:112](https://github.com/sandustry-modding
 sweeperDrone: sweeperDrone
 ```
 
-Defined in: [sandkit/engine/index.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L113)
+Defined in: [sandkit/engine/index.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L113)
 
 ###### teleportZones
 
@@ -34879,7 +34879,7 @@ Defined in: [sandkit/engine/index.d.ts:113](https://github.com/sandustry-modding
 teleportZones: teleportZones
 ```
 
-Defined in: [sandkit/engine/index.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L114)
+Defined in: [sandkit/engine/index.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L114)
 
 ###### tutorialBuild
 
@@ -34887,7 +34887,7 @@ Defined in: [sandkit/engine/index.d.ts:114](https://github.com/sandustry-modding
 tutorialBuild: tutorialBuild
 ```
 
-Defined in: [sandkit/engine/index.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L115)
+Defined in: [sandkit/engine/index.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L115)
 
 ###### usageTracker
 
@@ -34895,7 +34895,7 @@ Defined in: [sandkit/engine/index.d.ts:115](https://github.com/sandustry-modding
 usageTracker: usageTracker
 ```
 
-Defined in: [sandkit/engine/index.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L116)
+Defined in: [sandkit/engine/index.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L116)
 
 ###### wall
 
@@ -34903,7 +34903,7 @@ Defined in: [sandkit/engine/index.d.ts:116](https://github.com/sandustry-modding
 wall: wall
 ```
 
-Defined in: [sandkit/engine/index.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L117)
+Defined in: [sandkit/engine/index.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L117)
 
 ###### workerLocal
 
@@ -34911,7 +34911,7 @@ Defined in: [sandkit/engine/index.d.ts:117](https://github.com/sandustry-modding
 workerLocal: workerLocal
 ```
 
-Defined in: [sandkit/engine/index.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L118)
+Defined in: [sandkit/engine/index.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L118)
 
 ###### config
 
@@ -34919,7 +34919,7 @@ Defined in: [sandkit/engine/index.d.ts:118](https://github.com/sandustry-modding
 config: EngineFn
 ```
 
-Defined in: [sandkit/engine/index.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L119)
+Defined in: [sandkit/engine/index.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L119)
 
 ###### extend
 
@@ -34927,7 +34927,7 @@ Defined in: [sandkit/engine/index.d.ts:119](https://github.com/sandustry-modding
 extend: EngineFn
 ```
 
-Defined in: [sandkit/engine/index.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L120)
+Defined in: [sandkit/engine/index.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L120)
 
 ###### retroConsole
 
@@ -34935,7 +34935,7 @@ Defined in: [sandkit/engine/index.d.ts:120](https://github.com/sandustry-modding
 retroConsole: RetroConsoleApi
 ```
 
-Defined in: [sandkit/engine/index.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/index.d.ts#L121)
+Defined in: [sandkit/engine/index.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L121)
 
 ***
 
@@ -34947,7 +34947,7 @@ Defined in: [sandkit/engine/index.d.ts:121](https://github.com/sandustry-modding
 RetroConsolePixel = boolean | number
 ```
 
-Defined in: [sandkit/engine/retro-console.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/retro-console.d.ts#L11)
+Defined in: [sandkit/engine/retro-console.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L11)
 
 **`Internal`**
 
@@ -34963,7 +34963,7 @@ Pixel value for the Retro Console framebuffer.
 SandkitState = object
 ```
 
-Defined in: [sandkit/engine/state.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/state.d.ts#L12)
+Defined in: [sandkit/engine/state.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L12)
 
 **`Internal`**
 
@@ -34977,7 +34977,7 @@ Live game state exposed on `sandkit.engine.state`.
 environment: object
 ```
 
-Defined in: [sandkit/engine/state.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/state.d.ts#L13)
+Defined in: [sandkit/engine/state.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L13)
 
 ###### Index Signature
 
@@ -35001,7 +35001,7 @@ multithreading: unknown
 sandkit: object
 ```
 
-Defined in: [sandkit/engine/state.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/state.d.ts#L18)
+Defined in: [sandkit/engine/state.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L18)
 
 ###### Index Signature
 
@@ -35055,7 +35055,7 @@ registeredLauncherTypes: unknown
 session: unknown
 ```
 
-Defined in: [sandkit/engine/state.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/state.d.ts#L28)
+Defined in: [sandkit/engine/state.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L28)
 
 ###### shared
 
@@ -35063,7 +35063,7 @@ Defined in: [sandkit/engine/state.d.ts:28](https://github.com/sandustry-modding/
 shared: unknown
 ```
 
-Defined in: [sandkit/engine/state.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/state.d.ts#L29)
+Defined in: [sandkit/engine/state.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L29)
 
 ###### store
 
@@ -35071,7 +35071,7 @@ Defined in: [sandkit/engine/state.d.ts:29](https://github.com/sandustry-modding/
 store: unknown
 ```
 
-Defined in: [sandkit/engine/state.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/state.d.ts#L30)
+Defined in: [sandkit/engine/state.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L30)
 
 ---
 
@@ -35087,15 +35087,15 @@ Folder layout mirrors runtime shape so you can jump from code to the matching `.
 
 | Path | Runtime object |
 | --- | --- |
-| `sandkit/api/` | `sandkit.api` (main thread) |
-| `sandkit/engine/api/` | `sandkit.engine.api` |
-| `sandkit/engine/state.d.ts` | `sandkit.engine.state` / `sandkit.state` |
-| `sandkit/enums/` | `sandkit.enums` |
-| `sandkit/react.d.ts` | `sandkit.react` |
-| `sandkit/index.d.ts` | Composed `Sandkit` root type |
-| `global.d.ts` | Ambient `sandkit` free variable and type aliases |
-| `worker/` | Worker-thread `sandkit.api` (see `WorkerSandkitApi`) |
-| `shared/` | Internal base shapes reused by main and worker declarations |
+| `src/sandkit/api/` | `sandkit.api` (main thread) |
+| `src/sandkit/engine/api/` | `sandkit.engine.api` |
+| `src/sandkit/engine/state.d.ts` | `sandkit.engine.state` / `sandkit.state` |
+| `src/sandkit/enums/` | `sandkit.enums` |
+| `src/sandkit/react.d.ts` | `sandkit.react` |
+| `src/sandkit/index.d.ts` | Composed `Sandkit` root type |
+| `src/global.d.ts` | Ambient `sandkit` free variable and type aliases |
+| `src/worker/` | Worker-thread `sandkit.api` (see `WorkerSandkitApi`) |
+| `src/shared/` | Internal base shapes reused by main and worker declarations |
 
 ### Runtime shape vs `export namespace`
 
@@ -35154,7 +35154,7 @@ import type { RetroConsoleGame } from "@sandustry-modding/types/sandkit/engine";
 
 ### Maintaining types
 
-Edit `.d.ts` files here. Regenerate the Docsify API reference after JSDoc changes.
+Edit `.d.ts` files under `src/`. Regenerate the Docsify API reference after JSDoc changes.
 
 ### Docs site
 

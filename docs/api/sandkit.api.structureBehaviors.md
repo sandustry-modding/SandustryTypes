@@ -10,7 +10,7 @@
 registerConveyorType(structureId: string, options?: object): void
 ```
 
-Defined in: [sandkit/api/structureBehaviors.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structureBehaviors.d.ts#L16)
+Defined in: [sandkit/api/structureBehaviors.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L16)
 
 Register conveyor behavior for a structure type.
 
@@ -64,7 +64,7 @@ Transport offset, velocity, distance, and run direction.
 registerLauncherType(definition: object): void
 ```
 
-Defined in: [sandkit/api/structureBehaviors.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structureBehaviors.d.ts#L21)
+Defined in: [sandkit/api/structureBehaviors.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L21)
 
 Register launcher behavior for up, left, and right launcher types.
 

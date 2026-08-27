@@ -6,7 +6,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.triggers.MainTriggerDefinition</code></p>
 
-Defined in: [sandkit/api/triggers.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/triggers.d.ts#L17)
+Defined in: [sandkit/api/triggers.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L17)
 
 Main-thread trigger definition shape.
 
@@ -24,7 +24,7 @@ Main-thread trigger definition shape.
 interval: number
 ```
 
-Defined in: [sandkit/api/triggers.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/triggers.d.ts#L19)
+Defined in: [sandkit/api/triggers.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L19)
 
 Interval between callbacks in simulation ticks.
 
@@ -34,7 +34,7 @@ Interval between callbacks in simulation ticks.
 callback: () => void
 ```
 
-Defined in: [sandkit/api/triggers.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/triggers.d.ts#L21)
+Defined in: [sandkit/api/triggers.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L21)
 
 Called each time the trigger fires.
 
@@ -52,7 +52,7 @@ Called each time the trigger fires.
 register(triggerId: string, definition: MainTriggerDefinition): void
 ```
 
-Defined in: [sandkit/api/triggers.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/triggers.d.ts#L14)
+Defined in: [sandkit/api/triggers.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L14)
 
 Register a repeating trigger with interval and callback.
 

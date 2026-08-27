@@ -1,6 +1,6 @@
 # sandkit.enums.Scene
 
-Defined in: [sandkit/enums/index.d.ts:250](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L250)
+Defined in: [sandkit/enums/index.d.ts:250](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L250)
 
 Top-level game scene (menu, intro, deploy, in-game).
 
@@ -14,7 +14,7 @@ Top-level game scene (menu, intro, deploy, in-game).
 MainMenu: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L251)
+Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L251)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/
 Intro: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L252)
+Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L252)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/
 Deploy: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L253)
+Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L253)
 
 ***
 
@@ -50,4 +50,4 @@ Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/
 Game: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L254)
+Defined in: [sandkit/enums/index.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L254)

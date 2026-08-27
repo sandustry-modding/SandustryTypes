@@ -14,7 +14,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 
 <p class="smt-member-path"><code>sandkit.api.entities.Entity</code></p>
 
-Defined in: sandkit/api/entities.d.ts:71
+Defined in: [sandkit/api/entities.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L71)
 
 Active entity instance in the world.
 
@@ -32,7 +32,7 @@ Active entity instance in the world.
 id: number
 ```
 
-Defined in: sandkit/api/entities.d.ts:72
+Defined in: [sandkit/api/entities.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L72)
 
 ##### x
 
@@ -40,7 +40,7 @@ Defined in: sandkit/api/entities.d.ts:72
 x: number
 ```
 
-Defined in: sandkit/api/entities.d.ts:73
+Defined in: [sandkit/api/entities.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L73)
 
 ##### y
 
@@ -48,7 +48,7 @@ Defined in: sandkit/api/entities.d.ts:73
 y: number
 ```
 
-Defined in: sandkit/api/entities.d.ts:74
+Defined in: [sandkit/api/entities.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L74)
 
 ##### targetX?
 
@@ -56,7 +56,7 @@ Defined in: sandkit/api/entities.d.ts:74
 optional targetX?: number
 ```
 
-Defined in: sandkit/api/entities.d.ts:75
+Defined in: [sandkit/api/entities.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L75)
 
 ##### targetY?
 
@@ -64,7 +64,7 @@ Defined in: sandkit/api/entities.d.ts:75
 optional targetY?: number
 ```
 
-Defined in: sandkit/api/entities.d.ts:76
+Defined in: [sandkit/api/entities.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L76)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -76,7 +76,7 @@ Defined in: sandkit/api/entities.d.ts:76
 getById(entityId: number): Entity | undefined
 ```
 
-Defined in: sandkit/api/entities.d.ts:15
+Defined in: [sandkit/api/entities.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L15)
 
 Return one live entity by runtime id.
 
@@ -106,7 +106,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 getAllByType(entityTypeId: string): Entity[]
 ```
 
-Defined in: sandkit/api/entities.d.ts:23
+Defined in: [sandkit/api/entities.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L23)
 
 Return all live entities of one type.
 
@@ -136,7 +136,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
 ```
 
-Defined in: sandkit/api/entities.d.ts:34
+Defined in: [sandkit/api/entities.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L34)
 
 Spawn an entity at world position.
 
@@ -180,7 +180,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 remove(entityId: number): void
 ```
 
-Defined in: sandkit/api/entities.d.ts:42
+Defined in: [sandkit/api/entities.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L42)
 
 Remove an entity from the world.
 
@@ -210,7 +210,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 launch(entityId: number, angleRadians: number, speed?: number): void
 ```
 
-Defined in: sandkit/api/entities.d.ts:52
+Defined in: [sandkit/api/entities.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L52)
 
 Launch an entity with angle and optional speed.
 
@@ -252,7 +252,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 startCapture(entityId: number): void
 ```
 
-Defined in: sandkit/api/entities.d.ts:60
+Defined in: [sandkit/api/entities.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L60)
 
 Start capture for an entity (for example vacuum capture).
 
@@ -282,7 +282,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.enti
 collect(entityId: number): void
 ```
 
-Defined in: sandkit/api/entities.d.ts:68
+Defined in: [sandkit/api/entities.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L68)
 
 Collect an entity (for example into inventory or storage).
 

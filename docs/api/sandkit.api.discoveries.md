@@ -13,7 +13,7 @@ Main thread only.
 addElementByType(elementType: ElementType): void
 ```
 
-Defined in: [sandkit/api/discoveries.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/discoveries.d.ts#L12)
+Defined in: [sandkit/api/discoveries.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L12)
 
 Marks an element type as discovered for the player.
 
@@ -39,7 +39,7 @@ Numeric element type id.
 addTerrainByType(terrainType: TerrainType): void
 ```
 
-Defined in: [sandkit/api/discoveries.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/discoveries.d.ts#L17)
+Defined in: [sandkit/api/discoveries.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L17)
 
 Marks a terrain type as discovered for the player.
 

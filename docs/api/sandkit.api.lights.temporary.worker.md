@@ -12,7 +12,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.li
 
 <p class="smt-member-path"><code>sandkit.api.lights.temporary.TemporaryLightHandle (worker)</code></p>
 
-Defined in: worker/api/lights.d.ts:19
+Defined in: [worker/api/lights.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L19)
 
 Handle returned by [createAtWorld](#createatworld).
 
@@ -24,7 +24,7 @@ Handle returned by [createAtWorld](#createatworld).
 lightId: number | null
 ```
 
-Defined in: worker/api/lights.d.ts:21
+Defined in: [worker/api/lights.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L21)
 
 Runtime light id, or null when the pool is full.
 
@@ -34,7 +34,7 @@ Runtime light id, or null when the pool is full.
 optional index?: number | null
 ```
 
-Defined in: worker/api/lights.d.ts:26
+Defined in: [worker/api/lights.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L26)
 
 ###### Deprecated
 
@@ -54,7 +54,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 TemporaryLightOptions = TemporaryLightOptions
 ```
 
-Defined in: worker/api/lights.d.ts:16
+Defined in: [worker/api/lights.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L16)
 
 Options for [createAtWorld](#createatworld).
 
@@ -68,7 +68,7 @@ Options for [createAtWorld](#createatworld).
 createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
-Defined in: worker/api/lights.d.ts:37
+Defined in: [worker/api/lights.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L37)
 
 Create a temporary light at world coordinates.
 

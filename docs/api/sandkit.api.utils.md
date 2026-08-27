@@ -10,7 +10,7 @@
 getDistance(pointA: Vector2, pointB: Vector2): number
 ```
 
-Defined in: [sandkit/api/utils.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/utils.d.ts#L18)
+Defined in: [sandkit/api/utils.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L18)
 
 Return distance between two points.
 
@@ -46,7 +46,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.util
 getDirection(pointA: Vector2, pointB: Vector2): Vector2
 ```
 
-Defined in: [sandkit/api/utils.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/utils.d.ts#L27)
+Defined in: [sandkit/api/utils.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L27)
 
 Return normalized direction from point A to point B.
 
@@ -82,7 +82,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.util
 getAngle(pointA: Vector2, pointB: Vector2): number
 ```
 
-Defined in: [sandkit/api/utils.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/utils.d.ts#L36)
+Defined in: [sandkit/api/utils.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L36)
 
 Return angle in radians from point A to point B.
 
@@ -118,7 +118,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.util
 getCoordinatesBetweenCells(pointA: Vector2, pointB: Vector2): Vector2[]
 ```
 
-Defined in: [sandkit/api/utils.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/utils.d.ts#L45)
+Defined in: [sandkit/api/utils.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L45)
 
 Return grid cells along a line between two points.
 
@@ -152,7 +152,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.util
 getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 ```
 
-Defined in: [sandkit/api/utils.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/utils.d.ts#L51)
+Defined in: [sandkit/api/utils.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L51)
 
 #### Parameters
 

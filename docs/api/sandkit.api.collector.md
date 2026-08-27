@@ -13,7 +13,7 @@ Main thread only.
 getValueFromCellId(cellId: CellId): number
 ```
 
-Defined in: [sandkit/api/collector.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/collector.d.ts#L14)
+Defined in: [sandkit/api/collector.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L14)
 
 Returns the collector value for a cell id.
 
@@ -39,7 +39,7 @@ Packed cell identifier.
 getValueByType(elementType: ElementType): number
 ```
 
-Defined in: [sandkit/api/collector.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/collector.d.ts#L19)
+Defined in: [sandkit/api/collector.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L19)
 
 Returns the collector value for an element type.
 
@@ -65,7 +65,7 @@ Numeric element type id.
 isCellIdCollectable(cellId: CellId): boolean
 ```
 
-Defined in: [sandkit/api/collector.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/collector.d.ts#L24)
+Defined in: [sandkit/api/collector.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L24)
 
 Returns true when the cell id can be collected.
 
@@ -91,7 +91,7 @@ Packed cell identifier.
 isCellIdCollectableForSprite(cellId: CellId): boolean
 ```
 
-Defined in: [sandkit/api/collector.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/collector.d.ts#L29)
+Defined in: [sandkit/api/collector.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L29)
 
 Returns true when the cell id can be collected for sprite display.
 
@@ -117,7 +117,7 @@ Packed cell identifier.
 notifyPickupAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/collector.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/collector.d.ts#L35)
+Defined in: [sandkit/api/collector.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L35)
 
 Notifies collector logic that a pickup happened at the cell.
 

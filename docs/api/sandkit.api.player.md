@@ -15,7 +15,7 @@
 setPositionAtWorld(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L32)
+Defined in: [sandkit/api/player.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L32)
 
 Set the player world position.
 
@@ -49,7 +49,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 setWorldPosition(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L38)
+Defined in: [sandkit/api/player.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L38)
 
 #### Parameters
 
@@ -83,7 +83,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 setVelocity(velocityX: number, velocityY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L47)
+Defined in: [sandkit/api/player.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L47)
 
 Set the player velocity.
 
@@ -119,7 +119,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 setMovementSpeedMultiplier(multiplier: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L56)
+Defined in: [sandkit/api/player.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L56)
 
 Set the movement speed multiplier.
 
@@ -150,7 +150,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 setMovementMode(mode: "normal" | "hover"): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L65)
+Defined in: [sandkit/api/player.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L65)
 
 Set movement mode to normal or hover.
 
@@ -182,7 +182,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 isOnGround(): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L75)
+Defined in: [sandkit/api/player.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L75)
 
 Return true when the player is on ground.
 Tests solid cells 1 pixel below the hitbox. Do not use `player.onGround`
@@ -208,7 +208,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 teleportToGround(): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L82)
+Defined in: [sandkit/api/player.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L82)
 
 Move the player down until ground is found.
 
@@ -230,7 +230,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 isPositionClearAtWorld(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L92)
+Defined in: [sandkit/api/player.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L92)
 
 Return true when the world position has no collision.
 
@@ -266,7 +266,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.play
 isWorldPositionClear(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L98)
+Defined in: [sandkit/api/player.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L98)
 
 #### Parameters
 

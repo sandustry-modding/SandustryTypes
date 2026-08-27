@@ -12,7 +12,7 @@ Controller focus and scope navigation hooks.
 useFocusable<T *extends* HTMLElement = HTMLDivElement>(options: FocusOptions): Focusable<T>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L103)
+Defined in: [sandkit/api/ui.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L103)
 
 React hook for a focusable UI element in a scope.
 
@@ -46,7 +46,7 @@ Ref, focus state, and a focus helper.
 useFocusScope(options: object): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L109)
+Defined in: [sandkit/api/ui.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L109)
 
 React hook to register a focus scope with back handling.
 
@@ -90,7 +90,7 @@ Scope id, priority, default focus, and back handler.
 controllerFocusClass(focused: boolean): string
 ```
 
-Defined in: [sandkit/api/ui.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L116)
+Defined in: [sandkit/api/ui.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L116)
 
 Return CSS class for controller focus ring state.
 

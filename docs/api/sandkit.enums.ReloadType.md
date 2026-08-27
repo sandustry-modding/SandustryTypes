@@ -1,6 +1,6 @@
 # sandkit.enums.ReloadType
 
-Defined in: [sandkit/enums/index.d.ts:243](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L243)
+Defined in: [sandkit/enums/index.d.ts:243](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L243)
 
 Weapon reload behaviour.
 
@@ -14,7 +14,7 @@ Weapon reload behaviour.
 Clip: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:244](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L244)
+Defined in: [sandkit/enums/index.d.ts:244](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L244)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [sandkit/enums/index.d.ts:244](https://github.com/sandustry-modding/
 Single: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:245](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L245)
+Defined in: [sandkit/enums/index.d.ts:245](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L245)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [sandkit/enums/index.d.ts:245](https://github.com/sandustry-modding/
 OverTime: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L246)
+Defined in: [sandkit/enums/index.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L246)

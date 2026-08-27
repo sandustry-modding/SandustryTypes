@@ -10,15 +10,15 @@ Folder layout mirrors runtime shape so you can jump from code to the matching `.
 
 | Path | Runtime object |
 | --- | --- |
-| `sandkit/api/` | `sandkit.api` (main thread) |
-| `sandkit/engine/api/` | `sandkit.engine.api` |
-| `sandkit/engine/state.d.ts` | `sandkit.engine.state` / `sandkit.state` |
-| `sandkit/enums/` | `sandkit.enums` |
-| `sandkit/react.d.ts` | `sandkit.react` |
-| `sandkit/index.d.ts` | Composed `Sandkit` root type |
-| `global.d.ts` | Ambient `sandkit` free variable and type aliases |
-| `worker/` | Worker-thread `sandkit.api` (see `WorkerSandkitApi`) |
-| `shared/` | Internal base shapes reused by main and worker declarations |
+| `src/sandkit/api/` | `sandkit.api` (main thread) |
+| `src/sandkit/engine/api/` | `sandkit.engine.api` |
+| `src/sandkit/engine/state.d.ts` | `sandkit.engine.state` / `sandkit.state` |
+| `src/sandkit/enums/` | `sandkit.enums` |
+| `src/sandkit/react.d.ts` | `sandkit.react` |
+| `src/sandkit/index.d.ts` | Composed `Sandkit` root type |
+| `src/global.d.ts` | Ambient `sandkit` free variable and type aliases |
+| `src/worker/` | Worker-thread `sandkit.api` (see `WorkerSandkitApi`) |
+| `src/shared/` | Internal base shapes reused by main and worker declarations |
 
 ## Runtime shape vs `export namespace`
 
@@ -77,7 +77,7 @@ import type { RetroConsoleGame } from "@sandustry-modding/types/sandkit/engine";
 
 ## Maintaining types
 
-Edit `.d.ts` files here. Regenerate the Docsify API reference after JSDoc changes.
+Edit `.d.ts` files under `src/`. Regenerate the Docsify API reference after JSDoc changes.
 
 ## Docs site
 

@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 delete(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L15)
+Defined in: [sandkit/engine/api/blueprints.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L15)
 
 Delete a saved blueprint. Runtime property name is `delete`.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 exportAllString(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L21)
+Defined in: [sandkit/engine/api/blueprints.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L21)
 
 Export all blueprints as one string.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 exportString(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L26)
+Defined in: [sandkit/engine/api/blueprints.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L26)
 
 Export one blueprint as a string.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L31)
+Defined in: [sandkit/engine/api/blueprints.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L31)
 
 Return all saved blueprints.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 importString(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L36)
+Defined in: [sandkit/engine/api/blueprints.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L36)
 
 Import a blueprint from a string.
 
@@ -148,7 +148,7 @@ Game state first, then method-specific arguments.
 load(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L41)
+Defined in: [sandkit/engine/api/blueprints.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L41)
 
 Load a blueprint into the active session.
 
@@ -174,7 +174,7 @@ Game state first, then method-specific arguments.
 save(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/blueprints.d.ts#L46)
+Defined in: [sandkit/engine/api/blueprints.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L46)
 
 Save the current selection as a blueprint.
 

@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 getPaletteData(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/wall.d.ts#L15)
+Defined in: [sandkit/engine/api/wall.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L15)
 
 Return wall palette data for rendering.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 getWallDataAt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/wall.d.ts#L20)
+Defined in: [sandkit/engine/api/wall.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L20)
 
 Return wall tile data at one cell.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 getWallDataSize(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/wall.d.ts#L25)
+Defined in: [sandkit/engine/api/wall.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L25)
 
 Return the byte size of wall tile data.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 setWallDataAt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/wall.d.ts#L30)
+Defined in: [sandkit/engine/api/wall.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L30)
 
 Set wall tile data at one cell.
 

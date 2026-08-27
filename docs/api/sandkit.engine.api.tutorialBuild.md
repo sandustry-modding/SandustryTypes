@@ -18,7 +18,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 areAllTargetsBuilt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L15)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L15)
 
 Return whether all active tutorial targets are built.
 
@@ -44,7 +44,7 @@ Game state first, then method-specific arguments.
 areFamilyTargetsBuilt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L20)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L20)
 
 Return whether all targets in a structure family are built.
 
@@ -70,7 +70,7 @@ Game state first, then method-specific arguments.
 canPlaceAtActiveTarget(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L25)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L25)
 
 Return whether placement is allowed at the active target.
 
@@ -96,7 +96,7 @@ Game state first, then method-specific arguments.
 getFoundationMoveDests(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L30)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L30)
 
 Return foundation move destination cells for the tutorial step.
 
@@ -122,7 +122,7 @@ Game state first, then method-specific arguments.
 getFoundationMoveSources(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L35)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L35)
 
 Return foundation move source cells for the tutorial step.
 
@@ -148,7 +148,7 @@ Game state first, then method-specific arguments.
 getTargets(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L40)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L40)
 
 Return build targets for the current tutorial step.
 
@@ -174,7 +174,7 @@ Game state first, then method-specific arguments.
 hasDefinition(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L45)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L45)
 
 Return whether a tutorial build definition exists.
 
@@ -200,7 +200,7 @@ Game state first, then method-specific arguments.
 isStepConstrained(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L50)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L50)
 
 Return whether the current step restricts building.
 
@@ -226,7 +226,7 @@ Game state first, then method-specific arguments.
 matchesFoundationMove(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L55)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L55)
 
 Return whether a foundation move matches tutorial rules.
 
@@ -252,7 +252,7 @@ Game state first, then method-specific arguments.
 matchesFoundationRemove(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L60)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L60)
 
 Return whether a foundation remove matches tutorial rules.
 
@@ -278,7 +278,7 @@ Game state first, then method-specific arguments.
 shouldProtectActiveTargetAt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/engine/api/tutorialBuild.d.ts#L65)
+Defined in: [sandkit/engine/api/tutorialBuild.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L65)
 
 Return whether the active target should be protected at a cell.
 
