@@ -27,15 +27,19 @@
   <body class="loading">
     <div id="app"></div>
     <script>
+      (function () {
+        var hash = location.hash || "";
+        if (hash === "#/api/modules" || hash.indexOf("#/api/modules?") === 0) {
+          location.hash = "#/modules";
+        } else if (hash === "#/api/full" || hash.indexOf("#/api/full?") === 0) {
+          location.hash = "#/full";
+        }
+      })();
       window.$docsify = {
         name: "Sandustry Types",
         loadSidebar: true,
         subMaxLevel: 0,
         auto2top: true,
-        alias: {
-          "/.*/_sidebar.md": "/_sidebar.md",
-          "/api/.*/_sidebar.md": "/api/_sidebar.md",
-        },
         search: {
           paths: Array.isArray(window.SMT_SEARCH_PATHS) ? window.SMT_SEARCH_PATHS : "auto",
           placeholder: "Search Sandkit API",
@@ -44,6 +48,20 @@
           namespace: "smt-types-api-v1",
         },
         plugins: [
+          function (hook) {
+            hook.beforeEach(function (content) {
+              var path = (window.location.hash || "").replace(/^#/, "").split("?")[0];
+              if (path === "/api/modules") {
+                window.location.hash = "#/modules";
+                return content;
+              }
+              if (path === "/api/full") {
+                window.location.hash = "#/full";
+                return content;
+              }
+              return content;
+            });
+          },
           window.smtDocsifyHeadingCopyPlugin,
           window.smtDocsifyPageTocPlugin,
           window.smtDocsifySearchRankPlugin,

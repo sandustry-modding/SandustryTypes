@@ -38,7 +38,7 @@
   --button-bg: var(--smt-wiki-gold-bright);
   --button-color: #121212;
   --font-size: 15px;
-  --content-max-width: 56rem;
+  --content-max-width: 80rem;
   color-scheme: dark;
   scrollbar-width: thin;
   scrollbar-color: #3a3a3a #1a1a1a;
@@ -71,6 +71,7 @@
 
 html {
   scroll-padding-top: 1rem;
+  scrollbar-gutter: stable;
 }
 
 .markdown-section .callout.warning {
@@ -100,6 +101,7 @@ html {
 
 .sidebar {
   border-right: 1px solid var(--border-color);
+  scrollbar-gutter: stable;
 }
 
 .sidebar-nav li.active > a {
