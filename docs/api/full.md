@@ -1,4 +1,4 @@
-# Sandkit API (everything) <!-- {docsify-ignore-all} -->
+# Sandkit API (full) <!-- {docsify-ignore-all} -->
 
 Every generated API page on one document. Use the [Module index](api/modules.md) when you only need one namespace.
 

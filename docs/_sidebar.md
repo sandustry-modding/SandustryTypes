@@ -1,8 +1,16 @@
-- [Home](/)
-- [Module index](api/modules.md)
-- [Everything](api/everything.md)
-- [Main thread](api/sandkit.api.md)
-- [Worker](api/sandkit.api.worker.md)
-- [Engine](api/sandkit.engine.md)
-- [Enums](api/sandkit.enums.md)
-- [React](api/sandkit.react.md)
+- Browse
+  - [Home](/)
+  - [All namespaces](api/modules.md)
+  - [Full API reference](api/full.md)
+
+- Thread APIs
+  - [Main thread](api/sandkit.api.md)
+  - [Worker thread](api/sandkit.api.worker.md)
+
+- Packages
+  - [Engine](api/sandkit.engine.md)
+  - [Enums](api/sandkit.enums.md)
+  - [React](api/sandkit.react.md)
+
+- Links
+  - [Official Sandkit](https://sandustry.com/sandkit.html ':target=_blank')

@@ -165,8 +165,7 @@ const engineNs = snapshotNamespaceTree(OUT, "engine");
 
 const linkMap = flattenApiRoutes(OUT);
 writeModuleIndex(OUT, linkMap, mainNs, workerNs, engineNs);
-writeApiSidebar(linkMap, mainNs, workerNs, engineNs);
-writeEverythingPage(OUT, linkMap, mainNs, workerNs, engineNs);
+writeFullPage(OUT, linkMap, mainNs, workerNs, engineNs);
 rewriteGeneratedNavLinks(OUT, linkMap);
 writeSearchPaths(DOCS);
 
@@ -258,17 +257,15 @@ function flattenApiRoutes(outDir) {
 }
 
 function rewriteGeneratedNavLinks(outDir, linkMap) {
-  for (const name of ["modules.md", "_sidebar.md"]) {
-    const filePath = join(outDir, name);
-    if (!existsSync(filePath)) continue;
-    const content = readFileSync(filePath, "utf8");
-    const fixed = rewriteApiHrefMap(content, linkMap);
-    if (fixed !== content) writeFileSync(filePath, fixed);
-  }
+  const filePath = join(outDir, "modules.md");
+  if (!existsSync(filePath)) return;
+  const content = readFileSync(filePath, "utf8");
+  const fixed = rewriteApiHrefMap(content, linkMap);
+  if (fixed !== content) writeFileSync(filePath, fixed);
 }
 
 /**
- * Expanded Module index with thematic groups (easier than a long sidebar).
+ * Expanded Module index with thematic groups.
  * @param {string} outDir
  * @param {Map<string, string>} linkMap
  * @param {NamespaceNode[]} mainNs
@@ -285,11 +282,11 @@ function writeModuleIndex(outDir, linkMap, mainNs, workerNs, engineNs) {
     "",
     "# Sandkit API",
     "",
-    "Sandkit namespaces used by mods. Use groups below to find a namespace. The sidebar lists every page.",
+    "Sandkit namespaces used by mods. Use groups below to find a namespace, or open [Full API reference](api/full.md).",
     "",
     "## Roots",
     "",
-    `- [Everything](${p("everything")}) — all namespaces on one page`,
+    `- [Full API reference](${p("full")}) — all namespaces on one page`,
     `- [Main thread](${p("sandkit.api")}) — \`sandkit.api\``,
     `- [Worker](${p("sandkit.api.worker")}) — worker-thread \`sandkit.api\``,
     `- [Engine](${p("sandkit.engine")}) — \`sandkit.engine\``,
@@ -523,74 +520,14 @@ function typedocSignatureToTs(source) {
 }
 
 /**
- * @param {Map<string, string>} linkMap
- * @param {NamespaceNode[]} mainNs
- * @param {NamespaceNode[]} workerNs
- * @param {NamespaceNode[]} engineNs
- */
-function writeApiSidebar(linkMap, mainNs, workerNs, engineNs) {
-  const href = (typedocRel) => linkMap.get(`api/${typedocRel}`) || `api/${typedocRel}`;
-
-  const lines = [
-    "- [← Docs home](/)",
-    `- [Module index](api/modules.md 'Sandkit API')`,
-    `- [Everything](api/everything.md)`,
-    "",
-    "- Main thread (`sandkit.api`)",
-    ...namespaceSidebarLines(mainNs, href, 1),
-    "",
-    "- Worker (`sandkit.api`)",
-    ...namespaceSidebarLines(workerNs, href, 1),
-    "",
-    "- Engine (`sandkit.engine`)",
-    ...namespaceSidebarLines(engineNs, href, 1),
-    "",
-    "- Other",
-    `  - [sandkit](${href("sandkit/README.md")})`,
-    `  - [enums](${href("sandkit/enums/README.md")})`,
-    `  - [react](${href("sandkit/react/README.md")})`,
-    "",
-    "- Shared domain types",
-    `  - [asset](${href("shared/asset/README.md")})`,
-    `  - [engine](${href("shared/engine/README.md")})`,
-    `  - [jsonvalue](${href("shared/jsonvalue/README.md")})`,
-    `  - [nominal](${href("shared/nominal/README.md")})`,
-    `  - [player](${href("shared/player/README.md")})`,
-    "",
-  ];
-
-  writeFileSync(join(OUT, "_sidebar.md"), `${lines.join("\n")}\n`);
-}
-
-/**
- * @param {NamespaceNode[]} nodes
- * @param {(rel: string) => string} href
- * @param {number} depth
- */
-function namespaceSidebarLines(nodes, href, depth) {
-  if (!nodes.length) return [`${"  ".repeat(depth)}- _(no namespaces)_`];
-
-  const indent = "  ".repeat(depth);
-  /** @type {string[]} */
-  const lines = [];
-  for (const node of nodes) {
-    lines.push(`${indent}- [${node.name}](${href(node.typedocRel)})`);
-    if (node.children.length) {
-      lines.push(...namespaceSidebarLines(node.children, href, depth + 1));
-    }
-  }
-  return lines;
-}
-
-/**
- * One Markdown page with every API section inlined (sidebar order, then leftovers).
+ * One Markdown page with every API section inlined (module order, then leftovers).
  * @param {string} outDir
  * @param {Map<string, string>} linkMap
  * @param {NamespaceNode[]} mainNs
  * @param {NamespaceNode[]} workerNs
  * @param {NamespaceNode[]} engineNs
  */
-function writeEverythingPage(outDir, linkMap, mainNs, workerNs, engineNs) {
+function writeFullPage(outDir, linkMap, mainNs, workerNs, engineNs) {
   const href = (typedocRel) => linkMap.get(`api/${typedocRel}`) || `api/${typedocRel}`;
   const routeName = (apiHref) => String(apiHref).replace(/^api\//, "");
 
@@ -618,7 +555,7 @@ function writeEverythingPage(outDir, linkMap, mainNs, workerNs, engineNs) {
   addPreferred(href("shared/nominal/README.md"));
   addPreferred(href("shared/player/README.md"));
 
-  const skip = new Set(["_sidebar.md", "modules.md", "everything.md"]);
+  const skip = new Set(["_sidebar.md", "modules.md", "full.md"]);
   const onDisk = readdirSync(outDir)
     .filter((name) => name.endsWith(".md") && !skip.has(name))
     .sort((a, b) => a.localeCompare(b));
@@ -630,7 +567,7 @@ function writeEverythingPage(outDir, linkMap, mainNs, workerNs, engineNs) {
 
   /** @type {string[]} */
   const parts = [
-    "# Sandkit API (everything) <!-- {docsify-ignore-all} -->",
+    "# Sandkit API (full) <!-- {docsify-ignore-all} -->",
     "",
     "Every generated API page on one document. Use the [Module index](api/modules.md) when you only need one namespace.",
     "",
@@ -644,7 +581,7 @@ function writeEverythingPage(outDir, linkMap, mainNs, workerNs, engineNs) {
     parts.push(body, "", "---", "");
   }
 
-  writeFileSync(join(outDir, "everything.md"), `${parts.join("\n").trimEnd()}\n`);
+  writeFileSync(join(outDir, "full.md"), `${parts.join("\n").trimEnd()}\n`);
 }
 
 /**

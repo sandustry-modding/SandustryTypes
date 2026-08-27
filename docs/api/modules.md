@@ -2,13 +2,13 @@
 
 # Sandkit API
 
-Sandkit namespaces used by mods. Use groups below to find a namespace. The sidebar lists every page.
+Sandkit namespaces used by mods. Use groups below to find a namespace, or open [Full API reference](api/full.md).
 
 ## Roots
 
-- [Everything](api/everything.md) — all namespaces on one page
+- [Full API reference](api/full.md) — all namespaces on one page
 - [Main thread](api/sandkit.api.md) — `sandkit.api`
-- [Worker](api/sandkit.api.worker.md) — worker-thread `sandkit.api`
+- [Worker thread](api/sandkit.api.worker.md) — worker-thread `sandkit.api`
 - [Engine](api/sandkit.engine.md) — `sandkit.engine`
 - [Enums](api/sandkit.enums.md) — `sandkit.enums`
 - [React](api/sandkit.react.md) — `sandkit.react`

@@ -107,7 +107,7 @@ test("mdFileToSearchPath matches Docsify getFile paths", () => {
   assert.equal(mdFileToSearchPath("quick-start.md"), "/quick-start");
   assert.equal(mdFileToSearchPath("api/sandkit.api.settings.md"), "/api/sandkit.api.settings");
   assert.equal(mdFileToSearchPath("api/_sidebar.md"), null);
-  assert.equal(mdFileToSearchPath("api/everything.md"), null);
+  assert.equal(mdFileToSearchPath("api/full.md"), null);
   assert.equal(mdFileToSearchPath("api/global/README.md"), null);
   assert.equal(mdFileToSearchPath("AGENTS.md"), null);
 });

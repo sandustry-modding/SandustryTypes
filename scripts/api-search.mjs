@@ -19,7 +19,7 @@ const IGNORE_H2 = new Set([
   "Variables",
 ]);
 
-const SKIP_SEARCH_FILES = new Set(["_sidebar.md", "AGENTS.md", "everything.md"]);
+const SKIP_SEARCH_FILES = new Set(["_sidebar.md", "AGENTS.md", "full.md"]);
 
 /**
  * Map a path under `docs/api/` (TypeDoc layout or flat slug) to the runtime name.
