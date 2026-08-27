@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Unofficial Sandkit API — SandustryTypes</title>
+    <title>Sandkit API — SandustryTypes</title>
     <meta name="color-scheme" content="dark" />
     <meta
       name="description"
@@ -24,63 +24,9 @@
     <script src="assets/api-sidebar-name.js"></script>
     <script src="assets/search-rank.js"></script>
     <script src="assets/search-paths.js"></script>
-    <script>
-      if (localStorage.getItem("smt-unofficial-banner-dismissed") === "1") {
-        document.documentElement.classList.add("banner-dismissed-pending");
-      }
-    </script>
   </head>
   <body class="loading">
-    <div class="unofficial-banner" id="unofficial-banner" role="note">
-      <p class="unofficial-banner__text">
-        <strong>Unofficial</strong> community docs. Not affiliated with Lantto Games,
-        Hooded Horse, or the
-        <a href="https://wiki.hoodedhorse.com/Sandustry/Sandustry_Official_Wiki"
-          >official Sandustry wiki</a
-        >. See the
-        <a href="https://sandustry.com/sandkit.html" target="_blank" rel="noopener"
-          >official Sandkit docs</a
-        >.
-      </p>
-      <span
-        class="unofficial-banner__dismiss"
-        id="unofficial-banner-dismiss"
-        role="button"
-        tabindex="0"
-        aria-label="Dismiss unofficial notice"
-      >×</span>
-    </div>
     <div id="app"></div>
-    <script>
-      (function () {
-        var key = "smt-unofficial-banner-dismissed";
-        var banner = document.getElementById("unofficial-banner");
-        var dismiss = document.getElementById("unofficial-banner-dismiss");
-        if (!banner || !dismiss) return;
-
-        function hideBanner() {
-          document.documentElement.classList.remove("banner-dismissed-pending");
-          document.body.classList.add("banner-dismissed");
-          banner.hidden = true;
-        }
-
-        if (localStorage.getItem(key) === "1") {
-          hideBanner();
-        }
-
-        dismiss.addEventListener("click", function () {
-          localStorage.setItem(key, "1");
-          hideBanner();
-        });
-        dismiss.addEventListener("keydown", function (event) {
-          if (event.key === "Enter" || event.key === " ") {
-            event.preventDefault();
-            localStorage.setItem(key, "1");
-            hideBanner();
-          }
-        });
-      })();
-    </script>
     <script>
       window.$docsify = {
         name: "Sandustry Types",
@@ -93,7 +39,7 @@
         },
         search: {
           paths: Array.isArray(window.SMT_SEARCH_PATHS) ? window.SMT_SEARCH_PATHS : "auto",
-          placeholder: "Search unofficial Sandkit API",
+          placeholder: "Search Sandkit API",
           noData: "No results",
           depth: 4,
           namespace: "smt-types-api-v1",

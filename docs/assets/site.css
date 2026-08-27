@@ -5,12 +5,6 @@
   --sidebar-toggle-margin-block: 0;
   --sidebar-toggle-width: 36px;
   --sidebar-toggle-alignment: flex-start;
-  --smt-banner-offset: var(--unofficial-banner-height);
-}
-
-body.banner-dismissed,
-html.banner-dismissed-pending {
-  --smt-banner-offset: 0px;
 }
 
 /* Hide Docsify GitHub corner if a repo option is re-added later. */
@@ -148,7 +142,7 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
   body.smt-drawer-open .sidebar-toggle {
     position: fixed;
     left: max(0px, env(safe-area-inset-left, 0px));
-    top: calc(var(--smt-banner-offset, 0px) + max(0.65rem, env(safe-area-inset-top, 0px)));
+    top: calc(max(0.65rem, env(safe-area-inset-top, 0px)));
     right: auto;
     bottom: auto;
     width: auto !important;
@@ -183,10 +177,10 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
   #smt-page-toc {
     display: block;
     position: fixed;
-    top: calc(var(--smt-banner-offset, 0px) + var(--navbar-height, 4em) + 0.75rem);
+    top: calc(var(--navbar-height, 4em) + 0.75rem);
     right: max(0.75rem, env(safe-area-inset-right, 0px));
     width: 12rem;
-    max-height: calc(100vh - var(--smt-banner-offset, 0px) - var(--navbar-height, 4em) - 2rem);
+    max-height: calc(100vh - var(--navbar-height, 4em) - 2rem);
     overflow-y: auto;
     z-index: 45;
     font-size: var(--font-size-s, 0.875rem);
@@ -197,7 +191,7 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
     background: var(--color-bg, #fff);
   }
   .markdown-section :is(h1, h2, h3, h4, h5, h6) {
-    scroll-margin-top: calc(var(--smt-banner-offset, 0px) + var(--navbar-height, 4em) + 0.75rem);
+    scroll-margin-top: calc(var(--navbar-height, 4em) + 0.75rem);
   }
 }
 
