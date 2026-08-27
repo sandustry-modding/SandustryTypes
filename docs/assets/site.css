@@ -1,5 +1,5 @@
 /* Feature styles on top of assets/theme.css.
- * Keep theme.css + site.css identical to SandustryTypes/docs/assets/ (same docs look). */
+ * Keep theme.css + site.css identical across SandustryModTemplate and SandustryTypes. */
 :root {
   --sidebar-toggle-height: 40px;
   --sidebar-toggle-margin-block: 0;
