@@ -38,7 +38,7 @@
   --button-bg: var(--smt-wiki-gold-bright);
   --button-color: #121212;
   --font-size: 15px;
-  --content-max-width: 72ch;
+  --content-max-width: 56rem;
   color-scheme: dark;
   scrollbar-width: thin;
   scrollbar-color: #3a3a3a #1a1a1a;
