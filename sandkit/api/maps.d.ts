@@ -22,6 +22,21 @@ export namespace maps {
    */
   export function start(mapId: string): boolean;
 
+  /**
+   * Return artifact marker locations for the active map.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.maps.getArtifactLocations`
+   */
+  export function getArtifactLocations(): readonly ArtifactLocation[];
+
+  /** Artifact location entry from {@link getArtifactLocations}. */
+  export interface ArtifactLocation {
+    cellX: number;
+    cellY: number;
+    name: string;
+    [key: string]: unknown;
+  }
+
   /** Available map entry shape. */
   export interface AvailableMapV1 {
     /** Map identifier passed to {@link start}. */

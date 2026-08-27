@@ -1,107 +1,105 @@
 /**
  * World cell queries, excavation, fog, redraw, and pickups.
  *
+ * @deprecated Use {@link grid} and {@link pickups} instead.
+ *
  * Available as `sandkit.api.world`.
  *
  * @module
  */
 import { CellCoordinates } from "../../shared/player";
-import { shared } from "../../shared";
-import type { WorldItemType as WorldItemTypeEnum } from "../enums/index";
+import { grid } from "./grid";
+import { pickups as pickupsNs } from "./pickups";
 
+/**
+ * @deprecated Use {@link grid} instead.
+ * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid`
+ */
 export namespace world {
-
-  /** Return cell id at a grid cell. */
-  export import getCellIdAtCell = shared.api.world.getCellIdAtCell;
-  /** Return true when the cell is empty. */
-  export import isCellEmptyAtCell = shared.api.world.isCellEmptyAtCell;
-  /** Return true when the cell holds terrain. */
-  export import isTerrainAtCell = shared.api.world.isTerrainAtCell;
-  /** Mark a cell as active for simulation this tick. */
-  export import reportActivityAtCell = shared.api.world.reportActivityAtCell;
-  /** Excavate at a cell with output velocity and damage. */
-  export import excavateAtCell = shared.api.world.excavateAtCell;
-  /** Options for {@link excavateAtCell}. */
-  export import ExcavateOptions = shared.api.world.ExcavateOptions;
-  /** Packed cell id from {@link getCellIdAtCell}. */
-  export import CellId = shared.api.world.CellId;
+  /**
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.getCellIdAtCell`
+   */
+  export import getCellIdAtCell = grid.getCellIdAtCell;
+  /**
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.isCellEmptyAtCell`
+   */
+  export import isCellEmptyAtCell = grid.isCellEmptyAtCell;
+  /**
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.isTerrainAtCell`
+   */
+  export import isTerrainAtCell = grid.isTerrainAtCell;
+  /**
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.reportActivityAtCell`
+   */
+  export import reportActivityAtCell = grid.reportActivityAtCell;
+  /**
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.excavateAtCell`
+   */
+  export import excavateAtCell = grid.excavateAtCell;
+  /**
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.getDimensions`
+   */
+  export import getDimensions = grid.getDimensions;
+  /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.ExcavateOptions` */
+  export import ExcavateOptions = grid.ExcavateOptions;
+  /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.CellId` */
+  export import CellId = grid.CellId;
+  /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.GridDimensions` */
+  export import GridDimensions = grid.GridDimensions;
 
   /**
-   * Run a callback when simulation is idle.
-   * @param callback - Function invoked on the main thread when workers are idle.
+   * Reveal fog of war at a cell.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.revealFogAtCell`
+   */
+  export import revealFogAtCell = grid.revealFogAtCell;
+
+  /**
+   * @deprecated Use {@link grid.mutate} instead.
+   * @see https://sandustry.com/sandkit.html#mutations-heading
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.mutate`
    */
   export function runWhenSimulationIdle(callback: () => void): void;
 
   /**
-   * Reveal fog of war at a cell.
-   * @param cellX - Grid column of the target cell.
-   * @param cellY - Grid row of the target cell.
-   */
-  export function revealFogAtCell(...args: CellCoordinates): void;
-
-  /**
-   * Request redraw around a cell when simulation is idle.
-   * @param cellX - Grid column of the target cell.
-   * @param cellY - Grid row of the target cell.
-   * @param range - Radius in cells to redraw.
+   * @deprecated Use {@link grid.redrawAroundCell} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.redrawAroundCell`
    */
   export function redrawAroundCellWhenIdle(...args: [...CellCoordinates, range: number]): void;
 
-  /** World item spawn, pickup, and lookup. */
+  /**
+   * @deprecated Use {@link pickups} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups`
+   */
   export namespace pickups {
-    /**
-     * Spawn a world pickup at world position.
-     * @param type - Pickup type discriminator.
-     * @param worldX - World x position in pixels.
-     * @param worldY - World y position in pixels.
-     * @param data - Optional per-item data bag copied onto the instance.
-     * @param light - Optional point light spawned with the pickup.
-     * @returns The spawned world item instance.
-     */
-    export function spawnAtWorld(type: WorldItemType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem;
-
-    /**
-     * Destroy a world pickup instance.
-     * @param worldItem - World item returned from spawn or lookup helpers.
-     */
-    export function destroy(worldItem: WorldItem): void;
-
-    /**
-     * Pick up a world item into inventory.
-     * @param worldItem - World item to pick up.
-     * @returns True when the item was collected.
-     */
-    export function pickUp(worldItem: WorldItem): boolean;
-
-    /** Return all active world pickups. */
-    export function getAll(): WorldItem[];
-
-    /**
-     * Return a world pickup by numeric id.
-     * @param worldItemId - Runtime world item id.
-     */
-    export function getById(worldItemId: number): WorldItem | undefined;
+    /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.spawnAtWorld` */
+    export import spawnAtWorld = pickupsNs.spawnAtWorld;
+    /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.remove` */
+    export import destroy = pickupsNs.destroy;
+    /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.pickUp` */
+    export import pickUp = pickupsNs.pickUp;
+    /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.getAll` */
+    export import getAll = pickupsNs.getAll;
+    /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.getById` */
+    export import getById = pickupsNs.getById;
+    /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.remove` */
+    export import remove = pickupsNs.remove;
   }
 
-  /** World pickup type discriminator. */
-  export type WorldItemType = WorldItemTypeEnum;
+  /**
+   * @deprecated Use {@link pickups.PickupType} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.PickupType`
+   */
+  export import WorldItemType = pickupsNs.WorldItemType;
 
-  /** Optional point light attached when spawning a pickup. */
-  export interface WorldItemLight {
-    /** Light brightness multiplier. Default 1. */
-    brightness?: number;
-    /** Light radius in world pixels. Default 100. */
-    size?: number;
-    /** RGB or RGBA color components in 0–1 range. */
-    color?: [number, number, number] | [number, number, number, number];
-  }
+  /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.PickupType` */
+  export import PickupType = pickupsNs.PickupType;
 
-  /** Active world pickup instance. */
-  export interface WorldItem {
-    id: number;
-    x: number;
-    y: number;
-    type: WorldItemType;
-    data: Record<string, unknown>;
-  }
+  /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.WorldItemLight` */
+  export import WorldItemLight = pickupsNs.WorldItemLight;
+
+  /** @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.WorldItem` */
+  export import WorldItem = pickupsNs.WorldItem;
 }

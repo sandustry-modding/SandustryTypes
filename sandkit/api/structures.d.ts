@@ -10,6 +10,7 @@ import { shared } from "../../shared";
 // Aliased: `structures` declares a nested `processing` namespace that would
 // otherwise shadow this import.
 import { processing as processingApi } from "./processing";
+import type { elements } from "./elements";
 
 export namespace structures {
 
@@ -20,7 +21,7 @@ export namespace structures {
   /** Return the definition for a structure type. */
   export import getDefinitionByType = shared.api.structures.getDefinitionByType;
   /** Resolve a string structure id to its type. */
-  export import getTypeFromId = shared.api.structures.getTypeFromId;
+  export import getTypeById = shared.api.structures.getTypeById;
   /** Return true when a built structure exists at the cell. */
   export import hasBuiltAtCell = shared.api.structures.hasBuiltAtCell;
   /** Return true when a structure matches a string id. */
@@ -37,8 +38,8 @@ export namespace structures {
   export import setSpritesheetIndexByValueAtCell = shared.api.structures.setSpritesheetIndexByValueAtCell;
   /** Push structure state updates to the game and workers. */
   export import update = shared.api.structures.update;
-  /** Set partial data on a structure instance. */
-  export import setData = shared.api.structures.setData;
+  /** Merge partial data onto a structure instance. */
+  export import updateData = shared.api.structures.updateData;
   /** Structure instance in the world. */
   export import Structure = shared.api.structures.Structure;
   /** Structure type id or enum value. */
@@ -49,133 +50,225 @@ export namespace structures {
   export import StructureRef = shared.api.structures.StructureRef;
 
   /**
-   * Register a structure processor handler.
-   * @param structureId - Structure type or string id to attach the processor to.
-   * @param definition - Periodic processing interval and callback.
+   * @deprecated Use {@link getTypeById} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.getTypeById`
    */
-  export function addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void;
+  export import getTypeFromId = shared.api.structures.getTypeFromId;
+
+  /**
+   * @deprecated Use {@link updateData} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.updateData`
+   */
+  export import setData = shared.api.structures.setData;
 
   /**
    * Register a new structure definition.
+   *
    * @param definition - Full structure definition.
    * @param options - When `useRawShape` is true, keep the shape matrix as-is.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
    */
   export function register(definition: SandkitStructureDefinition, options?: { useRawShape?: boolean; }): void;
 
   /**
    * Patch fields on an existing structure definition.
+   *
    * @param structureTypeOrId - Structure type value or string id.
    * @param partial - Fields to merge onto the definition.
    * @param options - When `useRawShape` is true, keep the shape matrix as-is.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.updateDefinition`
    */
   export function updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStructureDefinition>, options?: { useRawShape?: boolean; }): void;
 
   /**
    * Add a rotated variant to a base structure type.
+   *
    * @param baseStructureTypeOrId - Base structure type or id.
    * @param variant - Variant id and supported rotation angles.
    * @param options - Optional build-mode wiring for the variant.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.registerVariant`
+   */
+  export function registerVariant(baseStructureTypeOrId: StructureRef, variant: { id: StructureRef; angles: number[]; }, options?: { addBuildMode?: unknown; }): void;
+
+  /**
+   * @deprecated Use {@link registerVariant} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.registerVariant`
    */
   export function addVariant(baseStructureTypeOrId: StructureRef, variant: { id: StructureRef; angles: number[]; }, options?: { addBuildMode?: unknown; }): void;
 
   /**
    * Register placement rules for a structure.
+   *
    * @param definition - Hotbar placement field configuration.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.registerPlacementConfig`
    */
   export function registerPlacementConfig(definition: PlacementConfigDefinition): void;
 
-  /** Return structure types unlocked for building. */
+  /**
+   * Return structure types available for building.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.getAvailableTypes`
+   */
+  export function getAvailableTypes(): Set<StructureRef>;
+
+  /**
+   * @deprecated Use {@link getAvailableTypes} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.getAvailableTypes`
+   */
   export function getUnlockedTypes(): Set<StructureRef>;
 
   /**
    * Return true when the player blocks building at the cell.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.isBlockedByPlayerAtCell`
    */
   export function isBlockedByPlayerAtCell(...args: CellCoordinates): boolean;
 
   /**
    * Return true when a launcher structure is at the cell.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.isLauncherAtCell`
    */
   export function isLauncherAtCell(...args: CellCoordinates): boolean;
 
   /**
-   * Return true when a structure type is unlocked.
+   * Return structure lock state for a type.
+   *
+   * Official docs list {@link isUnlockedByType} as a deprecated alias of this
+   * function (same implementation and return value; names differ only).
+   *
    * @param structureType - Structure type value or string id.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.isLockedByType`
+   */
+  export function isLockedByType(structureType: StructureRef): boolean;
+
+  /**
+   * @deprecated Use {@link isLockedByType} instead. Same function as {@link isLockedByType}; return value is not inverted.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.isLockedByType`
    */
   export function isUnlockedByType(structureType: StructureRef): boolean;
 
   /**
    * Map a numeric value through thresholds to a spritesheet index.
+   *
    * @param value - Numeric value to map.
    * @param thresholds - Ascending threshold values.
    * @returns Spritesheet frame index.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.mapValueToSpritesheetIndex`
    */
   export function mapValueToSpritesheetIndex(value: number, thresholds: number[]): number;
 
   /**
-   * Build a structure at a cell when simulation is idle.
+   * Build a structure at a cell. Main-thread writes are deferred.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param structureTypeOrId - Structure type or string id to build.
    * @param options - Optional build overrides.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.buildAtCell`
+   */
+  export function buildAtCell(...args: [...CellCoordinates, structureTypeOrId: StructureRef, options?: StructureBuildOptions]): void;
+
+  /**
+   * @deprecated Use {@link buildAtCell} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.buildAtCell`
    */
   export function buildAtCellWhenIdle(...args: [...CellCoordinates, structureTypeOrId: StructureRef, options?: StructureBuildOptions]): void;
 
   /**
-   * Remove a structure at a cell when simulation is idle.
+   * Remove a structure at a cell. Main-thread writes are deferred.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param options - Optional removal flags.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.removeAtCell`
+   */
+  export function removeAtCell(...args: [...CellCoordinates, options?: StructureRemovalOptions]): void;
+
+  /**
+   * @deprecated Use {@link removeAtCell} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.removeAtCell`
    */
   export function removeAtCellWhenIdle(...args: [...CellCoordinates, options?: StructureRemovalOptions]): void;
 
   /**
-   * Remove structures between two cells when simulation is idle.
+   * Remove structures between two cells. Main-thread writes are deferred.
+   *
    * @param startCellX - Start cell column.
    * @param startCellY - Start cell row.
    * @param endCellX - End cell column.
    * @param endCellY - End cell row.
    * @param options - Optional bulk-removal flags.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.removeBetweenCells`
+   */
+  export function removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void;
+
+  /**
+   * @deprecated Use {@link removeBetweenCells} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.removeBetweenCells`
    */
   export function removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void;
 
   /**
-   * Remove structures at many cells when simulation is idle.
+   * Remove structures at many cells. Main-thread writes are deferred.
+   *
    * @param positions - Cell positions to clear.
    * @param options - Optional bulk-removal flags.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.removeAtCells`
+   */
+  export function removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void;
+
+  /**
+   * @deprecated Use {@link removeAtCells} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.removeAtCells`
    */
   export function removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOptions): void;
+
+  /**
+   * @deprecated Use {@link processing.register} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.processing.register`
+   */
+  export function addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void;
 
   /** Structure recipe registration by machine kind. */
   export namespace recipes {
     /**
      * Register a planter box recipe.
+     *
      * @param id - Machine recipe slot id.
      * @param definition - Grower recipe definition.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
      */
     export function register(id: 'planterBox', definition: PlanterBoxRecipeDefinitionV1): void;
 
     /**
      * Register a shaker recipe.
+     *
      * @param id - Machine recipe slot id.
      * @param definition - Shaker recipe definition.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
      */
     export function register(id: 'shaker', definition: ShakerRecipeDefinitionV1): void;
 
     /**
      * Register a kinetic press recipe.
+     *
      * @param id - Machine recipe slot id.
      * @param definition - Kinetic press recipe definition.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
      */
     export function register(id: 'kineticPress', definition: KineticPressRecipeDefinitionV1): void;
 
     /**
      * Register a weighted refinery machine recipe.
+     *
      * @param id - Refinery machine id.
      * @param definition - Weighted input/output recipe.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
      */
     export function register(id: 'condenser' | 'steamDryer' | 'synthesizer' | 'snowmaker' | 'smelter', definition: WeightedRefineryRecipeDefinitionV1): void;
   }
@@ -183,21 +276,37 @@ export namespace structures {
   /** Per-structure processing enablement and registration. */
   export namespace processing {
     /** Return true when processing is enabled at a cell. */
+    export import isEnabledAtCell = shared.api.structures.processing.isEnabledAtCell;
+
+    /**
+     * @deprecated Use {@link isEnabledAtCell} instead.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.processing.isEnabledAtCell`
+     */
     export import isEnabledAt = shared.api.structures.processing.isEnabledAt;
 
     /**
      * Register a custom processing definition by id.
+     *
      * @param id - Unique processing registration id.
      * @param definition - Structure type, interval, and callback.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
      */
     export function register(id: StructureId, definition: StructureProcessingDefinitionV1): void;
 
     /**
      * Enable or disable processing at a cell.
+     *
      * @param cellX - Grid column of the target cell.
      * @param cellY - Grid row of the target cell.
      * @param enabled - Desired processing enabled state.
      * @returns True when the enabled state changed.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.setEnabledAtCell`
+     */
+    export function setEnabledAtCell(...args: [...CellCoordinates, enabled: boolean]): boolean;
+
+    /**
+     * @deprecated Use {@link setEnabledAtCell} instead.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.processing.setEnabledAtCell`
      */
     export function setEnabledAt(...args: [...CellCoordinates, enabled: boolean]): boolean;
   }
@@ -236,12 +345,12 @@ export namespace structures {
     [key: string]: unknown;
   }
 
-  /** Options passed to {@link buildAtCellWhenIdle}. */
+  /** Options passed to {@link buildAtCell}. */
   export interface StructureBuildOptions {
     [key: string]: unknown;
   }
 
-  /** Options passed to {@link removeAtCellWhenIdle}. */
+  /** Options passed to {@link removeAtCell}. */
   export interface StructureRemovalOptions {
     /** Also remove underlying terrain cells in the footprint. */
     removeCells?: boolean;
@@ -258,12 +367,56 @@ export namespace structures {
     onlyPositions?: Vector2[];
   }
 
-  /** Periodic structure processor attached with {@link addProcessor}. */
+  /**
+   * Context passed to structure processing callbacks.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
+   */
+  export interface StructureProcessingContext {
+    /**
+     * Return the resolved element type at a cell, or null.
+     *
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
+     */
+    getResolvedTypeAtCell(...args: CellCoordinates): elements.ElementType | null;
+
+    /**
+     * @deprecated Use {@link getResolvedTypeAtCell} instead.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias in `api.structures.processing.register` context
+     */
+    getElementTypeAtCell(...args: CellCoordinates): elements.ElementType | null;
+
+    /**
+     * Return true when the cell has no element or terrain.
+     *
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
+     */
+    isCellEmptyAtCell(...args: CellCoordinates): boolean;
+
+    /**
+     * @deprecated Use {@link isCellEmptyAtCell} instead.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias in `api.structures.processing.register` context
+     */
+    isCellEmpty(...args: CellCoordinates): boolean;
+
+    /**
+     * Commit batched grid mutations from the processing callback.
+     *
+     * @param mutations - Mutation writer payload accepted by the runtime.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
+     */
+    commit(mutations: unknown): void;
+  }
+
+  /**
+   * @deprecated Use {@link StructureProcessingDefinitionV1} with {@link processing.register} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.processing.register`
+   */
   export interface StructureProcessorDefinitionV1 {
     /** Tick interval in milliseconds. Must be > 0. */
     intervalMs: number;
     /** Synchronous callback invoked for each structure instance. */
-    process: (state: unknown, structure: Structure) => void;
+    process: (structure: Structure, context: StructureProcessingContext) => void;
   }
 
   /** Placement hotbar field definition. */
@@ -315,6 +468,6 @@ export namespace structures {
   export interface StructureProcessingDefinitionV1 {
     structureType: StructureRef;
     intervalMs: number;
-    process: (state: unknown, structure: Structure) => void;
+    process: (structure: Structure, context: StructureProcessingContext) => void;
   }
 }

@@ -1,5 +1,6 @@
 import { ui as uiNs } from "./api/ui";
 import { player as playerNs } from "./api/player";
+import { grid as gridNs } from "./api/grid";
 import { world as worldNs } from "./api/world";
 import { terrains as terrainsNs } from "./api/terrains";
 import { structures as structuresNs } from "./api/structures";
@@ -13,6 +14,7 @@ export namespace shared {
   export namespace api {
     export import ui = uiNs;
     export import player = playerNs;
+    export import grid = gridNs;
     export import world = worldNs;
     export import terrains = terrainsNs;
     export import structures = structuresNs;

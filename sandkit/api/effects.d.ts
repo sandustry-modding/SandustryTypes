@@ -1,44 +1,95 @@
 import { shared } from "../../shared";
 
 /**
- * `sandkit.api.effects` — visual effects, particles, lights, and lasers at world positions.
- * Main thread only.
+ * `sandkit.api.effects` — visual effects, particles, and lasers at world positions.
+ * Main thread only. Temporary lights live under {@link lights.temporary}.
  */
-declare namespace effects {
-  // Shared functions
-  /** Creates a short-lived light at world coordinates. */
-  export import createLightAtWorld = shared.api.effects.createLightAtWorld
-  /** Spawns particles at world coordinates. */
-  export import createParticlesAtWorld = shared.api.effects.createParticlesAtWorld
-  /** Creates a named screen effect at world coordinates. */
-  export import createEffectAtWorld = shared.api.effects.createEffectAtWorld
-  // Shared types
+export namespace effects {
   /** Options for generic screen effects. */
-  export import EffectOptions = shared.api.effects.EffectOptions
+  export import EffectOptions = shared.api.effects.EffectOptions;
   /** Options for temporary lights. */
-  export import TemporaryLightOptions = shared.api.effects.TemporaryLightOptions
+  export import TemporaryLightOptions = shared.api.effects.TemporaryLightOptions;
   /** Options for particle effects. */
-  export import ParticleEffectOptions = shared.api.effects.ParticleEffectOptions
+  export import ParticleEffectOptions = shared.api.effects.ParticleEffectOptions;
+
+  /**
+   * Creates a named screen effect at world coordinates.
+   *
+   * @param effectId - Registered effect id (for example `heatWave`).
+   * @param worldX - World X coordinate in pixels.
+   * @param worldY - World Y coordinate in pixels.
+   * @param options - Duration, radius, and intensity settings.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createAtWorld`
+   */
+  export function createAtWorld(
+    effectId: string,
+    worldX: number,
+    worldY: number,
+    options?: EffectOptions,
+  ): void;
+
+  /**
+   * @deprecated Use {@link createAtWorld} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.effects.createAtWorld`
+   */
+  export function createEffectAtWorld(
+    effectId: string,
+    worldX: number,
+    worldY: number,
+    options?: EffectOptions,
+  ): void;
+
+  /**
+   * Spawns particles at world coordinates.
+   *
+   * @param worldX - World X coordinate in pixels.
+   * @param worldY - World Y coordinate in pixels.
+   * @param options - Count, velocity, colour, and lifetime settings.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createParticlesAtWorld`
+   */
+  export import createParticlesAtWorld = shared.api.effects.createParticlesAtWorld;
+
+  /**
+   * @deprecated Use {@link lights.temporary.createAtWorld} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.lights.temporary.createAtWorld`
+   */
+  export function createLightAtWorld(
+    worldX: number,
+    worldY: number,
+    options?: TemporaryLightOptions,
+  ): { lightId: number | null; index?: number | null; };
 
   /**
    * Creates a distortion wave effect at world coordinates.
+   *
    * @param worldX - World X coordinate in pixels.
    * @param worldY - World Y coordinate in pixels.
    * @param options - Style, duration, radius, intensity, and color.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createDistortionWaveAtWorld`
    */
   export function createDistortionWaveAtWorld(worldX: number, worldY: number, options?: DistortionEffectOptions): void;
+
   /**
    * Creates a laser beam between two world points. Returns a handle to destroy it.
+   *
    * @param startWorldX - Beam start world X in pixels.
    * @param startWorldY - Beam start world Y in pixels.
    * @param endWorldX - Beam end world X in pixels.
    * @param endWorldY - Beam end world Y in pixels.
    * @param options - Width, brightness, color, and glow options.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createLaserAtWorld`
    */
-  export function createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, endWorldY: number, options?: LaserEffectOptions): LaserEffectHandle;
+  export function createLaserAtWorld(
+    startWorldX: number,
+    startWorldY: number,
+    endWorldX: number,
+    endWorldY: number,
+    options?: LaserEffectOptions,
+  ): LaserEffectHandle;
+
   /**
-   * Removes a temporary light by its id.
-   * @param lightId - Light index from {@link createLightAtWorld}.
+   * @deprecated Use {@link lights.temporary.removeById} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.lights.temporary.removeById`
    */
   export function removeLightById(lightId: number): void;
 
@@ -63,7 +114,7 @@ declare namespace effects {
   /** Options for distortion wave effects. */
   export interface DistortionEffectOptions {
     /** Distortion style: implode or explode. */
-    style?: 'implode' | 'explode';
+    style?: "implode" | "explode";
     /** Effect duration in seconds. */
     duration?: number;
     /** Maximum radius of the wave. */

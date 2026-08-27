@@ -14,6 +14,8 @@ export type SandkitApi = {
   authorization: typeof import("./authorization").authorization;
   /** Building mode and placement. */
   building: typeof import("./building").building;
+  /** Structure blueprint serialize and localize helpers. */
+  blueprints: typeof import("./blueprints").blueprints;
   /** Camera position and bounds. */
   camera: typeof import("./camera").camera;
   /** Collector machine helpers. */
@@ -28,6 +30,8 @@ export type SandkitApi = {
   effects: typeof import("./effects").effects;
   /** Element types and cell mutations. */
   elements: typeof import("./elements").elements;
+  /** Entity spawn, capture, and lifecycle. */
+  entities: typeof import("./entities").entities;
   /** Energy network helpers. */
   energy: typeof import("./energy").energy;
   /** Game event subscription. */
@@ -36,9 +40,16 @@ export type SandkitApi = {
   excavation: typeof import("./excavation").excavation;
   /** Fire and burning helpers. */
   fire: typeof import("./fire").fire;
+  /** Factory progression level and process counters. */
+  factory: typeof import("./factory").factory;
+  /** Game session start helpers. */
+  game: typeof import("./game").game;
   /** Game configuration values. */
   gameConfig: typeof import("./gameconfig").gameConfig;
-  /** Grid metrics and cell helpers. */
+  /**
+   * Cell queries, deferred mutations, fog, and redraw.
+   * Official name for the former `api.world` surface.
+   */
   grid: typeof import("./grid").grid;
   /** Intercept and modify hooks. */
   hooks: typeof import("./hooks").hooks;
@@ -56,6 +67,10 @@ export type SandkitApi = {
   mods: typeof import("./mods").mods;
   /** Excavation pattern helpers. */
   patterns: typeof import("./patterns").patterns;
+  /** Pipe network queries and enablement. */
+  pipes: typeof import("./pipes").pipes;
+  /** World pickup spawn, collect, and lookup. */
+  pickups: typeof import("./pickups").pickups;
   /** Player position, movement, and inventory. */
   player: typeof import("./player").player;
   /** Processing recipe registration. */
@@ -112,6 +127,8 @@ export type SandkitApi = {
   utils: typeof import("./utils").utils;
   /** Worker post-update control. */
   workers: typeof import("./workers").workers;
-  /** World cells, fog, redraw, and pickups. */
+  /**
+   * @deprecated Use {@link grid} for cell APIs and {@link pickups} for world items.
+   */
   world: typeof import("./world").world;
 };

@@ -7,14 +7,19 @@ import type { LooseString } from "../../shared/nominal";
 export namespace events {
   /**
    * Subscribes to an event. Returns an unsubscribe function.
+   *
    * @param eventId - Registered event name.
    * @param callback - Called when the event is emitted.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.events.on`
    */
   export function on<K extends EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void;
+
   /**
    * Emits an event with a payload to all subscribers.
+   *
    * @param eventId - Registered event name.
    * @param payload - Serializable payload passed to listeners.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.events.emit`
    */
   export function emit<K extends EventId>(eventId: K, payload: EventPayload<K>): void;
 
@@ -33,6 +38,85 @@ export namespace events {
 
   /** Known event payloads. Unlisted ids still use `unknown`. */
   export interface EventPayloadMap {
+    "item:used": {
+      itemId: string;
+      useId: string;
+      kind: string;
+      cellX: number;
+      cellY: number;
+      prepared: Readonly<Record<string, unknown>>;
+    };
+    "frame:render": Record<string, unknown>;
+    "scene:game:started": Record<string, unknown>;
+    /** @deprecated Use `"scene:game:started"` instead. */
+    "scene:started:game": EventPayloadMap["scene:game:started"];
+    "earlyAccess:completed": Record<string, unknown>;
+    /** @deprecated Use `"earlyAccess:completed"` instead. */
+    "earlyAccess:complete": EventPayloadMap["earlyAccess:completed"];
+    "terrain:destroyed": {
+      cellX: number;
+      cellY: number;
+      cellType: number;
+      /** @deprecated Use {@link cellX} instead. */
+      x?: number;
+      /** @deprecated Use {@link cellY} instead. */
+      y?: number;
+    };
+    "fog:cellRevealed": {
+      cellX: number;
+      cellY: number;
+      /** @deprecated Use {@link cellX} instead. */
+      x?: number;
+      /** @deprecated Use {@link cellY} instead. */
+      y?: number;
+    };
+    "upgrade:levelSelected": {
+      itemId: string;
+      upgradeId: string;
+      level: number;
+    };
+    "building:placed": {
+      structure: Record<string, unknown>;
+      x: number;
+      y: number;
+      isBatch: boolean;
+      isCopied: boolean;
+    };
+    "building:removed": {
+      structureId: string;
+      x: number;
+      y: number;
+      isBatch: boolean;
+    };
+    "structures:placed": { structures: unknown[]; };
+    "structures:removed": {
+      removed: unknown[];
+      structures?: unknown[];
+      byMove: boolean;
+    };
+    "structures:moved": {
+      moved: unknown[];
+      failedToPlace: unknown[];
+    };
+    "game:ready": Record<string, unknown>;
+    "game:started": Record<string, unknown>;
+    "tutorial:stepChanged": { step: unknown; };
+    "tutorial:completed": { skipped: boolean; };
+    "tech:unlocked": {
+      techId: string;
+      suppressMusic: boolean;
+    };
+    "worldItem:pickedUp": {
+      worldItemId: number;
+      type: string;
+    };
+    "resource:collected": {
+      resourceId: string;
+      amount: number;
+      sourceKind: string;
+      cellX: number;
+      cellY: number;
+    };
     "player:collision:prepare": PlayerCollisionPreparePayload;
     "player:moved": {
       /**

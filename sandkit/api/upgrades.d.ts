@@ -35,6 +35,15 @@ export namespace upgrades {
    * @param upgradeId - Upgrade id within the item.
    */
   export function getAvailableLevelById(itemId: string, upgradeId: string): number;
+  /**
+   * Set the purchased level for an upgrade.
+   *
+   * @param itemId - Parent item id.
+   * @param upgradeId - Upgrade id within the item.
+   * @param level - Level to set.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.upgrades.setLevelById`
+   */
+  export function setLevelById(itemId: string, upgradeId: string, level: number): void;
 
   /** Upgrade definition registered for an item. */
   export interface UpgradeDefinition {

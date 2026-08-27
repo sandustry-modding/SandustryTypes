@@ -6,23 +6,38 @@ import type { CellId, LooseString, TaggedNumber } from "../nominal";
  * Shared `sandkit.api.elements` base — element reads and definitions.
  *
  * Workers add direct mutation helpers on top of this shape. Main thread adds
- * idle-scheduled mutations and registration APIs.
+ * deferred grid mutations and registration APIs.
  *
  * @internal Base namespace reused by main and worker declarations.
  */
 export namespace elements {
   /**
    * Numeric element type handle.
-   * Built-in {@link ElementTypeEnum} values autocomplete; `getTypeFromId` returns a tagged handle.
+   * Built-in {@link ElementTypeEnum} values autocomplete; {@link getTypeById} returns a tagged handle.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements`
    */
   export type ElementType = ElementTypeEnum | TaggedNumber<"elementType">;
 
-  /** Mod or built-in element string id. */
+  /**
+   * Mod or built-in element string id.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements`
+   */
   export type ElementId = LooseString<never>;
-  /** Type handle or string id accepted by lookup helpers. */
+
+  /**
+   * Type handle or string id accepted by lookup helpers.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements`
+   */
   export type ElementRef = ElementType | ElementId;
 
-  /** Physical behaviour category for an element. */
+  /**
+   * Physical behaviour category for an element.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements`
+   */
   export enum MatterType {
     Solid = 1,
     Liquid = 2,
@@ -34,7 +49,11 @@ export namespace elements {
     Powder = 8,
   }
 
-  /** Mod-registered element definition snapshot. */
+  /**
+   * Mod-registered element definition snapshot.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.register`
+   */
   export type ElementDefinition = {
     id: string,
     nameKey: string,
@@ -53,13 +72,26 @@ export namespace elements {
     getExtraProps?: () => { data: Record<PropertyKey, any> }
   };
 
-  /** Options for {@link createAtCell}, replace, and idle create helpers. */
+  /**
+   * Options for {@link createAtCell}, replace, and related create helpers.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.createAtCell`
+   */
   export interface ElementCreateOptions {
     /** Initial element data bag. */
     data?: Record<string, unknown>;
     /** Override element density. */
     density?: number;
-    /** Set both max and remaining duration. */
+    /**
+     * Set both max and remaining duration in simulation ticks.
+     *
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.createAtCell`
+     */
+    durationTicks?: number;
+    /**
+     * @deprecated Use {@link durationTicks} instead.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `options.durationTicks`
+     */
     duration?: number;
     /** Override free-fall state on spawn. */
     isFreeFalling?: boolean;
@@ -78,85 +110,125 @@ export namespace elements {
     skipCollectorCheck?: boolean;
   }
 
-  /** Options for element removal helpers. */
+  /**
+   * Options for element removal helpers.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.removeAtCell`
+   */
   export interface ElementRemovalOptions {
     /** Skip collector accounting when removing the element. */
     skipCollectorCheck?: boolean;
   }
 
   /**
+   * Return the mod string id for a numeric element type.
+   *
+   * @param elementType - Numeric element type.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getIdByType`
+   */
+  export function getIdByType(elementType: ElementType): ElementId;
+
+  /**
    * Resolve a mod element string id to a type handle.
+   *
    * @param elementId - Mod-registered element id.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getTypeById`
+   */
+  export function getTypeById(elementId: ElementId): ElementType;
+
+  /**
+   * @deprecated Use {@link getTypeById} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.getTypeById`
    */
   export function getTypeFromId(elementId: ElementId): ElementType;
 
   /**
    * Look up the definition for a type handle.
+   *
    * @param elementType - Numeric element type.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getDefinitionByType`
    */
   export function getDefinitionByType(elementType: ElementType): ElementDefinition | undefined;
 
   /**
    * Return the raw element type at a cell (may differ from resolved type).
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getTypeAtCell`
    */
   export function getTypeAtCell(...args: CellCoordinates): ElementType | null;
 
   /**
    * Return the resolved element type after overlays and particles.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getResolvedTypeAtCell`
    */
   export function getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null;
 
   /**
    * Return the resolved element type from a packed cell id.
+   *
    * @param cellId - Packed cell id from {@link world.getCellIdAtCell}.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getResolvedTypeFromCellId`
    */
   export function getResolvedTypeFromCellId(cellId: CellId): ElementType | null;
 
   /**
    * Return element index, particle flag, and ids at a cell.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getInfoAtCell`
    */
   export function getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number; } | null;
 
   /**
    * Return the matter category at a cell, or null when empty.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getMatterTypeAtCell`
    */
   export function getMatterTypeAtCell(...args: CellCoordinates): MatterType | null;
 
   /**
-   * Return true when the cell holds the given element type.
+   * Return true when the cell holds the given element type or id.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @param elementType - Element type to compare.
+   * @param elementTypeOrId - Numeric type or string id.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.isTypeAtCell`
    */
-  export function isTypeAtCell(...args: [...CellCoordinates, elementType: ElementType]): boolean;
+  export function isTypeAtCell(...args: [...CellCoordinates, elementTypeOrId: ElementRef]): boolean;
 
   /**
    * Return true when the element at the cell is falling.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.isFreeFallingAtCell`
    */
   export function isFreeFallingAtCell(...args: CellCoordinates): boolean;
 
   /**
    * Return per-cell velocity for moving elements.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getVelocityAtCell`
    */
   export function getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null;
 
   /**
    * Read element data field 1–4 at a cell.
+   *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param fieldNumber - Data field index (1–4).
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getDataFieldAtCell`
    */
   export function getDataFieldAtCell(...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4]): number | null;
 }

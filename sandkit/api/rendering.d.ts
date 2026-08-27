@@ -14,6 +14,14 @@ export namespace rendering {
    * @param cellY - Grid cell Y coordinate.
    */
   export function getDrawPositionAtCell(...args: CellCoordinates): Vector2;
+  /**
+   * Return screen draw position for a world-space point.
+   *
+   * @param worldX - World x position in pixels.
+   * @param worldY - World y position in pixels.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.rendering.getDrawPositionAtWorld`
+   */
+  export function getDrawPositionAtWorld(worldX: number, worldY: number): Vector2;
   /** Return cell size and snap grid metrics. */
   export function getGridMetrics(): { cellSize: number; snapGridCellSize: number; };
   /** Return overlay viewport width and height in pixels. */

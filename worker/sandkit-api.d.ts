@@ -12,10 +12,15 @@
  * {@link sandkit.SandkitApi} on worker threads.
  */
 export type WorkerSandkitApi = {
+  constants: typeof import("../sandkit/api/constants").constants;
   collector: typeof import("../sandkit/api/collector").collector;
+  effects: typeof import("./api/effects").effects;
   elements: typeof import("./api/elements").elements;
-  fire: typeof import("../sandkit/api/fire").fire;
-  hooks: typeof import("../sandkit/api/hooks").hooks;
+  events: typeof import("./api/events").events;
+  fire: typeof import("./api/fire").fire;
+  grid: typeof import("./api/grid").grid;
+  hooks: typeof import("./api/hooks").hooks;
+  lights: typeof import("./api/lights").lights;
   main: typeof import("./api/main").main;
   maps: typeof import("../shared/api/maps").maps;
   patterns: typeof import("../sandkit/api/patterns").patterns;
@@ -27,5 +32,9 @@ export type WorkerSandkitApi = {
   ui: typeof import("../shared/api/ui").ui;
   utils: typeof import("../sandkit/api/utils").utils;
   worker: typeof import("./api/worker").worker;
-  world: typeof import("../shared/api/world").world;
+  /**
+   * @deprecated Use {@link grid} instead.
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid`
+   */
+  world: typeof import("./api/grid").world;
 };

@@ -410,6 +410,16 @@ export enum TechStatus {
 }
 
 /** Pickups and interactable world items. */
+export enum PickupType {
+  Artifact = 1,
+  GlyphKey = 2,
+  Stratacore = 3,
+  Orb = 4,
+}
+
+/**
+ * @deprecated Use {@link PickupType} instead.
+ */
 export enum WorldItemType {
   Artifact = 1,
   GlyphKey = 2,
@@ -440,5 +450,9 @@ export type SandkitEnums = {
   StructureType: typeof StructureType;
   Tech: typeof Tech;
   TechStatus: typeof TechStatus;
+  PickupType: typeof PickupType;
+  /**
+   * @deprecated Use {@link PickupType} instead.
+   */
   WorldItemType: typeof WorldItemType;
 };

@@ -1,18 +1,20 @@
 /**
  * Shared `sandkit.api.shared` base — cross-thread shared memory buffers.
  *
- * Main thread uses {@link shared.buffers.get} and `create`. Workers extend this
- * with `require` in worker `sandkit.api.shared`.
+ * Main thread uses {@link shared.buffers.get} and {@link shared.buffers.ensure}.
+ * Workers extend this with `require` in worker `sandkit.api.shared`.
  *
  * @internal Base namespace reused by main and worker declarations.
  */
 export namespace shared {
-  /** Named shared memory buffers (`create` / `get` on main; `require` on workers). */
+  /** Named shared memory buffers (`ensure` / `get` on main; `require` on workers). */
   export namespace buffers {
     /**
      * Look up a named shared buffer without creating it.
+     *
      * @param key - Buffer name shared across threads.
      * @returns The typed array, or `undefined` when the buffer does not exist.
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.shared.buffers.get`
      */
     export function get(key: string): SharedArray | undefined;
   }
