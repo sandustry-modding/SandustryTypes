@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>SandustryTypes — Sandkit API</title>
+    <meta name="color-scheme" content="light dark" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify@5.0.0/dist/themes/core.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/docsify@5.0.0/dist/themes/addons/core-dark.min.css"
+      media="(prefers-color-scheme: dark)"
+    />
+    <script src="assets/search-paths.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        name: "SandustryTypes",
+        loadSidebar: true,
+        subMaxLevel: 0,
+        auto2top: true,
+        alias: {
+          "/api/.*/_sidebar.md": "/api/_sidebar.md",
+        },
+        search: {
+          paths: Array.isArray(window.SMT_SEARCH_PATHS) ? window.SMT_SEARCH_PATHS : "auto",
+          placeholder: "Search Sandkit API (e.g. sandkit.api.ui)",
+          noData: "No results",
+          depth: 4,
+        },
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@5.0.0/dist/docsify.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/docsify@5.0.0/dist/plugins/search.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-typescript.min.js"></script>
+  </body>
+</html>

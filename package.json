@@ -1,0 +1,44 @@
+{
+  "name": "@sandustry-modding/types",
+  "version": "0.1.0",
+  "description": "TypeScript declarations and API docs for the Sandustry Sandkit host API",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandustry-modding/SandustryTypes.git"
+  },
+  "homepage": "https://github.com/sandustry-modding/SandustryTypes#readme",
+  "bugs": {
+    "url": "https://github.com/sandustry-modding/SandustryTypes/issues"
+  },
+  "types": "./global.d.ts",
+  "exports": {
+    ".": {
+      "types": "./global.d.ts"
+    }
+  },
+  "files": [
+    "global.d.ts",
+    "sandkit/**/*.d.ts",
+    "shared/**/*.d.ts",
+    "worker/**/*.d.ts",
+    "CHANGELOG.md",
+    "LICENSE",
+    "README.md",
+    "ATTRIBUTION.md"
+  ],
+  "scripts": {
+    "docs": "npm run docs:api && npm run docs:serve",
+    "docs:api": "node scripts/generate-api-docs.mjs",
+    "docs:serve": "npx --yes docsify-cli serve docs",
+    "test": "node --test scripts/api-search.test.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

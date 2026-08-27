@@ -1,0 +1,38 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "name": "Sandkit API",
+  "entryPoints": [
+    "../shared/asset.d.ts",
+    "../shared/engine.d.ts",
+    "../shared/jsonvalue.d.ts",
+    "../shared/nominal.d.ts",
+    "../shared/player.d.ts",
+    "../sandkit/index.d.ts",
+    "../sandkit/api/index.d.ts",
+    "../sandkit/enums/index.d.ts",
+    "../sandkit/react.d.ts",
+    "../worker/index.d.ts",
+    "../sandkit/engine/index.d.ts"
+  ],
+  "entryPointStrategy": "resolve",
+  "tsconfig": "../tsconfig.json",
+  "plugin": ["typedoc-plugin-markdown"],
+  "readme": "../README.md",
+  "out": "../docs/api",
+  "excludePrivate": true,
+  "excludeInternal": false,
+  "hidePageHeader": true,
+  "hideBreadcrumbs": true,
+  "fileExtension": ".md",
+  "entryFileName": "README.md",
+  "sort": ["source-order"],
+  "categorizeByGroup": true,
+  "membersWithOwnFile": ["Class", "Enum"],
+  "expandParameters": true,
+  "indexFormat": "list",
+  "gitRevision": "main",
+  "validation": {
+    "notDocumented": false,
+    "invalidLink": false
+  }
+}
