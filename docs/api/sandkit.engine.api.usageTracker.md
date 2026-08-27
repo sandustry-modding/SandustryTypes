@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.usageTracker.clear() :id=clear
+### clear() :id=clear
+
+<p class="smt-member-path"><code>sandkit.engine.api.usageTracker.clear()</code></p>
 
 ```ts
 clear(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.usageTracker.getLatest() :id=getlatest
+### getLatest() :id=getlatest
+
+<p class="smt-member-path"><code>sandkit.engine.api.usageTracker.getLatest()</code></p>
 
 ```ts
 getLatest(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.usageTracker.getMostUsed() :id=getmostused
+### getMostUsed() :id=getmostused
+
+<p class="smt-member-path"><code>sandkit.engine.api.usageTracker.getMostUsed()</code></p>
 
 ```ts
 getMostUsed(...args: unknown[]): unknown

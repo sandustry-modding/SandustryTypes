@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.debug.register() :id=register
+### register() :id=register
+
+<p class="smt-member-path"><code>sandkit.engine.api.debug.register()</code></p>
 
 ```ts
 register(...args: unknown[]): unknown

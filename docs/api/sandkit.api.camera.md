@@ -5,7 +5,9 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.camera.snapToPlayer() :id=snaptoplayer
+### snapToPlayer() :id=snaptoplayer
+
+<p class="smt-member-path"><code>sandkit.api.camera.snapToPlayer()</code></p>
 
 ```ts
 snapToPlayer(): void
@@ -21,7 +23,9 @@ Snap the camera to the player position.
 
 ***
 
-### sandkit.api.camera.setFocusAtWorld() :id=setfocusatworld
+### setFocusAtWorld() :id=setfocusatworld
+
+<p class="smt-member-path"><code>sandkit.api.camera.setFocusAtWorld()</code></p>
 
 ```ts
 setFocusAtWorld(worldX: number, worldY: number): boolean
@@ -53,7 +57,9 @@ True when focus was applied.
 
 ***
 
-### sandkit.api.camera.releaseFocus() :id=releasefocus
+### releaseFocus() :id=releasefocus
+
+<p class="smt-member-path"><code>sandkit.api.camera.releaseFocus()</code></p>
 
 ```ts
 releaseFocus(options?: object): boolean

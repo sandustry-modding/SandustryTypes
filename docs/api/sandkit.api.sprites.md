@@ -2,7 +2,9 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.sprites.SpriteLoadOptions :id=spriteloadoptions
+### SpriteLoadOptions :id=spriteloadoptions
+
+<p class="smt-member-path"><code>sandkit.api.sprites.SpriteLoadOptions</code></p>
 
 Defined in: [sandkit/api/sprites.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/sprites.d.ts#L40)
 
@@ -28,7 +30,9 @@ Packed RGB tint applied after load.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.sprites.LoadedSprite :id=loadedsprite
+### LoadedSprite :id=loadedsprite
+
+<p class="smt-member-path"><code>sandkit.api.sprites.LoadedSprite</code></p>
 
 ```ts
 LoadedSprite = unknown
@@ -40,7 +44,9 @@ Loaded sprite handle (runtime texture or display object).
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.sprites.load() :id=load
+### load() :id=load
+
+<p class="smt-member-path"><code>sandkit.api.sprites.load()</code></p>
 
 ```ts
 load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
@@ -76,7 +82,9 @@ Optional tint and load options.
 
 ***
 
-### sandkit.api.sprites.loadFromMod() :id=loadfrommod
+### loadFromMod() :id=loadfrommod
+
+<p class="smt-member-path"><code>sandkit.api.sprites.loadFromMod()</code></p>
 
 ```ts
 loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions): Promise<void>
@@ -112,7 +120,9 @@ Optional tint and load options.
 
 ***
 
-### sandkit.api.sprites.getById() :id=getbyid
+### getById() :id=getbyid
+
+<p class="smt-member-path"><code>sandkit.api.sprites.getById()</code></p>
 
 ```ts
 getById(spriteId: string): unknown
@@ -136,7 +146,9 @@ Sprite id from [load](#load) or [loadFromMod](#loadfrommod).
 
 ***
 
-### sandkit.api.sprites.hideAllPlayerModSprites() :id=hideallplayermodsprites
+### hideAllPlayerModSprites() :id=hideallplayermodsprites
+
+<p class="smt-member-path"><code>sandkit.api.sprites.hideAllPlayerModSprites()</code></p>
 
 ```ts
 hideAllPlayerModSprites(): void
@@ -152,7 +164,9 @@ Hide all player mod-attached sprites.
 
 ***
 
-### sandkit.api.sprites.rotatePlayerModSprites() :id=rotateplayermodsprites
+### rotatePlayerModSprites() :id=rotateplayermodsprites
+
+<p class="smt-member-path"><code>sandkit.api.sprites.rotatePlayerModSprites()</code></p>
 
 ```ts
 rotatePlayerModSprites(angle: number): void

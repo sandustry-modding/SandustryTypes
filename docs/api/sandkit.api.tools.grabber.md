@@ -4,7 +4,9 @@ Grabber tool size and state.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.tools.grabber.setSize() :id=setsize
+### setSize() :id=setsize
+
+<p class="smt-member-path"><code>sandkit.api.tools.grabber.setSize()</code></p>
 
 ```ts
 setSize(size: number): void
@@ -28,7 +30,9 @@ Grab radius in cells.
 
 ***
 
-### sandkit.api.tools.grabber.getSize() :id=getsize
+### getSize() :id=getsize
+
+<p class="smt-member-path"><code>sandkit.api.tools.grabber.getSize()</code></p>
 
 ```ts
 getSize(): number
@@ -46,7 +50,9 @@ Grab radius in cells.
 
 ***
 
-### sandkit.api.tools.grabber.isActive() :id=isactive
+### isActive() :id=isactive
+
+<p class="smt-member-path"><code>sandkit.api.tools.grabber.isActive()</code></p>
 
 ```ts
 isActive(): boolean
@@ -64,7 +70,9 @@ True when the grabber is the active tool.
 
 ***
 
-### sandkit.api.tools.grabber.isLoaded() :id=isloaded
+### isLoaded() :id=isloaded
+
+<p class="smt-member-path"><code>sandkit.api.tools.grabber.isLoaded()</code></p>
 
 ```ts
 isLoaded(): boolean

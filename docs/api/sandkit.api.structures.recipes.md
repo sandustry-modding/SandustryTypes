@@ -4,7 +4,9 @@ Structure recipe registration by machine kind.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.structures.recipes.register() :id=register
+### register() :id=register
+
+<p class="smt-member-path"><code>sandkit.api.structures.recipes.register()</code></p>
 
 #### Call Signature
 
@@ -12,7 +14,7 @@ Structure recipe registration by machine kind.
 register(id: "planterBox", definition: PlanterBoxRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L159)
+Defined in: [sandkit/api/structures.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L246)
 
 Register a planter box recipe.
 
@@ -34,13 +36,17 @@ Grower recipe definition.
 
 `void`
 
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
+
 #### Call Signature
 
 ```ts
 register(id: "shaker", definition: ShakerRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L166)
+Defined in: [sandkit/api/structures.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L255)
 
 Register a shaker recipe.
 
@@ -62,13 +68,17 @@ Shaker recipe definition.
 
 `void`
 
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
+
 #### Call Signature
 
 ```ts
 register(id: "kineticPress", definition: KineticPressRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L173)
+Defined in: [sandkit/api/structures.d.ts:264](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L264)
 
 Register a kinetic press recipe.
 
@@ -90,13 +100,17 @@ Kinetic press recipe definition.
 
 `void`
 
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
+
 #### Call Signature
 
 ```ts
 register(id: "condenser" | "steamDryer" | "synthesizer" | "snowmaker" | "smelter", definition: WeightedRefineryRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L180)
+Defined in: [sandkit/api/structures.d.ts:273](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L273)
 
 Register a weighted refinery machine recipe.
 
@@ -117,3 +131,7 @@ Weighted input/output recipe.
 ##### Returns
 
 `void`
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`

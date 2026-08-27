@@ -1,45 +1,47 @@
 # sandkit.enums.WorldItemType
 
-Defined in: [sandkit/enums/index.d.ts:413](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L413)
+Defined in: [sandkit/enums/index.d.ts:423](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L423)
 
-Pickups and interactable world items.
+## Deprecated
+
+Use [PickupType](api/sandkit.enums.PickupType.md) instead.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.WorldItemType.Artifact :id=artifact
+### ~~Artifact~~
 
 ```ts
 Artifact: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:414](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L414)
+Defined in: [sandkit/enums/index.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L424)
 
 ***
 
-### sandkit.enums.WorldItemType.GlyphKey :id=glyphkey
+### ~~GlyphKey~~
 
 ```ts
 GlyphKey: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:415](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L415)
+Defined in: [sandkit/enums/index.d.ts:425](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L425)
 
 ***
 
-### sandkit.enums.WorldItemType.Stratacore :id=stratacore
+### ~~Stratacore~~
 
 ```ts
 Stratacore: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:416](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L416)
+Defined in: [sandkit/enums/index.d.ts:426](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L426)
 
 ***
 
-### sandkit.enums.WorldItemType.Orb :id=orb
+### ~~Orb~~
 
 ```ts
 Orb: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L417)
+Defined in: [sandkit/enums/index.d.ts:427](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L427)

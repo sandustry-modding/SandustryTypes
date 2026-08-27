@@ -2,7 +2,9 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### shared.engine.EngineFn :id=enginefn
+### EngineFn :id=enginefn
+
+<p class="smt-member-path"><code>shared.engine.EngineFn</code></p>
 
 ```ts
 EngineFn = (...args: unknown[]) => unknown
@@ -26,7 +28,9 @@ Stub for an unresolved engine method.
 
 ***
 
-### shared.engine.EngineOverlapNs :id=engineoverlapns
+### EngineOverlapNs :id=engineoverlapns
+
+<p class="smt-member-path"><code>shared.engine.EngineOverlapNs</code></p>
 
 ```ts
 EngineOverlapNs = Record<string, EngineFn | Record<string, unknown> | unknown>

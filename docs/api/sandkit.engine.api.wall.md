@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.wall.getPaletteData() :id=getpalettedata
+### getPaletteData() :id=getpalettedata
+
+<p class="smt-member-path"><code>sandkit.engine.api.wall.getPaletteData()</code></p>
 
 ```ts
 getPaletteData(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.wall.getWallDataAt() :id=getwalldataat
+### getWallDataAt() :id=getwalldataat
+
+<p class="smt-member-path"><code>sandkit.engine.api.wall.getWallDataAt()</code></p>
 
 ```ts
 getWallDataAt(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.wall.getWallDataSize() :id=getwalldatasize
+### getWallDataSize() :id=getwalldatasize
+
+<p class="smt-member-path"><code>sandkit.engine.api.wall.getWallDataSize()</code></p>
 
 ```ts
 getWallDataSize(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.wall.setWallDataAt() :id=setwalldataat
+### setWallDataAt() :id=setwalldataat
+
+<p class="smt-member-path"><code>sandkit.engine.api.wall.setWallDataAt()</code></p>
 
 ```ts
 setWallDataAt(...args: unknown[]): unknown

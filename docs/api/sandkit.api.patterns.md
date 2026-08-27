@@ -2,7 +2,9 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.patterns.PatternExcavateOptions :id=patternexcavateoptions
+### PatternExcavateOptions :id=patternexcavateoptions
+
+<p class="smt-member-path"><code>sandkit.api.patterns.PatternExcavateOptions</code></p>
 
 ```ts
 PatternExcavateOptions = ExcavateOptions
@@ -10,11 +12,13 @@ PatternExcavateOptions = ExcavateOptions
 
 Defined in: [sandkit/api/patterns.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/patterns.d.ts#L31)
 
-Options for pattern-based excavation. Same shape as [shared.api.world.ExcavateOptions](api/sandkit.api.world.worker.md#excavateoptions).
+Options for pattern-based excavation. Same shape as [shared.api.world.ExcavateOptions](api/sandkit.api.grid.md#excavateoptions).
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.patterns.createCircle() :id=createcircle
+### createCircle() :id=createcircle
+
+<p class="smt-member-path"><code>sandkit.api.patterns.createCircle()</code></p>
 
 ```ts
 createCircle(size: number): number[][]
@@ -40,7 +44,9 @@ Square matrix with `1` inside the circle and `0` outside.
 
 ***
 
-### sandkit.api.patterns.excavateAtCell() :id=excavateatcell
+### excavateAtCell() :id=excavateatcell
+
+<p class="smt-member-path"><code>sandkit.api.patterns.excavateAtCell()</code></p>
 
 ```ts
 excavateAtCell(...args: [number, number, number[][], Vector2, number, ExcavateOptions]): void
@@ -54,7 +60,7 @@ Excavate at a cell using a pattern matrix and output velocity.
 
 ##### args
 
-...\[`number`, `number`, `number`[][], [`Vector2`](api/shared.player.md#vector2), `number`, [`ExcavateOptions`](api/sandkit.api.world.worker.md#excavateoptions)\]
+...\[`number`, `number`, `number`[][], [`Vector2`](api/shared.player.md#vector2), `number`, [`ExcavateOptions`](api/sandkit.api.grid.md#excavateoptions)\]
 
 #### Returns
 

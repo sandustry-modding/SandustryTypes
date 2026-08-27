@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.conveyors.registerType() :id=registertype
+### registerType() :id=registertype
+
+<p class="smt-member-path"><code>sandkit.engine.api.conveyors.registerType()</code></p>
 
 ```ts
 registerType(...args: unknown[]): unknown

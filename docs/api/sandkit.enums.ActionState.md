@@ -6,7 +6,9 @@ Phases of a held or repeated player action.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.ActionState.Start :id=start
+### Start :id=start
+
+<p class="smt-member-path"><code>sandkit.enums.ActionState.Start</code></p>
 
 ```ts
 Start: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:18](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.ActionState.Active :id=active
+### Active :id=active
+
+<p class="smt-member-path"><code>sandkit.enums.ActionState.Active</code></p>
 
 ```ts
 Active: 2
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:19](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.ActionState.End :id=end
+### End :id=end
+
+<p class="smt-member-path"><code>sandkit.enums.ActionState.End</code></p>
 
 ```ts
 End: 3

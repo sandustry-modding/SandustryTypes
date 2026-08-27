@@ -9,7 +9,9 @@ Available on worker threads only. Values do not persist across workers.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.workerLocal.clear() :id=clear
+### clear() :id=clear
+
+<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.clear()</code></p>
 
 ```ts
 clear(...args: unknown[]): unknown
@@ -33,7 +35,9 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 ***
 
-### sandkit.engine.api.workerLocal.get() :id=get
+### get() :id=get
+
+<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.get()</code></p>
 
 ```ts
 get(...args: unknown[]): unknown
@@ -57,7 +61,9 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 ***
 
-### sandkit.engine.api.workerLocal.getOrInit() :id=getorinit
+### getOrInit() :id=getorinit
+
+<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.getOrInit()</code></p>
 
 ```ts
 getOrInit(...args: unknown[]): unknown
@@ -81,7 +87,9 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 ***
 
-### sandkit.engine.api.workerLocal.set() :id=set
+### set() :id=set
+
+<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.set()</code></p>
 
 ```ts
 set(...args: unknown[]): unknown

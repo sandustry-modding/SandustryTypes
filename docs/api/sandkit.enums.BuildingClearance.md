@@ -6,7 +6,9 @@ Result of a build placement check.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.BuildingClearance.Available :id=available
+### Available :id=available
+
+<p class="smt-member-path"><code>sandkit.enums.BuildingClearance.Available</code></p>
 
 ```ts
 Available: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:49](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.BuildingClearance.FullyBlocked :id=fullyblocked
+### FullyBlocked :id=fullyblocked
+
+<p class="smt-member-path"><code>sandkit.enums.BuildingClearance.FullyBlocked</code></p>
 
 ```ts
 FullyBlocked: 2
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:50](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.BuildingClearance.PartiallyBlocked :id=partiallyblocked
+### PartiallyBlocked :id=partiallyblocked
+
+<p class="smt-member-path"><code>sandkit.enums.BuildingClearance.PartiallyBlocked</code></p>
 
 ```ts
 PartiallyBlocked: 3
@@ -36,7 +42,9 @@ Defined in: [sandkit/enums/index.d.ts:51](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.BuildingClearance.CanBeReplaced :id=canbereplaced
+### CanBeReplaced :id=canbereplaced
+
+<p class="smt-member-path"><code>sandkit.enums.BuildingClearance.CanBeReplaced</code></p>
 
 ```ts
 CanBeReplaced: 4

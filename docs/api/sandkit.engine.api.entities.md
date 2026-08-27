@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.entities.createLight() :id=createlight
+### createLight() :id=createlight
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.createLight()</code></p>
 
 ```ts
 createLight(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.entities.getAll() :id=getall
+### getAll() :id=getall
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.getAll()</code></p>
 
 ```ts
 getAll(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.entities.getAllByType() :id=getallbytype
+### getAllByType() :id=getallbytype
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.getAllByType()</code></p>
 
 ```ts
 getAllByType(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.entities.getAllTypeDefs() :id=getalltypedefs
+### getAllTypeDefs() :id=getalltypedefs
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.getAllTypeDefs()</code></p>
 
 ```ts
 getAllTypeDefs(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.entities.getSprite() :id=getsprite
+### getSprite() :id=getsprite
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.getSprite()</code></p>
 
 ```ts
 getSprite(...args: unknown[]): unknown
@@ -130,7 +140,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.entities.getTypeDef() :id=gettypedef
+### getTypeDef() :id=gettypedef
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.getTypeDef()</code></p>
 
 ```ts
 getTypeDef(...args: unknown[]): unknown
@@ -154,7 +166,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.entities.launch() :id=launch
+### launch() :id=launch
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.launch()</code></p>
 
 ```ts
 launch(...args: unknown[]): unknown
@@ -178,7 +192,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.entities.registerSpawner() :id=registerspawner
+### registerSpawner() :id=registerspawner
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.registerSpawner()</code></p>
 
 ```ts
 registerSpawner(...args: unknown[]): unknown
@@ -202,7 +218,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.entities.registerType() :id=registertype
+### registerType() :id=registertype
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.registerType()</code></p>
 
 ```ts
 registerType(...args: unknown[]): unknown
@@ -226,7 +244,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.entities.spawn() :id=spawn
+### spawn() :id=spawn
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.spawn()</code></p>
 
 ```ts
 spawn(...args: unknown[]): unknown
@@ -250,7 +270,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.entities.startCapture() :id=startcapture
+### startCapture() :id=startcapture
+
+<p class="smt-member-path"><code>sandkit.engine.api.entities.startCapture()</code></p>
 
 ```ts
 startCapture(...args: unknown[]): unknown

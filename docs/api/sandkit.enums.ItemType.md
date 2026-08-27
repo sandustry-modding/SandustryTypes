@@ -6,7 +6,9 @@ Item category (weapon, tool, consumable, mod).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.ItemType.Weapon :id=weapon
+### Weapon :id=weapon
+
+<p class="smt-member-path"><code>sandkit.enums.ItemType.Weapon</code></p>
 
 ```ts
 Weapon: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:174](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ItemType.Tool :id=tool
+### Tool :id=tool
+
+<p class="smt-member-path"><code>sandkit.enums.ItemType.Tool</code></p>
 
 ```ts
 Tool: 2
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:175](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ItemType.Consumable :id=consumable
+### Consumable :id=consumable
+
+<p class="smt-member-path"><code>sandkit.enums.ItemType.Consumable</code></p>
 
 ```ts
 Consumable: 3
@@ -36,7 +42,9 @@ Defined in: [sandkit/enums/index.d.ts:176](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ItemType.Mod :id=mod
+### Mod :id=mod
+
+<p class="smt-member-path"><code>sandkit.enums.ItemType.Mod</code></p>
 
 ```ts
 Mod: 4

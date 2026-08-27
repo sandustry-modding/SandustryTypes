@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.blueprints.delete() :id=delete
+### delete() :id=delete
+
+<p class="smt-member-path"><code>sandkit.engine.api.blueprints.delete()</code></p>
 
 ```ts
 delete(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.blueprints.exportAllString() :id=exportallstring
+### exportAllString() :id=exportallstring
+
+<p class="smt-member-path"><code>sandkit.engine.api.blueprints.exportAllString()</code></p>
 
 ```ts
 exportAllString(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.blueprints.exportString() :id=exportstring
+### exportString() :id=exportstring
+
+<p class="smt-member-path"><code>sandkit.engine.api.blueprints.exportString()</code></p>
 
 ```ts
 exportString(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.blueprints.getAll() :id=getall
+### getAll() :id=getall
+
+<p class="smt-member-path"><code>sandkit.engine.api.blueprints.getAll()</code></p>
 
 ```ts
 getAll(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.blueprints.importString() :id=importstring
+### importString() :id=importstring
+
+<p class="smt-member-path"><code>sandkit.engine.api.blueprints.importString()</code></p>
 
 ```ts
 importString(...args: unknown[]): unknown
@@ -130,7 +140,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.blueprints.load() :id=load
+### load() :id=load
+
+<p class="smt-member-path"><code>sandkit.engine.api.blueprints.load()</code></p>
 
 ```ts
 load(...args: unknown[]): unknown
@@ -154,7 +166,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.blueprints.save() :id=save
+### save() :id=save
+
+<p class="smt-member-path"><code>sandkit.engine.api.blueprints.save()</code></p>
 
 ```ts
 save(...args: unknown[]): unknown

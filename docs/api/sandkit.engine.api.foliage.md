@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.foliage.generate() :id=generate
+### generate() :id=generate
+
+<p class="smt-member-path"><code>sandkit.engine.api.foliage.generate()</code></p>
 
 ```ts
 generate(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.foliage.getClusters() :id=getclusters
+### getClusters() :id=getclusters
+
+<p class="smt-member-path"><code>sandkit.engine.api.foliage.getClusters()</code></p>
 
 ```ts
 getClusters(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.foliage.getContainer() :id=getcontainer
+### getContainer() :id=getcontainer
+
+<p class="smt-member-path"><code>sandkit.engine.api.foliage.getContainer()</code></p>
 
 ```ts
 getContainer(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.foliage.hasProcgenData() :id=hasprocgendata
+### hasProcgenData() :id=hasprocgendata
+
+<p class="smt-member-path"><code>sandkit.engine.api.foliage.hasProcgenData()</code></p>
 
 ```ts
 hasProcgenData(...args: unknown[]): unknown

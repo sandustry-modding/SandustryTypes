@@ -10,7 +10,9 @@ Main thread adds richer UI APIs on top of this shape.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.ui.I18nTextKey (worker) :id=i18ntextkey
+### I18nTextKey :id=i18ntextkey
+
+<p class="smt-member-path"><code>sandkit.api.ui.I18nTextKey (worker)</code></p>
 
 Defined in: [shared/api/ui.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L23)
 
@@ -40,7 +42,9 @@ Values merged into the translated string.
 
 ***
 
-### sandkit.api.ui.I18nTranslatable (worker) :id=i18ntranslatable
+### I18nTranslatable :id=i18ntranslatable
+
+<p class="smt-member-path"><code>sandkit.api.ui.I18nTranslatable (worker)</code></p>
 
 Defined in: [shared/api/ui.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L31)
 
@@ -74,7 +78,9 @@ Defined in: [shared/api/ui.d.ts:34](https://github.com/sandustry-modding/Sandust
 
 ***
 
-### sandkit.api.ui.ToastOptions (worker) :id=toastoptions
+### ToastOptions :id=toastoptions
+
+<p class="smt-member-path"><code>sandkit.api.ui.ToastOptions (worker)</code></p>
 
 Defined in: [shared/api/ui.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/ui.d.ts#L38)
 
@@ -126,7 +132,9 @@ Visual style applied to the toast body.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.ui.LocalizedText (worker) :id=localizedtext
+### LocalizedText :id=localizedtext
+
+<p class="smt-member-path"><code>sandkit.api.ui.LocalizedText (worker)</code></p>
 
 ```ts
 LocalizedText = string | I18nTextKey | I18nTranslatable
@@ -138,7 +146,9 @@ Plain text, translation key object, or i18n translatable value.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.ui.toast() (worker) :id=toast
+### toast() :id=toast
+
+<p class="smt-member-path"><code>sandkit.api.ui.toast() (worker)</code></p>
 
 ```ts
 toast(message: LocalizedText, options?: ToastOptions): void

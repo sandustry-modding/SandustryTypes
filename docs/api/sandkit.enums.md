@@ -23,17 +23,20 @@
 - [StructureType](api/sandkit.enums.StructureType.md)
 - [Tech](api/sandkit.enums.Tech.md)
 - [TechStatus](api/sandkit.enums.TechStatus.md)
-- [WorldItemType](api/sandkit.enums.WorldItemType.md)
+- [PickupType](api/sandkit.enums.PickupType.md)
+- [~~WorldItemType~~](api/sandkit.enums.WorldItemType.md)
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.enums.SandkitEnums :id=sandkitenums
+### SandkitEnums :id=sandkitenums
+
+<p class="smt-member-path"><code>sandkit.enums.SandkitEnums</code></p>
 
 ```ts
 SandkitEnums = object
 ```
 
-Defined in: [sandkit/enums/index.d.ts:421](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L421)
+Defined in: [sandkit/enums/index.d.ts:431](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L431)
 
 Composed `sandkit.enums` object.
 
@@ -45,7 +48,7 @@ Composed `sandkit.enums` object.
 AbilityType: *typeof* AbilityType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:422](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L422)
+Defined in: [sandkit/enums/index.d.ts:432](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L432)
 
 ##### ActionState
 
@@ -53,7 +56,7 @@ Defined in: [sandkit/enums/index.d.ts:422](https://github.com/sandustry-modding/
 ActionState: *typeof* ActionState
 ```
 
-Defined in: [sandkit/enums/index.d.ts:423](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L423)
+Defined in: [sandkit/enums/index.d.ts:433](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L433)
 
 ##### ActionType
 
@@ -61,7 +64,7 @@ Defined in: [sandkit/enums/index.d.ts:423](https://github.com/sandustry-modding/
 ActionType: *typeof* ActionType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L424)
+Defined in: [sandkit/enums/index.d.ts:434](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L434)
 
 ##### AuthorizationType
 
@@ -69,7 +72,7 @@ Defined in: [sandkit/enums/index.d.ts:424](https://github.com/sandustry-modding/
 AuthorizationType: *typeof* AuthorizationType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:425](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L425)
+Defined in: [sandkit/enums/index.d.ts:435](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L435)
 
 ##### BuildMode
 
@@ -77,7 +80,7 @@ Defined in: [sandkit/enums/index.d.ts:425](https://github.com/sandustry-modding/
 BuildMode: *typeof* BuildMode
 ```
 
-Defined in: [sandkit/enums/index.d.ts:426](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L426)
+Defined in: [sandkit/enums/index.d.ts:436](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L436)
 
 ##### BuildingClearance
 
@@ -85,7 +88,7 @@ Defined in: [sandkit/enums/index.d.ts:426](https://github.com/sandustry-modding/
 BuildingClearance: *typeof* BuildingClearance
 ```
 
-Defined in: [sandkit/enums/index.d.ts:427](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L427)
+Defined in: [sandkit/enums/index.d.ts:437](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L437)
 
 ##### CellType
 
@@ -93,7 +96,7 @@ Defined in: [sandkit/enums/index.d.ts:427](https://github.com/sandustry-modding/
 CellType: *typeof* CellType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:428](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L428)
+Defined in: [sandkit/enums/index.d.ts:438](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L438)
 
 ##### ComponentId
 
@@ -101,7 +104,7 @@ Defined in: [sandkit/enums/index.d.ts:428](https://github.com/sandustry-modding/
 ComponentId: *typeof* ComponentId
 ```
 
-Defined in: [sandkit/enums/index.d.ts:429](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L429)
+Defined in: [sandkit/enums/index.d.ts:439](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L439)
 
 ##### DroneType
 
@@ -109,7 +112,7 @@ Defined in: [sandkit/enums/index.d.ts:429](https://github.com/sandustry-modding/
 DroneType: *typeof* DroneType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:430](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L430)
+Defined in: [sandkit/enums/index.d.ts:440](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L440)
 
 ##### ElementType
 
@@ -117,7 +120,7 @@ Defined in: [sandkit/enums/index.d.ts:430](https://github.com/sandustry-modding/
 ElementType: *typeof* ElementType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:431](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L431)
+Defined in: [sandkit/enums/index.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L441)
 
 ##### ItemId
 
@@ -125,7 +128,7 @@ Defined in: [sandkit/enums/index.d.ts:431](https://github.com/sandustry-modding/
 ItemId: *typeof* ItemId
 ```
 
-Defined in: [sandkit/enums/index.d.ts:432](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L432)
+Defined in: [sandkit/enums/index.d.ts:442](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L442)
 
 ##### ItemType
 
@@ -133,7 +136,7 @@ Defined in: [sandkit/enums/index.d.ts:432](https://github.com/sandustry-modding/
 ItemType: *typeof* ItemType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:433](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L433)
+Defined in: [sandkit/enums/index.d.ts:443](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L443)
 
 ##### KeyBinding
 
@@ -141,7 +144,7 @@ Defined in: [sandkit/enums/index.d.ts:433](https://github.com/sandustry-modding/
 KeyBinding: *typeof* KeyBinding
 ```
 
-Defined in: [sandkit/enums/index.d.ts:434](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L434)
+Defined in: [sandkit/enums/index.d.ts:444](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L444)
 
 ##### KeyState
 
@@ -149,7 +152,7 @@ Defined in: [sandkit/enums/index.d.ts:434](https://github.com/sandustry-modding/
 KeyState: *typeof* KeyState
 ```
 
-Defined in: [sandkit/enums/index.d.ts:435](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L435)
+Defined in: [sandkit/enums/index.d.ts:445](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L445)
 
 ##### MatterType
 
@@ -157,7 +160,7 @@ Defined in: [sandkit/enums/index.d.ts:435](https://github.com/sandustry-modding/
 MatterType: *typeof* MatterType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:436](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L436)
+Defined in: [sandkit/enums/index.d.ts:446](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L446)
 
 ##### ProjectileType
 
@@ -165,7 +168,7 @@ Defined in: [sandkit/enums/index.d.ts:436](https://github.com/sandustry-modding/
 ProjectileType: *typeof* ProjectileType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:437](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L437)
+Defined in: [sandkit/enums/index.d.ts:447](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L447)
 
 ##### ReloadType
 
@@ -173,7 +176,7 @@ Defined in: [sandkit/enums/index.d.ts:437](https://github.com/sandustry-modding/
 ReloadType: *typeof* ReloadType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:438](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L438)
+Defined in: [sandkit/enums/index.d.ts:448](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L448)
 
 ##### Scene
 
@@ -181,7 +184,7 @@ Defined in: [sandkit/enums/index.d.ts:438](https://github.com/sandustry-modding/
 Scene: *typeof* Scene
 ```
 
-Defined in: [sandkit/enums/index.d.ts:439](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L439)
+Defined in: [sandkit/enums/index.d.ts:449](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L449)
 
 ##### StructureType
 
@@ -189,7 +192,7 @@ Defined in: [sandkit/enums/index.d.ts:439](https://github.com/sandustry-modding/
 StructureType: *typeof* StructureType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:440](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L440)
+Defined in: [sandkit/enums/index.d.ts:450](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L450)
 
 ##### Tech
 
@@ -197,7 +200,7 @@ Defined in: [sandkit/enums/index.d.ts:440](https://github.com/sandustry-modding/
 Tech: *typeof* Tech
 ```
 
-Defined in: [sandkit/enums/index.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L441)
+Defined in: [sandkit/enums/index.d.ts:451](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L451)
 
 ##### TechStatus
 
@@ -205,12 +208,24 @@ Defined in: [sandkit/enums/index.d.ts:441](https://github.com/sandustry-modding/
 TechStatus: *typeof* TechStatus
 ```
 
-Defined in: [sandkit/enums/index.d.ts:442](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L442)
+Defined in: [sandkit/enums/index.d.ts:452](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L452)
 
-##### WorldItemType
+##### PickupType
+
+```ts
+PickupType: *typeof* PickupType
+```
+
+Defined in: [sandkit/enums/index.d.ts:453](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L453)
+
+##### ~~WorldItemType~~
 
 ```ts
 WorldItemType: *typeof* WorldItemType
 ```
 
-Defined in: [sandkit/enums/index.d.ts:443](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L443)
+Defined in: [sandkit/enums/index.d.ts:457](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/enums/index.d.ts#L457)
+
+###### Deprecated
+
+Use [PickupType](api/sandkit.enums.PickupType.md) instead.

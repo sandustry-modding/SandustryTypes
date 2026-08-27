@@ -2,7 +2,9 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.random.int() :id=int
+### int() :id=int
+
+<p class="smt-member-path"><code>sandkit.api.random.int()</code></p>
 
 ```ts
 int(min: number, max: number): number
@@ -32,7 +34,9 @@ Maximum value (inclusive).
 
 ***
 
-### sandkit.api.random.float() :id=float
+### float() :id=float
+
+<p class="smt-member-path"><code>sandkit.api.random.float()</code></p>
 
 ```ts
 float(min: number, max: number): number

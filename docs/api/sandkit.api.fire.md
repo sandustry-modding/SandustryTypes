@@ -3,15 +3,21 @@
 `sandkit.api.fire` — ignite and burn elements at grid cells.
 Main thread only.
 
+## See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fire`
+
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.fire.canBurnElementAtCell() :id=canburnelementatcell
+### canBurnElementAtCell() :id=canburnelementatcell
+
+<p class="smt-member-path"><code>sandkit.api.fire.canBurnElementAtCell()</code></p>
 
 ```ts
 canBurnElementAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/fire.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L13)
+Defined in: [sandkit/api/fire.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L17)
 
 Returns true when the element at the cell can burn.
 
@@ -25,17 +31,23 @@ Returns true when the element at the cell can burn.
 
 `boolean`
 
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fire.canBurnElementAtCell`
+
 ***
 
-### sandkit.api.fire.burnElementAtCellWhenIdle() :id=burnelementatcellwhenidle
+### burnElementAtCell() :id=burnelementatcell
+
+<p class="smt-member-path"><code>sandkit.api.fire.burnElementAtCell()</code></p>
 
 ```ts
-burnElementAtCellWhenIdle(...args: CellCoordinates): void
+burnElementAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/fire.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L19)
+Defined in: [sandkit/api/fire.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L26)
 
-Queues a burn at the cell when the simulation is idle.
+Burn the element at the cell. Main-entry writes are deferred; reads see the old grid.
 
 #### Parameters
 
@@ -47,17 +59,19 @@ Queues a burn at the cell when the simulation is idle.
 
 `void`
 
+#### See
+
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.fire.burnElementAtCell`
+
 ***
 
-### sandkit.api.fire.burnElementAtCell() :id=burnelementatcell
+### ~~burnElementAtCellWhenIdle()~~
 
 ```ts
-burnElementAtCell(...args: CellCoordinates): boolean
+burnElementAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/fire.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L25)
-
-Burns the element at the cell immediately. Returns true on success.
+Defined in: [sandkit/api/fire.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/fire.d.ts#L32)
 
 #### Parameters
 
@@ -67,4 +81,12 @@ Burns the element at the cell immediately. Returns true on success.
 
 #### Returns
 
-`boolean`
+`void`
+
+#### Deprecated
+
+Use [burnElementAtCell](#burnelementatcell) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.fire.burnElementAtCell`

@@ -5,7 +5,9 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.collector.getValueFromCellId() :id=getvaluefromcellid
+### getValueFromCellId() :id=getvaluefromcellid
+
+<p class="smt-member-path"><code>sandkit.api.collector.getValueFromCellId()</code></p>
 
 ```ts
 getValueFromCellId(cellId: CellId): number
@@ -29,7 +31,9 @@ Packed cell identifier.
 
 ***
 
-### sandkit.api.collector.getValueByType() :id=getvaluebytype
+### getValueByType() :id=getvaluebytype
+
+<p class="smt-member-path"><code>sandkit.api.collector.getValueByType()</code></p>
 
 ```ts
 getValueByType(elementType: ElementType): number
@@ -53,7 +57,9 @@ Numeric element type id.
 
 ***
 
-### sandkit.api.collector.isCellIdCollectable() :id=iscellidcollectable
+### isCellIdCollectable() :id=iscellidcollectable
+
+<p class="smt-member-path"><code>sandkit.api.collector.isCellIdCollectable()</code></p>
 
 ```ts
 isCellIdCollectable(cellId: CellId): boolean
@@ -77,7 +83,9 @@ Packed cell identifier.
 
 ***
 
-### sandkit.api.collector.isCellIdCollectableForSprite() :id=iscellidcollectableforsprite
+### isCellIdCollectableForSprite() :id=iscellidcollectableforsprite
+
+<p class="smt-member-path"><code>sandkit.api.collector.isCellIdCollectableForSprite()</code></p>
 
 ```ts
 isCellIdCollectableForSprite(cellId: CellId): boolean
@@ -101,7 +109,9 @@ Packed cell identifier.
 
 ***
 
-### sandkit.api.collector.notifyPickupAtCell() :id=notifypickupatcell
+### notifyPickupAtCell() :id=notifypickupatcell
+
+<p class="smt-member-path"><code>sandkit.api.collector.notifyPickupAtCell()</code></p>
 
 ```ts
 notifyPickupAtCell(...args: CellCoordinates): void

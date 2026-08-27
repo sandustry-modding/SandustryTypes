@@ -4,7 +4,9 @@ Overlay slot registration and updates.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.ui.overlays.register() :id=register
+### register() :id=register
+
+<p class="smt-member-path"><code>sandkit.api.ui.overlays.register()</code></p>
 
 ```ts
 register(slot: OverlaySlot, overlayId: string, render: () => ReactNode): void
@@ -40,7 +42,9 @@ Function that returns React content.
 
 ***
 
-### sandkit.api.ui.overlays.unregister() :id=unregister
+### unregister() :id=unregister
+
+<p class="smt-member-path"><code>sandkit.api.ui.overlays.unregister()</code></p>
 
 ```ts
 unregister(slot: OverlaySlot, overlayId: string): void
@@ -70,7 +74,9 @@ Overlay id passed to [register](#register).
 
 ***
 
-### sandkit.api.ui.overlays.update() :id=update
+### update() :id=update
+
+<p class="smt-member-path"><code>sandkit.api.ui.overlays.update()</code></p>
 
 ```ts
 update(slot: OverlaySlot): void

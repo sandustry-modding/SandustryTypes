@@ -11,7 +11,9 @@ main-thread APIs.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.worker.getIndex() (worker) :id=getindex
+### getIndex() :id=getindex
+
+<p class="smt-member-path"><code>sandkit.api.worker.getIndex() (worker)</code></p>
 
 ```ts
 getIndex(): number
@@ -29,7 +31,9 @@ Worker index (`0` … `getCount() - 1`).
 
 ***
 
-### sandkit.api.worker.getCount() (worker) :id=getcount
+### getCount() :id=getcount
+
+<p class="smt-member-path"><code>sandkit.api.worker.getCount() (worker)</code></p>
 
 ```ts
 getCount(): number

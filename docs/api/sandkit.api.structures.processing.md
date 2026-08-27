@@ -4,13 +4,15 @@ Per-structure processing enablement and registration.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.structures.processing.register() :id=register
+### register() :id=register
+
+<p class="smt-member-path"><code>sandkit.api.structures.processing.register()</code></p>
 
 ```ts
 register(id: string & object, definition: StructureProcessingDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L193)
+Defined in: [sandkit/api/structures.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L294)
 
 Register a custom processing definition by id.
 
@@ -32,15 +34,21 @@ Structure type, interval, and callback.
 
 `void`
 
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
+
 ***
 
-### sandkit.api.structures.processing.setEnabledAt() :id=setenabledat
+### setEnabledAtCell() :id=setenabledatcell
+
+<p class="smt-member-path"><code>sandkit.api.structures.processing.setEnabledAtCell()</code></p>
 
 ```ts
-setEnabledAt(...args: [number, number, boolean]): boolean
+setEnabledAtCell(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L202)
+Defined in: [sandkit/api/structures.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L305)
 
 Enable or disable processing at a cell.
 
@@ -56,8 +64,50 @@ Enable or disable processing at a cell.
 
 True when the enabled state changed.
 
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.setEnabledAtCell`
+
+***
+
+### ~~setEnabledAt()~~
+
+```ts
+setEnabledAt(...args: [number, number, boolean]): boolean
+```
+
+Defined in: [sandkit/api/structures.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/structures.d.ts#L311)
+
+#### Parameters
+
+##### args
+
+...\[`number`, `number`, `boolean`\]
+
+#### Returns
+
+`boolean`
+
+#### Deprecated
+
+Use [setEnabledAtCell](#setenabledatcell) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.processing.setEnabledAtCell`
+
 ## References <!-- {docsify-ignore} -->
 
-### sandkit.api.structures.processing.isEnabledAt :id=isenabledat
+### isEnabledAtCell :id=isenabledatcell
+
+<p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAtCell</code></p>
+
+Re-exports [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md#isenabledatcell)
+
+***
+
+### isEnabledAt :id=isenabledat
+
+<p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAt</code></p>
 
 Re-exports [isEnabledAt](api/sandkit.api.structures.processing.worker.md#isenabledat)

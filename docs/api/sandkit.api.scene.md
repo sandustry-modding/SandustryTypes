@@ -2,7 +2,9 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.scene.getActive() :id=getactive
+### getActive() :id=getactive
+
+<p class="smt-member-path"><code>sandkit.api.scene.getActive()</code></p>
 
 ```ts
 getActive(): Scene
@@ -18,6 +20,8 @@ Return the active scene.
 
 ## References <!-- {docsify-ignore} -->
 
-### sandkit.api.scene.Scene :id=scene
+### Scene :id=scene
+
+<p class="smt-member-path"><code>sandkit.api.scene.Scene</code></p>
 
 Re-exports [Scene](api/sandkit.enums.Scene.md)

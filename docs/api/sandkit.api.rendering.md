@@ -2,7 +2,9 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.rendering.getDrawPositionAtCell() :id=getdrawpositionatcell
+### getDrawPositionAtCell() :id=getdrawpositionatcell
+
+<p class="smt-member-path"><code>sandkit.api.rendering.getDrawPositionAtCell()</code></p>
 
 ```ts
 getDrawPositionAtCell(...args: CellCoordinates): Vector2
@@ -24,13 +26,51 @@ Return screen draw position for a grid cell.
 
 ***
 
-### sandkit.api.rendering.getGridMetrics() :id=getgridmetrics
+### getDrawPositionAtWorld() :id=getdrawpositionatworld
+
+<p class="smt-member-path"><code>sandkit.api.rendering.getDrawPositionAtWorld()</code></p>
+
+```ts
+getDrawPositionAtWorld(worldX: number, worldY: number): Vector2
+```
+
+Defined in: [sandkit/api/rendering.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L24)
+
+Return screen draw position for a world-space point.
+
+#### Parameters
+
+##### worldX
+
+`number`
+
+World x position in pixels.
+
+##### worldY
+
+`number`
+
+World y position in pixels.
+
+#### Returns
+
+[`Vector2`](api/shared.player.md#vector2)
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.rendering.getDrawPositionAtWorld`
+
+***
+
+### getGridMetrics() :id=getgridmetrics
+
+<p class="smt-member-path"><code>sandkit.api.rendering.getGridMetrics()</code></p>
 
 ```ts
 getGridMetrics(): object
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L18)
+Defined in: [sandkit/api/rendering.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L26)
 
 Return cell size and snap grid metrics.
 
@@ -52,13 +92,15 @@ snapGridCellSize: number
 
 ***
 
-### sandkit.api.rendering.getOverlayViewportSize() :id=getoverlayviewportsize
+### getOverlayViewportSize() :id=getoverlayviewportsize
+
+<p class="smt-member-path"><code>sandkit.api.rendering.getOverlayViewportSize()</code></p>
 
 ```ts
 getOverlayViewportSize(): object
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L20)
+Defined in: [sandkit/api/rendering.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L28)
 
 Return overlay viewport width and height in pixels.
 
@@ -80,13 +122,15 @@ height: number
 
 ***
 
-### sandkit.api.rendering.withOverlayContext() :id=withoverlaycontext
+### withOverlayContext() :id=withoverlaycontext
+
+<p class="smt-member-path"><code>sandkit.api.rendering.withOverlayContext()</code></p>
 
 ```ts
 withOverlayContext<T>(callback: (context: CanvasRenderingContext2D) => T): T
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L25)
+Defined in: [sandkit/api/rendering.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/rendering.d.ts#L33)
 
 Run a callback with the overlay canvas context.
 

@@ -5,7 +5,9 @@ Main thread only.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.energy.EnergyRegisterTypeOptions :id=energyregistertypeoptions
+### EnergyRegisterTypeOptions :id=energyregistertypeoptions
+
+<p class="smt-member-path"><code>sandkit.api.energy.EnergyRegisterTypeOptions</code></p>
 
 Defined in: [sandkit/api/energy.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L56)
 
@@ -41,7 +43,9 @@ Energy type id when multiple networks exist.
 
 ***
 
-### sandkit.api.energy.EnergyAddOptions :id=energyaddoptions
+### EnergyAddOptions :id=energyaddoptions
+
+<p class="smt-member-path"><code>sandkit.api.energy.EnergyAddOptions</code></p>
 
 Defined in: [sandkit/api/energy.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/energy.d.ts#L65)
 
@@ -67,7 +71,9 @@ Energy type id when multiple networks exist.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.energy.registerType() :id=registertype
+### registerType() :id=registertype
+
+<p class="smt-member-path"><code>sandkit.api.energy.registerType()</code></p>
 
 ```ts
 registerType(structureId: string, type: "storage" | "conductor", options?: EnergyRegisterTypeOptions): void
@@ -103,7 +109,9 @@ Capacity and energy-type options for storage nodes.
 
 ***
 
-### sandkit.api.energy.addAtCell() :id=addatcell
+### addAtCell() :id=addatcell
+
+<p class="smt-member-path"><code>sandkit.api.energy.addAtCell()</code></p>
 
 ```ts
 addAtCell(...args: number, number, number, [EnergyAddOptions]): number
@@ -125,7 +133,9 @@ Adds energy at a cell. Returns the amount actually added.
 
 ***
 
-### sandkit.api.energy.consume() :id=consume
+### consume() :id=consume
+
+<p class="smt-member-path"><code>sandkit.api.energy.consume()</code></p>
 
 ```ts
 consume(amount: number, options?: object): number
@@ -157,7 +167,9 @@ When `allOrNothing` is true, consume zero unless the full amount is available.
 
 ***
 
-### sandkit.api.energy.consumeExcludingNetworkAtCell() :id=consumeexcludingnetworkatcell
+### consumeExcludingNetworkAtCell() :id=consumeexcludingnetworkatcell
+
+<p class="smt-member-path"><code>sandkit.api.energy.consumeExcludingNetworkAtCell()</code></p>
 
 ```ts
 consumeExcludingNetworkAtCell(...args: [number, number, number]): number
@@ -179,7 +191,9 @@ Consumes energy from networks other than the one at the cell.
 
 ***
 
-### sandkit.api.energy.getNetworkAtCell() :id=getnetworkatcell
+### getNetworkAtCell() :id=getnetworkatcell
+
+<p class="smt-member-path"><code>sandkit.api.energy.getNetworkAtCell()</code></p>
 
 ```ts
 getNetworkAtCell(...args: CellCoordinates): object[]
@@ -201,7 +215,9 @@ Returns energy network nodes connected at the cell.
 
 ***
 
-### sandkit.api.energy.getNetworkFreeCapacityAtCell() :id=getnetworkfreecapacityatcell
+### getNetworkFreeCapacityAtCell() :id=getnetworkfreecapacityatcell
+
+<p class="smt-member-path"><code>sandkit.api.energy.getNetworkFreeCapacityAtCell()</code></p>
 
 ```ts
 getNetworkFreeCapacityAtCell(...args: CellCoordinates): number

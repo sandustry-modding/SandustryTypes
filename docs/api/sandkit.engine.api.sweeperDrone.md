@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.sweeperDrone.cancelSelection() :id=cancelselection
+### cancelSelection() :id=cancelselection
+
+<p class="smt-member-path"><code>sandkit.engine.api.sweeperDrone.cancelSelection()</code></p>
 
 ```ts
 cancelSelection(...args: unknown[]): unknown

@@ -1,13 +1,15 @@
 # sandkit.api.effects
 
-`sandkit.api.effects` — visual effects, particles, lights, and lasers at world positions.
-Main thread only.
+`sandkit.api.effects` — visual effects, particles, and lasers at world positions.
+Main thread only. Temporary lights live under [lights.temporary](api/sandkit.api.lights.temporary.md).
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.effects.LaserEffectOptions :id=lasereffectoptions
+### LaserEffectOptions :id=lasereffectoptions
 
-Defined in: [sandkit/api/effects.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L46)
+<p class="smt-member-path"><code>sandkit.api.effects.LaserEffectOptions</code></p>
+
+Defined in: [sandkit/api/effects.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L97)
 
 Options for laser beam effects.
 
@@ -19,7 +21,7 @@ Options for laser beam effects.
 optional width?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L48)
+Defined in: [sandkit/api/effects.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L99)
 
 Beam width in pixels.
 
@@ -29,7 +31,7 @@ Beam width in pixels.
 optional brightness?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L50)
+Defined in: [sandkit/api/effects.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L101)
 
 Beam brightness multiplier.
 
@@ -39,7 +41,7 @@ Beam brightness multiplier.
 optional color?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L52)
+Defined in: [sandkit/api/effects.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L103)
 
 Beam color as a packed integer.
 
@@ -49,15 +51,17 @@ Beam color as a packed integer.
 optional glow?: boolean
 ```
 
-Defined in: [sandkit/api/effects.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L54)
+Defined in: [sandkit/api/effects.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L105)
 
 When true, draws a glow around the beam.
 
 ***
 
-### sandkit.api.effects.LaserEffectHandle :id=lasereffecthandle
+### LaserEffectHandle :id=lasereffecthandle
 
-Defined in: [sandkit/api/effects.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L58)
+<p class="smt-member-path"><code>sandkit.api.effects.LaserEffectHandle</code></p>
+
+Defined in: [sandkit/api/effects.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L109)
 
 Handle returned by createLaserAtWorld.
 
@@ -69,7 +73,7 @@ Handle returned by createLaserAtWorld.
 destroy(): void
 ```
 
-Defined in: [sandkit/api/effects.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L60)
+Defined in: [sandkit/api/effects.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L111)
 
 Removes the laser from the scene.
 
@@ -79,9 +83,11 @@ Removes the laser from the scene.
 
 ***
 
-### sandkit.api.effects.DistortionEffectOptions :id=distortioneffectoptions
+### DistortionEffectOptions :id=distortioneffectoptions
 
-Defined in: [sandkit/api/effects.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L64)
+<p class="smt-member-path"><code>sandkit.api.effects.DistortionEffectOptions</code></p>
+
+Defined in: [sandkit/api/effects.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L115)
 
 Options for distortion wave effects.
 
@@ -93,7 +99,7 @@ Options for distortion wave effects.
 optional style?: "implode" | "explode"
 ```
 
-Defined in: [sandkit/api/effects.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L66)
+Defined in: [sandkit/api/effects.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L117)
 
 Distortion style: implode or explode.
 
@@ -103,7 +109,7 @@ Distortion style: implode or explode.
 optional duration?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L68)
+Defined in: [sandkit/api/effects.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L119)
 
 Effect duration in seconds.
 
@@ -113,7 +119,7 @@ Effect duration in seconds.
 optional maxRadius?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L70)
+Defined in: [sandkit/api/effects.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L121)
 
 Maximum radius of the wave.
 
@@ -123,7 +129,7 @@ Maximum radius of the wave.
 optional intensity?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L72)
+Defined in: [sandkit/api/effects.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L123)
 
 Visual intensity of the distortion.
 
@@ -133,13 +139,15 @@ Visual intensity of the distortion.
 optional color?: [number, number, number, number]
 ```
 
-Defined in: [sandkit/api/effects.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L74)
+Defined in: [sandkit/api/effects.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L125)
 
 RGBA color components for the effect.
 
 ***
 
-### sandkit.api.effects.EffectOptions :id=effectoptions
+### EffectOptions :id=effectoptions
+
+<p class="smt-member-path"><code>sandkit.api.effects.EffectOptions</code></p>
 
 Defined in: [shared/api/effects.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L35)
 
@@ -173,7 +181,9 @@ Defined in: [shared/api/effects.d.ts:38](https://github.com/sandustry-modding/Sa
 
 ***
 
-### sandkit.api.effects.TemporaryLightOptions :id=temporarylightoptions
+### TemporaryLightOptions :id=temporarylightoptions
+
+<p class="smt-member-path"><code>sandkit.api.effects.TemporaryLightOptions</code></p>
 
 Defined in: [shared/api/effects.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L41)
 
@@ -283,7 +293,9 @@ Dedupe key when the light pool is full or dedup is enabled.
 
 ***
 
-### sandkit.api.effects.ParticleEffectOptions :id=particleeffectoptions
+### ParticleEffectOptions :id=particleeffectoptions
+
+<p class="smt-member-path"><code>sandkit.api.effects.ParticleEffectOptions</code></p>
 
 Defined in: [shared/api/effects.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L58)
 
@@ -415,13 +427,151 @@ Defined in: [shared/api/effects.d.ts:74](https://github.com/sandustry-modding/Sa
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.effects.createDistortionWaveAtWorld() :id=createdistortionwaveatworld
+### createAtWorld() :id=createatworld
+
+<p class="smt-member-path"><code>sandkit.api.effects.createAtWorld()</code></p>
+
+```ts
+createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+```
+
+Defined in: [sandkit/api/effects.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L24)
+
+Creates a named screen effect at world coordinates.
+
+#### Parameters
+
+##### effectId
+
+`string`
+
+Registered effect id (for example `heatWave`).
+
+##### worldX
+
+`number`
+
+World X coordinate in pixels.
+
+##### worldY
+
+`number`
+
+World Y coordinate in pixels.
+
+##### options?
+
+[`EffectOptions`](#effectoptions)
+
+Duration, radius, and intensity settings.
+
+#### Returns
+
+`void`
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createAtWorld`
+
+***
+
+### ~~createEffectAtWorld()~~
+
+```ts
+createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+```
+
+Defined in: [sandkit/api/effects.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L35)
+
+#### Parameters
+
+##### effectId
+
+`string`
+
+##### worldX
+
+`number`
+
+##### worldY
+
+`number`
+
+##### options?
+
+[`EffectOptions`](#effectoptions)
+
+#### Returns
+
+`void`
+
+#### Deprecated
+
+Use [createAtWorld](#createatworld) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.effects.createAtWorld`
+
+***
+
+### ~~createLightAtWorld()~~
+
+```ts
+createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): object
+```
+
+Defined in: [sandkit/api/effects.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L56)
+
+#### Parameters
+
+##### worldX
+
+`number`
+
+##### worldY
+
+`number`
+
+##### options?
+
+[`TemporaryLightOptions`](#temporarylightoptions)
+
+#### Returns
+
+`object`
+
+##### ~~lightId~~
+
+```ts
+lightId: number | null
+```
+
+##### ~~index?~~
+
+```ts
+optional index?: number | null
+```
+
+#### Deprecated
+
+Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createatworld) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.lights.temporary.createAtWorld`
+
+***
+
+### createDistortionWaveAtWorld() :id=createdistortionwaveatworld
+
+<p class="smt-member-path"><code>sandkit.api.effects.createDistortionWaveAtWorld()</code></p>
 
 ```ts
 createDistortionWaveAtWorld(worldX: number, worldY: number, options?: DistortionEffectOptions): void
 ```
 
-Defined in: [sandkit/api/effects.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L29)
+Defined in: [sandkit/api/effects.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L70)
 
 Creates a distortion wave effect at world coordinates.
 
@@ -449,15 +599,21 @@ Style, duration, radius, intensity, and color.
 
 `void`
 
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createDistortionWaveAtWorld`
+
 ***
 
-### sandkit.api.effects.createLaserAtWorld() :id=createlaseratworld
+### createLaserAtWorld() :id=createlaseratworld
+
+<p class="smt-member-path"><code>sandkit.api.effects.createLaserAtWorld()</code></p>
 
 ```ts
 createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, endWorldY: number, options?: LaserEffectOptions): LaserEffectHandle
 ```
 
-Defined in: [sandkit/api/effects.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L38)
+Defined in: [sandkit/api/effects.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L82)
 
 Creates a laser beam between two world points. Returns a handle to destroy it.
 
@@ -497,17 +653,19 @@ Width, brightness, color, and glow options.
 
 [`LaserEffectHandle`](#lasereffecthandle)
 
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createLaserAtWorld`
+
 ***
 
-### sandkit.api.effects.removeLightById() :id=removelightbyid
+### ~~removeLightById()~~
 
 ```ts
 removeLightById(lightId: number): void
 ```
 
-Defined in: [sandkit/api/effects.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L43)
-
-Removes a temporary light by its id.
+Defined in: [sandkit/api/effects.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/effects.d.ts#L94)
 
 #### Parameters
 
@@ -515,57 +673,23 @@ Removes a temporary light by its id.
 
 `number`
 
-Light index from [createLightAtWorld](#createlightatworld).
-
 #### Returns
 
 `void`
 
-***
+#### Deprecated
 
-### sandkit.api.effects.createLightAtWorld() :id=createlightatworld
+Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md#removebyid) instead.
 
-```ts
-createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): object
-```
+#### See
 
-Defined in: [shared/api/effects.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L17)
-
-Spawn a temporary light at world coordinates.
-
-#### Parameters
-
-##### worldX
-
-`number`
-
-World x position in pixels.
-
-##### worldY
-
-`number`
-
-World y position in pixels.
-
-##### options?
-
-[`TemporaryLightOptions`](#temporarylightoptions)
-
-Brightness, colour, and lifetime settings.
-
-#### Returns
-
-`object`
-
-##### index
-
-```ts
-index: number | null
-```
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.lights.temporary.removeById`
 
 ***
 
-### sandkit.api.effects.createParticlesAtWorld() :id=createparticlesatworld
+### createParticlesAtWorld() :id=createparticlesatworld
+
+<p class="smt-member-path"><code>sandkit.api.effects.createParticlesAtWorld()</code></p>
 
 ```ts
 createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectOptions): void
@@ -594,48 +718,6 @@ World y position in pixels.
 [`ParticleEffectOptions`](#particleeffectoptions)
 
 Count, velocity, colour, and lifetime settings.
-
-#### Returns
-
-`void`
-
-***
-
-### sandkit.api.effects.createEffectAtWorld() :id=createeffectatworld
-
-```ts
-createEffectAtWorld(effectId: "heatWave", worldX: number, worldY: number, options?: EffectOptions): void
-```
-
-Defined in: [shared/api/effects.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/effects.d.ts#L32)
-
-Spawn a named screen-space or world effect.
-
-#### Parameters
-
-##### effectId
-
-`"heatWave"`
-
-Registered effect id (for example `heatWave`).
-
-##### worldX
-
-`number`
-
-World x position in pixels.
-
-##### worldY
-
-`number`
-
-World y position in pixels.
-
-##### options?
-
-[`EffectOptions`](#effectoptions)
-
-Duration, radius, and intensity settings.
 
 #### Returns
 

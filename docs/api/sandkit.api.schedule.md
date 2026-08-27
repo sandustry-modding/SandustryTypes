@@ -2,7 +2,9 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.schedule.nextTick() :id=nexttick
+### nextTick() :id=nexttick
+
+<p class="smt-member-path"><code>sandkit.api.schedule.nextTick()</code></p>
 
 ```ts
 nextTick(callback: () => void): void

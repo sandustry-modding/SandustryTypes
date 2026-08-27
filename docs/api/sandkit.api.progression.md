@@ -2,7 +2,9 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.progression.ProgressionCompletionRequestV1 :id=progressioncompletionrequestv1
+### ProgressionCompletionRequestV1 :id=progressioncompletionrequestv1
+
+<p class="smt-member-path"><code>sandkit.api.progression.ProgressionCompletionRequestV1</code></p>
 
 Defined in: [sandkit/api/progression.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/progression.d.ts#L17)
 
@@ -28,7 +30,9 @@ Progression step or quest identifier.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.progression.complete() :id=complete
+### complete() :id=complete
+
+<p class="smt-member-path"><code>sandkit.api.progression.complete()</code></p>
 
 ```ts
 complete(request: ProgressionCompletionRequestV1): boolean

@@ -2,7 +2,9 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.mods.AssetProviderV1 :id=assetproviderv1
+### AssetProviderV1 :id=assetproviderv1
+
+<p class="smt-member-path"><code>sandkit.api.mods.AssetProviderV1</code></p>
 
 ```ts
 AssetProviderV1 = AssetProviderV1
@@ -14,7 +16,9 @@ Asset provider entry shape.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.mods.getProviders() :id=getproviders
+### getProviders() :id=getproviders
+
+<p class="smt-member-path"><code>sandkit.api.mods.getProviders()</code></p>
 
 ```ts
 getProviders(kind: string): readonly AssetProviderV1[]

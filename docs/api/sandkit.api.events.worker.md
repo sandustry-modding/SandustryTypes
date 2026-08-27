@@ -1,0 +1,269 @@
+# sandkit.api.events (worker)
+
+**`Internal`**
+
+Worker-thread `sandkit.api.events` — subscribe to and emit worker-scoped events.
+
+ Worker-only surface; do not use main-thread [sandkit.api.events](api/sandkit.md#events).
+
+## Interfaces <!-- {docsify-ignore} -->
+
+### EventGuard :id=eventguard
+
+<p class="smt-member-path"><code>sandkit.api.events.EventGuard (worker)</code></p>
+
+Defined in: worker/api/events.d.ts:39
+
+Guard filter for worker events.
+
+#### Properties
+
+##### elementType?
+
+```ts
+optional elementType?: ElementType
+```
+
+Defined in: worker/api/events.d.ts:41
+
+Required when subscribing to `element:moved`. Optional on emit.
+
+##### terrainType?
+
+```ts
+optional terrainType?: number
+```
+
+Defined in: worker/api/events.d.ts:43
+
+Required when subscribing to `terrain:updated`. Optional on emit.
+
+***
+
+### EventEmitOptions :id=eventemitoptions
+
+<p class="smt-member-path"><code>sandkit.api.events.EventEmitOptions (worker)</code></p>
+
+Defined in: worker/api/events.d.ts:55
+
+Options for [emit](#emit).
+
+#### Properties
+
+##### guard?
+
+```ts
+optional guard?: EventGuard
+```
+
+Defined in: worker/api/events.d.ts:56
+
+***
+
+### EventPayloadMap :id=eventpayloadmap
+
+<p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap (worker)</code></p>
+
+Defined in: worker/api/events.d.ts:60
+
+Known worker event payloads. Unlisted ids still use `unknown`.
+
+#### Properties
+
+##### element:moved
+
+```ts
+element:moved: Record<string, unknown>
+```
+
+Defined in: worker/api/events.d.ts:61
+
+##### terrain:updated
+
+```ts
+terrain:updated: Record<string, unknown>
+```
+
+Defined in: worker/api/events.d.ts:62
+
+##### ~~terrain:update~~
+
+```ts
+terrain:update: Record<string, unknown>
+```
+
+Defined in: worker/api/events.d.ts:64
+
+###### Deprecated
+
+Use `"terrain:updated"` instead.
+
+##### worker:update:post
+
+```ts
+worker:update:post: Record<string, unknown>
+```
+
+Defined in: worker/api/events.d.ts:65
+
+##### ~~update:post~~
+
+```ts
+update:post: Record<string, unknown>
+```
+
+Defined in: worker/api/events.d.ts:67
+
+###### Deprecated
+
+Use `"worker:update:post"` instead.
+
+## Type Aliases <!-- {docsify-ignore} -->
+
+### EventOnOptions :id=eventonoptions
+
+<p class="smt-member-path"><code>sandkit.api.events.EventOnOptions (worker)</code></p>
+
+```ts
+EventOnOptions<K *extends* EventId> = K *extends* "element:moved" ? object : K *extends* "terrain:updated" | "terrain:update" ? object : object
+```
+
+Defined in: worker/api/events.d.ts:47
+
+Options for [on](#on).
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* [`EventId`](#eventid)
+
+***
+
+### EventId :id=eventid
+
+<p class="smt-member-path"><code>sandkit.api.events.EventId (worker)</code></p>
+
+```ts
+EventId = LooseString<keyof EventPayloadMap>
+```
+
+Defined in: worker/api/events.d.ts:71
+
+Known worker event names plus any custom string id.
+
+***
+
+### EventPayload :id=eventpayload
+
+<p class="smt-member-path"><code>sandkit.api.events.EventPayload (worker)</code></p>
+
+```ts
+EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
+```
+
+Defined in: worker/api/events.d.ts:74
+
+Event payload type for a given event id.
+
+#### Type Parameters
+
+##### K
+
+`K`
+
+## Functions <!-- {docsify-ignore} -->
+
+### on() :id=on
+
+<p class="smt-member-path"><code>sandkit.api.events.on() (worker)</code></p>
+
+```ts
+on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void, options?: EventOnOptions<K>): () => void
+```
+
+Defined in: worker/api/events.d.ts:18
+
+Subscribe to a worker event. Returns an unsubscribe function.
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* [`EventId`](#eventid)
+
+#### Parameters
+
+##### eventId
+
+`K`
+
+Registered event name.
+
+##### callback
+
+(`payload`: [`EventPayload`](#eventpayload)\<`K`\>) => `void`
+
+Called when the event is emitted.
+
+##### options?
+
+[`EventOnOptions`](#eventonoptions)\<`K`\>
+
+Required guard for filtered events.
+
+#### Returns
+
+() => `void`
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.events.on`
+
+***
+
+### emit() :id=emit
+
+<p class="smt-member-path"><code>sandkit.api.events.emit() (worker)</code></p>
+
+```ts
+emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>, options?: EventEmitOptions): void
+```
+
+Defined in: worker/api/events.d.ts:32
+
+Emit a worker event with a payload to subscribers.
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* [`EventId`](#eventid)
+
+#### Parameters
+
+##### eventId
+
+`K`
+
+Registered event name.
+
+##### payload
+
+[`EventPayload`](#eventpayload)\<`K`\>
+
+Serializable payload passed to listeners.
+
+##### options?
+
+[`EventEmitOptions`](#eventemitoptions)
+
+Optional guard forwarded to filtered listeners.
+
+#### Returns
+
+`void`
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.events.emit`

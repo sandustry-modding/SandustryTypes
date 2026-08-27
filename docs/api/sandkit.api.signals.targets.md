@@ -4,7 +4,9 @@ Signal target registration for structure types.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.signals.targets.register() :id=register
+### register() :id=register
+
+<p class="smt-member-path"><code>sandkit.api.signals.targets.register()</code></p>
 
 ```ts
 register(structureTypeOrId: unknown, apply: (structure: unknown, payload: unknown) => void): void

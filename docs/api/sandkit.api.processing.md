@@ -2,7 +2,9 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.processing.WeightedRecipeOutput :id=weightedrecipeoutput
+### WeightedRecipeOutput :id=weightedrecipeoutput
+
+<p class="smt-member-path"><code>sandkit.api.processing.WeightedRecipeOutput</code></p>
 
 Defined in: [sandkit/api/processing.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L30)
 
@@ -32,7 +34,9 @@ Output probability from 0 to 1.
 
 ***
 
-### sandkit.api.processing.PlanterBoxRecipeDefinitionV1 :id=planterboxrecipedefinitionv1
+### PlanterBoxRecipeDefinitionV1 :id=planterboxrecipedefinitionv1
+
+<p class="smt-member-path"><code>sandkit.api.processing.PlanterBoxRecipeDefinitionV1</code></p>
 
 Defined in: [sandkit/api/processing.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L38)
 
@@ -72,7 +76,9 @@ Success chance from 0 to 1. Default 1.
 
 ***
 
-### sandkit.api.processing.ShakerRecipeDefinitionV1 :id=shakerrecipedefinitionv1
+### ShakerRecipeDefinitionV1 :id=shakerrecipedefinitionv1
+
+<p class="smt-member-path"><code>sandkit.api.processing.ShakerRecipeDefinitionV1</code></p>
 
 Defined in: [sandkit/api/processing.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L48)
 
@@ -112,7 +118,9 @@ Weighted outputs ejected downward.
 
 ***
 
-### sandkit.api.processing.KineticPressRecipeDefinitionV1 :id=kineticpressrecipedefinitionv1
+### KineticPressRecipeDefinitionV1 :id=kineticpressrecipedefinitionv1
+
+<p class="smt-member-path"><code>sandkit.api.processing.KineticPressRecipeDefinitionV1</code></p>
 
 Defined in: [sandkit/api/processing.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/processing.d.ts#L58)
 
@@ -152,7 +160,9 @@ Weighted outputs produced by the press.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.processing.registerGrower() :id=registergrower
+### registerGrower() :id=registergrower
+
+<p class="smt-member-path"><code>sandkit.api.processing.registerGrower()</code></p>
 
 ```ts
 registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
@@ -176,7 +186,9 @@ Grower input/output recipe.
 
 ***
 
-### sandkit.api.processing.registerShaker() :id=registershaker
+### registerShaker() :id=registershaker
+
+<p class="smt-member-path"><code>sandkit.api.processing.registerShaker()</code></p>
 
 ```ts
 registerShaker(definition: ShakerRecipeDefinitionV1): void
@@ -200,7 +212,9 @@ Shaker input and weighted outputs.
 
 ***
 
-### sandkit.api.processing.registerKineticPress() :id=registerkineticpress
+### registerKineticPress() :id=registerkineticpress
+
+<p class="smt-member-path"><code>sandkit.api.processing.registerKineticPress()</code></p>
 
 ```ts
 registerKineticPress(definition: KineticPressRecipeDefinitionV1): void

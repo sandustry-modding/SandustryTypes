@@ -5,7 +5,9 @@ Main thread only.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.cooldown.Cooldown :id=cooldown
+### Cooldown :id=cooldown
+
+<p class="smt-member-path"><code>sandkit.api.cooldown.Cooldown</code></p>
 
 Defined in: [sandkit/api/cooldown.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/cooldown.d.ts#L20)
 
@@ -35,7 +37,9 @@ Cooldown duration in milliseconds.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.cooldown.check() :id=check
+### check() :id=check
+
+<p class="smt-member-path"><code>sandkit.api.cooldown.check()</code></p>
 
 ```ts
 check(cooldown: Cooldown, overrideTime?: number): boolean
@@ -65,7 +69,9 @@ Optional timestamp (ms) instead of current game time.
 
 ***
 
-### sandkit.api.cooldown.isReady() :id=isready
+### isReady() :id=isready
+
+<p class="smt-member-path"><code>sandkit.api.cooldown.isReady()</code></p>
 
 ```ts
 isReady(cooldown: Cooldown, overrideTime?: number): boolean

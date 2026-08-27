@@ -2,7 +2,9 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### shared.nominal.LooseString :id=loosestring
+### LooseString :id=loosestring
+
+<p class="smt-member-path"><code>shared.nominal.LooseString</code></p>
 
 ```ts
 LooseString<T *extends* string> = T | string & object
@@ -21,7 +23,9 @@ Known string literals plus any other string.
 
 ***
 
-### shared.nominal.LooseNumber :id=loosenumber
+### LooseNumber :id=loosenumber
+
+<p class="smt-member-path"><code>shared.nominal.LooseNumber</code></p>
 
 ```ts
 LooseNumber<T *extends* number> = T | number & object
@@ -40,7 +44,9 @@ Known numeric literals plus any other number.
 
 ***
 
-### shared.nominal.TaggedNumber :id=taggednumber
+### TaggedNumber :id=taggednumber
+
+<p class="smt-member-path"><code>shared.nominal.TaggedNumber</code></p>
 
 ```ts
 TaggedNumber<Tag *extends* string> = number & object
@@ -67,7 +73,9 @@ readonly optional \_\_tag?: Tag
 
 ***
 
-### shared.nominal.CellId :id=cellid
+### CellId :id=cellid
+
+<p class="smt-member-path"><code>shared.nominal.CellId</code></p>
 
 ```ts
 CellId = TaggedNumber<"cellId">

@@ -6,7 +6,9 @@ Weapon reload behaviour.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.ReloadType.Clip :id=clip
+### Clip :id=clip
+
+<p class="smt-member-path"><code>sandkit.enums.ReloadType.Clip</code></p>
 
 ```ts
 Clip: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:244](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ReloadType.Single :id=single
+### Single :id=single
+
+<p class="smt-member-path"><code>sandkit.enums.ReloadType.Single</code></p>
 
 ```ts
 Single: 2
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:245](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ReloadType.OverTime :id=overtime
+### OverTime :id=overtime
+
+<p class="smt-member-path"><code>sandkit.enums.ReloadType.OverTime</code></p>
 
 ```ts
 OverTime: 3

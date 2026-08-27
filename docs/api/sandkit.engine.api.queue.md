@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.queue.enqueue() :id=enqueue
+### enqueue() :id=enqueue
+
+<p class="smt-member-path"><code>sandkit.engine.api.queue.enqueue()</code></p>
 
 ```ts
 enqueue(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.queue.enqueueInTicks() :id=enqueueinticks
+### enqueueInTicks() :id=enqueueinticks
+
+<p class="smt-member-path"><code>sandkit.engine.api.queue.enqueueInTicks()</code></p>
 
 ```ts
 enqueueInTicks(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.queue.enqueueSkipTick() :id=enqueueskiptick
+### enqueueSkipTick() :id=enqueueskiptick
+
+<p class="smt-member-path"><code>sandkit.engine.api.queue.enqueueSkipTick()</code></p>
 
 ```ts
 enqueueSkipTick(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.queue.process() :id=process
+### process() :id=process
+
+<p class="smt-member-path"><code>sandkit.engine.api.queue.process()</code></p>
 
 ```ts
 process(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.queue.registerHandler() :id=registerhandler
+### registerHandler() :id=registerhandler
+
+<p class="smt-member-path"><code>sandkit.engine.api.queue.registerHandler()</code></p>
 
 ```ts
 registerHandler(...args: unknown[]): unknown
@@ -130,7 +140,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.queue.removeByKey() :id=removebykey
+### removeByKey() :id=removebykey
+
+<p class="smt-member-path"><code>sandkit.engine.api.queue.removeByKey()</code></p>
 
 ```ts
 removeByKey(...args: unknown[]): unknown

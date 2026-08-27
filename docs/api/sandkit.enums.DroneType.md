@@ -6,7 +6,9 @@ Autonomous drone kinds.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.DroneType.Digger :id=digger
+### Digger :id=digger
+
+<p class="smt-member-path"><code>sandkit.enums.DroneType.Digger</code></p>
 
 ```ts
 Digger: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:124](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.DroneType.Hauler :id=hauler
+### Hauler :id=hauler
+
+<p class="smt-member-path"><code>sandkit.enums.DroneType.Hauler</code></p>
 
 ```ts
 Hauler: 2

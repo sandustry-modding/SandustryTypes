@@ -2,7 +2,9 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.triggers.MainTriggerDefinition :id=maintriggerdefinition
+### MainTriggerDefinition :id=maintriggerdefinition
+
+<p class="smt-member-path"><code>sandkit.api.triggers.MainTriggerDefinition</code></p>
 
 Defined in: [sandkit/api/triggers.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/triggers.d.ts#L17)
 
@@ -42,7 +44,9 @@ Called each time the trigger fires.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.triggers.register() :id=register
+### register() :id=register
+
+<p class="smt-member-path"><code>sandkit.api.triggers.register()</code></p>
 
 ```ts
 register(triggerId: string, definition: MainTriggerDefinition): void

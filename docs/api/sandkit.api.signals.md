@@ -6,7 +6,9 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.signals.StructureType :id=structuretype
+### StructureType :id=structuretype
+
+<p class="smt-member-path"><code>sandkit.api.signals.StructureType</code></p>
 
 ```ts
 StructureType = unknown
@@ -18,7 +20,9 @@ Structure type id or enum value.
 
 ***
 
-### sandkit.api.signals.Structure :id=structure
+### Structure :id=structure
+
+<p class="smt-member-path"><code>sandkit.api.signals.Structure</code></p>
 
 ```ts
 Structure = unknown
@@ -30,7 +34,9 @@ Structure instance in the world.
 
 ***
 
-### sandkit.api.signals.SignalTargetPayloadV1 :id=signaltargetpayloadv1
+### SignalTargetPayloadV1 :id=signaltargetpayloadv1
+
+<p class="smt-member-path"><code>sandkit.api.signals.SignalTargetPayloadV1</code></p>
 
 ```ts
 SignalTargetPayloadV1 = unknown

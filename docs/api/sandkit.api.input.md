@@ -5,7 +5,9 @@ Main thread only.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.input.InputBindingHandlers :id=inputbindinghandlers
+### InputBindingHandlers :id=inputbindinghandlers
+
+<p class="smt-member-path"><code>sandkit.api.input.InputBindingHandlers</code></p>
 
 Defined in: [sandkit/api/input.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L98)
 
@@ -43,7 +45,9 @@ Called when the binding is released.
 
 ***
 
-### sandkit.api.input.InputBindingDefinition :id=inputbindingdefinition
+### InputBindingDefinition :id=inputbindingdefinition
+
+<p class="smt-member-path"><code>sandkit.api.input.InputBindingDefinition</code></p>
 
 Defined in: [sandkit/api/input.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/input.d.ts#L106)
 
@@ -99,7 +103,9 @@ Press and release handlers.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.input.BindingId :id=bindingid
+### BindingId :id=bindingid
+
+<p class="smt-member-path"><code>sandkit.api.input.BindingId</code></p>
 
 ```ts
 BindingId = LooseString<` ${KeyBinding} `>
@@ -111,7 +117,9 @@ Binding id. Vanilla [KeyBindingEnum](api/sandkit.enums.KeyBinding.md) names auto
 
 ***
 
-### sandkit.api.input.KeyCode :id=keycode
+### KeyCode :id=keycode
+
+<p class="smt-member-path"><code>sandkit.api.input.KeyCode</code></p>
 
 ```ts
 KeyCode = LooseString<"Shift" | "Alt" | "Control" | "Meta" | "ShiftLeft" | "ShiftRight" | "AltLeft" | "AltRight" | "ControlLeft" | "ControlRight" | "MetaLeft" | "MetaRight">
@@ -123,7 +131,9 @@ KeyboardEvent.code, a modifier alias (`Shift`), or a chord (`Control+KeyC`).
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.input.registerBinding() :id=registerbinding
+### registerBinding() :id=registerbinding
+
+<p class="smt-member-path"><code>sandkit.api.input.registerBinding()</code></p>
 
 ```ts
 registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputBindingDefinition): BindingId
@@ -161,7 +171,9 @@ The registered binding id.
 
 ***
 
-### sandkit.api.input.getMouseCellPosition() :id=getmousecellposition
+### getMouseCellPosition() :id=getmousecellposition
+
+<p class="smt-member-path"><code>sandkit.api.input.getMouseCellPosition()</code></p>
 
 ```ts
 getMouseCellPosition(): object
@@ -191,7 +203,9 @@ y: number
 
 ***
 
-### sandkit.api.input.getBoundKeys() :id=getboundkeys
+### getBoundKeys() :id=getboundkeys
+
+<p class="smt-member-path"><code>sandkit.api.input.getBoundKeys()</code></p>
 
 ```ts
 getBoundKeys(bindingId: BindingId): KeyCode[]
@@ -219,7 +233,9 @@ Session `input.keys` is keyed by `KeyboardEvent.code`. Modifier aliases
 
 ***
 
-### sandkit.api.input.getDisplayKey() :id=getdisplaykey
+### getDisplayKey() :id=getdisplaykey
+
+<p class="smt-member-path"><code>sandkit.api.input.getDisplayKey()</code></p>
 
 ```ts
 getDisplayKey(bindingId: BindingId, defaultLabel?: string): string
@@ -251,7 +267,9 @@ Human-readable key label for UI.
 
 ***
 
-### sandkit.api.input.triggerBinding() :id=triggerbinding
+### triggerBinding() :id=triggerbinding
+
+<p class="smt-member-path"><code>sandkit.api.input.triggerBinding()</code></p>
 
 ```ts
 triggerBinding(bindingId: BindingId): void
@@ -275,7 +293,9 @@ Registered binding id.
 
 ***
 
-### sandkit.api.input.pressBinding() :id=pressbinding
+### pressBinding() :id=pressbinding
+
+<p class="smt-member-path"><code>sandkit.api.input.pressBinding()</code></p>
 
 ```ts
 pressBinding(bindingId: BindingId): void
@@ -299,7 +319,9 @@ Registered binding id.
 
 ***
 
-### sandkit.api.input.releaseBinding() :id=releasebinding
+### releaseBinding() :id=releasebinding
+
+<p class="smt-member-path"><code>sandkit.api.input.releaseBinding()</code></p>
 
 ```ts
 releaseBinding(bindingId: BindingId): void
@@ -323,7 +345,9 @@ Registered binding id.
 
 ***
 
-### sandkit.api.input.resetMouseState() :id=resetmousestate
+### resetMouseState() :id=resetmousestate
+
+<p class="smt-member-path"><code>sandkit.api.input.resetMouseState()</code></p>
 
 ```ts
 resetMouseState(): void
@@ -339,7 +363,9 @@ Clear internal mouse button state.
 
 ***
 
-### sandkit.api.input.isCtrlHeld() :id=isctrlheld
+### isCtrlHeld() :id=isctrlheld
+
+<p class="smt-member-path"><code>sandkit.api.input.isCtrlHeld()</code></p>
 
 ```ts
 isCtrlHeld(): boolean
@@ -357,7 +383,9 @@ True when the Ctrl modifier is down.
 
 ***
 
-### sandkit.api.input.isAltHeld() :id=isaltheld
+### isAltHeld() :id=isaltheld
+
+<p class="smt-member-path"><code>sandkit.api.input.isAltHeld()</code></p>
 
 ```ts
 isAltHeld(): boolean

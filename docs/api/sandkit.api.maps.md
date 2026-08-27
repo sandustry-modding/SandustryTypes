@@ -2,9 +2,53 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.maps.AvailableMapV1 :id=availablemapv1
+### ArtifactLocation :id=artifactlocation
 
-Defined in: [sandkit/api/maps.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L26)
+<p class="smt-member-path"><code>sandkit.api.maps.ArtifactLocation</code></p>
+
+Defined in: [sandkit/api/maps.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L33)
+
+Artifact location entry from [getArtifactLocations](#getartifactlocations).
+
+#### Indexable
+
+```ts
+[key: string]: unknown
+```
+
+#### Properties
+
+##### cellX
+
+```ts
+cellX: number
+```
+
+Defined in: [sandkit/api/maps.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L34)
+
+##### cellY
+
+```ts
+cellY: number
+```
+
+Defined in: [sandkit/api/maps.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L35)
+
+##### name
+
+```ts
+name: string
+```
+
+Defined in: [sandkit/api/maps.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L36)
+
+***
+
+### AvailableMapV1 :id=availablemapv1
+
+<p class="smt-member-path"><code>sandkit.api.maps.AvailableMapV1</code></p>
+
+Defined in: [sandkit/api/maps.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L41)
 
 Available map entry shape.
 
@@ -22,7 +66,7 @@ Available map entry shape.
 id: string
 ```
 
-Defined in: [sandkit/api/maps.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L28)
+Defined in: [sandkit/api/maps.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L43)
 
 Map identifier passed to [start](#start).
 
@@ -32,13 +76,15 @@ Map identifier passed to [start](#start).
 optional name?: string
 ```
 
-Defined in: [sandkit/api/maps.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L30)
+Defined in: [sandkit/api/maps.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L45)
 
 Display name or translation key.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.maps.getAvailable() :id=getavailable
+### getAvailable() :id=getavailable
+
+<p class="smt-member-path"><code>sandkit.api.maps.getAvailable()</code></p>
 
 ```ts
 getAvailable(): readonly Readonly<AvailableMapV1>[]
@@ -54,7 +100,9 @@ readonly `Readonly`\<[`AvailableMapV1`](#availablemapv1)\>[]
 
 ***
 
-### sandkit.api.maps.start() :id=start
+### start() :id=start
+
+<p class="smt-member-path"><code>sandkit.api.maps.start()</code></p>
 
 ```ts
 start(mapId: string): boolean
@@ -76,14 +124,40 @@ Custom map identifier.
 
 `boolean`
 
+***
+
+### getArtifactLocations() :id=getartifactlocations
+
+<p class="smt-member-path"><code>sandkit.api.maps.getArtifactLocations()</code></p>
+
+```ts
+getArtifactLocations(): readonly ArtifactLocation[]
+```
+
+Defined in: [sandkit/api/maps.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/maps.d.ts#L30)
+
+Return artifact marker locations for the active map.
+
+#### Returns
+
+readonly [`ArtifactLocation`](#artifactlocation)[]
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.maps.getArtifactLocations`
+
 ## References <!-- {docsify-ignore} -->
 
-### sandkit.api.maps.getActive :id=getactive
+### getActive :id=getactive
+
+<p class="smt-member-path"><code>sandkit.api.maps.getActive</code></p>
 
 Re-exports [getActive](api/sandkit.api.maps.worker.md#getactive)
 
 ***
 
-### sandkit.api.maps.ActiveMapV1 :id=activemapv1
+### ActiveMapV1 :id=activemapv1
+
+<p class="smt-member-path"><code>sandkit.api.maps.ActiveMapV1</code></p>
 
 Re-exports [ActiveMapV1](api/sandkit.api.maps.worker.md#activemapv1)

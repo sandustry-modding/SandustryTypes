@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.matters.getMatterTypeFromId() :id=getmattertypefromid
+### getMatterTypeFromId() :id=getmattertypefromid
+
+<p class="smt-member-path"><code>sandkit.engine.api.matters.getMatterTypeFromId()</code></p>
 
 ```ts
 getMatterTypeFromId(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.matters.register() :id=register
+### register() :id=register
+
+<p class="smt-member-path"><code>sandkit.engine.api.matters.register()</code></p>
 
 ```ts
 register(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.matters.runSolidUpdate() :id=runsolidupdate
+### runSolidUpdate() :id=runsolidupdate
+
+<p class="smt-member-path"><code>sandkit.engine.api.matters.runSolidUpdate()</code></p>
 
 ```ts
 runSolidUpdate(...args: unknown[]): unknown

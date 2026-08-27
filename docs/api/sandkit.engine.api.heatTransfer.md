@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.heatTransfer.absorbAdjacentElements() :id=absorbadjacentelements
+### absorbAdjacentElements() :id=absorbadjacentelements
+
+<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.absorbAdjacentElements()</code></p>
 
 ```ts
 absorbAdjacentElements(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.heatTransfer.addTemperature() :id=addtemperature
+### addTemperature() :id=addtemperature
+
+<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.addTemperature()</code></p>
 
 ```ts
 addTemperature(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.heatTransfer.computeDiffusedTemperatures() :id=computediffusedtemperatures
+### computeDiffusedTemperatures() :id=computediffusedtemperatures
+
+<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.computeDiffusedTemperatures()</code></p>
 
 ```ts
 computeDiffusedTemperatures(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.heatTransfer.computeEqualizedTemperature() :id=computeequalizedtemperature
+### computeEqualizedTemperature() :id=computeequalizedtemperature
+
+<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.computeEqualizedTemperature()</code></p>
 
 ```ts
 computeEqualizedTemperature(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.heatTransfer.consumeTemperatureNear() :id=consumetemperaturenear
+### consumeTemperatureNear() :id=consumetemperaturenear
+
+<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.consumeTemperatureNear()</code></p>
 
 ```ts
 consumeTemperatureNear(...args: unknown[]): unknown
@@ -130,7 +140,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.heatTransfer.ensureTemperature() :id=ensuretemperature
+### ensureTemperature() :id=ensuretemperature
+
+<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.ensureTemperature()</code></p>
 
 ```ts
 ensureTemperature(...args: unknown[]): unknown
@@ -154,7 +166,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.heatTransfer.equalizeConnected() :id=equalizeconnected
+### equalizeConnected() :id=equalizeconnected
+
+<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.equalizeConnected()</code></p>
 
 ```ts
 equalizeConnected(...args: unknown[]): unknown

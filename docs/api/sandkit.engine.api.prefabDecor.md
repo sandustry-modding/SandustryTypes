@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.prefabDecor.getPlacementByName() :id=getplacementbyname
+### getPlacementByName() :id=getplacementbyname
+
+<p class="smt-member-path"><code>sandkit.engine.api.prefabDecor.getPlacementByName()</code></p>
 
 ```ts
 getPlacementByName(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.prefabDecor.replaceDecor() :id=replacedecor
+### replaceDecor() :id=replacedecor
+
+<p class="smt-member-path"><code>sandkit.engine.api.prefabDecor.replaceDecor()</code></p>
 
 ```ts
 replaceDecor(...args: unknown[]): unknown

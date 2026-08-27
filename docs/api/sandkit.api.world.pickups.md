@@ -1,143 +1,45 @@
 # sandkit.api.world.pickups
 
-World item spawn, pickup, and lookup.
+## Deprecated
 
-## Functions <!-- {docsify-ignore} -->
+Use pickups instead.
 
-### sandkit.api.world.pickups.spawnAtWorld() :id=spawnatworld
+## See
 
-```ts
-spawnAtWorld(type: WorldItemType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem
-```
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups`
 
-Defined in: [sandkit/api/world.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/world.d.ts#L61)
+## References <!-- {docsify-ignore} -->
 
-Spawn a world pickup at world position.
+### ~~spawnAtWorld~~
 
-#### Parameters
-
-##### type
-
-[`WorldItemType`](api/sandkit.enums.WorldItemType.md)
-
-Pickup type discriminator.
-
-##### worldX
-
-`number`
-
-World x position in pixels.
-
-##### worldY
-
-`number`
-
-World y position in pixels.
-
-##### data?
-
-`Record`\<`string`, `unknown`\>
-
-Optional per-item data bag copied onto the instance.
-
-##### light?
-
-[`WorldItemLight`](api/sandkit.api.world.md#worlditemlight)
-
-Optional point light spawned with the pickup.
-
-#### Returns
-
-[`WorldItem`](api/sandkit.api.world.md#worlditem)
-
-The spawned world item instance.
+Re-exports [spawnAtWorld](api/sandkit.api.pickups.md#spawnatworld)
 
 ***
 
-### sandkit.api.world.pickups.destroy() :id=destroy
+### ~~destroy~~
 
-```ts
-destroy(worldItem: WorldItem): void
-```
-
-Defined in: [sandkit/api/world.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/world.d.ts#L67)
-
-Destroy a world pickup instance.
-
-#### Parameters
-
-##### worldItem
-
-[`WorldItem`](api/sandkit.api.world.md#worlditem)
-
-World item returned from spawn or lookup helpers.
-
-#### Returns
-
-`void`
+Re-exports [destroy](api/sandkit.api.pickups.md#destroy)
 
 ***
 
-### sandkit.api.world.pickups.pickUp() :id=pickup
+### ~~pickUp~~
 
-```ts
-pickUp(worldItem: WorldItem): boolean
-```
-
-Defined in: [sandkit/api/world.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/world.d.ts#L74)
-
-Pick up a world item into inventory.
-
-#### Parameters
-
-##### worldItem
-
-[`WorldItem`](api/sandkit.api.world.md#worlditem)
-
-World item to pick up.
-
-#### Returns
-
-`boolean`
-
-True when the item was collected.
+Re-exports [pickUp](api/sandkit.api.pickups.md#pickup)
 
 ***
 
-### sandkit.api.world.pickups.getAll() :id=getall
+### ~~getAll~~
 
-```ts
-getAll(): WorldItem[]
-```
-
-Defined in: [sandkit/api/world.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/world.d.ts#L77)
-
-Return all active world pickups.
-
-#### Returns
-
-[`WorldItem`](api/sandkit.api.world.md#worlditem)[]
+Re-exports [getAll](api/sandkit.api.pickups.md#getall)
 
 ***
 
-### sandkit.api.world.pickups.getById() :id=getbyid
+### ~~getById~~
 
-```ts
-getById(worldItemId: number): WorldItem | undefined
-```
+Re-exports [getById](api/sandkit.api.pickups.md#getbyid)
 
-Defined in: [sandkit/api/world.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/world.d.ts#L83)
+***
 
-Return a world pickup by numeric id.
+### ~~remove~~
 
-#### Parameters
-
-##### worldItemId
-
-`number`
-
-Runtime world item id.
-
-#### Returns
-
-[`WorldItem`](api/sandkit.api.world.md#worlditem) \| `undefined`
+Re-exports [remove](api/sandkit.api.pickups.md#remove)

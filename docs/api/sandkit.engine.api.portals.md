@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.portals.getMarkers() :id=getmarkers
+### getMarkers() :id=getmarkers
+
+<p class="smt-member-path"><code>sandkit.engine.api.portals.getMarkers()</code></p>
 
 ```ts
 getMarkers(...args: unknown[]): unknown

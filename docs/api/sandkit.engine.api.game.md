@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.game.load() :id=load
+### load() :id=load
+
+<p class="smt-member-path"><code>sandkit.engine.api.game.load()</code></p>
 
 ```ts
 load(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.game.save() :id=save
+### save() :id=save
+
+<p class="smt-member-path"><code>sandkit.engine.api.game.save()</code></p>
 
 ```ts
 save(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.game.start() :id=start
+### start() :id=start
+
+<p class="smt-member-path"><code>sandkit.engine.api.game.start()</code></p>
 
 ```ts
 start(...args: unknown[]): unknown

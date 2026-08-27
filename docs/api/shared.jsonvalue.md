@@ -2,7 +2,9 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### shared.jsonvalue.JsonObjectV1 :id=jsonobjectv1
+### JsonObjectV1 :id=jsonobjectv1
+
+<p class="smt-member-path"><code>shared.jsonvalue.JsonObjectV1</code></p>
 
 Defined in: [shared/jsonvalue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/jsonvalue.d.ts#L15)
 
@@ -18,7 +20,9 @@ Use for open-ended config bags and serialized mod data.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### shared.jsonvalue.JsonValueV1 :id=jsonvaluev1
+### JsonValueV1 :id=jsonvaluev1
+
+<p class="smt-member-path"><code>shared.jsonvalue.JsonValueV1</code></p>
 
 ```ts
 JsonValueV1 = string | number | boolean | JsonObjectV1 | JsonValueV1[] | null

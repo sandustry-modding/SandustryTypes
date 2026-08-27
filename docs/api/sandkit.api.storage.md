@@ -6,7 +6,9 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.storage.ensure() :id=ensure
+### ensure() :id=ensure
+
+<p class="smt-member-path"><code>sandkit.api.storage.ensure()</code></p>
 
 ```ts
 ensure(modId: string): JsonObjectV1
@@ -30,7 +32,9 @@ Mod identifier (typically `modinfo.id`).
 
 ***
 
-### sandkit.api.storage.get() :id=get
+### get() :id=get
+
+<p class="smt-member-path"><code>sandkit.api.storage.get()</code></p>
 
 ```ts
 get(modId: string, key: string): JsonValueV1 | undefined
@@ -60,7 +64,9 @@ Storage key.
 
 ***
 
-### sandkit.api.storage.set() :id=set
+### set() :id=set
+
+<p class="smt-member-path"><code>sandkit.api.storage.set()</code></p>
 
 ```ts
 set(modId: string, key: string, value: JsonValueV1): void
@@ -96,7 +102,9 @@ JSON-serializable value.
 
 ***
 
-### sandkit.api.storage.remove() :id=remove
+### remove() :id=remove
+
+<p class="smt-member-path"><code>sandkit.api.storage.remove()</code></p>
 
 ```ts
 remove(modId: string, key: string): void

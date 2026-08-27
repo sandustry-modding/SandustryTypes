@@ -4,13 +4,15 @@ Structure processing enablement checks.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.structures.processing.isEnabledAt() (worker) :id=isenabledat
+### isEnabledAtCell() :id=isenabledatcell
+
+<p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAtCell() (worker)</code></p>
 
 ```ts
-isEnabledAt(...args: CellCoordinates): boolean
+isEnabledAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L113)
+Defined in: [shared/api/structures.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L153)
 
 Return true when processing is enabled at the cell.
 
@@ -23,3 +25,35 @@ Return true when processing is enabled at the cell.
 #### Returns
 
 `boolean`
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.structures.processing.isEnabledAtCell`
+
+***
+
+### ~~isEnabledAt()~~
+
+```ts
+isEnabledAt(...args: CellCoordinates): boolean
+```
+
+Defined in: [shared/api/structures.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/structures.d.ts#L159)
+
+#### Parameters
+
+##### args
+
+...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
+
+#### Returns
+
+`boolean`
+
+#### Deprecated
+
+Use [isEnabledAtCell](#isenabledatcell) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.processing.isEnabledAtCell`

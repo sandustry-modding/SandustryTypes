@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.drones.kill() :id=kill
+### kill() :id=kill
+
+<p class="smt-member-path"><code>sandkit.engine.api.drones.kill()</code></p>
 
 ```ts
 kill(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.drones.spawn() :id=spawn
+### spawn() :id=spawn
+
+<p class="smt-member-path"><code>sandkit.engine.api.drones.spawn()</code></p>
 
 ```ts
 spawn(...args: unknown[]): unknown

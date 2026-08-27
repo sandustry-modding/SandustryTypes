@@ -2,7 +2,9 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.raycast.castFromWorld() :id=castfromworld
+### castFromWorld() :id=castfromworld
+
+<p class="smt-member-path"><code>sandkit.api.raycast.castFromWorld()</code></p>
 
 ```ts
 castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistance: number): Vector2 & object | null

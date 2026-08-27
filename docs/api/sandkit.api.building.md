@@ -9,7 +9,9 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.building.getSnappedPositionAtCell() :id=getsnappedpositionatcell
+### getSnappedPositionAtCell() :id=getsnappedpositionatcell
+
+<p class="smt-member-path"><code>sandkit.api.building.getSnappedPositionAtCell()</code></p>
 
 ```ts
 getSnappedPositionAtCell(...args: CellCoordinates): Vector2
@@ -33,7 +35,9 @@ Snapped world position in pixels.
 
 ***
 
-### sandkit.api.building.isBlockedAtCell() :id=isblockedatcell
+### isBlockedAtCell() :id=isblockedatcell
+
+<p class="smt-member-path"><code>sandkit.api.building.isBlockedAtCell()</code></p>
 
 ```ts
 isBlockedAtCell(...args: CellCoordinates): boolean
@@ -57,7 +61,9 @@ True when a structure cannot be placed at the cell.
 
 ***
 
-### sandkit.api.building.cancelPlacement() :id=cancelplacement
+### cancelPlacement() :id=cancelplacement
+
+<p class="smt-member-path"><code>sandkit.api.building.cancelPlacement()</code></p>
 
 ```ts
 cancelPlacement(): void
@@ -73,7 +79,9 @@ Cancel the current structure placement preview.
 
 ***
 
-### sandkit.api.building.selectStructure() :id=selectstructure
+### selectStructure() :id=selectstructure
+
+<p class="smt-member-path"><code>sandkit.api.building.selectStructure()</code></p>
 
 ```ts
 selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef | null

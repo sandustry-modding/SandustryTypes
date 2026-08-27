@@ -2,7 +2,9 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### shared.asset.AssetRef :id=assetref
+### AssetRef :id=assetref
+
+<p class="smt-member-path"><code>shared.asset.AssetRef</code></p>
 
 Defined in: [shared/asset.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/asset.d.ts#L9)
 

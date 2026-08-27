@@ -6,7 +6,9 @@ Built-in element type ids (prefer API string ids when registering mods).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.ElementType.Sand :id=sand
+### Sand :id=sand
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Sand</code></p>
 
 ```ts
 Sand: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:130](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Particle :id=particle
+### Particle :id=particle
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Particle</code></p>
 
 ```ts
 Particle: 2
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:131](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Water :id=water
+### Water :id=water
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Water</code></p>
 
 ```ts
 Water: 3
@@ -36,7 +42,9 @@ Defined in: [sandkit/enums/index.d.ts:132](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.WetSand :id=wetsand
+### WetSand :id=wetsand
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.WetSand</code></p>
 
 ```ts
 WetSand: 4
@@ -46,7 +54,9 @@ Defined in: [sandkit/enums/index.d.ts:133](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Sandium :id=sandium
+### Sandium :id=sandium
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Sandium</code></p>
 
 ```ts
 Sandium: 5
@@ -56,7 +66,9 @@ Defined in: [sandkit/enums/index.d.ts:134](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Residue :id=residue
+### Residue :id=residue
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Residue</code></p>
 
 ```ts
 Residue: 6
@@ -66,7 +78,9 @@ Defined in: [sandkit/enums/index.d.ts:135](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Gold :id=gold
+### Gold :id=gold
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Gold</code></p>
 
 ```ts
 Gold: 7
@@ -76,7 +90,9 @@ Defined in: [sandkit/enums/index.d.ts:136](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Gloom :id=gloom
+### Gloom :id=gloom
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Gloom</code></p>
 
 ```ts
 Gloom: 8
@@ -86,7 +102,9 @@ Defined in: [sandkit/enums/index.d.ts:137](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Shake :id=shake
+### Shake :id=shake
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Shake</code></p>
 
 ```ts
 Shake: 9
@@ -96,7 +114,9 @@ Defined in: [sandkit/enums/index.d.ts:138](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Steam :id=steam
+### Steam :id=steam
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Steam</code></p>
 
 ```ts
 Steam: 10
@@ -106,7 +126,9 @@ Defined in: [sandkit/enums/index.d.ts:139](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Fire :id=fire
+### Fire :id=fire
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Fire</code></p>
 
 ```ts
 Fire: 11
@@ -116,7 +138,9 @@ Defined in: [sandkit/enums/index.d.ts:140](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.FreezingIce :id=freezingice
+### FreezingIce :id=freezingice
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.FreezingIce</code></p>
 
 ```ts
 FreezingIce: 12
@@ -126,7 +150,9 @@ Defined in: [sandkit/enums/index.d.ts:141](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Flame :id=flame
+### Flame :id=flame
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Flame</code></p>
 
 ```ts
 Flame: 13
@@ -136,7 +162,9 @@ Defined in: [sandkit/enums/index.d.ts:142](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.BurntResidue :id=burntresidue
+### BurntResidue :id=burntresidue
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.BurntResidue</code></p>
 
 ```ts
 BurntResidue: 14
@@ -146,7 +174,9 @@ Defined in: [sandkit/enums/index.d.ts:143](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Seed :id=seed
+### Seed :id=seed
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Seed</code></p>
 
 ```ts
 Seed: 15
@@ -156,7 +186,9 @@ Defined in: [sandkit/enums/index.d.ts:144](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.WetSeed :id=wetseed
+### WetSeed :id=wetseed
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.WetSeed</code></p>
 
 ```ts
 WetSeed: 16
@@ -166,7 +198,9 @@ Defined in: [sandkit/enums/index.d.ts:145](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Seedling :id=seedling
+### Seedling :id=seedling
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Seedling</code></p>
 
 ```ts
 Seedling: 17
@@ -176,7 +210,9 @@ Defined in: [sandkit/enums/index.d.ts:146](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Petalium :id=petalium
+### Petalium :id=petalium
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Petalium</code></p>
 
 ```ts
 Petalium: 18
@@ -186,7 +222,9 @@ Defined in: [sandkit/enums/index.d.ts:147](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Lava :id=lava
+### Lava :id=lava
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Lava</code></p>
 
 ```ts
 Lava: 19
@@ -196,7 +234,9 @@ Defined in: [sandkit/enums/index.d.ts:148](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.ElementType.Basalt :id=basalt
+### Basalt :id=basalt
+
+<p class="smt-member-path"><code>sandkit.enums.ElementType.Basalt</code></p>
 
 ```ts
 Basalt: 20

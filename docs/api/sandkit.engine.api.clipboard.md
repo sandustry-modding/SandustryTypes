@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.clipboard.activate() :id=activate
+### activate() :id=activate
+
+<p class="smt-member-path"><code>sandkit.engine.api.clipboard.activate()</code></p>
 
 ```ts
 activate(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.clipboard.clear() :id=clear
+### clear() :id=clear
+
+<p class="smt-member-path"><code>sandkit.engine.api.clipboard.clear()</code></p>
 
 ```ts
 clear(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.clipboard.get() :id=get
+### get() :id=get
+
+<p class="smt-member-path"><code>sandkit.engine.api.clipboard.get()</code></p>
 
 ```ts
 get(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.clipboard.getHistory() :id=gethistory
+### getHistory() :id=gethistory
+
+<p class="smt-member-path"><code>sandkit.engine.api.clipboard.getHistory()</code></p>
 
 ```ts
 getHistory(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.clipboard.getSignalLinks() :id=getsignallinks
+### getSignalLinks() :id=getsignallinks
+
+<p class="smt-member-path"><code>sandkit.engine.api.clipboard.getSignalLinks()</code></p>
 
 ```ts
 getSignalLinks(...args: unknown[]): unknown
@@ -130,7 +140,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.clipboard.selectFromHistory() :id=selectfromhistory
+### selectFromHistory() :id=selectfromhistory
+
+<p class="smt-member-path"><code>sandkit.engine.api.clipboard.selectFromHistory()</code></p>
 
 ```ts
 selectFromHistory(...args: unknown[]): unknown
@@ -154,7 +166,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.clipboard.set() :id=set
+### set() :id=set
+
+<p class="smt-member-path"><code>sandkit.engine.api.clipboard.set()</code></p>
 
 ```ts
 set(...args: unknown[]): unknown

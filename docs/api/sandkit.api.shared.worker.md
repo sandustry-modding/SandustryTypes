@@ -18,12 +18,16 @@ main-thread `sandkit.api.shared`.
 
 ## References <!-- {docsify-ignore} -->
 
-### sandkit.api.shared.SharedArray (worker) :id=sharedarray
+### SharedArray :id=sharedarray
+
+<p class="smt-member-path"><code>sandkit.api.shared.SharedArray (worker)</code></p>
 
 Re-exports [SharedArray](api/sandkit.api.shared.md#sharedarray)
 
 ***
 
-### sandkit.api.shared.SharedArrayType (worker) :id=sharedarraytype
+### SharedArrayType :id=sharedarraytype
+
+<p class="smt-member-path"><code>sandkit.api.shared.SharedArrayType (worker)</code></p>
 
 Re-exports [SharedArrayType](api/sandkit.api.shared.md#sharedarraytype)

@@ -2,13 +2,13 @@
 
 # Sandkit API
 
-Sandkit namespaces used by mods. Use groups below to find a namespace, or open [Full API reference](api/full.md).
+Sandkit namespaces used by mods. Use groups below to find a namespace, or open [Full API reference](full.md).
 
 ## Roots
 
-- [Full API reference](api/full.md) — all namespaces on one page
+- [Full API reference](full.md) — all namespaces on one page
 - [Main thread](api/sandkit.api.md) — `sandkit.api`
-- [Worker thread](api/sandkit.api.worker.md) — worker-thread `sandkit.api`
+- [Worker](api/sandkit.api.worker.md) — worker-thread `sandkit.api`
 - [Engine](api/sandkit.engine.md) — `sandkit.engine`
 - [Enums](api/sandkit.enums.md) — `sandkit.enums`
 - [React](api/sandkit.react.md) — `sandkit.react`
@@ -31,10 +31,12 @@ Sandkit namespaces used by mods. Use groups below to find a namespace, or open [
 ### World & simulation
 
 <ul class="smt-api-group">
+<li><a href="#/api/sandkit.api.grid">grid</a></li>
 <li><a href="#/api/sandkit.api.world">world</a><ul class="smt-api-tree"><li><a href="#/api/sandkit.api.world.pickups">pickups</a></li></ul></li>
+<li><a href="#/api/sandkit.api.pickups">pickups</a></li>
 <li><a href="#/api/sandkit.api.elements">elements</a></li>
 <li><a href="#/api/sandkit.api.terrains">terrains</a></li>
-<li><a href="#/api/sandkit.api.grid">grid</a></li>
+<li><a href="#/api/sandkit.api.entities">entities</a></li>
 <li><a href="#/api/sandkit.api.fire">fire</a></li>
 <li><a href="#/api/sandkit.api.excavation">excavation</a></li>
 <li><a href="#/api/sandkit.api.reactions">reactions</a></li>
@@ -54,6 +56,9 @@ Sandkit namespaces used by mods. Use groups below to find a namespace, or open [
 <li><a href="#/api/sandkit.api.energy">energy</a></li>
 <li><a href="#/api/sandkit.api.structureBehaviors">structureBehaviors</a></li>
 <li><a href="#/api/sandkit.api.patterns">patterns</a></li>
+<li><a href="#/api/sandkit.api.pipes">pipes</a></li>
+<li><a href="#/api/sandkit.api.factory">factory</a></li>
+<li><a href="#/api/sandkit.api.blueprints">blueprints</a></li>
 </ul>
 
 ### UI & media
@@ -61,7 +66,7 @@ Sandkit namespaces used by mods. Use groups below to find a namespace, or open [
 <ul class="smt-api-group">
 <li><a href="#/api/sandkit.api.ui">ui</a><ul class="smt-api-tree"><li><a href="#/api/sandkit.api.ui.navigation">navigation</a></li><li><a href="#/api/sandkit.api.ui.overlays">overlays</a></li></ul></li>
 <li><a href="#/api/sandkit.api.sprites">sprites</a></li>
-<li><a href="#/api/sandkit.api.lights">lights</a><ul class="smt-api-tree"><li><a href="#/api/sandkit.api.lights.persistent">persistent</a></li><li><a href="#/api/sandkit.api.lights.vfx">vfx</a></li></ul></li>
+<li><a href="#/api/sandkit.api.lights">lights</a><ul class="smt-api-tree"><li><a href="#/api/sandkit.api.lights.persistent">persistent</a></li><li><a href="#/api/sandkit.api.lights.temporary">temporary</a></li></ul></li>
 <li><a href="#/api/sandkit.api.effects">effects</a></li>
 <li><a href="#/api/sandkit.api.rendering">rendering</a></li>
 <li><a href="#/api/sandkit.api.sound">sound</a></li>
@@ -72,7 +77,7 @@ Sandkit namespaces used by mods. Use groups below to find a namespace, or open [
 ### Progression & items
 
 <ul class="smt-api-group">
-<li><a href="#/api/sandkit.api.tech">tech</a></li>
+<li><a href="#/api/sandkit.api.tech">tech</a><ul class="smt-api-tree"><li><a href="#/api/sandkit.api.tech.conservatory">conservatory</a></li></ul></li>
 <li><a href="#/api/sandkit.api.upgrades">upgrades</a></li>
 <li><a href="#/api/sandkit.api.discoveries">discoveries</a></li>
 <li><a href="#/api/sandkit.api.progression">progression</a></li>
@@ -98,6 +103,7 @@ Sandkit namespaces used by mods. Use groups below to find a namespace, or open [
 <li><a href="#/api/sandkit.api.utils">utils</a></li>
 <li><a href="#/api/sandkit.api.constants">constants</a></li>
 <li><a href="#/api/sandkit.api.gameConfig">gameConfig</a></li>
+<li><a href="#/api/sandkit.api.game">game</a></li>
 </ul>
 
 
@@ -106,7 +112,13 @@ Sandkit namespaces used by mods. Use groups below to find a namespace, or open [
 Worker-thread namespaces. Same names as main where they overlap; pages use a `.worker` URL suffix.
 
 <ul class="smt-api-group">
+<li><a href="#/api/sandkit.api.effects.worker">effects</a></li>
 <li><a href="#/api/sandkit.api.elements.worker">elements</a></li>
+<li><a href="#/api/sandkit.api.events.worker">events</a></li>
+<li><a href="#/api/sandkit.api.fire.worker">fire</a></li>
+<li><a href="#/api/sandkit.api.grid.worker">grid</a></li>
+<li><a href="#/api/sandkit.api.hooks.worker">hooks</a></li>
+<li><a href="#/api/sandkit.api.lights.worker">lights</a><ul class="smt-api-tree"><li><a href="#/api/sandkit.api.lights.temporary.worker">temporary</a></li></ul></li>
 <li><a href="#/api/sandkit.api.main.worker">main</a></li>
 <li><a href="#/api/sandkit.api.maps.worker">maps</a></li>
 <li><a href="#/api/sandkit.api.player.worker">player</a></li>
@@ -208,6 +220,7 @@ Worker-thread namespaces. Same names as main where they overlap; pages use a `.w
 <li><a href="#/api/sandkit.enums.KeyBinding">KeyBinding</a></li>
 <li><a href="#/api/sandkit.enums.KeyState">KeyState</a></li>
 <li><a href="#/api/sandkit.enums.MatterType">MatterType</a></li>
+<li><a href="#/api/sandkit.enums.PickupType">PickupType</a></li>
 <li><a href="#/api/sandkit.enums.ProjectileType">ProjectileType</a></li>
 <li><a href="#/api/sandkit.enums.ReloadType">ReloadType</a></li>
 <li><a href="#/api/sandkit.enums.Scene">Scene</a></li>

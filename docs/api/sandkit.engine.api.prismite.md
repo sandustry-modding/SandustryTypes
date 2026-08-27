@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.prismite.consume() :id=consume
+### consume() :id=consume
+
+<p class="smt-member-path"><code>sandkit.engine.api.prismite.consume()</code></p>
 
 ```ts
 consume(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.prismite.getAvailable() :id=getavailable
+### getAvailable() :id=getavailable
+
+<p class="smt-member-path"><code>sandkit.engine.api.prismite.getAvailable()</code></p>
 
 ```ts
 getAvailable(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.prismite.getConsumed() :id=getconsumed
+### getConsumed() :id=getconsumed
+
+<p class="smt-member-path"><code>sandkit.engine.api.prismite.getConsumed()</code></p>
 
 ```ts
 getConsumed(...args: unknown[]): unknown

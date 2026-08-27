@@ -6,7 +6,9 @@ Built-in structure type ids.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.StructureType.ConveyorLeft :id=conveyorleft
+### ConveyorLeft :id=conveyorleft
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.ConveyorLeft</code></p>
 
 ```ts
 ConveyorLeft: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:259](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.ConveyorRight :id=conveyorright
+### ConveyorRight :id=conveyorright
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.ConveyorRight</code></p>
 
 ```ts
 ConveyorRight: 2
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:260](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.ShakerLeft :id=shakerleft
+### ShakerLeft :id=shakerleft
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.ShakerLeft</code></p>
 
 ```ts
 ShakerLeft: 3
@@ -36,7 +42,9 @@ Defined in: [sandkit/enums/index.d.ts:261](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.ShakerRight :id=shakerright
+### ShakerRight :id=shakerright
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.ShakerRight</code></p>
 
 ```ts
 ShakerRight: 4
@@ -46,7 +54,9 @@ Defined in: [sandkit/enums/index.d.ts:262](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.LauncherUp :id=launcherup
+### LauncherUp :id=launcherup
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.LauncherUp</code></p>
 
 ```ts
 LauncherUp: 5
@@ -56,7 +66,9 @@ Defined in: [sandkit/enums/index.d.ts:263](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.LauncherLeft :id=launcherleft
+### LauncherLeft :id=launcherleft
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.LauncherLeft</code></p>
 
 ```ts
 LauncherLeft: 6
@@ -66,7 +78,9 @@ Defined in: [sandkit/enums/index.d.ts:264](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.LauncherRight :id=launcherright
+### LauncherRight :id=launcherright
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.LauncherRight</code></p>
 
 ```ts
 LauncherRight: 7
@@ -76,7 +90,9 @@ Defined in: [sandkit/enums/index.d.ts:265](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.SplitterLeft :id=splitterleft
+### SplitterLeft :id=splitterleft
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.SplitterLeft</code></p>
 
 ```ts
 SplitterLeft: 8
@@ -86,7 +102,9 @@ Defined in: [sandkit/enums/index.d.ts:266](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.SplitterRight :id=splitterright
+### SplitterRight :id=splitterright
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.SplitterRight</code></p>
 
 ```ts
 SplitterRight: 9
@@ -96,7 +114,9 @@ Defined in: [sandkit/enums/index.d.ts:267](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.Dropper :id=dropper
+### Dropper :id=dropper
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.Dropper</code></p>
 
 ```ts
 Dropper: 10
@@ -106,7 +126,9 @@ Defined in: [sandkit/enums/index.d.ts:268](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.Foundation :id=foundation
+### Foundation :id=foundation
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.Foundation</code></p>
 
 ```ts
 Foundation: 11
@@ -116,7 +138,9 @@ Defined in: [sandkit/enums/index.d.ts:269](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.FoundationAngledLeft :id=foundationangledleft
+### FoundationAngledLeft :id=foundationangledleft
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.FoundationAngledLeft</code></p>
 
 ```ts
 FoundationAngledLeft: 12
@@ -126,7 +150,9 @@ Defined in: [sandkit/enums/index.d.ts:270](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.FoundationTriangleLeftDel :id=foundationtriangleleftdel
+### FoundationTriangleLeftDel :id=foundationtriangleleftdel
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.FoundationTriangleLeftDel</code></p>
 
 ```ts
 FoundationTriangleLeftDel: 13
@@ -136,7 +162,9 @@ Defined in: [sandkit/enums/index.d.ts:271](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.FoundationAngledRight :id=foundationangledright
+### FoundationAngledRight :id=foundationangledright
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.FoundationAngledRight</code></p>
 
 ```ts
 FoundationAngledRight: 14
@@ -146,7 +174,9 @@ Defined in: [sandkit/enums/index.d.ts:272](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.FoundationTriangleRightDel :id=foundationtrianglerightdel
+### FoundationTriangleRightDel :id=foundationtrianglerightdel
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.FoundationTriangleRightDel</code></p>
 
 ```ts
 FoundationTriangleRightDel: 15
@@ -156,7 +186,9 @@ Defined in: [sandkit/enums/index.d.ts:273](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.Collector :id=collector
+### Collector :id=collector
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.Collector</code></p>
 
 ```ts
 Collector: 16
@@ -166,7 +198,9 @@ Defined in: [sandkit/enums/index.d.ts:274](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.FilterLeft :id=filterleft
+### FilterLeft :id=filterleft
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.FilterLeft</code></p>
 
 ```ts
 FilterLeft: 17
@@ -176,7 +210,9 @@ Defined in: [sandkit/enums/index.d.ts:275](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.FilterRight :id=filterright
+### FilterRight :id=filterright
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.FilterRight</code></p>
 
 ```ts
 FilterRight: 18
@@ -186,7 +222,9 @@ Defined in: [sandkit/enums/index.d.ts:276](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.SlidingFoundation :id=slidingfoundation
+### SlidingFoundation :id=slidingfoundation
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.SlidingFoundation</code></p>
 
 ```ts
 SlidingFoundation: 19
@@ -196,7 +234,9 @@ Defined in: [sandkit/enums/index.d.ts:277](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.VelocitySoaker :id=velocitysoaker
+### VelocitySoaker :id=velocitysoaker
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.VelocitySoaker</code></p>
 
 ```ts
 VelocitySoaker: 20
@@ -206,7 +246,9 @@ Defined in: [sandkit/enums/index.d.ts:278](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.Grower :id=grower
+### Grower :id=grower
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.Grower</code></p>
 
 ```ts
 Grower: 21
@@ -216,7 +258,9 @@ Defined in: [sandkit/enums/index.d.ts:279](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.SoundBox :id=soundbox
+### SoundBox :id=soundbox
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.SoundBox</code></p>
 
 ```ts
 SoundBox: 22
@@ -226,7 +270,9 @@ Defined in: [sandkit/enums/index.d.ts:280](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.Pipe :id=pipe
+### Pipe :id=pipe
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.Pipe</code></p>
 
 ```ts
 Pipe: 23
@@ -236,7 +282,9 @@ Defined in: [sandkit/enums/index.d.ts:281](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.Pump :id=pump
+### Pump :id=pump
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.Pump</code></p>
 
 ```ts
 Pump: 24
@@ -246,7 +294,9 @@ Defined in: [sandkit/enums/index.d.ts:282](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.LiquidVent :id=liquidvent
+### LiquidVent :id=liquidvent
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.LiquidVent</code></p>
 
 ```ts
 LiquidVent: 25
@@ -256,7 +306,9 @@ Defined in: [sandkit/enums/index.d.ts:283](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.Light :id=light
+### Light :id=light
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.Light</code></p>
 
 ```ts
 Light: 26
@@ -266,7 +318,9 @@ Defined in: [sandkit/enums/index.d.ts:284](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.StructureType.FluxEmanator :id=fluxemanator
+### FluxEmanator :id=fluxemanator
+
+<p class="smt-member-path"><code>sandkit.enums.StructureType.FluxEmanator</code></p>
 
 ```ts
 FluxEmanator: 27

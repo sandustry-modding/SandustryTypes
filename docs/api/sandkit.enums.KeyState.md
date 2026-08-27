@@ -6,7 +6,9 @@ Key transition state for input polling.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.KeyState.Up :id=up
+### Up :id=up
+
+<p class="smt-member-path"><code>sandkit.enums.KeyState.Up</code></p>
 
 ```ts
 Up: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:213](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.KeyState.Down :id=down
+### Down :id=down
+
+<p class="smt-member-path"><code>sandkit.enums.KeyState.Down</code></p>
 
 ```ts
 Down: 2
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:214](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.KeyState.Pressed :id=pressed
+### Pressed :id=pressed
+
+<p class="smt-member-path"><code>sandkit.enums.KeyState.Pressed</code></p>
 
 ```ts
 Pressed: 3
@@ -36,7 +42,9 @@ Defined in: [sandkit/enums/index.d.ts:215](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.KeyState.Released :id=released
+### Released :id=released
+
+<p class="smt-member-path"><code>sandkit.enums.KeyState.Released</code></p>
 
 ```ts
 Released: 4
@@ -46,7 +54,9 @@ Defined in: [sandkit/enums/index.d.ts:216](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.KeyState.All :id=all
+### All :id=all
+
+<p class="smt-member-path"><code>sandkit.enums.KeyState.All</code></p>
 
 ```ts
 All: 5

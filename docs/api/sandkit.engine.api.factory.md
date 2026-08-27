@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.factory.addViabilityGold() :id=addviabilitygold
+### addViabilityGold() :id=addviabilitygold
+
+<p class="smt-member-path"><code>sandkit.engine.api.factory.addViabilityGold()</code></p>
 
 ```ts
 addViabilityGold(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.factory.canUnlockNextTier() :id=canunlocknexttier
+### canUnlockNextTier() :id=canunlocknexttier
+
+<p class="smt-member-path"><code>sandkit.engine.api.factory.canUnlockNextTier()</code></p>
 
 ```ts
 canUnlockNextTier(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.factory.ensureProcessAtLeast() :id=ensureprocessatleast
+### ensureProcessAtLeast() :id=ensureprocessatleast
+
+<p class="smt-member-path"><code>sandkit.engine.api.factory.ensureProcessAtLeast()</code></p>
 
 ```ts
 ensureProcessAtLeast(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.factory.flushDeferredLevelUps() :id=flushdeferredlevelups
+### flushDeferredLevelUps() :id=flushdeferredlevelups
+
+<p class="smt-member-path"><code>sandkit.engine.api.factory.flushDeferredLevelUps()</code></p>
 
 ```ts
 flushDeferredLevelUps(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.factory.getLevel() :id=getlevel
+### getLevel() :id=getlevel
+
+<p class="smt-member-path"><code>sandkit.engine.api.factory.getLevel()</code></p>
 
 ```ts
 getLevel(...args: unknown[]): unknown
@@ -130,7 +140,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.factory.getProcessCount() :id=getprocesscount
+### getProcessCount() :id=getprocesscount
+
+<p class="smt-member-path"><code>sandkit.engine.api.factory.getProcessCount()</code></p>
 
 ```ts
 getProcessCount(...args: unknown[]): unknown
@@ -154,7 +166,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.factory.getProcessRate() :id=getprocessrate
+### getProcessRate() :id=getprocessrate
+
+<p class="smt-member-path"><code>sandkit.engine.api.factory.getProcessRate()</code></p>
 
 ```ts
 getProcessRate(...args: unknown[]): unknown
@@ -178,7 +192,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.factory.recordProcess() :id=recordprocess
+### recordProcess() :id=recordprocess
+
+<p class="smt-member-path"><code>sandkit.engine.api.factory.recordProcess()</code></p>
 
 ```ts
 recordProcess(...args: unknown[]): unknown
@@ -202,7 +218,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.factory.unlockNextTier() :id=unlocknexttier
+### unlockNextTier() :id=unlocknexttier
+
+<p class="smt-member-path"><code>sandkit.engine.api.factory.unlockNextTier()</code></p>
 
 ```ts
 unlockNextTier(...args: unknown[]): unknown

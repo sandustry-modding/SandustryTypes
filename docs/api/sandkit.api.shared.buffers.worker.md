@@ -4,13 +4,15 @@ Named shared memory buffers for worker threads.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.shared.buffers.require() (worker) :id=require
+### require() :id=require
+
+<p class="smt-member-path"><code>sandkit.api.shared.buffers.require() (worker)</code></p>
 
 ```ts
 require(key: string, config: object): SharedArray
 ```
 
-Defined in: [worker/api/shared.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/shared.d.ts#L27)
+Defined in: [worker/api/shared.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/worker/api/shared.d.ts#L28)
 
 Attach to a named shared buffer on this worker.
 
@@ -41,8 +43,14 @@ Expected array type and length for validation.
 
 [`SharedArray`](api/sandkit.api.shared.md#sharedarray)
 
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.shared.buffers.require`
+
 ## References <!-- {docsify-ignore} -->
 
-### sandkit.api.shared.buffers.get (worker) :id=get
+### get :id=get
+
+<p class="smt-member-path"><code>sandkit.api.shared.buffers.get (worker)</code></p>
 
 Re-exports [get](api/sandkit.api.shared.buffers.md#get)

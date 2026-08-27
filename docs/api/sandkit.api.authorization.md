@@ -5,7 +5,9 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.authorization.canBuildAtCell() :id=canbuildatcell
+### canBuildAtCell() :id=canbuildatcell
+
+<p class="smt-member-path"><code>sandkit.api.authorization.canBuildAtCell()</code></p>
 
 ```ts
 canBuildAtCell(...args: CellCoordinates): boolean
@@ -29,7 +31,9 @@ True when building is allowed in the authorization zone.
 
 ***
 
-### sandkit.api.authorization.canGrabAtCell() :id=cangrabatcell
+### canGrabAtCell() :id=cangrabatcell
+
+<p class="smt-member-path"><code>sandkit.api.authorization.canGrabAtCell()</code></p>
 
 ```ts
 canGrabAtCell(...args: CellCoordinates): boolean
@@ -53,7 +57,9 @@ True when grabbing is allowed in the authorization zone.
 
 ***
 
-### sandkit.api.authorization.canUseTool() :id=canusetool
+### canUseTool() :id=canusetool
+
+<p class="smt-member-path"><code>sandkit.api.authorization.canUseTool()</code></p>
 
 ```ts
 canUseTool(player: Player, isFlamethrower?: boolean): boolean
@@ -85,7 +91,9 @@ True when tool use is allowed for the player.
 
 ***
 
-### sandkit.api.authorization.canUseToolAtCell() :id=canusetoolatcell
+### canUseToolAtCell() :id=canusetoolatcell
+
+<p class="smt-member-path"><code>sandkit.api.authorization.canUseToolAtCell()</code></p>
 
 ```ts
 canUseToolAtCell(...args: [number, number, boolean]): boolean
@@ -109,7 +117,9 @@ True when tool use is allowed at the cell.
 
 ***
 
-### sandkit.api.authorization.getZoneIdAtCell() :id=getzoneidatcell
+### getZoneIdAtCell() :id=getzoneidatcell
+
+<p class="smt-member-path"><code>sandkit.api.authorization.getZoneIdAtCell()</code></p>
 
 ```ts
 getZoneIdAtCell(...args: CellCoordinates): number
@@ -133,7 +143,9 @@ Numeric zone id for the cell.
 
 ***
 
-### sandkit.api.authorization.getPlayerZoneId() :id=getplayerzoneid
+### getPlayerZoneId() :id=getplayerzoneid
+
+<p class="smt-member-path"><code>sandkit.api.authorization.getPlayerZoneId()</code></p>
 
 ```ts
 getPlayerZoneId(): number

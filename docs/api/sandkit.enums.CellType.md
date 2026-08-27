@@ -6,7 +6,9 @@ Terrain / special cell kinds in the simulation grid.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.CellType.Empty :id=empty
+### Empty :id=empty
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Empty</code></p>
 
 ```ts
 Empty: 0
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:57](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Element :id=element
+### Element :id=element
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Element</code></p>
 
 ```ts
 Element: 1
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:58](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Dirt :id=dirt
+### Dirt :id=dirt
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Dirt</code></p>
 
 ```ts
 Dirt: 2
@@ -36,7 +42,9 @@ Defined in: [sandkit/enums/index.d.ts:59](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.SporeSoil :id=sporesoil
+### SporeSoil :id=sporesoil
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.SporeSoil</code></p>
 
 ```ts
 SporeSoil: 3
@@ -46,7 +54,9 @@ Defined in: [sandkit/enums/index.d.ts:60](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Fog :id=fog
+### Fog :id=fog
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Fog</code></p>
 
 ```ts
 Fog: 4
@@ -56,7 +66,9 @@ Defined in: [sandkit/enums/index.d.ts:61](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.FogJetpackBlock :id=fogjetpackblock
+### FogJetpackBlock :id=fogjetpackblock
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.FogJetpackBlock</code></p>
 
 ```ts
 FogJetpackBlock: 5
@@ -66,7 +78,9 @@ Defined in: [sandkit/enums/index.d.ts:62](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.FogWater :id=fogwater
+### FogWater :id=fogwater
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.FogWater</code></p>
 
 ```ts
 FogWater: 6
@@ -76,7 +90,9 @@ Defined in: [sandkit/enums/index.d.ts:63](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.FreezingIceSoil :id=freezingicesoil
+### FreezingIceSoil :id=freezingicesoil
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.FreezingIceSoil</code></p>
 
 ```ts
 FreezingIceSoil: 7
@@ -86,7 +102,9 @@ Defined in: [sandkit/enums/index.d.ts:64](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Divider :id=divider
+### Divider :id=divider
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Divider</code></p>
 
 ```ts
 Divider: 8
@@ -96,7 +114,9 @@ Defined in: [sandkit/enums/index.d.ts:65](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Grass :id=grass
+### Grass :id=grass
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Grass</code></p>
 
 ```ts
 Grass: 9
@@ -106,7 +126,9 @@ Defined in: [sandkit/enums/index.d.ts:66](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Moss :id=moss
+### Moss :id=moss
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Moss</code></p>
 
 ```ts
 Moss: 10
@@ -116,7 +138,9 @@ Defined in: [sandkit/enums/index.d.ts:67](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.GoldSoil :id=goldsoil
+### GoldSoil :id=goldsoil
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.GoldSoil</code></p>
 
 ```ts
 GoldSoil: 11
@@ -126,7 +150,9 @@ Defined in: [sandkit/enums/index.d.ts:68](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Petal :id=petal
+### Petal :id=petal
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Petal</code></p>
 
 ```ts
 Petal: 12
@@ -136,7 +162,9 @@ Defined in: [sandkit/enums/index.d.ts:69](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.FogLava :id=foglava
+### FogLava :id=foglava
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.FogLava</code></p>
 
 ```ts
 FogLava: 13
@@ -146,7 +174,9 @@ Defined in: [sandkit/enums/index.d.ts:70](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Fluxite :id=fluxite
+### Fluxite :id=fluxite
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Fluxite</code></p>
 
 ```ts
 Fluxite: 14
@@ -156,7 +186,9 @@ Defined in: [sandkit/enums/index.d.ts:71](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Block :id=block
+### Block :id=block
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Block</code></p>
 
 ```ts
 Block: 15
@@ -166,7 +198,9 @@ Defined in: [sandkit/enums/index.d.ts:72](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.SlidingBlock :id=slidingblock
+### SlidingBlock :id=slidingblock
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.SlidingBlock</code></p>
 
 ```ts
 SlidingBlock: 16
@@ -176,7 +210,9 @@ Defined in: [sandkit/enums/index.d.ts:73](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.SlidingBlockLeft :id=slidingblockleft
+### SlidingBlockLeft :id=slidingblockleft
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.SlidingBlockLeft</code></p>
 
 ```ts
 SlidingBlockLeft: 17
@@ -186,7 +222,9 @@ Defined in: [sandkit/enums/index.d.ts:74](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.SlidingBlockRight :id=slidingblockright
+### SlidingBlockRight :id=slidingblockright
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.SlidingBlockRight</code></p>
 
 ```ts
 SlidingBlockRight: 18
@@ -196,7 +234,9 @@ Defined in: [sandkit/enums/index.d.ts:75](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.ConveyorLeft :id=conveyorleft
+### ConveyorLeft :id=conveyorleft
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.ConveyorLeft</code></p>
 
 ```ts
 ConveyorLeft: 19
@@ -206,7 +246,9 @@ Defined in: [sandkit/enums/index.d.ts:76](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.ConveyorRight :id=conveyorright
+### ConveyorRight :id=conveyorright
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.ConveyorRight</code></p>
 
 ```ts
 ConveyorRight: 20
@@ -216,7 +258,9 @@ Defined in: [sandkit/enums/index.d.ts:77](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.ShakerLeft :id=shakerleft
+### ShakerLeft :id=shakerleft
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.ShakerLeft</code></p>
 
 ```ts
 ShakerLeft: 21
@@ -226,7 +270,9 @@ Defined in: [sandkit/enums/index.d.ts:78](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.ShakerRight :id=shakerright
+### ShakerRight :id=shakerright
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.ShakerRight</code></p>
 
 ```ts
 ShakerRight: 22
@@ -236,7 +282,9 @@ Defined in: [sandkit/enums/index.d.ts:79](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Stone :id=stone
+### Stone :id=stone
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Stone</code></p>
 
 ```ts
 Stone: 23
@@ -246,7 +294,9 @@ Defined in: [sandkit/enums/index.d.ts:80](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.VelocitySoaker :id=velocitysoaker
+### VelocitySoaker :id=velocitysoaker
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.VelocitySoaker</code></p>
 
 ```ts
 VelocitySoaker: 24
@@ -256,7 +306,9 @@ Defined in: [sandkit/enums/index.d.ts:81](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Ice :id=ice
+### Ice :id=ice
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Ice</code></p>
 
 ```ts
 Ice: 25
@@ -266,7 +318,9 @@ Defined in: [sandkit/enums/index.d.ts:82](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Grower :id=grower
+### Grower :id=grower
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Grower</code></p>
 
 ```ts
 Grower: 26
@@ -276,7 +330,9 @@ Defined in: [sandkit/enums/index.d.ts:83](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.NascentWater :id=nascentwater
+### NascentWater :id=nascentwater
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.NascentWater</code></p>
 
 ```ts
 NascentWater: 27
@@ -286,7 +342,9 @@ Defined in: [sandkit/enums/index.d.ts:84](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.SandiumSoil :id=sandiumsoil
+### SandiumSoil :id=sandiumsoil
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.SandiumSoil</code></p>
 
 ```ts
 SandiumSoil: 28
@@ -296,7 +354,9 @@ Defined in: [sandkit/enums/index.d.ts:85](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Obsidian :id=obsidian
+### Obsidian :id=obsidian
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Obsidian</code></p>
 
 ```ts
 Obsidian: 29
@@ -306,7 +366,9 @@ Defined in: [sandkit/enums/index.d.ts:86](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.CellType.Crackstone :id=crackstone
+### Crackstone :id=crackstone
+
+<p class="smt-member-path"><code>sandkit.enums.CellType.Crackstone</code></p>
 
 ```ts
 Crackstone: 30

@@ -2,11 +2,21 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.terrains.TerrainDefinition :id=terraindefinition
+### TerrainDefinition :id=terraindefinition
 
-Defined in: [sandkit/api/terrains.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L101)
+<p class="smt-member-path"><code>sandkit.api.terrains.TerrainDefinition</code></p>
 
-Terrain definition shape for [register](#register) and [updateDefinition](#updatedefinition).
+Defined in: [sandkit/api/terrains.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L53)
+
+Terrain definition shape with typed element interactions.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terrains.register`
+
+#### Extends
+
+- `Omit`\<[`TerrainDefinition`](api/sandkit.api.terrains.worker.md#terraindefinition), `"interactions"`\>
 
 #### Indexable
 
@@ -14,77 +24,11 @@ Terrain definition shape for [register](#register) and [updateDefinition](#updat
 [key: string]: unknown
 ```
 
+```ts
+[key: number]: unknown
+```
+
 #### Properties
-
-##### id
-
-```ts
-id: string
-```
-
-Defined in: [sandkit/api/terrains.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L103)
-
-Unique mod-scoped terrain id.
-
-##### nameKey?
-
-```ts
-optional nameKey?: string
-```
-
-Defined in: [sandkit/api/terrains.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L105)
-
-i18n key for the terrain display name.
-
-##### hp?
-
-```ts
-optional hp?: number
-```
-
-Defined in: [sandkit/api/terrains.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L107)
-
-Default terrain hit points.
-
-##### materialId?
-
-```ts
-optional materialId?: number
-```
-
-Defined in: [sandkit/api/terrains.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L109)
-
-Material id used for rendering. Must be > obstacle breakpoint and < 150.
-
-##### metaColor?
-
-```ts
-optional metaColor?: number
-```
-
-Defined in: [sandkit/api/terrains.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L111)
-
-UI/meta color as 0xRRGGBB.
-
-##### colorHSL?
-
-```ts
-optional colorHSL?: [number, number, number]
-```
-
-Defined in: [sandkit/api/terrains.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L113)
-
-Base terrain color as HSL components.
-
-##### excavationRequirements?
-
-```ts
-optional excavationRequirements?: readonly string[]
-```
-
-Defined in: [sandkit/api/terrains.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L115)
-
-Tool item ids required to excavate this terrain.
 
 ##### interactions?
 
@@ -92,41 +36,21 @@ Tool item ids required to excavate this terrain.
 optional interactions?: readonly Interaction[]
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L117)
+Defined in: [sandkit/api/terrains.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L55)
 
 Tooltip interactions shown for this terrain.
 
-##### output?
-
-```ts
-optional output?: object
-```
-
-Defined in: [sandkit/api/terrains.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L119)
-
-Default element drop when the terrain is destroyed.
-
-###### elementType
-
-```ts
-elementType: ElementType
-```
-
-###### chance
-
-```ts
-chance: number
-```
-
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.terrains.register() :id=register
+### register() :id=register
+
+<p class="smt-member-path"><code>sandkit.api.terrains.register()</code></p>
 
 ```ts
 register(definition: TerrainDefinition): object
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L48)
+Defined in: [sandkit/api/terrains.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L65)
 
 Register a new terrain definition.
 
@@ -150,15 +74,21 @@ Object with the assigned `cellType`.
 cellType: TerrainType
 ```
 
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terrains.register`
+
 ***
 
-### sandkit.api.terrains.updateDefinition() :id=updatedefinition
+### updateDefinition() :id=updatedefinition
+
+<p class="smt-member-path"><code>sandkit.api.terrains.updateDefinition()</code></p>
 
 ```ts
 updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L55)
+Defined in: [sandkit/api/terrains.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L74)
 
 Patch fields on an existing terrain definition.
 
@@ -180,17 +110,47 @@ Fields to merge onto the definition.
 
 `void`
 
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terrains.updateDefinition`
+
 ***
 
-### sandkit.api.terrains.createAtCellWhenIdle() :id=createatcellwhenidle
+### createAtCell() :id=createatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.createAtCell()</code></p>
+
+```ts
+createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
+```
+
+Defined in: [sandkit/api/terrains.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L85)
+
+Create terrain at a cell. Main-entry writes are deferred; reads see the old grid.
+
+#### Parameters
+
+##### args
+
+...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md#terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md#terrainmutationoptions)\]
+
+#### Returns
+
+`void`
+
+#### See
+
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.terrains.createAtCell`
+
+***
+
+### ~~createAtCellWhenIdle()~~
 
 ```ts
 createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L64)
-
-Create terrain at a cell when simulation is idle.
+Defined in: [sandkit/api/terrains.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L91)
 
 #### Parameters
 
@@ -202,17 +162,51 @@ Create terrain at a cell when simulation is idle.
 
 `void`
 
+#### Deprecated
+
+Use [createAtCell](#createatcell) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.createAtCell`
+
 ***
 
-### sandkit.api.terrains.replaceAtCellWhenIdle() :id=replaceatcellwhenidle
+### replaceAtCell() :id=replaceatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.replaceAtCell()</code></p>
+
+```ts
+replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
+```
+
+Defined in: [sandkit/api/terrains.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L102)
+
+Replace terrain at a cell. Main-entry writes are deferred; reads see the old grid.
+
+#### Parameters
+
+##### args
+
+...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md#terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md#terrainmutationoptions)\]
+
+#### Returns
+
+`void`
+
+#### See
+
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.terrains.replaceAtCell`
+
+***
+
+### ~~replaceAtCellWhenIdle()~~
 
 ```ts
 replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L73)
-
-Replace terrain at a cell when simulation is idle.
+Defined in: [sandkit/api/terrains.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L108)
 
 #### Parameters
 
@@ -224,17 +218,27 @@ Replace terrain at a cell when simulation is idle.
 
 `void`
 
+#### Deprecated
+
+Use [replaceAtCell](#replaceatcell) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.replaceAtCell`
+
 ***
 
-### sandkit.api.terrains.removeAtCellWhenIdle() :id=removeatcellwhenidle
+### removeAtCell() :id=removeatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.removeAtCell()</code></p>
 
 ```ts
-removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
+removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L81)
+Defined in: [sandkit/api/terrains.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L118)
 
-Remove terrain at a cell when simulation is idle.
+Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid.
 
 #### Parameters
 
@@ -246,17 +250,51 @@ Remove terrain at a cell when simulation is idle.
 
 `void`
 
+#### See
+
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.terrains.removeAtCell`
+
 ***
 
-### sandkit.api.terrains.setHpAtCellWhenIdle() :id=sethpatcellwhenidle
+### ~~removeAtCellWhenIdle()~~
 
 ```ts
-setHpAtCellWhenIdle(...args: [number, number, number]): void
+removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L89)
+Defined in: [sandkit/api/terrains.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L124)
 
-Set terrain hit points at a cell when simulation is idle.
+#### Parameters
+
+##### args
+
+...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md#terrainmutationoptions)\]
+
+#### Returns
+
+`void`
+
+#### Deprecated
+
+Use [removeAtCell](#removeatcell) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.removeAtCell`
+
+***
+
+### setHitPointsAtCell() :id=sethitpointsatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.setHitPointsAtCell()</code></p>
+
+```ts
+setHitPointsAtCell(...args: [number, number, number]): void
+```
+
+Defined in: [sandkit/api/terrains.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L134)
+
+Set terrain hit points at a cell. Main-entry writes are deferred; reads see the old grid.
 
 #### Parameters
 
@@ -268,17 +306,19 @@ Set terrain hit points at a cell when simulation is idle.
 
 `void`
 
+#### See
+
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.terrains.setHitPointsAtCell`
+
 ***
 
-### sandkit.api.terrains.setHpAtCell() :id=sethpatcell
+### ~~setHpAtCell()~~
 
 ```ts
 setHpAtCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L98)
-
-Set terrain hit points at a cell immediately.
+Defined in: [sandkit/api/terrains.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L140)
 
 #### Parameters
 
@@ -290,88 +330,158 @@ Set terrain hit points at a cell immediately.
 
 `boolean`
 
-True when hp changed or the terrain was removed.
+#### Deprecated
+
+Use [setHitPointsAtCell](#sethitpointsatcell) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
+
+***
+
+### ~~setHpAtCellWhenIdle()~~
+
+```ts
+setHpAtCellWhenIdle(...args: [number, number, number]): void
+```
+
+Defined in: [sandkit/api/terrains.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/terrains.d.ts#L146)
+
+#### Parameters
+
+##### args
+
+...\[`number`, `number`, `number`\]
+
+#### Returns
+
+`void`
+
+#### Deprecated
+
+Use [setHitPointsAtCell](#sethitpointsatcell) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
 
 ## References <!-- {docsify-ignore} -->
 
-### sandkit.api.terrains.getTypeFromId :id=gettypefromid
+### getIdByType :id=getidbytype
+
+<p class="smt-member-path"><code>sandkit.api.terrains.getIdByType</code></p>
+
+Re-exports [getIdByType](api/sandkit.api.terrains.worker.md#getidbytype)
+
+***
+
+### getTypeById :id=gettypebyid
+
+<p class="smt-member-path"><code>sandkit.api.terrains.getTypeById</code></p>
+
+Re-exports [getTypeById](api/sandkit.api.terrains.worker.md#gettypebyid)
+
+***
+
+### getTypeFromId :id=gettypefromid
+
+<p class="smt-member-path"><code>sandkit.api.terrains.getTypeFromId</code></p>
 
 Re-exports [getTypeFromId](api/sandkit.api.terrains.worker.md#gettypefromid)
 
 ***
 
-### sandkit.api.terrains.getTypeAtCell :id=gettypeatcell
+### getDefinitionByType :id=getdefinitionbytype
+
+<p class="smt-member-path"><code>sandkit.api.terrains.getDefinitionByType</code></p>
+
+Re-exports [getDefinitionByType](api/sandkit.api.terrains.worker.md#getdefinitionbytype)
+
+***
+
+### getTypeAtCell :id=gettypeatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.getTypeAtCell</code></p>
 
 Re-exports [getTypeAtCell](api/sandkit.api.terrains.worker.md#gettypeatcell)
 
 ***
 
-### sandkit.api.terrains.getDataAtCell :id=getdataatcell
+### getDataAtCell :id=getdataatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.getDataAtCell</code></p>
 
 Re-exports [getDataAtCell](api/sandkit.api.terrains.worker.md#getdataatcell)
 
 ***
 
-### sandkit.api.terrains.isAtCell :id=isatcell
+### isAtCell :id=isatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.isAtCell</code></p>
 
 Re-exports [isAtCell](api/sandkit.api.terrains.worker.md#isatcell)
 
 ***
 
-### sandkit.api.terrains.isTypeAtCell :id=istypeatcell
+### isTypeAtCell :id=istypeatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.isTypeAtCell</code></p>
 
 Re-exports [isTypeAtCell](api/sandkit.api.terrains.worker.md#istypeatcell)
 
 ***
 
-### sandkit.api.terrains.isCellIdTerrain :id=iscellidterrain
+### isCellIdTerrain :id=iscellidterrain
+
+<p class="smt-member-path"><code>sandkit.api.terrains.isCellIdTerrain</code></p>
 
 Re-exports [isCellIdTerrain](api/sandkit.api.terrains.worker.md#iscellidterrain)
 
 ***
 
-### sandkit.api.terrains.damageAtCell :id=damageatcell
+### damageAtCell :id=damageatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.damageAtCell</code></p>
 
 Re-exports [damageAtCell](api/sandkit.api.terrains.worker.md#damageatcell)
 
 ***
 
-### sandkit.api.terrains.createAtCell :id=createatcell
+### TerrainMutationOptions :id=terrainmutationoptions
 
-Re-exports [createAtCell](api/sandkit.api.terrains.worker.md#createatcell)
-
-***
-
-### sandkit.api.terrains.replaceAtCell :id=replaceatcell
-
-Re-exports [replaceAtCell](api/sandkit.api.terrains.worker.md#replaceatcell)
-
-***
-
-### sandkit.api.terrains.removeAtCell :id=removeatcell
-
-Re-exports [removeAtCell](api/sandkit.api.terrains.worker.md#removeatcell)
-
-***
-
-### sandkit.api.terrains.TerrainMutationOptions :id=terrainmutationoptions
+<p class="smt-member-path"><code>sandkit.api.terrains.TerrainMutationOptions</code></p>
 
 Re-exports [TerrainMutationOptions](api/sandkit.api.terrains.worker.md#terrainmutationoptions)
 
 ***
 
-### sandkit.api.terrains.TerrainType :id=terraintype
+### TerrainType :id=terraintype
+
+<p class="smt-member-path"><code>sandkit.api.terrains.TerrainType</code></p>
 
 Re-exports [TerrainType](api/sandkit.api.terrains.worker.md#terraintype)
 
 ***
 
-### sandkit.api.terrains.TerrainId :id=terrainid
+### TerrainId :id=terrainid
+
+<p class="smt-member-path"><code>sandkit.api.terrains.TerrainId</code></p>
 
 Re-exports [TerrainId](api/sandkit.api.terrains.worker.md#terrainid)
 
 ***
 
-### sandkit.api.terrains.TerrainRef :id=terrainref
+### TerrainRef :id=terrainref
+
+<p class="smt-member-path"><code>sandkit.api.terrains.TerrainRef</code></p>
 
 Re-exports [TerrainRef](api/sandkit.api.terrains.worker.md#terrainref)
+
+***
+
+### TerrainDataAtCell :id=terraindataatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.TerrainDataAtCell</code></p>
+
+Re-exports [TerrainDataAtCell](api/sandkit.api.terrains.worker.md#terraindataatcell)

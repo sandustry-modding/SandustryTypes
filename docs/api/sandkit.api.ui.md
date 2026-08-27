@@ -7,7 +7,9 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.ui.TooltipMessageData :id=tooltipmessagedata
+### TooltipMessageData :id=tooltipmessagedata
+
+<p class="smt-member-path"><code>sandkit.api.ui.TooltipMessageData</code></p>
 
 Defined in: [sandkit/api/ui.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L137)
 
@@ -37,7 +39,9 @@ Message body as localized text.
 
 ***
 
-### sandkit.api.ui.Focusable :id=focusable
+### Focusable :id=focusable
+
+<p class="smt-member-path"><code>sandkit.api.ui.Focusable</code></p>
 
 Defined in: [sandkit/api/ui.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L145)
 
@@ -87,7 +91,9 @@ Move controller focus to this element.
 
 ***
 
-### sandkit.api.ui.FocusOptions :id=focusoptions
+### FocusOptions :id=focusoptions
+
+<p class="smt-member-path"><code>sandkit.api.ui.FocusOptions</code></p>
 
 Defined in: [sandkit/api/ui.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/ui.d.ts#L155)
 
@@ -201,7 +207,9 @@ When true, scroll the element into view on focus.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.ui.OverlaySlot :id=overlayslot
+### OverlaySlot :id=overlayslot
+
+<p class="smt-member-path"><code>sandkit.api.ui.OverlaySlot</code></p>
 
 ```ts
 OverlaySlot = LooseString<"hotbar" | "global">
@@ -213,7 +221,9 @@ Overlay slot name. Known vanilla slots autocomplete; any string is allowed.
 
 ***
 
-### sandkit.api.ui.ComponentId :id=componentid
+### ComponentId :id=componentid
+
+<p class="smt-member-path"><code>sandkit.api.ui.ComponentId</code></p>
 
 ```ts
 ComponentId = ComponentId | LooseString<never>
@@ -226,7 +236,9 @@ Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) values autocomplete
 
 ***
 
-### sandkit.api.ui.ComponentUpdateOptions :id=componentupdateoptions
+### ComponentUpdateOptions :id=componentupdateoptions
+
+<p class="smt-member-path"><code>sandkit.api.ui.ComponentUpdateOptions</code></p>
 
 ```ts
 ComponentUpdateOptions = Record<string, unknown>
@@ -238,7 +250,9 @@ Component-specific update payload passed to [update](#update).
 
 ***
 
-### sandkit.api.ui.TooltipData :id=tooltipdata
+### TooltipData :id=tooltipdata
+
+<p class="smt-member-path"><code>sandkit.api.ui.TooltipData</code></p>
 
 ```ts
 TooltipData = TooltipMessageData
@@ -250,7 +264,9 @@ Tooltip payload shown near the cursor or UI target.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.ui.update() :id=update
+### update() :id=update
+
+<p class="smt-member-path"><code>sandkit.api.ui.update()</code></p>
 
 ```ts
 update(componentId: ComponentId, options?: ComponentUpdateOptions): void
@@ -280,7 +296,9 @@ Component-specific update payload.
 
 ***
 
-### sandkit.api.ui.openPauseMenu() :id=openpausemenu
+### openPauseMenu() :id=openpausemenu
+
+<p class="smt-member-path"><code>sandkit.api.ui.openPauseMenu()</code></p>
 
 ```ts
 openPauseMenu(): void
@@ -296,7 +314,9 @@ Open the pause menu.
 
 ***
 
-### sandkit.api.ui.showTooltip() :id=showtooltip
+### showTooltip() :id=showtooltip
+
+<p class="smt-member-path"><code>sandkit.api.ui.showTooltip()</code></p>
 
 ```ts
 showTooltip(data: TooltipMessageData): void
@@ -320,7 +340,9 @@ Tooltip type and localized content.
 
 ***
 
-### sandkit.api.ui.alert() :id=alert
+### alert() :id=alert
+
+<p class="smt-member-path"><code>sandkit.api.ui.alert()</code></p>
 
 ```ts
 alert(message: LocalizedText, title?: LocalizedText): Promise<void>
@@ -352,7 +374,9 @@ Promise that resolves when the user dismisses the dialog.
 
 ***
 
-### sandkit.api.ui.confirm() :id=confirm
+### confirm() :id=confirm
+
+<p class="smt-member-path"><code>sandkit.api.ui.confirm()</code></p>
 
 ```ts
 confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
@@ -384,7 +408,9 @@ Promise that resolves with true when confirmed, or false when cancelled.
 
 ***
 
-### sandkit.api.ui.prompt() :id=prompt
+### prompt() :id=prompt
+
+<p class="smt-member-path"><code>sandkit.api.ui.prompt()</code></p>
 
 ```ts
 prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>
@@ -434,7 +460,9 @@ Promise that resolves with entered text, or null when cancelled.
 
 ***
 
-### sandkit.api.ui.inject() :id=inject
+### inject() :id=inject
+
+<p class="smt-member-path"><code>sandkit.api.ui.inject()</code></p>
 
 ```ts
 inject(componentId: ComponentId, component: ComponentType<Record<string, never>>): () => void
@@ -466,18 +494,24 @@ Function that unmounts the injected component.
 
 ## References <!-- {docsify-ignore} -->
 
-### sandkit.api.ui.toast :id=toast
+### toast :id=toast
+
+<p class="smt-member-path"><code>sandkit.api.ui.toast</code></p>
 
 Re-exports [toast](api/sandkit.api.ui.worker.md#toast)
 
 ***
 
-### sandkit.api.ui.LocalizedText :id=localizedtext
+### LocalizedText :id=localizedtext
+
+<p class="smt-member-path"><code>sandkit.api.ui.LocalizedText</code></p>
 
 Re-exports [LocalizedText](api/sandkit.api.ui.worker.md#localizedtext)
 
 ***
 
-### sandkit.api.ui.ToastOptions :id=toastoptions
+### ToastOptions :id=toastoptions
+
+<p class="smt-member-path"><code>sandkit.api.ui.ToastOptions</code></p>
 
 Re-exports [ToastOptions](api/sandkit.api.ui.worker.md#toastoptions)

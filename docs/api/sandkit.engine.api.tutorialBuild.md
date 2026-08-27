@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.tutorialBuild.areAllTargetsBuilt() :id=arealltargetsbuilt
+### areAllTargetsBuilt() :id=arealltargetsbuilt
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.areAllTargetsBuilt()</code></p>
 
 ```ts
 areAllTargetsBuilt(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt() :id=arefamilytargetsbuilt
+### areFamilyTargetsBuilt() :id=arefamilytargetsbuilt
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt()</code></p>
 
 ```ts
 areFamilyTargetsBuilt(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget() :id=canplaceatactivetarget
+### canPlaceAtActiveTarget() :id=canplaceatactivetarget
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget()</code></p>
 
 ```ts
 canPlaceAtActiveTarget(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.tutorialBuild.getFoundationMoveDests() :id=getfoundationmovedests
+### getFoundationMoveDests() :id=getfoundationmovedests
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.getFoundationMoveDests()</code></p>
 
 ```ts
 getFoundationMoveDests(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.tutorialBuild.getFoundationMoveSources() :id=getfoundationmovesources
+### getFoundationMoveSources() :id=getfoundationmovesources
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.getFoundationMoveSources()</code></p>
 
 ```ts
 getFoundationMoveSources(...args: unknown[]): unknown
@@ -130,7 +140,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.tutorialBuild.getTargets() :id=gettargets
+### getTargets() :id=gettargets
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.getTargets()</code></p>
 
 ```ts
 getTargets(...args: unknown[]): unknown
@@ -154,7 +166,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.tutorialBuild.hasDefinition() :id=hasdefinition
+### hasDefinition() :id=hasdefinition
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.hasDefinition()</code></p>
 
 ```ts
 hasDefinition(...args: unknown[]): unknown
@@ -178,7 +192,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.tutorialBuild.isStepConstrained() :id=isstepconstrained
+### isStepConstrained() :id=isstepconstrained
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.isStepConstrained()</code></p>
 
 ```ts
 isStepConstrained(...args: unknown[]): unknown
@@ -202,7 +218,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.tutorialBuild.matchesFoundationMove() :id=matchesfoundationmove
+### matchesFoundationMove() :id=matchesfoundationmove
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.matchesFoundationMove()</code></p>
 
 ```ts
 matchesFoundationMove(...args: unknown[]): unknown
@@ -226,7 +244,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.tutorialBuild.matchesFoundationRemove() :id=matchesfoundationremove
+### matchesFoundationRemove() :id=matchesfoundationremove
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.matchesFoundationRemove()</code></p>
 
 ```ts
 matchesFoundationRemove(...args: unknown[]): unknown
@@ -250,7 +270,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt() :id=shouldprotectactivetargetat
+### shouldProtectActiveTargetAt() :id=shouldprotectactivetargetat
+
+<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt()</code></p>
 
 ```ts
 shouldProtectActiveTargetAt(...args: unknown[]): unknown

@@ -2,7 +2,9 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### shared.player.Player :id=player
+### Player :id=player
+
+<p class="smt-member-path"><code>shared.player.Player</code></p>
 
 Defined in: [shared/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L34)
 
@@ -377,7 +379,9 @@ reloading: boolean
 
 ***
 
-### shared.player.InventoryItem :id=inventoryitem
+### InventoryItem :id=inventoryitem
+
+<p class="smt-member-path"><code>shared.player.InventoryItem</code></p>
 
 Defined in: [shared/player.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/player.d.ts#L146)
 
@@ -483,7 +487,9 @@ Defined in: [shared/player.d.ts:172](https://github.com/sandustry-modding/Sandus
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### shared.player.CellCoordinates :id=cellcoordinates
+### CellCoordinates :id=cellcoordinates
+
+<p class="smt-member-path"><code>shared.player.CellCoordinates</code></p>
 
 ```ts
 CellCoordinates = [number, number]
@@ -497,7 +503,9 @@ Cell coordinates match `sandkit.api.*AtCell` helpers: column first, then row.
 
 ***
 
-### shared.player.Vector2 :id=vector2
+### Vector2 :id=vector2
+
+<p class="smt-member-path"><code>shared.player.Vector2</code></p>
 
 ```ts
 Vector2 = object

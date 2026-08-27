@@ -5,7 +5,9 @@ Main thread only.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.assets.AssetProviderV1 :id=assetproviderv1
+### AssetProviderV1 :id=assetproviderv1
+
+<p class="smt-member-path"><code>sandkit.api.assets.AssetProviderV1</code></p>
 
 ```ts
 AssetProviderV1 = object
@@ -59,7 +61,9 @@ Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/Sa
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.assets.getUrl() :id=geturl
+### getUrl() :id=geturl
+
+<p class="smt-member-path"><code>sandkit.api.assets.getUrl()</code></p>
 
 ```ts
 getUrl(relativePath: string): string
@@ -83,7 +87,9 @@ Path relative to the calling mod folder.
 
 ***
 
-### sandkit.api.assets.getSelectedProvider() :id=getselectedprovider
+### getSelectedProvider() :id=getselectedprovider
+
+<p class="smt-member-path"><code>sandkit.api.assets.getSelectedProvider()</code></p>
 
 ```ts
 getSelectedProvider(kind: string): AssetProviderV1 | null
@@ -107,7 +113,9 @@ Asset kind identifier.
 
 ***
 
-### sandkit.api.assets.selectProvider() :id=selectprovider
+### selectProvider() :id=selectprovider
+
+<p class="smt-member-path"><code>sandkit.api.assets.selectProvider()</code></p>
 
 ```ts
 selectProvider(kind: string, providerId: string | null): boolean

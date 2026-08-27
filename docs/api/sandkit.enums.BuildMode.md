@@ -6,7 +6,9 @@ Linear vs rectangular structure placement.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.BuildMode.Linear :id=linear
+### Linear :id=linear
+
+<p class="smt-member-path"><code>sandkit.enums.BuildMode.Linear</code></p>
 
 ```ts
 Linear: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:43](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.BuildMode.Rectangular :id=rectangular
+### Rectangular :id=rectangular
+
+<p class="smt-member-path"><code>sandkit.enums.BuildMode.Rectangular</code></p>
 
 ```ts
 Rectangular: 2

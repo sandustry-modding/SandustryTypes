@@ -2,7 +2,9 @@
 
 ## Variables <!-- {docsify-ignore} -->
 
-### sandkit.api.constants.physics :id=physics
+### physics :id=physics
+
+<p class="smt-member-path"><code>sandkit.api.constants.physics</code></p>
 
 ```ts
 const physics: Readonly<{ normal: 0; skip: 1; aggressiveSkip: 2; }>

@@ -4,7 +4,9 @@ Local session storage without mod id scope.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.storage.local.get() :id=get
+### get() :id=get
+
+<p class="smt-member-path"><code>sandkit.api.storage.local.get()</code></p>
 
 ```ts
 get(key: string): JsonValueV1 | undefined
@@ -28,7 +30,9 @@ Storage key.
 
 ***
 
-### sandkit.api.storage.local.set() :id=set
+### set() :id=set
+
+<p class="smt-member-path"><code>sandkit.api.storage.local.set()</code></p>
 
 ```ts
 set(key: string, value: JsonValueV1): void
@@ -58,7 +62,9 @@ JSON-serializable value.
 
 ***
 
-### sandkit.api.storage.local.remove() :id=remove
+### remove() :id=remove
+
+<p class="smt-member-path"><code>sandkit.api.storage.local.remove()</code></p>
 
 ```ts
 remove(key: string): void

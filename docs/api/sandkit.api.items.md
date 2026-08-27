@@ -5,7 +5,9 @@ Main thread only.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.items.ItemDefinition :id=itemdefinition
+### ItemDefinition :id=itemdefinition
+
+<p class="smt-member-path"><code>sandkit.api.items.ItemDefinition</code></p>
 
 Defined in: [sandkit/api/items.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/items.d.ts#L10)
 
@@ -75,7 +77,9 @@ Called after the item is rendered each frame.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.items.ItemId :id=itemid
+### ItemId :id=itemid
+
+<p class="smt-member-path"><code>sandkit.api.items.ItemId</code></p>
 
 ```ts
 ItemId = ItemId | LooseString<never>
@@ -88,7 +92,9 @@ Built-in [ItemIdEnum](api/sandkit.enums.ItemId.md) values autocomplete; custom s
 
 ***
 
-### sandkit.api.items.ItemType :id=itemtype
+### ItemType :id=itemtype
+
+<p class="smt-member-path"><code>sandkit.api.items.ItemType</code></p>
 
 ```ts
 ItemType = ItemType | TaggedNumber<"itemType">
@@ -101,7 +107,9 @@ Built-in [ItemTypeEnum](api/sandkit.enums.ItemType.md) values autocomplete.
 
 ***
 
-### sandkit.api.items.ModItem :id=moditem
+### ModItem :id=moditem
+
+<p class="smt-member-path"><code>sandkit.api.items.ModItem</code></p>
 
 ```ts
 ModItem = unknown
@@ -113,7 +121,9 @@ Runtime item instance (not yet typed in declarations).
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.items.register() :id=register
+### register() :id=register
+
+<p class="smt-member-path"><code>sandkit.api.items.register()</code></p>
 
 ```ts
 register(definition: ItemDefinition): void
@@ -137,7 +147,9 @@ Item id, handlers, and display metadata.
 
 ***
 
-### sandkit.api.items.updateDefinition() :id=updatedefinition
+### updateDefinition() :id=updatedefinition
+
+<p class="smt-member-path"><code>sandkit.api.items.updateDefinition()</code></p>
 
 ```ts
 updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
@@ -167,7 +179,9 @@ Fields to merge into the definition.
 
 ***
 
-### sandkit.api.items.getDefinitionById() :id=getdefinitionbyid
+### getDefinitionById() :id=getdefinitionbyid
+
+<p class="smt-member-path"><code>sandkit.api.items.getDefinitionById()</code></p>
 
 ```ts
 getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
@@ -191,7 +205,9 @@ Registered item id.
 
 ***
 
-### sandkit.api.items.createFromId() :id=createfromid
+### createFromId() :id=createfromid
+
+<p class="smt-member-path"><code>sandkit.api.items.createFromId()</code></p>
 
 ```ts
 createFromId(itemId: ItemId): unknown
@@ -215,7 +231,9 @@ Registered item id.
 
 ***
 
-### sandkit.api.items.getActive() :id=getactive
+### getActive() :id=getactive
+
+<p class="smt-member-path"><code>sandkit.api.items.getActive()</code></p>
 
 ```ts
 getActive(): ItemDefinition<unknown, unknown> | undefined
@@ -231,7 +249,9 @@ Returns the item definition for the active hotbar slot.
 
 ***
 
-### sandkit.api.items.isActiveById() :id=isactivebyid
+### isActiveById() :id=isactivebyid
+
+<p class="smt-member-path"><code>sandkit.api.items.isActiveById()</code></p>
 
 ```ts
 isActiveById(itemId: ItemId, itemType?: ItemType): boolean

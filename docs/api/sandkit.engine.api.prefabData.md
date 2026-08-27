@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.prefabData.getAll() :id=getall
+### getAll() :id=getall
+
+<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getAll()</code></p>
 
 ```ts
 getAll(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.prefabData.getAllMetadata() :id=getallmetadata
+### getAllMetadata() :id=getallmetadata
+
+<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getAllMetadata()</code></p>
 
 ```ts
 getAllMetadata(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.prefabData.getArtifactLocations() :id=getartifactlocations
+### getArtifactLocations() :id=getartifactlocations
+
+<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getArtifactLocations()</code></p>
 
 ```ts
 getArtifactLocations(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.prefabData.getAtCell() :id=getatcell
+### getAtCell() :id=getatcell
+
+<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getAtCell()</code></p>
 
 ```ts
 getAtCell(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.prefabData.getMetadata() :id=getmetadata
+### getMetadata() :id=getmetadata
+
+<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getMetadata()</code></p>
 
 ```ts
 getMetadata(...args: unknown[]): unknown

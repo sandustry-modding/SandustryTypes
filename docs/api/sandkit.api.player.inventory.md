@@ -4,13 +4,15 @@ Player inventory helpers.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.player.inventory.addFromId() :id=addfromid
+### addById() :id=addbyid
+
+<p class="smt-member-path"><code>sandkit.api.player.inventory.addById()</code></p>
 
 ```ts
-addFromId(itemId: string): void
+addById(itemId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L73)
+Defined in: [sandkit/api/player.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L108)
 
 Add an item to inventory by item id.
 
@@ -25,3 +27,35 @@ Registered item id string.
 #### Returns
 
 `void`
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.inventory.addById`
+
+***
+
+### ~~addFromId()~~
+
+```ts
+addFromId(itemId: string): void
+```
+
+Defined in: [sandkit/api/player.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/sandkit/api/player.d.ts#L114)
+
+#### Parameters
+
+##### itemId
+
+`string`
+
+#### Returns
+
+`void`
+
+#### Deprecated
+
+Use [addById](#addbyid) instead.
+
+#### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.player.inventory.addById`

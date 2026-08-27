@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.teleportZones.add() :id=add
+### add() :id=add
+
+<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.add()</code></p>
 
 ```ts
 add(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.teleportZones.getAll() :id=getall
+### getAll() :id=getall
+
+<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.getAll()</code></p>
 
 ```ts
 getAll(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.teleportZones.getAtCell() :id=getatcell
+### getAtCell() :id=getatcell
+
+<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.getAtCell()</code></p>
 
 ```ts
 getAtCell(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.teleportZones.getById() :id=getbyid
+### getById() :id=getbyid
+
+<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.getById()</code></p>
 
 ```ts
 getById(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.teleportZones.remove() :id=remove
+### remove() :id=remove
+
+<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.remove()</code></p>
 
 ```ts
 remove(...args: unknown[]): unknown
@@ -130,7 +140,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.teleportZones.spawnDefaultParticles() :id=spawndefaultparticles
+### spawnDefaultParticles() :id=spawndefaultparticles
+
+<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.spawnDefaultParticles()</code></p>
 
 ```ts
 spawnDefaultParticles(...args: unknown[]): unknown
@@ -154,7 +166,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.teleportZones.teleportPlayerTo() :id=teleportplayerto
+### teleportPlayerTo() :id=teleportplayerto
+
+<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.teleportPlayerTo()</code></p>
 
 ```ts
 teleportPlayerTo(...args: unknown[]): unknown

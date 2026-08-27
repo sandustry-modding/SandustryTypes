@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.foundationColorPicker.getColor() :id=getcolor
+### getColor() :id=getcolor
+
+<p class="smt-member-path"><code>sandkit.engine.api.foundationColorPicker.getColor()</code></p>
 
 ```ts
 getColor(...args: unknown[]): unknown

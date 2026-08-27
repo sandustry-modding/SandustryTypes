@@ -2,7 +2,9 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.settings.FieldId :id=fieldid
+### FieldId :id=fieldid
+
+<p class="smt-member-path"><code>sandkit.api.settings.FieldId</code></p>
 
 ```ts
 FieldId = LooseString<never>
@@ -14,7 +16,9 @@ Settings field id. Any string is allowed.
 
 ***
 
-### sandkit.api.settings.ConfigValueV1 :id=configvaluev1
+### ConfigValueV1 :id=configvaluev1
+
+<p class="smt-member-path"><code>sandkit.api.settings.ConfigValueV1</code></p>
 
 ```ts
 ConfigValueV1 = string | number | boolean | null
@@ -26,7 +30,9 @@ Settings field value shape.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.settings.get() :id=get
+### get() :id=get
+
+<p class="smt-member-path"><code>sandkit.api.settings.get()</code></p>
 
 ```ts
 get(fieldId: string & object): ConfigValueV1 | undefined
@@ -50,7 +56,9 @@ Settings field identifier.
 
 ***
 
-### sandkit.api.settings.getAll() :id=getall
+### getAll() :id=getall
+
+<p class="smt-member-path"><code>sandkit.api.settings.getAll()</code></p>
 
 ```ts
 getAll(): Readonly<Record<string, ConfigValueV1>>
@@ -66,7 +74,9 @@ Return all settings as a read-only map.
 
 ***
 
-### sandkit.api.settings.onChange() :id=onchange
+### onChange() :id=onchange
+
+<p class="smt-member-path"><code>sandkit.api.settings.onChange()</code></p>
 
 ```ts
 onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void

@@ -6,7 +6,9 @@ Top-level game scene (menu, intro, deploy, in-game).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.Scene.MainMenu :id=mainmenu
+### MainMenu :id=mainmenu
+
+<p class="smt-member-path"><code>sandkit.enums.Scene.MainMenu</code></p>
 
 ```ts
 MainMenu: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.Scene.Intro :id=intro
+### Intro :id=intro
+
+<p class="smt-member-path"><code>sandkit.enums.Scene.Intro</code></p>
 
 ```ts
 Intro: 2
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.Scene.Deploy :id=deploy
+### Deploy :id=deploy
+
+<p class="smt-member-path"><code>sandkit.enums.Scene.Deploy</code></p>
 
 ```ts
 Deploy: 3
@@ -36,7 +42,9 @@ Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.Scene.Game :id=game
+### Game :id=game
+
+<p class="smt-member-path"><code>sandkit.enums.Scene.Game</code></p>
 
 ```ts
 Game: 4

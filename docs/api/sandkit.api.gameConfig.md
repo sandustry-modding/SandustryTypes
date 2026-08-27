@@ -5,7 +5,9 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.gameConfig.get() :id=get
+### get() :id=get
+
+<p class="smt-member-path"><code>sandkit.api.gameConfig.get()</code></p>
 
 ```ts
 get(key: string): JsonValueV1 | undefined
@@ -29,7 +31,9 @@ Game config key (merged defaults and overrides).
 
 ***
 
-### sandkit.api.gameConfig.getAll() :id=getall
+### getAll() :id=getall
+
+<p class="smt-member-path"><code>sandkit.api.gameConfig.getAll()</code></p>
 
 ```ts
 getAll(): JsonObjectV1

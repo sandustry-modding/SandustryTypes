@@ -8,7 +8,9 @@ Shared `sandkit.api.maps` base — active custom map metadata.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### sandkit.api.maps.ActiveMapV1 (worker) :id=activemapv1
+### ActiveMapV1 :id=activemapv1
+
+<p class="smt-member-path"><code>sandkit.api.maps.ActiveMapV1 (worker)</code></p>
 
 Defined in: [shared/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/shared/api/maps.d.ts#L18)
 
@@ -86,7 +88,9 @@ Defined in: [shared/api/maps.d.ts:27](https://github.com/sandustry-modding/Sandu
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.maps.getActive() (worker) :id=getactive
+### getActive() :id=getactive
+
+<p class="smt-member-path"><code>sandkit.api.maps.getActive() (worker)</code></p>
 
 ```ts
 getActive(): Readonly<ActiveMapV1> | null

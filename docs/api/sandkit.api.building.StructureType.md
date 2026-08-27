@@ -6,7 +6,9 @@ Built-in structure type ids used during placement.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.api.building.StructureType.ConveyorLeft :id=conveyorleft
+### ConveyorLeft :id=conveyorleft
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.ConveyorLeft</code></p>
 
 ```ts
 ConveyorLeft: 1
@@ -18,7 +20,9 @@ Left-facing conveyor belt.
 
 ***
 
-### sandkit.api.building.StructureType.ConveyorRight :id=conveyorright
+### ConveyorRight :id=conveyorright
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.ConveyorRight</code></p>
 
 ```ts
 ConveyorRight: 2
@@ -30,7 +34,9 @@ Right-facing conveyor belt.
 
 ***
 
-### sandkit.api.building.StructureType.ShakerLeft :id=shakerleft
+### ShakerLeft :id=shakerleft
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.ShakerLeft</code></p>
 
 ```ts
 ShakerLeft: 3
@@ -42,7 +48,9 @@ Left-facing shaker.
 
 ***
 
-### sandkit.api.building.StructureType.ShakerRight :id=shakerright
+### ShakerRight :id=shakerright
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.ShakerRight</code></p>
 
 ```ts
 ShakerRight: 4
@@ -54,7 +62,9 @@ Right-facing shaker.
 
 ***
 
-### sandkit.api.building.StructureType.LauncherUp :id=launcherup
+### LauncherUp :id=launcherup
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.LauncherUp</code></p>
 
 ```ts
 LauncherUp: 5
@@ -66,7 +76,9 @@ Up-facing launcher.
 
 ***
 
-### sandkit.api.building.StructureType.LauncherLeft :id=launcherleft
+### LauncherLeft :id=launcherleft
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.LauncherLeft</code></p>
 
 ```ts
 LauncherLeft: 6
@@ -78,7 +90,9 @@ Left-facing launcher.
 
 ***
 
-### sandkit.api.building.StructureType.LauncherRight :id=launcherright
+### LauncherRight :id=launcherright
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.LauncherRight</code></p>
 
 ```ts
 LauncherRight: 7
@@ -90,7 +104,9 @@ Right-facing launcher.
 
 ***
 
-### sandkit.api.building.StructureType.SplitterLeft :id=splitterleft
+### SplitterLeft :id=splitterleft
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.SplitterLeft</code></p>
 
 ```ts
 SplitterLeft: 8
@@ -102,7 +118,9 @@ Left-facing splitter.
 
 ***
 
-### sandkit.api.building.StructureType.SplitterRight :id=splitterright
+### SplitterRight :id=splitterright
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.SplitterRight</code></p>
 
 ```ts
 SplitterRight: 9
@@ -114,7 +132,9 @@ Right-facing splitter.
 
 ***
 
-### sandkit.api.building.StructureType.Dropper :id=dropper
+### Dropper :id=dropper
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.Dropper</code></p>
 
 ```ts
 Dropper: 10
@@ -126,7 +146,9 @@ Dropper structure.
 
 ***
 
-### sandkit.api.building.StructureType.Foundation :id=foundation
+### Foundation :id=foundation
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.Foundation</code></p>
 
 ```ts
 Foundation: 11
@@ -138,7 +160,9 @@ Foundation block.
 
 ***
 
-### sandkit.api.building.StructureType.FoundationAngledLeft :id=foundationangledleft
+### FoundationAngledLeft :id=foundationangledleft
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.FoundationAngledLeft</code></p>
 
 ```ts
 FoundationAngledLeft: 12
@@ -150,7 +174,9 @@ Angled foundation facing left.
 
 ***
 
-### sandkit.api.building.StructureType.FoundationTriangleLeftDel :id=foundationtriangleleftdel
+### FoundationTriangleLeftDel :id=foundationtriangleleftdel
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.FoundationTriangleLeftDel</code></p>
 
 ```ts
 FoundationTriangleLeftDel: 13
@@ -162,7 +188,9 @@ Left triangle foundation (deprecated id).
 
 ***
 
-### sandkit.api.building.StructureType.FoundationAngledRight :id=foundationangledright
+### FoundationAngledRight :id=foundationangledright
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.FoundationAngledRight</code></p>
 
 ```ts
 FoundationAngledRight: 14
@@ -174,7 +202,9 @@ Angled foundation facing right.
 
 ***
 
-### sandkit.api.building.StructureType.FoundationTriangleRightDel :id=foundationtrianglerightdel
+### FoundationTriangleRightDel :id=foundationtrianglerightdel
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.FoundationTriangleRightDel</code></p>
 
 ```ts
 FoundationTriangleRightDel: 15
@@ -186,7 +216,9 @@ Right triangle foundation (deprecated id).
 
 ***
 
-### sandkit.api.building.StructureType.Collector :id=collector
+### Collector :id=collector
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.Collector</code></p>
 
 ```ts
 Collector: 16
@@ -198,7 +230,9 @@ Collector structure.
 
 ***
 
-### sandkit.api.building.StructureType.FilterLeft :id=filterleft
+### FilterLeft :id=filterleft
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.FilterLeft</code></p>
 
 ```ts
 FilterLeft: 17
@@ -210,7 +244,9 @@ Left-facing filter.
 
 ***
 
-### sandkit.api.building.StructureType.FilterRight :id=filterright
+### FilterRight :id=filterright
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.FilterRight</code></p>
 
 ```ts
 FilterRight: 18
@@ -222,7 +258,9 @@ Right-facing filter.
 
 ***
 
-### sandkit.api.building.StructureType.SlidingFoundation :id=slidingfoundation
+### SlidingFoundation :id=slidingfoundation
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.SlidingFoundation</code></p>
 
 ```ts
 SlidingFoundation: 19
@@ -234,7 +272,9 @@ Sliding foundation block.
 
 ***
 
-### sandkit.api.building.StructureType.VelocitySoaker :id=velocitysoaker
+### VelocitySoaker :id=velocitysoaker
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.VelocitySoaker</code></p>
 
 ```ts
 VelocitySoaker: 20
@@ -246,7 +286,9 @@ Velocity soaker structure.
 
 ***
 
-### sandkit.api.building.StructureType.Grower :id=grower
+### Grower :id=grower
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.Grower</code></p>
 
 ```ts
 Grower: 21
@@ -258,7 +300,9 @@ Grower structure.
 
 ***
 
-### sandkit.api.building.StructureType.SoundBox :id=soundbox
+### SoundBox :id=soundbox
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.SoundBox</code></p>
 
 ```ts
 SoundBox: 22
@@ -270,7 +314,9 @@ Sound box structure.
 
 ***
 
-### sandkit.api.building.StructureType.Pipe :id=pipe
+### Pipe :id=pipe
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.Pipe</code></p>
 
 ```ts
 Pipe: 23
@@ -282,7 +328,9 @@ Pipe segment.
 
 ***
 
-### sandkit.api.building.StructureType.Pump :id=pump
+### Pump :id=pump
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.Pump</code></p>
 
 ```ts
 Pump: 24
@@ -294,7 +342,9 @@ Pump structure.
 
 ***
 
-### sandkit.api.building.StructureType.LiquidVent :id=liquidvent
+### LiquidVent :id=liquidvent
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.LiquidVent</code></p>
 
 ```ts
 LiquidVent: 25
@@ -306,7 +356,9 @@ Liquid vent structure.
 
 ***
 
-### sandkit.api.building.StructureType.Light :id=light
+### Light :id=light
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.Light</code></p>
 
 ```ts
 Light: 26
@@ -318,7 +370,9 @@ Light structure.
 
 ***
 
-### sandkit.api.building.StructureType.GloomEmitter :id=gloomemitter
+### GloomEmitter :id=gloomemitter
+
+<p class="smt-member-path"><code>sandkit.api.building.StructureType.GloomEmitter</code></p>
 
 ```ts
 GloomEmitter: 27

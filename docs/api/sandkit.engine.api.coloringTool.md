@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.coloringTool.colorStructure() :id=colorstructure
+### colorStructure() :id=colorstructure
+
+<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.colorStructure()</code></p>
 
 ```ts
 colorStructure(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.coloringTool.floodFillColor() :id=floodfillcolor
+### floodFillColor() :id=floodfillcolor
+
+<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.floodFillColor()</code></p>
 
 ```ts
 floodFillColor(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.coloringTool.getColor() :id=getcolor
+### getColor() :id=getcolor
+
+<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.getColor()</code></p>
 
 ```ts
 getColor(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.coloringTool.isColorableStructure() :id=iscolorablestructure
+### isColorableStructure() :id=iscolorablestructure
+
+<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.isColorableStructure()</code></p>
 
 ```ts
 isColorableStructure(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.coloringTool.isMatchColorMode() :id=ismatchcolormode
+### isMatchColorMode() :id=ismatchcolormode
+
+<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.isMatchColorMode()</code></p>
 
 ```ts
 isMatchColorMode(...args: unknown[]): unknown
@@ -130,7 +140,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.coloringTool.isPaintBucketMode() :id=ispaintbucketmode
+### isPaintBucketMode() :id=ispaintbucketmode
+
+<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.isPaintBucketMode()</code></p>
 
 ```ts
 isPaintBucketMode(...args: unknown[]): unknown
@@ -154,7 +166,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.coloringTool.setColor() :id=setcolor
+### setColor() :id=setcolor
+
+<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.setColor()</code></p>
 
 ```ts
 setColor(...args: unknown[]): unknown
@@ -178,7 +192,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.coloringTool.toggleMatchColorMode() :id=togglematchcolormode
+### toggleMatchColorMode() :id=togglematchcolormode
+
+<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.toggleMatchColorMode()</code></p>
 
 ```ts
 toggleMatchColorMode(...args: unknown[]): unknown
@@ -202,7 +218,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.coloringTool.togglePaintBucketMode() :id=togglepaintbucketmode
+### togglePaintBucketMode() :id=togglepaintbucketmode
+
+<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.togglePaintBucketMode()</code></p>
 
 ```ts
 togglePaintBucketMode(...args: unknown[]): unknown

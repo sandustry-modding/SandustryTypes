@@ -5,7 +5,9 @@ Main thread only.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### sandkit.api.action.Action :id=action
+### Action :id=action
+
+<p class="smt-member-path"><code>sandkit.api.action.Action</code></p>
 
 ```ts
 Action = AssetRef
@@ -17,7 +19,9 @@ Hotbar action asset reference.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.action.getActive() :id=getactive
+### getActive() :id=getactive
+
+<p class="smt-member-path"><code>sandkit.api.action.getActive()</code></p>
 
 ```ts
 getActive(): AssetRef
@@ -35,7 +39,9 @@ Active hotbar action reference.
 
 ***
 
-### sandkit.api.action.getSelected() :id=getselected
+### getSelected() :id=getselected
+
+<p class="smt-member-path"><code>sandkit.api.action.getSelected()</code></p>
 
 ```ts
 getSelected(): AssetRef
@@ -53,7 +59,9 @@ Selected hotbar action reference.
 
 ***
 
-### sandkit.api.action.setCustomData() :id=setcustomdata
+### setCustomData() :id=setcustomdata
+
+<p class="smt-member-path"><code>sandkit.api.action.setCustomData()</code></p>
 
 ```ts
 setCustomData<Input>(data: Input): void

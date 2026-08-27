@@ -2,7 +2,9 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.resources.collectFluxiteAtCell() :id=collectfluxiteatcell
+### collectFluxiteAtCell() :id=collectfluxiteatcell
+
+<p class="smt-member-path"><code>sandkit.api.resources.collectFluxiteAtCell()</code></p>
 
 ```ts
 collectFluxiteAtCell(...args: CellCoordinates): void
@@ -24,7 +26,9 @@ Collect fluxite at the given cell.
 
 ***
 
-### sandkit.api.resources.updateEnergy() :id=updateenergy
+### updateEnergy() :id=updateenergy
+
+<p class="smt-member-path"><code>sandkit.api.resources.updateEnergy()</code></p>
 
 ```ts
 updateEnergy(amount: number, options?: object): void

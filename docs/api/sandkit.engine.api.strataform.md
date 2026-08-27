@@ -10,7 +10,9 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.engine.api.strataform.getDefaultConfig() :id=getdefaultconfig
+### getDefaultConfig() :id=getdefaultconfig
+
+<p class="smt-member-path"><code>sandkit.engine.api.strataform.getDefaultConfig()</code></p>
 
 ```ts
 getDefaultConfig(...args: unknown[]): unknown
@@ -34,7 +36,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.strataform.getRegisteredTypes() :id=getregisteredtypes
+### getRegisteredTypes() :id=getregisteredtypes
+
+<p class="smt-member-path"><code>sandkit.engine.api.strataform.getRegisteredTypes()</code></p>
 
 ```ts
 getRegisteredTypes(...args: unknown[]): unknown
@@ -58,7 +62,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.strataform.registerType() :id=registertype
+### registerType() :id=registertype
+
+<p class="smt-member-path"><code>sandkit.engine.api.strataform.registerType()</code></p>
 
 ```ts
 registerType(...args: unknown[]): unknown
@@ -82,7 +88,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.strataform.trigger() :id=trigger
+### trigger() :id=trigger
+
+<p class="smt-member-path"><code>sandkit.engine.api.strataform.trigger()</code></p>
 
 ```ts
 trigger(...args: unknown[]): unknown
@@ -106,7 +114,9 @@ Game state first, then method-specific arguments.
 
 ***
 
-### sandkit.engine.api.strataform.triggerByType() :id=triggerbytype
+### triggerByType() :id=triggerbytype
+
+<p class="smt-member-path"><code>sandkit.engine.api.strataform.triggerByType()</code></p>
 
 ```ts
 triggerByType(...args: unknown[]): unknown

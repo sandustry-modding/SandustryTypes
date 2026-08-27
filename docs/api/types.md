@@ -2,6 +2,8 @@
 
 TypeScript declarations and Docsify API docs for the live Sandustry `sandkit` object. Package name: `@sandustry-modding/types`.
 
+Originally a fork of [flamableassassin/sandustry-modding-types](https://github.com/flamableassassin/sandustry-modding-types/).
+
 Folder layout mirrors runtime shape so you can jump from code to the matching `.d.ts` path.
 
 ## Runtime map
@@ -35,7 +37,9 @@ Declaration files use `export namespace` because it is the usual `.d.ts` pattern
 npm install @sandustry-modding/types
 ```
 
-In `tsconfig.json`, include the package types (or reference them from an ambient file):
+### Project config (preferred)
+
+Add the package to `compilerOptions.types` in `tsconfig.json` or `jsconfig.json`:
 
 ```json
 {
@@ -43,6 +47,26 @@ In `tsconfig.json`, include the package types (or reference them from an ambient
     "types": ["@sandustry-modding/types"]
   }
 }
+```
+
+If you already list other packages in `types` (for example `"react"` or `"node"`), keep those entries and add `"@sandustry-modding/types"` to the same array. A non-empty `types` list replaces TypeScript’s default auto-inclusion of all `@types/*` packages.
+
+`jsconfig.json` uses the same shape for JavaScript mods.
+
+### Per-file reference
+
+You can also pull the ambient types into one file:
+
+```ts
+/// <reference types="@sandustry-modding/types" />
+```
+
+That triple-slash directive works in `.ts` and `.js` (including checked JS with `checkJs`). Put it at the top of `main.js` / `worker.js`, or in a small ambient `.d.ts` included by your project.
+
+Deep declaration modules are also available, for example:
+
+```ts
+import type { RetroConsoleGame } from "@sandustry-modding/types/sandkit/engine";
 ```
 
 ## Usage
@@ -63,4 +87,4 @@ Regenerate the Docsify API reference from these declarations:
 npm run docs:api
 ```
 
-Output lands in `docs/api/`. `npm run docs` runs that step, then serves the docs site.
+Output lands in `docs/api/`. The namespace index is `docs/modules.md` and the combined page is `docs/full.md`. `npm run docs` runs that step, then serves the docs site.

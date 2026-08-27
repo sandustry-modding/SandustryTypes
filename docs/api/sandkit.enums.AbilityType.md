@@ -6,7 +6,9 @@ Item ability categories (dig, shoot, spray, laser).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.AbilityType.Dig :id=dig
+### Dig :id=dig
+
+<p class="smt-member-path"><code>sandkit.enums.AbilityType.Dig</code></p>
 
 ```ts
 Dig: 1
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:10](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.AbilityType.Shoot :id=shoot
+### Shoot :id=shoot
+
+<p class="smt-member-path"><code>sandkit.enums.AbilityType.Shoot</code></p>
 
 ```ts
 Shoot: 2
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:11](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.AbilityType.Spray :id=spray
+### Spray :id=spray
+
+<p class="smt-member-path"><code>sandkit.enums.AbilityType.Spray</code></p>
 
 ```ts
 Spray: 3
@@ -36,7 +42,9 @@ Defined in: [sandkit/enums/index.d.ts:12](https://github.com/sandustry-modding/S
 
 ***
 
-### sandkit.enums.AbilityType.Laser :id=laser
+### Laser :id=laser
+
+<p class="smt-member-path"><code>sandkit.enums.AbilityType.Laser</code></p>
 
 ```ts
 Laser: 4

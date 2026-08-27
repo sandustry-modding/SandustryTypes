@@ -10,6 +10,7 @@ Prefer these methods over [sandkit.engine](api/sandkit.md#engine-1) when both ex
 - [action](api/sandkit.api.action.md)
 - [assets](api/sandkit.api.assets.md)
 - [authorization](api/sandkit.api.authorization.md)
+- [blueprints](api/sandkit.api.blueprints.md)
 - [building](api/sandkit.api.building.md)
 - [camera](api/sandkit.api.camera.md)
 - [collector](api/sandkit.api.collector.md)
@@ -19,9 +20,12 @@ Prefer these methods over [sandkit.engine](api/sandkit.md#engine-1) when both ex
 - [effects](api/sandkit.api.effects.md)
 - [elements](api/sandkit.api.elements.md)
 - [energy](api/sandkit.api.energy.md)
+- [entities](api/sandkit.api.entities.md)
 - [events](api/sandkit.api.events.md)
 - [excavation](api/sandkit.api.excavation.md)
+- [factory](api/sandkit.api.factory.md)
 - [fire](api/sandkit.api.fire.md)
+- [game](api/sandkit.api.game.md)
 - [gameConfig](api/sandkit.api.gameConfig.md)
 - [grid](api/sandkit.api.grid.md)
 - [hooks](api/sandkit.api.hooks.md)
@@ -32,6 +36,8 @@ Prefer these methods over [sandkit.engine](api/sandkit.md#engine-1) when both ex
 - [maps](api/sandkit.api.maps.md)
 - [mods](api/sandkit.api.mods.md)
 - [patterns](api/sandkit.api.patterns.md)
+- [pickups](api/sandkit.api.pickups.md)
+- [pipes](api/sandkit.api.pipes.md)
 - [player](api/sandkit.api.player.md)
 - [processing](api/sandkit.api.processing.md)
 - [progression](api/sandkit.api.progression.md)
@@ -60,10 +66,12 @@ Prefer these methods over [sandkit.engine](api/sandkit.md#engine-1) when both ex
 - [upgrades](api/sandkit.api.upgrades.md)
 - [utils](api/sandkit.api.utils.md)
 - [workers](api/sandkit.api.workers.md)
-- [world](api/sandkit.api.world.md)
+- [~~world~~](api/sandkit.api.world.md)
 
 ## References <!-- {docsify-ignore} -->
 
-### sandkit.api.SandkitApi :id=sandkitapi
+### SandkitApi :id=sandkitapi
+
+<p class="smt-member-path"><code>sandkit.api.SandkitApi</code></p>
 
 Re-exports [SandkitApi](api/sandkit.md#sandkitapi)

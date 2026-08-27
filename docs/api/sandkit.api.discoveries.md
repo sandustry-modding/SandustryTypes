@@ -5,7 +5,9 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.discoveries.addElementByType() :id=addelementbytype
+### addElementByType() :id=addelementbytype
+
+<p class="smt-member-path"><code>sandkit.api.discoveries.addElementByType()</code></p>
 
 ```ts
 addElementByType(elementType: ElementType): void
@@ -29,7 +31,9 @@ Numeric element type id.
 
 ***
 
-### sandkit.api.discoveries.addTerrainByType() :id=addterrainbytype
+### addTerrainByType() :id=addterrainbytype
+
+<p class="smt-member-path"><code>sandkit.api.discoveries.addTerrainByType()</code></p>
 
 ```ts
 addTerrainByType(terrainType: TerrainType): void

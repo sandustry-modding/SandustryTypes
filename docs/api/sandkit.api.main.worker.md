@@ -11,7 +11,9 @@ larger `sandkit.api` surface; do not assume parity.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.main.emitEvent() (worker) :id=emitevent
+### emitEvent() :id=emitevent
+
+<p class="smt-member-path"><code>sandkit.api.main.emitEvent() (worker)</code></p>
 
 ```ts
 emitEvent<Payload = any>(eventId: string, payload: Payload): void

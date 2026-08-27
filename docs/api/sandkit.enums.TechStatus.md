@@ -6,7 +6,9 @@ Visibility and research state of a tech node.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### sandkit.enums.TechStatus.Available :id=available
+### Available :id=available
+
+<p class="smt-member-path"><code>sandkit.enums.TechStatus.Available</code></p>
 
 ```ts
 Available: 0
@@ -16,7 +18,9 @@ Defined in: [sandkit/enums/index.d.ts:405](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.TechStatus.Visible :id=visible
+### Visible :id=visible
+
+<p class="smt-member-path"><code>sandkit.enums.TechStatus.Visible</code></p>
 
 ```ts
 Visible: 1
@@ -26,7 +30,9 @@ Defined in: [sandkit/enums/index.d.ts:406](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.TechStatus.Researched :id=researched
+### Researched :id=researched
+
+<p class="smt-member-path"><code>sandkit.enums.TechStatus.Researched</code></p>
 
 ```ts
 Researched: 2
@@ -36,7 +42,9 @@ Defined in: [sandkit/enums/index.d.ts:407](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.TechStatus.Unknown :id=unknown
+### Unknown :id=unknown
+
+<p class="smt-member-path"><code>sandkit.enums.TechStatus.Unknown</code></p>
 
 ```ts
 Unknown: 3
@@ -46,7 +54,9 @@ Defined in: [sandkit/enums/index.d.ts:408](https://github.com/sandustry-modding/
 
 ***
 
-### sandkit.enums.TechStatus.Hidden :id=hidden
+### Hidden :id=hidden
+
+<p class="smt-member-path"><code>sandkit.enums.TechStatus.Hidden</code></p>
 
 ```ts
 Hidden: 4

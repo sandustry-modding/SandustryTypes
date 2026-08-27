@@ -2,7 +2,9 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### sandkit.api.workers.setPostUpdateEnabled() :id=setpostupdateenabled
+### setPostUpdateEnabled() :id=setpostupdateenabled
+
+<p class="smt-member-path"><code>sandkit.api.workers.setPostUpdateEnabled()</code></p>
 
 ```ts
 setPostUpdateEnabled(enabled: boolean): void
