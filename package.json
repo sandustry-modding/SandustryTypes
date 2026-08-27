@@ -1,6 +1,6 @@
 {
   "name": "@sandustry-modding/types",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "TypeScript declarations and API docs for the Sandustry Sandkit host API",
   "license": "MIT",
   "repository": {
@@ -15,6 +15,10 @@
   "exports": {
     ".": {
       "types": "./global.d.ts"
+    },
+    "./package.json": "./package.json",
+    "./*": {
+      "types": "./*"
     }
   },
   "files": [

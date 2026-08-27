@@ -35,14 +35,16 @@ Declaration files use `export namespace` because it is the usual `.d.ts` pattern
 npm install @sandustry-modding/types
 ```
 
-In `tsconfig.json`, include the package types (or reference them from an ambient file):
+Pull ambient `sandkit` and type aliases into your project with a triple-slash reference (or an ambient `.d.ts` that imports the package):
 
-```json
-{
-  "compilerOptions": {
-    "types": ["@sandustry-modding/types"]
-  }
-}
+```ts
+/// <reference types="@sandustry-modding/types" />
+```
+
+Deep declaration modules are also available, for example:
+
+```ts
+import type { RetroConsoleGame } from "@sandustry-modding/types/sandkit/engine";
 ```
 
 ## Usage
