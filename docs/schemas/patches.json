@@ -2,11 +2,18 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json",
   "title": "Sandkit patches.json",
-  "type": "array",
-  "items": {
-    "$ref": "#/definitions/BundlePatch"
-  },
-  "description": "Root shape of `patches.json`: an ordered list of BundlePatch entries.",
+  "anyOf": [
+    {
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/BundlePatch"
+      }
+    },
+    {
+      "$ref": "#/definitions/BundlePatchesDocument"
+    }
+  ],
+  "description": "Root shape of `patches.json`: a bare BundlePatch array (game format), or a BundlePatchesDocument object when the file includes `$schema`.",
   "definitions": {
     "BundlePatch": {
       "type": "object",
@@ -62,6 +69,18 @@
         "atomicGroup": {
           "type": "string",
           "description": "Group id shared by patches that must all succeed or all fail together. Use the same string on paired main (`js/bundle.js`) and worker (`js/simulation-worker.js`) patches."
+        },
+        "occurrence": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "string",
+              "const": "all"
+            }
+          ],
+          "description": "Which match to rewrite when `find` / `regex` hits more than once. `\"all\"` (default when omitted in the loader) or a 1-based index. Must not exceed expectedMatches when both are numbers."
         },
         "description": {
           "type": "string",
@@ -119,6 +138,27 @@
       ],
       "additionalProperties": false,
       "description": "Regex finder when the target is not a plain BundlePatch.find string."
+    },
+    "BundlePatchesDocument": {
+      "type": "object",
+      "properties": {
+        "$schema": {
+          "type": "string",
+          "description": "Optional JSON Schema URL for editors (for example VS Code). Not read by the game loader."
+        },
+        "patches": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BundlePatch"
+          },
+          "description": "Ordered patch list (same as the bare-array game format)."
+        }
+      },
+      "required": [
+        "patches"
+      ],
+      "additionalProperties": false,
+      "description": "Editor-friendly `patches.json` wrapper with an optional `$schema` URL.\n\nThe game loader expects a bare BundlePatch array. Prefer that array in shipped mods. Use this object shape only when your editor needs inline `$schema`."
     }
   }
 }

@@ -4,6 +4,10 @@
   "title": "Sandkit modinfo.json",
   "type": "object",
   "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "Optional JSON Schema URL for editors (for example VS Code). Not read by the game loader."
+    },
     "manifestVersion": {
       "type": "number",
       "const": 1,
@@ -251,6 +255,14 @@
         "labelKey": {
           "type": "string",
           "description": "i18n key for the settings label."
+        },
+        "description": {
+          "type": "string",
+          "description": "Plain-text help text for the setting."
+        },
+        "descriptionKey": {
+          "type": "string",
+          "description": "i18n key for the setting help text."
         },
         "options": {
           "type": "array",

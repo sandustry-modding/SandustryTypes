@@ -182,14 +182,41 @@ export interface BundlePatch {
    */
   atomicGroup?: string;
   /**
+   * Which match to rewrite when `find` / `regex` hits more than once.
+   * `"all"` (default when omitted in the loader) or a 1-based index.
+   * Must not exceed {@link expectedMatches} when both are numbers.
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
+   */
+  occurrence?: number | "all";
+  /**
    * Human-readable note for maintainers. Not required by the official schema.
    */
   description?: string;
 }
 
 /**
- * Root shape of `patches.json`: an ordered list of {@link BundlePatch} entries.
+ * Editor-friendly `patches.json` wrapper with an optional `$schema` URL.
+ *
+ * The game loader expects a bare {@link BundlePatch} array. Prefer that array in
+ * shipped mods. Use this object shape only when your editor needs inline `$schema`.
+ */
+export interface BundlePatchesDocument {
+  /**
+   * Optional JSON Schema URL for editors (for example VS Code).
+   * Not read by the game loader.
+   */
+  $schema?: string;
+  /**
+   * Ordered patch list (same as the bare-array game format).
+   */
+  patches: BundlePatch[];
+}
+
+/**
+ * Root shape of `patches.json`: a bare {@link BundlePatch} array (game format),
+ * or a {@link BundlePatchesDocument} object when the file includes `$schema`.
  *
  * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
  */
-export type BundlePatchesFile = BundlePatch[];
+export type BundlePatchesFile = BundlePatch[] | BundlePatchesDocument;

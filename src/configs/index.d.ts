@@ -37,6 +37,7 @@ export type {
 export type {
   BundlePatch,
   BundlePatchRegex,
+  BundlePatchesDocument,
   BundlePatchesFile,
   PatchOperation,
   PatchTargetFile,

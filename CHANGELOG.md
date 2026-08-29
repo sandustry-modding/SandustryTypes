@@ -11,6 +11,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - JSON Schema files for `modinfo.json` and `patches.json` under `docs/schemas/` (GitHub Pages URLs; see [JSON Schema](schemas.md))
 - `npm run docs:schemas` generates those schemas from `src/configs/` via `ts-json-schema-generator`; `validate` checks they are not stale
+- `ConfigSchemaChoice.description` / `descriptionKey` (same help fields as number and boolean)
+- Optional `ModInfo.$schema` for editor schema association (ignored by the game)
+- Optional `BundlePatchesDocument` (`$schema` + `patches`) so editors can attach a schema URL; bare arrays still validate
+- `BundlePatch.occurrence` (`"all"` or a 1-based index) from the game patch loader
+
+### Fixed
+
+- Generated `modinfo.json` schema rejected `$schema` and `choice` settings that set `descriptionKey`
 
 ## 0.4.0 - 2026-08-29
 

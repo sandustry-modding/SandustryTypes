@@ -278,6 +278,18 @@ export interface ConfigSchemaChoice {
    */
   labelKey?: string;
   /**
+   * Plain-text help text for the setting.
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
+   */
+  description?: string;
+  /**
+   * i18n key for the setting help text.
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
+   */
+  descriptionKey?: string;
+  /**
    * Allowed choices for this setting.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
@@ -630,6 +642,11 @@ export interface ModGameVersion {
  * @see [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
  */
 export interface ModInfo {
+  /**
+   * Optional JSON Schema URL for editors (for example VS Code).
+   * Not read by the game loader.
+   */
+  $schema?: string;
   /**
    * Manifest format version. Must be `1` for Sandkit `apiVersion` 1.
    *

@@ -15,7 +15,9 @@ After GitHub Pages publishes `docs/`, use these raw schema URLs:
 
 ## Use in editors
 
-Point `$schema` at the URL for the file you edit:
+Point `$schema` at the URL for the file you edit.
+
+### `modinfo.json`
 
 ```json
 {
@@ -29,7 +31,26 @@ Point `$schema` at the URL for the file you edit:
 }
 ```
 
-`patches.json` is a JSON **array**. Do not put `$schema` in the file. Point your editor at the schema URL by path (for example VS Code `json.schemas`).
+### `patches.json`
+
+The game loads a bare **array**. For inline `$schema`, wrap the list (editors only — unwrap to a bare array before shipping, or map the schema by path):
+
+```json
+{
+  "$schema": "https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json",
+  "patches": [
+    {
+      "file": "js/bundle.js",
+      "find": "const message = 'Hello';",
+      "operation": "replace",
+      "code": "const message = 'Hello from my mod';",
+      "expectedMatches": 1
+    }
+  ]
+}
+```
+
+A bare `[ ... ]` array also validates. You can instead bind the schema by path (for example VS Code `json.schemas`) and keep the game array form in the file.
 
 ## TypeScript
 
