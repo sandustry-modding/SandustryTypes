@@ -12,53 +12,21 @@
   display: none !important;
 }
 
-#smt-page-toc {
-  display: none;
-}
-.smt-page-toc-title {
-  margin: 0 0 0.5rem 0;
-  font-size: var(--font-size-xs, 0.75rem);
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: var(--theme-color);
-}
-#smt-page-toc ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-#smt-page-toc ul ul {
-  padding-left: 0.75rem;
-  margin-top: 0.25rem;
-}
-#smt-page-toc li {
-  margin: 0.35em 0;
-}
-#smt-page-toc a {
-  color: var(--sidebar-link-color, var(--color-text));
-  text-decoration: none;
-  display: block;
-  overflow-wrap: anywhere;
-}
-#smt-page-toc a:hover {
-  color: var(--sidebar-link-color-active, var(--theme-color));
-}
-#smt-page-toc a.smt-page-toc-active {
-  color: var(--sidebar-link-color-active, var(--theme-color));
-  font-weight: 600;
-}
-/* Active page link only — not nested children under an active parent. */
+/* Active page: keep link text readable; gold left border marks the page.
+ * Do not use theme yellow here — that colour is reserved for non-clickable headers. */
 .sidebar-nav li.active > a.page-link,
 .sidebar-nav li.active > p > a.page-link {
-  color: var(--sidebar-link-color-active, var(--theme-color));
+  color: var(--sidebar-name-color, var(--heading-color, #f0f0f0));
+  font-weight: 600;
 }
 .sidebar-nav li.active ul a.page-link {
   color: var(--sidebar-link-color, var(--color-text));
+  font-weight: inherit;
 }
 .sidebar-nav li.active ul li.active > a.page-link,
 .sidebar-nav li.active ul li.active > p > a.page-link {
-  color: var(--sidebar-link-color-active, var(--theme-color));
+  color: var(--sidebar-name-color, var(--heading-color, #f0f0f0));
+  font-weight: 600;
 }
 .sidebar-toggle,
 .sidebar-toggle:hover,
@@ -170,28 +138,6 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
   }
 }
 @media (min-width: 1100px) {
-  /* Reserve space: TOC is position fixed (Docsify's absolute .content breaks sticky). */
-  main > .content .markdown-section {
-    padding-right: 24rem;
-    box-sizing: border-box;
-  }
-  #smt-page-toc {
-    display: block;
-    position: fixed;
-    top: calc(var(--navbar-height, 4em) + 0.75rem);
-    right: max(0.75rem, env(safe-area-inset-right, 0px));
-    width: 22rem;
-    max-height: calc(100vh - var(--navbar-height, 4em) - 2rem);
-    overflow-x: hidden;
-    overflow-y: auto;
-    z-index: 45;
-    font-size: var(--font-size-s, 0.875rem);
-    line-height: 1.35;
-    padding-left: 1rem;
-    box-sizing: border-box;
-    border-left: 1px solid var(--border-color, #ddd);
-    background: var(--color-bg, #fff);
-  }
   .markdown-section :is(h1, h2, h3, h4, h5, h6) {
     scroll-margin-top: calc(var(--navbar-height, 4em) + 0.75rem);
   }
@@ -211,22 +157,61 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
   opacity: 0.7;
 }
 
-/* Group titles only (plain text). Top-level page links also wrap in <p>. */
-.sidebar-nav > ul > li > p:not(:has(a)),
-.sidebar-nav > ul > li.group > p.group-title {
-  margin: 1.1em 0 0.35em;
+/* Non-clickable sidebar labels only (no <a>). Theme yellow = headers, not links.
+ * Includes list folder titles and section banners (`---` + `# Main thread`). */
+.sidebar-nav > h1,
+.sidebar-nav > p,
+.sidebar-nav li > p:not(:has(a)),
+.sidebar-nav li.group > p.group-title {
+  margin: 0.85em 0 0.3em;
   font-size: 0.8125rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--theme-color);
+  cursor: default;
+  line-height: 1.3;
 }
 
-/* Space between site links (…Browse) and the API tree / Sandkit entry. */
-.sidebar-nav > ul > li.group:has(a[href*="modules"]) + li {
-  margin-top: 1.25rem;
-  padding-top: 1.25rem;
+/* Section h1 banners: not navigable (Docsify wraps them in .anchor links). */
+.sidebar-nav > h1 {
+  margin: 0.85em var(--_sidebar-inset, 20px) 0.35em;
+  padding: 0;
+  border: 0;
+  background: none;
+}
+.sidebar-nav > h1 a.anchor,
+.sidebar-nav > h1 a.anchor:hover,
+.sidebar-nav > h1 a.anchor:focus {
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+  cursor: default;
+}
+.sidebar-nav > h1 a.anchor span {
+  color: inherit;
+}
+
+/* Divider above each section banner. */
+.sidebar-nav > hr {
+  margin: 1.25rem var(--_sidebar-inset, 20px) 0.35rem;
+  border: 0;
   border-top: 1px solid color-mix(in srgb, var(--theme-color) 35%, var(--sidebar-border-color, #2a2a2a));
+  background: transparent;
+  height: 0;
+}
+
+/* Top-level folder titles get a bit more space. */
+.sidebar-nav > ul > li > p:not(:has(a)),
+.sidebar-nav > ul > li.group > p.group-title {
+  margin: 1.1em 0 0.35em;
+}
+
+/* Space when a folder title follows flat top links inside one list. */
+.sidebar-nav > ul > li:has(> a) + li:has(> p:not(:has(a))),
+.sidebar-nav > ul > li:has(> p > a) + li:has(> p:not(:has(a))) {
+  margin-top: 1.25rem;
+  padding-top: 0.35rem;
 }
 
 /* Prose links: no underline (matches SandustryTypes). */
@@ -449,18 +434,64 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
   border-radius: 6px;
 }
 
+.search {
+  margin: 10px;
+}
+
 .search .results-panel {
   max-height: min(60vh, 28rem);
   overflow: auto;
 }
 
-.search .matching-post .title {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  font-size: 0.82rem;
+.search .results-panel:empty {
+  display: none;
 }
 
-/* Search field: fill the input row (Docsify default leaves unused vertical space). */
+/* Hide other sidebar items while results are shown */
+.search:has(.results-panel:not(:empty)) ~ * {
+  display: none;
+}
+
+.search .matching-post {
+  overflow: hidden;
+  padding: 0.85em 0 1em;
+  border-bottom: 1px solid var(--sidebar-border-color, #2a2a2a);
+}
+
+.search .matching-post .title {
+  margin: 0 0 0.35em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: var(--heading-color, #f0f0f0);
+}
+
+.search .matching-post .content {
+  margin: 0;
+  color: var(--color-mono-6, #9a9a9a);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.search .matching-post mark {
+  background: color-mix(in srgb, var(--theme-color) 35%, transparent);
+  color: inherit;
+  padding: 0 0.1em;
+}
+
+.search .results-status {
+  margin: 0.5rem 0 0;
+  color: var(--color-mono-6, #9a9a9a);
+  font-size: 0.8rem;
+}
+
+.search .results-status:empty {
+  display: none;
+}
+
+/* Search field: fill the input row */
 .search .input-wrap {
+  position: relative;
   display: flex;
   align-items: stretch;
   box-sizing: border-box;
@@ -469,6 +500,7 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
 
 .search input[type="search"] {
   box-sizing: border-box;
+  width: 100%;
   flex: 1 1 auto;
   align-self: stretch;
   height: auto;
@@ -478,15 +510,65 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
   padding-inline: 0.75rem 2.5rem;
   line-height: 1.35;
   font-size: 1rem;
+  border: 1px solid var(--sidebar-border-color, #2a2a2a);
+  border-radius: 6px;
+  background: var(--form-element-bg, #1a1a1a);
+  color: var(--form-element-color, #f0f0f0);
+}
+
+.search input[type="search"]::-webkit-search-decoration,
+.search input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
 }
 
 .search .clear-button {
-  display: inline-flex;
+  position: absolute;
+  right: 7px;
+  top: 50%;
+  translate: 0 -50%;
+  display: none;
   align-items: center;
   justify-content: center;
-  align-self: stretch;
-  height: auto;
-  min-height: 2.75rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: var(--theme-color);
+  cursor: pointer;
+}
+
+.search input[type="search"]:valid ~ .clear-button {
+  display: inline-flex;
+}
+
+.search .clear-button::before,
+.search .clear-button::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0.7rem;
+  background: #fff;
+}
+
+.search .clear-button::before {
+  rotate: 45deg;
+}
+
+.search .clear-button::after {
+  rotate: -45deg;
+}
+
+.search .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 /* Sandkit API module index: grouped namespace chips. */

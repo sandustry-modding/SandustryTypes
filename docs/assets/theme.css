@@ -18,9 +18,10 @@
   --link-underline-thickness-hover: 0;
   --sidebar-border-color: #2a2a2a;
   --sidebar-link-color: #dddddd;
-  --sidebar-link-color-active: var(--theme-color);
+  /* Active link text — not theme yellow (yellow is for non-clickable headers). */
+  --sidebar-link-color-active: #f0f0f0;
   --sidebar-name-color: #f0f0f0;
-  --sidebar-group-title-color: #f0f0f0;
+  --sidebar-group-title-color: var(--theme-color);
   --sidebar-toggle-bg: #202020;
   --sidebar-toggle-color: #dddddd;
   --code-bg: #202020;
