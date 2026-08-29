@@ -19,7 +19,7 @@ Folder layout mirrors runtime shape so you can jump from code to the matching `.
 | `src/global.d.ts` | Ambient `sandkit` free variable and type aliases |
 | `src/worker/` | Worker-thread `sandkit.api` (see `WorkerSandkitApi`) |
 | `src/shared/` | Internal base shapes reused by main and worker declarations |
-| `src/configs/` | `modinfo.json` / `patches.json` schemas (not a runtime object) |
+| `src/configs/` | `modinfo.json` / `patches.json` TypeScript types (not a runtime object) |
 
 ## Runtime shape vs `export namespace`
 
@@ -62,7 +62,7 @@ import type { ModInfo, BundlePatch } from "@sandustry-modding/types/configs";
 - **Main mod (`main.js`):** use the ambient free name `sandkit`. Type aliases such as `SandkitApi` are global; do not import a value binding.
 - **Worker mod (`worker.js`):** type `sandkit.api` as `WorkerSandkitApi`. Worker and main APIs overlap but are not interchangeable.
 - **Shared folder:** not a runtime namespace. It holds domain shapes and API bases that main and worker modules extend.
-- **Configs folder:** `modinfo.json` and `patches.json` schemas (`@sandustry-modding/types/configs`). Not part of the live `sandkit` object.
+- **Configs folder:** `modinfo.json` and `patches.json` TypeScript types (`@sandustry-modding/types/configs`). Not part of the live `sandkit` object. JSON Schema: https://sandustry-modding.github.io/SandustryTypes/schemas/modinfo.json and https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
 
 ## Maintaining types
 

@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json",
+  "title": "Sandkit patches.json",
+  "description": "Sandkit bundle patches (patches.json). Aligns with @sandustry-modding/types/configs BundlePatchesFile and https://sandustry.com/sandkit.html#patches-heading. Patches break across game updates; prefer sandkit.api when possible.",
+  "type": "array",
+  "maxItems": 256,
+  "items": {
+    "$ref": "#/$defs/BundlePatch"
+  },
+  "$defs": {
+    "PatchTargetFile": {
+      "description": "Compiled bundle path under js/. Known targets: js/bundle.js, js/manager-worker.js, js/simulation-worker.js, js/utility-worker.js.",
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^js/[^/]+\\.js$"
+    },
+    "PatchOperation": {
+      "description": "How to apply the match.",
+      "type": "string",
+      "enum": [
+        "replace",
+        "remove",
+        "insertBefore",
+        "insertAfter",
+        "wrap"
+      ]
+    },
+    "BundlePatchRegex": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["pattern"],
+      "properties": {
+        "pattern": {
+          "description": "JavaScript regex pattern source (without surrounding / delimiters). Capture groups may be referenced from code as $1, $2, …",
+          "type": "string",
+          "minLength": 1
+        },
+        "flags": {
+          "description": "Optional regex flags (for example g or m).",
+          "type": "string"
+        }
+      }
+    },
+    "BundlePatch": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file"],
+      "properties": {
+        "file": {
+          "$ref": "#/$defs/PatchTargetFile"
+        },
+        "find": {
+          "description": "Exact source substring to locate in the bundle. Mutually exclusive with regex.",
+          "type": "string",
+          "minLength": 1
+        },
+        "regex": {
+          "description": "Regex-based locator instead of a literal find string.",
+          "$ref": "#/$defs/BundlePatchRegex"
+        },
+        "code": {
+          "description": "Replacement or inserted source text. Official examples use code.",
+          "type": "string"
+        },
+        "replace": {
+          "description": "Alias of code used by some patch loaders and workshop mods.",
+          "type": "string"
+        },
+        "operation": {
+          "$ref": "#/$defs/PatchOperation"
+        },
+        "expectedMatches": {
+          "description": "How many times find / regex must match. Use a number (often 1) so the load fails on miss or over-match. Some loaders accept \"any\".",
+          "oneOf": [
+            {
+              "type": "integer",
+              "minimum": 0
+            },
+            {
+              "const": "any"
+            }
+          ]
+        },
+        "before": {
+          "description": "Text inserted before the match when operation is wrap.",
+          "type": "string"
+        },
+        "after": {
+          "description": "Text inserted after the match when operation is wrap.",
+          "type": "string"
+        },
+        "id": {
+          "description": "Optional stable id for logging and tooling.",
+          "type": "string",
+          "minLength": 1
+        },
+        "atomicGroup": {
+          "description": "Group id shared by patches that must all succeed or all fail together.",
+          "type": "string",
+          "minLength": 1
+        },
+        "description": {
+          "description": "Human-readable note for maintainers. Not required by the official schema.",
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "oneOf": [
+            {
+              "required": ["find"],
+              "not": {
+                "required": ["regex"]
+              }
+            },
+            {
+              "required": ["regex"],
+              "not": {
+                "required": ["find"]
+              }
+            }
+          ]
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "wrap"
+              }
+            },
+            "required": ["operation"]
+          },
+          "then": {
+            "required": ["before", "after"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "enum": ["replace", "insertBefore", "insertAfter"]
+              }
+            },
+            "required": ["operation"]
+          },
+          "then": {
+            "anyOf": [
+              {
+                "required": ["code"]
+              },
+              {
+                "required": ["replace"]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

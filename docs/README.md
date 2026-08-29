@@ -21,8 +21,8 @@ TypeScript declarations for the live Sandustry `sandkit` host API. Install as [`
   - [Engine](api/sandkit.engine.md) — unstable escape hatch (`sandkit.engine`)
   - [React](api/sandkit.react.md) — HUD helpers from the host React build
 - [Enums](api/sandkit.enums.md) — runtime enum values
-- [Configs](api/configs.md) — `modinfo.json` and `patches.json` schemas
-- [Workshop corpus](workshop-corpus.md) — shapes mined from published workshop mods
+- [Configs](api/configs.md) — `modinfo.json` and `patches.json` TypeScript types
+- [JSON Schema](schemas.md) — `modinfo.json` / `patches.json` schemas (raw URLs for editors)
 - [Full API reference](full.md) — every namespace on one page
 
 ## Install types

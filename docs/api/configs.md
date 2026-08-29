@@ -5,6 +5,8 @@ Sandkit mod file schemas: `modinfo.json` and `patches.json`.
 These are not runtime `sandkit` properties. Import from
 `@sandustry-modding/types/configs` when typing mod folder config files.
 
+JSON Schema (for editors / validators): [JSON Schema](../schemas.md).
+
 ## See
 
 [Official docs](https://sandustry.com/sandkit.html#mod-files-heading)
