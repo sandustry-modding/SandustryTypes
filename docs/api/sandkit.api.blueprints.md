@@ -6,7 +6,7 @@ Available as `sandkit.api.blueprints`.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.blueprints`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -14,7 +14,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 
 <p class="smt-member-path"><code>sandkit.api.blueprints.BlueprintStructure</code></p>
 
-Defined in: [sandkit/api/blueprints.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L28)
+Defined in: [sandkit/api/blueprints.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L30)
 
 Serialized structure entry used in blueprints.
 
@@ -32,7 +32,7 @@ Serialized structure entry used in blueprints.
 x: number
 ```
 
-Defined in: [sandkit/api/blueprints.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L29)
+Defined in: [sandkit/api/blueprints.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L31)
 
 ##### y
 
@@ -40,7 +40,7 @@ Defined in: [sandkit/api/blueprints.d.ts:29](https://github.com/sandustry-moddin
 y: number
 ```
 
-Defined in: [sandkit/api/blueprints.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L30)
+Defined in: [sandkit/api/blueprints.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L32)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -52,7 +52,7 @@ Defined in: [sandkit/api/blueprints.d.ts:30](https://github.com/sandustry-moddin
 serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
 ```
 
-Defined in: [sandkit/api/blueprints.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L17)
+Defined in: [sandkit/api/blueprints.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L18)
 
 Serialize live structure instances into blueprint records.
 
@@ -70,7 +70,7 @@ Structure instances to encode.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.blueprints.serializeStructures`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -82,7 +82,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]
 ```
 
-Defined in: [sandkit/api/blueprints.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L25)
+Defined in: [sandkit/api/blueprints.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L27)
 
 Localize blueprint structure records for placement.
 
@@ -100,4 +100,4 @@ Blueprint structure records to localize.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.blueprints.localizeStructures`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

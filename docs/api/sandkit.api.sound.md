@@ -6,7 +6,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundHandle</code></p>
 
-Defined in: [sandkit/api/sound.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L75)
+Defined in: [sandkit/api/sound.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L81)
 
 Handle returned from a play call.
 
@@ -18,7 +18,7 @@ Handle returned from a play call.
 stop(): void
 ```
 
-Defined in: [sandkit/api/sound.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L77)
+Defined in: [sandkit/api/sound.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L83)
 
 Stop this sound instance.
 
@@ -32,7 +32,7 @@ Stop this sound instance.
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundLayer</code></p>
 
-Defined in: [sandkit/api/sound.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L81)
+Defined in: [sandkit/api/sound.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L87)
 
 One layer in a layered sound.
 
@@ -50,7 +50,7 @@ One layer in a layered sound.
 soundId: string
 ```
 
-Defined in: [sandkit/api/sound.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L83)
+Defined in: [sandkit/api/sound.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L89)
 
 Sound id for this layer.
 
@@ -60,7 +60,7 @@ Sound id for this layer.
 optional volume?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L85)
+Defined in: [sandkit/api/sound.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L91)
 
 Layer volume multiplier.
 
@@ -70,7 +70,7 @@ Layer volume multiplier.
 optional delay?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L87)
+Defined in: [sandkit/api/sound.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L93)
 
 Delay in milliseconds before this layer plays.
 
@@ -80,7 +80,7 @@ Delay in milliseconds before this layer plays.
 optional playbackRate?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L89)
+Defined in: [sandkit/api/sound.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L95)
 
 Playback rate for this layer.
 
@@ -90,7 +90,7 @@ Playback rate for this layer.
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundOptions</code></p>
 
-Defined in: [sandkit/api/sound.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L94)
+Defined in: [sandkit/api/sound.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L100)
 
 Options passed to sound play helpers.
 
@@ -108,7 +108,7 @@ Options passed to sound play helpers.
 optional volume?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L96)
+Defined in: [sandkit/api/sound.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L102)
 
 Volume multiplier (0–1 typical).
 
@@ -118,7 +118,7 @@ Volume multiplier (0–1 typical).
 optional playbackRate?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L98)
+Defined in: [sandkit/api/sound.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L104)
 
 Playback rate multiplier.
 
@@ -128,7 +128,7 @@ Playback rate multiplier.
 optional position?: object
 ```
 
-Defined in: [sandkit/api/sound.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L100)
+Defined in: [sandkit/api/sound.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L106)
 
 World position for distance attenuation.
 
@@ -150,7 +150,7 @@ y: number
 optional loop?: boolean
 ```
 
-Defined in: [sandkit/api/sound.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L102)
+Defined in: [sandkit/api/sound.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L108)
 
 When true, loop until stopped.
 
@@ -160,7 +160,7 @@ When true, loop until stopped.
 optional rateLimitKey?: string
 ```
 
-Defined in: [sandkit/api/sound.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L104)
+Defined in: [sandkit/api/sound.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L110)
 
 Key used with rateLimitMs to dedupe rapid replays.
 
@@ -170,7 +170,7 @@ Key used with rateLimitMs to dedupe rapid replays.
 optional rateLimitMs?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L106)
+Defined in: [sandkit/api/sound.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L112)
 
 Minimum ms between plays with the same rateLimitKey.
 
@@ -180,7 +180,7 @@ Minimum ms between plays with the same rateLimitKey.
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundLayersOptions</code></p>
 
-Defined in: [sandkit/api/sound.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L111)
+Defined in: [sandkit/api/sound.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L117)
 
 Shared options for [playLayers](#playlayers).
 
@@ -192,7 +192,7 @@ Shared options for [playLayers](#playlayers).
 optional position?: object
 ```
 
-Defined in: [sandkit/api/sound.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L113)
+Defined in: [sandkit/api/sound.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L119)
 
 World position applied to all layers.
 
@@ -214,7 +214,7 @@ y: number
 optional volume?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L115)
+Defined in: [sandkit/api/sound.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L121)
 
 Volume multiplier applied to all layers.
 
@@ -224,7 +224,7 @@ Volume multiplier applied to all layers.
 optional rateLimitKey?: string
 ```
 
-Defined in: [sandkit/api/sound.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L117)
+Defined in: [sandkit/api/sound.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L123)
 
 Key used with rateLimitMs to dedupe rapid replays.
 
@@ -234,7 +234,7 @@ Key used with rateLimitMs to dedupe rapid replays.
 optional rateLimitMs?: number
 ```
 
-Defined in: [sandkit/api/sound.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L119)
+Defined in: [sandkit/api/sound.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L125)
 
 Minimum ms between plays with the same rateLimitKey.
 
@@ -248,7 +248,7 @@ Minimum ms between plays with the same rateLimitKey.
 play(soundId: string, options?: SoundOptions): SoundHandle
 ```
 
-Defined in: [sandkit/api/sound.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L16)
+Defined in: [sandkit/api/sound.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L17)
 
 Play a sound by id with optional options.
 
@@ -272,7 +272,7 @@ Volume, position, playback rate, and rate-limit options.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.play`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -284,7 +284,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 playActive(soundId: string, options?: SoundOptions): SoundHandle
 ```
 
-Defined in: [sandkit/api/sound.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L25)
+Defined in: [sandkit/api/sound.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L27)
 
 Play a sound on the active sound channel.
 
@@ -308,7 +308,7 @@ Volume, position, playback rate, and rate-limit options.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.playActive`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -320,7 +320,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[]
 ```
 
-Defined in: [sandkit/api/sound.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L34)
+Defined in: [sandkit/api/sound.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L37)
 
 Play multiple sound layers with shared options.
 
@@ -344,7 +344,7 @@ Shared position, volume, and rate-limit options for all layers.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.playLayers`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -356,7 +356,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 calculateDistanceOptionsAtWorld(worldX: number, worldY: number, baseVolume?: number): SoundOptions
 ```
 
-Defined in: [sandkit/api/sound.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L44)
+Defined in: [sandkit/api/sound.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L48)
 
 Build distance-based volume options for a world position.
 
@@ -386,7 +386,7 @@ Base volume before distance attenuation.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.calculateDistanceOptionsAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -398,7 +398,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 stopBySoundId(soundId: string): void
 ```
 
-Defined in: [sandkit/api/sound.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L52)
+Defined in: [sandkit/api/sound.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L57)
 
 Stop a sound by id.
 
@@ -416,7 +416,7 @@ Registered sound identifier to stop.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.stopBySoundId`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -426,7 +426,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 stopById(soundId: string): void
 ```
 
-Defined in: [sandkit/api/sound.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L58)
+Defined in: [sandkit/api/sound.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L64)
 
 #### Parameters
 
@@ -444,7 +444,7 @@ Use [stopBySoundId](#stopbysoundid) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.sound.stopBySoundId`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -456,7 +456,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 stopActive(): void
 ```
 
-Defined in: [sandkit/api/sound.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L65)
+Defined in: [sandkit/api/sound.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L71)
 
 Stop the active sound channel.
 
@@ -466,7 +466,7 @@ Stop the active sound channel.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.stopActive`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -478,7 +478,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 stopAll(): void
 ```
 
-Defined in: [sandkit/api/sound.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L72)
+Defined in: [sandkit/api/sound.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L78)
 
 Stop all playing sounds.
 
@@ -488,4 +488,4 @@ Stop all playing sounds.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.stopAll`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

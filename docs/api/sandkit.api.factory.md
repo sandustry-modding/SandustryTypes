@@ -6,7 +6,7 @@ Available as `sandkit.api.factory`.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.factory`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
@@ -18,7 +18,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 FactoryProcessId = "shakeWetSand" | "pressBurntResidue" | "growFlowers" | "condenseFlorin"
 ```
 
-Defined in: [sandkit/api/factory.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L33)
+Defined in: [sandkit/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L35)
 
 Built-in factory process identifiers.
 
@@ -42,7 +42,7 @@ Return the current factory level.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.factory.getLevel`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -54,7 +54,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getProcessCount(processId: FactoryProcessId): number
 ```
 
-Defined in: [sandkit/api/factory.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L22)
+Defined in: [sandkit/api/factory.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L23)
 
 Return completed count for a factory process.
 
@@ -72,7 +72,7 @@ Built-in factory process id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.factory.getProcessCount`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -84,7 +84,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getProcessRate(processId: FactoryProcessId): number
 ```
 
-Defined in: [sandkit/api/factory.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L30)
+Defined in: [sandkit/api/factory.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L32)
 
 Return completion rate for a factory process.
 
@@ -102,4 +102,4 @@ Built-in factory process id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.factory.getProcessRate`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

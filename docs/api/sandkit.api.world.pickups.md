@@ -6,7 +6,7 @@ Use pickups instead.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## References <!-- {docsify-ignore} -->
 

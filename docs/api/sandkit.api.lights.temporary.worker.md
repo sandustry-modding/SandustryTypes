@@ -4,7 +4,7 @@ Short-lived visual effect lights.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.lights.temporary`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -34,7 +34,7 @@ Runtime light id, or null when the pool is full.
 optional index?: number | null
 ```
 
-Defined in: [worker/api/lights.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L26)
+Defined in: [worker/api/lights.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L27)
 
 ###### Deprecated
 
@@ -42,7 +42,7 @@ Use [lightId](#lightid) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `light.lightId`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
@@ -68,7 +68,7 @@ Options for [createAtWorld](#createatworld).
 createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
-Defined in: [worker/api/lights.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L37)
+Defined in: [worker/api/lights.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L47)
 
 Create a temporary light at world coordinates.
 
@@ -96,6 +96,17 @@ Brightness, duration, colour, and dedup settings.
 
 [`TemporaryLightHandle`](#temporarylighthandle)
 
+#### Example
+
+**Worker entry**
+
+```ts
+const light = api.lights.temporary.createAtWorld(worldX, worldY, {
+  durationTicks: 15,
+});
+const lightId = light.lightId;
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.lights.temporary.createAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

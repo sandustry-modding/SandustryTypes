@@ -6,7 +6,7 @@ Available as `sandkit.api.pipes`.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -14,7 +14,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 
 <p class="smt-member-path"><code>sandkit.api.pipes.PipeVentCell</code></p>
 
-Defined in: [sandkit/api/pipes.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L49)
+Defined in: [sandkit/api/pipes.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L53)
 
 Connected vent cell position.
 
@@ -32,7 +32,7 @@ Connected vent cell position.
 cellX: number
 ```
 
-Defined in: [sandkit/api/pipes.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L50)
+Defined in: [sandkit/api/pipes.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L54)
 
 ##### cellY
 
@@ -40,7 +40,7 @@ Defined in: [sandkit/api/pipes.d.ts:50](https://github.com/sandustry-modding/San
 cellY: number
 ```
 
-Defined in: [sandkit/api/pipes.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L51)
+Defined in: [sandkit/api/pipes.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L55)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -52,7 +52,7 @@ Defined in: [sandkit/api/pipes.d.ts:51](https://github.com/sandustry-modding/San
 isAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/pipes.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L18)
+Defined in: [sandkit/api/pipes.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L19)
 
 Return true when a pipe occupies the cell.
 
@@ -68,7 +68,7 @@ Return true when a pipe occupies the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.isAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -80,7 +80,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isEnabledAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/pipes.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L27)
+Defined in: [sandkit/api/pipes.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L29)
 
 Return true when pipe flow is enabled at the cell.
 
@@ -96,7 +96,7 @@ Return true when pipe flow is enabled at the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.isEnabledAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -108,7 +108,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[]
 ```
 
-Defined in: [sandkit/api/pipes.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L36)
+Defined in: [sandkit/api/pipes.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L39)
 
 Return connected liquid vent cell positions for the pipe at a cell.
 
@@ -124,7 +124,7 @@ readonly [`PipeVentCell`](#pipeventcell)[]
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.getConnectedVentsAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -136,7 +136,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setEnabledAtCell(...args: [number, number, boolean]): void
 ```
 
-Defined in: [sandkit/api/pipes.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L46)
+Defined in: [sandkit/api/pipes.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L50)
 
 Enable or disable pipe flow at a cell.
 
@@ -152,4 +152,4 @@ Enable or disable pipe flow at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.setEnabledAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

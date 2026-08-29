@@ -12,7 +12,7 @@ Per-structure processing enablement and registration.
 register(id: string & object, definition: StructureProcessingDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L294)
+Defined in: [sandkit/api/structures.d.ts:501](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L501)
 
 Register a custom processing definition by id.
 
@@ -34,9 +34,27 @@ Structure type, interval, and callback.
 
 `void`
 
+#### Example
+
+```ts
+api.structures.processing.register(
+  "exampleStructure:process",
+  {
+    structureType: "exampleStructure",
+    intervalMs: 250,
+    process: (structure, context) => {
+      const empty = context.isCellEmptyAtCell(
+        structure.x,
+        structure.y,
+      );
+    },
+  },
+);
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -48,7 +66,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setEnabledAtCell(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L305)
+Defined in: [sandkit/api/structures.d.ts:513](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L513)
 
 Enable or disable processing at a cell.
 
@@ -66,7 +84,7 @@ True when the enabled state changed.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.setEnabledAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -76,7 +94,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setEnabledAt(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L311)
+Defined in: [sandkit/api/structures.d.ts:520](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L520)
 
 #### Parameters
 
@@ -94,7 +112,7 @@ Use [setEnabledAtCell](#setenabledatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.processing.setEnabledAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## References <!-- {docsify-ignore} -->
 

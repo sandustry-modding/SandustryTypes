@@ -6,7 +6,7 @@ Main thread only.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -14,7 +14,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriter</code></p>
 
-Defined in: [sandkit/api/grid.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L104)
+Defined in: [sandkit/api/grid.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L147)
 
 Deferred element and terrain mutations passed to [mutate](#mutate).
 
@@ -26,7 +26,7 @@ Deferred element and terrain mutations passed to [mutate](#mutate).
 elements: GridMutationWriterElements
 ```
 
-Defined in: [sandkit/api/grid.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L106)
+Defined in: [sandkit/api/grid.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L149)
 
 Element cell mutations inside a [mutate](#mutate) callback.
 
@@ -36,7 +36,7 @@ Element cell mutations inside a [mutate](#mutate) callback.
 terrains: GridMutationWriterTerrains
 ```
 
-Defined in: [sandkit/api/grid.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L108)
+Defined in: [sandkit/api/grid.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L151)
 
 Terrain cell mutations inside a [mutate](#mutate) callback.
 
@@ -46,7 +46,7 @@ Terrain cell mutations inside a [mutate](#mutate) callback.
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriterElements</code></p>
 
-Defined in: [sandkit/api/grid.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L112)
+Defined in: [sandkit/api/grid.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L155)
 
 Element writers available on [GridMutationWriter.elements](#elements).
 
@@ -58,7 +58,7 @@ Element writers available on [GridMutationWriter.elements](#elements).
 createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L122)
+Defined in: [sandkit/api/grid.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L166)
 
 Create an element at a cell inside a [mutate](#mutate) callback.
 
@@ -74,7 +74,7 @@ Create an element at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `elements.createAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ##### replaceAtCell()
 
@@ -82,7 +82,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L133)
+Defined in: [sandkit/api/grid.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L178)
 
 Replace the element at a cell inside a [mutate](#mutate) callback.
 
@@ -98,7 +98,7 @@ Replace the element at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `elements.replaceAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ##### removeAtCell()
 
@@ -106,7 +106,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L143)
+Defined in: [sandkit/api/grid.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L189)
 
 Remove the element at a cell inside a [mutate](#mutate) callback.
 
@@ -122,7 +122,7 @@ Remove the element at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `elements.removeAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -130,7 +130,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriterTerrains</code></p>
 
-Defined in: [sandkit/api/grid.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L147)
+Defined in: [sandkit/api/grid.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L193)
 
 Terrain writers available on [GridMutationWriter.terrains](#terrains).
 
@@ -142,7 +142,7 @@ Terrain writers available on [GridMutationWriter.terrains](#terrains).
 createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L157)
+Defined in: [sandkit/api/grid.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L204)
 
 Create terrain at a cell inside a [mutate](#mutate) callback.
 
@@ -158,7 +158,7 @@ Create terrain at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.createAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ##### replaceAtCell()
 
@@ -166,7 +166,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L168)
+Defined in: [sandkit/api/grid.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L216)
 
 Replace terrain at a cell inside a [mutate](#mutate) callback.
 
@@ -182,7 +182,7 @@ Replace terrain at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.replaceAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ##### removeAtCell()
 
@@ -190,7 +190,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L178)
+Defined in: [sandkit/api/grid.d.ts:227](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L227)
 
 Remove terrain at a cell inside a [mutate](#mutate) callback.
 
@@ -206,7 +206,7 @@ Remove terrain at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.removeAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -214,7 +214,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridDimensions</code></p>
 
-Defined in: [shared/api/grid.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L73)
+Defined in: [shared/api/grid.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L78)
 
 World grid width and height in cells.
 
@@ -226,7 +226,7 @@ World grid width and height in cells.
 widthCells: number
 ```
 
-Defined in: [shared/api/grid.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L75)
+Defined in: [shared/api/grid.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L80)
 
 Grid width in cells.
 
@@ -236,7 +236,7 @@ Grid width in cells.
 heightCells: number
 ```
 
-Defined in: [shared/api/grid.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L77)
+Defined in: [shared/api/grid.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L82)
 
 Grid height in cells.
 
@@ -246,7 +246,7 @@ Grid height in cells.
 
 <p class="smt-member-path"><code>sandkit.api.grid.ExcavateOptions</code></p>
 
-Defined in: [shared/api/grid.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L81)
+Defined in: [shared/api/grid.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L86)
 
 Flags that control how [excavateAtCell](#excavateatcell) resolves damage and drops.
 
@@ -258,7 +258,7 @@ Flags that control how [excavateAtCell](#excavateatcell) resolves damage and dro
 optional fromGun?: boolean
 ```
 
-Defined in: [shared/api/grid.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L83)
+Defined in: [shared/api/grid.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L88)
 
 Treat the dig as gun fire for terrain resistance checks.
 
@@ -268,7 +268,7 @@ Treat the dig as gun fire for terrain resistance checks.
 optional fromRocketExplosion?: boolean
 ```
 
-Defined in: [shared/api/grid.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L85)
+Defined in: [shared/api/grid.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L90)
 
 Treat the dig as rocket or dynamite explosion damage.
 
@@ -278,7 +278,7 @@ Treat the dig as rocket or dynamite explosion damage.
 optional fromDrill?: boolean
 ```
 
-Defined in: [shared/api/grid.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L87)
+Defined in: [shared/api/grid.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L92)
 
 Treat the dig as drill damage.
 
@@ -288,7 +288,7 @@ Treat the dig as drill damage.
 optional useLiteralOutVelocity?: boolean
 ```
 
-Defined in: [shared/api/grid.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L89)
+Defined in: [shared/api/grid.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L94)
 
 Use outVelocity literally instead of deriving ejection speed.
 
@@ -298,7 +298,7 @@ Use outVelocity literally instead of deriving ejection speed.
 optional destroyNonDestructible?: boolean
 ```
 
-Defined in: [shared/api/grid.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L91)
+Defined in: [shared/api/grid.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L96)
 
 Allow removing terrain marked non-destructible.
 
@@ -308,7 +308,7 @@ Allow removing terrain marked non-destructible.
 optional forceRemoveAll?: boolean
 ```
 
-Defined in: [shared/api/grid.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L93)
+Defined in: [shared/api/grid.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L98)
 
 Force-remove all matched cells regardless of normal rules.
 
@@ -318,7 +318,7 @@ Force-remove all matched cells regardless of normal rules.
 optional drillTierDamage?: number
 ```
 
-Defined in: [shared/api/grid.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L95)
+Defined in: [shared/api/grid.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L100)
 
 Extra drill-tier damage when [fromDrill](#fromdrill) is true. Clamped to 0–1000.
 
@@ -332,7 +332,7 @@ Extra drill-tier damage when [fromDrill](#fromdrill) is true. Clamped to 0–100
 CellId = CellId
 ```
 
-Defined in: [shared/api/grid.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L70)
+Defined in: [shared/api/grid.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L75)
 
 Packed cell id from [getCellIdAtCell](#getcellidatcell).
 
@@ -346,7 +346,7 @@ Packed cell id from [getCellIdAtCell](#getcellidatcell).
 mutate(callback: (writer: GridMutationWriter) => void): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L53)
+Defined in: [sandkit/api/grid.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L91)
 
 Run deferred grid mutations on the main thread. Reads see the old grid until
 mutations apply.
@@ -363,10 +363,34 @@ Receives a writer for element and terrain cell mutations.
 
 `void`
 
+#### Examples
+
+**Deferred main-thread mutations**
+
+```ts
+api.grid.mutate((writer) => {
+  if (api.terrains.isTypeAtCell(cellX, cellY, "ice")) {
+    writer.elements.replaceAtCell(cellX, cellY, "water");
+  }
+});
+```
+
+```ts
+const waterType = api.elements.getTypeById("water");
+
+api.events.on("item:used", ({ itemId, cellX, cellY }) => {
+  if (itemId !== "laser") return;
+
+  api.grid.mutate((writer) => {
+    if (!api.terrains.isTypeAtCell(cellX, cellY, "ice")) return;
+    writer.elements.replaceAtCell(cellX, cellY, waterType);
+  });
+});
+```
+
 #### See
 
- - https://sandustry.com/sandkit.html#mutations-heading
- - https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -378,7 +402,7 @@ Receives a writer for element and terrain cell mutations.
 revealFogAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L62)
+Defined in: [sandkit/api/grid.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L101)
 
 Reveal fog of war at a cell.
 
@@ -394,7 +418,7 @@ Reveal fog of war at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.revealFogAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -406,7 +430,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 redrawAroundCell(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L72)
+Defined in: [sandkit/api/grid.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L112)
 
 Request redraw around a cell.
 
@@ -422,7 +446,7 @@ Request redraw around a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.redrawAroundCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -434,7 +458,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) => void): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L83)
+Defined in: [sandkit/api/grid.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L124)
 
 Calls the callback for each cell inside a circle.
 
@@ -470,7 +494,7 @@ Invoked for each cell with `(cellX, cellY)`.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.forEachCellInCircle`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -482,7 +506,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 forEachCellInRectangle(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L95)
+Defined in: [sandkit/api/grid.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L137)
 
 Calls the callback for each cell in a rectangle.
 
@@ -498,7 +522,7 @@ Calls the callback for each cell in a rectangle.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.forEachCellInRectangle`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -508,7 +532,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L101)
+Defined in: [sandkit/api/grid.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L144)
 
 #### Parameters
 
@@ -526,7 +550,7 @@ Use [forEachCellInRectangle](#foreachcellinrectangle) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.forEachCellInRectangle`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -538,7 +562,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 getCellIdAtCell(...args: CellCoordinates): CellId
 ```
 
-Defined in: [shared/api/grid.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L21)
+Defined in: [shared/api/grid.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L22)
 
 Return the packed cell id at grid coordinates.
 
@@ -556,7 +580,7 @@ Packed cell id for the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.getCellIdAtCell` / Worker entry `api.grid.getCellIdAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -568,7 +592,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isCellEmptyAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/grid.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L30)
+Defined in: [shared/api/grid.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L32)
 
 Return true when the cell has no element or terrain content.
 
@@ -584,7 +608,7 @@ Return true when the cell has no element or terrain content.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.isCellEmptyAtCell` / Worker entry `api.grid.isCellEmptyAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -596,7 +620,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isTerrainAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/grid.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L39)
+Defined in: [shared/api/grid.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L42)
 
 Return true when the cell holds terrain (not an element).
 
@@ -612,7 +636,7 @@ Return true when the cell holds terrain (not an element).
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.isTerrainAtCell` / Worker entry `api.grid.isTerrainAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -624,7 +648,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 reportActivityAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [shared/api/grid.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L48)
+Defined in: [shared/api/grid.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L52)
 
 Mark the cell active for simulation this tick.
 
@@ -640,7 +664,7 @@ Mark the cell active for simulation this tick.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.reportActivityAtCell` / Worker entry `api.grid.reportActivityAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -652,7 +676,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): void
 ```
 
-Defined in: [shared/api/grid.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L60)
+Defined in: [shared/api/grid.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L65)
 
 Apply excavation damage and eject velocity at a cell.
 
@@ -668,7 +692,7 @@ Apply excavation damage and eject velocity at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.excavateAtCell` / Worker entry `api.grid.excavateAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -680,7 +704,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getDimensions(): GridDimensions
 ```
 
-Defined in: [shared/api/grid.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L67)
+Defined in: [shared/api/grid.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L72)
 
 Return the world grid size in cells.
 
@@ -690,4 +714,4 @@ Return the world grid size in cells.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.getDimensions` / Worker entry `api.grid.getDimensions`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

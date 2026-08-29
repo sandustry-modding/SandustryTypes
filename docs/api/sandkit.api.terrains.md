@@ -6,13 +6,13 @@
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainDefinition</code></p>
 
-Defined in: [sandkit/api/terrains.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L53)
+Defined in: [sandkit/api/terrains.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L54)
 
 Terrain definition shape with typed element interactions.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 #### Extends
 
@@ -36,7 +36,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 optional interactions?: readonly Interaction[]
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L55)
+Defined in: [sandkit/api/terrains.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L56)
 
 Tooltip interactions shown for this terrain.
 
@@ -50,7 +50,7 @@ Tooltip interactions shown for this terrain.
 register(definition: TerrainDefinition): object
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L65)
+Defined in: [sandkit/api/terrains.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L67)
 
 Register a new terrain definition.
 
@@ -76,7 +76,7 @@ cellType: TerrainType
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -88,7 +88,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L74)
+Defined in: [sandkit/api/terrains.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L77)
 
 Patch fields on an existing terrain definition.
 
@@ -112,7 +112,7 @@ Fields to merge onto the definition.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.updateDefinition`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -124,7 +124,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L85)
+Defined in: [sandkit/api/terrains.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L89)
 
 Create terrain at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -140,7 +140,7 @@ Create terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.terrains.createAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -150,7 +150,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L91)
+Defined in: [sandkit/api/terrains.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L96)
 
 #### Parameters
 
@@ -168,7 +168,7 @@ Use [createAtCell](#createatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.createAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -180,7 +180,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — de
 replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L102)
+Defined in: [sandkit/api/terrains.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L108)
 
 Replace terrain at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -196,7 +196,7 @@ Replace terrain at a cell. Main-entry writes are deferred; reads see the old gri
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.terrains.replaceAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -206,7 +206,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L108)
+Defined in: [sandkit/api/terrains.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L115)
 
 #### Parameters
 
@@ -224,7 +224,7 @@ Use [replaceAtCell](#replaceatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.replaceAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -236,7 +236,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — de
 removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L118)
+Defined in: [sandkit/api/terrains.d.ts:126](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L126)
 
 Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -252,7 +252,7 @@ Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.terrains.removeAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -262,7 +262,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L124)
+Defined in: [sandkit/api/terrains.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L133)
 
 #### Parameters
 
@@ -280,7 +280,7 @@ Use [removeAtCell](#removeatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.removeAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -292,7 +292,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — de
 setHitPointsAtCell(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L134)
+Defined in: [sandkit/api/terrains.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L144)
 
 Set terrain hit points at a cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -308,7 +308,7 @@ Set terrain hit points at a cell. Main-entry writes are deferred; reads see the 
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.terrains.setHitPointsAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -318,7 +318,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 setHpAtCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L140)
+Defined in: [sandkit/api/terrains.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L151)
 
 #### Parameters
 
@@ -336,7 +336,7 @@ Use [setHitPointsAtCell](#sethitpointsatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -346,7 +346,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — de
 setHpAtCellWhenIdle(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/terrains.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L146)
+Defined in: [sandkit/api/terrains.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L158)
 
 #### Parameters
 
@@ -364,7 +364,7 @@ Use [setHitPointsAtCell](#sethitpointsatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ## References <!-- {docsify-ignore} -->
 

@@ -34,7 +34,7 @@ Return screen draw position for a grid cell.
 getDrawPositionAtWorld(worldX: number, worldY: number): Vector2
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L24)
+Defined in: [sandkit/api/rendering.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L33)
 
 Return screen draw position for a world-space point.
 
@@ -56,9 +56,18 @@ World y position in pixels.
 
 [`Vector2`](api/shared.player.md#vector2)
 
+#### Example
+
+```ts
+api.events.on("frame:render", () => {
+  const drawPos = api.rendering.getDrawPositionAtWorld(worldX, worldY);
+  drawMarker(drawPos.x, drawPos.y);
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.rendering.getDrawPositionAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -70,7 +79,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getGridMetrics(): object
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L26)
+Defined in: [sandkit/api/rendering.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L42)
 
 Return cell size and snap grid metrics.
 
@@ -90,6 +99,12 @@ cellSize: number
 snapGridCellSize: number
 ```
 
+#### Example
+
+```ts
+const { cellSize, snapGridCellSize } = api.rendering.getGridMetrics();
+```
+
 ***
 
 ### getOverlayViewportSize() :id=getoverlayviewportsize
@@ -100,7 +115,7 @@ snapGridCellSize: number
 getOverlayViewportSize(): object
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L28)
+Defined in: [sandkit/api/rendering.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L44)
 
 Return overlay viewport width and height in pixels.
 
@@ -130,7 +145,7 @@ height: number
 withOverlayContext<T>(callback: (context: CanvasRenderingContext2D) => T): T
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L33)
+Defined in: [sandkit/api/rendering.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L56)
 
 Run a callback with the overlay canvas context.
 
@@ -151,3 +166,11 @@ Receives the overlay 2D context; return value is passed through.
 #### Returns
 
 `T`
+
+#### Example
+
+```ts
+api.rendering.withOverlayContext((context) => {
+  context.fillRect(0, 0, 16, 16);
+});
+```

@@ -12,7 +12,7 @@ Worker-thread `sandkit.api.events` — subscribe to and emit worker-scoped event
 
 <p class="smt-member-path"><code>sandkit.api.events.EventGuard (worker)</code></p>
 
-Defined in: [worker/api/events.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L39)
+Defined in: [worker/api/events.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L68)
 
 Guard filter for worker events.
 
@@ -24,7 +24,7 @@ Guard filter for worker events.
 optional elementType?: ElementType
 ```
 
-Defined in: [worker/api/events.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L41)
+Defined in: [worker/api/events.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L70)
 
 Required when subscribing to `element:moved`. Optional on emit.
 
@@ -34,7 +34,7 @@ Required when subscribing to `element:moved`. Optional on emit.
 optional terrainType?: number
 ```
 
-Defined in: [worker/api/events.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L43)
+Defined in: [worker/api/events.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L72)
 
 Required when subscribing to `terrain:updated`. Optional on emit.
 
@@ -44,7 +44,7 @@ Required when subscribing to `terrain:updated`. Optional on emit.
 
 <p class="smt-member-path"><code>sandkit.api.events.EventEmitOptions (worker)</code></p>
 
-Defined in: [worker/api/events.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L55)
+Defined in: [worker/api/events.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L84)
 
 Options for [emit](#emit).
 
@@ -56,7 +56,7 @@ Options for [emit](#emit).
 optional guard?: EventGuard
 ```
 
-Defined in: [worker/api/events.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L56)
+Defined in: [worker/api/events.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L85)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [worker/api/events.d.ts:56](https://github.com/sandustry-modding/San
 
 <p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap (worker)</code></p>
 
-Defined in: [worker/api/events.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L60)
+Defined in: [worker/api/events.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L89)
 
 Known worker event payloads. Unlisted ids still use `unknown`.
 
@@ -76,7 +76,7 @@ Known worker event payloads. Unlisted ids still use `unknown`.
 element:moved: Record<string, unknown>
 ```
 
-Defined in: [worker/api/events.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L61)
+Defined in: [worker/api/events.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L90)
 
 ##### terrain:updated
 
@@ -84,7 +84,7 @@ Defined in: [worker/api/events.d.ts:61](https://github.com/sandustry-modding/San
 terrain:updated: Record<string, unknown>
 ```
 
-Defined in: [worker/api/events.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L62)
+Defined in: [worker/api/events.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L91)
 
 ##### ~~terrain:update~~
 
@@ -92,7 +92,7 @@ Defined in: [worker/api/events.d.ts:62](https://github.com/sandustry-modding/San
 terrain:update: Record<string, unknown>
 ```
 
-Defined in: [worker/api/events.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L64)
+Defined in: [worker/api/events.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L93)
 
 ###### Deprecated
 
@@ -104,7 +104,7 @@ Use `"terrain:updated"` instead.
 worker:update:post: Record<string, unknown>
 ```
 
-Defined in: [worker/api/events.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L65)
+Defined in: [worker/api/events.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L94)
 
 ##### ~~update:post~~
 
@@ -112,7 +112,7 @@ Defined in: [worker/api/events.d.ts:65](https://github.com/sandustry-modding/San
 update:post: Record<string, unknown>
 ```
 
-Defined in: [worker/api/events.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L67)
+Defined in: [worker/api/events.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L96)
 
 ###### Deprecated
 
@@ -128,7 +128,7 @@ Use `"worker:update:post"` instead.
 EventOnOptions<K *extends* EventId> = K *extends* "element:moved" ? object : K *extends* "terrain:updated" | "terrain:update" ? object : object
 ```
 
-Defined in: [worker/api/events.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L47)
+Defined in: [worker/api/events.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L76)
 
 Options for [on](#on).
 
@@ -148,7 +148,7 @@ Options for [on](#on).
 EventId = LooseString<keyof EventPayloadMap>
 ```
 
-Defined in: [worker/api/events.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L71)
+Defined in: [worker/api/events.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L100)
 
 Known worker event names plus any custom string id.
 
@@ -162,7 +162,7 @@ Known worker event names plus any custom string id.
 EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
 ```
 
-Defined in: [worker/api/events.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L74)
+Defined in: [worker/api/events.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L103)
 
 Event payload type for a given event id.
 
@@ -182,7 +182,7 @@ Event payload type for a given event id.
 on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void, options?: EventOnOptions<K>): () => void
 ```
 
-Defined in: [worker/api/events.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L18)
+Defined in: [worker/api/events.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L46)
 
 Subscribe to a worker event. Returns an unsubscribe function.
 
@@ -216,9 +216,41 @@ Required guard for filtered events.
 
 () => `void`
 
+#### Examples
+
+**element:moved**
+
+```ts
+api.events.on(
+  "element:moved",
+  (payload) => handleElementMoved(payload),
+  { guard: { elementType } },
+);
+```
+
+**terrain:updated**
+
+```ts
+api.events.on(
+  "terrain:updated",
+  (payload) => {
+    handleTerrainUpdate(payload);
+  },
+  { guard: { terrainType } },
+);
+```
+
+**worker:update:post**
+
+```ts
+api.events.on("worker:update:post", (payload) => {
+  runPostUpdate(payload);
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.events.on`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -230,7 +262,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — W
 emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>, options?: EventEmitOptions): void
 ```
 
-Defined in: [worker/api/events.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L32)
+Defined in: [worker/api/events.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L61)
 
 Emit a worker event with a payload to subscribers.
 
@@ -266,4 +298,4 @@ Optional guard forwarded to filtered listeners.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.events.emit`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

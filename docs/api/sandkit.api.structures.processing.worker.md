@@ -12,7 +12,7 @@ Structure processing enablement checks.
 isEnabledAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L153)
+Defined in: [shared/api/structures.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L190)
 
 Return true when processing is enabled at the cell.
 
@@ -28,7 +28,7 @@ Return true when processing is enabled at the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.structures.processing.isEnabledAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -38,7 +38,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — W
 isEnabledAt(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L159)
+Defined in: [shared/api/structures.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L197)
 
 #### Parameters
 
@@ -56,4 +56,4 @@ Use [isEnabledAtCell](#isenabledatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.processing.isEnabledAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

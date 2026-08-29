@@ -1,5 +1,113 @@
 # sandkit.api.ui
 
+## Examples
+
+**api.ui.components.ActionSlot**
+
+```ts
+const slot = sandkit.react.createElement(
+  api.ui.components.ActionSlot,
+  { source, slotIndex: 0, keyLabel: "1" },
+);
+```
+
+**api.ui.components.Button**
+
+```ts
+const button = sandkit.react.createElement(
+  api.ui.components.Button,
+  { onClick: openPanel },
+  "Open",
+);
+```
+
+**api.ui.components.Panel**
+
+```ts
+const panel = sandkit.react.createElement(
+  api.ui.components.Panel,
+  { title: "Options" },
+  "Panel content",
+);
+```
+
+**api.ui.hotbar.createBankSource**
+
+```ts
+const source = api.ui.hotbar.createBankSource({
+  bankOffset: 1,
+  minimumBankCount: 2,
+});
+```
+
+**api.ui.hotbar.useHotbar**
+
+```ts
+const hotbar = api.ui.hotbar.useHotbar();
+console.log(
+  hotbar.bankCount,
+  hotbar.activeBankIndex,
+  hotbar.activeSlotIndex,
+);
+```
+
+**api.ui.overrides.register**
+
+```ts
+const overrideHandle = api.ui.overrides.register(
+  "resources",
+  (Original) => sandkit.react.createElement(
+    sandkit.react.Fragment,
+    null,
+    sandkit.react.createElement(Original),
+    sandkit.react.createElement(ResourceAddon),
+  ),
+);
+```
+
+**api.ui.regions.mount**
+
+```ts
+const mountHandle = api.ui.regions.mount(
+  "hotbar",
+  "extra-actions",
+  {
+    placement: "docked",
+    order: 0,
+    render: () => sandkit.react.createElement(ExtraActions),
+  },
+);
+```
+
+**api.ui.regions.mountHandle.update**
+
+```ts
+mountHandle.update({
+  order: 10,
+  render: () => sandkit.react.createElement(UpdatedActions),
+});
+```
+
+**api.ui.select**
+
+```ts
+const selected = await api.ui.select(
+  [
+    { label: "Sand", value: "sand" },
+    { label: "Fluxite", value: "fluxite" },
+  ],
+  { title: "Select element", defaultValue: "sand", buttonLabel: "Choose" },
+);
+```
+
+**api.ui.useGameEvent**
+
+```ts
+api.ui.useGameEvent("resource:collected", (payload) => {
+  console.log(payload.resourceId, payload.amount);
+});
+```
+
 ## Namespaces <!-- {docsify-ignore} -->
 
 - [overlays](api/sandkit.api.ui.overlays.md)
@@ -11,7 +119,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.ui.TooltipMessageData</code></p>
 
-Defined in: [sandkit/api/ui.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L137)
+Defined in: [sandkit/api/ui.d.ts:282](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L282)
 
 Message tooltip with localized body text.
 
@@ -23,7 +131,7 @@ Message tooltip with localized body text.
 type: "message"
 ```
 
-Defined in: [sandkit/api/ui.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L139)
+Defined in: [sandkit/api/ui.d.ts:284](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L284)
 
 Discriminator for tooltip renderer selection.
 
@@ -33,7 +141,7 @@ Discriminator for tooltip renderer selection.
 text: LocalizedText
 ```
 
-Defined in: [sandkit/api/ui.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L141)
+Defined in: [sandkit/api/ui.d.ts:286](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L286)
 
 Message body as localized text.
 
@@ -43,7 +151,7 @@ Message body as localized text.
 
 <p class="smt-member-path"><code>sandkit.api.ui.Focusable</code></p>
 
-Defined in: [sandkit/api/ui.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L145)
+Defined in: [sandkit/api/ui.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L290)
 
 Focusable element state from useFocusable.
 
@@ -61,7 +169,7 @@ Focusable element state from useFocusable.
 readonly ref: RefObject<T>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L147)
+Defined in: [sandkit/api/ui.d.ts:292](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L292)
 
 Ref to attach to the focusable element.
 
@@ -71,7 +179,7 @@ Ref to attach to the focusable element.
 readonly focused: boolean
 ```
 
-Defined in: [sandkit/api/ui.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L149)
+Defined in: [sandkit/api/ui.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L294)
 
 True when the element has controller focus.
 
@@ -81,7 +189,7 @@ True when the element has controller focus.
 readonly focus: () => void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L151)
+Defined in: [sandkit/api/ui.d.ts:296](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L296)
 
 Move controller focus to this element.
 
@@ -95,7 +203,7 @@ Move controller focus to this element.
 
 <p class="smt-member-path"><code>sandkit.api.ui.FocusOptions</code></p>
 
-Defined in: [sandkit/api/ui.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L155)
+Defined in: [sandkit/api/ui.d.ts:300](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L300)
 
 Options for useFocusable registration.
 
@@ -107,7 +215,7 @@ Options for useFocusable registration.
 readonly id: string
 ```
 
-Defined in: [sandkit/api/ui.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L157)
+Defined in: [sandkit/api/ui.d.ts:302](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L302)
 
 Unique id within the focus scope.
 
@@ -117,7 +225,7 @@ Unique id within the focus scope.
 readonly scope: string
 ```
 
-Defined in: [sandkit/api/ui.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L159)
+Defined in: [sandkit/api/ui.d.ts:304](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L304)
 
 Focus scope id this element belongs to.
 
@@ -127,7 +235,7 @@ Focus scope id this element belongs to.
 readonly onActivate: (element?: HTMLElement) => void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L161)
+Defined in: [sandkit/api/ui.d.ts:306](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L306)
 
 Called when the element is activated (A button / Enter).
 
@@ -147,7 +255,7 @@ Called when the element is activated (A button / Enter).
 readonly optional onFocus?: () => void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L163)
+Defined in: [sandkit/api/ui.d.ts:308](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L308)
 
 Called when the element receives focus.
 
@@ -161,7 +269,7 @@ Called when the element receives focus.
 readonly optional disabled?: boolean
 ```
 
-Defined in: [sandkit/api/ui.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L165)
+Defined in: [sandkit/api/ui.d.ts:310](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L310)
 
 When true, skip this element during navigation.
 
@@ -171,7 +279,7 @@ When true, skip this element during navigation.
 readonly optional x?: number
 ```
 
-Defined in: [sandkit/api/ui.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L167)
+Defined in: [sandkit/api/ui.d.ts:312](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L312)
 
 Optional grid column for spatial navigation.
 
@@ -181,7 +289,7 @@ Optional grid column for spatial navigation.
 readonly optional y?: number
 ```
 
-Defined in: [sandkit/api/ui.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L169)
+Defined in: [sandkit/api/ui.d.ts:314](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L314)
 
 Optional grid row for spatial navigation.
 
@@ -191,7 +299,7 @@ Optional grid row for spatial navigation.
 readonly optional neighbors?: Partial<Record<"left" | "right" | "up" | "down", string>>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L171)
+Defined in: [sandkit/api/ui.d.ts:316](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L316)
 
 Neighbor ids for directional navigation.
 
@@ -201,7 +309,7 @@ Neighbor ids for directional navigation.
 readonly optional scrollIntoView?: boolean
 ```
 
-Defined in: [sandkit/api/ui.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L173)
+Defined in: [sandkit/api/ui.d.ts:318](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L318)
 
 When true, scroll the element into view on focus.
 
@@ -215,7 +323,7 @@ When true, scroll the element into view on focus.
 OverlaySlot = LooseString<"hotbar" | "global">
 ```
 
-Defined in: [sandkit/api/ui.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L122)
+Defined in: [sandkit/api/ui.d.ts:267](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L267)
 
 Overlay slot name. Known vanilla slots autocomplete; any string is allowed.
 
@@ -229,7 +337,7 @@ Overlay slot name. Known vanilla slots autocomplete; any string is allowed.
 ComponentId = ComponentId | LooseString<never>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L128)
+Defined in: [sandkit/api/ui.d.ts:273](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L273)
 
 Registered UI component id.
 Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) values autocomplete; custom string ids are allowed.
@@ -244,7 +352,7 @@ Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) values autocomplete
 ComponentUpdateOptions = Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L131)
+Defined in: [sandkit/api/ui.d.ts:276](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L276)
 
 Component-specific update payload passed to [update](#update).
 
@@ -258,7 +366,7 @@ Component-specific update payload passed to [update](#update).
 TooltipData = TooltipMessageData
 ```
 
-Defined in: [sandkit/api/ui.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L134)
+Defined in: [sandkit/api/ui.d.ts:279](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L279)
 
 Tooltip payload shown near the cursor or UI target.
 
@@ -272,7 +380,7 @@ Tooltip payload shown near the cursor or UI target.
 update(componentId: ComponentId, options?: ComponentUpdateOptions): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L26)
+Defined in: [sandkit/api/ui.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L130)
 
 Update a registered UI component by id.
 
@@ -304,7 +412,7 @@ Component-specific update payload.
 openPauseMenu(): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L29)
+Defined in: [sandkit/api/ui.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L133)
 
 Open the pause menu.
 
@@ -322,7 +430,7 @@ Open the pause menu.
 showTooltip(data: TooltipMessageData): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L35)
+Defined in: [sandkit/api/ui.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L139)
 
 Show a tooltip with the given data.
 
@@ -348,7 +456,7 @@ Tooltip type and localized content.
 alert(message: LocalizedText, title?: LocalizedText): Promise<void>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L43)
+Defined in: [sandkit/api/ui.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L155)
 
 Show an alert dialog.
 
@@ -372,6 +480,15 @@ Optional dialog title.
 
 Promise that resolves when the user dismisses the dialog.
 
+#### Example
+
+```ts
+await api.ui.alert(
+  { key: "mods|example|details" },
+  { key: "mods|example|title" },
+);
+```
+
 ***
 
 ### confirm() :id=confirm
@@ -382,7 +499,7 @@ Promise that resolves when the user dismisses the dialog.
 confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L51)
+Defined in: [sandkit/api/ui.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L170)
 
 Show a confirm dialog.
 
@@ -406,6 +523,14 @@ Optional dialog title.
 
 Promise that resolves with true when confirmed, or false when cancelled.
 
+#### Example
+
+```ts
+const confirmed = await api.ui.confirm(
+  { key: "mods|example|confirm" },
+);
+```
+
 ***
 
 ### prompt() :id=prompt
@@ -416,7 +541,7 @@ Promise that resolves with true when confirmed, or false when cancelled.
 prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L62)
+Defined in: [sandkit/api/ui.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L189)
 
 Show a prompt dialog.
 
@@ -458,6 +583,15 @@ When true, allow copying the result from the dialog.
 
 Promise that resolves with entered text, or null when cancelled.
 
+#### Example
+
+```ts
+const value = await api.ui.prompt(
+  { key: "mods|example|enterValue" },
+  "",
+);
+```
+
 ***
 
 ### inject() :id=inject
@@ -468,7 +602,7 @@ Promise that resolves with entered text, or null when cancelled.
 inject(componentId: ComponentId, component: ComponentType<Record<string, never>>): () => void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L70)
+Defined in: [sandkit/api/ui.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L197)
 
 Mount a React component by id.
 

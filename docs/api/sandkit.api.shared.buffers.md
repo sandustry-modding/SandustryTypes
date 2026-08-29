@@ -12,7 +12,7 @@ Shared buffer ensure and lookup.
 ensure(key: string, config: object): SharedArray
 ```
 
-Defined in: [sandkit/api/shared.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L21)
+Defined in: [sandkit/api/shared.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L30)
 
 Create or return a named shared buffer with type and length.
 
@@ -40,9 +40,18 @@ Typed array kind and element count.
 
 [`SharedArray`](api/sandkit.api.shared.md#sharedarray)
 
+#### Example
+
+```ts
+const counts = api.shared.buffers.ensure("counts", {
+  type: "uint32",
+  length: 4,
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.shared.buffers.ensure`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -52,7 +61,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 create(key: string, config: object): SharedArray
 ```
 
-Defined in: [sandkit/api/shared.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L27)
+Defined in: [sandkit/api/shared.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L37)
 
 #### Parameters
 
@@ -80,7 +89,7 @@ Use [ensure](#ensure) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.shared.buffers.ensure`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -92,7 +101,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 get(key: string): SharedArray | undefined
 ```
 
-Defined in: [shared/api/shared.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L19)
+Defined in: [shared/api/shared.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L20)
 
 Look up a named shared buffer without creating it.
 
@@ -112,4 +121,4 @@ The typed array, or `undefined` when the buffer does not exist.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.shared.buffers.get`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

@@ -5,7 +5,7 @@ Main thread only.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.excavation`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -13,7 +13,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationProfileDefinitionV1</code></p>
 
-Defined in: [sandkit/api/excavation.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L21)
+Defined in: [sandkit/api/excavation.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L50)
 
 Excavation tool profile definition.
 
@@ -25,7 +25,7 @@ Excavation tool profile definition.
 optional pattern?: number[][]
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L23)
+Defined in: [sandkit/api/excavation.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L52)
 
 Dig pattern grid; non-zero cells are removed.
 
@@ -35,7 +35,7 @@ Dig pattern grid; non-zero cells are removed.
 power: number
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L25)
+Defined in: [sandkit/api/excavation.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L54)
 
 Dig strength applied to matched cells. Clamped to 0–1000.
 
@@ -45,7 +45,7 @@ Dig strength applied to matched cells. Clamped to 0–1000.
 optional options?: ExcavationProfileOptions
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L27)
+Defined in: [sandkit/api/excavation.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L56)
 
 Optional profile-specific excavation flags.
 
@@ -55,7 +55,7 @@ Optional profile-specific excavation flags.
 optional terrainRules?: readonly ExcavationTerrainRule[]
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L29)
+Defined in: [sandkit/api/excavation.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L58)
 
 Per-terrain output and damage rules.
 
@@ -65,7 +65,7 @@ Per-terrain output and damage rules.
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationProfileOptions</code></p>
 
-Defined in: [sandkit/api/excavation.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L33)
+Defined in: [sandkit/api/excavation.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L62)
 
 Options attached to an excavation profile definition.
 
@@ -77,7 +77,7 @@ Options attached to an excavation profile definition.
 optional fromGun?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L34)
+Defined in: [sandkit/api/excavation.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L63)
 
 ##### fromRocketExplosion?
 
@@ -85,7 +85,7 @@ Defined in: [sandkit/api/excavation.d.ts:34](https://github.com/sandustry-moddin
 optional fromRocketExplosion?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L35)
+Defined in: [sandkit/api/excavation.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L64)
 
 ##### fromDrill?
 
@@ -93,7 +93,7 @@ Defined in: [sandkit/api/excavation.d.ts:35](https://github.com/sandustry-moddin
 optional fromDrill?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L36)
+Defined in: [sandkit/api/excavation.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L65)
 
 ##### useLiteralOutVelocity?
 
@@ -101,7 +101,7 @@ Defined in: [sandkit/api/excavation.d.ts:36](https://github.com/sandustry-moddin
 optional useLiteralOutVelocity?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L37)
+Defined in: [sandkit/api/excavation.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L66)
 
 ##### destroyNonDestructible?
 
@@ -109,7 +109,7 @@ Defined in: [sandkit/api/excavation.d.ts:37](https://github.com/sandustry-moddin
 optional destroyNonDestructible?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L38)
+Defined in: [sandkit/api/excavation.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L67)
 
 ##### forceRemoveAll?
 
@@ -117,7 +117,7 @@ Defined in: [sandkit/api/excavation.d.ts:38](https://github.com/sandustry-moddin
 optional forceRemoveAll?: boolean
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L39)
+Defined in: [sandkit/api/excavation.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L68)
 
 ##### drillTierDamage?
 
@@ -125,7 +125,7 @@ Defined in: [sandkit/api/excavation.d.ts:39](https://github.com/sandustry-moddin
 optional drillTierDamage?: number
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L41)
+Defined in: [sandkit/api/excavation.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L70)
 
 Clamped to 0–1000 when set.
 
@@ -135,7 +135,7 @@ Clamped to 0–1000 when set.
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationTerrainRule</code></p>
 
-Defined in: [sandkit/api/excavation.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L45)
+Defined in: [sandkit/api/excavation.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L74)
 
 Terrain match rule within an excavation profile.
 
@@ -147,7 +147,7 @@ Terrain match rule within an excavation profile.
 cellType: TerrainRef
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L47)
+Defined in: [sandkit/api/excavation.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L76)
 
 Terrain cell type to match.
 
@@ -157,7 +157,7 @@ Terrain cell type to match.
 optional terrainType?: TerrainRef
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L52)
+Defined in: [sandkit/api/excavation.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L82)
 
 ###### Deprecated
 
@@ -165,7 +165,7 @@ Use [cellType](#celltype) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias in `api.excavation.registerProfile` terrain rules
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ##### damage?
 
@@ -173,7 +173,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 optional damage?: number
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L54)
+Defined in: [sandkit/api/excavation.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L84)
 
 Damage applied when this rule matches.
 
@@ -183,7 +183,7 @@ Damage applied when this rule matches.
 optional outputElementType?: ElementRef
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L56)
+Defined in: [sandkit/api/excavation.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L86)
 
 Element type produced when this terrain is excavated.
 
@@ -197,7 +197,7 @@ Element type produced when this terrain is excavated.
 registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L18)
+Defined in: [sandkit/api/excavation.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L47)
 
 Registers an excavation profile by id.
 
@@ -219,6 +219,35 @@ Pattern, power, terrain rules, and profile options.
 
 `void`
 
+#### Example
+
+```ts
+const profileId = "example:voidGun";
+const duneType = api.terrains.getTypeById("dune");
+const sandType = api.elements.getTypeById("sand");
+
+api.excavation.registerProfile(profileId, {
+  power: 8,
+  terrainRules: [
+    {
+      cellType: duneType,
+      outputElementType: sandType,
+    },
+  ],
+});
+
+api.hooks.modify("excavation:prepare", (args) => {
+  if (
+    args.sourceKind !== "projectile"
+    || args.sourceId !== "implosionGun"
+  ) {
+    return;
+  }
+
+  args.profileId = profileId;
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.excavation.registerProfile`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

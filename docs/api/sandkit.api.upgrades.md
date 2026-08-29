@@ -6,7 +6,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.upgrades.UpgradeDefinition</code></p>
 
-Defined in: [sandkit/api/upgrades.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L49)
+Defined in: [sandkit/api/upgrades.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L50)
 
 Upgrade definition registered for an item.
 
@@ -24,7 +24,7 @@ Upgrade definition registered for an item.
 itemId: string
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L50)
+Defined in: [sandkit/api/upgrades.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L51)
 
 ##### itemNameKey?
 
@@ -32,7 +32,7 @@ Defined in: [sandkit/api/upgrades.d.ts:50](https://github.com/sandustry-modding/
 optional itemNameKey?: string
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L51)
+Defined in: [sandkit/api/upgrades.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L52)
 
 ##### categoryId?
 
@@ -40,7 +40,7 @@ Defined in: [sandkit/api/upgrades.d.ts:51](https://github.com/sandustry-modding/
 optional categoryId?: string
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L52)
+Defined in: [sandkit/api/upgrades.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L53)
 
 ##### upgrade
 
@@ -48,7 +48,7 @@ Defined in: [sandkit/api/upgrades.d.ts:52](https://github.com/sandustry-modding/
 upgrade: object
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L53)
+Defined in: [sandkit/api/upgrades.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L54)
 
 ###### id
 
@@ -92,7 +92,7 @@ optional oneOff?: boolean
 
 <p class="smt-member-path"><code>sandkit.api.upgrades.UpgradeCategoryDefinition</code></p>
 
-Defined in: [sandkit/api/upgrades.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L65)
+Defined in: [sandkit/api/upgrades.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L66)
 
 Upgrade category definition shape.
 
@@ -110,7 +110,7 @@ Upgrade category definition shape.
 id: string
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L67)
+Defined in: [sandkit/api/upgrades.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L68)
 
 Category identifier referenced by upgrades.
 
@@ -120,7 +120,7 @@ Category identifier referenced by upgrades.
 optional nameKey?: string
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L69)
+Defined in: [sandkit/api/upgrades.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L70)
 
 Display name translation key.
 
@@ -288,7 +288,7 @@ Upgrade id within the item.
 setLevelById(itemId: string, upgradeId: string, level: number): void
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L46)
+Defined in: [sandkit/api/upgrades.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L47)
 
 Set the purchased level for an upgrade.
 
@@ -318,4 +318,4 @@ Level to set.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.upgrades.setLevelById`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

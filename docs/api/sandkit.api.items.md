@@ -85,7 +85,7 @@ Called after the item is rendered each frame.
 ItemId = ItemId | LooseString<never>
 ```
 
-Defined in: [sandkit/api/items.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L52)
+Defined in: [sandkit/api/items.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L59)
 
 Inventory item id.
 Built-in [ItemIdEnum](api/sandkit.enums.ItemId.md) values autocomplete; custom string ids are allowed.
@@ -100,7 +100,7 @@ Built-in [ItemIdEnum](api/sandkit.enums.ItemId.md) values autocomplete; custom s
 ItemType = ItemType | TaggedNumber<"itemType">
 ```
 
-Defined in: [sandkit/api/items.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L57)
+Defined in: [sandkit/api/items.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L64)
 
 Item category handle.
 Built-in [ItemTypeEnum](api/sandkit.enums.ItemType.md) values autocomplete.
@@ -115,7 +115,7 @@ Built-in [ItemTypeEnum](api/sandkit.enums.ItemType.md) values autocomplete.
 ModItem = unknown
 ```
 
-Defined in: [sandkit/api/items.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L59)
+Defined in: [sandkit/api/items.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L66)
 
 Runtime item instance (not yet typed in declarations).
 
@@ -155,7 +155,7 @@ Item id, handlers, and display metadata.
 updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
 ```
 
-Defined in: [sandkit/api/items.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L28)
+Defined in: [sandkit/api/items.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L35)
 
 Updates fields on an existing item definition.
 
@@ -177,6 +177,14 @@ Fields to merge into the definition.
 
 `void`
 
+#### Example
+
+```ts
+api.items.updateDefinition("exampleTool", {
+  name: "Updated Example Tool",
+});
+```
+
 ***
 
 ### getDefinitionById() :id=getdefinitionbyid
@@ -187,7 +195,7 @@ Fields to merge into the definition.
 getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 ```
 
-Defined in: [sandkit/api/items.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L33)
+Defined in: [sandkit/api/items.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L40)
 
 Returns the item definition for an id, or undefined.
 
@@ -213,7 +221,7 @@ Registered item id.
 createFromId(itemId: ItemId): unknown
 ```
 
-Defined in: [sandkit/api/items.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L38)
+Defined in: [sandkit/api/items.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L45)
 
 Creates a runtime item instance from an id.
 
@@ -239,7 +247,7 @@ Registered item id.
 getActive(): ItemDefinition<unknown, unknown> | undefined
 ```
 
-Defined in: [sandkit/api/items.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L40)
+Defined in: [sandkit/api/items.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L47)
 
 Returns the item definition for the active hotbar slot.
 
@@ -257,7 +265,7 @@ Returns the item definition for the active hotbar slot.
 isActiveById(itemId: ItemId, itemType?: ItemType): boolean
 ```
 
-Defined in: [sandkit/api/items.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L46)
+Defined in: [sandkit/api/items.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L53)
 
 Returns true when the given item is the active hotbar item.
 

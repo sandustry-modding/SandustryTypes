@@ -67,7 +67,7 @@ Selected hotbar action reference.
 setCustomData<Input>(data: Input): void
 ```
 
-Defined in: [sandkit/api/action.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L27)
+Defined in: [sandkit/api/action.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L32)
 
 Store custom data on the active action handler.
 
@@ -88,3 +88,9 @@ Serializable payload attached to the active action.
 #### Returns
 
 `void`
+
+#### Example
+
+```ts
+api.action.setCustomData({ mode: "example" });
+```

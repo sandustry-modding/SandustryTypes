@@ -639,9 +639,21 @@ Use [grid](#grid) for cell APIs and [pickups](#pickups) for world items.
 Sandkit = object
 ```
 
-Defined in: [sandkit/index.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L22)
+Defined in: [sandkit/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L33)
 
 Shape of the host-injected `sandkit` free variable in mod `main.js`.
+
+#### Example
+
+**Accessing the API**
+
+```ts
+const api = sandkit.api; // Stable API
+
+// Unstable engine escape hatch
+const engineApi = sandkit.engine.api;
+const engineState = sandkit.engine.state;
+```
 
 #### Properties
 
@@ -651,7 +663,7 @@ Shape of the host-injected `sandkit` free variable in mod `main.js`.
 api: SandkitApi
 ```
 
-Defined in: [sandkit/index.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L24)
+Defined in: [sandkit/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L35)
 
 Public mod API. See [sandkit.api](#api-1).
 
@@ -661,7 +673,7 @@ Public mod API. See [sandkit.api](#api-1).
 apiVersion: number
 ```
 
-Defined in: [sandkit/index.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L26)
+Defined in: [sandkit/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L37)
 
 Sandkit API version number (live value is `1`).
 
@@ -671,7 +683,7 @@ Sandkit API version number (live value is `1`).
 engine: SandkitEngine
 ```
 
-Defined in: [sandkit/index.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L31)
+Defined in: [sandkit/index.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L42)
 
 **`Internal`**
 
@@ -683,7 +695,7 @@ State-first internals. See [SandkitEngine](api/sandkit.engine.md#sandkitengine).
 enums: SandkitEnums
 ```
 
-Defined in: [sandkit/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L33)
+Defined in: [sandkit/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L44)
 
 Runtime enum bags. See [sandkit.enums](#enums-1).
 
@@ -693,7 +705,7 @@ Runtime enum bags. See [sandkit.enums](#enums-1).
 react: SandkitReact
 ```
 
-Defined in: [sandkit/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L35)
+Defined in: [sandkit/index.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L46)
 
 Host React package. See [SandkitReact](api/sandkit.react.md#sandkitreact).
 
@@ -703,7 +715,7 @@ Host React package. See [SandkitReact](api/sandkit.react.md#sandkitreact).
 state: SandkitState
 ```
 
-Defined in: [sandkit/index.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L40)
+Defined in: [sandkit/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L51)
 
 Game state. Same object as `sandkit.engine.state` at runtime.
 See [SandkitState](api/sandkit.engine.md#sandkitstate).

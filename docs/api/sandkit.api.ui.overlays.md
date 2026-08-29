@@ -12,7 +12,7 @@ Overlay slot registration and updates.
 register(slot: OverlaySlot, overlayId: string, render: () => ReactNode): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L80)
+Defined in: [sandkit/api/ui.d.ts:207](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L207)
 
 Register a render function in an overlay slot.
 
@@ -50,7 +50,7 @@ Function that returns React content.
 unregister(slot: OverlaySlot, overlayId: string): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L87)
+Defined in: [sandkit/api/ui.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L214)
 
 Remove an overlay from a slot.
 
@@ -82,7 +82,7 @@ Overlay id passed to [register](#register).
 update(slot: OverlaySlot): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L93)
+Defined in: [sandkit/api/ui.d.ts:220](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L220)
 
 Request a re-render for all overlays in a slot.
 

@@ -16,7 +16,7 @@ Shared `sandkit.api.structures` base — structure lookup and mutation.
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureData (worker)</code></p>
 
-Defined in: [shared/api/structures.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L163)
+Defined in: [shared/api/structures.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L201)
 
 Per-structure custom data bag.
 
@@ -34,7 +34,7 @@ Per-structure custom data bag.
 optional elementId?: string | null
 ```
 
-Defined in: [shared/api/structures.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L164)
+Defined in: [shared/api/structures.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L202)
 
 ##### elementType?
 
@@ -42,7 +42,7 @@ Defined in: [shared/api/structures.d.ts:164](https://github.com/sandustry-moddin
 optional elementType?: TaggedNumber<"elementType"> | null
 ```
 
-Defined in: [shared/api/structures.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L165)
+Defined in: [shared/api/structures.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L203)
 
 ***
 
@@ -50,7 +50,7 @@ Defined in: [shared/api/structures.d.ts:165](https://github.com/sandustry-moddin
 
 <p class="smt-member-path"><code>sandkit.api.structures.Structure (worker)</code></p>
 
-Defined in: [shared/api/structures.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L170)
+Defined in: [shared/api/structures.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L208)
 
 Live structure instance in the world grid.
 
@@ -68,7 +68,7 @@ Live structure instance in the world grid.
 x: number
 ```
 
-Defined in: [shared/api/structures.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L171)
+Defined in: [shared/api/structures.d.ts:209](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L209)
 
 ##### y
 
@@ -76,7 +76,7 @@ Defined in: [shared/api/structures.d.ts:171](https://github.com/sandustry-moddin
 y: number
 ```
 
-Defined in: [shared/api/structures.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L172)
+Defined in: [shared/api/structures.d.ts:210](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L210)
 
 ##### trapped?
 
@@ -84,7 +84,7 @@ Defined in: [shared/api/structures.d.ts:172](https://github.com/sandustry-moddin
 optional trapped?: boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L173)
+Defined in: [shared/api/structures.d.ts:211](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L211)
 
 ##### data?
 
@@ -92,7 +92,7 @@ Defined in: [shared/api/structures.d.ts:173](https://github.com/sandustry-moddin
 optional data?: StructureData
 ```
 
-Defined in: [shared/api/structures.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L174)
+Defined in: [shared/api/structures.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L212)
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
@@ -104,7 +104,7 @@ Defined in: [shared/api/structures.d.ts:174](https://github.com/sandustry-moddin
 StructureType = StructureType | TaggedNumber<"structureType">
 ```
 
-Defined in: [shared/api/structures.d.ts:179](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L179)
+Defined in: [shared/api/structures.d.ts:217](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L217)
 
 Numeric structure type handle. Built-in enum values autocomplete.
 
@@ -118,7 +118,7 @@ Numeric structure type handle. Built-in enum values autocomplete.
 StructureId = LooseString<never>
 ```
 
-Defined in: [shared/api/structures.d.ts:181](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L181)
+Defined in: [shared/api/structures.d.ts:219](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L219)
 
 Mod or built-in structure string id.
 
@@ -132,7 +132,7 @@ Mod or built-in structure string id.
 StructureRef = StructureType | StructureId
 ```
 
-Defined in: [shared/api/structures.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L183)
+Defined in: [shared/api/structures.d.ts:221](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L221)
 
 Type handle or string id accepted by lookup helpers.
 
@@ -146,7 +146,7 @@ Type handle or string id accepted by lookup helpers.
 forEachOfType(structureTypeOrId: StructureRef, callback: (structure: Structure) => void): void
 ```
 
-Defined in: [shared/api/structures.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L18)
+Defined in: [shared/api/structures.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L26)
 
 Invoke a callback for every structure of the given type.
 
@@ -168,9 +168,19 @@ Called once per matching structure instance.
 
 `void`
 
+#### Example
+
+**Worker entry**
+
+```ts
+api.structures.forEachOfType("exampleStructure", (structure) => {
+  processStructure(structure);
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.forEachOfType`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -182,7 +192,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getAtCell(...args: CellCoordinates): Structure | null
 ```
 
-Defined in: [shared/api/structures.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L27)
+Defined in: [shared/api/structures.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L36)
 
 Return the structure at a cell, or null when none.
 
@@ -198,7 +208,7 @@ Return the structure at a cell, or null when none.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.getAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -210,7 +220,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getDefinitionByType(structureType: StructureRef): any
 ```
 
-Defined in: [shared/api/structures.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L35)
+Defined in: [shared/api/structures.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L45)
 
 Return the mod-registered or built-in definition for a structure type.
 
@@ -228,7 +238,7 @@ Structure type value or string id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.getDefinitionByType`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -240,7 +250,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getTypeById(structureId: string & object): StructureType
 ```
 
-Defined in: [shared/api/structures.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L43)
+Defined in: [shared/api/structures.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L54)
 
 Map a structure string id to its runtime type value.
 
@@ -258,7 +268,7 @@ Structure string id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.getTypeById`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -268,7 +278,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getTypeFromId(structureId: string & object): StructureType
 ```
 
-Defined in: [shared/api/structures.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L49)
+Defined in: [shared/api/structures.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L61)
 
 #### Parameters
 
@@ -286,7 +296,7 @@ Use [getTypeById](#gettypebyid) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.getTypeById`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -298,7 +308,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 hasBuiltAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L58)
+Defined in: [shared/api/structures.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L71)
 
 Return true when a completed structure occupies the cell.
 
@@ -314,7 +324,7 @@ Return true when a completed structure occupies the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.hasBuiltAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -326,7 +336,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isType(structure: Structure | null, structureId: string & object): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L67)
+Defined in: [shared/api/structures.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L81)
 
 Return true when the structure matches the given id.
 
@@ -350,7 +360,7 @@ Structure string id to compare.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.isType`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -362,7 +372,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isTypeAtCell(...args: [number, number, string & object]): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L77)
+Defined in: [shared/api/structures.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L92)
 
 Return true when the cell structure matches the given id.
 
@@ -378,7 +388,7 @@ Return true when the cell structure matches the given id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.isTypeAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -390,7 +400,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setSpritesheetIndex(structure: Structure, index: number): void
 ```
 
-Defined in: [shared/api/structures.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L86)
+Defined in: [shared/api/structures.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L102)
 
 Set the spritesheet frame index on a structure instance.
 
@@ -414,7 +424,7 @@ Spritesheet frame index.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.setSpritesheetIndex`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -426,7 +436,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setSpritesheetIndexAtCell(...args: [number, number, number]): void
 ```
 
-Defined in: [shared/api/structures.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L96)
+Defined in: [shared/api/structures.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L113)
 
 Set spritesheet frame index for the structure at a cell.
 
@@ -442,7 +452,7 @@ Set spritesheet frame index for the structure at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.setSpritesheetIndexAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -454,7 +464,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setSpritesheetIndexByValue(structure: Structure, value: number, thresholds: number[]): void
 ```
 
-Defined in: [shared/api/structures.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L106)
+Defined in: [shared/api/structures.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L124)
 
 Pick spritesheet index from a value and threshold table on a structure.
 
@@ -484,7 +494,7 @@ Ascending threshold values.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.setSpritesheetIndexByValue`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -496,7 +506,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setSpritesheetIndexByValueAtCell(...args: [number, number, number, number[]]): void
 ```
 
-Defined in: [shared/api/structures.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L117)
+Defined in: [shared/api/structures.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L136)
 
 Same as [setSpritesheetIndexByValue](#setspritesheetindexbyvalue) for the structure at a cell.
 
@@ -512,7 +522,7 @@ Same as [setSpritesheetIndexByValue](#setspritesheetindexbyvalue) for the struct
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.setSpritesheetIndexByValueAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -524,7 +534,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 update(structure: Structure, options?: object): void
 ```
 
-Defined in: [shared/api/structures.d.ts:126](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L126)
+Defined in: [shared/api/structures.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L151)
 
 Push structure field changes to simulation.
 
@@ -548,9 +558,17 @@ When `propagateToWorkers` is true, sync to worker threads.
 
 `void`
 
+#### Example
+
+**Worker entry**
+
+```ts
+api.structures.update(structure, { propagateToWorkers: true });
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.update`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -562,7 +580,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 updateData(structure: Structure, partial: any, options?: object): void
 ```
 
-Defined in: [shared/api/structures.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L136)
+Defined in: [shared/api/structures.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L171)
 
 Merge partial data onto a structure.
 
@@ -592,9 +610,21 @@ When `propagateToWorkers` is true, sync to worker threads.
 
 `void`
 
+#### Example
+
+**Worker entry**
+
+```ts
+api.structures.updateData(
+  structure,
+  { mode: "allow" },
+  { propagateToWorkers: true },
+);
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.updateData`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -604,7 +634,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setData(structure: Structure, partial: any, options?: object): void
 ```
 
-Defined in: [shared/api/structures.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L142)
+Defined in: [shared/api/structures.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L178)
 
 #### Parameters
 
@@ -632,4 +662,4 @@ Use [updateData](#updatedata) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.updateData`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

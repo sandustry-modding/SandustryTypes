@@ -12,7 +12,7 @@ Conservatory unlock wiring for built-in tech nodes.
 appendUnlock(techId: TechGridId, unlocks: ConservatoryUnlocks): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L88)
+Defined in: [sandkit/api/tech.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L131)
 
 Append structure or item unlocks to a conservatory tech node.
 
@@ -34,6 +34,14 @@ Optional structure and item ids to unlock.
 
 `void`
 
+#### Example
+
+```ts
+api.tech.conservatory.appendUnlock(sandkit.enums.Tech.SignalDevices, {
+  structures: ["exampleSensor"],
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.conservatory.appendUnlock`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

@@ -10,7 +10,7 @@
 nextTick(callback: () => void): void
 ```
 
-Defined in: [sandkit/api/schedule.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/schedule.d.ts#L13)
+Defined in: [sandkit/api/schedule.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/schedule.d.ts#L20)
 
 Run a callback on the next game tick.
 
@@ -25,3 +25,11 @@ Function invoked once on the next tick.
 #### Returns
 
 `void`
+
+#### Example
+
+```ts
+api.schedule.nextTick(() => {
+  runDeferredWork();
+});
+```

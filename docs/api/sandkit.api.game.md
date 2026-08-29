@@ -6,7 +6,7 @@ Available as `sandkit.api.game`.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.game`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -14,7 +14,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 
 <p class="smt-member-path"><code>sandkit.api.game.GameStartOptions</code></p>
 
-Defined in: [sandkit/api/game.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L18)
+Defined in: [sandkit/api/game.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L24)
 
 Options for [start](#start).
 
@@ -26,7 +26,7 @@ Options for [start](#start).
 optional skipIntro?: boolean
 ```
 
-Defined in: [sandkit/api/game.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L20)
+Defined in: [sandkit/api/game.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L26)
 
 When true, skip the intro sequence.
 
@@ -40,7 +40,7 @@ When true, skip the intro sequence.
 start(options?: GameStartOptions): void
 ```
 
-Defined in: [sandkit/api/game.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L15)
+Defined in: [sandkit/api/game.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L21)
 
 Start or restart the game session.
 
@@ -56,6 +56,12 @@ Optional session start flags.
 
 `void`
 
+#### Example
+
+```ts
+api.game.start({ skipIntro: true });
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.game.start`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

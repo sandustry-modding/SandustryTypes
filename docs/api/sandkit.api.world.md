@@ -6,7 +6,7 @@ Use [grid](api/sandkit.api.grid.md) instead.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Namespaces <!-- {docsify-ignore} -->
 
@@ -20,7 +20,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 runWhenSimulationIdle(callback: () => void): void
 ```
 
-Defined in: [sandkit/api/world.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L64)
+Defined in: [sandkit/api/world.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L66)
 
 #### Parameters
 
@@ -38,8 +38,7 @@ Use [grid.mutate](api/sandkit.api.grid.md#mutate) instead.
 
 #### See
 
- - https://sandustry.com/sandkit.html#mutations-heading
- - https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.grid.mutate`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -49,7 +48,7 @@ Use [grid.mutate](api/sandkit.api.grid.md#mutate) instead.
 redrawAroundCellWhenIdle(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/world.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L70)
+Defined in: [sandkit/api/world.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L73)
 
 #### Parameters
 
@@ -67,7 +66,7 @@ Use [grid.redrawAroundCell](api/sandkit.api.grid.md#redrawaroundcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.redrawAroundCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## References <!-- {docsify-ignore} -->
 

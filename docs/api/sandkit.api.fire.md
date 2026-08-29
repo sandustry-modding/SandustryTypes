@@ -5,7 +5,7 @@ Main thread only.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.fire`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -17,7 +17,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 canBurnElementAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/fire.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L17)
+Defined in: [sandkit/api/fire.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L18)
 
 Returns true when the element at the cell can burn.
 
@@ -33,7 +33,7 @@ Returns true when the element at the cell can burn.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.fire.canBurnElementAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -45,7 +45,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 burnElementAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/fire.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L26)
+Defined in: [sandkit/api/fire.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L28)
 
 Burn the element at the cell. Main-entry writes are deferred; reads see the old grid.
 
@@ -61,7 +61,7 @@ Burn the element at the cell. Main-entry writes are deferred; reads see the old 
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.fire.burnElementAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -71,7 +71,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 burnElementAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/fire.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L32)
+Defined in: [sandkit/api/fire.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L35)
 
 #### Parameters
 
@@ -89,4 +89,4 @@ Use [burnElementAtCell](#burnelementatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.fire.burnElementAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)

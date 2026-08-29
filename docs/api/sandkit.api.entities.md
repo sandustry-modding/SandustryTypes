@@ -6,7 +6,7 @@ Available as `sandkit.api.entities`.
 
 ## See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -14,7 +14,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 
 <p class="smt-member-path"><code>sandkit.api.entities.Entity</code></p>
 
-Defined in: [sandkit/api/entities.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L71)
+Defined in: [sandkit/api/entities.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L78)
 
 Active entity instance in the world.
 
@@ -32,7 +32,7 @@ Active entity instance in the world.
 id: number
 ```
 
-Defined in: [sandkit/api/entities.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L72)
+Defined in: [sandkit/api/entities.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L79)
 
 ##### x
 
@@ -40,7 +40,7 @@ Defined in: [sandkit/api/entities.d.ts:72](https://github.com/sandustry-modding/
 x: number
 ```
 
-Defined in: [sandkit/api/entities.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L73)
+Defined in: [sandkit/api/entities.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L80)
 
 ##### y
 
@@ -48,7 +48,7 @@ Defined in: [sandkit/api/entities.d.ts:73](https://github.com/sandustry-modding/
 y: number
 ```
 
-Defined in: [sandkit/api/entities.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L74)
+Defined in: [sandkit/api/entities.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L81)
 
 ##### targetX?
 
@@ -56,7 +56,7 @@ Defined in: [sandkit/api/entities.d.ts:74](https://github.com/sandustry-modding/
 optional targetX?: number
 ```
 
-Defined in: [sandkit/api/entities.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L75)
+Defined in: [sandkit/api/entities.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L82)
 
 ##### targetY?
 
@@ -64,7 +64,7 @@ Defined in: [sandkit/api/entities.d.ts:75](https://github.com/sandustry-modding/
 optional targetY?: number
 ```
 
-Defined in: [sandkit/api/entities.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L76)
+Defined in: [sandkit/api/entities.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L83)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -76,7 +76,7 @@ Defined in: [sandkit/api/entities.d.ts:76](https://github.com/sandustry-modding/
 getById(entityId: number): Entity | undefined
 ```
 
-Defined in: [sandkit/api/entities.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L15)
+Defined in: [sandkit/api/entities.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L16)
 
 Return one live entity by runtime id.
 
@@ -94,7 +94,7 @@ Runtime entity id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.getById`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -106,7 +106,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getAllByType(entityTypeId: string): Entity[]
 ```
 
-Defined in: [sandkit/api/entities.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L23)
+Defined in: [sandkit/api/entities.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L25)
 
 Return all live entities of one type.
 
@@ -124,7 +124,7 @@ Registered entity type string id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.getAllByType`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -136,7 +136,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
 ```
 
-Defined in: [sandkit/api/entities.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L34)
+Defined in: [sandkit/api/entities.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L37)
 
 Spawn an entity at world position.
 
@@ -168,7 +168,7 @@ The spawned entity instance.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.spawnAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -180,7 +180,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 remove(entityId: number): void
 ```
 
-Defined in: [sandkit/api/entities.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L42)
+Defined in: [sandkit/api/entities.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L46)
 
 Remove an entity from the world.
 
@@ -198,7 +198,7 @@ Runtime entity id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.remove`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -210,7 +210,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 launch(entityId: number, angleRadians: number, speed?: number): void
 ```
 
-Defined in: [sandkit/api/entities.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L52)
+Defined in: [sandkit/api/entities.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L57)
 
 Launch an entity with angle and optional speed.
 
@@ -240,7 +240,7 @@ Optional launch speed.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.launch`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -252,7 +252,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 startCapture(entityId: number): void
 ```
 
-Defined in: [sandkit/api/entities.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L60)
+Defined in: [sandkit/api/entities.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L66)
 
 Start capture for an entity (for example vacuum capture).
 
@@ -270,7 +270,7 @@ Runtime entity id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.startCapture`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -282,7 +282,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 collect(entityId: number): void
 ```
 
-Defined in: [sandkit/api/entities.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L68)
+Defined in: [sandkit/api/entities.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L75)
 
 Collect an entity (for example into inventory or storage).
 
@@ -300,4 +300,4 @@ Runtime entity id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.collect`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

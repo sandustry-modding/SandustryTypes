@@ -10,7 +10,7 @@
 getDistance(pointA: Vector2, pointB: Vector2): number
 ```
 
-Defined in: [sandkit/api/utils.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L18)
+Defined in: [sandkit/api/utils.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L19)
 
 Return distance between two points.
 
@@ -34,7 +34,7 @@ Second point.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getDistance`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -46,7 +46,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getDirection(pointA: Vector2, pointB: Vector2): Vector2
 ```
 
-Defined in: [sandkit/api/utils.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L27)
+Defined in: [sandkit/api/utils.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L29)
 
 Return normalized direction from point A to point B.
 
@@ -70,7 +70,7 @@ Target point.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getDirection`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -82,7 +82,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getAngle(pointA: Vector2, pointB: Vector2): number
 ```
 
-Defined in: [sandkit/api/utils.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L36)
+Defined in: [sandkit/api/utils.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L39)
 
 Return angle in radians from point A to point B.
 
@@ -106,7 +106,7 @@ Target point.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getAngle`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -118,7 +118,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getCoordinatesBetweenCells(pointA: Vector2, pointB: Vector2): Vector2[]
 ```
 
-Defined in: [sandkit/api/utils.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L45)
+Defined in: [sandkit/api/utils.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L49)
 
 Return grid cells along a line between two points.
 
@@ -142,7 +142,7 @@ Line end in cell coordinates.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getCoordinatesBetweenCells`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -152,7 +152,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 ```
 
-Defined in: [sandkit/api/utils.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L51)
+Defined in: [sandkit/api/utils.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L56)
 
 #### Parameters
 
@@ -174,4 +174,4 @@ Use [getCoordinatesBetweenCells](#getcoordinatesbetweencells) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.utils.getCoordinatesBetweenCells`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

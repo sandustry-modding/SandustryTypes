@@ -10,7 +10,7 @@
 FieldId = LooseString<never>
 ```
 
-Defined in: [sandkit/api/settings.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L25)
+Defined in: [sandkit/api/settings.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L32)
 
 Settings field id. Any string is allowed.
 
@@ -24,7 +24,7 @@ Settings field id. Any string is allowed.
 ConfigValueV1 = string | number | boolean | null
 ```
 
-Defined in: [sandkit/api/settings.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L28)
+Defined in: [sandkit/api/settings.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L35)
 
 Settings field value shape.
 
@@ -82,7 +82,7 @@ Return all settings as a read-only map.
 onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void
 ```
 
-Defined in: [sandkit/api/settings.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L22)
+Defined in: [sandkit/api/settings.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L29)
 
 Subscribe to settings changes. Return an unsubscribe function.
 
@@ -97,3 +97,11 @@ Called with the full settings map after a change.
 #### Returns
 
 () => `void`
+
+#### Example
+
+```ts
+const unsubscribe = api.settings.onChange((values) => {
+  applySettings(values);
+});
+```

@@ -12,7 +12,7 @@ Signal target registration for structure types.
 register(structureTypeOrId: unknown, apply: (structure: unknown, payload: unknown) => void): void
 ```
 
-Defined in: [sandkit/api/signals.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L16)
+Defined in: [sandkit/api/signals.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L45)
 
 Register a handler when a signal targets a structure type.
 
@@ -33,3 +33,11 @@ Called when a signal reaches a matching structure.
 #### Returns
 
 `void`
+
+#### Example
+
+```ts
+api.signals.targets.register("exampleMachine", (structure, payload) => {
+  api.structures.processing.setEnabledAtCell(structure.x, structure.y, payload.combined);
+});
+```

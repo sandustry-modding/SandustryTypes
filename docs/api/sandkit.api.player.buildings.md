@@ -12,7 +12,7 @@ Player building unlock helpers.
 unlockById(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L125)
+Defined in: [sandkit/api/player.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L137)
 
 Unlock a structure type for building.
 
@@ -30,7 +30,7 @@ Registered structure id string.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.buildings.unlockById`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -40,7 +40,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 unlockByType(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L131)
+Defined in: [sandkit/api/player.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L144)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ Use [unlockById](#unlockbyid) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.buildings.unlockById`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -70,7 +70,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 removeById(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L139)
+Defined in: [sandkit/api/player.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L153)
 
 Remove a structure unlock from the player.
 
@@ -88,4 +88,4 @@ Registered structure id string.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.buildings.removeById`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

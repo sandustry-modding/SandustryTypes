@@ -6,7 +6,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.maps.ArtifactLocation</code></p>
 
-Defined in: [sandkit/api/maps.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L33)
+Defined in: [sandkit/api/maps.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L42)
 
 Artifact location entry from [getArtifactLocations](#getartifactlocations).
 
@@ -24,7 +24,7 @@ Artifact location entry from [getArtifactLocations](#getartifactlocations).
 cellX: number
 ```
 
-Defined in: [sandkit/api/maps.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L34)
+Defined in: [sandkit/api/maps.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L43)
 
 ##### cellY
 
@@ -32,7 +32,7 @@ Defined in: [sandkit/api/maps.d.ts:34](https://github.com/sandustry-modding/Sand
 cellY: number
 ```
 
-Defined in: [sandkit/api/maps.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L35)
+Defined in: [sandkit/api/maps.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L44)
 
 ##### name
 
@@ -40,7 +40,7 @@ Defined in: [sandkit/api/maps.d.ts:35](https://github.com/sandustry-modding/Sand
 name: string
 ```
 
-Defined in: [sandkit/api/maps.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L36)
+Defined in: [sandkit/api/maps.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L45)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [sandkit/api/maps.d.ts:36](https://github.com/sandustry-modding/Sand
 
 <p class="smt-member-path"><code>sandkit.api.maps.AvailableMapV1</code></p>
 
-Defined in: [sandkit/api/maps.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L41)
+Defined in: [sandkit/api/maps.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L50)
 
 Available map entry shape.
 
@@ -66,7 +66,7 @@ Available map entry shape.
 id: string
 ```
 
-Defined in: [sandkit/api/maps.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L43)
+Defined in: [sandkit/api/maps.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L52)
 
 Map identifier passed to [start](#start).
 
@@ -76,7 +76,7 @@ Map identifier passed to [start](#start).
 optional name?: string
 ```
 
-Defined in: [sandkit/api/maps.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L45)
+Defined in: [sandkit/api/maps.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L54)
 
 Display name or translation key.
 
@@ -134,7 +134,7 @@ Custom map identifier.
 getArtifactLocations(): readonly ArtifactLocation[]
 ```
 
-Defined in: [sandkit/api/maps.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L30)
+Defined in: [sandkit/api/maps.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L39)
 
 Return artifact marker locations for the active map.
 
@@ -142,9 +142,19 @@ Return artifact marker locations for the active map.
 
 readonly [`ArtifactLocation`](#artifactlocation)[]
 
+#### Example
+
+```ts
+api.events.on("game:ready", () => {
+  api.maps.getArtifactLocations().forEach(({ cellX, cellY, name }) => {
+    addMarker(cellX, cellY, name);
+  });
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.maps.getArtifactLocations`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## References <!-- {docsify-ignore} -->
 

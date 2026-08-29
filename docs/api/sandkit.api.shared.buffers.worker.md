@@ -12,7 +12,7 @@ Named shared memory buffers for worker threads.
 require(key: string, config: object): SharedArray
 ```
 
-Defined in: [worker/api/shared.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/shared.d.ts#L28)
+Defined in: [worker/api/shared.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/shared.d.ts#L37)
 
 Attach to a named shared buffer on this worker.
 
@@ -43,9 +43,18 @@ Expected array type and length for validation.
 
 [`SharedArray`](api/sandkit.api.shared.md#sharedarray)
 
+#### Example
+
+```ts
+const counts = api.shared.buffers.require("counts", {
+  type: "uint32",
+  length: 4,
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.shared.buffers.require`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## References <!-- {docsify-ignore} -->
 

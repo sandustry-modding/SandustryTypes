@@ -15,7 +15,7 @@
 setPositionAtWorld(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L32)
+Defined in: [sandkit/api/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L34)
 
 Set the player world position.
 
@@ -39,7 +39,7 @@ World y position in pixels.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setPositionAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -49,7 +49,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setWorldPosition(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L38)
+Defined in: [sandkit/api/player.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L41)
 
 #### Parameters
 
@@ -71,7 +71,7 @@ Use [setPositionAtWorld](#setpositionatworld) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.setPositionAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -83,7 +83,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 setVelocity(velocityX: number, velocityY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L47)
+Defined in: [sandkit/api/player.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L51)
 
 Set the player velocity.
 
@@ -107,7 +107,7 @@ Vertical velocity in pixels per second.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setVelocity`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -119,7 +119,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setMovementSpeedMultiplier(multiplier: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L56)
+Defined in: [sandkit/api/player.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L61)
 
 Set the movement speed multiplier.
 
@@ -138,7 +138,7 @@ Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly 
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setMovementSpeedMultiplier`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -150,7 +150,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 setMovementMode(mode: "normal" | "hover"): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L65)
+Defined in: [sandkit/api/player.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L71)
 
 Set movement mode to normal or hover.
 
@@ -170,7 +170,7 @@ True when the mode changes.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setMovementMode`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -182,7 +182,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isOnGround(): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L75)
+Defined in: [sandkit/api/player.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L82)
 
 Return true when the player is on ground.
 Tests solid cells 1 pixel below the hitbox. Do not use `player.onGround`
@@ -196,7 +196,7 @@ True when the player touches solid ground.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isOnGround`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -208,7 +208,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 teleportToGround(): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L82)
+Defined in: [sandkit/api/player.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L89)
 
 Move the player down until ground is found.
 
@@ -218,7 +218,7 @@ Move the player down until ground is found.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.teleportToGround`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -230,7 +230,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isPositionClearAtWorld(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L92)
+Defined in: [sandkit/api/player.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L100)
 
 Return true when the world position has no collision.
 
@@ -256,7 +256,7 @@ True when the player hitbox fits at the position.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isPositionClearAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -266,7 +266,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isWorldPositionClear(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L98)
+Defined in: [sandkit/api/player.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L107)
 
 #### Parameters
 
@@ -288,7 +288,7 @@ Use [isPositionClearAtWorld](#ispositionclearatworld) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.isPositionClearAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## References <!-- {docsify-ignore} -->
 

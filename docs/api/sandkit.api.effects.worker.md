@@ -18,7 +18,7 @@ Temporary lights live under [lights.temporary](api/sandkit.api.lights.temporary.
 createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
-Defined in: [worker/api/effects.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L25)
+Defined in: [worker/api/effects.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L26)
 
 Spawn a named screen-space or world effect.
 
@@ -54,7 +54,7 @@ Duration, radius, and intensity settings.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.effects.createAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -64,7 +64,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — W
 createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
-Defined in: [worker/api/effects.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L36)
+Defined in: [worker/api/effects.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L38)
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Use [createAtWorld](#createatworld) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.effects.createAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## References <!-- {docsify-ignore} -->
 

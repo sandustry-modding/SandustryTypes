@@ -10,7 +10,7 @@
 PatternExcavateOptions = ExcavateOptions
 ```
 
-Defined in: [sandkit/api/patterns.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L31)
+Defined in: [sandkit/api/patterns.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L53)
 
 Options for pattern-based excavation. Same shape as [shared.api.world.ExcavateOptions](api/sandkit.api.grid.md#excavateoptions).
 
@@ -52,7 +52,7 @@ Square matrix with `1` inside the circle and `0` outside.
 excavateAtCell(...args: [number, number, number[][], Vector2, number, ExcavateOptions]): void
 ```
 
-Defined in: [sandkit/api/patterns.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L28)
+Defined in: [sandkit/api/patterns.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L50)
 
 Excavate at a cell using a pattern matrix and output velocity.
 
@@ -65,3 +65,29 @@ Excavate at a cell using a pattern matrix and output velocity.
 #### Returns
 
 `void`
+
+#### Examples
+
+**Main entry**
+
+```ts
+api.patterns.excavateAtCell(
+  cellX,
+  cellY,
+  api.patterns.createCircle(5),
+  { x: 0, y: -120 },
+  2,
+);
+```
+
+**Worker entry**
+
+```ts
+api.patterns.excavateAtCell(
+  cellX,
+  cellY,
+  pattern,
+  { x: 0, y: -1 },
+  10,
+);
+```

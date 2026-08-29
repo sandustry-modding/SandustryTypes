@@ -217,7 +217,7 @@ Defined in: [worker/sandkit-api.d.ts:34](https://github.com/sandustry-modding/Sa
 world: world
 ```
 
-Defined in: [worker/sandkit-api.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L39)
+Defined in: [worker/sandkit-api.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L40)
 
 ###### Deprecated
 
@@ -225,7 +225,7 @@ Use [grid](api/sandkit.api.grid.worker.md) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## References <!-- {docsify-ignore} -->
 

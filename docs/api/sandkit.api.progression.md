@@ -6,7 +6,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.progression.ProgressionCompletionRequestV1</code></p>
 
-Defined in: [sandkit/api/progression.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L17)
+Defined in: [sandkit/api/progression.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L25)
 
 Progression completion request shape.
 
@@ -24,7 +24,7 @@ Progression completion request shape.
 id: string
 ```
 
-Defined in: [sandkit/api/progression.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L19)
+Defined in: [sandkit/api/progression.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L27)
 
 Progression step or quest identifier.
 
@@ -38,7 +38,7 @@ Progression step or quest identifier.
 complete(request: ProgressionCompletionRequestV1): boolean
 ```
 
-Defined in: [sandkit/api/progression.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L14)
+Defined in: [sandkit/api/progression.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L22)
 
 Mark a progression step complete. Return true when completion succeeds.
 
@@ -53,3 +53,12 @@ Progression id and optional metadata for the step.
 #### Returns
 
 `boolean`
+
+#### Example
+
+```ts
+const completed = api.progression.complete({
+  domain: "objective",
+  id: "all",
+});
+```

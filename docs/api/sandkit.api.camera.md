@@ -65,7 +65,7 @@ True when focus was applied.
 releaseFocus(options?: object): boolean
 ```
 
-Defined in: [sandkit/api/camera.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L22)
+Defined in: [sandkit/api/camera.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L27)
 
 Release scripted focus and return control to the player.
 
@@ -84,3 +84,9 @@ Optional transition duration in milliseconds.
 `boolean`
 
 True when focus was released.
+
+#### Example
+
+```ts
+const released = api.camera.releaseFocus({ durationMs: 250 });
+```

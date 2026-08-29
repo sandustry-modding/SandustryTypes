@@ -21,7 +21,7 @@ Terrain definition shape for register and [getDefinitionByType](#getdefinitionby
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 #### Indexable
 
@@ -145,7 +145,7 @@ Terrain cell data returned by [getDataAtCell](#getdataatcell).
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getDataAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 #### Properties
 
@@ -171,7 +171,7 @@ Current hit points, or null when the terrain has no hp.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getDataAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ##### ~~hp?~~
 
@@ -179,7 +179,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 optional hp?: number | null
 ```
 
-Defined in: [shared/api/terrains.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L63)
+Defined in: [shared/api/terrains.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L64)
 
 ###### Deprecated
 
@@ -187,7 +187,7 @@ Use [hitPoints](#hitpoints) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `result.hitPoints`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -195,13 +195,13 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainMutationOptions (worker)</code></p>
 
-Defined in: [shared/api/terrains.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L206)
+Defined in: [shared/api/terrains.d.ts:222](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L222)
 
 Options for terrain create, replace, or remove calls.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.terrains.createAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 #### Properties
 
@@ -211,7 +211,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Ma
 optional skipShadow?: boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L208)
+Defined in: [shared/api/terrains.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L224)
 
 Skip shadow updates around the changed cell.
 
@@ -225,13 +225,13 @@ Skip shadow updates around the changed cell.
 TerrainType = CellType | TaggedNumber<"terrainType">
 ```
 
-Defined in: [shared/api/terrains.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L216)
+Defined in: [shared/api/terrains.d.ts:232](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L232)
 
 Numeric terrain / [CellTypeEnum](api/sandkit.enums.CellType.md) handle.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -243,13 +243,13 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 TerrainId = LooseString<never>
 ```
 
-Defined in: [shared/api/terrains.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L223)
+Defined in: [shared/api/terrains.d.ts:239](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L239)
 
 Mod or built-in terrain string id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -261,13 +261,13 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 TerrainRef = TerrainType | TerrainId
 ```
 
-Defined in: [shared/api/terrains.d.ts:230](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L230)
+Defined in: [shared/api/terrains.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L246)
 
 Type handle or string id accepted by mutation helpers.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -279,7 +279,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getIdByType(terrainType: TerrainType): string & object
 ```
 
-Defined in: [shared/api/terrains.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L72)
+Defined in: [shared/api/terrains.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L74)
 
 Return the mod string id for a numeric terrain type.
 
@@ -297,7 +297,7 @@ Numeric terrain cell type.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getIdByType`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -309,7 +309,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getTypeById(terrainId: string & object): TerrainType
 ```
 
-Defined in: [shared/api/terrains.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L80)
+Defined in: [shared/api/terrains.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L83)
 
 Resolve a terrain string id to a numeric cell type.
 
@@ -327,7 +327,7 @@ Mod-registered or built-in terrain id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getTypeById`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -337,7 +337,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getTypeFromId(terrainId: string & object): TerrainType
 ```
 
-Defined in: [shared/api/terrains.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L86)
+Defined in: [shared/api/terrains.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L90)
 
 #### Parameters
 
@@ -355,7 +355,7 @@ Use [getTypeById](#gettypebyid) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.terrains.getTypeById`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -367,7 +367,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 ```
 
-Defined in: [shared/api/terrains.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L94)
+Defined in: [shared/api/terrains.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L99)
 
 Look up the definition for a terrain type.
 
@@ -385,7 +385,7 @@ Numeric terrain cell type.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getDefinitionByType`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -397,7 +397,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getTypeAtCell(...args: CellCoordinates): TerrainType | null
 ```
 
-Defined in: [shared/api/terrains.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L103)
+Defined in: [shared/api/terrains.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L109)
 
 Return the terrain cell type at a cell, or null when none.
 
@@ -413,7 +413,7 @@ Return the terrain cell type at a cell, or null when none.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getTypeAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -425,7 +425,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 ```
 
-Defined in: [shared/api/terrains.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L113)
+Defined in: [shared/api/terrains.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L120)
 
 Return terrain cell type and hit points at a cell.
 
@@ -443,7 +443,7 @@ Cell type and hit points, or null when the cell is not terrain.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getDataAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -455,7 +455,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L122)
+Defined in: [shared/api/terrains.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L130)
 
 Return true when any terrain occupies the cell.
 
@@ -471,7 +471,7 @@ Return true when any terrain occupies the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.isAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -483,7 +483,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isTypeAtCell(...args: [number, number, string & object]): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L132)
+Defined in: [shared/api/terrains.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L141)
 
 Return true when the cell terrain matches the given id.
 
@@ -499,7 +499,7 @@ Return true when the cell terrain matches the given id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.isTypeAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -511,7 +511,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isCellIdTerrain(cellId: CellId): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L140)
+Defined in: [shared/api/terrains.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L150)
 
 Return true when a packed cell id refers to terrain.
 
@@ -529,7 +529,7 @@ Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md#getcellidatc
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.isCellIdTerrain`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -541,7 +541,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 damageAtCell(...args: [number, number, number]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L150)
+Defined in: [shared/api/terrains.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L161)
 
 Apply damage to terrain at a cell.
 
@@ -557,7 +557,7 @@ Apply damage to terrain at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.damageAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -569,7 +569,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L161)
+Defined in: [shared/api/terrains.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L173)
 
 Place terrain at an empty cell. Worker-entry writes are immediate.
 
@@ -585,7 +585,7 @@ Place terrain at an empty cell. Worker-entry writes are immediate.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.terrains.createAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -597,7 +597,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L172)
+Defined in: [shared/api/terrains.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L185)
 
 Replace existing terrain at a cell. Worker-entry writes are immediate.
 
@@ -613,7 +613,7 @@ Replace existing terrain at a cell. Worker-entry writes are immediate.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.terrains.replaceAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -625,7 +625,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L182)
+Defined in: [shared/api/terrains.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L196)
 
 Remove terrain from a cell. Worker-entry writes are immediate.
 
@@ -641,7 +641,7 @@ Remove terrain from a cell. Worker-entry writes are immediate.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.terrains.removeAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -653,7 +653,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 setHitPointsAtCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L193)
+Defined in: [shared/api/terrains.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L208)
 
 Set terrain hit points at a cell. Worker-entry writes are immediate.
 
@@ -671,7 +671,7 @@ True when hit points changed or the terrain was removed.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.terrains.setHitPointsAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 ***
 
@@ -681,7 +681,7 @@ https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Wo
 setHpAtCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L199)
+Defined in: [shared/api/terrains.d.ts:215](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L215)
 
 #### Parameters
 
@@ -699,4 +699,4 @@ Use [setHitPointsAtCell](#sethitpointsatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)

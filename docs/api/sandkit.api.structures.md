@@ -11,7 +11,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBuildMode</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:315](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L315)
+Defined in: [sandkit/api/structures.d.ts:524](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L524)
 
 Build mode entry for a structure definition.
 
@@ -23,7 +23,7 @@ Build mode entry for a structure definition.
 type: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:316](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L316)
+Defined in: [sandkit/api/structures.d.ts:525](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L525)
 
 ##### directions?
 
@@ -31,7 +31,7 @@ Defined in: [sandkit/api/structures.d.ts:316](https://github.com/sandustry-moddi
 optional directions?: string[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L317)
+Defined in: [sandkit/api/structures.d.ts:526](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L526)
 
 ##### spanTiles?
 
@@ -39,13 +39,13 @@ Defined in: [sandkit/api/structures.d.ts:317](https://github.com/sandustry-moddi
 optional spanTiles?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L323)
+Defined in: [sandkit/api/structures.d.ts:532](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L532)
 
 Fixed span length in tiles for line-linked structures.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -53,7 +53,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureVariant</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:327](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L327)
+Defined in: [sandkit/api/structures.d.ts:536](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L536)
 
 Rotated variant entry for a structure definition.
 
@@ -65,7 +65,7 @@ Rotated variant entry for a structure definition.
 id: StructureRef
 ```
 
-Defined in: [sandkit/api/structures.d.ts:328](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L328)
+Defined in: [sandkit/api/structures.d.ts:537](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L537)
 
 ##### angles
 
@@ -73,7 +73,7 @@ Defined in: [sandkit/api/structures.d.ts:328](https://github.com/sandustry-moddi
 angles: number[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L329)
+Defined in: [sandkit/api/structures.d.ts:538](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L538)
 
 ***
 
@@ -81,13 +81,39 @@ Defined in: [sandkit/api/structures.d.ts:329](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureTooltipHover</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:337](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L337)
+Defined in: [sandkit/api/structures.d.ts:569](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L569)
 
 Custom hover tooltip driven by structure `data` fields.
 
+#### Example
+
+**Official example**
+
+```ts
+tooltipHover: {
+  type: "custom",
+  dataFieldMessage: {
+    message: "Mode {mode}; channel {channel}.",
+    messageKey: "mods|example|machineTooltip",
+    fields: [
+      {
+        param: "mode",
+        field: "mode",
+        valueLabels: { input: "Receiving", output: "Sending" },
+        valueKeys: {
+          input: "mods|example|receiving",
+          output: "mods|example|sending",
+        },
+      },
+      { param: "channel", field: "channel", fallback: 1, round: true },
+    ],
+  },
+}
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 #### Properties
 
@@ -97,7 +123,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 type: "custom"
 ```
 
-Defined in: [sandkit/api/structures.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L338)
+Defined in: [sandkit/api/structures.d.ts:570](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L570)
 
 ##### dataFieldMessage
 
@@ -105,7 +131,7 @@ Defined in: [sandkit/api/structures.d.ts:338](https://github.com/sandustry-moddi
 dataFieldMessage: object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L339)
+Defined in: [sandkit/api/structures.d.ts:571](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L571)
 
 ###### message?
 
@@ -131,7 +157,7 @@ fields: readonly StructureTooltipHoverField[]
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureTooltipHoverField</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:347](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L347)
+Defined in: [sandkit/api/structures.d.ts:579](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L579)
 
 One interpolated field in a [StructureTooltipHover](#structuretooltiphover) message.
 
@@ -143,7 +169,7 @@ One interpolated field in a [StructureTooltipHover](#structuretooltiphover) mess
 param: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:348](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L348)
+Defined in: [sandkit/api/structures.d.ts:580](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L580)
 
 ##### field
 
@@ -151,7 +177,7 @@ Defined in: [sandkit/api/structures.d.ts:348](https://github.com/sandustry-moddi
 field: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L349)
+Defined in: [sandkit/api/structures.d.ts:581](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L581)
 
 ##### fallback?
 
@@ -159,7 +185,7 @@ Defined in: [sandkit/api/structures.d.ts:349](https://github.com/sandustry-moddi
 optional fallback?: string | number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:350](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L350)
+Defined in: [sandkit/api/structures.d.ts:582](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L582)
 
 ##### round?
 
@@ -167,7 +193,7 @@ Defined in: [sandkit/api/structures.d.ts:350](https://github.com/sandustry-moddi
 optional round?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:351](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L351)
+Defined in: [sandkit/api/structures.d.ts:583](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L583)
 
 ##### valueLabels?
 
@@ -175,7 +201,7 @@ Defined in: [sandkit/api/structures.d.ts:351](https://github.com/sandustry-moddi
 optional valueLabels?: Record<string, string>
 ```
 
-Defined in: [sandkit/api/structures.d.ts:352](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L352)
+Defined in: [sandkit/api/structures.d.ts:584](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L584)
 
 ##### valueKeys?
 
@@ -183,7 +209,7 @@ Defined in: [sandkit/api/structures.d.ts:352](https://github.com/sandustry-moddi
 optional valueKeys?: Record<string, string>
 ```
 
-Defined in: [sandkit/api/structures.d.ts:353](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L353)
+Defined in: [sandkit/api/structures.d.ts:585](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L585)
 
 ***
 
@@ -191,7 +217,7 @@ Defined in: [sandkit/api/structures.d.ts:353](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureSpritesheet</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:357](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L357)
+Defined in: [sandkit/api/structures.d.ts:589](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L589)
 
 Spritesheet animation on a structure render block.
 
@@ -203,7 +229,7 @@ Spritesheet animation on a structure render block.
 frameSize: object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L358)
+Defined in: [sandkit/api/structures.d.ts:590](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L590)
 
 ###### width
 
@@ -223,7 +249,7 @@ height: number
 frames: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:359](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L359)
+Defined in: [sandkit/api/structures.d.ts:591](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L591)
 
 ##### intervalMs
 
@@ -231,7 +257,7 @@ Defined in: [sandkit/api/structures.d.ts:359](https://github.com/sandustry-moddi
 intervalMs: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:360](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L360)
+Defined in: [sandkit/api/structures.d.ts:592](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L592)
 
 ##### rowDataField?
 
@@ -239,7 +265,7 @@ Defined in: [sandkit/api/structures.d.ts:360](https://github.com/sandustry-moddi
 optional rowDataField?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:362](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L362)
+Defined in: [sandkit/api/structures.d.ts:594](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L594)
 
 When set, frame row follows this structure `data` field.
 
@@ -249,7 +275,7 @@ When set, frame row follows this structure `data` field.
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRenderUi</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:366](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L366)
+Defined in: [sandkit/api/structures.d.ts:598](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L598)
 
 Hotbar / build-menu UI sprite settings.
 
@@ -261,7 +287,7 @@ Hotbar / build-menu UI sprite settings.
 optional imageName?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L367)
+Defined in: [sandkit/api/structures.d.ts:599](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L599)
 
 ##### size?
 
@@ -269,7 +295,7 @@ Defined in: [sandkit/api/structures.d.ts:367](https://github.com/sandustry-moddi
 optional size?: object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:368](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L368)
+Defined in: [sandkit/api/structures.d.ts:600](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L600)
 
 ###### width
 
@@ -289,7 +315,7 @@ height: number
 optional offset?: object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:369](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L369)
+Defined in: [sandkit/api/structures.d.ts:601](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L601)
 
 ###### x
 
@@ -309,7 +335,7 @@ y: number
 optional outline?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:370](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L370)
+Defined in: [sandkit/api/structures.d.ts:602](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L602)
 
 ##### width?
 
@@ -317,7 +343,7 @@ Defined in: [sandkit/api/structures.d.ts:370](https://github.com/sandustry-moddi
 optional width?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:371](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L371)
+Defined in: [sandkit/api/structures.d.ts:603](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L603)
 
 ##### height?
 
@@ -325,7 +351,7 @@ Defined in: [sandkit/api/structures.d.ts:371](https://github.com/sandustry-moddi
 optional height?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:372](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L372)
+Defined in: [sandkit/api/structures.d.ts:604](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L604)
 
 ##### clipToBounds?
 
@@ -333,7 +359,7 @@ Defined in: [sandkit/api/structures.d.ts:372](https://github.com/sandustry-moddi
 optional clipToBounds?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:373](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L373)
+Defined in: [sandkit/api/structures.d.ts:605](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L605)
 
 ***
 
@@ -341,7 +367,7 @@ Defined in: [sandkit/api/structures.d.ts:373](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRender</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L377)
+Defined in: [sandkit/api/structures.d.ts:609](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L609)
 
 Render settings for a structure definition.
 
@@ -353,7 +379,7 @@ Render settings for a structure definition.
 optional imageName?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:378](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L378)
+Defined in: [sandkit/api/structures.d.ts:610](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L610)
 
 ##### size?
 
@@ -361,7 +387,7 @@ Defined in: [sandkit/api/structures.d.ts:378](https://github.com/sandustry-moddi
 optional size?: object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:379](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L379)
+Defined in: [sandkit/api/structures.d.ts:611](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L611)
 
 ###### width
 
@@ -381,7 +407,7 @@ height: number
 optional offset?: object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:380](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L380)
+Defined in: [sandkit/api/structures.d.ts:612](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L612)
 
 ###### x
 
@@ -401,7 +427,7 @@ y: number
 optional z?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:381](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L381)
+Defined in: [sandkit/api/structures.d.ts:613](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L613)
 
 ##### ambienceGroup?
 
@@ -409,7 +435,7 @@ Defined in: [sandkit/api/structures.d.ts:381](https://github.com/sandustry-moddi
 optional ambienceGroup?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:382](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L382)
+Defined in: [sandkit/api/structures.d.ts:614](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L614)
 
 ##### ui?
 
@@ -417,7 +443,7 @@ Defined in: [sandkit/api/structures.d.ts:382](https://github.com/sandustry-moddi
 optional ui?: StructureRenderUi
 ```
 
-Defined in: [sandkit/api/structures.d.ts:383](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L383)
+Defined in: [sandkit/api/structures.d.ts:615](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L615)
 
 ##### spritesheet?
 
@@ -425,7 +451,7 @@ Defined in: [sandkit/api/structures.d.ts:383](https://github.com/sandustry-moddi
 optional spritesheet?: StructureSpritesheet
 ```
 
-Defined in: [sandkit/api/structures.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L384)
+Defined in: [sandkit/api/structures.d.ts:616](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L616)
 
 ***
 
@@ -433,7 +459,7 @@ Defined in: [sandkit/api/structures.d.ts:384](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.SandkitStructureDefinition</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:388](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L388)
+Defined in: [sandkit/api/structures.d.ts:620](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L620)
 
 Full structure definition registered with the game.
 
@@ -451,7 +477,7 @@ Full structure definition registered with the game.
 id: string & object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:389](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L389)
+Defined in: [sandkit/api/structures.d.ts:621](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L621)
 
 ##### name?
 
@@ -459,7 +485,7 @@ Defined in: [sandkit/api/structures.d.ts:389](https://github.com/sandustry-moddi
 optional name?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:390](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L390)
+Defined in: [sandkit/api/structures.d.ts:622](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L622)
 
 ##### nameKey?
 
@@ -467,7 +493,7 @@ Defined in: [sandkit/api/structures.d.ts:390](https://github.com/sandustry-moddi
 optional nameKey?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:391](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L391)
+Defined in: [sandkit/api/structures.d.ts:623](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L623)
 
 ##### description?
 
@@ -475,7 +501,7 @@ Defined in: [sandkit/api/structures.d.ts:391](https://github.com/sandustry-moddi
 optional description?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:392](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L392)
+Defined in: [sandkit/api/structures.d.ts:624](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L624)
 
 ##### descriptionKey?
 
@@ -483,7 +509,7 @@ Defined in: [sandkit/api/structures.d.ts:392](https://github.com/sandustry-moddi
 optional descriptionKey?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:393](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L393)
+Defined in: [sandkit/api/structures.d.ts:625](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L625)
 
 ##### categoryKey?
 
@@ -491,7 +517,7 @@ Defined in: [sandkit/api/structures.d.ts:393](https://github.com/sandustry-moddi
 optional categoryKey?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:394](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L394)
+Defined in: [sandkit/api/structures.d.ts:626](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L626)
 
 ##### order?
 
@@ -499,7 +525,7 @@ Defined in: [sandkit/api/structures.d.ts:394](https://github.com/sandustry-moddi
 optional order?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:395](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L395)
+Defined in: [sandkit/api/structures.d.ts:627](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L627)
 
 ##### buildModes?
 
@@ -507,7 +533,7 @@ Defined in: [sandkit/api/structures.d.ts:395](https://github.com/sandustry-moddi
 optional buildModes?: StructureBuildMode[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:396](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L396)
+Defined in: [sandkit/api/structures.d.ts:628](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L628)
 
 ##### shape?
 
@@ -515,7 +541,7 @@ Defined in: [sandkit/api/structures.d.ts:396](https://github.com/sandustry-moddi
 optional shape?: number[][]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:397](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L397)
+Defined in: [sandkit/api/structures.d.ts:629](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L629)
 
 ##### variants?
 
@@ -523,7 +549,7 @@ Defined in: [sandkit/api/structures.d.ts:397](https://github.com/sandustry-moddi
 optional variants?: StructureVariant[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:398](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L398)
+Defined in: [sandkit/api/structures.d.ts:630](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L630)
 
 ##### render?
 
@@ -531,7 +557,7 @@ Defined in: [sandkit/api/structures.d.ts:398](https://github.com/sandustry-moddi
 optional render?: StructureRender
 ```
 
-Defined in: [sandkit/api/structures.d.ts:399](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L399)
+Defined in: [sandkit/api/structures.d.ts:631](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L631)
 
 ##### defaultData?
 
@@ -539,7 +565,7 @@ Defined in: [sandkit/api/structures.d.ts:399](https://github.com/sandustry-moddi
 optional defaultData?: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/structures.d.ts:400](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L400)
+Defined in: [sandkit/api/structures.d.ts:632](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L632)
 
 ##### linkedClearance?
 
@@ -547,13 +573,13 @@ Defined in: [sandkit/api/structures.d.ts:400](https://github.com/sandustry-moddi
 optional linkedClearance?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:406](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L406)
+Defined in: [sandkit/api/structures.d.ts:638](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L638)
 
 Linked placement clearance mode (for example `"allOrNothing"`).
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ##### tooltipHover?
 
@@ -561,13 +587,13 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 optional tooltipHover?: StructureTooltipHover
 ```
 
-Defined in: [sandkit/api/structures.d.ts:412](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L412)
+Defined in: [sandkit/api/structures.d.ts:644](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L644)
 
 Custom hover tooltip over the built structure.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ##### rejectWhenBlocked?
 
@@ -575,7 +601,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 optional rejectWhenBlocked?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:414](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L414)
+Defined in: [sandkit/api/structures.d.ts:646](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L646)
 
 Reject placement when the footprint is blocked.
 
@@ -585,7 +611,7 @@ Reject placement when the footprint is blocked.
 optional alwaysUnlocked?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:416](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L416)
+Defined in: [sandkit/api/structures.d.ts:648](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L648)
 
 Show in the build menu without research unlock.
 
@@ -595,7 +621,7 @@ Show in the build menu without research unlock.
 optional descriptionParams?: Record<string, string | number>
 ```
 
-Defined in: [sandkit/api/structures.d.ts:418](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L418)
+Defined in: [sandkit/api/structures.d.ts:650](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L650)
 
 Values interpolated into the structure description string.
 
@@ -605,7 +631,7 @@ Values interpolated into the structure description string.
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBuildOptions</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:423](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L423)
+Defined in: [sandkit/api/structures.d.ts:655](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L655)
 
 Options passed to [buildAtCell](#buildatcell).
 
@@ -621,7 +647,7 @@ Options passed to [buildAtCell](#buildatcell).
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRemovalOptions</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:428](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L428)
+Defined in: [sandkit/api/structures.d.ts:660](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L660)
 
 Options passed to [removeAtCell](#removeatcell).
 
@@ -633,7 +659,7 @@ Options passed to [removeAtCell](#removeatcell).
 optional removeCells?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:430](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L430)
+Defined in: [sandkit/api/structures.d.ts:662](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L662)
 
 Also remove underlying terrain cells in the footprint.
 
@@ -643,7 +669,7 @@ Also remove underlying terrain cells in the footprint.
 optional skipVisuals?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:432](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L432)
+Defined in: [sandkit/api/structures.d.ts:664](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L664)
 
 Skip visual teardown effects.
 
@@ -653,7 +679,7 @@ Skip visual teardown effects.
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBulkRemovalOptions</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:436](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L436)
+Defined in: [sandkit/api/structures.d.ts:668](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L668)
 
 Options passed to bulk structure removal helpers.
 
@@ -665,7 +691,7 @@ Options passed to bulk structure removal helpers.
 optional removeCells?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:437](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L437)
+Defined in: [sandkit/api/structures.d.ts:669](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L669)
 
 ##### skipVisuals?
 
@@ -673,7 +699,7 @@ Defined in: [sandkit/api/structures.d.ts:437](https://github.com/sandustry-moddi
 optional skipVisuals?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:438](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L438)
+Defined in: [sandkit/api/structures.d.ts:670](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L670)
 
 ##### preserveUnselectable?
 
@@ -681,7 +707,7 @@ Defined in: [sandkit/api/structures.d.ts:438](https://github.com/sandustry-moddi
 optional preserveUnselectable?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:440](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L440)
+Defined in: [sandkit/api/structures.d.ts:672](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L672)
 
 When set, only remove structures at these positions.
 
@@ -691,7 +717,7 @@ When set, only remove structures at these positions.
 optional onlyPositions?: Vector2[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L441)
+Defined in: [sandkit/api/structures.d.ts:673](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L673)
 
 ***
 
@@ -699,13 +725,13 @@ Defined in: [sandkit/api/structures.d.ts:441](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureProcessingContext</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:449](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L449)
+Defined in: [sandkit/api/structures.d.ts:681](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L681)
 
 Context passed to structure processing callbacks.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 #### Methods
 
@@ -715,7 +741,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
-Defined in: [sandkit/api/structures.d.ts:455](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L455)
+Defined in: [sandkit/api/structures.d.ts:687](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L687)
 
 Return the resolved element type at a cell, or null.
 
@@ -731,7 +757,7 @@ Return the resolved element type at a cell, or null.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ##### ~~getElementTypeAtCell()~~
 
@@ -739,7 +765,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getElementTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
-Defined in: [sandkit/api/structures.d.ts:461](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L461)
+Defined in: [sandkit/api/structures.d.ts:694](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L694)
 
 ###### Parameters
 
@@ -757,7 +783,7 @@ Use [getResolvedTypeAtCell](#getresolvedtypeatcell) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias in `api.structures.processing.register` context
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ##### isCellEmptyAtCell()
 
@@ -765,7 +791,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 isCellEmptyAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:468](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L468)
+Defined in: [sandkit/api/structures.d.ts:701](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L701)
 
 Return true when the cell has no element or terrain.
 
@@ -781,7 +807,7 @@ Return true when the cell has no element or terrain.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ##### ~~isCellEmpty()~~
 
@@ -789,7 +815,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isCellEmpty(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:474](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L474)
+Defined in: [sandkit/api/structures.d.ts:708](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L708)
 
 ###### Parameters
 
@@ -807,7 +833,7 @@ Use [isCellEmptyAtCell](#iscellemptyatcell) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias in `api.structures.processing.register` context
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ##### commit()
 
@@ -815,7 +841,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 commit(mutations: unknown): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:482](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L482)
+Defined in: [sandkit/api/structures.d.ts:717](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L717)
 
 Commit batched grid mutations from the processing callback.
 
@@ -833,13 +859,13 @@ Mutation writer payload accepted by the runtime.
 
 ###### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
 ### ~~StructureProcessorDefinitionV1~~
 
-Defined in: [sandkit/api/structures.d.ts:489](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L489)
+Defined in: [sandkit/api/structures.d.ts:725](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L725)
 
 #### Deprecated
 
@@ -847,7 +873,7 @@ Use [StructureProcessingDefinitionV1](#structureprocessingdefinitionv1) with [pr
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.processing.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 #### Properties
 
@@ -857,7 +883,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 intervalMs: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:491](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L491)
+Defined in: [sandkit/api/structures.d.ts:727](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L727)
 
 Tick interval in milliseconds. Must be > 0.
 
@@ -867,7 +893,7 @@ Tick interval in milliseconds. Must be > 0.
 process: (structure: Structure, context: StructureProcessingContext) => void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:493](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L493)
+Defined in: [sandkit/api/structures.d.ts:729](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L729)
 
 Synchronous callback invoked for each structure instance.
 
@@ -891,7 +917,7 @@ Synchronous callback invoked for each structure instance.
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigIntegerField</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:502](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L502)
+Defined in: [sandkit/api/structures.d.ts:738](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L738)
 
 Integer placement field with optional bounds.
 
@@ -903,7 +929,7 @@ Integer placement field with optional bounds.
 type: "integer"
 ```
 
-Defined in: [sandkit/api/structures.d.ts:503](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L503)
+Defined in: [sandkit/api/structures.d.ts:739](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L739)
 
 ##### id
 
@@ -911,7 +937,7 @@ Defined in: [sandkit/api/structures.d.ts:503](https://github.com/sandustry-moddi
 id: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:504](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L504)
+Defined in: [sandkit/api/structures.d.ts:740](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L740)
 
 ##### labelKey
 
@@ -919,7 +945,7 @@ Defined in: [sandkit/api/structures.d.ts:504](https://github.com/sandustry-moddi
 labelKey: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:505](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L505)
+Defined in: [sandkit/api/structures.d.ts:741](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L741)
 
 ##### min?
 
@@ -927,7 +953,7 @@ Defined in: [sandkit/api/structures.d.ts:505](https://github.com/sandustry-moddi
 optional min?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:506](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L506)
+Defined in: [sandkit/api/structures.d.ts:742](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L742)
 
 ##### max?
 
@@ -935,7 +961,7 @@ Defined in: [sandkit/api/structures.d.ts:506](https://github.com/sandustry-moddi
 optional max?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:507](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L507)
+Defined in: [sandkit/api/structures.d.ts:743](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L743)
 
 ##### default?
 
@@ -943,7 +969,7 @@ Defined in: [sandkit/api/structures.d.ts:507](https://github.com/sandustry-moddi
 optional default?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:508](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L508)
+Defined in: [sandkit/api/structures.d.ts:744](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L744)
 
 ***
 
@@ -951,7 +977,7 @@ Defined in: [sandkit/api/structures.d.ts:508](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigChoiceField</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:512](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L512)
+Defined in: [sandkit/api/structures.d.ts:748](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L748)
 
 Choice placement field with labeled options.
 
@@ -963,7 +989,7 @@ Choice placement field with labeled options.
 type: "choice"
 ```
 
-Defined in: [sandkit/api/structures.d.ts:513](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L513)
+Defined in: [sandkit/api/structures.d.ts:749](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L749)
 
 ##### id
 
@@ -971,7 +997,7 @@ Defined in: [sandkit/api/structures.d.ts:513](https://github.com/sandustry-moddi
 id: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:514](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L514)
+Defined in: [sandkit/api/structures.d.ts:750](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L750)
 
 ##### labelKey
 
@@ -979,7 +1005,7 @@ Defined in: [sandkit/api/structures.d.ts:514](https://github.com/sandustry-moddi
 labelKey: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:515](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L515)
+Defined in: [sandkit/api/structures.d.ts:751](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L751)
 
 ##### options
 
@@ -987,7 +1013,7 @@ Defined in: [sandkit/api/structures.d.ts:515](https://github.com/sandustry-moddi
 options: readonly object[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:516](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L516)
+Defined in: [sandkit/api/structures.d.ts:752](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L752)
 
 ***
 
@@ -995,7 +1021,7 @@ Defined in: [sandkit/api/structures.d.ts:516](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigDefinition</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:523](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L523)
+Defined in: [sandkit/api/structures.d.ts:759](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L759)
 
 Placement rule definition for a structure type.
 
@@ -1007,7 +1033,7 @@ Placement rule definition for a structure type.
 structureId: string & object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:524](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L524)
+Defined in: [sandkit/api/structures.d.ts:760](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L760)
 
 ##### fields
 
@@ -1015,7 +1041,7 @@ Defined in: [sandkit/api/structures.d.ts:524](https://github.com/sandustry-moddi
 fields: PlacementConfigField[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:525](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L525)
+Defined in: [sandkit/api/structures.d.ts:761](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L761)
 
 ***
 
@@ -1023,7 +1049,7 @@ Defined in: [sandkit/api/structures.d.ts:525](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.WeightedRefineryRecipeDefinitionV1</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:536](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L536)
+Defined in: [sandkit/api/structures.d.ts:772](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L772)
 
 Weighted refinery recipe definition shape.
 
@@ -1035,7 +1061,7 @@ Weighted refinery recipe definition shape.
 input: ElementType
 ```
 
-Defined in: [sandkit/api/structures.d.ts:537](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L537)
+Defined in: [sandkit/api/structures.d.ts:773](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L773)
 
 ##### outputs
 
@@ -1043,7 +1069,7 @@ Defined in: [sandkit/api/structures.d.ts:537](https://github.com/sandustry-moddi
 outputs: WeightedRecipeOutput[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:538](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L538)
+Defined in: [sandkit/api/structures.d.ts:774](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L774)
 
 ***
 
@@ -1051,7 +1077,7 @@ Defined in: [sandkit/api/structures.d.ts:538](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureProcessingDefinitionV1</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:542](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L542)
+Defined in: [sandkit/api/structures.d.ts:778](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L778)
 
 Custom structure processing definition shape.
 
@@ -1063,7 +1089,7 @@ Custom structure processing definition shape.
 structureType: StructureRef
 ```
 
-Defined in: [sandkit/api/structures.d.ts:543](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L543)
+Defined in: [sandkit/api/structures.d.ts:779](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L779)
 
 ##### intervalMs
 
@@ -1071,7 +1097,7 @@ Defined in: [sandkit/api/structures.d.ts:543](https://github.com/sandustry-moddi
 intervalMs: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:544](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L544)
+Defined in: [sandkit/api/structures.d.ts:780](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L780)
 
 ##### process
 
@@ -1079,7 +1105,7 @@ Defined in: [sandkit/api/structures.d.ts:544](https://github.com/sandustry-moddi
 process: (structure: Structure, context: StructureProcessingContext) => void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:545](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L545)
+Defined in: [sandkit/api/structures.d.ts:781](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L781)
 
 ###### Parameters
 
@@ -1105,7 +1131,7 @@ Defined in: [sandkit/api/structures.d.ts:545](https://github.com/sandustry-moddi
 PlacementConfigField = PlacementConfigIntegerField | PlacementConfigChoiceField
 ```
 
-Defined in: [sandkit/api/structures.d.ts:497](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L497)
+Defined in: [sandkit/api/structures.d.ts:733](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L733)
 
 Placement hotbar field definition.
 
@@ -1119,7 +1145,7 @@ Placement hotbar field definition.
 PlanterBoxRecipeDefinitionV1 = PlanterBoxRecipeDefinitionV1
 ```
 
-Defined in: [sandkit/api/structures.d.ts:529](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L529)
+Defined in: [sandkit/api/structures.d.ts:765](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L765)
 
 Planter box recipe definition shape.
 
@@ -1133,7 +1159,7 @@ Planter box recipe definition shape.
 ShakerRecipeDefinitionV1 = ShakerRecipeDefinitionV1
 ```
 
-Defined in: [sandkit/api/structures.d.ts:531](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L531)
+Defined in: [sandkit/api/structures.d.ts:767](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L767)
 
 Shaker recipe definition shape.
 
@@ -1147,7 +1173,7 @@ Shaker recipe definition shape.
 KineticPressRecipeDefinitionV1 = KineticPressRecipeDefinitionV1
 ```
 
-Defined in: [sandkit/api/structures.d.ts:533](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L533)
+Defined in: [sandkit/api/structures.d.ts:769](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L769)
 
 Kinetic press recipe definition shape.
 
@@ -1161,7 +1187,7 @@ Kinetic press recipe definition shape.
 register(definition: SandkitStructureDefinition, options?: object): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L71)
+Defined in: [sandkit/api/structures.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L153)
 
 Register a new structure definition.
 
@@ -1185,9 +1211,37 @@ When `useRawShape` is true, keep the shape matrix as-is.
 
 `void`
 
+#### Example
+
+```ts
+api.structures.register({
+  id: "exampleJunction",
+  name: "Example Junction",
+  nameKey: "structures|exampleJunction|name",
+  description: "Links two fixed-span endpoints.",
+  descriptionKey: "structures|exampleJunction|description",
+  categoryKey: "logistics",
+  buildModes: [{
+    type: "line",
+    directions: ["horizontal", "vertical"],
+    spanTiles: 4,
+  }],
+  linkedClearance: "allOrNothing",
+  tooltipHover,
+  variants: [{
+    id: "exampleJunction",
+    angles: [-180, -90, 0, 90, 180],
+  }],
+  render: {
+    imageName: "exampleJunction",
+    size: { width: 16, height: 16 },
+  },
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1199,7 +1253,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStructureDefinition>, options?: object): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L81)
+Defined in: [sandkit/api/structures.d.ts:175](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L175)
 
 Patch fields on an existing structure definition.
 
@@ -1229,9 +1283,21 @@ When `useRawShape` is true, keep the shape matrix as-is.
 
 `void`
 
+#### Example
+
+```ts
+api.structures.updateDefinition("exampleJunction", {
+  buildModes: [{
+    type: "line",
+    directions: ["horizontal", "vertical"],
+    spanTiles: 6,
+  }],
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.updateDefinition`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1243,7 +1309,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 registerVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L91)
+Defined in: [sandkit/api/structures.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L204)
 
 Add a rotated variant to a base structure type.
 
@@ -1279,9 +1345,28 @@ Optional build-mode wiring for the variant.
 
 `void`
 
+#### Example
+
+```ts
+api.structures.registerVariant(
+  "exampleStructure",
+  {
+    id: "exampleStructureVertical",
+    angles: [-90, 90],
+  },
+  {
+    addBuildMode: {
+      type: "line",
+      directions: ["vertical"],
+      spanTiles: 4,
+    },
+  },
+);
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.registerVariant`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1291,7 +1376,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L97)
+Defined in: [sandkit/api/structures.d.ts:211](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L211)
 
 #### Parameters
 
@@ -1325,7 +1410,7 @@ Use [registerVariant](#registervariant) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.registerVariant`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1337,7 +1422,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 registerPlacementConfig(definition: PlacementConfigDefinition): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L105)
+Defined in: [sandkit/api/structures.d.ts:247](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L247)
 
 Register placement rules for a structure.
 
@@ -1353,9 +1438,37 @@ Hotbar placement field configuration.
 
 `void`
 
+#### Example
+
+```ts
+api.structures.registerPlacementConfig({
+  structureId: "exampleStructure",
+  fields: [
+    {
+      type: "integer",
+      id: "channel",
+      label: "Channel",
+      default: 1,
+      min: 1,
+      max: 8,
+    },
+    {
+      type: "choice",
+      id: "mode",
+      labelKey: "structures|exampleStructure|mode",
+      default: "input",
+      options: [
+        { value: "input", label: "Input" },
+        { value: "output", labelKey: "structures|exampleStructure|output" },
+      ],
+    },
+  ],
+});
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.registerPlacementConfig`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1367,7 +1480,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getAvailableTypes(): Set<StructureRef>
 ```
 
-Defined in: [sandkit/api/structures.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L112)
+Defined in: [sandkit/api/structures.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L254)
 
 Return structure types available for building.
 
@@ -1377,7 +1490,7 @@ Return structure types available for building.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.getAvailableTypes`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1387,7 +1500,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getUnlockedTypes(): Set<StructureRef>
 ```
 
-Defined in: [sandkit/api/structures.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L118)
+Defined in: [sandkit/api/structures.d.ts:261](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L261)
 
 #### Returns
 
@@ -1399,7 +1512,7 @@ Use [getAvailableTypes](#getavailabletypes) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.getAvailableTypes`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1411,7 +1524,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 isBlockedByPlayerAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L127)
+Defined in: [sandkit/api/structures.d.ts:271](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L271)
 
 Return true when the player blocks building at the cell.
 
@@ -1427,7 +1540,7 @@ Return true when the player blocks building at the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.isBlockedByPlayerAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1439,7 +1552,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isLauncherAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L136)
+Defined in: [sandkit/api/structures.d.ts:281](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L281)
 
 Return true when a launcher structure is at the cell.
 
@@ -1455,7 +1568,7 @@ Return true when a launcher structure is at the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.isLauncherAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1467,7 +1580,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isLockedByType(structureType: StructureRef): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L147)
+Defined in: [sandkit/api/structures.d.ts:293](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L293)
 
 Return structure lock state for a type.
 
@@ -1488,7 +1601,7 @@ Structure type value or string id.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.isLockedByType`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1498,7 +1611,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isUnlockedByType(structureType: StructureRef): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L153)
+Defined in: [sandkit/api/structures.d.ts:300](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L300)
 
 #### Parameters
 
@@ -1516,7 +1629,7 @@ Use [isLockedByType](#islockedbytype) instead. Same function as [isLockedByType]
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.isLockedByType`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1528,7 +1641,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 mapValueToSpritesheetIndex(value: number, thresholds: number[]): number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L163)
+Defined in: [sandkit/api/structures.d.ts:319](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L319)
 
 Map a numeric value through thresholds to a spritesheet index.
 
@@ -1552,9 +1665,18 @@ Ascending threshold values.
 
 Spritesheet frame index.
 
+#### Example
+
+```ts
+const index = api.structures.mapValueToSpritesheetIndex(
+  pressure,
+  [0, 25, 50, 75],
+);
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.mapValueToSpritesheetIndex`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1566,7 +1688,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 buildAtCell(...args: number, number, [StructureRef, StructureBuildOptions]): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L174)
+Defined in: [sandkit/api/structures.d.ts:331](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L331)
 
 Build a structure at a cell. Main-thread writes are deferred.
 
@@ -1582,7 +1704,7 @@ Build a structure at a cell. Main-thread writes are deferred.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.buildAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1592,7 +1714,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOptions]): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L180)
+Defined in: [sandkit/api/structures.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L338)
 
 #### Parameters
 
@@ -1610,7 +1732,7 @@ Use [buildAtCell](#buildatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.buildAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1622,7 +1744,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 removeAtCell(...args: number, number, [StructureRemovalOptions]): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L190)
+Defined in: [sandkit/api/structures.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L349)
 
 Remove a structure at a cell. Main-thread writes are deferred.
 
@@ -1638,7 +1760,7 @@ Remove a structure at a cell. Main-thread writes are deferred.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.removeAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1648,7 +1770,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L196)
+Defined in: [sandkit/api/structures.d.ts:356](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L356)
 
 #### Parameters
 
@@ -1666,7 +1788,7 @@ Use [removeAtCell](#removeatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.removeAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1678,7 +1800,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L208)
+Defined in: [sandkit/api/structures.d.ts:369](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L369)
 
 Remove structures between two cells. Main-thread writes are deferred.
 
@@ -1720,7 +1842,7 @@ Optional bulk-removal flags.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.removeBetweenCells`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1730,7 +1852,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L214)
+Defined in: [sandkit/api/structures.d.ts:376](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L376)
 
 #### Parameters
 
@@ -1764,7 +1886,7 @@ Use [removeBetweenCells](#removebetweencells) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.removeBetweenCells`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1776,7 +1898,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L223)
+Defined in: [sandkit/api/structures.d.ts:394](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L394)
 
 Remove structures at many cells. Main-thread writes are deferred.
 
@@ -1798,9 +1920,18 @@ Optional bulk-removal flags.
 
 `void`
 
+#### Example
+
+```ts
+api.structures.removeAtCells([
+  { x: firstCellX, y: firstCellY },
+  { x: secondCellX, y: secondCellY },
+]);
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.removeAtCells`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1810,7 +1941,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:229](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L229)
+Defined in: [sandkit/api/structures.d.ts:401](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L401)
 
 #### Parameters
 
@@ -1832,7 +1963,7 @@ Use [removeAtCells](#removeatcells) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.removeAtCells`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -1842,7 +1973,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:235](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L235)
+Defined in: [sandkit/api/structures.d.ts:408](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L408)
 
 #### Parameters
 
@@ -1864,7 +1995,7 @@ Use [processing.register](api/sandkit.api.structures.processing.md#register) ins
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.processing.register`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ## References <!-- {docsify-ignore} -->
 

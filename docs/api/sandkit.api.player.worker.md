@@ -16,7 +16,7 @@ Shared `sandkit.api.player` base — player position and collision queries.
 getPositionAtWorld(): Vector2
 ```
 
-Defined in: [shared/api/player.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L15)
+Defined in: [shared/api/player.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L16)
 
 Return the player center position in world pixels.
 
@@ -28,7 +28,7 @@ World position as `{ x, y }` in pixels.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.getPositionAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -38,7 +38,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 getWorldPosition(): Vector2
 ```
 
-Defined in: [shared/api/player.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L21)
+Defined in: [shared/api/player.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L23)
 
 #### Returns
 
@@ -50,7 +50,7 @@ Use [getPositionAtWorld](#getpositionatworld) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.getPositionAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -62,7 +62,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — d
 isCollidingWithCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/player.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L31)
+Defined in: [shared/api/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L34)
 
 Return true when the player hitbox overlaps the cell.
 
@@ -80,7 +80,7 @@ True when the player overlaps the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isCollidingWithCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -92,7 +92,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 isWithinRadiusOfCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [shared/api/player.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L42)
+Defined in: [shared/api/player.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L46)
 
 Return true when the player is within `radius` cells of the point.
 
@@ -110,4 +110,4 @@ True when the player is inside the radius.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isWithinRadiusOfCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

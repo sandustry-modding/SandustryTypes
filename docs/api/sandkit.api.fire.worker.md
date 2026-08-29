@@ -18,7 +18,7 @@ Worker burns are immediate. Main thread defers burns with `burnElementAtCell`.
 canBurnElementAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [worker/api/fire.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L18)
+Defined in: [worker/api/fire.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L19)
 
 Return true when the element at the cell can burn.
 
@@ -34,7 +34,7 @@ Return true when the element at the cell can burn.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.fire.canBurnElementAtCell`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -46,7 +46,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — W
 burnElementAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [worker/api/fire.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L28)
+Defined in: [worker/api/fire.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L30)
 
 Burn the element at the cell immediately on this worker.
 
@@ -64,4 +64,4 @@ True when the burn succeeded.
 
 #### See
 
-https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.fire.burnElementAtCell`
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)

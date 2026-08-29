@@ -12,7 +12,7 @@ Lights that persist in the world save.
 createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions): unknown
 ```
 
-Defined in: [sandkit/api/lights.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L45)
+Defined in: [sandkit/api/lights.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L89)
 
 Create a persistent light at world coordinates.
 
@@ -40,9 +40,19 @@ Brightness, size, color, and persistence options.
 
 `unknown`
 
+#### Example
+
+```ts
+const light = api.lights.persistent.createAtWorld(
+  worldX,
+  worldY,
+  { brightness: 1, size: 80 },
+);
+```
+
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.createAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -54,7 +64,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 removeAtWorld(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L54)
+Defined in: [sandkit/api/lights.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L99)
 
 Remove the persistent light at world coordinates.
 
@@ -78,7 +88,7 @@ World Y coordinate in pixels.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.removeAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -90,7 +100,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L64)
+Defined in: [sandkit/api/lights.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L110)
 
 Fade out the persistent light at world coordinates over durationMs.
 
@@ -120,7 +130,7 @@ Fade duration in milliseconds.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.fadeAtWorld`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 ***
 
@@ -132,7 +142,7 @@ https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — M
 markDirty(): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L71)
+Defined in: [sandkit/api/lights.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L117)
 
 Mark persistent lights dirty so they are saved on the next flush.
 
@@ -142,4 +152,4 @@ Mark persistent lights dirty so they are saved on the next flush.
 
 #### See
 
-https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.markDirty`
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

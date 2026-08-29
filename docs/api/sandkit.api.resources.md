@@ -34,7 +34,7 @@ Collect fluxite at the given cell.
 updateEnergy(amount: number, options?: object): void
 ```
 
-Defined in: [sandkit/api/resources.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L22)
+Defined in: [sandkit/api/resources.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L27)
 
 Update stored energy by amount with optional UI deferral.
 
@@ -57,3 +57,11 @@ When `deferUi` is true, skip immediate UI refresh.
 #### Returns
 
 `void`
+
+#### Example
+
+**Official \`api.resources.adjustEnergy\` (typed deprecated alias: updateEnergy)**
+
+```ts
+api.resources.adjustEnergy(100, { deferUi: true });
+```
