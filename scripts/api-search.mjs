@@ -174,6 +174,115 @@ export function renderSearchPathsScript(paths) {
 }
 
 /**
+ * Strip markdown / HTML noise for search body text.
+ * @param {string} text
+ */
+export function markdownToSearchText(text) {
+  return String(text || "")
+    .replace(/```[\s\S]*?```/g, " ")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/<p class="smt-member-path">[\s\S]*?<\/p>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[#>*_~|]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/**
+ * Build Docsify-ready search records from markdown under `docs/`.
+ * Prefer the muted runtime path under each member heading as the result title.
+ *
+ * @param {Array<{ path: string, content: string }>} files
+ *   `path` is the Docsify route (`/api/sandkit.api.settings`), not a filesystem path.
+ * @returns {Array<{ title: string, body: string, path: string, id: string }>}
+ */
+export function buildSearchIndex(files) {
+  /** @type {Array<{ title: string, body: string, path: string, id: string }>} */
+  const out = [];
+
+  for (const file of files) {
+    const route = file.path;
+    const lines = String(file.content || "").split(/\r?\n/);
+    let pageTitle = route === "/" ? "Home" : route.replace(/^\//, "");
+    /** @type {{ title: string, id: string, bodyLines: string[] } | null} */
+    let current = null;
+
+    const flush = () => {
+      if (!current) return;
+      const body = markdownToSearchText(current.bodyLines.join("\n"));
+      out.push({
+        title: current.title,
+        body,
+        path: route,
+        id: current.id,
+      });
+      current = null;
+    };
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      const h1 = /^#\s+(.+?)(?:\s+<!--.*?-->)?\s*$/.exec(line);
+      if (h1) {
+        flush();
+        pageTitle = h1[1].replace(/\s+<!--.*?-->\s*$/, "").trim();
+        current = { title: pageTitle, id: "", bodyLines: [] };
+        continue;
+      }
+
+      const h3 = /^###\s+(.+)$/.exec(line);
+      if (h3) {
+        flush();
+        const raw = h3[1].trim();
+        const idMatch = /\s*:id=([A-Za-z0-9_-]+)\s*$/.exec(raw);
+        const id = idMatch ? idMatch[1] : "";
+        let local = raw.replace(/\s*:id=[A-Za-z0-9_-]+\s*$/, "").trim();
+        local = local.replace(/\s+<!--.*?-->\s*$/, "").trim();
+        local = local.replace(/~~([^~]+)~~/g, "$1").trim();
+
+        let title = local;
+        // Prefer the runtime path line that follows the heading.
+        for (let j = i + 1; j < Math.min(i + 6, lines.length); j++) {
+          const pathMatch = /<code>([^<]+)<\/code>/.exec(lines[j]);
+          if (pathMatch) {
+            title = pathMatch[1].replace(/~~([^~]+)~~/g, "$1").trim();
+            break;
+          }
+          if (/^#{1,3}\s+/.test(lines[j])) break;
+        }
+        if (title === local && pageTitle && !local.includes(".")) {
+          const bare = local.replace(/\(\)\s*$/, "");
+          title = local.endsWith("()")
+            ? `${pageTitle}.${bare}()`
+            : `${pageTitle}.${local}`;
+        }
+
+        current = { title, id, bodyLines: [] };
+        continue;
+      }
+
+      if (/^##\s+/.test(line)) {
+        // Section banners are ignored headings; keep body under the page/member.
+        continue;
+      }
+
+      if (current) current.bodyLines.push(line);
+    }
+
+    flush();
+  }
+
+  return out;
+}
+
+/**
+ * @param {Array<{ title: string, body: string, path: string, id: string }>} entries
+ */
+export function renderSearchIndexScript(entries) {
+  return `window.SMT_SEARCH_INDEX = ${JSON.stringify(entries)};\n`;
+}
+
+/**
  * Rewrite `api/...` markdown hrefs using oldRel → newRel map (both under `api/`, with `.md`).
  * @param {string} content
  * @param {Map<string, string>} linkMap keys/values like `api/sandkit/api/namespaces/action/README.md`

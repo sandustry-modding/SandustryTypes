@@ -167,5 +167,6 @@ window.SMT_SEARCH_PATHS = [
   "/api/shared.nominal",
   "/api/shared.player",
   "/api/types",
+  "/Changelog",
   "/modules"
 ];

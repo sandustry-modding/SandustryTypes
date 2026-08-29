@@ -13,8 +13,11 @@ import { fileURLToPath } from "node:url";
 import {
   apiPathToQualifiedName,
   apiPathToRouteFile,
+  buildSearchIndex,
   collectSearchPaths,
+  mdFileToSearchPath,
   qualifyApiMarkdown,
+  renderSearchIndexScript,
   renderSearchPathsScript,
   rewriteApiHrefMap,
 } from "./api-search.mjs";
@@ -176,7 +179,7 @@ if (existsSync(leftoverTypedocIndex)) {
 }
 writeModuleIndex(DOCS, linkMap, mainNs, workerNs, engineNs);
 writeFullPage(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
-writeApiSidebar(OUT, linkMap, mainNs, workerNs, engineNs);
+writeApiSidebar(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
 rewriteGeneratedNavLinks(DOCS, linkMap);
 writeSearchPaths(DOCS);
 
@@ -304,13 +307,13 @@ function writeModuleIndex(docsDir, linkMap, mainNs, workerNs, engineNs) {
     "",
     "## Roots",
     "",
-    "- [Full API reference](full.md) — all namespaces on one page",
+    `- [sandkit](${p("sandkit")}) — root object shape`,
     `- [Main thread](${p("sandkit.api")}) — \`sandkit.api\``,
     `- [Worker](${p("sandkit.api.worker")}) — worker-thread \`sandkit.api\``,
     `- [Engine](${p("sandkit.engine")}) — \`sandkit.engine\``,
-    `- [Enums](${p("sandkit.enums")}) — \`sandkit.enums\``,
     `- [React](${p("sandkit.react")}) — \`sandkit.react\``,
-    `- [sandkit](${p("sandkit")}) — root object shape`,
+    `- [Enums](${p("sandkit.enums")}) — \`sandkit.enums\``,
+    "- [Full API reference](full.md) — all namespaces on one page",
     "",
     "## Main thread (`sandkit.api`)",
     "",
@@ -611,14 +614,16 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
 }
 
 /**
- * Nested Docsify sidebar for `/api/*` pages. Links resolve from the docs root.
+ * Write one site-wide sidebar at `docs/_sidebar.md` (no nested `api/_sidebar.md`).
+ *
+ * @param {string} docsDir
  * @param {string} outDir
  * @param {Map<string, string>} linkMap
  * @param {NamespaceNode[]} mainNs
  * @param {NamespaceNode[]} workerNs
  * @param {NamespaceNode[]} engineNs
  */
-function writeApiSidebar(outDir, linkMap, mainNs, workerNs, engineNs) {
+function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
   const href = (typedocRel) => linkMap.get(`api/${typedocRel}`) || `api/${typedocRel}`;
   const used = new Set();
 
@@ -629,7 +634,10 @@ function writeApiSidebar(outDir, linkMap, mainNs, workerNs, engineNs) {
     used.add(md);
     return `${pad(level)}- [${label}](api/${md})`;
   };
+  /** Non-clickable folder label inside a list (`- Player & controls`). */
   const heading = (level, title) => `${pad(level)}- ${title}`;
+  /** Section banner: horizontal rule + markdown h1 (styled yellow in site.css). */
+  const section = (title) => `---\n\n# ${title}`;
 
   const nodeLines = (node, level) => {
     /** @type {string[]} */
@@ -672,36 +680,31 @@ function writeApiSidebar(outDir, linkMap, mainNs, workerNs, engineNs) {
   /** @type {string[]} */
   const lines = [
     "- [Home](/)",
-    "- [Changelog](Changelog.md)",
-    "- [Workshop corpus](workshop-corpus.md)",
-    "- [Official Sandkit API](https://sandustry.com/sandkit.html#api-access-heading ':target=_blank')",
-    "- [npm package](https://www.npmjs.com/package/@sandustry-modding/types ':target=_blank')",
-    "- [Mod template](https://sandustry-modding.github.io/SandustryModTemplate/#/ ':target=_blank')",
-    "",
-    "- Browse",
-    "  - [Namespaces](modules.md)",
-    "  - [Full API reference](full.md)",
-    "",
-    "- Root",
+    "- [Namespaces](modules.md)",
     ...ifFile("sandkit.md", 1, "sandkit"),
     ...ifFile("sandkit.api.md", 1, "sandkit.api"),
     ...ifFile("sandkit.api.worker.md", 1, "sandkit.api (worker)"),
     ...ifFile("sandkit.engine.md", 1, "sandkit.engine"),
     ...ifFile("sandkit.react.md", 1, "sandkit.react"),
-    ...ifFile("configs.md", 1, "configs (modinfo / patches)"),
+    ...ifFile("configs.md", 0, "configs"),
+    "- [Full API reference](full.md)",
     "",
-    "- Main thread",
-    ...grouped(mainNs, MAIN_API_GROUPS, 1),
+    section("Main thread"),
     "",
-    "- Worker thread",
-    ...workerNs.flatMap((node) => nodeLines(node, 1)),
+    ...grouped(mainNs, MAIN_API_GROUPS, 0),
     "",
-    "- Engine",
-    ...ifFile("sandkit.engine.api.md", 1, "sandkit.engine.api"),
-    ...grouped(engineNs, ENGINE_API_GROUPS, 1),
+    section("Worker thread"),
     "",
-    "- Enums",
-    ...ifFile("sandkit.enums.md", 1, "Overview"),
+    ...workerNs.flatMap((node) => nodeLines(node, 0)),
+    "",
+    section("Engine"),
+    "",
+    ...ifFile("sandkit.engine.api.md", 0, "sandkit.engine.api"),
+    ...grouped(engineNs, ENGINE_API_GROUPS, 0),
+    "",
+    section("Enums"),
+    "",
+    ...ifFile("sandkit.enums.md", 0, "Overview"),
   ];
 
   const enums = [...linkMap.values()]
@@ -710,12 +713,12 @@ function writeApiSidebar(outDir, linkMap, mainNs, workerNs, engineNs) {
     .sort((a, b) => a.localeCompare(b));
   for (const file of enums) {
     const name = file.replace(/^sandkit\.enums\./, "").replace(/\.md$/, "");
-    lines.push(link(1, name, `api/${file}`));
+    lines.push(link(0, name, `api/${file}`));
   }
 
-  lines.push("", "- Shared types");
+  lines.push("", section("Shared types"), "");
   for (const name of ["asset", "engine", "jsonvalue", "nominal", "player"]) {
-    lines.push(...ifFile(`shared.${name}.md`, 1, name));
+    lines.push(...ifFile(`shared.${name}.md`, 0, name));
   }
 
   const skip = new Set(["_sidebar.md"]);
@@ -723,15 +726,17 @@ function writeApiSidebar(outDir, linkMap, mainNs, workerNs, engineNs) {
     .filter((name) => name.endsWith(".md") && !skip.has(name) && !used.has(name))
     .sort((a, b) => a.localeCompare(b));
   if (leftovers.length) {
-    lines.push("", "- Other");
+    lines.push("", section("Other"), "");
     for (const file of leftovers) {
       const label = file.replace(/\.md$/, "");
-      lines.push(link(1, label, `api/${file}`));
+      lines.push(link(0, label, `api/${file}`));
     }
   }
 
   lines.push("");
-  writeFileSync(join(outDir, "_sidebar.md"), `${lines.join("\n").trimEnd()}\n`);
+  writeFileSync(join(docsDir, "_sidebar.md"), `${lines.join("\n").trimEnd()}\n`);
+  const nestedSidebar = join(outDir, "_sidebar.md");
+  if (existsSync(nestedSidebar)) rmSync(nestedSidebar, { force: true });
 }
 
 /**
@@ -774,6 +779,18 @@ function writeSearchPaths(docsDir) {
   const relFiles = walkMarkdownFiles(docsDir).map((filePath) =>
     toPosixPath(relative(docsDir, filePath)),
   );
-  const script = renderSearchPathsScript(collectSearchPaths(relFiles));
-  writeFileSync(join(docsDir, "assets/search-paths.js"), script);
+  const paths = collectSearchPaths(relFiles);
+  writeFileSync(join(docsDir, "assets/search-paths.js"), renderSearchPathsScript(paths));
+
+  const indexFiles = [];
+  for (const rel of relFiles) {
+    const route = mdFileToSearchPath(rel);
+    if (!route) continue;
+    indexFiles.push({
+      path: route,
+      content: readFileSync(join(docsDir, rel), "utf8"),
+    });
+  }
+  const entries = buildSearchIndex(indexFiles);
+  writeFileSync(join(docsDir, "assets/search-index.js"), renderSearchIndexScript(entries));
 }

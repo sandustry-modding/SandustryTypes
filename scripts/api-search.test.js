@@ -3,6 +3,7 @@ import test from "node:test";
 import {
   apiPathToQualifiedName,
   apiPathToRouteFile,
+  buildSearchIndex,
   collectSearchPaths,
   mdFileToSearchPath,
   qualifyApiMarkdown,
@@ -107,6 +108,36 @@ test("qualifyApiMarkdown marks worker members without breaking the main-thread n
   assert.match(out, /^# sandkit\.api\.elements \(worker\)$/m);
   assert.match(out, /^### register\(\) :id=register$/m);
   assert.match(out, /<code>sandkit\.api\.elements\.register\(\) \(worker\)<\/code>/);
+});
+
+test("buildSearchIndex prefers runtime member paths as titles", () => {
+  const entries = buildSearchIndex([
+    {
+      path: "/api/sandkit.api.settings",
+      content: `# sandkit.api.settings
+
+## Functions <!-- {docsify-ignore} -->
+
+### get() :id=get
+
+<p class="smt-member-path"><code>sandkit.api.settings.get()</code></p>
+
+Return a settings field value by id.
+
+### ConfigValueV1 :id=configvaluev1
+
+<p class="smt-member-path"><code>sandkit.api.settings.ConfigValueV1</code></p>
+
+Settings field value shape.
+`,
+    },
+  ]);
+  assert.equal(entries[0]?.title, "sandkit.api.settings");
+  assert.equal(entries[1]?.title, "sandkit.api.settings.get()");
+  assert.equal(entries[1]?.id, "get");
+  assert.equal(entries[1]?.path, "/api/sandkit.api.settings");
+  assert.match(entries[1]?.body || "", /settings field value/i);
+  assert.equal(entries[2]?.title, "sandkit.api.settings.ConfigValueV1");
 });
 
 test("mdFileToSearchPath matches Docsify getFile paths", () => {
