@@ -1,6 +1,6 @@
 {
   "name": "@sandustry-modding/types",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "TypeScript declarations and API docs for the Sandustry Sandkit host API",
   "license": "MIT",
   "repository": {

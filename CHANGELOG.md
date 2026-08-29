@@ -7,11 +7,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 0.4.0 - 2026-08-29
+
+https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.4.0
+
 ### Added
 
 - `src/configs/` types for `modinfo.json` and `patches.json` (`@sandustry-modding/types/configs`), with JSDoc on every key
 - Stronger structure definition fields: `tooltipHover`, `spanTiles`, `linkedClearance`, spritesheet/ui render blocks
 - Stronger `TechDefinition` fields used by tech nodes (`cost`, `unlocks`, `currencyType`, `branch`)
+- JSDoc `@example` blocks on many Sandkit members (main, worker, and configs)
+- Prebuilt Docsify search index (`docs/assets/search-index.js`) so API search works without a runtime crawl
+- Nested namespace roots in the docs sidebar (`sandkit`, `sandkit.api`, worker, engine, react)
+
+### Changed
+
+- Official `@see` links use a short “Official docs” label that deep-links to Sandkit HTML sections
+- Docs search ranks full runtime paths (`sandkit.api.settings.get()`) instead of local member names only
+- Move Full API reference to the bottom of the docs root nav block
+- Drop the page TOC plugin and the nested `docs/api/_sidebar.md` in favor of one site sidebar
 
 ## 0.3.1 - 2026-08-27
 
@@ -71,4 +85,3 @@ https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.1.0
 - Shared base shapes under `shared/` for main and worker reuse
 - Ambient `sandkit` free variable and type aliases via `global.d.ts`
 - Docsify API reference generated from the declarations
-
