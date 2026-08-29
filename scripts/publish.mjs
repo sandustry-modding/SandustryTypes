@@ -6,7 +6,7 @@
  * - CHANGELOG.md has a dated section for package.json version
  * - docs/Changelog.md matches CHANGELOG.md
  * - version is not already on the registry
- * - npm auth works
+ * - npm auth works (runs `npm login` when whoami fails)
  * - npm run validate (typecheck, tests, packed-tarball consumer probes)
  *
  * Usage:
@@ -112,12 +112,25 @@ if (view.status === 0 && view.stdout.trim() === version) {
   fail(`${name}@${version} is already on the npm registry`);
 }
 
-const whoami = run(npmBin, ["whoami"], { allowFail: true });
-if (whoami.status !== 0) {
-  if (whoami.stderr?.trim()) console.error(whoami.stderr);
-  fail("npm auth failed; run npm login then retry");
+/**
+ * @returns {string} npm username
+ */
+function requireNpmAuth() {
+  let whoami = run(npmBin, ["whoami"], { allowFail: true });
+  if (whoami.status === 0) {
+    return whoami.stdout.trim();
+  }
+  info("npm auth missing or expired; starting npm login…");
+  run(npmBin, ["login"], { inherit: true });
+  whoami = run(npmBin, ["whoami"], { allowFail: true });
+  if (whoami.status !== 0) {
+    if (whoami.stderr?.trim()) console.error(whoami.stderr);
+    fail("npm login did not establish auth; retry manually with npm login");
+  }
+  return whoami.stdout.trim();
 }
-info(`npm user: ${whoami.stdout.trim()}`);
+
+info(`npm user: ${requireNpmAuth()}`);
 
 // --- validate ---
 info("running validate…");
