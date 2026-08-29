@@ -10,6 +10,14 @@ export namespace progression {
   /**
    * Mark a progression step complete. Return true when completion succeeds.
    * @param request - Progression id and optional metadata for the step.
+   *
+   * @example
+   * ```ts
+   * const completed = api.progression.complete({
+   *   domain: "objective",
+   *   id: "all",
+   * });
+   * ```
    */
   export function complete(request: ProgressionCompletionRequestV1): boolean;
 

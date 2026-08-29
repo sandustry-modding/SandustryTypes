@@ -12,6 +12,14 @@ export namespace structureBehaviors {
    * Register conveyor behavior for a structure type.
    * @param structureId - Structure type id string.
    * @param options - Transport offset, velocity, distance, and run direction.
+   *
+   * @example
+   * ```ts
+   * api.structureBehaviors.registerConveyorType(
+   *   "exampleConveyor",
+   *   { runWith: "right" },
+   * );
+   * ```
    */
   export function registerConveyorType(structureId: string, options?: { transportOffset?: Vector2; velocity?: Vector2; maxTransportDistance?: number; transportHeight?: number; runWith?: 'left' | 'right'; skipQueued?: boolean; }): void;
   /**

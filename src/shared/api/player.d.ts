@@ -10,13 +10,15 @@ export namespace player {
    * Return the player center position in world pixels.
    *
    * @returns World position as `{ x, y }` in pixels.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.getPositionAtWorld`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getPositionAtWorld(): Vector2;
 
   /**
    * @deprecated Use {@link getPositionAtWorld} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.getPositionAtWorld`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getWorldPosition(): Vector2;
 
@@ -26,7 +28,8 @@ export namespace player {
    * @param cellX - Grid column of the cell.
    * @param cellY - Grid row of the cell.
    * @returns True when the player overlaps the cell.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isCollidingWithCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isCollidingWithCell(...args: CellCoordinates): boolean;
 
@@ -37,7 +40,8 @@ export namespace player {
    * @param cellY - Grid row of the reference cell.
    * @param radius - Maximum distance in cells (inclusive).
    * @returns True when the player is inside the radius.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isWithinRadiusOfCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isWithinRadiusOfCell(...args: [...CellCoordinates, radius: number]): boolean;
 }

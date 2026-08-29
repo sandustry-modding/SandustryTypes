@@ -15,7 +15,7 @@ export namespace terrains {
   /**
    * Terrain definition shape for {@link register} and {@link getDefinitionByType}.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.register`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export interface TerrainDefinition {
     /** Unique mod-scoped terrain id. */
@@ -45,7 +45,7 @@ export namespace terrains {
   /**
    * Terrain cell data returned by {@link getDataAtCell}.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getDataAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export interface TerrainDataAtCell {
     /** Numeric terrain cell type. */
@@ -53,12 +53,13 @@ export namespace terrains {
     /**
      * Current hit points, or null when the terrain has no hp.
      *
-     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getDataAtCell`
+     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     hitPoints: number | null;
     /**
      * @deprecated Use {@link hitPoints} instead.
-     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `result.hitPoints`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     hp?: number | null;
   }
@@ -67,7 +68,8 @@ export namespace terrains {
    * Return the mod string id for a numeric terrain type.
    *
    * @param terrainType - Numeric terrain cell type.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getIdByType`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getIdByType(terrainType: TerrainType): TerrainId;
 
@@ -75,13 +77,15 @@ export namespace terrains {
    * Resolve a terrain string id to a numeric cell type.
    *
    * @param terrainId - Mod-registered or built-in terrain id.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getTypeById`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getTypeById(terrainId: TerrainId): TerrainType;
 
   /**
    * @deprecated Use {@link getTypeById} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.terrains.getTypeById`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getTypeFromId(terrainId: TerrainId): TerrainType;
 
@@ -89,7 +93,8 @@ export namespace terrains {
    * Look up the definition for a terrain type.
    *
    * @param terrainType - Numeric terrain cell type.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getDefinitionByType`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined;
 
@@ -98,7 +103,8 @@ export namespace terrains {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getTypeAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getTypeAtCell(...args: CellCoordinates): TerrainType | null;
 
@@ -108,7 +114,8 @@ export namespace terrains {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @returns Cell type and hit points, or null when the cell is not terrain.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.getDataAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null;
 
@@ -117,7 +124,8 @@ export namespace terrains {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.isAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isAtCell(...args: CellCoordinates): boolean;
 
@@ -127,7 +135,8 @@ export namespace terrains {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param terrainId - Terrain string id to compare.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.isTypeAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isTypeAtCell(...args: [...CellCoordinates, terrainId: TerrainId]): boolean;
 
@@ -135,7 +144,8 @@ export namespace terrains {
    * Return true when a packed cell id refers to terrain.
    *
    * @param cellId - Packed cell id from {@link world.getCellIdAtCell}.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.isCellIdTerrain`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isCellIdTerrain(cellId: CellId): boolean;
 
@@ -145,7 +155,8 @@ export namespace terrains {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param damage - Damage amount to apply.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.damageAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function damageAtCell(...args: [...CellCoordinates, damage: number]): void;
 
@@ -156,7 +167,8 @@ export namespace terrains {
    * @param cellY - Grid row of the target cell.
    * @param terrainTypeOrId - Numeric cell type or terrain string id.
    * @param options - Optional mutation flags.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.terrains.createAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function createAtCell(...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]): void;
 
@@ -167,7 +179,8 @@ export namespace terrains {
    * @param cellY - Grid row of the target cell.
    * @param terrainTypeOrId - Numeric cell type or terrain string id.
    * @param options - Optional mutation flags.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.terrains.replaceAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function replaceAtCell(...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]): void;
 
@@ -177,7 +190,8 @@ export namespace terrains {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param options - Optional mutation flags.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.terrains.removeAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function removeAtCell(...args: [...CellCoordinates, options?: TerrainMutationOptions]): void;
 
@@ -188,20 +202,22 @@ export namespace terrains {
    * @param cellY - Grid row of the target cell.
    * @param hitPoints - New hit point value.
    * @returns True when hit points changed or the terrain was removed.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.terrains.setHitPointsAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setHitPointsAtCell(...args: [...CellCoordinates, hitPoints: number]): boolean;
 
   /**
    * @deprecated Use {@link setHitPointsAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setHpAtCell(...args: [...CellCoordinates, hitPoints: number]): boolean;
 
   /**
    * Options for terrain create, replace, or remove calls.
    *
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.terrains.createAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export interface TerrainMutationOptions {
     /** Skip shadow updates around the changed cell. */
@@ -211,21 +227,21 @@ export namespace terrains {
   /**
    * Numeric terrain / {@link CellTypeEnum} handle.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export type TerrainType = CellTypeEnum | TaggedNumber<"terrainType">;
 
   /**
    * Mod or built-in terrain string id.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export type TerrainId = LooseString<never>;
 
   /**
    * Type handle or string id accepted by mutation helpers.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export type TerrainRef = TerrainType | TerrainId;
 }

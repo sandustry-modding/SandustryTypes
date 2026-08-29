@@ -5,7 +5,7 @@ import { shared } from "../../shared";
  * `sandkit.api.elements` — register elements and read or change cells on the main thread.
  * Main thread only.
  *
- * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements`
+ * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace elements {
 
@@ -13,43 +13,43 @@ export namespace elements {
   /**
    * Numeric id for a registered element type.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import ElementType = shared.api.elements.ElementType;
   /**
    * Mod or built-in element string id.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import ElementId = shared.api.elements.ElementId;
   /**
    * Type handle or string id accepted by lookup helpers.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import ElementRef = shared.api.elements.ElementRef;
   /**
    * Matter category for element physics behavior.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import MatterType = shared.api.elements.MatterType;
   /**
    * Full definition used to register a custom element.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.register`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import ElementDefinition = shared.api.elements.ElementDefinition;
   /**
    * Options for create and replace calls.
    *
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.createAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export import ElementCreateOptions = shared.api.elements.ElementCreateOptions;
   /**
    * Options for element removal.
    *
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.removeAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export import ElementRemovalOptions = shared.api.elements.ElementRemovalOptions;
 
@@ -59,7 +59,8 @@ export namespace elements {
   export import getTypeById = shared.api.elements.getTypeById;
   /**
    * @deprecated Use {@link getTypeById} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.elements.getTypeById`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getTypeFromId = shared.api.elements.getTypeFromId;
   /** Returns the definition for an element type. */
@@ -137,7 +138,7 @@ export namespace elements {
   /**
    * Returns all registered element type ids.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getRegisteredTypes`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getRegisteredTypes(): ElementType[];
 
@@ -146,7 +147,8 @@ export namespace elements {
    *
    * @param definition - Full element definition to register.
    * @returns Object with the assigned `elementType`.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.register`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function register(definition: ElementDefinition): { elementType: ElementType; };
 
@@ -155,7 +157,15 @@ export namespace elements {
    *
    * @param elementTypeOrId - Numeric type or string id.
    * @param partial - Fields to merge onto the definition.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.updateDefinition`
+   *
+   * @example
+   * ```ts
+   * api.elements.updateDefinition("exampleElement", {
+   *   showInFilterPicker: false,
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function updateDefinition(elementTypeOrId: ElementRef, partial: Partial<ElementDefinition>): void;
 
@@ -164,7 +174,8 @@ export namespace elements {
    *
    * @param elementTypeOrId - Numeric type or string id.
    * @param interaction - Interaction entry to append.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.addInteractionInfo`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function addInteractionInfo(elementTypeOrId: ElementRef, interaction: Interaction): void;
 
@@ -172,7 +183,8 @@ export namespace elements {
    * Returns the display name for an element type.
    *
    * @param elementType - Numeric element type.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getNameByType`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getNameByType(elementType: ElementType): string;
 
@@ -183,7 +195,8 @@ export namespace elements {
    * @param structureCellY - Structure anchor cell row.
    * @param structureSizeCells - Structure footprint size in cells.
    * @returns Cell coordinates of a free cell, or null when none.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.findFreeCellInStructure`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function findFreeCellInStructure(structureCellX: number, structureCellY: number, structureSizeCells: number): Vector2 | null;
 
@@ -194,13 +207,29 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param elementTypeOrId - Numeric type or string id.
    * @param options - Optional spawn overrides.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.createAtCell`
+   *
+   * @example Main entry
+   * ```ts
+   * api.elements.createAtCell(cellX, cellY, "water", {
+   *   durationTicks: 60,
+   * });
+   * ```
+   *
+   * @example options.durationTicks
+   * ```ts
+   * api.elements.createAtCell(cellX, cellY, "steam", {
+   *   durationTicks: 120,
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function createAtCell(...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]): void;
 
   /**
    * @deprecated Use {@link createAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.createAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function createAtCellWhenIdle(...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]): void;
 
@@ -211,13 +240,15 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param elementTypeOrId - Numeric type or string id.
    * @param options - Optional spawn overrides.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.replaceAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function replaceAtCell(...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]): void;
 
   /**
    * @deprecated Use {@link replaceAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.replaceAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function replaceAtCellWhenIdle(...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]): void;
 
@@ -227,13 +258,15 @@ export namespace elements {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param options - Optional removal flags.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.removeAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function removeAtCell(...args: [...CellCoordinates, options?: ElementRemovalOptions]): void;
 
   /**
    * @deprecated Use {@link removeAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.removeAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function removeAtCellWhenIdle(...args: [...CellCoordinates, options?: ElementRemovalOptions]): void;
 
@@ -244,13 +277,15 @@ export namespace elements {
    * @param fromCellY - Source cell row.
    * @param toCellX - Destination cell column.
    * @param toCellY - Destination cell row.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.teleportBetweenCells`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void;
 
   /**
    * @deprecated Use {@link teleportBetweenCells} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.teleportBetweenCells`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void;
 
@@ -260,13 +295,20 @@ export namespace elements {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param velocity - New velocity vector.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.setVelocityAtCell`
+   *
+   * @example
+   * ```ts
+   * api.elements.setVelocityAtCell(cellX, cellY, { x: 0, y: -120 });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setVelocityAtCell(...args: [...CellCoordinates, velocity: Vector2]): void;
 
   /**
    * @deprecated Use {@link setVelocityAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.setVelocityAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setVelocityAtCellWhenIdle(...args: [...CellCoordinates, velocity: Vector2]): void;
 
@@ -277,13 +319,25 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param velocity - Velocity delta to add.
    * @param maxSpeedCellsPerSecond - Optional speed cap after the addition.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.addParticleVelocityAtCell`
+   *
+   * @example
+   * ```ts
+   * api.elements.addParticleVelocityAtCell(
+   *   cellX,
+   *   cellY,
+   *   { x: 4, y: -8 },
+   *   120,
+   * );
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function addParticleVelocityAtCell(...args: [...CellCoordinates, velocity: Vector2, maxSpeedCellsPerSecond?: number]): void;
 
   /**
    * @deprecated Use {@link addParticleVelocityAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.addParticleVelocityAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function addParticleVelocityAtCellWhenIdle(...args: [...CellCoordinates, velocity: Vector2, maxSpeedCellsPerSecond?: number]): void;
 
@@ -293,13 +347,24 @@ export namespace elements {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param velocity - Initial particle velocity.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.convertToParticleAtCell`
+   *
+   * @example
+   * ```ts
+   * api.elements.convertToParticleAtCell(
+   *   cellX,
+   *   cellY,
+   *   { x: 0, y: -120 },
+   * );
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function convertToParticleAtCell(...args: [...CellCoordinates, velocity: Vector2]): void;
 
   /**
    * @deprecated Use {@link convertToParticleAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.convertToParticleAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function convertToParticleAtCellWhenIdle(...args: [...CellCoordinates, velocity: Vector2]): void;
 
@@ -308,13 +373,15 @@ export namespace elements {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.convertFromParticleAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function convertFromParticleAtCell(...args: CellCoordinates): void;
 
   /**
    * @deprecated Use {@link convertFromParticleAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.convertFromParticleAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void;
 
@@ -325,13 +392,15 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param fieldNumber - Data field index (1–4).
    * @param value - New field value.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.setDataFieldAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setDataFieldAtCell(...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4, value: number]): void;
 
   /**
    * @deprecated Use {@link setDataFieldAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.setDataFieldAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setDataFieldAtCellWhenIdle(...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4, value: number]): void;
 
@@ -340,13 +409,15 @@ export namespace elements {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.refreshColorAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function refreshColorAtCell(...args: CellCoordinates): void;
 
   /**
    * @deprecated Use {@link refreshColorAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.refreshColorAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function refreshColorAtCellWhenIdle(...args: CellCoordinates): void;
 
@@ -356,13 +427,15 @@ export namespace elements {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param physicsState - Physics skip flags for the element.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.setPhysicsAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setPhysicsAtCell(...args: [...CellCoordinates, physicsState: number]): void;
 
   /**
    * @deprecated Use {@link setPhysicsAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.setPhysicsAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setPhysicsAtCellWhenIdle(...args: [...CellCoordinates, physicsState: number]): void;
 
@@ -373,13 +446,25 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param durationTicks - Duration in simulation ticks.
    * @param options - When `updateMax` is true, also update max duration.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.setDurationAtCell`
+   *
+   * @example Main entry
+   * ```ts
+   * api.elements.setDurationAtCell(
+   *   cellX,
+   *   cellY,
+   *   120,
+   *   { updateMax: true },
+   * );
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setDurationAtCell(...args: [...CellCoordinates, durationTicks: number, options?: { updateMax?: boolean; }]): void;
 
   /**
    * @deprecated Use {@link setDurationAtCell} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.setDurationAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setDurationAtCellWhenIdle(...args: [...CellCoordinates, durationTicks: number, options?: { updateMax?: boolean; }]): void;
 }

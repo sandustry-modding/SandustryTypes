@@ -24,6 +24,28 @@ export namespace patterns {
    * @param outVelocity - Ejection velocity written into this vector.
    * @param power - Dig strength applied to matched cells.
    * @param options - Optional excavation source flags.
+   *
+   * @example Main entry
+   * ```ts
+   * api.patterns.excavateAtCell(
+   *   cellX,
+   *   cellY,
+   *   api.patterns.createCircle(5),
+   *   { x: 0, y: -120 },
+   *   2,
+   * );
+   * ```
+   *
+   * @example Worker entry
+   * ```ts
+   * api.patterns.excavateAtCell(
+   *   cellX,
+   *   cellY,
+   *   pattern,
+   *   { x: 0, y: -1 },
+   *   10,
+   * );
+   * ```
    */
   export function excavateAtCell(...args: [...CellCoordinates, pattern: number[][], outVelocity: Vector2, power: number, options?: PatternExcavateOptions]): void;
 

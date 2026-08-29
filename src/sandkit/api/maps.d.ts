@@ -25,7 +25,16 @@ export namespace maps {
   /**
    * Return artifact marker locations for the active map.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.maps.getArtifactLocations`
+   * @example
+   * ```ts
+   * api.events.on("game:ready", () => {
+   *   api.maps.getArtifactLocations().forEach(({ cellX, cellY, name }) => {
+   *     addMarker(cellX, cellY, name);
+   *   });
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getArtifactLocations(): readonly ArtifactLocation[];
 

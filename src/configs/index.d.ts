@@ -5,7 +5,8 @@
  * `@sandustry-modding/types/configs` when typing mod folder config files.
  *
  * @module
- * @see https://sandustry.com/sandkit.html#mod-files-heading Official Sandkit API — Mod file structure
+ *
+ * @see [Official docs](https://sandustry.com/sandkit.html#mod-files-heading)
  */
 
 export type {

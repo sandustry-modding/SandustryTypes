@@ -18,7 +18,8 @@ export namespace player {
 
   /**
    * @deprecated Use {@link getPositionAtWorld} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.getPositionAtWorld`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getWorldPosition = shared.api.player.getWorldPosition;
 
@@ -27,13 +28,15 @@ export namespace player {
    *
    * @param worldX - World x position in pixels.
    * @param worldY - World y position in pixels.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setPositionAtWorld`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setPositionAtWorld(worldX: number, worldY: number): void;
 
   /**
    * @deprecated Use {@link setPositionAtWorld} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.setPositionAtWorld`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setWorldPosition(worldX: number, worldY: number): void;
 
@@ -42,7 +45,8 @@ export namespace player {
    *
    * @param velocityX - Horizontal velocity in pixels per second.
    * @param velocityY - Vertical velocity in pixels per second.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setVelocity`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setVelocity(velocityX: number, velocityY: number): void;
 
@@ -51,7 +55,8 @@ export namespace player {
    *
    * @param multiplier - Speed scale factor (`1` is default walk). `0` freezes movement.
    * Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly `1`.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setMovementSpeedMultiplier`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setMovementSpeedMultiplier(multiplier: number): void;
 
@@ -60,7 +65,8 @@ export namespace player {
    *
    * @param mode - `"normal"` for default physics, or `"hover"` for hover flight.
    * @returns True when the mode changes.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setMovementMode`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setMovementMode(mode: 'normal' | 'hover'): boolean;
 
@@ -70,14 +76,15 @@ export namespace player {
    * on the store snapshot — that flag is not updated during play.
    *
    * @returns True when the player touches solid ground.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isOnGround`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isOnGround(): boolean;
 
   /**
    * Move the player down until ground is found.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.teleportToGround`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function teleportToGround(): void;
 
@@ -87,13 +94,15 @@ export namespace player {
    * @param worldX - World x position in pixels to test.
    * @param worldY - World y position in pixels to test.
    * @returns True when the player hitbox fits at the position.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isPositionClearAtWorld`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isPositionClearAtWorld(worldX: number, worldY: number): boolean;
 
   /**
    * @deprecated Use {@link isPositionClearAtWorld} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.isPositionClearAtWorld`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isWorldPositionClear(worldX: number, worldY: number): boolean;
 
@@ -103,13 +112,15 @@ export namespace player {
      * Add an item to inventory by item id.
      *
      * @param itemId - Registered item id string.
-     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.inventory.addById`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function addById(itemId: string): void;
 
     /**
      * @deprecated Use {@link addById} instead.
-     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.inventory.addById`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function addFromId(itemId: string): void;
   }
@@ -120,13 +131,15 @@ export namespace player {
      * Unlock a structure type for building.
      *
      * @param structureId - Registered structure id string.
-     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.buildings.unlockById`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function unlockById(structureId: string): void;
 
     /**
      * @deprecated Use {@link unlockById} instead.
-     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.buildings.unlockById`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function unlockByType(structureId: string): void;
 
@@ -134,7 +147,8 @@ export namespace player {
      * Remove a structure unlock from the player.
      *
      * @param structureId - Registered structure id string.
-     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.buildings.removeById`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function removeById(structureId: string): void;
   }

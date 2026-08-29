@@ -13,38 +13,39 @@ import { pickups as pickupsNs } from "./pickups";
 
 /**
  * @deprecated Use {@link grid} instead.
- * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid`
+ *
+ * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace world {
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.getCellIdAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getCellIdAtCell = grid.getCellIdAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.isCellEmptyAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import isCellEmptyAtCell = grid.isCellEmptyAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.isTerrainAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import isTerrainAtCell = grid.isTerrainAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.reportActivityAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import reportActivityAtCell = grid.reportActivityAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.excavateAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import excavateAtCell = grid.excavateAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.getDimensions`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getDimensions = grid.getDimensions;
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.ExcavateOptions` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import ExcavateOptions = grid.ExcavateOptions;
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.CellId` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import CellId = grid.CellId;
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.GridDimensions` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import GridDimensions = grid.GridDimensions;
 
   /**
@@ -52,54 +53,58 @@ export namespace world {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.revealFogAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import revealFogAtCell = grid.revealFogAtCell;
 
   /**
    * @deprecated Use {@link grid.mutate} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.grid.mutate`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function runWhenSimulationIdle(callback: () => void): void;
 
   /**
    * @deprecated Use {@link grid.redrawAroundCell} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.redrawAroundCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function redrawAroundCellWhenIdle(...args: [...CellCoordinates, range: number]): void;
 
   /**
    * @deprecated Use {@link pickups} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export namespace pickups {
-    /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.spawnAtWorld` */
+    /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
     export import spawnAtWorld = pickupsNs.spawnAtWorld;
-    /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.remove` */
+    /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
     export import destroy = pickupsNs.destroy;
-    /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.pickUp` */
+    /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
     export import pickUp = pickupsNs.pickUp;
-    /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.getAll` */
+    /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
     export import getAll = pickupsNs.getAll;
-    /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.getById` */
+    /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
     export import getById = pickupsNs.getById;
-    /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.remove` */
+    /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
     export import remove = pickupsNs.remove;
   }
 
   /**
    * @deprecated Use {@link pickups.PickupType} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.PickupType`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import WorldItemType = pickupsNs.WorldItemType;
 
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.PickupType` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import PickupType = pickupsNs.PickupType;
 
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.WorldItemLight` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import WorldItemLight = pickupsNs.WorldItemLight;
 
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.WorldItem` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import WorldItem = pickupsNs.WorldItem;
 }

@@ -18,7 +18,14 @@ export namespace grid {
   export import reportActivityAtCell = sharedGrid.reportActivityAtCell;
   /** Apply excavation damage and eject velocity at a cell. */
   export import excavateAtCell = sharedGrid.excavateAtCell;
-  /** Return the world grid size in cells. */
+  /**
+   * Return the world grid size in cells.
+   *
+   * @example Worker entry
+   * ```ts
+   * const { widthCells, heightCells } = api.grid.getDimensions();
+   * ```
+   */
   export import getDimensions = sharedGrid.getDimensions;
   /** Options for {@link excavateAtCell}. */
   export import ExcavateOptions = sharedGrid.ExcavateOptions;
@@ -30,7 +37,8 @@ export namespace grid {
 
 /**
  * @deprecated Use {@link grid} instead.
- * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid`
+ *
+ * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace world {
   export import getCellIdAtCell = grid.getCellIdAtCell;

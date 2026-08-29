@@ -5,14 +5,15 @@ import type { structures } from "../../shared/api/structures";
  *
  * Available as `sandkit.api.blueprints`.
  *
- * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.blueprints`
+ * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace blueprints {
   /**
    * Serialize live structure instances into blueprint records.
    *
    * @param structures - Structure instances to encode.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.blueprints.serializeStructures`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function serializeStructures(structures: readonly structures.Structure[]): BlueprintStructure[];
 
@@ -20,7 +21,8 @@ export namespace blueprints {
    * Localize blueprint structure records for placement.
    *
    * @param structures - Blueprint structure records to localize.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.blueprints.localizeStructures`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[];
 

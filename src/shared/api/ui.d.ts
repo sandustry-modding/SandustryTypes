@@ -10,6 +10,11 @@ export namespace ui {
    * Show a short on-screen toast message.
    * @param message - Plain text, translation key, or translatable value.
    * @param options - Cooldown, style, and auto-dismiss options.
+   *
+   * @example Worker entry
+   * ```ts
+   * api.ui.toast({ key: "mods|example|workerToast" });
+   * ```
    */
   export function toast(message: LocalizedText, options?: ToastOptions): void;
 

@@ -24,6 +24,13 @@ export namespace items {
    * Updates fields on an existing item definition.
    * @param itemId - Registered item id.
    * @param partial - Fields to merge into the definition.
+   *
+   * @example
+   * ```ts
+   * api.items.updateDefinition("exampleTool", {
+   *   name: "Updated Example Tool",
+   * });
+   * ```
    */
   export function updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void;
   /**

@@ -13,7 +13,8 @@ export namespace utils {
    *
    * @param pointA - First point.
    * @param pointB - Second point.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getDistance`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDistance(pointA: Vector2, pointB: Vector2): number;
 
@@ -22,7 +23,8 @@ export namespace utils {
    *
    * @param pointA - Origin point.
    * @param pointB - Target point.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getDirection`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDirection(pointA: Vector2, pointB: Vector2): Vector2;
 
@@ -31,7 +33,8 @@ export namespace utils {
    *
    * @param pointA - Origin point.
    * @param pointB - Target point.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getAngle`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getAngle(pointA: Vector2, pointB: Vector2): number;
 
@@ -40,13 +43,15 @@ export namespace utils {
    *
    * @param pointA - Line start in cell coordinates.
    * @param pointB - Line end in cell coordinates.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getCoordinatesBetweenCells`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getCoordinatesBetweenCells(pointA: Vector2, pointB: Vector2): Vector2[];
 
   /**
    * @deprecated Use {@link getCoordinatesBetweenCells} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.utils.getCoordinatesBetweenCells`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[];
 }

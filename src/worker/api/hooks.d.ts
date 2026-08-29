@@ -13,7 +13,65 @@ export namespace hooks {
    * @param hookId - Registered hook identifier.
    * @param callback - Called with hook arguments and context; may cancel the hook.
    * @param options - Optional guard and priority.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.hooks.intercept`
+   *
+   * @example cell:process
+   * ```ts
+   * api.hooks.intercept("cell:process", handleCell, {
+   *   guard: { elementType },
+   * });
+   * ```
+   *
+   * @example element:update
+   * ```ts
+   * api.hooks.intercept("element:update", handleUpdate, {
+   *   guard: { elementType },
+   * });
+   * ```
+   *
+   * @example element:move
+   * ```ts
+   * api.hooks.intercept("element:move", (args, context) => {
+   *   handleElementMove(args, context);
+   * });
+   * ```
+   *
+   * @example element:move:blocked
+   * ```ts
+   * api.hooks.intercept(
+   *   "element:move:blocked",
+   *   (args, context) => {
+   *     handleBlockedMovement(args, context);
+   *   },
+   *   { guard: { elementType } },
+   * );
+   * ```
+   *
+   * @example element:duration:expire
+   * ```ts
+   * api.hooks.intercept(
+   *   "element:duration:expire",
+   *   (args, context) => {
+   *     handleDurationExpiry(args, context);
+   *   },
+   *   { guard: { elementType } },
+   * );
+   * ```
+   *
+   * @example fire:element:burn
+   * ```ts
+   * api.hooks.intercept("fire:element:burn", (args, context) => {
+   *   handleElementBurn(args, context);
+   * });
+   * ```
+   *
+   * @example shaker:elementOn
+   * ```ts
+   * api.hooks.intercept("shaker:elementOn", (args, context) => {
+   *   handleShakerElement(args, context);
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function intercept<K extends InterceptHookId>(
     hookId: K,
@@ -27,7 +85,15 @@ export namespace hooks {
    * @param hookId - Registered hook identifier.
    * @param callback - Called with hook arguments; may mutate hook payload.
    * @param options - Optional guard and priority.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.hooks.modify`
+   *
+   * @example Worker entry
+   * ```ts
+   * api.hooks.modify("example:prepare", (args) => {
+   *   args.value *= 2;
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function modify<K extends ModifyHookId>(
     hookId: K,

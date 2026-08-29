@@ -5,7 +5,7 @@ import type { terrains } from "../../shared/api/terrains";
  * `sandkit.api.excavation` — register custom excavation tool dig profiles.
  * Main thread only.
  *
- * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.excavation`
+ * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace excavation {
   /**
@@ -13,7 +13,36 @@ export namespace excavation {
    *
    * @param id - Unique profile id (1–128 chars: letters, numbers, `.`, `_`, `:`, `-`).
    * @param definition - Pattern, power, terrain rules, and profile options.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.excavation.registerProfile`
+   *
+   * @example
+   * ```ts
+   * const profileId = "example:voidGun";
+   * const duneType = api.terrains.getTypeById("dune");
+   * const sandType = api.elements.getTypeById("sand");
+   *
+   * api.excavation.registerProfile(profileId, {
+   *   power: 8,
+   *   terrainRules: [
+   *     {
+   *       cellType: duneType,
+   *       outputElementType: sandType,
+   *     },
+   *   ],
+   * });
+   *
+   * api.hooks.modify("excavation:prepare", (args) => {
+   *   if (
+   *     args.sourceKind !== "projectile"
+   *     || args.sourceId !== "implosionGun"
+   *   ) {
+   *     return;
+   *   }
+   *
+   *   args.profileId = profileId;
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void;
 
@@ -47,7 +76,8 @@ export namespace excavation {
     cellType: terrains.TerrainRef;
     /**
      * @deprecated Use {@link cellType} instead.
-     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias in `api.excavation.registerProfile` terrain rules
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     terrainType?: terrains.TerrainRef;
     /** Damage applied when this rule matches. */

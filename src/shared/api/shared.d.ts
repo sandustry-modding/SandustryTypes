@@ -14,7 +14,8 @@ export namespace shared {
      *
      * @param key - Buffer name shared across threads.
      * @returns The typed array, or `undefined` when the buffer does not exist.
-     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.shared.buffers.get`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function get(key: string): SharedArray | undefined;
   }

@@ -3,14 +3,20 @@
  *
  * Available as `sandkit.api.game`.
  *
- * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.game`
+ * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace game {
   /**
    * Start or restart the game session.
    *
    * @param options - Optional session start flags.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.game.start`
+   *
+   * @example
+   * ```ts
+   * api.game.start({ skipIntro: true });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function start(options?: GameStartOptions): void;
 

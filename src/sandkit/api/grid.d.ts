@@ -8,38 +8,53 @@ import type { terrains } from "./terrains";
  *
  * Main thread only.
  *
- * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid`
+ * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace grid {
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.getCellIdAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getCellIdAtCell = shared.api.grid.getCellIdAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.isCellEmptyAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import isCellEmptyAtCell = shared.api.grid.isCellEmptyAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.isTerrainAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import isTerrainAtCell = shared.api.grid.isTerrainAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.reportActivityAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import reportActivityAtCell = shared.api.grid.reportActivityAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.excavateAtCell`
+   * @example
+   * ```ts
+   * api.grid.excavateAtCell(
+   *   cellX,
+   *   cellY,
+   *   { x: 0, y: -120 },
+   *   25,
+   * );
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import excavateAtCell = shared.api.grid.excavateAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.getDimensions`
+   * @example Main entry
+   * ```ts
+   * const { widthCells, heightCells } = api.grid.getDimensions();
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getDimensions = shared.api.grid.getDimensions;
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.ExcavateOptions` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import ExcavateOptions = shared.api.grid.ExcavateOptions;
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.CellId` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import CellId = shared.api.grid.CellId;
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.GridDimensions` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import GridDimensions = shared.api.grid.GridDimensions;
 
   /**
@@ -47,8 +62,31 @@ export namespace grid {
    * mutations apply.
    *
    * @param callback - Receives a writer for element and terrain cell mutations.
-   * @see https://sandustry.com/sandkit.html#mutations-heading
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate`
+   *
+   * @example Deferred main-thread mutations
+   * ```ts
+   * api.grid.mutate((writer) => {
+   *   if (api.terrains.isTypeAtCell(cellX, cellY, "ice")) {
+   *     writer.elements.replaceAtCell(cellX, cellY, "water");
+   *   }
+   * });
+   * ```
+   *
+   * @example
+   * ```ts
+   * const waterType = api.elements.getTypeById("water");
+   *
+   * api.events.on("item:used", ({ itemId, cellX, cellY }) => {
+   *   if (itemId !== "laser") return;
+   *
+   *   api.grid.mutate((writer) => {
+   *     if (!api.terrains.isTypeAtCell(cellX, cellY, "ice")) return;
+   *     writer.elements.replaceAtCell(cellX, cellY, waterType);
+   *   });
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function mutate(callback: (writer: GridMutationWriter) => void): void;
 
@@ -57,7 +95,8 @@ export namespace grid {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.revealFogAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function revealFogAtCell(...args: CellCoordinates): void;
 
@@ -67,7 +106,8 @@ export namespace grid {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param rangeCells - Radius in cells to redraw.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.redrawAroundCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function redrawAroundCell(...args: [...CellCoordinates, rangeCells: number]): void;
 
@@ -78,7 +118,8 @@ export namespace grid {
    * @param centerCellY - Circle center cell row.
    * @param radiusCells - Circle radius in cells.
    * @param callback - Invoked for each cell with `(cellX, cellY)`.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.forEachCellInCircle`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) => void): void;
 
@@ -90,13 +131,15 @@ export namespace grid {
    * @param widthCells - Rectangle width in cells.
    * @param heightCells - Rectangle height in cells.
    * @param callback - Invoked for each cell with `(cellX, cellY)`.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.forEachCellInRectangle`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function forEachCellInRectangle(...args: [...CellCoordinates, widthCells: number, heightCells: number, callback: (...args: CellCoordinates) => void]): void;
 
   /**
    * @deprecated Use {@link forEachCellInRectangle} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.forEachCellInRectangle`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function forEachCellInRect(...args: [...CellCoordinates, widthCells: number, heightCells: number, callback: (...args: CellCoordinates) => void]): void;
 
@@ -117,7 +160,8 @@ export namespace grid {
      * @param cellY - Grid row of the target cell.
      * @param elementTypeOrId - Numeric element type or string id.
      * @param options - Optional create flags.
-     * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `elements.createAtCell`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
      */
     createAtCell(...args: [...CellCoordinates, elementTypeOrId: elements.ElementRef, options?: elements.ElementCreateOptions]): void;
 
@@ -128,7 +172,8 @@ export namespace grid {
      * @param cellY - Grid row of the target cell.
      * @param elementTypeOrId - Numeric element type or string id.
      * @param options - Optional create flags.
-     * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `elements.replaceAtCell`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
      */
     replaceAtCell(...args: [...CellCoordinates, elementTypeOrId: elements.ElementRef, options?: elements.ElementCreateOptions]): void;
 
@@ -138,7 +183,8 @@ export namespace grid {
      * @param cellX - Grid column of the target cell.
      * @param cellY - Grid row of the target cell.
      * @param options - Optional removal flags.
-     * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `elements.removeAtCell`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
      */
     removeAtCell(...args: [...CellCoordinates, options?: elements.ElementRemovalOptions]): void;
   }
@@ -152,7 +198,8 @@ export namespace grid {
      * @param cellY - Grid row of the target cell.
      * @param terrainTypeOrId - Numeric terrain type or string id.
      * @param options - Optional mutation flags.
-     * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.createAtCell`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
      */
     createAtCell(...args: [...CellCoordinates, terrainTypeOrId: terrains.TerrainRef, options?: terrains.TerrainMutationOptions]): void;
 
@@ -163,7 +210,8 @@ export namespace grid {
      * @param cellY - Grid row of the target cell.
      * @param terrainTypeOrId - Numeric terrain type or string id.
      * @param options - Optional mutation flags.
-     * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.replaceAtCell`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
      */
     replaceAtCell(...args: [...CellCoordinates, terrainTypeOrId: terrains.TerrainRef, options?: terrains.TerrainMutationOptions]): void;
 
@@ -173,7 +221,8 @@ export namespace grid {
      * @param cellX - Grid column of the target cell.
      * @param cellY - Grid row of the target cell.
      * @param options - Optional mutation flags.
-     * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.removeAtCell`
+     *
+     * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
      */
     removeAtCell(...args: [...CellCoordinates, options?: terrains.TerrainMutationOptions]): void;
   }

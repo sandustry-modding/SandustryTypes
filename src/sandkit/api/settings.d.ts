@@ -18,6 +18,13 @@ export namespace settings {
   /**
    * Subscribe to settings changes. Return an unsubscribe function.
    * @param callback - Called with the full settings map after a change.
+   *
+   * @example
+   * ```ts
+   * const unsubscribe = api.settings.onChange((values) => {
+   *   applySettings(values);
+   * });
+   * ```
    */
   export function onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void;
 

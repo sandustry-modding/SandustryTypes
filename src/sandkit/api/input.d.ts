@@ -12,6 +12,21 @@ export namespace input {
    * @param defaultKeys - Default key codes (for example `"Control+KeyC"`).
    * @param definition - Display metadata and press/release handlers.
    * @returns The registered binding id.
+   *
+   * @example
+   * ```ts
+   * api.input.registerBinding("ExampleToggle", ["KeyO"], {
+   *   displayName: "Toggle example",
+   *   displayNameKey: "mods|example|toggle",
+   *   subsection: {
+   *     title: "Example controls",
+   *     titleKey: "mods|example|controlsTitle",
+   *     description: "Bindings installed by the example mod.",
+   *     descriptionKey: "mods|example|controlsDescription",
+   *   },
+   *   handlers: { down: toggleExample },
+   * });
+   * ```
    */
   export function registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputBindingDefinition): BindingId;
 

@@ -23,6 +23,11 @@ export declare namespace action {
   /**
    * Store custom data on the active action handler.
    * @param data - Serializable payload attached to the active action.
+   *
+   * @example
+   * ```ts
+   * api.action.setCustomData({ mode: "example" });
+   * ```
    */
   export function setCustomData<Input>(data: Input): void;
 }

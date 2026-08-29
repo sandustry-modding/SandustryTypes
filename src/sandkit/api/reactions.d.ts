@@ -11,6 +11,17 @@ export namespace reactions {
   /**
    * Register a contact reaction between elements.
    * @param definition - Contact recipe inputs, outputs, and orientation.
+   *
+   * @example
+   * ```ts
+   * api.reactions.registerContact({
+   *   inputA: "water",
+   *   inputB: "examplePowder",
+   *   outputA: "steam",
+   *   outputB: null,
+   *   orientation: "any",
+   * });
+   * ```
    */
   export function registerContact(definition: ContactRecipeDefinitionV1): void;
 

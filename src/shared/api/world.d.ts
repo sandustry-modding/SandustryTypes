@@ -11,33 +11,33 @@ import { grid as gridNs } from "./grid";
  */
 export namespace world {
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.getCellIdAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getCellIdAtCell = gridNs.getCellIdAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.isCellEmptyAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import isCellEmptyAtCell = gridNs.isCellEmptyAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.isTerrainAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import isTerrainAtCell = gridNs.isTerrainAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.reportActivityAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import reportActivityAtCell = gridNs.reportActivityAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.excavateAtCell`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import excavateAtCell = gridNs.excavateAtCell;
   /**
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.getDimensions`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getDimensions = gridNs.getDimensions;
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.ExcavateOptions` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import ExcavateOptions = gridNs.ExcavateOptions;
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.CellId` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import CellId = gridNs.CellId;
-  /** @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.GridDimensions` */
+  /** @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading) */
   export import GridDimensions = gridNs.GridDimensions;
 }

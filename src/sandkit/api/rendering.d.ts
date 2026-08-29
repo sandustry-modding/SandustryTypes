@@ -19,16 +19,39 @@ export namespace rendering {
    *
    * @param worldX - World x position in pixels.
    * @param worldY - World y position in pixels.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.rendering.getDrawPositionAtWorld`
+   *
+   * @example
+   * ```ts
+   * api.events.on("frame:render", () => {
+   *   const drawPos = api.rendering.getDrawPositionAtWorld(worldX, worldY);
+   *   drawMarker(drawPos.x, drawPos.y);
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDrawPositionAtWorld(worldX: number, worldY: number): Vector2;
-  /** Return cell size and snap grid metrics. */
+  /**
+   * Return cell size and snap grid metrics.
+   *
+   * @example
+   * ```ts
+   * const { cellSize, snapGridCellSize } = api.rendering.getGridMetrics();
+   * ```
+   */
   export function getGridMetrics(): { cellSize: number; snapGridCellSize: number; };
   /** Return overlay viewport width and height in pixels. */
   export function getOverlayViewportSize(): { width: number; height: number; };
   /**
    * Run a callback with the overlay canvas context.
    * @param callback - Receives the overlay 2D context; return value is passed through.
+   *
+   * @example
+   * ```ts
+   * api.rendering.withOverlayContext((context) => {
+   *   context.fillRect(0, 0, 16, 16);
+   * });
+   * ```
    */
   export function withOverlayContext<T>(callback: (context: CanvasRenderingContext2D) => T): T;
 }

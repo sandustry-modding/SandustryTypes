@@ -10,7 +10,15 @@ export namespace i18n {
    *
    * @param key - Translation key.
    * @param params - Placeholder values for the key template.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.t`
+   *
+   * @example
+   * ```ts
+   * const message = api.i18n.t("mods|example|count", {
+   *   count: 3,
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function t(key: string, params?: Record<string, string | number>): string;
 
@@ -19,14 +27,22 @@ export namespace i18n {
    *
    * @param locale - Locale code (e.g. `en`).
    * @param translations - Map of keys to translated strings.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.register`
+   *
+   * @example
+   * ```ts
+   * api.i18n.register("en", {
+   *   "mods|example|title": "Example",
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function register(locale: Locale, translations: Record<string, string>): void;
 
   /**
    * Returns the active locale code.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getLocale`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getLocale(): Locale;
 
@@ -35,7 +51,8 @@ export namespace i18n {
    *
    * @param key - Translation key.
    * @param locale - Optional locale; defaults to the active locale.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.hasTranslation`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function hasTranslation(key: string, locale?: Locale): boolean;
 
@@ -43,21 +60,22 @@ export namespace i18n {
    * Sets the active locale.
    *
    * @param locale - Locale code to activate.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.setLocale`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setLocale(locale: Locale): Promise<void>;
 
   /**
    * Returns metadata for all known languages.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getLanguages`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getLanguages(): { code: Locale; nativeName: string; englishName: string; enabled: boolean; }[];
 
   /**
    * Returns locale codes that have registered translations.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getAvailableLocales`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getAvailableLocales(): Locale[];
 
@@ -66,7 +84,15 @@ export namespace i18n {
    *
    * @param value - Number to format.
    * @param options - Intl-style number format options.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.formatNumber`
+   *
+   * @example
+   * ```ts
+   * const formatted = api.i18n.formatNumber(1234.5, {
+   *   maximumFractionDigits: 1,
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function formatNumber(value: number, options?: I18nNumberFormatOptions): string;
 
@@ -74,13 +100,15 @@ export namespace i18n {
    * Joins key parts into a single translation key.
    *
    * @param parts - Key segments joined with `.`.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.joinKey`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function joinKey(...parts: string[]): string;
 
   /**
    * @deprecated Use {@link joinKey} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.i18n.joinKey`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function key(...parts: string[]): string;
 
@@ -88,7 +116,16 @@ export namespace i18n {
    * Returns the display name from a definition with nameKey or name.
    *
    * @param definition - Object with `nameKey` or `name`.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getName`
+   *
+   * @example
+   * ```ts
+   * const name = api.i18n.getName({
+   *   name: "Example Machine",
+   *   nameKey: "structures|exampleMachine|name",
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getName(definition: { nameKey?: string; name?: string; }): string;
 
@@ -96,7 +133,8 @@ export namespace i18n {
    * Returns the description from a definition with descriptionKey or description.
    *
    * @param definition - Object with `descriptionKey` or `description`.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getDescription`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDescription(definition: { descriptionKey?: string; description?: string; }): string;
 
@@ -105,13 +143,15 @@ export namespace i18n {
    *
    * @param key - Translation key.
    * @param fallback - Text used when no translation is registered.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.createTranslatable`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function createTranslatable(key: string, fallback: string): { __translatable: true; key: string; fallback: string; };
 
   /**
    * @deprecated Use {@link createTranslatable} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.i18n.createTranslatable`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function translatable(key: string, fallback: string): { __translatable: true; key: string; fallback: string; };
 
@@ -120,7 +160,8 @@ export namespace i18n {
    *
    * @param key - Global helper key.
    * @param value - Static string or function that returns the current value.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.setGlobal`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setGlobal(key: string, value: string | (() => string)): void;
 
@@ -128,7 +169,8 @@ export namespace i18n {
    * Returns a global translation helper value.
    *
    * @param key - Global helper key.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getGlobal`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getGlobal(key: string): string | undefined;
 
@@ -136,20 +178,22 @@ export namespace i18n {
    * Removes a global translation helper value.
    *
    * @param key - Global helper key.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.removeGlobal`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function removeGlobal(key: string): void;
 
   /**
    * @deprecated Use {@link removeGlobal} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.i18n.removeGlobal`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function clearGlobal(key: string): void;
 
   /**
    * Returns all global translation helper values.
    *
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getGlobals`
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getGlobals(): Record<string, string>;
 
@@ -157,7 +201,8 @@ export namespace i18n {
    * Formats a key code for display in UI.
    *
    * @param keyCode - Keyboard key code or binding name.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.formatKeyForDisplay`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function formatKeyForDisplay(keyCode: string): string;
 

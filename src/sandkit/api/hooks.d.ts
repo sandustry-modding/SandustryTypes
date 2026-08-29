@@ -11,7 +11,169 @@ export namespace hooks {
    * @param hookId - Registered hook identifier.
    * @param callback - Called with hook arguments and context; may cancel the hook.
    * @param options - Optional priority and filter options.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.hooks.intercept`
+   *
+   * @example item:use
+   * ```ts
+   * const unsubscribe = api.hooks.intercept(
+   *   "item:use",
+   *   (args, context) => {
+   *     args.prepared.energyCost = Number(args.baseline.energyCost) * 2;
+   *
+   *     if (args.prepared.energyCost > 1000) {
+   *       context.cancel();
+   *     }
+   *   },
+   *   { itemIds: ["laser"], priority: 0 },
+   * );
+   * ```
+   *
+   * @example teleport:effect:create
+   * ```ts
+   * api.hooks.intercept("teleport:effect:create", (args, context) => {
+   *   context.cancel();
+   * });
+   * ```
+   *
+   * @example action:start
+   * ```ts
+   * api.hooks.intercept("action:start", (args, context) => {
+   *   if (args.action?.id === "example") context.cancel();
+   * });
+   * ```
+   *
+   * @example input:keyDown
+   * ```ts
+   * api.hooks.intercept("input:keyDown", (args, context) => {
+   *   if (args.code === "KeyK") context.cancel();
+   * });
+   * ```
+   *
+   * @example input:keyUp
+   * ```ts
+   * api.hooks.intercept("input:keyUp", (args, context) => {
+   *   if (args.code === "KeyK") context.cancel();
+   * });
+   * ```
+   *
+   * @example placePoints:suppress
+   * ```ts
+   * api.hooks.intercept("placePoints:suppress", (args, context) => {
+   *   if (args.type === "exampleStructure") context.cancel();
+   * });
+   * ```
+   *
+   * @example placePoints:directionalArrows:suppress
+   * ```ts
+   * api.hooks.intercept(
+   *   "placePoints:directionalArrows:suppress",
+   *   (args, context) => {
+   *     if (args.type === "exampleStructure") context.cancel();
+   *   },
+   * );
+   * ```
+   *
+   * @example entity:update
+   * ```ts
+   * const unsubscribe = api.hooks.intercept(
+   *   "entity:update",
+   *   (args) => {
+   *     if (args.phase !== "normal") return;
+   *     args.entity.targetX = args.playerWorldX;
+   *     args.entity.targetY = args.playerWorldY;
+   *   },
+   *   { entityTypes: ["lumling"], priority: 0 },
+   * );
+   * ```
+   *
+   * @example building:place
+   * ```ts
+   * api.hooks.intercept("building:place", (args, context) => {
+   *   if (args.structureId === "exampleStructure") context.cancel();
+   * });
+   * ```
+   *
+   * @example building:clearShape
+   * ```ts
+   * api.hooks.intercept("building:clearShape", (args, context) => {
+   *   if (args.structure.data?.protected) context.cancel();
+   * });
+   * ```
+   *
+   * @example input:scroll
+   * ```ts
+   * api.hooks.intercept("input:scroll", (args, context) => {
+   *   if (args.deltaY !== 0) context.cancel();
+   * });
+   * ```
+   *
+   * @example input:boostDown
+   * ```ts
+   * api.hooks.intercept("input:boostDown", (args, context) => {
+   *   context.cancel();
+   * });
+   * ```
+   *
+   * @example input:descendDown
+   * ```ts
+   * api.hooks.intercept("input:descendDown", (args, context) => {
+   *   context.cancel();
+   * });
+   * ```
+   *
+   * @example input:escape
+   * ```ts
+   * api.hooks.intercept("input:escape", (args, context) => {
+   *   context.cancel();
+   * });
+   * ```
+   *
+   * @example interactable:suppressHover
+   * ```ts
+   * api.hooks.intercept("interactable:suppressHover", (args, context) => {
+   *   if (args.type === "exampleStructure") context.cancel();
+   * });
+   * ```
+   *
+   * @example fire:element:ignite
+   * ```ts
+   * api.hooks.intercept("fire:element:ignite", (args, context) => {
+   *   if (args.elementType === exampleElementType) context.cancel();
+   * });
+   * ```
+   *
+   * @example projectile:fire:overStructure
+   * ```ts
+   * api.hooks.intercept(
+   *   "projectile:fire:overStructure",
+   *   (args, context) => {
+   *     if (args.projectile.type === "exampleProjectile") context.cancel();
+   *   },
+   * );
+   * ```
+   *
+   * @example projectile:hit
+   * ```ts
+   * api.hooks.intercept("projectile:hit", (args, context) => {
+   *   if (args.projectile.type === "exampleProjectile") context.cancel();
+   * });
+   * ```
+   *
+   * @example player:position:commit
+   * ```ts
+   * api.hooks.intercept("player:position:commit", (args) => {
+   *   args.velocityX *= 0.5;
+   *   args.velocityY *= 0.5;
+   * });
+   * ```
+   *
+   * @example progression:purchase
+   * ```ts
+   * api.hooks.intercept("progression:purchase", (args, context) => {
+   *   if (args.id === "exampleTech") context.cancel();
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function intercept<K extends InterceptHookId>(
     hookId: K,
@@ -25,7 +187,205 @@ export namespace hooks {
    * @param hookId - Registered hook identifier.
    * @param callback - Called with hook arguments; may mutate hook payload.
    * @param options - Optional priority and filter options.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.hooks.modify`
+   *
+   * @example excavation:prepare
+   * ```ts
+   * const unsubscribe = api.hooks.modify(
+   *   "excavation:prepare",
+   *   (args) => {
+   *     if (args.sourceId !== "implosionGun") return;
+   *
+   *     args.profileId = "example:voidGun";
+   *     args.patternDiameterCells = 21;
+   *     args.drillTierDamage = 8;
+   *   },
+   *   { priority: 0 },
+   * );
+   * ```
+   *
+   * @example locator:scan:prepare
+   * ```ts
+   * const unsubscribe = api.hooks.modify(
+   *   "locator:scan:prepare",
+   *   (args) => {
+   *     const target = findNearestTarget(args.originWorldX, args.originWorldY);
+   *     args.hasTarget = target !== null;
+   *
+   *     if (!target) {
+   *       args.noTargetToast = "No example target was found.";
+   *       args.noTargetToastKey = "mods|example|noTarget";
+   *       return;
+   *     }
+   *
+   *     args.targetCellX = target.cellX;
+   *     args.targetCellY = target.cellY;
+   *     args.outerTint[0] = 103;
+   *     args.outerTint[1] = 232;
+   *     args.outerTint[2] = 249;
+   *     args.triangulationLensOverride = true;
+   *   },
+   *   { priority: 0 },
+   * );
+   * ```
+   *
+   * @example vacuum:prepare
+   * ```ts
+   * const vacuumPattern = [
+   *   [0, 1, 0],
+   *   [1, 1, 1],
+   *   [0, 1, 0],
+   * ];
+   *
+   * const unsubscribe = api.hooks.modify(
+   *   "vacuum:prepare",
+   *   (args) => {
+   *     const target = api.input.getMousePositionAtCell();
+   *     args.targetCellX = target.x;
+   *     args.targetCellY = target.y;
+   *     args.pattern = vacuumPattern;
+   *   },
+   *   { priority: 0 },
+   * );
+   * ```
+   *
+   * @example vacuum:element:prepare
+   * ```ts
+   * const unsubscribe = api.hooks.modify(
+   *   "vacuum:element:prepare",
+   *   (args) => {
+   *     if (args.matterType !== sandkit.enums.MatterType.Liquid) return;
+   *
+   *     args.collectable = true;
+   *     args.visibleInPicker = true;
+   *   },
+   *   { priority: 0 },
+   * );
+   * ```
+   *
+   * @example player:movement:prepare
+   * ```ts
+   * api.hooks.modify("player:movement:prepare", (args) => {
+   *   args.horizontalMaxSpeed *= 1.25;
+   * });
+   * ```
+   *
+   * @example building:placementLimit:prepare
+   * ```ts
+   * api.hooks.modify("building:placementLimit:prepare", (args) => {
+   *   args.maxCount = args.maxCount === null ? 10 : args.maxCount + 10;
+   * });
+   * ```
+   *
+   * @example fluxEmanator:processing:prepare
+   * ```ts
+   * api.hooks.modify("fluxEmanator:processing:prepare", (args) => {
+   *   args.speedMultiplier *= 2;
+   * });
+   * ```
+   *
+   * @example render:pipes:prepare
+   * ```ts
+   * api.hooks.modify("render:pipes:prepare", (args) => {
+   *   args.layer = "foreground";
+   * });
+   * ```
+   *
+   * @example structures:moved:prepare
+   * ```ts
+   * api.hooks.modify("structures:moved:prepare", (args) => {
+   *   prepareMovedStructures(args.moved, args.failedToPlace);
+   * });
+   * ```
+   *
+   * @example structures:removed:prepare
+   * ```ts
+   * api.hooks.modify("structures:removed:prepare", (args) => {
+   *   prepareRemovedStructures(args.removed, args.byMove);
+   * });
+   * ```
+   *
+   * @example weapon:reload:prepare
+   * ```ts
+   * api.hooks.modify("weapon:reload:prepare", (args) => {
+   *   args.reloadMs *= 0.8;
+   * }, { weaponIds: ["exampleWeapon"] });
+   * ```
+   *
+   * @example projectile:travel:prepare
+   * ```ts
+   * api.hooks.modify("projectile:travel:prepare", (args) => {
+   *   args.collidesWithStructures = false;
+   * }, { projectileTypes: ["exampleProjectile"] });
+   * ```
+   *
+   * @example projectile:impact:prepare
+   * ```ts
+   * api.hooks.modify("projectile:impact:prepare", (args) => {
+   *   args.radiusCells = 8;
+   * }, { projectileTypes: ["exampleProjectile"] });
+   * ```
+   *
+   * @example player:collision:prepare
+   * ```ts
+   * api.hooks.modify("player:collision:prepare", (args) => {
+   *   args.maxStepCells = 4;
+   * });
+   * ```
+   *
+   * @example trigger:schedule:prepare
+   * ```ts
+   * api.hooks.modify("trigger:schedule:prepare", (args) => {
+   *   args.intervalMs *= 0.5;
+   * }, { triggerIds: ["pump"] });
+   * ```
+   *
+   * @example progression:cost:prepare
+   * ```ts
+   * api.hooks.modify("progression:cost:prepare", (args) => {
+   *   if (args.currencyId === "gold") args.amount *= 0.9;
+   * });
+   * ```
+   *
+   * @example resource:collection:prepare
+   * ```ts
+   * api.hooks.modify("resource:collection:prepare", (args) => {
+   *   args.amount *= 2;
+   * }, { resourceIds: ["fluxite"] });
+   * ```
+   *
+   * @example resource:delivery:prepare
+   * ```ts
+   * api.hooks.modify("resource:delivery:prepare", (args) => {
+   *   args.mode = "collection";
+   * }, { resourceIds: ["fluxite"] });
+   * ```
+   *
+   * @example resource:balance:prepare
+   * ```ts
+   * api.hooks.modify("resource:balance:prepare", (args) => {
+   *   args.balance += api.storage.get("example", "gold") ?? 0;
+   * }, { resourceIds: ["gold"] });
+   * ```
+   *
+   * @example gold:removal:prepare
+   * ```ts
+   * api.hooks.modify("gold:removal:prepare", (args) => {
+   *   const banked = api.storage.get("example", "gold") ?? 0;
+   *   args.shortfall = Math.max(0, args.shortfall - banked);
+   * });
+   * ```
+   *
+   * @example gold:removal:settle
+   * ```ts
+   * api.hooks.modify("gold:removal:settle", (args) => {
+   *   const banked = api.storage.get("example", "gold") ?? 0;
+   *   const covered = Math.min(banked, args.shortfall);
+   *   api.storage.set("example", "gold", banked - covered);
+   *   args.shortfall -= covered;
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function modify<K extends ModifyHookId>(
     hookId: K,

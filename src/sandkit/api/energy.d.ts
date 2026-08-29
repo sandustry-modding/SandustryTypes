@@ -39,6 +39,14 @@ export namespace energy {
    * Returns energy network nodes connected at the cell.
    * @param cellX - Grid cell X coordinate.
    * @param cellY - Grid cell Y coordinate.
+   *
+   * @example
+   * ```ts
+   * const network = api.energy.getNetworkAtCell(cellX, cellY);
+   * for (const entry of network) {
+   *   useNetworkCell(entry.cellX, entry.cellY, entry.type);
+   * }
+   * ```
    */
   export function getNetworkAtCell(...args: CellCoordinates): {
     x: number;

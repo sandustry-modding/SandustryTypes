@@ -18,6 +18,11 @@ export namespace camera {
    * Release scripted focus and return control to the player.
    * @param options - Optional transition duration in milliseconds.
    * @returns True when focus was released.
+   *
+   * @example
+   * ```ts
+   * const released = api.camera.releaseFocus({ durationMs: 250 });
+   * ```
    */
   export function releaseFocus(options?: { durationMs?: number; }): boolean;
 }

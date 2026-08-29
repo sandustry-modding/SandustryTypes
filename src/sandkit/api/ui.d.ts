@@ -10,8 +10,112 @@ import type { ComponentId as ComponentIdEnum } from "../enums/index";
 import { shared } from "../../shared";
 import type { LooseString } from "../../shared/nominal";
 
+/**
+ * @example api.ui.components.ActionSlot
+ * ```ts
+ * const slot = sandkit.react.createElement(
+ *   api.ui.components.ActionSlot,
+ *   { source, slotIndex: 0, keyLabel: "1" },
+ * );
+ * ```
+ *
+ * @example api.ui.components.Button
+ * ```ts
+ * const button = sandkit.react.createElement(
+ *   api.ui.components.Button,
+ *   { onClick: openPanel },
+ *   "Open",
+ * );
+ * ```
+ *
+ * @example api.ui.components.Panel
+ * ```ts
+ * const panel = sandkit.react.createElement(
+ *   api.ui.components.Panel,
+ *   { title: "Options" },
+ *   "Panel content",
+ * );
+ * ```
+ *
+ * @example api.ui.hotbar.createBankSource
+ * ```ts
+ * const source = api.ui.hotbar.createBankSource({
+ *   bankOffset: 1,
+ *   minimumBankCount: 2,
+ * });
+ * ```
+ *
+ * @example api.ui.hotbar.useHotbar
+ * ```ts
+ * const hotbar = api.ui.hotbar.useHotbar();
+ * console.log(
+ *   hotbar.bankCount,
+ *   hotbar.activeBankIndex,
+ *   hotbar.activeSlotIndex,
+ * );
+ * ```
+ *
+ * @example api.ui.overrides.register
+ * ```ts
+ * const overrideHandle = api.ui.overrides.register(
+ *   "resources",
+ *   (Original) => sandkit.react.createElement(
+ *     sandkit.react.Fragment,
+ *     null,
+ *     sandkit.react.createElement(Original),
+ *     sandkit.react.createElement(ResourceAddon),
+ *   ),
+ * );
+ * ```
+ *
+ * @example api.ui.regions.mount
+ * ```ts
+ * const mountHandle = api.ui.regions.mount(
+ *   "hotbar",
+ *   "extra-actions",
+ *   {
+ *     placement: "docked",
+ *     order: 0,
+ *     render: () => sandkit.react.createElement(ExtraActions),
+ *   },
+ * );
+ * ```
+ *
+ * @example api.ui.regions.mountHandle.update
+ * ```ts
+ * mountHandle.update({
+ *   order: 10,
+ *   render: () => sandkit.react.createElement(UpdatedActions),
+ * });
+ * ```
+ *
+ * @example api.ui.select
+ * ```ts
+ * const selected = await api.ui.select(
+ *   [
+ *     { label: "Sand", value: "sand" },
+ *     { label: "Fluxite", value: "fluxite" },
+ *   ],
+ *   { title: "Select element", defaultValue: "sand", buttonLabel: "Choose" },
+ * );
+ * ```
+ *
+ * @example api.ui.useGameEvent
+ * ```ts
+ * api.ui.useGameEvent("resource:collected", (payload) => {
+ *   console.log(payload.resourceId, payload.amount);
+ * });
+ * ```
+ */
 export namespace ui {
-  /** Show a toast message. */
+  /**
+   * Show a toast message.
+   *
+   * @example Main entry
+   * ```ts
+   * api.ui.toast({ key: "mods|example|saved" });
+   * ```
+   */
   export import toast = shared.api.ui.toast;
   /** Localized text value for UI strings. */
   export import LocalizedText = shared.api.ui.LocalizedText;
@@ -39,6 +143,14 @@ export namespace ui {
    * @param message - Dialog body text.
    * @param title - Optional dialog title.
    * @returns Promise that resolves when the user dismisses the dialog.
+   *
+   * @example
+   * ```ts
+   * await api.ui.alert(
+   *   { key: "mods|example|details" },
+   *   { key: "mods|example|title" },
+   * );
+   * ```
    */
   export function alert(message: LocalizedText, title?: LocalizedText): Promise<void>;
 
@@ -47,6 +159,13 @@ export namespace ui {
    * @param message - Dialog body text.
    * @param title - Optional dialog title.
    * @returns Promise that resolves with true when confirmed, or false when cancelled.
+   *
+   * @example
+   * ```ts
+   * const confirmed = await api.ui.confirm(
+   *   { key: "mods|example|confirm" },
+   * );
+   * ```
    */
   export function confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>;
 
@@ -58,6 +177,14 @@ export namespace ui {
    * @param title - Optional dialog title.
    * @param allowCopy - When true, allow copying the result from the dialog.
    * @returns Promise that resolves with entered text, or null when cancelled.
+   *
+   * @example
+   * ```ts
+   * const value = await api.ui.prompt(
+   *   { key: "mods|example|enterValue" },
+   *   "",
+   * );
+   * ```
    */
   export function prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>;
 
@@ -99,12 +226,30 @@ export namespace ui {
      * React hook for a focusable UI element in a scope.
      * @param options - Focus registration and neighbor wiring.
      * @returns Ref, focus state, and a focus helper.
+     *
+     * @example
+     * ```ts
+     * const focusable = api.ui.navigation.useFocusable({
+     *   id: "example-button",
+     *   scope: "example-scope",
+     *   onActivate: openExample,
+     * });
+     * ```
      */
     export function useFocusable<T extends HTMLElement = HTMLDivElement>(options: FocusOptions): Focusable<T>;
 
     /**
      * React hook to register a focus scope with back handling.
      * @param options - Scope id, priority, default focus, and back handler.
+     *
+     * @example
+     * ```ts
+     * api.ui.navigation.useFocusScope({
+     *   id: "example-scope",
+     *   active: true,
+     *   priority: 10,
+     * });
+     * ```
      */
     export function useFocusScope(options: { readonly id: string; readonly active: boolean; readonly priority?: number; readonly defaultId?: string; readonly onBack?: (() => boolean | void); }): void;
 

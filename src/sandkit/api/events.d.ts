@@ -10,7 +10,143 @@ export namespace events {
    *
    * @param eventId - Registered event name.
    * @param callback - Called when the event is emitted.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.events.on`
+   *
+   * @example item:used
+   * ```ts
+   * const unsubscribe = api.events.on("item:used", (payload) => {
+   *   if (payload.itemId !== "laser") return;
+   *
+   *   spawnSparklesAtCell(payload.cellX, payload.cellY);
+   * });
+   * ```
+   *
+   * @example frame:render
+   * ```ts
+   * api.events.on("frame:render", () => {
+   *   drawOverlay();
+   * });
+   * ```
+   *
+   * @example scene:game:started
+   * ```ts
+   * api.events.on("scene:game:started", () => {
+   *   initializeGameScene();
+   * });
+   * ```
+   *
+   * @example earlyAccess:completed
+   * ```ts
+   * api.events.on("earlyAccess:completed", (payload) => {
+   *   onEarlyAccessCompleted(payload);
+   * });
+   * ```
+   *
+   * @example terrain:destroyed
+   * ```ts
+   * api.events.on("terrain:destroyed", (payload) => {
+   *   onTerrainDestroyed(payload.cellX, payload.cellY, payload.cellType);
+   * });
+   * ```
+   *
+   * @example fog:cellRevealed
+   * ```ts
+   * api.events.on("fog:cellRevealed", (payload) => {
+   *   onFogCellRevealed(payload.cellX, payload.cellY);
+   * });
+   * ```
+   *
+   * @example upgrade:levelSelected
+   * ```ts
+   * api.events.on("upgrade:levelSelected", (payload) => {
+   *   onLevelSelected(payload.itemId, payload.upgradeId, payload.level);
+   * });
+   * ```
+   *
+   * @example building:placed
+   * ```ts
+   * api.events.on("building:placed", (payload) => {
+   *   onBuildingPlaced(payload.structure, payload.x, payload.y);
+   * });
+   * ```
+   *
+   * @example building:removed
+   * ```ts
+   * api.events.on("building:removed", (payload) => {
+   *   onBuildingRemoved(payload.structureId, payload.x, payload.y);
+   * });
+   * ```
+   *
+   * @example structures:placed
+   * ```ts
+   * api.events.on("structures:placed", (payload) => {
+   *   onStructuresPlaced(payload.structures);
+   * });
+   * ```
+   *
+   * @example structures:removed
+   * ```ts
+   * api.events.on("structures:removed", (payload) => {
+   *   onStructuresRemoved(payload.removed, payload.byMove);
+   * });
+   * ```
+   *
+   * @example structures:moved
+   * ```ts
+   * api.events.on("structures:moved", (payload) => {
+   *   onStructuresMoved(payload.moved, payload.failedToPlace);
+   * });
+   * ```
+   *
+   * @example game:ready
+   * ```ts
+   * api.events.on("game:ready", () => {
+   *   initializeExample();
+   * });
+   * ```
+   *
+   * @example game:started
+   * ```ts
+   * api.events.on("game:started", () => {
+   *   startExample();
+   * });
+   * ```
+   *
+   * @example tutorial:stepChanged
+   * ```ts
+   * api.events.on("tutorial:stepChanged", (payload) => {
+   *   onTutorialStepChanged(payload.step);
+   * });
+   * ```
+   *
+   * @example tutorial:completed
+   * ```ts
+   * api.events.on("tutorial:completed", (payload) => {
+   *   onTutorialCompleted(payload.skipped);
+   * });
+   * ```
+   *
+   * @example tech:unlocked
+   * ```ts
+   * api.events.on("tech:unlocked", (payload) => {
+   *   onTechUnlocked(payload.techId, payload.suppressMusic);
+   * });
+   * ```
+   *
+   * @example worldItem:pickedUp
+   * ```ts
+   * api.events.on("worldItem:pickedUp", (payload) => {
+   *   onPickup(payload.worldItemId, payload.type);
+   * });
+   * ```
+   *
+   * @example resource:collected
+   * ```ts
+   * api.events.on("resource:collected", (payload) => {
+   *   onResourceCollected(payload.resourceId, payload.amount);
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function on<K extends EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void;
 
@@ -19,7 +155,8 @@ export namespace events {
    *
    * @param eventId - Registered event name.
    * @param payload - Serializable payload passed to listeners.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.events.emit`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function emit<K extends EventId>(eventId: K, payload: EventPayload<K>): void;
 

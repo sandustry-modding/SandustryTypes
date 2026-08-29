@@ -18,6 +18,11 @@ export namespace resources {
    * Update stored energy by amount with optional UI deferral.
    * @param amount - Energy delta (positive or negative).
    * @param options - When `deferUi` is true, skip immediate UI refresh.
+   *
+   * @example Official `api.resources.adjustEnergy` (typed deprecated alias: updateEnergy)
+   * ```ts
+   * api.resources.adjustEnergy(100, { deferUi: true });
+   * ```
    */
   export function updateEnergy(amount: number, options?: { deferUi?: boolean; }): void;
 }

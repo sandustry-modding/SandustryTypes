@@ -18,7 +18,18 @@ import type { SandkitEnums } from "./enums";
 import type { SandkitReact } from "./react";
 import type { SandkitState } from "./engine/state";
 
-/** Shape of the host-injected `sandkit` free variable in mod `main.js`. */
+/**
+ * Shape of the host-injected `sandkit` free variable in mod `main.js`.
+ *
+ * @example Accessing the API
+ * ```ts
+ * const api = sandkit.api; // Stable API
+ *
+ * // Unstable engine escape hatch
+ * const engineApi = sandkit.engine.api;
+ * const engineState = sandkit.engine.state;
+ * ```
+ */
 export type Sandkit = {
   /** Public mod API. See {@link sandkit.api}. */
   api: SandkitApi;

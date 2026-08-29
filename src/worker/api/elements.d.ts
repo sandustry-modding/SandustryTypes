@@ -10,7 +10,7 @@ import { shared } from "../../shared";
  * @internal Worker extension; not interchangeable with main-thread
  * `sandkit.api.elements`.
  *
- * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements`
+ * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
  */
 export namespace elements {
   /** Numeric id for a registered element type. */
@@ -34,7 +34,8 @@ export namespace elements {
   export import getTypeById = shared.api.elements.getTypeById;
   /**
    * @deprecated Use {@link getTypeById} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.elements.getTypeById`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getTypeFromId = shared.api.elements.getTypeFromId;
   /** Returns the definition for an element type. */
@@ -65,7 +66,15 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param elementTypeOrId - Numeric type or string id.
    * @param options - Optional spawn overrides.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.createAtCell`
+   *
+   * @example Worker entry
+   * ```ts
+   * api.elements.createAtCell(cellX, cellY, "water", {
+   *   durationTicks: 60,
+   * });
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function createAtCell(
     ...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]
@@ -78,7 +87,8 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param elementTypeOrId - Numeric type or string id.
    * @param options - Optional spawn overrides.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.replaceAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function replaceAtCell(
     ...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]
@@ -90,7 +100,8 @@ export namespace elements {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param options - Optional removal flags.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.removeAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function removeAtCell(
     ...args: [...CellCoordinates, options?: ElementRemovalOptions]
@@ -104,7 +115,8 @@ export namespace elements {
    * @param toCellX - Destination cell column.
    * @param toCellY - Destination cell row.
    * @returns True when the move succeeded.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.moveBetweenCells`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function moveBetweenCells(
     fromCellX: number,
@@ -120,7 +132,8 @@ export namespace elements {
    * @param fromCellY - Source cell row.
    * @param toCellX - Destination cell column.
    * @param toCellY - Destination cell row.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.teleportBetweenCells`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function teleportBetweenCells(
     fromCellX: number,
@@ -137,7 +150,8 @@ export namespace elements {
    * @param secondCellX - Second cell column.
    * @param secondCellY - Second cell row.
    * @returns True when the swap succeeded.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.swapBetweenCells`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function swapBetweenCells(
     firstCellX: number,
@@ -148,7 +162,8 @@ export namespace elements {
 
   /**
    * @deprecated Use {@link swapBetweenCells} instead.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.swapBetweenCells`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function swapCells(
     firstCellX: number,
@@ -161,13 +176,15 @@ export namespace elements {
    * Mark an element index as movement-blocked for this tick.
    *
    * @param elementIndex - Element index from {@link getInfoAtCell}.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.elements.markMovementBlockedByIndex`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function markMovementBlockedByIndex(elementIndex: number): void;
 
   /**
    * @deprecated Use {@link markMovementBlockedByIndex} instead.
-   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.elements.markMovementBlockedByIndex`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function markMovementBlockedByElementIndex(elementIndex: number): void;
 
@@ -178,7 +195,8 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param velocity - New velocity vector.
    * @returns True when velocity was set.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.setVelocityAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setVelocityAtCell(...args: [...CellCoordinates, velocity: Vector2]): boolean;
 
@@ -190,7 +208,8 @@ export namespace elements {
    * @param velocity - Velocity delta to add.
    * @param maxSpeedCellsPerSecond - Optional speed cap after the addition.
    * @returns True when velocity was updated.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.addParticleVelocityAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function addParticleVelocityAtCell(
     ...args: [...CellCoordinates, velocity: Vector2, maxSpeedCellsPerSecond?: number]
@@ -203,7 +222,8 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param velocity - Initial particle velocity.
    * @returns True when conversion succeeded.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.convertToParticleAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function convertToParticleAtCell(...args: [...CellCoordinates, velocity: Vector2]): boolean;
 
@@ -213,7 +233,8 @@ export namespace elements {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @returns True when conversion succeeded.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.convertFromParticleAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function convertFromParticleAtCell(...args: CellCoordinates): boolean;
 
@@ -225,7 +246,8 @@ export namespace elements {
    * @param fieldNumber - Data field index (1–4).
    * @param value - New field value.
    * @returns True when the field was set.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.setDataFieldAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setDataFieldAtCell(
     ...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4, value: number]
@@ -236,7 +258,8 @@ export namespace elements {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.refreshColorAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function refreshColorAtCell(...args: CellCoordinates): void;
 
@@ -246,7 +269,8 @@ export namespace elements {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param physicsState - Physics skip flags for the element.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.setPhysicsAtCell`
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setPhysicsAtCell(...args: [...CellCoordinates, physicsState: number]): void;
 
@@ -258,7 +282,18 @@ export namespace elements {
    * @param durationTicks - Duration in simulation ticks.
    * @param options - When `updateMax` is true, also update max duration.
    * @returns True when duration was updated.
-   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.elements.setDurationAtCell`
+   *
+   * @example Worker entry
+   * ```ts
+   * const updated = api.elements.setDurationAtCell(
+   *   cellX,
+   *   cellY,
+   *   120,
+   *   { updateMax: true },
+   * );
+   * ```
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setDurationAtCell(
     ...args: [...CellCoordinates, durationTicks: number, options?: { updateMax?: boolean; }]
