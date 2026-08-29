@@ -6,7 +6,7 @@ Physical behaviour category for an element.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements`
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 

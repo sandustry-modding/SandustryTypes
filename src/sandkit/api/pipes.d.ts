@@ -5,7 +5,7 @@ import type { CellCoordinates } from "../../shared/player";
  *
  * Available as `sandkit.api.pipes`.
  *
- * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipes`
+ * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes`
  */
 export namespace pipes {
   /**
@@ -13,7 +13,7 @@ export namespace pipes {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipes.isAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.isAtCell`
    */
   export function isAtCell(...args: CellCoordinates): boolean;
 
@@ -22,7 +22,7 @@ export namespace pipes {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipes.isEnabledAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.isEnabledAtCell`
    */
   export function isEnabledAtCell(...args: CellCoordinates): boolean;
 
@@ -31,7 +31,7 @@ export namespace pipes {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipes.getConnectedVentsAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.getConnectedVentsAtCell`
    */
   export function getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[];
 
@@ -41,7 +41,7 @@ export namespace pipes {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @param enabled - Desired enabled state.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipes.setEnabledAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.setEnabledAtCell`
    */
   export function setEnabledAtCell(...args: [...CellCoordinates, enabled: boolean]): void;
 

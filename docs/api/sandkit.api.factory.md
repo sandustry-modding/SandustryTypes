@@ -6,7 +6,7 @@ Available as `sandkit.api.factory`.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.factory`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.factory`
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
@@ -42,7 +42,7 @@ Return the current factory level.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.factory.getLevel`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.factory.getLevel`
 
 ***
 
@@ -72,7 +72,7 @@ Built-in factory process id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.factory.getProcessCount`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.factory.getProcessCount`
 
 ***
 
@@ -102,4 +102,4 @@ Built-in factory process id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.factory.getProcessRate`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.factory.getProcessRate`

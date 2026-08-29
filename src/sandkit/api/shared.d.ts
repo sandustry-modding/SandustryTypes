@@ -16,20 +16,20 @@ export namespace shared {
      *
      * @param key - Buffer name shared across threads.
      * @param config - Typed array kind and element count.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.shared.buffers.ensure`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.shared.buffers.ensure`
      */
     export function ensure(key: string, config: { type: SharedArrayType; length: number; }): SharedArray;
 
     /**
      * @deprecated Use {@link ensure} instead.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.shared.buffers.ensure`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.shared.buffers.ensure`
      */
     export function create(key: string, config: { type: SharedArrayType; length: number; }): SharedArray;
 
     /**
      * Look up a named shared buffer without creating it.
      *
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.shared.buffers.get`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.shared.buffers.get`
      */
     export import get = sharedApi.api.shared.buffers.get;
   }

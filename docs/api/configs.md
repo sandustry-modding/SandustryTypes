@@ -7,7 +7,7 @@ These are not runtime `sandkit` properties. Import from
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod file structure
+https://sandustry.com/sandkit.html#mod-files-heading Official Sandkit API — Mod file structure
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -15,7 +15,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod file structure
 
 <p class="smt-member-path"><code>configs.ConfigSchemaNumber</code></p>
 
-Defined in: configs/modinfo.d.ts:12
+Defined in: [configs/modinfo.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L12)
 
 Number setting in `modinfo.json` `configSchema`.
 
@@ -27,13 +27,13 @@ Number setting in `modinfo.json` `configSchema`.
 type: "number"
 ```
 
-Defined in: configs/modinfo.d.ts:18
+Defined in: [configs/modinfo.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L18)
 
 Discriminator. Must be `"number"`.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### default
 
@@ -41,13 +41,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 default: number
 ```
 
-Defined in: configs/modinfo.d.ts:24
+Defined in: [configs/modinfo.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L24)
 
 Value used when the player has not changed the setting.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### min?
 
@@ -55,13 +55,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional min?: number
 ```
 
-Defined in: configs/modinfo.d.ts:30
+Defined in: [configs/modinfo.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L30)
 
 Inclusive lower bound for the setting.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### max?
 
@@ -69,13 +69,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional max?: number
 ```
 
-Defined in: configs/modinfo.d.ts:36
+Defined in: [configs/modinfo.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L36)
 
 Inclusive upper bound for the setting.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### step?
 
@@ -83,13 +83,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional step?: number
 ```
 
-Defined in: configs/modinfo.d.ts:42
+Defined in: [configs/modinfo.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L42)
 
 UI step size for the number control.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### label?
 
@@ -97,13 +97,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional label?: string
 ```
 
-Defined in: configs/modinfo.d.ts:48
+Defined in: [configs/modinfo.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L48)
 
 Plain-text label shown in the settings UI.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### labelKey?
 
@@ -111,13 +111,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional labelKey?: string
 ```
 
-Defined in: configs/modinfo.d.ts:54
+Defined in: [configs/modinfo.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L54)
 
 i18n key for the settings label (preferred over [label](#label) when both exist).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### description?
 
@@ -125,13 +125,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional description?: string
 ```
 
-Defined in: configs/modinfo.d.ts:60
+Defined in: [configs/modinfo.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L60)
 
 Plain-text help text for the setting.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### descriptionKey?
 
@@ -139,13 +139,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional descriptionKey?: string
 ```
 
-Defined in: configs/modinfo.d.ts:66
+Defined in: [configs/modinfo.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L66)
 
 i18n key for the setting help text.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ***
 
@@ -153,7 +153,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 
 <p class="smt-member-path"><code>configs.ConfigSchemaBoolean</code></p>
 
-Defined in: configs/modinfo.d.ts:70
+Defined in: [configs/modinfo.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L70)
 
 Boolean setting in `modinfo.json` `configSchema`.
 
@@ -165,13 +165,13 @@ Boolean setting in `modinfo.json` `configSchema`.
 type: "boolean"
 ```
 
-Defined in: configs/modinfo.d.ts:76
+Defined in: [configs/modinfo.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L76)
 
 Discriminator. Must be `"boolean"`.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### default
 
@@ -179,13 +179,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 default: boolean
 ```
 
-Defined in: configs/modinfo.d.ts:82
+Defined in: [configs/modinfo.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L82)
 
 Value used when the player has not changed the setting.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### label?
 
@@ -193,13 +193,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional label?: string
 ```
 
-Defined in: configs/modinfo.d.ts:88
+Defined in: [configs/modinfo.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L88)
 
 Plain-text label shown in the settings UI.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### labelKey?
 
@@ -207,13 +207,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional labelKey?: string
 ```
 
-Defined in: configs/modinfo.d.ts:94
+Defined in: [configs/modinfo.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L94)
 
 i18n key for the settings label.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### description?
 
@@ -221,13 +221,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional description?: string
 ```
 
-Defined in: configs/modinfo.d.ts:100
+Defined in: [configs/modinfo.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L100)
 
 Plain-text help text for the setting.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### descriptionKey?
 
@@ -235,13 +235,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional descriptionKey?: string
 ```
 
-Defined in: configs/modinfo.d.ts:106
+Defined in: [configs/modinfo.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L106)
 
 i18n key for the setting help text.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ***
 
@@ -249,7 +249,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 
 <p class="smt-member-path"><code>configs.ConfigSchemaChoiceOption</code></p>
 
-Defined in: configs/modinfo.d.ts:110
+Defined in: [configs/modinfo.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L110)
 
 One option inside a [ConfigSchemaChoice](#configschemachoice).
 
@@ -261,13 +261,13 @@ One option inside a [ConfigSchemaChoice](#configschemachoice).
 value: string
 ```
 
-Defined in: configs/modinfo.d.ts:116
+Defined in: [configs/modinfo.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L116)
 
 Stored value written when the player picks this option.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### label?
 
@@ -275,13 +275,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional label?: string
 ```
 
-Defined in: configs/modinfo.d.ts:122
+Defined in: [configs/modinfo.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L122)
 
 Plain-text label for the option.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### labelKey?
 
@@ -289,13 +289,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional labelKey?: string
 ```
 
-Defined in: configs/modinfo.d.ts:128
+Defined in: [configs/modinfo.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L128)
 
 i18n key for the option label.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ***
 
@@ -303,7 +303,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 
 <p class="smt-member-path"><code>configs.ConfigSchemaChoice</code></p>
 
-Defined in: configs/modinfo.d.ts:132
+Defined in: [configs/modinfo.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L132)
 
 Choice setting in `modinfo.json` `configSchema`.
 
@@ -315,13 +315,13 @@ Choice setting in `modinfo.json` `configSchema`.
 type: "choice"
 ```
 
-Defined in: configs/modinfo.d.ts:138
+Defined in: [configs/modinfo.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L138)
 
 Discriminator. Must be `"choice"`.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### default
 
@@ -329,13 +329,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 default: string
 ```
 
-Defined in: configs/modinfo.d.ts:144
+Defined in: [configs/modinfo.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L144)
 
 Default option [ConfigSchemaChoiceOption.value](#value).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### label?
 
@@ -343,13 +343,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional label?: string
 ```
 
-Defined in: configs/modinfo.d.ts:150
+Defined in: [configs/modinfo.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L150)
 
 Plain-text label shown in the settings UI.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### labelKey?
 
@@ -357,13 +357,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional labelKey?: string
 ```
 
-Defined in: configs/modinfo.d.ts:156
+Defined in: [configs/modinfo.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L156)
 
 i18n key for the settings label.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### options
 
@@ -371,13 +371,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 options: readonly ConfigSchemaChoiceOption[]
 ```
 
-Defined in: configs/modinfo.d.ts:162
+Defined in: [configs/modinfo.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L162)
 
 Allowed choices for this setting.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ***
 
@@ -385,13 +385,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 
 <p class="smt-member-path"><code>configs.TextureOverride</code></p>
 
-Defined in: configs/modinfo.d.ts:182
+Defined in: [configs/modinfo.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L182)
 
 Animated (or static) texture replacement for a vanilla asset id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `textureOverrides`
 
 #### Properties
 
@@ -401,13 +401,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textur
 path: string
 ```
 
-Defined in: configs/modinfo.d.ts:188
+Defined in: [configs/modinfo.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L188)
 
 Path to the replacement image, relative to the mod root.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `textureOverrides`
 
 ##### frameWidth?
 
@@ -415,13 +415,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textur
 optional frameWidth?: number
 ```
 
-Defined in: configs/modinfo.d.ts:194
+Defined in: [configs/modinfo.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L194)
 
 Width in pixels of one animation frame.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `textureOverrides`
 
 ##### frames?
 
@@ -429,13 +429,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textur
 optional frames?: number
 ```
 
-Defined in: configs/modinfo.d.ts:200
+Defined in: [configs/modinfo.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L200)
 
 Number of frames in the spritesheet.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `textureOverrides`
 
 ##### intervalMs?
 
@@ -443,13 +443,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textur
 optional intervalMs?: number
 ```
 
-Defined in: configs/modinfo.d.ts:206
+Defined in: [configs/modinfo.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L206)
 
 Milliseconds between animation frames.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `textureOverrides`
 
 ***
 
@@ -457,13 +457,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textur
 
 <p class="smt-member-path"><code>configs.ModProvide</code></p>
 
-Defined in: configs/modinfo.d.ts:214
+Defined in: [configs/modinfo.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L214)
 
 Optional content pack exposed by this mod for other mods or the game to consume.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `provides`
 
 #### Properties
 
@@ -473,13 +473,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provid
 kind: string
 ```
 
-Defined in: configs/modinfo.d.ts:220
+Defined in: [configs/modinfo.d.ts:220](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L220)
 
 Kind of provided content (for example `"structureTextures"`).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `provides`
 
 ##### id
 
@@ -487,13 +487,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provid
 id: string
 ```
 
-Defined in: configs/modinfo.d.ts:226
+Defined in: [configs/modinfo.d.ts:226](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L226)
 
 Id of this provide entry within its kind.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `provides`
 
 ##### textureOverrides?
 
@@ -501,13 +501,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provid
 optional textureOverrides?: Record<string, string>
 ```
 
-Defined in: configs/modinfo.d.ts:232
+Defined in: [configs/modinfo.d.ts:232](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L232)
 
 Texture paths keyed by the vanilla or structure texture id they replace.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `provides`
 
 ***
 
@@ -515,7 +515,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provid
 
 <p class="smt-member-path"><code>configs.ModMapBlueprints</code></p>
 
-Defined in: configs/modinfo.d.ts:242
+Defined in: [configs/modinfo.d.ts:242](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L242)
 
 Blueprint image paths for a custom map pack.
 
@@ -523,7 +523,7 @@ Paths are relative to the mod root.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.blueprints`
 
 #### Properties
 
@@ -533,13 +533,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.bl
 optional terrain?: string
 ```
 
-Defined in: configs/modinfo.d.ts:248
+Defined in: [configs/modinfo.d.ts:248](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L248)
 
 Terrain color map image.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.blueprints`
 
 ##### lights?
 
@@ -547,13 +547,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.bl
 optional lights?: string
 ```
 
-Defined in: configs/modinfo.d.ts:254
+Defined in: [configs/modinfo.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L254)
 
 Lights layout image.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.blueprints`
 
 ##### sensors?
 
@@ -561,13 +561,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.bl
 optional sensors?: string
 ```
 
-Defined in: configs/modinfo.d.ts:260
+Defined in: [configs/modinfo.d.ts:260](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L260)
 
 Sensors layout image.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.blueprints`
 
 ##### authorization?
 
@@ -575,13 +575,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.bl
 optional authorization?: string
 ```
 
-Defined in: configs/modinfo.d.ts:266
+Defined in: [configs/modinfo.d.ts:266](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L266)
 
 Authorization zones image.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.blueprints`
 
 ##### wall?
 
@@ -589,13 +589,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.bl
 optional wall?: string
 ```
 
-Defined in: configs/modinfo.d.ts:272
+Defined in: [configs/modinfo.d.ts:272](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L272)
 
 Wall layout image.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.blueprints`
 
 ##### lightsMeta?
 
@@ -603,13 +603,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.bl
 optional lightsMeta?: string
 ```
 
-Defined in: configs/modinfo.d.ts:278
+Defined in: [configs/modinfo.d.ts:278](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L278)
 
 Lights metadata image.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.blueprints`
 
 ##### decor?
 
@@ -617,13 +617,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.bl
 optional decor?: string
 ```
 
-Defined in: configs/modinfo.d.ts:284
+Defined in: [configs/modinfo.d.ts:284](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L284)
 
 Decor layout image.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.blueprints`
 
 ##### config?
 
@@ -631,13 +631,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.bl
 optional config?: string
 ```
 
-Defined in: configs/modinfo.d.ts:290
+Defined in: [configs/modinfo.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L290)
 
 Map config JSON path.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.blueprints`
 
 ***
 
@@ -645,13 +645,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.bl
 
 <p class="smt-member-path"><code>configs.ModMapPoint</code></p>
 
-Defined in: configs/modinfo.d.ts:298
+Defined in: [configs/modinfo.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L298)
 
 World-pixel spawn or unstuck point.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map`
 
 #### Properties
 
@@ -661,13 +661,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
 x: number
 ```
 
-Defined in: configs/modinfo.d.ts:304
+Defined in: [configs/modinfo.d.ts:304](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L304)
 
 World X in pixels.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map`
 
 ##### y
 
@@ -675,13 +675,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
 y: number
 ```
 
-Defined in: configs/modinfo.d.ts:310
+Defined in: [configs/modinfo.d.ts:310](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L310)
 
 World Y in pixels.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map`
 
 ***
 
@@ -689,13 +689,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
 
 <p class="smt-member-path"><code>configs.ModMapTopBounds</code></p>
 
-Defined in: configs/modinfo.d.ts:318
+Defined in: [configs/modinfo.d.ts:318](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L318)
 
 Vertical camera / travel bounds for the custom map.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.topBounds`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.topBounds`
 
 #### Properties
 
@@ -705,13 +705,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.to
 optional hard?: number
 ```
 
-Defined in: configs/modinfo.d.ts:324
+Defined in: [configs/modinfo.d.ts:324](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L324)
 
 Hard top bound in world pixels.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.topBounds`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.topBounds`
 
 ##### soft?
 
@@ -719,13 +719,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.to
 optional soft?: number
 ```
 
-Defined in: configs/modinfo.d.ts:330
+Defined in: [configs/modinfo.d.ts:330](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L330)
 
 Soft top bound in world pixels.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.topBounds`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.topBounds`
 
 ***
 
@@ -733,13 +733,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.to
 
 <p class="smt-member-path"><code>configs.ModMapDepthLight</code></p>
 
-Defined in: configs/modinfo.d.ts:338
+Defined in: [configs/modinfo.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L338)
 
 Depth-based light sizing for the custom map.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.depthLight`
 
 #### Properties
 
@@ -749,13 +749,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.de
 optional startY?: number
 ```
 
-Defined in: configs/modinfo.d.ts:344
+Defined in: [configs/modinfo.d.ts:344](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L344)
 
 World Y where depth light scaling starts.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.depthLight`
 
 ##### endY?
 
@@ -763,13 +763,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.de
 optional endY?: number
 ```
 
-Defined in: configs/modinfo.d.ts:350
+Defined in: [configs/modinfo.d.ts:350](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L350)
 
 World Y where depth light scaling ends.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.depthLight`
 
 ##### maxSize?
 
@@ -777,13 +777,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.de
 optional maxSize?: number
 ```
 
-Defined in: configs/modinfo.d.ts:356
+Defined in: [configs/modinfo.d.ts:356](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L356)
 
 Maximum light size at the shallow end of the range.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.depthLight`
 
 ##### minSize?
 
@@ -791,13 +791,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.de
 optional minSize?: number
 ```
 
-Defined in: configs/modinfo.d.ts:362
+Defined in: [configs/modinfo.d.ts:362](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L362)
 
 Minimum light size at the deep end of the range.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.depthLight`
 
 ***
 
@@ -805,13 +805,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.de
 
 <p class="smt-member-path"><code>configs.ModMapParallax</code></p>
 
-Defined in: configs/modinfo.d.ts:370
+Defined in: [configs/modinfo.d.ts:370](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L370)
 
 Parallax background tuning for the custom map.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.parallax`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.parallax`
 
 #### Properties
 
@@ -821,13 +821,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.pa
 optional widthScale?: number
 ```
 
-Defined in: configs/modinfo.d.ts:376
+Defined in: [configs/modinfo.d.ts:376](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L376)
 
 Horizontal scale of the parallax layer.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.parallax`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.parallax`
 
 ##### offsetY?
 
@@ -835,13 +835,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.pa
 optional offsetY?: number
 ```
 
-Defined in: configs/modinfo.d.ts:382
+Defined in: [configs/modinfo.d.ts:382](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L382)
 
 Vertical offset of the parallax layer in pixels.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.parallax`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.parallax`
 
 ***
 
@@ -849,13 +849,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.pa
 
 <p class="smt-member-path"><code>configs.ModMapColorMappingLayers</code></p>
 
-Defined in: configs/modinfo.d.ts:390
+Defined in: [configs/modinfo.d.ts:390](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L390)
 
 Color-map cell that paints both background and foreground terrain.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.colorMappings`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.colorMappings`
 
 #### Properties
 
@@ -865,13 +865,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.co
 optional background?: string
 ```
 
-Defined in: configs/modinfo.d.ts:396
+Defined in: [configs/modinfo.d.ts:396](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L396)
 
 Background terrain id for this blueprint RGB.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.colorMappings`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.colorMappings`
 
 ##### foreground?
 
@@ -879,13 +879,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.co
 optional foreground?: string
 ```
 
-Defined in: configs/modinfo.d.ts:402
+Defined in: [configs/modinfo.d.ts:402](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L402)
 
 Foreground terrain id for this blueprint RGB.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.colorMappings`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.colorMappings`
 
 ***
 
@@ -893,13 +893,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.co
 
 <p class="smt-member-path"><code>configs.ModMapDefinition</code></p>
 
-Defined in: configs/modinfo.d.ts:417
+Defined in: [configs/modinfo.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L417)
 
 Custom map pack block in `modinfo.json`.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map`
 
 #### Properties
 
@@ -909,13 +909,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
 blueprints: ModMapBlueprints
 ```
 
-Defined in: configs/modinfo.d.ts:423
+Defined in: [configs/modinfo.d.ts:423](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L423)
 
 Paths to blueprint images and map config under the mod root.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.blueprints`
 
 ##### width
 
@@ -923,13 +923,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.bl
 width: number
 ```
 
-Defined in: configs/modinfo.d.ts:429
+Defined in: [configs/modinfo.d.ts:429](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L429)
 
 Map width in cells.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map`
 
 ##### height
 
@@ -937,13 +937,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
 height: number
 ```
 
-Defined in: configs/modinfo.d.ts:435
+Defined in: [configs/modinfo.d.ts:435](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L435)
 
 Map height in cells.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map`
 
 ##### spawn?
 
@@ -951,13 +951,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
 optional spawn?: ModMapPoint
 ```
 
-Defined in: configs/modinfo.d.ts:441
+Defined in: [configs/modinfo.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L441)
 
 Player spawn position in world pixels.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map`
 
 ##### unstuck?
 
@@ -965,13 +965,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
 optional unstuck?: ModMapPoint
 ```
 
-Defined in: configs/modinfo.d.ts:447
+Defined in: [configs/modinfo.d.ts:447](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L447)
 
 Unstuck / rescue position in world pixels.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map`
 
 ##### deployment?
 
@@ -979,13 +979,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
 optional deployment?: string
 ```
 
-Defined in: configs/modinfo.d.ts:453
+Defined in: [configs/modinfo.d.ts:453](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L453)
 
 Deployment mode for the map (for example `"skip"`).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map`
 
 ##### topBounds?
 
@@ -993,13 +993,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
 optional topBounds?: ModMapTopBounds
 ```
 
-Defined in: configs/modinfo.d.ts:459
+Defined in: [configs/modinfo.d.ts:459](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L459)
 
 Vertical travel bounds at the top of the world.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.topBounds`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.topBounds`
 
 ##### depthLight?
 
@@ -1007,13 +1007,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.to
 optional depthLight?: ModMapDepthLight
 ```
 
-Defined in: configs/modinfo.d.ts:465
+Defined in: [configs/modinfo.d.ts:465](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L465)
 
 Depth-based light size curve.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.depthLight`
 
 ##### parallax?
 
@@ -1021,13 +1021,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.de
 optional parallax?: ModMapParallax
 ```
 
-Defined in: configs/modinfo.d.ts:471
+Defined in: [configs/modinfo.d.ts:471](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L471)
 
 Parallax background tuning.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.parallax`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.parallax`
 
 ##### colorMappings?
 
@@ -1035,13 +1035,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.pa
 optional colorMappings?: Record<string, ModMapColorMapping>
 ```
 
-Defined in: configs/modinfo.d.ts:477
+Defined in: [configs/modinfo.d.ts:477](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L477)
 
 Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.colorMappings`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.colorMappings`
 
 ***
 
@@ -1049,13 +1049,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.co
 
 <p class="smt-member-path"><code>configs.ModGameVersion</code></p>
 
-Defined in: configs/modinfo.d.ts:485
+Defined in: [configs/modinfo.d.ts:485](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L485)
 
 Compatible game version range for the mod.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVersion`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `gameVersion`
 
 #### Properties
 
@@ -1065,13 +1065,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVe
 optional minimum?: string
 ```
 
-Defined in: configs/modinfo.d.ts:491
+Defined in: [configs/modinfo.d.ts:491](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L491)
 
 Lowest supported game version string.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVersion`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `gameVersion`
 
 ##### maximum?
 
@@ -1079,13 +1079,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVe
 optional maximum?: string
 ```
 
-Defined in: configs/modinfo.d.ts:497
+Defined in: [configs/modinfo.d.ts:497](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L497)
 
 Highest supported game version string.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVersion`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `gameVersion`
 
 ***
 
@@ -1093,7 +1093,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVe
 
 <p class="smt-member-path"><code>configs.ModInfo</code></p>
 
-Defined in: configs/modinfo.d.ts:509
+Defined in: [configs/modinfo.d.ts:509](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L509)
 
 Sandkit mod manifest (`modinfo.json`).
 
@@ -1103,7 +1103,7 @@ Required for every mod folder. Minimal mods only need
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 #### Properties
 
@@ -1113,13 +1113,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 manifestVersion: 1
 ```
 
-Defined in: configs/modinfo.d.ts:515
+Defined in: [configs/modinfo.d.ts:515](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L515)
 
 Manifest format version. Must be `1` for Sandkit `apiVersion` 1.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### id
 
@@ -1127,13 +1127,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 id: string
 ```
 
-Defined in: configs/modinfo.d.ts:521
+Defined in: [configs/modinfo.d.ts:521](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L521)
 
 Unique mod id. Prefer `author.mod-name` (matches folder / Workshop identity).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### name
 
@@ -1141,13 +1141,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 name: string
 ```
 
-Defined in: configs/modinfo.d.ts:527
+Defined in: [configs/modinfo.d.ts:527](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L527)
 
 Display name shown in the mod list and Workshop UI.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### version
 
@@ -1155,13 +1155,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 version: string
 ```
 
-Defined in: configs/modinfo.d.ts:533
+Defined in: [configs/modinfo.d.ts:533](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L533)
 
 Semver-style mod version string.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### apiVersion
 
@@ -1169,13 +1169,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 apiVersion: 1
 ```
 
-Defined in: configs/modinfo.d.ts:539
+Defined in: [configs/modinfo.d.ts:539](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L539)
 
 Sandkit host API version this mod targets. Must be `1`.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### entry
 
@@ -1183,13 +1183,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 entry: string
 ```
 
-Defined in: configs/modinfo.d.ts:545
+Defined in: [configs/modinfo.d.ts:545](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L545)
 
 Main-thread script path relative to the mod root (for example `"main.js"`).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### workerEntry?
 
@@ -1197,14 +1197,14 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 optional workerEntry?: string
 ```
 
-Defined in: configs/modinfo.d.ts:552
+Defined in: [configs/modinfo.d.ts:552](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L552)
 
 Simulation-worker script path relative to the mod root.
 Required when the mod registers worker hooks or uses worker-only APIs.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### patches?
 
@@ -1212,14 +1212,14 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 optional patches?: string
 ```
 
-Defined in: configs/modinfo.d.ts:559
+Defined in: [configs/modinfo.d.ts:559](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L559)
 
 Path to the patches file relative to the mod root (usually `"patches.json"`).
 When omitted, a present `patches.json` may still auto-load per official docs.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### description?
 
@@ -1227,13 +1227,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 optional description?: string
 ```
 
-Defined in: configs/modinfo.d.ts:565
+Defined in: [configs/modinfo.d.ts:565](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L565)
 
 Long description shown in the mod list / Workshop.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### author?
 
@@ -1241,13 +1241,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 optional author?: string
 ```
 
-Defined in: configs/modinfo.d.ts:571
+Defined in: [configs/modinfo.d.ts:571](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L571)
 
 Author display name.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### gameVersion?
 
@@ -1255,13 +1255,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 optional gameVersion?: ModGameVersion
 ```
 
-Defined in: configs/modinfo.d.ts:577
+Defined in: [configs/modinfo.d.ts:577](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L577)
 
 Inclusive game version range this mod claims to support.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVersion`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `gameVersion`
 
 ##### dependencies?
 
@@ -1269,13 +1269,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVe
 optional dependencies?: string[]
 ```
 
-Defined in: configs/modinfo.d.ts:583
+Defined in: [configs/modinfo.d.ts:583](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L583)
 
 Other mod ids that should load with this mod.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### loadOrder?
 
@@ -1283,13 +1283,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 optional loadOrder?: number
 ```
 
-Defined in: configs/modinfo.d.ts:589
+Defined in: [configs/modinfo.d.ts:589](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L589)
 
 Relative load priority. Lower values load earlier; higher values load later.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest
 
 ##### configSchema?
 
@@ -1297,14 +1297,14 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
 optional configSchema?: Record<string, ConfigSchemaEntry>
 ```
 
-Defined in: configs/modinfo.d.ts:596
+Defined in: [configs/modinfo.d.ts:596](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L596)
 
 Player-facing settings schema. Keys are setting ids; values define type and UI.
 Read at runtime with `api.settings.get`.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ##### configOverrides?
 
@@ -1312,13 +1312,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional configOverrides?: Record<string, string>
 ```
 
-Defined in: configs/modinfo.d.ts:602
+Defined in: [configs/modinfo.d.ts:602](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L602)
 
 Paths to JSON config overrides keyed by vanilla config id (for example `"drill"`).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configOverrides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configOverrides`
 
 ##### shaderOverrides?
 
@@ -1326,13 +1326,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 optional shaderOverrides?: Record<string, string>
 ```
 
-Defined in: configs/modinfo.d.ts:608
+Defined in: [configs/modinfo.d.ts:608](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L608)
 
 Paths to GLSL shader replacements keyed by shader id (for example `"sky"`).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `shaderOverrides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `shaderOverrides`
 
 ##### textureOverrides?
 
@@ -1340,14 +1340,14 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `shader
 optional textureOverrides?: Record<string, string | TextureOverride>
 ```
 
-Defined in: configs/modinfo.d.ts:615
+Defined in: [configs/modinfo.d.ts:615](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L615)
 
 Texture replacements keyed by vanilla texture id.
 A string value is a path; an object adds spritesheet frame metadata.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `textureOverrides`
 
 ##### provides?
 
@@ -1355,13 +1355,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textur
 optional provides?: ModProvide[]
 ```
 
-Defined in: configs/modinfo.d.ts:621
+Defined in: [configs/modinfo.d.ts:621](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L621)
 
 Optional content this mod publishes for others to consume.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provides`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `provides`
 
 ##### map?
 
@@ -1369,13 +1369,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provid
 optional map?: ModMapDefinition
 ```
 
-Defined in: configs/modinfo.d.ts:627
+Defined in: [configs/modinfo.d.ts:627](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L627)
 
 Embedded custom map pack definition for this mod.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map`
 
 ***
 
@@ -1383,13 +1383,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
 
 <p class="smt-member-path"><code>configs.BundlePatchRegex</code></p>
 
-Defined in: configs/patches.d.ts:56
+Defined in: [configs/patches.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L56)
 
 Regex finder when the target is not a plain [BundlePatch.find](#find) string.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 #### Properties
 
@@ -1399,14 +1399,14 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 pattern: string
 ```
 
-Defined in: configs/patches.d.ts:63
+Defined in: [configs/patches.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L63)
 
 JavaScript regex pattern source (without surrounding `/` delimiters).
 Capture groups may be referenced from [BundlePatch.code](#code) as `$1`, `$2`, …
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### flags?
 
@@ -1414,13 +1414,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional flags?: string
 ```
 
-Defined in: configs/patches.d.ts:69
+Defined in: [configs/patches.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L69)
 
 Optional regex flags (for example `"g"` or `"m"`).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ***
 
@@ -1428,7 +1428,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 
 <p class="smt-member-path"><code>configs.BundlePatch</code></p>
 
-Defined in: configs/patches.d.ts:81
+Defined in: [configs/patches.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L81)
 
 One entry in `patches.json`.
 
@@ -1438,7 +1438,7 @@ or duplicated match fails loudly. When several patches must succeed together
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 #### Properties
 
@@ -1448,13 +1448,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 file: PatchTargetFile
 ```
 
-Defined in: configs/patches.d.ts:87
+Defined in: [configs/patches.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L87)
 
 Compiled bundle to modify.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### find?
 
@@ -1462,14 +1462,14 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional find?: string
 ```
 
-Defined in: configs/patches.d.ts:94
+Defined in: [configs/patches.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L94)
 
 Exact source substring to locate in the bundle.
 Mutually exclusive with [regex](#regex) in typical patches.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### code?
 
@@ -1477,14 +1477,14 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional code?: string
 ```
 
-Defined in: configs/patches.d.ts:101
+Defined in: [configs/patches.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L101)
 
 Replacement or inserted source text.
 Official examples use `code`; some loaders also accept [replace](#replace).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### replace?
 
@@ -1492,13 +1492,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional replace?: string
 ```
 
-Defined in: configs/patches.d.ts:107
+Defined in: [configs/patches.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L107)
 
 Alias of [code](#code) used by some patch loaders and workshop mods.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### operation?
 
@@ -1506,14 +1506,14 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional operation?: PatchOperation
 ```
 
-Defined in: configs/patches.d.ts:114
+Defined in: [configs/patches.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L114)
 
 How to apply the match. Defaults to replace-style behaviour when omitted
 in common workshop patches.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### expectedMatches?
 
@@ -1521,7 +1521,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional expectedMatches?: number | "any"
 ```
 
-Defined in: configs/patches.d.ts:122
+Defined in: [configs/patches.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L122)
 
 How many times `find` / `regex` must match.
 Use a number (often `1`) so the load fails on miss or over-match.
@@ -1529,7 +1529,7 @@ Some loaders accept `"any"`.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### regex?
 
@@ -1537,13 +1537,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional regex?: BundlePatchRegex
 ```
 
-Defined in: configs/patches.d.ts:128
+Defined in: [configs/patches.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L128)
 
 Regex-based locator instead of a literal [find](#find) string.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### before?
 
@@ -1551,13 +1551,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional before?: string
 ```
 
-Defined in: configs/patches.d.ts:134
+Defined in: [configs/patches.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L134)
 
 Text inserted before the match when [operation](#operation) is `"wrap"`.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### after?
 
@@ -1565,13 +1565,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional after?: string
 ```
 
-Defined in: configs/patches.d.ts:140
+Defined in: [configs/patches.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L140)
 
 Text inserted after the match when [operation](#operation) is `"wrap"`.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### id?
 
@@ -1579,13 +1579,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional id?: string
 ```
 
-Defined in: configs/patches.d.ts:146
+Defined in: [configs/patches.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L146)
 
 Optional stable id for logging and tooling.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ##### atomicGroup?
 
@@ -1593,7 +1593,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 optional atomicGroup?: string
 ```
 
-Defined in: configs/patches.d.ts:152
+Defined in: [configs/patches.d.ts:152](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L152)
 
 Group id shared by patches that must all succeed or all fail together.
 Use the same string on paired main (`js/bundle.js`) and worker
@@ -1605,7 +1605,7 @@ Use the same string on paired main (`js/bundle.js`) and worker
 optional description?: string
 ```
 
-Defined in: configs/patches.d.ts:156
+Defined in: [configs/patches.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L156)
 
 Human-readable note for maintainers. Not required by the official schema.
 
@@ -1619,7 +1619,7 @@ Human-readable note for maintainers. Not required by the official schema.
 ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice
 ```
 
-Defined in: configs/modinfo.d.ts:172
+Defined in: [configs/modinfo.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L172)
 
 One entry under `modinfo.json` `configSchema`.
 
@@ -1627,7 +1627,7 @@ Keys of `configSchema` are setting ids read via `api.settings.get`.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `configSchema`
 
 ***
 
@@ -1639,13 +1639,13 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `config
 ModMapColorMapping = string | ModMapColorMappingLayers
 ```
 
-Defined in: configs/modinfo.d.ts:410
+Defined in: [configs/modinfo.d.ts:410](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L410)
 
 One `map.colorMappings` value: a single terrain id, or layered background/foreground ids.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.colorMappings`
+https://sandustry.com/sandkit.html#mod-manifest-heading Official Sandkit API — Mod manifest `map.colorMappings`
 
 ***
 
@@ -1657,7 +1657,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.co
 PatchTargetFile = "js/bundle.js" | "js/simulation-worker.js" | "js/manager-worker.js" | "js/utility-worker.js" | string & object
 ```
 
-Defined in: configs/patches.d.ts:24
+Defined in: [configs/patches.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L24)
 
 Known compiled bundle paths the loader can patch.
 
@@ -1670,7 +1670,7 @@ Known compiled bundle paths the loader can patch.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ***
 
@@ -1682,7 +1682,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfter" | "wrap"
 ```
 
-Defined in: configs/patches.d.ts:44
+Defined in: [configs/patches.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L44)
 
 Supported patch operations.
 
@@ -1696,7 +1696,7 @@ Supported patch operations.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript
 
 ***
 
@@ -1708,10 +1708,10 @@ https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled Ja
 BundlePatchesFile = BundlePatch[]
 ```
 
-Defined in: configs/patches.d.ts:164
+Defined in: [configs/patches.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L164)
 
 Root shape of `patches.json`: an ordered list of [BundlePatch](#bundlepatch) entries.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+https://sandustry.com/sandkit.html#patches-heading Official Sandkit API — Patching compiled JavaScript

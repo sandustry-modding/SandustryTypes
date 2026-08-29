@@ -1701,7 +1701,7 @@ Optional priority and filter options.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.hooks.intercept`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.hooks.intercept`
 
 ***
 
@@ -1749,4 +1749,4 @@ Optional priority and filter options.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.hooks.modify`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.hooks.modify`

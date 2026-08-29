@@ -6,7 +6,7 @@ Available as `sandkit.api.pipes`.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipes`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes`
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -68,7 +68,7 @@ Return true when a pipe occupies the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipes.isAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.isAtCell`
 
 ***
 
@@ -96,7 +96,7 @@ Return true when pipe flow is enabled at the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipes.isEnabledAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.isEnabledAtCell`
 
 ***
 
@@ -124,7 +124,7 @@ readonly [`PipeVentCell`](#pipeventcell)[]
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipes.getConnectedVentsAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.getConnectedVentsAtCell`
 
 ***
 
@@ -152,4 +152,4 @@ Enable or disable pipe flow at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pipes.setEnabledAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pipes.setEnabledAtCell`

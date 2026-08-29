@@ -318,4 +318,4 @@ Level to set.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.upgrades.setLevelById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.upgrades.setLevelById`

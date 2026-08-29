@@ -34,7 +34,7 @@ Return true when the element at the cell can burn.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.fire.canBurnElementAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.fire.canBurnElementAtCell`
 
 ***
 
@@ -64,4 +64,4 @@ True when the burn succeeded.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.fire.burnElementAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.fire.burnElementAtCell`

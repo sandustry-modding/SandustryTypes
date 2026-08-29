@@ -6,7 +6,7 @@ Main thread only.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid`
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -74,7 +74,7 @@ Create an element at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.mutate` writer `elements.createAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `elements.createAtCell`
 
 ##### replaceAtCell()
 
@@ -98,7 +98,7 @@ Replace the element at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.mutate` writer `elements.replaceAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `elements.replaceAtCell`
 
 ##### removeAtCell()
 
@@ -122,7 +122,7 @@ Remove the element at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.mutate` writer `elements.removeAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `elements.removeAtCell`
 
 ***
 
@@ -158,7 +158,7 @@ Create terrain at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.createAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.createAtCell`
 
 ##### replaceAtCell()
 
@@ -182,7 +182,7 @@ Replace terrain at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.replaceAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.replaceAtCell`
 
 ##### removeAtCell()
 
@@ -206,7 +206,7 @@ Remove terrain at a cell inside a [mutate](#mutate) callback.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.removeAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate` writer `terrains.removeAtCell`
 
 ***
 
@@ -366,7 +366,7 @@ Receives a writer for element and terrain cell mutations.
 #### See
 
  - https://sandustry.com/sandkit.html#mutations-heading
- - https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.mutate`
+ - https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.grid.mutate`
 
 ***
 
@@ -394,7 +394,7 @@ Reveal fog of war at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.revealFogAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.revealFogAtCell`
 
 ***
 
@@ -422,7 +422,7 @@ Request redraw around a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.redrawAroundCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.redrawAroundCell`
 
 ***
 
@@ -470,7 +470,7 @@ Invoked for each cell with `(cellX, cellY)`.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.forEachCellInCircle`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.forEachCellInCircle`
 
 ***
 
@@ -498,7 +498,7 @@ Calls the callback for each cell in a rectangle.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.forEachCellInRectangle`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.forEachCellInRectangle`
 
 ***
 
@@ -526,7 +526,7 @@ Use [forEachCellInRectangle](#foreachcellinrectangle) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.forEachCellInRectangle`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.forEachCellInRectangle`
 
 ***
 
@@ -556,7 +556,7 @@ Packed cell id for the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.getCellIdAtCell` / Worker entry `api.grid.getCellIdAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.getCellIdAtCell` / Worker entry `api.grid.getCellIdAtCell`
 
 ***
 
@@ -584,7 +584,7 @@ Return true when the cell has no element or terrain content.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.isCellEmptyAtCell` / Worker entry `api.grid.isCellEmptyAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.isCellEmptyAtCell` / Worker entry `api.grid.isCellEmptyAtCell`
 
 ***
 
@@ -612,7 +612,7 @@ Return true when the cell holds terrain (not an element).
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.isTerrainAtCell` / Worker entry `api.grid.isTerrainAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.isTerrainAtCell` / Worker entry `api.grid.isTerrainAtCell`
 
 ***
 
@@ -640,7 +640,7 @@ Mark the cell active for simulation this tick.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.reportActivityAtCell` / Worker entry `api.grid.reportActivityAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.reportActivityAtCell` / Worker entry `api.grid.reportActivityAtCell`
 
 ***
 
@@ -668,7 +668,7 @@ Apply excavation damage and eject velocity at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.excavateAtCell` / Worker entry `api.grid.excavateAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.excavateAtCell` / Worker entry `api.grid.excavateAtCell`
 
 ***
 
@@ -690,4 +690,4 @@ Return the world grid size in cells.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.getDimensions` / Worker entry `api.grid.getDimensions`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.getDimensions` / Worker entry `api.grid.getDimensions`

@@ -225,7 +225,7 @@ Use [grid](api/sandkit.api.grid.worker.md) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid`
 
 ## References <!-- {docsify-ignore} -->
 

@@ -3,14 +3,14 @@
  *
  * Available as `sandkit.api.entities`.
  *
- * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities`
+ * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities`
  */
 export namespace entities {
   /**
    * Return one live entity by runtime id.
    *
    * @param entityId - Runtime entity id.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.getById`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.getById`
    */
   export function getById(entityId: number): Entity | undefined;
 
@@ -18,7 +18,7 @@ export namespace entities {
    * Return all live entities of one type.
    *
    * @param entityTypeId - Registered entity type string id.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.getAllByType`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.getAllByType`
    */
   export function getAllByType(entityTypeId: string): Entity[];
 
@@ -29,7 +29,7 @@ export namespace entities {
    * @param worldX - Spawn x position in world pixels.
    * @param worldY - Spawn y position in world pixels.
    * @returns The spawned entity instance.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.spawnAtWorld`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.spawnAtWorld`
    */
   export function spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity;
 
@@ -37,7 +37,7 @@ export namespace entities {
    * Remove an entity from the world.
    *
    * @param entityId - Runtime entity id.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.remove`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.remove`
    */
   export function remove(entityId: number): void;
 
@@ -47,7 +47,7 @@ export namespace entities {
    * @param entityId - Runtime entity id.
    * @param angleRadians - Launch angle in radians.
    * @param speed - Optional launch speed.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.launch`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.launch`
    */
   export function launch(entityId: number, angleRadians: number, speed?: number): void;
 
@@ -55,7 +55,7 @@ export namespace entities {
    * Start capture for an entity (for example vacuum capture).
    *
    * @param entityId - Runtime entity id.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.startCapture`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.startCapture`
    */
   export function startCapture(entityId: number): void;
 
@@ -63,7 +63,7 @@ export namespace entities {
    * Collect an entity (for example into inventory or storage).
    *
    * @param entityId - Runtime entity id.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.collect`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.collect`
    */
   export function collect(entityId: number): void;
 

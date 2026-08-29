@@ -30,7 +30,7 @@ Registered structure id string.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.buildings.unlockById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.buildings.unlockById`
 
 ***
 
@@ -58,7 +58,7 @@ Use [unlockById](#unlockbyid) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.player.buildings.unlockById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.buildings.unlockById`
 
 ***
 
@@ -88,4 +88,4 @@ Registered structure id string.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.buildings.removeById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.buildings.removeById`

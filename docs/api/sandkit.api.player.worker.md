@@ -28,7 +28,7 @@ World position as `{ x, y }` in pixels.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.getPositionAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.getPositionAtWorld`
 
 ***
 
@@ -50,7 +50,7 @@ Use [getPositionAtWorld](#getpositionatworld) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.player.getPositionAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.getPositionAtWorld`
 
 ***
 
@@ -80,7 +80,7 @@ True when the player overlaps the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.isCollidingWithCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isCollidingWithCell`
 
 ***
 
@@ -110,4 +110,4 @@ True when the player is inside the radius.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.isWithinRadiusOfCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isWithinRadiusOfCell`

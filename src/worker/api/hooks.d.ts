@@ -13,7 +13,7 @@ export namespace hooks {
    * @param hookId - Registered hook identifier.
    * @param callback - Called with hook arguments and context; may cancel the hook.
    * @param options - Optional guard and priority.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.hooks.intercept`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.hooks.intercept`
    */
   export function intercept<K extends InterceptHookId>(
     hookId: K,
@@ -27,7 +27,7 @@ export namespace hooks {
    * @param hookId - Registered hook identifier.
    * @param callback - Called with hook arguments; may mutate hook payload.
    * @param options - Optional guard and priority.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.hooks.modify`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.hooks.modify`
    */
   export function modify<K extends ModifyHookId>(
     hookId: K,

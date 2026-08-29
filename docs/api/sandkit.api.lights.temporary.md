@@ -42,7 +42,7 @@ Brightness, duration, color, and dedup options.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.temporary.createAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.temporary.createAtWorld`
 
 ***
 
@@ -72,4 +72,4 @@ Light id returned from [createAtWorld](#createatworld).
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.temporary.removeById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.temporary.removeById`

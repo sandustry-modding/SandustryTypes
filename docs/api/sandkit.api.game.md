@@ -6,7 +6,7 @@ Available as `sandkit.api.game`.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.game`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.game`
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -58,4 +58,4 @@ Optional session start flags.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.game.start`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.game.start`

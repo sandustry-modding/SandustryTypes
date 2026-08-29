@@ -11,7 +11,7 @@ export namespace sound {
    *
    * @param soundId - Registered sound identifier.
    * @param options - Volume, position, playback rate, and rate-limit options.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.play`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.play`
    */
   export function play(soundId: string, options?: SoundOptions): SoundHandle;
 
@@ -20,7 +20,7 @@ export namespace sound {
    *
    * @param soundId - Registered sound identifier.
    * @param options - Volume, position, playback rate, and rate-limit options.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.playActive`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.playActive`
    */
   export function playActive(soundId: string, options?: SoundOptions): SoundHandle;
 
@@ -29,7 +29,7 @@ export namespace sound {
    *
    * @param layers - Layer definitions (sound id, volume, delay, and per-layer options).
    * @param options - Shared position, volume, and rate-limit options for all layers.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.playLayers`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.playLayers`
    */
   export function playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[];
 
@@ -39,7 +39,7 @@ export namespace sound {
    * @param worldX - World X coordinate in pixels.
    * @param worldY - World Y coordinate in pixels.
    * @param baseVolume - Base volume before distance attenuation.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.calculateDistanceOptionsAtWorld`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.calculateDistanceOptionsAtWorld`
    */
   export function calculateDistanceOptionsAtWorld(worldX: number, worldY: number, baseVolume?: number): SoundOptions;
 
@@ -47,27 +47,27 @@ export namespace sound {
    * Stop a sound by id.
    *
    * @param soundId - Registered sound identifier to stop.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.stopBySoundId`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.stopBySoundId`
    */
   export function stopBySoundId(soundId: string): void;
 
   /**
    * @deprecated Use {@link stopBySoundId} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.sound.stopBySoundId`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.sound.stopBySoundId`
    */
   export function stopById(soundId: string): void;
 
   /**
    * Stop the active sound channel.
    *
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.stopActive`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.stopActive`
    */
   export function stopActive(): void;
 
   /**
    * Stop all playing sounds.
    *
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.stopAll`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.stopAll`
    */
   export function stopAll(): void;
 

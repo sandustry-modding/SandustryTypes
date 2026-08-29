@@ -620,7 +620,7 @@ Called when the event is emitted.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.events.on`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.events.on`
 
 ***
 
@@ -662,4 +662,4 @@ Serializable payload passed to listeners.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.events.emit`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.events.emit`

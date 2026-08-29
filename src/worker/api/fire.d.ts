@@ -13,7 +13,7 @@ export namespace fire {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.fire.canBurnElementAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.fire.canBurnElementAtCell`
    */
   export function canBurnElementAtCell(...args: CellCoordinates): boolean;
 
@@ -23,7 +23,7 @@ export namespace fire {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @returns True when the burn succeeded.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.fire.burnElementAtCell`
+   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Worker entry `api.fire.burnElementAtCell`
    */
   export function burnElementAtCell(...args: CellCoordinates): boolean;
 }

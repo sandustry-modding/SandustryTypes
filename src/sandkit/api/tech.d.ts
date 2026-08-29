@@ -13,7 +13,7 @@ export namespace tech {
    * Return a tech definition by string id.
    *
    * @param techId - Tech entry identifier.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.getDefinitionById`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.getDefinitionById`
    */
   export function getDefinitionById(techId: TechGridId): TechDefinition | undefined;
 
@@ -22,7 +22,7 @@ export namespace tech {
    *
    * @param techId - Tech entry identifier.
    * @param updates - Fields to merge into the definition.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.updateDefinition`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.updateDefinition`
    */
   export function updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void;
 
@@ -31,13 +31,13 @@ export namespace tech {
    *
    * @param techId - Tech entry identifier.
    * @param definition - Full tech definition to register.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.registerDefinition`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.registerDefinition`
    */
   export function registerDefinition(techId: TechGridId, definition: TechDefinition): void;
 
   /**
    * @deprecated Use {@link registerDefinition} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.tech.registerDefinition`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.tech.registerDefinition`
    */
   export function addDefinition(techId: TechGridId, definition: TechDefinition): void;
 
@@ -47,7 +47,7 @@ export namespace tech {
    * @param techId - Tech grid node id.
    * @param definition - Tech definition for the node.
    * @param options - Parent node id and optional preferred grid position.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.registerNode`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.registerNode`
    */
   export function registerNode(techId: TechGridId, definition: TechDefinition, options: { parentId: TechGridId; preferredPosition?: TechGridPosition; }): TechGridPosition;
 
@@ -55,7 +55,7 @@ export namespace tech {
    * Return true when a tech entry is locked.
    *
    * @param techId - Tech entry id (string or numeric enum).
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.isLockedById`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.isLockedById`
    */
   export function isLockedById(techId: TechGridId): boolean;
 
@@ -64,7 +64,7 @@ export namespace tech {
    *
    * @param techId - Tech entry id (string or numeric enum).
    * @param locked - When true, the tech cannot be purchased.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.setLockedById`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.setLockedById`
    */
   export function setLockedById(techId: TechGridId, locked: boolean): void;
 
@@ -72,7 +72,7 @@ export namespace tech {
    * Return true when a tech entry has been researched.
    *
    * @param techId - Tech entry id (string or numeric enum).
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.isResearchedById`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.isResearchedById`
    */
   export function isResearchedById(techId: TechGridId): boolean;
 
@@ -83,7 +83,7 @@ export namespace tech {
      *
      * @param techId - Built-in or custom tech id.
      * @param unlocks - Optional structure and item ids to unlock.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.conservatory.appendUnlock`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.conservatory.appendUnlock`
      */
     export function appendUnlock(techId: TechGridId, unlocks: ConservatoryUnlocks): void;
   }
@@ -107,7 +107,7 @@ export namespace tech {
     /**
      * Research cost.
      *
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.registerDefinition`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.registerDefinition`
      */
     cost?: number;
     /** Currency used for {@link cost} (for example `"gold"`). */

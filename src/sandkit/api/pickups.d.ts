@@ -5,7 +5,7 @@ import type { PickupType as PickupTypeEnum } from "../enums/index";
  *
  * Available as `sandkit.api.pickups`.
  *
- * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups`
+ * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups`
  */
 export namespace pickups {
   /** Official pickup type discriminator. */
@@ -13,7 +13,7 @@ export namespace pickups {
 
   /**
    * @deprecated Use {@link PickupType} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.PickupType`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.PickupType`
    */
   export type WorldItemType = PickupType;
 
@@ -45,7 +45,7 @@ export namespace pickups {
    * @param data - Optional per-item data bag copied onto the instance.
    * @param light - Optional point light spawned with the pickup.
    * @returns The spawned pickup instance.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups.spawnAtWorld`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups.spawnAtWorld`
    */
   export function spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem;
 
@@ -53,13 +53,13 @@ export namespace pickups {
    * Remove a pickup instance from the world.
    *
    * @param pickup - Pickup returned from spawn or lookup helpers.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups.remove`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups.remove`
    */
   export function remove(pickup: WorldItem): void;
 
   /**
    * @deprecated Use {@link remove} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.remove`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.remove`
    */
   export function destroy(pickup: WorldItem): void;
 
@@ -68,14 +68,14 @@ export namespace pickups {
    *
    * @param pickup - Pickup to collect.
    * @returns True when the item was collected.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups.pickUp`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups.pickUp`
    */
   export function pickUp(pickup: WorldItem): boolean;
 
   /**
    * Return all active pickups.
    *
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups.getAll`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups.getAll`
    */
   export function getAll(): WorldItem[];
 
@@ -83,7 +83,7 @@ export namespace pickups {
    * Return a pickup by numeric id.
    *
    * @param pickupId - Runtime pickup id.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups.getById`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups.getById`
    */
   export function getById(pickupId: number): WorldItem | undefined;
 }

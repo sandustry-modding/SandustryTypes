@@ -54,7 +54,7 @@ Duration, radius, and intensity settings.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.effects.createAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.effects.createAtWorld`
 
 ***
 
@@ -94,7 +94,7 @@ Use [createAtWorld](#createatworld) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.effects.createAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.effects.createAtWorld`
 
 ## References <!-- {docsify-ignore} -->
 

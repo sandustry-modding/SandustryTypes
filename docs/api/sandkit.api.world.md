@@ -6,7 +6,7 @@ Use [grid](api/sandkit.api.grid.md) instead.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid`
 
 ## Namespaces <!-- {docsify-ignore} -->
 
@@ -39,7 +39,7 @@ Use [grid.mutate](api/sandkit.api.grid.md#mutate) instead.
 #### See
 
  - https://sandustry.com/sandkit.html#mutations-heading
- - https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.mutate`
+ - https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.grid.mutate`
 
 ***
 
@@ -67,7 +67,7 @@ Use [grid.redrawAroundCell](api/sandkit.api.grid.md#redrawaroundcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid.redrawAroundCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid.redrawAroundCell`
 
 ## References <!-- {docsify-ignore} -->
 

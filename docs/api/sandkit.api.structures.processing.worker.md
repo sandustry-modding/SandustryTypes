@@ -28,7 +28,7 @@ Return true when processing is enabled at the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.structures.processing.isEnabledAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.structures.processing.isEnabledAtCell`
 
 ***
 
@@ -56,4 +56,4 @@ Use [isEnabledAtCell](#isenabledatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.processing.isEnabledAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.processing.isEnabledAtCell`

@@ -36,4 +36,4 @@ Optional structure and item ids to unlock.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.conservatory.appendUnlock`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.conservatory.appendUnlock`

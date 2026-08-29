@@ -144,7 +144,7 @@ readonly [`ArtifactLocation`](#artifactlocation)[]
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.maps.getArtifactLocations`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.maps.getArtifactLocations`
 
 ## References <!-- {docsify-ignore} -->
 

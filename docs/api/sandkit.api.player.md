@@ -39,7 +39,7 @@ World y position in pixels.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.setPositionAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setPositionAtWorld`
 
 ***
 
@@ -71,7 +71,7 @@ Use [setPositionAtWorld](#setpositionatworld) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.player.setPositionAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.setPositionAtWorld`
 
 ***
 
@@ -107,7 +107,7 @@ Vertical velocity in pixels per second.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.setVelocity`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setVelocity`
 
 ***
 
@@ -138,7 +138,7 @@ Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly 
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.setMovementSpeedMultiplier`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setMovementSpeedMultiplier`
 
 ***
 
@@ -170,7 +170,7 @@ True when the mode changes.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.setMovementMode`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.setMovementMode`
 
 ***
 
@@ -196,7 +196,7 @@ True when the player touches solid ground.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.isOnGround`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isOnGround`
 
 ***
 
@@ -218,7 +218,7 @@ Move the player down until ground is found.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.teleportToGround`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.teleportToGround`
 
 ***
 
@@ -256,7 +256,7 @@ True when the player hitbox fits at the position.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.isPositionClearAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.isPositionClearAtWorld`
 
 ***
 
@@ -288,7 +288,7 @@ Use [isPositionClearAtWorld](#ispositionclearatworld) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.player.isPositionClearAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.isPositionClearAtWorld`
 
 ## References <!-- {docsify-ignore} -->
 

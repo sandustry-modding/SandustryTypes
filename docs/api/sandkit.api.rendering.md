@@ -58,7 +58,7 @@ World y position in pixels.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.rendering.getDrawPositionAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.rendering.getDrawPositionAtWorld`
 
 ***
 

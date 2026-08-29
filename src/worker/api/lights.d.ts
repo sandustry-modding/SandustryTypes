@@ -9,7 +9,7 @@ export namespace lights {
   /**
    * Short-lived visual effect lights.
    *
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.lights.temporary`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.lights.temporary`
    */
   export namespace temporary {
     /** Options for {@link createAtWorld}. */
@@ -21,7 +21,7 @@ export namespace lights {
       lightId: number | null;
       /**
        * @deprecated Use {@link lightId} instead.
-       * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `light.lightId`
+       * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `light.lightId`
        */
       index?: number | null;
     }
@@ -32,7 +32,7 @@ export namespace lights {
      * @param worldX - World x position in pixels.
      * @param worldY - World y position in pixels.
      * @param options - Brightness, duration, colour, and dedup settings.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.lights.temporary.createAtWorld`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.lights.temporary.createAtWorld`
      */
     export function createAtWorld(
       worldX: number,

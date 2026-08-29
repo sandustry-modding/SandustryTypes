@@ -284,7 +284,7 @@ Use [swapBetweenCells](#swapbetweencells) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.swapBetweenCells`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.swapBetweenCells`
 
 ***
 
@@ -314,7 +314,7 @@ Element index from [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell).
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.elements.markMovementBlockedByIndex`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.elements.markMovementBlockedByIndex`
 
 ***
 
@@ -342,7 +342,7 @@ Use [markMovementBlockedByIndex](#markmovementblockedbyindex) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.markMovementBlockedByIndex`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.elements.markMovementBlockedByIndex`
 
 ***
 

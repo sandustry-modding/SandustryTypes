@@ -38,7 +38,7 @@ Grower recipe definition.
 
 ##### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.recipes.register`
 
 #### Call Signature
 
@@ -70,7 +70,7 @@ Shaker recipe definition.
 
 ##### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.recipes.register`
 
 #### Call Signature
 
@@ -102,7 +102,7 @@ Kinetic press recipe definition.
 
 ##### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.recipes.register`
 
 #### Call Signature
 
@@ -134,4 +134,4 @@ Weighted input/output recipe.
 
 ##### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.recipes.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.recipes.register`

@@ -5,7 +5,7 @@ Main thread only.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements`
 
 ## Enumerations <!-- {docsify-ignore} -->
 
@@ -99,7 +99,7 @@ Options for [createAtCell](#createatcell), replace, and related create helpers.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.createAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.createAtCell`
 
 #### Properties
 
@@ -135,7 +135,7 @@ Set both max and remaining duration in simulation ticks.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.createAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.createAtCell`
 
 ##### ~~duration?~~
 
@@ -151,7 +151,7 @@ Use [durationTicks](#durationticks) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `options.durationTicks`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `options.durationTicks`
 
 ##### isFreeFalling?
 
@@ -235,7 +235,7 @@ Options for element removal helpers.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.removeAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — Main entry `api.elements.removeAtCell`
 
 #### Properties
 
@@ -472,7 +472,7 @@ Built-in [ElementTypeEnum](api/sandkit.enums.ElementType.md) values autocomplete
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements`
 
 ***
 
@@ -490,7 +490,7 @@ Mod or built-in element string id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements`
 
 ***
 
@@ -508,7 +508,7 @@ Type handle or string id accepted by lookup helpers.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements`
 
 ***
 
@@ -526,7 +526,7 @@ Mod-registered element definition snapshot.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.register`
 
 #### Properties
 
@@ -656,7 +656,7 @@ Returns all registered element type ids.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getRegisteredTypes`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getRegisteredTypes`
 
 ***
 
@@ -694,7 +694,7 @@ elementType: ElementType
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.register`
 
 ***
 
@@ -730,7 +730,7 @@ Fields to merge onto the definition.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.updateDefinition`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.updateDefinition`
 
 ***
 
@@ -766,7 +766,7 @@ Interaction entry to append.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.addInteractionInfo`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.addInteractionInfo`
 
 ***
 
@@ -796,7 +796,7 @@ Numeric element type.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getNameByType`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getNameByType`
 
 ***
 
@@ -840,7 +840,7 @@ Cell coordinates of a free cell, or null when none.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.findFreeCellInStructure`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.findFreeCellInStructure`
 
 ***
 
@@ -896,7 +896,7 @@ Use [createAtCell](#createatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.createAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.createAtCell`
 
 ***
 
@@ -952,7 +952,7 @@ Use [replaceAtCell](#replaceatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.replaceAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.replaceAtCell`
 
 ***
 
@@ -1008,7 +1008,7 @@ Use [removeAtCell](#removeatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.removeAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.removeAtCell`
 
 ***
 
@@ -1096,7 +1096,7 @@ Use [teleportBetweenCells](#teleportbetweencells) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.teleportBetweenCells`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.teleportBetweenCells`
 
 ***
 
@@ -1152,7 +1152,7 @@ Use [setVelocityAtCell](#setvelocityatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.setVelocityAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.setVelocityAtCell`
 
 ***
 
@@ -1208,7 +1208,7 @@ Use [addParticleVelocityAtCell](#addparticlevelocityatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.addParticleVelocityAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.addParticleVelocityAtCell`
 
 ***
 
@@ -1264,7 +1264,7 @@ Use [convertToParticleAtCell](#converttoparticleatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.convertToParticleAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.convertToParticleAtCell`
 
 ***
 
@@ -1320,7 +1320,7 @@ Use [convertFromParticleAtCell](#convertfromparticleatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.convertFromParticleAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.convertFromParticleAtCell`
 
 ***
 
@@ -1376,7 +1376,7 @@ Use [setDataFieldAtCell](#setdatafieldatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.setDataFieldAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.setDataFieldAtCell`
 
 ***
 
@@ -1432,7 +1432,7 @@ Use [refreshColorAtCell](#refreshcoloratcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.refreshColorAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.refreshColorAtCell`
 
 ***
 
@@ -1488,7 +1488,7 @@ Use [setPhysicsAtCell](#setphysicsatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.setPhysicsAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.setPhysicsAtCell`
 
 ***
 
@@ -1544,7 +1544,7 @@ Use [setDurationAtCell](#setdurationatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.setDurationAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.setDurationAtCell`
 
 ***
 
@@ -1574,7 +1574,7 @@ Numeric element type.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getIdByType`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getIdByType`
 
 ***
 
@@ -1604,7 +1604,7 @@ Mod-registered element id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getTypeById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getTypeById`
 
 ***
 
@@ -1632,7 +1632,7 @@ Use [getTypeById](#gettypebyid) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.getTypeById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.elements.getTypeById`
 
 ***
 
@@ -1662,7 +1662,7 @@ Numeric element type.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getDefinitionByType`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getDefinitionByType`
 
 ***
 
@@ -1690,7 +1690,7 @@ Return the raw element type at a cell (may differ from resolved type).
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getTypeAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getTypeAtCell`
 
 ***
 
@@ -1718,7 +1718,7 @@ Return the resolved element type after overlays and particles.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getResolvedTypeAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getResolvedTypeAtCell`
 
 ***
 
@@ -1748,7 +1748,7 @@ Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md#getcellidatc
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getResolvedTypeFromCellId`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getResolvedTypeFromCellId`
 
 ***
 
@@ -1776,7 +1776,7 @@ Return element index, particle flag, and ids at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getInfoAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getInfoAtCell`
 
 ***
 
@@ -1804,7 +1804,7 @@ Return the matter category at a cell, or null when empty.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getMatterTypeAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getMatterTypeAtCell`
 
 ***
 
@@ -1832,7 +1832,7 @@ Return true when the cell holds the given element type or id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.isTypeAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.isTypeAtCell`
 
 ***
 
@@ -1860,7 +1860,7 @@ Return true when the element at the cell is falling.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.isFreeFallingAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.isFreeFallingAtCell`
 
 ***
 
@@ -1888,7 +1888,7 @@ Return per-cell velocity for moving elements.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getVelocityAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getVelocityAtCell`
 
 ***
 
@@ -1916,4 +1916,4 @@ Read element data field 1–4 at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.elements.getDataFieldAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.elements.getDataFieldAtCell`

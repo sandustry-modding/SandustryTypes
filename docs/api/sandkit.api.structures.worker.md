@@ -170,7 +170,7 @@ Called once per matching structure instance.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.forEachOfType`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.forEachOfType`
 
 ***
 
@@ -198,7 +198,7 @@ Return the structure at a cell, or null when none.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.getAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.getAtCell`
 
 ***
 
@@ -228,7 +228,7 @@ Structure type value or string id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.getDefinitionByType`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.getDefinitionByType`
 
 ***
 
@@ -258,7 +258,7 @@ Structure string id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.getTypeById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.getTypeById`
 
 ***
 
@@ -286,7 +286,7 @@ Use [getTypeById](#gettypebyid) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.getTypeById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.getTypeById`
 
 ***
 
@@ -314,7 +314,7 @@ Return true when a completed structure occupies the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.hasBuiltAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.hasBuiltAtCell`
 
 ***
 
@@ -350,7 +350,7 @@ Structure string id to compare.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.isType`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.isType`
 
 ***
 
@@ -378,7 +378,7 @@ Return true when the cell structure matches the given id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.isTypeAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.isTypeAtCell`
 
 ***
 
@@ -414,7 +414,7 @@ Spritesheet frame index.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.setSpritesheetIndex`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.setSpritesheetIndex`
 
 ***
 
@@ -442,7 +442,7 @@ Set spritesheet frame index for the structure at a cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.setSpritesheetIndexAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.setSpritesheetIndexAtCell`
 
 ***
 
@@ -484,7 +484,7 @@ Ascending threshold values.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.setSpritesheetIndexByValue`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.setSpritesheetIndexByValue`
 
 ***
 
@@ -512,7 +512,7 @@ Same as [setSpritesheetIndexByValue](#setspritesheetindexbyvalue) for the struct
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.setSpritesheetIndexByValueAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.setSpritesheetIndexByValueAtCell`
 
 ***
 
@@ -550,7 +550,7 @@ When `propagateToWorkers` is true, sync to worker threads.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.update`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.update`
 
 ***
 
@@ -594,7 +594,7 @@ When `propagateToWorkers` is true, sync to worker threads.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.updateData`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.updateData`
 
 ***
 
@@ -632,4 +632,4 @@ Use [updateData](#updatedata) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.updateData`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.updateData`

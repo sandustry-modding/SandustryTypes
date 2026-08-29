@@ -30,7 +30,7 @@ Registered item id string.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.player.inventory.addById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.player.inventory.addById`
 
 ***
 
@@ -58,4 +58,4 @@ Use [addById](#addbyid) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.player.inventory.addById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.player.inventory.addById`

@@ -45,7 +45,7 @@ Fixed span length in tiles for line-linked structures.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.register`
 
 ***
 
@@ -87,7 +87,7 @@ Custom hover tooltip driven by structure `data` fields.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.register`
 
 #### Properties
 
@@ -553,7 +553,7 @@ Linked placement clearance mode (for example `"allOrNothing"`).
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.register`
 
 ##### tooltipHover?
 
@@ -567,7 +567,7 @@ Custom hover tooltip over the built structure.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.register`
 
 ##### rejectWhenBlocked?
 
@@ -705,7 +705,7 @@ Context passed to structure processing callbacks.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.register`
 
 #### Methods
 
@@ -731,7 +731,7 @@ Return the resolved element type at a cell, or null.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.register`
 
 ##### ~~getElementTypeAtCell()~~
 
@@ -757,7 +757,7 @@ Use [getResolvedTypeAtCell](#getresolvedtypeatcell) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias in `api.structures.processing.register` context
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias in `api.structures.processing.register` context
 
 ##### isCellEmptyAtCell()
 
@@ -781,7 +781,7 @@ Return true when the cell has no element or terrain.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.register`
 
 ##### ~~isCellEmpty()~~
 
@@ -807,7 +807,7 @@ Use [isCellEmptyAtCell](#iscellemptyatcell) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias in `api.structures.processing.register` context
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias in `api.structures.processing.register` context
 
 ##### commit()
 
@@ -833,7 +833,7 @@ Mutation writer payload accepted by the runtime.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.register`
 
 ***
 
@@ -847,7 +847,7 @@ Use [StructureProcessingDefinitionV1](#structureprocessingdefinitionv1) with [pr
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.processing.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.processing.register`
 
 #### Properties
 
@@ -1187,7 +1187,7 @@ When `useRawShape` is true, keep the shape matrix as-is.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.register`
 
 ***
 
@@ -1231,7 +1231,7 @@ When `useRawShape` is true, keep the shape matrix as-is.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.updateDefinition`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.updateDefinition`
 
 ***
 
@@ -1281,7 +1281,7 @@ Optional build-mode wiring for the variant.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.registerVariant`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.registerVariant`
 
 ***
 
@@ -1325,7 +1325,7 @@ Use [registerVariant](#registervariant) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.registerVariant`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.registerVariant`
 
 ***
 
@@ -1355,7 +1355,7 @@ Hotbar placement field configuration.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.registerPlacementConfig`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.registerPlacementConfig`
 
 ***
 
@@ -1377,7 +1377,7 @@ Return structure types available for building.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.getAvailableTypes`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.getAvailableTypes`
 
 ***
 
@@ -1399,7 +1399,7 @@ Use [getAvailableTypes](#getavailabletypes) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.getAvailableTypes`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.getAvailableTypes`
 
 ***
 
@@ -1427,7 +1427,7 @@ Return true when the player blocks building at the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.isBlockedByPlayerAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.isBlockedByPlayerAtCell`
 
 ***
 
@@ -1455,7 +1455,7 @@ Return true when a launcher structure is at the cell.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.isLauncherAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.isLauncherAtCell`
 
 ***
 
@@ -1488,7 +1488,7 @@ Structure type value or string id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.isLockedByType`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.isLockedByType`
 
 ***
 
@@ -1516,7 +1516,7 @@ Use [isLockedByType](#islockedbytype) instead. Same function as [isLockedByType]
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.isLockedByType`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.isLockedByType`
 
 ***
 
@@ -1554,7 +1554,7 @@ Spritesheet frame index.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.mapValueToSpritesheetIndex`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.mapValueToSpritesheetIndex`
 
 ***
 
@@ -1582,7 +1582,7 @@ Build a structure at a cell. Main-thread writes are deferred.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.buildAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.buildAtCell`
 
 ***
 
@@ -1610,7 +1610,7 @@ Use [buildAtCell](#buildatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.buildAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.buildAtCell`
 
 ***
 
@@ -1638,7 +1638,7 @@ Remove a structure at a cell. Main-thread writes are deferred.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.removeAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.removeAtCell`
 
 ***
 
@@ -1666,7 +1666,7 @@ Use [removeAtCell](#removeatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.removeAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.removeAtCell`
 
 ***
 
@@ -1720,7 +1720,7 @@ Optional bulk-removal flags.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.removeBetweenCells`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.removeBetweenCells`
 
 ***
 
@@ -1764,7 +1764,7 @@ Use [removeBetweenCells](#removebetweencells) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.removeBetweenCells`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.removeBetweenCells`
 
 ***
 
@@ -1800,7 +1800,7 @@ Optional bulk-removal flags.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.removeAtCells`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.removeAtCells`
 
 ***
 
@@ -1832,7 +1832,7 @@ Use [removeAtCells](#removeatcells) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.removeAtCells`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.removeAtCells`
 
 ***
 
@@ -1864,7 +1864,7 @@ Use [processing.register](api/sandkit.api.structures.processing.md#register) ins
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.processing.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.processing.register`
 
 ## References <!-- {docsify-ignore} -->
 

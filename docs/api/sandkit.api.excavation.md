@@ -5,7 +5,7 @@ Main thread only.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.excavation`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.excavation`
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -165,7 +165,7 @@ Use [cellType](#celltype) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias in `api.excavation.registerProfile` terrain rules
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias in `api.excavation.registerProfile` terrain rules
 
 ##### damage?
 
@@ -221,4 +221,4 @@ Pattern, power, terrain rules, and profile options.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.excavation.registerProfile`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.excavation.registerProfile`

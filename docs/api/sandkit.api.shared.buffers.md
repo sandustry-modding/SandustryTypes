@@ -42,7 +42,7 @@ Typed array kind and element count.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.shared.buffers.ensure`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.shared.buffers.ensure`
 
 ***
 
@@ -80,7 +80,7 @@ Use [ensure](#ensure) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.shared.buffers.ensure`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.shared.buffers.ensure`
 
 ***
 
@@ -112,4 +112,4 @@ The typed array, or `undefined` when the buffer does not exist.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.shared.buffers.get`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.shared.buffers.get`

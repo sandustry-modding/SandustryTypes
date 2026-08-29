@@ -36,7 +36,7 @@ Structure type, interval, and callback.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.register`
 
 ***
 
@@ -66,7 +66,7 @@ True when the enabled state changed.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.processing.setEnabledAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.structures.processing.setEnabledAtCell`
 
 ***
 
@@ -94,7 +94,7 @@ Use [setEnabledAtCell](#setenabledatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.structures.processing.setEnabledAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.structures.processing.setEnabledAtCell`
 
 ## References <!-- {docsify-ignore} -->
 

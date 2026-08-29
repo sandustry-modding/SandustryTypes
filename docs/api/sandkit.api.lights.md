@@ -44,7 +44,7 @@ Use [lightId](#lightid) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias on `api.lights.temporary.createAtWorld` return value
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias on `api.lights.temporary.createAtWorld` return value
 
 ***
 

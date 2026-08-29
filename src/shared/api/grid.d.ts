@@ -16,7 +16,7 @@ export namespace grid {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    * @returns Packed cell id for the cell.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.getCellIdAtCell` / Worker entry `api.grid.getCellIdAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.getCellIdAtCell` / Worker entry `api.grid.getCellIdAtCell`
    */
   export function getCellIdAtCell(...args: CellCoordinates): CellId;
 
@@ -25,7 +25,7 @@ export namespace grid {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.isCellEmptyAtCell` / Worker entry `api.grid.isCellEmptyAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.isCellEmptyAtCell` / Worker entry `api.grid.isCellEmptyAtCell`
    */
   export function isCellEmptyAtCell(...args: CellCoordinates): boolean;
 
@@ -34,7 +34,7 @@ export namespace grid {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.isTerrainAtCell` / Worker entry `api.grid.isTerrainAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.isTerrainAtCell` / Worker entry `api.grid.isTerrainAtCell`
    */
   export function isTerrainAtCell(...args: CellCoordinates): boolean;
 
@@ -43,7 +43,7 @@ export namespace grid {
    *
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.reportActivityAtCell` / Worker entry `api.grid.reportActivityAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.reportActivityAtCell` / Worker entry `api.grid.reportActivityAtCell`
    */
   export function reportActivityAtCell(...args: CellCoordinates): void;
 
@@ -55,14 +55,14 @@ export namespace grid {
    * @param outVelocity - Ejection velocity written into this vector.
    * @param damage - Damage applied to terrain in the pattern.
    * @param options - Optional excavation source flags.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.excavateAtCell` / Worker entry `api.grid.excavateAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.excavateAtCell` / Worker entry `api.grid.excavateAtCell`
    */
   export function excavateAtCell(...args: [...CellCoordinates, outVelocity: Vector2, damage: number, options?: ExcavateOptions]): void;
 
   /**
    * Return the world grid size in cells.
    *
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.grid.getDimensions` / Worker entry `api.grid.getDimensions`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.grid.getDimensions` / Worker entry `api.grid.getDimensions`
    */
   export function getDimensions(): GridDimensions;
 

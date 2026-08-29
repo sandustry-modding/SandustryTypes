@@ -6,7 +6,7 @@ Available as `sandkit.api.pickups`.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups`
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -132,7 +132,7 @@ Use [PickupType](#pickuptype) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.PickupType`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.PickupType`
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -188,7 +188,7 @@ The spawned pickup instance.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups.spawnAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups.spawnAtWorld`
 
 ***
 
@@ -218,7 +218,7 @@ Pickup returned from spawn or lookup helpers.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups.remove`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups.remove`
 
 ***
 
@@ -246,7 +246,7 @@ Use [remove](#remove) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.pickups.remove`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.pickups.remove`
 
 ***
 
@@ -278,7 +278,7 @@ True when the item was collected.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups.pickUp`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups.pickUp`
 
 ***
 
@@ -300,7 +300,7 @@ Return all active pickups.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups.getAll`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups.getAll`
 
 ***
 
@@ -330,4 +330,4 @@ Runtime pickup id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.pickups.getById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.pickups.getById`

@@ -17,7 +17,7 @@ export namespace terrains {
   export import getTypeById = shared.api.terrains.getTypeById;
   /**
    * @deprecated Use {@link getTypeById} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.getTypeById`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.terrains.getTypeById`
    */
   export import getTypeFromId = shared.api.terrains.getTypeFromId;
   /** Look up the definition for a terrain type. */
@@ -48,7 +48,7 @@ export namespace terrains {
   /**
    * Terrain definition shape with typed element interactions.
    *
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terrains.register`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.register`
    */
   export interface TerrainDefinition extends Omit<shared.api.terrains.TerrainDefinition, "interactions"> {
     /** Tooltip interactions shown for this terrain. */
@@ -60,7 +60,7 @@ export namespace terrains {
    *
    * @param definition - Terrain definition to register.
    * @returns Object with the assigned `cellType`.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terrains.register`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.register`
    */
   export function register(definition: TerrainDefinition): { cellType: TerrainType; };
 
@@ -69,7 +69,7 @@ export namespace terrains {
    *
    * @param cellTypeOrId - Numeric cell type or terrain string id.
    * @param partial - Fields to merge onto the definition.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terrains.updateDefinition`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.updateDefinition`
    */
   export function updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>): void;
 
@@ -86,7 +86,7 @@ export namespace terrains {
 
   /**
    * @deprecated Use {@link createAtCell} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.createAtCell`
+   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.createAtCell`
    */
   export function createAtCellWhenIdle(...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]): void;
 
@@ -103,7 +103,7 @@ export namespace terrains {
 
   /**
    * @deprecated Use {@link replaceAtCell} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.replaceAtCell`
+   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.replaceAtCell`
    */
   export function replaceAtCellWhenIdle(...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]): void;
 
@@ -119,7 +119,7 @@ export namespace terrains {
 
   /**
    * @deprecated Use {@link removeAtCell} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.removeAtCell`
+   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.removeAtCell`
    */
   export function removeAtCellWhenIdle(...args: [...CellCoordinates, options?: TerrainMutationOptions]): void;
 
@@ -135,13 +135,13 @@ export namespace terrains {
 
   /**
    * @deprecated Use {@link setHitPointsAtCell} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
+   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
    */
   export function setHpAtCell(...args: [...CellCoordinates, hitPoints: number]): boolean;
 
   /**
    * @deprecated Use {@link setHitPointsAtCell} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
+   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
    */
   export function setHpAtCellWhenIdle(...args: [...CellCoordinates, hitPoints: number]): void;
 }

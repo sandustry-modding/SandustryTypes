@@ -10,7 +10,7 @@ export namespace events {
    *
    * @param eventId - Registered event name.
    * @param callback - Called when the event is emitted.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.events.on`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.events.on`
    */
   export function on<K extends EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void;
 
@@ -19,7 +19,7 @@ export namespace events {
    *
    * @param eventId - Registered event name.
    * @param payload - Serializable payload passed to listeners.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.events.emit`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.events.emit`
    */
   export function emit<K extends EventId>(eventId: K, payload: EventPayload<K>): void;
 

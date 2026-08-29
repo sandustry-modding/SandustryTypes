@@ -30,7 +30,7 @@ export namespace grid {
 
 /**
  * @deprecated Use {@link grid} instead.
- * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.grid`
+ * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.grid`
  */
 export namespace world {
   export import getCellIdAtCell = grid.getCellIdAtCell;

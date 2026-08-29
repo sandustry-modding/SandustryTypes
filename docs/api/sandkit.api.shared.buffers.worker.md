@@ -45,7 +45,7 @@ Expected array type and length for validation.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.shared.buffers.require`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.shared.buffers.require`
 
 ## References <!-- {docsify-ignore} -->
 

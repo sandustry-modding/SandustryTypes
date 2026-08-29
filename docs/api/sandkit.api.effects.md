@@ -471,7 +471,7 @@ Duration, radius, and intensity settings.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.effects.createAtWorld`
 
 ***
 
@@ -511,7 +511,7 @@ Use [createAtWorld](#createatworld) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.effects.createAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.effects.createAtWorld`
 
 ***
 
@@ -559,7 +559,7 @@ Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createa
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.lights.temporary.createAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.lights.temporary.createAtWorld`
 
 ***
 
@@ -601,7 +601,7 @@ Style, duration, radius, intensity, and color.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createDistortionWaveAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.effects.createDistortionWaveAtWorld`
 
 ***
 
@@ -655,7 +655,7 @@ Width, brightness, color, and glow options.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createLaserAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.effects.createLaserAtWorld`
 
 ***
 
@@ -683,7 +683,7 @@ Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md#removebyid
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.lights.temporary.removeById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.lights.temporary.removeById`
 
 ***
 

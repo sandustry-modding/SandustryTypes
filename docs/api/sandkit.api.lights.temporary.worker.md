@@ -4,7 +4,7 @@ Short-lived visual effect lights.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.lights.temporary`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.lights.temporary`
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -42,7 +42,7 @@ Use [lightId](#lightid) instead.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `light.lightId`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `light.lightId`
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
@@ -98,4 +98,4 @@ Brightness, duration, colour, and dedup settings.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.lights.temporary.createAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.lights.temporary.createAtWorld`

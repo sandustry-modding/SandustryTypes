@@ -19,7 +19,7 @@ export namespace rendering {
    *
    * @param worldX - World x position in pixels.
    * @param worldY - World y position in pixels.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.rendering.getDrawPositionAtWorld`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.rendering.getDrawPositionAtWorld`
    */
   export function getDrawPositionAtWorld(worldX: number, worldY: number): Vector2;
   /** Return cell size and snap grid metrics. */

@@ -6,7 +6,7 @@ Available as `sandkit.api.entities`.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities`
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -94,7 +94,7 @@ Runtime entity id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.getById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.getById`
 
 ***
 
@@ -124,7 +124,7 @@ Registered entity type string id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.getAllByType`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.getAllByType`
 
 ***
 
@@ -168,7 +168,7 @@ The spawned entity instance.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.spawnAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.spawnAtWorld`
 
 ***
 
@@ -198,7 +198,7 @@ Runtime entity id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.remove`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.remove`
 
 ***
 
@@ -240,7 +240,7 @@ Optional launch speed.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.launch`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.launch`
 
 ***
 
@@ -270,7 +270,7 @@ Runtime entity id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.startCapture`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.startCapture`
 
 ***
 
@@ -300,4 +300,4 @@ Runtime entity id.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.entities.collect`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.entities.collect`

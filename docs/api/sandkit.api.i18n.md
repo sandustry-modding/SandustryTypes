@@ -99,7 +99,7 @@ Placeholder values for the key template.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.t`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.t`
 
 ***
 
@@ -135,7 +135,7 @@ Map of keys to translated strings.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.register`
 
 ***
 
@@ -157,7 +157,7 @@ Returns the active locale code.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.getLocale`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getLocale`
 
 ***
 
@@ -193,7 +193,7 @@ Optional locale; defaults to the active locale.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.hasTranslation`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.hasTranslation`
 
 ***
 
@@ -223,7 +223,7 @@ Locale code to activate.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.setLocale`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.setLocale`
 
 ***
 
@@ -245,7 +245,7 @@ Returns metadata for all known languages.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.getLanguages`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getLanguages`
 
 ***
 
@@ -267,7 +267,7 @@ Returns locale codes that have registered translations.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.getAvailableLocales`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getAvailableLocales`
 
 ***
 
@@ -303,7 +303,7 @@ Intl-style number format options.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.formatNumber`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.formatNumber`
 
 ***
 
@@ -333,7 +333,7 @@ Key segments joined with `.`.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.joinKey`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.joinKey`
 
 ***
 
@@ -361,7 +361,7 @@ Use [joinKey](#joinkey) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.i18n.joinKey`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.i18n.joinKey`
 
 ***
 
@@ -397,7 +397,7 @@ Object with `nameKey` or `name`.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.getName`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getName`
 
 ***
 
@@ -433,7 +433,7 @@ Object with `descriptionKey` or `description`.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.getDescription`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getDescription`
 
 ***
 
@@ -487,7 +487,7 @@ fallback: string
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.createTranslatable`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.createTranslatable`
 
 ***
 
@@ -537,7 +537,7 @@ Use [createTranslatable](#createtranslatable) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.i18n.createTranslatable`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.i18n.createTranslatable`
 
 ***
 
@@ -573,7 +573,7 @@ Static string or function that returns the current value.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.setGlobal`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.setGlobal`
 
 ***
 
@@ -603,7 +603,7 @@ Global helper key.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.getGlobal`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getGlobal`
 
 ***
 
@@ -633,7 +633,7 @@ Global helper key.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.removeGlobal`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.removeGlobal`
 
 ***
 
@@ -661,7 +661,7 @@ Use [removeGlobal](#removeglobal) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.i18n.removeGlobal`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.i18n.removeGlobal`
 
 ***
 
@@ -683,7 +683,7 @@ Returns all global translation helper values.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.getGlobals`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.getGlobals`
 
 ***
 
@@ -713,4 +713,4 @@ Keyboard key code or binding name.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.i18n.formatKeyForDisplay`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.i18n.formatKeyForDisplay`

@@ -13,7 +13,7 @@ export namespace events {
    * @param eventId - Registered event name.
    * @param callback - Called when the event is emitted.
    * @param options - Required guard for filtered events.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.events.on`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.events.on`
    */
   export function on<K extends EventId>(
     eventId: K,
@@ -27,7 +27,7 @@ export namespace events {
    * @param eventId - Registered event name.
    * @param payload - Serializable payload passed to listeners.
    * @param options - Optional guard forwarded to filtered listeners.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.events.emit`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.events.emit`
    */
   export function emit<K extends EventId>(
     eventId: K,

@@ -74,7 +74,7 @@ Research cost.
 
 ###### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.registerDefinition`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.registerDefinition`
 
 ##### currencyType?
 
@@ -231,7 +231,7 @@ Tech entry identifier.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.getDefinitionById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.getDefinitionById`
 
 ***
 
@@ -267,7 +267,7 @@ Fields to merge into the definition.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.updateDefinition`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.updateDefinition`
 
 ***
 
@@ -303,7 +303,7 @@ Full tech definition to register.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.registerDefinition`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.registerDefinition`
 
 ***
 
@@ -335,7 +335,7 @@ Use [registerDefinition](#registerdefinition) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.tech.registerDefinition`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.tech.registerDefinition`
 
 ***
 
@@ -383,7 +383,7 @@ Parent node id and optional preferred grid position.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.registerNode`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.registerNode`
 
 ***
 
@@ -413,7 +413,7 @@ Tech entry id (string or numeric enum).
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.isLockedById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.isLockedById`
 
 ***
 
@@ -449,7 +449,7 @@ When true, the tech cannot be purchased.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.setLockedById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.setLockedById`
 
 ***
 
@@ -479,4 +479,4 @@ Tech entry id (string or numeric enum).
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.isResearchedById`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.tech.isResearchedById`

@@ -358,7 +358,7 @@ Optional guard and priority.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.hooks.intercept`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.hooks.intercept`
 
 ***
 
@@ -406,4 +406,4 @@ Optional guard and priority.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.hooks.modify`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.hooks.modify`

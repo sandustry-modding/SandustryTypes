@@ -5,7 +5,7 @@ Main thread only.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fire`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.fire`
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -33,7 +33,7 @@ Returns true when the element at the cell can burn.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fire.canBurnElementAtCell`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.fire.canBurnElementAtCell`
 
 ***
 
@@ -89,4 +89,4 @@ Use [burnElementAtCell](#burnelementatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.fire.burnElementAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.fire.burnElementAtCell`

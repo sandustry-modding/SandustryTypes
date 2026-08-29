@@ -34,7 +34,7 @@ Second point.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.utils.getDistance`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getDistance`
 
 ***
 
@@ -70,7 +70,7 @@ Target point.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.utils.getDirection`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getDirection`
 
 ***
 
@@ -106,7 +106,7 @@ Target point.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.utils.getAngle`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getAngle`
 
 ***
 
@@ -142,7 +142,7 @@ Line end in cell coordinates.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.utils.getCoordinatesBetweenCells`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.utils.getCoordinatesBetweenCells`
 
 ***
 
@@ -174,4 +174,4 @@ Use [getCoordinatesBetweenCells](#getcoordinatesbetweencells) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.utils.getCoordinatesBetweenCells`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.utils.getCoordinatesBetweenCells`

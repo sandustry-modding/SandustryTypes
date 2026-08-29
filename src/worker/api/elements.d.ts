@@ -34,7 +34,7 @@ export namespace elements {
   export import getTypeById = shared.api.elements.getTypeById;
   /**
    * @deprecated Use {@link getTypeById} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.getTypeById`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.elements.getTypeById`
    */
   export import getTypeFromId = shared.api.elements.getTypeFromId;
   /** Returns the definition for an element type. */
@@ -148,7 +148,7 @@ export namespace elements {
 
   /**
    * @deprecated Use {@link swapBetweenCells} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.swapBetweenCells`
+   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.elements.swapBetweenCells`
    */
   export function swapCells(
     firstCellX: number,
@@ -161,13 +161,13 @@ export namespace elements {
    * Mark an element index as movement-blocked for this tick.
    *
    * @param elementIndex - Element index from {@link getInfoAtCell}.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.elements.markMovementBlockedByIndex`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.elements.markMovementBlockedByIndex`
    */
   export function markMovementBlockedByIndex(elementIndex: number): void;
 
   /**
    * @deprecated Use {@link markMovementBlockedByIndex} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.elements.markMovementBlockedByIndex`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.elements.markMovementBlockedByIndex`
    */
   export function markMovementBlockedByElementIndex(elementIndex: number): void;
 

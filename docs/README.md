@@ -1,7 +1,7 @@
 # Sandkit API
 
 > [!WARNING]
-> **Unofficial** community docs. Not affiliated with Lantto Games, Hooded Horse, or the [official Sandustry wiki](https://wiki.hoodedhorse.com/Sandustry/Sandustry_Official_Wiki). See the [official Sandkit docs](https://sandustry.com/sandkit.html).
+> **Unofficial** community docs. Not affiliated with Lantto Games, Hooded Horse, or the [official Sandustry wiki](https://wiki.hoodedhorse.com/Sandustry/Sandustry_Official_Wiki). See the [official Sandkit docs](https://sandustry.com/sandkit.html#api-access-heading).
 
 Community TypeScript reference for the live Sandustry `sandkit` host API. Package: [`@sandustry-modding/types`](https://www.npmjs.com/package/@sandustry-modding/types).
 
@@ -39,7 +39,7 @@ Use the ambient `sandkit` free name in `main.js`. In `worker.js`, type the API a
 
 ## Also useful
 
-- [Official Sandkit docs](https://sandustry.com/sandkit.html)
+- [Official Sandkit docs](https://sandustry.com/sandkit.html#api-access-heading)
 - [Sandustry Mod Template](https://sandustry-modding.github.io/SandustryModTemplate/#/)
 - [Official Sandustry wiki](https://wiki.hoodedhorse.com/Sandustry/Sandustry_Official_Wiki)
 

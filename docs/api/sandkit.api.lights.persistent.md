@@ -42,7 +42,7 @@ Brightness, size, color, and persistence options.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.persistent.createAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.createAtWorld`
 
 ***
 
@@ -78,7 +78,7 @@ World Y coordinate in pixels.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.persistent.removeAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.removeAtWorld`
 
 ***
 
@@ -120,7 +120,7 @@ Fade duration in milliseconds.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.persistent.fadeAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.fadeAtWorld`
 
 ***
 
@@ -142,4 +142,4 @@ Mark persistent lights dirty so they are saved on the next flush.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.persistent.markDirty`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.markDirty`

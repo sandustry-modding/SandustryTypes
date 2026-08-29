@@ -23,7 +23,7 @@ export namespace shared {
      *
      * @param key - Buffer name shared across threads.
      * @param config - Expected array type and length for validation.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.shared.buffers.require`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.shared.buffers.require`
      */
     export function require(key: string, config: { type: SharedArrayType; length: number; }): SharedArray;
 
@@ -31,7 +31,7 @@ export namespace shared {
      * Read an existing buffer without validating type or length.
      *
      * @param key - Buffer name shared across threads.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.shared.buffers.get`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.shared.buffers.get`
      */
     export import get = sharedApi.api.shared.buffers.get;
   }

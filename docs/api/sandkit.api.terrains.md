@@ -12,7 +12,7 @@ Terrain definition shape with typed element interactions.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terrains.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.register`
 
 #### Extends
 
@@ -76,7 +76,7 @@ cellType: TerrainType
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terrains.register`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.register`
 
 ***
 
@@ -112,7 +112,7 @@ Fields to merge onto the definition.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.terrains.updateDefinition`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.terrains.updateDefinition`
 
 ***
 
@@ -168,7 +168,7 @@ Use [createAtCell](#createatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.createAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.createAtCell`
 
 ***
 
@@ -224,7 +224,7 @@ Use [replaceAtCell](#replaceatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.replaceAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.replaceAtCell`
 
 ***
 
@@ -280,7 +280,7 @@ Use [removeAtCell](#removeatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.removeAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.removeAtCell`
 
 ***
 
@@ -336,7 +336,7 @@ Use [setHitPointsAtCell](#sethitpointsatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
 
 ***
 
@@ -364,7 +364,7 @@ Use [setHitPointsAtCell](#sethitpointsatcell) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
+https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.terrains.setHitPointsAtCell`
 
 ## References <!-- {docsify-ignore} -->
 

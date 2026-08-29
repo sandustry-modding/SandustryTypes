@@ -19,7 +19,7 @@ export namespace effects {
    * @param worldX - World X coordinate in pixels.
    * @param worldY - World Y coordinate in pixels.
    * @param options - Duration, radius, and intensity settings.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createAtWorld`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.effects.createAtWorld`
    */
   export function createAtWorld(
     effectId: string,
@@ -30,7 +30,7 @@ export namespace effects {
 
   /**
    * @deprecated Use {@link createAtWorld} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.effects.createAtWorld`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.effects.createAtWorld`
    */
   export function createEffectAtWorld(
     effectId: string,
@@ -45,13 +45,13 @@ export namespace effects {
    * @param worldX - World X coordinate in pixels.
    * @param worldY - World Y coordinate in pixels.
    * @param options - Count, velocity, colour, and lifetime settings.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createParticlesAtWorld`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.effects.createParticlesAtWorld`
    */
   export import createParticlesAtWorld = shared.api.effects.createParticlesAtWorld;
 
   /**
    * @deprecated Use {@link lights.temporary.createAtWorld} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.lights.temporary.createAtWorld`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.lights.temporary.createAtWorld`
    */
   export function createLightAtWorld(
     worldX: number,
@@ -65,7 +65,7 @@ export namespace effects {
    * @param worldX - World X coordinate in pixels.
    * @param worldY - World Y coordinate in pixels.
    * @param options - Style, duration, radius, intensity, and color.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createDistortionWaveAtWorld`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.effects.createDistortionWaveAtWorld`
    */
   export function createDistortionWaveAtWorld(worldX: number, worldY: number, options?: DistortionEffectOptions): void;
 
@@ -77,7 +77,7 @@ export namespace effects {
    * @param endWorldX - Beam end world X in pixels.
    * @param endWorldY - Beam end world Y in pixels.
    * @param options - Width, brightness, color, and glow options.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.effects.createLaserAtWorld`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.effects.createLaserAtWorld`
    */
   export function createLaserAtWorld(
     startWorldX: number,
@@ -89,7 +89,7 @@ export namespace effects {
 
   /**
    * @deprecated Use {@link lights.temporary.removeById} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.lights.temporary.removeById`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.lights.temporary.removeById`
    */
   export function removeLightById(lightId: number): void;
 

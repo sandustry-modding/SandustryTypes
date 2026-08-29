@@ -4,7 +4,7 @@ import { CellCoordinates } from "../../shared/player";
  * `sandkit.api.fire` — ignite and burn elements at grid cells.
  * Main thread only.
  *
- * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fire`
+ * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.fire`
  */
 export namespace fire {
   /**
@@ -12,7 +12,7 @@ export namespace fire {
    *
    * @param cellX - Grid cell X coordinate.
    * @param cellY - Grid cell Y coordinate.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.fire.canBurnElementAtCell`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.fire.canBurnElementAtCell`
    */
   export function canBurnElementAtCell(...args: CellCoordinates): boolean;
 
@@ -27,7 +27,7 @@ export namespace fire {
 
   /**
    * @deprecated Use {@link burnElementAtCell} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.fire.burnElementAtCell`
+   * @see https://sandustry.com/sandkit.html#mutations-heading Official Sandkit API — deprecated alias of `api.fire.burnElementAtCell`
    */
   export function burnElementAtCellWhenIdle(...args: CellCoordinates): void;
 }

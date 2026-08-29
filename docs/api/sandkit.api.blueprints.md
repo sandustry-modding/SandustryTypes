@@ -6,7 +6,7 @@ Available as `sandkit.api.blueprints`.
 
 ## See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.blueprints`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.blueprints`
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -70,7 +70,7 @@ Structure instances to encode.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.blueprints.serializeStructures`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.blueprints.serializeStructures`
 
 ***
 
@@ -100,4 +100,4 @@ Blueprint structure records to localize.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.blueprints.localizeStructures`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.blueprints.localizeStructures`

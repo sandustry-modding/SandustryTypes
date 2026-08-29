@@ -272,7 +272,7 @@ Volume, position, playback rate, and rate-limit options.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.play`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.play`
 
 ***
 
@@ -308,7 +308,7 @@ Volume, position, playback rate, and rate-limit options.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.playActive`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.playActive`
 
 ***
 
@@ -344,7 +344,7 @@ Shared position, volume, and rate-limit options for all layers.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.playLayers`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.playLayers`
 
 ***
 
@@ -386,7 +386,7 @@ Base volume before distance attenuation.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.calculateDistanceOptionsAtWorld`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.calculateDistanceOptionsAtWorld`
 
 ***
 
@@ -416,7 +416,7 @@ Registered sound identifier to stop.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.stopBySoundId`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.stopBySoundId`
 
 ***
 
@@ -444,7 +444,7 @@ Use [stopBySoundId](#stopbysoundid) instead.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.sound.stopBySoundId`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.sound.stopBySoundId`
 
 ***
 
@@ -466,7 +466,7 @@ Stop the active sound channel.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.stopActive`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.stopActive`
 
 ***
 
@@ -488,4 +488,4 @@ Stop all playing sounds.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.sound.stopAll`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.sound.stopAll`

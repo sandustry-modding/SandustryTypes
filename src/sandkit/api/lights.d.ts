@@ -13,7 +13,7 @@ export namespace lights {
      * @param worldX - World X coordinate in pixels.
      * @param worldY - World Y coordinate in pixels.
      * @param options - Brightness, duration, color, and dedup options.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.temporary.createAtWorld`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.temporary.createAtWorld`
      */
     export function createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle;
 
@@ -21,14 +21,14 @@ export namespace lights {
      * Remove a temporary light by its id.
      *
      * @param lightId - Light id returned from {@link createAtWorld}.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.temporary.removeById`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.temporary.removeById`
      */
     export function removeById(lightId: number): void;
   }
 
   /**
    * @deprecated Use {@link temporary} instead.
-   * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of `api.lights.temporary`
+   * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias of `api.lights.temporary`
    */
   export import vfx = temporary;
 
@@ -40,7 +40,7 @@ export namespace lights {
      * @param worldX - World X coordinate in pixels.
      * @param worldY - World Y coordinate in pixels.
      * @param options - Brightness, size, color, and persistence options.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.persistent.createAtWorld`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.createAtWorld`
      */
     export function createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions): PersistentLightHandle;
 
@@ -49,7 +49,7 @@ export namespace lights {
      *
      * @param worldX - World X coordinate in pixels.
      * @param worldY - World Y coordinate in pixels.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.persistent.removeAtWorld`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.removeAtWorld`
      */
     export function removeAtWorld(worldX: number, worldY: number): void;
 
@@ -59,14 +59,14 @@ export namespace lights {
      * @param worldX - World X coordinate in pixels.
      * @param worldY - World Y coordinate in pixels.
      * @param durationMs - Fade duration in milliseconds.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.persistent.fadeAtWorld`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.fadeAtWorld`
      */
     export function fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void;
 
     /**
      * Mark persistent lights dirty so they are saved on the next flush.
      *
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.lights.persistent.markDirty`
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Main entry `api.lights.persistent.markDirty`
      */
     export function markDirty(): void;
   }
@@ -77,7 +77,7 @@ export namespace lights {
     lightId: number | null;
     /**
      * @deprecated Use {@link lightId} instead.
-     * @see https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias on `api.lights.temporary.createAtWorld` return value
+     * @see https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — deprecated alias on `api.lights.temporary.createAtWorld` return value
      */
     index: number | null;
   }

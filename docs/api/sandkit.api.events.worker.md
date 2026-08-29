@@ -218,7 +218,7 @@ Required guard for filtered events.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.events.on`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.events.on`
 
 ***
 
@@ -266,4 +266,4 @@ Optional guard forwarded to filtered listeners.
 
 #### See
 
-https://sandustry.com/sandkit.html Official Sandkit API — Worker entry `api.events.emit`
+https://sandustry.com/sandkit.html#api-access-heading Official Sandkit API — Worker entry `api.events.emit`
