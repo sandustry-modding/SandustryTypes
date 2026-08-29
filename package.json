@@ -92,7 +92,8 @@
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "verify-package": "node scripts/verify-package.mjs",
     "validate": "npm run typecheck && npm test && npm run verify-package",
-    "prepack": "npm run validate"
+    "prepack": "npm run validate",
+    "release": "node scripts/publish.mjs"
   },
   "devDependencies": {
     "@types/react": "^18.3.1",

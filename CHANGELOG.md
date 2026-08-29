@@ -13,6 +13,7 @@ https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.4.0
 
 ### Added
 
+- `npm run release` script: changelog/registry/auth checks, `validate`, then `npm publish` (optional `--dry-run`)
 - `src/configs/` types for `modinfo.json` and `patches.json` (`@sandustry-modding/types/configs`), with JSDoc on every key
 - Stronger structure definition fields: `tooltipHover`, `spanTiles`, `linkedClearance`, spritesheet/ui render blocks
 - Stronger `TechDefinition` fields used by tech nodes (`cost`, `unlocks`, `currencyType`, `branch`)
