@@ -52,5 +52,6 @@ Use the ambient `sandkit` free name in `main.js`. In `worker.js`, type the API a
 From the package repo root:
 
 ```bash
-npm run docs:api
+npm run docs:api        # API markdown + JSON Schema from TypeScript
+npm run docs:schemas    # JSON Schema only (`docs/schemas/`)
 ```

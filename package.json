@@ -86,12 +86,14 @@
   ],
   "scripts": {
     "docs": "npm run docs:api && npm run docs:serve",
-    "docs:api": "node scripts/generate-api-docs.mjs",
+    "docs:api": "node scripts/generate-api-docs.mjs && npm run docs:schemas",
+    "docs:schemas": "node scripts/generate-json-schemas.mjs",
     "docs:serve": "npx --yes docsify-cli serve docs",
     "test": "node --test scripts/api-search.test.js",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "verify-package": "node scripts/verify-package.mjs",
-    "validate": "npm run typecheck && npm test && npm run verify-package",
+    "verify-schemas": "node scripts/generate-json-schemas.mjs --check",
+    "validate": "npm run typecheck && npm test && npm run verify-package && npm run verify-schemas",
     "prepack": "npm run validate",
     "release": "node scripts/publish.mjs"
   },

@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - JSON Schema files for `modinfo.json` and `patches.json` under `docs/schemas/` (GitHub Pages URLs; see [JSON Schema](schemas.md))
+- `npm run docs:schemas` generates those schemas from `src/configs/` via `ts-json-schema-generator`; `validate` checks they are not stale
 
 ## 0.4.0 - 2026-08-29
 

@@ -1,6 +1,6 @@
 # JSON Schema files
 
-Machine-readable schemas for Sandkit mod folder files. They match `@sandustry-modding/types/configs` (`ModInfo`, `BundlePatchesFile`).
+Generated from `@sandustry-modding/types/configs` (`ModInfo`, `BundlePatchesFile` in `src/configs/`).
 
 Prefer the [official Sandkit docs](https://sandustry.com/sandkit.html#mod-files-heading ':target=_blank') when a schema and the game disagree.
 
@@ -40,3 +40,13 @@ import type { ModInfo, BundlePatch } from "@sandustry-modding/types/configs";
 ```
 
 See [configs](api/configs.md) for the full type reference.
+
+## Regenerate
+
+From the package repo root:
+
+```bash
+npm run docs:schemas
+```
+
+`npm run docs:api` also regenerates these schemas. `npm run validate` fails when committed schemas do not match the TypeScript defs.

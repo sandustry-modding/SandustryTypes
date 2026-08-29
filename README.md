@@ -66,14 +66,15 @@ import type { ModInfo, BundlePatch } from "@sandustry-modding/types/configs";
 
 ## Maintaining types
 
-Edit `.d.ts` files under `src/`. Regenerate the Docsify API reference after JSDoc changes.
+Edit `.d.ts` files under `src/`. Regenerate the Docsify API reference and JSON Schema after JSDoc or config-type changes.
 
 ## Docs site
 
-Regenerate the Docsify API reference from these declarations:
+Regenerate the Docsify API reference and JSON Schema from these declarations:
 
 ```bash
-npm run docs:api
+npm run docs:api        # API markdown + docs/schemas/*.json
+npm run docs:schemas    # JSON Schema only
 ```
 
-Output lands in `docs/api/`. The namespace index is `docs/modules.md` and the combined page is `docs/full.md`. `npm run docs` runs that step, then serves the docs site.
+Output lands in `docs/api/` and `docs/schemas/`. The namespace index is `docs/modules.md` and the combined page is `docs/full.md`. `npm run docs` runs that step, then serves the docs site. `npm run validate` fails when committed schemas do not match `src/configs/`.
