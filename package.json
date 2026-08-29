@@ -67,6 +67,15 @@
         "./src/worker/*/*.d.ts",
         "./src/worker/*/*/index.d.ts"
       ]
+    },
+    "./configs": {
+      "types": "./src/configs/index.d.ts"
+    },
+    "./configs/*": {
+      "types": [
+        "./src/configs/*.d.ts",
+        "./src/configs/*/index.d.ts"
+      ]
     }
   },
   "files": [

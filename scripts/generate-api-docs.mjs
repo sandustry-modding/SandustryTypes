@@ -338,6 +338,12 @@ function writeModuleIndex(docsDir, linkMap, mainNs, workerNs, engineNs) {
     `- [nominal](${p("shared.nominal")})`,
     `- [player](${p("shared.player")})`,
     "",
+    "## Mod file schemas",
+    "",
+    "Not runtime `sandkit` objects. Import from `@sandustry-modding/types/configs`.",
+    "",
+    `- [configs](${p("configs")}) — \`modinfo.json\` and \`patches.json\``,
+    "",
     "</div>",
     "",
   ];
@@ -568,6 +574,7 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
     addPreferred(apiHref);
   }
   addPreferred(href("sandkit/react/README.md"));
+  addPreferred("api/configs.md");
   addPreferred(href("shared/asset/README.md"));
   addPreferred(href("shared/engine/README.md"));
   addPreferred(href("shared/jsonvalue/README.md"));
@@ -666,6 +673,7 @@ function writeApiSidebar(outDir, linkMap, mainNs, workerNs, engineNs) {
   const lines = [
     "- [Home](/)",
     "- [Changelog](Changelog.md)",
+    "- [Workshop corpus](workshop-corpus.md)",
     "- [Official Sandkit API](https://sandustry.com/sandkit.html ':target=_blank')",
     "- [npm package](https://www.npmjs.com/package/@sandustry-modding/types ':target=_blank')",
     "- [Mod template](https://sandustry-modding.github.io/SandustryModTemplate/#/ ':target=_blank')",
@@ -680,6 +688,7 @@ function writeApiSidebar(outDir, linkMap, mainNs, workerNs, engineNs) {
     ...ifFile("sandkit.api.worker.md", 1, "sandkit.api (worker)"),
     ...ifFile("sandkit.engine.md", 1, "sandkit.engine"),
     ...ifFile("sandkit.react.md", 1, "sandkit.react"),
+    ...ifFile("configs.md", 1, "configs (modinfo / patches)"),
     "",
     "- Main thread",
     ...grouped(mainNs, MAIN_API_GROUPS, 1),

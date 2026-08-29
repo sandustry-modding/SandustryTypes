@@ -14233,13 +14233,27 @@ optional directions?: string[]
 
 Defined in: [sandkit/api/structures.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L317)
 
+###### spanTiles?
+
+```ts
+optional spanTiles?: number
+```
+
+Defined in: [sandkit/api/structures.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L323)
+
+Fixed span length in tiles for line-linked structures.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+
 ***
 
 #### StructureVariant :id=sandkit.api.structures.structurevariant
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureVariant</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:321](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L321)
+Defined in: [sandkit/api/structures.d.ts:327](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L327)
 
 Rotated variant entry for a structure definition.
 
@@ -14251,7 +14265,7 @@ Rotated variant entry for a structure definition.
 id: StructureRef
 ```
 
-Defined in: [sandkit/api/structures.d.ts:322](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L322)
+Defined in: [sandkit/api/structures.d.ts:328](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L328)
 
 ###### angles
 
@@ -14259,17 +14273,185 @@ Defined in: [sandkit/api/structures.d.ts:322](https://github.com/sandustry-moddi
 angles: number[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L323)
+Defined in: [sandkit/api/structures.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L329)
 
 ***
 
-#### StructureRender :id=sandkit.api.structures.structurerender
+#### StructureTooltipHover :id=sandkit.api.structures.structuretooltiphover
 
-<p class="smt-member-path"><code>sandkit.api.structures.StructureRender</code></p>
+<p class="smt-member-path"><code>sandkit.api.structures.StructureTooltipHover</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:327](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L327)
+Defined in: [sandkit/api/structures.d.ts:337](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L337)
 
-Render settings for a structure definition.
+Custom hover tooltip driven by structure `data` fields.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+
+##### Properties
+
+###### type
+
+```ts
+type: "custom"
+```
+
+Defined in: [sandkit/api/structures.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L338)
+
+###### dataFieldMessage
+
+```ts
+dataFieldMessage: object
+```
+
+Defined in: [sandkit/api/structures.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L339)
+
+###### message?
+
+```ts
+optional message?: string
+```
+
+###### messageKey?
+
+```ts
+optional messageKey?: string
+```
+
+###### fields
+
+```ts
+fields: readonly StructureTooltipHoverField[]
+```
+
+***
+
+#### StructureTooltipHoverField :id=sandkit.api.structures.structuretooltiphoverfield
+
+<p class="smt-member-path"><code>sandkit.api.structures.StructureTooltipHoverField</code></p>
+
+Defined in: [sandkit/api/structures.d.ts:347](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L347)
+
+One interpolated field in a [StructureTooltipHover](#structuretooltiphover) message.
+
+##### Properties
+
+###### param
+
+```ts
+param: string
+```
+
+Defined in: [sandkit/api/structures.d.ts:348](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L348)
+
+###### field
+
+```ts
+field: string
+```
+
+Defined in: [sandkit/api/structures.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L349)
+
+###### fallback?
+
+```ts
+optional fallback?: string | number
+```
+
+Defined in: [sandkit/api/structures.d.ts:350](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L350)
+
+###### round?
+
+```ts
+optional round?: boolean
+```
+
+Defined in: [sandkit/api/structures.d.ts:351](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L351)
+
+###### valueLabels?
+
+```ts
+optional valueLabels?: Record<string, string>
+```
+
+Defined in: [sandkit/api/structures.d.ts:352](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L352)
+
+###### valueKeys?
+
+```ts
+optional valueKeys?: Record<string, string>
+```
+
+Defined in: [sandkit/api/structures.d.ts:353](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L353)
+
+***
+
+#### StructureSpritesheet :id=sandkit.api.structures.structurespritesheet
+
+<p class="smt-member-path"><code>sandkit.api.structures.StructureSpritesheet</code></p>
+
+Defined in: [sandkit/api/structures.d.ts:357](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L357)
+
+Spritesheet animation on a structure render block.
+
+##### Properties
+
+###### frameSize
+
+```ts
+frameSize: object
+```
+
+Defined in: [sandkit/api/structures.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L358)
+
+###### width
+
+```ts
+width: number
+```
+
+###### height
+
+```ts
+height: number
+```
+
+###### frames
+
+```ts
+frames: number
+```
+
+Defined in: [sandkit/api/structures.d.ts:359](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L359)
+
+###### intervalMs
+
+```ts
+intervalMs: number
+```
+
+Defined in: [sandkit/api/structures.d.ts:360](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L360)
+
+###### rowDataField?
+
+```ts
+optional rowDataField?: string
+```
+
+Defined in: [sandkit/api/structures.d.ts:362](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L362)
+
+When set, frame row follows this structure `data` field.
+
+***
+
+#### StructureRenderUi :id=sandkit.api.structures.structurerenderui
+
+<p class="smt-member-path"><code>sandkit.api.structures.StructureRenderUi</code></p>
+
+Defined in: [sandkit/api/structures.d.ts:366](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L366)
+
+Hotbar / build-menu UI sprite settings.
 
 ##### Properties
 
@@ -14279,7 +14461,7 @@ Render settings for a structure definition.
 optional imageName?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:328](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L328)
+Defined in: [sandkit/api/structures.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L367)
 
 ###### size?
 
@@ -14287,7 +14469,7 @@ Defined in: [sandkit/api/structures.d.ts:328](https://github.com/sandustry-moddi
 optional size?: object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L329)
+Defined in: [sandkit/api/structures.d.ts:368](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L368)
 
 ###### width
 
@@ -14307,7 +14489,7 @@ height: number
 optional offset?: object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:330](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L330)
+Defined in: [sandkit/api/structures.d.ts:369](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L369)
 
 ###### x
 
@@ -14321,13 +14503,137 @@ x: number
 y: number
 ```
 
+###### outline?
+
+```ts
+optional outline?: boolean
+```
+
+Defined in: [sandkit/api/structures.d.ts:370](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L370)
+
+###### width?
+
+```ts
+optional width?: string
+```
+
+Defined in: [sandkit/api/structures.d.ts:371](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L371)
+
+###### height?
+
+```ts
+optional height?: string
+```
+
+Defined in: [sandkit/api/structures.d.ts:372](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L372)
+
+###### clipToBounds?
+
+```ts
+optional clipToBounds?: boolean
+```
+
+Defined in: [sandkit/api/structures.d.ts:373](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L373)
+
+***
+
+#### StructureRender :id=sandkit.api.structures.structurerender
+
+<p class="smt-member-path"><code>sandkit.api.structures.StructureRender</code></p>
+
+Defined in: [sandkit/api/structures.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L377)
+
+Render settings for a structure definition.
+
+##### Properties
+
+###### imageName?
+
+```ts
+optional imageName?: string
+```
+
+Defined in: [sandkit/api/structures.d.ts:378](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L378)
+
+###### size?
+
+```ts
+optional size?: object
+```
+
+Defined in: [sandkit/api/structures.d.ts:379](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L379)
+
+###### width
+
+```ts
+width: number
+```
+
+###### height
+
+```ts
+height: number
+```
+
+###### offset?
+
+```ts
+optional offset?: object
+```
+
+Defined in: [sandkit/api/structures.d.ts:380](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L380)
+
+###### x
+
+```ts
+x: number
+```
+
+###### y
+
+```ts
+y: number
+```
+
+###### z?
+
+```ts
+optional z?: number
+```
+
+Defined in: [sandkit/api/structures.d.ts:381](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L381)
+
+###### ambienceGroup?
+
+```ts
+optional ambienceGroup?: string
+```
+
+Defined in: [sandkit/api/structures.d.ts:382](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L382)
+
+###### ui?
+
+```ts
+optional ui?: StructureRenderUi
+```
+
+Defined in: [sandkit/api/structures.d.ts:383](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L383)
+
+###### spritesheet?
+
+```ts
+optional spritesheet?: StructureSpritesheet
+```
+
+Defined in: [sandkit/api/structures.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L384)
+
 ***
 
 #### SandkitStructureDefinition :id=sandkit.api.structures.sandkitstructuredefinition
 
 <p class="smt-member-path"><code>sandkit.api.structures.SandkitStructureDefinition</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:334](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L334)
+Defined in: [sandkit/api/structures.d.ts:388](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L388)
 
 Full structure definition registered with the game.
 
@@ -14345,7 +14651,15 @@ Full structure definition registered with the game.
 id: string & object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L335)
+Defined in: [sandkit/api/structures.d.ts:389](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L389)
+
+###### name?
+
+```ts
+optional name?: string
+```
+
+Defined in: [sandkit/api/structures.d.ts:390](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L390)
 
 ###### nameKey?
 
@@ -14353,7 +14667,15 @@ Defined in: [sandkit/api/structures.d.ts:335](https://github.com/sandustry-moddi
 optional nameKey?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:336](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L336)
+Defined in: [sandkit/api/structures.d.ts:391](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L391)
+
+###### description?
+
+```ts
+optional description?: string
+```
+
+Defined in: [sandkit/api/structures.d.ts:392](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L392)
 
 ###### descriptionKey?
 
@@ -14361,7 +14683,7 @@ Defined in: [sandkit/api/structures.d.ts:336](https://github.com/sandustry-moddi
 optional descriptionKey?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:337](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L337)
+Defined in: [sandkit/api/structures.d.ts:393](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L393)
 
 ###### categoryKey?
 
@@ -14369,7 +14691,7 @@ Defined in: [sandkit/api/structures.d.ts:337](https://github.com/sandustry-moddi
 optional categoryKey?: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L338)
+Defined in: [sandkit/api/structures.d.ts:394](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L394)
 
 ###### order?
 
@@ -14377,7 +14699,7 @@ Defined in: [sandkit/api/structures.d.ts:338](https://github.com/sandustry-moddi
 optional order?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L339)
+Defined in: [sandkit/api/structures.d.ts:395](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L395)
 
 ###### buildModes?
 
@@ -14385,7 +14707,7 @@ Defined in: [sandkit/api/structures.d.ts:339](https://github.com/sandustry-moddi
 optional buildModes?: StructureBuildMode[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:340](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L340)
+Defined in: [sandkit/api/structures.d.ts:396](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L396)
 
 ###### shape?
 
@@ -14393,7 +14715,7 @@ Defined in: [sandkit/api/structures.d.ts:340](https://github.com/sandustry-moddi
 optional shape?: number[][]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:341](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L341)
+Defined in: [sandkit/api/structures.d.ts:397](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L397)
 
 ###### variants?
 
@@ -14401,7 +14723,7 @@ Defined in: [sandkit/api/structures.d.ts:341](https://github.com/sandustry-moddi
 optional variants?: StructureVariant[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:342](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L342)
+Defined in: [sandkit/api/structures.d.ts:398](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L398)
 
 ###### render?
 
@@ -14409,7 +14731,7 @@ Defined in: [sandkit/api/structures.d.ts:342](https://github.com/sandustry-moddi
 optional render?: StructureRender
 ```
 
-Defined in: [sandkit/api/structures.d.ts:343](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L343)
+Defined in: [sandkit/api/structures.d.ts:399](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L399)
 
 ###### defaultData?
 
@@ -14417,7 +14739,65 @@ Defined in: [sandkit/api/structures.d.ts:343](https://github.com/sandustry-moddi
 optional defaultData?: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/structures.d.ts:344](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L344)
+Defined in: [sandkit/api/structures.d.ts:400](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L400)
+
+###### linkedClearance?
+
+```ts
+optional linkedClearance?: string
+```
+
+Defined in: [sandkit/api/structures.d.ts:406](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L406)
+
+Linked placement clearance mode (for example `"allOrNothing"`).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+
+###### tooltipHover?
+
+```ts
+optional tooltipHover?: StructureTooltipHover
+```
+
+Defined in: [sandkit/api/structures.d.ts:412](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L412)
+
+Custom hover tooltip over the built structure.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+
+###### rejectWhenBlocked?
+
+```ts
+optional rejectWhenBlocked?: boolean
+```
+
+Defined in: [sandkit/api/structures.d.ts:414](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L414)
+
+Reject placement when the footprint is blocked.
+
+###### alwaysUnlocked?
+
+```ts
+optional alwaysUnlocked?: boolean
+```
+
+Defined in: [sandkit/api/structures.d.ts:416](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L416)
+
+Show in the build menu without research unlock.
+
+###### descriptionParams?
+
+```ts
+optional descriptionParams?: Record<string, string | number>
+```
+
+Defined in: [sandkit/api/structures.d.ts:418](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L418)
+
+Values interpolated into the structure description string.
 
 ***
 
@@ -14425,7 +14805,7 @@ Defined in: [sandkit/api/structures.d.ts:344](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBuildOptions</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L349)
+Defined in: [sandkit/api/structures.d.ts:423](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L423)
 
 Options passed to [buildAtCell](#buildatcell).
 
@@ -14441,7 +14821,7 @@ Options passed to [buildAtCell](#buildatcell).
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRemovalOptions</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:354](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L354)
+Defined in: [sandkit/api/structures.d.ts:428](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L428)
 
 Options passed to [removeAtCell](#removeatcell).
 
@@ -14453,7 +14833,7 @@ Options passed to [removeAtCell](#removeatcell).
 optional removeCells?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:356](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L356)
+Defined in: [sandkit/api/structures.d.ts:430](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L430)
 
 Also remove underlying terrain cells in the footprint.
 
@@ -14463,7 +14843,7 @@ Also remove underlying terrain cells in the footprint.
 optional skipVisuals?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L358)
+Defined in: [sandkit/api/structures.d.ts:432](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L432)
 
 Skip visual teardown effects.
 
@@ -14473,7 +14853,7 @@ Skip visual teardown effects.
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBulkRemovalOptions</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:362](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L362)
+Defined in: [sandkit/api/structures.d.ts:436](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L436)
 
 Options passed to bulk structure removal helpers.
 
@@ -14485,7 +14865,7 @@ Options passed to bulk structure removal helpers.
 optional removeCells?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:363](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L363)
+Defined in: [sandkit/api/structures.d.ts:437](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L437)
 
 ###### skipVisuals?
 
@@ -14493,7 +14873,7 @@ Defined in: [sandkit/api/structures.d.ts:363](https://github.com/sandustry-moddi
 optional skipVisuals?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:364](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L364)
+Defined in: [sandkit/api/structures.d.ts:438](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L438)
 
 ###### preserveUnselectable?
 
@@ -14501,7 +14881,7 @@ Defined in: [sandkit/api/structures.d.ts:364](https://github.com/sandustry-moddi
 optional preserveUnselectable?: boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:366](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L366)
+Defined in: [sandkit/api/structures.d.ts:440](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L440)
 
 When set, only remove structures at these positions.
 
@@ -14511,7 +14891,7 @@ When set, only remove structures at these positions.
 optional onlyPositions?: Vector2[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L367)
+Defined in: [sandkit/api/structures.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L441)
 
 ***
 
@@ -14519,7 +14899,7 @@ Defined in: [sandkit/api/structures.d.ts:367](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureProcessingContext</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:375](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L375)
+Defined in: [sandkit/api/structures.d.ts:449](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L449)
 
 Context passed to structure processing callbacks.
 
@@ -14535,7 +14915,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
-Defined in: [sandkit/api/structures.d.ts:381](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L381)
+Defined in: [sandkit/api/structures.d.ts:455](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L455)
 
 Return the resolved element type at a cell, or null.
 
@@ -14559,7 +14939,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 getElementTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
-Defined in: [sandkit/api/structures.d.ts:387](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L387)
+Defined in: [sandkit/api/structures.d.ts:461](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L461)
 
 ###### Parameters
 
@@ -14585,7 +14965,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias in 
 isCellEmptyAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:394](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L394)
+Defined in: [sandkit/api/structures.d.ts:468](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L468)
 
 Return true when the cell has no element or terrain.
 
@@ -14609,7 +14989,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 isCellEmpty(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:400](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L400)
+Defined in: [sandkit/api/structures.d.ts:474](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L474)
 
 ###### Parameters
 
@@ -14635,7 +15015,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias in 
 commit(mutations: unknown): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:408](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L408)
+Defined in: [sandkit/api/structures.d.ts:482](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L482)
 
 Commit batched grid mutations from the processing callback.
 
@@ -14659,7 +15039,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.stru
 
 #### ~~StructureProcessorDefinitionV1~~
 
-Defined in: [sandkit/api/structures.d.ts:415](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L415)
+Defined in: [sandkit/api/structures.d.ts:489](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L489)
 
 ##### Deprecated
 
@@ -14677,7 +15057,7 @@ https://sandustry.com/sandkit.html Official Sandkit API — deprecated alias of 
 intervalMs: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L417)
+Defined in: [sandkit/api/structures.d.ts:491](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L491)
 
 Tick interval in milliseconds. Must be > 0.
 
@@ -14687,7 +15067,7 @@ Tick interval in milliseconds. Must be > 0.
 process: (structure: Structure, context: StructureProcessingContext) => void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:419](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L419)
+Defined in: [sandkit/api/structures.d.ts:493](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L493)
 
 Synchronous callback invoked for each structure instance.
 
@@ -14711,7 +15091,7 @@ Synchronous callback invoked for each structure instance.
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigIntegerField</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:428](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L428)
+Defined in: [sandkit/api/structures.d.ts:502](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L502)
 
 Integer placement field with optional bounds.
 
@@ -14723,7 +15103,7 @@ Integer placement field with optional bounds.
 type: "integer"
 ```
 
-Defined in: [sandkit/api/structures.d.ts:429](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L429)
+Defined in: [sandkit/api/structures.d.ts:503](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L503)
 
 ###### id
 
@@ -14731,7 +15111,7 @@ Defined in: [sandkit/api/structures.d.ts:429](https://github.com/sandustry-moddi
 id: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:430](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L430)
+Defined in: [sandkit/api/structures.d.ts:504](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L504)
 
 ###### labelKey
 
@@ -14739,7 +15119,7 @@ Defined in: [sandkit/api/structures.d.ts:430](https://github.com/sandustry-moddi
 labelKey: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:431](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L431)
+Defined in: [sandkit/api/structures.d.ts:505](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L505)
 
 ###### min?
 
@@ -14747,7 +15127,7 @@ Defined in: [sandkit/api/structures.d.ts:431](https://github.com/sandustry-moddi
 optional min?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:432](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L432)
+Defined in: [sandkit/api/structures.d.ts:506](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L506)
 
 ###### max?
 
@@ -14755,7 +15135,7 @@ Defined in: [sandkit/api/structures.d.ts:432](https://github.com/sandustry-moddi
 optional max?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:433](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L433)
+Defined in: [sandkit/api/structures.d.ts:507](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L507)
 
 ###### default?
 
@@ -14763,7 +15143,7 @@ Defined in: [sandkit/api/structures.d.ts:433](https://github.com/sandustry-moddi
 optional default?: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:434](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L434)
+Defined in: [sandkit/api/structures.d.ts:508](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L508)
 
 ***
 
@@ -14771,7 +15151,7 @@ Defined in: [sandkit/api/structures.d.ts:434](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigChoiceField</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:438](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L438)
+Defined in: [sandkit/api/structures.d.ts:512](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L512)
 
 Choice placement field with labeled options.
 
@@ -14783,7 +15163,7 @@ Choice placement field with labeled options.
 type: "choice"
 ```
 
-Defined in: [sandkit/api/structures.d.ts:439](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L439)
+Defined in: [sandkit/api/structures.d.ts:513](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L513)
 
 ###### id
 
@@ -14791,7 +15171,7 @@ Defined in: [sandkit/api/structures.d.ts:439](https://github.com/sandustry-moddi
 id: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:440](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L440)
+Defined in: [sandkit/api/structures.d.ts:514](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L514)
 
 ###### labelKey
 
@@ -14799,7 +15179,7 @@ Defined in: [sandkit/api/structures.d.ts:440](https://github.com/sandustry-moddi
 labelKey: string
 ```
 
-Defined in: [sandkit/api/structures.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L441)
+Defined in: [sandkit/api/structures.d.ts:515](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L515)
 
 ###### options
 
@@ -14807,7 +15187,7 @@ Defined in: [sandkit/api/structures.d.ts:441](https://github.com/sandustry-moddi
 options: readonly object[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:442](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L442)
+Defined in: [sandkit/api/structures.d.ts:516](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L516)
 
 ***
 
@@ -14815,7 +15195,7 @@ Defined in: [sandkit/api/structures.d.ts:442](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigDefinition</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:449](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L449)
+Defined in: [sandkit/api/structures.d.ts:523](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L523)
 
 Placement rule definition for a structure type.
 
@@ -14827,7 +15207,7 @@ Placement rule definition for a structure type.
 structureId: string & object
 ```
 
-Defined in: [sandkit/api/structures.d.ts:450](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L450)
+Defined in: [sandkit/api/structures.d.ts:524](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L524)
 
 ###### fields
 
@@ -14835,7 +15215,7 @@ Defined in: [sandkit/api/structures.d.ts:450](https://github.com/sandustry-moddi
 fields: PlacementConfigField[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:451](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L451)
+Defined in: [sandkit/api/structures.d.ts:525](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L525)
 
 ***
 
@@ -14843,7 +15223,7 @@ Defined in: [sandkit/api/structures.d.ts:451](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.WeightedRefineryRecipeDefinitionV1</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:462](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L462)
+Defined in: [sandkit/api/structures.d.ts:536](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L536)
 
 Weighted refinery recipe definition shape.
 
@@ -14855,7 +15235,7 @@ Weighted refinery recipe definition shape.
 input: ElementType
 ```
 
-Defined in: [sandkit/api/structures.d.ts:463](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L463)
+Defined in: [sandkit/api/structures.d.ts:537](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L537)
 
 ###### outputs
 
@@ -14863,7 +15243,7 @@ Defined in: [sandkit/api/structures.d.ts:463](https://github.com/sandustry-moddi
 outputs: WeightedRecipeOutput[]
 ```
 
-Defined in: [sandkit/api/structures.d.ts:464](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L464)
+Defined in: [sandkit/api/structures.d.ts:538](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L538)
 
 ***
 
@@ -14871,7 +15251,7 @@ Defined in: [sandkit/api/structures.d.ts:464](https://github.com/sandustry-moddi
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureProcessingDefinitionV1</code></p>
 
-Defined in: [sandkit/api/structures.d.ts:468](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L468)
+Defined in: [sandkit/api/structures.d.ts:542](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L542)
 
 Custom structure processing definition shape.
 
@@ -14883,7 +15263,7 @@ Custom structure processing definition shape.
 structureType: StructureRef
 ```
 
-Defined in: [sandkit/api/structures.d.ts:469](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L469)
+Defined in: [sandkit/api/structures.d.ts:543](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L543)
 
 ###### intervalMs
 
@@ -14891,7 +15271,7 @@ Defined in: [sandkit/api/structures.d.ts:469](https://github.com/sandustry-moddi
 intervalMs: number
 ```
 
-Defined in: [sandkit/api/structures.d.ts:470](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L470)
+Defined in: [sandkit/api/structures.d.ts:544](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L544)
 
 ###### process
 
@@ -14899,7 +15279,7 @@ Defined in: [sandkit/api/structures.d.ts:470](https://github.com/sandustry-moddi
 process: (structure: Structure, context: StructureProcessingContext) => void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:471](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L471)
+Defined in: [sandkit/api/structures.d.ts:545](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L545)
 
 ###### Parameters
 
@@ -14925,7 +15305,7 @@ Defined in: [sandkit/api/structures.d.ts:471](https://github.com/sandustry-moddi
 PlacementConfigField = PlacementConfigIntegerField | PlacementConfigChoiceField
 ```
 
-Defined in: [sandkit/api/structures.d.ts:423](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L423)
+Defined in: [sandkit/api/structures.d.ts:497](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L497)
 
 Placement hotbar field definition.
 
@@ -14939,7 +15319,7 @@ Placement hotbar field definition.
 PlanterBoxRecipeDefinitionV1 = PlanterBoxRecipeDefinitionV1
 ```
 
-Defined in: [sandkit/api/structures.d.ts:455](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L455)
+Defined in: [sandkit/api/structures.d.ts:529](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L529)
 
 Planter box recipe definition shape.
 
@@ -14953,7 +15333,7 @@ Planter box recipe definition shape.
 ShakerRecipeDefinitionV1 = ShakerRecipeDefinitionV1
 ```
 
-Defined in: [sandkit/api/structures.d.ts:457](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L457)
+Defined in: [sandkit/api/structures.d.ts:531](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L531)
 
 Shaker recipe definition shape.
 
@@ -14967,7 +15347,7 @@ Shaker recipe definition shape.
 KineticPressRecipeDefinitionV1 = KineticPressRecipeDefinitionV1
 ```
 
-Defined in: [sandkit/api/structures.d.ts:459](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L459)
+Defined in: [sandkit/api/structures.d.ts:533](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L533)
 
 Kinetic press recipe definition shape.
 
@@ -16120,15 +16500,35 @@ Tech definition shape.
 
 ##### Properties
 
+###### name?
+
+```ts
+optional name?: string
+```
+
+Defined in: [sandkit/api/tech.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L100)
+
+Plain display name (when not using [nameKey](#namekey)).
+
 ###### nameKey?
 
 ```ts
 optional nameKey?: string
 ```
 
-Defined in: [sandkit/api/tech.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L100)
+Defined in: [sandkit/api/tech.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L102)
 
 Display name translation key.
+
+###### description?
+
+```ts
+optional description?: string
+```
+
+Defined in: [sandkit/api/tech.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L104)
+
+Plain description (when not using [descriptionKey](#descriptionkey)).
 
 ###### descriptionKey?
 
@@ -16136,9 +16536,75 @@ Display name translation key.
 optional descriptionKey?: string
 ```
 
-Defined in: [sandkit/api/tech.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L102)
+Defined in: [sandkit/api/tech.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L106)
 
 Description translation key.
+
+###### cost?
+
+```ts
+optional cost?: number
+```
+
+Defined in: [sandkit/api/tech.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L112)
+
+Research cost.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.registerDefinition`
+
+###### currencyType?
+
+```ts
+optional currencyType?: string
+```
+
+Defined in: [sandkit/api/tech.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L114)
+
+Currency used for [cost](#cost) (for example `"gold"`).
+
+###### branch?
+
+```ts
+optional branch?: string
+```
+
+Defined in: [sandkit/api/tech.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L116)
+
+Tech tree branch id (often copied from the parent node).
+
+###### unlocks?
+
+```ts
+optional unlocks?: object
+```
+
+Defined in: [sandkit/api/tech.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L118)
+
+Content unlocked when this tech is researched.
+
+###### structures?
+
+```ts
+optional structures?: readonly string[]
+```
+
+###### items?
+
+```ts
+optional items?: readonly string[]
+```
+
+###### requires?
+
+```ts
+optional requires?: readonly string[]
+```
+
+Defined in: [sandkit/api/tech.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L123)
+
+Prerequisite tech ids.
 
 ***
 
@@ -16146,7 +16612,7 @@ Description translation key.
 
 <p class="smt-member-path"><code>sandkit.api.tech.TechGridPosition</code></p>
 
-Defined in: [sandkit/api/tech.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L107)
+Defined in: [sandkit/api/tech.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L128)
 
 Position on the tech grid.
 
@@ -16158,7 +16624,7 @@ Position on the tech grid.
 x: number
 ```
 
-Defined in: [sandkit/api/tech.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L108)
+Defined in: [sandkit/api/tech.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L129)
 
 ###### y
 
@@ -16166,7 +16632,7 @@ Defined in: [sandkit/api/tech.d.ts:108](https://github.com/sandustry-modding/San
 y: number
 ```
 
-Defined in: [sandkit/api/tech.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L109)
+Defined in: [sandkit/api/tech.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L130)
 
 ***
 
@@ -16174,7 +16640,7 @@ Defined in: [sandkit/api/tech.d.ts:109](https://github.com/sandustry-modding/San
 
 <p class="smt-member-path"><code>sandkit.api.tech.ConservatoryUnlocks</code></p>
 
-Defined in: [sandkit/api/tech.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L113)
+Defined in: [sandkit/api/tech.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L134)
 
 Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory.md#appendunlock).
 
@@ -16186,7 +16652,7 @@ Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory
 optional structures?: readonly string[]
 ```
 
-Defined in: [sandkit/api/tech.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L115)
+Defined in: [sandkit/api/tech.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L136)
 
 Structure ids to unlock.
 
@@ -16196,7 +16662,7 @@ Structure ids to unlock.
 optional items?: readonly string[]
 ```
 
-Defined in: [sandkit/api/tech.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L117)
+Defined in: [sandkit/api/tech.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L138)
 
 Item ids to unlock.
 
@@ -32998,6 +33464,1726 @@ Vertical component.
 
 ---
 
+## configs
+
+Sandkit mod file schemas: `modinfo.json` and `patches.json`.
+
+These are not runtime `sandkit` properties. Import from
+`@sandustry-modding/types/configs` when typing mod folder config files.
+
+### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod file structure
+
+### Interfaces <!-- {docsify-ignore} -->
+
+#### ConfigSchemaNumber :id=configs.configschemanumber
+
+<p class="smt-member-path"><code>configs.ConfigSchemaNumber</code></p>
+
+Defined in: configs/modinfo.d.ts:12
+
+Number setting in `modinfo.json` `configSchema`.
+
+##### Properties
+
+###### type
+
+```ts
+type: "number"
+```
+
+Defined in: configs/modinfo.d.ts:18
+
+Discriminator. Must be `"number"`.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### default
+
+```ts
+default: number
+```
+
+Defined in: configs/modinfo.d.ts:24
+
+Value used when the player has not changed the setting.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### min?
+
+```ts
+optional min?: number
+```
+
+Defined in: configs/modinfo.d.ts:30
+
+Inclusive lower bound for the setting.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### max?
+
+```ts
+optional max?: number
+```
+
+Defined in: configs/modinfo.d.ts:36
+
+Inclusive upper bound for the setting.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### step?
+
+```ts
+optional step?: number
+```
+
+Defined in: configs/modinfo.d.ts:42
+
+UI step size for the number control.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### label?
+
+```ts
+optional label?: string
+```
+
+Defined in: configs/modinfo.d.ts:48
+
+Plain-text label shown in the settings UI.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### labelKey?
+
+```ts
+optional labelKey?: string
+```
+
+Defined in: configs/modinfo.d.ts:54
+
+i18n key for the settings label (preferred over [label](#label) when both exist).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### description?
+
+```ts
+optional description?: string
+```
+
+Defined in: configs/modinfo.d.ts:60
+
+Plain-text help text for the setting.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### descriptionKey?
+
+```ts
+optional descriptionKey?: string
+```
+
+Defined in: configs/modinfo.d.ts:66
+
+i18n key for the setting help text.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+***
+
+#### ConfigSchemaBoolean :id=configs.configschemaboolean
+
+<p class="smt-member-path"><code>configs.ConfigSchemaBoolean</code></p>
+
+Defined in: configs/modinfo.d.ts:70
+
+Boolean setting in `modinfo.json` `configSchema`.
+
+##### Properties
+
+###### type
+
+```ts
+type: "boolean"
+```
+
+Defined in: configs/modinfo.d.ts:76
+
+Discriminator. Must be `"boolean"`.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### default
+
+```ts
+default: boolean
+```
+
+Defined in: configs/modinfo.d.ts:82
+
+Value used when the player has not changed the setting.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### label?
+
+```ts
+optional label?: string
+```
+
+Defined in: configs/modinfo.d.ts:88
+
+Plain-text label shown in the settings UI.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### labelKey?
+
+```ts
+optional labelKey?: string
+```
+
+Defined in: configs/modinfo.d.ts:94
+
+i18n key for the settings label.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### description?
+
+```ts
+optional description?: string
+```
+
+Defined in: configs/modinfo.d.ts:100
+
+Plain-text help text for the setting.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### descriptionKey?
+
+```ts
+optional descriptionKey?: string
+```
+
+Defined in: configs/modinfo.d.ts:106
+
+i18n key for the setting help text.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+***
+
+#### ConfigSchemaChoiceOption :id=configs.configschemachoiceoption
+
+<p class="smt-member-path"><code>configs.ConfigSchemaChoiceOption</code></p>
+
+Defined in: configs/modinfo.d.ts:110
+
+One option inside a [ConfigSchemaChoice](#configschemachoice).
+
+##### Properties
+
+###### value
+
+```ts
+value: string
+```
+
+Defined in: configs/modinfo.d.ts:116
+
+Stored value written when the player picks this option.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### label?
+
+```ts
+optional label?: string
+```
+
+Defined in: configs/modinfo.d.ts:122
+
+Plain-text label for the option.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### labelKey?
+
+```ts
+optional labelKey?: string
+```
+
+Defined in: configs/modinfo.d.ts:128
+
+i18n key for the option label.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+***
+
+#### ConfigSchemaChoice :id=configs.configschemachoice
+
+<p class="smt-member-path"><code>configs.ConfigSchemaChoice</code></p>
+
+Defined in: configs/modinfo.d.ts:132
+
+Choice setting in `modinfo.json` `configSchema`.
+
+##### Properties
+
+###### type
+
+```ts
+type: "choice"
+```
+
+Defined in: configs/modinfo.d.ts:138
+
+Discriminator. Must be `"choice"`.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### default
+
+```ts
+default: string
+```
+
+Defined in: configs/modinfo.d.ts:144
+
+Default option [ConfigSchemaChoiceOption.value](#value).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### label?
+
+```ts
+optional label?: string
+```
+
+Defined in: configs/modinfo.d.ts:150
+
+Plain-text label shown in the settings UI.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### labelKey?
+
+```ts
+optional labelKey?: string
+```
+
+Defined in: configs/modinfo.d.ts:156
+
+i18n key for the settings label.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### options
+
+```ts
+options: readonly ConfigSchemaChoiceOption[]
+```
+
+Defined in: configs/modinfo.d.ts:162
+
+Allowed choices for this setting.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+***
+
+#### TextureOverride :id=configs.textureoverride
+
+<p class="smt-member-path"><code>configs.TextureOverride</code></p>
+
+Defined in: configs/modinfo.d.ts:182
+
+Animated (or static) texture replacement for a vanilla asset id.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+
+##### Properties
+
+###### path
+
+```ts
+path: string
+```
+
+Defined in: configs/modinfo.d.ts:188
+
+Path to the replacement image, relative to the mod root.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+
+###### frameWidth?
+
+```ts
+optional frameWidth?: number
+```
+
+Defined in: configs/modinfo.d.ts:194
+
+Width in pixels of one animation frame.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+
+###### frames?
+
+```ts
+optional frames?: number
+```
+
+Defined in: configs/modinfo.d.ts:200
+
+Number of frames in the spritesheet.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+
+###### intervalMs?
+
+```ts
+optional intervalMs?: number
+```
+
+Defined in: configs/modinfo.d.ts:206
+
+Milliseconds between animation frames.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+
+***
+
+#### ModProvide :id=configs.modprovide
+
+<p class="smt-member-path"><code>configs.ModProvide</code></p>
+
+Defined in: configs/modinfo.d.ts:214
+
+Optional content pack exposed by this mod for other mods or the game to consume.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provides`
+
+##### Properties
+
+###### kind
+
+```ts
+kind: string
+```
+
+Defined in: configs/modinfo.d.ts:220
+
+Kind of provided content (for example `"structureTextures"`).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provides`
+
+###### id
+
+```ts
+id: string
+```
+
+Defined in: configs/modinfo.d.ts:226
+
+Id of this provide entry within its kind.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provides`
+
+###### textureOverrides?
+
+```ts
+optional textureOverrides?: Record<string, string>
+```
+
+Defined in: configs/modinfo.d.ts:232
+
+Texture paths keyed by the vanilla or structure texture id they replace.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provides`
+
+***
+
+#### ModMapBlueprints :id=configs.modmapblueprints
+
+<p class="smt-member-path"><code>configs.ModMapBlueprints</code></p>
+
+Defined in: configs/modinfo.d.ts:242
+
+Blueprint image paths for a custom map pack.
+
+Paths are relative to the mod root.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+
+##### Properties
+
+###### terrain?
+
+```ts
+optional terrain?: string
+```
+
+Defined in: configs/modinfo.d.ts:248
+
+Terrain color map image.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+
+###### lights?
+
+```ts
+optional lights?: string
+```
+
+Defined in: configs/modinfo.d.ts:254
+
+Lights layout image.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+
+###### sensors?
+
+```ts
+optional sensors?: string
+```
+
+Defined in: configs/modinfo.d.ts:260
+
+Sensors layout image.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+
+###### authorization?
+
+```ts
+optional authorization?: string
+```
+
+Defined in: configs/modinfo.d.ts:266
+
+Authorization zones image.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+
+###### wall?
+
+```ts
+optional wall?: string
+```
+
+Defined in: configs/modinfo.d.ts:272
+
+Wall layout image.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+
+###### lightsMeta?
+
+```ts
+optional lightsMeta?: string
+```
+
+Defined in: configs/modinfo.d.ts:278
+
+Lights metadata image.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+
+###### decor?
+
+```ts
+optional decor?: string
+```
+
+Defined in: configs/modinfo.d.ts:284
+
+Decor layout image.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+
+###### config?
+
+```ts
+optional config?: string
+```
+
+Defined in: configs/modinfo.d.ts:290
+
+Map config JSON path.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+
+***
+
+#### ModMapPoint :id=configs.modmappoint
+
+<p class="smt-member-path"><code>configs.ModMapPoint</code></p>
+
+Defined in: configs/modinfo.d.ts:298
+
+World-pixel spawn or unstuck point.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+
+##### Properties
+
+###### x
+
+```ts
+x: number
+```
+
+Defined in: configs/modinfo.d.ts:304
+
+World X in pixels.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+
+###### y
+
+```ts
+y: number
+```
+
+Defined in: configs/modinfo.d.ts:310
+
+World Y in pixels.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+
+***
+
+#### ModMapTopBounds :id=configs.modmaptopbounds
+
+<p class="smt-member-path"><code>configs.ModMapTopBounds</code></p>
+
+Defined in: configs/modinfo.d.ts:318
+
+Vertical camera / travel bounds for the custom map.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.topBounds`
+
+##### Properties
+
+###### hard?
+
+```ts
+optional hard?: number
+```
+
+Defined in: configs/modinfo.d.ts:324
+
+Hard top bound in world pixels.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.topBounds`
+
+###### soft?
+
+```ts
+optional soft?: number
+```
+
+Defined in: configs/modinfo.d.ts:330
+
+Soft top bound in world pixels.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.topBounds`
+
+***
+
+#### ModMapDepthLight :id=configs.modmapdepthlight
+
+<p class="smt-member-path"><code>configs.ModMapDepthLight</code></p>
+
+Defined in: configs/modinfo.d.ts:338
+
+Depth-based light sizing for the custom map.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+
+##### Properties
+
+###### startY?
+
+```ts
+optional startY?: number
+```
+
+Defined in: configs/modinfo.d.ts:344
+
+World Y where depth light scaling starts.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+
+###### endY?
+
+```ts
+optional endY?: number
+```
+
+Defined in: configs/modinfo.d.ts:350
+
+World Y where depth light scaling ends.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+
+###### maxSize?
+
+```ts
+optional maxSize?: number
+```
+
+Defined in: configs/modinfo.d.ts:356
+
+Maximum light size at the shallow end of the range.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+
+###### minSize?
+
+```ts
+optional minSize?: number
+```
+
+Defined in: configs/modinfo.d.ts:362
+
+Minimum light size at the deep end of the range.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+
+***
+
+#### ModMapParallax :id=configs.modmapparallax
+
+<p class="smt-member-path"><code>configs.ModMapParallax</code></p>
+
+Defined in: configs/modinfo.d.ts:370
+
+Parallax background tuning for the custom map.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.parallax`
+
+##### Properties
+
+###### widthScale?
+
+```ts
+optional widthScale?: number
+```
+
+Defined in: configs/modinfo.d.ts:376
+
+Horizontal scale of the parallax layer.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.parallax`
+
+###### offsetY?
+
+```ts
+optional offsetY?: number
+```
+
+Defined in: configs/modinfo.d.ts:382
+
+Vertical offset of the parallax layer in pixels.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.parallax`
+
+***
+
+#### ModMapColorMappingLayers :id=configs.modmapcolormappinglayers
+
+<p class="smt-member-path"><code>configs.ModMapColorMappingLayers</code></p>
+
+Defined in: configs/modinfo.d.ts:390
+
+Color-map cell that paints both background and foreground terrain.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.colorMappings`
+
+##### Properties
+
+###### background?
+
+```ts
+optional background?: string
+```
+
+Defined in: configs/modinfo.d.ts:396
+
+Background terrain id for this blueprint RGB.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.colorMappings`
+
+###### foreground?
+
+```ts
+optional foreground?: string
+```
+
+Defined in: configs/modinfo.d.ts:402
+
+Foreground terrain id for this blueprint RGB.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.colorMappings`
+
+***
+
+#### ModMapDefinition :id=configs.modmapdefinition
+
+<p class="smt-member-path"><code>configs.ModMapDefinition</code></p>
+
+Defined in: configs/modinfo.d.ts:417
+
+Custom map pack block in `modinfo.json`.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+
+##### Properties
+
+###### blueprints
+
+```ts
+blueprints: ModMapBlueprints
+```
+
+Defined in: configs/modinfo.d.ts:423
+
+Paths to blueprint images and map config under the mod root.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.blueprints`
+
+###### width
+
+```ts
+width: number
+```
+
+Defined in: configs/modinfo.d.ts:429
+
+Map width in cells.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+
+###### height
+
+```ts
+height: number
+```
+
+Defined in: configs/modinfo.d.ts:435
+
+Map height in cells.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+
+###### spawn?
+
+```ts
+optional spawn?: ModMapPoint
+```
+
+Defined in: configs/modinfo.d.ts:441
+
+Player spawn position in world pixels.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+
+###### unstuck?
+
+```ts
+optional unstuck?: ModMapPoint
+```
+
+Defined in: configs/modinfo.d.ts:447
+
+Unstuck / rescue position in world pixels.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+
+###### deployment?
+
+```ts
+optional deployment?: string
+```
+
+Defined in: configs/modinfo.d.ts:453
+
+Deployment mode for the map (for example `"skip"`).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+
+###### topBounds?
+
+```ts
+optional topBounds?: ModMapTopBounds
+```
+
+Defined in: configs/modinfo.d.ts:459
+
+Vertical travel bounds at the top of the world.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.topBounds`
+
+###### depthLight?
+
+```ts
+optional depthLight?: ModMapDepthLight
+```
+
+Defined in: configs/modinfo.d.ts:465
+
+Depth-based light size curve.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.depthLight`
+
+###### parallax?
+
+```ts
+optional parallax?: ModMapParallax
+```
+
+Defined in: configs/modinfo.d.ts:471
+
+Parallax background tuning.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.parallax`
+
+###### colorMappings?
+
+```ts
+optional colorMappings?: Record<string, ModMapColorMapping>
+```
+
+Defined in: configs/modinfo.d.ts:477
+
+Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.colorMappings`
+
+***
+
+#### ModGameVersion :id=configs.modgameversion
+
+<p class="smt-member-path"><code>configs.ModGameVersion</code></p>
+
+Defined in: configs/modinfo.d.ts:485
+
+Compatible game version range for the mod.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVersion`
+
+##### Properties
+
+###### minimum?
+
+```ts
+optional minimum?: string
+```
+
+Defined in: configs/modinfo.d.ts:491
+
+Lowest supported game version string.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVersion`
+
+###### maximum?
+
+```ts
+optional maximum?: string
+```
+
+Defined in: configs/modinfo.d.ts:497
+
+Highest supported game version string.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVersion`
+
+***
+
+#### ModInfo :id=configs.modinfo
+
+<p class="smt-member-path"><code>configs.ModInfo</code></p>
+
+Defined in: configs/modinfo.d.ts:509
+
+Sandkit mod manifest (`modinfo.json`).
+
+Required for every mod folder. Minimal mods only need
+[manifestVersion](#manifestversion), [id](#id-1), [name](#name), [version](#version),
+[apiVersion](#apiversion), and [entry](#entry).
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+##### Properties
+
+###### manifestVersion
+
+```ts
+manifestVersion: 1
+```
+
+Defined in: configs/modinfo.d.ts:515
+
+Manifest format version. Must be `1` for Sandkit `apiVersion` 1.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### id
+
+```ts
+id: string
+```
+
+Defined in: configs/modinfo.d.ts:521
+
+Unique mod id. Prefer `author.mod-name` (matches folder / Workshop identity).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### name
+
+```ts
+name: string
+```
+
+Defined in: configs/modinfo.d.ts:527
+
+Display name shown in the mod list and Workshop UI.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### version
+
+```ts
+version: string
+```
+
+Defined in: configs/modinfo.d.ts:533
+
+Semver-style mod version string.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### apiVersion
+
+```ts
+apiVersion: 1
+```
+
+Defined in: configs/modinfo.d.ts:539
+
+Sandkit host API version this mod targets. Must be `1`.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### entry
+
+```ts
+entry: string
+```
+
+Defined in: configs/modinfo.d.ts:545
+
+Main-thread script path relative to the mod root (for example `"main.js"`).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### workerEntry?
+
+```ts
+optional workerEntry?: string
+```
+
+Defined in: configs/modinfo.d.ts:552
+
+Simulation-worker script path relative to the mod root.
+Required when the mod registers worker hooks or uses worker-only APIs.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### patches?
+
+```ts
+optional patches?: string
+```
+
+Defined in: configs/modinfo.d.ts:559
+
+Path to the patches file relative to the mod root (usually `"patches.json"`).
+When omitted, a present `patches.json` may still auto-load per official docs.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### description?
+
+```ts
+optional description?: string
+```
+
+Defined in: configs/modinfo.d.ts:565
+
+Long description shown in the mod list / Workshop.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### author?
+
+```ts
+optional author?: string
+```
+
+Defined in: configs/modinfo.d.ts:571
+
+Author display name.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### gameVersion?
+
+```ts
+optional gameVersion?: ModGameVersion
+```
+
+Defined in: configs/modinfo.d.ts:577
+
+Inclusive game version range this mod claims to support.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `gameVersion`
+
+###### dependencies?
+
+```ts
+optional dependencies?: string[]
+```
+
+Defined in: configs/modinfo.d.ts:583
+
+Other mod ids that should load with this mod.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### loadOrder?
+
+```ts
+optional loadOrder?: number
+```
+
+Defined in: configs/modinfo.d.ts:589
+
+Relative load priority. Lower values load earlier; higher values load later.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest
+
+###### configSchema?
+
+```ts
+optional configSchema?: Record<string, ConfigSchemaEntry>
+```
+
+Defined in: configs/modinfo.d.ts:596
+
+Player-facing settings schema. Keys are setting ids; values define type and UI.
+Read at runtime with `api.settings.get`.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+###### configOverrides?
+
+```ts
+optional configOverrides?: Record<string, string>
+```
+
+Defined in: configs/modinfo.d.ts:602
+
+Paths to JSON config overrides keyed by vanilla config id (for example `"drill"`).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configOverrides`
+
+###### shaderOverrides?
+
+```ts
+optional shaderOverrides?: Record<string, string>
+```
+
+Defined in: configs/modinfo.d.ts:608
+
+Paths to GLSL shader replacements keyed by shader id (for example `"sky"`).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `shaderOverrides`
+
+###### textureOverrides?
+
+```ts
+optional textureOverrides?: Record<string, string | TextureOverride>
+```
+
+Defined in: configs/modinfo.d.ts:615
+
+Texture replacements keyed by vanilla texture id.
+A string value is a path; an object adds spritesheet frame metadata.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `textureOverrides`
+
+###### provides?
+
+```ts
+optional provides?: ModProvide[]
+```
+
+Defined in: configs/modinfo.d.ts:621
+
+Optional content this mod publishes for others to consume.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `provides`
+
+###### map?
+
+```ts
+optional map?: ModMapDefinition
+```
+
+Defined in: configs/modinfo.d.ts:627
+
+Embedded custom map pack definition for this mod.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map`
+
+***
+
+#### BundlePatchRegex :id=configs.bundlepatchregex
+
+<p class="smt-member-path"><code>configs.BundlePatchRegex</code></p>
+
+Defined in: configs/patches.d.ts:56
+
+Regex finder when the target is not a plain [BundlePatch.find](#find) string.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+##### Properties
+
+###### pattern
+
+```ts
+pattern: string
+```
+
+Defined in: configs/patches.d.ts:63
+
+JavaScript regex pattern source (without surrounding `/` delimiters).
+Capture groups may be referenced from [BundlePatch.code](#code) as `$1`, `$2`, …
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### flags?
+
+```ts
+optional flags?: string
+```
+
+Defined in: configs/patches.d.ts:69
+
+Optional regex flags (for example `"g"` or `"m"`).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+***
+
+#### BundlePatch :id=configs.bundlepatch
+
+<p class="smt-member-path"><code>configs.BundlePatch</code></p>
+
+Defined in: configs/patches.d.ts:81
+
+One entry in `patches.json`.
+
+The file is an array of these objects. Prefer `expectedMatches` so a missed
+or duplicated match fails loudly. When several patches must succeed together
+(for example main + worker), set the same [atomicGroup](#atomicgroup) on each.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+##### Properties
+
+###### file
+
+```ts
+file: PatchTargetFile
+```
+
+Defined in: configs/patches.d.ts:87
+
+Compiled bundle to modify.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### find?
+
+```ts
+optional find?: string
+```
+
+Defined in: configs/patches.d.ts:94
+
+Exact source substring to locate in the bundle.
+Mutually exclusive with [regex](#regex) in typical patches.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### code?
+
+```ts
+optional code?: string
+```
+
+Defined in: configs/patches.d.ts:101
+
+Replacement or inserted source text.
+Official examples use `code`; some loaders also accept [replace](#replace).
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### replace?
+
+```ts
+optional replace?: string
+```
+
+Defined in: configs/patches.d.ts:107
+
+Alias of [code](#code) used by some patch loaders and workshop mods.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### operation?
+
+```ts
+optional operation?: PatchOperation
+```
+
+Defined in: configs/patches.d.ts:114
+
+How to apply the match. Defaults to replace-style behaviour when omitted
+in common workshop patches.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### expectedMatches?
+
+```ts
+optional expectedMatches?: number | "any"
+```
+
+Defined in: configs/patches.d.ts:122
+
+How many times `find` / `regex` must match.
+Use a number (often `1`) so the load fails on miss or over-match.
+Some loaders accept `"any"`.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### regex?
+
+```ts
+optional regex?: BundlePatchRegex
+```
+
+Defined in: configs/patches.d.ts:128
+
+Regex-based locator instead of a literal [find](#find) string.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### before?
+
+```ts
+optional before?: string
+```
+
+Defined in: configs/patches.d.ts:134
+
+Text inserted before the match when [operation](#operation) is `"wrap"`.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### after?
+
+```ts
+optional after?: string
+```
+
+Defined in: configs/patches.d.ts:140
+
+Text inserted after the match when [operation](#operation) is `"wrap"`.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### id?
+
+```ts
+optional id?: string
+```
+
+Defined in: configs/patches.d.ts:146
+
+Optional stable id for logging and tooling.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+###### atomicGroup?
+
+```ts
+optional atomicGroup?: string
+```
+
+Defined in: configs/patches.d.ts:152
+
+Group id shared by patches that must all succeed or all fail together.
+Use the same string on paired main (`js/bundle.js`) and worker
+(`js/simulation-worker.js`) patches.
+
+###### description?
+
+```ts
+optional description?: string
+```
+
+Defined in: configs/patches.d.ts:156
+
+Human-readable note for maintainers. Not required by the official schema.
+
+### Type Aliases <!-- {docsify-ignore} -->
+
+#### ConfigSchemaEntry :id=configs.configschemaentry
+
+<p class="smt-member-path"><code>configs.ConfigSchemaEntry</code></p>
+
+```ts
+ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice
+```
+
+Defined in: configs/modinfo.d.ts:172
+
+One entry under `modinfo.json` `configSchema`.
+
+Keys of `configSchema` are setting ids read via `api.settings.get`.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `configSchema`
+
+***
+
+#### ModMapColorMapping :id=configs.modmapcolormapping
+
+<p class="smt-member-path"><code>configs.ModMapColorMapping</code></p>
+
+```ts
+ModMapColorMapping = string | ModMapColorMappingLayers
+```
+
+Defined in: configs/modinfo.d.ts:410
+
+One `map.colorMappings` value: a single terrain id, or layered background/foreground ids.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Mod manifest `map.colorMappings`
+
+***
+
+#### PatchTargetFile :id=configs.patchtargetfile
+
+<p class="smt-member-path"><code>configs.PatchTargetFile</code></p>
+
+```ts
+PatchTargetFile = "js/bundle.js" | "js/simulation-worker.js" | "js/manager-worker.js" | "js/utility-worker.js" | string & object
+```
+
+Defined in: configs/patches.d.ts:24
+
+Known compiled bundle paths the loader can patch.
+
+| Value | Role |
+| --- | --- |
+| `js/bundle.js` | Main renderer |
+| `js/manager-worker.js` | Manager worker |
+| `js/simulation-worker.js` | Simulation workers |
+| `js/utility-worker.js` | Utility worker |
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+***
+
+#### PatchOperation :id=configs.patchoperation
+
+<p class="smt-member-path"><code>configs.PatchOperation</code></p>
+
+```ts
+PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfter" | "wrap"
+```
+
+Defined in: configs/patches.d.ts:44
+
+Supported patch operations.
+
+| Value | Behaviour |
+| --- | --- |
+| `replace` | Replace the matched text with [BundlePatch.code](#code) / [BundlePatch.replace](#replace) |
+| `remove` | Delete the matched text |
+| `insertBefore` | Insert [BundlePatch.code](#code) before the match |
+| `insertAfter` | Insert [BundlePatch.code](#code) after the match |
+| `wrap` | Surround the match with [BundlePatch.before](#before) and [BundlePatch.after](#after) |
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+***
+
+#### BundlePatchesFile :id=configs.bundlepatchesfile
+
+<p class="smt-member-path"><code>configs.BundlePatchesFile</code></p>
+
+```ts
+BundlePatchesFile = BundlePatch[]
+```
+
+Defined in: configs/patches.d.ts:164
+
+Root shape of `patches.json`: an ordered list of [BundlePatch](#bundlepatch) entries.
+
+##### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Patching compiled JavaScript
+
+---
+
 ## sandkit.api.building.StructureType
 
 Defined in: [sandkit/api/building.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L10)
@@ -35096,6 +37282,7 @@ Folder layout mirrors runtime shape so you can jump from code to the matching `.
 | `src/global.d.ts` | Ambient `sandkit` free variable and type aliases |
 | `src/worker/` | Worker-thread `sandkit.api` (see `WorkerSandkitApi`) |
 | `src/shared/` | Internal base shapes reused by main and worker declarations |
+| `src/configs/` | `modinfo.json` / `patches.json` schemas (not a runtime object) |
 
 ### Runtime shape vs `export namespace`
 
@@ -35130,6 +37317,7 @@ Deep declaration modules are also available, for example:
 
 ```ts
 import type { RetroConsoleGame } from "@sandustry-modding/types/sandkit/engine";
+import type { ModInfo, BundlePatch } from "@sandustry-modding/types/configs";
 ```
 
 ### Usage
@@ -35137,6 +37325,7 @@ import type { RetroConsoleGame } from "@sandustry-modding/types/sandkit/engine";
 - **Main mod (`main.js`):** use the ambient free name `sandkit`. Type aliases such as `SandkitApi` are global; do not import a value binding.
 - **Worker mod (`worker.js`):** type `sandkit.api` as `WorkerSandkitApi`. Worker and main APIs overlap but are not interchangeable.
 - **Shared folder:** not a runtime namespace. It holds domain shapes and API bases that main and worker modules extend.
+- **Configs folder:** `modinfo.json` and `patches.json` schemas (`@sandustry-modding/types/configs`). Not part of the live `sandkit` object.
 
 ### Maintaining types
 

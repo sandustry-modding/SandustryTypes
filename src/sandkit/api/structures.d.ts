@@ -315,6 +315,12 @@ export namespace structures {
   export interface StructureBuildMode {
     type: string;
     directions?: string[];
+    /**
+     * Fixed span length in tiles for line-linked structures.
+     *
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+     */
+    spanTiles?: number;
   }
 
   /** Rotated variant entry for a structure definition. */
@@ -323,17 +329,67 @@ export namespace structures {
     angles: number[];
   }
 
+  /**
+   * Custom hover tooltip driven by structure `data` fields.
+   *
+   * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+   */
+  export interface StructureTooltipHover {
+    type: "custom";
+    dataFieldMessage: {
+      message?: string;
+      messageKey?: string;
+      fields: readonly StructureTooltipHoverField[];
+    };
+  }
+
+  /** One interpolated field in a {@link StructureTooltipHover} message. */
+  export interface StructureTooltipHoverField {
+    param: string;
+    field: string;
+    fallback?: string | number;
+    round?: boolean;
+    valueLabels?: Record<string, string>;
+    valueKeys?: Record<string, string>;
+  }
+
+  /** Spritesheet animation on a structure render block. */
+  export interface StructureSpritesheet {
+    frameSize: { width: number; height: number };
+    frames: number;
+    intervalMs: number;
+    /** When set, frame row follows this structure `data` field. */
+    rowDataField?: string;
+  }
+
+  /** Hotbar / build-menu UI sprite settings. */
+  export interface StructureRenderUi {
+    imageName?: string;
+    size?: { width: number; height: number };
+    offset?: { x: number; y: number };
+    outline?: boolean;
+    width?: string;
+    height?: string;
+    clipToBounds?: boolean;
+  }
+
   /** Render settings for a structure definition. */
   export interface StructureRender {
     imageName?: string;
     size?: { width: number; height: number };
     offset?: { x: number; y: number };
+    z?: number;
+    ambienceGroup?: string;
+    ui?: StructureRenderUi;
+    spritesheet?: StructureSpritesheet;
   }
 
   /** Full structure definition registered with the game. */
   export interface SandkitStructureDefinition {
     id: StructureId;
+    name?: string;
     nameKey?: string;
+    description?: string;
     descriptionKey?: string;
     categoryKey?: string;
     order?: number;
@@ -342,6 +398,24 @@ export namespace structures {
     variants?: StructureVariant[];
     render?: StructureRender;
     defaultData?: Record<string, unknown>;
+    /**
+     * Linked placement clearance mode (for example `"allOrNothing"`).
+     *
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+     */
+    linkedClearance?: string;
+    /**
+     * Custom hover tooltip over the built structure.
+     *
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.structures.register`
+     */
+    tooltipHover?: StructureTooltipHover;
+    /** Reject placement when the footprint is blocked. */
+    rejectWhenBlocked?: boolean;
+    /** Show in the build menu without research unlock. */
+    alwaysUnlocked?: boolean;
+    /** Values interpolated into the structure description string. */
+    descriptionParams?: Record<string, string | number>;
     [key: string]: unknown;
   }
 

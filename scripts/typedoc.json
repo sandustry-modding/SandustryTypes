@@ -7,6 +7,7 @@
     "../src/shared/jsonvalue.d.ts",
     "../src/shared/nominal.d.ts",
     "../src/shared/player.d.ts",
+    "../src/configs/index.d.ts",
     "../src/sandkit/index.d.ts",
     "../src/sandkit/api/index.d.ts",
     "../src/sandkit/enums/index.d.ts",

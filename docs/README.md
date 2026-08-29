@@ -16,6 +16,8 @@ Community TypeScript reference for the live Sandustry `sandkit` host API. Packag
 | [Engine](api/sandkit.engine.md) | Escape hatch (`sandkit.engine`) |
 | [Enums](api/sandkit.enums.md) | Runtime enum values |
 | [React](api/sandkit.react.md) | HUD JSX helpers |
+| [Configs](api/configs.md) | `modinfo.json` and `patches.json` schemas |
+| [Workshop corpus](workshop-corpus.md) | Shapes mined from published workshop mods |
 
 ## Install types
 

@@ -22,15 +22,35 @@ Tech definition shape.
 
 #### Properties
 
+##### name?
+
+```ts
+optional name?: string
+```
+
+Defined in: [sandkit/api/tech.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L100)
+
+Plain display name (when not using [nameKey](#namekey)).
+
 ##### nameKey?
 
 ```ts
 optional nameKey?: string
 ```
 
-Defined in: [sandkit/api/tech.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L100)
+Defined in: [sandkit/api/tech.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L102)
 
 Display name translation key.
+
+##### description?
+
+```ts
+optional description?: string
+```
+
+Defined in: [sandkit/api/tech.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L104)
+
+Plain description (when not using [descriptionKey](#descriptionkey)).
 
 ##### descriptionKey?
 
@@ -38,9 +58,75 @@ Display name translation key.
 optional descriptionKey?: string
 ```
 
-Defined in: [sandkit/api/tech.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L102)
+Defined in: [sandkit/api/tech.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L106)
 
 Description translation key.
+
+##### cost?
+
+```ts
+optional cost?: number
+```
+
+Defined in: [sandkit/api/tech.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L112)
+
+Research cost.
+
+###### See
+
+https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.registerDefinition`
+
+##### currencyType?
+
+```ts
+optional currencyType?: string
+```
+
+Defined in: [sandkit/api/tech.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L114)
+
+Currency used for [cost](#cost) (for example `"gold"`).
+
+##### branch?
+
+```ts
+optional branch?: string
+```
+
+Defined in: [sandkit/api/tech.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L116)
+
+Tech tree branch id (often copied from the parent node).
+
+##### unlocks?
+
+```ts
+optional unlocks?: object
+```
+
+Defined in: [sandkit/api/tech.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L118)
+
+Content unlocked when this tech is researched.
+
+###### structures?
+
+```ts
+optional structures?: readonly string[]
+```
+
+###### items?
+
+```ts
+optional items?: readonly string[]
+```
+
+##### requires?
+
+```ts
+optional requires?: readonly string[]
+```
+
+Defined in: [sandkit/api/tech.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L123)
+
+Prerequisite tech ids.
 
 ***
 
@@ -48,7 +134,7 @@ Description translation key.
 
 <p class="smt-member-path"><code>sandkit.api.tech.TechGridPosition</code></p>
 
-Defined in: [sandkit/api/tech.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L107)
+Defined in: [sandkit/api/tech.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L128)
 
 Position on the tech grid.
 
@@ -60,7 +146,7 @@ Position on the tech grid.
 x: number
 ```
 
-Defined in: [sandkit/api/tech.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L108)
+Defined in: [sandkit/api/tech.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L129)
 
 ##### y
 
@@ -68,7 +154,7 @@ Defined in: [sandkit/api/tech.d.ts:108](https://github.com/sandustry-modding/San
 y: number
 ```
 
-Defined in: [sandkit/api/tech.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L109)
+Defined in: [sandkit/api/tech.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L130)
 
 ***
 
@@ -76,7 +162,7 @@ Defined in: [sandkit/api/tech.d.ts:109](https://github.com/sandustry-modding/San
 
 <p class="smt-member-path"><code>sandkit.api.tech.ConservatoryUnlocks</code></p>
 
-Defined in: [sandkit/api/tech.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L113)
+Defined in: [sandkit/api/tech.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L134)
 
 Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory.md#appendunlock).
 
@@ -88,7 +174,7 @@ Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory
 optional structures?: readonly string[]
 ```
 
-Defined in: [sandkit/api/tech.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L115)
+Defined in: [sandkit/api/tech.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L136)
 
 Structure ids to unlock.
 
@@ -98,7 +184,7 @@ Structure ids to unlock.
 optional items?: readonly string[]
 ```
 
-Defined in: [sandkit/api/tech.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L117)
+Defined in: [sandkit/api/tech.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L138)
 
 Item ids to unlock.
 

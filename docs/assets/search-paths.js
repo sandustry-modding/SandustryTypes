@@ -1,5 +1,6 @@
 window.SMT_SEARCH_PATHS = [
   "/",
+  "/api/configs",
   "/api/sandkit",
   "/api/sandkit.api",
   "/api/sandkit.api.action",
@@ -166,6 +167,6 @@ window.SMT_SEARCH_PATHS = [
   "/api/shared.nominal",
   "/api/shared.player",
   "/api/types",
-  "/Changelog",
-  "/modules"
+  "/modules",
+  "/workshop-corpus"
 ];

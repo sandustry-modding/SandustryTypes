@@ -96,10 +96,31 @@ export namespace tech {
 
   /** Tech definition shape. */
   export interface TechDefinition {
+    /** Plain display name (when not using {@link nameKey}). */
+    name?: string;
     /** Display name translation key. */
     nameKey?: string;
+    /** Plain description (when not using {@link descriptionKey}). */
+    description?: string;
     /** Description translation key. */
     descriptionKey?: string;
+    /**
+     * Research cost.
+     *
+     * @see https://sandustry.com/sandkit.html Official Sandkit API — Main entry `api.tech.registerDefinition`
+     */
+    cost?: number;
+    /** Currency used for {@link cost} (for example `"gold"`). */
+    currencyType?: string;
+    /** Tech tree branch id (often copied from the parent node). */
+    branch?: string;
+    /** Content unlocked when this tech is researched. */
+    unlocks?: {
+      structures?: readonly string[];
+      items?: readonly string[];
+    };
+    /** Prerequisite tech ids. */
+    requires?: readonly string[];
     [key: string]: unknown;
   }
 

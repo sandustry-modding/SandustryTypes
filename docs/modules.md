@@ -239,5 +239,11 @@ Worker-thread namespaces. Same names as main where they overlap; pages use a `.w
 - [nominal](api/shared.nominal.md)
 - [player](api/shared.player.md)
 
+## Mod file schemas
+
+Not runtime `sandkit` objects. Import from `@sandustry-modding/types/configs`.
+
+- [configs](api/configs.md) — `modinfo.json` and `patches.json`
+
 </div>
 
