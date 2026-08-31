@@ -6,7 +6,6 @@
   - [sandkit.engine](api/sandkit.engine.md)
   - [sandkit.react](api/sandkit.react.md)
 - [configs](api/configs.md)
-- [JSON Schema](schemas.md)
 - [Full API reference](full.md)
 
 ---

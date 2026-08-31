@@ -69,6 +69,10 @@ export namespace elements {
     },
     density: number,
     matterType: MatterType,
+    /** When true, the grabber can pick up this element. */
+    isGrabbable?: boolean,
+    /** When true, conveyors can move this element. */
+    isTransportable?: boolean,
     getExtraProps?: () => { data: Record<PropertyKey, any> }
   };
 

@@ -5,11 +5,14 @@ Sandkit mod file schemas: `modinfo.json` and `patches.json`.
 These are not runtime `sandkit` properties. Import from
 `@sandustry-modding/types/configs` when typing mod folder config files.
 
-JSON Schema (for editors / validators): [JSON Schema](../schemas.md).
+JSON Schema (GitHub Pages):
+https://sandustry-modding.github.io/SandustryTypes/schemas/modinfo.json
+https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
 
 ## See
 
-[Official docs](https://sandustry.com/sandkit.html#mod-files-heading)
+ - [Official docs](https://sandustry.com/sandkit.html#mod-files-heading)
+ - [JSON Schema docs](https://sandustry-modding.github.io/SandustryTypes/#/schemas)
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -367,13 +370,41 @@ i18n key for the settings label.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
+##### description?
+
+```ts
+optional description?: string
+```
+
+Defined in: [configs/modinfo.d.ts:285](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L285)
+
+Plain-text help text for the setting.
+
+###### See
+
+[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
+
+##### descriptionKey?
+
+```ts
+optional descriptionKey?: string
+```
+
+Defined in: [configs/modinfo.d.ts:291](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L291)
+
+i18n key for the setting help text.
+
+###### See
+
+[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
+
 ##### options
 
 ```ts
 options: readonly ConfigSchemaChoiceOption[]
 ```
 
-Defined in: [configs/modinfo.d.ts:285](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L285)
+Defined in: [configs/modinfo.d.ts:297](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L297)
 
 Allowed choices for this setting.
 
@@ -387,7 +418,7 @@ Allowed choices for this setting.
 
 <p class="smt-member-path"><code>configs.TextureOverride</code></p>
 
-Defined in: [configs/modinfo.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L305)
+Defined in: [configs/modinfo.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L317)
 
 Animated (or static) texture replacement for a vanilla asset id.
 
@@ -403,7 +434,7 @@ Animated (or static) texture replacement for a vanilla asset id.
 path: string
 ```
 
-Defined in: [configs/modinfo.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L311)
+Defined in: [configs/modinfo.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L323)
 
 Path to the replacement image, relative to the mod root.
 
@@ -417,7 +448,7 @@ Path to the replacement image, relative to the mod root.
 optional frameWidth?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L317)
+Defined in: [configs/modinfo.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L329)
 
 Width in pixels of one animation frame.
 
@@ -431,7 +462,7 @@ Width in pixels of one animation frame.
 optional frames?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L323)
+Defined in: [configs/modinfo.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L335)
 
 Number of frames in the spritesheet.
 
@@ -445,7 +476,7 @@ Number of frames in the spritesheet.
 optional intervalMs?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L329)
+Defined in: [configs/modinfo.d.ts:341](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L341)
 
 Milliseconds between animation frames.
 
@@ -459,7 +490,7 @@ Milliseconds between animation frames.
 
 <p class="smt-member-path"><code>configs.ModProvide</code></p>
 
-Defined in: [configs/modinfo.d.ts:337](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L337)
+Defined in: [configs/modinfo.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L349)
 
 Optional content pack exposed by this mod for other mods or the game to consume.
 
@@ -475,7 +506,7 @@ Optional content pack exposed by this mod for other mods or the game to consume.
 kind: string
 ```
 
-Defined in: [configs/modinfo.d.ts:343](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L343)
+Defined in: [configs/modinfo.d.ts:355](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L355)
 
 Kind of provided content (for example `"structureTextures"`).
 
@@ -489,7 +520,7 @@ Kind of provided content (for example `"structureTextures"`).
 id: string
 ```
 
-Defined in: [configs/modinfo.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L349)
+Defined in: [configs/modinfo.d.ts:361](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L361)
 
 Id of this provide entry within its kind.
 
@@ -503,7 +534,7 @@ Id of this provide entry within its kind.
 optional textureOverrides?: Record<string, string>
 ```
 
-Defined in: [configs/modinfo.d.ts:355](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L355)
+Defined in: [configs/modinfo.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L367)
 
 Texture paths keyed by the vanilla or structure texture id they replace.
 
@@ -517,7 +548,7 @@ Texture paths keyed by the vanilla or structure texture id they replace.
 
 <p class="smt-member-path"><code>configs.ModMapBlueprints</code></p>
 
-Defined in: [configs/modinfo.d.ts:365](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L365)
+Defined in: [configs/modinfo.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L377)
 
 Blueprint image paths for a custom map pack.
 
@@ -535,7 +566,7 @@ Paths are relative to the mod root.
 optional terrain?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:371](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L371)
+Defined in: [configs/modinfo.d.ts:383](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L383)
 
 Terrain color map image.
 
@@ -549,7 +580,7 @@ Terrain color map image.
 optional lights?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L377)
+Defined in: [configs/modinfo.d.ts:389](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L389)
 
 Lights layout image.
 
@@ -563,7 +594,7 @@ Lights layout image.
 optional sensors?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:383](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L383)
+Defined in: [configs/modinfo.d.ts:395](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L395)
 
 Sensors layout image.
 
@@ -577,7 +608,7 @@ Sensors layout image.
 optional authorization?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:389](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L389)
+Defined in: [configs/modinfo.d.ts:401](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L401)
 
 Authorization zones image.
 
@@ -591,7 +622,7 @@ Authorization zones image.
 optional wall?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:395](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L395)
+Defined in: [configs/modinfo.d.ts:407](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L407)
 
 Wall layout image.
 
@@ -605,7 +636,7 @@ Wall layout image.
 optional lightsMeta?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:401](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L401)
+Defined in: [configs/modinfo.d.ts:413](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L413)
 
 Lights metadata image.
 
@@ -619,7 +650,7 @@ Lights metadata image.
 optional decor?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:407](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L407)
+Defined in: [configs/modinfo.d.ts:419](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L419)
 
 Decor layout image.
 
@@ -633,7 +664,7 @@ Decor layout image.
 optional config?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:413](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L413)
+Defined in: [configs/modinfo.d.ts:425](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L425)
 
 Map config JSON path.
 
@@ -647,7 +678,7 @@ Map config JSON path.
 
 <p class="smt-member-path"><code>configs.ModMapPoint</code></p>
 
-Defined in: [configs/modinfo.d.ts:421](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L421)
+Defined in: [configs/modinfo.d.ts:433](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L433)
 
 World-pixel spawn or unstuck point.
 
@@ -663,7 +694,7 @@ World-pixel spawn or unstuck point.
 x: number
 ```
 
-Defined in: [configs/modinfo.d.ts:427](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L427)
+Defined in: [configs/modinfo.d.ts:439](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L439)
 
 World X in pixels.
 
@@ -677,7 +708,7 @@ World X in pixels.
 y: number
 ```
 
-Defined in: [configs/modinfo.d.ts:433](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L433)
+Defined in: [configs/modinfo.d.ts:445](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L445)
 
 World Y in pixels.
 
@@ -691,7 +722,7 @@ World Y in pixels.
 
 <p class="smt-member-path"><code>configs.ModMapTopBounds</code></p>
 
-Defined in: [configs/modinfo.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L441)
+Defined in: [configs/modinfo.d.ts:453](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L453)
 
 Vertical camera / travel bounds for the custom map.
 
@@ -707,7 +738,7 @@ Vertical camera / travel bounds for the custom map.
 optional hard?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:447](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L447)
+Defined in: [configs/modinfo.d.ts:459](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L459)
 
 Hard top bound in world pixels.
 
@@ -721,7 +752,7 @@ Hard top bound in world pixels.
 optional soft?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:453](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L453)
+Defined in: [configs/modinfo.d.ts:465](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L465)
 
 Soft top bound in world pixels.
 
@@ -735,7 +766,7 @@ Soft top bound in world pixels.
 
 <p class="smt-member-path"><code>configs.ModMapDepthLight</code></p>
 
-Defined in: [configs/modinfo.d.ts:461](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L461)
+Defined in: [configs/modinfo.d.ts:473](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L473)
 
 Depth-based light sizing for the custom map.
 
@@ -751,7 +782,7 @@ Depth-based light sizing for the custom map.
 optional startY?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:467](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L467)
+Defined in: [configs/modinfo.d.ts:479](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L479)
 
 World Y where depth light scaling starts.
 
@@ -765,7 +796,7 @@ World Y where depth light scaling starts.
 optional endY?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:473](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L473)
+Defined in: [configs/modinfo.d.ts:485](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L485)
 
 World Y where depth light scaling ends.
 
@@ -779,7 +810,7 @@ World Y where depth light scaling ends.
 optional maxSize?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:479](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L479)
+Defined in: [configs/modinfo.d.ts:491](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L491)
 
 Maximum light size at the shallow end of the range.
 
@@ -793,7 +824,7 @@ Maximum light size at the shallow end of the range.
 optional minSize?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:485](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L485)
+Defined in: [configs/modinfo.d.ts:497](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L497)
 
 Minimum light size at the deep end of the range.
 
@@ -807,7 +838,7 @@ Minimum light size at the deep end of the range.
 
 <p class="smt-member-path"><code>configs.ModMapParallax</code></p>
 
-Defined in: [configs/modinfo.d.ts:493](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L493)
+Defined in: [configs/modinfo.d.ts:505](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L505)
 
 Parallax background tuning for the custom map.
 
@@ -823,7 +854,7 @@ Parallax background tuning for the custom map.
 optional widthScale?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:499](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L499)
+Defined in: [configs/modinfo.d.ts:511](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L511)
 
 Horizontal scale of the parallax layer.
 
@@ -837,7 +868,7 @@ Horizontal scale of the parallax layer.
 optional offsetY?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:505](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L505)
+Defined in: [configs/modinfo.d.ts:517](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L517)
 
 Vertical offset of the parallax layer in pixels.
 
@@ -851,7 +882,7 @@ Vertical offset of the parallax layer in pixels.
 
 <p class="smt-member-path"><code>configs.ModMapColorMappingLayers</code></p>
 
-Defined in: [configs/modinfo.d.ts:513](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L513)
+Defined in: [configs/modinfo.d.ts:525](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L525)
 
 Color-map cell that paints both background and foreground terrain.
 
@@ -867,7 +898,7 @@ Color-map cell that paints both background and foreground terrain.
 optional background?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:519](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L519)
+Defined in: [configs/modinfo.d.ts:531](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L531)
 
 Background terrain id for this blueprint RGB.
 
@@ -881,7 +912,7 @@ Background terrain id for this blueprint RGB.
 optional foreground?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:525](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L525)
+Defined in: [configs/modinfo.d.ts:537](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L537)
 
 Foreground terrain id for this blueprint RGB.
 
@@ -895,7 +926,7 @@ Foreground terrain id for this blueprint RGB.
 
 <p class="smt-member-path"><code>configs.ModMapDefinition</code></p>
 
-Defined in: [configs/modinfo.d.ts:540](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L540)
+Defined in: [configs/modinfo.d.ts:552](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L552)
 
 Custom map pack block in `modinfo.json`.
 
@@ -911,7 +942,7 @@ Custom map pack block in `modinfo.json`.
 blueprints: ModMapBlueprints
 ```
 
-Defined in: [configs/modinfo.d.ts:546](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L546)
+Defined in: [configs/modinfo.d.ts:558](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L558)
 
 Paths to blueprint images and map config under the mod root.
 
@@ -925,7 +956,7 @@ Paths to blueprint images and map config under the mod root.
 width: number
 ```
 
-Defined in: [configs/modinfo.d.ts:552](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L552)
+Defined in: [configs/modinfo.d.ts:564](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L564)
 
 Map width in cells.
 
@@ -939,7 +970,7 @@ Map width in cells.
 height: number
 ```
 
-Defined in: [configs/modinfo.d.ts:558](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L558)
+Defined in: [configs/modinfo.d.ts:570](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L570)
 
 Map height in cells.
 
@@ -953,7 +984,7 @@ Map height in cells.
 optional spawn?: ModMapPoint
 ```
 
-Defined in: [configs/modinfo.d.ts:564](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L564)
+Defined in: [configs/modinfo.d.ts:576](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L576)
 
 Player spawn position in world pixels.
 
@@ -967,7 +998,7 @@ Player spawn position in world pixels.
 optional unstuck?: ModMapPoint
 ```
 
-Defined in: [configs/modinfo.d.ts:570](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L570)
+Defined in: [configs/modinfo.d.ts:582](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L582)
 
 Unstuck / rescue position in world pixels.
 
@@ -981,7 +1012,7 @@ Unstuck / rescue position in world pixels.
 optional deployment?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:576](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L576)
+Defined in: [configs/modinfo.d.ts:588](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L588)
 
 Deployment mode for the map (for example `"skip"`).
 
@@ -995,7 +1026,7 @@ Deployment mode for the map (for example `"skip"`).
 optional topBounds?: ModMapTopBounds
 ```
 
-Defined in: [configs/modinfo.d.ts:582](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L582)
+Defined in: [configs/modinfo.d.ts:594](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L594)
 
 Vertical travel bounds at the top of the world.
 
@@ -1009,7 +1040,7 @@ Vertical travel bounds at the top of the world.
 optional depthLight?: ModMapDepthLight
 ```
 
-Defined in: [configs/modinfo.d.ts:588](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L588)
+Defined in: [configs/modinfo.d.ts:600](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L600)
 
 Depth-based light size curve.
 
@@ -1023,7 +1054,7 @@ Depth-based light size curve.
 optional parallax?: ModMapParallax
 ```
 
-Defined in: [configs/modinfo.d.ts:594](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L594)
+Defined in: [configs/modinfo.d.ts:606](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L606)
 
 Parallax background tuning.
 
@@ -1037,7 +1068,7 @@ Parallax background tuning.
 optional colorMappings?: Record<string, ModMapColorMapping>
 ```
 
-Defined in: [configs/modinfo.d.ts:600](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L600)
+Defined in: [configs/modinfo.d.ts:612](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L612)
 
 Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain.
 
@@ -1051,7 +1082,7 @@ Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain.
 
 <p class="smt-member-path"><code>configs.ModGameVersion</code></p>
 
-Defined in: [configs/modinfo.d.ts:608](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L608)
+Defined in: [configs/modinfo.d.ts:620](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L620)
 
 Compatible game version range for the mod.
 
@@ -1067,7 +1098,7 @@ Compatible game version range for the mod.
 optional minimum?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:614](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L614)
+Defined in: [configs/modinfo.d.ts:626](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L626)
 
 Lowest supported game version string.
 
@@ -1081,7 +1112,7 @@ Lowest supported game version string.
 optional maximum?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:620](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L620)
+Defined in: [configs/modinfo.d.ts:632](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L632)
 
 Highest supported game version string.
 
@@ -1095,7 +1126,7 @@ Highest supported game version string.
 
 <p class="smt-member-path"><code>configs.ModInfo</code></p>
 
-Defined in: [configs/modinfo.d.ts:632](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L632)
+Defined in: [configs/modinfo.d.ts:644](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L644)
 
 Sandkit mod manifest (`modinfo.json`).
 
@@ -1109,13 +1140,24 @@ Required for every mod folder. Minimal mods only need
 
 #### Properties
 
+##### $schema?
+
+```ts
+optional $schema?: string
+```
+
+Defined in: [configs/modinfo.d.ts:649](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L649)
+
+Optional JSON Schema URL for editors (for example VS Code).
+Not read by the game loader.
+
 ##### manifestVersion
 
 ```ts
 manifestVersion: 1
 ```
 
-Defined in: [configs/modinfo.d.ts:638](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L638)
+Defined in: [configs/modinfo.d.ts:655](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L655)
 
 Manifest format version. Must be `1` for Sandkit `apiVersion` 1.
 
@@ -1129,7 +1171,7 @@ Manifest format version. Must be `1` for Sandkit `apiVersion` 1.
 id: string
 ```
 
-Defined in: [configs/modinfo.d.ts:644](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L644)
+Defined in: [configs/modinfo.d.ts:661](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L661)
 
 Unique mod id. Prefer `author.mod-name` (matches folder / Workshop identity).
 
@@ -1143,7 +1185,7 @@ Unique mod id. Prefer `author.mod-name` (matches folder / Workshop identity).
 name: string
 ```
 
-Defined in: [configs/modinfo.d.ts:650](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L650)
+Defined in: [configs/modinfo.d.ts:667](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L667)
 
 Display name shown in the mod list and Workshop UI.
 
@@ -1157,7 +1199,7 @@ Display name shown in the mod list and Workshop UI.
 version: string
 ```
 
-Defined in: [configs/modinfo.d.ts:656](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L656)
+Defined in: [configs/modinfo.d.ts:673](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L673)
 
 Semver-style mod version string.
 
@@ -1171,7 +1213,7 @@ Semver-style mod version string.
 apiVersion: 1
 ```
 
-Defined in: [configs/modinfo.d.ts:662](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L662)
+Defined in: [configs/modinfo.d.ts:679](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L679)
 
 Sandkit host API version this mod targets. Must be `1`.
 
@@ -1185,7 +1227,7 @@ Sandkit host API version this mod targets. Must be `1`.
 entry: string
 ```
 
-Defined in: [configs/modinfo.d.ts:668](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L668)
+Defined in: [configs/modinfo.d.ts:685](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L685)
 
 Main-thread script path relative to the mod root (for example `"main.js"`).
 
@@ -1199,7 +1241,7 @@ Main-thread script path relative to the mod root (for example `"main.js"`).
 optional workerEntry?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:675](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L675)
+Defined in: [configs/modinfo.d.ts:692](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L692)
 
 Simulation-worker script path relative to the mod root.
 Required when the mod registers worker hooks or uses worker-only APIs.
@@ -1214,7 +1256,7 @@ Required when the mod registers worker hooks or uses worker-only APIs.
 optional patches?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:682](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L682)
+Defined in: [configs/modinfo.d.ts:699](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L699)
 
 Path to the patches file relative to the mod root (usually `"patches.json"`).
 When omitted, a present `patches.json` may still auto-load per official docs.
@@ -1229,7 +1271,7 @@ When omitted, a present `patches.json` may still auto-load per official docs.
 optional description?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:688](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L688)
+Defined in: [configs/modinfo.d.ts:705](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L705)
 
 Long description shown in the mod list / Workshop.
 
@@ -1243,7 +1285,7 @@ Long description shown in the mod list / Workshop.
 optional author?: string
 ```
 
-Defined in: [configs/modinfo.d.ts:694](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L694)
+Defined in: [configs/modinfo.d.ts:711](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L711)
 
 Author display name.
 
@@ -1257,7 +1299,7 @@ Author display name.
 optional gameVersion?: ModGameVersion
 ```
 
-Defined in: [configs/modinfo.d.ts:700](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L700)
+Defined in: [configs/modinfo.d.ts:717](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L717)
 
 Inclusive game version range this mod claims to support.
 
@@ -1271,7 +1313,7 @@ Inclusive game version range this mod claims to support.
 optional dependencies?: string[]
 ```
 
-Defined in: [configs/modinfo.d.ts:706](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L706)
+Defined in: [configs/modinfo.d.ts:723](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L723)
 
 Other mod ids that should load with this mod.
 
@@ -1285,7 +1327,7 @@ Other mod ids that should load with this mod.
 optional loadOrder?: number
 ```
 
-Defined in: [configs/modinfo.d.ts:712](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L712)
+Defined in: [configs/modinfo.d.ts:729](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L729)
 
 Relative load priority. Lower values load earlier; higher values load later.
 
@@ -1299,7 +1341,7 @@ Relative load priority. Lower values load earlier; higher values load later.
 optional configSchema?: Record<string, ConfigSchemaEntry>
 ```
 
-Defined in: [configs/modinfo.d.ts:719](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L719)
+Defined in: [configs/modinfo.d.ts:736](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L736)
 
 Player-facing settings schema. Keys are setting ids; values define type and UI.
 Read at runtime with `api.settings.get`.
@@ -1314,7 +1356,7 @@ Read at runtime with `api.settings.get`.
 optional configOverrides?: Record<string, string>
 ```
 
-Defined in: [configs/modinfo.d.ts:725](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L725)
+Defined in: [configs/modinfo.d.ts:742](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L742)
 
 Paths to JSON config overrides keyed by vanilla config id (for example `"drill"`).
 
@@ -1328,7 +1370,7 @@ Paths to JSON config overrides keyed by vanilla config id (for example `"drill"`
 optional shaderOverrides?: Record<string, string>
 ```
 
-Defined in: [configs/modinfo.d.ts:731](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L731)
+Defined in: [configs/modinfo.d.ts:748](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L748)
 
 Paths to GLSL shader replacements keyed by shader id (for example `"sky"`).
 
@@ -1342,7 +1384,7 @@ Paths to GLSL shader replacements keyed by shader id (for example `"sky"`).
 optional textureOverrides?: Record<string, string | TextureOverride>
 ```
 
-Defined in: [configs/modinfo.d.ts:738](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L738)
+Defined in: [configs/modinfo.d.ts:755](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L755)
 
 Texture replacements keyed by vanilla texture id.
 A string value is a path; an object adds spritesheet frame metadata.
@@ -1357,7 +1399,7 @@ A string value is a path; an object adds spritesheet frame metadata.
 optional provides?: ModProvide[]
 ```
 
-Defined in: [configs/modinfo.d.ts:744](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L744)
+Defined in: [configs/modinfo.d.ts:761](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L761)
 
 Optional content this mod publishes for others to consume.
 
@@ -1371,7 +1413,7 @@ Optional content this mod publishes for others to consume.
 optional map?: ModMapDefinition
 ```
 
-Defined in: [configs/modinfo.d.ts:750](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L750)
+Defined in: [configs/modinfo.d.ts:767](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L767)
 
 Embedded custom map pack definition for this mod.
 
@@ -1634,15 +1676,67 @@ Group id shared by patches that must all succeed or all fail together.
 Use the same string on paired main (`js/bundle.js`) and worker
 (`js/simulation-worker.js`) patches.
 
+##### occurrence?
+
+```ts
+optional occurrence?: number | "all"
+```
+
+Defined in: [configs/patches.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L191)
+
+Which match to rewrite when `find` / `regex` hits more than once.
+`"all"` (default when omitted in the loader) or a 1-based index.
+Must not exceed [expectedMatches](#expectedmatches) when both are numbers.
+
+###### See
+
+[Official docs](https://sandustry.com/sandkit.html#patches-heading)
+
 ##### description?
 
 ```ts
 optional description?: string
 ```
 
-Defined in: [configs/patches.d.ts:187](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L187)
+Defined in: [configs/patches.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L195)
 
 Human-readable note for maintainers. Not required by the official schema.
+
+***
+
+### BundlePatchesDocument :id=bundlepatchesdocument
+
+<p class="smt-member-path"><code>configs.BundlePatchesDocument</code></p>
+
+Defined in: [configs/patches.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L204)
+
+Editor-friendly `patches.json` wrapper with an optional `$schema` URL.
+
+The game loader expects a bare [BundlePatch](#bundlepatch) array. Prefer that array in
+shipped mods. Use this object shape only when your editor needs inline `$schema`.
+
+#### Properties
+
+##### $schema?
+
+```ts
+optional $schema?: string
+```
+
+Defined in: [configs/patches.d.ts:209](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L209)
+
+Optional JSON Schema URL for editors (for example VS Code).
+Not read by the game loader.
+
+##### patches
+
+```ts
+patches: BundlePatch[]
+```
+
+Defined in: [configs/patches.d.ts:213](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L213)
+
+Ordered patch list (same as the bare-array game format).
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
@@ -1654,7 +1748,7 @@ Human-readable note for maintainers. Not required by the official schema.
 ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice
 ```
 
-Defined in: [configs/modinfo.d.ts:295](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L295)
+Defined in: [configs/modinfo.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L307)
 
 One entry under `modinfo.json` `configSchema`.
 
@@ -1674,7 +1768,7 @@ Keys of `configSchema` are setting ids read via `api.settings.get`.
 ModMapColorMapping = string | ModMapColorMappingLayers
 ```
 
-Defined in: [configs/modinfo.d.ts:533](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L533)
+Defined in: [configs/modinfo.d.ts:545](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L545)
 
 One `map.colorMappings` value: a single terrain id, or layered background/foreground ids.
 
@@ -1740,12 +1834,13 @@ Supported patch operations.
 <p class="smt-member-path"><code>configs.BundlePatchesFile</code></p>
 
 ```ts
-BundlePatchesFile = BundlePatch[]
+BundlePatchesFile = BundlePatch[] | BundlePatchesDocument
 ```
 
-Defined in: [configs/patches.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L195)
+Defined in: [configs/patches.d.ts:222](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L222)
 
-Root shape of `patches.json`: an ordered list of [BundlePatch](#bundlepatch) entries.
+Root shape of `patches.json`: a bare [BundlePatch](#bundlepatch) array (game format),
+or a [BundlePatchesDocument](#bundlepatchesdocument) object when the file includes `$schema`.
 
 #### See
 
