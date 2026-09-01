@@ -69,6 +69,8 @@ export namespace elements {
     },
     density: number,
     matterType: MatterType,
+    /** UI/meta color as 0xRRGGBB. */
+    metaColor?: number,
     /** When true, the grabber can pick up this element. */
     isGrabbable?: boolean,
     /** When true, conveyors can move this element. */

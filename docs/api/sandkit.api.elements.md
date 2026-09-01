@@ -93,7 +93,7 @@ Require the text key to exist in the active locale.
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementCreateOptions</code></p>
 
-Defined in: [shared/api/elements.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L84)
+Defined in: [shared/api/elements.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L86)
 
 Options for [createAtCell](#createatcell), replace, and related create helpers.
 
@@ -109,7 +109,7 @@ Options for [createAtCell](#createatcell), replace, and related create helpers.
 optional data?: Record<string, unknown>
 ```
 
-Defined in: [shared/api/elements.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L86)
+Defined in: [shared/api/elements.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L88)
 
 Initial element data bag.
 
@@ -119,7 +119,7 @@ Initial element data bag.
 optional density?: number
 ```
 
-Defined in: [shared/api/elements.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L88)
+Defined in: [shared/api/elements.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L90)
 
 Override element density.
 
@@ -129,7 +129,7 @@ Override element density.
 optional durationTicks?: number
 ```
 
-Defined in: [shared/api/elements.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L94)
+Defined in: [shared/api/elements.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L96)
 
 Set both max and remaining duration in simulation ticks.
 
@@ -143,7 +143,7 @@ Set both max and remaining duration in simulation ticks.
 optional duration?: number
 ```
 
-Defined in: [shared/api/elements.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L100)
+Defined in: [shared/api/elements.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L102)
 
 ###### Deprecated
 
@@ -159,7 +159,7 @@ Use [durationTicks](#durationticks) instead.
 optional isFreeFalling?: boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L102)
+Defined in: [shared/api/elements.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L104)
 
 Override free-fall state on spawn.
 
@@ -169,7 +169,7 @@ Override free-fall state on spawn.
 optional dataFields?: object
 ```
 
-Defined in: [shared/api/elements.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L104)
+Defined in: [shared/api/elements.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L106)
 
 Override default data fields 1–4.
 
@@ -203,7 +203,7 @@ optional field4?: number
 optional particle?: object
 ```
 
-Defined in: [shared/api/elements.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L111)
+Defined in: [shared/api/elements.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L113)
 
 Spawn as a particle with the given velocity.
 
@@ -219,7 +219,7 @@ velocity: Vector2
 optional skipCollectorCheck?: boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L115)
+Defined in: [shared/api/elements.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L117)
 
 Skip collector accounting when placing the element.
 
@@ -229,7 +229,7 @@ Skip collector accounting when placing the element.
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementRemovalOptions</code></p>
 
-Defined in: [shared/api/elements.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L123)
+Defined in: [shared/api/elements.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L125)
 
 Options for element removal helpers.
 
@@ -245,7 +245,7 @@ Options for element removal helpers.
 optional skipCollectorCheck?: boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L125)
+Defined in: [shared/api/elements.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L127)
 
 Skip collector accounting when removing the element.
 
@@ -618,13 +618,23 @@ matterType: MatterType
 
 Defined in: [shared/api/elements.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L71)
 
+##### metaColor?
+
+```ts
+optional metaColor?: number
+```
+
+Defined in: [shared/api/elements.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L73)
+
+UI/meta color as 0xRRGGBB.
+
 ##### isGrabbable?
 
 ```ts
 optional isGrabbable?: boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L73)
+Defined in: [shared/api/elements.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L75)
 
 When true, the grabber can pick up this element.
 
@@ -634,7 +644,7 @@ When true, the grabber can pick up this element.
 optional isTransportable?: boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L75)
+Defined in: [shared/api/elements.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L77)
 
 When true, conveyors can move this element.
 
@@ -644,7 +654,7 @@ When true, conveyors can move this element.
 optional getExtraProps?: () => object
 ```
 
-Defined in: [shared/api/elements.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L76)
+Defined in: [shared/api/elements.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L78)
 
 ###### Returns
 
@@ -1642,7 +1652,7 @@ Use [setDurationAtCell](#setdurationatcell) instead.
 getIdByType(elementType: ElementType): string & object
 ```
 
-Defined in: [shared/api/elements.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L135)
+Defined in: [shared/api/elements.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L137)
 
 Return the mod string id for a numeric element type.
 
@@ -1672,7 +1682,7 @@ Numeric element type.
 getTypeById(elementId: string & object): ElementType
 ```
 
-Defined in: [shared/api/elements.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L144)
+Defined in: [shared/api/elements.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L146)
 
 Resolve a mod element string id to a type handle.
 
@@ -1700,7 +1710,7 @@ Mod-registered element id.
 getTypeFromId(elementId: string & object): ElementType
 ```
 
-Defined in: [shared/api/elements.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L151)
+Defined in: [shared/api/elements.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L153)
 
 #### Parameters
 
@@ -1730,7 +1740,7 @@ Use [getTypeById](#gettypebyid) instead.
 getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 ```
 
-Defined in: [shared/api/elements.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L160)
+Defined in: [shared/api/elements.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L162)
 
 Look up the definition for a type handle.
 
@@ -1760,7 +1770,7 @@ Numeric element type.
 getTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
-Defined in: [shared/api/elements.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L170)
+Defined in: [shared/api/elements.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L172)
 
 Return the raw element type at a cell (may differ from resolved type).
 
@@ -1788,7 +1798,7 @@ Return the raw element type at a cell (may differ from resolved type).
 getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
-Defined in: [shared/api/elements.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L180)
+Defined in: [shared/api/elements.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L182)
 
 Return the resolved element type after overlays and particles.
 
@@ -1816,7 +1826,7 @@ Return the resolved element type after overlays and particles.
 getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 ```
 
-Defined in: [shared/api/elements.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L189)
+Defined in: [shared/api/elements.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L191)
 
 Return the resolved element type from a packed cell id.
 
@@ -1846,7 +1856,7 @@ Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md#getcellidatc
 getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number; } | null
 ```
 
-Defined in: [shared/api/elements.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L199)
+Defined in: [shared/api/elements.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L201)
 
 Return element index, particle flag, and ids at a cell.
 
@@ -1874,7 +1884,7 @@ Return element index, particle flag, and ids at a cell.
 getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 ```
 
-Defined in: [shared/api/elements.d.ts:209](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L209)
+Defined in: [shared/api/elements.d.ts:211](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L211)
 
 Return the matter category at a cell, or null when empty.
 
@@ -1902,7 +1912,7 @@ Return the matter category at a cell, or null when empty.
 isTypeAtCell(...args: number, number, [ElementRef]): boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:220](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L220)
+Defined in: [shared/api/elements.d.ts:222](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L222)
 
 Return true when the cell holds the given element type or id.
 
@@ -1930,7 +1940,7 @@ Return true when the cell holds the given element type or id.
 isFreeFallingAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/elements.d.ts:230](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L230)
+Defined in: [shared/api/elements.d.ts:232](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L232)
 
 Return true when the element at the cell is falling.
 
@@ -1958,7 +1968,7 @@ Return true when the element at the cell is falling.
 getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 ```
 
-Defined in: [shared/api/elements.d.ts:240](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L240)
+Defined in: [shared/api/elements.d.ts:242](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L242)
 
 Return per-cell velocity for moving elements.
 
@@ -1986,7 +1996,7 @@ Return per-cell velocity for moving elements.
 getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 ```
 
-Defined in: [shared/api/elements.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L251)
+Defined in: [shared/api/elements.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L253)
 
 Read element data field 1–4 at a cell.
 
