@@ -87,6 +87,7 @@
   "scripts": {
     "docs": "npm run docs:api && npm run docs:serve",
     "docs:api": "node scripts/generate-api-docs.mjs && npm run docs:schemas",
+    "docs:archive-sandkit": "node scripts/archive-sandkit.mjs",
     "docs:schemas": "node scripts/generate-json-schemas.mjs",
     "docs:serve": "npx --yes docsify-cli serve docs",
     "test": "node --test scripts/api-search.test.js",
