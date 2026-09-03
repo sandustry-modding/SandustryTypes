@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 0.5.0 - 2026-09-03
+
+https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.5.0
+
 ### Added
 
 - Sandkit 0.5.6 API surface:
@@ -22,6 +26,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Optional `ModInfo.$schema` for editor schema association (ignored by the game)
 - Optional `BundlePatchesDocument` (`$schema` + `patches`) so editors can attach a schema URL; bare arrays still validate
 - `BundlePatch.occurrence` (`"all"` or a 1-based index) from the game patch loader
+- Official Sandkit HTML archive script (`npm run docs:archive-sandkit`) writing Markdown under `docs/official-api/`
 
 ### Fixed
 
