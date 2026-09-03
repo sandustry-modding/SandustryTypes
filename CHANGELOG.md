@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Sandkit 0.5.6 API surface:
+  - `api.terrains.meltAtCell(cellX, cellY)` (main and worker)
+  - `api.events` event `building:removing` (fires before `building:removed`)
+  - Worker intercept hook `fire:terrain:burn` (requires `guard.terrainType`)
+  - `resource:collection:prepare` feedback value `"reduced"`
 - `ElementDefinition.metaColor` (discovery and lexicon label color as `0xRRGGBB`)
 - `ElementDefinition.isGrabbable` and `ElementDefinition.isTransportable` (grabber and conveyor)
 - JSON Schema files for `modinfo.json` and `patches.json` under `docs/schemas/` (GitHub Pages URLs; see [JSON Schema](schemas.md))

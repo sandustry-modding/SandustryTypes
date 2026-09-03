@@ -64,6 +64,13 @@ export namespace hooks {
    * });
    * ```
    *
+   * @example fire:terrain:burn
+   * ```ts
+   * api.hooks.intercept("fire:terrain:burn", handleTerrainBurn, {
+   *   guard: { terrainType },
+   * });
+   * ```
+   *
    * @example shaker:elementOn
    * ```ts
    * api.hooks.intercept("shaker:elementOn", (args, context) => {
@@ -121,7 +128,9 @@ export namespace hooks {
   export type InterceptHookOptions<K extends InterceptHookId> =
     K extends ElementGuardedInterceptHookId
       ? { guard: { elementType: sharedElements.ElementType }; priority?: number }
-      : { guard?: HookGuard; priority?: number };
+      : K extends TerrainGuardedInterceptHookId
+        ? { guard: { terrainType: number }; priority?: number }
+        : { guard?: HookGuard; priority?: number };
 
   /** Options for {@link modify}. */
   export interface ModifyHookOptions {
@@ -138,9 +147,13 @@ export namespace hooks {
     | "element:duration:expire"
     | "element:duration";
 
+  /** Intercept hook ids with a required terrain guard. */
+  export type TerrainGuardedInterceptHookId = "fire:terrain:burn";
+
   /** Known worker intercept hook ids plus custom strings. */
   export type InterceptHookId = LooseString<
     | ElementGuardedInterceptHookId
+    | TerrainGuardedInterceptHookId
     | "element:move"
     | "fire:element:burn"
     | "shaker:elementOn"
@@ -161,6 +174,7 @@ export namespace hooks {
     /** @deprecated Use `"element:duration:expire"` instead. */
     "element:duration": InterceptHookMap["element:duration:expire"];
     "fire:element:burn": Record<string, unknown>;
+    "fire:terrain:burn": Record<string, unknown>;
     "shaker:elementOn": Record<string, unknown>;
   }
 

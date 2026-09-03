@@ -168,5 +168,7 @@ window.SMT_SEARCH_PATHS = [
   "/api/shared.player",
   "/api/types",
   "/modules",
+  "/official-api/0.5.5",
+  "/official-api/0.5.6",
   "/schemas"
 ];

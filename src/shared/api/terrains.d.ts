@@ -161,6 +161,16 @@ export namespace terrains {
   export function damageAtCell(...args: [...CellCoordinates, damage: number]): void;
 
   /**
+   * Melt terrain at a cell (for example ice to water). Worker-entry writes are immediate.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
+   */
+  export function meltAtCell(...args: CellCoordinates): void;
+
+  /**
    * Place terrain at an empty cell. Worker-entry writes are immediate.
    *
    * @param cellX - Grid column of the target cell.

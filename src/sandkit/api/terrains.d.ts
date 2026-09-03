@@ -35,6 +35,8 @@ export namespace terrains {
   export import isCellIdTerrain = shared.api.terrains.isCellIdTerrain;
   /** Apply damage to terrain at a cell. */
   export import damageAtCell = shared.api.terrains.damageAtCell;
+  /** Melt terrain at a cell (for example ice to water). */
+  export import meltAtCell = shared.api.terrains.meltAtCell;
   /** Options for terrain create, replace, and remove calls. */
   export import TerrainMutationOptions = shared.api.terrains.TerrainMutationOptions;
   /** Numeric terrain cell type handle. */

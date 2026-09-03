@@ -73,8 +73,11 @@ Edit `.d.ts` files under `src/`. Regenerate the Docsify API reference and JSON S
 Regenerate the Docsify API reference and JSON Schema from these declarations:
 
 ```bash
-npm run docs:api        # API markdown + docs/schemas/*.json
-npm run docs:schemas    # JSON Schema only
+npm run docs:api             # API markdown + docs/schemas/*.json
+npm run docs:schemas         # JSON Schema only
+npm run docs:archive-sandkit # Fetch official sandkit.html into docs/official-api/
 ```
 
 Output lands in `docs/api/` and `docs/schemas/`. The namespace index is `docs/modules.md` and the combined page is `docs/full.md`. `npm run docs` runs that step, then serves the docs site. `npm run validate` fails when committed schemas do not match `src/configs/`.
+
+`npm run docs:archive-sandkit` asks for a base file name, then writes `docs/official-api/<name>.md` from https://sandustry.com/sandkit.html.

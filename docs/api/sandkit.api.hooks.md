@@ -1416,7 +1416,7 @@ amount: number
 ###### feedback
 
 ```ts
-feedback: "silent" | "default"
+feedback: "silent" | "default" | "reduced"
 ```
 
 ##### resource:delivery:prepare

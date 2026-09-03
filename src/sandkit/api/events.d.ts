@@ -69,6 +69,13 @@ export namespace events {
    * });
    * ```
    *
+   * @example building:removing
+   * ```ts
+   * api.events.on("building:removing", (payload) => {
+   *   prepareBuildingRemoval(payload.structureId, payload.x, payload.y);
+   * });
+   * ```
+   *
    * @example building:removed
    * ```ts
    * api.events.on("building:removed", (payload) => {
@@ -218,6 +225,13 @@ export namespace events {
       y: number;
       isBatch: boolean;
       isCopied: boolean;
+    };
+    /** Fires before `building:removed`. */
+    "building:removing": {
+      structureId: string;
+      x: number;
+      y: number;
+      byMove: boolean;
     };
     "building:removed": {
       structureId: string;

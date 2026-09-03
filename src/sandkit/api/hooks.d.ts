@@ -678,7 +678,7 @@ export namespace hooks {
       cellX: number;
       cellY: number;
       amount: number;
-      feedback: "default" | "silent";
+      feedback: "default" | "reduced" | "silent";
     };
     "resource:delivery:prepare": {
       resourceId: string;

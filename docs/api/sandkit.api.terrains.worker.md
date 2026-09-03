@@ -195,7 +195,7 @@ Use [hitPoints](#hitpoints) instead.
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainMutationOptions (worker)</code></p>
 
-Defined in: [shared/api/terrains.d.ts:222](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L222)
+Defined in: [shared/api/terrains.d.ts:232](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L232)
 
 Options for terrain create, replace, or remove calls.
 
@@ -211,7 +211,7 @@ Options for terrain create, replace, or remove calls.
 optional skipShadow?: boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L224)
+Defined in: [shared/api/terrains.d.ts:234](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L234)
 
 Skip shadow updates around the changed cell.
 
@@ -225,7 +225,7 @@ Skip shadow updates around the changed cell.
 TerrainType = CellType | TaggedNumber<"terrainType">
 ```
 
-Defined in: [shared/api/terrains.d.ts:232](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L232)
+Defined in: [shared/api/terrains.d.ts:242](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L242)
 
 Numeric terrain / [CellTypeEnum](api/sandkit.enums.CellType.md) handle.
 
@@ -243,7 +243,7 @@ Numeric terrain / [CellTypeEnum](api/sandkit.enums.CellType.md) handle.
 TerrainId = LooseString<never>
 ```
 
-Defined in: [shared/api/terrains.d.ts:239](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L239)
+Defined in: [shared/api/terrains.d.ts:249](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L249)
 
 Mod or built-in terrain string id.
 
@@ -261,7 +261,7 @@ Mod or built-in terrain string id.
 TerrainRef = TerrainType | TerrainId
 ```
 
-Defined in: [shared/api/terrains.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L246)
+Defined in: [shared/api/terrains.d.ts:256](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L256)
 
 Type handle or string id accepted by mutation helpers.
 
@@ -561,6 +561,34 @@ Apply damage to terrain at a cell.
 
 ***
 
+### meltAtCell() :id=meltatcell
+
+<p class="smt-member-path"><code>sandkit.api.terrains.meltAtCell() (worker)</code></p>
+
+```ts
+meltAtCell(...args: CellCoordinates): void
+```
+
+Defined in: [shared/api/terrains.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L171)
+
+Melt terrain at a cell (for example ice to water). Worker-entry writes are immediate.
+
+#### Parameters
+
+##### args
+
+...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
+
+#### Returns
+
+`void`
+
+#### See
+
+[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
+
+***
+
 ### createAtCell() :id=createatcell
 
 <p class="smt-member-path"><code>sandkit.api.terrains.createAtCell() (worker)</code></p>
@@ -569,7 +597,7 @@ Apply damage to terrain at a cell.
 createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L173)
+Defined in: [shared/api/terrains.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L183)
 
 Place terrain at an empty cell. Worker-entry writes are immediate.
 
@@ -597,7 +625,7 @@ Place terrain at an empty cell. Worker-entry writes are immediate.
 replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L185)
+Defined in: [shared/api/terrains.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L195)
 
 Replace existing terrain at a cell. Worker-entry writes are immediate.
 
@@ -625,7 +653,7 @@ Replace existing terrain at a cell. Worker-entry writes are immediate.
 removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 ```
 
-Defined in: [shared/api/terrains.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L196)
+Defined in: [shared/api/terrains.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L206)
 
 Remove terrain from a cell. Worker-entry writes are immediate.
 
@@ -653,7 +681,7 @@ Remove terrain from a cell. Worker-entry writes are immediate.
 setHitPointsAtCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L208)
+Defined in: [shared/api/terrains.d.ts:218](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L218)
 
 Set terrain hit points at a cell. Worker-entry writes are immediate.
 
@@ -681,7 +709,7 @@ True when hit points changed or the terrain was removed.
 setHpAtCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [shared/api/terrains.d.ts:215](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L215)
+Defined in: [shared/api/terrains.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L225)
 
 #### Parameters
 
