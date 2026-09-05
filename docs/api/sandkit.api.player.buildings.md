@@ -12,7 +12,7 @@ Player building unlock helpers.
 unlockById(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L137)
+Defined in: [sandkit/api/player.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L136)
 
 Unlock a structure type for building.
 
@@ -32,7 +32,7 @@ Registered structure id string.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### ~~unlockByType()~~
 
@@ -40,7 +40,7 @@ Registered structure id string.
 unlockByType(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L144)
+Defined in: [sandkit/api/player.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L143)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Use [unlockById](#unlockbyid) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### removeById() :id=removebyid
 
@@ -70,7 +70,7 @@ Use [unlockById](#unlockbyid) instead.
 removeById(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L153)
+Defined in: [sandkit/api/player.d.ts:152](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L152)
 
 Remove a structure unlock from the player.
 

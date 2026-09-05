@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- Modding guides under `docs/guides/` (getting started, lifecycle, manifest, patches, workers, Workshop)
+- `WorkshopJson` type for `workshop.json` (`@sandustry-modding/types/configs`)
+- `scripts/namespace-summaries.json` — one-line descriptions and worker flags for each `sandkit.api` namespace
+
+### Changed
+
+- `ModInfo.entry` is optional when another manifest capability is declared (texture-only, map-only, and similar mods)
+- Docs home page and sidebar link to guides; site title and description updated
+- API namespace index (`docs/modules.md`) shows stats, descriptions, method counts, and worker badges per namespace
+- Namespace summary copy in `scripts/namespace-summaries.json` rewritten for clarity
+
 ## 0.5.0 - 2026-09-03
 
 https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.5.0

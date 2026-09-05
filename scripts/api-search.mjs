@@ -277,7 +277,7 @@ export function buildSearchIndex(files) {
  * @param {Array<{ title: string, body: string, path: string, id: string }>} entries
  */
 export function renderSearchIndexScript(entries) {
-  return `window.SMT_SEARCH_INDEX = ${JSON.stringify(entries)};\n`;
+  return `window.SMT_SEARCH_INDEX = ${JSON.stringify(entries, null, 2)};\n`;
 }
 
 /**

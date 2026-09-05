@@ -632,9 +632,13 @@ export interface ModGameVersion {
 /**
  * Sandkit mod manifest (`modinfo.json`).
  *
- * Required for every mod folder. Minimal mods only need
+ * Required for every mod folder. Minimal script mods need
  * {@link manifestVersion}, {@link id}, {@link name}, {@link version},
  * {@link apiVersion}, and {@link entry}.
+ *
+ * At least one capability is required: {@link entry}, {@link workerEntry},
+ * {@link configOverrides}, {@link textureOverrides}, {@link provides}, or
+ * {@link map}. `configSchema` alone does not count.
  *
  * @see [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
  */
@@ -676,10 +680,12 @@ export interface ModInfo {
   apiVersion: 1;
   /**
    * Main-thread script path relative to the mod root (for example `"main.js"`).
+   * Omit for texture-only, map-only, or config-only mods that declare another
+   * capability instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
    */
-  entry: string;
+  entry?: string;
   /**
    * Simulation-worker script path relative to the mod root.
    * Required when the mod registers worker hooks or uses worker-only APIs.

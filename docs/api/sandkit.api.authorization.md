@@ -29,7 +29,7 @@ Return true when the player may place a structure at the cell.
 
 True when building is allowed in the authorization zone.
 
----
+***
 
 ### canGrabAtCell() :id=cangrabatcell
 
@@ -55,7 +55,7 @@ Return true when the player may grab at the cell.
 
 True when grabbing is allowed in the authorization zone.
 
----
+***
 
 ### canUseTool() :id=canusetool
 
@@ -89,7 +89,7 @@ When true, apply flamethrower-specific rules.
 
 True when tool use is allowed for the player.
 
----
+***
 
 ### canUseToolAtCell() :id=canusetoolatcell
 
@@ -115,7 +115,7 @@ Return true when the player may use a tool at the cell.
 
 True when tool use is allowed at the cell.
 
----
+***
 
 ### getZoneIdAtCell() :id=getzoneidatcell
 
@@ -125,7 +125,7 @@ True when tool use is allowed at the cell.
 getZoneIdAtCell(...args: CellCoordinates): number
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L47)
+Defined in: [sandkit/api/authorization.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L49)
 
 Return the authorization zone id at the cell.
 
@@ -141,7 +141,7 @@ Return the authorization zone id at the cell.
 
 Numeric zone id for the cell.
 
----
+***
 
 ### getPlayerZoneId() :id=getplayerzoneid
 
@@ -151,7 +151,7 @@ Numeric zone id for the cell.
 getPlayerZoneId(): number
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L53)
+Defined in: [sandkit/api/authorization.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L55)
 
 Return the authorization zone id for the player.
 

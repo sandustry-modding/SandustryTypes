@@ -53,7 +53,7 @@ const counts = api.shared.buffers.ensure("counts", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### ~~create()~~
 
@@ -61,7 +61,7 @@ const counts = api.shared.buffers.ensure("counts", {
 create(key: string, config: object): SharedArray
 ```
 
-Defined in: [sandkit/api/shared.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L37)
+Defined in: [sandkit/api/shared.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L40)
 
 #### Parameters
 
@@ -91,7 +91,7 @@ Use [ensure](#ensure) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### get() :id=get
 

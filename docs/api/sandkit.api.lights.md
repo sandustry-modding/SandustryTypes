@@ -14,7 +14,7 @@ Main thread only.
 
 <p class="smt-member-path"><code>sandkit.api.lights.TemporaryLightHandle</code></p>
 
-Defined in: [sandkit/api/lights.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L121)
+Defined in: [sandkit/api/lights.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L129)
 
 Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createatworld).
 
@@ -23,20 +23,20 @@ Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.
 ##### lightId
 
 ```ts
-lightId: number | null;
+lightId: number | null
 ```
 
-Defined in: [sandkit/api/lights.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L123)
+Defined in: [sandkit/api/lights.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L131)
 
 Assigned temporary light id, or null when creation failed.
 
 ##### ~~index~~
 
 ```ts
-index: number | null;
+index: number | null
 ```
 
-Defined in: [sandkit/api/lights.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L129)
+Defined in: [sandkit/api/lights.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L137)
 
 ###### Deprecated
 
@@ -46,13 +46,13 @@ Use [lightId](#lightid) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### PersistentLightOptions :id=persistentlightoptions
 
 <p class="smt-member-path"><code>sandkit.api.lights.PersistentLightOptions</code></p>
 
-Defined in: [sandkit/api/lights.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L136)
+Defined in: [sandkit/api/lights.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L144)
 
 Options for persistent world lights.
 
@@ -70,7 +70,7 @@ Options for persistent world lights.
 optional brightness?: number
 ```
 
-Defined in: [sandkit/api/lights.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L138)
+Defined in: [sandkit/api/lights.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L146)
 
 Light brightness multiplier.
 
@@ -80,7 +80,7 @@ Light brightness multiplier.
 optional size?: number
 ```
 
-Defined in: [sandkit/api/lights.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L140)
+Defined in: [sandkit/api/lights.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L148)
 
 Light radius in pixels.
 
@@ -90,7 +90,7 @@ Light radius in pixels.
 optional color?: [number, number, number, number]
 ```
 
-Defined in: [sandkit/api/lights.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L142)
+Defined in: [sandkit/api/lights.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L150)
 
 RGBA color components.
 
@@ -101,24 +101,24 @@ RGBA color components.
 <p class="smt-member-path"><code>sandkit.api.lights.TemporaryLightOptions</code></p>
 
 ```ts
-TemporaryLightOptions = TemporaryLightOptions;
+TemporaryLightOptions = TemporaryLightOptions
 ```
 
-Defined in: [sandkit/api/lights.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L133)
+Defined in: [sandkit/api/lights.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L141)
 
 Options for temporary lights.
 
----
+***
 
 ### PersistentLightHandle :id=persistentlighthandle
 
 <p class="smt-member-path"><code>sandkit.api.lights.PersistentLightHandle</code></p>
 
 ```ts
-PersistentLightHandle = unknown;
+PersistentLightHandle = unknown
 ```
 
-Defined in: [sandkit/api/lights.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L147)
+Defined in: [sandkit/api/lights.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L155)
 
 Handle returned from [persistent.createAtWorld](api/sandkit.api.lights.persistent.md#createatworld).
 

@@ -6,7 +6,7 @@
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileDefinition</code></p>
 
-Defined in: [sandkit/api/projectiles.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L54)
+Defined in: [sandkit/api/projectiles.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L59)
 
 Mod-registered projectile definition.
 
@@ -21,23 +21,23 @@ Mod-registered projectile definition.
 ##### id
 
 ```ts
-id: string;
+id: string
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L55)
+Defined in: [sandkit/api/projectiles.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L60)
 
 ##### sprite
 
 ```ts
-sprite: object;
+sprite: object
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L56)
+Defined in: [sandkit/api/projectiles.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L61)
 
 ###### id
 
 ```ts
-id: string;
+id: string
 ```
 
 ###### tint?
@@ -49,10 +49,10 @@ optional tint?: number
 ##### getOptions
 
 ```ts
-getOptions: () => Record<string, unknown>;
+getOptions: () => Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L61)
+Defined in: [sandkit/api/projectiles.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L66)
 
 Returns spawn-time physics and visual options.
 
@@ -66,7 +66,7 @@ Returns spawn-time physics and visual options.
 optional getModData?: (state: unknown, projectile: Projectile) => Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L63)
+Defined in: [sandkit/api/projectiles.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L68)
 
 Optional per-projectile mutable data factory.
 
@@ -84,13 +84,13 @@ Optional per-projectile mutable data factory.
 
 `Record`\<`string`, `unknown`\>
 
----
+***
 
 ### ProjectileBlueprint :id=projectileblueprint
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileBlueprint</code></p>
 
-Defined in: [sandkit/api/projectiles.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L68)
+Defined in: [sandkit/api/projectiles.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L73)
 
 Blueprint used to spawn a projectile.
 
@@ -99,26 +99,26 @@ Blueprint used to spawn a projectile.
 ##### opts
 
 ```ts
-opts: Record<string, unknown>;
+opts: Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L69)
+Defined in: [sandkit/api/projectiles.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L74)
 
 ##### type
 
 ```ts
-type: unknown;
+type: unknown
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L70)
+Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L75)
 
----
+***
 
 ### Projectile :id=projectile
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.Projectile</code></p>
 
-Defined in: [sandkit/api/projectiles.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L74)
+Defined in: [sandkit/api/projectiles.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L79)
 
 Active projectile instance.
 
@@ -133,26 +133,26 @@ Active projectile instance.
 ##### id
 
 ```ts
-id: number;
+id: number
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L75)
+Defined in: [sandkit/api/projectiles.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L80)
 
 ##### x
 
 ```ts
-x: number;
+x: number
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L76)
+Defined in: [sandkit/api/projectiles.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L81)
 
 ##### y
 
 ```ts
-y: number;
+y: number
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L77)
+Defined in: [sandkit/api/projectiles.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L82)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -180,7 +180,7 @@ Projectile id, sprite, and runtime options factory.
 
 `void`
 
----
+***
 
 ### getDefinitionById() :id=getdefinitionbyid
 
@@ -206,7 +206,7 @@ Registered projectile id.
 
 [`ProjectileDefinition`](#projectiledefinition) \| `undefined`
 
----
+***
 
 ### createBlueprintFromId() :id=createblueprintfromid
 
@@ -234,7 +234,7 @@ Registered projectile id.
 
 Blueprint passed to [spawnAtWorld](#spawnatworld).
 
----
+***
 
 ### getAll() :id=getall
 
@@ -252,7 +252,7 @@ Return all active projectiles.
 
 [`Projectile`](#projectile)[]
 
----
+***
 
 ### getById() :id=getbyid
 
@@ -278,7 +278,7 @@ Runtime projectile id.
 
 [`Projectile`](#projectile) \| `undefined`
 
----
+***
 
 ### remove() :id=remove
 
@@ -304,7 +304,7 @@ Projectile instance to remove.
 
 `void`
 
----
+***
 
 ### spawnAtWorld() :id=spawnatworld
 

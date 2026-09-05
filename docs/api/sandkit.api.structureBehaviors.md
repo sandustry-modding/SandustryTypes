@@ -57,10 +57,13 @@ Transport offset, velocity, distance, and run direction.
 #### Example
 
 ```ts
-api.structureBehaviors.registerConveyorType("exampleConveyor", { runWith: "right" });
+api.structureBehaviors.registerConveyorType(
+  "exampleConveyor",
+  { runWith: "right" },
+);
 ```
 
----
+***
 
 ### registerLauncherType() :id=registerlaunchertype
 
@@ -70,7 +73,7 @@ api.structureBehaviors.registerConveyorType("exampleConveyor", { runWith: "right
 registerLauncherType(definition: object): void
 ```
 
-Defined in: [sandkit/api/structureBehaviors.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L29)
+Defined in: [sandkit/api/structureBehaviors.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L39)
 
 Register launcher behavior for up, left, and right launcher types.
 

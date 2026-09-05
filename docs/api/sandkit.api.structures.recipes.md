@@ -14,7 +14,7 @@ Structure recipe registration by machine kind.
 register(id: "planterBox", definition: PlanterBoxRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:431](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L431)
+Defined in: [sandkit/api/structures.d.ts:471](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L471)
 
 Register a planter box recipe.
 
@@ -41,7 +41,9 @@ Grower recipe definition.
 ```ts
 api.structures.recipes.register("kineticPress", {
   input: "sand",
-  outputs: [{ elementType: "compressedSand", chance: 1 }],
+  outputs: [
+    { elementType: "compressedSand", chance: 1 },
+  ],
   minimumDownwardVelocityCellsPerSecond: 20,
 });
 ```
@@ -56,7 +58,7 @@ api.structures.recipes.register("kineticPress", {
 register(id: "shaker", definition: ShakerRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:441](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L441)
+Defined in: [sandkit/api/structures.d.ts:481](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L481)
 
 Register a shaker recipe.
 
@@ -88,7 +90,7 @@ Shaker recipe definition.
 register(id: "kineticPress", definition: KineticPressRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:451](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L451)
+Defined in: [sandkit/api/structures.d.ts:491](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L491)
 
 Register a kinetic press recipe.
 
@@ -120,7 +122,7 @@ Kinetic press recipe definition.
 register(id: "condenser" | "steamDryer" | "synthesizer" | "snowmaker" | "smelter", definition: WeightedRefineryRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:461](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L461)
+Defined in: [sandkit/api/structures.d.ts:501](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L501)
 
 Register a weighted refinery machine recipe.
 

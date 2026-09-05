@@ -12,7 +12,7 @@ Structure processing enablement checks.
 isEnabledAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L190)
+Defined in: [shared/api/structures.d.ts:207](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L207)
 
 Return true when processing is enabled at the cell.
 
@@ -30,7 +30,7 @@ Return true when processing is enabled at the cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### ~~isEnabledAt()~~
 
@@ -38,7 +38,7 @@ Return true when processing is enabled at the cell.
 isEnabledAt(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/structures.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L197)
+Defined in: [shared/api/structures.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L214)
 
 #### Parameters
 

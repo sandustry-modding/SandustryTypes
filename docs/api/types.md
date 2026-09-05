@@ -1,9 +1,11 @@
 # Sandkit API types
 
-TypeScript declarations and Docsify API docs for the live Sandustry `sandkit` object. Package name: `@sandustry-modding/types`.
+TypeScript declarations and community docs for the live Sandustry `sandkit` modding API.
+Package name: `@sandustry-modding/types`.
 
 Originally a fork of [flamableassassin/sandustry-modding-types](https://github.com/flamableassassin/sandustry-modding-types/).
 
+The [docs site](https://sandustry-modding.github.io/SandustryTypes/) ships API reference pages, modding guides, and JSON Schema for `modinfo.json` / `patches.json`.
 Folder layout mirrors runtime shape so you can jump from code to the matching `.d.ts` path.
 
 ## Runtime map
@@ -70,6 +72,7 @@ Edit `.d.ts` files under `src/`. Regenerate the Docsify API reference and JSON S
 
 ## Docs site
 
+Guides live under `docs/guides/` (getting started, mod lifecycle, manifest, patches, workers, Workshop).
 Regenerate the Docsify API reference and JSON Schema from these declarations:
 
 ```bash

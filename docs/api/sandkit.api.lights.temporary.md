@@ -73,7 +73,7 @@ api.lights.temporary.createAtWorld(worldX, worldY, {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### removeById() :id=removebyid
 
@@ -83,7 +83,7 @@ api.lights.temporary.createAtWorld(worldX, worldY, {
 removeById(lightId: number): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L59)
+Defined in: [sandkit/api/lights.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L63)
 
 Remove a temporary light by its id.
 

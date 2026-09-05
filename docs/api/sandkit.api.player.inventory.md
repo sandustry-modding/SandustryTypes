@@ -12,7 +12,7 @@ Player inventory helpers.
 addById(itemId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L118)
+Defined in: [sandkit/api/player.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L117)
 
 Add an item to inventory by item id.
 
@@ -32,7 +32,7 @@ Registered item id string.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### ~~addFromId()~~
 
@@ -40,7 +40,7 @@ Registered item id string.
 addFromId(itemId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L125)
+Defined in: [sandkit/api/player.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L124)
 
 #### Parameters
 

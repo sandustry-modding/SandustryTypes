@@ -9,7 +9,7 @@ Main thread only.
 
 <p class="smt-member-path"><code>sandkit.api.input.InputBindingHandlers</code></p>
 
-Defined in: [sandkit/api/input.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L113)
+Defined in: [sandkit/api/input.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L117)
 
 Handlers invoked when a binding is pressed or released.
 
@@ -21,7 +21,7 @@ Handlers invoked when a binding is pressed or released.
 optional down?: () => void
 ```
 
-Defined in: [sandkit/api/input.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L115)
+Defined in: [sandkit/api/input.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L119)
 
 Called when the binding is pressed.
 
@@ -35,7 +35,7 @@ Called when the binding is pressed.
 optional up?: () => void
 ```
 
-Defined in: [sandkit/api/input.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L117)
+Defined in: [sandkit/api/input.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L121)
 
 Called when the binding is released.
 
@@ -43,13 +43,13 @@ Called when the binding is released.
 
 `void`
 
----
+***
 
 ### InputBindingDefinition :id=inputbindingdefinition
 
 <p class="smt-member-path"><code>sandkit.api.input.InputBindingDefinition</code></p>
 
-Defined in: [sandkit/api/input.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L121)
+Defined in: [sandkit/api/input.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L125)
 
 Definition for a registered input binding.
 
@@ -64,10 +64,10 @@ Definition for a registered input binding.
 ##### displayName
 
 ```ts
-displayName: string;
+displayName: string
 ```
 
-Defined in: [sandkit/api/input.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L123)
+Defined in: [sandkit/api/input.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L127)
 
 Display name shown in settings.
 
@@ -77,27 +77,27 @@ Display name shown in settings.
 optional displayNameKey?: string
 ```
 
-Defined in: [sandkit/api/input.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L125)
+Defined in: [sandkit/api/input.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L129)
 
 i18n key for the display name (overrides displayName when set).
 
 ##### category
 
 ```ts
-category: string;
+category: string
 ```
 
-Defined in: [sandkit/api/input.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L127)
+Defined in: [sandkit/api/input.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L131)
 
 Settings category for grouping.
 
 ##### handlers
 
 ```ts
-handlers: InputBindingHandlers;
+handlers: InputBindingHandlers
 ```
 
-Defined in: [sandkit/api/input.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L129)
+Defined in: [sandkit/api/input.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L133)
 
 Press and release handlers.
 
@@ -108,37 +108,24 @@ Press and release handlers.
 <p class="smt-member-path"><code>sandkit.api.input.BindingId</code></p>
 
 ```ts
-BindingId = LooseString<` ${KeyBinding} `>;
+BindingId = LooseString<` ${KeyBinding} `>
 ```
 
-Defined in: [sandkit/api/input.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L92)
+Defined in: [sandkit/api/input.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L96)
 
 Binding id. Vanilla [KeyBindingEnum](api/sandkit.enums.KeyBinding.md) names autocomplete; custom ids are allowed.
 
----
+***
 
 ### KeyCode :id=keycode
 
 <p class="smt-member-path"><code>sandkit.api.input.KeyCode</code></p>
 
 ```ts
-KeyCode = LooseString<
-  | "Shift"
-  | "Alt"
-  | "Control"
-  | "Meta"
-  | "ShiftLeft"
-  | "ShiftRight"
-  | "AltLeft"
-  | "AltRight"
-  | "ControlLeft"
-  | "ControlRight"
-  | "MetaLeft"
-  | "MetaRight"
->;
+KeyCode = LooseString<"Shift" | "Alt" | "Control" | "Meta" | "ShiftLeft" | "ShiftRight" | "AltLeft" | "AltRight" | "ControlLeft" | "ControlRight" | "MetaLeft" | "MetaRight">
 ```
 
-Defined in: [sandkit/api/input.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L97)
+Defined in: [sandkit/api/input.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L101)
 
 KeyboardEvent.code, a modifier alias (`Shift`), or a chord (`Control+KeyC`).
 
@@ -198,7 +185,7 @@ api.input.registerBinding("ExampleToggle", ["KeyO"], {
 });
 ```
 
----
+***
 
 ### getMouseCellPosition() :id=getmousecellposition
 
@@ -208,7 +195,7 @@ api.input.registerBinding("ExampleToggle", ["KeyO"], {
 getMouseCellPosition(): object
 ```
 
-Defined in: [sandkit/api/input.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L37)
+Defined in: [sandkit/api/input.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L41)
 
 Return the mouse position in cell coordinates.
 
@@ -221,16 +208,16 @@ Cell `{ x, y }` under the cursor.
 ##### x
 
 ```ts
-x: number;
+x: number
 ```
 
 ##### y
 
 ```ts
-y: number;
+y: number
 ```
 
----
+***
 
 ### getBoundKeys() :id=getboundkeys
 
@@ -240,7 +227,7 @@ y: number;
 getBoundKeys(bindingId: BindingId): KeyCode[]
 ```
 
-Defined in: [sandkit/api/input.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L46)
+Defined in: [sandkit/api/input.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L50)
 
 Return the keys currently bound to a binding id.
 
@@ -260,7 +247,7 @@ Key strings from settings (for example `"KeyA"` or `"Shift"`).
 Session `input.keys` is keyed by `KeyboardEvent.code`. Modifier aliases
 (`Shift`, `Alt`, `Control`, `Meta`) expand to `ShiftLeft` / `ShiftRight` and the same for the other modifiers.
 
----
+***
 
 ### getDisplayKey() :id=getdisplaykey
 
@@ -270,7 +257,7 @@ Session `input.keys` is keyed by `KeyboardEvent.code`. Modifier aliases
 getDisplayKey(bindingId: BindingId, defaultLabel?: string): string
 ```
 
-Defined in: [sandkit/api/input.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L54)
+Defined in: [sandkit/api/input.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L58)
 
 Return a display label for the bound key.
 
@@ -294,7 +281,7 @@ Fallback label when no key is bound.
 
 Human-readable key label for UI.
 
----
+***
 
 ### triggerBinding() :id=triggerbinding
 
@@ -304,7 +291,7 @@ Human-readable key label for UI.
 triggerBinding(bindingId: BindingId): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L60)
+Defined in: [sandkit/api/input.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L64)
 
 Fire the binding down handler as if the key was pressed.
 
@@ -320,7 +307,7 @@ Registered binding id.
 
 `void`
 
----
+***
 
 ### pressBinding() :id=pressbinding
 
@@ -330,7 +317,7 @@ Registered binding id.
 pressBinding(bindingId: BindingId): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L66)
+Defined in: [sandkit/api/input.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L70)
 
 Fire the binding down handler without a matching release.
 
@@ -346,7 +333,7 @@ Registered binding id.
 
 `void`
 
----
+***
 
 ### releaseBinding() :id=releasebinding
 
@@ -356,7 +343,7 @@ Registered binding id.
 releaseBinding(bindingId: BindingId): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L72)
+Defined in: [sandkit/api/input.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L76)
 
 Fire the binding up handler.
 
@@ -372,7 +359,7 @@ Registered binding id.
 
 `void`
 
----
+***
 
 ### resetMouseState() :id=resetmousestate
 
@@ -382,7 +369,7 @@ Registered binding id.
 resetMouseState(): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L75)
+Defined in: [sandkit/api/input.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L79)
 
 Clear internal mouse button state.
 
@@ -390,7 +377,7 @@ Clear internal mouse button state.
 
 `void`
 
----
+***
 
 ### isCtrlHeld() :id=isctrlheld
 
@@ -400,7 +387,7 @@ Clear internal mouse button state.
 isCtrlHeld(): boolean
 ```
 
-Defined in: [sandkit/api/input.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L81)
+Defined in: [sandkit/api/input.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L85)
 
 Return true when Ctrl is held.
 
@@ -410,7 +397,7 @@ Return true when Ctrl is held.
 
 True when the Ctrl modifier is down.
 
----
+***
 
 ### isAltHeld() :id=isaltheld
 
@@ -420,7 +407,7 @@ True when the Ctrl modifier is down.
 isAltHeld(): boolean
 ```
 
-Defined in: [sandkit/api/input.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L87)
+Defined in: [sandkit/api/input.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L91)
 
 Return true when Alt is held.
 

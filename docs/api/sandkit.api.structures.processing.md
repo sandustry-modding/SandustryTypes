@@ -12,7 +12,7 @@ Per-structure processing enablement and registration.
 register(id: string & object, definition: StructureProcessingDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:501](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L501)
+Defined in: [sandkit/api/structures.d.ts:544](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L544)
 
 Register a custom processing definition by id.
 
@@ -37,20 +37,26 @@ Structure type, interval, and callback.
 #### Example
 
 ```ts
-api.structures.processing.register("exampleStructure:process", {
-  structureType: "exampleStructure",
-  intervalMs: 250,
-  process: (structure, context) => {
-    const empty = context.isCellEmptyAtCell(structure.x, structure.y);
+api.structures.processing.register(
+  "exampleStructure:process",
+  {
+    structureType: "exampleStructure",
+    intervalMs: 250,
+    process: (structure, context) => {
+      const empty = context.isCellEmptyAtCell(
+        structure.x,
+        structure.y,
+      );
+    },
   },
-});
+);
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### setEnabledAtCell() :id=setenabledatcell
 
@@ -60,7 +66,7 @@ api.structures.processing.register("exampleStructure:process", {
 setEnabledAtCell(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:513](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L513)
+Defined in: [sandkit/api/structures.d.ts:556](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L556)
 
 Enable or disable processing at a cell.
 
@@ -80,7 +86,7 @@ True when the enabled state changed.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### ~~setEnabledAt()~~
 
@@ -88,7 +94,7 @@ True when the enabled state changed.
 setEnabledAt(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:520](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L520)
+Defined in: [sandkit/api/structures.d.ts:563](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L563)
 
 #### Parameters
 
@@ -116,7 +122,7 @@ Use [setEnabledAtCell](#setenabledatcell) instead.
 
 Re-exports [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md#isenabledatcell)
 
----
+***
 
 ### isEnabledAt :id=isenabledat
 

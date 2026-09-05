@@ -15,7 +15,7 @@
 setPositionAtWorld(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L34)
+Defined in: [sandkit/api/player.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L33)
 
 Set the player world position.
 
@@ -41,7 +41,7 @@ World y position in pixels.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### ~~setWorldPosition()~~
 
@@ -49,7 +49,7 @@ World y position in pixels.
 setWorldPosition(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L41)
+Defined in: [sandkit/api/player.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L40)
 
 #### Parameters
 
@@ -73,7 +73,7 @@ Use [setPositionAtWorld](#setpositionatworld) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### setVelocity() :id=setvelocity
 
@@ -83,7 +83,7 @@ Use [setPositionAtWorld](#setpositionatworld) instead.
 setVelocity(velocityX: number, velocityY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L51)
+Defined in: [sandkit/api/player.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L50)
 
 Set the player velocity.
 
@@ -109,7 +109,7 @@ Vertical velocity in pixels per second.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### setMovementSpeedMultiplier() :id=setmovementspeedmultiplier
 
@@ -119,7 +119,7 @@ Vertical velocity in pixels per second.
 setMovementSpeedMultiplier(multiplier: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L61)
+Defined in: [sandkit/api/player.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L60)
 
 Set the movement speed multiplier.
 
@@ -140,7 +140,7 @@ Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly 
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### setMovementMode() :id=setmovementmode
 
@@ -150,7 +150,7 @@ Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly 
 setMovementMode(mode: "normal" | "hover"): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L71)
+Defined in: [sandkit/api/player.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L70)
 
 Set movement mode to normal or hover.
 
@@ -172,7 +172,7 @@ True when the mode changes.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### isOnGround() :id=isonground
 
@@ -182,7 +182,7 @@ True when the mode changes.
 isOnGround(): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L82)
+Defined in: [sandkit/api/player.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L81)
 
 Return true when the player is on ground.
 Tests solid cells 1 pixel below the hitbox. Do not use `player.onGround`
@@ -198,7 +198,7 @@ True when the player touches solid ground.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### teleportToGround() :id=teleporttoground
 
@@ -208,7 +208,7 @@ True when the player touches solid ground.
 teleportToGround(): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L89)
+Defined in: [sandkit/api/player.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L88)
 
 Move the player down until ground is found.
 
@@ -220,7 +220,7 @@ Move the player down until ground is found.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### isPositionClearAtWorld() :id=ispositionclearatworld
 
@@ -230,7 +230,7 @@ Move the player down until ground is found.
 isPositionClearAtWorld(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L100)
+Defined in: [sandkit/api/player.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L99)
 
 Return true when the world position has no collision.
 
@@ -258,7 +258,7 @@ True when the player hitbox fits at the position.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### ~~isWorldPositionClear()~~
 
@@ -266,7 +266,7 @@ True when the player hitbox fits at the position.
 isWorldPositionClear(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L107)
+Defined in: [sandkit/api/player.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L106)
 
 #### Parameters
 
@@ -298,7 +298,7 @@ Use [isPositionClearAtWorld](#ispositionclearatworld) instead.
 
 Re-exports [getPositionAtWorld](api/sandkit.api.player.worker.md#getpositionatworld)
 
----
+***
 
 ### isCollidingWithCell :id=iscollidingwithcell
 
@@ -306,7 +306,7 @@ Re-exports [getPositionAtWorld](api/sandkit.api.player.worker.md#getpositionatwo
 
 Re-exports [isCollidingWithCell](api/sandkit.api.player.worker.md#iscollidingwithcell)
 
----
+***
 
 ### isWithinRadiusOfCell :id=iswithinradiusofcell
 
@@ -314,7 +314,7 @@ Re-exports [isCollidingWithCell](api/sandkit.api.player.worker.md#iscollidingwit
 
 Re-exports [isWithinRadiusOfCell](api/sandkit.api.player.worker.md#iswithinradiusofcell)
 
----
+***
 
 ### getWorldPosition :id=getworldposition
 

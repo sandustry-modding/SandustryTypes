@@ -1,5 +1,5 @@
 /**
- * Sandkit mod file schemas: `modinfo.json` and `patches.json`.
+ * Sandkit mod file schemas: `modinfo.json`, `patches.json`, and `workshop.json`.
  *
  * These are not runtime `sandkit` properties. Import from
  * `@sandustry-modding/types/configs` when typing mod folder config files.
@@ -42,3 +42,5 @@ export type {
   PatchOperation,
   PatchTargetFile,
 } from "./patches";
+
+export type { WorkshopJson } from "./workshop";

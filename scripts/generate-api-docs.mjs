@@ -28,6 +28,7 @@ function npmCli(platform = process.platform) {
 
 const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const DOCS_SCRIPTS = join(ROOT, "scripts");
+const SRC = join(ROOT, "src");
 const DOCS = join(ROOT, "docs");
 const OUT = join(DOCS, "api");
 const TYPEDOC = join(DOCS_SCRIPTS, "node_modules/typedoc/bin/typedoc");
@@ -137,6 +138,55 @@ const ENGINE_API_GROUPS = [
     names: ["debug", "extensions", "misc", "tutorialBuild", "usageTracker", "workerLocal"],
   },
 ];
+
+/**
+ * @typedef {{ description: string, worker: boolean }} NamespaceSummary
+ */
+
+/** @type {Record<string, NamespaceSummary> | null} */
+let namespaceSummariesCache = null;
+
+/** @returns {Record<string, NamespaceSummary>} */
+function loadNamespaceSummaries() {
+  if (namespaceSummariesCache) return namespaceSummariesCache;
+  const path = join(DOCS_SCRIPTS, "namespace-summaries.json");
+  if (!existsSync(path)) {
+    namespaceSummariesCache = {};
+    return namespaceSummariesCache;
+  }
+  namespaceSummariesCache = JSON.parse(readFileSync(path, "utf8"));
+  return namespaceSummariesCache;
+}
+
+/**
+ * Count `export function` declarations in a top-level `sandkit.api` namespace file.
+ * @param {string} name
+ */
+function countNamespaceMethods(name) {
+  const fileName = name === "gameConfig" ? "gameConfig.d.ts" : `${name}.d.ts`;
+  const filePath = join(SRC, "sandkit", "api", fileName);
+  if (!existsSync(filePath)) return 0;
+  const text = readFileSync(filePath, "utf8");
+  return (text.match(/export function /g) || []).length;
+}
+
+/**
+ * @param {NamespaceNode[]} mainNs
+ */
+function renderApiStats(mainNs) {
+  const summaries = loadNamespaceSummaries();
+  const names = mainNs.map((n) => n.name);
+  const methodCount = names.reduce((sum, name) => sum + countNamespaceMethods(name), 0);
+  const workerCount = names.filter((name) => summaries[name]?.worker).length;
+  return [
+    '<div class="smt-api-stats">',
+    `<span><strong>${names.length}</strong> namespaces</span>`,
+    `<span><strong>${methodCount}</strong> API methods</span>`,
+    `<span><strong>${workerCount}</strong> worker-available</span>`,
+    "</div>",
+    "",
+  ];
+}
 
 function ensureDocsDeps() {
   if (existsSync(TYPEDOC)) return;
@@ -303,7 +353,11 @@ function writeModuleIndex(docsDir, linkMap, mainNs, workerNs, engineNs) {
     "",
     "# Sandkit API",
     "",
-    "Sandkit namespaces used by mods. Use groups below to find a namespace, or open [Full API reference](full.md).",
+    "`sandkit.api` namespaces available in a mod's main entry script.",
+    "Worker-available namespaces are marked.",
+    "",
+    ...renderApiStats(mainNs),
+    "Use groups below to find a namespace, or open [Full API reference](full.md).",
     "",
     "## Roots",
     "",
@@ -371,7 +425,7 @@ function renderGroupedNamespaces(nodes, href, groups) {
     if (!members.length) continue;
     out.push(`### ${group.title}`);
     out.push("");
-    out.push('<ul class="smt-api-group">');
+    out.push('<ul class="smt-api-group smt-api-cards">');
     for (const node of members) {
       used.add(node.name);
       out.push(...namespaceIndexItems(node, href));
@@ -384,7 +438,7 @@ function renderGroupedNamespaces(nodes, href, groups) {
   if (leftover.length) {
     out.push("### Other");
     out.push("");
-    out.push('<ul class="smt-api-group">');
+    out.push('<ul class="smt-api-group smt-api-cards">');
     for (const node of leftover) {
       out.push(...namespaceIndexItems(node, href));
     }
@@ -416,14 +470,33 @@ function renderFlatNamespaceList(nodes, href) {
  * @param {(rel: string) => string} href
  */
 function namespaceIndexItems(node, href) {
-  const link = `<a href="${docsifyHash(href(node.typedocRel))}">${node.name}</a>`;
+  const summaries = loadNamespaceSummaries();
+  const summary = summaries[node.name];
+  const methods = countNamespaceMethods(node.name);
+  const methodLabel = methods === 1 ? "1 method" : `${methods} methods`;
+  const workerBadge = summary?.worker
+    ? '<span class="smt-api-badge smt-api-badge-worker">worker</span>'
+    : "";
+  const desc = summary?.description
+    ? `<p class="smt-api-card-desc">${escapeHtml(summary.description)}</p>`
+    : "";
+  const link = `<a class="smt-api-card-link" href="${docsifyHash(href(node.typedocRel))}"><span class="smt-api-card-head"><span class="smt-api-card-name">${escapeHtml(node.name)}</span><span class="smt-api-card-meta">${methodLabel}</span></span>${desc}${workerBadge}</a>`;
   if (!node.children.length) {
-    return [`<li>${link}</li>`];
+    return [`<li class="smt-api-card">${link}</li>`];
   }
   const kids = node.children
-    .map((c) => `<li><a href="${docsifyHash(href(c.typedocRel))}">${c.name}</a></li>`)
+    .map((c) => `<li><a href="${docsifyHash(href(c.typedocRel))}">${escapeHtml(c.name)}</a></li>`)
     .join("");
-  return [`<li>${link}<ul class="smt-api-tree">${kids}</ul></li>`];
+  return [`<li class="smt-api-card">${link}<ul class="smt-api-tree">${kids}</ul></li>`];
+}
+
+/** @param {string} text */
+function escapeHtml(text) {
+  return String(text)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;");
 }
 
 /** `api/foo.md` → `#/api/foo` */

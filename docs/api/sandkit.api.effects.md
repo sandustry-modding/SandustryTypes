@@ -9,7 +9,7 @@ Main thread only. Temporary lights live under [lights.temporary](api/sandkit.api
 
 <p class="smt-member-path"><code>sandkit.api.effects.LaserEffectOptions</code></p>
 
-Defined in: [sandkit/api/effects.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L118)
+Defined in: [sandkit/api/effects.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L122)
 
 Options for laser beam effects.
 
@@ -21,7 +21,7 @@ Options for laser beam effects.
 optional width?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L120)
+Defined in: [sandkit/api/effects.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L124)
 
 Beam width in pixels.
 
@@ -31,7 +31,7 @@ Beam width in pixels.
 optional brightness?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L122)
+Defined in: [sandkit/api/effects.d.ts:126](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L126)
 
 Beam brightness multiplier.
 
@@ -41,7 +41,7 @@ Beam brightness multiplier.
 optional color?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L124)
+Defined in: [sandkit/api/effects.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L128)
 
 Beam color as a packed integer.
 
@@ -51,17 +51,17 @@ Beam color as a packed integer.
 optional glow?: boolean
 ```
 
-Defined in: [sandkit/api/effects.d.ts:126](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L126)
+Defined in: [sandkit/api/effects.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L130)
 
 When true, draws a glow around the beam.
 
----
+***
 
 ### LaserEffectHandle :id=lasereffecthandle
 
 <p class="smt-member-path"><code>sandkit.api.effects.LaserEffectHandle</code></p>
 
-Defined in: [sandkit/api/effects.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L130)
+Defined in: [sandkit/api/effects.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L134)
 
 Handle returned by createLaserAtWorld.
 
@@ -73,7 +73,7 @@ Handle returned by createLaserAtWorld.
 destroy(): void
 ```
 
-Defined in: [sandkit/api/effects.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L132)
+Defined in: [sandkit/api/effects.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L136)
 
 Removes the laser from the scene.
 
@@ -81,13 +81,13 @@ Removes the laser from the scene.
 
 `void`
 
----
+***
 
 ### DistortionEffectOptions :id=distortioneffectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.DistortionEffectOptions</code></p>
 
-Defined in: [sandkit/api/effects.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L136)
+Defined in: [sandkit/api/effects.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L140)
 
 Options for distortion wave effects.
 
@@ -99,7 +99,7 @@ Options for distortion wave effects.
 optional style?: "implode" | "explode"
 ```
 
-Defined in: [sandkit/api/effects.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L138)
+Defined in: [sandkit/api/effects.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L142)
 
 Distortion style: implode or explode.
 
@@ -109,7 +109,7 @@ Distortion style: implode or explode.
 optional duration?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L140)
+Defined in: [sandkit/api/effects.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L144)
 
 Effect duration in seconds.
 
@@ -119,7 +119,7 @@ Effect duration in seconds.
 optional maxRadius?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L142)
+Defined in: [sandkit/api/effects.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L146)
 
 Maximum radius of the wave.
 
@@ -129,7 +129,7 @@ Maximum radius of the wave.
 optional intensity?: number
 ```
 
-Defined in: [sandkit/api/effects.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L144)
+Defined in: [sandkit/api/effects.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L148)
 
 Visual intensity of the distortion.
 
@@ -139,17 +139,17 @@ Visual intensity of the distortion.
 optional color?: [number, number, number, number]
 ```
 
-Defined in: [sandkit/api/effects.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L146)
+Defined in: [sandkit/api/effects.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L150)
 
 RGBA color components for the effect.
 
----
+***
 
 ### EffectOptions :id=effectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.EffectOptions</code></p>
 
-Defined in: [shared/api/effects.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L35)
+Defined in: [shared/api/effects.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L48)
 
 Generic duration and radius options for world effects.
 
@@ -161,7 +161,7 @@ Generic duration and radius options for world effects.
 optional duration?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L36)
+Defined in: [shared/api/effects.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L49)
 
 ##### maxRadius?
 
@@ -169,7 +169,7 @@ Defined in: [shared/api/effects.d.ts:36](https://github.com/sandustry-modding/Sa
 optional maxRadius?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L37)
+Defined in: [shared/api/effects.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L50)
 
 ##### intensity?
 
@@ -177,15 +177,15 @@ Defined in: [shared/api/effects.d.ts:37](https://github.com/sandustry-modding/Sa
 optional intensity?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L38)
+Defined in: [shared/api/effects.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L51)
 
----
+***
 
 ### TemporaryLightOptions :id=temporarylightoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.TemporaryLightOptions</code></p>
 
-Defined in: [shared/api/effects.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L41)
+Defined in: [shared/api/effects.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L54)
 
 Options for [createLightAtWorld](#createlightatworld).
 
@@ -197,7 +197,7 @@ Options for [createLightAtWorld](#createlightatworld).
 optional brightness?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L42)
+Defined in: [shared/api/effects.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L55)
 
 ##### duration?
 
@@ -205,7 +205,7 @@ Defined in: [shared/api/effects.d.ts:42](https://github.com/sandustry-modding/Sa
 optional duration?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L43)
+Defined in: [shared/api/effects.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L56)
 
 ##### durationMs?
 
@@ -213,7 +213,7 @@ Defined in: [shared/api/effects.d.ts:43](https://github.com/sandustry-modding/Sa
 optional durationMs?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L44)
+Defined in: [shared/api/effects.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L57)
 
 ##### size?
 
@@ -221,7 +221,7 @@ Defined in: [shared/api/effects.d.ts:44](https://github.com/sandustry-modding/Sa
 optional size?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L45)
+Defined in: [shared/api/effects.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L58)
 
 ##### color?
 
@@ -229,15 +229,15 @@ Defined in: [shared/api/effects.d.ts:45](https://github.com/sandustry-modding/Sa
 optional color?: [number, number, number, number]
 ```
 
-Defined in: [shared/api/effects.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L46)
+Defined in: [shared/api/effects.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L59)
 
 ##### decay
 
 ```ts
-decay: number;
+decay: number
 ```
 
-Defined in: [shared/api/effects.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L48)
+Defined in: [shared/api/effects.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L61)
 
 Light decay rate after spawn.
 
@@ -247,7 +247,7 @@ Light decay rate after spawn.
 optional unclamped?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L49)
+Defined in: [shared/api/effects.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L62)
 
 ##### skipDedup?
 
@@ -255,7 +255,7 @@ Defined in: [shared/api/effects.d.ts:49](https://github.com/sandustry-modding/Sa
 optional skipDedup?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L50)
+Defined in: [shared/api/effects.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L63)
 
 ##### useLightZones?
 
@@ -263,7 +263,7 @@ Defined in: [shared/api/effects.d.ts:50](https://github.com/sandustry-modding/Sa
 optional useLightZones?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L51)
+Defined in: [shared/api/effects.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L64)
 
 ##### noopIfFull?
 
@@ -271,7 +271,7 @@ Defined in: [shared/api/effects.d.ts:51](https://github.com/sandustry-modding/Sa
 optional noopIfFull?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L52)
+Defined in: [shared/api/effects.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L65)
 
 ##### priority?
 
@@ -279,25 +279,25 @@ Defined in: [shared/api/effects.d.ts:52](https://github.com/sandustry-modding/Sa
 optional priority?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L53)
+Defined in: [shared/api/effects.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L66)
 
 ##### dedupKey
 
 ```ts
-dedupKey: string;
+dedupKey: string
 ```
 
-Defined in: [shared/api/effects.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L55)
+Defined in: [shared/api/effects.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L68)
 
 Dedupe key when the light pool is full or dedup is enabled.
 
----
+***
 
 ### ParticleEffectOptions :id=particleeffectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.ParticleEffectOptions</code></p>
 
-Defined in: [shared/api/effects.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L58)
+Defined in: [shared/api/effects.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L71)
 
 Options for [createParticlesAtWorld](#createparticlesatworld).
 
@@ -309,7 +309,7 @@ Options for [createParticlesAtWorld](#createparticlesatworld).
 optional count?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L59)
+Defined in: [shared/api/effects.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L72)
 
 ##### velocity?
 
@@ -317,7 +317,7 @@ Defined in: [shared/api/effects.d.ts:59](https://github.com/sandustry-modding/Sa
 optional velocity?: Vector2
 ```
 
-Defined in: [shared/api/effects.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L60)
+Defined in: [shared/api/effects.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L73)
 
 ##### minSpeed?
 
@@ -325,7 +325,7 @@ Defined in: [shared/api/effects.d.ts:60](https://github.com/sandustry-modding/Sa
 optional minSpeed?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L61)
+Defined in: [shared/api/effects.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L74)
 
 ##### maxSpeed?
 
@@ -333,7 +333,7 @@ Defined in: [shared/api/effects.d.ts:61](https://github.com/sandustry-modding/Sa
 optional maxSpeed?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L62)
+Defined in: [shared/api/effects.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L75)
 
 ##### color?
 
@@ -341,7 +341,7 @@ Defined in: [shared/api/effects.d.ts:62](https://github.com/sandustry-modding/Sa
 optional color?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L64)
+Defined in: [shared/api/effects.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L77)
 
 Hex code. No alpha.
 
@@ -351,7 +351,7 @@ Hex code. No alpha.
 optional minSize?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L65)
+Defined in: [shared/api/effects.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L78)
 
 ##### maxSize?
 
@@ -359,7 +359,7 @@ Defined in: [shared/api/effects.d.ts:65](https://github.com/sandustry-modding/Sa
 optional maxSize?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L66)
+Defined in: [shared/api/effects.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L79)
 
 ##### minLifetime?
 
@@ -367,7 +367,7 @@ Defined in: [shared/api/effects.d.ts:66](https://github.com/sandustry-modding/Sa
 optional minLifetime?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L67)
+Defined in: [shared/api/effects.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L80)
 
 ##### maxLifetime?
 
@@ -375,7 +375,7 @@ Defined in: [shared/api/effects.d.ts:67](https://github.com/sandustry-modding/Sa
 optional maxLifetime?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L68)
+Defined in: [shared/api/effects.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L81)
 
 ##### background?
 
@@ -383,7 +383,7 @@ Defined in: [shared/api/effects.d.ts:68](https://github.com/sandustry-modding/Sa
 optional background?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L69)
+Defined in: [shared/api/effects.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L82)
 
 ##### imageName?
 
@@ -391,7 +391,7 @@ Defined in: [shared/api/effects.d.ts:69](https://github.com/sandustry-modding/Sa
 optional imageName?: string
 ```
 
-Defined in: [shared/api/effects.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L70)
+Defined in: [shared/api/effects.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L83)
 
 ##### fadeOutOnly?
 
@@ -399,7 +399,7 @@ Defined in: [shared/api/effects.d.ts:70](https://github.com/sandustry-modding/Sa
 optional fadeOutOnly?: boolean
 ```
 
-Defined in: [shared/api/effects.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L71)
+Defined in: [shared/api/effects.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L84)
 
 ##### fadeStart?
 
@@ -407,7 +407,7 @@ Defined in: [shared/api/effects.d.ts:71](https://github.com/sandustry-modding/Sa
 optional fadeStart?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L72)
+Defined in: [shared/api/effects.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L85)
 
 ##### fadeEnd?
 
@@ -415,7 +415,7 @@ Defined in: [shared/api/effects.d.ts:72](https://github.com/sandustry-modding/Sa
 optional fadeEnd?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L73)
+Defined in: [shared/api/effects.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L86)
 
 ##### damp?
 
@@ -423,7 +423,7 @@ Defined in: [shared/api/effects.d.ts:73](https://github.com/sandustry-modding/Sa
 optional damp?: number
 ```
 
-Defined in: [shared/api/effects.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L74)
+Defined in: [shared/api/effects.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L87)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -473,7 +473,7 @@ Duration, radius, and intensity settings.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### ~~createEffectAtWorld()~~
 
@@ -513,7 +513,7 @@ Use [createAtWorld](#createatworld) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### ~~createLightAtWorld()~~
 
@@ -544,7 +544,7 @@ Defined in: [sandkit/api/effects.d.ts:67](https://github.com/sandustry-modding/S
 ##### ~~lightId~~
 
 ```ts
-lightId: number | null;
+lightId: number | null
 ```
 
 ##### ~~index?~~
@@ -561,7 +561,7 @@ Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createa
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### createDistortionWaveAtWorld() :id=createdistortionwaveatworld
 
@@ -611,7 +611,7 @@ api.effects.createDistortionWaveAtWorld(worldX, worldY, {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### createLaserAtWorld() :id=createlaseratworld
 
@@ -621,7 +621,7 @@ api.effects.createDistortionWaveAtWorld(worldX, worldY, {
 createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, endWorldY: number, options?: LaserEffectOptions): LaserEffectHandle
 ```
 
-Defined in: [sandkit/api/effects.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L102)
+Defined in: [sandkit/api/effects.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L106)
 
 Creates a laser beam between two world points. Returns a handle to destroy it.
 
@@ -665,7 +665,7 @@ Width, brightness, color, and glow options.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### ~~removeLightById()~~
 
@@ -673,7 +673,7 @@ Width, brightness, color, and glow options.
 removeLightById(lightId: number): void
 ```
 
-Defined in: [sandkit/api/effects.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L115)
+Defined in: [sandkit/api/effects.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L119)
 
 #### Parameters
 
@@ -693,7 +693,7 @@ Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md#removebyid
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### createParticlesAtWorld() :id=createparticlesatworld
 
@@ -703,7 +703,7 @@ Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md#removebyid
 createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectOptions): void
 ```
 
-Defined in: [shared/api/effects.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L24)
+Defined in: [shared/api/effects.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L28)
 
 Emit particles at world coordinates.
 

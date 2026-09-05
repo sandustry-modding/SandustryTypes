@@ -14,7 +14,7 @@ Available as `sandkit.api.blueprints`.
 
 <p class="smt-member-path"><code>sandkit.api.blueprints.BlueprintStructure</code></p>
 
-Defined in: [sandkit/api/blueprints.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L30)
+Defined in: [sandkit/api/blueprints.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L34)
 
 Serialized structure entry used in blueprints.
 
@@ -29,18 +29,18 @@ Serialized structure entry used in blueprints.
 ##### x
 
 ```ts
-x: number;
+x: number
 ```
 
-Defined in: [sandkit/api/blueprints.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L31)
+Defined in: [sandkit/api/blueprints.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L35)
 
 ##### y
 
 ```ts
-y: number;
+y: number
 ```
 
-Defined in: [sandkit/api/blueprints.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L32)
+Defined in: [sandkit/api/blueprints.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L36)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -72,7 +72,7 @@ Structure instances to encode.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
----
+***
 
 ### localizeStructures() :id=localizestructures
 
@@ -82,7 +82,7 @@ Structure instances to encode.
 localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]
 ```
 
-Defined in: [sandkit/api/blueprints.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L27)
+Defined in: [sandkit/api/blueprints.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L29)
 
 Localize blueprint structure records for placement.
 

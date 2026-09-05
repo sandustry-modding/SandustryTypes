@@ -1,0 +1,242 @@
+{
+  "action": {
+    "description": "Read the active hotbar action and store custom data on it.",
+    "worker": false
+  },
+  "assets": {
+    "description": "Turn mod-relative paths into asset URLs and pick the active provider for a texture kind.",
+    "worker": false
+  },
+  "authorization": {
+    "description": "Test build, grab, and tool permissions at cells and look up authorization zone ids.",
+    "worker": false
+  },
+  "blueprints": {
+    "description": "Serialize blueprint layouts and translate structure labels through the prefabulator.",
+    "worker": false
+  },
+  "building": {
+    "description": "Help place structures: snap positions, test blockage, choose what to build, or cancel.",
+    "worker": false
+  },
+  "camera": {
+    "description": "Return the camera to the player, focus a world point, or release focus.",
+    "worker": false
+  },
+  "collector": {
+    "description": "Read collector values per cell and element, test collectability, and report pickups.",
+    "worker": true
+  },
+  "constants": {
+    "description": "Read-only engine constants, including per-cell physics modes.",
+    "worker": true
+  },
+  "cooldown": {
+    "description": "Named per-mod cooldown timers you can check and consume.",
+    "worker": false
+  },
+  "discoveries": {
+    "description": "Mark elements and terrains as discovered in the player's log.",
+    "worker": false
+  },
+  "effects": {
+    "description": "Spawn short-lived visuals at world positions: waves, lasers, lights, and particles.",
+    "worker": true
+  },
+  "elements": {
+    "description": "Register custom element types and read or change falling-sand cells.",
+    "worker": true
+  },
+  "energy": {
+    "description": "Register energy types and add, consume, or read power on the network at a cell.",
+    "worker": false
+  },
+  "entities": {
+    "description": "Spawn, query, and control discrete world entities by id and type.",
+    "worker": false
+  },
+  "events": {
+    "description": "Subscribe to and emit named lifecycle and gameplay events.",
+    "worker": true
+  },
+  "excavation": {
+    "description": "Register named excavation profiles that define how digging behaves.",
+    "worker": false
+  },
+  "factory": {
+    "description": "Read factory level and per-process production counts and rates.",
+    "worker": false
+  },
+  "fire": {
+    "description": "Test whether a cell can burn and ignite it when the simulation is idle.",
+    "worker": true
+  },
+  "game": {
+    "description": "Control the game session lifecycle from your mod.",
+    "worker": false
+  },
+  "gameConfig": {
+    "description": "Read-only access to the game's global configuration values.",
+    "worker": false
+  },
+  "grid": {
+    "description": "Iterate rectangular or circular cell regions with a callback per cell.",
+    "worker": false
+  },
+  "hooks": {
+    "description": "Observe or override behavior at named engine hook points.",
+    "worker": true
+  },
+  "i18n": {
+    "description": "Register locale strings, translate keys, switch language, and format numbers.",
+    "worker": false
+  },
+  "input": {
+    "description": "Register key bindings, read the mouse cell, and query or drive binding state.",
+    "worker": false
+  },
+  "items": {
+    "description": "Register custom items and create or query item instances.",
+    "worker": false
+  },
+  "lights": {
+    "description": "Transient VFX lights and long-lived managed lights at world positions.",
+    "worker": false
+  },
+  "maps": {
+    "description": "List available maps and start a custom or vanilla map.",
+    "worker": true
+  },
+  "mods": {
+    "description": "Query asset providers contributed by other loaded mods.",
+    "worker": false
+  },
+  "patterns": {
+    "description": "Define reusable excavation shapes and apply them at a cell.",
+    "worker": true
+  },
+  "pickups": {
+    "description": "Spawn, query, remove, and collect loose items lying in the world.",
+    "worker": false
+  },
+  "pipes": {
+    "description": "Query and toggle liquid and gas pipes and the vents they connect to.",
+    "worker": false
+  },
+  "player": {
+    "description": "Read and control player position, movement, collision, inventory, and building unlocks.",
+    "worker": true
+  },
+  "processing": {
+    "description": "Register recipes for built-in Grower, Shaker, and Kinetic Press structures.",
+    "worker": false
+  },
+  "progression": {
+    "description": "Mark tutorial and progression steps as complete.",
+    "worker": false
+  },
+  "projectiles": {
+    "description": "Register projectile definitions and spawn them at world positions.",
+    "worker": false
+  },
+  "random": {
+    "description": "Seeded random numbers for deterministic, reproducible values.",
+    "worker": true
+  },
+  "raycast": {
+    "description": "Cast a ray from a world position and return what it hits.",
+    "worker": false
+  },
+  "reactions": {
+    "description": "Register contact rules that transform two elements when they touch.",
+    "worker": false
+  },
+  "rendering": {
+    "description": "Cell draw positions, grid metrics, overlay size, and custom overlay drawing.",
+    "worker": false
+  },
+  "resources": {
+    "description": "Collect fluxite at cells and update energy resource values.",
+    "worker": false
+  },
+  "scene": {
+    "description": "Read which scene is currently active.",
+    "worker": false
+  },
+  "schedule": {
+    "description": "Defer a callback until the next simulation tick.",
+    "worker": false
+  },
+  "settings": {
+    "description": "Read mod config from manifest configSchema and react when values change.",
+    "worker": false
+  },
+  "shared": {
+    "description": "SharedArrayBuffer storage for data shared between main and worker threads.",
+    "worker": true
+  },
+  "signals": {
+    "description": "Register handlers for signal target types.",
+    "worker": false
+  },
+  "sound": {
+    "description": "Play, layer, and stop sounds with optional distance-based volume and pan.",
+    "worker": false
+  },
+  "sprites": {
+    "description": "Load mod sprites, look them up by id, and manage player mod sprites.",
+    "worker": false
+  },
+  "storage": {
+    "description": "Persistent per-mod key-value storage and a device-local store.",
+    "worker": false
+  },
+  "structureBehaviors": {
+    "description": "Register custom conveyor and launcher behavior for transport structures.",
+    "worker": false
+  },
+  "structures": {
+    "description": "Register buildings, recipes, and processors; place, remove, and query structures on the grid.",
+    "worker": true
+  },
+  "tech": {
+    "description": "Register tech-tree nodes and read or change their locked state.",
+    "worker": false
+  },
+  "terrains": {
+    "description": "Register terrain types and create, damage, or remove terrain at cells.",
+    "worker": true
+  },
+  "time": {
+    "description": "Read game time in milliseconds and the current simulation tick.",
+    "worker": false
+  },
+  "tools": {
+    "description": "Inspect and control the grabber tool: size, active state, and load status.",
+    "worker": false
+  },
+  "triggers": {
+    "description": "Run a callback on a fixed interval with a configurable repeat count.",
+    "worker": false
+  },
+  "ui": {
+    "description": "Toasts, dialogs, tooltips, overlays, React UI, and controller-focus navigation.",
+    "worker": true
+  },
+  "upgrades": {
+    "description": "Register upgrade categories and trees; read chosen and unlocked levels.",
+    "worker": false
+  },
+  "utils": {
+    "description": "Geometry helpers: distance, direction, angle, and point interpolation.",
+    "worker": true
+  },
+  "workers": {
+    "description": "Enable this mod's post-update worker hook.",
+    "worker": false
+  },
+  "world": {
+    "description": "Read the cell grid, excavate, reveal fog, and run idle-safe world mutations.",
+    "worker": true
+  }
+}
