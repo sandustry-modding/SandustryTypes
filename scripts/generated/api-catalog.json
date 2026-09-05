@@ -1,0 +1,1736 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-05T23:20:12.456Z",
+  "officialSource": "https://sandustry.com/sandkit.html",
+  "stats": {
+    "namespaceCount": 67,
+    "officialMethodCount": 268,
+    "declaredMethodCount": 441,
+    "openGapCount": 45
+  },
+  "namespaces": {
+    "action": {
+      "description": "Read the active hotbar action and store custom data on it.",
+      "worker": false,
+      "methodCount": {
+        "official": 2,
+        "declared": 3
+      },
+      "officialMethods": [
+        "action.getActive",
+        "action.getSelected"
+      ],
+      "declaredMethods": [
+        "action.getActive",
+        "action.getSelected",
+        "action.setCustomData"
+      ],
+      "gaps": []
+    },
+    "assets": {
+      "description": "Turn mod-relative paths into asset URLs and pick the active provider for a texture kind.",
+      "worker": false,
+      "methodCount": {
+        "official": 2,
+        "declared": 3
+      },
+      "officialMethods": [
+        "assets.getSelectedProvider",
+        "assets.getUrl"
+      ],
+      "declaredMethods": [
+        "assets.getSelectedProvider",
+        "assets.getUrl",
+        "assets.selectProvider"
+      ],
+      "gaps": []
+    },
+    "authorization": {
+      "description": "Test build, grab, and tool permissions at cells and look up authorization zone ids.",
+      "worker": false,
+      "methodCount": {
+        "official": 6,
+        "declared": 6
+      },
+      "officialMethods": [
+        "authorization.canBuildAtCell",
+        "authorization.canGrabAtCell",
+        "authorization.canUseTool",
+        "authorization.canUseToolAtCell",
+        "authorization.getPlayerZoneId",
+        "authorization.getZoneIdAtCell"
+      ],
+      "declaredMethods": [
+        "authorization.canBuildAtCell",
+        "authorization.canGrabAtCell",
+        "authorization.canUseTool",
+        "authorization.canUseToolAtCell",
+        "authorization.getPlayerZoneId",
+        "authorization.getZoneIdAtCell"
+      ],
+      "gaps": []
+    },
+    "blueprints": {
+      "description": "Serialize blueprint layouts and translate structure labels through the prefabulator.",
+      "worker": false,
+      "methodCount": {
+        "official": 2,
+        "declared": 2
+      },
+      "officialMethods": [
+        "blueprints.localizeStructures",
+        "blueprints.serializeStructures"
+      ],
+      "declaredMethods": [
+        "blueprints.localizeStructures",
+        "blueprints.serializeStructures"
+      ],
+      "gaps": []
+    },
+    "building": {
+      "description": "Help place structures: snap positions, test blockage, choose what to build, or cancel.",
+      "worker": false,
+      "methodCount": {
+        "official": 4,
+        "declared": 4
+      },
+      "officialMethods": [
+        "building.cancelPlacement",
+        "building.getSnappedPositionAtCell",
+        "building.isBlockedAtCell",
+        "building.selectStructure"
+      ],
+      "declaredMethods": [
+        "building.cancelPlacement",
+        "building.getSnappedPositionAtCell",
+        "building.isBlockedAtCell",
+        "building.selectStructure"
+      ],
+      "gaps": []
+    },
+    "camera": {
+      "description": "Return the camera to the player, focus a world point, or release focus.",
+      "worker": false,
+      "methodCount": {
+        "official": 2,
+        "declared": 3
+      },
+      "officialMethods": [
+        "camera.setFocusAtWorld",
+        "camera.snapToPlayer"
+      ],
+      "declaredMethods": [
+        "camera.releaseFocus",
+        "camera.setFocusAtWorld",
+        "camera.snapToPlayer"
+      ],
+      "gaps": []
+    },
+    "collector": {
+      "description": "Read collector values per cell and element, test collectability, and report pickups.",
+      "worker": true,
+      "methodCount": {
+        "official": 5,
+        "declared": 5
+      },
+      "officialMethods": [
+        "collector.getValueByType",
+        "collector.getValueFromCellId",
+        "collector.isCellIdCollectable",
+        "collector.isCellIdCollectableForSprite",
+        "collector.notifyPickupAtCell"
+      ],
+      "declaredMethods": [
+        "collector.getValueByType",
+        "collector.getValueFromCellId",
+        "collector.isCellIdCollectable",
+        "collector.isCellIdCollectableForSprite",
+        "collector.notifyPickupAtCell"
+      ],
+      "gaps": []
+    },
+    "constants": {
+      "description": "Read-only engine constants, including per-cell physics modes.",
+      "worker": true,
+      "methodCount": {
+        "official": 0,
+        "declared": 1
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "constants.physics"
+      ],
+      "gaps": []
+    },
+    "cooldown": {
+      "description": "Named per-mod cooldown timers you can check and consume.",
+      "worker": false,
+      "methodCount": {
+        "official": 1,
+        "declared": 2
+      },
+      "officialMethods": [
+        "cooldown.isReady"
+      ],
+      "declaredMethods": [
+        "cooldown.check",
+        "cooldown.isReady"
+      ],
+      "gaps": [
+        {
+          "path": "cooldown.start",
+          "note": "Official name; types expose check and isReady",
+          "source": "expected"
+        }
+      ]
+    },
+    "discoveries": {
+      "description": "Mark elements and terrains as discovered in the player's log.",
+      "worker": false,
+      "methodCount": {
+        "official": 2,
+        "declared": 2
+      },
+      "officialMethods": [
+        "discoveries.addElementByType",
+        "discoveries.addTerrainByType"
+      ],
+      "declaredMethods": [
+        "discoveries.addElementByType",
+        "discoveries.addTerrainByType"
+      ],
+      "gaps": []
+    },
+    "effects": {
+      "description": "Spawn short-lived visuals at world positions: waves, lasers, lights, and particles.",
+      "worker": true,
+      "methodCount": {
+        "official": 1,
+        "declared": 10
+      },
+      "officialMethods": [
+        "effects.createLaserAtWorld"
+      ],
+      "declaredMethods": [
+        "effects.EffectOptions",
+        "effects.ParticleEffectOptions",
+        "effects.TemporaryLightOptions",
+        "effects.createAtWorld",
+        "effects.createDistortionWaveAtWorld",
+        "effects.createEffectAtWorld",
+        "effects.createLaserAtWorld",
+        "effects.createLightAtWorld",
+        "effects.createParticlesAtWorld",
+        "effects.removeLightById"
+      ],
+      "gaps": []
+    },
+    "elements": {
+      "description": "Register custom element types and read or change falling-sand cells.",
+      "worker": true,
+      "methodCount": {
+        "official": 24,
+        "declared": 50
+      },
+      "officialMethods": [
+        "elements.addParticleVelocityAtCell",
+        "elements.convertFromParticleAtCell",
+        "elements.convertToParticleAtCell",
+        "elements.findFreeCellInStructure",
+        "elements.getDataFieldAtCell",
+        "elements.getDefinitionByType",
+        "elements.getIdByType",
+        "elements.getInfoAtCell",
+        "elements.getMatterTypeAtCell",
+        "elements.getNameByType",
+        "elements.getRegisteredTypes",
+        "elements.getResolvedTypeAtCell",
+        "elements.getResolvedTypeFromCellId",
+        "elements.getTypeAtCell",
+        "elements.getVelocityAtCell",
+        "elements.isFreeFallingAtCell",
+        "elements.moveBetweenCells",
+        "elements.refreshColorAtCell",
+        "elements.register",
+        "elements.removeAtCell",
+        "elements.setDataFieldAtCell",
+        "elements.setPhysicsAtCell",
+        "elements.setVelocityAtCell",
+        "elements.teleportBetweenCells"
+      ],
+      "declaredMethods": [
+        "elements.ElementCreateOptions",
+        "elements.ElementDefinition",
+        "elements.ElementId",
+        "elements.ElementRef",
+        "elements.ElementRemovalOptions",
+        "elements.ElementType",
+        "elements.MatterType",
+        "elements.addInteractionInfo",
+        "elements.addParticleVelocityAtCell",
+        "elements.addParticleVelocityAtCellWhenIdle",
+        "elements.convertFromParticleAtCell",
+        "elements.convertFromParticleAtCellWhenIdle",
+        "elements.convertToParticleAtCell",
+        "elements.convertToParticleAtCellWhenIdle",
+        "elements.createAtCell",
+        "elements.createAtCellWhenIdle",
+        "elements.findFreeCellInStructure",
+        "elements.getDataFieldAtCell",
+        "elements.getDefinitionByType",
+        "elements.getIdByType",
+        "elements.getInfoAtCell",
+        "elements.getMatterTypeAtCell",
+        "elements.getNameByType",
+        "elements.getRegisteredTypes",
+        "elements.getResolvedTypeAtCell",
+        "elements.getResolvedTypeFromCellId",
+        "elements.getTypeAtCell",
+        "elements.getTypeById",
+        "elements.getTypeFromId",
+        "elements.getVelocityAtCell",
+        "elements.isFreeFallingAtCell",
+        "elements.isTypeAtCell",
+        "elements.refreshColorAtCell",
+        "elements.refreshColorAtCellWhenIdle",
+        "elements.register",
+        "elements.removeAtCell",
+        "elements.removeAtCellWhenIdle",
+        "elements.replaceAtCell",
+        "elements.replaceAtCellWhenIdle",
+        "elements.setDataFieldAtCell",
+        "elements.setDataFieldAtCellWhenIdle",
+        "elements.setDurationAtCell",
+        "elements.setDurationAtCellWhenIdle",
+        "elements.setPhysicsAtCell",
+        "elements.setPhysicsAtCellWhenIdle",
+        "elements.setVelocityAtCell",
+        "elements.setVelocityAtCellWhenIdle",
+        "elements.teleportBetweenCells",
+        "elements.teleportBetweenCellsWhenIdle",
+        "elements.updateDefinition"
+      ],
+      "gaps": [
+        {
+          "path": "elements.moveBetweenCells",
+          "source": "official"
+        }
+      ]
+    },
+    "energy": {
+      "description": "Register energy types and add, consume, or read power on the network at a cell.",
+      "worker": false,
+      "methodCount": {
+        "official": 4,
+        "declared": 6
+      },
+      "officialMethods": [
+        "energy.addAtCell",
+        "energy.consume",
+        "energy.consumeExcludingNetworkAtCell",
+        "energy.getNetworkFreeCapacityAtCell"
+      ],
+      "declaredMethods": [
+        "energy.addAtCell",
+        "energy.consume",
+        "energy.consumeExcludingNetworkAtCell",
+        "energy.getNetworkAtCell",
+        "energy.getNetworkFreeCapacityAtCell",
+        "energy.registerType"
+      ],
+      "gaps": []
+    },
+    "entities": {
+      "description": "Spawn, query, and control discrete world entities by id and type.",
+      "worker": false,
+      "methodCount": {
+        "official": 7,
+        "declared": 7
+      },
+      "officialMethods": [
+        "entities.collect",
+        "entities.getAllByType",
+        "entities.getById",
+        "entities.launch",
+        "entities.remove",
+        "entities.spawnAtWorld",
+        "entities.startCapture"
+      ],
+      "declaredMethods": [
+        "entities.collect",
+        "entities.getAllByType",
+        "entities.getById",
+        "entities.launch",
+        "entities.remove",
+        "entities.spawnAtWorld",
+        "entities.startCapture"
+      ],
+      "gaps": []
+    },
+    "events": {
+      "description": "Subscribe to and emit named lifecycle and gameplay events.",
+      "worker": true,
+      "methodCount": {
+        "official": 1,
+        "declared": 2
+      },
+      "officialMethods": [
+        "events.emit"
+      ],
+      "declaredMethods": [
+        "events.emit",
+        "events.on"
+      ],
+      "gaps": []
+    },
+    "excavation": {
+      "description": "Register named excavation profiles that define how digging behaves.",
+      "worker": false,
+      "methodCount": {
+        "official": 0,
+        "declared": 1
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "excavation.registerProfile"
+      ],
+      "gaps": []
+    },
+    "factory": {
+      "description": "Read factory level and per-process production counts and rates.",
+      "worker": false,
+      "methodCount": {
+        "official": 1,
+        "declared": 3
+      },
+      "officialMethods": [
+        "factory.getLevel"
+      ],
+      "declaredMethods": [
+        "factory.getLevel",
+        "factory.getProcessCount",
+        "factory.getProcessRate"
+      ],
+      "gaps": []
+    },
+    "fire": {
+      "description": "Test whether a cell can burn and ignite it when the simulation is idle.",
+      "worker": true,
+      "methodCount": {
+        "official": 2,
+        "declared": 3
+      },
+      "officialMethods": [
+        "fire.burnElementAtCell",
+        "fire.canBurnElementAtCell"
+      ],
+      "declaredMethods": [
+        "fire.burnElementAtCell",
+        "fire.burnElementAtCellWhenIdle",
+        "fire.canBurnElementAtCell"
+      ],
+      "gaps": []
+    },
+    "game": {
+      "description": "Control the game session lifecycle from your mod.",
+      "worker": false,
+      "methodCount": {
+        "official": 0,
+        "declared": 1
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "game.start"
+      ],
+      "gaps": []
+    },
+    "gameConfig": {
+      "description": "Read-only access to the game's global configuration values.",
+      "worker": false,
+      "methodCount": {
+        "official": 1,
+        "declared": 2
+      },
+      "officialMethods": [
+        "gameConfig.getAll"
+      ],
+      "declaredMethods": [
+        "gameConfig.get",
+        "gameConfig.getAll"
+      ],
+      "gaps": []
+    },
+    "grid": {
+      "description": "Iterate rectangular or circular cell regions with a callback per cell.",
+      "worker": false,
+      "methodCount": {
+        "official": 7,
+        "declared": 15
+      },
+      "officialMethods": [
+        "grid.excavateAtCell",
+        "grid.forEachCellInCircle",
+        "grid.getCellIdAtCell",
+        "grid.isCellEmptyAtCell",
+        "grid.isTerrainAtCell",
+        "grid.reportActivityAtCell",
+        "grid.revealFogAtCell"
+      ],
+      "declaredMethods": [
+        "grid.CellId",
+        "grid.ExcavateOptions",
+        "grid.GridDimensions",
+        "grid.excavateAtCell",
+        "grid.forEachCellInCircle",
+        "grid.forEachCellInRect",
+        "grid.forEachCellInRectangle",
+        "grid.getCellIdAtCell",
+        "grid.getDimensions",
+        "grid.isCellEmptyAtCell",
+        "grid.isTerrainAtCell",
+        "grid.mutate",
+        "grid.redrawAroundCell",
+        "grid.reportActivityAtCell",
+        "grid.revealFogAtCell"
+      ],
+      "gaps": []
+    },
+    "hooks": {
+      "description": "Observe or override behavior at named engine hook points.",
+      "worker": true,
+      "methodCount": {
+        "official": 0,
+        "declared": 2
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "hooks.intercept",
+        "hooks.modify"
+      ],
+      "gaps": []
+    },
+    "i18n": {
+      "description": "Register locale strings, translate keys, switch language, and format numbers.",
+      "worker": false,
+      "methodCount": {
+        "official": 9,
+        "declared": 20
+      },
+      "officialMethods": [
+        "i18n.formatKeyForDisplay",
+        "i18n.getAvailableLocales",
+        "i18n.getGlobal",
+        "i18n.getGlobals",
+        "i18n.getLanguages",
+        "i18n.getLocale",
+        "i18n.hasTranslation",
+        "i18n.setGlobal",
+        "i18n.setLocale"
+      ],
+      "declaredMethods": [
+        "i18n.clearGlobal",
+        "i18n.createTranslatable",
+        "i18n.formatKeyForDisplay",
+        "i18n.formatNumber",
+        "i18n.getAvailableLocales",
+        "i18n.getDescription",
+        "i18n.getGlobal",
+        "i18n.getGlobals",
+        "i18n.getLanguages",
+        "i18n.getLocale",
+        "i18n.getName",
+        "i18n.hasTranslation",
+        "i18n.joinKey",
+        "i18n.key",
+        "i18n.register",
+        "i18n.removeGlobal",
+        "i18n.setGlobal",
+        "i18n.setLocale",
+        "i18n.t",
+        "i18n.translatable"
+      ],
+      "gaps": []
+    },
+    "input": {
+      "description": "Register key bindings, read the mouse cell, and query or drive binding state.",
+      "worker": false,
+      "methodCount": {
+        "official": 9,
+        "declared": 10
+      },
+      "officialMethods": [
+        "input.getBoundKeys",
+        "input.getDisplayKey",
+        "input.getMousePositionAtWorld",
+        "input.isAltHeld",
+        "input.isCtrlHeld",
+        "input.pressBinding",
+        "input.releaseBinding",
+        "input.resetMouseState",
+        "input.triggerBinding"
+      ],
+      "declaredMethods": [
+        "input.getBoundKeys",
+        "input.getDisplayKey",
+        "input.getMouseCellPosition",
+        "input.isAltHeld",
+        "input.isCtrlHeld",
+        "input.pressBinding",
+        "input.registerBinding",
+        "input.releaseBinding",
+        "input.resetMouseState",
+        "input.triggerBinding"
+      ],
+      "gaps": [
+        {
+          "path": "input.getMousePositionAtWorld",
+          "source": "official"
+        }
+      ]
+    },
+    "items": {
+      "description": "Register custom items and create or query item instances.",
+      "worker": false,
+      "methodCount": {
+        "official": 6,
+        "declared": 6
+      },
+      "officialMethods": [
+        "items.getActive",
+        "items.getDefinitionById",
+        "items.getRegisteredIds",
+        "items.isActiveById",
+        "items.register",
+        "items.spriteMounts"
+      ],
+      "declaredMethods": [
+        "items.createFromId",
+        "items.getActive",
+        "items.getDefinitionById",
+        "items.isActiveById",
+        "items.register",
+        "items.updateDefinition"
+      ],
+      "gaps": [
+        {
+          "path": "items.getRegisteredIds",
+          "source": "official"
+        },
+        {
+          "path": "items.spriteMounts",
+          "source": "official"
+        }
+      ]
+    },
+    "lights": {
+      "description": "Transient VFX lights and long-lived managed lights at world positions.",
+      "worker": false,
+      "methodCount": {
+        "official": 3,
+        "declared": 12
+      },
+      "officialMethods": [
+        "lights.persistent.fadeAtWorld",
+        "lights.persistent.markDirty",
+        "lights.persistent.removeAtWorld"
+      ],
+      "declaredMethods": [
+        "lights.createAtWorld",
+        "lights.fadeAtWorld",
+        "lights.markDirty",
+        "lights.persistent.createAtWorld",
+        "lights.persistent.fadeAtWorld",
+        "lights.persistent.markDirty",
+        "lights.persistent.removeAtWorld",
+        "lights.removeAtWorld",
+        "lights.removeById",
+        "lights.temporary.createAtWorld",
+        "lights.temporary.removeById",
+        "lights.vfx"
+      ],
+      "gaps": []
+    },
+    "local": {
+      "description": "",
+      "worker": false,
+      "methodCount": {
+        "official": 3,
+        "declared": 0
+      },
+      "officialMethods": [
+        "local.get",
+        "local.remove",
+        "local.set"
+      ],
+      "declaredMethods": [],
+      "gaps": [
+        {
+          "path": "local.get",
+          "source": "official"
+        },
+        {
+          "path": "local.set",
+          "source": "official"
+        },
+        {
+          "path": "local.remove",
+          "source": "official"
+        }
+      ]
+    },
+    "main": {
+      "description": "",
+      "worker": true,
+      "methodCount": {
+        "official": 1,
+        "declared": 0
+      },
+      "officialMethods": [
+        "main.emitEvent"
+      ],
+      "declaredMethods": [],
+      "gaps": [
+        {
+          "path": "main.emitEvent",
+          "source": "official"
+        }
+      ]
+    },
+    "maps": {
+      "description": "List available maps and start a custom or vanilla map.",
+      "worker": true,
+      "methodCount": {
+        "official": 3,
+        "declared": 5
+      },
+      "officialMethods": [
+        "maps.getActive",
+        "maps.getAvailable",
+        "maps.start"
+      ],
+      "declaredMethods": [
+        "maps.ActiveMapV1",
+        "maps.getActive",
+        "maps.getArtifactLocations",
+        "maps.getAvailable",
+        "maps.start"
+      ],
+      "gaps": []
+    },
+    "mods": {
+      "description": "Query asset providers contributed by other loaded mods.",
+      "worker": false,
+      "methodCount": {
+        "official": 1,
+        "declared": 1
+      },
+      "officialMethods": [
+        "mods.getProviders"
+      ],
+      "declaredMethods": [
+        "mods.getProviders"
+      ],
+      "gaps": []
+    },
+    "overrideHandle": {
+      "description": "",
+      "worker": false,
+      "methodCount": {
+        "official": 1,
+        "declared": 0
+      },
+      "officialMethods": [
+        "overrideHandle.remove"
+      ],
+      "declaredMethods": [],
+      "gaps": [
+        {
+          "path": "overrideHandle.remove",
+          "source": "official"
+        }
+      ]
+    },
+    "patterns": {
+      "description": "Define reusable excavation shapes and apply them at a cell.",
+      "worker": true,
+      "methodCount": {
+        "official": 1,
+        "declared": 2
+      },
+      "officialMethods": [
+        "patterns.createCircle"
+      ],
+      "declaredMethods": [
+        "patterns.createCircle",
+        "patterns.excavateAtCell"
+      ],
+      "gaps": []
+    },
+    "physics": {
+      "description": "",
+      "worker": false,
+      "methodCount": {
+        "official": 3,
+        "declared": 0
+      },
+      "officialMethods": [
+        "physics.aggressiveSkip",
+        "physics.normal",
+        "physics.skip"
+      ],
+      "declaredMethods": [],
+      "gaps": [
+        {
+          "path": "physics.normal",
+          "source": "official"
+        },
+        {
+          "path": "physics.skip",
+          "source": "official"
+        },
+        {
+          "path": "physics.aggressiveSkip",
+          "source": "official"
+        }
+      ]
+    },
+    "pickups": {
+      "description": "Spawn, query, remove, and collect loose items lying in the world.",
+      "worker": false,
+      "methodCount": {
+        "official": 3,
+        "declared": 6
+      },
+      "officialMethods": [
+        "pickups.getAll",
+        "pickups.getById",
+        "pickups.pickUp"
+      ],
+      "declaredMethods": [
+        "pickups.destroy",
+        "pickups.getAll",
+        "pickups.getById",
+        "pickups.pickUp",
+        "pickups.remove",
+        "pickups.spawnAtWorld"
+      ],
+      "gaps": []
+    },
+    "pipes": {
+      "description": "Query and toggle liquid and gas pipes and the vents they connect to.",
+      "worker": false,
+      "methodCount": {
+        "official": 4,
+        "declared": 4
+      },
+      "officialMethods": [
+        "pipes.getConnectedVentsAtCell",
+        "pipes.isAtCell",
+        "pipes.isEnabledAtCell",
+        "pipes.setEnabledAtCell"
+      ],
+      "declaredMethods": [
+        "pipes.getConnectedVentsAtCell",
+        "pipes.isAtCell",
+        "pipes.isEnabledAtCell",
+        "pipes.setEnabledAtCell"
+      ],
+      "gaps": []
+    },
+    "player": {
+      "description": "Read and control player position, movement, collision, inventory, and building unlocks.",
+      "worker": true,
+      "methodCount": {
+        "official": 7,
+        "declared": 23
+      },
+      "officialMethods": [
+        "player.buildings.removeById",
+        "player.isCollidingWithCell",
+        "player.isOnGround",
+        "player.isWithinRadiusOfCell",
+        "player.setMovementSpeedMultiplier",
+        "player.setVelocity",
+        "player.teleportToGround"
+      ],
+      "declaredMethods": [
+        "player.addById",
+        "player.addFromId",
+        "player.buildings.removeById",
+        "player.buildings.unlockById",
+        "player.buildings.unlockByType",
+        "player.getPositionAtWorld",
+        "player.getWorldPosition",
+        "player.inventory.addById",
+        "player.inventory.addFromId",
+        "player.isCollidingWithCell",
+        "player.isOnGround",
+        "player.isPositionClearAtWorld",
+        "player.isWithinRadiusOfCell",
+        "player.isWorldPositionClear",
+        "player.removeById",
+        "player.setMovementMode",
+        "player.setMovementSpeedMultiplier",
+        "player.setPositionAtWorld",
+        "player.setVelocity",
+        "player.setWorldPosition",
+        "player.teleportToGround",
+        "player.unlockById",
+        "player.unlockByType"
+      ],
+      "gaps": [
+        {
+          "path": "player.inventory.hasById",
+          "note": "Test whether inventory contains an item id",
+          "source": "expected"
+        }
+      ]
+    },
+    "processing": {
+      "description": "Register recipes for built-in Grower, Shaker, and Kinetic Press structures.",
+      "worker": false,
+      "methodCount": {
+        "official": 0,
+        "declared": 3
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "processing.registerGrower",
+        "processing.registerKineticPress",
+        "processing.registerShaker"
+      ],
+      "gaps": []
+    },
+    "progression": {
+      "description": "Mark tutorial and progression steps as complete.",
+      "worker": false,
+      "methodCount": {
+        "official": 0,
+        "declared": 1
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "progression.complete"
+      ],
+      "gaps": []
+    },
+    "projectiles": {
+      "description": "Register projectile definitions and spawn them at world positions.",
+      "worker": false,
+      "methodCount": {
+        "official": 6,
+        "declared": 7
+      },
+      "officialMethods": [
+        "projectiles.getAll",
+        "projectiles.getById",
+        "projectiles.getDefinitionById",
+        "projectiles.register",
+        "projectiles.remove",
+        "projectiles.spawnAtWorld"
+      ],
+      "declaredMethods": [
+        "projectiles.createBlueprintFromId",
+        "projectiles.getAll",
+        "projectiles.getById",
+        "projectiles.getDefinitionById",
+        "projectiles.register",
+        "projectiles.remove",
+        "projectiles.spawnAtWorld"
+      ],
+      "gaps": []
+    },
+    "random": {
+      "description": "Seeded random numbers for deterministic, reproducible values.",
+      "worker": true,
+      "methodCount": {
+        "official": 2,
+        "declared": 2
+      },
+      "officialMethods": [
+        "random.float",
+        "random.int"
+      ],
+      "declaredMethods": [
+        "random.float",
+        "random.int"
+      ],
+      "gaps": []
+    },
+    "raycast": {
+      "description": "Cast a ray from a world position and return what it hits.",
+      "worker": false,
+      "methodCount": {
+        "official": 0,
+        "declared": 1
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "raycast.castFromWorld"
+      ],
+      "gaps": []
+    },
+    "reactions": {
+      "description": "Register contact rules that transform two elements when they touch.",
+      "worker": false,
+      "methodCount": {
+        "official": 0,
+        "declared": 1
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "reactions.registerContact"
+      ],
+      "gaps": []
+    },
+    "rendering": {
+      "description": "Cell draw positions, grid metrics, overlay size, and custom overlay drawing.",
+      "worker": false,
+      "methodCount": {
+        "official": 2,
+        "declared": 5
+      },
+      "officialMethods": [
+        "rendering.getDrawPositionAtCell",
+        "rendering.getOverlayViewportSize"
+      ],
+      "declaredMethods": [
+        "rendering.getDrawPositionAtCell",
+        "rendering.getDrawPositionAtWorld",
+        "rendering.getGridMetrics",
+        "rendering.getOverlayViewportSize",
+        "rendering.withOverlayContext"
+      ],
+      "gaps": []
+    },
+    "resources": {
+      "description": "Collect fluxite at cells and update energy resource values.",
+      "worker": false,
+      "methodCount": {
+        "official": 2,
+        "declared": 2
+      },
+      "officialMethods": [
+        "resources.collectFluxiteAtCell",
+        "resources.refresh"
+      ],
+      "declaredMethods": [
+        "resources.collectFluxiteAtCell",
+        "resources.updateEnergy"
+      ],
+      "gaps": [
+        {
+          "path": "resources.refresh",
+          "source": "official"
+        }
+      ]
+    },
+    "scene": {
+      "description": "Read which scene is currently active.",
+      "worker": false,
+      "methodCount": {
+        "official": 1,
+        "declared": 2
+      },
+      "officialMethods": [
+        "scene.getActive"
+      ],
+      "declaredMethods": [
+        "scene.Scene",
+        "scene.getActive"
+      ],
+      "gaps": []
+    },
+    "schedule": {
+      "description": "Defer a callback until the next simulation tick.",
+      "worker": false,
+      "methodCount": {
+        "official": 0,
+        "declared": 1
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "schedule.nextTick"
+      ],
+      "gaps": []
+    },
+    "settings": {
+      "description": "Read mod config from manifest configSchema and react when values change.",
+      "worker": false,
+      "methodCount": {
+        "official": 2,
+        "declared": 3
+      },
+      "officialMethods": [
+        "settings.get",
+        "settings.getAll"
+      ],
+      "declaredMethods": [
+        "settings.get",
+        "settings.getAll",
+        "settings.onChange"
+      ],
+      "gaps": []
+    },
+    "shared": {
+      "description": "SharedArrayBuffer storage for data shared between main and worker threads.",
+      "worker": true,
+      "methodCount": {
+        "official": 1,
+        "declared": 8
+      },
+      "officialMethods": [
+        "shared.buffers.get"
+      ],
+      "declaredMethods": [
+        "shared.SharedArray",
+        "shared.SharedArrayType",
+        "shared.buffers.create",
+        "shared.buffers.ensure",
+        "shared.buffers.get",
+        "shared.create",
+        "shared.ensure",
+        "shared.get"
+      ],
+      "gaps": []
+    },
+    "signals": {
+      "description": "Register handlers for signal target types.",
+      "worker": false,
+      "methodCount": {
+        "official": 0,
+        "declared": 2
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "signals.register",
+        "signals.targets.register"
+      ],
+      "gaps": [
+        {
+          "path": "signals.registerSenderType",
+          "note": "Register a signal sender structure type",
+          "source": "expected"
+        },
+        {
+          "path": "signals.setOutputAtCell",
+          "note": "Write signal output at a structure cell",
+          "source": "expected"
+        }
+      ]
+    },
+    "sound": {
+      "description": "Play, layer, and stop sounds with optional distance-based volume and pan.",
+      "worker": false,
+      "methodCount": {
+        "official": 6,
+        "declared": 8
+      },
+      "officialMethods": [
+        "sound.calculateDistanceOptionsAtWorld",
+        "sound.play",
+        "sound.playActive",
+        "sound.playLayers",
+        "sound.stopActive",
+        "sound.stopAll"
+      ],
+      "declaredMethods": [
+        "sound.calculateDistanceOptionsAtWorld",
+        "sound.play",
+        "sound.playActive",
+        "sound.playLayers",
+        "sound.stopActive",
+        "sound.stopAll",
+        "sound.stopById",
+        "sound.stopBySoundId"
+      ],
+      "gaps": []
+    },
+    "source": {
+      "description": "",
+      "worker": false,
+      "methodCount": {
+        "official": 7,
+        "declared": 0
+      },
+      "officialMethods": [
+        "source.activateSlot",
+        "source.clearSlot",
+        "source.dispose",
+        "source.getAction",
+        "source.getBankIndex",
+        "source.getSlotCount",
+        "source.isAvailable"
+      ],
+      "declaredMethods": [],
+      "gaps": [
+        {
+          "path": "source.isAvailable",
+          "source": "official"
+        },
+        {
+          "path": "source.getBankIndex",
+          "source": "official"
+        },
+        {
+          "path": "source.getSlotCount",
+          "source": "official"
+        },
+        {
+          "path": "source.getAction",
+          "source": "official"
+        },
+        {
+          "path": "source.activateSlot",
+          "source": "official"
+        },
+        {
+          "path": "source.clearSlot",
+          "source": "official"
+        },
+        {
+          "path": "source.dispose",
+          "source": "official"
+        }
+      ]
+    },
+    "sprites": {
+      "description": "Load mod sprites, look them up by id, and manage player mod sprites.",
+      "worker": false,
+      "methodCount": {
+        "official": 3,
+        "declared": 5
+      },
+      "officialMethods": [
+        "sprites.getById",
+        "sprites.load",
+        "sprites.loadFromMod"
+      ],
+      "declaredMethods": [
+        "sprites.getById",
+        "sprites.hideAllPlayerModSprites",
+        "sprites.load",
+        "sprites.loadFromMod",
+        "sprites.rotatePlayerModSprites"
+      ],
+      "gaps": []
+    },
+    "storage": {
+      "description": "Persistent per-mod key-value storage and a device-local store.",
+      "worker": false,
+      "methodCount": {
+        "official": 4,
+        "declared": 7
+      },
+      "officialMethods": [
+        "storage.ensure",
+        "storage.get",
+        "storage.remove",
+        "storage.set"
+      ],
+      "declaredMethods": [
+        "storage.ensure",
+        "storage.get",
+        "storage.local.get",
+        "storage.local.remove",
+        "storage.local.set",
+        "storage.remove",
+        "storage.set"
+      ],
+      "gaps": []
+    },
+    "structureBehaviors": {
+      "description": "Register custom conveyor and launcher behavior for transport structures.",
+      "worker": false,
+      "methodCount": {
+        "official": 0,
+        "declared": 2
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "structureBehaviors.registerConveyorType",
+        "structureBehaviors.registerLauncherType"
+      ],
+      "gaps": []
+    },
+    "structures": {
+      "description": "Register buildings, recipes, and processors; place, remove, and query structures on the grid.",
+      "worker": true,
+      "methodCount": {
+        "official": 12,
+        "declared": 50
+      },
+      "officialMethods": [
+        "structures.getAtCell",
+        "structures.getDefinitionByType",
+        "structures.hasBuiltAtCell",
+        "structures.isBlockedByPlayerAtCell",
+        "structures.isLauncherAtCell",
+        "structures.isType",
+        "structures.isTypeAtCell",
+        "structures.processing.context.commit",
+        "structures.setSpritesheetIndex",
+        "structures.setSpritesheetIndexAtCell",
+        "structures.setSpritesheetIndexByValue",
+        "structures.setSpritesheetIndexByValueAtCell"
+      ],
+      "declaredMethods": [
+        "structures.Structure",
+        "structures.StructureId",
+        "structures.StructureRef",
+        "structures.StructureType",
+        "structures.addProcessor",
+        "structures.addVariant",
+        "structures.buildAtCell",
+        "structures.buildAtCellWhenIdle",
+        "structures.forEachOfType",
+        "structures.getAtCell",
+        "structures.getAvailableTypes",
+        "structures.getDefinitionByType",
+        "structures.getTypeById",
+        "structures.getTypeFromId",
+        "structures.getUnlockedTypes",
+        "structures.hasBuiltAtCell",
+        "structures.isBlockedByPlayerAtCell",
+        "structures.isEnabledAt",
+        "structures.isEnabledAtCell",
+        "structures.isLauncherAtCell",
+        "structures.isLockedByType",
+        "structures.isType",
+        "structures.isTypeAtCell",
+        "structures.isUnlockedByType",
+        "structures.mapValueToSpritesheetIndex",
+        "structures.processing.isEnabledAt",
+        "structures.processing.isEnabledAtCell",
+        "structures.processing.register",
+        "structures.processing.setEnabledAt",
+        "structures.processing.setEnabledAtCell",
+        "structures.recipes.register",
+        "structures.register",
+        "structures.registerPlacementConfig",
+        "structures.registerVariant",
+        "structures.removeAtCell",
+        "structures.removeAtCellWhenIdle",
+        "structures.removeAtCells",
+        "structures.removeAtCellsWhenIdle",
+        "structures.removeBetweenCells",
+        "structures.removeBetweenCellsWhenIdle",
+        "structures.setData",
+        "structures.setEnabledAt",
+        "structures.setEnabledAtCell",
+        "structures.setSpritesheetIndex",
+        "structures.setSpritesheetIndexAtCell",
+        "structures.setSpritesheetIndexByValue",
+        "structures.setSpritesheetIndexByValueAtCell",
+        "structures.update",
+        "structures.updateData",
+        "structures.updateDefinition"
+      ],
+      "gaps": [
+        {
+          "path": "structures.processing.context.commit",
+          "source": "official"
+        }
+      ]
+    },
+    "tech": {
+      "description": "Register tech-tree nodes and read or change their locked state.",
+      "worker": false,
+      "methodCount": {
+        "official": 3,
+        "declared": 10
+      },
+      "officialMethods": [
+        "tech.getDefinitionById",
+        "tech.isLockedById",
+        "tech.setLockedById"
+      ],
+      "declaredMethods": [
+        "tech.addDefinition",
+        "tech.appendUnlock",
+        "tech.conservatory.appendUnlock",
+        "tech.getDefinitionById",
+        "tech.isLockedById",
+        "tech.isResearchedById",
+        "tech.registerDefinition",
+        "tech.registerNode",
+        "tech.setLockedById",
+        "tech.updateDefinition"
+      ],
+      "gaps": []
+    },
+    "terrains": {
+      "description": "Register terrain types and create, damage, or remove terrain at cells.",
+      "worker": true,
+      "methodCount": {
+        "official": 13,
+        "declared": 27
+      },
+      "officialMethods": [
+        "terrains.createAtCell",
+        "terrains.damageAtCell",
+        "terrains.getDefinitionByType",
+        "terrains.getIdByType",
+        "terrains.getTypeAtCell",
+        "terrains.isAtCell",
+        "terrains.isCellIdTerrain",
+        "terrains.isTypeAtCell",
+        "terrains.meltAtCell",
+        "terrains.register",
+        "terrains.removeAtCell",
+        "terrains.replaceAtCell",
+        "terrains.updateDefinition"
+      ],
+      "declaredMethods": [
+        "terrains.TerrainDataAtCell",
+        "terrains.TerrainId",
+        "terrains.TerrainMutationOptions",
+        "terrains.TerrainRef",
+        "terrains.TerrainType",
+        "terrains.createAtCell",
+        "terrains.createAtCellWhenIdle",
+        "terrains.damageAtCell",
+        "terrains.getDataAtCell",
+        "terrains.getDefinitionByType",
+        "terrains.getIdByType",
+        "terrains.getTypeAtCell",
+        "terrains.getTypeById",
+        "terrains.getTypeFromId",
+        "terrains.isAtCell",
+        "terrains.isCellIdTerrain",
+        "terrains.isTypeAtCell",
+        "terrains.meltAtCell",
+        "terrains.register",
+        "terrains.removeAtCell",
+        "terrains.removeAtCellWhenIdle",
+        "terrains.replaceAtCell",
+        "terrains.replaceAtCellWhenIdle",
+        "terrains.setHitPointsAtCell",
+        "terrains.setHpAtCell",
+        "terrains.setHpAtCellWhenIdle",
+        "terrains.updateDefinition"
+      ],
+      "gaps": []
+    },
+    "time": {
+      "description": "Read game time in milliseconds and the current simulation tick.",
+      "worker": false,
+      "methodCount": {
+        "official": 1,
+        "declared": 2
+      },
+      "officialMethods": [
+        "time.getTick"
+      ],
+      "declaredMethods": [
+        "time.getTick",
+        "time.getTimeMs"
+      ],
+      "gaps": []
+    },
+    "tools": {
+      "description": "Inspect and control the grabber tool: size, active state, and load status.",
+      "worker": false,
+      "methodCount": {
+        "official": 4,
+        "declared": 8
+      },
+      "officialMethods": [
+        "tools.grabber.getSize",
+        "tools.grabber.isActive",
+        "tools.grabber.isLoaded",
+        "tools.grabber.setSize"
+      ],
+      "declaredMethods": [
+        "tools.getSize",
+        "tools.grabber.getSize",
+        "tools.grabber.isActive",
+        "tools.grabber.isLoaded",
+        "tools.grabber.setSize",
+        "tools.isActive",
+        "tools.isLoaded",
+        "tools.setSize"
+      ],
+      "gaps": []
+    },
+    "triggers": {
+      "description": "Run a callback on a fixed interval with a configurable repeat count.",
+      "worker": false,
+      "methodCount": {
+        "official": 0,
+        "declared": 1
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "triggers.register"
+      ],
+      "gaps": []
+    },
+    "ui": {
+      "description": "Toasts, dialogs, tooltips, overlays, React UI, and controller-focus navigation.",
+      "worker": true,
+      "methodCount": {
+        "official": 11,
+        "declared": 21
+      },
+      "officialMethods": [
+        "ui.hotbar.getActiveBankIndex",
+        "ui.hotbar.getActiveSlotIndex",
+        "ui.hotbar.getBankCount",
+        "ui.hotbar.getSlotKeyLabel",
+        "ui.hotbar.selectAction",
+        "ui.inject",
+        "ui.openPauseMenu",
+        "ui.showTooltip",
+        "ui.update",
+        "ui.useRefresh",
+        "ui.useScale"
+      ],
+      "declaredMethods": [
+        "ui.LocalizedText",
+        "ui.ToastOptions",
+        "ui.alert",
+        "ui.confirm",
+        "ui.controllerFocusClass",
+        "ui.inject",
+        "ui.navigation.controllerFocusClass",
+        "ui.navigation.useFocusScope",
+        "ui.navigation.useFocusable",
+        "ui.openPauseMenu",
+        "ui.overlays.register",
+        "ui.overlays.unregister",
+        "ui.overlays.update",
+        "ui.prompt",
+        "ui.register",
+        "ui.showTooltip",
+        "ui.toast",
+        "ui.unregister",
+        "ui.update",
+        "ui.useFocusScope",
+        "ui.useFocusable"
+      ],
+      "gaps": [
+        {
+          "path": "ui.useRefresh",
+          "source": "official"
+        },
+        {
+          "path": "ui.useScale",
+          "source": "official"
+        },
+        {
+          "path": "ui.hotbar.selectAction",
+          "source": "official"
+        },
+        {
+          "path": "ui.hotbar.getBankCount",
+          "source": "official"
+        },
+        {
+          "path": "ui.hotbar.getActiveBankIndex",
+          "source": "official"
+        },
+        {
+          "path": "ui.hotbar.getActiveSlotIndex",
+          "source": "official"
+        },
+        {
+          "path": "ui.hotbar.getSlotKeyLabel",
+          "source": "official"
+        },
+        {
+          "path": "ui.components.ActionSlot",
+          "note": "React hotbar action slot component",
+          "source": "expected"
+        },
+        {
+          "path": "ui.components.Button",
+          "note": "React button component",
+          "source": "expected"
+        },
+        {
+          "path": "ui.components.Panel",
+          "note": "React panel component",
+          "source": "expected"
+        },
+        {
+          "path": "ui.hotbar.createBankSource",
+          "note": "Create a hotbar bank source",
+          "source": "expected"
+        },
+        {
+          "path": "ui.hotbar.useHotbar",
+          "note": "React hook for hotbar state",
+          "source": "expected"
+        },
+        {
+          "path": "ui.select",
+          "note": "Modal choice picker",
+          "source": "expected"
+        },
+        {
+          "path": "ui.useGameEvent",
+          "note": "React hook subscribing to game events",
+          "source": "expected"
+        },
+        {
+          "path": "ui.overrides.register",
+          "note": "Wrap a built-in UI component",
+          "source": "expected"
+        },
+        {
+          "path": "ui.regions.mount",
+          "note": "Mount a React region in a UI slot",
+          "source": "expected"
+        },
+        {
+          "path": "ui.regions.setVisible",
+          "note": "Show or hide a mounted region",
+          "source": "expected"
+        }
+      ]
+    },
+    "upgrades": {
+      "description": "Register upgrade categories and trees; read chosen and unlocked levels.",
+      "worker": false,
+      "methodCount": {
+        "official": 6,
+        "declared": 6
+      },
+      "officialMethods": [
+        "upgrades.getAvailableLevelById",
+        "upgrades.getLevelById",
+        "upgrades.register",
+        "upgrades.registerCategory",
+        "upgrades.setLevelById",
+        "upgrades.updateDefinition"
+      ],
+      "declaredMethods": [
+        "upgrades.getAvailableLevelById",
+        "upgrades.getLevelById",
+        "upgrades.register",
+        "upgrades.registerCategory",
+        "upgrades.setLevelById",
+        "upgrades.updateDefinition"
+      ],
+      "gaps": []
+    },
+    "utils": {
+      "description": "Geometry helpers: distance, direction, angle, and point interpolation.",
+      "worker": true,
+      "methodCount": {
+        "official": 3,
+        "declared": 5
+      },
+      "officialMethods": [
+        "utils.getAngle",
+        "utils.getDirection",
+        "utils.getDistance"
+      ],
+      "declaredMethods": [
+        "utils.getAngle",
+        "utils.getCoordinatesBetweenCells",
+        "utils.getCoordinatesBetweenPoints",
+        "utils.getDirection",
+        "utils.getDistance"
+      ],
+      "gaps": []
+    },
+    "visibilityHandle": {
+      "description": "",
+      "worker": false,
+      "methodCount": {
+        "official": 1,
+        "declared": 0
+      },
+      "officialMethods": [
+        "visibilityHandle.restore"
+      ],
+      "declaredMethods": [],
+      "gaps": [
+        {
+          "path": "visibilityHandle.restore",
+          "source": "official"
+        }
+      ]
+    },
+    "worker": {
+      "description": "",
+      "worker": true,
+      "methodCount": {
+        "official": 2,
+        "declared": 0
+      },
+      "officialMethods": [
+        "worker.getCount",
+        "worker.getIndex"
+      ],
+      "declaredMethods": [],
+      "gaps": [
+        {
+          "path": "worker.getIndex",
+          "source": "official"
+        },
+        {
+          "path": "worker.getCount",
+          "source": "official"
+        }
+      ]
+    },
+    "workers": {
+      "description": "Enable this mod's post-update worker hook.",
+      "worker": false,
+      "methodCount": {
+        "official": 1,
+        "declared": 1
+      },
+      "officialMethods": [
+        "workers.setPostUpdateEnabled"
+      ],
+      "declaredMethods": [
+        "workers.setPostUpdateEnabled"
+      ],
+      "gaps": []
+    },
+    "world": {
+      "description": "Read the cell grid, excavate, reveal fog, and run idle-safe world mutations.",
+      "worker": true,
+      "methodCount": {
+        "official": 0,
+        "declared": 28
+      },
+      "officialMethods": [],
+      "declaredMethods": [
+        "world.CellId",
+        "world.ExcavateOptions",
+        "world.GridDimensions",
+        "world.PickupType",
+        "world.WorldItem",
+        "world.WorldItemLight",
+        "world.WorldItemType",
+        "world.destroy",
+        "world.excavateAtCell",
+        "world.getAll",
+        "world.getById",
+        "world.getCellIdAtCell",
+        "world.getDimensions",
+        "world.isCellEmptyAtCell",
+        "world.isTerrainAtCell",
+        "world.pickUp",
+        "world.pickups.destroy",
+        "world.pickups.getAll",
+        "world.pickups.getById",
+        "world.pickups.pickUp",
+        "world.pickups.remove",
+        "world.pickups.spawnAtWorld",
+        "world.redrawAroundCellWhenIdle",
+        "world.remove",
+        "world.reportActivityAtCell",
+        "world.revealFogAtCell",
+        "world.runWhenSimulationIdle",
+        "world.spawnAtWorld"
+      ],
+      "gaps": []
+    }
+  }
+}

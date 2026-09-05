@@ -146,6 +146,9 @@ const ENGINE_API_GROUPS = [
 /** @type {Record<string, NamespaceSummary> | null} */
 let namespaceSummariesCache = null;
 
+/** @type {{ namespaces?: Record<string, { methodCount?: { declared?: number } }>, stats?: { declaredMethodCount?: number } } | null} */
+let apiCatalogCache = null;
+
 /** @returns {Record<string, NamespaceSummary>} */
 function loadNamespaceSummaries() {
   if (namespaceSummariesCache) return namespaceSummariesCache;
@@ -158,16 +161,30 @@ function loadNamespaceSummaries() {
   return namespaceSummariesCache;
 }
 
+/** @returns {typeof apiCatalogCache} */
+function loadApiCatalog() {
+  if (apiCatalogCache) return apiCatalogCache;
+  const path = join(DOCS_SCRIPTS, "generated", "api-catalog.json");
+  if (!existsSync(path)) return null;
+  apiCatalogCache = JSON.parse(readFileSync(path, "utf8"));
+  return apiCatalogCache;
+}
+
 /**
- * Count `export function` declarations in a top-level `sandkit.api` namespace file.
+ * Declared method count for a top-level `sandkit.api` namespace.
+ * Prefers `scripts/generated/api-catalog.json` from `npm run generate:api-catalog`.
  * @param {string} name
  */
 function countNamespaceMethods(name) {
-  const fileName = name === "gameConfig" ? "gameConfig.d.ts" : `${name}.d.ts`;
+  const catalog = loadApiCatalog();
+  const declared = catalog?.namespaces?.[name]?.methodCount?.declared;
+  if (typeof declared === "number") return declared;
+
+  const fileName = name === "gameConfig" ? "gameconfig.d.ts" : `${name}.d.ts`;
   const filePath = join(SRC, "sandkit", "api", fileName);
   if (!existsSync(filePath)) return 0;
   const text = readFileSync(filePath, "utf8");
-  return (text.match(/export function /g) || []).length;
+  return (text.match(/export (function|import|const) /g) || []).length;
 }
 
 /**
@@ -175,8 +192,11 @@ function countNamespaceMethods(name) {
  */
 function renderApiStats(mainNs) {
   const summaries = loadNamespaceSummaries();
+  const catalog = loadApiCatalog();
   const names = mainNs.map((n) => n.name);
-  const methodCount = names.reduce((sum, name) => sum + countNamespaceMethods(name), 0);
+  const methodCount =
+    catalog?.stats?.declaredMethodCount ??
+    names.reduce((sum, name) => sum + countNamespaceMethods(name), 0);
   const workerCount = names.filter((name) => summaries[name]?.worker).length;
   return [
     '<div class="smt-api-stats">',

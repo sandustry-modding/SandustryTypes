@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Modding guides under `docs/guides/` (getting started, lifecycle, manifest, patches, workers, Workshop)
 - `WorkshopJson` type for `workshop.json` (`@sandustry-modding/types/configs`)
 - `scripts/namespace-summaries.json` — one-line descriptions and worker flags for each `sandkit.api` namespace
+- `scripts/api-catalog/overrides.json` — namespace copy, official→declared aliases, and expected missing members
+- `npm run generate:api-catalog` — build `scripts/generated/api-catalog.json` and `docs/generated/api-gaps.md` from overrides, official HTML, and declarations
 
 ### Changed
 
@@ -19,6 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Docs home page and sidebar link to guides; site title and description updated
 - API namespace index (`docs/modules.md`) shows stats, descriptions, method counts, and worker badges per namespace
 - Namespace summary copy in `scripts/namespace-summaries.json` rewritten for clarity
+- `docs:api` runs `generate:api-catalog` first; method counts use the catalog (nested members and re-exports included)
 
 ## 0.5.0 - 2026-09-03
 

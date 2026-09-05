@@ -103,6 +103,14 @@
     "description": "Transient VFX lights and long-lived managed lights at world positions.",
     "worker": false
   },
+  "local": {
+    "description": "",
+    "worker": false
+  },
+  "main": {
+    "description": "",
+    "worker": true
+  },
   "maps": {
     "description": "List available maps and start a custom or vanilla map.",
     "worker": true
@@ -111,9 +119,17 @@
     "description": "Query asset providers contributed by other loaded mods.",
     "worker": false
   },
+  "overrideHandle": {
+    "description": "",
+    "worker": false
+  },
   "patterns": {
     "description": "Define reusable excavation shapes and apply them at a cell.",
     "worker": true
+  },
+  "physics": {
+    "description": "",
+    "worker": false
   },
   "pickups": {
     "description": "Spawn, query, remove, and collect loose items lying in the world.",
@@ -183,6 +199,10 @@
     "description": "Play, layer, and stop sounds with optional distance-based volume and pan.",
     "worker": false
   },
+  "source": {
+    "description": "",
+    "worker": false
+  },
   "sprites": {
     "description": "Load mod sprites, look them up by id, and manage player mod sprites.",
     "worker": false
@@ -229,6 +249,14 @@
   },
   "utils": {
     "description": "Geometry helpers: distance, direction, angle, and point interpolation.",
+    "worker": true
+  },
+  "visibilityHandle": {
+    "description": "",
+    "worker": false
+  },
+  "worker": {
+    "description": "",
     "worker": true
   },
   "workers": {
