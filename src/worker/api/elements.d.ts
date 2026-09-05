@@ -122,7 +122,7 @@ export namespace elements {
     fromCellX: number,
     fromCellY: number,
     toCellX: number,
-    toCellY: number
+    toCellY: number,
   ): boolean;
 
   /**
@@ -139,7 +139,7 @@ export namespace elements {
     fromCellX: number,
     fromCellY: number,
     toCellX: number,
-    toCellY: number
+    toCellY: number,
   ): void;
 
   /**
@@ -157,7 +157,7 @@ export namespace elements {
     firstCellX: number,
     firstCellY: number,
     secondCellX: number,
-    secondCellY: number
+    secondCellY: number,
   ): boolean;
 
   /**
@@ -169,7 +169,7 @@ export namespace elements {
     firstCellX: number,
     firstCellY: number,
     secondCellX: number,
-    secondCellY: number
+    secondCellY: number,
   ): boolean;
 
   /**
@@ -225,7 +225,9 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function convertToParticleAtCell(...args: [...CellCoordinates, velocity: Vector2]): boolean;
+  export function convertToParticleAtCell(
+    ...args: [...CellCoordinates, velocity: Vector2]
+  ): boolean;
 
   /**
    * Convert a particle back to a solid element immediately on this worker.
@@ -296,6 +298,6 @@ export namespace elements {
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setDurationAtCell(
-    ...args: [...CellCoordinates, durationTicks: number, options?: { updateMax?: boolean; }]
+    ...args: [...CellCoordinates, durationTicks: number, options?: { updateMax?: boolean }]
   ): boolean;
 }

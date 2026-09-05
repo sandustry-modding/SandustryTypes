@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getClusters() :id=getclusters
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getContainer() :id=getcontainer
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasProcgenData() :id=hasprocgendata
 

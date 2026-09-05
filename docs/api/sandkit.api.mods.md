@@ -7,7 +7,7 @@
 <p class="smt-member-path"><code>sandkit.api.mods.AssetProviderV1</code></p>
 
 ```ts
-AssetProviderV1 = AssetProviderV1
+AssetProviderV1 = AssetProviderV1;
 ```
 
 Defined in: [sandkit/api/mods.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L17)

@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getWallDataAt() :id=getwalldataat
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getWallDataSize() :id=getwalldatasize
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### setWallDataAt() :id=setwalldataat
 

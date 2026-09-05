@@ -7,7 +7,7 @@ Worker-thread `sandkit.api.elements` — shared reads plus immediate grid mutati
 Worker-entry mutations apply immediately. Main thread defers matching helpers in
 `sandkit.api.elements`.
 
- Worker extension; not interchangeable with main-thread
+Worker extension; not interchangeable with main-thread
 `sandkit.api.elements`.
 
 ## See
@@ -52,7 +52,7 @@ api.elements.createAtCell(cellX, cellY, "water", {
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### replaceAtCell() :id=replaceatcell
 
@@ -80,7 +80,7 @@ Replace the element at a cell immediately on this worker.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### removeAtCell() :id=removeatcell
 
@@ -108,7 +108,7 @@ Remove the element at a cell immediately on this worker.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### moveBetweenCells() :id=movebetweencells
 
@@ -158,7 +158,7 @@ True when the move succeeded.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### teleportBetweenCells() :id=teleportbetweencells
 
@@ -206,7 +206,7 @@ Destination cell row.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### swapBetweenCells() :id=swapbetweencells
 
@@ -256,7 +256,7 @@ True when the swap succeeded.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~swapCells()~~
 
@@ -296,7 +296,7 @@ Use [swapBetweenCells](#swapbetweencells) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### markMovementBlockedByIndex() :id=markmovementblockedbyindex
 
@@ -326,7 +326,7 @@ Element index from [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell).
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~markMovementBlockedByElementIndex()~~
 
@@ -354,7 +354,7 @@ Use [markMovementBlockedByIndex](#markmovementblockedbyindex) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setVelocityAtCell() :id=setvelocityatcell
 
@@ -384,7 +384,7 @@ True when velocity was set.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### addParticleVelocityAtCell() :id=addparticlevelocityatcell
 
@@ -414,7 +414,7 @@ True when velocity was updated.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### convertToParticleAtCell() :id=converttoparticleatcell
 
@@ -444,7 +444,7 @@ True when conversion succeeded.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### convertFromParticleAtCell() :id=convertfromparticleatcell
 
@@ -474,7 +474,7 @@ True when conversion succeeded.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### setDataFieldAtCell() :id=setdatafieldatcell
 
@@ -504,7 +504,7 @@ True when the field was set.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### refreshColorAtCell() :id=refreshcoloratcell
 
@@ -532,7 +532,7 @@ Refresh the rendered color at a cell immediately on this worker.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### setPhysicsAtCell() :id=setphysicsatcell
 
@@ -560,7 +560,7 @@ Set the physics skip mode at a cell immediately on this worker.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### setDurationAtCell() :id=setdurationatcell
 
@@ -591,12 +591,7 @@ True when duration was updated.
 **Worker entry**
 
 ```ts
-const updated = api.elements.setDurationAtCell(
-  cellX,
-  cellY,
-  120,
-  { updateMax: true },
-);
+const updated = api.elements.setDurationAtCell(cellX, cellY, 120, { updateMax: true });
 ```
 
 #### See
@@ -611,7 +606,7 @@ const updated = api.elements.setDurationAtCell(
 
 Re-exports [ElementType](api/sandkit.api.elements.md#elementtype)
 
-***
+---
 
 ### ElementId :id=elementid
 
@@ -619,7 +614,7 @@ Re-exports [ElementType](api/sandkit.api.elements.md#elementtype)
 
 Re-exports [ElementId](api/sandkit.api.elements.md#elementid)
 
-***
+---
 
 ### ElementRef :id=elementref
 
@@ -627,7 +622,7 @@ Re-exports [ElementId](api/sandkit.api.elements.md#elementid)
 
 Re-exports [ElementRef](api/sandkit.api.elements.md#elementref)
 
-***
+---
 
 ### MatterType :id=mattertype
 
@@ -635,7 +630,7 @@ Re-exports [ElementRef](api/sandkit.api.elements.md#elementref)
 
 Re-exports [MatterType](api/sandkit.api.elements.MatterType.md)
 
-***
+---
 
 ### ElementDefinition :id=elementdefinition
 
@@ -643,7 +638,7 @@ Re-exports [MatterType](api/sandkit.api.elements.MatterType.md)
 
 Re-exports [ElementDefinition](api/sandkit.api.elements.md#elementdefinition)
 
-***
+---
 
 ### ElementCreateOptions :id=elementcreateoptions
 
@@ -651,7 +646,7 @@ Re-exports [ElementDefinition](api/sandkit.api.elements.md#elementdefinition)
 
 Re-exports [ElementCreateOptions](api/sandkit.api.elements.md#elementcreateoptions)
 
-***
+---
 
 ### ElementRemovalOptions :id=elementremovaloptions
 
@@ -659,7 +654,7 @@ Re-exports [ElementCreateOptions](api/sandkit.api.elements.md#elementcreateoptio
 
 Re-exports [ElementRemovalOptions](api/sandkit.api.elements.md#elementremovaloptions)
 
-***
+---
 
 ### getIdByType :id=getidbytype
 
@@ -667,7 +662,7 @@ Re-exports [ElementRemovalOptions](api/sandkit.api.elements.md#elementremovalopt
 
 Re-exports [getIdByType](api/sandkit.api.elements.md#getidbytype)
 
-***
+---
 
 ### getTypeById :id=gettypebyid
 
@@ -675,7 +670,7 @@ Re-exports [getIdByType](api/sandkit.api.elements.md#getidbytype)
 
 Re-exports [getTypeById](api/sandkit.api.elements.md#gettypebyid)
 
-***
+---
 
 ### getTypeFromId :id=gettypefromid
 
@@ -683,7 +678,7 @@ Re-exports [getTypeById](api/sandkit.api.elements.md#gettypebyid)
 
 Re-exports [getTypeFromId](api/sandkit.api.elements.md#gettypefromid)
 
-***
+---
 
 ### getDefinitionByType :id=getdefinitionbytype
 
@@ -691,7 +686,7 @@ Re-exports [getTypeFromId](api/sandkit.api.elements.md#gettypefromid)
 
 Re-exports [getDefinitionByType](api/sandkit.api.elements.md#getdefinitionbytype)
 
-***
+---
 
 ### getTypeAtCell :id=gettypeatcell
 
@@ -699,7 +694,7 @@ Re-exports [getDefinitionByType](api/sandkit.api.elements.md#getdefinitionbytype
 
 Re-exports [getTypeAtCell](api/sandkit.api.elements.md#gettypeatcell)
 
-***
+---
 
 ### getResolvedTypeAtCell :id=getresolvedtypeatcell
 
@@ -707,7 +702,7 @@ Re-exports [getTypeAtCell](api/sandkit.api.elements.md#gettypeatcell)
 
 Re-exports [getResolvedTypeAtCell](api/sandkit.api.elements.md#getresolvedtypeatcell)
 
-***
+---
 
 ### getResolvedTypeFromCellId :id=getresolvedtypefromcellid
 
@@ -715,7 +710,7 @@ Re-exports [getResolvedTypeAtCell](api/sandkit.api.elements.md#getresolvedtypeat
 
 Re-exports [getResolvedTypeFromCellId](api/sandkit.api.elements.md#getresolvedtypefromcellid)
 
-***
+---
 
 ### getInfoAtCell :id=getinfoatcell
 
@@ -723,7 +718,7 @@ Re-exports [getResolvedTypeFromCellId](api/sandkit.api.elements.md#getresolvedty
 
 Re-exports [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell)
 
-***
+---
 
 ### getMatterTypeAtCell :id=getmattertypeatcell
 
@@ -731,7 +726,7 @@ Re-exports [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell)
 
 Re-exports [getMatterTypeAtCell](api/sandkit.api.elements.md#getmattertypeatcell)
 
-***
+---
 
 ### isTypeAtCell :id=istypeatcell
 
@@ -739,7 +734,7 @@ Re-exports [getMatterTypeAtCell](api/sandkit.api.elements.md#getmattertypeatcell
 
 Re-exports [isTypeAtCell](api/sandkit.api.elements.md#istypeatcell)
 
-***
+---
 
 ### isFreeFallingAtCell :id=isfreefallingatcell
 
@@ -747,7 +742,7 @@ Re-exports [isTypeAtCell](api/sandkit.api.elements.md#istypeatcell)
 
 Re-exports [isFreeFallingAtCell](api/sandkit.api.elements.md#isfreefallingatcell)
 
-***
+---
 
 ### getVelocityAtCell :id=getvelocityatcell
 
@@ -755,7 +750,7 @@ Re-exports [isFreeFallingAtCell](api/sandkit.api.elements.md#isfreefallingatcell
 
 Re-exports [getVelocityAtCell](api/sandkit.api.elements.md#getvelocityatcell)
 
-***
+---
 
 ### getDataFieldAtCell :id=getdatafieldatcell
 

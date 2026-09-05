@@ -73,12 +73,11 @@ export namespace events {
   }
 
   /** Options for {@link on}. */
-  export type EventOnOptions<K extends EventId> =
-    K extends "element:moved"
-      ? { guard: { elementType: sharedElements.ElementType } }
-      : K extends "terrain:updated" | "terrain:update"
-        ? { guard: { terrainType: number } }
-        : { guard?: EventGuard };
+  export type EventOnOptions<K extends EventId> = K extends "element:moved"
+    ? { guard: { elementType: sharedElements.ElementType } }
+    : K extends "terrain:updated" | "terrain:update"
+      ? { guard: { terrainType: number } }
+      : { guard?: EventGuard };
 
   /** Options for {@link emit}. */
   export interface EventEmitOptions {

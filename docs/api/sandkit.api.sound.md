@@ -26,7 +26,7 @@ Stop this sound instance.
 
 `void`
 
-***
+---
 
 ### SoundLayer :id=soundlayer
 
@@ -47,7 +47,7 @@ One layer in a layered sound.
 ##### soundId
 
 ```ts
-soundId: string
+soundId: string;
 ```
 
 Defined in: [sandkit/api/sound.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L89)
@@ -84,7 +84,7 @@ Defined in: [sandkit/api/sound.d.ts:95](https://github.com/sandustry-modding/San
 
 Playback rate for this layer.
 
-***
+---
 
 ### SoundOptions :id=soundoptions
 
@@ -135,13 +135,13 @@ World position for distance attenuation.
 ###### x
 
 ```ts
-x: number
+x: number;
 ```
 
 ###### y
 
 ```ts
-y: number
+y: number;
 ```
 
 ##### loop?
@@ -174,7 +174,7 @@ Defined in: [sandkit/api/sound.d.ts:112](https://github.com/sandustry-modding/Sa
 
 Minimum ms between plays with the same rateLimitKey.
 
-***
+---
 
 ### SoundLayersOptions :id=soundlayersoptions
 
@@ -199,13 +199,13 @@ World position applied to all layers.
 ###### x
 
 ```ts
-x: number
+x: number;
 ```
 
 ###### y
 
 ```ts
-y: number
+y: number;
 ```
 
 ##### volume?
@@ -274,7 +274,7 @@ Volume, position, playback rate, and rate-limit options.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### playActive() :id=playactive
 
@@ -310,7 +310,7 @@ Volume, position, playback rate, and rate-limit options.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### playLayers() :id=playlayers
 
@@ -346,7 +346,7 @@ Shared position, volume, and rate-limit options for all layers.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### calculateDistanceOptionsAtWorld() :id=calculatedistanceoptionsatworld
 
@@ -388,7 +388,7 @@ Base volume before distance attenuation.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### stopBySoundId() :id=stopbysoundid
 
@@ -418,7 +418,7 @@ Registered sound identifier to stop.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~stopById()~~
 
@@ -446,7 +446,7 @@ Use [stopBySoundId](#stopbysoundid) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### stopActive() :id=stopactive
 
@@ -468,7 +468,7 @@ Stop the active sound channel.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### stopAll() :id=stopall
 

@@ -5,12 +5,11 @@
  *
  * @module
  */
-import { CellCoordinates } from '../../shared/player';
-import { shared } from '../../shared';
-import type { elements } from './elements';
+import { CellCoordinates } from "../../shared/player";
+import { shared } from "../../shared";
+import type { elements } from "./elements";
 
 export namespace terrains {
-
   /** Return the mod string id for a numeric terrain type. */
   export import getIdByType = shared.api.terrains.getIdByType;
   /** Resolve a terrain string id to its cell type number. */
@@ -53,7 +52,10 @@ export namespace terrains {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export interface TerrainDefinition extends Omit<shared.api.terrains.TerrainDefinition, "interactions"> {
+  export interface TerrainDefinition extends Omit<
+    shared.api.terrains.TerrainDefinition,
+    "interactions"
+  > {
     /** Tooltip interactions shown for this terrain. */
     interactions?: readonly elements.Interaction[];
   }
@@ -66,7 +68,7 @@ export namespace terrains {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function register(definition: TerrainDefinition): { cellType: TerrainType; };
+  export function register(definition: TerrainDefinition): { cellType: TerrainType };
 
   /**
    * Patch fields on an existing terrain definition.
@@ -76,7 +78,10 @@ export namespace terrains {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>): void;
+  export function updateDefinition(
+    cellTypeOrId: TerrainRef,
+    partial: Partial<TerrainDefinition>,
+  ): void;
 
   /**
    * Create terrain at a cell. Main-entry writes are deferred; reads see the old grid.
@@ -88,14 +93,18 @@ export namespace terrains {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function createAtCell(...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]): void;
+  export function createAtCell(
+    ...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]
+  ): void;
 
   /**
    * @deprecated Use {@link createAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function createAtCellWhenIdle(...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]): void;
+  export function createAtCellWhenIdle(
+    ...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]
+  ): void;
 
   /**
    * Replace terrain at a cell. Main-entry writes are deferred; reads see the old grid.
@@ -107,14 +116,18 @@ export namespace terrains {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function replaceAtCell(...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]): void;
+  export function replaceAtCell(
+    ...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]
+  ): void;
 
   /**
    * @deprecated Use {@link replaceAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function replaceAtCellWhenIdle(...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]): void;
+  export function replaceAtCellWhenIdle(
+    ...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]
+  ): void;
 
   /**
    * Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid.
@@ -125,14 +138,18 @@ export namespace terrains {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function removeAtCell(...args: [...CellCoordinates, options?: TerrainMutationOptions]): void;
+  export function removeAtCell(
+    ...args: [...CellCoordinates, options?: TerrainMutationOptions]
+  ): void;
 
   /**
    * @deprecated Use {@link removeAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function removeAtCellWhenIdle(...args: [...CellCoordinates, options?: TerrainMutationOptions]): void;
+  export function removeAtCellWhenIdle(
+    ...args: [...CellCoordinates, options?: TerrainMutationOptions]
+  ): void;
 
   /**
    * Set terrain hit points at a cell. Main-entry writes are deferred; reads see the old grid.

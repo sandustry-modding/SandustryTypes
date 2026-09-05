@@ -18,7 +18,22 @@ const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
 const OUT_DIR = join(ROOT, "docs", "official-api");
 const SOURCE_URL = "https://sandustry.com/sandkit.html";
 
-const VOID_TAGS = new Set(["area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "param", "source", "track", "wbr"]);
+const VOID_TAGS = new Set([
+  "area",
+  "base",
+  "br",
+  "col",
+  "embed",
+  "hr",
+  "img",
+  "input",
+  "link",
+  "meta",
+  "param",
+  "source",
+  "track",
+  "wbr",
+]);
 
 const NAMED_ENTITIES = Object.assign(Object.create(null), {
   amp: "&",
@@ -45,7 +60,9 @@ function decodeEntities(text) {
   return text
     .replace(/&#(x?[0-9a-fA-F]+);/g, (match, raw) => {
       const code =
-        raw[0] === "x" || raw[0] === "X" ? Number.parseInt(raw.slice(1), 16) : Number.parseInt(raw, 10);
+        raw[0] === "x" || raw[0] === "X"
+          ? Number.parseInt(raw.slice(1), 16)
+          : Number.parseInt(raw, 10);
       return Number.isFinite(code) ? String.fromCodePoint(code) : match;
     })
     .replace(/&([a-zA-Z]+);/g, (match, name) => NAMED_ENTITIES[name] ?? match);
@@ -145,7 +162,17 @@ const INLINE_TAGS = new Set([
   "u",
 ]);
 
-const LI_BLOCK_TAGS = new Set(["ul", "ol", "pre", "p", "details", "div", "section", "table", "blockquote"]);
+const LI_BLOCK_TAGS = new Set([
+  "ul",
+  "ol",
+  "pre",
+  "p",
+  "details",
+  "div",
+  "section",
+  "table",
+  "blockquote",
+]);
 
 /**
  * @param {AstNode[]} nodes
@@ -362,10 +389,9 @@ function blocks(nodes, listDepth = 0) {
 
     if (name === "pre") {
       const codeNode = children.find((child) => child.type === "tag" && child.name === "code");
-      const code = textOf(codeNode && codeNode.type === "tag" ? codeNode.children : children).replace(
-        /\n$/,
-        "",
-      );
+      const code = textOf(
+        codeNode && codeNode.type === "tag" ? codeNode.children : children,
+      ).replace(/\n$/, "");
       parts.push(`\`\`\`\n${code}\n\`\`\``);
       continue;
     }
@@ -459,7 +485,9 @@ function extractApiContent(html) {
 function htmlToMarkdown(html) {
   const content = extractApiContent(html);
   const tree = parseHtml(content);
-  return `${joinParts(blocks(tree)).replace(/\n{3,}/g, "\n\n").trim()}\n`;
+  return `${joinParts(blocks(tree))
+    .replace(/\n{3,}/g, "\n\n")
+    .trim()}\n`;
 }
 
 /**
@@ -494,10 +522,7 @@ async function askBaseName(question, defaultValue = "") {
 
 async function main() {
   const argvDefault = process.argv[2] ? normalizeBaseName(process.argv[2]) : "";
-  const answered = await askBaseName(
-    "Base file name for docs/official-api/<name>.md",
-    argvDefault,
-  );
+  const answered = await askBaseName("Base file name for docs/official-api/<name>.md", argvDefault);
   const baseName = normalizeBaseName(answered);
 
   mkdirSync(OUT_DIR, { recursive: true });

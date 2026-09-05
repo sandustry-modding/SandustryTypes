@@ -14,5 +14,5 @@ export namespace mods {
    */
   export function getProviders(kind: string): readonly AssetProviderV1[];
   /** Asset provider entry shape. */
-  export type AssetProviderV1 = assets.AssetProviderV1
+  export type AssetProviderV1 = assets.AssetProviderV1;
 }

@@ -112,14 +112,7 @@
       "description": "Embedded custom map pack definition for this mod."
     }
   },
-  "required": [
-    "manifestVersion",
-    "id",
-    "name",
-    "version",
-    "apiVersion",
-    "entry"
-  ],
+  "required": ["manifestVersion", "id", "name", "version", "apiVersion", "entry"],
   "additionalProperties": false,
   "description": "Sandkit mod manifest (`modinfo.json`).\n\nRequired for every mod folder. Minimal mods only need manifestVersion , id , name , version , apiVersion , and entry .",
   "definitions": {
@@ -193,10 +186,7 @@
           "description": "i18n key for the setting help text."
         }
       },
-      "required": [
-        "type",
-        "default"
-      ],
+      "required": ["type", "default"],
       "additionalProperties": false,
       "description": "Number setting in `modinfo.json` `configSchema`."
     },
@@ -229,10 +219,7 @@
           "description": "i18n key for the setting help text."
         }
       },
-      "required": [
-        "type",
-        "default"
-      ],
+      "required": ["type", "default"],
       "additionalProperties": false,
       "description": "Boolean setting in `modinfo.json` `configSchema`."
     },
@@ -272,11 +259,7 @@
           "description": "Allowed choices for this setting."
         }
       },
-      "required": [
-        "type",
-        "default",
-        "options"
-      ],
+      "required": ["type", "default", "options"],
       "additionalProperties": false,
       "description": "Choice setting in `modinfo.json` `configSchema`."
     },
@@ -296,9 +279,7 @@
           "description": "i18n key for the option label."
         }
       },
-      "required": [
-        "value"
-      ],
+      "required": ["value"],
       "additionalProperties": false,
       "description": "One option inside a ConfigSchemaChoice ."
     },
@@ -322,9 +303,7 @@
           "description": "Milliseconds between animation frames."
         }
       },
-      "required": [
-        "path"
-      ],
+      "required": ["path"],
       "additionalProperties": false,
       "description": "Animated (or static) texture replacement for a vanilla asset id."
     },
@@ -347,10 +326,7 @@
           "description": "Texture paths keyed by the vanilla or structure texture id they replace."
         }
       },
-      "required": [
-        "kind",
-        "id"
-      ],
+      "required": ["kind", "id"],
       "additionalProperties": false,
       "description": "Optional content pack exposed by this mod for other mods or the game to consume."
     },
@@ -401,11 +377,7 @@
           "description": "Maps blueprint RGB keys (`\"r, g, b\"`) to terrain ids or layered terrain."
         }
       },
-      "required": [
-        "blueprints",
-        "width",
-        "height"
-      ],
+      "required": ["blueprints", "width", "height"],
       "additionalProperties": false,
       "description": "Custom map pack block in `modinfo.json`."
     },
@@ -460,10 +432,7 @@
           "description": "World Y in pixels."
         }
       },
-      "required": [
-        "x",
-        "y"
-      ],
+      "required": ["x", "y"],
       "additionalProperties": false,
       "description": "World-pixel spawn or unstuck point."
     },

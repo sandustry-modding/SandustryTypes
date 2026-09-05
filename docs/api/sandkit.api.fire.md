@@ -35,7 +35,7 @@ Returns true when the element at the cell can burn.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### burnElementAtCell() :id=burnelementatcell
 
@@ -63,7 +63,7 @@ Burn the element at the cell. Main-entry writes are deferred; reads see the old 
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~burnElementAtCellWhenIdle()~~
 

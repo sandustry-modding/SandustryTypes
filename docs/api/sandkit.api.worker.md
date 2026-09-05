@@ -32,7 +32,7 @@ See [sandkit.api](api/sandkit.md#api-1) for the main-thread public API.
 <p class="smt-member-path"><code>sandkit.api.WorkerSandkitApi (worker)</code></p>
 
 ```ts
-WorkerSandkitApi = object
+WorkerSandkitApi = object;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L14)
@@ -54,7 +54,7 @@ Main and worker surfaces overlap but are not interchangeable. Do not use
 ##### constants
 
 ```ts
-constants: constants
+constants: constants;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L15)
@@ -62,7 +62,7 @@ Defined in: [worker/sandkit-api.d.ts:15](https://github.com/sandustry-modding/Sa
 ##### collector
 
 ```ts
-collector: collector
+collector: collector;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L16)
@@ -70,7 +70,7 @@ Defined in: [worker/sandkit-api.d.ts:16](https://github.com/sandustry-modding/Sa
 ##### effects
 
 ```ts
-effects: effects
+effects: effects;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L17)
@@ -78,7 +78,7 @@ Defined in: [worker/sandkit-api.d.ts:17](https://github.com/sandustry-modding/Sa
 ##### elements
 
 ```ts
-elements: elements
+elements: elements;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L18)
@@ -86,7 +86,7 @@ Defined in: [worker/sandkit-api.d.ts:18](https://github.com/sandustry-modding/Sa
 ##### events
 
 ```ts
-events: events
+events: events;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L19)
@@ -94,7 +94,7 @@ Defined in: [worker/sandkit-api.d.ts:19](https://github.com/sandustry-modding/Sa
 ##### fire
 
 ```ts
-fire: fire
+fire: fire;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L20)
@@ -102,7 +102,7 @@ Defined in: [worker/sandkit-api.d.ts:20](https://github.com/sandustry-modding/Sa
 ##### grid
 
 ```ts
-grid: grid
+grid: grid;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L21)
@@ -110,7 +110,7 @@ Defined in: [worker/sandkit-api.d.ts:21](https://github.com/sandustry-modding/Sa
 ##### hooks
 
 ```ts
-hooks: hooks
+hooks: hooks;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L22)
@@ -118,7 +118,7 @@ Defined in: [worker/sandkit-api.d.ts:22](https://github.com/sandustry-modding/Sa
 ##### lights
 
 ```ts
-lights: lights
+lights: lights;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L23)
@@ -126,7 +126,7 @@ Defined in: [worker/sandkit-api.d.ts:23](https://github.com/sandustry-modding/Sa
 ##### main
 
 ```ts
-main: main
+main: main;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L24)
@@ -134,7 +134,7 @@ Defined in: [worker/sandkit-api.d.ts:24](https://github.com/sandustry-modding/Sa
 ##### maps
 
 ```ts
-maps: maps
+maps: maps;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L25)
@@ -142,7 +142,7 @@ Defined in: [worker/sandkit-api.d.ts:25](https://github.com/sandustry-modding/Sa
 ##### patterns
 
 ```ts
-patterns: patterns
+patterns: patterns;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L26)
@@ -150,7 +150,7 @@ Defined in: [worker/sandkit-api.d.ts:26](https://github.com/sandustry-modding/Sa
 ##### player
 
 ```ts
-player: player
+player: player;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L27)
@@ -158,7 +158,7 @@ Defined in: [worker/sandkit-api.d.ts:27](https://github.com/sandustry-modding/Sa
 ##### random
 
 ```ts
-random: random
+random: random;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L28)
@@ -166,7 +166,7 @@ Defined in: [worker/sandkit-api.d.ts:28](https://github.com/sandustry-modding/Sa
 ##### shared
 
 ```ts
-shared: shared
+shared: shared;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L29)
@@ -174,7 +174,7 @@ Defined in: [worker/sandkit-api.d.ts:29](https://github.com/sandustry-modding/Sa
 ##### structures
 
 ```ts
-structures: structures
+structures: structures;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L30)
@@ -182,7 +182,7 @@ Defined in: [worker/sandkit-api.d.ts:30](https://github.com/sandustry-modding/Sa
 ##### terrains
 
 ```ts
-terrains: terrains
+terrains: terrains;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L31)
@@ -190,7 +190,7 @@ Defined in: [worker/sandkit-api.d.ts:31](https://github.com/sandustry-modding/Sa
 ##### ui
 
 ```ts
-ui: ui
+ui: ui;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L32)
@@ -198,7 +198,7 @@ Defined in: [worker/sandkit-api.d.ts:32](https://github.com/sandustry-modding/Sa
 ##### utils
 
 ```ts
-utils: utils
+utils: utils;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L33)
@@ -206,7 +206,7 @@ Defined in: [worker/sandkit-api.d.ts:33](https://github.com/sandustry-modding/Sa
 ##### worker
 
 ```ts
-worker: worker
+worker: worker;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L34)
@@ -214,7 +214,7 @@ Defined in: [worker/sandkit-api.d.ts:34](https://github.com/sandustry-modding/Sa
 ##### ~~world~~
 
 ```ts
-world: world
+world: world;
 ```
 
 Defined in: [worker/sandkit-api.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L40)
@@ -235,7 +235,7 @@ Use [grid](api/sandkit.api.grid.worker.md) instead.
 
 Re-exports [collector](api/sandkit.api.collector.md)
 
-***
+---
 
 ### constants :id=constants
 
@@ -243,7 +243,7 @@ Re-exports [collector](api/sandkit.api.collector.md)
 
 Re-exports [constants](api/sandkit.api.constants.md)
 
-***
+---
 
 ### patterns :id=patterns
 
@@ -251,7 +251,7 @@ Re-exports [constants](api/sandkit.api.constants.md)
 
 Re-exports [patterns](api/sandkit.api.patterns.md)
 
-***
+---
 
 ### random :id=random
 
@@ -259,7 +259,7 @@ Re-exports [patterns](api/sandkit.api.patterns.md)
 
 Re-exports [random](api/sandkit.api.random.md)
 
-***
+---
 
 ### utils :id=utils
 

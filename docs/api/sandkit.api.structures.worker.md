@@ -4,7 +4,7 @@
 
 Shared `sandkit.api.structures` base — structure lookup and mutation.
 
- Base namespace reused by main and worker declarations.
+Base namespace reused by main and worker declarations.
 
 ## Namespaces <!-- {docsify-ignore} -->
 
@@ -44,7 +44,7 @@ optional elementType?: TaggedNumber<"elementType"> | null
 
 Defined in: [shared/api/structures.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L203)
 
-***
+---
 
 ### Structure :id=structure
 
@@ -65,7 +65,7 @@ Live structure instance in the world grid.
 ##### x
 
 ```ts
-x: number
+x: number;
 ```
 
 Defined in: [shared/api/structures.d.ts:209](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L209)
@@ -73,7 +73,7 @@ Defined in: [shared/api/structures.d.ts:209](https://github.com/sandustry-moddin
 ##### y
 
 ```ts
-y: number
+y: number;
 ```
 
 Defined in: [shared/api/structures.d.ts:210](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L210)
@@ -101,35 +101,35 @@ Defined in: [shared/api/structures.d.ts:212](https://github.com/sandustry-moddin
 <p class="smt-member-path"><code>sandkit.api.structures.StructureType (worker)</code></p>
 
 ```ts
-StructureType = StructureType | TaggedNumber<"structureType">
+StructureType = StructureType | TaggedNumber<"structureType">;
 ```
 
 Defined in: [shared/api/structures.d.ts:217](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L217)
 
 Numeric structure type handle. Built-in enum values autocomplete.
 
-***
+---
 
 ### StructureId :id=structureid
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureId (worker)</code></p>
 
 ```ts
-StructureId = LooseString<never>
+StructureId = LooseString<never>;
 ```
 
 Defined in: [shared/api/structures.d.ts:219](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L219)
 
 Mod or built-in structure string id.
 
-***
+---
 
 ### StructureRef :id=structureref
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRef (worker)</code></p>
 
 ```ts
-StructureRef = StructureType | StructureId
+StructureRef = StructureType | StructureId;
 ```
 
 Defined in: [shared/api/structures.d.ts:221](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L221)
@@ -182,7 +182,7 @@ api.structures.forEachOfType("exampleStructure", (structure) => {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getAtCell() :id=getatcell
 
@@ -210,7 +210,7 @@ Return the structure at a cell, or null when none.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getDefinitionByType() :id=getdefinitionbytype
 
@@ -240,7 +240,7 @@ Structure type value or string id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getTypeById() :id=gettypebyid
 
@@ -270,7 +270,7 @@ Structure string id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~getTypeFromId()~~
 
@@ -298,7 +298,7 @@ Use [getTypeById](#gettypebyid) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### hasBuiltAtCell() :id=hasbuiltatcell
 
@@ -326,7 +326,7 @@ Return true when a completed structure occupies the cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isType() :id=istype
 
@@ -362,7 +362,7 @@ Structure string id to compare.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isTypeAtCell() :id=istypeatcell
 
@@ -390,7 +390,7 @@ Return true when the cell structure matches the given id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setSpritesheetIndex() :id=setspritesheetindex
 
@@ -426,7 +426,7 @@ Spritesheet frame index.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setSpritesheetIndexAtCell() :id=setspritesheetindexatcell
 
@@ -454,7 +454,7 @@ Set spritesheet frame index for the structure at a cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setSpritesheetIndexByValue() :id=setspritesheetindexbyvalue
 
@@ -496,7 +496,7 @@ Ascending threshold values.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setSpritesheetIndexByValueAtCell() :id=setspritesheetindexbyvalueatcell
 
@@ -524,7 +524,7 @@ Same as [setSpritesheetIndexByValue](#setspritesheetindexbyvalue) for the struct
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### update() :id=update
 
@@ -570,7 +570,7 @@ api.structures.update(structure, { propagateToWorkers: true });
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### updateData() :id=updatedata
 
@@ -615,18 +615,14 @@ When `propagateToWorkers` is true, sync to worker threads.
 **Worker entry**
 
 ```ts
-api.structures.updateData(
-  structure,
-  { mode: "allow" },
-  { propagateToWorkers: true },
-);
+api.structures.updateData(structure, { mode: "allow" }, { propagateToWorkers: true });
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~setData()~~
 

@@ -13,7 +13,6 @@ import { processing as processingApi } from "./processing";
 import type { elements } from "./elements";
 
 export namespace structures {
-
   /**
    * Call callback for each structure of the given type.
    *
@@ -150,7 +149,10 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function register(definition: SandkitStructureDefinition, options?: { useRawShape?: boolean; }): void;
+  export function register(
+    definition: SandkitStructureDefinition,
+    options?: { useRawShape?: boolean },
+  ): void;
 
   /**
    * Patch fields on an existing structure definition.
@@ -172,7 +174,11 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStructureDefinition>, options?: { useRawShape?: boolean; }): void;
+  export function updateDefinition(
+    structureTypeOrId: StructureRef,
+    partial: Partial<SandkitStructureDefinition>,
+    options?: { useRawShape?: boolean },
+  ): void;
 
   /**
    * Add a rotated variant to a base structure type.
@@ -201,14 +207,22 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function registerVariant(baseStructureTypeOrId: StructureRef, variant: { id: StructureRef; angles: number[]; }, options?: { addBuildMode?: unknown; }): void;
+  export function registerVariant(
+    baseStructureTypeOrId: StructureRef,
+    variant: { id: StructureRef; angles: number[] },
+    options?: { addBuildMode?: unknown },
+  ): void;
 
   /**
    * @deprecated Use {@link registerVariant} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function addVariant(baseStructureTypeOrId: StructureRef, variant: { id: StructureRef; angles: number[]; }, options?: { addBuildMode?: unknown; }): void;
+  export function addVariant(
+    baseStructureTypeOrId: StructureRef,
+    variant: { id: StructureRef; angles: number[] },
+    options?: { addBuildMode?: unknown },
+  ): void;
 
   /**
    * Register placement rules for a structure.
@@ -328,14 +342,18 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function buildAtCell(...args: [...CellCoordinates, structureTypeOrId: StructureRef, options?: StructureBuildOptions]): void;
+  export function buildAtCell(
+    ...args: [...CellCoordinates, structureTypeOrId: StructureRef, options?: StructureBuildOptions]
+  ): void;
 
   /**
    * @deprecated Use {@link buildAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function buildAtCellWhenIdle(...args: [...CellCoordinates, structureTypeOrId: StructureRef, options?: StructureBuildOptions]): void;
+  export function buildAtCellWhenIdle(
+    ...args: [...CellCoordinates, structureTypeOrId: StructureRef, options?: StructureBuildOptions]
+  ): void;
 
   /**
    * Remove a structure at a cell. Main-thread writes are deferred.
@@ -346,14 +364,18 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function removeAtCell(...args: [...CellCoordinates, options?: StructureRemovalOptions]): void;
+  export function removeAtCell(
+    ...args: [...CellCoordinates, options?: StructureRemovalOptions]
+  ): void;
 
   /**
    * @deprecated Use {@link removeAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function removeAtCellWhenIdle(...args: [...CellCoordinates, options?: StructureRemovalOptions]): void;
+  export function removeAtCellWhenIdle(
+    ...args: [...CellCoordinates, options?: StructureRemovalOptions]
+  ): void;
 
   /**
    * Remove structures between two cells. Main-thread writes are deferred.
@@ -366,14 +388,26 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void;
+  export function removeBetweenCells(
+    startCellX: number,
+    startCellY: number,
+    endCellX: number,
+    endCellY: number,
+    options?: StructureBulkRemovalOptions,
+  ): void;
 
   /**
    * @deprecated Use {@link removeBetweenCells} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void;
+  export function removeBetweenCellsWhenIdle(
+    startCellX: number,
+    startCellY: number,
+    endCellX: number,
+    endCellY: number,
+    options?: StructureBulkRemovalOptions,
+  ): void;
 
   /**
    * Remove structures at many cells. Main-thread writes are deferred.
@@ -398,14 +432,20 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOptions): void;
+  export function removeAtCellsWhenIdle(
+    positions: Vector2[],
+    options?: StructureBulkRemovalOptions,
+  ): void;
 
   /**
    * @deprecated Use {@link processing.register} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void;
+  export function addProcessor(
+    structureId: StructureRef,
+    definition: StructureProcessorDefinitionV1,
+  ): void;
 
   /** Structure recipe registration by machine kind. */
   export namespace recipes {
@@ -428,7 +468,7 @@ export namespace structures {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
-    export function register(id: 'planterBox', definition: PlanterBoxRecipeDefinitionV1): void;
+    export function register(id: "planterBox", definition: PlanterBoxRecipeDefinitionV1): void;
 
     /**
      * Register a shaker recipe.
@@ -438,7 +478,7 @@ export namespace structures {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
-    export function register(id: 'shaker', definition: ShakerRecipeDefinitionV1): void;
+    export function register(id: "shaker", definition: ShakerRecipeDefinitionV1): void;
 
     /**
      * Register a kinetic press recipe.
@@ -448,7 +488,7 @@ export namespace structures {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
-    export function register(id: 'kineticPress', definition: KineticPressRecipeDefinitionV1): void;
+    export function register(id: "kineticPress", definition: KineticPressRecipeDefinitionV1): void;
 
     /**
      * Register a weighted refinery machine recipe.
@@ -458,7 +498,10 @@ export namespace structures {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
-    export function register(id: 'condenser' | 'steamDryer' | 'synthesizer' | 'snowmaker' | 'smelter', definition: WeightedRefineryRecipeDefinitionV1): void;
+    export function register(
+      id: "condenser" | "steamDryer" | "synthesizer" | "snowmaker" | "smelter",
+      definition: WeightedRefineryRecipeDefinitionV1,
+    ): void;
   }
 
   /** Per-structure processing enablement and registration. */
@@ -730,9 +773,7 @@ export namespace structures {
   }
 
   /** Placement hotbar field definition. */
-  export type PlacementConfigField =
-    | PlacementConfigIntegerField
-    | PlacementConfigChoiceField;
+  export type PlacementConfigField = PlacementConfigIntegerField | PlacementConfigChoiceField;
 
   /** Integer placement field with optional bounds. */
   export interface PlacementConfigIntegerField {

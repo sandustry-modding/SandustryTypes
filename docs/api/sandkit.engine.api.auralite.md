@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getProduced() :id=getproduced
 

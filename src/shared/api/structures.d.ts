@@ -1,4 +1,4 @@
-import type { CellCoordinates } from "../../shared/player";
+import type { CellCoordinates } from "../player";
 import type { LooseString, TaggedNumber } from "../nominal";
 import type { StructureType as StructureTypeEnum } from "../../sandkit/enums/index";
 
@@ -23,7 +23,10 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function forEachOfType(structureTypeOrId: StructureRef, callback: (structure: Structure) => void): void;
+  export function forEachOfType(
+    structureTypeOrId: StructureRef,
+    callback: (structure: Structure) => void,
+  ): void;
 
   /**
    * Return the structure at a cell, or null when none.
@@ -121,7 +124,11 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function setSpritesheetIndexByValue(structure: Structure, value: number, thresholds: number[]): void;
+  export function setSpritesheetIndexByValue(
+    structure: Structure,
+    value: number,
+    thresholds: number[],
+  ): void;
 
   /**
    * Same as {@link setSpritesheetIndexByValue} for the structure at a cell.
@@ -133,7 +140,9 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function setSpritesheetIndexByValueAtCell(...args: [...CellCoordinates, value: number, thresholds: number[]]): void;
+  export function setSpritesheetIndexByValueAtCell(
+    ...args: [...CellCoordinates, value: number, thresholds: number[]]
+  ): void;
 
   /**
    * Push structure field changes to simulation.
@@ -148,7 +157,7 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function update(structure: Structure, options?: { propagateToWorkers?: boolean; }): void;
+  export function update(structure: Structure, options?: { propagateToWorkers?: boolean }): void;
 
   /**
    * Merge partial data onto a structure.
@@ -168,14 +177,22 @@ export namespace structures {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function updateData(structure: Structure, partial: any, options?: { propagateToWorkers?: boolean; }): void;
+  export function updateData(
+    structure: Structure,
+    partial: any,
+    options?: { propagateToWorkers?: boolean },
+  ): void;
 
   /**
    * @deprecated Use {@link updateData} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function setData(structure: Structure, partial: any, options?: { propagateToWorkers?: boolean; }): void;
+  export function setData(
+    structure: Structure,
+    partial: any,
+    options?: { propagateToWorkers?: boolean },
+  ): void;
 
   /** Structure processing enablement checks. */
   export namespace processing {

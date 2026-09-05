@@ -20,7 +20,7 @@ Defined in: [sandkit/engine/api/colorPicker.d.ts:12](https://github.com/sandustr
 
 Sentinel value for cycling through predefined colors.
 
-***
+---
 
 ### NO\_COLOR
 
@@ -32,7 +32,7 @@ Defined in: [sandkit/engine/api/colorPicker.d.ts:14](https://github.com/sandustr
 
 Sentinel value for no color selected.
 
-***
+---
 
 ### PREDEFINED\_COLORS
 
@@ -44,7 +44,7 @@ Defined in: [sandkit/engine/api/colorPicker.d.ts:16](https://github.com/sandustr
 
 List of predefined palette colors.
 
-***
+---
 
 ### RANDOM\_COLOR
 
@@ -82,7 +82,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getActivePalette() :id=getactivepalette
 
@@ -108,7 +108,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getCycleColor() :id=getcyclecolor
 
@@ -134,7 +134,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getRandomColor() :id=getrandomcolor
 
@@ -160,7 +160,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hexToRgba() :id=hextorgba
 
@@ -186,7 +186,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### renderColorButton() :id=rendercolorbutton
 
@@ -212,7 +212,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### renderColorSection() :id=rendercolorsection
 
@@ -238,7 +238,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### renderPalette() :id=renderpalette
 
@@ -264,7 +264,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### rgbaToHex() :id=rgbatohex
 
@@ -290,7 +290,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### setActivePalette() :id=setactivepalette
 
@@ -316,7 +316,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### togglePalette() :id=togglepalette
 

@@ -11,8 +11,8 @@ https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
 
 ## See
 
- - [Official docs](https://sandustry.com/sandkit.html#mod-files-heading)
- - [JSON Schema docs](https://sandustry-modding.github.io/SandustryTypes/#/schemas)
+- [Official docs](https://sandustry.com/sandkit.html#mod-files-heading)
+- [JSON Schema docs](https://sandustry-modding.github.io/SandustryTypes/#/schemas)
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -29,7 +29,7 @@ Number setting in `modinfo.json` `configSchema`.
 ##### type
 
 ```ts
-type: "number"
+type: "number";
 ```
 
 Defined in: [configs/modinfo.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L141)
@@ -152,7 +152,7 @@ i18n key for the setting help text.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ConfigSchemaBoolean :id=configschemaboolean
 
@@ -167,7 +167,7 @@ Boolean setting in `modinfo.json` `configSchema`.
 ##### type
 
 ```ts
-type: "boolean"
+type: "boolean";
 ```
 
 Defined in: [configs/modinfo.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L199)
@@ -248,7 +248,7 @@ i18n key for the setting help text.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ConfigSchemaChoiceOption :id=configschemachoiceoption
 
@@ -263,7 +263,7 @@ One option inside a [ConfigSchemaChoice](#configschemachoice).
 ##### value
 
 ```ts
-value: string
+value: string;
 ```
 
 Defined in: [configs/modinfo.d.ts:239](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L239)
@@ -302,7 +302,7 @@ i18n key for the option label.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ConfigSchemaChoice :id=configschemachoice
 
@@ -317,7 +317,7 @@ Choice setting in `modinfo.json` `configSchema`.
 ##### type
 
 ```ts
-type: "choice"
+type: "choice";
 ```
 
 Defined in: [configs/modinfo.d.ts:261](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L261)
@@ -412,7 +412,7 @@ Allowed choices for this setting.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### TextureOverride :id=textureoverride
 
@@ -431,7 +431,7 @@ Animated (or static) texture replacement for a vanilla asset id.
 ##### path
 
 ```ts
-path: string
+path: string;
 ```
 
 Defined in: [configs/modinfo.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L323)
@@ -484,7 +484,7 @@ Milliseconds between animation frames.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModProvide :id=modprovide
 
@@ -503,7 +503,7 @@ Optional content pack exposed by this mod for other mods or the game to consume.
 ##### kind
 
 ```ts
-kind: string
+kind: string;
 ```
 
 Defined in: [configs/modinfo.d.ts:355](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L355)
@@ -517,7 +517,7 @@ Kind of provided content (for example `"structureTextures"`).
 ##### id
 
 ```ts
-id: string
+id: string;
 ```
 
 Defined in: [configs/modinfo.d.ts:361](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L361)
@@ -542,7 +542,7 @@ Texture paths keyed by the vanilla or structure texture id they replace.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModMapBlueprints :id=modmapblueprints
 
@@ -672,7 +672,7 @@ Map config JSON path.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModMapPoint :id=modmappoint
 
@@ -691,7 +691,7 @@ World-pixel spawn or unstuck point.
 ##### x
 
 ```ts
-x: number
+x: number;
 ```
 
 Defined in: [configs/modinfo.d.ts:439](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L439)
@@ -705,7 +705,7 @@ World X in pixels.
 ##### y
 
 ```ts
-y: number
+y: number;
 ```
 
 Defined in: [configs/modinfo.d.ts:445](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L445)
@@ -716,7 +716,7 @@ World Y in pixels.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModMapTopBounds :id=modmaptopbounds
 
@@ -760,7 +760,7 @@ Soft top bound in world pixels.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModMapDepthLight :id=modmapdepthlight
 
@@ -832,7 +832,7 @@ Minimum light size at the deep end of the range.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModMapParallax :id=modmapparallax
 
@@ -876,7 +876,7 @@ Vertical offset of the parallax layer in pixels.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModMapColorMappingLayers :id=modmapcolormappinglayers
 
@@ -920,7 +920,7 @@ Foreground terrain id for this blueprint RGB.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModMapDefinition :id=modmapdefinition
 
@@ -939,7 +939,7 @@ Custom map pack block in `modinfo.json`.
 ##### blueprints
 
 ```ts
-blueprints: ModMapBlueprints
+blueprints: ModMapBlueprints;
 ```
 
 Defined in: [configs/modinfo.d.ts:558](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L558)
@@ -953,7 +953,7 @@ Paths to blueprint images and map config under the mod root.
 ##### width
 
 ```ts
-width: number
+width: number;
 ```
 
 Defined in: [configs/modinfo.d.ts:564](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L564)
@@ -967,7 +967,7 @@ Map width in cells.
 ##### height
 
 ```ts
-height: number
+height: number;
 ```
 
 Defined in: [configs/modinfo.d.ts:570](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L570)
@@ -1076,7 +1076,7 @@ Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModGameVersion :id=modgameversion
 
@@ -1120,7 +1120,7 @@ Highest supported game version string.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModInfo :id=modinfo
 
@@ -1154,7 +1154,7 @@ Not read by the game loader.
 ##### manifestVersion
 
 ```ts
-manifestVersion: 1
+manifestVersion: 1;
 ```
 
 Defined in: [configs/modinfo.d.ts:655](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L655)
@@ -1168,7 +1168,7 @@ Manifest format version. Must be `1` for Sandkit `apiVersion` 1.
 ##### id
 
 ```ts
-id: string
+id: string;
 ```
 
 Defined in: [configs/modinfo.d.ts:661](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L661)
@@ -1182,7 +1182,7 @@ Unique mod id. Prefer `author.mod-name` (matches folder / Workshop identity).
 ##### name
 
 ```ts
-name: string
+name: string;
 ```
 
 Defined in: [configs/modinfo.d.ts:667](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L667)
@@ -1196,7 +1196,7 @@ Display name shown in the mod list and Workshop UI.
 ##### version
 
 ```ts
-version: string
+version: string;
 ```
 
 Defined in: [configs/modinfo.d.ts:673](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L673)
@@ -1210,7 +1210,7 @@ Semver-style mod version string.
 ##### apiVersion
 
 ```ts
-apiVersion: 1
+apiVersion: 1;
 ```
 
 Defined in: [configs/modinfo.d.ts:679](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L679)
@@ -1224,7 +1224,7 @@ Sandkit host API version this mod targets. Must be `1`.
 ##### entry
 
 ```ts
-entry: string
+entry: string;
 ```
 
 Defined in: [configs/modinfo.d.ts:685](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L685)
@@ -1421,7 +1421,7 @@ Embedded custom map pack definition for this mod.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### BundlePatchRegex :id=bundlepatchregex
 
@@ -1440,7 +1440,7 @@ Regex finder when the target is not a plain [BundlePatch.find](#find) string.
 ##### pattern
 
 ```ts
-pattern: string
+pattern: string;
 ```
 
 Defined in: [configs/patches.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L64)
@@ -1466,7 +1466,7 @@ Optional regex flags (for example `"g"` or `"m"`).
 
 [Official docs](https://sandustry.com/sandkit.html#patches-heading)
 
-***
+---
 
 ### BundlePatch :id=bundlepatch
 
@@ -1487,30 +1487,30 @@ or duplicated match fails loudly. When several patches must succeed together
 ```ts
 [
   {
-    "file": "js/bundle.js",
-    "find": "const message = 'Hello';",
-    "operation": "replace",
-    "code": "const message = 'Hello from my mod';",
-    "expectedMatches": 1
+    file: "js/bundle.js",
+    find: "const message = 'Hello';",
+    operation: "replace",
+    code: "const message = 'Hello from my mod';",
+    expectedMatches: 1,
   },
   {
-    "file": "js/simulation-worker.js",
-    "regex": {
-      "pattern": "const ([a-z]+) = false;"
+    file: "js/simulation-worker.js",
+    regex: {
+      pattern: "const ([a-z]+) = false;",
     },
-    "operation": "replace",
-    "code": "const $1 = true;",
-    "expectedMatches": 1
+    operation: "replace",
+    code: "const $1 = true;",
+    expectedMatches: 1,
   },
   {
-    "file": "js/bundle.js",
-    "find": "doThing();",
-    "operation": "wrap",
-    "before": "if (enabled) { ",
-    "after": " }",
-    "expectedMatches": 1
-  }
-]
+    file: "js/bundle.js",
+    find: "doThing();",
+    operation: "wrap",
+    before: "if (enabled) { ",
+    after: " }",
+    expectedMatches: 1,
+  },
+];
 ```
 
 #### See
@@ -1522,7 +1522,7 @@ or duplicated match fails loudly. When several patches must succeed together
 ##### file
 
 ```ts
-file: PatchTargetFile
+file: PatchTargetFile;
 ```
 
 Defined in: [configs/patches.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L118)
@@ -1702,7 +1702,7 @@ Defined in: [configs/patches.d.ts:195](https://github.com/sandustry-modding/Sand
 
 Human-readable note for maintainers. Not required by the official schema.
 
-***
+---
 
 ### BundlePatchesDocument :id=bundlepatchesdocument
 
@@ -1745,7 +1745,7 @@ Ordered patch list (same as the bare-array game format).
 <p class="smt-member-path"><code>configs.ConfigSchemaEntry</code></p>
 
 ```ts
-ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice
+ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice;
 ```
 
 Defined in: [configs/modinfo.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L307)
@@ -1758,14 +1758,14 @@ Keys of `configSchema` are setting ids read via `api.settings.get`.
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### ModMapColorMapping :id=modmapcolormapping
 
 <p class="smt-member-path"><code>configs.ModMapColorMapping</code></p>
 
 ```ts
-ModMapColorMapping = string | ModMapColorMappingLayers
+ModMapColorMapping = string | ModMapColorMappingLayers;
 ```
 
 Defined in: [configs/modinfo.d.ts:545](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L545)
@@ -1776,58 +1776,63 @@ One `map.colorMappings` value: a single terrain id, or layered background/foregr
 
 [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
 
-***
+---
 
 ### PatchTargetFile :id=patchtargetfile
 
 <p class="smt-member-path"><code>configs.PatchTargetFile</code></p>
 
 ```ts
-PatchTargetFile = "js/bundle.js" | "js/simulation-worker.js" | "js/manager-worker.js" | "js/utility-worker.js" | string & object
+PatchTargetFile =
+  "js/bundle.js" |
+  "js/simulation-worker.js" |
+  "js/manager-worker.js" |
+  "js/utility-worker.js" |
+  (string & object);
 ```
 
 Defined in: [configs/patches.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L25)
 
 Known compiled bundle paths the loader can patch.
 
-| Value | Role |
-| --- | --- |
-| `js/bundle.js` | Main renderer |
-| `js/manager-worker.js` | Manager worker |
+| Value                     | Role               |
+| ------------------------- | ------------------ |
+| `js/bundle.js`            | Main renderer      |
+| `js/manager-worker.js`    | Manager worker     |
 | `js/simulation-worker.js` | Simulation workers |
-| `js/utility-worker.js` | Utility worker |
+| `js/utility-worker.js`    | Utility worker     |
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#patches-heading)
 
-***
+---
 
 ### PatchOperation :id=patchoperation
 
 <p class="smt-member-path"><code>configs.PatchOperation</code></p>
 
 ```ts
-PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfter" | "wrap"
+PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfter" | "wrap";
 ```
 
 Defined in: [configs/patches.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L45)
 
 Supported patch operations.
 
-| Value | Behaviour |
-| --- | --- |
-| `replace` | Replace the matched text with [BundlePatch.code](#code) / [BundlePatch.replace](#replace) |
-| `remove` | Delete the matched text |
-| `insertBefore` | Insert [BundlePatch.code](#code) before the match |
-| `insertAfter` | Insert [BundlePatch.code](#code) after the match |
-| `wrap` | Surround the match with [BundlePatch.before](#before) and [BundlePatch.after](#after) |
+| Value          | Behaviour                                                                                 |
+| -------------- | ----------------------------------------------------------------------------------------- |
+| `replace`      | Replace the matched text with [BundlePatch.code](#code) / [BundlePatch.replace](#replace) |
+| `remove`       | Delete the matched text                                                                   |
+| `insertBefore` | Insert [BundlePatch.code](#code) before the match                                         |
+| `insertAfter`  | Insert [BundlePatch.code](#code) after the match                                          |
+| `wrap`         | Surround the match with [BundlePatch.before](#before) and [BundlePatch.after](#after)     |
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#patches-heading)
 
-***
+---
 
 ### BundlePatchesFile :id=bundlepatchesfile
 

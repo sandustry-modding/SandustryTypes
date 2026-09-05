@@ -29,7 +29,7 @@ Connected vent cell position.
 ##### cellX
 
 ```ts
-cellX: number
+cellX: number;
 ```
 
 Defined in: [sandkit/api/pipes.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L54)
@@ -37,7 +37,7 @@ Defined in: [sandkit/api/pipes.d.ts:54](https://github.com/sandustry-modding/San
 ##### cellY
 
 ```ts
-cellY: number
+cellY: number;
 ```
 
 Defined in: [sandkit/api/pipes.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L55)
@@ -70,7 +70,7 @@ Return true when a pipe occupies the cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isEnabledAtCell() :id=isenabledatcell
 
@@ -98,7 +98,7 @@ Return true when pipe flow is enabled at the cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getConnectedVentsAtCell() :id=getconnectedventsatcell
 
@@ -126,7 +126,7 @@ readonly [`PipeVentCell`](#pipeventcell)[]
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setEnabledAtCell() :id=setenabledatcell
 

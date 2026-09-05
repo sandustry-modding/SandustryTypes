@@ -39,9 +39,9 @@ export namespace rendering {
    * const { cellSize, snapGridCellSize } = api.rendering.getGridMetrics();
    * ```
    */
-  export function getGridMetrics(): { cellSize: number; snapGridCellSize: number; };
+  export function getGridMetrics(): { cellSize: number; snapGridCellSize: number };
   /** Return overlay viewport width and height in pixels. */
-  export function getOverlayViewportSize(): { width: number; height: number; };
+  export function getOverlayViewportSize(): { width: number; height: number };
   /**
    * Run a callback with the overlay canvas context.
    * @param callback - Receives the overlay 2D context; return value is passed through.

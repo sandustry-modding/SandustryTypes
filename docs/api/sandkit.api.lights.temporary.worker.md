@@ -21,7 +21,7 @@ Handle returned by [createAtWorld](#createatworld).
 ##### lightId
 
 ```ts
-lightId: number | null
+lightId: number | null;
 ```
 
 Defined in: [worker/api/lights.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L21)
@@ -51,7 +51,7 @@ Use [lightId](#lightid) instead.
 <p class="smt-member-path"><code>sandkit.api.lights.temporary.TemporaryLightOptions (worker)</code></p>
 
 ```ts
-TemporaryLightOptions = TemporaryLightOptions
+TemporaryLightOptions = TemporaryLightOptions;
 ```
 
 Defined in: [worker/api/lights.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L16)

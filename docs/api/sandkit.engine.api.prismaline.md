@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getAvailable() :id=getavailable
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getConsumed() :id=getconsumed
 

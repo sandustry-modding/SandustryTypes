@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### save() :id=save
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### start() :id=start
 

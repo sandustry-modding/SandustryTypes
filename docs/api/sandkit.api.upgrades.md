@@ -21,7 +21,7 @@ Upgrade definition registered for an item.
 ##### itemId
 
 ```ts
-itemId: string
+itemId: string;
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L51)
@@ -45,7 +45,7 @@ Defined in: [sandkit/api/upgrades.d.ts:53](https://github.com/sandustry-modding/
 ##### upgrade
 
 ```ts
-upgrade: object
+upgrade: object;
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L54)
@@ -53,7 +53,7 @@ Defined in: [sandkit/api/upgrades.d.ts:54](https://github.com/sandustry-modding/
 ###### id
 
 ```ts
-id: string
+id: string;
 ```
 
 ###### nameKey?
@@ -71,7 +71,7 @@ optional descriptionKey?: string
 ###### maxLevel
 
 ```ts
-maxLevel: number
+maxLevel: number;
 ```
 
 ###### costs
@@ -86,7 +86,7 @@ costs: number[]
 optional oneOff?: boolean
 ```
 
-***
+---
 
 ### UpgradeCategoryDefinition :id=upgradecategorydefinition
 
@@ -107,7 +107,7 @@ Upgrade category definition shape.
 ##### id
 
 ```ts
-id: string
+id: string;
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L68)
@@ -150,7 +150,7 @@ Category id and display metadata.
 
 `void`
 
-***
+---
 
 ### register() :id=register
 
@@ -176,7 +176,7 @@ Item id, upgrade id, costs, and level metadata.
 
 `void`
 
-***
+---
 
 ### updateDefinition() :id=updatedefinition
 
@@ -214,7 +214,7 @@ Fields to merge into the definition.
 
 `void`
 
-***
+---
 
 ### getLevelById() :id=getlevelbyid
 
@@ -246,7 +246,7 @@ Upgrade id within the item.
 
 `number`
 
-***
+---
 
 ### getAvailableLevelById() :id=getavailablelevelbyid
 
@@ -278,7 +278,7 @@ Upgrade id within the item.
 
 `number`
 
-***
+---
 
 ### setLevelById() :id=setlevelbyid
 

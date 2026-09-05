@@ -15,7 +15,7 @@ Available as `sandkit.api.factory`.
 <p class="smt-member-path"><code>sandkit.api.factory.FactoryProcessId</code></p>
 
 ```ts
-FactoryProcessId = "shakeWetSand" | "pressBurntResidue" | "growFlowers" | "condenseFlorin"
+FactoryProcessId = "shakeWetSand" | "pressBurntResidue" | "growFlowers" | "condenseFlorin";
 ```
 
 Defined in: [sandkit/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L35)
@@ -44,7 +44,7 @@ Return the current factory level.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getProcessCount() :id=getprocesscount
 
@@ -74,7 +74,7 @@ Built-in factory process id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getProcessRate() :id=getprocessrate
 

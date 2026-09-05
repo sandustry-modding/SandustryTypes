@@ -27,14 +27,20 @@ export namespace shared {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
-    export function ensure(key: string, config: { type: SharedArrayType; length: number; }): SharedArray;
+    export function ensure(
+      key: string,
+      config: { type: SharedArrayType; length: number },
+    ): SharedArray;
 
     /**
      * @deprecated Use {@link ensure} instead.
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
-    export function create(key: string, config: { type: SharedArrayType; length: number; }): SharedArray;
+    export function create(
+      key: string,
+      config: { type: SharedArrayType; length: number },
+    ): SharedArray;
 
     /**
      * Look up a named shared buffer without creating it.

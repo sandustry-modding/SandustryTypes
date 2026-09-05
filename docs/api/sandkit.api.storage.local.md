@@ -28,7 +28,7 @@ Storage key.
 
 [`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1) \| `undefined`
 
-***
+---
 
 ### set() :id=set
 
@@ -60,7 +60,7 @@ JSON-serializable value.
 
 `void`
 
-***
+---
 
 ### remove() :id=remove
 

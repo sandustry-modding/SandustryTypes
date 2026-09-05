@@ -6,7 +6,7 @@ Worker-thread `sandkit.api.effects` — world-space visual effects on workers.
 
 Temporary lights live under [lights.temporary](api/sandkit.api.lights.temporary.worker.md), not here.
 
- Worker-only surface; main thread exposes additional effect helpers.
+Worker-only surface; main thread exposes additional effect helpers.
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -56,7 +56,7 @@ Duration, radius, and intensity settings.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~createEffectAtWorld()~~
 
@@ -104,7 +104,7 @@ Use [createAtWorld](#createatworld) instead.
 
 Re-exports [EffectOptions](api/sandkit.api.effects.md#effectoptions)
 
-***
+---
 
 ### ParticleEffectOptions :id=particleeffectoptions
 
@@ -112,7 +112,7 @@ Re-exports [EffectOptions](api/sandkit.api.effects.md#effectoptions)
 
 Re-exports [ParticleEffectOptions](api/sandkit.api.effects.md#particleeffectoptions)
 
-***
+---
 
 ### createParticlesAtWorld :id=createparticlesatworld
 

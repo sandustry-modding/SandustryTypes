@@ -40,7 +40,11 @@ export namespace lights {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
-    export function createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle;
+    export function createAtWorld(
+      worldX: number,
+      worldY: number,
+      options?: TemporaryLightOptions,
+    ): TemporaryLightHandle;
 
     /**
      * Remove a temporary light by its id.
@@ -86,7 +90,11 @@ export namespace lights {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
-    export function createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions): PersistentLightHandle;
+    export function createAtWorld(
+      worldX: number,
+      worldY: number,
+      options?: PersistentLightOptions,
+    ): PersistentLightHandle;
 
     /**
      * Remove the persistent light at world coordinates.

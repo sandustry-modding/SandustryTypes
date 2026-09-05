@@ -505,19 +505,22 @@ export namespace hooks {
     "teleport:effect:create": Record<string, unknown>;
     /** @deprecated Use `"teleport:effect:create"` instead. */
     "teleport:effect": InterceptHookMap["teleport:effect:create"];
-    "action:start": { action?: { id?: string; } & Record<string, unknown>; } & Record<string, unknown>;
+    "action:start": { action?: { id?: string } & Record<string, unknown> } & Record<
+      string,
+      unknown
+    >;
     /** @deprecated Use `"action:start"` instead. */
     "action:intercept": InterceptHookMap["action:start"];
-    "input:keyDown": { key?: string; code?: string; event?: Event; };
+    "input:keyDown": { key?: string; code?: string; event?: Event };
     /** @deprecated Use `"input:keyDown"` instead. */
     "input:keydown": InterceptHookMap["input:keyDown"];
-    "input:keyUp": { key?: string; code?: string; event?: Event; };
+    "input:keyUp": { key?: string; code?: string; event?: Event };
     /** @deprecated Use `"input:keyUp"` instead. */
     "input:keyup": InterceptHookMap["input:keyUp"];
-    "placePoints:suppress": { type?: string; } & Record<string, unknown>;
+    "placePoints:suppress": { type?: string } & Record<string, unknown>;
     /** @deprecated Use `"placePoints:suppress"` instead. */
     "placePoints:isSuppressed": InterceptHookMap["placePoints:suppress"];
-    "placePoints:directionalArrows:suppress": { type?: string; } & Record<string, unknown>;
+    "placePoints:directionalArrows:suppress": { type?: string } & Record<string, unknown>;
     /** @deprecated Use `"placePoints:directionalArrows:suppress"` instead. */
     "placePoints:directionalArrows:isSuppressed": InterceptHookMap["placePoints:directionalArrows:suppress"];
     "entity:update": {
@@ -541,8 +544,8 @@ export namespace hooks {
       y: number;
       data?: Record<string, unknown>;
     };
-    "building:clearShape": { structure: Record<string, unknown>; };
-    "input:scroll": { deltaY: number; } & Record<string, unknown>;
+    "building:clearShape": { structure: Record<string, unknown> };
+    "input:scroll": { deltaY: number } & Record<string, unknown>;
     "input:boostDown": Record<string, unknown>;
     /** @deprecated Use `"input:boostDown"` instead. */
     "input:boost-down": InterceptHookMap["input:boostDown"];
@@ -550,10 +553,16 @@ export namespace hooks {
     /** @deprecated Use `"input:descendDown"` instead. */
     "input:descend-down": InterceptHookMap["input:descendDown"];
     "input:escape": Record<string, unknown>;
-    "interactable:suppressHover": { type?: string; structure?: Record<string, unknown>; } & Record<string, unknown>;
-    "fire:element:ignite": { x: number; y: number; elementType: number; };
-    "projectile:fire:overStructure": { projectile: Record<string, unknown>; x: number; y: number; };
-    "projectile:hit": { projectile: Record<string, unknown>; travelResult: Record<string, unknown>; };
+    "interactable:suppressHover": { type?: string; structure?: Record<string, unknown> } & Record<
+      string,
+      unknown
+    >;
+    "fire:element:ignite": { x: number; y: number; elementType: number };
+    "projectile:fire:overStructure": { projectile: Record<string, unknown>; x: number; y: number };
+    "projectile:hit": {
+      projectile: Record<string, unknown>;
+      travelResult: Record<string, unknown>;
+    };
     "player:position:commit": {
       previousWorldX: number;
       previousWorldY: number;
@@ -611,17 +620,17 @@ export namespace hooks {
     "player:movement:prepare": Record<string, unknown>;
     /** @deprecated Use `"player:movement:prepare"` instead. */
     "player:movement": ModifierHookMap["player:movement:prepare"];
-    "building:placementLimit:prepare": { maxCount: number | null; } & Record<string, unknown>;
+    "building:placementLimit:prepare": { maxCount: number | null } & Record<string, unknown>;
     /** @deprecated Use `"building:placementLimit:prepare"` instead. */
     "building:placementLimit": ModifierHookMap["building:placementLimit:prepare"];
     /** @deprecated Use `"building:placementLimit:prepare"` instead. */
     "building:placement-limit": ModifierHookMap["building:placementLimit:prepare"];
-    "fluxEmanator:processing:prepare": { speedMultiplier: number; } & Record<string, unknown>;
+    "fluxEmanator:processing:prepare": { speedMultiplier: number } & Record<string, unknown>;
     /** @deprecated Use `"fluxEmanator:processing:prepare"` instead. */
     "fluxEmanator:processing": ModifierHookMap["fluxEmanator:processing:prepare"];
     /** @deprecated Use `"fluxEmanator:processing:prepare"` instead. */
     "flux-emanator:processing": ModifierHookMap["fluxEmanator:processing:prepare"];
-    "render:pipes:prepare": { layer?: string; } & Record<string, unknown>;
+    "render:pipes:prepare": { layer?: string } & Record<string, unknown>;
     /** @deprecated Use `"render:pipes:prepare"` instead. */
     "render:pipes": ModifierHookMap["render:pipes:prepare"];
     "structures:moved:prepare": {
@@ -708,10 +717,12 @@ export namespace hooks {
   }
 
   /** Intercept hook args for a given hook id. */
-  export type InterceptHookArgs<K extends InterceptHookId> =
-    K extends keyof InterceptHookMap ? InterceptHookMap[K] : unknown;
+  export type InterceptHookArgs<K extends InterceptHookId> = K extends keyof InterceptHookMap
+    ? InterceptHookMap[K]
+    : unknown;
 
   /** Modify hook args for a given hook id. */
-  export type ModifyHookArgs<K extends ModifyHookId> =
-    K extends keyof ModifierHookMap ? ModifierHookMap[K] : unknown;
+  export type ModifyHookArgs<K extends ModifyHookId> = K extends keyof ModifierHookMap
+    ? ModifierHookMap[K]
+    : unknown;
 }

@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### refreshRadius() :id=refreshradius
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### refreshRect() :id=refreshrect
 

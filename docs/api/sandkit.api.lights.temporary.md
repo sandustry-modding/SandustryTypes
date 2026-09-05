@@ -73,7 +73,7 @@ api.lights.temporary.createAtWorld(worldX, worldY, {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### removeById() :id=removebyid
 

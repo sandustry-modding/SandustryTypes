@@ -155,7 +155,10 @@ export namespace events {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function on<K extends EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void;
+  export function on<K extends EventId>(
+    eventId: K,
+    callback: (payload: EventPayload<K>) => void,
+  ): () => void;
 
   /**
    * Emits an event with a payload to all subscribers.
@@ -239,7 +242,7 @@ export namespace events {
       y: number;
       isBatch: boolean;
     };
-    "structures:placed": { structures: unknown[]; };
+    "structures:placed": { structures: unknown[] };
     "structures:removed": {
       removed: unknown[];
       structures?: unknown[];
@@ -251,8 +254,8 @@ export namespace events {
     };
     "game:ready": Record<string, unknown>;
     "game:started": Record<string, unknown>;
-    "tutorial:stepChanged": { step: unknown; };
-    "tutorial:completed": { skipped: boolean; };
+    "tutorial:stepChanged": { step: unknown };
+    "tutorial:completed": { skipped: boolean };
     "tech:unlocked": {
       techId: string;
       suppressMusic: boolean;

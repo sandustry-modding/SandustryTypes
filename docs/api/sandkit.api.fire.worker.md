@@ -6,7 +6,7 @@ Worker-thread `sandkit.api.fire` — ignite and burn elements at grid cells.
 
 Worker burns are immediate. Main thread defers burns with `burnElementAtCell`.
 
- Worker-only surface; do not use main-thread [sandkit.api.fire](api/sandkit.md#fire).
+Worker-only surface; do not use main-thread [sandkit.api.fire](api/sandkit.md#fire).
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -36,7 +36,7 @@ Return true when the element at the cell can burn.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### burnElementAtCell() :id=burnelementatcell
 

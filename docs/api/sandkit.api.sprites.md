@@ -35,7 +35,7 @@ Packed RGB tint applied after load.
 <p class="smt-member-path"><code>sandkit.api.sprites.LoadedSprite</code></p>
 
 ```ts
-LoadedSprite = unknown
+LoadedSprite = unknown;
 ```
 
 Defined in: [sandkit/api/sprites.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L37)
@@ -80,7 +80,7 @@ Optional tint and load options.
 
 `Promise`\<`void`\>
 
-***
+---
 
 ### loadFromMod() :id=loadfrommod
 
@@ -118,7 +118,7 @@ Optional tint and load options.
 
 `Promise`\<`void`\>
 
-***
+---
 
 ### getById() :id=getbyid
 
@@ -144,7 +144,7 @@ Sprite id from [load](#load) or [loadFromMod](#loadfrommod).
 
 `unknown`
 
-***
+---
 
 ### hideAllPlayerModSprites() :id=hideallplayermodsprites
 
@@ -162,7 +162,7 @@ Hide all player mod-attached sprites.
 
 `void`
 
-***
+---
 
 ### rotatePlayerModSprites() :id=rotateplayermodsprites
 

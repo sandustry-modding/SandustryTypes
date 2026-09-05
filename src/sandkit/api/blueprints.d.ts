@@ -15,7 +15,9 @@ export namespace blueprints {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function serializeStructures(structures: readonly structures.Structure[]): BlueprintStructure[];
+  export function serializeStructures(
+    structures: readonly structures.Structure[],
+  ): BlueprintStructure[];
 
   /**
    * Localize blueprint structure records for placement.
@@ -24,7 +26,9 @@ export namespace blueprints {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[];
+  export function localizeStructures(
+    structures: readonly BlueprintStructure[],
+  ): BlueprintStructure[];
 
   /** Serialized structure entry used in blueprints. */
   export interface BlueprintStructure {

@@ -15,5 +15,10 @@ export namespace raycast {
    * @param angle - Ray direction in radians.
    * @param maxDistance - Maximum ray length in pixels.
    */
-  export function castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistance: number): Vector2 & { distance: number; } | null;
+  export function castFromWorld(
+    startWorldX: number,
+    startWorldY: number,
+    angle: number,
+    maxDistance: number,
+  ): (Vector2 & { distance: number }) | null;
 }

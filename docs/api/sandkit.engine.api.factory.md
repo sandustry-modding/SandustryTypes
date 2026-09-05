@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### canUnlockNextTier() :id=canunlocknexttier
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### ensureProcessAtLeast() :id=ensureprocessatleast
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### flushDeferredLevelUps() :id=flushdeferredlevelups
 
@@ -112,7 +112,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getLevel() :id=getlevel
 
@@ -138,7 +138,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getProcessCount() :id=getprocesscount
 
@@ -164,7 +164,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getProcessRate() :id=getprocessrate
 
@@ -190,7 +190,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### recordProcess() :id=recordprocess
 
@@ -216,7 +216,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### unlockNextTier() :id=unlocknexttier
 

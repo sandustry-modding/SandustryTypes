@@ -121,7 +121,12 @@ export namespace grid {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) => void): void;
+  export function forEachCellInCircle(
+    centerCellX: number,
+    centerCellY: number,
+    radiusCells: number,
+    callback: (...args: CellCoordinates) => void,
+  ): void;
 
   /**
    * Calls the callback for each cell in a rectangle.
@@ -134,14 +139,28 @@ export namespace grid {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function forEachCellInRectangle(...args: [...CellCoordinates, widthCells: number, heightCells: number, callback: (...args: CellCoordinates) => void]): void;
+  export function forEachCellInRectangle(
+    ...args: [
+      ...CellCoordinates,
+      widthCells: number,
+      heightCells: number,
+      callback: (...args: CellCoordinates) => void,
+    ]
+  ): void;
 
   /**
    * @deprecated Use {@link forEachCellInRectangle} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function forEachCellInRect(...args: [...CellCoordinates, widthCells: number, heightCells: number, callback: (...args: CellCoordinates) => void]): void;
+  export function forEachCellInRect(
+    ...args: [
+      ...CellCoordinates,
+      widthCells: number,
+      heightCells: number,
+      callback: (...args: CellCoordinates) => void,
+    ]
+  ): void;
 
   /** Deferred element and terrain mutations passed to {@link mutate}. */
   export interface GridMutationWriter {
@@ -163,7 +182,13 @@ export namespace grid {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
      */
-    createAtCell(...args: [...CellCoordinates, elementTypeOrId: elements.ElementRef, options?: elements.ElementCreateOptions]): void;
+    createAtCell(
+      ...args: [
+        ...CellCoordinates,
+        elementTypeOrId: elements.ElementRef,
+        options?: elements.ElementCreateOptions,
+      ]
+    ): void;
 
     /**
      * Replace the element at a cell inside a {@link mutate} callback.
@@ -175,7 +200,13 @@ export namespace grid {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
      */
-    replaceAtCell(...args: [...CellCoordinates, elementTypeOrId: elements.ElementRef, options?: elements.ElementCreateOptions]): void;
+    replaceAtCell(
+      ...args: [
+        ...CellCoordinates,
+        elementTypeOrId: elements.ElementRef,
+        options?: elements.ElementCreateOptions,
+      ]
+    ): void;
 
     /**
      * Remove the element at a cell inside a {@link mutate} callback.
@@ -201,7 +232,13 @@ export namespace grid {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
      */
-    createAtCell(...args: [...CellCoordinates, terrainTypeOrId: terrains.TerrainRef, options?: terrains.TerrainMutationOptions]): void;
+    createAtCell(
+      ...args: [
+        ...CellCoordinates,
+        terrainTypeOrId: terrains.TerrainRef,
+        options?: terrains.TerrainMutationOptions,
+      ]
+    ): void;
 
     /**
      * Replace terrain at a cell inside a {@link mutate} callback.
@@ -213,7 +250,13 @@ export namespace grid {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
      */
-    replaceAtCell(...args: [...CellCoordinates, terrainTypeOrId: terrains.TerrainRef, options?: terrains.TerrainMutationOptions]): void;
+    replaceAtCell(
+      ...args: [
+        ...CellCoordinates,
+        terrainTypeOrId: terrains.TerrainRef,
+        options?: terrains.TerrainMutationOptions,
+      ]
+    ): void;
 
     /**
      * Remove terrain at a cell inside a {@link mutate} callback.

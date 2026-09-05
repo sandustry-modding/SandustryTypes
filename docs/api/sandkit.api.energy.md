@@ -41,7 +41,7 @@ Defined in: [sandkit/api/energy.d.ts:68](https://github.com/sandustry-modding/Sa
 
 Energy type id when multiple networks exist.
 
-***
+---
 
 ### EnergyAddOptions :id=energyaddoptions
 
@@ -107,7 +107,7 @@ Capacity and energy-type options for storage nodes.
 
 `void`
 
-***
+---
 
 ### addAtCell() :id=addatcell
 
@@ -131,7 +131,7 @@ Adds energy at a cell. Returns the amount actually added.
 
 `number`
 
-***
+---
 
 ### consume() :id=consume
 
@@ -165,7 +165,7 @@ When `allOrNothing` is true, consume zero unless the full amount is available.
 
 `number`
 
-***
+---
 
 ### consumeExcludingNetworkAtCell() :id=consumeexcludingnetworkatcell
 
@@ -189,7 +189,7 @@ Consumes energy from networks other than the one at the cell.
 
 `number`
 
-***
+---
 
 ### getNetworkAtCell() :id=getnetworkatcell
 
@@ -222,7 +222,7 @@ for (const entry of network) {
 }
 ```
 
-***
+---
 
 ### getNetworkFreeCapacityAtCell() :id=getnetworkfreecapacityatcell
 

@@ -49,7 +49,13 @@ export namespace pickups {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem;
+  export function spawnAtWorld(
+    type: PickupType,
+    worldX: number,
+    worldY: number,
+    data?: Record<string, unknown>,
+    light?: WorldItemLight,
+  ): WorldItem;
 
   /**
    * Remove a pickup instance from the world.

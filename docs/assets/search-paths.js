@@ -170,5 +170,5 @@ window.SMT_SEARCH_PATHS = [
   "/modules",
   "/official-api/0.5.5",
   "/official-api/0.5.6",
-  "/schemas"
+  "/schemas",
 ];

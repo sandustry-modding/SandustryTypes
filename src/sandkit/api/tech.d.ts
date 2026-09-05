@@ -81,7 +81,11 @@ export namespace tech {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function registerNode(techId: TechGridId, definition: TechDefinition, options: { parentId: TechGridId; preferredPosition?: TechGridPosition; }): TechGridPosition;
+  export function registerNode(
+    techId: TechGridId,
+    definition: TechDefinition,
+    options: { parentId: TechGridId; preferredPosition?: TechGridPosition },
+  ): TechGridPosition;
 
   /**
    * Return true when a tech entry is locked.

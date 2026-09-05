@@ -5,10 +5,11 @@
 **api.ui.components.ActionSlot**
 
 ```ts
-const slot = sandkit.react.createElement(
-  api.ui.components.ActionSlot,
-  { source, slotIndex: 0, keyLabel: "1" },
-);
+const slot = sandkit.react.createElement(api.ui.components.ActionSlot, {
+  source,
+  slotIndex: 0,
+  keyLabel: "1",
+});
 ```
 
 **api.ui.components.Button**
@@ -44,19 +45,14 @@ const source = api.ui.hotbar.createBankSource({
 
 ```ts
 const hotbar = api.ui.hotbar.useHotbar();
-console.log(
-  hotbar.bankCount,
-  hotbar.activeBankIndex,
-  hotbar.activeSlotIndex,
-);
+console.log(hotbar.bankCount, hotbar.activeBankIndex, hotbar.activeSlotIndex);
 ```
 
 **api.ui.overrides.register**
 
 ```ts
-const overrideHandle = api.ui.overrides.register(
-  "resources",
-  (Original) => sandkit.react.createElement(
+const overrideHandle = api.ui.overrides.register("resources", (Original) =>
+  sandkit.react.createElement(
     sandkit.react.Fragment,
     null,
     sandkit.react.createElement(Original),
@@ -68,15 +64,11 @@ const overrideHandle = api.ui.overrides.register(
 **api.ui.regions.mount**
 
 ```ts
-const mountHandle = api.ui.regions.mount(
-  "hotbar",
-  "extra-actions",
-  {
-    placement: "docked",
-    order: 0,
-    render: () => sandkit.react.createElement(ExtraActions),
-  },
-);
+const mountHandle = api.ui.regions.mount("hotbar", "extra-actions", {
+  placement: "docked",
+  order: 0,
+  render: () => sandkit.react.createElement(ExtraActions),
+});
 ```
 
 **api.ui.regions.mountHandle.update**
@@ -128,7 +120,7 @@ Message tooltip with localized body text.
 ##### type
 
 ```ts
-type: "message"
+type: "message";
 ```
 
 Defined in: [sandkit/api/ui.d.ts:284](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L284)
@@ -138,14 +130,14 @@ Discriminator for tooltip renderer selection.
 ##### text
 
 ```ts
-text: LocalizedText
+text: LocalizedText;
 ```
 
 Defined in: [sandkit/api/ui.d.ts:286](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L286)
 
 Message body as localized text.
 
-***
+---
 
 ### Focusable :id=focusable
 
@@ -159,7 +151,7 @@ Focusable element state from useFocusable.
 
 ##### T
 
-`T` *extends* `HTMLElement` = `HTMLDivElement`
+`T` _extends_ `HTMLElement` = `HTMLDivElement`
 
 #### Properties
 
@@ -197,7 +189,7 @@ Move controller focus to this element.
 
 `void`
 
-***
+---
 
 ### FocusOptions :id=focusoptions
 
@@ -320,21 +312,21 @@ When true, scroll the element into view on focus.
 <p class="smt-member-path"><code>sandkit.api.ui.OverlaySlot</code></p>
 
 ```ts
-OverlaySlot = LooseString<"hotbar" | "global">
+OverlaySlot = LooseString<"hotbar" | "global">;
 ```
 
 Defined in: [sandkit/api/ui.d.ts:267](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L267)
 
 Overlay slot name. Known vanilla slots autocomplete; any string is allowed.
 
-***
+---
 
 ### ComponentId :id=componentid
 
 <p class="smt-member-path"><code>sandkit.api.ui.ComponentId</code></p>
 
 ```ts
-ComponentId = ComponentId | LooseString<never>
+ComponentId = ComponentId | LooseString<never>;
 ```
 
 Defined in: [sandkit/api/ui.d.ts:273](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L273)
@@ -342,28 +334,28 @@ Defined in: [sandkit/api/ui.d.ts:273](https://github.com/sandustry-modding/Sandu
 Registered UI component id.
 Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) values autocomplete; custom string ids are allowed.
 
-***
+---
 
 ### ComponentUpdateOptions :id=componentupdateoptions
 
 <p class="smt-member-path"><code>sandkit.api.ui.ComponentUpdateOptions</code></p>
 
 ```ts
-ComponentUpdateOptions = Record<string, unknown>
+ComponentUpdateOptions = Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/ui.d.ts:276](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L276)
 
 Component-specific update payload passed to [update](#update).
 
-***
+---
 
 ### TooltipData :id=tooltipdata
 
 <p class="smt-member-path"><code>sandkit.api.ui.TooltipData</code></p>
 
 ```ts
-TooltipData = TooltipMessageData
+TooltipData = TooltipMessageData;
 ```
 
 Defined in: [sandkit/api/ui.d.ts:279](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L279)
@@ -402,7 +394,7 @@ Component-specific update payload.
 
 `void`
 
-***
+---
 
 ### openPauseMenu() :id=openpausemenu
 
@@ -420,7 +412,7 @@ Open the pause menu.
 
 `void`
 
-***
+---
 
 ### showTooltip() :id=showtooltip
 
@@ -446,7 +438,7 @@ Tooltip type and localized content.
 
 `void`
 
-***
+---
 
 ### alert() :id=alert
 
@@ -483,13 +475,10 @@ Promise that resolves when the user dismisses the dialog.
 #### Example
 
 ```ts
-await api.ui.alert(
-  { key: "mods|example|details" },
-  { key: "mods|example|title" },
-);
+await api.ui.alert({ key: "mods|example|details" }, { key: "mods|example|title" });
 ```
 
-***
+---
 
 ### confirm() :id=confirm
 
@@ -526,12 +515,10 @@ Promise that resolves with true when confirmed, or false when cancelled.
 #### Example
 
 ```ts
-const confirmed = await api.ui.confirm(
-  { key: "mods|example|confirm" },
-);
+const confirmed = await api.ui.confirm({ key: "mods|example|confirm" });
 ```
 
-***
+---
 
 ### prompt() :id=prompt
 
@@ -586,13 +573,10 @@ Promise that resolves with entered text, or null when cancelled.
 #### Example
 
 ```ts
-const value = await api.ui.prompt(
-  { key: "mods|example|enterValue" },
-  "",
-);
+const value = await api.ui.prompt({ key: "mods|example|enterValue" }, "");
 ```
 
-***
+---
 
 ### inject() :id=inject
 
@@ -634,7 +618,7 @@ Function that unmounts the injected component.
 
 Re-exports [toast](api/sandkit.api.ui.worker.md#toast)
 
-***
+---
 
 ### LocalizedText :id=localizedtext
 
@@ -642,7 +626,7 @@ Re-exports [toast](api/sandkit.api.ui.worker.md#toast)
 
 Re-exports [LocalizedText](api/sandkit.api.ui.worker.md#localizedtext)
 
-***
+---
 
 ### ToastOptions :id=toastoptions
 

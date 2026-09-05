@@ -28,7 +28,7 @@ Grab radius in cells.
 
 `void`
 
-***
+---
 
 ### getSize() :id=getsize
 
@@ -48,7 +48,7 @@ Return current grabber radius size.
 
 Grab radius in cells.
 
-***
+---
 
 ### isActive() :id=isactive
 
@@ -68,7 +68,7 @@ Return true when grabber tool is active.
 
 True when the grabber is the active tool.
 
-***
+---
 
 ### isLoaded() :id=isloaded
 

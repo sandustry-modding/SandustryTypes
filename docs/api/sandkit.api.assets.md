@@ -10,7 +10,7 @@ Main thread only.
 <p class="smt-member-path"><code>sandkit.api.assets.AssetProviderV1</code></p>
 
 ```ts
-AssetProviderV1 = object
+AssetProviderV1 = object;
 ```
 
 Defined in: [sandkit/api/assets.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L7)
@@ -22,7 +22,7 @@ Describes a mod or pack that supplies assets for a kind.
 ##### id
 
 ```ts
-id: ` ${string}:${string}:${string} `
+id: ` ${string}:${string}:${string} `;
 ```
 
 Defined in: [sandkit/api/assets.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L8)
@@ -30,7 +30,7 @@ Defined in: [sandkit/api/assets.d.ts:8](https://github.com/sandustry-modding/San
 ##### kind
 
 ```ts
-kind: string
+kind: string;
 ```
 
 Defined in: [sandkit/api/assets.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L9)
@@ -54,7 +54,7 @@ Defined in: [sandkit/api/assets.d.ts:11](https://github.com/sandustry-modding/Sa
 ##### modName
 
 ```ts
-modName: string
+modName: string;
 ```
 
 Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L12)
@@ -85,7 +85,7 @@ Path relative to the calling mod folder.
 
 `string`
 
-***
+---
 
 ### getSelectedProvider() :id=getselectedprovider
 
@@ -111,7 +111,7 @@ Asset kind identifier.
 
 [`AssetProviderV1`](#assetproviderv1) \| `null`
 
-***
+---
 
 ### selectProvider() :id=selectprovider
 

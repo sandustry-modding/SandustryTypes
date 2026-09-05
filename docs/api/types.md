@@ -8,18 +8,18 @@ Folder layout mirrors runtime shape so you can jump from code to the matching `.
 
 ## Runtime map
 
-| Path | Runtime object |
-| --- | --- |
-| `src/sandkit/api/` | `sandkit.api` (main thread) |
-| `src/sandkit/engine/api/` | `sandkit.engine.api` |
-| `src/sandkit/engine/state.d.ts` | `sandkit.engine.state` / `sandkit.state` |
-| `src/sandkit/enums/` | `sandkit.enums` |
-| `src/sandkit/react.d.ts` | `sandkit.react` |
-| `src/sandkit/index.d.ts` | Composed `Sandkit` root type |
-| `src/global.d.ts` | Ambient `sandkit` free variable and type aliases |
-| `src/worker/` | Worker-thread `sandkit.api` (see `WorkerSandkitApi`) |
-| `src/shared/` | Internal base shapes reused by main and worker declarations |
-| `src/configs/` | `modinfo.json` / `patches.json` TypeScript types (not a runtime object) |
+| Path                            | Runtime object                                                          |
+| ------------------------------- | ----------------------------------------------------------------------- |
+| `src/sandkit/api/`              | `sandkit.api` (main thread)                                             |
+| `src/sandkit/engine/api/`       | `sandkit.engine.api`                                                    |
+| `src/sandkit/engine/state.d.ts` | `sandkit.engine.state` / `sandkit.state`                                |
+| `src/sandkit/enums/`            | `sandkit.enums`                                                         |
+| `src/sandkit/react.d.ts`        | `sandkit.react`                                                         |
+| `src/sandkit/index.d.ts`        | Composed `Sandkit` root type                                            |
+| `src/global.d.ts`               | Ambient `sandkit` free variable and type aliases                        |
+| `src/worker/`                   | Worker-thread `sandkit.api` (see `WorkerSandkitApi`)                    |
+| `src/shared/`                   | Internal base shapes reused by main and worker declarations             |
+| `src/configs/`                  | `modinfo.json` / `patches.json` TypeScript types (not a runtime object) |
 
 ## Runtime shape vs `export namespace`
 

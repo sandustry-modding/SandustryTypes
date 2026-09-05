@@ -29,7 +29,7 @@ Packed cell identifier.
 
 `number`
 
-***
+---
 
 ### getValueByType() :id=getvaluebytype
 
@@ -55,7 +55,7 @@ Numeric element type id.
 
 `number`
 
-***
+---
 
 ### isCellIdCollectable() :id=iscellidcollectable
 
@@ -81,7 +81,7 @@ Packed cell identifier.
 
 `boolean`
 
-***
+---
 
 ### isCellIdCollectableForSprite() :id=iscellidcollectableforsprite
 
@@ -107,7 +107,7 @@ Packed cell identifier.
 
 `boolean`
 
-***
+---
 
 ### notifyPickupAtCell() :id=notifypickupatcell
 

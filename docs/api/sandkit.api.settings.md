@@ -7,21 +7,21 @@
 <p class="smt-member-path"><code>sandkit.api.settings.FieldId</code></p>
 
 ```ts
-FieldId = LooseString<never>
+FieldId = LooseString<never>;
 ```
 
 Defined in: [sandkit/api/settings.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L32)
 
 Settings field id. Any string is allowed.
 
-***
+---
 
 ### ConfigValueV1 :id=configvaluev1
 
 <p class="smt-member-path"><code>sandkit.api.settings.ConfigValueV1</code></p>
 
 ```ts
-ConfigValueV1 = string | number | boolean | null
+ConfigValueV1 = string | number | boolean | null;
 ```
 
 Defined in: [sandkit/api/settings.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L35)
@@ -54,7 +54,7 @@ Settings field identifier.
 
 [`ConfigValueV1`](#configvaluev1) \| `undefined`
 
-***
+---
 
 ### getAll() :id=getall
 
@@ -72,7 +72,7 @@ Return all settings as a read-only map.
 
 `Readonly`\<`Record`\<`string`, [`ConfigValueV1`](#configvaluev1)\>\>
 
-***
+---
 
 ### onChange() :id=onchange
 

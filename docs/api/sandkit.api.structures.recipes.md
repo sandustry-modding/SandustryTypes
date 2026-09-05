@@ -41,9 +41,7 @@ Grower recipe definition.
 ```ts
 api.structures.recipes.register("kineticPress", {
   input: "sand",
-  outputs: [
-    { elementType: "compressedSand", chance: 1 },
-  ],
+  outputs: [{ elementType: "compressedSand", chance: 1 }],
   minimumDownwardVelocityCellsPerSecond: 20,
 });
 ```

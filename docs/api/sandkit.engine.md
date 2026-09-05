@@ -72,7 +72,7 @@ At runtime `sandkit.engine.state === sandkit.state`.
 ##### api
 
 ```ts
-api: SandkitEngineApi
+api: SandkitEngineApi;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L133)
@@ -80,12 +80,12 @@ Defined in: [sandkit/engine/index.d.ts:133](https://github.com/sandustry-modding
 ##### state
 
 ```ts
-state: SandkitState
+state: SandkitState;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L134)
 
-***
+---
 
 ### RetroConsoleDisplay :id=retroconsoledisplay
 
@@ -102,7 +102,7 @@ Low-resolution display buffer for a Retro Console game.
 ##### width
 
 ```ts
-width: number
+width: number;
 ```
 
 Defined in: [sandkit/engine/retro-console.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L15)
@@ -110,7 +110,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:15](https://github.com/sandustry-
 ##### height
 
 ```ts
-height: number
+height: number;
 ```
 
 Defined in: [sandkit/engine/retro-console.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L16)
@@ -165,7 +165,7 @@ Set one pixel in the framebuffer.
 
 `void`
 
-***
+---
 
 ### RetroConsoleInput :id=retroconsoleinput
 
@@ -182,7 +182,7 @@ Directional input from the Retro Console controls.
 ##### x
 
 ```ts
-x: number
+x: number;
 ```
 
 Defined in: [sandkit/engine/retro-console.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L25)
@@ -190,12 +190,12 @@ Defined in: [sandkit/engine/retro-console.d.ts:25](https://github.com/sandustry-
 ##### y
 
 ```ts
-y: number
+y: number;
 ```
 
 Defined in: [sandkit/engine/retro-console.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L26)
 
-***
+---
 
 ### RetroConsoleGameOptions :id=retroconsolegameoptions
 
@@ -212,7 +212,7 @@ Display size options for a registered Retro Console game.
 ##### width
 
 ```ts
-width: number
+width: number;
 ```
 
 Defined in: [sandkit/engine/retro-console.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L31)
@@ -220,12 +220,12 @@ Defined in: [sandkit/engine/retro-console.d.ts:31](https://github.com/sandustry-
 ##### height
 
 ```ts
-height: number
+height: number;
 ```
 
 Defined in: [sandkit/engine/retro-console.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L32)
 
-***
+---
 
 ### RetroConsoleGame :id=retroconsolegame
 
@@ -248,7 +248,7 @@ Retro Console game definition passed to [RetroConsoleApi.registerGame](#register
 ##### id
 
 ```ts
-id: string
+id: string;
 ```
 
 Defined in: [sandkit/engine/retro-console.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L37)
@@ -256,7 +256,7 @@ Defined in: [sandkit/engine/retro-console.d.ts:37](https://github.com/sandustry-
 ##### name
 
 ```ts
-name: string
+name: string;
 ```
 
 Defined in: [sandkit/engine/retro-console.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L38)
@@ -343,7 +343,7 @@ Handle player input when provided.
 
 `TState`
 
-***
+---
 
 ### RetroConsoleApi :id=retroconsoleapi
 
@@ -390,7 +390,7 @@ Register a Retro Console mini-game.
 <p class="smt-member-path"><code>sandkit.engine.SandkitEngineApi</code></p>
 
 ```ts
-SandkitEngineApi = object
+SandkitEngineApi = object;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L32)
@@ -407,7 +407,7 @@ Engine-only namespaces are declared under `api/`.
 ##### action
 
 ```ts
-action: EngineOverlapNs
+action: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L34)
@@ -415,7 +415,7 @@ Defined in: [sandkit/engine/index.d.ts:34](https://github.com/sandustry-modding/
 ##### authorization
 
 ```ts
-authorization: EngineOverlapNs
+authorization: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L35)
@@ -423,7 +423,7 @@ Defined in: [sandkit/engine/index.d.ts:35](https://github.com/sandustry-modding/
 ##### building
 
 ```ts
-building: EngineOverlapNs
+building: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L36)
@@ -431,7 +431,7 @@ Defined in: [sandkit/engine/index.d.ts:36](https://github.com/sandustry-modding/
 ##### camera
 
 ```ts
-camera: EngineOverlapNs
+camera: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L37)
@@ -439,7 +439,7 @@ Defined in: [sandkit/engine/index.d.ts:37](https://github.com/sandustry-modding/
 ##### collector
 
 ```ts
-collector: EngineOverlapNs
+collector: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L38)
@@ -447,7 +447,7 @@ Defined in: [sandkit/engine/index.d.ts:38](https://github.com/sandustry-modding/
 ##### constants
 
 ```ts
-constants: EngineOverlapNs
+constants: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L39)
@@ -455,7 +455,7 @@ Defined in: [sandkit/engine/index.d.ts:39](https://github.com/sandustry-modding/
 ##### cooldown
 
 ```ts
-cooldown: EngineOverlapNs
+cooldown: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L40)
@@ -463,7 +463,7 @@ Defined in: [sandkit/engine/index.d.ts:40](https://github.com/sandustry-modding/
 ##### discoveries
 
 ```ts
-discoveries: EngineOverlapNs
+discoveries: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L41)
@@ -471,7 +471,7 @@ Defined in: [sandkit/engine/index.d.ts:41](https://github.com/sandustry-modding/
 ##### effects
 
 ```ts
-effects: EngineOverlapNs
+effects: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L42)
@@ -479,7 +479,7 @@ Defined in: [sandkit/engine/index.d.ts:42](https://github.com/sandustry-modding/
 ##### elements
 
 ```ts
-elements: EngineOverlapNs
+elements: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L43)
@@ -487,7 +487,7 @@ Defined in: [sandkit/engine/index.d.ts:43](https://github.com/sandustry-modding/
 ##### energy
 
 ```ts
-energy: EngineOverlapNs
+energy: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L44)
@@ -495,7 +495,7 @@ Defined in: [sandkit/engine/index.d.ts:44](https://github.com/sandustry-modding/
 ##### events
 
 ```ts
-events: EngineOverlapNs
+events: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L45)
@@ -503,7 +503,7 @@ Defined in: [sandkit/engine/index.d.ts:45](https://github.com/sandustry-modding/
 ##### excavation
 
 ```ts
-excavation: EngineOverlapNs
+excavation: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L46)
@@ -511,7 +511,7 @@ Defined in: [sandkit/engine/index.d.ts:46](https://github.com/sandustry-modding/
 ##### fire
 
 ```ts
-fire: EngineOverlapNs
+fire: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L47)
@@ -519,7 +519,7 @@ Defined in: [sandkit/engine/index.d.ts:47](https://github.com/sandustry-modding/
 ##### grid
 
 ```ts
-grid: EngineOverlapNs
+grid: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L48)
@@ -527,7 +527,7 @@ Defined in: [sandkit/engine/index.d.ts:48](https://github.com/sandustry-modding/
 ##### hooks
 
 ```ts
-hooks: EngineOverlapNs
+hooks: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L49)
@@ -535,7 +535,7 @@ Defined in: [sandkit/engine/index.d.ts:49](https://github.com/sandustry-modding/
 ##### i18n
 
 ```ts
-i18n: EngineOverlapNs
+i18n: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L50)
@@ -543,7 +543,7 @@ Defined in: [sandkit/engine/index.d.ts:50](https://github.com/sandustry-modding/
 ##### input
 
 ```ts
-input: EngineOverlapNs
+input: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L51)
@@ -551,7 +551,7 @@ Defined in: [sandkit/engine/index.d.ts:51](https://github.com/sandustry-modding/
 ##### items
 
 ```ts
-items: EngineOverlapNs
+items: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L52)
@@ -559,7 +559,7 @@ Defined in: [sandkit/engine/index.d.ts:52](https://github.com/sandustry-modding/
 ##### lights
 
 ```ts
-lights: EngineOverlapNs
+lights: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L53)
@@ -567,7 +567,7 @@ Defined in: [sandkit/engine/index.d.ts:53](https://github.com/sandustry-modding/
 ##### maps
 
 ```ts
-maps: EngineOverlapNs
+maps: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L54)
@@ -575,7 +575,7 @@ Defined in: [sandkit/engine/index.d.ts:54](https://github.com/sandustry-modding/
 ##### patterns
 
 ```ts
-patterns: EngineOverlapNs
+patterns: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L55)
@@ -583,7 +583,7 @@ Defined in: [sandkit/engine/index.d.ts:55](https://github.com/sandustry-modding/
 ##### player
 
 ```ts
-player: EngineOverlapNs
+player: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L56)
@@ -591,7 +591,7 @@ Defined in: [sandkit/engine/index.d.ts:56](https://github.com/sandustry-modding/
 ##### processing
 
 ```ts
-processing: EngineOverlapNs
+processing: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L57)
@@ -599,7 +599,7 @@ Defined in: [sandkit/engine/index.d.ts:57](https://github.com/sandustry-modding/
 ##### progression
 
 ```ts
-progression: EngineOverlapNs
+progression: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L58)
@@ -607,7 +607,7 @@ Defined in: [sandkit/engine/index.d.ts:58](https://github.com/sandustry-modding/
 ##### projectiles
 
 ```ts
-projectiles: EngineOverlapNs
+projectiles: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L59)
@@ -615,7 +615,7 @@ Defined in: [sandkit/engine/index.d.ts:59](https://github.com/sandustry-modding/
 ##### random
 
 ```ts
-random: EngineOverlapNs
+random: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L60)
@@ -623,7 +623,7 @@ Defined in: [sandkit/engine/index.d.ts:60](https://github.com/sandustry-modding/
 ##### raycast
 
 ```ts
-raycast: EngineOverlapNs
+raycast: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L61)
@@ -631,7 +631,7 @@ Defined in: [sandkit/engine/index.d.ts:61](https://github.com/sandustry-modding/
 ##### reactions
 
 ```ts
-reactions: EngineOverlapNs
+reactions: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L62)
@@ -639,7 +639,7 @@ Defined in: [sandkit/engine/index.d.ts:62](https://github.com/sandustry-modding/
 ##### rendering
 
 ```ts
-rendering: EngineOverlapNs
+rendering: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L63)
@@ -647,7 +647,7 @@ Defined in: [sandkit/engine/index.d.ts:63](https://github.com/sandustry-modding/
 ##### resources
 
 ```ts
-resources: EngineOverlapNs
+resources: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L64)
@@ -655,7 +655,7 @@ Defined in: [sandkit/engine/index.d.ts:64](https://github.com/sandustry-modding/
 ##### scene
 
 ```ts
-scene: EngineOverlapNs
+scene: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L65)
@@ -663,7 +663,7 @@ Defined in: [sandkit/engine/index.d.ts:65](https://github.com/sandustry-modding/
 ##### schedule
 
 ```ts
-schedule: EngineOverlapNs
+schedule: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L66)
@@ -671,7 +671,7 @@ Defined in: [sandkit/engine/index.d.ts:66](https://github.com/sandustry-modding/
 ##### signals
 
 ```ts
-signals: EngineOverlapNs
+signals: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L67)
@@ -679,7 +679,7 @@ Defined in: [sandkit/engine/index.d.ts:67](https://github.com/sandustry-modding/
 ##### sound
 
 ```ts
-sound: EngineOverlapNs
+sound: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L68)
@@ -687,7 +687,7 @@ Defined in: [sandkit/engine/index.d.ts:68](https://github.com/sandustry-modding/
 ##### sprites
 
 ```ts
-sprites: EngineOverlapNs
+sprites: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L69)
@@ -695,7 +695,7 @@ Defined in: [sandkit/engine/index.d.ts:69](https://github.com/sandustry-modding/
 ##### storage
 
 ```ts
-storage: EngineOverlapNs
+storage: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L70)
@@ -703,7 +703,7 @@ Defined in: [sandkit/engine/index.d.ts:70](https://github.com/sandustry-modding/
 ##### structures
 
 ```ts
-structures: EngineOverlapNs
+structures: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L71)
@@ -711,7 +711,7 @@ Defined in: [sandkit/engine/index.d.ts:71](https://github.com/sandustry-modding/
 ##### tech
 
 ```ts
-tech: EngineOverlapNs
+tech: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L72)
@@ -719,7 +719,7 @@ Defined in: [sandkit/engine/index.d.ts:72](https://github.com/sandustry-modding/
 ##### terrains
 
 ```ts
-terrains: EngineOverlapNs
+terrains: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L73)
@@ -727,7 +727,7 @@ Defined in: [sandkit/engine/index.d.ts:73](https://github.com/sandustry-modding/
 ##### tools
 
 ```ts
-tools: EngineOverlapNs
+tools: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L74)
@@ -735,7 +735,7 @@ Defined in: [sandkit/engine/index.d.ts:74](https://github.com/sandustry-modding/
 ##### triggers
 
 ```ts
-triggers: EngineOverlapNs
+triggers: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L75)
@@ -743,7 +743,7 @@ Defined in: [sandkit/engine/index.d.ts:75](https://github.com/sandustry-modding/
 ##### ui
 
 ```ts
-ui: EngineOverlapNs
+ui: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L76)
@@ -751,7 +751,7 @@ Defined in: [sandkit/engine/index.d.ts:76](https://github.com/sandustry-modding/
 ##### upgrades
 
 ```ts
-upgrades: EngineOverlapNs
+upgrades: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L77)
@@ -759,7 +759,7 @@ Defined in: [sandkit/engine/index.d.ts:77](https://github.com/sandustry-modding/
 ##### utils
 
 ```ts
-utils: EngineOverlapNs
+utils: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L78)
@@ -767,7 +767,7 @@ Defined in: [sandkit/engine/index.d.ts:78](https://github.com/sandustry-modding/
 ##### workers
 
 ```ts
-workers: EngineOverlapNs
+workers: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L79)
@@ -775,7 +775,7 @@ Defined in: [sandkit/engine/index.d.ts:79](https://github.com/sandustry-modding/
 ##### world
 
 ```ts
-world: EngineOverlapNs
+world: EngineOverlapNs;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L80)
@@ -783,7 +783,7 @@ Defined in: [sandkit/engine/index.d.ts:80](https://github.com/sandustry-modding/
 ##### augments
 
 ```ts
-augments: augments
+augments: augments;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L83)
@@ -791,7 +791,7 @@ Defined in: [sandkit/engine/index.d.ts:83](https://github.com/sandustry-modding/
 ##### auralite
 
 ```ts
-auralite: auralite
+auralite: auralite;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L84)
@@ -799,7 +799,7 @@ Defined in: [sandkit/engine/index.d.ts:84](https://github.com/sandustry-modding/
 ##### blueprints
 
 ```ts
-blueprints: blueprints
+blueprints: blueprints;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L85)
@@ -807,7 +807,7 @@ Defined in: [sandkit/engine/index.d.ts:85](https://github.com/sandustry-modding/
 ##### clipboard
 
 ```ts
-clipboard: clipboard
+clipboard: clipboard;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L86)
@@ -815,7 +815,7 @@ Defined in: [sandkit/engine/index.d.ts:86](https://github.com/sandustry-modding/
 ##### colorPicker
 
 ```ts
-colorPicker: colorPicker
+colorPicker: colorPicker;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L87)
@@ -823,7 +823,7 @@ Defined in: [sandkit/engine/index.d.ts:87](https://github.com/sandustry-modding/
 ##### coloringTool
 
 ```ts
-coloringTool: coloringTool
+coloringTool: coloringTool;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L88)
@@ -831,7 +831,7 @@ Defined in: [sandkit/engine/index.d.ts:88](https://github.com/sandustry-modding/
 ##### conveyors
 
 ```ts
-conveyors: conveyors
+conveyors: conveyors;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L89)
@@ -839,7 +839,7 @@ Defined in: [sandkit/engine/index.d.ts:89](https://github.com/sandustry-modding/
 ##### debug
 
 ```ts
-debug: debug
+debug: debug;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L90)
@@ -847,7 +847,7 @@ Defined in: [sandkit/engine/index.d.ts:90](https://github.com/sandustry-modding/
 ##### drones
 
 ```ts
-drones: drones
+drones: drones;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L91)
@@ -855,7 +855,7 @@ Defined in: [sandkit/engine/index.d.ts:91](https://github.com/sandustry-modding/
 ##### entities
 
 ```ts
-entities: entities
+entities: entities;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L92)
@@ -863,7 +863,7 @@ Defined in: [sandkit/engine/index.d.ts:92](https://github.com/sandustry-modding/
 ##### extensions
 
 ```ts
-extensions: extensions
+extensions: extensions;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L93)
@@ -871,7 +871,7 @@ Defined in: [sandkit/engine/index.d.ts:93](https://github.com/sandustry-modding/
 ##### factory
 
 ```ts
-factory: factory
+factory: factory;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L94)
@@ -879,7 +879,7 @@ Defined in: [sandkit/engine/index.d.ts:94](https://github.com/sandustry-modding/
 ##### foliage
 
 ```ts
-foliage: foliage
+foliage: foliage;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L95)
@@ -887,7 +887,7 @@ Defined in: [sandkit/engine/index.d.ts:95](https://github.com/sandustry-modding/
 ##### foundationColorPicker
 
 ```ts
-foundationColorPicker: foundationColorPicker
+foundationColorPicker: foundationColorPicker;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L96)
@@ -895,7 +895,7 @@ Defined in: [sandkit/engine/index.d.ts:96](https://github.com/sandustry-modding/
 ##### game
 
 ```ts
-game: game
+game: game;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L97)
@@ -903,7 +903,7 @@ Defined in: [sandkit/engine/index.d.ts:97](https://github.com/sandustry-modding/
 ##### heatTransfer
 
 ```ts
-heatTransfer: heatTransfer
+heatTransfer: heatTransfer;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L98)
@@ -911,7 +911,7 @@ Defined in: [sandkit/engine/index.d.ts:98](https://github.com/sandustry-modding/
 ##### launchers
 
 ```ts
-launchers: launchers
+launchers: launchers;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L99)
@@ -919,7 +919,7 @@ Defined in: [sandkit/engine/index.d.ts:99](https://github.com/sandustry-modding/
 ##### lightColorPicker
 
 ```ts
-lightColorPicker: lightColorPicker
+lightColorPicker: lightColorPicker;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L100)
@@ -927,7 +927,7 @@ Defined in: [sandkit/engine/index.d.ts:100](https://github.com/sandustry-modding
 ##### matters
 
 ```ts
-matters: matters
+matters: matters;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L101)
@@ -935,7 +935,7 @@ Defined in: [sandkit/engine/index.d.ts:101](https://github.com/sandustry-modding
 ##### misc
 
 ```ts
-misc: misc
+misc: misc;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L102)
@@ -943,7 +943,7 @@ Defined in: [sandkit/engine/index.d.ts:102](https://github.com/sandustry-modding
 ##### portals
 
 ```ts
-portals: portals
+portals: portals;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L103)
@@ -951,7 +951,7 @@ Defined in: [sandkit/engine/index.d.ts:103](https://github.com/sandustry-modding
 ##### prefabData
 
 ```ts
-prefabData: prefabData
+prefabData: prefabData;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L104)
@@ -959,7 +959,7 @@ Defined in: [sandkit/engine/index.d.ts:104](https://github.com/sandustry-modding
 ##### prefabDecor
 
 ```ts
-prefabDecor: prefabDecor
+prefabDecor: prefabDecor;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L105)
@@ -967,7 +967,7 @@ Defined in: [sandkit/engine/index.d.ts:105](https://github.com/sandustry-modding
 ##### prefabulator
 
 ```ts
-prefabulator: prefabulator
+prefabulator: prefabulator;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L106)
@@ -975,7 +975,7 @@ Defined in: [sandkit/engine/index.d.ts:106](https://github.com/sandustry-modding
 ##### prismaline
 
 ```ts
-prismaline: prismaline
+prismaline: prismaline;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L107)
@@ -983,7 +983,7 @@ Defined in: [sandkit/engine/index.d.ts:107](https://github.com/sandustry-modding
 ##### prismite
 
 ```ts
-prismite: prismite
+prismite: prismite;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L108)
@@ -991,7 +991,7 @@ Defined in: [sandkit/engine/index.d.ts:108](https://github.com/sandustry-modding
 ##### queue
 
 ```ts
-queue: queue
+queue: queue;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L109)
@@ -999,7 +999,7 @@ Defined in: [sandkit/engine/index.d.ts:109](https://github.com/sandustry-modding
 ##### shadows
 
 ```ts
-shadows: shadows
+shadows: shadows;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L110)
@@ -1007,7 +1007,7 @@ Defined in: [sandkit/engine/index.d.ts:110](https://github.com/sandustry-modding
 ##### strataform
 
 ```ts
-strataform: strataform
+strataform: strataform;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L111)
@@ -1015,7 +1015,7 @@ Defined in: [sandkit/engine/index.d.ts:111](https://github.com/sandustry-modding
 ##### swarmConsole
 
 ```ts
-swarmConsole: swarmConsole
+swarmConsole: swarmConsole;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L112)
@@ -1023,7 +1023,7 @@ Defined in: [sandkit/engine/index.d.ts:112](https://github.com/sandustry-modding
 ##### sweeperDrone
 
 ```ts
-sweeperDrone: sweeperDrone
+sweeperDrone: sweeperDrone;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L113)
@@ -1031,7 +1031,7 @@ Defined in: [sandkit/engine/index.d.ts:113](https://github.com/sandustry-modding
 ##### teleportZones
 
 ```ts
-teleportZones: teleportZones
+teleportZones: teleportZones;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L114)
@@ -1039,7 +1039,7 @@ Defined in: [sandkit/engine/index.d.ts:114](https://github.com/sandustry-modding
 ##### tutorialBuild
 
 ```ts
-tutorialBuild: tutorialBuild
+tutorialBuild: tutorialBuild;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L115)
@@ -1047,7 +1047,7 @@ Defined in: [sandkit/engine/index.d.ts:115](https://github.com/sandustry-modding
 ##### usageTracker
 
 ```ts
-usageTracker: usageTracker
+usageTracker: usageTracker;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L116)
@@ -1055,7 +1055,7 @@ Defined in: [sandkit/engine/index.d.ts:116](https://github.com/sandustry-modding
 ##### wall
 
 ```ts
-wall: wall
+wall: wall;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L117)
@@ -1063,7 +1063,7 @@ Defined in: [sandkit/engine/index.d.ts:117](https://github.com/sandustry-modding
 ##### workerLocal
 
 ```ts
-workerLocal: workerLocal
+workerLocal: workerLocal;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L118)
@@ -1071,7 +1071,7 @@ Defined in: [sandkit/engine/index.d.ts:118](https://github.com/sandustry-modding
 ##### config
 
 ```ts
-config: EngineFn
+config: EngineFn;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L119)
@@ -1079,7 +1079,7 @@ Defined in: [sandkit/engine/index.d.ts:119](https://github.com/sandustry-modding
 ##### extend
 
 ```ts
-extend: EngineFn
+extend: EngineFn;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L120)
@@ -1087,19 +1087,19 @@ Defined in: [sandkit/engine/index.d.ts:120](https://github.com/sandustry-modding
 ##### retroConsole
 
 ```ts
-retroConsole: RetroConsoleApi
+retroConsole: RetroConsoleApi;
 ```
 
 Defined in: [sandkit/engine/index.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L121)
 
-***
+---
 
 ### RetroConsolePixel :id=retroconsolepixel
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsolePixel</code></p>
 
 ```ts
-RetroConsolePixel = boolean | number
+RetroConsolePixel = boolean | number;
 ```
 
 Defined in: [sandkit/engine/retro-console.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L11)
@@ -1108,14 +1108,14 @@ Defined in: [sandkit/engine/retro-console.d.ts:11](https://github.com/sandustry-
 
 Pixel value for the Retro Console framebuffer.
 
-***
+---
 
 ### SandkitState :id=sandkitstate
 
 <p class="smt-member-path"><code>sandkit.engine.SandkitState</code></p>
 
 ```ts
-SandkitState = object
+SandkitState = object;
 ```
 
 Defined in: [sandkit/engine/state.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L12)
@@ -1129,7 +1129,7 @@ Live game state exposed on `sandkit.engine.state`.
 ##### environment
 
 ```ts
-environment: object
+environment: object;
 ```
 
 Defined in: [sandkit/engine/state.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L13)
@@ -1141,19 +1141,19 @@ Defined in: [sandkit/engine/state.d.ts:13](https://github.com/sandustry-modding/
 ###### context
 
 ```ts
-context: number
+context: number;
 ```
 
 ###### multithreading
 
 ```ts
-multithreading: unknown
+multithreading: unknown;
 ```
 
 ##### sandkit
 
 ```ts
-sandkit: object
+sandkit: object;
 ```
 
 Defined in: [sandkit/engine/state.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L18)
@@ -1165,49 +1165,49 @@ Defined in: [sandkit/engine/state.d.ts:18](https://github.com/sandustry-modding/
 ###### events
 
 ```ts
-events: unknown
+events: unknown;
 ```
 
 ###### gameReady
 
 ```ts
-gameReady: boolean
+gameReady: boolean;
 ```
 
 ###### graphics
 
 ```ts
-graphics: unknown
+graphics: unknown;
 ```
 
 ###### hooks
 
 ```ts
-hooks: unknown
+hooks: unknown;
 ```
 
 ###### keyBindings
 
 ```ts
-keyBindings: unknown
+keyBindings: unknown;
 ```
 
 ###### mods
 
 ```ts
-mods: unknown
+mods: unknown;
 ```
 
 ###### registeredLauncherTypes
 
 ```ts
-registeredLauncherTypes: unknown
+registeredLauncherTypes: unknown;
 ```
 
 ##### session
 
 ```ts
-session: unknown
+session: unknown;
 ```
 
 Defined in: [sandkit/engine/state.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L28)
@@ -1215,7 +1215,7 @@ Defined in: [sandkit/engine/state.d.ts:28](https://github.com/sandustry-modding/
 ##### shared
 
 ```ts
-shared: unknown
+shared: unknown;
 ```
 
 Defined in: [sandkit/engine/state.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L29)
@@ -1223,7 +1223,7 @@ Defined in: [sandkit/engine/state.d.ts:29](https://github.com/sandustry-modding/
 ##### store
 
 ```ts
-store: unknown
+store: unknown;
 ```
 
 Defined in: [sandkit/engine/state.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/state.d.ts#L30)

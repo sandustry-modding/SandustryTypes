@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### addTemperature() :id=addtemperature
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### computeDiffusedTemperatures() :id=computediffusedtemperatures
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### computeEqualizedTemperature() :id=computeequalizedtemperature
 
@@ -112,7 +112,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### consumeTemperatureNear() :id=consumetemperaturenear
 
@@ -138,7 +138,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### ensureTemperature() :id=ensuretemperature
 
@@ -164,7 +164,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### equalizeConnected() :id=equalizeconnected
 

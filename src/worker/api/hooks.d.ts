@@ -182,10 +182,12 @@ export namespace hooks {
   export type ModifyHookMap = Record<string, unknown>;
 
   /** Intercept hook args for a given hook id. */
-  export type InterceptHookArgs<K extends InterceptHookId> =
-    K extends keyof InterceptHookMap ? InterceptHookMap[K] : unknown;
+  export type InterceptHookArgs<K extends InterceptHookId> = K extends keyof InterceptHookMap
+    ? InterceptHookMap[K]
+    : unknown;
 
   /** Modify hook args for a given hook id. */
-  export type ModifyHookArgs<K extends ModifyHookId> =
-    K extends keyof ModifyHookMap ? ModifyHookMap[K] : unknown;
+  export type ModifyHookArgs<K extends ModifyHookId> = K extends keyof ModifyHookMap
+    ? ModifyHookMap[K]
+    : unknown;
 }

@@ -24,7 +24,7 @@ Collect fluxite at the given cell.
 
 `void`
 
-***
+---
 
 ### updateEnergy() :id=updateenergy
 

@@ -4,7 +4,7 @@
 
 Shared `sandkit.api.player` base — player position and collision queries.
 
- Base namespace reused by main and worker declarations.
+Base namespace reused by main and worker declarations.
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -30,7 +30,7 @@ World position as `{ x, y }` in pixels.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~getWorldPosition()~~
 
@@ -52,7 +52,7 @@ Use [getPositionAtWorld](#getpositionatworld) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isCollidingWithCell() :id=iscollidingwithcell
 
@@ -82,7 +82,7 @@ True when the player overlaps the cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isWithinRadiusOfCell() :id=iswithinradiusofcell
 

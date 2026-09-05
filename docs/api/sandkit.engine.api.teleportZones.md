@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getAll() :id=getall
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getAtCell() :id=getatcell
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getById() :id=getbyid
 
@@ -112,7 +112,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### remove() :id=remove
 
@@ -138,7 +138,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### spawnDefaultParticles() :id=spawndefaultparticles
 
@@ -164,7 +164,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### teleportPlayerTo() :id=teleportplayerto
 

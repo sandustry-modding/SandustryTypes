@@ -41,7 +41,7 @@ World y position in pixels.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~setWorldPosition()~~
 
@@ -73,7 +73,7 @@ Use [setPositionAtWorld](#setpositionatworld) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setVelocity() :id=setvelocity
 
@@ -109,7 +109,7 @@ Vertical velocity in pixels per second.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setMovementSpeedMultiplier() :id=setmovementspeedmultiplier
 
@@ -140,7 +140,7 @@ Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly 
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setMovementMode() :id=setmovementmode
 
@@ -172,7 +172,7 @@ True when the mode changes.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isOnGround() :id=isonground
 
@@ -198,7 +198,7 @@ True when the player touches solid ground.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### teleportToGround() :id=teleporttoground
 
@@ -220,7 +220,7 @@ Move the player down until ground is found.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isPositionClearAtWorld() :id=ispositionclearatworld
 
@@ -258,7 +258,7 @@ True when the player hitbox fits at the position.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~isWorldPositionClear()~~
 
@@ -298,7 +298,7 @@ Use [isPositionClearAtWorld](#ispositionclearatworld) instead.
 
 Re-exports [getPositionAtWorld](api/sandkit.api.player.worker.md#getpositionatworld)
 
-***
+---
 
 ### isCollidingWithCell :id=iscollidingwithcell
 
@@ -306,7 +306,7 @@ Re-exports [getPositionAtWorld](api/sandkit.api.player.worker.md#getpositionatwo
 
 Re-exports [isCollidingWithCell](api/sandkit.api.player.worker.md#iscollidingwithcell)
 
-***
+---
 
 ### isWithinRadiusOfCell :id=iswithinradiusofcell
 
@@ -314,7 +314,7 @@ Re-exports [isCollidingWithCell](api/sandkit.api.player.worker.md#iscollidingwit
 
 Re-exports [isWithinRadiusOfCell](api/sandkit.api.player.worker.md#iswithinradiusofcell)
 
-***
+---
 
 ### getWorldPosition :id=getworldposition
 

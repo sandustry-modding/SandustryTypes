@@ -71,14 +71,14 @@ Object with the assigned `cellType`.
 ##### cellType
 
 ```ts
-cellType: TerrainType
+cellType: TerrainType;
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### updateDefinition() :id=updatedefinition
 
@@ -114,7 +114,7 @@ Fields to merge onto the definition.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### createAtCell() :id=createatcell
 
@@ -142,7 +142,7 @@ Create terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~createAtCellWhenIdle()~~
 
@@ -170,7 +170,7 @@ Use [createAtCell](#createatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### replaceAtCell() :id=replaceatcell
 
@@ -198,7 +198,7 @@ Replace terrain at a cell. Main-entry writes are deferred; reads see the old gri
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~replaceAtCellWhenIdle()~~
 
@@ -226,7 +226,7 @@ Use [replaceAtCell](#replaceatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### removeAtCell() :id=removeatcell
 
@@ -254,7 +254,7 @@ Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~removeAtCellWhenIdle()~~
 
@@ -282,7 +282,7 @@ Use [removeAtCell](#removeatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### setHitPointsAtCell() :id=sethitpointsatcell
 
@@ -310,7 +310,7 @@ Set terrain hit points at a cell. Main-entry writes are deferred; reads see the 
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~setHpAtCell()~~
 
@@ -338,7 +338,7 @@ Use [setHitPointsAtCell](#sethitpointsatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~setHpAtCellWhenIdle()~~
 
@@ -374,7 +374,7 @@ Use [setHitPointsAtCell](#sethitpointsatcell) instead.
 
 Re-exports [getIdByType](api/sandkit.api.terrains.worker.md#getidbytype)
 
-***
+---
 
 ### getTypeById :id=gettypebyid
 
@@ -382,7 +382,7 @@ Re-exports [getIdByType](api/sandkit.api.terrains.worker.md#getidbytype)
 
 Re-exports [getTypeById](api/sandkit.api.terrains.worker.md#gettypebyid)
 
-***
+---
 
 ### getTypeFromId :id=gettypefromid
 
@@ -390,7 +390,7 @@ Re-exports [getTypeById](api/sandkit.api.terrains.worker.md#gettypebyid)
 
 Re-exports [getTypeFromId](api/sandkit.api.terrains.worker.md#gettypefromid)
 
-***
+---
 
 ### getDefinitionByType :id=getdefinitionbytype
 
@@ -398,7 +398,7 @@ Re-exports [getTypeFromId](api/sandkit.api.terrains.worker.md#gettypefromid)
 
 Re-exports [getDefinitionByType](api/sandkit.api.terrains.worker.md#getdefinitionbytype)
 
-***
+---
 
 ### getTypeAtCell :id=gettypeatcell
 
@@ -406,7 +406,7 @@ Re-exports [getDefinitionByType](api/sandkit.api.terrains.worker.md#getdefinitio
 
 Re-exports [getTypeAtCell](api/sandkit.api.terrains.worker.md#gettypeatcell)
 
-***
+---
 
 ### getDataAtCell :id=getdataatcell
 
@@ -414,7 +414,7 @@ Re-exports [getTypeAtCell](api/sandkit.api.terrains.worker.md#gettypeatcell)
 
 Re-exports [getDataAtCell](api/sandkit.api.terrains.worker.md#getdataatcell)
 
-***
+---
 
 ### isAtCell :id=isatcell
 
@@ -422,7 +422,7 @@ Re-exports [getDataAtCell](api/sandkit.api.terrains.worker.md#getdataatcell)
 
 Re-exports [isAtCell](api/sandkit.api.terrains.worker.md#isatcell)
 
-***
+---
 
 ### isTypeAtCell :id=istypeatcell
 
@@ -430,7 +430,7 @@ Re-exports [isAtCell](api/sandkit.api.terrains.worker.md#isatcell)
 
 Re-exports [isTypeAtCell](api/sandkit.api.terrains.worker.md#istypeatcell)
 
-***
+---
 
 ### isCellIdTerrain :id=iscellidterrain
 
@@ -438,7 +438,7 @@ Re-exports [isTypeAtCell](api/sandkit.api.terrains.worker.md#istypeatcell)
 
 Re-exports [isCellIdTerrain](api/sandkit.api.terrains.worker.md#iscellidterrain)
 
-***
+---
 
 ### damageAtCell :id=damageatcell
 
@@ -446,7 +446,7 @@ Re-exports [isCellIdTerrain](api/sandkit.api.terrains.worker.md#iscellidterrain)
 
 Re-exports [damageAtCell](api/sandkit.api.terrains.worker.md#damageatcell)
 
-***
+---
 
 ### meltAtCell :id=meltatcell
 
@@ -454,7 +454,7 @@ Re-exports [damageAtCell](api/sandkit.api.terrains.worker.md#damageatcell)
 
 Re-exports [meltAtCell](api/sandkit.api.terrains.worker.md#meltatcell)
 
-***
+---
 
 ### TerrainMutationOptions :id=terrainmutationoptions
 
@@ -462,7 +462,7 @@ Re-exports [meltAtCell](api/sandkit.api.terrains.worker.md#meltatcell)
 
 Re-exports [TerrainMutationOptions](api/sandkit.api.terrains.worker.md#terrainmutationoptions)
 
-***
+---
 
 ### TerrainType :id=terraintype
 
@@ -470,7 +470,7 @@ Re-exports [TerrainMutationOptions](api/sandkit.api.terrains.worker.md#terrainmu
 
 Re-exports [TerrainType](api/sandkit.api.terrains.worker.md#terraintype)
 
-***
+---
 
 ### TerrainId :id=terrainid
 
@@ -478,7 +478,7 @@ Re-exports [TerrainType](api/sandkit.api.terrains.worker.md#terraintype)
 
 Re-exports [TerrainId](api/sandkit.api.terrains.worker.md#terrainid)
 
-***
+---
 
 ### TerrainRef :id=terrainref
 
@@ -486,7 +486,7 @@ Re-exports [TerrainId](api/sandkit.api.terrains.worker.md#terrainid)
 
 Re-exports [TerrainRef](api/sandkit.api.terrains.worker.md#terrainref)
 
-***
+---
 
 ### TerrainDataAtCell :id=terraindataatcell
 

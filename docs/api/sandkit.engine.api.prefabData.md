@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getAllMetadata() :id=getallmetadata
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getArtifactLocations() :id=getartifactlocations
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getAtCell() :id=getatcell
 
@@ -112,7 +112,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getMetadata() :id=getmetadata
 

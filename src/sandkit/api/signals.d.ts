@@ -42,13 +42,16 @@ export namespace signals {
      * });
      * ```
      */
-    export function register(structureTypeOrId: string | StructureType, apply: (structure: Structure, payload: SignalTargetPayloadV1) => void): void;
+    export function register(
+      structureTypeOrId: string | StructureType,
+      apply: (structure: Structure, payload: SignalTargetPayloadV1) => void,
+    ): void;
   }
 
   /** Structure type id or enum value. */
-  export type StructureType = unknown
+  export type StructureType = unknown;
   /** Structure instance in the world. */
-  export type Structure = unknown
+  export type Structure = unknown;
   /** Payload delivered to a signal target handler. */
-  export type SignalTargetPayloadV1 = unknown
+  export type SignalTargetPayloadV1 = unknown;
 }

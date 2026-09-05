@@ -19,9 +19,9 @@ Known string literals plus any other string.
 
 ##### T
 
-`T` *extends* `string`
+`T` _extends_ `string`
 
-***
+---
 
 ### LooseNumber :id=loosenumber
 
@@ -40,9 +40,9 @@ Known numeric literals plus any other number.
 
 ##### T
 
-`T` *extends* `number`
+`T` _extends_ `number`
 
-***
+---
 
 ### TaggedNumber :id=taggednumber
 
@@ -69,16 +69,16 @@ readonly optional \_\_tag?: Tag
 
 ##### Tag
 
-`Tag` *extends* `string`
+`Tag` _extends_ `string`
 
-***
+---
 
 ### CellId :id=cellid
 
 <p class="smt-member-path"><code>shared.nominal.CellId</code></p>
 
 ```ts
-CellId = TaggedNumber<"cellId">
+CellId = TaggedNumber<"cellId">;
 ```
 
 Defined in: [shared/nominal.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L31)

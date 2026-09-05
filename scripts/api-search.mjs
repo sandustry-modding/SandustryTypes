@@ -252,9 +252,7 @@ export function buildSearchIndex(files) {
         }
         if (title === local && pageTitle && !local.includes(".")) {
           const bare = local.replace(/\(\)\s*$/, "");
-          title = local.endsWith("()")
-            ? `${pageTitle}.${bare}()`
-            : `${pageTitle}.${local}`;
+          title = local.endsWith("()") ? `${pageTitle}.${bare}()` : `${pageTitle}.${local}`;
         }
 
         current = { title, id, bodyLines: [] };

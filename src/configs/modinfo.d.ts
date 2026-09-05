@@ -304,10 +304,7 @@ export interface ConfigSchemaChoice {
  *
  * @see [Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
  */
-export type ConfigSchemaEntry =
-  | ConfigSchemaNumber
-  | ConfigSchemaBoolean
-  | ConfigSchemaChoice;
+export type ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice;
 
 /**
  * Animated (or static) texture replacement for a vanilla asset id.

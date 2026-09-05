@@ -1,5 +1,5 @@
 import type { ElementType as ElementTypeEnum } from "../../sandkit/enums/index";
-import type { CellCoordinates, Vector2 } from "../../shared/player";
+import type { CellCoordinates, Vector2 } from "../player";
 import type { CellId, LooseString, TaggedNumber } from "../nominal";
 
 /**
@@ -55,27 +55,27 @@ export namespace elements {
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export type ElementDefinition = {
-    id: string,
-    nameKey: string,
-    defaultDataFields?: { [key: string]: number },
+    id: string;
+    nameKey: string;
+    defaultDataFields?: { [key: string]: number };
     colors: {
       variantFromDataField1?: {
-        rangeMin?: number,
-        rangeMax?: number,
-        invert?: boolean,
-        useGradient?: boolean,
-      },
-      variants: [number, number, number][],
-    },
-    density: number,
-    matterType: MatterType,
+        rangeMin?: number;
+        rangeMax?: number;
+        invert?: boolean;
+        useGradient?: boolean;
+      };
+      variants: [number, number, number][];
+    };
+    density: number;
+    matterType: MatterType;
     /** UI/meta color as 0xRRGGBB. */
-    metaColor?: number,
+    metaColor?: number;
     /** When true, the grabber can pick up this element. */
-    isGrabbable?: boolean,
+    isGrabbable?: boolean;
     /** When true, conveyors can move this element. */
-    isTransportable?: boolean,
-    getExtraProps?: () => { data: Record<PropertyKey, any> }
+    isTransportable?: boolean;
+    getExtraProps?: () => { data: Record<PropertyKey, any> };
   };
 
   /**
@@ -198,7 +198,9 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number; } | null;
+  export function getInfoAtCell(
+    ...args: CellCoordinates
+  ): { elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number } | null;
 
   /**
    * Return the matter category at a cell, or null when empty.
@@ -239,7 +241,7 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null;
+  export function getVelocityAtCell(...args: CellCoordinates): { x: number; y: number } | null;
 
   /**
    * Read element data field 1–4 at a cell.
@@ -250,5 +252,7 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function getDataFieldAtCell(...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4]): number | null;
+  export function getDataFieldAtCell(
+    ...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4]
+  ): number | null;
 }

@@ -23,7 +23,7 @@ Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.
 ##### lightId
 
 ```ts
-lightId: number | null
+lightId: number | null;
 ```
 
 Defined in: [sandkit/api/lights.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L123)
@@ -33,7 +33,7 @@ Assigned temporary light id, or null when creation failed.
 ##### ~~index~~
 
 ```ts
-index: number | null
+index: number | null;
 ```
 
 Defined in: [sandkit/api/lights.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L129)
@@ -46,7 +46,7 @@ Use [lightId](#lightid) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### PersistentLightOptions :id=persistentlightoptions
 
@@ -101,21 +101,21 @@ RGBA color components.
 <p class="smt-member-path"><code>sandkit.api.lights.TemporaryLightOptions</code></p>
 
 ```ts
-TemporaryLightOptions = TemporaryLightOptions
+TemporaryLightOptions = TemporaryLightOptions;
 ```
 
 Defined in: [sandkit/api/lights.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L133)
 
 Options for temporary lights.
 
-***
+---
 
 ### PersistentLightHandle :id=persistentlighthandle
 
 <p class="smt-member-path"><code>sandkit.api.lights.PersistentLightHandle</code></p>
 
 ```ts
-PersistentLightHandle = unknown
+PersistentLightHandle = unknown;
 ```
 
 Defined in: [sandkit/api/lights.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L147)

@@ -70,7 +70,12 @@ export namespace i18n {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function getLanguages(): { code: Locale; nativeName: string; englishName: string; enabled: boolean; }[];
+  export function getLanguages(): {
+    code: Locale;
+    nativeName: string;
+    englishName: string;
+    enabled: boolean;
+  }[];
 
   /**
    * Returns locale codes that have registered translations.
@@ -127,7 +132,7 @@ export namespace i18n {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function getName(definition: { nameKey?: string; name?: string; }): string;
+  export function getName(definition: { nameKey?: string; name?: string }): string;
 
   /**
    * Returns the description from a definition with descriptionKey or description.
@@ -136,7 +141,10 @@ export namespace i18n {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function getDescription(definition: { descriptionKey?: string; description?: string; }): string;
+  export function getDescription(definition: {
+    descriptionKey?: string;
+    description?: string;
+  }): string;
 
   /**
    * Creates a translatable string object with a fallback.
@@ -146,14 +154,20 @@ export namespace i18n {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function createTranslatable(key: string, fallback: string): { __translatable: true; key: string; fallback: string; };
+  export function createTranslatable(
+    key: string,
+    fallback: string,
+  ): { __translatable: true; key: string; fallback: string };
 
   /**
    * @deprecated Use {@link createTranslatable} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function translatable(key: string, fallback: string): { __translatable: true; key: string; fallback: string; };
+  export function translatable(
+    key: string,
+    fallback: string,
+  ): { __translatable: true; key: string; fallback: string };
 
   /**
    * Sets a global string or lazy resolver used in translations.

@@ -36,7 +36,7 @@ Second point.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getDirection() :id=getdirection
 
@@ -72,7 +72,7 @@ Target point.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getAngle() :id=getangle
 
@@ -108,7 +108,7 @@ Target point.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getCoordinatesBetweenCells() :id=getcoordinatesbetweencells
 
@@ -144,7 +144,7 @@ Line end in cell coordinates.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~getCoordinatesBetweenPoints()~~
 

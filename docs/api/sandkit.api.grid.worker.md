@@ -6,7 +6,7 @@ Worker-thread `sandkit.api.grid` — grid reads, activity, and excavation.
 
 Worker mutations are immediate. Main thread defers grid writes through `api.grid.mutate`.
 
- Worker subset; do not import main-thread [sandkit.api.grid](api/sandkit.md#grid) iteration helpers here.
+Worker subset; do not import main-thread [sandkit.api.grid](api/sandkit.md#grid) iteration helpers here.
 
 ## References <!-- {docsify-ignore} -->
 
@@ -16,7 +16,7 @@ Worker mutations are immediate. Main thread defers grid writes through `api.grid
 
 Re-exports [getCellIdAtCell](api/sandkit.api.grid.md#getcellidatcell)
 
-***
+---
 
 ### isCellEmptyAtCell :id=iscellemptyatcell
 
@@ -24,7 +24,7 @@ Re-exports [getCellIdAtCell](api/sandkit.api.grid.md#getcellidatcell)
 
 Re-exports [isCellEmptyAtCell](api/sandkit.api.grid.md#iscellemptyatcell)
 
-***
+---
 
 ### isTerrainAtCell :id=isterrainatcell
 
@@ -32,7 +32,7 @@ Re-exports [isCellEmptyAtCell](api/sandkit.api.grid.md#iscellemptyatcell)
 
 Re-exports [isTerrainAtCell](api/sandkit.api.grid.md#isterrainatcell)
 
-***
+---
 
 ### reportActivityAtCell :id=reportactivityatcell
 
@@ -40,7 +40,7 @@ Re-exports [isTerrainAtCell](api/sandkit.api.grid.md#isterrainatcell)
 
 Re-exports [reportActivityAtCell](api/sandkit.api.grid.md#reportactivityatcell)
 
-***
+---
 
 ### excavateAtCell :id=excavateatcell
 
@@ -48,7 +48,7 @@ Re-exports [reportActivityAtCell](api/sandkit.api.grid.md#reportactivityatcell)
 
 Re-exports [excavateAtCell](api/sandkit.api.grid.md#excavateatcell)
 
-***
+---
 
 ### getDimensions :id=getdimensions
 
@@ -56,7 +56,7 @@ Re-exports [excavateAtCell](api/sandkit.api.grid.md#excavateatcell)
 
 Re-exports [getDimensions](api/sandkit.api.grid.md#getdimensions)
 
-***
+---
 
 ### ExcavateOptions :id=excavateoptions
 
@@ -64,7 +64,7 @@ Re-exports [getDimensions](api/sandkit.api.grid.md#getdimensions)
 
 Re-exports [ExcavateOptions](api/sandkit.api.grid.md#excavateoptions)
 
-***
+---
 
 ### CellId :id=cellid
 
@@ -72,7 +72,7 @@ Re-exports [ExcavateOptions](api/sandkit.api.grid.md#excavateoptions)
 
 Re-exports [CellId](api/sandkit.api.grid.md#cellid)
 
-***
+---
 
 ### GridDimensions :id=griddimensions
 

@@ -7,7 +7,7 @@
 <p class="smt-member-path"><code>sandkit.react.SandkitReact</code></p>
 
 ```ts
-SandkitReact = object
+SandkitReact = object;
 ```
 
 Defined in: [sandkit/react.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/react.d.ts#L8)

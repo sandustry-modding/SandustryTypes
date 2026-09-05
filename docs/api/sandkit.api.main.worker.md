@@ -6,7 +6,7 @@ Worker thread only.
 
 `sandkit.api.main` — send events to the main thread.
 
- Base shape reused by [WorkerSandkitApi](api/sandkit.api.worker.md#workersandkitapi). Main thread has a
+Base shape reused by [WorkerSandkitApi](api/sandkit.api.worker.md#workersandkitapi). Main thread has a
 larger `sandkit.api` surface; do not assume parity.
 
 ## Functions <!-- {docsify-ignore} -->

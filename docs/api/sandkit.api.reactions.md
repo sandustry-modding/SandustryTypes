@@ -15,7 +15,7 @@ Contact reaction recipe definition.
 ##### inputA
 
 ```ts
-inputA: ElementType
+inputA: ElementType;
 ```
 
 Defined in: [sandkit/api/reactions.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L31)
@@ -25,7 +25,7 @@ First reacting element type.
 ##### inputB
 
 ```ts
-inputB: ElementType
+inputB: ElementType;
 ```
 
 Defined in: [sandkit/api/reactions.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L33)
@@ -35,7 +35,7 @@ Second reacting element type.
 ##### outputA
 
 ```ts
-outputA: ElementType | null
+outputA: ElementType | null;
 ```
 
 Defined in: [sandkit/api/reactions.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L35)
@@ -45,7 +45,7 @@ Element type produced from input A, or null for no output.
 ##### outputB
 
 ```ts
-outputB: ElementType | null
+outputB: ElementType | null;
 ```
 
 Defined in: [sandkit/api/reactions.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L37)

@@ -28,13 +28,17 @@ export namespace input {
    * });
    * ```
    */
-  export function registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputBindingDefinition): BindingId;
+  export function registerBinding(
+    bindingId: BindingId,
+    defaultKeys: KeyCode[],
+    definition: InputBindingDefinition,
+  ): BindingId;
 
   /**
    * Return the mouse position in cell coordinates.
    * @returns Cell `{ x, y }` under the cursor.
    */
-  export function getMouseCellPosition(): { x: number; y: number; };
+  export function getMouseCellPosition(): { x: number; y: number };
 
   /**
    * Return the keys currently bound to a binding id.

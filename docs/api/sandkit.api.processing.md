@@ -15,7 +15,7 @@ Weighted element output entry shared by machine recipes.
 ##### elementType
 
 ```ts
-elementType: ElementType
+elementType: ElementType;
 ```
 
 Defined in: [sandkit/api/processing.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L32)
@@ -25,14 +25,14 @@ Output element type (1–255).
 ##### chance
 
 ```ts
-chance: number
+chance: number;
 ```
 
 Defined in: [sandkit/api/processing.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L34)
 
 Output probability from 0 to 1.
 
-***
+---
 
 ### PlanterBoxRecipeDefinitionV1 :id=planterboxrecipedefinitionv1
 
@@ -47,7 +47,7 @@ Planter box grower recipe definition.
 ##### input
 
 ```ts
-input: ElementType
+input: ElementType;
 ```
 
 Defined in: [sandkit/api/processing.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L40)
@@ -57,7 +57,7 @@ Input element type placed on the grower.
 ##### output
 
 ```ts
-output: ElementType
+output: ElementType;
 ```
 
 Defined in: [sandkit/api/processing.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L42)
@@ -74,7 +74,7 @@ Defined in: [sandkit/api/processing.d.ts:44](https://github.com/sandustry-moddin
 
 Success chance from 0 to 1. Default 1.
 
-***
+---
 
 ### ShakerRecipeDefinitionV1 :id=shakerrecipedefinitionv1
 
@@ -89,7 +89,7 @@ Shaker recipe definition.
 ##### input
 
 ```ts
-input: ElementType
+input: ElementType;
 ```
 
 Defined in: [sandkit/api/processing.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L50)
@@ -116,7 +116,7 @@ Defined in: [sandkit/api/processing.d.ts:54](https://github.com/sandustry-moddin
 
 Weighted outputs ejected downward.
 
-***
+---
 
 ### KineticPressRecipeDefinitionV1 :id=kineticpressrecipedefinitionv1
 
@@ -131,7 +131,7 @@ Kinetic press recipe definition.
 ##### input
 
 ```ts
-input: ElementType
+input: ElementType;
 ```
 
 Defined in: [sandkit/api/processing.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L60)
@@ -141,7 +141,7 @@ Input element type processed by the press.
 ##### minimumDownwardVelocity
 
 ```ts
-minimumDownwardVelocity: number
+minimumDownwardVelocity: number;
 ```
 
 Defined in: [sandkit/api/processing.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L62)
@@ -184,7 +184,7 @@ Grower input/output recipe.
 
 `void`
 
-***
+---
 
 ### registerShaker() :id=registershaker
 
@@ -210,7 +210,7 @@ Shaker input and weighted outputs.
 
 `void`
 
-***
+---
 
 ### registerKineticPress() :id=registerkineticpress
 

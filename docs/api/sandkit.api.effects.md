@@ -55,7 +55,7 @@ Defined in: [sandkit/api/effects.d.ts:126](https://github.com/sandustry-modding/
 
 When true, draws a glow around the beam.
 
-***
+---
 
 ### LaserEffectHandle :id=lasereffecthandle
 
@@ -81,7 +81,7 @@ Removes the laser from the scene.
 
 `void`
 
-***
+---
 
 ### DistortionEffectOptions :id=distortioneffectoptions
 
@@ -143,7 +143,7 @@ Defined in: [sandkit/api/effects.d.ts:146](https://github.com/sandustry-modding/
 
 RGBA color components for the effect.
 
-***
+---
 
 ### EffectOptions :id=effectoptions
 
@@ -179,7 +179,7 @@ optional intensity?: number
 
 Defined in: [shared/api/effects.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L38)
 
-***
+---
 
 ### TemporaryLightOptions :id=temporarylightoptions
 
@@ -234,7 +234,7 @@ Defined in: [shared/api/effects.d.ts:46](https://github.com/sandustry-modding/Sa
 ##### decay
 
 ```ts
-decay: number
+decay: number;
 ```
 
 Defined in: [shared/api/effects.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L48)
@@ -284,14 +284,14 @@ Defined in: [shared/api/effects.d.ts:53](https://github.com/sandustry-modding/Sa
 ##### dedupKey
 
 ```ts
-dedupKey: string
+dedupKey: string;
 ```
 
 Defined in: [shared/api/effects.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L55)
 
 Dedupe key when the light pool is full or dedup is enabled.
 
-***
+---
 
 ### ParticleEffectOptions :id=particleeffectoptions
 
@@ -473,7 +473,7 @@ Duration, radius, and intensity settings.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~createEffectAtWorld()~~
 
@@ -513,7 +513,7 @@ Use [createAtWorld](#createatworld) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~createLightAtWorld()~~
 
@@ -544,7 +544,7 @@ Defined in: [sandkit/api/effects.d.ts:67](https://github.com/sandustry-modding/S
 ##### ~~lightId~~
 
 ```ts
-lightId: number | null
+lightId: number | null;
 ```
 
 ##### ~~index?~~
@@ -561,7 +561,7 @@ Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createa
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### createDistortionWaveAtWorld() :id=createdistortionwaveatworld
 
@@ -611,7 +611,7 @@ api.effects.createDistortionWaveAtWorld(worldX, worldY, {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### createLaserAtWorld() :id=createlaseratworld
 
@@ -665,7 +665,7 @@ Width, brightness, color, and glow options.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~removeLightById()~~
 
@@ -693,7 +693,7 @@ Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md#removebyid
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### createParticlesAtWorld() :id=createparticlesatworld
 

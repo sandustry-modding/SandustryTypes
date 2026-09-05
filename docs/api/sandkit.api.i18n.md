@@ -58,7 +58,7 @@ When true, use grouping separators.
 <p class="smt-member-path"><code>sandkit.api.i18n.Locale</code></p>
 
 ```ts
-Locale = LooseString<"en">
+Locale = LooseString<"en">;
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:210](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L210)
@@ -109,7 +109,7 @@ const message = api.i18n.t("mods|example|count", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### register() :id=register
 
@@ -153,7 +153,7 @@ api.i18n.register("en", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getLocale() :id=getlocale
 
@@ -175,7 +175,7 @@ Returns the active locale code.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### hasTranslation() :id=hastranslation
 
@@ -211,7 +211,7 @@ Optional locale; defaults to the active locale.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setLocale() :id=setlocale
 
@@ -241,7 +241,7 @@ Locale code to activate.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getLanguages() :id=getlanguages
 
@@ -263,7 +263,7 @@ Returns metadata for all known languages.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getAvailableLocales() :id=getavailablelocales
 
@@ -285,7 +285,7 @@ Returns locale codes that have registered translations.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### formatNumber() :id=formatnumber
 
@@ -329,7 +329,7 @@ const formatted = api.i18n.formatNumber(1234.5, {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### joinKey() :id=joinkey
 
@@ -359,7 +359,7 @@ Key segments joined with `.`.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~key()~~
 
@@ -387,7 +387,7 @@ Use [joinKey](#joinkey) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getName() :id=getname
 
@@ -432,7 +432,7 @@ const name = api.i18n.getName({
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getDescription() :id=getdescription
 
@@ -468,7 +468,7 @@ Object with `descriptionKey` or `description`.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### createTranslatable() :id=createtranslatable
 
@@ -509,20 +509,20 @@ Text used when no translation is registered.
 ##### key
 
 ```ts
-key: string
+key: string;
 ```
 
 ##### fallback
 
 ```ts
-fallback: string
+fallback: string;
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~translatable()~~
 
@@ -555,13 +555,13 @@ Defined in: [sandkit/api/i18n.d.ts:156](https://github.com/sandustry-modding/San
 ##### ~~key~~
 
 ```ts
-key: string
+key: string;
 ```
 
 ##### ~~fallback~~
 
 ```ts
-fallback: string
+fallback: string;
 ```
 
 #### Deprecated
@@ -572,7 +572,7 @@ Use [createTranslatable](#createtranslatable) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setGlobal() :id=setglobal
 
@@ -608,7 +608,7 @@ Static string or function that returns the current value.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getGlobal() :id=getglobal
 
@@ -638,7 +638,7 @@ Global helper key.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### removeGlobal() :id=removeglobal
 
@@ -668,7 +668,7 @@ Global helper key.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~clearGlobal()~~
 
@@ -696,7 +696,7 @@ Use [removeGlobal](#removeglobal) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getGlobals() :id=getglobals
 
@@ -718,7 +718,7 @@ Returns all global translation helper values.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### formatKeyForDisplay() :id=formatkeyfordisplay
 

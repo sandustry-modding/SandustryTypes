@@ -40,7 +40,7 @@ Use [grid.mutate](api/sandkit.api.grid.md#mutate) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~redrawAroundCellWhenIdle()~~
 
@@ -74,79 +74,79 @@ Use [grid.redrawAroundCell](api/sandkit.api.grid.md#redrawaroundcell) instead.
 
 Re-exports [getCellIdAtCell](api/sandkit.api.grid.md#getcellidatcell)
 
-***
+---
 
 ### ~~isCellEmptyAtCell~~
 
 Re-exports [isCellEmptyAtCell](api/sandkit.api.grid.md#iscellemptyatcell)
 
-***
+---
 
 ### ~~isTerrainAtCell~~
 
 Re-exports [isTerrainAtCell](api/sandkit.api.grid.md#isterrainatcell)
 
-***
+---
 
 ### ~~reportActivityAtCell~~
 
 Re-exports [reportActivityAtCell](api/sandkit.api.grid.md#reportactivityatcell)
 
-***
+---
 
 ### ~~excavateAtCell~~
 
 Re-exports [excavateAtCell](api/sandkit.api.grid.md#excavateatcell)
 
-***
+---
 
 ### ~~getDimensions~~
 
 Re-exports [getDimensions](api/sandkit.api.grid.md#getdimensions)
 
-***
+---
 
 ### ~~ExcavateOptions~~
 
 Re-exports [ExcavateOptions](api/sandkit.api.grid.md#excavateoptions)
 
-***
+---
 
 ### ~~CellId~~
 
 Re-exports [CellId](api/sandkit.api.grid.md#cellid)
 
-***
+---
 
 ### ~~GridDimensions~~
 
 Re-exports [GridDimensions](api/sandkit.api.grid.md#griddimensions)
 
-***
+---
 
 ### ~~revealFogAtCell~~
 
 Re-exports [revealFogAtCell](api/sandkit.api.grid.md#revealfogatcell)
 
-***
+---
 
 ### ~~WorldItemType~~
 
 Re-exports [WorldItemType](api/sandkit.api.pickups.md#worlditemtype)
 
-***
+---
 
 ### ~~PickupType~~
 
 Re-exports [PickupType](api/sandkit.api.pickups.md#pickuptype)
 
-***
+---
 
 ### ~~WorldItemLight~~
 
 Re-exports [WorldItemLight](api/sandkit.api.pickups.md#worlditemlight)
 
-***
+---
 
 ### ~~WorldItem~~
 

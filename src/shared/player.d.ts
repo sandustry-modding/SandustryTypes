@@ -11,7 +11,7 @@ import { AssetRef } from "./asset";
  *
  * Cell coordinates match `sandkit.api.*AtCell` helpers: column first, then row.
  */
-export type CellCoordinates = [cellX: number, cellY: number]
+export type CellCoordinates = [cellX: number, cellY: number];
 
 /**
  * 2D vector in world or cell space.
@@ -41,7 +41,7 @@ export interface Player {
   /** Player hitbox height in world pixels. */
   height: number;
   /** Current movement velocity in pixels per second. */
-  velocity: Vector2
+  velocity: Vector2;
   /** Movement threshold accumulator used by physics. */
   threshold: Vector2;
   /**
@@ -73,8 +73,8 @@ export interface Player {
   /** Tech tree nodes and their unlock metadata. */
   tech: {
     [key: string | number]: {
-      x: number,
-      y: number,
+      x: number;
+      y: number;
       descriptionKey: string;
       descriptionParams?: {
         [key: string]: number;
@@ -101,7 +101,7 @@ export interface Player {
     };
   };
   /** Tech ids explicitly locked for this save. */
-  lockedTechs: { [key: string]: boolean },
+  lockedTechs: { [key: string]: boolean };
   /** Active world action, or null when idle. */
   action: null;
   /** Hotbar slots, active indices, and item sprites. */
@@ -144,30 +144,30 @@ export interface Player {
 
 /** One hotbar or inventory item entry. */
 export interface InventoryItem {
-  id: number,
-  itemType: number,
+  id: number;
+  itemType: number;
   abilities: {
-    type: number,
-    levelRequirement?: number,
+    type: number;
+    levelRequirement?: number;
     attributes: {
       [key: string]: {
         opts?: {
-          speed?: number,
-          angle?: number
-        },
-        type: number,
+          speed?: number;
+          angle?: number;
+        };
+        type: number;
         attributes?: {
-          blastRadius?: number
-        },
-      },
-    },
+          blastRadius?: number;
+        };
+      };
+    };
     cooldown: {
-      time: number,
-      last: number
-    }
-  }[],
-  nameKey: string,
-  descriptionKey: string,
-  categoryKey: "excavation" | "utility" | "drones",
-  sprite?: AssetRef,
+      time: number;
+      last: number;
+    };
+  }[];
+  nameKey: string;
+  descriptionKey: string;
+  categoryKey: "excavation" | "utility" | "drones";
+  sprite?: AssetRef;
 }

@@ -82,7 +82,7 @@ Called after the item is rendered each frame.
 <p class="smt-member-path"><code>sandkit.api.items.ItemId</code></p>
 
 ```ts
-ItemId = ItemId | LooseString<never>
+ItemId = ItemId | LooseString<never>;
 ```
 
 Defined in: [sandkit/api/items.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L59)
@@ -90,14 +90,14 @@ Defined in: [sandkit/api/items.d.ts:59](https://github.com/sandustry-modding/San
 Inventory item id.
 Built-in [ItemIdEnum](api/sandkit.enums.ItemId.md) values autocomplete; custom string ids are allowed.
 
-***
+---
 
 ### ItemType :id=itemtype
 
 <p class="smt-member-path"><code>sandkit.api.items.ItemType</code></p>
 
 ```ts
-ItemType = ItemType | TaggedNumber<"itemType">
+ItemType = ItemType | TaggedNumber<"itemType">;
 ```
 
 Defined in: [sandkit/api/items.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L64)
@@ -105,14 +105,14 @@ Defined in: [sandkit/api/items.d.ts:64](https://github.com/sandustry-modding/San
 Item category handle.
 Built-in [ItemTypeEnum](api/sandkit.enums.ItemType.md) values autocomplete.
 
-***
+---
 
 ### ModItem :id=moditem
 
 <p class="smt-member-path"><code>sandkit.api.items.ModItem</code></p>
 
 ```ts
-ModItem = unknown
+ModItem = unknown;
 ```
 
 Defined in: [sandkit/api/items.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L66)
@@ -145,7 +145,7 @@ Item id, handlers, and display metadata.
 
 `void`
 
-***
+---
 
 ### updateDefinition() :id=updatedefinition
 
@@ -185,7 +185,7 @@ api.items.updateDefinition("exampleTool", {
 });
 ```
 
-***
+---
 
 ### getDefinitionById() :id=getdefinitionbyid
 
@@ -211,7 +211,7 @@ Registered item id.
 
 [`ItemDefinition`](#itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
 
-***
+---
 
 ### createFromId() :id=createfromid
 
@@ -237,7 +237,7 @@ Registered item id.
 
 `unknown`
 
-***
+---
 
 ### getActive() :id=getactive
 
@@ -255,7 +255,7 @@ Returns the item definition for the active hotbar slot.
 
 [`ItemDefinition`](#itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
 
-***
+---
 
 ### isActiveById() :id=isactivebyid
 

@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getGunLevel() :id=getgunlevel
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getPhaseLevel() :id=getphaselevel
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getRocketAmmoLevel() :id=getrocketammolevel
 
@@ -112,7 +112,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getRocketReloadLevel() :id=getrocketreloadlevel
 
@@ -138,7 +138,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getSprintCapLevel() :id=getsprintcaplevel
 
@@ -164,7 +164,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasBigDig() :id=hasbigdig
 
@@ -190,7 +190,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasBulletSpeed() :id=hasbulletspeed
 
@@ -216,7 +216,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasBulletTracer() :id=hasbullettracer
 
@@ -242,7 +242,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasKickstartBoost() :id=haskickstartboost
 
@@ -268,7 +268,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasPhaseDash() :id=hasphasedash
 
@@ -294,7 +294,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasPhaseDashCharge() :id=hasphasedashcharge
 
@@ -320,7 +320,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasRideBoost() :id=hasrideboost
 
@@ -346,7 +346,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasRocketDamage() :id=hasrocketdamage
 
@@ -372,7 +372,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasRocketWarhead() :id=hasrocketwarhead
 
@@ -398,7 +398,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasSprintPower() :id=hassprintpower
 
@@ -424,7 +424,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasTripleShot() :id=hastripleshot
 

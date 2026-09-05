@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### exportAllString() :id=exportallstring
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### exportString() :id=exportstring
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getAll() :id=getall
 
@@ -112,7 +112,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### importString() :id=importstring
 
@@ -138,7 +138,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### load() :id=load
 
@@ -164,7 +164,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### save() :id=save
 

@@ -33,7 +33,7 @@ Return the snapped world position for placement at the cell.
 
 Snapped world position in pixels.
 
-***
+---
 
 ### isBlockedAtCell() :id=isblockedatcell
 
@@ -59,7 +59,7 @@ Return true when placement is blocked at the cell.
 
 True when a structure cannot be placed at the cell.
 
-***
+---
 
 ### cancelPlacement() :id=cancelplacement
 
@@ -77,7 +77,7 @@ Cancel the current structure placement preview.
 
 `void`
 
-***
+---
 
 ### selectStructure() :id=selectstructure
 

@@ -19,10 +19,7 @@ export namespace ui {
   export function toast(message: LocalizedText, options?: ToastOptions): void;
 
   /** Plain text, translation key object, or i18n translatable value. */
-  export type LocalizedText =
-    | string
-    | I18nTextKey
-    | I18nTranslatable;
+  export type LocalizedText = string | I18nTextKey | I18nTranslatable;
 
   /** Translation key with optional parameter substitution. */
   export interface I18nTextKey {

@@ -43,18 +43,14 @@ Brightness, size, color, and persistence options.
 #### Example
 
 ```ts
-const light = api.lights.persistent.createAtWorld(
-  worldX,
-  worldY,
-  { brightness: 1, size: 80 },
-);
+const light = api.lights.persistent.createAtWorld(worldX, worldY, { brightness: 1, size: 80 });
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### removeAtWorld() :id=removeatworld
 
@@ -90,7 +86,7 @@ World Y coordinate in pixels.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### fadeAtWorld() :id=fadeatworld
 
@@ -132,7 +128,7 @@ Fade duration in milliseconds.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### markDirty() :id=markdirty
 

@@ -1,4 +1,4 @@
-import type { CellCoordinates, Vector2 } from "../../shared/player";
+import type { CellCoordinates, Vector2 } from "../player";
 import type { CellId as PackedCellId } from "../nominal";
 
 /**
@@ -62,7 +62,9 @@ export namespace grid {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function excavateAtCell(...args: [...CellCoordinates, outVelocity: Vector2, damage: number, options?: ExcavateOptions]): void;
+  export function excavateAtCell(
+    ...args: [...CellCoordinates, outVelocity: Vector2, damage: number, options?: ExcavateOptions]
+  ): void;
 
   /**
    * Return the world grid size in cells.

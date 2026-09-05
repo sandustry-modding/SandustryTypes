@@ -128,7 +128,7 @@ Defined in: [sandkit/api/tech.d.ts:166](https://github.com/sandustry-modding/San
 
 Prerequisite tech ids.
 
-***
+---
 
 ### TechGridPosition :id=techgridposition
 
@@ -143,7 +143,7 @@ Position on the tech grid.
 ##### x
 
 ```ts
-x: number
+x: number;
 ```
 
 Defined in: [sandkit/api/tech.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L172)
@@ -151,12 +151,12 @@ Defined in: [sandkit/api/tech.d.ts:172](https://github.com/sandustry-modding/San
 ##### y
 
 ```ts
-y: number
+y: number;
 ```
 
 Defined in: [sandkit/api/tech.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L173)
 
-***
+---
 
 ### ConservatoryUnlocks :id=conservatoryunlocks
 
@@ -195,7 +195,7 @@ Item ids to unlock.
 <p class="smt-member-path"><code>sandkit.api.tech.TechGridId</code></p>
 
 ```ts
-TechGridId = Tech | LooseString<never> | TaggedNumber<"tech">
+TechGridId = Tech | LooseString<never> | TaggedNumber<"tech">;
 ```
 
 Defined in: [sandkit/api/tech.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L138)
@@ -233,7 +233,7 @@ Tech entry identifier.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### updateDefinition() :id=updatedefinition
 
@@ -277,7 +277,7 @@ api.tech.updateDefinition("exampleTech", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### registerDefinition() :id=registerdefinition
 
@@ -325,7 +325,7 @@ api.tech.registerDefinition("exampleTech", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~addDefinition()~~
 
@@ -357,7 +357,7 @@ Use [registerDefinition](#registerdefinition) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### registerNode() :id=registernode
 
@@ -404,18 +404,14 @@ Parent node id and optional preferred grid position.
 #### Example
 
 ```ts
-const position = api.tech.registerNode(
-  "exampleTech",
-  techDefinition,
-  { parentId: parentTechId },
-);
+const position = api.tech.registerNode("exampleTech", techDefinition, { parentId: parentTechId });
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isLockedById() :id=islockedbyid
 
@@ -445,7 +441,7 @@ Tech entry id (string or numeric enum).
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setLockedById() :id=setlockedbyid
 
@@ -481,7 +477,7 @@ When true, the tech cannot be purchased.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isResearchedById() :id=isresearchedbyid
 

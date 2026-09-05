@@ -57,13 +57,10 @@ Transport offset, velocity, distance, and run direction.
 #### Example
 
 ```ts
-api.structureBehaviors.registerConveyorType(
-  "exampleConveyor",
-  { runWith: "right" },
-);
+api.structureBehaviors.registerConveyorType("exampleConveyor", { runWith: "right" });
 ```
 
-***
+---
 
 ### registerLauncherType() :id=registerlaunchertype
 

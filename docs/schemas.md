@@ -2,14 +2,14 @@
 
 Generated from `@sandustry-modding/types/configs` (`ModInfo`, `BundlePatchesFile` in `src/configs/`).
 
-Prefer the [official Sandkit docs](https://sandustry.com/sandkit.html#mod-files-heading ':target=_blank') when a schema and the game disagree.
+Prefer the [official Sandkit docs](https://sandustry.com/sandkit.html#mod-files-heading ":target=_blank") when a schema and the game disagree.
 
 ## URLs
 
 After GitHub Pages publishes `docs/`, use these raw schema URLs:
 
-| File | Schema URL |
-| --- | --- |
+| File           | Schema URL                                                              |
+| -------------- | ----------------------------------------------------------------------- |
 | `modinfo.json` | https://sandustry-modding.github.io/SandustryTypes/schemas/modinfo.json |
 | `patches.json` | https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json |
 

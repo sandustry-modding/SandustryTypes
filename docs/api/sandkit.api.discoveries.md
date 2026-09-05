@@ -29,7 +29,7 @@ Numeric element type id.
 
 `void`
 
-***
+---
 
 ### addTerrainByType() :id=addterrainbytype
 

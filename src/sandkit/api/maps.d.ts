@@ -10,9 +10,9 @@ import { shared } from "../../shared";
 export namespace maps {
   // Shared
   /** Return the active map for this session. */
-  export import getActive = shared.api.maps.getActive
+  export import getActive = shared.api.maps.getActive;
   /** Active map data shape. */
-  export import ActiveMapV1 = shared.api.maps.ActiveMapV1
+  export import ActiveMapV1 = shared.api.maps.ActiveMapV1;
 
   /** Return maps the player can start. */
   export function getAvailable(): readonly Readonly<AvailableMapV1>[];

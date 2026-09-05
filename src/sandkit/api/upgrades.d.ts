@@ -22,7 +22,11 @@ export namespace upgrades {
    * @param upgradeId - Upgrade id within the item.
    * @param partial - Fields to merge into the definition.
    */
-  export function updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefinition>): void;
+  export function updateDefinition(
+    itemId: string,
+    upgradeId: string,
+    partial: Partial<UpgradeDefinition>,
+  ): void;
   /**
    * Return the current purchased level for an upgrade.
    * @param itemId - Parent item id.

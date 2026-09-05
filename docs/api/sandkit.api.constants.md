@@ -7,7 +7,7 @@
 <p class="smt-member-path"><code>sandkit.api.constants.physics</code></p>
 
 ```ts
-const physics: Readonly<{ normal: 0; skip: 1; aggressiveSkip: 2; }>
+const physics: Readonly<{ normal: 0; skip: 1; aggressiveSkip: 2 }>;
 ```
 
 Defined in: [sandkit/api/constants.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/constants.d.ts#L13)

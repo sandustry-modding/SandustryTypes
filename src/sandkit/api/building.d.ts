@@ -88,5 +88,7 @@ export namespace building {
    * @param structureTypeOrId - Built-in {@link StructureType} value or registered structure id.
    * @returns Resolved selection, or null when the type or id is invalid.
    */
-  export function selectStructure(structureTypeOrId: StructureType | shared.api.structures.StructureRef): shared.api.structures.StructureRef | null;
+  export function selectStructure(
+    structureTypeOrId: StructureType | shared.api.structures.StructureRef,
+  ): shared.api.structures.StructureRef | null;
 }

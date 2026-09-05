@@ -21,7 +21,7 @@ Progression completion request shape.
 ##### id
 
 ```ts
-id: string
+id: string;
 ```
 
 Defined in: [sandkit/api/progression.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L27)

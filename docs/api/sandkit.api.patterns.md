@@ -7,7 +7,7 @@
 <p class="smt-member-path"><code>sandkit.api.patterns.PatternExcavateOptions</code></p>
 
 ```ts
-PatternExcavateOptions = ExcavateOptions
+PatternExcavateOptions = ExcavateOptions;
 ```
 
 Defined in: [sandkit/api/patterns.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L53)
@@ -42,7 +42,7 @@ Pattern width and height in cells.
 
 Square matrix with `1` inside the circle and `0` outside.
 
-***
+---
 
 ### excavateAtCell() :id=excavateatcell
 
@@ -71,23 +71,11 @@ Excavate at a cell using a pattern matrix and output velocity.
 **Main entry**
 
 ```ts
-api.patterns.excavateAtCell(
-  cellX,
-  cellY,
-  api.patterns.createCircle(5),
-  { x: 0, y: -120 },
-  2,
-);
+api.patterns.excavateAtCell(cellX, cellY, api.patterns.createCircle(5), { x: 0, y: -120 }, 2);
 ```
 
 **Worker entry**
 
 ```ts
-api.patterns.excavateAtCell(
-  cellX,
-  cellY,
-  pattern,
-  { x: 0, y: -1 },
-  10,
-);
+api.patterns.excavateAtCell(cellX, cellY, pattern, { x: 0, y: -1 }, 10);
 ```

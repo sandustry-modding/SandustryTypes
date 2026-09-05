@@ -6,7 +6,7 @@ Shared `sandkit.api.ui` base — lightweight UI helpers available on workers.
 
 Main thread adds richer UI APIs on top of this shape.
 
- Base namespace reused by main and worker declarations.
+Base namespace reused by main and worker declarations.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -23,7 +23,7 @@ Translation key with optional parameter substitution.
 ##### key
 
 ```ts
-key: string
+key: string;
 ```
 
 Defined in: [shared/api/ui.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L30)
@@ -40,7 +40,7 @@ Defined in: [shared/api/ui.d.ts:32](https://github.com/sandustry-modding/Sandust
 
 Values merged into the translated string.
 
-***
+---
 
 ### I18nTranslatable :id=i18ntranslatable
 
@@ -63,7 +63,7 @@ Defined in: [shared/api/ui.d.ts:37](https://github.com/sandustry-modding/Sandust
 ##### key
 
 ```ts
-key: string
+key: string;
 ```
 
 Defined in: [shared/api/ui.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L38)
@@ -71,12 +71,12 @@ Defined in: [shared/api/ui.d.ts:38](https://github.com/sandustry-modding/Sandust
 ##### fallback
 
 ```ts
-fallback: string
+fallback: string;
 ```
 
 Defined in: [shared/api/ui.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L39)
 
-***
+---
 
 ### ToastOptions :id=toastoptions
 
@@ -137,7 +137,7 @@ Visual style applied to the toast body.
 <p class="smt-member-path"><code>sandkit.api.ui.LocalizedText (worker)</code></p>
 
 ```ts
-LocalizedText = string | I18nTextKey | I18nTranslatable
+LocalizedText = string | I18nTextKey | I18nTranslatable;
 ```
 
 Defined in: [shared/api/ui.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L22)

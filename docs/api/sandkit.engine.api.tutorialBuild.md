@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### areFamilyTargetsBuilt() :id=arefamilytargetsbuilt
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### canPlaceAtActiveTarget() :id=canplaceatactivetarget
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getFoundationMoveDests() :id=getfoundationmovedests
 
@@ -112,7 +112,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getFoundationMoveSources() :id=getfoundationmovesources
 
@@ -138,7 +138,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getTargets() :id=gettargets
 
@@ -164,7 +164,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### hasDefinition() :id=hasdefinition
 
@@ -190,7 +190,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### isStepConstrained() :id=isstepconstrained
 
@@ -216,7 +216,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### matchesFoundationMove() :id=matchesfoundationmove
 
@@ -242,7 +242,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### matchesFoundationRemove() :id=matchesfoundationremove
 
@@ -268,7 +268,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### shouldProtectActiveTargetAt() :id=shouldprotectactivetargetat
 

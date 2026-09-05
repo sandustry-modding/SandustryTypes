@@ -30,7 +30,7 @@ Return true when processing is enabled at the cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~isEnabledAt()~~
 

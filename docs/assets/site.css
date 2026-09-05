@@ -196,7 +196,8 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
 .sidebar-nav > hr {
   margin: 1.25rem var(--_sidebar-inset, 20px) 0.35rem;
   border: 0;
-  border-top: 1px solid color-mix(in srgb, var(--theme-color) 35%, var(--sidebar-border-color, #2a2a2a));
+  border-top: 1px solid
+    color-mix(in srgb, var(--theme-color) 35%, var(--sidebar-border-color, #2a2a2a));
   background: transparent;
   height: 0;
 }
@@ -671,4 +672,3 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
 .smt-api-landing ul.smt-api-tree a {
   font-weight: 500;
 }
-

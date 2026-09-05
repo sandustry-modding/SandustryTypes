@@ -33,7 +33,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 `unknown`
 
-***
+---
 
 ### get() :id=get
 
@@ -59,7 +59,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 `unknown`
 
-***
+---
 
 ### getOrInit() :id=getorinit
 
@@ -85,7 +85,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 `unknown`
 
-***
+---
 
 ### set() :id=set
 

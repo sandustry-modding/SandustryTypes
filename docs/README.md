@@ -1,16 +1,16 @@
 > [!WARNING]
-> **Unofficial** community docs. Not affiliated with Lantto Games, Hooded Horse, or the [official Sandustry wiki](https://wiki.hoodedhorse.com/Sandustry/Sandustry_Official_Wiki ':target=_blank'). Prefer the [official Sandkit API](https://sandustry.com/sandkit.html#api-access-heading ':target=_blank') when the two disagree.
+> **Unofficial** community docs. Not affiliated with Lantto Games, Hooded Horse, or the [official Sandustry wiki](https://wiki.hoodedhorse.com/Sandustry/Sandustry_Official_Wiki ":target=_blank"). Prefer the [official Sandkit API](https://sandustry.com/sandkit.html#api-access-heading ":target=_blank") when the two disagree.
 
 # Sandkit API
 
-TypeScript declarations for the live Sandustry `sandkit` host API. Install as [`@sandustry-modding/types`](https://www.npmjs.com/package/@sandustry-modding/types ':target=_blank').
+TypeScript declarations for the live Sandustry `sandkit` host API. Install as [`@sandustry-modding/types`](https://www.npmjs.com/package/@sandustry-modding/types ":target=_blank").
 
 ## Related links
 
 - [Changelog](Changelog.md) — package and docs history
-- [Official Sandkit API](https://sandustry.com/sandkit.html#api-access-heading ':target=_blank') — host API from the game
-- [npm package](https://www.npmjs.com/package/@sandustry-modding/types ':target=_blank') — install `@sandustry-modding/types`
-- [Mod template](https://sandustry-modding.github.io/SandustryModTemplate/#/ ':target=_blank') — starter mod and setup guide
+- [Official Sandkit API](https://sandustry.com/sandkit.html#api-access-heading ":target=_blank") — host API from the game
+- [npm package](https://www.npmjs.com/package/@sandustry-modding/types ":target=_blank") — install `@sandustry-modding/types`
+- [Mod template](https://sandustry-modding.github.io/SandustryModTemplate/#/ ":target=_blank") — starter mod and setup guide
 
 ## Browse the API
 
@@ -45,7 +45,7 @@ Use the ambient `sandkit` free name in `main.js`. In `worker.js`, type the API a
 
 ## Also useful
 
-- [Official Sandustry wiki](https://wiki.hoodedhorse.com/Sandustry/Sandustry_Official_Wiki ':target=_blank')
+- [Official Sandustry wiki](https://wiki.hoodedhorse.com/Sandustry/Sandustry_Official_Wiki ":target=_blank")
 
 ## Regenerate
 

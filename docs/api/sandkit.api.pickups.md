@@ -50,7 +50,7 @@ Defined in: [sandkit/api/pickups.d.ts:28](https://github.com/sandustry-modding/S
 
 RGB or RGBA color components in 0–1 range.
 
-***
+---
 
 ### WorldItem :id=worlditem
 
@@ -65,7 +65,7 @@ Active world pickup instance.
 ##### id
 
 ```ts
-id: number
+id: number;
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L33)
@@ -73,7 +73,7 @@ Defined in: [sandkit/api/pickups.d.ts:33](https://github.com/sandustry-modding/S
 ##### x
 
 ```ts
-x: number
+x: number;
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L34)
@@ -81,7 +81,7 @@ Defined in: [sandkit/api/pickups.d.ts:34](https://github.com/sandustry-modding/S
 ##### y
 
 ```ts
-y: number
+y: number;
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L35)
@@ -89,7 +89,7 @@ Defined in: [sandkit/api/pickups.d.ts:35](https://github.com/sandustry-modding/S
 ##### type
 
 ```ts
-type: PickupType
+type: PickupType;
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L36)
@@ -97,7 +97,7 @@ Defined in: [sandkit/api/pickups.d.ts:36](https://github.com/sandustry-modding/S
 ##### data
 
 ```ts
-data: Record<string, unknown>
+data: Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L37)
@@ -109,19 +109,19 @@ Defined in: [sandkit/api/pickups.d.ts:37](https://github.com/sandustry-modding/S
 <p class="smt-member-path"><code>sandkit.api.pickups.PickupType</code></p>
 
 ```ts
-PickupType = PickupType
+PickupType = PickupType;
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L12)
 
 Official pickup type discriminator.
 
-***
+---
 
 ### ~~WorldItemType~~
 
 ```ts
-WorldItemType = PickupType
+WorldItemType = PickupType;
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L19)
@@ -190,7 +190,7 @@ The spawned pickup instance.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### remove() :id=remove
 
@@ -220,7 +220,7 @@ Pickup returned from spawn or lookup helpers.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~destroy()~~
 
@@ -248,7 +248,7 @@ Use [remove](#remove) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### pickUp() :id=pickup
 
@@ -280,7 +280,7 @@ True when the item was collected.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getAll() :id=getall
 
@@ -302,7 +302,7 @@ Return all active pickups.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getById() :id=getbyid
 

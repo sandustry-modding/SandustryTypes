@@ -1,4 +1,4 @@
-import type { CellCoordinates, Vector2 } from "../../shared/player";
+import type { CellCoordinates, Vector2 } from "../player";
 
 /**
  * Shared `sandkit.api.player` base — player position and collision queries.

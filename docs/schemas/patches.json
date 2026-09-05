@@ -87,9 +87,7 @@
           "description": "Human-readable note for maintainers. Not required by the official schema."
         }
       },
-      "required": [
-        "file"
-      ],
+      "required": ["file"],
       "additionalProperties": false,
       "description": "One entry in `patches.json`.\n\nThe file is an array of these objects. Prefer `expectedMatches` so a missed or duplicated match fails loudly. When several patches must succeed together (for example main + worker), set the same atomicGroup on each."
     },
@@ -112,13 +110,7 @@
     },
     "PatchOperation": {
       "type": "string",
-      "enum": [
-        "replace",
-        "remove",
-        "insertBefore",
-        "insertAfter",
-        "wrap"
-      ],
+      "enum": ["replace", "remove", "insertBefore", "insertAfter", "wrap"],
       "description": "Supported patch operations.\n\n| Value | Behaviour | | --- | --- | | `replace` | Replace the matched text with BundlePatch.code / BundlePatch.replace | | `remove` | Delete the matched text | | `insertBefore` | Insert BundlePatch.code before the match | | `insertAfter` | Insert BundlePatch.code after the match | | `wrap` | Surround the match with BundlePatch.before and BundlePatch.after |"
     },
     "BundlePatchRegex": {
@@ -133,9 +125,7 @@
           "description": "Optional regex flags (for example `\"g\"` or `\"m\"`)."
         }
       },
-      "required": [
-        "pattern"
-      ],
+      "required": ["pattern"],
       "additionalProperties": false,
       "description": "Regex finder when the target is not a plain BundlePatch.find string."
     },
@@ -154,9 +144,7 @@
           "description": "Ordered patch list (same as the bare-array game format)."
         }
       },
-      "required": [
-        "patches"
-      ],
+      "required": ["patches"],
       "additionalProperties": false,
       "description": "Editor-friendly `patches.json` wrapper with an optional `$schema` URL.\n\nThe game loader expects a bare BundlePatch array. Prefer that array in shipped mods. Use this object shape only when your editor needs inline `$schema`."
     }

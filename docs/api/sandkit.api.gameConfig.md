@@ -29,7 +29,7 @@ Game config key (merged defaults and overrides).
 
 [`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1) \| `undefined`
 
-***
+---
 
 ### getAll() :id=getall
 

@@ -46,13 +46,13 @@ Hide the label when a data field matches a value.
 ###### dataField
 
 ```ts
-dataField: number
+dataField: number;
 ```
 
 ###### equals
 
 ```ts
-equals: number
+equals: number;
 ```
 
 ##### visibleWhen?
@@ -68,13 +68,13 @@ Show the label only when a data field matches a value.
 ###### dataField
 
 ```ts
-dataField: number
+dataField: number;
 ```
 
 ###### equals
 
 ```ts
-equals: number
+equals: number;
 ```
 
 ##### onlyWhenTranslated?
@@ -87,7 +87,7 @@ Defined in: [sandkit/api/elements.d.ts:96](https://github.com/sandustry-modding/
 
 Require the text key to exist in the active locale.
 
-***
+---
 
 ### ElementCreateOptions :id=elementcreateoptions
 
@@ -210,7 +210,7 @@ Spawn as a particle with the given velocity.
 ###### velocity
 
 ```ts
-velocity: Vector2
+velocity: Vector2;
 ```
 
 ##### skipCollectorCheck?
@@ -223,7 +223,7 @@ Defined in: [shared/api/elements.d.ts:117](https://github.com/sandustry-modding/
 
 Skip collector accounting when placing the element.
 
-***
+---
 
 ### ElementRemovalOptions :id=elementremovaloptions
 
@@ -256,7 +256,7 @@ Skip collector accounting when removing the element.
 <p class="smt-member-path"><code>sandkit.api.elements.InteractionDestroyer</code></p>
 
 ```ts
-InteractionDestroyer = object
+InteractionDestroyer = object;
 ```
 
 Defined in: [sandkit/api/elements.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L100)
@@ -268,7 +268,7 @@ Interaction that destroys specific items.
 ##### kind
 
 ```ts
-kind: "destroyer"
+kind: "destroyer";
 ```
 
 Defined in: [sandkit/api/elements.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L101)
@@ -283,14 +283,14 @@ Defined in: [sandkit/api/elements.d.ts:103](https://github.com/sandustry-modding
 
 Item ids removed by this interaction (for example `"drill"`).
 
-***
+---
 
 ### InteractionStructure :id=interactionstructure
 
 <p class="smt-member-path"><code>sandkit.api.elements.InteractionStructure</code></p>
 
 ```ts
-InteractionStructure = InteractionStructureMetadata & object
+InteractionStructure = InteractionStructureMetadata & object;
 ```
 
 Defined in: [sandkit/api/elements.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L107)
@@ -302,7 +302,7 @@ Interaction that affects specific structures.
 ##### kind
 
 ```ts
-kind: "structure"
+kind: "structure";
 ```
 
 ##### structures
@@ -313,14 +313,14 @@ structures: readonly string[]
 
 Structure ids shown in the interaction tooltip.
 
-***
+---
 
 ### InteractionEntity :id=interactionentity
 
 <p class="smt-member-path"><code>sandkit.api.elements.InteractionEntity</code></p>
 
 ```ts
-InteractionEntity = object
+InteractionEntity = object;
 ```
 
 Defined in: [sandkit/api/elements.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L114)
@@ -332,7 +332,7 @@ Interaction that affects specific entities.
 ##### kind
 
 ```ts
-kind: "entity"
+kind: "entity";
 ```
 
 Defined in: [sandkit/api/elements.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L115)
@@ -347,14 +347,14 @@ Defined in: [sandkit/api/elements.d.ts:117](https://github.com/sandustry-modding
 
 Entity type ids referenced by the interaction.
 
-***
+---
 
 ### InteractionFlammable :id=interactionflammable
 
 <p class="smt-member-path"><code>sandkit.api.elements.InteractionFlammable</code></p>
 
 ```ts
-InteractionFlammable = object
+InteractionFlammable = object;
 ```
 
 Defined in: [sandkit/api/elements.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L121)
@@ -366,19 +366,19 @@ Interaction that marks the element as flammable.
 ##### kind
 
 ```ts
-kind: "flammable"
+kind: "flammable";
 ```
 
 Defined in: [sandkit/api/elements.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L121)
 
-***
+---
 
 ### InteractionMeltable :id=interactionmeltable
 
 <p class="smt-member-path"><code>sandkit.api.elements.InteractionMeltable</code></p>
 
 ```ts
-InteractionMeltable = object
+InteractionMeltable = object;
 ```
 
 Defined in: [sandkit/api/elements.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L123)
@@ -390,19 +390,19 @@ Interaction that marks the element as meltable.
 ##### kind
 
 ```ts
-kind: "meltable"
+kind: "meltable";
 ```
 
 Defined in: [sandkit/api/elements.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L123)
 
-***
+---
 
 ### InteractionFreezable :id=interactionfreezable
 
 <p class="smt-member-path"><code>sandkit.api.elements.InteractionFreezable</code></p>
 
 ```ts
-InteractionFreezable = object
+InteractionFreezable = object;
 ```
 
 Defined in: [sandkit/api/elements.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L125)
@@ -414,19 +414,19 @@ Interaction that marks the element as freezable.
 ##### kind
 
 ```ts
-kind: "freezable"
+kind: "freezable";
 ```
 
 Defined in: [sandkit/api/elements.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L125)
 
-***
+---
 
 ### InteractionCustom :id=interactioncustom
 
 <p class="smt-member-path"><code>sandkit.api.elements.InteractionCustom</code></p>
 
 ```ts
-InteractionCustom = InteractionStructureMetadata & object
+InteractionCustom = InteractionStructureMetadata & object;
 ```
 
 Defined in: [sandkit/api/elements.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L127)
@@ -438,31 +438,38 @@ Interaction handled by custom mod logic and tooltip text.
 ##### kind
 
 ```ts
-kind: "custom"
+kind: "custom";
 ```
 
-***
+---
 
 ### Interaction :id=interaction
 
 <p class="smt-member-path"><code>sandkit.api.elements.Interaction</code></p>
 
 ```ts
-Interaction = InteractionDestroyer | InteractionStructure | InteractionEntity | InteractionFlammable | InteractionMeltable | InteractionFreezable | InteractionCustom
+Interaction =
+  InteractionDestroyer |
+  InteractionStructure |
+  InteractionEntity |
+  InteractionFlammable |
+  InteractionMeltable |
+  InteractionFreezable |
+  InteractionCustom;
 ```
 
 Defined in: [sandkit/api/elements.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L130)
 
 Union of element interaction kinds for tool and structure logic.
 
-***
+---
 
 ### ElementType :id=elementtype
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementType</code></p>
 
 ```ts
-ElementType = ElementType | TaggedNumber<"elementType">
+ElementType = ElementType | TaggedNumber<"elementType">;
 ```
 
 Defined in: [shared/api/elements.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L20)
@@ -474,14 +481,14 @@ Built-in [ElementTypeEnum](api/sandkit.enums.ElementType.md) values autocomplete
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ElementId :id=elementid
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementId</code></p>
 
 ```ts
-ElementId = LooseString<never>
+ElementId = LooseString<never>;
 ```
 
 Defined in: [shared/api/elements.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L27)
@@ -492,14 +499,14 @@ Mod or built-in element string id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ElementRef :id=elementref
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementRef</code></p>
 
 ```ts
-ElementRef = ElementType | ElementId
+ElementRef = ElementType | ElementId;
 ```
 
 Defined in: [shared/api/elements.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L34)
@@ -510,14 +517,14 @@ Type handle or string id accepted by lookup helpers.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ElementDefinition :id=elementdefinition
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementDefinition</code></p>
 
 ```ts
-ElementDefinition = object
+ElementDefinition = object;
 ```
 
 Defined in: [shared/api/elements.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L57)
@@ -533,7 +540,7 @@ Mod-registered element definition snapshot.
 ##### id
 
 ```ts
-id: string
+id: string;
 ```
 
 Defined in: [shared/api/elements.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L58)
@@ -541,7 +548,7 @@ Defined in: [shared/api/elements.d.ts:58](https://github.com/sandustry-modding/S
 ##### nameKey
 
 ```ts
-nameKey: string
+nameKey: string;
 ```
 
 Defined in: [shared/api/elements.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L59)
@@ -561,7 +568,7 @@ Defined in: [shared/api/elements.d.ts:60](https://github.com/sandustry-modding/S
 ##### colors
 
 ```ts
-colors: object
+colors: object;
 ```
 
 Defined in: [shared/api/elements.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L61)
@@ -605,7 +612,7 @@ variants: [number, number, number][]
 ##### density
 
 ```ts
-density: number
+density: number;
 ```
 
 Defined in: [shared/api/elements.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L70)
@@ -613,7 +620,7 @@ Defined in: [shared/api/elements.d.ts:70](https://github.com/sandustry-modding/S
 ##### matterType
 
 ```ts
-matterType: MatterType
+matterType: MatterType;
 ```
 
 Defined in: [shared/api/elements.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L71)
@@ -663,7 +670,7 @@ Defined in: [shared/api/elements.d.ts:78](https://github.com/sandustry-modding/S
 ###### data
 
 ```ts
-data: Record<PropertyKey, any>
+data: Record<PropertyKey, any>;
 ```
 
 ## Functions <!-- {docsify-ignore} -->
@@ -688,7 +695,7 @@ Returns all registered element type ids.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### register() :id=register
 
@@ -719,14 +726,14 @@ Object with the assigned `elementType`.
 ##### elementType
 
 ```ts
-elementType: ElementType
+elementType: ElementType;
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### updateDefinition() :id=updatedefinition
 
@@ -770,7 +777,7 @@ api.elements.updateDefinition("exampleElement", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### addInteractionInfo() :id=addinteractioninfo
 
@@ -806,7 +813,7 @@ Interaction entry to append.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getNameByType() :id=getnamebytype
 
@@ -836,7 +843,7 @@ Numeric element type.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### findFreeCellInStructure() :id=findfreecellinstructure
 
@@ -880,7 +887,7 @@ Cell coordinates of a free cell, or null when none.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### createAtCell() :id=createatcell
 
@@ -926,7 +933,7 @@ api.elements.createAtCell(cellX, cellY, "steam", {
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~createAtCellWhenIdle()~~
 
@@ -954,7 +961,7 @@ Use [createAtCell](#createatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### replaceAtCell() :id=replaceatcell
 
@@ -982,7 +989,7 @@ Replace the element at a cell. Main-entry writes are deferred; reads see the old
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~replaceAtCellWhenIdle()~~
 
@@ -1010,7 +1017,7 @@ Use [replaceAtCell](#replaceatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### removeAtCell() :id=removeatcell
 
@@ -1038,7 +1045,7 @@ Remove the element at a cell. Main-entry writes are deferred; reads see the old 
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~removeAtCellWhenIdle()~~
 
@@ -1066,7 +1073,7 @@ Use [removeAtCell](#removeatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### teleportBetweenCells() :id=teleportbetweencells
 
@@ -1114,7 +1121,7 @@ Destination cell row.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~teleportBetweenCellsWhenIdle()~~
 
@@ -1154,7 +1161,7 @@ Use [teleportBetweenCells](#teleportbetweencells) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### setVelocityAtCell() :id=setvelocityatcell
 
@@ -1188,7 +1195,7 @@ api.elements.setVelocityAtCell(cellX, cellY, { x: 0, y: -120 });
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~setVelocityAtCellWhenIdle()~~
 
@@ -1216,7 +1223,7 @@ Use [setVelocityAtCell](#setvelocityatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### addParticleVelocityAtCell() :id=addparticlevelocityatcell
 
@@ -1243,19 +1250,14 @@ Add velocity to a particle at a cell. Main-entry writes are deferred; reads see 
 #### Example
 
 ```ts
-api.elements.addParticleVelocityAtCell(
-  cellX,
-  cellY,
-  { x: 4, y: -8 },
-  120,
-);
+api.elements.addParticleVelocityAtCell(cellX, cellY, { x: 4, y: -8 }, 120);
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~addParticleVelocityAtCellWhenIdle()~~
 
@@ -1283,7 +1285,7 @@ Use [addParticleVelocityAtCell](#addparticlevelocityatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### convertToParticleAtCell() :id=converttoparticleatcell
 
@@ -1310,18 +1312,14 @@ Convert a cell element to a particle. Main-entry writes are deferred; reads see 
 #### Example
 
 ```ts
-api.elements.convertToParticleAtCell(
-  cellX,
-  cellY,
-  { x: 0, y: -120 },
-);
+api.elements.convertToParticleAtCell(cellX, cellY, { x: 0, y: -120 });
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~convertToParticleAtCellWhenIdle()~~
 
@@ -1349,7 +1347,7 @@ Use [convertToParticleAtCell](#converttoparticleatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### convertFromParticleAtCell() :id=convertfromparticleatcell
 
@@ -1377,7 +1375,7 @@ Convert a particle back to a solid element. Main-entry writes are deferred; read
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~convertFromParticleAtCellWhenIdle()~~
 
@@ -1405,7 +1403,7 @@ Use [convertFromParticleAtCell](#convertfromparticleatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### setDataFieldAtCell() :id=setdatafieldatcell
 
@@ -1433,7 +1431,7 @@ Set a data field on the element at a cell. Main-entry writes are deferred; reads
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~setDataFieldAtCellWhenIdle()~~
 
@@ -1461,7 +1459,7 @@ Use [setDataFieldAtCell](#setdatafieldatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### refreshColorAtCell() :id=refreshcoloratcell
 
@@ -1489,7 +1487,7 @@ Refresh the rendered color at a cell. Main-entry writes are deferred; reads see 
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~refreshColorAtCellWhenIdle()~~
 
@@ -1517,7 +1515,7 @@ Use [refreshColorAtCell](#refreshcoloratcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### setPhysicsAtCell() :id=setphysicsatcell
 
@@ -1545,7 +1543,7 @@ Set the physics skip mode at a cell. Main-entry writes are deferred; reads see t
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~setPhysicsAtCellWhenIdle()~~
 
@@ -1573,7 +1571,7 @@ Use [setPhysicsAtCell](#setphysicsatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### setDurationAtCell() :id=setdurationatcell
 
@@ -1602,19 +1600,14 @@ Set element duration at a cell. Main-entry writes are deferred; reads see the ol
 **Main entry**
 
 ```ts
-api.elements.setDurationAtCell(
-  cellX,
-  cellY,
-  120,
-  { updateMax: true },
-);
+api.elements.setDurationAtCell(cellX, cellY, 120, { updateMax: true });
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~setDurationAtCellWhenIdle()~~
 
@@ -1642,7 +1635,7 @@ Use [setDurationAtCell](#setdurationatcell) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### getIdByType() :id=getidbytype
 
@@ -1672,7 +1665,7 @@ Numeric element type.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getTypeById() :id=gettypebyid
 
@@ -1702,7 +1695,7 @@ Mod-registered element id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~getTypeFromId()~~
 
@@ -1730,7 +1723,7 @@ Use [getTypeById](#gettypebyid) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getDefinitionByType() :id=getdefinitionbytype
 
@@ -1760,7 +1753,7 @@ Numeric element type.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getTypeAtCell() :id=gettypeatcell
 
@@ -1788,7 +1781,7 @@ Return the raw element type at a cell (may differ from resolved type).
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getResolvedTypeAtCell() :id=getresolvedtypeatcell
 
@@ -1816,7 +1809,7 @@ Return the resolved element type after overlays and particles.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getResolvedTypeFromCellId() :id=getresolvedtypefromcellid
 
@@ -1846,7 +1839,7 @@ Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md#getcellidatc
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getInfoAtCell() :id=getinfoatcell
 
@@ -1874,7 +1867,7 @@ Return element index, particle flag, and ids at a cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getMatterTypeAtCell() :id=getmattertypeatcell
 
@@ -1902,7 +1895,7 @@ Return the matter category at a cell, or null when empty.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isTypeAtCell() :id=istypeatcell
 
@@ -1930,7 +1923,7 @@ Return true when the cell holds the given element type or id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isFreeFallingAtCell() :id=isfreefallingatcell
 
@@ -1958,7 +1951,7 @@ Return true when the element at the cell is falling.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getVelocityAtCell() :id=getvelocityatcell
 
@@ -1986,7 +1979,7 @@ Return per-cell velocity for moving elements.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getDataFieldAtCell() :id=getdatafieldatcell
 

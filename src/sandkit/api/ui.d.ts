@@ -186,7 +186,13 @@ export namespace ui {
    * );
    * ```
    */
-  export function prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>;
+  export function prompt(
+    message: LocalizedText,
+    defaultValue?: string,
+    placeholder?: LocalizedText,
+    title?: LocalizedText,
+    allowCopy?: boolean,
+  ): Promise<string | null>;
 
   /**
    * Mount a React component by id.
@@ -194,7 +200,10 @@ export namespace ui {
    * @param component - React component to render.
    * @returns Function that unmounts the injected component.
    */
-  export function inject(componentId: ComponentId, component: ComponentType<Record<string, never>>): () => void;
+  export function inject(
+    componentId: ComponentId,
+    component: ComponentType<Record<string, never>>,
+  ): () => void;
 
   /** Overlay slot registration and updates. */
   export namespace overlays {
@@ -236,7 +245,9 @@ export namespace ui {
      * });
      * ```
      */
-    export function useFocusable<T extends HTMLElement = HTMLDivElement>(options: FocusOptions): Focusable<T>;
+    export function useFocusable<T extends HTMLElement = HTMLDivElement>(
+      options: FocusOptions,
+    ): Focusable<T>;
 
     /**
      * React hook to register a focus scope with back handling.
@@ -251,7 +262,13 @@ export namespace ui {
      * });
      * ```
      */
-    export function useFocusScope(options: { readonly id: string; readonly active: boolean; readonly priority?: number; readonly defaultId?: string; readonly onBack?: (() => boolean | void); }): void;
+    export function useFocusScope(options: {
+      readonly id: string;
+      readonly active: boolean;
+      readonly priority?: number;
+      readonly defaultId?: string;
+      readonly onBack?: () => boolean | void;
+    }): void;
 
     /**
      * Return CSS class for controller focus ring state.
@@ -281,7 +298,7 @@ export namespace ui {
   /** Message tooltip with localized body text. */
   export interface TooltipMessageData {
     /** Discriminator for tooltip renderer selection. */
-    type: 'message';
+    type: "message";
     /** Message body as localized text. */
     text: LocalizedText;
   }
@@ -305,7 +322,7 @@ export namespace ui {
     /** Called when the element is activated (A button / Enter). */
     readonly onActivate: (element?: HTMLElement) => void;
     /** Called when the element receives focus. */
-    readonly onFocus?: (() => void);
+    readonly onFocus?: () => void;
     /** When true, skip this element during navigation. */
     readonly disabled?: boolean;
     /** Optional grid column for spatial navigation. */
@@ -313,7 +330,7 @@ export namespace ui {
     /** Optional grid row for spatial navigation. */
     readonly y?: number;
     /** Neighbor ids for directional navigation. */
-    readonly neighbors?: Partial<Record<'left' | 'right' | 'up' | 'down', string>>;
+    readonly neighbors?: Partial<Record<"left" | "right" | "up" | "down", string>>;
     /** When true, scroll the element into view on focus. */
     readonly scrollIntoView?: boolean;
   }

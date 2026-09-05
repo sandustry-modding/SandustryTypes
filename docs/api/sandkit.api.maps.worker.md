@@ -4,7 +4,7 @@
 
 Shared `sandkit.api.maps` base — active custom map metadata.
 
- Base namespace reused by main and worker declarations.
+Base namespace reused by main and worker declarations.
 
 ## Interfaces <!-- {docsify-ignore} -->
 

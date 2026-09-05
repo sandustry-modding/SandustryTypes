@@ -8,7 +8,6 @@
 import { shared } from "../../shared";
 
 export namespace player {
-
   /** Return the player world position. */
   export import getPositionAtWorld = shared.api.player.getPositionAtWorld;
   /** Return true when the player overlaps the given cell. */
@@ -68,7 +67,7 @@ export namespace player {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function setMovementMode(mode: 'normal' | 'hover'): boolean;
+  export function setMovementMode(mode: "normal" | "hover"): boolean;
 
   /**
    * Return true when the player is on ground.

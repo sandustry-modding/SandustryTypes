@@ -36,7 +36,9 @@ export namespace authorization {
    * @param isFlamethrower - When true, apply flamethrower-specific rules.
    * @returns True when tool use is allowed at the cell.
    */
-  export function canUseToolAtCell(...args: [...CellCoordinates, isFlamethrower?: boolean]): boolean;
+  export function canUseToolAtCell(
+    ...args: [...CellCoordinates, isFlamethrower?: boolean]
+  ): boolean;
 
   /**
    * Return the authorization zone id at the cell.

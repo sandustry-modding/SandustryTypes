@@ -26,7 +26,9 @@ export namespace settings {
    * });
    * ```
    */
-  export function onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void;
+  export function onChange(
+    callback: (values: Readonly<Record<string, ConfigValueV1>>) => void,
+  ): () => void;
 
   /** Settings field id. Any string is allowed. */
   export type FieldId = LooseString<never>;

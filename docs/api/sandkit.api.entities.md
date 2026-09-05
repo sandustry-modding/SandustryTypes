@@ -29,7 +29,7 @@ Active entity instance in the world.
 ##### id
 
 ```ts
-id: number
+id: number;
 ```
 
 Defined in: [sandkit/api/entities.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L79)
@@ -37,7 +37,7 @@ Defined in: [sandkit/api/entities.d.ts:79](https://github.com/sandustry-modding/
 ##### x
 
 ```ts
-x: number
+x: number;
 ```
 
 Defined in: [sandkit/api/entities.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L80)
@@ -45,7 +45,7 @@ Defined in: [sandkit/api/entities.d.ts:80](https://github.com/sandustry-modding/
 ##### y
 
 ```ts
-y: number
+y: number;
 ```
 
 Defined in: [sandkit/api/entities.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L81)
@@ -96,7 +96,7 @@ Runtime entity id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getAllByType() :id=getallbytype
 
@@ -126,7 +126,7 @@ Registered entity type string id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### spawnAtWorld() :id=spawnatworld
 
@@ -170,7 +170,7 @@ The spawned entity instance.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### remove() :id=remove
 
@@ -200,7 +200,7 @@ Runtime entity id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### launch() :id=launch
 
@@ -242,7 +242,7 @@ Optional launch speed.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### startCapture() :id=startcapture
 
@@ -272,7 +272,7 @@ Runtime entity id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### collect() :id=collect
 

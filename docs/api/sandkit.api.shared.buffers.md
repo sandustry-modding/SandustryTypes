@@ -53,7 +53,7 @@ const counts = api.shared.buffers.ensure("counts", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~create()~~
 
@@ -91,7 +91,7 @@ Use [ensure](#ensure) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### get() :id=get
 

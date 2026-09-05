@@ -18,7 +18,7 @@ Return elapsed game time in milliseconds.
 
 `number`
 
-***
+---
 
 ### getTick() :id=gettick
 

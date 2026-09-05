@@ -40,7 +40,7 @@ Function that returns React content.
 
 `void`
 
-***
+---
 
 ### unregister() :id=unregister
 
@@ -72,7 +72,7 @@ Overlay id passed to [register](#register).
 
 `void`
 
-***
+---
 
 ### update() :id=update
 

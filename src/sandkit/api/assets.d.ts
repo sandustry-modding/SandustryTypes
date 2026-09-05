@@ -5,11 +5,11 @@
 export namespace assets {
   /** Describes a mod or pack that supplies assets for a kind. */
   export type AssetProviderV1 = {
-    id: `${string}:${string}:${string}`,
-    kind: string,
-    localId?: string,
-    modId?: number,
-    modName: string,
+    id: `${string}:${string}:${string}`;
+    kind: string;
+    localId?: string;
+    modId?: number;
+    modName: string;
   };
   /**
    * Resolves a path under the mod folder to a loadable URL.

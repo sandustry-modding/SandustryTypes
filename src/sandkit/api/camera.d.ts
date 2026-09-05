@@ -24,5 +24,5 @@ export namespace camera {
    * const released = api.camera.releaseFocus({ durationMs: 250 });
    * ```
    */
-  export function releaseFocus(options?: { durationMs?: number; }): boolean;
+  export function releaseFocus(options?: { durationMs?: number }): boolean;
 }

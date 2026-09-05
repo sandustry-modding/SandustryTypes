@@ -37,26 +37,20 @@ Structure type, interval, and callback.
 #### Example
 
 ```ts
-api.structures.processing.register(
-  "exampleStructure:process",
-  {
-    structureType: "exampleStructure",
-    intervalMs: 250,
-    process: (structure, context) => {
-      const empty = context.isCellEmptyAtCell(
-        structure.x,
-        structure.y,
-      );
-    },
+api.structures.processing.register("exampleStructure:process", {
+  structureType: "exampleStructure",
+  intervalMs: 250,
+  process: (structure, context) => {
+    const empty = context.isCellEmptyAtCell(structure.x, structure.y);
   },
-);
+});
 ```
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### setEnabledAtCell() :id=setenabledatcell
 
@@ -86,7 +80,7 @@ True when the enabled state changed.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~setEnabledAt()~~
 
@@ -122,7 +116,7 @@ Use [setEnabledAtCell](#setenabledatcell) instead.
 
 Re-exports [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md#isenabledatcell)
 
-***
+---
 
 ### isEnabledAt :id=isenabledat
 

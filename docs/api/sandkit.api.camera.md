@@ -21,7 +21,7 @@ Snap the camera to the player position.
 
 `void`
 
-***
+---
 
 ### setFocusAtWorld() :id=setfocusatworld
 
@@ -55,7 +55,7 @@ World y position in pixels.
 
 True when focus was applied.
 
-***
+---
 
 ### releaseFocus() :id=releasefocus
 

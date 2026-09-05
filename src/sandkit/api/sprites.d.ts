@@ -19,7 +19,11 @@ export namespace sprites {
    * @param relativePath - Path relative to the mod folder.
    * @param options - Optional tint and load options.
    */
-  export function loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions): Promise<void>;
+  export function loadFromMod(
+    spriteId: string,
+    relativePath: string,
+    options?: SpriteLoadOptions,
+  ): Promise<void>;
   /**
    * Return a loaded sprite by id.
    * @param spriteId - Sprite id from {@link load} or {@link loadFromMod}.
@@ -34,7 +38,7 @@ export namespace sprites {
   export function rotatePlayerModSprites(angle: number): void;
 
   /** Loaded sprite handle (runtime texture or display object). */
-  export type LoadedSprite = unknown
+  export type LoadedSprite = unknown;
 
   /** Options for {@link load} and {@link loadFromMod}. */
   export interface SpriteLoadOptions {

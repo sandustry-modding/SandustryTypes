@@ -32,7 +32,7 @@ Registered item id string.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~addFromId()~~
 

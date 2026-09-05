@@ -13,7 +13,7 @@
  * Use for open-ended config bags and serialized mod data.
  */
 export interface JsonObjectV1 {
-  [key: string]: JsonValueV1
+  [key: string]: JsonValueV1;
 }
 
 /**
@@ -21,10 +21,4 @@ export interface JsonObjectV1 {
  *
  * Does not include `undefined` — omit keys instead.
  */
-export type JsonValueV1 =
-  | string
-  | number
-  | boolean
-  | JsonObjectV1
-  | JsonValueV1[]
-  | null;
+export type JsonValueV1 = string | number | boolean | JsonObjectV1 | JsonValueV1[] | null;

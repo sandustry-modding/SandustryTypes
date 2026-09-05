@@ -13,7 +13,7 @@ Mirrors on-disk `src/sandkit/` and the host free variable: `api`, `engine`,
 <p class="smt-member-path"><code>sandkit.SandkitApi</code></p>
 
 ```ts
-SandkitApi = object
+SandkitApi = object;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L8)
@@ -29,7 +29,7 @@ Use this type when typing the host `sandkit.api` value as a whole.
 ##### action
 
 ```ts
-action: action
+action: action;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L10)
@@ -39,7 +39,7 @@ Player action and custom action data.
 ##### assets
 
 ```ts
-assets: assets
+assets: assets;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L12)
@@ -49,7 +49,7 @@ Mod asset URLs and provider selection.
 ##### authorization
 
 ```ts
-authorization: authorization
+authorization: authorization;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L14)
@@ -59,7 +59,7 @@ Build authorization checks.
 ##### building
 
 ```ts
-building: building
+building: building;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L16)
@@ -69,7 +69,7 @@ Building mode and placement.
 ##### blueprints
 
 ```ts
-blueprints: blueprints
+blueprints: blueprints;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L18)
@@ -79,7 +79,7 @@ Structure blueprint serialize and localize helpers.
 ##### camera
 
 ```ts
-camera: camera
+camera: camera;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L20)
@@ -89,7 +89,7 @@ Camera position and bounds.
 ##### collector
 
 ```ts
-collector: collector
+collector: collector;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L22)
@@ -99,7 +99,7 @@ Collector machine helpers.
 ##### constants
 
 ```ts
-constants: constants
+constants: constants;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L24)
@@ -109,7 +109,7 @@ Shared game constants.
 ##### cooldown
 
 ```ts
-cooldown: cooldown
+cooldown: cooldown;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L26)
@@ -119,7 +119,7 @@ Cooldown timers.
 ##### discoveries
 
 ```ts
-discoveries: discoveries
+discoveries: discoveries;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L28)
@@ -129,7 +129,7 @@ Discovery tracking.
 ##### effects
 
 ```ts
-effects: effects
+effects: effects;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L30)
@@ -139,7 +139,7 @@ Visual and gameplay effects.
 ##### elements
 
 ```ts
-elements: elements
+elements: elements;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L32)
@@ -149,7 +149,7 @@ Element types and cell mutations.
 ##### entities
 
 ```ts
-entities: entities
+entities: entities;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L34)
@@ -159,7 +159,7 @@ Entity spawn, capture, and lifecycle.
 ##### energy
 
 ```ts
-energy: energy
+energy: energy;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L36)
@@ -169,7 +169,7 @@ Energy network helpers.
 ##### events
 
 ```ts
-events: events
+events: events;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L38)
@@ -179,7 +179,7 @@ Game event subscription.
 ##### excavation
 
 ```ts
-excavation: excavation
+excavation: excavation;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L40)
@@ -189,7 +189,7 @@ Excavation helpers.
 ##### fire
 
 ```ts
-fire: fire
+fire: fire;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L42)
@@ -199,7 +199,7 @@ Fire and burning helpers.
 ##### factory
 
 ```ts
-factory: factory
+factory: factory;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L44)
@@ -209,7 +209,7 @@ Factory progression level and process counters.
 ##### game
 
 ```ts
-game: game
+game: game;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L46)
@@ -219,7 +219,7 @@ Game session start helpers.
 ##### gameConfig
 
 ```ts
-gameConfig: gameConfig
+gameConfig: gameConfig;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L48)
@@ -229,7 +229,7 @@ Game configuration values.
 ##### grid
 
 ```ts
-grid: grid
+grid: grid;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L53)
@@ -240,7 +240,7 @@ Official name for the former `api.world` surface.
 ##### hooks
 
 ```ts
-hooks: hooks
+hooks: hooks;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L55)
@@ -250,7 +250,7 @@ Intercept and modify hooks.
 ##### i18n
 
 ```ts
-i18n: i18n
+i18n: i18n;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L57)
@@ -260,7 +260,7 @@ Localization strings.
 ##### input
 
 ```ts
-input: input
+input: input;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L59)
@@ -270,7 +270,7 @@ Input state and bindings.
 ##### items
 
 ```ts
-items: items
+items: items;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L61)
@@ -280,7 +280,7 @@ Item definitions and inventory.
 ##### lights
 
 ```ts
-lights: lights
+lights: lights;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L63)
@@ -290,7 +290,7 @@ Dynamic light sources.
 ##### maps
 
 ```ts
-maps: maps
+maps: maps;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L65)
@@ -300,7 +300,7 @@ Map selection and session start.
 ##### mods
 
 ```ts
-mods: mods
+mods: mods;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L67)
@@ -310,7 +310,7 @@ Mod asset provider lookup.
 ##### patterns
 
 ```ts
-patterns: patterns
+patterns: patterns;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L69)
@@ -320,7 +320,7 @@ Excavation pattern helpers.
 ##### pipes
 
 ```ts
-pipes: pipes
+pipes: pipes;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L71)
@@ -330,7 +330,7 @@ Pipe network queries and enablement.
 ##### pickups
 
 ```ts
-pickups: pickups
+pickups: pickups;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L73)
@@ -340,7 +340,7 @@ World pickup spawn, collect, and lookup.
 ##### player
 
 ```ts
-player: player
+player: player;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L75)
@@ -350,7 +350,7 @@ Player position, movement, and inventory.
 ##### processing
 
 ```ts
-processing: processing
+processing: processing;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L77)
@@ -360,7 +360,7 @@ Processing recipe registration.
 ##### progression
 
 ```ts
-progression: progression
+progression: progression;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L79)
@@ -370,7 +370,7 @@ Story progression completion.
 ##### projectiles
 
 ```ts
-projectiles: projectiles
+projectiles: projectiles;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L81)
@@ -380,7 +380,7 @@ Projectile spawn and lifecycle.
 ##### random
 
 ```ts
-random: random
+random: random;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L83)
@@ -390,7 +390,7 @@ Game random number helpers.
 ##### raycast
 
 ```ts
-raycast: raycast
+raycast: raycast;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L85)
@@ -400,7 +400,7 @@ World raycast queries.
 ##### reactions
 
 ```ts
-reactions: reactions
+reactions: reactions;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L87)
@@ -410,7 +410,7 @@ Element contact reactions.
 ##### rendering
 
 ```ts
-rendering: rendering
+rendering: rendering;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L89)
@@ -420,7 +420,7 @@ Screen drawing and overlay canvas.
 ##### resources
 
 ```ts
-resources: resources
+resources: resources;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L91)
@@ -430,7 +430,7 @@ Fluxite and energy resources.
 ##### scene
 
 ```ts
-scene: scene
+scene: scene;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L93)
@@ -440,7 +440,7 @@ Active game scene.
 ##### schedule
 
 ```ts
-schedule: schedule
+schedule: schedule;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L95)
@@ -450,7 +450,7 @@ Next-tick callback scheduling.
 ##### settings
 
 ```ts
-settings: settings
+settings: settings;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L97)
@@ -460,7 +460,7 @@ Game settings read and change events.
 ##### shared
 
 ```ts
-shared: shared
+shared: shared;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L99)
@@ -470,7 +470,7 @@ Cross-thread shared buffers.
 ##### signals
 
 ```ts
-signals: signals
+signals: signals;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L101)
@@ -480,7 +480,7 @@ Signal target registration.
 ##### sound
 
 ```ts
-sound: sound
+sound: sound;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L103)
@@ -490,7 +490,7 @@ Sound playback and stop controls.
 ##### sprites
 
 ```ts
-sprites: sprites
+sprites: sprites;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L105)
@@ -500,7 +500,7 @@ Sprite load and transforms.
 ##### storage
 
 ```ts
-storage: storage
+storage: storage;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L107)
@@ -510,7 +510,7 @@ Per-mod and local storage.
 ##### structureBehaviors
 
 ```ts
-structureBehaviors: structureBehaviors
+structureBehaviors: structureBehaviors;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L109)
@@ -520,7 +520,7 @@ Conveyor and launcher behaviors.
 ##### structures
 
 ```ts
-structures: structures
+structures: structures;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L111)
@@ -530,7 +530,7 @@ Structure registration and queries.
 ##### tech
 
 ```ts
-tech: tech
+tech: tech;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L113)
@@ -540,7 +540,7 @@ Tech tree definitions and locks.
 ##### terrains
 
 ```ts
-terrains: terrains
+terrains: terrains;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L115)
@@ -550,7 +550,7 @@ Terrain registration and mutations.
 ##### time
 
 ```ts
-time: time
+time: time;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L117)
@@ -560,7 +560,7 @@ Game time and tick counter.
 ##### tools
 
 ```ts
-tools: tools
+tools: tools;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L119)
@@ -570,7 +570,7 @@ Tool-specific helpers.
 ##### triggers
 
 ```ts
-triggers: triggers
+triggers: triggers;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L121)
@@ -580,7 +580,7 @@ Interval trigger registration.
 ##### ui
 
 ```ts
-ui: ui
+ui: ui;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L123)
@@ -590,7 +590,7 @@ UI overlays, dialogs, and navigation.
 ##### upgrades
 
 ```ts
-upgrades: upgrades
+upgrades: upgrades;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L125)
@@ -600,7 +600,7 @@ Upgrade categories and levels.
 ##### utils
 
 ```ts
-utils: utils
+utils: utils;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L127)
@@ -610,7 +610,7 @@ Vector math helpers.
 ##### workers
 
 ```ts
-workers: workers
+workers: workers;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L129)
@@ -620,7 +620,7 @@ Worker post-update control.
 ##### ~~world~~
 
 ```ts
-world: world
+world: world;
 ```
 
 Defined in: [sandkit/api/sandkit-api.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sandkit-api.d.ts#L133)
@@ -629,14 +629,14 @@ Defined in: [sandkit/api/sandkit-api.d.ts:133](https://github.com/sandustry-modd
 
 Use [grid](#grid) for cell APIs and [pickups](#pickups) for world items.
 
-***
+---
 
 ### Sandkit :id=sandkit
 
 <p class="smt-member-path"><code>sandkit.Sandkit</code></p>
 
 ```ts
-Sandkit = object
+Sandkit = object;
 ```
 
 Defined in: [sandkit/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L33)
@@ -660,7 +660,7 @@ const engineState = sandkit.engine.state;
 ##### api
 
 ```ts
-api: SandkitApi
+api: SandkitApi;
 ```
 
 Defined in: [sandkit/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L35)
@@ -670,7 +670,7 @@ Public mod API. See [sandkit.api](#api-1).
 ##### apiVersion
 
 ```ts
-apiVersion: number
+apiVersion: number;
 ```
 
 Defined in: [sandkit/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L37)
@@ -680,7 +680,7 @@ Sandkit API version number (live value is `1`).
 ##### engine
 
 ```ts
-engine: SandkitEngine
+engine: SandkitEngine;
 ```
 
 Defined in: [sandkit/index.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L42)
@@ -692,7 +692,7 @@ State-first internals. See [SandkitEngine](api/sandkit.engine.md#sandkitengine).
 ##### enums
 
 ```ts
-enums: SandkitEnums
+enums: SandkitEnums;
 ```
 
 Defined in: [sandkit/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L44)
@@ -702,7 +702,7 @@ Runtime enum bags. See [sandkit.enums](#enums-1).
 ##### react
 
 ```ts
-react: SandkitReact
+react: SandkitReact;
 ```
 
 Defined in: [sandkit/index.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L46)
@@ -712,7 +712,7 @@ Host React package. See [SandkitReact](api/sandkit.react.md#sandkitreact).
 ##### state
 
 ```ts
-state: SandkitState
+state: SandkitState;
 ```
 
 Defined in: [sandkit/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L51)
@@ -728,7 +728,7 @@ See [SandkitState](api/sandkit.engine.md#sandkitstate).
 
 Renames and re-exports [sandkit/api](api/sandkit.api.md)
 
-***
+---
 
 ### engine :id=engine
 
@@ -736,7 +736,7 @@ Renames and re-exports [sandkit/api](api/sandkit.api.md)
 
 Re-exports [engine](api/sandkit.engine.md)
 
-***
+---
 
 ### enums :id=enums
 
@@ -744,7 +744,7 @@ Re-exports [engine](api/sandkit.engine.md)
 
 Renames and re-exports [sandkit/enums](api/sandkit.enums.md)
 
-***
+---
 
 ### SandkitEngine :id=sandkitengine
 
@@ -752,7 +752,7 @@ Renames and re-exports [sandkit/enums](api/sandkit.enums.md)
 
 Re-exports [SandkitEngine](api/sandkit.engine.md#sandkitengine)
 
-***
+---
 
 ### SandkitEngineApi :id=sandkitengineapi
 
@@ -760,7 +760,7 @@ Re-exports [SandkitEngine](api/sandkit.engine.md#sandkitengine)
 
 Re-exports [SandkitEngineApi](api/sandkit.engine.md#sandkitengineapi)
 
-***
+---
 
 ### RetroConsoleApi :id=retroconsoleapi
 
@@ -768,7 +768,7 @@ Re-exports [SandkitEngineApi](api/sandkit.engine.md#sandkitengineapi)
 
 Re-exports [RetroConsoleApi](api/sandkit.engine.md#retroconsoleapi)
 
-***
+---
 
 ### SandkitState :id=sandkitstate
 
@@ -776,7 +776,7 @@ Re-exports [RetroConsoleApi](api/sandkit.engine.md#retroconsoleapi)
 
 Re-exports [SandkitState](api/sandkit.engine.md#sandkitstate)
 
-***
+---
 
 ### SandkitEnums :id=sandkitenums
 
@@ -784,7 +784,7 @@ Re-exports [SandkitState](api/sandkit.engine.md#sandkitstate)
 
 Re-exports [SandkitEnums](api/sandkit.enums.md#sandkitenums)
 
-***
+---
 
 ### SandkitReact :id=sandkitreact
 

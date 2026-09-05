@@ -32,7 +32,7 @@ Registered structure id string.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~unlockByType()~~
 
@@ -60,7 +60,7 @@ Use [unlockById](#unlockbyid) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### removeById() :id=removebyid
 

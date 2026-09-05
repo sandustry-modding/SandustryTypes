@@ -91,9 +91,7 @@ const versionHeading = new RegExp(
   "m",
 );
 if (!versionHeading.test(changelog)) {
-  fail(
-    `CHANGELOG.md must include a dated section "## ${version} - YYYY-MM-DD" before publish`,
-  );
+  fail(`CHANGELOG.md must include a dated section "## ${version} - YYYY-MM-DD" before publish`);
 }
 
 const unreleasedMatch = changelog.match(/^## Unreleased\s*\n([\s\S]*?)(?=^## )/m);

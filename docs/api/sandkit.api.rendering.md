@@ -24,7 +24,7 @@ Return screen draw position for a grid cell.
 
 [`Vector2`](api/shared.player.md#vector2)
 
-***
+---
 
 ### getDrawPositionAtWorld() :id=getdrawpositionatworld
 
@@ -69,7 +69,7 @@ api.events.on("frame:render", () => {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getGridMetrics() :id=getgridmetrics
 
@@ -90,13 +90,13 @@ Return cell size and snap grid metrics.
 ##### cellSize
 
 ```ts
-cellSize: number
+cellSize: number;
 ```
 
 ##### snapGridCellSize
 
 ```ts
-snapGridCellSize: number
+snapGridCellSize: number;
 ```
 
 #### Example
@@ -105,7 +105,7 @@ snapGridCellSize: number
 const { cellSize, snapGridCellSize } = api.rendering.getGridMetrics();
 ```
 
-***
+---
 
 ### getOverlayViewportSize() :id=getoverlayviewportsize
 
@@ -126,16 +126,16 @@ Return overlay viewport width and height in pixels.
 ##### width
 
 ```ts
-width: number
+width: number;
 ```
 
 ##### height
 
 ```ts
-height: number
+height: number;
 ```
 
-***
+---
 
 ### withOverlayContext() :id=withoverlaycontext
 

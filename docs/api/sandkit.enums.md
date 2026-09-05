@@ -33,7 +33,7 @@
 <p class="smt-member-path"><code>sandkit.enums.SandkitEnums</code></p>
 
 ```ts
-SandkitEnums = object
+SandkitEnums = object;
 ```
 
 Defined in: [sandkit/enums/index.d.ts:431](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L431)

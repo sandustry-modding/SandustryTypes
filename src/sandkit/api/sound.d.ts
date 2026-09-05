@@ -45,7 +45,11 @@ export namespace sound {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function calculateDistanceOptionsAtWorld(worldX: number, worldY: number, baseVolume?: number): SoundOptions;
+  export function calculateDistanceOptionsAtWorld(
+    worldX: number,
+    worldY: number,
+    baseVolume?: number,
+  ): SoundOptions;
 
   /**
    * Stop a sound by id.

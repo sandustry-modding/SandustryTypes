@@ -42,12 +42,7 @@ export type PatchTargetFile =
  *
  * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
  */
-export type PatchOperation =
-  | "replace"
-  | "remove"
-  | "insertBefore"
-  | "insertAfter"
-  | "wrap";
+export type PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfter" | "wrap";
 
 /**
  * Regex finder when the target is not a plain {@link BundlePatch.find} string.

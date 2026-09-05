@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getCrystalMined() :id=getcrystalmined
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getDiskRadiusCells() :id=getdiskradiuscells
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getEntityType() :id=getentitytype
 
@@ -112,7 +112,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getNearestConvergence() :id=getnearestconvergence
 
@@ -138,7 +138,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getPendingConvergence() :id=getpendingconvergence
 
@@ -164,7 +164,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getPlacedConsoles() :id=getplacedconsoles
 
@@ -190,7 +190,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getRadiusPx() :id=getradiuspx
 
@@ -216,7 +216,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### isSpawnJammed() :id=isspawnjammed
 
@@ -242,7 +242,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### registerEntityType() :id=registerentitytype
 
@@ -268,7 +268,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### resetAllConvergenceBuffers() :id=resetallconvergencebuffers
 
@@ -294,7 +294,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### setSpawnJammed() :id=setspawnjammed
 

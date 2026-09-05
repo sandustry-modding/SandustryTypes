@@ -32,7 +32,7 @@ Dig pattern grid; non-zero cells are removed.
 ##### power
 
 ```ts
-power: number
+power: number;
 ```
 
 Defined in: [sandkit/api/excavation.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L54)
@@ -59,7 +59,7 @@ Defined in: [sandkit/api/excavation.d.ts:58](https://github.com/sandustry-moddin
 
 Per-terrain output and damage rules.
 
-***
+---
 
 ### ExcavationProfileOptions :id=excavationprofileoptions
 
@@ -129,7 +129,7 @@ Defined in: [sandkit/api/excavation.d.ts:70](https://github.com/sandustry-moddin
 
 Clamped to 0–1000 when set.
 
-***
+---
 
 ### ExcavationTerrainRule :id=excavationterrainrule
 
@@ -144,7 +144,7 @@ Terrain match rule within an excavation profile.
 ##### cellType
 
 ```ts
-cellType: TerrainRef
+cellType: TerrainRef;
 ```
 
 Defined in: [sandkit/api/excavation.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L76)
@@ -237,10 +237,7 @@ api.excavation.registerProfile(profileId, {
 });
 
 api.hooks.modify("excavation:prepare", (args) => {
-  if (
-    args.sourceKind !== "projectile"
-    || args.sourceId !== "implosionGun"
-  ) {
+  if (args.sourceKind !== "projectile" || args.sourceId !== "implosionGun") {
     return;
   }
 

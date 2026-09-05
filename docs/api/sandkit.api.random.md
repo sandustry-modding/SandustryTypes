@@ -32,7 +32,7 @@ Maximum value (inclusive).
 
 `number`
 
-***
+---
 
 ### float() :id=float
 

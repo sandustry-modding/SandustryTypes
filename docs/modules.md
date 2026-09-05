@@ -106,7 +106,6 @@ Sandkit namespaces used by mods. Use groups below to find a namespace, or open [
 <li><a href="#/api/sandkit.api.game">game</a></li>
 </ul>
 
-
 ## Worker (`sandkit.api`)
 
 Worker-thread namespaces. Same names as main where they overlap; pages use a `.worker` URL suffix.
@@ -129,7 +128,6 @@ Worker-thread namespaces. Same names as main where they overlap; pages use a `.w
 <li><a href="#/api/sandkit.api.worker.worker">worker</a></li>
 <li><a href="#/api/sandkit.api.world.worker">world</a></li>
 </ul>
-
 
 ## Engine (`sandkit.engine`)
 
@@ -199,7 +197,6 @@ Worker-thread namespaces. Same names as main where they overlap; pages use a `.w
 <li><a href="#/api/sandkit.engine.api.workerLocal">workerLocal</a></li>
 </ul>
 
-
 ## Enums
 
 - [Overview](api/sandkit.enums.md)
@@ -230,7 +227,6 @@ Worker-thread namespaces. Same names as main where they overlap; pages use a `.w
 <li><a href="#/api/sandkit.enums.WorldItemType">WorldItemType</a></li>
 </ul>
 
-
 ## Shared domain types
 
 - [asset](api/shared.asset.md)
@@ -247,4 +243,3 @@ Not runtime `sandkit` objects. Import from `@sandustry-modding/types/configs`.
 - [JSON Schema](schemas.md) — raw schema URLs for editors
 
 </div>
-

@@ -34,7 +34,10 @@ export namespace shared {
      *
      * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
-    export function require(key: string, config: { type: SharedArrayType; length: number; }): SharedArray;
+    export function require(
+      key: string,
+      config: { type: SharedArrayType; length: number },
+    ): SharedArray;
 
     /**
      * Read an existing buffer without validating type or length.

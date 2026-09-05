@@ -15,91 +15,91 @@ Physical behaviour category for an element.
 <p class="smt-member-path"><code>sandkit.api.elements.MatterType.Solid</code></p>
 
 ```ts
-Solid: 1
+Solid: 1;
 ```
 
 Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L42)
 
-***
+---
 
 ### Liquid :id=liquid
 
 <p class="smt-member-path"><code>sandkit.api.elements.MatterType.Liquid</code></p>
 
 ```ts
-Liquid: 2
+Liquid: 2;
 ```
 
 Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L43)
 
-***
+---
 
 ### Particle :id=particle
 
 <p class="smt-member-path"><code>sandkit.api.elements.MatterType.Particle</code></p>
 
 ```ts
-Particle: 3
+Particle: 3;
 ```
 
 Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L44)
 
-***
+---
 
 ### Gas :id=gas
 
 <p class="smt-member-path"><code>sandkit.api.elements.MatterType.Gas</code></p>
 
 ```ts
-Gas: 4
+Gas: 4;
 ```
 
 Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L45)
 
-***
+---
 
 ### Static :id=static
 
 <p class="smt-member-path"><code>sandkit.api.elements.MatterType.Static</code></p>
 
 ```ts
-Static: 5
+Static: 5;
 ```
 
 Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L46)
 
-***
+---
 
 ### Slushy :id=slushy
 
 <p class="smt-member-path"><code>sandkit.api.elements.MatterType.Slushy</code></p>
 
 ```ts
-Slushy: 6
+Slushy: 6;
 ```
 
 Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L47)
 
-***
+---
 
 ### Wisp :id=wisp
 
 <p class="smt-member-path"><code>sandkit.api.elements.MatterType.Wisp</code></p>
 
 ```ts
-Wisp: 7
+Wisp: 7;
 ```
 
 Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L48)
 
-***
+---
 
 ### Powder :id=powder
 
 <p class="smt-member-path"><code>sandkit.api.elements.MatterType.Powder</code></p>
 
 ```ts
-Powder: 8
+Powder: 8;
 ```
 
 Defined in: [shared/api/elements.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L49)

@@ -24,5 +24,5 @@ export namespace resources {
    * api.resources.adjustEnergy(100, { deferUi: true });
    * ```
    */
-  export function updateEnergy(amount: number, options?: { deferUi?: boolean; }): void;
+  export function updateEnergy(amount: number, options?: { deferUi?: boolean }): void;
 }

@@ -48,7 +48,12 @@ export namespace projectiles {
    * @param blueprint - Blueprint from {@link createBlueprintFromId}.
    * @returns The spawned projectile instance.
    */
-  export function spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: ProjectileBlueprint): Projectile;
+  export function spawnAtWorld(
+    worldX: number,
+    worldY: number,
+    angle: number,
+    blueprint: ProjectileBlueprint,
+  ): Projectile;
 
   /** Mod-registered projectile definition. */
   export interface ProjectileDefinition {

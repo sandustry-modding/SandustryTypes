@@ -7,7 +7,7 @@ Shared `sandkit.api.terrains` base — terrain type lookup and cell mutation.
 Worker-entry mutations are immediate. Main thread defers matching helpers in
 `sandkit.api.terrains`.
 
- Base namespace reused by main and worker declarations.
+Base namespace reused by main and worker declarations.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -34,7 +34,7 @@ Terrain definition shape for register and [getDefinitionByType](#getdefinitionby
 ##### id
 
 ```ts
-id: string
+id: string;
 ```
 
 Defined in: [shared/api/terrains.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L22)
@@ -124,16 +124,16 @@ Default element drop when the terrain is destroyed.
 ###### elementType
 
 ```ts
-elementType: ElementType
+elementType: ElementType;
 ```
 
 ###### chance
 
 ```ts
-chance: number
+chance: number;
 ```
 
-***
+---
 
 ### TerrainDataAtCell :id=terraindataatcell
 
@@ -152,7 +152,7 @@ Terrain cell data returned by [getDataAtCell](#getdataatcell).
 ##### cellType
 
 ```ts
-cellType: TerrainType
+cellType: TerrainType;
 ```
 
 Defined in: [shared/api/terrains.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L52)
@@ -162,7 +162,7 @@ Numeric terrain cell type.
 ##### hitPoints
 
 ```ts
-hitPoints: number | null
+hitPoints: number | null;
 ```
 
 Defined in: [shared/api/terrains.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L58)
@@ -189,7 +189,7 @@ Use [hitPoints](#hitpoints) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### TerrainMutationOptions :id=terrainmutationoptions
 
@@ -222,7 +222,7 @@ Skip shadow updates around the changed cell.
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainType (worker)</code></p>
 
 ```ts
-TerrainType = CellType | TaggedNumber<"terrainType">
+TerrainType = CellType | TaggedNumber<"terrainType">;
 ```
 
 Defined in: [shared/api/terrains.d.ts:242](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L242)
@@ -233,14 +233,14 @@ Numeric terrain / [CellTypeEnum](api/sandkit.enums.CellType.md) handle.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### TerrainId :id=terrainid
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainId (worker)</code></p>
 
 ```ts
-TerrainId = LooseString<never>
+TerrainId = LooseString<never>;
 ```
 
 Defined in: [shared/api/terrains.d.ts:249](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L249)
@@ -251,14 +251,14 @@ Mod or built-in terrain string id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### TerrainRef :id=terrainref
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainRef (worker)</code></p>
 
 ```ts
-TerrainRef = TerrainType | TerrainId
+TerrainRef = TerrainType | TerrainId;
 ```
 
 Defined in: [shared/api/terrains.d.ts:256](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L256)
@@ -299,7 +299,7 @@ Numeric terrain cell type.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getTypeById() :id=gettypebyid
 
@@ -329,7 +329,7 @@ Mod-registered or built-in terrain id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~getTypeFromId()~~
 
@@ -357,7 +357,7 @@ Use [getTypeById](#gettypebyid) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getDefinitionByType() :id=getdefinitionbytype
 
@@ -387,7 +387,7 @@ Numeric terrain cell type.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getTypeAtCell() :id=gettypeatcell
 
@@ -415,7 +415,7 @@ Return the terrain cell type at a cell, or null when none.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getDataAtCell() :id=getdataatcell
 
@@ -445,7 +445,7 @@ Cell type and hit points, or null when the cell is not terrain.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isAtCell() :id=isatcell
 
@@ -473,7 +473,7 @@ Return true when any terrain occupies the cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isTypeAtCell() :id=istypeatcell
 
@@ -501,7 +501,7 @@ Return true when the cell terrain matches the given id.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isCellIdTerrain() :id=iscellidterrain
 
@@ -531,7 +531,7 @@ Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md#getcellidatc
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### damageAtCell() :id=damageatcell
 
@@ -559,7 +559,7 @@ Apply damage to terrain at a cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### meltAtCell() :id=meltatcell
 
@@ -587,7 +587,7 @@ Melt terrain at a cell (for example ice to water). Worker-entry writes are immed
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### createAtCell() :id=createatcell
 
@@ -615,7 +615,7 @@ Place terrain at an empty cell. Worker-entry writes are immediate.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### replaceAtCell() :id=replaceatcell
 
@@ -643,7 +643,7 @@ Replace existing terrain at a cell. Worker-entry writes are immediate.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### removeAtCell() :id=removeatcell
 
@@ -671,7 +671,7 @@ Remove terrain from a cell. Worker-entry writes are immediate.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### setHitPointsAtCell() :id=sethitpointsatcell
 
@@ -701,7 +701,7 @@ True when hit points changed or the terrain was removed.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### ~~setHpAtCell()~~
 

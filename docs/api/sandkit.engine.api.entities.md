@@ -34,7 +34,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getAll() :id=getall
 
@@ -60,7 +60,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getAllByType() :id=getallbytype
 
@@ -86,7 +86,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getAllTypeDefs() :id=getalltypedefs
 
@@ -112,7 +112,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getSprite() :id=getsprite
 
@@ -138,7 +138,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### getTypeDef() :id=gettypedef
 
@@ -164,7 +164,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### launch() :id=launch
 
@@ -190,7 +190,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### registerSpawner() :id=registerspawner
 
@@ -216,7 +216,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### registerType() :id=registertype
 
@@ -242,7 +242,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### spawn() :id=spawn
 
@@ -268,7 +268,7 @@ Game state first, then method-specific arguments.
 
 `unknown`
 
-***
+---
 
 ### startCapture() :id=startcapture
 

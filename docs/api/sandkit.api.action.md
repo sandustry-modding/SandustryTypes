@@ -10,7 +10,7 @@ Main thread only.
 <p class="smt-member-path"><code>sandkit.api.action.Action</code></p>
 
 ```ts
-Action = AssetRef
+Action = AssetRef;
 ```
 
 Defined in: [sandkit/api/action.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L9)
@@ -37,7 +37,7 @@ Return the action slot the player is using.
 
 Active hotbar action reference.
 
-***
+---
 
 ### getSelected() :id=getselected
 
@@ -57,7 +57,7 @@ Return the action slot selected in the hotbar.
 
 Selected hotbar action reference.
 
-***
+---
 
 ### setCustomData() :id=setcustomdata
 

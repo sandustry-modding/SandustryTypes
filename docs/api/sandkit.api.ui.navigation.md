@@ -20,7 +20,7 @@ React hook for a focusable UI element in a scope.
 
 ##### T
 
-`T` *extends* `HTMLElement` = `HTMLDivElement`
+`T` _extends_ `HTMLElement` = `HTMLDivElement`
 
 #### Parameters
 
@@ -46,7 +46,7 @@ const focusable = api.ui.navigation.useFocusable({
 });
 ```
 
-***
+---
 
 ### useFocusScope() :id=usefocusscope
 
@@ -100,7 +100,7 @@ api.ui.navigation.useFocusScope({
 });
 ```
 
-***
+---
 
 ### controllerFocusClass() :id=controllerfocusclass
 

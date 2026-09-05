@@ -43,7 +43,7 @@ Called when the binding is released.
 
 `void`
 
-***
+---
 
 ### InputBindingDefinition :id=inputbindingdefinition
 
@@ -64,7 +64,7 @@ Definition for a registered input binding.
 ##### displayName
 
 ```ts
-displayName: string
+displayName: string;
 ```
 
 Defined in: [sandkit/api/input.d.ts:123](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L123)
@@ -84,7 +84,7 @@ i18n key for the display name (overrides displayName when set).
 ##### category
 
 ```ts
-category: string
+category: string;
 ```
 
 Defined in: [sandkit/api/input.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L127)
@@ -94,7 +94,7 @@ Settings category for grouping.
 ##### handlers
 
 ```ts
-handlers: InputBindingHandlers
+handlers: InputBindingHandlers;
 ```
 
 Defined in: [sandkit/api/input.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L129)
@@ -108,21 +108,34 @@ Press and release handlers.
 <p class="smt-member-path"><code>sandkit.api.input.BindingId</code></p>
 
 ```ts
-BindingId = LooseString<` ${KeyBinding} `>
+BindingId = LooseString<` ${KeyBinding} `>;
 ```
 
 Defined in: [sandkit/api/input.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L92)
 
 Binding id. Vanilla [KeyBindingEnum](api/sandkit.enums.KeyBinding.md) names autocomplete; custom ids are allowed.
 
-***
+---
 
 ### KeyCode :id=keycode
 
 <p class="smt-member-path"><code>sandkit.api.input.KeyCode</code></p>
 
 ```ts
-KeyCode = LooseString<"Shift" | "Alt" | "Control" | "Meta" | "ShiftLeft" | "ShiftRight" | "AltLeft" | "AltRight" | "ControlLeft" | "ControlRight" | "MetaLeft" | "MetaRight">
+KeyCode = LooseString<
+  | "Shift"
+  | "Alt"
+  | "Control"
+  | "Meta"
+  | "ShiftLeft"
+  | "ShiftRight"
+  | "AltLeft"
+  | "AltRight"
+  | "ControlLeft"
+  | "ControlRight"
+  | "MetaLeft"
+  | "MetaRight"
+>;
 ```
 
 Defined in: [sandkit/api/input.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L97)
@@ -185,7 +198,7 @@ api.input.registerBinding("ExampleToggle", ["KeyO"], {
 });
 ```
 
-***
+---
 
 ### getMouseCellPosition() :id=getmousecellposition
 
@@ -208,16 +221,16 @@ Cell `{ x, y }` under the cursor.
 ##### x
 
 ```ts
-x: number
+x: number;
 ```
 
 ##### y
 
 ```ts
-y: number
+y: number;
 ```
 
-***
+---
 
 ### getBoundKeys() :id=getboundkeys
 
@@ -247,7 +260,7 @@ Key strings from settings (for example `"KeyA"` or `"Shift"`).
 Session `input.keys` is keyed by `KeyboardEvent.code`. Modifier aliases
 (`Shift`, `Alt`, `Control`, `Meta`) expand to `ShiftLeft` / `ShiftRight` and the same for the other modifiers.
 
-***
+---
 
 ### getDisplayKey() :id=getdisplaykey
 
@@ -281,7 +294,7 @@ Fallback label when no key is bound.
 
 Human-readable key label for UI.
 
-***
+---
 
 ### triggerBinding() :id=triggerbinding
 
@@ -307,7 +320,7 @@ Registered binding id.
 
 `void`
 
-***
+---
 
 ### pressBinding() :id=pressbinding
 
@@ -333,7 +346,7 @@ Registered binding id.
 
 `void`
 
-***
+---
 
 ### releaseBinding() :id=releasebinding
 
@@ -359,7 +372,7 @@ Registered binding id.
 
 `void`
 
-***
+---
 
 ### resetMouseState() :id=resetmousestate
 
@@ -377,7 +390,7 @@ Clear internal mouse button state.
 
 `void`
 
-***
+---
 
 ### isCtrlHeld() :id=isctrlheld
 
@@ -397,7 +410,7 @@ Return true when Ctrl is held.
 
 True when the Ctrl modifier is down.
 
-***
+---
 
 ### isAltHeld() :id=isaltheld
 

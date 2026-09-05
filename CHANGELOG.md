@@ -57,8 +57,6 @@ https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.4.0
 
 https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.3.1
 
-
-
 ### Fixed
 
 - Deep package imports such as `@sandustry-modding/types/sandkit/engine` (Node `exports` `*` matches one path segment; map file and `index.d.ts` targets under `src/`)

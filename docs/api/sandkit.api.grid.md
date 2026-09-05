@@ -23,7 +23,7 @@ Deferred element and terrain mutations passed to [mutate](#mutate).
 ##### elements
 
 ```ts
-elements: GridMutationWriterElements
+elements: GridMutationWriterElements;
 ```
 
 Defined in: [sandkit/api/grid.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L149)
@@ -33,14 +33,14 @@ Element cell mutations inside a [mutate](#mutate) callback.
 ##### terrains
 
 ```ts
-terrains: GridMutationWriterTerrains
+terrains: GridMutationWriterTerrains;
 ```
 
 Defined in: [sandkit/api/grid.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L151)
 
 Terrain cell mutations inside a [mutate](#mutate) callback.
 
-***
+---
 
 ### GridMutationWriterElements :id=gridmutationwriterelements
 
@@ -124,7 +124,7 @@ Remove the element at a cell inside a [mutate](#mutate) callback.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### GridMutationWriterTerrains :id=gridmutationwriterterrains
 
@@ -208,7 +208,7 @@ Remove terrain at a cell inside a [mutate](#mutate) callback.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### GridDimensions :id=griddimensions
 
@@ -223,7 +223,7 @@ World grid width and height in cells.
 ##### widthCells
 
 ```ts
-widthCells: number
+widthCells: number;
 ```
 
 Defined in: [shared/api/grid.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L80)
@@ -233,14 +233,14 @@ Grid width in cells.
 ##### heightCells
 
 ```ts
-heightCells: number
+heightCells: number;
 ```
 
 Defined in: [shared/api/grid.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L82)
 
 Grid height in cells.
 
-***
+---
 
 ### ExcavateOptions :id=excavateoptions
 
@@ -329,7 +329,7 @@ Extra drill-tier damage when [fromDrill](#fromdrill) is true. Clamped to 0–100
 <p class="smt-member-path"><code>sandkit.api.grid.CellId</code></p>
 
 ```ts
-CellId = CellId
+CellId = CellId;
 ```
 
 Defined in: [shared/api/grid.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L75)
@@ -392,7 +392,7 @@ api.events.on("item:used", ({ itemId, cellX, cellY }) => {
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+---
 
 ### revealFogAtCell() :id=revealfogatcell
 
@@ -420,7 +420,7 @@ Reveal fog of war at a cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### redrawAroundCell() :id=redrawaroundcell
 
@@ -448,7 +448,7 @@ Request redraw around a cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### forEachCellInCircle() :id=foreachcellincircle
 
@@ -496,7 +496,7 @@ Invoked for each cell with `(cellX, cellY)`.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### forEachCellInRectangle() :id=foreachcellinrectangle
 
@@ -524,7 +524,7 @@ Calls the callback for each cell in a rectangle.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### ~~forEachCellInRect()~~
 
@@ -552,7 +552,7 @@ Use [forEachCellInRectangle](#foreachcellinrectangle) instead.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getCellIdAtCell() :id=getcellidatcell
 
@@ -582,7 +582,7 @@ Packed cell id for the cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isCellEmptyAtCell() :id=iscellemptyatcell
 
@@ -610,7 +610,7 @@ Return true when the cell has no element or terrain content.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### isTerrainAtCell() :id=isterrainatcell
 
@@ -638,7 +638,7 @@ Return true when the cell holds terrain (not an element).
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### reportActivityAtCell() :id=reportactivityatcell
 
@@ -666,7 +666,7 @@ Mark the cell active for simulation this tick.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### excavateAtCell() :id=excavateatcell
 
@@ -694,7 +694,7 @@ Apply excavation damage and eject velocity at a cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### getDimensions() :id=getdimensions
 

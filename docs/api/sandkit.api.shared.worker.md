@@ -9,7 +9,7 @@ Worker thread only.
 Workers **require** buffers created on the main thread. Main thread only
 **gets** existing buffers. See shared for the shared base declarations.
 
- Worker extension of shared; not interchangeable with
+Worker extension of shared; not interchangeable with
 main-thread `sandkit.api.shared`.
 
 ## Namespaces <!-- {docsify-ignore} -->
@@ -24,7 +24,7 @@ main-thread `sandkit.api.shared`.
 
 Re-exports [SharedArray](api/sandkit.api.shared.md#sharedarray)
 
-***
+---
 
 ### SharedArrayType :id=sharedarraytype
 

@@ -68,7 +68,7 @@ export namespace effects {
     worldX: number,
     worldY: number,
     options?: TemporaryLightOptions,
-  ): { lightId: number | null; index?: number | null; };
+  ): { lightId: number | null; index?: number | null };
 
   /**
    * Creates a distortion wave effect at world coordinates.
@@ -86,7 +86,11 @@ export namespace effects {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function createDistortionWaveAtWorld(worldX: number, worldY: number, options?: DistortionEffectOptions): void;
+  export function createDistortionWaveAtWorld(
+    worldX: number,
+    worldY: number,
+    options?: DistortionEffectOptions,
+  ): void;
 
   /**
    * Creates a laser beam between two world points. Returns a handle to destroy it.

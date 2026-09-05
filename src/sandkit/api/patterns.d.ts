@@ -47,7 +47,15 @@ export namespace patterns {
    * );
    * ```
    */
-  export function excavateAtCell(...args: [...CellCoordinates, pattern: number[][], outVelocity: Vector2, power: number, options?: PatternExcavateOptions]): void;
+  export function excavateAtCell(
+    ...args: [
+      ...CellCoordinates,
+      pattern: number[][],
+      outVelocity: Vector2,
+      power: number,
+      options?: PatternExcavateOptions,
+    ]
+  ): void;
 
   /** Options for pattern-based excavation. Same shape as {@link shared.api.world.ExcavateOptions}. */
   export type PatternExcavateOptions = shared.api.world.ExcavateOptions;

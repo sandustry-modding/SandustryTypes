@@ -21,7 +21,7 @@ Artifact location entry from [getArtifactLocations](#getartifactlocations).
 ##### cellX
 
 ```ts
-cellX: number
+cellX: number;
 ```
 
 Defined in: [sandkit/api/maps.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L43)
@@ -29,7 +29,7 @@ Defined in: [sandkit/api/maps.d.ts:43](https://github.com/sandustry-modding/Sand
 ##### cellY
 
 ```ts
-cellY: number
+cellY: number;
 ```
 
 Defined in: [sandkit/api/maps.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L44)
@@ -37,12 +37,12 @@ Defined in: [sandkit/api/maps.d.ts:44](https://github.com/sandustry-modding/Sand
 ##### name
 
 ```ts
-name: string
+name: string;
 ```
 
 Defined in: [sandkit/api/maps.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L45)
 
-***
+---
 
 ### AvailableMapV1 :id=availablemapv1
 
@@ -63,7 +63,7 @@ Available map entry shape.
 ##### id
 
 ```ts
-id: string
+id: string;
 ```
 
 Defined in: [sandkit/api/maps.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L52)
@@ -98,7 +98,7 @@ Return maps the player can start.
 
 readonly `Readonly`\<[`AvailableMapV1`](#availablemapv1)\>[]
 
-***
+---
 
 ### start() :id=start
 
@@ -124,7 +124,7 @@ Custom map identifier.
 
 `boolean`
 
-***
+---
 
 ### getArtifactLocations() :id=getartifactlocations
 
@@ -164,7 +164,7 @@ api.events.on("game:ready", () => {
 
 Re-exports [getActive](api/sandkit.api.maps.worker.md#getactive)
 
-***
+---
 
 ### ActiveMapV1 :id=activemapv1
 

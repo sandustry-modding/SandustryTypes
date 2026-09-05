@@ -21,7 +21,7 @@ Main-thread trigger definition shape.
 ##### interval
 
 ```ts
-interval: number
+interval: number;
 ```
 
 Defined in: [sandkit/api/triggers.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L29)

@@ -18,7 +18,7 @@ Context passed to intercept hook callbacks.
 ##### cancelled
 
 ```ts
-cancelled: boolean
+cancelled: boolean;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:401](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L401)
@@ -41,7 +41,7 @@ When called, the intercepted action is skipped.
 
 `void`
 
-***
+---
 
 ### HookOptions :id=hookoptions
 
@@ -69,7 +69,7 @@ Defined in: [sandkit/api/hooks.d.ts:407](https://github.com/sandustry-modding/Sa
 
 Run this hook before others with lower priority.
 
-***
+---
 
 ### InterceptHookMap :id=intercepthookmap
 
@@ -84,7 +84,7 @@ Intercept hook argument shapes keyed by hook id.
 ##### item:use
 
 ```ts
-item:use: object
+item: use: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:498](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L498)
@@ -92,37 +92,37 @@ Defined in: [sandkit/api/hooks.d.ts:498](https://github.com/sandustry-modding/Sa
 ###### itemId
 
 ```ts
-itemId: string
+itemId: string;
 ```
 
 ###### useId
 
 ```ts
-useId: string
+useId: string;
 ```
 
 ###### kind
 
 ```ts
-kind: "instant" | "sustained" | "chargeThenFire"
+kind: "instant" | "sustained" | "chargeThenFire";
 ```
 
 ###### baseline
 
 ```ts
-baseline: Readonly<Record<string, unknown>>
+baseline: Readonly<Record<string, unknown>>;
 ```
 
 ###### prepared
 
 ```ts
-prepared: Record<string, unknown>
+prepared: Record<string, unknown>;
 ```
 
 ##### teleport:effect:create
 
 ```ts
-teleport:effect:create: Record<string, unknown>
+teleport: effect: create: Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:505](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L505)
@@ -130,7 +130,7 @@ Defined in: [sandkit/api/hooks.d.ts:505](https://github.com/sandustry-modding/Sa
 ##### ~~teleport:effect~~
 
 ```ts
-teleport:effect: Record<string, unknown>
+teleport: effect: Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:507](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L507)
@@ -142,7 +142,7 @@ Use `"teleport:effect:create"` instead.
 ##### action:start
 
 ```ts
-action:start: object & Record<string, unknown>
+action: start: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:508](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L508)
@@ -166,7 +166,7 @@ optional id?: string
 ##### ~~action:intercept~~
 
 ```ts
-action:intercept: object & Record<string, unknown>
+action: intercept: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:510](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L510)
@@ -194,7 +194,7 @@ Use `"action:start"` instead.
 ##### input:keyDown
 
 ```ts
-input:keyDown: object
+input: keyDown: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:511](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L511)
@@ -220,7 +220,7 @@ optional event?: Event
 ##### ~~input:keydown~~
 
 ```ts
-input:keydown: object
+input: keydown: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:513](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L513)
@@ -250,7 +250,7 @@ Use `"input:keyDown"` instead.
 ##### input:keyUp
 
 ```ts
-input:keyUp: object
+input: keyUp: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:514](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L514)
@@ -276,7 +276,7 @@ optional event?: Event
 ##### ~~input:keyup~~
 
 ```ts
-input:keyup: object
+input: keyup: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:516](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L516)
@@ -306,7 +306,7 @@ Use `"input:keyUp"` instead.
 ##### placePoints:suppress
 
 ```ts
-placePoints:suppress: object & Record<string, unknown>
+placePoints: suppress: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:517](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L517)
@@ -322,7 +322,7 @@ optional type?: string
 ##### ~~placePoints:isSuppressed~~
 
 ```ts
-placePoints:isSuppressed: object & Record<string, unknown>
+placePoints: isSuppressed: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:519](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L519)
@@ -342,7 +342,7 @@ Use `"placePoints:suppress"` instead.
 ##### placePoints:directionalArrows:suppress
 
 ```ts
-placePoints:directionalArrows:suppress: object & Record<string, unknown>
+placePoints: directionalArrows: suppress: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:520](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L520)
@@ -358,7 +358,7 @@ optional type?: string
 ##### ~~placePoints:directionalArrows:isSuppressed~~
 
 ```ts
-placePoints:directionalArrows:isSuppressed: object & Record<string, unknown>
+placePoints: directionalArrows: isSuppressed: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:522](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L522)
@@ -378,7 +378,7 @@ Use `"placePoints:directionalArrows:suppress"` instead.
 ##### entity:update
 
 ```ts
-entity:update: object
+entity: update: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:523](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L523)
@@ -386,85 +386,85 @@ Defined in: [sandkit/api/hooks.d.ts:523](https://github.com/sandustry-modding/Sa
 ###### entityTypeId
 
 ```ts
-entityTypeId: string
+entityTypeId: string;
 ```
 
 ###### entity
 
 ```ts
-entity: Record<string, unknown>
+entity: Record<string, unknown>;
 ```
 
 ###### deltaTimeSeconds
 
 ```ts
-deltaTimeSeconds: number
+deltaTimeSeconds: number;
 ```
 
 ###### phase
 
 ```ts
-phase: "normal" | "capturing" | "launching"
+phase: "normal" | "capturing" | "launching";
 ```
 
 ###### isVisible
 
 ```ts
-isVisible: boolean
+isVisible: boolean;
 ```
 
 ###### playerWorldX
 
 ```ts
-playerWorldX: number
+playerWorldX: number;
 ```
 
 ###### playerWorldY
 
 ```ts
-playerWorldY: number
+playerWorldY: number;
 ```
 
 ###### worldMinX
 
 ```ts
-worldMinX: number
+worldMinX: number;
 ```
 
 ###### worldMinY
 
 ```ts
-worldMinY: number
+worldMinY: number;
 ```
 
 ###### worldMaxX
 
 ```ts
-worldMaxX: number
+worldMaxX: number;
 ```
 
 ###### worldMaxY
 
 ```ts
-worldMaxY: number
+worldMaxY: number;
 ```
 
 ###### cellSize
 
 ```ts
-cellSize: number
+cellSize: number;
 ```
 
 ###### timeSeconds
 
 ```ts
-timeSeconds: number
+timeSeconds: number;
 ```
 
 ##### building:place
 
 ```ts
-building:place: object
+building: place: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:538](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L538)
@@ -472,19 +472,19 @@ Defined in: [sandkit/api/hooks.d.ts:538](https://github.com/sandustry-modding/Sa
 ###### structureId
 
 ```ts
-structureId: string
+structureId: string;
 ```
 
 ###### x
 
 ```ts
-x: number
+x: number;
 ```
 
 ###### y
 
 ```ts
-y: number
+y: number;
 ```
 
 ###### data?
@@ -496,7 +496,7 @@ optional data?: Record<string, unknown>
 ##### building:clearShape
 
 ```ts
-building:clearShape: object
+building: clearShape: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:544](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L544)
@@ -504,13 +504,13 @@ Defined in: [sandkit/api/hooks.d.ts:544](https://github.com/sandustry-modding/Sa
 ###### structure
 
 ```ts
-structure: Record<string, unknown>
+structure: Record<string, unknown>;
 ```
 
 ##### input:scroll
 
 ```ts
-input:scroll: object & Record<string, unknown>
+input: scroll: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:545](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L545)
@@ -520,13 +520,13 @@ Defined in: [sandkit/api/hooks.d.ts:545](https://github.com/sandustry-modding/Sa
 ###### deltaY
 
 ```ts
-deltaY: number
+deltaY: number;
 ```
 
 ##### input:boostDown
 
 ```ts
-input:boostDown: Record<string, unknown>
+input: boostDown: Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:546](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L546)
@@ -546,7 +546,7 @@ Use `"input:boostDown"` instead.
 ##### input:descendDown
 
 ```ts
-input:descendDown: Record<string, unknown>
+input: descendDown: Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:549](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L549)
@@ -566,7 +566,7 @@ Use `"input:descendDown"` instead.
 ##### input:escape
 
 ```ts
-input:escape: Record<string, unknown>
+input: escape: Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:552](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L552)
@@ -574,7 +574,7 @@ Defined in: [sandkit/api/hooks.d.ts:552](https://github.com/sandustry-modding/Sa
 ##### interactable:suppressHover
 
 ```ts
-interactable:suppressHover: object & Record<string, unknown>
+interactable: suppressHover: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:553](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L553)
@@ -596,7 +596,7 @@ optional structure?: Record<string, unknown>
 ##### fire:element:ignite
 
 ```ts
-fire:element:ignite: object
+fire: element: ignite: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:554](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L554)
@@ -604,25 +604,25 @@ Defined in: [sandkit/api/hooks.d.ts:554](https://github.com/sandustry-modding/Sa
 ###### x
 
 ```ts
-x: number
+x: number;
 ```
 
 ###### y
 
 ```ts
-y: number
+y: number;
 ```
 
 ###### elementType
 
 ```ts
-elementType: number
+elementType: number;
 ```
 
 ##### projectile:fire:overStructure
 
 ```ts
-projectile:fire:overStructure: object
+projectile: fire: overStructure: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:555](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L555)
@@ -630,25 +630,25 @@ Defined in: [sandkit/api/hooks.d.ts:555](https://github.com/sandustry-modding/Sa
 ###### projectile
 
 ```ts
-projectile: Record<string, unknown>
+projectile: Record<string, unknown>;
 ```
 
 ###### x
 
 ```ts
-x: number
+x: number;
 ```
 
 ###### y
 
 ```ts
-y: number
+y: number;
 ```
 
 ##### projectile:hit
 
 ```ts
-projectile:hit: object
+projectile: hit: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:556](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L556)
@@ -656,19 +656,19 @@ Defined in: [sandkit/api/hooks.d.ts:556](https://github.com/sandustry-modding/Sa
 ###### projectile
 
 ```ts
-projectile: Record<string, unknown>
+projectile: Record<string, unknown>;
 ```
 
 ###### travelResult
 
 ```ts
-travelResult: Record<string, unknown>
+travelResult: Record<string, unknown>;
 ```
 
 ##### player:position:commit
 
 ```ts
-player:position:commit: object
+player: position: commit: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:557](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L557)
@@ -676,43 +676,43 @@ Defined in: [sandkit/api/hooks.d.ts:557](https://github.com/sandustry-modding/Sa
 ###### previousWorldX
 
 ```ts
-previousWorldX: number
+previousWorldX: number;
 ```
 
 ###### previousWorldY
 
 ```ts
-previousWorldY: number
+previousWorldY: number;
 ```
 
 ###### proposedWorldX
 
 ```ts
-proposedWorldX: number
+proposedWorldX: number;
 ```
 
 ###### proposedWorldY
 
 ```ts
-proposedWorldY: number
+proposedWorldY: number;
 ```
 
 ###### velocityX
 
 ```ts
-velocityX: number
+velocityX: number;
 ```
 
 ###### velocityY
 
 ```ts
-velocityY: number
+velocityY: number;
 ```
 
 ##### progression:purchase
 
 ```ts
-progression:purchase: object
+progression: purchase: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:565](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L565)
@@ -720,13 +720,13 @@ Defined in: [sandkit/api/hooks.d.ts:565](https://github.com/sandustry-modding/Sa
 ###### domain
 
 ```ts
-domain: "tech" | "upgrade"
+domain: "tech" | "upgrade";
 ```
 
 ###### id
 
 ```ts
-id: string
+id: string;
 ```
 
 ###### itemId?
@@ -738,10 +738,10 @@ optional itemId?: string
 ###### costs
 
 ```ts
-costs: Record<string, unknown>
+costs: Record<string, unknown>;
 ```
 
-***
+---
 
 ### ModifierHookMap :id=modifierhookmap
 
@@ -756,7 +756,7 @@ Modify hook argument shapes keyed by hook id.
 ##### excavation:prepare
 
 ```ts
-excavation:prepare: object
+excavation: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:575](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L575)
@@ -764,55 +764,55 @@ Defined in: [sandkit/api/hooks.d.ts:575](https://github.com/sandustry-modding/Sa
 ###### sourceId
 
 ```ts
-sourceId: string
+sourceId: string;
 ```
 
 ###### sourceKind
 
 ```ts
-sourceKind: "structure" | "tool" | "projectile" | "drone"
+sourceKind: "structure" | "tool" | "projectile" | "drone";
 ```
 
 ###### originCellX
 
 ```ts
-originCellX: number
+originCellX: number;
 ```
 
 ###### originCellY
 
 ```ts
-originCellY: number
+originCellY: number;
 ```
 
 ###### consumedVoid
 
 ```ts
-consumedVoid: boolean
+consumedVoid: boolean;
 ```
 
 ###### profileId
 
 ```ts
-profileId: string
+profileId: string;
 ```
 
 ###### patternDiameterCells
 
 ```ts
-patternDiameterCells: number
+patternDiameterCells: number;
 ```
 
 ###### drillTierDamage
 
 ```ts
-drillTierDamage: number
+drillTierDamage: number;
 ```
 
 ##### locator:scan:prepare
 
 ```ts
-locator:scan:prepare: object
+locator: scan: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:585](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L585)
@@ -820,67 +820,67 @@ Defined in: [sandkit/api/hooks.d.ts:585](https://github.com/sandustry-modding/Sa
 ###### originWorldX
 
 ```ts
-originWorldX: number
+originWorldX: number;
 ```
 
 ###### originWorldY
 
 ```ts
-originWorldY: number
+originWorldY: number;
 ```
 
 ###### hasTarget
 
 ```ts
-hasTarget: boolean
+hasTarget: boolean;
 ```
 
 ###### targetCellX
 
 ```ts
-targetCellX: number
+targetCellX: number;
 ```
 
 ###### targetCellY
 
 ```ts
-targetCellY: number
+targetCellY: number;
 ```
 
 ###### outerTint
 
 ```ts
-outerTint: [number, number, number]
+outerTint: [number, number, number];
 ```
 
 ###### innerTint
 
 ```ts
-innerTint: [number, number, number]
+innerTint: [number, number, number];
 ```
 
 ###### noTargetToast
 
 ```ts
-noTargetToast: string
+noTargetToast: string;
 ```
 
 ###### noTargetToastKey
 
 ```ts
-noTargetToastKey: string
+noTargetToastKey: string;
 ```
 
 ###### triangulationLensOverride
 
 ```ts
-triangulationLensOverride: boolean | null
+triangulationLensOverride: boolean | null;
 ```
 
 ##### vacuum:prepare
 
 ```ts
-vacuum:prepare: object
+vacuum: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:597](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L597)
@@ -888,25 +888,25 @@ Defined in: [sandkit/api/hooks.d.ts:597](https://github.com/sandustry-modding/Sa
 ###### nozzleCellX
 
 ```ts
-nozzleCellX: number
+nozzleCellX: number;
 ```
 
 ###### nozzleCellY
 
 ```ts
-nozzleCellY: number
+nozzleCellY: number;
 ```
 
 ###### targetCellX
 
 ```ts
-targetCellX: number
+targetCellX: number;
 ```
 
 ###### targetCellY
 
 ```ts
-targetCellY: number
+targetCellY: number;
 ```
 
 ###### pattern
@@ -918,7 +918,7 @@ pattern: number[][]
 ##### vacuum:element:prepare
 
 ```ts
-vacuum:element:prepare: object
+vacuum: element: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:604](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L604)
@@ -926,37 +926,37 @@ Defined in: [sandkit/api/hooks.d.ts:604](https://github.com/sandustry-modding/Sa
 ###### elementType
 
 ```ts
-elementType: number
+elementType: number;
 ```
 
 ###### matterType
 
 ```ts
-matterType: number
+matterType: number;
 ```
 
 ###### isTransportable
 
 ```ts
-isTransportable: boolean
+isTransportable: boolean;
 ```
 
 ###### collectable
 
 ```ts
-collectable: boolean
+collectable: boolean;
 ```
 
 ###### visibleInPicker
 
 ```ts
-visibleInPicker: boolean
+visibleInPicker: boolean;
 ```
 
 ##### player:movement:prepare
 
 ```ts
-player:movement:prepare: Record<string, unknown>
+player: movement: prepare: Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:611](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L611)
@@ -964,7 +964,7 @@ Defined in: [sandkit/api/hooks.d.ts:611](https://github.com/sandustry-modding/Sa
 ##### ~~player:movement~~
 
 ```ts
-player:movement: Record<string, unknown>
+player: movement: Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:613](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L613)
@@ -976,7 +976,7 @@ Use `"player:movement:prepare"` instead.
 ##### building:placementLimit:prepare
 
 ```ts
-building:placementLimit:prepare: object & Record<string, unknown>
+building: placementLimit: prepare: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:614](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L614)
@@ -986,13 +986,13 @@ Defined in: [sandkit/api/hooks.d.ts:614](https://github.com/sandustry-modding/Sa
 ###### maxCount
 
 ```ts
-maxCount: number | null
+maxCount: number | null;
 ```
 
 ##### ~~building:placementLimit~~
 
 ```ts
-building:placementLimit: object & Record<string, unknown>
+building: placementLimit: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:616](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L616)
@@ -1002,7 +1002,7 @@ Defined in: [sandkit/api/hooks.d.ts:616](https://github.com/sandustry-modding/Sa
 ###### ~~maxCount~~
 
 ```ts
-maxCount: number | null
+maxCount: number | null;
 ```
 
 ###### Deprecated
@@ -1022,7 +1022,7 @@ Defined in: [sandkit/api/hooks.d.ts:618](https://github.com/sandustry-modding/Sa
 ###### ~~maxCount~~
 
 ```ts
-maxCount: number | null
+maxCount: number | null;
 ```
 
 ###### Deprecated
@@ -1032,7 +1032,7 @@ Use `"building:placementLimit:prepare"` instead.
 ##### fluxEmanator:processing:prepare
 
 ```ts
-fluxEmanator:processing:prepare: object & Record<string, unknown>
+fluxEmanator: processing: prepare: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:619](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L619)
@@ -1042,13 +1042,13 @@ Defined in: [sandkit/api/hooks.d.ts:619](https://github.com/sandustry-modding/Sa
 ###### speedMultiplier
 
 ```ts
-speedMultiplier: number
+speedMultiplier: number;
 ```
 
 ##### ~~fluxEmanator:processing~~
 
 ```ts
-fluxEmanator:processing: object & Record<string, unknown>
+fluxEmanator: processing: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:621](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L621)
@@ -1058,7 +1058,7 @@ Defined in: [sandkit/api/hooks.d.ts:621](https://github.com/sandustry-modding/Sa
 ###### ~~speedMultiplier~~
 
 ```ts
-speedMultiplier: number
+speedMultiplier: number;
 ```
 
 ###### Deprecated
@@ -1078,7 +1078,7 @@ Defined in: [sandkit/api/hooks.d.ts:623](https://github.com/sandustry-modding/Sa
 ###### ~~speedMultiplier~~
 
 ```ts
-speedMultiplier: number
+speedMultiplier: number;
 ```
 
 ###### Deprecated
@@ -1088,7 +1088,7 @@ Use `"fluxEmanator:processing:prepare"` instead.
 ##### render:pipes:prepare
 
 ```ts
-render:pipes:prepare: object & Record<string, unknown>
+render: pipes: prepare: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:624](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L624)
@@ -1104,7 +1104,7 @@ optional layer?: string
 ##### ~~render:pipes~~
 
 ```ts
-render:pipes: object & Record<string, unknown>
+render: pipes: object & Record<string, unknown>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:626](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L626)
@@ -1124,7 +1124,7 @@ Use `"render:pipes:prepare"` instead.
 ##### structures:moved:prepare
 
 ```ts
-structures:moved:prepare: object
+structures: moved: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:627](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L627)
@@ -1144,7 +1144,7 @@ failedToPlace: unknown[]
 ##### structures:removed:prepare
 
 ```ts
-structures:removed:prepare: object
+structures: removed: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:631](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L631)
@@ -1164,13 +1164,13 @@ optional structures?: unknown[]
 ###### byMove
 
 ```ts
-byMove: boolean
+byMove: boolean;
 ```
 
 ##### weapon:reload:prepare
 
 ```ts
-weapon:reload:prepare: object
+weapon: reload: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:636](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L636)
@@ -1178,25 +1178,25 @@ Defined in: [sandkit/api/hooks.d.ts:636](https://github.com/sandustry-modding/Sa
 ###### weaponId
 
 ```ts
-weaponId: string
+weaponId: string;
 ```
 
 ###### reloadMs
 
 ```ts
-reloadMs: number
+reloadMs: number;
 ```
 
 ###### maxAmmo
 
 ```ts
-maxAmmo: number
+maxAmmo: number;
 ```
 
 ##### projectile:travel:prepare
 
 ```ts
-projectile:travel:prepare: object
+projectile: travel: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:641](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L641)
@@ -1204,37 +1204,37 @@ Defined in: [sandkit/api/hooks.d.ts:641](https://github.com/sandustry-modding/Sa
 ###### projectileType
 
 ```ts
-projectileType: string
+projectileType: string;
 ```
 
 ###### firstCollisionStep
 
 ```ts
-firstCollisionStep: number
+firstCollisionStep: number;
 ```
 
 ###### maxCollisionSteps
 
 ```ts
-maxCollisionSteps: number
+maxCollisionSteps: number;
 ```
 
 ###### collidesWithTerrain
 
 ```ts
-collidesWithTerrain: boolean
+collidesWithTerrain: boolean;
 ```
 
 ###### collidesWithStructures
 
 ```ts
-collidesWithStructures: boolean
+collidesWithStructures: boolean;
 ```
 
 ##### projectile:impact:prepare
 
 ```ts
-projectile:impact:prepare: object
+projectile: impact: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:648](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L648)
@@ -1242,37 +1242,37 @@ Defined in: [sandkit/api/hooks.d.ts:648](https://github.com/sandustry-modding/Sa
 ###### projectileType
 
 ```ts
-projectileType: string
+projectileType: string;
 ```
 
 ###### impactKind
 
 ```ts
-impactKind: string
+impactKind: string;
 ```
 
 ###### profileId
 
 ```ts
-profileId: string
+profileId: string;
 ```
 
 ###### power
 
 ```ts
-power: number
+power: number;
 ```
 
 ###### centerPower
 
 ```ts
-centerPower: number
+centerPower: number;
 ```
 
 ###### radiusCells
 
 ```ts
-radiusCells: number
+radiusCells: number;
 ```
 
 ###### ~~radius?~~
@@ -1288,7 +1288,7 @@ Use radiusCells instead.
 ##### player:collision:prepare
 
 ```ts
-player:collision:prepare: object
+player: collision: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:658](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L658)
@@ -1296,25 +1296,25 @@ Defined in: [sandkit/api/hooks.d.ts:658](https://github.com/sandustry-modding/Sa
 ###### phaseThroughTerrain
 
 ```ts
-phaseThroughTerrain: boolean
+phaseThroughTerrain: boolean;
 ```
 
 ###### phaseThroughStructures
 
 ```ts
-phaseThroughStructures: boolean
+phaseThroughStructures: boolean;
 ```
 
 ###### maxStepCells
 
 ```ts
-maxStepCells: number
+maxStepCells: number;
 ```
 
 ##### trigger:schedule:prepare
 
 ```ts
-trigger:schedule:prepare: object
+trigger: schedule: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:663](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L663)
@@ -1322,25 +1322,25 @@ Defined in: [sandkit/api/hooks.d.ts:663](https://github.com/sandustry-modding/Sa
 ###### triggerId
 
 ```ts
-triggerId: string
+triggerId: string;
 ```
 
 ###### intervalMs
 
 ```ts
-intervalMs: number
+intervalMs: number;
 ```
 
 ###### sequentialRuns
 
 ```ts
-sequentialRuns: number
+sequentialRuns: number;
 ```
 
 ##### progression:cost:prepare
 
 ```ts
-progression:cost:prepare: object
+progression: cost: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:668](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L668)
@@ -1348,13 +1348,13 @@ Defined in: [sandkit/api/hooks.d.ts:668](https://github.com/sandustry-modding/Sa
 ###### domain
 
 ```ts
-domain: "tech" | "upgrade"
+domain: "tech" | "upgrade";
 ```
 
 ###### id
 
 ```ts
-id: string
+id: string;
 ```
 
 ###### itemId?
@@ -1366,19 +1366,19 @@ optional itemId?: string
 ###### currencyId
 
 ```ts
-currencyId: string
+currencyId: string;
 ```
 
 ###### amount
 
 ```ts
-amount: number
+amount: number;
 ```
 
 ##### resource:collection:prepare
 
 ```ts
-resource:collection:prepare: object
+resource: collection: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:675](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L675)
@@ -1386,43 +1386,43 @@ Defined in: [sandkit/api/hooks.d.ts:675](https://github.com/sandustry-modding/Sa
 ###### resourceId
 
 ```ts
-resourceId: string
+resourceId: string;
 ```
 
 ###### sourceKind
 
 ```ts
-sourceKind: string
+sourceKind: string;
 ```
 
 ###### cellX
 
 ```ts
-cellX: number
+cellX: number;
 ```
 
 ###### cellY
 
 ```ts
-cellY: number
+cellY: number;
 ```
 
 ###### amount
 
 ```ts
-amount: number
+amount: number;
 ```
 
 ###### feedback
 
 ```ts
-feedback: "silent" | "default" | "reduced"
+feedback: "silent" | "default" | "reduced";
 ```
 
 ##### resource:delivery:prepare
 
 ```ts
-resource:delivery:prepare: object
+resource: delivery: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:683](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L683)
@@ -1430,67 +1430,67 @@ Defined in: [sandkit/api/hooks.d.ts:683](https://github.com/sandustry-modding/Sa
 ###### resourceId
 
 ```ts
-resourceId: string
+resourceId: string;
 ```
 
 ###### sourceKind
 
 ```ts
-sourceKind: string
+sourceKind: string;
 ```
 
 ###### sourceId
 
 ```ts
-sourceId: string
+sourceId: string;
 ```
 
 ###### sourceCellX
 
 ```ts
-sourceCellX: number
+sourceCellX: number;
 ```
 
 ###### sourceCellY
 
 ```ts
-sourceCellY: number
+sourceCellY: number;
 ```
 
 ###### targetCellX
 
 ```ts
-targetCellX: number
+targetCellX: number;
 ```
 
 ###### targetCellY
 
 ```ts
-targetCellY: number
+targetCellY: number;
 ```
 
 ###### mode
 
 ```ts
-mode: "world" | "collection"
+mode: "world" | "collection";
 ```
 
 ###### amount
 
 ```ts
-amount: number
+amount: number;
 ```
 
 ###### feedback
 
 ```ts
-feedback: "silent" | "default"
+feedback: "silent" | "default";
 ```
 
 ##### resource:balance:prepare
 
 ```ts
-resource:balance:prepare: object
+resource: balance: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:695](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L695)
@@ -1498,19 +1498,19 @@ Defined in: [sandkit/api/hooks.d.ts:695](https://github.com/sandustry-modding/Sa
 ###### resourceId
 
 ```ts
-resourceId: string
+resourceId: string;
 ```
 
 ###### balance
 
 ```ts
-balance: number
+balance: number;
 ```
 
 ##### gold:removal:prepare
 
 ```ts
-gold:removal:prepare: object
+gold: removal: prepare: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:699](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L699)
@@ -1518,19 +1518,19 @@ Defined in: [sandkit/api/hooks.d.ts:699](https://github.com/sandustry-modding/Sa
 ###### requestedAmount
 
 ```ts
-requestedAmount: number
+requestedAmount: number;
 ```
 
 ###### shortfall
 
 ```ts
-shortfall: number
+shortfall: number;
 ```
 
 ##### gold:removal:settle
 
 ```ts
-gold:removal:settle: object
+gold: removal: settle: object;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:703](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L703)
@@ -1538,19 +1538,19 @@ Defined in: [sandkit/api/hooks.d.ts:703](https://github.com/sandustry-modding/Sa
 ###### requestedAmount
 
 ```ts
-requestedAmount: number
+requestedAmount: number;
 ```
 
 ###### physicalRemoved
 
 ```ts
-physicalRemoved: number
+physicalRemoved: number;
 ```
 
 ###### shortfall
 
 ```ts
-shortfall: number
+shortfall: number;
 ```
 
 ## Type Aliases <!-- {docsify-ignore} -->
@@ -1571,9 +1571,9 @@ Options for [intercept](#intercept).
 
 ##### K
 
-`K` *extends* [`InterceptHookId`](#intercepthookid)
+`K` _extends_ [`InterceptHookId`](#intercepthookid)
 
-***
+---
 
 ### ModifyHookOptions :id=modifyhookoptions
 
@@ -1587,35 +1587,92 @@ Defined in: [sandkit/api/hooks.d.ts:424](https://github.com/sandustry-modding/Sa
 
 Options for [modify](#modify).
 
-***
+---
 
 ### InterceptHookId :id=intercepthookid
 
 <p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookId</code></p>
 
 ```ts
-InterceptHookId = LooseString<"item:use" | "teleport:effect:create" | "teleport:effect" | "action:start" | "action:intercept" | "input:keyDown" | "input:keydown" | "input:keyUp" | "input:keyup" | "placePoints:suppress" | "placePoints:isSuppressed" | "placePoints:directionalArrows:suppress" | "placePoints:directionalArrows:isSuppressed" | "entity:update" | "building:place" | "building:clearShape" | "input:scroll" | "input:boostDown" | "input:boost-down" | "input:descendDown" | "input:descend-down" | "input:escape" | "interactable:suppressHover" | "fire:element:ignite" | "projectile:fire:overStructure" | "projectile:hit" | "player:position:commit" | "progression:purchase">
+InterceptHookId = LooseString<
+  | "item:use"
+  | "teleport:effect:create"
+  | "teleport:effect"
+  | "action:start"
+  | "action:intercept"
+  | "input:keyDown"
+  | "input:keydown"
+  | "input:keyUp"
+  | "input:keyup"
+  | "placePoints:suppress"
+  | "placePoints:isSuppressed"
+  | "placePoints:directionalArrows:suppress"
+  | "placePoints:directionalArrows:isSuppressed"
+  | "entity:update"
+  | "building:place"
+  | "building:clearShape"
+  | "input:scroll"
+  | "input:boostDown"
+  | "input:boost-down"
+  | "input:descendDown"
+  | "input:descend-down"
+  | "input:escape"
+  | "interactable:suppressHover"
+  | "fire:element:ignite"
+  | "projectile:fire:overStructure"
+  | "projectile:hit"
+  | "player:position:commit"
+  | "progression:purchase"
+>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:434](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L434)
 
 Known main-thread intercept hook ids plus custom strings.
 
-***
+---
 
 ### ModifyHookId :id=modifyhookid
 
 <p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookId</code></p>
 
 ```ts
-ModifyHookId = LooseString<"excavation:prepare" | "locator:scan:prepare" | "vacuum:prepare" | "vacuum:element:prepare" | "player:movement:prepare" | "player:movement" | "building:placementLimit:prepare" | "building:placementLimit" | "building:placement-limit" | "fluxEmanator:processing:prepare" | "fluxEmanator:processing" | "flux-emanator:processing" | "render:pipes:prepare" | "render:pipes" | "structures:moved:prepare" | "structures:removed:prepare" | "weapon:reload:prepare" | "projectile:travel:prepare" | "projectile:impact:prepare" | "player:collision:prepare" | "trigger:schedule:prepare" | "progression:cost:prepare" | "resource:collection:prepare" | "resource:delivery:prepare" | "resource:balance:prepare" | "gold:removal:prepare" | "gold:removal:settle">
+ModifyHookId = LooseString<
+  | "excavation:prepare"
+  | "locator:scan:prepare"
+  | "vacuum:prepare"
+  | "vacuum:element:prepare"
+  | "player:movement:prepare"
+  | "player:movement"
+  | "building:placementLimit:prepare"
+  | "building:placementLimit"
+  | "building:placement-limit"
+  | "fluxEmanator:processing:prepare"
+  | "fluxEmanator:processing"
+  | "flux-emanator:processing"
+  | "render:pipes:prepare"
+  | "render:pipes"
+  | "structures:moved:prepare"
+  | "structures:removed:prepare"
+  | "weapon:reload:prepare"
+  | "projectile:travel:prepare"
+  | "projectile:impact:prepare"
+  | "player:collision:prepare"
+  | "trigger:schedule:prepare"
+  | "progression:cost:prepare"
+  | "resource:collection:prepare"
+  | "resource:delivery:prepare"
+  | "resource:balance:prepare"
+  | "gold:removal:prepare"
+  | "gold:removal:settle"
+>;
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:466](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L466)
 
 Known main-thread modify hook ids plus custom strings.
 
-***
+---
 
 ### InterceptHookArgs :id=intercepthookargs
 
@@ -1633,9 +1690,9 @@ Intercept hook args for a given hook id.
 
 ##### K
 
-`K` *extends* [`InterceptHookId`](#intercepthookid)
+`K` _extends_ [`InterceptHookId`](#intercepthookid)
 
-***
+---
 
 ### ModifyHookArgs :id=modifyhookargs
 
@@ -1653,7 +1710,7 @@ Modify hook args for a given hook id.
 
 ##### K
 
-`K` *extends* [`ModifyHookId`](#modifyhookid)
+`K` _extends_ [`ModifyHookId`](#modifyhookid)
 
 ## Functions <!-- {docsify-ignore} -->
 
@@ -1673,7 +1730,7 @@ Registers an intercept hook. Returns an unsubscribe function.
 
 ##### K
 
-`K` *extends* [`InterceptHookId`](#intercepthookid)
+`K` _extends_ [`InterceptHookId`](#intercepthookid)
 
 #### Parameters
 
@@ -1760,12 +1817,9 @@ api.hooks.intercept("placePoints:suppress", (args, context) => {
 **placePoints:directionalArrows:suppress**
 
 ```ts
-api.hooks.intercept(
-  "placePoints:directionalArrows:suppress",
-  (args, context) => {
-    if (args.type === "exampleStructure") context.cancel();
-  },
-);
+api.hooks.intercept("placePoints:directionalArrows:suppress", (args, context) => {
+  if (args.type === "exampleStructure") context.cancel();
+});
 ```
 
 **entity:update**
@@ -1849,12 +1903,9 @@ api.hooks.intercept("fire:element:ignite", (args, context) => {
 **projectile:fire:overStructure**
 
 ```ts
-api.hooks.intercept(
-  "projectile:fire:overStructure",
-  (args, context) => {
-    if (args.projectile.type === "exampleProjectile") context.cancel();
-  },
-);
+api.hooks.intercept("projectile:fire:overStructure", (args, context) => {
+  if (args.projectile.type === "exampleProjectile") context.cancel();
+});
 ```
 
 **projectile:hit**
@@ -1886,7 +1937,7 @@ api.hooks.intercept("progression:purchase", (args, context) => {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### modify() :id=modify
 
@@ -1904,7 +1955,7 @@ Registers a modifier hook. Returns an unsubscribe function.
 
 ##### K
 
-`K` *extends* [`ModifyHookId`](#modifyhookid)
+`K` _extends_ [`ModifyHookId`](#modifyhookid)
 
 #### Parameters
 
@@ -2061,25 +2112,37 @@ api.hooks.modify("structures:removed:prepare", (args) => {
 **weapon:reload:prepare**
 
 ```ts
-api.hooks.modify("weapon:reload:prepare", (args) => {
-  args.reloadMs *= 0.8;
-}, { weaponIds: ["exampleWeapon"] });
+api.hooks.modify(
+  "weapon:reload:prepare",
+  (args) => {
+    args.reloadMs *= 0.8;
+  },
+  { weaponIds: ["exampleWeapon"] },
+);
 ```
 
 **projectile:travel:prepare**
 
 ```ts
-api.hooks.modify("projectile:travel:prepare", (args) => {
-  args.collidesWithStructures = false;
-}, { projectileTypes: ["exampleProjectile"] });
+api.hooks.modify(
+  "projectile:travel:prepare",
+  (args) => {
+    args.collidesWithStructures = false;
+  },
+  { projectileTypes: ["exampleProjectile"] },
+);
 ```
 
 **projectile:impact:prepare**
 
 ```ts
-api.hooks.modify("projectile:impact:prepare", (args) => {
-  args.radiusCells = 8;
-}, { projectileTypes: ["exampleProjectile"] });
+api.hooks.modify(
+  "projectile:impact:prepare",
+  (args) => {
+    args.radiusCells = 8;
+  },
+  { projectileTypes: ["exampleProjectile"] },
+);
 ```
 
 **player:collision:prepare**
@@ -2093,9 +2156,13 @@ api.hooks.modify("player:collision:prepare", (args) => {
 **trigger:schedule:prepare**
 
 ```ts
-api.hooks.modify("trigger:schedule:prepare", (args) => {
-  args.intervalMs *= 0.5;
-}, { triggerIds: ["pump"] });
+api.hooks.modify(
+  "trigger:schedule:prepare",
+  (args) => {
+    args.intervalMs *= 0.5;
+  },
+  { triggerIds: ["pump"] },
+);
 ```
 
 **progression:cost:prepare**
@@ -2109,25 +2176,37 @@ api.hooks.modify("progression:cost:prepare", (args) => {
 **resource:collection:prepare**
 
 ```ts
-api.hooks.modify("resource:collection:prepare", (args) => {
-  args.amount *= 2;
-}, { resourceIds: ["fluxite"] });
+api.hooks.modify(
+  "resource:collection:prepare",
+  (args) => {
+    args.amount *= 2;
+  },
+  { resourceIds: ["fluxite"] },
+);
 ```
 
 **resource:delivery:prepare**
 
 ```ts
-api.hooks.modify("resource:delivery:prepare", (args) => {
-  args.mode = "collection";
-}, { resourceIds: ["fluxite"] });
+api.hooks.modify(
+  "resource:delivery:prepare",
+  (args) => {
+    args.mode = "collection";
+  },
+  { resourceIds: ["fluxite"] },
+);
 ```
 
 **resource:balance:prepare**
 
 ```ts
-api.hooks.modify("resource:balance:prepare", (args) => {
-  args.balance += api.storage.get("example", "gold") ?? 0;
-}, { resourceIds: ["gold"] });
+api.hooks.modify(
+  "resource:balance:prepare",
+  (args) => {
+    args.balance += api.storage.get("example", "gold") ?? 0;
+  },
+  { resourceIds: ["gold"] },
+);
 ```
 
 **gold:removal:prepare**

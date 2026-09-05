@@ -8,7 +8,7 @@
 /** Reference to a loaded sprite or texture asset. */
 export interface AssetRef {
   /** Runtime asset id. */
-  id: number
+  id: number;
   /** Asset category discriminator used by the renderer. */
-  type: number
+  type: number;
 }

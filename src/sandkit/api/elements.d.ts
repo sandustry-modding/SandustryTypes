@@ -8,7 +8,6 @@ import { shared } from "../../shared";
  * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace elements {
-
   // Shared types
   /**
    * Numeric id for a registered element type.
@@ -89,9 +88,9 @@ export namespace elements {
     /** i18n key for custom interaction label text. */
     textKey?: string;
     /** Hide the label when a data field matches a value. */
-    crossedOutWhen?: { dataField: number; equals: number; };
+    crossedOutWhen?: { dataField: number; equals: number };
     /** Show the label only when a data field matches a value. */
-    visibleWhen?: { dataField: number; equals: number; };
+    visibleWhen?: { dataField: number; equals: number };
     /** Require the text key to exist in the active locale. */
     onlyWhenTranslated?: boolean;
   }
@@ -127,7 +126,8 @@ export namespace elements {
   export type InteractionCustom = InteractionStructureMetadata & { kind: "custom" };
 
   /** Union of element interaction kinds for tool and structure logic. */
-  export type Interaction = InteractionDestroyer
+  export type Interaction =
+    | InteractionDestroyer
     | InteractionStructure
     | InteractionEntity
     | InteractionFlammable
@@ -150,7 +150,7 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function register(definition: ElementDefinition): { elementType: ElementType; };
+  export function register(definition: ElementDefinition): { elementType: ElementType };
 
   /**
    * Updates fields on an existing element definition.
@@ -167,7 +167,10 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function updateDefinition(elementTypeOrId: ElementRef, partial: Partial<ElementDefinition>): void;
+  export function updateDefinition(
+    elementTypeOrId: ElementRef,
+    partial: Partial<ElementDefinition>,
+  ): void;
 
   /**
    * Adds an interaction entry to an element definition.
@@ -198,7 +201,11 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
-  export function findFreeCellInStructure(structureCellX: number, structureCellY: number, structureSizeCells: number): Vector2 | null;
+  export function findFreeCellInStructure(
+    structureCellX: number,
+    structureCellY: number,
+    structureSizeCells: number,
+  ): Vector2 | null;
 
   /**
    * Create an element at a cell. Main-entry writes are deferred; reads see the old grid.
@@ -224,14 +231,18 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function createAtCell(...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]): void;
+  export function createAtCell(
+    ...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]
+  ): void;
 
   /**
    * @deprecated Use {@link createAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function createAtCellWhenIdle(...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]): void;
+  export function createAtCellWhenIdle(
+    ...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]
+  ): void;
 
   /**
    * Replace the element at a cell. Main-entry writes are deferred; reads see the old grid.
@@ -243,14 +254,18 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function replaceAtCell(...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]): void;
+  export function replaceAtCell(
+    ...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]
+  ): void;
 
   /**
    * @deprecated Use {@link replaceAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function replaceAtCellWhenIdle(...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]): void;
+  export function replaceAtCellWhenIdle(
+    ...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]
+  ): void;
 
   /**
    * Remove the element at a cell. Main-entry writes are deferred; reads see the old grid.
@@ -261,14 +276,18 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function removeAtCell(...args: [...CellCoordinates, options?: ElementRemovalOptions]): void;
+  export function removeAtCell(
+    ...args: [...CellCoordinates, options?: ElementRemovalOptions]
+  ): void;
 
   /**
    * @deprecated Use {@link removeAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function removeAtCellWhenIdle(...args: [...CellCoordinates, options?: ElementRemovalOptions]): void;
+  export function removeAtCellWhenIdle(
+    ...args: [...CellCoordinates, options?: ElementRemovalOptions]
+  ): void;
 
   /**
    * Move an element between cells. Main-entry writes are deferred; reads see the old grid.
@@ -280,14 +299,24 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void;
+  export function teleportBetweenCells(
+    fromCellX: number,
+    fromCellY: number,
+    toCellX: number,
+    toCellY: number,
+  ): void;
 
   /**
    * @deprecated Use {@link teleportBetweenCells} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void;
+  export function teleportBetweenCellsWhenIdle(
+    fromCellX: number,
+    fromCellY: number,
+    toCellX: number,
+    toCellY: number,
+  ): void;
 
   /**
    * Set particle velocity at a cell. Main-entry writes are deferred; reads see the old grid.
@@ -332,14 +361,18 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function addParticleVelocityAtCell(...args: [...CellCoordinates, velocity: Vector2, maxSpeedCellsPerSecond?: number]): void;
+  export function addParticleVelocityAtCell(
+    ...args: [...CellCoordinates, velocity: Vector2, maxSpeedCellsPerSecond?: number]
+  ): void;
 
   /**
    * @deprecated Use {@link addParticleVelocityAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function addParticleVelocityAtCellWhenIdle(...args: [...CellCoordinates, velocity: Vector2, maxSpeedCellsPerSecond?: number]): void;
+  export function addParticleVelocityAtCellWhenIdle(
+    ...args: [...CellCoordinates, velocity: Vector2, maxSpeedCellsPerSecond?: number]
+  ): void;
 
   /**
    * Convert a cell element to a particle. Main-entry writes are deferred; reads see the old grid.
@@ -366,7 +399,9 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function convertToParticleAtCellWhenIdle(...args: [...CellCoordinates, velocity: Vector2]): void;
+  export function convertToParticleAtCellWhenIdle(
+    ...args: [...CellCoordinates, velocity: Vector2]
+  ): void;
 
   /**
    * Convert a particle back to a solid element. Main-entry writes are deferred; reads see the old grid.
@@ -395,14 +430,18 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function setDataFieldAtCell(...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4, value: number]): void;
+  export function setDataFieldAtCell(
+    ...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4, value: number]
+  ): void;
 
   /**
    * @deprecated Use {@link setDataFieldAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function setDataFieldAtCellWhenIdle(...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4, value: number]): void;
+  export function setDataFieldAtCellWhenIdle(
+    ...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4, value: number]
+  ): void;
 
   /**
    * Refresh the rendered color at a cell. Main-entry writes are deferred; reads see the old grid.
@@ -437,7 +476,9 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function setPhysicsAtCellWhenIdle(...args: [...CellCoordinates, physicsState: number]): void;
+  export function setPhysicsAtCellWhenIdle(
+    ...args: [...CellCoordinates, physicsState: number]
+  ): void;
 
   /**
    * Set element duration at a cell. Main-entry writes are deferred; reads see the old grid.
@@ -459,12 +500,16 @@ export namespace elements {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function setDurationAtCell(...args: [...CellCoordinates, durationTicks: number, options?: { updateMax?: boolean; }]): void;
+  export function setDurationAtCell(
+    ...args: [...CellCoordinates, durationTicks: number, options?: { updateMax?: boolean }]
+  ): void;
 
   /**
    * @deprecated Use {@link setDurationAtCell} instead.
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function setDurationAtCellWhenIdle(...args: [...CellCoordinates, durationTicks: number, options?: { updateMax?: boolean; }]): void;
+  export function setDurationAtCellWhenIdle(
+    ...args: [...CellCoordinates, durationTicks: number, options?: { updateMax?: boolean }]
+  ): void;
 }

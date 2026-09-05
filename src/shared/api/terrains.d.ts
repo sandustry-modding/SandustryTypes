@@ -1,4 +1,4 @@
-import type { CellCoordinates } from "../../shared/player";
+import type { CellCoordinates } from "../player";
 import type { CellId, LooseString, TaggedNumber } from "../nominal";
 import type { CellType as CellTypeEnum } from "../../sandkit/enums/index";
 import type { elements } from "./elements";
@@ -180,7 +180,9 @@ export namespace terrains {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function createAtCell(...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]): void;
+  export function createAtCell(
+    ...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]
+  ): void;
 
   /**
    * Replace existing terrain at a cell. Worker-entry writes are immediate.
@@ -192,7 +194,9 @@ export namespace terrains {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function replaceAtCell(...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]): void;
+  export function replaceAtCell(
+    ...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]
+  ): void;
 
   /**
    * Remove terrain from a cell. Worker-entry writes are immediate.
@@ -203,7 +207,9 @@ export namespace terrains {
    *
    * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
-  export function removeAtCell(...args: [...CellCoordinates, options?: TerrainMutationOptions]): void;
+  export function removeAtCell(
+    ...args: [...CellCoordinates, options?: TerrainMutationOptions]
+  ): void;
 
   /**
    * Set terrain hit points at a cell. Worker-entry writes are immediate.

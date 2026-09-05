@@ -29,7 +29,7 @@ Serialized structure entry used in blueprints.
 ##### x
 
 ```ts
-x: number
+x: number;
 ```
 
 Defined in: [sandkit/api/blueprints.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L31)
@@ -37,7 +37,7 @@ Defined in: [sandkit/api/blueprints.d.ts:31](https://github.com/sandustry-moddin
 ##### y
 
 ```ts
-y: number
+y: number;
 ```
 
 Defined in: [sandkit/api/blueprints.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L32)
@@ -72,7 +72,7 @@ Structure instances to encode.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+---
 
 ### localizeStructures() :id=localizestructures
 
