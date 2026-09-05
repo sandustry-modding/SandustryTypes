@@ -70,9 +70,9 @@ import type { ModInfo, BundlePatch } from "@sandustry-modding/types/configs";
 
 Edit `.d.ts` files under `src/`. Regenerate the Docsify API reference and JSON Schema after JSDoc or config-type changes.
 
-`npm run generate:api-catalog` merges `scripts/api-catalog/overrides.json`, the official [Sandkit API](https://sandustry.com/sandkit.html) HTML, and `src/sandkit/api/` declarations.
-It writes `scripts/generated/api-catalog.json`, refreshes `scripts/namespace-summaries.json`, and reports gaps in `docs/generated/api-gaps.md`.
-Edit namespace descriptions and alias mappings in `scripts/api-catalog/overrides.json`.
+`npm run generate:api` merges `scripts/api-gen/overrides.json`, the official [Sandkit API](https://sandustry.com/sandkit.html) HTML, and `src/sandkit/api/` declarations.
+It writes `scripts/api-gen/generated/api-catalog.json`, refreshes `scripts/api-gen/generated/namespace-summaries.json`, and reports gaps in `docs/generated/api-gaps.md`.
+Edit namespace descriptions and alias mappings in `scripts/api-gen/overrides.json`.
 
 ## Docs site
 
@@ -80,9 +80,10 @@ Guides live under `docs/guides/` (getting started, mod lifecycle, manifest, patc
 Regenerate the Docsify API reference and JSON Schema from these declarations:
 
 ```bash
-npm run generate:api-catalog # overrides + official HTML + declarations → catalog + gaps
-npm run docs:api             # catalog + API markdown + docs/schemas/*.json
-npm run docs:schemas         # JSON Schema only
+npm run generate:api       # catalog + API markdown + docs/schemas/*.json
+npm run docs:api           # same as generate:api
+npm run generate:api -- --catalog   # overrides + official HTML + declarations → catalog + gaps
+npm run generate:api -- --schemas   # JSON Schema only
 npm run docs:archive-sandkit # Fetch official sandkit.html into docs/official-api/
 ```
 

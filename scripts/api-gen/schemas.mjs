@@ -1,8 +1,5 @@
-#!/usr/bin/env node
 /**
  * Generate JSON Schema files from `src/configs/` TypeScript declarations.
- * Usage: npm run docs:schemas
- *        npm run docs:schemas -- --check   # fail if committed schemas are stale
  */
 import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -14,12 +11,12 @@ function npmCli(platform = process.platform) {
   return platform === "win32" ? "npm.cmd" : "npm";
 }
 
-const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
-const SCRIPTS = join(ROOT, "scripts");
+const API_GEN = dirname(fileURLToPath(import.meta.url));
+const ROOT = dirname(dirname(API_GEN));
 const OUT_DIR = join(ROOT, "docs", "schemas");
 const ENTRY = join(ROOT, "src", "configs", "index.d.ts");
 const TSCONFIG = join(ROOT, "tsconfig.json");
-const GENERATOR_PKG = join(SCRIPTS, "node_modules", "ts-json-schema-generator");
+const GENERATOR_PKG = join(API_GEN, "node_modules", "ts-json-schema-generator");
 const PAGES_BASE = "https://sandustry-modding.github.io/SandustryTypes/schemas";
 
 /** @type {{ typeName: string, fileName: string, title: string }[]} */
@@ -36,11 +33,11 @@ const TARGETS = [
   },
 ];
 
-function ensureDocsDeps() {
+function ensureDeps() {
   if (existsSync(GENERATOR_PKG)) return;
-  console.log("Installing docs generator deps in scripts/ …");
+  console.log("api-gen: installing schema generator deps …");
   const install = spawnSync(npmCli(), ["install", "--no-audit", "--no-fund"], {
-    cwd: SCRIPTS,
+    cwd: API_GEN,
     stdio: "inherit",
     windowsHide: true,
   });
@@ -99,11 +96,14 @@ function formatSchema(schema) {
   return `${JSON.stringify(schema, null, 2)}\n`;
 }
 
-function main() {
-  const checkOnly = process.argv.includes("--check");
-  ensureDocsDeps();
+/**
+ * @param {{ check?: boolean }} [options]
+ */
+export function runSchemas(options = {}) {
+  const { check = false } = options;
+  ensureDeps();
 
-  const require = createRequire(join(SCRIPTS, "package.json"));
+  const require = createRequire(join(API_GEN, "package.json"));
   const { createGenerator } = require("ts-json-schema-generator");
 
   const generator = createGenerator({
@@ -123,34 +123,32 @@ function main() {
   for (const target of TARGETS) {
     const raw = generator.createSchema(target.typeName);
     if (!raw) {
-      console.error(`Failed to generate schema for ${target.typeName}`);
+      console.error(`api-gen: failed to generate schema for ${target.typeName}`);
       process.exit(1);
     }
     const schema = finalizeSchema(raw, target);
     const text = formatSchema(schema);
     const outPath = join(OUT_DIR, target.fileName);
 
-    if (checkOnly) {
+    if (check) {
       if (!existsSync(outPath)) {
-        console.error(`Missing schema: ${outPath}`);
+        console.error(`api-gen: missing schema: ${outPath}`);
         drifted = true;
         continue;
       }
       const existing = readFileSync(outPath, "utf8");
       if (existing !== text) {
-        console.error(`Stale schema: docs/schemas/${target.fileName} (run npm run docs:schemas)`);
+        console.error(`api-gen: stale schema: docs/schemas/${target.fileName} (run npm run generate:api)`);
         drifted = true;
       } else {
-        console.log(`ok  docs/schemas/${target.fileName}`);
+        console.log(`api-gen: ok  docs/schemas/${target.fileName}`);
       }
       continue;
     }
 
     writeFileSync(outPath, text);
-    console.log(`wrote docs/schemas/${target.fileName} ← ${target.typeName}`);
+    console.log(`api-gen: wrote docs/schemas/${target.fileName} ← ${target.typeName}`);
   }
 
-  if (checkOnly && drifted) process.exit(1);
+  if (check && drifted) process.exit(1);
 }
-
-main();

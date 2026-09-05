@@ -1,9 +1,7 @@
-#!/usr/bin/env node
 /**
  * Generate Docsify Markdown API reference from Sandkit declarations.
- * Usage: npm run docs:api
  *
- * TypeDoc runs from scripts/ with TypeScript 5.9 (TypeDoc does not support TS 7 yet).
+ * TypeDoc runs from `scripts/api-gen/` with TypeScript 5.9 (TypeDoc does not support TS 7 yet).
  * After TypeDoc, pages are flattened to runtime-style routes (`api/sandkit.api.action.md`).
  */
 import { spawnSync } from "node:child_process";
@@ -26,13 +24,13 @@ function npmCli(platform = process.platform) {
   return platform === "win32" ? "npm.cmd" : "npm";
 }
 
-const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
-const DOCS_SCRIPTS = join(ROOT, "scripts");
+const API_GEN = dirname(fileURLToPath(import.meta.url));
+const ROOT = dirname(dirname(API_GEN));
 const SRC = join(ROOT, "src");
 const DOCS = join(ROOT, "docs");
 const OUT = join(DOCS, "api");
-const TYPEDOC = join(DOCS_SCRIPTS, "node_modules/typedoc/bin/typedoc");
-const CONFIG = join(DOCS_SCRIPTS, "typedoc.json");
+const TYPEDOC = join(API_GEN, "node_modules/typedoc/bin/typedoc");
+const CONFIG = join(API_GEN, "typedoc.json");
 
 /** Thematic groups for the Module index (names match top-level namespace folders). */
 const MAIN_API_GROUPS = [
@@ -152,7 +150,7 @@ let apiCatalogCache = null;
 /** @returns {Record<string, NamespaceSummary>} */
 function loadNamespaceSummaries() {
   if (namespaceSummariesCache) return namespaceSummariesCache;
-  const path = join(DOCS_SCRIPTS, "namespace-summaries.json");
+  const path = join(API_GEN, "generated", "namespace-summaries.json");
   if (!existsSync(path)) {
     namespaceSummariesCache = {};
     return namespaceSummariesCache;
@@ -164,7 +162,7 @@ function loadNamespaceSummaries() {
 /** @returns {typeof apiCatalogCache} */
 function loadApiCatalog() {
   if (apiCatalogCache) return apiCatalogCache;
-  const path = join(DOCS_SCRIPTS, "generated", "api-catalog.json");
+  const path = join(API_GEN, "generated", "api-catalog.json");
   if (!existsSync(path)) return null;
   apiCatalogCache = JSON.parse(readFileSync(path, "utf8"));
   return apiCatalogCache;
@@ -172,7 +170,7 @@ function loadApiCatalog() {
 
 /**
  * Declared method count for a top-level `sandkit.api` namespace.
- * Prefers `scripts/generated/api-catalog.json` from `npm run generate:api-catalog`.
+ * Prefers `scripts/api-gen/generated/api-catalog.json` from the catalog step.
  * @param {string} name
  */
 function countNamespaceMethods(name) {
@@ -210,50 +208,52 @@ function renderApiStats(mainNs) {
 
 function ensureDocsDeps() {
   if (existsSync(TYPEDOC)) return;
-  console.log("Installing docs generator deps in scripts/docs/ …");
+  console.log("api-gen: installing docs generator deps …");
   const install = spawnSync(npmCli(), ["install", "--no-audit", "--no-fund"], {
-    cwd: DOCS_SCRIPTS,
+    cwd: API_GEN,
     stdio: "inherit",
     windowsHide: true,
   });
   if (install.status !== 0) process.exit(install.status ?? 1);
 }
 
-ensureDocsDeps();
+export function runDocs() {
+  ensureDocsDeps();
 
-if (existsSync(OUT)) {
-  rmSync(OUT, { recursive: true, force: true });
+  if (existsSync(OUT)) {
+    rmSync(OUT, { recursive: true, force: true });
+  }
+
+  const result = spawnSync(process.execPath, [TYPEDOC, "--options", CONFIG], {
+    stdio: "inherit",
+    cwd: ROOT,
+  });
+
+  if (result.status !== 0) {
+    process.exit(result.status ?? 1);
+  }
+
+  fixDocsifyLinks(OUT);
+  highlightTypeDocSignatures(OUT);
+  qualifyApiPages(OUT);
+
+  const mainNs = snapshotNamespaceTree(OUT, "sandkit/api");
+  const workerNs = snapshotNamespaceTree(OUT, "worker");
+  const engineNs = snapshotNamespaceTree(OUT, "engine");
+
+  const linkMap = flattenApiRoutes(OUT);
+  const leftoverTypedocIndex = join(OUT, "modules.md");
+  if (existsSync(leftoverTypedocIndex)) {
+    rmSync(leftoverTypedocIndex, { force: true });
+  }
+  writeModuleIndex(DOCS, linkMap, mainNs, workerNs, engineNs);
+  writeFullPage(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
+  writeApiSidebar(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
+  rewriteGeneratedNavLinks(DOCS, linkMap);
+  writeSearchPaths(DOCS);
+
+  console.log("api-gen: wrote docs/api/ (index: docs/modules.md, docs/full.md)");
 }
-
-const result = spawnSync(process.execPath, [TYPEDOC, "--options", CONFIG], {
-  stdio: "inherit",
-  cwd: ROOT,
-});
-
-if (result.status !== 0) {
-  process.exit(result.status ?? 1);
-}
-
-fixDocsifyLinks(OUT);
-highlightTypeDocSignatures(OUT);
-qualifyApiPages(OUT);
-
-const mainNs = snapshotNamespaceTree(OUT, "sandkit/api");
-const workerNs = snapshotNamespaceTree(OUT, "worker");
-const engineNs = snapshotNamespaceTree(OUT, "engine");
-
-const linkMap = flattenApiRoutes(OUT);
-const leftoverTypedocIndex = join(OUT, "modules.md");
-if (existsSync(leftoverTypedocIndex)) {
-  rmSync(leftoverTypedocIndex, { force: true });
-}
-writeModuleIndex(DOCS, linkMap, mainNs, workerNs, engineNs);
-writeFullPage(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
-writeApiSidebar(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
-rewriteGeneratedNavLinks(DOCS, linkMap);
-writeSearchPaths(DOCS);
-
-console.log("Wrote API docs to docs/api/ (index: docs/modules.md, docs/full.md)");
 
 /**
  * @typedef {{ name: string, typedocRel: string, children: NamespaceNode[] }} NamespaceNode

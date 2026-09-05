@@ -14,7 +14,7 @@ import {
   scanWorkerNamespaces,
 } from "./lib/scan-sandkit-api.mjs";
 
-const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
+const ROOT = dirname(dirname(dirname(fileURLToPath(import.meta.url))));
 const SRC = join(ROOT, "src");
 const CACHE = join(ROOT, ".tmp", "sandkit.html");
 

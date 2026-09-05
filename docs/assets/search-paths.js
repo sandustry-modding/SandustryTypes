@@ -167,6 +167,7 @@ window.SMT_SEARCH_PATHS = [
   "/api/shared.nominal",
   "/api/shared.player",
   "/api/types",
+  "/generated/api-gaps",
   "/modules",
   "/official-api/0.5.5",
   "/official-api/0.5.6",
