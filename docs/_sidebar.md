@@ -1,19 +1,13 @@
 - [Home](/)
 - [Search](search.md)
-- [Namespaces](modules.md)
-  - [sandkit](api/sandkit.md)
-  - [sandkit.api](api/sandkit.api.md)
-  - [sandkit.api (worker)](api/sandkit.api.worker.md)
-  - [sandkit.engine](api/sandkit.engine.md)
-  - [sandkit.react](api/sandkit.react.md)
+- [Full API reference](full.md)
+- [Changelog](Changelog.md)
 - Electron
   - [Overview](electron-bridge.md)
   - [API](api/electron.md)
 - Mod files
   - [TypeScript types](api/configs.md)
   - [JSON Schema](schemas.md)
-- [Full API reference](full.md)
-- [Changelog](Changelog.md)
 
 ---
 
@@ -216,4 +210,9 @@
 
 - [sandkit.api.building.StructureType](api/sandkit.api.building.StructureType.md)
 - [sandkit.api.elements.MatterType](api/sandkit.api.elements.MatterType.md)
+- [sandkit.api](api/sandkit.api.md)
+- [sandkit.api.worker](api/sandkit.api.worker.md)
+- [sandkit.engine](api/sandkit.engine.md)
+- [sandkit](api/sandkit.md)
+- [sandkit.react](api/sandkit.react.md)
 - [types](api/types.md)

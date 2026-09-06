@@ -25,13 +25,7 @@ Start with the step-by-step guides:
 
 ## Browse the API
 
-- [Search](search.md) — find methods by live `sandkit` path
-- [Namespaces](modules.md) — APIs by topic group
-  - [sandkit](api/sandkit.md) — root object shape
-  - [Main thread](api/sandkit.api.md) — `main.js` surface (`sandkit.api`)
-  - [Worker thread](api/sandkit.api.worker.md) — `worker.js` subset (mutations apply at once)
-  - [Engine](api/sandkit.engine.md) — unstable escape hatch (`sandkit.engine`)
-  - [React](api/sandkit.react.md) — HUD helpers from the host React build
+- [Search](search.md) — find namespaces, methods, and types by live `sandkit` path
 - [Enums](api/sandkit.enums.md) — runtime enum values
 - Electron — host preload bridge (`window.electron`), not part of `sandkit`
   - [Overview](electron-bridge.md) — when to use the bridge and IPC patterns

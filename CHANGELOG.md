@@ -10,6 +10,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - Docs sidebar groups Electron (overview + API) and mod files (TypeScript types + JSON Schema) instead of listing `electron-bridge`, `configs`, and `electron` as separate top-level items
+- Docs sidebar lists Full API reference and Changelog above Electron
+- Search is the place to browse namespaces.
+  Empty query lists names and one-line descriptions.
+  Nested members stay on the namespace page and in typed search.
+
+### Removed
+
+- `docs/modules.md` alias page.
+  Old `#/modules` URLs still open Search.
+- Accidental `docs/api/_media.search.md` copy of the Search page.
 
 ## 0.6.0 - 2026-09-06
 

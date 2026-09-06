@@ -1,6 +1,6 @@
 # Sandkit API (full) <!-- {docsify-ignore-all} -->
 
-Every generated API page on one document. Use the [Module index](modules.md) when you only need one namespace.
+Every generated API page on one document. Use [Search](search.md) when you only need one namespace.
 
 ## sandkit
 
@@ -39648,7 +39648,11 @@ npm run generate -- --schemas     # JSON Schema only
 npm run docs:archive-sandkit      # Fetch official sandkit.html into docs/official-api/
 ```
 
-Output lands in `docs/api/` and `docs/schemas/`. The namespace index is `docs/modules.md` and the combined page is `docs/full.md`. `npm run docs` runs that step, then serves the docs site. `npm run validate` fails when committed schemas do not match `src/configs/`.
+Output lands in `docs/api/` and `docs/schemas/`.
+Browse namespaces from Search on the docs site.
+The combined page is `docs/full.md`.
+`npm run docs` runs that step, then serves the docs site.
+`npm run validate` fails when committed schemas do not match `src/configs/`.
 
 `npm run docs:archive-sandkit` asks for a base file name, then writes `docs/official-api/<name>.md` from https://sandustry.com/sandkit.html.
 

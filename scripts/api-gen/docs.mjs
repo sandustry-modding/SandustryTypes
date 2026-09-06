@@ -17,6 +17,12 @@ import {
   renderSearchIndexScript,
   rewriteApiHrefMap,
 } from "./api-search.mjs";
+import {
+  ENGINE_API_GROUPS,
+  MAIN_API_GROUPS,
+  buildBrowseCatalog,
+  renderBrowseScript,
+} from "./namespace-cards.mjs";
 
 function npmCli(platform = process.platform) {
   return platform === "win32" ? "npm.cmd" : "npm";
@@ -24,185 +30,10 @@ function npmCli(platform = process.platform) {
 
 const API_GEN = dirname(fileURLToPath(import.meta.url));
 const ROOT = dirname(dirname(API_GEN));
-const SRC = join(ROOT, "src");
 const DOCS = join(ROOT, "docs");
 const OUT = join(DOCS, "api");
 const TYPEDOC = join(API_GEN, "node_modules/typedoc/bin/typedoc");
 const CONFIG = join(API_GEN, "typedoc.json");
-
-/** Thematic groups for the Module index (names match top-level namespace folders). */
-const MAIN_API_GROUPS = [
-  {
-    title: "Player & controls",
-    names: ["player", "input", "action", "tools", "camera", "authorization", "cooldown"],
-  },
-  {
-    title: "World & simulation",
-    names: [
-      "grid",
-      "world",
-      "pickups",
-      "elements",
-      "terrains",
-      "entities",
-      "fire",
-      "excavation",
-      "reactions",
-      "raycast",
-      "random",
-      "time",
-      "maps",
-    ],
-  },
-  {
-    title: "Factory & building",
-    names: [
-      "structures",
-      "building",
-      "processing",
-      "collector",
-      "energy",
-      "structureBehaviors",
-      "patterns",
-      "pipes",
-      "factory",
-      "blueprints",
-    ],
-  },
-  {
-    title: "UI & media",
-    names: ["ui", "sprites", "lights", "effects", "rendering", "sound", "i18n", "scene"],
-  },
-  {
-    title: "Progression & items",
-    names: ["tech", "upgrades", "discoveries", "progression", "resources", "items", "projectiles"],
-  },
-  {
-    title: "Mods & runtime",
-    names: [
-      "mods",
-      "settings",
-      "storage",
-      "assets",
-      "hooks",
-      "events",
-      "triggers",
-      "schedule",
-      "workers",
-      "shared",
-      "signals",
-      "utils",
-      "constants",
-      "gameConfig",
-      "game",
-    ],
-  },
-];
-
-const ENGINE_API_GROUPS = [
-  {
-    title: "Game & factory",
-    names: ["game", "factory", "conveyors", "queue", "heatTransfer"],
-  },
-  {
-    title: "Entities & drones",
-    names: ["entities", "drones", "sweeperDrone", "launchers", "swarmConsole"],
-  },
-  {
-    title: "World & terrain",
-    names: ["matters", "foliage", "wall", "shadows", "portals", "teleportZones", "strataform"],
-  },
-  {
-    title: "Prefabs & blueprints",
-    names: ["prefabData", "prefabDecor", "prefabulator", "blueprints", "clipboard"],
-  },
-  {
-    title: "Materials & pickers",
-    names: [
-      "auralite",
-      "prismaline",
-      "prismite",
-      "augments",
-      "colorPicker",
-      "coloringTool",
-      "foundationColorPicker",
-      "lightColorPicker",
-    ],
-  },
-  {
-    title: "Debug & misc",
-    names: ["debug", "extensions", "misc", "tutorialBuild", "usageTracker", "workerLocal"],
-  },
-];
-
-/**
- * @typedef {{ description: string, worker: boolean }} NamespaceSummary
- */
-
-/** @type {Record<string, NamespaceSummary> | null} */
-let namespaceSummariesCache = null;
-
-/** @type {{ namespaces?: Record<string, { methodCount?: { declared?: number } }>, stats?: { declaredMethodCount?: number } } | null} */
-let apiCatalogCache = null;
-
-/** @returns {Record<string, NamespaceSummary>} */
-function loadNamespaceSummaries() {
-  if (namespaceSummariesCache) return namespaceSummariesCache;
-  const path = join(API_GEN, "generated", "namespace-summaries.json");
-  if (!existsSync(path)) {
-    namespaceSummariesCache = {};
-    return namespaceSummariesCache;
-  }
-  namespaceSummariesCache = JSON.parse(readFileSync(path, "utf8"));
-  return namespaceSummariesCache;
-}
-
-/** @returns {typeof apiCatalogCache} */
-function loadApiCatalog() {
-  if (apiCatalogCache) return apiCatalogCache;
-  const path = join(API_GEN, "generated", "api-catalog.json");
-  if (!existsSync(path)) return null;
-  apiCatalogCache = JSON.parse(readFileSync(path, "utf8"));
-  return apiCatalogCache;
-}
-
-/**
- * Declared method count for a top-level `sandkit.api` namespace.
- * Prefers `scripts/api-gen/generated/api-catalog.json` from the catalog step.
- * @param {string} name
- */
-function countNamespaceMethods(name) {
-  const catalog = loadApiCatalog();
-  const declared = catalog?.namespaces?.[name]?.methodCount?.declared;
-  if (typeof declared === "number") return declared;
-
-  const fileName = name === "gameConfig" ? "gameconfig.d.ts" : `${name}.d.ts`;
-  const filePath = join(SRC, "sandkit", "api", fileName);
-  if (!existsSync(filePath)) return 0;
-  const text = readFileSync(filePath, "utf8");
-  return (text.match(/export (function|import|const) /g) || []).length;
-}
-
-/**
- * @param {NamespaceNode[]} mainNs
- */
-function renderApiStats(mainNs) {
-  const summaries = loadNamespaceSummaries();
-  const catalog = loadApiCatalog();
-  const names = mainNs.map((n) => n.name);
-  const methodCount =
-    catalog?.stats?.declaredMethodCount ??
-    names.reduce((sum, name) => sum + countNamespaceMethods(name), 0);
-  const workerCount = names.filter((name) => summaries[name]?.worker).length;
-  return [
-    '<div class="smt-api-stats">',
-    `<span><strong>${names.length}</strong> namespaces</span>`,
-    `<span><strong>${methodCount}</strong> API methods</span>`,
-    `<span><strong>${workerCount}</strong> worker-available</span>`,
-    "</div>",
-    "",
-  ];
-}
 
 function ensureDocsDeps() {
   if (existsSync(TYPEDOC)) return;
@@ -244,13 +75,12 @@ export function runDocs() {
   if (existsSync(leftoverTypedocIndex)) {
     rmSync(leftoverTypedocIndex, { force: true });
   }
-  writeModuleIndex(DOCS, linkMap, mainNs, workerNs, engineNs);
+  writeNamespaceBrowseScript(DOCS, linkMap, mainNs, workerNs, engineNs);
   writeFullPage(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
   writeApiSidebar(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
-  rewriteGeneratedNavLinks(DOCS, linkMap);
   writeSearchPaths(DOCS);
 
-  console.log("api-gen: wrote docs/api/ (index: docs/modules.md, docs/full.md)");
+  console.log("api-gen: wrote docs/api/ (browse: docs/search.md, combined: docs/full.md)");
 }
 
 /**
@@ -307,7 +137,7 @@ function flattenApiRoutes(outDir) {
 
   for (const filePath of walkMarkdownFiles(outDir)) {
     const base = filePath.split(/[/\\]/).pop() || "";
-    if (base === "_sidebar.md" || base === "modules.md") continue;
+    if (base === "_sidebar.md" || base === "modules.md" || base.startsWith("_media")) continue;
 
     const rel = toPosixPath(filePath.slice(outDir.length + 1));
     const routeFile = apiPathToRouteFile(rel);
@@ -336,6 +166,10 @@ function flattenApiRoutes(outDir) {
     }
     if (!entry.isFile() || !entry.name.endsWith(".md")) continue;
     if (entry.name === "_sidebar.md" || entry.name === "modules.md") continue;
+    if (entry.name.startsWith("_media")) {
+      rmSync(full, { force: true });
+      continue;
+    }
     if (pages.some((p) => p.routeFile === entry.name)) continue;
     if (linkMap.has(`api/${entry.name}`)) {
       rmSync(full, { force: true });
@@ -345,216 +179,29 @@ function flattenApiRoutes(outDir) {
   return linkMap;
 }
 
-function rewriteGeneratedNavLinks(outDir, linkMap) {
-  const filePath = join(outDir, "modules.md");
-  if (!existsSync(filePath)) return;
-  const content = readFileSync(filePath, "utf8");
-  const fixed = rewriteApiHrefMap(content, linkMap);
-  if (fixed !== content) writeFileSync(filePath, fixed);
-}
-
 /**
- * Expanded Module index with thematic groups.
+ * Empty-search browse cards (`docs/assets/namespace-cards.js`).
+ *
  * @param {string} docsDir
  * @param {Map<string, string>} linkMap
  * @param {NamespaceNode[]} mainNs
  * @param {NamespaceNode[]} workerNs
  * @param {NamespaceNode[]} engineNs
  */
-function writeModuleIndex(docsDir, linkMap, mainNs, workerNs, engineNs) {
+function writeNamespaceBrowseScript(docsDir, linkMap, mainNs, workerNs, engineNs) {
   const href = (typedocRel) => linkMap.get(`api/${typedocRel}`) || `api/${typedocRel}`;
-  const p = (slug) => `api/${slug}.md`;
-
-  /** @type {string[]} */
-  const lines = [
-    '<div class="smt-api-landing">',
-    "",
-    "# Sandkit API",
-    "",
-    "`sandkit.api` namespaces available in a mod's main entry script.",
-    "Worker-available namespaces are marked.",
-    "",
-    ...renderApiStats(mainNs),
-    "Use groups below to find a namespace, or open [Full API reference](full.md).",
-    "",
-    "## Roots",
-    "",
-    `- [sandkit](${p("sandkit")}) — root object shape`,
-    `- [Main thread](${p("sandkit.api")}) — \`sandkit.api\``,
-    `- [Worker](${p("sandkit.api.worker")}) — worker-thread \`sandkit.api\``,
-    `- [Engine](${p("sandkit.engine")}) — \`sandkit.engine\``,
-    `- [React](${p("sandkit.react")}) — \`sandkit.react\``,
-    `- [Enums](${p("sandkit.enums")}) — \`sandkit.enums\``,
-    "- [Full API reference](full.md) — all namespaces on one page",
-    "",
-    "## Main thread (`sandkit.api`)",
-    "",
-    ...renderGroupedNamespaces(mainNs, href, MAIN_API_GROUPS),
-    "",
-    "## Worker (`sandkit.api`)",
-    "",
-    "Worker-thread namespaces. Same names as main where they overlap; pages use a `.worker` URL suffix.",
-    "",
-    ...renderFlatNamespaceList(workerNs, href),
-    "",
-    "## Engine (`sandkit.engine`)",
-    "",
-    ...renderGroupedNamespaces(engineNs, href, ENGINE_API_GROUPS),
-    "",
-    "## Enums",
-    "",
-    ...renderEnumList(linkMap),
-    "",
-    "## Shared domain types",
-    "",
-    `- [asset](${p("shared.asset")})`,
-    `- [engine](${p("shared.engine")})`,
-    `- [jsonvalue](${p("shared.jsonvalue")})`,
-    `- [nominal](${p("shared.nominal")})`,
-    `- [player](${p("shared.player")})`,
-    "",
-    "## Electron",
-    "",
-    "Host preload bridge (`window.electron`).",
-    "Not part of `sandkit`.",
-    "",
-    "- [Overview](electron-bridge.md) — when to use the bridge and IPC patterns",
-    `- [API](${p("electron")}) — generated \`electron\` reference`,
-    "",
-    "## Mod files",
-    "",
-    "Not runtime `sandkit` objects.",
-    "Import from `@sandustry-modding/types/configs`.",
-    "",
-    `- [TypeScript types](${p("configs")}) — \`modinfo.json\`, \`patches.json\`, and \`workshop.json\``,
-    "- [JSON Schema](schemas.md) — raw schema URLs for editors",
-    "",
-    "</div>",
-    "",
-  ];
-
-  writeFileSync(join(docsDir, "modules.md"), `${lines.join("\n")}\n`);
-}
-
-/**
- * @param {NamespaceNode[]} nodes
- * @param {(rel: string) => string} href
- * @param {{ title: string, names: string[] }[]} groups
- */
-function renderGroupedNamespaces(nodes, href, groups) {
-  const byName = new Map(nodes.map((n) => [n.name, n]));
-  const used = new Set();
-  /** @type {string[]} */
-  const out = [];
-
-  for (const group of groups) {
-    const members = group.names.map((name) => byName.get(name)).filter(Boolean);
-    if (!members.length) continue;
-    out.push(`### ${group.title}`);
-    out.push("");
-    out.push('<ul class="smt-api-group smt-api-cards">');
-    for (const node of members) {
-      used.add(node.name);
-      out.push(...namespaceIndexItems(node, href));
-    }
-    out.push("</ul>");
-    out.push("");
-  }
-
-  const leftover = nodes.filter((n) => !used.has(n.name));
-  if (leftover.length) {
-    out.push("### Other");
-    out.push("");
-    out.push('<ul class="smt-api-group smt-api-cards">');
-    for (const node of leftover) {
-      out.push(...namespaceIndexItems(node, href));
-    }
-    out.push("</ul>");
-    out.push("");
-  }
-
-  return out;
-}
-
-/**
- * @param {NamespaceNode[]} nodes
- * @param {(rel: string) => string} href
- */
-function renderFlatNamespaceList(nodes, href) {
-  if (!nodes.length) return ["- _(none)_", ""];
-  /** @type {string[]} */
-  const out = ['<ul class="smt-api-group">'];
-  for (const node of nodes) {
-    out.push(...namespaceIndexItems(node, href));
-  }
-  out.push("</ul>", "");
-  return out;
-}
-
-/**
- * Parent link, then a nested bullet list of children.
- * @param {NamespaceNode} node
- * @param {(rel: string) => string} href
- */
-function namespaceIndexItems(node, href) {
-  const summaries = loadNamespaceSummaries();
-  const summary = summaries[node.name];
-  const methods = countNamespaceMethods(node.name);
-  const methodLabel = methods === 1 ? "1 method" : `${methods} methods`;
-  const workerBadge = summary?.worker
-    ? '<span class="smt-api-badge smt-api-badge-worker">worker</span>'
-    : "";
-  const desc = summary?.description
-    ? `<p class="smt-api-card-desc">${escapeHtml(summary.description)}</p>`
-    : "";
-  const link = `<a class="smt-api-card-link" href="${docsifyHash(href(node.typedocRel))}"><span class="smt-api-card-head"><span class="smt-api-card-name">${escapeHtml(node.name)}</span><span class="smt-api-card-meta">${methodLabel}</span></span>${desc}${workerBadge}</a>`;
-  if (!node.children.length) {
-    return [`<li class="smt-api-card">${link}</li>`];
-  }
-  const kids = node.children
-    .map((c) => `<li><a href="${docsifyHash(href(c.typedocRel))}">${escapeHtml(c.name)}</a></li>`)
-    .join("");
-  return [`<li class="smt-api-card">${link}<ul class="smt-api-tree">${kids}</ul></li>`];
-}
-
-/** @param {string} text */
-function escapeHtml(text) {
-  return String(text)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;");
-}
-
-/** `api/foo.md` → `#/api/foo` */
-function docsifyHash(apiMdHref) {
-  const path = String(apiMdHref).replace(/\.md$/, "");
-  return `#/${path.replace(/^\//, "")}`;
-}
-
-/**
- * @param {Map<string, string>} linkMap
- */
-function renderEnumList(linkMap) {
-  const enums = [...linkMap.values()]
-    .filter((h) => /^api\/sandkit\.enums\.[A-Za-z][\w]*\.md$/.test(h))
-    .map((h) => {
-      const name = h.replace(/^api\/sandkit\.enums\./, "").replace(/\.md$/, "");
-      return { name, href: h };
-    })
-    .sort((a, b) => a.name.localeCompare(b.name));
-
-  if (!enums.length) {
-    return [`- [sandkit.enums](api/sandkit.enums.md)`, ""];
-  }
-
-  /** @type {string[]} */
-  const out = [`- [Overview](api/sandkit.enums.md)`, "", '<ul class="smt-api-group">'];
-  for (const e of enums) {
-    out.push(`<li><a href="${docsifyHash(e.href)}">${e.name}</a></li>`);
-  }
-  out.push("</ul>", "");
-  return out;
+  const summariesPath = join(API_GEN, "generated", "namespace-summaries.json");
+  const summaries = existsSync(summariesPath)
+    ? JSON.parse(readFileSync(summariesPath, "utf8"))
+    : {};
+  const catalog = buildBrowseCatalog({
+    mainNs,
+    workerNs,
+    engineNs,
+    href,
+    summaries,
+  });
+  writeFileSync(join(docsDir, "assets", "namespace-cards.js"), renderBrowseScript(catalog));
 }
 
 /**
@@ -688,7 +335,7 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
 
   const skip = new Set(["_sidebar.md", "modules.md", "full.md"]);
   const onDisk = readdirSync(outDir)
-    .filter((name) => name.endsWith(".md") && !skip.has(name))
+    .filter((name) => name.endsWith(".md") && !skip.has(name) && !name.startsWith("_media"))
     .sort((a, b) => a.localeCompare(b));
   const preferredSet = new Set(preferred);
   const files = [
@@ -700,7 +347,7 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
   const parts = [
     "# Sandkit API (full) <!-- {docsify-ignore-all} -->",
     "",
-    "Every generated API page on one document. Use the [Module index](modules.md) when you only need one namespace.",
+    "Every generated API page on one document. Use [Search](search.md) when you only need one namespace.",
     "",
   ];
 
@@ -787,20 +434,14 @@ function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
   const lines = [
     "- [Home](/)",
     ...ifDocs("search.md", 0, "Search"),
-    "- [Namespaces](modules.md)",
-    ...ifFile("sandkit.md", 1, "sandkit"),
-    ...ifFile("sandkit.api.md", 1, "sandkit.api"),
-    ...ifFile("sandkit.api.worker.md", 1, "sandkit.api (worker)"),
-    ...ifFile("sandkit.engine.md", 1, "sandkit.engine"),
-    ...ifFile("sandkit.react.md", 1, "sandkit.react"),
+    "- [Full API reference](full.md)",
+    ...ifDocs("Changelog.md", 0, "Changelog"),
     heading(0, "Electron"),
     ...ifDocs("electron-bridge.md", 1, "Overview"),
     ...ifFile("electron.md", 1, "API"),
     heading(0, "Mod files"),
     ...ifFile("configs.md", 1, "TypeScript types"),
     ...ifDocs("schemas.md", 1, "JSON Schema"),
-    "- [Full API reference](full.md)",
-    ...ifDocs("Changelog.md", 0, "Changelog"),
     "",
     section("Main thread"),
     "",

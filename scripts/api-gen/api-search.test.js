@@ -14,7 +14,8 @@ import {
 test("apiPathToQualifiedName maps TypeDoc files to runtime names", () => {
   assert.equal(apiPathToQualifiedName("README.md"), "Sandkit API types");
   assert.equal(apiPathToQualifiedName("types.md"), "Sandkit API types");
-  assert.equal(apiPathToQualifiedName("modules.md"), "Sandkit API");
+  assert.equal(apiPathToQualifiedName("modules.md"), null);
+  assert.equal(apiPathToQualifiedName("_media/search.md"), null);
   assert.equal(
     apiPathToQualifiedName("sandkit/api/namespaces/settings/README.md"),
     "sandkit.api.settings",
@@ -203,7 +204,8 @@ test("mdFileToSearchPath matches Docsify getFile paths", () => {
   assert.equal(mdFileToSearchPath("api/_sidebar.md"), null);
   assert.equal(mdFileToSearchPath("full.md"), null);
   assert.equal(mdFileToSearchPath("api/full.md"), null);
-  assert.equal(mdFileToSearchPath("modules.md"), "/modules");
+  assert.equal(mdFileToSearchPath("modules.md"), null);
+  assert.equal(mdFileToSearchPath("api/_media.search.md"), null);
   assert.equal(mdFileToSearchPath("api/global/README.md"), null);
   assert.equal(mdFileToSearchPath("search.md"), null);
   assert.equal(mdFileToSearchPath("AGENTS.md"), null);

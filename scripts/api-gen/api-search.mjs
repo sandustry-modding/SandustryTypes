@@ -19,7 +19,7 @@ const IGNORE_H2 = new Set([
   "Variables",
 ]);
 
-const SKIP_SEARCH_FILES = new Set(["_sidebar.md", "AGENTS.md", "full.md", "search.md"]);
+const SKIP_SEARCH_FILES = new Set(["_sidebar.md", "AGENTS.md", "full.md", "search.md", "modules.md"]);
 
 /**
  * TypeDoc names the composed host bags after the TypeScript alias.
@@ -59,7 +59,8 @@ export function apiPathToQualifiedName(relPosix) {
   let p = relPosix.replaceAll("\\", "/");
   if (!p || p.endsWith("_sidebar.md")) return null;
   if (p === "README.md" || p === "types.md") return "Sandkit API types";
-  if (p === "modules.md") return "Sandkit API";
+  if (p === "modules.md") return null;
+  if (p === "_media" || p.startsWith("_media/") || p.startsWith("_media.")) return null;
   // Template ambient aliases (`global.d.ts`) — not the live Sandkit API.
   if (p === "global" || p.startsWith("global/")) return null;
 
@@ -102,7 +103,6 @@ export function apiPathToQualifiedName(relPosix) {
  */
 export function qualifiedNameToSlug(qualified) {
   if (!qualified) return null;
-  if (qualified === "Sandkit API") return "modules";
   if (qualified === "Sandkit API types") return "types";
   if (qualified.endsWith(" (worker)")) {
     return `${qualified.slice(0, -" (worker)".length)}.worker`;
@@ -248,6 +248,7 @@ export function mdFileToSearchPath(relFromDocs) {
   if (!rel.endsWith(".md")) return null;
   // Template ambient aliases — not part of the published Sandkit API index.
   if (rel === "api/global.md" || rel.startsWith("api/global/")) return null;
+  if (rel.split("/").some((part) => part.startsWith("_media"))) return null;
 
   let path = `/${rel.slice(0, -".md".length)}`;
   if (path === "/README") return "/";

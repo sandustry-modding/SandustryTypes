@@ -126,11 +126,13 @@
       '<div class="smt-search-scopes" role="group" aria-label="Filter by area"></div>' +
       "</form>" +
       '<p class="smt-search-status" aria-live="polite"></p>' +
+      '<div class="smt-search-browse" hidden></div>' +
       '<ul class="smt-search-results"></ul>';
 
     var input = root.querySelector("#smt-search-input");
     var status = root.querySelector(".smt-search-status");
     var list = root.querySelector(".smt-search-results");
+    var browse = root.querySelector(".smt-search-browse");
     var scopes = root.querySelector(".smt-search-scopes");
     var form = root.querySelector(".smt-search-form");
     var selected = -1;
@@ -162,6 +164,66 @@
       scopes.innerHTML = html;
     }
 
+    function cardHtml(card) {
+      var desc = card.description
+        ? '<p class="smt-api-card-desc">' + escapeHtml(card.description) + "</p>"
+        : "";
+      return (
+        '<li class="smt-api-card">' +
+        '<a class="smt-api-card-link" href="' +
+        escapeHtml(card.href) +
+        '">' +
+        '<span class="smt-api-card-name">' +
+        escapeHtml(card.name) +
+        "</span>" +
+        desc +
+        "</a></li>"
+      );
+    }
+
+    function browseSections(scopeId) {
+      var data = window.SMT_NAMESPACE_CARDS;
+      if (!data) return [];
+      if (scopeId === "worker") return data.worker || [];
+      if (scopeId === "engine") return data.engine || [];
+      if (scopeId === "enum" || scopeId === "guide" || scopeId === "other") return [];
+      return data.main || [];
+    }
+
+    function renderBrowse(scopeId) {
+      var sections = browseSections(scopeId);
+      if (!sections.length) {
+        browse.hidden = true;
+        browse.innerHTML = "";
+        return false;
+      }
+      var html = "";
+      for (var i = 0; i < sections.length; i++) {
+        var section = sections[i];
+        html += "<h3>" + escapeHtml(section.title) + "</h3>";
+        html += '<ul class="smt-api-group smt-api-cards">';
+        for (var j = 0; j < section.cards.length; j++) {
+          html += cardHtml(section.cards[j]);
+        }
+        html += "</ul>";
+      }
+      browse.innerHTML = html;
+      browse.hidden = false;
+      return true;
+    }
+
+    function loadCards(done) {
+      if (window.SMT_NAMESPACE_CARDS) {
+        done();
+        return;
+      }
+      var script = document.createElement("script");
+      script.src = "assets/namespace-cards.js";
+      script.onload = done;
+      script.onerror = done;
+      document.head.appendChild(script);
+    }
+
     function render() {
       var api = queryApi();
       var q = input.value.trim();
@@ -172,9 +234,17 @@
 
       if (!q) {
         list.innerHTML = "";
-        status.textContent = "Type a namespace, method, or type name.";
+        list.hidden = true;
+        var shown = renderBrowse(scopeId);
+        status.textContent = shown
+          ? "Open a namespace, or type a method or type name."
+          : "Type a namespace, method, or type name.";
         return;
       }
+
+      browse.hidden = true;
+      browse.innerHTML = "";
+      list.hidden = false;
 
       if (!api || !Array.isArray(window.SMT_SEARCH_INDEX)) {
         status.textContent = "Loading index…";
@@ -274,9 +344,11 @@
 
     scopeButtons(route.scope);
     input.value = route.q;
-    loadIndex(function () {
-      render();
-      input.focus();
+    loadCards(function () {
+      loadIndex(function () {
+        render();
+        input.focus();
+      });
     });
   }
 

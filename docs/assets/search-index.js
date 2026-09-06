@@ -1,7 +1,7 @@
 window.SMT_SEARCH_INDEX = [
   {
     "title": "Sandkit API",
-    "body": "Community reference for the live Sandustry sandkit modding API: every namespace, method, and enum — reverse-engineered and kept in sync with the game. Install types as @sandustry-modding/types. New to modding? Start with the step-by-step guides: - Getting started — what a mod is, required files, and a minimal example - The mod lifecycle — compilation, load order, events, and hooks - modinfo.json reference — manifest fields, limits, and capabilities - Patching with patches.json — bundle find-and-replace patches - Worker mods — simulation-worker entry and shared buffers - Publishing to Steam Workshop — packaging and workshop.json All guides → - Search — find methods by live sandkit path - Namespaces — APIs by topic group - sandkit — root object shape - Main thread — main.js surface (sandkit.api) - Worker thread — worker.js subset (mutations apply at once) - Engine — unstable escape hatch (sandkit.engine) - React — HUD helpers from the host React build - Enums — runtime enum values - Electron — host preload bridge (window.electron), not part of sandkit - Overview — when to use the bridge and IPC patterns - API — generated electron reference - Mod files — not runtime sandkit objects - TypeScript types — modinfo.json, patches.json, and workshop.json - JSON Schema — raw schema URLs for editors - Full API reference — every namespace on one page",
+    "body": "Community reference for the live Sandustry sandkit modding API: every namespace, method, and enum — reverse-engineered and kept in sync with the game. Install types as @sandustry-modding/types. New to modding? Start with the step-by-step guides: - Getting started — what a mod is, required files, and a minimal example - The mod lifecycle — compilation, load order, events, and hooks - modinfo.json reference — manifest fields, limits, and capabilities - Patching with patches.json — bundle find-and-replace patches - Worker mods — simulation-worker entry and shared buffers - Publishing to Steam Workshop — packaging and workshop.json All guides → - Search — find namespaces, methods, and types by live sandkit path - Enums — runtime enum values - Electron — host preload bridge (window.electron), not part of sandkit - Overview — when to use the bridge and IPC patterns - API — generated electron reference - Mod files — not runtime sandkit objects - TypeScript types — modinfo.json, patches.json, and workshop.json - JSON Schema — raw schema URLs for editors - Full API reference — every namespace on one page",
     "path": "/",
     "id": ""
   },
@@ -8881,7 +8881,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "Sandkit API types.Ambient types (preferred)",
-    "body": "Pull the host sandkit ambient into your project with a triple-slash reference. Put it at the top of main.js / worker.js, or in a small ambient .d.ts that your tsconfig / jsconfig includes: That works in .ts and .js (including checked JS with checkJs). Do not list @sandustry-modding/types under compilerOptions.types. That list only loads packages from node modules/@types (for example \"react\" or \"node\"). Deep declaration modules are also available, for example: - Main mod (main.js): use the ambient free name sandkit. Type aliases such as SandkitApi are global; do not import a value binding. - Worker mod (worker.js): type sandkit.api as WorkerSandkitApi. Worker and main APIs overlap but are not interchangeable. - Shared folder: not a runtime namespace. It holds domain shapes and API bases that main and worker modules extend. - Configs folder: modinfo.json and patches.json TypeScript types (@sandustry-modding/types/configs). Not part of the live sandkit object. JSON Schema: https://sandustry-modding.github.io/SandustryTypes/schemas/modinfo.json and https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json - Electron folder: renderer preload bridge (@sandustry-modding/types/electron). Ambient electron on @sandustry-modding/types. Docs: Electron bridge. Edit .d.ts files under src/. Regenerate the Docsify API reference and JSON Schema after JSDoc or config-type changes. npm run generate merges scripts/api-gen/overrides.json, the official Sandkit API HTML, and src/sandkit/api/ declarations. It writes scripts/api-gen/generated/api-catalog.json, refreshes scripts/api-gen/generated/namespace-summaries.json, and reports gaps in docs/generated/api-gaps.md. Edit namespace descriptions and alias mappings in scripts/api-gen/overrides.json. Guides live under docs/guides/ (getting started, mod lifecycle, manifest, patches, workers, Workshop). Regenerate the Docsify API reference and JSON Schema from these declarations: Output lands in docs/api/ and docs/schemas/. The namespace index is docs/modules.md and the combined page is docs/full.md. npm run docs runs that step, then serves the docs site. npm run validate fails when committed schemas do not match src/configs/. npm run docs:archive-sandkit asks for a base file name, then writes docs/official-api/ .md from https://sandustry.com/sandkit.html.",
+    "body": "Pull the host sandkit ambient into your project with a triple-slash reference. Put it at the top of main.js / worker.js, or in a small ambient .d.ts that your tsconfig / jsconfig includes: That works in .ts and .js (including checked JS with checkJs). Do not list @sandustry-modding/types under compilerOptions.types. That list only loads packages from node modules/@types (for example \"react\" or \"node\"). Deep declaration modules are also available, for example: - Main mod (main.js): use the ambient free name sandkit. Type aliases such as SandkitApi are global; do not import a value binding. - Worker mod (worker.js): type sandkit.api as WorkerSandkitApi. Worker and main APIs overlap but are not interchangeable. - Shared folder: not a runtime namespace. It holds domain shapes and API bases that main and worker modules extend. - Configs folder: modinfo.json and patches.json TypeScript types (@sandustry-modding/types/configs). Not part of the live sandkit object. JSON Schema: https://sandustry-modding.github.io/SandustryTypes/schemas/modinfo.json and https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json - Electron folder: renderer preload bridge (@sandustry-modding/types/electron). Ambient electron on @sandustry-modding/types. Docs: Electron bridge. Edit .d.ts files under src/. Regenerate the Docsify API reference and JSON Schema after JSDoc or config-type changes. npm run generate merges scripts/api-gen/overrides.json, the official Sandkit API HTML, and src/sandkit/api/ declarations. It writes scripts/api-gen/generated/api-catalog.json, refreshes scripts/api-gen/generated/namespace-summaries.json, and reports gaps in docs/generated/api-gaps.md. Edit namespace descriptions and alias mappings in scripts/api-gen/overrides.json. Guides live under docs/guides/ (getting started, mod lifecycle, manifest, patches, workers, Workshop). Regenerate the Docsify API reference and JSON Schema from these declarations: Output lands in docs/api/ and docs/schemas/. Browse namespaces from Search. The combined page is docs/full.md. npm run docs runs that step, then serves the docs site. npm run validate fails when committed schemas do not match src/configs/. npm run docs:archive-sandkit asks for a base file name, then writes docs/official-api/ .md from https://sandustry.com/sandkit.html.",
     "path": "/api/types",
     "id": ""
   },
@@ -8893,7 +8893,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "API catalog gaps",
-    "body": "Generated by npm run generate. Edit descriptions and expected members in scripts/api-gen/overrides.json. - Official source: https://sandustry.com/sandkit.html - Generated: 2026-09-06T18:33:19.586Z - Namespaces: 67 - Official methods (HTML): 268 - Declared methods (types): 441 - Open gaps: 45",
+    "body": "Generated by npm run generate. Edit descriptions and expected members in scripts/api-gen/overrides.json. - Official source: https://sandustry.com/sandkit.html - Generated: 2026-09-06T19:15:55.560Z - Namespaces: 67 - Official methods (HTML): 268 - Declared methods (types): 441 - Open gaps: 45",
     "path": "/generated/api-gaps",
     "id": ""
   },
@@ -8991,84 +8991,6 @@ window.SMT_SEARCH_INDEX = [
     "title": "API catalog gaps.visibilityHandle",
     "body": "- visibilityHandle.restore",
     "path": "/generated/api-gaps",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API",
-    "body": "sandkit.api namespaces available in a mod's main entry script. Worker-available namespaces are marked. 60 namespaces 441 API methods 17 worker-available Use groups below to find a namespace, or open Full API reference. - sandkit — root object shape - Main thread — sandkit.api - Worker — worker-thread sandkit.api - Engine — sandkit.engine - React — sandkit.react - Enums — sandkit.enums - Full API reference — all namespaces on one page",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.Player & controls",
-    "body": "player 23 methods Read and control player position, movement, collision, inventory, and building unlocks. worker buildings inventory input 10 methods Register key bindings, read the mouse cell, and query or drive binding state. action 3 methods Read the active hotbar action and store custom data on it. tools 8 methods Inspect and control the grabber tool: size, active state, and load status. grabber camera 3 methods Return the camera to the player, focus a world point, or release focus. authorization 6 methods Test build, grab, and tool permissions at cells and look up authorization zone ids. cooldown 2 methods Named per-mod cooldown timers you can check and consume.",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.World & simulation",
-    "body": "grid 15 methods Iterate rectangular or circular cell regions with a callback per cell. world 28 methods Read the cell grid, excavate, reveal fog, and run idle-safe world mutations. worker pickups pickups 6 methods Spawn, query, remove, and collect loose items lying in the world. elements 50 methods Register custom element types and read or change falling-sand cells. worker terrains 27 methods Register terrain types and create, damage, or remove terrain at cells. worker entities 7 methods Spawn, query, and control discrete world entities by id and type. fire 3 methods Test whether a cell can burn and ignite it when the simulation is idle. worker excavation 1 method Register named excavation profiles that define how digging behaves. reactions 1 method Register contact rules that transform two elements when they touch. raycast 1 method Cast a ray from a world position and return what it hits. random 2 methods Seeded random numbers for deterministic, reproducible values. worker time 2 methods Read game time in milliseconds and the current simulation tick. maps 5 methods List available maps and start a custom or vanilla map. worker",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.Factory & building",
-    "body": "structures 50 methods Register buildings, recipes, and processors; place, remove, and query structures on the grid. worker processing recipes building 4 methods Help place structures: snap positions, test blockage, choose what to build, or cancel. processing 3 methods Register recipes for built-in Grower, Shaker, and Kinetic Press structures. collector 5 methods Read collector values per cell and element, test collectability, and report pickups. worker energy 6 methods Register energy types and add, consume, or read power on the network at a cell. structureBehaviors 2 methods Register custom conveyor and launcher behavior for transport structures. patterns 2 methods Define reusable excavation shapes and apply them at a cell. worker pipes 4 methods Query and toggle liquid and gas pipes and the vents they connect to. factory 3 methods Read factory level and per-process production counts and rates. blueprints 2 methods Serialize blueprint layouts and translate structure labels through the prefabulator.",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.UI & media",
-    "body": "ui 21 methods Toasts, dialogs, tooltips, overlays, React UI, and controller-focus navigation. worker navigation overlays sprites 5 methods Load mod sprites, look them up by id, and manage player mod sprites. lights 12 methods Transient VFX lights and long-lived managed lights at world positions. persistent temporary effects 10 methods Spawn short-lived visuals at world positions: waves, lasers, lights, and particles. worker rendering 5 methods Cell draw positions, grid metrics, overlay size, and custom overlay drawing. sound 8 methods Play, layer, and stop sounds with optional distance-based volume and pan. i18n 20 methods Register locale strings, translate keys, switch language, and format numbers. scene 2 methods Read which scene is currently active.",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.Progression & items",
-    "body": "tech 10 methods Register tech-tree nodes and read or change their locked state. conservatory upgrades 6 methods Register upgrade categories and trees; read chosen and unlocked levels. discoveries 2 methods Mark elements and terrains as discovered in the player's log. progression 1 method Mark tutorial and progression steps as complete. resources 2 methods Collect fluxite at cells and update energy resource values. items 6 methods Register custom items and create or query item instances. projectiles 7 methods Register projectile definitions and spawn them at world positions.",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.Mods & runtime",
-    "body": "mods 1 method Query asset providers contributed by other loaded mods. settings 3 methods Read mod config from manifest configSchema and react when values change. storage 7 methods Persistent per-mod key-value storage and a device-local store. local assets 3 methods Turn mod-relative paths into asset URLs and pick the active provider for a texture kind. hooks 2 methods Observe or override behavior at named engine hook points. worker events 2 methods Subscribe to and emit named lifecycle and gameplay events. worker triggers 1 method Run a callback on a fixed interval with a configurable repeat count. schedule 1 method Defer a callback until the next simulation tick. workers 1 method Enable this mod's post-update worker hook. shared 8 methods SharedArrayBuffer storage for data shared between main and worker threads. worker buffers signals 2 methods Register handlers for signal target types. targets utils 5 methods Geometry helpers: distance, direction, angle, and point interpolation. worker constants 1 method Read-only engine constants, including per-cell physics modes. worker gameConfig 2 methods Read-only access to the game's global configuration values. game 1 method Control the game session lifecycle from your mod. Worker-thread namespaces. Same names as main where they overlap; pages use a .worker URL suffix. effects 10 methods Spawn short-lived visuals at world positions: waves, lasers, lights, and particles. worker elements 50 methods Register custom element types and read or change falling-sand cells. worker events 2 methods Subscribe to and emit named lifecycle and gameplay events. worker fire 3 methods Test whether a cell can burn and ignite it when the simulation is idle. worker grid 15 methods Iterate rectangular or circular cell regions with a callback per cell. hooks 2 methods Observe or override behavior at named engine hook points. worker lights 12 methods Transient VFX lights and long-lived managed lights at world positions. temporary main 0 methods worker maps 5 methods List available maps and start a custom or vanilla map. worker player 23 methods Read and control player position, movement, collision, inventory, and building unlocks. worker shared 8 methods SharedArrayBuffer storage for data shared between main and worker threads. worker buffers structures 50 methods Register buildings, recipes, and processors; place, remove, and query structures on the grid. worker processing terrains 27 methods Register terrain types and create, damage, or remove terrain at cells. worker ui 21 methods Toasts, dialogs, tooltips, overlays, React UI, and controller-focus navigation. worker worker 0 methods worker world 28 methods Read the cell grid, excavate, reveal fog, and run idle-safe world mutations. worker",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.Game & factory",
-    "body": "game 1 method Control the game session lifecycle from your mod. factory 3 methods Read factory level and per-process production counts and rates. conveyors 0 methods queue 0 methods heatTransfer 0 methods",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.Entities & drones",
-    "body": "entities 7 methods Spawn, query, and control discrete world entities by id and type. drones 0 methods sweeperDrone 0 methods launchers 0 methods swarmConsole 0 methods",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.World & terrain",
-    "body": "matters 0 methods foliage 0 methods wall 0 methods shadows 0 methods portals 0 methods teleportZones 0 methods strataform 0 methods",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.Prefabs & blueprints",
-    "body": "prefabData 0 methods prefabDecor 0 methods prefabulator 0 methods blueprints 2 methods Serialize blueprint layouts and translate structure labels through the prefabulator. clipboard 0 methods",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.Materials & pickers",
-    "body": "auralite 0 methods prismaline 0 methods prismite 0 methods augments 0 methods colorPicker 0 methods coloringTool 0 methods foundationColorPicker 0 methods lightColorPicker 0 methods",
-    "path": "/modules",
-    "id": ""
-  },
-  {
-    "title": "Sandkit API.Debug & misc",
-    "body": "debug 0 methods extensions 0 methods misc 0 methods tutorialBuild 0 methods usageTracker 0 methods workerLocal 0 methods - Overview AbilityType ActionState ActionType AuthorizationType BuildingClearance BuildMode CellType ComponentId DroneType ElementType ItemId ItemType KeyBinding KeyState MatterType PickupType ProjectileType ReloadType Scene StructureType Tech TechStatus WorldItemType - asset - engine - jsonvalue - nominal - player Host preload bridge (window.electron). Not part of sandkit. - Overview — when to use the bridge and IPC patterns - API — generated electron reference Not runtime sandkit objects. Import from @sandustry-modding/types/configs. - TypeScript types — modinfo.json, patches.json, and workshop.json - JSON Schema — raw schema URLs for editors",
-    "path": "/modules",
     "id": ""
   },
   {
