@@ -15,7 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Generated API members use a request-style card (signature, argument table, description) with the site gold and orange colours
 - In-page TypeDoc hashes are rewritten to Docsify `?id=` heading links
-- Docs sidebar lists direct pages, then generated namespaces with nested child namespaces
+- Docs sidebar lists direct pages.
+  On an API namespace page it also lists that namespace and its child namespaces.
 - Search is the place to open generated Sandkit API pages.
   Empty query lists names and one-line descriptions.
   Nested members stay on the namespace page and in typed search.

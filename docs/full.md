@@ -38326,7 +38326,8 @@ npm run docs:archive-sandkit      # Fetch official sandkit.html into docs/offici
 
 Output lands in `docs/api/` and `docs/schemas/`.
 Browse namespaces from Search on the docs site.
-`npm run generate` writes `docs/_sidebar.md` with nested namespace links.
+`npm run generate` writes `docs/_sidebar.md` for direct pages.
+On an API namespace page the sidebar also lists that namespace and its children.
 The combined page is `docs/full.md`.
 `npm run docs` runs that step, then serves the docs site.
 `npm run docs:links` fails when a markdown link does not resolve to a Docsify page or heading id.

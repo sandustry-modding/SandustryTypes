@@ -187,6 +187,107 @@ export function renderBrowseScript(catalog) {
 }
 
 /**
+ * @typedef {{ name: string, slug: string, href: string, children: SidebarNode[] }} SidebarNode
+ */
+
+/**
+ * @param {{ name: string, typedocRel: string, children?: unknown[] }} node
+ * @param {(rel: string) => string} href
+ * @returns {SidebarNode}
+ */
+export function toSidebarNode(node, href) {
+  const file = String(href(node.typedocRel)).replace(/^api\//, "");
+  const md = file.endsWith(".md") ? file : `${file}.md`;
+  const slug = md.replace(/\.md$/, "");
+  const children = Array.isArray(node.children)
+    ? node.children.map((child) => toSidebarNode(child, href))
+    : [];
+  children.sort((a, b) => a.name.localeCompare(b.name));
+  return { name: node.name, slug, href: docsifyHash(`api/${md}`), children };
+}
+
+/**
+ * @param {object} opts
+ * @param {unknown[]} opts.mainNs
+ * @param {unknown[]} opts.workerNs
+ * @param {unknown[]} opts.engineNs
+ * @param {(rel: string) => string} opts.href
+ * @param {string[]} [opts.enumFiles]
+ * @param {string[]} [opts.sharedNames]
+ * @returns {SidebarNode[]}
+ */
+export function buildSidebarRoots(opts) {
+  const { mainNs, workerNs, engineNs, href, enumFiles = [], sharedNames = [] } = opts;
+  /** @type {SidebarNode[]} */
+  const roots = [
+    ...mainNs.map((node) => toSidebarNode(node, href)),
+    ...workerNs.map((node) => toSidebarNode(node, href)),
+    ...engineNs.map((node) => toSidebarNode(node, href)),
+  ];
+  for (const file of enumFiles) {
+    const name = file.replace(/^sandkit\.enums\./, "").replace(/\.md$/, "");
+    roots.push({
+      name,
+      slug: file.replace(/\.md$/, ""),
+      href: docsifyHash(`api/${file}`),
+      children: [],
+    });
+  }
+  for (const name of sharedNames) {
+    const file = `shared.${name}.md`;
+    roots.push({
+      name,
+      slug: `shared.${name}`,
+      href: docsifyHash(`api/${file}`),
+      children: [],
+    });
+  }
+  return roots;
+}
+
+/**
+ * Pick the current namespace root (not the whole API tree).
+ * Worker slugs ending in `.worker` do not match the main-thread twin.
+ *
+ * @param {SidebarNode[]} roots
+ * @param {string} slug `sandkit.api.player.inventory`
+ * @returns {SidebarNode | null}
+ */
+export function findCurrentApiRoot(roots, slug) {
+  const current = String(slug || "");
+  if (!current) return null;
+  /** @type {SidebarNode | null} */
+  let best = null;
+  for (const root of roots) {
+    if (!rootMatchesSlug(root.slug, current)) continue;
+    if (!best || root.slug.length > best.slug.length) best = root;
+  }
+  return best;
+}
+
+/**
+ * @param {string} rootSlug
+ * @param {string} slug
+ */
+export function rootMatchesSlug(rootSlug, slug) {
+  const rootWorker = rootSlug.endsWith(".worker");
+  const slugWorker = slug.endsWith(".worker");
+  if (rootWorker !== slugWorker) return false;
+  if (slug === rootSlug) return true;
+  if (rootWorker) {
+    const s = slug.slice(0, -".worker".length);
+    const r = rootSlug.slice(0, -".worker".length);
+    return s === r || s.startsWith(`${r}.`);
+  }
+  return slug.startsWith(`${rootSlug}.`);
+}
+
+/** @param {SidebarNode[]} roots */
+export function renderSidebarTreeScript(roots) {
+  return `window.SMT_API_SIDEBAR_ROOTS = ${JSON.stringify(roots)};\n`;
+}
+
+/**
  * Build namespace nodes from flattened `docs/api/*.md` files.
  *
  * @param {string} apiDir

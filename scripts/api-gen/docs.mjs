@@ -17,7 +17,7 @@ import {
   renderSearchIndexScript,
   rewriteApiHrefMap,
 } from "./api-search.mjs";
-import { buildBrowseCatalog, ENGINE_API_GROUPS, MAIN_API_GROUPS, renderBrowseScript } from "./namespace-cards.mjs";
+import { buildBrowseCatalog, buildSidebarRoots, renderBrowseScript, renderSidebarTreeScript } from "./namespace-cards.mjs";
 import { restyleApiCards } from "./api-cards.mjs";
 import { rewriteMarkdownLinks } from "./docsify-links.mjs";
 
@@ -363,7 +363,7 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
 }
 
 /**
- * Site sidebar: direct pages, then generated namespaces with nested children.
+ * Direct-link sidebar plus a tree used to show only the current namespace.
  *
  * @param {string} docsDir
  * @param {string} outDir
@@ -374,59 +374,17 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
  */
 function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
   const href = (typedocRel) => linkMap.get(`api/${typedocRel}`) || `api/${typedocRel}`;
-
   const pad = (level) => "  ".repeat(level);
-  const link = (level, label, apiHref) => {
-    const file = String(apiHref).replace(/^api\//, "");
-    const md = file.endsWith(".md") ? file : `${file}.md`;
-    return `${pad(level)}- [${label}](api/${md})`;
-  };
   const heading = (level, title) => `${pad(level)}- ${title}`;
-  const section = (title) => `---\n\n# ${title}`;
-
-  const nodeLines = (node, level) => {
-    /** @type {string[]} */
-    const lines = [link(level, node.name, href(node.typedocRel))];
-    for (const child of node.children) {
-      lines.push(...nodeLines(child, level + 1));
-    }
-    return lines;
-  };
-
-  const grouped = (nodes, groups, level) => {
-    const byName = new Map(nodes.map((n) => [n.name, n]));
-    const seen = new Set();
-    /** @type {string[]} */
-    const out = [];
-    for (const group of groups) {
-      const members = group.names.map((name) => byName.get(name)).filter(Boolean);
-      if (!members.length) continue;
-      out.push(heading(level, group.title));
-      for (const node of members) {
-        seen.add(node.name);
-        out.push(...nodeLines(node, level + 1));
-      }
-    }
-    const leftover = nodes.filter((n) => !seen.has(n.name));
-    if (leftover.length) {
-      out.push(heading(level, "Other"));
-      for (const node of leftover) {
-        out.push(...nodeLines(node, level + 1));
-      }
-    }
-    return out;
-  };
-
   const ifFile = (filename, level, label) => {
     if (!existsSync(join(outDir, filename))) return [];
-    return [link(level, label, `api/${filename}`)];
+    return [`${pad(level)}- [${label}](api/${filename})`];
   };
   const ifDocs = (filename, level, label) => {
     if (!existsSync(join(docsDir, filename))) return [];
     return [`${pad(level)}- [${label}](${filename})`];
   };
 
-  /** @type {string[]} */
   const lines = [
     "- [Home](/)",
     ...ifDocs("search.md", 0, "Search"),
@@ -439,40 +397,26 @@ function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
     ...ifFile("configs.md", 1, "TypeScript types"),
     ...ifDocs("schemas.md", 1, "JSON Schema"),
     "",
-    section("Main thread"),
-    "",
-    ...grouped(mainNs, MAIN_API_GROUPS, 0),
-    "",
-    section("Worker thread"),
-    "",
-    ...workerNs.flatMap((node) => nodeLines(node, 0)),
-    "",
-    section("Engine"),
-    "",
-    ...ifFile("sandkit.engine.api.md", 0, "sandkit.engine.api"),
-    ...grouped(engineNs, ENGINE_API_GROUPS, 0),
-    "",
-    section("Enums"),
-    "",
-    ...ifFile("sandkit.enums.md", 0, "Overview"),
   ];
+  writeFileSync(join(docsDir, "_sidebar.md"), `${lines.join("\n").trimEnd()}\n`);
 
-  const enums = [...linkMap.values()]
+  const enumFiles = [...linkMap.values()]
     .filter((h) => /^api\/sandkit\.enums\.[A-Za-z][\w]*\.md$/.test(h))
     .map((h) => h.replace(/^api\//, ""))
     .sort((a, b) => a.localeCompare(b));
-  for (const file of enums) {
-    const name = file.replace(/^sandkit\.enums\./, "").replace(/\.md$/, "");
-    lines.push(link(0, name, `api/${file}`));
-  }
+  const sharedNames = ["asset", "engine", "jsonvalue", "nominal", "player"].filter((name) =>
+    existsSync(join(outDir, `shared.${name}.md`)),
+  );
+  const roots = buildSidebarRoots({
+    mainNs,
+    workerNs,
+    engineNs,
+    href,
+    enumFiles,
+    sharedNames,
+  });
+  writeFileSync(join(docsDir, "assets", "api-sidebar-tree.js"), renderSidebarTreeScript(roots));
 
-  lines.push("", section("Shared types"), "");
-  for (const name of ["asset", "engine", "jsonvalue", "nominal", "player"]) {
-    lines.push(...ifFile(`shared.${name}.md`, 0, name));
-  }
-
-  lines.push("");
-  writeFileSync(join(docsDir, "_sidebar.md"), `${lines.join("\n").trimEnd()}\n`);
   const nestedSidebar = join(outDir, "_sidebar.md");
   if (existsSync(nestedSidebar)) rmSync(nestedSidebar, { force: true });
 }

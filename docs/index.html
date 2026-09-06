@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="assets/api-cards.css" />
     <script src="assets/heading-anchor.js"></script>
     <script src="assets/sidebar-headers.js"></script>
+    <script src="assets/api-sidebar-tree.js"></script>
+    <script src="assets/sidebar-current-api.js"></script>
     <script src="assets/search-query.js"></script>
     <script src="assets/search-page.js"></script>
   </head>
@@ -69,6 +71,7 @@
           },
           window.smtDocsifyHeadingCopyPlugin,
           window.smtDocsifySidebarHeadersPlugin,
+          window.smtDocsifyCurrentApiSidebarPlugin,
           window.smtDocsifySearchPlugin,
         ].filter(function (p) {
           return typeof p === "function";

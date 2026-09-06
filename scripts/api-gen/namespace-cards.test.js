@@ -1,6 +1,52 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { buildBrowseCatalog, cardFromNode, docsifyHash } from "./namespace-cards.mjs";
+import {
+  buildBrowseCatalog,
+  cardFromNode,
+  docsifyHash,
+  findCurrentApiRoot,
+} from "./namespace-cards.mjs";
+test("findCurrentApiRoot returns the parent namespace for a child page", () => {
+  const roots = [
+    {
+      name: "player",
+      slug: "sandkit.api.player",
+      href: "#/api/sandkit.api.player",
+      children: [
+        {
+          name: "inventory",
+          slug: "sandkit.api.player.inventory",
+          href: "#/api/sandkit.api.player.inventory",
+          children: [],
+        },
+        {
+          name: "buildings",
+          slug: "sandkit.api.player.buildings",
+          href: "#/api/sandkit.api.player.buildings",
+          children: [],
+        },
+      ],
+    },
+    {
+      name: "elements",
+      slug: "sandkit.api.elements",
+      href: "#/api/sandkit.api.elements",
+      children: [],
+    },
+    {
+      name: "elements",
+      slug: "sandkit.api.elements.worker",
+      href: "#/api/sandkit.api.elements.worker",
+      children: [],
+    },
+  ];
+  const player = findCurrentApiRoot(roots, "sandkit.api.player.inventory");
+  assert.equal(player?.name, "player");
+  assert.equal(player?.children.length, 2);
+  assert.equal(findCurrentApiRoot(roots, "sandkit.api.elements.worker")?.slug, "sandkit.api.elements.worker");
+  assert.equal(findCurrentApiRoot(roots, "sandkit.api.elements")?.slug, "sandkit.api.elements");
+  assert.equal(findCurrentApiRoot(roots, "search"), null);
+});
 
 test("docsifyHash strips .md and prefixes #/", () => {
   assert.equal(docsifyHash("api/sandkit.api.player.md"), "#/api/sandkit.api.player");
