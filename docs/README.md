@@ -70,6 +70,6 @@ In `worker.js`, type the API as `WorkerSandkitApi` — worker and main surfaces 
 From the package repo root:
 
 ```bash
-npm run docs:api        # API markdown + JSON Schema from TypeScript
-npm run docs:schemas    # JSON Schema only (`docs/schemas/`)
+npm run generate                  # catalog + API markdown + JSON Schema
+npm run generate -- --schemas     # JSON Schema only (`docs/schemas/`)
 ```

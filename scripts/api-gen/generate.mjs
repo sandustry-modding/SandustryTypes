@@ -6,12 +6,12 @@
  * `scripts/api-gen/` (overrides, TypeDoc config, and intermediate outputs).
  *
  * Usage:
- *   npm run generate:api
- *   npm run generate:api -- --offline    # use .tmp/sandkit.html cache only
- *   npm run generate:api -- --check        # fail when catalog or schemas are stale
- *   npm run generate:api -- --catalog      # catalog + gaps only
- *   npm run generate:api -- --docs         # API markdown only
- *   npm run generate:api -- --schemas      # JSON Schema only
+ *   npm run generate
+ *   npm run generate -- --offline    # use .tmp/sandkit.html cache only
+ *   npm run generate -- --check      # fail when catalog or schemas are stale
+ *   npm run generate -- --catalog    # catalog + gaps only
+ *   npm run generate -- --docs         # API markdown only
+ *   npm run generate -- --schemas      # JSON Schema only
  */
 import { runCatalog } from "./catalog.mjs";
 import { runDocs } from "./docs.mjs";

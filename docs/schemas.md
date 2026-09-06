@@ -67,7 +67,7 @@ See [configs](api/configs.md) for the full type reference.
 From the package repo root:
 
 ```bash
-npm run docs:schemas
+npm run generate
 ```
 
-`npm run docs:api` also regenerates these schemas. `npm run validate` fails when committed schemas do not match the TypeScript defs.
+`npm run validate` fails when committed schemas do not match the TypeScript defs.

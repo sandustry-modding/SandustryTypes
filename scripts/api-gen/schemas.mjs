@@ -138,7 +138,7 @@ export function runSchemas(options = {}) {
       }
       const existing = readFileSync(outPath, "utf8");
       if (existing !== text) {
-        console.error(`api-gen: stale schema: docs/schemas/${target.fileName} (run npm run generate:api)`);
+        console.error(`api-gen: stale schema: docs/schemas/${target.fileName} (run npm run generate)`);
         drifted = true;
       } else {
         console.log(`api-gen: ok  docs/schemas/${target.fileName}`);

@@ -39161,7 +39161,7 @@ import type { ModInfo, BundlePatch } from "@sandustry-modding/types/configs";
 
 Edit `.d.ts` files under `src/`. Regenerate the Docsify API reference and JSON Schema after JSDoc or config-type changes.
 
-`npm run generate:api` merges `scripts/api-gen/overrides.json`, the official [Sandkit API](https://sandustry.com/sandkit.html) HTML, and `src/sandkit/api/` declarations.
+`npm run generate` merges `scripts/api-gen/overrides.json`, the official [Sandkit API](https://sandustry.com/sandkit.html) HTML, and `src/sandkit/api/` declarations.
 It writes `scripts/api-gen/generated/api-catalog.json`, refreshes `scripts/api-gen/generated/namespace-summaries.json`, and reports gaps in `docs/generated/api-gaps.md`.
 Edit namespace descriptions and alias mappings in `scripts/api-gen/overrides.json`.
 
@@ -39171,11 +39171,10 @@ Guides live under `docs/guides/` (getting started, mod lifecycle, manifest, patc
 Regenerate the Docsify API reference and JSON Schema from these declarations:
 
 ```bash
-npm run generate:api       # catalog + API markdown + docs/schemas/*.json
-npm run docs:api           # same as generate:api
-npm run generate:api -- --catalog   # overrides + official HTML + declarations → catalog + gaps
-npm run generate:api -- --schemas   # JSON Schema only
-npm run docs:archive-sandkit # Fetch official sandkit.html into docs/official-api/
+npm run generate                  # catalog + API markdown + docs/schemas/*.json
+npm run generate -- --catalog     # overrides + official HTML + declarations → catalog + gaps
+npm run generate -- --schemas     # JSON Schema only
+npm run docs:archive-sandkit      # Fetch official sandkit.html into docs/official-api/
 ```
 
 Output lands in `docs/api/` and `docs/schemas/`. The namespace index is `docs/modules.md` and the combined page is `docs/full.md`. `npm run docs` runs that step, then serves the docs site. `npm run validate` fails when committed schemas do not match `src/configs/`.
