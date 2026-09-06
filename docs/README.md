@@ -33,6 +33,7 @@ Start with the step-by-step guides:
   - [React](api/sandkit.react.md) — HUD helpers from the host React build
 - [Enums](api/sandkit.enums.md) — runtime enum values
 - [Configs](api/configs.md) — `modinfo.json`, `patches.json`, and `workshop.json` types
+- [Electron bridge](electron-bridge.md) — renderer preload IPC (`window.electron`); [generated API](api/electron.md)
 - [JSON Schema](schemas.md) — `modinfo.json` / `patches.json` schemas (raw URLs for editors)
 - [Full API reference](full.md) — every namespace on one page
 

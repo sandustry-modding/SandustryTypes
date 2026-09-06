@@ -253,6 +253,7 @@ Worker-thread namespaces. Same names as main where they overlap; pages use a `.w
 Not runtime `sandkit` objects. Import from `@sandustry-modding/types/configs`.
 
 - [configs](api/configs.md) — `modinfo.json` and `patches.json` TypeScript types
+- [electron](api/electron.md) — renderer preload bridge (`window.electron`)
 - [JSON Schema](schemas.md) — raw schema URLs for editors
 
 </div>

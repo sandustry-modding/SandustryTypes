@@ -1,4 +1,5 @@
 - [Home](/)
+- [Electron bridge](electron-bridge.md)
 - [Namespaces](modules.md)
   - [sandkit](api/sandkit.md)
   - [sandkit.api](api/sandkit.api.md)
@@ -6,6 +7,7 @@
   - [sandkit.engine](api/sandkit.engine.md)
   - [sandkit.react](api/sandkit.react.md)
 - [configs](api/configs.md)
+- [electron](api/electron.md)
 - [Full API reference](full.md)
 
 ---

@@ -1,6 +1,7 @@
 window.SMT_SEARCH_PATHS = [
   "/",
   "/api/configs",
+  "/api/electron",
   "/api/sandkit",
   "/api/sandkit.api",
   "/api/sandkit.api.action",
@@ -167,6 +168,7 @@ window.SMT_SEARCH_PATHS = [
   "/api/shared.nominal",
   "/api/shared.player",
   "/api/types",
+  "/electron-bridge",
   "/generated/api-gaps",
   "/modules",
   "/official-api/0.5.5",

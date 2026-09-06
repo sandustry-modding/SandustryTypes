@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 0.6.0 - 2026-09-06
+
+https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.6.0
+
 ### Added
 
+- `ElectronBridge` and related types for the renderer preload bridge (`@sandustry-modding/types/electron`, deep imports via `@sandustry-modding/types/electron/*`; ambient `electron`, `ElectronBridge`, `ElectronLogLevel`, and `ElectronPlatform` on `@sandustry-modding/types`; full `@param` / `@returns` JSDoc on each bridge method)
 - Modding guides under `docs/guides/` (getting started, lifecycle, manifest, patches, workers, Workshop)
+- `docs/electron-bridge.md` — English overview of the renderer preload bridge with links to the generated `api/electron.md` reference
 - `WorkshopJson` type for `workshop.json` (`@sandustry-modding/types/configs`)
 - `scripts/namespace-summaries.json` — one-line descriptions and worker flags for each `sandkit.api` namespace
 - `scripts/api-catalog/overrides.json` — namespace copy, official→declared aliases, and expected missing members
@@ -17,6 +23,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Split electron declarations into focused modules under `src/electron/` (`bridge`, `platform`, `workshop`, `local-mods`, and related files)
 - `ModInfo.entry` is optional when another manifest capability is declared (texture-only, map-only, and similar mods)
 - Docs home page and sidebar link to guides; site title and description updated
 - API namespace index (`docs/modules.md`) shows stats, descriptions, method counts, and worker badges per namespace

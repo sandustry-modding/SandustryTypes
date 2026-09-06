@@ -7,6 +7,9 @@
  *
  * Type names below are also ambient so mods can annotate without imports.
  * Prefer `typeof sandkit` / `typeof sandkit.api` when that reads clearer.
+ *
+ * Renderer IPC lives on `window.electron`.
+ * The ambient `electron` name matches that bridge (same object as `window.electron`).
  */
 declare global {
   /**
@@ -33,6 +36,28 @@ declare global {
   type RetroConsoleApi = import("./sandkit").RetroConsoleApi;
   /** Worker-thread `sandkit.api` shape — use in `worker.ts`. */
   type WorkerSandkitApi = import("./worker/sandkit-api").WorkerSandkitApi;
+
+  /**
+   * Renderer preload bridge (`window.electron`).
+   *
+   * Use `electron` or `window.electron` in mod code — do not import a value binding.
+   * Bundled mods also receive `const electron = globalThis.window?.electron` at the top of `main.js`.
+   *
+   * @see {@link ElectronBridge} in `@sandustry-modding/types/electron` for full method docs.
+   */
+  const electron: import("./electron").ElectronBridge;
+
+  /** Full shape of the ambient `electron` object. */
+  type ElectronBridge = import("./electron").ElectronBridge;
+  /** File logger level accepted by {@link ElectronBridge.log}. */
+  type ElectronLogLevel = import("./electron").ElectronLogLevel;
+  /** Distribution channel string from {@link ElectronBridge.getPlatformSync}. */
+  type ElectronPlatform = import("./electron").ElectronPlatform;
+
+  interface Window {
+    /** Renderer preload bridge — same object as the ambient `electron` binding. */
+    electron: ElectronBridge;
+  }
 }
 
 export {};

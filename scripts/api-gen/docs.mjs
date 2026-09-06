@@ -420,6 +420,7 @@ function writeModuleIndex(docsDir, linkMap, mainNs, workerNs, engineNs) {
     "Not runtime `sandkit` objects. Import from `@sandustry-modding/types/configs`.",
     "",
     `- [configs](${p("configs")}) — \`modinfo.json\` and \`patches.json\` TypeScript types`,
+    `- [electron](${p("electron")}) — renderer preload bridge (\`window.electron\`)`,
     "- [JSON Schema](schemas.md) — raw schema URLs for editors",
     "",
     "</div>",
@@ -672,6 +673,7 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
   }
   addPreferred(href("sandkit/react/README.md"));
   addPreferred("api/configs.md");
+  addPreferred("api/electron.md");
   addPreferred(href("shared/asset/README.md"));
   addPreferred(href("shared/engine/README.md"));
   addPreferred(href("shared/jsonvalue/README.md"));
@@ -774,6 +776,7 @@ function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
   /** @type {string[]} */
   const lines = [
     "- [Home](/)",
+    "- [Electron bridge](electron-bridge.md)",
     "- [Namespaces](modules.md)",
     ...ifFile("sandkit.md", 1, "sandkit"),
     ...ifFile("sandkit.api.md", 1, "sandkit.api"),
@@ -781,6 +784,7 @@ function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
     ...ifFile("sandkit.engine.md", 1, "sandkit.engine"),
     ...ifFile("sandkit.react.md", 1, "sandkit.react"),
     ...ifFile("configs.md", 0, "configs"),
+    ...ifFile("electron.md", 0, "electron"),
     "- [Full API reference](full.md)",
     "",
     section("Main thread"),
