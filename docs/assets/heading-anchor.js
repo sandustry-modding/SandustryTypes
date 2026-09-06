@@ -116,11 +116,14 @@
     if (!article) {
       return;
     }
-    var heads = article.querySelectorAll("h1, h2, h3, h4, h5, h6");
+    var heads = article.querySelectorAll("h1, h2, h3");
     var i;
     var h;
     for (i = 0; i < heads.length; i++) {
       h = heads[i];
+      if (h.closest(".smt-member-anchors")) {
+        continue;
+      }
       if (h.classList.contains("smt-heading-with-anchor")) {
         continue;
       }

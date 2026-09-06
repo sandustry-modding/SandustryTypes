@@ -13,8 +13,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| lightId | number &#124; null | Assigned temporary light id, or null when creation failed. |
-| ~~index~~ | number &#124; null |  |
+| lightId | <code>number &#124; null</code> | Assigned temporary light id, or null when creation failed. |
+| ~~index~~ | <code>number &#124; null</code> | Deprecated alias. |
 
 <div class="smt-member-anchors">
 
@@ -36,9 +36,9 @@ Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| brightness? | number | Light brightness multiplier. |
-| size? | number | Light radius in pixels. |
-| color? | [number, number, number, number] | RGBA color components. |
+| brightness? | <code>number</code> | Light brightness multiplier. |
+| size? | <code>number</code> | Light radius in pixels. |
+| color? | <code>[number, number, number, number]</code> | RGBA color components. |
 
 <div class="smt-member-anchors">
 

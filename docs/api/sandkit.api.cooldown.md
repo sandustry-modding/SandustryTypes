@@ -13,8 +13,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| last | number | Timestamp when the cooldown was last triggered (game time). |
-| time | number | Cooldown duration in milliseconds. |
+| last | <code>number</code> | Timestamp when the cooldown was last triggered (game time). |
+| time | <code>number</code> | Cooldown duration in milliseconds. |
 
 <div class="smt-member-anchors">
 
@@ -46,8 +46,8 @@ check(cooldown: Cooldown, overrideTime?: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cooldown | [`Cooldown`](?id=cooldown) | Cooldown state object to check and update. |
-| overrideTime? | `number` | Optional timestamp (ms) instead of current game time. |
+| cooldown | <code>[`Cooldown`](?id=cooldown)</code> | [`Cooldown`](?id=cooldown) Cooldown state object to check and update. |
+| overrideTime? | `number` | `number` Optional timestamp (ms) instead of current game time. |
 
 <div class="smt-member-anchors">
 
@@ -77,8 +77,8 @@ isReady(cooldown: Cooldown, overrideTime?: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cooldown | [`Cooldown`](?id=cooldown) | Cooldown state object to check. |
-| overrideTime? | `number` | Optional timestamp (ms) instead of current game time. |
+| cooldown | <code>[`Cooldown`](?id=cooldown)</code> | [`Cooldown`](?id=cooldown) Cooldown state object to check. |
+| overrideTime? | `number` | `number` Optional timestamp (ms) instead of current game time. |
 
 <div class="smt-member-anchors">
 

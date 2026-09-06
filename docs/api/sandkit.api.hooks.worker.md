@@ -16,7 +16,7 @@ Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook point
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cancelled | boolean | True after [cancel](?id=cancel) was called on this context. |
+| cancelled | <code>boolean</code> | True after [cancel](?id=cancel) was called on this context. |
 
 <div class="smt-member-anchors">
 
@@ -24,23 +24,17 @@ Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook point
 
 </div>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| cancel() | <code>(): void</code> | When called, the intercepted action is skipped. |
+
+<div class="smt-member-anchors">
+
+##### cancel() <!-- {docsify-ignore} -->
+
+</div>
+
 Context passed to intercept hook callbacks.
-
-#### Methods
-
-##### cancel()
-
-```ts
-cancel(): void
-```
-
-Defined in: [worker/api/hooks.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L112)
-
-When called, the intercepted action is skipped.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -52,8 +46,8 @@ When called, the intercepted action is skipped.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elementType? | ElementType | Required for element-scoped intercept hooks and optional on emit. |
-| terrainType? | number | Required for terrain-scoped event guards; optional on emit. |
+| elementType? | <code>ElementType</code> | Required for element-scoped intercept hooks and optional on emit. |
+| terrainType? | <code>number</code> | Required for terrain-scoped event guards; optional on emit. |
 
 <div class="smt-member-anchors">
 
@@ -75,8 +69,8 @@ Guard filter for worker hook registration.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| guard? | HookGuard |  |
-| priority? | number |  |
+| guard? | <code>HookGuard</code> |  |
+| priority? | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -96,18 +90,18 @@ Options for [modify](?id=modify).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L164" target="_blank" rel="noopener">hooks.d.ts:164</a></p>
 
-| Property | Type | Description |
+| Hook | Args | Notes |
 | --- | --- | --- |
-| cell:process | process: Record<string, unknown> |  |
-| element:update | update: Record<string, unknown> |  |
-| element:move | move: Record<string, unknown> |  |
-| element:move:blocked | move:blocked: Record<string, unknown> |  |
-| ~~element:blocked~~ | blocked: Record<string, unknown> |  |
-| element:duration:expire | duration:expire: Record<string, unknown> |  |
-| ~~element:duration~~ | duration: Record<string, unknown> |  |
-| fire:element:burn | element:burn: Record<string, unknown> |  |
-| fire:terrain:burn | terrain:burn: Record<string, unknown> |  |
-| shaker:elementOn | elementOn: Record<string, unknown> |  |
+| `cell:process` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `element:update` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `element:move` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `element:move:blocked` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`element:blocked`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `element:duration:expire` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`element:duration`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `fire:element:burn` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `fire:terrain:burn` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `shaker:elementOn` | <code>Record&lt;string, unknown&gt;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -154,10 +148,6 @@ sandkit.api.hooks.InterceptHookOptions<K *extends* InterceptHookId> = K *extends
 </div>
 
 Options for [intercept](?id=intercept).
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`InterceptHookId`](?id=intercepthookid)
 
@@ -269,10 +259,6 @@ sandkit.api.hooks.InterceptHookArgs<K *extends* InterceptHookId> = K *extends* k
 
 Intercept hook args for a given hook id.
 
-#### Type Parameters
-
-##### K
-
 `K` *extends* [`InterceptHookId`](?id=intercepthookid)
 
 </div>
@@ -292,10 +278,6 @@ sandkit.api.hooks.ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof M
 </div>
 
 Modify hook args for a given hook id.
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`ModifyHookId`](?id=modifyhookid)
 
@@ -319,9 +301,9 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| hookId | `K` | Registered hook identifier. |
-| callback | (`args`: [`InterceptHookArgs`](?id=intercepthookargs)\<`K`\>, `context`: [`HookContext`](?id=hookcontext)) => `void` | Called with hook arguments and context; may cancel the hook. |
-| options? | [`InterceptHookOptions`](?id=intercepthookoptions)\<`K`\> | Optional guard and priority. |
+| hookId | `K` | `K` Registered hook identifier. |
+| callback | <code>(`args`: [`InterceptHookArgs`](?id=intercepthookargs)\&lt;`K`\&gt;, `context`: [`HookContext`](?id=hookcontext)) =&gt; `void`</code> | (`args`: [`InterceptHookArgs`](?id=intercepthookargs)\<`K`\>, `context`: [`HookContext`](?id=hookcontext)) => `void` Called with hook arguments and context; may cancel the hook. |
+| options? | <code>[`InterceptHookOptions`](?id=intercepthookoptions)\&lt;`K`\&gt;</code> | [`InterceptHookOptions`](?id=intercepthookoptions)\<`K`\> Optional guard and priority. |
 
 <div class="smt-member-anchors">
 
@@ -334,10 +316,6 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 </div>
 
 Register an intercept hook on this worker. Returns an unsubscribe function.
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`InterceptHookId`](?id=intercepthookid)
 
@@ -435,9 +413,9 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| hookId | `K` | Registered hook identifier. |
-| callback | (`args`: [`ModifyHookArgs`](?id=modifyhookargs)\<`K`\>) => `void` | Called with hook arguments; may mutate hook payload. |
-| options? | [`ModifyHookOptions`](?id=modifyhookoptions) | Optional guard and priority. |
+| hookId | `K` | `K` Registered hook identifier. |
+| callback | <code>(`args`: [`ModifyHookArgs`](?id=modifyhookargs)\&lt;`K`\&gt;) =&gt; `void`</code> | (`args`: [`ModifyHookArgs`](?id=modifyhookargs)\<`K`\>) => `void` Called with hook arguments; may mutate hook payload. |
+| options? | <code>[`ModifyHookOptions`](?id=modifyhookoptions)</code> | [`ModifyHookOptions`](?id=modifyhookoptions) Optional guard and priority. |
 
 <div class="smt-member-anchors">
 
@@ -450,10 +428,6 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 </div>
 
 Register a modifier hook on this worker. Returns an unsubscribe function.
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`ModifyHookId`](?id=modifyhookid)
 

@@ -5,8 +5,8 @@
 import { qualifyDocsifyPageLinks, rewriteMarkdownLinks } from "./docsify-links.mjs";
 import { qualifiedNameToSlug } from "./api-search.mjs";
 
-const TABLE_SECTIONS = new Set(["Parameters", "Properties"]);
-const DROP_SECTIONS = new Set(["Returns"]);
+const TABLE_SECTIONS = new Set(["Parameters", "Properties", "Methods"]);
+const DROP_SECTIONS = new Set(["Returns", "Type Parameters"]);
 
 /**
  * @param {string} text
@@ -125,28 +125,125 @@ export function renderSignatureHtml(parsed) {
 }
 
 /**
+ * @param {string} name
+ */
+function unwrapHeadingName(name) {
+  return String(name || "")
+    .replace(/^~~(.+)~~$/, "$1")
+    .replace(/\?$/, "")
+    .replace(/\(\)$/, "");
+}
+
+/**
+ * @param {string} text
+ */
+function stripCodeTicks(text) {
+  const t = String(text || "").trim();
+  if (t.startsWith("`") && t.endsWith("`") && t.indexOf("`", 1) === t.length - 1) {
+    return t.slice(1, -1);
+  }
+  return t;
+}
+
+/**
+ * @param {string} text
+ */
+function escapeRegExp(text) {
+  return String(text).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
+ * @param {string} body
+ * @param {string} [propName]
+ */
+function typeFromTsFence(body, propName = "") {
+  let rest = String(body || "")
+    .trim()
+    .replace(/^(optional|readonly)\s+/, "");
+  const name = unwrapHeadingName(propName);
+  if (name) {
+    const quoted = `"${name}"`;
+    if (rest.startsWith(quoted)) rest = rest.slice(quoted.length);
+    else if (rest.startsWith(name)) rest = rest.slice(name.length);
+    rest = rest.replace(/^\s*\??:\s*/, "");
+    const last = name.split(":").pop() || "";
+    if (last && last !== name) {
+      const lastRe = new RegExp(`^"?${escapeRegExp(last)}"?\\s*\\??:\\s*`);
+      rest = rest.replace(lastRe, "");
+    }
+  }
+  return rest.replace(/\s+/g, " ").trim();
+}
+
+/**
  * @param {string} chunk
+ * @param {string} [propName]
  * @returns {{ type: string, desc: string }}
  */
-function typeAndDescFromChunk(chunk) {
+function typeAndDescFromChunk(chunk, propName = "") {
   const text = chunk.trim();
   const fence = /```ts\n([\s\S]*?)```/.exec(text);
   let type = "";
   let rest = text;
   if (fence) {
-    const sig = fence[1].trim().split("\n")[0] || "";
-    const typed = /:\s*(.+)$/.exec(sig);
-    type = typed ? typed[1].trim() : sig.replace(/^(optional|readonly)\s+/, "");
+    type = typeFromTsFence(fence[1], propName);
     rest = text.replace(fence[0], "");
   }
   const lines = rest
     .split(/\n/)
     .map((l) => l.trim())
     .filter((l) => l && !/^Defined in:/i.test(l) && !/^#{4,}/.test(l));
-  if (!type && lines[0]) {
-    type = lines.shift() || "";
+  if (!type && lines[0] && !/deprecated/i.test(lines[0])) {
+    type = typeFromTsFence(lines[0], propName) || lines.shift() || "";
   }
-  return { type, desc: lines.join(" ").replace(/\s+/g, " ").trim() };
+  const desc = lines.join(" ").replace(/\s+/g, " ").trim();
+  return { type, desc };
+}
+
+/**
+ * @param {string} type
+ */
+function isCollapsedObjectType(type) {
+  const t = stripCodeTicks(type);
+  if (!t) return true;
+  if (t.includes("{")) return false;
+  return /\bobject\b/.test(t);
+}
+
+/**
+ * @param {string} type
+ */
+function formatTableType(type) {
+  const raw = String(type || "").replace(/\s+/g, " ").trim();
+  if (!raw) return "";
+  if (raw.startsWith("<code>") || (raw.startsWith("`") && !raw.startsWith("`{"))) {
+    return raw.replace(/\\\|/g, "|").replace(/\|/g, "&#124;");
+  }
+  const t = stripCodeTicks(raw);
+  return `<code>${escapeHtml(t).replace(/\|/g, "&#124;")}</code>`;
+}
+
+/**
+ * @param {string} title
+ * @param {{ name: string }[]} rows
+ */
+function tableHeaders(title, rows) {
+  if (title === "Methods") return { name: "Method", type: "Signature", desc: "Description" };
+  const hookish = rows.length > 0 && rows.every((row) => unwrapHeadingName(row.name).includes(":"));
+  if (title === "Properties" && hookish) return { name: "Hook", type: "Args", desc: "Notes" };
+  if (title === "Properties") return { name: "Property", type: "Type", desc: "Description" };
+  return { name: "Argument", type: "Type", desc: "Description" };
+}
+
+/**
+ * @param {string} name
+ */
+function formatTableName(name) {
+  const raw = String(name || "").trim();
+  const strike = /^~~(.+)~~$/.exec(raw);
+  const inner = strike ? strike[1] : raw;
+  const wrapped = inner.includes(":") && !/`/.test(inner) ? `\`${inner}\`` : inner;
+  return strike ? `~~${wrapped}~~` : wrapped;
 }
 
 /**
@@ -155,7 +252,6 @@ function typeAndDescFromChunk(chunk) {
  * @returns {string[]}
  */
 function flattenH5Table(title, body) {
-  const col = title === "Properties" ? "Property" : "Argument";
   const lines = body.split(/\n/);
   /** @type {{ name: string, type: string, desc: string }[]} */
   const rows = [];
@@ -169,28 +265,53 @@ function flattenH5Table(title, body) {
     const name = h5[1].trim();
     i++;
     const chunkLines = [];
+    /** @type {string[]} */
+    const nested = [];
     while (i < lines.length && !/^##### /.test(lines[i])) {
       if (/^#{1,4} /.test(lines[i])) break;
-      if (/^###### /.test(lines[i])) {
+      const h6 = /^###### (.+)$/.exec(lines[i]);
+      if (h6) {
+        const nestedName = h6[1].trim();
         i++;
-        while (i < lines.length && !/^#{1,6} /.test(lines[i])) i++;
+        const nestedChunk = [];
+        while (i < lines.length && !/^#{1,6} /.test(lines[i])) {
+          nestedChunk.push(lines[i]);
+          i++;
+        }
+        if (
+          nestedName === "Properties" ||
+          nestedName === "Methods" ||
+          nestedName === "Type declaration" ||
+          nestedName === "Deprecated"
+        ) {
+          continue;
+        }
+        const parsed = typeAndDescFromChunk(nestedChunk.join("\n"), nestedName);
+        if (parsed.type) {
+          nested.push(`${unwrapHeadingName(nestedName)}: ${stripCodeTicks(parsed.type)}`);
+        }
         continue;
       }
       chunkLines.push(lines[i]);
       i++;
     }
-    const { type, desc } = typeAndDescFromChunk(chunkLines.join("\n"));
-    rows.push({ name, type, desc });
+    let { type, desc } = typeAndDescFromChunk(chunkLines.join("\n"), name);
+    if (nested.length && isCollapsedObjectType(type)) {
+      type = `{ ${nested.join("; ")} }`;
+    }
+    if (/^~~/.test(name) && !desc) desc = "Deprecated alias.";
+    rows.push({ name, type: formatTableType(type), desc });
   }
   if (!rows.length) return [];
+  const headers = tableHeaders(title, rows);
   const out = [
     "",
-    `| ${col} | Type | Description |`,
+    `| ${headers.name} | ${headers.type} | ${headers.desc} |`,
     `| --- | --- | --- |`,
   ];
   for (const row of rows) {
     out.push(
-      `| ${escapeTableCell(row.name)} | ${escapeTableCell(row.type)} | ${escapeTableCell(row.desc)} |`,
+      `| ${escapeTableCell(formatTableName(row.name))} | ${escapeTableCell(row.type)} | ${escapeTableCell(row.desc)} |`,
     );
   }
   out.push("", `<div class="smt-member-anchors">`, "");

@@ -18,8 +18,8 @@ getDistance(pointA: Vector2, pointB: Vector2): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pointA | [`Vector2`](api/shared.player.md?id=vector2) | First point. |
-| pointB | [`Vector2`](api/shared.player.md?id=vector2) | Second point. |
+| pointA | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) First point. |
+| pointB | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Second point. |
 
 <div class="smt-member-anchors">
 
@@ -49,8 +49,8 @@ getDirection(pointA: Vector2, pointB: Vector2): Vector2
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pointA | [`Vector2`](api/shared.player.md?id=vector2) | Origin point. |
-| pointB | [`Vector2`](api/shared.player.md?id=vector2) | Target point. |
+| pointA | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Origin point. |
+| pointB | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Target point. |
 
 <div class="smt-member-anchors">
 
@@ -82,8 +82,8 @@ getAngle(pointA: Vector2, pointB: Vector2): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pointA | [`Vector2`](api/shared.player.md?id=vector2) | Origin point. |
-| pointB | [`Vector2`](api/shared.player.md?id=vector2) | Target point. |
+| pointA | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Origin point. |
+| pointB | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Target point. |
 
 <div class="smt-member-anchors">
 
@@ -113,8 +113,8 @@ getCoordinatesBetweenCells(pointA: Vector2, pointB: Vector2): Vector2[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pointA | [`Vector2`](api/shared.player.md?id=vector2) | Line start in cell coordinates. |
-| pointB | [`Vector2`](api/shared.player.md?id=vector2) | Line end in cell coordinates. |
+| pointA | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Line start in cell coordinates. |
+| pointB | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Line end in cell coordinates. |
 
 <div class="smt-member-anchors">
 
@@ -146,8 +146,8 @@ getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pointA | [`Vector2`](api/shared.player.md?id=vector2) |  |
-| pointB | [`Vector2`](api/shared.player.md?id=vector2) |  |
+| pointA | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) |
+| pointB | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) |
 
 <div class="smt-member-anchors">
 

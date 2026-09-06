@@ -18,7 +18,7 @@ collectFluxiteAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -46,8 +46,8 @@ updateEnergy(amount: number, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| amount | `number` | Energy delta (positive or negative). |
-| options? | When `deferUi` is true, skip immediate UI refresh. |  |
+| amount | `number` | `number` Energy delta (positive or negative). |
+| options? | <code>When `deferUi` is true, skip immediate UI refresh.</code> | When `deferUi` is true, skip immediate UI refresh. |
 
 <div class="smt-member-anchors">
 

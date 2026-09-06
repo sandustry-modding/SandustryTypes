@@ -647,12 +647,12 @@ Sandkit = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| api | SandkitApi | Public mod API. See [sandkit.api](?id=sandkit.api-1). |
-| apiVersion | number | Sandkit API version number (live value is `1`). |
-| engine | SandkitEngine | **`Internal`** State-first internals. See [SandkitEngine](api/sandkit.engine.md?id=sandkitengine). |
-| enums | SandkitEnums | Runtime enum bags. See [sandkit.enums](?id=sandkit.enums-1). |
-| react | SandkitReact | Host React package. See [SandkitReact](api/sandkit.react.md?id=sandkitreact). |
-| state | SandkitState | Game state. Same object as `sandkit.engine.state` at runtime. See [SandkitState](api/sandkit.engine.md?id=sandkitstate). |
+| api | <code>SandkitApi</code> | Public mod API. See [sandkit.api](api/sandkit.api.md). |
+| apiVersion | <code>number</code> | Sandkit API version number (live value is `1`). |
+| engine | <code>SandkitEngine</code> | **`Internal`** State-first internals. See [SandkitEngine](api/sandkit.engine.md?id=sandkitengine). |
+| enums | <code>SandkitEnums</code> | Runtime enum bags. See [sandkit.enums](api/sandkit.enums.md). |
+| react | <code>SandkitReact</code> | Host React package. See [SandkitReact](api/sandkit.react.md?id=sandkitreact). |
+| state | <code>SandkitState</code> | Game state. Same object as `sandkit.engine.state` at runtime. See [SandkitState](api/sandkit.engine.md?id=sandkitstate). |
 
 <div class="smt-member-anchors">
 
@@ -771,7 +771,7 @@ sandkit.api.action.setCustomData<Input>(data: Input): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| data | `Input` | Serializable payload attached to the active action. |
+| data | `Input` | `Input` Serializable payload attached to the active action. |
 
 <div class="smt-member-anchors">
 
@@ -780,12 +780,6 @@ sandkit.api.action.setCustomData<Input>(data: Input): void
 </div>
 
 Store custom data on the active action handler.
-
-##### Type Parameters
-
-###### Input
-
-`Input`
 
 ##### Example
 
@@ -821,10 +815,10 @@ AssetProviderV1 = object
 | Property | Type | Description |
 | --- | --- | --- |
 | id | ` ${string}:${string}:${string} ` |  |
-| kind | string |  |
-| localId? | string |  |
-| modId? | number |  |
-| modName | string |  |
+| kind | <code>string</code> |  |
+| localId? | <code>string</code> |  |
+| modId? | <code>number</code> |  |
+| modName | <code>string</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -862,7 +856,7 @@ getUrl(relativePath: string): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| relativePath | `string` | Path relative to the calling mod folder. |
+| relativePath | `string` | `string` Path relative to the calling mod folder. |
 
 <div class="smt-member-anchors">
 
@@ -890,7 +884,7 @@ getSelectedProvider(kind: string): AssetProviderV1 | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| kind | `string` | Asset kind identifier. |
+| kind | `string` | `string` Asset kind identifier. |
 
 <div class="smt-member-anchors">
 
@@ -900,7 +894,7 @@ getSelectedProvider(kind: string): AssetProviderV1 | null
 
 Returns the selected provider for an asset kind, or null.
 
-[`AssetProviderV1`](?id=sandkit.api.assets.assetproviderv1) &#124; `null`
+[`AssetProviderV1`](?id=sandkit.api.assets.assetproviderv1) \| `null`
 
 </div>
 
@@ -920,8 +914,8 @@ selectProvider(kind: string, providerId: string | null): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| kind | `string` | Asset kind identifier. |
-| providerId | `string` &#124; `null` | Provider id from [getSelectedProvider](?id=sandkit.api.assets.getselectedprovider), or null to clear. |
+| kind | `string` | `string` Asset kind identifier. |
+| providerId | `string` &#124; `null` | `string` &#124; `null` Provider id from [getSelectedProvider](?id=sandkit.api.assets.getselectedprovider), or null to clear. |
 
 <div class="smt-member-anchors">
 
@@ -960,7 +954,7 @@ canBuildAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -990,7 +984,7 @@ canGrabAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1020,8 +1014,8 @@ canUseTool(player: Player, isFlamethrower?: boolean): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| player | [`Player`](api/shared.player.md?id=player) | Player state snapshot. |
-| isFlamethrower? | `boolean` | When true, apply flamethrower-specific rules. |
+| player | <code>[`Player`](api/shared.player.md?id=player)</code> | [`Player`](api/shared.player.md?id=player) Player state snapshot. |
+| isFlamethrower? | `boolean` | `boolean` When true, apply flamethrower-specific rules. |
 
 <div class="smt-member-anchors">
 
@@ -1053,7 +1047,7 @@ canUseToolAtCell(...args: [number, number, boolean]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `boolean`\] |  |
+| args | <code>...\[`number`, `number`, `boolean`\]</code> | ...\[`number`, `number`, `boolean`\] |
 
 <div class="smt-member-anchors">
 
@@ -1083,7 +1077,7 @@ getZoneIdAtCell(...args: CellCoordinates): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1135,8 +1129,8 @@ Available as `sandkit.api.blueprints`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| x | number |  |
-| y | number |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1174,7 +1168,7 @@ serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structures | readonly [`Structure`](api/sandkit.api.structures.worker.md?id=structure)[] | Structure instances to encode. |
+| structures | <code>[`Structure`](api/sandkit.api.structures.worker.md?id=structure)[]</code> | readonly [`Structure`](api/sandkit.api.structures.worker.md?id=structure)[] Structure instances to encode. |
 
 <div class="smt-member-anchors">
 
@@ -1204,7 +1198,7 @@ localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructur
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structures | readonly [`BlueprintStructure`](?id=sandkit.api.blueprints.blueprintstructure)[] | Blueprint structure records to localize. |
+| structures | <code>[`BlueprintStructure`](?id=sandkit.api.blueprints.blueprintstructure)[]</code> | readonly [`BlueprintStructure`](?id=sandkit.api.blueprints.blueprintstructure)[] Blueprint structure records to localize. |
 
 <div class="smt-member-anchors">
 
@@ -1247,7 +1241,7 @@ getSnappedPositionAtCell(...args: CellCoordinates): Vector2
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1277,7 +1271,7 @@ isBlockedAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1325,7 +1319,7 @@ selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef |
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) &#124; [`StructureType`](api/sandkit.api.building.StructureType.md) | Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
+| structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \&#124; [`StructureType`](api/sandkit.api.building.StructureType.md)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) &#124; [`StructureType`](api/sandkit.api.building.StructureType.md) Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
 
 <div class="smt-member-anchors">
 
@@ -1335,7 +1329,7 @@ selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef |
 
 Select a structure for placement by type or id.
 
-[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) &#124; `null` Resolved selection, or null when the type or id is invalid.
+[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \| `null` Resolved selection, or null when the type or id is invalid.
 
 </div>
 
@@ -1382,8 +1376,8 @@ setFocusAtWorld(worldX: number, worldY: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -1415,7 +1409,7 @@ releaseFocus(options?: object): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options? | Optional transition duration in milliseconds. |  |
+| options? | <code>Optional transition duration in milliseconds.</code> | Optional transition duration in milliseconds. |
 
 <div class="smt-member-anchors">
 
@@ -1460,7 +1454,7 @@ getValueFromCellId(cellId: CellId): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell identifier. |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell identifier. |
 
 <div class="smt-member-anchors">
 
@@ -1488,7 +1482,7 @@ getValueByType(elementType: ElementType): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | [`ElementType`](api/sandkit.api.elements.md?id=elementtype) | Numeric element type id. |
+| elementType | <code>[`ElementType`](api/sandkit.api.elements.md?id=elementtype)</code> | [`ElementType`](api/sandkit.api.elements.md?id=elementtype) Numeric element type id. |
 
 <div class="smt-member-anchors">
 
@@ -1516,7 +1510,7 @@ isCellIdCollectable(cellId: CellId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell identifier. |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell identifier. |
 
 <div class="smt-member-anchors">
 
@@ -1544,7 +1538,7 @@ isCellIdCollectableForSprite(cellId: CellId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell identifier. |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell identifier. |
 
 <div class="smt-member-anchors">
 
@@ -1572,7 +1566,7 @@ notifyPickupAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1625,8 +1619,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| last | number | Timestamp when the cooldown was last triggered (game time). |
-| time | number | Cooldown duration in milliseconds. |
+| last | <code>number</code> | Timestamp when the cooldown was last triggered (game time). |
+| time | <code>number</code> | Cooldown duration in milliseconds. |
 
 <div class="smt-member-anchors">
 
@@ -1658,8 +1652,8 @@ check(cooldown: Cooldown, overrideTime?: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cooldown | [`Cooldown`](?id=sandkit.api.cooldown.cooldown) | Cooldown state object to check and update. |
-| overrideTime? | `number` | Optional timestamp (ms) instead of current game time. |
+| cooldown | <code>[`Cooldown`](?id=sandkit.api.cooldown.cooldown)</code> | [`Cooldown`](?id=sandkit.api.cooldown.cooldown) Cooldown state object to check and update. |
+| overrideTime? | `number` | `number` Optional timestamp (ms) instead of current game time. |
 
 <div class="smt-member-anchors">
 
@@ -1689,8 +1683,8 @@ isReady(cooldown: Cooldown, overrideTime?: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cooldown | [`Cooldown`](?id=sandkit.api.cooldown.cooldown) | Cooldown state object to check. |
-| overrideTime? | `number` | Optional timestamp (ms) instead of current game time. |
+| cooldown | <code>[`Cooldown`](?id=sandkit.api.cooldown.cooldown)</code> | [`Cooldown`](?id=sandkit.api.cooldown.cooldown) Cooldown state object to check. |
+| overrideTime? | `number` | `number` Optional timestamp (ms) instead of current game time. |
 
 <div class="smt-member-anchors">
 
@@ -1729,7 +1723,7 @@ addElementByType(elementType: ElementType): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | [`ElementType`](api/sandkit.api.elements.md?id=elementtype) | Numeric element type id. |
+| elementType | <code>[`ElementType`](api/sandkit.api.elements.md?id=elementtype)</code> | [`ElementType`](api/sandkit.api.elements.md?id=elementtype) Numeric element type id. |
 
 <div class="smt-member-anchors">
 
@@ -1757,7 +1751,7 @@ addTerrainByType(terrainType: TerrainType): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainType | [`TerrainType`](api/sandkit.api.terrains.worker.md?id=terraintype) | Numeric terrain type id. |
+| terrainType | <code>[`TerrainType`](api/sandkit.api.terrains.worker.md?id=terraintype)</code> | [`TerrainType`](api/sandkit.api.terrains.worker.md?id=terraintype) Numeric terrain type id. |
 
 <div class="smt-member-anchors">
 
@@ -1786,10 +1780,10 @@ Main thread only. Temporary lights live under [lights.temporary](api/sandkit.api
 
 | Property | Type | Description |
 | --- | --- | --- |
-| width? | number | Beam width in pixels. |
-| brightness? | number | Beam brightness multiplier. |
-| color? | number | Beam color as a packed integer. |
-| glow? | boolean | When true, draws a glow around the beam. |
+| width? | <code>number</code> | Beam width in pixels. |
+| brightness? | <code>number</code> | Beam brightness multiplier. |
+| color? | <code>number</code> | Beam color as a packed integer. |
+| glow? | <code>boolean</code> | When true, draws a glow around the beam. |
 
 <div class="smt-member-anchors">
 
@@ -1813,23 +1807,17 @@ Options for laser beam effects.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L127" target="_blank" rel="noopener">effects.d.ts:127</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| destroy() | <code>(): void</code> | Removes the laser from the scene. |
+
+<div class="smt-member-anchors">
+
+###### destroy() <!-- {docsify-ignore} -->
+
+</div>
+
 Handle returned by createLaserAtWorld.
-
-##### Methods
-
-###### destroy()
-
-```ts
-destroy(): void
-```
-
-Defined in: [sandkit/api/effects.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L129)
-
-Removes the laser from the scene.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -1841,11 +1829,11 @@ Removes the laser from the scene.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| style? | "implode" &#124; "explode" | Distortion style: implode or explode. |
-| duration? | number | Effect duration in seconds. |
-| maxRadius? | number | Maximum radius of the wave. |
-| intensity? | number | Visual intensity of the distortion. |
-| color? | [number, number, number, number] | RGBA color components for the effect. |
+| style? | <code>&quot;implode&quot; &#124; &quot;explode&quot;</code> | Distortion style: implode or explode. |
+| duration? | <code>number</code> | Effect duration in seconds. |
+| maxRadius? | <code>number</code> | Maximum radius of the wave. |
+| intensity? | <code>number</code> | Visual intensity of the distortion. |
+| color? | <code>[number, number, number, number]</code> | RGBA color components for the effect. |
 
 <div class="smt-member-anchors">
 
@@ -1873,9 +1861,9 @@ Options for distortion wave effects.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| duration? | number |  |
-| maxRadius? | number |  |
-| intensity? | number |  |
+| duration? | <code>number</code> |  |
+| maxRadius? | <code>number</code> |  |
+| intensity? | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1899,18 +1887,18 @@ Generic duration and radius options for world effects.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| brightness? | number |  |
-| duration? | number |  |
-| durationMs? | number |  |
-| size? | number |  |
-| color? | [number, number, number, number] |  |
-| decay | number | Light decay rate after spawn. |
-| unclamped? | boolean |  |
-| skipDedup? | boolean |  |
-| useLightZones? | boolean |  |
-| noopIfFull? | boolean |  |
-| priority? | number |  |
-| dedupKey | string | Dedupe key when the light pool is full or dedup is enabled. |
+| brightness? | <code>number</code> |  |
+| duration? | <code>number</code> |  |
+| durationMs? | <code>number</code> |  |
+| size? | <code>number</code> |  |
+| color? | <code>[number, number, number, number]</code> |  |
+| decay | <code>number</code> | Light decay rate after spawn. |
+| unclamped? | <code>boolean</code> |  |
+| skipDedup? | <code>boolean</code> |  |
+| useLightZones? | <code>boolean</code> |  |
+| noopIfFull? | <code>boolean</code> |  |
+| priority? | <code>number</code> |  |
+| dedupKey | <code>string</code> | Dedupe key when the light pool is full or dedup is enabled. |
 
 <div class="smt-member-anchors">
 
@@ -1952,21 +1940,21 @@ Options for [createLightAtWorld](?id=sandkit.api.effects.createlightatworld).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| count? | number |  |
-| velocity? | Vector2 |  |
-| minSpeed? | number |  |
-| maxSpeed? | number |  |
-| color? | number | Hex code. No alpha. |
-| minSize? | number |  |
-| maxSize? | number |  |
-| minLifetime? | number |  |
-| maxLifetime? | number |  |
-| background? | boolean |  |
-| imageName? | string |  |
-| fadeOutOnly? | boolean |  |
-| fadeStart? | number |  |
-| fadeEnd? | number |  |
-| damp? | number |  |
+| count? | <code>number</code> |  |
+| velocity? | <code>Vector2</code> |  |
+| minSpeed? | <code>number</code> |  |
+| maxSpeed? | <code>number</code> |  |
+| color? | <code>number</code> | Hex code. No alpha. |
+| minSize? | <code>number</code> |  |
+| maxSize? | <code>number</code> |  |
+| minLifetime? | <code>number</code> |  |
+| maxLifetime? | <code>number</code> |  |
+| background? | <code>boolean</code> |  |
+| imageName? | <code>string</code> |  |
+| fadeOutOnly? | <code>boolean</code> |  |
+| fadeStart? | <code>number</code> |  |
+| fadeEnd? | <code>number</code> |  |
+| damp? | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -2024,10 +2012,10 @@ createAtWorld(effectId: string, worldX: number, worldY: number, options?: Effect
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| effectId | `string` | Registered effect id (for example `heatWave`). |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| options? | [`EffectOptions`](?id=sandkit.api.effects.effectoptions) | Duration, radius, and intensity settings. |
+| effectId | `string` | `string` Registered effect id (for example `heatWave`). |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| options? | <code>[`EffectOptions`](?id=sandkit.api.effects.effectoptions)</code> | [`EffectOptions`](?id=sandkit.api.effects.effectoptions) Duration, radius, and intensity settings. |
 
 <div class="smt-member-anchors">
 
@@ -2061,10 +2049,10 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| effectId | `string` |  |
-| worldX | `number` |  |
-| worldY | `number` |  |
-| options? | [`EffectOptions`](?id=sandkit.api.effects.effectoptions) |  |
+| effectId | `string` | `string` |
+| worldX | `number` | `number` |
+| worldY | `number` | `number` |
+| options? | <code>[`EffectOptions`](?id=sandkit.api.effects.effectoptions)</code> | [`EffectOptions`](?id=sandkit.api.effects.effectoptions) |
 
 <div class="smt-member-anchors">
 
@@ -2105,9 +2093,9 @@ createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptio
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` |  |
-| worldY | `number` |  |
-| options? | [`TemporaryLightOptions`](?id=sandkit.api.effects.temporarylightoptions) |  |
+| worldX | `number` | `number` |
+| worldY | `number` | `number` |
+| options? | <code>[`TemporaryLightOptions`](?id=sandkit.api.effects.temporarylightoptions)</code> | [`TemporaryLightOptions`](?id=sandkit.api.effects.temporarylightoptions) |
 
 <div class="smt-member-anchors">
 
@@ -2148,9 +2136,9 @@ createDistortionWaveAtWorld(worldX: number, worldY: number, options?: Distortion
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| options? | [`DistortionEffectOptions`](?id=sandkit.api.effects.distortioneffectoptions) | Style, duration, radius, intensity, and color. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| options? | <code>[`DistortionEffectOptions`](?id=sandkit.api.effects.distortioneffectoptions)</code> | [`DistortionEffectOptions`](?id=sandkit.api.effects.distortioneffectoptions) Style, duration, radius, intensity, and color. |
 
 <div class="smt-member-anchors">
 
@@ -2190,11 +2178,11 @@ createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startWorldX | `number` | Beam start world X in pixels. |
-| startWorldY | `number` | Beam start world Y in pixels. |
-| endWorldX | `number` | Beam end world X in pixels. |
-| endWorldY | `number` | Beam end world Y in pixels. |
-| options? | [`LaserEffectOptions`](?id=sandkit.api.effects.lasereffectoptions) | Width, brightness, color, and glow options. |
+| startWorldX | `number` | `number` Beam start world X in pixels. |
+| startWorldY | `number` | `number` Beam start world Y in pixels. |
+| endWorldX | `number` | `number` Beam end world X in pixels. |
+| endWorldY | `number` | `number` Beam end world Y in pixels. |
+| options? | <code>[`LaserEffectOptions`](?id=sandkit.api.effects.lasereffectoptions)</code> | [`LaserEffectOptions`](?id=sandkit.api.effects.lasereffectoptions) Width, brightness, color, and glow options. |
 
 <div class="smt-member-anchors">
 
@@ -2232,7 +2220,7 @@ removeLightById(lightId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| lightId | `number` |  |
+| lightId | `number` | `number` |
 
 <div class="smt-member-anchors">
 
@@ -2267,9 +2255,9 @@ createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectO
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
-| options? | [`ParticleEffectOptions`](?id=sandkit.api.effects.particleeffectoptions) | Count, velocity, colour, and lifetime settings. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
+| options? | <code>[`ParticleEffectOptions`](?id=sandkit.api.effects.particleeffectoptions)</code> | [`ParticleEffectOptions`](?id=sandkit.api.effects.particleeffectoptions) Count, velocity, colour, and lifetime settings. |
 
 <div class="smt-member-anchors">
 
@@ -2306,10 +2294,10 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| textKey? | string | i18n key for custom interaction label text. |
-| crossedOutWhen? | object | Hide the label when a data field matches a value. |
-| visibleWhen? | object | Show the label only when a data field matches a value. |
-| onlyWhenTranslated? | boolean | Require the text key to exist in the active locale. |
+| textKey? | <code>string</code> | i18n key for custom interaction label text. |
+| crossedOutWhen? | <code>{ dataField: number; equals: number }</code> | Hide the label when a data field matches a value. |
+| visibleWhen? | <code>{ dataField: number; equals: number }</code> | Show the label only when a data field matches a value. |
+| onlyWhenTranslated? | <code>boolean</code> | Require the text key to exist in the active locale. |
 
 <div class="smt-member-anchors">
 
@@ -2335,14 +2323,14 @@ Optional tooltip metadata on structure interactions.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| data? | Record<string, unknown> | Initial element data bag. |
-| density? | number | Override element density. |
-| durationTicks? | number | Set both max and remaining duration in simulation ticks. |
-| ~~duration?~~ | number |  |
-| isFreeFalling? | boolean | Override free-fall state on spawn. |
-| dataFields? | object | Override default data fields 1–4. |
-| particle? | object | Spawn as a particle with the given velocity. |
-| skipCollectorCheck? | boolean | Skip collector accounting when placing the element. |
+| data? | <code>Record&lt;string, unknown&gt;</code> | Initial element data bag. |
+| density? | <code>number</code> | Override element density. |
+| durationTicks? | <code>number</code> | Set both max and remaining duration in simulation ticks. |
+| ~~duration?~~ | <code>number</code> | Deprecated alias. |
+| isFreeFalling? | <code>boolean</code> | Override free-fall state on spawn. |
+| dataFields? | <code>{ field1: number; field2: number; field3: number; field4: number }</code> | Override default data fields 1–4. |
+| particle? | <code>{ velocity: Vector2 }</code> | Spawn as a particle with the given velocity. |
+| skipCollectorCheck? | <code>boolean</code> | Skip collector accounting when placing the element. |
 
 <div class="smt-member-anchors">
 
@@ -2376,7 +2364,7 @@ Options for [createAtCell](?id=sandkit.api.elements.createatcell), replace, and 
 
 | Property | Type | Description |
 | --- | --- | --- |
-| skipCollectorCheck? | boolean | Skip collector accounting when removing the element. |
+| skipCollectorCheck? | <code>boolean</code> | Skip collector accounting when removing the element. |
 
 <div class="smt-member-anchors">
 
@@ -2406,8 +2394,8 @@ InteractionDestroyer = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | "destroyer" |  |
-| items | readonly string[] | Item ids removed by this interaction (for example `"drill"`). |
+| kind | <code>&quot;destroyer&quot;</code> |  |
+| items | <code>readonly string[]</code> | Item ids removed by this interaction (for example `"drill"`). |
 
 <div class="smt-member-anchors">
 
@@ -2471,8 +2459,8 @@ InteractionEntity = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | "entity" |  |
-| entities | readonly string[] | Entity type ids referenced by the interaction. |
+| kind | <code>&quot;entity&quot;</code> |  |
+| entities | <code>readonly string[]</code> | Entity type ids referenced by the interaction. |
 
 <div class="smt-member-anchors">
 
@@ -2502,7 +2490,7 @@ InteractionFlammable = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | "flammable" |  |
+| kind | <code>&quot;flammable&quot;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -2530,7 +2518,7 @@ InteractionMeltable = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | "meltable" |  |
+| kind | <code>&quot;meltable&quot;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -2558,7 +2546,7 @@ InteractionFreezable = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | "freezable" |  |
+| kind | <code>&quot;freezable&quot;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -2685,16 +2673,16 @@ ElementDefinition = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string |  |
-| nameKey | string |  |
-| defaultDataFields? | object |  |
-| colors | object |  |
-| density | number |  |
-| matterType | MatterType |  |
-| metaColor? | number | UI/meta color as 0xRRGGBB. |
-| isGrabbable? | boolean | When true, the grabber can pick up this element. |
-| isTransportable? | boolean | When true, conveyors can move this element. |
-| getExtraProps? | () => object |  |
+| id | <code>string</code> |  |
+| nameKey | <code>string</code> |  |
+| defaultDataFields? | <code>{ Index Signature: \[`key`: `string`\]: `number` }</code> |  |
+| colors | <code>{ variantFromDataField1: object; variantFromDataField1.rangeMin: rangeMin?: number; variantFromDataField1.rangeMax: rangeMax?: number; variantFromDataField1.invert: invert?: boolean; variantFromDataField1.useGradient: useGradient?: boolean; variants: [number, number, number][] }</code> |  |
+| density | <code>number</code> |  |
+| matterType | <code>MatterType</code> |  |
+| metaColor? | <code>number</code> | UI/meta color as 0xRRGGBB. |
+| isGrabbable? | <code>boolean</code> | When true, the grabber can pick up this element. |
+| isTransportable? | <code>boolean</code> | When true, conveyors can move this element. |
+| getExtraProps? | <code>{ Returns: object; data: Record&lt;PropertyKey, any&gt; }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -2762,7 +2750,7 @@ register(definition: ElementDefinition): object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`ElementDefinition`](?id=sandkit.api.elements.elementdefinition) | Full element definition to register. |
+| definition | <code>[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition)</code> | [`ElementDefinition`](?id=sandkit.api.elements.elementdefinition) Full element definition to register. |
 
 <div class="smt-member-anchors">
 
@@ -2792,8 +2780,8 @@ updateDefinition(elementTypeOrId: ElementRef, partial: Partial<ElementDefinition
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementTypeOrId | [`ElementRef`](?id=sandkit.api.elements.elementref) | Numeric type or string id. |
-| partial | `Partial`\<[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition)\> | Fields to merge onto the definition. |
+| elementTypeOrId | <code>[`ElementRef`](?id=sandkit.api.elements.elementref)</code> | [`ElementRef`](?id=sandkit.api.elements.elementref) Numeric type or string id. |
+| partial | `Partial`\<[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition)\> | `Partial`\<[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition)\> Fields to merge onto the definition. |
 
 <div class="smt-member-anchors">
 
@@ -2831,8 +2819,8 @@ addInteractionInfo(elementTypeOrId: ElementRef, interaction: Interaction): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementTypeOrId | [`ElementRef`](?id=sandkit.api.elements.elementref) | Numeric type or string id. |
-| interaction | [`Interaction`](?id=sandkit.api.elements.interaction) | Interaction entry to append. |
+| elementTypeOrId | <code>[`ElementRef`](?id=sandkit.api.elements.elementref)</code> | [`ElementRef`](?id=sandkit.api.elements.elementref) Numeric type or string id. |
+| interaction | <code>[`Interaction`](?id=sandkit.api.elements.interaction)</code> | [`Interaction`](?id=sandkit.api.elements.interaction) Interaction entry to append. |
 
 <div class="smt-member-anchors">
 
@@ -2862,7 +2850,7 @@ getNameByType(elementType: ElementType): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | [`ElementType`](?id=sandkit.api.elements.elementtype) | Numeric element type. |
+| elementType | <code>[`ElementType`](?id=sandkit.api.elements.elementtype)</code> | [`ElementType`](?id=sandkit.api.elements.elementtype) Numeric element type. |
 
 <div class="smt-member-anchors">
 
@@ -2890,9 +2878,9 @@ findFreeCellInStructure(structureCellX: number, structureCellY: number, structur
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureCellX | `number` | Structure anchor cell column. |
-| structureCellY | `number` | Structure anchor cell row. |
-| structureSizeCells | `number` | Structure footprint size in cells. |
+| structureCellX | `number` | `number` Structure anchor cell column. |
+| structureCellY | `number` | `number` Structure anchor cell row. |
+| structureSizeCells | `number` | `number` Structure footprint size in cells. |
 
 <div class="smt-member-anchors">
 
@@ -2906,7 +2894,7 @@ findFreeCellInStructure(structureCellX: number, structureCellY: number, structur
 
 Finds a free cell inside a structure footprint, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) &#124; `null` Cell coordinates of a free cell, or null when none.
+[`Vector2`](api/shared.player.md?id=vector2) \| `null` Cell coordinates of a free cell, or null when none.
 
 </div>
 
@@ -2926,7 +2914,7 @@ createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -2972,7 +2960,7 @@ createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -3007,7 +2995,7 @@ replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -3035,7 +3023,7 @@ replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -3070,7 +3058,7 @@ removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRemovalOptions`](?id=sandkit.api.elements.elementremovaloptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](?id=sandkit.api.elements.elementremovaloptions)\]</code> | ...\[`number`, `number`, [`ElementRemovalOptions`](?id=sandkit.api.elements.elementremovaloptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -3098,7 +3086,7 @@ removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRemovalOptions`](?id=sandkit.api.elements.elementremovaloptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](?id=sandkit.api.elements.elementremovaloptions)\]</code> | ...\[`number`, `number`, [`ElementRemovalOptions`](?id=sandkit.api.elements.elementremovaloptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -3133,10 +3121,10 @@ teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCe
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| fromCellX | `number` | Source cell column. |
-| fromCellY | `number` | Source cell row. |
-| toCellX | `number` | Destination cell column. |
-| toCellY | `number` | Destination cell row. |
+| fromCellX | `number` | `number` Source cell column. |
+| fromCellY | `number` | `number` Source cell row. |
+| toCellX | `number` | `number` Destination cell column. |
+| toCellY | `number` | `number` Destination cell row. |
 
 <div class="smt-member-anchors">
 
@@ -3170,10 +3158,10 @@ teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: numb
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| fromCellX | `number` |  |
-| fromCellY | `number` |  |
-| toCellX | `number` |  |
-| toCellY | `number` |  |
+| fromCellX | `number` | `number` |
+| fromCellY | `number` | `number` |
+| toCellX | `number` | `number` |
+| toCellY | `number` | `number` |
 
 <div class="smt-member-anchors">
 
@@ -3214,7 +3202,7 @@ setVelocityAtCell(...args: number, number, [Vector2]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
 
 <div class="smt-member-anchors">
 
@@ -3248,7 +3236,7 @@ setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
 
 <div class="smt-member-anchors">
 
@@ -3283,7 +3271,7 @@ addParticleVelocityAtCell(...args: number, number, [Vector2, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -3322,7 +3310,7 @@ addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): v
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -3357,7 +3345,7 @@ convertToParticleAtCell(...args: number, number, [Vector2]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
 
 <div class="smt-member-anchors">
 
@@ -3395,7 +3383,7 @@ convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
 
 <div class="smt-member-anchors">
 
@@ -3430,7 +3418,7 @@ convertFromParticleAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -3458,7 +3446,7 @@ convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -3493,7 +3481,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -3521,7 +3509,7 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -3556,7 +3544,7 @@ refreshColorAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -3584,7 +3572,7 @@ refreshColorAtCellWhenIdle(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -3619,7 +3607,7 @@ setPhysicsAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -3647,7 +3635,7 @@ setPhysicsAtCellWhenIdle(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -3682,7 +3670,7 @@ setDurationAtCell(...args: [number, number, number, object]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, `object`\] |  |
+| args | <code>...\[`number`, `number`, `number`, `object`\]</code> | ...\[`number`, `number`, `number`, `object`\] |
 
 <div class="smt-member-anchors">
 
@@ -3723,7 +3711,7 @@ setDurationAtCellWhenIdle(...args: [number, number, number, object]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, `object`\] |  |
+| args | <code>...\[`number`, `number`, `number`, `object`\]</code> | ...\[`number`, `number`, `number`, `object`\] |
 
 <div class="smt-member-anchors">
 
@@ -3758,7 +3746,7 @@ getIdByType(elementType: ElementType): string & object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | [`ElementType`](?id=sandkit.api.elements.elementtype) | Numeric element type. |
+| elementType | <code>[`ElementType`](?id=sandkit.api.elements.elementtype)</code> | [`ElementType`](?id=sandkit.api.elements.elementtype) Numeric element type. |
 
 <div class="smt-member-anchors">
 
@@ -3788,7 +3776,7 @@ getTypeById(elementId: string & object): ElementType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementId | `string` & `object` | Mod-registered element id. |
+| elementId | `string` & `object` | `string` & `object` Mod-registered element id. |
 
 <div class="smt-member-anchors">
 
@@ -3818,7 +3806,7 @@ getTypeFromId(elementId: string & object): ElementType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementId | `string` & `object` |  |
+| elementId | `string` & `object` | `string` & `object` |
 
 <div class="smt-member-anchors">
 
@@ -3855,7 +3843,7 @@ getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | [`ElementType`](?id=sandkit.api.elements.elementtype) | Numeric element type. |
+| elementType | <code>[`ElementType`](?id=sandkit.api.elements.elementtype)</code> | [`ElementType`](?id=sandkit.api.elements.elementtype) Numeric element type. |
 
 <div class="smt-member-anchors">
 
@@ -3865,7 +3853,7 @@ getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 
 Look up the definition for a type handle.
 
-[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition) &#124; `undefined`
+[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition) \| `undefined`
 
 </div>
 
@@ -3885,7 +3873,7 @@ getTypeAtCell(...args: CellCoordinates): ElementType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -3895,7 +3883,7 @@ getTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the raw element type at a cell (may differ from resolved type).
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
+[`ElementType`](?id=sandkit.api.elements.elementtype) \| `null`
 
 </div>
 
@@ -3915,7 +3903,7 @@ getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -3925,7 +3913,7 @@ getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the resolved element type after overlays and particles.
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
+[`ElementType`](?id=sandkit.api.elements.elementtype) \| `null`
 
 </div>
 
@@ -3945,7 +3933,7 @@ getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md?id=getcellidatcell). |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md?id=getcellidatcell). |
 
 <div class="smt-member-anchors">
 
@@ -3955,7 +3943,7 @@ getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 
 Return the resolved element type from a packed cell id.
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
+[`ElementType`](?id=sandkit.api.elements.elementtype) \| `null`
 
 </div>
 
@@ -3975,7 +3963,7 @@ getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle:
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -3985,7 +3973,7 @@ getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle:
 
 Return element index, particle flag, and ids at a cell.
 
-\{ `elementType`: [`ElementType`](?id=sandkit.api.elements.elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} &#124; `null`
+\{ `elementType`: [`ElementType`](?id=sandkit.api.elements.elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} \| `null`
 
 </div>
 
@@ -4005,7 +3993,7 @@ getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -4015,7 +4003,7 @@ getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 
 Return the matter category at a cell, or null when empty.
 
-[`MatterType`](api/sandkit.api.elements.MatterType.md) &#124; `null`
+[`MatterType`](api/sandkit.api.elements.MatterType.md) \| `null`
 
 </div>
 
@@ -4035,7 +4023,7 @@ isTypeAtCell(...args: number, number, [ElementRef]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref)\]</code> | ...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref)\] |
 
 <div class="smt-member-anchors">
 
@@ -4063,7 +4051,7 @@ isFreeFallingAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -4091,7 +4079,7 @@ getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -4101,7 +4089,7 @@ getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 
 Return per-cell velocity for moving elements.
 
-\{ `x`: `number`; `y`: `number`; \} &#124; `null`
+\{ `x`: `number`; `y`: `number`; \} \| `null`
 
 </div>
 
@@ -4121,7 +4109,7 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`\] |  |
+| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`\]</code> | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`\] |
 
 <div class="smt-member-anchors">
 
@@ -4131,7 +4119,7 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 Read element data field 1–4 at a cell.
 
-`number` &#124; `null`
+`number` \| `null`
 
 </div>
 
@@ -4152,8 +4140,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| capacity? | number | Maximum stored energy for storage nodes. |
-| energyType? | string | Energy type id when multiple networks exist. |
+| capacity? | <code>number</code> | Maximum stored energy for storage nodes. |
+| energyType? | <code>string</code> | Energy type id when multiple networks exist. |
 
 <div class="smt-member-anchors">
 
@@ -4181,7 +4169,7 @@ Options for [registerType](?id=sandkit.api.energy.registertype).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| energyType? | string | Energy type id when multiple networks exist. |
+| energyType? | <code>string</code> | Energy type id when multiple networks exist. |
 
 <div class="smt-member-anchors">
 
@@ -4217,9 +4205,9 @@ registerType(structureId: string, type: "storage" | "conductor", options?: Energ
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | Structure type id string. |
-| type | `"storage"` &#124; `"conductor"` | `conductor` forwards energy; `storage` holds energy. |
-| options? | [`EnergyRegisterTypeOptions`](?id=sandkit.api.energy.energyregistertypeoptions) | Capacity and energy-type options for storage nodes. |
+| structureId | `string` | `string` Structure type id string. |
+| type | `"storage"` &#124; `"conductor"` | `"storage"` &#124; `"conductor"` `conductor` forwards energy; `storage` holds energy. |
+| options? | <code>[`EnergyRegisterTypeOptions`](?id=sandkit.api.energy.energyregistertypeoptions)</code> | [`EnergyRegisterTypeOptions`](?id=sandkit.api.energy.energyregistertypeoptions) Capacity and energy-type options for storage nodes. |
 
 <div class="smt-member-anchors">
 
@@ -4251,7 +4239,7 @@ addAtCell(...args: number, number, number, [EnergyAddOptions]): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, [`EnergyAddOptions`](?id=sandkit.api.energy.energyaddoptions)\] |  |
+| args | <code>...\[`number`, `number`, `number`, [`EnergyAddOptions`](?id=sandkit.api.energy.energyaddoptions)\]</code> | ...\[`number`, `number`, `number`, [`EnergyAddOptions`](?id=sandkit.api.energy.energyaddoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -4279,8 +4267,8 @@ consume(amount: number, options?: object): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| amount | `number` | Energy amount to consume. |
-| options? | When `allOrNothing` is true, consume zero unless the full amount is available. |  |
+| amount | `number` | `number` Energy amount to consume. |
+| options? | <code>When `allOrNothing` is true, consume zero unless the full amount is available.</code> | When `allOrNothing` is true, consume zero unless the full amount is available. |
 
 <div class="smt-member-anchors">
 
@@ -4310,7 +4298,7 @@ consumeExcludingNetworkAtCell(...args: [number, number, number]): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -4338,7 +4326,7 @@ getNetworkAtCell(...args: CellCoordinates): object[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -4377,7 +4365,7 @@ getNetworkFreeCapacityAtCell(...args: CellCoordinates): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -4407,11 +4395,11 @@ Available as `sandkit.api.entities`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | number |  |
-| x | number |  |
-| y | number |  |
-| targetX? | number |  |
-| targetY? | number |  |
+| id | <code>number</code> |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
+| targetX? | <code>number</code> |  |
+| targetY? | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -4455,7 +4443,7 @@ getById(entityId: number): Entity | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | Runtime entity id. |
+| entityId | `number` | `number` Runtime entity id. |
 
 <div class="smt-member-anchors">
 
@@ -4465,7 +4453,7 @@ getById(entityId: number): Entity | undefined
 
 Return one live entity by runtime id.
 
-[`Entity`](?id=sandkit.api.entities.entity) &#124; `undefined`
+[`Entity`](?id=sandkit.api.entities.entity) \| `undefined`
 
 </div>
 
@@ -4485,7 +4473,7 @@ getAllByType(entityTypeId: string): Entity[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityTypeId | `string` | Registered entity type string id. |
+| entityTypeId | `string` | `string` Registered entity type string id. |
 
 <div class="smt-member-anchors">
 
@@ -4515,9 +4503,9 @@ spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityTypeId | `string` | Registered entity type string id. |
-| worldX | `number` | Spawn x position in world pixels. |
-| worldY | `number` | Spawn y position in world pixels. |
+| entityTypeId | `string` | `string` Registered entity type string id. |
+| worldX | `number` | `number` Spawn x position in world pixels. |
+| worldY | `number` | `number` Spawn y position in world pixels. |
 
 <div class="smt-member-anchors">
 
@@ -4551,7 +4539,7 @@ remove(entityId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | Runtime entity id. |
+| entityId | `number` | `number` Runtime entity id. |
 
 <div class="smt-member-anchors">
 
@@ -4579,9 +4567,9 @@ launch(entityId: number, angleRadians: number, speed?: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | Runtime entity id. |
-| angleRadians | `number` | Launch angle in radians. |
-| speed? | `number` | Optional launch speed. |
+| entityId | `number` | `number` Runtime entity id. |
+| angleRadians | `number` | `number` Launch angle in radians. |
+| speed? | `number` | `number` Optional launch speed. |
 
 <div class="smt-member-anchors">
 
@@ -4613,7 +4601,7 @@ startCapture(entityId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | Runtime entity id. |
+| entityId | `number` | `number` Runtime entity id. |
 
 <div class="smt-member-anchors">
 
@@ -4641,7 +4629,7 @@ collect(entityId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | Runtime entity id. |
+| entityId | `number` | `number` Runtime entity id. |
 
 <div class="smt-member-anchors">
 
@@ -4670,9 +4658,9 @@ Main thread only. The `events` object is frozen; do not replace `on` or `emit`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| phaseThroughTerrain | boolean | When true, terrain collision is skipped this sub-step. |
-| phaseThroughStructures | boolean | When true, structure collision is skipped this sub-step. |
-| maxStepCells | number | Max cells the player can step up when blocked horizontally (1–8). |
+| phaseThroughTerrain | <code>boolean</code> | When true, terrain collision is skipped this sub-step. |
+| phaseThroughStructures | <code>boolean</code> | When true, structure collision is skipped this sub-step. |
+| maxStepCells | <code>number</code> | Max cells the player can step up when blocked horizontally (1–8). |
 
 <div class="smt-member-anchors">
 
@@ -4695,32 +4683,32 @@ Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L185" target="_blank" rel="noopener">events.d.ts:185</a></p>
 
-| Property | Type | Description |
+| Hook | Args | Notes |
 | --- | --- | --- |
-| item:used | used: object |  |
-| frame:render | render: Record<string, unknown> |  |
-| scene:game:started | game:started: Record<string, unknown> |  |
-| ~~scene:started:game~~ | started:game: Record<string, unknown> |  |
-| earlyAccess:completed | completed: Record<string, unknown> |  |
-| ~~earlyAccess:complete~~ | complete: Record<string, unknown> |  |
-| terrain:destroyed | destroyed: object |  |
-| fog:cellRevealed | cellRevealed: object |  |
-| upgrade:levelSelected | levelSelected: object |  |
-| building:placed | placed: object |  |
-| building:removing | removing: object | Fires before `building:removed`. |
-| building:removed | removed: object |  |
-| structures:placed | placed: object |  |
-| structures:removed | removed: object |  |
-| structures:moved | moved: object |  |
-| game:ready | ready: Record<string, unknown> |  |
-| game:started | started: Record<string, unknown> |  |
-| tutorial:stepChanged | stepChanged: object |  |
-| tutorial:completed | completed: object |  |
-| tech:unlocked | unlocked: object |  |
-| worldItem:pickedUp | pickedUp: object |  |
-| resource:collected | collected: object |  |
-| player:collision:prepare | collision:prepare: PlayerCollisionPreparePayload |  |
-| player:moved | moved: object |  |
+| `item:used` | <code>{ itemId: string; useId: string; kind: string; cellX: number; cellY: number; prepared: Readonly&lt;Record&lt;string, unknown&gt;&gt; }</code> |  |
+| `frame:render` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `scene:game:started` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`scene:started:game`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `earlyAccess:completed` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`earlyAccess:complete`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `terrain:destroyed` | <code>{ cellX: number; cellY: number; cellType: number; x: number; y: number }</code> |  |
+| `fog:cellRevealed` | <code>{ cellX: number; cellY: number; x: number; y: number }</code> |  |
+| `upgrade:levelSelected` | <code>{ itemId: string; upgradeId: string; level: number }</code> |  |
+| `building:placed` | <code>{ structure: Record&lt;string, unknown&gt;; x: number; y: number; isBatch: boolean; isCopied: boolean }</code> |  |
+| `building:removing` | <code>{ structureId: string; x: number; y: number; byMove: boolean }</code> | Fires before `building:removed`. |
+| `building:removed` | <code>{ structureId: string; x: number; y: number; isBatch: boolean }</code> |  |
+| `structures:placed` | <code>{ structures: unknown[] }</code> |  |
+| `structures:removed` | <code>{ removed: unknown[]; structures: unknown[]; byMove: boolean }</code> |  |
+| `structures:moved` | <code>{ moved: unknown[]; failedToPlace: unknown[] }</code> |  |
+| `game:ready` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `game:started` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `tutorial:stepChanged` | <code>{ step: unknown }</code> |  |
+| `tutorial:completed` | <code>{ skipped: boolean }</code> |  |
+| `tech:unlocked` | <code>{ techId: string; suppressMusic: boolean }</code> |  |
+| `worldItem:pickedUp` | <code>{ worldItemId: number; type: string }</code> |  |
+| `resource:collected` | <code>{ resourceId: string; amount: number; sourceKind: string; cellX: number; cellY: number }</code> |  |
+| `player:collision:prepare` | <code>PlayerCollisionPreparePayload</code> |  |
+| `player:moved` | <code>{ dt: number; state: unknown }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -4814,12 +4802,6 @@ sandkit.api.events.EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPa
 
 Event payload type for a given event id.
 
-##### Type Parameters
-
-###### K
-
-`K`
-
 </div>
 
 ### Functions <!-- {docsify-ignore} -->
@@ -4840,8 +4822,8 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| eventId | `K` | Registered event name. |
-| callback | (`payload`: [`EventPayload`](?id=sandkit.api.events.eventpayload)\<`K`\>) => `void` | Called when the event is emitted. |
+| eventId | `K` | `K` Registered event name. |
+| callback | <code>(`payload`: [`EventPayload`](?id=sandkit.api.events.eventpayload)\&lt;`K`\&gt;) =&gt; `void`</code> | (`payload`: [`EventPayload`](?id=sandkit.api.events.eventpayload)\<`K`\>) => `void` Called when the event is emitted. |
 
 <div class="smt-member-anchors">
 
@@ -4852,10 +4834,6 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 </div>
 
 Subscribes to an event. Returns an unsubscribe function.
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`EventId`](?id=sandkit.api.events.eventid)
 
@@ -5043,8 +5021,8 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| eventId | `K` | Registered event name. |
-| payload | [`EventPayload`](?id=sandkit.api.events.eventpayload)\<`K`\> | Serializable payload passed to listeners. |
+| eventId | `K` | `K` Registered event name. |
+| payload | <code>[`EventPayload`](?id=sandkit.api.events.eventpayload)\&lt;`K`\&gt;</code> | [`EventPayload`](?id=sandkit.api.events.eventpayload)\<`K`\> Serializable payload passed to listeners. |
 
 <div class="smt-member-anchors">
 
@@ -5055,10 +5033,6 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 </div>
 
 Emits an event with a payload to all subscribers.
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`EventId`](?id=sandkit.api.events.eventid)
 
@@ -5081,10 +5055,10 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| pattern? | number[][] | Dig pattern grid; non-zero cells are removed. |
-| power | number | Dig strength applied to matched cells. Clamped to 0–1000. |
-| options? | ExcavationProfileOptions | Optional profile-specific excavation flags. |
-| terrainRules? | readonly ExcavationTerrainRule[] | Per-terrain output and damage rules. |
+| pattern? | <code>number[][]</code> | Dig pattern grid; non-zero cells are removed. |
+| power | <code>number</code> | Dig strength applied to matched cells. Clamped to 0–1000. |
+| options? | <code>ExcavationProfileOptions</code> | Optional profile-specific excavation flags. |
+| terrainRules? | <code>readonly ExcavationTerrainRule[]</code> | Per-terrain output and damage rules. |
 
 <div class="smt-member-anchors">
 
@@ -5110,13 +5084,13 @@ Excavation tool profile definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| fromGun? | boolean |  |
-| fromRocketExplosion? | boolean |  |
-| fromDrill? | boolean |  |
-| useLiteralOutVelocity? | boolean |  |
-| destroyNonDestructible? | boolean |  |
-| forceRemoveAll? | boolean |  |
-| drillTierDamage? | number | Clamped to 0–1000 when set. |
+| fromGun? | <code>boolean</code> |  |
+| fromRocketExplosion? | <code>boolean</code> |  |
+| fromDrill? | <code>boolean</code> |  |
+| useLiteralOutVelocity? | <code>boolean</code> |  |
+| destroyNonDestructible? | <code>boolean</code> |  |
+| forceRemoveAll? | <code>boolean</code> |  |
+| drillTierDamage? | <code>number</code> | Clamped to 0–1000 when set. |
 
 <div class="smt-member-anchors">
 
@@ -5148,10 +5122,10 @@ Options attached to an excavation profile definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cellType | TerrainRef | Terrain cell type to match. |
-| ~~terrainType?~~ | TerrainRef |  |
-| damage? | number | Damage applied when this rule matches. |
-| outputElementType? | ElementRef | Element type produced when this terrain is excavated. |
+| cellType | <code>TerrainRef</code> | Terrain cell type to match. |
+| ~~terrainType?~~ | <code>TerrainRef</code> | Deprecated alias. |
+| damage? | <code>number</code> | Damage applied when this rule matches. |
+| outputElementType? | <code>ElementRef</code> | Element type produced when this terrain is excavated. |
 
 <div class="smt-member-anchors">
 
@@ -5187,8 +5161,8 @@ registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| id | `string` | Unique profile id (1–128 chars: letters, numbers, `.`, `_`, `:`, `-`). |
-| definition | [`ExcavationProfileDefinitionV1`](?id=sandkit.api.excavation.excavationprofiledefinitionv1) | Pattern, power, terrain rules, and profile options. |
+| id | `string` | `string` Unique profile id (1–128 chars: letters, numbers, `.`, `_`, `:`, `-`). |
+| definition | <code>[`ExcavationProfileDefinitionV1`](?id=sandkit.api.excavation.excavationprofiledefinitionv1)</code> | [`ExcavationProfileDefinitionV1`](?id=sandkit.api.excavation.excavationprofiledefinitionv1) Pattern, power, terrain rules, and profile options. |
 
 <div class="smt-member-anchors">
 
@@ -5295,7 +5269,7 @@ getProcessCount(processId: FactoryProcessId): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| processId | [`FactoryProcessId`](?id=sandkit.api.factory.factoryprocessid) | Built-in factory process id. |
+| processId | <code>[`FactoryProcessId`](?id=sandkit.api.factory.factoryprocessid)</code> | [`FactoryProcessId`](?id=sandkit.api.factory.factoryprocessid) Built-in factory process id. |
 
 <div class="smt-member-anchors">
 
@@ -5323,7 +5297,7 @@ getProcessRate(processId: FactoryProcessId): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| processId | [`FactoryProcessId`](?id=sandkit.api.factory.factoryprocessid) | Built-in factory process id. |
+| processId | <code>[`FactoryProcessId`](?id=sandkit.api.factory.factoryprocessid)</code> | [`FactoryProcessId`](?id=sandkit.api.factory.factoryprocessid) Built-in factory process id. |
 
 <div class="smt-member-anchors">
 
@@ -5360,7 +5334,7 @@ canBurnElementAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -5388,7 +5362,7 @@ burnElementAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -5416,7 +5390,7 @@ burnElementAtCellWhenIdle(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -5453,7 +5427,7 @@ Available as `sandkit.api.game`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| skipIntro? | boolean | When true, skip the intro sequence. |
+| skipIntro? | <code>boolean</code> | When true, skip the intro sequence. |
 
 <div class="smt-member-anchors">
 
@@ -5483,7 +5457,7 @@ start(options?: GameStartOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options? | [`GameStartOptions`](?id=sandkit.api.game.gamestartoptions) | Optional session start flags. |
+| options? | <code>[`GameStartOptions`](?id=sandkit.api.game.gamestartoptions)</code> | [`GameStartOptions`](?id=sandkit.api.game.gamestartoptions) Optional session start flags. |
 
 <div class="smt-member-anchors">
 
@@ -5526,7 +5500,7 @@ get(key: string): JsonValueV1 | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Game config key (merged defaults and overrides). |
+| key | `string` | `string` Game config key (merged defaults and overrides). |
 
 <div class="smt-member-anchors">
 
@@ -5536,7 +5510,7 @@ get(key: string): JsonValueV1 | undefined
 
 Returns a config value by key, or undefined when missing.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
 
 </div>
 
@@ -5578,8 +5552,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elements | GridMutationWriterElements | Element cell mutations inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
-| terrains | GridMutationWriterTerrains | Terrain cell mutations inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+| elements | <code>GridMutationWriterElements</code> | Element cell mutations inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+| terrains | <code>GridMutationWriterTerrains</code> | Terrain cell mutations inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
 
 <div class="smt-member-anchors">
 
@@ -5599,69 +5573,23 @@ Deferred element and terrain mutations passed to [mutate](?id=sandkit.api.grid.m
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L158" target="_blank" rel="noopener">grid.d.ts:158</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| createAtCell() | <code>(...args: number, number, [ElementRef, ElementCreateOptions]): void</code> | Create an element at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+| replaceAtCell() | <code>(...args: number, number, [ElementRef, ElementCreateOptions]): void</code> | Replace the element at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+| removeAtCell() | <code>(...args: number, number, [ElementRemovalOptions]): void</code> | Remove the element at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+
+<div class="smt-member-anchors">
+
+###### createAtCell() <!-- {docsify-ignore} -->
+
+###### replaceAtCell() <!-- {docsify-ignore} -->
+
+###### removeAtCell() <!-- {docsify-ignore} -->
+
+</div>
+
 Element writers available on [GridMutationWriter.elements](?id=sandkit.api.grid.elements).
-
-##### Methods
-
-###### createAtCell()
-
-```ts
-createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L168)
-
-Create an element at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]
-
-###### Returns
-
-`void`
-
-###### replaceAtCell()
-
-```ts
-replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L185)
-
-Replace the element at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]
-
-###### Returns
-
-`void`
-
-###### removeAtCell()
-
-```ts
-removeAtCell(...args: number, number, [ElementRemovalOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L201)
-
-Remove the element at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md?id=elementremovaloptions)\]
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -5671,69 +5599,23 @@ Remove the element at a cell inside a [mutate](?id=sandkit.api.grid.mutate) call
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L205" target="_blank" rel="noopener">grid.d.ts:205</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| createAtCell() | <code>(...args: number, number, [TerrainRef, TerrainMutationOptions]): void</code> | Create terrain at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+| replaceAtCell() | <code>(...args: number, number, [TerrainRef, TerrainMutationOptions]): void</code> | Replace terrain at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+| removeAtCell() | <code>(...args: number, number, [TerrainMutationOptions]): void</code> | Remove terrain at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+
+<div class="smt-member-anchors">
+
+###### createAtCell() <!-- {docsify-ignore} -->
+
+###### replaceAtCell() <!-- {docsify-ignore} -->
+
+###### removeAtCell() <!-- {docsify-ignore} -->
+
+</div>
+
 Terrain writers available on [GridMutationWriter.terrains](?id=sandkit.api.grid.terrains).
-
-##### Methods
-
-###### createAtCell()
-
-```ts
-createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:215](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L215)
-
-Create terrain at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]
-
-###### Returns
-
-`void`
-
-###### replaceAtCell()
-
-```ts
-replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:232](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L232)
-
-Replace terrain at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]
-
-###### Returns
-
-`void`
-
-###### removeAtCell()
-
-```ts
-removeAtCell(...args: number, number, [TerrainMutationOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:248](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L248)
-
-Remove terrain at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -5745,8 +5627,8 @@ Remove terrain at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback
 
 | Property | Type | Description |
 | --- | --- | --- |
-| widthCells | number | Grid width in cells. |
-| heightCells | number | Grid height in cells. |
+| widthCells | <code>number</code> | Grid width in cells. |
+| heightCells | <code>number</code> | Grid height in cells. |
 
 <div class="smt-member-anchors">
 
@@ -5768,13 +5650,13 @@ World grid width and height in cells.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| fromGun? | boolean | Treat the dig as gun fire for terrain resistance checks. |
-| fromRocketExplosion? | boolean | Treat the dig as rocket or dynamite explosion damage. |
-| fromDrill? | boolean | Treat the dig as drill damage. |
-| useLiteralOutVelocity? | boolean | Use outVelocity literally instead of deriving ejection speed. |
-| destroyNonDestructible? | boolean | Allow removing terrain marked non-destructible. |
-| forceRemoveAll? | boolean | Force-remove all matched cells regardless of normal rules. |
-| drillTierDamage? | number | Extra drill-tier damage when [fromDrill](?id=sandkit.api.grid.fromdrill) is true. Clamped to 0–1000. |
+| fromGun? | <code>boolean</code> | Treat the dig as gun fire for terrain resistance checks. |
+| fromRocketExplosion? | <code>boolean</code> | Treat the dig as rocket or dynamite explosion damage. |
+| fromDrill? | <code>boolean</code> | Treat the dig as drill damage. |
+| useLiteralOutVelocity? | <code>boolean</code> | Use outVelocity literally instead of deriving ejection speed. |
+| destroyNonDestructible? | <code>boolean</code> | Allow removing terrain marked non-destructible. |
+| forceRemoveAll? | <code>boolean</code> | Force-remove all matched cells regardless of normal rules. |
+| drillTierDamage? | <code>number</code> | Extra drill-tier damage when [fromDrill](?id=sandkit.api.grid.fromdrill) is true. Clamped to 0–1000. |
 
 <div class="smt-member-anchors">
 
@@ -5836,7 +5718,7 @@ mutate(callback: (writer: GridMutationWriter) => void): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | (`writer`: [`GridMutationWriter`](?id=sandkit.api.grid.gridmutationwriter)) => `void` | Receives a writer for element and terrain cell mutations. |
+| callback | <code>(`writer`: [`GridMutationWriter`](?id=sandkit.api.grid.gridmutationwriter)) =&gt; `void`</code> | (`writer`: [`GridMutationWriter`](?id=sandkit.api.grid.gridmutationwriter)) => `void` Receives a writer for element and terrain cell mutations. |
 
 <div class="smt-member-anchors">
 
@@ -5890,7 +5772,7 @@ revealFogAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -5918,7 +5800,7 @@ redrawAroundCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -5946,10 +5828,10 @@ forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: numbe
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| centerCellX | `number` | Circle center cell column. |
-| centerCellY | `number` | Circle center cell row. |
-| radiusCells | `number` | Circle radius in cells. |
-| callback | (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void` | Invoked for each cell with `(cellX, cellY)`. |
+| centerCellX | `number` | `number` Circle center cell column. |
+| centerCellY | `number` | `number` Circle center cell row. |
+| radiusCells | `number` | `number` Circle radius in cells. |
+| callback | <code>(...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`</code> | (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void` Invoked for each cell with `(cellX, cellY)`. |
 
 <div class="smt-member-anchors">
 
@@ -5983,7 +5865,7 @@ forEachCellInRectangle(...args: number, number, number, number, (...args: [CellC
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |  |
+| args | <code>...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`\]</code> | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |
 
 <div class="smt-member-anchors">
 
@@ -6011,7 +5893,7 @@ forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |  |
+| args | <code>...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`\]</code> | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |
 
 <div class="smt-member-anchors">
 
@@ -6046,7 +5928,7 @@ getCellIdAtCell(...args: CellCoordinates): CellId
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -6076,7 +5958,7 @@ isCellEmptyAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -6104,7 +5986,7 @@ isTerrainAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -6132,7 +6014,7 @@ reportActivityAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -6160,7 +6042,7 @@ excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=sandkit.api.grid.excavateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=sandkit.api.grid.excavateoptions)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=sandkit.api.grid.excavateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -6209,7 +6091,7 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cancelled | boolean | True after [cancel](?id=sandkit.api.hooks.cancel) was called on this context. |
+| cancelled | <code>boolean</code> | True after [cancel](?id=sandkit.api.hooks.cancel) was called on this context. |
 
 <div class="smt-member-anchors">
 
@@ -6217,23 +6099,17 @@ Main thread only.
 
 </div>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| cancel() | <code>(): void</code> | When called, the intercepted action is skipped. |
+
+<div class="smt-member-anchors">
+
+###### cancel() <!-- {docsify-ignore} -->
+
+</div>
+
 Context passed to intercept hook callbacks.
-
-##### Methods
-
-###### cancel()
-
-```ts
-cancel(): void
-```
-
-Defined in: [sandkit/api/hooks.d.ts:397](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L397)
-
-When called, the intercepted action is skipped.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -6245,7 +6121,7 @@ When called, the intercepted action is skipped.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| priority? | number | Run this hook before others with lower priority. |
+| priority? | <code>number</code> | Run this hook before others with lower priority. |
 
 <div class="smt-member-anchors">
 
@@ -6269,36 +6145,36 @@ Options shared by intercept and modify hooks.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L495" target="_blank" rel="noopener">hooks.d.ts:495</a></p>
 
-| Property | Type | Description |
+| Hook | Args | Notes |
 | --- | --- | --- |
-| item:use | use: object |  |
-| teleport:effect:create | effect:create: Record<string, unknown> |  |
-| ~~teleport:effect~~ | effect: Record<string, unknown> |  |
-| action:start | start: object & Record<string, unknown> |  |
-| ~~action:intercept~~ | intercept: object & Record<string, unknown> |  |
-| input:keyDown | keyDown: object |  |
-| ~~input:keydown~~ | keydown: object |  |
-| input:keyUp | keyUp: object |  |
-| ~~input:keyup~~ | keyup: object |  |
-| placePoints:suppress | suppress: object & Record<string, unknown> |  |
-| ~~placePoints:isSuppressed~~ | isSuppressed: object & Record<string, unknown> |  |
-| placePoints:directionalArrows:suppress | directionalArrows:suppress: object & Record<string, unknown> |  |
-| ~~placePoints:directionalArrows:isSuppressed~~ | directionalArrows:isSuppressed: object & Record<string, unknown> |  |
-| entity:update | update: object |  |
-| building:place | place: object |  |
-| building:clearShape | clearShape: object |  |
-| input:scroll | scroll: object & Record<string, unknown> |  |
-| input:boostDown | boostDown: Record<string, unknown> |  |
-| ~~input:boost-down~~ | boost-down: Record<string, unknown> |  |
-| input:descendDown | descendDown: Record<string, unknown> |  |
-| ~~input:descend-down~~ | descend-down: Record<string, unknown> |  |
-| input:escape | escape: Record<string, unknown> |  |
-| interactable:suppressHover | suppressHover: object & Record<string, unknown> |  |
-| fire:element:ignite | element:ignite: object |  |
-| projectile:fire:overStructure | fire:overStructure: object |  |
-| projectile:hit | hit: object |  |
-| player:position:commit | position:commit: object |  |
-| progression:purchase | purchase: object |  |
+| `item:use` | <code>{ itemId: string; useId: string; kind: &quot;instant&quot; &#124; &quot;sustained&quot; &#124; &quot;chargeThenFire&quot;; baseline: Readonly&lt;Record&lt;string, unknown&gt;&gt;; prepared: Record&lt;string, unknown&gt; }</code> |  |
+| `teleport:effect:create` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`teleport:effect`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `action:start` | <code>{ action: object &amp; Record&lt;string, unknown&gt;; id: string }</code> |  |
+| ~~`action:intercept`~~ | <code>{ action: object &amp; Record&lt;string, unknown&gt;; id: string }</code> | Deprecated alias. |
+| `input:keyDown` | <code>{ key: string; code: string; event: Event }</code> |  |
+| ~~`input:keydown`~~ | <code>{ key: string; code: string; event: Event }</code> | Deprecated alias. |
+| `input:keyUp` | <code>{ key: string; code: string; event: Event }</code> |  |
+| ~~`input:keyup`~~ | <code>{ key: string; code: string; event: Event }</code> | Deprecated alias. |
+| `placePoints:suppress` | <code>{ type: string }</code> |  |
+| ~~`placePoints:isSuppressed`~~ | <code>{ type: string }</code> | Deprecated alias. |
+| `placePoints:directionalArrows:suppress` | <code>{ type: string }</code> |  |
+| ~~`placePoints:directionalArrows:isSuppressed`~~ | <code>{ type: string }</code> | Deprecated alias. |
+| `entity:update` | <code>{ entityTypeId: string; entity: Record&lt;string, unknown&gt;; deltaTimeSeconds: number; phase: &quot;normal&quot; &#124; &quot;capturing&quot; &#124; &quot;launching&quot;; isVisible: boolean; playerWorldX: number; playerWorldY: number; worldMinX: number; worldMinY: number; worldMaxX: number; worldMaxY: number; cellSize: number; timeSeconds: number }</code> |  |
+| `building:place` | <code>{ structureId: string; x: number; y: number; data: Record&lt;string, unknown&gt; }</code> |  |
+| `building:clearShape` | <code>{ structure: Record&lt;string, unknown&gt; }</code> |  |
+| `input:scroll` | <code>{ deltaY: number }</code> |  |
+| `input:boostDown` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`input:boost-down`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `input:descendDown` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`input:descend-down`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `input:escape` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `interactable:suppressHover` | <code>{ type: string; structure: Record&lt;string, unknown&gt; }</code> |  |
+| `fire:element:ignite` | <code>{ x: number; y: number; elementType: number }</code> |  |
+| `projectile:fire:overStructure` | <code>{ projectile: Record&lt;string, unknown&gt;; x: number; y: number }</code> |  |
+| `projectile:hit` | <code>{ projectile: Record&lt;string, unknown&gt;; travelResult: Record&lt;string, unknown&gt; }</code> |  |
+| `player:position:commit` | <code>{ previousWorldX: number; previousWorldY: number; proposedWorldX: number; proposedWorldY: number; velocityX: number; velocityY: number }</code> |  |
+| `progression:purchase` | <code>{ domain: &quot;tech&quot; &#124; &quot;upgrade&quot;; id: string; itemId: string; costs: Record&lt;string, unknown&gt; }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -6370,35 +6246,35 @@ Intercept hook argument shapes keyed by hook id.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L581" target="_blank" rel="noopener">hooks.d.ts:581</a></p>
 
-| Property | Type | Description |
+| Hook | Args | Notes |
 | --- | --- | --- |
-| excavation:prepare | prepare: object |  |
-| locator:scan:prepare | scan:prepare: object |  |
-| vacuum:prepare | prepare: object |  |
-| vacuum:element:prepare | element:prepare: object |  |
-| player:movement:prepare | movement:prepare: Record<string, unknown> |  |
-| ~~player:movement~~ | movement: Record<string, unknown> |  |
-| building:placementLimit:prepare | placementLimit:prepare: object & Record<string, unknown> |  |
-| ~~building:placementLimit~~ | placementLimit: object & Record<string, unknown> |  |
-| ~~building:placement-limit~~ | placement-limit: object & Record<string, unknown> |  |
-| fluxEmanator:processing:prepare | processing:prepare: object & Record<string, unknown> |  |
-| ~~fluxEmanator:processing~~ | processing: object & Record<string, unknown> |  |
-| ~~flux-emanator:processing~~ | processing: object & Record<string, unknown> |  |
-| render:pipes:prepare | pipes:prepare: object & Record<string, unknown> |  |
-| ~~render:pipes~~ | pipes: object & Record<string, unknown> |  |
-| structures:moved:prepare | moved:prepare: object |  |
-| structures:removed:prepare | removed:prepare: object |  |
-| weapon:reload:prepare | reload:prepare: object |  |
-| projectile:travel:prepare | travel:prepare: object |  |
-| projectile:impact:prepare | impact:prepare: object |  |
-| player:collision:prepare | collision:prepare: object |  |
-| trigger:schedule:prepare | schedule:prepare: object |  |
-| progression:cost:prepare | cost:prepare: object |  |
-| resource:collection:prepare | collection:prepare: object |  |
-| resource:delivery:prepare | delivery:prepare: object |  |
-| resource:balance:prepare | balance:prepare: object |  |
-| gold:removal:prepare | removal:prepare: object |  |
-| gold:removal:settle | removal:settle: object |  |
+| `excavation:prepare` | <code>{ sourceId: string; sourceKind: &quot;structure&quot; &#124; &quot;tool&quot; &#124; &quot;projectile&quot; &#124; &quot;drone&quot;; originCellX: number; originCellY: number; consumedVoid: boolean; profileId: string; patternDiameterCells: number; drillTierDamage: number }</code> |  |
+| `locator:scan:prepare` | <code>{ originWorldX: number; originWorldY: number; hasTarget: boolean; targetCellX: number; targetCellY: number; outerTint: [number, number, number]; innerTint: [number, number, number]; noTargetToast: string; noTargetToastKey: string; triangulationLensOverride: boolean &#124; null }</code> |  |
+| `vacuum:prepare` | <code>{ nozzleCellX: number; nozzleCellY: number; targetCellX: number; targetCellY: number; pattern: number[][] }</code> |  |
+| `vacuum:element:prepare` | <code>{ elementType: number; matterType: number; isTransportable: boolean; collectable: boolean; visibleInPicker: boolean }</code> |  |
+| `player:movement:prepare` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`player:movement`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `building:placementLimit:prepare` | <code>{ maxCount: number &#124; null }</code> |  |
+| ~~`building:placementLimit`~~ | <code>{ maxCount: number &#124; null }</code> | Deprecated alias. |
+| ~~`building:placement-limit`~~ | <code>{ maxCount: number &#124; null }</code> | Deprecated alias. |
+| `fluxEmanator:processing:prepare` | <code>{ speedMultiplier: number }</code> |  |
+| ~~`fluxEmanator:processing`~~ | <code>{ speedMultiplier: number }</code> | Deprecated alias. |
+| ~~`flux-emanator:processing`~~ | <code>{ speedMultiplier: number }</code> | Deprecated alias. |
+| `render:pipes:prepare` | <code>{ layer: string }</code> |  |
+| ~~`render:pipes`~~ | <code>{ layer: string }</code> | Deprecated alias. |
+| `structures:moved:prepare` | <code>{ moved: unknown[]; failedToPlace: unknown[] }</code> |  |
+| `structures:removed:prepare` | <code>{ removed: unknown[]; structures: unknown[]; byMove: boolean }</code> |  |
+| `weapon:reload:prepare` | <code>{ weaponId: string; reloadMs: number; maxAmmo: number }</code> |  |
+| `projectile:travel:prepare` | <code>{ projectileType: string; firstCollisionStep: number; maxCollisionSteps: number; collidesWithTerrain: boolean; collidesWithStructures: boolean }</code> |  |
+| `projectile:impact:prepare` | <code>{ projectileType: string; impactKind: string; profileId: string; power: number; centerPower: number; radiusCells: number; radius: number }</code> |  |
+| `player:collision:prepare` | <code>{ phaseThroughTerrain: boolean; phaseThroughStructures: boolean; maxStepCells: number }</code> |  |
+| `trigger:schedule:prepare` | <code>{ triggerId: string; intervalMs: number; sequentialRuns: number }</code> |  |
+| `progression:cost:prepare` | <code>{ domain: &quot;tech&quot; &#124; &quot;upgrade&quot;; id: string; itemId: string; currencyId: string; amount: number }</code> |  |
+| `resource:collection:prepare` | <code>{ resourceId: string; sourceKind: string; cellX: number; cellY: number; amount: number; feedback: &quot;silent&quot; &#124; &quot;default&quot; &#124; &quot;reduced&quot; }</code> |  |
+| `resource:delivery:prepare` | <code>{ resourceId: string; sourceKind: string; sourceId: string; sourceCellX: number; sourceCellY: number; targetCellX: number; targetCellY: number; mode: &quot;world&quot; &#124; &quot;collection&quot;; amount: number; feedback: &quot;silent&quot; &#124; &quot;default&quot; }</code> |  |
+| `resource:balance:prepare` | <code>{ resourceId: string; balance: number }</code> |  |
+| `gold:removal:prepare` | <code>{ requestedAmount: number; shortfall: number }</code> |  |
+| `gold:removal:settle` | <code>{ requestedAmount: number; physicalRemoved: number; shortfall: number }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -6480,10 +6356,6 @@ sandkit.api.hooks.InterceptHookOptions<K *extends* InterceptHookId> = HookOption
 
 Options for [intercept](?id=sandkit.api.hooks.intercept).
 
-##### Type Parameters
-
-###### K
-
 `K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.intercepthookid)
 
 </div>
@@ -6558,10 +6430,6 @@ sandkit.api.hooks.InterceptHookArgs<K *extends* InterceptHookId> = K *extends* k
 
 Intercept hook args for a given hook id.
 
-##### Type Parameters
-
-###### K
-
 `K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.intercepthookid)
 
 </div>
@@ -6581,10 +6449,6 @@ sandkit.api.hooks.ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof M
 </div>
 
 Modify hook args for a given hook id.
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`ModifyHookId`](?id=sandkit.api.hooks.modifyhookid)
 
@@ -6608,9 +6472,9 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| hookId | `K` | Registered hook identifier. |
-| callback | (`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.intercepthookargs)\<`K`\>, `context`: [`HookContext`](?id=sandkit.api.hooks.hookcontext)) => `void` | Called with hook arguments and context; may cancel the hook. |
-| options? | [`InterceptHookOptions`](?id=sandkit.api.hooks.intercepthookoptions)\<`K`\> | Optional priority and filter options. |
+| hookId | `K` | `K` Registered hook identifier. |
+| callback | <code>(`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.intercepthookargs)\&lt;`K`\&gt;, `context`: [`HookContext`](?id=sandkit.api.hooks.hookcontext)) =&gt; `void`</code> | (`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.intercepthookargs)\<`K`\>, `context`: [`HookContext`](?id=sandkit.api.hooks.hookcontext)) => `void` Called with hook arguments and context; may cancel the hook. |
+| options? | <code>[`InterceptHookOptions`](?id=sandkit.api.hooks.intercepthookoptions)\&lt;`K`\&gt;</code> | [`InterceptHookOptions`](?id=sandkit.api.hooks.intercepthookoptions)\<`K`\> Optional priority and filter options. |
 
 <div class="smt-member-anchors">
 
@@ -6623,10 +6487,6 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 </div>
 
 Registers an intercept hook. Returns an unsubscribe function.
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.intercepthookid)
 
@@ -6833,9 +6693,9 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| hookId | `K` | Registered hook identifier. |
-| callback | (`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.modifyhookargs)\<`K`\>) => `void` | Called with hook arguments; may mutate hook payload. |
-| options? | [`ModifyHookOptions`](?id=sandkit.api.hooks.modifyhookoptions) | Optional priority and filter options. |
+| hookId | `K` | `K` Registered hook identifier. |
+| callback | <code>(`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.modifyhookargs)\&lt;`K`\&gt;) =&gt; `void`</code> | (`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.modifyhookargs)\<`K`\>) => `void` Called with hook arguments; may mutate hook payload. |
+| options? | <code>[`ModifyHookOptions`](?id=sandkit.api.hooks.modifyhookoptions)</code> | [`ModifyHookOptions`](?id=sandkit.api.hooks.modifyhookoptions) Optional priority and filter options. |
 
 <div class="smt-member-anchors">
 
@@ -6848,10 +6708,6 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 </div>
 
 Registers a modifier hook. Returns an unsubscribe function.
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`ModifyHookId`](?id=sandkit.api.hooks.modifyhookid)
 
@@ -7096,9 +6952,9 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| minimumFractionDigits? | number | Minimum fraction digits. |
-| maximumFractionDigits? | number | Maximum fraction digits. |
-| useGrouping? | boolean | When true, use grouping separators. |
+| minimumFractionDigits? | <code>number</code> | Minimum fraction digits. |
+| maximumFractionDigits? | <code>number</code> | Maximum fraction digits. |
+| useGrouping? | <code>boolean</code> | When true, use grouping separators. |
 
 <div class="smt-member-anchors">
 
@@ -7158,8 +7014,8 @@ t(key: string, params?: Record<string, string | number>): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Translation key. |
-| params? | `Record`\<`string`, `string` &#124; `number`\> | Placeholder values for the key template. |
+| key | `string` | `string` Translation key. |
+| params? | `Record`\<`string`, `string` &#124; `number`\> | `Record`\<`string`, `string` &#124; `number`\> Placeholder values for the key template. |
 
 <div class="smt-member-anchors">
 
@@ -7197,8 +7053,8 @@ register(locale: Locale, translations: Record<string, string>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| locale | [`Locale`](?id=sandkit.api.i18n.locale) | Locale code (e.g. `en`). |
-| translations | `Record`\<`string`, `string`\> | Map of keys to translated strings. |
+| locale | <code>[`Locale`](?id=sandkit.api.i18n.locale)</code> | [`Locale`](?id=sandkit.api.i18n.locale) Locale code (e.g. `en`). |
+| translations | `Record`\<`string`, `string`\> | `Record`\<`string`, `string`\> Map of keys to translated strings. |
 
 <div class="smt-member-anchors">
 
@@ -7256,8 +7112,8 @@ hasTranslation(key: string, locale?: Locale): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Translation key. |
-| locale? | [`Locale`](?id=sandkit.api.i18n.locale) | Optional locale; defaults to the active locale. |
+| key | `string` | `string` Translation key. |
+| locale? | <code>[`Locale`](?id=sandkit.api.i18n.locale)</code> | [`Locale`](?id=sandkit.api.i18n.locale) Optional locale; defaults to the active locale. |
 
 <div class="smt-member-anchors">
 
@@ -7287,7 +7143,7 @@ setLocale(locale: Locale): Promise<void>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| locale | [`Locale`](?id=sandkit.api.i18n.locale) | Locale code to activate. |
+| locale | <code>[`Locale`](?id=sandkit.api.i18n.locale)</code> | [`Locale`](?id=sandkit.api.i18n.locale) Locale code to activate. |
 
 <div class="smt-member-anchors">
 
@@ -7357,8 +7213,8 @@ formatNumber(value: number, options?: I18nNumberFormatOptions): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| value | `number` | Number to format. |
-| options? | [`I18nNumberFormatOptions`](?id=sandkit.api.i18n.i18nnumberformatoptions) | Intl-style number format options. |
+| value | `number` | `number` Number to format. |
+| options? | <code>[`I18nNumberFormatOptions`](?id=sandkit.api.i18n.i18nnumberformatoptions)</code> | [`I18nNumberFormatOptions`](?id=sandkit.api.i18n.i18nnumberformatoptions) Intl-style number format options. |
 
 <div class="smt-member-anchors">
 
@@ -7396,7 +7252,7 @@ joinKey(...parts: string[]): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| parts | ...`string`[] | Key segments joined with `.`. |
+| parts | <code>...`string`[]</code> | ...`string`[] Key segments joined with `.`. |
 
 <div class="smt-member-anchors">
 
@@ -7424,7 +7280,7 @@ key(...parts: string[]): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| parts | ...`string`[] |  |
+| parts | <code>...`string`[]</code> | ...`string`[] |
 
 <div class="smt-member-anchors">
 
@@ -7459,7 +7315,7 @@ getName(definition: object): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | Object with `nameKey` or `name`. |  |
+| definition | <code>Object with `nameKey` or `name`.</code> | Object with `nameKey` or `name`. |
 
 <div class="smt-member-anchors">
 
@@ -7496,7 +7352,7 @@ getDescription(definition: object): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | Object with `descriptionKey` or `description`. |  |
+| definition | <code>Object with `descriptionKey` or `description`.</code> | Object with `descriptionKey` or `description`. |
 
 <div class="smt-member-anchors">
 
@@ -7524,8 +7380,8 @@ createTranslatable(key: string, fallback: string): object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Translation key. |
-| fallback | `string` | Text used when no translation is registered. |
+| key | `string` | `string` Translation key. |
+| fallback | `string` | `string` Text used when no translation is registered. |
 
 <div class="smt-member-anchors">
 
@@ -7557,8 +7413,8 @@ translatable(key: string, fallback: string): object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` |  |
-| fallback | `string` |  |
+| key | `string` | `string` |
+| fallback | `string` | `string` |
 
 <div class="smt-member-anchors">
 
@@ -7597,8 +7453,8 @@ setGlobal(key: string, value: string | (() => string)): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Global helper key. |
-| value | `string` &#124; (() => `string`) | Static string or function that returns the current value. |
+| key | `string` | `string` Global helper key. |
+| value | `string` &#124; (() => `string`) | `string` &#124; (() => `string`) Static string or function that returns the current value. |
 
 <div class="smt-member-anchors">
 
@@ -7628,7 +7484,7 @@ getGlobal(key: string): string | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Global helper key. |
+| key | `string` | `string` Global helper key. |
 
 <div class="smt-member-anchors">
 
@@ -7638,7 +7494,7 @@ getGlobal(key: string): string | undefined
 
 Returns a global translation helper value.
 
-`string` &#124; `undefined`
+`string` \| `undefined`
 
 </div>
 
@@ -7658,7 +7514,7 @@ removeGlobal(key: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Global helper key. |
+| key | `string` | `string` Global helper key. |
 
 <div class="smt-member-anchors">
 
@@ -7686,7 +7542,7 @@ clearGlobal(key: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` |  |
+| key | `string` | `string` |
 
 <div class="smt-member-anchors">
 
@@ -7741,7 +7597,7 @@ formatKeyForDisplay(keyCode: string): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| keyCode | `string` | Keyboard key code or binding name. |
+| keyCode | `string` | `string` Keyboard key code or binding name. |
 
 <div class="smt-member-anchors">
 
@@ -7770,8 +7626,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| down? | () => void | Called when the binding is pressed. |
-| up? | () => void | Called when the binding is released. |
+| down? | <code>() =&gt; void</code> | Called when the binding is pressed. |
+| up? | <code>() =&gt; void</code> | Called when the binding is released. |
 
 <div class="smt-member-anchors">
 
@@ -7793,10 +7649,10 @@ Handlers invoked when a binding is pressed or released.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| displayName | string | Display name shown in settings. |
-| displayNameKey? | string | i18n key for the display name (overrides displayName when set). |
-| category | string | Settings category for grouping. |
-| handlers | InputBindingHandlers | Press and release handlers. |
+| displayName | <code>string</code> | Display name shown in settings. |
+| displayNameKey? | <code>string</code> | i18n key for the display name (overrides displayName when set). |
+| category | <code>string</code> | Settings category for grouping. |
+| handlers | <code>InputBindingHandlers</code> | Press and release handlers. |
 
 <div class="smt-member-anchors">
 
@@ -7876,9 +7732,9 @@ registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputB
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=sandkit.api.input.bindingid) | Unique id for the binding (also used in settings). |
-| defaultKeys | [`KeyCode`](?id=sandkit.api.input.keycode)[] | Default key codes (for example `"Control+KeyC"`). |
-| definition | [`InputBindingDefinition`](?id=sandkit.api.input.inputbindingdefinition) | Display metadata and press/release handlers. |
+| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | [`BindingId`](?id=sandkit.api.input.bindingid) Unique id for the binding (also used in settings). |
+| defaultKeys | <code>[`KeyCode`](?id=sandkit.api.input.keycode)[]</code> | [`KeyCode`](?id=sandkit.api.input.keycode)[] Default key codes (for example `"Control+KeyC"`). |
+| definition | <code>[`InputBindingDefinition`](?id=sandkit.api.input.inputbindingdefinition)</code> | [`InputBindingDefinition`](?id=sandkit.api.input.inputbindingdefinition) Display metadata and press/release handlers. |
 
 <div class="smt-member-anchors">
 
@@ -7948,7 +7804,7 @@ getBoundKeys(bindingId: BindingId): KeyCode[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=sandkit.api.input.bindingid) | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | [`BindingId`](?id=sandkit.api.input.bindingid) Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -7978,8 +7834,8 @@ getDisplayKey(bindingId: BindingId, defaultLabel?: string): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=sandkit.api.input.bindingid) | Registered binding id. |
-| defaultLabel? | `string` | Fallback label when no key is bound. |
+| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | [`BindingId`](?id=sandkit.api.input.bindingid) Registered binding id. |
+| defaultLabel? | `string` | `string` Fallback label when no key is bound. |
 
 <div class="smt-member-anchors">
 
@@ -8011,7 +7867,7 @@ triggerBinding(bindingId: BindingId): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=sandkit.api.input.bindingid) | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | [`BindingId`](?id=sandkit.api.input.bindingid) Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -8039,7 +7895,7 @@ pressBinding(bindingId: BindingId): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=sandkit.api.input.bindingid) | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | [`BindingId`](?id=sandkit.api.input.bindingid) Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -8067,7 +7923,7 @@ releaseBinding(bindingId: BindingId): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=sandkit.api.input.bindingid) | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | [`BindingId`](?id=sandkit.api.input.bindingid) Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -8154,8 +8010,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| handleAction? | (state: State, action: Action) => unknown | Handles item use actions. |
-| afterRender? | (state: State) => void | Called after the item is rendered each frame. |
+| handleAction? | <code>(state: State, action: Action) =&gt; unknown</code> | Handles item use actions. |
+| afterRender? | <code>(state: State) =&gt; void</code> | Called after the item is rendered each frame. |
 
 <div class="smt-member-anchors">
 
@@ -8167,15 +8023,7 @@ Main thread only.
 
 Definition for a mod-registered inventory item.
 
-##### Type Parameters
-
-###### State
-
-`State` = `unknown`
-
-###### Action
-
-`Action` = `unknown`
+`State` = `unknown` `Action` = `unknown`
 
 ##### Indexable
 
@@ -8261,7 +8109,7 @@ register(definition: ItemDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`ItemDefinition`](?id=sandkit.api.items.itemdefinition) | Item id, handlers, and display metadata. |
+| definition | <code>[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)</code> | [`ItemDefinition`](?id=sandkit.api.items.itemdefinition) Item id, handlers, and display metadata. |
 
 <div class="smt-member-anchors">
 
@@ -8289,8 +8137,8 @@ updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | [`ItemId`](?id=sandkit.api.items.itemid) | Registered item id. |
-| partial | `Partial`\<[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\> | Fields to merge into the definition. |
+| itemId | <code>[`ItemId`](?id=sandkit.api.items.itemid)</code> | [`ItemId`](?id=sandkit.api.items.itemid) Registered item id. |
+| partial | `Partial`\<[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\> | `Partial`\<[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\> Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -8328,7 +8176,7 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | [`ItemId`](?id=sandkit.api.items.itemid) | Registered item id. |
+| itemId | <code>[`ItemId`](?id=sandkit.api.items.itemid)</code> | [`ItemId`](?id=sandkit.api.items.itemid) Registered item id. |
 
 <div class="smt-member-anchors">
 
@@ -8338,7 +8186,7 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for an id, or undefined.
 
-[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\<`unknown`, `unknown`\> &#124; `undefined`
+[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
 
 </div>
 
@@ -8358,7 +8206,7 @@ createFromId(itemId: ItemId): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | [`ItemId`](?id=sandkit.api.items.itemid) | Registered item id. |
+| itemId | <code>[`ItemId`](?id=sandkit.api.items.itemid)</code> | [`ItemId`](?id=sandkit.api.items.itemid) Registered item id. |
 
 <div class="smt-member-anchors">
 
@@ -8386,7 +8234,7 @@ getActive(): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for the active hotbar slot.
 
-[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\<`unknown`, `unknown`\> &#124; `undefined`
+[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
 
 </div>
 
@@ -8406,8 +8254,8 @@ isActiveById(itemId: ItemId, itemType?: ItemType): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | [`ItemId`](?id=sandkit.api.items.itemid) | Item id or numeric type to compare. |
-| itemType? | [`ItemType`](?id=sandkit.api.items.itemtype) | Optional item type discriminator. |
+| itemId | <code>[`ItemId`](?id=sandkit.api.items.itemid)</code> | [`ItemId`](?id=sandkit.api.items.itemid) Item id or numeric type to compare. |
+| itemType? | <code>[`ItemType`](?id=sandkit.api.items.itemtype)</code> | [`ItemType`](?id=sandkit.api.items.itemtype) Optional item type discriminator. |
 
 <div class="smt-member-anchors">
 
@@ -8438,8 +8286,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| lightId | number &#124; null | Assigned temporary light id, or null when creation failed. |
-| ~~index~~ | number &#124; null |  |
+| lightId | <code>number &#124; null</code> | Assigned temporary light id, or null when creation failed. |
+| ~~index~~ | <code>number &#124; null</code> | Deprecated alias. |
 
 <div class="smt-member-anchors">
 
@@ -8461,9 +8309,9 @@ Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| brightness? | number | Light brightness multiplier. |
-| size? | number | Light radius in pixels. |
-| color? | [number, number, number, number] | RGBA color components. |
+| brightness? | <code>number</code> | Light brightness multiplier. |
+| size? | <code>number</code> | Light radius in pixels. |
+| color? | <code>[number, number, number, number]</code> | RGBA color components. |
 
 <div class="smt-member-anchors">
 
@@ -8547,9 +8395,9 @@ createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions):
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| options? | [`PersistentLightOptions`](api/sandkit.api.lights.md?id=persistentlightoptions) | Brightness, size, color, and persistence options. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| options? | <code>[`PersistentLightOptions`](api/sandkit.api.lights.md?id=persistentlightoptions)</code> | [`PersistentLightOptions`](api/sandkit.api.lights.md?id=persistentlightoptions) Brightness, size, color, and persistence options. |
 
 <div class="smt-member-anchors">
 
@@ -8591,8 +8439,8 @@ removeAtWorld(worldX: number, worldY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -8622,9 +8470,9 @@ fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| durationMs? | `number` | Fade duration in milliseconds. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| durationMs? | `number` | `number` Fade duration in milliseconds. |
 
 <div class="smt-member-anchors">
 
@@ -8682,9 +8530,9 @@ createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| options? | [`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions) | Brightness, duration, color, and dedup options. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| options? | <code>[`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions)</code> | [`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions) Brightness, duration, color, and dedup options. |
 
 <div class="smt-member-anchors">
 
@@ -8747,7 +8595,7 @@ removeById(lightId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| lightId | `number` | Light id returned from [createAtWorld](?id=sandkit.api.lights.temporary.createatworld). |
+| lightId | `number` | `number` Light id returned from [createAtWorld](?id=sandkit.api.lights.temporary.createatworld). |
 
 <div class="smt-member-anchors">
 
@@ -8781,9 +8629,9 @@ if (light.lightId !== null) {
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cellX | number |  |
-| cellY | number |  |
-| name | string |  |
+| cellX | <code>number</code> |  |
+| cellY | <code>number</code> |  |
+| name | <code>string</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -8813,8 +8661,8 @@ Artifact location entry from [getArtifactLocations](?id=sandkit.api.maps.getarti
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Map identifier passed to [start](?id=sandkit.api.maps.start). |
-| name? | string | Display name or translation key. |
+| id | <code>string</code> | Map identifier passed to [start](?id=sandkit.api.maps.start). |
+| name? | <code>string</code> | Display name or translation key. |
 
 <div class="smt-member-anchors">
 
@@ -8872,7 +8720,7 @@ start(mapId: string): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| mapId | `string` | Custom map identifier. |
+| mapId | `string` | `string` Custom map identifier. |
 
 <div class="smt-member-anchors">
 
@@ -8956,7 +8804,7 @@ getProviders(kind: string): readonly AssetProviderV1[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| kind | `string` | Asset kind identifier (e.g. texture pack category). |
+| kind | `string` | `string` Asset kind identifier (e.g. texture pack category). |
 
 <div class="smt-member-anchors">
 
@@ -9012,7 +8860,7 @@ createCircle(size: number): number[][]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| size | `number` | Pattern width and height in cells. |
+| size | `number` | `number` Pattern width and height in cells. |
 
 <div class="smt-member-anchors">
 
@@ -9042,7 +8890,7 @@ excavateAtCell(...args: [number, number, number[][], Vector2, number, ExcavateOp
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`[][], [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](api/sandkit.api.grid.md?id=excavateoptions)\] |  |
+| args | <code>...\[`number`, `number`, `number`[][], [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](api/sandkit.api.grid.md?id=excavateoptions)\]</code> | ...\[`number`, `number`, `number`[][], [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](api/sandkit.api.grid.md?id=excavateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -9098,9 +8946,9 @@ Available as `sandkit.api.pickups`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| brightness? | number | Light brightness multiplier. Default 1. |
-| size? | number | Light radius in world pixels. Default 100. |
-| color? | [number, number, number] &#124; [number, number, number, number] | RGB or RGBA color components in 0–1 range. |
+| brightness? | <code>number</code> | Light brightness multiplier. Default 1. |
+| size? | <code>number</code> | Light radius in world pixels. Default 100. |
+| color? | <code>[number, number, number] &#124; [number, number, number, number]</code> | RGB or RGBA color components in 0–1 range. |
 
 <div class="smt-member-anchors">
 
@@ -9124,11 +8972,11 @@ Optional point light attached when spawning a pickup.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | number |  |
-| x | number |  |
-| y | number |  |
-| type | PickupType |  |
-| data | Record<string, unknown> |  |
+| id | <code>number</code> |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
+| type | <code>PickupType</code> |  |
+| data | <code>Record&lt;string, unknown&gt;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -9211,11 +9059,11 @@ spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<str
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| type | [`PickupType`](api/sandkit.enums.PickupType.md) | Pickup type discriminator. |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
-| data? | `Record`\<`string`, `unknown`\> | Optional per-item data bag copied onto the instance. |
-| light? | [`WorldItemLight`](?id=sandkit.api.pickups.worlditemlight) | Optional point light spawned with the pickup. |
+| type | <code>[`PickupType`](api/sandkit.enums.PickupType.md)</code> | [`PickupType`](api/sandkit.enums.PickupType.md) Pickup type discriminator. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
+| data? | `Record`\<`string`, `unknown`\> | `Record`\<`string`, `unknown`\> Optional per-item data bag copied onto the instance. |
+| light? | <code>[`WorldItemLight`](?id=sandkit.api.pickups.worlditemlight)</code> | [`WorldItemLight`](?id=sandkit.api.pickups.worlditemlight) Optional point light spawned with the pickup. |
 
 <div class="smt-member-anchors">
 
@@ -9253,7 +9101,7 @@ remove(pickup: WorldItem): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | [`WorldItem`](?id=sandkit.api.pickups.worlditem) | Pickup returned from spawn or lookup helpers. |
+| pickup | <code>[`WorldItem`](?id=sandkit.api.pickups.worlditem)</code> | [`WorldItem`](?id=sandkit.api.pickups.worlditem) Pickup returned from spawn or lookup helpers. |
 
 <div class="smt-member-anchors">
 
@@ -9281,7 +9129,7 @@ destroy(pickup: WorldItem): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | [`WorldItem`](?id=sandkit.api.pickups.worlditem) |  |
+| pickup | <code>[`WorldItem`](?id=sandkit.api.pickups.worlditem)</code> | [`WorldItem`](?id=sandkit.api.pickups.worlditem) |
 
 <div class="smt-member-anchors">
 
@@ -9316,7 +9164,7 @@ pickUp(pickup: WorldItem): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | [`WorldItem`](?id=sandkit.api.pickups.worlditem) | Pickup to collect. |
+| pickup | <code>[`WorldItem`](?id=sandkit.api.pickups.worlditem)</code> | [`WorldItem`](?id=sandkit.api.pickups.worlditem) Pickup to collect. |
 
 <div class="smt-member-anchors">
 
@@ -9366,7 +9214,7 @@ getById(pickupId: number): WorldItem | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickupId | `number` | Runtime pickup id. |
+| pickupId | `number` | `number` Runtime pickup id. |
 
 <div class="smt-member-anchors">
 
@@ -9376,7 +9224,7 @@ getById(pickupId: number): WorldItem | undefined
 
 Return a pickup by numeric id.
 
-[`WorldItem`](?id=sandkit.api.pickups.worlditem) &#124; `undefined`
+[`WorldItem`](?id=sandkit.api.pickups.worlditem) \| `undefined`
 
 </div>
 
@@ -9398,8 +9246,8 @@ Available as `sandkit.api.pipes`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cellX | number |  |
-| cellY | number |  |
+| cellX | <code>number</code> |  |
+| cellY | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -9437,7 +9285,7 @@ isAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -9465,7 +9313,7 @@ isEnabledAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -9493,7 +9341,7 @@ getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -9523,7 +9371,7 @@ setEnabledAtCell(...args: [number, number, boolean]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `boolean`\] |  |
+| args | <code>...\[`number`, `number`, `boolean`\]</code> | ...\[`number`, `number`, `boolean`\] |
 
 <div class="smt-member-anchors">
 
@@ -9557,8 +9405,8 @@ setPositionAtWorld(worldX: number, worldY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -9588,8 +9436,8 @@ setWorldPosition(worldX: number, worldY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` |  |
-| worldY | `number` |  |
+| worldX | `number` | `number` |
+| worldY | `number` | `number` |
 
 <div class="smt-member-anchors">
 
@@ -9626,8 +9474,8 @@ setVelocity(velocityX: number, velocityY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| velocityX | `number` | Horizontal velocity in pixels per second. |
-| velocityY | `number` | Vertical velocity in pixels per second. |
+| velocityX | `number` | `number` Horizontal velocity in pixels per second. |
+| velocityY | `number` | `number` Vertical velocity in pixels per second. |
 
 <div class="smt-member-anchors">
 
@@ -9657,7 +9505,7 @@ setMovementSpeedMultiplier(multiplier: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| multiplier | `number` | Speed scale factor (`1` is default walk). `0` freezes movement. Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly `1`. |
+| multiplier | `number` | `number` Speed scale factor (`1` is default walk). `0` freezes movement. Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly `1`. |
 
 <div class="smt-member-anchors">
 
@@ -9685,7 +9533,7 @@ setMovementMode(mode: "normal" | "hover"): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| mode | `"normal"` &#124; `"hover"` | `"normal"` for default physics, or `"hover"` for hover flight. |
+| mode | `"normal"` &#124; `"hover"` | `"normal"` &#124; `"hover"` `"normal"` for default physics, or `"hover"` for hover flight. |
 
 <div class="smt-member-anchors">
 
@@ -9755,8 +9603,8 @@ isPositionClearAtWorld(worldX: number, worldY: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels to test. |
-| worldY | `number` | World y position in pixels to test. |
+| worldX | `number` | `number` World x position in pixels to test. |
+| worldY | `number` | `number` World y position in pixels to test. |
 
 <div class="smt-member-anchors">
 
@@ -9788,8 +9636,8 @@ isWorldPositionClear(worldX: number, worldY: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` |  |
-| worldY | `number` |  |
+| worldX | `number` | `number` |
+| worldY | `number` | `number` |
 
 <div class="smt-member-anchors">
 
@@ -9834,7 +9682,7 @@ unlockById(structureId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | Registered structure id string. |
+| structureId | `string` | `string` Registered structure id string. |
 
 <div class="smt-member-anchors">
 
@@ -9862,7 +9710,7 @@ unlockByType(structureId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` |  |
+| structureId | `string` | `string` |
 
 <div class="smt-member-anchors">
 
@@ -9897,7 +9745,7 @@ removeById(structureId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | Registered structure id string. |
+| structureId | `string` | `string` Registered structure id string. |
 
 <div class="smt-member-anchors">
 
@@ -9933,7 +9781,7 @@ addById(itemId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` | Registered item id string. |
+| itemId | `string` | `string` Registered item id string. |
 
 <div class="smt-member-anchors">
 
@@ -9961,7 +9809,7 @@ addFromId(itemId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` |  |
+| itemId | `string` | `string` |
 
 <div class="smt-member-anchors">
 
@@ -9994,8 +9842,8 @@ Use [addById](api/sandkit.api.player.inventory.md?id=addbyid) instead.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elementType | ElementType | Output element type (1–255). |
-| chance | number | Output probability from 0 to 1. |
+| elementType | <code>ElementType</code> | Output element type (1–255). |
+| chance | <code>number</code> | Output probability from 0 to 1. |
 
 <div class="smt-member-anchors">
 
@@ -10017,9 +9865,9 @@ Weighted element output entry shared by machine recipes.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| input | ElementType | Input element type placed on the grower. |
-| output | ElementType | Output element type produced by the grower. |
-| chance? | number | Success chance from 0 to 1. Default 1. |
+| input | <code>ElementType</code> | Input element type placed on the grower. |
+| output | <code>ElementType</code> | Output element type produced by the grower. |
+| chance? | <code>number</code> | Success chance from 0 to 1. Default 1. |
 
 <div class="smt-member-anchors">
 
@@ -10043,9 +9891,9 @@ Planter box grower recipe definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| input | ElementType | Input element type dropped on the shaker. |
-| outputsAbove | WeightedRecipeOutput[] | Weighted outputs ejected upward. |
-| outputsBelow | WeightedRecipeOutput[] | Weighted outputs ejected downward. |
+| input | <code>ElementType</code> | Input element type dropped on the shaker. |
+| outputsAbove | <code>WeightedRecipeOutput[]</code> | Weighted outputs ejected upward. |
+| outputsBelow | <code>WeightedRecipeOutput[]</code> | Weighted outputs ejected downward. |
 
 <div class="smt-member-anchors">
 
@@ -10069,9 +9917,9 @@ Shaker recipe definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| input | ElementType | Input element type processed by the press. |
-| minimumDownwardVelocity | number | Minimum downward velocity required to trigger the press. |
-| outputs | WeightedRecipeOutput[] | Weighted outputs produced by the press. |
+| input | <code>ElementType</code> | Input element type processed by the press. |
+| minimumDownwardVelocity | <code>number</code> | Minimum downward velocity required to trigger the press. |
+| outputs | <code>WeightedRecipeOutput[]</code> | Weighted outputs produced by the press. |
 
 <div class="smt-member-anchors">
 
@@ -10105,7 +9953,7 @@ registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`PlanterBoxRecipeDefinitionV1`](?id=sandkit.api.processing.planterboxrecipedefinitionv1) | Grower input/output recipe. |
+| definition | <code>[`PlanterBoxRecipeDefinitionV1`](?id=sandkit.api.processing.planterboxrecipedefinitionv1)</code> | [`PlanterBoxRecipeDefinitionV1`](?id=sandkit.api.processing.planterboxrecipedefinitionv1) Grower input/output recipe. |
 
 <div class="smt-member-anchors">
 
@@ -10133,7 +9981,7 @@ registerShaker(definition: ShakerRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`ShakerRecipeDefinitionV1`](?id=sandkit.api.processing.shakerrecipedefinitionv1) | Shaker input and weighted outputs. |
+| definition | <code>[`ShakerRecipeDefinitionV1`](?id=sandkit.api.processing.shakerrecipedefinitionv1)</code> | [`ShakerRecipeDefinitionV1`](?id=sandkit.api.processing.shakerrecipedefinitionv1) Shaker input and weighted outputs. |
 
 <div class="smt-member-anchors">
 
@@ -10161,7 +10009,7 @@ registerKineticPress(definition: KineticPressRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`KineticPressRecipeDefinitionV1`](?id=sandkit.api.processing.kineticpressrecipedefinitionv1) | Press input, velocity threshold, and outputs. |
+| definition | <code>[`KineticPressRecipeDefinitionV1`](?id=sandkit.api.processing.kineticpressrecipedefinitionv1)</code> | [`KineticPressRecipeDefinitionV1`](?id=sandkit.api.processing.kineticpressrecipedefinitionv1) Press input, velocity threshold, and outputs. |
 
 <div class="smt-member-anchors">
 
@@ -10187,7 +10035,7 @@ Register a kinetic press recipe.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Progression step or quest identifier. |
+| id | <code>string</code> | Progression step or quest identifier. |
 
 <div class="smt-member-anchors">
 
@@ -10223,7 +10071,7 @@ complete(request: ProgressionCompletionRequestV1): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| request | [`ProgressionCompletionRequestV1`](?id=sandkit.api.progression.progressioncompletionrequestv1) | Progression id and optional metadata for the step. |
+| request | <code>[`ProgressionCompletionRequestV1`](?id=sandkit.api.progression.progressioncompletionrequestv1)</code> | [`ProgressionCompletionRequestV1`](?id=sandkit.api.progression.progressioncompletionrequestv1) Progression id and optional metadata for the step. |
 
 <div class="smt-member-anchors">
 
@@ -10258,10 +10106,10 @@ const completed = api.progression.complete({
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string |  |
-| sprite | object |  |
-| getOptions | () => Record<string, unknown> | Returns spawn-time physics and visual options. |
-| getModData? | (state: unknown, projectile: Projectile) => Record<string, unknown> | Optional per-projectile mutable data factory. |
+| id | <code>string</code> |  |
+| sprite | <code>{ id: string; tint: number }</code> |  |
+| getOptions | <code>() =&gt; Record&lt;string, unknown&gt;</code> | Returns spawn-time physics and visual options. |
+| getModData? | <code>(state: unknown, projectile: Projectile) =&gt; Record&lt;string, unknown&gt;</code> | Optional per-projectile mutable data factory. |
 
 <div class="smt-member-anchors">
 
@@ -10293,8 +10141,8 @@ Mod-registered projectile definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| opts | Record<string, unknown> |  |
-| type | unknown |  |
+| opts | <code>Record&lt;string, unknown&gt;</code> |  |
+| type | <code>unknown</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -10316,9 +10164,9 @@ Blueprint used to spawn a projectile.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | number |  |
-| x | number |  |
-| y | number |  |
+| id | <code>number</code> |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -10358,7 +10206,7 @@ register(definition: ProjectileDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition) | Projectile id, sprite, and runtime options factory. |
+| definition | <code>[`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition)</code> | [`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition) Projectile id, sprite, and runtime options factory. |
 
 <div class="smt-member-anchors">
 
@@ -10386,7 +10234,7 @@ getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectileId | `string` | Registered projectile id. |
+| projectileId | `string` | `string` Registered projectile id. |
 
 <div class="smt-member-anchors">
 
@@ -10396,7 +10244,7 @@ getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 
 Return a projectile definition by string id.
 
-[`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition) &#124; `undefined`
+[`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition) \| `undefined`
 
 </div>
 
@@ -10416,7 +10264,7 @@ createBlueprintFromId(projectileId: string): ProjectileBlueprint
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectileId | `string` | Registered projectile id. |
+| projectileId | `string` | `string` Registered projectile id. |
 
 <div class="smt-member-anchors">
 
@@ -10466,7 +10314,7 @@ getById(projectileId: number): Projectile | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectileId | `number` | Runtime projectile id. |
+| projectileId | `number` | `number` Runtime projectile id. |
 
 <div class="smt-member-anchors">
 
@@ -10476,7 +10324,7 @@ getById(projectileId: number): Projectile | undefined
 
 Return a projectile by numeric id.
 
-[`Projectile`](?id=sandkit.api.projectiles.projectile) &#124; `undefined`
+[`Projectile`](?id=sandkit.api.projectiles.projectile) \| `undefined`
 
 </div>
 
@@ -10496,7 +10344,7 @@ remove(projectile: Projectile): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectile | [`Projectile`](?id=sandkit.api.projectiles.projectile) | Projectile instance to remove. |
+| projectile | <code>[`Projectile`](?id=sandkit.api.projectiles.projectile)</code> | [`Projectile`](?id=sandkit.api.projectiles.projectile) Projectile instance to remove. |
 
 <div class="smt-member-anchors">
 
@@ -10524,10 +10372,10 @@ spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: Projectil
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | Spawn x position in world pixels. |
-| worldY | `number` | Spawn y position in world pixels. |
-| angle | `number` | Launch angle in radians. |
-| blueprint | [`ProjectileBlueprint`](?id=sandkit.api.projectiles.projectileblueprint) | Blueprint from [createBlueprintFromId](?id=sandkit.api.projectiles.createblueprintfromid). |
+| worldX | `number` | `number` Spawn x position in world pixels. |
+| worldY | `number` | `number` Spawn y position in world pixels. |
+| angle | `number` | `number` Launch angle in radians. |
+| blueprint | <code>[`ProjectileBlueprint`](?id=sandkit.api.projectiles.projectileblueprint)</code> | [`ProjectileBlueprint`](?id=sandkit.api.projectiles.projectileblueprint) Blueprint from [createBlueprintFromId](?id=sandkit.api.projectiles.createblueprintfromid). |
 
 <div class="smt-member-anchors">
 
@@ -10569,8 +10417,8 @@ int(min: number, max: number): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| min | `number` | Minimum value (inclusive). |
-| max | `number` | Maximum value (inclusive). |
+| min | `number` | `number` Minimum value (inclusive). |
+| max | `number` | `number` Maximum value (inclusive). |
 
 <div class="smt-member-anchors">
 
@@ -10600,8 +10448,8 @@ float(min: number, max: number): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| min | `number` | Minimum value (inclusive). |
-| max | `number` | Maximum value (inclusive). |
+| min | `number` | `number` Minimum value (inclusive). |
+| max | `number` | `number` Maximum value (inclusive). |
 
 <div class="smt-member-anchors">
 
@@ -10637,10 +10485,10 @@ castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistan
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startWorldX | `number` | Ray origin world X in pixels. |
-| startWorldY | `number` | Ray origin world Y in pixels. |
-| angle | `number` | Ray direction in radians. |
-| maxDistance | `number` | Maximum ray length in pixels. |
+| startWorldX | `number` | `number` Ray origin world X in pixels. |
+| startWorldY | `number` | `number` Ray origin world Y in pixels. |
+| angle | `number` | `number` Ray direction in radians. |
+| maxDistance | `number` | `number` Maximum ray length in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -10656,7 +10504,7 @@ castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistan
 
 Cast a ray from world position. Return hit point and distance, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) & `object` &#124; `null`
+[`Vector2`](api/shared.player.md?id=vector2) & `object` \| `null`
 
 </div>
 
@@ -10674,11 +10522,11 @@ Cast a ray from world position. Return hit point and distance, or null.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| inputA | ElementType | First reacting element type. |
-| inputB | ElementType | Second reacting element type. |
-| outputA | ElementType &#124; null | Element type produced from input A, or null for no output. |
-| outputB | ElementType &#124; null | Element type produced from input B, or null for no output. |
-| orientation? | "any" &#124; "stacked" | Contact layout requirement. Default `"any"`. |
+| inputA | <code>ElementType</code> | First reacting element type. |
+| inputB | <code>ElementType</code> | Second reacting element type. |
+| outputA | <code>ElementType &#124; null</code> | Element type produced from input A, or null for no output. |
+| outputB | <code>ElementType &#124; null</code> | Element type produced from input B, or null for no output. |
+| orientation? | <code>&quot;any&quot; &#124; &quot;stacked&quot;</code> | Contact layout requirement. Default `"any"`. |
 
 <div class="smt-member-anchors">
 
@@ -10716,7 +10564,7 @@ registerContact(definition: ContactRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`ContactRecipeDefinitionV1`](?id=sandkit.api.reactions.contactrecipedefinitionv1) | Contact recipe inputs, outputs, and orientation. |
+| definition | <code>[`ContactRecipeDefinitionV1`](?id=sandkit.api.reactions.contactrecipedefinitionv1)</code> | [`ContactRecipeDefinitionV1`](?id=sandkit.api.reactions.contactrecipedefinitionv1) Contact recipe inputs, outputs, and orientation. |
 
 <div class="smt-member-anchors">
 
@@ -10762,7 +10610,7 @@ getDrawPositionAtCell(...args: CellCoordinates): Vector2
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -10792,8 +10640,8 @@ getDrawPositionAtWorld(worldX: number, worldY: number): Vector2
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -10880,7 +10728,7 @@ sandkit.api.rendering.withOverlayContext<T>(callback: (context: CanvasRenderingC
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | (`context`: `CanvasRenderingContext2D`) => `T` | Receives the overlay 2D context; return value is passed through. |
+| callback | <code>(`context`: `CanvasRenderingContext2D`) =&gt; `T`</code> | (`context`: `CanvasRenderingContext2D`) => `T` Receives the overlay 2D context; return value is passed through. |
 
 <div class="smt-member-anchors">
 
@@ -10889,12 +10737,6 @@ sandkit.api.rendering.withOverlayContext<T>(callback: (context: CanvasRenderingC
 </div>
 
 Run a callback with the overlay canvas context.
-
-##### Type Parameters
-
-###### T
-
-`T`
 
 ##### Example
 
@@ -10928,7 +10770,7 @@ collectFluxiteAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -10956,8 +10798,8 @@ updateEnergy(amount: number, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| amount | `number` | Energy delta (positive or negative). |
-| options? | When `deferUi` is true, skip immediate UI refresh. |  |
+| amount | `number` | `number` Energy delta (positive or negative). |
+| options? | <code>When `deferUi` is true, skip immediate UI refresh.</code> | When `deferUi` is true, skip immediate UI refresh. |
 
 <div class="smt-member-anchors">
 
@@ -11027,7 +10869,7 @@ nextTick(callback: () => void): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | () => `void` | Function invoked once on the next tick. |
+| callback | <code>() =&gt; `void`</code> | () => `void` Function invoked once on the next tick. |
 
 <div class="smt-member-anchors">
 
@@ -11107,7 +10949,7 @@ get(fieldId: string & object): ConfigValueV1 | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| fieldId | `string` & `object` | Settings field identifier. |
+| fieldId | `string` & `object` | `string` & `object` Settings field identifier. |
 
 <div class="smt-member-anchors">
 
@@ -11117,7 +10959,7 @@ get(fieldId: string & object): ConfigValueV1 | undefined
 
 Return a settings field value by id.
 
-[`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1) &#124; `undefined`
+[`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1) \| `undefined`
 
 </div>
 
@@ -11157,7 +10999,7 @@ onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): (
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | (`values`: `Readonly`\<`Record`\<`string`, [`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1)\>\>) => `void` | Called with the full settings map after a change. |
+| callback | <code>(`values`: `Readonly`\&lt;`Record`\&lt;`string`, [`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1)\&gt;\&gt;) =&gt; `void`</code> | (`values`: `Readonly`\<`Record`\<`string`, [`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1)\>\>) => `void` Called with the full settings map after a change. |
 
 <div class="smt-member-anchors">
 
@@ -11248,8 +11090,8 @@ ensure(key: string, config: object): SharedArray
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Buffer name shared across threads. |
-| config | Typed array kind and element count. |  |
+| key | `string` | `string` Buffer name shared across threads. |
+| config | <code>Typed array kind and element count.</code> | Typed array kind and element count. |
 
 <div class="smt-member-anchors">
 
@@ -11290,8 +11132,8 @@ create(key: string, config: object): SharedArray
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` |  |
-| config |  |  |
+| key | `string` | `string` |
+| config | <code>{ type: [`SharedArrayType`](api/sandkit.api.shared.md?id=sharedarraytype); length: number }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -11330,7 +11172,7 @@ get(key: string): SharedArray | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Buffer name shared across threads. |
+| key | `string` | `string` Buffer name shared across threads. |
 
 <div class="smt-member-anchors">
 
@@ -11340,7 +11182,7 @@ get(key: string): SharedArray | undefined
 
 Look up a named shared buffer without creating it.
 
-[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) &#124; `undefined` The typed array, or `undefined` when the buffer does not exist.
+[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) \| `undefined` The typed array, or `undefined` when the buffer does not exist.
 
 </div>
 
@@ -11428,8 +11270,8 @@ register(structureTypeOrId: unknown, apply: (structure: unknown, payload: unknow
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | `unknown` | Structure type id or enum value. |
-| apply | (`structure`: `unknown`, `payload`: `unknown`) => `void` | Called when a signal reaches a matching structure. |
+| structureTypeOrId | `unknown` | `unknown` Structure type id or enum value. |
+| apply | <code>(`structure`: `unknown`, `payload`: `unknown`) =&gt; `void`</code> | (`structure`: `unknown`, `payload`: `unknown`) => `void` Called when a signal reaches a matching structure. |
 
 <div class="smt-member-anchors">
 
@@ -11463,23 +11305,17 @@ api.signals.targets.register("exampleMachine", (structure, payload) => {
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L77" target="_blank" rel="noopener">sound.d.ts:77</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| stop() | <code>(): void</code> | Stop this sound instance. |
+
+<div class="smt-member-anchors">
+
+###### stop() <!-- {docsify-ignore} -->
+
+</div>
+
 Handle returned from a play call.
-
-##### Methods
-
-###### stop()
-
-```ts
-stop(): void
-```
-
-Defined in: [sandkit/api/sound.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L79)
-
-Stop this sound instance.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -11491,10 +11327,10 @@ Stop this sound instance.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| soundId | string | Sound id for this layer. |
-| volume? | number | Layer volume multiplier. |
-| delay? | number | Delay in milliseconds before this layer plays. |
-| playbackRate? | number | Playback rate for this layer. |
+| soundId | <code>string</code> | Sound id for this layer. |
+| volume? | <code>number</code> | Layer volume multiplier. |
+| delay? | <code>number</code> | Delay in milliseconds before this layer plays. |
+| playbackRate? | <code>number</code> | Playback rate for this layer. |
 
 <div class="smt-member-anchors">
 
@@ -11526,12 +11362,12 @@ One layer in a layered sound.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| volume? | number | Volume multiplier (0–1 typical). |
-| playbackRate? | number | Playback rate multiplier. |
-| position? | object | World position for distance attenuation. |
-| loop? | boolean | When true, loop until stopped. |
-| rateLimitKey? | string | Key used with rateLimitMs to dedupe rapid replays. |
-| rateLimitMs? | number | Minimum ms between plays with the same rateLimitKey. |
+| volume? | <code>number</code> | Volume multiplier (0–1 typical). |
+| playbackRate? | <code>number</code> | Playback rate multiplier. |
+| position? | <code>{ x: number; y: number }</code> | World position for distance attenuation. |
+| loop? | <code>boolean</code> | When true, loop until stopped. |
+| rateLimitKey? | <code>string</code> | Key used with rateLimitMs to dedupe rapid replays. |
+| rateLimitMs? | <code>number</code> | Minimum ms between plays with the same rateLimitKey. |
 
 <div class="smt-member-anchors">
 
@@ -11567,10 +11403,10 @@ Options passed to sound play helpers.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| position? | object | World position applied to all layers. |
-| volume? | number | Volume multiplier applied to all layers. |
-| rateLimitKey? | string | Key used with rateLimitMs to dedupe rapid replays. |
-| rateLimitMs? | number | Minimum ms between plays with the same rateLimitKey. |
+| position? | <code>{ x: number; y: number }</code> | World position applied to all layers. |
+| volume? | <code>number</code> | Volume multiplier applied to all layers. |
+| rateLimitKey? | <code>string</code> | Key used with rateLimitMs to dedupe rapid replays. |
+| rateLimitMs? | <code>number</code> | Minimum ms between plays with the same rateLimitKey. |
 
 <div class="smt-member-anchors">
 
@@ -11606,8 +11442,8 @@ play(soundId: string, options?: SoundOptions): SoundHandle
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` | Registered sound identifier. |
-| options? | [`SoundOptions`](?id=sandkit.api.sound.soundoptions) | Volume, position, playback rate, and rate-limit options. |
+| soundId | `string` | `string` Registered sound identifier. |
+| options? | <code>[`SoundOptions`](?id=sandkit.api.sound.soundoptions)</code> | [`SoundOptions`](?id=sandkit.api.sound.soundoptions) Volume, position, playback rate, and rate-limit options. |
 
 <div class="smt-member-anchors">
 
@@ -11639,8 +11475,8 @@ playActive(soundId: string, options?: SoundOptions): SoundHandle
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` | Registered sound identifier. |
-| options? | [`SoundOptions`](?id=sandkit.api.sound.soundoptions) | Volume, position, playback rate, and rate-limit options. |
+| soundId | `string` | `string` Registered sound identifier. |
+| options? | <code>[`SoundOptions`](?id=sandkit.api.sound.soundoptions)</code> | [`SoundOptions`](?id=sandkit.api.sound.soundoptions) Volume, position, playback rate, and rate-limit options. |
 
 <div class="smt-member-anchors">
 
@@ -11672,8 +11508,8 @@ playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| layers | [`SoundLayer`](?id=sandkit.api.sound.soundlayer)[] | Layer definitions (sound id, volume, delay, and per-layer options). |
-| options? | [`SoundLayersOptions`](?id=sandkit.api.sound.soundlayersoptions) | Shared position, volume, and rate-limit options for all layers. |
+| layers | <code>[`SoundLayer`](?id=sandkit.api.sound.soundlayer)[]</code> | [`SoundLayer`](?id=sandkit.api.sound.soundlayer)[] Layer definitions (sound id, volume, delay, and per-layer options). |
+| options? | <code>[`SoundLayersOptions`](?id=sandkit.api.sound.soundlayersoptions)</code> | [`SoundLayersOptions`](?id=sandkit.api.sound.soundlayersoptions) Shared position, volume, and rate-limit options for all layers. |
 
 <div class="smt-member-anchors">
 
@@ -11705,9 +11541,9 @@ calculateDistanceOptionsAtWorld(worldX: number, worldY: number, baseVolume?: num
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| baseVolume? | `number` | Base volume before distance attenuation. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| baseVolume? | `number` | `number` Base volume before distance attenuation. |
 
 <div class="smt-member-anchors">
 
@@ -11741,7 +11577,7 @@ stopBySoundId(soundId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` | Registered sound identifier to stop. |
+| soundId | `string` | `string` Registered sound identifier to stop. |
 
 <div class="smt-member-anchors">
 
@@ -11769,7 +11605,7 @@ stopById(soundId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` |  |
+| soundId | `string` | `string` |
 
 <div class="smt-member-anchors">
 
@@ -11838,7 +11674,7 @@ Stop all playing sounds.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| tint? | number | Packed RGB tint applied after load. |
+| tint? | <code>number</code> | Packed RGB tint applied after load. |
 
 <div class="smt-member-anchors">
 
@@ -11894,9 +11730,9 @@ load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| spriteId | `string` | Id used with [getById](?id=sandkit.api.sprites.getbyid). |
-| path | `string` | URL or asset path to load. |
-| options? | [`SpriteLoadOptions`](?id=sandkit.api.sprites.spriteloadoptions) | Optional tint and load options. |
+| spriteId | `string` | `string` Id used with [getById](?id=sandkit.api.sprites.getbyid). |
+| path | `string` | `string` URL or asset path to load. |
+| options? | <code>[`SpriteLoadOptions`](?id=sandkit.api.sprites.spriteloadoptions)</code> | [`SpriteLoadOptions`](?id=sandkit.api.sprites.spriteloadoptions) Optional tint and load options. |
 
 <div class="smt-member-anchors">
 
@@ -11930,9 +11766,9 @@ loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions)
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| spriteId | `string` | Id used with [getById](?id=sandkit.api.sprites.getbyid). |
-| relativePath | `string` | Path relative to the mod folder. |
-| options? | [`SpriteLoadOptions`](?id=sandkit.api.sprites.spriteloadoptions) | Optional tint and load options. |
+| spriteId | `string` | `string` Id used with [getById](?id=sandkit.api.sprites.getbyid). |
+| relativePath | `string` | `string` Path relative to the mod folder. |
+| options? | <code>[`SpriteLoadOptions`](?id=sandkit.api.sprites.spriteloadoptions)</code> | [`SpriteLoadOptions`](?id=sandkit.api.sprites.spriteloadoptions) Optional tint and load options. |
 
 <div class="smt-member-anchors">
 
@@ -11966,7 +11802,7 @@ getById(spriteId: string): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| spriteId | `string` | Sprite id from [load](?id=sandkit.api.sprites.load) or [loadFromMod](?id=sandkit.api.sprites.loadfrommod). |
+| spriteId | `string` | `string` Sprite id from [load](?id=sandkit.api.sprites.load) or [loadFromMod](?id=sandkit.api.sprites.loadfrommod). |
 
 <div class="smt-member-anchors">
 
@@ -12012,7 +11848,7 @@ rotatePlayerModSprites(angle: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| angle | `number` | Rotation in radians. |
+| angle | `number` | `number` Rotation in radians. |
 
 <div class="smt-member-anchors">
 
@@ -12046,7 +11882,7 @@ ensure(modId: string): JsonObjectV1
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| modId | `string` | Mod identifier (typically `modinfo.id`). |
+| modId | `string` | `string` Mod identifier (typically `modinfo.id`). |
 
 <div class="smt-member-anchors">
 
@@ -12076,8 +11912,8 @@ get(modId: string, key: string): JsonValueV1 | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| modId | `string` | Mod identifier. |
-| key | `string` | Storage key. |
+| modId | `string` | `string` Mod identifier. |
+| key | `string` | `string` Storage key. |
 
 <div class="smt-member-anchors">
 
@@ -12089,7 +11925,7 @@ get(modId: string, key: string): JsonValueV1 | undefined
 
 Read a value from mod storage by key.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
 
 </div>
 
@@ -12109,9 +11945,9 @@ set(modId: string, key: string, value: JsonValueV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| modId | `string` | Mod identifier. |
-| key | `string` | Storage key. |
-| value | [`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) | JSON-serializable value. |
+| modId | `string` | `string` Mod identifier. |
+| key | `string` | `string` Storage key. |
+| value | <code>[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)</code> | [`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) JSON-serializable value. |
 
 <div class="smt-member-anchors">
 
@@ -12143,8 +11979,8 @@ remove(modId: string, key: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| modId | `string` | Mod identifier. |
-| key | `string` | Storage key. |
+| modId | `string` | `string` Mod identifier. |
+| key | `string` | `string` Storage key. |
 
 <div class="smt-member-anchors">
 
@@ -12182,7 +12018,7 @@ get(key: string): JsonValueV1 | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Storage key. |
+| key | `string` | `string` Storage key. |
 
 <div class="smt-member-anchors">
 
@@ -12192,7 +12028,7 @@ get(key: string): JsonValueV1 | undefined
 
 Read a local storage value by key.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
 
 </div>
 
@@ -12212,8 +12048,8 @@ set(key: string, value: JsonValueV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Storage key. |
-| value | [`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) | JSON-serializable value. |
+| key | `string` | `string` Storage key. |
+| value | <code>[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)</code> | [`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) JSON-serializable value. |
 
 <div class="smt-member-anchors">
 
@@ -12243,7 +12079,7 @@ remove(key: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Storage key. |
+| key | `string` | `string` Storage key. |
 
 <div class="smt-member-anchors">
 
@@ -12277,8 +12113,8 @@ registerConveyorType(structureId: string, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | Structure type id string. |
-| options? | Transport offset, velocity, distance, and run direction. |  |
+| structureId | `string` | `string` Structure type id string. |
+| options? | <code>Transport offset, velocity, distance, and run direction.</code> | Transport offset, velocity, distance, and run direction. |
 
 <div class="smt-member-anchors">
 
@@ -12317,7 +12153,7 @@ registerLauncherType(definition: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | Launcher type ids, velocities, and optional shared buffer key. |  |
+| definition | <code>Launcher type ids, velocities, and optional shared buffer key.</code> | Launcher type ids, velocities, and optional shared buffer key. |
 
 <div class="smt-member-anchors">
 
@@ -12343,9 +12179,9 @@ Register launcher behavior for up, left, and right launcher types.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | string |  |
-| directions? | string[] |  |
-| spanTiles? | number | Fixed span length in tiles for line-linked structures. |
+| type | <code>string</code> |  |
+| directions? | <code>string[]</code> |  |
+| spanTiles? | <code>number</code> | Fixed span length in tiles for line-linked structures. |
 
 <div class="smt-member-anchors">
 
@@ -12369,8 +12205,8 @@ Build mode entry for a structure definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | StructureRef |  |
-| angles | number[] |  |
+| id | <code>StructureRef</code> |  |
+| angles | <code>number[]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -12392,8 +12228,8 @@ Rotated variant entry for a structure definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "custom" |  |
-| dataFieldMessage | object |  |
+| type | <code>&quot;custom&quot;</code> |  |
+| dataFieldMessage | <code>{ message: string; messageKey: string; fields: readonly StructureTooltipHoverField[] }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -12441,12 +12277,12 @@ tooltipHover: {
 
 | Property | Type | Description |
 | --- | --- | --- |
-| param | string |  |
-| field | string |  |
-| fallback? | string &#124; number |  |
-| round? | boolean |  |
-| valueLabels? | Record<string, string> |  |
-| valueKeys? | Record<string, string> |  |
+| param | <code>string</code> |  |
+| field | <code>string</code> |  |
+| fallback? | <code>string &#124; number</code> |  |
+| round? | <code>boolean</code> |  |
+| valueLabels? | <code>Record&lt;string, string&gt;</code> |  |
+| valueKeys? | <code>Record&lt;string, string&gt;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -12476,10 +12312,10 @@ One interpolated field in a [StructureTooltipHover](?id=sandkit.api.structures.s
 
 | Property | Type | Description |
 | --- | --- | --- |
-| frameSize | object |  |
-| frames | number |  |
-| intervalMs | number |  |
-| rowDataField? | string | When set, frame row follows this structure `data` field. |
+| frameSize | <code>{ width: number; height: number }</code> |  |
+| frames | <code>number</code> |  |
+| intervalMs | <code>number</code> |  |
+| rowDataField? | <code>string</code> | When set, frame row follows this structure `data` field. |
 
 <div class="smt-member-anchors">
 
@@ -12505,13 +12341,13 @@ Spritesheet animation on a structure render block.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| imageName? | string |  |
-| size? | object |  |
-| offset? | object |  |
-| outline? | boolean |  |
-| width? | string |  |
-| height? | string |  |
-| clipToBounds? | boolean |  |
+| imageName? | <code>string</code> |  |
+| size? | <code>{ width: number; height: number }</code> |  |
+| offset? | <code>{ x: number; y: number }</code> |  |
+| outline? | <code>boolean</code> |  |
+| width? | <code>string</code> |  |
+| height? | <code>string</code> |  |
+| clipToBounds? | <code>boolean</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -12543,13 +12379,13 @@ Hotbar / build-menu UI sprite settings.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| imageName? | string |  |
-| size? | object |  |
-| offset? | object |  |
-| z? | number |  |
-| ambienceGroup? | string |  |
-| ui? | StructureRenderUi |  |
-| spritesheet? | StructureSpritesheet |  |
+| imageName? | <code>string</code> |  |
+| size? | <code>{ width: number; height: number }</code> |  |
+| offset? | <code>{ x: number; y: number }</code> |  |
+| z? | <code>number</code> |  |
+| ambienceGroup? | <code>string</code> |  |
+| ui? | <code>StructureRenderUi</code> |  |
+| spritesheet? | <code>StructureSpritesheet</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -12581,23 +12417,23 @@ Render settings for a structure definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string & object |  |
-| name? | string |  |
-| nameKey? | string |  |
-| description? | string |  |
-| descriptionKey? | string |  |
-| categoryKey? | string |  |
-| order? | number |  |
-| buildModes? | StructureBuildMode[] |  |
-| shape? | number[][] |  |
-| variants? | StructureVariant[] |  |
-| render? | StructureRender |  |
-| defaultData? | Record<string, unknown> |  |
-| linkedClearance? | string | Linked placement clearance mode (for example `"allOrNothing"`). |
-| tooltipHover? | StructureTooltipHover | Custom hover tooltip over the built structure. |
-| rejectWhenBlocked? | boolean | Reject placement when the footprint is blocked. |
-| alwaysUnlocked? | boolean | Show in the build menu without research unlock. |
-| descriptionParams? | Record<string, string &#124; number> | Values interpolated into the structure description string. |
+| id | <code>string &amp; object</code> |  |
+| name? | <code>string</code> |  |
+| nameKey? | <code>string</code> |  |
+| description? | <code>string</code> |  |
+| descriptionKey? | <code>string</code> |  |
+| categoryKey? | <code>string</code> |  |
+| order? | <code>number</code> |  |
+| buildModes? | <code>StructureBuildMode[]</code> |  |
+| shape? | <code>number[][]</code> |  |
+| variants? | <code>StructureVariant[]</code> |  |
+| render? | <code>StructureRender</code> |  |
+| defaultData? | <code>Record&lt;string, unknown&gt;</code> |  |
+| linkedClearance? | <code>string</code> | Linked placement clearance mode (for example `"allOrNothing"`). |
+| tooltipHover? | <code>StructureTooltipHover</code> | Custom hover tooltip over the built structure. |
+| rejectWhenBlocked? | <code>boolean</code> | Reject placement when the footprint is blocked. |
+| alwaysUnlocked? | <code>boolean</code> | Show in the build menu without research unlock. |
+| descriptionParams? | <code>Record&lt;string, string &#124; number&gt;</code> | Values interpolated into the structure description string. |
 
 <div class="smt-member-anchors">
 
@@ -12671,8 +12507,8 @@ Options passed to [buildAtCell](?id=sandkit.api.structures.buildatcell).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| removeCells? | boolean | Also remove underlying terrain cells in the footprint. |
-| skipVisuals? | boolean | Skip visual teardown effects. |
+| removeCells? | <code>boolean</code> | Also remove underlying terrain cells in the footprint. |
+| skipVisuals? | <code>boolean</code> | Skip visual teardown effects. |
 
 <div class="smt-member-anchors">
 
@@ -12694,10 +12530,10 @@ Options passed to [removeAtCell](?id=sandkit.api.structures.removeatcell).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| removeCells? | boolean |  |
-| skipVisuals? | boolean |  |
-| preserveUnselectable? | boolean | When set, only remove structures at these positions. |
-| onlyPositions? | Vector2[] |  |
+| removeCells? | <code>boolean</code> |  |
+| skipVisuals? | <code>boolean</code> |  |
+| preserveUnselectable? | <code>boolean</code> | When set, only remove structures at these positions. |
+| onlyPositions? | <code>Vector2[]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -12721,115 +12557,29 @@ Options passed to bulk structure removal helpers.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L688" target="_blank" rel="noopener">structures.d.ts:688</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| getResolvedTypeAtCell() | <code>(...args: CellCoordinates): ElementType &#124; null</code> | Return the resolved element type at a cell, or null. |
+| ~~getElementTypeAtCell()~~ | <code>(...args: CellCoordinates): ElementType &#124; null</code> | Deprecated alias. |
+| isCellEmptyAtCell() | <code>(...args: CellCoordinates): boolean</code> | Return true when the cell has no element or terrain. |
+| ~~isCellEmpty()~~ | <code>(...args: CellCoordinates): boolean</code> | Deprecated alias. |
+| commit() | <code>(mutations: unknown): void</code> | Commit batched grid mutations from the processing callback. |
+
+<div class="smt-member-anchors">
+
+###### getResolvedTypeAtCell() <!-- {docsify-ignore} -->
+
+###### ~~getElementTypeAtCell()~~ <!-- {docsify-ignore} -->
+
+###### isCellEmptyAtCell() <!-- {docsify-ignore} -->
+
+###### ~~isCellEmpty()~~ <!-- {docsify-ignore} -->
+
+###### commit() <!-- {docsify-ignore} -->
+
+</div>
+
 Context passed to structure processing callbacks.
-
-##### Methods
-
-###### getResolvedTypeAtCell()
-
-```ts
-getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
-```
-
-Defined in: [sandkit/api/structures.d.ts:693](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L693)
-
-Return the resolved element type at a cell, or null.
-
-###### Parameters
-
-###### args
-
-...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)
-
-###### Returns
-
-[`ElementType`](api/sandkit.api.elements.md?id=elementtype) &#124; `null`
-
-###### ~~getElementTypeAtCell()~~
-
-```ts
-getElementTypeAtCell(...args: CellCoordinates): ElementType | null
-```
-
-Defined in: [sandkit/api/structures.d.ts:699](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L699)
-
-###### Parameters
-
-###### args
-
-...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)
-
-###### Returns
-
-[`ElementType`](api/sandkit.api.elements.md?id=elementtype) &#124; `null`
-
-###### Deprecated
-
-Use [getResolvedTypeAtCell](?id=sandkit.api.structures.getresolvedtypeatcell) instead.
-
-###### isCellEmptyAtCell()
-
-```ts
-isCellEmptyAtCell(...args: CellCoordinates): boolean
-```
-
-Defined in: [sandkit/api/structures.d.ts:705](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L705)
-
-Return true when the cell has no element or terrain.
-
-###### Parameters
-
-###### args
-
-...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)
-
-###### Returns
-
-`boolean`
-
-###### ~~isCellEmpty()~~
-
-```ts
-isCellEmpty(...args: CellCoordinates): boolean
-```
-
-Defined in: [sandkit/api/structures.d.ts:711](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L711)
-
-###### Parameters
-
-###### args
-
-...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)
-
-###### Returns
-
-`boolean`
-
-###### Deprecated
-
-Use [isCellEmptyAtCell](?id=sandkit.api.structures.iscellemptyatcell) instead.
-
-###### commit()
-
-```ts
-commit(mutations: unknown): void
-```
-
-Defined in: [sandkit/api/structures.d.ts:719](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L719)
-
-Commit batched grid mutations from the processing callback.
-
-###### Parameters
-
-###### mutations
-
-`unknown`
-
-Mutation writer payload accepted by the runtime.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -12841,8 +12591,8 @@ Mutation writer payload accepted by the runtime.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| ~~intervalMs~~ | number | Tick interval in milliseconds. Must be > 0. |
-| ~~process~~ | (structure: Structure, context: StructureProcessingContext) => void | Synchronous callback invoked for each structure instance. |
+| ~~intervalMs~~ | <code>number</code> | Tick interval in milliseconds. Must be > 0. |
+| ~~process~~ | <code>(structure: Structure, context: StructureProcessingContext) =&gt; void</code> | Synchronous callback invoked for each structure instance. |
 
 <div class="smt-member-anchors">
 
@@ -12871,12 +12621,12 @@ Use [StructureProcessingDefinitionV1](api/sandkit.api.structures.md?id=structure
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "integer" |  |
-| id | string |  |
-| labelKey | string |  |
-| min? | number |  |
-| max? | number |  |
-| default? | number |  |
+| type | <code>&quot;integer&quot;</code> |  |
+| id | <code>string</code> |  |
+| labelKey | <code>string</code> |  |
+| min? | <code>number</code> |  |
+| max? | <code>number</code> |  |
+| default? | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -12906,10 +12656,10 @@ Integer placement field with optional bounds.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "choice" |  |
-| id | string |  |
-| labelKey | string |  |
-| options | readonly object[] |  |
+| type | <code>&quot;choice&quot;</code> |  |
+| id | <code>string</code> |  |
+| labelKey | <code>string</code> |  |
+| options | <code>readonly object[]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -12935,8 +12685,8 @@ Choice placement field with labeled options.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| structureId | string & object |  |
-| fields | PlacementConfigField[] |  |
+| structureId | <code>string &amp; object</code> |  |
+| fields | <code>PlacementConfigField[]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -12958,8 +12708,8 @@ Placement rule definition for a structure type.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| input | ElementType |  |
-| outputs | WeightedRecipeOutput[] |  |
+| input | <code>ElementType</code> |  |
+| outputs | <code>WeightedRecipeOutput[]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -12981,9 +12731,9 @@ Weighted refinery recipe definition shape.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| structureType | StructureRef |  |
-| intervalMs | number |  |
-| process | (structure: Structure, context: StructureProcessingContext) => void |  |
+| structureType | <code>StructureRef</code> |  |
+| intervalMs | <code>number</code> |  |
+| process | <code>(structure: Structure, context: StructureProcessingContext) =&gt; void</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -13091,8 +12841,8 @@ register(definition: SandkitStructureDefinition, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`SandkitStructureDefinition`](?id=sandkit.api.structures.sandkitstructuredefinition) | Full structure definition. |
-| options? | When `useRawShape` is true, keep the shape matrix as-is. |  |
+| definition | <code>[`SandkitStructureDefinition`](?id=sandkit.api.structures.sandkitstructuredefinition)</code> | [`SandkitStructureDefinition`](?id=sandkit.api.structures.sandkitstructuredefinition) Full structure definition. |
+| options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> | When `useRawShape` is true, keep the shape matrix as-is. |
 
 <div class="smt-member-anchors">
 
@@ -13150,9 +12900,9 @@ updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStruct
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) | Structure type value or string id. |
-| partial | `Partial`\<[`SandkitStructureDefinition`](?id=sandkit.api.structures.sandkitstructuredefinition)\> | Fields to merge onto the definition. |
-| options? | When `useRawShape` is true, keep the shape matrix as-is. |  |
+| structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) Structure type value or string id. |
+| partial | `Partial`\<[`SandkitStructureDefinition`](?id=sandkit.api.structures.sandkitstructuredefinition)\> | `Partial`\<[`SandkitStructureDefinition`](?id=sandkit.api.structures.sandkitstructuredefinition)\> Fields to merge onto the definition. |
+| options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> | When `useRawShape` is true, keep the shape matrix as-is. |
 
 <div class="smt-member-anchors">
 
@@ -13196,9 +12946,9 @@ registerVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| baseStructureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) | Base structure type or id. |
-| variant | Variant id and supported rotation angles. |  |
-| options? | Optional build-mode wiring for the variant. |  |
+| baseStructureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) Base structure type or id. |
+| variant | <code>Variant id and supported rotation angles.</code> | Variant id and supported rotation angles. |
+| options? | <code>Optional build-mode wiring for the variant.</code> | Optional build-mode wiring for the variant. |
 
 <div class="smt-member-anchors">
 
@@ -13249,9 +12999,9 @@ addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: objec
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| baseStructureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |  |
-| variant |  |  |
-| options? |  |  |
+| baseStructureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |
+| variant | <code>{ id: [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref); angles: `number`[] }</code> |  |
+| options? | <code>{ addBuildMode: unknown }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -13290,7 +13040,7 @@ registerPlacementConfig(definition: PlacementConfigDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`PlacementConfigDefinition`](?id=sandkit.api.structures.placementconfigdefinition) | Hotbar placement field configuration. |
+| definition | <code>[`PlacementConfigDefinition`](?id=sandkit.api.structures.placementconfigdefinition)</code> | [`PlacementConfigDefinition`](?id=sandkit.api.structures.placementconfigdefinition) Hotbar placement field configuration. |
 
 <div class="smt-member-anchors">
 
@@ -13393,7 +13143,7 @@ isBlockedByPlayerAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -13421,7 +13171,7 @@ isLauncherAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -13449,7 +13199,7 @@ isLockedByType(structureType: StructureRef): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureType | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) | Structure type value or string id. |
+| structureType | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) Structure type value or string id. |
 
 <div class="smt-member-anchors">
 
@@ -13480,7 +13230,7 @@ isUnlockedByType(structureType: StructureRef): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureType | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |  |
+| structureType | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |
 
 <div class="smt-member-anchors">
 
@@ -13515,8 +13265,8 @@ mapValueToSpritesheetIndex(value: number, thresholds: number[]): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| value | `number` | Numeric value to map. |
-| thresholds | `number`[] | Ascending threshold values. |
+| value | `number` | `number` Numeric value to map. |
+| thresholds | `number`[] | `number`[] Ascending threshold values. |
 
 <div class="smt-member-anchors">
 
@@ -13557,7 +13307,7 @@ buildAtCell(...args: number, number, [StructureRef, StructureBuildOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=sandkit.api.structures.structurebuildoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=sandkit.api.structures.structurebuildoptions)\]</code> | ...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=sandkit.api.structures.structurebuildoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -13585,7 +13335,7 @@ buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOption
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=sandkit.api.structures.structurebuildoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=sandkit.api.structures.structurebuildoptions)\]</code> | ...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=sandkit.api.structures.structurebuildoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -13620,7 +13370,7 @@ removeAtCell(...args: number, number, [StructureRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`StructureRemovalOptions`](?id=sandkit.api.structures.structureremovaloptions)\] |  |
+| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=sandkit.api.structures.structureremovaloptions)\]</code> | ...\[`number`, `number`, [`StructureRemovalOptions`](?id=sandkit.api.structures.structureremovaloptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -13648,7 +13398,7 @@ removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`StructureRemovalOptions`](?id=sandkit.api.structures.structureremovaloptions)\] |  |
+| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=sandkit.api.structures.structureremovaloptions)\]</code> | ...\[`number`, `number`, [`StructureRemovalOptions`](?id=sandkit.api.structures.structureremovaloptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -13683,11 +13433,11 @@ removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, end
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startCellX | `number` | Start cell column. |
-| startCellY | `number` | Start cell row. |
-| endCellX | `number` | End cell column. |
-| endCellY | `number` | End cell row. |
-| options? | [`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions) | Optional bulk-removal flags. |
+| startCellX | `number` | `number` Start cell column. |
+| startCellY | `number` | `number` Start cell row. |
+| endCellX | `number` | `number` End cell column. |
+| endCellY | `number` | `number` End cell row. |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions) Optional bulk-removal flags. |
 
 <div class="smt-member-anchors">
 
@@ -13723,11 +13473,11 @@ removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: num
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startCellX | `number` |  |
-| startCellY | `number` |  |
-| endCellX | `number` |  |
-| endCellY | `number` |  |
-| options? | [`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions) |  |
+| startCellX | `number` | `number` |
+| startCellY | `number` | `number` |
+| endCellX | `number` | `number` |
+| endCellY | `number` | `number` |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions) |
 
 <div class="smt-member-anchors">
 
@@ -13770,8 +13520,8 @@ removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| positions | [`Vector2`](api/shared.player.md?id=vector2)[] | Cell positions to clear. |
-| options? | [`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions) | Optional bulk-removal flags. |
+| positions | <code>[`Vector2`](api/shared.player.md?id=vector2)[]</code> | [`Vector2`](api/shared.player.md?id=vector2)[] Cell positions to clear. |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions) Optional bulk-removal flags. |
 
 <div class="smt-member-anchors">
 
@@ -13810,8 +13560,8 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| positions | [`Vector2`](api/shared.player.md?id=vector2)[] |  |
-| options? | [`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions) |  |
+| positions | <code>[`Vector2`](api/shared.player.md?id=vector2)[]</code> | [`Vector2`](api/shared.player.md?id=vector2)[] |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions) |
 
 <div class="smt-member-anchors">
 
@@ -13848,8 +13598,8 @@ addProcessor(structureId: StructureRef, definition: StructureProcessorDefinition
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |  |
-| definition | [`StructureProcessorDefinitionV1`](?id=sandkit.api.structures.structureprocessordefinitionv1) |  |
+| structureId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |
+| definition | <code>[`StructureProcessorDefinitionV1`](?id=sandkit.api.structures.structureprocessordefinitionv1)</code> | [`StructureProcessorDefinitionV1`](?id=sandkit.api.structures.structureprocessordefinitionv1) |
 
 <div class="smt-member-anchors">
 
@@ -13894,8 +13644,8 @@ register(id: string & object, definition: StructureProcessingDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| id | `string` & `object` | Unique processing registration id. |
-| definition | [`StructureProcessingDefinitionV1`](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1) | Structure type, interval, and callback. |
+| id | `string` & `object` | `string` & `object` Unique processing registration id. |
+| definition | <code>[`StructureProcessingDefinitionV1`](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1)</code> | [`StructureProcessingDefinitionV1`](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1) Structure type, interval, and callback. |
 
 <div class="smt-member-anchors">
 
@@ -13943,7 +13693,7 @@ setEnabledAtCell(...args: [number, number, boolean]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `boolean`\] |  |
+| args | <code>...\[`number`, `number`, `boolean`\]</code> | ...\[`number`, `number`, `boolean`\] |
 
 <div class="smt-member-anchors">
 
@@ -13973,7 +13723,7 @@ setEnabledAt(...args: [number, number, boolean]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `boolean`\] |  |
+| args | <code>...\[`number`, `number`, `boolean`\]</code> | ...\[`number`, `number`, `boolean`\] |
 
 <div class="smt-member-anchors">
 
@@ -14114,7 +13864,7 @@ Register a weighted refinery machine recipe.
 
 ###### id
 
-`"condenser"` &#124; `"steamDryer"` &#124; `"synthesizer"` &#124; `"snowmaker"` &#124; `"smelter"`
+`"condenser"` \| `"steamDryer"` \| `"synthesizer"` \| `"snowmaker"` \| `"smelter"`
 
 Refinery machine id.
 
@@ -14144,15 +13894,15 @@ Weighted input/output recipe.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| name? | string | Plain display name (when not using [nameKey](?id=sandkit.api.tech.namekey)). |
-| nameKey? | string | Display name translation key. |
-| description? | string | Plain description (when not using [descriptionKey](?id=sandkit.api.tech.descriptionkey)). |
-| descriptionKey? | string | Description translation key. |
-| cost? | number | Research cost. |
-| currencyType? | string | Currency used for [cost](?id=sandkit.api.tech.cost) (for example `"gold"`). |
-| branch? | string | Tech tree branch id (often copied from the parent node). |
-| unlocks? | object | Content unlocked when this tech is researched. |
-| requires? | readonly string[] | Prerequisite tech ids. |
+| name? | <code>string</code> | Plain display name (when not using [nameKey](?id=sandkit.api.tech.namekey)). |
+| nameKey? | <code>string</code> | Display name translation key. |
+| description? | <code>string</code> | Plain description (when not using [descriptionKey](?id=sandkit.api.tech.descriptionkey)). |
+| descriptionKey? | <code>string</code> | Description translation key. |
+| cost? | <code>number</code> | Research cost. |
+| currencyType? | <code>string</code> | Currency used for [cost](?id=sandkit.api.tech.cost) (for example `"gold"`). |
+| branch? | <code>string</code> | Tech tree branch id (often copied from the parent node). |
+| unlocks? | <code>{ structures: readonly string[]; items: readonly string[] }</code> | Content unlocked when this tech is researched. |
+| requires? | <code>readonly string[]</code> | Prerequisite tech ids. |
 
 <div class="smt-member-anchors">
 
@@ -14194,8 +13944,8 @@ Tech definition shape.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| x | number |  |
-| y | number |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -14217,8 +13967,8 @@ Position on the tech grid.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| structures? | readonly string[] | Structure ids to unlock. |
-| items? | readonly string[] | Item ids to unlock. |
+| structures? | <code>readonly string[]</code> | Structure ids to unlock. |
+| items? | <code>readonly string[]</code> | Item ids to unlock. |
 
 <div class="smt-member-anchors">
 
@@ -14271,7 +14021,7 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=sandkit.api.tech.techgridid) | Tech entry identifier. |
+| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | [`TechGridId`](?id=sandkit.api.tech.techgridid) Tech entry identifier. |
 
 <div class="smt-member-anchors">
 
@@ -14281,7 +14031,7 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 Return a tech definition by string id.
 
-[`TechDefinition`](?id=sandkit.api.tech.techdefinition) &#124; `undefined`
+[`TechDefinition`](?id=sandkit.api.tech.techdefinition) \| `undefined`
 
 </div>
 
@@ -14301,8 +14051,8 @@ updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=sandkit.api.tech.techgridid) | Tech entry identifier. |
-| updates | `Partial`\<[`TechDefinition`](?id=sandkit.api.tech.techdefinition)\> | Fields to merge into the definition. |
+| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | [`TechGridId`](?id=sandkit.api.tech.techgridid) Tech entry identifier. |
+| updates | `Partial`\<[`TechDefinition`](?id=sandkit.api.tech.techdefinition)\> | `Partial`\<[`TechDefinition`](?id=sandkit.api.tech.techdefinition)\> Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -14340,8 +14090,8 @@ registerDefinition(techId: TechGridId, definition: TechDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=sandkit.api.tech.techgridid) | Tech entry identifier. |
-| definition | [`TechDefinition`](?id=sandkit.api.tech.techdefinition) | Full tech definition to register. |
+| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | [`TechGridId`](?id=sandkit.api.tech.techgridid) Tech entry identifier. |
+| definition | <code>[`TechDefinition`](?id=sandkit.api.tech.techdefinition)</code> | [`TechDefinition`](?id=sandkit.api.tech.techdefinition) Full tech definition to register. |
 
 <div class="smt-member-anchors">
 
@@ -14383,8 +14133,8 @@ addDefinition(techId: TechGridId, definition: TechDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=sandkit.api.tech.techgridid) |  |
-| definition | [`TechDefinition`](?id=sandkit.api.tech.techdefinition) |  |
+| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | [`TechGridId`](?id=sandkit.api.tech.techgridid) |
+| definition | <code>[`TechDefinition`](?id=sandkit.api.tech.techdefinition)</code> | [`TechDefinition`](?id=sandkit.api.tech.techdefinition) |
 
 <div class="smt-member-anchors">
 
@@ -14421,9 +14171,9 @@ registerNode(techId: TechGridId, definition: TechDefinition, options: object): T
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=sandkit.api.tech.techgridid) | Tech grid node id. |
-| definition | [`TechDefinition`](?id=sandkit.api.tech.techdefinition) | Tech definition for the node. |
-| options | Parent node id and optional preferred grid position. |  |
+| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | [`TechGridId`](?id=sandkit.api.tech.techgridid) Tech grid node id. |
+| definition | <code>[`TechDefinition`](?id=sandkit.api.tech.techdefinition)</code> | [`TechDefinition`](?id=sandkit.api.tech.techdefinition) Tech definition for the node. |
+| options | <code>Parent node id and optional preferred grid position.</code> | Parent node id and optional preferred grid position. |
 
 <div class="smt-member-anchors">
 
@@ -14467,7 +14217,7 @@ isLockedById(techId: TechGridId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=sandkit.api.tech.techgridid) | Tech entry id (string or numeric enum). |
+| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | [`TechGridId`](?id=sandkit.api.tech.techgridid) Tech entry id (string or numeric enum). |
 
 <div class="smt-member-anchors">
 
@@ -14495,8 +14245,8 @@ setLockedById(techId: TechGridId, locked: boolean): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=sandkit.api.tech.techgridid) | Tech entry id (string or numeric enum). |
-| locked | `boolean` | When true, the tech cannot be purchased. |
+| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | [`TechGridId`](?id=sandkit.api.tech.techgridid) Tech entry id (string or numeric enum). |
+| locked | `boolean` | `boolean` When true, the tech cannot be purchased. |
 
 <div class="smt-member-anchors">
 
@@ -14526,7 +14276,7 @@ isResearchedById(techId: TechGridId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=sandkit.api.tech.techgridid) | Tech entry id (string or numeric enum). |
+| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | [`TechGridId`](?id=sandkit.api.tech.techgridid) Tech entry id (string or numeric enum). |
 
 <div class="smt-member-anchors">
 
@@ -14562,8 +14312,8 @@ appendUnlock(techId: TechGridId, unlocks: ConservatoryUnlocks): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](api/sandkit.api.tech.md?id=techgridid) | Built-in or custom tech id. |
-| unlocks | [`ConservatoryUnlocks`](api/sandkit.api.tech.md?id=conservatoryunlocks) | Optional structure and item ids to unlock. |
+| techId | <code>[`TechGridId`](api/sandkit.api.tech.md?id=techgridid)</code> | [`TechGridId`](api/sandkit.api.tech.md?id=techgridid) Built-in or custom tech id. |
+| unlocks | <code>[`ConservatoryUnlocks`](api/sandkit.api.tech.md?id=conservatoryunlocks)</code> | [`ConservatoryUnlocks`](api/sandkit.api.tech.md?id=conservatoryunlocks) Optional structure and item ids to unlock. |
 
 <div class="smt-member-anchors">
 
@@ -14599,7 +14349,7 @@ api.tech.conservatory.appendUnlock(sandkit.enums.Tech.SignalDevices, {
 
 | Property | Type | Description |
 | --- | --- | --- |
-| interactions? | readonly Interaction[] | Tooltip interactions shown for this terrain. |
+| interactions? | <code>readonly Interaction[]</code> | Tooltip interactions shown for this terrain. |
 
 <div class="smt-member-anchors">
 
@@ -14643,7 +14393,7 @@ register(definition: TerrainDefinition): object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`TerrainDefinition`](?id=sandkit.api.terrains.terraindefinition) | Terrain definition to register. |
+| definition | <code>[`TerrainDefinition`](?id=sandkit.api.terrains.terraindefinition)</code> | [`TerrainDefinition`](?id=sandkit.api.terrains.terraindefinition) Terrain definition to register. |
 
 <div class="smt-member-anchors">
 
@@ -14673,8 +14423,8 @@ updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>):
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellTypeOrId | [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref) | Numeric cell type or terrain string id. |
-| partial | `Partial`\<[`TerrainDefinition`](?id=sandkit.api.terrains.terraindefinition)\> | Fields to merge onto the definition. |
+| cellTypeOrId | <code>[`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref)</code> | [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref) Numeric cell type or terrain string id. |
+| partial | `Partial`\<[`TerrainDefinition`](?id=sandkit.api.terrains.terraindefinition)\> | `Partial`\<[`TerrainDefinition`](?id=sandkit.api.terrains.terraindefinition)\> Fields to merge onto the definition. |
 
 <div class="smt-member-anchors">
 
@@ -14704,7 +14454,7 @@ createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -14732,7 +14482,7 @@ createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOption
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -14767,7 +14517,7 @@ replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -14795,7 +14545,7 @@ replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptio
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -14830,7 +14580,7 @@ removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -14858,7 +14608,7 @@ removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -14893,7 +14643,7 @@ setHitPointsAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -14921,7 +14671,7 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -14956,7 +14706,7 @@ setHpAtCellWhenIdle(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -15045,7 +14795,7 @@ setSize(size: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| size | `number` | Grab radius in cells. |
+| size | `number` | `number` Grab radius in cells. |
 
 <div class="smt-member-anchors">
 
@@ -15131,8 +14881,8 @@ True when the grabber buffer is not empty.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| interval | number | Interval between callbacks in simulation ticks. |
-| callback | () => void | Called each time the trigger fires. |
+| interval | <code>number</code> | Interval between callbacks in simulation ticks. |
+| callback | <code>() =&gt; void</code> | Called each time the trigger fires. |
 
 <div class="smt-member-anchors">
 
@@ -15170,8 +14920,8 @@ register(triggerId: string, definition: MainTriggerDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| triggerId | `string` | Unique trigger identifier. |
-| definition | [`MainTriggerDefinition`](?id=sandkit.api.triggers.maintriggerdefinition) | Interval in ticks and callback to invoke. |
+| triggerId | `string` | `string` Unique trigger identifier. |
+| definition | <code>[`MainTriggerDefinition`](?id=sandkit.api.triggers.maintriggerdefinition)</code> | [`MainTriggerDefinition`](?id=sandkit.api.triggers.maintriggerdefinition) Interval in ticks and callback to invoke. |
 
 <div class="smt-member-anchors">
 
@@ -15318,8 +15068,8 @@ api.ui.useGameEvent("resource:collected", (payload) => {
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "message" | Discriminator for tooltip renderer selection. |
-| text | LocalizedText | Message body as localized text. |
+| type | <code>&quot;message&quot;</code> | Discriminator for tooltip renderer selection. |
+| text | <code>LocalizedText</code> | Message body as localized text. |
 
 <div class="smt-member-anchors">
 
@@ -15341,9 +15091,9 @@ Message tooltip with localized body text.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| ref | RefObject<T> | Ref to attach to the focusable element. |
-| focused | boolean | True when the element has controller focus. |
-| focus | () => void | Move controller focus to this element. |
+| ref | <code>RefObject&lt;T&gt;</code> | Ref to attach to the focusable element. |
+| focused | <code>boolean</code> | True when the element has controller focus. |
+| focus | <code>() =&gt; void</code> | Move controller focus to this element. |
 
 <div class="smt-member-anchors">
 
@@ -15357,10 +15107,6 @@ Message tooltip with localized body text.
 
 Focusable element state from useFocusable.
 
-##### Type Parameters
-
-###### T
-
 `T` *extends* `HTMLElement` = `HTMLDivElement`
 
 </div>
@@ -15373,15 +15119,15 @@ Focusable element state from useFocusable.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Unique id within the focus scope. |
-| scope | string | Focus scope id this element belongs to. |
-| onActivate | (element?: HTMLElement) => void | Called when the element is activated (A button / Enter). |
-| onFocus? | () => void | Called when the element receives focus. |
-| disabled? | boolean | When true, skip this element during navigation. |
-| x? | number | Optional grid column for spatial navigation. |
-| y? | number | Optional grid row for spatial navigation. |
-| neighbors? | Partial<Record<"left" &#124; "right" &#124; "up" &#124; "down", string>> | Neighbor ids for directional navigation. |
-| scrollIntoView? | boolean | When true, scroll the element into view on focus. |
+| id | <code>string</code> | Unique id within the focus scope. |
+| scope | <code>string</code> | Focus scope id this element belongs to. |
+| onActivate | <code>(element?: HTMLElement) =&gt; void</code> | Called when the element is activated (A button / Enter). |
+| onFocus? | <code>optional onFocus?: () =&gt; void</code> | Called when the element receives focus. |
+| disabled? | <code>optional disabled?: boolean</code> | When true, skip this element during navigation. |
+| x? | <code>optional x?: number</code> | Optional grid column for spatial navigation. |
+| y? | <code>optional y?: number</code> | Optional grid row for spatial navigation. |
+| neighbors? | <code>optional neighbors?: Partial&lt;Record&lt;&quot;left&quot; &#124; &quot;right&quot; &#124; &quot;up&quot; &#124; &quot;down&quot;, string&gt;&gt;</code> | Neighbor ids for directional navigation. |
+| scrollIntoView? | <code>optional scrollIntoView?: boolean</code> | When true, scroll the element into view on focus. |
 
 <div class="smt-member-anchors">
 
@@ -15502,8 +15248,8 @@ update(componentId: ComponentId, options?: ComponentUpdateOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| componentId | [`ComponentId`](?id=sandkit.api.ui.componentid) | Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) value or custom string id. |
-| options? | [`ComponentUpdateOptions`](?id=sandkit.api.ui.componentupdateoptions) | Component-specific update payload. |
+| componentId | <code>[`ComponentId`](?id=sandkit.api.ui.componentid)</code> | [`ComponentId`](?id=sandkit.api.ui.componentid) Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) value or custom string id. |
+| options? | <code>[`ComponentUpdateOptions`](?id=sandkit.api.ui.componentupdateoptions)</code> | [`ComponentUpdateOptions`](?id=sandkit.api.ui.componentupdateoptions) Component-specific update payload. |
 
 <div class="smt-member-anchors">
 
@@ -15551,7 +15297,7 @@ showTooltip(data: TooltipMessageData): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| data | [`TooltipMessageData`](?id=sandkit.api.ui.tooltipmessagedata) | Tooltip type and localized content. |
+| data | <code>[`TooltipMessageData`](?id=sandkit.api.ui.tooltipmessagedata)</code> | [`TooltipMessageData`](?id=sandkit.api.ui.tooltipmessagedata) Tooltip type and localized content. |
 
 <div class="smt-member-anchors">
 
@@ -15579,8 +15325,8 @@ alert(message: LocalizedText, title?: LocalizedText): Promise<void>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| message | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Dialog body text. |
-| title? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Optional dialog title. |
+| message | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Dialog body text. |
+| title? | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Optional dialog title. |
 
 <div class="smt-member-anchors">
 
@@ -15621,8 +15367,8 @@ confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| message | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Dialog body text. |
-| title? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Optional dialog title. |
+| message | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Dialog body text. |
+| title? | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Optional dialog title. |
 
 <div class="smt-member-anchors">
 
@@ -15662,11 +15408,11 @@ prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedTex
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| message | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Dialog body text. |
-| defaultValue? | `string` | Initial input value. |
-| placeholder? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Placeholder text in the input field. |
-| title? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Optional dialog title. |
-| allowCopy? | `boolean` | When true, allow copying the result from the dialog. |
+| message | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Dialog body text. |
+| defaultValue? | `string` | `string` Initial input value. |
+| placeholder? | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Placeholder text in the input field. |
+| title? | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Optional dialog title. |
+| allowCopy? | `boolean` | `boolean` When true, allow copying the result from the dialog. |
 
 <div class="smt-member-anchors">
 
@@ -15684,7 +15430,7 @@ prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedTex
 
 Show a prompt dialog.
 
-`Promise`\<`string` &#124; `null`\> Promise that resolves with entered text, or null when cancelled.
+`Promise`\<`string` \| `null`\> Promise that resolves with entered text, or null when cancelled.
 
 ##### Example
 
@@ -15713,8 +15459,8 @@ inject(componentId: ComponentId, component: ComponentType<Record<string, never>>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| componentId | [`ComponentId`](?id=sandkit.api.ui.componentid) | Overlay slot or custom mount point id. |
-| component | `ComponentType`\<`Record`\<`string`, `never`\>\> | React component to render. |
+| componentId | <code>[`ComponentId`](?id=sandkit.api.ui.componentid)</code> | [`ComponentId`](?id=sandkit.api.ui.componentid) Overlay slot or custom mount point id. |
+| component | `ComponentType`\<`Record`\<`string`, `never`\>\> | `ComponentType`\<`Record`\<`string`, `never`\>\> React component to render. |
 
 <div class="smt-member-anchors">
 
@@ -15754,7 +15500,7 @@ sandkit.api.ui.navigation.useFocusable<T *extends* HTMLElement = HTMLDivElement>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options | [`FocusOptions`](api/sandkit.api.ui.md?id=focusoptions) | Focus registration and neighbor wiring. |
+| options | <code>[`FocusOptions`](api/sandkit.api.ui.md?id=focusoptions)</code> | [`FocusOptions`](api/sandkit.api.ui.md?id=focusoptions) Focus registration and neighbor wiring. |
 
 <div class="smt-member-anchors">
 
@@ -15763,10 +15509,6 @@ sandkit.api.ui.navigation.useFocusable<T *extends* HTMLElement = HTMLDivElement>
 </div>
 
 React hook for a focusable UI element in a scope.
-
-##### Type Parameters
-
-###### T
 
 `T` *extends* `HTMLElement` = `HTMLDivElement`
 
@@ -15800,7 +15542,7 @@ useFocusScope(options: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options | Scope id, priority, default focus, and back handler. |  |
+| options | <code>Scope id, priority, default focus, and back handler.</code> | Scope id, priority, default focus, and back handler. |
 
 <div class="smt-member-anchors">
 
@@ -15838,7 +15580,7 @@ controllerFocusClass(focused: boolean): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| focused | `boolean` | True when the element has controller focus. |
+| focused | `boolean` | `boolean` True when the element has controller focus. |
 
 <div class="smt-member-anchors">
 
@@ -15876,9 +15618,9 @@ register(slot: OverlaySlot, overlayId: string, render: () => ReactNode): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| slot | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) | Slot name (for example `"hotbar"`). |
-| overlayId | `string` | Unique id for this overlay within the slot. |
-| render | () => `ReactNode` | Function that returns React content. |
+| slot | <code>[`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot)</code> | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) Slot name (for example `"hotbar"`). |
+| overlayId | `string` | `string` Unique id for this overlay within the slot. |
+| render | <code>() =&gt; `ReactNode`</code> | () => `ReactNode` Function that returns React content. |
 
 <div class="smt-member-anchors">
 
@@ -15910,8 +15652,8 @@ unregister(slot: OverlaySlot, overlayId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| slot | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) | Slot name the overlay was registered in. |
-| overlayId | `string` | Overlay id passed to [register](?id=sandkit.api.ui.overlays.register). |
+| slot | <code>[`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot)</code> | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) Slot name the overlay was registered in. |
+| overlayId | `string` | `string` Overlay id passed to [register](?id=sandkit.api.ui.overlays.register). |
 
 <div class="smt-member-anchors">
 
@@ -15941,7 +15683,7 @@ update(slot: OverlaySlot): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| slot | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) | Slot name to refresh. |
+| slot | <code>[`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot)</code> | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) Slot name to refresh. |
 
 <div class="smt-member-anchors">
 
@@ -15967,10 +15709,10 @@ Request a re-render for all overlays in a slot.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| itemId | string |  |
-| itemNameKey? | string |  |
-| categoryId? | string |  |
-| upgrade | object |  |
+| itemId | <code>string</code> |  |
+| itemNameKey? | <code>string</code> |  |
+| categoryId? | <code>string</code> |  |
+| upgrade | <code>{ id: string; nameKey: string; descriptionKey: string; maxLevel: number; costs: number[]; oneOff: boolean }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -16002,8 +15744,8 @@ Upgrade definition registered for an item.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Category identifier referenced by upgrades. |
-| nameKey? | string | Display name translation key. |
+| id | <code>string</code> | Category identifier referenced by upgrades. |
+| nameKey? | <code>string</code> | Display name translation key. |
 
 <div class="smt-member-anchors">
 
@@ -16041,7 +15783,7 @@ registerCategory(definition: UpgradeCategoryDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`UpgradeCategoryDefinition`](?id=sandkit.api.upgrades.upgradecategorydefinition) | Category id and display metadata. |
+| definition | <code>[`UpgradeCategoryDefinition`](?id=sandkit.api.upgrades.upgradecategorydefinition)</code> | [`UpgradeCategoryDefinition`](?id=sandkit.api.upgrades.upgradecategorydefinition) Category id and display metadata. |
 
 <div class="smt-member-anchors">
 
@@ -16069,7 +15811,7 @@ register(definition: UpgradeDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`UpgradeDefinition`](?id=sandkit.api.upgrades.upgradedefinition) | Item id, upgrade id, costs, and level metadata. |
+| definition | <code>[`UpgradeDefinition`](?id=sandkit.api.upgrades.upgradedefinition)</code> | [`UpgradeDefinition`](?id=sandkit.api.upgrades.upgradedefinition) Item id, upgrade id, costs, and level metadata. |
 
 <div class="smt-member-anchors">
 
@@ -16097,9 +15839,9 @@ updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` | Parent item id. |
-| upgradeId | `string` | Upgrade id within the item. |
-| partial | `Partial`\<[`UpgradeDefinition`](?id=sandkit.api.upgrades.upgradedefinition)\> | Fields to merge into the definition. |
+| itemId | `string` | `string` Parent item id. |
+| upgradeId | `string` | `string` Upgrade id within the item. |
+| partial | `Partial`\<[`UpgradeDefinition`](?id=sandkit.api.upgrades.upgradedefinition)\> | `Partial`\<[`UpgradeDefinition`](?id=sandkit.api.upgrades.upgradedefinition)\> Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -16131,8 +15873,8 @@ getLevelById(itemId: string, upgradeId: string): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` | Parent item id. |
-| upgradeId | `string` | Upgrade id within the item. |
+| itemId | `string` | `string` Parent item id. |
+| upgradeId | `string` | `string` Upgrade id within the item. |
 
 <div class="smt-member-anchors">
 
@@ -16162,8 +15904,8 @@ getAvailableLevelById(itemId: string, upgradeId: string): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` | Parent item id. |
-| upgradeId | `string` | Upgrade id within the item. |
+| itemId | `string` | `string` Parent item id. |
+| upgradeId | `string` | `string` Upgrade id within the item. |
 
 <div class="smt-member-anchors">
 
@@ -16193,9 +15935,9 @@ setLevelById(itemId: string, upgradeId: string, level: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` | Parent item id. |
-| upgradeId | `string` | Upgrade id within the item. |
-| level | `number` | Level to set. |
+| itemId | `string` | `string` Parent item id. |
+| upgradeId | `string` | `string` Upgrade id within the item. |
+| level | `number` | `number` Level to set. |
 
 <div class="smt-member-anchors">
 
@@ -16233,8 +15975,8 @@ getDistance(pointA: Vector2, pointB: Vector2): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pointA | [`Vector2`](api/shared.player.md?id=vector2) | First point. |
-| pointB | [`Vector2`](api/shared.player.md?id=vector2) | Second point. |
+| pointA | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) First point. |
+| pointB | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Second point. |
 
 <div class="smt-member-anchors">
 
@@ -16264,8 +16006,8 @@ getDirection(pointA: Vector2, pointB: Vector2): Vector2
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pointA | [`Vector2`](api/shared.player.md?id=vector2) | Origin point. |
-| pointB | [`Vector2`](api/shared.player.md?id=vector2) | Target point. |
+| pointA | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Origin point. |
+| pointB | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Target point. |
 
 <div class="smt-member-anchors">
 
@@ -16297,8 +16039,8 @@ getAngle(pointA: Vector2, pointB: Vector2): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pointA | [`Vector2`](api/shared.player.md?id=vector2) | Origin point. |
-| pointB | [`Vector2`](api/shared.player.md?id=vector2) | Target point. |
+| pointA | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Origin point. |
+| pointB | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Target point. |
 
 <div class="smt-member-anchors">
 
@@ -16328,8 +16070,8 @@ getCoordinatesBetweenCells(pointA: Vector2, pointB: Vector2): Vector2[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pointA | [`Vector2`](api/shared.player.md?id=vector2) | Line start in cell coordinates. |
-| pointB | [`Vector2`](api/shared.player.md?id=vector2) | Line end in cell coordinates. |
+| pointA | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Line start in cell coordinates. |
+| pointB | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) Line end in cell coordinates. |
 
 <div class="smt-member-anchors">
 
@@ -16361,8 +16103,8 @@ getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pointA | [`Vector2`](api/shared.player.md?id=vector2) |  |
-| pointB | [`Vector2`](api/shared.player.md?id=vector2) |  |
+| pointA | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) |
+| pointB | <code>[`Vector2`](api/shared.player.md?id=vector2)</code> | [`Vector2`](api/shared.player.md?id=vector2) |
 
 <div class="smt-member-anchors">
 
@@ -16407,7 +16149,7 @@ setPostUpdateEnabled(enabled: boolean): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| enabled | `boolean` | When true, workers run post-update hooks each tick. |
+| enabled | `boolean` | `boolean` When true, workers run post-update hooks each tick. |
 
 <div class="smt-member-anchors">
 
@@ -16445,7 +16187,7 @@ runWhenSimulationIdle(callback: () => void): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | () => `void` |  |
+| callback | <code>() =&gt; `void`</code> | () => `void` |
 
 <div class="smt-member-anchors">
 
@@ -16480,7 +16222,7 @@ redrawAroundCellWhenIdle(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -16537,10 +16279,10 @@ createAtWorld(effectId: string, worldX: number, worldY: number, options?: Effect
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| effectId | `string` | Registered effect id. |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
-| options? | [`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions) | Duration, radius, and intensity settings. |
+| effectId | `string` | `string` Registered effect id. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
+| options? | <code>[`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions)</code> | [`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions) Duration, radius, and intensity settings. |
 
 <div class="smt-member-anchors">
 
@@ -16574,10 +16316,10 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| effectId | `string` |  |
-| worldX | `number` |  |
-| worldY | `number` |  |
-| options? | [`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions) |  |
+| effectId | `string` | `string` |
+| worldX | `number` | `number` |
+| worldY | `number` | `number` |
+| options? | <code>[`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions)</code> | [`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions) |
 
 <div class="smt-member-anchors">
 
@@ -16634,7 +16376,7 @@ createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -16672,7 +16414,7 @@ replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -16700,7 +16442,7 @@ removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md?id=elementremovaloptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md?id=elementremovaloptions)\]</code> | ...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md?id=elementremovaloptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -16728,10 +16470,10 @@ moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY:
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| fromCellX | `number` | Source cell column. |
-| fromCellY | `number` | Source cell row. |
-| toCellX | `number` | Destination cell column. |
-| toCellY | `number` | Destination cell row. |
+| fromCellX | `number` | `number` Source cell column. |
+| fromCellY | `number` | `number` Source cell row. |
+| toCellX | `number` | `number` Destination cell column. |
+| toCellY | `number` | `number` Destination cell row. |
 
 <div class="smt-member-anchors">
 
@@ -16767,10 +16509,10 @@ teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCe
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| fromCellX | `number` | Source cell column. |
-| fromCellY | `number` | Source cell row. |
-| toCellX | `number` | Destination cell column. |
-| toCellY | `number` | Destination cell row. |
+| fromCellX | `number` | `number` Source cell column. |
+| fromCellY | `number` | `number` Source cell row. |
+| toCellX | `number` | `number` Destination cell column. |
+| toCellY | `number` | `number` Destination cell row. |
 
 <div class="smt-member-anchors">
 
@@ -16804,10 +16546,10 @@ swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, se
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| firstCellX | `number` | First cell column. |
-| firstCellY | `number` | First cell row. |
-| secondCellX | `number` | Second cell column. |
-| secondCellY | `number` | Second cell row. |
+| firstCellX | `number` | `number` First cell column. |
+| firstCellY | `number` | `number` First cell row. |
+| secondCellX | `number` | `number` Second cell column. |
+| secondCellY | `number` | `number` Second cell row. |
 
 <div class="smt-member-anchors">
 
@@ -16843,10 +16585,10 @@ swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCel
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| firstCellX | `number` |  |
-| firstCellY | `number` |  |
-| secondCellX | `number` |  |
-| secondCellY | `number` |  |
+| firstCellX | `number` | `number` |
+| firstCellY | `number` | `number` |
+| secondCellX | `number` | `number` |
+| secondCellY | `number` | `number` |
 
 <div class="smt-member-anchors">
 
@@ -16887,7 +16629,7 @@ markMovementBlockedByIndex(elementIndex: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementIndex | `number` | Element index from [getInfoAtCell](api/sandkit.api.elements.md?id=getinfoatcell). |
+| elementIndex | `number` | `number` Element index from [getInfoAtCell](api/sandkit.api.elements.md?id=getinfoatcell). |
 
 <div class="smt-member-anchors">
 
@@ -16915,7 +16657,7 @@ markMovementBlockedByElementIndex(elementIndex: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementIndex | `number` |  |
+| elementIndex | `number` | `number` |
 
 <div class="smt-member-anchors">
 
@@ -16950,7 +16692,7 @@ setVelocityAtCell(...args: number, number, [Vector2]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
 
 <div class="smt-member-anchors">
 
@@ -16980,7 +16722,7 @@ addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -17010,7 +16752,7 @@ convertToParticleAtCell(...args: number, number, [Vector2]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
 
 <div class="smt-member-anchors">
 
@@ -17040,7 +16782,7 @@ convertFromParticleAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -17070,7 +16812,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -17100,7 +16842,7 @@ refreshColorAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -17128,7 +16870,7 @@ setPhysicsAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -17156,7 +16898,7 @@ setDurationAtCell(...args: [number, number, number, object]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, `object`\] |  |
+| args | <code>...\[`number`, `number`, `number`, `object`\]</code> | ...\[`number`, `number`, `number`, `object`\] |
 
 <div class="smt-member-anchors">
 
@@ -17203,8 +16945,8 @@ Worker-thread `sandkit.api.events` — subscribe to and emit worker-scoped event
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elementType? | ElementType | Required when subscribing to `element:moved`. Optional on emit. |
-| terrainType? | number | Required when subscribing to `terrain:updated`. Optional on emit. |
+| elementType? | <code>ElementType</code> | Required when subscribing to `element:moved`. Optional on emit. |
+| terrainType? | <code>number</code> | Required when subscribing to `terrain:updated`. Optional on emit. |
 
 <div class="smt-member-anchors">
 
@@ -17226,7 +16968,7 @@ Guard filter for worker events.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| guard? | EventGuard |  |
+| guard? | <code>EventGuard</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -17244,13 +16986,13 @@ Options for [emit](?id=sandkit.api.events.worker.emit).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L86" target="_blank" rel="noopener">events.d.ts:86</a></p>
 
-| Property | Type | Description |
+| Hook | Args | Notes |
 | --- | --- | --- |
-| element:moved | moved: Record<string, unknown> |  |
-| terrain:updated | updated: Record<string, unknown> |  |
-| ~~terrain:update~~ | update: Record<string, unknown> |  |
-| worker:update:post | update:post: Record<string, unknown> |  |
-| ~~update:post~~ | post: Record<string, unknown> |  |
+| `element:moved` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `terrain:updated` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`terrain:update`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `worker:update:post` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`update:post`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
 
 <div class="smt-member-anchors">
 
@@ -17287,10 +17029,6 @@ sandkit.api.events.EventOnOptions<K *extends* EventId> = K *extends* "element:mo
 </div>
 
 Options for [on](?id=sandkit.api.events.worker.on).
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`EventId`](?id=sandkit.api.events.worker.eventid)
 
@@ -17330,12 +17068,6 @@ sandkit.api.events.EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPa
 
 Event payload type for a given event id.
 
-##### Type Parameters
-
-###### K
-
-`K`
-
 </div>
 
 ### Functions <!-- {docsify-ignore} -->
@@ -17356,9 +17088,9 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| eventId | `K` | Registered event name. |
-| callback | (`payload`: [`EventPayload`](?id=sandkit.api.events.worker.eventpayload)\<`K`\>) => `void` | Called when the event is emitted. |
-| options? | [`EventOnOptions`](?id=sandkit.api.events.worker.eventonoptions)\<`K`\> | Required guard for filtered events. |
+| eventId | `K` | `K` Registered event name. |
+| callback | <code>(`payload`: [`EventPayload`](?id=sandkit.api.events.worker.eventpayload)\&lt;`K`\&gt;) =&gt; `void`</code> | (`payload`: [`EventPayload`](?id=sandkit.api.events.worker.eventpayload)\<`K`\>) => `void` Called when the event is emitted. |
+| options? | <code>[`EventOnOptions`](?id=sandkit.api.events.worker.eventonoptions)\&lt;`K`\&gt;</code> | [`EventOnOptions`](?id=sandkit.api.events.worker.eventonoptions)\<`K`\> Required guard for filtered events. |
 
 <div class="smt-member-anchors">
 
@@ -17371,10 +17103,6 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 </div>
 
 Subscribe to a worker event. Returns an unsubscribe function.
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`EventId`](?id=sandkit.api.events.worker.eventid)
 
@@ -17430,9 +17158,9 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| eventId | `K` | Registered event name. |
-| payload | [`EventPayload`](?id=sandkit.api.events.worker.eventpayload)\<`K`\> | Serializable payload passed to listeners. |
-| options? | [`EventEmitOptions`](?id=sandkit.api.events.worker.eventemitoptions) | Optional guard forwarded to filtered listeners. |
+| eventId | `K` | `K` Registered event name. |
+| payload | <code>[`EventPayload`](?id=sandkit.api.events.worker.eventpayload)\&lt;`K`\&gt;</code> | [`EventPayload`](?id=sandkit.api.events.worker.eventpayload)\<`K`\> Serializable payload passed to listeners. |
+| options? | <code>[`EventEmitOptions`](?id=sandkit.api.events.worker.eventemitoptions)</code> | [`EventEmitOptions`](?id=sandkit.api.events.worker.eventemitoptions) Optional guard forwarded to filtered listeners. |
 
 <div class="smt-member-anchors">
 
@@ -17445,10 +17173,6 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 </div>
 
 Emit a worker event with a payload to subscribers.
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`EventId`](?id=sandkit.api.events.worker.eventid)
 
@@ -17484,7 +17208,7 @@ canBurnElementAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -17512,7 +17236,7 @@ burnElementAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -17558,7 +17282,7 @@ Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook point
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cancelled | boolean | True after [cancel](?id=sandkit.api.hooks.worker.cancel) was called on this context. |
+| cancelled | <code>boolean</code> | True after [cancel](?id=sandkit.api.hooks.worker.cancel) was called on this context. |
 
 <div class="smt-member-anchors">
 
@@ -17566,23 +17290,17 @@ Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook point
 
 </div>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| cancel() | <code>(): void</code> | When called, the intercepted action is skipped. |
+
+<div class="smt-member-anchors">
+
+###### cancel() <!-- {docsify-ignore} -->
+
+</div>
+
 Context passed to intercept hook callbacks.
-
-##### Methods
-
-###### cancel()
-
-```ts
-cancel(): void
-```
-
-Defined in: [worker/api/hooks.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L112)
-
-When called, the intercepted action is skipped.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -17594,8 +17312,8 @@ When called, the intercepted action is skipped.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elementType? | ElementType | Required for element-scoped intercept hooks and optional on emit. |
-| terrainType? | number | Required for terrain-scoped event guards; optional on emit. |
+| elementType? | <code>ElementType</code> | Required for element-scoped intercept hooks and optional on emit. |
+| terrainType? | <code>number</code> | Required for terrain-scoped event guards; optional on emit. |
 
 <div class="smt-member-anchors">
 
@@ -17617,8 +17335,8 @@ Guard filter for worker hook registration.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| guard? | HookGuard |  |
-| priority? | number |  |
+| guard? | <code>HookGuard</code> |  |
+| priority? | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -17638,18 +17356,18 @@ Options for [modify](?id=sandkit.api.hooks.worker.modify).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L164" target="_blank" rel="noopener">hooks.d.ts:164</a></p>
 
-| Property | Type | Description |
+| Hook | Args | Notes |
 | --- | --- | --- |
-| cell:process | process: Record<string, unknown> |  |
-| element:update | update: Record<string, unknown> |  |
-| element:move | move: Record<string, unknown> |  |
-| element:move:blocked | move:blocked: Record<string, unknown> |  |
-| ~~element:blocked~~ | blocked: Record<string, unknown> |  |
-| element:duration:expire | duration:expire: Record<string, unknown> |  |
-| ~~element:duration~~ | duration: Record<string, unknown> |  |
-| fire:element:burn | element:burn: Record<string, unknown> |  |
-| fire:terrain:burn | terrain:burn: Record<string, unknown> |  |
-| shaker:elementOn | elementOn: Record<string, unknown> |  |
+| `cell:process` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `element:update` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `element:move` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `element:move:blocked` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`element:blocked`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `element:duration:expire` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`element:duration`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `fire:element:burn` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `fire:terrain:burn` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `shaker:elementOn` | <code>Record&lt;string, unknown&gt;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -17696,10 +17414,6 @@ sandkit.api.hooks.InterceptHookOptions<K *extends* InterceptHookId> = K *extends
 </div>
 
 Options for [intercept](?id=sandkit.api.hooks.worker.intercept).
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.worker.intercepthookid)
 
@@ -17811,10 +17525,6 @@ sandkit.api.hooks.InterceptHookArgs<K *extends* InterceptHookId> = K *extends* k
 
 Intercept hook args for a given hook id.
 
-##### Type Parameters
-
-###### K
-
 `K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.worker.intercepthookid)
 
 </div>
@@ -17834,10 +17544,6 @@ sandkit.api.hooks.ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof M
 </div>
 
 Modify hook args for a given hook id.
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`ModifyHookId`](?id=sandkit.api.hooks.worker.modifyhookid)
 
@@ -17861,9 +17567,9 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| hookId | `K` | Registered hook identifier. |
-| callback | (`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.worker.intercepthookargs)\<`K`\>, `context`: [`HookContext`](?id=sandkit.api.hooks.worker.hookcontext)) => `void` | Called with hook arguments and context; may cancel the hook. |
-| options? | [`InterceptHookOptions`](?id=sandkit.api.hooks.worker.intercepthookoptions)\<`K`\> | Optional guard and priority. |
+| hookId | `K` | `K` Registered hook identifier. |
+| callback | <code>(`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.worker.intercepthookargs)\&lt;`K`\&gt;, `context`: [`HookContext`](?id=sandkit.api.hooks.worker.hookcontext)) =&gt; `void`</code> | (`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.worker.intercepthookargs)\<`K`\>, `context`: [`HookContext`](?id=sandkit.api.hooks.worker.hookcontext)) => `void` Called with hook arguments and context; may cancel the hook. |
+| options? | <code>[`InterceptHookOptions`](?id=sandkit.api.hooks.worker.intercepthookoptions)\&lt;`K`\&gt;</code> | [`InterceptHookOptions`](?id=sandkit.api.hooks.worker.intercepthookoptions)\<`K`\> Optional guard and priority. |
 
 <div class="smt-member-anchors">
 
@@ -17876,10 +17582,6 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 </div>
 
 Register an intercept hook on this worker. Returns an unsubscribe function.
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.worker.intercepthookid)
 
@@ -17977,9 +17679,9 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| hookId | `K` | Registered hook identifier. |
-| callback | (`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.worker.modifyhookargs)\<`K`\>) => `void` | Called with hook arguments; may mutate hook payload. |
-| options? | [`ModifyHookOptions`](?id=sandkit.api.hooks.worker.modifyhookoptions) | Optional guard and priority. |
+| hookId | `K` | `K` Registered hook identifier. |
+| callback | <code>(`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.worker.modifyhookargs)\&lt;`K`\&gt;) =&gt; `void`</code> | (`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.worker.modifyhookargs)\<`K`\>) => `void` Called with hook arguments; may mutate hook payload. |
+| options? | <code>[`ModifyHookOptions`](?id=sandkit.api.hooks.worker.modifyhookoptions)</code> | [`ModifyHookOptions`](?id=sandkit.api.hooks.worker.modifyhookoptions) Optional guard and priority. |
 
 <div class="smt-member-anchors">
 
@@ -17992,10 +17694,6 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 </div>
 
 Register a modifier hook on this worker. Returns an unsubscribe function.
-
-##### Type Parameters
-
-###### K
 
 `K` *extends* [`ModifyHookId`](?id=sandkit.api.hooks.worker.modifyhookid)
 
@@ -18039,8 +17737,8 @@ Short-lived visual effect lights.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| lightId | number &#124; null | Runtime light id, or null when the pool is full. |
-| ~~index?~~ | number &#124; null |  |
+| lightId | <code>number &#124; null</code> | Runtime light id, or null when the pool is full. |
+| ~~index?~~ | <code>number &#124; null</code> | Deprecated alias. |
 
 <div class="smt-member-anchors">
 
@@ -18092,9 +17790,9 @@ createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
-| options? | [`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions) | Brightness, duration, colour, and dedup settings. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
+| options? | <code>[`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions)</code> | [`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions) Brightness, duration, colour, and dedup settings. |
 
 <div class="smt-member-anchors">
 
@@ -18154,8 +17852,8 @@ sandkit.api.main.emitEvent<Payload = any>(eventId: string, payload: Payload): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| eventId | `string` | Registered event name. |
-| payload | `Payload` | Serializable payload passed to main-thread listeners. |
+| eventId | `string` | `string` Registered event name. |
+| payload | `Payload` | `Payload` Serializable payload passed to main-thread listeners. |
 
 <div class="smt-member-anchors">
 
@@ -18166,10 +17864,6 @@ sandkit.api.main.emitEvent<Payload = any>(eventId: string, payload: Payload): vo
 </div>
 
 Emit a custom event on the main thread.
-
-##### Type Parameters
-
-###### Payload
 
 `Payload` = `any`
 
@@ -18195,12 +17889,12 @@ Shared `sandkit.api.maps` base — active custom map metadata.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id? | string |  |
-| deployment? | unknown |  |
-| spawn? | unknown |  |
-| topBounds? | object |  |
-| parallax? | unknown |  |
-| depthLight? | unknown |  |
+| id? | <code>string</code> |  |
+| deployment? | <code>unknown</code> |  |
+| spawn? | <code>unknown</code> |  |
+| topBounds? | <code>{ soft: number; hard: number }</code> |  |
+| parallax? | <code>unknown</code> |  |
+| depthLight? | <code>unknown</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -18248,7 +17942,7 @@ getActive(): Readonly<ActiveMapV1> | null
 
 Return the currently loaded custom map definition.
 
-`Readonly`\<[`ActiveMapV1`](?id=sandkit.api.maps.worker.activemapv1)\> &#124; `null` Active map metadata, or `null` outside custom maps.
+`Readonly`\<[`ActiveMapV1`](?id=sandkit.api.maps.worker.activemapv1)\> \| `null` Active map metadata, or `null` outside custom maps.
 
 </div>
 
@@ -18327,7 +18021,7 @@ isCollidingWithCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -18357,7 +18051,7 @@ isWithinRadiusOfCell(...args: [number, number, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -18411,8 +18105,8 @@ require(key: string, config: object): SharedArray
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Buffer name shared across threads. |
-| config | Expected array type and length for validation. |  |
+| key | `string` | `string` Buffer name shared across threads. |
+| config | <code>Expected array type and length for validation.</code> | Expected array type and length for validation. |
 
 <div class="smt-member-anchors">
 
@@ -18460,8 +18154,8 @@ Shared `sandkit.api.structures` base — structure lookup and mutation.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elementId? | string &#124; null |  |
-| elementType? | TaggedNumber<"elementType"> &#124; null |  |
+| elementId? | <code>string &#124; null</code> |  |
+| elementType? | <code>TaggedNumber&lt;&quot;elementType&quot;&gt; &#124; null</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -18489,10 +18183,10 @@ Per-structure custom data bag.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| x | number |  |
-| y | number |  |
-| trapped? | boolean |  |
-| data? | StructureData |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
+| trapped? | <code>boolean</code> |  |
+| data? | <code>StructureData</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -18590,8 +18284,8 @@ forEachOfType(structureTypeOrId: StructureRef, callback: (structure: Structure) 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | [`StructureRef`](?id=sandkit.api.structures.worker.structureref) | Structure type value or string id. |
-| callback | (`structure`: [`Structure`](?id=sandkit.api.structures.worker.structure)) => `void` | Called once per matching structure instance. |
+| structureTypeOrId | <code>[`StructureRef`](?id=sandkit.api.structures.worker.structureref)</code> | [`StructureRef`](?id=sandkit.api.structures.worker.structureref) Structure type value or string id. |
+| callback | <code>(`structure`: [`Structure`](?id=sandkit.api.structures.worker.structure)) =&gt; `void`</code> | (`structure`: [`Structure`](?id=sandkit.api.structures.worker.structure)) => `void` Called once per matching structure instance. |
 
 <div class="smt-member-anchors">
 
@@ -18631,7 +18325,7 @@ getAtCell(...args: CellCoordinates): Structure | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -18641,7 +18335,7 @@ getAtCell(...args: CellCoordinates): Structure | null
 
 Return the structure at a cell, or null when none.
 
-[`Structure`](?id=sandkit.api.structures.worker.structure) &#124; `null`
+[`Structure`](?id=sandkit.api.structures.worker.structure) \| `null`
 
 </div>
 
@@ -18661,7 +18355,7 @@ getDefinitionByType(structureType: StructureRef): any
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureType | [`StructureRef`](?id=sandkit.api.structures.worker.structureref) | Structure type value or string id. |
+| structureType | <code>[`StructureRef`](?id=sandkit.api.structures.worker.structureref)</code> | [`StructureRef`](?id=sandkit.api.structures.worker.structureref) Structure type value or string id. |
 
 <div class="smt-member-anchors">
 
@@ -18689,7 +18383,7 @@ getTypeById(structureId: string & object): StructureType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` & `object` | Structure string id. |
+| structureId | `string` & `object` | `string` & `object` Structure string id. |
 
 <div class="smt-member-anchors">
 
@@ -18719,7 +18413,7 @@ getTypeFromId(structureId: string & object): StructureType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` & `object` |  |
+| structureId | `string` & `object` | `string` & `object` |
 
 <div class="smt-member-anchors">
 
@@ -18756,7 +18450,7 @@ hasBuiltAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -18784,8 +18478,8 @@ isType(structure: Structure | null, structureId: string & object): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | [`Structure`](?id=sandkit.api.structures.worker.structure) &#124; `null` | Structure instance, or null. |
-| structureId | `string` & `object` | Structure string id to compare. |
+| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure) \&#124; `null`</code> | [`Structure`](?id=sandkit.api.structures.worker.structure) &#124; `null` Structure instance, or null. |
+| structureId | `string` & `object` | `string` & `object` Structure string id to compare. |
 
 <div class="smt-member-anchors">
 
@@ -18815,7 +18509,7 @@ isTypeAtCell(...args: [number, number, string & object]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `string` & `object`\] |  |
+| args | <code>...\[`number`, `number`, `string` &amp; `object`\]</code> | ...\[`number`, `number`, `string` & `object`\] |
 
 <div class="smt-member-anchors">
 
@@ -18843,8 +18537,8 @@ setSpritesheetIndex(structure: Structure, index: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | [`Structure`](?id=sandkit.api.structures.worker.structure) | Target structure instance. |
-| index | `number` | Spritesheet frame index. |
+| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure)</code> | [`Structure`](?id=sandkit.api.structures.worker.structure) Target structure instance. |
+| index | `number` | `number` Spritesheet frame index. |
 
 <div class="smt-member-anchors">
 
@@ -18874,7 +18568,7 @@ setSpritesheetIndexAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -18902,9 +18596,9 @@ setSpritesheetIndexByValue(structure: Structure, value: number, thresholds: numb
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | [`Structure`](?id=sandkit.api.structures.worker.structure) | Target structure instance. |
-| value | `number` | Numeric value mapped through thresholds. |
-| thresholds | `number`[] | Ascending threshold values. |
+| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure)</code> | [`Structure`](?id=sandkit.api.structures.worker.structure) Target structure instance. |
+| value | `number` | `number` Numeric value mapped through thresholds. |
+| thresholds | `number`[] | `number`[] Ascending threshold values. |
 
 <div class="smt-member-anchors">
 
@@ -18936,7 +18630,7 @@ setSpritesheetIndexByValueAtCell(...args: [number, number, number, number[]]): v
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, `number`[]\] |  |
+| args | <code>...\[`number`, `number`, `number`, `number`[]\]</code> | ...\[`number`, `number`, `number`, `number`[]\] |
 
 <div class="smt-member-anchors">
 
@@ -18964,8 +18658,8 @@ update(structure: Structure, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | [`Structure`](?id=sandkit.api.structures.worker.structure) | Structure instance to update. |
-| options? | When `propagateToWorkers` is true, sync to worker threads. |  |
+| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure)</code> | [`Structure`](?id=sandkit.api.structures.worker.structure) Structure instance to update. |
+| options? | <code>When `propagateToWorkers` is true, sync to worker threads.</code> | When `propagateToWorkers` is true, sync to worker threads. |
 
 <div class="smt-member-anchors">
 
@@ -19003,9 +18697,9 @@ updateData(structure: Structure, partial: any, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | [`Structure`](?id=sandkit.api.structures.worker.structure) | Structure instance to update. |
-| partial | `any` | Fields to merge onto `structure.data`. |
-| options? | When `propagateToWorkers` is true, sync to worker threads. |  |
+| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure)</code> | [`Structure`](?id=sandkit.api.structures.worker.structure) Structure instance to update. |
+| partial | `any` | `any` Fields to merge onto `structure.data`. |
+| options? | <code>When `propagateToWorkers` is true, sync to worker threads.</code> | When `propagateToWorkers` is true, sync to worker threads. |
 
 <div class="smt-member-anchors">
 
@@ -19049,9 +18743,9 @@ setData(structure: Structure, partial: any, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | [`Structure`](?id=sandkit.api.structures.worker.structure) |  |
-| partial | `any` |  |
-| options? |  |  |
+| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure)</code> | [`Structure`](?id=sandkit.api.structures.worker.structure) |
+| partial | `any` | `any` |
+| options? | <code>{ propagateToWorkers: boolean }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -19098,7 +18792,7 @@ isEnabledAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -19126,7 +18820,7 @@ isEnabledAt(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -19168,15 +18862,15 @@ Worker-entry mutations are immediate. Main thread defers matching helpers in
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Unique mod-scoped terrain id. |
-| nameKey? | string | i18n key for the terrain display name. |
-| hp? | number | Default terrain hit points. |
-| materialId? | number | Material id used for rendering. Must be > obstacle breakpoint and < 150. |
-| metaColor? | number | UI/meta color as 0xRRGGBB. |
-| colorHSL? | [number, number, number] | Base terrain color as HSL components. |
-| excavationRequirements? | readonly string[] | Tool item ids required to excavate this terrain. |
-| interactions? | readonly object[] | Tooltip interactions shown for this terrain. |
-| output? | object | Default element drop when the terrain is destroyed. |
+| id | <code>string</code> | Unique mod-scoped terrain id. |
+| nameKey? | <code>string</code> | i18n key for the terrain display name. |
+| hp? | <code>number</code> | Default terrain hit points. |
+| materialId? | <code>number</code> | Material id used for rendering. Must be > obstacle breakpoint and < 150. |
+| metaColor? | <code>number</code> | UI/meta color as 0xRRGGBB. |
+| colorHSL? | <code>[number, number, number]</code> | Base terrain color as HSL components. |
+| excavationRequirements? | <code>readonly string[]</code> | Tool item ids required to excavate this terrain. |
+| interactions? | <code>readonly object[]</code> | Tooltip interactions shown for this terrain. |
+| output? | <code>{ elementType: ElementType; chance: number }</code> | Default element drop when the terrain is destroyed. |
 
 <div class="smt-member-anchors">
 
@@ -19218,9 +18912,9 @@ Terrain definition shape for register and [getDefinitionByType](?id=sandkit.api.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cellType | TerrainType | Numeric terrain cell type. |
-| hitPoints | number &#124; null | Current hit points, or null when the terrain has no hp. |
-| ~~hp?~~ | number &#124; null |  |
+| cellType | <code>TerrainType</code> | Numeric terrain cell type. |
+| hitPoints | <code>number &#124; null</code> | Current hit points, or null when the terrain has no hp. |
+| ~~hp?~~ | <code>number &#124; null</code> | Deprecated alias. |
 
 <div class="smt-member-anchors">
 
@@ -19244,7 +18938,7 @@ Terrain cell data returned by [getDataAtCell](?id=sandkit.api.terrains.worker.ge
 
 | Property | Type | Description |
 | --- | --- | --- |
-| skipShadow? | boolean | Skip shadow updates around the changed cell. |
+| skipShadow? | <code>boolean</code> | Skip shadow updates around the changed cell. |
 
 <div class="smt-member-anchors">
 
@@ -19330,7 +19024,7 @@ getIdByType(terrainType: TerrainType): string & object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainType | [`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) | Numeric terrain cell type. |
+| terrainType | <code>[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype)</code> | [`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) Numeric terrain cell type. |
 
 <div class="smt-member-anchors">
 
@@ -19360,7 +19054,7 @@ getTypeById(terrainId: string & object): TerrainType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainId | `string` & `object` | Mod-registered or built-in terrain id. |
+| terrainId | `string` & `object` | `string` & `object` Mod-registered or built-in terrain id. |
 
 <div class="smt-member-anchors">
 
@@ -19390,7 +19084,7 @@ getTypeFromId(terrainId: string & object): TerrainType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainId | `string` & `object` |  |
+| terrainId | `string` & `object` | `string` & `object` |
 
 <div class="smt-member-anchors">
 
@@ -19427,7 +19121,7 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainType | [`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) | Numeric terrain cell type. |
+| terrainType | <code>[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype)</code> | [`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) Numeric terrain cell type. |
 
 <div class="smt-member-anchors">
 
@@ -19437,7 +19131,7 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 Look up the definition for a terrain type.
 
-[`TerrainDefinition`](?id=sandkit.api.terrains.worker.terraindefinition) &#124; `undefined`
+[`TerrainDefinition`](?id=sandkit.api.terrains.worker.terraindefinition) \| `undefined`
 
 </div>
 
@@ -19457,7 +19151,7 @@ getTypeAtCell(...args: CellCoordinates): TerrainType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -19467,7 +19161,7 @@ getTypeAtCell(...args: CellCoordinates): TerrainType | null
 
 Return the terrain cell type at a cell, or null when none.
 
-[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) &#124; `null`
+[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) \| `null`
 
 </div>
 
@@ -19487,7 +19181,7 @@ getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -19497,7 +19191,7 @@ getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 
 Return terrain cell type and hit points at a cell.
 
-[`TerrainDataAtCell`](?id=sandkit.api.terrains.worker.terraindataatcell) &#124; `null` Cell type and hit points, or null when the cell is not terrain.
+[`TerrainDataAtCell`](?id=sandkit.api.terrains.worker.terraindataatcell) \| `null` Cell type and hit points, or null when the cell is not terrain.
 
 </div>
 
@@ -19517,7 +19211,7 @@ isAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -19545,7 +19239,7 @@ isTypeAtCell(...args: [number, number, string & object]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `string` & `object`\] |  |
+| args | <code>...\[`number`, `number`, `string` &amp; `object`\]</code> | ...\[`number`, `number`, `string` & `object`\] |
 
 <div class="smt-member-anchors">
 
@@ -19573,7 +19267,7 @@ isCellIdTerrain(cellId: CellId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md?id=getcellidatcell). |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md?id=getcellidatcell). |
 
 <div class="smt-member-anchors">
 
@@ -19601,7 +19295,7 @@ damageAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -19629,7 +19323,7 @@ meltAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -19657,7 +19351,7 @@ createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainRef`](?id=sandkit.api.terrains.worker.terrainref), [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=sandkit.api.terrains.worker.terrainref), [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](?id=sandkit.api.terrains.worker.terrainref), [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -19685,7 +19379,7 @@ replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainRef`](?id=sandkit.api.terrains.worker.terrainref), [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=sandkit.api.terrains.worker.terrainref), [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](?id=sandkit.api.terrains.worker.terrainref), [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -19713,7 +19407,7 @@ removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -19741,7 +19435,7 @@ setHitPointsAtCell(...args: [number, number, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -19771,7 +19465,7 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -19812,8 +19506,8 @@ Main thread adds richer UI APIs on top of this shape.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| key | string | Namespaced translation key (for example `ui&#124;save&#124;save`). |
-| params? | Record<string, string &#124; number> | Values merged into the translated string. |
+| key | <code>string</code> | Namespaced translation key (for example `ui&#124;save&#124;save`). |
+| params? | <code>Record&lt;string, string &#124; number&gt;</code> | Values merged into the translated string. |
 
 <div class="smt-member-anchors">
 
@@ -19835,9 +19529,9 @@ Translation key with optional parameter substitution.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| \_\_translatable | true |  |
-| key | string |  |
-| fallback | string |  |
+| \_\_translatable | <code>true</code> |  |
+| key | <code>string</code> |  |
+| fallback | <code>string</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -19861,10 +19555,10 @@ Value returned by `sandkit.api.i18n.translatable`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cooldown? | number | Minimum ms before the same toast can show again. |
-| cooldownKey? | string | Dedupe key paired with [ToastOptions.cooldown](?id=sandkit.api.ui.worker.cooldown). Defaults to the message string or `message.key`. |
-| duration? | number &#124; false | Auto-dismiss delay in ms. Default `5000`. Set `false` to keep the toast until another toast replaces it. |
-| variant? | string & object &#124; "danger" &#124; "hint" &#124; "hole" | Visual style applied to the toast body. |
+| cooldown? | <code>number</code> | Minimum ms before the same toast can show again. |
+| cooldownKey? | <code>string</code> | Dedupe key paired with [ToastOptions.cooldown](?id=sandkit.api.ui.worker.cooldown). Defaults to the message string or `message.key`. |
+| duration? | <code>number &#124; false</code> | Auto-dismiss delay in ms. Default `5000`. Set `false` to keep the toast until another toast replaces it. |
+| variant? | <code>string &amp; object &#124; &quot;danger&quot; &#124; &quot;hint&quot; &#124; &quot;hole&quot;</code> | Visual style applied to the toast body. |
 
 <div class="smt-member-anchors">
 
@@ -19920,8 +19614,8 @@ toast(message: LocalizedText, options?: ToastOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| message | [`LocalizedText`](?id=sandkit.api.ui.worker.localizedtext) | Plain text, translation key, or translatable value. |
-| options? | [`ToastOptions`](?id=sandkit.api.ui.worker.toastoptions) | Cooldown, style, and auto-dismiss options. |
+| message | <code>[`LocalizedText`](?id=sandkit.api.ui.worker.localizedtext)</code> | [`LocalizedText`](?id=sandkit.api.ui.worker.localizedtext) Plain text, translation key, or translatable value. |
+| options? | <code>[`ToastOptions`](?id=sandkit.api.ui.worker.toastoptions)</code> | [`ToastOptions`](?id=sandkit.api.ui.worker.toastoptions) Cooldown, style, and auto-dismiss options. |
 
 <div class="smt-member-anchors">
 
@@ -20014,7 +19708,7 @@ Use [grid](api/sandkit.api.grid.worker.md) instead.
 
 `sandkit.engine.api.augments` — player augment levels and unlocked perks.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -20036,7 +19730,7 @@ getDigLevel(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20064,7 +19758,7 @@ getGunLevel(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20092,7 +19786,7 @@ getPhaseLevel(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20120,7 +19814,7 @@ getRocketAmmoLevel(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20148,7 +19842,7 @@ getRocketReloadLevel(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20176,7 +19870,7 @@ getSprintCapLevel(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20204,7 +19898,7 @@ hasBigDig(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20232,7 +19926,7 @@ hasBulletSpeed(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20260,7 +19954,7 @@ hasBulletTracer(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20288,7 +19982,7 @@ hasKickstartBoost(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20316,7 +20010,7 @@ hasPhaseDash(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20344,7 +20038,7 @@ hasPhaseDashCharge(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20372,7 +20066,7 @@ hasRideBoost(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20400,7 +20094,7 @@ hasRocketDamage(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20428,7 +20122,7 @@ hasRocketWarhead(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20456,7 +20150,7 @@ hasSprintPower(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20484,7 +20178,7 @@ hasTripleShot(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20504,7 +20198,7 @@ Return whether the triple-shot augment is unlocked.
 
 `sandkit.engine.api.auralite` — auralite production tracking.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -20526,7 +20220,7 @@ ensureProducedAtLeast(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20554,7 +20248,7 @@ getProduced(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20574,7 +20268,7 @@ Return total auralite produced so far.
 
 `sandkit.engine.api.blueprints` — blueprint save, load, and import/export.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -20596,7 +20290,7 @@ delete(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20624,7 +20318,7 @@ exportAllString(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20652,7 +20346,7 @@ exportString(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20680,7 +20374,7 @@ getAll(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20708,7 +20402,7 @@ importString(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20736,7 +20430,7 @@ load(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20764,7 +20458,7 @@ save(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20784,7 +20478,7 @@ Save the current selection as a blueprint.
 
 `sandkit.engine.api.clipboard` — build clipboard copy, paste, and history.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -20806,7 +20500,7 @@ activate(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20834,7 +20528,7 @@ clear(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20862,7 +20556,7 @@ get(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20890,7 +20584,7 @@ getHistory(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20918,7 +20612,7 @@ getSignalLinks(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20946,7 +20640,7 @@ selectFromHistory(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20974,7 +20668,7 @@ set(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -20994,7 +20688,7 @@ Set the clipboard payload.
 
 `sandkit.engine.api.coloringTool` — paint-bucket and flood-fill structure coloring.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -21016,7 +20710,7 @@ colorStructure(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21044,7 +20738,7 @@ floodFillColor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21072,7 +20766,7 @@ getColor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21100,7 +20794,7 @@ isColorableStructure(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21128,7 +20822,7 @@ isMatchColorMode(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21156,7 +20850,7 @@ isPaintBucketMode(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21184,7 +20878,7 @@ setColor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21212,7 +20906,7 @@ toggleMatchColorMode(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21240,7 +20934,7 @@ togglePaintBucketMode(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21260,7 +20954,7 @@ Toggle paint-bucket mode on or off.
 
 `sandkit.engine.api.colorPicker` — structure color palette UI helpers.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -21324,7 +21018,7 @@ closePalette(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21352,7 +21046,7 @@ getActivePalette(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21380,7 +21074,7 @@ getCycleColor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21408,7 +21102,7 @@ getRandomColor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21436,7 +21130,7 @@ hexToRgba(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21464,7 +21158,7 @@ renderColorButton(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21492,7 +21186,7 @@ renderColorSection(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21520,7 +21214,7 @@ renderPalette(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21548,7 +21242,7 @@ rgbaToHex(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21576,7 +21270,7 @@ setActivePalette(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21604,7 +21298,7 @@ togglePalette(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21624,7 +21318,7 @@ Open or close the color palette UI.
 
 `sandkit.engine.api.conveyors` — conveyor type registration.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -21646,7 +21340,7 @@ registerType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21666,7 +21360,7 @@ Register a custom conveyor type.
 
 `sandkit.engine.api.debug` — debug overlay registration.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -21688,7 +21382,7 @@ register(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21708,7 +21402,7 @@ Register a debug overlay or helper.
 
 `sandkit.engine.api.drones` — drone spawn and removal.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -21730,7 +21424,7 @@ kill(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21758,7 +21452,7 @@ spawn(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21778,7 +21472,7 @@ Spawn a drone instance.
 
 `sandkit.engine.api.entities` — entity type registration, spawn, and queries.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -21800,7 +21494,7 @@ createLight(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21828,7 +21522,7 @@ getAll(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21856,7 +21550,7 @@ getAllByType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21884,7 +21578,7 @@ getAllTypeDefs(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21912,7 +21606,7 @@ getSprite(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21940,7 +21634,7 @@ getTypeDef(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21968,7 +21662,7 @@ launch(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -21996,7 +21690,7 @@ registerSpawner(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22024,7 +21718,7 @@ registerType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22052,7 +21746,7 @@ spawn(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22080,7 +21774,7 @@ startCapture(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22100,7 +21794,7 @@ Start capturing entities for a tool or effect.
 
 `sandkit.engine.api.extensions` — structure extension definitions.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -22122,7 +21816,7 @@ define(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22142,7 +21836,7 @@ Define a structure extension type.
 
 `sandkit.engine.api.factory` — factory tier progression and process tracking.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -22164,7 +21858,7 @@ addViabilityGold(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22192,7 +21886,7 @@ canUnlockNextTier(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22220,7 +21914,7 @@ ensureProcessAtLeast(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22248,7 +21942,7 @@ flushDeferredLevelUps(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22276,7 +21970,7 @@ getLevel(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22304,7 +21998,7 @@ getProcessCount(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22332,7 +22026,7 @@ getProcessRate(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22360,7 +22054,7 @@ recordProcess(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22388,7 +22082,7 @@ unlockNextTier(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22408,7 +22102,7 @@ Unlock the next factory tier.
 
 `sandkit.engine.api.foliage` — procedural foliage generation and clusters.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -22430,7 +22124,7 @@ generate(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22458,7 +22152,7 @@ getClusters(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22486,7 +22180,7 @@ getContainer(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22514,7 +22208,7 @@ hasProcgenData(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22534,7 +22228,7 @@ Return whether procgen foliage data exists for a location.
 
 `sandkit.engine.api.foundationColorPicker` — foundation tile color lookup.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -22556,7 +22250,7 @@ getColor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22576,7 +22270,7 @@ Return the color on a foundation tile.
 
 `sandkit.engine.api.game` — game session start, save, and load.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -22598,7 +22292,7 @@ load(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22626,7 +22320,7 @@ save(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22654,7 +22348,7 @@ start(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22674,7 +22368,7 @@ Start a new game session.
 
 `sandkit.engine.api.heatTransfer` — temperature diffusion and absorption.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -22696,7 +22390,7 @@ absorbAdjacentElements(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22724,7 +22418,7 @@ addTemperature(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22752,7 +22446,7 @@ computeDiffusedTemperatures(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22780,7 +22474,7 @@ computeEqualizedTemperature(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22808,7 +22502,7 @@ consumeTemperatureNear(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22836,7 +22530,7 @@ ensureTemperature(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22864,7 +22558,7 @@ equalizeConnected(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22884,7 +22578,7 @@ Equalize temperature across a connected component.
 
 `sandkit.engine.api.launchers` — launcher type registration.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -22906,7 +22600,7 @@ registerType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22926,7 +22620,7 @@ Register a custom launcher type.
 
 `sandkit.engine.api.lightColorPicker` — light color lookup.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -22948,7 +22642,7 @@ getColor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -22968,7 +22662,7 @@ Return the color on a light structure.
 
 `sandkit.engine.api.matters` — matter type registration and solid updates.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -22990,7 +22684,7 @@ getMatterTypeFromId(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23018,7 +22712,7 @@ register(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23046,7 +22740,7 @@ runSolidUpdate(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23066,7 +22760,7 @@ Run one solid-matter update step.
 
 `sandkit.engine.api.misc` — miscellaneous structure behavior registration.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -23088,7 +22782,7 @@ register(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23108,7 +22802,7 @@ Register a miscellaneous structure behavior.
 
 `sandkit.engine.api.portals` — portal marker queries.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -23130,7 +22824,7 @@ getMarkers(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23150,7 +22844,7 @@ Return portal markers in the world.
 
 `sandkit.engine.api.prefabData` — prefab artifact and metadata lookup.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -23172,7 +22866,7 @@ getAll(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23200,7 +22894,7 @@ getAllMetadata(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23228,7 +22922,7 @@ getArtifactLocations(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23256,7 +22950,7 @@ getAtCell(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23284,7 +22978,7 @@ getMetadata(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23304,7 +22998,7 @@ Return metadata for one prefab.
 
 `sandkit.engine.api.prefabDecor` — prefab decorative placement.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -23326,7 +23020,7 @@ getPlacementByName(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23354,7 +23048,7 @@ replaceDecor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23374,7 +23068,7 @@ Replace decor instances in a region or prefab.
 
 `sandkit.engine.api.prefabulator` — blueprint structure serialization for prefabs.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -23396,7 +23090,7 @@ localizeBlueprintStructures(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23424,7 +23118,7 @@ serializeBlueprintStructures(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23444,7 +23138,7 @@ Serialize blueprint structures for prefab storage.
 
 `sandkit.engine.api.prismaline` — prismaline resource consume and availability.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -23466,7 +23160,7 @@ consume(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23494,7 +23188,7 @@ getAvailable(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23522,7 +23216,7 @@ getConsumed(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23542,7 +23236,7 @@ Return total prismaline consumed so far.
 
 `sandkit.engine.api.prismite` — prismite resource consume and availability.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -23564,7 +23258,7 @@ consume(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23592,7 +23286,7 @@ getAvailable(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23620,7 +23314,7 @@ getConsumed(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23640,7 +23334,7 @@ Return total prismite consumed so far.
 
 `sandkit.engine.api.queue` — deferred tick queue with handlers.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -23662,7 +23356,7 @@ enqueue(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23690,7 +23384,7 @@ enqueueInTicks(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23718,7 +23412,7 @@ enqueueSkipTick(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23746,7 +23440,7 @@ process(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23774,7 +23468,7 @@ registerHandler(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23802,7 +23496,7 @@ removeByKey(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23822,7 +23516,7 @@ Remove queued items by key.
 
 `sandkit.engine.api.shadows` — shadow map refresh for regions.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -23844,7 +23538,7 @@ refresh(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23872,7 +23566,7 @@ refreshRadius(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23900,7 +23594,7 @@ refreshRect(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23920,7 +23614,7 @@ Refresh shadows within a rectangle.
 
 `sandkit.engine.api.strataform` — strataform event triggers and type registration.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -23942,7 +23636,7 @@ getDefaultConfig(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23970,7 +23664,7 @@ getRegisteredTypes(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -23998,7 +23692,7 @@ registerType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24026,7 +23720,7 @@ trigger(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24054,7 +23748,7 @@ triggerByType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24074,7 +23768,7 @@ Trigger a strataform event by type id.
 
 `sandkit.engine.api.swarmConsole` — swarm convergence console state.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -24096,7 +23790,7 @@ decrementConvergenceBuffer(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24124,7 +23818,7 @@ getCrystalMined(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24152,7 +23846,7 @@ getDiskRadiusCells(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24180,7 +23874,7 @@ getEntityType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24208,7 +23902,7 @@ getNearestConvergence(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24236,7 +23930,7 @@ getPendingConvergence(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24264,7 +23958,7 @@ getPlacedConsoles(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24292,7 +23986,7 @@ getRadiusPx(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24320,7 +24014,7 @@ isSpawnJammed(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24348,7 +24042,7 @@ registerEntityType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24376,7 +24070,7 @@ resetAllConvergenceBuffers(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24404,7 +24098,7 @@ setSpawnJammed(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24424,7 +24118,7 @@ Set whether swarm spawn is jammed.
 
 `sandkit.engine.api.sweeperDrone` — sweeper drone selection control.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -24446,7 +24140,7 @@ cancelSelection(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24466,7 +24160,7 @@ Cancel the active sweeper drone selection.
 
 `sandkit.engine.api.teleportZones` — player teleport zone management.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -24488,7 +24182,7 @@ add(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24516,7 +24210,7 @@ getAll(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24544,7 +24238,7 @@ getAtCell(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24572,7 +24266,7 @@ getById(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24600,7 +24294,7 @@ remove(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24628,7 +24322,7 @@ spawnDefaultParticles(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24656,7 +24350,7 @@ teleportPlayerTo(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24676,7 +24370,7 @@ Teleport the player to a zone or position.
 
 `sandkit.engine.api.tutorialBuild` — tutorial build-step constraints and targets.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -24698,7 +24392,7 @@ areAllTargetsBuilt(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24726,7 +24420,7 @@ areFamilyTargetsBuilt(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24754,7 +24448,7 @@ canPlaceAtActiveTarget(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24782,7 +24476,7 @@ getFoundationMoveDests(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24810,7 +24504,7 @@ getFoundationMoveSources(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24838,7 +24532,7 @@ getTargets(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24866,7 +24560,7 @@ hasDefinition(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24894,7 +24588,7 @@ isStepConstrained(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24922,7 +24616,7 @@ matchesFoundationMove(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24950,7 +24644,7 @@ matchesFoundationRemove(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24978,7 +24672,7 @@ shouldProtectActiveTargetAt(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -24998,7 +24692,7 @@ Return whether the active target should be protected at a cell.
 
 `sandkit.engine.api.usageTracker` — tool and structure usage statistics.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -25020,7 +24714,7 @@ clear(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -25048,7 +24742,7 @@ getLatest(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -25076,7 +24770,7 @@ getMostUsed(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -25096,7 +24790,7 @@ Return the most frequently used item or structure.
 
 `sandkit.engine.api.wall` — wall tile palette and cell data.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -25118,7 +24812,7 @@ getPaletteData(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -25146,7 +24840,7 @@ getWallDataAt(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -25174,7 +24868,7 @@ getWallDataSize(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -25202,7 +24896,7 @@ setWallDataAt(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -25222,7 +24916,7 @@ Set wall tile data at one cell.
 
 `sandkit.engine.api.workerLocal` — per-worker ephemeral key-value storage.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Available on worker threads only. Values do not persist across workers.
 
 ### Functions <!-- {docsify-ignore} -->
@@ -25243,7 +24937,7 @@ clear(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -25271,7 +24965,7 @@ get(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -25299,7 +24993,7 @@ getOrInit(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -25327,7 +25021,7 @@ set(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -31415,6 +31109,7 @@ These are not runtime `sandkit` properties. Import from
 JSON Schema (GitHub Pages):
 https://sandustry-modding.github.io/SandustryTypes/schemas/modinfo.json
 https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
+https://sandustry-modding.github.io/SandustryTypes/schemas/workshop.json
 
 ### See
 
@@ -31430,15 +31125,15 @@ https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "number" | Discriminator. Must be `"number"`. |
-| default | number | Value used when the player has not changed the setting. |
-| min? | number | Inclusive lower bound for the setting. |
-| max? | number | Inclusive upper bound for the setting. |
-| step? | number | UI step size for the number control. |
-| label? | string | Plain-text label shown in the settings UI. |
-| labelKey? | string | i18n key for the settings label (preferred over [label](?id=configs.label) when both exist). |
-| description? | string | Plain-text help text for the setting. |
-| descriptionKey? | string | i18n key for the setting help text. |
+| type | <code>&quot;number&quot;</code> | Discriminator. Must be `"number"`. |
+| default | <code>number</code> | Value used when the player has not changed the setting. |
+| min? | <code>number</code> | Inclusive lower bound for the setting. |
+| max? | <code>number</code> | Inclusive upper bound for the setting. |
+| step? | <code>number</code> | UI step size for the number control. |
+| label? | <code>string</code> | Plain-text label shown in the settings UI. |
+| labelKey? | <code>string</code> | i18n key for the settings label (preferred over [label](?id=configs.label) when both exist). |
+| description? | <code>string</code> | Plain-text help text for the setting. |
+| descriptionKey? | <code>string</code> | i18n key for the setting help text. |
 
 <div class="smt-member-anchors">
 
@@ -31474,12 +31169,12 @@ Number setting in `modinfo.json` `configSchema`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "boolean" | Discriminator. Must be `"boolean"`. |
-| default | boolean | Value used when the player has not changed the setting. |
-| label? | string | Plain-text label shown in the settings UI. |
-| labelKey? | string | i18n key for the settings label. |
-| description? | string | Plain-text help text for the setting. |
-| descriptionKey? | string | i18n key for the setting help text. |
+| type | <code>&quot;boolean&quot;</code> | Discriminator. Must be `"boolean"`. |
+| default | <code>boolean</code> | Value used when the player has not changed the setting. |
+| label? | <code>string</code> | Plain-text label shown in the settings UI. |
+| labelKey? | <code>string</code> | i18n key for the settings label. |
+| description? | <code>string</code> | Plain-text help text for the setting. |
+| descriptionKey? | <code>string</code> | i18n key for the setting help text. |
 
 <div class="smt-member-anchors">
 
@@ -31509,9 +31204,9 @@ Boolean setting in `modinfo.json` `configSchema`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| value | string | Stored value written when the player picks this option. |
-| label? | string | Plain-text label for the option. |
-| labelKey? | string | i18n key for the option label. |
+| value | <code>string</code> | Stored value written when the player picks this option. |
+| label? | <code>string</code> | Plain-text label for the option. |
+| labelKey? | <code>string</code> | i18n key for the option label. |
 
 <div class="smt-member-anchors">
 
@@ -31535,13 +31230,13 @@ One option inside a [ConfigSchemaChoice](?id=configs.configschemachoice).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "choice" | Discriminator. Must be `"choice"`. |
-| default | string | Default option [ConfigSchemaChoiceOption.value](?id=configs.value). |
-| label? | string | Plain-text label shown in the settings UI. |
-| labelKey? | string | i18n key for the settings label. |
-| description? | string | Plain-text help text for the setting. |
-| descriptionKey? | string | i18n key for the setting help text. |
-| options | readonly ConfigSchemaChoiceOption[] | Allowed choices for this setting. |
+| type | <code>&quot;choice&quot;</code> | Discriminator. Must be `"choice"`. |
+| default | <code>string</code> | Default option [ConfigSchemaChoiceOption.value](?id=configs.value). |
+| label? | <code>string</code> | Plain-text label shown in the settings UI. |
+| labelKey? | <code>string</code> | i18n key for the settings label. |
+| description? | <code>string</code> | Plain-text help text for the setting. |
+| descriptionKey? | <code>string</code> | i18n key for the setting help text. |
+| options | <code>readonly ConfigSchemaChoiceOption[]</code> | Allowed choices for this setting. |
 
 <div class="smt-member-anchors">
 
@@ -31573,10 +31268,10 @@ Choice setting in `modinfo.json` `configSchema`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| path | string | Path to the replacement image, relative to the mod root. |
-| frameWidth? | number | Width in pixels of one animation frame. |
-| frames? | number | Number of frames in the spritesheet. |
-| intervalMs? | number | Milliseconds between animation frames. |
+| path | <code>string</code> | Path to the replacement image, relative to the mod root. |
+| frameWidth? | <code>number</code> | Width in pixels of one animation frame. |
+| frames? | <code>number</code> | Number of frames in the spritesheet. |
+| intervalMs? | <code>number</code> | Milliseconds between animation frames. |
 
 <div class="smt-member-anchors">
 
@@ -31602,9 +31297,9 @@ Animated (or static) texture replacement for a vanilla asset id.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | string | Kind of provided content (for example `"structureTextures"`). |
-| id | string | Id of this provide entry within its kind. |
-| textureOverrides? | Record<string, string> | Texture paths keyed by the vanilla or structure texture id they replace. |
+| kind | <code>string</code> | Kind of provided content (for example `"structureTextures"`). |
+| id | <code>string</code> | Id of this provide entry within its kind. |
+| textureOverrides? | <code>Record&lt;string, string&gt;</code> | Texture paths keyed by the vanilla or structure texture id they replace. |
 
 <div class="smt-member-anchors">
 
@@ -31628,14 +31323,14 @@ Optional content pack exposed by this mod for other mods or the game to consume.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| terrain? | string | Terrain color map image. |
-| lights? | string | Lights layout image. |
-| sensors? | string | Sensors layout image. |
-| authorization? | string | Authorization zones image. |
-| wall? | string | Wall layout image. |
-| lightsMeta? | string | Lights metadata image. |
-| decor? | string | Decor layout image. |
-| config? | string | Map config JSON path. |
+| terrain? | <code>string</code> | Terrain color map image. |
+| lights? | <code>string</code> | Lights layout image. |
+| sensors? | <code>string</code> | Sensors layout image. |
+| authorization? | <code>string</code> | Authorization zones image. |
+| wall? | <code>string</code> | Wall layout image. |
+| lightsMeta? | <code>string</code> | Lights metadata image. |
+| decor? | <code>string</code> | Decor layout image. |
+| config? | <code>string</code> | Map config JSON path. |
 
 <div class="smt-member-anchors">
 
@@ -31671,8 +31366,8 @@ Paths are relative to the mod root.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| x | number | World X in pixels. |
-| y | number | World Y in pixels. |
+| x | <code>number</code> | World X in pixels. |
+| y | <code>number</code> | World Y in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -31694,8 +31389,8 @@ World-pixel spawn or unstuck point.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| hard? | number | Hard top bound in world pixels. |
-| soft? | number | Soft top bound in world pixels. |
+| hard? | <code>number</code> | Hard top bound in world pixels. |
+| soft? | <code>number</code> | Soft top bound in world pixels. |
 
 <div class="smt-member-anchors">
 
@@ -31717,10 +31412,10 @@ Vertical camera / travel bounds for the custom map.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| startY? | number | World Y where depth light scaling starts. |
-| endY? | number | World Y where depth light scaling ends. |
-| maxSize? | number | Maximum light size at the shallow end of the range. |
-| minSize? | number | Minimum light size at the deep end of the range. |
+| startY? | <code>number</code> | World Y where depth light scaling starts. |
+| endY? | <code>number</code> | World Y where depth light scaling ends. |
+| maxSize? | <code>number</code> | Maximum light size at the shallow end of the range. |
+| minSize? | <code>number</code> | Minimum light size at the deep end of the range. |
 
 <div class="smt-member-anchors">
 
@@ -31746,8 +31441,8 @@ Depth-based light sizing for the custom map.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| widthScale? | number | Horizontal scale of the parallax layer. |
-| offsetY? | number | Vertical offset of the parallax layer in pixels. |
+| widthScale? | <code>number</code> | Horizontal scale of the parallax layer. |
+| offsetY? | <code>number</code> | Vertical offset of the parallax layer in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -31769,8 +31464,8 @@ Parallax background tuning for the custom map.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| background? | string | Background terrain id for this blueprint RGB. |
-| foreground? | string | Foreground terrain id for this blueprint RGB. |
+| background? | <code>string</code> | Background terrain id for this blueprint RGB. |
+| foreground? | <code>string</code> | Foreground terrain id for this blueprint RGB. |
 
 <div class="smt-member-anchors">
 
@@ -31792,16 +31487,16 @@ Color-map cell that paints both background and foreground terrain.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| blueprints | ModMapBlueprints | Paths to blueprint images and map config under the mod root. |
-| width | number | Map width in cells. |
-| height | number | Map height in cells. |
-| spawn? | ModMapPoint | Player spawn position in world pixels. |
-| unstuck? | ModMapPoint | Unstuck / rescue position in world pixels. |
-| deployment? | string | Deployment mode for the map (for example `"skip"`). |
-| topBounds? | ModMapTopBounds | Vertical travel bounds at the top of the world. |
-| depthLight? | ModMapDepthLight | Depth-based light size curve. |
-| parallax? | ModMapParallax | Parallax background tuning. |
-| colorMappings? | Record<string, ModMapColorMapping> | Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain. |
+| blueprints | <code>ModMapBlueprints</code> | Paths to blueprint images and map config under the mod root. |
+| width | <code>number</code> | Map width in cells. |
+| height | <code>number</code> | Map height in cells. |
+| spawn? | <code>ModMapPoint</code> | Player spawn position in world pixels. |
+| unstuck? | <code>ModMapPoint</code> | Unstuck / rescue position in world pixels. |
+| deployment? | <code>string</code> | Deployment mode for the map (for example `"skip"`). |
+| topBounds? | <code>ModMapTopBounds</code> | Vertical travel bounds at the top of the world. |
+| depthLight? | <code>ModMapDepthLight</code> | Depth-based light size curve. |
+| parallax? | <code>ModMapParallax</code> | Parallax background tuning. |
+| colorMappings? | <code>Record&lt;string, ModMapColorMapping&gt;</code> | Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain. |
 
 <div class="smt-member-anchors">
 
@@ -31839,8 +31534,8 @@ Custom map pack block in `modinfo.json`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| minimum? | string | Lowest supported game version string. |
-| maximum? | string | Highest supported game version string. |
+| minimum? | <code>string</code> | Lowest supported game version string. |
+| maximum? | <code>string</code> | Highest supported game version string. |
 
 <div class="smt-member-anchors">
 
@@ -31862,26 +31557,26 @@ Compatible game version range for the mod.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| $schema? | string | Optional JSON Schema URL for editors (for example VS Code). Not read by the game loader. |
-| manifestVersion | 1 | Manifest format version. Must be `1` for Sandkit `apiVersion` 1. |
-| id | string | Unique mod id. Prefer `author.mod-name` (matches folder / Workshop identity). |
-| name | string | Display name shown in the mod list and Workshop UI. |
-| version | string | Semver-style mod version string. |
-| apiVersion | 1 | Sandkit host API version this mod targets. Must be `1`. |
-| entry? | string | Main-thread script path relative to the mod root (for example `"main.js"`). Omit for texture-only, map-only, or config-only mods that declare another capability instead. |
-| workerEntry? | string | Simulation-worker script path relative to the mod root. Required when the mod registers worker hooks or uses worker-only APIs. |
-| patches? | string | Path to the patches file relative to the mod root (usually `"patches.json"`). When omitted, a present `patches.json` may still auto-load per official docs. |
-| description? | string | Long description shown in the mod list / Workshop. |
-| author? | string | Author display name. |
-| gameVersion? | ModGameVersion | Inclusive game version range this mod claims to support. |
-| dependencies? | string[] | Other mod ids that should load with this mod. |
-| loadOrder? | number | Relative load priority. Lower values load earlier; higher values load later. |
-| configSchema? | Record<string, ConfigSchemaEntry> | Player-facing settings schema. Keys are setting ids; values define type and UI. Read at runtime with `api.settings.get`. |
-| configOverrides? | Record<string, string> | Paths to JSON config overrides keyed by vanilla config id (for example `"drill"`). |
-| shaderOverrides? | Record<string, string> | Paths to GLSL shader replacements keyed by shader id (for example `"sky"`). |
-| textureOverrides? | Record<string, string &#124; TextureOverride> | Texture replacements keyed by vanilla texture id. A string value is a path; an object adds spritesheet frame metadata. |
-| provides? | ModProvide[] | Optional content this mod publishes for others to consume. |
-| map? | ModMapDefinition | Embedded custom map pack definition for this mod. |
+| $schema? | <code>string</code> | Optional JSON Schema URL for editors (for example VS Code). Not read by the game loader. |
+| manifestVersion | <code>1</code> | Manifest format version. Must be `1` for Sandkit `apiVersion` 1. |
+| id | <code>string</code> | Unique mod id. Prefer `author.mod-name` (matches folder / Workshop identity). |
+| name | <code>string</code> | Display name shown in the mod list and Workshop UI. |
+| version | <code>string</code> | Semver-style mod version string. |
+| apiVersion | <code>1</code> | Sandkit host API version this mod targets. Must be `1`. |
+| entry? | <code>string</code> | Main-thread script path relative to the mod root (for example `"main.js"`). Omit for texture-only, map-only, or config-only mods that declare another capability instead. |
+| workerEntry? | <code>string</code> | Simulation-worker script path relative to the mod root. Required when the mod registers worker hooks or uses worker-only APIs. |
+| patches? | <code>string</code> | Path to the patches file relative to the mod root (usually `"patches.json"`). When omitted, a present `patches.json` may still auto-load per official docs. |
+| description? | <code>string</code> | Long description shown in the mod list / Workshop. |
+| author? | <code>string</code> | Author display name. |
+| gameVersion? | <code>ModGameVersion</code> | Inclusive game version range this mod claims to support. |
+| dependencies? | <code>string[]</code> | Other mod ids that should load with this mod. |
+| loadOrder? | <code>number</code> | Relative load priority. Lower values load earlier; higher values load later. |
+| configSchema? | <code>Record&lt;string, ConfigSchemaEntry&gt;</code> | Player-facing settings schema. Keys are setting ids; values define type and UI. Read at runtime with `api.settings.get`. |
+| configOverrides? | <code>Record&lt;string, string&gt;</code> | Paths to JSON config overrides keyed by vanilla config id (for example `"drill"`). |
+| shaderOverrides? | <code>Record&lt;string, string&gt;</code> | Paths to GLSL shader replacements keyed by shader id (for example `"sky"`). |
+| textureOverrides? | <code>Record&lt;string, string &#124; TextureOverride&gt;</code> | Texture replacements keyed by vanilla texture id. A string value is a path; an object adds spritesheet frame metadata. |
+| provides? | <code>ModProvide[]</code> | Optional content this mod publishes for others to consume. |
+| map? | <code>ModMapDefinition</code> | Embedded custom map pack definition for this mod. |
 
 <div class="smt-member-anchors">
 
@@ -31947,8 +31642,8 @@ At least one capability is required: [entry](?id=configs.entry), [workerEntry](?
 
 | Property | Type | Description |
 | --- | --- | --- |
-| pattern | string | JavaScript regex pattern source (without surrounding `/` delimiters). Capture groups may be referenced from [BundlePatch.code](?id=configs.code) as `$1`, `$2`, … |
-| flags? | string | Optional regex flags (for example `"g"` or `"m"`). |
+| pattern | <code>string</code> | JavaScript regex pattern source (without surrounding `/` delimiters). Capture groups may be referenced from [BundlePatch.code](?id=configs.code) as `$1`, `$2`, … |
+| flags? | <code>string</code> | Optional regex flags (for example `"g"` or `"m"`). |
 
 <div class="smt-member-anchors">
 
@@ -31970,19 +31665,19 @@ Regex finder when the target is not a plain [BundlePatch.find](?id=configs.find)
 
 | Property | Type | Description |
 | --- | --- | --- |
-| file | PatchTargetFile | Compiled bundle to modify. |
-| find? | string | Exact source substring to locate in the bundle. Mutually exclusive with [regex](?id=configs.regex) in typical patches. |
-| code? | string | Replacement or inserted source text. Official examples use `code`; some loaders also accept [replace](?id=configs.replace). |
-| replace? | string | Alias of [code](?id=configs.code) used by some patch loaders and workshop mods. |
-| operation? | PatchOperation | How to apply the match. Defaults to replace-style behaviour when omitted in common workshop patches. |
-| expectedMatches? | number &#124; "any" | How many times `find` / `regex` must match. Use a number (often `1`) so the load fails on miss or over-match. Some loaders accept `"any"`. |
-| regex? | BundlePatchRegex | Regex-based locator instead of a literal [find](?id=configs.find) string. |
-| before? | string | Text inserted before the match when [operation](?id=configs.operation) is `"wrap"`. |
-| after? | string | Text inserted after the match when [operation](?id=configs.operation) is `"wrap"`. |
-| id? | string | Optional stable id for logging and tooling. |
-| atomicGroup? | string | Group id shared by patches that must all succeed or all fail together. Use the same string on paired main (`js/bundle.js`) and worker (`js/simulation-worker.js`) patches. |
-| occurrence? | number &#124; "all" | Which match to rewrite when `find` / `regex` hits more than once. `"all"` (default when omitted in the loader) or a 1-based index. Must not exceed [expectedMatches](?id=configs.expectedmatches) when both are numbers. |
-| description? | string | Human-readable note for maintainers. Not required by the official schema. |
+| file | <code>PatchTargetFile</code> | Compiled bundle to modify. |
+| find? | <code>string</code> | Exact source substring to locate in the bundle. Mutually exclusive with [regex](?id=configs.regex) in typical patches. |
+| code? | <code>string</code> | Replacement or inserted source text. Official examples use `code`; some loaders also accept [replace](?id=configs.replace). |
+| replace? | <code>string</code> | Alias of [code](?id=configs.code) used by some patch loaders and workshop mods. |
+| operation? | <code>PatchOperation</code> | How to apply the match. Defaults to replace-style behaviour when omitted in common workshop patches. |
+| expectedMatches? | <code>number &#124; &quot;any&quot;</code> | How many times `find` / `regex` must match. Use a number (often `1`) so the load fails on miss or over-match. Some loaders accept `"any"`. |
+| regex? | <code>BundlePatchRegex</code> | Regex-based locator instead of a literal [find](?id=configs.find) string. |
+| before? | <code>string</code> | Text inserted before the match when [operation](?id=configs.operation) is `"wrap"`. |
+| after? | <code>string</code> | Text inserted after the match when [operation](?id=configs.operation) is `"wrap"`. |
+| id? | <code>string</code> | Optional stable id for logging and tooling. |
+| atomicGroup? | <code>string</code> | Group id shared by patches that must all succeed or all fail together. Use the same string on paired main (`js/bundle.js`) and worker (`js/simulation-worker.js`) patches. |
+| occurrence? | <code>number &#124; &quot;all&quot;</code> | Which match to rewrite when `find` / `regex` hits more than once. `"all"` (default when omitted in the loader) or a 1-based index. Must not exceed [expectedMatches](?id=configs.expectedmatches) when both are numbers. |
+| description? | <code>string</code> | Human-readable note for maintainers. Not required by the official schema. |
 
 <div class="smt-member-anchors">
 
@@ -32063,8 +31758,8 @@ or duplicated match fails loudly. When several patches must succeed together
 
 | Property | Type | Description |
 | --- | --- | --- |
-| $schema? | string | Optional JSON Schema URL for editors (for example VS Code). Not read by the game loader. |
-| patches | BundlePatch[] | Ordered patch list (same as the bare-array game format). |
+| $schema? | <code>string</code> | Optional JSON Schema URL for editors (for example VS Code). Not read by the game loader. |
+| patches | <code>BundlePatch[]</code> | Ordered patch list (same as the bare-array game format). |
 
 <div class="smt-member-anchors">
 
@@ -32089,8 +31784,8 @@ shipped mods. Use this object shape only when your editor needs inline `$schema`
 
 | Property | Type | Description |
 | --- | --- | --- |
-| schemaVersion | 1 | File format version. Must be `1`. |
-| publishedFileId | string | Steam Workshop published file id. Managed by the publisher. |
+| schemaVersion | <code>1</code> | File format version. Must be `1`. |
+| publishedFileId | <code>string</code> | Steam Workshop published file id. Managed by the publisher. |
 
 <div class="smt-member-anchors">
 
@@ -32250,10 +31945,10 @@ Async methods use `ipcRenderer.invoke` unless noted (`openDevTools`, `log`).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| localMods | ElectronLocalModsApi | Local developer mod folder helpers (`electron.localMods`). |
-| macRightMouse | ElectronMacRightMouseApi | macOS right-button emulation helpers (`electron.macRightMouse`). |
-| platform | ElectronPlatformApi | Cross-store platform helpers (`electron.platform`). |
-| customMaps | ElectronCustomMapsApi | Custom map editor persistence helpers (`electron.customMaps`). |
+| localMods | <code>ElectronLocalModsApi</code> | Local developer mod folder helpers (`electron.localMods`). |
+| macRightMouse | <code>ElectronMacRightMouseApi</code> | macOS right-button emulation helpers (`electron.macRightMouse`). |
+| platform | <code>ElectronPlatformApi</code> | Cross-store platform helpers (`electron.platform`). |
+| customMaps | <code>ElectronCustomMapsApi</code> | Custom map editor persistence helpers (`electron.customMaps`). |
 
 <div class="smt-member-anchors">
 
@@ -32267,897 +31962,123 @@ Async methods use `ipcRenderer.invoke` unless noted (`openDevTools`, `log`).
 
 </div>
 
-##### Methods
+| Method | Signature | Description |
+| --- | --- | --- |
+| getPlatformSync() | <code>(): ElectronPlatform</code> | Return the active distribution channel. |
+| getModdingEnabledSync() | <code>(): boolean</code> | Return whether local modding is enabled for this build/session. |
+| getIsSteamDeckSync() | <code>(): boolean</code> | Return true on Steam Deck / gamescope hosts. |
+| getPreferredSystemLanguagesSync() | <code>(): string[]</code> | Return BCP-47 language tags preferred by the OS. |
+| onAppSuspend() | <code>(callback: ElectronIpcListener): void</code> | Register a callback for app suspend (sleep / Xbox quick suspend). |
+| onAppResume() | <code>(callback: ElectronIpcListener): void</code> | Register a callback for app resume. |
+| diagnostics() | <code>(): Promise&lt;JsonValueV1&gt;</code> | Return platform diagnostics JSON. |
+| checkLicense() | <code>(): Promise&lt;ElectronLicenseCheckResult&gt;</code> | Check the MS Store license. Always returns `{ valid: true }` on Steam when platform checks are unavailable. |
+| writeGameEvent() | <code>(eventName: string, dimensions?: Record&lt;string, string&gt;, measurements?: Record&lt;string, number&gt;): Promise&lt;boolean&gt;</code> | Send one telemetry event to the platform SDK when available. |
+| platformPrimeAchievements() | <code>(ids: string[]): Promise&lt;ElectronPrimeAchievementsResult&gt;</code> | Prime the MS Store achievement cache after sign-in. No-op success on Steam. |
+| platformShowReauthPrompt() | <code>(reason: string): Promise&lt;ElectronReauthPromptResult&gt;</code> | Show the native MS Store re-auth dialog. Resolves immediately with `{ dismissed: true }` on Steam. |
+| appQuit() | <code>(): Promise&lt;ElectronSuccessResult&gt;</code> | Quit the application. Works in fullscreen where `window.close()` is unreliable. |
+| openExternalBrowser() | <code>(url: string): Promise&lt;ElectronOpenUrlResult&gt;</code> | Open an external `https:` URL in the system browser. |
+| onXboxUserSignedOut() | <code>(callback: ElectronIpcListener): void</code> | Register a callback for Xbox user sign-out. MS Store only — never fires on Steam. |
+| onXboxLicenseLost() | <code>(callback: ElectronIpcListener): void</code> | Register a callback for Game Pass / Store license loss. MS Store only — never fires on Steam. |
+| onXboxUserSignedIn() | <code>(callback: ElectronIpcListener): void</code> | Register a callback for Xbox user sign-in. MS Store only — never fires on Steam. |
+| save() | <code>(id: string, name: string, data: JsonValueV1): Promise&lt;ElectronOperationResult&gt;</code> | Write one compressed save file (`.save`). |
+| saveSerialized() | <code>(id: string, name: string, dataJson: string, metadata?: JsonValueV1): Promise&lt;ElectronOperationResult&gt;</code> | Write one save from pre-serialized JSON and metadata. |
+| load() | <code>(id: string): Promise&lt;ElectronLoadResult&gt;</code> | Load one save slot by id. |
+| deleteSave() | <code>(id: string): Promise&lt;ElectronSuccessResult &#124; ElectronFailureResult&gt;</code> | Delete one save slot and its backup file. |
+| loadRaw() | <code>(name: string): Promise&lt;ElectronLoadResult &#124; null&gt;</code> | Load a raw save file by filename (including extension). |
+| exportSave() | <code>(id: string): Promise&lt;ElectronExportSaveResult&gt;</code> | Export one save slot as raw bytes for backup/sharing. |
+| importSave() | <code>(bytes: ArrayBuffer &#124; Uint8Array&lt;ArrayBufferLike&gt;): Promise&lt;ElectronImportSaveResult&gt;</code> | Import one save from raw exported bytes. |
+| getSaveFiles() | <code>(): Promise&lt;ElectronSaveFileMetadata[]&gt;</code> | List save slot metadata parsed from each `.save` header line. |
+| getSaveFolder() | <code>(): Promise&lt;string&gt;</code> | Return the absolute path to the active saves folder. |
+| getLastPlayedGameSync() | <code>(): string &#124; null</code> | Return the last-played save id JSON string. |
+| saveLastPlayedGame() | <code>(game: ElectronLastPlayedGame): Promise&lt;ElectronOperationResult&gt;</code> | Persist the last-played save id. |
+| clearLastPlayedGame() | <code>(): Promise&lt;ElectronOperationResult&gt;</code> | Clear the persisted last-played save id. |
+| saveExistsSync() | <code>(id: string): boolean</code> | Return whether a save file exists for the given id. |
+| getSettingsSync() | <code>(): string &#124; null</code> | Return the settings JSON string from disk. |
+| saveSettings() | <code>(settings: JsonValueV1): Promise&lt;ElectronOperationResult&gt;</code> | Persist renderer settings JSON to disk. |
+| setFullscreen() | <code>(shouldBeFullscreen: boolean): Promise&lt;ElectronOperationResult&gt;</code> | Enter or leave fullscreen mode. |
+| toggleFullscreen() | <code>(): Promise&lt;ElectronOperationResult&gt;</code> | Toggle fullscreen mode. |
+| openDevTools() | <code>(): void</code> | Open Chromium DevTools for the game window. IPC: `open-devtools` (`send`). |
+| isFilePatchingActiveSync() | <code>(): boolean</code> | Return true when the Steam patch protocol interceptor is active. |
+| log() | <code>(level: ElectronLogLevel, scope: string, message: string): void</code> | Append one line to the host log file (`logs/main.log`). Fire-and-forget — never awaits IPC completion. |
+| getSystemInfo() | <code>(): ElectronSystemInfo</code> | Return local process/runtime versions. Useful for bug reports and environment probes. |
 
-###### getPlatformSync()
+<div class="smt-member-anchors">
 
-```ts
-getPlatformSync(): ElectronPlatform
-```
+###### getPlatformSync() <!-- {docsify-ignore} -->
 
-Defined in: [electron/bridge.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L41)
+###### getModdingEnabledSync() <!-- {docsify-ignore} -->
 
-Return the active distribution channel.
+###### getIsSteamDeckSync() <!-- {docsify-ignore} -->
 
-###### Returns
+###### getPreferredSystemLanguagesSync() <!-- {docsify-ignore} -->
 
-[`ElectronPlatform`](?id=electron.electronplatform)
+###### onAppSuspend() <!-- {docsify-ignore} -->
 
-`"steam"`, `"msstore"`, `"gog"`, or another platform string.
+###### onAppResume() <!-- {docsify-ignore} -->
 
-IPC: `get-platform-sync`.
+###### diagnostics() <!-- {docsify-ignore} -->
 
-###### getModdingEnabledSync()
+###### checkLicense() <!-- {docsify-ignore} -->
 
-```ts
-getModdingEnabledSync(): boolean
-```
+###### writeGameEvent() <!-- {docsify-ignore} -->
 
-Defined in: [electron/bridge.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L50)
+###### platformPrimeAchievements() <!-- {docsify-ignore} -->
 
-Return whether local modding is enabled for this build/session.
+###### platformShowReauthPrompt() <!-- {docsify-ignore} -->
 
-###### Returns
+###### appQuit() <!-- {docsify-ignore} -->
 
-`boolean`
+###### openExternalBrowser() <!-- {docsify-ignore} -->
 
-True when the local mods folder and dev upload paths are enabled.
+###### onXboxUserSignedOut() <!-- {docsify-ignore} -->
 
-IPC: `get-modding-enabled-sync`.
+###### onXboxLicenseLost() <!-- {docsify-ignore} -->
 
-###### getIsSteamDeckSync()
+###### onXboxUserSignedIn() <!-- {docsify-ignore} -->
 
-```ts
-getIsSteamDeckSync(): boolean
-```
+###### save() <!-- {docsify-ignore} -->
 
-Defined in: [electron/bridge.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L59)
+###### saveSerialized() <!-- {docsify-ignore} -->
 
-Return true on Steam Deck / gamescope hosts.
+###### load() <!-- {docsify-ignore} -->
 
-###### Returns
+###### deleteSave() <!-- {docsify-ignore} -->
 
-`boolean`
+###### loadRaw() <!-- {docsify-ignore} -->
 
-True when running on Steam Deck class hardware.
+###### exportSave() <!-- {docsify-ignore} -->
 
-IPC: `get-is-steam-deck-sync`.
+###### importSave() <!-- {docsify-ignore} -->
 
-###### getPreferredSystemLanguagesSync()
+###### getSaveFiles() <!-- {docsify-ignore} -->
 
-```ts
-getPreferredSystemLanguagesSync(): string[]
-```
+###### getSaveFolder() <!-- {docsify-ignore} -->
 
-Defined in: [electron/bridge.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L68)
+###### getLastPlayedGameSync() <!-- {docsify-ignore} -->
 
-Return BCP-47 language tags preferred by the OS.
+###### saveLastPlayedGame() <!-- {docsify-ignore} -->
 
-###### Returns
+###### clearLastPlayedGame() <!-- {docsify-ignore} -->
 
-`string`[]
+###### saveExistsSync() <!-- {docsify-ignore} -->
 
-Ordered list of preferred language codes.
+###### getSettingsSync() <!-- {docsify-ignore} -->
 
-IPC: `get-preferred-system-languages-sync`.
+###### saveSettings() <!-- {docsify-ignore} -->
 
-###### onAppSuspend()
+###### setFullscreen() <!-- {docsify-ignore} -->
 
-```ts
-onAppSuspend(callback: ElectronIpcListener): void
-```
+###### toggleFullscreen() <!-- {docsify-ignore} -->
 
-Defined in: [electron/bridge.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L77)
+###### openDevTools() <!-- {docsify-ignore} -->
 
-Register a callback for app suspend (sleep / Xbox quick suspend).
+###### isFilePatchingActiveSync() <!-- {docsify-ignore} -->
 
-###### Parameters
+###### log() <!-- {docsify-ignore} -->
 
-###### callback
+###### getSystemInfo() <!-- {docsify-ignore} -->
 
-[`ElectronIpcListener`](?id=electron.electronipclistener)
-
-Called with IPC event arguments when the app suspends.
-
-IPC: `app-suspend`.
-
-###### Returns
-
-`void`
-
-###### onAppResume()
-
-```ts
-onAppResume(callback: ElectronIpcListener): void
-```
-
-Defined in: [electron/bridge.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L86)
-
-Register a callback for app resume.
-
-###### Parameters
-
-###### callback
-
-[`ElectronIpcListener`](?id=electron.electronipclistener)
-
-Called with IPC event arguments when the app resumes.
-
-IPC: `app-resume`.
-
-###### Returns
-
-`void`
-
-###### diagnostics()
-
-```ts
-diagnostics(): Promise<JsonValueV1>
-```
-
-Defined in: [electron/bridge.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L95)
-
-Return platform diagnostics JSON.
-
-###### Returns
-
-`Promise`\<[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)\>
-
-Diagnostics object from the active platform integration.
-
-IPC: `platform-diagnostics`.
-
-###### checkLicense()
-
-```ts
-checkLicense(): Promise<ElectronLicenseCheckResult>
-```
-
-Defined in: [electron/bridge.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L106)
-
-Check the MS Store license.
-
-Always returns `{ valid: true }` on Steam when platform checks are unavailable.
-
-###### Returns
-
-`Promise`\<[`ElectronLicenseCheckResult`](?id=electron.electronlicensecheckresult)\>
-
-License validation result.
-
-IPC: `platform-check-license`.
-
-###### writeGameEvent()
-
-```ts
-writeGameEvent(eventName: string, dimensions?: Record<string, string>, measurements?: Record<string, number>): Promise<boolean>
-```
-
-Defined in: [electron/bridge.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L118)
-
-Send one telemetry event to the platform SDK when available.
-
-###### Parameters
-
-###### eventName
-
-`string`
-
-Telemetry event name.
-
-###### dimensions?
-
-`Record`\<`string`, `string`\>
-
-String key/value dimensions.
-
-###### measurements?
-
-`Record`\<`string`, `number`\>
-
-Numeric measurements.
-
-###### Returns
-
-`Promise`\<`boolean`\>
-
-False when the platform SDK rejects or ignores the event.
-
-IPC: `platform-write-game-event`.
-
-###### platformPrimeAchievements()
-
-```ts
-platformPrimeAchievements(ids: string[]): Promise<ElectronPrimeAchievementsResult>
-```
-
-Defined in: [electron/bridge.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L134)
-
-Prime the MS Store achievement cache after sign-in.
-
-No-op success on Steam.
-
-###### Parameters
-
-###### ids
-
-`string`[]
-
-Achievement ids to seed in the local cache.
-
-###### Returns
-
-`Promise`\<[`ElectronPrimeAchievementsResult`](?id=electron.electronprimeachievementsresult)\>
-
-Prime operation result.
-
-IPC: `platform-prime-achievements`.
-
-###### platformShowReauthPrompt()
-
-```ts
-platformShowReauthPrompt(reason: string): Promise<ElectronReauthPromptResult>
-```
-
-Defined in: [electron/bridge.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L146)
-
-Show the native MS Store re-auth dialog.
-
-Resolves immediately with `{ dismissed: true }` on Steam.
-
-###### Parameters
-
-###### reason
-
-`string`
-
-`"license-lost"` or `"signed-out"`.
-
-###### Returns
-
-`Promise`\<[`ElectronReauthPromptResult`](?id=electron.electronreauthpromptresult)\>
-
-Dialog button index or dismissed flag.
-
-IPC: `platform-show-reauth-prompt`.
-
-###### appQuit()
-
-```ts
-appQuit(): Promise<ElectronSuccessResult>
-```
-
-Defined in: [electron/bridge.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L157)
-
-Quit the application.
-
-Works in fullscreen where `window.close()` is unreliable.
-
-###### Returns
-
-`Promise`\<[`ElectronSuccessResult`](?id=electron.electronsuccessresult)\>
-
-`{ success: true }` after scheduling quit.
-
-IPC: `app-quit`.
-
-###### openExternalBrowser()
-
-```ts
-openExternalBrowser(url: string): Promise<ElectronOpenUrlResult>
-```
-
-Defined in: [electron/bridge.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L167)
-
-Open an external `https:` URL in the system browser.
-
-###### Parameters
-
-###### url
-
-`string`
-
-Must be an `https:` URL or the call returns `{ success: false, error: 'unsupported-url' }`.
-
-###### Returns
-
-`Promise`\<[`ElectronOpenUrlResult`](?id=electron.electronopenurlresult)\>
-
-URL open result.
-
-IPC: `open-external-browser`.
-
-###### onXboxUserSignedOut()
-
-```ts
-onXboxUserSignedOut(callback: ElectronIpcListener): void
-```
-
-Defined in: [electron/bridge.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L178)
-
-Register a callback for Xbox user sign-out.
-
-MS Store only — never fires on Steam.
-
-###### Parameters
-
-###### callback
-
-[`ElectronIpcListener`](?id=electron.electronipclistener)
-
-Called when the Xbox user signs out.
-
-IPC: `xbox-user-signed-out`.
-
-###### Returns
-
-`void`
-
-###### onXboxLicenseLost()
-
-```ts
-onXboxLicenseLost(callback: ElectronIpcListener): void
-```
-
-Defined in: [electron/bridge.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L189)
-
-Register a callback for Game Pass / Store license loss.
-
-MS Store only — never fires on Steam.
-
-###### Parameters
-
-###### callback
-
-[`ElectronIpcListener`](?id=electron.electronipclistener)
-
-Called when the store license is lost.
-
-IPC: `xbox-license-lost`.
-
-###### Returns
-
-`void`
-
-###### onXboxUserSignedIn()
-
-```ts
-onXboxUserSignedIn(callback: ElectronIpcListener): void
-```
-
-Defined in: [electron/bridge.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L200)
-
-Register a callback for Xbox user sign-in.
-
-MS Store only — never fires on Steam.
-
-###### Parameters
-
-###### callback
-
-[`ElectronIpcListener`](?id=electron.electronipclistener)
-
-Called when the Xbox user signs in.
-
-IPC: `xbox-user-signed-in`.
-
-###### Returns
-
-`void`
-
-###### save()
-
-```ts
-save(id: string, name: string, data: JsonValueV1): Promise<ElectronOperationResult>
-```
-
-Defined in: [electron/bridge.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L212)
-
-Write one compressed save file (`.save`).
-
-###### Parameters
-
-###### id
-
-`string`
-
-Save slot id.
-
-###### name
-
-`string`
-
-Display name for the slot.
-
-###### data
-
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)
-
-Full serialized save payload.
-
-###### Returns
-
-`Promise`\<[`ElectronOperationResult`](?id=electron.electronoperationresult)\>
-
-Save operation result with output path on success.
-
-IPC: `save`.
-
-###### saveSerialized()
-
-```ts
-saveSerialized(id: string, name: string, dataJson: string, metadata?: JsonValueV1): Promise<ElectronOperationResult>
-```
-
-Defined in: [electron/bridge.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L225)
-
-Write one save from pre-serialized JSON and metadata.
-
-###### Parameters
-
-###### id
-
-`string`
-
-Save slot id.
-
-###### name
-
-`string`
-
-Display name for the slot.
-
-###### dataJson
-
-`string`
-
-Stringified save body (gzip-compressed by the main process).
-
-###### metadata?
-
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)
-
-Metadata object merged into the `.save` header line.
-
-###### Returns
-
-`Promise`\<[`ElectronOperationResult`](?id=electron.electronoperationresult)\>
-
-Save operation result with output path on success.
-
-IPC: `save-serialized`.
-
-###### load()
-
-```ts
-load(id: string): Promise<ElectronLoadResult>
-```
-
-Defined in: [electron/bridge.d.ts:240](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L240)
-
-Load one save slot by id.
-
-###### Parameters
-
-###### id
-
-`string`
-
-Save slot id.
-
-###### Returns
-
-`Promise`\<[`ElectronLoadResult`](?id=electron.electronloadresult)\>
-
-Parsed save on success, or `{ success: false, error }`.
-
-IPC: `load`.
-
-###### deleteSave()
-
-```ts
-deleteSave(id: string): Promise<ElectronSuccessResult | ElectronFailureResult>
-```
-
-Defined in: [electron/bridge.d.ts:250](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L250)
-
-Delete one save slot and its backup file.
-
-###### Parameters
-
-###### id
-
-`string`
-
-Save slot id.
-
-###### Returns
-
-`Promise`\<[`ElectronSuccessResult`](?id=electron.electronsuccessresult) &#124; [`ElectronFailureResult`](?id=electron.electronfailureresult)\>
-
-`{ success: true }` after deleting primary and backup files.
-
-IPC: `delete-save`.
-
-###### loadRaw()
-
-```ts
-loadRaw(name: string): Promise<ElectronLoadResult | null>
-```
-
-Defined in: [electron/bridge.d.ts:260](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L260)
-
-Load a raw save file by filename (including extension).
-
-###### Parameters
-
-###### name
-
-`string`
-
-Filename under the saves folder.
-
-###### Returns
-
-`Promise`\<[`ElectronLoadResult`](?id=electron.electronloadresult) &#124; `null`\>
-
-Parsed save result, or `null` when the handler cannot resolve the file.
-
-IPC: `load-raw`.
-
-###### exportSave()
-
-```ts
-exportSave(id: string): Promise<ElectronExportSaveResult>
-```
-
-Defined in: [electron/bridge.d.ts:270](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L270)
-
-Export one save slot as raw bytes for backup/sharing.
-
-###### Parameters
-
-###### id
-
-`string`
-
-Save slot id.
-
-###### Returns
-
-`Promise`\<[`ElectronExportSaveResult`](?id=electron.electronexportsaveresult)\>
-
-Raw `.save` bytes on success.
-
-IPC: `export-save`.
-
-###### importSave()
-
-```ts
-importSave(bytes: ArrayBuffer | Uint8Array<ArrayBufferLike>): Promise<ElectronImportSaveResult>
-```
-
-Defined in: [electron/bridge.d.ts:280](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L280)
-
-Import one save from raw exported bytes.
-
-###### Parameters
-
-###### bytes
-
-`ArrayBuffer` &#124; `Uint8Array`\<`ArrayBufferLike`\>
-
-Raw `.save` file contents.
-
-###### Returns
-
-`Promise`\<[`ElectronImportSaveResult`](?id=electron.electronimportsaveresult)\>
-
-Import result with parsed header metadata on success.
-
-IPC: `import-save`.
-
-###### getSaveFiles()
-
-```ts
-getSaveFiles(): Promise<ElectronSaveFileMetadata[]>
-```
-
-Defined in: [electron/bridge.d.ts:289](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L289)
-
-List save slot metadata parsed from each `.save` header line.
-
-###### Returns
-
-`Promise`\<[`ElectronSaveFileMetadata`](?id=electron.electronsavefilemetadata)[]\>
-
-Save metadata objects; corrupt entries are omitted.
-
-IPC: `get-save-files`.
-
-###### getSaveFolder()
-
-```ts
-getSaveFolder(): Promise<string>
-```
-
-Defined in: [electron/bridge.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L298)
-
-Return the absolute path to the active saves folder.
-
-###### Returns
-
-`Promise`\<`string`\>
-
-Absolute filesystem path to the current user's saves directory.
-
-IPC: `get-save-folder`.
-
-###### getLastPlayedGameSync()
-
-```ts
-getLastPlayedGameSync(): string | null
-```
-
-Defined in: [electron/bridge.d.ts:310](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L310)
-
-Return the last-played save id JSON string.
-
-###### Returns
-
-`string` &#124; `null`
-
-JSON string shaped like `{ "id": "…" }`, or `null` when unset/unreadable.
-
-IPC: `get-last-played-game-sync`.
-
-###### saveLastPlayedGame()
-
-```ts
-saveLastPlayedGame(game: ElectronLastPlayedGame): Promise<ElectronOperationResult>
-```
-
-Defined in: [electron/bridge.d.ts:320](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L320)
-
-Persist the last-played save id.
-
-###### Parameters
-
-###### game
-
-[`ElectronLastPlayedGame`](?id=electron.electronlastplayedgame)
-
-Object containing the save slot `id`.
-
-###### Returns
-
-`Promise`\<[`ElectronOperationResult`](?id=electron.electronoperationresult)\>
-
-Write result for `lastPlayedGame.json`.
-
-IPC: `save-last-played-game`.
-
-###### clearLastPlayedGame()
-
-```ts
-clearLastPlayedGame(): Promise<ElectronOperationResult>
-```
-
-Defined in: [electron/bridge.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L329)
-
-Clear the persisted last-played save id.
-
-###### Returns
-
-`Promise`\<[`ElectronOperationResult`](?id=electron.electronoperationresult)\>
-
-Delete result for `lastPlayedGame.json`.
-
-IPC: `clear-last-played-game`.
-
-###### saveExistsSync()
-
-```ts
-saveExistsSync(id: string): boolean
-```
-
-Defined in: [electron/bridge.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L339)
-
-Return whether a save file exists for the given id.
-
-###### Parameters
-
-###### id
-
-`string`
-
-Save slot id.
-
-###### Returns
-
-`boolean`
-
-True when `<id>.save` exists in the active saves folder.
-
-IPC: `save-exists-sync`.
-
-###### getSettingsSync()
-
-```ts
-getSettingsSync(): string | null
-```
-
-Defined in: [electron/bridge.d.ts:348](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L348)
-
-Return the settings JSON string from disk.
-
-###### Returns
-
-`string` &#124; `null`
-
-Raw `settings.json` contents, or `null` when missing/unreadable.
-
-IPC: `get-settings-sync`.
-
-###### saveSettings()
-
-```ts
-saveSettings(settings: JsonValueV1): Promise<ElectronOperationResult>
-```
-
-Defined in: [electron/bridge.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L358)
-
-Persist renderer settings JSON to disk.
-
-###### Parameters
-
-###### settings
-
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)
-
-Settings object written to `settings.json`.
-
-###### Returns
-
-`Promise`\<[`ElectronOperationResult`](?id=electron.electronoperationresult)\>
-
-Write result for the settings file.
-
-IPC: `save-settings`.
-
-###### setFullscreen()
-
-```ts
-setFullscreen(shouldBeFullscreen: boolean): Promise<ElectronOperationResult>
-```
-
-Defined in: [electron/bridge.d.ts:368](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L368)
-
-Enter or leave fullscreen mode.
-
-###### Parameters
-
-###### shouldBeFullscreen
-
-`boolean`
-
-Target fullscreen state.
-
-###### Returns
-
-`Promise`\<[`ElectronOperationResult`](?id=electron.electronoperationresult)\>
-
-Window fullscreen operation result.
-
-IPC: `set-fullscreen`.
-
-###### toggleFullscreen()
-
-```ts
-toggleFullscreen(): Promise<ElectronOperationResult>
-```
-
-Defined in: [electron/bridge.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L377)
-
-Toggle fullscreen mode.
-
-###### Returns
-
-`Promise`\<[`ElectronOperationResult`](?id=electron.electronoperationresult)\>
-
-Window fullscreen operation result.
-
-IPC: `toggle-fullscreen`.
-
-###### openDevTools()
-
-```ts
-openDevTools(): void
-```
-
-Defined in: [electron/bridge.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L384)
-
-Open Chromium DevTools for the game window.
-
-IPC: `open-devtools` (`send`).
-
-###### Returns
-
-`void`
-
-###### isFilePatchingActiveSync()
-
-```ts
-isFilePatchingActiveSync(): boolean
-```
-
-Defined in: [electron/bridge.d.ts:393](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L393)
-
-Return true when the Steam patch protocol interceptor is active.
-
-###### Returns
-
-`boolean`
-
-True when patched sources are registered and the interceptor is running.
-
-IPC: `is-file-patching-active-sync`.
-
-###### log()
-
-```ts
-log(level: ElectronLogLevel, scope: string, message: string): void
-```
-
-Defined in: [electron/bridge.d.ts:412](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L412)
-
-Append one line to the host log file (`logs/main.log`).
-
-Fire-and-forget — never awaits IPC completion.
-
-###### Parameters
-
-###### level
-
-[`ElectronLogLevel`](?id=electron.electronloglevel)
-
-Log severity (`console.log` maps to `"info"` in mod shims).
-
-###### scope
-
-`string`
-
-Category tag (mod id for mod logging).
-
-###### message
-
-`string`
-
-Plain-text log line.
-
-IPC: `log:write` (`send`).
-
-###### Returns
-
-`void`
-
-###### getSystemInfo()
-
-```ts
-getSystemInfo(): ElectronSystemInfo
-```
-
-Defined in: [electron/bridge.d.ts:421](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L421)
-
-Return local process/runtime versions.
-
-Useful for bug reports and environment probes.
-
-###### Returns
-
-[`ElectronSystemInfo`](?id=electron.electronsysteminfo)
-
-Version info read from the preload process object.
+</div>
 
 </div>
 
@@ -33167,117 +32088,26 @@ Version info read from the preload process object.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L11" target="_blank" rel="noopener">custom-maps.d.ts:11</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| save() | <code>(id: string, name: string, data: JsonValueV1): Promise&lt;ElectronOperationResult&gt;</code> | Write one custom map file (`.custommap`). |
+| load() | <code>(id: string): Promise&lt;JsonValueV1&gt;</code> | Load one custom map by id. |
+| list() | <code>(): Promise&lt;JsonValueV1[]&gt;</code> | List custom map metadata entries (newest first). |
+| delete() | <code>(id: string): Promise&lt;ElectronOperationResult&gt;</code> | Delete one custom map file. |
+
+<div class="smt-member-anchors">
+
+###### save() <!-- {docsify-ignore} -->
+
+###### load() <!-- {docsify-ignore} -->
+
+###### list() <!-- {docsify-ignore} -->
+
+###### delete() <!-- {docsify-ignore} -->
+
+</div>
+
 Custom map editor persistence helpers exposed as `electron.customMaps`.
-
-##### Methods
-
-###### save()
-
-```ts
-save(id: string, name: string, data: JsonValueV1): Promise<ElectronOperationResult>
-```
-
-Defined in: [electron/custom-maps.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L22)
-
-Write one custom map file (`.custommap`).
-
-###### Parameters
-
-###### id
-
-`string`
-
-Map id used in the filename.
-
-###### name
-
-`string`
-
-Display name stored in metadata.
-
-###### data
-
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)
-
-Full custom map JSON payload.
-
-###### Returns
-
-`Promise`\<[`ElectronOperationResult`](?id=electron.electronoperationresult)\>
-
-Operation result with written `path` on success.
-
-IPC: `custom-map-save`.
-
-###### load()
-
-```ts
-load(id: string): Promise<JsonValueV1>
-```
-
-Defined in: [electron/custom-maps.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L32)
-
-Load one custom map by id.
-
-###### Parameters
-
-###### id
-
-`string`
-
-Map id (filename stem).
-
-###### Returns
-
-`Promise`\<[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)\>
-
-Parsed map JSON, or `null` when missing or invalid.
-
-IPC: `custom-map-load`.
-
-###### list()
-
-```ts
-list(): Promise<JsonValueV1[]>
-```
-
-Defined in: [electron/custom-maps.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L41)
-
-List custom map metadata entries (newest first).
-
-###### Returns
-
-`Promise`\<[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)[]\>
-
-Metadata objects parsed from each `.custommap` header line.
-
-IPC: `custom-map-list`.
-
-###### delete()
-
-```ts
-delete(id: string): Promise<ElectronOperationResult>
-```
-
-Defined in: [electron/custom-maps.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L51)
-
-Delete one custom map file.
-
-###### Parameters
-
-###### id
-
-`string`
-
-Map id (filename stem).
-
-###### Returns
-
-`Promise`\<[`ElectronOperationResult`](?id=electron.electronoperationresult)\>
-
-Operation result from the delete handler.
-
-IPC: `custom-map-delete`.
 
 </div>
 
@@ -33287,91 +32117,26 @@ IPC: `custom-map-delete`.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L14" target="_blank" rel="noopener">local-mods.d.ts:14</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| getFolder() | <code>(): Promise&lt;string&gt;</code> | Return the absolute path to the OS local-mods folder. |
+| openFolder() | <code>(): Promise&lt;ElectronOperationResult&gt;</code> | Open the local-mods folder in the OS file manager. |
+| list() | <code>(): Promise&lt;ElectronLocalModsListResult&gt;</code> | List installed local mod summaries. Steam only — MS Store returns `{ ok: false, errorCode: 'unsupported_platform' }`. |
+| upload() | <code>(modId: string): Promise&lt;ElectronLocalModsUploadResult&gt;</code> | Upload one local mod folder to Steam Workshop. |
+
+<div class="smt-member-anchors">
+
+###### getFolder() <!-- {docsify-ignore} -->
+
+###### openFolder() <!-- {docsify-ignore} -->
+
+###### list() <!-- {docsify-ignore} -->
+
+###### upload() <!-- {docsify-ignore} -->
+
+</div>
+
 Local developer mod folder helpers exposed as `electron.localMods`.
-
-##### Methods
-
-###### getFolder()
-
-```ts
-getFolder(): Promise<string>
-```
-
-Defined in: [electron/local-mods.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L22)
-
-Return the absolute path to the OS local-mods folder.
-
-###### Returns
-
-`Promise`\<`string`\>
-
-Absolute filesystem path to the local mods root.
-
-IPC: `get-local-mods-folder`.
-
-###### openFolder()
-
-```ts
-openFolder(): Promise<ElectronOperationResult>
-```
-
-Defined in: [electron/local-mods.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L31)
-
-Open the local-mods folder in the OS file manager.
-
-###### Returns
-
-`Promise`\<[`ElectronOperationResult`](?id=electron.electronoperationresult)\>
-
-Operation result from the shell open call.
-
-IPC: `open-local-mods-folder`.
-
-###### list()
-
-```ts
-list(): Promise<ElectronLocalModsListResult>
-```
-
-Defined in: [electron/local-mods.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L42)
-
-List installed local mod summaries.
-
-Steam only — MS Store returns `{ ok: false, errorCode: 'unsupported_platform' }`.
-
-###### Returns
-
-`Promise`\<[`ElectronLocalModsListResult`](?id=electron.electronlocalmodslistresult)\>
-
-Listing result with mod summaries in `data` when `ok` is true.
-
-IPC: `local-mods-list`.
-
-###### upload()
-
-```ts
-upload(modId: string): Promise<ElectronLocalModsUploadResult>
-```
-
-Defined in: [electron/local-mods.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L52)
-
-Upload one local mod folder to Steam Workshop.
-
-###### Parameters
-
-###### modId
-
-`string`
-
-Local mod folder id under the local-mods directory.
-
-###### Returns
-
-`Promise`\<[`ElectronLocalModsUploadResult`](?id=electron.electronlocalmodsuploadresult)\>
-
-Upload result with `errorCode` on failure.
-
-IPC: `local-mods-upload`.
 
 </div>
 
@@ -33381,87 +32146,23 @@ IPC: `local-mods-upload`.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L8" target="_blank" rel="noopener">mac-right-mouse.d.ts:8</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| watch() | <code>(active: boolean, probeScript?: string): void</code> | Enable or disable global right-button probing on macOS. |
+| onPos() | <code>(callback: (x: number, y: number) =&gt; void): void</code> | Register a callback for synthetic right-button position updates. |
+| onUp() | <code>(callback: () =&gt; void): void</code> | Register a callback for synthetic right-button release. |
+
+<div class="smt-member-anchors">
+
+###### watch() <!-- {docsify-ignore} -->
+
+###### onPos() <!-- {docsify-ignore} -->
+
+###### onUp() <!-- {docsify-ignore} -->
+
+</div>
+
 macOS right-button emulation helpers exposed as `electron.macRightMouse`.
-
-##### Methods
-
-###### watch()
-
-```ts
-watch(active: boolean, probeScript?: string): void
-```
-
-Defined in: [electron/mac-right-mouse.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L17)
-
-Enable or disable global right-button probing on macOS.
-
-###### Parameters
-
-###### active
-
-`boolean`
-
-When true, start watching for synthetic right-click gestures.
-
-###### probeScript?
-
-`string`
-
-Optional probe script forwarded to the main process.
-
-IPC: `mac-right-mouse-watch` (`send`).
-
-###### Returns
-
-`void`
-
-###### onPos()
-
-```ts
-onPos(callback: (x: number, y: number) => void): void
-```
-
-Defined in: [electron/mac-right-mouse.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L26)
-
-Register a callback for synthetic right-button position updates.
-
-###### Parameters
-
-###### callback
-
-(`x`: `number`, `y`: `number`) => `void`
-
-Receives screen coordinates for the emulated right click.
-
-IPC: `mac-right-mouse-pos`.
-
-###### Returns
-
-`void`
-
-###### onUp()
-
-```ts
-onUp(callback: () => void): void
-```
-
-Defined in: [electron/mac-right-mouse.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L35)
-
-Register a callback for synthetic right-button release.
-
-###### Parameters
-
-###### callback
-
-() => `void`
-
-Called when the emulated right button is released.
-
-IPC: `mac-right-mouse-up`.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -33471,35 +32172,17 @@ IPC: `mac-right-mouse-up`.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L11" target="_blank" rel="noopener">platform.d.ts:11</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| openUrl() | <code>(url: string): Promise&lt;unknown&gt;</code> | Open an `https:` URL in the platform overlay browser when available. |
+
+<div class="smt-member-anchors">
+
+###### openUrl() <!-- {docsify-ignore} -->
+
+</div>
+
 Platform overlay browser helpers exposed as `electron.platform.overlay`.
-
-##### Methods
-
-###### openUrl()
-
-```ts
-openUrl(url: string): Promise<unknown>
-```
-
-Defined in: [electron/platform.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L20)
-
-Open an `https:` URL in the platform overlay browser when available.
-
-###### Parameters
-
-###### url
-
-`string`
-
-External https URL.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Platform-specific overlay open result (`false` when URL is rejected).
-
-IPC: `platform-overlay-open-url`.
 
 </div>
 
@@ -33511,8 +32194,8 @@ IPC: `platform-overlay-open-url`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| workshop | ElectronWorkshopApi | Steam Workshop helpers (Steam only; MS Store calls fail gracefully). |
-| overlay | ElectronPlatformOverlayApi | Platform overlay browser helpers. |
+| workshop | <code>ElectronWorkshopApi</code> | Steam Workshop helpers (Steam only; MS Store calls fail gracefully). |
+| overlay | <code>ElectronPlatformOverlayApi</code> | Platform overlay browser helpers. |
 
 <div class="smt-member-anchors">
 
@@ -33522,287 +32205,50 @@ IPC: `platform-overlay-open-url`.
 
 </div>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| isInitialized() | <code>(): Promise&lt;boolean&gt;</code> | Return true when the platform integration finished startup. |
+| getPlayerName() | <code>(): Promise&lt;string&gt;</code> | Return the signed-in player display name. |
+| getPlayerId() | <code>(): Promise&lt;string&gt;</code> | Return the stable platform player id string. |
+| getAppId() | <code>(): Promise&lt;number&gt;</code> | Return the platform app id number. |
+| unlockAchievement() | <code>(achievementId: string): Promise&lt;unknown&gt;</code> | Unlock one platform achievement. |
+| isAchievementUnlocked() | <code>(achievementId: string): Promise&lt;unknown&gt;</code> | Return whether an achievement is already unlocked. |
+| clearAchievement() | <code>(achievementId: string): Promise&lt;unknown&gt;</code> | Clear one platform achievement (debug / QA). |
+| cloudSave() | <code>(fileName: string, data: JsonValueV1): Promise&lt;unknown&gt;</code> | Write one named blob to platform cloud storage. |
+| cloudLoad() | <code>(fileName: string): Promise&lt;unknown&gt;</code> | Read one named blob from platform cloud storage. |
+| cloudFileExists() | <code>(fileName: string): Promise&lt;unknown&gt;</code> | Return whether a cloud file key exists. |
+| cloudDelete() | <code>(fileName: string): Promise&lt;unknown&gt;</code> | Delete one named cloud file. |
+| cloudSync() | <code>(): Promise&lt;unknown&gt;</code> | Sync local saves with platform cloud storage. |
+
+<div class="smt-member-anchors">
+
+###### isInitialized() <!-- {docsify-ignore} -->
+
+###### getPlayerName() <!-- {docsify-ignore} -->
+
+###### getPlayerId() <!-- {docsify-ignore} -->
+
+###### getAppId() <!-- {docsify-ignore} -->
+
+###### unlockAchievement() <!-- {docsify-ignore} -->
+
+###### isAchievementUnlocked() <!-- {docsify-ignore} -->
+
+###### clearAchievement() <!-- {docsify-ignore} -->
+
+###### cloudSave() <!-- {docsify-ignore} -->
+
+###### cloudLoad() <!-- {docsify-ignore} -->
+
+###### cloudFileExists() <!-- {docsify-ignore} -->
+
+###### cloudDelete() <!-- {docsify-ignore} -->
+
+###### cloudSync() <!-- {docsify-ignore} -->
+
+</div>
+
 Cross-store platform helpers exposed as `electron.platform`.
-
-##### Methods
-
-###### isInitialized()
-
-```ts
-isInitialized(): Promise<boolean>
-```
-
-Defined in: [electron/platform.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L34)
-
-Return true when the platform integration finished startup.
-
-###### Returns
-
-`Promise`\<`boolean`\>
-
-Whether Steam / MS Store integration is ready.
-
-IPC: `platform-is-initialized`.
-
-###### getPlayerName()
-
-```ts
-getPlayerName(): Promise<string>
-```
-
-Defined in: [electron/platform.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L43)
-
-Return the signed-in player display name.
-
-###### Returns
-
-`Promise`\<`string`\>
-
-Platform account display name.
-
-IPC: `platform-get-player-name`.
-
-###### getPlayerId()
-
-```ts
-getPlayerId(): Promise<string>
-```
-
-Defined in: [electron/platform.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L52)
-
-Return the stable platform player id string.
-
-###### Returns
-
-`Promise`\<`string`\>
-
-Platform-specific player identifier.
-
-IPC: `platform-get-player-id`.
-
-###### getAppId()
-
-```ts
-getAppId(): Promise<number>
-```
-
-Defined in: [electron/platform.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L61)
-
-Return the platform app id number.
-
-###### Returns
-
-`Promise`\<`number`\>
-
-Steam App ID or MS Store equivalent.
-
-IPC: `platform-get-app-id`.
-
-###### unlockAchievement()
-
-```ts
-unlockAchievement(achievementId: string): Promise<unknown>
-```
-
-Defined in: [electron/platform.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L71)
-
-Unlock one platform achievement.
-
-###### Parameters
-
-###### achievementId
-
-`string`
-
-Platform achievement identifier.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Platform achievement unlock result.
-
-IPC: `platform-unlock-achievement`.
-
-###### isAchievementUnlocked()
-
-```ts
-isAchievementUnlocked(achievementId: string): Promise<unknown>
-```
-
-Defined in: [electron/platform.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L81)
-
-Return whether an achievement is already unlocked.
-
-###### Parameters
-
-###### achievementId
-
-`string`
-
-Platform achievement identifier.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-True when the achievement is unlocked on the platform account.
-
-IPC: `platform-is-achievement-unlocked`.
-
-###### clearAchievement()
-
-```ts
-clearAchievement(achievementId: string): Promise<unknown>
-```
-
-Defined in: [electron/platform.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L91)
-
-Clear one platform achievement (debug / QA).
-
-###### Parameters
-
-###### achievementId
-
-`string`
-
-Platform achievement identifier.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Platform achievement clear result.
-
-IPC: `platform-clear-achievement`.
-
-###### cloudSave()
-
-```ts
-cloudSave(fileName: string, data: JsonValueV1): Promise<unknown>
-```
-
-Defined in: [electron/platform.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L102)
-
-Write one named blob to platform cloud storage.
-
-###### Parameters
-
-###### fileName
-
-`string`
-
-Cloud file key.
-
-###### data
-
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)
-
-JSON-serializable payload.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Platform cloud save result.
-
-IPC: `platform-cloud-save`.
-
-###### cloudLoad()
-
-```ts
-cloudLoad(fileName: string): Promise<unknown>
-```
-
-Defined in: [electron/platform.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L112)
-
-Read one named blob from platform cloud storage.
-
-###### Parameters
-
-###### fileName
-
-`string`
-
-Cloud file key.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Parsed cloud payload, or `null` when missing.
-
-IPC: `platform-cloud-load`.
-
-###### cloudFileExists()
-
-```ts
-cloudFileExists(fileName: string): Promise<unknown>
-```
-
-Defined in: [electron/platform.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L122)
-
-Return whether a cloud file key exists.
-
-###### Parameters
-
-###### fileName
-
-`string`
-
-Cloud file key.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-True when the cloud file is present.
-
-IPC: `platform-cloud-file-exists`.
-
-###### cloudDelete()
-
-```ts
-cloudDelete(fileName: string): Promise<unknown>
-```
-
-Defined in: [electron/platform.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L132)
-
-Delete one named cloud file.
-
-###### Parameters
-
-###### fileName
-
-`string`
-
-Cloud file key.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Platform cloud delete result.
-
-IPC: `platform-cloud-delete`.
-
-###### cloudSync()
-
-```ts
-cloudSync(): Promise<unknown>
-```
-
-Defined in: [electron/platform.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L141)
-
-Sync local saves with platform cloud storage.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Cloud sync summary from the platform integration.
-
-IPC: `platform-cloud-sync`.
 
 </div>
 
@@ -33814,8 +32260,8 @@ IPC: `platform-cloud-sync`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| success | true | Always `true` for this branch of the result union. |
-| path? | string | Absolute path written when a handler persists a file (save/custom map). |
+| success | <code>true</code> | Always `true` for this branch of the result union. |
+| path? | <code>string</code> | Absolute path written when a handler persists a file (save/custom map). |
 
 <div class="smt-member-anchors">
 
@@ -33837,8 +32283,8 @@ Successful invoke result from save, settings, and window handlers.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| success | false | Always `false` for this branch of the result union. |
-| error | string | Human-readable error message from the main process. |
+| success | <code>false</code> | Always `false` for this branch of the result union. |
+| error | <code>string</code> | Human-readable error message from the main process. |
 
 <div class="smt-member-anchors">
 
@@ -33860,10 +32306,10 @@ Failed invoke result from save, settings, and window handlers.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| valid | boolean | Whether the current license is valid for play. |
-| reason | string &#124; null | Failure reason when `valid` is false; otherwise `null`. |
-| networkError | boolean | True when the check failed due to network or platform errors. |
-| cached | boolean | True when the result came from a cached license check. |
+| valid | <code>boolean</code> | Whether the current license is valid for play. |
+| reason | <code>string &#124; null</code> | Failure reason when `valid` is false; otherwise `null`. |
+| networkError | <code>boolean</code> | True when the check failed due to network or platform errors. |
+| cached | <code>boolean</code> | True when the result came from a cached license check. |
 
 <div class="smt-member-anchors">
 
@@ -33889,9 +32335,9 @@ MS Store license check result from [ElectronBridge.checkLicense](?id=electron.ch
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Save slot id (sanitized filename stem). |
-| name | string | Display name shown in the save UI. |
-| data | JsonValueV1 | Full serialized game state (`{ store: … }` shape). |
+| id | <code>string</code> | Save slot id (sanitized filename stem). |
+| name | <code>string</code> | Display name shown in the save UI. |
+| data | <code>JsonValueV1</code> | Full serialized game state (`{ store: … }` shape). |
 
 <div class="smt-member-anchors">
 
@@ -33915,8 +32361,8 @@ Parsed game save payload passed to [ElectronBridge.save](?id=electron.save).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| success | true | Always `true` for this branch of the result union. |
-| data | JsonValueV1 | Parsed save body (`{ store: … }`). |
+| success | <code>true</code> | Always `true` for this branch of the result union. |
+| data | <code>JsonValueV1</code> | Parsed save body (`{ store: … }`). |
 
 <div class="smt-member-anchors">
 
@@ -33938,8 +32384,8 @@ Successful load result from [ElectronBridge.load](?id=electron.load).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| success | false | Always `false` for this branch of the result union. |
-| error | string | Human-readable load failure message. |
+| success | <code>false</code> | Always `false` for this branch of the result union. |
+| error | <code>string</code> | Human-readable load failure message. |
 
 <div class="smt-member-anchors">
 
@@ -33961,16 +32407,16 @@ Failed load result from [ElectronBridge.load](?id=electron.load).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Save slot id (filename stem). |
-| name | string | Display name stored in the save header. |
-| timestamp | string | ISO timestamp string when the save was written. |
-| playTime? | number | Total play time in milliseconds from the save body. |
-| worldId? | string &#124; null | World template id, if present. |
-| worldName? | string &#124; null | World display name, if present. |
-| seed? | number &#124; null | World seed, if present. |
-| productionPoints? | number | Factory production points at save time. |
-| structureCount? | number | Number of placed structures at save time. |
-| resources? | JsonValueV1 | Resource snapshot (`gold`, `fluxite`, `artifacts`, …). |
+| id | <code>string</code> | Save slot id (filename stem). |
+| name | <code>string</code> | Display name stored in the save header. |
+| timestamp | <code>string</code> | ISO timestamp string when the save was written. |
+| playTime? | <code>number</code> | Total play time in milliseconds from the save body. |
+| worldId? | <code>string &#124; null</code> | World template id, if present. |
+| worldName? | <code>string &#124; null</code> | World display name, if present. |
+| seed? | <code>number &#124; null</code> | World seed, if present. |
+| productionPoints? | <code>number</code> | Factory production points at save time. |
+| structureCount? | <code>number</code> | Number of placed structures at save time. |
+| resources? | <code>JsonValueV1</code> | Resource snapshot (`gold`, `fluxite`, `artifacts`, …). |
 
 <div class="smt-member-anchors">
 
@@ -34010,8 +32456,8 @@ Returned by [ElectronBridge.getSaveFiles](?id=electron.getsavefiles).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| success | true | Always `true` for this branch of the result union. |
-| data | Uint8Array | Raw `.save` file bytes (metadata line + gzip payload). |
+| success | <code>true</code> | Always `true` for this branch of the result union. |
+| data | <code>Uint8Array</code> | Raw `.save` file bytes (metadata line + gzip payload). |
 
 <div class="smt-member-anchors">
 
@@ -34033,8 +32479,8 @@ Successful export result from [ElectronBridge.exportSave](?id=electron.exportsav
 
 | Property | Type | Description |
 | --- | --- | --- |
-| success | true | Always `true` for this branch of the result union. |
-| metaData | JsonValueV1 | Metadata parsed from the imported file header line. |
+| success | <code>true</code> | Always `true` for this branch of the result union. |
+| metaData | <code>JsonValueV1</code> | Metadata parsed from the imported file header line. |
 
 <div class="smt-member-anchors">
 
@@ -34056,7 +32502,7 @@ Successful import result from [ElectronBridge.importSave](?id=electron.importsav
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id? | string | Save slot id of the last played game. |
+| id? | <code>string</code> | Save slot id of the last played game. |
 
 <div class="smt-member-anchors">
 
@@ -34076,11 +32522,11 @@ Last-played save marker written by [ElectronBridge.saveLastPlayedGame](?id=elect
 
 | Property | Type | Description |
 | --- | --- | --- |
-| platform | string | Node `process.platform` (for example `linux`, `win32`). |
-| arch | string | CPU architecture string from `process.arch`. |
-| electronVersion | string | Electron runtime version from `process.versions.electron`. |
-| chromeVersion | string | Chromium version from `process.versions.chrome`. |
-| nodeVersion | string | Node.js version from `process.versions.node`. |
+| platform | <code>string</code> | Node `process.platform` (for example `linux`, `win32`). |
+| arch | <code>string</code> | CPU architecture string from `process.arch`. |
+| electronVersion | <code>string</code> | Electron runtime version from `process.versions.electron`. |
+| chromeVersion | <code>string</code> | Chromium version from `process.versions.chrome`. |
+| nodeVersion | <code>string</code> | Node.js version from `process.versions.node`. |
 
 <div class="smt-member-anchors">
 
@@ -34110,9 +32556,9 @@ Read directly in the preload script — no IPC round trip.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| ok | boolean | True when the listing succeeded. |
-| data | JsonValueV1[] | Local mod summary objects when `ok` is true; otherwise `[]`. |
-| errorCode? | string | Error code when `ok` is false (for example `unsupported_platform`). |
+| ok | <code>boolean</code> | True when the listing succeeded. |
+| data | <code>JsonValueV1[]</code> | Local mod summary objects when `ok` is true; otherwise `[]`. |
+| errorCode? | <code>string</code> | Error code when `ok` is false (for example `unsupported_platform`). |
 
 <div class="smt-member-anchors">
 
@@ -34136,9 +32582,9 @@ Result from [ElectronLocalModsApi.list](?id=electron.list-1).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| ok | boolean | True when Workshop upload succeeded. |
-| errorCode? | string | Error code when `ok` is false. |
-| detail? | string | Extra failure detail logged by the main process. |
+| ok | <code>boolean</code> | True when Workshop upload succeeded. |
+| errorCode? | <code>string</code> | Error code when `ok` is false. |
+| detail? | <code>string</code> | Extra failure detail logged by the main process. |
 
 <div class="smt-member-anchors">
 
@@ -34162,8 +32608,8 @@ Result from [ElectronLocalModsApi.upload](?id=electron.upload).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| success | boolean | True when the OS opened the URL. |
-| error? | string | Failure reason (for example `unsupported-url`). |
+| success | <code>boolean</code> | True when the OS opened the URL. |
+| error? | <code>string</code> | Failure reason (for example `unsupported-url`). |
 
 <div class="smt-member-anchors">
 
@@ -34185,8 +32631,8 @@ Result from [ElectronBridge.openExternalBrowser](?id=electron.openexternalbrowse
 
 | Property | Type | Description |
 | --- | --- | --- |
-| success | boolean | True when the cache seed completed. |
-| error? | string | Failure message when `success` is false. |
+| success | <code>boolean</code> | True when the cache seed completed. |
+| error? | <code>string</code> | Failure message when `success` is false. |
 
 <div class="smt-member-anchors">
 
@@ -34208,8 +32654,8 @@ Result from [ElectronBridge.platformPrimeAchievements](?id=electron.platformprim
 
 | Property | Type | Description |
 | --- | --- | --- |
-| response? | number | Button index chosen in the native MS Store dialog. |
-| dismissed? | boolean | True on Steam where no dialog is shown. |
+| response? | <code>number</code> | Button index chosen in the native MS Store dialog. |
+| dismissed? | <code>boolean</code> | True on Steam where no dialog is shown. |
 
 <div class="smt-member-anchors">
 
@@ -34229,235 +32675,43 @@ Result from [ElectronBridge.platformShowReauthPrompt](?id=electron.platformshowr
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L12" target="_blank" rel="noopener">workshop.d.ts:12</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| subscribe() | <code>(itemId: string &#124; number): Promise&lt;unknown&gt;</code> | Subscribe to a Workshop item. |
+| unsubscribe() | <code>(itemId: string &#124; number): Promise&lt;unknown&gt;</code> | Unsubscribe from a Workshop item. |
+| installInfo() | <code>(itemId: string &#124; number): Promise&lt;unknown&gt;</code> | Return install state for a subscribed Workshop item. |
+| downloadInfo() | <code>(itemId: string &#124; number): Promise&lt;unknown&gt;</code> | Return download progress for a Workshop item. |
+| getState() | <code>(itemId: string &#124; number): Promise&lt;unknown&gt;</code> | Return the Steam Workshop item state flags. |
+| getSubscribedItems() | <code>(): Promise&lt;unknown&gt;</code> | Return all subscribed Workshop item ids. |
+| getItem() | <code>(itemId: string &#124; number): Promise&lt;unknown&gt;</code> | Fetch Workshop item metadata. |
+| download() | <code>(itemId: string &#124; number, highPriority?: boolean): Promise&lt;unknown&gt;</code> | Queue or prioritize a Workshop item download. |
+| getSandkitMods() | <code>(): Promise&lt;unknown&gt;</code> | Discover Sandkit Workshop mods installed for the current session. |
+
+<div class="smt-member-anchors">
+
+###### subscribe() <!-- {docsify-ignore} -->
+
+###### unsubscribe() <!-- {docsify-ignore} -->
+
+###### installInfo() <!-- {docsify-ignore} -->
+
+###### downloadInfo() <!-- {docsify-ignore} -->
+
+###### getState() <!-- {docsify-ignore} -->
+
+###### getSubscribedItems() <!-- {docsify-ignore} -->
+
+###### getItem() <!-- {docsify-ignore} -->
+
+###### download() <!-- {docsify-ignore} -->
+
+###### getSandkitMods() <!-- {docsify-ignore} -->
+
+</div>
+
 Steam Workshop helpers exposed as `electron.platform.workshop`.
 
 Steam only — calls fail gracefully on MS Store.
-
-##### Methods
-
-###### subscribe()
-
-```ts
-subscribe(itemId: string | number): Promise<unknown>
-```
-
-Defined in: [electron/workshop.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L21)
-
-Subscribe to a Workshop item.
-
-###### Parameters
-
-###### itemId
-
-`string` &#124; `number`
-
-Steam Workshop published file id.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Platform workshop subscribe result.
-
-IPC: `platform-workshop-subscribe`.
-
-###### unsubscribe()
-
-```ts
-unsubscribe(itemId: string | number): Promise<unknown>
-```
-
-Defined in: [electron/workshop.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L31)
-
-Unsubscribe from a Workshop item.
-
-###### Parameters
-
-###### itemId
-
-`string` &#124; `number`
-
-Steam Workshop published file id.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Platform workshop unsubscribe result.
-
-IPC: `platform-workshop-unsubscribe`.
-
-###### installInfo()
-
-```ts
-installInfo(itemId: string | number): Promise<unknown>
-```
-
-Defined in: [electron/workshop.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L41)
-
-Return install state for a subscribed Workshop item.
-
-###### Parameters
-
-###### itemId
-
-`string` &#124; `number`
-
-Steam Workshop published file id.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Install info object from the Steam workshop API wrapper.
-
-IPC: `platform-workshop-install-info`.
-
-###### downloadInfo()
-
-```ts
-downloadInfo(itemId: string | number): Promise<unknown>
-```
-
-Defined in: [electron/workshop.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L51)
-
-Return download progress for a Workshop item.
-
-###### Parameters
-
-###### itemId
-
-`string` &#124; `number`
-
-Steam Workshop published file id.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Download info object from the Steam workshop API wrapper.
-
-IPC: `platform-workshop-download-info`.
-
-###### getState()
-
-```ts
-getState(itemId: string | number): Promise<unknown>
-```
-
-Defined in: [electron/workshop.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L61)
-
-Return the Steam Workshop item state flags.
-
-###### Parameters
-
-###### itemId
-
-`string` &#124; `number`
-
-Steam Workshop published file id.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Numeric workshop item state from the Steam API wrapper.
-
-IPC: `platform-workshop-state`.
-
-###### getSubscribedItems()
-
-```ts
-getSubscribedItems(): Promise<unknown>
-```
-
-Defined in: [electron/workshop.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L70)
-
-Return all subscribed Workshop item ids.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Array of subscribed published file ids.
-
-IPC: `platform-workshop-subscribed-list`.
-
-###### getItem()
-
-```ts
-getItem(itemId: string | number): Promise<unknown>
-```
-
-Defined in: [electron/workshop.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L80)
-
-Fetch Workshop item metadata.
-
-###### Parameters
-
-###### itemId
-
-`string` &#124; `number`
-
-Steam Workshop published file id.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Workshop item details from the Steam API wrapper.
-
-IPC: `platform-workshop-get-item`.
-
-###### download()
-
-```ts
-download(itemId: string | number, highPriority?: boolean): Promise<unknown>
-```
-
-Defined in: [electron/workshop.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L91)
-
-Queue or prioritize a Workshop item download.
-
-###### Parameters
-
-###### itemId
-
-`string` &#124; `number`
-
-Steam Workshop published file id.
-
-###### highPriority?
-
-`boolean`
-
-When true, request a high-priority download queue slot.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-Download request result from the Steam API wrapper.
-
-IPC: `platform-workshop-download`.
-
-###### getSandkitMods()
-
-```ts
-getSandkitMods(): Promise<unknown>
-```
-
-Defined in: [electron/workshop.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L100)
-
-Discover Sandkit Workshop mods installed for the current session.
-
-###### Returns
-
-`Promise`\<`unknown`\>
-
-`{ ok, data: { mods, diagnostics }, error }` discovery payload.
-
-IPC: `platform-workshop-sandkit-mods`.
 
 </div>
 
@@ -34519,7 +32773,7 @@ ElectronIpcListener = (...args: unknown[]) => void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Event-specific payload from the main process (often empty). |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Event-specific payload from the main process (often empty). |
 
 <div class="smt-member-anchors">
 
@@ -34617,8 +32871,8 @@ Result from [ElectronBridge.importSave](?id=electron.importsave).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | number | Runtime asset id. |
-| type | number | Asset category discriminator used by the renderer. |
+| id | <code>number</code> | Runtime asset id. |
+| type | <code>number</code> | Asset category discriminator used by the renderer. |
 
 <div class="smt-member-anchors">
 
@@ -34654,7 +32908,7 @@ EngineFn = (...args: unknown[]) => unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] |  |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] |
 
 <div class="smt-member-anchors">
 
@@ -34757,10 +33011,6 @@ shared.nominal.LooseString<T *extends* string> = T | string & object
 Known string literals plus any other string.
 `T | string` collapses to `string` and drops autocomplete.
 
-##### Type Parameters
-
-###### T
-
 `T` *extends* `string`
 
 </div>
@@ -34781,10 +33031,6 @@ shared.nominal.LooseNumber<T *extends* number> = T | number & object
 
 Known numeric literals plus any other number.
 `T | number` collapses to `number` and drops autocomplete.
-
-##### Type Parameters
-
-###### T
 
 `T` *extends* `number`
 
@@ -34814,10 +33060,6 @@ Plain `number` is not assignable; numeric literals and enum members are.
 ```ts
 readonly optional \_\_tag?: Tag
 ```
-
-##### Type Parameters
-
-###### Tag
 
 `Tag` *extends* `string`
 
@@ -34855,24 +33097,24 @@ Packed simulation cell id from `world.getCellIdAtCell`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| x | number | Player hitbox left edge in world pixels. |
-| y | number | Player hitbox top edge in world pixels. |
-| width | number | Player hitbox width in world pixels. |
-| height | number | Player hitbox height in world pixels. |
-| velocity | Vector2 | Current movement velocity in pixels per second. |
-| threshold | Vector2 | Movement threshold accumulator used by physics. |
-| onGround | boolean | Spawn flag. Live physics does not update this field. Use `sandkit.api.player.isOnGround()` (solid cells 1px below the hitbox). |
-| speedCapOverdrive | object | Temporary speed-cap bonuses applied on each axis. |
-| inventory | InventoryItem[] | Items currently held in the player inventory. |
-| buildings | number[] | Structure type ids the player has unlocked for building. |
-| tech | object | Tech tree nodes and their unlock metadata. |
-| lockedTechs | object | Tech ids explicitly locked for this save. |
-| action | null | Active world action, or null when idle. |
-| hotbar | object | Hotbar slots, active indices, and item sprites. |
-| grapplingHook | boolean | True when the grappling hook is equipped or active. |
-| cooldowns | object | Cooldown timestamps for movement particles and slowdown. |
-| isHovering | boolean | True when hover movement mode is active. |
-| weaponsMeta | object | Per-weapon runtime metadata. |
+| x | <code>number</code> | Player hitbox left edge in world pixels. |
+| y | <code>number</code> | Player hitbox top edge in world pixels. |
+| width | <code>number</code> | Player hitbox width in world pixels. |
+| height | <code>number</code> | Player hitbox height in world pixels. |
+| velocity | <code>Vector2</code> | Current movement velocity in pixels per second. |
+| threshold | <code>Vector2</code> | Movement threshold accumulator used by physics. |
+| onGround | <code>boolean</code> | Spawn flag. Live physics does not update this field. Use `sandkit.api.player.isOnGround()` (solid cells 1px below the hitbox). |
+| speedCapOverdrive | <code>{ x: object; x.dir: dir: null; x.active: active: boolean; x.bonus: bonus: number; x.releaseTime: releaseTime: number; x.releaseBonus: releaseBonus: number; y: object; y.dir: dir: null; y.active: active: boolean; y.bonus: bonus: number; y.releaseTime: releaseTime: number; y.releaseBonus: releaseBonus: number }</code> | Temporary speed-cap bonuses applied on each axis. |
+| inventory | <code>InventoryItem[]</code> | Items currently held in the player inventory. |
+| buildings | <code>number[]</code> | Structure type ids the player has unlocked for building. |
+| tech | <code>{ Index Signature: \[`key`: `string` \&#124; `number`\]: `object` }</code> | Tech tree nodes and their unlock metadata. |
+| lockedTechs | <code>{ Index Signature: \[`key`: `string`\]: `boolean` }</code> | Tech ids explicitly locked for this save. |
+| action | <code>null</code> | Active world action, or null when idle. |
+| hotbar | <code>{ activeSlotIndex: number; hotbarIndex: number; bars: AssetRef[][] }</code> | Hotbar slots, active indices, and item sprites. |
+| grapplingHook | <code>boolean</code> | True when the grappling hook is equipped or active. |
+| cooldowns | <code>{ boostParticle: object; boostParticle.time: time: number; boostParticle.last: last: number; hoverParticle: object; hoverParticle.time: time: number; hoverParticle.last: last: number; slowdown: object; slowdown.last: last: number }</code> | Cooldown timestamps for movement particles and slowdown. |
+| isHovering | <code>boolean</code> | True when hover movement mode is active. |
+| weaponsMeta | <code>{ rocketLauncher: object; rocketLauncher.ammo: ammo: object; rocketLauncher.ammo.current: current: number; rocketLauncher.ammo.reload: reload: object; rocketLauncher.ammo.reload.last: last: number; rocketLauncher.ammo.reloading: reloading: boolean }</code> | Per-weapon runtime metadata. |
 
 <div class="smt-member-anchors">
 
@@ -34928,13 +33170,13 @@ Reflects `sandkit.engine.state` / store player fields exposed to mods.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | number |  |
-| itemType | number |  |
-| abilities | object[] |  |
-| nameKey | string |  |
-| descriptionKey | string |  |
-| categoryKey | "excavation" &#124; "utility" &#124; "drones" |  |
-| sprite? | AssetRef |  |
+| id | <code>number</code> |  |
+| itemType | <code>number</code> |  |
+| abilities | <code>{ type: number; levelRequirement: number; attributes: object; Index Signature: \[`key`: `string`\]: `object`; cooldown: object; cooldown.time: time: number; cooldown.last: last: number }</code> |  |
+| nameKey | <code>string</code> |  |
+| descriptionKey | <code>string</code> |  |
+| categoryKey | <code>&quot;excavation&quot; &#124; &quot;utility&quot; &#124; &quot;drones&quot;</code> |  |
+| sprite? | <code>AssetRef</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -34996,8 +33238,8 @@ Vector2 = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| x | number | Horizontal component. |
-| y | number | Vertical component. |
+| x | <code>number</code> | Horizontal component. |
+| y | <code>number</code> | Vertical component. |
 
 <div class="smt-member-anchors">
 
@@ -35655,7 +33897,7 @@ Powder: 8
 Main-thread `sandkit.api` barrel.
 
 Re-exports all namespaces available as `sandkit.api.*` on the main thread.
-Prefer these methods over [sandkit.engine](api/sandkit.md?id=engine-1) when both exist.
+Prefer these methods over [sandkit.engine](api/sandkit.engine.md) when both exist.
 
 ---
 
@@ -35665,7 +33907,7 @@ Worker-thread `sandkit.api` namespaces.
 
 Prefer these declarations in `worker.js`. Type `sandkit.api` as
 [WorkerSandkitApi](?id=sandkit.api.worker.workersandkitapi). Do not assume main-thread methods exist here.
-See [sandkit.api](api/sandkit.md?id=api-1) for the main-thread public API.
+See [sandkit.api](api/sandkit.api.md) for the main-thread public API.
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
@@ -35876,7 +34118,7 @@ Runtime paths: `sandkit.engine.api.<name>` and `sandkit.engine.state`
 (`main.js`) and worker thread (`worker.js`). The public `sandkit.api`
 surface still differs by runtime.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 These declarations are best-effort stubs. There is no guarantee they are
 complete or correct.
 
@@ -35890,7 +34132,7 @@ Defined in: [sandkit/engine/index.d.ts:132](https://github.com/sandustry-modding
 
 Host `sandkit.engine` object (main and worker).
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 At runtime `sandkit.engine.state === sandkit.state`.
 
 ##### Properties
@@ -35919,8 +34161,8 @@ Defined in: [sandkit/engine/index.d.ts:134](https://github.com/sandustry-modding
 
 | Property | Type | Description |
 | --- | --- | --- |
-| width | number |  |
-| height | number |  |
+| width | <code>number</code> |  |
+| height | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -35930,59 +34172,22 @@ Defined in: [sandkit/engine/index.d.ts:134](https://github.com/sandustry-modding
 
 </div>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| clearScreen() | <code>(value?: RetroConsolePixel): void</code> | Clear the framebuffer. Optional fill value defaults to off. |
+| drawPixel() | <code>(x: number, y: number, value: RetroConsolePixel): void</code> | Set one pixel in the framebuffer. |
+
+<div class="smt-member-anchors">
+
+###### clearScreen() <!-- {docsify-ignore} -->
+
+###### drawPixel() <!-- {docsify-ignore} -->
+
+</div>
+
 **`Internal`**
 
 Low-resolution display buffer for a Retro Console game.
-
-##### Methods
-
-###### clearScreen()
-
-```ts
-clearScreen(value?: RetroConsolePixel): void
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L18)
-
-Clear the framebuffer. Optional fill value defaults to off.
-
-###### Parameters
-
-###### value?
-
-[`RetroConsolePixel`](?id=sandkit.engine.retroconsolepixel)
-
-###### Returns
-
-`void`
-
-###### drawPixel()
-
-```ts
-drawPixel(x: number, y: number, value: RetroConsolePixel): void
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L20)
-
-Set one pixel in the framebuffer.
-
-###### Parameters
-
-###### x
-
-`number`
-
-###### y
-
-`number`
-
-###### value
-
-[`RetroConsolePixel`](?id=sandkit.engine.retroconsolepixel)
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -35994,8 +34199,8 @@ Set one pixel in the framebuffer.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| x | number |  |
-| y | number |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -36019,8 +34224,8 @@ Directional input from the Retro Console controls.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| width | number |  |
-| height | number |  |
+| width | <code>number</code> |  |
+| height | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -36044,9 +34249,9 @@ Display size options for a registered Retro Console game.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string |  |
-| name | string |  |
-| options? | RetroConsoleGameOptions |  |
+| id | <code>string</code> |  |
+| name | <code>string</code> |  |
+| options? | <code>RetroConsoleGameOptions</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -36058,89 +34263,27 @@ Display size options for a registered Retro Console game.
 
 </div>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| init() | <code>(display: RetroConsoleDisplay): TState</code> | Create initial game state and draw the first frame. |
+| update() | <code>(display: RetroConsoleDisplay, state: TState): TState</code> | Advance one frame and return updated game state. |
+| handleInput()? | <code>(display: RetroConsoleDisplay, state: TState, input: RetroConsoleInput): TState</code> | Handle player input when provided. |
+
+<div class="smt-member-anchors">
+
+###### init() <!-- {docsify-ignore} -->
+
+###### update() <!-- {docsify-ignore} -->
+
+###### handleInput()? <!-- {docsify-ignore} -->
+
+</div>
+
 **`Internal`**
 
 Retro Console game definition passed to [RetroConsoleApi.registerGame](?id=sandkit.engine.registergame).
 
-##### Type Parameters
-
-###### TState
-
 `TState` = `unknown`
-
-##### Methods
-
-###### init()
-
-```ts
-init(display: RetroConsoleDisplay): TState
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L41)
-
-Create initial game state and draw the first frame.
-
-###### Parameters
-
-###### display
-
-[`RetroConsoleDisplay`](?id=sandkit.engine.retroconsoledisplay)
-
-###### Returns
-
-`TState`
-
-###### update()
-
-```ts
-update(display: RetroConsoleDisplay, state: TState): TState
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L43)
-
-Advance one frame and return updated game state.
-
-###### Parameters
-
-###### display
-
-[`RetroConsoleDisplay`](?id=sandkit.engine.retroconsoledisplay)
-
-###### state
-
-`TState`
-
-###### Returns
-
-`TState`
-
-###### handleInput()?
-
-```ts
-optional handleInput(display: RetroConsoleDisplay, state: TState, input: RetroConsoleInput): TState
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L45)
-
-Handle player input when provided.
-
-###### Parameters
-
-###### display
-
-[`RetroConsoleDisplay`](?id=sandkit.engine.retroconsoledisplay)
-
-###### state
-
-`TState`
-
-###### input
-
-[`RetroConsoleInput`](?id=sandkit.engine.retroconsoleinput)
-
-###### Returns
-
-`TState`
 
 </div>
 
@@ -36150,37 +34293,19 @@ Handle player input when provided.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L49" target="_blank" rel="noopener">retro-console.d.ts:49</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| registerGame() | <code>&lt;TState&gt;(game: RetroConsoleGame&lt;TState&gt;): void</code> | Register a Retro Console mini-game. |
+
+<div class="smt-member-anchors">
+
+###### registerGame() <!-- {docsify-ignore} -->
+
+</div>
+
 **`Internal`**
 
 `sandkit.engine.api.retroConsole` registration API.
-
-##### Methods
-
-###### registerGame()
-
-```ts
-registerGame<TState>(game: RetroConsoleGame<TState>): void
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L51)
-
-Register a Retro Console mini-game.
-
-###### Type Parameters
-
-###### TState
-
-`TState`
-
-###### Parameters
-
-###### game
-
-[`RetroConsoleGame`](?id=sandkit.engine.retroconsolegame)\<`TState`\>
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -36198,7 +34323,7 @@ Defined in: [sandkit/engine/index.d.ts:32](https://github.com/sandustry-modding/
 
 Composed `sandkit.engine.api` shape.
 
-Overlap namespaces mirror [sandkit.api](api/sandkit.md?id=api-1) with state-first signatures.
+Overlap namespaces mirror [sandkit.api](api/sandkit.api.md) with state-first signatures.
 Engine-only namespaces are declared under `api/`.
 
 ##### Properties

@@ -10,15 +10,15 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| name? | string | Plain display name (when not using [nameKey](?id=namekey)). |
-| nameKey? | string | Display name translation key. |
-| description? | string | Plain description (when not using [descriptionKey](?id=descriptionkey)). |
-| descriptionKey? | string | Description translation key. |
-| cost? | number | Research cost. |
-| currencyType? | string | Currency used for [cost](?id=cost) (for example `"gold"`). |
-| branch? | string | Tech tree branch id (often copied from the parent node). |
-| unlocks? | object | Content unlocked when this tech is researched. |
-| requires? | readonly string[] | Prerequisite tech ids. |
+| name? | <code>string</code> | Plain display name (when not using [nameKey](?id=namekey)). |
+| nameKey? | <code>string</code> | Display name translation key. |
+| description? | <code>string</code> | Plain description (when not using [descriptionKey](?id=descriptionkey)). |
+| descriptionKey? | <code>string</code> | Description translation key. |
+| cost? | <code>number</code> | Research cost. |
+| currencyType? | <code>string</code> | Currency used for [cost](?id=cost) (for example `"gold"`). |
+| branch? | <code>string</code> | Tech tree branch id (often copied from the parent node). |
+| unlocks? | <code>{ structures: readonly string[]; items: readonly string[] }</code> | Content unlocked when this tech is researched. |
+| requires? | <code>readonly string[]</code> | Prerequisite tech ids. |
 
 <div class="smt-member-anchors">
 
@@ -60,8 +60,8 @@ Tech definition shape.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| x | number |  |
-| y | number |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -83,8 +83,8 @@ Position on the tech grid.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| structures? | readonly string[] | Structure ids to unlock. |
-| items? | readonly string[] | Item ids to unlock. |
+| structures? | <code>readonly string[]</code> | Structure ids to unlock. |
+| items? | <code>readonly string[]</code> | Item ids to unlock. |
 
 <div class="smt-member-anchors">
 
@@ -137,7 +137,7 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=techgridid) | Tech entry identifier. |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry identifier. |
 
 <div class="smt-member-anchors">
 
@@ -147,7 +147,7 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 Return a tech definition by string id.
 
-[`TechDefinition`](?id=techdefinition) &#124; `undefined`
+[`TechDefinition`](?id=techdefinition) \| `undefined`
 
 </div>
 
@@ -167,8 +167,8 @@ updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=techgridid) | Tech entry identifier. |
-| updates | `Partial`\<[`TechDefinition`](?id=techdefinition)\> | Fields to merge into the definition. |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry identifier. |
+| updates | `Partial`\<[`TechDefinition`](?id=techdefinition)\> | `Partial`\<[`TechDefinition`](?id=techdefinition)\> Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -206,8 +206,8 @@ registerDefinition(techId: TechGridId, definition: TechDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=techgridid) | Tech entry identifier. |
-| definition | [`TechDefinition`](?id=techdefinition) | Full tech definition to register. |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry identifier. |
+| definition | <code>[`TechDefinition`](?id=techdefinition)</code> | [`TechDefinition`](?id=techdefinition) Full tech definition to register. |
 
 <div class="smt-member-anchors">
 
@@ -249,8 +249,8 @@ addDefinition(techId: TechGridId, definition: TechDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=techgridid) |  |
-| definition | [`TechDefinition`](?id=techdefinition) |  |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) |
+| definition | <code>[`TechDefinition`](?id=techdefinition)</code> | [`TechDefinition`](?id=techdefinition) |
 
 <div class="smt-member-anchors">
 
@@ -287,9 +287,9 @@ registerNode(techId: TechGridId, definition: TechDefinition, options: object): T
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=techgridid) | Tech grid node id. |
-| definition | [`TechDefinition`](?id=techdefinition) | Tech definition for the node. |
-| options | Parent node id and optional preferred grid position. |  |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech grid node id. |
+| definition | <code>[`TechDefinition`](?id=techdefinition)</code> | [`TechDefinition`](?id=techdefinition) Tech definition for the node. |
+| options | <code>Parent node id and optional preferred grid position.</code> | Parent node id and optional preferred grid position. |
 
 <div class="smt-member-anchors">
 
@@ -333,7 +333,7 @@ isLockedById(techId: TechGridId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=techgridid) | Tech entry id (string or numeric enum). |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry id (string or numeric enum). |
 
 <div class="smt-member-anchors">
 
@@ -361,8 +361,8 @@ setLockedById(techId: TechGridId, locked: boolean): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=techgridid) | Tech entry id (string or numeric enum). |
-| locked | `boolean` | When true, the tech cannot be purchased. |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry id (string or numeric enum). |
+| locked | `boolean` | `boolean` When true, the tech cannot be purchased. |
 
 <div class="smt-member-anchors">
 
@@ -392,7 +392,7 @@ isResearchedById(techId: TechGridId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | [`TechGridId`](?id=techgridid) | Tech entry id (string or numeric enum). |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry id (string or numeric enum). |
 
 <div class="smt-member-anchors">
 

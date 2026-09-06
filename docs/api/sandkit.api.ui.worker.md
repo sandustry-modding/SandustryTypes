@@ -18,8 +18,8 @@ Main thread adds richer UI APIs on top of this shape.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| key | string | Namespaced translation key (for example `ui&#124;save&#124;save`). |
-| params? | Record<string, string &#124; number> | Values merged into the translated string. |
+| key | <code>string</code> | Namespaced translation key (for example `ui&#124;save&#124;save`). |
+| params? | <code>Record&lt;string, string &#124; number&gt;</code> | Values merged into the translated string. |
 
 <div class="smt-member-anchors">
 
@@ -41,9 +41,9 @@ Translation key with optional parameter substitution.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| \_\_translatable | true |  |
-| key | string |  |
-| fallback | string |  |
+| \_\_translatable | <code>true</code> |  |
+| key | <code>string</code> |  |
+| fallback | <code>string</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -67,10 +67,10 @@ Value returned by `sandkit.api.i18n.translatable`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cooldown? | number | Minimum ms before the same toast can show again. |
-| cooldownKey? | string | Dedupe key paired with [ToastOptions.cooldown](?id=cooldown). Defaults to the message string or `message.key`. |
-| duration? | number &#124; false | Auto-dismiss delay in ms. Default `5000`. Set `false` to keep the toast until another toast replaces it. |
-| variant? | string & object &#124; "danger" &#124; "hint" &#124; "hole" | Visual style applied to the toast body. |
+| cooldown? | <code>number</code> | Minimum ms before the same toast can show again. |
+| cooldownKey? | <code>string</code> | Dedupe key paired with [ToastOptions.cooldown](?id=cooldown). Defaults to the message string or `message.key`. |
+| duration? | <code>number &#124; false</code> | Auto-dismiss delay in ms. Default `5000`. Set `false` to keep the toast until another toast replaces it. |
+| variant? | <code>string &amp; object &#124; &quot;danger&quot; &#124; &quot;hint&quot; &#124; &quot;hole&quot;</code> | Visual style applied to the toast body. |
 
 <div class="smt-member-anchors">
 
@@ -126,8 +126,8 @@ toast(message: LocalizedText, options?: ToastOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| message | [`LocalizedText`](?id=localizedtext) | Plain text, translation key, or translatable value. |
-| options? | [`ToastOptions`](?id=toastoptions) | Cooldown, style, and auto-dismiss options. |
+| message | <code>[`LocalizedText`](?id=localizedtext)</code> | [`LocalizedText`](?id=localizedtext) Plain text, translation key, or translatable value. |
+| options? | <code>[`ToastOptions`](?id=toastoptions)</code> | [`ToastOptions`](?id=toastoptions) Cooldown, style, and auto-dismiss options. |
 
 <div class="smt-member-anchors">
 

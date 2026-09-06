@@ -22,10 +22,10 @@ AssetProviderV1 = object
 | Property | Type | Description |
 | --- | --- | --- |
 | id | ` ${string}:${string}:${string} ` |  |
-| kind | string |  |
-| localId? | string |  |
-| modId? | number |  |
-| modName | string |  |
+| kind | <code>string</code> |  |
+| localId? | <code>string</code> |  |
+| modId? | <code>number</code> |  |
+| modName | <code>string</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -63,7 +63,7 @@ getUrl(relativePath: string): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| relativePath | `string` | Path relative to the calling mod folder. |
+| relativePath | `string` | `string` Path relative to the calling mod folder. |
 
 <div class="smt-member-anchors">
 
@@ -91,7 +91,7 @@ getSelectedProvider(kind: string): AssetProviderV1 | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| kind | `string` | Asset kind identifier. |
+| kind | `string` | `string` Asset kind identifier. |
 
 <div class="smt-member-anchors">
 
@@ -101,7 +101,7 @@ getSelectedProvider(kind: string): AssetProviderV1 | null
 
 Returns the selected provider for an asset kind, or null.
 
-[`AssetProviderV1`](?id=assetproviderv1) &#124; `null`
+[`AssetProviderV1`](?id=assetproviderv1) \| `null`
 
 </div>
 
@@ -121,8 +121,8 @@ selectProvider(kind: string, providerId: string | null): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| kind | `string` | Asset kind identifier. |
-| providerId | `string` &#124; `null` | Provider id from [getSelectedProvider](?id=getselectedprovider), or null to clear. |
+| kind | `string` | `string` Asset kind identifier. |
+| providerId | `string` &#124; `null` | `string` &#124; `null` Provider id from [getSelectedProvider](?id=getselectedprovider), or null to clear. |
 
 <div class="smt-member-anchors">
 

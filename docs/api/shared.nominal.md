@@ -19,10 +19,6 @@ shared.nominal.LooseString<T *extends* string> = T | string & object
 Known string literals plus any other string.
 `T | string` collapses to `string` and drops autocomplete.
 
-#### Type Parameters
-
-##### T
-
 `T` *extends* `string`
 
 </div>
@@ -43,10 +39,6 @@ shared.nominal.LooseNumber<T *extends* number> = T | number & object
 
 Known numeric literals plus any other number.
 `T | number` collapses to `number` and drops autocomplete.
-
-#### Type Parameters
-
-##### T
 
 `T` *extends* `number`
 
@@ -76,10 +68,6 @@ Plain `number` is not assignable; numeric literals and enum members are.
 ```ts
 readonly optional \_\_tag?: Tag
 ```
-
-#### Type Parameters
-
-##### Tag
 
 `Tag` *extends* `string`
 

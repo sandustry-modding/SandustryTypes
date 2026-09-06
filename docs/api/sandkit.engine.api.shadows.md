@@ -4,7 +4,7 @@
 
 `sandkit.engine.api.shadows` — shadow map refresh for regions.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -26,7 +26,7 @@ refresh(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -54,7 +54,7 @@ refreshRadius(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -82,7 +82,7 @@ refreshRect(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 

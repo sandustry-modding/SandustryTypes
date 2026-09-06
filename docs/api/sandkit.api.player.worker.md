@@ -71,7 +71,7 @@ isCollidingWithCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -101,7 +101,7 @@ isWithinRadiusOfCell(...args: [number, number, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 

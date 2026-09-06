@@ -13,10 +13,10 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| pattern? | number[][] | Dig pattern grid; non-zero cells are removed. |
-| power | number | Dig strength applied to matched cells. Clamped to 0–1000. |
-| options? | ExcavationProfileOptions | Optional profile-specific excavation flags. |
-| terrainRules? | readonly ExcavationTerrainRule[] | Per-terrain output and damage rules. |
+| pattern? | <code>number[][]</code> | Dig pattern grid; non-zero cells are removed. |
+| power | <code>number</code> | Dig strength applied to matched cells. Clamped to 0–1000. |
+| options? | <code>ExcavationProfileOptions</code> | Optional profile-specific excavation flags. |
+| terrainRules? | <code>readonly ExcavationTerrainRule[]</code> | Per-terrain output and damage rules. |
 
 <div class="smt-member-anchors">
 
@@ -42,13 +42,13 @@ Excavation tool profile definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| fromGun? | boolean |  |
-| fromRocketExplosion? | boolean |  |
-| fromDrill? | boolean |  |
-| useLiteralOutVelocity? | boolean |  |
-| destroyNonDestructible? | boolean |  |
-| forceRemoveAll? | boolean |  |
-| drillTierDamage? | number | Clamped to 0–1000 when set. |
+| fromGun? | <code>boolean</code> |  |
+| fromRocketExplosion? | <code>boolean</code> |  |
+| fromDrill? | <code>boolean</code> |  |
+| useLiteralOutVelocity? | <code>boolean</code> |  |
+| destroyNonDestructible? | <code>boolean</code> |  |
+| forceRemoveAll? | <code>boolean</code> |  |
+| drillTierDamage? | <code>number</code> | Clamped to 0–1000 when set. |
 
 <div class="smt-member-anchors">
 
@@ -80,10 +80,10 @@ Options attached to an excavation profile definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cellType | TerrainRef | Terrain cell type to match. |
-| ~~terrainType?~~ | TerrainRef |  |
-| damage? | number | Damage applied when this rule matches. |
-| outputElementType? | ElementRef | Element type produced when this terrain is excavated. |
+| cellType | <code>TerrainRef</code> | Terrain cell type to match. |
+| ~~terrainType?~~ | <code>TerrainRef</code> | Deprecated alias. |
+| damage? | <code>number</code> | Damage applied when this rule matches. |
+| outputElementType? | <code>ElementRef</code> | Element type produced when this terrain is excavated. |
 
 <div class="smt-member-anchors">
 
@@ -119,8 +119,8 @@ registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| id | `string` | Unique profile id (1–128 chars: letters, numbers, `.`, `_`, `:`, `-`). |
-| definition | [`ExcavationProfileDefinitionV1`](?id=excavationprofiledefinitionv1) | Pattern, power, terrain rules, and profile options. |
+| id | `string` | `string` Unique profile id (1–128 chars: letters, numbers, `.`, `_`, `:`, `-`). |
+| definition | <code>[`ExcavationProfileDefinitionV1`](?id=excavationprofiledefinitionv1)</code> | [`ExcavationProfileDefinitionV1`](?id=excavationprofiledefinitionv1) Pattern, power, terrain rules, and profile options. |
 
 <div class="smt-member-anchors">
 

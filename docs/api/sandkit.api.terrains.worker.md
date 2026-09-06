@@ -19,15 +19,15 @@ Worker-entry mutations are immediate. Main thread defers matching helpers in
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Unique mod-scoped terrain id. |
-| nameKey? | string | i18n key for the terrain display name. |
-| hp? | number | Default terrain hit points. |
-| materialId? | number | Material id used for rendering. Must be > obstacle breakpoint and < 150. |
-| metaColor? | number | UI/meta color as 0xRRGGBB. |
-| colorHSL? | [number, number, number] | Base terrain color as HSL components. |
-| excavationRequirements? | readonly string[] | Tool item ids required to excavate this terrain. |
-| interactions? | readonly object[] | Tooltip interactions shown for this terrain. |
-| output? | object | Default element drop when the terrain is destroyed. |
+| id | <code>string</code> | Unique mod-scoped terrain id. |
+| nameKey? | <code>string</code> | i18n key for the terrain display name. |
+| hp? | <code>number</code> | Default terrain hit points. |
+| materialId? | <code>number</code> | Material id used for rendering. Must be > obstacle breakpoint and < 150. |
+| metaColor? | <code>number</code> | UI/meta color as 0xRRGGBB. |
+| colorHSL? | <code>[number, number, number]</code> | Base terrain color as HSL components. |
+| excavationRequirements? | <code>readonly string[]</code> | Tool item ids required to excavate this terrain. |
+| interactions? | <code>readonly object[]</code> | Tooltip interactions shown for this terrain. |
+| output? | <code>{ elementType: ElementType; chance: number }</code> | Default element drop when the terrain is destroyed. |
 
 <div class="smt-member-anchors">
 
@@ -69,9 +69,9 @@ Terrain definition shape for register and [getDefinitionByType](?id=getdefinitio
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cellType | TerrainType | Numeric terrain cell type. |
-| hitPoints | number &#124; null | Current hit points, or null when the terrain has no hp. |
-| ~~hp?~~ | number &#124; null |  |
+| cellType | <code>TerrainType</code> | Numeric terrain cell type. |
+| hitPoints | <code>number &#124; null</code> | Current hit points, or null when the terrain has no hp. |
+| ~~hp?~~ | <code>number &#124; null</code> | Deprecated alias. |
 
 <div class="smt-member-anchors">
 
@@ -95,7 +95,7 @@ Terrain cell data returned by [getDataAtCell](?id=getdataatcell).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| skipShadow? | boolean | Skip shadow updates around the changed cell. |
+| skipShadow? | <code>boolean</code> | Skip shadow updates around the changed cell. |
 
 <div class="smt-member-anchors">
 
@@ -181,7 +181,7 @@ getIdByType(terrainType: TerrainType): string & object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainType | [`TerrainType`](?id=terraintype) | Numeric terrain cell type. |
+| terrainType | <code>[`TerrainType`](?id=terraintype)</code> | [`TerrainType`](?id=terraintype) Numeric terrain cell type. |
 
 <div class="smt-member-anchors">
 
@@ -211,7 +211,7 @@ getTypeById(terrainId: string & object): TerrainType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainId | `string` & `object` | Mod-registered or built-in terrain id. |
+| terrainId | `string` & `object` | `string` & `object` Mod-registered or built-in terrain id. |
 
 <div class="smt-member-anchors">
 
@@ -241,7 +241,7 @@ getTypeFromId(terrainId: string & object): TerrainType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainId | `string` & `object` |  |
+| terrainId | `string` & `object` | `string` & `object` |
 
 <div class="smt-member-anchors">
 
@@ -278,7 +278,7 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainType | [`TerrainType`](?id=terraintype) | Numeric terrain cell type. |
+| terrainType | <code>[`TerrainType`](?id=terraintype)</code> | [`TerrainType`](?id=terraintype) Numeric terrain cell type. |
 
 <div class="smt-member-anchors">
 
@@ -288,7 +288,7 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 Look up the definition for a terrain type.
 
-[`TerrainDefinition`](?id=terraindefinition) &#124; `undefined`
+[`TerrainDefinition`](?id=terraindefinition) \| `undefined`
 
 </div>
 
@@ -308,7 +308,7 @@ getTypeAtCell(...args: CellCoordinates): TerrainType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -318,7 +318,7 @@ getTypeAtCell(...args: CellCoordinates): TerrainType | null
 
 Return the terrain cell type at a cell, or null when none.
 
-[`TerrainType`](?id=terraintype) &#124; `null`
+[`TerrainType`](?id=terraintype) \| `null`
 
 </div>
 
@@ -338,7 +338,7 @@ getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -348,7 +348,7 @@ getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 
 Return terrain cell type and hit points at a cell.
 
-[`TerrainDataAtCell`](?id=terraindataatcell) &#124; `null` Cell type and hit points, or null when the cell is not terrain.
+[`TerrainDataAtCell`](?id=terraindataatcell) \| `null` Cell type and hit points, or null when the cell is not terrain.
 
 </div>
 
@@ -368,7 +368,7 @@ isAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -396,7 +396,7 @@ isTypeAtCell(...args: [number, number, string & object]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `string` & `object`\] |  |
+| args | <code>...\[`number`, `number`, `string` &amp; `object`\]</code> | ...\[`number`, `number`, `string` & `object`\] |
 
 <div class="smt-member-anchors">
 
@@ -424,7 +424,7 @@ isCellIdTerrain(cellId: CellId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md?id=getcellidatcell). |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md?id=getcellidatcell). |
 
 <div class="smt-member-anchors">
 
@@ -452,7 +452,7 @@ damageAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -480,7 +480,7 @@ meltAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -508,7 +508,7 @@ createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -536,7 +536,7 @@ replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -564,7 +564,7 @@ removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`TerrainMutationOptions`](?id=terrainmutationoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainMutationOptions`](?id=terrainmutationoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -592,7 +592,7 @@ setHitPointsAtCell(...args: [number, number, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -622,7 +622,7 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 

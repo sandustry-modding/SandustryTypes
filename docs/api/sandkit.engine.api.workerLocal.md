@@ -4,7 +4,7 @@
 
 `sandkit.engine.api.workerLocal` — per-worker ephemeral key-value storage.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Available on worker threads only. Values do not persist across workers.
 
 ## Functions <!-- {docsify-ignore} -->
@@ -25,7 +25,7 @@ clear(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -53,7 +53,7 @@ get(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -81,7 +81,7 @@ getOrInit(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -109,7 +109,7 @@ set(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 

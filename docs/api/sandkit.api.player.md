@@ -18,8 +18,8 @@ setPositionAtWorld(worldX: number, worldY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -49,8 +49,8 @@ setWorldPosition(worldX: number, worldY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` |  |
-| worldY | `number` |  |
+| worldX | `number` | `number` |
+| worldY | `number` | `number` |
 
 <div class="smt-member-anchors">
 
@@ -87,8 +87,8 @@ setVelocity(velocityX: number, velocityY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| velocityX | `number` | Horizontal velocity in pixels per second. |
-| velocityY | `number` | Vertical velocity in pixels per second. |
+| velocityX | `number` | `number` Horizontal velocity in pixels per second. |
+| velocityY | `number` | `number` Vertical velocity in pixels per second. |
 
 <div class="smt-member-anchors">
 
@@ -118,7 +118,7 @@ setMovementSpeedMultiplier(multiplier: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| multiplier | `number` | Speed scale factor (`1` is default walk). `0` freezes movement. Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly `1`. |
+| multiplier | `number` | `number` Speed scale factor (`1` is default walk). `0` freezes movement. Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly `1`. |
 
 <div class="smt-member-anchors">
 
@@ -146,7 +146,7 @@ setMovementMode(mode: "normal" | "hover"): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| mode | `"normal"` &#124; `"hover"` | `"normal"` for default physics, or `"hover"` for hover flight. |
+| mode | `"normal"` &#124; `"hover"` | `"normal"` &#124; `"hover"` `"normal"` for default physics, or `"hover"` for hover flight. |
 
 <div class="smt-member-anchors">
 
@@ -216,8 +216,8 @@ isPositionClearAtWorld(worldX: number, worldY: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels to test. |
-| worldY | `number` | World y position in pixels to test. |
+| worldX | `number` | `number` World x position in pixels to test. |
+| worldY | `number` | `number` World y position in pixels to test. |
 
 <div class="smt-member-anchors">
 
@@ -249,8 +249,8 @@ isWorldPositionClear(worldX: number, worldY: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` |  |
-| worldY | `number` |  |
+| worldX | `number` | `number` |
+| worldY | `number` | `number` |
 
 <div class="smt-member-anchors">
 

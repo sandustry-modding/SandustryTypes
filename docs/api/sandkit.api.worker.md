@@ -4,7 +4,7 @@ Worker-thread `sandkit.api` namespaces.
 
 Prefer these declarations in `worker.js`. Type `sandkit.api` as
 [WorkerSandkitApi](?id=workersandkitapi). Do not assume main-thread methods exist here.
-See [sandkit.api](api/sandkit.md?id=api-1) for the main-thread public API.
+See [sandkit.api](api/sandkit.api.md) for the main-thread public API.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 

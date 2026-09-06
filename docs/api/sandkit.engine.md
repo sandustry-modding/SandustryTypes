@@ -9,7 +9,7 @@ Runtime paths: `sandkit.engine.api.<name>` and `sandkit.engine.state`
 (`main.js`) and worker thread (`worker.js`). The public `sandkit.api`
 surface still differs by runtime.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 These declarations are best-effort stubs. There is no guarantee they are
 complete or correct.
 
@@ -23,7 +23,7 @@ Defined in: [sandkit/engine/index.d.ts:132](https://github.com/sandustry-modding
 
 Host `sandkit.engine` object (main and worker).
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 At runtime `sandkit.engine.state === sandkit.state`.
 
 #### Properties
@@ -52,8 +52,8 @@ Defined in: [sandkit/engine/index.d.ts:134](https://github.com/sandustry-modding
 
 | Property | Type | Description |
 | --- | --- | --- |
-| width | number |  |
-| height | number |  |
+| width | <code>number</code> |  |
+| height | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -63,59 +63,22 @@ Defined in: [sandkit/engine/index.d.ts:134](https://github.com/sandustry-modding
 
 </div>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| clearScreen() | <code>(value?: RetroConsolePixel): void</code> | Clear the framebuffer. Optional fill value defaults to off. |
+| drawPixel() | <code>(x: number, y: number, value: RetroConsolePixel): void</code> | Set one pixel in the framebuffer. |
+
+<div class="smt-member-anchors">
+
+##### clearScreen() <!-- {docsify-ignore} -->
+
+##### drawPixel() <!-- {docsify-ignore} -->
+
+</div>
+
 **`Internal`**
 
 Low-resolution display buffer for a Retro Console game.
-
-#### Methods
-
-##### clearScreen()
-
-```ts
-clearScreen(value?: RetroConsolePixel): void
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L18)
-
-Clear the framebuffer. Optional fill value defaults to off.
-
-###### Parameters
-
-###### value?
-
-[`RetroConsolePixel`](?id=retroconsolepixel)
-
-###### Returns
-
-`void`
-
-##### drawPixel()
-
-```ts
-drawPixel(x: number, y: number, value: RetroConsolePixel): void
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L20)
-
-Set one pixel in the framebuffer.
-
-###### Parameters
-
-###### x
-
-`number`
-
-###### y
-
-`number`
-
-###### value
-
-[`RetroConsolePixel`](?id=retroconsolepixel)
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -127,8 +90,8 @@ Set one pixel in the framebuffer.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| x | number |  |
-| y | number |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -152,8 +115,8 @@ Directional input from the Retro Console controls.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| width | number |  |
-| height | number |  |
+| width | <code>number</code> |  |
+| height | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -177,9 +140,9 @@ Display size options for a registered Retro Console game.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string |  |
-| name | string |  |
-| options? | RetroConsoleGameOptions |  |
+| id | <code>string</code> |  |
+| name | <code>string</code> |  |
+| options? | <code>RetroConsoleGameOptions</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -191,89 +154,27 @@ Display size options for a registered Retro Console game.
 
 </div>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| init() | <code>(display: RetroConsoleDisplay): TState</code> | Create initial game state and draw the first frame. |
+| update() | <code>(display: RetroConsoleDisplay, state: TState): TState</code> | Advance one frame and return updated game state. |
+| handleInput()? | <code>(display: RetroConsoleDisplay, state: TState, input: RetroConsoleInput): TState</code> | Handle player input when provided. |
+
+<div class="smt-member-anchors">
+
+##### init() <!-- {docsify-ignore} -->
+
+##### update() <!-- {docsify-ignore} -->
+
+##### handleInput()? <!-- {docsify-ignore} -->
+
+</div>
+
 **`Internal`**
 
 Retro Console game definition passed to [RetroConsoleApi.registerGame](?id=registergame).
 
-#### Type Parameters
-
-##### TState
-
 `TState` = `unknown`
-
-#### Methods
-
-##### init()
-
-```ts
-init(display: RetroConsoleDisplay): TState
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L41)
-
-Create initial game state and draw the first frame.
-
-###### Parameters
-
-###### display
-
-[`RetroConsoleDisplay`](?id=retroconsoledisplay)
-
-###### Returns
-
-`TState`
-
-##### update()
-
-```ts
-update(display: RetroConsoleDisplay, state: TState): TState
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L43)
-
-Advance one frame and return updated game state.
-
-###### Parameters
-
-###### display
-
-[`RetroConsoleDisplay`](?id=retroconsoledisplay)
-
-###### state
-
-`TState`
-
-###### Returns
-
-`TState`
-
-##### handleInput()?
-
-```ts
-optional handleInput(display: RetroConsoleDisplay, state: TState, input: RetroConsoleInput): TState
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L45)
-
-Handle player input when provided.
-
-###### Parameters
-
-###### display
-
-[`RetroConsoleDisplay`](?id=retroconsoledisplay)
-
-###### state
-
-`TState`
-
-###### input
-
-[`RetroConsoleInput`](?id=retroconsoleinput)
-
-###### Returns
-
-`TState`
 
 </div>
 
@@ -283,37 +184,19 @@ Handle player input when provided.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L49" target="_blank" rel="noopener">retro-console.d.ts:49</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| registerGame() | <code>&lt;TState&gt;(game: RetroConsoleGame&lt;TState&gt;): void</code> | Register a Retro Console mini-game. |
+
+<div class="smt-member-anchors">
+
+##### registerGame() <!-- {docsify-ignore} -->
+
+</div>
+
 **`Internal`**
 
 `sandkit.engine.api.retroConsole` registration API.
-
-#### Methods
-
-##### registerGame()
-
-```ts
-registerGame<TState>(game: RetroConsoleGame<TState>): void
-```
-
-Defined in: [sandkit/engine/retro-console.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L51)
-
-Register a Retro Console mini-game.
-
-###### Type Parameters
-
-###### TState
-
-`TState`
-
-###### Parameters
-
-###### game
-
-[`RetroConsoleGame`](?id=retroconsolegame)\<`TState`\>
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -331,7 +214,7 @@ Defined in: [sandkit/engine/index.d.ts:32](https://github.com/sandustry-modding/
 
 Composed `sandkit.engine.api` shape.
 
-Overlap namespaces mirror [sandkit.api](api/sandkit.md?id=api-1) with state-first signatures.
+Overlap namespaces mirror [sandkit.api](api/sandkit.api.md) with state-first signatures.
 Engine-only namespaces are declared under `api/`.
 
 #### Properties

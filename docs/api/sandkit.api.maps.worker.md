@@ -16,12 +16,12 @@ Shared `sandkit.api.maps` base — active custom map metadata.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id? | string |  |
-| deployment? | unknown |  |
-| spawn? | unknown |  |
-| topBounds? | object |  |
-| parallax? | unknown |  |
-| depthLight? | unknown |  |
+| id? | <code>string</code> |  |
+| deployment? | <code>unknown</code> |  |
+| spawn? | <code>unknown</code> |  |
+| topBounds? | <code>{ soft: number; hard: number }</code> |  |
+| parallax? | <code>unknown</code> |  |
+| depthLight? | <code>unknown</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -69,6 +69,6 @@ getActive(): Readonly<ActiveMapV1> | null
 
 Return the currently loaded custom map definition.
 
-`Readonly`\<[`ActiveMapV1`](?id=activemapv1)\> &#124; `null` Active map metadata, or `null` outside custom maps.
+`Readonly`\<[`ActiveMapV1`](?id=activemapv1)\> \| `null` Active map metadata, or `null` outside custom maps.
 
 </div>

@@ -10,10 +10,10 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| itemId | string |  |
-| itemNameKey? | string |  |
-| categoryId? | string |  |
-| upgrade | object |  |
+| itemId | <code>string</code> |  |
+| itemNameKey? | <code>string</code> |  |
+| categoryId? | <code>string</code> |  |
+| upgrade | <code>{ id: string; nameKey: string; descriptionKey: string; maxLevel: number; costs: number[]; oneOff: boolean }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -45,8 +45,8 @@ Upgrade definition registered for an item.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Category identifier referenced by upgrades. |
-| nameKey? | string | Display name translation key. |
+| id | <code>string</code> | Category identifier referenced by upgrades. |
+| nameKey? | <code>string</code> | Display name translation key. |
 
 <div class="smt-member-anchors">
 
@@ -84,7 +84,7 @@ registerCategory(definition: UpgradeCategoryDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`UpgradeCategoryDefinition`](?id=upgradecategorydefinition) | Category id and display metadata. |
+| definition | <code>[`UpgradeCategoryDefinition`](?id=upgradecategorydefinition)</code> | [`UpgradeCategoryDefinition`](?id=upgradecategorydefinition) Category id and display metadata. |
 
 <div class="smt-member-anchors">
 
@@ -112,7 +112,7 @@ register(definition: UpgradeDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`UpgradeDefinition`](?id=upgradedefinition) | Item id, upgrade id, costs, and level metadata. |
+| definition | <code>[`UpgradeDefinition`](?id=upgradedefinition)</code> | [`UpgradeDefinition`](?id=upgradedefinition) Item id, upgrade id, costs, and level metadata. |
 
 <div class="smt-member-anchors">
 
@@ -140,9 +140,9 @@ updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` | Parent item id. |
-| upgradeId | `string` | Upgrade id within the item. |
-| partial | `Partial`\<[`UpgradeDefinition`](?id=upgradedefinition)\> | Fields to merge into the definition. |
+| itemId | `string` | `string` Parent item id. |
+| upgradeId | `string` | `string` Upgrade id within the item. |
+| partial | `Partial`\<[`UpgradeDefinition`](?id=upgradedefinition)\> | `Partial`\<[`UpgradeDefinition`](?id=upgradedefinition)\> Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -174,8 +174,8 @@ getLevelById(itemId: string, upgradeId: string): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` | Parent item id. |
-| upgradeId | `string` | Upgrade id within the item. |
+| itemId | `string` | `string` Parent item id. |
+| upgradeId | `string` | `string` Upgrade id within the item. |
 
 <div class="smt-member-anchors">
 
@@ -205,8 +205,8 @@ getAvailableLevelById(itemId: string, upgradeId: string): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` | Parent item id. |
-| upgradeId | `string` | Upgrade id within the item. |
+| itemId | `string` | `string` Parent item id. |
+| upgradeId | `string` | `string` Upgrade id within the item. |
 
 <div class="smt-member-anchors">
 
@@ -236,9 +236,9 @@ setLevelById(itemId: string, upgradeId: string, level: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` | Parent item id. |
-| upgradeId | `string` | Upgrade id within the item. |
-| level | `number` | Level to set. |
+| itemId | `string` | `string` Parent item id. |
+| upgradeId | `string` | `string` Upgrade id within the item. |
+| level | `number` | `number` Level to set. |
 
 <div class="smt-member-anchors">
 

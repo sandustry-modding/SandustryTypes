@@ -21,7 +21,7 @@ getValueFromCellId(cellId: CellId): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell identifier. |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell identifier. |
 
 <div class="smt-member-anchors">
 
@@ -49,7 +49,7 @@ getValueByType(elementType: ElementType): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | [`ElementType`](api/sandkit.api.elements.md?id=elementtype) | Numeric element type id. |
+| elementType | <code>[`ElementType`](api/sandkit.api.elements.md?id=elementtype)</code> | [`ElementType`](api/sandkit.api.elements.md?id=elementtype) Numeric element type id. |
 
 <div class="smt-member-anchors">
 
@@ -77,7 +77,7 @@ isCellIdCollectable(cellId: CellId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell identifier. |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell identifier. |
 
 <div class="smt-member-anchors">
 
@@ -105,7 +105,7 @@ isCellIdCollectableForSprite(cellId: CellId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell identifier. |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell identifier. |
 
 <div class="smt-member-anchors">
 
@@ -133,7 +133,7 @@ notifyPickupAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 

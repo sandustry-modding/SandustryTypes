@@ -17,10 +17,10 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| textKey? | string | i18n key for custom interaction label text. |
-| crossedOutWhen? | object | Hide the label when a data field matches a value. |
-| visibleWhen? | object | Show the label only when a data field matches a value. |
-| onlyWhenTranslated? | boolean | Require the text key to exist in the active locale. |
+| textKey? | <code>string</code> | i18n key for custom interaction label text. |
+| crossedOutWhen? | <code>{ dataField: number; equals: number }</code> | Hide the label when a data field matches a value. |
+| visibleWhen? | <code>{ dataField: number; equals: number }</code> | Show the label only when a data field matches a value. |
+| onlyWhenTranslated? | <code>boolean</code> | Require the text key to exist in the active locale. |
 
 <div class="smt-member-anchors">
 
@@ -46,14 +46,14 @@ Optional tooltip metadata on structure interactions.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| data? | Record<string, unknown> | Initial element data bag. |
-| density? | number | Override element density. |
-| durationTicks? | number | Set both max and remaining duration in simulation ticks. |
-| ~~duration?~~ | number |  |
-| isFreeFalling? | boolean | Override free-fall state on spawn. |
-| dataFields? | object | Override default data fields 1–4. |
-| particle? | object | Spawn as a particle with the given velocity. |
-| skipCollectorCheck? | boolean | Skip collector accounting when placing the element. |
+| data? | <code>Record&lt;string, unknown&gt;</code> | Initial element data bag. |
+| density? | <code>number</code> | Override element density. |
+| durationTicks? | <code>number</code> | Set both max and remaining duration in simulation ticks. |
+| ~~duration?~~ | <code>number</code> | Deprecated alias. |
+| isFreeFalling? | <code>boolean</code> | Override free-fall state on spawn. |
+| dataFields? | <code>{ field1: number; field2: number; field3: number; field4: number }</code> | Override default data fields 1–4. |
+| particle? | <code>{ velocity: Vector2 }</code> | Spawn as a particle with the given velocity. |
+| skipCollectorCheck? | <code>boolean</code> | Skip collector accounting when placing the element. |
 
 <div class="smt-member-anchors">
 
@@ -87,7 +87,7 @@ Options for [createAtCell](?id=createatcell), replace, and related create helper
 
 | Property | Type | Description |
 | --- | --- | --- |
-| skipCollectorCheck? | boolean | Skip collector accounting when removing the element. |
+| skipCollectorCheck? | <code>boolean</code> | Skip collector accounting when removing the element. |
 
 <div class="smt-member-anchors">
 
@@ -117,8 +117,8 @@ InteractionDestroyer = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | "destroyer" |  |
-| items | readonly string[] | Item ids removed by this interaction (for example `"drill"`). |
+| kind | <code>&quot;destroyer&quot;</code> |  |
+| items | <code>readonly string[]</code> | Item ids removed by this interaction (for example `"drill"`). |
 
 <div class="smt-member-anchors">
 
@@ -182,8 +182,8 @@ InteractionEntity = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | "entity" |  |
-| entities | readonly string[] | Entity type ids referenced by the interaction. |
+| kind | <code>&quot;entity&quot;</code> |  |
+| entities | <code>readonly string[]</code> | Entity type ids referenced by the interaction. |
 
 <div class="smt-member-anchors">
 
@@ -213,7 +213,7 @@ InteractionFlammable = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | "flammable" |  |
+| kind | <code>&quot;flammable&quot;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -241,7 +241,7 @@ InteractionMeltable = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | "meltable" |  |
+| kind | <code>&quot;meltable&quot;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -269,7 +269,7 @@ InteractionFreezable = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | "freezable" |  |
+| kind | <code>&quot;freezable&quot;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -396,16 +396,16 @@ ElementDefinition = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string |  |
-| nameKey | string |  |
-| defaultDataFields? | object |  |
-| colors | object |  |
-| density | number |  |
-| matterType | MatterType |  |
-| metaColor? | number | UI/meta color as 0xRRGGBB. |
-| isGrabbable? | boolean | When true, the grabber can pick up this element. |
-| isTransportable? | boolean | When true, conveyors can move this element. |
-| getExtraProps? | () => object |  |
+| id | <code>string</code> |  |
+| nameKey | <code>string</code> |  |
+| defaultDataFields? | <code>{ Index Signature: \[`key`: `string`\]: `number` }</code> |  |
+| colors | <code>{ variantFromDataField1: object; variantFromDataField1.rangeMin: rangeMin?: number; variantFromDataField1.rangeMax: rangeMax?: number; variantFromDataField1.invert: invert?: boolean; variantFromDataField1.useGradient: useGradient?: boolean; variants: [number, number, number][] }</code> |  |
+| density | <code>number</code> |  |
+| matterType | <code>MatterType</code> |  |
+| metaColor? | <code>number</code> | UI/meta color as 0xRRGGBB. |
+| isGrabbable? | <code>boolean</code> | When true, the grabber can pick up this element. |
+| isTransportable? | <code>boolean</code> | When true, conveyors can move this element. |
+| getExtraProps? | <code>{ Returns: object; data: Record&lt;PropertyKey, any&gt; }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -473,7 +473,7 @@ register(definition: ElementDefinition): object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`ElementDefinition`](?id=elementdefinition) | Full element definition to register. |
+| definition | <code>[`ElementDefinition`](?id=elementdefinition)</code> | [`ElementDefinition`](?id=elementdefinition) Full element definition to register. |
 
 <div class="smt-member-anchors">
 
@@ -503,8 +503,8 @@ updateDefinition(elementTypeOrId: ElementRef, partial: Partial<ElementDefinition
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementTypeOrId | [`ElementRef`](?id=elementref) | Numeric type or string id. |
-| partial | `Partial`\<[`ElementDefinition`](?id=elementdefinition)\> | Fields to merge onto the definition. |
+| elementTypeOrId | <code>[`ElementRef`](?id=elementref)</code> | [`ElementRef`](?id=elementref) Numeric type or string id. |
+| partial | `Partial`\<[`ElementDefinition`](?id=elementdefinition)\> | `Partial`\<[`ElementDefinition`](?id=elementdefinition)\> Fields to merge onto the definition. |
 
 <div class="smt-member-anchors">
 
@@ -542,8 +542,8 @@ addInteractionInfo(elementTypeOrId: ElementRef, interaction: Interaction): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementTypeOrId | [`ElementRef`](?id=elementref) | Numeric type or string id. |
-| interaction | [`Interaction`](?id=interaction) | Interaction entry to append. |
+| elementTypeOrId | <code>[`ElementRef`](?id=elementref)</code> | [`ElementRef`](?id=elementref) Numeric type or string id. |
+| interaction | <code>[`Interaction`](?id=interaction)</code> | [`Interaction`](?id=interaction) Interaction entry to append. |
 
 <div class="smt-member-anchors">
 
@@ -573,7 +573,7 @@ getNameByType(elementType: ElementType): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | [`ElementType`](?id=elementtype) | Numeric element type. |
+| elementType | <code>[`ElementType`](?id=elementtype)</code> | [`ElementType`](?id=elementtype) Numeric element type. |
 
 <div class="smt-member-anchors">
 
@@ -601,9 +601,9 @@ findFreeCellInStructure(structureCellX: number, structureCellY: number, structur
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureCellX | `number` | Structure anchor cell column. |
-| structureCellY | `number` | Structure anchor cell row. |
-| structureSizeCells | `number` | Structure footprint size in cells. |
+| structureCellX | `number` | `number` Structure anchor cell column. |
+| structureCellY | `number` | `number` Structure anchor cell row. |
+| structureSizeCells | `number` | `number` Structure footprint size in cells. |
 
 <div class="smt-member-anchors">
 
@@ -617,7 +617,7 @@ findFreeCellInStructure(structureCellX: number, structureCellY: number, structur
 
 Finds a free cell inside a structure footprint, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) &#124; `null` Cell coordinates of a free cell, or null when none.
+[`Vector2`](api/shared.player.md?id=vector2) \| `null` Cell coordinates of a free cell, or null when none.
 
 </div>
 
@@ -637,7 +637,7 @@ createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -683,7 +683,7 @@ createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -718,7 +718,7 @@ replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -746,7 +746,7 @@ replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](?id=elementref), [`ElementCreateOptions`](?id=elementcreateoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -781,7 +781,7 @@ removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRemovalOptions`](?id=elementremovaloptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](?id=elementremovaloptions)\]</code> | ...\[`number`, `number`, [`ElementRemovalOptions`](?id=elementremovaloptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -809,7 +809,7 @@ removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRemovalOptions`](?id=elementremovaloptions)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](?id=elementremovaloptions)\]</code> | ...\[`number`, `number`, [`ElementRemovalOptions`](?id=elementremovaloptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -844,10 +844,10 @@ teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCe
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| fromCellX | `number` | Source cell column. |
-| fromCellY | `number` | Source cell row. |
-| toCellX | `number` | Destination cell column. |
-| toCellY | `number` | Destination cell row. |
+| fromCellX | `number` | `number` Source cell column. |
+| fromCellY | `number` | `number` Source cell row. |
+| toCellX | `number` | `number` Destination cell column. |
+| toCellY | `number` | `number` Destination cell row. |
 
 <div class="smt-member-anchors">
 
@@ -881,10 +881,10 @@ teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: numb
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| fromCellX | `number` |  |
-| fromCellY | `number` |  |
-| toCellX | `number` |  |
-| toCellY | `number` |  |
+| fromCellX | `number` | `number` |
+| fromCellY | `number` | `number` |
+| toCellX | `number` | `number` |
+| toCellY | `number` | `number` |
 
 <div class="smt-member-anchors">
 
@@ -925,7 +925,7 @@ setVelocityAtCell(...args: number, number, [Vector2]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
 
 <div class="smt-member-anchors">
 
@@ -959,7 +959,7 @@ setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
 
 <div class="smt-member-anchors">
 
@@ -994,7 +994,7 @@ addParticleVelocityAtCell(...args: number, number, [Vector2, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -1033,7 +1033,7 @@ addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): v
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -1068,7 +1068,7 @@ convertToParticleAtCell(...args: number, number, [Vector2]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
 
 <div class="smt-member-anchors">
 
@@ -1106,7 +1106,7 @@ convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
 
 <div class="smt-member-anchors">
 
@@ -1141,7 +1141,7 @@ convertFromParticleAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1169,7 +1169,7 @@ convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1204,7 +1204,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -1232,7 +1232,7 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -1267,7 +1267,7 @@ refreshColorAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1295,7 +1295,7 @@ refreshColorAtCellWhenIdle(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1330,7 +1330,7 @@ setPhysicsAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -1358,7 +1358,7 @@ setPhysicsAtCellWhenIdle(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -1393,7 +1393,7 @@ setDurationAtCell(...args: [number, number, number, object]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, `object`\] |  |
+| args | <code>...\[`number`, `number`, `number`, `object`\]</code> | ...\[`number`, `number`, `number`, `object`\] |
 
 <div class="smt-member-anchors">
 
@@ -1434,7 +1434,7 @@ setDurationAtCellWhenIdle(...args: [number, number, number, object]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, `object`\] |  |
+| args | <code>...\[`number`, `number`, `number`, `object`\]</code> | ...\[`number`, `number`, `number`, `object`\] |
 
 <div class="smt-member-anchors">
 
@@ -1469,7 +1469,7 @@ getIdByType(elementType: ElementType): string & object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | [`ElementType`](?id=elementtype) | Numeric element type. |
+| elementType | <code>[`ElementType`](?id=elementtype)</code> | [`ElementType`](?id=elementtype) Numeric element type. |
 
 <div class="smt-member-anchors">
 
@@ -1499,7 +1499,7 @@ getTypeById(elementId: string & object): ElementType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementId | `string` & `object` | Mod-registered element id. |
+| elementId | `string` & `object` | `string` & `object` Mod-registered element id. |
 
 <div class="smt-member-anchors">
 
@@ -1529,7 +1529,7 @@ getTypeFromId(elementId: string & object): ElementType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementId | `string` & `object` |  |
+| elementId | `string` & `object` | `string` & `object` |
 
 <div class="smt-member-anchors">
 
@@ -1566,7 +1566,7 @@ getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | [`ElementType`](?id=elementtype) | Numeric element type. |
+| elementType | <code>[`ElementType`](?id=elementtype)</code> | [`ElementType`](?id=elementtype) Numeric element type. |
 
 <div class="smt-member-anchors">
 
@@ -1576,7 +1576,7 @@ getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 
 Look up the definition for a type handle.
 
-[`ElementDefinition`](?id=elementdefinition) &#124; `undefined`
+[`ElementDefinition`](?id=elementdefinition) \| `undefined`
 
 </div>
 
@@ -1596,7 +1596,7 @@ getTypeAtCell(...args: CellCoordinates): ElementType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1606,7 +1606,7 @@ getTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the raw element type at a cell (may differ from resolved type).
 
-[`ElementType`](?id=elementtype) &#124; `null`
+[`ElementType`](?id=elementtype) \| `null`
 
 </div>
 
@@ -1626,7 +1626,7 @@ getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1636,7 +1636,7 @@ getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the resolved element type after overlays and particles.
 
-[`ElementType`](?id=elementtype) &#124; `null`
+[`ElementType`](?id=elementtype) \| `null`
 
 </div>
 
@@ -1656,7 +1656,7 @@ getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md?id=getcellidatcell). |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md?id=getcellidatcell). |
 
 <div class="smt-member-anchors">
 
@@ -1666,7 +1666,7 @@ getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 
 Return the resolved element type from a packed cell id.
 
-[`ElementType`](?id=elementtype) &#124; `null`
+[`ElementType`](?id=elementtype) \| `null`
 
 </div>
 
@@ -1686,7 +1686,7 @@ getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle:
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1696,7 +1696,7 @@ getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle:
 
 Return element index, particle flag, and ids at a cell.
 
-\{ `elementType`: [`ElementType`](?id=elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} &#124; `null`
+\{ `elementType`: [`ElementType`](?id=elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} \| `null`
 
 </div>
 
@@ -1716,7 +1716,7 @@ getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1726,7 +1726,7 @@ getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 
 Return the matter category at a cell, or null when empty.
 
-[`MatterType`](api/sandkit.api.elements.MatterType.md) &#124; `null`
+[`MatterType`](api/sandkit.api.elements.MatterType.md) \| `null`
 
 </div>
 
@@ -1746,7 +1746,7 @@ isTypeAtCell(...args: number, number, [ElementRef]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`ElementRef`](?id=elementref)\] |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=elementref)\]</code> | ...\[`number`, `number`, [`ElementRef`](?id=elementref)\] |
 
 <div class="smt-member-anchors">
 
@@ -1774,7 +1774,7 @@ isFreeFallingAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1802,7 +1802,7 @@ getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1812,7 +1812,7 @@ getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 
 Return per-cell velocity for moving elements.
 
-\{ `x`: `number`; `y`: `number`; \} &#124; `null`
+\{ `x`: `number`; `y`: `number`; \} \| `null`
 
 </div>
 
@@ -1832,7 +1832,7 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`\] |  |
+| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`\]</code> | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`\] |
 
 <div class="smt-member-anchors">
 
@@ -1842,6 +1842,6 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 Read element data field 1–4 at a cell.
 
-`number` &#124; `null`
+`number` \| `null`
 
 </div>

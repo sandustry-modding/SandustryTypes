@@ -81,7 +81,7 @@ sandkit.api.action.setCustomData<Input>(data: Input): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| data | `Input` | Serializable payload attached to the active action. |
+| data | `Input` | `Input` Serializable payload attached to the active action. |
 
 <div class="smt-member-anchors">
 
@@ -90,12 +90,6 @@ sandkit.api.action.setCustomData<Input>(data: Input): void
 </div>
 
 Store custom data on the active action handler.
-
-#### Type Parameters
-
-##### Input
-
-`Input`
 
 #### Example
 

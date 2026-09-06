@@ -13,7 +13,7 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cancelled | boolean | True after [cancel](?id=cancel) was called on this context. |
+| cancelled | <code>boolean</code> | True after [cancel](?id=cancel) was called on this context. |
 
 <div class="smt-member-anchors">
 
@@ -21,23 +21,17 @@ Main thread only.
 
 </div>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| cancel() | <code>(): void</code> | When called, the intercepted action is skipped. |
+
+<div class="smt-member-anchors">
+
+##### cancel() <!-- {docsify-ignore} -->
+
+</div>
+
 Context passed to intercept hook callbacks.
-
-#### Methods
-
-##### cancel()
-
-```ts
-cancel(): void
-```
-
-Defined in: [sandkit/api/hooks.d.ts:397](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L397)
-
-When called, the intercepted action is skipped.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -49,7 +43,7 @@ When called, the intercepted action is skipped.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| priority? | number | Run this hook before others with lower priority. |
+| priority? | <code>number</code> | Run this hook before others with lower priority. |
 
 <div class="smt-member-anchors">
 
@@ -73,36 +67,36 @@ Options shared by intercept and modify hooks.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L495" target="_blank" rel="noopener">hooks.d.ts:495</a></p>
 
-| Property | Type | Description |
+| Hook | Args | Notes |
 | --- | --- | --- |
-| item:use | use: object |  |
-| teleport:effect:create | effect:create: Record<string, unknown> |  |
-| ~~teleport:effect~~ | effect: Record<string, unknown> |  |
-| action:start | start: object & Record<string, unknown> |  |
-| ~~action:intercept~~ | intercept: object & Record<string, unknown> |  |
-| input:keyDown | keyDown: object |  |
-| ~~input:keydown~~ | keydown: object |  |
-| input:keyUp | keyUp: object |  |
-| ~~input:keyup~~ | keyup: object |  |
-| placePoints:suppress | suppress: object & Record<string, unknown> |  |
-| ~~placePoints:isSuppressed~~ | isSuppressed: object & Record<string, unknown> |  |
-| placePoints:directionalArrows:suppress | directionalArrows:suppress: object & Record<string, unknown> |  |
-| ~~placePoints:directionalArrows:isSuppressed~~ | directionalArrows:isSuppressed: object & Record<string, unknown> |  |
-| entity:update | update: object |  |
-| building:place | place: object |  |
-| building:clearShape | clearShape: object |  |
-| input:scroll | scroll: object & Record<string, unknown> |  |
-| input:boostDown | boostDown: Record<string, unknown> |  |
-| ~~input:boost-down~~ | boost-down: Record<string, unknown> |  |
-| input:descendDown | descendDown: Record<string, unknown> |  |
-| ~~input:descend-down~~ | descend-down: Record<string, unknown> |  |
-| input:escape | escape: Record<string, unknown> |  |
-| interactable:suppressHover | suppressHover: object & Record<string, unknown> |  |
-| fire:element:ignite | element:ignite: object |  |
-| projectile:fire:overStructure | fire:overStructure: object |  |
-| projectile:hit | hit: object |  |
-| player:position:commit | position:commit: object |  |
-| progression:purchase | purchase: object |  |
+| `item:use` | <code>{ itemId: string; useId: string; kind: &quot;instant&quot; &#124; &quot;sustained&quot; &#124; &quot;chargeThenFire&quot;; baseline: Readonly&lt;Record&lt;string, unknown&gt;&gt;; prepared: Record&lt;string, unknown&gt; }</code> |  |
+| `teleport:effect:create` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`teleport:effect`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `action:start` | <code>{ action: object &amp; Record&lt;string, unknown&gt;; id: string }</code> |  |
+| ~~`action:intercept`~~ | <code>{ action: object &amp; Record&lt;string, unknown&gt;; id: string }</code> | Deprecated alias. |
+| `input:keyDown` | <code>{ key: string; code: string; event: Event }</code> |  |
+| ~~`input:keydown`~~ | <code>{ key: string; code: string; event: Event }</code> | Deprecated alias. |
+| `input:keyUp` | <code>{ key: string; code: string; event: Event }</code> |  |
+| ~~`input:keyup`~~ | <code>{ key: string; code: string; event: Event }</code> | Deprecated alias. |
+| `placePoints:suppress` | <code>{ type: string }</code> |  |
+| ~~`placePoints:isSuppressed`~~ | <code>{ type: string }</code> | Deprecated alias. |
+| `placePoints:directionalArrows:suppress` | <code>{ type: string }</code> |  |
+| ~~`placePoints:directionalArrows:isSuppressed`~~ | <code>{ type: string }</code> | Deprecated alias. |
+| `entity:update` | <code>{ entityTypeId: string; entity: Record&lt;string, unknown&gt;; deltaTimeSeconds: number; phase: &quot;normal&quot; &#124; &quot;capturing&quot; &#124; &quot;launching&quot;; isVisible: boolean; playerWorldX: number; playerWorldY: number; worldMinX: number; worldMinY: number; worldMaxX: number; worldMaxY: number; cellSize: number; timeSeconds: number }</code> |  |
+| `building:place` | <code>{ structureId: string; x: number; y: number; data: Record&lt;string, unknown&gt; }</code> |  |
+| `building:clearShape` | <code>{ structure: Record&lt;string, unknown&gt; }</code> |  |
+| `input:scroll` | <code>{ deltaY: number }</code> |  |
+| `input:boostDown` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`input:boost-down`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `input:descendDown` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`input:descend-down`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `input:escape` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `interactable:suppressHover` | <code>{ type: string; structure: Record&lt;string, unknown&gt; }</code> |  |
+| `fire:element:ignite` | <code>{ x: number; y: number; elementType: number }</code> |  |
+| `projectile:fire:overStructure` | <code>{ projectile: Record&lt;string, unknown&gt;; x: number; y: number }</code> |  |
+| `projectile:hit` | <code>{ projectile: Record&lt;string, unknown&gt;; travelResult: Record&lt;string, unknown&gt; }</code> |  |
+| `player:position:commit` | <code>{ previousWorldX: number; previousWorldY: number; proposedWorldX: number; proposedWorldY: number; velocityX: number; velocityY: number }</code> |  |
+| `progression:purchase` | <code>{ domain: &quot;tech&quot; &#124; &quot;upgrade&quot;; id: string; itemId: string; costs: Record&lt;string, unknown&gt; }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -174,35 +168,35 @@ Intercept hook argument shapes keyed by hook id.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L581" target="_blank" rel="noopener">hooks.d.ts:581</a></p>
 
-| Property | Type | Description |
+| Hook | Args | Notes |
 | --- | --- | --- |
-| excavation:prepare | prepare: object |  |
-| locator:scan:prepare | scan:prepare: object |  |
-| vacuum:prepare | prepare: object |  |
-| vacuum:element:prepare | element:prepare: object |  |
-| player:movement:prepare | movement:prepare: Record<string, unknown> |  |
-| ~~player:movement~~ | movement: Record<string, unknown> |  |
-| building:placementLimit:prepare | placementLimit:prepare: object & Record<string, unknown> |  |
-| ~~building:placementLimit~~ | placementLimit: object & Record<string, unknown> |  |
-| ~~building:placement-limit~~ | placement-limit: object & Record<string, unknown> |  |
-| fluxEmanator:processing:prepare | processing:prepare: object & Record<string, unknown> |  |
-| ~~fluxEmanator:processing~~ | processing: object & Record<string, unknown> |  |
-| ~~flux-emanator:processing~~ | processing: object & Record<string, unknown> |  |
-| render:pipes:prepare | pipes:prepare: object & Record<string, unknown> |  |
-| ~~render:pipes~~ | pipes: object & Record<string, unknown> |  |
-| structures:moved:prepare | moved:prepare: object |  |
-| structures:removed:prepare | removed:prepare: object |  |
-| weapon:reload:prepare | reload:prepare: object |  |
-| projectile:travel:prepare | travel:prepare: object |  |
-| projectile:impact:prepare | impact:prepare: object |  |
-| player:collision:prepare | collision:prepare: object |  |
-| trigger:schedule:prepare | schedule:prepare: object |  |
-| progression:cost:prepare | cost:prepare: object |  |
-| resource:collection:prepare | collection:prepare: object |  |
-| resource:delivery:prepare | delivery:prepare: object |  |
-| resource:balance:prepare | balance:prepare: object |  |
-| gold:removal:prepare | removal:prepare: object |  |
-| gold:removal:settle | removal:settle: object |  |
+| `excavation:prepare` | <code>{ sourceId: string; sourceKind: &quot;structure&quot; &#124; &quot;tool&quot; &#124; &quot;projectile&quot; &#124; &quot;drone&quot;; originCellX: number; originCellY: number; consumedVoid: boolean; profileId: string; patternDiameterCells: number; drillTierDamage: number }</code> |  |
+| `locator:scan:prepare` | <code>{ originWorldX: number; originWorldY: number; hasTarget: boolean; targetCellX: number; targetCellY: number; outerTint: [number, number, number]; innerTint: [number, number, number]; noTargetToast: string; noTargetToastKey: string; triangulationLensOverride: boolean &#124; null }</code> |  |
+| `vacuum:prepare` | <code>{ nozzleCellX: number; nozzleCellY: number; targetCellX: number; targetCellY: number; pattern: number[][] }</code> |  |
+| `vacuum:element:prepare` | <code>{ elementType: number; matterType: number; isTransportable: boolean; collectable: boolean; visibleInPicker: boolean }</code> |  |
+| `player:movement:prepare` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`player:movement`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `building:placementLimit:prepare` | <code>{ maxCount: number &#124; null }</code> |  |
+| ~~`building:placementLimit`~~ | <code>{ maxCount: number &#124; null }</code> | Deprecated alias. |
+| ~~`building:placement-limit`~~ | <code>{ maxCount: number &#124; null }</code> | Deprecated alias. |
+| `fluxEmanator:processing:prepare` | <code>{ speedMultiplier: number }</code> |  |
+| ~~`fluxEmanator:processing`~~ | <code>{ speedMultiplier: number }</code> | Deprecated alias. |
+| ~~`flux-emanator:processing`~~ | <code>{ speedMultiplier: number }</code> | Deprecated alias. |
+| `render:pipes:prepare` | <code>{ layer: string }</code> |  |
+| ~~`render:pipes`~~ | <code>{ layer: string }</code> | Deprecated alias. |
+| `structures:moved:prepare` | <code>{ moved: unknown[]; failedToPlace: unknown[] }</code> |  |
+| `structures:removed:prepare` | <code>{ removed: unknown[]; structures: unknown[]; byMove: boolean }</code> |  |
+| `weapon:reload:prepare` | <code>{ weaponId: string; reloadMs: number; maxAmmo: number }</code> |  |
+| `projectile:travel:prepare` | <code>{ projectileType: string; firstCollisionStep: number; maxCollisionSteps: number; collidesWithTerrain: boolean; collidesWithStructures: boolean }</code> |  |
+| `projectile:impact:prepare` | <code>{ projectileType: string; impactKind: string; profileId: string; power: number; centerPower: number; radiusCells: number; radius: number }</code> |  |
+| `player:collision:prepare` | <code>{ phaseThroughTerrain: boolean; phaseThroughStructures: boolean; maxStepCells: number }</code> |  |
+| `trigger:schedule:prepare` | <code>{ triggerId: string; intervalMs: number; sequentialRuns: number }</code> |  |
+| `progression:cost:prepare` | <code>{ domain: &quot;tech&quot; &#124; &quot;upgrade&quot;; id: string; itemId: string; currencyId: string; amount: number }</code> |  |
+| `resource:collection:prepare` | <code>{ resourceId: string; sourceKind: string; cellX: number; cellY: number; amount: number; feedback: &quot;silent&quot; &#124; &quot;default&quot; &#124; &quot;reduced&quot; }</code> |  |
+| `resource:delivery:prepare` | <code>{ resourceId: string; sourceKind: string; sourceId: string; sourceCellX: number; sourceCellY: number; targetCellX: number; targetCellY: number; mode: &quot;world&quot; &#124; &quot;collection&quot;; amount: number; feedback: &quot;silent&quot; &#124; &quot;default&quot; }</code> |  |
+| `resource:balance:prepare` | <code>{ resourceId: string; balance: number }</code> |  |
+| `gold:removal:prepare` | <code>{ requestedAmount: number; shortfall: number }</code> |  |
+| `gold:removal:settle` | <code>{ requestedAmount: number; physicalRemoved: number; shortfall: number }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -284,10 +278,6 @@ sandkit.api.hooks.InterceptHookOptions<K *extends* InterceptHookId> = HookOption
 
 Options for [intercept](?id=intercept).
 
-#### Type Parameters
-
-##### K
-
 `K` *extends* [`InterceptHookId`](?id=intercepthookid)
 
 </div>
@@ -362,10 +352,6 @@ sandkit.api.hooks.InterceptHookArgs<K *extends* InterceptHookId> = K *extends* k
 
 Intercept hook args for a given hook id.
 
-#### Type Parameters
-
-##### K
-
 `K` *extends* [`InterceptHookId`](?id=intercepthookid)
 
 </div>
@@ -385,10 +371,6 @@ sandkit.api.hooks.ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof M
 </div>
 
 Modify hook args for a given hook id.
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`ModifyHookId`](?id=modifyhookid)
 
@@ -412,9 +394,9 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| hookId | `K` | Registered hook identifier. |
-| callback | (`args`: [`InterceptHookArgs`](?id=intercepthookargs)\<`K`\>, `context`: [`HookContext`](?id=hookcontext)) => `void` | Called with hook arguments and context; may cancel the hook. |
-| options? | [`InterceptHookOptions`](?id=intercepthookoptions)\<`K`\> | Optional priority and filter options. |
+| hookId | `K` | `K` Registered hook identifier. |
+| callback | <code>(`args`: [`InterceptHookArgs`](?id=intercepthookargs)\&lt;`K`\&gt;, `context`: [`HookContext`](?id=hookcontext)) =&gt; `void`</code> | (`args`: [`InterceptHookArgs`](?id=intercepthookargs)\<`K`\>, `context`: [`HookContext`](?id=hookcontext)) => `void` Called with hook arguments and context; may cancel the hook. |
+| options? | <code>[`InterceptHookOptions`](?id=intercepthookoptions)\&lt;`K`\&gt;</code> | [`InterceptHookOptions`](?id=intercepthookoptions)\<`K`\> Optional priority and filter options. |
 
 <div class="smt-member-anchors">
 
@@ -427,10 +409,6 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 </div>
 
 Registers an intercept hook. Returns an unsubscribe function.
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`InterceptHookId`](?id=intercepthookid)
 
@@ -637,9 +615,9 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| hookId | `K` | Registered hook identifier. |
-| callback | (`args`: [`ModifyHookArgs`](?id=modifyhookargs)\<`K`\>) => `void` | Called with hook arguments; may mutate hook payload. |
-| options? | [`ModifyHookOptions`](?id=modifyhookoptions) | Optional priority and filter options. |
+| hookId | `K` | `K` Registered hook identifier. |
+| callback | <code>(`args`: [`ModifyHookArgs`](?id=modifyhookargs)\&lt;`K`\&gt;) =&gt; `void`</code> | (`args`: [`ModifyHookArgs`](?id=modifyhookargs)\<`K`\>) => `void` Called with hook arguments; may mutate hook payload. |
+| options? | <code>[`ModifyHookOptions`](?id=modifyhookoptions)</code> | [`ModifyHookOptions`](?id=modifyhookoptions) Optional priority and filter options. |
 
 <div class="smt-member-anchors">
 
@@ -652,10 +630,6 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 </div>
 
 Registers a modifier hook. Returns an unsubscribe function.
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`ModifyHookId`](?id=modifyhookid)
 

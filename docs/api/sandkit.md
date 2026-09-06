@@ -643,12 +643,12 @@ Sandkit = object
 
 | Property | Type | Description |
 | --- | --- | --- |
-| api | SandkitApi | Public mod API. See [sandkit.api](?id=api-1). |
-| apiVersion | number | Sandkit API version number (live value is `1`). |
-| engine | SandkitEngine | **`Internal`** State-first internals. See [SandkitEngine](api/sandkit.engine.md?id=sandkitengine). |
-| enums | SandkitEnums | Runtime enum bags. See [sandkit.enums](?id=enums-1). |
-| react | SandkitReact | Host React package. See [SandkitReact](api/sandkit.react.md?id=sandkitreact). |
-| state | SandkitState | Game state. Same object as `sandkit.engine.state` at runtime. See [SandkitState](api/sandkit.engine.md?id=sandkitstate). |
+| api | <code>SandkitApi</code> | Public mod API. See [sandkit.api](api/sandkit.api.md). |
+| apiVersion | <code>number</code> | Sandkit API version number (live value is `1`). |
+| engine | <code>SandkitEngine</code> | **`Internal`** State-first internals. See [SandkitEngine](api/sandkit.engine.md?id=sandkitengine). |
+| enums | <code>SandkitEnums</code> | Runtime enum bags. See [sandkit.enums](api/sandkit.enums.md). |
+| react | <code>SandkitReact</code> | Host React package. See [SandkitReact](api/sandkit.react.md?id=sandkitreact). |
+| state | <code>SandkitState</code> | Game state. Same object as `sandkit.engine.state` at runtime. See [SandkitState](api/sandkit.engine.md?id=sandkitstate). |
 
 <div class="smt-member-anchors">
 

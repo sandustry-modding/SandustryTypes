@@ -38,7 +38,7 @@ createCircle(size: number): number[][]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| size | `number` | Pattern width and height in cells. |
+| size | `number` | `number` Pattern width and height in cells. |
 
 <div class="smt-member-anchors">
 
@@ -68,7 +68,7 @@ excavateAtCell(...args: [number, number, number[][], Vector2, number, ExcavateOp
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`[][], [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](api/sandkit.api.grid.md?id=excavateoptions)\] |  |
+| args | <code>...\[`number`, `number`, `number`[][], [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](api/sandkit.api.grid.md?id=excavateoptions)\]</code> | ...\[`number`, `number`, `number`[][], [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](api/sandkit.api.grid.md?id=excavateoptions)\] |
 
 <div class="smt-member-anchors">
 

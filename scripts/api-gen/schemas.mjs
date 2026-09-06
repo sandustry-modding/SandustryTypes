@@ -31,6 +31,11 @@ const TARGETS = [
     fileName: "patches.json",
     title: "Sandkit patches.json",
   },
+  {
+    typeName: "WorkshopJson",
+    fileName: "workshop.json",
+    title: "Sandkit workshop.json",
+  },
 ];
 
 function ensureDeps() {

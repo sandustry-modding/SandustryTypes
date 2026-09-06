@@ -26,10 +26,10 @@ createAtWorld(effectId: string, worldX: number, worldY: number, options?: Effect
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| effectId | `string` | Registered effect id. |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
-| options? | [`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions) | Duration, radius, and intensity settings. |
+| effectId | `string` | `string` Registered effect id. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
+| options? | <code>[`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions)</code> | [`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions) Duration, radius, and intensity settings. |
 
 <div class="smt-member-anchors">
 
@@ -63,10 +63,10 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| effectId | `string` |  |
-| worldX | `number` |  |
-| worldY | `number` |  |
-| options? | [`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions) |  |
+| effectId | `string` | `string` |
+| worldX | `number` | `number` |
+| worldY | `number` | `number` |
+| options? | <code>[`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions)</code> | [`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions) |
 
 <div class="smt-member-anchors">
 

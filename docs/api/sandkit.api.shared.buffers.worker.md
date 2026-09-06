@@ -20,8 +20,8 @@ require(key: string, config: object): SharedArray
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Buffer name shared across threads. |
-| config | Expected array type and length for validation. |  |
+| key | `string` | `string` Buffer name shared across threads. |
+| config | <code>Expected array type and length for validation.</code> | Expected array type and length for validation. |
 
 <div class="smt-member-anchors">
 

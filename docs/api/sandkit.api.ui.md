@@ -118,8 +118,8 @@ api.ui.useGameEvent("resource:collected", (payload) => {
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "message" | Discriminator for tooltip renderer selection. |
-| text | LocalizedText | Message body as localized text. |
+| type | <code>&quot;message&quot;</code> | Discriminator for tooltip renderer selection. |
+| text | <code>LocalizedText</code> | Message body as localized text. |
 
 <div class="smt-member-anchors">
 
@@ -141,9 +141,9 @@ Message tooltip with localized body text.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| ref | RefObject<T> | Ref to attach to the focusable element. |
-| focused | boolean | True when the element has controller focus. |
-| focus | () => void | Move controller focus to this element. |
+| ref | <code>RefObject&lt;T&gt;</code> | Ref to attach to the focusable element. |
+| focused | <code>boolean</code> | True when the element has controller focus. |
+| focus | <code>() =&gt; void</code> | Move controller focus to this element. |
 
 <div class="smt-member-anchors">
 
@@ -157,10 +157,6 @@ Message tooltip with localized body text.
 
 Focusable element state from useFocusable.
 
-#### Type Parameters
-
-##### T
-
 `T` *extends* `HTMLElement` = `HTMLDivElement`
 
 </div>
@@ -173,15 +169,15 @@ Focusable element state from useFocusable.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Unique id within the focus scope. |
-| scope | string | Focus scope id this element belongs to. |
-| onActivate | (element?: HTMLElement) => void | Called when the element is activated (A button / Enter). |
-| onFocus? | () => void | Called when the element receives focus. |
-| disabled? | boolean | When true, skip this element during navigation. |
-| x? | number | Optional grid column for spatial navigation. |
-| y? | number | Optional grid row for spatial navigation. |
-| neighbors? | Partial<Record<"left" &#124; "right" &#124; "up" &#124; "down", string>> | Neighbor ids for directional navigation. |
-| scrollIntoView? | boolean | When true, scroll the element into view on focus. |
+| id | <code>string</code> | Unique id within the focus scope. |
+| scope | <code>string</code> | Focus scope id this element belongs to. |
+| onActivate | <code>(element?: HTMLElement) =&gt; void</code> | Called when the element is activated (A button / Enter). |
+| onFocus? | <code>optional onFocus?: () =&gt; void</code> | Called when the element receives focus. |
+| disabled? | <code>optional disabled?: boolean</code> | When true, skip this element during navigation. |
+| x? | <code>optional x?: number</code> | Optional grid column for spatial navigation. |
+| y? | <code>optional y?: number</code> | Optional grid row for spatial navigation. |
+| neighbors? | <code>optional neighbors?: Partial&lt;Record&lt;&quot;left&quot; &#124; &quot;right&quot; &#124; &quot;up&quot; &#124; &quot;down&quot;, string&gt;&gt;</code> | Neighbor ids for directional navigation. |
+| scrollIntoView? | <code>optional scrollIntoView?: boolean</code> | When true, scroll the element into view on focus. |
 
 <div class="smt-member-anchors">
 
@@ -302,8 +298,8 @@ update(componentId: ComponentId, options?: ComponentUpdateOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| componentId | [`ComponentId`](?id=componentid) | Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) value or custom string id. |
-| options? | [`ComponentUpdateOptions`](?id=componentupdateoptions) | Component-specific update payload. |
+| componentId | <code>[`ComponentId`](?id=componentid)</code> | [`ComponentId`](?id=componentid) Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) value or custom string id. |
+| options? | <code>[`ComponentUpdateOptions`](?id=componentupdateoptions)</code> | [`ComponentUpdateOptions`](?id=componentupdateoptions) Component-specific update payload. |
 
 <div class="smt-member-anchors">
 
@@ -351,7 +347,7 @@ showTooltip(data: TooltipMessageData): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| data | [`TooltipMessageData`](?id=tooltipmessagedata) | Tooltip type and localized content. |
+| data | <code>[`TooltipMessageData`](?id=tooltipmessagedata)</code> | [`TooltipMessageData`](?id=tooltipmessagedata) Tooltip type and localized content. |
 
 <div class="smt-member-anchors">
 
@@ -379,8 +375,8 @@ alert(message: LocalizedText, title?: LocalizedText): Promise<void>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| message | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Dialog body text. |
-| title? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Optional dialog title. |
+| message | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Dialog body text. |
+| title? | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Optional dialog title. |
 
 <div class="smt-member-anchors">
 
@@ -421,8 +417,8 @@ confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| message | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Dialog body text. |
-| title? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Optional dialog title. |
+| message | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Dialog body text. |
+| title? | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Optional dialog title. |
 
 <div class="smt-member-anchors">
 
@@ -462,11 +458,11 @@ prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedTex
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| message | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Dialog body text. |
-| defaultValue? | `string` | Initial input value. |
-| placeholder? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Placeholder text in the input field. |
-| title? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Optional dialog title. |
-| allowCopy? | `boolean` | When true, allow copying the result from the dialog. |
+| message | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Dialog body text. |
+| defaultValue? | `string` | `string` Initial input value. |
+| placeholder? | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Placeholder text in the input field. |
+| title? | <code>[`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext)</code> | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) Optional dialog title. |
+| allowCopy? | `boolean` | `boolean` When true, allow copying the result from the dialog. |
 
 <div class="smt-member-anchors">
 
@@ -484,7 +480,7 @@ prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedTex
 
 Show a prompt dialog.
 
-`Promise`\<`string` &#124; `null`\> Promise that resolves with entered text, or null when cancelled.
+`Promise`\<`string` \| `null`\> Promise that resolves with entered text, or null when cancelled.
 
 #### Example
 
@@ -513,8 +509,8 @@ inject(componentId: ComponentId, component: ComponentType<Record<string, never>>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| componentId | [`ComponentId`](?id=componentid) | Overlay slot or custom mount point id. |
-| component | `ComponentType`\<`Record`\<`string`, `never`\>\> | React component to render. |
+| componentId | <code>[`ComponentId`](?id=componentid)</code> | [`ComponentId`](?id=componentid) Overlay slot or custom mount point id. |
+| component | `ComponentType`\<`Record`\<`string`, `never`\>\> | `ComponentType`\<`Record`\<`string`, `never`\>\> React component to render. |
 
 <div class="smt-member-anchors">
 

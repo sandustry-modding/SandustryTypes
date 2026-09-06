@@ -18,7 +18,7 @@ getDrawPositionAtCell(...args: CellCoordinates): Vector2
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -48,8 +48,8 @@ getDrawPositionAtWorld(worldX: number, worldY: number): Vector2
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -136,7 +136,7 @@ sandkit.api.rendering.withOverlayContext<T>(callback: (context: CanvasRenderingC
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | (`context`: `CanvasRenderingContext2D`) => `T` | Receives the overlay 2D context; return value is passed through. |
+| callback | <code>(`context`: `CanvasRenderingContext2D`) =&gt; `T`</code> | (`context`: `CanvasRenderingContext2D`) => `T` Receives the overlay 2D context; return value is passed through. |
 
 <div class="smt-member-anchors">
 
@@ -145,12 +145,6 @@ sandkit.api.rendering.withOverlayContext<T>(callback: (context: CanvasRenderingC
 </div>
 
 Run a callback with the overlay canvas context.
-
-#### Type Parameters
-
-##### T
-
-`T`
 
 #### Example
 

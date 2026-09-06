@@ -10,9 +10,9 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cellX | number |  |
-| cellY | number |  |
-| name | string |  |
+| cellX | <code>number</code> |  |
+| cellY | <code>number</code> |  |
+| name | <code>string</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -42,8 +42,8 @@ Artifact location entry from [getArtifactLocations](?id=getartifactlocations).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Map identifier passed to [start](?id=start). |
-| name? | string | Display name or translation key. |
+| id | <code>string</code> | Map identifier passed to [start](?id=start). |
+| name? | <code>string</code> | Display name or translation key. |
 
 <div class="smt-member-anchors">
 
@@ -101,7 +101,7 @@ start(mapId: string): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| mapId | `string` | Custom map identifier. |
+| mapId | `string` | `string` Custom map identifier. |
 
 <div class="smt-member-anchors">
 

@@ -7,6 +7,7 @@
  * JSON Schema (GitHub Pages):
  * https://sandustry-modding.github.io/SandustryTypes/schemas/modinfo.json
  * https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
+ * https://sandustry-modding.github.io/SandustryTypes/schemas/workshop.json
  *
  * @module
  *

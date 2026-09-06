@@ -16,8 +16,8 @@ Worker-thread `sandkit.api.events` — subscribe to and emit worker-scoped event
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elementType? | ElementType | Required when subscribing to `element:moved`. Optional on emit. |
-| terrainType? | number | Required when subscribing to `terrain:updated`. Optional on emit. |
+| elementType? | <code>ElementType</code> | Required when subscribing to `element:moved`. Optional on emit. |
+| terrainType? | <code>number</code> | Required when subscribing to `terrain:updated`. Optional on emit. |
 
 <div class="smt-member-anchors">
 
@@ -39,7 +39,7 @@ Guard filter for worker events.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| guard? | EventGuard |  |
+| guard? | <code>EventGuard</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -57,13 +57,13 @@ Options for [emit](?id=emit).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L86" target="_blank" rel="noopener">events.d.ts:86</a></p>
 
-| Property | Type | Description |
+| Hook | Args | Notes |
 | --- | --- | --- |
-| element:moved | moved: Record<string, unknown> |  |
-| terrain:updated | updated: Record<string, unknown> |  |
-| ~~terrain:update~~ | update: Record<string, unknown> |  |
-| worker:update:post | update:post: Record<string, unknown> |  |
-| ~~update:post~~ | post: Record<string, unknown> |  |
+| `element:moved` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `terrain:updated` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`terrain:update`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `worker:update:post` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`update:post`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
 
 <div class="smt-member-anchors">
 
@@ -100,10 +100,6 @@ sandkit.api.events.EventOnOptions<K *extends* EventId> = K *extends* "element:mo
 </div>
 
 Options for [on](?id=on).
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`EventId`](?id=eventid)
 
@@ -143,12 +139,6 @@ sandkit.api.events.EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPa
 
 Event payload type for a given event id.
 
-#### Type Parameters
-
-##### K
-
-`K`
-
 </div>
 
 ## Functions <!-- {docsify-ignore} -->
@@ -169,9 +159,9 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| eventId | `K` | Registered event name. |
-| callback | (`payload`: [`EventPayload`](?id=eventpayload)\<`K`\>) => `void` | Called when the event is emitted. |
-| options? | [`EventOnOptions`](?id=eventonoptions)\<`K`\> | Required guard for filtered events. |
+| eventId | `K` | `K` Registered event name. |
+| callback | <code>(`payload`: [`EventPayload`](?id=eventpayload)\&lt;`K`\&gt;) =&gt; `void`</code> | (`payload`: [`EventPayload`](?id=eventpayload)\<`K`\>) => `void` Called when the event is emitted. |
+| options? | <code>[`EventOnOptions`](?id=eventonoptions)\&lt;`K`\&gt;</code> | [`EventOnOptions`](?id=eventonoptions)\<`K`\> Required guard for filtered events. |
 
 <div class="smt-member-anchors">
 
@@ -184,10 +174,6 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 </div>
 
 Subscribe to a worker event. Returns an unsubscribe function.
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`EventId`](?id=eventid)
 
@@ -243,9 +229,9 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| eventId | `K` | Registered event name. |
-| payload | [`EventPayload`](?id=eventpayload)\<`K`\> | Serializable payload passed to listeners. |
-| options? | [`EventEmitOptions`](?id=eventemitoptions) | Optional guard forwarded to filtered listeners. |
+| eventId | `K` | `K` Registered event name. |
+| payload | <code>[`EventPayload`](?id=eventpayload)\&lt;`K`\&gt;</code> | [`EventPayload`](?id=eventpayload)\<`K`\> Serializable payload passed to listeners. |
+| options? | <code>[`EventEmitOptions`](?id=eventemitoptions)</code> | [`EventEmitOptions`](?id=eventemitoptions) Optional guard forwarded to filtered listeners. |
 
 <div class="smt-member-anchors">
 
@@ -258,10 +244,6 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 </div>
 
 Emit a worker event with a payload to subscribers.
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`EventId`](?id=eventid)
 

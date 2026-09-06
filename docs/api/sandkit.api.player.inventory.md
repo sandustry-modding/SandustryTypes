@@ -20,7 +20,7 @@ addById(itemId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` | Registered item id string. |
+| itemId | `string` | `string` Registered item id string. |
 
 <div class="smt-member-anchors">
 
@@ -48,7 +48,7 @@ addFromId(itemId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | `string` |  |
+| itemId | `string` | `string` |
 
 <div class="smt-member-anchors">
 

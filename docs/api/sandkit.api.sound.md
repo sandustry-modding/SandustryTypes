@@ -8,23 +8,17 @@
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L77" target="_blank" rel="noopener">sound.d.ts:77</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| stop() | <code>(): void</code> | Stop this sound instance. |
+
+<div class="smt-member-anchors">
+
+##### stop() <!-- {docsify-ignore} -->
+
+</div>
+
 Handle returned from a play call.
-
-#### Methods
-
-##### stop()
-
-```ts
-stop(): void
-```
-
-Defined in: [sandkit/api/sound.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L79)
-
-Stop this sound instance.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -36,10 +30,10 @@ Stop this sound instance.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| soundId | string | Sound id for this layer. |
-| volume? | number | Layer volume multiplier. |
-| delay? | number | Delay in milliseconds before this layer plays. |
-| playbackRate? | number | Playback rate for this layer. |
+| soundId | <code>string</code> | Sound id for this layer. |
+| volume? | <code>number</code> | Layer volume multiplier. |
+| delay? | <code>number</code> | Delay in milliseconds before this layer plays. |
+| playbackRate? | <code>number</code> | Playback rate for this layer. |
 
 <div class="smt-member-anchors">
 
@@ -71,12 +65,12 @@ One layer in a layered sound.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| volume? | number | Volume multiplier (0–1 typical). |
-| playbackRate? | number | Playback rate multiplier. |
-| position? | object | World position for distance attenuation. |
-| loop? | boolean | When true, loop until stopped. |
-| rateLimitKey? | string | Key used with rateLimitMs to dedupe rapid replays. |
-| rateLimitMs? | number | Minimum ms between plays with the same rateLimitKey. |
+| volume? | <code>number</code> | Volume multiplier (0–1 typical). |
+| playbackRate? | <code>number</code> | Playback rate multiplier. |
+| position? | <code>{ x: number; y: number }</code> | World position for distance attenuation. |
+| loop? | <code>boolean</code> | When true, loop until stopped. |
+| rateLimitKey? | <code>string</code> | Key used with rateLimitMs to dedupe rapid replays. |
+| rateLimitMs? | <code>number</code> | Minimum ms between plays with the same rateLimitKey. |
 
 <div class="smt-member-anchors">
 
@@ -112,10 +106,10 @@ Options passed to sound play helpers.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| position? | object | World position applied to all layers. |
-| volume? | number | Volume multiplier applied to all layers. |
-| rateLimitKey? | string | Key used with rateLimitMs to dedupe rapid replays. |
-| rateLimitMs? | number | Minimum ms between plays with the same rateLimitKey. |
+| position? | <code>{ x: number; y: number }</code> | World position applied to all layers. |
+| volume? | <code>number</code> | Volume multiplier applied to all layers. |
+| rateLimitKey? | <code>string</code> | Key used with rateLimitMs to dedupe rapid replays. |
+| rateLimitMs? | <code>number</code> | Minimum ms between plays with the same rateLimitKey. |
 
 <div class="smt-member-anchors">
 
@@ -151,8 +145,8 @@ play(soundId: string, options?: SoundOptions): SoundHandle
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` | Registered sound identifier. |
-| options? | [`SoundOptions`](?id=soundoptions) | Volume, position, playback rate, and rate-limit options. |
+| soundId | `string` | `string` Registered sound identifier. |
+| options? | <code>[`SoundOptions`](?id=soundoptions)</code> | [`SoundOptions`](?id=soundoptions) Volume, position, playback rate, and rate-limit options. |
 
 <div class="smt-member-anchors">
 
@@ -184,8 +178,8 @@ playActive(soundId: string, options?: SoundOptions): SoundHandle
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` | Registered sound identifier. |
-| options? | [`SoundOptions`](?id=soundoptions) | Volume, position, playback rate, and rate-limit options. |
+| soundId | `string` | `string` Registered sound identifier. |
+| options? | <code>[`SoundOptions`](?id=soundoptions)</code> | [`SoundOptions`](?id=soundoptions) Volume, position, playback rate, and rate-limit options. |
 
 <div class="smt-member-anchors">
 
@@ -217,8 +211,8 @@ playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| layers | [`SoundLayer`](?id=soundlayer)[] | Layer definitions (sound id, volume, delay, and per-layer options). |
-| options? | [`SoundLayersOptions`](?id=soundlayersoptions) | Shared position, volume, and rate-limit options for all layers. |
+| layers | <code>[`SoundLayer`](?id=soundlayer)[]</code> | [`SoundLayer`](?id=soundlayer)[] Layer definitions (sound id, volume, delay, and per-layer options). |
+| options? | <code>[`SoundLayersOptions`](?id=soundlayersoptions)</code> | [`SoundLayersOptions`](?id=soundlayersoptions) Shared position, volume, and rate-limit options for all layers. |
 
 <div class="smt-member-anchors">
 
@@ -250,9 +244,9 @@ calculateDistanceOptionsAtWorld(worldX: number, worldY: number, baseVolume?: num
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| baseVolume? | `number` | Base volume before distance attenuation. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| baseVolume? | `number` | `number` Base volume before distance attenuation. |
 
 <div class="smt-member-anchors">
 
@@ -286,7 +280,7 @@ stopBySoundId(soundId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` | Registered sound identifier to stop. |
+| soundId | `string` | `string` Registered sound identifier to stop. |
 
 <div class="smt-member-anchors">
 
@@ -314,7 +308,7 @@ stopById(soundId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` |  |
+| soundId | `string` | `string` |
 
 <div class="smt-member-anchors">
 

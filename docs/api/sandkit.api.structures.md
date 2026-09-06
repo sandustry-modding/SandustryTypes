@@ -10,9 +10,9 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | string |  |
-| directions? | string[] |  |
-| spanTiles? | number | Fixed span length in tiles for line-linked structures. |
+| type | <code>string</code> |  |
+| directions? | <code>string[]</code> |  |
+| spanTiles? | <code>number</code> | Fixed span length in tiles for line-linked structures. |
 
 <div class="smt-member-anchors">
 
@@ -36,8 +36,8 @@ Build mode entry for a structure definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | StructureRef |  |
-| angles | number[] |  |
+| id | <code>StructureRef</code> |  |
+| angles | <code>number[]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -59,8 +59,8 @@ Rotated variant entry for a structure definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "custom" |  |
-| dataFieldMessage | object |  |
+| type | <code>&quot;custom&quot;</code> |  |
+| dataFieldMessage | <code>{ message: string; messageKey: string; fields: readonly StructureTooltipHoverField[] }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -108,12 +108,12 @@ tooltipHover: {
 
 | Property | Type | Description |
 | --- | --- | --- |
-| param | string |  |
-| field | string |  |
-| fallback? | string &#124; number |  |
-| round? | boolean |  |
-| valueLabels? | Record<string, string> |  |
-| valueKeys? | Record<string, string> |  |
+| param | <code>string</code> |  |
+| field | <code>string</code> |  |
+| fallback? | <code>string &#124; number</code> |  |
+| round? | <code>boolean</code> |  |
+| valueLabels? | <code>Record&lt;string, string&gt;</code> |  |
+| valueKeys? | <code>Record&lt;string, string&gt;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -143,10 +143,10 @@ One interpolated field in a [StructureTooltipHover](?id=structuretooltiphover) m
 
 | Property | Type | Description |
 | --- | --- | --- |
-| frameSize | object |  |
-| frames | number |  |
-| intervalMs | number |  |
-| rowDataField? | string | When set, frame row follows this structure `data` field. |
+| frameSize | <code>{ width: number; height: number }</code> |  |
+| frames | <code>number</code> |  |
+| intervalMs | <code>number</code> |  |
+| rowDataField? | <code>string</code> | When set, frame row follows this structure `data` field. |
 
 <div class="smt-member-anchors">
 
@@ -172,13 +172,13 @@ Spritesheet animation on a structure render block.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| imageName? | string |  |
-| size? | object |  |
-| offset? | object |  |
-| outline? | boolean |  |
-| width? | string |  |
-| height? | string |  |
-| clipToBounds? | boolean |  |
+| imageName? | <code>string</code> |  |
+| size? | <code>{ width: number; height: number }</code> |  |
+| offset? | <code>{ x: number; y: number }</code> |  |
+| outline? | <code>boolean</code> |  |
+| width? | <code>string</code> |  |
+| height? | <code>string</code> |  |
+| clipToBounds? | <code>boolean</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -210,13 +210,13 @@ Hotbar / build-menu UI sprite settings.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| imageName? | string |  |
-| size? | object |  |
-| offset? | object |  |
-| z? | number |  |
-| ambienceGroup? | string |  |
-| ui? | StructureRenderUi |  |
-| spritesheet? | StructureSpritesheet |  |
+| imageName? | <code>string</code> |  |
+| size? | <code>{ width: number; height: number }</code> |  |
+| offset? | <code>{ x: number; y: number }</code> |  |
+| z? | <code>number</code> |  |
+| ambienceGroup? | <code>string</code> |  |
+| ui? | <code>StructureRenderUi</code> |  |
+| spritesheet? | <code>StructureSpritesheet</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -248,23 +248,23 @@ Render settings for a structure definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string & object |  |
-| name? | string |  |
-| nameKey? | string |  |
-| description? | string |  |
-| descriptionKey? | string |  |
-| categoryKey? | string |  |
-| order? | number |  |
-| buildModes? | StructureBuildMode[] |  |
-| shape? | number[][] |  |
-| variants? | StructureVariant[] |  |
-| render? | StructureRender |  |
-| defaultData? | Record<string, unknown> |  |
-| linkedClearance? | string | Linked placement clearance mode (for example `"allOrNothing"`). |
-| tooltipHover? | StructureTooltipHover | Custom hover tooltip over the built structure. |
-| rejectWhenBlocked? | boolean | Reject placement when the footprint is blocked. |
-| alwaysUnlocked? | boolean | Show in the build menu without research unlock. |
-| descriptionParams? | Record<string, string &#124; number> | Values interpolated into the structure description string. |
+| id | <code>string &amp; object</code> |  |
+| name? | <code>string</code> |  |
+| nameKey? | <code>string</code> |  |
+| description? | <code>string</code> |  |
+| descriptionKey? | <code>string</code> |  |
+| categoryKey? | <code>string</code> |  |
+| order? | <code>number</code> |  |
+| buildModes? | <code>StructureBuildMode[]</code> |  |
+| shape? | <code>number[][]</code> |  |
+| variants? | <code>StructureVariant[]</code> |  |
+| render? | <code>StructureRender</code> |  |
+| defaultData? | <code>Record&lt;string, unknown&gt;</code> |  |
+| linkedClearance? | <code>string</code> | Linked placement clearance mode (for example `"allOrNothing"`). |
+| tooltipHover? | <code>StructureTooltipHover</code> | Custom hover tooltip over the built structure. |
+| rejectWhenBlocked? | <code>boolean</code> | Reject placement when the footprint is blocked. |
+| alwaysUnlocked? | <code>boolean</code> | Show in the build menu without research unlock. |
+| descriptionParams? | <code>Record&lt;string, string &#124; number&gt;</code> | Values interpolated into the structure description string. |
 
 <div class="smt-member-anchors">
 
@@ -338,8 +338,8 @@ Options passed to [buildAtCell](?id=buildatcell).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| removeCells? | boolean | Also remove underlying terrain cells in the footprint. |
-| skipVisuals? | boolean | Skip visual teardown effects. |
+| removeCells? | <code>boolean</code> | Also remove underlying terrain cells in the footprint. |
+| skipVisuals? | <code>boolean</code> | Skip visual teardown effects. |
 
 <div class="smt-member-anchors">
 
@@ -361,10 +361,10 @@ Options passed to [removeAtCell](?id=removeatcell).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| removeCells? | boolean |  |
-| skipVisuals? | boolean |  |
-| preserveUnselectable? | boolean | When set, only remove structures at these positions. |
-| onlyPositions? | Vector2[] |  |
+| removeCells? | <code>boolean</code> |  |
+| skipVisuals? | <code>boolean</code> |  |
+| preserveUnselectable? | <code>boolean</code> | When set, only remove structures at these positions. |
+| onlyPositions? | <code>Vector2[]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -388,115 +388,29 @@ Options passed to bulk structure removal helpers.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L688" target="_blank" rel="noopener">structures.d.ts:688</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| getResolvedTypeAtCell() | <code>(...args: CellCoordinates): ElementType &#124; null</code> | Return the resolved element type at a cell, or null. |
+| ~~getElementTypeAtCell()~~ | <code>(...args: CellCoordinates): ElementType &#124; null</code> | Deprecated alias. |
+| isCellEmptyAtCell() | <code>(...args: CellCoordinates): boolean</code> | Return true when the cell has no element or terrain. |
+| ~~isCellEmpty()~~ | <code>(...args: CellCoordinates): boolean</code> | Deprecated alias. |
+| commit() | <code>(mutations: unknown): void</code> | Commit batched grid mutations from the processing callback. |
+
+<div class="smt-member-anchors">
+
+##### getResolvedTypeAtCell() <!-- {docsify-ignore} -->
+
+##### ~~getElementTypeAtCell()~~ <!-- {docsify-ignore} -->
+
+##### isCellEmptyAtCell() <!-- {docsify-ignore} -->
+
+##### ~~isCellEmpty()~~ <!-- {docsify-ignore} -->
+
+##### commit() <!-- {docsify-ignore} -->
+
+</div>
+
 Context passed to structure processing callbacks.
-
-#### Methods
-
-##### getResolvedTypeAtCell()
-
-```ts
-getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
-```
-
-Defined in: [sandkit/api/structures.d.ts:693](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L693)
-
-Return the resolved element type at a cell, or null.
-
-###### Parameters
-
-###### args
-
-...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)
-
-###### Returns
-
-[`ElementType`](api/sandkit.api.elements.md?id=elementtype) &#124; `null`
-
-##### ~~getElementTypeAtCell()~~
-
-```ts
-getElementTypeAtCell(...args: CellCoordinates): ElementType | null
-```
-
-Defined in: [sandkit/api/structures.d.ts:699](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L699)
-
-###### Parameters
-
-###### args
-
-...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)
-
-###### Returns
-
-[`ElementType`](api/sandkit.api.elements.md?id=elementtype) &#124; `null`
-
-###### Deprecated
-
-Use [getResolvedTypeAtCell](?id=getresolvedtypeatcell) instead.
-
-##### isCellEmptyAtCell()
-
-```ts
-isCellEmptyAtCell(...args: CellCoordinates): boolean
-```
-
-Defined in: [sandkit/api/structures.d.ts:705](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L705)
-
-Return true when the cell has no element or terrain.
-
-###### Parameters
-
-###### args
-
-...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)
-
-###### Returns
-
-`boolean`
-
-##### ~~isCellEmpty()~~
-
-```ts
-isCellEmpty(...args: CellCoordinates): boolean
-```
-
-Defined in: [sandkit/api/structures.d.ts:711](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L711)
-
-###### Parameters
-
-###### args
-
-...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)
-
-###### Returns
-
-`boolean`
-
-###### Deprecated
-
-Use [isCellEmptyAtCell](?id=iscellemptyatcell) instead.
-
-##### commit()
-
-```ts
-commit(mutations: unknown): void
-```
-
-Defined in: [sandkit/api/structures.d.ts:719](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L719)
-
-Commit batched grid mutations from the processing callback.
-
-###### Parameters
-
-###### mutations
-
-`unknown`
-
-Mutation writer payload accepted by the runtime.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -508,8 +422,8 @@ Mutation writer payload accepted by the runtime.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| ~~intervalMs~~ | number | Tick interval in milliseconds. Must be > 0. |
-| ~~process~~ | (structure: Structure, context: StructureProcessingContext) => void | Synchronous callback invoked for each structure instance. |
+| ~~intervalMs~~ | <code>number</code> | Tick interval in milliseconds. Must be > 0. |
+| ~~process~~ | <code>(structure: Structure, context: StructureProcessingContext) =&gt; void</code> | Synchronous callback invoked for each structure instance. |
 
 <div class="smt-member-anchors">
 
@@ -538,12 +452,12 @@ Use [StructureProcessingDefinitionV1](api/sandkit.api.structures.md?id=structure
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "integer" |  |
-| id | string |  |
-| labelKey | string |  |
-| min? | number |  |
-| max? | number |  |
-| default? | number |  |
+| type | <code>&quot;integer&quot;</code> |  |
+| id | <code>string</code> |  |
+| labelKey | <code>string</code> |  |
+| min? | <code>number</code> |  |
+| max? | <code>number</code> |  |
+| default? | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -573,10 +487,10 @@ Integer placement field with optional bounds.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "choice" |  |
-| id | string |  |
-| labelKey | string |  |
-| options | readonly object[] |  |
+| type | <code>&quot;choice&quot;</code> |  |
+| id | <code>string</code> |  |
+| labelKey | <code>string</code> |  |
+| options | <code>readonly object[]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -602,8 +516,8 @@ Choice placement field with labeled options.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| structureId | string & object |  |
-| fields | PlacementConfigField[] |  |
+| structureId | <code>string &amp; object</code> |  |
+| fields | <code>PlacementConfigField[]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -625,8 +539,8 @@ Placement rule definition for a structure type.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| input | ElementType |  |
-| outputs | WeightedRecipeOutput[] |  |
+| input | <code>ElementType</code> |  |
+| outputs | <code>WeightedRecipeOutput[]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -648,9 +562,9 @@ Weighted refinery recipe definition shape.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| structureType | StructureRef |  |
-| intervalMs | number |  |
-| process | (structure: Structure, context: StructureProcessingContext) => void |  |
+| structureType | <code>StructureRef</code> |  |
+| intervalMs | <code>number</code> |  |
+| process | <code>(structure: Structure, context: StructureProcessingContext) =&gt; void</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -758,8 +672,8 @@ register(definition: SandkitStructureDefinition, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`SandkitStructureDefinition`](?id=sandkitstructuredefinition) | Full structure definition. |
-| options? | When `useRawShape` is true, keep the shape matrix as-is. |  |
+| definition | <code>[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)</code> | [`SandkitStructureDefinition`](?id=sandkitstructuredefinition) Full structure definition. |
+| options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> | When `useRawShape` is true, keep the shape matrix as-is. |
 
 <div class="smt-member-anchors">
 
@@ -817,9 +731,9 @@ updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStruct
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) | Structure type value or string id. |
-| partial | `Partial`\<[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)\> | Fields to merge onto the definition. |
-| options? | When `useRawShape` is true, keep the shape matrix as-is. |  |
+| structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) Structure type value or string id. |
+| partial | `Partial`\<[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)\> | `Partial`\<[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)\> Fields to merge onto the definition. |
+| options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> | When `useRawShape` is true, keep the shape matrix as-is. |
 
 <div class="smt-member-anchors">
 
@@ -863,9 +777,9 @@ registerVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| baseStructureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) | Base structure type or id. |
-| variant | Variant id and supported rotation angles. |  |
-| options? | Optional build-mode wiring for the variant. |  |
+| baseStructureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) Base structure type or id. |
+| variant | <code>Variant id and supported rotation angles.</code> | Variant id and supported rotation angles. |
+| options? | <code>Optional build-mode wiring for the variant.</code> | Optional build-mode wiring for the variant. |
 
 <div class="smt-member-anchors">
 
@@ -916,9 +830,9 @@ addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: objec
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| baseStructureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |  |
-| variant |  |  |
-| options? |  |  |
+| baseStructureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |
+| variant | <code>{ id: [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref); angles: `number`[] }</code> |  |
+| options? | <code>{ addBuildMode: unknown }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -957,7 +871,7 @@ registerPlacementConfig(definition: PlacementConfigDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`PlacementConfigDefinition`](?id=placementconfigdefinition) | Hotbar placement field configuration. |
+| definition | <code>[`PlacementConfigDefinition`](?id=placementconfigdefinition)</code> | [`PlacementConfigDefinition`](?id=placementconfigdefinition) Hotbar placement field configuration. |
 
 <div class="smt-member-anchors">
 
@@ -1060,7 +974,7 @@ isBlockedByPlayerAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1088,7 +1002,7 @@ isLauncherAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -1116,7 +1030,7 @@ isLockedByType(structureType: StructureRef): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureType | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) | Structure type value or string id. |
+| structureType | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) Structure type value or string id. |
 
 <div class="smt-member-anchors">
 
@@ -1147,7 +1061,7 @@ isUnlockedByType(structureType: StructureRef): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureType | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |  |
+| structureType | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |
 
 <div class="smt-member-anchors">
 
@@ -1182,8 +1096,8 @@ mapValueToSpritesheetIndex(value: number, thresholds: number[]): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| value | `number` | Numeric value to map. |
-| thresholds | `number`[] | Ascending threshold values. |
+| value | `number` | `number` Numeric value to map. |
+| thresholds | `number`[] | `number`[] Ascending threshold values. |
 
 <div class="smt-member-anchors">
 
@@ -1224,7 +1138,7 @@ buildAtCell(...args: number, number, [StructureRef, StructureBuildOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\]</code> | ...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -1252,7 +1166,7 @@ buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOption
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\]</code> | ...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -1287,7 +1201,7 @@ removeAtCell(...args: number, number, [StructureRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\] |  |
+| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\]</code> | ...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -1315,7 +1229,7 @@ removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\] |  |
+| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\]</code> | ...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -1350,11 +1264,11 @@ removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, end
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startCellX | `number` | Start cell column. |
-| startCellY | `number` | Start cell row. |
-| endCellX | `number` | End cell column. |
-| endCellY | `number` | End cell row. |
-| options? | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) | Optional bulk-removal flags. |
+| startCellX | `number` | `number` Start cell column. |
+| startCellY | `number` | `number` Start cell row. |
+| endCellX | `number` | `number` End cell column. |
+| endCellY | `number` | `number` End cell row. |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) Optional bulk-removal flags. |
 
 <div class="smt-member-anchors">
 
@@ -1390,11 +1304,11 @@ removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: num
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startCellX | `number` |  |
-| startCellY | `number` |  |
-| endCellX | `number` |  |
-| endCellY | `number` |  |
-| options? | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) |  |
+| startCellX | `number` | `number` |
+| startCellY | `number` | `number` |
+| endCellX | `number` | `number` |
+| endCellY | `number` | `number` |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) |
 
 <div class="smt-member-anchors">
 
@@ -1437,8 +1351,8 @@ removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| positions | [`Vector2`](api/shared.player.md?id=vector2)[] | Cell positions to clear. |
-| options? | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) | Optional bulk-removal flags. |
+| positions | <code>[`Vector2`](api/shared.player.md?id=vector2)[]</code> | [`Vector2`](api/shared.player.md?id=vector2)[] Cell positions to clear. |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) Optional bulk-removal flags. |
 
 <div class="smt-member-anchors">
 
@@ -1477,8 +1391,8 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| positions | [`Vector2`](api/shared.player.md?id=vector2)[] |  |
-| options? | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) |  |
+| positions | <code>[`Vector2`](api/shared.player.md?id=vector2)[]</code> | [`Vector2`](api/shared.player.md?id=vector2)[] |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) |
 
 <div class="smt-member-anchors">
 
@@ -1515,8 +1429,8 @@ addProcessor(structureId: StructureRef, definition: StructureProcessorDefinition
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |  |
-| definition | [`StructureProcessorDefinitionV1`](?id=structureprocessordefinitionv1) |  |
+| structureId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |
+| definition | <code>[`StructureProcessorDefinitionV1`](?id=structureprocessordefinitionv1)</code> | [`StructureProcessorDefinitionV1`](?id=structureprocessordefinitionv1) |
 
 <div class="smt-member-anchors">
 

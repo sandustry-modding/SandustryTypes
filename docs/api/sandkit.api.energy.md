@@ -13,8 +13,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| capacity? | number | Maximum stored energy for storage nodes. |
-| energyType? | string | Energy type id when multiple networks exist. |
+| capacity? | <code>number</code> | Maximum stored energy for storage nodes. |
+| energyType? | <code>string</code> | Energy type id when multiple networks exist. |
 
 <div class="smt-member-anchors">
 
@@ -42,7 +42,7 @@ Options for [registerType](?id=registertype).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| energyType? | string | Energy type id when multiple networks exist. |
+| energyType? | <code>string</code> | Energy type id when multiple networks exist. |
 
 <div class="smt-member-anchors">
 
@@ -78,9 +78,9 @@ registerType(structureId: string, type: "storage" | "conductor", options?: Energ
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | Structure type id string. |
-| type | `"storage"` &#124; `"conductor"` | `conductor` forwards energy; `storage` holds energy. |
-| options? | [`EnergyRegisterTypeOptions`](?id=energyregistertypeoptions) | Capacity and energy-type options for storage nodes. |
+| structureId | `string` | `string` Structure type id string. |
+| type | `"storage"` &#124; `"conductor"` | `"storage"` &#124; `"conductor"` `conductor` forwards energy; `storage` holds energy. |
+| options? | <code>[`EnergyRegisterTypeOptions`](?id=energyregistertypeoptions)</code> | [`EnergyRegisterTypeOptions`](?id=energyregistertypeoptions) Capacity and energy-type options for storage nodes. |
 
 <div class="smt-member-anchors">
 
@@ -112,7 +112,7 @@ addAtCell(...args: number, number, number, [EnergyAddOptions]): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, [`EnergyAddOptions`](?id=energyaddoptions)\] |  |
+| args | <code>...\[`number`, `number`, `number`, [`EnergyAddOptions`](?id=energyaddoptions)\]</code> | ...\[`number`, `number`, `number`, [`EnergyAddOptions`](?id=energyaddoptions)\] |
 
 <div class="smt-member-anchors">
 
@@ -140,8 +140,8 @@ consume(amount: number, options?: object): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| amount | `number` | Energy amount to consume. |
-| options? | When `allOrNothing` is true, consume zero unless the full amount is available. |  |
+| amount | `number` | `number` Energy amount to consume. |
+| options? | <code>When `allOrNothing` is true, consume zero unless the full amount is available.</code> | When `allOrNothing` is true, consume zero unless the full amount is available. |
 
 <div class="smt-member-anchors">
 
@@ -171,7 +171,7 @@ consumeExcludingNetworkAtCell(...args: [number, number, number]): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -199,7 +199,7 @@ getNetworkAtCell(...args: CellCoordinates): object[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -238,7 +238,7 @@ getNetworkFreeCapacityAtCell(...args: CellCoordinates): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 

@@ -20,9 +20,9 @@ register(slot: OverlaySlot, overlayId: string, render: () => ReactNode): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| slot | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) | Slot name (for example `"hotbar"`). |
-| overlayId | `string` | Unique id for this overlay within the slot. |
-| render | () => `ReactNode` | Function that returns React content. |
+| slot | <code>[`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot)</code> | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) Slot name (for example `"hotbar"`). |
+| overlayId | `string` | `string` Unique id for this overlay within the slot. |
+| render | <code>() =&gt; `ReactNode`</code> | () => `ReactNode` Function that returns React content. |
 
 <div class="smt-member-anchors">
 
@@ -54,8 +54,8 @@ unregister(slot: OverlaySlot, overlayId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| slot | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) | Slot name the overlay was registered in. |
-| overlayId | `string` | Overlay id passed to [register](?id=register). |
+| slot | <code>[`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot)</code> | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) Slot name the overlay was registered in. |
+| overlayId | `string` | `string` Overlay id passed to [register](?id=register). |
 
 <div class="smt-member-anchors">
 
@@ -85,7 +85,7 @@ update(slot: OverlaySlot): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| slot | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) | Slot name to refresh. |
+| slot | <code>[`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot)</code> | [`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot) Slot name to refresh. |
 
 <div class="smt-member-anchors">
 

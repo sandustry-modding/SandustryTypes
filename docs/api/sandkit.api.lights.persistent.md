@@ -20,9 +20,9 @@ createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions):
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| options? | [`PersistentLightOptions`](api/sandkit.api.lights.md?id=persistentlightoptions) | Brightness, size, color, and persistence options. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| options? | <code>[`PersistentLightOptions`](api/sandkit.api.lights.md?id=persistentlightoptions)</code> | [`PersistentLightOptions`](api/sandkit.api.lights.md?id=persistentlightoptions) Brightness, size, color, and persistence options. |
 
 <div class="smt-member-anchors">
 
@@ -64,8 +64,8 @@ removeAtWorld(worldX: number, worldY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -95,9 +95,9 @@ fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| durationMs? | `number` | Fade duration in milliseconds. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| durationMs? | `number` | `number` Fade duration in milliseconds. |
 
 <div class="smt-member-anchors">
 

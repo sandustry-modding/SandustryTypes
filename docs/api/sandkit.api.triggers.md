@@ -10,8 +10,8 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| interval | number | Interval between callbacks in simulation ticks. |
-| callback | () => void | Called each time the trigger fires. |
+| interval | <code>number</code> | Interval between callbacks in simulation ticks. |
+| callback | <code>() =&gt; void</code> | Called each time the trigger fires. |
 
 <div class="smt-member-anchors">
 
@@ -49,8 +49,8 @@ register(triggerId: string, definition: MainTriggerDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| triggerId | `string` | Unique trigger identifier. |
-| definition | [`MainTriggerDefinition`](?id=maintriggerdefinition) | Interval in ticks and callback to invoke. |
+| triggerId | `string` | `string` Unique trigger identifier. |
+| definition | <code>[`MainTriggerDefinition`](?id=maintriggerdefinition)</code> | [`MainTriggerDefinition`](?id=maintriggerdefinition) Interval in ticks and callback to invoke. |
 
 <div class="smt-member-anchors">
 

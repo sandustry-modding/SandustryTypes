@@ -12,8 +12,8 @@ Short-lived visual effect lights.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| lightId | number &#124; null | Runtime light id, or null when the pool is full. |
-| ~~index?~~ | number &#124; null |  |
+| lightId | <code>number &#124; null</code> | Runtime light id, or null when the pool is full. |
+| ~~index?~~ | <code>number &#124; null</code> | Deprecated alias. |
 
 <div class="smt-member-anchors">
 
@@ -65,9 +65,9 @@ createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
-| options? | [`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions) | Brightness, duration, colour, and dedup settings. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
+| options? | <code>[`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions)</code> | [`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions) Brightness, duration, colour, and dedup settings. |
 
 <div class="smt-member-anchors">
 

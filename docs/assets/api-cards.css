@@ -79,6 +79,9 @@
 
 .markdown-section .smt-member-card tbody td:nth-child(2) {
   font-family: var(--smt-font-mono, ui-monospace, monospace);
+  white-space: normal;
+  overflow-wrap: anywhere;
+  font-size: 0.88em;
 }
 
 .markdown-section .smt-member-card > :is(h4, h5) {

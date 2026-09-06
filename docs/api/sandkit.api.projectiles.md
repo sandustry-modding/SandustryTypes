@@ -10,10 +10,10 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string |  |
-| sprite | object |  |
-| getOptions | () => Record<string, unknown> | Returns spawn-time physics and visual options. |
-| getModData? | (state: unknown, projectile: Projectile) => Record<string, unknown> | Optional per-projectile mutable data factory. |
+| id | <code>string</code> |  |
+| sprite | <code>{ id: string; tint: number }</code> |  |
+| getOptions | <code>() =&gt; Record&lt;string, unknown&gt;</code> | Returns spawn-time physics and visual options. |
+| getModData? | <code>(state: unknown, projectile: Projectile) =&gt; Record&lt;string, unknown&gt;</code> | Optional per-projectile mutable data factory. |
 
 <div class="smt-member-anchors">
 
@@ -45,8 +45,8 @@ Mod-registered projectile definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| opts | Record<string, unknown> |  |
-| type | unknown |  |
+| opts | <code>Record&lt;string, unknown&gt;</code> |  |
+| type | <code>unknown</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -68,9 +68,9 @@ Blueprint used to spawn a projectile.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | number |  |
-| x | number |  |
-| y | number |  |
+| id | <code>number</code> |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -110,7 +110,7 @@ register(definition: ProjectileDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`ProjectileDefinition`](?id=projectiledefinition) | Projectile id, sprite, and runtime options factory. |
+| definition | <code>[`ProjectileDefinition`](?id=projectiledefinition)</code> | [`ProjectileDefinition`](?id=projectiledefinition) Projectile id, sprite, and runtime options factory. |
 
 <div class="smt-member-anchors">
 
@@ -138,7 +138,7 @@ getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectileId | `string` | Registered projectile id. |
+| projectileId | `string` | `string` Registered projectile id. |
 
 <div class="smt-member-anchors">
 
@@ -148,7 +148,7 @@ getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 
 Return a projectile definition by string id.
 
-[`ProjectileDefinition`](?id=projectiledefinition) &#124; `undefined`
+[`ProjectileDefinition`](?id=projectiledefinition) \| `undefined`
 
 </div>
 
@@ -168,7 +168,7 @@ createBlueprintFromId(projectileId: string): ProjectileBlueprint
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectileId | `string` | Registered projectile id. |
+| projectileId | `string` | `string` Registered projectile id. |
 
 <div class="smt-member-anchors">
 
@@ -218,7 +218,7 @@ getById(projectileId: number): Projectile | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectileId | `number` | Runtime projectile id. |
+| projectileId | `number` | `number` Runtime projectile id. |
 
 <div class="smt-member-anchors">
 
@@ -228,7 +228,7 @@ getById(projectileId: number): Projectile | undefined
 
 Return a projectile by numeric id.
 
-[`Projectile`](?id=projectile) &#124; `undefined`
+[`Projectile`](?id=projectile) \| `undefined`
 
 </div>
 
@@ -248,7 +248,7 @@ remove(projectile: Projectile): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectile | [`Projectile`](?id=projectile) | Projectile instance to remove. |
+| projectile | <code>[`Projectile`](?id=projectile)</code> | [`Projectile`](?id=projectile) Projectile instance to remove. |
 
 <div class="smt-member-anchors">
 
@@ -276,10 +276,10 @@ spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: Projectil
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | Spawn x position in world pixels. |
-| worldY | `number` | Spawn y position in world pixels. |
-| angle | `number` | Launch angle in radians. |
-| blueprint | [`ProjectileBlueprint`](?id=projectileblueprint) | Blueprint from [createBlueprintFromId](?id=createblueprintfromid). |
+| worldX | `number` | `number` Spawn x position in world pixels. |
+| worldY | `number` | `number` Spawn y position in world pixels. |
+| angle | `number` | `number` Launch angle in radians. |
+| blueprint | <code>[`ProjectileBlueprint`](?id=projectileblueprint)</code> | [`ProjectileBlueprint`](?id=projectileblueprint) Blueprint from [createBlueprintFromId](?id=createblueprintfromid). |
 
 <div class="smt-member-anchors">
 

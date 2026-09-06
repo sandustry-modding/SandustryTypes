@@ -14,9 +14,9 @@ Available as `sandkit.api.pickups`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| brightness? | number | Light brightness multiplier. Default 1. |
-| size? | number | Light radius in world pixels. Default 100. |
-| color? | [number, number, number] &#124; [number, number, number, number] | RGB or RGBA color components in 0–1 range. |
+| brightness? | <code>number</code> | Light brightness multiplier. Default 1. |
+| size? | <code>number</code> | Light radius in world pixels. Default 100. |
+| color? | <code>[number, number, number] &#124; [number, number, number, number]</code> | RGB or RGBA color components in 0–1 range. |
 
 <div class="smt-member-anchors">
 
@@ -40,11 +40,11 @@ Optional point light attached when spawning a pickup.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | number |  |
-| x | number |  |
-| y | number |  |
-| type | PickupType |  |
-| data | Record<string, unknown> |  |
+| id | <code>number</code> |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
+| type | <code>PickupType</code> |  |
+| data | <code>Record&lt;string, unknown&gt;</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -127,11 +127,11 @@ spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<str
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| type | [`PickupType`](api/sandkit.enums.PickupType.md) | Pickup type discriminator. |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
-| data? | `Record`\<`string`, `unknown`\> | Optional per-item data bag copied onto the instance. |
-| light? | [`WorldItemLight`](?id=worlditemlight) | Optional point light spawned with the pickup. |
+| type | <code>[`PickupType`](api/sandkit.enums.PickupType.md)</code> | [`PickupType`](api/sandkit.enums.PickupType.md) Pickup type discriminator. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
+| data? | `Record`\<`string`, `unknown`\> | `Record`\<`string`, `unknown`\> Optional per-item data bag copied onto the instance. |
+| light? | <code>[`WorldItemLight`](?id=worlditemlight)</code> | [`WorldItemLight`](?id=worlditemlight) Optional point light spawned with the pickup. |
 
 <div class="smt-member-anchors">
 
@@ -169,7 +169,7 @@ remove(pickup: WorldItem): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | [`WorldItem`](?id=worlditem) | Pickup returned from spawn or lookup helpers. |
+| pickup | <code>[`WorldItem`](?id=worlditem)</code> | [`WorldItem`](?id=worlditem) Pickup returned from spawn or lookup helpers. |
 
 <div class="smt-member-anchors">
 
@@ -197,7 +197,7 @@ destroy(pickup: WorldItem): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | [`WorldItem`](?id=worlditem) |  |
+| pickup | <code>[`WorldItem`](?id=worlditem)</code> | [`WorldItem`](?id=worlditem) |
 
 <div class="smt-member-anchors">
 
@@ -232,7 +232,7 @@ pickUp(pickup: WorldItem): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | [`WorldItem`](?id=worlditem) | Pickup to collect. |
+| pickup | <code>[`WorldItem`](?id=worlditem)</code> | [`WorldItem`](?id=worlditem) Pickup to collect. |
 
 <div class="smt-member-anchors">
 
@@ -282,7 +282,7 @@ getById(pickupId: number): WorldItem | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickupId | `number` | Runtime pickup id. |
+| pickupId | `number` | `number` Runtime pickup id. |
 
 <div class="smt-member-anchors">
 
@@ -292,6 +292,6 @@ getById(pickupId: number): WorldItem | undefined
 
 Return a pickup by numeric id.
 
-[`WorldItem`](?id=worlditem) &#124; `undefined`
+[`WorldItem`](?id=worlditem) \| `undefined`
 
 </div>

@@ -108,7 +108,30 @@ export function rewriteMarkdownLinks(content) {
       }),
     );
   }
-  return out.join("\n");
+  return fixSandkitNamespaceLinks(out.join("\n"));
+}
+
+/**
+ * TypeDoc turns `{@link sandkit.api}` into `sandkit.md#api`, which Docsify slugifies as `api-1`.
+ * Point those links at the dedicated namespace pages instead.
+ *
+ * @param {string} content
+ * @returns {string}
+ */
+export function fixSandkitNamespaceLinks(content) {
+  const replacements = [
+    [/]\(api\/sandkit\.md\?id=api-1\)/g, "](api/sandkit.api.md)"],
+    [/]\(api\/sandkit\.md\?id=engine-1\)/g, "](api/sandkit.engine.md)"],
+    [/]\(api\/sandkit\.md\?id=enums-1\)/g, "](api/sandkit.enums.md)"],
+    [/]\(\?id=api-1\)/g, "](api/sandkit.api.md)"],
+    [/]\(\?id=engine-1\)/g, "](api/sandkit.engine.md)"],
+    [/]\(\?id=enums-1\)/g, "](api/sandkit.enums.md)"],
+  ];
+  let out = String(content || "");
+  for (const [pattern, replacement] of replacements) {
+    out = out.replace(pattern, replacement);
+  }
+  return out;
 }
 
 /**

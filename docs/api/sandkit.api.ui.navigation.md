@@ -20,7 +20,7 @@ sandkit.api.ui.navigation.useFocusable<T *extends* HTMLElement = HTMLDivElement>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options | [`FocusOptions`](api/sandkit.api.ui.md?id=focusoptions) | Focus registration and neighbor wiring. |
+| options | <code>[`FocusOptions`](api/sandkit.api.ui.md?id=focusoptions)</code> | [`FocusOptions`](api/sandkit.api.ui.md?id=focusoptions) Focus registration and neighbor wiring. |
 
 <div class="smt-member-anchors">
 
@@ -29,10 +29,6 @@ sandkit.api.ui.navigation.useFocusable<T *extends* HTMLElement = HTMLDivElement>
 </div>
 
 React hook for a focusable UI element in a scope.
-
-#### Type Parameters
-
-##### T
 
 `T` *extends* `HTMLElement` = `HTMLDivElement`
 
@@ -66,7 +62,7 @@ useFocusScope(options: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options | Scope id, priority, default focus, and back handler. |  |
+| options | <code>Scope id, priority, default focus, and back handler.</code> | Scope id, priority, default focus, and back handler. |
 
 <div class="smt-member-anchors">
 
@@ -104,7 +100,7 @@ controllerFocusClass(focused: boolean): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| focused | `boolean` | True when the element has controller focus. |
+| focused | `boolean` | `boolean` True when the element has controller focus. |
 
 <div class="smt-member-anchors">
 

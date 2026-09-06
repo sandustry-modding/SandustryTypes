@@ -10,11 +10,11 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| inputA | ElementType | First reacting element type. |
-| inputB | ElementType | Second reacting element type. |
-| outputA | ElementType &#124; null | Element type produced from input A, or null for no output. |
-| outputB | ElementType &#124; null | Element type produced from input B, or null for no output. |
-| orientation? | "any" &#124; "stacked" | Contact layout requirement. Default `"any"`. |
+| inputA | <code>ElementType</code> | First reacting element type. |
+| inputB | <code>ElementType</code> | Second reacting element type. |
+| outputA | <code>ElementType &#124; null</code> | Element type produced from input A, or null for no output. |
+| outputB | <code>ElementType &#124; null</code> | Element type produced from input B, or null for no output. |
+| orientation? | <code>&quot;any&quot; &#124; &quot;stacked&quot;</code> | Contact layout requirement. Default `"any"`. |
 
 <div class="smt-member-anchors">
 
@@ -52,7 +52,7 @@ registerContact(definition: ContactRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`ContactRecipeDefinitionV1`](?id=contactrecipedefinitionv1) | Contact recipe inputs, outputs, and orientation. |
+| definition | <code>[`ContactRecipeDefinitionV1`](?id=contactrecipedefinitionv1)</code> | [`ContactRecipeDefinitionV1`](?id=contactrecipedefinitionv1) Contact recipe inputs, outputs, and orientation. |
 
 <div class="smt-member-anchors">
 

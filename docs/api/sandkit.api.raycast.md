@@ -18,10 +18,10 @@ castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistan
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startWorldX | `number` | Ray origin world X in pixels. |
-| startWorldY | `number` | Ray origin world Y in pixels. |
-| angle | `number` | Ray direction in radians. |
-| maxDistance | `number` | Maximum ray length in pixels. |
+| startWorldX | `number` | `number` Ray origin world X in pixels. |
+| startWorldY | `number` | `number` Ray origin world Y in pixels. |
+| angle | `number` | `number` Ray direction in radians. |
+| maxDistance | `number` | `number` Maximum ray length in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -37,6 +37,6 @@ castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistan
 
 Cast a ray from world position. Return hit point and distance, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) & `object` &#124; `null`
+[`Vector2`](api/shared.player.md?id=vector2) & `object` \| `null`
 
 </div>

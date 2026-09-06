@@ -13,8 +13,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| down? | () => void | Called when the binding is pressed. |
-| up? | () => void | Called when the binding is released. |
+| down? | <code>() =&gt; void</code> | Called when the binding is pressed. |
+| up? | <code>() =&gt; void</code> | Called when the binding is released. |
 
 <div class="smt-member-anchors">
 
@@ -36,10 +36,10 @@ Handlers invoked when a binding is pressed or released.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| displayName | string | Display name shown in settings. |
-| displayNameKey? | string | i18n key for the display name (overrides displayName when set). |
-| category | string | Settings category for grouping. |
-| handlers | InputBindingHandlers | Press and release handlers. |
+| displayName | <code>string</code> | Display name shown in settings. |
+| displayNameKey? | <code>string</code> | i18n key for the display name (overrides displayName when set). |
+| category | <code>string</code> | Settings category for grouping. |
+| handlers | <code>InputBindingHandlers</code> | Press and release handlers. |
 
 <div class="smt-member-anchors">
 
@@ -119,9 +119,9 @@ registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputB
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=bindingid) | Unique id for the binding (also used in settings). |
-| defaultKeys | [`KeyCode`](?id=keycode)[] | Default key codes (for example `"Control+KeyC"`). |
-| definition | [`InputBindingDefinition`](?id=inputbindingdefinition) | Display metadata and press/release handlers. |
+| bindingId | <code>[`BindingId`](?id=bindingid)</code> | [`BindingId`](?id=bindingid) Unique id for the binding (also used in settings). |
+| defaultKeys | <code>[`KeyCode`](?id=keycode)[]</code> | [`KeyCode`](?id=keycode)[] Default key codes (for example `"Control+KeyC"`). |
+| definition | <code>[`InputBindingDefinition`](?id=inputbindingdefinition)</code> | [`InputBindingDefinition`](?id=inputbindingdefinition) Display metadata and press/release handlers. |
 
 <div class="smt-member-anchors">
 
@@ -191,7 +191,7 @@ getBoundKeys(bindingId: BindingId): KeyCode[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=bindingid) | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=bindingid)</code> | [`BindingId`](?id=bindingid) Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -221,8 +221,8 @@ getDisplayKey(bindingId: BindingId, defaultLabel?: string): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=bindingid) | Registered binding id. |
-| defaultLabel? | `string` | Fallback label when no key is bound. |
+| bindingId | <code>[`BindingId`](?id=bindingid)</code> | [`BindingId`](?id=bindingid) Registered binding id. |
+| defaultLabel? | `string` | `string` Fallback label when no key is bound. |
 
 <div class="smt-member-anchors">
 
@@ -254,7 +254,7 @@ triggerBinding(bindingId: BindingId): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=bindingid) | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=bindingid)</code> | [`BindingId`](?id=bindingid) Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -282,7 +282,7 @@ pressBinding(bindingId: BindingId): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=bindingid) | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=bindingid)</code> | [`BindingId`](?id=bindingid) Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -310,7 +310,7 @@ releaseBinding(bindingId: BindingId): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | [`BindingId`](?id=bindingid) | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=bindingid)</code> | [`BindingId`](?id=bindingid) Registered binding id. |
 
 <div class="smt-member-anchors">
 

@@ -13,8 +13,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| handleAction? | (state: State, action: Action) => unknown | Handles item use actions. |
-| afterRender? | (state: State) => void | Called after the item is rendered each frame. |
+| handleAction? | <code>(state: State, action: Action) =&gt; unknown</code> | Handles item use actions. |
+| afterRender? | <code>(state: State) =&gt; void</code> | Called after the item is rendered each frame. |
 
 <div class="smt-member-anchors">
 
@@ -26,15 +26,7 @@ Main thread only.
 
 Definition for a mod-registered inventory item.
 
-#### Type Parameters
-
-##### State
-
-`State` = `unknown`
-
-##### Action
-
-`Action` = `unknown`
+`State` = `unknown` `Action` = `unknown`
 
 #### Indexable
 
@@ -120,7 +112,7 @@ register(definition: ItemDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`ItemDefinition`](?id=itemdefinition) | Item id, handlers, and display metadata. |
+| definition | <code>[`ItemDefinition`](?id=itemdefinition)</code> | [`ItemDefinition`](?id=itemdefinition) Item id, handlers, and display metadata. |
 
 <div class="smt-member-anchors">
 
@@ -148,8 +140,8 @@ updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | [`ItemId`](?id=itemid) | Registered item id. |
-| partial | `Partial`\<[`ItemDefinition`](?id=itemdefinition)\> | Fields to merge into the definition. |
+| itemId | <code>[`ItemId`](?id=itemid)</code> | [`ItemId`](?id=itemid) Registered item id. |
+| partial | `Partial`\<[`ItemDefinition`](?id=itemdefinition)\> | `Partial`\<[`ItemDefinition`](?id=itemdefinition)\> Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -187,7 +179,7 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | [`ItemId`](?id=itemid) | Registered item id. |
+| itemId | <code>[`ItemId`](?id=itemid)</code> | [`ItemId`](?id=itemid) Registered item id. |
 
 <div class="smt-member-anchors">
 
@@ -197,7 +189,7 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for an id, or undefined.
 
-[`ItemDefinition`](?id=itemdefinition)\<`unknown`, `unknown`\> &#124; `undefined`
+[`ItemDefinition`](?id=itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
 
 </div>
 
@@ -217,7 +209,7 @@ createFromId(itemId: ItemId): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | [`ItemId`](?id=itemid) | Registered item id. |
+| itemId | <code>[`ItemId`](?id=itemid)</code> | [`ItemId`](?id=itemid) Registered item id. |
 
 <div class="smt-member-anchors">
 
@@ -245,7 +237,7 @@ getActive(): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for the active hotbar slot.
 
-[`ItemDefinition`](?id=itemdefinition)\<`unknown`, `unknown`\> &#124; `undefined`
+[`ItemDefinition`](?id=itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
 
 </div>
 
@@ -265,8 +257,8 @@ isActiveById(itemId: ItemId, itemType?: ItemType): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | [`ItemId`](?id=itemid) | Item id or numeric type to compare. |
-| itemType? | [`ItemType`](?id=itemtype) | Optional item type discriminator. |
+| itemId | <code>[`ItemId`](?id=itemid)</code> | [`ItemId`](?id=itemid) Item id or numeric type to compare. |
+| itemType? | <code>[`ItemType`](?id=itemtype)</code> | [`ItemType`](?id=itemtype) Optional item type discriminator. |
 
 <div class="smt-member-anchors">
 

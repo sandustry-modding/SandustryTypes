@@ -21,7 +21,7 @@ get(key: string): JsonValueV1 | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Game config key (merged defaults and overrides). |
+| key | `string` | `string` Game config key (merged defaults and overrides). |
 
 <div class="smt-member-anchors">
 
@@ -31,7 +31,7 @@ get(key: string): JsonValueV1 | undefined
 
 Returns a config value by key, or undefined when missing.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
 
 </div>
 

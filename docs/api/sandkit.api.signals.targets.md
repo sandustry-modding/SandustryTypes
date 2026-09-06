@@ -20,8 +20,8 @@ register(structureTypeOrId: unknown, apply: (structure: unknown, payload: unknow
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | `unknown` | Structure type id or enum value. |
-| apply | (`structure`: `unknown`, `payload`: `unknown`) => `void` | Called when a signal reaches a matching structure. |
+| structureTypeOrId | `unknown` | `unknown` Structure type id or enum value. |
+| apply | <code>(`structure`: `unknown`, `payload`: `unknown`) =&gt; `void`</code> | (`structure`: `unknown`, `payload`: `unknown`) => `void` Called when a signal reaches a matching structure. |
 
 <div class="smt-member-anchors">
 

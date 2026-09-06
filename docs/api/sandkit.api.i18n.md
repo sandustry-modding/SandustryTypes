@@ -13,9 +13,9 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| minimumFractionDigits? | number | Minimum fraction digits. |
-| maximumFractionDigits? | number | Maximum fraction digits. |
-| useGrouping? | boolean | When true, use grouping separators. |
+| minimumFractionDigits? | <code>number</code> | Minimum fraction digits. |
+| maximumFractionDigits? | <code>number</code> | Maximum fraction digits. |
+| useGrouping? | <code>boolean</code> | When true, use grouping separators. |
 
 <div class="smt-member-anchors">
 
@@ -75,8 +75,8 @@ t(key: string, params?: Record<string, string | number>): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Translation key. |
-| params? | `Record`\<`string`, `string` &#124; `number`\> | Placeholder values for the key template. |
+| key | `string` | `string` Translation key. |
+| params? | `Record`\<`string`, `string` &#124; `number`\> | `Record`\<`string`, `string` &#124; `number`\> Placeholder values for the key template. |
 
 <div class="smt-member-anchors">
 
@@ -114,8 +114,8 @@ register(locale: Locale, translations: Record<string, string>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| locale | [`Locale`](?id=locale) | Locale code (e.g. `en`). |
-| translations | `Record`\<`string`, `string`\> | Map of keys to translated strings. |
+| locale | <code>[`Locale`](?id=locale)</code> | [`Locale`](?id=locale) Locale code (e.g. `en`). |
+| translations | `Record`\<`string`, `string`\> | `Record`\<`string`, `string`\> Map of keys to translated strings. |
 
 <div class="smt-member-anchors">
 
@@ -173,8 +173,8 @@ hasTranslation(key: string, locale?: Locale): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Translation key. |
-| locale? | [`Locale`](?id=locale) | Optional locale; defaults to the active locale. |
+| key | `string` | `string` Translation key. |
+| locale? | <code>[`Locale`](?id=locale)</code> | [`Locale`](?id=locale) Optional locale; defaults to the active locale. |
 
 <div class="smt-member-anchors">
 
@@ -204,7 +204,7 @@ setLocale(locale: Locale): Promise<void>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| locale | [`Locale`](?id=locale) | Locale code to activate. |
+| locale | <code>[`Locale`](?id=locale)</code> | [`Locale`](?id=locale) Locale code to activate. |
 
 <div class="smt-member-anchors">
 
@@ -274,8 +274,8 @@ formatNumber(value: number, options?: I18nNumberFormatOptions): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| value | `number` | Number to format. |
-| options? | [`I18nNumberFormatOptions`](?id=i18nnumberformatoptions) | Intl-style number format options. |
+| value | `number` | `number` Number to format. |
+| options? | <code>[`I18nNumberFormatOptions`](?id=i18nnumberformatoptions)</code> | [`I18nNumberFormatOptions`](?id=i18nnumberformatoptions) Intl-style number format options. |
 
 <div class="smt-member-anchors">
 
@@ -313,7 +313,7 @@ joinKey(...parts: string[]): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| parts | ...`string`[] | Key segments joined with `.`. |
+| parts | <code>...`string`[]</code> | ...`string`[] Key segments joined with `.`. |
 
 <div class="smt-member-anchors">
 
@@ -341,7 +341,7 @@ key(...parts: string[]): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| parts | ...`string`[] |  |
+| parts | <code>...`string`[]</code> | ...`string`[] |
 
 <div class="smt-member-anchors">
 
@@ -376,7 +376,7 @@ getName(definition: object): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | Object with `nameKey` or `name`. |  |
+| definition | <code>Object with `nameKey` or `name`.</code> | Object with `nameKey` or `name`. |
 
 <div class="smt-member-anchors">
 
@@ -413,7 +413,7 @@ getDescription(definition: object): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | Object with `descriptionKey` or `description`. |  |
+| definition | <code>Object with `descriptionKey` or `description`.</code> | Object with `descriptionKey` or `description`. |
 
 <div class="smt-member-anchors">
 
@@ -441,8 +441,8 @@ createTranslatable(key: string, fallback: string): object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Translation key. |
-| fallback | `string` | Text used when no translation is registered. |
+| key | `string` | `string` Translation key. |
+| fallback | `string` | `string` Text used when no translation is registered. |
 
 <div class="smt-member-anchors">
 
@@ -474,8 +474,8 @@ translatable(key: string, fallback: string): object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` |  |
-| fallback | `string` |  |
+| key | `string` | `string` |
+| fallback | `string` | `string` |
 
 <div class="smt-member-anchors">
 
@@ -514,8 +514,8 @@ setGlobal(key: string, value: string | (() => string)): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Global helper key. |
-| value | `string` &#124; (() => `string`) | Static string or function that returns the current value. |
+| key | `string` | `string` Global helper key. |
+| value | `string` &#124; (() => `string`) | `string` &#124; (() => `string`) Static string or function that returns the current value. |
 
 <div class="smt-member-anchors">
 
@@ -545,7 +545,7 @@ getGlobal(key: string): string | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Global helper key. |
+| key | `string` | `string` Global helper key. |
 
 <div class="smt-member-anchors">
 
@@ -555,7 +555,7 @@ getGlobal(key: string): string | undefined
 
 Returns a global translation helper value.
 
-`string` &#124; `undefined`
+`string` \| `undefined`
 
 </div>
 
@@ -575,7 +575,7 @@ removeGlobal(key: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Global helper key. |
+| key | `string` | `string` Global helper key. |
 
 <div class="smt-member-anchors">
 
@@ -603,7 +603,7 @@ clearGlobal(key: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` |  |
+| key | `string` | `string` |
 
 <div class="smt-member-anchors">
 
@@ -658,7 +658,7 @@ formatKeyForDisplay(keyCode: string): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| keyCode | `string` | Keyboard key code or binding name. |
+| keyCode | `string` | `string` Keyboard key code or binding name. |
 
 <div class="smt-member-anchors">
 

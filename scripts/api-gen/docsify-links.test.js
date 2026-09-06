@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   collectHeadingIds,
+  fixSandkitNamespaceLinks,
   qualifyDocsifyPageLinks,
   resolveDocsifyTarget,
   rewriteDocsifyHref,
@@ -26,6 +27,15 @@ test("rewriteMarkdownLinks rewrites in-page TypeDoc hashes", () => {
   assert.equal(
     rewriteMarkdownLinks(src),
     "Options for [start](?id=start) and [Vector2](api/shared.player.md?id=vector2).",
+  );
+});
+
+test("fixSandkitNamespaceLinks rewrites TypeDoc sandkit cross-links", () => {
+  const src =
+    "See [sandkit.api](api/sandkit.md?id=api-1), [sandkit.engine](?id=engine-1), and [sandkit.enums](?id=enums-1).";
+  assert.equal(
+    fixSandkitNamespaceLinks(src),
+    "See [sandkit.api](api/sandkit.api.md), [sandkit.engine](api/sandkit.engine.md), and [sandkit.enums](api/sandkit.enums.md).",
   );
 });
 

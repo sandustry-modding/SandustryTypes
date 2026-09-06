@@ -123,6 +123,54 @@ When true, skip the intro sequence.
   assert.match(out, /When true, skip the intro sequence/);
 });
 
+test("restyleApiCards keeps colon hook ids as one Args cell", () => {
+  const src = `# sandkit.api.hooks
+
+## Interfaces <!-- {docsify-ignore} -->
+
+### InterceptHookMap :id=intercepthookmap
+
+#### Properties
+
+##### item:use
+
+\`\`\`ts
+item:use: {
+    itemId: string;
+    useId: string;
+}
+\`\`\`
+
+###### Properties
+
+###### itemId
+
+\`\`\`ts
+itemId: string
+\`\`\`
+
+###### useId
+
+\`\`\`ts
+useId: string
+\`\`\`
+
+##### ~~teleport:effect~~
+
+\`\`\`ts
+teleport:effect: Record<string, unknown>
+\`\`\`
+`;
+  const out = restyleApiCards(src, "sandkit.api.hooks");
+  assert.match(out, /\| Hook \| Args \| Notes \|/);
+  assert.match(out, /`item:use`/);
+  assert.match(out, /itemId: string/);
+  assert.match(out, /useId: string/);
+  assert.doesNotMatch(out, /use: object/);
+  assert.match(out, /Deprecated alias/);
+  assert.doesNotMatch(out, /Deprecated: Use/);
+});
+
 test("restyleApiCards table cells use HTML pipe for union types", () => {
   const src = `# sandkit.api.player
 

@@ -14,8 +14,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elements | GridMutationWriterElements | Element cell mutations inside a [mutate](?id=mutate) callback. |
-| terrains | GridMutationWriterTerrains | Terrain cell mutations inside a [mutate](?id=mutate) callback. |
+| elements | <code>GridMutationWriterElements</code> | Element cell mutations inside a [mutate](?id=mutate) callback. |
+| terrains | <code>GridMutationWriterTerrains</code> | Terrain cell mutations inside a [mutate](?id=mutate) callback. |
 
 <div class="smt-member-anchors">
 
@@ -35,69 +35,23 @@ Deferred element and terrain mutations passed to [mutate](?id=mutate).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L158" target="_blank" rel="noopener">grid.d.ts:158</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| createAtCell() | <code>(...args: number, number, [ElementRef, ElementCreateOptions]): void</code> | Create an element at a cell inside a [mutate](?id=mutate) callback. |
+| replaceAtCell() | <code>(...args: number, number, [ElementRef, ElementCreateOptions]): void</code> | Replace the element at a cell inside a [mutate](?id=mutate) callback. |
+| removeAtCell() | <code>(...args: number, number, [ElementRemovalOptions]): void</code> | Remove the element at a cell inside a [mutate](?id=mutate) callback. |
+
+<div class="smt-member-anchors">
+
+##### createAtCell() <!-- {docsify-ignore} -->
+
+##### replaceAtCell() <!-- {docsify-ignore} -->
+
+##### removeAtCell() <!-- {docsify-ignore} -->
+
+</div>
+
 Element writers available on [GridMutationWriter.elements](?id=elements).
-
-#### Methods
-
-##### createAtCell()
-
-```ts
-createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L168)
-
-Create an element at a cell inside a [mutate](?id=mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]
-
-###### Returns
-
-`void`
-
-##### replaceAtCell()
-
-```ts
-replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L185)
-
-Replace the element at a cell inside a [mutate](?id=mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]
-
-###### Returns
-
-`void`
-
-##### removeAtCell()
-
-```ts
-removeAtCell(...args: number, number, [ElementRemovalOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L201)
-
-Remove the element at a cell inside a [mutate](?id=mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md?id=elementremovaloptions)\]
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -107,69 +61,23 @@ Remove the element at a cell inside a [mutate](?id=mutate) callback.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L205" target="_blank" rel="noopener">grid.d.ts:205</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| createAtCell() | <code>(...args: number, number, [TerrainRef, TerrainMutationOptions]): void</code> | Create terrain at a cell inside a [mutate](?id=mutate) callback. |
+| replaceAtCell() | <code>(...args: number, number, [TerrainRef, TerrainMutationOptions]): void</code> | Replace terrain at a cell inside a [mutate](?id=mutate) callback. |
+| removeAtCell() | <code>(...args: number, number, [TerrainMutationOptions]): void</code> | Remove terrain at a cell inside a [mutate](?id=mutate) callback. |
+
+<div class="smt-member-anchors">
+
+##### createAtCell() <!-- {docsify-ignore} -->
+
+##### replaceAtCell() <!-- {docsify-ignore} -->
+
+##### removeAtCell() <!-- {docsify-ignore} -->
+
+</div>
+
 Terrain writers available on [GridMutationWriter.terrains](?id=terrains).
-
-#### Methods
-
-##### createAtCell()
-
-```ts
-createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:215](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L215)
-
-Create terrain at a cell inside a [mutate](?id=mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]
-
-###### Returns
-
-`void`
-
-##### replaceAtCell()
-
-```ts
-replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:232](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L232)
-
-Replace terrain at a cell inside a [mutate](?id=mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]
-
-###### Returns
-
-`void`
-
-##### removeAtCell()
-
-```ts
-removeAtCell(...args: number, number, [TerrainMutationOptions]): void
-```
-
-Defined in: [sandkit/api/grid.d.ts:248](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L248)
-
-Remove terrain at a cell inside a [mutate](?id=mutate) callback.
-
-###### Parameters
-
-###### args
-
-...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -181,8 +89,8 @@ Remove terrain at a cell inside a [mutate](?id=mutate) callback.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| widthCells | number | Grid width in cells. |
-| heightCells | number | Grid height in cells. |
+| widthCells | <code>number</code> | Grid width in cells. |
+| heightCells | <code>number</code> | Grid height in cells. |
 
 <div class="smt-member-anchors">
 
@@ -204,13 +112,13 @@ World grid width and height in cells.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| fromGun? | boolean | Treat the dig as gun fire for terrain resistance checks. |
-| fromRocketExplosion? | boolean | Treat the dig as rocket or dynamite explosion damage. |
-| fromDrill? | boolean | Treat the dig as drill damage. |
-| useLiteralOutVelocity? | boolean | Use outVelocity literally instead of deriving ejection speed. |
-| destroyNonDestructible? | boolean | Allow removing terrain marked non-destructible. |
-| forceRemoveAll? | boolean | Force-remove all matched cells regardless of normal rules. |
-| drillTierDamage? | number | Extra drill-tier damage when [fromDrill](?id=fromdrill) is true. Clamped to 0–1000. |
+| fromGun? | <code>boolean</code> | Treat the dig as gun fire for terrain resistance checks. |
+| fromRocketExplosion? | <code>boolean</code> | Treat the dig as rocket or dynamite explosion damage. |
+| fromDrill? | <code>boolean</code> | Treat the dig as drill damage. |
+| useLiteralOutVelocity? | <code>boolean</code> | Use outVelocity literally instead of deriving ejection speed. |
+| destroyNonDestructible? | <code>boolean</code> | Allow removing terrain marked non-destructible. |
+| forceRemoveAll? | <code>boolean</code> | Force-remove all matched cells regardless of normal rules. |
+| drillTierDamage? | <code>number</code> | Extra drill-tier damage when [fromDrill](?id=fromdrill) is true. Clamped to 0–1000. |
 
 <div class="smt-member-anchors">
 
@@ -272,7 +180,7 @@ mutate(callback: (writer: GridMutationWriter) => void): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | (`writer`: [`GridMutationWriter`](?id=gridmutationwriter)) => `void` | Receives a writer for element and terrain cell mutations. |
+| callback | <code>(`writer`: [`GridMutationWriter`](?id=gridmutationwriter)) =&gt; `void`</code> | (`writer`: [`GridMutationWriter`](?id=gridmutationwriter)) => `void` Receives a writer for element and terrain cell mutations. |
 
 <div class="smt-member-anchors">
 
@@ -326,7 +234,7 @@ revealFogAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -354,7 +262,7 @@ redrawAroundCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`\] |  |
+| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
 
 <div class="smt-member-anchors">
 
@@ -382,10 +290,10 @@ forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: numbe
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| centerCellX | `number` | Circle center cell column. |
-| centerCellY | `number` | Circle center cell row. |
-| radiusCells | `number` | Circle radius in cells. |
-| callback | (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void` | Invoked for each cell with `(cellX, cellY)`. |
+| centerCellX | `number` | `number` Circle center cell column. |
+| centerCellY | `number` | `number` Circle center cell row. |
+| radiusCells | `number` | `number` Circle radius in cells. |
+| callback | <code>(...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`</code> | (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void` Invoked for each cell with `(cellX, cellY)`. |
 
 <div class="smt-member-anchors">
 
@@ -419,7 +327,7 @@ forEachCellInRectangle(...args: number, number, number, number, (...args: [CellC
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |  |
+| args | <code>...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`\]</code> | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |
 
 <div class="smt-member-anchors">
 
@@ -447,7 +355,7 @@ forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |  |
+| args | <code>...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`\]</code> | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |
 
 <div class="smt-member-anchors">
 
@@ -482,7 +390,7 @@ getCellIdAtCell(...args: CellCoordinates): CellId
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -512,7 +420,7 @@ isCellEmptyAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -540,7 +448,7 @@ isTerrainAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -568,7 +476,7 @@ reportActivityAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -596,7 +504,7 @@ excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=excavateoptions)\] |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=excavateoptions)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=excavateoptions)\] |
 
 <div class="smt-member-anchors">
 

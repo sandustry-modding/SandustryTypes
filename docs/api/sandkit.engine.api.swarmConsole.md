@@ -4,7 +4,7 @@
 
 `sandkit.engine.api.swarmConsole` — swarm convergence console state.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -26,7 +26,7 @@ decrementConvergenceBuffer(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -54,7 +54,7 @@ getCrystalMined(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -82,7 +82,7 @@ getDiskRadiusCells(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -110,7 +110,7 @@ getEntityType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -138,7 +138,7 @@ getNearestConvergence(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -166,7 +166,7 @@ getPendingConvergence(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -194,7 +194,7 @@ getPlacedConsoles(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -222,7 +222,7 @@ getRadiusPx(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -250,7 +250,7 @@ isSpawnJammed(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -278,7 +278,7 @@ registerEntityType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -306,7 +306,7 @@ resetAllConvergenceBuffers(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -334,7 +334,7 @@ setSpawnJammed(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 

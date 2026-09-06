@@ -60,7 +60,7 @@ getProcessCount(processId: FactoryProcessId): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| processId | [`FactoryProcessId`](?id=factoryprocessid) | Built-in factory process id. |
+| processId | <code>[`FactoryProcessId`](?id=factoryprocessid)</code> | [`FactoryProcessId`](?id=factoryprocessid) Built-in factory process id. |
 
 <div class="smt-member-anchors">
 
@@ -88,7 +88,7 @@ getProcessRate(processId: FactoryProcessId): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| processId | [`FactoryProcessId`](?id=factoryprocessid) | Built-in factory process id. |
+| processId | <code>[`FactoryProcessId`](?id=factoryprocessid)</code> | [`FactoryProcessId`](?id=factoryprocessid) Built-in factory process id. |
 
 <div class="smt-member-anchors">
 

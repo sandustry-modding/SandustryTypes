@@ -4,7 +4,7 @@
 
 `sandkit.engine.api.coloringTool` — paint-bucket and flood-fill structure coloring.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.api.md) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -26,7 +26,7 @@ colorStructure(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -54,7 +54,7 @@ floodFillColor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -82,7 +82,7 @@ getColor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -110,7 +110,7 @@ isColorableStructure(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -138,7 +138,7 @@ isMatchColorMode(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -166,7 +166,7 @@ isPaintBucketMode(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -194,7 +194,7 @@ setColor(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -222,7 +222,7 @@ toggleMatchColorMode(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -250,7 +250,7 @@ togglePaintBucketMode(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 

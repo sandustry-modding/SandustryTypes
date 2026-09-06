@@ -10,8 +10,8 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elementType | ElementType | Output element type (1–255). |
-| chance | number | Output probability from 0 to 1. |
+| elementType | <code>ElementType</code> | Output element type (1–255). |
+| chance | <code>number</code> | Output probability from 0 to 1. |
 
 <div class="smt-member-anchors">
 
@@ -33,9 +33,9 @@ Weighted element output entry shared by machine recipes.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| input | ElementType | Input element type placed on the grower. |
-| output | ElementType | Output element type produced by the grower. |
-| chance? | number | Success chance from 0 to 1. Default 1. |
+| input | <code>ElementType</code> | Input element type placed on the grower. |
+| output | <code>ElementType</code> | Output element type produced by the grower. |
+| chance? | <code>number</code> | Success chance from 0 to 1. Default 1. |
 
 <div class="smt-member-anchors">
 
@@ -59,9 +59,9 @@ Planter box grower recipe definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| input | ElementType | Input element type dropped on the shaker. |
-| outputsAbove | WeightedRecipeOutput[] | Weighted outputs ejected upward. |
-| outputsBelow | WeightedRecipeOutput[] | Weighted outputs ejected downward. |
+| input | <code>ElementType</code> | Input element type dropped on the shaker. |
+| outputsAbove | <code>WeightedRecipeOutput[]</code> | Weighted outputs ejected upward. |
+| outputsBelow | <code>WeightedRecipeOutput[]</code> | Weighted outputs ejected downward. |
 
 <div class="smt-member-anchors">
 
@@ -85,9 +85,9 @@ Shaker recipe definition.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| input | ElementType | Input element type processed by the press. |
-| minimumDownwardVelocity | number | Minimum downward velocity required to trigger the press. |
-| outputs | WeightedRecipeOutput[] | Weighted outputs produced by the press. |
+| input | <code>ElementType</code> | Input element type processed by the press. |
+| minimumDownwardVelocity | <code>number</code> | Minimum downward velocity required to trigger the press. |
+| outputs | <code>WeightedRecipeOutput[]</code> | Weighted outputs produced by the press. |
 
 <div class="smt-member-anchors">
 
@@ -121,7 +121,7 @@ registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`PlanterBoxRecipeDefinitionV1`](?id=planterboxrecipedefinitionv1) | Grower input/output recipe. |
+| definition | <code>[`PlanterBoxRecipeDefinitionV1`](?id=planterboxrecipedefinitionv1)</code> | [`PlanterBoxRecipeDefinitionV1`](?id=planterboxrecipedefinitionv1) Grower input/output recipe. |
 
 <div class="smt-member-anchors">
 
@@ -149,7 +149,7 @@ registerShaker(definition: ShakerRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`ShakerRecipeDefinitionV1`](?id=shakerrecipedefinitionv1) | Shaker input and weighted outputs. |
+| definition | <code>[`ShakerRecipeDefinitionV1`](?id=shakerrecipedefinitionv1)</code> | [`ShakerRecipeDefinitionV1`](?id=shakerrecipedefinitionv1) Shaker input and weighted outputs. |
 
 <div class="smt-member-anchors">
 
@@ -177,7 +177,7 @@ registerKineticPress(definition: KineticPressRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | [`KineticPressRecipeDefinitionV1`](?id=kineticpressrecipedefinitionv1) | Press input, velocity threshold, and outputs. |
+| definition | <code>[`KineticPressRecipeDefinitionV1`](?id=kineticpressrecipedefinitionv1)</code> | [`KineticPressRecipeDefinitionV1`](?id=kineticpressrecipedefinitionv1) Press input, velocity threshold, and outputs. |
 
 <div class="smt-member-anchors">
 

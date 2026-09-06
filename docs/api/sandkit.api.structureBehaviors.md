@@ -18,8 +18,8 @@ registerConveyorType(structureId: string, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | Structure type id string. |
-| options? | Transport offset, velocity, distance, and run direction. |  |
+| structureId | `string` | `string` Structure type id string. |
+| options? | <code>Transport offset, velocity, distance, and run direction.</code> | Transport offset, velocity, distance, and run direction. |
 
 <div class="smt-member-anchors">
 
@@ -58,7 +58,7 @@ registerLauncherType(definition: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | Launcher type ids, velocities, and optional shared buffer key. |  |
+| definition | <code>Launcher type ids, velocities, and optional shared buffer key.</code> | Launcher type ids, velocities, and optional shared buffer key. |
 
 <div class="smt-member-anchors">
 

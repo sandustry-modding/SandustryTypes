@@ -20,8 +20,8 @@ ensure(key: string, config: object): SharedArray
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Buffer name shared across threads. |
-| config | Typed array kind and element count. |  |
+| key | `string` | `string` Buffer name shared across threads. |
+| config | <code>Typed array kind and element count.</code> | Typed array kind and element count. |
 
 <div class="smt-member-anchors">
 
@@ -62,8 +62,8 @@ create(key: string, config: object): SharedArray
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` |  |
-| config |  |  |
+| key | `string` | `string` |
+| config | <code>{ type: [`SharedArrayType`](api/sandkit.api.shared.md?id=sharedarraytype); length: number }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -102,7 +102,7 @@ get(key: string): SharedArray | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | Buffer name shared across threads. |
+| key | `string` | `string` Buffer name shared across threads. |
 
 <div class="smt-member-anchors">
 
@@ -112,6 +112,6 @@ get(key: string): SharedArray | undefined
 
 Look up a named shared buffer without creating it.
 
-[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) &#124; `undefined` The typed array, or `undefined` when the buffer does not exist.
+[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) \| `undefined` The typed array, or `undefined` when the buffer does not exist.
 
 </div>

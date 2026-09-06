@@ -20,7 +20,7 @@ unlockById(structureId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | Registered structure id string. |
+| structureId | `string` | `string` Registered structure id string. |
 
 <div class="smt-member-anchors">
 
@@ -48,7 +48,7 @@ unlockByType(structureId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` |  |
+| structureId | `string` | `string` |
 
 <div class="smt-member-anchors">
 
@@ -83,7 +83,7 @@ removeById(structureId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | Registered structure id string. |
+| structureId | `string` | `string` Registered structure id string. |
 
 <div class="smt-member-anchors">
 

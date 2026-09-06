@@ -20,7 +20,7 @@ setSize(size: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| size | `number` | Grab radius in cells. |
+| size | `number` | `number` Grab radius in cells. |
 
 <div class="smt-member-anchors">
 

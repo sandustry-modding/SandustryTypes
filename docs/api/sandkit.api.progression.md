@@ -10,7 +10,7 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | string | Progression step or quest identifier. |
+| id | <code>string</code> | Progression step or quest identifier. |
 
 <div class="smt-member-anchors">
 
@@ -46,7 +46,7 @@ complete(request: ProgressionCompletionRequestV1): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| request | [`ProgressionCompletionRequestV1`](?id=progressioncompletionrequestv1) | Progression id and optional metadata for the step. |
+| request | <code>[`ProgressionCompletionRequestV1`](?id=progressioncompletionrequestv1)</code> | [`ProgressionCompletionRequestV1`](?id=progressioncompletionrequestv1) Progression id and optional metadata for the step. |
 
 <div class="smt-member-anchors">
 

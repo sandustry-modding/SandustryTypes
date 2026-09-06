@@ -10,7 +10,7 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| tint? | number | Packed RGB tint applied after load. |
+| tint? | <code>number</code> | Packed RGB tint applied after load. |
 
 <div class="smt-member-anchors">
 
@@ -66,9 +66,9 @@ load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| spriteId | `string` | Id used with [getById](?id=getbyid). |
-| path | `string` | URL or asset path to load. |
-| options? | [`SpriteLoadOptions`](?id=spriteloadoptions) | Optional tint and load options. |
+| spriteId | `string` | `string` Id used with [getById](?id=getbyid). |
+| path | `string` | `string` URL or asset path to load. |
+| options? | <code>[`SpriteLoadOptions`](?id=spriteloadoptions)</code> | [`SpriteLoadOptions`](?id=spriteloadoptions) Optional tint and load options. |
 
 <div class="smt-member-anchors">
 
@@ -102,9 +102,9 @@ loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions)
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| spriteId | `string` | Id used with [getById](?id=getbyid). |
-| relativePath | `string` | Path relative to the mod folder. |
-| options? | [`SpriteLoadOptions`](?id=spriteloadoptions) | Optional tint and load options. |
+| spriteId | `string` | `string` Id used with [getById](?id=getbyid). |
+| relativePath | `string` | `string` Path relative to the mod folder. |
+| options? | <code>[`SpriteLoadOptions`](?id=spriteloadoptions)</code> | [`SpriteLoadOptions`](?id=spriteloadoptions) Optional tint and load options. |
 
 <div class="smt-member-anchors">
 
@@ -138,7 +138,7 @@ getById(spriteId: string): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| spriteId | `string` | Sprite id from [load](?id=load) or [loadFromMod](?id=loadfrommod). |
+| spriteId | `string` | `string` Sprite id from [load](?id=load) or [loadFromMod](?id=loadfrommod). |
 
 <div class="smt-member-anchors">
 
@@ -184,7 +184,7 @@ rotatePlayerModSprites(angle: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| angle | `number` | Rotation in radians. |
+| angle | `number` | `number` Rotation in radians. |
 
 <div class="smt-member-anchors">
 

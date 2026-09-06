@@ -21,7 +21,7 @@ canBuildAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -51,7 +51,7 @@ canGrabAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 
@@ -81,8 +81,8 @@ canUseTool(player: Player, isFlamethrower?: boolean): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| player | [`Player`](api/shared.player.md?id=player) | Player state snapshot. |
-| isFlamethrower? | `boolean` | When true, apply flamethrower-specific rules. |
+| player | <code>[`Player`](api/shared.player.md?id=player)</code> | [`Player`](api/shared.player.md?id=player) Player state snapshot. |
+| isFlamethrower? | `boolean` | `boolean` When true, apply flamethrower-specific rules. |
 
 <div class="smt-member-anchors">
 
@@ -114,7 +114,7 @@ canUseToolAtCell(...args: [number, number, boolean]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `boolean`\] |  |
+| args | <code>...\[`number`, `number`, `boolean`\]</code> | ...\[`number`, `number`, `boolean`\] |
 
 <div class="smt-member-anchors">
 
@@ -144,7 +144,7 @@ getZoneIdAtCell(...args: CellCoordinates): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
 
 <div class="smt-member-anchors">
 

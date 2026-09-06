@@ -8,6 +8,7 @@ These are not runtime `sandkit` properties. Import from
 JSON Schema (GitHub Pages):
 https://sandustry-modding.github.io/SandustryTypes/schemas/modinfo.json
 https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
+https://sandustry-modding.github.io/SandustryTypes/schemas/workshop.json
 
 ## See
 
@@ -23,15 +24,15 @@ https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "number" | Discriminator. Must be `"number"`. |
-| default | number | Value used when the player has not changed the setting. |
-| min? | number | Inclusive lower bound for the setting. |
-| max? | number | Inclusive upper bound for the setting. |
-| step? | number | UI step size for the number control. |
-| label? | string | Plain-text label shown in the settings UI. |
-| labelKey? | string | i18n key for the settings label (preferred over [label](?id=label) when both exist). |
-| description? | string | Plain-text help text for the setting. |
-| descriptionKey? | string | i18n key for the setting help text. |
+| type | <code>&quot;number&quot;</code> | Discriminator. Must be `"number"`. |
+| default | <code>number</code> | Value used when the player has not changed the setting. |
+| min? | <code>number</code> | Inclusive lower bound for the setting. |
+| max? | <code>number</code> | Inclusive upper bound for the setting. |
+| step? | <code>number</code> | UI step size for the number control. |
+| label? | <code>string</code> | Plain-text label shown in the settings UI. |
+| labelKey? | <code>string</code> | i18n key for the settings label (preferred over [label](?id=label) when both exist). |
+| description? | <code>string</code> | Plain-text help text for the setting. |
+| descriptionKey? | <code>string</code> | i18n key for the setting help text. |
 
 <div class="smt-member-anchors">
 
@@ -67,12 +68,12 @@ Number setting in `modinfo.json` `configSchema`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "boolean" | Discriminator. Must be `"boolean"`. |
-| default | boolean | Value used when the player has not changed the setting. |
-| label? | string | Plain-text label shown in the settings UI. |
-| labelKey? | string | i18n key for the settings label. |
-| description? | string | Plain-text help text for the setting. |
-| descriptionKey? | string | i18n key for the setting help text. |
+| type | <code>&quot;boolean&quot;</code> | Discriminator. Must be `"boolean"`. |
+| default | <code>boolean</code> | Value used when the player has not changed the setting. |
+| label? | <code>string</code> | Plain-text label shown in the settings UI. |
+| labelKey? | <code>string</code> | i18n key for the settings label. |
+| description? | <code>string</code> | Plain-text help text for the setting. |
+| descriptionKey? | <code>string</code> | i18n key for the setting help text. |
 
 <div class="smt-member-anchors">
 
@@ -102,9 +103,9 @@ Boolean setting in `modinfo.json` `configSchema`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| value | string | Stored value written when the player picks this option. |
-| label? | string | Plain-text label for the option. |
-| labelKey? | string | i18n key for the option label. |
+| value | <code>string</code> | Stored value written when the player picks this option. |
+| label? | <code>string</code> | Plain-text label for the option. |
+| labelKey? | <code>string</code> | i18n key for the option label. |
 
 <div class="smt-member-anchors">
 
@@ -128,13 +129,13 @@ One option inside a [ConfigSchemaChoice](?id=configschemachoice).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| type | "choice" | Discriminator. Must be `"choice"`. |
-| default | string | Default option [ConfigSchemaChoiceOption.value](?id=value). |
-| label? | string | Plain-text label shown in the settings UI. |
-| labelKey? | string | i18n key for the settings label. |
-| description? | string | Plain-text help text for the setting. |
-| descriptionKey? | string | i18n key for the setting help text. |
-| options | readonly ConfigSchemaChoiceOption[] | Allowed choices for this setting. |
+| type | <code>&quot;choice&quot;</code> | Discriminator. Must be `"choice"`. |
+| default | <code>string</code> | Default option [ConfigSchemaChoiceOption.value](?id=value). |
+| label? | <code>string</code> | Plain-text label shown in the settings UI. |
+| labelKey? | <code>string</code> | i18n key for the settings label. |
+| description? | <code>string</code> | Plain-text help text for the setting. |
+| descriptionKey? | <code>string</code> | i18n key for the setting help text. |
+| options | <code>readonly ConfigSchemaChoiceOption[]</code> | Allowed choices for this setting. |
 
 <div class="smt-member-anchors">
 
@@ -166,10 +167,10 @@ Choice setting in `modinfo.json` `configSchema`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| path | string | Path to the replacement image, relative to the mod root. |
-| frameWidth? | number | Width in pixels of one animation frame. |
-| frames? | number | Number of frames in the spritesheet. |
-| intervalMs? | number | Milliseconds between animation frames. |
+| path | <code>string</code> | Path to the replacement image, relative to the mod root. |
+| frameWidth? | <code>number</code> | Width in pixels of one animation frame. |
+| frames? | <code>number</code> | Number of frames in the spritesheet. |
+| intervalMs? | <code>number</code> | Milliseconds between animation frames. |
 
 <div class="smt-member-anchors">
 
@@ -195,9 +196,9 @@ Animated (or static) texture replacement for a vanilla asset id.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| kind | string | Kind of provided content (for example `"structureTextures"`). |
-| id | string | Id of this provide entry within its kind. |
-| textureOverrides? | Record<string, string> | Texture paths keyed by the vanilla or structure texture id they replace. |
+| kind | <code>string</code> | Kind of provided content (for example `"structureTextures"`). |
+| id | <code>string</code> | Id of this provide entry within its kind. |
+| textureOverrides? | <code>Record&lt;string, string&gt;</code> | Texture paths keyed by the vanilla or structure texture id they replace. |
 
 <div class="smt-member-anchors">
 
@@ -221,14 +222,14 @@ Optional content pack exposed by this mod for other mods or the game to consume.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| terrain? | string | Terrain color map image. |
-| lights? | string | Lights layout image. |
-| sensors? | string | Sensors layout image. |
-| authorization? | string | Authorization zones image. |
-| wall? | string | Wall layout image. |
-| lightsMeta? | string | Lights metadata image. |
-| decor? | string | Decor layout image. |
-| config? | string | Map config JSON path. |
+| terrain? | <code>string</code> | Terrain color map image. |
+| lights? | <code>string</code> | Lights layout image. |
+| sensors? | <code>string</code> | Sensors layout image. |
+| authorization? | <code>string</code> | Authorization zones image. |
+| wall? | <code>string</code> | Wall layout image. |
+| lightsMeta? | <code>string</code> | Lights metadata image. |
+| decor? | <code>string</code> | Decor layout image. |
+| config? | <code>string</code> | Map config JSON path. |
 
 <div class="smt-member-anchors">
 
@@ -264,8 +265,8 @@ Paths are relative to the mod root.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| x | number | World X in pixels. |
-| y | number | World Y in pixels. |
+| x | <code>number</code> | World X in pixels. |
+| y | <code>number</code> | World Y in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -287,8 +288,8 @@ World-pixel spawn or unstuck point.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| hard? | number | Hard top bound in world pixels. |
-| soft? | number | Soft top bound in world pixels. |
+| hard? | <code>number</code> | Hard top bound in world pixels. |
+| soft? | <code>number</code> | Soft top bound in world pixels. |
 
 <div class="smt-member-anchors">
 
@@ -310,10 +311,10 @@ Vertical camera / travel bounds for the custom map.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| startY? | number | World Y where depth light scaling starts. |
-| endY? | number | World Y where depth light scaling ends. |
-| maxSize? | number | Maximum light size at the shallow end of the range. |
-| minSize? | number | Minimum light size at the deep end of the range. |
+| startY? | <code>number</code> | World Y where depth light scaling starts. |
+| endY? | <code>number</code> | World Y where depth light scaling ends. |
+| maxSize? | <code>number</code> | Maximum light size at the shallow end of the range. |
+| minSize? | <code>number</code> | Minimum light size at the deep end of the range. |
 
 <div class="smt-member-anchors">
 
@@ -339,8 +340,8 @@ Depth-based light sizing for the custom map.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| widthScale? | number | Horizontal scale of the parallax layer. |
-| offsetY? | number | Vertical offset of the parallax layer in pixels. |
+| widthScale? | <code>number</code> | Horizontal scale of the parallax layer. |
+| offsetY? | <code>number</code> | Vertical offset of the parallax layer in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -362,8 +363,8 @@ Parallax background tuning for the custom map.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| background? | string | Background terrain id for this blueprint RGB. |
-| foreground? | string | Foreground terrain id for this blueprint RGB. |
+| background? | <code>string</code> | Background terrain id for this blueprint RGB. |
+| foreground? | <code>string</code> | Foreground terrain id for this blueprint RGB. |
 
 <div class="smt-member-anchors">
 
@@ -385,16 +386,16 @@ Color-map cell that paints both background and foreground terrain.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| blueprints | ModMapBlueprints | Paths to blueprint images and map config under the mod root. |
-| width | number | Map width in cells. |
-| height | number | Map height in cells. |
-| spawn? | ModMapPoint | Player spawn position in world pixels. |
-| unstuck? | ModMapPoint | Unstuck / rescue position in world pixels. |
-| deployment? | string | Deployment mode for the map (for example `"skip"`). |
-| topBounds? | ModMapTopBounds | Vertical travel bounds at the top of the world. |
-| depthLight? | ModMapDepthLight | Depth-based light size curve. |
-| parallax? | ModMapParallax | Parallax background tuning. |
-| colorMappings? | Record<string, ModMapColorMapping> | Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain. |
+| blueprints | <code>ModMapBlueprints</code> | Paths to blueprint images and map config under the mod root. |
+| width | <code>number</code> | Map width in cells. |
+| height | <code>number</code> | Map height in cells. |
+| spawn? | <code>ModMapPoint</code> | Player spawn position in world pixels. |
+| unstuck? | <code>ModMapPoint</code> | Unstuck / rescue position in world pixels. |
+| deployment? | <code>string</code> | Deployment mode for the map (for example `"skip"`). |
+| topBounds? | <code>ModMapTopBounds</code> | Vertical travel bounds at the top of the world. |
+| depthLight? | <code>ModMapDepthLight</code> | Depth-based light size curve. |
+| parallax? | <code>ModMapParallax</code> | Parallax background tuning. |
+| colorMappings? | <code>Record&lt;string, ModMapColorMapping&gt;</code> | Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain. |
 
 <div class="smt-member-anchors">
 
@@ -432,8 +433,8 @@ Custom map pack block in `modinfo.json`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| minimum? | string | Lowest supported game version string. |
-| maximum? | string | Highest supported game version string. |
+| minimum? | <code>string</code> | Lowest supported game version string. |
+| maximum? | <code>string</code> | Highest supported game version string. |
 
 <div class="smt-member-anchors">
 
@@ -455,26 +456,26 @@ Compatible game version range for the mod.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| $schema? | string | Optional JSON Schema URL for editors (for example VS Code). Not read by the game loader. |
-| manifestVersion | 1 | Manifest format version. Must be `1` for Sandkit `apiVersion` 1. |
-| id | string | Unique mod id. Prefer `author.mod-name` (matches folder / Workshop identity). |
-| name | string | Display name shown in the mod list and Workshop UI. |
-| version | string | Semver-style mod version string. |
-| apiVersion | 1 | Sandkit host API version this mod targets. Must be `1`. |
-| entry? | string | Main-thread script path relative to the mod root (for example `"main.js"`). Omit for texture-only, map-only, or config-only mods that declare another capability instead. |
-| workerEntry? | string | Simulation-worker script path relative to the mod root. Required when the mod registers worker hooks or uses worker-only APIs. |
-| patches? | string | Path to the patches file relative to the mod root (usually `"patches.json"`). When omitted, a present `patches.json` may still auto-load per official docs. |
-| description? | string | Long description shown in the mod list / Workshop. |
-| author? | string | Author display name. |
-| gameVersion? | ModGameVersion | Inclusive game version range this mod claims to support. |
-| dependencies? | string[] | Other mod ids that should load with this mod. |
-| loadOrder? | number | Relative load priority. Lower values load earlier; higher values load later. |
-| configSchema? | Record<string, ConfigSchemaEntry> | Player-facing settings schema. Keys are setting ids; values define type and UI. Read at runtime with `api.settings.get`. |
-| configOverrides? | Record<string, string> | Paths to JSON config overrides keyed by vanilla config id (for example `"drill"`). |
-| shaderOverrides? | Record<string, string> | Paths to GLSL shader replacements keyed by shader id (for example `"sky"`). |
-| textureOverrides? | Record<string, string &#124; TextureOverride> | Texture replacements keyed by vanilla texture id. A string value is a path; an object adds spritesheet frame metadata. |
-| provides? | ModProvide[] | Optional content this mod publishes for others to consume. |
-| map? | ModMapDefinition | Embedded custom map pack definition for this mod. |
+| $schema? | <code>string</code> | Optional JSON Schema URL for editors (for example VS Code). Not read by the game loader. |
+| manifestVersion | <code>1</code> | Manifest format version. Must be `1` for Sandkit `apiVersion` 1. |
+| id | <code>string</code> | Unique mod id. Prefer `author.mod-name` (matches folder / Workshop identity). |
+| name | <code>string</code> | Display name shown in the mod list and Workshop UI. |
+| version | <code>string</code> | Semver-style mod version string. |
+| apiVersion | <code>1</code> | Sandkit host API version this mod targets. Must be `1`. |
+| entry? | <code>string</code> | Main-thread script path relative to the mod root (for example `"main.js"`). Omit for texture-only, map-only, or config-only mods that declare another capability instead. |
+| workerEntry? | <code>string</code> | Simulation-worker script path relative to the mod root. Required when the mod registers worker hooks or uses worker-only APIs. |
+| patches? | <code>string</code> | Path to the patches file relative to the mod root (usually `"patches.json"`). When omitted, a present `patches.json` may still auto-load per official docs. |
+| description? | <code>string</code> | Long description shown in the mod list / Workshop. |
+| author? | <code>string</code> | Author display name. |
+| gameVersion? | <code>ModGameVersion</code> | Inclusive game version range this mod claims to support. |
+| dependencies? | <code>string[]</code> | Other mod ids that should load with this mod. |
+| loadOrder? | <code>number</code> | Relative load priority. Lower values load earlier; higher values load later. |
+| configSchema? | <code>Record&lt;string, ConfigSchemaEntry&gt;</code> | Player-facing settings schema. Keys are setting ids; values define type and UI. Read at runtime with `api.settings.get`. |
+| configOverrides? | <code>Record&lt;string, string&gt;</code> | Paths to JSON config overrides keyed by vanilla config id (for example `"drill"`). |
+| shaderOverrides? | <code>Record&lt;string, string&gt;</code> | Paths to GLSL shader replacements keyed by shader id (for example `"sky"`). |
+| textureOverrides? | <code>Record&lt;string, string &#124; TextureOverride&gt;</code> | Texture replacements keyed by vanilla texture id. A string value is a path; an object adds spritesheet frame metadata. |
+| provides? | <code>ModProvide[]</code> | Optional content this mod publishes for others to consume. |
+| map? | <code>ModMapDefinition</code> | Embedded custom map pack definition for this mod. |
 
 <div class="smt-member-anchors">
 
@@ -540,8 +541,8 @@ At least one capability is required: [entry](?id=entry), [workerEntry](?id=worke
 
 | Property | Type | Description |
 | --- | --- | --- |
-| pattern | string | JavaScript regex pattern source (without surrounding `/` delimiters). Capture groups may be referenced from [BundlePatch.code](?id=code) as `$1`, `$2`, … |
-| flags? | string | Optional regex flags (for example `"g"` or `"m"`). |
+| pattern | <code>string</code> | JavaScript regex pattern source (without surrounding `/` delimiters). Capture groups may be referenced from [BundlePatch.code](?id=code) as `$1`, `$2`, … |
+| flags? | <code>string</code> | Optional regex flags (for example `"g"` or `"m"`). |
 
 <div class="smt-member-anchors">
 
@@ -563,19 +564,19 @@ Regex finder when the target is not a plain [BundlePatch.find](?id=find) string.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| file | PatchTargetFile | Compiled bundle to modify. |
-| find? | string | Exact source substring to locate in the bundle. Mutually exclusive with [regex](?id=regex) in typical patches. |
-| code? | string | Replacement or inserted source text. Official examples use `code`; some loaders also accept [replace](?id=replace). |
-| replace? | string | Alias of [code](?id=code) used by some patch loaders and workshop mods. |
-| operation? | PatchOperation | How to apply the match. Defaults to replace-style behaviour when omitted in common workshop patches. |
-| expectedMatches? | number &#124; "any" | How many times `find` / `regex` must match. Use a number (often `1`) so the load fails on miss or over-match. Some loaders accept `"any"`. |
-| regex? | BundlePatchRegex | Regex-based locator instead of a literal [find](?id=find) string. |
-| before? | string | Text inserted before the match when [operation](?id=operation) is `"wrap"`. |
-| after? | string | Text inserted after the match when [operation](?id=operation) is `"wrap"`. |
-| id? | string | Optional stable id for logging and tooling. |
-| atomicGroup? | string | Group id shared by patches that must all succeed or all fail together. Use the same string on paired main (`js/bundle.js`) and worker (`js/simulation-worker.js`) patches. |
-| occurrence? | number &#124; "all" | Which match to rewrite when `find` / `regex` hits more than once. `"all"` (default when omitted in the loader) or a 1-based index. Must not exceed [expectedMatches](?id=expectedmatches) when both are numbers. |
-| description? | string | Human-readable note for maintainers. Not required by the official schema. |
+| file | <code>PatchTargetFile</code> | Compiled bundle to modify. |
+| find? | <code>string</code> | Exact source substring to locate in the bundle. Mutually exclusive with [regex](?id=regex) in typical patches. |
+| code? | <code>string</code> | Replacement or inserted source text. Official examples use `code`; some loaders also accept [replace](?id=replace). |
+| replace? | <code>string</code> | Alias of [code](?id=code) used by some patch loaders and workshop mods. |
+| operation? | <code>PatchOperation</code> | How to apply the match. Defaults to replace-style behaviour when omitted in common workshop patches. |
+| expectedMatches? | <code>number &#124; &quot;any&quot;</code> | How many times `find` / `regex` must match. Use a number (often `1`) so the load fails on miss or over-match. Some loaders accept `"any"`. |
+| regex? | <code>BundlePatchRegex</code> | Regex-based locator instead of a literal [find](?id=find) string. |
+| before? | <code>string</code> | Text inserted before the match when [operation](?id=operation) is `"wrap"`. |
+| after? | <code>string</code> | Text inserted after the match when [operation](?id=operation) is `"wrap"`. |
+| id? | <code>string</code> | Optional stable id for logging and tooling. |
+| atomicGroup? | <code>string</code> | Group id shared by patches that must all succeed or all fail together. Use the same string on paired main (`js/bundle.js`) and worker (`js/simulation-worker.js`) patches. |
+| occurrence? | <code>number &#124; &quot;all&quot;</code> | Which match to rewrite when `find` / `regex` hits more than once. `"all"` (default when omitted in the loader) or a 1-based index. Must not exceed [expectedMatches](?id=expectedmatches) when both are numbers. |
+| description? | <code>string</code> | Human-readable note for maintainers. Not required by the official schema. |
 
 <div class="smt-member-anchors">
 
@@ -656,8 +657,8 @@ or duplicated match fails loudly. When several patches must succeed together
 
 | Property | Type | Description |
 | --- | --- | --- |
-| $schema? | string | Optional JSON Schema URL for editors (for example VS Code). Not read by the game loader. |
-| patches | BundlePatch[] | Ordered patch list (same as the bare-array game format). |
+| $schema? | <code>string</code> | Optional JSON Schema URL for editors (for example VS Code). Not read by the game loader. |
+| patches | <code>BundlePatch[]</code> | Ordered patch list (same as the bare-array game format). |
 
 <div class="smt-member-anchors">
 
@@ -682,8 +683,8 @@ shipped mods. Use this object shape only when your editor needs inline `$schema`
 
 | Property | Type | Description |
 | --- | --- | --- |
-| schemaVersion | 1 | File format version. Must be `1`. |
-| publishedFileId | string | Steam Workshop published file id. Managed by the publisher. |
+| schemaVersion | <code>1</code> | File format version. Must be `1`. |
+| publishedFileId | <code>string</code> | Steam Workshop published file id. Managed by the publisher. |
 
 <div class="smt-member-anchors">
 

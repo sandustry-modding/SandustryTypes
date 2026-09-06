@@ -14,11 +14,11 @@ Available as `sandkit.api.entities`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | number |  |
-| x | number |  |
-| y | number |  |
-| targetX? | number |  |
-| targetY? | number |  |
+| id | <code>number</code> |  |
+| x | <code>number</code> |  |
+| y | <code>number</code> |  |
+| targetX? | <code>number</code> |  |
+| targetY? | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -62,7 +62,7 @@ getById(entityId: number): Entity | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | Runtime entity id. |
+| entityId | `number` | `number` Runtime entity id. |
 
 <div class="smt-member-anchors">
 
@@ -72,7 +72,7 @@ getById(entityId: number): Entity | undefined
 
 Return one live entity by runtime id.
 
-[`Entity`](?id=entity) &#124; `undefined`
+[`Entity`](?id=entity) \| `undefined`
 
 </div>
 
@@ -92,7 +92,7 @@ getAllByType(entityTypeId: string): Entity[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityTypeId | `string` | Registered entity type string id. |
+| entityTypeId | `string` | `string` Registered entity type string id. |
 
 <div class="smt-member-anchors">
 
@@ -122,9 +122,9 @@ spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityTypeId | `string` | Registered entity type string id. |
-| worldX | `number` | Spawn x position in world pixels. |
-| worldY | `number` | Spawn y position in world pixels. |
+| entityTypeId | `string` | `string` Registered entity type string id. |
+| worldX | `number` | `number` Spawn x position in world pixels. |
+| worldY | `number` | `number` Spawn y position in world pixels. |
 
 <div class="smt-member-anchors">
 
@@ -158,7 +158,7 @@ remove(entityId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | Runtime entity id. |
+| entityId | `number` | `number` Runtime entity id. |
 
 <div class="smt-member-anchors">
 
@@ -186,9 +186,9 @@ launch(entityId: number, angleRadians: number, speed?: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | Runtime entity id. |
-| angleRadians | `number` | Launch angle in radians. |
-| speed? | `number` | Optional launch speed. |
+| entityId | `number` | `number` Runtime entity id. |
+| angleRadians | `number` | `number` Launch angle in radians. |
+| speed? | `number` | `number` Optional launch speed. |
 
 <div class="smt-member-anchors">
 
@@ -220,7 +220,7 @@ startCapture(entityId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | Runtime entity id. |
+| entityId | `number` | `number` Runtime entity id. |
 
 <div class="smt-member-anchors">
 
@@ -248,7 +248,7 @@ collect(entityId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | Runtime entity id. |
+| entityId | `number` | `number` Runtime entity id. |
 
 <div class="smt-member-anchors">
 

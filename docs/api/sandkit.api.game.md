@@ -14,7 +14,7 @@ Available as `sandkit.api.game`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| skipIntro? | boolean | When true, skip the intro sequence. |
+| skipIntro? | <code>boolean</code> | When true, skip the intro sequence. |
 
 <div class="smt-member-anchors">
 
@@ -44,7 +44,7 @@ start(options?: GameStartOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options? | [`GameStartOptions`](?id=gamestartoptions) | Optional session start flags. |
+| options? | <code>[`GameStartOptions`](?id=gamestartoptions)</code> | [`GameStartOptions`](?id=gamestartoptions) Optional session start flags. |
 
 <div class="smt-member-anchors">
 

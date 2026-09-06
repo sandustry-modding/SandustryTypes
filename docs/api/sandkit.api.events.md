@@ -13,9 +13,9 @@ Main thread only. The `events` object is frozen; do not replace `on` or `emit`.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| phaseThroughTerrain | boolean | When true, terrain collision is skipped this sub-step. |
-| phaseThroughStructures | boolean | When true, structure collision is skipped this sub-step. |
-| maxStepCells | number | Max cells the player can step up when blocked horizontally (1–8). |
+| phaseThroughTerrain | <code>boolean</code> | When true, terrain collision is skipped this sub-step. |
+| phaseThroughStructures | <code>boolean</code> | When true, structure collision is skipped this sub-step. |
+| maxStepCells | <code>number</code> | Max cells the player can step up when blocked horizontally (1–8). |
 
 <div class="smt-member-anchors">
 
@@ -38,32 +38,32 @@ Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L185" target="_blank" rel="noopener">events.d.ts:185</a></p>
 
-| Property | Type | Description |
+| Hook | Args | Notes |
 | --- | --- | --- |
-| item:used | used: object |  |
-| frame:render | render: Record<string, unknown> |  |
-| scene:game:started | game:started: Record<string, unknown> |  |
-| ~~scene:started:game~~ | started:game: Record<string, unknown> |  |
-| earlyAccess:completed | completed: Record<string, unknown> |  |
-| ~~earlyAccess:complete~~ | complete: Record<string, unknown> |  |
-| terrain:destroyed | destroyed: object |  |
-| fog:cellRevealed | cellRevealed: object |  |
-| upgrade:levelSelected | levelSelected: object |  |
-| building:placed | placed: object |  |
-| building:removing | removing: object | Fires before `building:removed`. |
-| building:removed | removed: object |  |
-| structures:placed | placed: object |  |
-| structures:removed | removed: object |  |
-| structures:moved | moved: object |  |
-| game:ready | ready: Record<string, unknown> |  |
-| game:started | started: Record<string, unknown> |  |
-| tutorial:stepChanged | stepChanged: object |  |
-| tutorial:completed | completed: object |  |
-| tech:unlocked | unlocked: object |  |
-| worldItem:pickedUp | pickedUp: object |  |
-| resource:collected | collected: object |  |
-| player:collision:prepare | collision:prepare: PlayerCollisionPreparePayload |  |
-| player:moved | moved: object |  |
+| `item:used` | <code>{ itemId: string; useId: string; kind: string; cellX: number; cellY: number; prepared: Readonly&lt;Record&lt;string, unknown&gt;&gt; }</code> |  |
+| `frame:render` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `scene:game:started` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`scene:started:game`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `earlyAccess:completed` | <code>Record&lt;string, unknown&gt;</code> |  |
+| ~~`earlyAccess:complete`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+| `terrain:destroyed` | <code>{ cellX: number; cellY: number; cellType: number; x: number; y: number }</code> |  |
+| `fog:cellRevealed` | <code>{ cellX: number; cellY: number; x: number; y: number }</code> |  |
+| `upgrade:levelSelected` | <code>{ itemId: string; upgradeId: string; level: number }</code> |  |
+| `building:placed` | <code>{ structure: Record&lt;string, unknown&gt;; x: number; y: number; isBatch: boolean; isCopied: boolean }</code> |  |
+| `building:removing` | <code>{ structureId: string; x: number; y: number; byMove: boolean }</code> | Fires before `building:removed`. |
+| `building:removed` | <code>{ structureId: string; x: number; y: number; isBatch: boolean }</code> |  |
+| `structures:placed` | <code>{ structures: unknown[] }</code> |  |
+| `structures:removed` | <code>{ removed: unknown[]; structures: unknown[]; byMove: boolean }</code> |  |
+| `structures:moved` | <code>{ moved: unknown[]; failedToPlace: unknown[] }</code> |  |
+| `game:ready` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `game:started` | <code>Record&lt;string, unknown&gt;</code> |  |
+| `tutorial:stepChanged` | <code>{ step: unknown }</code> |  |
+| `tutorial:completed` | <code>{ skipped: boolean }</code> |  |
+| `tech:unlocked` | <code>{ techId: string; suppressMusic: boolean }</code> |  |
+| `worldItem:pickedUp` | <code>{ worldItemId: number; type: string }</code> |  |
+| `resource:collected` | <code>{ resourceId: string; amount: number; sourceKind: string; cellX: number; cellY: number }</code> |  |
+| `player:collision:prepare` | <code>PlayerCollisionPreparePayload</code> |  |
+| `player:moved` | <code>{ dt: number; state: unknown }</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -157,12 +157,6 @@ sandkit.api.events.EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPa
 
 Event payload type for a given event id.
 
-#### Type Parameters
-
-##### K
-
-`K`
-
 </div>
 
 ## Functions <!-- {docsify-ignore} -->
@@ -183,8 +177,8 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| eventId | `K` | Registered event name. |
-| callback | (`payload`: [`EventPayload`](?id=eventpayload)\<`K`\>) => `void` | Called when the event is emitted. |
+| eventId | `K` | `K` Registered event name. |
+| callback | <code>(`payload`: [`EventPayload`](?id=eventpayload)\&lt;`K`\&gt;) =&gt; `void`</code> | (`payload`: [`EventPayload`](?id=eventpayload)\<`K`\>) => `void` Called when the event is emitted. |
 
 <div class="smt-member-anchors">
 
@@ -195,10 +189,6 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 </div>
 
 Subscribes to an event. Returns an unsubscribe function.
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`EventId`](?id=eventid)
 
@@ -386,8 +376,8 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| eventId | `K` | Registered event name. |
-| payload | [`EventPayload`](?id=eventpayload)\<`K`\> | Serializable payload passed to listeners. |
+| eventId | `K` | `K` Registered event name. |
+| payload | <code>[`EventPayload`](?id=eventpayload)\&lt;`K`\&gt;</code> | [`EventPayload`](?id=eventpayload)\<`K`\> Serializable payload passed to listeners. |
 
 <div class="smt-member-anchors">
 
@@ -398,10 +388,6 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 </div>
 
 Emits an event with a payload to all subscribers.
-
-#### Type Parameters
-
-##### K
 
 `K` *extends* [`EventId`](?id=eventid)
 

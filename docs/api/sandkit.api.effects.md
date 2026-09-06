@@ -13,10 +13,10 @@ Main thread only. Temporary lights live under [lights.temporary](api/sandkit.api
 
 | Property | Type | Description |
 | --- | --- | --- |
-| width? | number | Beam width in pixels. |
-| brightness? | number | Beam brightness multiplier. |
-| color? | number | Beam color as a packed integer. |
-| glow? | boolean | When true, draws a glow around the beam. |
+| width? | <code>number</code> | Beam width in pixels. |
+| brightness? | <code>number</code> | Beam brightness multiplier. |
+| color? | <code>number</code> | Beam color as a packed integer. |
+| glow? | <code>boolean</code> | When true, draws a glow around the beam. |
 
 <div class="smt-member-anchors">
 
@@ -40,23 +40,17 @@ Options for laser beam effects.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L127" target="_blank" rel="noopener">effects.d.ts:127</a></p>
 
+| Method | Signature | Description |
+| --- | --- | --- |
+| destroy() | <code>(): void</code> | Removes the laser from the scene. |
+
+<div class="smt-member-anchors">
+
+##### destroy() <!-- {docsify-ignore} -->
+
+</div>
+
 Handle returned by createLaserAtWorld.
-
-#### Methods
-
-##### destroy()
-
-```ts
-destroy(): void
-```
-
-Defined in: [sandkit/api/effects.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L129)
-
-Removes the laser from the scene.
-
-###### Returns
-
-`void`
 
 </div>
 
@@ -68,11 +62,11 @@ Removes the laser from the scene.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| style? | "implode" &#124; "explode" | Distortion style: implode or explode. |
-| duration? | number | Effect duration in seconds. |
-| maxRadius? | number | Maximum radius of the wave. |
-| intensity? | number | Visual intensity of the distortion. |
-| color? | [number, number, number, number] | RGBA color components for the effect. |
+| style? | <code>&quot;implode&quot; &#124; &quot;explode&quot;</code> | Distortion style: implode or explode. |
+| duration? | <code>number</code> | Effect duration in seconds. |
+| maxRadius? | <code>number</code> | Maximum radius of the wave. |
+| intensity? | <code>number</code> | Visual intensity of the distortion. |
+| color? | <code>[number, number, number, number]</code> | RGBA color components for the effect. |
 
 <div class="smt-member-anchors">
 
@@ -100,9 +94,9 @@ Options for distortion wave effects.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| duration? | number |  |
-| maxRadius? | number |  |
-| intensity? | number |  |
+| duration? | <code>number</code> |  |
+| maxRadius? | <code>number</code> |  |
+| intensity? | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -126,18 +120,18 @@ Generic duration and radius options for world effects.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| brightness? | number |  |
-| duration? | number |  |
-| durationMs? | number |  |
-| size? | number |  |
-| color? | [number, number, number, number] |  |
-| decay | number | Light decay rate after spawn. |
-| unclamped? | boolean |  |
-| skipDedup? | boolean |  |
-| useLightZones? | boolean |  |
-| noopIfFull? | boolean |  |
-| priority? | number |  |
-| dedupKey | string | Dedupe key when the light pool is full or dedup is enabled. |
+| brightness? | <code>number</code> |  |
+| duration? | <code>number</code> |  |
+| durationMs? | <code>number</code> |  |
+| size? | <code>number</code> |  |
+| color? | <code>[number, number, number, number]</code> |  |
+| decay | <code>number</code> | Light decay rate after spawn. |
+| unclamped? | <code>boolean</code> |  |
+| skipDedup? | <code>boolean</code> |  |
+| useLightZones? | <code>boolean</code> |  |
+| noopIfFull? | <code>boolean</code> |  |
+| priority? | <code>number</code> |  |
+| dedupKey | <code>string</code> | Dedupe key when the light pool is full or dedup is enabled. |
 
 <div class="smt-member-anchors">
 
@@ -179,21 +173,21 @@ Options for [createLightAtWorld](?id=createlightatworld).
 
 | Property | Type | Description |
 | --- | --- | --- |
-| count? | number |  |
-| velocity? | Vector2 |  |
-| minSpeed? | number |  |
-| maxSpeed? | number |  |
-| color? | number | Hex code. No alpha. |
-| minSize? | number |  |
-| maxSize? | number |  |
-| minLifetime? | number |  |
-| maxLifetime? | number |  |
-| background? | boolean |  |
-| imageName? | string |  |
-| fadeOutOnly? | boolean |  |
-| fadeStart? | number |  |
-| fadeEnd? | number |  |
-| damp? | number |  |
+| count? | <code>number</code> |  |
+| velocity? | <code>Vector2</code> |  |
+| minSpeed? | <code>number</code> |  |
+| maxSpeed? | <code>number</code> |  |
+| color? | <code>number</code> | Hex code. No alpha. |
+| minSize? | <code>number</code> |  |
+| maxSize? | <code>number</code> |  |
+| minLifetime? | <code>number</code> |  |
+| maxLifetime? | <code>number</code> |  |
+| background? | <code>boolean</code> |  |
+| imageName? | <code>string</code> |  |
+| fadeOutOnly? | <code>boolean</code> |  |
+| fadeStart? | <code>number</code> |  |
+| fadeEnd? | <code>number</code> |  |
+| damp? | <code>number</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -251,10 +245,10 @@ createAtWorld(effectId: string, worldX: number, worldY: number, options?: Effect
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| effectId | `string` | Registered effect id (for example `heatWave`). |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| options? | [`EffectOptions`](?id=effectoptions) | Duration, radius, and intensity settings. |
+| effectId | `string` | `string` Registered effect id (for example `heatWave`). |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| options? | <code>[`EffectOptions`](?id=effectoptions)</code> | [`EffectOptions`](?id=effectoptions) Duration, radius, and intensity settings. |
 
 <div class="smt-member-anchors">
 
@@ -288,10 +282,10 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| effectId | `string` |  |
-| worldX | `number` |  |
-| worldY | `number` |  |
-| options? | [`EffectOptions`](?id=effectoptions) |  |
+| effectId | `string` | `string` |
+| worldX | `number` | `number` |
+| worldY | `number` | `number` |
+| options? | <code>[`EffectOptions`](?id=effectoptions)</code> | [`EffectOptions`](?id=effectoptions) |
 
 <div class="smt-member-anchors">
 
@@ -332,9 +326,9 @@ createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptio
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` |  |
-| worldY | `number` |  |
-| options? | [`TemporaryLightOptions`](?id=temporarylightoptions) |  |
+| worldX | `number` | `number` |
+| worldY | `number` | `number` |
+| options? | <code>[`TemporaryLightOptions`](?id=temporarylightoptions)</code> | [`TemporaryLightOptions`](?id=temporarylightoptions) |
 
 <div class="smt-member-anchors">
 
@@ -375,9 +369,9 @@ createDistortionWaveAtWorld(worldX: number, worldY: number, options?: Distortion
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World X coordinate in pixels. |
-| worldY | `number` | World Y coordinate in pixels. |
-| options? | [`DistortionEffectOptions`](?id=distortioneffectoptions) | Style, duration, radius, intensity, and color. |
+| worldX | `number` | `number` World X coordinate in pixels. |
+| worldY | `number` | `number` World Y coordinate in pixels. |
+| options? | <code>[`DistortionEffectOptions`](?id=distortioneffectoptions)</code> | [`DistortionEffectOptions`](?id=distortioneffectoptions) Style, duration, radius, intensity, and color. |
 
 <div class="smt-member-anchors">
 
@@ -417,11 +411,11 @@ createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startWorldX | `number` | Beam start world X in pixels. |
-| startWorldY | `number` | Beam start world Y in pixels. |
-| endWorldX | `number` | Beam end world X in pixels. |
-| endWorldY | `number` | Beam end world Y in pixels. |
-| options? | [`LaserEffectOptions`](?id=lasereffectoptions) | Width, brightness, color, and glow options. |
+| startWorldX | `number` | `number` Beam start world X in pixels. |
+| startWorldY | `number` | `number` Beam start world Y in pixels. |
+| endWorldX | `number` | `number` Beam end world X in pixels. |
+| endWorldY | `number` | `number` Beam end world Y in pixels. |
+| options? | <code>[`LaserEffectOptions`](?id=lasereffectoptions)</code> | [`LaserEffectOptions`](?id=lasereffectoptions) Width, brightness, color, and glow options. |
 
 <div class="smt-member-anchors">
 
@@ -459,7 +453,7 @@ removeLightById(lightId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| lightId | `number` |  |
+| lightId | `number` | `number` |
 
 <div class="smt-member-anchors">
 
@@ -494,9 +488,9 @@ createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectO
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | World x position in pixels. |
-| worldY | `number` | World y position in pixels. |
-| options? | [`ParticleEffectOptions`](?id=particleeffectoptions) | Count, velocity, colour, and lifetime settings. |
+| worldX | `number` | `number` World x position in pixels. |
+| worldY | `number` | `number` World y position in pixels. |
+| options? | <code>[`ParticleEffectOptions`](?id=particleeffectoptions)</code> | [`ParticleEffectOptions`](?id=particleeffectoptions) Count, velocity, colour, and lifetime settings. |
 
 <div class="smt-member-anchors">
 

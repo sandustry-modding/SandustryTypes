@@ -10,8 +10,8 @@
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | number | Runtime asset id. |
-| type | number | Asset category discriminator used by the renderer. |
+| id | <code>number</code> | Runtime asset id. |
+| type | <code>number</code> | Asset category discriminator used by the renderer. |
 
 <div class="smt-member-anchors">
 
