@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+
+- Docs sidebar groups Electron (overview + API) and mod files (TypeScript types + JSON Schema) instead of listing `electron-bridge`, `configs`, and `electron` as separate top-level items
+
 ## 0.6.0 - 2026-09-06
 
 https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.6.0

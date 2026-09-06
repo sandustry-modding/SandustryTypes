@@ -248,12 +248,20 @@ Worker-thread namespaces. Same names as main where they overlap; pages use a `.w
 - [nominal](api/shared.nominal.md)
 - [player](api/shared.player.md)
 
-## Mod file schemas
+## Electron
 
-Not runtime `sandkit` objects. Import from `@sandustry-modding/types/configs`.
+Host preload bridge (`window.electron`).
+Not part of `sandkit`.
 
-- [configs](api/configs.md) — `modinfo.json` and `patches.json` TypeScript types
-- [electron](api/electron.md) — renderer preload bridge (`window.electron`)
+- [Overview](electron-bridge.md) — when to use the bridge and IPC patterns
+- [API](api/electron.md) — generated `electron` reference
+
+## Mod files
+
+Not runtime `sandkit` objects.
+Import from `@sandustry-modding/types/configs`.
+
+- [TypeScript types](api/configs.md) — `modinfo.json`, `patches.json`, and `workshop.json`
 - [JSON Schema](schemas.md) — raw schema URLs for editors
 
 </div>

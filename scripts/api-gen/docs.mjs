@@ -415,12 +415,20 @@ function writeModuleIndex(docsDir, linkMap, mainNs, workerNs, engineNs) {
     `- [nominal](${p("shared.nominal")})`,
     `- [player](${p("shared.player")})`,
     "",
-    "## Mod file schemas",
+    "## Electron",
     "",
-    "Not runtime `sandkit` objects. Import from `@sandustry-modding/types/configs`.",
+    "Host preload bridge (`window.electron`).",
+    "Not part of `sandkit`.",
     "",
-    `- [configs](${p("configs")}) — \`modinfo.json\` and \`patches.json\` TypeScript types`,
-    `- [electron](${p("electron")}) — renderer preload bridge (\`window.electron\`)`,
+    "- [Overview](electron-bridge.md) — when to use the bridge and IPC patterns",
+    `- [API](${p("electron")}) — generated \`electron\` reference`,
+    "",
+    "## Mod files",
+    "",
+    "Not runtime `sandkit` objects.",
+    "Import from `@sandustry-modding/types/configs`.",
+    "",
+    `- [TypeScript types](${p("configs")}) — \`modinfo.json\`, \`patches.json\`, and \`workshop.json\``,
     "- [JSON Schema](schemas.md) — raw schema URLs for editors",
     "",
     "</div>",
@@ -772,20 +780,28 @@ function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
     if (!existsSync(join(outDir, filename))) return [];
     return [link(level, label, `api/${filename}`)];
   };
+  const ifDocs = (filename, level, label) => {
+    if (!existsSync(join(docsDir, filename))) return [];
+    return [`${pad(level)}- [${label}](${filename})`];
+  };
 
   /** @type {string[]} */
   const lines = [
     "- [Home](/)",
-    "- [Electron bridge](electron-bridge.md)",
     "- [Namespaces](modules.md)",
     ...ifFile("sandkit.md", 1, "sandkit"),
     ...ifFile("sandkit.api.md", 1, "sandkit.api"),
     ...ifFile("sandkit.api.worker.md", 1, "sandkit.api (worker)"),
     ...ifFile("sandkit.engine.md", 1, "sandkit.engine"),
     ...ifFile("sandkit.react.md", 1, "sandkit.react"),
-    ...ifFile("configs.md", 0, "configs"),
-    ...ifFile("electron.md", 0, "electron"),
+    heading(0, "Electron"),
+    ...ifDocs("electron-bridge.md", 1, "Overview"),
+    ...ifFile("electron.md", 1, "API"),
+    heading(0, "Mod files"),
+    ...ifFile("configs.md", 1, "TypeScript types"),
+    ...ifDocs("schemas.md", 1, "JSON Schema"),
     "- [Full API reference](full.md)",
+    ...ifDocs("Changelog.md", 0, "Changelog"),
     "",
     section("Main thread"),
     "",

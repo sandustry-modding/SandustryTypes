@@ -32,9 +32,12 @@ Start with the step-by-step guides:
   - [Engine](api/sandkit.engine.md) — unstable escape hatch (`sandkit.engine`)
   - [React](api/sandkit.react.md) — HUD helpers from the host React build
 - [Enums](api/sandkit.enums.md) — runtime enum values
-- [Configs](api/configs.md) — `modinfo.json`, `patches.json`, and `workshop.json` types
-- [Electron bridge](electron-bridge.md) — renderer preload IPC (`window.electron`); [generated API](api/electron.md)
-- [JSON Schema](schemas.md) — `modinfo.json` / `patches.json` schemas (raw URLs for editors)
+- Electron — host preload bridge (`window.electron`), not part of `sandkit`
+  - [Overview](electron-bridge.md) — when to use the bridge and IPC patterns
+  - [API](api/electron.md) — generated `electron` reference
+- Mod files — not runtime `sandkit` objects
+  - [TypeScript types](api/configs.md) — `modinfo.json`, `patches.json`, and `workshop.json`
+  - [JSON Schema](schemas.md) — raw schema URLs for editors
 - [Full API reference](full.md) — every namespace on one page
 
 ## Install types
