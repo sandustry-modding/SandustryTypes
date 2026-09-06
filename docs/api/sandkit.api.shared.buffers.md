@@ -75,9 +75,14 @@ create(key: string, config: object): SharedArray
 
 [`SharedArray`](api/sandkit.api.shared.md?id=sharedarray)
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [ensure](?id=ensure) instead.
+Use [ensure](api/sandkit.api.shared.buffers.md?id=ensure) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -107,6 +112,6 @@ get(key: string): SharedArray | undefined
 
 Look up a named shared buffer without creating it.
 
-[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) \| `undefined` The typed array, or `undefined` when the buffer does not exist.
+[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) &#124; `undefined` The typed array, or `undefined` when the buffer does not exist.
 
 </div>

@@ -16,7 +16,7 @@ Available as `sandkit.api.pickups`.
 | --- | --- | --- |
 | brightness? | number | Light brightness multiplier. Default 1. |
 | size? | number | Light radius in world pixels. Default 100. |
-| color? | [number, number, number] \| [number, number, number, number] | RGB or RGBA color components in 0–1 range. |
+| color? | [number, number, number] &#124; [number, number, number, number] | RGB or RGBA color components in 0–1 range. |
 
 <div class="smt-member-anchors">
 
@@ -98,9 +98,14 @@ WorldItemType = PickupType
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [PickupType](?id=pickuptype) instead.
+Use [PickupType](api/sandkit.api.pickups.md?id=pickuptype) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -200,9 +205,14 @@ destroy(pickup: WorldItem): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [remove](?id=remove) instead.
+Use [remove](api/sandkit.api.pickups.md?id=remove) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -282,6 +292,6 @@ getById(pickupId: number): WorldItem | undefined
 
 Return a pickup by numeric id.
 
-[`WorldItem`](?id=worlditem) \| `undefined`
+[`WorldItem`](?id=worlditem) &#124; `undefined`
 
 </div>

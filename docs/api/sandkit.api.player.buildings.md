@@ -56,9 +56,14 @@ unlockByType(structureId: string): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [unlockById](?id=unlockbyid) instead.
+Use [unlockById](api/sandkit.api.player.buildings.md?id=unlockbyid) instead.
+
+</div>
+</div>
 
 </div>
 

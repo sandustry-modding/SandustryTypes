@@ -30,9 +30,14 @@ runWhenSimulationIdle(callback: () => void): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
 Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -60,8 +65,13 @@ redrawAroundCellWhenIdle(...args: [number, number, number]): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
 Use [grid.redrawAroundCell](api/sandkit.api.grid.md?id=redrawaroundcell) instead.
+
+</div>
+</div>
 
 </div>

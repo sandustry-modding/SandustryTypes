@@ -123,6 +123,30 @@ When true, skip the intro sequence.
   assert.match(out, /When true, skip the intro sequence/);
 });
 
+test("restyleApiCards table cells use HTML pipe for union types", () => {
+  const src = `# sandkit.api.player
+
+## Functions <!-- {docsify-ignore} -->
+
+### setMovementMode() :id=setmovementmode
+
+\`\`\`ts
+setMovementMode(mode: "normal" | "hover"): boolean
+\`\`\`
+
+#### Parameters
+
+##### mode
+
+\`"normal"\` | \`"hover"\`
+
+\`"normal"\` for default physics, or \`"hover"\` for hover flight.
+`;
+  const out = restyleApiCards(src, "sandkit.api.player");
+  assert.match(out, /`"normal"` &#124; `"hover"`/);
+  assert.doesNotMatch(out, /\\\|/);
+});
+
 test("restyleApiCards drops Official docs See sections", () => {
   const src = `# sandkit.api.player
 
@@ -150,7 +174,7 @@ setWorldPosition(): void
 
 #### Deprecated
 
-Use setPositionAtWorld instead.
+Use [setPositionAtWorld](?id=setpositionatworld) instead.
 
 #### See
 
@@ -160,7 +184,12 @@ Use setPositionAtWorld instead.
   assert.doesNotMatch(out, /^## See/m);
   assert.doesNotMatch(out, /^#### See$/m);
   assert.doesNotMatch(out, /Official docs/);
-  assert.match(out, /#### Deprecated/);
+  assert.match(out, /smt-member-deprecated/);
+  assert.match(out, /smt-member-deprecated-note" markdown="1"/);
+  assert.match(out, /\[setPositionAtWorld\]\(api\/sandkit\.api\.player\.md\?id=setpositionatworld\)/);
+  assert.doesNotMatch(out, /\]\(\?id=/);
+  assert.doesNotMatch(out, /^#### Deprecated$/m);
+  assert.doesNotMatch(out, /smt-member-head/);
 });
 
 test("restyleApiCards drops the TypeDoc Namespaces child list", () => {

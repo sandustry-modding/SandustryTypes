@@ -79,7 +79,7 @@ registerType(structureId: string, type: "storage" | "conductor", options?: Energ
 | Argument | Type | Description |
 | --- | --- | --- |
 | structureId | `string` | Structure type id string. |
-| type | `"storage"` \\| `"conductor"` | `conductor` forwards energy; `storage` holds energy. |
+| type | `"storage"` &#124; `"conductor"` | `conductor` forwards energy; `storage` holds energy. |
 | options? | [`EnergyRegisterTypeOptions`](?id=energyregistertypeoptions) | Capacity and energy-type options for storage nodes. |
 
 <div class="smt-member-anchors">

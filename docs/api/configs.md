@@ -472,7 +472,7 @@ Compatible game version range for the mod.
 | configSchema? | Record<string, ConfigSchemaEntry> | Player-facing settings schema. Keys are setting ids; values define type and UI. Read at runtime with `api.settings.get`. |
 | configOverrides? | Record<string, string> | Paths to JSON config overrides keyed by vanilla config id (for example `"drill"`). |
 | shaderOverrides? | Record<string, string> | Paths to GLSL shader replacements keyed by shader id (for example `"sky"`). |
-| textureOverrides? | Record<string, string \| TextureOverride> | Texture replacements keyed by vanilla texture id. A string value is a path; an object adds spritesheet frame metadata. |
+| textureOverrides? | Record<string, string &#124; TextureOverride> | Texture replacements keyed by vanilla texture id. A string value is a path; an object adds spritesheet frame metadata. |
 | provides? | ModProvide[] | Optional content this mod publishes for others to consume. |
 | map? | ModMapDefinition | Embedded custom map pack definition for this mod. |
 
@@ -568,13 +568,13 @@ Regex finder when the target is not a plain [BundlePatch.find](?id=find) string.
 | code? | string | Replacement or inserted source text. Official examples use `code`; some loaders also accept [replace](?id=replace). |
 | replace? | string | Alias of [code](?id=code) used by some patch loaders and workshop mods. |
 | operation? | PatchOperation | How to apply the match. Defaults to replace-style behaviour when omitted in common workshop patches. |
-| expectedMatches? | number \| "any" | How many times `find` / `regex` must match. Use a number (often `1`) so the load fails on miss or over-match. Some loaders accept `"any"`. |
+| expectedMatches? | number &#124; "any" | How many times `find` / `regex` must match. Use a number (often `1`) so the load fails on miss or over-match. Some loaders accept `"any"`. |
 | regex? | BundlePatchRegex | Regex-based locator instead of a literal [find](?id=find) string. |
 | before? | string | Text inserted before the match when [operation](?id=operation) is `"wrap"`. |
 | after? | string | Text inserted after the match when [operation](?id=operation) is `"wrap"`. |
 | id? | string | Optional stable id for logging and tooling. |
 | atomicGroup? | string | Group id shared by patches that must all succeed or all fail together. Use the same string on paired main (`js/bundle.js`) and worker (`js/simulation-worker.js`) patches. |
-| occurrence? | number \| "all" | Which match to rewrite when `find` / `regex` hits more than once. `"all"` (default when omitted in the loader) or a 1-based index. Must not exceed [expectedMatches](?id=expectedmatches) when both are numbers. |
+| occurrence? | number &#124; "all" | Which match to rewrite when `find` / `regex` hits more than once. `"all"` (default when omitted in the loader) or a 1-based index. Must not exceed [expectedMatches](?id=expectedmatches) when both are numbers. |
 | description? | string | Human-readable note for maintainers. Not required by the official schema. |
 
 <div class="smt-member-anchors">

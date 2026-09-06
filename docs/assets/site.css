@@ -236,6 +236,11 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
   gap: 0.35em;
   overflow: visible;
 }
+
+.markdown-section :is(h1, h2, h3).smt-heading-active,
+.markdown-section :is(h1, h2, h3).smt-heading-active .smt-heading-text {
+  color: var(--theme-color);
+}
 .markdown-section .smt-heading-text {
   flex: 0 1 auto;
   min-width: 0;

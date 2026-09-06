@@ -118,7 +118,7 @@ Register a weighted refinery machine recipe.
 
 ###### id
 
-`"condenser"` \| `"steamDryer"` \| `"synthesizer"` \| `"snowmaker"` \| `"smelter"`
+`"condenser"` &#124; `"steamDryer"` &#124; `"synthesizer"` &#124; `"snowmaker"` &#124; `"smelter"`
 
 Refinery machine id.
 

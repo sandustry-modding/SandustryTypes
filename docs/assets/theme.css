@@ -112,7 +112,8 @@ html {
   scrollbar-gutter: stable;
 }
 
-.sidebar-nav li.active > a {
+.sidebar-nav li.active > a,
+.sidebar-nav li.active > p > a {
   border-left: 3px solid var(--theme-color);
   border-radius: 0;
   padding-left: 0.5em;

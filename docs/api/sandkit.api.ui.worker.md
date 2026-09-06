@@ -18,8 +18,8 @@ Main thread adds richer UI APIs on top of this shape.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| key | string | Namespaced translation key (for example `ui\|save\|save`). |
-| params? | Record<string, string \| number> | Values merged into the translated string. |
+| key | string | Namespaced translation key (for example `ui&#124;save&#124;save`). |
+| params? | Record<string, string &#124; number> | Values merged into the translated string. |
 
 <div class="smt-member-anchors">
 
@@ -69,8 +69,8 @@ Value returned by `sandkit.api.i18n.translatable`.
 | --- | --- | --- |
 | cooldown? | number | Minimum ms before the same toast can show again. |
 | cooldownKey? | string | Dedupe key paired with [ToastOptions.cooldown](?id=cooldown). Defaults to the message string or `message.key`. |
-| duration? | number \| false | Auto-dismiss delay in ms. Default `5000`. Set `false` to keep the toast until another toast replaces it. |
-| variant? | string & object \| "danger" \| "hint" \| "hole" | Visual style applied to the toast body. |
+| duration? | number &#124; false | Auto-dismiss delay in ms. Default `5000`. Set `false` to keep the toast until another toast replaces it. |
+| variant? | string & object &#124; "danger" &#124; "hint" &#124; "hole" | Visual style applied to the toast body. |
 
 <div class="smt-member-anchors">
 

@@ -85,8 +85,13 @@ burnElementAtCellWhenIdle(...args: CellCoordinates): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [burnElementAtCell](?id=burnelementatcell) instead.
+Use [burnElementAtCell](api/sandkit.api.fire.md?id=burnelementatcell) instead.
+
+</div>
+</div>
 
 </div>

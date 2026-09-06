@@ -2,9 +2,11 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   collectHeadingIds,
+  qualifyDocsifyPageLinks,
   resolveDocsifyTarget,
   rewriteDocsifyHref,
   rewriteMarkdownLinks,
+  validateDeprecatedCallouts,
   validateDocsifyLinks,
 } from "./docsify-links.mjs";
 
@@ -69,4 +71,101 @@ See [missing](api/nope.md) and [start](?id=start) and [bad](?id=nope).
   assert.equal(messages.some((m) => m.includes("missing file api/nope.md")), true);
   assert.equal(messages.some((m) => m.includes('missing heading id "nope"')), true);
   assert.equal(messages.some((m) => m.includes('missing heading id "start"')), false);
+});
+
+test("qualifyDocsifyPageLinks prefixes bare ?id= hrefs with the page path", () => {
+  assert.equal(
+    qualifyDocsifyPageLinks("Use [start](?id=start) instead.", "api/sandkit.api.game.md"),
+    "Use [start](api/sandkit.api.game.md?id=start) instead.",
+  );
+  assert.equal(
+    qualifyDocsifyPageLinks(
+      "Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.",
+      "api/sandkit.api.world.md",
+    ),
+    "Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.",
+  );
+});
+
+test("validateDeprecatedCallouts rejects HTML anchors and missing markdown=\"1\"", () => {
+  const files = [
+    {
+      rel: "api/player.md",
+      content: `# player
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note">Use <a href="?id=setpositionatworld">setPositionAtWorld</a> instead.</div>
+</div>
+
+### setPositionAtWorld() :id=setpositionatworld
+`,
+    },
+    {
+      rel: "api/player.md",
+      content: `# player
+
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setPositionAtWorld](?id=setpositionatworld) instead.
+
+</div>
+
+### setPositionAtWorld() :id=setpositionatworld
+`,
+    },
+  ];
+
+  const bad = validateDeprecatedCallouts([files[0]], () => true);
+  assert.equal(
+    bad.some((e) => e.message.includes('markdown="1"')),
+    true,
+  );
+  assert.equal(
+    bad.some((e) => e.message.includes("markdown links")),
+    true,
+  );
+
+  const bareId = validateDeprecatedCallouts(
+    [
+      {
+        rel: "api/player.md",
+        content: `# player
+
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setPositionAtWorld](?id=setpositionatworld) instead.
+
+</div>
+
+### setPositionAtWorld() :id=setpositionatworld
+`,
+      },
+    ],
+    () => true,
+  );
+  assert.equal(
+    bareId.some((e) => e.message.includes("bare ?id=")),
+    true,
+  );
+
+  const good = validateDeprecatedCallouts(
+    [
+      {
+        rel: "api/player.md",
+        content: `# player
+
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setPositionAtWorld](api/player.md?id=setpositionatworld) instead.
+
+</div>
+
+### setPositionAtWorld() :id=setpositionatworld
+`,
+      },
+    ],
+    () => true,
+  );
+  assert.equal(good.length, 0);
 });

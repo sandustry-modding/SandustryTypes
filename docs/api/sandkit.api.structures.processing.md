@@ -107,8 +107,13 @@ setEnabledAt(...args: [number, number, boolean]): boolean
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setEnabledAtCell](?id=setenabledatcell) instead.
+Use [setEnabledAtCell](api/sandkit.api.structures.processing.md?id=setenabledatcell) instead.
+
+</div>
+</div>
 
 </div>

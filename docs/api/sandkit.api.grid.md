@@ -455,9 +455,14 @@ forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordi
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [forEachCellInRectangle](?id=foreachcellinrectangle) instead.
+Use [forEachCellInRectangle](api/sandkit.api.grid.md?id=foreachcellinrectangle) instead.
+
+</div>
+</div>
 
 </div>
 

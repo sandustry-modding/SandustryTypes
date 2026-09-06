@@ -900,7 +900,7 @@ getSelectedProvider(kind: string): AssetProviderV1 | null
 
 Returns the selected provider for an asset kind, or null.
 
-[`AssetProviderV1`](?id=sandkit.api.assets.assetproviderv1) \| `null`
+[`AssetProviderV1`](?id=sandkit.api.assets.assetproviderv1) &#124; `null`
 
 </div>
 
@@ -921,7 +921,7 @@ selectProvider(kind: string, providerId: string | null): boolean
 | Argument | Type | Description |
 | --- | --- | --- |
 | kind | `string` | Asset kind identifier. |
-| providerId | `string` \\| `null` | Provider id from [getSelectedProvider](?id=sandkit.api.assets.getselectedprovider), or null to clear. |
+| providerId | `string` &#124; `null` | Provider id from [getSelectedProvider](?id=sandkit.api.assets.getselectedprovider), or null to clear. |
 
 <div class="smt-member-anchors">
 
@@ -1325,7 +1325,7 @@ selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef |
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \\| [`StructureType`](api/sandkit.api.building.StructureType.md) | Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
+| structureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) &#124; [`StructureType`](api/sandkit.api.building.StructureType.md) | Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
 
 <div class="smt-member-anchors">
 
@@ -1335,7 +1335,7 @@ selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef |
 
 Select a structure for placement by type or id.
 
-[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \| `null` Resolved selection, or null when the type or id is invalid.
+[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) &#124; `null` Resolved selection, or null when the type or id is invalid.
 
 </div>
 
@@ -1841,7 +1841,7 @@ Removes the laser from the scene.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| style? | "implode" \| "explode" | Distortion style: implode or explode. |
+| style? | "implode" &#124; "explode" | Distortion style: implode or explode. |
 | duration? | number | Effect duration in seconds. |
 | maxRadius? | number | Maximum radius of the wave. |
 | intensity? | number | Visual intensity of the distortion. |
@@ -2078,9 +2078,14 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [createAtWorld](?id=sandkit.api.effects.createatworld) instead.
+Use [createAtWorld](api/sandkit.api.effects.md?id=createatworld) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -2116,9 +2121,14 @@ createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptio
 
 lightId: number | null optional index?: number | null
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
 Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md?id=createatworld) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -2230,9 +2240,14 @@ removeLightById(lightId: number): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
 Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md?id=removebyid) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -2891,7 +2906,7 @@ findFreeCellInStructure(structureCellX: number, structureCellY: number, structur
 
 Finds a free cell inside a structure footprint, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) \| `null` Cell coordinates of a free cell, or null when none.
+[`Vector2`](api/shared.player.md?id=vector2) &#124; `null` Cell coordinates of a free cell, or null when none.
 
 </div>
 
@@ -2965,9 +2980,14 @@ createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [createAtCell](?id=sandkit.api.elements.createatcell) instead.
+Use [createAtCell](api/sandkit.api.elements.md?id=createatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3023,9 +3043,14 @@ replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [replaceAtCell](?id=sandkit.api.elements.replaceatcell) instead.
+Use [replaceAtCell](api/sandkit.api.elements.md?id=replaceatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3081,9 +3106,14 @@ removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeAtCell](?id=sandkit.api.elements.removeatcell) instead.
+Use [removeAtCell](api/sandkit.api.elements.md?id=removeatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3157,9 +3187,14 @@ teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: numb
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [teleportBetweenCells](?id=sandkit.api.elements.teleportbetweencells) instead.
+Use [teleportBetweenCells](api/sandkit.api.elements.md?id=teleportbetweencells) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3221,9 +3256,14 @@ setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setVelocityAtCell](?id=sandkit.api.elements.setvelocityatcell) instead.
+Use [setVelocityAtCell](api/sandkit.api.elements.md?id=setvelocityatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3290,9 +3330,14 @@ addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): v
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [addParticleVelocityAtCell](?id=sandkit.api.elements.addparticlevelocityatcell) instead.
+Use [addParticleVelocityAtCell](api/sandkit.api.elements.md?id=addparticlevelocityatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3358,9 +3403,14 @@ convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [convertToParticleAtCell](?id=sandkit.api.elements.converttoparticleatcell) instead.
+Use [convertToParticleAtCell](api/sandkit.api.elements.md?id=converttoparticleatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3416,9 +3466,14 @@ convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [convertFromParticleAtCell](?id=sandkit.api.elements.convertfromparticleatcell) instead.
+Use [convertFromParticleAtCell](api/sandkit.api.elements.md?id=convertfromparticleatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3438,7 +3493,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` \\| `2` \\| `3` \\| `4`, `number`\] |  |
+| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
 
 <div class="smt-member-anchors">
 
@@ -3466,7 +3521,7 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` \\| `2` \\| `3` \\| `4`, `number`\] |  |
+| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
 
 <div class="smt-member-anchors">
 
@@ -3474,9 +3529,14 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setDataFieldAtCell](?id=sandkit.api.elements.setdatafieldatcell) instead.
+Use [setDataFieldAtCell](api/sandkit.api.elements.md?id=setdatafieldatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3532,9 +3592,14 @@ refreshColorAtCellWhenIdle(...args: CellCoordinates): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [refreshColorAtCell](?id=sandkit.api.elements.refreshcoloratcell) instead.
+Use [refreshColorAtCell](api/sandkit.api.elements.md?id=refreshcoloratcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3590,9 +3655,14 @@ setPhysicsAtCellWhenIdle(...args: [number, number, number]): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setPhysicsAtCell](?id=sandkit.api.elements.setphysicsatcell) instead.
+Use [setPhysicsAtCell](api/sandkit.api.elements.md?id=setphysicsatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3661,9 +3731,14 @@ setDurationAtCellWhenIdle(...args: [number, number, number, object]): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setDurationAtCell](?id=sandkit.api.elements.setdurationatcell) instead.
+Use [setDurationAtCell](api/sandkit.api.elements.md?id=setdurationatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3753,9 +3828,14 @@ getTypeFromId(elementId: string & object): ElementType
 
 [`ElementType`](?id=sandkit.api.elements.elementtype)
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getTypeById](?id=sandkit.api.elements.gettypebyid) instead.
+Use [getTypeById](api/sandkit.api.elements.md?id=gettypebyid) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -3785,7 +3865,7 @@ getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 
 Look up the definition for a type handle.
 
-[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition) \| `undefined`
+[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition) &#124; `undefined`
 
 </div>
 
@@ -3815,7 +3895,7 @@ getTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the raw element type at a cell (may differ from resolved type).
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) \| `null`
+[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
 
 </div>
 
@@ -3845,7 +3925,7 @@ getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the resolved element type after overlays and particles.
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) \| `null`
+[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
 
 </div>
 
@@ -3875,7 +3955,7 @@ getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 
 Return the resolved element type from a packed cell id.
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) \| `null`
+[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
 
 </div>
 
@@ -3905,7 +3985,7 @@ getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle:
 
 Return element index, particle flag, and ids at a cell.
 
-\{ `elementType`: [`ElementType`](?id=sandkit.api.elements.elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} \| `null`
+\{ `elementType`: [`ElementType`](?id=sandkit.api.elements.elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} &#124; `null`
 
 </div>
 
@@ -3935,7 +4015,7 @@ getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 
 Return the matter category at a cell, or null when empty.
 
-[`MatterType`](api/sandkit.api.elements.MatterType.md) \| `null`
+[`MatterType`](api/sandkit.api.elements.MatterType.md) &#124; `null`
 
 </div>
 
@@ -4021,7 +4101,7 @@ getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 
 Return per-cell velocity for moving elements.
 
-\{ `x`: `number`; `y`: `number`; \} \| `null`
+\{ `x`: `number`; `y`: `number`; \} &#124; `null`
 
 </div>
 
@@ -4041,7 +4121,7 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` \\| `2` \\| `3` \\| `4`\] |  |
+| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`\] |  |
 
 <div class="smt-member-anchors">
 
@@ -4051,7 +4131,7 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 Read element data field 1–4 at a cell.
 
-`number` \| `null`
+`number` &#124; `null`
 
 </div>
 
@@ -4138,7 +4218,7 @@ registerType(structureId: string, type: "storage" | "conductor", options?: Energ
 | Argument | Type | Description |
 | --- | --- | --- |
 | structureId | `string` | Structure type id string. |
-| type | `"storage"` \\| `"conductor"` | `conductor` forwards energy; `storage` holds energy. |
+| type | `"storage"` &#124; `"conductor"` | `conductor` forwards energy; `storage` holds energy. |
 | options? | [`EnergyRegisterTypeOptions`](?id=sandkit.api.energy.energyregistertypeoptions) | Capacity and energy-type options for storage nodes. |
 
 <div class="smt-member-anchors">
@@ -4385,7 +4465,7 @@ getById(entityId: number): Entity | undefined
 
 Return one live entity by runtime id.
 
-[`Entity`](?id=sandkit.api.entities.entity) \| `undefined`
+[`Entity`](?id=sandkit.api.entities.entity) &#124; `undefined`
 
 </div>
 
@@ -5344,9 +5424,14 @@ burnElementAtCellWhenIdle(...args: CellCoordinates): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [burnElementAtCell](?id=sandkit.api.fire.burnelementatcell) instead.
+Use [burnElementAtCell](api/sandkit.api.fire.md?id=burnelementatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -5451,7 +5536,7 @@ get(key: string): JsonValueV1 | undefined
 
 Returns a config value by key, or undefined when missing.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
 
 </div>
 
@@ -5934,9 +6019,14 @@ forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordi
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [forEachCellInRectangle](?id=sandkit.api.grid.foreachcellinrectangle) instead.
+Use [forEachCellInRectangle](api/sandkit.api.grid.md?id=foreachcellinrectangle) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -7069,7 +7159,7 @@ t(key: string, params?: Record<string, string | number>): string
 | Argument | Type | Description |
 | --- | --- | --- |
 | key | `string` | Translation key. |
-| params? | `Record`\<`string`, `string` \\| `number`\> | Placeholder values for the key template. |
+| params? | `Record`\<`string`, `string` &#124; `number`\> | Placeholder values for the key template. |
 
 <div class="smt-member-anchors">
 
@@ -7342,9 +7432,14 @@ key(...parts: string[]): string
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [joinKey](?id=sandkit.api.i18n.joinkey) instead.
+Use [joinKey](api/sandkit.api.i18n.md?id=joinkey) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -7475,9 +7570,14 @@ translatable(key: string, fallback: string): object
 
 \_\_translatable: true key: string fallback: string
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [createTranslatable](?id=sandkit.api.i18n.createtranslatable) instead.
+Use [createTranslatable](api/sandkit.api.i18n.md?id=createtranslatable) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -7498,7 +7598,7 @@ setGlobal(key: string, value: string | (() => string)): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | key | `string` | Global helper key. |
-| value | `string` \\| (() => `string`) | Static string or function that returns the current value. |
+| value | `string` &#124; (() => `string`) | Static string or function that returns the current value. |
 
 <div class="smt-member-anchors">
 
@@ -7538,7 +7638,7 @@ getGlobal(key: string): string | undefined
 
 Returns a global translation helper value.
 
-`string` \| `undefined`
+`string` &#124; `undefined`
 
 </div>
 
@@ -7594,9 +7694,14 @@ clearGlobal(key: string): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeGlobal](?id=sandkit.api.i18n.removeglobal) instead.
+Use [removeGlobal](api/sandkit.api.i18n.md?id=removeglobal) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -8233,7 +8338,7 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for an id, or undefined.
 
-[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
+[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\<`unknown`, `unknown`\> &#124; `undefined`
 
 </div>
 
@@ -8281,7 +8386,7 @@ getActive(): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for the active hotbar slot.
 
-[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
+[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\<`unknown`, `unknown`\> &#124; `undefined`
 
 </div>
 
@@ -8333,8 +8438,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| lightId | number \| null | Assigned temporary light id, or null when creation failed. |
-| ~~index~~ | number \| null |  |
+| lightId | number &#124; null | Assigned temporary light id, or null when creation failed. |
+| ~~index~~ | number &#124; null |  |
 
 <div class="smt-member-anchors">
 
@@ -8995,7 +9100,7 @@ Available as `sandkit.api.pickups`.
 | --- | --- | --- |
 | brightness? | number | Light brightness multiplier. Default 1. |
 | size? | number | Light radius in world pixels. Default 100. |
-| color? | [number, number, number] \| [number, number, number, number] | RGB or RGBA color components in 0–1 range. |
+| color? | [number, number, number] &#124; [number, number, number, number] | RGB or RGBA color components in 0–1 range. |
 
 <div class="smt-member-anchors">
 
@@ -9077,9 +9182,14 @@ WorldItemType = PickupType
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [PickupType](?id=sandkit.api.pickups.pickuptype) instead.
+Use [PickupType](api/sandkit.api.pickups.md?id=pickuptype) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -9179,9 +9289,14 @@ destroy(pickup: WorldItem): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [remove](?id=sandkit.api.pickups.remove) instead.
+Use [remove](api/sandkit.api.pickups.md?id=remove) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -9261,7 +9376,7 @@ getById(pickupId: number): WorldItem | undefined
 
 Return a pickup by numeric id.
 
-[`WorldItem`](?id=sandkit.api.pickups.worlditem) \| `undefined`
+[`WorldItem`](?id=sandkit.api.pickups.worlditem) &#124; `undefined`
 
 </div>
 
@@ -9484,9 +9599,14 @@ setWorldPosition(worldX: number, worldY: number): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setPositionAtWorld](?id=sandkit.api.player.setpositionatworld) instead.
+Use [setPositionAtWorld](api/sandkit.api.player.md?id=setpositionatworld) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -9565,7 +9685,7 @@ setMovementMode(mode: "normal" | "hover"): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| mode | `"normal"` \\| `"hover"` | `"normal"` for default physics, or `"hover"` for hover flight. |
+| mode | `"normal"` &#124; `"hover"` | `"normal"` for default physics, or `"hover"` for hover flight. |
 
 <div class="smt-member-anchors">
 
@@ -9679,9 +9799,14 @@ isWorldPositionClear(worldX: number, worldY: number): boolean
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [isPositionClearAtWorld](?id=sandkit.api.player.ispositionclearatworld) instead.
+Use [isPositionClearAtWorld](api/sandkit.api.player.md?id=ispositionclearatworld) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -9745,9 +9870,14 @@ unlockByType(structureId: string): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [unlockById](?id=sandkit.api.player.buildings.unlockbyid) instead.
+Use [unlockById](api/sandkit.api.player.buildings.md?id=unlockbyid) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -9839,9 +9969,14 @@ addFromId(itemId: string): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [addById](?id=sandkit.api.player.inventory.addbyid) instead.
+Use [addById](api/sandkit.api.player.inventory.md?id=addbyid) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -10261,7 +10396,7 @@ getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 
 Return a projectile definition by string id.
 
-[`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition) \| `undefined`
+[`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition) &#124; `undefined`
 
 </div>
 
@@ -10341,7 +10476,7 @@ getById(projectileId: number): Projectile | undefined
 
 Return a projectile by numeric id.
 
-[`Projectile`](?id=sandkit.api.projectiles.projectile) \| `undefined`
+[`Projectile`](?id=sandkit.api.projectiles.projectile) &#124; `undefined`
 
 </div>
 
@@ -10521,7 +10656,7 @@ castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistan
 
 Cast a ray from world position. Return hit point and distance, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) & `object` \| `null`
+[`Vector2`](api/shared.player.md?id=vector2) & `object` &#124; `null`
 
 </div>
 
@@ -10541,9 +10676,9 @@ Cast a ray from world position. Return hit point and distance, or null.
 | --- | --- | --- |
 | inputA | ElementType | First reacting element type. |
 | inputB | ElementType | Second reacting element type. |
-| outputA | ElementType \| null | Element type produced from input A, or null for no output. |
-| outputB | ElementType \| null | Element type produced from input B, or null for no output. |
-| orientation? | "any" \| "stacked" | Contact layout requirement. Default `"any"`. |
+| outputA | ElementType &#124; null | Element type produced from input A, or null for no output. |
+| outputB | ElementType &#124; null | Element type produced from input B, or null for no output. |
+| orientation? | "any" &#124; "stacked" | Contact layout requirement. Default `"any"`. |
 
 <div class="smt-member-anchors">
 
@@ -10982,7 +11117,7 @@ get(fieldId: string & object): ConfigValueV1 | undefined
 
 Return a settings field value by id.
 
-[`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1) \| `undefined`
+[`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1) &#124; `undefined`
 
 </div>
 
@@ -11168,9 +11303,14 @@ create(key: string, config: object): SharedArray
 
 [`SharedArray`](api/sandkit.api.shared.md?id=sharedarray)
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [ensure](?id=sandkit.api.shared.buffers.ensure) instead.
+Use [ensure](api/sandkit.api.shared.buffers.md?id=ensure) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -11200,7 +11340,7 @@ get(key: string): SharedArray | undefined
 
 Look up a named shared buffer without creating it.
 
-[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) \| `undefined` The typed array, or `undefined` when the buffer does not exist.
+[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) &#124; `undefined` The typed array, or `undefined` when the buffer does not exist.
 
 </div>
 
@@ -11637,9 +11777,14 @@ stopById(soundId: string): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [stopBySoundId](?id=sandkit.api.sound.stopbysoundid) instead.
+Use [stopBySoundId](api/sandkit.api.sound.md?id=stopbysoundid) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -11944,7 +12089,7 @@ get(modId: string, key: string): JsonValueV1 | undefined
 
 Read a value from mod storage by key.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
 
 </div>
 
@@ -12047,7 +12192,7 @@ get(key: string): JsonValueV1 | undefined
 
 Read a local storage value by key.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
 
 </div>
 
@@ -12298,7 +12443,7 @@ tooltipHover: {
 | --- | --- | --- |
 | param | string |  |
 | field | string |  |
-| fallback? | string \| number |  |
+| fallback? | string &#124; number |  |
 | round? | boolean |  |
 | valueLabels? | Record<string, string> |  |
 | valueKeys? | Record<string, string> |  |
@@ -12452,7 +12597,7 @@ Render settings for a structure definition.
 | tooltipHover? | StructureTooltipHover | Custom hover tooltip over the built structure. |
 | rejectWhenBlocked? | boolean | Reject placement when the footprint is blocked. |
 | alwaysUnlocked? | boolean | Show in the build menu without research unlock. |
-| descriptionParams? | Record<string, string \| number> | Values interpolated into the structure description string. |
+| descriptionParams? | Record<string, string &#124; number> | Values interpolated into the structure description string. |
 
 <div class="smt-member-anchors">
 
@@ -12598,7 +12743,7 @@ Return the resolved element type at a cell, or null.
 
 ###### Returns
 
-[`ElementType`](api/sandkit.api.elements.md?id=elementtype) \| `null`
+[`ElementType`](api/sandkit.api.elements.md?id=elementtype) &#124; `null`
 
 ###### ~~getElementTypeAtCell()~~
 
@@ -12616,7 +12761,7 @@ Defined in: [sandkit/api/structures.d.ts:699](https://github.com/sandustry-moddi
 
 ###### Returns
 
-[`ElementType`](api/sandkit.api.elements.md?id=elementtype) \| `null`
+[`ElementType`](api/sandkit.api.elements.md?id=elementtype) &#124; `null`
 
 ###### Deprecated
 
@@ -12707,9 +12852,14 @@ Mutation writer payload accepted by the runtime.
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [StructureProcessingDefinitionV1](?id=sandkit.api.structures.structureprocessingdefinitionv1) with [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
+Use [StructureProcessingDefinitionV1](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1) with [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -13113,9 +13263,14 @@ addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: objec
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [registerVariant](?id=sandkit.api.structures.registervariant) instead.
+Use [registerVariant](api/sandkit.api.structures.md?id=registervariant) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -13211,9 +13366,14 @@ getUnlockedTypes(): Set<StructureRef>
 
 `Set`\<[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)\>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getAvailableTypes](?id=sandkit.api.structures.getavailabletypes) instead.
+Use [getAvailableTypes](api/sandkit.api.structures.md?id=getavailabletypes) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -13328,9 +13488,14 @@ isUnlockedByType(structureType: StructureRef): boolean
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [isLockedByType](?id=sandkit.api.structures.islockedbytype) instead. Same function as [isLockedByType](?id=sandkit.api.structures.islockedbytype); return value is not inverted.
+Use [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype) instead. Same function as [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype); return value is not inverted.
+
+</div>
+</div>
 
 </div>
 
@@ -13428,9 +13593,14 @@ buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOption
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [buildAtCell](?id=sandkit.api.structures.buildatcell) instead.
+Use [buildAtCell](api/sandkit.api.structures.md?id=buildatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -13486,9 +13656,14 @@ removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeAtCell](?id=sandkit.api.structures.removeatcell) instead.
+Use [removeAtCell](api/sandkit.api.structures.md?id=removeatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -13568,9 +13743,14 @@ removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: num
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeBetweenCells](?id=sandkit.api.structures.removebetweencells) instead.
+Use [removeBetweenCells](api/sandkit.api.structures.md?id=removebetweencells) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -13641,9 +13821,14 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeAtCells](?id=sandkit.api.structures.removeatcells) instead.
+Use [removeAtCells](api/sandkit.api.structures.md?id=removeatcells) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -13674,9 +13859,14 @@ addProcessor(structureId: StructureRef, definition: StructureProcessorDefinition
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
 Use [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -13791,9 +13981,14 @@ setEnabledAt(...args: [number, number, boolean]): boolean
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setEnabledAtCell](?id=sandkit.api.structures.processing.setenabledatcell) instead.
+Use [setEnabledAtCell](api/sandkit.api.structures.processing.md?id=setenabledatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -13919,7 +14114,7 @@ Register a weighted refinery machine recipe.
 
 ###### id
 
-`"condenser"` \| `"steamDryer"` \| `"synthesizer"` \| `"snowmaker"` \| `"smelter"`
+`"condenser"` &#124; `"steamDryer"` &#124; `"synthesizer"` &#124; `"snowmaker"` &#124; `"smelter"`
 
 Refinery machine id.
 
@@ -14086,7 +14281,7 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 Return a tech definition by string id.
 
-[`TechDefinition`](?id=sandkit.api.tech.techdefinition) \| `undefined`
+[`TechDefinition`](?id=sandkit.api.tech.techdefinition) &#124; `undefined`
 
 </div>
 
@@ -14199,9 +14394,14 @@ addDefinition(techId: TechGridId, definition: TechDefinition): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [registerDefinition](?id=sandkit.api.tech.registerdefinition) instead.
+Use [registerDefinition](api/sandkit.api.tech.md?id=registerdefinition) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -14540,9 +14740,14 @@ createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOption
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [createAtCell](?id=sandkit.api.terrains.createatcell) instead.
+Use [createAtCell](api/sandkit.api.terrains.md?id=createatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -14598,9 +14803,14 @@ replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptio
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [replaceAtCell](?id=sandkit.api.terrains.replaceatcell) instead.
+Use [replaceAtCell](api/sandkit.api.terrains.md?id=replaceatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -14656,9 +14866,14 @@ removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeAtCell](?id=sandkit.api.terrains.removeatcell) instead.
+Use [removeAtCell](api/sandkit.api.terrains.md?id=removeatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -14714,9 +14929,14 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setHitPointsAtCell](?id=sandkit.api.terrains.sethitpointsatcell) instead.
+Use [setHitPointsAtCell](api/sandkit.api.terrains.md?id=sethitpointsatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -14744,9 +14964,14 @@ setHpAtCellWhenIdle(...args: [number, number, number]): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setHitPointsAtCell](?id=sandkit.api.terrains.sethitpointsatcell) instead.
+Use [setHitPointsAtCell](api/sandkit.api.terrains.md?id=sethitpointsatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -15155,7 +15380,7 @@ Focusable element state from useFocusable.
 | disabled? | boolean | When true, skip this element during navigation. |
 | x? | number | Optional grid column for spatial navigation. |
 | y? | number | Optional grid row for spatial navigation. |
-| neighbors? | Partial<Record<"left" \| "right" \| "up" \| "down", string>> | Neighbor ids for directional navigation. |
+| neighbors? | Partial<Record<"left" &#124; "right" &#124; "up" &#124; "down", string>> | Neighbor ids for directional navigation. |
 | scrollIntoView? | boolean | When true, scroll the element into view on focus. |
 
 <div class="smt-member-anchors">
@@ -15459,7 +15684,7 @@ prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedTex
 
 Show a prompt dialog.
 
-`Promise`\<`string` \| `null`\> Promise that resolves with entered text, or null when cancelled.
+`Promise`\<`string` &#124; `null`\> Promise that resolves with entered text, or null when cancelled.
 
 ##### Example
 
@@ -16149,9 +16374,14 @@ getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 
 [`Vector2`](api/shared.player.md?id=vector2)[]
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getCoordinatesBetweenCells](?id=sandkit.api.utils.getcoordinatesbetweencells) instead.
+Use [getCoordinatesBetweenCells](api/sandkit.api.utils.md?id=getcoordinatesbetweencells) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -16223,9 +16453,14 @@ runWhenSimulationIdle(callback: () => void): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
 Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -16253,9 +16488,14 @@ redrawAroundCellWhenIdle(...args: [number, number, number]): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
 Use [grid.redrawAroundCell](api/sandkit.api.grid.md?id=redrawaroundcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -16351,9 +16591,14 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [createAtWorld](?id=sandkit.api.effects.worker.createatworld) instead.
+Use [createAtWorld](api/sandkit.api.effects.worker.md?id=createatworld) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -16615,9 +16860,14 @@ swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCel
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [swapBetweenCells](?id=sandkit.api.elements.worker.swapbetweencells) instead.
+Use [swapBetweenCells](api/sandkit.api.elements.worker.md?id=swapbetweencells) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -16673,9 +16923,14 @@ markMovementBlockedByElementIndex(elementIndex: number): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [markMovementBlockedByIndex](?id=sandkit.api.elements.worker.markmovementblockedbyindex) instead.
+Use [markMovementBlockedByIndex](api/sandkit.api.elements.worker.md?id=markmovementblockedbyindex) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -16815,7 +17070,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` \\| `2` \\| `3` \\| `4`, `number`\] |  |
+| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
 
 <div class="smt-member-anchors">
 
@@ -17784,8 +18039,8 @@ Short-lived visual effect lights.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| lightId | number \| null | Runtime light id, or null when the pool is full. |
-| ~~index?~~ | number \| null |  |
+| lightId | number &#124; null | Runtime light id, or null when the pool is full. |
+| ~~index?~~ | number &#124; null |  |
 
 <div class="smt-member-anchors">
 
@@ -17993,7 +18248,7 @@ getActive(): Readonly<ActiveMapV1> | null
 
 Return the currently loaded custom map definition.
 
-`Readonly`\<[`ActiveMapV1`](?id=sandkit.api.maps.worker.activemapv1)\> \| `null` Active map metadata, or `null` outside custom maps.
+`Readonly`\<[`ActiveMapV1`](?id=sandkit.api.maps.worker.activemapv1)\> &#124; `null` Active map metadata, or `null` outside custom maps.
 
 </div>
 
@@ -18045,9 +18300,14 @@ getWorldPosition(): Vector2
 
 [`Vector2`](api/shared.player.md?id=vector2)
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getPositionAtWorld](?id=sandkit.api.player.worker.getpositionatworld) instead.
+Use [getPositionAtWorld](api/sandkit.api.player.worker.md?id=getpositionatworld) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -18200,8 +18460,8 @@ Shared `sandkit.api.structures` base — structure lookup and mutation.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elementId? | string \| null |  |
-| elementType? | TaggedNumber<"elementType"> \| null |  |
+| elementId? | string &#124; null |  |
+| elementType? | TaggedNumber<"elementType"> &#124; null |  |
 
 <div class="smt-member-anchors">
 
@@ -18381,7 +18641,7 @@ getAtCell(...args: CellCoordinates): Structure | null
 
 Return the structure at a cell, or null when none.
 
-[`Structure`](?id=sandkit.api.structures.worker.structure) \| `null`
+[`Structure`](?id=sandkit.api.structures.worker.structure) &#124; `null`
 
 </div>
 
@@ -18469,9 +18729,14 @@ getTypeFromId(structureId: string & object): StructureType
 
 [`StructureType`](?id=sandkit.api.structures.worker.structuretype)
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getTypeById](?id=sandkit.api.structures.worker.gettypebyid) instead.
+Use [getTypeById](api/sandkit.api.structures.worker.md?id=gettypebyid) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -18519,7 +18784,7 @@ isType(structure: Structure | null, structureId: string & object): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | [`Structure`](?id=sandkit.api.structures.worker.structure) \\| `null` | Structure instance, or null. |
+| structure | [`Structure`](?id=sandkit.api.structures.worker.structure) &#124; `null` | Structure instance, or null. |
 | structureId | `string` & `object` | Structure string id to compare. |
 
 <div class="smt-member-anchors">
@@ -18798,9 +19063,14 @@ setData(structure: Structure, partial: any, options?: object): void
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [updateData](?id=sandkit.api.structures.worker.updatedata) instead.
+Use [updateData](api/sandkit.api.structures.worker.md?id=updatedata) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -18864,9 +19134,14 @@ isEnabledAt(...args: CellCoordinates): boolean
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [isEnabledAtCell](?id=sandkit.api.structures.processing.worker.isenabledatcell) instead.
+Use [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md?id=isenabledatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -18944,8 +19219,8 @@ Terrain definition shape for register and [getDefinitionByType](?id=sandkit.api.
 | Property | Type | Description |
 | --- | --- | --- |
 | cellType | TerrainType | Numeric terrain cell type. |
-| hitPoints | number \| null | Current hit points, or null when the terrain has no hp. |
-| ~~hp?~~ | number \| null |  |
+| hitPoints | number &#124; null | Current hit points, or null when the terrain has no hp. |
+| ~~hp?~~ | number &#124; null |  |
 
 <div class="smt-member-anchors">
 
@@ -19125,9 +19400,14 @@ getTypeFromId(terrainId: string & object): TerrainType
 
 [`TerrainType`](?id=sandkit.api.terrains.worker.terraintype)
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getTypeById](?id=sandkit.api.terrains.worker.gettypebyid) instead.
+Use [getTypeById](api/sandkit.api.terrains.worker.md?id=gettypebyid) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -19157,7 +19437,7 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 Look up the definition for a terrain type.
 
-[`TerrainDefinition`](?id=sandkit.api.terrains.worker.terraindefinition) \| `undefined`
+[`TerrainDefinition`](?id=sandkit.api.terrains.worker.terraindefinition) &#124; `undefined`
 
 </div>
 
@@ -19187,7 +19467,7 @@ getTypeAtCell(...args: CellCoordinates): TerrainType | null
 
 Return the terrain cell type at a cell, or null when none.
 
-[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) \| `null`
+[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) &#124; `null`
 
 </div>
 
@@ -19217,7 +19497,7 @@ getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 
 Return terrain cell type and hit points at a cell.
 
-[`TerrainDataAtCell`](?id=sandkit.api.terrains.worker.terraindataatcell) \| `null` Cell type and hit points, or null when the cell is not terrain.
+[`TerrainDataAtCell`](?id=sandkit.api.terrains.worker.terraindataatcell) &#124; `null` Cell type and hit points, or null when the cell is not terrain.
 
 </div>
 
@@ -19499,9 +19779,14 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 </div>
 
-##### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setHitPointsAtCell](?id=sandkit.api.terrains.worker.sethitpointsatcell) instead.
+Use [setHitPointsAtCell](api/sandkit.api.terrains.worker.md?id=sethitpointsatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -19527,8 +19812,8 @@ Main thread adds richer UI APIs on top of this shape.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| key | string | Namespaced translation key (for example `ui\|save\|save`). |
-| params? | Record<string, string \| number> | Values merged into the translated string. |
+| key | string | Namespaced translation key (for example `ui&#124;save&#124;save`). |
+| params? | Record<string, string &#124; number> | Values merged into the translated string. |
 
 <div class="smt-member-anchors">
 
@@ -19578,8 +19863,8 @@ Value returned by `sandkit.api.i18n.translatable`.
 | --- | --- | --- |
 | cooldown? | number | Minimum ms before the same toast can show again. |
 | cooldownKey? | string | Dedupe key paired with [ToastOptions.cooldown](?id=sandkit.api.ui.worker.cooldown). Defaults to the message string or `message.key`. |
-| duration? | number \| false | Auto-dismiss delay in ms. Default `5000`. Set `false` to keep the toast until another toast replaces it. |
-| variant? | string & object \| "danger" \| "hint" \| "hole" | Visual style applied to the toast body. |
+| duration? | number &#124; false | Auto-dismiss delay in ms. Default `5000`. Set `false` to keep the toast until another toast replaces it. |
+| variant? | string & object &#124; "danger" &#124; "hint" &#124; "hole" | Visual style applied to the toast body. |
 
 <div class="smt-member-anchors">
 
@@ -31594,7 +31879,7 @@ Compatible game version range for the mod.
 | configSchema? | Record<string, ConfigSchemaEntry> | Player-facing settings schema. Keys are setting ids; values define type and UI. Read at runtime with `api.settings.get`. |
 | configOverrides? | Record<string, string> | Paths to JSON config overrides keyed by vanilla config id (for example `"drill"`). |
 | shaderOverrides? | Record<string, string> | Paths to GLSL shader replacements keyed by shader id (for example `"sky"`). |
-| textureOverrides? | Record<string, string \| TextureOverride> | Texture replacements keyed by vanilla texture id. A string value is a path; an object adds spritesheet frame metadata. |
+| textureOverrides? | Record<string, string &#124; TextureOverride> | Texture replacements keyed by vanilla texture id. A string value is a path; an object adds spritesheet frame metadata. |
 | provides? | ModProvide[] | Optional content this mod publishes for others to consume. |
 | map? | ModMapDefinition | Embedded custom map pack definition for this mod. |
 
@@ -31690,13 +31975,13 @@ Regex finder when the target is not a plain [BundlePatch.find](?id=configs.find)
 | code? | string | Replacement or inserted source text. Official examples use `code`; some loaders also accept [replace](?id=configs.replace). |
 | replace? | string | Alias of [code](?id=configs.code) used by some patch loaders and workshop mods. |
 | operation? | PatchOperation | How to apply the match. Defaults to replace-style behaviour when omitted in common workshop patches. |
-| expectedMatches? | number \| "any" | How many times `find` / `regex` must match. Use a number (often `1`) so the load fails on miss or over-match. Some loaders accept `"any"`. |
+| expectedMatches? | number &#124; "any" | How many times `find` / `regex` must match. Use a number (often `1`) so the load fails on miss or over-match. Some loaders accept `"any"`. |
 | regex? | BundlePatchRegex | Regex-based locator instead of a literal [find](?id=configs.find) string. |
 | before? | string | Text inserted before the match when [operation](?id=configs.operation) is `"wrap"`. |
 | after? | string | Text inserted after the match when [operation](?id=configs.operation) is `"wrap"`. |
 | id? | string | Optional stable id for logging and tooling. |
 | atomicGroup? | string | Group id shared by patches that must all succeed or all fail together. Use the same string on paired main (`js/bundle.js`) and worker (`js/simulation-worker.js`) patches. |
-| occurrence? | number \| "all" | Which match to rewrite when `find` / `regex` hits more than once. `"all"` (default when omitted in the loader) or a 1-based index. Must not exceed [expectedMatches](?id=configs.expectedmatches) when both are numbers. |
+| occurrence? | number &#124; "all" | Which match to rewrite when `find` / `regex` hits more than once. `"all"` (default when omitted in the loader) or a 1-based index. Must not exceed [expectedMatches](?id=configs.expectedmatches) when both are numbers. |
 | description? | string | Human-readable note for maintainers. Not required by the official schema. |
 
 <div class="smt-member-anchors">
@@ -32488,7 +32773,7 @@ Save slot id.
 
 ###### Returns
 
-`Promise`\<[`ElectronSuccessResult`](?id=electron.electronsuccessresult) \| [`ElectronFailureResult`](?id=electron.electronfailureresult)\>
+`Promise`\<[`ElectronSuccessResult`](?id=electron.electronsuccessresult) &#124; [`ElectronFailureResult`](?id=electron.electronfailureresult)\>
 
 `{ success: true }` after deleting primary and backup files.
 
@@ -32514,7 +32799,7 @@ Filename under the saves folder.
 
 ###### Returns
 
-`Promise`\<[`ElectronLoadResult`](?id=electron.electronloadresult) \| `null`\>
+`Promise`\<[`ElectronLoadResult`](?id=electron.electronloadresult) &#124; `null`\>
 
 Parsed save result, or `null` when the handler cannot resolve the file.
 
@@ -32560,7 +32845,7 @@ Import one save from raw exported bytes.
 
 ###### bytes
 
-`ArrayBuffer` \| `Uint8Array`\<`ArrayBufferLike`\>
+`ArrayBuffer` &#124; `Uint8Array`\<`ArrayBufferLike`\>
 
 Raw `.save` file contents.
 
@@ -32620,7 +32905,7 @@ Return the last-played save id JSON string.
 
 ###### Returns
 
-`string` \| `null`
+`string` &#124; `null`
 
 JSON string shaped like `{ "id": "…" }`, or `null` when unset/unreadable.
 
@@ -32708,7 +32993,7 @@ Return the settings JSON string from disk.
 
 ###### Returns
 
-`string` \| `null`
+`string` &#124; `null`
 
 Raw `settings.json` contents, or `null` when missing/unreadable.
 
@@ -33576,7 +33861,7 @@ Failed invoke result from save, settings, and window handlers.
 | Property | Type | Description |
 | --- | --- | --- |
 | valid | boolean | Whether the current license is valid for play. |
-| reason | string \| null | Failure reason when `valid` is false; otherwise `null`. |
+| reason | string &#124; null | Failure reason when `valid` is false; otherwise `null`. |
 | networkError | boolean | True when the check failed due to network or platform errors. |
 | cached | boolean | True when the result came from a cached license check. |
 
@@ -33680,9 +33965,9 @@ Failed load result from [ElectronBridge.load](?id=electron.load).
 | name | string | Display name stored in the save header. |
 | timestamp | string | ISO timestamp string when the save was written. |
 | playTime? | number | Total play time in milliseconds from the save body. |
-| worldId? | string \| null | World template id, if present. |
-| worldName? | string \| null | World display name, if present. |
-| seed? | number \| null | World seed, if present. |
+| worldId? | string &#124; null | World template id, if present. |
+| worldName? | string &#124; null | World display name, if present. |
+| seed? | number &#124; null | World seed, if present. |
 | productionPoints? | number | Factory production points at save time. |
 | structureCount? | number | Number of placed structures at save time. |
 | resources? | JsonValueV1 | Resource snapshot (`gold`, `fluxite`, `artifacts`, …). |
@@ -33964,7 +34249,7 @@ Subscribe to a Workshop item.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -33990,7 +34275,7 @@ Unsubscribe from a Workshop item.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -34016,7 +34301,7 @@ Return install state for a subscribed Workshop item.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -34042,7 +34327,7 @@ Return download progress for a Workshop item.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -34068,7 +34353,7 @@ Return the Steam Workshop item state flags.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -34112,7 +34397,7 @@ Fetch Workshop item metadata.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -34138,7 +34423,7 @@ Queue or prioritize a Workshop item download.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -34648,7 +34933,7 @@ Reflects `sandkit.engine.state` / store player fields exposed to mods.
 | abilities | object[] |  |
 | nameKey | string |  |
 | descriptionKey | string |  |
-| categoryKey | "excavation" \| "utility" \| "drones" |  |
+| categoryKey | "excavation" &#124; "utility" &#124; "drones" |  |
 | sprite? | AssetRef |  |
 
 <div class="smt-member-anchors">

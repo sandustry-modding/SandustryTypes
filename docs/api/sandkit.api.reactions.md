@@ -12,9 +12,9 @@
 | --- | --- | --- |
 | inputA | ElementType | First reacting element type. |
 | inputB | ElementType | Second reacting element type. |
-| outputA | ElementType \| null | Element type produced from input A, or null for no output. |
-| outputB | ElementType \| null | Element type produced from input B, or null for no output. |
-| orientation? | "any" \| "stacked" | Contact layout requirement. Default `"any"`. |
+| outputA | ElementType &#124; null | Element type produced from input A, or null for no output. |
+| outputB | ElementType &#124; null | Element type produced from input B, or null for no output. |
+| orientation? | "any" &#124; "stacked" | Contact layout requirement. Default `"any"`. |
 
 <div class="smt-member-anchors">
 

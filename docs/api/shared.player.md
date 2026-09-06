@@ -88,7 +88,7 @@ Reflects `sandkit.engine.state` / store player fields exposed to mods.
 | abilities | object[] |  |
 | nameKey | string |  |
 | descriptionKey | string |  |
-| categoryKey | "excavation" \| "utility" \| "drones" |  |
+| categoryKey | "excavation" &#124; "utility" &#124; "drones" |  |
 | sprite? | AssetRef |  |
 
 <div class="smt-member-anchors">

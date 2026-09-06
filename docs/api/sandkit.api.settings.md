@@ -66,7 +66,7 @@ get(fieldId: string & object): ConfigValueV1 | undefined
 
 Return a settings field value by id.
 
-[`ConfigValueV1`](?id=configvaluev1) \| `undefined`
+[`ConfigValueV1`](?id=configvaluev1) &#124; `undefined`
 
 </div>
 

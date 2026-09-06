@@ -16,8 +16,8 @@ Shared `sandkit.api.structures` base — structure lookup and mutation.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elementId? | string \| null |  |
-| elementType? | TaggedNumber<"elementType"> \| null |  |
+| elementId? | string &#124; null |  |
+| elementType? | TaggedNumber<"elementType"> &#124; null |  |
 
 <div class="smt-member-anchors">
 
@@ -197,7 +197,7 @@ getAtCell(...args: CellCoordinates): Structure | null
 
 Return the structure at a cell, or null when none.
 
-[`Structure`](?id=structure) \| `null`
+[`Structure`](?id=structure) &#124; `null`
 
 </div>
 
@@ -285,9 +285,14 @@ getTypeFromId(structureId: string & object): StructureType
 
 [`StructureType`](?id=structuretype)
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getTypeById](?id=gettypebyid) instead.
+Use [getTypeById](api/sandkit.api.structures.worker.md?id=gettypebyid) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -335,7 +340,7 @@ isType(structure: Structure | null, structureId: string & object): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | [`Structure`](?id=structure) \\| `null` | Structure instance, or null. |
+| structure | [`Structure`](?id=structure) &#124; `null` | Structure instance, or null. |
 | structureId | `string` & `object` | Structure string id to compare. |
 
 <div class="smt-member-anchors">
@@ -614,8 +619,13 @@ setData(structure: Structure, partial: any, options?: object): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [updateData](?id=updatedata) instead.
+Use [updateData](api/sandkit.api.structures.worker.md?id=updatedata) instead.
+
+</div>
+</div>
 
 </div>

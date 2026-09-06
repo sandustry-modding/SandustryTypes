@@ -44,9 +44,14 @@ getWorldPosition(): Vector2
 
 [`Vector2`](api/shared.player.md?id=vector2)
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getPositionAtWorld](?id=getpositionatworld) instead.
+Use [getPositionAtWorld](api/sandkit.api.player.worker.md?id=getpositionatworld) instead.
+
+</div>
+</div>
 
 </div>
 

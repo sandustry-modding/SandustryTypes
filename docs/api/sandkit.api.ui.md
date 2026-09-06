@@ -180,7 +180,7 @@ Focusable element state from useFocusable.
 | disabled? | boolean | When true, skip this element during navigation. |
 | x? | number | Optional grid column for spatial navigation. |
 | y? | number | Optional grid row for spatial navigation. |
-| neighbors? | Partial<Record<"left" \| "right" \| "up" \| "down", string>> | Neighbor ids for directional navigation. |
+| neighbors? | Partial<Record<"left" &#124; "right" &#124; "up" &#124; "down", string>> | Neighbor ids for directional navigation. |
 | scrollIntoView? | boolean | When true, scroll the element into view on focus. |
 
 <div class="smt-member-anchors">
@@ -484,7 +484,7 @@ prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedTex
 
 Show a prompt dialog.
 
-`Promise`\<`string` \| `null`\> Promise that resolves with entered text, or null when cancelled.
+`Promise`\<`string` &#124; `null`\> Promise that resolves with entered text, or null when cancelled.
 
 #### Example
 

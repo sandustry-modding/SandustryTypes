@@ -197,7 +197,7 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for an id, or undefined.
 
-[`ItemDefinition`](?id=itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
+[`ItemDefinition`](?id=itemdefinition)\<`unknown`, `unknown`\> &#124; `undefined`
 
 </div>
 
@@ -245,7 +245,7 @@ getActive(): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for the active hotbar slot.
 
-[`ItemDefinition`](?id=itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
+[`ItemDefinition`](?id=itemdefinition)\<`unknown`, `unknown`\> &#124; `undefined`
 
 </div>
 

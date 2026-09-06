@@ -544,7 +544,7 @@ Save slot id.
 
 ###### Returns
 
-`Promise`\<[`ElectronSuccessResult`](?id=electronsuccessresult) \| [`ElectronFailureResult`](?id=electronfailureresult)\>
+`Promise`\<[`ElectronSuccessResult`](?id=electronsuccessresult) &#124; [`ElectronFailureResult`](?id=electronfailureresult)\>
 
 `{ success: true }` after deleting primary and backup files.
 
@@ -570,7 +570,7 @@ Filename under the saves folder.
 
 ###### Returns
 
-`Promise`\<[`ElectronLoadResult`](?id=electronloadresult) \| `null`\>
+`Promise`\<[`ElectronLoadResult`](?id=electronloadresult) &#124; `null`\>
 
 Parsed save result, or `null` when the handler cannot resolve the file.
 
@@ -616,7 +616,7 @@ Import one save from raw exported bytes.
 
 ###### bytes
 
-`ArrayBuffer` \| `Uint8Array`\<`ArrayBufferLike`\>
+`ArrayBuffer` &#124; `Uint8Array`\<`ArrayBufferLike`\>
 
 Raw `.save` file contents.
 
@@ -676,7 +676,7 @@ Return the last-played save id JSON string.
 
 ###### Returns
 
-`string` \| `null`
+`string` &#124; `null`
 
 JSON string shaped like `{ "id": "…" }`, or `null` when unset/unreadable.
 
@@ -764,7 +764,7 @@ Return the settings JSON string from disk.
 
 ###### Returns
 
-`string` \| `null`
+`string` &#124; `null`
 
 Raw `settings.json` contents, or `null` when missing/unreadable.
 
@@ -1632,7 +1632,7 @@ Failed invoke result from save, settings, and window handlers.
 | Property | Type | Description |
 | --- | --- | --- |
 | valid | boolean | Whether the current license is valid for play. |
-| reason | string \| null | Failure reason when `valid` is false; otherwise `null`. |
+| reason | string &#124; null | Failure reason when `valid` is false; otherwise `null`. |
 | networkError | boolean | True when the check failed due to network or platform errors. |
 | cached | boolean | True when the result came from a cached license check. |
 
@@ -1736,9 +1736,9 @@ Failed load result from [ElectronBridge.load](?id=load).
 | name | string | Display name stored in the save header. |
 | timestamp | string | ISO timestamp string when the save was written. |
 | playTime? | number | Total play time in milliseconds from the save body. |
-| worldId? | string \| null | World template id, if present. |
-| worldName? | string \| null | World display name, if present. |
-| seed? | number \| null | World seed, if present. |
+| worldId? | string &#124; null | World template id, if present. |
+| worldName? | string &#124; null | World display name, if present. |
+| seed? | number &#124; null | World seed, if present. |
 | productionPoints? | number | Factory production points at save time. |
 | structureCount? | number | Number of placed structures at save time. |
 | resources? | JsonValueV1 | Resource snapshot (`gold`, `fluxite`, `artifacts`, …). |
@@ -2020,7 +2020,7 @@ Subscribe to a Workshop item.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -2046,7 +2046,7 @@ Unsubscribe from a Workshop item.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -2072,7 +2072,7 @@ Return install state for a subscribed Workshop item.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -2098,7 +2098,7 @@ Return download progress for a Workshop item.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -2124,7 +2124,7 @@ Return the Steam Workshop item state flags.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -2168,7 +2168,7 @@ Fetch Workshop item metadata.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 
@@ -2194,7 +2194,7 @@ Queue or prioritize a Workshop item download.
 
 ###### itemId
 
-`string` \| `number`
+`string` &#124; `number`
 
 Steam Workshop published file id.
 

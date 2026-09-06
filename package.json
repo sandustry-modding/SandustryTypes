@@ -103,6 +103,7 @@
     "docs:serve": "npx --yes docsify-cli serve docs",
     "test": "node --test scripts/*.test.js scripts/api-gen/*.test.js scripts/lib/*.test.js",
     "docs:links": "node scripts/api-gen/validate-links.mjs",
+    "lint": "node scripts/api-gen/validate-callouts.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit",
     "verify-package": "node scripts/verify-package.mjs",
     "validate": "npm run typecheck && npm test && npm run verify-package && npm run generate -- --schemas --check",

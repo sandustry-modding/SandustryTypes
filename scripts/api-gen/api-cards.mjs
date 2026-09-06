@@ -2,6 +2,9 @@
  * Turn TypeDoc member sections into Wayland-style API cards.
  */
 
+import { qualifyDocsifyPageLinks, rewriteMarkdownLinks } from "./docsify-links.mjs";
+import { qualifiedNameToSlug } from "./api-search.mjs";
+
 const TABLE_SECTIONS = new Set(["Parameters", "Properties"]);
 const DROP_SECTIONS = new Set(["Returns"]);
 
@@ -24,7 +27,8 @@ function escapeHtml(text) {
 function escapeTableCell(cell) {
   return String(cell)
     .replace(/\n+/g, " ")
-    .replace(/\|/g, "\\|")
+    .replace(/\\\|/g, "|")
+    .replace(/\|/g, "&#124;")
     .trim();
 }
 
@@ -255,6 +259,39 @@ function parseLead(lead) {
 }
 
 /**
+ * @param {string} body
+ * @returns {string}
+ */
+function parseDeprecatedNote(body) {
+  return body
+    .split(/\n/)
+    .map((l) => l.trim())
+    .filter((l) => l && !/^`[^`]+`$/.test(l) && !/^##### /.test(l) && !/^```/.test(l))
+    .join(" ")
+    .trim();
+}
+
+/**
+ * @param {string} note
+ * @param {string} pageRel posix path under `docs/`
+ * @returns {string}
+ */
+function renderDeprecatedHtml(note, pageRel) {
+  if (!note) return "";
+  const rewritten = qualifyDocsifyPageLinks(rewriteMarkdownLinks(note), pageRel);
+  return [
+    `<div class="smt-member-deprecated">`,
+    `<span class="smt-member-deprecated-label">Deprecated</span>`,
+    `<div class="smt-member-deprecated-note" markdown="1">`,
+    "",
+    rewritten,
+    "",
+    `</div>`,
+    `</div>`,
+  ].join("\n");
+}
+
+/**
  * @param {string} desc
  * @returns {string[]}
  */
@@ -333,6 +370,8 @@ export function collapseOfficialSee(content) {
 export function restyleApiCards(content, qualified) {
   const worker = String(qualified || "").endsWith(" (worker)");
   const base = worker ? qualified.slice(0, -" (worker)".length) : String(qualified || "");
+  const pageSlug = qualifiedNameToSlug(qualified);
+  const pageRel = pageSlug ? `api/${pageSlug}.md` : "";
   const lines = collapseOfficialSee(stripReferencesSection(content)).split(/\n/);
   /** @type {string[]} */
   const out = [];
@@ -374,6 +413,12 @@ export function restyleApiCards(content, qualified) {
 
     const badge = definedToBadge(defined);
 
+    const tables = sections.filter((s) => TABLE_SECTIONS.has(s.title));
+    const rest = sections.filter((s) => !TABLE_SECTIONS.has(s.title));
+    const deprecatedSection = rest.find((s) => s.title === "Deprecated");
+    const deprecatedNote = deprecatedSection ? parseDeprecatedNote(deprecatedSection.body) : "";
+    const restSections = rest.filter((s) => s.title !== "Deprecated");
+
     out.push(`<div class="smt-member-card">`, "");
     out.push(`### ${title} :id=${parsedH3.id}`);
     if (badge) out.push("", badge);
@@ -383,8 +428,6 @@ export function restyleApiCards(content, qualified) {
       out.push(renderSignatureHtml(parseSignatureLine(sigLine)), "");
     }
 
-    const tables = sections.filter((s) => TABLE_SECTIONS.has(s.title));
-    const rest = sections.filter((s) => !TABLE_SECTIONS.has(s.title));
     for (const section of tables) {
       const table = flattenH5Table(section.title, section.body);
       if (table.length) out.push(...table);
@@ -392,7 +435,7 @@ export function restyleApiCards(content, qualified) {
 
     out.push(...renderDescription(desc));
 
-    for (const section of rest) {
+    for (const section of restSections) {
       if (section.title === "See") {
         const body = section.body
           .split(/\n/)
@@ -413,6 +456,8 @@ export function restyleApiCards(content, qualified) {
       }
       out.push("", `#### ${section.title}`, section.body.trimEnd(), "");
     }
+
+    if (deprecatedNote) out.push("", renderDeprecatedHtml(deprecatedNote, pageRel));
 
     out.push("", `</div>`, "");
   }

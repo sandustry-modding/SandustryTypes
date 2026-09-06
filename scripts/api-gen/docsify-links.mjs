@@ -112,6 +112,23 @@ export function rewriteMarkdownLinks(content) {
 }
 
 /**
+ * Docsify does not route bare `?id=` links inside HTML `markdown="1"` blocks.
+ * Qualify them with the hosting page path from the docs root.
+ *
+ * @param {string} content
+ * @param {string} pageRel posix path under `docs/` (for example `api/sandkit.api.player.md`)
+ * @returns {string}
+ */
+export function qualifyDocsifyPageLinks(content, pageRel) {
+  const page = String(pageRel || "").trim().replace(/^\//, "");
+  if (!page) return String(content || "");
+  return String(content || "").replace(
+    /\[([^\]]+)\]\(\?id=([^)\s]+)\)/g,
+    (_match, label, id) => `[${label}](${page}?id=${id})`,
+  );
+}
+
+/**
  * @param {string} headingText heading line without leading hashes
  * @param {(s: string) => string} slugify
  * @returns {string}
@@ -340,6 +357,113 @@ export function validateDocsifyLinks(files, fileExists) {
           href: link.href,
           message: `missing heading id "${target.id}" in ${target.file}`,
         });
+      }
+    }
+  }
+
+  return errors;
+}
+
+const DEPRECATED_NOTE_RE =
+  /<div class="smt-member-deprecated-note"([^>]*)>([\s\S]*?)<\/div>/g;
+
+/**
+ * Enforce Docsify routing rules on generated deprecated callouts.
+ * Notes must use `markdown="1"` and markdown links, not raw HTML anchors.
+ *
+ * @param {Array<{ rel: string, content: string }>} files
+ * @param {(rel: string) => boolean} fileExists
+ * @returns {LinkError[]}
+ */
+export function validateDeprecatedCallouts(files, fileExists) {
+  /** @type {Map<string, Set<string>>} */
+  const idsByFile = new Map();
+  /** @type {Set<string>} */
+  const relSet = new Set();
+
+  for (const file of files) {
+    relSet.add(file.rel);
+    idsByFile.set(file.rel, collectHeadingIds(file.content));
+  }
+
+  /** @type {LinkError[]} */
+  const errors = [];
+
+  for (const file of files) {
+    if (!file.content.includes("smt-member-deprecated-note")) continue;
+
+    let match;
+    DEPRECATED_NOTE_RE.lastIndex = 0;
+    while ((match = DEPRECATED_NOTE_RE.exec(file.content))) {
+      const attrs = match[1] || "";
+      const body = match[2] || "";
+      const line = file.content.slice(0, match.index).split("\n").length;
+
+      if (!/\bmarkdown\s*=\s*["']1["']/.test(attrs)) {
+        errors.push({
+          file: file.rel,
+          line,
+          href: "",
+          message: 'deprecated callout note must use markdown="1" for Docsify routing',
+        });
+      }
+
+      if (/<a\s/i.test(body)) {
+        errors.push({
+          file: file.rel,
+          line,
+          href: "",
+          message: "deprecated callout must use markdown links, not HTML <a> tags",
+        });
+        continue;
+      }
+
+      if (/\[[^\]]+\]\(\?id=/i.test(body)) {
+        errors.push({
+          file: file.rel,
+          line,
+          href: "",
+          message:
+            "deprecated callout links must include the page path (api/page.md?id=...); bare ?id= breaks Docsify inside HTML blocks",
+        });
+      }
+
+      const bodyStartLine = line + (match[0].slice(0, match[0].indexOf(body)).split("\n").length - 1);
+      for (const link of extractMarkdownLinks(body)) {
+        const target = resolveDocsifyTarget(link.href, file.rel);
+        if (target.skip) continue;
+        if (target.reason && !target.file) {
+          errors.push({
+            file: file.rel,
+            line: bodyStartLine,
+            href: link.href,
+            message: target.reason,
+          });
+          continue;
+        }
+        if (!target.file) continue;
+
+        const exists = relSet.has(target.file) || fileExists(target.file);
+        if (!exists) {
+          errors.push({
+            file: file.rel,
+            line: bodyStartLine,
+            href: link.href,
+            message: `missing file ${target.file}`,
+          });
+          continue;
+        }
+
+        if (!target.id || !target.file.endsWith(".md")) continue;
+        const ids = idsByFile.get(target.file) || collectHeadingIds("");
+        if (!ids.has(target.id)) {
+          errors.push({
+            file: file.rel,
+            line: bodyStartLine,
+            href: link.href,
+            message: `missing heading id "${target.id}" in ${target.file}`,
+          });
+        }
       }
     }
   }

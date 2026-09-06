@@ -31,7 +31,7 @@ get(key: string): JsonValueV1 | undefined
 
 Returns a config value by key, or undefined when missing.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
 
 </div>
 

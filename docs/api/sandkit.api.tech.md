@@ -147,7 +147,7 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 Return a tech definition by string id.
 
-[`TechDefinition`](?id=techdefinition) \| `undefined`
+[`TechDefinition`](?id=techdefinition) &#124; `undefined`
 
 </div>
 
@@ -260,9 +260,14 @@ addDefinition(techId: TechGridId, definition: TechDefinition): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [registerDefinition](?id=registerdefinition) instead.
+Use [registerDefinition](api/sandkit.api.tech.md?id=registerdefinition) instead.
+
+</div>
+</div>
 
 </div>
 

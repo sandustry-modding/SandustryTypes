@@ -56,8 +56,13 @@ addFromId(itemId: string): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [addById](?id=addbyid) instead.
+Use [addById](api/sandkit.api.player.inventory.md?id=addbyid) instead.
+
+</div>
+</div>
 
 </div>

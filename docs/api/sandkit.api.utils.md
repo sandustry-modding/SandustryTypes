@@ -159,8 +159,13 @@ getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 
 [`Vector2`](api/shared.player.md?id=vector2)[]
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getCoordinatesBetweenCells](?id=getcoordinatesbetweencells) instead.
+Use [getCoordinatesBetweenCells](api/sandkit.api.utils.md?id=getcoordinatesbetweencells) instead.
+
+</div>
+</div>
 
 </div>

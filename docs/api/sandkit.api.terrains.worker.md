@@ -70,8 +70,8 @@ Terrain definition shape for register and [getDefinitionByType](?id=getdefinitio
 | Property | Type | Description |
 | --- | --- | --- |
 | cellType | TerrainType | Numeric terrain cell type. |
-| hitPoints | number \| null | Current hit points, or null when the terrain has no hp. |
-| ~~hp?~~ | number \| null |  |
+| hitPoints | number &#124; null | Current hit points, or null when the terrain has no hp. |
+| ~~hp?~~ | number &#124; null |  |
 
 <div class="smt-member-anchors">
 
@@ -251,9 +251,14 @@ getTypeFromId(terrainId: string & object): TerrainType
 
 [`TerrainType`](?id=terraintype)
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getTypeById](?id=gettypebyid) instead.
+Use [getTypeById](api/sandkit.api.terrains.worker.md?id=gettypebyid) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -283,7 +288,7 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 Look up the definition for a terrain type.
 
-[`TerrainDefinition`](?id=terraindefinition) \| `undefined`
+[`TerrainDefinition`](?id=terraindefinition) &#124; `undefined`
 
 </div>
 
@@ -313,7 +318,7 @@ getTypeAtCell(...args: CellCoordinates): TerrainType | null
 
 Return the terrain cell type at a cell, or null when none.
 
-[`TerrainType`](?id=terraintype) \| `null`
+[`TerrainType`](?id=terraintype) &#124; `null`
 
 </div>
 
@@ -343,7 +348,7 @@ getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 
 Return terrain cell type and hit points at a cell.
 
-[`TerrainDataAtCell`](?id=terraindataatcell) \| `null` Cell type and hit points, or null when the cell is not terrain.
+[`TerrainDataAtCell`](?id=terraindataatcell) &#124; `null` Cell type and hit points, or null when the cell is not terrain.
 
 </div>
 
@@ -625,8 +630,13 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setHitPointsAtCell](?id=sethitpointsatcell) instead.
+Use [setHitPointsAtCell](api/sandkit.api.terrains.worker.md?id=sethitpointsatcell) instead.
+
+</div>
+</div>
 
 </div>

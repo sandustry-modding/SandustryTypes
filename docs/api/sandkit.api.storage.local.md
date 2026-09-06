@@ -30,7 +30,7 @@ get(key: string): JsonValueV1 | undefined
 
 Read a local storage value by key.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
 
 </div>
 

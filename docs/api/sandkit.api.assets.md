@@ -101,7 +101,7 @@ getSelectedProvider(kind: string): AssetProviderV1 | null
 
 Returns the selected provider for an asset kind, or null.
 
-[`AssetProviderV1`](?id=assetproviderv1) \| `null`
+[`AssetProviderV1`](?id=assetproviderv1) &#124; `null`
 
 </div>
 
@@ -122,7 +122,7 @@ selectProvider(kind: string, providerId: string | null): boolean
 | Argument | Type | Description |
 | --- | --- | --- |
 | kind | `string` | Asset kind identifier. |
-| providerId | `string` \\| `null` | Provider id from [getSelectedProvider](?id=getselectedprovider), or null to clear. |
+| providerId | `string` &#124; `null` | Provider id from [getSelectedProvider](?id=getselectedprovider), or null to clear. |
 
 <div class="smt-member-anchors">
 

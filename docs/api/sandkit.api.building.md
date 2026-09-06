@@ -103,7 +103,7 @@ selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef |
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \\| [`StructureType`](api/sandkit.api.building.StructureType.md) | Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
+| structureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) &#124; [`StructureType`](api/sandkit.api.building.StructureType.md) | Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
 
 <div class="smt-member-anchors">
 
@@ -113,6 +113,6 @@ selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef |
 
 Select a structure for placement by type or id.
 
-[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \| `null` Resolved selection, or null when the type or id is invalid.
+[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) &#124; `null` Resolved selection, or null when the type or id is invalid.
 
 </div>

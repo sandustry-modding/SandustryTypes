@@ -68,7 +68,7 @@ Removes the laser from the scene.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| style? | "implode" \| "explode" | Distortion style: implode or explode. |
+| style? | "implode" &#124; "explode" | Distortion style: implode or explode. |
 | duration? | number | Effect duration in seconds. |
 | maxRadius? | number | Maximum radius of the wave. |
 | intensity? | number | Visual intensity of the distortion. |
@@ -305,9 +305,14 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [createAtWorld](?id=createatworld) instead.
+Use [createAtWorld](api/sandkit.api.effects.md?id=createatworld) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -343,9 +348,14 @@ createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptio
 
 lightId: number | null optional index?: number | null
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
 Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md?id=createatworld) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -457,9 +467,14 @@ removeLightById(lightId: number): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
 Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md?id=removebyid) instead.
+
+</div>
+</div>
 
 </div>
 

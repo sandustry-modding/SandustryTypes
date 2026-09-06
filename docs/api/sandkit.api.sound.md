@@ -322,9 +322,14 @@ stopById(soundId: string): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [stopBySoundId](?id=stopbysoundid) instead.
+Use [stopBySoundId](api/sandkit.api.sound.md?id=stopbysoundid) instead.
+
+</div>
+</div>
 
 </div>
 

@@ -254,9 +254,14 @@ swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCel
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [swapBetweenCells](?id=swapbetweencells) instead.
+Use [swapBetweenCells](api/sandkit.api.elements.worker.md?id=swapbetweencells) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -312,9 +317,14 @@ markMovementBlockedByElementIndex(elementIndex: number): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [markMovementBlockedByIndex](?id=markmovementblockedbyindex) instead.
+Use [markMovementBlockedByIndex](api/sandkit.api.elements.worker.md?id=markmovementblockedbyindex) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -454,7 +464,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` \\| `2` \\| `3` \\| `4`, `number`\] |  |
+| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
 
 <div class="smt-member-anchors">
 

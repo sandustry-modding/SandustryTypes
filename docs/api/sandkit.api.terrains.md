@@ -151,9 +151,14 @@ createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOption
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [createAtCell](?id=createatcell) instead.
+Use [createAtCell](api/sandkit.api.terrains.md?id=createatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -209,9 +214,14 @@ replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptio
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [replaceAtCell](?id=replaceatcell) instead.
+Use [replaceAtCell](api/sandkit.api.terrains.md?id=replaceatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -267,9 +277,14 @@ removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeAtCell](?id=removeatcell) instead.
+Use [removeAtCell](api/sandkit.api.terrains.md?id=removeatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -325,9 +340,14 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setHitPointsAtCell](?id=sethitpointsatcell) instead.
+Use [setHitPointsAtCell](api/sandkit.api.terrains.md?id=sethitpointsatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -355,8 +375,13 @@ setHpAtCellWhenIdle(...args: [number, number, number]): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setHitPointsAtCell](?id=sethitpointsatcell) instead.
+Use [setHitPointsAtCell](api/sandkit.api.terrains.md?id=sethitpointsatcell) instead.
+
+</div>
+</div>
 
 </div>

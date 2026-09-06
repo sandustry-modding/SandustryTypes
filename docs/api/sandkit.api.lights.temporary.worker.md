@@ -12,8 +12,8 @@ Short-lived visual effect lights.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| lightId | number \| null | Runtime light id, or null when the pool is full. |
-| ~~index?~~ | number \| null |  |
+| lightId | number &#124; null | Runtime light id, or null when the pool is full. |
+| ~~index?~~ | number &#124; null |  |
 
 <div class="smt-member-anchors">
 

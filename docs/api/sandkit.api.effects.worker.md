@@ -80,8 +80,13 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [createAtWorld](?id=createatworld) instead.
+Use [createAtWorld](api/sandkit.api.effects.worker.md?id=createatworld) instead.
+
+</div>
+</div>
 
 </div>

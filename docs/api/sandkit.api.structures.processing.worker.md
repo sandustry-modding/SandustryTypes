@@ -56,8 +56,13 @@ isEnabledAt(...args: CellCoordinates): boolean
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [isEnabledAtCell](?id=isenabledatcell) instead.
+Use [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md?id=isenabledatcell) instead.
+
+</div>
+</div>
 
 </div>

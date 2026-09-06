@@ -13,8 +13,8 @@ Main thread only.
 
 | Property | Type | Description |
 | --- | --- | --- |
-| lightId | number \| null | Assigned temporary light id, or null when creation failed. |
-| ~~index~~ | number \| null |  |
+| lightId | number &#124; null | Assigned temporary light id, or null when creation failed. |
+| ~~index~~ | number &#124; null |  |
 
 <div class="smt-member-anchors">
 

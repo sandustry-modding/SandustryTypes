@@ -60,9 +60,14 @@ setWorldPosition(worldX: number, worldY: number): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setPositionAtWorld](?id=setpositionatworld) instead.
+Use [setPositionAtWorld](api/sandkit.api.player.md?id=setpositionatworld) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -141,7 +146,7 @@ setMovementMode(mode: "normal" | "hover"): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| mode | `"normal"` \\| `"hover"` | `"normal"` for default physics, or `"hover"` for hover flight. |
+| mode | `"normal"` &#124; `"hover"` | `"normal"` for default physics, or `"hover"` for hover flight. |
 
 <div class="smt-member-anchors">
 
@@ -255,8 +260,13 @@ isWorldPositionClear(worldX: number, worldY: number): boolean
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [isPositionClearAtWorld](?id=ispositionclearatworld) instead.
+Use [isPositionClearAtWorld](api/sandkit.api.player.md?id=ispositionclearatworld) instead.
+
+</div>
+</div>
 
 </div>

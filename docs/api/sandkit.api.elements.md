@@ -617,7 +617,7 @@ findFreeCellInStructure(structureCellX: number, structureCellY: number, structur
 
 Finds a free cell inside a structure footprint, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) \| `null` Cell coordinates of a free cell, or null when none.
+[`Vector2`](api/shared.player.md?id=vector2) &#124; `null` Cell coordinates of a free cell, or null when none.
 
 </div>
 
@@ -691,9 +691,14 @@ createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [createAtCell](?id=createatcell) instead.
+Use [createAtCell](api/sandkit.api.elements.md?id=createatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -749,9 +754,14 @@ replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [replaceAtCell](?id=replaceatcell) instead.
+Use [replaceAtCell](api/sandkit.api.elements.md?id=replaceatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -807,9 +817,14 @@ removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeAtCell](?id=removeatcell) instead.
+Use [removeAtCell](api/sandkit.api.elements.md?id=removeatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -883,9 +898,14 @@ teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: numb
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [teleportBetweenCells](?id=teleportbetweencells) instead.
+Use [teleportBetweenCells](api/sandkit.api.elements.md?id=teleportbetweencells) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -947,9 +967,14 @@ setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setVelocityAtCell](?id=setvelocityatcell) instead.
+Use [setVelocityAtCell](api/sandkit.api.elements.md?id=setvelocityatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1016,9 +1041,14 @@ addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): v
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [addParticleVelocityAtCell](?id=addparticlevelocityatcell) instead.
+Use [addParticleVelocityAtCell](api/sandkit.api.elements.md?id=addparticlevelocityatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1084,9 +1114,14 @@ convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [convertToParticleAtCell](?id=converttoparticleatcell) instead.
+Use [convertToParticleAtCell](api/sandkit.api.elements.md?id=converttoparticleatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1142,9 +1177,14 @@ convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [convertFromParticleAtCell](?id=convertfromparticleatcell) instead.
+Use [convertFromParticleAtCell](api/sandkit.api.elements.md?id=convertfromparticleatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1164,7 +1204,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` \\| `2` \\| `3` \\| `4`, `number`\] |  |
+| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
 
 <div class="smt-member-anchors">
 
@@ -1192,7 +1232,7 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` \\| `2` \\| `3` \\| `4`, `number`\] |  |
+| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |  |
 
 <div class="smt-member-anchors">
 
@@ -1200,9 +1240,14 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setDataFieldAtCell](?id=setdatafieldatcell) instead.
+Use [setDataFieldAtCell](api/sandkit.api.elements.md?id=setdatafieldatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1258,9 +1303,14 @@ refreshColorAtCellWhenIdle(...args: CellCoordinates): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [refreshColorAtCell](?id=refreshcoloratcell) instead.
+Use [refreshColorAtCell](api/sandkit.api.elements.md?id=refreshcoloratcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1316,9 +1366,14 @@ setPhysicsAtCellWhenIdle(...args: [number, number, number]): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setPhysicsAtCell](?id=setphysicsatcell) instead.
+Use [setPhysicsAtCell](api/sandkit.api.elements.md?id=setphysicsatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1387,9 +1442,14 @@ setDurationAtCellWhenIdle(...args: [number, number, number, object]): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [setDurationAtCell](?id=setdurationatcell) instead.
+Use [setDurationAtCell](api/sandkit.api.elements.md?id=setdurationatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1479,9 +1539,14 @@ getTypeFromId(elementId: string & object): ElementType
 
 [`ElementType`](?id=elementtype)
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getTypeById](?id=gettypebyid) instead.
+Use [getTypeById](api/sandkit.api.elements.md?id=gettypebyid) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1511,7 +1576,7 @@ getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 
 Look up the definition for a type handle.
 
-[`ElementDefinition`](?id=elementdefinition) \| `undefined`
+[`ElementDefinition`](?id=elementdefinition) &#124; `undefined`
 
 </div>
 
@@ -1541,7 +1606,7 @@ getTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the raw element type at a cell (may differ from resolved type).
 
-[`ElementType`](?id=elementtype) \| `null`
+[`ElementType`](?id=elementtype) &#124; `null`
 
 </div>
 
@@ -1571,7 +1636,7 @@ getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the resolved element type after overlays and particles.
 
-[`ElementType`](?id=elementtype) \| `null`
+[`ElementType`](?id=elementtype) &#124; `null`
 
 </div>
 
@@ -1601,7 +1666,7 @@ getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 
 Return the resolved element type from a packed cell id.
 
-[`ElementType`](?id=elementtype) \| `null`
+[`ElementType`](?id=elementtype) &#124; `null`
 
 </div>
 
@@ -1631,7 +1696,7 @@ getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle:
 
 Return element index, particle flag, and ids at a cell.
 
-\{ `elementType`: [`ElementType`](?id=elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} \| `null`
+\{ `elementType`: [`ElementType`](?id=elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} &#124; `null`
 
 </div>
 
@@ -1661,7 +1726,7 @@ getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 
 Return the matter category at a cell, or null when empty.
 
-[`MatterType`](api/sandkit.api.elements.MatterType.md) \| `null`
+[`MatterType`](api/sandkit.api.elements.MatterType.md) &#124; `null`
 
 </div>
 
@@ -1747,7 +1812,7 @@ getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 
 Return per-cell velocity for moving elements.
 
-\{ `x`: `number`; `y`: `number`; \} \| `null`
+\{ `x`: `number`; `y`: `number`; \} &#124; `null`
 
 </div>
 
@@ -1767,7 +1832,7 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | ...\[`number`, `number`, `1` \\| `2` \\| `3` \\| `4`\] |  |
+| args | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`\] |  |
 
 <div class="smt-member-anchors">
 
@@ -1777,6 +1842,6 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 Read element data field 1–4 at a cell.
 
-`number` \| `null`
+`number` &#124; `null`
 
 </div>

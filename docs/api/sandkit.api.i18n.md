@@ -76,7 +76,7 @@ t(key: string, params?: Record<string, string | number>): string
 | Argument | Type | Description |
 | --- | --- | --- |
 | key | `string` | Translation key. |
-| params? | `Record`\<`string`, `string` \\| `number`\> | Placeholder values for the key template. |
+| params? | `Record`\<`string`, `string` &#124; `number`\> | Placeholder values for the key template. |
 
 <div class="smt-member-anchors">
 
@@ -349,9 +349,14 @@ key(...parts: string[]): string
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [joinKey](?id=joinkey) instead.
+Use [joinKey](api/sandkit.api.i18n.md?id=joinkey) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -482,9 +487,14 @@ translatable(key: string, fallback: string): object
 
 \_\_translatable: true key: string fallback: string
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [createTranslatable](?id=createtranslatable) instead.
+Use [createTranslatable](api/sandkit.api.i18n.md?id=createtranslatable) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -505,7 +515,7 @@ setGlobal(key: string, value: string | (() => string)): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | key | `string` | Global helper key. |
-| value | `string` \\| (() => `string`) | Static string or function that returns the current value. |
+| value | `string` &#124; (() => `string`) | Static string or function that returns the current value. |
 
 <div class="smt-member-anchors">
 
@@ -545,7 +555,7 @@ getGlobal(key: string): string | undefined
 
 Returns a global translation helper value.
 
-`string` \| `undefined`
+`string` &#124; `undefined`
 
 </div>
 
@@ -601,9 +611,14 @@ clearGlobal(key: string): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeGlobal](?id=removeglobal) instead.
+Use [removeGlobal](api/sandkit.api.i18n.md?id=removeglobal) instead.
+
+</div>
+</div>
 
 </div>
 

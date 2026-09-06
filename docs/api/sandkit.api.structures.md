@@ -110,7 +110,7 @@ tooltipHover: {
 | --- | --- | --- |
 | param | string |  |
 | field | string |  |
-| fallback? | string \| number |  |
+| fallback? | string &#124; number |  |
 | round? | boolean |  |
 | valueLabels? | Record<string, string> |  |
 | valueKeys? | Record<string, string> |  |
@@ -264,7 +264,7 @@ Render settings for a structure definition.
 | tooltipHover? | StructureTooltipHover | Custom hover tooltip over the built structure. |
 | rejectWhenBlocked? | boolean | Reject placement when the footprint is blocked. |
 | alwaysUnlocked? | boolean | Show in the build menu without research unlock. |
-| descriptionParams? | Record<string, string \| number> | Values interpolated into the structure description string. |
+| descriptionParams? | Record<string, string &#124; number> | Values interpolated into the structure description string. |
 
 <div class="smt-member-anchors">
 
@@ -410,7 +410,7 @@ Return the resolved element type at a cell, or null.
 
 ###### Returns
 
-[`ElementType`](api/sandkit.api.elements.md?id=elementtype) \| `null`
+[`ElementType`](api/sandkit.api.elements.md?id=elementtype) &#124; `null`
 
 ##### ~~getElementTypeAtCell()~~
 
@@ -428,7 +428,7 @@ Defined in: [sandkit/api/structures.d.ts:699](https://github.com/sandustry-moddi
 
 ###### Returns
 
-[`ElementType`](api/sandkit.api.elements.md?id=elementtype) \| `null`
+[`ElementType`](api/sandkit.api.elements.md?id=elementtype) &#124; `null`
 
 ###### Deprecated
 
@@ -519,9 +519,14 @@ Mutation writer payload accepted by the runtime.
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [StructureProcessingDefinitionV1](?id=structureprocessingdefinitionv1) with [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
+Use [StructureProcessingDefinitionV1](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1) with [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -925,9 +930,14 @@ addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: objec
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [registerVariant](?id=registervariant) instead.
+Use [registerVariant](api/sandkit.api.structures.md?id=registervariant) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1023,9 +1033,14 @@ getUnlockedTypes(): Set<StructureRef>
 
 `Set`\<[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)\>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [getAvailableTypes](?id=getavailabletypes) instead.
+Use [getAvailableTypes](api/sandkit.api.structures.md?id=getavailabletypes) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1140,9 +1155,14 @@ isUnlockedByType(structureType: StructureRef): boolean
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [isLockedByType](?id=islockedbytype) instead. Same function as [isLockedByType](?id=islockedbytype); return value is not inverted.
+Use [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype) instead. Same function as [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype); return value is not inverted.
+
+</div>
+</div>
 
 </div>
 
@@ -1240,9 +1260,14 @@ buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOption
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [buildAtCell](?id=buildatcell) instead.
+Use [buildAtCell](api/sandkit.api.structures.md?id=buildatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1298,9 +1323,14 @@ removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeAtCell](?id=removeatcell) instead.
+Use [removeAtCell](api/sandkit.api.structures.md?id=removeatcell) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1380,9 +1410,14 @@ removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: num
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeBetweenCells](?id=removebetweencells) instead.
+Use [removeBetweenCells](api/sandkit.api.structures.md?id=removebetweencells) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1453,9 +1488,14 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-Use [removeAtCells](?id=removeatcells) instead.
+Use [removeAtCells](api/sandkit.api.structures.md?id=removeatcells) instead.
+
+</div>
+</div>
 
 </div>
 
@@ -1486,8 +1526,13 @@ addProcessor(structureId: StructureRef, definition: StructureProcessorDefinition
 
 </div>
 
-#### Deprecated
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
 Use [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
+
+</div>
+</div>
 
 </div>
