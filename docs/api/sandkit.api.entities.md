@@ -62,7 +62,7 @@ getById(entityId: number): Entity | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | `number` Runtime entity id. |
+| entityId | `number` | Runtime entity id. |
 
 <div class="smt-member-anchors">
 
@@ -92,7 +92,7 @@ getAllByType(entityTypeId: string): Entity[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityTypeId | `string` | `string` Registered entity type string id. |
+| entityTypeId | `string` | Registered entity type string id. |
 
 <div class="smt-member-anchors">
 
@@ -122,9 +122,9 @@ spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityTypeId | `string` | `string` Registered entity type string id. |
-| worldX | `number` | `number` Spawn x position in world pixels. |
-| worldY | `number` | `number` Spawn y position in world pixels. |
+| entityTypeId | `string` | Registered entity type string id. |
+| worldX | `number` | Spawn x position in world pixels. |
+| worldY | `number` | Spawn y position in world pixels. |
 
 <div class="smt-member-anchors">
 
@@ -158,7 +158,7 @@ remove(entityId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | `number` Runtime entity id. |
+| entityId | `number` | Runtime entity id. |
 
 <div class="smt-member-anchors">
 
@@ -186,9 +186,9 @@ launch(entityId: number, angleRadians: number, speed?: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | `number` Runtime entity id. |
-| angleRadians | `number` | `number` Launch angle in radians. |
-| speed? | `number` | `number` Optional launch speed. |
+| entityId | `number` | Runtime entity id. |
+| angleRadians | `number` | Launch angle in radians. |
+| speed? | `number` | Optional launch speed. |
 
 <div class="smt-member-anchors">
 
@@ -220,7 +220,7 @@ startCapture(entityId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | `number` Runtime entity id. |
+| entityId | `number` | Runtime entity id. |
 
 <div class="smt-member-anchors">
 
@@ -248,7 +248,7 @@ collect(entityId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| entityId | `number` | `number` Runtime entity id. |
+| entityId | `number` | Runtime entity id. |
 
 <div class="smt-member-anchors">
 

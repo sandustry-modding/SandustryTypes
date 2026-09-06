@@ -25,7 +25,7 @@ getSnappedPositionAtCell(...args: CellCoordinates): Vector2
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -55,7 +55,7 @@ isBlockedAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -103,7 +103,7 @@ selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef |
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \&#124; [`StructureType`](api/sandkit.api.building.StructureType.md)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) &#124; [`StructureType`](api/sandkit.api.building.StructureType.md) Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
+| structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \&#124; [`StructureType`](api/sandkit.api.building.StructureType.md)</code> | Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
 
 <div class="smt-member-anchors">
 

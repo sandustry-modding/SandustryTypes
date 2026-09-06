@@ -63,7 +63,7 @@ getUrl(relativePath: string): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| relativePath | `string` | `string` Path relative to the calling mod folder. |
+| relativePath | `string` | Path relative to the calling mod folder. |
 
 <div class="smt-member-anchors">
 
@@ -91,7 +91,7 @@ getSelectedProvider(kind: string): AssetProviderV1 | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| kind | `string` | `string` Asset kind identifier. |
+| kind | `string` | Asset kind identifier. |
 
 <div class="smt-member-anchors">
 
@@ -121,8 +121,8 @@ selectProvider(kind: string, providerId: string | null): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| kind | `string` | `string` Asset kind identifier. |
-| providerId | `string` &#124; `null` | `string` &#124; `null` Provider id from [getSelectedProvider](?id=getselectedprovider), or null to clear. |
+| kind | `string` | Asset kind identifier. |
+| providerId | `string` &#124; `null` | Provider id from [getSelectedProvider](?id=getselectedprovider), or null to clear. |
 
 <div class="smt-member-anchors">
 

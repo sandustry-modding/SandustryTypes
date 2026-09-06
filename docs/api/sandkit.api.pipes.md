@@ -53,7 +53,7 @@ isAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -81,7 +81,7 @@ isEnabledAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -109,7 +109,7 @@ getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -139,7 +139,7 @@ setEnabledAtCell(...args: [number, number, boolean]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `boolean`\]</code> | ...\[`number`, `number`, `boolean`\] |
+| args | <code>...\[`number`, `number`, `boolean`\]</code> |  |
 
 <div class="smt-member-anchors">
 

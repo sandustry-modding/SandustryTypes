@@ -52,7 +52,7 @@ registerContact(definition: ContactRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`ContactRecipeDefinitionV1`](?id=contactrecipedefinitionv1)</code> | [`ContactRecipeDefinitionV1`](?id=contactrecipedefinitionv1) Contact recipe inputs, outputs, and orientation. |
+| definition | <code>[`ContactRecipeDefinitionV1`](?id=contactrecipedefinitionv1)</code> | Contact recipe inputs, outputs, and orientation. |
 
 <div class="smt-member-anchors">
 

@@ -101,7 +101,7 @@ start(mapId: string): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| mapId | `string` | `string` Custom map identifier. |
+| mapId | `string` | Custom map identifier. |
 
 <div class="smt-member-anchors">
 

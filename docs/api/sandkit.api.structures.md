@@ -672,8 +672,8 @@ register(definition: SandkitStructureDefinition, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)</code> | [`SandkitStructureDefinition`](?id=sandkitstructuredefinition) Full structure definition. |
-| options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> | When `useRawShape` is true, keep the shape matrix as-is. |
+| definition | <code>[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)</code> | Full structure definition. |
+| options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -731,9 +731,9 @@ updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStruct
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) Structure type value or string id. |
-| partial | `Partial`\<[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)\> | `Partial`\<[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)\> Fields to merge onto the definition. |
-| options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> | When `useRawShape` is true, keep the shape matrix as-is. |
+| structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | Structure type value or string id. |
+| partial | `Partial`\<[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)\> | Fields to merge onto the definition. |
+| options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -777,9 +777,9 @@ registerVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| baseStructureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) Base structure type or id. |
-| variant | <code>Variant id and supported rotation angles.</code> | Variant id and supported rotation angles. |
-| options? | <code>Optional build-mode wiring for the variant.</code> | Optional build-mode wiring for the variant. |
+| baseStructureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | Base structure type or id. |
+| variant | <code>Variant id and supported rotation angles.</code> |  |
+| options? | <code>Optional build-mode wiring for the variant.</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -839,7 +839,7 @@ addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: objec
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| baseStructureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |
+| baseStructureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> |  |
 | variant | <code>{ id: [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref); angles: `number`[] }</code> |  |
 | options? | <code>{ addBuildMode: unknown }</code> |  |
 
@@ -871,7 +871,7 @@ registerPlacementConfig(definition: PlacementConfigDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`PlacementConfigDefinition`](?id=placementconfigdefinition)</code> | [`PlacementConfigDefinition`](?id=placementconfigdefinition) Hotbar placement field configuration. |
+| definition | <code>[`PlacementConfigDefinition`](?id=placementconfigdefinition)</code> | Hotbar placement field configuration. |
 
 <div class="smt-member-anchors">
 
@@ -974,7 +974,7 @@ isBlockedByPlayerAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1002,7 +1002,7 @@ isLauncherAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1030,7 +1030,7 @@ isLockedByType(structureType: StructureRef): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureType | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) Structure type value or string id. |
+| structureType | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | Structure type value or string id. |
 
 <div class="smt-member-anchors">
 
@@ -1070,7 +1070,7 @@ isUnlockedByType(structureType: StructureRef): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureType | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |
+| structureType | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1096,8 +1096,8 @@ mapValueToSpritesheetIndex(value: number, thresholds: number[]): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| value | `number` | `number` Numeric value to map. |
-| thresholds | `number`[] | `number`[] Ascending threshold values. |
+| value | `number` | Numeric value to map. |
+| thresholds | `number`[] | Ascending threshold values. |
 
 <div class="smt-member-anchors">
 
@@ -1138,7 +1138,7 @@ buildAtCell(...args: number, number, [StructureRef, StructureBuildOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\]</code> | ...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\] |
+| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1175,7 +1175,7 @@ buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOption
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\]</code> | ...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\] |
+| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=structurebuildoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1201,7 +1201,7 @@ removeAtCell(...args: number, number, [StructureRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\]</code> | ...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\] |
+| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1238,7 +1238,7 @@ removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\]</code> | ...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\] |
+| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=structureremovaloptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1264,11 +1264,11 @@ removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, end
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startCellX | `number` | `number` Start cell column. |
-| startCellY | `number` | `number` Start cell row. |
-| endCellX | `number` | `number` End cell column. |
-| endCellY | `number` | `number` End cell row. |
-| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) Optional bulk-removal flags. |
+| startCellX | `number` | Start cell column. |
+| startCellY | `number` | Start cell row. |
+| endCellX | `number` | End cell column. |
+| endCellY | `number` | End cell row. |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> | Optional bulk-removal flags. |
 
 <div class="smt-member-anchors">
 
@@ -1313,11 +1313,11 @@ removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: num
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startCellX | `number` | `number` |
-| startCellY | `number` | `number` |
-| endCellX | `number` | `number` |
-| endCellY | `number` | `number` |
-| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) |
+| startCellX | `number` |  |
+| startCellY | `number` |  |
+| endCellX | `number` |  |
+| endCellY | `number` |  |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1351,8 +1351,8 @@ removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| positions | <code>[`Vector2`](api/shared.player.md?id=vector2)[]</code> | [`Vector2`](api/shared.player.md?id=vector2)[] Cell positions to clear. |
-| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) Optional bulk-removal flags. |
+| positions | <code>[`Vector2`](api/shared.player.md?id=vector2)[]</code> | Cell positions to clear. |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> | Optional bulk-removal flags. |
 
 <div class="smt-member-anchors">
 
@@ -1400,8 +1400,8 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| positions | <code>[`Vector2`](api/shared.player.md?id=vector2)[]</code> | [`Vector2`](api/shared.player.md?id=vector2)[] |
-| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> | [`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions) |
+| positions | <code>[`Vector2`](api/shared.player.md?id=vector2)[]</code> |  |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=structurebulkremovaloptions)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1438,8 +1438,8 @@ addProcessor(structureId: StructureRef, definition: StructureProcessorDefinition
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) |
-| definition | <code>[`StructureProcessorDefinitionV1`](?id=structureprocessordefinitionv1)</code> | [`StructureProcessorDefinitionV1`](?id=structureprocessordefinitionv1) |
+| structureId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> |  |
+| definition | <code>[`StructureProcessorDefinitionV1`](?id=structureprocessordefinitionv1)</code> |  |
 
 <div class="smt-member-anchors">
 

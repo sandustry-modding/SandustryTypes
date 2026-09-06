@@ -26,7 +26,7 @@ areAllTargetsBuilt(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -54,7 +54,7 @@ areFamilyTargetsBuilt(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -82,7 +82,7 @@ canPlaceAtActiveTarget(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -110,7 +110,7 @@ getFoundationMoveDests(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -138,7 +138,7 @@ getFoundationMoveSources(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -166,7 +166,7 @@ getTargets(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -194,7 +194,7 @@ hasDefinition(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -222,7 +222,7 @@ isStepConstrained(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -250,7 +250,7 @@ matchesFoundationMove(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -278,7 +278,7 @@ matchesFoundationRemove(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -306,7 +306,7 @@ shouldProtectActiveTargetAt(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 

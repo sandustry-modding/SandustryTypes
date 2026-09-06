@@ -49,8 +49,8 @@ register(triggerId: string, definition: MainTriggerDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| triggerId | `string` | `string` Unique trigger identifier. |
-| definition | <code>[`MainTriggerDefinition`](?id=maintriggerdefinition)</code> | [`MainTriggerDefinition`](?id=maintriggerdefinition) Interval in ticks and callback to invoke. |
+| triggerId | `string` | Unique trigger identifier. |
+| definition | <code>[`MainTriggerDefinition`](?id=maintriggerdefinition)</code> | Interval in ticks and callback to invoke. |
 
 <div class="smt-member-anchors">
 

@@ -26,7 +26,7 @@ addViabilityGold(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -54,7 +54,7 @@ canUnlockNextTier(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -82,7 +82,7 @@ ensureProcessAtLeast(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -110,7 +110,7 @@ flushDeferredLevelUps(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -138,7 +138,7 @@ getLevel(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -166,7 +166,7 @@ getProcessCount(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -194,7 +194,7 @@ getProcessRate(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -222,7 +222,7 @@ recordProcess(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -250,7 +250,7 @@ unlockNextTier(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 

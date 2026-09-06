@@ -20,9 +20,9 @@ createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` World X coordinate in pixels. |
-| worldY | `number` | `number` World Y coordinate in pixels. |
-| options? | <code>[`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions)</code> | [`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions) Brightness, duration, color, and dedup options. |
+| worldX | `number` | World X coordinate in pixels. |
+| worldY | `number` | World Y coordinate in pixels. |
+| options? | <code>[`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions)</code> | Brightness, duration, color, and dedup options. |
 
 <div class="smt-member-anchors">
 
@@ -85,7 +85,7 @@ removeById(lightId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| lightId | `number` | `number` Light id returned from [createAtWorld](?id=createatworld). |
+| lightId | `number` | Light id returned from [createAtWorld](?id=createatworld). |
 
 <div class="smt-member-anchors">
 

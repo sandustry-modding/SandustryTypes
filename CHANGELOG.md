@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- `sandkit.api.ui.select` and related dialog, region, override, hotbar, and component APIs
 - `npm run docs:links` checks markdown links against Docsify routes and heading ids
 
 ### Changed

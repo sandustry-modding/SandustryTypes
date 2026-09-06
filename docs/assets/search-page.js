@@ -164,20 +164,37 @@
       scopes.innerHTML = html;
     }
 
+    function cardChildrenHtml(parentName, children) {
+      if (!children || !children.length) return "";
+      var items = "";
+      for (var i = 0; i < children.length; i++) {
+        var child = children[i];
+        items +=
+          "<li>" +
+          '<a class="smt-api-card-child" href="' +
+          escapeHtml(child.href) +
+          '">' +
+          escapeHtml(parentName + "." + child.name) +
+          "</a></li>";
+      }
+      return '<ul class="smt-api-card-children">' + items + "</ul>";
+    }
+
     function cardHtml(card) {
       var desc = card.description
         ? '<p class="smt-api-card-desc">' + escapeHtml(card.description) + "</p>"
         : "";
       return (
         '<li class="smt-api-card">' +
+        '<div class="smt-api-card-panel">' +
         '<a class="smt-api-card-link" href="' +
         escapeHtml(card.href) +
         '">' +
-        '<span class="smt-api-card-name">' +
         escapeHtml(card.name) +
-        "</span>" +
+        "</a>" +
         desc +
-        "</a></li>"
+        cardChildrenHtml(card.name, card.children) +
+        "</div></li>"
       );
     }
 

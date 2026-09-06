@@ -38,7 +38,7 @@ getProviders(kind: string): readonly AssetProviderV1[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| kind | `string` | `string` Asset kind identifier (e.g. texture pack category). |
+| kind | `string` | Asset kind identifier (e.g. texture pack category). |
 
 <div class="smt-member-anchors">
 

@@ -436,6 +436,11 @@ function qualifyApiPages(outDir) {
 }
 
 function restyleFlattenedApiPages(outDir) {
+  const summariesPath = join(API_GEN, "generated", "namespace-summaries.json");
+  const summaries = existsSync(summariesPath)
+    ? JSON.parse(readFileSync(summariesPath, "utf8"))
+    : {};
+
   for (const filePath of walkMarkdownFiles(outDir)) {
     if (filePath.endsWith("_sidebar.md")) continue;
 
@@ -444,7 +449,7 @@ function restyleFlattenedApiPages(outDir) {
     if (!qualified) continue;
 
     const content = readFileSync(filePath, "utf8");
-    const fixed = restyleApiCards(content, qualified);
+    const fixed = restyleApiCards(content, qualified, { summaries });
     if (fixed !== content) writeFileSync(filePath, fixed);
   }
 }

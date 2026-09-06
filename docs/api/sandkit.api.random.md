@@ -18,8 +18,8 @@ int(min: number, max: number): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| min | `number` | `number` Minimum value (inclusive). |
-| max | `number` | `number` Maximum value (inclusive). |
+| min | `number` | Minimum value (inclusive). |
+| max | `number` | Maximum value (inclusive). |
 
 <div class="smt-member-anchors">
 
@@ -49,8 +49,8 @@ float(min: number, max: number): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| min | `number` | `number` Minimum value (inclusive). |
-| max | `number` | `number` Maximum value (inclusive). |
+| min | `number` | Minimum value (inclusive). |
+| max | `number` | Maximum value (inclusive). |
 
 <div class="smt-member-anchors">
 

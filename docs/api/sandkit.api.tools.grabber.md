@@ -2,13 +2,15 @@
 
 Grabber tool size and state.
 
+Available as `sandkit.api.tools.grabber`.
+
 ## Functions <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">
 
 ### sandkit.api.tools.grabber.setSize :id=setsize
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L15" target="_blank" rel="noopener">tools.d.ts:15</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L20" target="_blank" rel="noopener">tools.d.ts:20</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.tools.grabber.setSize(size: number): void">
 
@@ -20,7 +22,7 @@ setSize(size: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| size | `number` | `number` Grab radius in cells. |
+| size | `number` | Grab radius in cells. |
 
 <div class="smt-member-anchors">
 
@@ -36,7 +38,7 @@ Set grabber radius size.
 
 ### sandkit.api.tools.grabber.getSize :id=getsize
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L21" target="_blank" rel="noopener">tools.d.ts:21</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L26" target="_blank" rel="noopener">tools.d.ts:26</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.tools.grabber.getSize(): number">
 
@@ -56,7 +58,7 @@ Grab radius in cells.
 
 ### sandkit.api.tools.grabber.isActive :id=isactive
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L27" target="_blank" rel="noopener">tools.d.ts:27</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L32" target="_blank" rel="noopener">tools.d.ts:32</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.tools.grabber.isActive(): boolean">
 
@@ -76,7 +78,7 @@ True when the grabber is the active tool.
 
 ### sandkit.api.tools.grabber.isLoaded :id=isloaded
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L33" target="_blank" rel="noopener">tools.d.ts:33</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L38" target="_blank" rel="noopener">tools.d.ts:38</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.tools.grabber.isLoaded(): boolean">
 

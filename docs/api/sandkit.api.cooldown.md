@@ -46,8 +46,8 @@ check(cooldown: Cooldown, overrideTime?: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cooldown | <code>[`Cooldown`](?id=cooldown)</code> | [`Cooldown`](?id=cooldown) Cooldown state object to check and update. |
-| overrideTime? | `number` | `number` Optional timestamp (ms) instead of current game time. |
+| cooldown | <code>[`Cooldown`](?id=cooldown)</code> | Cooldown state object to check and update. |
+| overrideTime? | `number` | Optional timestamp (ms) instead of current game time. |
 
 <div class="smt-member-anchors">
 
@@ -77,8 +77,8 @@ isReady(cooldown: Cooldown, overrideTime?: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cooldown | <code>[`Cooldown`](?id=cooldown)</code> | [`Cooldown`](?id=cooldown) Cooldown state object to check. |
-| overrideTime? | `number` | `number` Optional timestamp (ms) instead of current game time. |
+| cooldown | <code>[`Cooldown`](?id=cooldown)</code> | Cooldown state object to check. |
+| overrideTime? | `number` | Optional timestamp (ms) instead of current game time. |
 
 <div class="smt-member-anchors">
 

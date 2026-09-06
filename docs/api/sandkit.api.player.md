@@ -18,8 +18,8 @@ setPositionAtWorld(worldX: number, worldY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` World x position in pixels. |
-| worldY | `number` | `number` World y position in pixels. |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -37,7 +37,7 @@ Set the player world position.
 
 ### ~~sandkit.api.player.setWorldPosition~~ :id=setworldposition
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L37" target="_blank" rel="noopener">player.d.ts:37</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L40" target="_blank" rel="noopener">player.d.ts:40</a></p>
 
 <div class="smt-member-deprecated">
 <span class="smt-member-deprecated-label">Deprecated</span>
@@ -58,8 +58,8 @@ setWorldPosition(worldX: number, worldY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` |
-| worldY | `number` | `number` |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -75,7 +75,7 @@ setWorldPosition(worldX: number, worldY: number): void
 
 ### sandkit.api.player.setVelocity :id=setvelocity
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L46" target="_blank" rel="noopener">player.d.ts:46</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L49" target="_blank" rel="noopener">player.d.ts:49</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.setVelocity(velocityX: number, velocityY: number): void">
 
@@ -87,8 +87,8 @@ setVelocity(velocityX: number, velocityY: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| velocityX | `number` | `number` Horizontal velocity in pixels per second. |
-| velocityY | `number` | `number` Vertical velocity in pixels per second. |
+| velocityX | `number` | Horizontal velocity in pixels per second. |
+| velocityY | `number` | Vertical velocity in pixels per second. |
 
 <div class="smt-member-anchors">
 
@@ -106,7 +106,7 @@ Set the player velocity.
 
 ### sandkit.api.player.setMovementSpeedMultiplier :id=setmovementspeedmultiplier
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L55" target="_blank" rel="noopener">player.d.ts:55</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L58" target="_blank" rel="noopener">player.d.ts:58</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.setMovementSpeedMultiplier(multiplier: number): void">
 
@@ -118,7 +118,7 @@ setMovementSpeedMultiplier(multiplier: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| multiplier | `number` | `number` Speed scale factor (`1` is default walk). `0` freezes movement. Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly `1`. |
+| multiplier | `number` | Speed scale factor (`1` is default walk). `0` freezes movement. Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly `1`. |
 
 <div class="smt-member-anchors">
 
@@ -134,7 +134,7 @@ Set the movement speed multiplier.
 
 ### sandkit.api.player.setMovementMode :id=setmovementmode
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L64" target="_blank" rel="noopener">player.d.ts:64</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L67" target="_blank" rel="noopener">player.d.ts:67</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.setMovementMode(mode: &quot;normal&quot; | &quot;hover&quot;): boolean">
 
@@ -146,7 +146,7 @@ setMovementMode(mode: "normal" | "hover"): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| mode | `"normal"` &#124; `"hover"` | `"normal"` &#124; `"hover"` `"normal"` for default physics, or `"hover"` for hover flight. |
+| mode | `"normal"` &#124; `"hover"` | `"normal"` for default physics, or `"hover"` for hover flight. |
 
 <div class="smt-member-anchors">
 
@@ -164,7 +164,7 @@ True when the mode changes.
 
 ### sandkit.api.player.isOnGround :id=isonground
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L74" target="_blank" rel="noopener">player.d.ts:74</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L77" target="_blank" rel="noopener">player.d.ts:77</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.isOnGround(): boolean">
 
@@ -186,7 +186,7 @@ True when the player touches solid ground.
 
 ### sandkit.api.player.teleportToGround :id=teleporttoground
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L80" target="_blank" rel="noopener">player.d.ts:80</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L83" target="_blank" rel="noopener">player.d.ts:83</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.teleportToGround(): void">
 
@@ -204,7 +204,7 @@ Move the player down until ground is found.
 
 ### sandkit.api.player.isPositionClearAtWorld :id=ispositionclearatworld
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L90" target="_blank" rel="noopener">player.d.ts:90</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L93" target="_blank" rel="noopener">player.d.ts:93</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.isPositionClearAtWorld(worldX: number, worldY: number): boolean">
 
@@ -216,8 +216,8 @@ isPositionClearAtWorld(worldX: number, worldY: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` World x position in pixels to test. |
-| worldY | `number` | `number` World y position in pixels to test. |
+| worldX | `number` | World x position in pixels to test. |
+| worldY | `number` | World y position in pixels to test. |
 
 <div class="smt-member-anchors">
 
@@ -237,7 +237,7 @@ True when the player hitbox fits at the position.
 
 ### ~~sandkit.api.player.isWorldPositionClear~~ :id=isworldpositionclear
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L96" target="_blank" rel="noopener">player.d.ts:96</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L99" target="_blank" rel="noopener">player.d.ts:99</a></p>
 
 <div class="smt-member-deprecated">
 <span class="smt-member-deprecated-label">Deprecated</span>
@@ -258,8 +258,8 @@ isWorldPositionClear(worldX: number, worldY: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` |
-| worldY | `number` | `number` |
+| worldX | `number` |  |
+| worldY | `number` |  |
 
 <div class="smt-member-anchors">
 

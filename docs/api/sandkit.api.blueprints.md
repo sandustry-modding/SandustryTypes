@@ -53,7 +53,7 @@ serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structures | <code>[`Structure`](api/sandkit.api.structures.worker.md?id=structure)[]</code> | readonly [`Structure`](api/sandkit.api.structures.worker.md?id=structure)[] Structure instances to encode. |
+| structures | <code>[`Structure`](api/sandkit.api.structures.worker.md?id=structure)[]</code> | Structure instances to encode. |
 
 <div class="smt-member-anchors">
 
@@ -83,7 +83,7 @@ localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructur
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structures | <code>[`BlueprintStructure`](?id=blueprintstructure)[]</code> | readonly [`BlueprintStructure`](?id=blueprintstructure)[] Blueprint structure records to localize. |
+| structures | <code>[`BlueprintStructure`](?id=blueprintstructure)[]</code> | Blueprint structure records to localize. |
 
 <div class="smt-member-anchors">
 

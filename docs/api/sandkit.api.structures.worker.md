@@ -146,8 +146,8 @@ forEachOfType(structureTypeOrId: StructureRef, callback: (structure: Structure) 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | <code>[`StructureRef`](?id=structureref)</code> | [`StructureRef`](?id=structureref) Structure type value or string id. |
-| callback | <code>(`structure`: [`Structure`](?id=structure)) =&gt; `void`</code> | (`structure`: [`Structure`](?id=structure)) => `void` Called once per matching structure instance. |
+| structureTypeOrId | <code>[`StructureRef`](?id=structureref)</code> | Structure type value or string id. |
+| callback | <code>(`structure`: [`Structure`](?id=structure)) =&gt; `void`</code> | Called once per matching structure instance. |
 
 <div class="smt-member-anchors">
 
@@ -187,7 +187,7 @@ getAtCell(...args: CellCoordinates): Structure | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -217,7 +217,7 @@ getDefinitionByType(structureType: StructureRef): any
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureType | <code>[`StructureRef`](?id=structureref)</code> | [`StructureRef`](?id=structureref) Structure type value or string id. |
+| structureType | <code>[`StructureRef`](?id=structureref)</code> | Structure type value or string id. |
 
 <div class="smt-member-anchors">
 
@@ -245,7 +245,7 @@ getTypeById(structureId: string & object): StructureType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` & `object` | `string` & `object` Structure string id. |
+| structureId | `string` & `object` | Structure string id. |
 
 <div class="smt-member-anchors">
 
@@ -284,7 +284,7 @@ getTypeFromId(structureId: string & object): StructureType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` & `object` | `string` & `object` |
+| structureId | `string` & `object` |  |
 
 <div class="smt-member-anchors">
 
@@ -312,7 +312,7 @@ hasBuiltAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -340,8 +340,8 @@ isType(structure: Structure | null, structureId: string & object): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=structure) \&#124; `null`</code> | [`Structure`](?id=structure) &#124; `null` Structure instance, or null. |
-| structureId | `string` & `object` | `string` & `object` Structure string id to compare. |
+| structure | <code>[`Structure`](?id=structure) \&#124; `null`</code> | Structure instance, or null. |
+| structureId | `string` & `object` | Structure string id to compare. |
 
 <div class="smt-member-anchors">
 
@@ -371,7 +371,7 @@ isTypeAtCell(...args: [number, number, string & object]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `string` &amp; `object`\]</code> | ...\[`number`, `number`, `string` & `object`\] |
+| args | <code>...\[`number`, `number`, `string` &amp; `object`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -399,8 +399,8 @@ setSpritesheetIndex(structure: Structure, index: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=structure)</code> | [`Structure`](?id=structure) Target structure instance. |
-| index | `number` | `number` Spritesheet frame index. |
+| structure | <code>[`Structure`](?id=structure)</code> | Target structure instance. |
+| index | `number` | Spritesheet frame index. |
 
 <div class="smt-member-anchors">
 
@@ -430,7 +430,7 @@ setSpritesheetIndexAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
+| args | <code>...\[`number`, `number`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -458,9 +458,9 @@ setSpritesheetIndexByValue(structure: Structure, value: number, thresholds: numb
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=structure)</code> | [`Structure`](?id=structure) Target structure instance. |
-| value | `number` | `number` Numeric value mapped through thresholds. |
-| thresholds | `number`[] | `number`[] Ascending threshold values. |
+| structure | <code>[`Structure`](?id=structure)</code> | Target structure instance. |
+| value | `number` | Numeric value mapped through thresholds. |
+| thresholds | `number`[] | Ascending threshold values. |
 
 <div class="smt-member-anchors">
 
@@ -492,7 +492,7 @@ setSpritesheetIndexByValueAtCell(...args: [number, number, number, number[]]): v
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`, `number`[]\]</code> | ...\[`number`, `number`, `number`, `number`[]\] |
+| args | <code>...\[`number`, `number`, `number`, `number`[]\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -520,8 +520,8 @@ update(structure: Structure, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=structure)</code> | [`Structure`](?id=structure) Structure instance to update. |
-| options? | <code>When `propagateToWorkers` is true, sync to worker threads.</code> | When `propagateToWorkers` is true, sync to worker threads. |
+| structure | <code>[`Structure`](?id=structure)</code> | Structure instance to update. |
+| options? | <code>When `propagateToWorkers` is true, sync to worker threads.</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -559,9 +559,9 @@ updateData(structure: Structure, partial: any, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=structure)</code> | [`Structure`](?id=structure) Structure instance to update. |
-| partial | `any` | `any` Fields to merge onto `structure.data`. |
-| options? | <code>When `propagateToWorkers` is true, sync to worker threads.</code> | When `propagateToWorkers` is true, sync to worker threads. |
+| structure | <code>[`Structure`](?id=structure)</code> | Structure instance to update. |
+| partial | `any` | Fields to merge onto `structure.data`. |
+| options? | <code>When `propagateToWorkers` is true, sync to worker threads.</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -614,8 +614,8 @@ setData(structure: Structure, partial: any, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=structure)</code> | [`Structure`](?id=structure) |
-| partial | `any` | `any` |
+| structure | <code>[`Structure`](?id=structure)</code> |  |
+| partial | `any` |  |
 | options? | <code>{ propagateToWorkers: boolean }</code> |  |
 
 <div class="smt-member-anchors">

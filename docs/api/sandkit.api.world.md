@@ -31,7 +31,7 @@ runWhenSimulationIdle(callback: () => void): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | <code>() =&gt; `void`</code> | () => `void` |
+| callback | <code>() =&gt; `void`</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -66,7 +66,7 @@ redrawAroundCellWhenIdle(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
+| args | <code>...\[`number`, `number`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 

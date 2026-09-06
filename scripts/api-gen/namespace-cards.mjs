@@ -117,15 +117,24 @@ export function docsifyHash(apiMdHref) {
 }
 
 /**
- * @param {{ name: string, typedocRel: string }} node
+ * @param {{ name: string, typedocRel: string, children?: unknown[] }} node
  * @param {(rel: string) => string} href
  * @param {Record<string, { description?: string }>} [summaries]
  */
 export function cardFromNode(node, href, summaries = {}) {
+  const children = Array.isArray(node.children)
+    ? node.children
+        .map((child) => ({
+          name: child.name,
+          href: docsifyHash(href(child.typedocRel)),
+        }))
+        .sort((a, b) => a.name.localeCompare(b.name))
+    : [];
   return {
     name: node.name,
     href: docsifyHash(href(node.typedocRel)),
     description: summaries[node.name]?.description || "",
+    children,
   };
 }
 

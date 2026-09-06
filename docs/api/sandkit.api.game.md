@@ -44,7 +44,7 @@ start(options?: GameStartOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options? | <code>[`GameStartOptions`](?id=gamestartoptions)</code> | [`GameStartOptions`](?id=gamestartoptions) Optional session start flags. |
+| options? | <code>[`GameStartOptions`](?id=gamestartoptions)</code> | Optional session start flags. |
 
 <div class="smt-member-anchors">
 

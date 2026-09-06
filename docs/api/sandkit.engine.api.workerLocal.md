@@ -25,7 +25,7 @@ clear(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -53,7 +53,7 @@ get(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -81,7 +81,7 @@ getOrInit(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -109,7 +109,7 @@ set(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 

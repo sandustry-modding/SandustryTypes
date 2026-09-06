@@ -65,9 +65,9 @@ createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` World x position in pixels. |
-| worldY | `number` | `number` World y position in pixels. |
-| options? | <code>[`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions)</code> | [`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions) Brightness, duration, colour, and dedup settings. |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
+| options? | <code>[`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions)</code> | Brightness, duration, colour, and dedup settings. |
 
 <div class="smt-member-anchors">
 

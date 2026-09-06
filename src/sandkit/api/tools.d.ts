@@ -2,11 +2,16 @@
  * Tool-specific API helpers.
  *
  * Available as `sandkit.api.tools`.
+ * Grabber controls live under {@link grabber | sandkit.api.tools.grabber}.
  *
  * @module
  */
 export namespace tools {
-  /** Grabber tool size and state. */
+  /**
+   * Grabber tool size and state.
+   *
+   * Available as `sandkit.api.tools.grabber`.
+   */
   export namespace grabber {
     /**
      * Set grabber radius size.

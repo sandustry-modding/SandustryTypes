@@ -849,7 +849,7 @@ ElectronIpcListener = (...args: unknown[]) => void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Event-specific payload from the main process (often empty). |
+| args | <code>...`unknown`[]</code> | Event-specific payload from the main process (often empty). |
 
 <div class="smt-member-anchors">
 

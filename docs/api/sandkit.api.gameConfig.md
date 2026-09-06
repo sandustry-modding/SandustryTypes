@@ -21,7 +21,7 @@ get(key: string): JsonValueV1 | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | `string` Game config key (merged defaults and overrides). |
+| key | `string` | Game config key (merged defaults and overrides). |
 
 <div class="smt-member-anchors">
 

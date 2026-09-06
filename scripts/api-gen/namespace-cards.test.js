@@ -64,6 +64,37 @@ test("cardFromNode copies the summary description", () => {
   assert.equal(card.name, "player");
   assert.equal(card.href, "#/api/sandkit.api.player");
   assert.equal(card.description, "Move the player.");
+  assert.deepEqual(card.children, []);
+});
+
+test("cardFromNode lists child namespaces for browse chips", () => {
+  const card = cardFromNode(
+    {
+      name: "player",
+      typedocRel: "sandkit/api/namespaces/player/README.md",
+      children: [
+        {
+          name: "inventory",
+          typedocRel: "sandkit/api/namespaces/player/namespaces/inventory/README.md",
+        },
+        {
+          name: "buildings",
+          typedocRel: "sandkit/api/namespaces/player/namespaces/buildings/README.md",
+        },
+      ],
+    },
+    (rel) => {
+      if (rel.includes("inventory")) return "api/sandkit.api.player.inventory.md";
+      if (rel.includes("buildings")) return "api/sandkit.api.player.buildings.md";
+      return "api/sandkit.api.player.md";
+    },
+  );
+  assert.deepEqual(
+    card.children.map((child) => child.name),
+    ["buildings", "inventory"],
+  );
+  assert.equal(card.children[0].href, "#/api/sandkit.api.player.buildings");
+  assert.equal(card.children[1].href, "#/api/sandkit.api.player.inventory");
 });
 
 test("buildBrowseCatalog groups main leftovers as Other", () => {

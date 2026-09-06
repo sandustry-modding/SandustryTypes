@@ -54,7 +54,7 @@ register(definition: TerrainDefinition): object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`TerrainDefinition`](?id=terraindefinition)</code> | [`TerrainDefinition`](?id=terraindefinition) Terrain definition to register. |
+| definition | <code>[`TerrainDefinition`](?id=terraindefinition)</code> | Terrain definition to register. |
 
 <div class="smt-member-anchors">
 
@@ -84,8 +84,8 @@ updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>):
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellTypeOrId | <code>[`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref)</code> | [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref) Numeric cell type or terrain string id. |
-| partial | `Partial`\<[`TerrainDefinition`](?id=terraindefinition)\> | `Partial`\<[`TerrainDefinition`](?id=terraindefinition)\> Fields to merge onto the definition. |
+| cellTypeOrId | <code>[`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref)</code> | Numeric cell type or terrain string id. |
+| partial | `Partial`\<[`TerrainDefinition`](?id=terraindefinition)\> | Fields to merge onto the definition. |
 
 <div class="smt-member-anchors">
 
@@ -115,7 +115,7 @@ createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -152,7 +152,7 @@ createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOption
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -178,7 +178,7 @@ replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -215,7 +215,7 @@ replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptio
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -241,7 +241,7 @@ removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
+| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -278,7 +278,7 @@ removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\] |
+| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -304,7 +304,7 @@ setHitPointsAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
+| args | <code>...\[`number`, `number`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -341,7 +341,7 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
+| args | <code>...\[`number`, `number`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -376,7 +376,7 @@ setHpAtCellWhenIdle(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
+| args | <code>...\[`number`, `number`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 

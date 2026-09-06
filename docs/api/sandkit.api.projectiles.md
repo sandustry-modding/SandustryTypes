@@ -110,7 +110,7 @@ register(definition: ProjectileDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`ProjectileDefinition`](?id=projectiledefinition)</code> | [`ProjectileDefinition`](?id=projectiledefinition) Projectile id, sprite, and runtime options factory. |
+| definition | <code>[`ProjectileDefinition`](?id=projectiledefinition)</code> | Projectile id, sprite, and runtime options factory. |
 
 <div class="smt-member-anchors">
 
@@ -138,7 +138,7 @@ getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectileId | `string` | `string` Registered projectile id. |
+| projectileId | `string` | Registered projectile id. |
 
 <div class="smt-member-anchors">
 
@@ -168,7 +168,7 @@ createBlueprintFromId(projectileId: string): ProjectileBlueprint
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectileId | `string` | `string` Registered projectile id. |
+| projectileId | `string` | Registered projectile id. |
 
 <div class="smt-member-anchors">
 
@@ -218,7 +218,7 @@ getById(projectileId: number): Projectile | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectileId | `number` | `number` Runtime projectile id. |
+| projectileId | `number` | Runtime projectile id. |
 
 <div class="smt-member-anchors">
 
@@ -248,7 +248,7 @@ remove(projectile: Projectile): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectile | <code>[`Projectile`](?id=projectile)</code> | [`Projectile`](?id=projectile) Projectile instance to remove. |
+| projectile | <code>[`Projectile`](?id=projectile)</code> | Projectile instance to remove. |
 
 <div class="smt-member-anchors">
 
@@ -276,10 +276,10 @@ spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: Projectil
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` Spawn x position in world pixels. |
-| worldY | `number` | `number` Spawn y position in world pixels. |
-| angle | `number` | `number` Launch angle in radians. |
-| blueprint | <code>[`ProjectileBlueprint`](?id=projectileblueprint)</code> | [`ProjectileBlueprint`](?id=projectileblueprint) Blueprint from [createBlueprintFromId](?id=createblueprintfromid). |
+| worldX | `number` | Spawn x position in world pixels. |
+| worldY | `number` | Spawn y position in world pixels. |
+| angle | `number` | Launch angle in radians. |
+| blueprint | <code>[`ProjectileBlueprint`](?id=projectileblueprint)</code> | Blueprint from [createBlueprintFromId](?id=createblueprintfromid). |
 
 <div class="smt-member-anchors">
 

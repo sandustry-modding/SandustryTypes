@@ -26,7 +26,7 @@ absorbAdjacentElements(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -54,7 +54,7 @@ addTemperature(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -82,7 +82,7 @@ computeDiffusedTemperatures(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -110,7 +110,7 @@ computeEqualizedTemperature(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -138,7 +138,7 @@ consumeTemperatureNear(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -166,7 +166,7 @@ ensureTemperature(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -194,7 +194,7 @@ equalizeConnected(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 

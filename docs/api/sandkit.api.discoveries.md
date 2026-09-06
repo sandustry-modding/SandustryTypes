@@ -21,7 +21,7 @@ addElementByType(elementType: ElementType): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | <code>[`ElementType`](api/sandkit.api.elements.md?id=elementtype)</code> | [`ElementType`](api/sandkit.api.elements.md?id=elementtype) Numeric element type id. |
+| elementType | <code>[`ElementType`](api/sandkit.api.elements.md?id=elementtype)</code> | Numeric element type id. |
 
 <div class="smt-member-anchors">
 
@@ -49,7 +49,7 @@ addTerrainByType(terrainType: TerrainType): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainType | <code>[`TerrainType`](api/sandkit.api.terrains.worker.md?id=terraintype)</code> | [`TerrainType`](api/sandkit.api.terrains.worker.md?id=terraintype) Numeric terrain type id. |
+| terrainType | <code>[`TerrainType`](api/sandkit.api.terrains.worker.md?id=terraintype)</code> | Numeric terrain type id. |
 
 <div class="smt-member-anchors">
 

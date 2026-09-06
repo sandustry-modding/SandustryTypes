@@ -26,7 +26,7 @@ createLight(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -54,7 +54,7 @@ getAll(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -82,7 +82,7 @@ getAllByType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -110,7 +110,7 @@ getAllTypeDefs(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -138,7 +138,7 @@ getSprite(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -166,7 +166,7 @@ getTypeDef(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -194,7 +194,7 @@ launch(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -222,7 +222,7 @@ registerSpawner(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -250,7 +250,7 @@ registerType(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -278,7 +278,7 @@ spawn(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 
@@ -306,7 +306,7 @@ startCapture(...args: unknown[]): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] Game state first, then method-specific arguments. |
+| args | <code>...`unknown`[]</code> | Game state first, then method-specific arguments. |
 
 <div class="smt-member-anchors">
 

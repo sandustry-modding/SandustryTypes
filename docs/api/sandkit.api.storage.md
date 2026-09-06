@@ -18,7 +18,7 @@ ensure(modId: string): JsonObjectV1
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| modId | `string` | `string` Mod identifier (typically `modinfo.id`). |
+| modId | `string` | Mod identifier (typically `modinfo.id`). |
 
 <div class="smt-member-anchors">
 
@@ -48,8 +48,8 @@ get(modId: string, key: string): JsonValueV1 | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| modId | `string` | `string` Mod identifier. |
-| key | `string` | `string` Storage key. |
+| modId | `string` | Mod identifier. |
+| key | `string` | Storage key. |
 
 <div class="smt-member-anchors">
 
@@ -81,9 +81,9 @@ set(modId: string, key: string, value: JsonValueV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| modId | `string` | `string` Mod identifier. |
-| key | `string` | `string` Storage key. |
-| value | <code>[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)</code> | [`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) JSON-serializable value. |
+| modId | `string` | Mod identifier. |
+| key | `string` | Storage key. |
+| value | <code>[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)</code> | JSON-serializable value. |
 
 <div class="smt-member-anchors">
 
@@ -115,8 +115,8 @@ remove(modId: string, key: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| modId | `string` | `string` Mod identifier. |
-| key | `string` | `string` Storage key. |
+| modId | `string` | Mod identifier. |
+| key | `string` | Storage key. |
 
 <div class="smt-member-anchors">
 

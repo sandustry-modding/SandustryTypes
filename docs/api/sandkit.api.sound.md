@@ -145,8 +145,8 @@ play(soundId: string, options?: SoundOptions): SoundHandle
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` | `string` Registered sound identifier. |
-| options? | <code>[`SoundOptions`](?id=soundoptions)</code> | [`SoundOptions`](?id=soundoptions) Volume, position, playback rate, and rate-limit options. |
+| soundId | `string` | Registered sound identifier. |
+| options? | <code>[`SoundOptions`](?id=soundoptions)</code> | Volume, position, playback rate, and rate-limit options. |
 
 <div class="smt-member-anchors">
 
@@ -178,8 +178,8 @@ playActive(soundId: string, options?: SoundOptions): SoundHandle
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` | `string` Registered sound identifier. |
-| options? | <code>[`SoundOptions`](?id=soundoptions)</code> | [`SoundOptions`](?id=soundoptions) Volume, position, playback rate, and rate-limit options. |
+| soundId | `string` | Registered sound identifier. |
+| options? | <code>[`SoundOptions`](?id=soundoptions)</code> | Volume, position, playback rate, and rate-limit options. |
 
 <div class="smt-member-anchors">
 
@@ -211,8 +211,8 @@ playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| layers | <code>[`SoundLayer`](?id=soundlayer)[]</code> | [`SoundLayer`](?id=soundlayer)[] Layer definitions (sound id, volume, delay, and per-layer options). |
-| options? | <code>[`SoundLayersOptions`](?id=soundlayersoptions)</code> | [`SoundLayersOptions`](?id=soundlayersoptions) Shared position, volume, and rate-limit options for all layers. |
+| layers | <code>[`SoundLayer`](?id=soundlayer)[]</code> | Layer definitions (sound id, volume, delay, and per-layer options). |
+| options? | <code>[`SoundLayersOptions`](?id=soundlayersoptions)</code> | Shared position, volume, and rate-limit options for all layers. |
 
 <div class="smt-member-anchors">
 
@@ -244,9 +244,9 @@ calculateDistanceOptionsAtWorld(worldX: number, worldY: number, baseVolume?: num
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` World X coordinate in pixels. |
-| worldY | `number` | `number` World Y coordinate in pixels. |
-| baseVolume? | `number` | `number` Base volume before distance attenuation. |
+| worldX | `number` | World X coordinate in pixels. |
+| worldY | `number` | World Y coordinate in pixels. |
+| baseVolume? | `number` | Base volume before distance attenuation. |
 
 <div class="smt-member-anchors">
 
@@ -280,7 +280,7 @@ stopBySoundId(soundId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` | `string` Registered sound identifier to stop. |
+| soundId | `string` | Registered sound identifier to stop. |
 
 <div class="smt-member-anchors">
 
@@ -317,7 +317,7 @@ stopById(soundId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| soundId | `string` | `string` |
+| soundId | `string` |  |
 
 <div class="smt-member-anchors">
 

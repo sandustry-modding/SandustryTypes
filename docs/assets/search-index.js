@@ -319,7 +319,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "electron.ElectronIpcListener",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Event-specific payload from the main process (often empty). args Callback registered on IPC event channels such as app-suspend.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Event-specific payload from the main process (often empty). args Callback registered on IPC event channels such as app-suspend.",
     "path": "/api/electron",
     "id": "electronipclistener"
   },
@@ -373,7 +373,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.action.setCustomData",
-    "body": "Argument Type Description --- --- --- data Input Input Serializable payload attached to the active action. data Store custom data on the active action handler. Example",
+    "body": "Argument Type Description --- --- --- data Input Serializable payload attached to the active action. data Store custom data on the active action handler. Example",
     "path": "/api/sandkit.api.action",
     "id": "setcustomdata"
   },
@@ -391,19 +391,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.assets.getUrl()",
-    "body": "Argument Type Description --- --- --- relativePath string string Path relative to the calling mod folder. relativePath Resolves a path under the mod folder to a loadable URL.",
+    "body": "Argument Type Description --- --- --- relativePath string Path relative to the calling mod folder. relativePath Resolves a path under the mod folder to a loadable URL.",
     "path": "/api/sandkit.api.assets",
     "id": "geturl"
   },
   {
     "title": "sandkit.api.assets.getSelectedProvider()",
-    "body": "Argument Type Description --- --- --- kind string string Asset kind identifier. kind Returns the selected provider for an asset kind, or null. AssetProviderV1 \\ null",
+    "body": "Argument Type Description --- --- --- kind string Asset kind identifier. kind Returns the selected provider for an asset kind, or null. AssetProviderV1 \\ null",
     "path": "/api/sandkit.api.assets",
     "id": "getselectedprovider"
   },
   {
     "title": "sandkit.api.assets.selectProvider()",
-    "body": "Argument Type Description --- --- --- kind string string Asset kind identifier. providerId string & 124; null string & 124; null Provider id from getSelectedProvider, or null to clear. kind providerId Selects a provider for an asset kind. Returns true on success.",
+    "body": "Argument Type Description --- --- --- kind string Asset kind identifier. providerId string & 124; null Provider id from getSelectedProvider, or null to clear. kind providerId Selects a provider for an asset kind. Returns true on success.",
     "path": "/api/sandkit.api.assets",
     "id": "selectprovider"
   },
@@ -415,31 +415,31 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.authorization.canBuildAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when the player may place a structure at the cell. True when building is allowed in the authorization zone.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when the player may place a structure at the cell. True when building is allowed in the authorization zone.",
     "path": "/api/sandkit.api.authorization",
     "id": "canbuildatcell"
   },
   {
     "title": "sandkit.api.authorization.canGrabAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when the player may grab at the cell. True when grabbing is allowed in the authorization zone.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when the player may grab at the cell. True when grabbing is allowed in the authorization zone.",
     "path": "/api/sandkit.api.authorization",
     "id": "cangrabatcell"
   },
   {
     "title": "sandkit.api.authorization.canUseTool()",
-    "body": "Argument Type Description --- --- --- player Player Player Player state snapshot. isFlamethrower? boolean boolean When true, apply flamethrower-specific rules. player isFlamethrower? Return true when the player may use a tool. True when tool use is allowed for the player.",
+    "body": "Argument Type Description --- --- --- player Player Player state snapshot. isFlamethrower? boolean When true, apply flamethrower-specific rules. player isFlamethrower? Return true when the player may use a tool. True when tool use is allowed for the player.",
     "path": "/api/sandkit.api.authorization",
     "id": "canusetool"
   },
   {
     "title": "sandkit.api.authorization.canUseToolAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, boolean\\] ...\\[number, number, boolean\\] args Return true when the player may use a tool at the cell. True when tool use is allowed at the cell.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, boolean\\] args Return true when the player may use a tool at the cell. True when tool use is allowed at the cell.",
     "path": "/api/sandkit.api.authorization",
     "id": "canusetoolatcell"
   },
   {
     "title": "sandkit.api.authorization.getZoneIdAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return the authorization zone id at the cell. Numeric zone id for the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return the authorization zone id at the cell. Numeric zone id for the cell.",
     "path": "/api/sandkit.api.authorization",
     "id": "getzoneidatcell"
   },
@@ -463,13 +463,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.blueprints.serializeStructures()",
-    "body": "Argument Type Description --- --- --- structures Structure[] readonly Structure[] Structure instances to encode. structures Serialize live structure instances into blueprint records. BlueprintStructure[]",
+    "body": "Argument Type Description --- --- --- structures Structure[] Structure instances to encode. structures Serialize live structure instances into blueprint records. BlueprintStructure[]",
     "path": "/api/sandkit.api.blueprints",
     "id": "serializestructures"
   },
   {
     "title": "sandkit.api.blueprints.localizeStructures()",
-    "body": "Argument Type Description --- --- --- structures BlueprintStructure[] readonly BlueprintStructure[] Blueprint structure records to localize. structures Localize blueprint structure records for placement. BlueprintStructure[]",
+    "body": "Argument Type Description --- --- --- structures BlueprintStructure[] Blueprint structure records to localize. structures Localize blueprint structure records for placement. BlueprintStructure[]",
     "path": "/api/sandkit.api.blueprints",
     "id": "localizestructures"
   },
@@ -649,13 +649,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.building.getSnappedPositionAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return the snapped world position for placement at the cell. Vector2 Snapped world position in pixels.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return the snapped world position for placement at the cell. Vector2 Snapped world position in pixels.",
     "path": "/api/sandkit.api.building",
     "id": "getsnappedpositionatcell"
   },
   {
     "title": "sandkit.api.building.isBlockedAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when placement is blocked at the cell. True when a structure cannot be placed at the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when placement is blocked at the cell. True when a structure cannot be placed at the cell.",
     "path": "/api/sandkit.api.building",
     "id": "isblockedatcell"
   },
@@ -667,7 +667,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.building.selectStructure()",
-    "body": "Argument Type Description --- --- --- structureTypeOrId StructureRef \\& 124; StructureType StructureRef & 124; StructureType Built-in StructureType value or registered structure id. structureTypeOrId Select a structure for placement by type or id. StructureRef \\ null Resolved selection, or null when the type or id is invalid.",
+    "body": "Argument Type Description --- --- --- structureTypeOrId StructureRef \\& 124; StructureType Built-in StructureType value or registered structure id. structureTypeOrId Select a structure for placement by type or id. StructureRef \\ null Resolved selection, or null when the type or id is invalid.",
     "path": "/api/sandkit.api.building",
     "id": "selectstructure"
   },
@@ -685,13 +685,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.camera.setFocusAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World x position in pixels. worldY number number World y position in pixels. worldX worldY Move camera focus to world coordinates. True when focus was applied.",
+    "body": "Argument Type Description --- --- --- worldX number World x position in pixels. worldY number World y position in pixels. worldX worldY Move camera focus to world coordinates. True when focus was applied.",
     "path": "/api/sandkit.api.camera",
     "id": "setfocusatworld"
   },
   {
     "title": "sandkit.api.camera.releaseFocus()",
-    "body": "Argument Type Description --- --- --- options? Optional transition duration in milliseconds. Optional transition duration in milliseconds. options? Release scripted focus and return control to the player. True when focus was released. Example",
+    "body": "Argument Type Description --- --- --- options? Optional transition duration in milliseconds. options? Release scripted focus and return control to the player. True when focus was released. Example",
     "path": "/api/sandkit.api.camera",
     "id": "releasefocus"
   },
@@ -703,31 +703,31 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.collector.getValueFromCellId()",
-    "body": "Argument Type Description --- --- --- cellId CellId CellId Packed cell identifier. cellId Returns the collector value for a cell id.",
+    "body": "Argument Type Description --- --- --- cellId CellId Packed cell identifier. cellId Returns the collector value for a cell id.",
     "path": "/api/sandkit.api.collector",
     "id": "getvaluefromcellid"
   },
   {
     "title": "sandkit.api.collector.getValueByType()",
-    "body": "Argument Type Description --- --- --- elementType ElementType ElementType Numeric element type id. elementType Returns the collector value for an element type.",
+    "body": "Argument Type Description --- --- --- elementType ElementType Numeric element type id. elementType Returns the collector value for an element type.",
     "path": "/api/sandkit.api.collector",
     "id": "getvaluebytype"
   },
   {
     "title": "sandkit.api.collector.isCellIdCollectable()",
-    "body": "Argument Type Description --- --- --- cellId CellId CellId Packed cell identifier. cellId Returns true when the cell id can be collected.",
+    "body": "Argument Type Description --- --- --- cellId CellId Packed cell identifier. cellId Returns true when the cell id can be collected.",
     "path": "/api/sandkit.api.collector",
     "id": "iscellidcollectable"
   },
   {
     "title": "sandkit.api.collector.isCellIdCollectableForSprite()",
-    "body": "Argument Type Description --- --- --- cellId CellId CellId Packed cell identifier. cellId Returns true when the cell id can be collected for sprite display.",
+    "body": "Argument Type Description --- --- --- cellId CellId Packed cell identifier. cellId Returns true when the cell id can be collected for sprite display.",
     "path": "/api/sandkit.api.collector",
     "id": "iscellidcollectableforsprite"
   },
   {
     "title": "sandkit.api.collector.notifyPickupAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Notifies collector logic that a pickup happened at the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Notifies collector logic that a pickup happened at the cell.",
     "path": "/api/sandkit.api.collector",
     "id": "notifypickupatcell"
   },
@@ -757,13 +757,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.cooldown.check()",
-    "body": "Argument Type Description --- --- --- cooldown Cooldown Cooldown Cooldown state object to check and update. overrideTime? number number Optional timestamp (ms) instead of current game time. cooldown overrideTime? Starts the cooldown when ready and returns true; otherwise returns false.",
+    "body": "Argument Type Description --- --- --- cooldown Cooldown Cooldown state object to check and update. overrideTime? number Optional timestamp (ms) instead of current game time. cooldown overrideTime? Starts the cooldown when ready and returns true; otherwise returns false.",
     "path": "/api/sandkit.api.cooldown",
     "id": "check"
   },
   {
     "title": "sandkit.api.cooldown.isReady()",
-    "body": "Argument Type Description --- --- --- cooldown Cooldown Cooldown Cooldown state object to check. overrideTime? number number Optional timestamp (ms) instead of current game time. cooldown overrideTime? Returns true when the cooldown has elapsed.",
+    "body": "Argument Type Description --- --- --- cooldown Cooldown Cooldown state object to check. overrideTime? number Optional timestamp (ms) instead of current game time. cooldown overrideTime? Returns true when the cooldown has elapsed.",
     "path": "/api/sandkit.api.cooldown",
     "id": "isready"
   },
@@ -775,13 +775,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.discoveries.addElementByType()",
-    "body": "Argument Type Description --- --- --- elementType ElementType ElementType Numeric element type id. elementType Marks an element type as discovered for the player.",
+    "body": "Argument Type Description --- --- --- elementType ElementType Numeric element type id. elementType Marks an element type as discovered for the player.",
     "path": "/api/sandkit.api.discoveries",
     "id": "addelementbytype"
   },
   {
     "title": "sandkit.api.discoveries.addTerrainByType()",
-    "body": "Argument Type Description --- --- --- terrainType TerrainType TerrainType Numeric terrain type id. terrainType Marks a terrain type as discovered for the player.",
+    "body": "Argument Type Description --- --- --- terrainType TerrainType Numeric terrain type id. terrainType Marks a terrain type as discovered for the player.",
     "path": "/api/sandkit.api.discoveries",
     "id": "addterrainbytype"
   },
@@ -829,43 +829,43 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.effects.createAtWorld()",
-    "body": "Argument Type Description --- --- --- effectId string string Registered effect id (for example heatWave). worldX number number World X coordinate in pixels. worldY number number World Y coordinate in pixels. options? EffectOptions EffectOptions Duration, radius, and intensity settings. effectId worldX worldY options? Creates a named screen effect at world coordinates.",
+    "body": "Argument Type Description --- --- --- effectId string Registered effect id (for example heatWave). worldX number World X coordinate in pixels. worldY number World Y coordinate in pixels. options? EffectOptions Duration, radius, and intensity settings. effectId worldX worldY options? Creates a named screen effect at world coordinates.",
     "path": "/api/sandkit.api.effects",
     "id": "createatworld"
   },
   {
     "title": "sandkit.api.effects.createEffectAtWorld",
-    "body": "Deprecated Use createAtWorld instead. Argument Type Description --- --- --- effectId string string worldX number number worldY number number options? EffectOptions EffectOptions effectId worldX worldY options?",
+    "body": "Deprecated Use createAtWorld instead. Argument Type Description --- --- --- effectId string worldX number worldY number options? EffectOptions effectId worldX worldY options?",
     "path": "/api/sandkit.api.effects",
     "id": "createeffectatworld"
   },
   {
     "title": "sandkit.api.effects.createLightAtWorld",
-    "body": "Deprecated Use lights.temporary.createAtWorld instead. Argument Type Description --- --- --- worldX number number worldY number number options? TemporaryLightOptions TemporaryLightOptions worldX worldY options? lightId: number null optional index?: number null",
+    "body": "Deprecated Use lights.temporary.createAtWorld instead. Argument Type Description --- --- --- worldX number worldY number options? TemporaryLightOptions worldX worldY options? lightId: number null optional index?: number null",
     "path": "/api/sandkit.api.effects",
     "id": "createlightatworld"
   },
   {
     "title": "sandkit.api.effects.createDistortionWaveAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World X coordinate in pixels. worldY number number World Y coordinate in pixels. options? DistortionEffectOptions DistortionEffectOptions Style, duration, radius, intensity, and color. worldX worldY options? Creates a distortion wave effect at world coordinates. Example",
+    "body": "Argument Type Description --- --- --- worldX number World X coordinate in pixels. worldY number World Y coordinate in pixels. options? DistortionEffectOptions Style, duration, radius, intensity, and color. worldX worldY options? Creates a distortion wave effect at world coordinates. Example",
     "path": "/api/sandkit.api.effects",
     "id": "createdistortionwaveatworld"
   },
   {
     "title": "sandkit.api.effects.createLaserAtWorld()",
-    "body": "Argument Type Description --- --- --- startWorldX number number Beam start world X in pixels. startWorldY number number Beam start world Y in pixels. endWorldX number number Beam end world X in pixels. endWorldY number number Beam end world Y in pixels. options? LaserEffectOptions LaserEffectOptions Width, brightness, color, and glow options. startWorldX startWorldY endWorldX endWorldY options? Creates a laser beam between two world points. Returns a handle to destroy it. LaserEffectHandle",
+    "body": "Argument Type Description --- --- --- startWorldX number Beam start world X in pixels. startWorldY number Beam start world Y in pixels. endWorldX number Beam end world X in pixels. endWorldY number Beam end world Y in pixels. options? LaserEffectOptions Width, brightness, color, and glow options. startWorldX startWorldY endWorldX endWorldY options? Creates a laser beam between two world points. Returns a handle to destroy it. LaserEffectHandle",
     "path": "/api/sandkit.api.effects",
     "id": "createlaseratworld"
   },
   {
     "title": "sandkit.api.effects.removeLightById",
-    "body": "Deprecated Use lights.temporary.removeById instead. Argument Type Description --- --- --- lightId number number lightId",
+    "body": "Deprecated Use lights.temporary.removeById instead. Argument Type Description --- --- --- lightId number lightId",
     "path": "/api/sandkit.api.effects",
     "id": "removelightbyid"
   },
   {
     "title": "sandkit.api.effects.createParticlesAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World x position in pixels. worldY number number World y position in pixels. options? ParticleEffectOptions ParticleEffectOptions Count, velocity, colour, and lifetime settings. worldX worldY options? Emit particles at world coordinates.",
+    "body": "Argument Type Description --- --- --- worldX number World x position in pixels. worldY number World y position in pixels. options? ParticleEffectOptions Count, velocity, colour, and lifetime settings. worldX worldY options? Emit particles at world coordinates.",
     "path": "/api/sandkit.api.effects",
     "id": "createparticlesatworld"
   },
@@ -877,13 +877,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.effects.createAtWorld()",
-    "body": "Argument Type Description --- --- --- effectId string string Registered effect id. worldX number number World x position in pixels. worldY number number World y position in pixels. options? EffectOptions EffectOptions Duration, radius, and intensity settings. effectId worldX worldY options? Spawn a named screen-space or world effect.",
+    "body": "Argument Type Description --- --- --- effectId string Registered effect id. worldX number World x position in pixels. worldY number World y position in pixels. options? EffectOptions Duration, radius, and intensity settings. effectId worldX worldY options? Spawn a named screen-space or world effect.",
     "path": "/api/sandkit.api.effects.worker",
     "id": "createatworld"
   },
   {
     "title": "sandkit.api.effects.createEffectAtWorld",
-    "body": "Deprecated Use createAtWorld instead. Argument Type Description --- --- --- effectId string string worldX number number worldY number number options? EffectOptions EffectOptions effectId worldX worldY options?",
+    "body": "Deprecated Use createAtWorld instead. Argument Type Description --- --- --- effectId string worldX number worldY number options? EffectOptions effectId worldX worldY options?",
     "path": "/api/sandkit.api.effects.worker",
     "id": "createeffectatworld"
   },
@@ -1045,253 +1045,253 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.elements.register()",
-    "body": "Argument Type Description --- --- --- definition ElementDefinition ElementDefinition Full element definition to register. definition Registers a new element and returns its assigned type id. Object with the assigned elementType. elementType: ElementType",
+    "body": "Argument Type Description --- --- --- definition ElementDefinition Full element definition to register. definition Registers a new element and returns its assigned type id. Object with the assigned elementType. elementType: ElementType",
     "path": "/api/sandkit.api.elements",
     "id": "register"
   },
   {
     "title": "sandkit.api.elements.updateDefinition()",
-    "body": "Argument Type Description --- --- --- elementTypeOrId ElementRef ElementRef Numeric type or string id. partial Partial\\ Partial\\ Fields to merge onto the definition. elementTypeOrId partial Updates fields on an existing element definition. Example",
+    "body": "Argument Type Description --- --- --- elementTypeOrId ElementRef Numeric type or string id. partial Partial\\ Fields to merge onto the definition. elementTypeOrId partial Updates fields on an existing element definition. Example",
     "path": "/api/sandkit.api.elements",
     "id": "updatedefinition"
   },
   {
     "title": "sandkit.api.elements.addInteractionInfo()",
-    "body": "Argument Type Description --- --- --- elementTypeOrId ElementRef ElementRef Numeric type or string id. interaction Interaction Interaction Interaction entry to append. elementTypeOrId interaction Adds an interaction entry to an element definition.",
+    "body": "Argument Type Description --- --- --- elementTypeOrId ElementRef Numeric type or string id. interaction Interaction Interaction entry to append. elementTypeOrId interaction Adds an interaction entry to an element definition.",
     "path": "/api/sandkit.api.elements",
     "id": "addinteractioninfo"
   },
   {
     "title": "sandkit.api.elements.getNameByType()",
-    "body": "Argument Type Description --- --- --- elementType ElementType ElementType Numeric element type. elementType Returns the display name for an element type.",
+    "body": "Argument Type Description --- --- --- elementType ElementType Numeric element type. elementType Returns the display name for an element type.",
     "path": "/api/sandkit.api.elements",
     "id": "getnamebytype"
   },
   {
     "title": "sandkit.api.elements.findFreeCellInStructure()",
-    "body": "Argument Type Description --- --- --- structureCellX number number Structure anchor cell column. structureCellY number number Structure anchor cell row. structureSizeCells number number Structure footprint size in cells. structureCellX structureCellY structureSizeCells Finds a free cell inside a structure footprint, or null. Vector2 \\ null Cell coordinates of a free cell, or null when none.",
+    "body": "Argument Type Description --- --- --- structureCellX number Structure anchor cell column. structureCellY number Structure anchor cell row. structureSizeCells number Structure footprint size in cells. structureCellX structureCellY structureSizeCells Finds a free cell inside a structure footprint, or null. Vector2 \\ null Cell coordinates of a free cell, or null when none.",
     "path": "/api/sandkit.api.elements",
     "id": "findfreecellinstructure"
   },
   {
     "title": "sandkit.api.elements.createAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] ...\\number, number, [ElementRef, ElementCreateOptions\\] args Create an element at a cell. Main-entry writes are deferred; reads see the old grid. Examples Main entry options.durationTicks",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] args Create an element at a cell. Main-entry writes are deferred; reads see the old grid. Examples Main entry options.durationTicks",
     "path": "/api/sandkit.api.elements",
     "id": "createatcell"
   },
   {
     "title": "sandkit.api.elements.createAtCellWhenIdle",
-    "body": "Deprecated Use createAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] ...\\number, number, [ElementRef, ElementCreateOptions\\] args",
+    "body": "Deprecated Use createAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] args",
     "path": "/api/sandkit.api.elements",
     "id": "createatcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.replaceAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] ...\\number, number, [ElementRef, ElementCreateOptions\\] args Replace the element at a cell. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] args Replace the element at a cell. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.elements",
     "id": "replaceatcell"
   },
   {
     "title": "sandkit.api.elements.replaceAtCellWhenIdle",
-    "body": "Deprecated Use replaceAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] ...\\number, number, [ElementRef, ElementCreateOptions\\] args",
+    "body": "Deprecated Use replaceAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] args",
     "path": "/api/sandkit.api.elements",
     "id": "replaceatcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.removeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRemovalOptions\\] ...\\number, number, [ElementRemovalOptions\\] args Remove the element at a cell. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRemovalOptions\\] args Remove the element at a cell. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.elements",
     "id": "removeatcell"
   },
   {
     "title": "sandkit.api.elements.removeAtCellWhenIdle",
-    "body": "Deprecated Use removeAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [ElementRemovalOptions\\] ...\\number, number, [ElementRemovalOptions\\] args",
+    "body": "Deprecated Use removeAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [ElementRemovalOptions\\] args",
     "path": "/api/sandkit.api.elements",
     "id": "removeatcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.teleportBetweenCells()",
-    "body": "Argument Type Description --- --- --- fromCellX number number Source cell column. fromCellY number number Source cell row. toCellX number number Destination cell column. toCellY number number Destination cell row. fromCellX fromCellY toCellX toCellY Move an element between cells. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- fromCellX number Source cell column. fromCellY number Source cell row. toCellX number Destination cell column. toCellY number Destination cell row. fromCellX fromCellY toCellX toCellY Move an element between cells. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.elements",
     "id": "teleportbetweencells"
   },
   {
     "title": "sandkit.api.elements.teleportBetweenCellsWhenIdle",
-    "body": "Deprecated Use teleportBetweenCells instead. Argument Type Description --- --- --- fromCellX number number fromCellY number number toCellX number number toCellY number number fromCellX fromCellY toCellX toCellY",
+    "body": "Deprecated Use teleportBetweenCells instead. Argument Type Description --- --- --- fromCellX number fromCellY number toCellX number toCellY number fromCellX fromCellY toCellX toCellY",
     "path": "/api/sandkit.api.elements",
     "id": "teleportbetweencellswhenidle"
   },
   {
     "title": "sandkit.api.elements.setVelocityAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] ...\\number, number, [Vector2\\] args Set particle velocity at a cell. Main-entry writes are deferred; reads see the old grid. Example",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] args Set particle velocity at a cell. Main-entry writes are deferred; reads see the old grid. Example",
     "path": "/api/sandkit.api.elements",
     "id": "setvelocityatcell"
   },
   {
     "title": "sandkit.api.elements.setVelocityAtCellWhenIdle",
-    "body": "Deprecated Use setVelocityAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] ...\\number, number, [Vector2\\] args",
+    "body": "Deprecated Use setVelocityAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] args",
     "path": "/api/sandkit.api.elements",
     "id": "setvelocityatcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.addParticleVelocityAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2, number\\] ...\\number, number, [Vector2, number\\] args Add velocity to a particle at a cell. Main-entry writes are deferred; reads see the old grid. Example",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2, number\\] args Add velocity to a particle at a cell. Main-entry writes are deferred; reads see the old grid. Example",
     "path": "/api/sandkit.api.elements",
     "id": "addparticlevelocityatcell"
   },
   {
     "title": "sandkit.api.elements.addParticleVelocityAtCellWhenIdle",
-    "body": "Deprecated Use addParticleVelocityAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [Vector2, number\\] ...\\number, number, [Vector2, number\\] args",
+    "body": "Deprecated Use addParticleVelocityAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [Vector2, number\\] args",
     "path": "/api/sandkit.api.elements",
     "id": "addparticlevelocityatcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.convertToParticleAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] ...\\number, number, [Vector2\\] args Convert a cell element to a particle. Main-entry writes are deferred; reads see the old grid. Example",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] args Convert a cell element to a particle. Main-entry writes are deferred; reads see the old grid. Example",
     "path": "/api/sandkit.api.elements",
     "id": "converttoparticleatcell"
   },
   {
     "title": "sandkit.api.elements.convertToParticleAtCellWhenIdle",
-    "body": "Deprecated Use convertToParticleAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] ...\\number, number, [Vector2\\] args",
+    "body": "Deprecated Use convertToParticleAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] args",
     "path": "/api/sandkit.api.elements",
     "id": "converttoparticleatcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.convertFromParticleAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Convert a particle back to a solid element. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Convert a particle back to a solid element. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.elements",
     "id": "convertfromparticleatcell"
   },
   {
     "title": "sandkit.api.elements.convertFromParticleAtCellWhenIdle",
-    "body": "Deprecated Use convertFromParticleAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args",
+    "body": "Deprecated Use convertFromParticleAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates args",
     "path": "/api/sandkit.api.elements",
     "id": "convertfromparticleatcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.setDataFieldAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, 1 \\& 124; 2 \\& 124; 3 \\& 124; 4, number\\] ...\\[number, number, 1 & 124; 2 & 124; 3 & 124; 4, number\\] args Set a data field on the element at a cell. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, 1 \\& 124; 2 \\& 124; 3 \\& 124; 4, number\\] args Set a data field on the element at a cell. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.elements",
     "id": "setdatafieldatcell"
   },
   {
     "title": "sandkit.api.elements.setDataFieldAtCellWhenIdle",
-    "body": "Deprecated Use setDataFieldAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, 1 \\& 124; 2 \\& 124; 3 \\& 124; 4, number\\] ...\\[number, number, 1 & 124; 2 & 124; 3 & 124; 4, number\\] args",
+    "body": "Deprecated Use setDataFieldAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, 1 \\& 124; 2 \\& 124; 3 \\& 124; 4, number\\] args",
     "path": "/api/sandkit.api.elements",
     "id": "setdatafieldatcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.refreshColorAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Refresh the rendered color at a cell. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Refresh the rendered color at a cell. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.elements",
     "id": "refreshcoloratcell"
   },
   {
     "title": "sandkit.api.elements.refreshColorAtCellWhenIdle",
-    "body": "Deprecated Use refreshColorAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args",
+    "body": "Deprecated Use refreshColorAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates args",
     "path": "/api/sandkit.api.elements",
     "id": "refreshcoloratcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.setPhysicsAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args Set the physics skip mode at a cell. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] args Set the physics skip mode at a cell. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.elements",
     "id": "setphysicsatcell"
   },
   {
     "title": "sandkit.api.elements.setPhysicsAtCellWhenIdle",
-    "body": "Deprecated Use setPhysicsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args",
+    "body": "Deprecated Use setPhysicsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] args",
     "path": "/api/sandkit.api.elements",
     "id": "setphysicsatcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.setDurationAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number, object\\] ...\\[number, number, number, object\\] args Set element duration at a cell. Main-entry writes are deferred; reads see the old grid. Example Main entry",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number, object\\] args Set element duration at a cell. Main-entry writes are deferred; reads see the old grid. Example Main entry",
     "path": "/api/sandkit.api.elements",
     "id": "setdurationatcell"
   },
   {
     "title": "sandkit.api.elements.setDurationAtCellWhenIdle",
-    "body": "Deprecated Use setDurationAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number, object\\] ...\\[number, number, number, object\\] args",
+    "body": "Deprecated Use setDurationAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number, object\\] args",
     "path": "/api/sandkit.api.elements",
     "id": "setdurationatcellwhenidle"
   },
   {
     "title": "sandkit.api.elements.getIdByType()",
-    "body": "Argument Type Description --- --- --- elementType ElementType ElementType Numeric element type. elementType Return the mod string id for a numeric element type. string & object",
+    "body": "Argument Type Description --- --- --- elementType ElementType Numeric element type. elementType Return the mod string id for a numeric element type. string & object",
     "path": "/api/sandkit.api.elements",
     "id": "getidbytype"
   },
   {
     "title": "sandkit.api.elements.getTypeById()",
-    "body": "Argument Type Description --- --- --- elementId string & object string & object Mod-registered element id. elementId Resolve a mod element string id to a type handle. ElementType",
+    "body": "Argument Type Description --- --- --- elementId string & object Mod-registered element id. elementId Resolve a mod element string id to a type handle. ElementType",
     "path": "/api/sandkit.api.elements",
     "id": "gettypebyid"
   },
   {
     "title": "sandkit.api.elements.getTypeFromId",
-    "body": "Deprecated Use getTypeById instead. Argument Type Description --- --- --- elementId string & object string & object elementId ElementType",
+    "body": "Deprecated Use getTypeById instead. Argument Type Description --- --- --- elementId string & object elementId ElementType",
     "path": "/api/sandkit.api.elements",
     "id": "gettypefromid"
   },
   {
     "title": "sandkit.api.elements.getDefinitionByType()",
-    "body": "Argument Type Description --- --- --- elementType ElementType ElementType Numeric element type. elementType Look up the definition for a type handle. ElementDefinition \\ undefined",
+    "body": "Argument Type Description --- --- --- elementType ElementType Numeric element type. elementType Look up the definition for a type handle. ElementDefinition \\ undefined",
     "path": "/api/sandkit.api.elements",
     "id": "getdefinitionbytype"
   },
   {
     "title": "sandkit.api.elements.getTypeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return the raw element type at a cell (may differ from resolved type). ElementType \\ null",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return the raw element type at a cell (may differ from resolved type). ElementType \\ null",
     "path": "/api/sandkit.api.elements",
     "id": "gettypeatcell"
   },
   {
     "title": "sandkit.api.elements.getResolvedTypeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return the resolved element type after overlays and particles. ElementType \\ null",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return the resolved element type after overlays and particles. ElementType \\ null",
     "path": "/api/sandkit.api.elements",
     "id": "getresolvedtypeatcell"
   },
   {
     "title": "sandkit.api.elements.getResolvedTypeFromCellId()",
-    "body": "Argument Type Description --- --- --- cellId CellId CellId Packed cell id from world.getCellIdAtCell. cellId Return the resolved element type from a packed cell id. ElementType \\ null",
+    "body": "Argument Type Description --- --- --- cellId CellId Packed cell id from world.getCellIdAtCell. cellId Return the resolved element type from a packed cell id. ElementType \\ null",
     "path": "/api/sandkit.api.elements",
     "id": "getresolvedtypefromcellid"
   },
   {
     "title": "sandkit.api.elements.getInfoAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return element index, particle flag, and ids at a cell. \\{ elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number; \\} \\ null",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return element index, particle flag, and ids at a cell. \\{ elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number; \\} \\ null",
     "path": "/api/sandkit.api.elements",
     "id": "getinfoatcell"
   },
   {
     "title": "sandkit.api.elements.getMatterTypeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return the matter category at a cell, or null when empty. MatterType \\ null",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return the matter category at a cell, or null when empty. MatterType \\ null",
     "path": "/api/sandkit.api.elements",
     "id": "getmattertypeatcell"
   },
   {
     "title": "sandkit.api.elements.isTypeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRef\\] ...\\number, number, [ElementRef\\] args Return true when the cell holds the given element type or id.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRef\\] args Return true when the cell holds the given element type or id.",
     "path": "/api/sandkit.api.elements",
     "id": "istypeatcell"
   },
   {
     "title": "sandkit.api.elements.isFreeFallingAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when the element at the cell is falling.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when the element at the cell is falling.",
     "path": "/api/sandkit.api.elements",
     "id": "isfreefallingatcell"
   },
   {
     "title": "sandkit.api.elements.getVelocityAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return per-cell velocity for moving elements. \\{ x: number; y: number; \\} \\ null",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return per-cell velocity for moving elements. \\{ x: number; y: number; \\} \\ null",
     "path": "/api/sandkit.api.elements",
     "id": "getvelocityatcell"
   },
   {
     "title": "sandkit.api.elements.getDataFieldAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, 1 \\& 124; 2 \\& 124; 3 \\& 124; 4\\] ...\\[number, number, 1 & 124; 2 & 124; 3 & 124; 4\\] args Read element data field 1–4 at a cell. number \\ null",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, 1 \\& 124; 2 \\& 124; 3 \\& 124; 4\\] args Read element data field 1–4 at a cell. number \\ null",
     "path": "/api/sandkit.api.elements",
     "id": "getdatafieldatcell"
   },
@@ -1303,103 +1303,103 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.elements.createAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] ...\\number, number, [ElementRef, ElementCreateOptions\\] args Create an element at a cell immediately on this worker. Example Worker entry",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] args Create an element at a cell immediately on this worker. Example Worker entry",
     "path": "/api/sandkit.api.elements.worker",
     "id": "createatcell"
   },
   {
     "title": "sandkit.api.elements.replaceAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] ...\\number, number, [ElementRef, ElementCreateOptions\\] args Replace the element at a cell immediately on this worker.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] args Replace the element at a cell immediately on this worker.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "replaceatcell"
   },
   {
     "title": "sandkit.api.elements.removeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRemovalOptions\\] ...\\number, number, [ElementRemovalOptions\\] args Remove the element at a cell immediately on this worker.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [ElementRemovalOptions\\] args Remove the element at a cell immediately on this worker.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "removeatcell"
   },
   {
     "title": "sandkit.api.elements.moveBetweenCells()",
-    "body": "Argument Type Description --- --- --- fromCellX number number Source cell column. fromCellY number number Source cell row. toCellX number number Destination cell column. toCellY number number Destination cell row. fromCellX fromCellY toCellX toCellY Move an element between cells immediately on this worker. True when the move succeeded.",
+    "body": "Argument Type Description --- --- --- fromCellX number Source cell column. fromCellY number Source cell row. toCellX number Destination cell column. toCellY number Destination cell row. fromCellX fromCellY toCellX toCellY Move an element between cells immediately on this worker. True when the move succeeded.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "movebetweencells"
   },
   {
     "title": "sandkit.api.elements.teleportBetweenCells()",
-    "body": "Argument Type Description --- --- --- fromCellX number number Source cell column. fromCellY number number Source cell row. toCellX number number Destination cell column. toCellY number number Destination cell row. fromCellX fromCellY toCellX toCellY Teleport an element between cells immediately on this worker.",
+    "body": "Argument Type Description --- --- --- fromCellX number Source cell column. fromCellY number Source cell row. toCellX number Destination cell column. toCellY number Destination cell row. fromCellX fromCellY toCellX toCellY Teleport an element between cells immediately on this worker.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "teleportbetweencells"
   },
   {
     "title": "sandkit.api.elements.swapBetweenCells()",
-    "body": "Argument Type Description --- --- --- firstCellX number number First cell column. firstCellY number number First cell row. secondCellX number number Second cell column. secondCellY number number Second cell row. firstCellX firstCellY secondCellX secondCellY Swap elements between two cells immediately on this worker. True when the swap succeeded.",
+    "body": "Argument Type Description --- --- --- firstCellX number First cell column. firstCellY number First cell row. secondCellX number Second cell column. secondCellY number Second cell row. firstCellX firstCellY secondCellX secondCellY Swap elements between two cells immediately on this worker. True when the swap succeeded.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "swapbetweencells"
   },
   {
     "title": "sandkit.api.elements.swapCells",
-    "body": "Deprecated Use swapBetweenCells instead. Argument Type Description --- --- --- firstCellX number number firstCellY number number secondCellX number number secondCellY number number firstCellX firstCellY secondCellX secondCellY",
+    "body": "Deprecated Use swapBetweenCells instead. Argument Type Description --- --- --- firstCellX number firstCellY number secondCellX number secondCellY number firstCellX firstCellY secondCellX secondCellY",
     "path": "/api/sandkit.api.elements.worker",
     "id": "swapcells"
   },
   {
     "title": "sandkit.api.elements.markMovementBlockedByIndex()",
-    "body": "Argument Type Description --- --- --- elementIndex number number Element index from getInfoAtCell. elementIndex Mark an element index as movement-blocked for this tick.",
+    "body": "Argument Type Description --- --- --- elementIndex number Element index from getInfoAtCell. elementIndex Mark an element index as movement-blocked for this tick.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "markmovementblockedbyindex"
   },
   {
     "title": "sandkit.api.elements.markMovementBlockedByElementIndex",
-    "body": "Deprecated Use markMovementBlockedByIndex instead. Argument Type Description --- --- --- elementIndex number number elementIndex",
+    "body": "Deprecated Use markMovementBlockedByIndex instead. Argument Type Description --- --- --- elementIndex number elementIndex",
     "path": "/api/sandkit.api.elements.worker",
     "id": "markmovementblockedbyelementindex"
   },
   {
     "title": "sandkit.api.elements.setVelocityAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] ...\\number, number, [Vector2\\] args Set particle velocity at a cell immediately on this worker. True when velocity was set.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] args Set particle velocity at a cell immediately on this worker. True when velocity was set.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "setvelocityatcell"
   },
   {
     "title": "sandkit.api.elements.addParticleVelocityAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2, number\\] ...\\number, number, [Vector2, number\\] args Add velocity to a particle at a cell immediately on this worker. True when velocity was updated.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2, number\\] args Add velocity to a particle at a cell immediately on this worker. True when velocity was updated.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "addparticlevelocityatcell"
   },
   {
     "title": "sandkit.api.elements.convertToParticleAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] ...\\number, number, [Vector2\\] args Convert a cell element to a particle immediately on this worker. True when conversion succeeded.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] args Convert a cell element to a particle immediately on this worker. True when conversion succeeded.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "converttoparticleatcell"
   },
   {
     "title": "sandkit.api.elements.convertFromParticleAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Convert a particle back to a solid element immediately on this worker. True when conversion succeeded.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Convert a particle back to a solid element immediately on this worker. True when conversion succeeded.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "convertfromparticleatcell"
   },
   {
     "title": "sandkit.api.elements.setDataFieldAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, 1 \\& 124; 2 \\& 124; 3 \\& 124; 4, number\\] ...\\[number, number, 1 & 124; 2 & 124; 3 & 124; 4, number\\] args Set a data field on the element at a cell immediately on this worker. True when the field was set.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, 1 \\& 124; 2 \\& 124; 3 \\& 124; 4, number\\] args Set a data field on the element at a cell immediately on this worker. True when the field was set.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "setdatafieldatcell"
   },
   {
     "title": "sandkit.api.elements.refreshColorAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Refresh the rendered color at a cell immediately on this worker.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Refresh the rendered color at a cell immediately on this worker.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "refreshcoloratcell"
   },
   {
     "title": "sandkit.api.elements.setPhysicsAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args Set the physics skip mode at a cell immediately on this worker.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] args Set the physics skip mode at a cell immediately on this worker.",
     "path": "/api/sandkit.api.elements.worker",
     "id": "setphysicsatcell"
   },
   {
     "title": "sandkit.api.elements.setDurationAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number, object\\] ...\\[number, number, number, object\\] args Set element duration at a cell immediately on this worker. True when duration was updated. Example Worker entry",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number, object\\] args Set element duration at a cell immediately on this worker. True when duration was updated. Example Worker entry",
     "path": "/api/sandkit.api.elements.worker",
     "id": "setdurationatcell"
   },
@@ -1423,37 +1423,37 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.energy.registerType()",
-    "body": "Argument Type Description --- --- --- structureId string string Structure type id string. type \"storage\" & 124; \"conductor\" \"storage\" & 124; \"conductor\" conductor forwards energy; storage holds energy. options? EnergyRegisterTypeOptions EnergyRegisterTypeOptions Capacity and energy-type options for storage nodes. structureId type options? Registers an energy type on a structure as conductor or storage.",
+    "body": "Argument Type Description --- --- --- structureId string Structure type id string. type \"storage\" & 124; \"conductor\" conductor forwards energy; storage holds energy. options? EnergyRegisterTypeOptions Capacity and energy-type options for storage nodes. structureId type options? Registers an energy type on a structure as conductor or storage.",
     "path": "/api/sandkit.api.energy",
     "id": "registertype"
   },
   {
     "title": "sandkit.api.energy.addAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, number, [EnergyAddOptions\\] ...\\number, number, number, [EnergyAddOptions\\] args Adds energy at a cell. Returns the amount actually added.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, number, [EnergyAddOptions\\] args Adds energy at a cell. Returns the amount actually added.",
     "path": "/api/sandkit.api.energy",
     "id": "addatcell"
   },
   {
     "title": "sandkit.api.energy.consume()",
-    "body": "Argument Type Description --- --- --- amount number number Energy amount to consume. options? When allOrNothing is true, consume zero unless the full amount is available. When allOrNothing is true, consume zero unless the full amount is available. amount options? Consumes energy from the global pool. Returns the amount consumed.",
+    "body": "Argument Type Description --- --- --- amount number Energy amount to consume. options? When allOrNothing is true, consume zero unless the full amount is available. amount options? Consumes energy from the global pool. Returns the amount consumed.",
     "path": "/api/sandkit.api.energy",
     "id": "consume"
   },
   {
     "title": "sandkit.api.energy.consumeExcludingNetworkAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args Consumes energy from networks other than the one at the cell.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] args Consumes energy from networks other than the one at the cell.",
     "path": "/api/sandkit.api.energy",
     "id": "consumeexcludingnetworkatcell"
   },
   {
     "title": "sandkit.api.energy.getNetworkAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Returns energy network nodes connected at the cell. object[] Example",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Returns energy network nodes connected at the cell. object[] Example",
     "path": "/api/sandkit.api.energy",
     "id": "getnetworkatcell"
   },
   {
     "title": "sandkit.api.energy.getNetworkFreeCapacityAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Returns free storage capacity in the network at the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Returns free storage capacity in the network at the cell.",
     "path": "/api/sandkit.api.energy",
     "id": "getnetworkfreecapacityatcell"
   },
@@ -1471,43 +1471,43 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.entities.getById()",
-    "body": "Argument Type Description --- --- --- entityId number number Runtime entity id. entityId Return one live entity by runtime id. Entity \\ undefined",
+    "body": "Argument Type Description --- --- --- entityId number Runtime entity id. entityId Return one live entity by runtime id. Entity \\ undefined",
     "path": "/api/sandkit.api.entities",
     "id": "getbyid"
   },
   {
     "title": "sandkit.api.entities.getAllByType()",
-    "body": "Argument Type Description --- --- --- entityTypeId string string Registered entity type string id. entityTypeId Return all live entities of one type. Entity[]",
+    "body": "Argument Type Description --- --- --- entityTypeId string Registered entity type string id. entityTypeId Return all live entities of one type. Entity[]",
     "path": "/api/sandkit.api.entities",
     "id": "getallbytype"
   },
   {
     "title": "sandkit.api.entities.spawnAtWorld()",
-    "body": "Argument Type Description --- --- --- entityTypeId string string Registered entity type string id. worldX number number Spawn x position in world pixels. worldY number number Spawn y position in world pixels. entityTypeId worldX worldY Spawn an entity at world position. Entity The spawned entity instance.",
+    "body": "Argument Type Description --- --- --- entityTypeId string Registered entity type string id. worldX number Spawn x position in world pixels. worldY number Spawn y position in world pixels. entityTypeId worldX worldY Spawn an entity at world position. Entity The spawned entity instance.",
     "path": "/api/sandkit.api.entities",
     "id": "spawnatworld"
   },
   {
     "title": "sandkit.api.entities.remove()",
-    "body": "Argument Type Description --- --- --- entityId number number Runtime entity id. entityId Remove an entity from the world.",
+    "body": "Argument Type Description --- --- --- entityId number Runtime entity id. entityId Remove an entity from the world.",
     "path": "/api/sandkit.api.entities",
     "id": "remove"
   },
   {
     "title": "sandkit.api.entities.launch()",
-    "body": "Argument Type Description --- --- --- entityId number number Runtime entity id. angleRadians number number Launch angle in radians. speed? number number Optional launch speed. entityId angleRadians speed? Launch an entity with angle and optional speed.",
+    "body": "Argument Type Description --- --- --- entityId number Runtime entity id. angleRadians number Launch angle in radians. speed? number Optional launch speed. entityId angleRadians speed? Launch an entity with angle and optional speed.",
     "path": "/api/sandkit.api.entities",
     "id": "launch"
   },
   {
     "title": "sandkit.api.entities.startCapture()",
-    "body": "Argument Type Description --- --- --- entityId number number Runtime entity id. entityId Start capture for an entity (for example vacuum capture).",
+    "body": "Argument Type Description --- --- --- entityId number Runtime entity id. entityId Start capture for an entity (for example vacuum capture).",
     "path": "/api/sandkit.api.entities",
     "id": "startcapture"
   },
   {
     "title": "sandkit.api.entities.collect()",
-    "body": "Argument Type Description --- --- --- entityId number number Runtime entity id. entityId Collect an entity (for example into inventory or storage).",
+    "body": "Argument Type Description --- --- --- entityId number Runtime entity id. entityId Collect an entity (for example into inventory or storage).",
     "path": "/api/sandkit.api.entities",
     "id": "collect"
   },
@@ -1543,13 +1543,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.events.on",
-    "body": "Argument Type Description --- --- --- eventId K K Registered event name. callback (payload: EventPayload\\&lt;K\\&gt;) =&gt; void (payload: EventPayload\\ ) = void Called when the event is emitted. eventId callback Subscribes to an event. Returns an unsubscribe function. K extends EventId () = void Examples item:used frame:render scene:game:started earlyAccess:completed terrain:destroyed fog:cellRevealed upgrade:levelSelected building:placed building:removing building:removed structures:placed structures:removed structures:moved game:ready game:started tutorial:stepChanged tutorial:completed tech:unlocked worldItem:pickedUp resource:collected",
+    "body": "Argument Type Description --- --- --- eventId K Registered event name. callback (payload: EventPayload\\&lt;K\\&gt;) =&gt; void Called when the event is emitted. eventId callback Subscribes to an event. Returns an unsubscribe function. K extends EventId () = void Examples item:used frame:render scene:game:started earlyAccess:completed terrain:destroyed fog:cellRevealed upgrade:levelSelected building:placed building:removing building:removed structures:placed structures:removed structures:moved game:ready game:started tutorial:stepChanged tutorial:completed tech:unlocked worldItem:pickedUp resource:collected",
     "path": "/api/sandkit.api.events",
     "id": "on"
   },
   {
     "title": "sandkit.api.events.emit",
-    "body": "Argument Type Description --- --- --- eventId K K Registered event name. payload EventPayload\\&lt;K\\&gt; EventPayload\\ Serializable payload passed to listeners. eventId payload Emits an event with a payload to all subscribers. K extends EventId",
+    "body": "Argument Type Description --- --- --- eventId K Registered event name. payload EventPayload\\&lt;K\\&gt; Serializable payload passed to listeners. eventId payload Emits an event with a payload to all subscribers. K extends EventId",
     "path": "/api/sandkit.api.events",
     "id": "emit"
   },
@@ -1597,13 +1597,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.events.on",
-    "body": "Argument Type Description --- --- --- eventId K K Registered event name. callback (payload: EventPayload\\&lt;K\\&gt;) =&gt; void (payload: EventPayload\\ ) = void Called when the event is emitted. options? EventOnOptions\\&lt;K\\&gt; EventOnOptions\\ Required guard for filtered events. eventId callback options? Subscribe to a worker event. Returns an unsubscribe function. K extends EventId () = void Examples element:moved terrain:updated worker:update:post",
+    "body": "Argument Type Description --- --- --- eventId K Registered event name. callback (payload: EventPayload\\&lt;K\\&gt;) =&gt; void Called when the event is emitted. options? EventOnOptions\\&lt;K\\&gt; Required guard for filtered events. eventId callback options? Subscribe to a worker event. Returns an unsubscribe function. K extends EventId () = void Examples element:moved terrain:updated worker:update:post",
     "path": "/api/sandkit.api.events.worker",
     "id": "on"
   },
   {
     "title": "sandkit.api.events.emit",
-    "body": "Argument Type Description --- --- --- eventId K K Registered event name. payload EventPayload\\&lt;K\\&gt; EventPayload\\ Serializable payload passed to listeners. options? EventEmitOptions EventEmitOptions Optional guard forwarded to filtered listeners. eventId payload options? Emit a worker event with a payload to subscribers. K extends EventId",
+    "body": "Argument Type Description --- --- --- eventId K Registered event name. payload EventPayload\\&lt;K\\&gt; Serializable payload passed to listeners. options? EventEmitOptions Optional guard forwarded to filtered listeners. eventId payload options? Emit a worker event with a payload to subscribers. K extends EventId",
     "path": "/api/sandkit.api.events.worker",
     "id": "emit"
   },
@@ -1633,7 +1633,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.excavation.registerProfile()",
-    "body": "Argument Type Description --- --- --- id string string Unique profile id (1–128 chars: letters, numbers, ., , :, -). definition ExcavationProfileDefinitionV1 ExcavationProfileDefinitionV1 Pattern, power, terrain rules, and profile options. id definition Registers an excavation profile by id. Example",
+    "body": "Argument Type Description --- --- --- id string Unique profile id (1–128 chars: letters, numbers, ., , :, -). definition ExcavationProfileDefinitionV1 Pattern, power, terrain rules, and profile options. id definition Registers an excavation profile by id. Example",
     "path": "/api/sandkit.api.excavation",
     "id": "registerprofile"
   },
@@ -1657,13 +1657,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.factory.getProcessCount()",
-    "body": "Argument Type Description --- --- --- processId FactoryProcessId FactoryProcessId Built-in factory process id. processId Return completed count for a factory process.",
+    "body": "Argument Type Description --- --- --- processId FactoryProcessId Built-in factory process id. processId Return completed count for a factory process.",
     "path": "/api/sandkit.api.factory",
     "id": "getprocesscount"
   },
   {
     "title": "sandkit.api.factory.getProcessRate()",
-    "body": "Argument Type Description --- --- --- processId FactoryProcessId FactoryProcessId Built-in factory process id. processId Return completion rate for a factory process.",
+    "body": "Argument Type Description --- --- --- processId FactoryProcessId Built-in factory process id. processId Return completion rate for a factory process.",
     "path": "/api/sandkit.api.factory",
     "id": "getprocessrate"
   },
@@ -1675,19 +1675,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.fire.canBurnElementAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Returns true when the element at the cell can burn.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Returns true when the element at the cell can burn.",
     "path": "/api/sandkit.api.fire",
     "id": "canburnelementatcell"
   },
   {
     "title": "sandkit.api.fire.burnElementAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Burn the element at the cell. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Burn the element at the cell. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.fire",
     "id": "burnelementatcell"
   },
   {
     "title": "sandkit.api.fire.burnElementAtCellWhenIdle",
-    "body": "Deprecated Use burnElementAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args",
+    "body": "Deprecated Use burnElementAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates args",
     "path": "/api/sandkit.api.fire",
     "id": "burnelementatcellwhenidle"
   },
@@ -1699,13 +1699,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.fire.canBurnElementAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when the element at the cell can burn.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when the element at the cell can burn.",
     "path": "/api/sandkit.api.fire.worker",
     "id": "canburnelementatcell"
   },
   {
     "title": "sandkit.api.fire.burnElementAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Burn the element at the cell immediately on this worker. True when the burn succeeded.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Burn the element at the cell immediately on this worker. True when the burn succeeded.",
     "path": "/api/sandkit.api.fire.worker",
     "id": "burnelementatcell"
   },
@@ -1723,7 +1723,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.game.start()",
-    "body": "Argument Type Description --- --- --- options? GameStartOptions GameStartOptions Optional session start flags. options? Start or restart the game session. Example",
+    "body": "Argument Type Description --- --- --- options? GameStartOptions Optional session start flags. options? Start or restart the game session. Example",
     "path": "/api/sandkit.api.game",
     "id": "start"
   },
@@ -1735,7 +1735,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.gameConfig.get()",
-    "body": "Argument Type Description --- --- --- key string string Game config key (merged defaults and overrides). key Returns a config value by key, or undefined when missing. JsonValueV1 \\ undefined",
+    "body": "Argument Type Description --- --- --- key string Game config key (merged defaults and overrides). key Returns a config value by key, or undefined when missing. JsonValueV1 \\ undefined",
     "path": "/api/sandkit.api.gameConfig",
     "id": "get"
   },
@@ -1789,67 +1789,67 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.grid.mutate()",
-    "body": "Argument Type Description --- --- --- callback (writer: GridMutationWriter) =&gt; void (writer: GridMutationWriter) = void Receives a writer for element and terrain cell mutations. callback Run deferred grid mutations on the main thread. Reads see the old grid until mutations apply. Examples Deferred main-thread mutations",
+    "body": "Argument Type Description --- --- --- callback (writer: GridMutationWriter) =&gt; void Receives a writer for element and terrain cell mutations. callback Run deferred grid mutations on the main thread. Reads see the old grid until mutations apply. Examples Deferred main-thread mutations",
     "path": "/api/sandkit.api.grid",
     "id": "mutate"
   },
   {
     "title": "sandkit.api.grid.revealFogAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Reveal fog of war at a cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Reveal fog of war at a cell.",
     "path": "/api/sandkit.api.grid",
     "id": "revealfogatcell"
   },
   {
     "title": "sandkit.api.grid.redrawAroundCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args Request redraw around a cell.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] args Request redraw around a cell.",
     "path": "/api/sandkit.api.grid",
     "id": "redrawaroundcell"
   },
   {
     "title": "sandkit.api.grid.forEachCellInCircle()",
-    "body": "Argument Type Description --- --- --- centerCellX number number Circle center cell column. centerCellY number number Circle center cell row. radiusCells number number Circle radius in cells. callback (...args: CellCoordinates) =&gt; void (...args: CellCoordinates) = void Invoked for each cell with (cellX, cellY). centerCellX centerCellY radiusCells callback Calls the callback for each cell inside a circle.",
+    "body": "Argument Type Description --- --- --- centerCellX number Circle center cell column. centerCellY number Circle center cell row. radiusCells number Circle radius in cells. callback (...args: CellCoordinates) =&gt; void Invoked for each cell with (cellX, cellY). centerCellX centerCellY radiusCells callback Calls the callback for each cell inside a circle.",
     "path": "/api/sandkit.api.grid",
     "id": "foreachcellincircle"
   },
   {
     "title": "sandkit.api.grid.forEachCellInRectangle()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, number, number, (...args: [CellCoordinates) =&gt; void\\] ...\\number, number, number, number, (...args: [CellCoordinates) = void\\] args Calls the callback for each cell in a rectangle.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, number, number, (...args: [CellCoordinates) =&gt; void\\] args Calls the callback for each cell in a rectangle.",
     "path": "/api/sandkit.api.grid",
     "id": "foreachcellinrectangle"
   },
   {
     "title": "sandkit.api.grid.forEachCellInRect",
-    "body": "Deprecated Use forEachCellInRectangle instead. Argument Type Description --- --- --- args ...\\number, number, number, number, (...args: [CellCoordinates) =&gt; void\\] ...\\number, number, number, number, (...args: [CellCoordinates) = void\\] args",
+    "body": "Deprecated Use forEachCellInRectangle instead. Argument Type Description --- --- --- args ...\\number, number, number, number, (...args: [CellCoordinates) =&gt; void\\] args",
     "path": "/api/sandkit.api.grid",
     "id": "foreachcellinrect"
   },
   {
     "title": "sandkit.api.grid.getCellIdAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return the packed cell id at grid coordinates. CellId Packed cell id for the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return the packed cell id at grid coordinates. CellId Packed cell id for the cell.",
     "path": "/api/sandkit.api.grid",
     "id": "getcellidatcell"
   },
   {
     "title": "sandkit.api.grid.isCellEmptyAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when the cell has no element or terrain content.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when the cell has no element or terrain content.",
     "path": "/api/sandkit.api.grid",
     "id": "iscellemptyatcell"
   },
   {
     "title": "sandkit.api.grid.isTerrainAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when the cell holds terrain (not an element).",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when the cell holds terrain (not an element).",
     "path": "/api/sandkit.api.grid",
     "id": "isterrainatcell"
   },
   {
     "title": "sandkit.api.grid.reportActivityAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Mark the cell active for simulation this tick.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Mark the cell active for simulation this tick.",
     "path": "/api/sandkit.api.grid",
     "id": "reportactivityatcell"
   },
   {
     "title": "sandkit.api.grid.excavateAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2, number, ExcavateOptions\\] ...\\number, number, [Vector2, number, ExcavateOptions\\] args Apply excavation damage and eject velocity at a cell.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [Vector2, number, ExcavateOptions\\] args Apply excavation damage and eject velocity at a cell.",
     "path": "/api/sandkit.api.grid",
     "id": "excavateatcell"
   },
@@ -1933,13 +1933,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.hooks.intercept",
-    "body": "Argument Type Description --- --- --- hookId K K Registered hook identifier. callback (args: InterceptHookArgs\\&lt;K\\&gt;, context: HookContext) =&gt; void (args: InterceptHookArgs\\ , context: HookContext) = void Called with hook arguments and context; may cancel the hook. options? InterceptHookOptions\\&lt;K\\&gt; InterceptHookOptions\\ Optional priority and filter options. hookId callback options? Registers an intercept hook. Returns an unsubscribe function. K extends InterceptHookId () = void Examples item:use teleport:effect:create action:start input:keyDown input:keyUp placePoints:suppress placePoints:directionalArrows:suppress entity:update building:place building:clearShape input:scroll input:boostDown input:descendDown input:escape interactable:suppressHover fire:element:ignite projectile:fire:overStructure projectile:hit player:position:commit progression:purchase",
+    "body": "Argument Type Description --- --- --- hookId K Registered hook identifier. callback (args: InterceptHookArgs\\&lt;K\\&gt;, context: HookContext) =&gt; void Called with hook arguments and context; may cancel the hook. options? InterceptHookOptions\\&lt;K\\&gt; Optional priority and filter options. hookId callback options? Registers an intercept hook. Returns an unsubscribe function. K extends InterceptHookId () = void Examples item:use teleport:effect:create action:start input:keyDown input:keyUp placePoints:suppress placePoints:directionalArrows:suppress entity:update building:place building:clearShape input:scroll input:boostDown input:descendDown input:escape interactable:suppressHover fire:element:ignite projectile:fire:overStructure projectile:hit player:position:commit progression:purchase",
     "path": "/api/sandkit.api.hooks",
     "id": "intercept"
   },
   {
     "title": "sandkit.api.hooks.modify",
-    "body": "Argument Type Description --- --- --- hookId K K Registered hook identifier. callback (args: ModifyHookArgs\\&lt;K\\&gt;) =&gt; void (args: ModifyHookArgs\\ ) = void Called with hook arguments; may mutate hook payload. options? ModifyHookOptions ModifyHookOptions Optional priority and filter options. hookId callback options? Registers a modifier hook. Returns an unsubscribe function. K extends ModifyHookId () = void Examples excavation:prepare locator:scan:prepare vacuum:prepare vacuum:element:prepare player:movement:prepare building:placementLimit:prepare fluxEmanator:processing:prepare render:pipes:prepare structures:moved:prepare structures:removed:prepare weapon:reload:prepare projectile:travel:prepare projectile:impact:prepare player:collision:prepare trigger:schedule:prepare progression:cost:prepare resource:collection:prepare resource:delivery:prepare resource:balance:prepare gold:removal:prepare gold:removal:settle",
+    "body": "Argument Type Description --- --- --- hookId K Registered hook identifier. callback (args: ModifyHookArgs\\&lt;K\\&gt;) =&gt; void Called with hook arguments; may mutate hook payload. options? ModifyHookOptions Optional priority and filter options. hookId callback options? Registers a modifier hook. Returns an unsubscribe function. K extends ModifyHookId () = void Examples excavation:prepare locator:scan:prepare vacuum:prepare vacuum:element:prepare player:movement:prepare building:placementLimit:prepare fluxEmanator:processing:prepare render:pipes:prepare structures:moved:prepare structures:removed:prepare weapon:reload:prepare projectile:travel:prepare projectile:impact:prepare player:collision:prepare trigger:schedule:prepare progression:cost:prepare resource:collection:prepare resource:delivery:prepare resource:balance:prepare gold:removal:prepare gold:removal:settle",
     "path": "/api/sandkit.api.hooks",
     "id": "modify"
   },
@@ -2023,13 +2023,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.hooks.intercept",
-    "body": "Argument Type Description --- --- --- hookId K K Registered hook identifier. callback (args: InterceptHookArgs\\&lt;K\\&gt;, context: HookContext) =&gt; void (args: InterceptHookArgs\\ , context: HookContext) = void Called with hook arguments and context; may cancel the hook. options? InterceptHookOptions\\&lt;K\\&gt; InterceptHookOptions\\ Optional guard and priority. hookId callback options? Register an intercept hook on this worker. Returns an unsubscribe function. K extends InterceptHookId () = void Examples cell:process element:update element:move element:move:blocked element:duration:expire fire:element:burn fire:terrain:burn shaker:elementOn",
+    "body": "Argument Type Description --- --- --- hookId K Registered hook identifier. callback (args: InterceptHookArgs\\&lt;K\\&gt;, context: HookContext) =&gt; void Called with hook arguments and context; may cancel the hook. options? InterceptHookOptions\\&lt;K\\&gt; Optional guard and priority. hookId callback options? Register an intercept hook on this worker. Returns an unsubscribe function. K extends InterceptHookId () = void Examples cell:process element:update element:move element:move:blocked element:duration:expire fire:element:burn fire:terrain:burn shaker:elementOn",
     "path": "/api/sandkit.api.hooks.worker",
     "id": "intercept"
   },
   {
     "title": "sandkit.api.hooks.modify",
-    "body": "Argument Type Description --- --- --- hookId K K Registered hook identifier. callback (args: ModifyHookArgs\\&lt;K\\&gt;) =&gt; void (args: ModifyHookArgs\\ ) = void Called with hook arguments; may mutate hook payload. options? ModifyHookOptions ModifyHookOptions Optional guard and priority. hookId callback options? Register a modifier hook on this worker. Returns an unsubscribe function. K extends ModifyHookId () = void Example Worker entry",
+    "body": "Argument Type Description --- --- --- hookId K Registered hook identifier. callback (args: ModifyHookArgs\\&lt;K\\&gt;) =&gt; void Called with hook arguments; may mutate hook payload. options? ModifyHookOptions Optional guard and priority. hookId callback options? Register a modifier hook on this worker. Returns an unsubscribe function. K extends ModifyHookId () = void Example Worker entry",
     "path": "/api/sandkit.api.hooks.worker",
     "id": "modify"
   },
@@ -2053,13 +2053,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.i18n.t()",
-    "body": "Argument Type Description --- --- --- key string string Translation key. params? Record\\ Record\\ Placeholder values for the key template. key params? Translates a key with optional parameter substitution. Example",
+    "body": "Argument Type Description --- --- --- key string Translation key. params? Record\\ Placeholder values for the key template. key params? Translates a key with optional parameter substitution. Example",
     "path": "/api/sandkit.api.i18n",
     "id": "t"
   },
   {
     "title": "sandkit.api.i18n.register()",
-    "body": "Argument Type Description --- --- --- locale Locale Locale Locale code (e.g. en). translations Record\\ Record\\ Map of keys to translated strings. locale translations Registers translation strings for a locale. Example",
+    "body": "Argument Type Description --- --- --- locale Locale Locale code (e.g. en). translations Record\\ Map of keys to translated strings. locale translations Registers translation strings for a locale. Example",
     "path": "/api/sandkit.api.i18n",
     "id": "register"
   },
@@ -2071,13 +2071,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.i18n.hasTranslation()",
-    "body": "Argument Type Description --- --- --- key string string Translation key. locale? Locale Locale Optional locale; defaults to the active locale. key locale? Returns true when a translation exists for the key.",
+    "body": "Argument Type Description --- --- --- key string Translation key. locale? Locale Optional locale; defaults to the active locale. key locale? Returns true when a translation exists for the key.",
     "path": "/api/sandkit.api.i18n",
     "id": "hastranslation"
   },
   {
     "title": "sandkit.api.i18n.setLocale()",
-    "body": "Argument Type Description --- --- --- locale Locale Locale Locale code to activate. locale Sets the active locale. Promise\\",
+    "body": "Argument Type Description --- --- --- locale Locale Locale code to activate. locale Sets the active locale. Promise\\",
     "path": "/api/sandkit.api.i18n",
     "id": "setlocale"
   },
@@ -2095,67 +2095,67 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.i18n.formatNumber()",
-    "body": "Argument Type Description --- --- --- value number number Number to format. options? I18nNumberFormatOptions I18nNumberFormatOptions Intl-style number format options. value options? Formats a number for the active locale. Example",
+    "body": "Argument Type Description --- --- --- value number Number to format. options? I18nNumberFormatOptions Intl-style number format options. value options? Formats a number for the active locale. Example",
     "path": "/api/sandkit.api.i18n",
     "id": "formatnumber"
   },
   {
     "title": "sandkit.api.i18n.joinKey()",
-    "body": "Argument Type Description --- --- --- parts ...string[] ...string[] Key segments joined with .. parts Joins key parts into a single translation key.",
+    "body": "Argument Type Description --- --- --- parts ...string[] Key segments joined with .. parts Joins key parts into a single translation key.",
     "path": "/api/sandkit.api.i18n",
     "id": "joinkey"
   },
   {
     "title": "sandkit.api.i18n.key",
-    "body": "Deprecated Use joinKey instead. Argument Type Description --- --- --- parts ...string[] ...string[] parts",
+    "body": "Deprecated Use joinKey instead. Argument Type Description --- --- --- parts ...string[] parts",
     "path": "/api/sandkit.api.i18n",
     "id": "key"
   },
   {
     "title": "sandkit.api.i18n.getName()",
-    "body": "Argument Type Description --- --- --- definition Object with nameKey or name. Object with nameKey or name. definition Returns the display name from a definition with nameKey or name. Example",
+    "body": "Argument Type Description --- --- --- definition Object with nameKey or name. definition Returns the display name from a definition with nameKey or name. Example",
     "path": "/api/sandkit.api.i18n",
     "id": "getname"
   },
   {
     "title": "sandkit.api.i18n.getDescription()",
-    "body": "Argument Type Description --- --- --- definition Object with descriptionKey or description. Object with descriptionKey or description. definition Returns the description from a definition with descriptionKey or description.",
+    "body": "Argument Type Description --- --- --- definition Object with descriptionKey or description. definition Returns the description from a definition with descriptionKey or description.",
     "path": "/api/sandkit.api.i18n",
     "id": "getdescription"
   },
   {
     "title": "sandkit.api.i18n.createTranslatable()",
-    "body": "Argument Type Description --- --- --- key string string Translation key. fallback string string Text used when no translation is registered. key fallback Creates a translatable string object with a fallback. \\ \\ translatable: true key: string fallback: string",
+    "body": "Argument Type Description --- --- --- key string Translation key. fallback string Text used when no translation is registered. key fallback Creates a translatable string object with a fallback. \\ \\ translatable: true key: string fallback: string",
     "path": "/api/sandkit.api.i18n",
     "id": "createtranslatable"
   },
   {
     "title": "sandkit.api.i18n.translatable",
-    "body": "Deprecated Use createTranslatable instead. Argument Type Description --- --- --- key string string fallback string string key fallback \\ \\ translatable: true key: string fallback: string",
+    "body": "Deprecated Use createTranslatable instead. Argument Type Description --- --- --- key string fallback string key fallback \\ \\ translatable: true key: string fallback: string",
     "path": "/api/sandkit.api.i18n",
     "id": "translatable"
   },
   {
     "title": "sandkit.api.i18n.setGlobal()",
-    "body": "Argument Type Description --- --- --- key string string Global helper key. value string & 124; (() = string) string & 124; (() = string) Static string or function that returns the current value. key value Sets a global string or lazy resolver used in translations.",
+    "body": "Argument Type Description --- --- --- key string Global helper key. value string & 124; (() = string) Static string or function that returns the current value. key value Sets a global string or lazy resolver used in translations.",
     "path": "/api/sandkit.api.i18n",
     "id": "setglobal"
   },
   {
     "title": "sandkit.api.i18n.getGlobal()",
-    "body": "Argument Type Description --- --- --- key string string Global helper key. key Returns a global translation helper value. string \\ undefined",
+    "body": "Argument Type Description --- --- --- key string Global helper key. key Returns a global translation helper value. string \\ undefined",
     "path": "/api/sandkit.api.i18n",
     "id": "getglobal"
   },
   {
     "title": "sandkit.api.i18n.removeGlobal()",
-    "body": "Argument Type Description --- --- --- key string string Global helper key. key Removes a global translation helper value.",
+    "body": "Argument Type Description --- --- --- key string Global helper key. key Removes a global translation helper value.",
     "path": "/api/sandkit.api.i18n",
     "id": "removeglobal"
   },
   {
     "title": "sandkit.api.i18n.clearGlobal",
-    "body": "Deprecated Use removeGlobal instead. Argument Type Description --- --- --- key string string key",
+    "body": "Deprecated Use removeGlobal instead. Argument Type Description --- --- --- key string key",
     "path": "/api/sandkit.api.i18n",
     "id": "clearglobal"
   },
@@ -2167,7 +2167,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.i18n.formatKeyForDisplay()",
-    "body": "Argument Type Description --- --- --- keyCode string string Keyboard key code or binding name. keyCode Formats a key code for display in UI.",
+    "body": "Argument Type Description --- --- --- keyCode string Keyboard key code or binding name. keyCode Formats a key code for display in UI.",
     "path": "/api/sandkit.api.i18n",
     "id": "formatkeyfordisplay"
   },
@@ -2203,7 +2203,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.input.registerBinding()",
-    "body": "Argument Type Description --- --- --- bindingId BindingId BindingId Unique id for the binding (also used in settings). defaultKeys KeyCode[] KeyCode[] Default key codes (for example \"Control+KeyC\"). definition InputBindingDefinition InputBindingDefinition Display metadata and press/release handlers. bindingId defaultKeys definition Register a key binding and return its binding id. BindingId The registered binding id. Example",
+    "body": "Argument Type Description --- --- --- bindingId BindingId Unique id for the binding (also used in settings). defaultKeys KeyCode[] Default key codes (for example \"Control+KeyC\"). definition InputBindingDefinition Display metadata and press/release handlers. bindingId defaultKeys definition Register a key binding and return its binding id. BindingId The registered binding id. Example",
     "path": "/api/sandkit.api.input",
     "id": "registerbinding"
   },
@@ -2215,31 +2215,31 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.input.getBoundKeys()",
-    "body": "Argument Type Description --- --- --- bindingId BindingId BindingId Registered binding id. bindingId Return the keys currently bound to a binding id. KeyCode[] Key strings from settings (for example \"KeyA\" or \"Shift\"). Session input.keys is keyed by KeyboardEvent.code. Modifier aliases (Shift, Alt, Control, Meta) expand to ShiftLeft / ShiftRight and the same for the other modifiers.",
+    "body": "Argument Type Description --- --- --- bindingId BindingId Registered binding id. bindingId Return the keys currently bound to a binding id. KeyCode[] Key strings from settings (for example \"KeyA\" or \"Shift\"). Session input.keys is keyed by KeyboardEvent.code. Modifier aliases (Shift, Alt, Control, Meta) expand to ShiftLeft / ShiftRight and the same for the other modifiers.",
     "path": "/api/sandkit.api.input",
     "id": "getboundkeys"
   },
   {
     "title": "sandkit.api.input.getDisplayKey()",
-    "body": "Argument Type Description --- --- --- bindingId BindingId BindingId Registered binding id. defaultLabel? string string Fallback label when no key is bound. bindingId defaultLabel? Return a display label for the bound key. Human-readable key label for UI.",
+    "body": "Argument Type Description --- --- --- bindingId BindingId Registered binding id. defaultLabel? string Fallback label when no key is bound. bindingId defaultLabel? Return a display label for the bound key. Human-readable key label for UI.",
     "path": "/api/sandkit.api.input",
     "id": "getdisplaykey"
   },
   {
     "title": "sandkit.api.input.triggerBinding()",
-    "body": "Argument Type Description --- --- --- bindingId BindingId BindingId Registered binding id. bindingId Fire the binding down handler as if the key was pressed.",
+    "body": "Argument Type Description --- --- --- bindingId BindingId Registered binding id. bindingId Fire the binding down handler as if the key was pressed.",
     "path": "/api/sandkit.api.input",
     "id": "triggerbinding"
   },
   {
     "title": "sandkit.api.input.pressBinding()",
-    "body": "Argument Type Description --- --- --- bindingId BindingId BindingId Registered binding id. bindingId Fire the binding down handler without a matching release.",
+    "body": "Argument Type Description --- --- --- bindingId BindingId Registered binding id. bindingId Fire the binding down handler without a matching release.",
     "path": "/api/sandkit.api.input",
     "id": "pressbinding"
   },
   {
     "title": "sandkit.api.input.releaseBinding()",
-    "body": "Argument Type Description --- --- --- bindingId BindingId BindingId Registered binding id. bindingId Fire the binding up handler.",
+    "body": "Argument Type Description --- --- --- bindingId BindingId Registered binding id. bindingId Fire the binding up handler.",
     "path": "/api/sandkit.api.input",
     "id": "releasebinding"
   },
@@ -2293,25 +2293,25 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.items.register()",
-    "body": "Argument Type Description --- --- --- definition ItemDefinition ItemDefinition Item id, handlers, and display metadata. definition Registers a new item definition.",
+    "body": "Argument Type Description --- --- --- definition ItemDefinition Item id, handlers, and display metadata. definition Registers a new item definition.",
     "path": "/api/sandkit.api.items",
     "id": "register"
   },
   {
     "title": "sandkit.api.items.updateDefinition()",
-    "body": "Argument Type Description --- --- --- itemId ItemId ItemId Registered item id. partial Partial\\ Partial\\ Fields to merge into the definition. itemId partial Updates fields on an existing item definition. Example",
+    "body": "Argument Type Description --- --- --- itemId ItemId Registered item id. partial Partial\\ Fields to merge into the definition. itemId partial Updates fields on an existing item definition. Example",
     "path": "/api/sandkit.api.items",
     "id": "updatedefinition"
   },
   {
     "title": "sandkit.api.items.getDefinitionById()",
-    "body": "Argument Type Description --- --- --- itemId ItemId ItemId Registered item id. itemId Returns the item definition for an id, or undefined. ItemDefinition\\ \\ undefined",
+    "body": "Argument Type Description --- --- --- itemId ItemId Registered item id. itemId Returns the item definition for an id, or undefined. ItemDefinition\\ \\ undefined",
     "path": "/api/sandkit.api.items",
     "id": "getdefinitionbyid"
   },
   {
     "title": "sandkit.api.items.createFromId()",
-    "body": "Argument Type Description --- --- --- itemId ItemId ItemId Registered item id. itemId Creates a runtime item instance from an id.",
+    "body": "Argument Type Description --- --- --- itemId ItemId Registered item id. itemId Creates a runtime item instance from an id.",
     "path": "/api/sandkit.api.items",
     "id": "createfromid"
   },
@@ -2323,7 +2323,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.items.isActiveById()",
-    "body": "Argument Type Description --- --- --- itemId ItemId ItemId Item id or numeric type to compare. itemType? ItemType ItemType Optional item type discriminator. itemId itemType? Returns true when the given item is the active hotbar item.",
+    "body": "Argument Type Description --- --- --- itemId ItemId Item id or numeric type to compare. itemType? ItemType Optional item type discriminator. itemId itemType? Returns true when the given item is the active hotbar item.",
     "path": "/api/sandkit.api.items",
     "id": "isactivebyid"
   },
@@ -2365,19 +2365,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.lights.persistent.createAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World X coordinate in pixels. worldY number number World Y coordinate in pixels. options? PersistentLightOptions PersistentLightOptions Brightness, size, color, and persistence options. worldX worldY options? Create a persistent light at world coordinates. Example",
+    "body": "Argument Type Description --- --- --- worldX number World X coordinate in pixels. worldY number World Y coordinate in pixels. options? PersistentLightOptions Brightness, size, color, and persistence options. worldX worldY options? Create a persistent light at world coordinates. Example",
     "path": "/api/sandkit.api.lights.persistent",
     "id": "createatworld"
   },
   {
     "title": "sandkit.api.lights.persistent.removeAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World X coordinate in pixels. worldY number number World Y coordinate in pixels. worldX worldY Remove the persistent light at world coordinates.",
+    "body": "Argument Type Description --- --- --- worldX number World X coordinate in pixels. worldY number World Y coordinate in pixels. worldX worldY Remove the persistent light at world coordinates.",
     "path": "/api/sandkit.api.lights.persistent",
     "id": "removeatworld"
   },
   {
     "title": "sandkit.api.lights.persistent.fadeAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World X coordinate in pixels. worldY number number World Y coordinate in pixels. durationMs? number number Fade duration in milliseconds. worldX worldY durationMs? Fade out the persistent light at world coordinates over durationMs.",
+    "body": "Argument Type Description --- --- --- worldX number World X coordinate in pixels. worldY number World Y coordinate in pixels. durationMs? number Fade duration in milliseconds. worldX worldY durationMs? Fade out the persistent light at world coordinates over durationMs.",
     "path": "/api/sandkit.api.lights.persistent",
     "id": "fadeatworld"
   },
@@ -2395,13 +2395,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.lights.temporary.createAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World X coordinate in pixels. worldY number number World Y coordinate in pixels. options? TemporaryLightOptions TemporaryLightOptions Brightness, duration, color, and dedup options. worldX worldY options? Create a temporary light at world coordinates. TemporaryLightHandle Examples Main entry options.durationTicks options.durationMs",
+    "body": "Argument Type Description --- --- --- worldX number World X coordinate in pixels. worldY number World Y coordinate in pixels. options? TemporaryLightOptions Brightness, duration, color, and dedup options. worldX worldY options? Create a temporary light at world coordinates. TemporaryLightHandle Examples Main entry options.durationTicks options.durationMs",
     "path": "/api/sandkit.api.lights.temporary",
     "id": "createatworld"
   },
   {
     "title": "sandkit.api.lights.temporary.removeById()",
-    "body": "Argument Type Description --- --- --- lightId number number Light id returned from createAtWorld. lightId Remove a temporary light by its id. Example",
+    "body": "Argument Type Description --- --- --- lightId number Light id returned from createAtWorld. lightId Remove a temporary light by its id. Example",
     "path": "/api/sandkit.api.lights.temporary",
     "id": "removebyid"
   },
@@ -2425,13 +2425,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.lights.temporary.createAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World x position in pixels. worldY number number World y position in pixels. options? TemporaryLightOptions TemporaryLightOptions Brightness, duration, colour, and dedup settings. worldX worldY options? Create a temporary light at world coordinates. TemporaryLightHandle Example Worker entry",
+    "body": "Argument Type Description --- --- --- worldX number World x position in pixels. worldY number World y position in pixels. options? TemporaryLightOptions Brightness, duration, colour, and dedup settings. worldX worldY options? Create a temporary light at world coordinates. TemporaryLightHandle Example Worker entry",
     "path": "/api/sandkit.api.lights.temporary.worker",
     "id": "createatworld"
   },
   {
     "title": "sandkit.api.lights (worker)",
-    "body": "Internal Worker-thread sandkit.api.lights — temporary visual effect lights. Worker exposes only temporary; persistent lights are main-thread only.",
+    "body": "Transient VFX lights and long-lived managed lights at world positions. - sandkit.api.lights.temporary Internal Worker-thread sandkit.api.lights — temporary visual effect lights. Worker exposes only temporary; persistent lights are main-thread only.",
     "path": "/api/sandkit.api.lights.worker",
     "id": ""
   },
@@ -2443,7 +2443,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.main.emitEvent",
-    "body": "Argument Type Description --- --- --- eventId string string Registered event name. payload Payload Payload Serializable payload passed to main-thread listeners. eventId payload Emit a custom event on the main thread. Payload = any",
+    "body": "Argument Type Description --- --- --- eventId string Registered event name. payload Payload Serializable payload passed to main-thread listeners. eventId payload Emit a custom event on the main thread. Payload = any",
     "path": "/api/sandkit.api.main.worker",
     "id": "emitevent"
   },
@@ -2473,7 +2473,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.maps.start()",
-    "body": "Argument Type Description --- --- --- mapId string string Custom map identifier. mapId Start a map by id. Return true when start succeeds.",
+    "body": "Argument Type Description --- --- --- mapId string Custom map identifier. mapId Start a map by id. Return true when start succeeds.",
     "path": "/api/sandkit.api.maps",
     "id": "start"
   },
@@ -2503,7 +2503,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api",
-    "body": "Main-thread sandkit.api barrel. Re-exports all namespaces available as sandkit.api. on the main thread. Prefer these methods over sandkit.engine when both exist.",
+    "body": "- sandkit.api.action - sandkit.api.assets - sandkit.api.authorization - sandkit.api.blueprints - sandkit.api.building - sandkit.api.camera - sandkit.api.collector - sandkit.api.constants - sandkit.api.cooldown - sandkit.api.discoveries - sandkit.api.effects - sandkit.api.elements - sandkit.api.energy - sandkit.api.entities - sandkit.api.events - sandkit.api.excavation - sandkit.api.factory - sandkit.api.fire - sandkit.api.game - sandkit.api.gameConfig - sandkit.api.grid - sandkit.api.hooks - sandkit.api.i18n - sandkit.api.input - sandkit.api.items - sandkit.api.lights - sandkit.api.maps - sandkit.api.mods - sandkit.api.patterns - sandkit.api.pickups - sandkit.api.pipes - sandkit.api.player - sandkit.api.processing - sandkit.api.progression - sandkit.api.projectiles - sandkit.api.random - sandkit.api.raycast - sandkit.api.reactions - sandkit.api.rendering - sandkit.api.resources - sandkit.api.scene - sandkit.api.schedule - sandkit.api.settings - sandkit.api.shared - sandkit.api.signals - sandkit.api.sound - sandkit.api.sprites - sandkit.api.storage - sandkit.api.structureBehaviors - sandkit.api.structures - sandkit.api.tech - sandkit.api.terrains - sandkit.api.time - sandkit.api.tools - sandkit.api.triggers - sandkit.api.ui - sandkit.api.upgrades - sandkit.api.utils - sandkit.api.workers - sandkit.api. world Main-thread sandkit.api barrel. Re-exports all namespaces available as sandkit.api. on the main thread. Prefer these methods over sandkit.engine when both exist.",
     "path": "/api/sandkit.api",
     "id": ""
   },
@@ -2521,7 +2521,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.mods.getProviders()",
-    "body": "Argument Type Description --- --- --- kind string string Asset kind identifier (e.g. texture pack category). kind Return asset providers registered for a kind string. readonly AssetProviderV1[]",
+    "body": "Argument Type Description --- --- --- kind string Asset kind identifier (e.g. texture pack category). kind Return asset providers registered for a kind string. readonly AssetProviderV1[]",
     "path": "/api/sandkit.api.mods",
     "id": "getproviders"
   },
@@ -2539,13 +2539,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.patterns.createCircle()",
-    "body": "Argument Type Description --- --- --- size number number Pattern width and height in cells. size Build a circular excavation pattern matrix for the given size. number[][] Square matrix with 1 inside the circle and 0 outside.",
+    "body": "Argument Type Description --- --- --- size number Pattern width and height in cells. size Build a circular excavation pattern matrix for the given size. number[][] Square matrix with 1 inside the circle and 0 outside.",
     "path": "/api/sandkit.api.patterns",
     "id": "createcircle"
   },
   {
     "title": "sandkit.api.patterns.excavateAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number[][], Vector2, number, ExcavateOptions\\] ...\\[number, number, number[][], Vector2, number, ExcavateOptions\\] args Excavate at a cell using a pattern matrix and output velocity. Examples Main entry Worker entry",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number[][], Vector2, number, ExcavateOptions\\] args Excavate at a cell using a pattern matrix and output velocity. Examples Main entry Worker entry",
     "path": "/api/sandkit.api.patterns",
     "id": "excavateatcell"
   },
@@ -2581,25 +2581,25 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.pickups.spawnAtWorld()",
-    "body": "Argument Type Description --- --- --- type PickupType PickupType Pickup type discriminator. worldX number number World x position in pixels. worldY number number World y position in pixels. data? Record\\ Record\\ Optional per-item data bag copied onto the instance. light? WorldItemLight WorldItemLight Optional point light spawned with the pickup. type worldX worldY data? light? Spawn a pickup at world position. WorldItem The spawned pickup instance.",
+    "body": "Argument Type Description --- --- --- type PickupType Pickup type discriminator. worldX number World x position in pixels. worldY number World y position in pixels. data? Record\\ Optional per-item data bag copied onto the instance. light? WorldItemLight Optional point light spawned with the pickup. type worldX worldY data? light? Spawn a pickup at world position. WorldItem The spawned pickup instance.",
     "path": "/api/sandkit.api.pickups",
     "id": "spawnatworld"
   },
   {
     "title": "sandkit.api.pickups.remove()",
-    "body": "Argument Type Description --- --- --- pickup WorldItem WorldItem Pickup returned from spawn or lookup helpers. pickup Remove a pickup instance from the world.",
+    "body": "Argument Type Description --- --- --- pickup WorldItem Pickup returned from spawn or lookup helpers. pickup Remove a pickup instance from the world.",
     "path": "/api/sandkit.api.pickups",
     "id": "remove"
   },
   {
     "title": "sandkit.api.pickups.destroy",
-    "body": "Deprecated Use remove instead. Argument Type Description --- --- --- pickup WorldItem WorldItem pickup",
+    "body": "Deprecated Use remove instead. Argument Type Description --- --- --- pickup WorldItem pickup",
     "path": "/api/sandkit.api.pickups",
     "id": "destroy"
   },
   {
     "title": "sandkit.api.pickups.pickUp()",
-    "body": "Argument Type Description --- --- --- pickup WorldItem WorldItem Pickup to collect. pickup Pick up a world item into inventory. True when the item was collected.",
+    "body": "Argument Type Description --- --- --- pickup WorldItem Pickup to collect. pickup Pick up a world item into inventory. True when the item was collected.",
     "path": "/api/sandkit.api.pickups",
     "id": "pickup"
   },
@@ -2611,7 +2611,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.pickups.getById()",
-    "body": "Argument Type Description --- --- --- pickupId number number Runtime pickup id. pickupId Return a pickup by numeric id. WorldItem \\ undefined",
+    "body": "Argument Type Description --- --- --- pickupId number Runtime pickup id. pickupId Return a pickup by numeric id. WorldItem \\ undefined",
     "path": "/api/sandkit.api.pickups",
     "id": "getbyid"
   },
@@ -2629,25 +2629,25 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.pipes.isAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when a pipe occupies the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when a pipe occupies the cell.",
     "path": "/api/sandkit.api.pipes",
     "id": "isatcell"
   },
   {
     "title": "sandkit.api.pipes.isEnabledAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when pipe flow is enabled at the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when pipe flow is enabled at the cell.",
     "path": "/api/sandkit.api.pipes",
     "id": "isenabledatcell"
   },
   {
     "title": "sandkit.api.pipes.getConnectedVentsAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return connected liquid vent cell positions for the pipe at a cell. readonly PipeVentCell[]",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return connected liquid vent cell positions for the pipe at a cell. readonly PipeVentCell[]",
     "path": "/api/sandkit.api.pipes",
     "id": "getconnectedventsatcell"
   },
   {
     "title": "sandkit.api.pipes.setEnabledAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, boolean\\] ...\\[number, number, boolean\\] args Enable or disable pipe flow at a cell.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, boolean\\] args Enable or disable pipe flow at a cell.",
     "path": "/api/sandkit.api.pipes",
     "id": "setenabledatcell"
   },
@@ -2659,19 +2659,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.player.buildings.unlockById()",
-    "body": "Argument Type Description --- --- --- structureId string string Registered structure id string. structureId Unlock a structure type for building.",
+    "body": "Argument Type Description --- --- --- structureId string Registered structure id string. structureId Unlock a structure type for building.",
     "path": "/api/sandkit.api.player.buildings",
     "id": "unlockbyid"
   },
   {
     "title": "sandkit.api.player.buildings.unlockByType",
-    "body": "Deprecated Use unlockById instead. Argument Type Description --- --- --- structureId string string structureId",
+    "body": "Deprecated Use unlockById instead. Argument Type Description --- --- --- structureId string structureId",
     "path": "/api/sandkit.api.player.buildings",
     "id": "unlockbytype"
   },
   {
     "title": "sandkit.api.player.buildings.removeById()",
-    "body": "Argument Type Description --- --- --- structureId string string Registered structure id string. structureId Remove a structure unlock from the player.",
+    "body": "Argument Type Description --- --- --- structureId string Registered structure id string. structureId Remove a structure unlock from the player.",
     "path": "/api/sandkit.api.player.buildings",
     "id": "removebyid"
   },
@@ -2683,13 +2683,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.player.inventory.addById()",
-    "body": "Argument Type Description --- --- --- itemId string string Registered item id string. itemId Add an item to inventory by item id.",
+    "body": "Argument Type Description --- --- --- itemId string Registered item id string. itemId Add an item to inventory by item id.",
     "path": "/api/sandkit.api.player.inventory",
     "id": "addbyid"
   },
   {
     "title": "sandkit.api.player.inventory.addFromId",
-    "body": "Deprecated Use addById instead. Argument Type Description --- --- --- itemId string string itemId",
+    "body": "Deprecated Use addById instead. Argument Type Description --- --- --- itemId string itemId",
     "path": "/api/sandkit.api.player.inventory",
     "id": "addfromid"
   },
@@ -2701,31 +2701,31 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.player.setPositionAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World x position in pixels. worldY number number World y position in pixels. worldX worldY Set the player world position.",
+    "body": "Argument Type Description --- --- --- worldX number World x position in pixels. worldY number World y position in pixels. worldX worldY Set the player world position.",
     "path": "/api/sandkit.api.player",
     "id": "setpositionatworld"
   },
   {
     "title": "sandkit.api.player.setWorldPosition",
-    "body": "Deprecated Use setPositionAtWorld instead. Argument Type Description --- --- --- worldX number number worldY number number worldX worldY",
+    "body": "Deprecated Use setPositionAtWorld instead. Argument Type Description --- --- --- worldX number World x position in pixels. worldY number World y position in pixels. worldX worldY",
     "path": "/api/sandkit.api.player",
     "id": "setworldposition"
   },
   {
     "title": "sandkit.api.player.setVelocity()",
-    "body": "Argument Type Description --- --- --- velocityX number number Horizontal velocity in pixels per second. velocityY number number Vertical velocity in pixels per second. velocityX velocityY Set the player velocity.",
+    "body": "Argument Type Description --- --- --- velocityX number Horizontal velocity in pixels per second. velocityY number Vertical velocity in pixels per second. velocityX velocityY Set the player velocity.",
     "path": "/api/sandkit.api.player",
     "id": "setvelocity"
   },
   {
     "title": "sandkit.api.player.setMovementSpeedMultiplier()",
-    "body": "Argument Type Description --- --- --- multiplier number number Speed scale factor (1 is default walk). 0 freezes movement. Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly 1. multiplier Set the movement speed multiplier.",
+    "body": "Argument Type Description --- --- --- multiplier number Speed scale factor (1 is default walk). 0 freezes movement. Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly 1. multiplier Set the movement speed multiplier.",
     "path": "/api/sandkit.api.player",
     "id": "setmovementspeedmultiplier"
   },
   {
     "title": "sandkit.api.player.setMovementMode()",
-    "body": "Argument Type Description --- --- --- mode \"normal\" & 124; \"hover\" \"normal\" & 124; \"hover\" \"normal\" for default physics, or \"hover\" for hover flight. mode Set movement mode to normal or hover. True when the mode changes.",
+    "body": "Argument Type Description --- --- --- mode \"normal\" & 124; \"hover\" \"normal\" for default physics, or \"hover\" for hover flight. mode Set movement mode to normal or hover. True when the mode changes.",
     "path": "/api/sandkit.api.player",
     "id": "setmovementmode"
   },
@@ -2743,13 +2743,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.player.isPositionClearAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World x position in pixels to test. worldY number number World y position in pixels to test. worldX worldY Return true when the world position has no collision. True when the player hitbox fits at the position.",
+    "body": "Argument Type Description --- --- --- worldX number World x position in pixels to test. worldY number World y position in pixels to test. worldX worldY Return true when the world position has no collision. True when the player hitbox fits at the position.",
     "path": "/api/sandkit.api.player",
     "id": "ispositionclearatworld"
   },
   {
     "title": "sandkit.api.player.isWorldPositionClear",
-    "body": "Deprecated Use isPositionClearAtWorld instead. Argument Type Description --- --- --- worldX number number worldY number number worldX worldY",
+    "body": "Deprecated Use isPositionClearAtWorld instead. Argument Type Description --- --- --- worldX number worldY number worldX worldY",
     "path": "/api/sandkit.api.player",
     "id": "isworldpositionclear"
   },
@@ -2773,13 +2773,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.player.isCollidingWithCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when the player hitbox overlaps the cell. True when the player overlaps the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when the player hitbox overlaps the cell. True when the player overlaps the cell.",
     "path": "/api/sandkit.api.player.worker",
     "id": "iscollidingwithcell"
   },
   {
     "title": "sandkit.api.player.isWithinRadiusOfCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args Return true when the player is within radius cells of the point. True when the player is inside the radius.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] args Return true when the player is within radius cells of the point. True when the player is inside the radius.",
     "path": "/api/sandkit.api.player.worker",
     "id": "iswithinradiusofcell"
   },
@@ -2815,19 +2815,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.processing.registerGrower()",
-    "body": "Argument Type Description --- --- --- definition PlanterBoxRecipeDefinitionV1 PlanterBoxRecipeDefinitionV1 Grower input/output recipe. definition Register a planter box grower recipe.",
+    "body": "Argument Type Description --- --- --- definition PlanterBoxRecipeDefinitionV1 Grower input/output recipe. definition Register a planter box grower recipe.",
     "path": "/api/sandkit.api.processing",
     "id": "registergrower"
   },
   {
     "title": "sandkit.api.processing.registerShaker()",
-    "body": "Argument Type Description --- --- --- definition ShakerRecipeDefinitionV1 ShakerRecipeDefinitionV1 Shaker input and weighted outputs. definition Register a shaker recipe.",
+    "body": "Argument Type Description --- --- --- definition ShakerRecipeDefinitionV1 Shaker input and weighted outputs. definition Register a shaker recipe.",
     "path": "/api/sandkit.api.processing",
     "id": "registershaker"
   },
   {
     "title": "sandkit.api.processing.registerKineticPress()",
-    "body": "Argument Type Description --- --- --- definition KineticPressRecipeDefinitionV1 KineticPressRecipeDefinitionV1 Press input, velocity threshold, and outputs. definition Register a kinetic press recipe.",
+    "body": "Argument Type Description --- --- --- definition KineticPressRecipeDefinitionV1 Press input, velocity threshold, and outputs. definition Register a kinetic press recipe.",
     "path": "/api/sandkit.api.processing",
     "id": "registerkineticpress"
   },
@@ -2845,7 +2845,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.progression.complete()",
-    "body": "Argument Type Description --- --- --- request ProgressionCompletionRequestV1 ProgressionCompletionRequestV1 Progression id and optional metadata for the step. request Mark a progression step complete. Return true when completion succeeds. Example",
+    "body": "Argument Type Description --- --- --- request ProgressionCompletionRequestV1 Progression id and optional metadata for the step. request Mark a progression step complete. Return true when completion succeeds. Example",
     "path": "/api/sandkit.api.progression",
     "id": "complete"
   },
@@ -2875,19 +2875,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.projectiles.register()",
-    "body": "Argument Type Description --- --- --- definition ProjectileDefinition ProjectileDefinition Projectile id, sprite, and runtime options factory. definition Register a projectile definition.",
+    "body": "Argument Type Description --- --- --- definition ProjectileDefinition Projectile id, sprite, and runtime options factory. definition Register a projectile definition.",
     "path": "/api/sandkit.api.projectiles",
     "id": "register"
   },
   {
     "title": "sandkit.api.projectiles.getDefinitionById()",
-    "body": "Argument Type Description --- --- --- projectileId string string Registered projectile id. projectileId Return a projectile definition by string id. ProjectileDefinition \\ undefined",
+    "body": "Argument Type Description --- --- --- projectileId string Registered projectile id. projectileId Return a projectile definition by string id. ProjectileDefinition \\ undefined",
     "path": "/api/sandkit.api.projectiles",
     "id": "getdefinitionbyid"
   },
   {
     "title": "sandkit.api.projectiles.createBlueprintFromId()",
-    "body": "Argument Type Description --- --- --- projectileId string string Registered projectile id. projectileId Build a spawn blueprint from a projectile string id. ProjectileBlueprint Blueprint passed to spawnAtWorld.",
+    "body": "Argument Type Description --- --- --- projectileId string Registered projectile id. projectileId Build a spawn blueprint from a projectile string id. ProjectileBlueprint Blueprint passed to spawnAtWorld.",
     "path": "/api/sandkit.api.projectiles",
     "id": "createblueprintfromid"
   },
@@ -2899,19 +2899,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.projectiles.getById()",
-    "body": "Argument Type Description --- --- --- projectileId number number Runtime projectile id. projectileId Return a projectile by numeric id. Projectile \\ undefined",
+    "body": "Argument Type Description --- --- --- projectileId number Runtime projectile id. projectileId Return a projectile by numeric id. Projectile \\ undefined",
     "path": "/api/sandkit.api.projectiles",
     "id": "getbyid"
   },
   {
     "title": "sandkit.api.projectiles.remove()",
-    "body": "Argument Type Description --- --- --- projectile Projectile Projectile Projectile instance to remove. projectile Remove a projectile from the world.",
+    "body": "Argument Type Description --- --- --- projectile Projectile Projectile instance to remove. projectile Remove a projectile from the world.",
     "path": "/api/sandkit.api.projectiles",
     "id": "remove"
   },
   {
     "title": "sandkit.api.projectiles.spawnAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number Spawn x position in world pixels. worldY number number Spawn y position in world pixels. angle number number Launch angle in radians. blueprint ProjectileBlueprint ProjectileBlueprint Blueprint from createBlueprintFromId. worldX worldY angle blueprint Spawn a projectile at world position with angle and blueprint. Projectile The spawned projectile instance.",
+    "body": "Argument Type Description --- --- --- worldX number Spawn x position in world pixels. worldY number Spawn y position in world pixels. angle number Launch angle in radians. blueprint ProjectileBlueprint Blueprint from createBlueprintFromId. worldX worldY angle blueprint Spawn a projectile at world position with angle and blueprint. Projectile The spawned projectile instance.",
     "path": "/api/sandkit.api.projectiles",
     "id": "spawnatworld"
   },
@@ -2923,13 +2923,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.random.int()",
-    "body": "Argument Type Description --- --- --- min number number Minimum value (inclusive). max number number Maximum value (inclusive). min max Return a random integer in the inclusive range.",
+    "body": "Argument Type Description --- --- --- min number Minimum value (inclusive). max number Maximum value (inclusive). min max Return a random integer in the inclusive range.",
     "path": "/api/sandkit.api.random",
     "id": "int"
   },
   {
     "title": "sandkit.api.random.float()",
-    "body": "Argument Type Description --- --- --- min number number Minimum value (inclusive). max number number Maximum value (inclusive). min max Return a random float in the inclusive range.",
+    "body": "Argument Type Description --- --- --- min number Minimum value (inclusive). max number Maximum value (inclusive). min max Return a random float in the inclusive range.",
     "path": "/api/sandkit.api.random",
     "id": "float"
   },
@@ -2941,7 +2941,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.raycast.castFromWorld()",
-    "body": "Argument Type Description --- --- --- startWorldX number number Ray origin world X in pixels. startWorldY number number Ray origin world Y in pixels. angle number number Ray direction in radians. maxDistance number number Maximum ray length in pixels. startWorldX startWorldY angle maxDistance Cast a ray from world position. Return hit point and distance, or null. Vector2 & object \\ null",
+    "body": "Argument Type Description --- --- --- startWorldX number Ray origin world X in pixels. startWorldY number Ray origin world Y in pixels. angle number Ray direction in radians. maxDistance number Maximum ray length in pixels. startWorldX startWorldY angle maxDistance Cast a ray from world position. Return hit point and distance, or null. Vector2 & object \\ null",
     "path": "/api/sandkit.api.raycast",
     "id": "castfromworld"
   },
@@ -2959,7 +2959,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.reactions.registerContact()",
-    "body": "Argument Type Description --- --- --- definition ContactRecipeDefinitionV1 ContactRecipeDefinitionV1 Contact recipe inputs, outputs, and orientation. definition Register a contact reaction between elements. Example",
+    "body": "Argument Type Description --- --- --- definition ContactRecipeDefinitionV1 Contact recipe inputs, outputs, and orientation. definition Register a contact reaction between elements. Example",
     "path": "/api/sandkit.api.reactions",
     "id": "registercontact"
   },
@@ -2971,13 +2971,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.rendering.getDrawPositionAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return screen draw position for a grid cell. Vector2",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return screen draw position for a grid cell. Vector2",
     "path": "/api/sandkit.api.rendering",
     "id": "getdrawpositionatcell"
   },
   {
     "title": "sandkit.api.rendering.getDrawPositionAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World x position in pixels. worldY number number World y position in pixels. worldX worldY Return screen draw position for a world-space point. Vector2 Example",
+    "body": "Argument Type Description --- --- --- worldX number World x position in pixels. worldY number World y position in pixels. worldX worldY Return screen draw position for a world-space point. Vector2 Example",
     "path": "/api/sandkit.api.rendering",
     "id": "getdrawpositionatworld"
   },
@@ -2995,7 +2995,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.rendering.withOverlayContext",
-    "body": "Argument Type Description --- --- --- callback (context: CanvasRenderingContext2D) =&gt; T (context: CanvasRenderingContext2D) = T Receives the overlay 2D context; return value is passed through. callback Run a callback with the overlay canvas context. Example",
+    "body": "Argument Type Description --- --- --- callback (context: CanvasRenderingContext2D) =&gt; T Receives the overlay 2D context; return value is passed through. callback Run a callback with the overlay canvas context. Example",
     "path": "/api/sandkit.api.rendering",
     "id": "withoverlaycontext"
   },
@@ -3007,13 +3007,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.resources.collectFluxiteAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Collect fluxite at the given cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Collect fluxite at the given cell.",
     "path": "/api/sandkit.api.resources",
     "id": "collectfluxiteatcell"
   },
   {
     "title": "sandkit.api.resources.updateEnergy()",
-    "body": "Argument Type Description --- --- --- amount number number Energy delta (positive or negative). options? When deferUi is true, skip immediate UI refresh. When deferUi is true, skip immediate UI refresh. amount options? Update stored energy by amount with optional UI deferral. Example Official \\api.resources.adjustEnergy\\ (typed deprecated alias: updateEnergy)",
+    "body": "Argument Type Description --- --- --- amount number Energy delta (positive or negative). options? When deferUi is true, skip immediate UI refresh. amount options? Update stored energy by amount with optional UI deferral. Example Official \\api.resources.adjustEnergy\\ (typed deprecated alias: updateEnergy)",
     "path": "/api/sandkit.api.resources",
     "id": "updateenergy"
   },
@@ -3037,7 +3037,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.schedule.nextTick()",
-    "body": "Argument Type Description --- --- --- callback () =&gt; void () = void Function invoked once on the next tick. callback Run a callback on the next game tick. Example",
+    "body": "Argument Type Description --- --- --- callback () =&gt; void Function invoked once on the next tick. callback Run a callback on the next game tick. Example",
     "path": "/api/sandkit.api.schedule",
     "id": "nexttick"
   },
@@ -3061,7 +3061,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.settings.get()",
-    "body": "Argument Type Description --- --- --- fieldId string & object string & object Settings field identifier. fieldId Return a settings field value by id. ConfigValueV1 \\ undefined",
+    "body": "Argument Type Description --- --- --- fieldId string & object Settings field identifier. fieldId Return a settings field value by id. ConfigValueV1 \\ undefined",
     "path": "/api/sandkit.api.settings",
     "id": "get"
   },
@@ -3073,7 +3073,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.settings.onChange()",
-    "body": "Argument Type Description --- --- --- callback (values: Readonly\\&lt;Record\\&lt;string, ConfigValueV1\\&gt;\\&gt;) =&gt; void (values: Readonly\\ \\ ) = void Called with the full settings map after a change. callback Subscribe to settings changes. Return an unsubscribe function. () = void Example",
+    "body": "Argument Type Description --- --- --- callback (values: Readonly\\&lt;Record\\&lt;string, ConfigValueV1\\&gt;\\&gt;) =&gt; void Called with the full settings map after a change. callback Subscribe to settings changes. Return an unsubscribe function. () = void Example",
     "path": "/api/sandkit.api.settings",
     "id": "onchange"
   },
@@ -3085,19 +3085,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.shared.buffers.ensure()",
-    "body": "Argument Type Description --- --- --- key string string Buffer name shared across threads. config Typed array kind and element count. Typed array kind and element count. key config Create or return a named shared buffer with type and length. SharedArray Example",
+    "body": "Argument Type Description --- --- --- key string Buffer name shared across threads. config Typed array kind and element count. key config Create or return a named shared buffer with type and length. SharedArray Example",
     "path": "/api/sandkit.api.shared.buffers",
     "id": "ensure"
   },
   {
     "title": "sandkit.api.shared.buffers.create",
-    "body": "Deprecated Use ensure instead. Argument Type Description --- --- --- key string string config { type: SharedArrayType; length: number } key config SharedArray",
+    "body": "Deprecated Use ensure instead. Argument Type Description --- --- --- key string config { type: SharedArrayType; length: number } key config SharedArray",
     "path": "/api/sandkit.api.shared.buffers",
     "id": "create"
   },
   {
     "title": "sandkit.api.shared.buffers.get()",
-    "body": "Argument Type Description --- --- --- key string string Buffer name shared across threads. key Look up a named shared buffer without creating it. SharedArray \\ undefined The typed array, or undefined when the buffer does not exist.",
+    "body": "Argument Type Description --- --- --- key string Buffer name shared across threads. key Look up a named shared buffer without creating it. SharedArray \\ undefined The typed array, or undefined when the buffer does not exist.",
     "path": "/api/sandkit.api.shared.buffers",
     "id": "get"
   },
@@ -3109,7 +3109,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.shared.buffers.require()",
-    "body": "Argument Type Description --- --- --- key string string Buffer name shared across threads. config Expected array type and length for validation. Expected array type and length for validation. key config Attach to a named shared buffer on this worker. The buffer must already exist on the main thread with the same SharedArrayType and length as config. SharedArray Example",
+    "body": "Argument Type Description --- --- --- key string Buffer name shared across threads. config Expected array type and length for validation. key config Attach to a named shared buffer on this worker. The buffer must already exist on the main thread with the same SharedArrayType and length as config. SharedArray Example",
     "path": "/api/sandkit.api.shared.buffers.worker",
     "id": "require"
   },
@@ -3133,7 +3133,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.shared (worker)",
-    "body": "Internal Worker thread only. sandkit.api.shared — shared memory buffers for workers. Workers require buffers created on the main thread. Main thread only gets existing buffers. See shared for the shared base declarations. Worker extension of shared; not interchangeable with main-thread sandkit.api.shared.",
+    "body": "SharedArrayBuffer storage for data shared between main and worker threads. - sandkit.api.shared.buffers Internal Worker thread only. sandkit.api.shared — shared memory buffers for workers. Workers require buffers created on the main thread. Main thread only gets existing buffers. See shared for the shared base declarations. Worker extension of shared; not interchangeable with main-thread sandkit.api.shared.",
     "path": "/api/sandkit.api.shared.worker",
     "id": ""
   },
@@ -3169,7 +3169,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.signals.targets.register()",
-    "body": "Argument Type Description --- --- --- structureTypeOrId unknown unknown Structure type id or enum value. apply (structure: unknown, payload: unknown) =&gt; void (structure: unknown, payload: unknown) = void Called when a signal reaches a matching structure. structureTypeOrId apply Register a handler when a signal targets a structure type. Example",
+    "body": "Argument Type Description --- --- --- structureTypeOrId unknown Structure type id or enum value. apply (structure: unknown, payload: unknown) =&gt; void Called when a signal reaches a matching structure. structureTypeOrId apply Register a handler when a signal targets a structure type. Example",
     "path": "/api/sandkit.api.signals.targets",
     "id": "register"
   },
@@ -3205,37 +3205,37 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.sound.play()",
-    "body": "Argument Type Description --- --- --- soundId string string Registered sound identifier. options? SoundOptions SoundOptions Volume, position, playback rate, and rate-limit options. soundId options? Play a sound by id with optional options. SoundHandle",
+    "body": "Argument Type Description --- --- --- soundId string Registered sound identifier. options? SoundOptions Volume, position, playback rate, and rate-limit options. soundId options? Play a sound by id with optional options. SoundHandle",
     "path": "/api/sandkit.api.sound",
     "id": "play"
   },
   {
     "title": "sandkit.api.sound.playActive()",
-    "body": "Argument Type Description --- --- --- soundId string string Registered sound identifier. options? SoundOptions SoundOptions Volume, position, playback rate, and rate-limit options. soundId options? Play a sound on the active sound channel. SoundHandle",
+    "body": "Argument Type Description --- --- --- soundId string Registered sound identifier. options? SoundOptions Volume, position, playback rate, and rate-limit options. soundId options? Play a sound on the active sound channel. SoundHandle",
     "path": "/api/sandkit.api.sound",
     "id": "playactive"
   },
   {
     "title": "sandkit.api.sound.playLayers()",
-    "body": "Argument Type Description --- --- --- layers SoundLayer[] SoundLayer[] Layer definitions (sound id, volume, delay, and per-layer options). options? SoundLayersOptions SoundLayersOptions Shared position, volume, and rate-limit options for all layers. layers options? Play multiple sound layers with shared options. SoundHandle[]",
+    "body": "Argument Type Description --- --- --- layers SoundLayer[] Layer definitions (sound id, volume, delay, and per-layer options). options? SoundLayersOptions Shared position, volume, and rate-limit options for all layers. layers options? Play multiple sound layers with shared options. SoundHandle[]",
     "path": "/api/sandkit.api.sound",
     "id": "playlayers"
   },
   {
     "title": "sandkit.api.sound.calculateDistanceOptionsAtWorld()",
-    "body": "Argument Type Description --- --- --- worldX number number World X coordinate in pixels. worldY number number World Y coordinate in pixels. baseVolume? number number Base volume before distance attenuation. worldX worldY baseVolume? Build distance-based volume options for a world position. SoundOptions",
+    "body": "Argument Type Description --- --- --- worldX number World X coordinate in pixels. worldY number World Y coordinate in pixels. baseVolume? number Base volume before distance attenuation. worldX worldY baseVolume? Build distance-based volume options for a world position. SoundOptions",
     "path": "/api/sandkit.api.sound",
     "id": "calculatedistanceoptionsatworld"
   },
   {
     "title": "sandkit.api.sound.stopBySoundId()",
-    "body": "Argument Type Description --- --- --- soundId string string Registered sound identifier to stop. soundId Stop a sound by id.",
+    "body": "Argument Type Description --- --- --- soundId string Registered sound identifier to stop. soundId Stop a sound by id.",
     "path": "/api/sandkit.api.sound",
     "id": "stopbysoundid"
   },
   {
     "title": "sandkit.api.sound.stopById",
-    "body": "Deprecated Use stopBySoundId instead. Argument Type Description --- --- --- soundId string string soundId",
+    "body": "Deprecated Use stopBySoundId instead. Argument Type Description --- --- --- soundId string soundId",
     "path": "/api/sandkit.api.sound",
     "id": "stopbyid"
   },
@@ -3271,19 +3271,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.sprites.load()",
-    "body": "Argument Type Description --- --- --- spriteId string string Id used with getById. path string string URL or asset path to load. options? SpriteLoadOptions SpriteLoadOptions Optional tint and load options. spriteId path options? Load a sprite from a URL path. Promise\\",
+    "body": "Argument Type Description --- --- --- spriteId string Id used with getById. path string URL or asset path to load. options? SpriteLoadOptions Optional tint and load options. spriteId path options? Load a sprite from a URL path. Promise\\",
     "path": "/api/sandkit.api.sprites",
     "id": "load"
   },
   {
     "title": "sandkit.api.sprites.loadFromMod()",
-    "body": "Argument Type Description --- --- --- spriteId string string Id used with getById. relativePath string string Path relative to the mod folder. options? SpriteLoadOptions SpriteLoadOptions Optional tint and load options. spriteId relativePath options? Load a sprite from the calling mod folder. Promise\\",
+    "body": "Argument Type Description --- --- --- spriteId string Id used with getById. relativePath string Path relative to the mod folder. options? SpriteLoadOptions Optional tint and load options. spriteId relativePath options? Load a sprite from the calling mod folder. Promise\\",
     "path": "/api/sandkit.api.sprites",
     "id": "loadfrommod"
   },
   {
     "title": "sandkit.api.sprites.getById()",
-    "body": "Argument Type Description --- --- --- spriteId string string Sprite id from load or loadFromMod. spriteId Return a loaded sprite by id.",
+    "body": "Argument Type Description --- --- --- spriteId string Sprite id from load or loadFromMod. spriteId Return a loaded sprite by id.",
     "path": "/api/sandkit.api.sprites",
     "id": "getbyid"
   },
@@ -3295,7 +3295,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.sprites.rotatePlayerModSprites()",
-    "body": "Argument Type Description --- --- --- angle number number Rotation in radians. angle Rotate all player mod-attached sprites by angle.",
+    "body": "Argument Type Description --- --- --- angle number Rotation in radians. angle Rotate all player mod-attached sprites by angle.",
     "path": "/api/sandkit.api.sprites",
     "id": "rotateplayermodsprites"
   },
@@ -3307,19 +3307,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.storage.local.get()",
-    "body": "Argument Type Description --- --- --- key string string Storage key. key Read a local storage value by key. JsonValueV1 \\ undefined",
+    "body": "Argument Type Description --- --- --- key string Storage key. key Read a local storage value by key. JsonValueV1 \\ undefined",
     "path": "/api/sandkit.api.storage.local",
     "id": "get"
   },
   {
     "title": "sandkit.api.storage.local.set()",
-    "body": "Argument Type Description --- --- --- key string string Storage key. value JsonValueV1 JsonValueV1 JSON-serializable value. key value Write a local storage value by key.",
+    "body": "Argument Type Description --- --- --- key string Storage key. value JsonValueV1 JSON-serializable value. key value Write a local storage value by key.",
     "path": "/api/sandkit.api.storage.local",
     "id": "set"
   },
   {
     "title": "sandkit.api.storage.local.remove()",
-    "body": "Argument Type Description --- --- --- key string string Storage key. key Remove a local storage key.",
+    "body": "Argument Type Description --- --- --- key string Storage key. key Remove a local storage key.",
     "path": "/api/sandkit.api.storage.local",
     "id": "remove"
   },
@@ -3331,25 +3331,25 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.storage.ensure()",
-    "body": "Argument Type Description --- --- --- modId string string Mod identifier (typically modinfo.id). modId Ensure storage exists for a mod id. JsonObjectV1",
+    "body": "Argument Type Description --- --- --- modId string Mod identifier (typically modinfo.id). modId Ensure storage exists for a mod id. JsonObjectV1",
     "path": "/api/sandkit.api.storage",
     "id": "ensure"
   },
   {
     "title": "sandkit.api.storage.get()",
-    "body": "Argument Type Description --- --- --- modId string string Mod identifier. key string string Storage key. modId key Read a value from mod storage by key. JsonValueV1 \\ undefined",
+    "body": "Argument Type Description --- --- --- modId string Mod identifier. key string Storage key. modId key Read a value from mod storage by key. JsonValueV1 \\ undefined",
     "path": "/api/sandkit.api.storage",
     "id": "get"
   },
   {
     "title": "sandkit.api.storage.set()",
-    "body": "Argument Type Description --- --- --- modId string string Mod identifier. key string string Storage key. value JsonValueV1 JsonValueV1 JSON-serializable value. modId key value Write a value to mod storage by key.",
+    "body": "Argument Type Description --- --- --- modId string Mod identifier. key string Storage key. value JsonValueV1 JSON-serializable value. modId key value Write a value to mod storage by key.",
     "path": "/api/sandkit.api.storage",
     "id": "set"
   },
   {
     "title": "sandkit.api.storage.remove()",
-    "body": "Argument Type Description --- --- --- modId string string Mod identifier. key string string Storage key. modId key Remove a key from mod storage.",
+    "body": "Argument Type Description --- --- --- modId string Mod identifier. key string Storage key. modId key Remove a key from mod storage.",
     "path": "/api/sandkit.api.storage",
     "id": "remove"
   },
@@ -3361,13 +3361,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.structureBehaviors.registerConveyorType()",
-    "body": "Argument Type Description --- --- --- structureId string string Structure type id string. options? Transport offset, velocity, distance, and run direction. Transport offset, velocity, distance, and run direction. structureId options? Register conveyor behavior for a structure type. Example",
+    "body": "Argument Type Description --- --- --- structureId string Structure type id string. options? Transport offset, velocity, distance, and run direction. structureId options? Register conveyor behavior for a structure type. Example",
     "path": "/api/sandkit.api.structureBehaviors",
     "id": "registerconveyortype"
   },
   {
     "title": "sandkit.api.structureBehaviors.registerLauncherType()",
-    "body": "Argument Type Description --- --- --- definition Launcher type ids, velocities, and optional shared buffer key. Launcher type ids, velocities, and optional shared buffer key. definition Register launcher behavior for up, left, and right launcher types.",
+    "body": "Argument Type Description --- --- --- definition Launcher type ids, velocities, and optional shared buffer key. definition Register launcher behavior for up, left, and right launcher types.",
     "path": "/api/sandkit.api.structureBehaviors",
     "id": "registerlaunchertype"
   },
@@ -3511,31 +3511,31 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.structures.register()",
-    "body": "Argument Type Description --- --- --- definition SandkitStructureDefinition SandkitStructureDefinition Full structure definition. options? When useRawShape is true, keep the shape matrix as-is. When useRawShape is true, keep the shape matrix as-is. definition options? Register a new structure definition. Example",
+    "body": "Argument Type Description --- --- --- definition SandkitStructureDefinition Full structure definition. options? When useRawShape is true, keep the shape matrix as-is. definition options? Register a new structure definition. Example",
     "path": "/api/sandkit.api.structures",
     "id": "register"
   },
   {
     "title": "sandkit.api.structures.updateDefinition()",
-    "body": "Argument Type Description --- --- --- structureTypeOrId StructureRef StructureRef Structure type value or string id. partial Partial\\ Partial\\ Fields to merge onto the definition. options? When useRawShape is true, keep the shape matrix as-is. When useRawShape is true, keep the shape matrix as-is. structureTypeOrId partial options? Patch fields on an existing structure definition. Example",
+    "body": "Argument Type Description --- --- --- structureTypeOrId StructureRef Structure type value or string id. partial Partial\\ Fields to merge onto the definition. options? When useRawShape is true, keep the shape matrix as-is. structureTypeOrId partial options? Patch fields on an existing structure definition. Example",
     "path": "/api/sandkit.api.structures",
     "id": "updatedefinition"
   },
   {
     "title": "sandkit.api.structures.registerVariant()",
-    "body": "Argument Type Description --- --- --- baseStructureTypeOrId StructureRef StructureRef Base structure type or id. variant Variant id and supported rotation angles. Variant id and supported rotation angles. options? Optional build-mode wiring for the variant. Optional build-mode wiring for the variant. baseStructureTypeOrId variant options? Add a rotated variant to a base structure type. Example",
+    "body": "Argument Type Description --- --- --- baseStructureTypeOrId StructureRef Base structure type or id. variant Variant id and supported rotation angles. options? Optional build-mode wiring for the variant. baseStructureTypeOrId variant options? Add a rotated variant to a base structure type. Example",
     "path": "/api/sandkit.api.structures",
     "id": "registervariant"
   },
   {
     "title": "sandkit.api.structures.addVariant",
-    "body": "Deprecated Use registerVariant instead. Argument Type Description --- --- --- baseStructureTypeOrId StructureRef StructureRef variant { id: StructureRef; angles: number[] } options? { addBuildMode: unknown } baseStructureTypeOrId variant options?",
+    "body": "Deprecated Use registerVariant instead. Argument Type Description --- --- --- baseStructureTypeOrId StructureRef variant { id: StructureRef; angles: number[] } options? { addBuildMode: unknown } baseStructureTypeOrId variant options?",
     "path": "/api/sandkit.api.structures",
     "id": "addvariant"
   },
   {
     "title": "sandkit.api.structures.registerPlacementConfig()",
-    "body": "Argument Type Description --- --- --- definition PlacementConfigDefinition PlacementConfigDefinition Hotbar placement field configuration. definition Register placement rules for a structure. Example",
+    "body": "Argument Type Description --- --- --- definition PlacementConfigDefinition Hotbar placement field configuration. definition Register placement rules for a structure. Example",
     "path": "/api/sandkit.api.structures",
     "id": "registerplacementconfig"
   },
@@ -3553,85 +3553,85 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.structures.isBlockedByPlayerAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when the player blocks building at the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when the player blocks building at the cell.",
     "path": "/api/sandkit.api.structures",
     "id": "isblockedbyplayeratcell"
   },
   {
     "title": "sandkit.api.structures.isLauncherAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when a launcher structure is at the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when a launcher structure is at the cell.",
     "path": "/api/sandkit.api.structures",
     "id": "islauncheratcell"
   },
   {
     "title": "sandkit.api.structures.isLockedByType()",
-    "body": "Argument Type Description --- --- --- structureType StructureRef StructureRef Structure type value or string id. structureType Return structure lock state for a type. Official docs list isUnlockedByType as a deprecated alias of this function (same implementation and return value; names differ only).",
+    "body": "Argument Type Description --- --- --- structureType StructureRef Structure type value or string id. structureType Return structure lock state for a type. Official docs list isUnlockedByType as a deprecated alias of this function (same implementation and return value; names differ only).",
     "path": "/api/sandkit.api.structures",
     "id": "islockedbytype"
   },
   {
     "title": "sandkit.api.structures.isUnlockedByType",
-    "body": "Deprecated Use isLockedByType instead. Same function as isLockedByType; return value is not inverted. Argument Type Description --- --- --- structureType StructureRef StructureRef structureType",
+    "body": "Deprecated Use isLockedByType instead. Same function as isLockedByType; return value is not inverted. Argument Type Description --- --- --- structureType StructureRef structureType",
     "path": "/api/sandkit.api.structures",
     "id": "isunlockedbytype"
   },
   {
     "title": "sandkit.api.structures.mapValueToSpritesheetIndex()",
-    "body": "Argument Type Description --- --- --- value number number Numeric value to map. thresholds number[] number[] Ascending threshold values. value thresholds Map a numeric value through thresholds to a spritesheet index. Spritesheet frame index. Example",
+    "body": "Argument Type Description --- --- --- value number Numeric value to map. thresholds number[] Ascending threshold values. value thresholds Map a numeric value through thresholds to a spritesheet index. Spritesheet frame index. Example",
     "path": "/api/sandkit.api.structures",
     "id": "mapvaluetospritesheetindex"
   },
   {
     "title": "sandkit.api.structures.buildAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [StructureRef, StructureBuildOptions\\] ...\\number, number, [StructureRef, StructureBuildOptions\\] args Build a structure at a cell. Main-thread writes are deferred.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [StructureRef, StructureBuildOptions\\] args Build a structure at a cell. Main-thread writes are deferred.",
     "path": "/api/sandkit.api.structures",
     "id": "buildatcell"
   },
   {
     "title": "sandkit.api.structures.buildAtCellWhenIdle",
-    "body": "Deprecated Use buildAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [StructureRef, StructureBuildOptions\\] ...\\number, number, [StructureRef, StructureBuildOptions\\] args",
+    "body": "Deprecated Use buildAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [StructureRef, StructureBuildOptions\\] args",
     "path": "/api/sandkit.api.structures",
     "id": "buildatcellwhenidle"
   },
   {
     "title": "sandkit.api.structures.removeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [StructureRemovalOptions\\] ...\\number, number, [StructureRemovalOptions\\] args Remove a structure at a cell. Main-thread writes are deferred.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [StructureRemovalOptions\\] args Remove a structure at a cell. Main-thread writes are deferred.",
     "path": "/api/sandkit.api.structures",
     "id": "removeatcell"
   },
   {
     "title": "sandkit.api.structures.removeAtCellWhenIdle",
-    "body": "Deprecated Use removeAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [StructureRemovalOptions\\] ...\\number, number, [StructureRemovalOptions\\] args",
+    "body": "Deprecated Use removeAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [StructureRemovalOptions\\] args",
     "path": "/api/sandkit.api.structures",
     "id": "removeatcellwhenidle"
   },
   {
     "title": "sandkit.api.structures.removeBetweenCells()",
-    "body": "Argument Type Description --- --- --- startCellX number number Start cell column. startCellY number number Start cell row. endCellX number number End cell column. endCellY number number End cell row. options? StructureBulkRemovalOptions StructureBulkRemovalOptions Optional bulk-removal flags. startCellX startCellY endCellX endCellY options? Remove structures between two cells. Main-thread writes are deferred.",
+    "body": "Argument Type Description --- --- --- startCellX number Start cell column. startCellY number Start cell row. endCellX number End cell column. endCellY number End cell row. options? StructureBulkRemovalOptions Optional bulk-removal flags. startCellX startCellY endCellX endCellY options? Remove structures between two cells. Main-thread writes are deferred.",
     "path": "/api/sandkit.api.structures",
     "id": "removebetweencells"
   },
   {
     "title": "sandkit.api.structures.removeBetweenCellsWhenIdle",
-    "body": "Deprecated Use removeBetweenCells instead. Argument Type Description --- --- --- startCellX number number startCellY number number endCellX number number endCellY number number options? StructureBulkRemovalOptions StructureBulkRemovalOptions startCellX startCellY endCellX endCellY options?",
+    "body": "Deprecated Use removeBetweenCells instead. Argument Type Description --- --- --- startCellX number startCellY number endCellX number endCellY number options? StructureBulkRemovalOptions startCellX startCellY endCellX endCellY options?",
     "path": "/api/sandkit.api.structures",
     "id": "removebetweencellswhenidle"
   },
   {
     "title": "sandkit.api.structures.removeAtCells()",
-    "body": "Argument Type Description --- --- --- positions Vector2[] Vector2[] Cell positions to clear. options? StructureBulkRemovalOptions StructureBulkRemovalOptions Optional bulk-removal flags. positions options? Remove structures at many cells. Main-thread writes are deferred. Example",
+    "body": "Argument Type Description --- --- --- positions Vector2[] Cell positions to clear. options? StructureBulkRemovalOptions Optional bulk-removal flags. positions options? Remove structures at many cells. Main-thread writes are deferred. Example",
     "path": "/api/sandkit.api.structures",
     "id": "removeatcells"
   },
   {
     "title": "sandkit.api.structures.removeAtCellsWhenIdle",
-    "body": "Deprecated Use removeAtCells instead. Argument Type Description --- --- --- positions Vector2[] Vector2[] options? StructureBulkRemovalOptions StructureBulkRemovalOptions positions options?",
+    "body": "Deprecated Use removeAtCells instead. Argument Type Description --- --- --- positions Vector2[] options? StructureBulkRemovalOptions positions options?",
     "path": "/api/sandkit.api.structures",
     "id": "removeatcellswhenidle"
   },
   {
     "title": "sandkit.api.structures.addProcessor",
-    "body": "Deprecated Use processing.register instead. Argument Type Description --- --- --- structureId StructureRef StructureRef definition StructureProcessorDefinitionV1 StructureProcessorDefinitionV1 structureId definition",
+    "body": "Deprecated Use processing.register instead. Argument Type Description --- --- --- structureId StructureRef definition StructureProcessorDefinitionV1 structureId definition",
     "path": "/api/sandkit.api.structures",
     "id": "addprocessor"
   },
@@ -3643,19 +3643,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.structures.processing.register()",
-    "body": "Argument Type Description --- --- --- id string & object string & object Unique processing registration id. definition StructureProcessingDefinitionV1 StructureProcessingDefinitionV1 Structure type, interval, and callback. id definition Register a custom processing definition by id. Example",
+    "body": "Argument Type Description --- --- --- id string & object Unique processing registration id. definition StructureProcessingDefinitionV1 Structure type, interval, and callback. id definition Register a custom processing definition by id. Example",
     "path": "/api/sandkit.api.structures.processing",
     "id": "register"
   },
   {
     "title": "sandkit.api.structures.processing.setEnabledAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, boolean\\] ...\\[number, number, boolean\\] args Enable or disable processing at a cell. True when the enabled state changed.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, boolean\\] args Enable or disable processing at a cell. True when the enabled state changed.",
     "path": "/api/sandkit.api.structures.processing",
     "id": "setenabledatcell"
   },
   {
     "title": "sandkit.api.structures.processing.setEnabledAt",
-    "body": "Deprecated Use setEnabledAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, boolean\\] ...\\[number, number, boolean\\] args",
+    "body": "Deprecated Use setEnabledAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, boolean\\] args",
     "path": "/api/sandkit.api.structures.processing",
     "id": "setenabledat"
   },
@@ -3667,13 +3667,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.structures.processing.isEnabledAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when processing is enabled at the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when processing is enabled at the cell.",
     "path": "/api/sandkit.api.structures.processing.worker",
     "id": "isenabledatcell"
   },
   {
     "title": "sandkit.api.structures.processing.isEnabledAt",
-    "body": "Deprecated Use isEnabledAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args",
+    "body": "Deprecated Use isEnabledAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates args",
     "path": "/api/sandkit.api.structures.processing.worker",
     "id": "isenabledat"
   },
@@ -3727,91 +3727,91 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.structures.forEachOfType()",
-    "body": "Argument Type Description --- --- --- structureTypeOrId StructureRef StructureRef Structure type value or string id. callback (structure: Structure) =&gt; void (structure: Structure) = void Called once per matching structure instance. structureTypeOrId callback Invoke a callback for every structure of the given type. Example Worker entry",
+    "body": "Argument Type Description --- --- --- structureTypeOrId StructureRef Structure type value or string id. callback (structure: Structure) =&gt; void Called once per matching structure instance. structureTypeOrId callback Invoke a callback for every structure of the given type. Example Worker entry",
     "path": "/api/sandkit.api.structures.worker",
     "id": "foreachoftype"
   },
   {
     "title": "sandkit.api.structures.getAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return the structure at a cell, or null when none. Structure \\ null",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return the structure at a cell, or null when none. Structure \\ null",
     "path": "/api/sandkit.api.structures.worker",
     "id": "getatcell"
   },
   {
     "title": "sandkit.api.structures.getDefinitionByType()",
-    "body": "Argument Type Description --- --- --- structureType StructureRef StructureRef Structure type value or string id. structureType Return the mod-registered or built-in definition for a structure type.",
+    "body": "Argument Type Description --- --- --- structureType StructureRef Structure type value or string id. structureType Return the mod-registered or built-in definition for a structure type.",
     "path": "/api/sandkit.api.structures.worker",
     "id": "getdefinitionbytype"
   },
   {
     "title": "sandkit.api.structures.getTypeById()",
-    "body": "Argument Type Description --- --- --- structureId string & object string & object Structure string id. structureId Map a structure string id to its runtime type value. StructureType",
+    "body": "Argument Type Description --- --- --- structureId string & object Structure string id. structureId Map a structure string id to its runtime type value. StructureType",
     "path": "/api/sandkit.api.structures.worker",
     "id": "gettypebyid"
   },
   {
     "title": "sandkit.api.structures.getTypeFromId",
-    "body": "Deprecated Use getTypeById instead. Argument Type Description --- --- --- structureId string & object string & object structureId StructureType",
+    "body": "Deprecated Use getTypeById instead. Argument Type Description --- --- --- structureId string & object structureId StructureType",
     "path": "/api/sandkit.api.structures.worker",
     "id": "gettypefromid"
   },
   {
     "title": "sandkit.api.structures.hasBuiltAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when a completed structure occupies the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when a completed structure occupies the cell.",
     "path": "/api/sandkit.api.structures.worker",
     "id": "hasbuiltatcell"
   },
   {
     "title": "sandkit.api.structures.isType()",
-    "body": "Argument Type Description --- --- --- structure Structure \\& 124; null Structure & 124; null Structure instance, or null. structureId string & object string & object Structure string id to compare. structure structureId Return true when the structure matches the given id.",
+    "body": "Argument Type Description --- --- --- structure Structure \\& 124; null Structure instance, or null. structureId string & object Structure string id to compare. structure structureId Return true when the structure matches the given id.",
     "path": "/api/sandkit.api.structures.worker",
     "id": "istype"
   },
   {
     "title": "sandkit.api.structures.isTypeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, string &amp; object\\] ...\\[number, number, string & object\\] args Return true when the cell structure matches the given id.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, string &amp; object\\] args Return true when the cell structure matches the given id.",
     "path": "/api/sandkit.api.structures.worker",
     "id": "istypeatcell"
   },
   {
     "title": "sandkit.api.structures.setSpritesheetIndex()",
-    "body": "Argument Type Description --- --- --- structure Structure Structure Target structure instance. index number number Spritesheet frame index. structure index Set the spritesheet frame index on a structure instance.",
+    "body": "Argument Type Description --- --- --- structure Structure Target structure instance. index number Spritesheet frame index. structure index Set the spritesheet frame index on a structure instance.",
     "path": "/api/sandkit.api.structures.worker",
     "id": "setspritesheetindex"
   },
   {
     "title": "sandkit.api.structures.setSpritesheetIndexAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args Set spritesheet frame index for the structure at a cell.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] args Set spritesheet frame index for the structure at a cell.",
     "path": "/api/sandkit.api.structures.worker",
     "id": "setspritesheetindexatcell"
   },
   {
     "title": "sandkit.api.structures.setSpritesheetIndexByValue()",
-    "body": "Argument Type Description --- --- --- structure Structure Structure Target structure instance. value number number Numeric value mapped through thresholds. thresholds number[] number[] Ascending threshold values. structure value thresholds Pick spritesheet index from a value and threshold table on a structure.",
+    "body": "Argument Type Description --- --- --- structure Structure Target structure instance. value number Numeric value mapped through thresholds. thresholds number[] Ascending threshold values. structure value thresholds Pick spritesheet index from a value and threshold table on a structure.",
     "path": "/api/sandkit.api.structures.worker",
     "id": "setspritesheetindexbyvalue"
   },
   {
     "title": "sandkit.api.structures.setSpritesheetIndexByValueAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number, number[]\\] ...\\[number, number, number, number[]\\] args Same as setSpritesheetIndexByValue for the structure at a cell.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number, number[]\\] args Same as setSpritesheetIndexByValue for the structure at a cell.",
     "path": "/api/sandkit.api.structures.worker",
     "id": "setspritesheetindexbyvalueatcell"
   },
   {
     "title": "sandkit.api.structures.update()",
-    "body": "Argument Type Description --- --- --- structure Structure Structure Structure instance to update. options? When propagateToWorkers is true, sync to worker threads. When propagateToWorkers is true, sync to worker threads. structure options? Push structure field changes to simulation. Example Worker entry",
+    "body": "Argument Type Description --- --- --- structure Structure Structure instance to update. options? When propagateToWorkers is true, sync to worker threads. structure options? Push structure field changes to simulation. Example Worker entry",
     "path": "/api/sandkit.api.structures.worker",
     "id": "update"
   },
   {
     "title": "sandkit.api.structures.updateData()",
-    "body": "Argument Type Description --- --- --- structure Structure Structure Structure instance to update. partial any any Fields to merge onto structure.data. options? When propagateToWorkers is true, sync to worker threads. When propagateToWorkers is true, sync to worker threads. structure partial options? Merge partial data onto a structure. Example Worker entry",
+    "body": "Argument Type Description --- --- --- structure Structure Structure instance to update. partial any Fields to merge onto structure.data. options? When propagateToWorkers is true, sync to worker threads. structure partial options? Merge partial data onto a structure. Example Worker entry",
     "path": "/api/sandkit.api.structures.worker",
     "id": "updatedata"
   },
   {
     "title": "sandkit.api.structures.setData",
-    "body": "Deprecated Use updateData instead. Argument Type Description --- --- --- structure Structure Structure partial any any options? { propagateToWorkers: boolean } structure partial options?",
+    "body": "Deprecated Use updateData instead. Argument Type Description --- --- --- structure Structure partial any options? { propagateToWorkers: boolean } structure partial options?",
     "path": "/api/sandkit.api.structures.worker",
     "id": "setdata"
   },
@@ -3823,7 +3823,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.tech.conservatory.appendUnlock()",
-    "body": "Argument Type Description --- --- --- techId TechGridId TechGridId Built-in or custom tech id. unlocks ConservatoryUnlocks ConservatoryUnlocks Optional structure and item ids to unlock. techId unlocks Append structure or item unlocks to a conservatory tech node. Example",
+    "body": "Argument Type Description --- --- --- techId TechGridId Built-in or custom tech id. unlocks ConservatoryUnlocks Optional structure and item ids to unlock. techId unlocks Append structure or item unlocks to a conservatory tech node. Example",
     "path": "/api/sandkit.api.tech.conservatory",
     "id": "appendunlock"
   },
@@ -3859,49 +3859,49 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.tech.getDefinitionById()",
-    "body": "Argument Type Description --- --- --- techId TechGridId TechGridId Tech entry identifier. techId Return a tech definition by string id. TechDefinition \\ undefined",
+    "body": "Argument Type Description --- --- --- techId TechGridId Tech entry identifier. techId Return a tech definition by string id. TechDefinition \\ undefined",
     "path": "/api/sandkit.api.tech",
     "id": "getdefinitionbyid"
   },
   {
     "title": "sandkit.api.tech.updateDefinition()",
-    "body": "Argument Type Description --- --- --- techId TechGridId TechGridId Tech entry identifier. updates Partial\\ Partial\\ Fields to merge into the definition. techId updates Patch fields on an existing tech definition. Example",
+    "body": "Argument Type Description --- --- --- techId TechGridId Tech entry identifier. updates Partial\\ Fields to merge into the definition. techId updates Patch fields on an existing tech definition. Example",
     "path": "/api/sandkit.api.tech",
     "id": "updatedefinition"
   },
   {
     "title": "sandkit.api.tech.registerDefinition()",
-    "body": "Argument Type Description --- --- --- techId TechGridId TechGridId Tech entry identifier. definition TechDefinition TechDefinition Full tech definition to register. techId definition Register a new tech definition by id. Example",
+    "body": "Argument Type Description --- --- --- techId TechGridId Tech entry identifier. definition TechDefinition Full tech definition to register. techId definition Register a new tech definition by id. Example",
     "path": "/api/sandkit.api.tech",
     "id": "registerdefinition"
   },
   {
     "title": "sandkit.api.tech.addDefinition",
-    "body": "Deprecated Use registerDefinition instead. Argument Type Description --- --- --- techId TechGridId TechGridId definition TechDefinition TechDefinition techId definition",
+    "body": "Deprecated Use registerDefinition instead. Argument Type Description --- --- --- techId TechGridId definition TechDefinition techId definition",
     "path": "/api/sandkit.api.tech",
     "id": "adddefinition"
   },
   {
     "title": "sandkit.api.tech.registerNode()",
-    "body": "Argument Type Description --- --- --- techId TechGridId TechGridId Tech grid node id. definition TechDefinition TechDefinition Tech definition for the node. options Parent node id and optional preferred grid position. Parent node id and optional preferred grid position. techId definition options Register a tech node on the grid with parent and position options. TechGridPosition Example",
+    "body": "Argument Type Description --- --- --- techId TechGridId Tech grid node id. definition TechDefinition Tech definition for the node. options Parent node id and optional preferred grid position. techId definition options Register a tech node on the grid with parent and position options. TechGridPosition Example",
     "path": "/api/sandkit.api.tech",
     "id": "registernode"
   },
   {
     "title": "sandkit.api.tech.isLockedById()",
-    "body": "Argument Type Description --- --- --- techId TechGridId TechGridId Tech entry id (string or numeric enum). techId Return true when a tech entry is locked.",
+    "body": "Argument Type Description --- --- --- techId TechGridId Tech entry id (string or numeric enum). techId Return true when a tech entry is locked.",
     "path": "/api/sandkit.api.tech",
     "id": "islockedbyid"
   },
   {
     "title": "sandkit.api.tech.setLockedById()",
-    "body": "Argument Type Description --- --- --- techId TechGridId TechGridId Tech entry id (string or numeric enum). locked boolean boolean When true, the tech cannot be purchased. techId locked Set locked state for a tech entry by id.",
+    "body": "Argument Type Description --- --- --- techId TechGridId Tech entry id (string or numeric enum). locked boolean When true, the tech cannot be purchased. techId locked Set locked state for a tech entry by id.",
     "path": "/api/sandkit.api.tech",
     "id": "setlockedbyid"
   },
   {
     "title": "sandkit.api.tech.isResearchedById()",
-    "body": "Argument Type Description --- --- --- techId TechGridId TechGridId Tech entry id (string or numeric enum). techId Return true when a tech entry has been researched.",
+    "body": "Argument Type Description --- --- --- techId TechGridId Tech entry id (string or numeric enum). techId Return true when a tech entry has been researched.",
     "path": "/api/sandkit.api.tech",
     "id": "isresearchedbyid"
   },
@@ -3919,67 +3919,67 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.terrains.register()",
-    "body": "Argument Type Description --- --- --- definition TerrainDefinition TerrainDefinition Terrain definition to register. definition Register a new terrain definition. Object with the assigned cellType. cellType: TerrainType",
+    "body": "Argument Type Description --- --- --- definition TerrainDefinition Terrain definition to register. definition Register a new terrain definition. Object with the assigned cellType. cellType: TerrainType",
     "path": "/api/sandkit.api.terrains",
     "id": "register"
   },
   {
     "title": "sandkit.api.terrains.updateDefinition()",
-    "body": "Argument Type Description --- --- --- cellTypeOrId TerrainRef TerrainRef Numeric cell type or terrain string id. partial Partial\\ Partial\\ Fields to merge onto the definition. cellTypeOrId partial Patch fields on an existing terrain definition.",
+    "body": "Argument Type Description --- --- --- cellTypeOrId TerrainRef Numeric cell type or terrain string id. partial Partial\\ Fields to merge onto the definition. cellTypeOrId partial Patch fields on an existing terrain definition.",
     "path": "/api/sandkit.api.terrains",
     "id": "updatedefinition"
   },
   {
     "title": "sandkit.api.terrains.createAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args Create terrain at a cell. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args Create terrain at a cell. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.terrains",
     "id": "createatcell"
   },
   {
     "title": "sandkit.api.terrains.createAtCellWhenIdle",
-    "body": "Deprecated Use createAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args",
+    "body": "Deprecated Use createAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args",
     "path": "/api/sandkit.api.terrains",
     "id": "createatcellwhenidle"
   },
   {
     "title": "sandkit.api.terrains.replaceAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args Replace terrain at a cell. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args Replace terrain at a cell. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.terrains",
     "id": "replaceatcell"
   },
   {
     "title": "sandkit.api.terrains.replaceAtCellWhenIdle",
-    "body": "Deprecated Use replaceAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args",
+    "body": "Deprecated Use replaceAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args",
     "path": "/api/sandkit.api.terrains",
     "id": "replaceatcellwhenidle"
   },
   {
     "title": "sandkit.api.terrains.removeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainMutationOptions\\] ...\\number, number, [TerrainMutationOptions\\] args Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainMutationOptions\\] args Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.terrains",
     "id": "removeatcell"
   },
   {
     "title": "sandkit.api.terrains.removeAtCellWhenIdle",
-    "body": "Deprecated Use removeAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [TerrainMutationOptions\\] ...\\number, number, [TerrainMutationOptions\\] args",
+    "body": "Deprecated Use removeAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [TerrainMutationOptions\\] args",
     "path": "/api/sandkit.api.terrains",
     "id": "removeatcellwhenidle"
   },
   {
     "title": "sandkit.api.terrains.setHitPointsAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args Set terrain hit points at a cell. Main-entry writes are deferred; reads see the old grid.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] args Set terrain hit points at a cell. Main-entry writes are deferred; reads see the old grid.",
     "path": "/api/sandkit.api.terrains",
     "id": "sethitpointsatcell"
   },
   {
     "title": "sandkit.api.terrains.setHpAtCell",
-    "body": "Deprecated Use setHitPointsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args",
+    "body": "Deprecated Use setHitPointsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] args",
     "path": "/api/sandkit.api.terrains",
     "id": "sethpatcell"
   },
   {
     "title": "sandkit.api.terrains.setHpAtCellWhenIdle",
-    "body": "Deprecated Use setHitPointsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args",
+    "body": "Deprecated Use setHitPointsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] args",
     "path": "/api/sandkit.api.terrains",
     "id": "sethpatcellwhenidle"
   },
@@ -4027,97 +4027,97 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.terrains.getIdByType()",
-    "body": "Argument Type Description --- --- --- terrainType TerrainType TerrainType Numeric terrain cell type. terrainType Return the mod string id for a numeric terrain type. string & object",
+    "body": "Argument Type Description --- --- --- terrainType TerrainType Numeric terrain cell type. terrainType Return the mod string id for a numeric terrain type. string & object",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "getidbytype"
   },
   {
     "title": "sandkit.api.terrains.getTypeById()",
-    "body": "Argument Type Description --- --- --- terrainId string & object string & object Mod-registered or built-in terrain id. terrainId Resolve a terrain string id to a numeric cell type. TerrainType",
+    "body": "Argument Type Description --- --- --- terrainId string & object Mod-registered or built-in terrain id. terrainId Resolve a terrain string id to a numeric cell type. TerrainType",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "gettypebyid"
   },
   {
     "title": "sandkit.api.terrains.getTypeFromId",
-    "body": "Deprecated Use getTypeById instead. Argument Type Description --- --- --- terrainId string & object string & object terrainId TerrainType",
+    "body": "Deprecated Use getTypeById instead. Argument Type Description --- --- --- terrainId string & object terrainId TerrainType",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "gettypefromid"
   },
   {
     "title": "sandkit.api.terrains.getDefinitionByType()",
-    "body": "Argument Type Description --- --- --- terrainType TerrainType TerrainType Numeric terrain cell type. terrainType Look up the definition for a terrain type. TerrainDefinition \\ undefined",
+    "body": "Argument Type Description --- --- --- terrainType TerrainType Numeric terrain cell type. terrainType Look up the definition for a terrain type. TerrainDefinition \\ undefined",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "getdefinitionbytype"
   },
   {
     "title": "sandkit.api.terrains.getTypeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return the terrain cell type at a cell, or null when none. TerrainType \\ null",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return the terrain cell type at a cell, or null when none. TerrainType \\ null",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "gettypeatcell"
   },
   {
     "title": "sandkit.api.terrains.getDataAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return terrain cell type and hit points at a cell. TerrainDataAtCell \\ null Cell type and hit points, or null when the cell is not terrain.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return terrain cell type and hit points at a cell. TerrainDataAtCell \\ null Cell type and hit points, or null when the cell is not terrain.",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "getdataatcell"
   },
   {
     "title": "sandkit.api.terrains.isAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Return true when any terrain occupies the cell.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Return true when any terrain occupies the cell.",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "isatcell"
   },
   {
     "title": "sandkit.api.terrains.isTypeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, string &amp; object\\] ...\\[number, number, string & object\\] args Return true when the cell terrain matches the given id.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, string &amp; object\\] args Return true when the cell terrain matches the given id.",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "istypeatcell"
   },
   {
     "title": "sandkit.api.terrains.isCellIdTerrain()",
-    "body": "Argument Type Description --- --- --- cellId CellId CellId Packed cell id from world.getCellIdAtCell. cellId Return true when a packed cell id refers to terrain.",
+    "body": "Argument Type Description --- --- --- cellId CellId Packed cell id from world.getCellIdAtCell. cellId Return true when a packed cell id refers to terrain.",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "iscellidterrain"
   },
   {
     "title": "sandkit.api.terrains.damageAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args Apply damage to terrain at a cell.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] args Apply damage to terrain at a cell.",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "damageatcell"
   },
   {
     "title": "sandkit.api.terrains.meltAtCell()",
-    "body": "Argument Type Description --- --- --- args ...CellCoordinates ...CellCoordinates args Melt terrain at a cell (for example ice to water). Worker-entry writes are immediate.",
+    "body": "Argument Type Description --- --- --- args ...CellCoordinates args Melt terrain at a cell (for example ice to water). Worker-entry writes are immediate.",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "meltatcell"
   },
   {
     "title": "sandkit.api.terrains.createAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args Place terrain at an empty cell. Worker-entry writes are immediate.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args Place terrain at an empty cell. Worker-entry writes are immediate.",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "createatcell"
   },
   {
     "title": "sandkit.api.terrains.replaceAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args Replace existing terrain at a cell. Worker-entry writes are immediate.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args Replace existing terrain at a cell. Worker-entry writes are immediate.",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "replaceatcell"
   },
   {
     "title": "sandkit.api.terrains.removeAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainMutationOptions\\] ...\\number, number, [TerrainMutationOptions\\] args Remove terrain from a cell. Worker-entry writes are immediate.",
+    "body": "Argument Type Description --- --- --- args ...\\number, number, [TerrainMutationOptions\\] args Remove terrain from a cell. Worker-entry writes are immediate.",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "removeatcell"
   },
   {
     "title": "sandkit.api.terrains.setHitPointsAtCell()",
-    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args Set terrain hit points at a cell. Worker-entry writes are immediate. True when hit points changed or the terrain was removed.",
+    "body": "Argument Type Description --- --- --- args ...\\[number, number, number\\] args Set terrain hit points at a cell. Worker-entry writes are immediate. True when hit points changed or the terrain was removed.",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "sethitpointsatcell"
   },
   {
     "title": "sandkit.api.terrains.setHpAtCell",
-    "body": "Deprecated Use setHitPointsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args",
+    "body": "Deprecated Use setHitPointsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] args",
     "path": "/api/sandkit.api.terrains.worker",
     "id": "sethpatcell"
   },
@@ -4141,13 +4141,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.tools.grabber",
-    "body": "Grabber tool size and state.",
+    "body": "Grabber tool size and state. Available as sandkit.api.tools.grabber.",
     "path": "/api/sandkit.api.tools.grabber",
     "id": ""
   },
   {
     "title": "sandkit.api.tools.grabber.setSize()",
-    "body": "Argument Type Description --- --- --- size number number Grab radius in cells. size Set grabber radius size.",
+    "body": "Argument Type Description --- --- --- size number Grab radius in cells. size Set grabber radius size.",
     "path": "/api/sandkit.api.tools.grabber",
     "id": "setsize"
   },
@@ -4171,7 +4171,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.tools",
-    "body": "",
+    "body": "Inspect and control the grabber tool: size, active state, and load status. - sandkit.api.tools.grabber",
     "path": "/api/sandkit.api.tools",
     "id": ""
   },
@@ -4189,15 +4189,165 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.triggers.register()",
-    "body": "Argument Type Description --- --- --- triggerId string string Unique trigger identifier. definition MainTriggerDefinition MainTriggerDefinition Interval in ticks and callback to invoke. triggerId definition Register a repeating trigger with interval and callback. Example",
+    "body": "Argument Type Description --- --- --- triggerId string Unique trigger identifier. definition MainTriggerDefinition Interval in ticks and callback to invoke. triggerId definition Register a repeating trigger with interval and callback. Example",
     "path": "/api/sandkit.api.triggers",
     "id": "register"
   },
   {
+    "title": "sandkit.api.ui.components",
+    "body": "Built-in React UI components.",
+    "path": "/api/sandkit.api.ui.components",
+    "id": ""
+  },
+  {
+    "title": "sandkit.api.ui.components.ActionSlot()",
+    "body": "Argument Type Description --- --- --- props ActionSlotProps Bank source, slot index, and optional labels and handlers. props React hotbar action slot. Example",
+    "path": "/api/sandkit.api.ui.components",
+    "id": "actionslot"
+  },
+  {
+    "title": "sandkit.api.ui.components.Panel()",
+    "body": "Argument Type Description --- --- --- props PanelProps Title, children, and optional class and style. props React panel with an optional title. Example",
+    "path": "/api/sandkit.api.ui.components",
+    "id": "panel"
+  },
+  {
+    "title": "sandkit.api.ui.components.Button()",
+    "body": "Argument Type Description --- --- --- props ButtonProps Children, click handler, and optional style flags. props React button. Example",
+    "path": "/api/sandkit.api.ui.components",
+    "id": "button"
+  },
+  {
+    "title": "sandkit.api.ui.hotbar",
+    "body": "Hotbar bank sources, selection, and slot queries.",
+    "path": "/api/sandkit.api.ui.hotbar",
+    "id": ""
+  },
+  {
+    "title": "sandkit.api.ui.hotbar.createBankSource()",
+    "body": "Argument Type Description --- --- --- options HotbarBankSourceOptions Bank offset and optional minimum bank count. options Create a hotbar bank source for extra action banks. HotbarBankSource Source used by components.ActionSlot. Example",
+    "path": "/api/sandkit.api.ui.hotbar",
+    "id": "createbanksource"
+  },
+  {
+    "title": "sandkit.api.ui.hotbar.selectAction()",
+    "body": "Argument Type Description --- --- --- action AssetRef Action to select. action Select a hotbar action programmatically.",
+    "path": "/api/sandkit.api.ui.hotbar",
+    "id": "selectaction"
+  },
+  {
+    "title": "sandkit.api.ui.hotbar.getBankCount()",
+    "body": "Return the number of hotbar banks.",
+    "path": "/api/sandkit.api.ui.hotbar",
+    "id": "getbankcount"
+  },
+  {
+    "title": "sandkit.api.ui.hotbar.getActiveBankIndex()",
+    "body": "Return the active hotbar bank index.",
+    "path": "/api/sandkit.api.ui.hotbar",
+    "id": "getactivebankindex"
+  },
+  {
+    "title": "sandkit.api.ui.hotbar.getActiveSlotIndex()",
+    "body": "Return the active hotbar slot index.",
+    "path": "/api/sandkit.api.ui.hotbar",
+    "id": "getactiveslotindex"
+  },
+  {
+    "title": "sandkit.api.ui.hotbar.getSlotKeyLabel()",
+    "body": "Argument Type Description --- --- --- bindingId KeyBinding Key binding id for the slot. bindingId Return the key label for a hotbar slot binding.",
+    "path": "/api/sandkit.api.ui.hotbar",
+    "id": "getslotkeylabel"
+  },
+  {
+    "title": "sandkit.api.ui.hotbar.useHotbar()",
+    "body": "React hook for hotbar bank and slot state. HotbarState Current bank count and active bank and slot indexes. Example",
+    "path": "/api/sandkit.api.ui.hotbar",
+    "id": "usehotbar"
+  },
+  {
     "title": "sandkit.api.ui",
-    "body": "api.ui.components.ActionSlot api.ui.components.Button api.ui.components.Panel api.ui.hotbar.createBankSource api.ui.hotbar.useHotbar api.ui.overrides.register api.ui.regions.mount api.ui.regions.mountHandle.update api.ui.select api.ui.useGameEvent",
+    "body": "",
     "path": "/api/sandkit.api.ui",
     "id": ""
+  },
+  {
+    "title": "LocalizedText",
+    "body": "Property Type Description --- --- --- label LocalizedText Display label for the choice. value T Value returned when the player picks this choice. label value One choice in select. T = string",
+    "path": "/api/sandkit.api.ui",
+    "id": "selectchoice"
+  },
+  {
+    "title": "LocalizedText",
+    "body": "Property Type Description --- --- --- message? LocalizedText Optional dialog body text. title? LocalizedText Optional dialog title. defaultValue? T Value selected when the dialog opens. buttonLabel? LocalizedText Confirm button label. message? title? defaultValue? buttonLabel? Dialog options for select. T = string",
+    "path": "/api/sandkit.api.ui",
+    "id": "selectdialogoptions"
+  },
+  {
+    "title": "&quot;raised&quot; &#124; &quot;docked&quot;",
+    "body": "Property Type Description --- --- --- placement? &quot;raised&quot; & 124; &quot;docked&quot; \"docked\" sits on the hotbar. \"raised\" sits above panels such as Filter Config. order? number Draw order within the region. render () =&gt; ReactNode Function that returns React content. placement? order? render Options for regions.mount.",
+    "path": "/api/sandkit.api.ui",
+    "id": "regionmountoptions"
+  },
+  {
+    "title": "&quot;raised&quot; &#124; &quot;docked&quot;",
+    "body": "Property Type Description --- --- --- placement? &quot;raised&quot; & 124; &quot;docked&quot; \"docked\" sits on the hotbar. \"raised\" sits above panels such as Filter Config. order? number Draw order within the region. render? () =&gt; ReactNode Function that returns React content. placement? order? render? Partial options for RegionMountHandle.update.",
+    "path": "/api/sandkit.api.ui",
+    "id": "regionmountupdateoptions"
+  },
+  {
+    "title": "(options: RegionMountUpdateOptions): void",
+    "body": "Method Signature Description --- --- --- update() (options: RegionMountUpdateOptions): void Update placement, order, or render for this mount. unmount() (): void Remove this mount from the region. update() unmount() Handle returned from regions.mount.",
+    "path": "/api/sandkit.api.ui",
+    "id": "regionmounthandle"
+  },
+  {
+    "title": "(): void",
+    "body": "Method Signature Description --- --- --- restore() (): void Show the region again. restore() Handle returned from regions.setVisible.",
+    "path": "/api/sandkit.api.ui",
+    "id": "visibilityhandle"
+  },
+  {
+    "title": "(): void",
+    "body": "Method Signature Description --- --- --- remove() (): void Drop this wrapper. remove() Handle returned from overrides.register.",
+    "path": "/api/sandkit.api.ui",
+    "id": "overridehandle"
+  },
+  {
+    "title": "number",
+    "body": "Property Type Description --- --- --- bankOffset number Bank index offset for this source. minimumBankCount? number Minimum number of banks to keep available. bankOffset minimumBankCount? Options for hotbar.createBankSource.",
+    "path": "/api/sandkit.api.ui",
+    "id": "hotbarbanksourceoptions"
+  },
+  {
+    "title": "(): boolean",
+    "body": "Method Signature Description --- --- --- isAvailable() (): boolean Return true when this bank source can show slots. getBankIndex() (): number Return the bank index for this source. getSlotCount() (): number Return the number of slots in this bank. getAction() (slotIndex: number): AssetRef Return the action in a slot. activateSlot() (slotIndex: number): void Activate a slot in this bank. clearSlot() (slotIndex: number): void Clear a slot in this bank. dispose() (): void Release this bank source. isAvailable() getBankIndex() getSlotCount() getAction() activateSlot() clearSlot() dispose() Hotbar bank source used by components.ActionSlot.",
+    "path": "/api/sandkit.api.ui",
+    "id": "hotbarbanksource"
+  },
+  {
+    "title": "number",
+    "body": "Property Type Description --- --- --- bankCount number Number of hotbar banks. activeBankIndex number Active bank index. activeSlotIndex number Active slot index. bankCount activeBankIndex activeSlotIndex State returned from hotbar.useHotbar.",
+    "path": "/api/sandkit.api.ui",
+    "id": "hotbarstate"
+  },
+  {
+    "title": "HotbarBankSource",
+    "body": "Property Type Description --- --- --- source HotbarBankSource Bank source from hotbar.createBankSource. slotIndex number Slot index in the bank. action? AssetRef Action shown in the slot. keyLabel? string Optional key label drawn on the slot. active? boolean When true, draw the slot as selected. onSelect? () =&gt; void Called when the player selects the slot. onClear? () =&gt; void Called when the player clears the slot. source slotIndex action? keyLabel? active? onSelect? onClear? Props for components.ActionSlot.",
+    "path": "/api/sandkit.api.ui",
+    "id": "actionslotprops"
+  },
+  {
+    "title": "LocalizedText",
+    "body": "Property Type Description --- --- --- title? LocalizedText Optional panel title. children? ReactNode Panel body. className? string Extra class names. style? CSSProperties Inline style. title? children? className? style? Props for components.Panel.",
+    "path": "/api/sandkit.api.ui",
+    "id": "panelprops"
+  },
+  {
+    "title": "ReactNode",
+    "body": "Property Type Description --- --- --- children? ReactNode Button label or content. active? boolean When true, draw the button as selected. border? boolean When false, hide the button border. disabled? boolean When true, ignore clicks. small? boolean When true, use the small button size. variant? &quot;danger&quot; & 124; &quot;primary&quot; Visual style. className? string Extra class names. style? CSSProperties Inline style. onClick? () =&gt; void Click handler. children? active? border? disabled? small? variant? className? style? onClick? Props for components.Button.",
+    "path": "/api/sandkit.api.ui",
+    "id": "buttonprops"
   },
   {
     "title": "&quot;message&quot;",
@@ -4216,6 +4366,12 @@ window.SMT_SEARCH_INDEX = [
     "body": "Property Type Description --- --- --- id string Unique id within the focus scope. scope string Focus scope id this element belongs to. onActivate (element?: HTMLElement) =&gt; void Called when the element is activated (A button / Enter). onFocus? optional onFocus?: () =&gt; void Called when the element receives focus. disabled? optional disabled?: boolean When true, skip this element during navigation. x? optional x?: number Optional grid column for spatial navigation. y? optional y?: number Optional grid row for spatial navigation. neighbors? optional neighbors?: Partial&lt;Record&lt;&quot;left&quot; & 124; &quot;right&quot; & 124; &quot;up&quot; & 124; &quot;down&quot;, string&gt;&gt; Neighbor ids for directional navigation. scrollIntoView? optional scrollIntoView?: boolean When true, scroll the element into view on focus. id scope onActivate onFocus? disabled? x? y? neighbors? scrollIntoView? Options for useFocusable registration.",
     "path": "/api/sandkit.api.ui",
     "id": "focusoptions"
+  },
+  {
+    "title": "string",
+    "body": "Property Type Description --- --- --- id string Unique scope id. active boolean When true, this scope can receive focus. priority? optional priority?: number Higher values take focus before lower values. defaultId? optional defaultId?: string Default focusable id in this scope. onBack? optional onBack?: () =&gt; boolean & 124; void Called on back. Return true when the scope handled back. id active priority? defaultId? onBack? Options for navigation.useFocusScope.",
+    "path": "/api/sandkit.api.ui",
+    "id": "focusscopeoptions"
   },
   {
     "title": "sandkit.api.ui.OverlaySlot",
@@ -4243,7 +4399,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.ui.update()",
-    "body": "Argument Type Description --- --- --- componentId ComponentId ComponentId Built-in ComponentIdEnum value or custom string id. options? ComponentUpdateOptions ComponentUpdateOptions Component-specific update payload. componentId options? Update a registered UI component by id.",
+    "body": "Argument Type Description --- --- --- componentId ComponentId Built-in ComponentIdEnum value or custom string id. options? ComponentUpdateOptions Component-specific update payload. componentId options? Update a registered UI component by id.",
     "path": "/api/sandkit.api.ui",
     "id": "update"
   },
@@ -4255,31 +4411,55 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.ui.showTooltip()",
-    "body": "Argument Type Description --- --- --- data TooltipMessageData TooltipMessageData Tooltip type and localized content. data Show a tooltip with the given data.",
+    "body": "Argument Type Description --- --- --- data TooltipMessageData Tooltip type and localized content. data Show a tooltip with the given data.",
     "path": "/api/sandkit.api.ui",
     "id": "showtooltip"
   },
   {
     "title": "sandkit.api.ui.alert()",
-    "body": "Argument Type Description --- --- --- message LocalizedText LocalizedText Dialog body text. title? LocalizedText LocalizedText Optional dialog title. message title? Show an alert dialog. Promise\\ Promise that resolves when the user dismisses the dialog. Example",
+    "body": "Argument Type Description --- --- --- message LocalizedText Dialog body text. title? LocalizedText Optional dialog title. message title? Show an alert dialog. Promise\\ Promise that resolves when the user dismisses the dialog. Example",
     "path": "/api/sandkit.api.ui",
     "id": "alert"
   },
   {
     "title": "sandkit.api.ui.confirm()",
-    "body": "Argument Type Description --- --- --- message LocalizedText LocalizedText Dialog body text. title? LocalizedText LocalizedText Optional dialog title. message title? Show a confirm dialog. Promise\\ Promise that resolves with true when confirmed, or false when cancelled. Example",
+    "body": "Argument Type Description --- --- --- message LocalizedText Dialog body text. title? LocalizedText Optional dialog title. message title? Show a confirm dialog. Promise\\ Promise that resolves with true when confirmed, or false when cancelled. Example",
     "path": "/api/sandkit.api.ui",
     "id": "confirm"
   },
   {
     "title": "sandkit.api.ui.prompt()",
-    "body": "Argument Type Description --- --- --- message LocalizedText LocalizedText Dialog body text. defaultValue? string string Initial input value. placeholder? LocalizedText LocalizedText Placeholder text in the input field. title? LocalizedText LocalizedText Optional dialog title. allowCopy? boolean boolean When true, allow copying the result from the dialog. message defaultValue? placeholder? title? allowCopy? Show a prompt dialog. Promise\\ Promise that resolves with entered text, or null when cancelled. Example",
+    "body": "Argument Type Description --- --- --- message LocalizedText Dialog body text. defaultValue? string Initial input value. placeholder? LocalizedText Placeholder text in the input field. title? LocalizedText Optional dialog title. allowCopy? boolean When true, allow copying the result from the dialog. message defaultValue? placeholder? title? allowCopy? Show a prompt dialog. Promise\\ Promise that resolves with entered text, or null when cancelled. Example",
     "path": "/api/sandkit.api.ui",
     "id": "prompt"
   },
   {
+    "title": "sandkit.api.ui.select",
+    "body": "Argument Type Description --- --- --- options SelectChoice\\&lt;T\\&gt;[] Choices shown in the picker. opts? SelectDialogOptions\\&lt;T\\&gt; Dialog title, default, and confirm label. options opts? Show a modal choice picker. T = string Promise\\ Promise that resolves with the chosen value, or null when cancelled. Example",
+    "path": "/api/sandkit.api.ui",
+    "id": "select"
+  },
+  {
+    "title": "sandkit.api.ui.useRefresh()",
+    "body": "Argument Type Description --- --- --- componentIds ComponentId[] Component ids to subscribe to. componentIds React hook that re-renders when the listed UI components update.",
+    "path": "/api/sandkit.api.ui",
+    "id": "userefresh"
+  },
+  {
+    "title": "sandkit.api.ui.useScale()",
+    "body": "React hook that returns the current UI scale. UI scale factor.",
+    "path": "/api/sandkit.api.ui",
+    "id": "usescale"
+  },
+  {
+    "title": "sandkit.api.ui.useGameEvent",
+    "body": "Argument Type Description --- --- --- eventId K Registered event name. handler (payload: EventPayload\\&lt;K\\&gt;) =&gt; void Called with the event payload. eventId handler React hook that subscribes to a game event. K extends EventId Example",
+    "path": "/api/sandkit.api.ui",
+    "id": "usegameevent"
+  },
+  {
     "title": "sandkit.api.ui.inject()",
-    "body": "Argument Type Description --- --- --- componentId ComponentId ComponentId Overlay slot or custom mount point id. component ComponentType\\ \\ ComponentType\\ \\ React component to render. componentId component Mount a React component by id. Function that unmounts the injected component. () = void",
+    "body": "Argument Type Description --- --- --- componentId ComponentId Overlay slot or custom mount point id. component ComponentType\\ \\ React component to render. componentId component Mount a React component by id. Function that unmounts the injected component. () = void",
     "path": "/api/sandkit.api.ui",
     "id": "inject"
   },
@@ -4291,45 +4471,81 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.ui.navigation.useFocusable",
-    "body": "Argument Type Description --- --- --- options FocusOptions FocusOptions Focus registration and neighbor wiring. options React hook for a focusable UI element in a scope. T extends HTMLElement = HTMLDivElement Focusable\\ Ref, focus state, and a focus helper. Example",
+    "body": "Argument Type Description --- --- --- options FocusOptions Focus registration and neighbor wiring. options React hook for a focusable UI element in a scope. T extends HTMLElement = HTMLDivElement Focusable\\ Ref, focus state, and a focus helper. Example",
     "path": "/api/sandkit.api.ui.navigation",
     "id": "usefocusable"
   },
   {
     "title": "sandkit.api.ui.navigation.useFocusScope()",
-    "body": "Argument Type Description --- --- --- options Scope id, priority, default focus, and back handler. Scope id, priority, default focus, and back handler. options React hook to register a focus scope with back handling. Example",
+    "body": "Argument Type Description --- --- --- options FocusScopeOptions Scope id, priority, default focus, and back handler. options React hook to register a focus scope with back handling. Example",
     "path": "/api/sandkit.api.ui.navigation",
     "id": "usefocusscope"
   },
   {
-    "title": "sandkit.api.ui.navigation.controllerFocusClass()",
-    "body": "Argument Type Description --- --- --- focused boolean boolean True when the element has controller focus. focused Return CSS class for controller focus ring state. Class name string for the focus ring.",
+    "title": "sandkit.api.ui.navigation.getControllerFocusClass()",
+    "body": "Argument Type Description --- --- --- focused boolean True when the element has controller focus. focused Return CSS class for controller focus ring state. Class name string for the focus ring.",
+    "path": "/api/sandkit.api.ui.navigation",
+    "id": "getcontrollerfocusclass"
+  },
+  {
+    "title": "sandkit.api.ui.navigation.controllerFocusClass",
+    "body": "Deprecated Use getControllerFocusClass instead. Argument Type Description --- --- --- focused boolean True when the element has controller focus. focused Return CSS class for controller focus ring state. Class name string for the focus ring.",
     "path": "/api/sandkit.api.ui.navigation",
     "id": "controllerfocusclass"
   },
   {
     "title": "sandkit.api.ui.overlays",
-    "body": "Overlay slot registration and updates.",
+    "body": "Overlay slot registration and updates. Use regions instead.",
     "path": "/api/sandkit.api.ui.overlays",
     "id": ""
   },
   {
-    "title": "sandkit.api.ui.overlays.register()",
-    "body": "Argument Type Description --- --- --- slot OverlaySlot OverlaySlot Slot name (for example \"hotbar\"). overlayId string string Unique id for this overlay within the slot. render () =&gt; ReactNode () = ReactNode Function that returns React content. slot overlayId render Register a render function in an overlay slot.",
+    "title": "sandkit.api.ui.overlays.register",
+    "body": "Deprecated Use regions.mount instead. Argument Type Description --- --- --- slot OverlaySlot Slot name (for example \"hotbar\"). overlayId string Unique id for this overlay within the slot. render () =&gt; ReactNode Function that returns React content. slot overlayId render Register a render function in an overlay slot.",
     "path": "/api/sandkit.api.ui.overlays",
     "id": "register"
   },
   {
-    "title": "sandkit.api.ui.overlays.unregister()",
-    "body": "Argument Type Description --- --- --- slot OverlaySlot OverlaySlot Slot name the overlay was registered in. overlayId string string Overlay id passed to register. slot overlayId Remove an overlay from a slot.",
+    "title": "sandkit.api.ui.overlays.unregister",
+    "body": "Deprecated Use RegionMountHandle.unmount instead. Argument Type Description --- --- --- slot OverlaySlot Slot name the overlay was registered in. overlayId string Overlay id passed to register. slot overlayId Remove an overlay from a slot.",
     "path": "/api/sandkit.api.ui.overlays",
     "id": "unregister"
   },
   {
-    "title": "sandkit.api.ui.overlays.update()",
-    "body": "Argument Type Description --- --- --- slot OverlaySlot OverlaySlot Slot name to refresh. slot Request a re-render for all overlays in a slot.",
+    "title": "sandkit.api.ui.overlays.update",
+    "body": "Deprecated Use RegionMountHandle.update instead. Argument Type Description --- --- --- slot OverlaySlot Slot name to refresh. slot Request a re-render for all overlays in a slot.",
     "path": "/api/sandkit.api.ui.overlays",
     "id": "update"
+  },
+  {
+    "title": "sandkit.api.ui.overrides",
+    "body": "Wrap a built-in UI component.",
+    "path": "/api/sandkit.api.ui.overrides",
+    "id": ""
+  },
+  {
+    "title": "sandkit.api.ui.overrides.register()",
+    "body": "Argument Type Description --- --- --- componentId ComponentId Built-in component id (for example \"resources\"). wrapper (Original: ComponentType\\&lt;Record\\&lt;string, unknown\\&gt;\\&gt;, props: Record\\&lt;string, unknown\\&gt;) =&gt; ReactNode Receives the original component and props; return replacement content. componentId wrapper Register a wrapper around a built-in UI component. OverrideHandle Handle whose OverrideHandle.remove drops the wrapper. Example",
+    "path": "/api/sandkit.api.ui.overrides",
+    "id": "register"
+  },
+  {
+    "title": "sandkit.api.ui.regions",
+    "body": "Mount React content in a named UI region.",
+    "path": "/api/sandkit.api.ui.regions",
+    "id": ""
+  },
+  {
+    "title": "sandkit.api.ui.regions.mount()",
+    "body": "Argument Type Description --- --- --- regionId OverlaySlot Region name (for example \"hotbar\"). mountId string Unique id for this mount within the region. options RegionMountOptions Placement, order, and render function. regionId mountId options Mount a React region in a UI slot. \"docked\" sits on the hotbar. \"raised\" sits above panels such as Filter Config. RegionMountHandle Handle used to update or unmount the region. Example",
+    "path": "/api/sandkit.api.ui.regions",
+    "id": "mount"
+  },
+  {
+    "title": "sandkit.api.ui.regions.setVisible()",
+    "body": "Argument Type Description --- --- --- regionId OverlaySlot Region name passed to mount. visible boolean When false, hide the region until restored. regionId visible Show or hide a mounted region. VisibilityHandle Handle whose VisibilityHandle.restore shows the region again.",
+    "path": "/api/sandkit.api.ui.regions",
+    "id": "setvisible"
   },
   {
     "title": "sandkit.api.ui (worker)",
@@ -4363,7 +4579,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.ui.toast()",
-    "body": "Argument Type Description --- --- --- message LocalizedText LocalizedText Plain text, translation key, or translatable value. options? ToastOptions ToastOptions Cooldown, style, and auto-dismiss options. message options? Show a short on-screen toast message. Example Worker entry",
+    "body": "Argument Type Description --- --- --- message LocalizedText Plain text, translation key, or translatable value. options? ToastOptions Cooldown, style, and auto-dismiss options. message options? Show a short on-screen toast message. Example Worker entry",
     "path": "/api/sandkit.api.ui.worker",
     "id": "toast"
   },
@@ -4387,37 +4603,37 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.upgrades.registerCategory()",
-    "body": "Argument Type Description --- --- --- definition UpgradeCategoryDefinition UpgradeCategoryDefinition Category id and display metadata. definition Register an upgrade category.",
+    "body": "Argument Type Description --- --- --- definition UpgradeCategoryDefinition Category id and display metadata. definition Register an upgrade category.",
     "path": "/api/sandkit.api.upgrades",
     "id": "registercategory"
   },
   {
     "title": "sandkit.api.upgrades.register()",
-    "body": "Argument Type Description --- --- --- definition UpgradeDefinition UpgradeDefinition Item id, upgrade id, costs, and level metadata. definition Register an upgrade definition.",
+    "body": "Argument Type Description --- --- --- definition UpgradeDefinition Item id, upgrade id, costs, and level metadata. definition Register an upgrade definition.",
     "path": "/api/sandkit.api.upgrades",
     "id": "register"
   },
   {
     "title": "sandkit.api.upgrades.updateDefinition()",
-    "body": "Argument Type Description --- --- --- itemId string string Parent item id. upgradeId string string Upgrade id within the item. partial Partial\\ Partial\\ Fields to merge into the definition. itemId upgradeId partial Patch fields on an existing upgrade definition.",
+    "body": "Argument Type Description --- --- --- itemId string Parent item id. upgradeId string Upgrade id within the item. partial Partial\\ Fields to merge into the definition. itemId upgradeId partial Patch fields on an existing upgrade definition.",
     "path": "/api/sandkit.api.upgrades",
     "id": "updatedefinition"
   },
   {
     "title": "sandkit.api.upgrades.getLevelById()",
-    "body": "Argument Type Description --- --- --- itemId string string Parent item id. upgradeId string string Upgrade id within the item. itemId upgradeId Return the current purchased level for an upgrade.",
+    "body": "Argument Type Description --- --- --- itemId string Parent item id. upgradeId string Upgrade id within the item. itemId upgradeId Return the current purchased level for an upgrade.",
     "path": "/api/sandkit.api.upgrades",
     "id": "getlevelbyid"
   },
   {
     "title": "sandkit.api.upgrades.getAvailableLevelById()",
-    "body": "Argument Type Description --- --- --- itemId string string Parent item id. upgradeId string string Upgrade id within the item. itemId upgradeId Return the maximum available level for an upgrade.",
+    "body": "Argument Type Description --- --- --- itemId string Parent item id. upgradeId string Upgrade id within the item. itemId upgradeId Return the maximum available level for an upgrade.",
     "path": "/api/sandkit.api.upgrades",
     "id": "getavailablelevelbyid"
   },
   {
     "title": "sandkit.api.upgrades.setLevelById()",
-    "body": "Argument Type Description --- --- --- itemId string string Parent item id. upgradeId string string Upgrade id within the item. level number number Level to set. itemId upgradeId level Set the purchased level for an upgrade.",
+    "body": "Argument Type Description --- --- --- itemId string Parent item id. upgradeId string Upgrade id within the item. level number Level to set. itemId upgradeId level Set the purchased level for an upgrade.",
     "path": "/api/sandkit.api.upgrades",
     "id": "setlevelbyid"
   },
@@ -4429,31 +4645,31 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.utils.getDistance()",
-    "body": "Argument Type Description --- --- --- pointA Vector2 Vector2 First point. pointB Vector2 Vector2 Second point. pointA pointB Return distance between two points.",
+    "body": "Argument Type Description --- --- --- pointA Vector2 First point. pointB Vector2 Second point. pointA pointB Return distance between two points.",
     "path": "/api/sandkit.api.utils",
     "id": "getdistance"
   },
   {
     "title": "sandkit.api.utils.getDirection()",
-    "body": "Argument Type Description --- --- --- pointA Vector2 Vector2 Origin point. pointB Vector2 Vector2 Target point. pointA pointB Return normalized direction from point A to point B. Vector2",
+    "body": "Argument Type Description --- --- --- pointA Vector2 Origin point. pointB Vector2 Target point. pointA pointB Return normalized direction from point A to point B. Vector2",
     "path": "/api/sandkit.api.utils",
     "id": "getdirection"
   },
   {
     "title": "sandkit.api.utils.getAngle()",
-    "body": "Argument Type Description --- --- --- pointA Vector2 Vector2 Origin point. pointB Vector2 Vector2 Target point. pointA pointB Return angle in radians from point A to point B.",
+    "body": "Argument Type Description --- --- --- pointA Vector2 Origin point. pointB Vector2 Target point. pointA pointB Return angle in radians from point A to point B.",
     "path": "/api/sandkit.api.utils",
     "id": "getangle"
   },
   {
     "title": "sandkit.api.utils.getCoordinatesBetweenCells()",
-    "body": "Argument Type Description --- --- --- pointA Vector2 Vector2 Line start in cell coordinates. pointB Vector2 Vector2 Line end in cell coordinates. pointA pointB Return grid cells along a line between two points. Vector2[]",
+    "body": "Argument Type Description --- --- --- pointA Vector2 Line start in cell coordinates. pointB Vector2 Line end in cell coordinates. pointA pointB Return grid cells along a line between two points. Vector2[]",
     "path": "/api/sandkit.api.utils",
     "id": "getcoordinatesbetweencells"
   },
   {
     "title": "sandkit.api.utils.getCoordinatesBetweenPoints",
-    "body": "Deprecated Use getCoordinatesBetweenCells instead. Argument Type Description --- --- --- pointA Vector2 Vector2 pointB Vector2 Vector2 pointA pointB Vector2[]",
+    "body": "Deprecated Use getCoordinatesBetweenCells instead. Argument Type Description --- --- --- pointA Vector2 pointB Vector2 pointA pointB Vector2[]",
     "path": "/api/sandkit.api.utils",
     "id": "getcoordinatesbetweenpoints"
   },
@@ -4495,7 +4711,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.workers.setPostUpdateEnabled()",
-    "body": "Argument Type Description --- --- --- enabled boolean boolean When true, workers run post-update hooks each tick. enabled Enable or disable worker post-update callbacks.",
+    "body": "Argument Type Description --- --- --- enabled boolean When true, workers run post-update hooks each tick. enabled Enable or disable worker post-update callbacks.",
     "path": "/api/sandkit.api.workers",
     "id": "setpostupdateenabled"
   },
@@ -4507,13 +4723,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.api.world.runWhenSimulationIdle",
-    "body": "Deprecated Use grid.mutate instead. Argument Type Description --- --- --- callback () =&gt; void () = void callback",
+    "body": "Deprecated Use grid.mutate instead. Argument Type Description --- --- --- callback () =&gt; void callback",
     "path": "/api/sandkit.api.world",
     "id": "runwhensimulationidle"
   },
   {
     "title": "sandkit.api.world.redrawAroundCellWhenIdle",
-    "body": "Deprecated Use grid.redrawAroundCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] ...\\[number, number, number\\] args",
+    "body": "Deprecated Use grid.redrawAroundCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] args",
     "path": "/api/sandkit.api.world",
     "id": "redrawaroundcellwhenidle"
   },
@@ -4537,103 +4753,103 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.augments.getDigLevel()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the current dig augment level.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the current dig augment level.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "getdiglevel"
   },
   {
     "title": "sandkit.engine.api.augments.getGunLevel()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the current gun augment level.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the current gun augment level.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "getgunlevel"
   },
   {
     "title": "sandkit.engine.api.augments.getPhaseLevel()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the current phase augment level.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the current phase augment level.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "getphaselevel"
   },
   {
     "title": "sandkit.engine.api.augments.getRocketAmmoLevel()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the current rocket ammo augment level.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the current rocket ammo augment level.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "getrocketammolevel"
   },
   {
     "title": "sandkit.engine.api.augments.getRocketReloadLevel()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the current rocket reload augment level.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the current rocket reload augment level.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "getrocketreloadlevel"
   },
   {
     "title": "sandkit.engine.api.augments.getSprintCapLevel()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the current sprint cap augment level.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the current sprint cap augment level.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "getsprintcaplevel"
   },
   {
     "title": "sandkit.engine.api.augments.hasBigDig()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the big-dig augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the big-dig augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "hasbigdig"
   },
   {
     "title": "sandkit.engine.api.augments.hasBulletSpeed()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the bullet-speed augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the bullet-speed augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "hasbulletspeed"
   },
   {
     "title": "sandkit.engine.api.augments.hasBulletTracer()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the bullet-tracer augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the bullet-tracer augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "hasbullettracer"
   },
   {
     "title": "sandkit.engine.api.augments.hasKickstartBoost()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the kickstart-boost augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the kickstart-boost augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "haskickstartboost"
   },
   {
     "title": "sandkit.engine.api.augments.hasPhaseDash()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the phase-dash augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the phase-dash augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "hasphasedash"
   },
   {
     "title": "sandkit.engine.api.augments.hasPhaseDashCharge()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the phase-dash-charge augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the phase-dash-charge augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "hasphasedashcharge"
   },
   {
     "title": "sandkit.engine.api.augments.hasRideBoost()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the ride-boost augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the ride-boost augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "hasrideboost"
   },
   {
     "title": "sandkit.engine.api.augments.hasRocketDamage()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the rocket-damage augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the rocket-damage augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "hasrocketdamage"
   },
   {
     "title": "sandkit.engine.api.augments.hasRocketWarhead()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the rocket-warhead augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the rocket-warhead augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "hasrocketwarhead"
   },
   {
     "title": "sandkit.engine.api.augments.hasSprintPower()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the sprint-power augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the sprint-power augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "hassprintpower"
   },
   {
     "title": "sandkit.engine.api.augments.hasTripleShot()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the triple-shot augment is unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the triple-shot augment is unlocked.",
     "path": "/api/sandkit.engine.api.augments",
     "id": "hastripleshot"
   },
@@ -4645,13 +4861,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.auralite.ensureProducedAtLeast()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Ensure at least the given amount of auralite has been produced.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Ensure at least the given amount of auralite has been produced.",
     "path": "/api/sandkit.engine.api.auralite",
     "id": "ensureproducedatleast"
   },
   {
     "title": "sandkit.engine.api.auralite.getProduced()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return total auralite produced so far.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return total auralite produced so far.",
     "path": "/api/sandkit.engine.api.auralite",
     "id": "getproduced"
   },
@@ -4663,43 +4879,43 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.blueprints.delete()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Delete a saved blueprint. Runtime property name is delete.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Delete a saved blueprint. Runtime property name is delete.",
     "path": "/api/sandkit.engine.api.blueprints",
     "id": "delete"
   },
   {
     "title": "sandkit.engine.api.blueprints.exportAllString()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Export all blueprints as one string.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Export all blueprints as one string.",
     "path": "/api/sandkit.engine.api.blueprints",
     "id": "exportallstring"
   },
   {
     "title": "sandkit.engine.api.blueprints.exportString()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Export one blueprint as a string.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Export one blueprint as a string.",
     "path": "/api/sandkit.engine.api.blueprints",
     "id": "exportstring"
   },
   {
     "title": "sandkit.engine.api.blueprints.getAll()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return all saved blueprints.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return all saved blueprints.",
     "path": "/api/sandkit.engine.api.blueprints",
     "id": "getall"
   },
   {
     "title": "sandkit.engine.api.blueprints.importString()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Import a blueprint from a string.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Import a blueprint from a string.",
     "path": "/api/sandkit.engine.api.blueprints",
     "id": "importstring"
   },
   {
     "title": "sandkit.engine.api.blueprints.load()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Load a blueprint into the active session.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Load a blueprint into the active session.",
     "path": "/api/sandkit.engine.api.blueprints",
     "id": "load"
   },
   {
     "title": "sandkit.engine.api.blueprints.save()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Save the current selection as a blueprint.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Save the current selection as a blueprint.",
     "path": "/api/sandkit.engine.api.blueprints",
     "id": "save"
   },
@@ -4711,43 +4927,43 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.clipboard.activate()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Activate the clipboard tool or mode.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Activate the clipboard tool or mode.",
     "path": "/api/sandkit.engine.api.clipboard",
     "id": "activate"
   },
   {
     "title": "sandkit.engine.api.clipboard.clear()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Clear the current clipboard contents.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Clear the current clipboard contents.",
     "path": "/api/sandkit.engine.api.clipboard",
     "id": "clear"
   },
   {
     "title": "sandkit.engine.api.clipboard.get()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the current clipboard payload.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the current clipboard payload.",
     "path": "/api/sandkit.engine.api.clipboard",
     "id": "get"
   },
   {
     "title": "sandkit.engine.api.clipboard.getHistory()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return clipboard history entries.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return clipboard history entries.",
     "path": "/api/sandkit.engine.api.clipboard",
     "id": "gethistory"
   },
   {
     "title": "sandkit.engine.api.clipboard.getSignalLinks()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return signal links stored on the clipboard.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return signal links stored on the clipboard.",
     "path": "/api/sandkit.engine.api.clipboard",
     "id": "getsignallinks"
   },
   {
     "title": "sandkit.engine.api.clipboard.selectFromHistory()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Restore a clipboard entry from history.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Restore a clipboard entry from history.",
     "path": "/api/sandkit.engine.api.clipboard",
     "id": "selectfromhistory"
   },
   {
     "title": "sandkit.engine.api.clipboard.set()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Set the clipboard payload.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Set the clipboard payload.",
     "path": "/api/sandkit.engine.api.clipboard",
     "id": "set"
   },
@@ -4783,67 +4999,67 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.colorPicker.closePalette()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Close the active color palette UI.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Close the active color palette UI.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "closepalette"
   },
   {
     "title": "sandkit.engine.api.colorPicker.getActivePalette()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the active palette identifier.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the active palette identifier.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "getactivepalette"
   },
   {
     "title": "sandkit.engine.api.colorPicker.getCycleColor()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the next color in the cycle.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the next color in the cycle.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "getcyclecolor"
   },
   {
     "title": "sandkit.engine.api.colorPicker.getRandomColor()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return a random predefined color.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return a random predefined color.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "getrandomcolor"
   },
   {
     "title": "sandkit.engine.api.colorPicker.hexToRgba()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Convert a hex color string to RGBA components.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Convert a hex color string to RGBA components.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "hextorgba"
   },
   {
     "title": "sandkit.engine.api.colorPicker.renderColorButton()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Render a color-picker button in the UI.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Render a color-picker button in the UI.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "rendercolorbutton"
   },
   {
     "title": "sandkit.engine.api.colorPicker.renderColorSection()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Render a color section in the UI.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Render a color section in the UI.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "rendercolorsection"
   },
   {
     "title": "sandkit.engine.api.colorPicker.renderPalette()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Render the full color palette UI.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Render the full color palette UI.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "renderpalette"
   },
   {
     "title": "sandkit.engine.api.colorPicker.rgbaToHex()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Convert RGBA components to a hex color string.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Convert RGBA components to a hex color string.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "rgbatohex"
   },
   {
     "title": "sandkit.engine.api.colorPicker.setActivePalette()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Set the active palette identifier.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Set the active palette identifier.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "setactivepalette"
   },
   {
     "title": "sandkit.engine.api.colorPicker.togglePalette()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Open or close the color palette UI.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Open or close the color palette UI.",
     "path": "/api/sandkit.engine.api.colorPicker",
     "id": "togglepalette"
   },
@@ -4855,55 +5071,55 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.coloringTool.colorStructure()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Apply a color to one structure.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Apply a color to one structure.",
     "path": "/api/sandkit.engine.api.coloringTool",
     "id": "colorstructure"
   },
   {
     "title": "sandkit.engine.api.coloringTool.floodFillColor()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Flood-fill connected structures with a color.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Flood-fill connected structures with a color.",
     "path": "/api/sandkit.engine.api.coloringTool",
     "id": "floodfillcolor"
   },
   {
     "title": "sandkit.engine.api.coloringTool.getColor()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the color on a structure.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the color on a structure.",
     "path": "/api/sandkit.engine.api.coloringTool",
     "id": "getcolor"
   },
   {
     "title": "sandkit.engine.api.coloringTool.isColorableStructure()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether a structure can be colored.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether a structure can be colored.",
     "path": "/api/sandkit.engine.api.coloringTool",
     "id": "iscolorablestructure"
   },
   {
     "title": "sandkit.engine.api.coloringTool.isMatchColorMode()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether match-color mode is active.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether match-color mode is active.",
     "path": "/api/sandkit.engine.api.coloringTool",
     "id": "ismatchcolormode"
   },
   {
     "title": "sandkit.engine.api.coloringTool.isPaintBucketMode()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether paint-bucket mode is active.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether paint-bucket mode is active.",
     "path": "/api/sandkit.engine.api.coloringTool",
     "id": "ispaintbucketmode"
   },
   {
     "title": "sandkit.engine.api.coloringTool.setColor()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Set the color on a structure.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Set the color on a structure.",
     "path": "/api/sandkit.engine.api.coloringTool",
     "id": "setcolor"
   },
   {
     "title": "sandkit.engine.api.coloringTool.toggleMatchColorMode()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Toggle match-color mode on or off.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Toggle match-color mode on or off.",
     "path": "/api/sandkit.engine.api.coloringTool",
     "id": "togglematchcolormode"
   },
   {
     "title": "sandkit.engine.api.coloringTool.togglePaintBucketMode()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Toggle paint-bucket mode on or off.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Toggle paint-bucket mode on or off.",
     "path": "/api/sandkit.engine.api.coloringTool",
     "id": "togglepaintbucketmode"
   },
@@ -4915,7 +5131,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.conveyors.registerType()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Register a custom conveyor type.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Register a custom conveyor type.",
     "path": "/api/sandkit.engine.api.conveyors",
     "id": "registertype"
   },
@@ -4927,7 +5143,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.debug.register()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Register a debug overlay or helper.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Register a debug overlay or helper.",
     "path": "/api/sandkit.engine.api.debug",
     "id": "register"
   },
@@ -4939,13 +5155,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.drones.kill()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Remove one or more drones.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Remove one or more drones.",
     "path": "/api/sandkit.engine.api.drones",
     "id": "kill"
   },
   {
     "title": "sandkit.engine.api.drones.spawn()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Spawn a drone instance.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Spawn a drone instance.",
     "path": "/api/sandkit.engine.api.drones",
     "id": "spawn"
   },
@@ -4957,67 +5173,67 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.entities.createLight()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Create a light entity attached to a parent.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Create a light entity attached to a parent.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "createlight"
   },
   {
     "title": "sandkit.engine.api.entities.getAll()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return all live entities.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return all live entities.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "getall"
   },
   {
     "title": "sandkit.engine.api.entities.getAllByType()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return all entities of one type.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return all entities of one type.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "getallbytype"
   },
   {
     "title": "sandkit.engine.api.entities.getAllTypeDefs()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return all registered entity type definitions.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return all registered entity type definitions.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "getalltypedefs"
   },
   {
     "title": "sandkit.engine.api.entities.getSprite()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the sprite for an entity.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the sprite for an entity.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "getsprite"
   },
   {
     "title": "sandkit.engine.api.entities.getTypeDef()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return one entity type definition by id.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return one entity type definition by id.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "gettypedef"
   },
   {
     "title": "sandkit.engine.api.entities.launch()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Launch an entity with velocity or trajectory.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Launch an entity with velocity or trajectory.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "launch"
   },
   {
     "title": "sandkit.engine.api.entities.registerSpawner()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Register an entity spawner behavior.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Register an entity spawner behavior.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "registerspawner"
   },
   {
     "title": "sandkit.engine.api.entities.registerType()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Register a custom entity type.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Register a custom entity type.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "registertype"
   },
   {
     "title": "sandkit.engine.api.entities.spawn()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Spawn an entity instance.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Spawn an entity instance.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "spawn"
   },
   {
     "title": "sandkit.engine.api.entities.startCapture()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Start capturing entities for a tool or effect.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Start capturing entities for a tool or effect.",
     "path": "/api/sandkit.engine.api.entities",
     "id": "startcapture"
   },
@@ -5029,7 +5245,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.extensions.define()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Define a structure extension type.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Define a structure extension type.",
     "path": "/api/sandkit.engine.api.extensions",
     "id": "define"
   },
@@ -5041,55 +5257,55 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.factory.addViabilityGold()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Add viability gold toward the next factory tier.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Add viability gold toward the next factory tier.",
     "path": "/api/sandkit.engine.api.factory",
     "id": "addviabilitygold"
   },
   {
     "title": "sandkit.engine.api.factory.canUnlockNextTier()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the next factory tier can be unlocked.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the next factory tier can be unlocked.",
     "path": "/api/sandkit.engine.api.factory",
     "id": "canunlocknexttier"
   },
   {
     "title": "sandkit.engine.api.factory.ensureProcessAtLeast()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Ensure at least the given process count has been recorded.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Ensure at least the given process count has been recorded.",
     "path": "/api/sandkit.engine.api.factory",
     "id": "ensureprocessatleast"
   },
   {
     "title": "sandkit.engine.api.factory.flushDeferredLevelUps()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Apply deferred factory level-ups.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Apply deferred factory level-ups.",
     "path": "/api/sandkit.engine.api.factory",
     "id": "flushdeferredlevelups"
   },
   {
     "title": "sandkit.engine.api.factory.getLevel()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the current factory level.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the current factory level.",
     "path": "/api/sandkit.engine.api.factory",
     "id": "getlevel"
   },
   {
     "title": "sandkit.engine.api.factory.getProcessCount()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return total recorded process count.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return total recorded process count.",
     "path": "/api/sandkit.engine.api.factory",
     "id": "getprocesscount"
   },
   {
     "title": "sandkit.engine.api.factory.getProcessRate()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the current process rate.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the current process rate.",
     "path": "/api/sandkit.engine.api.factory",
     "id": "getprocessrate"
   },
   {
     "title": "sandkit.engine.api.factory.recordProcess()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Record one factory process event.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Record one factory process event.",
     "path": "/api/sandkit.engine.api.factory",
     "id": "recordprocess"
   },
   {
     "title": "sandkit.engine.api.factory.unlockNextTier()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Unlock the next factory tier.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Unlock the next factory tier.",
     "path": "/api/sandkit.engine.api.factory",
     "id": "unlocknexttier"
   },
@@ -5101,25 +5317,25 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.foliage.generate()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Generate foliage for a region or world chunk.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Generate foliage for a region or world chunk.",
     "path": "/api/sandkit.engine.api.foliage",
     "id": "generate"
   },
   {
     "title": "sandkit.engine.api.foliage.getClusters()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return foliage cluster data.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return foliage cluster data.",
     "path": "/api/sandkit.engine.api.foliage",
     "id": "getclusters"
   },
   {
     "title": "sandkit.engine.api.foliage.getContainer()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the foliage render container.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the foliage render container.",
     "path": "/api/sandkit.engine.api.foliage",
     "id": "getcontainer"
   },
   {
     "title": "sandkit.engine.api.foliage.hasProcgenData()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether procgen foliage data exists for a location.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether procgen foliage data exists for a location.",
     "path": "/api/sandkit.engine.api.foliage",
     "id": "hasprocgendata"
   },
@@ -5131,7 +5347,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.foundationColorPicker.getColor()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the color on a foundation tile.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the color on a foundation tile.",
     "path": "/api/sandkit.engine.api.foundationColorPicker",
     "id": "getcolor"
   },
@@ -5143,19 +5359,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.game.load()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Load a saved game into the session.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Load a saved game into the session.",
     "path": "/api/sandkit.engine.api.game",
     "id": "load"
   },
   {
     "title": "sandkit.engine.api.game.save()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Save the current session.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Save the current session.",
     "path": "/api/sandkit.engine.api.game",
     "id": "save"
   },
   {
     "title": "sandkit.engine.api.game.start()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Start a new game session.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Start a new game session.",
     "path": "/api/sandkit.engine.api.game",
     "id": "start"
   },
@@ -5167,43 +5383,43 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.heatTransfer.absorbAdjacentElements()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Absorb heat from adjacent elements into a cell.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Absorb heat from adjacent elements into a cell.",
     "path": "/api/sandkit.engine.api.heatTransfer",
     "id": "absorbadjacentelements"
   },
   {
     "title": "sandkit.engine.api.heatTransfer.addTemperature()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Add temperature to a cell or region.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Add temperature to a cell or region.",
     "path": "/api/sandkit.engine.api.heatTransfer",
     "id": "addtemperature"
   },
   {
     "title": "sandkit.engine.api.heatTransfer.computeDiffusedTemperatures()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Compute diffused temperatures for connected cells.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Compute diffused temperatures for connected cells.",
     "path": "/api/sandkit.engine.api.heatTransfer",
     "id": "computediffusedtemperatures"
   },
   {
     "title": "sandkit.engine.api.heatTransfer.computeEqualizedTemperature()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Compute one equalized temperature across connected cells.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Compute one equalized temperature across connected cells.",
     "path": "/api/sandkit.engine.api.heatTransfer",
     "id": "computeequalizedtemperature"
   },
   {
     "title": "sandkit.engine.api.heatTransfer.consumeTemperatureNear()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Consume temperature near a point or cell.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Consume temperature near a point or cell.",
     "path": "/api/sandkit.engine.api.heatTransfer",
     "id": "consumetemperaturenear"
   },
   {
     "title": "sandkit.engine.api.heatTransfer.ensureTemperature()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Ensure a cell has at least the given temperature.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Ensure a cell has at least the given temperature.",
     "path": "/api/sandkit.engine.api.heatTransfer",
     "id": "ensuretemperature"
   },
   {
     "title": "sandkit.engine.api.heatTransfer.equalizeConnected()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Equalize temperature across a connected component.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Equalize temperature across a connected component.",
     "path": "/api/sandkit.engine.api.heatTransfer",
     "id": "equalizeconnected"
   },
@@ -5215,7 +5431,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.launchers.registerType()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Register a custom launcher type.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Register a custom launcher type.",
     "path": "/api/sandkit.engine.api.launchers",
     "id": "registertype"
   },
@@ -5227,7 +5443,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.lightColorPicker.getColor()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the color on a light structure.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the color on a light structure.",
     "path": "/api/sandkit.engine.api.lightColorPicker",
     "id": "getcolor"
   },
@@ -5239,19 +5455,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.matters.getMatterTypeFromId()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Resolve a matter type from an id string.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Resolve a matter type from an id string.",
     "path": "/api/sandkit.engine.api.matters",
     "id": "getmattertypefromid"
   },
   {
     "title": "sandkit.engine.api.matters.register()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Register a custom matter type.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Register a custom matter type.",
     "path": "/api/sandkit.engine.api.matters",
     "id": "register"
   },
   {
     "title": "sandkit.engine.api.matters.runSolidUpdate()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Run one solid-matter update step.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Run one solid-matter update step.",
     "path": "/api/sandkit.engine.api.matters",
     "id": "runsolidupdate"
   },
@@ -5263,7 +5479,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.misc.register()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Register a miscellaneous structure behavior.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Register a miscellaneous structure behavior.",
     "path": "/api/sandkit.engine.api.misc",
     "id": "register"
   },
@@ -5275,7 +5491,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.portals.getMarkers()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return portal markers in the world.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return portal markers in the world.",
     "path": "/api/sandkit.engine.api.portals",
     "id": "getmarkers"
   },
@@ -5287,31 +5503,31 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.prefabData.getAll()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return all prefab data entries.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return all prefab data entries.",
     "path": "/api/sandkit.engine.api.prefabData",
     "id": "getall"
   },
   {
     "title": "sandkit.engine.api.prefabData.getAllMetadata()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return metadata for all prefabs.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return metadata for all prefabs.",
     "path": "/api/sandkit.engine.api.prefabData",
     "id": "getallmetadata"
   },
   {
     "title": "sandkit.engine.api.prefabData.getArtifactLocations()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return artifact locations for prefabs.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return artifact locations for prefabs.",
     "path": "/api/sandkit.engine.api.prefabData",
     "id": "getartifactlocations"
   },
   {
     "title": "sandkit.engine.api.prefabData.getAtCell()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return prefab data at one grid cell.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return prefab data at one grid cell.",
     "path": "/api/sandkit.engine.api.prefabData",
     "id": "getatcell"
   },
   {
     "title": "sandkit.engine.api.prefabData.getMetadata()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return metadata for one prefab.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return metadata for one prefab.",
     "path": "/api/sandkit.engine.api.prefabData",
     "id": "getmetadata"
   },
@@ -5323,13 +5539,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.prefabDecor.getPlacementByName()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return a decor placement definition by name.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return a decor placement definition by name.",
     "path": "/api/sandkit.engine.api.prefabDecor",
     "id": "getplacementbyname"
   },
   {
     "title": "sandkit.engine.api.prefabDecor.replaceDecor()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Replace decor instances in a region or prefab.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Replace decor instances in a region or prefab.",
     "path": "/api/sandkit.engine.api.prefabDecor",
     "id": "replacedecor"
   },
@@ -5341,13 +5557,13 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.prefabulator.localizeBlueprintStructures()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Convert serialized blueprint structures to world-local coordinates.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Convert serialized blueprint structures to world-local coordinates.",
     "path": "/api/sandkit.engine.api.prefabulator",
     "id": "localizeblueprintstructures"
   },
   {
     "title": "sandkit.engine.api.prefabulator.serializeBlueprintStructures()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Serialize blueprint structures for prefab storage.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Serialize blueprint structures for prefab storage.",
     "path": "/api/sandkit.engine.api.prefabulator",
     "id": "serializeblueprintstructures"
   },
@@ -5359,19 +5575,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.prismaline.consume()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Consume prismaline from the player or world.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Consume prismaline from the player or world.",
     "path": "/api/sandkit.engine.api.prismaline",
     "id": "consume"
   },
   {
     "title": "sandkit.engine.api.prismaline.getAvailable()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return available prismaline amount.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return available prismaline amount.",
     "path": "/api/sandkit.engine.api.prismaline",
     "id": "getavailable"
   },
   {
     "title": "sandkit.engine.api.prismaline.getConsumed()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return total prismaline consumed so far.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return total prismaline consumed so far.",
     "path": "/api/sandkit.engine.api.prismaline",
     "id": "getconsumed"
   },
@@ -5383,19 +5599,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.prismite.consume()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Consume prismite from the player or world.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Consume prismite from the player or world.",
     "path": "/api/sandkit.engine.api.prismite",
     "id": "consume"
   },
   {
     "title": "sandkit.engine.api.prismite.getAvailable()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return available prismite amount.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return available prismite amount.",
     "path": "/api/sandkit.engine.api.prismite",
     "id": "getavailable"
   },
   {
     "title": "sandkit.engine.api.prismite.getConsumed()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return total prismite consumed so far.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return total prismite consumed so far.",
     "path": "/api/sandkit.engine.api.prismite",
     "id": "getconsumed"
   },
@@ -5407,37 +5623,37 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.queue.enqueue()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Enqueue work to run on a future tick.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Enqueue work to run on a future tick.",
     "path": "/api/sandkit.engine.api.queue",
     "id": "enqueue"
   },
   {
     "title": "sandkit.engine.api.queue.enqueueInTicks()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Enqueue work to run after a tick delay.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Enqueue work to run after a tick delay.",
     "path": "/api/sandkit.engine.api.queue",
     "id": "enqueueinticks"
   },
   {
     "title": "sandkit.engine.api.queue.enqueueSkipTick()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Enqueue work that skips the current tick.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Enqueue work that skips the current tick.",
     "path": "/api/sandkit.engine.api.queue",
     "id": "enqueueskiptick"
   },
   {
     "title": "sandkit.engine.api.queue.process()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Process pending queue items for the current tick.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Process pending queue items for the current tick.",
     "path": "/api/sandkit.engine.api.queue",
     "id": "process"
   },
   {
     "title": "sandkit.engine.api.queue.registerHandler()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Register a handler for a queue item type.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Register a handler for a queue item type.",
     "path": "/api/sandkit.engine.api.queue",
     "id": "registerhandler"
   },
   {
     "title": "sandkit.engine.api.queue.removeByKey()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Remove queued items by key.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Remove queued items by key.",
     "path": "/api/sandkit.engine.api.queue",
     "id": "removebykey"
   },
@@ -5449,19 +5665,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.shadows.refresh()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Refresh shadows for the whole visible area.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Refresh shadows for the whole visible area.",
     "path": "/api/sandkit.engine.api.shadows",
     "id": "refresh"
   },
   {
     "title": "sandkit.engine.api.shadows.refreshRadius()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Refresh shadows within a circular radius.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Refresh shadows within a circular radius.",
     "path": "/api/sandkit.engine.api.shadows",
     "id": "refreshradius"
   },
   {
     "title": "sandkit.engine.api.shadows.refreshRect()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Refresh shadows within a rectangle.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Refresh shadows within a rectangle.",
     "path": "/api/sandkit.engine.api.shadows",
     "id": "refreshrect"
   },
@@ -5473,31 +5689,31 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.strataform.getDefaultConfig()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the default strataform configuration.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the default strataform configuration.",
     "path": "/api/sandkit.engine.api.strataform",
     "id": "getdefaultconfig"
   },
   {
     "title": "sandkit.engine.api.strataform.getRegisteredTypes()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return all registered strataform types.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return all registered strataform types.",
     "path": "/api/sandkit.engine.api.strataform",
     "id": "getregisteredtypes"
   },
   {
     "title": "sandkit.engine.api.strataform.registerType()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Register a custom strataform type.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Register a custom strataform type.",
     "path": "/api/sandkit.engine.api.strataform",
     "id": "registertype"
   },
   {
     "title": "sandkit.engine.api.strataform.trigger()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Trigger a strataform event at a location.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Trigger a strataform event at a location.",
     "path": "/api/sandkit.engine.api.strataform",
     "id": "trigger"
   },
   {
     "title": "sandkit.engine.api.strataform.triggerByType()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Trigger a strataform event by type id.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Trigger a strataform event by type id.",
     "path": "/api/sandkit.engine.api.strataform",
     "id": "triggerbytype"
   },
@@ -5509,73 +5725,73 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.swarmConsole.decrementConvergenceBuffer()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Decrease the convergence buffer by one step.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Decrease the convergence buffer by one step.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "decrementconvergencebuffer"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.getCrystalMined()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return total crystal mined for swarm consoles.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return total crystal mined for swarm consoles.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "getcrystalmined"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.getDiskRadiusCells()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the disk radius in cells for a console.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the disk radius in cells for a console.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "getdiskradiuscells"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.getEntityType()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the entity type used by swarm consoles.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the entity type used by swarm consoles.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "getentitytype"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.getNearestConvergence()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the nearest convergence point.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the nearest convergence point.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "getnearestconvergence"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.getPendingConvergence()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the pending convergence target.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the pending convergence target.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "getpendingconvergence"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.getPlacedConsoles()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return all placed swarm console structures.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return all placed swarm console structures.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "getplacedconsoles"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.getRadiusPx()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the console effect radius in pixels.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the console effect radius in pixels.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "getradiuspx"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.isSpawnJammed()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether swarm spawn is currently jammed.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether swarm spawn is currently jammed.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "isspawnjammed"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.registerEntityType()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Register the entity type for swarm consoles.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Register the entity type for swarm consoles.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "registerentitytype"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.resetAllConvergenceBuffers()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Reset convergence buffers on all consoles.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Reset convergence buffers on all consoles.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "resetallconvergencebuffers"
   },
   {
     "title": "sandkit.engine.api.swarmConsole.setSpawnJammed()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Set whether swarm spawn is jammed.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Set whether swarm spawn is jammed.",
     "path": "/api/sandkit.engine.api.swarmConsole",
     "id": "setspawnjammed"
   },
@@ -5587,7 +5803,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.sweeperDrone.cancelSelection()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Cancel the active sweeper drone selection.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Cancel the active sweeper drone selection.",
     "path": "/api/sandkit.engine.api.sweeperDrone",
     "id": "cancelselection"
   },
@@ -5599,43 +5815,43 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.teleportZones.add()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Add a teleport zone to the world.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Add a teleport zone to the world.",
     "path": "/api/sandkit.engine.api.teleportZones",
     "id": "add"
   },
   {
     "title": "sandkit.engine.api.teleportZones.getAll()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return all teleport zones.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return all teleport zones.",
     "path": "/api/sandkit.engine.api.teleportZones",
     "id": "getall"
   },
   {
     "title": "sandkit.engine.api.teleportZones.getAtCell()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the teleport zone at one grid cell.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the teleport zone at one grid cell.",
     "path": "/api/sandkit.engine.api.teleportZones",
     "id": "getatcell"
   },
   {
     "title": "sandkit.engine.api.teleportZones.getById()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return one teleport zone by id.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return one teleport zone by id.",
     "path": "/api/sandkit.engine.api.teleportZones",
     "id": "getbyid"
   },
   {
     "title": "sandkit.engine.api.teleportZones.remove()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Remove a teleport zone.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Remove a teleport zone.",
     "path": "/api/sandkit.engine.api.teleportZones",
     "id": "remove"
   },
   {
     "title": "sandkit.engine.api.teleportZones.spawnDefaultParticles()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Spawn default particles at a teleport zone.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Spawn default particles at a teleport zone.",
     "path": "/api/sandkit.engine.api.teleportZones",
     "id": "spawndefaultparticles"
   },
   {
     "title": "sandkit.engine.api.teleportZones.teleportPlayerTo()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Teleport the player to a zone or position.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Teleport the player to a zone or position.",
     "path": "/api/sandkit.engine.api.teleportZones",
     "id": "teleportplayerto"
   },
@@ -5647,67 +5863,67 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.areAllTargetsBuilt()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether all active tutorial targets are built.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether all active tutorial targets are built.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "arealltargetsbuilt"
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether all targets in a structure family are built.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether all targets in a structure family are built.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "arefamilytargetsbuilt"
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether placement is allowed at the active target.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether placement is allowed at the active target.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "canplaceatactivetarget"
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.getFoundationMoveDests()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return foundation move destination cells for the tutorial step.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return foundation move destination cells for the tutorial step.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "getfoundationmovedests"
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.getFoundationMoveSources()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return foundation move source cells for the tutorial step.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return foundation move source cells for the tutorial step.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "getfoundationmovesources"
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.getTargets()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return build targets for the current tutorial step.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return build targets for the current tutorial step.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "gettargets"
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.hasDefinition()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether a tutorial build definition exists.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether a tutorial build definition exists.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "hasdefinition"
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.isStepConstrained()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the current step restricts building.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the current step restricts building.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "isstepconstrained"
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.matchesFoundationMove()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether a foundation move matches tutorial rules.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether a foundation move matches tutorial rules.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "matchesfoundationmove"
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.matchesFoundationRemove()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether a foundation remove matches tutorial rules.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether a foundation remove matches tutorial rules.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "matchesfoundationremove"
   },
   {
     "title": "sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return whether the active target should be protected at a cell.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return whether the active target should be protected at a cell.",
     "path": "/api/sandkit.engine.api.tutorialBuild",
     "id": "shouldprotectactivetargetat"
   },
@@ -5719,19 +5935,19 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.usageTracker.clear()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Clear recorded usage statistics.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Clear recorded usage statistics.",
     "path": "/api/sandkit.engine.api.usageTracker",
     "id": "clear"
   },
   {
     "title": "sandkit.engine.api.usageTracker.getLatest()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the most recently used item or structure.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the most recently used item or structure.",
     "path": "/api/sandkit.engine.api.usageTracker",
     "id": "getlatest"
   },
   {
     "title": "sandkit.engine.api.usageTracker.getMostUsed()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the most frequently used item or structure.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the most frequently used item or structure.",
     "path": "/api/sandkit.engine.api.usageTracker",
     "id": "getmostused"
   },
@@ -5743,25 +5959,25 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.wall.getPaletteData()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return wall palette data for rendering.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return wall palette data for rendering.",
     "path": "/api/sandkit.engine.api.wall",
     "id": "getpalettedata"
   },
   {
     "title": "sandkit.engine.api.wall.getWallDataAt()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return wall tile data at one cell.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return wall tile data at one cell.",
     "path": "/api/sandkit.engine.api.wall",
     "id": "getwalldataat"
   },
   {
     "title": "sandkit.engine.api.wall.getWallDataSize()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Return the byte size of wall tile data.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Return the byte size of wall tile data.",
     "path": "/api/sandkit.engine.api.wall",
     "id": "getwalldatasize"
   },
   {
     "title": "sandkit.engine.api.wall.setWallDataAt()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Game state first, then method-specific arguments. args Set wall tile data at one cell.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Game state first, then method-specific arguments. args Set wall tile data at one cell.",
     "path": "/api/sandkit.engine.api.wall",
     "id": "setwalldataat"
   },
@@ -5773,25 +5989,25 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "sandkit.engine.api.workerLocal.clear()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. args Remove all keys from worker-local storage.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. args Remove all keys from worker-local storage.",
     "path": "/api/sandkit.engine.api.workerLocal",
     "id": "clear"
   },
   {
     "title": "sandkit.engine.api.workerLocal.get()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. args Return a value by key, or undefined when missing.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. args Return a value by key, or undefined when missing.",
     "path": "/api/sandkit.engine.api.workerLocal",
     "id": "get"
   },
   {
     "title": "sandkit.engine.api.workerLocal.getOrInit()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. args Return a value by key, initializing it when missing.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. args Return a value by key, initializing it when missing.",
     "path": "/api/sandkit.engine.api.workerLocal",
     "id": "getorinit"
   },
   {
     "title": "sandkit.engine.api.workerLocal.set()",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. args Store a value by key.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] Worker-local context first on workers; otherwise game state first, then method-specific arguments. args Store a value by key.",
     "path": "/api/sandkit.engine.api.workerLocal",
     "id": "set"
   },
@@ -8023,7 +8239,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "shared.engine.EngineFn",
-    "body": "Argument Type Description --- --- --- args ...unknown[] ...unknown[] args Internal Stub for an unresolved engine method.",
+    "body": "Argument Type Description --- --- --- args ...unknown[] args Internal Stub for an unresolved engine method.",
     "path": "/api/shared.engine",
     "id": "enginefn"
   },
@@ -8131,7 +8347,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "API catalog gaps",
-    "body": "Generated by npm run generate. Edit descriptions and expected members in scripts/api-gen/overrides.json. - Official source: https://sandustry.com/sandkit.html - Generated: 2026-09-06T22:16:12.838Z - Namespaces: 67 - Official methods (HTML): 268 - Declared methods (types): 441 - Open gaps: 45",
+    "body": "Generated by npm run generate. Edit descriptions and expected members in scripts/api-gen/overrides.json. - Official source: https://sandustry.com/sandkit.html - Generated: 2026-09-06T23:02:10.005Z - Namespaces: 67 - Official methods (HTML): 268 - Declared methods (types): 441 - Open gaps: 45",
     "path": "/generated/api-gaps",
     "id": ""
   },

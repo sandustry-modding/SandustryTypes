@@ -119,8 +119,8 @@ registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| id | `string` | `string` Unique profile id (1–128 chars: letters, numbers, `.`, `_`, `:`, `-`). |
-| definition | <code>[`ExcavationProfileDefinitionV1`](?id=excavationprofiledefinitionv1)</code> | [`ExcavationProfileDefinitionV1`](?id=excavationprofiledefinitionv1) Pattern, power, terrain rules, and profile options. |
+| id | `string` | Unique profile id (1–128 chars: letters, numbers, `.`, `_`, `:`, `-`). |
+| definition | <code>[`ExcavationProfileDefinitionV1`](?id=excavationprofiledefinitionv1)</code> | Pattern, power, terrain rules, and profile options. |
 
 <div class="smt-member-anchors">
 

@@ -121,7 +121,7 @@ registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`PlanterBoxRecipeDefinitionV1`](?id=planterboxrecipedefinitionv1)</code> | [`PlanterBoxRecipeDefinitionV1`](?id=planterboxrecipedefinitionv1) Grower input/output recipe. |
+| definition | <code>[`PlanterBoxRecipeDefinitionV1`](?id=planterboxrecipedefinitionv1)</code> | Grower input/output recipe. |
 
 <div class="smt-member-anchors">
 
@@ -149,7 +149,7 @@ registerShaker(definition: ShakerRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`ShakerRecipeDefinitionV1`](?id=shakerrecipedefinitionv1)</code> | [`ShakerRecipeDefinitionV1`](?id=shakerrecipedefinitionv1) Shaker input and weighted outputs. |
+| definition | <code>[`ShakerRecipeDefinitionV1`](?id=shakerrecipedefinitionv1)</code> | Shaker input and weighted outputs. |
 
 <div class="smt-member-anchors">
 
@@ -177,7 +177,7 @@ registerKineticPress(definition: KineticPressRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`KineticPressRecipeDefinitionV1`](?id=kineticpressrecipedefinitionv1)</code> | [`KineticPressRecipeDefinitionV1`](?id=kineticpressrecipedefinitionv1) Press input, velocity threshold, and outputs. |
+| definition | <code>[`KineticPressRecipeDefinitionV1`](?id=kineticpressrecipedefinitionv1)</code> | Press input, velocity threshold, and outputs. |
 
 <div class="smt-member-anchors">
 

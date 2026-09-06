@@ -46,7 +46,7 @@ complete(request: ProgressionCompletionRequestV1): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| request | <code>[`ProgressionCompletionRequestV1`](?id=progressioncompletionrequestv1)</code> | [`ProgressionCompletionRequestV1`](?id=progressioncompletionrequestv1) Progression id and optional metadata for the step. |
+| request | <code>[`ProgressionCompletionRequestV1`](?id=progressioncompletionrequestv1)</code> | Progression id and optional metadata for the step. |
 
 <div class="smt-member-anchors">
 

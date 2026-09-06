@@ -39,8 +39,8 @@ setFocusAtWorld(worldX: number, worldY: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` World x position in pixels. |
-| worldY | `number` | `number` World y position in pixels. |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
 
 <div class="smt-member-anchors">
 
@@ -72,7 +72,7 @@ releaseFocus(options?: object): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options? | <code>Optional transition duration in milliseconds.</code> | Optional transition duration in milliseconds. |
+| options? | <code>Optional transition duration in milliseconds.</code> |  |
 
 <div class="smt-member-anchors">
 

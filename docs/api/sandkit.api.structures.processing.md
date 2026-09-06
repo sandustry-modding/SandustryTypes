@@ -20,8 +20,8 @@ register(id: string & object, definition: StructureProcessingDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| id | `string` & `object` | `string` & `object` Unique processing registration id. |
-| definition | <code>[`StructureProcessingDefinitionV1`](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1)</code> | [`StructureProcessingDefinitionV1`](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1) Structure type, interval, and callback. |
+| id | `string` & `object` | Unique processing registration id. |
+| definition | <code>[`StructureProcessingDefinitionV1`](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1)</code> | Structure type, interval, and callback. |
 
 <div class="smt-member-anchors">
 
@@ -69,7 +69,7 @@ setEnabledAtCell(...args: [number, number, boolean]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `boolean`\]</code> | ...\[`number`, `number`, `boolean`\] |
+| args | <code>...\[`number`, `number`, `boolean`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -108,7 +108,7 @@ setEnabledAt(...args: [number, number, boolean]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `boolean`\]</code> | ...\[`number`, `number`, `boolean`\] |
+| args | <code>...\[`number`, `number`, `boolean`\]</code> |  |
 
 <div class="smt-member-anchors">
 

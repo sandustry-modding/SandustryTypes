@@ -245,10 +245,10 @@ createAtWorld(effectId: string, worldX: number, worldY: number, options?: Effect
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| effectId | `string` | `string` Registered effect id (for example `heatWave`). |
-| worldX | `number` | `number` World X coordinate in pixels. |
-| worldY | `number` | `number` World Y coordinate in pixels. |
-| options? | <code>[`EffectOptions`](?id=effectoptions)</code> | [`EffectOptions`](?id=effectoptions) Duration, radius, and intensity settings. |
+| effectId | `string` | Registered effect id (for example `heatWave`). |
+| worldX | `number` | World X coordinate in pixels. |
+| worldY | `number` | World Y coordinate in pixels. |
+| options? | <code>[`EffectOptions`](?id=effectoptions)</code> | Duration, radius, and intensity settings. |
 
 <div class="smt-member-anchors">
 
@@ -291,10 +291,10 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| effectId | `string` | `string` |
-| worldX | `number` | `number` |
-| worldY | `number` | `number` |
-| options? | <code>[`EffectOptions`](?id=effectoptions)</code> | [`EffectOptions`](?id=effectoptions) |
+| effectId | `string` |  |
+| worldX | `number` |  |
+| worldY | `number` |  |
+| options? | <code>[`EffectOptions`](?id=effectoptions)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -335,9 +335,9 @@ createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptio
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` |
-| worldY | `number` | `number` |
-| options? | <code>[`TemporaryLightOptions`](?id=temporarylightoptions)</code> | [`TemporaryLightOptions`](?id=temporarylightoptions) |
+| worldX | `number` |  |
+| worldY | `number` |  |
+| options? | <code>[`TemporaryLightOptions`](?id=temporarylightoptions)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -369,9 +369,9 @@ createDistortionWaveAtWorld(worldX: number, worldY: number, options?: Distortion
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` World X coordinate in pixels. |
-| worldY | `number` | `number` World Y coordinate in pixels. |
-| options? | <code>[`DistortionEffectOptions`](?id=distortioneffectoptions)</code> | [`DistortionEffectOptions`](?id=distortioneffectoptions) Style, duration, radius, intensity, and color. |
+| worldX | `number` | World X coordinate in pixels. |
+| worldY | `number` | World Y coordinate in pixels. |
+| options? | <code>[`DistortionEffectOptions`](?id=distortioneffectoptions)</code> | Style, duration, radius, intensity, and color. |
 
 <div class="smt-member-anchors">
 
@@ -411,11 +411,11 @@ createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startWorldX | `number` | `number` Beam start world X in pixels. |
-| startWorldY | `number` | `number` Beam start world Y in pixels. |
-| endWorldX | `number` | `number` Beam end world X in pixels. |
-| endWorldY | `number` | `number` Beam end world Y in pixels. |
-| options? | <code>[`LaserEffectOptions`](?id=lasereffectoptions)</code> | [`LaserEffectOptions`](?id=lasereffectoptions) Width, brightness, color, and glow options. |
+| startWorldX | `number` | Beam start world X in pixels. |
+| startWorldY | `number` | Beam start world Y in pixels. |
+| endWorldX | `number` | Beam end world X in pixels. |
+| endWorldY | `number` | Beam end world Y in pixels. |
+| options? | <code>[`LaserEffectOptions`](?id=lasereffectoptions)</code> | Width, brightness, color, and glow options. |
 
 <div class="smt-member-anchors">
 
@@ -462,7 +462,7 @@ removeLightById(lightId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| lightId | `number` | `number` |
+| lightId | `number` |  |
 
 <div class="smt-member-anchors">
 
@@ -488,9 +488,9 @@ createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectO
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| worldX | `number` | `number` World x position in pixels. |
-| worldY | `number` | `number` World y position in pixels. |
-| options? | <code>[`ParticleEffectOptions`](?id=particleeffectoptions)</code> | [`ParticleEffectOptions`](?id=particleeffectoptions) Count, velocity, colour, and lifetime settings. |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
+| options? | <code>[`ParticleEffectOptions`](?id=particleeffectoptions)</code> | Count, velocity, colour, and lifetime settings. |
 
 <div class="smt-member-anchors">
 

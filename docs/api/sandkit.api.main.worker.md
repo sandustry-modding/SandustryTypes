@@ -27,8 +27,8 @@ sandkit.api.main.emitEvent<Payload = any>(eventId: string, payload: Payload): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| eventId | `string` | `string` Registered event name. |
-| payload | `Payload` | `Payload` Serializable payload passed to main-thread listeners. |
+| eventId | `string` | Registered event name. |
+| payload | `Payload` | Serializable payload passed to main-thread listeners. |
 
 <div class="smt-member-anchors">
 

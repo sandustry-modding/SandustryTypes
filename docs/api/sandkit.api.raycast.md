@@ -18,10 +18,10 @@ castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistan
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| startWorldX | `number` | `number` Ray origin world X in pixels. |
-| startWorldY | `number` | `number` Ray origin world Y in pixels. |
-| angle | `number` | `number` Ray direction in radians. |
-| maxDistance | `number` | `number` Maximum ray length in pixels. |
+| startWorldX | `number` | Ray origin world X in pixels. |
+| startWorldY | `number` | Ray origin world Y in pixels. |
+| angle | `number` | Ray direction in radians. |
+| maxDistance | `number` | Maximum ray length in pixels. |
 
 <div class="smt-member-anchors">
 

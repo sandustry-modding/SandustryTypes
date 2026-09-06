@@ -646,7 +646,7 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
   list-style: none;
 }
 
-.smt-search-browse .smt-api-card-link {
+.smt-search-browse .smt-api-card-panel {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -657,27 +657,31 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
   border: 1px solid var(--smt-card-border, var(--border-color));
   border-radius: 8px;
   background: var(--smt-card-bg, #1e1e1e);
+}
+
+.smt-search-browse .smt-api-card-link {
+  align-self: flex-start;
+  font-family: var(--smt-font-mono, ui-monospace, monospace);
+  font-weight: 700;
+  color: var(--heading-color, #f0f0f0);
   text-decoration: none;
-  color: inherit;
 }
 
 .markdown-section .smt-search-browse .smt-api-card-link,
 .markdown-section .smt-search-browse .smt-api-card-link:hover {
-  color: inherit;
+  color: var(--heading-color, #f0f0f0);
   text-decoration: none;
 }
 
 @media screen and (any-hover) {
-  .smt-search-browse .smt-api-card-link:hover {
+  .smt-search-browse .smt-api-card-panel:hover {
     border-color: var(--smt-card-hover-border, var(--link-color));
     background: color-mix(in srgb, var(--theme-color) 8%, var(--smt-card-bg, #1e1e1e));
   }
-}
 
-.smt-search-browse .smt-api-card-name {
-  font-family: var(--smt-font-mono, ui-monospace, monospace);
-  font-weight: 700;
-  color: var(--heading-color, #f0f0f0);
+  .smt-search-browse .smt-api-card-link:hover {
+    color: var(--theme-color);
+  }
 }
 
 .smt-search-browse .smt-api-card-desc {
@@ -686,6 +690,24 @@ body:has(.sidebar.show) .sidebar-toggle .smt-sidebar-toggle-icon {
   line-height: 1.45;
   font-weight: 400;
   color: color-mix(in srgb, var(--color-text) 72%, transparent);
+}
+
+.smt-search-browse .smt-api-card-children {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.smt-search-browse .smt-api-card-children li {
+  margin: 0;
+  padding: 0;
+}
+
+.smt-search-browse .smt-api-card-child {
+  display: inline;
+  font-family: var(--smt-font-mono, ui-monospace, monospace);
+  font-size: 0.82rem;
+  font-weight: 600;
 }
 
 /* Sandkit API module index: grouped namespace chips. */

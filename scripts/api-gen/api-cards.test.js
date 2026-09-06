@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { parseMemberH3, parseSignatureLine, renderSignatureHtml, restyleApiCards } from "./api-cards.mjs";
+import { parseMemberH3, parseSignatureLine, renderSignatureHtml, restyleApiCards, stripLeadingTypeFromDesc } from "./api-cards.mjs";
 
 test("parseMemberH3 reads TypeDoc member headings", () => {
   assert.deepEqual(parseMemberH3("start() :id=start"), {
@@ -14,6 +14,47 @@ test("parseMemberH3 reads TypeDoc member headings", () => {
     strike: true,
   });
   assert.equal(parseMemberH3("Properties"), null);
+});
+
+test("stripLeadingTypeFromDesc drops a repeated type from the description", () => {
+  assert.equal(stripLeadingTypeFromDesc("`number`", "`number` Horizontal velocity in pixels per second."), "Horizontal velocity in pixels per second.");
+  assert.equal(stripLeadingTypeFromDesc("`number`", "`number`"), "");
+  assert.equal(stripLeadingTypeFromDesc("<code>number</code>", "`number` World x position in pixels."), "World x position in pixels.");
+});
+
+test("restyleApiCards does not repeat the argument type in Description", () => {
+  const src = `# sandkit.api.player
+
+## Functions <!-- {docsify-ignore} -->
+
+### setVelocity() :id=setvelocity
+
+\`\`\`ts
+sandkit.api.player.setVelocity(velocityX: number, velocityY: number): void
+\`\`\`
+
+Defined in: [sandkit/api/player.d.ts:46](https://github.com/example/player.d.ts#L46)
+
+Set the player velocity.
+
+#### Parameters
+
+##### velocityX
+
+\`number\`
+
+Horizontal velocity in pixels per second.
+
+##### velocityY
+
+\`number\`
+
+Vertical velocity in pixels per second.
+`;
+  const out = restyleApiCards(src, "sandkit.api.player");
+  assert.match(out, /\| velocityX \| `number` \| Horizontal velocity in pixels per second\. \|/);
+  assert.match(out, /\| velocityY \| `number` \| Vertical velocity in pixels per second\. \|/);
+  assert.doesNotMatch(out, /\| `number` Horizontal/);
 });
 
 test("parseSignatureLine splits return type, name, and params", () => {
@@ -81,6 +122,8 @@ api.game.start({ skipIntro: true });
   assert.match(out, /^\| Argument \| Type \| Description \|$/m);
   assert.match(out, /options\?/);
   assert.match(out, /GameStartOptions/);
+  assert.match(out, /Optional session start flags/);
+  assert.doesNotMatch(out, /\| `GameStartOptions` Optional session start flags/);
   assert.doesNotMatch(out, /^#### Start or restart the game session$/m);
   assert.match(out, /^#### Example$/m);
   assert.doesNotMatch(out, /^#### Returns$/m);
@@ -267,6 +310,25 @@ setPositionAtWorld(): void
   assert.doesNotMatch(out, /## Namespaces/);
   assert.doesNotMatch(out, /inventory/);
   assert.doesNotMatch(out, /buildings/);
+});
+
+test("restyleApiCards keeps child namespace links when the page has no members", () => {
+  const src = `# sandkit.api.tools
+
+## Namespaces <!-- {docsify-ignore} -->
+
+- [grabber](api/sandkit.api.tools.grabber.md)
+`;
+  const out = restyleApiCards(src, "sandkit.api.tools", {
+    summaries: {
+      tools: {
+        description: "Inspect and control the grabber tool: size, active state, and load status.",
+      },
+    },
+  });
+  assert.match(out, /Inspect and control the grabber tool/);
+  assert.match(out, /\[sandkit\.api\.tools\.grabber\]\(api\/sandkit\.api\.tools\.grabber\.md\)/);
+  assert.doesNotMatch(out, /## Namespaces/);
 });
 
 test("restyleApiCards drops the TypeDoc References re-export list", () => {

@@ -8,7 +8,7 @@ Player building unlock helpers.
 
 ### sandkit.api.player.buildings.unlockById :id=unlockbyid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L123" target="_blank" rel="noopener">player.d.ts:123</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L126" target="_blank" rel="noopener">player.d.ts:126</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.buildings.unlockById(structureId: string): void">
 
@@ -20,7 +20,7 @@ unlockById(structureId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | `string` Registered structure id string. |
+| structureId | `string` | Registered structure id string. |
 
 <div class="smt-member-anchors">
 
@@ -36,7 +36,7 @@ Unlock a structure type for building.
 
 ### ~~sandkit.api.player.buildings.unlockByType~~ :id=unlockbytype
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L129" target="_blank" rel="noopener">player.d.ts:129</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L132" target="_blank" rel="noopener">player.d.ts:132</a></p>
 
 <div class="smt-member-deprecated">
 <span class="smt-member-deprecated-label">Deprecated</span>
@@ -57,7 +57,7 @@ unlockByType(structureId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | `string` |
+| structureId | `string` |  |
 
 <div class="smt-member-anchors">
 
@@ -71,7 +71,7 @@ unlockByType(structureId: string): void
 
 ### sandkit.api.player.buildings.removeById :id=removebyid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L137" target="_blank" rel="noopener">player.d.ts:137</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L140" target="_blank" rel="noopener">player.d.ts:140</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.buildings.removeById(structureId: string): void">
 
@@ -83,7 +83,7 @@ removeById(structureId: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureId | `string` | `string` Registered structure id string. |
+| structureId | `string` | Registered structure id string. |
 
 <div class="smt-member-anchors">
 

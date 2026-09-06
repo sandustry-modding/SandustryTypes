@@ -56,7 +56,7 @@ get(fieldId: string & object): ConfigValueV1 | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| fieldId | `string` & `object` | `string` & `object` Settings field identifier. |
+| fieldId | `string` & `object` | Settings field identifier. |
 
 <div class="smt-member-anchors">
 
@@ -106,7 +106,7 @@ onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): (
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | <code>(`values`: `Readonly`\&lt;`Record`\&lt;`string`, [`ConfigValueV1`](?id=configvaluev1)\&gt;\&gt;) =&gt; `void`</code> | (`values`: `Readonly`\<`Record`\<`string`, [`ConfigValueV1`](?id=configvaluev1)\>\>) => `void` Called with the full settings map after a change. |
+| callback | <code>(`values`: `Readonly`\&lt;`Record`\&lt;`string`, [`ConfigValueV1`](?id=configvaluev1)\&gt;\&gt;) =&gt; `void`</code> | Called with the full settings map after a change. |
 
 <div class="smt-member-anchors">
 

@@ -127,11 +127,11 @@ spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<str
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| type | <code>[`PickupType`](api/sandkit.enums.PickupType.md)</code> | [`PickupType`](api/sandkit.enums.PickupType.md) Pickup type discriminator. |
-| worldX | `number` | `number` World x position in pixels. |
-| worldY | `number` | `number` World y position in pixels. |
-| data? | `Record`\<`string`, `unknown`\> | `Record`\<`string`, `unknown`\> Optional per-item data bag copied onto the instance. |
-| light? | <code>[`WorldItemLight`](?id=worlditemlight)</code> | [`WorldItemLight`](?id=worlditemlight) Optional point light spawned with the pickup. |
+| type | <code>[`PickupType`](api/sandkit.enums.PickupType.md)</code> | Pickup type discriminator. |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
+| data? | `Record`\<`string`, `unknown`\> | Optional per-item data bag copied onto the instance. |
+| light? | <code>[`WorldItemLight`](?id=worlditemlight)</code> | Optional point light spawned with the pickup. |
 
 <div class="smt-member-anchors">
 
@@ -169,7 +169,7 @@ remove(pickup: WorldItem): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | <code>[`WorldItem`](?id=worlditem)</code> | [`WorldItem`](?id=worlditem) Pickup returned from spawn or lookup helpers. |
+| pickup | <code>[`WorldItem`](?id=worlditem)</code> | Pickup returned from spawn or lookup helpers. |
 
 <div class="smt-member-anchors">
 
@@ -206,7 +206,7 @@ destroy(pickup: WorldItem): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | <code>[`WorldItem`](?id=worlditem)</code> | [`WorldItem`](?id=worlditem) |
+| pickup | <code>[`WorldItem`](?id=worlditem)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -232,7 +232,7 @@ pickUp(pickup: WorldItem): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | <code>[`WorldItem`](?id=worlditem)</code> | [`WorldItem`](?id=worlditem) Pickup to collect. |
+| pickup | <code>[`WorldItem`](?id=worlditem)</code> | Pickup to collect. |
 
 <div class="smt-member-anchors">
 
@@ -282,7 +282,7 @@ getById(pickupId: number): WorldItem | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickupId | `number` | `number` Runtime pickup id. |
+| pickupId | `number` | Runtime pickup id. |
 
 <div class="smt-member-anchors">
 

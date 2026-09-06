@@ -18,7 +18,7 @@ nextTick(callback: () => void): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | <code>() =&gt; `void`</code> | () => `void` Function invoked once on the next tick. |
+| callback | <code>() =&gt; `void`</code> | Function invoked once on the next tick. |
 
 <div class="smt-member-anchors">
 

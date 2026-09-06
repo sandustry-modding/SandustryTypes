@@ -18,7 +18,7 @@ setPostUpdateEnabled(enabled: boolean): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| enabled | `boolean` | `boolean` When true, workers run post-update hooks each tick. |
+| enabled | `boolean` | When true, workers run post-update hooks each tick. |
 
 <div class="smt-member-anchors">
 

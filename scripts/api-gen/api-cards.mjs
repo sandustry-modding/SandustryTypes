@@ -194,10 +194,33 @@ function typeAndDescFromChunk(chunk, propName = "") {
     .map((l) => l.trim())
     .filter((l) => l && !/^Defined in:/i.test(l) && !/^#{4,}/.test(l));
   if (!type && lines[0] && !/deprecated/i.test(lines[0])) {
-    type = typeFromTsFence(lines[0], propName) || lines.shift() || "";
+    type = typeFromTsFence(lines[0], propName) || lines[0];
+    lines.shift();
   }
-  const desc = lines.join(" ").replace(/\s+/g, " ").trim();
+  const desc = stripLeadingTypeFromDesc(type, lines.join(" ").replace(/\s+/g, " ").trim());
   return { type, desc };
+}
+
+/**
+ * TypeDoc repeats the type as the first description line.
+ * Keep it in the Type column only.
+ * @param {string} type
+ * @param {string} desc
+ */
+export function stripLeadingTypeFromDesc(type, desc) {
+  const d = String(desc || "").trim();
+  const typed = String(type || "").trim();
+  if (!d) return "";
+  if (!typed) return d;
+  if (d === typed) return "";
+  if (d.startsWith(`${typed} `)) return d.slice(typed.length).trim();
+  const decoded = decodeTypeText(typed);
+  if (decoded) {
+    const tick = `\`${decoded}\``;
+    if (d === tick) return "";
+    if (d.startsWith(`${tick} `)) return d.slice(tick.length).trim();
+  }
+  return d;
 }
 
 /**
@@ -515,6 +538,90 @@ function renderDescription(desc) {
 const STRIP_H2 = new Set(["References", "Namespaces"]);
 
 /**
+ * @param {string} qualified
+ * @returns {string}
+ */
+function summaryKeyForQualified(qualified) {
+  const base = String(qualified || "").replace(/ \(worker\)$/, "");
+  const parts = base.split(".");
+  if (parts[0] === "sandkit" && parts[1] === "api" && parts[2]) return parts[2];
+  if (parts[0] === "sandkit" && parts[1] === "engine" && parts[2] === "api" && parts[3]) {
+    return parts[3];
+  }
+  return parts[parts.length - 1] || "";
+}
+
+/**
+ * @param {string} content
+ * @returns {{ label: string, href: string }[]}
+ */
+export function parseNamespacesSection(content) {
+  const lines = String(content || "").split("\n");
+  /** @type {{ label: string, href: string }[]} */
+  const links = [];
+  let inSection = false;
+  for (const line of lines) {
+    if (/^## Namespaces(?:\s|$)/.test(line)) {
+      inSection = true;
+      continue;
+    }
+    if (inSection) {
+      if (/^## /.test(line)) break;
+      const match = /^- \[([^\]]+)\]\(([^)]+)\)/.exec(line.trim());
+      if (match) links.push({ label: match[1], href: match[2] });
+    }
+  }
+  return links;
+}
+
+/**
+ * @param {string} content
+ * @returns {boolean}
+ */
+function hasDocumentedMembers(content) {
+  const lines = String(content || "").split("\n");
+  let section = "";
+  for (const line of lines) {
+    const h2 = /^## ([^\s]+)/.exec(line);
+    if (h2) {
+      section = h2[1];
+      continue;
+    }
+    if (
+      section &&
+      section !== "Namespaces" &&
+      section !== "References" &&
+      /^### /.test(line)
+    ) {
+      return true;
+    }
+  }
+  return false;
+}
+
+/**
+ * @param {string} content
+ * @param {string} qualified
+ * @param {{ summaries?: Record<string, { description?: string }> }} [options]
+ * @returns {string}
+ */
+export function enrichNamespaceOnlyPage(content, qualified, options = {}) {
+  const nsLinks = parseNamespacesSection(content);
+  if (!nsLinks.length || hasDocumentedMembers(content)) return content;
+
+  const worker = String(qualified || "").endsWith(" (worker)");
+  const base = worker ? qualified.slice(0, -" (worker)".length) : String(qualified || "");
+  const summary = options.summaries?.[summaryKeyForQualified(qualified)]?.description?.trim() || "";
+  const childLinks = nsLinks
+    .map(({ label, href }) => `- [${base}.${label}](${href})`)
+    .join("\n");
+  const intro = [summary, childLinks].filter(Boolean).join("\n\n");
+  if (!intro) return content;
+
+  return String(content || "").replace(/^(# [^\n]+\n\n?)/, `$1${intro}\n\n`);
+}
+
+/**
  * Drop TypeDoc index headings that duplicate the sidebar.
  * @param {string} content
  */
@@ -578,13 +685,16 @@ export function collapseOfficialSee(content) {
  * Restyle `### member` blocks on one API markdown page.
  * @param {string} content
  * @param {string} qualified page runtime name (`sandkit.api.game`)
+ * @param {{ summaries?: Record<string, { description?: string }> }} [options]
  */
-export function restyleApiCards(content, qualified) {
+export function restyleApiCards(content, qualified, options = {}) {
   const worker = String(qualified || "").endsWith(" (worker)");
   const base = worker ? qualified.slice(0, -" (worker)".length) : String(qualified || "");
   const pageSlug = qualifiedNameToSlug(qualified);
   const pageRel = pageSlug ? `api/${pageSlug}.md` : "";
-  const lines = collapseOfficialSee(stripReferencesSection(content)).split(/\n/);
+  const lines = collapseOfficialSee(
+    stripReferencesSection(enrichNamespaceOnlyPage(content, qualified, options)),
+  ).split(/\n/);
   /** @type {string[]} */
   const out = [];
   let i = 0;

@@ -112,7 +112,7 @@ register(definition: ItemDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`ItemDefinition`](?id=itemdefinition)</code> | [`ItemDefinition`](?id=itemdefinition) Item id, handlers, and display metadata. |
+| definition | <code>[`ItemDefinition`](?id=itemdefinition)</code> | Item id, handlers, and display metadata. |
 
 <div class="smt-member-anchors">
 
@@ -140,8 +140,8 @@ updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | <code>[`ItemId`](?id=itemid)</code> | [`ItemId`](?id=itemid) Registered item id. |
-| partial | `Partial`\<[`ItemDefinition`](?id=itemdefinition)\> | `Partial`\<[`ItemDefinition`](?id=itemdefinition)\> Fields to merge into the definition. |
+| itemId | <code>[`ItemId`](?id=itemid)</code> | Registered item id. |
+| partial | `Partial`\<[`ItemDefinition`](?id=itemdefinition)\> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -179,7 +179,7 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | <code>[`ItemId`](?id=itemid)</code> | [`ItemId`](?id=itemid) Registered item id. |
+| itemId | <code>[`ItemId`](?id=itemid)</code> | Registered item id. |
 
 <div class="smt-member-anchors">
 
@@ -209,7 +209,7 @@ createFromId(itemId: ItemId): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | <code>[`ItemId`](?id=itemid)</code> | [`ItemId`](?id=itemid) Registered item id. |
+| itemId | <code>[`ItemId`](?id=itemid)</code> | Registered item id. |
 
 <div class="smt-member-anchors">
 
@@ -257,8 +257,8 @@ isActiveById(itemId: ItemId, itemType?: ItemType): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | <code>[`ItemId`](?id=itemid)</code> | [`ItemId`](?id=itemid) Item id or numeric type to compare. |
-| itemType? | <code>[`ItemType`](?id=itemtype)</code> | [`ItemType`](?id=itemtype) Optional item type discriminator. |
+| itemId | <code>[`ItemId`](?id=itemid)</code> | Item id or numeric type to compare. |
+| itemType? | <code>[`ItemType`](?id=itemtype)</code> | Optional item type discriminator. |
 
 <div class="smt-member-anchors">
 

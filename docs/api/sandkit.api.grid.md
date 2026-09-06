@@ -180,7 +180,7 @@ mutate(callback: (writer: GridMutationWriter) => void): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | <code>(`writer`: [`GridMutationWriter`](?id=gridmutationwriter)) =&gt; `void`</code> | (`writer`: [`GridMutationWriter`](?id=gridmutationwriter)) => `void` Receives a writer for element and terrain cell mutations. |
+| callback | <code>(`writer`: [`GridMutationWriter`](?id=gridmutationwriter)) =&gt; `void`</code> | Receives a writer for element and terrain cell mutations. |
 
 <div class="smt-member-anchors">
 
@@ -234,7 +234,7 @@ revealFogAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -262,7 +262,7 @@ redrawAroundCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
+| args | <code>...\[`number`, `number`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -290,10 +290,10 @@ forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: numbe
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| centerCellX | `number` | `number` Circle center cell column. |
-| centerCellY | `number` | `number` Circle center cell row. |
-| radiusCells | `number` | `number` Circle radius in cells. |
-| callback | <code>(...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`</code> | (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void` Invoked for each cell with `(cellX, cellY)`. |
+| centerCellX | `number` | Circle center cell column. |
+| centerCellY | `number` | Circle center cell row. |
+| radiusCells | `number` | Circle radius in cells. |
+| callback | <code>(...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`</code> | Invoked for each cell with `(cellX, cellY)`. |
 
 <div class="smt-member-anchors">
 
@@ -327,7 +327,7 @@ forEachCellInRectangle(...args: number, number, number, number, (...args: [CellC
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`\]</code> | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |
+| args | <code>...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -364,7 +364,7 @@ forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`\]</code> | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |
+| args | <code>...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) =&gt; `void`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -390,7 +390,7 @@ getCellIdAtCell(...args: CellCoordinates): CellId
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -420,7 +420,7 @@ isCellEmptyAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -448,7 +448,7 @@ isTerrainAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -476,7 +476,7 @@ reportActivityAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -504,7 +504,7 @@ excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=excavateoptions)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=excavateoptions)\] |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=excavateoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 

@@ -843,9 +843,9 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| hookId | `K` | `K` Registered hook identifier. |
-| callback | <code>(`args`: [`InterceptHookArgs`](?id=intercepthookargs)\&lt;`K`\&gt;, `context`: [`HookContext`](?id=hookcontext)) =&gt; `void`</code> | (`args`: [`InterceptHookArgs`](?id=intercepthookargs)\<`K`\>, `context`: [`HookContext`](?id=hookcontext)) => `void` Called with hook arguments and context; may cancel the hook. |
-| options? | <code>[`InterceptHookOptions`](?id=intercepthookoptions)\&lt;`K`\&gt;</code> | [`InterceptHookOptions`](?id=intercepthookoptions)\<`K`\> Optional priority and filter options. |
+| hookId | `K` | Registered hook identifier. |
+| callback | <code>(`args`: [`InterceptHookArgs`](?id=intercepthookargs)\&lt;`K`\&gt;, `context`: [`HookContext`](?id=hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
+| options? | <code>[`InterceptHookOptions`](?id=intercepthookoptions)\&lt;`K`\&gt;</code> | Optional priority and filter options. |
 
 <div class="smt-member-anchors">
 
@@ -1064,9 +1064,9 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| hookId | `K` | `K` Registered hook identifier. |
-| callback | <code>(`args`: [`ModifyHookArgs`](?id=modifyhookargs)\&lt;`K`\&gt;) =&gt; `void`</code> | (`args`: [`ModifyHookArgs`](?id=modifyhookargs)\<`K`\>) => `void` Called with hook arguments; may mutate hook payload. |
-| options? | <code>[`ModifyHookOptions`](?id=modifyhookoptions)</code> | [`ModifyHookOptions`](?id=modifyhookoptions) Optional priority and filter options. |
+| hookId | `K` | Registered hook identifier. |
+| callback | <code>(`args`: [`ModifyHookArgs`](?id=modifyhookargs)\&lt;`K`\&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
+| options? | <code>[`ModifyHookOptions`](?id=modifyhookoptions)</code> | Optional priority and filter options. |
 
 <div class="smt-member-anchors">
 

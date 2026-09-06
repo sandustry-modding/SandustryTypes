@@ -18,7 +18,7 @@ EngineFn = (...args: unknown[]) => unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...`unknown`[]</code> | ...`unknown`[] |
+| args | <code>...`unknown`[]</code> |  |
 
 <div class="smt-member-anchors">
 

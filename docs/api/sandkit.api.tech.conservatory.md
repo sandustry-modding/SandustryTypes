@@ -20,8 +20,8 @@ appendUnlock(techId: TechGridId, unlocks: ConservatoryUnlocks): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](api/sandkit.api.tech.md?id=techgridid)</code> | [`TechGridId`](api/sandkit.api.tech.md?id=techgridid) Built-in or custom tech id. |
-| unlocks | <code>[`ConservatoryUnlocks`](api/sandkit.api.tech.md?id=conservatoryunlocks)</code> | [`ConservatoryUnlocks`](api/sandkit.api.tech.md?id=conservatoryunlocks) Optional structure and item ids to unlock. |
+| techId | <code>[`TechGridId`](api/sandkit.api.tech.md?id=techgridid)</code> | Built-in or custom tech id. |
+| unlocks | <code>[`ConservatoryUnlocks`](api/sandkit.api.tech.md?id=conservatoryunlocks)</code> | Optional structure and item ids to unlock. |
 
 <div class="smt-member-anchors">
 

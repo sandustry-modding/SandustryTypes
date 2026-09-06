@@ -137,7 +137,7 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry identifier. |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | Tech entry identifier. |
 
 <div class="smt-member-anchors">
 
@@ -167,8 +167,8 @@ updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry identifier. |
-| updates | `Partial`\<[`TechDefinition`](?id=techdefinition)\> | `Partial`\<[`TechDefinition`](?id=techdefinition)\> Fields to merge into the definition. |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | Tech entry identifier. |
+| updates | `Partial`\<[`TechDefinition`](?id=techdefinition)\> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -206,8 +206,8 @@ registerDefinition(techId: TechGridId, definition: TechDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry identifier. |
-| definition | <code>[`TechDefinition`](?id=techdefinition)</code> | [`TechDefinition`](?id=techdefinition) Full tech definition to register. |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | Tech entry identifier. |
+| definition | <code>[`TechDefinition`](?id=techdefinition)</code> | Full tech definition to register. |
 
 <div class="smt-member-anchors">
 
@@ -258,8 +258,8 @@ addDefinition(techId: TechGridId, definition: TechDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) |
-| definition | <code>[`TechDefinition`](?id=techdefinition)</code> | [`TechDefinition`](?id=techdefinition) |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> |  |
+| definition | <code>[`TechDefinition`](?id=techdefinition)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -287,9 +287,9 @@ registerNode(techId: TechGridId, definition: TechDefinition, options: object): T
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech grid node id. |
-| definition | <code>[`TechDefinition`](?id=techdefinition)</code> | [`TechDefinition`](?id=techdefinition) Tech definition for the node. |
-| options | <code>Parent node id and optional preferred grid position.</code> | Parent node id and optional preferred grid position. |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | Tech grid node id. |
+| definition | <code>[`TechDefinition`](?id=techdefinition)</code> | Tech definition for the node. |
+| options | <code>Parent node id and optional preferred grid position.</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -333,7 +333,7 @@ isLockedById(techId: TechGridId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry id (string or numeric enum). |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | Tech entry id (string or numeric enum). |
 
 <div class="smt-member-anchors">
 
@@ -361,8 +361,8 @@ setLockedById(techId: TechGridId, locked: boolean): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry id (string or numeric enum). |
-| locked | `boolean` | `boolean` When true, the tech cannot be purchased. |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | Tech entry id (string or numeric enum). |
+| locked | `boolean` | When true, the tech cannot be purchased. |
 
 <div class="smt-member-anchors">
 
@@ -392,7 +392,7 @@ isResearchedById(techId: TechGridId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=techgridid)</code> | [`TechGridId`](?id=techgridid) Tech entry id (string or numeric enum). |
+| techId | <code>[`TechGridId`](?id=techgridid)</code> | Tech entry id (string or numeric enum). |
 
 <div class="smt-member-anchors">
 

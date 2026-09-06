@@ -20,7 +20,7 @@ get(key: string): JsonValueV1 | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | `string` Storage key. |
+| key | `string` | Storage key. |
 
 <div class="smt-member-anchors">
 
@@ -50,8 +50,8 @@ set(key: string, value: JsonValueV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | `string` Storage key. |
-| value | <code>[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)</code> | [`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) JSON-serializable value. |
+| key | `string` | Storage key. |
+| value | <code>[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)</code> | JSON-serializable value. |
 
 <div class="smt-member-anchors">
 
@@ -81,7 +81,7 @@ remove(key: string): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| key | `string` | `string` Storage key. |
+| key | `string` | Storage key. |
 
 <div class="smt-member-anchors">
 

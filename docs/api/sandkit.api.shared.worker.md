@@ -1,5 +1,9 @@
 # sandkit.api.shared (worker)
 
+SharedArrayBuffer storage for data shared between main and worker threads.
+
+- [sandkit.api.shared.buffers](api/sandkit.api.shared.buffers.worker.md)
+
 **`Internal`**
 
 Worker thread only.

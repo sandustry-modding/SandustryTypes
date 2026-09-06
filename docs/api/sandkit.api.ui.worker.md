@@ -126,8 +126,8 @@ toast(message: LocalizedText, options?: ToastOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| message | <code>[`LocalizedText`](?id=localizedtext)</code> | [`LocalizedText`](?id=localizedtext) Plain text, translation key, or translatable value. |
-| options? | <code>[`ToastOptions`](?id=toastoptions)</code> | [`ToastOptions`](?id=toastoptions) Cooldown, style, and auto-dismiss options. |
+| message | <code>[`LocalizedText`](?id=localizedtext)</code> | Plain text, translation key, or translatable value. |
+| options? | <code>[`ToastOptions`](?id=toastoptions)</code> | Cooldown, style, and auto-dismiss options. |
 
 <div class="smt-member-anchors">
 

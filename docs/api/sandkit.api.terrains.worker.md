@@ -181,7 +181,7 @@ getIdByType(terrainType: TerrainType): string & object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainType | <code>[`TerrainType`](?id=terraintype)</code> | [`TerrainType`](?id=terraintype) Numeric terrain cell type. |
+| terrainType | <code>[`TerrainType`](?id=terraintype)</code> | Numeric terrain cell type. |
 
 <div class="smt-member-anchors">
 
@@ -211,7 +211,7 @@ getTypeById(terrainId: string & object): TerrainType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainId | `string` & `object` | `string` & `object` Mod-registered or built-in terrain id. |
+| terrainId | `string` & `object` | Mod-registered or built-in terrain id. |
 
 <div class="smt-member-anchors">
 
@@ -250,7 +250,7 @@ getTypeFromId(terrainId: string & object): TerrainType
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainId | `string` & `object` | `string` & `object` |
+| terrainId | `string` & `object` |  |
 
 <div class="smt-member-anchors">
 
@@ -278,7 +278,7 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainType | <code>[`TerrainType`](?id=terraintype)</code> | [`TerrainType`](?id=terraintype) Numeric terrain cell type. |
+| terrainType | <code>[`TerrainType`](?id=terraintype)</code> | Numeric terrain cell type. |
 
 <div class="smt-member-anchors">
 
@@ -308,7 +308,7 @@ getTypeAtCell(...args: CellCoordinates): TerrainType | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -338,7 +338,7 @@ getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -368,7 +368,7 @@ isAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -396,7 +396,7 @@ isTypeAtCell(...args: [number, number, string & object]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `string` &amp; `object`\]</code> | ...\[`number`, `number`, `string` & `object`\] |
+| args | <code>...\[`number`, `number`, `string` &amp; `object`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -424,7 +424,7 @@ isCellIdTerrain(cellId: CellId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | [`CellId`](api/shared.nominal.md?id=cellid) Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md?id=getcellidatcell). |
+| cellId | <code>[`CellId`](api/shared.nominal.md?id=cellid)</code> | Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md?id=getcellidatcell). |
 
 <div class="smt-member-anchors">
 
@@ -452,7 +452,7 @@ damageAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
+| args | <code>...\[`number`, `number`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -480,7 +480,7 @@ meltAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -508,7 +508,7 @@ createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\] |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -536,7 +536,7 @@ replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\] |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=terrainref), [`TerrainMutationOptions`](?id=terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -564,7 +564,7 @@ removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](?id=terrainmutationoptions)\]</code> | ...\[`number`, `number`, [`TerrainMutationOptions`](?id=terrainmutationoptions)\] |
+| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](?id=terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -592,7 +592,7 @@ setHitPointsAtCell(...args: [number, number, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
+| args | <code>...\[`number`, `number`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -631,7 +631,7 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
+| args | <code>...\[`number`, `number`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 

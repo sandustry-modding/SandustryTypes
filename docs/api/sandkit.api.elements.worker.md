@@ -28,7 +28,7 @@ createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\] |
+| args | <code>...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -66,7 +66,7 @@ replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]</code> | ...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\] |
+| args | <code>...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -94,7 +94,7 @@ removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md?id=elementremovaloptions)\]</code> | ...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md?id=elementremovaloptions)\] |
+| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md?id=elementremovaloptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -122,10 +122,10 @@ moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY:
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| fromCellX | `number` | `number` Source cell column. |
-| fromCellY | `number` | `number` Source cell row. |
-| toCellX | `number` | `number` Destination cell column. |
-| toCellY | `number` | `number` Destination cell row. |
+| fromCellX | `number` | Source cell column. |
+| fromCellY | `number` | Source cell row. |
+| toCellX | `number` | Destination cell column. |
+| toCellY | `number` | Destination cell row. |
 
 <div class="smt-member-anchors">
 
@@ -161,10 +161,10 @@ teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCe
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| fromCellX | `number` | `number` Source cell column. |
-| fromCellY | `number` | `number` Source cell row. |
-| toCellX | `number` | `number` Destination cell column. |
-| toCellY | `number` | `number` Destination cell row. |
+| fromCellX | `number` | Source cell column. |
+| fromCellY | `number` | Source cell row. |
+| toCellX | `number` | Destination cell column. |
+| toCellY | `number` | Destination cell row. |
 
 <div class="smt-member-anchors">
 
@@ -198,10 +198,10 @@ swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, se
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| firstCellX | `number` | `number` First cell column. |
-| firstCellY | `number` | `number` First cell row. |
-| secondCellX | `number` | `number` Second cell column. |
-| secondCellY | `number` | `number` Second cell row. |
+| firstCellX | `number` | First cell column. |
+| firstCellY | `number` | First cell row. |
+| secondCellX | `number` | Second cell column. |
+| secondCellY | `number` | Second cell row. |
 
 <div class="smt-member-anchors">
 
@@ -246,10 +246,10 @@ swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCel
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| firstCellX | `number` | `number` |
-| firstCellY | `number` | `number` |
-| secondCellX | `number` | `number` |
-| secondCellY | `number` | `number` |
+| firstCellX | `number` |  |
+| firstCellY | `number` |  |
+| secondCellX | `number` |  |
+| secondCellY | `number` |  |
 
 <div class="smt-member-anchors">
 
@@ -281,7 +281,7 @@ markMovementBlockedByIndex(elementIndex: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementIndex | `number` | `number` Element index from [getInfoAtCell](api/sandkit.api.elements.md?id=getinfoatcell). |
+| elementIndex | `number` | Element index from [getInfoAtCell](api/sandkit.api.elements.md?id=getinfoatcell). |
 
 <div class="smt-member-anchors">
 
@@ -318,7 +318,7 @@ markMovementBlockedByElementIndex(elementIndex: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementIndex | `number` | `number` |
+| elementIndex | `number` |  |
 
 <div class="smt-member-anchors">
 
@@ -344,7 +344,7 @@ setVelocityAtCell(...args: number, number, [Vector2]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -374,7 +374,7 @@ addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -404,7 +404,7 @@ convertToParticleAtCell(...args: number, number, [Vector2]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -434,7 +434,7 @@ convertFromParticleAtCell(...args: CellCoordinates): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -464,7 +464,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> | ...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\] |
+| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -494,7 +494,7 @@ refreshColorAtCell(...args: CellCoordinates): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |
+| args | <code>...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -522,7 +522,7 @@ setPhysicsAtCell(...args: [number, number, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`\]</code> | ...\[`number`, `number`, `number`\] |
+| args | <code>...\[`number`, `number`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -550,7 +550,7 @@ setDurationAtCell(...args: [number, number, number, object]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`, `object`\]</code> | ...\[`number`, `number`, `number`, `object`\] |
+| args | <code>...\[`number`, `number`, `number`, `object`\]</code> |  |
 
 <div class="smt-member-anchors">
 

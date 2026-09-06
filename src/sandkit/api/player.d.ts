@@ -33,6 +33,9 @@ export namespace player {
   /**
    * @deprecated Use {@link setPositionAtWorld} instead.
    *
+   * @param worldX - World x position in pixels.
+   * @param worldY - World y position in pixels.
+   *
    */
   export function setWorldPosition(worldX: number, worldY: number): void;
 
