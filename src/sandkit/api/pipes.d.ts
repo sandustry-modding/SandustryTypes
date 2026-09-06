@@ -5,7 +5,6 @@ import type { CellCoordinates } from "../../shared/player";
  *
  * Available as `sandkit.api.pipes`.
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace pipes {
   /**
@@ -14,7 +13,6 @@ export namespace pipes {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isAtCell(...args: CellCoordinates): boolean;
 
@@ -24,7 +22,6 @@ export namespace pipes {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isEnabledAtCell(...args: CellCoordinates): boolean;
 
@@ -34,7 +31,6 @@ export namespace pipes {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[];
 
@@ -45,7 +41,6 @@ export namespace pipes {
    * @param cellY - Grid row of the target cell.
    * @param enabled - Desired enabled state.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setEnabledAtCell(...args: [...CellCoordinates, enabled: boolean]): void;
 

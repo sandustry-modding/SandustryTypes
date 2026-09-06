@@ -123,6 +123,69 @@ When true, skip the intro sequence.
   assert.match(out, /When true, skip the intro sequence/);
 });
 
+test("restyleApiCards drops Official docs See sections", () => {
+  const src = `# sandkit.api.player
+
+## See <!-- {docsify-ignore} -->
+
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+## Functions <!-- {docsify-ignore} -->
+
+### setPositionAtWorld() :id=setpositionatworld
+
+\`\`\`ts
+setPositionAtWorld(): void
+\`\`\`
+
+#### See
+
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+### setWorldPosition() :id=setworldposition
+
+\`\`\`ts
+setWorldPosition(): void
+\`\`\`
+
+#### Deprecated
+
+Use setPositionAtWorld instead.
+
+#### See
+
+[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+`;
+  const out = restyleApiCards(src, "sandkit.api.player");
+  assert.doesNotMatch(out, /^## See/m);
+  assert.doesNotMatch(out, /^#### See$/m);
+  assert.doesNotMatch(out, /Official docs/);
+  assert.match(out, /#### Deprecated/);
+});
+
+test("restyleApiCards drops the TypeDoc Namespaces child list", () => {
+  const src = `# sandkit.api.player
+
+## Namespaces <!-- {docsify-ignore} -->
+
+- [inventory](api/sandkit.api.player.inventory.md)
+- [buildings](api/sandkit.api.player.buildings.md)
+
+## Functions <!-- {docsify-ignore} -->
+
+### setPositionAtWorld() :id=setpositionatworld
+
+\`\`\`ts
+setPositionAtWorld(): void
+\`\`\`
+`;
+  const out = restyleApiCards(src, "sandkit.api.player");
+  assert.match(out, /setPositionAtWorld/);
+  assert.doesNotMatch(out, /## Namespaces/);
+  assert.doesNotMatch(out, /inventory/);
+  assert.doesNotMatch(out, /buildings/);
+});
+
 test("restyleApiCards drops the TypeDoc References re-export list", () => {
   const src = `# sandkit.api.player
 

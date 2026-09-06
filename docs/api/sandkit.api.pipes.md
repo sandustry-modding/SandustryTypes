@@ -4,17 +4,13 @@ Pipe network queries and enablement at grid cells.
 
 Available as `sandkit.api.pipes`.
 
-## See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 ## Interfaces <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">
 
 ### sandkit.api.pipes.PipeVentCell :id=pipeventcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L53" target="_blank" rel="noopener">pipes.d.ts:53</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L48" target="_blank" rel="noopener">pipes.d.ts:48</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -45,7 +41,7 @@ Connected vent cell position.
 
 ### sandkit.api.pipes.isAtCell :id=isatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L19" target="_blank" rel="noopener">pipes.d.ts:19</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L17" target="_blank" rel="noopener">pipes.d.ts:17</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.pipes.isAtCell(...args: CellCoordinates): boolean">
 
@@ -67,17 +63,13 @@ isAtCell(...args: CellCoordinates): boolean
 
 Return true when a pipe occupies the cell.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.pipes.isEnabledAtCell :id=isenabledatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L29" target="_blank" rel="noopener">pipes.d.ts:29</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L26" target="_blank" rel="noopener">pipes.d.ts:26</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.pipes.isEnabledAtCell(...args: CellCoordinates): boolean">
 
@@ -99,17 +91,13 @@ isEnabledAtCell(...args: CellCoordinates): boolean
 
 Return true when pipe flow is enabled at the cell.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.pipes.getConnectedVentsAtCell :id=getconnectedventsatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L39" target="_blank" rel="noopener">pipes.d.ts:39</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L35" target="_blank" rel="noopener">pipes.d.ts:35</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.pipes.getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[]">
 
@@ -133,17 +121,13 @@ Return connected liquid vent cell positions for the pipe at a cell.
 
 readonly [`PipeVentCell`](?id=pipeventcell)[]
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.pipes.setEnabledAtCell :id=setenabledatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L50" target="_blank" rel="noopener">pipes.d.ts:50</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L45" target="_blank" rel="noopener">pipes.d.ts:45</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.pipes.setEnabledAtCell(...args: [number, number, boolean]): void">
 
@@ -164,9 +148,5 @@ setEnabledAtCell(...args: [number, number, boolean]): void
 </div>
 
 Enable or disable pipe flow at a cell.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

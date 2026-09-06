@@ -9,7 +9,6 @@ export namespace lights {
   /**
    * Short-lived visual effect lights.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export namespace temporary {
     /** Options for {@link createAtWorld}. */
@@ -22,7 +21,6 @@ export namespace lights {
       /**
        * @deprecated Use {@link lightId} instead.
        *
-       * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
        */
       index?: number | null;
     }
@@ -42,7 +40,6 @@ export namespace lights {
      * const lightId = light.lightId;
      * ```
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function createAtWorld(
       worldX: number,

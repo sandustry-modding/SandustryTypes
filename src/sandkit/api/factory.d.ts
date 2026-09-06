@@ -3,13 +3,11 @@
  *
  * Available as `sandkit.api.factory`.
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace factory {
   /**
    * Return the current factory level.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getLevel(): number;
 
@@ -18,7 +16,6 @@ export namespace factory {
    *
    * @param processId - Built-in factory process id.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getProcessCount(processId: FactoryProcessId): number;
 
@@ -27,7 +24,6 @@ export namespace factory {
    *
    * @param processId - Built-in factory process id.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getProcessRate(processId: FactoryProcessId): number;
 

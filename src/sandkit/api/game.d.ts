@@ -3,7 +3,6 @@
  *
  * Available as `sandkit.api.game`.
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace game {
   /**
@@ -16,7 +15,6 @@ export namespace game {
    * api.game.start({ skipIntro: true });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function start(options?: GameStartOptions): void;
 

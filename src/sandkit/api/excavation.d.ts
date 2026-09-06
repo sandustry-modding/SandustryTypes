@@ -5,7 +5,6 @@ import type { terrains } from "../../shared/api/terrains";
  * `sandkit.api.excavation` — register custom excavation tool dig profiles.
  * Main thread only.
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace excavation {
   /**
@@ -42,7 +41,6 @@ export namespace excavation {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void;
 
@@ -77,7 +75,6 @@ export namespace excavation {
     /**
      * @deprecated Use {@link cellType} instead.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     terrainType?: terrains.TerrainRef;
     /** Damage applied when this rule matches. */

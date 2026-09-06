@@ -18,7 +18,6 @@ export namespace i18n {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function t(key: string, params?: Record<string, string | number>): string;
 
@@ -35,14 +34,12 @@ export namespace i18n {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function register(locale: Locale, translations: Record<string, string>): void;
 
   /**
    * Returns the active locale code.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getLocale(): Locale;
 
@@ -52,7 +49,6 @@ export namespace i18n {
    * @param key - Translation key.
    * @param locale - Optional locale; defaults to the active locale.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function hasTranslation(key: string, locale?: Locale): boolean;
 
@@ -61,14 +57,12 @@ export namespace i18n {
    *
    * @param locale - Locale code to activate.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setLocale(locale: Locale): Promise<void>;
 
   /**
    * Returns metadata for all known languages.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getLanguages(): {
     code: Locale;
@@ -80,7 +74,6 @@ export namespace i18n {
   /**
    * Returns locale codes that have registered translations.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getAvailableLocales(): Locale[];
 
@@ -97,7 +90,6 @@ export namespace i18n {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function formatNumber(value: number, options?: I18nNumberFormatOptions): string;
 
@@ -106,14 +98,12 @@ export namespace i18n {
    *
    * @param parts - Key segments joined with `.`.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function joinKey(...parts: string[]): string;
 
   /**
    * @deprecated Use {@link joinKey} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function key(...parts: string[]): string;
 
@@ -130,7 +120,6 @@ export namespace i18n {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getName(definition: { nameKey?: string; name?: string }): string;
 
@@ -139,7 +128,6 @@ export namespace i18n {
    *
    * @param definition - Object with `descriptionKey` or `description`.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDescription(definition: {
     descriptionKey?: string;
@@ -152,7 +140,6 @@ export namespace i18n {
    * @param key - Translation key.
    * @param fallback - Text used when no translation is registered.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function createTranslatable(
     key: string,
@@ -162,7 +149,6 @@ export namespace i18n {
   /**
    * @deprecated Use {@link createTranslatable} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function translatable(
     key: string,
@@ -175,7 +161,6 @@ export namespace i18n {
    * @param key - Global helper key.
    * @param value - Static string or function that returns the current value.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setGlobal(key: string, value: string | (() => string)): void;
 
@@ -184,7 +169,6 @@ export namespace i18n {
    *
    * @param key - Global helper key.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getGlobal(key: string): string | undefined;
 
@@ -193,21 +177,18 @@ export namespace i18n {
    *
    * @param key - Global helper key.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function removeGlobal(key: string): void;
 
   /**
    * @deprecated Use {@link removeGlobal} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function clearGlobal(key: string): void;
 
   /**
    * Returns all global translation helper values.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getGlobals(): Record<string, string>;
 
@@ -216,7 +197,6 @@ export namespace i18n {
    *
    * @param keyCode - Keyboard key code or binding name.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function formatKeyForDisplay(keyCode: string): string;
 

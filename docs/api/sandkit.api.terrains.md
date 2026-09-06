@@ -6,7 +6,7 @@
 
 ### sandkit.api.terrains.TerrainDefinition :id=terraindefinition
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L55" target="_blank" rel="noopener">terrains.d.ts:55</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L53" target="_blank" rel="noopener">terrains.d.ts:53</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -19,10 +19,6 @@
 </div>
 
 Terrain definition shape with typed element interactions.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 #### Extends
 
@@ -46,7 +42,7 @@ Terrain definition shape with typed element interactions.
 
 ### sandkit.api.terrains.register :id=register
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L71" target="_blank" rel="noopener">terrains.d.ts:71</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L68" target="_blank" rel="noopener">terrains.d.ts:68</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.register(definition: TerrainDefinition): object">
 
@@ -70,17 +66,13 @@ Register a new terrain definition.
 
 Object with the assigned `cellType`. cellType: TerrainType
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.terrains.updateDefinition :id=updatedefinition
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L81" target="_blank" rel="noopener">terrains.d.ts:81</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L77" target="_blank" rel="noopener">terrains.d.ts:77</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.updateDefinition(cellTypeOrId: TerrainRef, partial: Partial&lt;TerrainDefinition&gt;): void">
 
@@ -105,17 +97,13 @@ updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>):
 
 Patch fields on an existing terrain definition.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.terrains.createAtCell :id=createatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L96" target="_blank" rel="noopener">terrains.d.ts:96</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L91" target="_blank" rel="noopener">terrains.d.ts:91</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void">
 
@@ -137,17 +125,13 @@ createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): voi
 
 Create terrain at a cell. Main-entry writes are deferred; reads see the old grid.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.terrains.createAtCellWhenIdle~~ :id=createatcellwhenidle
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L105" target="_blank" rel="noopener">terrains.d.ts:105</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L99" target="_blank" rel="noopener">terrains.d.ts:99</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void">
 
@@ -171,17 +155,13 @@ createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOption
 
 Use [createAtCell](?id=createatcell) instead.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.terrains.replaceAtCell :id=replaceatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L119" target="_blank" rel="noopener">terrains.d.ts:119</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L112" target="_blank" rel="noopener">terrains.d.ts:112</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void">
 
@@ -203,17 +183,13 @@ replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): vo
 
 Replace terrain at a cell. Main-entry writes are deferred; reads see the old grid.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.terrains.replaceAtCellWhenIdle~~ :id=replaceatcellwhenidle
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L128" target="_blank" rel="noopener">terrains.d.ts:128</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L120" target="_blank" rel="noopener">terrains.d.ts:120</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void">
 
@@ -237,17 +213,13 @@ replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptio
 
 Use [replaceAtCell](?id=replaceatcell) instead.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.terrains.removeAtCell :id=removeatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L141" target="_blank" rel="noopener">terrains.d.ts:141</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L132" target="_blank" rel="noopener">terrains.d.ts:132</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.removeAtCell(...args: number, number, [TerrainMutationOptions]): void">
 
@@ -269,17 +241,13 @@ removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 
 Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.terrains.removeAtCellWhenIdle~~ :id=removeatcellwhenidle
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L150" target="_blank" rel="noopener">terrains.d.ts:150</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L140" target="_blank" rel="noopener">terrains.d.ts:140</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void">
 
@@ -303,17 +271,13 @@ removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 
 Use [removeAtCell](?id=removeatcell) instead.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.terrains.setHitPointsAtCell :id=sethitpointsatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L163" target="_blank" rel="noopener">terrains.d.ts:163</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L152" target="_blank" rel="noopener">terrains.d.ts:152</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.setHitPointsAtCell(...args: [number, number, number]): void">
 
@@ -335,17 +299,13 @@ setHitPointsAtCell(...args: [number, number, number]): void
 
 Set terrain hit points at a cell. Main-entry writes are deferred; reads see the old grid.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.terrains.setHpAtCell~~ :id=sethpatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L170" target="_blank" rel="noopener">terrains.d.ts:170</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L158" target="_blank" rel="noopener">terrains.d.ts:158</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.setHpAtCell(...args: [number, number, number]): boolean">
 
@@ -369,17 +329,13 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 Use [setHitPointsAtCell](?id=sethitpointsatcell) instead.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.terrains.setHpAtCellWhenIdle~~ :id=sethpatcellwhenidle
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L177" target="_blank" rel="noopener">terrains.d.ts:177</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L164" target="_blank" rel="noopener">terrains.d.ts:164</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.setHpAtCellWhenIdle(...args: [number, number, number]): void">
 
@@ -402,9 +358,5 @@ setHpAtCellWhenIdle(...args: [number, number, number]): void
 #### Deprecated
 
 Use [setHitPointsAtCell](?id=sethitpointsatcell) instead.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 </div>

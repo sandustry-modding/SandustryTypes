@@ -8,7 +8,7 @@ Per-structure processing enablement and registration.
 
 ### sandkit.api.structures.processing.register :id=register
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L544" target="_blank" rel="noopener">structures.d.ts:544</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L515" target="_blank" rel="noopener">structures.d.ts:515</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.structures.processing.register(id: string &amp; object, definition: StructureProcessingDefinitionV1): void">
 
@@ -51,17 +51,13 @@ api.structures.processing.register(
 );
 ```
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.structures.processing.setEnabledAtCell :id=setenabledatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L556" target="_blank" rel="noopener">structures.d.ts:556</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L526" target="_blank" rel="noopener">structures.d.ts:526</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.structures.processing.setEnabledAtCell(...args: [number, number, boolean]): boolean">
 
@@ -85,17 +81,13 @@ Enable or disable processing at a cell.
 
 True when the enabled state changed.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.structures.processing.setEnabledAt~~ :id=setenabledat
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L563" target="_blank" rel="noopener">structures.d.ts:563</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L532" target="_blank" rel="noopener">structures.d.ts:532</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.structures.processing.setEnabledAt(...args: [number, number, boolean]): boolean">
 
@@ -118,9 +110,5 @@ setEnabledAt(...args: [number, number, boolean]): boolean
 #### Deprecated
 
 Use [setEnabledAtCell](?id=setenabledatcell) instead.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

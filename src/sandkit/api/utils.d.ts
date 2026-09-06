@@ -14,7 +14,6 @@ export namespace utils {
    * @param pointA - First point.
    * @param pointB - Second point.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDistance(pointA: Vector2, pointB: Vector2): number;
 
@@ -24,7 +23,6 @@ export namespace utils {
    * @param pointA - Origin point.
    * @param pointB - Target point.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDirection(pointA: Vector2, pointB: Vector2): Vector2;
 
@@ -34,7 +32,6 @@ export namespace utils {
    * @param pointA - Origin point.
    * @param pointB - Target point.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getAngle(pointA: Vector2, pointB: Vector2): number;
 
@@ -44,14 +41,12 @@ export namespace utils {
    * @param pointA - Line start in cell coordinates.
    * @param pointB - Line end in cell coordinates.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getCoordinatesBetweenCells(pointA: Vector2, pointB: Vector2): Vector2[];
 
   /**
    * @deprecated Use {@link getCoordinatesBetweenCells} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[];
 }

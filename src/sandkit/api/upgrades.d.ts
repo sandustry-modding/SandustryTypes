@@ -46,7 +46,6 @@ export namespace upgrades {
    * @param upgradeId - Upgrade id within the item.
    * @param level - Level to set.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setLevelById(itemId: string, upgradeId: string, level: number): void;
 

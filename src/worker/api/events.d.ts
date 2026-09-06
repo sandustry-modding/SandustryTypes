@@ -41,7 +41,6 @@ export namespace events {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function on<K extends EventId>(
     eventId: K,
@@ -56,7 +55,6 @@ export namespace events {
    * @param payload - Serializable payload passed to listeners.
    * @param options - Optional guard forwarded to filtered listeners.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function emit<K extends EventId>(
     eventId: K,

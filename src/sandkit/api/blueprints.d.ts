@@ -5,7 +5,6 @@ import type { structures } from "../../shared/api/structures";
  *
  * Available as `sandkit.api.blueprints`.
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace blueprints {
   /**
@@ -13,7 +12,6 @@ export namespace blueprints {
    *
    * @param structures - Structure instances to encode.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function serializeStructures(
     structures: readonly structures.Structure[],
@@ -24,7 +22,6 @@ export namespace blueprints {
    *
    * @param structures - Blueprint structure records to localize.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function localizeStructures(
     structures: readonly BlueprintStructure[],

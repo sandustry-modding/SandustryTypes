@@ -6,7 +6,7 @@
 
 ### sandkit.api.utils.getDistance :id=getdistance
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L19" target="_blank" rel="noopener">utils.d.ts:19</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L18" target="_blank" rel="noopener">utils.d.ts:18</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.utils.getDistance(pointA: Vector2, pointB: Vector2): number">
 
@@ -31,17 +31,13 @@ getDistance(pointA: Vector2, pointB: Vector2): number
 
 Return distance between two points.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.utils.getDirection :id=getdirection
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L29" target="_blank" rel="noopener">utils.d.ts:29</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L27" target="_blank" rel="noopener">utils.d.ts:27</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.utils.getDirection(pointA: Vector2, pointB: Vector2): Vector2">
 
@@ -68,17 +64,13 @@ Return normalized direction from point A to point B.
 
 [`Vector2`](api/shared.player.md?id=vector2)
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.utils.getAngle :id=getangle
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L39" target="_blank" rel="noopener">utils.d.ts:39</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L36" target="_blank" rel="noopener">utils.d.ts:36</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.utils.getAngle(pointA: Vector2, pointB: Vector2): number">
 
@@ -103,17 +95,13 @@ getAngle(pointA: Vector2, pointB: Vector2): number
 
 Return angle in radians from point A to point B.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.utils.getCoordinatesBetweenCells :id=getcoordinatesbetweencells
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L49" target="_blank" rel="noopener">utils.d.ts:49</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L45" target="_blank" rel="noopener">utils.d.ts:45</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.utils.getCoordinatesBetweenCells(pointA: Vector2, pointB: Vector2): Vector2[]">
 
@@ -140,17 +128,13 @@ Return grid cells along a line between two points.
 
 [`Vector2`](api/shared.player.md?id=vector2)[]
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.utils.getCoordinatesBetweenPoints~~ :id=getcoordinatesbetweenpoints
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L56" target="_blank" rel="noopener">utils.d.ts:56</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L51" target="_blank" rel="noopener">utils.d.ts:51</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.utils.getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]">
 
@@ -178,9 +162,5 @@ getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 #### Deprecated
 
 Use [getCoordinatesBetweenCells](?id=getcoordinatesbetweencells) instead.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

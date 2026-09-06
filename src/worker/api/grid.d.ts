@@ -38,7 +38,6 @@ export namespace grid {
 /**
  * @deprecated Use {@link grid} instead.
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace world {
   export import getCellIdAtCell = grid.getCellIdAtCell;

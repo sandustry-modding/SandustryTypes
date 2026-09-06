@@ -6,25 +6,6 @@ Prefer these declarations in `worker.js`. Type `sandkit.api` as
 [WorkerSandkitApi](?id=workersandkitapi). Do not assume main-thread methods exist here.
 See [sandkit.api](api/sandkit.md?id=api-1) for the main-thread public API.
 
-## Namespaces <!-- {docsify-ignore} -->
-
-- [maps](api/sandkit.api.maps.worker.md)
-- [player](api/sandkit.api.player.worker.md)
-- [structures](api/sandkit.api.structures.worker.md)
-- [terrains](api/sandkit.api.terrains.worker.md)
-- [ui](api/sandkit.api.ui.worker.md)
-- [effects](api/sandkit.api.effects.worker.md)
-- [elements](api/sandkit.api.elements.worker.md)
-- [events](api/sandkit.api.events.worker.md)
-- [fire](api/sandkit.api.fire.worker.md)
-- [grid](api/sandkit.api.grid.worker.md)
-- [~~world~~](api/sandkit.api.world.worker.md)
-- [hooks](api/sandkit.api.hooks.worker.md)
-- [lights](api/sandkit.api.lights.worker.md)
-- [main](api/sandkit.api.main.worker.md)
-- [shared](api/sandkit.api.shared.worker.md)
-- [worker](api/sandkit.api.worker.worker.md)
-
 ## Type Aliases <!-- {docsify-ignore} -->
 
 ### sandkit.api (worker) :id=workersandkitapi
@@ -215,12 +196,8 @@ Defined in: [worker/sandkit-api.d.ts:34](https://github.com/sandustry-modding/Sa
 world: world
 ```
 
-Defined in: [worker/sandkit-api.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L40)
+Defined in: [worker/sandkit-api.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/sandkit-api.d.ts#L39)
 
 ###### Deprecated
 
 Use [grid](api/sandkit.api.grid.worker.md) instead.
-
-###### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)

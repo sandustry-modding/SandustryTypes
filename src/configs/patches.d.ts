@@ -7,7 +7,6 @@
  *
  * @module
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
  */
 
 /**
@@ -20,7 +19,6 @@
  * | `js/simulation-worker.js` | Simulation workers |
  * | `js/utility-worker.js` | Utility worker |
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
  */
 export type PatchTargetFile =
   | "js/bundle.js"
@@ -40,27 +38,23 @@ export type PatchTargetFile =
  * | `insertAfter` | Insert {@link BundlePatch.code} after the match |
  * | `wrap` | Surround the match with {@link BundlePatch.before} and {@link BundlePatch.after} |
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
  */
 export type PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfter" | "wrap";
 
 /**
  * Regex finder when the target is not a plain {@link BundlePatch.find} string.
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
  */
 export interface BundlePatchRegex {
   /**
    * JavaScript regex pattern source (without surrounding `/` delimiters).
    * Capture groups may be referenced from {@link BundlePatch.code} as `$1`, `$2`, …
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   pattern: string;
   /**
    * Optional regex flags (for example `"g"` or `"m"`).
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   flags?: string;
 }
@@ -102,40 +96,34 @@ export interface BundlePatchRegex {
  * ]
  * ```
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
  */
 export interface BundlePatch {
   /**
    * Compiled bundle to modify.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   file: PatchTargetFile;
   /**
    * Exact source substring to locate in the bundle.
    * Mutually exclusive with {@link regex} in typical patches.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   find?: string;
   /**
    * Replacement or inserted source text.
    * Official examples use `code`; some loaders also accept {@link replace}.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   code?: string;
   /**
    * Alias of {@link code} used by some patch loaders and workshop mods.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   replace?: string;
   /**
    * How to apply the match. Defaults to replace-style behaviour when omitted
    * in common workshop patches.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   operation?: PatchOperation;
   /**
@@ -143,31 +131,26 @@ export interface BundlePatch {
    * Use a number (often `1`) so the load fails on miss or over-match.
    * Some loaders accept `"any"`.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   expectedMatches?: number | "any";
   /**
    * Regex-based locator instead of a literal {@link find} string.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   regex?: BundlePatchRegex;
   /**
    * Text inserted before the match when {@link operation} is `"wrap"`.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   before?: string;
   /**
    * Text inserted after the match when {@link operation} is `"wrap"`.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   after?: string;
   /**
    * Optional stable id for logging and tooling.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   id?: string;
   /**
@@ -181,7 +164,6 @@ export interface BundlePatch {
    * `"all"` (default when omitted in the loader) or a 1-based index.
    * Must not exceed {@link expectedMatches} when both are numbers.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
    */
   occurrence?: number | "all";
   /**
@@ -212,6 +194,5 @@ export interface BundlePatchesDocument {
  * Root shape of `patches.json`: a bare {@link BundlePatch} array (game format),
  * or a {@link BundlePatchesDocument} object when the file includes `$schema`.
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#patches-heading)
  */
 export type BundlePatchesFile = BundlePatch[] | BundlePatchesDocument;

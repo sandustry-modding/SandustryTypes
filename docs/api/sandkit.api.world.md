@@ -4,21 +4,13 @@
 
 Use [grid](api/sandkit.api.grid.md) instead.
 
-## See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
-## Namespaces <!-- {docsify-ignore} -->
-
-- [~~pickups~~](api/sandkit.api.world.pickups.md)
-
 ## Functions <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.world.runWhenSimulationIdle~~ :id=runwhensimulationidle
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L66" target="_blank" rel="noopener">world.d.ts:66</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L54" target="_blank" rel="noopener">world.d.ts:54</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.world.runWhenSimulationIdle(callback: () =&gt; void): void">
 
@@ -42,17 +34,13 @@ runWhenSimulationIdle(callback: () => void): void
 
 Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.world.redrawAroundCellWhenIdle~~ :id=redrawaroundcellwhenidle
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L73" target="_blank" rel="noopener">world.d.ts:73</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L60" target="_blank" rel="noopener">world.d.ts:60</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.world.redrawAroundCellWhenIdle(...args: [number, number, number]): void">
 
@@ -75,9 +63,5 @@ redrawAroundCellWhenIdle(...args: [number, number, number]): void
 #### Deprecated
 
 Use [grid.redrawAroundCell](api/sandkit.api.grid.md?id=redrawaroundcell) instead.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

@@ -21,7 +21,6 @@ export namespace structures {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function forEachOfType(
     structureTypeOrId: StructureRef,
@@ -34,7 +33,6 @@ export namespace structures {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getAtCell(...args: CellCoordinates): Structure | null;
 
@@ -43,7 +41,6 @@ export namespace structures {
    *
    * @param structureType - Structure type value or string id.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDefinitionByType(structureType: StructureRef): any;
 
@@ -52,14 +49,12 @@ export namespace structures {
    *
    * @param structureId - Structure string id.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getTypeById(structureId: StructureId): StructureType;
 
   /**
    * @deprecated Use {@link getTypeById} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getTypeFromId(structureId: StructureId): StructureType;
 
@@ -69,7 +64,6 @@ export namespace structures {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function hasBuiltAtCell(...args: CellCoordinates): boolean;
 
@@ -79,7 +73,6 @@ export namespace structures {
    * @param structure - Structure instance, or null.
    * @param structureId - Structure string id to compare.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isType(structure: Structure | null, structureId: StructureId): boolean;
 
@@ -90,7 +83,6 @@ export namespace structures {
    * @param cellY - Grid row of the target cell.
    * @param structureId - Structure string id to compare.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isTypeAtCell(...args: [...CellCoordinates, structureId: StructureId]): boolean;
 
@@ -100,7 +92,6 @@ export namespace structures {
    * @param structure - Target structure instance.
    * @param index - Spritesheet frame index.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setSpritesheetIndex(structure: Structure, index: number): void;
 
@@ -111,7 +102,6 @@ export namespace structures {
    * @param cellY - Grid row of the target cell.
    * @param index - Spritesheet frame index.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setSpritesheetIndexAtCell(...args: [...CellCoordinates, index: number]): void;
 
@@ -122,7 +112,6 @@ export namespace structures {
    * @param value - Numeric value mapped through thresholds.
    * @param thresholds - Ascending threshold values.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setSpritesheetIndexByValue(
     structure: Structure,
@@ -138,7 +127,6 @@ export namespace structures {
    * @param value - Numeric value mapped through thresholds.
    * @param thresholds - Ascending threshold values.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setSpritesheetIndexByValueAtCell(
     ...args: [...CellCoordinates, value: number, thresholds: number[]]
@@ -155,7 +143,6 @@ export namespace structures {
    * api.structures.update(structure, { propagateToWorkers: true });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function update(structure: Structure, options?: { propagateToWorkers?: boolean }): void;
 
@@ -175,7 +162,6 @@ export namespace structures {
    * );
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function updateData(
     structure: Structure,
@@ -186,7 +172,6 @@ export namespace structures {
   /**
    * @deprecated Use {@link updateData} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setData(
     structure: Structure,
@@ -202,14 +187,12 @@ export namespace structures {
      * @param cellX - Grid column of the target cell.
      * @param cellY - Grid row of the target cell.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function isEnabledAtCell(...args: CellCoordinates): boolean;
 
     /**
      * @deprecated Use {@link isEnabledAtCell} instead.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function isEnabledAt(...args: CellCoordinates): boolean;
   }

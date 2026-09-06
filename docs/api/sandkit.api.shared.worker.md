@@ -11,7 +11,3 @@ Workers **require** buffers created on the main thread. Main thread only
 
  Worker extension of shared; not interchangeable with
 main-thread `sandkit.api.shared`.
-
-## Namespaces <!-- {docsify-ignore} -->
-
-- [buffers](api/sandkit.api.shared.buffers.worker.md)

@@ -17,7 +17,6 @@ export namespace terrains {
   /**
    * @deprecated Use {@link getTypeById} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getTypeFromId = shared.api.terrains.getTypeFromId;
   /** Look up the definition for a terrain type. */
@@ -50,7 +49,6 @@ export namespace terrains {
   /**
    * Terrain definition shape with typed element interactions.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export interface TerrainDefinition extends Omit<
     shared.api.terrains.TerrainDefinition,
@@ -66,7 +64,6 @@ export namespace terrains {
    * @param definition - Terrain definition to register.
    * @returns Object with the assigned `cellType`.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function register(definition: TerrainDefinition): { cellType: TerrainType };
 
@@ -76,7 +73,6 @@ export namespace terrains {
    * @param cellTypeOrId - Numeric cell type or terrain string id.
    * @param partial - Fields to merge onto the definition.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function updateDefinition(
     cellTypeOrId: TerrainRef,
@@ -91,7 +87,6 @@ export namespace terrains {
    * @param terrainTypeOrId - Numeric cell type or terrain string id.
    * @param options - Optional mutation flags.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function createAtCell(
     ...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]
@@ -100,7 +95,6 @@ export namespace terrains {
   /**
    * @deprecated Use {@link createAtCell} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function createAtCellWhenIdle(
     ...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]
@@ -114,7 +108,6 @@ export namespace terrains {
    * @param terrainTypeOrId - Numeric cell type or terrain string id.
    * @param options - Optional mutation flags.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function replaceAtCell(
     ...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]
@@ -123,7 +116,6 @@ export namespace terrains {
   /**
    * @deprecated Use {@link replaceAtCell} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function replaceAtCellWhenIdle(
     ...args: [...CellCoordinates, terrainTypeOrId: TerrainRef, options?: TerrainMutationOptions]
@@ -136,7 +128,6 @@ export namespace terrains {
    * @param cellY - Grid row of the target cell.
    * @param options - Optional mutation flags.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function removeAtCell(
     ...args: [...CellCoordinates, options?: TerrainMutationOptions]
@@ -145,7 +136,6 @@ export namespace terrains {
   /**
    * @deprecated Use {@link removeAtCell} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function removeAtCellWhenIdle(
     ...args: [...CellCoordinates, options?: TerrainMutationOptions]
@@ -158,21 +148,18 @@ export namespace terrains {
    * @param cellY - Grid row of the target cell.
    * @param hitPoints - New hit point value.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setHitPointsAtCell(...args: [...CellCoordinates, hitPoints: number]): void;
 
   /**
    * @deprecated Use {@link setHitPointsAtCell} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setHpAtCell(...args: [...CellCoordinates, hitPoints: number]): boolean;
 
   /**
    * @deprecated Use {@link setHitPointsAtCell} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setHpAtCellWhenIdle(...args: [...CellCoordinates, hitPoints: number]): void;
 }

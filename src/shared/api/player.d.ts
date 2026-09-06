@@ -11,14 +11,12 @@ export namespace player {
    *
    * @returns World position as `{ x, y }` in pixels.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getPositionAtWorld(): Vector2;
 
   /**
    * @deprecated Use {@link getPositionAtWorld} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getWorldPosition(): Vector2;
 
@@ -29,7 +27,6 @@ export namespace player {
    * @param cellY - Grid row of the cell.
    * @returns True when the player overlaps the cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isCollidingWithCell(...args: CellCoordinates): boolean;
 
@@ -41,7 +38,6 @@ export namespace player {
    * @param radius - Maximum distance in cells (inclusive).
    * @returns True when the player is inside the radius.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isWithinRadiusOfCell(...args: [...CellCoordinates, radius: number]): boolean;
 }

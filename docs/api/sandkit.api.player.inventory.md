@@ -8,7 +8,7 @@ Player inventory helpers.
 
 ### sandkit.api.player.inventory.addById :id=addbyid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L117" target="_blank" rel="noopener">player.d.ts:117</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L106" target="_blank" rel="noopener">player.d.ts:106</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.inventory.addById(itemId: string): void">
 
@@ -30,17 +30,13 @@ addById(itemId: string): void
 
 Add an item to inventory by item id.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.player.inventory.addFromId~~ :id=addfromid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L124" target="_blank" rel="noopener">player.d.ts:124</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L112" target="_blank" rel="noopener">player.d.ts:112</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.inventory.addFromId(itemId: string): void">
 
@@ -63,9 +59,5 @@ addFromId(itemId: string): void
 #### Deprecated
 
 Use [addById](?id=addbyid) instead.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

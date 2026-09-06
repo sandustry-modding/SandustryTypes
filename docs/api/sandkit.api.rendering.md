@@ -36,7 +36,7 @@ Return screen draw position for a grid cell.
 
 ### sandkit.api.rendering.getDrawPositionAtWorld :id=getdrawpositionatworld
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L33" target="_blank" rel="noopener">rendering.d.ts:33</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L32" target="_blank" rel="noopener">rendering.d.ts:32</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.rendering.getDrawPositionAtWorld(worldX: number, worldY: number): Vector2">
 
@@ -72,17 +72,13 @@ api.events.on("frame:render", () => {
 });
 ```
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.rendering.getGridMetrics :id=getgridmetrics
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L42" target="_blank" rel="noopener">rendering.d.ts:42</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L41" target="_blank" rel="noopener">rendering.d.ts:41</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.rendering.getGridMetrics(): object">
 
@@ -108,7 +104,7 @@ const { cellSize, snapGridCellSize } = api.rendering.getGridMetrics();
 
 ### sandkit.api.rendering.getOverlayViewportSize :id=getoverlayviewportsize
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L44" target="_blank" rel="noopener">rendering.d.ts:44</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L43" target="_blank" rel="noopener">rendering.d.ts:43</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.rendering.getOverlayViewportSize(): object">
 
@@ -128,7 +124,7 @@ width: number height: number
 
 ### sandkit.api.rendering.withOverlayContext :id=withoverlaycontext
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L56" target="_blank" rel="noopener">rendering.d.ts:56</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L55" target="_blank" rel="noopener">rendering.d.ts:55</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.rendering.withOverlayContext&lt;T&gt;(callback: (context: CanvasRenderingContext2D) =&gt; T): T">
 

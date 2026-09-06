@@ -8,7 +8,7 @@ Structure processing enablement checks.
 
 ### sandkit.api.structures.processing.isEnabledAtCell :id=isenabledatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L207" target="_blank" rel="noopener">structures.d.ts:207</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L191" target="_blank" rel="noopener">structures.d.ts:191</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.structures.processing.isEnabledAtCell(...args: CellCoordinates): boolean">
 
@@ -30,17 +30,13 @@ isEnabledAtCell(...args: CellCoordinates): boolean
 
 Return true when processing is enabled at the cell.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.structures.processing.isEnabledAt~~ :id=isenabledat
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L214" target="_blank" rel="noopener">structures.d.ts:214</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L197" target="_blank" rel="noopener">structures.d.ts:197</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.structures.processing.isEnabledAt(...args: CellCoordinates): boolean">
 
@@ -63,9 +59,5 @@ isEnabledAt(...args: CellCoordinates): boolean
 #### Deprecated
 
 Use [isEnabledAtCell](?id=isenabledatcell) instead.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

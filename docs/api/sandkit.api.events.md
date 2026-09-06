@@ -9,7 +9,7 @@ Main thread only. The `events` object is frozen; do not replace `on` or `emit`.
 
 ### sandkit.api.events.PlayerCollisionPreparePayload :id=playercollisionpreparepayload
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L177" target="_blank" rel="noopener">events.d.ts:177</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L175" target="_blank" rel="noopener">events.d.ts:175</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -36,7 +36,7 @@ Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
 
 ### sandkit.api.events.EventPayloadMap :id=eventpayloadmap
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L187" target="_blank" rel="noopener">events.d.ts:187</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L185" target="_blank" rel="noopener">events.d.ts:185</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -127,7 +127,7 @@ Known event payloads. Unlisted ids still use `unknown`.
 
 ### sandkit.api.events.EventId :id=eventid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L287" target="_blank" rel="noopener">events.d.ts:287</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L285" target="_blank" rel="noopener">events.d.ts:285</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.events.EventId = LooseString&lt;keyof EventPayloadMap&gt;">
 
@@ -145,7 +145,7 @@ Known event names plus any custom string id.
 
 ### sandkit.api.events.EventPayload :id=eventpayload
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L290" target="_blank" rel="noopener">events.d.ts:290</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L288" target="_blank" rel="noopener">events.d.ts:288</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.events.EventPayload&lt;K&gt; = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown">
 
@@ -171,7 +171,7 @@ Event payload type for a given event id.
 
 ### sandkit.api.events.on :id=on
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L158" target="_blank" rel="noopener">events.d.ts:158</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L157" target="_blank" rel="noopener">events.d.ts:157</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.events.on&lt;K *extends* EventId&gt;(eventId: K, callback: (payload: EventPayload&lt;K&gt;) =&gt; void): () =&gt; void">
 
@@ -368,17 +368,13 @@ api.events.on("resource:collected", (payload) => {
 });
 ```
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.events.emit :id=emit
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L171" target="_blank" rel="noopener">events.d.ts:171</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L169" target="_blank" rel="noopener">events.d.ts:169</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.events.emit&lt;K *extends* EventId&gt;(eventId: K, payload: EventPayload&lt;K&gt;): void">
 
@@ -408,9 +404,5 @@ Emits an event with a payload to all subscribers.
 ##### K
 
 `K` *extends* [`EventId`](?id=eventid)
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

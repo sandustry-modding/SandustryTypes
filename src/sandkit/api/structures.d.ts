@@ -103,14 +103,12 @@ export namespace structures {
   /**
    * @deprecated Use {@link getTypeById} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getTypeFromId = shared.api.structures.getTypeFromId;
 
   /**
    * @deprecated Use {@link updateData} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import setData = shared.api.structures.setData;
 
@@ -147,7 +145,6 @@ export namespace structures {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function register(
     definition: SandkitStructureDefinition,
@@ -172,7 +169,6 @@ export namespace structures {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function updateDefinition(
     structureTypeOrId: StructureRef,
@@ -205,7 +201,6 @@ export namespace structures {
    * );
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function registerVariant(
     baseStructureTypeOrId: StructureRef,
@@ -216,7 +211,6 @@ export namespace structures {
   /**
    * @deprecated Use {@link registerVariant} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function addVariant(
     baseStructureTypeOrId: StructureRef,
@@ -256,21 +250,18 @@ export namespace structures {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function registerPlacementConfig(definition: PlacementConfigDefinition): void;
 
   /**
    * Return structure types available for building.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getAvailableTypes(): Set<StructureRef>;
 
   /**
    * @deprecated Use {@link getAvailableTypes} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getUnlockedTypes(): Set<StructureRef>;
 
@@ -280,7 +271,6 @@ export namespace structures {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isBlockedByPlayerAtCell(...args: CellCoordinates): boolean;
 
@@ -290,7 +280,6 @@ export namespace structures {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isLauncherAtCell(...args: CellCoordinates): boolean;
 
@@ -302,14 +291,12 @@ export namespace structures {
    *
    * @param structureType - Structure type value or string id.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isLockedByType(structureType: StructureRef): boolean;
 
   /**
    * @deprecated Use {@link isLockedByType} instead. Same function as {@link isLockedByType}; return value is not inverted.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isUnlockedByType(structureType: StructureRef): boolean;
 
@@ -328,7 +315,6 @@ export namespace structures {
    * );
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function mapValueToSpritesheetIndex(value: number, thresholds: number[]): number;
 
@@ -340,7 +326,6 @@ export namespace structures {
    * @param structureTypeOrId - Structure type or string id to build.
    * @param options - Optional build overrides.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function buildAtCell(
     ...args: [...CellCoordinates, structureTypeOrId: StructureRef, options?: StructureBuildOptions]
@@ -349,7 +334,6 @@ export namespace structures {
   /**
    * @deprecated Use {@link buildAtCell} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function buildAtCellWhenIdle(
     ...args: [...CellCoordinates, structureTypeOrId: StructureRef, options?: StructureBuildOptions]
@@ -362,7 +346,6 @@ export namespace structures {
    * @param cellY - Grid row of the target cell.
    * @param options - Optional removal flags.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function removeAtCell(
     ...args: [...CellCoordinates, options?: StructureRemovalOptions]
@@ -371,7 +354,6 @@ export namespace structures {
   /**
    * @deprecated Use {@link removeAtCell} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function removeAtCellWhenIdle(
     ...args: [...CellCoordinates, options?: StructureRemovalOptions]
@@ -386,7 +368,6 @@ export namespace structures {
    * @param endCellY - End cell row.
    * @param options - Optional bulk-removal flags.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function removeBetweenCells(
     startCellX: number,
@@ -399,7 +380,6 @@ export namespace structures {
   /**
    * @deprecated Use {@link removeBetweenCells} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function removeBetweenCellsWhenIdle(
     startCellX: number,
@@ -423,14 +403,12 @@ export namespace structures {
    * ]);
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void;
 
   /**
    * @deprecated Use {@link removeAtCells} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function removeAtCellsWhenIdle(
     positions: Vector2[],
@@ -440,7 +418,6 @@ export namespace structures {
   /**
    * @deprecated Use {@link processing.register} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function addProcessor(
     structureId: StructureRef,
@@ -466,7 +443,6 @@ export namespace structures {
      * });
      * ```
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function register(id: "planterBox", definition: PlanterBoxRecipeDefinitionV1): void;
 
@@ -476,7 +452,6 @@ export namespace structures {
      * @param id - Machine recipe slot id.
      * @param definition - Shaker recipe definition.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function register(id: "shaker", definition: ShakerRecipeDefinitionV1): void;
 
@@ -486,7 +461,6 @@ export namespace structures {
      * @param id - Machine recipe slot id.
      * @param definition - Kinetic press recipe definition.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function register(id: "kineticPress", definition: KineticPressRecipeDefinitionV1): void;
 
@@ -496,7 +470,6 @@ export namespace structures {
      * @param id - Refinery machine id.
      * @param definition - Weighted input/output recipe.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function register(
       id: "condenser" | "steamDryer" | "synthesizer" | "snowmaker" | "smelter",
@@ -512,7 +485,6 @@ export namespace structures {
     /**
      * @deprecated Use {@link isEnabledAtCell} instead.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export import isEnabledAt = shared.api.structures.processing.isEnabledAt;
 
@@ -539,7 +511,6 @@ export namespace structures {
      * );
      * ```
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function register(id: StructureId, definition: StructureProcessingDefinitionV1): void;
 
@@ -551,14 +522,12 @@ export namespace structures {
      * @param enabled - Desired processing enabled state.
      * @returns True when the enabled state changed.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function setEnabledAtCell(...args: [...CellCoordinates, enabled: boolean]): boolean;
 
     /**
      * @deprecated Use {@link setEnabledAtCell} instead.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function setEnabledAt(...args: [...CellCoordinates, enabled: boolean]): boolean;
   }
@@ -570,7 +539,6 @@ export namespace structures {
     /**
      * Fixed span length in tiles for line-linked structures.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     spanTiles?: number;
   }
@@ -607,7 +575,6 @@ export namespace structures {
    * }
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export interface StructureTooltipHover {
     type: "custom";
@@ -676,13 +643,11 @@ export namespace structures {
     /**
      * Linked placement clearance mode (for example `"allOrNothing"`).
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     linkedClearance?: string;
     /**
      * Custom hover tooltip over the built structure.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     tooltipHover?: StructureTooltipHover;
     /** Reject placement when the footprint is blocked. */
@@ -719,34 +684,29 @@ export namespace structures {
   /**
    * Context passed to structure processing callbacks.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export interface StructureProcessingContext {
     /**
      * Return the resolved element type at a cell, or null.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     getResolvedTypeAtCell(...args: CellCoordinates): elements.ElementType | null;
 
     /**
      * @deprecated Use {@link getResolvedTypeAtCell} instead.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     getElementTypeAtCell(...args: CellCoordinates): elements.ElementType | null;
 
     /**
      * Return true when the cell has no element or terrain.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     isCellEmptyAtCell(...args: CellCoordinates): boolean;
 
     /**
      * @deprecated Use {@link isCellEmptyAtCell} instead.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     isCellEmpty(...args: CellCoordinates): boolean;
 
@@ -755,7 +715,6 @@ export namespace structures {
      *
      * @param mutations - Mutation writer payload accepted by the runtime.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     commit(mutations: unknown): void;
   }
@@ -763,7 +722,6 @@ export namespace structures {
   /**
    * @deprecated Use {@link StructureProcessingDefinitionV1} with {@link processing.register} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export interface StructureProcessorDefinitionV1 {
     /** Tick interval in milliseconds. Must be > 0. */

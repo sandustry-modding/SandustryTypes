@@ -21,7 +21,6 @@ export namespace effects {
    * @param worldY - World y position in pixels.
    * @param options - Duration, radius, and intensity settings.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function createAtWorld(
     effectId: string,
@@ -33,7 +32,6 @@ export namespace effects {
   /**
    * @deprecated Use {@link createAtWorld} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function createEffectAtWorld(
     effectId: string,
@@ -54,7 +52,6 @@ export namespace effects {
    * api.effects.createParticlesAtWorld(worldX, worldY, { count: 8 });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import createParticlesAtWorld = shared.api.effects.createParticlesAtWorld;
 }

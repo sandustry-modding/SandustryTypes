@@ -12,7 +12,6 @@ export namespace sound {
    * @param soundId - Registered sound identifier.
    * @param options - Volume, position, playback rate, and rate-limit options.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function play(soundId: string, options?: SoundOptions): SoundHandle;
 
@@ -22,7 +21,6 @@ export namespace sound {
    * @param soundId - Registered sound identifier.
    * @param options - Volume, position, playback rate, and rate-limit options.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function playActive(soundId: string, options?: SoundOptions): SoundHandle;
 
@@ -32,7 +30,6 @@ export namespace sound {
    * @param layers - Layer definitions (sound id, volume, delay, and per-layer options).
    * @param options - Shared position, volume, and rate-limit options for all layers.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[];
 
@@ -43,7 +40,6 @@ export namespace sound {
    * @param worldY - World Y coordinate in pixels.
    * @param baseVolume - Base volume before distance attenuation.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function calculateDistanceOptionsAtWorld(
     worldX: number,
@@ -56,28 +52,24 @@ export namespace sound {
    *
    * @param soundId - Registered sound identifier to stop.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function stopBySoundId(soundId: string): void;
 
   /**
    * @deprecated Use {@link stopBySoundId} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function stopById(soundId: string): void;
 
   /**
    * Stop the active sound channel.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function stopActive(): void;
 
   /**
    * Stop all playing sounds.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function stopAll(): void;
 

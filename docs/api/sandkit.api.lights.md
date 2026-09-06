@@ -3,18 +3,13 @@
 `sandkit.api.lights` — temporary lights and persistent world lights.
 Main thread only.
 
-## Namespaces <!-- {docsify-ignore} -->
-
-- [temporary](api/sandkit.api.lights.temporary.md)
-- [persistent](api/sandkit.api.lights.persistent.md)
-
 ## Interfaces <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">
 
 ### sandkit.api.lights.TemporaryLightHandle :id=temporarylighthandle
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L129" target="_blank" rel="noopener">lights.d.ts:129</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L122" target="_blank" rel="noopener">lights.d.ts:122</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -37,7 +32,7 @@ Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.
 
 ### sandkit.api.lights.PersistentLightOptions :id=persistentlightoptions
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L144" target="_blank" rel="noopener">lights.d.ts:144</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L136" target="_blank" rel="noopener">lights.d.ts:136</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -71,7 +66,7 @@ Options for persistent world lights.
 
 ### sandkit.api.lights.TemporaryLightOptions :id=temporarylightoptions
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L141" target="_blank" rel="noopener">lights.d.ts:141</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L133" target="_blank" rel="noopener">lights.d.ts:133</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.lights.TemporaryLightOptions = TemporaryLightOptions">
 
@@ -89,7 +84,7 @@ Options for temporary lights.
 
 ### sandkit.api.lights.PersistentLightHandle :id=persistentlighthandle
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L155" target="_blank" rel="noopener">lights.d.ts:155</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L147" target="_blank" rel="noopener">lights.d.ts:147</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.lights.PersistentLightHandle = unknown">
 

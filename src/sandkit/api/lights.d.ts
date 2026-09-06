@@ -38,7 +38,6 @@ export namespace lights {
      * });
      * ```
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function createAtWorld(
       worldX: number,
@@ -58,7 +57,6 @@ export namespace lights {
      * }
      * ```
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function removeById(lightId: number): void;
   }
@@ -66,7 +64,6 @@ export namespace lights {
   /**
    * @deprecated Use {@link temporary} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import vfx = temporary;
 
@@ -88,7 +85,6 @@ export namespace lights {
      * );
      * ```
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function createAtWorld(
       worldX: number,
@@ -102,7 +98,6 @@ export namespace lights {
      * @param worldX - World X coordinate in pixels.
      * @param worldY - World Y coordinate in pixels.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function removeAtWorld(worldX: number, worldY: number): void;
 
@@ -113,14 +108,12 @@ export namespace lights {
      * @param worldY - World Y coordinate in pixels.
      * @param durationMs - Fade duration in milliseconds.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void;
 
     /**
      * Mark persistent lights dirty so they are saved on the next flush.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function markDirty(): void;
   }
@@ -132,7 +125,6 @@ export namespace lights {
     /**
      * @deprecated Use {@link lightId} instead.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     index: number | null;
   }

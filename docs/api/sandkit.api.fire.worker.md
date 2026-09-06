@@ -14,7 +14,7 @@ Worker burns are immediate. Main thread defers burns with `burnElementAtCell`.
 
 ### sandkit.api.fire.canBurnElementAtCell :id=canburnelementatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L19" target="_blank" rel="noopener">fire.d.ts:19</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L18" target="_blank" rel="noopener">fire.d.ts:18</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.fire.canBurnElementAtCell(...args: CellCoordinates): boolean">
 
@@ -36,17 +36,13 @@ canBurnElementAtCell(...args: CellCoordinates): boolean
 
 Return true when the element at the cell can burn.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.fire.burnElementAtCell :id=burnelementatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L30" target="_blank" rel="noopener">fire.d.ts:30</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L28" target="_blank" rel="noopener">fire.d.ts:28</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.fire.burnElementAtCell(...args: CellCoordinates): boolean">
 
@@ -69,9 +65,5 @@ burnElementAtCell(...args: CellCoordinates): boolean
 Burn the element at the cell immediately on this worker.
 
 True when the burn succeeded.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 </div>

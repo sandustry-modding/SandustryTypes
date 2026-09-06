@@ -78,7 +78,6 @@ export namespace hooks {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function intercept<K extends InterceptHookId>(
     hookId: K,
@@ -100,7 +99,6 @@ export namespace hooks {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function modify<K extends ModifyHookId>(
     hookId: K,

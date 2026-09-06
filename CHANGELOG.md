@@ -24,6 +24,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - TypeDoc `References` re-export lists at the bottom of generated API pages
+- TypeDoc `Namespaces` child lists at the top of generated API pages
+  Child namespaces stay in the sidebar.
+- TypeDoc `See` headings that only link Official docs.
 - `docs/modules.md` alias page.
   Old `#/modules` URLs still open Search.
 - Accidental `docs/api/_media.search.md` copy of the Search page.

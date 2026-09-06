@@ -14,7 +14,7 @@ Temporary lights live under [lights.temporary](api/sandkit.api.lights.temporary.
 
 ### sandkit.api.effects.createAtWorld :id=createatworld
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L26" target="_blank" rel="noopener">effects.d.ts:26</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L25" target="_blank" rel="noopener">effects.d.ts:25</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.effects.createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void">
 
@@ -45,17 +45,13 @@ createAtWorld(effectId: string, worldX: number, worldY: number, options?: Effect
 
 Spawn a named screen-space or world effect.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.effects.createEffectAtWorld~~ :id=createeffectatworld
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L38" target="_blank" rel="noopener">effects.d.ts:38</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L36" target="_blank" rel="noopener">effects.d.ts:36</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void">
 
@@ -87,9 +83,5 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 #### Deprecated
 
 Use [createAtWorld](?id=createatworld) instead.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

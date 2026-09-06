@@ -3,7 +3,6 @@
  *
  * Available as `sandkit.api.entities`.
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
  */
 export namespace entities {
   /**
@@ -11,7 +10,6 @@ export namespace entities {
    *
    * @param entityId - Runtime entity id.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getById(entityId: number): Entity | undefined;
 
@@ -20,7 +18,6 @@ export namespace entities {
    *
    * @param entityTypeId - Registered entity type string id.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getAllByType(entityTypeId: string): Entity[];
 
@@ -32,7 +29,6 @@ export namespace entities {
    * @param worldY - Spawn y position in world pixels.
    * @returns The spawned entity instance.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity;
 
@@ -41,7 +37,6 @@ export namespace entities {
    *
    * @param entityId - Runtime entity id.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function remove(entityId: number): void;
 
@@ -52,7 +47,6 @@ export namespace entities {
    * @param angleRadians - Launch angle in radians.
    * @param speed - Optional launch speed.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function launch(entityId: number, angleRadians: number, speed?: number): void;
 
@@ -61,7 +55,6 @@ export namespace entities {
    *
    * @param entityId - Runtime entity id.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function startCapture(entityId: number): void;
 
@@ -70,7 +63,6 @@ export namespace entities {
    *
    * @param entityId - Runtime entity id.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function collect(entityId: number): void;
 

@@ -35,7 +35,6 @@ export type WorkerSandkitApi = {
   /**
    * @deprecated Use {@link grid} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   world: typeof import("./api/grid").world;
 };

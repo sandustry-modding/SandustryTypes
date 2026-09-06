@@ -8,7 +8,7 @@ Shared buffer ensure and lookup.
 
 ### sandkit.api.shared.buffers.ensure :id=ensure
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L30" target="_blank" rel="noopener">shared.d.ts:30</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L29" target="_blank" rel="noopener">shared.d.ts:29</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.shared.buffers.ensure(key: string, config: object): SharedArray">
 
@@ -44,17 +44,13 @@ const counts = api.shared.buffers.ensure("counts", {
 });
 ```
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.shared.buffers.create~~ :id=create
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L40" target="_blank" rel="noopener">shared.d.ts:40</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L38" target="_blank" rel="noopener">shared.d.ts:38</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.shared.buffers.create(key: string, config: object): SharedArray">
 
@@ -83,17 +79,13 @@ create(key: string, config: object): SharedArray
 
 Use [ensure](?id=ensure) instead.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.shared.buffers.get :id=get
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L20" target="_blank" rel="noopener">shared.d.ts:20</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L19" target="_blank" rel="noopener">shared.d.ts:19</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.shared.buffers.get(key: string): SharedArray | undefined">
 
@@ -116,9 +108,5 @@ get(key: string): SharedArray | undefined
 Look up a named shared buffer without creating it.
 
 [`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) \| `undefined` The typed array, or `undefined` when the buffer does not exist.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

@@ -14,7 +14,6 @@ export namespace tech {
    *
    * @param techId - Tech entry identifier.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDefinitionById(techId: TechGridId): TechDefinition | undefined;
 
@@ -31,7 +30,6 @@ export namespace tech {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void;
 
@@ -52,14 +50,12 @@ export namespace tech {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function registerDefinition(techId: TechGridId, definition: TechDefinition): void;
 
   /**
    * @deprecated Use {@link registerDefinition} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function addDefinition(techId: TechGridId, definition: TechDefinition): void;
 
@@ -79,7 +75,6 @@ export namespace tech {
    * );
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function registerNode(
     techId: TechGridId,
@@ -92,7 +87,6 @@ export namespace tech {
    *
    * @param techId - Tech entry id (string or numeric enum).
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isLockedById(techId: TechGridId): boolean;
 
@@ -102,7 +96,6 @@ export namespace tech {
    * @param techId - Tech entry id (string or numeric enum).
    * @param locked - When true, the tech cannot be purchased.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function setLockedById(techId: TechGridId, locked: boolean): void;
 
@@ -111,7 +104,6 @@ export namespace tech {
    *
    * @param techId - Tech entry id (string or numeric enum).
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isResearchedById(techId: TechGridId): boolean;
 
@@ -130,7 +122,6 @@ export namespace tech {
      * });
      * ```
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function appendUnlock(techId: TechGridId, unlocks: ConservatoryUnlocks): void;
   }
@@ -154,7 +145,6 @@ export namespace tech {
     /**
      * Research cost.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     cost?: number;
     /** Currency used for {@link cost} (for example `"gold"`). */

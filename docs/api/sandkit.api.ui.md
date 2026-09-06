@@ -108,11 +108,6 @@ api.ui.useGameEvent("resource:collected", (payload) => {
 });
 ```
 
-## Namespaces <!-- {docsify-ignore} -->
-
-- [overlays](api/sandkit.api.ui.overlays.md)
-- [navigation](api/sandkit.api.ui.navigation.md)
-
 ## Interfaces <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">

@@ -4,17 +4,13 @@ Entity spawn, capture, and lifecycle helpers.
 
 Available as `sandkit.api.entities`.
 
-## See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 ## Interfaces <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">
 
 ### sandkit.api.entities.Entity :id=entity
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L78" target="_blank" rel="noopener">entities.d.ts:78</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L70" target="_blank" rel="noopener">entities.d.ts:70</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -54,7 +50,7 @@ Active entity instance in the world.
 
 ### sandkit.api.entities.getById :id=getbyid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L16" target="_blank" rel="noopener">entities.d.ts:16</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L14" target="_blank" rel="noopener">entities.d.ts:14</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.entities.getById(entityId: number): Entity | undefined">
 
@@ -78,17 +74,13 @@ Return one live entity by runtime id.
 
 [`Entity`](?id=entity) \| `undefined`
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.entities.getAllByType :id=getallbytype
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L25" target="_blank" rel="noopener">entities.d.ts:25</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L22" target="_blank" rel="noopener">entities.d.ts:22</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.entities.getAllByType(entityTypeId: string): Entity[]">
 
@@ -112,17 +104,13 @@ Return all live entities of one type.
 
 [`Entity`](?id=entity)[]
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.entities.spawnAtWorld :id=spawnatworld
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L37" target="_blank" rel="noopener">entities.d.ts:37</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L33" target="_blank" rel="noopener">entities.d.ts:33</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.entities.spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity">
 
@@ -152,17 +140,13 @@ Spawn an entity at world position.
 
 [`Entity`](?id=entity) The spawned entity instance.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.entities.remove :id=remove
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L46" target="_blank" rel="noopener">entities.d.ts:46</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L41" target="_blank" rel="noopener">entities.d.ts:41</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.entities.remove(entityId: number): void">
 
@@ -184,17 +168,13 @@ remove(entityId: number): void
 
 Remove an entity from the world.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.entities.launch :id=launch
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L57" target="_blank" rel="noopener">entities.d.ts:57</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L51" target="_blank" rel="noopener">entities.d.ts:51</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.entities.launch(entityId: number, angleRadians: number, speed?: number): void">
 
@@ -222,17 +202,13 @@ launch(entityId: number, angleRadians: number, speed?: number): void
 
 Launch an entity with angle and optional speed.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.entities.startCapture :id=startcapture
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L66" target="_blank" rel="noopener">entities.d.ts:66</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L59" target="_blank" rel="noopener">entities.d.ts:59</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.entities.startCapture(entityId: number): void">
 
@@ -254,17 +230,13 @@ startCapture(entityId: number): void
 
 Start capture for an entity (for example vacuum capture).
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.entities.collect :id=collect
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L75" target="_blank" rel="noopener">entities.d.ts:75</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L67" target="_blank" rel="noopener">entities.d.ts:67</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.entities.collect(entityId: number): void">
 
@@ -285,9 +257,5 @@ collect(entityId: number): void
 </div>
 
 Collect an entity (for example into inventory or storage).
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

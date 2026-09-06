@@ -6,7 +6,7 @@
 
 ### sandkit.api.upgrades.UpgradeDefinition :id=upgradedefinition
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L54" target="_blank" rel="noopener">upgrades.d.ts:54</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L53" target="_blank" rel="noopener">upgrades.d.ts:53</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -41,7 +41,7 @@ Upgrade definition registered for an item.
 
 ### sandkit.api.upgrades.UpgradeCategoryDefinition :id=upgradecategorydefinition
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L70" target="_blank" rel="noopener">upgrades.d.ts:70</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L69" target="_blank" rel="noopener">upgrades.d.ts:69</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -224,7 +224,7 @@ Return the maximum available level for an upgrade.
 
 ### sandkit.api.upgrades.setLevelById :id=setlevelbyid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L51" target="_blank" rel="noopener">upgrades.d.ts:51</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L50" target="_blank" rel="noopener">upgrades.d.ts:50</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.upgrades.setLevelById(itemId: string, upgradeId: string, level: number): void">
 
@@ -251,9 +251,5 @@ setLevelById(itemId: string, upgradeId: string, level: number): void
 </div>
 
 Set the purchased level for an upgrade.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

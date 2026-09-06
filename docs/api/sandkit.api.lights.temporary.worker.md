@@ -2,17 +2,13 @@
 
 Short-lived visual effect lights.
 
-## See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 ## Interfaces <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">
 
 ### sandkit.api.lights.temporary.TemporaryLightHandle :id=temporarylighthandle
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L19" target="_blank" rel="noopener">lights.d.ts:19</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L18" target="_blank" rel="noopener">lights.d.ts:18</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -37,7 +33,7 @@ Handle returned by [createAtWorld](?id=createatworld).
 
 ### sandkit.api.lights.temporary.TemporaryLightOptions :id=temporarylightoptions
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L16" target="_blank" rel="noopener">lights.d.ts:16</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L15" target="_blank" rel="noopener">lights.d.ts:15</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.lights.temporary.TemporaryLightOptions = TemporaryLightOptions">
 
@@ -57,7 +53,7 @@ Options for [createAtWorld](?id=createatworld).
 
 ### sandkit.api.lights.temporary.createAtWorld :id=createatworld
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L47" target="_blank" rel="noopener">lights.d.ts:47</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L44" target="_blank" rel="noopener">lights.d.ts:44</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.lights.temporary.createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle">
 
@@ -97,9 +93,5 @@ const light = api.lights.temporary.createAtWorld(worldX, worldY, {
 });
 const lightId = light.lightId;
 ```
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

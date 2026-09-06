@@ -13,45 +13,6 @@ surface still differs by runtime.
 These declarations are best-effort stubs. There is no guarantee they are
 complete or correct.
 
-## Namespaces <!-- {docsify-ignore} -->
-
-- [augments](api/sandkit.engine.api.augments.md)
-- [auralite](api/sandkit.engine.api.auralite.md)
-- [blueprints](api/sandkit.engine.api.blueprints.md)
-- [clipboard](api/sandkit.engine.api.clipboard.md)
-- [colorPicker](api/sandkit.engine.api.colorPicker.md)
-- [coloringTool](api/sandkit.engine.api.coloringTool.md)
-- [conveyors](api/sandkit.engine.api.conveyors.md)
-- [debug](api/sandkit.engine.api.debug.md)
-- [drones](api/sandkit.engine.api.drones.md)
-- [entities](api/sandkit.engine.api.entities.md)
-- [extensions](api/sandkit.engine.api.extensions.md)
-- [factory](api/sandkit.engine.api.factory.md)
-- [foliage](api/sandkit.engine.api.foliage.md)
-- [foundationColorPicker](api/sandkit.engine.api.foundationColorPicker.md)
-- [game](api/sandkit.engine.api.game.md)
-- [heatTransfer](api/sandkit.engine.api.heatTransfer.md)
-- [launchers](api/sandkit.engine.api.launchers.md)
-- [lightColorPicker](api/sandkit.engine.api.lightColorPicker.md)
-- [matters](api/sandkit.engine.api.matters.md)
-- [misc](api/sandkit.engine.api.misc.md)
-- [portals](api/sandkit.engine.api.portals.md)
-- [prefabData](api/sandkit.engine.api.prefabData.md)
-- [prefabDecor](api/sandkit.engine.api.prefabDecor.md)
-- [prefabulator](api/sandkit.engine.api.prefabulator.md)
-- [prismaline](api/sandkit.engine.api.prismaline.md)
-- [prismite](api/sandkit.engine.api.prismite.md)
-- [queue](api/sandkit.engine.api.queue.md)
-- [shadows](api/sandkit.engine.api.shadows.md)
-- [strataform](api/sandkit.engine.api.strataform.md)
-- [swarmConsole](api/sandkit.engine.api.swarmConsole.md)
-- [sweeperDrone](api/sandkit.engine.api.sweeperDrone.md)
-- [teleportZones](api/sandkit.engine.api.teleportZones.md)
-- [tutorialBuild](api/sandkit.engine.api.tutorialBuild.md)
-- [usageTracker](api/sandkit.engine.api.usageTracker.md)
-- [wall](api/sandkit.engine.api.wall.md)
-- [workerLocal](api/sandkit.engine.api.workerLocal.md)
-
 ## Interfaces <!-- {docsify-ignore} -->
 
 ### sandkit.engine :id=sandkitengine

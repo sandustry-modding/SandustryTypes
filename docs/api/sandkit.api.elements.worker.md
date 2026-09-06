@@ -10,17 +10,13 @@ Worker-entry mutations apply immediately. Main thread defers matching helpers in
  Worker extension; not interchangeable with main-thread
 `sandkit.api.elements`.
 
-## See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 ## Functions <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.createAtCell :id=createatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L79" target="_blank" rel="noopener">elements.d.ts:79</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L76" target="_blank" rel="noopener">elements.d.ts:76</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void">
 
@@ -52,17 +48,13 @@ api.elements.createAtCell(cellX, cellY, "water", {
 });
 ```
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.replaceAtCell :id=replaceatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L93" target="_blank" rel="noopener">elements.d.ts:93</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L89" target="_blank" rel="noopener">elements.d.ts:89</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void">
 
@@ -84,17 +76,13 @@ replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 Replace the element at a cell immediately on this worker.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.removeAtCell :id=removeatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L106" target="_blank" rel="noopener">elements.d.ts:106</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L101" target="_blank" rel="noopener">elements.d.ts:101</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.removeAtCell(...args: number, number, [ElementRemovalOptions]): void">
 
@@ -116,17 +104,13 @@ removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 
 Remove the element at a cell immediately on this worker.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.moveBetweenCells :id=movebetweencells
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L121" target="_blank" rel="noopener">elements.d.ts:121</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L115" target="_blank" rel="noopener">elements.d.ts:115</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): boolean">
 
@@ -159,17 +143,13 @@ Move an element between cells immediately on this worker.
 
 True when the move succeeded.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.teleportBetweenCells :id=teleportbetweencells
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L138" target="_blank" rel="noopener">elements.d.ts:138</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L131" target="_blank" rel="noopener">elements.d.ts:131</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void">
 
@@ -200,17 +180,13 @@ teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCe
 
 Teleport an element between cells immediately on this worker.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.swapBetweenCells :id=swapbetweencells
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L156" target="_blank" rel="noopener">elements.d.ts:156</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L148" target="_blank" rel="noopener">elements.d.ts:148</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean">
 
@@ -243,17 +219,13 @@ Swap elements between two cells immediately on this worker.
 
 True when the swap succeeded.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.elements.swapCells~~ :id=swapcells
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L168" target="_blank" rel="noopener">elements.d.ts:168</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L159" target="_blank" rel="noopener">elements.d.ts:159</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean">
 
@@ -286,17 +258,13 @@ swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCel
 
 Use [swapBetweenCells](?id=swapbetweencells) instead.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.markMovementBlockedByIndex :id=markmovementblockedbyindex
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L182" target="_blank" rel="noopener">elements.d.ts:182</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L172" target="_blank" rel="noopener">elements.d.ts:172</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.markMovementBlockedByIndex(elementIndex: number): void">
 
@@ -318,17 +286,13 @@ markMovementBlockedByIndex(elementIndex: number): void
 
 Mark an element index as movement-blocked for this tick.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.elements.markMovementBlockedByElementIndex~~ :id=markmovementblockedbyelementindex
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L189" target="_blank" rel="noopener">elements.d.ts:189</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L178" target="_blank" rel="noopener">elements.d.ts:178</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.markMovementBlockedByElementIndex(elementIndex: number): void">
 
@@ -352,17 +316,13 @@ markMovementBlockedByElementIndex(elementIndex: number): void
 
 Use [markMovementBlockedByIndex](?id=markmovementblockedbyindex) instead.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.setVelocityAtCell :id=setvelocityatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L201" target="_blank" rel="noopener">elements.d.ts:201</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L189" target="_blank" rel="noopener">elements.d.ts:189</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setVelocityAtCell(...args: number, number, [Vector2]): boolean">
 
@@ -386,17 +346,13 @@ Set particle velocity at a cell immediately on this worker.
 
 True when velocity was set.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.addParticleVelocityAtCell :id=addparticlevelocityatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L214" target="_blank" rel="noopener">elements.d.ts:214</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L201" target="_blank" rel="noopener">elements.d.ts:201</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean">
 
@@ -420,17 +376,13 @@ Add velocity to a particle at a cell immediately on this worker.
 
 True when velocity was updated.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.convertToParticleAtCell :id=converttoparticleatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L228" target="_blank" rel="noopener">elements.d.ts:228</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L214" target="_blank" rel="noopener">elements.d.ts:214</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.convertToParticleAtCell(...args: number, number, [Vector2]): boolean">
 
@@ -454,17 +406,13 @@ Convert a cell element to a particle immediately on this worker.
 
 True when conversion succeeded.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.convertFromParticleAtCell :id=convertfromparticleatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L241" target="_blank" rel="noopener">elements.d.ts:241</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L226" target="_blank" rel="noopener">elements.d.ts:226</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.convertFromParticleAtCell(...args: CellCoordinates): boolean">
 
@@ -488,17 +436,13 @@ Convert a particle back to a solid element immediately on this worker.
 
 True when conversion succeeded.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.setDataFieldAtCell :id=setdatafieldatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L254" target="_blank" rel="noopener">elements.d.ts:254</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L238" target="_blank" rel="noopener">elements.d.ts:238</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean">
 
@@ -522,17 +466,13 @@ Set a data field on the element at a cell immediately on this worker.
 
 True when the field was set.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.refreshColorAtCell :id=refreshcoloratcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L266" target="_blank" rel="noopener">elements.d.ts:266</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L249" target="_blank" rel="noopener">elements.d.ts:249</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.refreshColorAtCell(...args: CellCoordinates): void">
 
@@ -554,17 +494,13 @@ refreshColorAtCell(...args: CellCoordinates): void
 
 Refresh the rendered color at a cell immediately on this worker.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.setPhysicsAtCell :id=setphysicsatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L277" target="_blank" rel="noopener">elements.d.ts:277</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L259" target="_blank" rel="noopener">elements.d.ts:259</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setPhysicsAtCell(...args: [number, number, number]): void">
 
@@ -586,17 +522,13 @@ setPhysicsAtCell(...args: [number, number, number]): void
 
 Set the physics skip mode at a cell immediately on this worker.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.elements.setDurationAtCell :id=setdurationatcell
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L300" target="_blank" rel="noopener">elements.d.ts:300</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L281" target="_blank" rel="noopener">elements.d.ts:281</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setDurationAtCell(...args: [number, number, number, object]): boolean">
 
@@ -632,9 +564,5 @@ const updated = api.elements.setDurationAtCell(
   { updateMax: true },
 );
 ```
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
 </div>

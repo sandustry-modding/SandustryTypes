@@ -4,17 +4,13 @@ Structure blueprint serialize and localize helpers.
 
 Available as `sandkit.api.blueprints`.
 
-## See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 ## Interfaces <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">
 
 ### sandkit.api.blueprints.BlueprintStructure :id=blueprintstructure
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L34" target="_blank" rel="noopener">blueprints.d.ts:34</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L31" target="_blank" rel="noopener">blueprints.d.ts:31</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -45,7 +41,7 @@ Serialized structure entry used in blueprints.
 
 ### sandkit.api.blueprints.serializeStructures :id=serializestructures
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L18" target="_blank" rel="noopener">blueprints.d.ts:18</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L16" target="_blank" rel="noopener">blueprints.d.ts:16</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.blueprints.serializeStructures(structures: readonly Structure[]): BlueprintStructure[]">
 
@@ -69,17 +65,13 @@ Serialize live structure instances into blueprint records.
 
 [`BlueprintStructure`](?id=blueprintstructure)[]
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.blueprints.localizeStructures :id=localizestructures
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L29" target="_blank" rel="noopener">blueprints.d.ts:29</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L26" target="_blank" rel="noopener">blueprints.d.ts:26</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.blueprints.localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]">
 
@@ -102,9 +94,5 @@ localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructur
 Localize blueprint structure records for placement.
 
 [`BlueprintStructure`](?id=blueprintstructure)[]
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

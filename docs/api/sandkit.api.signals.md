@@ -1,9 +1,5 @@
 # sandkit.api.signals
 
-## Namespaces <!-- {docsify-ignore} -->
-
-- [targets](api/sandkit.api.signals.targets.md)
-
 ## Type Aliases <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">

@@ -10,7 +10,6 @@
  *
  * @module
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#mod-files-heading)
  * @see [JSON Schema docs](https://sandustry-modding.github.io/SandustryTypes/#/schemas)
  */
 

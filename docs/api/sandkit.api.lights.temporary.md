@@ -8,7 +8,7 @@ Short-lived visual effect lights.
 
 ### sandkit.api.lights.temporary.createAtWorld :id=createatworld
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L43" target="_blank" rel="noopener">lights.d.ts:43</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L42" target="_blank" rel="noopener">lights.d.ts:42</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.lights.temporary.createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle">
 
@@ -67,17 +67,13 @@ api.lights.temporary.createAtWorld(worldX, worldY, {
 });
 ```
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.lights.temporary.removeById :id=removebyid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L63" target="_blank" rel="noopener">lights.d.ts:63</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L61" target="_blank" rel="noopener">lights.d.ts:61</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.lights.temporary.removeById(lightId: number): void">
 
@@ -106,9 +102,5 @@ if (light.lightId !== null) {
   api.lights.temporary.removeById(light.lightId);
 }
 ```
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

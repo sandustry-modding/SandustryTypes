@@ -25,7 +25,6 @@ export namespace shared {
      * });
      * ```
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function ensure(
       key: string,
@@ -35,7 +34,6 @@ export namespace shared {
     /**
      * @deprecated Use {@link ensure} instead.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function create(
       key: string,
@@ -45,7 +43,6 @@ export namespace shared {
     /**
      * Look up a named shared buffer without creating it.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export import get = sharedApi.api.shared.buffers.get;
   }

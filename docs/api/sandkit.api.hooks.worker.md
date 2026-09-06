@@ -12,7 +12,7 @@ Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook point
 
 ### sandkit.api.hooks.HookContext :id=hookcontext
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L112" target="_blank" rel="noopener">hooks.d.ts:112</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L110" target="_blank" rel="noopener">hooks.d.ts:110</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ Context passed to intercept hook callbacks.
 cancel(): void
 ```
 
-Defined in: [worker/api/hooks.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L114)
+Defined in: [worker/api/hooks.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L112)
 
 When called, the intercepted action is skipped.
 
@@ -48,7 +48,7 @@ When called, the intercepted action is skipped.
 
 ### sandkit.api.hooks.HookGuard :id=hookguard
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L120" target="_blank" rel="noopener">hooks.d.ts:120</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L118" target="_blank" rel="noopener">hooks.d.ts:118</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -71,7 +71,7 @@ Guard filter for worker hook registration.
 
 ### sandkit.api.hooks.ModifyHookOptions :id=modifyhookoptions
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L136" target="_blank" rel="noopener">hooks.d.ts:136</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L134" target="_blank" rel="noopener">hooks.d.ts:134</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -94,7 +94,7 @@ Options for [modify](?id=modify).
 
 ### sandkit.api.hooks.InterceptHookMap :id=intercepthookmap
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L166" target="_blank" rel="noopener">hooks.d.ts:166</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L164" target="_blank" rel="noopener">hooks.d.ts:164</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -143,7 +143,7 @@ Intercept hook argument shapes keyed by hook id.
 
 ### sandkit.api.hooks.InterceptHookOptions :id=intercepthookoptions
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L128" target="_blank" rel="noopener">hooks.d.ts:128</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L126" target="_blank" rel="noopener">hooks.d.ts:126</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.hooks.InterceptHookOptions&lt;K *extends* InterceptHookId&gt; = K *extends* ElementGuardedInterceptHookId ? object : K *extends* TerrainGuardedInterceptHookId ? object : object">
 
@@ -167,7 +167,7 @@ Options for [intercept](?id=intercept).
 
 ### sandkit.api.hooks.ElementGuardedInterceptHookId :id=elementguardedintercepthookid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L142" target="_blank" rel="noopener">hooks.d.ts:142</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L140" target="_blank" rel="noopener">hooks.d.ts:140</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.hooks.ElementGuardedInterceptHookId = &quot;cell:process&quot; | &quot;element:update&quot; | &quot;element:move:blocked&quot; | &quot;element:blocked&quot; | &quot;element:duration:expire&quot; | &quot;element:duration&quot;">
 
@@ -185,7 +185,7 @@ Intercept hook ids with a required element guard.
 
 ### sandkit.api.hooks.TerrainGuardedInterceptHookId :id=terrainguardedintercepthookid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L151" target="_blank" rel="noopener">hooks.d.ts:151</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L149" target="_blank" rel="noopener">hooks.d.ts:149</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.hooks.TerrainGuardedInterceptHookId = &quot;fire:terrain:burn&quot;">
 
@@ -203,7 +203,7 @@ Intercept hook ids with a required terrain guard.
 
 ### sandkit.api.hooks.InterceptHookId :id=intercepthookid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L154" target="_blank" rel="noopener">hooks.d.ts:154</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L152" target="_blank" rel="noopener">hooks.d.ts:152</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.hooks.InterceptHookId = LooseString&lt;ElementGuardedInterceptHookId | TerrainGuardedInterceptHookId | &quot;element:move&quot; | &quot;fire:element:burn&quot; | &quot;shaker:elementOn&quot;&gt;">
 
@@ -221,7 +221,7 @@ Known worker intercept hook ids plus custom strings.
 
 ### sandkit.api.hooks.ModifyHookId :id=modifyhookid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L163" target="_blank" rel="noopener">hooks.d.ts:163</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L161" target="_blank" rel="noopener">hooks.d.ts:161</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.hooks.ModifyHookId = LooseString&lt;string&gt;">
 
@@ -239,7 +239,7 @@ Known worker modify hook ids plus custom strings.
 
 ### sandkit.api.hooks.ModifyHookMap :id=modifyhookmap
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L182" target="_blank" rel="noopener">hooks.d.ts:182</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L180" target="_blank" rel="noopener">hooks.d.ts:180</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.hooks.ModifyHookMap = Record&lt;string, unknown&gt;">
 
@@ -257,7 +257,7 @@ Modify hook argument shapes keyed by hook id. Unlisted ids use `unknown`.
 
 ### sandkit.api.hooks.InterceptHookArgs :id=intercepthookargs
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L185" target="_blank" rel="noopener">hooks.d.ts:185</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L183" target="_blank" rel="noopener">hooks.d.ts:183</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.hooks.InterceptHookArgs&lt;K *extends* InterceptHookId&gt; = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown">
 
@@ -281,7 +281,7 @@ Intercept hook args for a given hook id.
 
 ### sandkit.api.hooks.ModifyHookArgs :id=modifyhookargs
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L190" target="_blank" rel="noopener">hooks.d.ts:190</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L188" target="_blank" rel="noopener">hooks.d.ts:188</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.hooks.ModifyHookArgs&lt;K *extends* ModifyHookId&gt; = K *extends* keyof ModifyHookMap ? ModifyHookMap[K] : unknown">
 
@@ -307,7 +307,7 @@ Modify hook args for a given hook id.
 
 ### sandkit.api.hooks.intercept :id=intercept
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L83" target="_blank" rel="noopener">hooks.d.ts:83</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L82" target="_blank" rel="noopener">hooks.d.ts:82</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.hooks.intercept&lt;K *extends* InterceptHookId&gt;(hookId: K, callback: (args: InterceptHookArgs&lt;K&gt;, context: HookContext) =&gt; void, options?: InterceptHookOptions&lt;K&gt;): () =&gt; void">
 
@@ -417,17 +417,13 @@ api.hooks.intercept("shaker:elementOn", (args, context) => {
 });
 ```
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.hooks.modify :id=modify
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L105" target="_blank" rel="noopener">hooks.d.ts:105</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L103" target="_blank" rel="noopener">hooks.d.ts:103</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.hooks.modify&lt;K *extends* ModifyHookId&gt;(hookId: K, callback: (args: ModifyHookArgs&lt;K&gt;) =&gt; void, options?: ModifyHookOptions): () =&gt; void">
 
@@ -472,9 +468,5 @@ api.hooks.modify("example:prepare", (args) => {
   args.value *= 2;
 });
 ```
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

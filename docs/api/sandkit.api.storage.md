@@ -1,9 +1,5 @@
 # sandkit.api.storage
 
-## Namespaces <!-- {docsify-ignore} -->
-
-- [local](api/sandkit.api.storage.local.md)
-
 ## Functions <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">

@@ -28,7 +28,6 @@ export namespace rendering {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDrawPositionAtWorld(worldX: number, worldY: number): Vector2;
   /**

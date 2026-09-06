@@ -3,17 +3,13 @@
 `sandkit.api.excavation` — register custom excavation tool dig profiles.
 Main thread only.
 
-## See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 ## Interfaces <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">
 
 ### sandkit.api.excavation.ExcavationProfileDefinitionV1 :id=excavationprofiledefinitionv1
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L50" target="_blank" rel="noopener">excavation.d.ts:50</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L48" target="_blank" rel="noopener">excavation.d.ts:48</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -42,7 +38,7 @@ Excavation tool profile definition.
 
 ### sandkit.api.excavation.ExcavationProfileOptions :id=excavationprofileoptions
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L62" target="_blank" rel="noopener">excavation.d.ts:62</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L60" target="_blank" rel="noopener">excavation.d.ts:60</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -80,7 +76,7 @@ Options attached to an excavation profile definition.
 
 ### sandkit.api.excavation.ExcavationTerrainRule :id=excavationterrainrule
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L74" target="_blank" rel="noopener">excavation.d.ts:74</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L72" target="_blank" rel="noopener">excavation.d.ts:72</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -111,7 +107,7 @@ Terrain match rule within an excavation profile.
 
 ### sandkit.api.excavation.registerProfile :id=registerprofile
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L47" target="_blank" rel="noopener">excavation.d.ts:47</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L45" target="_blank" rel="noopener">excavation.d.ts:45</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.excavation.registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void">
 
@@ -164,9 +160,5 @@ api.hooks.modify("excavation:prepare", (args) => {
   args.profileId = profileId;
 });
 ```
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

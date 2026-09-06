@@ -4,17 +4,13 @@ Game session start helpers.
 
 Available as `sandkit.api.game`.
 
-## See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 ## Interfaces <!-- {docsify-ignore} -->
 
 <div class="smt-member-card">
 
 ### sandkit.api.game.GameStartOptions :id=gamestartoptions
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L24" target="_blank" rel="noopener">game.d.ts:24</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L22" target="_blank" rel="noopener">game.d.ts:22</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -36,7 +32,7 @@ Options for [start](?id=start).
 
 ### sandkit.api.game.start :id=start
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L21" target="_blank" rel="noopener">game.d.ts:21</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L19" target="_blank" rel="noopener">game.d.ts:19</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.game.start(options?: GameStartOptions): void">
 
@@ -63,9 +59,5 @@ Start or restart the game session.
 ```ts
 api.game.start({ skipIntro: true });
 ```
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

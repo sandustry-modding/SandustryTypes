@@ -8,7 +8,7 @@ Player building unlock helpers.
 
 ### sandkit.api.player.buildings.unlockById :id=unlockbyid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L136" target="_blank" rel="noopener">player.d.ts:136</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L123" target="_blank" rel="noopener">player.d.ts:123</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.buildings.unlockById(structureId: string): void">
 
@@ -30,17 +30,13 @@ unlockById(structureId: string): void
 
 Unlock a structure type for building.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### ~~sandkit.api.player.buildings.unlockByType~~ :id=unlockbytype
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L143" target="_blank" rel="noopener">player.d.ts:143</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L129" target="_blank" rel="noopener">player.d.ts:129</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.buildings.unlockByType(structureId: string): void">
 
@@ -64,17 +60,13 @@ unlockByType(structureId: string): void
 
 Use [unlockById](?id=unlockbyid) instead.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### sandkit.api.player.buildings.removeById :id=removebyid
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L152" target="_blank" rel="noopener">player.d.ts:152</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L137" target="_blank" rel="noopener">player.d.ts:137</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.player.buildings.removeById(structureId: string): void">
 
@@ -95,9 +87,5 @@ removeById(structureId: string): void
 </div>
 
 Remove a structure unlock from the player.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

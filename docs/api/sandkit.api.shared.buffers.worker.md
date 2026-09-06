@@ -8,7 +8,7 @@ Named shared memory buffers for worker threads.
 
 ### sandkit.api.shared.buffers.require :id=require
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/shared.d.ts#L37" target="_blank" rel="noopener">shared.d.ts:37</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/shared.d.ts#L36" target="_blank" rel="noopener">shared.d.ts:36</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.shared.buffers.require(key: string, config: object): SharedArray">
 
@@ -46,9 +46,5 @@ const counts = api.shared.buffers.require("counts", {
   length: 4,
 });
 ```
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

@@ -20,7 +20,6 @@ export namespace effects {
    * @param worldY - World Y coordinate in pixels.
    * @param options - Duration, radius, and intensity settings.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function createAtWorld(
     effectId: string,
@@ -32,7 +31,6 @@ export namespace effects {
   /**
    * @deprecated Use {@link createAtWorld} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function createEffectAtWorld(
     effectId: string,
@@ -55,14 +53,12 @@ export namespace effects {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import createParticlesAtWorld = shared.api.effects.createParticlesAtWorld;
 
   /**
    * @deprecated Use {@link lights.temporary.createAtWorld} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function createLightAtWorld(
     worldX: number,
@@ -84,7 +80,6 @@ export namespace effects {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function createDistortionWaveAtWorld(
     worldX: number,
@@ -101,7 +96,6 @@ export namespace effects {
    * @param endWorldY - Beam end world Y in pixels.
    * @param options - Width, brightness, color, and glow options.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function createLaserAtWorld(
     startWorldX: number,
@@ -114,7 +108,6 @@ export namespace effects {
   /**
    * @deprecated Use {@link lights.temporary.removeById} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function removeLightById(lightId: number): void;
 

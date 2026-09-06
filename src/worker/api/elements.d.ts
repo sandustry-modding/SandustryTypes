@@ -10,7 +10,6 @@ import { shared } from "../../shared";
  * @internal Worker extension; not interchangeable with main-thread
  * `sandkit.api.elements`.
  *
- * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
  */
 export namespace elements {
   /** Numeric id for a registered element type. */
@@ -35,7 +34,6 @@ export namespace elements {
   /**
    * @deprecated Use {@link getTypeById} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export import getTypeFromId = shared.api.elements.getTypeFromId;
   /** Returns the definition for an element type. */
@@ -74,7 +72,6 @@ export namespace elements {
    * });
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function createAtCell(
     ...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]
@@ -88,7 +85,6 @@ export namespace elements {
    * @param elementTypeOrId - Numeric type or string id.
    * @param options - Optional spawn overrides.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function replaceAtCell(
     ...args: [...CellCoordinates, elementTypeOrId: ElementRef, options?: ElementCreateOptions]
@@ -101,7 +97,6 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param options - Optional removal flags.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function removeAtCell(
     ...args: [...CellCoordinates, options?: ElementRemovalOptions]
@@ -116,7 +111,6 @@ export namespace elements {
    * @param toCellY - Destination cell row.
    * @returns True when the move succeeded.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function moveBetweenCells(
     fromCellX: number,
@@ -133,7 +127,6 @@ export namespace elements {
    * @param toCellX - Destination cell column.
    * @param toCellY - Destination cell row.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function teleportBetweenCells(
     fromCellX: number,
@@ -151,7 +144,6 @@ export namespace elements {
    * @param secondCellY - Second cell row.
    * @returns True when the swap succeeded.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function swapBetweenCells(
     firstCellX: number,
@@ -163,7 +155,6 @@ export namespace elements {
   /**
    * @deprecated Use {@link swapBetweenCells} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function swapCells(
     firstCellX: number,
@@ -177,14 +168,12 @@ export namespace elements {
    *
    * @param elementIndex - Element index from {@link getInfoAtCell}.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function markMovementBlockedByIndex(elementIndex: number): void;
 
   /**
    * @deprecated Use {@link markMovementBlockedByIndex} instead.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function markMovementBlockedByElementIndex(elementIndex: number): void;
 
@@ -196,7 +185,6 @@ export namespace elements {
    * @param velocity - New velocity vector.
    * @returns True when velocity was set.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setVelocityAtCell(...args: [...CellCoordinates, velocity: Vector2]): boolean;
 
@@ -209,7 +197,6 @@ export namespace elements {
    * @param maxSpeedCellsPerSecond - Optional speed cap after the addition.
    * @returns True when velocity was updated.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function addParticleVelocityAtCell(
     ...args: [...CellCoordinates, velocity: Vector2, maxSpeedCellsPerSecond?: number]
@@ -223,7 +210,6 @@ export namespace elements {
    * @param velocity - Initial particle velocity.
    * @returns True when conversion succeeded.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function convertToParticleAtCell(
     ...args: [...CellCoordinates, velocity: Vector2]
@@ -236,7 +222,6 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @returns True when conversion succeeded.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function convertFromParticleAtCell(...args: CellCoordinates): boolean;
 
@@ -249,7 +234,6 @@ export namespace elements {
    * @param value - New field value.
    * @returns True when the field was set.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setDataFieldAtCell(
     ...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4, value: number]
@@ -261,7 +245,6 @@ export namespace elements {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function refreshColorAtCell(...args: CellCoordinates): void;
 
@@ -272,7 +255,6 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    * @param physicsState - Physics skip flags for the element.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setPhysicsAtCell(...args: [...CellCoordinates, physicsState: number]): void;
 
@@ -295,7 +277,6 @@ export namespace elements {
    * );
    * ```
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
    */
   export function setDurationAtCell(
     ...args: [...CellCoordinates, durationTicks: number, options?: { updateMax?: boolean }]

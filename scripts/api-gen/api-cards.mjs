@@ -263,8 +263,10 @@ function renderDescription(desc) {
   return ["", desc.trim(), ""];
 }
 
+const STRIP_H2 = new Set(["References", "Namespaces"]);
+
 /**
- * Drop TypeDoc `## References` re-export lists.
+ * Drop TypeDoc index headings that duplicate the sidebar.
  * @param {string} content
  */
 export function stripReferencesSection(content) {
@@ -273,7 +275,8 @@ export function stripReferencesSection(content) {
   const out = [];
   let skipping = false;
   for (const line of lines) {
-    if (/^## References(?:\s|$)/.test(line)) {
+    const h2 = /^## ([^\s<]+)(?:\s|$)/.exec(line);
+    if (h2 && STRIP_H2.has(h2[1])) {
       skipping = true;
       continue;
     }
@@ -286,6 +289,42 @@ export function stripReferencesSection(content) {
   return out.join("\n");
 }
 
+const OFFICIAL_DOCS_HREF = /\[Official docs\]\(https:\/\/sandustry\.com\/sandkit\.html[^)]*\)/;
+
+/**
+ * Drop Official docs `See` headings (page-level and per-member).
+ * @param {string} content
+ */
+export function collapseOfficialSee(content) {
+  const lines = String(content || "").split("\n");
+  /** @type {string[]} */
+  const out = [];
+  let i = 0;
+  while (i < lines.length) {
+    if (!/^#{2,4} See(?:\s+<!--[^>]*-->)?\s*$/.test(lines[i])) {
+      out.push(lines[i]);
+      i++;
+      continue;
+    }
+    let j = i + 1;
+    /** @type {string[]} */
+    const body = [];
+    while (j < lines.length && !/^#{1,4} /.test(lines[j]) && lines[j].trim() !== "</div>") {
+      const trimmed = lines[j].trim();
+      if (trimmed) body.push(trimmed);
+      j++;
+    }
+    const onlyOfficial = body.length > 0 && body.every((line) => OFFICIAL_DOCS_HREF.test(line));
+    if (onlyOfficial) {
+      i = j;
+      continue;
+    }
+    out.push(lines[i]);
+    i++;
+  }
+  return out.join("\n");
+}
+
 /**
  * Restyle `### member` blocks on one API markdown page.
  * @param {string} content
@@ -294,7 +333,7 @@ export function stripReferencesSection(content) {
 export function restyleApiCards(content, qualified) {
   const worker = String(qualified || "").endsWith(" (worker)");
   const base = worker ? qualified.slice(0, -" (worker)".length) : String(qualified || "");
-  const lines = stripReferencesSection(content).split(/\n/);
+  const lines = collapseOfficialSee(stripReferencesSection(content)).split(/\n/);
   /** @type {string[]} */
   const out = [];
   let i = 0;
@@ -354,6 +393,14 @@ export function restyleApiCards(content, qualified) {
     out.push(...renderDescription(desc));
 
     for (const section of rest) {
+      if (section.title === "See") {
+        const body = section.body
+          .split(/\n/)
+          .map((l) => l.trim())
+          .filter(Boolean);
+        const onlyOfficial = body.length > 0 && body.every((line) => OFFICIAL_DOCS_HREF.test(line));
+        if (onlyOfficial) continue;
+      }
       if (DROP_SECTIONS.has(section.title)) {
         const retDesc = section.body
           .split(/\n/)
@@ -370,7 +417,7 @@ export function restyleApiCards(content, qualified) {
     out.push("", `</div>`, "");
   }
 
-  return out.join("\n").replace(/\n{3,}/g, "\n\n").trimEnd() + "\n";
+  return collapseOfficialSee(out.join("\n").replace(/\n{3,}/g, "\n\n").trimEnd() + "\n");
 }
 
 /**

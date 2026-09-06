@@ -11,8 +11,7 @@ https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
 
 ## See
 
- - [Official docs](https://sandustry.com/sandkit.html#mod-files-heading)
- - [JSON Schema docs](https://sandustry-modding.github.io/SandustryTypes/#/schemas)
+[JSON Schema docs](https://sandustry-modding.github.io/SandustryTypes/#/schemas)
 
 ## Interfaces <!-- {docsify-ignore} -->
 
@@ -20,7 +19,7 @@ https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
 
 ### configs.ConfigSchemaNumber :id=configschemanumber
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L135" target="_blank" rel="noopener">modinfo.d.ts:135</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L134" target="_blank" rel="noopener">modinfo.d.ts:134</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -64,7 +63,7 @@ Number setting in `modinfo.json` `configSchema`.
 
 ### configs.ConfigSchemaBoolean :id=configschemaboolean
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L193" target="_blank" rel="noopener">modinfo.d.ts:193</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L174" target="_blank" rel="noopener">modinfo.d.ts:174</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -99,7 +98,7 @@ Boolean setting in `modinfo.json` `configSchema`.
 
 ### configs.ConfigSchemaChoiceOption :id=configschemachoiceoption
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L233" target="_blank" rel="noopener">modinfo.d.ts:233</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L202" target="_blank" rel="noopener">modinfo.d.ts:202</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -125,7 +124,7 @@ One option inside a [ConfigSchemaChoice](?id=configschemachoice).
 
 ### configs.ConfigSchemaChoice :id=configschemachoice
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L255" target="_blank" rel="noopener">modinfo.d.ts:255</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L218" target="_blank" rel="noopener">modinfo.d.ts:218</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -163,7 +162,7 @@ Choice setting in `modinfo.json` `configSchema`.
 
 ### configs.TextureOverride :id=textureoverride
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L314" target="_blank" rel="noopener">modinfo.d.ts:314</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L261" target="_blank" rel="noopener">modinfo.d.ts:261</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -186,17 +185,13 @@ Choice setting in `modinfo.json` `configSchema`.
 
 Animated (or static) texture replacement for a vanilla asset id.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModProvide :id=modprovide
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L346" target="_blank" rel="noopener">modinfo.d.ts:346</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L284" target="_blank" rel="noopener">modinfo.d.ts:284</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -216,17 +211,13 @@ Animated (or static) texture replacement for a vanilla asset id.
 
 Optional content pack exposed by this mod for other mods or the game to consume.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModMapBlueprints :id=modmapblueprints
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L374" target="_blank" rel="noopener">modinfo.d.ts:374</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L305" target="_blank" rel="noopener">modinfo.d.ts:305</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -263,17 +254,13 @@ Blueprint image paths for a custom map pack.
 
 Paths are relative to the mod root.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModMapPoint :id=modmappoint
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L430" target="_blank" rel="noopener">modinfo.d.ts:430</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L344" target="_blank" rel="noopener">modinfo.d.ts:344</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -290,17 +277,13 @@ Paths are relative to the mod root.
 
 World-pixel spawn or unstuck point.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModMapTopBounds :id=modmaptopbounds
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L450" target="_blank" rel="noopener">modinfo.d.ts:450</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L359" target="_blank" rel="noopener">modinfo.d.ts:359</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -317,17 +300,13 @@ World-pixel spawn or unstuck point.
 
 Vertical camera / travel bounds for the custom map.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModMapDepthLight :id=modmapdepthlight
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L470" target="_blank" rel="noopener">modinfo.d.ts:470</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L374" target="_blank" rel="noopener">modinfo.d.ts:374</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -350,17 +329,13 @@ Vertical camera / travel bounds for the custom map.
 
 Depth-based light sizing for the custom map.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModMapParallax :id=modmapparallax
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L502" target="_blank" rel="noopener">modinfo.d.ts:502</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L397" target="_blank" rel="noopener">modinfo.d.ts:397</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -377,17 +352,13 @@ Depth-based light sizing for the custom map.
 
 Parallax background tuning for the custom map.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModMapColorMappingLayers :id=modmapcolormappinglayers
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L522" target="_blank" rel="noopener">modinfo.d.ts:522</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L412" target="_blank" rel="noopener">modinfo.d.ts:412</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -404,17 +375,13 @@ Parallax background tuning for the custom map.
 
 Color-map cell that paints both background and foreground terrain.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModMapDefinition :id=modmapdefinition
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L549" target="_blank" rel="noopener">modinfo.d.ts:549</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L433" target="_blank" rel="noopener">modinfo.d.ts:433</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -455,17 +422,13 @@ Color-map cell that paints both background and foreground terrain.
 
 Custom map pack block in `modinfo.json`.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModGameVersion :id=modgameversion
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L617" target="_blank" rel="noopener">modinfo.d.ts:617</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L480" target="_blank" rel="noopener">modinfo.d.ts:480</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -482,17 +445,13 @@ Custom map pack block in `modinfo.json`.
 
 Compatible game version range for the mod.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModInfo :id=modinfo
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L645" target="_blank" rel="noopener">modinfo.d.ts:645</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L503" target="_blank" rel="noopener">modinfo.d.ts:503</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -571,17 +530,13 @@ At least one capability is required: [entry](?id=entry), [workerEntry](?id=worke
 [configOverrides](?id=configoverrides), [textureOverrides](?id=textureoverrides-1), [provides](?id=provides), or
 [map](?id=map). `configSchema` alone does not count.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.BundlePatchRegex :id=bundlepatchregex
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L52" target="_blank" rel="noopener">patches.d.ts:52</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L48" target="_blank" rel="noopener">patches.d.ts:48</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -598,17 +553,13 @@ At least one capability is required: [entry](?id=entry), [workerEntry](?id=worke
 
 Regex finder when the target is not a plain [BundlePatch.find](?id=find) string.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#patches-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.BundlePatch :id=bundlepatch
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L107" target="_blank" rel="noopener">patches.d.ts:107</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L100" target="_blank" rel="noopener">patches.d.ts:100</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -695,17 +646,13 @@ or duplicated match fails loudly. When several patches must succeed together
 ]
 ```
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#patches-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.BundlePatchesDocument :id=bundlepatchesdocument
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L199" target="_blank" rel="noopener">patches.d.ts:199</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L181" target="_blank" rel="noopener">patches.d.ts:181</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -767,7 +714,7 @@ Links a local mod folder to its Steam Workshop item.
 
 ### configs.ConfigSchemaEntry :id=configschemaentry
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L307" target="_blank" rel="noopener">modinfo.d.ts:307</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L255" target="_blank" rel="noopener">modinfo.d.ts:255</a></p>
 
 <div class="smt-member-sig" data-sig="configs.ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice">
 
@@ -781,17 +728,13 @@ One entry under `modinfo.json` `configSchema`.
 
 Keys of `configSchema` are setting ids read via `api.settings.get`.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.ModMapColorMapping :id=modmapcolormapping
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L542" target="_blank" rel="noopener">modinfo.d.ts:542</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L427" target="_blank" rel="noopener">modinfo.d.ts:427</a></p>
 
 <div class="smt-member-sig" data-sig="configs.ModMapColorMapping = string | ModMapColorMappingLayers">
 
@@ -803,17 +746,13 @@ ModMapColorMapping = string | ModMapColorMappingLayers
 
 One `map.colorMappings` value: a single terrain id, or layered background/foreground ids.
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#mod-manifest-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.PatchTargetFile :id=patchtargetfile
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L25" target="_blank" rel="noopener">patches.d.ts:25</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L23" target="_blank" rel="noopener">patches.d.ts:23</a></p>
 
 <div class="smt-member-sig" data-sig="configs.PatchTargetFile = &quot;js/bundle.js&quot; | &quot;js/simulation-worker.js&quot; | &quot;js/manager-worker.js&quot; | &quot;js/utility-worker.js&quot; | string &amp; object">
 
@@ -832,17 +771,13 @@ Known compiled bundle paths the loader can patch.
 | `js/simulation-worker.js` | Simulation workers |
 | `js/utility-worker.js` | Utility worker |
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#patches-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.PatchOperation :id=patchoperation
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L45" target="_blank" rel="noopener">patches.d.ts:45</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L42" target="_blank" rel="noopener">patches.d.ts:42</a></p>
 
 <div class="smt-member-sig" data-sig="configs.PatchOperation = &quot;replace&quot; | &quot;remove&quot; | &quot;insertBefore&quot; | &quot;insertAfter&quot; | &quot;wrap&quot;">
 
@@ -862,17 +797,13 @@ Supported patch operations.
 | `insertAfter` | Insert [BundlePatch.code](?id=code) after the match |
 | `wrap` | Surround the match with [BundlePatch.before](?id=before) and [BundlePatch.after](?id=after) |
 
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#patches-heading)
-
 </div>
 
 <div class="smt-member-card">
 
 ### configs.BundlePatchesFile :id=bundlepatchesfile
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L217" target="_blank" rel="noopener">patches.d.ts:217</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L198" target="_blank" rel="noopener">patches.d.ts:198</a></p>
 
 <div class="smt-member-sig" data-sig="configs.BundlePatchesFile = BundlePatch[] | BundlePatchesDocument">
 
@@ -884,9 +815,5 @@ BundlePatchesFile = BundlePatch[] | BundlePatchesDocument
 
 Root shape of `patches.json`: a bare [BundlePatch](?id=bundlepatch) array (game format),
 or a [BundlePatchesDocument](?id=bundlepatchesdocument) object when the file includes `$schema`.
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#patches-heading)
 
 </div>

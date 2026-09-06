@@ -6,7 +6,7 @@
 
 ### sandkit.api.maps.ArtifactLocation :id=artifactlocation
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L42" target="_blank" rel="noopener">maps.d.ts:42</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L41" target="_blank" rel="noopener">maps.d.ts:41</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -38,7 +38,7 @@ Artifact location entry from [getArtifactLocations](?id=getartifactlocations).
 
 ### sandkit.api.maps.AvailableMapV1 :id=availablemapv1
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L50" target="_blank" rel="noopener">maps.d.ts:50</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L49" target="_blank" rel="noopener">maps.d.ts:49</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -117,7 +117,7 @@ Start a map by id. Return true when start succeeds.
 
 ### sandkit.api.maps.getArtifactLocations :id=getartifactlocations
 
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L39" target="_blank" rel="noopener">maps.d.ts:39</a></p>
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L38" target="_blank" rel="noopener">maps.d.ts:38</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.maps.getArtifactLocations(): readonly ArtifactLocation[]">
 
@@ -140,9 +140,5 @@ api.events.on("game:ready", () => {
   });
 });
 ```
-
-#### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
 </div>

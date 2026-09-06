@@ -17,7 +17,6 @@ export namespace grid {
    * @param cellY - Grid row of the target cell.
    * @returns Packed cell id for the cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getCellIdAtCell(...args: CellCoordinates): CellId;
 
@@ -27,7 +26,6 @@ export namespace grid {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isCellEmptyAtCell(...args: CellCoordinates): boolean;
 
@@ -37,7 +35,6 @@ export namespace grid {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function isTerrainAtCell(...args: CellCoordinates): boolean;
 
@@ -47,7 +44,6 @@ export namespace grid {
    * @param cellX - Grid column of the target cell.
    * @param cellY - Grid row of the target cell.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function reportActivityAtCell(...args: CellCoordinates): void;
 
@@ -60,7 +56,6 @@ export namespace grid {
    * @param damage - Damage applied to terrain in the pattern.
    * @param options - Optional excavation source flags.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function excavateAtCell(
     ...args: [...CellCoordinates, outVelocity: Vector2, damage: number, options?: ExcavateOptions]
@@ -69,7 +64,6 @@ export namespace grid {
   /**
    * Return the world grid size in cells.
    *
-   * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
    */
   export function getDimensions(): GridDimensions;
 

@@ -32,7 +32,6 @@ export namespace shared {
      * });
      * ```
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export function require(
       key: string,
@@ -44,7 +43,6 @@ export namespace shared {
      *
      * @param key - Buffer name shared across threads.
      *
-     * @see [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
      */
     export import get = sharedApi.api.shared.buffers.get;
   }
