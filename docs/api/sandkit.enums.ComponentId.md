@@ -6,280 +6,450 @@ UI component ids for HUD and menu routing.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Hotbar :id=hotbar
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Hotbar :id=hotbar
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L92" target="_blank" rel="noopener">index.d.ts:92</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Hotbar: 1">
 
 ```ts
-sandkit.enums.ComponentId.Hotbar: 1
+Hotbar: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L92)
+</div>
 
-***
+</div>
 
-### SoundBoxConfig :id=soundboxconfig
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.SoundBoxConfig :id=soundboxconfig
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L93" target="_blank" rel="noopener">index.d.ts:93</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.SoundBoxConfig: 2">
 
 ```ts
-sandkit.enums.ComponentId.SoundBoxConfig: 2
+SoundBoxConfig: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L93)
+</div>
 
-***
+</div>
 
-### Root :id=root
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Root :id=root
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L94" target="_blank" rel="noopener">index.d.ts:94</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Root: 4">
 
 ```ts
-sandkit.enums.ComponentId.Root: 4
+Root: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L94)
+</div>
 
-***
+</div>
 
-### Menu :id=menu
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Menu :id=menu
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L95" target="_blank" rel="noopener">index.d.ts:95</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Menu: 5">
 
 ```ts
-sandkit.enums.ComponentId.Menu: 5
+Menu: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L95)
+</div>
 
-***
+</div>
 
-### Management :id=management
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Management :id=management
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L96" target="_blank" rel="noopener">index.d.ts:96</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Management: 6">
 
 ```ts
-sandkit.enums.ComponentId.Management: 6
+Management: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L96)
+</div>
 
-***
+</div>
 
-### FilterConfig :id=filterconfig
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.FilterConfig :id=filterconfig
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L97" target="_blank" rel="noopener">index.d.ts:97</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.FilterConfig: 7">
 
 ```ts
-sandkit.enums.ComponentId.FilterConfig: 7
+FilterConfig: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L97)
+</div>
 
-***
+</div>
 
-### Resources :id=resources
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Resources :id=resources
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L98" target="_blank" rel="noopener">index.d.ts:98</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Resources: 8">
 
 ```ts
-sandkit.enums.ComponentId.Resources: 8
+Resources: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L98)
+</div>
 
-***
+</div>
 
-### TechTree :id=techtree
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.TechTree :id=techtree
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L99" target="_blank" rel="noopener">index.d.ts:99</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.TechTree: 9">
 
 ```ts
-sandkit.enums.ComponentId.TechTree: 9
+TechTree: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L99)
+</div>
 
-***
+</div>
 
-### Tutorial :id=tutorial
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Tutorial :id=tutorial
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L100" target="_blank" rel="noopener">index.d.ts:100</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Tutorial: 10">
 
 ```ts
-sandkit.enums.ComponentId.Tutorial: 10
+Tutorial: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L100)
+</div>
 
-***
+</div>
 
-### Loader :id=loader
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Loader :id=loader
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L101" target="_blank" rel="noopener">index.d.ts:101</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Loader: 11">
 
 ```ts
-sandkit.enums.ComponentId.Loader: 11
+Loader: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L101)
+</div>
 
-***
+</div>
 
-### Options :id=options
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Options :id=options
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L102" target="_blank" rel="noopener">index.d.ts:102</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Options: 12">
 
 ```ts
-sandkit.enums.ComponentId.Options: 12
+Options: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L102)
+</div>
 
-***
+</div>
 
-### ShortcutHelper :id=shortcuthelper
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.ShortcutHelper :id=shortcuthelper
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L103" target="_blank" rel="noopener">index.d.ts:103</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.ShortcutHelper: 13">
 
 ```ts
-sandkit.enums.ComponentId.ShortcutHelper: 13
+ShortcutHelper: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L103)
+</div>
 
-***
+</div>
 
-### Upgrades :id=upgrades
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Upgrades :id=upgrades
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L104" target="_blank" rel="noopener">index.d.ts:104</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Upgrades: 14">
 
 ```ts
-sandkit.enums.ComponentId.Upgrades: 14
+Upgrades: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L104)
+</div>
 
-***
+</div>
 
-### Tooltip :id=tooltip
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Tooltip :id=tooltip
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L105" target="_blank" rel="noopener">index.d.ts:105</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Tooltip: 15">
 
 ```ts
-sandkit.enums.ComponentId.Tooltip: 15
+Tooltip: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L105)
+</div>
 
-***
+</div>
 
-### Notifications :id=notifications
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Notifications :id=notifications
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L106" target="_blank" rel="noopener">index.d.ts:106</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Notifications: 16">
 
 ```ts
-sandkit.enums.ComponentId.Notifications: 16
+Notifications: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L106)
+</div>
 
-***
+</div>
 
-### Objectives :id=objectives
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Objectives :id=objectives
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L107" target="_blank" rel="noopener">index.d.ts:107</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Objectives: 17">
 
 ```ts
-sandkit.enums.ComponentId.Objectives: 17
+Objectives: 17
 ```
 
-Defined in: [sandkit/enums/index.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L107)
+</div>
 
-***
+</div>
 
-### DroneAdminList :id=droneadminlist
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.DroneAdminList :id=droneadminlist
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L108" target="_blank" rel="noopener">index.d.ts:108</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.DroneAdminList: 18">
 
 ```ts
-sandkit.enums.ComponentId.DroneAdminList: 18
+DroneAdminList: 18
 ```
 
-Defined in: [sandkit/enums/index.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L108)
+</div>
 
-***
+</div>
 
-### HotbarOverlays :id=hotbaroverlays
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.HotbarOverlays :id=hotbaroverlays
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L109" target="_blank" rel="noopener">index.d.ts:109</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.HotbarOverlays: 19">
 
 ```ts
-sandkit.enums.ComponentId.HotbarOverlays: 19
+HotbarOverlays: 19
 ```
 
-Defined in: [sandkit/enums/index.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L109)
+</div>
 
-***
+</div>
 
-### IntroScreen :id=introscreen
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.IntroScreen :id=introscreen
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L110" target="_blank" rel="noopener">index.d.ts:110</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.IntroScreen: 20">
 
 ```ts
-sandkit.enums.ComponentId.IntroScreen: 20
+IntroScreen: 20
 ```
 
-Defined in: [sandkit/enums/index.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L110)
+</div>
 
-***
+</div>
 
-### StoryNotifications :id=storynotifications
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.StoryNotifications :id=storynotifications
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L111" target="_blank" rel="noopener">index.d.ts:111</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.StoryNotifications: 21">
 
 ```ts
-sandkit.enums.ComponentId.StoryNotifications: 21
+StoryNotifications: 21
 ```
 
-Defined in: [sandkit/enums/index.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L111)
+</div>
 
-***
+</div>
 
-### FactoryProgress :id=factoryprogress
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.FactoryProgress :id=factoryprogress
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L112" target="_blank" rel="noopener">index.d.ts:112</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.FactoryProgress: 22">
 
 ```ts
-sandkit.enums.ComponentId.FactoryProgress: 22
+FactoryProgress: 22
 ```
 
-Defined in: [sandkit/enums/index.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L112)
+</div>
 
-***
+</div>
 
-### Dialogs :id=dialogs
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Dialogs :id=dialogs
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L113" target="_blank" rel="noopener">index.d.ts:113</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Dialogs: 23">
 
 ```ts
-sandkit.enums.ComponentId.Dialogs: 23
+Dialogs: 23
 ```
 
-Defined in: [sandkit/enums/index.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L113)
+</div>
 
-***
+</div>
 
-### GlobalOverlays :id=globaloverlays
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.GlobalOverlays :id=globaloverlays
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L114" target="_blank" rel="noopener">index.d.ts:114</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.GlobalOverlays: 24">
 
 ```ts
-sandkit.enums.ComponentId.GlobalOverlays: 24
+GlobalOverlays: 24
 ```
 
-Defined in: [sandkit/enums/index.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L114)
+</div>
 
-***
+</div>
 
-### Lexicon :id=lexicon
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Lexicon :id=lexicon
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L115" target="_blank" rel="noopener">index.d.ts:115</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Lexicon: 25">
 
 ```ts
-sandkit.enums.ComponentId.Lexicon: 25
+Lexicon: 25
 ```
 
-Defined in: [sandkit/enums/index.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L115)
+</div>
 
-***
+</div>
 
-### ModsScreen :id=modsscreen
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.ModsScreen :id=modsscreen
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L116" target="_blank" rel="noopener">index.d.ts:116</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.ModsScreen: 26">
 
 ```ts
-sandkit.enums.ComponentId.ModsScreen: 26
+ModsScreen: 26
 ```
 
-Defined in: [sandkit/enums/index.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L116)
+</div>
 
-***
+</div>
 
-### CustomMapsScreen :id=custommapsscreen
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.CustomMapsScreen :id=custommapsscreen
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L117" target="_blank" rel="noopener">index.d.ts:117</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.CustomMapsScreen: 27">
 
 ```ts
-sandkit.enums.ComponentId.CustomMapsScreen: 27
+CustomMapsScreen: 27
 ```
 
-Defined in: [sandkit/enums/index.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L117)
+</div>
 
-***
+</div>
 
-### CinematicPanel :id=cinematicpanel
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.CinematicPanel :id=cinematicpanel
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L118" target="_blank" rel="noopener">index.d.ts:118</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.CinematicPanel: 28">
 
 ```ts
-sandkit.enums.ComponentId.CinematicPanel: 28
+CinematicPanel: 28
 ```
 
-Defined in: [sandkit/enums/index.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L118)
+</div>
 
-***
+</div>
 
-### Feedback :id=feedback
+<div class="smt-member-card">
+
+### sandkit.enums.ComponentId.Feedback :id=feedback
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L119" target="_blank" rel="noopener">index.d.ts:119</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ComponentId.Feedback: 29">
 
 ```ts
-sandkit.enums.ComponentId.Feedback: 29
+Feedback: 29
 ```
 
-Defined in: [sandkit/enums/index.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L119)
+</div>
+
+</div>

@@ -6,200 +6,322 @@ Built-in element type ids (prefer API string ids when registering mods).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Sand :id=sand
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Sand :id=sand
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L130" target="_blank" rel="noopener">index.d.ts:130</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Sand: 1">
 
 ```ts
-sandkit.enums.ElementType.Sand: 1
+Sand: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L130)
+</div>
 
-***
+</div>
 
-### Particle :id=particle
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Particle :id=particle
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L131" target="_blank" rel="noopener">index.d.ts:131</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Particle: 2">
 
 ```ts
-sandkit.enums.ElementType.Particle: 2
+Particle: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L131)
+</div>
 
-***
+</div>
 
-### Water :id=water
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Water :id=water
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L132" target="_blank" rel="noopener">index.d.ts:132</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Water: 3">
 
 ```ts
-sandkit.enums.ElementType.Water: 3
+Water: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L132)
+</div>
 
-***
+</div>
 
-### WetSand :id=wetsand
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.WetSand :id=wetsand
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L133" target="_blank" rel="noopener">index.d.ts:133</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.WetSand: 4">
 
 ```ts
-sandkit.enums.ElementType.WetSand: 4
+WetSand: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L133)
+</div>
 
-***
+</div>
 
-### Sandium :id=sandium
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Sandium :id=sandium
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L134" target="_blank" rel="noopener">index.d.ts:134</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Sandium: 5">
 
 ```ts
-sandkit.enums.ElementType.Sandium: 5
+Sandium: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L134)
+</div>
 
-***
+</div>
 
-### Residue :id=residue
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Residue :id=residue
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L135" target="_blank" rel="noopener">index.d.ts:135</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Residue: 6">
 
 ```ts
-sandkit.enums.ElementType.Residue: 6
+Residue: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L135)
+</div>
 
-***
+</div>
 
-### Gold :id=gold
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Gold :id=gold
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L136" target="_blank" rel="noopener">index.d.ts:136</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Gold: 7">
 
 ```ts
-sandkit.enums.ElementType.Gold: 7
+Gold: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L136)
+</div>
 
-***
+</div>
 
-### Gloom :id=gloom
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Gloom :id=gloom
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L137" target="_blank" rel="noopener">index.d.ts:137</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Gloom: 8">
 
 ```ts
-sandkit.enums.ElementType.Gloom: 8
+Gloom: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L137)
+</div>
 
-***
+</div>
 
-### Shake :id=shake
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Shake :id=shake
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L138" target="_blank" rel="noopener">index.d.ts:138</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Shake: 9">
 
 ```ts
-sandkit.enums.ElementType.Shake: 9
+Shake: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L138)
+</div>
 
-***
+</div>
 
-### Steam :id=steam
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Steam :id=steam
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L139" target="_blank" rel="noopener">index.d.ts:139</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Steam: 10">
 
 ```ts
-sandkit.enums.ElementType.Steam: 10
+Steam: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L139)
+</div>
 
-***
+</div>
 
-### Fire :id=fire
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Fire :id=fire
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L140" target="_blank" rel="noopener">index.d.ts:140</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Fire: 11">
 
 ```ts
-sandkit.enums.ElementType.Fire: 11
+Fire: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L140)
+</div>
 
-***
+</div>
 
-### FreezingIce :id=freezingice
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.FreezingIce :id=freezingice
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L141" target="_blank" rel="noopener">index.d.ts:141</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.FreezingIce: 12">
 
 ```ts
-sandkit.enums.ElementType.FreezingIce: 12
+FreezingIce: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L141)
+</div>
 
-***
+</div>
 
-### Flame :id=flame
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Flame :id=flame
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L142" target="_blank" rel="noopener">index.d.ts:142</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Flame: 13">
 
 ```ts
-sandkit.enums.ElementType.Flame: 13
+Flame: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L142)
+</div>
 
-***
+</div>
 
-### BurntResidue :id=burntresidue
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.BurntResidue :id=burntresidue
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L143" target="_blank" rel="noopener">index.d.ts:143</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.BurntResidue: 14">
 
 ```ts
-sandkit.enums.ElementType.BurntResidue: 14
+BurntResidue: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L143)
+</div>
 
-***
+</div>
 
-### Seed :id=seed
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Seed :id=seed
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L144" target="_blank" rel="noopener">index.d.ts:144</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Seed: 15">
 
 ```ts
-sandkit.enums.ElementType.Seed: 15
+Seed: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L144)
+</div>
 
-***
+</div>
 
-### WetSeed :id=wetseed
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.WetSeed :id=wetseed
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L145" target="_blank" rel="noopener">index.d.ts:145</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.WetSeed: 16">
 
 ```ts
-sandkit.enums.ElementType.WetSeed: 16
+WetSeed: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L145)
+</div>
 
-***
+</div>
 
-### Seedling :id=seedling
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Seedling :id=seedling
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L146" target="_blank" rel="noopener">index.d.ts:146</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Seedling: 17">
 
 ```ts
-sandkit.enums.ElementType.Seedling: 17
+Seedling: 17
 ```
 
-Defined in: [sandkit/enums/index.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L146)
+</div>
 
-***
+</div>
 
-### Petalium :id=petalium
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Petalium :id=petalium
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L147" target="_blank" rel="noopener">index.d.ts:147</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Petalium: 18">
 
 ```ts
-sandkit.enums.ElementType.Petalium: 18
+Petalium: 18
 ```
 
-Defined in: [sandkit/enums/index.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L147)
+</div>
 
-***
+</div>
 
-### Lava :id=lava
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Lava :id=lava
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L148" target="_blank" rel="noopener">index.d.ts:148</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Lava: 19">
 
 ```ts
-sandkit.enums.ElementType.Lava: 19
+Lava: 19
 ```
 
-Defined in: [sandkit/enums/index.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L148)
+</div>
 
-***
+</div>
 
-### Basalt :id=basalt
+<div class="smt-member-card">
+
+### sandkit.enums.ElementType.Basalt :id=basalt
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L149" target="_blank" rel="noopener">index.d.ts:149</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ElementType.Basalt: 20">
 
 ```ts
-sandkit.enums.ElementType.Basalt: 20
+Basalt: 20
 ```
 
-Defined in: [sandkit/enums/index.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L149)
+</div>
+
+</div>

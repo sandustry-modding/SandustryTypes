@@ -5,77 +5,82 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### snapToPlayer() :id=snaptoplayer
+<div class="smt-member-card">
+
+### sandkit.api.camera.snapToPlayer :id=snaptoplayer
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L7" target="_blank" rel="noopener">camera.d.ts:7</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.camera.snapToPlayer(): void">
 
 ```ts
-sandkit.api.camera.snapToPlayer(): void
+snapToPlayer(): void
 ```
 
-Defined in: [sandkit/api/camera.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L7)
+</div>
 
 Snap the camera to the player position.
 
-#### Returns
+</div>
 
-`void`
+<div class="smt-member-card">
 
-***
+### sandkit.api.camera.setFocusAtWorld :id=setfocusatworld
 
-### setFocusAtWorld() :id=setfocusatworld
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L15" target="_blank" rel="noopener">camera.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.camera.setFocusAtWorld(worldX: number, worldY: number): boolean">
 
 ```ts
-sandkit.api.camera.setFocusAtWorld(worldX: number, worldY: number): boolean
+setFocusAtWorld(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/camera.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
+
+<div class="smt-member-anchors">
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+</div>
 
 Move camera focus to world coordinates.
 
-#### Parameters
-
-##### worldX
-
-`number`
-
-World x position in pixels.
-
-##### worldY
-
-`number`
-
-World y position in pixels.
-
-#### Returns
-
-`boolean`
-
 True when focus was applied.
 
-***
+</div>
 
-### releaseFocus() :id=releasefocus
+<div class="smt-member-card">
+
+### sandkit.api.camera.releaseFocus :id=releasefocus
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L27" target="_blank" rel="noopener">camera.d.ts:27</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.camera.releaseFocus(options?: object): boolean">
 
 ```ts
-sandkit.api.camera.releaseFocus(options?: object): boolean
+releaseFocus(options?: object): boolean
 ```
 
-Defined in: [sandkit/api/camera.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L27)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| options? | Optional transition duration in milliseconds. |  |
+
+<div class="smt-member-anchors">
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Release scripted focus and return control to the player.
-
-#### Parameters
-
-##### options?
-
-Optional transition duration in milliseconds.
-
-###### durationMs?
-
-`number`
-
-#### Returns
-
-`boolean`
 
 True when focus was released.
 
@@ -84,3 +89,5 @@ True when focus was released.
 ```ts
 const released = api.camera.releaseFocus({ durationMs: 250 });
 ```
+
+</div>

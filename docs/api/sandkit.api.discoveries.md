@@ -5,48 +5,58 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### addElementByType() :id=addelementbytype
+<div class="smt-member-card">
+
+### sandkit.api.discoveries.addElementByType :id=addelementbytype
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L12" target="_blank" rel="noopener">discoveries.d.ts:12</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.discoveries.addElementByType(elementType: ElementType): void">
 
 ```ts
-sandkit.api.discoveries.addElementByType(elementType: ElementType): void
+addElementByType(elementType: ElementType): void
 ```
 
-Defined in: [sandkit/api/discoveries.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L12)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| elementType | [`ElementType`](api/sandkit.api.elements.md?id=elementtype) | Numeric element type id. |
+
+<div class="smt-member-anchors">
+
+##### elementType <!-- {docsify-ignore} -->
+
+</div>
 
 Marks an element type as discovered for the player.
 
-#### Parameters
+</div>
 
-##### elementType
+<div class="smt-member-card">
 
-[`ElementType`](api/sandkit.api.elements.md#elementtype)
+### sandkit.api.discoveries.addTerrainByType :id=addterrainbytype
 
-Numeric element type id.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L17" target="_blank" rel="noopener">discoveries.d.ts:17</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### addTerrainByType() :id=addterrainbytype
+<div class="smt-member-sig" data-sig="sandkit.api.discoveries.addTerrainByType(terrainType: TerrainType): void">
 
 ```ts
-sandkit.api.discoveries.addTerrainByType(terrainType: TerrainType): void
+addTerrainByType(terrainType: TerrainType): void
 ```
 
-Defined in: [sandkit/api/discoveries.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L17)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| terrainType | [`TerrainType`](api/sandkit.api.terrains.worker.md?id=terraintype) | Numeric terrain type id. |
+
+<div class="smt-member-anchors">
+
+##### terrainType <!-- {docsify-ignore} -->
+
+</div>
 
 Marks a terrain type as discovered for the player.
 
-#### Parameters
-
-##### terrainType
-
-[`TerrainType`](api/sandkit.api.terrains.worker.md#terraintype)
-
-Numeric terrain type id.
-
-#### Returns
-
-`void`
+</div>

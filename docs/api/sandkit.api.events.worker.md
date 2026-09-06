@@ -4,156 +4,142 @@
 
 Worker-thread `sandkit.api.events` — subscribe to and emit worker-scoped events.
 
- Worker-only surface; do not use main-thread [sandkit.api.events](api/sandkit.md#events).
+ Worker-only surface; do not use main-thread [sandkit.api.events](api/sandkit.md?id=events).
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### EventGuard :id=eventguard
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.events.EventGuard (worker)</code></p>
-Defined in: [worker/api/events.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L68)
+### sandkit.api.events.EventGuard :id=eventguard
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L68" target="_blank" rel="noopener">events.d.ts:68</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| elementType? | ElementType | Required when subscribing to `element:moved`. Optional on emit. |
+| terrainType? | number | Required when subscribing to `terrain:updated`. Optional on emit. |
+
+<div class="smt-member-anchors">
+
+##### elementType? <!-- {docsify-ignore} -->
+
+##### terrainType? <!-- {docsify-ignore} -->
+
+</div>
 
 Guard filter for worker events.
 
-#### Properties
+</div>
 
-##### elementType?
+<div class="smt-member-card">
 
-```ts
-optional elementType?: ElementType
-```
+### sandkit.api.events.EventEmitOptions :id=eventemitoptions
 
-Defined in: [worker/api/events.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L70)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L83" target="_blank" rel="noopener">events.d.ts:83</a></p>
 
-Required when subscribing to `element:moved`. Optional on emit.
+| Property | Type | Description |
+| --- | --- | --- |
+| guard? | EventGuard |  |
 
-##### terrainType?
+<div class="smt-member-anchors">
 
-```ts
-optional terrainType?: number
-```
+##### guard? <!-- {docsify-ignore} -->
 
-Defined in: [worker/api/events.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L72)
+</div>
 
-Required when subscribing to `terrain:updated`. Optional on emit.
+Options for [emit](?id=emit).
 
-***
+</div>
 
-### EventEmitOptions :id=eventemitoptions
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.events.EventEmitOptions (worker)</code></p>
-Defined in: [worker/api/events.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L83)
+### sandkit.api.events.EventPayloadMap :id=eventpayloadmap
 
-Options for [emit](#emit).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L88" target="_blank" rel="noopener">events.d.ts:88</a></p>
 
-#### Properties
+| Property | Type | Description |
+| --- | --- | --- |
+| element:moved | moved: Record<string, unknown> |  |
+| terrain:updated | updated: Record<string, unknown> |  |
+| ~~terrain:update~~ | update: Record<string, unknown> |  |
+| worker:update:post | update:post: Record<string, unknown> |  |
+| ~~update:post~~ | post: Record<string, unknown> |  |
 
-##### guard?
+<div class="smt-member-anchors">
 
-```ts
-optional guard?: EventGuard
-```
+##### element:moved <!-- {docsify-ignore} -->
 
-Defined in: [worker/api/events.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L84)
+##### terrain:updated <!-- {docsify-ignore} -->
 
-***
+##### ~~terrain:update~~ <!-- {docsify-ignore} -->
 
-### EventPayloadMap :id=eventpayloadmap
+##### worker:update:post <!-- {docsify-ignore} -->
 
-<p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap (worker)</code></p>
-Defined in: [worker/api/events.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L88)
+##### ~~update:post~~ <!-- {docsify-ignore} -->
+
+</div>
 
 Known worker event payloads. Unlisted ids still use `unknown`.
 
-#### Properties
-
-##### element:moved
-
-```ts
-element:moved: Record<string, unknown>
-```
-
-Defined in: [worker/api/events.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L89)
-
-##### terrain:updated
-
-```ts
-terrain:updated: Record<string, unknown>
-```
-
-Defined in: [worker/api/events.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L90)
-
-##### ~~terrain:update~~
-
-```ts
-terrain:update: Record<string, unknown>
-```
-
-Defined in: [worker/api/events.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L92)
-
-###### Deprecated
-
-Use `"terrain:updated"` instead.
-
-##### worker:update:post
-
-```ts
-worker:update:post: Record<string, unknown>
-```
-
-Defined in: [worker/api/events.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L93)
-
-##### ~~update:post~~
-
-```ts
-update:post: Record<string, unknown>
-```
-
-Defined in: [worker/api/events.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L95)
-
-###### Deprecated
-
-Use `"worker:update:post"` instead.
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### EventOnOptions :id=eventonoptions
+<div class="smt-member-card">
+
+### sandkit.api.events.EventOnOptions :id=eventonoptions
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L76" target="_blank" rel="noopener">events.d.ts:76</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.events.EventOnOptions&lt;K *extends* EventId&gt; = K *extends* &quot;element:moved&quot; ? object : K *extends* &quot;terrain:updated&quot; | &quot;terrain:update&quot; ? object : object">
 
 ```ts
 sandkit.api.events.EventOnOptions<K *extends* EventId> = K *extends* "element:moved" ? object : K *extends* "terrain:updated" | "terrain:update" ? object : object
 ```
 
-Defined in: [worker/api/events.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L76)
+</div>
 
-Options for [on](#on).
+Options for [on](?id=on).
 
 #### Type Parameters
 
 ##### K
 
-`K` *extends* [`EventId`](#eventid)
+`K` *extends* [`EventId`](?id=eventid)
 
-***
+</div>
 
-### EventId :id=eventid
+<div class="smt-member-card">
+
+### sandkit.api.events.EventId :id=eventid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L99" target="_blank" rel="noopener">events.d.ts:99</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.events.EventId = LooseString&lt;keyof EventPayloadMap&gt;">
 
 ```ts
-sandkit.api.events.EventId = LooseString<keyof EventPayloadMap>
+EventId = LooseString<keyof EventPayloadMap>
 ```
 
-Defined in: [worker/api/events.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L99)
+</div>
 
 Known worker event names plus any custom string id.
 
-***
+</div>
 
-### EventPayload :id=eventpayload
+<div class="smt-member-card">
+
+### sandkit.api.events.EventPayload :id=eventpayload
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L102" target="_blank" rel="noopener">events.d.ts:102</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.events.EventPayload&lt;K&gt; = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown">
 
 ```ts
 sandkit.api.events.EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
 ```
 
-Defined in: [worker/api/events.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L102)
+</div>
 
 Event payload type for a given event id.
 
@@ -163,15 +149,39 @@ Event payload type for a given event id.
 
 `K`
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### on() :id=on
+<div class="smt-member-card">
+
+### sandkit.api.events.on :id=on
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L46" target="_blank" rel="noopener">events.d.ts:46</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.events.on&lt;K *extends* EventId&gt;(eventId: K, callback: (payload: EventPayload&lt;K&gt;) =&gt; void, options?: EventOnOptions&lt;K&gt;): () =&gt; void">
 
 ```ts
 sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void, options?: EventOnOptions<K>): () => void
 ```
 
-Defined in: [worker/api/events.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L46)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| eventId | `K` | Registered event name. |
+| callback | (`payload`: [`EventPayload`](?id=eventpayload)\<`K`\>) => `void` | Called when the event is emitted. |
+| options? | [`EventOnOptions`](?id=eventonoptions)\<`K`\> | Required guard for filtered events. |
+
+<div class="smt-member-anchors">
+
+##### eventId <!-- {docsify-ignore} -->
+
+##### callback <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Subscribe to a worker event. Returns an unsubscribe function.
 
@@ -179,29 +189,7 @@ Subscribe to a worker event. Returns an unsubscribe function.
 
 ##### K
 
-`K` *extends* [`EventId`](#eventid)
-
-#### Parameters
-
-##### eventId
-
-`K`
-
-Registered event name.
-
-##### callback
-
-(`payload`: [`EventPayload`](#eventpayload)\<`K`\>) => `void`
-
-Called when the event is emitted.
-
-##### options?
-
-[`EventOnOptions`](#eventonoptions)\<`K`\>
-
-Required guard for filtered events.
-
-#### Returns
+`K` *extends* [`EventId`](?id=eventid)
 
 () => `void`
 
@@ -241,15 +229,37 @@ api.events.on("worker:update:post", (payload) => {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### emit() :id=emit
+<div class="smt-member-card">
+
+### sandkit.api.events.emit :id=emit
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L61" target="_blank" rel="noopener">events.d.ts:61</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.events.emit&lt;K *extends* EventId&gt;(eventId: K, payload: EventPayload&lt;K&gt;, options?: EventEmitOptions): void">
 
 ```ts
 sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>, options?: EventEmitOptions): void
 ```
 
-Defined in: [worker/api/events.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L61)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| eventId | `K` | Registered event name. |
+| payload | [`EventPayload`](?id=eventpayload)\<`K`\> | Serializable payload passed to listeners. |
+| options? | [`EventEmitOptions`](?id=eventemitoptions) | Optional guard forwarded to filtered listeners. |
+
+<div class="smt-member-anchors">
+
+##### eventId <!-- {docsify-ignore} -->
+
+##### payload <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Emit a worker event with a payload to subscribers.
 
@@ -257,32 +267,10 @@ Emit a worker event with a payload to subscribers.
 
 ##### K
 
-`K` *extends* [`EventId`](#eventid)
-
-#### Parameters
-
-##### eventId
-
-`K`
-
-Registered event name.
-
-##### payload
-
-[`EventPayload`](#eventpayload)\<`K`\>
-
-Serializable payload passed to listeners.
-
-##### options?
-
-[`EventEmitOptions`](#eventemitoptions)
-
-Optional guard forwarded to filtered listeners.
-
-#### Returns
-
-`void`
+`K` *extends* [`EventId`](?id=eventid)
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

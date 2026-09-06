@@ -10,10 +10,24 @@ Available as `sandkit.api.blueprints`.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### BlueprintStructure :id=blueprintstructure
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.blueprints.BlueprintStructure</code></p>
-Defined in: [sandkit/api/blueprints.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L34)
+### sandkit.api.blueprints.BlueprintStructure :id=blueprintstructure
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L34" target="_blank" rel="noopener">blueprints.d.ts:34</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| x | number |  |
+| y | number |  |
+
+<div class="smt-member-anchors">
+
+##### x <!-- {docsify-ignore} -->
+
+##### y <!-- {docsify-ignore} -->
+
+</div>
 
 Serialized structure entry used in blueprints.
 
@@ -23,76 +37,74 @@ Serialized structure entry used in blueprints.
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### x
-
-```ts
-x: number
-```
-
-Defined in: [sandkit/api/blueprints.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L35)
-
-##### y
-
-```ts
-y: number
-```
-
-Defined in: [sandkit/api/blueprints.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L36)
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### serializeStructures() :id=serializestructures
+<div class="smt-member-card">
+
+### sandkit.api.blueprints.serializeStructures :id=serializestructures
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L18" target="_blank" rel="noopener">blueprints.d.ts:18</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.blueprints.serializeStructures(structures: readonly Structure[]): BlueprintStructure[]">
 
 ```ts
-sandkit.api.blueprints.serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
+serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
 ```
 
-Defined in: [sandkit/api/blueprints.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L18)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| structures | readonly [`Structure`](api/sandkit.api.structures.worker.md?id=structure)[] | Structure instances to encode. |
+
+<div class="smt-member-anchors">
+
+##### structures <!-- {docsify-ignore} -->
+
+</div>
 
 Serialize live structure instances into blueprint records.
 
-#### Parameters
-
-##### structures
-
-readonly [`Structure`](api/sandkit.api.structures.worker.md#structure)[]
-
-Structure instances to encode.
-
-#### Returns
-
-[`BlueprintStructure`](#blueprintstructure)[]
+[`BlueprintStructure`](?id=blueprintstructure)[]
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### localizeStructures() :id=localizestructures
+<div class="smt-member-card">
+
+### sandkit.api.blueprints.localizeStructures :id=localizestructures
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L29" target="_blank" rel="noopener">blueprints.d.ts:29</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.blueprints.localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]">
 
 ```ts
-sandkit.api.blueprints.localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]
+localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]
 ```
 
-Defined in: [sandkit/api/blueprints.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L29)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| structures | readonly [`BlueprintStructure`](?id=blueprintstructure)[] | Blueprint structure records to localize. |
+
+<div class="smt-member-anchors">
+
+##### structures <!-- {docsify-ignore} -->
+
+</div>
 
 Localize blueprint structure records for placement.
 
-#### Parameters
-
-##### structures
-
-readonly [`BlueprintStructure`](#blueprintstructure)[]
-
-Blueprint structure records to localize.
-
-#### Returns
-
-[`BlueprintStructure`](#blueprintstructure)[]
+[`BlueprintStructure`](?id=blueprintstructure)[]
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

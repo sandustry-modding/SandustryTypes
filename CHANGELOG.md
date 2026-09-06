@@ -7,16 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- `npm run docs:links` checks markdown links against Docsify routes and heading ids
+
 ### Changed
 
-- Docs sidebar groups Electron (overview + API) and mod files (TypeScript types + JSON Schema) instead of listing `electron-bridge`, `configs`, and `electron` as separate top-level items
-- Docs sidebar lists Full API reference and Changelog above Electron
-- Search is the place to browse namespaces.
+- Generated API members use a request-style card (signature, argument table, description) with the site gold and orange colours
+- In-page TypeDoc hashes are rewritten to Docsify `?id=` heading links
+- Docs sidebar is a static list of home, search, full reference, changelog, Electron, and mod-file pages
+- Search is the place to open generated Sandkit API pages.
   Empty query lists names and one-line descriptions.
   Nested members stay on the namespace page and in typed search.
 
 ### Removed
 
+- TypeDoc `References` re-export lists at the bottom of generated API pages
 - `docs/modules.md` alias page.
   Old `#/modules` URLs still open Search.
 - Accidental `docs/api/_media.search.md` copy of the Search page.

@@ -4,78 +4,92 @@
 
 `sandkit.engine.api.prismaline` — prismaline resource consume and availability.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### consume() :id=consume
+<div class="smt-member-card">
+
+### sandkit.engine.api.prismaline.consume :id=consume
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L15" target="_blank" rel="noopener">prismaline.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.prismaline.consume(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.prismaline.consume(...args: unknown[]): unknown
+consume(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismaline.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Consume prismaline from the player or world.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.prismaline.getAvailable :id=getavailable
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L20" target="_blank" rel="noopener">prismaline.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getAvailable() :id=getavailable
+<div class="smt-member-sig" data-sig="sandkit.engine.api.prismaline.getAvailable(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.prismaline.getAvailable(...args: unknown[]): unknown
+getAvailable(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismaline.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return available prismaline amount.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.prismaline.getConsumed :id=getconsumed
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L25" target="_blank" rel="noopener">prismaline.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getConsumed() :id=getconsumed
+<div class="smt-member-sig" data-sig="sandkit.engine.api.prismaline.getConsumed(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.prismaline.getConsumed(...args: unknown[]): unknown
+getConsumed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prismaline.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return total prismaline consumed so far.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

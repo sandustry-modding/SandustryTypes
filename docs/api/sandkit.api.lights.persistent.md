@@ -4,39 +4,37 @@ Lights that persist in the world save.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### createAtWorld() :id=createatworld
+<div class="smt-member-card">
+
+### sandkit.api.lights.persistent.createAtWorld :id=createatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L93" target="_blank" rel="noopener">lights.d.ts:93</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.lights.persistent.createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions): unknown">
 
 ```ts
-sandkit.api.lights.persistent.createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions): unknown
+createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions): unknown
 ```
 
-Defined in: [sandkit/api/lights.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L93)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` | World X coordinate in pixels. |
+| worldY | `number` | World Y coordinate in pixels. |
+| options? | [`PersistentLightOptions`](api/sandkit.api.lights.md?id=persistentlightoptions) | Brightness, size, color, and persistence options. |
+
+<div class="smt-member-anchors">
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Create a persistent light at world coordinates.
-
-#### Parameters
-
-##### worldX
-
-`number`
-
-World X coordinate in pixels.
-
-##### worldY
-
-`number`
-
-World Y coordinate in pixels.
-
-##### options?
-
-[`PersistentLightOptions`](api/sandkit.api.lights.md#persistentlightoptions)
-
-Brightness, size, color, and persistence options.
-
-#### Returns
-
-`unknown`
 
 #### Example
 
@@ -52,96 +50,99 @@ const light = api.lights.persistent.createAtWorld(
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### removeAtWorld() :id=removeatworld
+<div class="smt-member-card">
+
+### sandkit.api.lights.persistent.removeAtWorld :id=removeatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L107" target="_blank" rel="noopener">lights.d.ts:107</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.lights.persistent.removeAtWorld(worldX: number, worldY: number): void">
 
 ```ts
-sandkit.api.lights.persistent.removeAtWorld(worldX: number, worldY: number): void
+removeAtWorld(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L107)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` | World X coordinate in pixels. |
+| worldY | `number` | World Y coordinate in pixels. |
+
+<div class="smt-member-anchors">
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+</div>
 
 Remove the persistent light at world coordinates.
 
-#### Parameters
-
-##### worldX
-
-`number`
-
-World X coordinate in pixels.
-
-##### worldY
-
-`number`
-
-World Y coordinate in pixels.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### fadeAtWorld() :id=fadeatworld
+<div class="smt-member-card">
+
+### sandkit.api.lights.persistent.fadeAtWorld :id=fadeatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L118" target="_blank" rel="noopener">lights.d.ts:118</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.lights.persistent.fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void">
 
 ```ts
-sandkit.api.lights.persistent.fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void
+fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L118)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` | World X coordinate in pixels. |
+| worldY | `number` | World Y coordinate in pixels. |
+| durationMs? | `number` | Fade duration in milliseconds. |
+
+<div class="smt-member-anchors">
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+##### durationMs? <!-- {docsify-ignore} -->
+
+</div>
 
 Fade out the persistent light at world coordinates over durationMs.
 
-#### Parameters
-
-##### worldX
-
-`number`
-
-World X coordinate in pixels.
-
-##### worldY
-
-`number`
-
-World Y coordinate in pixels.
-
-##### durationMs?
-
-`number`
-
-Fade duration in milliseconds.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### markDirty() :id=markdirty
+<div class="smt-member-card">
+
+### sandkit.api.lights.persistent.markDirty :id=markdirty
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L125" target="_blank" rel="noopener">lights.d.ts:125</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.lights.persistent.markDirty(): void">
 
 ```ts
-sandkit.api.lights.persistent.markDirty(): void
+markDirty(): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L125)
+</div>
 
 Mark persistent lights dirty so they are saved on the next flush.
 
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

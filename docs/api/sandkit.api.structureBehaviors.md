@@ -2,55 +2,34 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### registerConveyorType() :id=registerconveyortype
+<div class="smt-member-card">
+
+### sandkit.api.structureBehaviors.registerConveyorType :id=registerconveyortype
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L24" target="_blank" rel="noopener">structureBehaviors.d.ts:24</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.structureBehaviors.registerConveyorType(structureId: string, options?: object): void">
 
 ```ts
-sandkit.api.structureBehaviors.registerConveyorType(structureId: string, options?: object): void
+registerConveyorType(structureId: string, options?: object): void
 ```
 
-Defined in: [sandkit/api/structureBehaviors.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L24)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| structureId | `string` | Structure type id string. |
+| options? | Transport offset, velocity, distance, and run direction. |  |
+
+<div class="smt-member-anchors">
+
+##### structureId <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Register conveyor behavior for a structure type.
-
-#### Parameters
-
-##### structureId
-
-`string`
-
-Structure type id string.
-
-##### options?
-
-Transport offset, velocity, distance, and run direction.
-
-###### transportOffset?
-
-[`Vector2`](api/shared.player.md#vector2)
-
-###### velocity?
-
-[`Vector2`](api/shared.player.md#vector2)
-
-###### maxTransportDistance?
-
-`number`
-
-###### transportHeight?
-
-`number`
-
-###### runWith?
-
-`"left"` \| `"right"`
-
-###### skipQueued?
-
-`boolean`
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -61,48 +40,32 @@ api.structureBehaviors.registerConveyorType(
 );
 ```
 
-***
+</div>
 
-### registerLauncherType() :id=registerlaunchertype
+<div class="smt-member-card">
+
+### sandkit.api.structureBehaviors.registerLauncherType :id=registerlaunchertype
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L39" target="_blank" rel="noopener">structureBehaviors.d.ts:39</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.structureBehaviors.registerLauncherType(definition: object): void">
 
 ```ts
-sandkit.api.structureBehaviors.registerLauncherType(definition: object): void
+registerLauncherType(definition: object): void
 ```
 
-Defined in: [sandkit/api/structureBehaviors.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L39)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| definition | Launcher type ids, velocities, and optional shared buffer key. |  |
+
+<div class="smt-member-anchors">
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register launcher behavior for up, left, and right launcher types.
 
-#### Parameters
-
-##### definition
-
-Launcher type ids, velocities, and optional shared buffer key.
-
-###### upType
-
-`string`
-
-###### leftType
-
-`string`
-
-###### rightType
-
-`string`
-
-###### velocity
-
-\[`number`, `number`\]
-
-###### softDropVelocity
-
-`number`
-
-###### runTickSharedBufferKey?
-
-`string`
-
-#### Returns
-
-`void`
+</div>

@@ -10,80 +10,130 @@ Physical behaviour category for an element.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Solid :id=solid
+<div class="smt-member-card">
+
+### sandkit.api.elements.MatterType.Solid :id=solid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L42" target="_blank" rel="noopener">elements.d.ts:42</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.MatterType.Solid: 1">
 
 ```ts
-sandkit.api.elements.MatterType.Solid: 1
+Solid: 1
 ```
 
-Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L42)
+</div>
 
-***
+</div>
 
-### Liquid :id=liquid
+<div class="smt-member-card">
+
+### sandkit.api.elements.MatterType.Liquid :id=liquid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L43" target="_blank" rel="noopener">elements.d.ts:43</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.MatterType.Liquid: 2">
 
 ```ts
-sandkit.api.elements.MatterType.Liquid: 2
+Liquid: 2
 ```
 
-Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L43)
+</div>
 
-***
+</div>
 
-### Particle :id=particle
+<div class="smt-member-card">
+
+### sandkit.api.elements.MatterType.Particle :id=particle
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L44" target="_blank" rel="noopener">elements.d.ts:44</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.MatterType.Particle: 3">
 
 ```ts
-sandkit.api.elements.MatterType.Particle: 3
+Particle: 3
 ```
 
-Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L44)
+</div>
 
-***
+</div>
 
-### Gas :id=gas
+<div class="smt-member-card">
+
+### sandkit.api.elements.MatterType.Gas :id=gas
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L45" target="_blank" rel="noopener">elements.d.ts:45</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.MatterType.Gas: 4">
 
 ```ts
-sandkit.api.elements.MatterType.Gas: 4
+Gas: 4
 ```
 
-Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L45)
+</div>
 
-***
+</div>
 
-### Static :id=static
+<div class="smt-member-card">
+
+### sandkit.api.elements.MatterType.Static :id=static
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L46" target="_blank" rel="noopener">elements.d.ts:46</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.MatterType.Static: 5">
 
 ```ts
-sandkit.api.elements.MatterType.Static: 5
+Static: 5
 ```
 
-Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L46)
+</div>
 
-***
+</div>
 
-### Slushy :id=slushy
+<div class="smt-member-card">
+
+### sandkit.api.elements.MatterType.Slushy :id=slushy
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L47" target="_blank" rel="noopener">elements.d.ts:47</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.MatterType.Slushy: 6">
 
 ```ts
-sandkit.api.elements.MatterType.Slushy: 6
+Slushy: 6
 ```
 
-Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L47)
+</div>
 
-***
+</div>
 
-### Wisp :id=wisp
+<div class="smt-member-card">
+
+### sandkit.api.elements.MatterType.Wisp :id=wisp
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L48" target="_blank" rel="noopener">elements.d.ts:48</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.MatterType.Wisp: 7">
 
 ```ts
-sandkit.api.elements.MatterType.Wisp: 7
+Wisp: 7
 ```
 
-Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L48)
+</div>
 
-***
+</div>
 
-### Powder :id=powder
+<div class="smt-member-card">
+
+### sandkit.api.elements.MatterType.Powder :id=powder
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L49" target="_blank" rel="noopener">elements.d.ts:49</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.MatterType.Powder: 8">
 
 ```ts
-sandkit.api.elements.MatterType.Powder: 8
+Powder: 8
 ```
 
-Defined in: [shared/api/elements.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L49)
+</div>
+
+</div>

@@ -2,12 +2,29 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### ArtifactLocation :id=artifactlocation
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.maps.ArtifactLocation</code></p>
-Defined in: [sandkit/api/maps.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L42)
+### sandkit.api.maps.ArtifactLocation :id=artifactlocation
 
-Artifact location entry from [getArtifactLocations](#getartifactlocations).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L42" target="_blank" rel="noopener">maps.d.ts:42</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| cellX | number |  |
+| cellY | number |  |
+| name | string |  |
+
+<div class="smt-member-anchors">
+
+##### cellX <!-- {docsify-ignore} -->
+
+##### cellY <!-- {docsify-ignore} -->
+
+##### name <!-- {docsify-ignore} -->
+
+</div>
+
+Artifact location entry from [getArtifactLocations](?id=getartifactlocations).
 
 #### Indexable
 
@@ -15,38 +32,26 @@ Artifact location entry from [getArtifactLocations](#getartifactlocations).
 [key: string]: unknown
 ```
 
-#### Properties
+</div>
 
-##### cellX
+<div class="smt-member-card">
 
-```ts
-cellX: number
-```
+### sandkit.api.maps.AvailableMapV1 :id=availablemapv1
 
-Defined in: [sandkit/api/maps.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L43)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L50" target="_blank" rel="noopener">maps.d.ts:50</a></p>
 
-##### cellY
+| Property | Type | Description |
+| --- | --- | --- |
+| id | string | Map identifier passed to [start](?id=start). |
+| name? | string | Display name or translation key. |
 
-```ts
-cellY: number
-```
+<div class="smt-member-anchors">
 
-Defined in: [sandkit/api/maps.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L44)
+##### id <!-- {docsify-ignore} -->
 
-##### name
+##### name? <!-- {docsify-ignore} -->
 
-```ts
-name: string
-```
-
-Defined in: [sandkit/api/maps.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L45)
-
-***
-
-### AvailableMapV1 :id=availablemapv1
-
-<p class="smt-member-path"><code>sandkit.api.maps.AvailableMapV1</code></p>
-Defined in: [sandkit/api/maps.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L50)
+</div>
 
 Available map entry shape.
 
@@ -56,83 +61,75 @@ Available map entry shape.
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### id
-
-```ts
-id: string
-```
-
-Defined in: [sandkit/api/maps.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L52)
-
-Map identifier passed to [start](#start).
-
-##### name?
-
-```ts
-optional name?: string
-```
-
-Defined in: [sandkit/api/maps.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L54)
-
-Display name or translation key.
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getAvailable() :id=getavailable
+<div class="smt-member-card">
+
+### sandkit.api.maps.getAvailable :id=getavailable
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L18" target="_blank" rel="noopener">maps.d.ts:18</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.maps.getAvailable(): readonly Readonly&lt;AvailableMapV1&gt;[]">
 
 ```ts
-sandkit.api.maps.getAvailable(): readonly Readonly<AvailableMapV1>[]
+getAvailable(): readonly Readonly<AvailableMapV1>[]
 ```
 
-Defined in: [sandkit/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L18)
+</div>
 
 Return maps the player can start.
 
-#### Returns
+readonly `Readonly`\<[`AvailableMapV1`](?id=availablemapv1)\>[]
 
-readonly `Readonly`\<[`AvailableMapV1`](#availablemapv1)\>[]
+</div>
 
-***
+<div class="smt-member-card">
 
-### start() :id=start
+### sandkit.api.maps.start :id=start
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L23" target="_blank" rel="noopener">maps.d.ts:23</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.maps.start(mapId: string): boolean">
 
 ```ts
-sandkit.api.maps.start(mapId: string): boolean
+start(mapId: string): boolean
 ```
 
-Defined in: [sandkit/api/maps.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L23)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| mapId | `string` | Custom map identifier. |
+
+<div class="smt-member-anchors">
+
+##### mapId <!-- {docsify-ignore} -->
+
+</div>
 
 Start a map by id. Return true when start succeeds.
 
-#### Parameters
+</div>
 
-##### mapId
+<div class="smt-member-card">
 
-`string`
+### sandkit.api.maps.getArtifactLocations :id=getartifactlocations
 
-Custom map identifier.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L39" target="_blank" rel="noopener">maps.d.ts:39</a></p>
 
-#### Returns
-
-`boolean`
-
-***
-
-### getArtifactLocations() :id=getartifactlocations
+<div class="smt-member-sig" data-sig="sandkit.api.maps.getArtifactLocations(): readonly ArtifactLocation[]">
 
 ```ts
-sandkit.api.maps.getArtifactLocations(): readonly ArtifactLocation[]
+getArtifactLocations(): readonly ArtifactLocation[]
 ```
 
-Defined in: [sandkit/api/maps.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L39)
+</div>
 
 Return artifact marker locations for the active map.
 
-#### Returns
-
-readonly [`ArtifactLocation`](#artifactlocation)[]
+readonly [`ArtifactLocation`](?id=artifactlocation)[]
 
 #### Example
 
@@ -148,16 +145,4 @@ api.events.on("game:ready", () => {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-## References <!-- {docsify-ignore} -->
-
-### getActive :id=getactive
-
-<p class="smt-member-path"><code>sandkit.api.maps.getActive</code></p>
-Re-exports [getActive](api/sandkit.api.maps.worker.md#getactive)
-
-***
-
-### ActiveMapV1 :id=activemapv1
-
-<p class="smt-member-path"><code>sandkit.api.maps.ActiveMapV1</code></p>
-Re-exports [ActiveMapV1](api/sandkit.api.maps.worker.md#activemapv1)
+</div>

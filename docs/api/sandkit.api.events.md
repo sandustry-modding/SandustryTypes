@@ -5,600 +5,155 @@ Main thread only. The `events` object is frozen; do not replace `on` or `emit`.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### PlayerCollisionPreparePayload :id=playercollisionpreparepayload
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.events.PlayerCollisionPreparePayload</code></p>
-Defined in: [sandkit/api/events.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L177)
+### sandkit.api.events.PlayerCollisionPreparePayload :id=playercollisionpreparepayload
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L177" target="_blank" rel="noopener">events.d.ts:177</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| phaseThroughTerrain | boolean | When true, terrain collision is skipped this sub-step. |
+| phaseThroughStructures | boolean | When true, structure collision is skipped this sub-step. |
+| maxStepCells | number | Max cells the player can step up when blocked horizontally (1–8). |
+
+<div class="smt-member-anchors">
+
+##### phaseThroughTerrain <!-- {docsify-ignore} -->
+
+##### phaseThroughStructures <!-- {docsify-ignore} -->
+
+##### maxStepCells <!-- {docsify-ignore} -->
+
+</div>
 
 Mutable payload for `player:collision:prepare`.
 Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
 
-#### Properties
+</div>
 
-##### phaseThroughTerrain
+<div class="smt-member-card">
 
-```ts
-phaseThroughTerrain: boolean
-```
+### sandkit.api.events.EventPayloadMap :id=eventpayloadmap
 
-Defined in: [sandkit/api/events.d.ts:179](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L179)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L187" target="_blank" rel="noopener">events.d.ts:187</a></p>
 
-When true, terrain collision is skipped this sub-step.
+| Property | Type | Description |
+| --- | --- | --- |
+| item:used | used: object |  |
+| frame:render | render: Record<string, unknown> |  |
+| scene:game:started | game:started: Record<string, unknown> |  |
+| ~~scene:started:game~~ | started:game: Record<string, unknown> |  |
+| earlyAccess:completed | completed: Record<string, unknown> |  |
+| ~~earlyAccess:complete~~ | complete: Record<string, unknown> |  |
+| terrain:destroyed | destroyed: object |  |
+| fog:cellRevealed | cellRevealed: object |  |
+| upgrade:levelSelected | levelSelected: object |  |
+| building:placed | placed: object |  |
+| building:removing | removing: object | Fires before `building:removed`. |
+| building:removed | removed: object |  |
+| structures:placed | placed: object |  |
+| structures:removed | removed: object |  |
+| structures:moved | moved: object |  |
+| game:ready | ready: Record<string, unknown> |  |
+| game:started | started: Record<string, unknown> |  |
+| tutorial:stepChanged | stepChanged: object |  |
+| tutorial:completed | completed: object |  |
+| tech:unlocked | unlocked: object |  |
+| worldItem:pickedUp | pickedUp: object |  |
+| resource:collected | collected: object |  |
+| player:collision:prepare | collision:prepare: PlayerCollisionPreparePayload |  |
+| player:moved | moved: object |  |
 
-##### phaseThroughStructures
+<div class="smt-member-anchors">
 
-```ts
-phaseThroughStructures: boolean
-```
+##### item:used <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/events.d.ts:181](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L181)
+##### frame:render <!-- {docsify-ignore} -->
 
-When true, structure collision is skipped this sub-step.
+##### scene:game:started <!-- {docsify-ignore} -->
 
-##### maxStepCells
+##### ~~scene:started:game~~ <!-- {docsify-ignore} -->
 
-```ts
-maxStepCells: number
-```
+##### earlyAccess:completed <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/events.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L183)
+##### ~~earlyAccess:complete~~ <!-- {docsify-ignore} -->
 
-Max cells the player can step up when blocked horizontally (1–8).
+##### terrain:destroyed <!-- {docsify-ignore} -->
 
-***
+##### fog:cellRevealed <!-- {docsify-ignore} -->
 
-### EventPayloadMap :id=eventpayloadmap
+##### upgrade:levelSelected <!-- {docsify-ignore} -->
 
-<p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap</code></p>
-Defined in: [sandkit/api/events.d.ts:187](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L187)
+##### building:placed <!-- {docsify-ignore} -->
+
+##### building:removing <!-- {docsify-ignore} -->
+
+##### building:removed <!-- {docsify-ignore} -->
+
+##### structures:placed <!-- {docsify-ignore} -->
+
+##### structures:removed <!-- {docsify-ignore} -->
+
+##### structures:moved <!-- {docsify-ignore} -->
+
+##### game:ready <!-- {docsify-ignore} -->
+
+##### game:started <!-- {docsify-ignore} -->
+
+##### tutorial:stepChanged <!-- {docsify-ignore} -->
+
+##### tutorial:completed <!-- {docsify-ignore} -->
+
+##### tech:unlocked <!-- {docsify-ignore} -->
+
+##### worldItem:pickedUp <!-- {docsify-ignore} -->
+
+##### resource:collected <!-- {docsify-ignore} -->
+
+##### player:collision:prepare <!-- {docsify-ignore} -->
+
+##### player:moved <!-- {docsify-ignore} -->
+
+</div>
 
 Known event payloads. Unlisted ids still use `unknown`.
 
-#### Properties
-
-##### item:used
-
-```ts
-item:used: object
-```
-
-Defined in: [sandkit/api/events.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L188)
-
-###### itemId
-
-```ts
-itemId: string
-```
-
-###### useId
-
-```ts
-useId: string
-```
-
-###### kind
-
-```ts
-kind: string
-```
-
-###### cellX
-
-```ts
-cellX: number
-```
-
-###### cellY
-
-```ts
-cellY: number
-```
-
-###### prepared
-
-```ts
-prepared: Readonly<Record<string, unknown>>
-```
-
-##### frame:render
-
-```ts
-frame:render: Record<string, unknown>
-```
-
-Defined in: [sandkit/api/events.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L196)
-
-##### scene:game:started
-
-```ts
-scene:game:started: Record<string, unknown>
-```
-
-Defined in: [sandkit/api/events.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L197)
-
-##### ~~scene:started:game~~
-
-```ts
-scene:started:game: Record<string, unknown>
-```
-
-Defined in: [sandkit/api/events.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L199)
-
-###### Deprecated
-
-Use `"scene:game:started"` instead.
-
-##### earlyAccess:completed
-
-```ts
-earlyAccess:completed: Record<string, unknown>
-```
-
-Defined in: [sandkit/api/events.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L200)
-
-##### ~~earlyAccess:complete~~
-
-```ts
-earlyAccess:complete: Record<string, unknown>
-```
-
-Defined in: [sandkit/api/events.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L202)
-
-###### Deprecated
-
-Use `"earlyAccess:completed"` instead.
-
-##### terrain:destroyed
-
-```ts
-terrain:destroyed: object
-```
-
-Defined in: [sandkit/api/events.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L203)
-
-###### cellX
-
-```ts
-cellX: number
-```
-
-###### cellY
-
-```ts
-cellY: number
-```
-
-###### cellType
-
-```ts
-cellType: number
-```
-
-###### ~~x?~~
-
-```ts
-optional x?: number
-```
-
-###### Deprecated
-
-Use cellX instead.
-
-###### ~~y?~~
-
-```ts
-optional y?: number
-```
-
-###### Deprecated
-
-Use cellY instead.
-
-##### fog:cellRevealed
-
-```ts
-fog:cellRevealed: object
-```
-
-Defined in: [sandkit/api/events.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L212)
-
-###### cellX
-
-```ts
-cellX: number
-```
-
-###### cellY
-
-```ts
-cellY: number
-```
-
-###### ~~x?~~
-
-```ts
-optional x?: number
-```
-
-###### Deprecated
-
-Use cellX instead.
-
-###### ~~y?~~
-
-```ts
-optional y?: number
-```
-
-###### Deprecated
-
-Use cellY instead.
-
-##### upgrade:levelSelected
-
-```ts
-upgrade:levelSelected: object
-```
-
-Defined in: [sandkit/api/events.d.ts:220](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L220)
-
-###### itemId
-
-```ts
-itemId: string
-```
-
-###### upgradeId
-
-```ts
-upgradeId: string
-```
-
-###### level
-
-```ts
-level: number
-```
-
-##### building:placed
-
-```ts
-building:placed: object
-```
-
-Defined in: [sandkit/api/events.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L225)
-
-###### structure
-
-```ts
-structure: Record<string, unknown>
-```
-
-###### x
-
-```ts
-x: number
-```
-
-###### y
-
-```ts
-y: number
-```
-
-###### isBatch
-
-```ts
-isBatch: boolean
-```
-
-###### isCopied
-
-```ts
-isCopied: boolean
-```
-
-##### building:removing
-
-```ts
-building:removing: object
-```
-
-Defined in: [sandkit/api/events.d.ts:233](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L233)
-
-Fires before `building:removed`.
-
-###### structureId
-
-```ts
-structureId: string
-```
-
-###### x
-
-```ts
-x: number
-```
-
-###### y
-
-```ts
-y: number
-```
-
-###### byMove
-
-```ts
-byMove: boolean
-```
-
-##### building:removed
-
-```ts
-building:removed: object
-```
-
-Defined in: [sandkit/api/events.d.ts:239](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L239)
-
-###### structureId
-
-```ts
-structureId: string
-```
-
-###### x
-
-```ts
-x: number
-```
-
-###### y
-
-```ts
-y: number
-```
-
-###### isBatch
-
-```ts
-isBatch: boolean
-```
-
-##### structures:placed
-
-```ts
-structures:placed: object
-```
-
-Defined in: [sandkit/api/events.d.ts:245](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L245)
-
-###### structures
-
-```ts
-structures: unknown[]
-```
-
-##### structures:removed
-
-```ts
-structures:removed: object
-```
-
-Defined in: [sandkit/api/events.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L246)
-
-###### removed
-
-```ts
-removed: unknown[]
-```
-
-###### structures?
-
-```ts
-optional structures?: unknown[]
-```
-
-###### byMove
-
-```ts
-byMove: boolean
-```
-
-##### structures:moved
-
-```ts
-structures:moved: object
-```
-
-Defined in: [sandkit/api/events.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L251)
-
-###### moved
-
-```ts
-moved: unknown[]
-```
-
-###### failedToPlace
-
-```ts
-failedToPlace: unknown[]
-```
-
-##### game:ready
-
-```ts
-game:ready: Record<string, unknown>
-```
-
-Defined in: [sandkit/api/events.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L255)
-
-##### game:started
-
-```ts
-game:started: Record<string, unknown>
-```
-
-Defined in: [sandkit/api/events.d.ts:256](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L256)
-
-##### tutorial:stepChanged
-
-```ts
-tutorial:stepChanged: object
-```
-
-Defined in: [sandkit/api/events.d.ts:257](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L257)
-
-###### step
-
-```ts
-step: unknown
-```
-
-##### tutorial:completed
-
-```ts
-tutorial:completed: object
-```
-
-Defined in: [sandkit/api/events.d.ts:258](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L258)
-
-###### skipped
-
-```ts
-skipped: boolean
-```
-
-##### tech:unlocked
-
-```ts
-tech:unlocked: object
-```
-
-Defined in: [sandkit/api/events.d.ts:259](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L259)
-
-###### techId
-
-```ts
-techId: string
-```
-
-###### suppressMusic
-
-```ts
-suppressMusic: boolean
-```
-
-##### worldItem:pickedUp
-
-```ts
-worldItem:pickedUp: object
-```
-
-Defined in: [sandkit/api/events.d.ts:263](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L263)
-
-###### worldItemId
-
-```ts
-worldItemId: number
-```
-
-###### type
-
-```ts
-type: string
-```
-
-##### resource:collected
-
-```ts
-resource:collected: object
-```
-
-Defined in: [sandkit/api/events.d.ts:267](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L267)
-
-###### resourceId
-
-```ts
-resourceId: string
-```
-
-###### amount
-
-```ts
-amount: number
-```
-
-###### sourceKind
-
-```ts
-sourceKind: string
-```
-
-###### cellX
-
-```ts
-cellX: number
-```
-
-###### cellY
-
-```ts
-cellY: number
-```
-
-##### player:collision:prepare
-
-```ts
-player:collision:prepare: PlayerCollisionPreparePayload
-```
-
-Defined in: [sandkit/api/events.d.ts:274](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L274)
-
-##### player:moved
-
-```ts
-player:moved: object
-```
-
-Defined in: [sandkit/api/events.d.ts:275](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L275)
-
-###### dt?
-
-```ts
-optional dt?: number
-```
-
-Simulation step duration in seconds.
-`0` on teleports. The event runs after collision; landing already
-zeroes `velocity.y`. Vanilla gravity is applied after this event.
-
-###### state?
-
-```ts
-optional state?: unknown
-```
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### EventId :id=eventid
+<div class="smt-member-card">
+
+### sandkit.api.events.EventId :id=eventid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L287" target="_blank" rel="noopener">events.d.ts:287</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.events.EventId = LooseString&lt;keyof EventPayloadMap&gt;">
 
 ```ts
-sandkit.api.events.EventId = LooseString<keyof EventPayloadMap>
+EventId = LooseString<keyof EventPayloadMap>
 ```
 
-Defined in: [sandkit/api/events.d.ts:287](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L287)
+</div>
 
 Known event names plus any custom string id.
 
-***
+</div>
 
-### EventPayload :id=eventpayload
+<div class="smt-member-card">
+
+### sandkit.api.events.EventPayload :id=eventpayload
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L290" target="_blank" rel="noopener">events.d.ts:290</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.events.EventPayload&lt;K&gt; = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown">
 
 ```ts
 sandkit.api.events.EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
 ```
 
-Defined in: [sandkit/api/events.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L290)
+</div>
 
 Event payload type for a given event id.
 
@@ -608,15 +163,36 @@ Event payload type for a given event id.
 
 `K`
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### on() :id=on
+<div class="smt-member-card">
+
+### sandkit.api.events.on :id=on
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L158" target="_blank" rel="noopener">events.d.ts:158</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.events.on&lt;K *extends* EventId&gt;(eventId: K, callback: (payload: EventPayload&lt;K&gt;) =&gt; void): () =&gt; void">
 
 ```ts
 sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void
 ```
 
-Defined in: [sandkit/api/events.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L158)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| eventId | `K` | Registered event name. |
+| callback | (`payload`: [`EventPayload`](?id=eventpayload)\<`K`\>) => `void` | Called when the event is emitted. |
+
+<div class="smt-member-anchors">
+
+##### eventId <!-- {docsify-ignore} -->
+
+##### callback <!-- {docsify-ignore} -->
+
+</div>
 
 Subscribes to an event. Returns an unsubscribe function.
 
@@ -624,23 +200,7 @@ Subscribes to an event. Returns an unsubscribe function.
 
 ##### K
 
-`K` *extends* [`EventId`](#eventid)
-
-#### Parameters
-
-##### eventId
-
-`K`
-
-Registered event name.
-
-##### callback
-
-(`payload`: [`EventPayload`](#eventpayload)\<`K`\>) => `void`
-
-Called when the event is emitted.
-
-#### Returns
+`K` *extends* [`EventId`](?id=eventid)
 
 () => `void`
 
@@ -812,15 +372,34 @@ api.events.on("resource:collected", (payload) => {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### emit() :id=emit
+<div class="smt-member-card">
+
+### sandkit.api.events.emit :id=emit
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L171" target="_blank" rel="noopener">events.d.ts:171</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.events.emit&lt;K *extends* EventId&gt;(eventId: K, payload: EventPayload&lt;K&gt;): void">
 
 ```ts
 sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>): void
 ```
 
-Defined in: [sandkit/api/events.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L171)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| eventId | `K` | Registered event name. |
+| payload | [`EventPayload`](?id=eventpayload)\<`K`\> | Serializable payload passed to listeners. |
+
+<div class="smt-member-anchors">
+
+##### eventId <!-- {docsify-ignore} -->
+
+##### payload <!-- {docsify-ignore} -->
+
+</div>
 
 Emits an event with a payload to all subscribers.
 
@@ -828,26 +407,10 @@ Emits an event with a payload to all subscribers.
 
 ##### K
 
-`K` *extends* [`EventId`](#eventid)
-
-#### Parameters
-
-##### eventId
-
-`K`
-
-Registered event name.
-
-##### payload
-
-[`EventPayload`](#eventpayload)\<`K`\>
-
-Serializable payload passed to listeners.
-
-#### Returns
-
-`void`
+`K` *extends* [`EventId`](?id=eventid)
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

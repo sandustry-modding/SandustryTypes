@@ -10,107 +10,86 @@ Temporary lights live under [lights.temporary](api/sandkit.api.lights.temporary.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### createAtWorld() :id=createatworld
+<div class="smt-member-card">
+
+### sandkit.api.effects.createAtWorld :id=createatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L26" target="_blank" rel="noopener">effects.d.ts:26</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.effects.createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void">
 
 ```ts
-sandkit.api.effects.createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
-Defined in: [worker/api/effects.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L26)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| effectId | `string` | Registered effect id. |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
+| options? | [`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions) | Duration, radius, and intensity settings. |
+
+<div class="smt-member-anchors">
+
+##### effectId <!-- {docsify-ignore} -->
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Spawn a named screen-space or world effect.
 
-#### Parameters
-
-##### effectId
-
-`string`
-
-Registered effect id.
-
-##### worldX
-
-`number`
-
-World x position in pixels.
-
-##### worldY
-
-`number`
-
-World y position in pixels.
-
-##### options?
-
-[`EffectOptions`](api/sandkit.api.effects.md#effectoptions)
-
-Duration, radius, and intensity settings.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~createEffectAtWorld()~~ :id=createeffectatworld
+<div class="smt-member-card">
+
+### ~~sandkit.api.effects.createEffectAtWorld~~ :id=createeffectatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L38" target="_blank" rel="noopener">effects.d.ts:38</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void">
 
 ```ts
-sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
-Defined in: [worker/api/effects.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L38)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| effectId | `string` |  |
+| worldX | `number` |  |
+| worldY | `number` |  |
+| options? | [`EffectOptions`](api/sandkit.api.effects.md?id=effectoptions) |  |
 
-##### effectId
+<div class="smt-member-anchors">
 
-`string`
+##### effectId <!-- {docsify-ignore} -->
 
-##### worldX
+##### worldX <!-- {docsify-ignore} -->
 
-`number`
+##### worldY <!-- {docsify-ignore} -->
 
-##### worldY
+##### options? <!-- {docsify-ignore} -->
 
-`number`
-
-##### options?
-
-[`EffectOptions`](api/sandkit.api.effects.md#effectoptions)
-
-#### Returns
-
-`void`
+</div>
 
 #### Deprecated
 
-Use [createAtWorld](#createatworld) instead.
+Use [createAtWorld](?id=createatworld) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-## References <!-- {docsify-ignore} -->
-
-### EffectOptions :id=effectoptions
-
-<p class="smt-member-path"><code>sandkit.api.effects.EffectOptions (worker)</code></p>
-Re-exports [EffectOptions](api/sandkit.api.effects.md#effectoptions)
-
-***
-
-### ParticleEffectOptions :id=particleeffectoptions
-
-<p class="smt-member-path"><code>sandkit.api.effects.ParticleEffectOptions (worker)</code></p>
-Re-exports [ParticleEffectOptions](api/sandkit.api.effects.md#particleeffectoptions)
-
-***
-
-### createParticlesAtWorld :id=createparticlesatworld
-
-<p class="smt-member-path"><code>sandkit.api.effects.createParticlesAtWorld (worker)</code></p>
-Re-exports [createParticlesAtWorld](api/sandkit.api.effects.md#createparticlesatworld)
+</div>

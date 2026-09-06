@@ -4,84 +4,100 @@ Player building unlock helpers.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### unlockById() :id=unlockbyid
+<div class="smt-member-card">
+
+### sandkit.api.player.buildings.unlockById :id=unlockbyid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L136" target="_blank" rel="noopener">player.d.ts:136</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.buildings.unlockById(structureId: string): void">
 
 ```ts
-sandkit.api.player.buildings.unlockById(structureId: string): void
+unlockById(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L136)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| structureId | `string` | Registered structure id string. |
+
+<div class="smt-member-anchors">
+
+##### structureId <!-- {docsify-ignore} -->
+
+</div>
 
 Unlock a structure type for building.
 
-#### Parameters
-
-##### structureId
-
-`string`
-
-Registered structure id string.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~unlockByType()~~ :id=unlockbytype
+<div class="smt-member-card">
+
+### ~~sandkit.api.player.buildings.unlockByType~~ :id=unlockbytype
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L143" target="_blank" rel="noopener">player.d.ts:143</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.buildings.unlockByType(structureId: string): void">
 
 ```ts
-sandkit.api.player.buildings.unlockByType(structureId: string): void
+unlockByType(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L143)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| structureId | `string` |  |
 
-##### structureId
+<div class="smt-member-anchors">
 
-`string`
+##### structureId <!-- {docsify-ignore} -->
 
-#### Returns
-
-`void`
+</div>
 
 #### Deprecated
 
-Use [unlockById](#unlockbyid) instead.
+Use [unlockById](?id=unlockbyid) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### removeById() :id=removebyid
+<div class="smt-member-card">
+
+### sandkit.api.player.buildings.removeById :id=removebyid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L152" target="_blank" rel="noopener">player.d.ts:152</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.buildings.removeById(structureId: string): void">
 
 ```ts
-sandkit.api.player.buildings.removeById(structureId: string): void
+removeById(structureId: string): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:152](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L152)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| structureId | `string` | Registered structure id string. |
+
+<div class="smt-member-anchors">
+
+##### structureId <!-- {docsify-ignore} -->
+
+</div>
 
 Remove a structure unlock from the player.
 
-#### Parameters
-
-##### structureId
-
-`string`
-
-Registered structure id string.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

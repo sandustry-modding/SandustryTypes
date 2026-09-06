@@ -7,156 +7,170 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### setPositionAtWorld() :id=setpositionatworld
+<div class="smt-member-card">
+
+### sandkit.api.player.setPositionAtWorld :id=setpositionatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L33" target="_blank" rel="noopener">player.d.ts:33</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.setPositionAtWorld(worldX: number, worldY: number): void">
 
 ```ts
-sandkit.api.player.setPositionAtWorld(worldX: number, worldY: number): void
+setPositionAtWorld(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L33)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
+
+<div class="smt-member-anchors">
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+</div>
 
 Set the player world position.
 
-#### Parameters
-
-##### worldX
-
-`number`
-
-World x position in pixels.
-
-##### worldY
-
-`number`
-
-World y position in pixels.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~setWorldPosition()~~ :id=setworldposition
+<div class="smt-member-card">
+
+### ~~sandkit.api.player.setWorldPosition~~ :id=setworldposition
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L40" target="_blank" rel="noopener">player.d.ts:40</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.setWorldPosition(worldX: number, worldY: number): void">
 
 ```ts
-sandkit.api.player.setWorldPosition(worldX: number, worldY: number): void
+setWorldPosition(worldX: number, worldY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L40)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` |  |
+| worldY | `number` |  |
 
-##### worldX
+<div class="smt-member-anchors">
 
-`number`
+##### worldX <!-- {docsify-ignore} -->
 
-##### worldY
+##### worldY <!-- {docsify-ignore} -->
 
-`number`
-
-#### Returns
-
-`void`
+</div>
 
 #### Deprecated
 
-Use [setPositionAtWorld](#setpositionatworld) instead.
+Use [setPositionAtWorld](?id=setpositionatworld) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### setVelocity() :id=setvelocity
+<div class="smt-member-card">
+
+### sandkit.api.player.setVelocity :id=setvelocity
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L50" target="_blank" rel="noopener">player.d.ts:50</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.setVelocity(velocityX: number, velocityY: number): void">
 
 ```ts
-sandkit.api.player.setVelocity(velocityX: number, velocityY: number): void
+setVelocity(velocityX: number, velocityY: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L50)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| velocityX | `number` | Horizontal velocity in pixels per second. |
+| velocityY | `number` | Vertical velocity in pixels per second. |
+
+<div class="smt-member-anchors">
+
+##### velocityX <!-- {docsify-ignore} -->
+
+##### velocityY <!-- {docsify-ignore} -->
+
+</div>
 
 Set the player velocity.
 
-#### Parameters
-
-##### velocityX
-
-`number`
-
-Horizontal velocity in pixels per second.
-
-##### velocityY
-
-`number`
-
-Vertical velocity in pixels per second.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### setMovementSpeedMultiplier() :id=setmovementspeedmultiplier
+<div class="smt-member-card">
+
+### sandkit.api.player.setMovementSpeedMultiplier :id=setmovementspeedmultiplier
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L60" target="_blank" rel="noopener">player.d.ts:60</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.setMovementSpeedMultiplier(multiplier: number): void">
 
 ```ts
-sandkit.api.player.setMovementSpeedMultiplier(multiplier: number): void
+setMovementSpeedMultiplier(multiplier: number): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L60)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| multiplier | `number` | Speed scale factor (`1` is default walk). `0` freezes movement. Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly `1`. |
+
+<div class="smt-member-anchors">
+
+##### multiplier <!-- {docsify-ignore} -->
+
+</div>
 
 Set the movement speed multiplier.
 
-#### Parameters
-
-##### multiplier
-
-`number`
-
-Speed scale factor (`1` is default walk). `0` freezes movement.
-Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly `1`.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### setMovementMode() :id=setmovementmode
+<div class="smt-member-card">
+
+### sandkit.api.player.setMovementMode :id=setmovementmode
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L70" target="_blank" rel="noopener">player.d.ts:70</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.setMovementMode(mode: &quot;normal&quot; | &quot;hover&quot;): boolean">
 
 ```ts
-sandkit.api.player.setMovementMode(mode: "normal" | "hover"): boolean
+setMovementMode(mode: "normal" | "hover"): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L70)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| mode | `"normal"` \\| `"hover"` | `"normal"` for default physics, or `"hover"` for hover flight. |
+
+<div class="smt-member-anchors">
+
+##### mode <!-- {docsify-ignore} -->
+
+</div>
 
 Set movement mode to normal or hover.
-
-#### Parameters
-
-##### mode
-
-`"normal"` \| `"hover"`
-
-`"normal"` for default physics, or `"hover"` for hover flight.
-
-#### Returns
-
-`boolean`
 
 True when the mode changes.
 
@@ -164,23 +178,25 @@ True when the mode changes.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### isOnGround() :id=isonground
+<div class="smt-member-card">
+
+### sandkit.api.player.isOnGround :id=isonground
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L81" target="_blank" rel="noopener">player.d.ts:81</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.isOnGround(): boolean">
 
 ```ts
-sandkit.api.player.isOnGround(): boolean
+isOnGround(): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L81)
+</div>
 
 Return true when the player is on ground.
 Tests solid cells 1 pixel below the hitbox. Do not use `player.onGround`
 on the store snapshot — that flag is not updated during play.
-
-#### Returns
-
-`boolean`
 
 True when the player touches solid ground.
 
@@ -188,55 +204,58 @@ True when the player touches solid ground.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### teleportToGround() :id=teleporttoground
+<div class="smt-member-card">
+
+### sandkit.api.player.teleportToGround :id=teleporttoground
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L88" target="_blank" rel="noopener">player.d.ts:88</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.teleportToGround(): void">
 
 ```ts
-sandkit.api.player.teleportToGround(): void
+teleportToGround(): void
 ```
 
-Defined in: [sandkit/api/player.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L88)
+</div>
 
 Move the player down until ground is found.
-
-#### Returns
-
-`void`
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### isPositionClearAtWorld() :id=ispositionclearatworld
+<div class="smt-member-card">
+
+### sandkit.api.player.isPositionClearAtWorld :id=ispositionclearatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L99" target="_blank" rel="noopener">player.d.ts:99</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.isPositionClearAtWorld(worldX: number, worldY: number): boolean">
 
 ```ts
-sandkit.api.player.isPositionClearAtWorld(worldX: number, worldY: number): boolean
+isPositionClearAtWorld(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L99)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` | World x position in pixels to test. |
+| worldY | `number` | World y position in pixels to test. |
+
+<div class="smt-member-anchors">
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when the world position has no collision.
-
-#### Parameters
-
-##### worldX
-
-`number`
-
-World x position in pixels to test.
-
-##### worldY
-
-`number`
-
-World y position in pixels to test.
-
-#### Returns
-
-`boolean`
 
 True when the player hitbox fits at the position.
 
@@ -244,62 +263,41 @@ True when the player hitbox fits at the position.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~isWorldPositionClear()~~ :id=isworldpositionclear
+<div class="smt-member-card">
+
+### ~~sandkit.api.player.isWorldPositionClear~~ :id=isworldpositionclear
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L106" target="_blank" rel="noopener">player.d.ts:106</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.isWorldPositionClear(worldX: number, worldY: number): boolean">
 
 ```ts
-sandkit.api.player.isWorldPositionClear(worldX: number, worldY: number): boolean
+isWorldPositionClear(worldX: number, worldY: number): boolean
 ```
 
-Defined in: [sandkit/api/player.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L106)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` |  |
+| worldY | `number` |  |
 
-##### worldX
+<div class="smt-member-anchors">
 
-`number`
+##### worldX <!-- {docsify-ignore} -->
 
-##### worldY
+##### worldY <!-- {docsify-ignore} -->
 
-`number`
-
-#### Returns
-
-`boolean`
+</div>
 
 #### Deprecated
 
-Use [isPositionClearAtWorld](#ispositionclearatworld) instead.
+Use [isPositionClearAtWorld](?id=ispositionclearatworld) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-## References <!-- {docsify-ignore} -->
-
-### getPositionAtWorld :id=getpositionatworld
-
-<p class="smt-member-path"><code>sandkit.api.player.getPositionAtWorld</code></p>
-Re-exports [getPositionAtWorld](api/sandkit.api.player.worker.md#getpositionatworld)
-
-***
-
-### isCollidingWithCell :id=iscollidingwithcell
-
-<p class="smt-member-path"><code>sandkit.api.player.isCollidingWithCell</code></p>
-Re-exports [isCollidingWithCell](api/sandkit.api.player.worker.md#iscollidingwithcell)
-
-***
-
-### isWithinRadiusOfCell :id=iswithinradiusofcell
-
-<p class="smt-member-path"><code>sandkit.api.player.isWithinRadiusOfCell</code></p>
-Re-exports [isWithinRadiusOfCell](api/sandkit.api.player.worker.md#iswithinradiusofcell)
-
-***
-
-### getWorldPosition :id=getworldposition
-
-<p class="smt-member-path"><code>sandkit.api.player.getWorldPosition</code></p>
-Re-exports [getWorldPosition](api/sandkit.api.player.worker.md#getworldposition)
+</div>

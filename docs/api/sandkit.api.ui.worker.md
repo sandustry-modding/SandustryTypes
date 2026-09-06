@@ -10,164 +10,134 @@ Main thread adds richer UI APIs on top of this shape.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### I18nTextKey :id=i18ntextkey
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.ui.I18nTextKey (worker)</code></p>
-Defined in: [shared/api/ui.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L25)
+### sandkit.api.ui.I18nTextKey :id=i18ntextkey
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L25" target="_blank" rel="noopener">ui.d.ts:25</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| key | string | Namespaced translation key (for example `ui\|save\|save`). |
+| params? | Record<string, string \| number> | Values merged into the translated string. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+##### params? <!-- {docsify-ignore} -->
+
+</div>
 
 Translation key with optional parameter substitution.
 
-#### Properties
+</div>
 
-##### key
+<div class="smt-member-card">
 
-```ts
-key: string
-```
+### sandkit.api.ui.I18nTranslatable :id=i18ntranslatable
 
-Defined in: [shared/api/ui.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L27)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L33" target="_blank" rel="noopener">ui.d.ts:33</a></p>
 
-Namespaced translation key (for example `ui|save|save`).
+| Property | Type | Description |
+| --- | --- | --- |
+| \_\_translatable | true |  |
+| key | string |  |
+| fallback | string |  |
 
-##### params?
+<div class="smt-member-anchors">
 
-```ts
-optional params?: Record<string, string | number>
-```
+##### \_\_translatable <!-- {docsify-ignore} -->
 
-Defined in: [shared/api/ui.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L29)
+##### key <!-- {docsify-ignore} -->
 
-Values merged into the translated string.
+##### fallback <!-- {docsify-ignore} -->
 
-***
-
-### I18nTranslatable :id=i18ntranslatable
-
-<p class="smt-member-path"><code>sandkit.api.ui.I18nTranslatable (worker)</code></p>
-Defined in: [shared/api/ui.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L33)
+</div>
 
 Value returned by `sandkit.api.i18n.translatable`.
 
-#### Properties
+</div>
 
-##### \_\_translatable
+<div class="smt-member-card">
 
-```ts
-\_\_translatable: true
-```
+### sandkit.api.ui.ToastOptions :id=toastoptions
 
-Defined in: [shared/api/ui.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L34)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L40" target="_blank" rel="noopener">ui.d.ts:40</a></p>
 
-##### key
+| Property | Type | Description |
+| --- | --- | --- |
+| cooldown? | number | Minimum ms before the same toast can show again. |
+| cooldownKey? | string | Dedupe key paired with [ToastOptions.cooldown](?id=cooldown). Defaults to the message string or `message.key`. |
+| duration? | number \| false | Auto-dismiss delay in ms. Default `5000`. Set `false` to keep the toast until another toast replaces it. |
+| variant? | string & object \| "danger" \| "hint" \| "hole" | Visual style applied to the toast body. |
 
-```ts
-key: string
-```
+<div class="smt-member-anchors">
 
-Defined in: [shared/api/ui.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L35)
+##### cooldown? <!-- {docsify-ignore} -->
 
-##### fallback
+##### cooldownKey? <!-- {docsify-ignore} -->
 
-```ts
-fallback: string
-```
+##### duration? <!-- {docsify-ignore} -->
 
-Defined in: [shared/api/ui.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L36)
+##### variant? <!-- {docsify-ignore} -->
 
-***
+</div>
 
-### ToastOptions :id=toastoptions
+Cooldown, style, and auto-dismiss options for [toast](?id=toast).
 
-<p class="smt-member-path"><code>sandkit.api.ui.ToastOptions (worker)</code></p>
-Defined in: [shared/api/ui.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L40)
-
-Cooldown, style, and auto-dismiss options for [toast](#toast).
-
-#### Properties
-
-##### cooldown?
-
-```ts
-optional cooldown?: number
-```
-
-Defined in: [shared/api/ui.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L42)
-
-Minimum ms before the same toast can show again.
-
-##### cooldownKey?
-
-```ts
-optional cooldownKey?: string
-```
-
-Defined in: [shared/api/ui.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L47)
-
-Dedupe key paired with [ToastOptions.cooldown](#cooldown).
-Defaults to the message string or `message.key`.
-
-##### duration?
-
-```ts
-optional duration?: number | false
-```
-
-Defined in: [shared/api/ui.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L52)
-
-Auto-dismiss delay in ms. Default `5000`.
-Set `false` to keep the toast until another toast replaces it.
-
-##### variant?
-
-```ts
-optional variant?: string & object | "danger" | "hint" | "hole"
-```
-
-Defined in: [shared/api/ui.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L54)
-
-Visual style applied to the toast body.
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### LocalizedText :id=localizedtext
+<div class="smt-member-card">
+
+### sandkit.api.ui.LocalizedText :id=localizedtext
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L22" target="_blank" rel="noopener">ui.d.ts:22</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.LocalizedText = string | I18nTextKey | I18nTranslatable">
 
 ```ts
-sandkit.api.ui.LocalizedText = string | I18nTextKey | I18nTranslatable
+LocalizedText = string | I18nTextKey | I18nTranslatable
 ```
 
-Defined in: [shared/api/ui.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L22)
+</div>
 
 Plain text, translation key object, or i18n translatable value.
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### toast() :id=toast
+<div class="smt-member-card">
+
+### sandkit.api.ui.toast :id=toast
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L19" target="_blank" rel="noopener">ui.d.ts:19</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.toast(message: LocalizedText, options?: ToastOptions): void">
 
 ```ts
-sandkit.api.ui.toast(message: LocalizedText, options?: ToastOptions): void
+toast(message: LocalizedText, options?: ToastOptions): void
 ```
 
-Defined in: [shared/api/ui.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L19)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| message | [`LocalizedText`](?id=localizedtext) | Plain text, translation key, or translatable value. |
+| options? | [`ToastOptions`](?id=toastoptions) | Cooldown, style, and auto-dismiss options. |
+
+<div class="smt-member-anchors">
+
+##### message <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Show a short on-screen toast message.
-
-#### Parameters
-
-##### message
-
-[`LocalizedText`](#localizedtext)
-
-Plain text, translation key, or translatable value.
-
-##### options?
-
-[`ToastOptions`](#toastoptions)
-
-Cooldown, style, and auto-dismiss options.
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -176,3 +146,5 @@ Cooldown, style, and auto-dismiss options.
 ```ts
 api.ui.toast({ key: "mods|example|workerToast" });
 ```
+
+</div>

@@ -6,40 +6,66 @@ High-level action channel (weapon, building, tool, mod).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Weapon :id=weapon
+<div class="smt-member-card">
+
+### sandkit.enums.ActionType.Weapon :id=weapon
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L25" target="_blank" rel="noopener">index.d.ts:25</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ActionType.Weapon: 1">
 
 ```ts
-sandkit.enums.ActionType.Weapon: 1
+Weapon: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L25)
+</div>
 
-***
+</div>
 
-### Building :id=building
+<div class="smt-member-card">
+
+### sandkit.enums.ActionType.Building :id=building
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L26" target="_blank" rel="noopener">index.d.ts:26</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ActionType.Building: 2">
 
 ```ts
-sandkit.enums.ActionType.Building: 2
+Building: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L26)
+</div>
 
-***
+</div>
 
-### Tool :id=tool
+<div class="smt-member-card">
+
+### sandkit.enums.ActionType.Tool :id=tool
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L27" target="_blank" rel="noopener">index.d.ts:27</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ActionType.Tool: 3">
 
 ```ts
-sandkit.enums.ActionType.Tool: 3
+Tool: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L27)
+</div>
 
-***
+</div>
 
-### Mod :id=mod
+<div class="smt-member-card">
+
+### sandkit.enums.ActionType.Mod :id=mod
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L28" target="_blank" rel="noopener">index.d.ts:28</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ActionType.Mod: 4">
 
 ```ts
-sandkit.enums.ActionType.Mod: 4
+Mod: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L28)
+</div>
+
+</div>

@@ -6,40 +6,66 @@ Top-level game scene (menu, intro, deploy, in-game).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### MainMenu :id=mainmenu
+<div class="smt-member-card">
+
+### sandkit.enums.Scene.MainMenu :id=mainmenu
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L251" target="_blank" rel="noopener">index.d.ts:251</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Scene.MainMenu: 1">
 
 ```ts
-sandkit.enums.Scene.MainMenu: 1
+MainMenu: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L251)
+</div>
 
-***
+</div>
 
-### Intro :id=intro
+<div class="smt-member-card">
+
+### sandkit.enums.Scene.Intro :id=intro
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L252" target="_blank" rel="noopener">index.d.ts:252</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Scene.Intro: 2">
 
 ```ts
-sandkit.enums.Scene.Intro: 2
+Intro: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L252)
+</div>
 
-***
+</div>
 
-### Deploy :id=deploy
+<div class="smt-member-card">
+
+### sandkit.enums.Scene.Deploy :id=deploy
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L253" target="_blank" rel="noopener">index.d.ts:253</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Scene.Deploy: 3">
 
 ```ts
-sandkit.enums.Scene.Deploy: 3
+Deploy: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L253)
+</div>
 
-***
+</div>
 
-### Game :id=game
+<div class="smt-member-card">
+
+### sandkit.enums.Scene.Game :id=game
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L254" target="_blank" rel="noopener">index.d.ts:254</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Scene.Game: 4">
 
 ```ts
-sandkit.enums.Scene.Game: 4
+Game: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L254)
+</div>
+
+</div>

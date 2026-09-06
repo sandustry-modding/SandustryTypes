@@ -2,89 +2,119 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### FieldId :id=fieldid
+<div class="smt-member-card">
+
+### sandkit.api.settings.FieldId :id=fieldid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L34" target="_blank" rel="noopener">settings.d.ts:34</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.settings.FieldId = LooseString&lt;never&gt;">
 
 ```ts
-sandkit.api.settings.FieldId = LooseString<never>
+FieldId = LooseString<never>
 ```
 
-Defined in: [sandkit/api/settings.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L34)
+</div>
 
 Settings field id. Any string is allowed.
 
-***
+</div>
 
-### ConfigValueV1 :id=configvaluev1
+<div class="smt-member-card">
+
+### sandkit.api.settings.ConfigValueV1 :id=configvaluev1
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L37" target="_blank" rel="noopener">settings.d.ts:37</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.settings.ConfigValueV1 = string | number | boolean | null">
 
 ```ts
-sandkit.api.settings.ConfigValueV1 = string | number | boolean | null
+ConfigValueV1 = string | number | boolean | null
 ```
 
-Defined in: [sandkit/api/settings.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L37)
+</div>
 
 Settings field value shape.
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### get() :id=get
+<div class="smt-member-card">
+
+### sandkit.api.settings.get :id=get
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L15" target="_blank" rel="noopener">settings.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.settings.get(fieldId: string &amp; object): ConfigValueV1 | undefined">
 
 ```ts
-sandkit.api.settings.get(fieldId: string & object): ConfigValueV1 | undefined
+get(fieldId: string & object): ConfigValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/settings.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| fieldId | `string` & `object` | Settings field identifier. |
+
+<div class="smt-member-anchors">
+
+##### fieldId <!-- {docsify-ignore} -->
+
+</div>
 
 Return a settings field value by id.
 
-#### Parameters
+[`ConfigValueV1`](?id=configvaluev1) \| `undefined`
 
-##### fieldId
+</div>
 
-`string` & `object`
+<div class="smt-member-card">
 
-Settings field identifier.
+### sandkit.api.settings.getAll :id=getall
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L17" target="_blank" rel="noopener">settings.d.ts:17</a></p>
 
-[`ConfigValueV1`](#configvaluev1) \| `undefined`
-
-***
-
-### getAll() :id=getall
+<div class="smt-member-sig" data-sig="sandkit.api.settings.getAll(): Readonly&lt;Record&lt;string, ConfigValueV1&gt;&gt;">
 
 ```ts
-sandkit.api.settings.getAll(): Readonly<Record<string, ConfigValueV1>>
+getAll(): Readonly<Record<string, ConfigValueV1>>
 ```
 
-Defined in: [sandkit/api/settings.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L17)
+</div>
 
 Return all settings as a read-only map.
 
-#### Returns
+`Readonly`\<`Record`\<`string`, [`ConfigValueV1`](?id=configvaluev1)\>\>
 
-`Readonly`\<`Record`\<`string`, [`ConfigValueV1`](#configvaluev1)\>\>
+</div>
 
-***
+<div class="smt-member-card">
 
-### onChange() :id=onchange
+### sandkit.api.settings.onChange :id=onchange
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L29" target="_blank" rel="noopener">settings.d.ts:29</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.settings.onChange(callback: (values: Readonly&lt;Record&lt;string, ConfigValueV1&gt;&gt;) =&gt; void): () =&gt; void">
 
 ```ts
-sandkit.api.settings.onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void
+onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void
 ```
 
-Defined in: [sandkit/api/settings.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L29)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| callback | (`values`: `Readonly`\<`Record`\<`string`, [`ConfigValueV1`](?id=configvaluev1)\>\>) => `void` | Called with the full settings map after a change. |
+
+<div class="smt-member-anchors">
+
+##### callback <!-- {docsify-ignore} -->
+
+</div>
 
 Subscribe to settings changes. Return an unsubscribe function.
-
-#### Parameters
-
-##### callback
-
-(`values`: `Readonly`\<`Record`\<`string`, [`ConfigValueV1`](#configvaluev1)\>\>) => `void`
-
-Called with the full settings map after a change.
-
-#### Returns
 
 () => `void`
 
@@ -95,3 +125,5 @@ const unsubscribe = api.settings.onChange((values) => {
   applySettings(values);
 });
 ```
+
+</div>

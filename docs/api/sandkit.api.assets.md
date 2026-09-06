@@ -5,132 +5,133 @@ Main thread only.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### AssetProviderV1 :id=assetproviderv1
+<div class="smt-member-card">
+
+### sandkit.api.assets.AssetProviderV1 :id=assetproviderv1
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L7" target="_blank" rel="noopener">assets.d.ts:7</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.assets.AssetProviderV1 = object">
 
 ```ts
-sandkit.api.assets.AssetProviderV1 = object
+AssetProviderV1 = object
 ```
 
-Defined in: [sandkit/api/assets.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L7)
+</div>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| id | ` ${string}:${string}:${string} ` |  |
+| kind | string |  |
+| localId? | string |  |
+| modId? | number |  |
+| modName | string |  |
+
+<div class="smt-member-anchors">
+
+##### id <!-- {docsify-ignore} -->
+
+##### kind <!-- {docsify-ignore} -->
+
+##### localId? <!-- {docsify-ignore} -->
+
+##### modId? <!-- {docsify-ignore} -->
+
+##### modName <!-- {docsify-ignore} -->
+
+</div>
 
 Describes a mod or pack that supplies assets for a kind.
 
-#### Properties
-
-##### id
-
-```ts
-id: ` ${string}:${string}:${string} `
-```
-
-Defined in: [sandkit/api/assets.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L8)
-
-##### kind
-
-```ts
-kind: string
-```
-
-Defined in: [sandkit/api/assets.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L9)
-
-##### localId?
-
-```ts
-optional localId?: string
-```
-
-Defined in: [sandkit/api/assets.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L10)
-
-##### modId?
-
-```ts
-optional modId?: number
-```
-
-Defined in: [sandkit/api/assets.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L11)
-
-##### modName
-
-```ts
-modName: string
-```
-
-Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L12)
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getUrl() :id=geturl
+<div class="smt-member-card">
+
+### sandkit.api.assets.getUrl :id=geturl
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L18" target="_blank" rel="noopener">assets.d.ts:18</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.assets.getUrl(relativePath: string): string">
 
 ```ts
-sandkit.api.assets.getUrl(relativePath: string): string
+getUrl(relativePath: string): string
 ```
 
-Defined in: [sandkit/api/assets.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L18)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| relativePath | `string` | Path relative to the calling mod folder. |
+
+<div class="smt-member-anchors">
+
+##### relativePath <!-- {docsify-ignore} -->
+
+</div>
 
 Resolves a path under the mod folder to a loadable URL.
 
-#### Parameters
+</div>
 
-##### relativePath
+<div class="smt-member-card">
 
-`string`
+### sandkit.api.assets.getSelectedProvider :id=getselectedprovider
 
-Path relative to the calling mod folder.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L23" target="_blank" rel="noopener">assets.d.ts:23</a></p>
 
-#### Returns
-
-`string`
-
-***
-
-### getSelectedProvider() :id=getselectedprovider
+<div class="smt-member-sig" data-sig="sandkit.api.assets.getSelectedProvider(kind: string): AssetProviderV1 | null">
 
 ```ts
-sandkit.api.assets.getSelectedProvider(kind: string): AssetProviderV1 | null
+getSelectedProvider(kind: string): AssetProviderV1 | null
 ```
 
-Defined in: [sandkit/api/assets.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L23)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| kind | `string` | Asset kind identifier. |
+
+<div class="smt-member-anchors">
+
+##### kind <!-- {docsify-ignore} -->
+
+</div>
 
 Returns the selected provider for an asset kind, or null.
 
-#### Parameters
+[`AssetProviderV1`](?id=assetproviderv1) \| `null`
 
-##### kind
+</div>
 
-`string`
+<div class="smt-member-card">
 
-Asset kind identifier.
+### sandkit.api.assets.selectProvider :id=selectprovider
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L29" target="_blank" rel="noopener">assets.d.ts:29</a></p>
 
-[`AssetProviderV1`](#assetproviderv1) \| `null`
-
-***
-
-### selectProvider() :id=selectprovider
+<div class="smt-member-sig" data-sig="sandkit.api.assets.selectProvider(kind: string, providerId: string | null): boolean">
 
 ```ts
-sandkit.api.assets.selectProvider(kind: string, providerId: string | null): boolean
+selectProvider(kind: string, providerId: string | null): boolean
 ```
 
-Defined in: [sandkit/api/assets.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L29)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| kind | `string` | Asset kind identifier. |
+| providerId | `string` \\| `null` | Provider id from [getSelectedProvider](?id=getselectedprovider), or null to clear. |
+
+<div class="smt-member-anchors">
+
+##### kind <!-- {docsify-ignore} -->
+
+##### providerId <!-- {docsify-ignore} -->
+
+</div>
 
 Selects a provider for an asset kind. Returns true on success.
 
-#### Parameters
-
-##### kind
-
-`string`
-
-Asset kind identifier.
-
-##### providerId
-
-`string` \| `null`
-
-Provider id from [getSelectedProvider](#getselectedprovider), or null to clear.
-
-#### Returns
-
-`boolean`
+</div>

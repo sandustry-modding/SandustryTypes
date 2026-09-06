@@ -4,7 +4,7 @@
 
 `sandkit.engine.api.colorPicker` — structure color palette UI helpers.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
@@ -20,8 +20,6 @@ Defined in: [sandkit/engine/api/colorPicker.d.ts:12](https://github.com/sandustr
 
 Sentinel value for cycling through predefined colors.
 
-***
-
 ### NO\_COLOR
 
 ```ts
@@ -32,8 +30,6 @@ Defined in: [sandkit/engine/api/colorPicker.d.ts:14](https://github.com/sandustr
 
 Sentinel value for no color selected.
 
-***
-
 ### PREDEFINED\_COLORS
 
 ```ts
@@ -43,8 +39,6 @@ const PREDEFINED\_COLORS: unknown
 Defined in: [sandkit/engine/api/colorPicker.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L16)
 
 List of predefined palette colors.
-
-***
 
 ### RANDOM\_COLOR
 
@@ -58,264 +52,310 @@ Sentinel value for a random palette color.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### closePalette() :id=closepalette
+<div class="smt-member-card">
+
+### sandkit.engine.api.colorPicker.closePalette :id=closepalette
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L23" target="_blank" rel="noopener">colorPicker.d.ts:23</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.closePalette(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.closePalette(...args: unknown[]): unknown
+closePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L23)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Close the active color palette UI.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.colorPicker.getActivePalette :id=getactivepalette
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L28" target="_blank" rel="noopener">colorPicker.d.ts:28</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getActivePalette() :id=getactivepalette
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.getActivePalette(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.getActivePalette(...args: unknown[]): unknown
+getActivePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L28)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the active palette identifier.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.colorPicker.getCycleColor :id=getcyclecolor
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L33" target="_blank" rel="noopener">colorPicker.d.ts:33</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getCycleColor() :id=getcyclecolor
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.getCycleColor(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.getCycleColor(...args: unknown[]): unknown
+getCycleColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L33)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the next color in the cycle.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.colorPicker.getRandomColor :id=getrandomcolor
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L38" target="_blank" rel="noopener">colorPicker.d.ts:38</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getRandomColor() :id=getrandomcolor
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.getRandomColor(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.getRandomColor(...args: unknown[]): unknown
+getRandomColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L38)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return a random predefined color.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.colorPicker.hexToRgba :id=hextorgba
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L43" target="_blank" rel="noopener">colorPicker.d.ts:43</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hexToRgba() :id=hextorgba
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.hexToRgba(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.hexToRgba(...args: unknown[]): unknown
+hexToRgba(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L43)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Convert a hex color string to RGBA components.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.colorPicker.renderColorButton :id=rendercolorbutton
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L48" target="_blank" rel="noopener">colorPicker.d.ts:48</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### renderColorButton() :id=rendercolorbutton
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.renderColorButton(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.renderColorButton(...args: unknown[]): unknown
+renderColorButton(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L48)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Render a color-picker button in the UI.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.colorPicker.renderColorSection :id=rendercolorsection
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L53" target="_blank" rel="noopener">colorPicker.d.ts:53</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### renderColorSection() :id=rendercolorsection
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.renderColorSection(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.renderColorSection(...args: unknown[]): unknown
+renderColorSection(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L53)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Render a color section in the UI.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.colorPicker.renderPalette :id=renderpalette
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L58" target="_blank" rel="noopener">colorPicker.d.ts:58</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### renderPalette() :id=renderpalette
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.renderPalette(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.renderPalette(...args: unknown[]): unknown
+renderPalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L58)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Render the full color palette UI.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.colorPicker.rgbaToHex :id=rgbatohex
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L63" target="_blank" rel="noopener">colorPicker.d.ts:63</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### rgbaToHex() :id=rgbatohex
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.rgbaToHex(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.rgbaToHex(...args: unknown[]): unknown
+rgbaToHex(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L63)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Convert RGBA components to a hex color string.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.colorPicker.setActivePalette :id=setactivepalette
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L68" target="_blank" rel="noopener">colorPicker.d.ts:68</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### setActivePalette() :id=setactivepalette
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.setActivePalette(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.setActivePalette(...args: unknown[]): unknown
+setActivePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L68)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Set the active palette identifier.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.colorPicker.togglePalette :id=togglepalette
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L73" target="_blank" rel="noopener">colorPicker.d.ts:73</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### togglePalette() :id=togglepalette
+<div class="smt-member-sig" data-sig="sandkit.engine.api.colorPicker.togglePalette(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.colorPicker.togglePalette(...args: unknown[]): unknown
+togglePalette(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/colorPicker.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L73)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Open or close the color palette UI.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

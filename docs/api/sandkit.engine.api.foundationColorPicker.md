@@ -4,30 +4,36 @@
 
 `sandkit.engine.api.foundationColorPicker` — foundation tile color lookup.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getColor() :id=getcolor
+<div class="smt-member-card">
+
+### sandkit.engine.api.foundationColorPicker.getColor :id=getcolor
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foundationColorPicker.d.ts#L15" target="_blank" rel="noopener">foundationColorPicker.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.foundationColorPicker.getColor(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.foundationColorPicker.getColor(...args: unknown[]): unknown
+getColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/foundationColorPicker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foundationColorPicker.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the color on a foundation tile.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

@@ -4,174 +4,204 @@
 
 `sandkit.engine.api.teleportZones` — player teleport zone management.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### add() :id=add
+<div class="smt-member-card">
+
+### sandkit.engine.api.teleportZones.add :id=add
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L15" target="_blank" rel="noopener">teleportZones.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.teleportZones.add(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.teleportZones.add(...args: unknown[]): unknown
+add(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Add a teleport zone to the world.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.teleportZones.getAll :id=getall
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L20" target="_blank" rel="noopener">teleportZones.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getAll() :id=getall
+<div class="smt-member-sig" data-sig="sandkit.engine.api.teleportZones.getAll(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.teleportZones.getAll(...args: unknown[]): unknown
+getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return all teleport zones.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.teleportZones.getAtCell :id=getatcell
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L25" target="_blank" rel="noopener">teleportZones.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getAtCell() :id=getatcell
+<div class="smt-member-sig" data-sig="sandkit.engine.api.teleportZones.getAtCell(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.teleportZones.getAtCell(...args: unknown[]): unknown
+getAtCell(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the teleport zone at one grid cell.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.teleportZones.getById :id=getbyid
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L30" target="_blank" rel="noopener">teleportZones.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getById() :id=getbyid
+<div class="smt-member-sig" data-sig="sandkit.engine.api.teleportZones.getById(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.teleportZones.getById(...args: unknown[]): unknown
+getById(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return one teleport zone by id.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.teleportZones.remove :id=remove
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L35" target="_blank" rel="noopener">teleportZones.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### remove() :id=remove
+<div class="smt-member-sig" data-sig="sandkit.engine.api.teleportZones.remove(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.teleportZones.remove(...args: unknown[]): unknown
+remove(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Remove a teleport zone.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.teleportZones.spawnDefaultParticles :id=spawndefaultparticles
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L40" target="_blank" rel="noopener">teleportZones.d.ts:40</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### spawnDefaultParticles() :id=spawndefaultparticles
+<div class="smt-member-sig" data-sig="sandkit.engine.api.teleportZones.spawnDefaultParticles(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.teleportZones.spawnDefaultParticles(...args: unknown[]): unknown
+spawnDefaultParticles(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L40)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Spawn default particles at a teleport zone.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.teleportZones.teleportPlayerTo :id=teleportplayerto
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L45" target="_blank" rel="noopener">teleportZones.d.ts:45</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### teleportPlayerTo() :id=teleportplayerto
+<div class="smt-member-sig" data-sig="sandkit.engine.api.teleportZones.teleportPlayerTo(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.teleportZones.teleportPlayerTo(...args: unknown[]): unknown
+teleportPlayerTo(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/teleportZones.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L45)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Teleport the player to a zone or position.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

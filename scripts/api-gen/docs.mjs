@@ -17,12 +17,9 @@ import {
   renderSearchIndexScript,
   rewriteApiHrefMap,
 } from "./api-search.mjs";
-import {
-  ENGINE_API_GROUPS,
-  MAIN_API_GROUPS,
-  buildBrowseCatalog,
-  renderBrowseScript,
-} from "./namespace-cards.mjs";
+import { buildBrowseCatalog, renderBrowseScript } from "./namespace-cards.mjs";
+import { restyleApiCards } from "./api-cards.mjs";
+import { rewriteMarkdownLinks } from "./docsify-links.mjs";
 
 function npmCli(platform = process.platform) {
   return platform === "win32" ? "npm.cmd" : "npm";
@@ -71,13 +68,15 @@ export function runDocs() {
   const engineNs = snapshotNamespaceTree(OUT, "engine");
 
   const linkMap = flattenApiRoutes(OUT);
+  restyleFlattenedApiPages(OUT);
+  rewriteDocsifyMarkdownLinks(DOCS);
   const leftoverTypedocIndex = join(OUT, "modules.md");
   if (existsSync(leftoverTypedocIndex)) {
     rmSync(leftoverTypedocIndex, { force: true });
   }
   writeNamespaceBrowseScript(DOCS, linkMap, mainNs, workerNs, engineNs);
   writeFullPage(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
-  writeApiSidebar(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
+  dropNestedTypedocSidebar(OUT);
   writeSearchPaths(DOCS);
 
   console.log("api-gen: wrote docs/api/ (browse: docs/search.md, combined: docs/full.md)");
@@ -356,139 +355,15 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
     let body = readFileSync(join(outDir, file), "utf8").trim();
     body = demoteMarkdownHeadings(body);
     body = body.replace(/ :id=([A-Za-z0-9_-]+)/g, (_m, id) => ` :id=${slug}.${id}`);
+    body = body.replace(/\]\(\?id=([A-Za-z0-9_.-]+)\)/g, (_m, id) => `](?id=${slug}.${id})`);
     parts.push(body, "", "---", "");
   }
 
   writeFileSync(join(docsDir, "full.md"), `${parts.join("\n").trimEnd()}\n`);
 }
 
-/**
- * Write one site-wide sidebar at `docs/_sidebar.md` (no nested `api/_sidebar.md`).
- *
- * @param {string} docsDir
- * @param {string} outDir
- * @param {Map<string, string>} linkMap
- * @param {NamespaceNode[]} mainNs
- * @param {NamespaceNode[]} workerNs
- * @param {NamespaceNode[]} engineNs
- */
-function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
-  const href = (typedocRel) => linkMap.get(`api/${typedocRel}`) || `api/${typedocRel}`;
-  const used = new Set();
-
-  const pad = (level) => "  ".repeat(level);
-  const link = (level, label, apiHref) => {
-    const file = String(apiHref).replace(/^api\//, "");
-    const md = file.endsWith(".md") ? file : `${file}.md`;
-    used.add(md);
-    return `${pad(level)}- [${label}](api/${md})`;
-  };
-  /** Non-clickable folder label inside a list (`- Player & controls`). */
-  const heading = (level, title) => `${pad(level)}- ${title}`;
-  /** Section banner: horizontal rule + markdown h1 (styled yellow in site.css). */
-  const section = (title) => `---\n\n# ${title}`;
-
-  const nodeLines = (node, level) => {
-    /** @type {string[]} */
-    const lines = [link(level, node.name, href(node.typedocRel))];
-    for (const child of node.children) {
-      lines.push(...nodeLines(child, level + 1));
-    }
-    return lines;
-  };
-
-  const grouped = (nodes, groups, level) => {
-    const byName = new Map(nodes.map((n) => [n.name, n]));
-    const seen = new Set();
-    /** @type {string[]} */
-    const out = [];
-    for (const group of groups) {
-      const members = group.names.map((name) => byName.get(name)).filter(Boolean);
-      if (!members.length) continue;
-      out.push(heading(level, group.title));
-      for (const node of members) {
-        seen.add(node.name);
-        out.push(...nodeLines(node, level + 1));
-      }
-    }
-    const leftover = nodes.filter((n) => !seen.has(n.name));
-    if (leftover.length) {
-      out.push(heading(level, "Other"));
-      for (const node of leftover) {
-        out.push(...nodeLines(node, level + 1));
-      }
-    }
-    return out;
-  };
-
-  const ifFile = (filename, level, label) => {
-    if (!existsSync(join(outDir, filename))) return [];
-    return [link(level, label, `api/${filename}`)];
-  };
-  const ifDocs = (filename, level, label) => {
-    if (!existsSync(join(docsDir, filename))) return [];
-    return [`${pad(level)}- [${label}](${filename})`];
-  };
-
-  /** @type {string[]} */
-  const lines = [
-    "- [Home](/)",
-    ...ifDocs("search.md", 0, "Search"),
-    "- [Full API reference](full.md)",
-    ...ifDocs("Changelog.md", 0, "Changelog"),
-    heading(0, "Electron"),
-    ...ifDocs("electron-bridge.md", 1, "Overview"),
-    ...ifFile("electron.md", 1, "API"),
-    heading(0, "Mod files"),
-    ...ifFile("configs.md", 1, "TypeScript types"),
-    ...ifDocs("schemas.md", 1, "JSON Schema"),
-    "",
-    section("Main thread"),
-    "",
-    ...grouped(mainNs, MAIN_API_GROUPS, 0),
-    "",
-    section("Worker thread"),
-    "",
-    ...workerNs.flatMap((node) => nodeLines(node, 0)),
-    "",
-    section("Engine"),
-    "",
-    ...ifFile("sandkit.engine.api.md", 0, "sandkit.engine.api"),
-    ...grouped(engineNs, ENGINE_API_GROUPS, 0),
-    "",
-    section("Enums"),
-    "",
-    ...ifFile("sandkit.enums.md", 0, "Overview"),
-  ];
-
-  const enums = [...linkMap.values()]
-    .filter((h) => /^api\/sandkit\.enums\.[A-Za-z][\w]*\.md$/.test(h))
-    .map((h) => h.replace(/^api\//, ""))
-    .sort((a, b) => a.localeCompare(b));
-  for (const file of enums) {
-    const name = file.replace(/^sandkit\.enums\./, "").replace(/\.md$/, "");
-    lines.push(link(0, name, `api/${file}`));
-  }
-
-  lines.push("", section("Shared types"), "");
-  for (const name of ["asset", "engine", "jsonvalue", "nominal", "player"]) {
-    lines.push(...ifFile(`shared.${name}.md`, 0, name));
-  }
-
-  const skip = new Set(["_sidebar.md"]);
-  const leftovers = readdirSync(outDir)
-    .filter((name) => name.endsWith(".md") && !skip.has(name) && !used.has(name))
-    .sort((a, b) => a.localeCompare(b));
-  if (leftovers.length) {
-    lines.push("", section("Other"), "");
-    for (const file of leftovers) {
-      const label = file.replace(/\.md$/, "");
-      lines.push(link(0, label, `api/${file}`));
-    }
-  }
-
-  lines.push("");
-  writeFileSync(join(docsDir, "_sidebar.md"), `${lines.join("\n").trimEnd()}\n`);
+/** TypeDoc may emit `docs/api/_sidebar.md`. The site sidebar is the static `docs/_sidebar.md`. */
+function dropNestedTypedocSidebar(outDir) {
   const nestedSidebar = join(outDir, "_sidebar.md");
   if (existsSync(nestedSidebar)) rmSync(nestedSidebar, { force: true });
 }
@@ -525,6 +400,29 @@ function qualifyApiPages(outDir) {
 
     const content = readFileSync(filePath, "utf8");
     const fixed = qualifyApiMarkdown(content, qualified);
+    if (fixed !== content) writeFileSync(filePath, fixed);
+  }
+}
+
+function restyleFlattenedApiPages(outDir) {
+  for (const filePath of walkMarkdownFiles(outDir)) {
+    if (filePath.endsWith("_sidebar.md")) continue;
+
+    const rel = toPosixPath(filePath.slice(outDir.length + 1));
+    const qualified = apiPathToQualifiedName(rel);
+    if (!qualified) continue;
+
+    const content = readFileSync(filePath, "utf8");
+    const fixed = restyleApiCards(content, qualified);
+    if (fixed !== content) writeFileSync(filePath, fixed);
+  }
+}
+
+function rewriteDocsifyMarkdownLinks(docsDir) {
+  for (const filePath of walkMarkdownFiles(docsDir)) {
+    if (filePath.endsWith("_sidebar.md")) continue;
+    const content = readFileSync(filePath, "utf8");
+    const fixed = rewriteMarkdownLinks(content);
     if (fixed !== content) writeFileSync(filePath, fixed);
   }
 }

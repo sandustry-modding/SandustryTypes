@@ -6,40 +6,66 @@ Item category (weapon, tool, consumable, mod).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Weapon :id=weapon
+<div class="smt-member-card">
+
+### sandkit.enums.ItemType.Weapon :id=weapon
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L174" target="_blank" rel="noopener">index.d.ts:174</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemType.Weapon: 1">
 
 ```ts
-sandkit.enums.ItemType.Weapon: 1
+Weapon: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L174)
+</div>
 
-***
+</div>
 
-### Tool :id=tool
+<div class="smt-member-card">
+
+### sandkit.enums.ItemType.Tool :id=tool
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L175" target="_blank" rel="noopener">index.d.ts:175</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemType.Tool: 2">
 
 ```ts
-sandkit.enums.ItemType.Tool: 2
+Tool: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:175](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L175)
+</div>
 
-***
+</div>
 
-### Consumable :id=consumable
+<div class="smt-member-card">
+
+### sandkit.enums.ItemType.Consumable :id=consumable
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L176" target="_blank" rel="noopener">index.d.ts:176</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemType.Consumable: 3">
 
 ```ts
-sandkit.enums.ItemType.Consumable: 3
+Consumable: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:176](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L176)
+</div>
 
-***
+</div>
 
-### Mod :id=mod
+<div class="smt-member-card">
+
+### sandkit.enums.ItemType.Mod :id=mod
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L177" target="_blank" rel="noopener">index.d.ts:177</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemType.Mod: 4">
 
 ```ts
-sandkit.enums.ItemType.Mod: 4
+Mod: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L177)
+</div>
+
+</div>

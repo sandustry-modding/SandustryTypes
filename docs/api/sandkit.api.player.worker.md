@@ -8,69 +8,81 @@ Shared `sandkit.api.player` base — player position and collision queries.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getPositionAtWorld() :id=getpositionatworld
+<div class="smt-member-card">
+
+### sandkit.api.player.getPositionAtWorld :id=getpositionatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L16" target="_blank" rel="noopener">player.d.ts:16</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.getPositionAtWorld(): Vector2">
 
 ```ts
-sandkit.api.player.getPositionAtWorld(): Vector2
+getPositionAtWorld(): Vector2
 ```
 
-Defined in: [shared/api/player.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L16)
+</div>
 
 Return the player center position in world pixels.
 
-#### Returns
-
-[`Vector2`](api/shared.player.md#vector2)
-
-World position as `{ x, y }` in pixels.
+[`Vector2`](api/shared.player.md?id=vector2) World position as `{ x, y }` in pixels.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~getWorldPosition()~~ :id=getworldposition
+<div class="smt-member-card">
+
+### ~~sandkit.api.player.getWorldPosition~~ :id=getworldposition
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L23" target="_blank" rel="noopener">player.d.ts:23</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.getWorldPosition(): Vector2">
 
 ```ts
-sandkit.api.player.getWorldPosition(): Vector2
+getWorldPosition(): Vector2
 ```
 
-Defined in: [shared/api/player.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L23)
+</div>
 
-#### Returns
-
-[`Vector2`](api/shared.player.md#vector2)
+[`Vector2`](api/shared.player.md?id=vector2)
 
 #### Deprecated
 
-Use [getPositionAtWorld](#getpositionatworld) instead.
+Use [getPositionAtWorld](?id=getpositionatworld) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### isCollidingWithCell() :id=iscollidingwithcell
+<div class="smt-member-card">
+
+### sandkit.api.player.isCollidingWithCell :id=iscollidingwithcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L34" target="_blank" rel="noopener">player.d.ts:34</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.isCollidingWithCell(...args: CellCoordinates): boolean">
 
 ```ts
-sandkit.api.player.isCollidingWithCell(...args: CellCoordinates): boolean
+isCollidingWithCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L34)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when the player hitbox overlaps the cell.
-
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`boolean`
 
 True when the player overlaps the cell.
 
@@ -78,30 +90,38 @@ True when the player overlaps the cell.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### isWithinRadiusOfCell() :id=iswithinradiusofcell
+<div class="smt-member-card">
+
+### sandkit.api.player.isWithinRadiusOfCell :id=iswithinradiusofcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L46" target="_blank" rel="noopener">player.d.ts:46</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.player.isWithinRadiusOfCell(...args: [number, number, number]): boolean">
 
 ```ts
-sandkit.api.player.isWithinRadiusOfCell(...args: [number, number, number]): boolean
+isWithinRadiusOfCell(...args: [number, number, number]): boolean
 ```
 
-Defined in: [shared/api/player.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L46)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `number`\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when the player is within `radius` cells of the point.
-
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, `number`\]
-
-#### Returns
-
-`boolean`
 
 True when the player is inside the radius.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

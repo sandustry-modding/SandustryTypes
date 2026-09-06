@@ -2,10 +2,24 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### MainTriggerDefinition :id=maintriggerdefinition
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.triggers.MainTriggerDefinition</code></p>
-Defined in: [sandkit/api/triggers.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L27)
+### sandkit.api.triggers.MainTriggerDefinition :id=maintriggerdefinition
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L27" target="_blank" rel="noopener">triggers.d.ts:27</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| interval | number | Interval between callbacks in simulation ticks. |
+| callback | () => void | Called each time the trigger fires. |
+
+<div class="smt-member-anchors">
+
+##### interval <!-- {docsify-ignore} -->
+
+##### callback <!-- {docsify-ignore} -->
+
+</div>
 
 Main-thread trigger definition shape.
 
@@ -15,61 +29,38 @@ Main-thread trigger definition shape.
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### interval
-
-```ts
-interval: number
-```
-
-Defined in: [sandkit/api/triggers.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L29)
-
-Interval between callbacks in simulation ticks.
-
-##### callback
-
-```ts
-callback: () => void
-```
-
-Defined in: [sandkit/api/triggers.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L31)
-
-Called each time the trigger fires.
-
-###### Returns
-
-`void`
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### register() :id=register
+<div class="smt-member-card">
+
+### sandkit.api.triggers.register :id=register
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L24" target="_blank" rel="noopener">triggers.d.ts:24</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.triggers.register(triggerId: string, definition: MainTriggerDefinition): void">
 
 ```ts
-sandkit.api.triggers.register(triggerId: string, definition: MainTriggerDefinition): void
+register(triggerId: string, definition: MainTriggerDefinition): void
 ```
 
-Defined in: [sandkit/api/triggers.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L24)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| triggerId | `string` | Unique trigger identifier. |
+| definition | [`MainTriggerDefinition`](?id=maintriggerdefinition) | Interval in ticks and callback to invoke. |
+
+<div class="smt-member-anchors">
+
+##### triggerId <!-- {docsify-ignore} -->
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register a repeating trigger with interval and callback.
-
-#### Parameters
-
-##### triggerId
-
-`string`
-
-Unique trigger identifier.
-
-##### definition
-
-[`MainTriggerDefinition`](#maintriggerdefinition)
-
-Interval in ticks and callback to invoke.
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -81,3 +72,5 @@ api.triggers.register("example:update", {
   },
 });
 ```
+
+</div>

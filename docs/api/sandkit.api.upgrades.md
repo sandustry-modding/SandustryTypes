@@ -2,10 +2,30 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### UpgradeDefinition :id=upgradedefinition
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.UpgradeDefinition</code></p>
-Defined in: [sandkit/api/upgrades.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L54)
+### sandkit.api.upgrades.UpgradeDefinition :id=upgradedefinition
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L54" target="_blank" rel="noopener">upgrades.d.ts:54</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| itemId | string |  |
+| itemNameKey? | string |  |
+| categoryId? | string |  |
+| upgrade | object |  |
+
+<div class="smt-member-anchors">
+
+##### itemId <!-- {docsify-ignore} -->
+
+##### itemNameKey? <!-- {docsify-ignore} -->
+
+##### categoryId? <!-- {docsify-ignore} -->
+
+##### upgrade <!-- {docsify-ignore} -->
+
+</div>
 
 Upgrade definition registered for an item.
 
@@ -15,82 +35,26 @@ Upgrade definition registered for an item.
 [key: string]: unknown
 ```
 
-#### Properties
+</div>
 
-##### itemId
+<div class="smt-member-card">
 
-```ts
-itemId: string
-```
+### sandkit.api.upgrades.UpgradeCategoryDefinition :id=upgradecategorydefinition
 
-Defined in: [sandkit/api/upgrades.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L55)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L70" target="_blank" rel="noopener">upgrades.d.ts:70</a></p>
 
-##### itemNameKey?
+| Property | Type | Description |
+| --- | --- | --- |
+| id | string | Category identifier referenced by upgrades. |
+| nameKey? | string | Display name translation key. |
 
-```ts
-optional itemNameKey?: string
-```
+<div class="smt-member-anchors">
 
-Defined in: [sandkit/api/upgrades.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L56)
+##### id <!-- {docsify-ignore} -->
 
-##### categoryId?
+##### nameKey? <!-- {docsify-ignore} -->
 
-```ts
-optional categoryId?: string
-```
-
-Defined in: [sandkit/api/upgrades.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L57)
-
-##### upgrade
-
-```ts
-upgrade: object
-```
-
-Defined in: [sandkit/api/upgrades.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L58)
-
-###### id
-
-```ts
-id: string
-```
-
-###### nameKey?
-
-```ts
-optional nameKey?: string
-```
-
-###### descriptionKey?
-
-```ts
-optional descriptionKey?: string
-```
-
-###### maxLevel
-
-```ts
-maxLevel: number
-```
-
-###### costs
-
-```ts
-costs: number[]
-```
-
-###### oneOff?
-
-```ts
-optional oneOff?: boolean
-```
-
-***
-
-### UpgradeCategoryDefinition :id=upgradecategorydefinition
-
-<p class="smt-member-path"><code>sandkit.api.upgrades.UpgradeCategoryDefinition</code></p>
-Defined in: [sandkit/api/upgrades.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L70)
+</div>
 
 Upgrade category definition shape.
 
@@ -100,208 +64,196 @@ Upgrade category definition shape.
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### id
-
-```ts
-id: string
-```
-
-Defined in: [sandkit/api/upgrades.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L72)
-
-Category identifier referenced by upgrades.
-
-##### nameKey?
-
-```ts
-optional nameKey?: string
-```
-
-Defined in: [sandkit/api/upgrades.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L74)
-
-Display name translation key.
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### registerCategory() :id=registercategory
+<div class="smt-member-card">
+
+### sandkit.api.upgrades.registerCategory :id=registercategory
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L13" target="_blank" rel="noopener">upgrades.d.ts:13</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.upgrades.registerCategory(definition: UpgradeCategoryDefinition): void">
 
 ```ts
-sandkit.api.upgrades.registerCategory(definition: UpgradeCategoryDefinition): void
+registerCategory(definition: UpgradeCategoryDefinition): void
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L13)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| definition | [`UpgradeCategoryDefinition`](?id=upgradecategorydefinition) | Category id and display metadata. |
+
+<div class="smt-member-anchors">
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register an upgrade category.
 
-#### Parameters
+</div>
 
-##### definition
+<div class="smt-member-card">
 
-[`UpgradeCategoryDefinition`](#upgradecategorydefinition)
+### sandkit.api.upgrades.register :id=register
 
-Category id and display metadata.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L18" target="_blank" rel="noopener">upgrades.d.ts:18</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### register() :id=register
+<div class="smt-member-sig" data-sig="sandkit.api.upgrades.register(definition: UpgradeDefinition): void">
 
 ```ts
-sandkit.api.upgrades.register(definition: UpgradeDefinition): void
+register(definition: UpgradeDefinition): void
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L18)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| definition | [`UpgradeDefinition`](?id=upgradedefinition) | Item id, upgrade id, costs, and level metadata. |
+
+<div class="smt-member-anchors">
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register an upgrade definition.
 
-#### Parameters
+</div>
 
-##### definition
+<div class="smt-member-card">
 
-[`UpgradeDefinition`](#upgradedefinition)
+### sandkit.api.upgrades.updateDefinition :id=updatedefinition
 
-Item id, upgrade id, costs, and level metadata.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L25" target="_blank" rel="noopener">upgrades.d.ts:25</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### updateDefinition() :id=updatedefinition
+<div class="smt-member-sig" data-sig="sandkit.api.upgrades.updateDefinition(itemId: string, upgradeId: string, partial: Partial&lt;UpgradeDefinition&gt;): void">
 
 ```ts
-sandkit.api.upgrades.updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefinition>): void
+updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefinition>): void
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| itemId | `string` | Parent item id. |
+| upgradeId | `string` | Upgrade id within the item. |
+| partial | `Partial`\<[`UpgradeDefinition`](?id=upgradedefinition)\> | Fields to merge into the definition. |
+
+<div class="smt-member-anchors">
+
+##### itemId <!-- {docsify-ignore} -->
+
+##### upgradeId <!-- {docsify-ignore} -->
+
+##### partial <!-- {docsify-ignore} -->
+
+</div>
 
 Patch fields on an existing upgrade definition.
 
-#### Parameters
+</div>
 
-##### itemId
+<div class="smt-member-card">
 
-`string`
+### sandkit.api.upgrades.getLevelById :id=getlevelbyid
 
-Parent item id.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L35" target="_blank" rel="noopener">upgrades.d.ts:35</a></p>
 
-##### upgradeId
-
-`string`
-
-Upgrade id within the item.
-
-##### partial
-
-`Partial`\<[`UpgradeDefinition`](#upgradedefinition)\>
-
-Fields to merge into the definition.
-
-#### Returns
-
-`void`
-
-***
-
-### getLevelById() :id=getlevelbyid
+<div class="smt-member-sig" data-sig="sandkit.api.upgrades.getLevelById(itemId: string, upgradeId: string): number">
 
 ```ts
-sandkit.api.upgrades.getLevelById(itemId: string, upgradeId: string): number
+getLevelById(itemId: string, upgradeId: string): number
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| itemId | `string` | Parent item id. |
+| upgradeId | `string` | Upgrade id within the item. |
+
+<div class="smt-member-anchors">
+
+##### itemId <!-- {docsify-ignore} -->
+
+##### upgradeId <!-- {docsify-ignore} -->
+
+</div>
 
 Return the current purchased level for an upgrade.
 
-#### Parameters
+</div>
 
-##### itemId
+<div class="smt-member-card">
 
-`string`
+### sandkit.api.upgrades.getAvailableLevelById :id=getavailablelevelbyid
 
-Parent item id.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L41" target="_blank" rel="noopener">upgrades.d.ts:41</a></p>
 
-##### upgradeId
-
-`string`
-
-Upgrade id within the item.
-
-#### Returns
-
-`number`
-
-***
-
-### getAvailableLevelById() :id=getavailablelevelbyid
+<div class="smt-member-sig" data-sig="sandkit.api.upgrades.getAvailableLevelById(itemId: string, upgradeId: string): number">
 
 ```ts
-sandkit.api.upgrades.getAvailableLevelById(itemId: string, upgradeId: string): number
+getAvailableLevelById(itemId: string, upgradeId: string): number
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L41)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| itemId | `string` | Parent item id. |
+| upgradeId | `string` | Upgrade id within the item. |
+
+<div class="smt-member-anchors">
+
+##### itemId <!-- {docsify-ignore} -->
+
+##### upgradeId <!-- {docsify-ignore} -->
+
+</div>
 
 Return the maximum available level for an upgrade.
 
-#### Parameters
+</div>
 
-##### itemId
+<div class="smt-member-card">
 
-`string`
+### sandkit.api.upgrades.setLevelById :id=setlevelbyid
 
-Parent item id.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L51" target="_blank" rel="noopener">upgrades.d.ts:51</a></p>
 
-##### upgradeId
-
-`string`
-
-Upgrade id within the item.
-
-#### Returns
-
-`number`
-
-***
-
-### setLevelById() :id=setlevelbyid
+<div class="smt-member-sig" data-sig="sandkit.api.upgrades.setLevelById(itemId: string, upgradeId: string, level: number): void">
 
 ```ts
-sandkit.api.upgrades.setLevelById(itemId: string, upgradeId: string, level: number): void
+setLevelById(itemId: string, upgradeId: string, level: number): void
 ```
 
-Defined in: [sandkit/api/upgrades.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L51)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| itemId | `string` | Parent item id. |
+| upgradeId | `string` | Upgrade id within the item. |
+| level | `number` | Level to set. |
+
+<div class="smt-member-anchors">
+
+##### itemId <!-- {docsify-ignore} -->
+
+##### upgradeId <!-- {docsify-ignore} -->
+
+##### level <!-- {docsify-ignore} -->
+
+</div>
 
 Set the purchased level for an upgrade.
-
-#### Parameters
-
-##### itemId
-
-`string`
-
-Parent item id.
-
-##### upgradeId
-
-`string`
-
-Upgrade id within the item.
-
-##### level
-
-`number`
-
-Level to set.
-
-#### Returns
-
-`void`
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

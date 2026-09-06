@@ -8,40 +8,66 @@ Use [PickupType](api/sandkit.enums.PickupType.md) instead.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### ~~Artifact~~ :id=artifact
+<div class="smt-member-card">
+
+### ~~sandkit.enums.WorldItemType.Artifact~~ :id=artifact
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L424" target="_blank" rel="noopener">index.d.ts:424</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.WorldItemType.Artifact: 1">
 
 ```ts
-sandkit.enums.WorldItemType.Artifact: 1
+Artifact: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L424)
+</div>
 
-***
+</div>
 
-### ~~GlyphKey~~ :id=glyphkey
+<div class="smt-member-card">
+
+### ~~sandkit.enums.WorldItemType.GlyphKey~~ :id=glyphkey
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L425" target="_blank" rel="noopener">index.d.ts:425</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.WorldItemType.GlyphKey: 2">
 
 ```ts
-sandkit.enums.WorldItemType.GlyphKey: 2
+GlyphKey: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:425](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L425)
+</div>
 
-***
+</div>
 
-### ~~Stratacore~~ :id=stratacore
+<div class="smt-member-card">
+
+### ~~sandkit.enums.WorldItemType.Stratacore~~ :id=stratacore
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L426" target="_blank" rel="noopener">index.d.ts:426</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.WorldItemType.Stratacore: 3">
 
 ```ts
-sandkit.enums.WorldItemType.Stratacore: 3
+Stratacore: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:426](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L426)
+</div>
 
-***
+</div>
 
-### ~~Orb~~ :id=orb
+<div class="smt-member-card">
+
+### ~~sandkit.enums.WorldItemType.Orb~~ :id=orb
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L427" target="_blank" rel="noopener">index.d.ts:427</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.WorldItemType.Orb: 4">
 
 ```ts
-sandkit.enums.WorldItemType.Orb: 4
+Orb: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:427](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L427)
+</div>
+
+</div>

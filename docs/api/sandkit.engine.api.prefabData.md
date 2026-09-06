@@ -4,126 +4,148 @@
 
 `sandkit.engine.api.prefabData` — prefab artifact and metadata lookup.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getAll() :id=getall
+<div class="smt-member-card">
+
+### sandkit.engine.api.prefabData.getAll :id=getall
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L15" target="_blank" rel="noopener">prefabData.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.prefabData.getAll(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.prefabData.getAll(...args: unknown[]): unknown
+getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return all prefab data entries.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.prefabData.getAllMetadata :id=getallmetadata
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L20" target="_blank" rel="noopener">prefabData.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getAllMetadata() :id=getallmetadata
+<div class="smt-member-sig" data-sig="sandkit.engine.api.prefabData.getAllMetadata(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.prefabData.getAllMetadata(...args: unknown[]): unknown
+getAllMetadata(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return metadata for all prefabs.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.prefabData.getArtifactLocations :id=getartifactlocations
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L25" target="_blank" rel="noopener">prefabData.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getArtifactLocations() :id=getartifactlocations
+<div class="smt-member-sig" data-sig="sandkit.engine.api.prefabData.getArtifactLocations(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.prefabData.getArtifactLocations(...args: unknown[]): unknown
+getArtifactLocations(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return artifact locations for prefabs.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.prefabData.getAtCell :id=getatcell
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L30" target="_blank" rel="noopener">prefabData.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getAtCell() :id=getatcell
+<div class="smt-member-sig" data-sig="sandkit.engine.api.prefabData.getAtCell(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.prefabData.getAtCell(...args: unknown[]): unknown
+getAtCell(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return prefab data at one grid cell.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.prefabData.getMetadata :id=getmetadata
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L35" target="_blank" rel="noopener">prefabData.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getMetadata() :id=getmetadata
+<div class="smt-member-sig" data-sig="sandkit.engine.api.prefabData.getMetadata(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.prefabData.getMetadata(...args: unknown[]): unknown
+getMetadata(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/prefabData.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return metadata for one prefab.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

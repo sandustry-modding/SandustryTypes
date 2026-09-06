@@ -2,12 +2,23 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### SpriteLoadOptions :id=spriteloadoptions
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.sprites.SpriteLoadOptions</code></p>
-Defined in: [sandkit/api/sprites.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L44)
+### sandkit.api.sprites.SpriteLoadOptions :id=spriteloadoptions
 
-Options for [load](#load) and [loadFromMod](#loadfrommod).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L44" target="_blank" rel="noopener">sprites.d.ts:44</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| tint? | number | Packed RGB tint applied after load. |
+
+<div class="smt-member-anchors">
+
+##### tint? <!-- {docsify-ignore} -->
+
+</div>
+
+Options for [load](?id=load) and [loadFromMod](?id=loadfrommod).
 
 #### Indexable
 
@@ -15,162 +26,172 @@ Options for [load](#load) and [loadFromMod](#loadfrommod).
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### tint?
-
-```ts
-optional tint?: number
-```
-
-Defined in: [sandkit/api/sprites.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L46)
-
-Packed RGB tint applied after load.
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### LoadedSprite :id=loadedsprite
+<div class="smt-member-card">
+
+### sandkit.api.sprites.LoadedSprite :id=loadedsprite
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L41" target="_blank" rel="noopener">sprites.d.ts:41</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.sprites.LoadedSprite = unknown">
 
 ```ts
-sandkit.api.sprites.LoadedSprite = unknown
+LoadedSprite = unknown
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L41)
+</div>
 
 Loaded sprite handle (runtime texture or display object).
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### load() :id=load
+<div class="smt-member-card">
+
+### sandkit.api.sprites.load :id=load
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L15" target="_blank" rel="noopener">sprites.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.sprites.load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise&lt;void&gt;">
 
 ```ts
-sandkit.api.sprites.load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
+load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| spriteId | `string` | Id used with [getById](?id=getbyid). |
+| path | `string` | URL or asset path to load. |
+| options? | [`SpriteLoadOptions`](?id=spriteloadoptions) | Optional tint and load options. |
+
+<div class="smt-member-anchors">
+
+##### spriteId <!-- {docsify-ignore} -->
+
+##### path <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Load a sprite from a URL path.
 
-#### Parameters
-
-##### spriteId
-
-`string`
-
-Id used with [getById](#getbyid).
-
-##### path
-
-`string`
-
-URL or asset path to load.
-
-##### options?
-
-[`SpriteLoadOptions`](#spriteloadoptions)
-
-Optional tint and load options.
-
-#### Returns
-
 `Promise`\<`void`\>
 
-***
+</div>
 
-### loadFromMod() :id=loadfrommod
+<div class="smt-member-card">
+
+### sandkit.api.sprites.loadFromMod :id=loadfrommod
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L22" target="_blank" rel="noopener">sprites.d.ts:22</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.sprites.loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions): Promise&lt;void&gt;">
 
 ```ts
-sandkit.api.sprites.loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions): Promise<void>
+loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions): Promise<void>
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L22)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| spriteId | `string` | Id used with [getById](?id=getbyid). |
+| relativePath | `string` | Path relative to the mod folder. |
+| options? | [`SpriteLoadOptions`](?id=spriteloadoptions) | Optional tint and load options. |
+
+<div class="smt-member-anchors">
+
+##### spriteId <!-- {docsify-ignore} -->
+
+##### relativePath <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Load a sprite from the calling mod folder.
 
-#### Parameters
-
-##### spriteId
-
-`string`
-
-Id used with [getById](#getbyid).
-
-##### relativePath
-
-`string`
-
-Path relative to the mod folder.
-
-##### options?
-
-[`SpriteLoadOptions`](#spriteloadoptions)
-
-Optional tint and load options.
-
-#### Returns
-
 `Promise`\<`void`\>
 
-***
+</div>
 
-### getById() :id=getbyid
+<div class="smt-member-card">
+
+### sandkit.api.sprites.getById :id=getbyid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L31" target="_blank" rel="noopener">sprites.d.ts:31</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.sprites.getById(spriteId: string): unknown">
 
 ```ts
-sandkit.api.sprites.getById(spriteId: string): unknown
+getById(spriteId: string): unknown
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L31)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| spriteId | `string` | Sprite id from [load](?id=load) or [loadFromMod](?id=loadfrommod). |
+
+<div class="smt-member-anchors">
+
+##### spriteId <!-- {docsify-ignore} -->
+
+</div>
 
 Return a loaded sprite by id.
 
-#### Parameters
+</div>
 
-##### spriteId
+<div class="smt-member-card">
 
-`string`
+### sandkit.api.sprites.hideAllPlayerModSprites :id=hideallplayermodsprites
 
-Sprite id from [load](#load) or [loadFromMod](#loadfrommod).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L33" target="_blank" rel="noopener">sprites.d.ts:33</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hideAllPlayerModSprites() :id=hideallplayermodsprites
+<div class="smt-member-sig" data-sig="sandkit.api.sprites.hideAllPlayerModSprites(): void">
 
 ```ts
-sandkit.api.sprites.hideAllPlayerModSprites(): void
+hideAllPlayerModSprites(): void
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L33)
+</div>
 
 Hide all player mod-attached sprites.
 
-#### Returns
+</div>
 
-`void`
+<div class="smt-member-card">
 
-***
+### sandkit.api.sprites.rotatePlayerModSprites :id=rotateplayermodsprites
 
-### rotatePlayerModSprites() :id=rotateplayermodsprites
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L38" target="_blank" rel="noopener">sprites.d.ts:38</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.sprites.rotatePlayerModSprites(angle: number): void">
 
 ```ts
-sandkit.api.sprites.rotatePlayerModSprites(angle: number): void
+rotatePlayerModSprites(angle: number): void
 ```
 
-Defined in: [sandkit/api/sprites.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L38)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| angle | `number` | Rotation in radians. |
+
+<div class="smt-member-anchors">
+
+##### angle <!-- {docsify-ignore} -->
+
+</div>
 
 Rotate all player mod-attached sprites by angle.
 
-#### Parameters
-
-##### angle
-
-`number`
-
-Rotation in radians.
-
-#### Returns
-
-`void`
+</div>

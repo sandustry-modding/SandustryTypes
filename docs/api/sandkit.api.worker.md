@@ -3,8 +3,8 @@
 Worker-thread `sandkit.api` namespaces.
 
 Prefer these declarations in `worker.js`. Type `sandkit.api` as
-[WorkerSandkitApi](#workersandkitapi). Do not assume main-thread methods exist here.
-See [sandkit.api](api/sandkit.md#api-1) for the main-thread public API.
+[WorkerSandkitApi](?id=workersandkitapi). Do not assume main-thread methods exist here.
+See [sandkit.api](api/sandkit.md?id=api-1) for the main-thread public API.
 
 ## Namespaces <!-- {docsify-ignore} -->
 
@@ -45,7 +45,7 @@ const api = sandkit.api as unknown as WorkerSandkitApi;
 ```
 
 Main and worker surfaces overlap but are not interchangeable. Do not use
-[sandkit.SandkitApi](api/sandkit.md#sandkitapi) on worker threads.
+[sandkit.SandkitApi](api/sandkit.md?id=sandkitapi) on worker threads.
 
 #### Properties
 
@@ -224,38 +224,3 @@ Use [grid](api/sandkit.api.grid.worker.md) instead.
 ###### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
-## References <!-- {docsify-ignore} -->
-
-### collector :id=collector
-
-<p class="smt-member-path"><code>sandkit.api.collector (worker)</code></p>
-Re-exports [collector](api/sandkit.api.collector.md)
-
-***
-
-### constants :id=constants
-
-<p class="smt-member-path"><code>sandkit.api.constants (worker)</code></p>
-Re-exports [constants](api/sandkit.api.constants.md)
-
-***
-
-### patterns :id=patterns
-
-<p class="smt-member-path"><code>sandkit.api.patterns (worker)</code></p>
-Re-exports [patterns](api/sandkit.api.patterns.md)
-
-***
-
-### random :id=random
-
-<p class="smt-member-path"><code>sandkit.api.random (worker)</code></p>
-Re-exports [random](api/sandkit.api.random.md)
-
-***
-
-### utils :id=utils
-
-<p class="smt-member-path"><code>sandkit.api.utils (worker)</code></p>
-Re-exports [utils](api/sandkit.api.utils.md)

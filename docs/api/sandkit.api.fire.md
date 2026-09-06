@@ -9,80 +9,100 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### canBurnElementAtCell() :id=canburnelementatcell
+<div class="smt-member-card">
+
+### sandkit.api.fire.canBurnElementAtCell :id=canburnelementatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L18" target="_blank" rel="noopener">fire.d.ts:18</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.fire.canBurnElementAtCell(...args: CellCoordinates): boolean">
 
 ```ts
-sandkit.api.fire.canBurnElementAtCell(...args: CellCoordinates): boolean
+canBurnElementAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/fire.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L18)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Returns true when the element at the cell can burn.
-
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`boolean`
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### burnElementAtCell() :id=burnelementatcell
+<div class="smt-member-card">
+
+### sandkit.api.fire.burnElementAtCell :id=burnelementatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L28" target="_blank" rel="noopener">fire.d.ts:28</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.fire.burnElementAtCell(...args: CellCoordinates): void">
 
 ```ts
-sandkit.api.fire.burnElementAtCell(...args: CellCoordinates): void
+burnElementAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/fire.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L28)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Burn the element at the cell. Main-entry writes are deferred; reads see the old grid.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### ~~burnElementAtCellWhenIdle()~~ :id=burnelementatcellwhenidle
+<div class="smt-member-card">
+
+### ~~sandkit.api.fire.burnElementAtCellWhenIdle~~ :id=burnelementatcellwhenidle
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L35" target="_blank" rel="noopener">fire.d.ts:35</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.fire.burnElementAtCellWhenIdle(...args: CellCoordinates): void">
 
 ```ts
-sandkit.api.fire.burnElementAtCellWhenIdle(...args: CellCoordinates): void
+burnElementAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/fire.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L35)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
 
-##### args
+<div class="smt-member-anchors">
 
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
+##### args <!-- {docsify-ignore} -->
 
-#### Returns
-
-`void`
+</div>
 
 #### Deprecated
 
-Use [burnElementAtCell](#burnelementatcell) instead.
+Use [burnElementAtCell](?id=burnelementatcell) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
+
+</div>

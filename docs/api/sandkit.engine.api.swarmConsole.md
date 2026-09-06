@@ -4,294 +4,344 @@
 
 `sandkit.engine.api.swarmConsole` — swarm convergence console state.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### decrementConvergenceBuffer() :id=decrementconvergencebuffer
+<div class="smt-member-card">
+
+### sandkit.engine.api.swarmConsole.decrementConvergenceBuffer :id=decrementconvergencebuffer
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L15" target="_blank" rel="noopener">swarmConsole.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.decrementConvergenceBuffer(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.decrementConvergenceBuffer(...args: unknown[]): unknown
+decrementConvergenceBuffer(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Decrease the convergence buffer by one step.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.getCrystalMined :id=getcrystalmined
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L20" target="_blank" rel="noopener">swarmConsole.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getCrystalMined() :id=getcrystalmined
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.getCrystalMined(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.getCrystalMined(...args: unknown[]): unknown
+getCrystalMined(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return total crystal mined for swarm consoles.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.getDiskRadiusCells :id=getdiskradiuscells
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L25" target="_blank" rel="noopener">swarmConsole.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getDiskRadiusCells() :id=getdiskradiuscells
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.getDiskRadiusCells(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.getDiskRadiusCells(...args: unknown[]): unknown
+getDiskRadiusCells(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the disk radius in cells for a console.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.getEntityType :id=getentitytype
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L30" target="_blank" rel="noopener">swarmConsole.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getEntityType() :id=getentitytype
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.getEntityType(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.getEntityType(...args: unknown[]): unknown
+getEntityType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the entity type used by swarm consoles.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.getNearestConvergence :id=getnearestconvergence
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L35" target="_blank" rel="noopener">swarmConsole.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getNearestConvergence() :id=getnearestconvergence
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.getNearestConvergence(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.getNearestConvergence(...args: unknown[]): unknown
+getNearestConvergence(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the nearest convergence point.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.getPendingConvergence :id=getpendingconvergence
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L40" target="_blank" rel="noopener">swarmConsole.d.ts:40</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getPendingConvergence() :id=getpendingconvergence
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.getPendingConvergence(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.getPendingConvergence(...args: unknown[]): unknown
+getPendingConvergence(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L40)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the pending convergence target.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.getPlacedConsoles :id=getplacedconsoles
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L45" target="_blank" rel="noopener">swarmConsole.d.ts:45</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getPlacedConsoles() :id=getplacedconsoles
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.getPlacedConsoles(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.getPlacedConsoles(...args: unknown[]): unknown
+getPlacedConsoles(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L45)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return all placed swarm console structures.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.getRadiusPx :id=getradiuspx
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L50" target="_blank" rel="noopener">swarmConsole.d.ts:50</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getRadiusPx() :id=getradiuspx
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.getRadiusPx(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.getRadiusPx(...args: unknown[]): unknown
+getRadiusPx(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L50)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the console effect radius in pixels.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.isSpawnJammed :id=isspawnjammed
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L55" target="_blank" rel="noopener">swarmConsole.d.ts:55</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### isSpawnJammed() :id=isspawnjammed
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.isSpawnJammed(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.isSpawnJammed(...args: unknown[]): unknown
+isSpawnJammed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L55)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether swarm spawn is currently jammed.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.registerEntityType :id=registerentitytype
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L60" target="_blank" rel="noopener">swarmConsole.d.ts:60</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### registerEntityType() :id=registerentitytype
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.registerEntityType(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.registerEntityType(...args: unknown[]): unknown
+registerEntityType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L60)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Register the entity type for swarm consoles.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.resetAllConvergenceBuffers :id=resetallconvergencebuffers
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L65" target="_blank" rel="noopener">swarmConsole.d.ts:65</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### resetAllConvergenceBuffers() :id=resetallconvergencebuffers
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.resetAllConvergenceBuffers(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.resetAllConvergenceBuffers(...args: unknown[]): unknown
+resetAllConvergenceBuffers(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L65)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Reset convergence buffers on all consoles.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.swarmConsole.setSpawnJammed :id=setspawnjammed
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L70" target="_blank" rel="noopener">swarmConsole.d.ts:70</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### setSpawnJammed() :id=setspawnjammed
+<div class="smt-member-sig" data-sig="sandkit.engine.api.swarmConsole.setSpawnJammed(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.swarmConsole.setSpawnJammed(...args: unknown[]): unknown
+setSpawnJammed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/swarmConsole.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L70)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Set whether swarm spawn is jammed.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

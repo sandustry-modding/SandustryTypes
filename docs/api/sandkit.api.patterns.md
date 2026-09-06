@@ -2,63 +2,81 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### PatternExcavateOptions :id=patternexcavateoptions
+<div class="smt-member-card">
+
+### sandkit.api.patterns.PatternExcavateOptions :id=patternexcavateoptions
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L61" target="_blank" rel="noopener">patterns.d.ts:61</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.patterns.PatternExcavateOptions = ExcavateOptions">
 
 ```ts
-sandkit.api.patterns.PatternExcavateOptions = ExcavateOptions
+PatternExcavateOptions = ExcavateOptions
 ```
 
-Defined in: [sandkit/api/patterns.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L61)
+</div>
 
-Options for pattern-based excavation. Same shape as [shared.api.world.ExcavateOptions](api/sandkit.api.grid.md#excavateoptions).
+Options for pattern-based excavation. Same shape as [shared.api.world.ExcavateOptions](api/sandkit.api.grid.md?id=excavateoptions).
+
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### createCircle() :id=createcircle
+<div class="smt-member-card">
+
+### sandkit.api.patterns.createCircle :id=createcircle
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L17" target="_blank" rel="noopener">patterns.d.ts:17</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.patterns.createCircle(size: number): number[][]">
 
 ```ts
-sandkit.api.patterns.createCircle(size: number): number[][]
+createCircle(size: number): number[][]
 ```
 
-Defined in: [sandkit/api/patterns.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L17)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| size | `number` | Pattern width and height in cells. |
+
+<div class="smt-member-anchors">
+
+##### size <!-- {docsify-ignore} -->
+
+</div>
 
 Build a circular excavation pattern matrix for the given size.
 
-#### Parameters
+`number`[][] Square matrix with `1` inside the circle and `0` outside.
 
-##### size
+</div>
 
-`number`
+<div class="smt-member-card">
 
-Pattern width and height in cells.
+### sandkit.api.patterns.excavateAtCell :id=excavateatcell
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L50" target="_blank" rel="noopener">patterns.d.ts:50</a></p>
 
-`number`[][]
-
-Square matrix with `1` inside the circle and `0` outside.
-
-***
-
-### excavateAtCell() :id=excavateatcell
+<div class="smt-member-sig" data-sig="sandkit.api.patterns.excavateAtCell(...args: [number, number, number[][], Vector2, number, ExcavateOptions]): void">
 
 ```ts
-sandkit.api.patterns.excavateAtCell(...args: [number, number, number[][], Vector2, number, ExcavateOptions]): void
+excavateAtCell(...args: [number, number, number[][], Vector2, number, ExcavateOptions]): void
 ```
 
-Defined in: [sandkit/api/patterns.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L50)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `number`[][], [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](api/sandkit.api.grid.md?id=excavateoptions)\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Excavate at a cell using a pattern matrix and output velocity.
-
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, `number`[][], [`Vector2`](api/shared.player.md#vector2), `number`, [`ExcavateOptions`](api/sandkit.api.grid.md#excavateoptions)\]
-
-#### Returns
-
-`void`
 
 #### Examples
 
@@ -85,3 +103,5 @@ api.patterns.excavateAtCell(
   10,
 );
 ```
+
+</div>

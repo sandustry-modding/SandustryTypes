@@ -5,118 +5,142 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getValueFromCellId() :id=getvaluefromcellid
+<div class="smt-member-card">
+
+### sandkit.api.collector.getValueFromCellId :id=getvaluefromcellid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L14" target="_blank" rel="noopener">collector.d.ts:14</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.collector.getValueFromCellId(cellId: CellId): number">
 
 ```ts
-sandkit.api.collector.getValueFromCellId(cellId: CellId): number
+getValueFromCellId(cellId: CellId): number
 ```
 
-Defined in: [sandkit/api/collector.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L14)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell identifier. |
+
+<div class="smt-member-anchors">
+
+##### cellId <!-- {docsify-ignore} -->
+
+</div>
 
 Returns the collector value for a cell id.
 
-#### Parameters
+</div>
 
-##### cellId
+<div class="smt-member-card">
 
-[`CellId`](api/shared.nominal.md#cellid)
+### sandkit.api.collector.getValueByType :id=getvaluebytype
 
-Packed cell identifier.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L19" target="_blank" rel="noopener">collector.d.ts:19</a></p>
 
-#### Returns
-
-`number`
-
-***
-
-### getValueByType() :id=getvaluebytype
+<div class="smt-member-sig" data-sig="sandkit.api.collector.getValueByType(elementType: ElementType): number">
 
 ```ts
-sandkit.api.collector.getValueByType(elementType: ElementType): number
+getValueByType(elementType: ElementType): number
 ```
 
-Defined in: [sandkit/api/collector.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L19)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| elementType | [`ElementType`](api/sandkit.api.elements.md?id=elementtype) | Numeric element type id. |
+
+<div class="smt-member-anchors">
+
+##### elementType <!-- {docsify-ignore} -->
+
+</div>
 
 Returns the collector value for an element type.
 
-#### Parameters
+</div>
 
-##### elementType
+<div class="smt-member-card">
 
-[`ElementType`](api/sandkit.api.elements.md#elementtype)
+### sandkit.api.collector.isCellIdCollectable :id=iscellidcollectable
 
-Numeric element type id.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L24" target="_blank" rel="noopener">collector.d.ts:24</a></p>
 
-#### Returns
-
-`number`
-
-***
-
-### isCellIdCollectable() :id=iscellidcollectable
+<div class="smt-member-sig" data-sig="sandkit.api.collector.isCellIdCollectable(cellId: CellId): boolean">
 
 ```ts
-sandkit.api.collector.isCellIdCollectable(cellId: CellId): boolean
+isCellIdCollectable(cellId: CellId): boolean
 ```
 
-Defined in: [sandkit/api/collector.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L24)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell identifier. |
+
+<div class="smt-member-anchors">
+
+##### cellId <!-- {docsify-ignore} -->
+
+</div>
 
 Returns true when the cell id can be collected.
 
-#### Parameters
+</div>
 
-##### cellId
+<div class="smt-member-card">
 
-[`CellId`](api/shared.nominal.md#cellid)
+### sandkit.api.collector.isCellIdCollectableForSprite :id=iscellidcollectableforsprite
 
-Packed cell identifier.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L29" target="_blank" rel="noopener">collector.d.ts:29</a></p>
 
-#### Returns
-
-`boolean`
-
-***
-
-### isCellIdCollectableForSprite() :id=iscellidcollectableforsprite
+<div class="smt-member-sig" data-sig="sandkit.api.collector.isCellIdCollectableForSprite(cellId: CellId): boolean">
 
 ```ts
-sandkit.api.collector.isCellIdCollectableForSprite(cellId: CellId): boolean
+isCellIdCollectableForSprite(cellId: CellId): boolean
 ```
 
-Defined in: [sandkit/api/collector.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L29)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| cellId | [`CellId`](api/shared.nominal.md?id=cellid) | Packed cell identifier. |
+
+<div class="smt-member-anchors">
+
+##### cellId <!-- {docsify-ignore} -->
+
+</div>
 
 Returns true when the cell id can be collected for sprite display.
 
-#### Parameters
+</div>
 
-##### cellId
+<div class="smt-member-card">
 
-[`CellId`](api/shared.nominal.md#cellid)
+### sandkit.api.collector.notifyPickupAtCell :id=notifypickupatcell
 
-Packed cell identifier.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L35" target="_blank" rel="noopener">collector.d.ts:35</a></p>
 
-#### Returns
-
-`boolean`
-
-***
-
-### notifyPickupAtCell() :id=notifypickupatcell
+<div class="smt-member-sig" data-sig="sandkit.api.collector.notifyPickupAtCell(...args: CellCoordinates): void">
 
 ```ts
-sandkit.api.collector.notifyPickupAtCell(...args: CellCoordinates): void
+notifyPickupAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/collector.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Notifies collector logic that a pickup happened at the cell.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`void`
+</div>

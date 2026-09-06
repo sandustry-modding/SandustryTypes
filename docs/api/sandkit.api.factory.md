@@ -10,88 +10,108 @@ Available as `sandkit.api.factory`.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### FactoryProcessId :id=factoryprocessid
+<div class="smt-member-card">
+
+### sandkit.api.factory.FactoryProcessId :id=factoryprocessid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L35" target="_blank" rel="noopener">factory.d.ts:35</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.factory.FactoryProcessId = &quot;shakeWetSand&quot; | &quot;pressBurntResidue&quot; | &quot;growFlowers&quot; | &quot;condenseFlorin&quot;">
 
 ```ts
-sandkit.api.factory.FactoryProcessId = "shakeWetSand" | "pressBurntResidue" | "growFlowers" | "condenseFlorin"
+FactoryProcessId = "shakeWetSand" | "pressBurntResidue" | "growFlowers" | "condenseFlorin"
 ```
 
-Defined in: [sandkit/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L35)
+</div>
 
 Built-in factory process identifiers.
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### getLevel() :id=getlevel
+<div class="smt-member-card">
+
+### sandkit.api.factory.getLevel :id=getlevel
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L14" target="_blank" rel="noopener">factory.d.ts:14</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.factory.getLevel(): number">
 
 ```ts
-sandkit.api.factory.getLevel(): number
+getLevel(): number
 ```
 
-Defined in: [sandkit/api/factory.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L14)
+</div>
 
 Return the current factory level.
 
-#### Returns
-
-`number`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getProcessCount() :id=getprocesscount
+<div class="smt-member-card">
+
+### sandkit.api.factory.getProcessCount :id=getprocesscount
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L23" target="_blank" rel="noopener">factory.d.ts:23</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.factory.getProcessCount(processId: FactoryProcessId): number">
 
 ```ts
-sandkit.api.factory.getProcessCount(processId: FactoryProcessId): number
+getProcessCount(processId: FactoryProcessId): number
 ```
 
-Defined in: [sandkit/api/factory.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L23)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| processId | [`FactoryProcessId`](?id=factoryprocessid) | Built-in factory process id. |
+
+<div class="smt-member-anchors">
+
+##### processId <!-- {docsify-ignore} -->
+
+</div>
 
 Return completed count for a factory process.
 
-#### Parameters
-
-##### processId
-
-[`FactoryProcessId`](#factoryprocessid)
-
-Built-in factory process id.
-
-#### Returns
-
-`number`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getProcessRate() :id=getprocessrate
+<div class="smt-member-card">
+
+### sandkit.api.factory.getProcessRate :id=getprocessrate
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L32" target="_blank" rel="noopener">factory.d.ts:32</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.factory.getProcessRate(processId: FactoryProcessId): number">
 
 ```ts
-sandkit.api.factory.getProcessRate(processId: FactoryProcessId): number
+getProcessRate(processId: FactoryProcessId): number
 ```
 
-Defined in: [sandkit/api/factory.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L32)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| processId | [`FactoryProcessId`](?id=factoryprocessid) | Built-in factory process id. |
+
+<div class="smt-member-anchors">
+
+##### processId <!-- {docsify-ignore} -->
+
+</div>
 
 Return completion rate for a factory process.
 
-#### Parameters
-
-##### processId
-
-[`FactoryProcessId`](#factoryprocessid)
-
-Built-in factory process id.
-
-#### Returns
-
-`number`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

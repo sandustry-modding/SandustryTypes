@@ -6,60 +6,98 @@ Zone rules that restrict player abilities.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### NoJetpack :id=nojetpack
+<div class="smt-member-card">
+
+### sandkit.enums.AuthorizationType.NoJetpack :id=nojetpack
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L33" target="_blank" rel="noopener">index.d.ts:33</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.AuthorizationType.NoJetpack: 1">
 
 ```ts
-sandkit.enums.AuthorizationType.NoJetpack: 1
+NoJetpack: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L33)
+</div>
 
-***
+</div>
 
-### NoGrab :id=nograb
+<div class="smt-member-card">
+
+### sandkit.enums.AuthorizationType.NoGrab :id=nograb
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L34" target="_blank" rel="noopener">index.d.ts:34</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.AuthorizationType.NoGrab: 2">
 
 ```ts
-sandkit.enums.AuthorizationType.NoGrab: 2
+NoGrab: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L34)
+</div>
 
-***
+</div>
 
-### NoBuild :id=nobuild
+<div class="smt-member-card">
+
+### sandkit.enums.AuthorizationType.NoBuild :id=nobuild
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L35" target="_blank" rel="noopener">index.d.ts:35</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.AuthorizationType.NoBuild: 3">
 
 ```ts
-sandkit.enums.AuthorizationType.NoBuild: 3
+NoBuild: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L35)
+</div>
 
-***
+</div>
 
-### NoTool :id=notool
+<div class="smt-member-card">
+
+### sandkit.enums.AuthorizationType.NoTool :id=notool
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L36" target="_blank" rel="noopener">index.d.ts:36</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.AuthorizationType.NoTool: 4">
 
 ```ts
-sandkit.enums.AuthorizationType.NoTool: 4
+NoTool: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L36)
+</div>
 
-***
+</div>
 
-### NoExcavation :id=noexcavation
+<div class="smt-member-card">
+
+### sandkit.enums.AuthorizationType.NoExcavation :id=noexcavation
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L37" target="_blank" rel="noopener">index.d.ts:37</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.AuthorizationType.NoExcavation: 5">
 
 ```ts
-sandkit.enums.AuthorizationType.NoExcavation: 5
+NoExcavation: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L37)
+</div>
 
-***
+</div>
 
-### NoToolExceptFlamethrower :id=notoolexceptflamethrower
+<div class="smt-member-card">
+
+### sandkit.enums.AuthorizationType.NoToolExceptFlamethrower :id=notoolexceptflamethrower
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L38" target="_blank" rel="noopener">index.d.ts:38</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.AuthorizationType.NoToolExceptFlamethrower: 6">
 
 ```ts
-sandkit.enums.AuthorizationType.NoToolExceptFlamethrower: 6
+NoToolExceptFlamethrower: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L38)
+</div>
+
+</div>

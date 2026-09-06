@@ -6,60 +6,98 @@ Projectile kinds spawned by weapons and tools.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Bullet :id=bullet
+<div class="smt-member-card">
+
+### sandkit.enums.ProjectileType.Bullet :id=bullet
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L234" target="_blank" rel="noopener">index.d.ts:234</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ProjectileType.Bullet: 1">
 
 ```ts
-sandkit.enums.ProjectileType.Bullet: 1
+Bullet: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:234](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L234)
+</div>
 
-***
+</div>
 
-### Rocket :id=rocket
+<div class="smt-member-card">
+
+### sandkit.enums.ProjectileType.Rocket :id=rocket
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L235" target="_blank" rel="noopener">index.d.ts:235</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ProjectileType.Rocket: 2">
 
 ```ts
-sandkit.enums.ProjectileType.Rocket: 2
+Rocket: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:235](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L235)
+</div>
 
-***
+</div>
 
-### GrapplingHook :id=grapplinghook
+<div class="smt-member-card">
+
+### sandkit.enums.ProjectileType.GrapplingHook :id=grapplinghook
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L236" target="_blank" rel="noopener">index.d.ts:236</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ProjectileType.GrapplingHook: 3">
 
 ```ts
-sandkit.enums.ProjectileType.GrapplingHook: 3
+GrapplingHook: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:236](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L236)
+</div>
 
-***
+</div>
 
-### Fire :id=fire
+<div class="smt-member-card">
+
+### sandkit.enums.ProjectileType.Fire :id=fire
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L237" target="_blank" rel="noopener">index.d.ts:237</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ProjectileType.Fire: 4">
 
 ```ts
-sandkit.enums.ProjectileType.Fire: 4
+Fire: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:237](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L237)
+</div>
 
-***
+</div>
 
-### Digger :id=digger
+<div class="smt-member-card">
+
+### sandkit.enums.ProjectileType.Digger :id=digger
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L238" target="_blank" rel="noopener">index.d.ts:238</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ProjectileType.Digger: 5">
 
 ```ts
-sandkit.enums.ProjectileType.Digger: 5
+Digger: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:238](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L238)
+</div>
 
-***
+</div>
 
-### Mod :id=mod
+<div class="smt-member-card">
+
+### sandkit.enums.ProjectileType.Mod :id=mod
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L239" target="_blank" rel="noopener">index.d.ts:239</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ProjectileType.Mod: 6">
 
 ```ts
-sandkit.enums.ProjectileType.Mod: 6
+Mod: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:239](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L239)
+</div>
+
+</div>

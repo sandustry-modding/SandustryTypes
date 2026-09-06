@@ -2,38 +2,52 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### EngineFn :id=enginefn
+<div class="smt-member-card">
+
+### shared.engine.EngineFn :id=enginefn
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L11" target="_blank" rel="noopener">engine.d.ts:11</a></p>
+
+<div class="smt-member-sig" data-sig="shared.engine.EngineFn = (...args: unknown[]) =&gt; unknown">
 
 ```ts
-shared.engine.EngineFn = (...args: unknown[]) => unknown
+EngineFn = (...args: unknown[]) => unknown
 ```
 
-Defined in: [shared/engine.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L11)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 **`Internal`**
 
 Stub for an unresolved engine method.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### shared.engine.EngineOverlapNs :id=engineoverlapns
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L17" target="_blank" rel="noopener">engine.d.ts:17</a></p>
 
-`unknown`
-
-***
-
-### EngineOverlapNs :id=engineoverlapns
+<div class="smt-member-sig" data-sig="shared.engine.EngineOverlapNs = Record&lt;string, EngineFn | Record&lt;string, unknown&gt; | unknown&gt;">
 
 ```ts
-shared.engine.EngineOverlapNs = Record<string, EngineFn | Record<string, unknown> | unknown>
+EngineOverlapNs = Record<string, EngineFn | Record<string, unknown> | unknown>
 ```
 
-Defined in: [shared/engine.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L17)
+</div>
 
 **`Internal`**
 
 Loose bag for namespaces that overlap `sandkit.api` (different names / state-first).
+
+</div>

@@ -16,25 +16,31 @@ Worker-entry mutations apply immediately. Main thread defers matching helpers in
 
 ## Functions <!-- {docsify-ignore} -->
 
-### createAtCell() :id=createatcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.createAtCell :id=createatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L79" target="_blank" rel="noopener">elements.d.ts:79</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void">
 
 ```ts
-sandkit.api.elements.createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
+createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L79)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Create an element at a cell immediately on this worker.
-
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md#elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md#elementcreateoptions)\]
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -50,99 +56,106 @@ api.elements.createAtCell(cellX, cellY, "water", {
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### replaceAtCell() :id=replaceatcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.replaceAtCell :id=replaceatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L93" target="_blank" rel="noopener">elements.d.ts:93</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void">
 
 ```ts
-sandkit.api.elements.replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
+replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L93)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Replace the element at a cell immediately on this worker.
 
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md#elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md#elementcreateoptions)\]
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### removeAtCell() :id=removeatcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.removeAtCell :id=removeatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L106" target="_blank" rel="noopener">elements.d.ts:106</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.removeAtCell(...args: number, number, [ElementRemovalOptions]): void">
 
 ```ts
-sandkit.api.elements.removeAtCell(...args: number, number, [ElementRemovalOptions]): void
+removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L106)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md?id=elementremovaloptions)\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Remove the element at a cell immediately on this worker.
 
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md#elementremovaloptions)\]
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### moveBetweenCells() :id=movebetweencells
+<div class="smt-member-card">
+
+### sandkit.api.elements.moveBetweenCells :id=movebetweencells
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L121" target="_blank" rel="noopener">elements.d.ts:121</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): boolean">
 
 ```ts
-sandkit.api.elements.moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): boolean
+moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L121)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| fromCellX | `number` | Source cell column. |
+| fromCellY | `number` | Source cell row. |
+| toCellX | `number` | Destination cell column. |
+| toCellY | `number` | Destination cell row. |
+
+<div class="smt-member-anchors">
+
+##### fromCellX <!-- {docsify-ignore} -->
+
+##### fromCellY <!-- {docsify-ignore} -->
+
+##### toCellX <!-- {docsify-ignore} -->
+
+##### toCellY <!-- {docsify-ignore} -->
+
+</div>
 
 Move an element between cells immediately on this worker.
-
-#### Parameters
-
-##### fromCellX
-
-`number`
-
-Source cell column.
-
-##### fromCellY
-
-`number`
-
-Source cell row.
-
-##### toCellX
-
-`number`
-
-Destination cell column.
-
-##### toCellY
-
-`number`
-
-Destination cell row.
-
-#### Returns
-
-`boolean`
 
 True when the move succeeded.
 
@@ -150,93 +163,83 @@ True when the move succeeded.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### teleportBetweenCells() :id=teleportbetweencells
+<div class="smt-member-card">
+
+### sandkit.api.elements.teleportBetweenCells :id=teleportbetweencells
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L138" target="_blank" rel="noopener">elements.d.ts:138</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void">
 
 ```ts
-sandkit.api.elements.teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
+teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
 ```
 
-Defined in: [worker/api/elements.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L138)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| fromCellX | `number` | Source cell column. |
+| fromCellY | `number` | Source cell row. |
+| toCellX | `number` | Destination cell column. |
+| toCellY | `number` | Destination cell row. |
+
+<div class="smt-member-anchors">
+
+##### fromCellX <!-- {docsify-ignore} -->
+
+##### fromCellY <!-- {docsify-ignore} -->
+
+##### toCellX <!-- {docsify-ignore} -->
+
+##### toCellY <!-- {docsify-ignore} -->
+
+</div>
 
 Teleport an element between cells immediately on this worker.
-
-#### Parameters
-
-##### fromCellX
-
-`number`
-
-Source cell column.
-
-##### fromCellY
-
-`number`
-
-Source cell row.
-
-##### toCellX
-
-`number`
-
-Destination cell column.
-
-##### toCellY
-
-`number`
-
-Destination cell row.
-
-#### Returns
-
-`void`
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### swapBetweenCells() :id=swapbetweencells
+<div class="smt-member-card">
+
+### sandkit.api.elements.swapBetweenCells :id=swapbetweencells
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L156" target="_blank" rel="noopener">elements.d.ts:156</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean">
 
 ```ts
-sandkit.api.elements.swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
+swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L156)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| firstCellX | `number` | First cell column. |
+| firstCellY | `number` | First cell row. |
+| secondCellX | `number` | Second cell column. |
+| secondCellY | `number` | Second cell row. |
+
+<div class="smt-member-anchors">
+
+##### firstCellX <!-- {docsify-ignore} -->
+
+##### firstCellY <!-- {docsify-ignore} -->
+
+##### secondCellX <!-- {docsify-ignore} -->
+
+##### secondCellY <!-- {docsify-ignore} -->
+
+</div>
 
 Swap elements between two cells immediately on this worker.
-
-#### Parameters
-
-##### firstCellX
-
-`number`
-
-First cell column.
-
-##### firstCellY
-
-`number`
-
-First cell row.
-
-##### secondCellX
-
-`number`
-
-Second cell column.
-
-##### secondCellY
-
-`number`
-
-Second cell row.
-
-#### Returns
-
-`boolean`
 
 True when the swap succeeded.
 
@@ -244,123 +247,142 @@ True when the swap succeeded.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### ~~swapCells()~~ :id=swapcells
+<div class="smt-member-card">
+
+### ~~sandkit.api.elements.swapCells~~ :id=swapcells
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L168" target="_blank" rel="noopener">elements.d.ts:168</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean">
 
 ```ts
-sandkit.api.elements.swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
+swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L168)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| firstCellX | `number` |  |
+| firstCellY | `number` |  |
+| secondCellX | `number` |  |
+| secondCellY | `number` |  |
 
-##### firstCellX
+<div class="smt-member-anchors">
 
-`number`
+##### firstCellX <!-- {docsify-ignore} -->
 
-##### firstCellY
+##### firstCellY <!-- {docsify-ignore} -->
 
-`number`
+##### secondCellX <!-- {docsify-ignore} -->
 
-##### secondCellX
+##### secondCellY <!-- {docsify-ignore} -->
 
-`number`
-
-##### secondCellY
-
-`number`
-
-#### Returns
-
-`boolean`
+</div>
 
 #### Deprecated
 
-Use [swapBetweenCells](#swapbetweencells) instead.
+Use [swapBetweenCells](?id=swapbetweencells) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### markMovementBlockedByIndex() :id=markmovementblockedbyindex
+<div class="smt-member-card">
+
+### sandkit.api.elements.markMovementBlockedByIndex :id=markmovementblockedbyindex
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L182" target="_blank" rel="noopener">elements.d.ts:182</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.markMovementBlockedByIndex(elementIndex: number): void">
 
 ```ts
-sandkit.api.elements.markMovementBlockedByIndex(elementIndex: number): void
+markMovementBlockedByIndex(elementIndex: number): void
 ```
 
-Defined in: [worker/api/elements.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L182)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| elementIndex | `number` | Element index from [getInfoAtCell](api/sandkit.api.elements.md?id=getinfoatcell). |
+
+<div class="smt-member-anchors">
+
+##### elementIndex <!-- {docsify-ignore} -->
+
+</div>
 
 Mark an element index as movement-blocked for this tick.
 
-#### Parameters
-
-##### elementIndex
-
-`number`
-
-Element index from [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell).
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~markMovementBlockedByElementIndex()~~ :id=markmovementblockedbyelementindex
+<div class="smt-member-card">
+
+### ~~sandkit.api.elements.markMovementBlockedByElementIndex~~ :id=markmovementblockedbyelementindex
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L189" target="_blank" rel="noopener">elements.d.ts:189</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.markMovementBlockedByElementIndex(elementIndex: number): void">
 
 ```ts
-sandkit.api.elements.markMovementBlockedByElementIndex(elementIndex: number): void
+markMovementBlockedByElementIndex(elementIndex: number): void
 ```
 
-Defined in: [worker/api/elements.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L189)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| elementIndex | `number` |  |
 
-##### elementIndex
+<div class="smt-member-anchors">
 
-`number`
+##### elementIndex <!-- {docsify-ignore} -->
 
-#### Returns
-
-`void`
+</div>
 
 #### Deprecated
 
-Use [markMovementBlockedByIndex](#markmovementblockedbyindex) instead.
+Use [markMovementBlockedByIndex](?id=markmovementblockedbyindex) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### setVelocityAtCell() :id=setvelocityatcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.setVelocityAtCell :id=setvelocityatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L201" target="_blank" rel="noopener">elements.d.ts:201</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.setVelocityAtCell(...args: number, number, [Vector2]): boolean">
 
 ```ts
-sandkit.api.elements.setVelocityAtCell(...args: number, number, [Vector2]): boolean
+setVelocityAtCell(...args: number, number, [Vector2]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L201)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Set particle velocity at a cell immediately on this worker.
-
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, [`Vector2`](api/shared.player.md#vector2)\]
-
-#### Returns
-
-`boolean`
 
 True when velocity was set.
 
@@ -368,27 +390,33 @@ True when velocity was set.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### addParticleVelocityAtCell() :id=addparticlevelocityatcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.addParticleVelocityAtCell :id=addparticlevelocityatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L214" target="_blank" rel="noopener">elements.d.ts:214</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean">
 
 ```ts
-sandkit.api.elements.addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean
+addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L214)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Add velocity to a particle at a cell immediately on this worker.
-
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, [`Vector2`](api/shared.player.md#vector2), `number`\]
-
-#### Returns
-
-`boolean`
 
 True when velocity was updated.
 
@@ -396,83 +424,101 @@ True when velocity was updated.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### convertToParticleAtCell() :id=converttoparticleatcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.convertToParticleAtCell :id=converttoparticleatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L228" target="_blank" rel="noopener">elements.d.ts:228</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.convertToParticleAtCell(...args: number, number, [Vector2]): boolean">
 
 ```ts
-sandkit.api.elements.convertToParticleAtCell(...args: number, number, [Vector2]): boolean
+convertToParticleAtCell(...args: number, number, [Vector2]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:228](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L228)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2)\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Convert a cell element to a particle immediately on this worker.
 
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, [`Vector2`](api/shared.player.md#vector2)\]
-
-#### Returns
-
-`boolean`
-
 True when conversion succeeded.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### convertFromParticleAtCell() :id=convertfromparticleatcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.convertFromParticleAtCell :id=convertfromparticleatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L241" target="_blank" rel="noopener">elements.d.ts:241</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.convertFromParticleAtCell(...args: CellCoordinates): boolean">
 
 ```ts
-sandkit.api.elements.convertFromParticleAtCell(...args: CellCoordinates): boolean
+convertFromParticleAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:241](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L241)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Convert a particle back to a solid element immediately on this worker.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`boolean`
-
 True when conversion succeeded.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### setDataFieldAtCell() :id=setdatafieldatcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.setDataFieldAtCell :id=setdatafieldatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L254" target="_blank" rel="noopener">elements.d.ts:254</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean">
 
 ```ts
-sandkit.api.elements.setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
+setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L254)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `1` \\| `2` \\| `3` \\| `4`, `number`\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Set a data field on the element at a cell immediately on this worker.
-
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, `1` \| `2` \| `3` \| `4`, `number`\]
-
-#### Returns
-
-`boolean`
 
 True when the field was set.
 
@@ -480,79 +526,97 @@ True when the field was set.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### refreshColorAtCell() :id=refreshcoloratcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.refreshColorAtCell :id=refreshcoloratcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L266" target="_blank" rel="noopener">elements.d.ts:266</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.refreshColorAtCell(...args: CellCoordinates): void">
 
 ```ts
-sandkit.api.elements.refreshColorAtCell(...args: CellCoordinates): void
+refreshColorAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [worker/api/elements.d.ts:266](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L266)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Refresh the rendered color at a cell immediately on this worker.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### setPhysicsAtCell() :id=setphysicsatcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.setPhysicsAtCell :id=setphysicsatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L277" target="_blank" rel="noopener">elements.d.ts:277</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.setPhysicsAtCell(...args: [number, number, number]): void">
 
 ```ts
-sandkit.api.elements.setPhysicsAtCell(...args: [number, number, number]): void
+setPhysicsAtCell(...args: [number, number, number]): void
 ```
 
-Defined in: [worker/api/elements.d.ts:277](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L277)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `number`\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Set the physics skip mode at a cell immediately on this worker.
 
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, `number`\]
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### setDurationAtCell() :id=setdurationatcell
+<div class="smt-member-card">
+
+### sandkit.api.elements.setDurationAtCell :id=setdurationatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L300" target="_blank" rel="noopener">elements.d.ts:300</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.elements.setDurationAtCell(...args: [number, number, number, object]): boolean">
 
 ```ts
-sandkit.api.elements.setDurationAtCell(...args: [number, number, number, object]): boolean
+setDurationAtCell(...args: [number, number, number, object]): boolean
 ```
 
-Defined in: [worker/api/elements.d.ts:300](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L300)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `number`, `object`\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Set element duration at a cell immediately on this worker.
-
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, `number`, `object`\]
-
-#### Returns
-
-`boolean`
 
 True when duration was updated.
 
@@ -573,142 +637,4 @@ const updated = api.elements.setDurationAtCell(
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-## References <!-- {docsify-ignore} -->
-
-### ElementType :id=elementtype
-
-<p class="smt-member-path"><code>sandkit.api.elements.ElementType (worker)</code></p>
-Re-exports [ElementType](api/sandkit.api.elements.md#elementtype)
-
-***
-
-### ElementId :id=elementid
-
-<p class="smt-member-path"><code>sandkit.api.elements.ElementId (worker)</code></p>
-Re-exports [ElementId](api/sandkit.api.elements.md#elementid)
-
-***
-
-### ElementRef :id=elementref
-
-<p class="smt-member-path"><code>sandkit.api.elements.ElementRef (worker)</code></p>
-Re-exports [ElementRef](api/sandkit.api.elements.md#elementref)
-
-***
-
-### MatterType :id=mattertype
-
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType (worker)</code></p>
-Re-exports [MatterType](api/sandkit.api.elements.MatterType.md)
-
-***
-
-### ElementDefinition :id=elementdefinition
-
-<p class="smt-member-path"><code>sandkit.api.elements.ElementDefinition (worker)</code></p>
-Re-exports [ElementDefinition](api/sandkit.api.elements.md#elementdefinition)
-
-***
-
-### ElementCreateOptions :id=elementcreateoptions
-
-<p class="smt-member-path"><code>sandkit.api.elements.ElementCreateOptions (worker)</code></p>
-Re-exports [ElementCreateOptions](api/sandkit.api.elements.md#elementcreateoptions)
-
-***
-
-### ElementRemovalOptions :id=elementremovaloptions
-
-<p class="smt-member-path"><code>sandkit.api.elements.ElementRemovalOptions (worker)</code></p>
-Re-exports [ElementRemovalOptions](api/sandkit.api.elements.md#elementremovaloptions)
-
-***
-
-### getIdByType :id=getidbytype
-
-<p class="smt-member-path"><code>sandkit.api.elements.getIdByType (worker)</code></p>
-Re-exports [getIdByType](api/sandkit.api.elements.md#getidbytype)
-
-***
-
-### getTypeById :id=gettypebyid
-
-<p class="smt-member-path"><code>sandkit.api.elements.getTypeById (worker)</code></p>
-Re-exports [getTypeById](api/sandkit.api.elements.md#gettypebyid)
-
-***
-
-### getTypeFromId :id=gettypefromid
-
-<p class="smt-member-path"><code>sandkit.api.elements.getTypeFromId (worker)</code></p>
-Re-exports [getTypeFromId](api/sandkit.api.elements.md#gettypefromid)
-
-***
-
-### getDefinitionByType :id=getdefinitionbytype
-
-<p class="smt-member-path"><code>sandkit.api.elements.getDefinitionByType (worker)</code></p>
-Re-exports [getDefinitionByType](api/sandkit.api.elements.md#getdefinitionbytype)
-
-***
-
-### getTypeAtCell :id=gettypeatcell
-
-<p class="smt-member-path"><code>sandkit.api.elements.getTypeAtCell (worker)</code></p>
-Re-exports [getTypeAtCell](api/sandkit.api.elements.md#gettypeatcell)
-
-***
-
-### getResolvedTypeAtCell :id=getresolvedtypeatcell
-
-<p class="smt-member-path"><code>sandkit.api.elements.getResolvedTypeAtCell (worker)</code></p>
-Re-exports [getResolvedTypeAtCell](api/sandkit.api.elements.md#getresolvedtypeatcell)
-
-***
-
-### getResolvedTypeFromCellId :id=getresolvedtypefromcellid
-
-<p class="smt-member-path"><code>sandkit.api.elements.getResolvedTypeFromCellId (worker)</code></p>
-Re-exports [getResolvedTypeFromCellId](api/sandkit.api.elements.md#getresolvedtypefromcellid)
-
-***
-
-### getInfoAtCell :id=getinfoatcell
-
-<p class="smt-member-path"><code>sandkit.api.elements.getInfoAtCell (worker)</code></p>
-Re-exports [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell)
-
-***
-
-### getMatterTypeAtCell :id=getmattertypeatcell
-
-<p class="smt-member-path"><code>sandkit.api.elements.getMatterTypeAtCell (worker)</code></p>
-Re-exports [getMatterTypeAtCell](api/sandkit.api.elements.md#getmattertypeatcell)
-
-***
-
-### isTypeAtCell :id=istypeatcell
-
-<p class="smt-member-path"><code>sandkit.api.elements.isTypeAtCell (worker)</code></p>
-Re-exports [isTypeAtCell](api/sandkit.api.elements.md#istypeatcell)
-
-***
-
-### isFreeFallingAtCell :id=isfreefallingatcell
-
-<p class="smt-member-path"><code>sandkit.api.elements.isFreeFallingAtCell (worker)</code></p>
-Re-exports [isFreeFallingAtCell](api/sandkit.api.elements.md#isfreefallingatcell)
-
-***
-
-### getVelocityAtCell :id=getvelocityatcell
-
-<p class="smt-member-path"><code>sandkit.api.elements.getVelocityAtCell (worker)</code></p>
-Re-exports [getVelocityAtCell](api/sandkit.api.elements.md#getvelocityatcell)
-
-***
-
-### getDataFieldAtCell :id=getdatafieldatcell
-
-<p class="smt-member-path"><code>sandkit.api.elements.getDataFieldAtCell (worker)</code></p>
-Re-exports [getDataFieldAtCell](api/sandkit.api.elements.md#getdatafieldatcell)
+</div>

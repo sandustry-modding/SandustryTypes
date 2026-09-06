@@ -115,41 +115,50 @@ api.ui.useGameEvent("resource:collected", (payload) => {
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### TooltipMessageData :id=tooltipmessagedata
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.ui.TooltipMessageData</code></p>
-Defined in: [sandkit/api/ui.d.ts:299](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L299)
+### sandkit.api.ui.TooltipMessageData :id=tooltipmessagedata
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L299" target="_blank" rel="noopener">ui.d.ts:299</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| type | "message" | Discriminator for tooltip renderer selection. |
+| text | LocalizedText | Message body as localized text. |
+
+<div class="smt-member-anchors">
+
+##### type <!-- {docsify-ignore} -->
+
+##### text <!-- {docsify-ignore} -->
+
+</div>
 
 Message tooltip with localized body text.
 
-#### Properties
+</div>
 
-##### type
+<div class="smt-member-card">
 
-```ts
-type: "message"
-```
+### sandkit.api.ui.Focusable :id=focusable
 
-Defined in: [sandkit/api/ui.d.ts:301](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L301)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L307" target="_blank" rel="noopener">ui.d.ts:307</a></p>
 
-Discriminator for tooltip renderer selection.
+| Property | Type | Description |
+| --- | --- | --- |
+| ref | RefObject<T> | Ref to attach to the focusable element. |
+| focused | boolean | True when the element has controller focus. |
+| focus | () => void | Move controller focus to this element. |
 
-##### text
+<div class="smt-member-anchors">
 
-```ts
-text: LocalizedText
-```
+##### ref <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/ui.d.ts:303](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L303)
+##### focused <!-- {docsify-ignore} -->
 
-Message body as localized text.
+##### focus <!-- {docsify-ignore} -->
 
-***
-
-### Focusable :id=focusable
-
-<p class="smt-member-path"><code>sandkit.api.ui.Focusable</code></p>
-Defined in: [sandkit/api/ui.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L307)
+</div>
 
 Focusable element state from useFocusable.
 
@@ -159,307 +168,236 @@ Focusable element state from useFocusable.
 
 `T` *extends* `HTMLElement` = `HTMLDivElement`
 
-#### Properties
+</div>
 
-##### ref
+<div class="smt-member-card">
 
-```ts
-readonly ref: RefObject<T>
-```
+### sandkit.api.ui.FocusOptions :id=focusoptions
 
-Defined in: [sandkit/api/ui.d.ts:309](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L309)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L317" target="_blank" rel="noopener">ui.d.ts:317</a></p>
 
-Ref to attach to the focusable element.
+| Property | Type | Description |
+| --- | --- | --- |
+| id | string | Unique id within the focus scope. |
+| scope | string | Focus scope id this element belongs to. |
+| onActivate | (element?: HTMLElement) => void | Called when the element is activated (A button / Enter). |
+| onFocus? | () => void | Called when the element receives focus. |
+| disabled? | boolean | When true, skip this element during navigation. |
+| x? | number | Optional grid column for spatial navigation. |
+| y? | number | Optional grid row for spatial navigation. |
+| neighbors? | Partial<Record<"left" \| "right" \| "up" \| "down", string>> | Neighbor ids for directional navigation. |
+| scrollIntoView? | boolean | When true, scroll the element into view on focus. |
 
-##### focused
+<div class="smt-member-anchors">
 
-```ts
-readonly focused: boolean
-```
+##### id <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/ui.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L311)
+##### scope <!-- {docsify-ignore} -->
 
-True when the element has controller focus.
+##### onActivate <!-- {docsify-ignore} -->
 
-##### focus
+##### onFocus? <!-- {docsify-ignore} -->
 
-```ts
-readonly focus: () => void
-```
+##### disabled? <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/ui.d.ts:313](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L313)
+##### x? <!-- {docsify-ignore} -->
 
-Move controller focus to this element.
+##### y? <!-- {docsify-ignore} -->
 
-###### Returns
+##### neighbors? <!-- {docsify-ignore} -->
 
-`void`
+##### scrollIntoView? <!-- {docsify-ignore} -->
 
-***
-
-### FocusOptions :id=focusoptions
-
-<p class="smt-member-path"><code>sandkit.api.ui.FocusOptions</code></p>
-Defined in: [sandkit/api/ui.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L317)
+</div>
 
 Options for useFocusable registration.
 
-#### Properties
-
-##### id
-
-```ts
-readonly id: string
-```
-
-Defined in: [sandkit/api/ui.d.ts:319](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L319)
-
-Unique id within the focus scope.
-
-##### scope
-
-```ts
-readonly scope: string
-```
-
-Defined in: [sandkit/api/ui.d.ts:321](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L321)
-
-Focus scope id this element belongs to.
-
-##### onActivate
-
-```ts
-readonly onActivate: (element?: HTMLElement) => void
-```
-
-Defined in: [sandkit/api/ui.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L323)
-
-Called when the element is activated (A button / Enter).
-
-###### Parameters
-
-###### element?
-
-`HTMLElement`
-
-###### Returns
-
-`void`
-
-##### onFocus?
-
-```ts
-readonly optional onFocus?: () => void
-```
-
-Defined in: [sandkit/api/ui.d.ts:325](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L325)
-
-Called when the element receives focus.
-
-###### Returns
-
-`void`
-
-##### disabled?
-
-```ts
-readonly optional disabled?: boolean
-```
-
-Defined in: [sandkit/api/ui.d.ts:327](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L327)
-
-When true, skip this element during navigation.
-
-##### x?
-
-```ts
-readonly optional x?: number
-```
-
-Defined in: [sandkit/api/ui.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L329)
-
-Optional grid column for spatial navigation.
-
-##### y?
-
-```ts
-readonly optional y?: number
-```
-
-Defined in: [sandkit/api/ui.d.ts:331](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L331)
-
-Optional grid row for spatial navigation.
-
-##### neighbors?
-
-```ts
-readonly optional neighbors?: Partial<Record<"left" | "right" | "up" | "down", string>>
-```
-
-Defined in: [sandkit/api/ui.d.ts:333](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L333)
-
-Neighbor ids for directional navigation.
-
-##### scrollIntoView?
-
-```ts
-readonly optional scrollIntoView?: boolean
-```
-
-Defined in: [sandkit/api/ui.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L335)
-
-When true, scroll the element into view on focus.
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### OverlaySlot :id=overlayslot
+<div class="smt-member-card">
+
+### sandkit.api.ui.OverlaySlot :id=overlayslot
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L284" target="_blank" rel="noopener">ui.d.ts:284</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.OverlaySlot = LooseString&lt;&quot;hotbar&quot; | &quot;global&quot;&gt;">
 
 ```ts
-sandkit.api.ui.OverlaySlot = LooseString<"hotbar" | "global">
+OverlaySlot = LooseString<"hotbar" | "global">
 ```
 
-Defined in: [sandkit/api/ui.d.ts:284](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L284)
+</div>
 
 Overlay slot name. Known vanilla slots autocomplete; any string is allowed.
 
-***
+</div>
 
-### ComponentId :id=componentid
+<div class="smt-member-card">
+
+### sandkit.api.ui.ComponentId :id=componentid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L290" target="_blank" rel="noopener">ui.d.ts:290</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.ComponentId = ComponentId | LooseString&lt;never&gt;">
 
 ```ts
-sandkit.api.ui.ComponentId = ComponentId | LooseString<never>
+ComponentId = ComponentId | LooseString<never>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L290)
+</div>
 
 Registered UI component id.
 Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) values autocomplete; custom string ids are allowed.
 
-***
+</div>
 
-### ComponentUpdateOptions :id=componentupdateoptions
+<div class="smt-member-card">
 
-```ts
-sandkit.api.ui.ComponentUpdateOptions = Record<string, unknown>
-```
+### sandkit.api.ui.ComponentUpdateOptions :id=componentupdateoptions
 
-Defined in: [sandkit/api/ui.d.ts:293](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L293)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L293" target="_blank" rel="noopener">ui.d.ts:293</a></p>
 
-Component-specific update payload passed to [update](#update).
-
-***
-
-### TooltipData :id=tooltipdata
+<div class="smt-member-sig" data-sig="sandkit.api.ui.ComponentUpdateOptions = Record&lt;string, unknown&gt;">
 
 ```ts
-sandkit.api.ui.TooltipData = TooltipMessageData
+ComponentUpdateOptions = Record<string, unknown>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:296](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L296)
+</div>
+
+Component-specific update payload passed to [update](?id=update).
+
+</div>
+
+<div class="smt-member-card">
+
+### sandkit.api.ui.TooltipData :id=tooltipdata
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L296" target="_blank" rel="noopener">ui.d.ts:296</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.TooltipData = TooltipMessageData">
+
+```ts
+TooltipData = TooltipMessageData
+```
+
+</div>
 
 Tooltip payload shown near the cursor or UI target.
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### update() :id=update
+<div class="smt-member-card">
+
+### sandkit.api.ui.update :id=update
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L130" target="_blank" rel="noopener">ui.d.ts:130</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.update(componentId: ComponentId, options?: ComponentUpdateOptions): void">
 
 ```ts
-sandkit.api.ui.update(componentId: ComponentId, options?: ComponentUpdateOptions): void
+update(componentId: ComponentId, options?: ComponentUpdateOptions): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L130)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| componentId | [`ComponentId`](?id=componentid) | Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) value or custom string id. |
+| options? | [`ComponentUpdateOptions`](?id=componentupdateoptions) | Component-specific update payload. |
+
+<div class="smt-member-anchors">
+
+##### componentId <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Update a registered UI component by id.
 
-#### Parameters
+</div>
 
-##### componentId
+<div class="smt-member-card">
 
-[`ComponentId`](#componentid)
+### sandkit.api.ui.openPauseMenu :id=openpausemenu
 
-Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) value or custom string id.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L133" target="_blank" rel="noopener">ui.d.ts:133</a></p>
 
-##### options?
-
-[`ComponentUpdateOptions`](#componentupdateoptions)
-
-Component-specific update payload.
-
-#### Returns
-
-`void`
-
-***
-
-### openPauseMenu() :id=openpausemenu
+<div class="smt-member-sig" data-sig="sandkit.api.ui.openPauseMenu(): void">
 
 ```ts
-sandkit.api.ui.openPauseMenu(): void
+openPauseMenu(): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L133)
+</div>
 
 Open the pause menu.
 
-#### Returns
+</div>
 
-`void`
+<div class="smt-member-card">
 
-***
+### sandkit.api.ui.showTooltip :id=showtooltip
 
-### showTooltip() :id=showtooltip
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L139" target="_blank" rel="noopener">ui.d.ts:139</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.showTooltip(data: TooltipMessageData): void">
 
 ```ts
-sandkit.api.ui.showTooltip(data: TooltipMessageData): void
+showTooltip(data: TooltipMessageData): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L139)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| data | [`TooltipMessageData`](?id=tooltipmessagedata) | Tooltip type and localized content. |
+
+<div class="smt-member-anchors">
+
+##### data <!-- {docsify-ignore} -->
+
+</div>
 
 Show a tooltip with the given data.
 
-#### Parameters
+</div>
 
-##### data
+<div class="smt-member-card">
 
-[`TooltipMessageData`](#tooltipmessagedata)
+### sandkit.api.ui.alert :id=alert
 
-Tooltip type and localized content.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L155" target="_blank" rel="noopener">ui.d.ts:155</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### alert() :id=alert
+<div class="smt-member-sig" data-sig="sandkit.api.ui.alert(message: LocalizedText, title?: LocalizedText): Promise&lt;void&gt;">
 
 ```ts
-sandkit.api.ui.alert(message: LocalizedText, title?: LocalizedText): Promise<void>
+alert(message: LocalizedText, title?: LocalizedText): Promise<void>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L155)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| message | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Dialog body text. |
+| title? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Optional dialog title. |
+
+<div class="smt-member-anchors">
+
+##### message <!-- {docsify-ignore} -->
+
+##### title? <!-- {docsify-ignore} -->
+
+</div>
 
 Show an alert dialog.
 
-#### Parameters
-
-##### message
-
-[`LocalizedText`](api/sandkit.api.ui.worker.md#localizedtext)
-
-Dialog body text.
-
-##### title?
-
-[`LocalizedText`](api/sandkit.api.ui.worker.md#localizedtext)
-
-Optional dialog title.
-
-#### Returns
-
-`Promise`\<`void`\>
-
-Promise that resolves when the user dismisses the dialog.
+`Promise`\<`void`\> Promise that resolves when the user dismisses the dialog.
 
 #### Example
 
@@ -470,37 +408,38 @@ await api.ui.alert(
 );
 ```
 
-***
+</div>
 
-### confirm() :id=confirm
+<div class="smt-member-card">
+
+### sandkit.api.ui.confirm :id=confirm
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L170" target="_blank" rel="noopener">ui.d.ts:170</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.confirm(message: LocalizedText, title?: LocalizedText): Promise&lt;boolean&gt;">
 
 ```ts
-sandkit.api.ui.confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
+confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L170)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| message | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Dialog body text. |
+| title? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Optional dialog title. |
+
+<div class="smt-member-anchors">
+
+##### message <!-- {docsify-ignore} -->
+
+##### title? <!-- {docsify-ignore} -->
+
+</div>
 
 Show a confirm dialog.
 
-#### Parameters
-
-##### message
-
-[`LocalizedText`](api/sandkit.api.ui.worker.md#localizedtext)
-
-Dialog body text.
-
-##### title?
-
-[`LocalizedText`](api/sandkit.api.ui.worker.md#localizedtext)
-
-Optional dialog title.
-
-#### Returns
-
-`Promise`\<`boolean`\>
-
-Promise that resolves with true when confirmed, or false when cancelled.
+`Promise`\<`boolean`\> Promise that resolves with true when confirmed, or false when cancelled.
 
 #### Example
 
@@ -510,55 +449,47 @@ const confirmed = await api.ui.confirm(
 );
 ```
 
-***
+</div>
 
-### prompt() :id=prompt
+<div class="smt-member-card">
+
+### sandkit.api.ui.prompt :id=prompt
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L189" target="_blank" rel="noopener">ui.d.ts:189</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise&lt;string | null&gt;">
 
 ```ts
-sandkit.api.ui.prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>
+prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L189)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| message | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Dialog body text. |
+| defaultValue? | `string` | Initial input value. |
+| placeholder? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Placeholder text in the input field. |
+| title? | [`LocalizedText`](api/sandkit.api.ui.worker.md?id=localizedtext) | Optional dialog title. |
+| allowCopy? | `boolean` | When true, allow copying the result from the dialog. |
+
+<div class="smt-member-anchors">
+
+##### message <!-- {docsify-ignore} -->
+
+##### defaultValue? <!-- {docsify-ignore} -->
+
+##### placeholder? <!-- {docsify-ignore} -->
+
+##### title? <!-- {docsify-ignore} -->
+
+##### allowCopy? <!-- {docsify-ignore} -->
+
+</div>
 
 Show a prompt dialog.
 
-#### Parameters
-
-##### message
-
-[`LocalizedText`](api/sandkit.api.ui.worker.md#localizedtext)
-
-Dialog body text.
-
-##### defaultValue?
-
-`string`
-
-Initial input value.
-
-##### placeholder?
-
-[`LocalizedText`](api/sandkit.api.ui.worker.md#localizedtext)
-
-Placeholder text in the input field.
-
-##### title?
-
-[`LocalizedText`](api/sandkit.api.ui.worker.md#localizedtext)
-
-Optional dialog title.
-
-##### allowCopy?
-
-`boolean`
-
-When true, allow copying the result from the dialog.
-
-#### Returns
-
-`Promise`\<`string` \| `null`\>
-
-Promise that resolves with entered text, or null when cancelled.
+`Promise`\<`string` \| `null`\> Promise that resolves with entered text, or null when cancelled.
 
 #### Example
 
@@ -569,55 +500,37 @@ const value = await api.ui.prompt(
 );
 ```
 
-***
+</div>
 
-### inject() :id=inject
+<div class="smt-member-card">
+
+### sandkit.api.ui.inject :id=inject
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L203" target="_blank" rel="noopener">ui.d.ts:203</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.inject(componentId: ComponentId, component: ComponentType&lt;Record&lt;string, never&gt;&gt;): () =&gt; void">
 
 ```ts
-sandkit.api.ui.inject(componentId: ComponentId, component: ComponentType<Record<string, never>>): () => void
+inject(componentId: ComponentId, component: ComponentType<Record<string, never>>): () => void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L203)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| componentId | [`ComponentId`](?id=componentid) | Overlay slot or custom mount point id. |
+| component | `ComponentType`\<`Record`\<`string`, `never`\>\> | React component to render. |
+
+<div class="smt-member-anchors">
+
+##### componentId <!-- {docsify-ignore} -->
+
+##### component <!-- {docsify-ignore} -->
+
+</div>
 
 Mount a React component by id.
 
-#### Parameters
+Function that unmounts the injected component. () => `void`
 
-##### componentId
-
-[`ComponentId`](#componentid)
-
-Overlay slot or custom mount point id.
-
-##### component
-
-`ComponentType`\<`Record`\<`string`, `never`\>\>
-
-React component to render.
-
-#### Returns
-
-Function that unmounts the injected component.
-
-() => `void`
-
-## References <!-- {docsify-ignore} -->
-
-### toast :id=toast
-
-<p class="smt-member-path"><code>sandkit.api.ui.toast</code></p>
-Re-exports [toast](api/sandkit.api.ui.worker.md#toast)
-
-***
-
-### LocalizedText :id=localizedtext
-
-<p class="smt-member-path"><code>sandkit.api.ui.LocalizedText</code></p>
-Re-exports [LocalizedText](api/sandkit.api.ui.worker.md#localizedtext)
-
-***
-
-### ToastOptions :id=toastoptions
-
-<p class="smt-member-path"><code>sandkit.api.ui.ToastOptions</code></p>
-Re-exports [ToastOptions](api/sandkit.api.ui.worker.md#toastoptions)
+</div>

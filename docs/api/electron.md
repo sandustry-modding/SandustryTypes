@@ -13,52 +13,30 @@ Async methods use `ipcRenderer.invoke` unless noted (`openDevTools`, `log`).
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### ElectronBridge :id=electronbridge
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>electron.ElectronBridge</code></p>
-Defined in: [electron/bridge.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L33)
+### electron.ElectronBridge :id=electronbridge
 
-#### Properties
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L33" target="_blank" rel="noopener">bridge.d.ts:33</a></p>
 
-##### localMods
+| Property | Type | Description |
+| --- | --- | --- |
+| localMods | ElectronLocalModsApi | Local developer mod folder helpers (`electron.localMods`). |
+| macRightMouse | ElectronMacRightMouseApi | macOS right-button emulation helpers (`electron.macRightMouse`). |
+| platform | ElectronPlatformApi | Cross-store platform helpers (`electron.platform`). |
+| customMaps | ElectronCustomMapsApi | Custom map editor persistence helpers (`electron.customMaps`). |
 
-```ts
-localMods: ElectronLocalModsApi
-```
+<div class="smt-member-anchors">
 
-Defined in: [electron/bridge.d.ts:301](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L301)
+##### localMods <!-- {docsify-ignore} -->
 
-Local developer mod folder helpers (`electron.localMods`).
+##### macRightMouse <!-- {docsify-ignore} -->
 
-##### macRightMouse
+##### platform <!-- {docsify-ignore} -->
 
-```ts
-macRightMouse: ElectronMacRightMouseApi
-```
+##### customMaps <!-- {docsify-ignore} -->
 
-Defined in: [electron/bridge.d.ts:396](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L396)
-
-macOS right-button emulation helpers (`electron.macRightMouse`).
-
-##### platform
-
-```ts
-platform: ElectronPlatformApi
-```
-
-Defined in: [electron/bridge.d.ts:399](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L399)
-
-Cross-store platform helpers (`electron.platform`).
-
-##### customMaps
-
-```ts
-customMaps: ElectronCustomMapsApi
-```
-
-Defined in: [electron/bridge.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L424)
-
-Custom map editor persistence helpers (`electron.customMaps`).
+</div>
 
 #### Methods
 
@@ -74,7 +52,7 @@ Return the active distribution channel.
 
 ###### Returns
 
-[`ElectronPlatform`](#electronplatform)
+[`ElectronPlatform`](?id=electronplatform)
 
 `"steam"`, `"msstore"`, `"gog"`, or another platform string.
 
@@ -148,7 +126,7 @@ Register a callback for app suspend (sleep / Xbox quick suspend).
 
 ###### callback
 
-[`ElectronIpcListener`](#electronipclistener)
+[`ElectronIpcListener`](?id=electronipclistener)
 
 Called with IPC event arguments when the app suspends.
 
@@ -172,7 +150,7 @@ Register a callback for app resume.
 
 ###### callback
 
-[`ElectronIpcListener`](#electronipclistener)
+[`ElectronIpcListener`](?id=electronipclistener)
 
 Called with IPC event arguments when the app resumes.
 
@@ -194,7 +172,7 @@ Return platform diagnostics JSON.
 
 ###### Returns
 
-`Promise`\<[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1)\>
+`Promise`\<[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)\>
 
 Diagnostics object from the active platform integration.
 
@@ -214,7 +192,7 @@ Always returns `{ valid: true }` on Steam when platform checks are unavailable.
 
 ###### Returns
 
-`Promise`\<[`ElectronLicenseCheckResult`](#electronlicensecheckresult)\>
+`Promise`\<[`ElectronLicenseCheckResult`](?id=electronlicensecheckresult)\>
 
 License validation result.
 
@@ -280,7 +258,7 @@ Achievement ids to seed in the local cache.
 
 ###### Returns
 
-`Promise`\<[`ElectronPrimeAchievementsResult`](#electronprimeachievementsresult)\>
+`Promise`\<[`ElectronPrimeAchievementsResult`](?id=electronprimeachievementsresult)\>
 
 Prime operation result.
 
@@ -308,7 +286,7 @@ Resolves immediately with `{ dismissed: true }` on Steam.
 
 ###### Returns
 
-`Promise`\<[`ElectronReauthPromptResult`](#electronreauthpromptresult)\>
+`Promise`\<[`ElectronReauthPromptResult`](?id=electronreauthpromptresult)\>
 
 Dialog button index or dismissed flag.
 
@@ -328,7 +306,7 @@ Works in fullscreen where `window.close()` is unreliable.
 
 ###### Returns
 
-`Promise`\<[`ElectronSuccessResult`](#electronsuccessresult)\>
+`Promise`\<[`ElectronSuccessResult`](?id=electronsuccessresult)\>
 
 `{ success: true }` after scheduling quit.
 
@@ -354,7 +332,7 @@ Must be an `https:` URL or the call returns `{ success: false, error: 'unsupport
 
 ###### Returns
 
-`Promise`\<[`ElectronOpenUrlResult`](#electronopenurlresult)\>
+`Promise`\<[`ElectronOpenUrlResult`](?id=electronopenurlresult)\>
 
 URL open result.
 
@@ -376,7 +354,7 @@ MS Store only — never fires on Steam.
 
 ###### callback
 
-[`ElectronIpcListener`](#electronipclistener)
+[`ElectronIpcListener`](?id=electronipclistener)
 
 Called when the Xbox user signs out.
 
@@ -402,7 +380,7 @@ MS Store only — never fires on Steam.
 
 ###### callback
 
-[`ElectronIpcListener`](#electronipclistener)
+[`ElectronIpcListener`](?id=electronipclistener)
 
 Called when the store license is lost.
 
@@ -428,7 +406,7 @@ MS Store only — never fires on Steam.
 
 ###### callback
 
-[`ElectronIpcListener`](#electronipclistener)
+[`ElectronIpcListener`](?id=electronipclistener)
 
 Called when the Xbox user signs in.
 
@@ -464,13 +442,13 @@ Display name for the slot.
 
 ###### data
 
-[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1)
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)
 
 Full serialized save payload.
 
 ###### Returns
 
-`Promise`\<[`ElectronOperationResult`](#electronoperationresult)\>
+`Promise`\<[`ElectronOperationResult`](?id=electronoperationresult)\>
 
 Save operation result with output path on success.
 
@@ -508,13 +486,13 @@ Stringified save body (gzip-compressed by the main process).
 
 ###### metadata?
 
-[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1)
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)
 
 Metadata object merged into the `.save` header line.
 
 ###### Returns
 
-`Promise`\<[`ElectronOperationResult`](#electronoperationresult)\>
+`Promise`\<[`ElectronOperationResult`](?id=electronoperationresult)\>
 
 Save operation result with output path on success.
 
@@ -540,7 +518,7 @@ Save slot id.
 
 ###### Returns
 
-`Promise`\<[`ElectronLoadResult`](#electronloadresult)\>
+`Promise`\<[`ElectronLoadResult`](?id=electronloadresult)\>
 
 Parsed save on success, or `{ success: false, error }`.
 
@@ -566,7 +544,7 @@ Save slot id.
 
 ###### Returns
 
-`Promise`\<[`ElectronSuccessResult`](#electronsuccessresult) \| [`ElectronFailureResult`](#electronfailureresult)\>
+`Promise`\<[`ElectronSuccessResult`](?id=electronsuccessresult) \| [`ElectronFailureResult`](?id=electronfailureresult)\>
 
 `{ success: true }` after deleting primary and backup files.
 
@@ -592,7 +570,7 @@ Filename under the saves folder.
 
 ###### Returns
 
-`Promise`\<[`ElectronLoadResult`](#electronloadresult) \| `null`\>
+`Promise`\<[`ElectronLoadResult`](?id=electronloadresult) \| `null`\>
 
 Parsed save result, or `null` when the handler cannot resolve the file.
 
@@ -618,7 +596,7 @@ Save slot id.
 
 ###### Returns
 
-`Promise`\<[`ElectronExportSaveResult`](#electronexportsaveresult)\>
+`Promise`\<[`ElectronExportSaveResult`](?id=electronexportsaveresult)\>
 
 Raw `.save` bytes on success.
 
@@ -644,7 +622,7 @@ Raw `.save` file contents.
 
 ###### Returns
 
-`Promise`\<[`ElectronImportSaveResult`](#electronimportsaveresult)\>
+`Promise`\<[`ElectronImportSaveResult`](?id=electronimportsaveresult)\>
 
 Import result with parsed header metadata on success.
 
@@ -662,7 +640,7 @@ List save slot metadata parsed from each `.save` header line.
 
 ###### Returns
 
-`Promise`\<[`ElectronSaveFileMetadata`](#electronsavefilemetadata)[]\>
+`Promise`\<[`ElectronSaveFileMetadata`](?id=electronsavefilemetadata)[]\>
 
 Save metadata objects; corrupt entries are omitted.
 
@@ -718,13 +696,13 @@ Persist the last-played save id.
 
 ###### game
 
-[`ElectronLastPlayedGame`](#electronlastplayedgame)
+[`ElectronLastPlayedGame`](?id=electronlastplayedgame)
 
 Object containing the save slot `id`.
 
 ###### Returns
 
-`Promise`\<[`ElectronOperationResult`](#electronoperationresult)\>
+`Promise`\<[`ElectronOperationResult`](?id=electronoperationresult)\>
 
 Write result for `lastPlayedGame.json`.
 
@@ -742,7 +720,7 @@ Clear the persisted last-played save id.
 
 ###### Returns
 
-`Promise`\<[`ElectronOperationResult`](#electronoperationresult)\>
+`Promise`\<[`ElectronOperationResult`](?id=electronoperationresult)\>
 
 Delete result for `lastPlayedGame.json`.
 
@@ -806,13 +784,13 @@ Persist renderer settings JSON to disk.
 
 ###### settings
 
-[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1)
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)
 
 Settings object written to `settings.json`.
 
 ###### Returns
 
-`Promise`\<[`ElectronOperationResult`](#electronoperationresult)\>
+`Promise`\<[`ElectronOperationResult`](?id=electronoperationresult)\>
 
 Write result for the settings file.
 
@@ -838,7 +816,7 @@ Target fullscreen state.
 
 ###### Returns
 
-`Promise`\<[`ElectronOperationResult`](#electronoperationresult)\>
+`Promise`\<[`ElectronOperationResult`](?id=electronoperationresult)\>
 
 Window fullscreen operation result.
 
@@ -856,7 +834,7 @@ Toggle fullscreen mode.
 
 ###### Returns
 
-`Promise`\<[`ElectronOperationResult`](#electronoperationresult)\>
+`Promise`\<[`ElectronOperationResult`](?id=electronoperationresult)\>
 
 Window fullscreen operation result.
 
@@ -912,7 +890,7 @@ Fire-and-forget — never awaits IPC completion.
 
 ###### level
 
-[`ElectronLogLevel`](#electronloglevel)
+[`ElectronLogLevel`](?id=electronloglevel)
 
 Log severity (`console.log` maps to `"info"` in mod shims).
 
@@ -948,16 +926,17 @@ Useful for bug reports and environment probes.
 
 ###### Returns
 
-[`ElectronSystemInfo`](#electronsysteminfo)
+[`ElectronSystemInfo`](?id=electronsysteminfo)
 
 Version info read from the preload process object.
 
-***
+</div>
 
-### ElectronCustomMapsApi :id=electroncustommapsapi
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>electron.ElectronCustomMapsApi</code></p>
-Defined in: [electron/custom-maps.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L11)
+### electron.ElectronCustomMapsApi :id=electroncustommapsapi
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L11" target="_blank" rel="noopener">custom-maps.d.ts:11</a></p>
 
 Custom map editor persistence helpers exposed as `electron.customMaps`.
 
@@ -989,13 +968,13 @@ Display name stored in metadata.
 
 ###### data
 
-[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1)
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)
 
 Full custom map JSON payload.
 
 ###### Returns
 
-`Promise`\<[`ElectronOperationResult`](#electronoperationresult)\>
+`Promise`\<[`ElectronOperationResult`](?id=electronoperationresult)\>
 
 Operation result with written `path` on success.
 
@@ -1021,7 +1000,7 @@ Map id (filename stem).
 
 ###### Returns
 
-`Promise`\<[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1)\>
+`Promise`\<[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)\>
 
 Parsed map JSON, or `null` when missing or invalid.
 
@@ -1039,7 +1018,7 @@ List custom map metadata entries (newest first).
 
 ###### Returns
 
-`Promise`\<[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1)[]\>
+`Promise`\<[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)[]\>
 
 Metadata objects parsed from each `.custommap` header line.
 
@@ -1065,18 +1044,19 @@ Map id (filename stem).
 
 ###### Returns
 
-`Promise`\<[`ElectronOperationResult`](#electronoperationresult)\>
+`Promise`\<[`ElectronOperationResult`](?id=electronoperationresult)\>
 
 Operation result from the delete handler.
 
 IPC: `custom-map-delete`.
 
-***
+</div>
 
-### ElectronLocalModsApi :id=electronlocalmodsapi
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>electron.ElectronLocalModsApi</code></p>
-Defined in: [electron/local-mods.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L14)
+### electron.ElectronLocalModsApi :id=electronlocalmodsapi
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L14" target="_blank" rel="noopener">local-mods.d.ts:14</a></p>
 
 Local developer mod folder helpers exposed as `electron.localMods`.
 
@@ -1112,7 +1092,7 @@ Open the local-mods folder in the OS file manager.
 
 ###### Returns
 
-`Promise`\<[`ElectronOperationResult`](#electronoperationresult)\>
+`Promise`\<[`ElectronOperationResult`](?id=electronoperationresult)\>
 
 Operation result from the shell open call.
 
@@ -1132,7 +1112,7 @@ Steam only — MS Store returns `{ ok: false, errorCode: 'unsupported_platform' 
 
 ###### Returns
 
-`Promise`\<[`ElectronLocalModsListResult`](#electronlocalmodslistresult)\>
+`Promise`\<[`ElectronLocalModsListResult`](?id=electronlocalmodslistresult)\>
 
 Listing result with mod summaries in `data` when `ok` is true.
 
@@ -1158,18 +1138,19 @@ Local mod folder id under the local-mods directory.
 
 ###### Returns
 
-`Promise`\<[`ElectronLocalModsUploadResult`](#electronlocalmodsuploadresult)\>
+`Promise`\<[`ElectronLocalModsUploadResult`](?id=electronlocalmodsuploadresult)\>
 
 Upload result with `errorCode` on failure.
 
 IPC: `local-mods-upload`.
 
-***
+</div>
 
-### ElectronMacRightMouseApi :id=electronmacrightmouseapi
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>electron.ElectronMacRightMouseApi</code></p>
-Defined in: [electron/mac-right-mouse.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L8)
+### electron.ElectronMacRightMouseApi :id=electronmacrightmouseapi
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L8" target="_blank" rel="noopener">mac-right-mouse.d.ts:8</a></p>
 
 macOS right-button emulation helpers exposed as `electron.macRightMouse`.
 
@@ -1253,12 +1234,13 @@ IPC: `mac-right-mouse-up`.
 
 `void`
 
-***
+</div>
 
-### ElectronPlatformOverlayApi :id=electronplatformoverlayapi
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>electron.ElectronPlatformOverlayApi</code></p>
-Defined in: [electron/platform.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L11)
+### electron.ElectronPlatformOverlayApi :id=electronplatformoverlayapi
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L11" target="_blank" rel="noopener">platform.d.ts:11</a></p>
 
 Platform overlay browser helpers exposed as `electron.platform.overlay`.
 
@@ -1290,36 +1272,28 @@ Platform-specific overlay open result (`false` when URL is rejected).
 
 IPC: `platform-overlay-open-url`.
 
-***
+</div>
 
-### ElectronPlatformApi :id=electronplatformapi
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>electron.ElectronPlatformApi</code></p>
-Defined in: [electron/platform.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L26)
+### electron.ElectronPlatformApi :id=electronplatformapi
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L26" target="_blank" rel="noopener">platform.d.ts:26</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| workshop | ElectronWorkshopApi | Steam Workshop helpers (Steam only; MS Store calls fail gracefully). |
+| overlay | ElectronPlatformOverlayApi | Platform overlay browser helpers. |
+
+<div class="smt-member-anchors">
+
+##### workshop <!-- {docsify-ignore} -->
+
+##### overlay <!-- {docsify-ignore} -->
+
+</div>
 
 Cross-store platform helpers exposed as `electron.platform`.
-
-#### Properties
-
-##### workshop
-
-```ts
-workshop: ElectronWorkshopApi
-```
-
-Defined in: [electron/platform.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L144)
-
-Steam Workshop helpers (Steam only; MS Store calls fail gracefully).
-
-##### overlay
-
-```ts
-overlay: ElectronPlatformOverlayApi
-```
-
-Defined in: [electron/platform.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L147)
-
-Platform overlay browser helpers.
 
 #### Methods
 
@@ -1493,7 +1467,7 @@ Cloud file key.
 
 ###### data
 
-[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1)
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1)
 
 JSON-serializable payload.
 
@@ -1601,662 +1575,430 @@ Cloud sync summary from the platform integration.
 
 IPC: `platform-cloud-sync`.
 
-***
+</div>
 
-### ElectronSuccessResult :id=electronsuccessresult
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>electron.ElectronSuccessResult</code></p>
-Defined in: [electron/results.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L10)
+### electron.ElectronSuccessResult :id=electronsuccessresult
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L10" target="_blank" rel="noopener">results.d.ts:10</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| success | true | Always `true` for this branch of the result union. |
+| path? | string | Absolute path written when a handler persists a file (save/custom map). |
+
+<div class="smt-member-anchors">
+
+##### success <!-- {docsify-ignore} -->
+
+##### path? <!-- {docsify-ignore} -->
+
+</div>
 
 Successful invoke result from save, settings, and window handlers.
 
-#### Properties
+</div>
 
-##### success
+<div class="smt-member-card">
 
-```ts
-success: true
-```
+### electron.ElectronFailureResult :id=electronfailureresult
 
-Defined in: [electron/results.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L12)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L20" target="_blank" rel="noopener">results.d.ts:20</a></p>
 
-Always `true` for this branch of the result union.
+| Property | Type | Description |
+| --- | --- | --- |
+| success | false | Always `false` for this branch of the result union. |
+| error | string | Human-readable error message from the main process. |
 
-##### path?
+<div class="smt-member-anchors">
 
-```ts
-optional path?: string
-```
+##### success <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L14)
+##### error <!-- {docsify-ignore} -->
 
-Absolute path written when a handler persists a file (save/custom map).
-
-***
-
-### ElectronFailureResult :id=electronfailureresult
-
-<p class="smt-member-path"><code>electron.ElectronFailureResult</code></p>
-Defined in: [electron/results.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L20)
+</div>
 
 Failed invoke result from save, settings, and window handlers.
 
-#### Properties
+</div>
 
-##### success
+<div class="smt-member-card">
 
-```ts
-success: false
-```
+### electron.ElectronLicenseCheckResult :id=electronlicensecheckresult
 
-Defined in: [electron/results.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L22)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L35" target="_blank" rel="noopener">results.d.ts:35</a></p>
 
-Always `false` for this branch of the result union.
+| Property | Type | Description |
+| --- | --- | --- |
+| valid | boolean | Whether the current license is valid for play. |
+| reason | string \| null | Failure reason when `valid` is false; otherwise `null`. |
+| networkError | boolean | True when the check failed due to network or platform errors. |
+| cached | boolean | True when the result came from a cached license check. |
 
-##### error
+<div class="smt-member-anchors">
 
-```ts
-error: string
-```
+##### valid <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L24)
+##### reason <!-- {docsify-ignore} -->
 
-Human-readable error message from the main process.
+##### networkError <!-- {docsify-ignore} -->
 
-***
+##### cached <!-- {docsify-ignore} -->
 
-### ElectronLicenseCheckResult :id=electronlicensecheckresult
+</div>
 
-<p class="smt-member-path"><code>electron.ElectronLicenseCheckResult</code></p>
-Defined in: [electron/results.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L35)
+MS Store license check result from [ElectronBridge.checkLicense](?id=checklicense).
 
-MS Store license check result from [ElectronBridge.checkLicense](#checklicense).
+</div>
 
-#### Properties
+<div class="smt-member-card">
 
-##### valid
+### electron.ElectronSaveInput :id=electronsaveinput
 
-```ts
-valid: boolean
-```
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L49" target="_blank" rel="noopener">results.d.ts:49</a></p>
 
-Defined in: [electron/results.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L37)
+| Property | Type | Description |
+| --- | --- | --- |
+| id | string | Save slot id (sanitized filename stem). |
+| name | string | Display name shown in the save UI. |
+| data | JsonValueV1 | Full serialized game state (`{ store: … }` shape). |
 
-Whether the current license is valid for play.
+<div class="smt-member-anchors">
 
-##### reason
+##### id <!-- {docsify-ignore} -->
 
-```ts
-reason: string | null
-```
+##### name <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L39)
+##### data <!-- {docsify-ignore} -->
 
-Failure reason when `valid` is false; otherwise `null`.
+</div>
 
-##### networkError
+Parsed game save payload passed to [ElectronBridge.save](?id=save).
 
-```ts
-networkError: boolean
-```
+</div>
 
-Defined in: [electron/results.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L41)
+<div class="smt-member-card">
 
-True when the check failed due to network or platform errors.
+### electron.ElectronLoadSuccessResult :id=electronloadsuccessresult
 
-##### cached
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L61" target="_blank" rel="noopener">results.d.ts:61</a></p>
 
-```ts
-cached: boolean
-```
+| Property | Type | Description |
+| --- | --- | --- |
+| success | true | Always `true` for this branch of the result union. |
+| data | JsonValueV1 | Parsed save body (`{ store: … }`). |
 
-Defined in: [electron/results.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L43)
+<div class="smt-member-anchors">
 
-True when the result came from a cached license check.
+##### success <!-- {docsify-ignore} -->
 
-***
+##### data <!-- {docsify-ignore} -->
 
-### ElectronSaveInput :id=electronsaveinput
+</div>
 
-<p class="smt-member-path"><code>electron.ElectronSaveInput</code></p>
-Defined in: [electron/results.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L49)
+Successful load result from [ElectronBridge.load](?id=load).
 
-Parsed game save payload passed to [ElectronBridge.save](#save).
+</div>
 
-#### Properties
+<div class="smt-member-card">
 
-##### id
+### electron.ElectronLoadFailureResult :id=electronloadfailureresult
 
-```ts
-id: string
-```
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L71" target="_blank" rel="noopener">results.d.ts:71</a></p>
 
-Defined in: [electron/results.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L51)
+| Property | Type | Description |
+| --- | --- | --- |
+| success | false | Always `false` for this branch of the result union. |
+| error | string | Human-readable load failure message. |
 
-Save slot id (sanitized filename stem).
+<div class="smt-member-anchors">
 
-##### name
+##### success <!-- {docsify-ignore} -->
 
-```ts
-name: string
-```
+##### error <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L53)
+</div>
 
-Display name shown in the save UI.
+Failed load result from [ElectronBridge.load](?id=load).
 
-##### data
+</div>
 
-```ts
-data: JsonValueV1
-```
+<div class="smt-member-card">
 
-Defined in: [electron/results.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L55)
+### electron.ElectronSaveFileMetadata :id=electronsavefilemetadata
 
-Full serialized game state (`{ store: … }` shape).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L86" target="_blank" rel="noopener">results.d.ts:86</a></p>
 
-***
+| Property | Type | Description |
+| --- | --- | --- |
+| id | string | Save slot id (filename stem). |
+| name | string | Display name stored in the save header. |
+| timestamp | string | ISO timestamp string when the save was written. |
+| playTime? | number | Total play time in milliseconds from the save body. |
+| worldId? | string \| null | World template id, if present. |
+| worldName? | string \| null | World display name, if present. |
+| seed? | number \| null | World seed, if present. |
+| productionPoints? | number | Factory production points at save time. |
+| structureCount? | number | Number of placed structures at save time. |
+| resources? | JsonValueV1 | Resource snapshot (`gold`, `fluxite`, `artifacts`, …). |
 
-### ElectronLoadSuccessResult :id=electronloadsuccessresult
+<div class="smt-member-anchors">
 
-<p class="smt-member-path"><code>electron.ElectronLoadSuccessResult</code></p>
-Defined in: [electron/results.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L61)
+##### id <!-- {docsify-ignore} -->
 
-Successful load result from [ElectronBridge.load](#load).
+##### name <!-- {docsify-ignore} -->
 
-#### Properties
+##### timestamp <!-- {docsify-ignore} -->
 
-##### success
+##### playTime? <!-- {docsify-ignore} -->
 
-```ts
-success: true
-```
+##### worldId? <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L63)
+##### worldName? <!-- {docsify-ignore} -->
 
-Always `true` for this branch of the result union.
+##### seed? <!-- {docsify-ignore} -->
 
-##### data
+##### productionPoints? <!-- {docsify-ignore} -->
 
-```ts
-data: JsonValueV1
-```
+##### structureCount? <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L65)
+##### resources? <!-- {docsify-ignore} -->
 
-Parsed save body (`{ store: … }`).
-
-***
-
-### ElectronLoadFailureResult :id=electronloadfailureresult
-
-<p class="smt-member-path"><code>electron.ElectronLoadFailureResult</code></p>
-Defined in: [electron/results.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L71)
-
-Failed load result from [ElectronBridge.load](#load).
-
-#### Properties
-
-##### success
-
-```ts
-success: false
-```
-
-Defined in: [electron/results.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L73)
-
-Always `false` for this branch of the result union.
-
-##### error
-
-```ts
-error: string
-```
-
-Defined in: [electron/results.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L75)
-
-Human-readable load failure message.
-
-***
-
-### ElectronSaveFileMetadata :id=electronsavefilemetadata
-
-<p class="smt-member-path"><code>electron.ElectronSaveFileMetadata</code></p>
-Defined in: [electron/results.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L86)
+</div>
 
 Metadata parsed from the first line of one `.save` file.
 
-Returned by [ElectronBridge.getSaveFiles](#getsavefiles).
+Returned by [ElectronBridge.getSaveFiles](?id=getsavefiles).
 
-#### Properties
+</div>
 
-##### id
+<div class="smt-member-card">
 
-```ts
-id: string
-```
+### electron.ElectronExportSaveSuccessResult :id=electronexportsavesuccessresult
 
-Defined in: [electron/results.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L88)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L112" target="_blank" rel="noopener">results.d.ts:112</a></p>
 
-Save slot id (filename stem).
+| Property | Type | Description |
+| --- | --- | --- |
+| success | true | Always `true` for this branch of the result union. |
+| data | Uint8Array | Raw `.save` file bytes (metadata line + gzip payload). |
 
-##### name
+<div class="smt-member-anchors">
 
-```ts
-name: string
-```
+##### success <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L90)
+##### data <!-- {docsify-ignore} -->
 
-Display name stored in the save header.
+</div>
 
-##### timestamp
+Successful export result from [ElectronBridge.exportSave](?id=exportsave).
 
-```ts
-timestamp: string
-```
+</div>
 
-Defined in: [electron/results.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L92)
+<div class="smt-member-card">
 
-ISO timestamp string when the save was written.
+### electron.ElectronImportSaveSuccessResult :id=electronimportsavesuccessresult
 
-##### playTime?
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L127" target="_blank" rel="noopener">results.d.ts:127</a></p>
 
-```ts
-optional playTime?: number
-```
+| Property | Type | Description |
+| --- | --- | --- |
+| success | true | Always `true` for this branch of the result union. |
+| metaData | JsonValueV1 | Metadata parsed from the imported file header line. |
 
-Defined in: [electron/results.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L94)
+<div class="smt-member-anchors">
 
-Total play time in milliseconds from the save body.
+##### success <!-- {docsify-ignore} -->
 
-##### worldId?
+##### metaData <!-- {docsify-ignore} -->
 
-```ts
-optional worldId?: string | null
-```
+</div>
 
-Defined in: [electron/results.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L96)
+Successful import result from [ElectronBridge.importSave](?id=importsave).
 
-World template id, if present.
+</div>
 
-##### worldName?
+<div class="smt-member-card">
 
-```ts
-optional worldName?: string | null
-```
+### electron.ElectronLastPlayedGame :id=electronlastplayedgame
 
-Defined in: [electron/results.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L98)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L140" target="_blank" rel="noopener">results.d.ts:140</a></p>
 
-World display name, if present.
+| Property | Type | Description |
+| --- | --- | --- |
+| id? | string | Save slot id of the last played game. |
 
-##### seed?
+<div class="smt-member-anchors">
 
-```ts
-optional seed?: number | null
-```
+##### id? <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L100)
+</div>
 
-World seed, if present.
+Last-played save marker written by [ElectronBridge.saveLastPlayedGame](?id=savelastplayedgame).
 
-##### productionPoints?
+</div>
 
-```ts
-optional productionPoints?: number
-```
+<div class="smt-member-card">
 
-Defined in: [electron/results.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L102)
+### electron.ElectronSystemInfo :id=electronsysteminfo
 
-Factory production points at save time.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L150" target="_blank" rel="noopener">results.d.ts:150</a></p>
 
-##### structureCount?
+| Property | Type | Description |
+| --- | --- | --- |
+| platform | string | Node `process.platform` (for example `linux`, `win32`). |
+| arch | string | CPU architecture string from `process.arch`. |
+| electronVersion | string | Electron runtime version from `process.versions.electron`. |
+| chromeVersion | string | Chromium version from `process.versions.chrome`. |
+| nodeVersion | string | Node.js version from `process.versions.node`. |
 
-```ts
-optional structureCount?: number
-```
+<div class="smt-member-anchors">
 
-Defined in: [electron/results.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L104)
+##### platform <!-- {docsify-ignore} -->
 
-Number of placed structures at save time.
+##### arch <!-- {docsify-ignore} -->
 
-##### resources?
+##### electronVersion <!-- {docsify-ignore} -->
 
-```ts
-optional resources?: JsonValueV1
-```
+##### chromeVersion <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L106)
+##### nodeVersion <!-- {docsify-ignore} -->
 
-Resource snapshot (`gold`, `fluxite`, `artifacts`, …).
+</div>
 
-***
-
-### ElectronExportSaveSuccessResult :id=electronexportsavesuccessresult
-
-<p class="smt-member-path"><code>electron.ElectronExportSaveSuccessResult</code></p>
-Defined in: [electron/results.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L112)
-
-Successful export result from [ElectronBridge.exportSave](#exportsave).
-
-#### Properties
-
-##### success
-
-```ts
-success: true
-```
-
-Defined in: [electron/results.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L114)
-
-Always `true` for this branch of the result union.
-
-##### data
-
-```ts
-data: Uint8Array
-```
-
-Defined in: [electron/results.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L116)
-
-Raw `.save` file bytes (metadata line + gzip payload).
-
-***
-
-### ElectronImportSaveSuccessResult :id=electronimportsavesuccessresult
-
-<p class="smt-member-path"><code>electron.ElectronImportSaveSuccessResult</code></p>
-Defined in: [electron/results.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L127)
-
-Successful import result from [ElectronBridge.importSave](#importsave).
-
-#### Properties
-
-##### success
-
-```ts
-success: true
-```
-
-Defined in: [electron/results.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L129)
-
-Always `true` for this branch of the result union.
-
-##### metaData
-
-```ts
-metaData: JsonValueV1
-```
-
-Defined in: [electron/results.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L131)
-
-Metadata parsed from the imported file header line.
-
-***
-
-### ElectronLastPlayedGame :id=electronlastplayedgame
-
-<p class="smt-member-path"><code>electron.ElectronLastPlayedGame</code></p>
-Defined in: [electron/results.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L140)
-
-Last-played save marker written by [ElectronBridge.saveLastPlayedGame](#savelastplayedgame).
-
-#### Properties
-
-##### id?
-
-```ts
-optional id?: string
-```
-
-Defined in: [electron/results.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L142)
-
-Save slot id of the last played game.
-
-***
-
-### ElectronSystemInfo :id=electronsysteminfo
-
-<p class="smt-member-path"><code>electron.ElectronSystemInfo</code></p>
-Defined in: [electron/results.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L150)
-
-Local process/runtime versions from [ElectronBridge.getSystemInfo](#getsysteminfo).
+Local process/runtime versions from [ElectronBridge.getSystemInfo](?id=getsysteminfo).
 
 Read directly in the preload script — no IPC round trip.
 
-#### Properties
+</div>
 
-##### platform
+<div class="smt-member-card">
 
-```ts
-platform: string
-```
+### electron.ElectronLocalModsListResult :id=electronlocalmodslistresult
 
-Defined in: [electron/results.d.ts:152](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L152)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L166" target="_blank" rel="noopener">results.d.ts:166</a></p>
 
-Node `process.platform` (for example `linux`, `win32`).
+| Property | Type | Description |
+| --- | --- | --- |
+| ok | boolean | True when the listing succeeded. |
+| data | JsonValueV1[] | Local mod summary objects when `ok` is true; otherwise `[]`. |
+| errorCode? | string | Error code when `ok` is false (for example `unsupported_platform`). |
 
-##### arch
+<div class="smt-member-anchors">
 
-```ts
-arch: string
-```
+##### ok <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L154)
+##### data <!-- {docsify-ignore} -->
 
-CPU architecture string from `process.arch`.
+##### errorCode? <!-- {docsify-ignore} -->
 
-##### electronVersion
+</div>
 
-```ts
-electronVersion: string
-```
+Result from [ElectronLocalModsApi.list](?id=list-1).
 
-Defined in: [electron/results.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L156)
+</div>
 
-Electron runtime version from `process.versions.electron`.
+<div class="smt-member-card">
 
-##### chromeVersion
+### electron.ElectronLocalModsUploadResult :id=electronlocalmodsuploadresult
 
-```ts
-chromeVersion: string
-```
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L178" target="_blank" rel="noopener">results.d.ts:178</a></p>
 
-Defined in: [electron/results.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L158)
+| Property | Type | Description |
+| --- | --- | --- |
+| ok | boolean | True when Workshop upload succeeded. |
+| errorCode? | string | Error code when `ok` is false. |
+| detail? | string | Extra failure detail logged by the main process. |
 
-Chromium version from `process.versions.chrome`.
+<div class="smt-member-anchors">
 
-##### nodeVersion
+##### ok <!-- {docsify-ignore} -->
 
-```ts
-nodeVersion: string
-```
+##### errorCode? <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L160)
+##### detail? <!-- {docsify-ignore} -->
 
-Node.js version from `process.versions.node`.
+</div>
 
-***
+Result from [ElectronLocalModsApi.upload](?id=upload).
 
-### ElectronLocalModsListResult :id=electronlocalmodslistresult
+</div>
 
-<p class="smt-member-path"><code>electron.ElectronLocalModsListResult</code></p>
-Defined in: [electron/results.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L166)
+<div class="smt-member-card">
 
-Result from [ElectronLocalModsApi.list](#list-1).
+### electron.ElectronOpenUrlResult :id=electronopenurlresult
 
-#### Properties
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L190" target="_blank" rel="noopener">results.d.ts:190</a></p>
 
-##### ok
+| Property | Type | Description |
+| --- | --- | --- |
+| success | boolean | True when the OS opened the URL. |
+| error? | string | Failure reason (for example `unsupported-url`). |
 
-```ts
-ok: boolean
-```
+<div class="smt-member-anchors">
 
-Defined in: [electron/results.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L168)
+##### success <!-- {docsify-ignore} -->
 
-True when the listing succeeded.
+##### error? <!-- {docsify-ignore} -->
 
-##### data
+</div>
 
-```ts
-data: JsonValueV1[]
-```
+Result from [ElectronBridge.openExternalBrowser](?id=openexternalbrowser).
 
-Defined in: [electron/results.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L170)
+</div>
 
-Local mod summary objects when `ok` is true; otherwise `[]`.
+<div class="smt-member-card">
 
-##### errorCode?
+### electron.ElectronPrimeAchievementsResult :id=electronprimeachievementsresult
 
-```ts
-optional errorCode?: string
-```
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L200" target="_blank" rel="noopener">results.d.ts:200</a></p>
 
-Defined in: [electron/results.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L172)
+| Property | Type | Description |
+| --- | --- | --- |
+| success | boolean | True when the cache seed completed. |
+| error? | string | Failure message when `success` is false. |
 
-Error code when `ok` is false (for example `unsupported_platform`).
+<div class="smt-member-anchors">
 
-***
+##### success <!-- {docsify-ignore} -->
 
-### ElectronLocalModsUploadResult :id=electronlocalmodsuploadresult
+##### error? <!-- {docsify-ignore} -->
 
-<p class="smt-member-path"><code>electron.ElectronLocalModsUploadResult</code></p>
-Defined in: [electron/results.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L178)
+</div>
 
-Result from [ElectronLocalModsApi.upload](#upload).
+Result from [ElectronBridge.platformPrimeAchievements](?id=platformprimeachievements).
 
-#### Properties
+</div>
 
-##### ok
+<div class="smt-member-card">
 
-```ts
-ok: boolean
-```
+### electron.ElectronReauthPromptResult :id=electronreauthpromptresult
 
-Defined in: [electron/results.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L180)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L210" target="_blank" rel="noopener">results.d.ts:210</a></p>
 
-True when Workshop upload succeeded.
+| Property | Type | Description |
+| --- | --- | --- |
+| response? | number | Button index chosen in the native MS Store dialog. |
+| dismissed? | boolean | True on Steam where no dialog is shown. |
 
-##### errorCode?
+<div class="smt-member-anchors">
 
-```ts
-optional errorCode?: string
-```
+##### response? <!-- {docsify-ignore} -->
 
-Defined in: [electron/results.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L182)
+##### dismissed? <!-- {docsify-ignore} -->
 
-Error code when `ok` is false.
+</div>
 
-##### detail?
+Result from [ElectronBridge.platformShowReauthPrompt](?id=platformshowreauthprompt).
 
-```ts
-optional detail?: string
-```
+</div>
 
-Defined in: [electron/results.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L184)
+<div class="smt-member-card">
 
-Extra failure detail logged by the main process.
+### electron.ElectronWorkshopApi :id=electronworkshopapi
 
-***
-
-### ElectronOpenUrlResult :id=electronopenurlresult
-
-<p class="smt-member-path"><code>electron.ElectronOpenUrlResult</code></p>
-Defined in: [electron/results.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L190)
-
-Result from [ElectronBridge.openExternalBrowser](#openexternalbrowser).
-
-#### Properties
-
-##### success
-
-```ts
-success: boolean
-```
-
-Defined in: [electron/results.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L192)
-
-True when the OS opened the URL.
-
-##### error?
-
-```ts
-optional error?: string
-```
-
-Defined in: [electron/results.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L194)
-
-Failure reason (for example `unsupported-url`).
-
-***
-
-### ElectronPrimeAchievementsResult :id=electronprimeachievementsresult
-
-<p class="smt-member-path"><code>electron.ElectronPrimeAchievementsResult</code></p>
-Defined in: [electron/results.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L200)
-
-Result from [ElectronBridge.platformPrimeAchievements](#platformprimeachievements).
-
-#### Properties
-
-##### success
-
-```ts
-success: boolean
-```
-
-Defined in: [electron/results.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L202)
-
-True when the cache seed completed.
-
-##### error?
-
-```ts
-optional error?: string
-```
-
-Defined in: [electron/results.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L204)
-
-Failure message when `success` is false.
-
-***
-
-### ElectronReauthPromptResult :id=electronreauthpromptresult
-
-<p class="smt-member-path"><code>electron.ElectronReauthPromptResult</code></p>
-Defined in: [electron/results.d.ts:210](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L210)
-
-Result from [ElectronBridge.platformShowReauthPrompt](#platformshowreauthprompt).
-
-#### Properties
-
-##### response?
-
-```ts
-optional response?: number
-```
-
-Defined in: [electron/results.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L212)
-
-Button index chosen in the native MS Store dialog.
-
-##### dismissed?
-
-```ts
-optional dismissed?: boolean
-```
-
-Defined in: [electron/results.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L214)
-
-True on Steam where no dialog is shown.
-
-***
-
-### ElectronWorkshopApi :id=electronworkshopapi
-
-<p class="smt-member-path"><code>electron.ElectronWorkshopApi</code></p>
-Defined in: [electron/workshop.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L12)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L12" target="_blank" rel="noopener">workshop.d.ts:12</a></p>
 
 Steam Workshop helpers exposed as `electron.platform.workshop`.
 
@@ -2488,102 +2230,146 @@ Discover Sandkit Workshop mods installed for the current session.
 
 IPC: `platform-workshop-sandkit-mods`.
 
+</div>
+
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### ElectronPlatform :id=electronplatform
+<div class="smt-member-card">
+
+### electron.ElectronPlatform :id=electronplatform
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L10" target="_blank" rel="noopener">primitives.d.ts:10</a></p>
+
+<div class="smt-member-sig" data-sig="electron.ElectronPlatform = &quot;steam&quot; | &quot;msstore&quot; | &quot;gog&quot; | string &amp; object">
 
 ```ts
-electron.ElectronPlatform = "steam" | "msstore" | "gog" | string & object
+ElectronPlatform = "steam" | "msstore" | "gog" | string & object
 ```
 
-Defined in: [electron/primitives.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L10)
+</div>
 
 Sandustry distribution channel string.
 
-Returned by [ElectronBridge.getPlatformSync](#getplatformsync).
+Returned by [ElectronBridge.getPlatformSync](?id=getplatformsync).
 
-***
+</div>
 
-### ElectronLogLevel :id=electronloglevel
+<div class="smt-member-card">
+
+### electron.ElectronLogLevel :id=electronloglevel
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L17" target="_blank" rel="noopener">primitives.d.ts:17</a></p>
+
+<div class="smt-member-sig" data-sig="electron.ElectronLogLevel = &quot;debug&quot; | &quot;info&quot; | &quot;warn&quot; | &quot;error&quot;">
 
 ```ts
-electron.ElectronLogLevel = "debug" | "info" | "warn" | "error"
+ElectronLogLevel = "debug" | "info" | "warn" | "error"
 ```
 
-Defined in: [electron/primitives.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L17)
+</div>
 
-Severity level written through [ElectronBridge.log](#log).
+Severity level written through [ElectronBridge.log](?id=log).
 
 Maps to the main-process file logger (`logs/main.log`).
 
-***
+</div>
 
-### ElectronIpcListener :id=electronipclistener
+<div class="smt-member-card">
+
+### electron.ElectronIpcListener :id=electronipclistener
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L24" target="_blank" rel="noopener">primitives.d.ts:24</a></p>
+
+<div class="smt-member-sig" data-sig="electron.ElectronIpcListener = (...args: unknown[]) =&gt; void">
 
 ```ts
-electron.ElectronIpcListener = (...args: unknown[]) => void
+ElectronIpcListener = (...args: unknown[]) => void
 ```
 
-Defined in: [electron/primitives.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L24)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Event-specific payload from the main process (often empty). |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Callback registered on IPC event channels such as `app-suspend`.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### electron.ElectronOperationResult :id=electronoperationresult
 
-Event-specific payload from the main process (often empty).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L30" target="_blank" rel="noopener">results.d.ts:30</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### ElectronOperationResult :id=electronoperationresult
+<div class="smt-member-sig" data-sig="electron.ElectronOperationResult = ElectronSuccessResult | ElectronFailureResult">
 
 ```ts
-electron.ElectronOperationResult = ElectronSuccessResult | ElectronFailureResult
+ElectronOperationResult = ElectronSuccessResult | ElectronFailureResult
 ```
 
-Defined in: [electron/results.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L30)
+</div>
 
 Result union returned by most save, settings, and window invoke handlers.
 
-***
+</div>
 
-### ElectronLoadResult :id=electronloadresult
+<div class="smt-member-card">
 
-```ts
-electron.ElectronLoadResult = ElectronLoadSuccessResult | ElectronLoadFailureResult
-```
+### electron.ElectronLoadResult :id=electronloadresult
 
-Defined in: [electron/results.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L79)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L79" target="_blank" rel="noopener">results.d.ts:79</a></p>
 
-Result from [ElectronBridge.load](#load).
-
-***
-
-### ElectronExportSaveResult :id=electronexportsaveresult
+<div class="smt-member-sig" data-sig="electron.ElectronLoadResult = ElectronLoadSuccessResult | ElectronLoadFailureResult">
 
 ```ts
-electron.ElectronExportSaveResult = ElectronExportSaveSuccessResult | ElectronFailureResult
+ElectronLoadResult = ElectronLoadSuccessResult | ElectronLoadFailureResult
 ```
 
-Defined in: [electron/results.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L120)
+</div>
 
-Result from [ElectronBridge.exportSave](#exportsave).
+Result from [ElectronBridge.load](?id=load).
 
-***
+</div>
 
-### ElectronImportSaveResult :id=electronimportsaveresult
+<div class="smt-member-card">
+
+### electron.ElectronExportSaveResult :id=electronexportsaveresult
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L120" target="_blank" rel="noopener">results.d.ts:120</a></p>
+
+<div class="smt-member-sig" data-sig="electron.ElectronExportSaveResult = ElectronExportSaveSuccessResult | ElectronFailureResult">
 
 ```ts
-electron.ElectronImportSaveResult = ElectronImportSaveSuccessResult | ElectronFailureResult
+ElectronExportSaveResult = ElectronExportSaveSuccessResult | ElectronFailureResult
 ```
 
-Defined in: [electron/results.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L135)
+</div>
 
-Result from [ElectronBridge.importSave](#importsave).
+Result from [ElectronBridge.exportSave](?id=exportsave).
+
+</div>
+
+<div class="smt-member-card">
+
+### electron.ElectronImportSaveResult :id=electronimportsaveresult
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L135" target="_blank" rel="noopener">results.d.ts:135</a></p>
+
+<div class="smt-member-sig" data-sig="electron.ElectronImportSaveResult = ElectronImportSaveSuccessResult | ElectronFailureResult">
+
+```ts
+ElectronImportSaveResult = ElectronImportSaveSuccessResult | ElectronFailureResult
+```
+
+</div>
+
+Result from [ElectronBridge.importSave](?id=importsave).
+
+</div>

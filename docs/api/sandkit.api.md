@@ -3,7 +3,7 @@
 Main-thread `sandkit.api` barrel.
 
 Re-exports all namespaces available as `sandkit.api.*` on the main thread.
-Prefer these methods over [sandkit.engine](api/sandkit.md#engine-1) when both exist.
+Prefer these methods over [sandkit.engine](api/sandkit.md?id=engine-1) when both exist.
 
 ## Namespaces <!-- {docsify-ignore} -->
 
@@ -67,9 +67,3 @@ Prefer these methods over [sandkit.engine](api/sandkit.md#engine-1) when both ex
 - [utils](api/sandkit.api.utils.md)
 - [workers](api/sandkit.api.workers.md)
 - [~~world~~](api/sandkit.api.world.md)
-
-## References <!-- {docsify-ignore} -->
-
-### sandkit.api :id=sandkitapi
-
-Re-exports [SandkitApi](api/sandkit.md#sandkitapi)

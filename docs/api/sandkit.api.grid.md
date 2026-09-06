@@ -10,43 +10,36 @@ Main thread only.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### GridMutationWriter :id=gridmutationwriter
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriter</code></p>
-Defined in: [sandkit/api/grid.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L166)
+### sandkit.api.grid.GridMutationWriter :id=gridmutationwriter
 
-Deferred element and terrain mutations passed to [mutate](#mutate).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L166" target="_blank" rel="noopener">grid.d.ts:166</a></p>
 
-#### Properties
+| Property | Type | Description |
+| --- | --- | --- |
+| elements | GridMutationWriterElements | Element cell mutations inside a [mutate](?id=mutate) callback. |
+| terrains | GridMutationWriterTerrains | Terrain cell mutations inside a [mutate](?id=mutate) callback. |
 
-##### elements
+<div class="smt-member-anchors">
 
-```ts
-elements: GridMutationWriterElements
-```
+##### elements <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/grid.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L168)
+##### terrains <!-- {docsify-ignore} -->
 
-Element cell mutations inside a [mutate](#mutate) callback.
+</div>
 
-##### terrains
+Deferred element and terrain mutations passed to [mutate](?id=mutate).
 
-```ts
-terrains: GridMutationWriterTerrains
-```
+</div>
 
-Defined in: [sandkit/api/grid.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L170)
+<div class="smt-member-card">
 
-Terrain cell mutations inside a [mutate](#mutate) callback.
+### sandkit.api.grid.GridMutationWriterElements :id=gridmutationwriterelements
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L174" target="_blank" rel="noopener">grid.d.ts:174</a></p>
 
-### GridMutationWriterElements :id=gridmutationwriterelements
-
-<p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriterElements</code></p>
-Defined in: [sandkit/api/grid.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L174)
-
-Element writers available on [GridMutationWriter.elements](#elements).
+Element writers available on [GridMutationWriter.elements](?id=elements).
 
 #### Methods
 
@@ -58,13 +51,13 @@ createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 Defined in: [sandkit/api/grid.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L185)
 
-Create an element at a cell inside a [mutate](#mutate) callback.
+Create an element at a cell inside a [mutate](?id=mutate) callback.
 
 ###### Parameters
 
 ###### args
 
-...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md#elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md#elementcreateoptions)\]
+...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]
 
 ###### Returns
 
@@ -82,13 +75,13 @@ replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 Defined in: [sandkit/api/grid.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L203)
 
-Replace the element at a cell inside a [mutate](#mutate) callback.
+Replace the element at a cell inside a [mutate](?id=mutate) callback.
 
 ###### Parameters
 
 ###### args
 
-...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md#elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md#elementcreateoptions)\]
+...\[`number`, `number`, [`ElementRef`](api/sandkit.api.elements.md?id=elementref), [`ElementCreateOptions`](api/sandkit.api.elements.md?id=elementcreateoptions)\]
 
 ###### Returns
 
@@ -106,13 +99,13 @@ removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 
 Defined in: [sandkit/api/grid.d.ts:220](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L220)
 
-Remove the element at a cell inside a [mutate](#mutate) callback.
+Remove the element at a cell inside a [mutate](?id=mutate) callback.
 
 ###### Parameters
 
 ###### args
 
-...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md#elementremovaloptions)\]
+...\[`number`, `number`, [`ElementRemovalOptions`](api/sandkit.api.elements.md?id=elementremovaloptions)\]
 
 ###### Returns
 
@@ -122,14 +115,15 @@ Remove the element at a cell inside a [mutate](#mutate) callback.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### GridMutationWriterTerrains :id=gridmutationwriterterrains
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriterTerrains</code></p>
-Defined in: [sandkit/api/grid.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L224)
+### sandkit.api.grid.GridMutationWriterTerrains :id=gridmutationwriterterrains
 
-Terrain writers available on [GridMutationWriter.terrains](#terrains).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L224" target="_blank" rel="noopener">grid.d.ts:224</a></p>
+
+Terrain writers available on [GridMutationWriter.terrains](?id=terrains).
 
 #### Methods
 
@@ -141,13 +135,13 @@ createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): voi
 
 Defined in: [sandkit/api/grid.d.ts:235](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L235)
 
-Create terrain at a cell inside a [mutate](#mutate) callback.
+Create terrain at a cell inside a [mutate](?id=mutate) callback.
 
 ###### Parameters
 
 ###### args
 
-...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md#terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md#terrainmutationoptions)\]
+...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]
 
 ###### Returns
 
@@ -165,13 +159,13 @@ replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): vo
 
 Defined in: [sandkit/api/grid.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L253)
 
-Replace terrain at a cell inside a [mutate](#mutate) callback.
+Replace terrain at a cell inside a [mutate](?id=mutate) callback.
 
 ###### Parameters
 
 ###### args
 
-...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md#terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md#terrainmutationoptions)\]
+...\[`number`, `number`, [`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref), [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]
 
 ###### Returns
 
@@ -189,13 +183,13 @@ removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 
 Defined in: [sandkit/api/grid.d.ts:270](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L270)
 
-Remove terrain at a cell inside a [mutate](#mutate) callback.
+Remove terrain at a cell inside a [mutate](?id=mutate) callback.
 
 ###### Parameters
 
 ###### args
 
-...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md#terrainmutationoptions)\]
+...\[`number`, `number`, [`TerrainMutationOptions`](api/sandkit.api.terrains.worker.md?id=terrainmutationoptions)\]
 
 ###### Returns
 
@@ -205,154 +199,117 @@ Remove terrain at a cell inside a [mutate](#mutate) callback.
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### GridDimensions :id=griddimensions
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.grid.GridDimensions</code></p>
-Defined in: [shared/api/grid.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L80)
+### sandkit.api.grid.GridDimensions :id=griddimensions
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L80" target="_blank" rel="noopener">grid.d.ts:80</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| widthCells | number | Grid width in cells. |
+| heightCells | number | Grid height in cells. |
+
+<div class="smt-member-anchors">
+
+##### widthCells <!-- {docsify-ignore} -->
+
+##### heightCells <!-- {docsify-ignore} -->
+
+</div>
 
 World grid width and height in cells.
 
-#### Properties
+</div>
 
-##### widthCells
+<div class="smt-member-card">
 
-```ts
-widthCells: number
-```
+### sandkit.api.grid.ExcavateOptions :id=excavateoptions
 
-Defined in: [shared/api/grid.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L82)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L88" target="_blank" rel="noopener">grid.d.ts:88</a></p>
 
-Grid width in cells.
+| Property | Type | Description |
+| --- | --- | --- |
+| fromGun? | boolean | Treat the dig as gun fire for terrain resistance checks. |
+| fromRocketExplosion? | boolean | Treat the dig as rocket or dynamite explosion damage. |
+| fromDrill? | boolean | Treat the dig as drill damage. |
+| useLiteralOutVelocity? | boolean | Use outVelocity literally instead of deriving ejection speed. |
+| destroyNonDestructible? | boolean | Allow removing terrain marked non-destructible. |
+| forceRemoveAll? | boolean | Force-remove all matched cells regardless of normal rules. |
+| drillTierDamage? | number | Extra drill-tier damage when [fromDrill](?id=fromdrill) is true. Clamped to 0–1000. |
 
-##### heightCells
+<div class="smt-member-anchors">
 
-```ts
-heightCells: number
-```
+##### fromGun? <!-- {docsify-ignore} -->
 
-Defined in: [shared/api/grid.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L84)
+##### fromRocketExplosion? <!-- {docsify-ignore} -->
 
-Grid height in cells.
+##### fromDrill? <!-- {docsify-ignore} -->
 
-***
+##### useLiteralOutVelocity? <!-- {docsify-ignore} -->
 
-### ExcavateOptions :id=excavateoptions
+##### destroyNonDestructible? <!-- {docsify-ignore} -->
 
-<p class="smt-member-path"><code>sandkit.api.grid.ExcavateOptions</code></p>
-Defined in: [shared/api/grid.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L88)
+##### forceRemoveAll? <!-- {docsify-ignore} -->
 
-Flags that control how [excavateAtCell](#excavateatcell) resolves damage and drops.
+##### drillTierDamage? <!-- {docsify-ignore} -->
 
-#### Properties
+</div>
 
-##### fromGun?
+Flags that control how [excavateAtCell](?id=excavateatcell) resolves damage and drops.
 
-```ts
-optional fromGun?: boolean
-```
-
-Defined in: [shared/api/grid.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L90)
-
-Treat the dig as gun fire for terrain resistance checks.
-
-##### fromRocketExplosion?
-
-```ts
-optional fromRocketExplosion?: boolean
-```
-
-Defined in: [shared/api/grid.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L92)
-
-Treat the dig as rocket or dynamite explosion damage.
-
-##### fromDrill?
-
-```ts
-optional fromDrill?: boolean
-```
-
-Defined in: [shared/api/grid.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L94)
-
-Treat the dig as drill damage.
-
-##### useLiteralOutVelocity?
-
-```ts
-optional useLiteralOutVelocity?: boolean
-```
-
-Defined in: [shared/api/grid.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L96)
-
-Use outVelocity literally instead of deriving ejection speed.
-
-##### destroyNonDestructible?
-
-```ts
-optional destroyNonDestructible?: boolean
-```
-
-Defined in: [shared/api/grid.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L98)
-
-Allow removing terrain marked non-destructible.
-
-##### forceRemoveAll?
-
-```ts
-optional forceRemoveAll?: boolean
-```
-
-Defined in: [shared/api/grid.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L100)
-
-Force-remove all matched cells regardless of normal rules.
-
-##### drillTierDamage?
-
-```ts
-optional drillTierDamage?: number
-```
-
-Defined in: [shared/api/grid.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L102)
-
-Extra drill-tier damage when [fromDrill](#fromdrill) is true. Clamped to 0–1000.
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### CellId :id=cellid
+<div class="smt-member-card">
+
+### sandkit.api.grid.CellId :id=cellid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L77" target="_blank" rel="noopener">grid.d.ts:77</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.CellId = CellId">
 
 ```ts
-sandkit.api.grid.CellId = CellId
+CellId = CellId
 ```
 
-Defined in: [shared/api/grid.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L77)
+</div>
 
-Packed cell id from [getCellIdAtCell](#getcellidatcell).
+Packed cell id from [getCellIdAtCell](?id=getcellidatcell).
+
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### mutate() :id=mutate
+<div class="smt-member-card">
+
+### sandkit.api.grid.mutate :id=mutate
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L91" target="_blank" rel="noopener">grid.d.ts:91</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.mutate(callback: (writer: GridMutationWriter) =&gt; void): void">
 
 ```ts
-sandkit.api.grid.mutate(callback: (writer: GridMutationWriter) => void): void
+mutate(callback: (writer: GridMutationWriter) => void): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L91)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| callback | (`writer`: [`GridMutationWriter`](?id=gridmutationwriter)) => `void` | Receives a writer for element and terrain cell mutations. |
+
+<div class="smt-member-anchors">
+
+##### callback <!-- {docsify-ignore} -->
+
+</div>
 
 Run deferred grid mutations on the main thread. Reads see the old grid until
 mutations apply.
-
-#### Parameters
-
-##### callback
-
-(`writer`: [`GridMutationWriter`](#gridmutationwriter)) => `void`
-
-Receives a writer for element and terrain cell mutations.
-
-#### Returns
-
-`void`
 
 #### Examples
 
@@ -383,306 +340,361 @@ api.events.on("item:used", ({ itemId, cellX, cellY }) => {
 
 [Official docs](https://sandustry.com/sandkit.html#mutations-heading)
 
-***
+</div>
 
-### revealFogAtCell() :id=revealfogatcell
+<div class="smt-member-card">
+
+### sandkit.api.grid.revealFogAtCell :id=revealfogatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L101" target="_blank" rel="noopener">grid.d.ts:101</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.revealFogAtCell(...args: CellCoordinates): void">
 
 ```ts
-sandkit.api.grid.revealFogAtCell(...args: CellCoordinates): void
+revealFogAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L101)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Reveal fog of war at a cell.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### redrawAroundCell() :id=redrawaroundcell
+<div class="smt-member-card">
+
+### sandkit.api.grid.redrawAroundCell :id=redrawaroundcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L112" target="_blank" rel="noopener">grid.d.ts:112</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.redrawAroundCell(...args: [number, number, number]): void">
 
 ```ts
-sandkit.api.grid.redrawAroundCell(...args: [number, number, number]): void
+redrawAroundCell(...args: [number, number, number]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L112)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `number`\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Request redraw around a cell.
 
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, `number`\]
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### forEachCellInCircle() :id=foreachcellincircle
+<div class="smt-member-card">
+
+### sandkit.api.grid.forEachCellInCircle :id=foreachcellincircle
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L124" target="_blank" rel="noopener">grid.d.ts:124</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) =&gt; void): void">
 
 ```ts
-sandkit.api.grid.forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) => void): void
+forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) => void): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L124)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| centerCellX | `number` | Circle center cell column. |
+| centerCellY | `number` | Circle center cell row. |
+| radiusCells | `number` | Circle radius in cells. |
+| callback | (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void` | Invoked for each cell with `(cellX, cellY)`. |
+
+<div class="smt-member-anchors">
+
+##### centerCellX <!-- {docsify-ignore} -->
+
+##### centerCellY <!-- {docsify-ignore} -->
+
+##### radiusCells <!-- {docsify-ignore} -->
+
+##### callback <!-- {docsify-ignore} -->
+
+</div>
 
 Calls the callback for each cell inside a circle.
 
-#### Parameters
-
-##### centerCellX
-
-`number`
-
-Circle center cell column.
-
-##### centerCellY
-
-`number`
-
-Circle center cell row.
-
-##### radiusCells
-
-`number`
-
-Circle radius in cells.
-
-##### callback
-
-(...`args`: [`CellCoordinates`](api/shared.player.md#cellcoordinates)) => `void`
-
-Invoked for each cell with `(cellX, cellY)`.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### forEachCellInRectangle() :id=foreachcellinrectangle
+<div class="smt-member-card">
+
+### sandkit.api.grid.forEachCellInRectangle :id=foreachcellinrectangle
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L142" target="_blank" rel="noopener">grid.d.ts:142</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.forEachCellInRectangle(...args: number, number, number, number, (...args: [CellCoordinates) =&gt; void]): void">
 
 ```ts
-sandkit.api.grid.forEachCellInRectangle(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
+forEachCellInRectangle(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L142)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Calls the callback for each cell in a rectangle.
 
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md#cellcoordinates)) => `void`\]
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~forEachCellInRect()~~ :id=foreachcellinrect
+<div class="smt-member-card">
+
+### ~~sandkit.api.grid.forEachCellInRect~~ :id=foreachcellinrect
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L156" target="_blank" rel="noopener">grid.d.ts:156</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) =&gt; void]): void">
 
 ```ts
-sandkit.api.grid.forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
+forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
 ```
 
-Defined in: [sandkit/api/grid.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L156)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md?id=cellcoordinates)) => `void`\] |  |
 
-##### args
+<div class="smt-member-anchors">
 
-...\[`number`, `number`, `number`, `number`, (...`args`: [`CellCoordinates`](api/shared.player.md#cellcoordinates)) => `void`\]
+##### args <!-- {docsify-ignore} -->
 
-#### Returns
-
-`void`
+</div>
 
 #### Deprecated
 
-Use [forEachCellInRectangle](#foreachcellinrectangle) instead.
+Use [forEachCellInRectangle](?id=foreachcellinrectangle) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getCellIdAtCell() :id=getcellidatcell
+<div class="smt-member-card">
+
+### sandkit.api.grid.getCellIdAtCell :id=getcellidatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L22" target="_blank" rel="noopener">grid.d.ts:22</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.getCellIdAtCell(...args: CellCoordinates): CellId">
 
 ```ts
-sandkit.api.grid.getCellIdAtCell(...args: CellCoordinates): CellId
+getCellIdAtCell(...args: CellCoordinates): CellId
 ```
 
-Defined in: [shared/api/grid.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L22)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the packed cell id at grid coordinates.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-[`CellId`](api/shared.nominal.md#cellid)
-
-Packed cell id for the cell.
+[`CellId`](api/shared.nominal.md?id=cellid) Packed cell id for the cell.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### isCellEmptyAtCell() :id=iscellemptyatcell
+<div class="smt-member-card">
+
+### sandkit.api.grid.isCellEmptyAtCell :id=iscellemptyatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L32" target="_blank" rel="noopener">grid.d.ts:32</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.isCellEmptyAtCell(...args: CellCoordinates): boolean">
 
 ```ts
-sandkit.api.grid.isCellEmptyAtCell(...args: CellCoordinates): boolean
+isCellEmptyAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/grid.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L32)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when the cell has no element or terrain content.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`boolean`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### isTerrainAtCell() :id=isterrainatcell
+<div class="smt-member-card">
+
+### sandkit.api.grid.isTerrainAtCell :id=isterrainatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L42" target="_blank" rel="noopener">grid.d.ts:42</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.isTerrainAtCell(...args: CellCoordinates): boolean">
 
 ```ts
-sandkit.api.grid.isTerrainAtCell(...args: CellCoordinates): boolean
+isTerrainAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [shared/api/grid.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L42)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when the cell holds terrain (not an element).
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`boolean`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### reportActivityAtCell() :id=reportactivityatcell
+<div class="smt-member-card">
+
+### sandkit.api.grid.reportActivityAtCell :id=reportactivityatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L52" target="_blank" rel="noopener">grid.d.ts:52</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.reportActivityAtCell(...args: CellCoordinates): void">
 
 ```ts
-sandkit.api.grid.reportActivityAtCell(...args: CellCoordinates): void
+reportActivityAtCell(...args: CellCoordinates): void
 ```
 
-Defined in: [shared/api/grid.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L52)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Mark the cell active for simulation this tick.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### excavateAtCell() :id=excavateatcell
+<div class="smt-member-card">
+
+### sandkit.api.grid.excavateAtCell :id=excavateatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L65" target="_blank" rel="noopener">grid.d.ts:65</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): void">
 
 ```ts
-sandkit.api.grid.excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): void
+excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): void
 ```
 
-Defined in: [shared/api/grid.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L65)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=excavateoptions)\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Apply excavation damage and eject velocity at a cell.
 
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, [`Vector2`](api/shared.player.md#vector2), `number`, [`ExcavateOptions`](#excavateoptions)\]
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getDimensions() :id=getdimensions
+<div class="smt-member-card">
+
+### sandkit.api.grid.getDimensions :id=getdimensions
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L74" target="_blank" rel="noopener">grid.d.ts:74</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.grid.getDimensions(): GridDimensions">
 
 ```ts
-sandkit.api.grid.getDimensions(): GridDimensions
+getDimensions(): GridDimensions
 ```
 
-Defined in: [shared/api/grid.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L74)
+</div>
 
 Return the world grid size in cells.
 
-#### Returns
-
-[`GridDimensions`](#griddimensions)
+[`GridDimensions`](?id=griddimensions)
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

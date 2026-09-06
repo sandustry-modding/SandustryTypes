@@ -25,8 +25,12 @@ Start with the step-by-step guides:
 
 ## Browse the API
 
-- [Search](search.md) — find namespaces, methods, and types by live `sandkit` path
-- [Enums](api/sandkit.enums.md) — runtime enum values
+Open generated Sandkit pages from [Search](search.md).
+Empty search lists namespaces.
+Typed search finds methods and types by live `sandkit` path.
+
+Direct pages:
+
 - Electron — host preload bridge (`window.electron`), not part of `sandkit`
   - [Overview](electron-bridge.md) — when to use the bridge and IPC patterns
   - [API](api/electron.md) — generated `electron` reference

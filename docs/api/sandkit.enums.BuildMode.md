@@ -6,20 +6,34 @@ Linear vs rectangular structure placement.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Linear :id=linear
+<div class="smt-member-card">
+
+### sandkit.enums.BuildMode.Linear :id=linear
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L43" target="_blank" rel="noopener">index.d.ts:43</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.BuildMode.Linear: 1">
 
 ```ts
-sandkit.enums.BuildMode.Linear: 1
+Linear: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L43)
+</div>
 
-***
+</div>
 
-### Rectangular :id=rectangular
+<div class="smt-member-card">
+
+### sandkit.enums.BuildMode.Rectangular :id=rectangular
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L44" target="_blank" rel="noopener">index.d.ts:44</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.BuildMode.Rectangular: 2">
 
 ```ts
-sandkit.enums.BuildMode.Rectangular: 2
+Rectangular: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L44)
+</div>
+
+</div>

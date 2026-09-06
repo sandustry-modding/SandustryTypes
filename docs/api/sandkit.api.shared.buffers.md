@@ -4,39 +4,36 @@ Shared buffer ensure and lookup.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### ensure() :id=ensure
+<div class="smt-member-card">
+
+### sandkit.api.shared.buffers.ensure :id=ensure
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L30" target="_blank" rel="noopener">shared.d.ts:30</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.shared.buffers.ensure(key: string, config: object): SharedArray">
 
 ```ts
-sandkit.api.shared.buffers.ensure(key: string, config: object): SharedArray
+ensure(key: string, config: object): SharedArray
 ```
 
-Defined in: [sandkit/api/shared.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Buffer name shared across threads. |
+| config | Typed array kind and element count. |  |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+##### config <!-- {docsify-ignore} -->
+
+</div>
 
 Create or return a named shared buffer with type and length.
 
-#### Parameters
-
-##### key
-
-`string`
-
-Buffer name shared across threads.
-
-##### config
-
-Typed array kind and element count.
-
-###### type
-
-[`SharedArrayType`](api/sandkit.api.shared.md#sharedarraytype)
-
-###### length
-
-`number`
-
-#### Returns
-
-[`SharedArray`](api/sandkit.api.shared.md#sharedarray)
+[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray)
 
 #### Example
 
@@ -51,70 +48,77 @@ const counts = api.shared.buffers.ensure("counts", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~create()~~ :id=create
+<div class="smt-member-card">
+
+### ~~sandkit.api.shared.buffers.create~~ :id=create
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L40" target="_blank" rel="noopener">shared.d.ts:40</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.shared.buffers.create(key: string, config: object): SharedArray">
 
 ```ts
-sandkit.api.shared.buffers.create(key: string, config: object): SharedArray
+create(key: string, config: object): SharedArray
 ```
 
-Defined in: [sandkit/api/shared.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L40)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` |  |
+| config |  |  |
 
-##### key
+<div class="smt-member-anchors">
 
-`string`
+##### key <!-- {docsify-ignore} -->
 
-##### config
+##### config <!-- {docsify-ignore} -->
 
-###### type
+</div>
 
-[`SharedArrayType`](api/sandkit.api.shared.md#sharedarraytype)
-
-###### length
-
-`number`
-
-#### Returns
-
-[`SharedArray`](api/sandkit.api.shared.md#sharedarray)
+[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray)
 
 #### Deprecated
 
-Use [ensure](#ensure) instead.
+Use [ensure](?id=ensure) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### get() :id=get
+<div class="smt-member-card">
+
+### sandkit.api.shared.buffers.get :id=get
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L20" target="_blank" rel="noopener">shared.d.ts:20</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.shared.buffers.get(key: string): SharedArray | undefined">
 
 ```ts
-sandkit.api.shared.buffers.get(key: string): SharedArray | undefined
+get(key: string): SharedArray | undefined
 ```
 
-Defined in: [shared/api/shared.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Buffer name shared across threads. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+</div>
 
 Look up a named shared buffer without creating it.
 
-#### Parameters
-
-##### key
-
-`string`
-
-Buffer name shared across threads.
-
-#### Returns
-
-[`SharedArray`](api/sandkit.api.shared.md#sharedarray) \| `undefined`
-
-The typed array, or `undefined` when the buffer does not exist.
+[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) \| `undefined` The typed array, or `undefined` when the buffer does not exist.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

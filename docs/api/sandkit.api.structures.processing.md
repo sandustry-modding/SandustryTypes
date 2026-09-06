@@ -4,33 +4,34 @@ Per-structure processing enablement and registration.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### register() :id=register
+<div class="smt-member-card">
+
+### sandkit.api.structures.processing.register :id=register
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L544" target="_blank" rel="noopener">structures.d.ts:544</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.structures.processing.register(id: string &amp; object, definition: StructureProcessingDefinitionV1): void">
 
 ```ts
-sandkit.api.structures.processing.register(id: string & object, definition: StructureProcessingDefinitionV1): void
+register(id: string & object, definition: StructureProcessingDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/structures.d.ts:544](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L544)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| id | `string` & `object` | Unique processing registration id. |
+| definition | [`StructureProcessingDefinitionV1`](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1) | Structure type, interval, and callback. |
+
+<div class="smt-member-anchors">
+
+##### id <!-- {docsify-ignore} -->
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register a custom processing definition by id.
-
-#### Parameters
-
-##### id
-
-`string` & `object`
-
-Unique processing registration id.
-
-##### definition
-
-[`StructureProcessingDefinitionV1`](api/sandkit.api.structures.md#structureprocessingdefinitionv1)
-
-Structure type, interval, and callback.
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -54,27 +55,33 @@ api.structures.processing.register(
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### setEnabledAtCell() :id=setenabledatcell
+<div class="smt-member-card">
+
+### sandkit.api.structures.processing.setEnabledAtCell :id=setenabledatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L556" target="_blank" rel="noopener">structures.d.ts:556</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.structures.processing.setEnabledAtCell(...args: [number, number, boolean]): boolean">
 
 ```ts
-sandkit.api.structures.processing.setEnabledAtCell(...args: [number, number, boolean]): boolean
+setEnabledAtCell(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:556](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L556)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `boolean`\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Enable or disable processing at a cell.
-
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, `boolean`\]
-
-#### Returns
-
-`boolean`
 
 True when the enabled state changed.
 
@@ -82,44 +89,38 @@ True when the enabled state changed.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~setEnabledAt()~~ :id=setenabledat
+<div class="smt-member-card">
+
+### ~~sandkit.api.structures.processing.setEnabledAt~~ :id=setenabledat
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L563" target="_blank" rel="noopener">structures.d.ts:563</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.structures.processing.setEnabledAt(...args: [number, number, boolean]): boolean">
 
 ```ts
-sandkit.api.structures.processing.setEnabledAt(...args: [number, number, boolean]): boolean
+setEnabledAt(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/structures.d.ts:563](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L563)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `boolean`\] |  |
 
-##### args
+<div class="smt-member-anchors">
 
-...\[`number`, `number`, `boolean`\]
+##### args <!-- {docsify-ignore} -->
 
-#### Returns
-
-`boolean`
+</div>
 
 #### Deprecated
 
-Use [setEnabledAtCell](#setenabledatcell) instead.
+Use [setEnabledAtCell](?id=setenabledatcell) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-## References <!-- {docsify-ignore} -->
-
-### isEnabledAtCell :id=isenabledatcell
-
-<p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAtCell</code></p>
-Re-exports [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md#isenabledatcell)
-
-***
-
-### isEnabledAt :id=isenabledat
-
-<p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAt</code></p>
-Re-exports [isEnabledAt](api/sandkit.api.structures.processing.worker.md#isenabledat)
+</div>

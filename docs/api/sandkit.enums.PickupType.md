@@ -6,40 +6,66 @@ Pickups and interactable world items.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Artifact :id=artifact
+<div class="smt-member-card">
+
+### sandkit.enums.PickupType.Artifact :id=artifact
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L414" target="_blank" rel="noopener">index.d.ts:414</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.PickupType.Artifact: 1">
 
 ```ts
-sandkit.enums.PickupType.Artifact: 1
+Artifact: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:414](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L414)
+</div>
 
-***
+</div>
 
-### GlyphKey :id=glyphkey
+<div class="smt-member-card">
+
+### sandkit.enums.PickupType.GlyphKey :id=glyphkey
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L415" target="_blank" rel="noopener">index.d.ts:415</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.PickupType.GlyphKey: 2">
 
 ```ts
-sandkit.enums.PickupType.GlyphKey: 2
+GlyphKey: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:415](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L415)
+</div>
 
-***
+</div>
 
-### Stratacore :id=stratacore
+<div class="smt-member-card">
+
+### sandkit.enums.PickupType.Stratacore :id=stratacore
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L416" target="_blank" rel="noopener">index.d.ts:416</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.PickupType.Stratacore: 3">
 
 ```ts
-sandkit.enums.PickupType.Stratacore: 3
+Stratacore: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:416](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L416)
+</div>
 
-***
+</div>
 
-### Orb :id=orb
+<div class="smt-member-card">
+
+### sandkit.enums.PickupType.Orb :id=orb
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L417" target="_blank" rel="noopener">index.d.ts:417</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.PickupType.Orb: 4">
 
 ```ts
-sandkit.enums.PickupType.Orb: 4
+Orb: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L417)
+</div>
+
+</div>

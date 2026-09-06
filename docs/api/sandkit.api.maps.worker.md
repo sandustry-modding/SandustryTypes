@@ -8,10 +8,36 @@ Shared `sandkit.api.maps` base — active custom map metadata.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### ActiveMapV1 :id=activemapv1
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.maps.ActiveMapV1 (worker)</code></p>
-Defined in: [shared/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L18)
+### sandkit.api.maps.ActiveMapV1 :id=activemapv1
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L18" target="_blank" rel="noopener">maps.d.ts:18</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| id? | string |  |
+| deployment? | unknown |  |
+| spawn? | unknown |  |
+| topBounds? | object |  |
+| parallax? | unknown |  |
+| depthLight? | unknown |  |
+
+<div class="smt-member-anchors">
+
+##### id? <!-- {docsify-ignore} -->
+
+##### deployment? <!-- {docsify-ignore} -->
+
+##### spawn? <!-- {docsify-ignore} -->
+
+##### topBounds? <!-- {docsify-ignore} -->
+
+##### parallax? <!-- {docsify-ignore} -->
+
+##### depthLight? <!-- {docsify-ignore} -->
+
+</div>
 
 Active custom map record (version 1 schema).
 
@@ -23,82 +49,26 @@ Shape varies by map. Known fields are optional; additional keys may exist.
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### id?
-
-```ts
-optional id?: string
-```
-
-Defined in: [shared/api/maps.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L19)
-
-##### deployment?
-
-```ts
-optional deployment?: unknown
-```
-
-Defined in: [shared/api/maps.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L20)
-
-##### spawn?
-
-```ts
-optional spawn?: unknown
-```
-
-Defined in: [shared/api/maps.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L21)
-
-##### topBounds?
-
-```ts
-optional topBounds?: object
-```
-
-Defined in: [shared/api/maps.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L22)
-
-###### soft?
-
-```ts
-optional soft?: number
-```
-
-###### hard?
-
-```ts
-optional hard?: number
-```
-
-##### parallax?
-
-```ts
-optional parallax?: unknown
-```
-
-Defined in: [shared/api/maps.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L26)
-
-##### depthLight?
-
-```ts
-optional depthLight?: unknown
-```
-
-Defined in: [shared/api/maps.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L27)
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getActive() :id=getactive
+<div class="smt-member-card">
+
+### sandkit.api.maps.getActive :id=getactive
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L11" target="_blank" rel="noopener">maps.d.ts:11</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.maps.getActive(): Readonly&lt;ActiveMapV1&gt; | null">
 
 ```ts
-sandkit.api.maps.getActive(): Readonly<ActiveMapV1> | null
+getActive(): Readonly<ActiveMapV1> | null
 ```
 
-Defined in: [shared/api/maps.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L11)
+</div>
 
 Return the currently loaded custom map definition.
 
-#### Returns
+`Readonly`\<[`ActiveMapV1`](?id=activemapv1)\> \| `null` Active map metadata, or `null` outside custom maps.
 
-`Readonly`\<[`ActiveMapV1`](#activemapv1)\> \| `null`
-
-Active map metadata, or `null` outside custom maps.
+</div>

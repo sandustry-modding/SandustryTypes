@@ -6,270 +6,434 @@ Named input bindings (settings keys).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### OpenBuildMenu :id=openbuildmenu
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.OpenBuildMenu :id=openbuildmenu
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L182" target="_blank" rel="noopener">index.d.ts:182</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.OpenBuildMenu: &quot;OpenBuildMenu&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.OpenBuildMenu: "OpenBuildMenu"
+OpenBuildMenu: "OpenBuildMenu"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L182)
+</div>
 
-***
+</div>
 
-### GrapplingHook :id=grapplinghook
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.GrapplingHook :id=grapplinghook
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L183" target="_blank" rel="noopener">index.d.ts:183</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.GrapplingHook: &quot;GrapplingHook&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.GrapplingHook: "GrapplingHook"
+GrapplingHook: "GrapplingHook"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L183)
+</div>
 
-***
+</div>
 
-### Escape :id=escape
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Escape :id=escape
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L184" target="_blank" rel="noopener">index.d.ts:184</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Escape: &quot;Escape&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Escape: "Escape"
+Escape: "Escape"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L184)
+</div>
 
-***
+</div>
 
-### OpenTechTree :id=opentechtree
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.OpenTechTree :id=opentechtree
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L185" target="_blank" rel="noopener">index.d.ts:185</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.OpenTechTree: &quot;OpenTechTree&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.OpenTechTree: "OpenTechTree"
+OpenTechTree: "OpenTechTree"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L185)
+</div>
 
-***
+</div>
 
-### OpenInventory :id=openinventory
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.OpenInventory :id=openinventory
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L186" target="_blank" rel="noopener">index.d.ts:186</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.OpenInventory: &quot;OpenInventory&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.OpenInventory: "OpenInventory"
+OpenInventory: "OpenInventory"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:186](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L186)
+</div>
 
-***
+</div>
 
-### ReverseBuildDirection :id=reversebuilddirection
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.ReverseBuildDirection :id=reversebuilddirection
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L187" target="_blank" rel="noopener">index.d.ts:187</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.ReverseBuildDirection: &quot;ReverseBuildDirection&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.ReverseBuildDirection: "ReverseBuildDirection"
+ReverseBuildDirection: "ReverseBuildDirection"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:187](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L187)
+</div>
 
-***
+</div>
 
-### Marquee :id=marquee
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Marquee :id=marquee
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L188" target="_blank" rel="noopener">index.d.ts:188</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Marquee: &quot;Marquee&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Marquee: "Marquee"
+Marquee: "Marquee"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L188)
+</div>
 
-***
+</div>
 
-### Pause :id=pause
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Pause :id=pause
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L189" target="_blank" rel="noopener">index.d.ts:189</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Pause: &quot;Pause&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Pause: "Pause"
+Pause: "Pause"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L189)
+</div>
 
-***
+</div>
 
-### Copy :id=copy
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Copy :id=copy
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L190" target="_blank" rel="noopener">index.d.ts:190</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Copy: &quot;Copy&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Copy: "Copy"
+Copy: "Copy"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L190)
+</div>
 
-***
+</div>
 
-### Paste :id=paste
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Paste :id=paste
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L191" target="_blank" rel="noopener">index.d.ts:191</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Paste: &quot;Paste&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Paste: "Paste"
+Paste: "Paste"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L191)
+</div>
 
-***
+</div>
 
-### Flip :id=flip
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Flip :id=flip
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L192" target="_blank" rel="noopener">index.d.ts:192</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Flip: &quot;Flip&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Flip: "Flip"
+Flip: "Flip"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L192)
+</div>
 
-***
+</div>
 
-### Delete :id=delete
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Delete :id=delete
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L193" target="_blank" rel="noopener">index.d.ts:193</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Delete: &quot;Delete&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Delete: "Delete"
+Delete: "Delete"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L193)
+</div>
 
-***
+</div>
 
-### PauseCamera :id=pausecamera
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.PauseCamera :id=pausecamera
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L194" target="_blank" rel="noopener">index.d.ts:194</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.PauseCamera: &quot;PauseCamera&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.PauseCamera: "PauseCamera"
+PauseCamera: "PauseCamera"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L194)
+</div>
 
-***
+</div>
 
-### OpenUpgrades :id=openupgrades
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.OpenUpgrades :id=openupgrades
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L195" target="_blank" rel="noopener">index.d.ts:195</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.OpenUpgrades: &quot;OpenUpgrades&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.OpenUpgrades: "OpenUpgrades"
+OpenUpgrades: "OpenUpgrades"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L195)
+</div>
 
-***
+</div>
 
-### BuildMode :id=buildmode
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.BuildMode :id=buildmode
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L196" target="_blank" rel="noopener">index.d.ts:196</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.BuildMode: &quot;BuildMode&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.BuildMode: "BuildMode"
+BuildMode: "BuildMode"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L196)
+</div>
 
-***
+</div>
 
-### Demolish :id=demolish
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Demolish :id=demolish
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L197" target="_blank" rel="noopener">index.d.ts:197</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Demolish: &quot;Demolish&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Demolish: "Demolish"
+Demolish: "Demolish"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L197)
+</div>
 
-***
+</div>
 
-### Hover :id=hover
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Hover :id=hover
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L198" target="_blank" rel="noopener">index.d.ts:198</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Hover: &quot;Hover&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Hover: "Hover"
+Hover: "Hover"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:198](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L198)
+</div>
 
-***
+</div>
 
-### Ruler :id=ruler
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Ruler :id=ruler
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L199" target="_blank" rel="noopener">index.d.ts:199</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Ruler: &quot;Ruler&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Ruler: "Ruler"
+Ruler: "Ruler"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L199)
+</div>
 
-***
+</div>
 
-### Left :id=left
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Left :id=left
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L200" target="_blank" rel="noopener">index.d.ts:200</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Left: &quot;Left&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Left: "Left"
+Left: "Left"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L200)
+</div>
 
-***
+</div>
 
-### Right :id=right
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Right :id=right
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L201" target="_blank" rel="noopener">index.d.ts:201</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Right: &quot;Right&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Right: "Right"
+Right: "Right"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L201)
+</div>
 
-***
+</div>
 
-### Boost :id=boost
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Boost :id=boost
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L202" target="_blank" rel="noopener">index.d.ts:202</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Boost: &quot;Boost&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Boost: "Boost"
+Boost: "Boost"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L202)
+</div>
 
-***
+</div>
 
-### Descend :id=descend
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.Descend :id=descend
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L203" target="_blank" rel="noopener">index.d.ts:203</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.Descend: &quot;Descend&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.Descend: "Descend"
+Descend: "Descend"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L203)
+</div>
 
-***
+</div>
 
-### SprintBoost :id=sprintboost
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.SprintBoost :id=sprintboost
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L204" target="_blank" rel="noopener">index.d.ts:204</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.SprintBoost: &quot;SprintBoost&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.SprintBoost: "SprintBoost"
+SprintBoost: "SprintBoost"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L204)
+</div>
 
-***
+</div>
 
-### OverrideReplaceStructures :id=overridereplacestructures
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.OverrideReplaceStructures :id=overridereplacestructures
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L205" target="_blank" rel="noopener">index.d.ts:205</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.OverrideReplaceStructures: &quot;OverrideReplaceStructures&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.OverrideReplaceStructures: "OverrideReplaceStructures"
+OverrideReplaceStructures: "OverrideReplaceStructures"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L205)
+</div>
 
-***
+</div>
 
-### QuickSave :id=quicksave
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.QuickSave :id=quicksave
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L206" target="_blank" rel="noopener">index.d.ts:206</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.QuickSave: &quot;QuickSave&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.QuickSave: "QuickSave"
+QuickSave: "QuickSave"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L206)
+</div>
 
-***
+</div>
 
-### QuickLoad :id=quickload
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.QuickLoad :id=quickload
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L207" target="_blank" rel="noopener">index.d.ts:207</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.QuickLoad: &quot;QuickLoad&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.QuickLoad: "QuickLoad"
+QuickLoad: "QuickLoad"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:207](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L207)
+</div>
 
-***
+</div>
 
-### ToggleGameHud :id=togglegamehud
+<div class="smt-member-card">
+
+### sandkit.enums.KeyBinding.ToggleGameHud :id=togglegamehud
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L208" target="_blank" rel="noopener">index.d.ts:208</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyBinding.ToggleGameHud: &quot;ToggleGameHud&quot;">
 
 ```ts
-sandkit.enums.KeyBinding.ToggleGameHud: "ToggleGameHud"
+ToggleGameHud: "ToggleGameHud"
 ```
 
-Defined in: [sandkit/enums/index.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L208)
+</div>
+
+</div>

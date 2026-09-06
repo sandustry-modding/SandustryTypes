@@ -5,49 +5,53 @@ Main thread only.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### InputBindingHandlers :id=inputbindinghandlers
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.input.InputBindingHandlers</code></p>
-Defined in: [sandkit/api/input.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L117)
+### sandkit.api.input.InputBindingHandlers :id=inputbindinghandlers
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L117" target="_blank" rel="noopener">input.d.ts:117</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| down? | () => void | Called when the binding is pressed. |
+| up? | () => void | Called when the binding is released. |
+
+<div class="smt-member-anchors">
+
+##### down? <!-- {docsify-ignore} -->
+
+##### up? <!-- {docsify-ignore} -->
+
+</div>
 
 Handlers invoked when a binding is pressed or released.
 
-#### Properties
+</div>
 
-##### down?
+<div class="smt-member-card">
 
-```ts
-optional down?: () => void
-```
+### sandkit.api.input.InputBindingDefinition :id=inputbindingdefinition
 
-Defined in: [sandkit/api/input.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L119)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L125" target="_blank" rel="noopener">input.d.ts:125</a></p>
 
-Called when the binding is pressed.
+| Property | Type | Description |
+| --- | --- | --- |
+| displayName | string | Display name shown in settings. |
+| displayNameKey? | string | i18n key for the display name (overrides displayName when set). |
+| category | string | Settings category for grouping. |
+| handlers | InputBindingHandlers | Press and release handlers. |
 
-###### Returns
+<div class="smt-member-anchors">
 
-`void`
+##### displayName <!-- {docsify-ignore} -->
 
-##### up?
+##### displayNameKey? <!-- {docsify-ignore} -->
 
-```ts
-optional up?: () => void
-```
+##### category <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/input.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L121)
+##### handlers <!-- {docsify-ignore} -->
 
-Called when the binding is released.
-
-###### Returns
-
-`void`
-
-***
-
-### InputBindingDefinition :id=inputbindingdefinition
-
-<p class="smt-member-path"><code>sandkit.api.input.InputBindingDefinition</code></p>
-Defined in: [sandkit/api/input.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L125)
+</div>
 
 Definition for a registered input binding.
 
@@ -57,109 +61,81 @@ Definition for a registered input binding.
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### displayName
-
-```ts
-displayName: string
-```
-
-Defined in: [sandkit/api/input.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L127)
-
-Display name shown in settings.
-
-##### displayNameKey?
-
-```ts
-optional displayNameKey?: string
-```
-
-Defined in: [sandkit/api/input.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L129)
-
-i18n key for the display name (overrides displayName when set).
-
-##### category
-
-```ts
-category: string
-```
-
-Defined in: [sandkit/api/input.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L131)
-
-Settings category for grouping.
-
-##### handlers
-
-```ts
-handlers: InputBindingHandlers
-```
-
-Defined in: [sandkit/api/input.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L133)
-
-Press and release handlers.
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### BindingId :id=bindingid
+<div class="smt-member-card">
+
+### sandkit.api.input.BindingId :id=bindingid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L96" target="_blank" rel="noopener">input.d.ts:96</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.input.BindingId = LooseString&lt;` ${KeyBinding} `&gt;">
 
 ```ts
-sandkit.api.input.BindingId = LooseString<` ${KeyBinding} `>
+BindingId = LooseString<` ${KeyBinding} `>
 ```
 
-Defined in: [sandkit/api/input.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L96)
+</div>
 
 Binding id. Vanilla [KeyBindingEnum](api/sandkit.enums.KeyBinding.md) names autocomplete; custom ids are allowed.
 
-***
+</div>
 
-### KeyCode :id=keycode
+<div class="smt-member-card">
+
+### sandkit.api.input.KeyCode :id=keycode
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L101" target="_blank" rel="noopener">input.d.ts:101</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.input.KeyCode = LooseString&lt;&quot;Shift&quot; | &quot;Alt&quot; | &quot;Control&quot; | &quot;Meta&quot; | &quot;ShiftLeft&quot; | &quot;ShiftRight&quot; | &quot;AltLeft&quot; | &quot;AltRight&quot; | &quot;ControlLeft&quot; | &quot;ControlRight&quot; | &quot;MetaLeft&quot; | &quot;MetaRight&quot;&gt;">
 
 ```ts
-sandkit.api.input.KeyCode = LooseString<"Shift" | "Alt" | "Control" | "Meta" | "ShiftLeft" | "ShiftRight" | "AltLeft" | "AltRight" | "ControlLeft" | "ControlRight" | "MetaLeft" | "MetaRight">
+KeyCode = LooseString<"Shift" | "Alt" | "Control" | "Meta" | "ShiftLeft" | "ShiftRight" | "AltLeft" | "AltRight" | "ControlLeft" | "ControlRight" | "MetaLeft" | "MetaRight">
 ```
 
-Defined in: [sandkit/api/input.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L101)
+</div>
 
 KeyboardEvent.code, a modifier alias (`Shift`), or a chord (`Control+KeyC`).
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### registerBinding() :id=registerbinding
+<div class="smt-member-card">
+
+### sandkit.api.input.registerBinding :id=registerbinding
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L31" target="_blank" rel="noopener">input.d.ts:31</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.input.registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputBindingDefinition): BindingId">
 
 ```ts
-sandkit.api.input.registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputBindingDefinition): BindingId
+registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputBindingDefinition): BindingId
 ```
 
-Defined in: [sandkit/api/input.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L31)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| bindingId | [`BindingId`](?id=bindingid) | Unique id for the binding (also used in settings). |
+| defaultKeys | [`KeyCode`](?id=keycode)[] | Default key codes (for example `"Control+KeyC"`). |
+| definition | [`InputBindingDefinition`](?id=inputbindingdefinition) | Display metadata and press/release handlers. |
+
+<div class="smt-member-anchors">
+
+##### bindingId <!-- {docsify-ignore} -->
+
+##### defaultKeys <!-- {docsify-ignore} -->
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register a key binding and return its binding id.
 
-#### Parameters
-
-##### bindingId
-
-[`BindingId`](#bindingid)
-
-Unique id for the binding (also used in settings).
-
-##### defaultKeys
-
-[`KeyCode`](#keycode)[]
-
-Default key codes (for example `"Control+KeyC"`).
-
-##### definition
-
-[`InputBindingDefinition`](#inputbindingdefinition)
-
-Display metadata and press/release handlers.
-
-#### Returns
-
-[`BindingId`](#bindingid)
-
-The registered binding id.
+[`BindingId`](?id=bindingid) The registered binding id.
 
 #### Example
 
@@ -177,216 +153,229 @@ api.input.registerBinding("ExampleToggle", ["KeyO"], {
 });
 ```
 
-***
+</div>
 
-### getMouseCellPosition() :id=getmousecellposition
+<div class="smt-member-card">
+
+### sandkit.api.input.getMouseCellPosition :id=getmousecellposition
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L41" target="_blank" rel="noopener">input.d.ts:41</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.input.getMouseCellPosition(): object">
 
 ```ts
-sandkit.api.input.getMouseCellPosition(): object
+getMouseCellPosition(): object
 ```
 
-Defined in: [sandkit/api/input.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L41)
+</div>
 
 Return the mouse position in cell coordinates.
 
-#### Returns
+Cell `{ x, y }` under the cursor. x: number y: number
 
-`object`
+</div>
 
-Cell `{ x, y }` under the cursor.
+<div class="smt-member-card">
 
-##### x
+### sandkit.api.input.getBoundKeys :id=getboundkeys
 
-```ts
-x: number
-```
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L50" target="_blank" rel="noopener">input.d.ts:50</a></p>
 
-##### y
+<div class="smt-member-sig" data-sig="sandkit.api.input.getBoundKeys(bindingId: BindingId): KeyCode[]">
 
 ```ts
-y: number
+getBoundKeys(bindingId: BindingId): KeyCode[]
 ```
 
-***
+</div>
 
-### getBoundKeys() :id=getboundkeys
+| Argument | Type | Description |
+| --- | --- | --- |
+| bindingId | [`BindingId`](?id=bindingid) | Registered binding id. |
 
-```ts
-sandkit.api.input.getBoundKeys(bindingId: BindingId): KeyCode[]
-```
+<div class="smt-member-anchors">
 
-Defined in: [sandkit/api/input.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L50)
+##### bindingId <!-- {docsify-ignore} -->
+
+</div>
 
 Return the keys currently bound to a binding id.
 
-#### Parameters
+[`KeyCode`](?id=keycode)[] Key strings from settings (for example `"KeyA"` or `"Shift"`). Session `input.keys` is keyed by `KeyboardEvent.code`. Modifier aliases (`Shift`, `Alt`, `Control`, `Meta`) expand to `ShiftLeft` / `ShiftRight` and the same for the other modifiers.
 
-##### bindingId
+</div>
 
-[`BindingId`](#bindingid)
+<div class="smt-member-card">
 
-Registered binding id.
+### sandkit.api.input.getDisplayKey :id=getdisplaykey
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L58" target="_blank" rel="noopener">input.d.ts:58</a></p>
 
-[`KeyCode`](#keycode)[]
-
-Key strings from settings (for example `"KeyA"` or `"Shift"`).
-Session `input.keys` is keyed by `KeyboardEvent.code`. Modifier aliases
-(`Shift`, `Alt`, `Control`, `Meta`) expand to `ShiftLeft` / `ShiftRight` and the same for the other modifiers.
-
-***
-
-### getDisplayKey() :id=getdisplaykey
+<div class="smt-member-sig" data-sig="sandkit.api.input.getDisplayKey(bindingId: BindingId, defaultLabel?: string): string">
 
 ```ts
-sandkit.api.input.getDisplayKey(bindingId: BindingId, defaultLabel?: string): string
+getDisplayKey(bindingId: BindingId, defaultLabel?: string): string
 ```
 
-Defined in: [sandkit/api/input.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L58)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| bindingId | [`BindingId`](?id=bindingid) | Registered binding id. |
+| defaultLabel? | `string` | Fallback label when no key is bound. |
+
+<div class="smt-member-anchors">
+
+##### bindingId <!-- {docsify-ignore} -->
+
+##### defaultLabel? <!-- {docsify-ignore} -->
+
+</div>
 
 Return a display label for the bound key.
 
-#### Parameters
-
-##### bindingId
-
-[`BindingId`](#bindingid)
-
-Registered binding id.
-
-##### defaultLabel?
-
-`string`
-
-Fallback label when no key is bound.
-
-#### Returns
-
-`string`
-
 Human-readable key label for UI.
 
-***
+</div>
 
-### triggerBinding() :id=triggerbinding
+<div class="smt-member-card">
+
+### sandkit.api.input.triggerBinding :id=triggerbinding
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L64" target="_blank" rel="noopener">input.d.ts:64</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.input.triggerBinding(bindingId: BindingId): void">
 
 ```ts
-sandkit.api.input.triggerBinding(bindingId: BindingId): void
+triggerBinding(bindingId: BindingId): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L64)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| bindingId | [`BindingId`](?id=bindingid) | Registered binding id. |
+
+<div class="smt-member-anchors">
+
+##### bindingId <!-- {docsify-ignore} -->
+
+</div>
 
 Fire the binding down handler as if the key was pressed.
 
-#### Parameters
+</div>
 
-##### bindingId
+<div class="smt-member-card">
 
-[`BindingId`](#bindingid)
+### sandkit.api.input.pressBinding :id=pressbinding
 
-Registered binding id.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L70" target="_blank" rel="noopener">input.d.ts:70</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### pressBinding() :id=pressbinding
+<div class="smt-member-sig" data-sig="sandkit.api.input.pressBinding(bindingId: BindingId): void">
 
 ```ts
-sandkit.api.input.pressBinding(bindingId: BindingId): void
+pressBinding(bindingId: BindingId): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L70)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| bindingId | [`BindingId`](?id=bindingid) | Registered binding id. |
+
+<div class="smt-member-anchors">
+
+##### bindingId <!-- {docsify-ignore} -->
+
+</div>
 
 Fire the binding down handler without a matching release.
 
-#### Parameters
+</div>
 
-##### bindingId
+<div class="smt-member-card">
 
-[`BindingId`](#bindingid)
+### sandkit.api.input.releaseBinding :id=releasebinding
 
-Registered binding id.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L76" target="_blank" rel="noopener">input.d.ts:76</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### releaseBinding() :id=releasebinding
+<div class="smt-member-sig" data-sig="sandkit.api.input.releaseBinding(bindingId: BindingId): void">
 
 ```ts
-sandkit.api.input.releaseBinding(bindingId: BindingId): void
+releaseBinding(bindingId: BindingId): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L76)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| bindingId | [`BindingId`](?id=bindingid) | Registered binding id. |
+
+<div class="smt-member-anchors">
+
+##### bindingId <!-- {docsify-ignore} -->
+
+</div>
 
 Fire the binding up handler.
 
-#### Parameters
+</div>
 
-##### bindingId
+<div class="smt-member-card">
 
-[`BindingId`](#bindingid)
+### sandkit.api.input.resetMouseState :id=resetmousestate
 
-Registered binding id.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L79" target="_blank" rel="noopener">input.d.ts:79</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### resetMouseState() :id=resetmousestate
+<div class="smt-member-sig" data-sig="sandkit.api.input.resetMouseState(): void">
 
 ```ts
-sandkit.api.input.resetMouseState(): void
+resetMouseState(): void
 ```
 
-Defined in: [sandkit/api/input.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L79)
+</div>
 
 Clear internal mouse button state.
 
-#### Returns
+</div>
 
-`void`
+<div class="smt-member-card">
 
-***
+### sandkit.api.input.isCtrlHeld :id=isctrlheld
 
-### isCtrlHeld() :id=isctrlheld
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L85" target="_blank" rel="noopener">input.d.ts:85</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.input.isCtrlHeld(): boolean">
 
 ```ts
-sandkit.api.input.isCtrlHeld(): boolean
+isCtrlHeld(): boolean
 ```
 
-Defined in: [sandkit/api/input.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L85)
+</div>
 
 Return true when Ctrl is held.
 
-#### Returns
-
-`boolean`
-
 True when the Ctrl modifier is down.
 
-***
+</div>
 
-### isAltHeld() :id=isaltheld
+<div class="smt-member-card">
+
+### sandkit.api.input.isAltHeld :id=isaltheld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L91" target="_blank" rel="noopener">input.d.ts:91</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.input.isAltHeld(): boolean">
 
 ```ts
-sandkit.api.input.isAltHeld(): boolean
+isAltHeld(): boolean
 ```
 
-Defined in: [sandkit/api/input.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L91)
+</div>
 
 Return true when Alt is held.
 
-#### Returns
-
-`boolean`
-
 True when the Alt modifier is down.
+
+</div>

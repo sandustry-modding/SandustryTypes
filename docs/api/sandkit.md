@@ -625,17 +625,46 @@ Defined in: [sandkit/api/sandkit-api.d.ts:133](https://github.com/sandustry-modd
 
 ###### Deprecated
 
-Use [grid](#grid) for cell APIs and [pickups](#pickups) for world items.
+Use [grid](?id=grid) for cell APIs and [pickups](?id=pickups) for world items.
 
-***
+<div class="smt-member-card">
 
-### sandkit :id=sandkit
+### sandkit.sandkit :id=sandkit
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L33" target="_blank" rel="noopener">index.d.ts:33</a></p>
+
+<div class="smt-member-sig" data-sig="Sandkit = object">
 
 ```ts
 Sandkit = object
 ```
 
-Defined in: [sandkit/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L33)
+</div>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| api | SandkitApi | Public mod API. See [sandkit.api](?id=api-1). |
+| apiVersion | number | Sandkit API version number (live value is `1`). |
+| engine | SandkitEngine | **`Internal`** State-first internals. See [SandkitEngine](api/sandkit.engine.md?id=sandkitengine). |
+| enums | SandkitEnums | Runtime enum bags. See [sandkit.enums](?id=enums-1). |
+| react | SandkitReact | Host React package. See [SandkitReact](api/sandkit.react.md?id=sandkitreact). |
+| state | SandkitState | Game state. Same object as `sandkit.engine.state` at runtime. See [SandkitState](api/sandkit.engine.md?id=sandkitstate). |
+
+<div class="smt-member-anchors">
+
+##### api <!-- {docsify-ignore} -->
+
+##### apiVersion <!-- {docsify-ignore} -->
+
+##### engine <!-- {docsify-ignore} -->
+
+##### enums <!-- {docsify-ignore} -->
+
+##### react <!-- {docsify-ignore} -->
+
+##### state <!-- {docsify-ignore} -->
+
+</div>
 
 Shape of the host-injected `sandkit` free variable in mod `main.js`.
 
@@ -651,125 +680,4 @@ const engineApi = sandkit.engine.api;
 const engineState = sandkit.engine.state;
 ```
 
-#### Properties
-
-##### api
-
-```ts
-api: SandkitApi
-```
-
-Defined in: [sandkit/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L35)
-
-Public mod API. See [sandkit.api](#api-1).
-
-##### apiVersion
-
-```ts
-apiVersion: number
-```
-
-Defined in: [sandkit/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L37)
-
-Sandkit API version number (live value is `1`).
-
-##### engine
-
-```ts
-engine: SandkitEngine
-```
-
-Defined in: [sandkit/index.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L42)
-
-**`Internal`**
-
-State-first internals. See [SandkitEngine](api/sandkit.engine.md#sandkitengine).
-
-##### enums
-
-```ts
-enums: SandkitEnums
-```
-
-Defined in: [sandkit/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L44)
-
-Runtime enum bags. See [sandkit.enums](#enums-1).
-
-##### react
-
-```ts
-react: SandkitReact
-```
-
-Defined in: [sandkit/index.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L46)
-
-Host React package. See [SandkitReact](api/sandkit.react.md#sandkitreact).
-
-##### state
-
-```ts
-state: SandkitState
-```
-
-Defined in: [sandkit/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L51)
-
-Game state. Same object as `sandkit.engine.state` at runtime.
-See [SandkitState](api/sandkit.engine.md#sandkitstate).
-
-## References <!-- {docsify-ignore} -->
-
-### api :id=api
-
-<p class="smt-member-path"><code>sandkit.api</code></p>
-Renames and re-exports [sandkit/api](api/sandkit.api.md)
-
-***
-
-### engine :id=engine
-
-<p class="smt-member-path"><code>sandkit.engine</code></p>
-Re-exports [engine](api/sandkit.engine.md)
-
-***
-
-### enums :id=enums
-
-<p class="smt-member-path"><code>sandkit.enums</code></p>
-Renames and re-exports [sandkit/enums](api/sandkit.enums.md)
-
-***
-
-### sandkit.engine :id=sandkitengine
-
-Re-exports [SandkitEngine](api/sandkit.engine.md#sandkitengine)
-
-***
-
-### sandkit.engine.api :id=sandkitengineapi
-
-Re-exports [SandkitEngineApi](api/sandkit.engine.md#sandkitengineapi)
-
-***
-
-### RetroConsoleApi :id=retroconsoleapi
-
-<p class="smt-member-path"><code>sandkit.RetroConsoleApi</code></p>
-Re-exports [RetroConsoleApi](api/sandkit.engine.md#retroconsoleapi)
-
-***
-
-### sandkit.state :id=sandkitstate
-
-Re-exports [SandkitState](api/sandkit.engine.md#sandkitstate)
-
-***
-
-### sandkit.enums :id=sandkitenums
-
-Re-exports [SandkitEnums](api/sandkit.enums.md#sandkitenums)
-
-***
-
-### sandkit.react :id=sandkitreact
-
-Re-exports [SandkitReact](api/sandkit.react.md#sandkitreact)
+</div>

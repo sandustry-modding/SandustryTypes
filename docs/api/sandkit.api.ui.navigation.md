@@ -4,13 +4,29 @@ Controller focus and scope navigation hooks.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### useFocusable() :id=usefocusable
+<div class="smt-member-card">
+
+### sandkit.api.ui.navigation.useFocusable :id=usefocusable
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L248" target="_blank" rel="noopener">ui.d.ts:248</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.navigation.useFocusable&lt;T *extends* HTMLElement = HTMLDivElement&gt;(options: FocusOptions): Focusable&lt;T&gt;">
 
 ```ts
 sandkit.api.ui.navigation.useFocusable<T *extends* HTMLElement = HTMLDivElement>(options: FocusOptions): Focusable<T>
 ```
 
-Defined in: [sandkit/api/ui.d.ts:248](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L248)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| options | [`FocusOptions`](api/sandkit.api.ui.md?id=focusoptions) | Focus registration and neighbor wiring. |
+
+<div class="smt-member-anchors">
+
+##### options <!-- {docsify-ignore} -->
+
+</div>
 
 React hook for a focusable UI element in a scope.
 
@@ -20,19 +36,7 @@ React hook for a focusable UI element in a scope.
 
 `T` *extends* `HTMLElement` = `HTMLDivElement`
 
-#### Parameters
-
-##### options
-
-[`FocusOptions`](api/sandkit.api.ui.md#focusoptions)
-
-Focus registration and neighbor wiring.
-
-#### Returns
-
-[`Focusable`](api/sandkit.api.ui.md#focusable)\<`T`\>
-
-Ref, focus state, and a focus helper.
+[`Focusable`](api/sandkit.api.ui.md?id=focusable)\<`T`\> Ref, focus state, and a focus helper.
 
 #### Example
 
@@ -44,47 +48,33 @@ const focusable = api.ui.navigation.useFocusable({
 });
 ```
 
-***
+</div>
 
-### useFocusScope() :id=usefocusscope
+<div class="smt-member-card">
+
+### sandkit.api.ui.navigation.useFocusScope :id=usefocusscope
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L265" target="_blank" rel="noopener">ui.d.ts:265</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.navigation.useFocusScope(options: object): void">
 
 ```ts
-sandkit.api.ui.navigation.useFocusScope(options: object): void
+useFocusScope(options: object): void
 ```
 
-Defined in: [sandkit/api/ui.d.ts:265](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L265)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| options | Scope id, priority, default focus, and back handler. |  |
+
+<div class="smt-member-anchors">
+
+##### options <!-- {docsify-ignore} -->
+
+</div>
 
 React hook to register a focus scope with back handling.
-
-#### Parameters
-
-##### options
-
-Scope id, priority, default focus, and back handler.
-
-###### id
-
-`string`
-
-###### active
-
-`boolean`
-
-###### priority?
-
-`number`
-
-###### defaultId?
-
-`string`
-
-###### onBack?
-
-() => `boolean` \| `void`
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -96,28 +86,34 @@ api.ui.navigation.useFocusScope({
 });
 ```
 
-***
+</div>
 
-### controllerFocusClass() :id=controllerfocusclass
+<div class="smt-member-card">
+
+### sandkit.api.ui.navigation.controllerFocusClass :id=controllerfocusclass
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L278" target="_blank" rel="noopener">ui.d.ts:278</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.ui.navigation.controllerFocusClass(focused: boolean): string">
 
 ```ts
-sandkit.api.ui.navigation.controllerFocusClass(focused: boolean): string
+controllerFocusClass(focused: boolean): string
 ```
 
-Defined in: [sandkit/api/ui.d.ts:278](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L278)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| focused | `boolean` | True when the element has controller focus. |
+
+<div class="smt-member-anchors">
+
+##### focused <!-- {docsify-ignore} -->
+
+</div>
 
 Return CSS class for controller focus ring state.
 
-#### Parameters
-
-##### focused
-
-`boolean`
-
-True when the element has controller focus.
-
-#### Returns
-
-`string`
-
 Class name string for the focus ring.
+
+</div>

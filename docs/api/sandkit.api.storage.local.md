@@ -4,78 +4,91 @@ Local session storage without mod id scope.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### get() :id=get
+<div class="smt-member-card">
+
+### sandkit.api.storage.local.get :id=get
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L42" target="_blank" rel="noopener">storage.d.ts:42</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.storage.local.get(key: string): JsonValueV1 | undefined">
 
 ```ts
-sandkit.api.storage.local.get(key: string): JsonValueV1 | undefined
+get(key: string): JsonValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/storage.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L42)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Storage key. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+</div>
 
 Read a local storage value by key.
 
-#### Parameters
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
 
-##### key
+</div>
 
-`string`
+<div class="smt-member-card">
 
-Storage key.
+### sandkit.api.storage.local.set :id=set
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L48" target="_blank" rel="noopener">storage.d.ts:48</a></p>
 
-[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1) \| `undefined`
-
-***
-
-### set() :id=set
+<div class="smt-member-sig" data-sig="sandkit.api.storage.local.set(key: string, value: JsonValueV1): void">
 
 ```ts
-sandkit.api.storage.local.set(key: string, value: JsonValueV1): void
+set(key: string, value: JsonValueV1): void
 ```
 
-Defined in: [sandkit/api/storage.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L48)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Storage key. |
+| value | [`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) | JSON-serializable value. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+##### value <!-- {docsify-ignore} -->
+
+</div>
 
 Write a local storage value by key.
 
-#### Parameters
+</div>
 
-##### key
+<div class="smt-member-card">
 
-`string`
+### sandkit.api.storage.local.remove :id=remove
 
-Storage key.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L53" target="_blank" rel="noopener">storage.d.ts:53</a></p>
 
-##### value
-
-[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1)
-
-JSON-serializable value.
-
-#### Returns
-
-`void`
-
-***
-
-### remove() :id=remove
+<div class="smt-member-sig" data-sig="sandkit.api.storage.local.remove(key: string): void">
 
 ```ts
-sandkit.api.storage.local.remove(key: string): void
+remove(key: string): void
 ```
 
-Defined in: [sandkit/api/storage.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L53)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Storage key. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+</div>
 
 Remove a local storage key.
 
-#### Parameters
-
-##### key
-
-`string`
-
-Storage key.
-
-#### Returns
-
-`void`
+</div>

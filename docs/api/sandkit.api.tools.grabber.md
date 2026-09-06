@@ -4,78 +4,90 @@ Grabber tool size and state.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### setSize() :id=setsize
+<div class="smt-member-card">
+
+### sandkit.api.tools.grabber.setSize :id=setsize
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L15" target="_blank" rel="noopener">tools.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tools.grabber.setSize(size: number): void">
 
 ```ts
-sandkit.api.tools.grabber.setSize(size: number): void
+setSize(size: number): void
 ```
 
-Defined in: [sandkit/api/tools.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| size | `number` | Grab radius in cells. |
+
+<div class="smt-member-anchors">
+
+##### size <!-- {docsify-ignore} -->
+
+</div>
 
 Set grabber radius size.
 
-#### Parameters
+</div>
 
-##### size
+<div class="smt-member-card">
 
-`number`
+### sandkit.api.tools.grabber.getSize :id=getsize
 
-Grab radius in cells.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L21" target="_blank" rel="noopener">tools.d.ts:21</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### getSize() :id=getsize
+<div class="smt-member-sig" data-sig="sandkit.api.tools.grabber.getSize(): number">
 
 ```ts
-sandkit.api.tools.grabber.getSize(): number
+getSize(): number
 ```
 
-Defined in: [sandkit/api/tools.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L21)
+</div>
 
 Return current grabber radius size.
 
-#### Returns
-
-`number`
-
 Grab radius in cells.
 
-***
+</div>
 
-### isActive() :id=isactive
+<div class="smt-member-card">
+
+### sandkit.api.tools.grabber.isActive :id=isactive
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L27" target="_blank" rel="noopener">tools.d.ts:27</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tools.grabber.isActive(): boolean">
 
 ```ts
-sandkit.api.tools.grabber.isActive(): boolean
+isActive(): boolean
 ```
 
-Defined in: [sandkit/api/tools.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L27)
+</div>
 
 Return true when grabber tool is active.
 
-#### Returns
-
-`boolean`
-
 True when the grabber is the active tool.
 
-***
+</div>
 
-### isLoaded() :id=isloaded
+<div class="smt-member-card">
+
+### sandkit.api.tools.grabber.isLoaded :id=isloaded
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L33" target="_blank" rel="noopener">tools.d.ts:33</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tools.grabber.isLoaded(): boolean">
 
 ```ts
-sandkit.api.tools.grabber.isLoaded(): boolean
+isLoaded(): boolean
 ```
 
-Defined in: [sandkit/api/tools.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L33)
+</div>
 
 Return true when grabber holds elements.
 
-#### Returns
-
-`boolean`
-
 True when the grabber buffer is not empty.
+
+</div>

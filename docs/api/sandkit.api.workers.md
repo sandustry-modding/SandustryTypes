@@ -2,24 +2,30 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### setPostUpdateEnabled() :id=setpostupdateenabled
+<div class="smt-member-card">
+
+### sandkit.api.workers.setPostUpdateEnabled :id=setpostupdateenabled
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/workers.d.ts#L13" target="_blank" rel="noopener">workers.d.ts:13</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.workers.setPostUpdateEnabled(enabled: boolean): void">
 
 ```ts
-sandkit.api.workers.setPostUpdateEnabled(enabled: boolean): void
+setPostUpdateEnabled(enabled: boolean): void
 ```
 
-Defined in: [sandkit/api/workers.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/workers.d.ts#L13)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| enabled | `boolean` | When true, workers run post-update hooks each tick. |
+
+<div class="smt-member-anchors">
+
+##### enabled <!-- {docsify-ignore} -->
+
+</div>
 
 Enable or disable worker post-update callbacks.
 
-#### Parameters
-
-##### enabled
-
-`boolean`
-
-When true, workers run post-update hooks each tick.
-
-#### Returns
-
-`void`
+</div>

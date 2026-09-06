@@ -4,9 +4,10 @@ Structure recipe registration by machine kind.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### register() :id=register
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.structures.recipes.register()</code></p>
+### sandkit.api.structures.recipes.register :id=register
+
 #### Call Signature
 
 ```ts
@@ -27,7 +28,7 @@ Machine recipe slot id.
 
 ###### definition
 
-[`PlanterBoxRecipeDefinitionV1`](api/sandkit.api.processing.md#planterboxrecipedefinitionv1)
+[`PlanterBoxRecipeDefinitionV1`](api/sandkit.api.processing.md?id=planterboxrecipedefinitionv1)
 
 Grower recipe definition.
 
@@ -71,7 +72,7 @@ Machine recipe slot id.
 
 ###### definition
 
-[`ShakerRecipeDefinitionV1`](api/sandkit.api.processing.md#shakerrecipedefinitionv1)
+[`ShakerRecipeDefinitionV1`](api/sandkit.api.processing.md?id=shakerrecipedefinitionv1)
 
 Shaker recipe definition.
 
@@ -103,7 +104,7 @@ Machine recipe slot id.
 
 ###### definition
 
-[`KineticPressRecipeDefinitionV1`](api/sandkit.api.processing.md#kineticpressrecipedefinitionv1)
+[`KineticPressRecipeDefinitionV1`](api/sandkit.api.processing.md?id=kineticpressrecipedefinitionv1)
 
 Kinetic press recipe definition.
 
@@ -135,7 +136,7 @@ Refinery machine id.
 
 ###### definition
 
-[`WeightedRefineryRecipeDefinitionV1`](api/sandkit.api.structures.md#weightedrefineryrecipedefinitionv1)
+[`WeightedRefineryRecipeDefinitionV1`](api/sandkit.api.structures.md?id=weightedrefineryrecipedefinitionv1)
 
 Weighted input/output recipe.
 
@@ -146,3 +147,5 @@ Weighted input/output recipe.
 ##### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

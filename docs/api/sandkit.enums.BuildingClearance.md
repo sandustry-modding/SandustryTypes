@@ -6,40 +6,66 @@ Result of a build placement check.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Available :id=available
+<div class="smt-member-card">
+
+### sandkit.enums.BuildingClearance.Available :id=available
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L49" target="_blank" rel="noopener">index.d.ts:49</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.BuildingClearance.Available: 1">
 
 ```ts
-sandkit.enums.BuildingClearance.Available: 1
+Available: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L49)
+</div>
 
-***
+</div>
 
-### FullyBlocked :id=fullyblocked
+<div class="smt-member-card">
+
+### sandkit.enums.BuildingClearance.FullyBlocked :id=fullyblocked
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L50" target="_blank" rel="noopener">index.d.ts:50</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.BuildingClearance.FullyBlocked: 2">
 
 ```ts
-sandkit.enums.BuildingClearance.FullyBlocked: 2
+FullyBlocked: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L50)
+</div>
 
-***
+</div>
 
-### PartiallyBlocked :id=partiallyblocked
+<div class="smt-member-card">
+
+### sandkit.enums.BuildingClearance.PartiallyBlocked :id=partiallyblocked
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L51" target="_blank" rel="noopener">index.d.ts:51</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.BuildingClearance.PartiallyBlocked: 3">
 
 ```ts
-sandkit.enums.BuildingClearance.PartiallyBlocked: 3
+PartiallyBlocked: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L51)
+</div>
 
-***
+</div>
 
-### CanBeReplaced :id=canbereplaced
+<div class="smt-member-card">
+
+### sandkit.enums.BuildingClearance.CanBeReplaced :id=canbereplaced
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L52" target="_blank" rel="noopener">index.d.ts:52</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.BuildingClearance.CanBeReplaced: 4">
 
 ```ts
-sandkit.enums.BuildingClearance.CanBeReplaced: 4
+CanBeReplaced: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L52)
+</div>
+
+</div>

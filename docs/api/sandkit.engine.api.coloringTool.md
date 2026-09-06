@@ -4,222 +4,260 @@
 
 `sandkit.engine.api.coloringTool` — paint-bucket and flood-fill structure coloring.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### colorStructure() :id=colorstructure
+<div class="smt-member-card">
+
+### sandkit.engine.api.coloringTool.colorStructure :id=colorstructure
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L15" target="_blank" rel="noopener">coloringTool.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.coloringTool.colorStructure(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.coloringTool.colorStructure(...args: unknown[]): unknown
+colorStructure(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Apply a color to one structure.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.coloringTool.floodFillColor :id=floodfillcolor
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L20" target="_blank" rel="noopener">coloringTool.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### floodFillColor() :id=floodfillcolor
+<div class="smt-member-sig" data-sig="sandkit.engine.api.coloringTool.floodFillColor(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.coloringTool.floodFillColor(...args: unknown[]): unknown
+floodFillColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Flood-fill connected structures with a color.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.coloringTool.getColor :id=getcolor
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L25" target="_blank" rel="noopener">coloringTool.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getColor() :id=getcolor
+<div class="smt-member-sig" data-sig="sandkit.engine.api.coloringTool.getColor(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.coloringTool.getColor(...args: unknown[]): unknown
+getColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the color on a structure.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.coloringTool.isColorableStructure :id=iscolorablestructure
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L30" target="_blank" rel="noopener">coloringTool.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### isColorableStructure() :id=iscolorablestructure
+<div class="smt-member-sig" data-sig="sandkit.engine.api.coloringTool.isColorableStructure(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.coloringTool.isColorableStructure(...args: unknown[]): unknown
+isColorableStructure(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether a structure can be colored.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.coloringTool.isMatchColorMode :id=ismatchcolormode
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L35" target="_blank" rel="noopener">coloringTool.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### isMatchColorMode() :id=ismatchcolormode
+<div class="smt-member-sig" data-sig="sandkit.engine.api.coloringTool.isMatchColorMode(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.coloringTool.isMatchColorMode(...args: unknown[]): unknown
+isMatchColorMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether match-color mode is active.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.coloringTool.isPaintBucketMode :id=ispaintbucketmode
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L40" target="_blank" rel="noopener">coloringTool.d.ts:40</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### isPaintBucketMode() :id=ispaintbucketmode
+<div class="smt-member-sig" data-sig="sandkit.engine.api.coloringTool.isPaintBucketMode(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.coloringTool.isPaintBucketMode(...args: unknown[]): unknown
+isPaintBucketMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L40)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether paint-bucket mode is active.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.coloringTool.setColor :id=setcolor
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L45" target="_blank" rel="noopener">coloringTool.d.ts:45</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### setColor() :id=setcolor
+<div class="smt-member-sig" data-sig="sandkit.engine.api.coloringTool.setColor(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.coloringTool.setColor(...args: unknown[]): unknown
+setColor(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L45)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Set the color on a structure.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.coloringTool.toggleMatchColorMode :id=togglematchcolormode
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L50" target="_blank" rel="noopener">coloringTool.d.ts:50</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### toggleMatchColorMode() :id=togglematchcolormode
+<div class="smt-member-sig" data-sig="sandkit.engine.api.coloringTool.toggleMatchColorMode(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.coloringTool.toggleMatchColorMode(...args: unknown[]): unknown
+toggleMatchColorMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L50)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Toggle match-color mode on or off.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.coloringTool.togglePaintBucketMode :id=togglepaintbucketmode
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L55" target="_blank" rel="noopener">coloringTool.d.ts:55</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### togglePaintBucketMode() :id=togglepaintbucketmode
+<div class="smt-member-sig" data-sig="sandkit.engine.api.coloringTool.togglePaintBucketMode(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.coloringTool.togglePaintBucketMode(...args: unknown[]): unknown
+togglePaintBucketMode(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/coloringTool.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L55)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Toggle paint-bucket mode on or off.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

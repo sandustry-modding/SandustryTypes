@@ -4,414 +4,484 @@
 
 `sandkit.engine.api.augments` — player augment levels and unlocked perks.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getDigLevel() :id=getdiglevel
+<div class="smt-member-card">
+
+### sandkit.engine.api.augments.getDigLevel :id=getdiglevel
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L15" target="_blank" rel="noopener">augments.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.getDigLevel(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.getDigLevel(...args: unknown[]): unknown
+getDigLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the current dig augment level.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.getGunLevel :id=getgunlevel
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L20" target="_blank" rel="noopener">augments.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getGunLevel() :id=getgunlevel
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.getGunLevel(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.getGunLevel(...args: unknown[]): unknown
+getGunLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the current gun augment level.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.getPhaseLevel :id=getphaselevel
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L25" target="_blank" rel="noopener">augments.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getPhaseLevel() :id=getphaselevel
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.getPhaseLevel(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.getPhaseLevel(...args: unknown[]): unknown
+getPhaseLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the current phase augment level.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.getRocketAmmoLevel :id=getrocketammolevel
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L30" target="_blank" rel="noopener">augments.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getRocketAmmoLevel() :id=getrocketammolevel
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.getRocketAmmoLevel(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.getRocketAmmoLevel(...args: unknown[]): unknown
+getRocketAmmoLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the current rocket ammo augment level.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.getRocketReloadLevel :id=getrocketreloadlevel
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L35" target="_blank" rel="noopener">augments.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getRocketReloadLevel() :id=getrocketreloadlevel
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.getRocketReloadLevel(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.getRocketReloadLevel(...args: unknown[]): unknown
+getRocketReloadLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the current rocket reload augment level.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.getSprintCapLevel :id=getsprintcaplevel
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L40" target="_blank" rel="noopener">augments.d.ts:40</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getSprintCapLevel() :id=getsprintcaplevel
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.getSprintCapLevel(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.getSprintCapLevel(...args: unknown[]): unknown
+getSprintCapLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L40)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the current sprint cap augment level.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasBigDig :id=hasbigdig
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L45" target="_blank" rel="noopener">augments.d.ts:45</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasBigDig() :id=hasbigdig
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasBigDig(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasBigDig(...args: unknown[]): unknown
+hasBigDig(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L45)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the big-dig augment is unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasBulletSpeed :id=hasbulletspeed
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L50" target="_blank" rel="noopener">augments.d.ts:50</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasBulletSpeed() :id=hasbulletspeed
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasBulletSpeed(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasBulletSpeed(...args: unknown[]): unknown
+hasBulletSpeed(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L50)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the bullet-speed augment is unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasBulletTracer :id=hasbullettracer
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L55" target="_blank" rel="noopener">augments.d.ts:55</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasBulletTracer() :id=hasbullettracer
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasBulletTracer(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasBulletTracer(...args: unknown[]): unknown
+hasBulletTracer(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L55)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the bullet-tracer augment is unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasKickstartBoost :id=haskickstartboost
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L60" target="_blank" rel="noopener">augments.d.ts:60</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasKickstartBoost() :id=haskickstartboost
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasKickstartBoost(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasKickstartBoost(...args: unknown[]): unknown
+hasKickstartBoost(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L60)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the kickstart-boost augment is unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasPhaseDash :id=hasphasedash
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L65" target="_blank" rel="noopener">augments.d.ts:65</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasPhaseDash() :id=hasphasedash
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasPhaseDash(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasPhaseDash(...args: unknown[]): unknown
+hasPhaseDash(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L65)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the phase-dash augment is unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasPhaseDashCharge :id=hasphasedashcharge
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L70" target="_blank" rel="noopener">augments.d.ts:70</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasPhaseDashCharge() :id=hasphasedashcharge
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasPhaseDashCharge(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasPhaseDashCharge(...args: unknown[]): unknown
+hasPhaseDashCharge(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L70)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the phase-dash-charge augment is unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasRideBoost :id=hasrideboost
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L75" target="_blank" rel="noopener">augments.d.ts:75</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasRideBoost() :id=hasrideboost
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasRideBoost(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasRideBoost(...args: unknown[]): unknown
+hasRideBoost(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L75)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the ride-boost augment is unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasRocketDamage :id=hasrocketdamage
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L80" target="_blank" rel="noopener">augments.d.ts:80</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasRocketDamage() :id=hasrocketdamage
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasRocketDamage(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasRocketDamage(...args: unknown[]): unknown
+hasRocketDamage(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L80)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the rocket-damage augment is unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasRocketWarhead :id=hasrocketwarhead
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L85" target="_blank" rel="noopener">augments.d.ts:85</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasRocketWarhead() :id=hasrocketwarhead
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasRocketWarhead(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasRocketWarhead(...args: unknown[]): unknown
+hasRocketWarhead(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L85)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the rocket-warhead augment is unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasSprintPower :id=hassprintpower
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L90" target="_blank" rel="noopener">augments.d.ts:90</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasSprintPower() :id=hassprintpower
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasSprintPower(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasSprintPower(...args: unknown[]): unknown
+hasSprintPower(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L90)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the sprint-power augment is unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.augments.hasTripleShot :id=hastripleshot
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L95" target="_blank" rel="noopener">augments.d.ts:95</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasTripleShot() :id=hastripleshot
+<div class="smt-member-sig" data-sig="sandkit.engine.api.augments.hasTripleShot(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.augments.hasTripleShot(...args: unknown[]): unknown
+hasTripleShot(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/augments.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L95)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the triple-shot augment is unlocked.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

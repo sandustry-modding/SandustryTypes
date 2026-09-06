@@ -5,12 +5,29 @@ Main thread only.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### I18nNumberFormatOptions :id=i18nnumberformatoptions
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.i18n.I18nNumberFormatOptions</code></p>
-Defined in: [sandkit/api/i18n.d.ts:227](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L227)
+### sandkit.api.i18n.I18nNumberFormatOptions :id=i18nnumberformatoptions
 
-Number format options for [formatNumber](#formatnumber).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L227" target="_blank" rel="noopener">i18n.d.ts:227</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| minimumFractionDigits? | number | Minimum fraction digits. |
+| maximumFractionDigits? | number | Maximum fraction digits. |
+| useGrouping? | boolean | When true, use grouping separators. |
+
+<div class="smt-member-anchors">
+
+##### minimumFractionDigits? <!-- {docsify-ignore} -->
+
+##### maximumFractionDigits? <!-- {docsify-ignore} -->
+
+##### useGrouping? <!-- {docsify-ignore} -->
+
+</div>
+
+Number format options for [formatNumber](?id=formatnumber).
 
 #### Indexable
 
@@ -18,79 +35,58 @@ Number format options for [formatNumber](#formatnumber).
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### minimumFractionDigits?
-
-```ts
-optional minimumFractionDigits?: number
-```
-
-Defined in: [sandkit/api/i18n.d.ts:229](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L229)
-
-Minimum fraction digits.
-
-##### maximumFractionDigits?
-
-```ts
-optional maximumFractionDigits?: number
-```
-
-Defined in: [sandkit/api/i18n.d.ts:231](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L231)
-
-Maximum fraction digits.
-
-##### useGrouping?
-
-```ts
-optional useGrouping?: boolean
-```
-
-Defined in: [sandkit/api/i18n.d.ts:233](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L233)
-
-When true, use grouping separators.
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### Locale :id=locale
+<div class="smt-member-card">
+
+### sandkit.api.i18n.Locale :id=locale
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L224" target="_blank" rel="noopener">i18n.d.ts:224</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.Locale = LooseString&lt;&quot;en&quot;&gt;">
 
 ```ts
-sandkit.api.i18n.Locale = LooseString<"en">
+Locale = LooseString<"en">
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L224)
+</div>
 
 Locale code. `"en"` autocompletes; any locale string is allowed.
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### t() :id=t
+<div class="smt-member-card">
+
+### sandkit.api.i18n.t :id=t
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L23" target="_blank" rel="noopener">i18n.d.ts:23</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.t(key: string, params?: Record&lt;string, string | number&gt;): string">
 
 ```ts
-sandkit.api.i18n.t(key: string, params?: Record<string, string | number>): string
+t(key: string, params?: Record<string, string | number>): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L23)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Translation key. |
+| params? | `Record`\<`string`, `string` \\| `number`\> | Placeholder values for the key template. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+##### params? <!-- {docsify-ignore} -->
+
+</div>
 
 Translates a key with optional parameter substitution.
-
-#### Parameters
-
-##### key
-
-`string`
-
-Translation key.
-
-##### params?
-
-`Record`\<`string`, `string` \| `number`\>
-
-Placeholder values for the key template.
-
-#### Returns
-
-`string`
 
 #### Example
 
@@ -104,35 +100,36 @@ const message = api.i18n.t("mods|example|count", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### register() :id=register
+<div class="smt-member-card">
+
+### sandkit.api.i18n.register :id=register
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L40" target="_blank" rel="noopener">i18n.d.ts:40</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.register(locale: Locale, translations: Record&lt;string, string&gt;): void">
 
 ```ts
-sandkit.api.i18n.register(locale: Locale, translations: Record<string, string>): void
+register(locale: Locale, translations: Record<string, string>): void
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L40)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| locale | [`Locale`](?id=locale) | Locale code (e.g. `en`). |
+| translations | `Record`\<`string`, `string`\> | Map of keys to translated strings. |
+
+<div class="smt-member-anchors">
+
+##### locale <!-- {docsify-ignore} -->
+
+##### translations <!-- {docsify-ignore} -->
+
+</div>
 
 Registers translation strings for a locale.
-
-#### Parameters
-
-##### locale
-
-[`Locale`](#locale)
-
-Locale code (e.g. `en`).
-
-##### translations
-
-`Record`\<`string`, `string`\>
-
-Map of keys to translated strings.
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -146,81 +143,92 @@ api.i18n.register("en", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getLocale() :id=getlocale
+<div class="smt-member-card">
+
+### sandkit.api.i18n.getLocale :id=getlocale
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L47" target="_blank" rel="noopener">i18n.d.ts:47</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.getLocale(): Locale">
 
 ```ts
-sandkit.api.i18n.getLocale(): Locale
+getLocale(): Locale
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L47)
+</div>
 
 Returns the active locale code.
 
-#### Returns
-
-[`Locale`](#locale)
+[`Locale`](?id=locale)
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### hasTranslation() :id=hastranslation
+<div class="smt-member-card">
+
+### sandkit.api.i18n.hasTranslation :id=hastranslation
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L57" target="_blank" rel="noopener">i18n.d.ts:57</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.hasTranslation(key: string, locale?: Locale): boolean">
 
 ```ts
-sandkit.api.i18n.hasTranslation(key: string, locale?: Locale): boolean
+hasTranslation(key: string, locale?: Locale): boolean
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L57)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Translation key. |
+| locale? | [`Locale`](?id=locale) | Optional locale; defaults to the active locale. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+##### locale? <!-- {docsify-ignore} -->
+
+</div>
 
 Returns true when a translation exists for the key.
 
-#### Parameters
-
-##### key
-
-`string`
-
-Translation key.
-
-##### locale?
-
-[`Locale`](#locale)
-
-Optional locale; defaults to the active locale.
-
-#### Returns
-
-`boolean`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### setLocale() :id=setlocale
+<div class="smt-member-card">
+
+### sandkit.api.i18n.setLocale :id=setlocale
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L66" target="_blank" rel="noopener">i18n.d.ts:66</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.setLocale(locale: Locale): Promise&lt;void&gt;">
 
 ```ts
-sandkit.api.i18n.setLocale(locale: Locale): Promise<void>
+setLocale(locale: Locale): Promise<void>
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L66)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| locale | [`Locale`](?id=locale) | Locale code to activate. |
+
+<div class="smt-member-anchors">
+
+##### locale <!-- {docsify-ignore} -->
+
+</div>
 
 Sets the active locale.
-
-#### Parameters
-
-##### locale
-
-[`Locale`](#locale)
-
-Locale code to activate.
-
-#### Returns
 
 `Promise`\<`void`\>
 
@@ -228,19 +236,23 @@ Locale code to activate.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getLanguages() :id=getlanguages
+<div class="smt-member-card">
+
+### sandkit.api.i18n.getLanguages :id=getlanguages
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L73" target="_blank" rel="noopener">i18n.d.ts:73</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.getLanguages(): object[]">
 
 ```ts
-sandkit.api.i18n.getLanguages(): object[]
+getLanguages(): object[]
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L73)
+</div>
 
 Returns metadata for all known languages.
-
-#### Returns
 
 `object`[]
 
@@ -248,55 +260,60 @@ Returns metadata for all known languages.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getAvailableLocales() :id=getavailablelocales
+<div class="smt-member-card">
+
+### sandkit.api.i18n.getAvailableLocales :id=getavailablelocales
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L85" target="_blank" rel="noopener">i18n.d.ts:85</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.getAvailableLocales(): Locale[]">
 
 ```ts
-sandkit.api.i18n.getAvailableLocales(): Locale[]
+getAvailableLocales(): Locale[]
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L85)
+</div>
 
 Returns locale codes that have registered translations.
 
-#### Returns
-
-[`Locale`](#locale)[]
+[`Locale`](?id=locale)[]
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### formatNumber() :id=formatnumber
+<div class="smt-member-card">
+
+### sandkit.api.i18n.formatNumber :id=formatnumber
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L102" target="_blank" rel="noopener">i18n.d.ts:102</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.formatNumber(value: number, options?: I18nNumberFormatOptions): string">
 
 ```ts
-sandkit.api.i18n.formatNumber(value: number, options?: I18nNumberFormatOptions): string
+formatNumber(value: number, options?: I18nNumberFormatOptions): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L102)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| value | `number` | Number to format. |
+| options? | [`I18nNumberFormatOptions`](?id=i18nnumberformatoptions) | Intl-style number format options. |
+
+<div class="smt-member-anchors">
+
+##### value <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Formats a number for the active locale.
-
-#### Parameters
-
-##### value
-
-`number`
-
-Number to format.
-
-##### options?
-
-[`I18nNumberFormatOptions`](#i18nnumberformatoptions)
-
-Intl-style number format options.
-
-#### Returns
-
-`string`
 
 #### Example
 
@@ -310,91 +327,99 @@ const formatted = api.i18n.formatNumber(1234.5, {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### joinKey() :id=joinkey
+<div class="smt-member-card">
+
+### sandkit.api.i18n.joinKey :id=joinkey
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L111" target="_blank" rel="noopener">i18n.d.ts:111</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.joinKey(...parts: string[]): string">
 
 ```ts
-sandkit.api.i18n.joinKey(...parts: string[]): string
+joinKey(...parts: string[]): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L111)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| parts | ...`string`[] | Key segments joined with `.`. |
+
+<div class="smt-member-anchors">
+
+##### parts <!-- {docsify-ignore} -->
+
+</div>
 
 Joins key parts into a single translation key.
 
-#### Parameters
-
-##### parts
-
-...`string`[]
-
-Key segments joined with `.`.
-
-#### Returns
-
-`string`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~key()~~ :id=key
+<div class="smt-member-card">
+
+### ~~sandkit.api.i18n.key~~ :id=key
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L118" target="_blank" rel="noopener">i18n.d.ts:118</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.key(...parts: string[]): string">
 
 ```ts
-sandkit.api.i18n.key(...parts: string[]): string
+key(...parts: string[]): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L118)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| parts | ...`string`[] |  |
 
-##### parts
+<div class="smt-member-anchors">
 
-...`string`[]
+##### parts <!-- {docsify-ignore} -->
 
-#### Returns
-
-`string`
+</div>
 
 #### Deprecated
 
-Use [joinKey](#joinkey) instead.
+Use [joinKey](?id=joinkey) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getName() :id=getname
+<div class="smt-member-card">
+
+### sandkit.api.i18n.getName :id=getname
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L135" target="_blank" rel="noopener">i18n.d.ts:135</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.getName(definition: object): string">
 
 ```ts
-sandkit.api.i18n.getName(definition: object): string
+getName(definition: object): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L135)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| definition | Object with `nameKey` or `name`. |  |
+
+<div class="smt-member-anchors">
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Returns the display name from a definition with nameKey or name.
-
-#### Parameters
-
-##### definition
-
-Object with `nameKey` or `name`.
-
-###### nameKey?
-
-`string`
-
-###### name?
-
-`string`
-
-#### Returns
-
-`string`
 
 #### Example
 
@@ -409,197 +434,176 @@ const name = api.i18n.getName({
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getDescription() :id=getdescription
+<div class="smt-member-card">
+
+### sandkit.api.i18n.getDescription :id=getdescription
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L144" target="_blank" rel="noopener">i18n.d.ts:144</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.getDescription(definition: object): string">
 
 ```ts
-sandkit.api.i18n.getDescription(definition: object): string
+getDescription(definition: object): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L144)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| definition | Object with `descriptionKey` or `description`. |  |
+
+<div class="smt-member-anchors">
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Returns the description from a definition with descriptionKey or description.
 
-#### Parameters
-
-##### definition
-
-Object with `descriptionKey` or `description`.
-
-###### descriptionKey?
-
-`string`
-
-###### description?
-
-`string`
-
-#### Returns
-
-`string`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### createTranslatable() :id=createtranslatable
+<div class="smt-member-card">
+
+### sandkit.api.i18n.createTranslatable :id=createtranslatable
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L157" target="_blank" rel="noopener">i18n.d.ts:157</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.createTranslatable(key: string, fallback: string): object">
 
 ```ts
-sandkit.api.i18n.createTranslatable(key: string, fallback: string): object
+createTranslatable(key: string, fallback: string): object
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L157)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Translation key. |
+| fallback | `string` | Text used when no translation is registered. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+##### fallback <!-- {docsify-ignore} -->
+
+</div>
 
 Creates a translatable string object with a fallback.
 
-#### Parameters
-
-##### key
-
-`string`
-
-Translation key.
-
-##### fallback
-
-`string`
-
-Text used when no translation is registered.
-
-#### Returns
-
-`object`
-
-##### \_\_translatable
-
-```ts
-\_\_translatable: true
-```
-
-##### key
-
-```ts
-key: string
-```
-
-##### fallback
-
-```ts
-fallback: string
-```
+\_\_translatable: true key: string fallback: string
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~translatable()~~ :id=translatable
+<div class="smt-member-card">
 
-```ts
-sandkit.api.i18n.translatable(key: string, fallback: string): object
-```
+### ~~sandkit.api.i18n.translatable~~ :id=translatable
 
-Defined in: [sandkit/api/i18n.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L167)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L167" target="_blank" rel="noopener">i18n.d.ts:167</a></p>
 
-#### Parameters
-
-##### key
-
-`string`
-
-##### fallback
-
-`string`
-
-#### Returns
-
-`object`
-
-##### ~~\_\_translatable~~
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.translatable(key: string, fallback: string): object">
 
 ```ts
-\_\_translatable: true
+translatable(key: string, fallback: string): object
 ```
 
-##### ~~key~~
+</div>
 
-```ts
-key: string
-```
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` |  |
+| fallback | `string` |  |
 
-##### ~~fallback~~
+<div class="smt-member-anchors">
 
-```ts
-fallback: string
-```
+##### key <!-- {docsify-ignore} -->
+
+##### fallback <!-- {docsify-ignore} -->
+
+</div>
+
+\_\_translatable: true key: string fallback: string
 
 #### Deprecated
 
-Use [createTranslatable](#createtranslatable) instead.
+Use [createTranslatable](?id=createtranslatable) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### setGlobal() :id=setglobal
+<div class="smt-member-card">
+
+### sandkit.api.i18n.setGlobal :id=setglobal
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L180" target="_blank" rel="noopener">i18n.d.ts:180</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.setGlobal(key: string, value: string | (() =&gt; string)): void">
 
 ```ts
-sandkit.api.i18n.setGlobal(key: string, value: string | (() => string)): void
+setGlobal(key: string, value: string | (() => string)): void
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L180)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Global helper key. |
+| value | `string` \\| (() => `string`) | Static string or function that returns the current value. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+##### value <!-- {docsify-ignore} -->
+
+</div>
 
 Sets a global string or lazy resolver used in translations.
 
-#### Parameters
-
-##### key
-
-`string`
-
-Global helper key.
-
-##### value
-
-`string` \| (() => `string`)
-
-Static string or function that returns the current value.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getGlobal() :id=getglobal
+<div class="smt-member-card">
+
+### sandkit.api.i18n.getGlobal :id=getglobal
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L189" target="_blank" rel="noopener">i18n.d.ts:189</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.getGlobal(key: string): string | undefined">
 
 ```ts
-sandkit.api.i18n.getGlobal(key: string): string | undefined
+getGlobal(key: string): string | undefined
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L189)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Global helper key. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+</div>
 
 Returns a global translation helper value.
-
-#### Parameters
-
-##### key
-
-`string`
-
-Global helper key.
-
-#### Returns
 
 `string` \| `undefined`
 
@@ -607,75 +611,89 @@ Global helper key.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### removeGlobal() :id=removeglobal
+<div class="smt-member-card">
+
+### sandkit.api.i18n.removeGlobal :id=removeglobal
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L198" target="_blank" rel="noopener">i18n.d.ts:198</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.removeGlobal(key: string): void">
 
 ```ts
-sandkit.api.i18n.removeGlobal(key: string): void
+removeGlobal(key: string): void
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:198](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L198)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Global helper key. |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+</div>
 
 Removes a global translation helper value.
 
-#### Parameters
-
-##### key
-
-`string`
-
-Global helper key.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~clearGlobal()~~ :id=clearglobal
+<div class="smt-member-card">
+
+### ~~sandkit.api.i18n.clearGlobal~~ :id=clearglobal
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L205" target="_blank" rel="noopener">i18n.d.ts:205</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.clearGlobal(key: string): void">
 
 ```ts
-sandkit.api.i18n.clearGlobal(key: string): void
+clearGlobal(key: string): void
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L205)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` |  |
 
-##### key
+<div class="smt-member-anchors">
 
-`string`
+##### key <!-- {docsify-ignore} -->
 
-#### Returns
-
-`void`
+</div>
 
 #### Deprecated
 
-Use [removeGlobal](#removeglobal) instead.
+Use [removeGlobal](?id=removeglobal) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getGlobals() :id=getglobals
+<div class="smt-member-card">
+
+### sandkit.api.i18n.getGlobals :id=getglobals
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L212" target="_blank" rel="noopener">i18n.d.ts:212</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.getGlobals(): Record&lt;string, string&gt;">
 
 ```ts
-sandkit.api.i18n.getGlobals(): Record<string, string>
+getGlobals(): Record<string, string>
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L212)
+</div>
 
 Returns all global translation helper values.
-
-#### Returns
 
 `Record`\<`string`, `string`\>
 
@@ -683,30 +701,36 @@ Returns all global translation helper values.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### formatKeyForDisplay() :id=formatkeyfordisplay
+<div class="smt-member-card">
+
+### sandkit.api.i18n.formatKeyForDisplay :id=formatkeyfordisplay
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L221" target="_blank" rel="noopener">i18n.d.ts:221</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.i18n.formatKeyForDisplay(keyCode: string): string">
 
 ```ts
-sandkit.api.i18n.formatKeyForDisplay(keyCode: string): string
+formatKeyForDisplay(keyCode: string): string
 ```
 
-Defined in: [sandkit/api/i18n.d.ts:221](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L221)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| keyCode | `string` | Keyboard key code or binding name. |
+
+<div class="smt-member-anchors">
+
+##### keyCode <!-- {docsify-ignore} -->
+
+</div>
 
 Formats a key code for display in UI.
-
-#### Parameters
-
-##### keyCode
-
-`string`
-
-Keyboard key code or binding name.
-
-#### Returns
-
-`string`
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

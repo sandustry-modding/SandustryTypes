@@ -6,324 +6,488 @@ Built-in structure type ids used during placement.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### ConveyorLeft :id=conveyorleft
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.ConveyorLeft :id=conveyorleft
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L12" target="_blank" rel="noopener">building.d.ts:12</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.ConveyorLeft: 1">
 
 ```ts
-sandkit.api.building.StructureType.ConveyorLeft: 1
+ConveyorLeft: 1
 ```
 
-Defined in: [sandkit/api/building.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L12)
+</div>
 
 Left-facing conveyor belt.
 
-***
+</div>
 
-### ConveyorRight :id=conveyorright
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.ConveyorRight :id=conveyorright
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L14" target="_blank" rel="noopener">building.d.ts:14</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.ConveyorRight: 2">
 
 ```ts
-sandkit.api.building.StructureType.ConveyorRight: 2
+ConveyorRight: 2
 ```
 
-Defined in: [sandkit/api/building.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L14)
+</div>
 
 Right-facing conveyor belt.
 
-***
+</div>
 
-### ShakerLeft :id=shakerleft
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.ShakerLeft :id=shakerleft
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L16" target="_blank" rel="noopener">building.d.ts:16</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.ShakerLeft: 3">
 
 ```ts
-sandkit.api.building.StructureType.ShakerLeft: 3
+ShakerLeft: 3
 ```
 
-Defined in: [sandkit/api/building.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L16)
+</div>
 
 Left-facing shaker.
 
-***
+</div>
 
-### ShakerRight :id=shakerright
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.ShakerRight :id=shakerright
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L18" target="_blank" rel="noopener">building.d.ts:18</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.ShakerRight: 4">
 
 ```ts
-sandkit.api.building.StructureType.ShakerRight: 4
+ShakerRight: 4
 ```
 
-Defined in: [sandkit/api/building.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L18)
+</div>
 
 Right-facing shaker.
 
-***
+</div>
 
-### LauncherUp :id=launcherup
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.LauncherUp :id=launcherup
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L20" target="_blank" rel="noopener">building.d.ts:20</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.LauncherUp: 5">
 
 ```ts
-sandkit.api.building.StructureType.LauncherUp: 5
+LauncherUp: 5
 ```
 
-Defined in: [sandkit/api/building.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L20)
+</div>
 
 Up-facing launcher.
 
-***
+</div>
 
-### LauncherLeft :id=launcherleft
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.LauncherLeft :id=launcherleft
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L22" target="_blank" rel="noopener">building.d.ts:22</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.LauncherLeft: 6">
 
 ```ts
-sandkit.api.building.StructureType.LauncherLeft: 6
+LauncherLeft: 6
 ```
 
-Defined in: [sandkit/api/building.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L22)
+</div>
 
 Left-facing launcher.
 
-***
+</div>
 
-### LauncherRight :id=launcherright
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.LauncherRight :id=launcherright
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L24" target="_blank" rel="noopener">building.d.ts:24</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.LauncherRight: 7">
 
 ```ts
-sandkit.api.building.StructureType.LauncherRight: 7
+LauncherRight: 7
 ```
 
-Defined in: [sandkit/api/building.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L24)
+</div>
 
 Right-facing launcher.
 
-***
+</div>
 
-### SplitterLeft :id=splitterleft
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.SplitterLeft :id=splitterleft
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L26" target="_blank" rel="noopener">building.d.ts:26</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.SplitterLeft: 8">
 
 ```ts
-sandkit.api.building.StructureType.SplitterLeft: 8
+SplitterLeft: 8
 ```
 
-Defined in: [sandkit/api/building.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L26)
+</div>
 
 Left-facing splitter.
 
-***
+</div>
 
-### SplitterRight :id=splitterright
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.SplitterRight :id=splitterright
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L28" target="_blank" rel="noopener">building.d.ts:28</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.SplitterRight: 9">
 
 ```ts
-sandkit.api.building.StructureType.SplitterRight: 9
+SplitterRight: 9
 ```
 
-Defined in: [sandkit/api/building.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L28)
+</div>
 
 Right-facing splitter.
 
-***
+</div>
 
-### Dropper :id=dropper
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.Dropper :id=dropper
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L30" target="_blank" rel="noopener">building.d.ts:30</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.Dropper: 10">
 
 ```ts
-sandkit.api.building.StructureType.Dropper: 10
+Dropper: 10
 ```
 
-Defined in: [sandkit/api/building.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L30)
+</div>
 
 Dropper structure.
 
-***
+</div>
 
-### Foundation :id=foundation
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.Foundation :id=foundation
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L32" target="_blank" rel="noopener">building.d.ts:32</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.Foundation: 11">
 
 ```ts
-sandkit.api.building.StructureType.Foundation: 11
+Foundation: 11
 ```
 
-Defined in: [sandkit/api/building.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L32)
+</div>
 
 Foundation block.
 
-***
+</div>
 
-### FoundationAngledLeft :id=foundationangledleft
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.FoundationAngledLeft :id=foundationangledleft
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L34" target="_blank" rel="noopener">building.d.ts:34</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.FoundationAngledLeft: 12">
 
 ```ts
-sandkit.api.building.StructureType.FoundationAngledLeft: 12
+FoundationAngledLeft: 12
 ```
 
-Defined in: [sandkit/api/building.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L34)
+</div>
 
 Angled foundation facing left.
 
-***
+</div>
 
-### FoundationTriangleLeftDel :id=foundationtriangleleftdel
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.FoundationTriangleLeftDel :id=foundationtriangleleftdel
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L36" target="_blank" rel="noopener">building.d.ts:36</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.FoundationTriangleLeftDel: 13">
 
 ```ts
-sandkit.api.building.StructureType.FoundationTriangleLeftDel: 13
+FoundationTriangleLeftDel: 13
 ```
 
-Defined in: [sandkit/api/building.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L36)
+</div>
 
 Left triangle foundation (deprecated id).
 
-***
+</div>
 
-### FoundationAngledRight :id=foundationangledright
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.FoundationAngledRight :id=foundationangledright
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L38" target="_blank" rel="noopener">building.d.ts:38</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.FoundationAngledRight: 14">
 
 ```ts
-sandkit.api.building.StructureType.FoundationAngledRight: 14
+FoundationAngledRight: 14
 ```
 
-Defined in: [sandkit/api/building.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L38)
+</div>
 
 Angled foundation facing right.
 
-***
+</div>
 
-### FoundationTriangleRightDel :id=foundationtrianglerightdel
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.FoundationTriangleRightDel :id=foundationtrianglerightdel
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L40" target="_blank" rel="noopener">building.d.ts:40</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.FoundationTriangleRightDel: 15">
 
 ```ts
-sandkit.api.building.StructureType.FoundationTriangleRightDel: 15
+FoundationTriangleRightDel: 15
 ```
 
-Defined in: [sandkit/api/building.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L40)
+</div>
 
 Right triangle foundation (deprecated id).
 
-***
+</div>
 
-### Collector :id=collector
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.Collector :id=collector
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L42" target="_blank" rel="noopener">building.d.ts:42</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.Collector: 16">
 
 ```ts
-sandkit.api.building.StructureType.Collector: 16
+Collector: 16
 ```
 
-Defined in: [sandkit/api/building.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L42)
+</div>
 
 Collector structure.
 
-***
+</div>
 
-### FilterLeft :id=filterleft
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.FilterLeft :id=filterleft
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L44" target="_blank" rel="noopener">building.d.ts:44</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.FilterLeft: 17">
 
 ```ts
-sandkit.api.building.StructureType.FilterLeft: 17
+FilterLeft: 17
 ```
 
-Defined in: [sandkit/api/building.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L44)
+</div>
 
 Left-facing filter.
 
-***
+</div>
 
-### FilterRight :id=filterright
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.FilterRight :id=filterright
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L46" target="_blank" rel="noopener">building.d.ts:46</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.FilterRight: 18">
 
 ```ts
-sandkit.api.building.StructureType.FilterRight: 18
+FilterRight: 18
 ```
 
-Defined in: [sandkit/api/building.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L46)
+</div>
 
 Right-facing filter.
 
-***
+</div>
 
-### SlidingFoundation :id=slidingfoundation
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.SlidingFoundation :id=slidingfoundation
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L48" target="_blank" rel="noopener">building.d.ts:48</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.SlidingFoundation: 19">
 
 ```ts
-sandkit.api.building.StructureType.SlidingFoundation: 19
+SlidingFoundation: 19
 ```
 
-Defined in: [sandkit/api/building.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L48)
+</div>
 
 Sliding foundation block.
 
-***
+</div>
 
-### VelocitySoaker :id=velocitysoaker
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.VelocitySoaker :id=velocitysoaker
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L50" target="_blank" rel="noopener">building.d.ts:50</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.VelocitySoaker: 20">
 
 ```ts
-sandkit.api.building.StructureType.VelocitySoaker: 20
+VelocitySoaker: 20
 ```
 
-Defined in: [sandkit/api/building.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L50)
+</div>
 
 Velocity soaker structure.
 
-***
+</div>
 
-### Grower :id=grower
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.Grower :id=grower
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L52" target="_blank" rel="noopener">building.d.ts:52</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.Grower: 21">
 
 ```ts
-sandkit.api.building.StructureType.Grower: 21
+Grower: 21
 ```
 
-Defined in: [sandkit/api/building.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L52)
+</div>
 
 Grower structure.
 
-***
+</div>
 
-### SoundBox :id=soundbox
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.SoundBox :id=soundbox
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L54" target="_blank" rel="noopener">building.d.ts:54</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.SoundBox: 22">
 
 ```ts
-sandkit.api.building.StructureType.SoundBox: 22
+SoundBox: 22
 ```
 
-Defined in: [sandkit/api/building.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L54)
+</div>
 
 Sound box structure.
 
-***
+</div>
 
-### Pipe :id=pipe
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.Pipe :id=pipe
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L56" target="_blank" rel="noopener">building.d.ts:56</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.Pipe: 23">
 
 ```ts
-sandkit.api.building.StructureType.Pipe: 23
+Pipe: 23
 ```
 
-Defined in: [sandkit/api/building.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L56)
+</div>
 
 Pipe segment.
 
-***
+</div>
 
-### Pump :id=pump
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.Pump :id=pump
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L58" target="_blank" rel="noopener">building.d.ts:58</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.Pump: 24">
 
 ```ts
-sandkit.api.building.StructureType.Pump: 24
+Pump: 24
 ```
 
-Defined in: [sandkit/api/building.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L58)
+</div>
 
 Pump structure.
 
-***
+</div>
 
-### LiquidVent :id=liquidvent
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.LiquidVent :id=liquidvent
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L60" target="_blank" rel="noopener">building.d.ts:60</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.LiquidVent: 25">
 
 ```ts
-sandkit.api.building.StructureType.LiquidVent: 25
+LiquidVent: 25
 ```
 
-Defined in: [sandkit/api/building.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L60)
+</div>
 
 Liquid vent structure.
 
-***
+</div>
 
-### Light :id=light
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.Light :id=light
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L62" target="_blank" rel="noopener">building.d.ts:62</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.Light: 26">
 
 ```ts
-sandkit.api.building.StructureType.Light: 26
+Light: 26
 ```
 
-Defined in: [sandkit/api/building.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L62)
+</div>
 
 Light structure.
 
-***
+</div>
 
-### GloomEmitter :id=gloomemitter
+<div class="smt-member-card">
+
+### sandkit.api.building.StructureType.GloomEmitter :id=gloomemitter
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L64" target="_blank" rel="noopener">building.d.ts:64</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.StructureType.GloomEmitter: 27">
 
 ```ts
-sandkit.api.building.StructureType.GloomEmitter: 27
+GloomEmitter: 27
 ```
 
-Defined in: [sandkit/api/building.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L64)
+</div>
 
 Gloom emitter structure.
+
+</div>

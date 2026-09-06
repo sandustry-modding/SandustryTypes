@@ -10,259 +10,247 @@ Available as `sandkit.api.pickups`.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### WorldItemLight :id=worlditemlight
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.pickups.WorldItemLight</code></p>
-Defined in: [sandkit/api/pickups.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L22)
+### sandkit.api.pickups.WorldItemLight :id=worlditemlight
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L22" target="_blank" rel="noopener">pickups.d.ts:22</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| brightness? | number | Light brightness multiplier. Default 1. |
+| size? | number | Light radius in world pixels. Default 100. |
+| color? | [number, number, number] \| [number, number, number, number] | RGB or RGBA color components in 0–1 range. |
+
+<div class="smt-member-anchors">
+
+##### brightness? <!-- {docsify-ignore} -->
+
+##### size? <!-- {docsify-ignore} -->
+
+##### color? <!-- {docsify-ignore} -->
+
+</div>
 
 Optional point light attached when spawning a pickup.
 
-#### Properties
+</div>
 
-##### brightness?
+<div class="smt-member-card">
 
-```ts
-optional brightness?: number
-```
+### sandkit.api.pickups.WorldItem :id=worlditem
 
-Defined in: [sandkit/api/pickups.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L24)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L32" target="_blank" rel="noopener">pickups.d.ts:32</a></p>
 
-Light brightness multiplier. Default 1.
+| Property | Type | Description |
+| --- | --- | --- |
+| id | number |  |
+| x | number |  |
+| y | number |  |
+| type | PickupType |  |
+| data | Record<string, unknown> |  |
 
-##### size?
+<div class="smt-member-anchors">
 
-```ts
-optional size?: number
-```
+##### id <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/pickups.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L26)
+##### x <!-- {docsify-ignore} -->
 
-Light radius in world pixels. Default 100.
+##### y <!-- {docsify-ignore} -->
 
-##### color?
+##### type <!-- {docsify-ignore} -->
 
-```ts
-optional color?: [number, number, number] | [number, number, number, number]
-```
+##### data <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/pickups.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L28)
-
-RGB or RGBA color components in 0–1 range.
-
-***
-
-### WorldItem :id=worlditem
-
-<p class="smt-member-path"><code>sandkit.api.pickups.WorldItem</code></p>
-Defined in: [sandkit/api/pickups.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L32)
+</div>
 
 Active world pickup instance.
 
-#### Properties
-
-##### id
-
-```ts
-id: number
-```
-
-Defined in: [sandkit/api/pickups.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L33)
-
-##### x
-
-```ts
-x: number
-```
-
-Defined in: [sandkit/api/pickups.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L34)
-
-##### y
-
-```ts
-y: number
-```
-
-Defined in: [sandkit/api/pickups.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L35)
-
-##### type
-
-```ts
-type: PickupType
-```
-
-Defined in: [sandkit/api/pickups.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L36)
-
-##### data
-
-```ts
-data: Record<string, unknown>
-```
-
-Defined in: [sandkit/api/pickups.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L37)
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### PickupType :id=pickuptype
+<div class="smt-member-card">
+
+### sandkit.api.pickups.PickupType :id=pickuptype
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L12" target="_blank" rel="noopener">pickups.d.ts:12</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.pickups.PickupType = PickupType">
 
 ```ts
-sandkit.api.pickups.PickupType = PickupType
+PickupType = PickupType
 ```
 
-Defined in: [sandkit/api/pickups.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L12)
+</div>
 
 Official pickup type discriminator.
 
-***
+</div>
 
-### ~~WorldItemType~~ :id=worlditemtype
+<div class="smt-member-card">
+
+### ~~sandkit.api.pickups.WorldItemType~~ :id=worlditemtype
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L19" target="_blank" rel="noopener">pickups.d.ts:19</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.pickups.WorldItemType = PickupType">
 
 ```ts
-sandkit.api.pickups.WorldItemType = PickupType
+WorldItemType = PickupType
 ```
 
-Defined in: [sandkit/api/pickups.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L19)
+</div>
 
 #### Deprecated
 
-Use [PickupType](#pickuptype) instead.
+Use [PickupType](?id=pickuptype) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### spawnAtWorld() :id=spawnatworld
+<div class="smt-member-card">
+
+### sandkit.api.pickups.spawnAtWorld :id=spawnatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L52" target="_blank" rel="noopener">pickups.d.ts:52</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.pickups.spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record&lt;string, unknown&gt;, light?: WorldItemLight): WorldItem">
 
 ```ts
-sandkit.api.pickups.spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem
+spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem
 ```
 
-Defined in: [sandkit/api/pickups.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L52)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| type | [`PickupType`](api/sandkit.enums.PickupType.md) | Pickup type discriminator. |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
+| data? | `Record`\<`string`, `unknown`\> | Optional per-item data bag copied onto the instance. |
+| light? | [`WorldItemLight`](?id=worlditemlight) | Optional point light spawned with the pickup. |
+
+<div class="smt-member-anchors">
+
+##### type <!-- {docsify-ignore} -->
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+##### data? <!-- {docsify-ignore} -->
+
+##### light? <!-- {docsify-ignore} -->
+
+</div>
 
 Spawn a pickup at world position.
 
-#### Parameters
-
-##### type
-
-[`PickupType`](api/sandkit.enums.PickupType.md)
-
-Pickup type discriminator.
-
-##### worldX
-
-`number`
-
-World x position in pixels.
-
-##### worldY
-
-`number`
-
-World y position in pixels.
-
-##### data?
-
-`Record`\<`string`, `unknown`\>
-
-Optional per-item data bag copied onto the instance.
-
-##### light?
-
-[`WorldItemLight`](#worlditemlight)
-
-Optional point light spawned with the pickup.
-
-#### Returns
-
-[`WorldItem`](#worlditem)
-
-The spawned pickup instance.
+[`WorldItem`](?id=worlditem) The spawned pickup instance.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### remove() :id=remove
+<div class="smt-member-card">
+
+### sandkit.api.pickups.remove :id=remove
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L67" target="_blank" rel="noopener">pickups.d.ts:67</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.pickups.remove(pickup: WorldItem): void">
 
 ```ts
-sandkit.api.pickups.remove(pickup: WorldItem): void
+remove(pickup: WorldItem): void
 ```
 
-Defined in: [sandkit/api/pickups.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L67)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| pickup | [`WorldItem`](?id=worlditem) | Pickup returned from spawn or lookup helpers. |
+
+<div class="smt-member-anchors">
+
+##### pickup <!-- {docsify-ignore} -->
+
+</div>
 
 Remove a pickup instance from the world.
 
-#### Parameters
-
-##### pickup
-
-[`WorldItem`](#worlditem)
-
-Pickup returned from spawn or lookup helpers.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~destroy()~~ :id=destroy
+<div class="smt-member-card">
+
+### ~~sandkit.api.pickups.destroy~~ :id=destroy
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L74" target="_blank" rel="noopener">pickups.d.ts:74</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.pickups.destroy(pickup: WorldItem): void">
 
 ```ts
-sandkit.api.pickups.destroy(pickup: WorldItem): void
+destroy(pickup: WorldItem): void
 ```
 
-Defined in: [sandkit/api/pickups.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L74)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| pickup | [`WorldItem`](?id=worlditem) |  |
 
-##### pickup
+<div class="smt-member-anchors">
 
-[`WorldItem`](#worlditem)
+##### pickup <!-- {docsify-ignore} -->
 
-#### Returns
-
-`void`
+</div>
 
 #### Deprecated
 
-Use [remove](#remove) instead.
+Use [remove](?id=remove) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### pickUp() :id=pickup
+<div class="smt-member-card">
+
+### sandkit.api.pickups.pickUp :id=pickup
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L84" target="_blank" rel="noopener">pickups.d.ts:84</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.pickups.pickUp(pickup: WorldItem): boolean">
 
 ```ts
-sandkit.api.pickups.pickUp(pickup: WorldItem): boolean
+pickUp(pickup: WorldItem): boolean
 ```
 
-Defined in: [sandkit/api/pickups.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L84)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| pickup | [`WorldItem`](?id=worlditem) | Pickup to collect. |
+
+<div class="smt-member-anchors">
+
+##### pickup <!-- {docsify-ignore} -->
+
+</div>
 
 Pick up a world item into inventory.
-
-#### Parameters
-
-##### pickup
-
-[`WorldItem`](#worlditem)
-
-Pickup to collect.
-
-#### Returns
-
-`boolean`
 
 True when the item was collected.
 
@@ -270,50 +258,62 @@ True when the item was collected.
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getAll() :id=getall
+<div class="smt-member-card">
+
+### sandkit.api.pickups.getAll :id=getall
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L91" target="_blank" rel="noopener">pickups.d.ts:91</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.pickups.getAll(): WorldItem[]">
 
 ```ts
-sandkit.api.pickups.getAll(): WorldItem[]
+getAll(): WorldItem[]
 ```
 
-Defined in: [sandkit/api/pickups.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L91)
+</div>
 
 Return all active pickups.
 
-#### Returns
-
-[`WorldItem`](#worlditem)[]
+[`WorldItem`](?id=worlditem)[]
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getById() :id=getbyid
+<div class="smt-member-card">
+
+### sandkit.api.pickups.getById :id=getbyid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L100" target="_blank" rel="noopener">pickups.d.ts:100</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.pickups.getById(pickupId: number): WorldItem | undefined">
 
 ```ts
-sandkit.api.pickups.getById(pickupId: number): WorldItem | undefined
+getById(pickupId: number): WorldItem | undefined
 ```
 
-Defined in: [sandkit/api/pickups.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L100)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| pickupId | `number` | Runtime pickup id. |
+
+<div class="smt-member-anchors">
+
+##### pickupId <!-- {docsify-ignore} -->
+
+</div>
 
 Return a pickup by numeric id.
 
-#### Parameters
-
-##### pickupId
-
-`number`
-
-Runtime pickup id.
-
-#### Returns
-
-[`WorldItem`](#worlditem) \| `undefined`
+[`WorldItem`](?id=worlditem) \| `undefined`
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

@@ -4,270 +4,316 @@
 
 `sandkit.engine.api.entities` — entity type registration, spawn, and queries.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### createLight() :id=createlight
+<div class="smt-member-card">
+
+### sandkit.engine.api.entities.createLight :id=createlight
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L15" target="_blank" rel="noopener">entities.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.createLight(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.createLight(...args: unknown[]): unknown
+createLight(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Create a light entity attached to a parent.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.entities.getAll :id=getall
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L20" target="_blank" rel="noopener">entities.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getAll() :id=getall
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.getAll(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.getAll(...args: unknown[]): unknown
+getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return all live entities.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.entities.getAllByType :id=getallbytype
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L25" target="_blank" rel="noopener">entities.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getAllByType() :id=getallbytype
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.getAllByType(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.getAllByType(...args: unknown[]): unknown
+getAllByType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return all entities of one type.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.entities.getAllTypeDefs :id=getalltypedefs
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L30" target="_blank" rel="noopener">entities.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getAllTypeDefs() :id=getalltypedefs
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.getAllTypeDefs(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.getAllTypeDefs(...args: unknown[]): unknown
+getAllTypeDefs(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return all registered entity type definitions.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.entities.getSprite :id=getsprite
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L35" target="_blank" rel="noopener">entities.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getSprite() :id=getsprite
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.getSprite(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.getSprite(...args: unknown[]): unknown
+getSprite(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the sprite for an entity.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.entities.getTypeDef :id=gettypedef
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L40" target="_blank" rel="noopener">entities.d.ts:40</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getTypeDef() :id=gettypedef
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.getTypeDef(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.getTypeDef(...args: unknown[]): unknown
+getTypeDef(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L40)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return one entity type definition by id.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.entities.launch :id=launch
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L45" target="_blank" rel="noopener">entities.d.ts:45</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### launch() :id=launch
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.launch(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.launch(...args: unknown[]): unknown
+launch(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L45)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Launch an entity with velocity or trajectory.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.entities.registerSpawner :id=registerspawner
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L50" target="_blank" rel="noopener">entities.d.ts:50</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### registerSpawner() :id=registerspawner
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.registerSpawner(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.registerSpawner(...args: unknown[]): unknown
+registerSpawner(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L50)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Register an entity spawner behavior.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.entities.registerType :id=registertype
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L55" target="_blank" rel="noopener">entities.d.ts:55</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### registerType() :id=registertype
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.registerType(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.registerType(...args: unknown[]): unknown
+registerType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L55)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Register a custom entity type.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.entities.spawn :id=spawn
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L60" target="_blank" rel="noopener">entities.d.ts:60</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### spawn() :id=spawn
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.spawn(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.spawn(...args: unknown[]): unknown
+spawn(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L60)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Spawn an entity instance.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.entities.startCapture :id=startcapture
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L65" target="_blank" rel="noopener">entities.d.ts:65</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### startCapture() :id=startcapture
+<div class="smt-member-sig" data-sig="sandkit.engine.api.entities.startCapture(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.entities.startCapture(...args: unknown[]): unknown
+startCapture(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/entities.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L65)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Start capturing entities for a tool or effect.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

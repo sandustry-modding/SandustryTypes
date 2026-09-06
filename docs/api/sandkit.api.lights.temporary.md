@@ -4,39 +4,39 @@ Short-lived visual effect lights.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### createAtWorld() :id=createatworld
+<div class="smt-member-card">
+
+### sandkit.api.lights.temporary.createAtWorld :id=createatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L43" target="_blank" rel="noopener">lights.d.ts:43</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.lights.temporary.createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle">
 
 ```ts
-sandkit.api.lights.temporary.createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
+createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
-Defined in: [sandkit/api/lights.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L43)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` | World X coordinate in pixels. |
+| worldY | `number` | World Y coordinate in pixels. |
+| options? | [`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions) | Brightness, duration, color, and dedup options. |
+
+<div class="smt-member-anchors">
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Create a temporary light at world coordinates.
 
-#### Parameters
-
-##### worldX
-
-`number`
-
-World X coordinate in pixels.
-
-##### worldY
-
-`number`
-
-World Y coordinate in pixels.
-
-##### options?
-
-[`TemporaryLightOptions`](api/sandkit.api.effects.md#temporarylightoptions)
-
-Brightness, duration, color, and dedup options.
-
-#### Returns
-
-[`TemporaryLightHandle`](api/sandkit.api.lights.md#temporarylighthandle)
+[`TemporaryLightHandle`](api/sandkit.api.lights.md?id=temporarylighthandle)
 
 #### Examples
 
@@ -71,29 +71,33 @@ api.lights.temporary.createAtWorld(worldX, worldY, {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### removeById() :id=removebyid
+<div class="smt-member-card">
+
+### sandkit.api.lights.temporary.removeById :id=removebyid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L63" target="_blank" rel="noopener">lights.d.ts:63</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.lights.temporary.removeById(lightId: number): void">
 
 ```ts
-sandkit.api.lights.temporary.removeById(lightId: number): void
+removeById(lightId: number): void
 ```
 
-Defined in: [sandkit/api/lights.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L63)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| lightId | `number` | Light id returned from [createAtWorld](?id=createatworld). |
+
+<div class="smt-member-anchors">
+
+##### lightId <!-- {docsify-ignore} -->
+
+</div>
 
 Remove a temporary light by its id.
-
-#### Parameters
-
-##### lightId
-
-`number`
-
-Light id returned from [createAtWorld](#createatworld).
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -106,3 +110,5 @@ if (light.lightId !== null) {
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

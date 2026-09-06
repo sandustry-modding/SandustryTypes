@@ -6,30 +6,50 @@ Weapon reload behaviour.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Clip :id=clip
+<div class="smt-member-card">
+
+### sandkit.enums.ReloadType.Clip :id=clip
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L244" target="_blank" rel="noopener">index.d.ts:244</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ReloadType.Clip: 1">
 
 ```ts
-sandkit.enums.ReloadType.Clip: 1
+Clip: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:244](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L244)
+</div>
 
-***
+</div>
 
-### Single :id=single
+<div class="smt-member-card">
+
+### sandkit.enums.ReloadType.Single :id=single
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L245" target="_blank" rel="noopener">index.d.ts:245</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ReloadType.Single: 2">
 
 ```ts
-sandkit.enums.ReloadType.Single: 2
+Single: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:245](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L245)
+</div>
 
-***
+</div>
 
-### OverTime :id=overtime
+<div class="smt-member-card">
+
+### sandkit.enums.ReloadType.OverTime :id=overtime
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L246" target="_blank" rel="noopener">index.d.ts:246</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ReloadType.OverTime: 3">
 
 ```ts
-sandkit.enums.ReloadType.OverTime: 3
+OverTime: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L246)
+</div>
+
+</div>

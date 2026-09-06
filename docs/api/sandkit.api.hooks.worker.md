@@ -4,28 +4,27 @@
 
 Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook points.
 
- Worker-only surface; do not use main-thread [sandkit.api.hooks](api/sandkit.md#hooks).
+ Worker-only surface; do not use main-thread [sandkit.api.hooks](api/sandkit.md?id=hooks).
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### HookContext :id=hookcontext
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.hooks.HookContext (worker)</code></p>
-Defined in: [worker/api/hooks.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L112)
+### sandkit.api.hooks.HookContext :id=hookcontext
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L112" target="_blank" rel="noopener">hooks.d.ts:112</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| cancelled | boolean | True after [cancel](?id=cancel) was called on this context. |
+
+<div class="smt-member-anchors">
+
+##### cancelled <!-- {docsify-ignore} -->
+
+</div>
 
 Context passed to intercept hook callbacks.
-
-#### Properties
-
-##### cancelled
-
-```ts
-cancelled: boolean
-```
-
-Defined in: [worker/api/hooks.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L116)
-
-True after [cancel](#cancel) was called on this context.
 
 #### Methods
 
@@ -43,250 +42,230 @@ When called, the intercepted action is skipped.
 
 `void`
 
-***
+</div>
 
-### HookGuard :id=hookguard
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.hooks.HookGuard (worker)</code></p>
-Defined in: [worker/api/hooks.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L120)
+### sandkit.api.hooks.HookGuard :id=hookguard
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L120" target="_blank" rel="noopener">hooks.d.ts:120</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| elementType? | ElementType | Required for element-scoped intercept hooks and optional on emit. |
+| terrainType? | number | Required for terrain-scoped event guards; optional on emit. |
+
+<div class="smt-member-anchors">
+
+##### elementType? <!-- {docsify-ignore} -->
+
+##### terrainType? <!-- {docsify-ignore} -->
+
+</div>
 
 Guard filter for worker hook registration.
 
-#### Properties
+</div>
 
-##### elementType?
+<div class="smt-member-card">
 
-```ts
-optional elementType?: ElementType
-```
+### sandkit.api.hooks.ModifyHookOptions :id=modifyhookoptions
 
-Defined in: [worker/api/hooks.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L122)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L136" target="_blank" rel="noopener">hooks.d.ts:136</a></p>
 
-Required for element-scoped intercept hooks and optional on emit.
+| Property | Type | Description |
+| --- | --- | --- |
+| guard? | HookGuard |  |
+| priority? | number |  |
 
-##### terrainType?
+<div class="smt-member-anchors">
 
-```ts
-optional terrainType?: number
-```
+##### guard? <!-- {docsify-ignore} -->
 
-Defined in: [worker/api/hooks.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L124)
+##### priority? <!-- {docsify-ignore} -->
 
-Required for terrain-scoped event guards; optional on emit.
+</div>
 
-***
+Options for [modify](?id=modify).
 
-### ModifyHookOptions :id=modifyhookoptions
+</div>
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookOptions (worker)</code></p>
-Defined in: [worker/api/hooks.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L136)
+<div class="smt-member-card">
 
-Options for [modify](#modify).
+### sandkit.api.hooks.InterceptHookMap :id=intercepthookmap
 
-#### Properties
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L166" target="_blank" rel="noopener">hooks.d.ts:166</a></p>
 
-##### guard?
+| Property | Type | Description |
+| --- | --- | --- |
+| cell:process | process: Record<string, unknown> |  |
+| element:update | update: Record<string, unknown> |  |
+| element:move | move: Record<string, unknown> |  |
+| element:move:blocked | move:blocked: Record<string, unknown> |  |
+| ~~element:blocked~~ | blocked: Record<string, unknown> |  |
+| element:duration:expire | duration:expire: Record<string, unknown> |  |
+| ~~element:duration~~ | duration: Record<string, unknown> |  |
+| fire:element:burn | element:burn: Record<string, unknown> |  |
+| fire:terrain:burn | terrain:burn: Record<string, unknown> |  |
+| shaker:elementOn | elementOn: Record<string, unknown> |  |
 
-```ts
-optional guard?: HookGuard
-```
+<div class="smt-member-anchors">
 
-Defined in: [worker/api/hooks.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L137)
+##### cell:process <!-- {docsify-ignore} -->
 
-##### priority?
+##### element:update <!-- {docsify-ignore} -->
 
-```ts
-optional priority?: number
-```
+##### element:move <!-- {docsify-ignore} -->
 
-Defined in: [worker/api/hooks.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L138)
+##### element:move:blocked <!-- {docsify-ignore} -->
 
-***
+##### ~~element:blocked~~ <!-- {docsify-ignore} -->
 
-### InterceptHookMap :id=intercepthookmap
+##### element:duration:expire <!-- {docsify-ignore} -->
 
-<p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookMap (worker)</code></p>
-Defined in: [worker/api/hooks.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L166)
+##### ~~element:duration~~ <!-- {docsify-ignore} -->
+
+##### fire:element:burn <!-- {docsify-ignore} -->
+
+##### fire:terrain:burn <!-- {docsify-ignore} -->
+
+##### shaker:elementOn <!-- {docsify-ignore} -->
+
+</div>
 
 Intercept hook argument shapes keyed by hook id.
 
-#### Properties
-
-##### cell:process
-
-```ts
-cell:process: Record<string, unknown>
-```
-
-Defined in: [worker/api/hooks.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L167)
-
-##### element:update
-
-```ts
-element:update: Record<string, unknown>
-```
-
-Defined in: [worker/api/hooks.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L168)
-
-##### element:move
-
-```ts
-element:move: Record<string, unknown>
-```
-
-Defined in: [worker/api/hooks.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L169)
-
-##### element:move:blocked
-
-```ts
-element:move:blocked: Record<string, unknown>
-```
-
-Defined in: [worker/api/hooks.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L170)
-
-##### ~~element:blocked~~
-
-```ts
-element:blocked: Record<string, unknown>
-```
-
-Defined in: [worker/api/hooks.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L172)
-
-###### Deprecated
-
-Use `"element:move:blocked"` instead.
-
-##### element:duration:expire
-
-```ts
-element:duration:expire: Record<string, unknown>
-```
-
-Defined in: [worker/api/hooks.d.ts:173](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L173)
-
-##### ~~element:duration~~
-
-```ts
-element:duration: Record<string, unknown>
-```
-
-Defined in: [worker/api/hooks.d.ts:175](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L175)
-
-###### Deprecated
-
-Use `"element:duration:expire"` instead.
-
-##### fire:element:burn
-
-```ts
-fire:element:burn: Record<string, unknown>
-```
-
-Defined in: [worker/api/hooks.d.ts:176](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L176)
-
-##### fire:terrain:burn
-
-```ts
-fire:terrain:burn: Record<string, unknown>
-```
-
-Defined in: [worker/api/hooks.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L177)
-
-##### shaker:elementOn
-
-```ts
-shaker:elementOn: Record<string, unknown>
-```
-
-Defined in: [worker/api/hooks.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L178)
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### InterceptHookOptions :id=intercepthookoptions
+<div class="smt-member-card">
+
+### sandkit.api.hooks.InterceptHookOptions :id=intercepthookoptions
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L128" target="_blank" rel="noopener">hooks.d.ts:128</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.hooks.InterceptHookOptions&lt;K *extends* InterceptHookId&gt; = K *extends* ElementGuardedInterceptHookId ? object : K *extends* TerrainGuardedInterceptHookId ? object : object">
 
 ```ts
 sandkit.api.hooks.InterceptHookOptions<K *extends* InterceptHookId> = K *extends* ElementGuardedInterceptHookId ? object : K *extends* TerrainGuardedInterceptHookId ? object : object
 ```
 
-Defined in: [worker/api/hooks.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L128)
+</div>
 
-Options for [intercept](#intercept).
+Options for [intercept](?id=intercept).
 
 #### Type Parameters
 
 ##### K
 
-`K` *extends* [`InterceptHookId`](#intercepthookid)
+`K` *extends* [`InterceptHookId`](?id=intercepthookid)
 
-***
+</div>
 
-### ElementGuardedInterceptHookId :id=elementguardedintercepthookid
+<div class="smt-member-card">
+
+### sandkit.api.hooks.ElementGuardedInterceptHookId :id=elementguardedintercepthookid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L142" target="_blank" rel="noopener">hooks.d.ts:142</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.hooks.ElementGuardedInterceptHookId = &quot;cell:process&quot; | &quot;element:update&quot; | &quot;element:move:blocked&quot; | &quot;element:blocked&quot; | &quot;element:duration:expire&quot; | &quot;element:duration&quot;">
 
 ```ts
-sandkit.api.hooks.ElementGuardedInterceptHookId = "cell:process" | "element:update" | "element:move:blocked" | "element:blocked" | "element:duration:expire" | "element:duration"
+ElementGuardedInterceptHookId = "cell:process" | "element:update" | "element:move:blocked" | "element:blocked" | "element:duration:expire" | "element:duration"
 ```
 
-Defined in: [worker/api/hooks.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L142)
+</div>
 
 Intercept hook ids with a required element guard.
 
-***
+</div>
 
-### TerrainGuardedInterceptHookId :id=terrainguardedintercepthookid
+<div class="smt-member-card">
+
+### sandkit.api.hooks.TerrainGuardedInterceptHookId :id=terrainguardedintercepthookid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L151" target="_blank" rel="noopener">hooks.d.ts:151</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.hooks.TerrainGuardedInterceptHookId = &quot;fire:terrain:burn&quot;">
 
 ```ts
-sandkit.api.hooks.TerrainGuardedInterceptHookId = "fire:terrain:burn"
+TerrainGuardedInterceptHookId = "fire:terrain:burn"
 ```
 
-Defined in: [worker/api/hooks.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L151)
+</div>
 
 Intercept hook ids with a required terrain guard.
 
-***
+</div>
 
-### InterceptHookId :id=intercepthookid
+<div class="smt-member-card">
+
+### sandkit.api.hooks.InterceptHookId :id=intercepthookid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L154" target="_blank" rel="noopener">hooks.d.ts:154</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.hooks.InterceptHookId = LooseString&lt;ElementGuardedInterceptHookId | TerrainGuardedInterceptHookId | &quot;element:move&quot; | &quot;fire:element:burn&quot; | &quot;shaker:elementOn&quot;&gt;">
 
 ```ts
-sandkit.api.hooks.InterceptHookId = LooseString<ElementGuardedInterceptHookId | TerrainGuardedInterceptHookId | "element:move" | "fire:element:burn" | "shaker:elementOn">
+InterceptHookId = LooseString<ElementGuardedInterceptHookId | TerrainGuardedInterceptHookId | "element:move" | "fire:element:burn" | "shaker:elementOn">
 ```
 
-Defined in: [worker/api/hooks.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L154)
+</div>
 
 Known worker intercept hook ids plus custom strings.
 
-***
+</div>
 
-### ModifyHookId :id=modifyhookid
+<div class="smt-member-card">
+
+### sandkit.api.hooks.ModifyHookId :id=modifyhookid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L163" target="_blank" rel="noopener">hooks.d.ts:163</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.hooks.ModifyHookId = LooseString&lt;string&gt;">
 
 ```ts
-sandkit.api.hooks.ModifyHookId = LooseString<string>
+ModifyHookId = LooseString<string>
 ```
 
-Defined in: [worker/api/hooks.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L163)
+</div>
 
 Known worker modify hook ids plus custom strings.
 
-***
+</div>
 
-### ModifyHookMap :id=modifyhookmap
+<div class="smt-member-card">
+
+### sandkit.api.hooks.ModifyHookMap :id=modifyhookmap
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L182" target="_blank" rel="noopener">hooks.d.ts:182</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.hooks.ModifyHookMap = Record&lt;string, unknown&gt;">
 
 ```ts
-sandkit.api.hooks.ModifyHookMap = Record<string, unknown>
+ModifyHookMap = Record<string, unknown>
 ```
 
-Defined in: [worker/api/hooks.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L182)
+</div>
 
 Modify hook argument shapes keyed by hook id. Unlisted ids use `unknown`.
 
-***
+</div>
 
-### InterceptHookArgs :id=intercepthookargs
+<div class="smt-member-card">
+
+### sandkit.api.hooks.InterceptHookArgs :id=intercepthookargs
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L185" target="_blank" rel="noopener">hooks.d.ts:185</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.hooks.InterceptHookArgs&lt;K *extends* InterceptHookId&gt; = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown">
 
 ```ts
 sandkit.api.hooks.InterceptHookArgs<K *extends* InterceptHookId> = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown
 ```
 
-Defined in: [worker/api/hooks.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L185)
+</div>
 
 Intercept hook args for a given hook id.
 
@@ -294,17 +273,23 @@ Intercept hook args for a given hook id.
 
 ##### K
 
-`K` *extends* [`InterceptHookId`](#intercepthookid)
+`K` *extends* [`InterceptHookId`](?id=intercepthookid)
 
-***
+</div>
 
-### ModifyHookArgs :id=modifyhookargs
+<div class="smt-member-card">
+
+### sandkit.api.hooks.ModifyHookArgs :id=modifyhookargs
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L190" target="_blank" rel="noopener">hooks.d.ts:190</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.hooks.ModifyHookArgs&lt;K *extends* ModifyHookId&gt; = K *extends* keyof ModifyHookMap ? ModifyHookMap[K] : unknown">
 
 ```ts
 sandkit.api.hooks.ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof ModifyHookMap ? ModifyHookMap[K] : unknown
 ```
 
-Defined in: [worker/api/hooks.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L190)
+</div>
 
 Modify hook args for a given hook id.
 
@@ -312,17 +297,41 @@ Modify hook args for a given hook id.
 
 ##### K
 
-`K` *extends* [`ModifyHookId`](#modifyhookid)
+`K` *extends* [`ModifyHookId`](?id=modifyhookid)
+
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### intercept() :id=intercept
+<div class="smt-member-card">
+
+### sandkit.api.hooks.intercept :id=intercept
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L83" target="_blank" rel="noopener">hooks.d.ts:83</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.hooks.intercept&lt;K *extends* InterceptHookId&gt;(hookId: K, callback: (args: InterceptHookArgs&lt;K&gt;, context: HookContext) =&gt; void, options?: InterceptHookOptions&lt;K&gt;): () =&gt; void">
 
 ```ts
 sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (args: InterceptHookArgs<K>, context: HookContext) => void, options?: InterceptHookOptions<K>): () => void
 ```
 
-Defined in: [worker/api/hooks.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L83)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| hookId | `K` | Registered hook identifier. |
+| callback | (`args`: [`InterceptHookArgs`](?id=intercepthookargs)\<`K`\>, `context`: [`HookContext`](?id=hookcontext)) => `void` | Called with hook arguments and context; may cancel the hook. |
+| options? | [`InterceptHookOptions`](?id=intercepthookoptions)\<`K`\> | Optional guard and priority. |
+
+<div class="smt-member-anchors">
+
+##### hookId <!-- {docsify-ignore} -->
+
+##### callback <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Register an intercept hook on this worker. Returns an unsubscribe function.
 
@@ -330,29 +339,7 @@ Register an intercept hook on this worker. Returns an unsubscribe function.
 
 ##### K
 
-`K` *extends* [`InterceptHookId`](#intercepthookid)
-
-#### Parameters
-
-##### hookId
-
-`K`
-
-Registered hook identifier.
-
-##### callback
-
-(`args`: [`InterceptHookArgs`](#intercepthookargs)\<`K`\>, `context`: [`HookContext`](#hookcontext)) => `void`
-
-Called with hook arguments and context; may cancel the hook.
-
-##### options?
-
-[`InterceptHookOptions`](#intercepthookoptions)\<`K`\>
-
-Optional guard and priority.
-
-#### Returns
+`K` *extends* [`InterceptHookId`](?id=intercepthookid)
 
 () => `void`
 
@@ -434,15 +421,37 @@ api.hooks.intercept("shaker:elementOn", (args, context) => {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### modify() :id=modify
+<div class="smt-member-card">
+
+### sandkit.api.hooks.modify :id=modify
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L105" target="_blank" rel="noopener">hooks.d.ts:105</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.hooks.modify&lt;K *extends* ModifyHookId&gt;(hookId: K, callback: (args: ModifyHookArgs&lt;K&gt;) =&gt; void, options?: ModifyHookOptions): () =&gt; void">
 
 ```ts
 sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: ModifyHookArgs<K>) => void, options?: ModifyHookOptions): () => void
 ```
 
-Defined in: [worker/api/hooks.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L105)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| hookId | `K` | Registered hook identifier. |
+| callback | (`args`: [`ModifyHookArgs`](?id=modifyhookargs)\<`K`\>) => `void` | Called with hook arguments; may mutate hook payload. |
+| options? | [`ModifyHookOptions`](?id=modifyhookoptions) | Optional guard and priority. |
+
+<div class="smt-member-anchors">
+
+##### hookId <!-- {docsify-ignore} -->
+
+##### callback <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Register a modifier hook on this worker. Returns an unsubscribe function.
 
@@ -450,29 +459,7 @@ Register a modifier hook on this worker. Returns an unsubscribe function.
 
 ##### K
 
-`K` *extends* [`ModifyHookId`](#modifyhookid)
-
-#### Parameters
-
-##### hookId
-
-`K`
-
-Registered hook identifier.
-
-##### callback
-
-(`args`: [`ModifyHookArgs`](#modifyhookargs)\<`K`\>) => `void`
-
-Called with hook arguments; may mutate hook payload.
-
-##### options?
-
-[`ModifyHookOptions`](#modifyhookoptions)
-
-Optional guard and priority.
-
-#### Returns
+`K` *extends* [`ModifyHookId`](?id=modifyhookid)
 
 () => `void`
 
@@ -489,3 +476,5 @@ api.hooks.modify("example:prepare", (args) => {
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

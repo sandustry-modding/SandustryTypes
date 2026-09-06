@@ -5,40 +5,52 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### get() :id=get
+<div class="smt-member-card">
+
+### sandkit.api.gameConfig.get :id=get
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L12" target="_blank" rel="noopener">gameconfig.d.ts:12</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.gameConfig.get(key: string): JsonValueV1 | undefined">
 
 ```ts
-sandkit.api.gameConfig.get(key: string): JsonValueV1 | undefined
+get(key: string): JsonValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/gameconfig.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L12)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| key | `string` | Game config key (merged defaults and overrides). |
+
+<div class="smt-member-anchors">
+
+##### key <!-- {docsify-ignore} -->
+
+</div>
 
 Returns a config value by key, or undefined when missing.
 
-#### Parameters
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
 
-##### key
+</div>
 
-`string`
+<div class="smt-member-card">
 
-Game config key (merged defaults and overrides).
+### sandkit.api.gameConfig.getAll :id=getall
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L14" target="_blank" rel="noopener">gameconfig.d.ts:14</a></p>
 
-[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1) \| `undefined`
-
-***
-
-### getAll() :id=getall
+<div class="smt-member-sig" data-sig="sandkit.api.gameConfig.getAll(): JsonObjectV1">
 
 ```ts
-sandkit.api.gameConfig.getAll(): JsonObjectV1
+getAll(): JsonObjectV1
 ```
 
-Defined in: [sandkit/api/gameconfig.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L14)
+</div>
 
 Returns the full config object.
 
-#### Returns
+[`JsonObjectV1`](api/shared.jsonvalue.md?id=jsonobjectv1)
 
-[`JsonObjectV1`](api/shared.jsonvalue.md#jsonobjectv1)
+</div>

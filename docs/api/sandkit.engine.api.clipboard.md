@@ -4,174 +4,204 @@
 
 `sandkit.engine.api.clipboard` — build clipboard copy, paste, and history.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### activate() :id=activate
+<div class="smt-member-card">
+
+### sandkit.engine.api.clipboard.activate :id=activate
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L15" target="_blank" rel="noopener">clipboard.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.clipboard.activate(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.clipboard.activate(...args: unknown[]): unknown
+activate(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Activate the clipboard tool or mode.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.clipboard.clear :id=clear
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L20" target="_blank" rel="noopener">clipboard.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### clear() :id=clear
+<div class="smt-member-sig" data-sig="sandkit.engine.api.clipboard.clear(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.clipboard.clear(...args: unknown[]): unknown
+clear(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Clear the current clipboard contents.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.clipboard.get :id=get
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L25" target="_blank" rel="noopener">clipboard.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### get() :id=get
+<div class="smt-member-sig" data-sig="sandkit.engine.api.clipboard.get(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.clipboard.get(...args: unknown[]): unknown
+get(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the current clipboard payload.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.clipboard.getHistory :id=gethistory
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L30" target="_blank" rel="noopener">clipboard.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getHistory() :id=gethistory
+<div class="smt-member-sig" data-sig="sandkit.engine.api.clipboard.getHistory(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.clipboard.getHistory(...args: unknown[]): unknown
+getHistory(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return clipboard history entries.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.clipboard.getSignalLinks :id=getsignallinks
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L35" target="_blank" rel="noopener">clipboard.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getSignalLinks() :id=getsignallinks
+<div class="smt-member-sig" data-sig="sandkit.engine.api.clipboard.getSignalLinks(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.clipboard.getSignalLinks(...args: unknown[]): unknown
+getSignalLinks(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return signal links stored on the clipboard.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.clipboard.selectFromHistory :id=selectfromhistory
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L40" target="_blank" rel="noopener">clipboard.d.ts:40</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### selectFromHistory() :id=selectfromhistory
+<div class="smt-member-sig" data-sig="sandkit.engine.api.clipboard.selectFromHistory(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.clipboard.selectFromHistory(...args: unknown[]): unknown
+selectFromHistory(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L40)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Restore a clipboard entry from history.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.clipboard.set :id=set
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L45" target="_blank" rel="noopener">clipboard.d.ts:45</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### set() :id=set
+<div class="smt-member-sig" data-sig="sandkit.engine.api.clipboard.set(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.clipboard.set(...args: unknown[]): unknown
+set(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/clipboard.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L45)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Set the clipboard payload.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

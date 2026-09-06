@@ -6,40 +6,66 @@ Item ability categories (dig, shoot, spray, laser).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Dig :id=dig
+<div class="smt-member-card">
+
+### sandkit.enums.AbilityType.Dig :id=dig
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L10" target="_blank" rel="noopener">index.d.ts:10</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.AbilityType.Dig: 1">
 
 ```ts
-sandkit.enums.AbilityType.Dig: 1
+Dig: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L10)
+</div>
 
-***
+</div>
 
-### Shoot :id=shoot
+<div class="smt-member-card">
+
+### sandkit.enums.AbilityType.Shoot :id=shoot
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L11" target="_blank" rel="noopener">index.d.ts:11</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.AbilityType.Shoot: 2">
 
 ```ts
-sandkit.enums.AbilityType.Shoot: 2
+Shoot: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L11)
+</div>
 
-***
+</div>
 
-### Spray :id=spray
+<div class="smt-member-card">
+
+### sandkit.enums.AbilityType.Spray :id=spray
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L12" target="_blank" rel="noopener">index.d.ts:12</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.AbilityType.Spray: 3">
 
 ```ts
-sandkit.enums.AbilityType.Spray: 3
+Spray: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L12)
+</div>
 
-***
+</div>
 
-### Laser :id=laser
+<div class="smt-member-card">
+
+### sandkit.enums.AbilityType.Laser :id=laser
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L13" target="_blank" rel="noopener">index.d.ts:13</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.AbilityType.Laser: 4">
 
 ```ts
-sandkit.enums.AbilityType.Laser: 4
+Laser: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L13)
+</div>
+
+</div>

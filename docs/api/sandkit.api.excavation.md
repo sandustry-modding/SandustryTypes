@@ -9,210 +9,132 @@ Main thread only.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### ExcavationProfileDefinitionV1 :id=excavationprofiledefinitionv1
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.excavation.ExcavationProfileDefinitionV1</code></p>
-Defined in: [sandkit/api/excavation.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L50)
+### sandkit.api.excavation.ExcavationProfileDefinitionV1 :id=excavationprofiledefinitionv1
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L50" target="_blank" rel="noopener">excavation.d.ts:50</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| pattern? | number[][] | Dig pattern grid; non-zero cells are removed. |
+| power | number | Dig strength applied to matched cells. Clamped to 0–1000. |
+| options? | ExcavationProfileOptions | Optional profile-specific excavation flags. |
+| terrainRules? | readonly ExcavationTerrainRule[] | Per-terrain output and damage rules. |
+
+<div class="smt-member-anchors">
+
+##### pattern? <!-- {docsify-ignore} -->
+
+##### power <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+##### terrainRules? <!-- {docsify-ignore} -->
+
+</div>
 
 Excavation tool profile definition.
 
-#### Properties
+</div>
 
-##### pattern?
+<div class="smt-member-card">
 
-```ts
-optional pattern?: number[][]
-```
+### sandkit.api.excavation.ExcavationProfileOptions :id=excavationprofileoptions
 
-Defined in: [sandkit/api/excavation.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L52)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L62" target="_blank" rel="noopener">excavation.d.ts:62</a></p>
 
-Dig pattern grid; non-zero cells are removed.
+| Property | Type | Description |
+| --- | --- | --- |
+| fromGun? | boolean |  |
+| fromRocketExplosion? | boolean |  |
+| fromDrill? | boolean |  |
+| useLiteralOutVelocity? | boolean |  |
+| destroyNonDestructible? | boolean |  |
+| forceRemoveAll? | boolean |  |
+| drillTierDamage? | number | Clamped to 0–1000 when set. |
 
-##### power
+<div class="smt-member-anchors">
 
-```ts
-power: number
-```
+##### fromGun? <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/excavation.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L54)
+##### fromRocketExplosion? <!-- {docsify-ignore} -->
 
-Dig strength applied to matched cells. Clamped to 0–1000.
+##### fromDrill? <!-- {docsify-ignore} -->
 
-##### options?
+##### useLiteralOutVelocity? <!-- {docsify-ignore} -->
 
-```ts
-optional options?: ExcavationProfileOptions
-```
+##### destroyNonDestructible? <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/excavation.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L56)
+##### forceRemoveAll? <!-- {docsify-ignore} -->
 
-Optional profile-specific excavation flags.
+##### drillTierDamage? <!-- {docsify-ignore} -->
 
-##### terrainRules?
-
-```ts
-optional terrainRules?: readonly ExcavationTerrainRule[]
-```
-
-Defined in: [sandkit/api/excavation.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L58)
-
-Per-terrain output and damage rules.
-
-***
-
-### ExcavationProfileOptions :id=excavationprofileoptions
-
-<p class="smt-member-path"><code>sandkit.api.excavation.ExcavationProfileOptions</code></p>
-Defined in: [sandkit/api/excavation.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L62)
+</div>
 
 Options attached to an excavation profile definition.
 
-#### Properties
+</div>
 
-##### fromGun?
+<div class="smt-member-card">
 
-```ts
-optional fromGun?: boolean
-```
+### sandkit.api.excavation.ExcavationTerrainRule :id=excavationterrainrule
 
-Defined in: [sandkit/api/excavation.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L63)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L74" target="_blank" rel="noopener">excavation.d.ts:74</a></p>
 
-##### fromRocketExplosion?
+| Property | Type | Description |
+| --- | --- | --- |
+| cellType | TerrainRef | Terrain cell type to match. |
+| ~~terrainType?~~ | TerrainRef |  |
+| damage? | number | Damage applied when this rule matches. |
+| outputElementType? | ElementRef | Element type produced when this terrain is excavated. |
 
-```ts
-optional fromRocketExplosion?: boolean
-```
+<div class="smt-member-anchors">
 
-Defined in: [sandkit/api/excavation.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L64)
+##### cellType <!-- {docsify-ignore} -->
 
-##### fromDrill?
+##### ~~terrainType?~~ <!-- {docsify-ignore} -->
 
-```ts
-optional fromDrill?: boolean
-```
+##### damage? <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/excavation.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L65)
+##### outputElementType? <!-- {docsify-ignore} -->
 
-##### useLiteralOutVelocity?
-
-```ts
-optional useLiteralOutVelocity?: boolean
-```
-
-Defined in: [sandkit/api/excavation.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L66)
-
-##### destroyNonDestructible?
-
-```ts
-optional destroyNonDestructible?: boolean
-```
-
-Defined in: [sandkit/api/excavation.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L67)
-
-##### forceRemoveAll?
-
-```ts
-optional forceRemoveAll?: boolean
-```
-
-Defined in: [sandkit/api/excavation.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L68)
-
-##### drillTierDamage?
-
-```ts
-optional drillTierDamage?: number
-```
-
-Defined in: [sandkit/api/excavation.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L70)
-
-Clamped to 0–1000 when set.
-
-***
-
-### ExcavationTerrainRule :id=excavationterrainrule
-
-<p class="smt-member-path"><code>sandkit.api.excavation.ExcavationTerrainRule</code></p>
-Defined in: [sandkit/api/excavation.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L74)
+</div>
 
 Terrain match rule within an excavation profile.
 
-#### Properties
-
-##### cellType
-
-```ts
-cellType: TerrainRef
-```
-
-Defined in: [sandkit/api/excavation.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L76)
-
-Terrain cell type to match.
-
-##### ~~terrainType?~~
-
-```ts
-optional terrainType?: TerrainRef
-```
-
-Defined in: [sandkit/api/excavation.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L82)
-
-###### Deprecated
-
-Use [cellType](#celltype) instead.
-
-###### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
-##### damage?
-
-```ts
-optional damage?: number
-```
-
-Defined in: [sandkit/api/excavation.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L84)
-
-Damage applied when this rule matches.
-
-##### outputElementType?
-
-```ts
-optional outputElementType?: ElementRef
-```
-
-Defined in: [sandkit/api/excavation.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L86)
-
-Element type produced when this terrain is excavated.
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### registerProfile() :id=registerprofile
+<div class="smt-member-card">
+
+### sandkit.api.excavation.registerProfile :id=registerprofile
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L47" target="_blank" rel="noopener">excavation.d.ts:47</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.excavation.registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void">
 
 ```ts
-sandkit.api.excavation.registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
+registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/excavation.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L47)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| id | `string` | Unique profile id (1–128 chars: letters, numbers, `.`, `_`, `:`, `-`). |
+| definition | [`ExcavationProfileDefinitionV1`](?id=excavationprofiledefinitionv1) | Pattern, power, terrain rules, and profile options. |
+
+<div class="smt-member-anchors">
+
+##### id <!-- {docsify-ignore} -->
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Registers an excavation profile by id.
-
-#### Parameters
-
-##### id
-
-`string`
-
-Unique profile id (1–128 chars: letters, numbers, `.`, `_`, `:`, `-`).
-
-##### definition
-
-[`ExcavationProfileDefinitionV1`](#excavationprofiledefinitionv1)
-
-Pattern, power, terrain rules, and profile options.
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -246,3 +168,5 @@ api.hooks.modify("excavation:prepare", (args) => {
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

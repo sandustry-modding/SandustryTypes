@@ -4,102 +4,120 @@
 
 `sandkit.engine.api.wall` — wall tile palette and cell data.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getPaletteData() :id=getpalettedata
+<div class="smt-member-card">
+
+### sandkit.engine.api.wall.getPaletteData :id=getpalettedata
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L15" target="_blank" rel="noopener">wall.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.wall.getPaletteData(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.wall.getPaletteData(...args: unknown[]): unknown
+getPaletteData(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return wall palette data for rendering.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.wall.getWallDataAt :id=getwalldataat
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L20" target="_blank" rel="noopener">wall.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getWallDataAt() :id=getwalldataat
+<div class="smt-member-sig" data-sig="sandkit.engine.api.wall.getWallDataAt(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.wall.getWallDataAt(...args: unknown[]): unknown
+getWallDataAt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return wall tile data at one cell.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.wall.getWallDataSize :id=getwalldatasize
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L25" target="_blank" rel="noopener">wall.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getWallDataSize() :id=getwalldatasize
+<div class="smt-member-sig" data-sig="sandkit.engine.api.wall.getWallDataSize(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.wall.getWallDataSize(...args: unknown[]): unknown
+getWallDataSize(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the byte size of wall tile data.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.wall.setWallDataAt :id=setwalldataat
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L30" target="_blank" rel="noopener">wall.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### setWallDataAt() :id=setwalldataat
+<div class="smt-member-sig" data-sig="sandkit.engine.api.wall.setWallDataAt(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.wall.setWallDataAt(...args: unknown[]): unknown
+setWallDataAt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/wall.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Set wall tile data at one cell.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

@@ -2,27 +2,31 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### nextTick() :id=nexttick
+<div class="smt-member-card">
+
+### sandkit.api.schedule.nextTick :id=nexttick
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/schedule.d.ts#L20" target="_blank" rel="noopener">schedule.d.ts:20</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.schedule.nextTick(callback: () =&gt; void): void">
 
 ```ts
-sandkit.api.schedule.nextTick(callback: () => void): void
+nextTick(callback: () => void): void
 ```
 
-Defined in: [sandkit/api/schedule.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/schedule.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| callback | () => `void` | Function invoked once on the next tick. |
+
+<div class="smt-member-anchors">
+
+##### callback <!-- {docsify-ignore} -->
+
+</div>
 
 Run a callback on the next game tick.
-
-#### Parameters
-
-##### callback
-
-() => `void`
-
-Function invoked once on the next tick.
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -31,3 +35,5 @@ api.schedule.nextTick(() => {
   runDeferredWork();
 });
 ```
+
+</div>

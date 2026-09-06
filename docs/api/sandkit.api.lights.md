@@ -10,47 +10,50 @@ Main thread only.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### TemporaryLightHandle :id=temporarylighthandle
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.lights.TemporaryLightHandle</code></p>
-Defined in: [sandkit/api/lights.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L129)
+### sandkit.api.lights.TemporaryLightHandle :id=temporarylighthandle
 
-Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createatworld).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L129" target="_blank" rel="noopener">lights.d.ts:129</a></p>
 
-#### Properties
+| Property | Type | Description |
+| --- | --- | --- |
+| lightId | number \| null | Assigned temporary light id, or null when creation failed. |
+| ~~index~~ | number \| null |  |
 
-##### lightId
+<div class="smt-member-anchors">
 
-```ts
-lightId: number | null
-```
+##### lightId <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/lights.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L131)
+##### ~~index~~ <!-- {docsify-ignore} -->
 
-Assigned temporary light id, or null when creation failed.
+</div>
 
-##### ~~index~~
+Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.md?id=createatworld).
 
-```ts
-index: number | null
-```
+</div>
 
-Defined in: [sandkit/api/lights.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L137)
+<div class="smt-member-card">
 
-###### Deprecated
+### sandkit.api.lights.PersistentLightOptions :id=persistentlightoptions
 
-Use [lightId](#lightid) instead.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L144" target="_blank" rel="noopener">lights.d.ts:144</a></p>
 
-###### See
+| Property | Type | Description |
+| --- | --- | --- |
+| brightness? | number | Light brightness multiplier. |
+| size? | number | Light radius in pixels. |
+| color? | [number, number, number, number] | RGBA color components. |
 
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+<div class="smt-member-anchors">
 
-***
+##### brightness? <!-- {docsify-ignore} -->
 
-### PersistentLightOptions :id=persistentlightoptions
+##### size? <!-- {docsify-ignore} -->
 
-<p class="smt-member-path"><code>sandkit.api.lights.PersistentLightOptions</code></p>
-Defined in: [sandkit/api/lights.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L144)
+##### color? <!-- {docsify-ignore} -->
+
+</div>
 
 Options for persistent world lights.
 
@@ -60,65 +63,42 @@ Options for persistent world lights.
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### brightness?
-
-```ts
-optional brightness?: number
-```
-
-Defined in: [sandkit/api/lights.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L146)
-
-Light brightness multiplier.
-
-##### size?
-
-```ts
-optional size?: number
-```
-
-Defined in: [sandkit/api/lights.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L148)
-
-Light radius in pixels.
-
-##### color?
-
-```ts
-optional color?: [number, number, number, number]
-```
-
-Defined in: [sandkit/api/lights.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L150)
-
-RGBA color components.
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### TemporaryLightOptions :id=temporarylightoptions
+<div class="smt-member-card">
+
+### sandkit.api.lights.TemporaryLightOptions :id=temporarylightoptions
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L141" target="_blank" rel="noopener">lights.d.ts:141</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.lights.TemporaryLightOptions = TemporaryLightOptions">
 
 ```ts
-sandkit.api.lights.TemporaryLightOptions = TemporaryLightOptions
+TemporaryLightOptions = TemporaryLightOptions
 ```
 
-Defined in: [sandkit/api/lights.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L141)
+</div>
 
 Options for temporary lights.
 
-***
+</div>
 
-### PersistentLightHandle :id=persistentlighthandle
+<div class="smt-member-card">
+
+### sandkit.api.lights.PersistentLightHandle :id=persistentlighthandle
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L155" target="_blank" rel="noopener">lights.d.ts:155</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.lights.PersistentLightHandle = unknown">
 
 ```ts
-sandkit.api.lights.PersistentLightHandle = unknown
+PersistentLightHandle = unknown
 ```
 
-Defined in: [sandkit/api/lights.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L155)
+</div>
 
-Handle returned from [persistent.createAtWorld](api/sandkit.api.lights.persistent.md#createatworld).
+Handle returned from [persistent.createAtWorld](api/sandkit.api.lights.persistent.md?id=createatworld).
 
-## References <!-- {docsify-ignore} -->
-
-### vfx :id=vfx
-
-<p class="smt-member-path"><code>sandkit.api.lights.vfx</code></p>
-Renames and re-exports [temporary](api/sandkit.api.lights.temporary.md)
+</div>

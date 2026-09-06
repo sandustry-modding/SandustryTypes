@@ -9,90 +9,110 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getSnappedPositionAtCell() :id=getsnappedpositionatcell
+<div class="smt-member-card">
+
+### sandkit.api.building.getSnappedPositionAtCell :id=getsnappedpositionatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L73" target="_blank" rel="noopener">building.d.ts:73</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.getSnappedPositionAtCell(...args: CellCoordinates): Vector2">
 
 ```ts
-sandkit.api.building.getSnappedPositionAtCell(...args: CellCoordinates): Vector2
+getSnappedPositionAtCell(...args: CellCoordinates): Vector2
 ```
 
-Defined in: [sandkit/api/building.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L73)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the snapped world position for placement at the cell.
 
-#### Parameters
+[`Vector2`](api/shared.player.md?id=vector2) Snapped world position in pixels.
 
-##### args
+</div>
 
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
+<div class="smt-member-card">
 
-#### Returns
+### sandkit.api.building.isBlockedAtCell :id=isblockedatcell
 
-[`Vector2`](api/shared.player.md#vector2)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L81" target="_blank" rel="noopener">building.d.ts:81</a></p>
 
-Snapped world position in pixels.
-
-***
-
-### isBlockedAtCell() :id=isblockedatcell
+<div class="smt-member-sig" data-sig="sandkit.api.building.isBlockedAtCell(...args: CellCoordinates): boolean">
 
 ```ts
-sandkit.api.building.isBlockedAtCell(...args: CellCoordinates): boolean
+isBlockedAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/building.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L81)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when placement is blocked at the cell.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`boolean`
-
 True when a structure cannot be placed at the cell.
 
-***
+</div>
 
-### cancelPlacement() :id=cancelplacement
+<div class="smt-member-card">
+
+### sandkit.api.building.cancelPlacement :id=cancelplacement
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L84" target="_blank" rel="noopener">building.d.ts:84</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.cancelPlacement(): void">
 
 ```ts
-sandkit.api.building.cancelPlacement(): void
+cancelPlacement(): void
 ```
 
-Defined in: [sandkit/api/building.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L84)
+</div>
 
 Cancel the current structure placement preview.
 
-#### Returns
+</div>
 
-`void`
+<div class="smt-member-card">
 
-***
+### sandkit.api.building.selectStructure :id=selectstructure
 
-### selectStructure() :id=selectstructure
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L91" target="_blank" rel="noopener">building.d.ts:91</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.building.selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef | null">
 
 ```ts
-sandkit.api.building.selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef | null
+selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef | null
 ```
 
-Defined in: [sandkit/api/building.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L91)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| structureTypeOrId | [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \\| [`StructureType`](api/sandkit.api.building.StructureType.md) | Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
+
+<div class="smt-member-anchors">
+
+##### structureTypeOrId <!-- {docsify-ignore} -->
+
+</div>
 
 Select a structure for placement by type or id.
 
-#### Parameters
+[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \| `null` Resolved selection, or null when the type or id is invalid.
 
-##### structureTypeOrId
-
-[`StructureRef`](api/sandkit.api.structures.worker.md#structureref) \| [`StructureType`](api/sandkit.api.building.StructureType.md)
-
-Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id.
-
-#### Returns
-
-[`StructureRef`](api/sandkit.api.structures.worker.md#structureref) \| `null`
-
-Resolved selection, or null when the type or id is invalid.
+</div>

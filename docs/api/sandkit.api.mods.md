@@ -2,36 +2,52 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### AssetProviderV1 :id=assetproviderv1
+<div class="smt-member-card">
+
+### sandkit.api.mods.AssetProviderV1 :id=assetproviderv1
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L17" target="_blank" rel="noopener">mods.d.ts:17</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.mods.AssetProviderV1 = AssetProviderV1">
 
 ```ts
-sandkit.api.mods.AssetProviderV1 = AssetProviderV1
+AssetProviderV1 = AssetProviderV1
 ```
 
-Defined in: [sandkit/api/mods.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L17)
+</div>
 
 Asset provider entry shape.
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### getProviders() :id=getproviders
+<div class="smt-member-card">
+
+### sandkit.api.mods.getProviders :id=getproviders
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L15" target="_blank" rel="noopener">mods.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.mods.getProviders(kind: string): readonly AssetProviderV1[]">
 
 ```ts
-sandkit.api.mods.getProviders(kind: string): readonly AssetProviderV1[]
+getProviders(kind: string): readonly AssetProviderV1[]
 ```
 
-Defined in: [sandkit/api/mods.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| kind | `string` | Asset kind identifier (e.g. texture pack category). |
+
+<div class="smt-member-anchors">
+
+##### kind <!-- {docsify-ignore} -->
+
+</div>
 
 Return asset providers registered for a kind string.
 
-#### Parameters
+readonly [`AssetProviderV1`](api/sandkit.api.assets.md?id=assetproviderv1)[]
 
-##### kind
-
-`string`
-
-Asset kind identifier (e.g. texture pack category).
-
-#### Returns
-
-readonly [`AssetProviderV1`](api/sandkit.api.assets.md#assetproviderv1)[]
+</div>

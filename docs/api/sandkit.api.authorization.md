@@ -5,146 +5,175 @@ Main thread only.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### canBuildAtCell() :id=canbuildatcell
+<div class="smt-member-card">
+
+### sandkit.api.authorization.canBuildAtCell :id=canbuildatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L14" target="_blank" rel="noopener">authorization.d.ts:14</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.authorization.canBuildAtCell(...args: CellCoordinates): boolean">
 
 ```ts
-sandkit.api.authorization.canBuildAtCell(...args: CellCoordinates): boolean
+canBuildAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L14)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when the player may place a structure at the cell.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`boolean`
-
 True when building is allowed in the authorization zone.
 
-***
+</div>
 
-### canGrabAtCell() :id=cangrabatcell
+<div class="smt-member-card">
+
+### sandkit.api.authorization.canGrabAtCell :id=cangrabatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L22" target="_blank" rel="noopener">authorization.d.ts:22</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.authorization.canGrabAtCell(...args: CellCoordinates): boolean">
 
 ```ts
-sandkit.api.authorization.canGrabAtCell(...args: CellCoordinates): boolean
+canGrabAtCell(...args: CellCoordinates): boolean
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L22)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when the player may grab at the cell.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`boolean`
-
 True when grabbing is allowed in the authorization zone.
 
-***
+</div>
 
-### canUseTool() :id=canusetool
+<div class="smt-member-card">
+
+### sandkit.api.authorization.canUseTool :id=canusetool
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L30" target="_blank" rel="noopener">authorization.d.ts:30</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.authorization.canUseTool(player: Player, isFlamethrower?: boolean): boolean">
 
 ```ts
-sandkit.api.authorization.canUseTool(player: Player, isFlamethrower?: boolean): boolean
+canUseTool(player: Player, isFlamethrower?: boolean): boolean
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| player | [`Player`](api/shared.player.md?id=player) | Player state snapshot. |
+| isFlamethrower? | `boolean` | When true, apply flamethrower-specific rules. |
+
+<div class="smt-member-anchors">
+
+##### player <!-- {docsify-ignore} -->
+
+##### isFlamethrower? <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when the player may use a tool.
 
-#### Parameters
-
-##### player
-
-[`Player`](api/shared.player.md#player)
-
-Player state snapshot.
-
-##### isFlamethrower?
-
-`boolean`
-
-When true, apply flamethrower-specific rules.
-
-#### Returns
-
-`boolean`
-
 True when tool use is allowed for the player.
 
-***
+</div>
 
-### canUseToolAtCell() :id=canusetoolatcell
+<div class="smt-member-card">
+
+### sandkit.api.authorization.canUseToolAtCell :id=canusetoolatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L39" target="_blank" rel="noopener">authorization.d.ts:39</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.authorization.canUseToolAtCell(...args: [number, number, boolean]): boolean">
 
 ```ts
-sandkit.api.authorization.canUseToolAtCell(...args: [number, number, boolean]): boolean
+canUseToolAtCell(...args: [number, number, boolean]): boolean
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L39)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...\[`number`, `number`, `boolean`\] |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when the player may use a tool at the cell.
 
-#### Parameters
-
-##### args
-
-...\[`number`, `number`, `boolean`\]
-
-#### Returns
-
-`boolean`
-
 True when tool use is allowed at the cell.
 
-***
+</div>
 
-### getZoneIdAtCell() :id=getzoneidatcell
+<div class="smt-member-card">
+
+### sandkit.api.authorization.getZoneIdAtCell :id=getzoneidatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L49" target="_blank" rel="noopener">authorization.d.ts:49</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.authorization.getZoneIdAtCell(...args: CellCoordinates): number">
 
 ```ts
-sandkit.api.authorization.getZoneIdAtCell(...args: CellCoordinates): number
+getZoneIdAtCell(...args: CellCoordinates): number
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L49)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the authorization zone id at the cell.
 
-#### Parameters
-
-##### args
-
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
-
-#### Returns
-
-`number`
-
 Numeric zone id for the cell.
 
-***
+</div>
 
-### getPlayerZoneId() :id=getplayerzoneid
+<div class="smt-member-card">
+
+### sandkit.api.authorization.getPlayerZoneId :id=getplayerzoneid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L55" target="_blank" rel="noopener">authorization.d.ts:55</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.authorization.getPlayerZoneId(): number">
 
 ```ts
-sandkit.api.authorization.getPlayerZoneId(): number
+getPlayerZoneId(): number
 ```
 
-Defined in: [sandkit/api/authorization.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L55)
+</div>
 
 Return the authorization zone id for the player.
 
-#### Returns
-
-`number`
-
 Numeric zone id for the player's current position.
+
+</div>

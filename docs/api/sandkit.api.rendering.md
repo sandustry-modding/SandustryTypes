@@ -2,55 +2,66 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getDrawPositionAtCell() :id=getdrawpositionatcell
+<div class="smt-member-card">
+
+### sandkit.api.rendering.getDrawPositionAtCell :id=getdrawpositionatcell
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L16" target="_blank" rel="noopener">rendering.d.ts:16</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.rendering.getDrawPositionAtCell(...args: CellCoordinates): Vector2">
 
 ```ts
-sandkit.api.rendering.getDrawPositionAtCell(...args: CellCoordinates): Vector2
+getDrawPositionAtCell(...args: CellCoordinates): Vector2
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L16)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...[`CellCoordinates`](api/shared.player.md?id=cellcoordinates) |  |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return screen draw position for a grid cell.
 
-#### Parameters
+[`Vector2`](api/shared.player.md?id=vector2)
 
-##### args
+</div>
 
-...[`CellCoordinates`](api/shared.player.md#cellcoordinates)
+<div class="smt-member-card">
 
-#### Returns
+### sandkit.api.rendering.getDrawPositionAtWorld :id=getdrawpositionatworld
 
-[`Vector2`](api/shared.player.md#vector2)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L33" target="_blank" rel="noopener">rendering.d.ts:33</a></p>
 
-***
-
-### getDrawPositionAtWorld() :id=getdrawpositionatworld
+<div class="smt-member-sig" data-sig="sandkit.api.rendering.getDrawPositionAtWorld(worldX: number, worldY: number): Vector2">
 
 ```ts
-sandkit.api.rendering.getDrawPositionAtWorld(worldX: number, worldY: number): Vector2
+getDrawPositionAtWorld(worldX: number, worldY: number): Vector2
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L33)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
+
+<div class="smt-member-anchors">
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+</div>
 
 Return screen draw position for a world-space point.
 
-#### Parameters
-
-##### worldX
-
-`number`
-
-World x position in pixels.
-
-##### worldY
-
-`number`
-
-World y position in pixels.
-
-#### Returns
-
-[`Vector2`](api/shared.player.md#vector2)
+[`Vector2`](api/shared.player.md?id=vector2)
 
 #### Example
 
@@ -65,33 +76,25 @@ api.events.on("frame:render", () => {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### getGridMetrics() :id=getgridmetrics
+<div class="smt-member-card">
+
+### sandkit.api.rendering.getGridMetrics :id=getgridmetrics
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L42" target="_blank" rel="noopener">rendering.d.ts:42</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.rendering.getGridMetrics(): object">
 
 ```ts
-sandkit.api.rendering.getGridMetrics(): object
+getGridMetrics(): object
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L42)
+</div>
 
 Return cell size and snap grid metrics.
 
-#### Returns
-
-`object`
-
-##### cellSize
-
-```ts
-cellSize: number
-```
-
-##### snapGridCellSize
-
-```ts
-snapGridCellSize: number
-```
+cellSize: number snapGridCellSize: number
 
 #### Example
 
@@ -99,61 +102,57 @@ snapGridCellSize: number
 const { cellSize, snapGridCellSize } = api.rendering.getGridMetrics();
 ```
 
-***
+</div>
 
-### getOverlayViewportSize() :id=getoverlayviewportsize
+<div class="smt-member-card">
+
+### sandkit.api.rendering.getOverlayViewportSize :id=getoverlayviewportsize
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L44" target="_blank" rel="noopener">rendering.d.ts:44</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.rendering.getOverlayViewportSize(): object">
 
 ```ts
-sandkit.api.rendering.getOverlayViewportSize(): object
+getOverlayViewportSize(): object
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L44)
+</div>
 
 Return overlay viewport width and height in pixels.
 
-#### Returns
+width: number height: number
 
-`object`
+</div>
 
-##### width
+<div class="smt-member-card">
 
-```ts
-width: number
-```
+### sandkit.api.rendering.withOverlayContext :id=withoverlaycontext
 
-##### height
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L56" target="_blank" rel="noopener">rendering.d.ts:56</a></p>
 
-```ts
-height: number
-```
-
-***
-
-### withOverlayContext() :id=withoverlaycontext
+<div class="smt-member-sig" data-sig="sandkit.api.rendering.withOverlayContext&lt;T&gt;(callback: (context: CanvasRenderingContext2D) =&gt; T): T">
 
 ```ts
 sandkit.api.rendering.withOverlayContext<T>(callback: (context: CanvasRenderingContext2D) => T): T
 ```
 
-Defined in: [sandkit/api/rendering.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L56)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| callback | (`context`: `CanvasRenderingContext2D`) => `T` | Receives the overlay 2D context; return value is passed through. |
+
+<div class="smt-member-anchors">
+
+##### callback <!-- {docsify-ignore} -->
+
+</div>
 
 Run a callback with the overlay canvas context.
 
 #### Type Parameters
 
 ##### T
-
-`T`
-
-#### Parameters
-
-##### callback
-
-(`context`: `CanvasRenderingContext2D`) => `T`
-
-Receives the overlay 2D context; return value is passed through.
-
-#### Returns
 
 `T`
 
@@ -164,3 +163,5 @@ api.rendering.withOverlayContext((context) => {
   context.fillRect(0, 0, 16, 16);
 });
 ```
+
+</div>

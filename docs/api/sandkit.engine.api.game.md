@@ -4,78 +4,92 @@
 
 `sandkit.engine.api.game` — game session start, save, and load.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### load() :id=load
+<div class="smt-member-card">
+
+### sandkit.engine.api.game.load :id=load
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L15" target="_blank" rel="noopener">game.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.game.load(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.game.load(...args: unknown[]): unknown
+load(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/game.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Load a saved game into the session.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.game.save :id=save
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L20" target="_blank" rel="noopener">game.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### save() :id=save
+<div class="smt-member-sig" data-sig="sandkit.engine.api.game.save(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.game.save(...args: unknown[]): unknown
+save(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/game.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Save the current session.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.game.start :id=start
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L25" target="_blank" rel="noopener">game.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### start() :id=start
+<div class="smt-member-sig" data-sig="sandkit.engine.api.game.start(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.game.start(...args: unknown[]): unknown
+start(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/game.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Start a new game session.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

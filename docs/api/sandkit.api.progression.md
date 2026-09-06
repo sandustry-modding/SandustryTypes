@@ -2,10 +2,21 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### ProgressionCompletionRequestV1 :id=progressioncompletionrequestv1
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.progression.ProgressionCompletionRequestV1</code></p>
-Defined in: [sandkit/api/progression.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L25)
+### sandkit.api.progression.ProgressionCompletionRequestV1 :id=progressioncompletionrequestv1
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L25" target="_blank" rel="noopener">progression.d.ts:25</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| id | string | Progression step or quest identifier. |
+
+<div class="smt-member-anchors">
+
+##### id <!-- {docsify-ignore} -->
+
+</div>
 
 Progression completion request shape.
 
@@ -15,41 +26,35 @@ Progression completion request shape.
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### id
-
-```ts
-id: string
-```
-
-Defined in: [sandkit/api/progression.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L27)
-
-Progression step or quest identifier.
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### complete() :id=complete
+<div class="smt-member-card">
+
+### sandkit.api.progression.complete :id=complete
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L22" target="_blank" rel="noopener">progression.d.ts:22</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.progression.complete(request: ProgressionCompletionRequestV1): boolean">
 
 ```ts
-sandkit.api.progression.complete(request: ProgressionCompletionRequestV1): boolean
+complete(request: ProgressionCompletionRequestV1): boolean
 ```
 
-Defined in: [sandkit/api/progression.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L22)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| request | [`ProgressionCompletionRequestV1`](?id=progressioncompletionrequestv1) | Progression id and optional metadata for the step. |
+
+<div class="smt-member-anchors">
+
+##### request <!-- {docsify-ignore} -->
+
+</div>
 
 Mark a progression step complete. Return true when completion succeeds.
-
-#### Parameters
-
-##### request
-
-[`ProgressionCompletionRequestV1`](#progressioncompletionrequestv1)
-
-Progression id and optional metadata for the step.
-
-#### Returns
-
-`boolean`
 
 #### Example
 
@@ -59,3 +64,5 @@ const completed = api.progression.complete({
   id: "all",
 });
 ```
+
+</div>

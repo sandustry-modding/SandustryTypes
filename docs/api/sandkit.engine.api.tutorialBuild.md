@@ -4,270 +4,316 @@
 
 `sandkit.engine.api.tutorialBuild` — tutorial build-step constraints and targets.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### areAllTargetsBuilt() :id=arealltargetsbuilt
+<div class="smt-member-card">
+
+### sandkit.engine.api.tutorialBuild.areAllTargetsBuilt :id=arealltargetsbuilt
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L15" target="_blank" rel="noopener">tutorialBuild.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.areAllTargetsBuilt(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.areAllTargetsBuilt(...args: unknown[]): unknown
+areAllTargetsBuilt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether all active tutorial targets are built.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt :id=arefamilytargetsbuilt
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L20" target="_blank" rel="noopener">tutorialBuild.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### areFamilyTargetsBuilt() :id=arefamilytargetsbuilt
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt(...args: unknown[]): unknown
+areFamilyTargetsBuilt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether all targets in a structure family are built.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget :id=canplaceatactivetarget
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L25" target="_blank" rel="noopener">tutorialBuild.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### canPlaceAtActiveTarget() :id=canplaceatactivetarget
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget(...args: unknown[]): unknown
+canPlaceAtActiveTarget(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether placement is allowed at the active target.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.tutorialBuild.getFoundationMoveDests :id=getfoundationmovedests
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L30" target="_blank" rel="noopener">tutorialBuild.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getFoundationMoveDests() :id=getfoundationmovedests
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.getFoundationMoveDests(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.getFoundationMoveDests(...args: unknown[]): unknown
+getFoundationMoveDests(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return foundation move destination cells for the tutorial step.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.tutorialBuild.getFoundationMoveSources :id=getfoundationmovesources
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L35" target="_blank" rel="noopener">tutorialBuild.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getFoundationMoveSources() :id=getfoundationmovesources
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.getFoundationMoveSources(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.getFoundationMoveSources(...args: unknown[]): unknown
+getFoundationMoveSources(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return foundation move source cells for the tutorial step.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.tutorialBuild.getTargets :id=gettargets
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L40" target="_blank" rel="noopener">tutorialBuild.d.ts:40</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getTargets() :id=gettargets
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.getTargets(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.getTargets(...args: unknown[]): unknown
+getTargets(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L40)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return build targets for the current tutorial step.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.tutorialBuild.hasDefinition :id=hasdefinition
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L45" target="_blank" rel="noopener">tutorialBuild.d.ts:45</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### hasDefinition() :id=hasdefinition
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.hasDefinition(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.hasDefinition(...args: unknown[]): unknown
+hasDefinition(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L45)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether a tutorial build definition exists.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.tutorialBuild.isStepConstrained :id=isstepconstrained
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L50" target="_blank" rel="noopener">tutorialBuild.d.ts:50</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### isStepConstrained() :id=isstepconstrained
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.isStepConstrained(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.isStepConstrained(...args: unknown[]): unknown
+isStepConstrained(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L50)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the current step restricts building.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.tutorialBuild.matchesFoundationMove :id=matchesfoundationmove
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L55" target="_blank" rel="noopener">tutorialBuild.d.ts:55</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### matchesFoundationMove() :id=matchesfoundationmove
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.matchesFoundationMove(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.matchesFoundationMove(...args: unknown[]): unknown
+matchesFoundationMove(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L55)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether a foundation move matches tutorial rules.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.tutorialBuild.matchesFoundationRemove :id=matchesfoundationremove
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L60" target="_blank" rel="noopener">tutorialBuild.d.ts:60</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### matchesFoundationRemove() :id=matchesfoundationremove
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.matchesFoundationRemove(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.matchesFoundationRemove(...args: unknown[]): unknown
+matchesFoundationRemove(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L60)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether a foundation remove matches tutorial rules.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt :id=shouldprotectactivetargetat
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L65" target="_blank" rel="noopener">tutorialBuild.d.ts:65</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### shouldProtectActiveTargetAt() :id=shouldprotectactivetargetat
+<div class="smt-member-sig" data-sig="sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt(...args: unknown[]): unknown
+shouldProtectActiveTargetAt(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/tutorialBuild.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L65)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the active target should be protected at a cell.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

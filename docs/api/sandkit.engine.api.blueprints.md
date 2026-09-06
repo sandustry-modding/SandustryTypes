@@ -4,174 +4,204 @@
 
 `sandkit.engine.api.blueprints` — blueprint save, load, and import/export.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### delete() :id=delete
+<div class="smt-member-card">
+
+### sandkit.engine.api.blueprints.delete :id=delete
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L15" target="_blank" rel="noopener">blueprints.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.blueprints.delete(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.blueprints.delete(...args: unknown[]): unknown
+delete(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Delete a saved blueprint. Runtime property name is `delete`.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.blueprints.exportAllString :id=exportallstring
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L21" target="_blank" rel="noopener">blueprints.d.ts:21</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### exportAllString() :id=exportallstring
+<div class="smt-member-sig" data-sig="sandkit.engine.api.blueprints.exportAllString(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.blueprints.exportAllString(...args: unknown[]): unknown
+exportAllString(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L21)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Export all blueprints as one string.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.blueprints.exportString :id=exportstring
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L26" target="_blank" rel="noopener">blueprints.d.ts:26</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### exportString() :id=exportstring
+<div class="smt-member-sig" data-sig="sandkit.engine.api.blueprints.exportString(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.blueprints.exportString(...args: unknown[]): unknown
+exportString(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L26)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Export one blueprint as a string.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.blueprints.getAll :id=getall
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L31" target="_blank" rel="noopener">blueprints.d.ts:31</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getAll() :id=getall
+<div class="smt-member-sig" data-sig="sandkit.engine.api.blueprints.getAll(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.blueprints.getAll(...args: unknown[]): unknown
+getAll(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L31)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return all saved blueprints.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.blueprints.importString :id=importstring
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L36" target="_blank" rel="noopener">blueprints.d.ts:36</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### importString() :id=importstring
+<div class="smt-member-sig" data-sig="sandkit.engine.api.blueprints.importString(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.blueprints.importString(...args: unknown[]): unknown
+importString(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L36)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Import a blueprint from a string.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.blueprints.load :id=load
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L41" target="_blank" rel="noopener">blueprints.d.ts:41</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### load() :id=load
+<div class="smt-member-sig" data-sig="sandkit.engine.api.blueprints.load(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.blueprints.load(...args: unknown[]): unknown
+load(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L41)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Load a blueprint into the active session.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.blueprints.save :id=save
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L46" target="_blank" rel="noopener">blueprints.d.ts:46</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### save() :id=save
+<div class="smt-member-sig" data-sig="sandkit.engine.api.blueprints.save(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.blueprints.save(...args: unknown[]): unknown
+save(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/blueprints.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L46)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Save the current selection as a blueprint.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

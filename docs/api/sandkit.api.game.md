@@ -10,48 +10,53 @@ Available as `sandkit.api.game`.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### GameStartOptions :id=gamestartoptions
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.game.GameStartOptions</code></p>
-Defined in: [sandkit/api/game.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L24)
+### sandkit.api.game.GameStartOptions :id=gamestartoptions
 
-Options for [start](#start).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L24" target="_blank" rel="noopener">game.d.ts:24</a></p>
 
-#### Properties
+| Property | Type | Description |
+| --- | --- | --- |
+| skipIntro? | boolean | When true, skip the intro sequence. |
 
-##### skipIntro?
+<div class="smt-member-anchors">
 
-```ts
-optional skipIntro?: boolean
-```
+##### skipIntro? <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/game.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L26)
+</div>
 
-When true, skip the intro sequence.
+Options for [start](?id=start).
+
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### start() :id=start
+<div class="smt-member-card">
+
+### sandkit.api.game.start :id=start
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L21" target="_blank" rel="noopener">game.d.ts:21</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.game.start(options?: GameStartOptions): void">
 
 ```ts
-sandkit.api.game.start(options?: GameStartOptions): void
+start(options?: GameStartOptions): void
 ```
 
-Defined in: [sandkit/api/game.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L21)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| options? | [`GameStartOptions`](?id=gamestartoptions) | Optional session start flags. |
+
+<div class="smt-member-anchors">
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Start or restart the game session.
-
-#### Parameters
-
-##### options?
-
-[`GameStartOptions`](#gamestartoptions)
-
-Optional session start flags.
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -62,3 +67,5 @@ api.game.start({ skipIntro: true });
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

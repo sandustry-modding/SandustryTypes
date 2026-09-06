@@ -6,160 +6,258 @@ Built-in hotbar item ids.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Shovel :id=shovel
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Shovel :id=shovel
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L154" target="_blank" rel="noopener">index.d.ts:154</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Shovel: 1">
 
 ```ts
-sandkit.enums.ItemId.Shovel: 1
+Shovel: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L154)
+</div>
 
-***
+</div>
 
-### Grabber :id=grabber
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Grabber :id=grabber
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L155" target="_blank" rel="noopener">index.d.ts:155</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Grabber: 2">
 
 ```ts
-sandkit.enums.ItemId.Grabber: 2
+Grabber: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L155)
+</div>
 
-***
+</div>
 
-### Demolisher :id=demolisher
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Demolisher :id=demolisher
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L156" target="_blank" rel="noopener">index.d.ts:156</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Demolisher: 3">
 
 ```ts
-sandkit.enums.ItemId.Demolisher: 3
+Demolisher: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L156)
+</div>
 
-***
+</div>
 
-### GrapplingHook :id=grapplinghook
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.GrapplingHook :id=grapplinghook
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L157" target="_blank" rel="noopener">index.d.ts:157</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.GrapplingHook: 4">
 
 ```ts
-sandkit.enums.ItemId.GrapplingHook: 4
+GrapplingHook: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L157)
+</div>
 
-***
+</div>
 
-### Vacuum :id=vacuum
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Vacuum :id=vacuum
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L158" target="_blank" rel="noopener">index.d.ts:158</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Vacuum: 5">
 
 ```ts
-sandkit.enums.ItemId.Vacuum: 5
+Vacuum: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L158)
+</div>
 
-***
+</div>
 
-### Gun :id=gun
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Gun :id=gun
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L159" target="_blank" rel="noopener">index.d.ts:159</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Gun: 6">
 
 ```ts
-sandkit.enums.ItemId.Gun: 6
+Gun: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L159)
+</div>
 
-***
+</div>
 
-### Copier :id=copier
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Copier :id=copier
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L160" target="_blank" rel="noopener">index.d.ts:160</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Copier: 7">
 
 ```ts
-sandkit.enums.ItemId.Copier: 7
+Copier: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L160)
+</div>
 
-***
+</div>
 
-### RocketLauncher :id=rocketlauncher
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.RocketLauncher :id=rocketlauncher
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L161" target="_blank" rel="noopener">index.d.ts:161</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.RocketLauncher: 8">
 
 ```ts
-sandkit.enums.ItemId.RocketLauncher: 8
+RocketLauncher: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L161)
+</div>
 
-***
+</div>
 
-### Digger :id=digger
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Digger :id=digger
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L162" target="_blank" rel="noopener">index.d.ts:162</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Digger: 9">
 
 ```ts
-sandkit.enums.ItemId.Digger: 9
+Digger: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L162)
+</div>
 
-***
+</div>
 
-### Shotgun :id=shotgun
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Shotgun :id=shotgun
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L163" target="_blank" rel="noopener">index.d.ts:163</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Shotgun: 10">
 
 ```ts
-sandkit.enums.ItemId.Shotgun: 10
+Shotgun: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L163)
+</div>
 
-***
+</div>
 
-### Teleporter :id=teleporter
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Teleporter :id=teleporter
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L164" target="_blank" rel="noopener">index.d.ts:164</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Teleporter: 11">
 
 ```ts
-sandkit.enums.ItemId.Teleporter: 11
+Teleporter: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L164)
+</div>
 
-***
+</div>
 
-### Flamethrower :id=flamethrower
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Flamethrower :id=flamethrower
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L165" target="_blank" rel="noopener">index.d.ts:165</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Flamethrower: 12">
 
 ```ts
-sandkit.enums.ItemId.Flamethrower: 12
+Flamethrower: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L165)
+</div>
 
-***
+</div>
 
-### PipeRemover :id=piperemover
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.PipeRemover :id=piperemover
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L166" target="_blank" rel="noopener">index.d.ts:166</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.PipeRemover: 13">
 
 ```ts
-sandkit.enums.ItemId.PipeRemover: 13
+PipeRemover: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L166)
+</div>
 
-***
+</div>
 
-### Hauler :id=hauler
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Hauler :id=hauler
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L167" target="_blank" rel="noopener">index.d.ts:167</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Hauler: 14">
 
 ```ts
-sandkit.enums.ItemId.Hauler: 14
+Hauler: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L167)
+</div>
 
-***
+</div>
 
-### Cryoblaster :id=cryoblaster
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.Cryoblaster :id=cryoblaster
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L168" target="_blank" rel="noopener">index.d.ts:168</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.Cryoblaster: 15">
 
 ```ts
-sandkit.enums.ItemId.Cryoblaster: 15
+Cryoblaster: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L168)
+</div>
 
-***
+</div>
 
-### MegaShotgun :id=megashotgun
+<div class="smt-member-card">
+
+### sandkit.enums.ItemId.MegaShotgun :id=megashotgun
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L169" target="_blank" rel="noopener">index.d.ts:169</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ItemId.MegaShotgun: 16">
 
 ```ts
-sandkit.enums.ItemId.MegaShotgun: 16
+MegaShotgun: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L169)
+</div>
+
+</div>

@@ -4,54 +4,64 @@
 
 `sandkit.engine.api.auralite` — auralite production tracking.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### ensureProducedAtLeast() :id=ensureproducedatleast
+<div class="smt-member-card">
+
+### sandkit.engine.api.auralite.ensureProducedAtLeast :id=ensureproducedatleast
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L15" target="_blank" rel="noopener">auralite.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.auralite.ensureProducedAtLeast(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.auralite.ensureProducedAtLeast(...args: unknown[]): unknown
+ensureProducedAtLeast(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/auralite.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Ensure at least the given amount of auralite has been produced.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.auralite.getProduced :id=getproduced
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L20" target="_blank" rel="noopener">auralite.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getProduced() :id=getproduced
+<div class="smt-member-sig" data-sig="sandkit.engine.api.auralite.getProduced(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.auralite.getProduced(...args: unknown[]): unknown
+getProduced(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/auralite.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return total auralite produced so far.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

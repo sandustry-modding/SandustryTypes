@@ -6,41 +6,47 @@ Worker thread only.
 
 `sandkit.api.worker` — identity of the current simulation worker.
 
- Base shape reused by [WorkerSandkitApi](api/sandkit.api.worker.md#workersandkitapi). Not the same as
+ Base shape reused by [WorkerSandkitApi](api/sandkit.api.worker.md?id=workersandkitapi). Not the same as
 main-thread APIs.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getIndex() :id=getindex
+<div class="smt-member-card">
+
+### sandkit.api.worker.getIndex :id=getindex
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L14" target="_blank" rel="noopener">worker.d.ts:14</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.worker.getIndex(): number">
 
 ```ts
-sandkit.api.worker.getIndex(): number
+getIndex(): number
 ```
 
-Defined in: [worker/api/worker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L14)
+</div>
 
 Return the zero-based index of this worker in the worker pool.
 
-#### Returns
-
-`number`
-
 Worker index (`0` … `getCount() - 1`).
 
-***
+</div>
 
-### getCount() :id=getcount
+<div class="smt-member-card">
+
+### sandkit.api.worker.getCount :id=getcount
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L19" target="_blank" rel="noopener">worker.d.ts:19</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.worker.getCount(): number">
 
 ```ts
-sandkit.api.worker.getCount(): number
+getCount(): number
 ```
 
-Defined in: [worker/api/worker.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L19)
+</div>
 
 Return the total number of simulation workers.
 
-#### Returns
-
-`number`
-
 Worker count for the active simulation.
+
+</div>

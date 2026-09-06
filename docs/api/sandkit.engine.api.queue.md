@@ -4,150 +4,176 @@
 
 `sandkit.engine.api.queue` — deferred tick queue with handlers.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### enqueue() :id=enqueue
+<div class="smt-member-card">
+
+### sandkit.engine.api.queue.enqueue :id=enqueue
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L15" target="_blank" rel="noopener">queue.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.queue.enqueue(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.queue.enqueue(...args: unknown[]): unknown
+enqueue(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Enqueue work to run on a future tick.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.queue.enqueueInTicks :id=enqueueinticks
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L20" target="_blank" rel="noopener">queue.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### enqueueInTicks() :id=enqueueinticks
+<div class="smt-member-sig" data-sig="sandkit.engine.api.queue.enqueueInTicks(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.queue.enqueueInTicks(...args: unknown[]): unknown
+enqueueInTicks(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Enqueue work to run after a tick delay.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.queue.enqueueSkipTick :id=enqueueskiptick
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L25" target="_blank" rel="noopener">queue.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### enqueueSkipTick() :id=enqueueskiptick
+<div class="smt-member-sig" data-sig="sandkit.engine.api.queue.enqueueSkipTick(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.queue.enqueueSkipTick(...args: unknown[]): unknown
+enqueueSkipTick(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Enqueue work that skips the current tick.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.queue.process :id=process
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L30" target="_blank" rel="noopener">queue.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### process() :id=process
+<div class="smt-member-sig" data-sig="sandkit.engine.api.queue.process(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.queue.process(...args: unknown[]): unknown
+process(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Process pending queue items for the current tick.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.queue.registerHandler :id=registerhandler
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L35" target="_blank" rel="noopener">queue.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### registerHandler() :id=registerhandler
+<div class="smt-member-sig" data-sig="sandkit.engine.api.queue.registerHandler(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.queue.registerHandler(...args: unknown[]): unknown
+registerHandler(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Register a handler for a queue item type.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.queue.removeByKey :id=removebykey
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L40" target="_blank" rel="noopener">queue.d.ts:40</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### removeByKey() :id=removebykey
+<div class="smt-member-sig" data-sig="sandkit.engine.api.queue.removeByKey(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.queue.removeByKey(...args: unknown[]): unknown
+removeByKey(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/queue.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L40)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Remove queued items by key.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

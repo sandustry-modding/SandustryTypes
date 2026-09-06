@@ -6,120 +6,130 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### ensure() :id=ensure
+<div class="smt-member-card">
+
+### sandkit.api.storage.ensure :id=ensure
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L15" target="_blank" rel="noopener">storage.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.storage.ensure(modId: string): JsonObjectV1">
 
 ```ts
-sandkit.api.storage.ensure(modId: string): JsonObjectV1
+ensure(modId: string): JsonObjectV1
 ```
 
-Defined in: [sandkit/api/storage.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| modId | `string` | Mod identifier (typically `modinfo.id`). |
+
+<div class="smt-member-anchors">
+
+##### modId <!-- {docsify-ignore} -->
+
+</div>
 
 Ensure storage exists for a mod id.
 
-#### Parameters
+[`JsonObjectV1`](api/shared.jsonvalue.md?id=jsonobjectv1)
 
-##### modId
+</div>
 
-`string`
+<div class="smt-member-card">
 
-Mod identifier (typically `modinfo.id`).
+### sandkit.api.storage.get :id=get
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L21" target="_blank" rel="noopener">storage.d.ts:21</a></p>
 
-[`JsonObjectV1`](api/shared.jsonvalue.md#jsonobjectv1)
-
-***
-
-### get() :id=get
+<div class="smt-member-sig" data-sig="sandkit.api.storage.get(modId: string, key: string): JsonValueV1 | undefined">
 
 ```ts
-sandkit.api.storage.get(modId: string, key: string): JsonValueV1 | undefined
+get(modId: string, key: string): JsonValueV1 | undefined
 ```
 
-Defined in: [sandkit/api/storage.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L21)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| modId | `string` | Mod identifier. |
+| key | `string` | Storage key. |
+
+<div class="smt-member-anchors">
+
+##### modId <!-- {docsify-ignore} -->
+
+##### key <!-- {docsify-ignore} -->
+
+</div>
 
 Read a value from mod storage by key.
 
-#### Parameters
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
 
-##### modId
+</div>
 
-`string`
+<div class="smt-member-card">
 
-Mod identifier.
+### sandkit.api.storage.set :id=set
 
-##### key
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L28" target="_blank" rel="noopener">storage.d.ts:28</a></p>
 
-`string`
-
-Storage key.
-
-#### Returns
-
-[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1) \| `undefined`
-
-***
-
-### set() :id=set
+<div class="smt-member-sig" data-sig="sandkit.api.storage.set(modId: string, key: string, value: JsonValueV1): void">
 
 ```ts
-sandkit.api.storage.set(modId: string, key: string, value: JsonValueV1): void
+set(modId: string, key: string, value: JsonValueV1): void
 ```
 
-Defined in: [sandkit/api/storage.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L28)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| modId | `string` | Mod identifier. |
+| key | `string` | Storage key. |
+| value | [`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) | JSON-serializable value. |
+
+<div class="smt-member-anchors">
+
+##### modId <!-- {docsify-ignore} -->
+
+##### key <!-- {docsify-ignore} -->
+
+##### value <!-- {docsify-ignore} -->
+
+</div>
 
 Write a value to mod storage by key.
 
-#### Parameters
+</div>
 
-##### modId
+<div class="smt-member-card">
 
-`string`
+### sandkit.api.storage.remove :id=remove
 
-Mod identifier.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L34" target="_blank" rel="noopener">storage.d.ts:34</a></p>
 
-##### key
-
-`string`
-
-Storage key.
-
-##### value
-
-[`JsonValueV1`](api/shared.jsonvalue.md#jsonvaluev1)
-
-JSON-serializable value.
-
-#### Returns
-
-`void`
-
-***
-
-### remove() :id=remove
+<div class="smt-member-sig" data-sig="sandkit.api.storage.remove(modId: string, key: string): void">
 
 ```ts
-sandkit.api.storage.remove(modId: string, key: string): void
+remove(modId: string, key: string): void
 ```
 
-Defined in: [sandkit/api/storage.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L34)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| modId | `string` | Mod identifier. |
+| key | `string` | Storage key. |
+
+<div class="smt-member-anchors">
+
+##### modId <!-- {docsify-ignore} -->
+
+##### key <!-- {docsify-ignore} -->
+
+</div>
 
 Remove a key from mod storage.
 
-#### Parameters
-
-##### modId
-
-`string`
-
-Mod identifier.
-
-##### key
-
-`string`
-
-Storage key.
-
-#### Returns
-
-`void`
+</div>

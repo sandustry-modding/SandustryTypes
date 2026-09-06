@@ -6,30 +6,50 @@ Phases of a held or repeated player action.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Start :id=start
+<div class="smt-member-card">
+
+### sandkit.enums.ActionState.Start :id=start
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L18" target="_blank" rel="noopener">index.d.ts:18</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ActionState.Start: 1">
 
 ```ts
-sandkit.enums.ActionState.Start: 1
+Start: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L18)
+</div>
 
-***
+</div>
 
-### Active :id=active
+<div class="smt-member-card">
+
+### sandkit.enums.ActionState.Active :id=active
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L19" target="_blank" rel="noopener">index.d.ts:19</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ActionState.Active: 2">
 
 ```ts
-sandkit.enums.ActionState.Active: 2
+Active: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L19)
+</div>
 
-***
+</div>
 
-### End :id=end
+<div class="smt-member-card">
+
+### sandkit.enums.ActionState.End :id=end
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L20" target="_blank" rel="noopener">index.d.ts:20</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.ActionState.End: 3">
 
 ```ts
-sandkit.enums.ActionState.End: 3
+End: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L20)
+</div>
+
+</div>

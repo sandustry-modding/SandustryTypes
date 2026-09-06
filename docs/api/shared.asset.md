@@ -2,31 +2,25 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### AssetRef :id=assetref
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>shared.asset.AssetRef</code></p>
-Defined in: [shared/asset.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/asset.d.ts#L9)
+### shared.asset.AssetRef :id=assetref
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/asset.d.ts#L9" target="_blank" rel="noopener">asset.d.ts:9</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| id | number | Runtime asset id. |
+| type | number | Asset category discriminator used by the renderer. |
+
+<div class="smt-member-anchors">
+
+##### id <!-- {docsify-ignore} -->
+
+##### type <!-- {docsify-ignore} -->
+
+</div>
 
 Reference to a loaded sprite or texture asset.
 
-#### Properties
-
-##### id
-
-```ts
-id: number
-```
-
-Defined in: [shared/asset.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/asset.d.ts#L11)
-
-Runtime asset id.
-
-##### type
-
-```ts
-type: number
-```
-
-Defined in: [shared/asset.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/asset.d.ts#L13)
-
-Asset category discriminator used by the renderer.
+</div>

@@ -6,1110 +6,1778 @@ Tech tree node ids (mixed numeric and string keys).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Shaker :id=shaker
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Shaker :id=shaker
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L290" target="_blank" rel="noopener">index.d.ts:290</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Shaker: 1">
+
 ```ts
-sandkit.enums.Tech.Shaker: 1
+Shaker: 1
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L290)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Conveyors :id=conveyors
 
-### Conveyors :id=conveyors
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L291" target="_blank" rel="noopener">index.d.ts:291</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Conveyors: 2">
+
 ```ts
-sandkit.enums.Tech.Conveyors: 2
+Conveyors: 2
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:291](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L291)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Guns1 :id=guns1
+### sandkit.enums.Tech.Guns1 :id=guns1
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L292" target="_blank" rel="noopener">index.d.ts:292</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Guns1: 3">
+
 ```ts
-sandkit.enums.Tech.Guns1: 3
+Guns1: 3
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:292](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L292)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Filters1 :id=filters1
+### sandkit.enums.Tech.Filters1 :id=filters1
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L293" target="_blank" rel="noopener">index.d.ts:293</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Filters1: 4">
+
 ```ts
-sandkit.enums.Tech.Filters1: 4
+Filters1: 4
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:293](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L293)
+### sandkit.enums.Tech.Flamethrower :id=flamethrower
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L294" target="_blank" rel="noopener">index.d.ts:294</a></p>
 
-### Flamethrower :id=flamethrower
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Flamethrower: 5">
 
 ```ts
-sandkit.enums.Tech.Flamethrower: 5
+Flamethrower: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L294)
+</div>
 
-***
+</div>
 
-### Gun :id=gun
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Gun :id=gun
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L295" target="_blank" rel="noopener">index.d.ts:295</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Gun: 6">
+
 ```ts
-sandkit.enums.Tech.Gun: 6
+Gun: 6
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:295](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L295)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.KineticPress :id=kineticpress
 
-### KineticPress :id=kineticpress
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L296" target="_blank" rel="noopener">index.d.ts:296</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.KineticPress: 7">
+
 ```ts
-sandkit.enums.Tech.KineticPress: 7
+KineticPress: 7
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:296](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L296)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Guns2 :id=guns2
+### sandkit.enums.Tech.Guns2 :id=guns2
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L297" target="_blank" rel="noopener">index.d.ts:297</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Guns2: 8">
+
 ```ts
-sandkit.enums.Tech.Guns2: 8
+Guns2: 8
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:297](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L297)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Drones1 :id=drones1
+### sandkit.enums.Tech.Drones1 :id=drones1
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L298" target="_blank" rel="noopener">index.d.ts:298</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Drones1: 9">
+
 ```ts
-sandkit.enums.Tech.Drones1: 9
+Drones1: 9
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L298)
+### sandkit.enums.Tech.Upgrading2 :id=upgrading2
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L299" target="_blank" rel="noopener">index.d.ts:299</a></p>
 
-### Upgrading2 :id=upgrading2
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Upgrading2: 10">
 
 ```ts
-sandkit.enums.Tech.Upgrading2: 10
+Upgrading2: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:299](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L299)
+</div>
 
-***
+</div>
 
-### Filters2 :id=filters2
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Filters2 :id=filters2
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L300" target="_blank" rel="noopener">index.d.ts:300</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Filters2: 11">
+
 ```ts
-sandkit.enums.Tech.Filters2: 11
+Filters2: 11
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:300](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L300)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Upgrading3 :id=upgrading3
 
-### Upgrading3 :id=upgrading3
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L301" target="_blank" rel="noopener">index.d.ts:301</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Upgrading3: 12">
+
 ```ts
-sandkit.enums.Tech.Upgrading3: 12
+Upgrading3: 12
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:301](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L301)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Upgrading4 :id=upgrading4
 
-### Upgrading4 :id=upgrading4
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L302" target="_blank" rel="noopener">index.d.ts:302</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Upgrading4: 13">
+
 ```ts
-sandkit.enums.Tech.Upgrading4: 13
+Upgrading4: 13
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:302](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L302)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Upgrading5 :id=upgrading5
 
-### Upgrading5 :id=upgrading5
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L303" target="_blank" rel="noopener">index.d.ts:303</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Upgrading5: 14">
+
 ```ts
-sandkit.enums.Tech.Upgrading5: 14
+Upgrading5: 14
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:303](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L303)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Upgrading6 :id=upgrading6
+### sandkit.enums.Tech.Upgrading6 :id=upgrading6
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L304" target="_blank" rel="noopener">index.d.ts:304</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Upgrading6: 15">
+
 ```ts
-sandkit.enums.Tech.Upgrading6: 15
+Upgrading6: 15
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:304](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L304)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Upgrading7 :id=upgrading7
+### sandkit.enums.Tech.Upgrading7 :id=upgrading7
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L305" target="_blank" rel="noopener">index.d.ts:305</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Upgrading7: 16">
+
 ```ts
-sandkit.enums.Tech.Upgrading7: 16
+Upgrading7: 16
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L305)
+### sandkit.enums.Tech.Upgrading8 :id=upgrading8
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L306" target="_blank" rel="noopener">index.d.ts:306</a></p>
 
-### Upgrading8 :id=upgrading8
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Upgrading8: 17">
 
 ```ts
-sandkit.enums.Tech.Upgrading8: 17
+Upgrading8: 17
 ```
 
-Defined in: [sandkit/enums/index.d.ts:306](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L306)
+</div>
 
-***
+</div>
 
-### Upgrading9 :id=upgrading9
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Upgrading9 :id=upgrading9
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L307" target="_blank" rel="noopener">index.d.ts:307</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Upgrading9: 18">
+
 ```ts
-sandkit.enums.Tech.Upgrading9: 18
+Upgrading9: 18
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L307)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Upgrading10 :id=upgrading10
 
-### Upgrading10 :id=upgrading10
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L308" target="_blank" rel="noopener">index.d.ts:308</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Upgrading10: 19">
+
 ```ts
-sandkit.enums.Tech.Upgrading10: 19
+Upgrading10: 19
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:308](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L308)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.PlanterBox :id=planterbox
 
-### PlanterBox :id=planterbox
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L309" target="_blank" rel="noopener">index.d.ts:309</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.PlanterBox: 20">
+
 ```ts
-sandkit.enums.Tech.PlanterBox: 20
+PlanterBox: 20
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:309](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L309)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Thermo :id=thermo
 
-### Thermo :id=thermo
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L310" target="_blank" rel="noopener">index.d.ts:310</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Thermo: 21">
+
 ```ts
-sandkit.enums.Tech.Thermo: 21
+Thermo: 21
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:310](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L310)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Rocket :id=rocket
+### sandkit.enums.Tech.Rocket :id=rocket
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L311" target="_blank" rel="noopener">index.d.ts:311</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Rocket: 22">
+
 ```ts
-sandkit.enums.Tech.Rocket: 22
+Rocket: 22
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L311)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Pipes :id=pipes
+### sandkit.enums.Tech.Pipes :id=pipes
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L312" target="_blank" rel="noopener">index.d.ts:312</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Pipes: 23">
+
 ```ts
-sandkit.enums.Tech.Pipes: 23
+Pipes: 23
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:312](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L312)
+### sandkit.enums.Tech.StaticLights :id=staticlights
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L313" target="_blank" rel="noopener">index.d.ts:313</a></p>
 
-### StaticLights :id=staticlights
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.StaticLights: 24">
 
 ```ts
-sandkit.enums.Tech.StaticLights: 24
+StaticLights: 24
 ```
 
-Defined in: [sandkit/enums/index.d.ts:313](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L313)
+</div>
 
-***
+</div>
 
-### Drones2 :id=drones2
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Drones2 :id=drones2
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L314" target="_blank" rel="noopener">index.d.ts:314</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Drones2: 25">
+
 ```ts
-sandkit.enums.Tech.Drones2: 25
+Drones2: 25
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:314](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L314)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Smelter :id=smelter
 
-### Smelter :id=smelter
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L315" target="_blank" rel="noopener">index.d.ts:315</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Smelter: 26">
+
 ```ts
-sandkit.enums.Tech.Smelter: 26
+Smelter: 26
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:315](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L315)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Tools4 :id=tools4
 
-### Tools4 :id=tools4
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L316" target="_blank" rel="noopener">index.d.ts:316</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Tools4: 27">
+
 ```ts
-sandkit.enums.Tech.Tools4: 27
+Tools4: 27
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:316](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L316)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Guns3 :id=guns3
 
-### Guns3 :id=guns3
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L317" target="_blank" rel="noopener">index.d.ts:317</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Guns3: 28">
+
 ```ts
-sandkit.enums.Tech.Guns3: 28
+Guns3: 28
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L317)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Pipes2 :id=pipes2
+### sandkit.enums.Tech.Pipes2 :id=pipes2
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L318" target="_blank" rel="noopener">index.d.ts:318</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Pipes2: 29">
+
 ```ts
-sandkit.enums.Tech.Pipes2: 29
+Pipes2: 29
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:318](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L318)
+</div>
 
-***
+<div class="smt-member-card">
 
-### ConveyorsMk2 :id=conveyorsmk2
+### sandkit.enums.Tech.ConveyorsMk2 :id=conveyorsmk2
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L319" target="_blank" rel="noopener">index.d.ts:319</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.ConveyorsMk2: 30">
+
 ```ts
-sandkit.enums.Tech.ConveyorsMk2: 30
+ConveyorsMk2: 30
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:319](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L319)
+### sandkit.enums.Tech.Lights2 :id=lights2
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L320" target="_blank" rel="noopener">index.d.ts:320</a></p>
 
-### Lights2 :id=lights2
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Lights2: 31">
 
 ```ts
-sandkit.enums.Tech.Lights2: 31
+Lights2: 31
 ```
 
-Defined in: [sandkit/enums/index.d.ts:320](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L320)
+</div>
 
-***
+</div>
 
-### Refining6 :id=refining6
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Refining6 :id=refining6
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L321" target="_blank" rel="noopener">index.d.ts:321</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Refining6: 32">
+
 ```ts
-sandkit.enums.Tech.Refining6: 32
+Refining6: 32
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:321](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L321)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Refining7 :id=refining7
 
-### Refining7 :id=refining7
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L322" target="_blank" rel="noopener">index.d.ts:322</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Refining7: 33">
+
 ```ts
-sandkit.enums.Tech.Refining7: 33
+Refining7: 33
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:322](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L322)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Guns4 :id=guns4
 
-### Guns4 :id=guns4
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L323" target="_blank" rel="noopener">index.d.ts:323</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Guns4: 34">
+
 ```ts
-sandkit.enums.Tech.Guns4: 34
+Guns4: 34
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L323)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Guns5 :id=guns5
 
-### Guns5 :id=guns5
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L324" target="_blank" rel="noopener">index.d.ts:324</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Guns5: 35">
+
 ```ts
-sandkit.enums.Tech.Guns5: 35
+Guns5: 35
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:324](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L324)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Tools5 :id=tools5
+### sandkit.enums.Tech.Tools5 :id=tools5
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L325" target="_blank" rel="noopener">index.d.ts:325</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Tools5: 36">
+
 ```ts
-sandkit.enums.Tech.Tools5: 36
+Tools5: 36
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:325](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L325)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Tools6 :id=tools6
+### sandkit.enums.Tech.Tools6 :id=tools6
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L326" target="_blank" rel="noopener">index.d.ts:326</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Tools6: 37">
+
 ```ts
-sandkit.enums.Tech.Tools6: 37
+Tools6: 37
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:326](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L326)
+### sandkit.enums.Tech.Filters3 :id=filters3
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L327" target="_blank" rel="noopener">index.d.ts:327</a></p>
 
-### Filters3 :id=filters3
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Filters3: 38">
 
 ```ts
-sandkit.enums.Tech.Filters3: 38
+Filters3: 38
 ```
 
-Defined in: [sandkit/enums/index.d.ts:327](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L327)
+</div>
 
-***
+</div>
 
-### Filters4 :id=filters4
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Filters4 :id=filters4
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L328" target="_blank" rel="noopener">index.d.ts:328</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Filters4: 39">
+
 ```ts
-sandkit.enums.Tech.Filters4: 39
+Filters4: 39
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:328](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L328)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Pipes3 :id=pipes3
 
-### Pipes3 :id=pipes3
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L329" target="_blank" rel="noopener">index.d.ts:329</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Pipes3: 40">
+
 ```ts
-sandkit.enums.Tech.Pipes3: 40
+Pipes3: 40
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L329)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Pipes4 :id=pipes4
 
-### Pipes4 :id=pipes4
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L330" target="_blank" rel="noopener">index.d.ts:330</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Pipes4: 41">
+
 ```ts
-sandkit.enums.Tech.Pipes4: 41
+Pipes4: 41
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:330](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L330)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Logistics3 :id=logistics3
 
-### Logistics3 :id=logistics3
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L331" target="_blank" rel="noopener">index.d.ts:331</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Logistics3: 42">
+
 ```ts
-sandkit.enums.Tech.Logistics3: 42
+Logistics3: 42
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:331](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L331)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Logistics4 :id=logistics4
+### sandkit.enums.Tech.Logistics4 :id=logistics4
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L332" target="_blank" rel="noopener">index.d.ts:332</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Logistics4: 43">
+
 ```ts
-sandkit.enums.Tech.Logistics4: 43
+Logistics4: 43
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:332](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L332)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Lights3 :id=lights3
+### sandkit.enums.Tech.Lights3 :id=lights3
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L333" target="_blank" rel="noopener">index.d.ts:333</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Lights3: 44">
+
 ```ts
-sandkit.enums.Tech.Lights3: 44
+Lights3: 44
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:333](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L333)
+### sandkit.enums.Tech.Lights4 :id=lights4
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L334" target="_blank" rel="noopener">index.d.ts:334</a></p>
 
-### Lights4 :id=lights4
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Lights4: 45">
 
 ```ts
-sandkit.enums.Tech.Lights4: 45
+Lights4: 45
 ```
 
-Defined in: [sandkit/enums/index.d.ts:334](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L334)
+</div>
 
-***
+</div>
 
-### Drones3 :id=drones3
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Drones3 :id=drones3
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L335" target="_blank" rel="noopener">index.d.ts:335</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Drones3: 46">
+
 ```ts
-sandkit.enums.Tech.Drones3: 46
+Drones3: 46
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L335)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Drones4 :id=drones4
 
-### Drones4 :id=drones4
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L336" target="_blank" rel="noopener">index.d.ts:336</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Drones4: 47">
+
 ```ts
-sandkit.enums.Tech.Drones4: 47
+Drones4: 47
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:336](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L336)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Alien :id=alien
 
-### Alien :id=alien
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L337" target="_blank" rel="noopener">index.d.ts:337</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Alien: 48">
+
 ```ts
-sandkit.enums.Tech.Alien: 48
+Alien: 48
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:337](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L337)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Electricity :id=electricity
 
-### Electricity :id=electricity
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L338" target="_blank" rel="noopener">index.d.ts:338</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Electricity: 49">
+
 ```ts
-sandkit.enums.Tech.Electricity: 49
+Electricity: 49
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L338)
+</div>
 
-***
+<div class="smt-member-card">
 
-### AlienCore :id=aliencore
+### sandkit.enums.Tech.AlienCore :id=aliencore
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L339" target="_blank" rel="noopener">index.d.ts:339</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.AlienCore: 50">
+
 ```ts
-sandkit.enums.Tech.AlienCore: 50
+AlienCore: 50
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L339)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Emanators1 :id=emanators1
+### sandkit.enums.Tech.Emanators1 :id=emanators1
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L340" target="_blank" rel="noopener">index.d.ts:340</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Emanators1: 51">
+
 ```ts
-sandkit.enums.Tech.Emanators1: 51
+Emanators1: 51
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:340](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L340)
+### sandkit.enums.Tech.AlienPlasmaConduits :id=alienplasmaconduits
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L341" target="_blank" rel="noopener">index.d.ts:341</a></p>
 
-### AlienPlasmaConduits :id=alienplasmaconduits
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.AlienPlasmaConduits: 52">
 
 ```ts
-sandkit.enums.Tech.AlienPlasmaConduits: 52
+AlienPlasmaConduits: 52
 ```
 
-Defined in: [sandkit/enums/index.d.ts:341](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L341)
+</div>
 
-***
+</div>
 
-### AlienQuantumMatrix :id=alienquantummatrix
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.AlienQuantumMatrix :id=alienquantummatrix
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L342" target="_blank" rel="noopener">index.d.ts:342</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.AlienQuantumMatrix: 53">
+
 ```ts
-sandkit.enums.Tech.AlienQuantumMatrix: 53
+AlienQuantumMatrix: 53
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:342](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L342)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.AlienPlasmaCore :id=alienplasmacore
 
-### AlienPlasmaCore :id=alienplasmacore
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L343" target="_blank" rel="noopener">index.d.ts:343</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.AlienPlasmaCore: 54">
+
 ```ts
-sandkit.enums.Tech.AlienPlasmaCore: 54
+AlienPlasmaCore: 54
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:343](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L343)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.AlienVoidEngine :id=alienvoidengine
 
-### AlienVoidEngine :id=alienvoidengine
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L344" target="_blank" rel="noopener">index.d.ts:344</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.AlienVoidEngine: 55">
+
 ```ts
-sandkit.enums.Tech.AlienVoidEngine: 55
+AlienVoidEngine: 55
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:344](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L344)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.FlareGun :id=flaregun
 
-### FlareGun :id=flaregun
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L345" target="_blank" rel="noopener">index.d.ts:345</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.FlareGun: 56">
+
 ```ts
-sandkit.enums.Tech.FlareGun: 56
+FlareGun: 56
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:345](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L345)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Sweeper :id=sweeper
+### sandkit.enums.Tech.Sweeper :id=sweeper
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L346" target="_blank" rel="noopener">index.d.ts:346</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Sweeper: 57">
+
 ```ts
-sandkit.enums.Tech.Sweeper: 57
+Sweeper: 57
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:346](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L346)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Utilities3 :id=utilities3
+### sandkit.enums.Tech.Utilities3 :id=utilities3
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L347" target="_blank" rel="noopener">index.d.ts:347</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Utilities3: 58">
+
 ```ts
-sandkit.enums.Tech.Utilities3: 58
+Utilities3: 58
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:347](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L347)
+### sandkit.enums.Tech.Cryoblaster :id=cryoblaster
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L348" target="_blank" rel="noopener">index.d.ts:348</a></p>
 
-### Cryoblaster :id=cryoblaster
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Cryoblaster: 59">
 
 ```ts
-sandkit.enums.Tech.Cryoblaster: 59
+Cryoblaster: 59
 ```
 
-Defined in: [sandkit/enums/index.d.ts:348](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L348)
+</div>
 
-***
+</div>
 
-### Vacuum :id=vacuum
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Vacuum :id=vacuum
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L349" target="_blank" rel="noopener">index.d.ts:349</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Vacuum: 60">
+
 ```ts
-sandkit.enums.Tech.Vacuum: 60
+Vacuum: 60
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L349)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Utilities6 :id=utilities6
 
-### Utilities6 :id=utilities6
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L350" target="_blank" rel="noopener">index.d.ts:350</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Utilities6: 61">
+
 ```ts
-sandkit.enums.Tech.Utilities6: 61
+Utilities6: 61
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:350](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L350)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Utilities7 :id=utilities7
+### sandkit.enums.Tech.Utilities7 :id=utilities7
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L351" target="_blank" rel="noopener">index.d.ts:351</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Utilities7: 62">
+
 ```ts
-sandkit.enums.Tech.Utilities7: 62
+Utilities7: 62
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:351](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L351)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Filters :id=filters
+### sandkit.enums.Tech.Filters :id=filters
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L352" target="_blank" rel="noopener">index.d.ts:352</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Filters: 63">
+
 ```ts
-sandkit.enums.Tech.Filters: 63
+Filters: 63
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:352](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L352)
+### sandkit.enums.Tech.AdvancedFilters :id=advancedfilters
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L353" target="_blank" rel="noopener">index.d.ts:353</a></p>
 
-### AdvancedFilters :id=advancedfilters
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.AdvancedFilters: 64">
 
 ```ts
-sandkit.enums.Tech.AdvancedFilters: 64
+AdvancedFilters: 64
 ```
 
-Defined in: [sandkit/enums/index.d.ts:353](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L353)
+</div>
 
-***
+</div>
 
-### Infrastructure3 :id=infrastructure3
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Infrastructure3 :id=infrastructure3
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L354" target="_blank" rel="noopener">index.d.ts:354</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Infrastructure3: 65">
+
 ```ts
-sandkit.enums.Tech.Infrastructure3: 65
+Infrastructure3: 65
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:354](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L354)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Decorations1 :id=decorations1
 
-### Decorations1 :id=decorations1
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L355" target="_blank" rel="noopener">index.d.ts:355</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Decorations1: 66">
+
 ```ts
-sandkit.enums.Tech.Decorations1: 66
+Decorations1: 66
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:355](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L355)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Decorations2 :id=decorations2
+### sandkit.enums.Tech.Decorations2 :id=decorations2
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L356" target="_blank" rel="noopener">index.d.ts:356</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Decorations2: 67">
+
 ```ts
-sandkit.enums.Tech.Decorations2: 67
+Decorations2: 67
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:356](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L356)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Decorations3 :id=decorations3
+### sandkit.enums.Tech.Decorations3 :id=decorations3
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L357" target="_blank" rel="noopener">index.d.ts:357</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Decorations3: 68">
+
 ```ts
-sandkit.enums.Tech.Decorations3: 68
+Decorations3: 68
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:357](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L357)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Blocks1 :id=blocks1
+### sandkit.enums.Tech.Blocks1 :id=blocks1
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L358" target="_blank" rel="noopener">index.d.ts:358</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Blocks1: 69">
+
 ```ts
-sandkit.enums.Tech.Blocks1: 69
+Blocks1: 69
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L358)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Drill :id=drill
+### sandkit.enums.Tech.Drill :id=drill
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L359" target="_blank" rel="noopener">index.d.ts:359</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Drill: 70">
+
 ```ts
-sandkit.enums.Tech.Drill: 70
+Drill: 70
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:359](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L359)
+### sandkit.enums.Tech.SteamTurbine :id=steamturbine
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L360" target="_blank" rel="noopener">index.d.ts:360</a></p>
 
-### SteamTurbine :id=steamturbine
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.SteamTurbine: 71">
 
 ```ts
-sandkit.enums.Tech.SteamTurbine: 71
+SteamTurbine: 71
 ```
 
-Defined in: [sandkit/enums/index.d.ts:360](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L360)
+</div>
 
-***
+</div>
 
-### Electricity3 :id=electricity3
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Electricity3 :id=electricity3
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L361" target="_blank" rel="noopener">index.d.ts:361</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Electricity3: 72">
+
 ```ts
-sandkit.enums.Tech.Electricity3: 72
+Electricity3: 72
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:361](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L361)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Electricity4 :id=electricity4
 
-### Electricity4 :id=electricity4
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L362" target="_blank" rel="noopener">index.d.ts:362</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Electricity4: 73">
+
 ```ts
-sandkit.enums.Tech.Electricity4: 73
+Electricity4: 73
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:362](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L362)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Logic1 :id=logic1
+### sandkit.enums.Tech.Logic1 :id=logic1
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L363" target="_blank" rel="noopener">index.d.ts:363</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Logic1: 74">
+
 ```ts
-sandkit.enums.Tech.Logic1: 74
+Logic1: 74
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:363](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L363)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Logic2 :id=logic2
+### sandkit.enums.Tech.Logic2 :id=logic2
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L364" target="_blank" rel="noopener">index.d.ts:364</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Logic2: 75">
+
 ```ts
-sandkit.enums.Tech.Logic2: 75
+Logic2: 75
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:364](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L364)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Logic3 :id=logic3
+### sandkit.enums.Tech.Logic3 :id=logic3
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L365" target="_blank" rel="noopener">index.d.ts:365</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Logic3: 76">
+
 ```ts
-sandkit.enums.Tech.Logic3: 76
+Logic3: 76
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:365](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L365)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Logic4 :id=logic4
+### sandkit.enums.Tech.Logic4 :id=logic4
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L366" target="_blank" rel="noopener">index.d.ts:366</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Logic4: 77">
+
 ```ts
-sandkit.enums.Tech.Logic4: 77
+Logic4: 77
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:366](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L366)
+### sandkit.enums.Tech.Various1 :id=various1
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L367" target="_blank" rel="noopener">index.d.ts:367</a></p>
 
-### Various1 :id=various1
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Various1: 78">
 
 ```ts
-sandkit.enums.Tech.Various1: 78
+Various1: 78
 ```
 
-Defined in: [sandkit/enums/index.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L367)
+</div>
 
-***
+</div>
 
-### Various2 :id=various2
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.Various2 :id=various2
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L368" target="_blank" rel="noopener">index.d.ts:368</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Various2: 79">
+
 ```ts
-sandkit.enums.Tech.Various2: 79
+Various2: 79
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:368](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L368)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Various3 :id=various3
 
-### Various3 :id=various3
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L369" target="_blank" rel="noopener">index.d.ts:369</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Various3: 80">
+
 ```ts
-sandkit.enums.Tech.Various3: 80
+Various3: 80
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:369](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L369)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Locator :id=locator
+### sandkit.enums.Tech.Locator :id=locator
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L370" target="_blank" rel="noopener">index.d.ts:370</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Locator: 81">
+
 ```ts
-sandkit.enums.Tech.Locator: 81
+Locator: 81
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:370](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L370)
+</div>
 
-***
+<div class="smt-member-card">
 
-### QuantumPortal :id=quantumportal
+### sandkit.enums.Tech.QuantumPortal :id=quantumportal
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L371" target="_blank" rel="noopener">index.d.ts:371</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.QuantumPortal: 82">
+
 ```ts
-sandkit.enums.Tech.QuantumPortal: 82
+QuantumPortal: 82
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:371](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L371)
+</div>
 
-***
+<div class="smt-member-card">
 
-### VoidRift :id=voidrift
+### sandkit.enums.Tech.VoidRift :id=voidrift
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L372" target="_blank" rel="noopener">index.d.ts:372</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.VoidRift: 83">
+
 ```ts
-sandkit.enums.Tech.VoidRift: 83
+VoidRift: 83
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:372](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L372)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Blink :id=blink
+### sandkit.enums.Tech.Blink :id=blink
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L373" target="_blank" rel="noopener">index.d.ts:373</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Blink: 84">
+
 ```ts
-sandkit.enums.Tech.Blink: 84
+Blink: 84
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:373](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L373)
+### sandkit.enums.Tech.Recall :id=recall
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L374" target="_blank" rel="noopener">index.d.ts:374</a></p>
 
-### Recall :id=recall
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Recall: 85">
 
 ```ts
-sandkit.enums.Tech.Recall: 85
+Recall: 85
 ```
 
-Defined in: [sandkit/enums/index.d.ts:374](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L374)
+</div>
 
-***
+</div>
 
-### ImplosionGun :id=implosiongun
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.ImplosionGun :id=implosiongun
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L375" target="_blank" rel="noopener">index.d.ts:375</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.ImplosionGun: 86">
+
 ```ts
-sandkit.enums.Tech.ImplosionGun: 86
+ImplosionGun: 86
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:375](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L375)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Refining8 :id=refining8
 
-### Refining8 :id=refining8
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L376" target="_blank" rel="noopener">index.d.ts:376</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Refining8: 87">
+
 ```ts
-sandkit.enums.Tech.Refining8: 87
+Refining8: 87
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:376](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L376)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Tools7 :id=tools7
+### sandkit.enums.Tech.Tools7 :id=tools7
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L377" target="_blank" rel="noopener">index.d.ts:377</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Tools7: 88">
+
 ```ts
-sandkit.enums.Tech.Tools7: 88
+Tools7: 88
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L377)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Diggers :id=diggers
+### sandkit.enums.Tech.Diggers :id=diggers
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L378" target="_blank" rel="noopener">index.d.ts:378</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Diggers: 89">
+
 ```ts
-sandkit.enums.Tech.Diggers: 89
+Diggers: 89
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:378](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L378)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Haulers :id=haulers
+### sandkit.enums.Tech.Haulers :id=haulers
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L379" target="_blank" rel="noopener">index.d.ts:379</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Haulers: 90">
+
 ```ts
-sandkit.enums.Tech.Haulers: 90
+Haulers: 90
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:379](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L379)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Map :id=map
+### sandkit.enums.Tech.Map :id=map
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L380" target="_blank" rel="noopener">index.d.ts:380</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Map: 91">
+
 ```ts
-sandkit.enums.Tech.Map: 91
+Map: 91
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:380](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L380)
+### sandkit.enums.Tech.ColoringTool :id=coloringtool
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L381" target="_blank" rel="noopener">index.d.ts:381</a></p>
 
-### ColoringTool :id=coloringtool
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.ColoringTool: 92">
 
 ```ts
-sandkit.enums.Tech.ColoringTool: 92
+ColoringTool: 92
 ```
 
-Defined in: [sandkit/enums/index.d.ts:381](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L381)
+</div>
 
-***
+</div>
 
-### SignalGate :id=signalgate
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.SignalGate :id=signalgate
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L382" target="_blank" rel="noopener">index.d.ts:382</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.SignalGate: 93">
+
 ```ts
-sandkit.enums.Tech.SignalGate: 93
+SignalGate: 93
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:382](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L382)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.GrapplingHook :id=grapplinghook
 
-### GrapplingHook :id=grapplinghook
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L383" target="_blank" rel="noopener">index.d.ts:383</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.GrapplingHook: 94">
+
 ```ts
-sandkit.enums.Tech.GrapplingHook: 94
+GrapplingHook: 94
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:383](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L383)
+</div>
 
-***
+<div class="smt-member-card">
 
-### GlassFoundation :id=glassfoundation
+### sandkit.enums.Tech.GlassFoundation :id=glassfoundation
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L384" target="_blank" rel="noopener">index.d.ts:384</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.GlassFoundation: 95">
+
 ```ts
-sandkit.enums.Tech.GlassFoundation: 95
+GlassFoundation: 95
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L384)
+</div>
 
-***
+<div class="smt-member-card">
 
-### PrecisionTools :id=precisiontools
+### sandkit.enums.Tech.PrecisionTools :id=precisiontools
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L385" target="_blank" rel="noopener">index.d.ts:385</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.PrecisionTools: 96">
+
 ```ts
-sandkit.enums.Tech.PrecisionTools: 96
+PrecisionTools: 96
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:385](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L385)
+</div>
 
-***
+<div class="smt-member-card">
 
-### SignalDevices :id=signaldevices
+### sandkit.enums.Tech.SignalDevices :id=signaldevices
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L386" target="_blank" rel="noopener">index.d.ts:386</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.SignalDevices: 97">
+
 ```ts
-sandkit.enums.Tech.SignalDevices: 97
+SignalDevices: 97
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:386](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L386)
+</div>
 
-***
+<div class="smt-member-card">
 
-### SignalControls :id=signalcontrols
+### sandkit.enums.Tech.SignalControls :id=signalcontrols
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L387" target="_blank" rel="noopener">index.d.ts:387</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.SignalControls: 98">
+
 ```ts
-sandkit.enums.Tech.SignalControls: 98
+SignalControls: 98
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:387](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L387)
+### sandkit.enums.Tech.LogicGates :id=logicgates
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L388" target="_blank" rel="noopener">index.d.ts:388</a></p>
 
-### LogicGates :id=logicgates
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.LogicGates: 99">
 
 ```ts
-sandkit.enums.Tech.LogicGates: 99
+LogicGates: 99
 ```
 
-Defined in: [sandkit/enums/index.d.ts:388](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L388)
+</div>
 
-***
+</div>
 
-### RetroConsole :id=retroconsole
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.RetroConsole :id=retroconsole
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L389" target="_blank" rel="noopener">index.d.ts:389</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.RetroConsole: 100">
+
 ```ts
-sandkit.enums.Tech.RetroConsole: 100
+RetroConsole: 100
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:389](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L389)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.WallTool :id=walltool
 
-### WallTool :id=walltool
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L390" target="_blank" rel="noopener">index.d.ts:390</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.WallTool: 101">
+
 ```ts
-sandkit.enums.Tech.WallTool: 101
+WallTool: 101
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:390](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L390)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Corraller :id=corraller
+### sandkit.enums.Tech.Corraller :id=corraller
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L391" target="_blank" rel="noopener">index.d.ts:391</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Corraller: 102">
+
 ```ts
-sandkit.enums.Tech.Corraller: 102
+Corraller: 102
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:391](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L391)
+</div>
 
-***
+<div class="smt-member-card">
 
-### PlainFoundation :id=plainfoundation
+### sandkit.enums.Tech.PlainFoundation :id=plainfoundation
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L392" target="_blank" rel="noopener">index.d.ts:392</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.PlainFoundation: 103">
+
 ```ts
-sandkit.enums.Tech.PlainFoundation: 103
+PlainFoundation: 103
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:392](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L392)
+</div>
 
-***
+<div class="smt-member-card">
 
-### ClearingFrame :id=clearingframe
+### sandkit.enums.Tech.ClearingFrame :id=clearingframe
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L393" target="_blank" rel="noopener">index.d.ts:393</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.ClearingFrame: 104">
+
 ```ts
-sandkit.enums.Tech.ClearingFrame: 104
+ClearingFrame: 104
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:393](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L393)
+</div>
 
-***
+<div class="smt-member-card">
 
-### Heatmap :id=heatmap
+### sandkit.enums.Tech.Heatmap :id=heatmap
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L394" target="_blank" rel="noopener">index.d.ts:394</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Heatmap: 105">
+
 ```ts
-sandkit.enums.Tech.Heatmap: 105
+Heatmap: 105
 ```
+
+</div>
+
+</div>
+
+<div class="smt-member-card">
 
-Defined in: [sandkit/enums/index.d.ts:394](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L394)
+### sandkit.enums.Tech.MiningLaser :id=mininglaser
 
-***
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L395" target="_blank" rel="noopener">index.d.ts:395</a></p>
 
-### MiningLaser :id=mininglaser
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.MiningLaser: 106">
 
 ```ts
-sandkit.enums.Tech.MiningLaser: 106
+MiningLaser: 106
 ```
 
-Defined in: [sandkit/enums/index.d.ts:395](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L395)
+</div>
 
-***
+</div>
 
-### GoldBattery :id=goldbattery
+<div class="smt-member-card">
 
+### sandkit.enums.Tech.GoldBattery :id=goldbattery
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L396" target="_blank" rel="noopener">index.d.ts:396</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.GoldBattery: 107">
+
 ```ts
-sandkit.enums.Tech.GoldBattery: 107
+GoldBattery: 107
 ```
+
+</div>
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:396](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L396)
+<div class="smt-member-card">
 
-***
+### sandkit.enums.Tech.Hover :id=hover
 
-### Hover :id=hover
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L397" target="_blank" rel="noopener">index.d.ts:397</a></p>
 
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.Hover: 108">
+
 ```ts
-sandkit.enums.Tech.Hover: 108
+Hover: 108
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:397](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L397)
+</div>
 
-***
+<div class="smt-member-card">
 
-### SprintBoost :id=sprintboost
+### sandkit.enums.Tech.SprintBoost :id=sprintboost
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L398" target="_blank" rel="noopener">index.d.ts:398</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.SprintBoost: 109">
+
 ```ts
-sandkit.enums.Tech.SprintBoost: 109
+SprintBoost: 109
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:398](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L398)
+</div>
 
-***
+<div class="smt-member-card">
 
-### CritterFence :id=critterfence
+### sandkit.enums.Tech.CritterFence :id=critterfence
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L399" target="_blank" rel="noopener">index.d.ts:399</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.CritterFence: 110">
+
 ```ts
-sandkit.enums.Tech.CritterFence: 110
+CritterFence: 110
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:399](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L399)
+</div>
 
-***
+<div class="smt-member-card">
 
-### FluxEmanator :id=fluxemanator
+### sandkit.enums.Tech.FluxEmanator :id=fluxemanator
 
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L400" target="_blank" rel="noopener">index.d.ts:400</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.Tech.FluxEmanator: &quot;fluxEmanator&quot;">
+
 ```ts
-sandkit.enums.Tech.FluxEmanator: "fluxEmanator"
+FluxEmanator: "fluxEmanator"
 ```
+
+</div>
 
-Defined in: [sandkit/enums/index.d.ts:400](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L400)
+</div>

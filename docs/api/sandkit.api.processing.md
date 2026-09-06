@@ -2,226 +2,189 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### WeightedRecipeOutput :id=weightedrecipeoutput
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.processing.WeightedRecipeOutput</code></p>
-Defined in: [sandkit/api/processing.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L30)
+### sandkit.api.processing.WeightedRecipeOutput :id=weightedrecipeoutput
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L30" target="_blank" rel="noopener">processing.d.ts:30</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| elementType | ElementType | Output element type (1–255). |
+| chance | number | Output probability from 0 to 1. |
+
+<div class="smt-member-anchors">
+
+##### elementType <!-- {docsify-ignore} -->
+
+##### chance <!-- {docsify-ignore} -->
+
+</div>
 
 Weighted element output entry shared by machine recipes.
 
-#### Properties
+</div>
 
-##### elementType
+<div class="smt-member-card">
 
-```ts
-elementType: ElementType
-```
+### sandkit.api.processing.PlanterBoxRecipeDefinitionV1 :id=planterboxrecipedefinitionv1
 
-Defined in: [sandkit/api/processing.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L32)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L38" target="_blank" rel="noopener">processing.d.ts:38</a></p>
 
-Output element type (1–255).
+| Property | Type | Description |
+| --- | --- | --- |
+| input | ElementType | Input element type placed on the grower. |
+| output | ElementType | Output element type produced by the grower. |
+| chance? | number | Success chance from 0 to 1. Default 1. |
 
-##### chance
+<div class="smt-member-anchors">
 
-```ts
-chance: number
-```
+##### input <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/processing.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L34)
+##### output <!-- {docsify-ignore} -->
 
-Output probability from 0 to 1.
+##### chance? <!-- {docsify-ignore} -->
 
-***
-
-### PlanterBoxRecipeDefinitionV1 :id=planterboxrecipedefinitionv1
-
-<p class="smt-member-path"><code>sandkit.api.processing.PlanterBoxRecipeDefinitionV1</code></p>
-Defined in: [sandkit/api/processing.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L38)
+</div>
 
 Planter box grower recipe definition.
 
-#### Properties
+</div>
 
-##### input
+<div class="smt-member-card">
 
-```ts
-input: ElementType
-```
+### sandkit.api.processing.ShakerRecipeDefinitionV1 :id=shakerrecipedefinitionv1
 
-Defined in: [sandkit/api/processing.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L40)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L48" target="_blank" rel="noopener">processing.d.ts:48</a></p>
 
-Input element type placed on the grower.
+| Property | Type | Description |
+| --- | --- | --- |
+| input | ElementType | Input element type dropped on the shaker. |
+| outputsAbove | WeightedRecipeOutput[] | Weighted outputs ejected upward. |
+| outputsBelow | WeightedRecipeOutput[] | Weighted outputs ejected downward. |
 
-##### output
+<div class="smt-member-anchors">
 
-```ts
-output: ElementType
-```
+##### input <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/processing.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L42)
+##### outputsAbove <!-- {docsify-ignore} -->
 
-Output element type produced by the grower.
+##### outputsBelow <!-- {docsify-ignore} -->
 
-##### chance?
-
-```ts
-optional chance?: number
-```
-
-Defined in: [sandkit/api/processing.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L44)
-
-Success chance from 0 to 1. Default 1.
-
-***
-
-### ShakerRecipeDefinitionV1 :id=shakerrecipedefinitionv1
-
-<p class="smt-member-path"><code>sandkit.api.processing.ShakerRecipeDefinitionV1</code></p>
-Defined in: [sandkit/api/processing.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L48)
+</div>
 
 Shaker recipe definition.
 
-#### Properties
+</div>
 
-##### input
+<div class="smt-member-card">
 
-```ts
-input: ElementType
-```
+### sandkit.api.processing.KineticPressRecipeDefinitionV1 :id=kineticpressrecipedefinitionv1
 
-Defined in: [sandkit/api/processing.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L50)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L58" target="_blank" rel="noopener">processing.d.ts:58</a></p>
 
-Input element type dropped on the shaker.
+| Property | Type | Description |
+| --- | --- | --- |
+| input | ElementType | Input element type processed by the press. |
+| minimumDownwardVelocity | number | Minimum downward velocity required to trigger the press. |
+| outputs | WeightedRecipeOutput[] | Weighted outputs produced by the press. |
 
-##### outputsAbove
+<div class="smt-member-anchors">
 
-```ts
-outputsAbove: WeightedRecipeOutput[]
-```
+##### input <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/processing.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L52)
+##### minimumDownwardVelocity <!-- {docsify-ignore} -->
 
-Weighted outputs ejected upward.
+##### outputs <!-- {docsify-ignore} -->
 
-##### outputsBelow
-
-```ts
-outputsBelow: WeightedRecipeOutput[]
-```
-
-Defined in: [sandkit/api/processing.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L54)
-
-Weighted outputs ejected downward.
-
-***
-
-### KineticPressRecipeDefinitionV1 :id=kineticpressrecipedefinitionv1
-
-<p class="smt-member-path"><code>sandkit.api.processing.KineticPressRecipeDefinitionV1</code></p>
-Defined in: [sandkit/api/processing.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L58)
+</div>
 
 Kinetic press recipe definition.
 
-#### Properties
-
-##### input
-
-```ts
-input: ElementType
-```
-
-Defined in: [sandkit/api/processing.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L60)
-
-Input element type processed by the press.
-
-##### minimumDownwardVelocity
-
-```ts
-minimumDownwardVelocity: number
-```
-
-Defined in: [sandkit/api/processing.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L62)
-
-Minimum downward velocity required to trigger the press.
-
-##### outputs
-
-```ts
-outputs: WeightedRecipeOutput[]
-```
-
-Defined in: [sandkit/api/processing.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L64)
-
-Weighted outputs produced by the press.
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### registerGrower() :id=registergrower
+<div class="smt-member-card">
+
+### sandkit.api.processing.registerGrower :id=registergrower
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L15" target="_blank" rel="noopener">processing.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.processing.registerGrower(definition: PlanterBoxRecipeDefinitionV1): void">
 
 ```ts
-sandkit.api.processing.registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
+registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/processing.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| definition | [`PlanterBoxRecipeDefinitionV1`](?id=planterboxrecipedefinitionv1) | Grower input/output recipe. |
+
+<div class="smt-member-anchors">
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register a planter box grower recipe.
 
-#### Parameters
+</div>
 
-##### definition
+<div class="smt-member-card">
 
-[`PlanterBoxRecipeDefinitionV1`](#planterboxrecipedefinitionv1)
+### sandkit.api.processing.registerShaker :id=registershaker
 
-Grower input/output recipe.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L21" target="_blank" rel="noopener">processing.d.ts:21</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### registerShaker() :id=registershaker
+<div class="smt-member-sig" data-sig="sandkit.api.processing.registerShaker(definition: ShakerRecipeDefinitionV1): void">
 
 ```ts
-sandkit.api.processing.registerShaker(definition: ShakerRecipeDefinitionV1): void
+registerShaker(definition: ShakerRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/processing.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L21)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| definition | [`ShakerRecipeDefinitionV1`](?id=shakerrecipedefinitionv1) | Shaker input and weighted outputs. |
+
+<div class="smt-member-anchors">
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register a shaker recipe.
 
-#### Parameters
+</div>
 
-##### definition
+<div class="smt-member-card">
 
-[`ShakerRecipeDefinitionV1`](#shakerrecipedefinitionv1)
+### sandkit.api.processing.registerKineticPress :id=registerkineticpress
 
-Shaker input and weighted outputs.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L27" target="_blank" rel="noopener">processing.d.ts:27</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### registerKineticPress() :id=registerkineticpress
+<div class="smt-member-sig" data-sig="sandkit.api.processing.registerKineticPress(definition: KineticPressRecipeDefinitionV1): void">
 
 ```ts
-sandkit.api.processing.registerKineticPress(definition: KineticPressRecipeDefinitionV1): void
+registerKineticPress(definition: KineticPressRecipeDefinitionV1): void
 ```
 
-Defined in: [sandkit/api/processing.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L27)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| definition | [`KineticPressRecipeDefinitionV1`](?id=kineticpressrecipedefinitionv1) | Press input, velocity threshold, and outputs. |
+
+<div class="smt-member-anchors">
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register a kinetic press recipe.
 
-#### Parameters
-
-##### definition
-
-[`KineticPressRecipeDefinitionV1`](#kineticpressrecipedefinitionv1)
-
-Press input, velocity threshold, and outputs.
-
-#### Returns
-
-`void`
+</div>

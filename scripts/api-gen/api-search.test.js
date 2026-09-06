@@ -222,7 +222,7 @@ test("rewriteApiHrefMap remaps TypeDoc links to flat slugs", () => {
   );
   assert.equal(
     out,
-    "See [ui](api/sandkit.api.ui.md) and [AssetRef](api/shared.asset.md#assetref).",
+    "See [ui](api/sandkit.api.ui.md) and [AssetRef](api/shared.asset.md?id=assetref).",
   );
 });
 

@@ -4,126 +4,148 @@
 
 `sandkit.engine.api.strataform` — strataform event triggers and type registration.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getDefaultConfig() :id=getdefaultconfig
+<div class="smt-member-card">
+
+### sandkit.engine.api.strataform.getDefaultConfig :id=getdefaultconfig
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L15" target="_blank" rel="noopener">strataform.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.strataform.getDefaultConfig(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.strataform.getDefaultConfig(...args: unknown[]): unknown
+getDefaultConfig(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the default strataform configuration.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.strataform.getRegisteredTypes :id=getregisteredtypes
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L20" target="_blank" rel="noopener">strataform.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getRegisteredTypes() :id=getregisteredtypes
+<div class="smt-member-sig" data-sig="sandkit.engine.api.strataform.getRegisteredTypes(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.strataform.getRegisteredTypes(...args: unknown[]): unknown
+getRegisteredTypes(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return all registered strataform types.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.strataform.registerType :id=registertype
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L25" target="_blank" rel="noopener">strataform.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### registerType() :id=registertype
+<div class="smt-member-sig" data-sig="sandkit.engine.api.strataform.registerType(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.strataform.registerType(...args: unknown[]): unknown
+registerType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Register a custom strataform type.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.strataform.trigger :id=trigger
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L30" target="_blank" rel="noopener">strataform.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### trigger() :id=trigger
+<div class="smt-member-sig" data-sig="sandkit.engine.api.strataform.trigger(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.strataform.trigger(...args: unknown[]): unknown
+trigger(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Trigger a strataform event at a location.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.strataform.triggerByType :id=triggerbytype
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L35" target="_blank" rel="noopener">strataform.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### triggerByType() :id=triggerbytype
+<div class="smt-member-sig" data-sig="sandkit.engine.api.strataform.triggerByType(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.strataform.triggerByType(...args: unknown[]): unknown
+triggerByType(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/strataform.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Trigger a strataform event by type id.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

@@ -90,8 +90,11 @@ npm run docs:archive-sandkit      # Fetch official sandkit.html into docs/offici
 
 Output lands in `docs/api/` and `docs/schemas/`.
 Browse namespaces from Search on the docs site.
+The sidebar is the static file `docs/_sidebar.md`.
+`npm run generate` does not rewrite it.
 The combined page is `docs/full.md`.
 `npm run docs` runs that step, then serves the docs site.
+`npm run docs:links` fails when a markdown link does not resolve to a Docsify page or heading id.
 `npm run validate` fails when committed schemas do not match `src/configs/`.
 
 `npm run docs:archive-sandkit` asks for a base file name, then writes `docs/official-api/<name>.md` from https://sandustry.com/sandkit.html.

@@ -2,23 +2,22 @@
 
 ## Functions <!-- {docsify-ignore} -->
 
-### getActive() :id=getactive
+<div class="smt-member-card">
+
+### sandkit.api.scene.getActive :id=getactive
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/scene.d.ts#L14" target="_blank" rel="noopener">scene.d.ts:14</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.scene.getActive(): Scene">
 
 ```ts
-sandkit.api.scene.getActive(): Scene
+getActive(): Scene
 ```
 
-Defined in: [sandkit/api/scene.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/scene.d.ts#L14)
+</div>
 
 Return the active scene.
 
-#### Returns
-
 [`Scene`](api/sandkit.enums.Scene.md)
 
-## References <!-- {docsify-ignore} -->
-
-### Scene :id=scene
-
-<p class="smt-member-path"><code>sandkit.api.scene.Scene</code></p>
-Re-exports [Scene](api/sandkit.enums.Scene.md)
+</div>

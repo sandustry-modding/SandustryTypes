@@ -1,0 +1,105 @@
+/* Generated API member cards (Wayland-style request layout, site colours). */
+
+.markdown-section .smt-member-card {
+  position: relative;
+  margin: 2rem 0 2.4rem;
+  padding: 0 0 0.25rem;
+}
+
+.markdown-section .smt-member-card > :is(h3, h4):first-of-type {
+  margin: 0 7.5rem 0.85rem 0;
+  padding: 0;
+  border: 0;
+  color: var(--link-color);
+  font-family: var(--smt-font-mono, ui-monospace, monospace);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.markdown-section .smt-member-card > :is(h3, h4):first-of-type .smt-heading-text {
+  color: var(--link-color);
+}
+
+.markdown-section .smt-member-badge {
+  position: absolute;
+  top: 0.15rem;
+  right: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+.markdown-section .smt-member-badge a {
+  display: inline-block;
+  padding: 0.18rem 0.7rem;
+  border-radius: 999px;
+  background: #1e1e1e;
+  color: var(--color-text, #dddddd);
+  font-family: inherit;
+  font-size: 0.72rem;
+  font-weight: 400;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.markdown-section .smt-member-badge a:hover {
+  background: #1e1e1e;
+  color: var(--link-color);
+}
+
+.markdown-section .smt-member-sig {
+  margin: 0 0 1.1rem;
+}
+
+.markdown-section .smt-member-sig > pre {
+  margin: 0;
+}
+
+.markdown-section .smt-member-card table {
+  margin: 0 0 1.15rem;
+  width: 100%;
+}
+
+.markdown-section .smt-member-card thead th {
+  color: var(--smt-muted-text, #9a9a9a);
+  font-weight: 600;
+  background: transparent;
+}
+
+.markdown-section .smt-member-card tbody td:first-child {
+  color: var(--heading-color, #f0f0f0);
+  font-family: var(--smt-font-mono, ui-monospace, monospace);
+  white-space: nowrap;
+}
+
+.markdown-section .smt-member-card tbody td:nth-child(2) {
+  font-family: var(--smt-font-mono, ui-monospace, monospace);
+}
+
+.markdown-section .smt-member-card > :is(h4, h5) {
+  margin: 1rem 0 0.45rem;
+  padding: 0;
+  border: 0;
+  color: var(--heading-color);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.markdown-section .smt-member-anchors {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.markdown-section .smt-member-anchors :is(h4, h5, h6) {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1px;
+}

@@ -6,50 +6,82 @@ Key transition state for input polling.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Up :id=up
+<div class="smt-member-card">
+
+### sandkit.enums.KeyState.Up :id=up
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L213" target="_blank" rel="noopener">index.d.ts:213</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyState.Up: 1">
 
 ```ts
-sandkit.enums.KeyState.Up: 1
+Up: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:213](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L213)
+</div>
 
-***
+</div>
 
-### Down :id=down
+<div class="smt-member-card">
+
+### sandkit.enums.KeyState.Down :id=down
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L214" target="_blank" rel="noopener">index.d.ts:214</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyState.Down: 2">
 
 ```ts
-sandkit.enums.KeyState.Down: 2
+Down: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L214)
+</div>
 
-***
+</div>
 
-### Pressed :id=pressed
+<div class="smt-member-card">
+
+### sandkit.enums.KeyState.Pressed :id=pressed
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L215" target="_blank" rel="noopener">index.d.ts:215</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyState.Pressed: 3">
 
 ```ts
-sandkit.enums.KeyState.Pressed: 3
+Pressed: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:215](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L215)
+</div>
 
-***
+</div>
 
-### Released :id=released
+<div class="smt-member-card">
+
+### sandkit.enums.KeyState.Released :id=released
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L216" target="_blank" rel="noopener">index.d.ts:216</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyState.Released: 4">
 
 ```ts
-sandkit.enums.KeyState.Released: 4
+Released: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L216)
+</div>
 
-***
+</div>
 
-### All :id=all
+<div class="smt-member-card">
+
+### sandkit.enums.KeyState.All :id=all
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L217" target="_blank" rel="noopener">index.d.ts:217</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.KeyState.All: 5">
 
 ```ts
-sandkit.enums.KeyState.All: 5
+All: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:217](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L217)
+</div>
+
+</div>

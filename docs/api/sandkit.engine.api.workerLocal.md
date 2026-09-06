@@ -4,101 +4,119 @@
 
 `sandkit.engine.api.workerLocal` — per-worker ephemeral key-value storage.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Available on worker threads only. Values do not persist across workers.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### clear() :id=clear
+<div class="smt-member-card">
+
+### sandkit.engine.api.workerLocal.clear :id=clear
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L14" target="_blank" rel="noopener">workerLocal.d.ts:14</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.workerLocal.clear(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.workerLocal.clear(...args: unknown[]): unknown
+clear(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L14)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Remove all keys from worker-local storage.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.workerLocal.get :id=get
 
-Worker-local context first on workers; otherwise game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L19" target="_blank" rel="noopener">workerLocal.d.ts:19</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### get() :id=get
+<div class="smt-member-sig" data-sig="sandkit.engine.api.workerLocal.get(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.workerLocal.get(...args: unknown[]): unknown
+get(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L19)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return a value by key, or undefined when missing.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.workerLocal.getOrInit :id=getorinit
 
-Worker-local context first on workers; otherwise game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L24" target="_blank" rel="noopener">workerLocal.d.ts:24</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getOrInit() :id=getorinit
+<div class="smt-member-sig" data-sig="sandkit.engine.api.workerLocal.getOrInit(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.workerLocal.getOrInit(...args: unknown[]): unknown
+getOrInit(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L24)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return a value by key, initializing it when missing.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.workerLocal.set :id=set
 
-Worker-local context first on workers; otherwise game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L29" target="_blank" rel="noopener">workerLocal.d.ts:29</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### set() :id=set
+<div class="smt-member-sig" data-sig="sandkit.engine.api.workerLocal.set(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.workerLocal.set(...args: unknown[]): unknown
+set(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/workerLocal.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L29)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Worker-local context first on workers; otherwise game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Store a value by key.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Worker-local context first on workers; otherwise game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

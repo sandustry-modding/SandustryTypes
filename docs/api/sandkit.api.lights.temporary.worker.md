@@ -8,88 +8,84 @@ Short-lived visual effect lights.
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### TemporaryLightHandle :id=temporarylighthandle
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.lights.temporary.TemporaryLightHandle (worker)</code></p>
-Defined in: [worker/api/lights.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L19)
+### sandkit.api.lights.temporary.TemporaryLightHandle :id=temporarylighthandle
 
-Handle returned by [createAtWorld](#createatworld).
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L19" target="_blank" rel="noopener">lights.d.ts:19</a></p>
 
-#### Properties
+| Property | Type | Description |
+| --- | --- | --- |
+| lightId | number \| null | Runtime light id, or null when the pool is full. |
+| ~~index?~~ | number \| null |  |
 
-##### lightId
+<div class="smt-member-anchors">
 
-```ts
-lightId: number | null
-```
+##### lightId <!-- {docsify-ignore} -->
 
-Defined in: [worker/api/lights.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L21)
+##### ~~index?~~ <!-- {docsify-ignore} -->
 
-Runtime light id, or null when the pool is full.
+</div>
 
-##### ~~index?~~
+Handle returned by [createAtWorld](?id=createatworld).
 
-```ts
-optional index?: number | null
-```
-
-Defined in: [worker/api/lights.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L27)
-
-###### Deprecated
-
-Use [lightId](#lightid) instead.
-
-###### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### TemporaryLightOptions :id=temporarylightoptions
+<div class="smt-member-card">
+
+### sandkit.api.lights.temporary.TemporaryLightOptions :id=temporarylightoptions
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L16" target="_blank" rel="noopener">lights.d.ts:16</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.lights.temporary.TemporaryLightOptions = TemporaryLightOptions">
 
 ```ts
-sandkit.api.lights.temporary.TemporaryLightOptions = TemporaryLightOptions
+TemporaryLightOptions = TemporaryLightOptions
 ```
 
-Defined in: [worker/api/lights.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L16)
+</div>
 
-Options for [createAtWorld](#createatworld).
+Options for [createAtWorld](?id=createatworld).
+
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### createAtWorld() :id=createatworld
+<div class="smt-member-card">
+
+### sandkit.api.lights.temporary.createAtWorld :id=createatworld
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L47" target="_blank" rel="noopener">lights.d.ts:47</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.lights.temporary.createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle">
 
 ```ts
-sandkit.api.lights.temporary.createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
+createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
-Defined in: [worker/api/lights.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L47)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` | World x position in pixels. |
+| worldY | `number` | World y position in pixels. |
+| options? | [`TemporaryLightOptions`](api/sandkit.api.effects.md?id=temporarylightoptions) | Brightness, duration, colour, and dedup settings. |
+
+<div class="smt-member-anchors">
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+##### options? <!-- {docsify-ignore} -->
+
+</div>
 
 Create a temporary light at world coordinates.
 
-#### Parameters
-
-##### worldX
-
-`number`
-
-World x position in pixels.
-
-##### worldY
-
-`number`
-
-World y position in pixels.
-
-##### options?
-
-[`TemporaryLightOptions`](api/sandkit.api.effects.md#temporarylightoptions)
-
-Brightness, duration, colour, and dedup settings.
-
-#### Returns
-
-[`TemporaryLightHandle`](#temporarylighthandle)
+[`TemporaryLightHandle`](?id=temporarylighthandle)
 
 #### Example
 
@@ -105,3 +101,5 @@ const lightId = light.lightId;
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>

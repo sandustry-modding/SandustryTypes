@@ -4,222 +4,260 @@
 
 `sandkit.engine.api.factory` — factory tier progression and process tracking.
 
-**Internal API.** Prefer [sandkit.api](api/sandkit.md#api-1) when a public method exists.
+**Internal API.** Prefer [sandkit.api](api/sandkit.md?id=api-1) when a public method exists.
 Methods use loose stubs; signatures may take game state as the first argument.
 Engine methods pass game state as the first argument (args[0]); remaining entries are method-specific.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### addViabilityGold() :id=addviabilitygold
+<div class="smt-member-card">
+
+### sandkit.engine.api.factory.addViabilityGold :id=addviabilitygold
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L15" target="_blank" rel="noopener">factory.d.ts:15</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.engine.api.factory.addViabilityGold(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.factory.addViabilityGold(...args: unknown[]): unknown
+addViabilityGold(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L15)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Add viability gold toward the next factory tier.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.factory.canUnlockNextTier :id=canunlocknexttier
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L20" target="_blank" rel="noopener">factory.d.ts:20</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### canUnlockNextTier() :id=canunlocknexttier
+<div class="smt-member-sig" data-sig="sandkit.engine.api.factory.canUnlockNextTier(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.factory.canUnlockNextTier(...args: unknown[]): unknown
+canUnlockNextTier(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L20)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return whether the next factory tier can be unlocked.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.factory.ensureProcessAtLeast :id=ensureprocessatleast
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L25" target="_blank" rel="noopener">factory.d.ts:25</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### ensureProcessAtLeast() :id=ensureprocessatleast
+<div class="smt-member-sig" data-sig="sandkit.engine.api.factory.ensureProcessAtLeast(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.factory.ensureProcessAtLeast(...args: unknown[]): unknown
+ensureProcessAtLeast(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L25)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Ensure at least the given process count has been recorded.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.factory.flushDeferredLevelUps :id=flushdeferredlevelups
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L30" target="_blank" rel="noopener">factory.d.ts:30</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### flushDeferredLevelUps() :id=flushdeferredlevelups
+<div class="smt-member-sig" data-sig="sandkit.engine.api.factory.flushDeferredLevelUps(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.factory.flushDeferredLevelUps(...args: unknown[]): unknown
+flushDeferredLevelUps(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L30)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Apply deferred factory level-ups.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.factory.getLevel :id=getlevel
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L35" target="_blank" rel="noopener">factory.d.ts:35</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getLevel() :id=getlevel
+<div class="smt-member-sig" data-sig="sandkit.engine.api.factory.getLevel(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.factory.getLevel(...args: unknown[]): unknown
+getLevel(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the current factory level.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.factory.getProcessCount :id=getprocesscount
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L40" target="_blank" rel="noopener">factory.d.ts:40</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getProcessCount() :id=getprocesscount
+<div class="smt-member-sig" data-sig="sandkit.engine.api.factory.getProcessCount(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.factory.getProcessCount(...args: unknown[]): unknown
+getProcessCount(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L40)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return total recorded process count.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.factory.getProcessRate :id=getprocessrate
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L45" target="_blank" rel="noopener">factory.d.ts:45</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### getProcessRate() :id=getprocessrate
+<div class="smt-member-sig" data-sig="sandkit.engine.api.factory.getProcessRate(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.factory.getProcessRate(...args: unknown[]): unknown
+getProcessRate(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L45)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Return the current process rate.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.factory.recordProcess :id=recordprocess
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L50" target="_blank" rel="noopener">factory.d.ts:50</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### recordProcess() :id=recordprocess
+<div class="smt-member-sig" data-sig="sandkit.engine.api.factory.recordProcess(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.factory.recordProcess(...args: unknown[]): unknown
+recordProcess(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L50)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Record one factory process event.
 
-#### Parameters
+</div>
 
-##### args
+<div class="smt-member-card">
 
-...`unknown`[]
+### sandkit.engine.api.factory.unlockNextTier :id=unlocknexttier
 
-Game state first, then method-specific arguments.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L55" target="_blank" rel="noopener">factory.d.ts:55</a></p>
 
-#### Returns
-
-`unknown`
-
-***
-
-### unlockNextTier() :id=unlocknexttier
+<div class="smt-member-sig" data-sig="sandkit.engine.api.factory.unlockNextTier(...args: unknown[]): unknown">
 
 ```ts
-sandkit.engine.api.factory.unlockNextTier(...args: unknown[]): unknown
+unlockNextTier(...args: unknown[]): unknown
 ```
 
-Defined in: [sandkit/engine/api/factory.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L55)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| args | ...`unknown`[] | Game state first, then method-specific arguments. |
+
+<div class="smt-member-anchors">
+
+##### args <!-- {docsify-ignore} -->
+
+</div>
 
 Unlock the next factory tier.
 
-#### Parameters
-
-##### args
-
-...`unknown`[]
-
-Game state first, then method-specific arguments.
-
-#### Returns
-
-`unknown`
+</div>

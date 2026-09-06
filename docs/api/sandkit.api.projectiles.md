@@ -2,10 +2,30 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### ProjectileDefinition :id=projectiledefinition
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileDefinition</code></p>
-Defined in: [sandkit/api/projectiles.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L59)
+### sandkit.api.projectiles.ProjectileDefinition :id=projectiledefinition
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L59" target="_blank" rel="noopener">projectiles.d.ts:59</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| id | string |  |
+| sprite | object |  |
+| getOptions | () => Record<string, unknown> | Returns spawn-time physics and visual options. |
+| getModData? | (state: unknown, projectile: Projectile) => Record<string, unknown> | Optional per-projectile mutable data factory. |
+
+<div class="smt-member-anchors">
+
+##### id <!-- {docsify-ignore} -->
+
+##### sprite <!-- {docsify-ignore} -->
+
+##### getOptions <!-- {docsify-ignore} -->
+
+##### getModData? <!-- {docsify-ignore} -->
+
+</div>
 
 Mod-registered projectile definition.
 
@@ -15,107 +35,52 @@ Mod-registered projectile definition.
 [key: string]: unknown
 ```
 
-#### Properties
+</div>
 
-##### id
+<div class="smt-member-card">
 
-```ts
-id: string
-```
+### sandkit.api.projectiles.ProjectileBlueprint :id=projectileblueprint
 
-Defined in: [sandkit/api/projectiles.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L60)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L73" target="_blank" rel="noopener">projectiles.d.ts:73</a></p>
 
-##### sprite
+| Property | Type | Description |
+| --- | --- | --- |
+| opts | Record<string, unknown> |  |
+| type | unknown |  |
 
-```ts
-sprite: object
-```
+<div class="smt-member-anchors">
 
-Defined in: [sandkit/api/projectiles.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L61)
+##### opts <!-- {docsify-ignore} -->
 
-###### id
+##### type <!-- {docsify-ignore} -->
 
-```ts
-id: string
-```
-
-###### tint?
-
-```ts
-optional tint?: number
-```
-
-##### getOptions
-
-```ts
-getOptions: () => Record<string, unknown>
-```
-
-Defined in: [sandkit/api/projectiles.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L66)
-
-Returns spawn-time physics and visual options.
-
-###### Returns
-
-`Record`\<`string`, `unknown`\>
-
-##### getModData?
-
-```ts
-optional getModData?: (state: unknown, projectile: Projectile) => Record<string, unknown>
-```
-
-Defined in: [sandkit/api/projectiles.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L68)
-
-Optional per-projectile mutable data factory.
-
-###### Parameters
-
-###### state
-
-`unknown`
-
-###### projectile
-
-[`Projectile`](#projectile)
-
-###### Returns
-
-`Record`\<`string`, `unknown`\>
-
-***
-
-### ProjectileBlueprint :id=projectileblueprint
-
-<p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileBlueprint</code></p>
-Defined in: [sandkit/api/projectiles.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L73)
+</div>
 
 Blueprint used to spawn a projectile.
 
-#### Properties
+</div>
 
-##### opts
+<div class="smt-member-card">
 
-```ts
-opts: Record<string, unknown>
-```
+### sandkit.api.projectiles.Projectile :id=projectile
 
-Defined in: [sandkit/api/projectiles.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L74)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L79" target="_blank" rel="noopener">projectiles.d.ts:79</a></p>
 
-##### type
+| Property | Type | Description |
+| --- | --- | --- |
+| id | number |  |
+| x | number |  |
+| y | number |  |
 
-```ts
-type: unknown
-```
+<div class="smt-member-anchors">
 
-Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L75)
+##### id <!-- {docsify-ignore} -->
 
-***
+##### x <!-- {docsify-ignore} -->
 
-### Projectile :id=projectile
+##### y <!-- {docsify-ignore} -->
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.Projectile</code></p>
-Defined in: [sandkit/api/projectiles.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L79)
+</div>
 
 Active projectile instance.
 
@@ -125,210 +90,211 @@ Active projectile instance.
 [key: string]: unknown
 ```
 
-#### Properties
-
-##### id
-
-```ts
-id: number
-```
-
-Defined in: [sandkit/api/projectiles.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L80)
-
-##### x
-
-```ts
-x: number
-```
-
-Defined in: [sandkit/api/projectiles.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L81)
-
-##### y
-
-```ts
-y: number
-```
-
-Defined in: [sandkit/api/projectiles.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L82)
+</div>
 
 ## Functions <!-- {docsify-ignore} -->
 
-### register() :id=register
+<div class="smt-member-card">
+
+### sandkit.api.projectiles.register :id=register
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L13" target="_blank" rel="noopener">projectiles.d.ts:13</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.projectiles.register(definition: ProjectileDefinition): void">
 
 ```ts
-sandkit.api.projectiles.register(definition: ProjectileDefinition): void
+register(definition: ProjectileDefinition): void
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L13)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| definition | [`ProjectileDefinition`](?id=projectiledefinition) | Projectile id, sprite, and runtime options factory. |
+
+<div class="smt-member-anchors">
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register a projectile definition.
 
-#### Parameters
+</div>
 
-##### definition
+<div class="smt-member-card">
 
-[`ProjectileDefinition`](#projectiledefinition)
+### sandkit.api.projectiles.getDefinitionById :id=getdefinitionbyid
 
-Projectile id, sprite, and runtime options factory.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L19" target="_blank" rel="noopener">projectiles.d.ts:19</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### getDefinitionById() :id=getdefinitionbyid
+<div class="smt-member-sig" data-sig="sandkit.api.projectiles.getDefinitionById(projectileId: string): ProjectileDefinition | undefined">
 
 ```ts
-sandkit.api.projectiles.getDefinitionById(projectileId: string): ProjectileDefinition | undefined
+getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L19)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| projectileId | `string` | Registered projectile id. |
+
+<div class="smt-member-anchors">
+
+##### projectileId <!-- {docsify-ignore} -->
+
+</div>
 
 Return a projectile definition by string id.
 
-#### Parameters
+[`ProjectileDefinition`](?id=projectiledefinition) \| `undefined`
 
-##### projectileId
+</div>
 
-`string`
+<div class="smt-member-card">
 
-Registered projectile id.
+### sandkit.api.projectiles.createBlueprintFromId :id=createblueprintfromid
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L26" target="_blank" rel="noopener">projectiles.d.ts:26</a></p>
 
-[`ProjectileDefinition`](#projectiledefinition) \| `undefined`
-
-***
-
-### createBlueprintFromId() :id=createblueprintfromid
+<div class="smt-member-sig" data-sig="sandkit.api.projectiles.createBlueprintFromId(projectileId: string): ProjectileBlueprint">
 
 ```ts
-sandkit.api.projectiles.createBlueprintFromId(projectileId: string): ProjectileBlueprint
+createBlueprintFromId(projectileId: string): ProjectileBlueprint
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L26)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| projectileId | `string` | Registered projectile id. |
+
+<div class="smt-member-anchors">
+
+##### projectileId <!-- {docsify-ignore} -->
+
+</div>
 
 Build a spawn blueprint from a projectile string id.
 
-#### Parameters
+[`ProjectileBlueprint`](?id=projectileblueprint) Blueprint passed to [spawnAtWorld](?id=spawnatworld).
 
-##### projectileId
+</div>
 
-`string`
+<div class="smt-member-card">
 
-Registered projectile id.
+### sandkit.api.projectiles.getAll :id=getall
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L29" target="_blank" rel="noopener">projectiles.d.ts:29</a></p>
 
-[`ProjectileBlueprint`](#projectileblueprint)
-
-Blueprint passed to [spawnAtWorld](#spawnatworld).
-
-***
-
-### getAll() :id=getall
+<div class="smt-member-sig" data-sig="sandkit.api.projectiles.getAll(): Projectile[]">
 
 ```ts
-sandkit.api.projectiles.getAll(): Projectile[]
+getAll(): Projectile[]
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L29)
+</div>
 
 Return all active projectiles.
 
-#### Returns
+[`Projectile`](?id=projectile)[]
 
-[`Projectile`](#projectile)[]
+</div>
 
-***
+<div class="smt-member-card">
 
-### getById() :id=getbyid
+### sandkit.api.projectiles.getById :id=getbyid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L35" target="_blank" rel="noopener">projectiles.d.ts:35</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.projectiles.getById(projectileId: number): Projectile | undefined">
 
 ```ts
-sandkit.api.projectiles.getById(projectileId: number): Projectile | undefined
+getById(projectileId: number): Projectile | undefined
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L35)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| projectileId | `number` | Runtime projectile id. |
+
+<div class="smt-member-anchors">
+
+##### projectileId <!-- {docsify-ignore} -->
+
+</div>
 
 Return a projectile by numeric id.
 
-#### Parameters
+[`Projectile`](?id=projectile) \| `undefined`
 
-##### projectileId
+</div>
 
-`number`
+<div class="smt-member-card">
 
-Runtime projectile id.
+### sandkit.api.projectiles.remove :id=remove
 
-#### Returns
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L41" target="_blank" rel="noopener">projectiles.d.ts:41</a></p>
 
-[`Projectile`](#projectile) \| `undefined`
-
-***
-
-### remove() :id=remove
+<div class="smt-member-sig" data-sig="sandkit.api.projectiles.remove(projectile: Projectile): void">
 
 ```ts
-sandkit.api.projectiles.remove(projectile: Projectile): void
+remove(projectile: Projectile): void
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L41)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| projectile | [`Projectile`](?id=projectile) | Projectile instance to remove. |
+
+<div class="smt-member-anchors">
+
+##### projectile <!-- {docsify-ignore} -->
+
+</div>
 
 Remove a projectile from the world.
 
-#### Parameters
+</div>
 
-##### projectile
+<div class="smt-member-card">
 
-[`Projectile`](#projectile)
+### sandkit.api.projectiles.spawnAtWorld :id=spawnatworld
 
-Projectile instance to remove.
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L51" target="_blank" rel="noopener">projectiles.d.ts:51</a></p>
 
-#### Returns
-
-`void`
-
-***
-
-### spawnAtWorld() :id=spawnatworld
+<div class="smt-member-sig" data-sig="sandkit.api.projectiles.spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: ProjectileBlueprint): Projectile">
 
 ```ts
-sandkit.api.projectiles.spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: ProjectileBlueprint): Projectile
+spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: ProjectileBlueprint): Projectile
 ```
 
-Defined in: [sandkit/api/projectiles.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L51)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| worldX | `number` | Spawn x position in world pixels. |
+| worldY | `number` | Spawn y position in world pixels. |
+| angle | `number` | Launch angle in radians. |
+| blueprint | [`ProjectileBlueprint`](?id=projectileblueprint) | Blueprint from [createBlueprintFromId](?id=createblueprintfromid). |
+
+<div class="smt-member-anchors">
+
+##### worldX <!-- {docsify-ignore} -->
+
+##### worldY <!-- {docsify-ignore} -->
+
+##### angle <!-- {docsify-ignore} -->
+
+##### blueprint <!-- {docsify-ignore} -->
+
+</div>
 
 Spawn a projectile at world position with angle and blueprint.
 
-#### Parameters
+[`Projectile`](?id=projectile) The spawned projectile instance.
 
-##### worldX
-
-`number`
-
-Spawn x position in world pixels.
-
-##### worldY
-
-`number`
-
-Spawn y position in world pixels.
-
-##### angle
-
-`number`
-
-Launch angle in radians.
-
-##### blueprint
-
-[`ProjectileBlueprint`](#projectileblueprint)
-
-Blueprint from [createBlueprintFromId](#createblueprintfromid).
-
-#### Returns
-
-[`Projectile`](#projectile)
-
-The spawned projectile instance.
+</div>

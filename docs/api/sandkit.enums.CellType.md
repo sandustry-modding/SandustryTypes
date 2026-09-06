@@ -6,310 +6,498 @@ Terrain / special cell kinds in the simulation grid.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Empty :id=empty
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Empty :id=empty
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L57" target="_blank" rel="noopener">index.d.ts:57</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Empty: 0">
 
 ```ts
-sandkit.enums.CellType.Empty: 0
+Empty: 0
 ```
 
-Defined in: [sandkit/enums/index.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L57)
+</div>
 
-***
+</div>
 
-### Element :id=element
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Element :id=element
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L58" target="_blank" rel="noopener">index.d.ts:58</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Element: 1">
 
 ```ts
-sandkit.enums.CellType.Element: 1
+Element: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L58)
+</div>
 
-***
+</div>
 
-### Dirt :id=dirt
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Dirt :id=dirt
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L59" target="_blank" rel="noopener">index.d.ts:59</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Dirt: 2">
 
 ```ts
-sandkit.enums.CellType.Dirt: 2
+Dirt: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L59)
+</div>
 
-***
+</div>
 
-### SporeSoil :id=sporesoil
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.SporeSoil :id=sporesoil
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L60" target="_blank" rel="noopener">index.d.ts:60</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.SporeSoil: 3">
 
 ```ts
-sandkit.enums.CellType.SporeSoil: 3
+SporeSoil: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L60)
+</div>
 
-***
+</div>
 
-### Fog :id=fog
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Fog :id=fog
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L61" target="_blank" rel="noopener">index.d.ts:61</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Fog: 4">
 
 ```ts
-sandkit.enums.CellType.Fog: 4
+Fog: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L61)
+</div>
 
-***
+</div>
 
-### FogJetpackBlock :id=fogjetpackblock
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.FogJetpackBlock :id=fogjetpackblock
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L62" target="_blank" rel="noopener">index.d.ts:62</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.FogJetpackBlock: 5">
 
 ```ts
-sandkit.enums.CellType.FogJetpackBlock: 5
+FogJetpackBlock: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L62)
+</div>
 
-***
+</div>
 
-### FogWater :id=fogwater
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.FogWater :id=fogwater
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L63" target="_blank" rel="noopener">index.d.ts:63</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.FogWater: 6">
 
 ```ts
-sandkit.enums.CellType.FogWater: 6
+FogWater: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L63)
+</div>
 
-***
+</div>
 
-### FreezingIceSoil :id=freezingicesoil
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.FreezingIceSoil :id=freezingicesoil
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L64" target="_blank" rel="noopener">index.d.ts:64</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.FreezingIceSoil: 7">
 
 ```ts
-sandkit.enums.CellType.FreezingIceSoil: 7
+FreezingIceSoil: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L64)
+</div>
 
-***
+</div>
 
-### Divider :id=divider
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Divider :id=divider
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L65" target="_blank" rel="noopener">index.d.ts:65</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Divider: 8">
 
 ```ts
-sandkit.enums.CellType.Divider: 8
+Divider: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L65)
+</div>
 
-***
+</div>
 
-### Grass :id=grass
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Grass :id=grass
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L66" target="_blank" rel="noopener">index.d.ts:66</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Grass: 9">
 
 ```ts
-sandkit.enums.CellType.Grass: 9
+Grass: 9
 ```
 
-Defined in: [sandkit/enums/index.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L66)
+</div>
 
-***
+</div>
 
-### Moss :id=moss
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Moss :id=moss
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L67" target="_blank" rel="noopener">index.d.ts:67</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Moss: 10">
 
 ```ts
-sandkit.enums.CellType.Moss: 10
+Moss: 10
 ```
 
-Defined in: [sandkit/enums/index.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L67)
+</div>
 
-***
+</div>
 
-### GoldSoil :id=goldsoil
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.GoldSoil :id=goldsoil
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L68" target="_blank" rel="noopener">index.d.ts:68</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.GoldSoil: 11">
 
 ```ts
-sandkit.enums.CellType.GoldSoil: 11
+GoldSoil: 11
 ```
 
-Defined in: [sandkit/enums/index.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L68)
+</div>
 
-***
+</div>
 
-### Petal :id=petal
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Petal :id=petal
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L69" target="_blank" rel="noopener">index.d.ts:69</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Petal: 12">
 
 ```ts
-sandkit.enums.CellType.Petal: 12
+Petal: 12
 ```
 
-Defined in: [sandkit/enums/index.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L69)
+</div>
 
-***
+</div>
 
-### FogLava :id=foglava
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.FogLava :id=foglava
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L70" target="_blank" rel="noopener">index.d.ts:70</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.FogLava: 13">
 
 ```ts
-sandkit.enums.CellType.FogLava: 13
+FogLava: 13
 ```
 
-Defined in: [sandkit/enums/index.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L70)
+</div>
 
-***
+</div>
 
-### Fluxite :id=fluxite
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Fluxite :id=fluxite
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L71" target="_blank" rel="noopener">index.d.ts:71</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Fluxite: 14">
 
 ```ts
-sandkit.enums.CellType.Fluxite: 14
+Fluxite: 14
 ```
 
-Defined in: [sandkit/enums/index.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L71)
+</div>
 
-***
+</div>
 
-### Block :id=block
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Block :id=block
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L72" target="_blank" rel="noopener">index.d.ts:72</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Block: 15">
 
 ```ts
-sandkit.enums.CellType.Block: 15
+Block: 15
 ```
 
-Defined in: [sandkit/enums/index.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L72)
+</div>
 
-***
+</div>
 
-### SlidingBlock :id=slidingblock
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.SlidingBlock :id=slidingblock
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L73" target="_blank" rel="noopener">index.d.ts:73</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.SlidingBlock: 16">
 
 ```ts
-sandkit.enums.CellType.SlidingBlock: 16
+SlidingBlock: 16
 ```
 
-Defined in: [sandkit/enums/index.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L73)
+</div>
 
-***
+</div>
 
-### SlidingBlockLeft :id=slidingblockleft
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.SlidingBlockLeft :id=slidingblockleft
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L74" target="_blank" rel="noopener">index.d.ts:74</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.SlidingBlockLeft: 17">
 
 ```ts
-sandkit.enums.CellType.SlidingBlockLeft: 17
+SlidingBlockLeft: 17
 ```
 
-Defined in: [sandkit/enums/index.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L74)
+</div>
 
-***
+</div>
 
-### SlidingBlockRight :id=slidingblockright
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.SlidingBlockRight :id=slidingblockright
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L75" target="_blank" rel="noopener">index.d.ts:75</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.SlidingBlockRight: 18">
 
 ```ts
-sandkit.enums.CellType.SlidingBlockRight: 18
+SlidingBlockRight: 18
 ```
 
-Defined in: [sandkit/enums/index.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L75)
+</div>
 
-***
+</div>
 
-### ConveyorLeft :id=conveyorleft
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.ConveyorLeft :id=conveyorleft
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L76" target="_blank" rel="noopener">index.d.ts:76</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.ConveyorLeft: 19">
 
 ```ts
-sandkit.enums.CellType.ConveyorLeft: 19
+ConveyorLeft: 19
 ```
 
-Defined in: [sandkit/enums/index.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L76)
+</div>
 
-***
+</div>
 
-### ConveyorRight :id=conveyorright
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.ConveyorRight :id=conveyorright
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L77" target="_blank" rel="noopener">index.d.ts:77</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.ConveyorRight: 20">
 
 ```ts
-sandkit.enums.CellType.ConveyorRight: 20
+ConveyorRight: 20
 ```
 
-Defined in: [sandkit/enums/index.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L77)
+</div>
 
-***
+</div>
 
-### ShakerLeft :id=shakerleft
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.ShakerLeft :id=shakerleft
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L78" target="_blank" rel="noopener">index.d.ts:78</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.ShakerLeft: 21">
 
 ```ts
-sandkit.enums.CellType.ShakerLeft: 21
+ShakerLeft: 21
 ```
 
-Defined in: [sandkit/enums/index.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L78)
+</div>
 
-***
+</div>
 
-### ShakerRight :id=shakerright
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.ShakerRight :id=shakerright
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L79" target="_blank" rel="noopener">index.d.ts:79</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.ShakerRight: 22">
 
 ```ts
-sandkit.enums.CellType.ShakerRight: 22
+ShakerRight: 22
 ```
 
-Defined in: [sandkit/enums/index.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L79)
+</div>
 
-***
+</div>
 
-### Stone :id=stone
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Stone :id=stone
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L80" target="_blank" rel="noopener">index.d.ts:80</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Stone: 23">
 
 ```ts
-sandkit.enums.CellType.Stone: 23
+Stone: 23
 ```
 
-Defined in: [sandkit/enums/index.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L80)
+</div>
 
-***
+</div>
 
-### VelocitySoaker :id=velocitysoaker
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.VelocitySoaker :id=velocitysoaker
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L81" target="_blank" rel="noopener">index.d.ts:81</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.VelocitySoaker: 24">
 
 ```ts
-sandkit.enums.CellType.VelocitySoaker: 24
+VelocitySoaker: 24
 ```
 
-Defined in: [sandkit/enums/index.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L81)
+</div>
 
-***
+</div>
 
-### Ice :id=ice
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Ice :id=ice
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L82" target="_blank" rel="noopener">index.d.ts:82</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Ice: 25">
 
 ```ts
-sandkit.enums.CellType.Ice: 25
+Ice: 25
 ```
 
-Defined in: [sandkit/enums/index.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L82)
+</div>
 
-***
+</div>
 
-### Grower :id=grower
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Grower :id=grower
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L83" target="_blank" rel="noopener">index.d.ts:83</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Grower: 26">
 
 ```ts
-sandkit.enums.CellType.Grower: 26
+Grower: 26
 ```
 
-Defined in: [sandkit/enums/index.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L83)
+</div>
 
-***
+</div>
 
-### NascentWater :id=nascentwater
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.NascentWater :id=nascentwater
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L84" target="_blank" rel="noopener">index.d.ts:84</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.NascentWater: 27">
 
 ```ts
-sandkit.enums.CellType.NascentWater: 27
+NascentWater: 27
 ```
 
-Defined in: [sandkit/enums/index.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L84)
+</div>
 
-***
+</div>
 
-### SandiumSoil :id=sandiumsoil
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.SandiumSoil :id=sandiumsoil
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L85" target="_blank" rel="noopener">index.d.ts:85</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.SandiumSoil: 28">
 
 ```ts
-sandkit.enums.CellType.SandiumSoil: 28
+SandiumSoil: 28
 ```
 
-Defined in: [sandkit/enums/index.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L85)
+</div>
 
-***
+</div>
 
-### Obsidian :id=obsidian
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Obsidian :id=obsidian
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L86" target="_blank" rel="noopener">index.d.ts:86</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Obsidian: 29">
 
 ```ts
-sandkit.enums.CellType.Obsidian: 29
+Obsidian: 29
 ```
 
-Defined in: [sandkit/enums/index.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L86)
+</div>
 
-***
+</div>
 
-### Crackstone :id=crackstone
+<div class="smt-member-card">
+
+### sandkit.enums.CellType.Crackstone :id=crackstone
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L87" target="_blank" rel="noopener">index.d.ts:87</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.CellType.Crackstone: 30">
 
 ```ts
-sandkit.enums.CellType.Crackstone: 30
+Crackstone: 30
 ```
 
-Defined in: [sandkit/enums/index.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L87)
+</div>
+
+</div>

@@ -6,80 +6,130 @@ Physical behaviour category for elements (mirrors shared API enum).
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-### Solid :id=solid
+<div class="smt-member-card">
+
+### sandkit.enums.MatterType.Solid :id=solid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L222" target="_blank" rel="noopener">index.d.ts:222</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.MatterType.Solid: 1">
 
 ```ts
-sandkit.enums.MatterType.Solid: 1
+Solid: 1
 ```
 
-Defined in: [sandkit/enums/index.d.ts:222](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L222)
+</div>
 
-***
+</div>
 
-### Liquid :id=liquid
+<div class="smt-member-card">
+
+### sandkit.enums.MatterType.Liquid :id=liquid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L223" target="_blank" rel="noopener">index.d.ts:223</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.MatterType.Liquid: 2">
 
 ```ts
-sandkit.enums.MatterType.Liquid: 2
+Liquid: 2
 ```
 
-Defined in: [sandkit/enums/index.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L223)
+</div>
 
-***
+</div>
 
-### Particle :id=particle
+<div class="smt-member-card">
+
+### sandkit.enums.MatterType.Particle :id=particle
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L224" target="_blank" rel="noopener">index.d.ts:224</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.MatterType.Particle: 3">
 
 ```ts
-sandkit.enums.MatterType.Particle: 3
+Particle: 3
 ```
 
-Defined in: [sandkit/enums/index.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L224)
+</div>
 
-***
+</div>
 
-### Gas :id=gas
+<div class="smt-member-card">
+
+### sandkit.enums.MatterType.Gas :id=gas
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L225" target="_blank" rel="noopener">index.d.ts:225</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.MatterType.Gas: 4">
 
 ```ts
-sandkit.enums.MatterType.Gas: 4
+Gas: 4
 ```
 
-Defined in: [sandkit/enums/index.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L225)
+</div>
 
-***
+</div>
 
-### Static :id=static
+<div class="smt-member-card">
+
+### sandkit.enums.MatterType.Static :id=static
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L226" target="_blank" rel="noopener">index.d.ts:226</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.MatterType.Static: 5">
 
 ```ts
-sandkit.enums.MatterType.Static: 5
+Static: 5
 ```
 
-Defined in: [sandkit/enums/index.d.ts:226](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L226)
+</div>
 
-***
+</div>
 
-### Slushy :id=slushy
+<div class="smt-member-card">
+
+### sandkit.enums.MatterType.Slushy :id=slushy
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L227" target="_blank" rel="noopener">index.d.ts:227</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.MatterType.Slushy: 6">
 
 ```ts
-sandkit.enums.MatterType.Slushy: 6
+Slushy: 6
 ```
 
-Defined in: [sandkit/enums/index.d.ts:227](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L227)
+</div>
 
-***
+</div>
 
-### Wisp :id=wisp
+<div class="smt-member-card">
+
+### sandkit.enums.MatterType.Wisp :id=wisp
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L228" target="_blank" rel="noopener">index.d.ts:228</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.MatterType.Wisp: 7">
 
 ```ts
-sandkit.enums.MatterType.Wisp: 7
+Wisp: 7
 ```
 
-Defined in: [sandkit/enums/index.d.ts:228](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L228)
+</div>
 
-***
+</div>
 
-### Powder :id=powder
+<div class="smt-member-card">
+
+### sandkit.enums.MatterType.Powder :id=powder
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L229" target="_blank" rel="noopener">index.d.ts:229</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.enums.MatterType.Powder: 8">
 
 ```ts
-sandkit.enums.MatterType.Powder: 8
+Powder: 8
 ```
 
-Defined in: [sandkit/enums/index.d.ts:229](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L229)
+</div>
+
+</div>

@@ -1,5 +1,7 @@
 /** Helpers for Docsify search over generated Sandkit API Markdown. */
 
+import { rewriteDocsifyHref } from "./docsify-links.mjs";
+
 const IGNORE_H2 = new Set([
   "Accessors",
   "Classes",
@@ -289,6 +291,9 @@ export function markdownToSearchText(text) {
     .replace(/```[\s\S]*?```/g, " ")
     .replace(/`([^`]+)`/g, "$1")
     .replace(/<p class="smt-member-path">[\s\S]*?<\/p>/gi, " ")
+    .replace(/<div class="smt-member-sig"[^>]*>/gi, " ")
+    .replace(/<pre class="smt-member-sig"[^>]*>[\s\S]*?<\/pre>/gi, " ")
+    .replace(/<p class="smt-member-badge">[\s\S]*?<\/p>/gi, " ")
     .replace(/<[^>]+>/g, " ")
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     .replace(/[#>*_~|]+/g, " ")
@@ -349,7 +354,25 @@ export function buildSearchIndex(files) {
 
         let title = local;
         // Prefer the absolute path in the signature fence, then a member-path line.
-        for (let j = i + 1; j < Math.min(i + 8, lines.length); j++) {
+        for (let j = i + 1; j < Math.min(i + 12, lines.length); j++) {
+          const dataSig = /data-sig="([^"]+)"/.exec(lines[j]);
+          if (dataSig) {
+            const sig = dataSig[1]
+              .replace(/&quot;/g, '"')
+              .replace(/&lt;/g, "<")
+              .replace(/&gt;/g, ">")
+              .replace(/&amp;/g, "&");
+            const call = /^([\w.]+)\(/.exec(sig);
+            const ident = /^([\w.]+)/.exec(sig);
+            if (call) {
+              title = `${call[1]}()`;
+              break;
+            }
+            if (ident) {
+              title = ident[1];
+              break;
+            }
+          }
           if (/^```ts\b/.test(lines[j]) && j + 1 < lines.length) {
             const sig = lines[j + 1];
             const call = /^([\w.]+)\(/.exec(sig);
@@ -407,14 +430,31 @@ export function renderSearchIndexScript(entries) {
  */
 export function rewriteApiHrefMap(content, linkMap) {
   return content.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (match, label, href) => {
-    const hashIndex = href.indexOf("#");
-    const pathPart = hashIndex >= 0 ? href.slice(0, hashIndex) : href;
-    const hash = hashIndex >= 0 ? href.slice(hashIndex) : "";
-    if (!pathPart.startsWith("api/") || !pathPart.endsWith(".md")) return match;
-    const next = linkMap.get(pathPart);
-    if (!next) return match;
-    return `[${label}](${next}${hash})`;
+    const rewritten = rewriteMappedHref(href, linkMap);
+    return rewritten === href ? match : `[${label}](${rewritten})`;
   });
+}
+
+/**
+ * @param {string} href
+ * @param {Map<string, string>} linkMap
+ */
+function rewriteMappedHref(href, linkMap) {
+  const hashIndex = href.indexOf("#");
+  const qIndex = href.indexOf("?");
+  const cut =
+    hashIndex >= 0 && (qIndex < 0 || hashIndex < qIndex)
+      ? hashIndex
+      : qIndex >= 0
+        ? qIndex
+        : -1;
+  const pathPart = cut >= 0 ? href.slice(0, cut) : href;
+  const tail = cut >= 0 ? href.slice(cut) : "";
+  if (!pathPart.startsWith("api/") || !pathPart.endsWith(".md")) {
+    return rewriteDocsifyHref(href);
+  }
+  const next = linkMap.get(pathPart) || pathPart;
+  return rewriteDocsifyHref(`${next}${tail}`);
 }
 
 export { IGNORE_H2 };

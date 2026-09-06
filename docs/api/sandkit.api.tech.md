@@ -6,10 +6,45 @@
 
 ## Interfaces <!-- {docsify-ignore} -->
 
-### TechDefinition :id=techdefinition
+<div class="smt-member-card">
 
-<p class="smt-member-path"><code>sandkit.api.tech.TechDefinition</code></p>
-Defined in: [sandkit/api/tech.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L145)
+### sandkit.api.tech.TechDefinition :id=techdefinition
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L145" target="_blank" rel="noopener">tech.d.ts:145</a></p>
+
+| Property | Type | Description |
+| --- | --- | --- |
+| name? | string | Plain display name (when not using [nameKey](?id=namekey)). |
+| nameKey? | string | Display name translation key. |
+| description? | string | Plain description (when not using [descriptionKey](?id=descriptionkey)). |
+| descriptionKey? | string | Description translation key. |
+| cost? | number | Research cost. |
+| currencyType? | string | Currency used for [cost](?id=cost) (for example `"gold"`). |
+| branch? | string | Tech tree branch id (often copied from the parent node). |
+| unlocks? | object | Content unlocked when this tech is researched. |
+| requires? | readonly string[] | Prerequisite tech ids. |
+
+<div class="smt-member-anchors">
+
+##### name? <!-- {docsify-ignore} -->
+
+##### nameKey? <!-- {docsify-ignore} -->
+
+##### description? <!-- {docsify-ignore} -->
+
+##### descriptionKey? <!-- {docsify-ignore} -->
+
+##### cost? <!-- {docsify-ignore} -->
+
+##### currencyType? <!-- {docsify-ignore} -->
+
+##### branch? <!-- {docsify-ignore} -->
+
+##### unlocks? <!-- {docsify-ignore} -->
+
+##### requires? <!-- {docsify-ignore} -->
+
+</div>
 
 Tech definition shape.
 
@@ -19,242 +54,139 @@ Tech definition shape.
 [key: string]: unknown
 ```
 
-#### Properties
+</div>
 
-##### name?
+<div class="smt-member-card">
 
-```ts
-optional name?: string
-```
+### sandkit.api.tech.TechGridPosition :id=techgridposition
 
-Defined in: [sandkit/api/tech.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L147)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L175" target="_blank" rel="noopener">tech.d.ts:175</a></p>
 
-Plain display name (when not using [nameKey](#namekey)).
+| Property | Type | Description |
+| --- | --- | --- |
+| x | number |  |
+| y | number |  |
 
-##### nameKey?
+<div class="smt-member-anchors">
 
-```ts
-optional nameKey?: string
-```
+##### x <!-- {docsify-ignore} -->
 
-Defined in: [sandkit/api/tech.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L149)
+##### y <!-- {docsify-ignore} -->
 
-Display name translation key.
-
-##### description?
-
-```ts
-optional description?: string
-```
-
-Defined in: [sandkit/api/tech.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L151)
-
-Plain description (when not using [descriptionKey](#descriptionkey)).
-
-##### descriptionKey?
-
-```ts
-optional descriptionKey?: string
-```
-
-Defined in: [sandkit/api/tech.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L153)
-
-Description translation key.
-
-##### cost?
-
-```ts
-optional cost?: number
-```
-
-Defined in: [sandkit/api/tech.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L159)
-
-Research cost.
-
-###### See
-
-[Official docs](https://sandustry.com/sandkit.html#api-access-heading)
-
-##### currencyType?
-
-```ts
-optional currencyType?: string
-```
-
-Defined in: [sandkit/api/tech.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L161)
-
-Currency used for [cost](#cost) (for example `"gold"`).
-
-##### branch?
-
-```ts
-optional branch?: string
-```
-
-Defined in: [sandkit/api/tech.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L163)
-
-Tech tree branch id (often copied from the parent node).
-
-##### unlocks?
-
-```ts
-optional unlocks?: object
-```
-
-Defined in: [sandkit/api/tech.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L165)
-
-Content unlocked when this tech is researched.
-
-###### structures?
-
-```ts
-optional structures?: readonly string[]
-```
-
-###### items?
-
-```ts
-optional items?: readonly string[]
-```
-
-##### requires?
-
-```ts
-optional requires?: readonly string[]
-```
-
-Defined in: [sandkit/api/tech.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L170)
-
-Prerequisite tech ids.
-
-***
-
-### TechGridPosition :id=techgridposition
-
-<p class="smt-member-path"><code>sandkit.api.tech.TechGridPosition</code></p>
-Defined in: [sandkit/api/tech.d.ts:175](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L175)
+</div>
 
 Position on the tech grid.
 
-#### Properties
+</div>
 
-##### x
+<div class="smt-member-card">
 
-```ts
-x: number
-```
+### sandkit.api.tech.ConservatoryUnlocks :id=conservatoryunlocks
 
-Defined in: [sandkit/api/tech.d.ts:176](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L176)
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L181" target="_blank" rel="noopener">tech.d.ts:181</a></p>
 
-##### y
+| Property | Type | Description |
+| --- | --- | --- |
+| structures? | readonly string[] | Structure ids to unlock. |
+| items? | readonly string[] | Item ids to unlock. |
 
-```ts
-y: number
-```
+<div class="smt-member-anchors">
 
-Defined in: [sandkit/api/tech.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L177)
+##### structures? <!-- {docsify-ignore} -->
 
-***
+##### items? <!-- {docsify-ignore} -->
 
-### ConservatoryUnlocks :id=conservatoryunlocks
+</div>
 
-<p class="smt-member-path"><code>sandkit.api.tech.ConservatoryUnlocks</code></p>
-Defined in: [sandkit/api/tech.d.ts:181](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L181)
+Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory.md?id=appendunlock).
 
-Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory.md#appendunlock).
-
-#### Properties
-
-##### structures?
-
-```ts
-optional structures?: readonly string[]
-```
-
-Defined in: [sandkit/api/tech.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L183)
-
-Structure ids to unlock.
-
-##### items?
-
-```ts
-optional items?: readonly string[]
-```
-
-Defined in: [sandkit/api/tech.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L185)
-
-Item ids to unlock.
+</div>
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### TechGridId :id=techgridid
+<div class="smt-member-card">
+
+### sandkit.api.tech.TechGridId :id=techgridid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L142" target="_blank" rel="noopener">tech.d.ts:142</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tech.TechGridId = Tech | LooseString&lt;never&gt; | TaggedNumber&lt;&quot;tech&quot;&gt;">
 
 ```ts
-sandkit.api.tech.TechGridId = Tech | LooseString<never> | TaggedNumber<"tech">
+TechGridId = Tech | LooseString<never> | TaggedNumber<"tech">
 ```
 
-Defined in: [sandkit/api/tech.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L142)
+</div>
 
 Tech grid node id.
 Built-in [TechEnum](api/sandkit.enums.Tech.md) values autocomplete; custom string ids and tagged handles are allowed.
 
+</div>
+
 ## Functions <!-- {docsify-ignore} -->
 
-### getDefinitionById() :id=getdefinitionbyid
+<div class="smt-member-card">
+
+### sandkit.api.tech.getDefinitionById :id=getdefinitionbyid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L19" target="_blank" rel="noopener">tech.d.ts:19</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tech.getDefinitionById(techId: TechGridId): TechDefinition | undefined">
 
 ```ts
-sandkit.api.tech.getDefinitionById(techId: TechGridId): TechDefinition | undefined
+getDefinitionById(techId: TechGridId): TechDefinition | undefined
 ```
 
-Defined in: [sandkit/api/tech.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L19)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| techId | [`TechGridId`](?id=techgridid) | Tech entry identifier. |
+
+<div class="smt-member-anchors">
+
+##### techId <!-- {docsify-ignore} -->
+
+</div>
 
 Return a tech definition by string id.
 
-#### Parameters
-
-##### techId
-
-[`TechGridId`](#techgridid)
-
-Tech entry identifier.
-
-#### Returns
-
-[`TechDefinition`](#techdefinition) \| `undefined`
+[`TechDefinition`](?id=techdefinition) \| `undefined`
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### updateDefinition() :id=updatedefinition
+<div class="smt-member-card">
+
+### sandkit.api.tech.updateDefinition :id=updatedefinition
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L36" target="_blank" rel="noopener">tech.d.ts:36</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tech.updateDefinition(techId: TechGridId, updates: Partial&lt;TechDefinition&gt;): void">
 
 ```ts
-sandkit.api.tech.updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
+updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L36)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| techId | [`TechGridId`](?id=techgridid) | Tech entry identifier. |
+| updates | `Partial`\<[`TechDefinition`](?id=techdefinition)\> | Fields to merge into the definition. |
+
+<div class="smt-member-anchors">
+
+##### techId <!-- {docsify-ignore} -->
+
+##### updates <!-- {docsify-ignore} -->
+
+</div>
 
 Patch fields on an existing tech definition.
-
-#### Parameters
-
-##### techId
-
-[`TechGridId`](#techgridid)
-
-Tech entry identifier.
-
-##### updates
-
-`Partial`\<[`TechDefinition`](#techdefinition)\>
-
-Fields to merge into the definition.
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -268,35 +200,36 @@ api.tech.updateDefinition("exampleTech", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### registerDefinition() :id=registerdefinition
+<div class="smt-member-card">
+
+### sandkit.api.tech.registerDefinition :id=registerdefinition
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L57" target="_blank" rel="noopener">tech.d.ts:57</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tech.registerDefinition(techId: TechGridId, definition: TechDefinition): void">
 
 ```ts
-sandkit.api.tech.registerDefinition(techId: TechGridId, definition: TechDefinition): void
+registerDefinition(techId: TechGridId, definition: TechDefinition): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L57)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| techId | [`TechGridId`](?id=techgridid) | Tech entry identifier. |
+| definition | [`TechDefinition`](?id=techdefinition) | Full tech definition to register. |
+
+<div class="smt-member-anchors">
+
+##### techId <!-- {docsify-ignore} -->
+
+##### definition <!-- {docsify-ignore} -->
+
+</div>
 
 Register a new tech definition by id.
-
-#### Parameters
-
-##### techId
-
-[`TechGridId`](#techgridid)
-
-Tech entry identifier.
-
-##### definition
-
-[`TechDefinition`](#techdefinition)
-
-Full tech definition to register.
-
-#### Returns
-
-`void`
 
 #### Example
 
@@ -314,79 +247,78 @@ api.tech.registerDefinition("exampleTech", {
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### ~~addDefinition()~~ :id=adddefinition
+<div class="smt-member-card">
+
+### ~~sandkit.api.tech.addDefinition~~ :id=adddefinition
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L64" target="_blank" rel="noopener">tech.d.ts:64</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tech.addDefinition(techId: TechGridId, definition: TechDefinition): void">
 
 ```ts
-sandkit.api.tech.addDefinition(techId: TechGridId, definition: TechDefinition): void
+addDefinition(techId: TechGridId, definition: TechDefinition): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L64)
+</div>
 
-#### Parameters
+| Argument | Type | Description |
+| --- | --- | --- |
+| techId | [`TechGridId`](?id=techgridid) |  |
+| definition | [`TechDefinition`](?id=techdefinition) |  |
 
-##### techId
+<div class="smt-member-anchors">
 
-[`TechGridId`](#techgridid)
+##### techId <!-- {docsify-ignore} -->
 
-##### definition
+##### definition <!-- {docsify-ignore} -->
 
-[`TechDefinition`](#techdefinition)
-
-#### Returns
-
-`void`
+</div>
 
 #### Deprecated
 
-Use [registerDefinition](#registerdefinition) instead.
+Use [registerDefinition](?id=registerdefinition) instead.
 
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### registerNode() :id=registernode
+<div class="smt-member-card">
+
+### sandkit.api.tech.registerNode :id=registernode
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L84" target="_blank" rel="noopener">tech.d.ts:84</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tech.registerNode(techId: TechGridId, definition: TechDefinition, options: object): TechGridPosition">
 
 ```ts
-sandkit.api.tech.registerNode(techId: TechGridId, definition: TechDefinition, options: object): TechGridPosition
+registerNode(techId: TechGridId, definition: TechDefinition, options: object): TechGridPosition
 ```
 
-Defined in: [sandkit/api/tech.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L84)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| techId | [`TechGridId`](?id=techgridid) | Tech grid node id. |
+| definition | [`TechDefinition`](?id=techdefinition) | Tech definition for the node. |
+| options | Parent node id and optional preferred grid position. |  |
+
+<div class="smt-member-anchors">
+
+##### techId <!-- {docsify-ignore} -->
+
+##### definition <!-- {docsify-ignore} -->
+
+##### options <!-- {docsify-ignore} -->
+
+</div>
 
 Register a tech node on the grid with parent and position options.
 
-#### Parameters
-
-##### techId
-
-[`TechGridId`](#techgridid)
-
-Tech grid node id.
-
-##### definition
-
-[`TechDefinition`](#techdefinition)
-
-Tech definition for the node.
-
-##### options
-
-Parent node id and optional preferred grid position.
-
-###### parentId
-
-[`TechGridId`](#techgridid)
-
-###### preferredPosition?
-
-[`TechGridPosition`](#techgridposition)
-
-#### Returns
-
-[`TechGridPosition`](#techgridposition)
+[`TechGridPosition`](?id=techgridposition)
 
 #### Example
 
@@ -402,92 +334,103 @@ const position = api.tech.registerNode(
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### isLockedById() :id=islockedbyid
+<div class="smt-member-card">
+
+### sandkit.api.tech.isLockedById :id=islockedbyid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L97" target="_blank" rel="noopener">tech.d.ts:97</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tech.isLockedById(techId: TechGridId): boolean">
 
 ```ts
-sandkit.api.tech.isLockedById(techId: TechGridId): boolean
+isLockedById(techId: TechGridId): boolean
 ```
 
-Defined in: [sandkit/api/tech.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L97)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| techId | [`TechGridId`](?id=techgridid) | Tech entry id (string or numeric enum). |
+
+<div class="smt-member-anchors">
+
+##### techId <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when a tech entry is locked.
 
-#### Parameters
-
-##### techId
-
-[`TechGridId`](#techgridid)
-
-Tech entry id (string or numeric enum).
-
-#### Returns
-
-`boolean`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### setLockedById() :id=setlockedbyid
+<div class="smt-member-card">
+
+### sandkit.api.tech.setLockedById :id=setlockedbyid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L107" target="_blank" rel="noopener">tech.d.ts:107</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tech.setLockedById(techId: TechGridId, locked: boolean): void">
 
 ```ts
-sandkit.api.tech.setLockedById(techId: TechGridId, locked: boolean): void
+setLockedById(techId: TechGridId, locked: boolean): void
 ```
 
-Defined in: [sandkit/api/tech.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L107)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| techId | [`TechGridId`](?id=techgridid) | Tech entry id (string or numeric enum). |
+| locked | `boolean` | When true, the tech cannot be purchased. |
+
+<div class="smt-member-anchors">
+
+##### techId <!-- {docsify-ignore} -->
+
+##### locked <!-- {docsify-ignore} -->
+
+</div>
 
 Set locked state for a tech entry by id.
 
-#### Parameters
-
-##### techId
-
-[`TechGridId`](#techgridid)
-
-Tech entry id (string or numeric enum).
-
-##### locked
-
-`boolean`
-
-When true, the tech cannot be purchased.
-
-#### Returns
-
-`void`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
 
-***
+</div>
 
-### isResearchedById() :id=isresearchedbyid
+<div class="smt-member-card">
+
+### sandkit.api.tech.isResearchedById :id=isresearchedbyid
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L116" target="_blank" rel="noopener">tech.d.ts:116</a></p>
+
+<div class="smt-member-sig" data-sig="sandkit.api.tech.isResearchedById(techId: TechGridId): boolean">
 
 ```ts
-sandkit.api.tech.isResearchedById(techId: TechGridId): boolean
+isResearchedById(techId: TechGridId): boolean
 ```
 
-Defined in: [sandkit/api/tech.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L116)
+</div>
+
+| Argument | Type | Description |
+| --- | --- | --- |
+| techId | [`TechGridId`](?id=techgridid) | Tech entry id (string or numeric enum). |
+
+<div class="smt-member-anchors">
+
+##### techId <!-- {docsify-ignore} -->
+
+</div>
 
 Return true when a tech entry has been researched.
 
-#### Parameters
-
-##### techId
-
-[`TechGridId`](#techgridid)
-
-Tech entry id (string or numeric enum).
-
-#### Returns
-
-`boolean`
-
 #### See
 
 [Official docs](https://sandustry.com/sandkit.html#api-access-heading)
+
+</div>
