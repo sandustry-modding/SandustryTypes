@@ -29,6 +29,7 @@ https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.6.0
 - API namespace index (`docs/modules.md`) shows stats, descriptions, method counts, and worker badges per namespace
 - Namespace summary copy in `scripts/namespace-summaries.json` rewritten for clarity
 - `docs:api` runs `generate:api-catalog` first; method counts use the catalog (nested members and re-exports included)
+- `npm run release` pushes the release branch, publishes to npm, pushes tag `v<version>`, and creates a GitHub release from `CHANGELOG.md`
 
 ## 0.5.0 - 2026-09-03
 
