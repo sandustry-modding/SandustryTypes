@@ -241,6 +241,31 @@ setMovementMode(mode: "normal" | "hover"): boolean
   assert.doesNotMatch(out, /\\\|/);
 });
 
+test("restyleApiCards table types decode TypeDoc generic escapes", () => {
+  const src = `# sandkit.api.ui
+
+## Functions <!-- {docsify-ignore} -->
+
+### select() :id=select
+
+\`\`\`ts
+select<T = string>(options: readonly SelectChoice<T>[]): Promise<T | null>
+\`\`\`
+
+#### Parameters
+
+##### options
+
+readonly [\`SelectChoice\`](#selectchoice)\\<\`T\`\\>[]
+
+Choices shown in the picker.
+`;
+  const out = restyleApiCards(src, "sandkit.api.ui");
+  assert.match(out, /&lt;`T`&gt;\[\]/);
+  assert.doesNotMatch(out, /\\&lt;/);
+  assert.doesNotMatch(out, /\\</);
+});
+
 test("restyleApiCards drops Official docs See sections", () => {
   const src = `# sandkit.api.player
 

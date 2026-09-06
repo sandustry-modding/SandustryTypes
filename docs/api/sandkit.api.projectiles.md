@@ -148,7 +148,7 @@ getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 
 Return a projectile definition by string id.
 
-[`ProjectileDefinition`](?id=projectiledefinition) \| `undefined`
+[`ProjectileDefinition`](?id=projectiledefinition) &#124; `undefined`
 
 </div>
 
@@ -228,7 +228,7 @@ getById(projectileId: number): Projectile | undefined
 
 Return a projectile by numeric id.
 
-[`Projectile`](?id=projectile) \| `undefined`
+[`Projectile`](?id=projectile) &#124; `undefined`
 
 </div>
 

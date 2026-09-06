@@ -76,7 +76,7 @@ t(key: string, params?: Record<string, string | number>): string
 | Argument | Type | Description |
 | --- | --- | --- |
 | key | `string` | Translation key. |
-| params? | `Record`\<`string`, `string` &#124; `number`\> | Placeholder values for the key template. |
+| params? | `Record`<`string`, `string` &#124; `number`> | Placeholder values for the key template. |
 
 <div class="smt-member-anchors">
 
@@ -115,7 +115,7 @@ register(locale: Locale, translations: Record<string, string>): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | locale | <code>[`Locale`](?id=locale)</code> | Locale code (e.g. `en`). |
-| translations | `Record`\<`string`, `string`\> | Map of keys to translated strings. |
+| translations | `Record`<`string`, `string`> | Map of keys to translated strings. |
 
 <div class="smt-member-anchors">
 
@@ -214,7 +214,7 @@ setLocale(locale: Locale): Promise<void>
 
 Sets the active locale.
 
-`Promise`\<`void`\>
+`Promise`&lt;`void`&gt;
 
 </div>
 
@@ -555,7 +555,7 @@ getGlobal(key: string): string | undefined
 
 Returns a global translation helper value.
 
-`string` \| `undefined`
+`string` &#124; `undefined`
 
 </div>
 
@@ -638,7 +638,7 @@ getGlobals(): Record<string, string>
 
 Returns all global translation helper values.
 
-`Record`\<`string`, `string`\>
+`Record`&lt;`string`, `string`&gt;
 
 </div>
 

@@ -197,7 +197,7 @@ getAtCell(...args: CellCoordinates): Structure | null
 
 Return the structure at a cell, or null when none.
 
-[`Structure`](?id=structure) \| `null`
+[`Structure`](?id=structure) &#124; `null`
 
 </div>
 
@@ -340,7 +340,7 @@ isType(structure: Structure | null, structureId: string & object): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=structure) \&#124; `null`</code> | Structure instance, or null. |
+| structure | <code>[`Structure`](?id=structure) &#124; `null`</code> | Structure instance, or null. |
 | structureId | `string` & `object` | Structure string id to compare. |
 
 <div class="smt-member-anchors">

@@ -72,7 +72,7 @@ getById(entityId: number): Entity | undefined
 
 Return one live entity by runtime id.
 
-[`Entity`](?id=entity) \| `undefined`
+[`Entity`](?id=entity) &#124; `undefined`
 
 </div>
 

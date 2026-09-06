@@ -101,7 +101,7 @@ getSelectedProvider(kind: string): AssetProviderV1 | null
 
 Returns the selected provider for an asset kind, or null.
 
-[`AssetProviderV1`](?id=assetproviderv1) \| `null`
+[`AssetProviderV1`](?id=assetproviderv1) &#124; `null`
 
 </div>
 

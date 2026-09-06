@@ -464,7 +464,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> |  |
+| args | <code>...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 

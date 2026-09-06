@@ -26,6 +26,8 @@ function escapeHtml(text) {
  */
 function escapeTableCell(cell) {
   return String(cell)
+    .replace(/\\</g, "&lt;")
+    .replace(/\\>/g, "&gt;")
     .replace(/\n+/g, " ")
     .replace(/\\\|/g, "|")
     .replace(/\|/g, "&#124;")
@@ -234,13 +236,21 @@ function isCollapsedObjectType(type) {
 }
 
 /**
+ * TypeDoc escapes `<`, `>`, and `|` with a backslash in Markdown tables.
+ * @param {string} text
+ */
+function stripTypedocMarkdownEscapes(text) {
+  return String(text || "").replace(/\\([<>|])/g, "$1");
+}
+
+/**
  * @param {string} type
  */
 function formatTableType(type) {
-  const raw = String(type || "").replace(/\s+/g, " ").trim();
+  const raw = stripTypedocMarkdownEscapes(String(type || "").replace(/\s+/g, " ")).trim();
   if (!raw) return "";
   if (raw.startsWith("<code>") || (raw.startsWith("`") && !raw.startsWith("`{"))) {
-    return raw.replace(/\\\|/g, "|").replace(/\|/g, "&#124;");
+    return raw.replace(/\|/g, "&#124;");
   }
   const t = stripCodeTicks(raw);
   return `<code>${escapeHtml(t).replace(/\|/g, "&#124;")}</code>`;
@@ -773,7 +783,7 @@ export function restyleApiCards(content, qualified, options = {}) {
           .map((l) => l.trim())
           .filter((l) => l && !/^`[^`]+`$/.test(l) && !/^##### /.test(l) && !/^```/.test(l));
         if (retDesc.length) {
-          out.push("", retDesc.join(" "), "");
+          out.push("", escapeTableCell(retDesc.join(" ")), "");
         }
         continue;
       }

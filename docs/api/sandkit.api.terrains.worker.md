@@ -288,7 +288,7 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 Look up the definition for a terrain type.
 
-[`TerrainDefinition`](?id=terraindefinition) \| `undefined`
+[`TerrainDefinition`](?id=terraindefinition) &#124; `undefined`
 
 </div>
 
@@ -318,7 +318,7 @@ getTypeAtCell(...args: CellCoordinates): TerrainType | null
 
 Return the terrain cell type at a cell, or null when none.
 
-[`TerrainType`](?id=terraintype) \| `null`
+[`TerrainType`](?id=terraintype) &#124; `null`
 
 </div>
 
@@ -348,7 +348,7 @@ getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 
 Return terrain cell type and hit points at a cell.
 
-[`TerrainDataAtCell`](?id=terraindataatcell) \| `null` Cell type and hit points, or null when the cell is not terrain.
+[`TerrainDataAtCell`](?id=terraindataatcell) &#124; `null` Cell type and hit points, or null when the cell is not terrain.
 
 </div>
 

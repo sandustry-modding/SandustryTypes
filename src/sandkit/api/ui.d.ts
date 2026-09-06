@@ -356,14 +356,14 @@ export namespace ui {
      * Remove an overlay from a slot.
      * @param slot - Slot name the overlay was registered in.
      * @param overlayId - Overlay id passed to {@link register}.
-     * @deprecated Use {@link RegionMountHandle.unmount} instead.
+     * @deprecated Use {@link RegionMountHandle} instead.
      */
     export function unregister(slot: OverlaySlot, overlayId: string): void;
 
     /**
      * Request a re-render for all overlays in a slot.
      * @param slot - Slot name to refresh.
-     * @deprecated Use {@link RegionMountHandle.update} instead.
+     * @deprecated Use {@link RegionMountHandle} instead.
      */
     export function update(slot: OverlaySlot): void;
   }
@@ -469,7 +469,7 @@ export namespace ui {
     render: () => ReactNode;
   }
 
-  /** Partial options for {@link RegionMountHandle.update}. */
+  /** Partial options for {@link RegionMountHandle}. */
   export interface RegionMountUpdateOptions {
     /**
      * `"docked"` sits on the hotbar.

@@ -82,7 +82,7 @@ load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
 
 Load a sprite from a URL path.
 
-`Promise`\<`void`\>
+`Promise`&lt;`void`&gt;
 
 </div>
 
@@ -118,7 +118,7 @@ loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions)
 
 Load a sprite from the calling mod folder.
 
-`Promise`\<`void`\>
+`Promise`&lt;`void`&gt;
 
 </div>
 

@@ -20,7 +20,7 @@
 | speedCapOverdrive | <code>{ x: object; x.dir: dir: null; x.active: active: boolean; x.bonus: bonus: number; x.releaseTime: releaseTime: number; x.releaseBonus: releaseBonus: number; y: object; y.dir: dir: null; y.active: active: boolean; y.bonus: bonus: number; y.releaseTime: releaseTime: number; y.releaseBonus: releaseBonus: number }</code> | Temporary speed-cap bonuses applied on each axis. |
 | inventory | <code>InventoryItem[]</code> | Items currently held in the player inventory. |
 | buildings | <code>number[]</code> | Structure type ids the player has unlocked for building. |
-| tech | <code>{ Index Signature: \[`key`: `string` \&#124; `number`\]: `object` }</code> | Tech tree nodes and their unlock metadata. |
+| tech | <code>{ Index Signature: \[`key`: `string` &#124; `number`\]: `object` }</code> | Tech tree nodes and their unlock metadata. |
 | lockedTechs | <code>{ Index Signature: \[`key`: `string`\]: `boolean` }</code> | Tech ids explicitly locked for this save. |
 | action | <code>null</code> | Active world action, or null when idle. |
 | hotbar | <code>{ activeSlotIndex: number; hotbarIndex: number; bars: AssetRef[][] }</code> | Hotbar slots, active indices, and item sprites. |

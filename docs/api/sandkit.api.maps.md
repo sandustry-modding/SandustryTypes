@@ -81,7 +81,7 @@ getAvailable(): readonly Readonly<AvailableMapV1>[]
 
 Return maps the player can start.
 
-readonly `Readonly`\<[`AvailableMapV1`](?id=availablemapv1)\>[]
+readonly `Readonly`&lt;[`AvailableMapV1`](?id=availablemapv1)&gt;[]
 
 </div>
 

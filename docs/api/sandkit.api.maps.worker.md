@@ -69,6 +69,6 @@ getActive(): Readonly<ActiveMapV1> | null
 
 Return the currently loaded custom map definition.
 
-`Readonly`\<[`ActiveMapV1`](?id=activemapv1)\> \| `null` Active map metadata, or `null` outside custom maps.
+`Readonly`&lt;[`ActiveMapV1`](?id=activemapv1)&gt; &#124; `null` Active map metadata, or `null` outside custom maps.
 
 </div>

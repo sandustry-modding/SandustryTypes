@@ -66,7 +66,7 @@ get(fieldId: string & object): ConfigValueV1 | undefined
 
 Return a settings field value by id.
 
-[`ConfigValueV1`](?id=configvaluev1) \| `undefined`
+[`ConfigValueV1`](?id=configvaluev1) &#124; `undefined`
 
 </div>
 
@@ -86,7 +86,7 @@ getAll(): Readonly<Record<string, ConfigValueV1>>
 
 Return all settings as a read-only map.
 
-`Readonly`\<`Record`\<`string`, [`ConfigValueV1`](?id=configvaluev1)\>\>
+`Readonly`&lt;`Record`&lt;`string`, [`ConfigValueV1`](?id=configvaluev1)&gt;&gt;
 
 </div>
 
@@ -106,7 +106,7 @@ onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): (
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | <code>(`values`: `Readonly`\&lt;`Record`\&lt;`string`, [`ConfigValueV1`](?id=configvaluev1)\&gt;\&gt;) =&gt; `void`</code> | Called with the full settings map after a change. |
+| callback | <code>(`values`: `Readonly`&lt;`Record`&lt;`string`, [`ConfigValueV1`](?id=configvaluev1)&gt;&gt;) =&gt; `void`</code> | Called with the full settings map after a change. |
 
 <div class="smt-member-anchors">
 

@@ -130,7 +130,7 @@ spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<str
 | type | <code>[`PickupType`](api/sandkit.enums.PickupType.md)</code> | Pickup type discriminator. |
 | worldX | `number` | World x position in pixels. |
 | worldY | `number` | World y position in pixels. |
-| data? | `Record`\<`string`, `unknown`\> | Optional per-item data bag copied onto the instance. |
+| data? | `Record`<`string`, `unknown`> | Optional per-item data bag copied onto the instance. |
 | light? | <code>[`WorldItemLight`](?id=worlditemlight)</code> | Optional point light spawned with the pickup. |
 
 <div class="smt-member-anchors">
@@ -292,6 +292,6 @@ getById(pickupId: number): WorldItem | undefined
 
 Return a pickup by numeric id.
 
-[`WorldItem`](?id=worlditem) \| `undefined`
+[`WorldItem`](?id=worlditem) &#124; `undefined`
 
 </div>

@@ -349,7 +349,7 @@ createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptio
 
 </div>
 
-lightId: number | null optional index?: number | null
+lightId: number &#124; null optional index?: number &#124; null
 
 </div>
 

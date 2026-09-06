@@ -894,7 +894,7 @@ getSelectedProvider(kind: string): AssetProviderV1 | null
 
 Returns the selected provider for an asset kind, or null.
 
-[`AssetProviderV1`](?id=sandkit.api.assets.assetproviderv1) \| `null`
+[`AssetProviderV1`](?id=sandkit.api.assets.assetproviderv1) &#124; `null`
 
 </div>
 
@@ -1319,7 +1319,7 @@ selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef |
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \&#124; [`StructureType`](api/sandkit.api.building.StructureType.md)</code> | Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
+| structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) &#124; [`StructureType`](api/sandkit.api.building.StructureType.md)</code> | Built-in [StructureType](api/sandkit.api.building.StructureType.md) value or registered structure id. |
 
 <div class="smt-member-anchors">
 
@@ -1329,7 +1329,7 @@ selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef |
 
 Select a structure for placement by type or id.
 
-[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) \| `null` Resolved selection, or null when the type or id is invalid.
+[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref) &#124; `null` Resolved selection, or null when the type or id is invalid.
 
 </div>
 
@@ -2116,7 +2116,7 @@ createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptio
 
 </div>
 
-lightId: number | null optional index?: number | null
+lightId: number &#124; null optional index?: number &#124; null
 
 </div>
 
@@ -2781,7 +2781,7 @@ updateDefinition(elementTypeOrId: ElementRef, partial: Partial<ElementDefinition
 | Argument | Type | Description |
 | --- | --- | --- |
 | elementTypeOrId | <code>[`ElementRef`](?id=sandkit.api.elements.elementref)</code> | Numeric type or string id. |
-| partial | `Partial`\<[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition)\> | Fields to merge onto the definition. |
+| partial | `Partial`<[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition)> | Fields to merge onto the definition. |
 
 <div class="smt-member-anchors">
 
@@ -2894,7 +2894,7 @@ findFreeCellInStructure(structureCellX: number, structureCellY: number, structur
 
 Finds a free cell inside a structure footprint, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) \| `null` Cell coordinates of a free cell, or null when none.
+[`Vector2`](api/shared.player.md?id=vector2) &#124; `null` Cell coordinates of a free cell, or null when none.
 
 </div>
 
@@ -3481,7 +3481,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> |  |
+| args | <code>...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -3518,7 +3518,7 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> |  |
+| args | <code>...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -3853,7 +3853,7 @@ getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 
 Look up the definition for a type handle.
 
-[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition) \| `undefined`
+[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition) &#124; `undefined`
 
 </div>
 
@@ -3883,7 +3883,7 @@ getTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the raw element type at a cell (may differ from resolved type).
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) \| `null`
+[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
 
 </div>
 
@@ -3913,7 +3913,7 @@ getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the resolved element type after overlays and particles.
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) \| `null`
+[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
 
 </div>
 
@@ -3943,7 +3943,7 @@ getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 
 Return the resolved element type from a packed cell id.
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) \| `null`
+[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
 
 </div>
 
@@ -3973,7 +3973,7 @@ getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle:
 
 Return element index, particle flag, and ids at a cell.
 
-\{ `elementType`: [`ElementType`](?id=sandkit.api.elements.elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} \| `null`
+\{ `elementType`: [`ElementType`](?id=sandkit.api.elements.elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} &#124; `null`
 
 </div>
 
@@ -4003,7 +4003,7 @@ getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 
 Return the matter category at a cell, or null when empty.
 
-[`MatterType`](api/sandkit.api.elements.MatterType.md) \| `null`
+[`MatterType`](api/sandkit.api.elements.MatterType.md) &#124; `null`
 
 </div>
 
@@ -4089,7 +4089,7 @@ getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 
 Return per-cell velocity for moving elements.
 
-\{ `x`: `number`; `y`: `number`; \} \| `null`
+\{ `x`: `number`; `y`: `number`; \} &#124; `null`
 
 </div>
 
@@ -4109,7 +4109,7 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`\]</code> |  |
+| args | <code>...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -4119,7 +4119,7 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 Read element data field 1–4 at a cell.
 
-`number` \| `null`
+`number` &#124; `null`
 
 </div>
 
@@ -4453,7 +4453,7 @@ getById(entityId: number): Entity | undefined
 
 Return one live entity by runtime id.
 
-[`Entity`](?id=sandkit.api.entities.entity) \| `undefined`
+[`Entity`](?id=sandkit.api.entities.entity) &#124; `undefined`
 
 </div>
 
@@ -4968,7 +4968,7 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| callback | <code>(`payload`: [`EventPayload`](?id=sandkit.api.events.eventpayload)\&lt;`K`\&gt;) =&gt; `void`</code> | Called when the event is emitted. |
+| callback | <code>(`payload`: [`EventPayload`](?id=sandkit.api.events.eventpayload)&lt;`K`&gt;) =&gt; `void`</code> | Called when the event is emitted. |
 
 <div class="smt-member-anchors">
 
@@ -5167,7 +5167,7 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| payload | <code>[`EventPayload`](?id=sandkit.api.events.eventpayload)\&lt;`K`\&gt;</code> | Serializable payload passed to listeners. |
+| payload | <code>[`EventPayload`](?id=sandkit.api.events.eventpayload)&lt;`K`&gt;</code> | Serializable payload passed to listeners. |
 
 <div class="smt-member-anchors">
 
@@ -5655,7 +5655,7 @@ get(key: string): JsonValueV1 | undefined
 
 Returns a config value by key, or undefined when missing.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
 
 </div>
 
@@ -7067,8 +7067,8 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 | Argument | Type | Description |
 | --- | --- | --- |
 | hookId | `K` | Registered hook identifier. |
-| callback | <code>(`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.intercepthookargs)\&lt;`K`\&gt;, `context`: [`HookContext`](?id=sandkit.api.hooks.hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
-| options? | <code>[`InterceptHookOptions`](?id=sandkit.api.hooks.intercepthookoptions)\&lt;`K`\&gt;</code> | Optional priority and filter options. |
+| callback | <code>(`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.intercepthookargs)&lt;`K`&gt;, `context`: [`HookContext`](?id=sandkit.api.hooks.hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
+| options? | <code>[`InterceptHookOptions`](?id=sandkit.api.hooks.intercepthookoptions)&lt;`K`&gt;</code> | Optional priority and filter options. |
 
 <div class="smt-member-anchors">
 
@@ -7288,7 +7288,7 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 | Argument | Type | Description |
 | --- | --- | --- |
 | hookId | `K` | Registered hook identifier. |
-| callback | <code>(`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.modifyhookargs)\&lt;`K`\&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
+| callback | <code>(`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.modifyhookargs)&lt;`K`&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
 | options? | <code>[`ModifyHookOptions`](?id=sandkit.api.hooks.modifyhookoptions)</code> | Optional priority and filter options. |
 
 <div class="smt-member-anchors">
@@ -7609,7 +7609,7 @@ t(key: string, params?: Record<string, string | number>): string
 | Argument | Type | Description |
 | --- | --- | --- |
 | key | `string` | Translation key. |
-| params? | `Record`\<`string`, `string` &#124; `number`\> | Placeholder values for the key template. |
+| params? | `Record`<`string`, `string` &#124; `number`> | Placeholder values for the key template. |
 
 <div class="smt-member-anchors">
 
@@ -7648,7 +7648,7 @@ register(locale: Locale, translations: Record<string, string>): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | locale | <code>[`Locale`](?id=sandkit.api.i18n.locale)</code> | Locale code (e.g. `en`). |
-| translations | `Record`\<`string`, `string`\> | Map of keys to translated strings. |
+| translations | `Record`<`string`, `string`> | Map of keys to translated strings. |
 
 <div class="smt-member-anchors">
 
@@ -7747,7 +7747,7 @@ setLocale(locale: Locale): Promise<void>
 
 Sets the active locale.
 
-`Promise`\<`void`\>
+`Promise`&lt;`void`&gt;
 
 </div>
 
@@ -8088,7 +8088,7 @@ getGlobal(key: string): string | undefined
 
 Returns a global translation helper value.
 
-`string` \| `undefined`
+`string` &#124; `undefined`
 
 </div>
 
@@ -8171,7 +8171,7 @@ getGlobals(): Record<string, string>
 
 Returns all global translation helper values.
 
-`Record`\<`string`, `string`\>
+`Record`&lt;`string`, `string`&gt;
 
 </div>
 
@@ -8732,7 +8732,7 @@ updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | itemId | <code>[`ItemId`](?id=sandkit.api.items.itemid)</code> | Registered item id. |
-| partial | `Partial`\<[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\> | Fields to merge into the definition. |
+| partial | `Partial`<[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -8780,7 +8780,7 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for an id, or undefined.
 
-[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
+[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)&lt;`unknown`, `unknown`&gt; &#124; `undefined`
 
 </div>
 
@@ -8828,7 +8828,7 @@ getActive(): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for the active hotbar slot.
 
-[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
+[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)&lt;`unknown`, `unknown`&gt; &#124; `undefined`
 
 </div>
 
@@ -9294,7 +9294,7 @@ getAvailable(): readonly Readonly<AvailableMapV1>[]
 
 Return maps the player can start.
 
-readonly `Readonly`\<[`AvailableMapV1`](?id=sandkit.api.maps.availablemapv1)\>[]
+readonly `Readonly`&lt;[`AvailableMapV1`](?id=sandkit.api.maps.availablemapv1)&gt;[]
 
 </div>
 
@@ -9656,7 +9656,7 @@ spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<str
 | type | <code>[`PickupType`](api/sandkit.enums.PickupType.md)</code> | Pickup type discriminator. |
 | worldX | `number` | World x position in pixels. |
 | worldY | `number` | World y position in pixels. |
-| data? | `Record`\<`string`, `unknown`\> | Optional per-item data bag copied onto the instance. |
+| data? | `Record`<`string`, `unknown`> | Optional per-item data bag copied onto the instance. |
 | light? | <code>[`WorldItemLight`](?id=sandkit.api.pickups.worlditemlight)</code> | Optional point light spawned with the pickup. |
 
 <div class="smt-member-anchors">
@@ -9818,7 +9818,7 @@ getById(pickupId: number): WorldItem | undefined
 
 Return a pickup by numeric id.
 
-[`WorldItem`](?id=sandkit.api.pickups.worlditem) \| `undefined`
+[`WorldItem`](?id=sandkit.api.pickups.worlditem) &#124; `undefined`
 
 </div>
 
@@ -10838,7 +10838,7 @@ getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 
 Return a projectile definition by string id.
 
-[`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition) \| `undefined`
+[`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition) &#124; `undefined`
 
 </div>
 
@@ -10918,7 +10918,7 @@ getById(projectileId: number): Projectile | undefined
 
 Return a projectile by numeric id.
 
-[`Projectile`](?id=sandkit.api.projectiles.projectile) \| `undefined`
+[`Projectile`](?id=sandkit.api.projectiles.projectile) &#124; `undefined`
 
 </div>
 
@@ -11098,7 +11098,7 @@ castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistan
 
 Cast a ray from world position. Return hit point and distance, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) & `object` \| `null`
+[`Vector2`](api/shared.player.md?id=vector2) & `object` &#124; `null`
 
 </div>
 
@@ -11553,7 +11553,7 @@ get(fieldId: string & object): ConfigValueV1 | undefined
 
 Return a settings field value by id.
 
-[`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1) \| `undefined`
+[`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1) &#124; `undefined`
 
 </div>
 
@@ -11573,7 +11573,7 @@ getAll(): Readonly<Record<string, ConfigValueV1>>
 
 Return all settings as a read-only map.
 
-`Readonly`\<`Record`\<`string`, [`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1)\>\>
+`Readonly`&lt;`Record`&lt;`string`, [`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1)&gt;&gt;
 
 </div>
 
@@ -11593,7 +11593,7 @@ onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): (
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | <code>(`values`: `Readonly`\&lt;`Record`\&lt;`string`, [`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1)\&gt;\&gt;) =&gt; `void`</code> | Called with the full settings map after a change. |
+| callback | <code>(`values`: `Readonly`&lt;`Record`&lt;`string`, [`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1)&gt;&gt;) =&gt; `void`</code> | Called with the full settings map after a change. |
 
 <div class="smt-member-anchors">
 
@@ -11776,7 +11776,7 @@ get(key: string): SharedArray | undefined
 
 Look up a named shared buffer without creating it.
 
-[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) \| `undefined` The typed array, or `undefined` when the buffer does not exist.
+[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) &#124; `undefined` The typed array, or `undefined` when the buffer does not exist.
 
 </div>
 
@@ -12340,7 +12340,7 @@ load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
 
 Load a sprite from a URL path.
 
-`Promise`\<`void`\>
+`Promise`&lt;`void`&gt;
 
 </div>
 
@@ -12376,7 +12376,7 @@ loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions)
 
 Load a sprite from the calling mod folder.
 
-`Promise`\<`void`\>
+`Promise`&lt;`void`&gt;
 
 </div>
 
@@ -12519,7 +12519,7 @@ get(modId: string, key: string): JsonValueV1 | undefined
 
 Read a value from mod storage by key.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
 
 </div>
 
@@ -12622,7 +12622,7 @@ get(key: string): JsonValueV1 | undefined
 
 Read a local storage value by key.
 
-[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) \| `undefined`
+[`JsonValueV1`](api/shared.jsonvalue.md?id=jsonvaluev1) &#124; `undefined`
 
 </div>
 
@@ -13495,7 +13495,7 @@ updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStruct
 | Argument | Type | Description |
 | --- | --- | --- |
 | structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | Structure type value or string id. |
-| partial | `Partial`\<[`SandkitStructureDefinition`](?id=sandkit.api.structures.sandkitstructuredefinition)\> | Fields to merge onto the definition. |
+| partial | `Partial`<[`SandkitStructureDefinition`](?id=sandkit.api.structures.sandkitstructuredefinition)> | Fields to merge onto the definition. |
 | options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> |  |
 
 <div class="smt-member-anchors">
@@ -13690,7 +13690,7 @@ getAvailableTypes(): Set<StructureRef>
 
 Return structure types available for building.
 
-`Set`\<[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)\>
+`Set`&lt;[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)&gt;
 
 </div>
 
@@ -13717,7 +13717,7 @@ getUnlockedTypes(): Set<StructureRef>
 
 </div>
 
-`Set`\<[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)\>
+`Set`&lt;[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)&gt;
 
 </div>
 
@@ -14625,7 +14625,7 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 Return a tech definition by string id.
 
-[`TechDefinition`](?id=sandkit.api.tech.techdefinition) \| `undefined`
+[`TechDefinition`](?id=sandkit.api.tech.techdefinition) &#124; `undefined`
 
 </div>
 
@@ -14646,7 +14646,7 @@ updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | Tech entry identifier. |
-| updates | `Partial`\<[`TechDefinition`](?id=sandkit.api.tech.techdefinition)\> | Fields to merge into the definition. |
+| updates | `Partial`<[`TechDefinition`](?id=sandkit.api.tech.techdefinition)> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -15018,7 +15018,7 @@ updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>):
 | Argument | Type | Description |
 | --- | --- | --- |
 | cellTypeOrId | <code>[`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref)</code> | Numeric cell type or terrain string id. |
-| partial | `Partial`\<[`TerrainDefinition`](?id=sandkit.api.terrains.terraindefinition)\> | Fields to merge onto the definition. |
+| partial | `Partial`<[`TerrainDefinition`](?id=sandkit.api.terrains.terraindefinition)> | Fields to merge onto the definition. |
 
 <div class="smt-member-anchors">
 
@@ -15656,7 +15656,7 @@ Options for [regions.mount](api/sandkit.api.ui.regions.md?id=mount).
 
 </div>
 
-Partial options for [RegionMountHandle.update](?id=sandkit.api.ui.update-3).
+Partial options for [RegionMountHandle](?id=sandkit.api.ui.regionmounthandle).
 
 </div>
 
@@ -16231,7 +16231,7 @@ alert(message: LocalizedText, title?: LocalizedText): Promise<void>
 
 Show an alert dialog.
 
-`Promise`\<`void`\> Promise that resolves when the user dismisses the dialog.
+`Promise`&lt;`void`&gt; Promise that resolves when the user dismisses the dialog.
 
 ##### Example
 
@@ -16273,7 +16273,7 @@ confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
 
 Show a confirm dialog.
 
-`Promise`\<`boolean`\> Promise that resolves with true when confirmed, or false when cancelled.
+`Promise`&lt;`boolean`&gt; Promise that resolves with true when confirmed, or false when cancelled.
 
 ##### Example
 
@@ -16323,7 +16323,7 @@ prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedTex
 
 Show a prompt dialog.
 
-`Promise`\<`string` \| `null`\> Promise that resolves with entered text, or null when cancelled.
+`Promise`&lt;`string` &#124; `null`&gt; Promise that resolves with entered text, or null when cancelled.
 
 ##### Example
 
@@ -16352,8 +16352,8 @@ sandkit.api.ui.select<T = string>(options: readonly SelectChoice<T>[], opts?: Se
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options | <code>[`SelectChoice`](?id=sandkit.api.ui.selectchoice)\&lt;`T`\&gt;[]</code> | Choices shown in the picker. |
-| opts? | <code>[`SelectDialogOptions`](?id=sandkit.api.ui.selectdialogoptions)\&lt;`T`\&gt;</code> | Dialog title, default, and confirm label. |
+| options | <code>[`SelectChoice`](?id=sandkit.api.ui.selectchoice)&lt;`T`&gt;[]</code> | Choices shown in the picker. |
+| opts? | <code>[`SelectDialogOptions`](?id=sandkit.api.ui.selectdialogoptions)&lt;`T`&gt;</code> | Dialog title, default, and confirm label. |
 
 <div class="smt-member-anchors">
 
@@ -16367,7 +16367,7 @@ Show a modal choice picker.
 
 `T` = `string`
 
-`Promise`\<`T` \| `null`\> Promise that resolves with the chosen value, or null when cancelled.
+`Promise`&lt;`T` &#124; `null`&gt; Promise that resolves with the chosen value, or null when cancelled.
 
 ##### Example
 
@@ -16448,7 +16448,7 @@ sandkit.api.ui.useGameEvent<K *extends* EventId>(eventId: K, handler: (payload: 
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| handler | <code>(`payload`: [`EventPayload`](api/sandkit.api.events.md?id=eventpayload)\&lt;`K`\&gt;) =&gt; `void`</code> | Called with the event payload. |
+| handler | <code>(`payload`: [`EventPayload`](api/sandkit.api.events.md?id=eventpayload)&lt;`K`&gt;) =&gt; `void`</code> | Called with the event payload. |
 
 <div class="smt-member-anchors">
 
@@ -16489,7 +16489,7 @@ inject(componentId: ComponentId, component: ComponentType<Record<string, never>>
 | Argument | Type | Description |
 | --- | --- | --- |
 | componentId | <code>[`ComponentId`](?id=sandkit.api.ui.componentid)</code> | Overlay slot or custom mount point id. |
-| component | `ComponentType`\<`Record`\<`string`, `never`\>\> | React component to render. |
+| component | `ComponentType`<`Record`<`string`, `never`>> | React component to render. |
 
 <div class="smt-member-anchors">
 
@@ -16850,7 +16850,7 @@ React hook for a focusable UI element in a scope.
 
 `T` *extends* `HTMLElement` = `HTMLDivElement`
 
-[`Focusable`](api/sandkit.api.ui.md?id=focusable)\<`T`\> Ref, focus state, and a focus helper.
+[`Focusable`](api/sandkit.api.ui.md?id=focusable)&lt;`T`&gt; Ref, focus state, and a focus helper.
 
 ##### Example
 
@@ -17036,7 +17036,7 @@ Register a render function in an overlay slot.
 <span class="smt-member-deprecated-label">Deprecated</span>
 <div class="smt-member-deprecated-note" markdown="1">
 
-Use [RegionMountHandle.unmount](api/sandkit.api.ui.md?id=unmount) instead.
+Use [RegionMountHandle](api/sandkit.api.ui.md?id=regionmounthandle) instead.
 
 </div>
 </div>
@@ -17076,7 +17076,7 @@ Remove an overlay from a slot.
 <span class="smt-member-deprecated-label">Deprecated</span>
 <div class="smt-member-deprecated-note" markdown="1">
 
-Use [RegionMountHandle.update](api/sandkit.api.ui.md?id=update-3) instead.
+Use [RegionMountHandle](api/sandkit.api.ui.md?id=regionmounthandle) instead.
 
 </div>
 </div>
@@ -17128,7 +17128,7 @@ register(componentId: ComponentId, wrapper: (Original: ComponentType<Record<stri
 | Argument | Type | Description |
 | --- | --- | --- |
 | componentId | <code>[`ComponentId`](api/sandkit.api.ui.md?id=componentid)</code> | Built-in component id (for example `"resources"`). |
-| wrapper | <code>(`Original`: `ComponentType`\&lt;`Record`\&lt;`string`, `unknown`\&gt;\&gt;, `props`: `Record`\&lt;`string`, `unknown`\&gt;) =&gt; `ReactNode`</code> | Receives the original component and props; return replacement content. |
+| wrapper | <code>(`Original`: `ComponentType`&lt;`Record`&lt;`string`, `unknown`&gt;&gt;, `props`: `Record`&lt;`string`, `unknown`&gt;) =&gt; `ReactNode`</code> | Receives the original component and props; return replacement content. |
 
 <div class="smt-member-anchors">
 
@@ -17397,7 +17397,7 @@ updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefi
 | --- | --- | --- |
 | itemId | `string` | Parent item id. |
 | upgradeId | `string` | Upgrade id within the item. |
-| partial | `Partial`\<[`UpgradeDefinition`](?id=sandkit.api.upgrades.upgradedefinition)\> | Fields to merge into the definition. |
+| partial | `Partial`<[`UpgradeDefinition`](?id=sandkit.api.upgrades.upgradedefinition)> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -18368,7 +18368,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> |  |
+| args | <code>...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -18671,8 +18671,8 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| callback | <code>(`payload`: [`EventPayload`](?id=sandkit.api.events.worker.eventpayload)\&lt;`K`\&gt;) =&gt; `void`</code> | Called when the event is emitted. |
-| options? | <code>[`EventOnOptions`](?id=sandkit.api.events.worker.eventonoptions)\&lt;`K`\&gt;</code> | Required guard for filtered events. |
+| callback | <code>(`payload`: [`EventPayload`](?id=sandkit.api.events.worker.eventpayload)&lt;`K`&gt;) =&gt; `void`</code> | Called when the event is emitted. |
+| options? | <code>[`EventOnOptions`](?id=sandkit.api.events.worker.eventonoptions)&lt;`K`&gt;</code> | Required guard for filtered events. |
 
 <div class="smt-member-anchors">
 
@@ -18741,7 +18741,7 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| payload | <code>[`EventPayload`](?id=sandkit.api.events.worker.eventpayload)\&lt;`K`\&gt;</code> | Serializable payload passed to listeners. |
+| payload | <code>[`EventPayload`](?id=sandkit.api.events.worker.eventpayload)&lt;`K`&gt;</code> | Serializable payload passed to listeners. |
 | options? | <code>[`EventEmitOptions`](?id=sandkit.api.events.worker.eventemitoptions)</code> | Optional guard forwarded to filtered listeners. |
 
 <div class="smt-member-anchors">
@@ -19191,8 +19191,8 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 | Argument | Type | Description |
 | --- | --- | --- |
 | hookId | `K` | Registered hook identifier. |
-| callback | <code>(`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.worker.intercepthookargs)\&lt;`K`\&gt;, `context`: [`HookContext`](?id=sandkit.api.hooks.worker.hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
-| options? | <code>[`InterceptHookOptions`](?id=sandkit.api.hooks.worker.intercepthookoptions)\&lt;`K`\&gt;</code> | Optional guard and priority. |
+| callback | <code>(`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.worker.intercepthookargs)&lt;`K`&gt;, `context`: [`HookContext`](?id=sandkit.api.hooks.worker.hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
+| options? | <code>[`InterceptHookOptions`](?id=sandkit.api.hooks.worker.intercepthookoptions)&lt;`K`&gt;</code> | Optional guard and priority. |
 
 <div class="smt-member-anchors">
 
@@ -19303,7 +19303,7 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 | Argument | Type | Description |
 | --- | --- | --- |
 | hookId | `K` | Registered hook identifier. |
-| callback | <code>(`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.worker.modifyhookargs)\&lt;`K`\&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
+| callback | <code>(`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.worker.modifyhookargs)&lt;`K`&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
 | options? | <code>[`ModifyHookOptions`](?id=sandkit.api.hooks.worker.modifyhookoptions)</code> | Optional guard and priority. |
 
 <div class="smt-member-anchors">
@@ -19569,7 +19569,7 @@ getActive(): Readonly<ActiveMapV1> | null
 
 Return the currently loaded custom map definition.
 
-`Readonly`\<[`ActiveMapV1`](?id=sandkit.api.maps.worker.activemapv1)\> \| `null` Active map metadata, or `null` outside custom maps.
+`Readonly`&lt;[`ActiveMapV1`](?id=sandkit.api.maps.worker.activemapv1)&gt; &#124; `null` Active map metadata, or `null` outside custom maps.
 
 </div>
 
@@ -19966,7 +19966,7 @@ getAtCell(...args: CellCoordinates): Structure | null
 
 Return the structure at a cell, or null when none.
 
-[`Structure`](?id=sandkit.api.structures.worker.structure) \| `null`
+[`Structure`](?id=sandkit.api.structures.worker.structure) &#124; `null`
 
 </div>
 
@@ -20109,7 +20109,7 @@ isType(structure: Structure | null, structureId: string & object): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure) \&#124; `null`</code> | Structure instance, or null. |
+| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure) &#124; `null`</code> | Structure instance, or null. |
 | structureId | `string` & `object` | Structure string id to compare. |
 
 <div class="smt-member-anchors">
@@ -20762,7 +20762,7 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 Look up the definition for a terrain type.
 
-[`TerrainDefinition`](?id=sandkit.api.terrains.worker.terraindefinition) \| `undefined`
+[`TerrainDefinition`](?id=sandkit.api.terrains.worker.terraindefinition) &#124; `undefined`
 
 </div>
 
@@ -20792,7 +20792,7 @@ getTypeAtCell(...args: CellCoordinates): TerrainType | null
 
 Return the terrain cell type at a cell, or null when none.
 
-[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) \| `null`
+[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) &#124; `null`
 
 </div>
 
@@ -20822,7 +20822,7 @@ getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 
 Return terrain cell type and hit points at a cell.
 
-[`TerrainDataAtCell`](?id=sandkit.api.terrains.worker.terraindataatcell) \| `null` Cell type and hit points, or null when the cell is not terrain.
+[`TerrainDataAtCell`](?id=sandkit.api.terrains.worker.terraindataatcell) &#124; `null` Cell type and hit points, or null when the cell is not terrain.
 
 </div>
 
@@ -34738,7 +34738,7 @@ Packed simulation cell id from `world.getCellIdAtCell`.
 | speedCapOverdrive | <code>{ x: object; x.dir: dir: null; x.active: active: boolean; x.bonus: bonus: number; x.releaseTime: releaseTime: number; x.releaseBonus: releaseBonus: number; y: object; y.dir: dir: null; y.active: active: boolean; y.bonus: bonus: number; y.releaseTime: releaseTime: number; y.releaseBonus: releaseBonus: number }</code> | Temporary speed-cap bonuses applied on each axis. |
 | inventory | <code>InventoryItem[]</code> | Items currently held in the player inventory. |
 | buildings | <code>number[]</code> | Structure type ids the player has unlocked for building. |
-| tech | <code>{ Index Signature: \[`key`: `string` \&#124; `number`\]: `object` }</code> | Tech tree nodes and their unlock metadata. |
+| tech | <code>{ Index Signature: \[`key`: `string` &#124; `number`\]: `object` }</code> | Tech tree nodes and their unlock metadata. |
 | lockedTechs | <code>{ Index Signature: \[`key`: `string`\]: `boolean` }</code> | Tech ids explicitly locked for this save. |
 | action | <code>null</code> | Active world action, or null when idle. |
 | hotbar | <code>{ activeSlotIndex: number; hotbarIndex: number; bars: AssetRef[][] }</code> | Hotbar slots, active indices, and item sprites. |

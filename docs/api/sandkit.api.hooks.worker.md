@@ -343,8 +343,8 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 | Argument | Type | Description |
 | --- | --- | --- |
 | hookId | `K` | Registered hook identifier. |
-| callback | <code>(`args`: [`InterceptHookArgs`](?id=intercepthookargs)\&lt;`K`\&gt;, `context`: [`HookContext`](?id=hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
-| options? | <code>[`InterceptHookOptions`](?id=intercepthookoptions)\&lt;`K`\&gt;</code> | Optional guard and priority. |
+| callback | <code>(`args`: [`InterceptHookArgs`](?id=intercepthookargs)&lt;`K`&gt;, `context`: [`HookContext`](?id=hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
+| options? | <code>[`InterceptHookOptions`](?id=intercepthookoptions)&lt;`K`&gt;</code> | Optional guard and priority. |
 
 <div class="smt-member-anchors">
 
@@ -455,7 +455,7 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 | Argument | Type | Description |
 | --- | --- | --- |
 | hookId | `K` | Registered hook identifier. |
-| callback | <code>(`args`: [`ModifyHookArgs`](?id=modifyhookargs)\&lt;`K`\&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
+| callback | <code>(`args`: [`ModifyHookArgs`](?id=modifyhookargs)&lt;`K`&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
 | options? | <code>[`ModifyHookOptions`](?id=modifyhookoptions)</code> | Optional guard and priority. |
 
 <div class="smt-member-anchors">

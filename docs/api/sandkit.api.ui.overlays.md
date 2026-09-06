@@ -61,7 +61,7 @@ Register a render function in an overlay slot.
 <span class="smt-member-deprecated-label">Deprecated</span>
 <div class="smt-member-deprecated-note" markdown="1">
 
-Use [RegionMountHandle.unmount](api/sandkit.api.ui.md?id=unmount) instead.
+Use [RegionMountHandle](api/sandkit.api.ui.md?id=regionmounthandle) instead.
 
 </div>
 </div>
@@ -101,7 +101,7 @@ Remove an overlay from a slot.
 <span class="smt-member-deprecated-label">Deprecated</span>
 <div class="smt-member-deprecated-note" markdown="1">
 
-Use [RegionMountHandle.update](api/sandkit.api.ui.md?id=update-3) instead.
+Use [RegionMountHandle](api/sandkit.api.ui.md?id=regionmounthandle) instead.
 
 </div>
 </div>

@@ -112,6 +112,6 @@ get(key: string): SharedArray | undefined
 
 Look up a named shared buffer without creating it.
 
-[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) \| `undefined` The typed array, or `undefined` when the buffer does not exist.
+[`SharedArray`](api/sandkit.api.shared.md?id=sharedarray) &#124; `undefined` The typed array, or `undefined` when the buffer does not exist.
 
 </div>

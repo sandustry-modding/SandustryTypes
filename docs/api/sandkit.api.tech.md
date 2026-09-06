@@ -147,7 +147,7 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 Return a tech definition by string id.
 
-[`TechDefinition`](?id=techdefinition) \| `undefined`
+[`TechDefinition`](?id=techdefinition) &#124; `undefined`
 
 </div>
 
@@ -168,7 +168,7 @@ updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | techId | <code>[`TechGridId`](?id=techgridid)</code> | Tech entry identifier. |
-| updates | `Partial`\<[`TechDefinition`](?id=techdefinition)\> | Fields to merge into the definition. |
+| updates | `Partial`<[`TechDefinition`](?id=techdefinition)> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 

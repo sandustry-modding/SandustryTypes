@@ -37,6 +37,6 @@ castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistan
 
 Cast a ray from world position. Return hit point and distance, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) & `object` \| `null`
+[`Vector2`](api/shared.player.md?id=vector2) & `object` &#124; `null`
 
 </div>

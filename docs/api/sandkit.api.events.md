@@ -323,7 +323,7 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| callback | <code>(`payload`: [`EventPayload`](?id=eventpayload)\&lt;`K`\&gt;) =&gt; `void`</code> | Called when the event is emitted. |
+| callback | <code>(`payload`: [`EventPayload`](?id=eventpayload)&lt;`K`&gt;) =&gt; `void`</code> | Called when the event is emitted. |
 
 <div class="smt-member-anchors">
 
@@ -522,7 +522,7 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| payload | <code>[`EventPayload`](?id=eventpayload)\&lt;`K`\&gt;</code> | Serializable payload passed to listeners. |
+| payload | <code>[`EventPayload`](?id=eventpayload)&lt;`K`&gt;</code> | Serializable payload passed to listeners. |
 
 <div class="smt-member-anchors">
 

@@ -21,7 +21,7 @@ register(componentId: ComponentId, wrapper: (Original: ComponentType<Record<stri
 | Argument | Type | Description |
 | --- | --- | --- |
 | componentId | <code>[`ComponentId`](api/sandkit.api.ui.md?id=componentid)</code> | Built-in component id (for example `"resources"`). |
-| wrapper | <code>(`Original`: `ComponentType`\&lt;`Record`\&lt;`string`, `unknown`\&gt;\&gt;, `props`: `Record`\&lt;`string`, `unknown`\&gt;) =&gt; `ReactNode`</code> | Receives the original component and props; return replacement content. |
+| wrapper | <code>(`Original`: `ComponentType`&lt;`Record`&lt;`string`, `unknown`&gt;&gt;, `props`: `Record`&lt;`string`, `unknown`&gt;) =&gt; `ReactNode`</code> | Receives the original component and props; return replacement content. |
 
 <div class="smt-member-anchors">
 

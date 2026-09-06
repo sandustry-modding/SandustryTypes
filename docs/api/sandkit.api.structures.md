@@ -732,7 +732,7 @@ updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStruct
 | Argument | Type | Description |
 | --- | --- | --- |
 | structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | Structure type value or string id. |
-| partial | `Partial`\<[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)\> | Fields to merge onto the definition. |
+| partial | `Partial`<[`SandkitStructureDefinition`](?id=sandkitstructuredefinition)> | Fields to merge onto the definition. |
 | options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> |  |
 
 <div class="smt-member-anchors">
@@ -927,7 +927,7 @@ getAvailableTypes(): Set<StructureRef>
 
 Return structure types available for building.
 
-`Set`\<[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)\>
+`Set`&lt;[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)&gt;
 
 </div>
 
@@ -954,7 +954,7 @@ getUnlockedTypes(): Set<StructureRef>
 
 </div>
 
-`Set`\<[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)\>
+`Set`&lt;[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)&gt;
 
 </div>
 

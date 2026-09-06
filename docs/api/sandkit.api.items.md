@@ -141,7 +141,7 @@ updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | itemId | <code>[`ItemId`](?id=itemid)</code> | Registered item id. |
-| partial | `Partial`\<[`ItemDefinition`](?id=itemdefinition)\> | Fields to merge into the definition. |
+| partial | `Partial`<[`ItemDefinition`](?id=itemdefinition)> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -189,7 +189,7 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for an id, or undefined.
 
-[`ItemDefinition`](?id=itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
+[`ItemDefinition`](?id=itemdefinition)&lt;`unknown`, `unknown`&gt; &#124; `undefined`
 
 </div>
 
@@ -237,7 +237,7 @@ getActive(): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for the active hotbar slot.
 
-[`ItemDefinition`](?id=itemdefinition)\<`unknown`, `unknown`\> \| `undefined`
+[`ItemDefinition`](?id=itemdefinition)&lt;`unknown`, `unknown`&gt; &#124; `undefined`
 
 </div>
 

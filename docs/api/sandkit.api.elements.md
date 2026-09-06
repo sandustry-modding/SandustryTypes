@@ -504,7 +504,7 @@ updateDefinition(elementTypeOrId: ElementRef, partial: Partial<ElementDefinition
 | Argument | Type | Description |
 | --- | --- | --- |
 | elementTypeOrId | <code>[`ElementRef`](?id=elementref)</code> | Numeric type or string id. |
-| partial | `Partial`\<[`ElementDefinition`](?id=elementdefinition)\> | Fields to merge onto the definition. |
+| partial | `Partial`<[`ElementDefinition`](?id=elementdefinition)> | Fields to merge onto the definition. |
 
 <div class="smt-member-anchors">
 
@@ -617,7 +617,7 @@ findFreeCellInStructure(structureCellX: number, structureCellY: number, structur
 
 Finds a free cell inside a structure footprint, or null.
 
-[`Vector2`](api/shared.player.md?id=vector2) \| `null` Cell coordinates of a free cell, or null when none.
+[`Vector2`](api/shared.player.md?id=vector2) &#124; `null` Cell coordinates of a free cell, or null when none.
 
 </div>
 
@@ -1204,7 +1204,7 @@ setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> |  |
+| args | <code>...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1241,7 +1241,7 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`, `number`\]</code> |  |
+| args | <code>...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`, `number`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1576,7 +1576,7 @@ getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 
 Look up the definition for a type handle.
 
-[`ElementDefinition`](?id=elementdefinition) \| `undefined`
+[`ElementDefinition`](?id=elementdefinition) &#124; `undefined`
 
 </div>
 
@@ -1606,7 +1606,7 @@ getTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the raw element type at a cell (may differ from resolved type).
 
-[`ElementType`](?id=elementtype) \| `null`
+[`ElementType`](?id=elementtype) &#124; `null`
 
 </div>
 
@@ -1636,7 +1636,7 @@ getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the resolved element type after overlays and particles.
 
-[`ElementType`](?id=elementtype) \| `null`
+[`ElementType`](?id=elementtype) &#124; `null`
 
 </div>
 
@@ -1666,7 +1666,7 @@ getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 
 Return the resolved element type from a packed cell id.
 
-[`ElementType`](?id=elementtype) \| `null`
+[`ElementType`](?id=elementtype) &#124; `null`
 
 </div>
 
@@ -1696,7 +1696,7 @@ getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle:
 
 Return element index, particle flag, and ids at a cell.
 
-\{ `elementType`: [`ElementType`](?id=elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} \| `null`
+\{ `elementType`: [`ElementType`](?id=elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} &#124; `null`
 
 </div>
 
@@ -1726,7 +1726,7 @@ getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 
 Return the matter category at a cell, or null when empty.
 
-[`MatterType`](api/sandkit.api.elements.MatterType.md) \| `null`
+[`MatterType`](api/sandkit.api.elements.MatterType.md) &#124; `null`
 
 </div>
 
@@ -1812,7 +1812,7 @@ getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 
 Return per-cell velocity for moving elements.
 
-\{ `x`: `number`; `y`: `number`; \} \| `null`
+\{ `x`: `number`; `y`: `number`; \} &#124; `null`
 
 </div>
 
@@ -1832,7 +1832,7 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `1` \&#124; `2` \&#124; `3` \&#124; `4`\]</code> |  |
+| args | <code>...\[`number`, `number`, `1` &#124; `2` &#124; `3` &#124; `4`\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -1842,6 +1842,6 @@ getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 
 Read element data field 1–4 at a cell.
 
-`number` \| `null`
+`number` &#124; `null`
 
 </div>

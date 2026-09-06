@@ -142,7 +142,7 @@ updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefi
 | --- | --- | --- |
 | itemId | `string` | Parent item id. |
 | upgradeId | `string` | Upgrade id within the item. |
-| partial | `Partial`\<[`UpgradeDefinition`](?id=upgradedefinition)\> | Fields to merge into the definition. |
+| partial | `Partial`<[`UpgradeDefinition`](?id=upgradedefinition)> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 

@@ -106,7 +106,7 @@ Options for [regions.mount](api/sandkit.api.ui.regions.md?id=mount).
 
 </div>
 
-Partial options for [RegionMountHandle.update](?id=update-3).
+Partial options for [RegionMountHandle](?id=regionmounthandle).
 
 </div>
 
@@ -681,7 +681,7 @@ alert(message: LocalizedText, title?: LocalizedText): Promise<void>
 
 Show an alert dialog.
 
-`Promise`\<`void`\> Promise that resolves when the user dismisses the dialog.
+`Promise`&lt;`void`&gt; Promise that resolves when the user dismisses the dialog.
 
 #### Example
 
@@ -723,7 +723,7 @@ confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
 
 Show a confirm dialog.
 
-`Promise`\<`boolean`\> Promise that resolves with true when confirmed, or false when cancelled.
+`Promise`&lt;`boolean`&gt; Promise that resolves with true when confirmed, or false when cancelled.
 
 #### Example
 
@@ -773,7 +773,7 @@ prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedTex
 
 Show a prompt dialog.
 
-`Promise`\<`string` \| `null`\> Promise that resolves with entered text, or null when cancelled.
+`Promise`&lt;`string` &#124; `null`&gt; Promise that resolves with entered text, or null when cancelled.
 
 #### Example
 
@@ -802,8 +802,8 @@ sandkit.api.ui.select<T = string>(options: readonly SelectChoice<T>[], opts?: Se
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options | <code>[`SelectChoice`](?id=selectchoice)\&lt;`T`\&gt;[]</code> | Choices shown in the picker. |
-| opts? | <code>[`SelectDialogOptions`](?id=selectdialogoptions)\&lt;`T`\&gt;</code> | Dialog title, default, and confirm label. |
+| options | <code>[`SelectChoice`](?id=selectchoice)&lt;`T`&gt;[]</code> | Choices shown in the picker. |
+| opts? | <code>[`SelectDialogOptions`](?id=selectdialogoptions)&lt;`T`&gt;</code> | Dialog title, default, and confirm label. |
 
 <div class="smt-member-anchors">
 
@@ -817,7 +817,7 @@ Show a modal choice picker.
 
 `T` = `string`
 
-`Promise`\<`T` \| `null`\> Promise that resolves with the chosen value, or null when cancelled.
+`Promise`&lt;`T` &#124; `null`&gt; Promise that resolves with the chosen value, or null when cancelled.
 
 #### Example
 
@@ -898,7 +898,7 @@ sandkit.api.ui.useGameEvent<K *extends* EventId>(eventId: K, handler: (payload: 
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| handler | <code>(`payload`: [`EventPayload`](api/sandkit.api.events.md?id=eventpayload)\&lt;`K`\&gt;) =&gt; `void`</code> | Called with the event payload. |
+| handler | <code>(`payload`: [`EventPayload`](api/sandkit.api.events.md?id=eventpayload)&lt;`K`&gt;) =&gt; `void`</code> | Called with the event payload. |
 
 <div class="smt-member-anchors">
 
@@ -939,7 +939,7 @@ inject(componentId: ComponentId, component: ComponentType<Record<string, never>>
 | Argument | Type | Description |
 | --- | --- | --- |
 | componentId | <code>[`ComponentId`](?id=componentid)</code> | Overlay slot or custom mount point id. |
-| component | `ComponentType`\<`Record`\<`string`, `never`\>\> | React component to render. |
+| component | `ComponentType`<`Record`<`string`, `never`>> | React component to render. |
 
 <div class="smt-member-anchors">
 

@@ -85,7 +85,7 @@ updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>):
 | Argument | Type | Description |
 | --- | --- | --- |
 | cellTypeOrId | <code>[`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref)</code> | Numeric cell type or terrain string id. |
-| partial | `Partial`\<[`TerrainDefinition`](?id=terraindefinition)\> | Fields to merge onto the definition. |
+| partial | `Partial`<[`TerrainDefinition`](?id=terraindefinition)> | Fields to merge onto the definition. |
 
 <div class="smt-member-anchors">
 

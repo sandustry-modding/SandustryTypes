@@ -32,7 +32,7 @@ React hook for a focusable UI element in a scope.
 
 `T` *extends* `HTMLElement` = `HTMLDivElement`
 
-[`Focusable`](api/sandkit.api.ui.md?id=focusable)\<`T`\> Ref, focus state, and a focus helper.
+[`Focusable`](api/sandkit.api.ui.md?id=focusable)&lt;`T`&gt; Ref, focus state, and a focus helper.
 
 #### Example
 
