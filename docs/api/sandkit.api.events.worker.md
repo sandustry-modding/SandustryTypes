@@ -11,7 +11,6 @@ Worker-thread `sandkit.api.events` — subscribe to and emit worker-scoped event
 ### EventGuard :id=eventguard
 
 <p class="smt-member-path"><code>sandkit.api.events.EventGuard (worker)</code></p>
-
 Defined in: [worker/api/events.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L68)
 
 Guard filter for worker events.
@@ -43,7 +42,6 @@ Required when subscribing to `terrain:updated`. Optional on emit.
 ### EventEmitOptions :id=eventemitoptions
 
 <p class="smt-member-path"><code>sandkit.api.events.EventEmitOptions (worker)</code></p>
-
 Defined in: [worker/api/events.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L83)
 
 Options for [emit](#emit).
@@ -63,7 +61,6 @@ Defined in: [worker/api/events.d.ts:84](https://github.com/sandustry-modding/San
 ### EventPayloadMap :id=eventpayloadmap
 
 <p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap (worker)</code></p>
-
 Defined in: [worker/api/events.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L88)
 
 Known worker event payloads. Unlisted ids still use `unknown`.
@@ -122,10 +119,8 @@ Use `"worker:update:post"` instead.
 
 ### EventOnOptions :id=eventonoptions
 
-<p class="smt-member-path"><code>sandkit.api.events.EventOnOptions (worker)</code></p>
-
 ```ts
-EventOnOptions<K *extends* EventId> = K *extends* "element:moved" ? object : K *extends* "terrain:updated" | "terrain:update" ? object : object
+sandkit.api.events.EventOnOptions<K *extends* EventId> = K *extends* "element:moved" ? object : K *extends* "terrain:updated" | "terrain:update" ? object : object
 ```
 
 Defined in: [worker/api/events.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L76)
@@ -142,10 +137,8 @@ Options for [on](#on).
 
 ### EventId :id=eventid
 
-<p class="smt-member-path"><code>sandkit.api.events.EventId (worker)</code></p>
-
 ```ts
-EventId = LooseString<keyof EventPayloadMap>
+sandkit.api.events.EventId = LooseString<keyof EventPayloadMap>
 ```
 
 Defined in: [worker/api/events.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L99)
@@ -156,10 +149,8 @@ Known worker event names plus any custom string id.
 
 ### EventPayload :id=eventpayload
 
-<p class="smt-member-path"><code>sandkit.api.events.EventPayload (worker)</code></p>
-
 ```ts
-EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
+sandkit.api.events.EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
 ```
 
 Defined in: [worker/api/events.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L102)
@@ -176,10 +167,8 @@ Event payload type for a given event id.
 
 ### on() :id=on
 
-<p class="smt-member-path"><code>sandkit.api.events.on() (worker)</code></p>
-
 ```ts
-on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void, options?: EventOnOptions<K>): () => void
+sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void, options?: EventOnOptions<K>): () => void
 ```
 
 Defined in: [worker/api/events.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L46)
@@ -256,10 +245,8 @@ api.events.on("worker:update:post", (payload) => {
 
 ### emit() :id=emit
 
-<p class="smt-member-path"><code>sandkit.api.events.emit() (worker)</code></p>
-
 ```ts
-emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>, options?: EventEmitOptions): void
+sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>, options?: EventEmitOptions): void
 ```
 
 Defined in: [worker/api/events.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L61)

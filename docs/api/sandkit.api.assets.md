@@ -7,10 +7,8 @@ Main thread only.
 
 ### AssetProviderV1 :id=assetproviderv1
 
-<p class="smt-member-path"><code>sandkit.api.assets.AssetProviderV1</code></p>
-
 ```ts
-AssetProviderV1 = object
+sandkit.api.assets.AssetProviderV1 = object
 ```
 
 Defined in: [sandkit/api/assets.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L7)
@@ -63,10 +61,8 @@ Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/Sa
 
 ### getUrl() :id=geturl
 
-<p class="smt-member-path"><code>sandkit.api.assets.getUrl()</code></p>
-
 ```ts
-getUrl(relativePath: string): string
+sandkit.api.assets.getUrl(relativePath: string): string
 ```
 
 Defined in: [sandkit/api/assets.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L18)
@@ -89,10 +85,8 @@ Path relative to the calling mod folder.
 
 ### getSelectedProvider() :id=getselectedprovider
 
-<p class="smt-member-path"><code>sandkit.api.assets.getSelectedProvider()</code></p>
-
 ```ts
-getSelectedProvider(kind: string): AssetProviderV1 | null
+sandkit.api.assets.getSelectedProvider(kind: string): AssetProviderV1 | null
 ```
 
 Defined in: [sandkit/api/assets.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L23)
@@ -115,10 +109,8 @@ Asset kind identifier.
 
 ### selectProvider() :id=selectprovider
 
-<p class="smt-member-path"><code>sandkit.api.assets.selectProvider()</code></p>
-
 ```ts
-selectProvider(kind: string, providerId: string | null): boolean
+sandkit.api.assets.selectProvider(kind: string, providerId: string | null): boolean
 ```
 
 Defined in: [sandkit/api/assets.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L29)

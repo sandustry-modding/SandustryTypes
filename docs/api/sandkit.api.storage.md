@@ -8,10 +8,8 @@
 
 ### ensure() :id=ensure
 
-<p class="smt-member-path"><code>sandkit.api.storage.ensure()</code></p>
-
 ```ts
-ensure(modId: string): JsonObjectV1
+sandkit.api.storage.ensure(modId: string): JsonObjectV1
 ```
 
 Defined in: [sandkit/api/storage.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L15)
@@ -34,10 +32,8 @@ Mod identifier (typically `modinfo.id`).
 
 ### get() :id=get
 
-<p class="smt-member-path"><code>sandkit.api.storage.get()</code></p>
-
 ```ts
-get(modId: string, key: string): JsonValueV1 | undefined
+sandkit.api.storage.get(modId: string, key: string): JsonValueV1 | undefined
 ```
 
 Defined in: [sandkit/api/storage.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L21)
@@ -66,10 +62,8 @@ Storage key.
 
 ### set() :id=set
 
-<p class="smt-member-path"><code>sandkit.api.storage.set()</code></p>
-
 ```ts
-set(modId: string, key: string, value: JsonValueV1): void
+sandkit.api.storage.set(modId: string, key: string, value: JsonValueV1): void
 ```
 
 Defined in: [sandkit/api/storage.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L28)
@@ -104,10 +98,8 @@ JSON-serializable value.
 
 ### remove() :id=remove
 
-<p class="smt-member-path"><code>sandkit.api.storage.remove()</code></p>
-
 ```ts
-remove(modId: string, key: string): void
+sandkit.api.storage.remove(modId: string, key: string): void
 ```
 
 Defined in: [sandkit/api/storage.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L34)

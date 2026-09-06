@@ -118,7 +118,6 @@ api.ui.useGameEvent("resource:collected", (payload) => {
 ### TooltipMessageData :id=tooltipmessagedata
 
 <p class="smt-member-path"><code>sandkit.api.ui.TooltipMessageData</code></p>
-
 Defined in: [sandkit/api/ui.d.ts:299](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L299)
 
 Message tooltip with localized body text.
@@ -150,7 +149,6 @@ Message body as localized text.
 ### Focusable :id=focusable
 
 <p class="smt-member-path"><code>sandkit.api.ui.Focusable</code></p>
-
 Defined in: [sandkit/api/ui.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L307)
 
 Focusable element state from useFocusable.
@@ -202,7 +200,6 @@ Move controller focus to this element.
 ### FocusOptions :id=focusoptions
 
 <p class="smt-member-path"><code>sandkit.api.ui.FocusOptions</code></p>
-
 Defined in: [sandkit/api/ui.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L317)
 
 Options for useFocusable registration.
@@ -317,10 +314,8 @@ When true, scroll the element into view on focus.
 
 ### OverlaySlot :id=overlayslot
 
-<p class="smt-member-path"><code>sandkit.api.ui.OverlaySlot</code></p>
-
 ```ts
-OverlaySlot = LooseString<"hotbar" | "global">
+sandkit.api.ui.OverlaySlot = LooseString<"hotbar" | "global">
 ```
 
 Defined in: [sandkit/api/ui.d.ts:284](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L284)
@@ -331,10 +326,8 @@ Overlay slot name. Known vanilla slots autocomplete; any string is allowed.
 
 ### ComponentId :id=componentid
 
-<p class="smt-member-path"><code>sandkit.api.ui.ComponentId</code></p>
-
 ```ts
-ComponentId = ComponentId | LooseString<never>
+sandkit.api.ui.ComponentId = ComponentId | LooseString<never>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L290)
@@ -346,10 +339,8 @@ Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) values autocomplete
 
 ### ComponentUpdateOptions :id=componentupdateoptions
 
-<p class="smt-member-path"><code>sandkit.api.ui.ComponentUpdateOptions</code></p>
-
 ```ts
-ComponentUpdateOptions = Record<string, unknown>
+sandkit.api.ui.ComponentUpdateOptions = Record<string, unknown>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:293](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L293)
@@ -360,10 +351,8 @@ Component-specific update payload passed to [update](#update).
 
 ### TooltipData :id=tooltipdata
 
-<p class="smt-member-path"><code>sandkit.api.ui.TooltipData</code></p>
-
 ```ts
-TooltipData = TooltipMessageData
+sandkit.api.ui.TooltipData = TooltipMessageData
 ```
 
 Defined in: [sandkit/api/ui.d.ts:296](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L296)
@@ -374,10 +363,8 @@ Tooltip payload shown near the cursor or UI target.
 
 ### update() :id=update
 
-<p class="smt-member-path"><code>sandkit.api.ui.update()</code></p>
-
 ```ts
-update(componentId: ComponentId, options?: ComponentUpdateOptions): void
+sandkit.api.ui.update(componentId: ComponentId, options?: ComponentUpdateOptions): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L130)
@@ -406,10 +393,8 @@ Component-specific update payload.
 
 ### openPauseMenu() :id=openpausemenu
 
-<p class="smt-member-path"><code>sandkit.api.ui.openPauseMenu()</code></p>
-
 ```ts
-openPauseMenu(): void
+sandkit.api.ui.openPauseMenu(): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L133)
@@ -424,10 +409,8 @@ Open the pause menu.
 
 ### showTooltip() :id=showtooltip
 
-<p class="smt-member-path"><code>sandkit.api.ui.showTooltip()</code></p>
-
 ```ts
-showTooltip(data: TooltipMessageData): void
+sandkit.api.ui.showTooltip(data: TooltipMessageData): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L139)
@@ -450,10 +433,8 @@ Tooltip type and localized content.
 
 ### alert() :id=alert
 
-<p class="smt-member-path"><code>sandkit.api.ui.alert()</code></p>
-
 ```ts
-alert(message: LocalizedText, title?: LocalizedText): Promise<void>
+sandkit.api.ui.alert(message: LocalizedText, title?: LocalizedText): Promise<void>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L155)
@@ -493,10 +474,8 @@ await api.ui.alert(
 
 ### confirm() :id=confirm
 
-<p class="smt-member-path"><code>sandkit.api.ui.confirm()</code></p>
-
 ```ts
-confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
+sandkit.api.ui.confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L170)
@@ -535,10 +514,8 @@ const confirmed = await api.ui.confirm(
 
 ### prompt() :id=prompt
 
-<p class="smt-member-path"><code>sandkit.api.ui.prompt()</code></p>
-
 ```ts
-prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>
+sandkit.api.ui.prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L189)
@@ -596,10 +573,8 @@ const value = await api.ui.prompt(
 
 ### inject() :id=inject
 
-<p class="smt-member-path"><code>sandkit.api.ui.inject()</code></p>
-
 ```ts
-inject(componentId: ComponentId, component: ComponentType<Record<string, never>>): () => void
+sandkit.api.ui.inject(componentId: ComponentId, component: ComponentType<Record<string, never>>): () => void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L203)
@@ -631,7 +606,6 @@ Function that unmounts the injected component.
 ### toast :id=toast
 
 <p class="smt-member-path"><code>sandkit.api.ui.toast</code></p>
-
 Re-exports [toast](api/sandkit.api.ui.worker.md#toast)
 
 ***
@@ -639,7 +613,6 @@ Re-exports [toast](api/sandkit.api.ui.worker.md#toast)
 ### LocalizedText :id=localizedtext
 
 <p class="smt-member-path"><code>sandkit.api.ui.LocalizedText</code></p>
-
 Re-exports [LocalizedText](api/sandkit.api.ui.worker.md#localizedtext)
 
 ***
@@ -647,5 +620,4 @@ Re-exports [LocalizedText](api/sandkit.api.ui.worker.md#localizedtext)
 ### ToastOptions :id=toastoptions
 
 <p class="smt-member-path"><code>sandkit.api.ui.ToastOptions</code></p>
-
 Re-exports [ToastOptions](api/sandkit.api.ui.worker.md#toastoptions)

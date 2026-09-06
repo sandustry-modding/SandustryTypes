@@ -73,12 +73,16 @@ test("qualifiedNameToSlug and apiPathToRouteFile use runtime-style URLs", () => 
   );
 });
 
-test("qualifyApiMarkdown keeps local member headings and stores the runtime path", () => {
+test("qualifyApiMarkdown puts the absolute path in the signature fence", () => {
   const src = `# settings
 
 ## Functions
 
 ### get()
+
+\`\`\`ts
+get(id: string): unknown
+\`\`\`
 
 Return a value.
 
@@ -86,15 +90,63 @@ Return a value.
 
 ### ConfigValueV1
 
-A value.
+\`\`\`ts
+ConfigValueV1 = string | number | boolean
+\`\`\`
 `;
   const out = qualifyApiMarkdown(src, "sandkit.api.settings");
   assert.match(out, /^# sandkit\.api\.settings$/m);
   assert.match(out, /^## Functions <!-- \{docsify-ignore\} -->$/m);
   assert.match(out, /^### get\(\) :id=get$/m);
-  assert.match(out, /<code>sandkit\.api\.settings\.get\(\)<\/code>/);
+  assert.match(out, /^sandkit\.api\.settings\.get\(id: string\): unknown$/m);
   assert.match(out, /^### ConfigValueV1 :id=configvaluev1$/m);
-  assert.match(out, /<code>sandkit\.api\.settings\.ConfigValueV1<\/code>/);
+  assert.match(out, /^sandkit\.api\.settings\.ConfigValueV1 = string \| number \| boolean$/m);
+  assert.doesNotMatch(out, /smt-member-path/);
+});
+
+test("qualifyApiMarkdown keeps a path line when there is no signature fence", () => {
+  const src = `# settings
+
+## Functions
+
+### get()
+
+Return a value.
+`;
+  const out = qualifyApiMarkdown(src, "sandkit.api.settings");
+  assert.match(out, /<code>sandkit\.api\.settings\.get\(\)<\/code>/);
+});
+
+test("qualifyApiMarkdown uses live sandkit paths for composed bag types", () => {
+  const src = `# sandkit
+
+## Type Aliases
+
+### SandkitApi
+
+The composed api bag.
+
+### Sandkit
+
+The host object.
+`;
+  const out = qualifyApiMarkdown(src, "sandkit");
+  assert.match(out, /^### sandkit\.api :id=sandkitapi$/m);
+  assert.match(out, /^### sandkit :id=sandkit$/m);
+  assert.doesNotMatch(out, /sandkit\.SandkitApi/);
+  assert.doesNotMatch(out, /<code>sandkit\.Sandkit<\/code>/);
+});
+
+test("qualifyApiMarkdown marks WorkerSandkitApi as the worker api", () => {
+  const src = `# worker
+
+## Type Aliases
+
+### WorkerSandkitApi
+`;
+  const out = qualifyApiMarkdown(src, "sandkit.api (worker)");
+  assert.match(out, /^### sandkit\.api \(worker\) :id=workersandkitapi$/m);
+  assert.doesNotMatch(out, /WorkerSandkitApi :id=/);
 });
 
 test("qualifyApiMarkdown marks worker members without breaking the main-thread name", () => {
@@ -120,13 +172,17 @@ test("buildSearchIndex prefers runtime member paths as titles", () => {
 
 ### get() :id=get
 
-<p class="smt-member-path"><code>sandkit.api.settings.get()</code></p>
+\`\`\`ts
+sandkit.api.settings.get(id: string): unknown
+\`\`\`
 
 Return a settings field value by id.
 
 ### ConfigValueV1 :id=configvaluev1
 
-<p class="smt-member-path"><code>sandkit.api.settings.ConfigValueV1</code></p>
+\`\`\`ts
+sandkit.api.settings.ConfigValueV1 = string | number | boolean
+\`\`\`
 
 Settings field value shape.
 `,
@@ -149,6 +205,7 @@ test("mdFileToSearchPath matches Docsify getFile paths", () => {
   assert.equal(mdFileToSearchPath("api/full.md"), null);
   assert.equal(mdFileToSearchPath("modules.md"), "/modules");
   assert.equal(mdFileToSearchPath("api/global/README.md"), null);
+  assert.equal(mdFileToSearchPath("search.md"), null);
   assert.equal(mdFileToSearchPath("AGENTS.md"), null);
 });
 

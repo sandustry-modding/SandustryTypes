@@ -18,10 +18,8 @@ Worker-entry mutations apply immediately. Main thread defers matching helpers in
 
 ### createAtCell() :id=createatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.createAtCell() (worker)</code></p>
-
 ```ts
-createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
+sandkit.api.elements.createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
 Defined in: [worker/api/elements.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L79)
@@ -56,10 +54,8 @@ api.elements.createAtCell(cellX, cellY, "water", {
 
 ### replaceAtCell() :id=replaceatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.replaceAtCell() (worker)</code></p>
-
 ```ts
-replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
+sandkit.api.elements.replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
 Defined in: [worker/api/elements.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L93)
@@ -84,10 +80,8 @@ Replace the element at a cell immediately on this worker.
 
 ### removeAtCell() :id=removeatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.removeAtCell() (worker)</code></p>
-
 ```ts
-removeAtCell(...args: number, number, [ElementRemovalOptions]): void
+sandkit.api.elements.removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 ```
 
 Defined in: [worker/api/elements.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L106)
@@ -112,10 +106,8 @@ Remove the element at a cell immediately on this worker.
 
 ### moveBetweenCells() :id=movebetweencells
 
-<p class="smt-member-path"><code>sandkit.api.elements.moveBetweenCells() (worker)</code></p>
-
 ```ts
-moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): boolean
+sandkit.api.elements.moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L121)
@@ -162,10 +154,8 @@ True when the move succeeded.
 
 ### teleportBetweenCells() :id=teleportbetweencells
 
-<p class="smt-member-path"><code>sandkit.api.elements.teleportBetweenCells() (worker)</code></p>
-
 ```ts
-teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
+sandkit.api.elements.teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
 ```
 
 Defined in: [worker/api/elements.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L138)
@@ -210,10 +200,8 @@ Destination cell row.
 
 ### swapBetweenCells() :id=swapbetweencells
 
-<p class="smt-member-path"><code>sandkit.api.elements.swapBetweenCells() (worker)</code></p>
-
 ```ts
-swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
+sandkit.api.elements.swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L156)
@@ -258,10 +246,10 @@ True when the swap succeeded.
 
 ***
 
-### ~~swapCells()~~
+### ~~swapCells()~~ :id=swapcells
 
 ```ts
-swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
+sandkit.api.elements.swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L168)
@@ -300,10 +288,8 @@ Use [swapBetweenCells](#swapbetweencells) instead.
 
 ### markMovementBlockedByIndex() :id=markmovementblockedbyindex
 
-<p class="smt-member-path"><code>sandkit.api.elements.markMovementBlockedByIndex() (worker)</code></p>
-
 ```ts
-markMovementBlockedByIndex(elementIndex: number): void
+sandkit.api.elements.markMovementBlockedByIndex(elementIndex: number): void
 ```
 
 Defined in: [worker/api/elements.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L182)
@@ -328,10 +314,10 @@ Element index from [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell).
 
 ***
 
-### ~~markMovementBlockedByElementIndex()~~
+### ~~markMovementBlockedByElementIndex()~~ :id=markmovementblockedbyelementindex
 
 ```ts
-markMovementBlockedByElementIndex(elementIndex: number): void
+sandkit.api.elements.markMovementBlockedByElementIndex(elementIndex: number): void
 ```
 
 Defined in: [worker/api/elements.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L189)
@@ -358,10 +344,8 @@ Use [markMovementBlockedByIndex](#markmovementblockedbyindex) instead.
 
 ### setVelocityAtCell() :id=setvelocityatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setVelocityAtCell() (worker)</code></p>
-
 ```ts
-setVelocityAtCell(...args: number, number, [Vector2]): boolean
+sandkit.api.elements.setVelocityAtCell(...args: number, number, [Vector2]): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L201)
@@ -388,10 +372,8 @@ True when velocity was set.
 
 ### addParticleVelocityAtCell() :id=addparticlevelocityatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.addParticleVelocityAtCell() (worker)</code></p>
-
 ```ts
-addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean
+sandkit.api.elements.addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L214)
@@ -418,10 +400,8 @@ True when velocity was updated.
 
 ### convertToParticleAtCell() :id=converttoparticleatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.convertToParticleAtCell() (worker)</code></p>
-
 ```ts
-convertToParticleAtCell(...args: number, number, [Vector2]): boolean
+sandkit.api.elements.convertToParticleAtCell(...args: number, number, [Vector2]): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:228](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L228)
@@ -448,10 +428,8 @@ True when conversion succeeded.
 
 ### convertFromParticleAtCell() :id=convertfromparticleatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.convertFromParticleAtCell() (worker)</code></p>
-
 ```ts
-convertFromParticleAtCell(...args: CellCoordinates): boolean
+sandkit.api.elements.convertFromParticleAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:241](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L241)
@@ -478,10 +456,8 @@ True when conversion succeeded.
 
 ### setDataFieldAtCell() :id=setdatafieldatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setDataFieldAtCell() (worker)</code></p>
-
 ```ts
-setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
+sandkit.api.elements.setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L254)
@@ -508,10 +484,8 @@ True when the field was set.
 
 ### refreshColorAtCell() :id=refreshcoloratcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.refreshColorAtCell() (worker)</code></p>
-
 ```ts
-refreshColorAtCell(...args: CellCoordinates): void
+sandkit.api.elements.refreshColorAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [worker/api/elements.d.ts:266](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L266)
@@ -536,10 +510,8 @@ Refresh the rendered color at a cell immediately on this worker.
 
 ### setPhysicsAtCell() :id=setphysicsatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setPhysicsAtCell() (worker)</code></p>
-
 ```ts
-setPhysicsAtCell(...args: [number, number, number]): void
+sandkit.api.elements.setPhysicsAtCell(...args: [number, number, number]): void
 ```
 
 Defined in: [worker/api/elements.d.ts:277](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L277)
@@ -564,10 +536,8 @@ Set the physics skip mode at a cell immediately on this worker.
 
 ### setDurationAtCell() :id=setdurationatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setDurationAtCell() (worker)</code></p>
-
 ```ts
-setDurationAtCell(...args: [number, number, number, object]): boolean
+sandkit.api.elements.setDurationAtCell(...args: [number, number, number, object]): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:300](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L300)
@@ -608,7 +578,6 @@ const updated = api.elements.setDurationAtCell(
 ### ElementType :id=elementtype
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementType (worker)</code></p>
-
 Re-exports [ElementType](api/sandkit.api.elements.md#elementtype)
 
 ***
@@ -616,7 +585,6 @@ Re-exports [ElementType](api/sandkit.api.elements.md#elementtype)
 ### ElementId :id=elementid
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementId (worker)</code></p>
-
 Re-exports [ElementId](api/sandkit.api.elements.md#elementid)
 
 ***
@@ -624,7 +592,6 @@ Re-exports [ElementId](api/sandkit.api.elements.md#elementid)
 ### ElementRef :id=elementref
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementRef (worker)</code></p>
-
 Re-exports [ElementRef](api/sandkit.api.elements.md#elementref)
 
 ***
@@ -632,7 +599,6 @@ Re-exports [ElementRef](api/sandkit.api.elements.md#elementref)
 ### MatterType :id=mattertype
 
 <p class="smt-member-path"><code>sandkit.api.elements.MatterType (worker)</code></p>
-
 Re-exports [MatterType](api/sandkit.api.elements.MatterType.md)
 
 ***
@@ -640,7 +606,6 @@ Re-exports [MatterType](api/sandkit.api.elements.MatterType.md)
 ### ElementDefinition :id=elementdefinition
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementDefinition (worker)</code></p>
-
 Re-exports [ElementDefinition](api/sandkit.api.elements.md#elementdefinition)
 
 ***
@@ -648,7 +613,6 @@ Re-exports [ElementDefinition](api/sandkit.api.elements.md#elementdefinition)
 ### ElementCreateOptions :id=elementcreateoptions
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementCreateOptions (worker)</code></p>
-
 Re-exports [ElementCreateOptions](api/sandkit.api.elements.md#elementcreateoptions)
 
 ***
@@ -656,7 +620,6 @@ Re-exports [ElementCreateOptions](api/sandkit.api.elements.md#elementcreateoptio
 ### ElementRemovalOptions :id=elementremovaloptions
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementRemovalOptions (worker)</code></p>
-
 Re-exports [ElementRemovalOptions](api/sandkit.api.elements.md#elementremovaloptions)
 
 ***
@@ -664,7 +627,6 @@ Re-exports [ElementRemovalOptions](api/sandkit.api.elements.md#elementremovalopt
 ### getIdByType :id=getidbytype
 
 <p class="smt-member-path"><code>sandkit.api.elements.getIdByType (worker)</code></p>
-
 Re-exports [getIdByType](api/sandkit.api.elements.md#getidbytype)
 
 ***
@@ -672,7 +634,6 @@ Re-exports [getIdByType](api/sandkit.api.elements.md#getidbytype)
 ### getTypeById :id=gettypebyid
 
 <p class="smt-member-path"><code>sandkit.api.elements.getTypeById (worker)</code></p>
-
 Re-exports [getTypeById](api/sandkit.api.elements.md#gettypebyid)
 
 ***
@@ -680,7 +641,6 @@ Re-exports [getTypeById](api/sandkit.api.elements.md#gettypebyid)
 ### getTypeFromId :id=gettypefromid
 
 <p class="smt-member-path"><code>sandkit.api.elements.getTypeFromId (worker)</code></p>
-
 Re-exports [getTypeFromId](api/sandkit.api.elements.md#gettypefromid)
 
 ***
@@ -688,7 +648,6 @@ Re-exports [getTypeFromId](api/sandkit.api.elements.md#gettypefromid)
 ### getDefinitionByType :id=getdefinitionbytype
 
 <p class="smt-member-path"><code>sandkit.api.elements.getDefinitionByType (worker)</code></p>
-
 Re-exports [getDefinitionByType](api/sandkit.api.elements.md#getdefinitionbytype)
 
 ***
@@ -696,7 +655,6 @@ Re-exports [getDefinitionByType](api/sandkit.api.elements.md#getdefinitionbytype
 ### getTypeAtCell :id=gettypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getTypeAtCell (worker)</code></p>
-
 Re-exports [getTypeAtCell](api/sandkit.api.elements.md#gettypeatcell)
 
 ***
@@ -704,7 +662,6 @@ Re-exports [getTypeAtCell](api/sandkit.api.elements.md#gettypeatcell)
 ### getResolvedTypeAtCell :id=getresolvedtypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getResolvedTypeAtCell (worker)</code></p>
-
 Re-exports [getResolvedTypeAtCell](api/sandkit.api.elements.md#getresolvedtypeatcell)
 
 ***
@@ -712,7 +669,6 @@ Re-exports [getResolvedTypeAtCell](api/sandkit.api.elements.md#getresolvedtypeat
 ### getResolvedTypeFromCellId :id=getresolvedtypefromcellid
 
 <p class="smt-member-path"><code>sandkit.api.elements.getResolvedTypeFromCellId (worker)</code></p>
-
 Re-exports [getResolvedTypeFromCellId](api/sandkit.api.elements.md#getresolvedtypefromcellid)
 
 ***
@@ -720,7 +676,6 @@ Re-exports [getResolvedTypeFromCellId](api/sandkit.api.elements.md#getresolvedty
 ### getInfoAtCell :id=getinfoatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getInfoAtCell (worker)</code></p>
-
 Re-exports [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell)
 
 ***
@@ -728,7 +683,6 @@ Re-exports [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell)
 ### getMatterTypeAtCell :id=getmattertypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getMatterTypeAtCell (worker)</code></p>
-
 Re-exports [getMatterTypeAtCell](api/sandkit.api.elements.md#getmattertypeatcell)
 
 ***
@@ -736,7 +690,6 @@ Re-exports [getMatterTypeAtCell](api/sandkit.api.elements.md#getmattertypeatcell
 ### isTypeAtCell :id=istypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.isTypeAtCell (worker)</code></p>
-
 Re-exports [isTypeAtCell](api/sandkit.api.elements.md#istypeatcell)
 
 ***
@@ -744,7 +697,6 @@ Re-exports [isTypeAtCell](api/sandkit.api.elements.md#istypeatcell)
 ### isFreeFallingAtCell :id=isfreefallingatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.isFreeFallingAtCell (worker)</code></p>
-
 Re-exports [isFreeFallingAtCell](api/sandkit.api.elements.md#isfreefallingatcell)
 
 ***
@@ -752,7 +704,6 @@ Re-exports [isFreeFallingAtCell](api/sandkit.api.elements.md#isfreefallingatcell
 ### getVelocityAtCell :id=getvelocityatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getVelocityAtCell (worker)</code></p>
-
 Re-exports [getVelocityAtCell](api/sandkit.api.elements.md#getvelocityatcell)
 
 ***
@@ -760,5 +711,4 @@ Re-exports [getVelocityAtCell](api/sandkit.api.elements.md#getvelocityatcell)
 ### getDataFieldAtCell :id=getdatafieldatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getDataFieldAtCell (worker)</code></p>
-
 Re-exports [getDataFieldAtCell](api/sandkit.api.elements.md#getdatafieldatcell)

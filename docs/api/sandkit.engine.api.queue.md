@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### enqueue() :id=enqueue
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.enqueue()</code></p>
-
 ```ts
-enqueue(...args: unknown[]): unknown
+sandkit.engine.api.queue.enqueue(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### enqueueInTicks() :id=enqueueinticks
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.enqueueInTicks()</code></p>
-
 ```ts
-enqueueInTicks(...args: unknown[]): unknown
+sandkit.engine.api.queue.enqueueInTicks(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### enqueueSkipTick() :id=enqueueskiptick
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.enqueueSkipTick()</code></p>
-
 ```ts
-enqueueSkipTick(...args: unknown[]): unknown
+sandkit.engine.api.queue.enqueueSkipTick(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L25)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### process() :id=process
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.process()</code></p>
-
 ```ts
-process(...args: unknown[]): unknown
+sandkit.engine.api.queue.process(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L30)
@@ -116,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### registerHandler() :id=registerhandler
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.registerHandler()</code></p>
-
 ```ts
-registerHandler(...args: unknown[]): unknown
+sandkit.engine.api.queue.registerHandler(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L35)
@@ -142,10 +132,8 @@ Game state first, then method-specific arguments.
 
 ### removeByKey() :id=removebykey
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.removeByKey()</code></p>
-
 ```ts
-removeByKey(...args: unknown[]): unknown
+sandkit.engine.api.queue.removeByKey(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L40)

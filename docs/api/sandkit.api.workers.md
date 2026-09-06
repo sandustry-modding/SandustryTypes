@@ -4,10 +4,8 @@
 
 ### setPostUpdateEnabled() :id=setpostupdateenabled
 
-<p class="smt-member-path"><code>sandkit.api.workers.setPostUpdateEnabled()</code></p>
-
 ```ts
-setPostUpdateEnabled(enabled: boolean): void
+sandkit.api.workers.setPostUpdateEnabled(enabled: boolean): void
 ```
 
 Defined in: [sandkit/api/workers.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/workers.d.ts#L13)

@@ -4,10 +4,8 @@
 
 ### collectFluxiteAtCell() :id=collectfluxiteatcell
 
-<p class="smt-member-path"><code>sandkit.api.resources.collectFluxiteAtCell()</code></p>
-
 ```ts
-collectFluxiteAtCell(...args: CellCoordinates): void
+sandkit.api.resources.collectFluxiteAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/resources.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L16)
@@ -28,10 +26,8 @@ Collect fluxite at the given cell.
 
 ### updateEnergy() :id=updateenergy
 
-<p class="smt-member-path"><code>sandkit.api.resources.updateEnergy()</code></p>
-
 ```ts
-updateEnergy(amount: number, options?: object): void
+sandkit.api.resources.updateEnergy(amount: number, options?: object): void
 ```
 
 Defined in: [sandkit/api/resources.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L27)

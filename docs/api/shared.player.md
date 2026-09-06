@@ -5,7 +5,6 @@
 ### Player :id=player
 
 <p class="smt-member-path"><code>shared.player.Player</code></p>
-
 Defined in: [shared/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L34)
 
 Live player state snapshot (read-only shape for mods).
@@ -382,7 +381,6 @@ reloading: boolean
 ### InventoryItem :id=inventoryitem
 
 <p class="smt-member-path"><code>shared.player.InventoryItem</code></p>
-
 Defined in: [shared/player.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L146)
 
 One hotbar or inventory item entry.
@@ -489,10 +487,8 @@ Defined in: [shared/player.d.ts:172](https://github.com/sandustry-modding/Sandus
 
 ### CellCoordinates :id=cellcoordinates
 
-<p class="smt-member-path"><code>shared.player.CellCoordinates</code></p>
-
 ```ts
-CellCoordinates = [number, number]
+shared.player.CellCoordinates = [number, number]
 ```
 
 Defined in: [shared/player.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L14)
@@ -505,10 +501,8 @@ Cell coordinates match `sandkit.api.*AtCell` helpers: column first, then row.
 
 ### Vector2 :id=vector2
 
-<p class="smt-member-path"><code>shared.player.Vector2</code></p>
-
 ```ts
-Vector2 = object
+shared.player.Vector2 = object
 ```
 
 Defined in: [shared/player.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L22)

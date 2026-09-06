@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### localizeBlueprintStructures() :id=localizeblueprintstructures
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabulator.localizeBlueprintStructures()</code></p>
-
 ```ts
-localizeBlueprintStructures(...args: unknown[]): unknown
+sandkit.engine.api.prefabulator.localizeBlueprintStructures(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabulator.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabulator.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### serializeBlueprintStructures() :id=serializeblueprintstructures
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabulator.serializeBlueprintStructures()</code></p>
-
 ```ts
-serializeBlueprintStructures(...args: unknown[]): unknown
+sandkit.engine.api.prefabulator.serializeBlueprintStructures(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabulator.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabulator.d.ts#L20)

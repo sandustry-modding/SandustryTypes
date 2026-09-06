@@ -4,10 +4,8 @@
 
 ### getActive() :id=getactive
 
-<p class="smt-member-path"><code>sandkit.api.scene.getActive()</code></p>
-
 ```ts
-getActive(): Scene
+sandkit.api.scene.getActive(): Scene
 ```
 
 Defined in: [sandkit/api/scene.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/scene.d.ts#L14)
@@ -23,5 +21,4 @@ Return the active scene.
 ### Scene :id=scene
 
 <p class="smt-member-path"><code>sandkit.api.scene.Scene</code></p>
-
 Re-exports [Scene](api/sandkit.enums.Scene.md)

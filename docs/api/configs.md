@@ -19,7 +19,6 @@ https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
 ### ConfigSchemaNumber :id=configschemanumber
 
 <p class="smt-member-path"><code>configs.ConfigSchemaNumber</code></p>
-
 Defined in: [configs/modinfo.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L135)
 
 Number setting in `modinfo.json` `configSchema`.
@@ -157,7 +156,6 @@ i18n key for the setting help text.
 ### ConfigSchemaBoolean :id=configschemaboolean
 
 <p class="smt-member-path"><code>configs.ConfigSchemaBoolean</code></p>
-
 Defined in: [configs/modinfo.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L193)
 
 Boolean setting in `modinfo.json` `configSchema`.
@@ -253,7 +251,6 @@ i18n key for the setting help text.
 ### ConfigSchemaChoiceOption :id=configschemachoiceoption
 
 <p class="smt-member-path"><code>configs.ConfigSchemaChoiceOption</code></p>
-
 Defined in: [configs/modinfo.d.ts:233](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L233)
 
 One option inside a [ConfigSchemaChoice](#configschemachoice).
@@ -307,7 +304,6 @@ i18n key for the option label.
 ### ConfigSchemaChoice :id=configschemachoice
 
 <p class="smt-member-path"><code>configs.ConfigSchemaChoice</code></p>
-
 Defined in: [configs/modinfo.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L255)
 
 Choice setting in `modinfo.json` `configSchema`.
@@ -417,7 +413,6 @@ Allowed choices for this setting.
 ### TextureOverride :id=textureoverride
 
 <p class="smt-member-path"><code>configs.TextureOverride</code></p>
-
 Defined in: [configs/modinfo.d.ts:314](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L314)
 
 Animated (or static) texture replacement for a vanilla asset id.
@@ -489,7 +484,6 @@ Milliseconds between animation frames.
 ### ModProvide :id=modprovide
 
 <p class="smt-member-path"><code>configs.ModProvide</code></p>
-
 Defined in: [configs/modinfo.d.ts:346](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L346)
 
 Optional content pack exposed by this mod for other mods or the game to consume.
@@ -547,7 +541,6 @@ Texture paths keyed by the vanilla or structure texture id they replace.
 ### ModMapBlueprints :id=modmapblueprints
 
 <p class="smt-member-path"><code>configs.ModMapBlueprints</code></p>
-
 Defined in: [configs/modinfo.d.ts:374](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L374)
 
 Blueprint image paths for a custom map pack.
@@ -677,7 +670,6 @@ Map config JSON path.
 ### ModMapPoint :id=modmappoint
 
 <p class="smt-member-path"><code>configs.ModMapPoint</code></p>
-
 Defined in: [configs/modinfo.d.ts:430](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L430)
 
 World-pixel spawn or unstuck point.
@@ -721,7 +713,6 @@ World Y in pixels.
 ### ModMapTopBounds :id=modmaptopbounds
 
 <p class="smt-member-path"><code>configs.ModMapTopBounds</code></p>
-
 Defined in: [configs/modinfo.d.ts:450](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L450)
 
 Vertical camera / travel bounds for the custom map.
@@ -765,7 +756,6 @@ Soft top bound in world pixels.
 ### ModMapDepthLight :id=modmapdepthlight
 
 <p class="smt-member-path"><code>configs.ModMapDepthLight</code></p>
-
 Defined in: [configs/modinfo.d.ts:470](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L470)
 
 Depth-based light sizing for the custom map.
@@ -837,7 +827,6 @@ Minimum light size at the deep end of the range.
 ### ModMapParallax :id=modmapparallax
 
 <p class="smt-member-path"><code>configs.ModMapParallax</code></p>
-
 Defined in: [configs/modinfo.d.ts:502](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L502)
 
 Parallax background tuning for the custom map.
@@ -881,7 +870,6 @@ Vertical offset of the parallax layer in pixels.
 ### ModMapColorMappingLayers :id=modmapcolormappinglayers
 
 <p class="smt-member-path"><code>configs.ModMapColorMappingLayers</code></p>
-
 Defined in: [configs/modinfo.d.ts:522](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L522)
 
 Color-map cell that paints both background and foreground terrain.
@@ -925,7 +913,6 @@ Foreground terrain id for this blueprint RGB.
 ### ModMapDefinition :id=modmapdefinition
 
 <p class="smt-member-path"><code>configs.ModMapDefinition</code></p>
-
 Defined in: [configs/modinfo.d.ts:549](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L549)
 
 Custom map pack block in `modinfo.json`.
@@ -1081,7 +1068,6 @@ Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain.
 ### ModGameVersion :id=modgameversion
 
 <p class="smt-member-path"><code>configs.ModGameVersion</code></p>
-
 Defined in: [configs/modinfo.d.ts:617](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L617)
 
 Compatible game version range for the mod.
@@ -1125,7 +1111,6 @@ Highest supported game version string.
 ### ModInfo :id=modinfo
 
 <p class="smt-member-path"><code>configs.ModInfo</code></p>
-
 Defined in: [configs/modinfo.d.ts:645](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L645)
 
 Sandkit mod manifest (`modinfo.json`).
@@ -1432,7 +1417,6 @@ Embedded custom map pack definition for this mod.
 ### BundlePatchRegex :id=bundlepatchregex
 
 <p class="smt-member-path"><code>configs.BundlePatchRegex</code></p>
-
 Defined in: [configs/patches.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L52)
 
 Regex finder when the target is not a plain [BundlePatch.find](#find) string.
@@ -1477,7 +1461,6 @@ Optional regex flags (for example `"g"` or `"m"`).
 ### BundlePatch :id=bundlepatch
 
 <p class="smt-member-path"><code>configs.BundlePatch</code></p>
-
 Defined in: [configs/patches.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L107)
 
 One entry in `patches.json`.
@@ -1713,7 +1696,6 @@ Human-readable note for maintainers. Not required by the official schema.
 ### BundlePatchesDocument :id=bundlepatchesdocument
 
 <p class="smt-member-path"><code>configs.BundlePatchesDocument</code></p>
-
 Defined in: [configs/patches.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L199)
 
 Editor-friendly `patches.json` wrapper with an optional `$schema` URL.
@@ -1749,7 +1731,6 @@ Ordered patch list (same as the bare-array game format).
 ### WorkshopJson :id=workshopjson
 
 <p class="smt-member-path"><code>configs.WorkshopJson</code></p>
-
 Defined in: [configs/workshop.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/workshop.d.ts#L21)
 
 Links a local mod folder to its Steam Workshop item.
@@ -1791,10 +1772,8 @@ Steam Workshop published file id. Managed by the publisher.
 
 ### ConfigSchemaEntry :id=configschemaentry
 
-<p class="smt-member-path"><code>configs.ConfigSchemaEntry</code></p>
-
 ```ts
-ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice
+configs.ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice
 ```
 
 Defined in: [configs/modinfo.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L307)
@@ -1811,10 +1790,8 @@ Keys of `configSchema` are setting ids read via `api.settings.get`.
 
 ### ModMapColorMapping :id=modmapcolormapping
 
-<p class="smt-member-path"><code>configs.ModMapColorMapping</code></p>
-
 ```ts
-ModMapColorMapping = string | ModMapColorMappingLayers
+configs.ModMapColorMapping = string | ModMapColorMappingLayers
 ```
 
 Defined in: [configs/modinfo.d.ts:542](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L542)
@@ -1829,10 +1806,8 @@ One `map.colorMappings` value: a single terrain id, or layered background/foregr
 
 ### PatchTargetFile :id=patchtargetfile
 
-<p class="smt-member-path"><code>configs.PatchTargetFile</code></p>
-
 ```ts
-PatchTargetFile = "js/bundle.js" | "js/simulation-worker.js" | "js/manager-worker.js" | "js/utility-worker.js" | string & object
+configs.PatchTargetFile = "js/bundle.js" | "js/simulation-worker.js" | "js/manager-worker.js" | "js/utility-worker.js" | string & object
 ```
 
 Defined in: [configs/patches.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L25)
@@ -1854,10 +1829,8 @@ Known compiled bundle paths the loader can patch.
 
 ### PatchOperation :id=patchoperation
 
-<p class="smt-member-path"><code>configs.PatchOperation</code></p>
-
 ```ts
-PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfter" | "wrap"
+configs.PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfter" | "wrap"
 ```
 
 Defined in: [configs/patches.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L45)
@@ -1880,10 +1853,8 @@ Supported patch operations.
 
 ### BundlePatchesFile :id=bundlepatchesfile
 
-<p class="smt-member-path"><code>configs.BundlePatchesFile</code></p>
-
 ```ts
-BundlePatchesFile = BundlePatch[] | BundlePatchesDocument
+configs.BundlePatchesFile = BundlePatch[] | BundlePatchesDocument
 ```
 
 Defined in: [configs/patches.d.ts:217](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L217)

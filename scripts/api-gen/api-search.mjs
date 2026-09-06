@@ -19,7 +19,36 @@ const IGNORE_H2 = new Set([
   "Variables",
 ]);
 
-const SKIP_SEARCH_FILES = new Set(["_sidebar.md", "AGENTS.md", "full.md"]);
+const SKIP_SEARCH_FILES = new Set(["_sidebar.md", "AGENTS.md", "full.md", "search.md"]);
+
+/**
+ * TypeDoc names the composed host bags after the TypeScript alias.
+ * Docs show the live `sandkit.*` path instead.
+ */
+const RUNTIME_BAG_TYPES = {
+  Sandkit: "sandkit",
+  SandkitApi: "sandkit.api",
+  WorkerSandkitApi: "sandkit.api",
+  SandkitEngine: "sandkit.engine",
+  SandkitEngineApi: "sandkit.engine.api",
+  SandkitState: "sandkit.state",
+  SandkitEnums: "sandkit.enums",
+  SandkitReact: "sandkit.react",
+};
+
+/**
+ * @param {string} typeName
+ * @param {boolean} worker
+ * @returns {string | null}
+ */
+function runtimeBagPath(typeName, worker) {
+  const runtime = RUNTIME_BAG_TYPES[typeName];
+  if (!runtime) return null;
+  if (typeName === "WorkerSandkitApi" || (worker && typeName === "SandkitApi")) {
+    return `${runtime} (worker)`;
+  }
+  return runtime;
+}
 
 /**
  * Map a path under `docs/api/` (TypeDoc layout or flat slug) to the runtime name.
@@ -93,7 +122,45 @@ export function apiPathToRouteFile(relPosix) {
 }
 
 /**
+ * @param {string} raw
+ * @returns {{ name: string, fn: boolean, strike: boolean, local: string } | null}
+ */
+function parseMemberHeading(raw) {
+  let title = String(raw)
+    .replace(/\s*:id=[A-Za-z0-9_.-]+\s*$/, "")
+    .replace(/\s+<!--.*?-->\s*$/, "")
+    .trim();
+  const strike = /^~~(.+)~~$/.exec(title);
+  const inner = strike ? strike[1].trim() : title;
+  const fn = /^([A-Za-z_][\w]*)\(\)$/.exec(inner);
+  const ident = /^([A-Za-z_][\w]*)$/.exec(inner);
+  const name = fn ? fn[1] : ident ? ident[1] : null;
+  if (!name) return null;
+  return { name, fn: Boolean(fn), strike: Boolean(strike), local: fn ? `${name}()` : name };
+}
+
+/** @param {string} text */
+function escapeRegExp(text) {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+/**
+ * Put the live `sandkit.*` path on the first identifier in a TypeDoc signature.
+ * @param {string} sig
+ * @param {string} localName
+ * @param {string} qualifiedName
+ */
+export function qualifySignatureLine(sig, localName, qualifiedName) {
+  const line = String(sig || "");
+  if (line.startsWith(qualifiedName)) return line;
+  const re = new RegExp(`^${escapeRegExp(localName)}(?=\\b)`);
+  if (!re.test(line)) return line;
+  return line.replace(re, qualifiedName);
+}
+
+/**
  * Rewrite TypeDoc headings so Docsify search can match `sandkit.api.settings.get`.
+ * Put the absolute path in the following ```ts fence when one exists.
  * @param {string} content
  * @param {string} qualified
  */
@@ -111,23 +178,62 @@ export function qualifyApiMarkdown(content, qualified) {
 
   const worker = qualified.endsWith(" (worker)");
   const base = worker ? qualified.slice(0, -" (worker)".length) : qualified;
+  const lines = out.split(/\r?\n/);
+  /** @type {string[]} */
+  const result = [];
 
-  out = out.replace(/^### (.+)$/gm, (line, raw) => {
-    const title = String(raw).trim();
-    if (title.includes(":id=")) return line;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const h3 = /^### (.+)$/.exec(line);
+    if (!h3) {
+      result.push(line);
+      continue;
+    }
 
-    const fn = /^([A-Za-z_][\w]*)\(\)$/.exec(title);
-    const ident = /^([A-Za-z_][\w]*)$/.exec(title);
-    const name = fn ? fn[1] : ident ? ident[1] : null;
-    if (!name) return line;
+    const parsed = parseMemberHeading(h3[1]);
+    if (!parsed) {
+      result.push(line);
+      continue;
+    }
 
-    const local = fn ? `${name}()` : name;
-    const core = fn ? `${base}.${name}()` : `${base}.${name}`;
-    const qname = worker ? `${core} (worker)` : core;
-    return `### ${local} :id=${name.toLowerCase()}\n\n<p class="smt-member-path"><code>${qname}</code></p>`;
-  });
+    const runtime = !parsed.fn ? runtimeBagPath(parsed.name, worker) : null;
+    if (runtime) {
+      result.push(`### ${runtime} :id=${parsed.name.toLowerCase()}`);
+      continue;
+    }
 
-  return out;
+    const id = parsed.name.toLowerCase();
+    const heading = parsed.strike ? `### ~~${parsed.local}~~ :id=${id}` : `### ${parsed.local} :id=${id}`;
+    result.push(heading);
+
+    let j = i + 1;
+    while (j < lines.length && lines[j].trim() === "") j++;
+    if (j < lines.length && /class="smt-member-path"/.test(lines[j])) {
+      j++;
+      while (j < lines.length && lines[j].trim() === "") j++;
+    }
+
+    const core = `${base}.${parsed.name}`;
+    if (j < lines.length && /^```ts\b/.test(lines[j])) {
+      result.push("");
+      result.push(lines[j]);
+      j++;
+      if (j < lines.length) {
+        result.push(qualifySignatureLine(lines[j], parsed.name, core));
+        j++;
+      }
+      i = j - 1;
+      continue;
+    }
+
+    const qname = parsed.fn ? `${core}()` : core;
+    const shown = worker ? `${qname} (worker)` : qname;
+    result.push("");
+    result.push(`<p class="smt-member-path"><code>${shown}</code></p>`);
+    i = j - 1;
+  }
+
+  return result.join("\n");
 }
 
 /**
@@ -241,8 +347,21 @@ export function buildSearchIndex(files) {
         local = local.replace(/~~([^~]+)~~/g, "$1").trim();
 
         let title = local;
-        // Prefer the runtime path line that follows the heading.
-        for (let j = i + 1; j < Math.min(i + 6, lines.length); j++) {
+        // Prefer the absolute path in the signature fence, then a member-path line.
+        for (let j = i + 1; j < Math.min(i + 8, lines.length); j++) {
+          if (/^```ts\b/.test(lines[j]) && j + 1 < lines.length) {
+            const sig = lines[j + 1];
+            const call = /^([\w.]+)\(/.exec(sig);
+            const ident = /^([\w.]+)/.exec(sig);
+            if (call) {
+              title = `${call[1]}()`;
+              break;
+            }
+            if (ident) {
+              title = ident[1];
+              break;
+            }
+          }
           const pathMatch = /<code>([^<]+)<\/code>/.exec(lines[j]);
           if (pathMatch) {
             title = pathMatch[1].replace(/~~([^~]+)~~/g, "$1").trim();

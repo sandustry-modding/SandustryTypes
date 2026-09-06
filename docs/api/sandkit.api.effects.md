@@ -8,7 +8,6 @@ Main thread only. Temporary lights live under [lights.temporary](api/sandkit.api
 ### LaserEffectOptions :id=lasereffectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.LaserEffectOptions</code></p>
-
 Defined in: [sandkit/api/effects.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L122)
 
 Options for laser beam effects.
@@ -60,7 +59,6 @@ When true, draws a glow around the beam.
 ### LaserEffectHandle :id=lasereffecthandle
 
 <p class="smt-member-path"><code>sandkit.api.effects.LaserEffectHandle</code></p>
-
 Defined in: [sandkit/api/effects.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L134)
 
 Handle returned by createLaserAtWorld.
@@ -86,7 +84,6 @@ Removes the laser from the scene.
 ### DistortionEffectOptions :id=distortioneffectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.DistortionEffectOptions</code></p>
-
 Defined in: [sandkit/api/effects.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L140)
 
 Options for distortion wave effects.
@@ -148,7 +145,6 @@ RGBA color components for the effect.
 ### EffectOptions :id=effectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.EffectOptions</code></p>
-
 Defined in: [shared/api/effects.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L48)
 
 Generic duration and radius options for world effects.
@@ -184,7 +180,6 @@ Defined in: [shared/api/effects.d.ts:51](https://github.com/sandustry-modding/Sa
 ### TemporaryLightOptions :id=temporarylightoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.TemporaryLightOptions</code></p>
-
 Defined in: [shared/api/effects.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L54)
 
 Options for [createLightAtWorld](#createlightatworld).
@@ -296,7 +291,6 @@ Dedupe key when the light pool is full or dedup is enabled.
 ### ParticleEffectOptions :id=particleeffectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.ParticleEffectOptions</code></p>
-
 Defined in: [shared/api/effects.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L71)
 
 Options for [createParticlesAtWorld](#createparticlesatworld).
@@ -429,10 +423,8 @@ Defined in: [shared/api/effects.d.ts:87](https://github.com/sandustry-modding/Sa
 
 ### createAtWorld() :id=createatworld
 
-<p class="smt-member-path"><code>sandkit.api.effects.createAtWorld()</code></p>
-
 ```ts
-createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+sandkit.api.effects.createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
 Defined in: [sandkit/api/effects.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L25)
@@ -475,10 +467,10 @@ Duration, radius, and intensity settings.
 
 ***
 
-### ~~createEffectAtWorld()~~
+### ~~createEffectAtWorld()~~ :id=createeffectatworld
 
 ```ts
-createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
 Defined in: [sandkit/api/effects.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L37)
@@ -515,10 +507,10 @@ Use [createAtWorld](#createatworld) instead.
 
 ***
 
-### ~~createLightAtWorld()~~
+### ~~createLightAtWorld()~~ :id=createlightatworld
 
 ```ts
-createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): object
+sandkit.api.effects.createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): object
 ```
 
 Defined in: [sandkit/api/effects.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L67)
@@ -565,10 +557,8 @@ Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createa
 
 ### createDistortionWaveAtWorld() :id=createdistortionwaveatworld
 
-<p class="smt-member-path"><code>sandkit.api.effects.createDistortionWaveAtWorld()</code></p>
-
 ```ts
-createDistortionWaveAtWorld(worldX: number, worldY: number, options?: DistortionEffectOptions): void
+sandkit.api.effects.createDistortionWaveAtWorld(worldX: number, worldY: number, options?: DistortionEffectOptions): void
 ```
 
 Defined in: [sandkit/api/effects.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L89)
@@ -615,10 +605,8 @@ api.effects.createDistortionWaveAtWorld(worldX, worldY, {
 
 ### createLaserAtWorld() :id=createlaseratworld
 
-<p class="smt-member-path"><code>sandkit.api.effects.createLaserAtWorld()</code></p>
-
 ```ts
-createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, endWorldY: number, options?: LaserEffectOptions): LaserEffectHandle
+sandkit.api.effects.createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, endWorldY: number, options?: LaserEffectOptions): LaserEffectHandle
 ```
 
 Defined in: [sandkit/api/effects.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L106)
@@ -667,10 +655,10 @@ Width, brightness, color, and glow options.
 
 ***
 
-### ~~removeLightById()~~
+### ~~removeLightById()~~ :id=removelightbyid
 
 ```ts
-removeLightById(lightId: number): void
+sandkit.api.effects.removeLightById(lightId: number): void
 ```
 
 Defined in: [sandkit/api/effects.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L119)
@@ -697,10 +685,8 @@ Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md#removebyid
 
 ### createParticlesAtWorld() :id=createparticlesatworld
 
-<p class="smt-member-path"><code>sandkit.api.effects.createParticlesAtWorld()</code></p>
-
 ```ts
-createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectOptions): void
+sandkit.api.effects.createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectOptions): void
 ```
 
 Defined in: [shared/api/effects.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L28)

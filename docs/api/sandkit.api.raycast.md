@@ -4,10 +4,8 @@
 
 ### castFromWorld() :id=castfromworld
 
-<p class="smt-member-path"><code>sandkit.api.raycast.castFromWorld()</code></p>
-
 ```ts
-castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistance: number): Vector2 & object | null
+sandkit.api.raycast.castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistance: number): Vector2 & object | null
 ```
 
 Defined in: [sandkit/api/raycast.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/raycast.d.ts#L18)

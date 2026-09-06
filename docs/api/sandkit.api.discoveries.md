@@ -7,10 +7,8 @@ Main thread only.
 
 ### addElementByType() :id=addelementbytype
 
-<p class="smt-member-path"><code>sandkit.api.discoveries.addElementByType()</code></p>
-
 ```ts
-addElementByType(elementType: ElementType): void
+sandkit.api.discoveries.addElementByType(elementType: ElementType): void
 ```
 
 Defined in: [sandkit/api/discoveries.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L12)
@@ -33,10 +31,8 @@ Numeric element type id.
 
 ### addTerrainByType() :id=addterrainbytype
 
-<p class="smt-member-path"><code>sandkit.api.discoveries.addTerrainByType()</code></p>
-
 ```ts
-addTerrainByType(terrainType: TerrainType): void
+sandkit.api.discoveries.addTerrainByType(terrainType: TerrainType): void
 ```
 
 Defined in: [sandkit/api/discoveries.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L17)

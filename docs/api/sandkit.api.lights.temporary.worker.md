@@ -11,7 +11,6 @@ Short-lived visual effect lights.
 ### TemporaryLightHandle :id=temporarylighthandle
 
 <p class="smt-member-path"><code>sandkit.api.lights.temporary.TemporaryLightHandle (worker)</code></p>
-
 Defined in: [worker/api/lights.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L19)
 
 Handle returned by [createAtWorld](#createatworld).
@@ -48,10 +47,8 @@ Use [lightId](#lightid) instead.
 
 ### TemporaryLightOptions :id=temporarylightoptions
 
-<p class="smt-member-path"><code>sandkit.api.lights.temporary.TemporaryLightOptions (worker)</code></p>
-
 ```ts
-TemporaryLightOptions = TemporaryLightOptions
+sandkit.api.lights.temporary.TemporaryLightOptions = TemporaryLightOptions
 ```
 
 Defined in: [worker/api/lights.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L16)
@@ -62,10 +59,8 @@ Options for [createAtWorld](#createatworld).
 
 ### createAtWorld() :id=createatworld
 
-<p class="smt-member-path"><code>sandkit.api.lights.temporary.createAtWorld() (worker)</code></p>
-
 ```ts
-createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
+sandkit.api.lights.temporary.createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
 Defined in: [worker/api/lights.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L47)

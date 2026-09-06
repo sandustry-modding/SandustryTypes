@@ -6,10 +6,8 @@ Structure processing enablement checks.
 
 ### isEnabledAtCell() :id=isenabledatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAtCell() (worker)</code></p>
-
 ```ts
-isEnabledAtCell(...args: CellCoordinates): boolean
+sandkit.api.structures.processing.isEnabledAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/structures.d.ts:207](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L207)
@@ -32,10 +30,10 @@ Return true when processing is enabled at the cell.
 
 ***
 
-### ~~isEnabledAt()~~
+### ~~isEnabledAt()~~ :id=isenabledat
 
 ```ts
-isEnabledAt(...args: CellCoordinates): boolean
+sandkit.api.structures.processing.isEnabledAt(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/structures.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L214)

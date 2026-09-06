@@ -5,7 +5,6 @@
 ### ContactRecipeDefinitionV1 :id=contactrecipedefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.reactions.ContactRecipeDefinitionV1</code></p>
-
 Defined in: [sandkit/api/reactions.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L29)
 
 Contact reaction recipe definition.
@@ -66,10 +65,8 @@ Contact layout requirement. Default `"any"`.
 
 ### registerContact() :id=registercontact
 
-<p class="smt-member-path"><code>sandkit.api.reactions.registerContact()</code></p>
-
 ```ts
-registerContact(definition: ContactRecipeDefinitionV1): void
+sandkit.api.reactions.registerContact(definition: ContactRecipeDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/reactions.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L26)

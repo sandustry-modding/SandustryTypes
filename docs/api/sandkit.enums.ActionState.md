@@ -8,10 +8,8 @@ Phases of a held or repeated player action.
 
 ### Start :id=start
 
-<p class="smt-member-path"><code>sandkit.enums.ActionState.Start</code></p>
-
 ```ts
-Start: 1
+sandkit.enums.ActionState.Start: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L18)
@@ -20,10 +18,8 @@ Defined in: [sandkit/enums/index.d.ts:18](https://github.com/sandustry-modding/S
 
 ### Active :id=active
 
-<p class="smt-member-path"><code>sandkit.enums.ActionState.Active</code></p>
-
 ```ts
-Active: 2
+sandkit.enums.ActionState.Active: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L19)
@@ -32,10 +28,8 @@ Defined in: [sandkit/enums/index.d.ts:19](https://github.com/sandustry-modding/S
 
 ### End :id=end
 
-<p class="smt-member-path"><code>sandkit.enums.ActionState.End</code></p>
-
 ```ts
-End: 3
+sandkit.enums.ActionState.End: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L20)

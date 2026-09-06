@@ -13,7 +13,6 @@ Main thread adds richer UI APIs on top of this shape.
 ### I18nTextKey :id=i18ntextkey
 
 <p class="smt-member-path"><code>sandkit.api.ui.I18nTextKey (worker)</code></p>
-
 Defined in: [shared/api/ui.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L25)
 
 Translation key with optional parameter substitution.
@@ -45,7 +44,6 @@ Values merged into the translated string.
 ### I18nTranslatable :id=i18ntranslatable
 
 <p class="smt-member-path"><code>sandkit.api.ui.I18nTranslatable (worker)</code></p>
-
 Defined in: [shared/api/ui.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L33)
 
 Value returned by `sandkit.api.i18n.translatable`.
@@ -81,7 +79,6 @@ Defined in: [shared/api/ui.d.ts:36](https://github.com/sandustry-modding/Sandust
 ### ToastOptions :id=toastoptions
 
 <p class="smt-member-path"><code>sandkit.api.ui.ToastOptions (worker)</code></p>
-
 Defined in: [shared/api/ui.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L40)
 
 Cooldown, style, and auto-dismiss options for [toast](#toast).
@@ -134,10 +131,8 @@ Visual style applied to the toast body.
 
 ### LocalizedText :id=localizedtext
 
-<p class="smt-member-path"><code>sandkit.api.ui.LocalizedText (worker)</code></p>
-
 ```ts
-LocalizedText = string | I18nTextKey | I18nTranslatable
+sandkit.api.ui.LocalizedText = string | I18nTextKey | I18nTranslatable
 ```
 
 Defined in: [shared/api/ui.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L22)
@@ -148,10 +143,8 @@ Plain text, translation key object, or i18n translatable value.
 
 ### toast() :id=toast
 
-<p class="smt-member-path"><code>sandkit.api.ui.toast() (worker)</code></p>
-
 ```ts
-toast(message: LocalizedText, options?: ToastOptions): void
+sandkit.api.ui.toast(message: LocalizedText, options?: ToastOptions): void
 ```
 
 Defined in: [shared/api/ui.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L19)

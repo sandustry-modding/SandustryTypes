@@ -8,9 +8,7 @@ Mirrors on-disk `src/sandkit/` and the host free variable: `api`, `engine`,
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### SandkitApi :id=sandkitapi
-
-<p class="smt-member-path"><code>sandkit.SandkitApi</code></p>
+### sandkit.api :id=sandkitapi
 
 ```ts
 SandkitApi = object
@@ -631,9 +629,7 @@ Use [grid](#grid) for cell APIs and [pickups](#pickups) for world items.
 
 ***
 
-### Sandkit :id=sandkit
-
-<p class="smt-member-path"><code>sandkit.Sandkit</code></p>
+### sandkit :id=sandkit
 
 ```ts
 Sandkit = object
@@ -725,7 +721,6 @@ See [SandkitState](api/sandkit.engine.md#sandkitstate).
 ### api :id=api
 
 <p class="smt-member-path"><code>sandkit.api</code></p>
-
 Renames and re-exports [sandkit/api](api/sandkit.api.md)
 
 ***
@@ -733,7 +728,6 @@ Renames and re-exports [sandkit/api](api/sandkit.api.md)
 ### engine :id=engine
 
 <p class="smt-member-path"><code>sandkit.engine</code></p>
-
 Re-exports [engine](api/sandkit.engine.md)
 
 ***
@@ -741,22 +735,17 @@ Re-exports [engine](api/sandkit.engine.md)
 ### enums :id=enums
 
 <p class="smt-member-path"><code>sandkit.enums</code></p>
-
 Renames and re-exports [sandkit/enums](api/sandkit.enums.md)
 
 ***
 
-### SandkitEngine :id=sandkitengine
-
-<p class="smt-member-path"><code>sandkit.SandkitEngine</code></p>
+### sandkit.engine :id=sandkitengine
 
 Re-exports [SandkitEngine](api/sandkit.engine.md#sandkitengine)
 
 ***
 
-### SandkitEngineApi :id=sandkitengineapi
-
-<p class="smt-member-path"><code>sandkit.SandkitEngineApi</code></p>
+### sandkit.engine.api :id=sandkitengineapi
 
 Re-exports [SandkitEngineApi](api/sandkit.engine.md#sandkitengineapi)
 
@@ -765,29 +754,22 @@ Re-exports [SandkitEngineApi](api/sandkit.engine.md#sandkitengineapi)
 ### RetroConsoleApi :id=retroconsoleapi
 
 <p class="smt-member-path"><code>sandkit.RetroConsoleApi</code></p>
-
 Re-exports [RetroConsoleApi](api/sandkit.engine.md#retroconsoleapi)
 
 ***
 
-### SandkitState :id=sandkitstate
-
-<p class="smt-member-path"><code>sandkit.SandkitState</code></p>
+### sandkit.state :id=sandkitstate
 
 Re-exports [SandkitState](api/sandkit.engine.md#sandkitstate)
 
 ***
 
-### SandkitEnums :id=sandkitenums
-
-<p class="smt-member-path"><code>sandkit.SandkitEnums</code></p>
+### sandkit.enums :id=sandkitenums
 
 Re-exports [SandkitEnums](api/sandkit.enums.md#sandkitenums)
 
 ***
 
-### SandkitReact :id=sandkitreact
-
-<p class="smt-member-path"><code>sandkit.SandkitReact</code></p>
+### sandkit.react :id=sandkitreact
 
 Re-exports [SandkitReact](api/sandkit.react.md#sandkitreact)

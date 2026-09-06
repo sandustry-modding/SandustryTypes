@@ -8,7 +8,6 @@ Main thread only.
 ### HookContext :id=hookcontext
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookContext</code></p>
-
 Defined in: [sandkit/api/hooks.d.ts:397](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L397)
 
 Context passed to intercept hook callbacks.
@@ -46,7 +45,6 @@ When called, the intercepted action is skipped.
 ### HookOptions :id=hookoptions
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookOptions</code></p>
-
 Defined in: [sandkit/api/hooks.d.ts:405](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L405)
 
 Options shared by intercept and modify hooks.
@@ -74,7 +72,6 @@ Run this hook before others with lower priority.
 ### InterceptHookMap :id=intercepthookmap
 
 <p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookMap</code></p>
-
 Defined in: [sandkit/api/hooks.d.ts:497](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L497)
 
 Intercept hook argument shapes keyed by hook id.
@@ -746,7 +743,6 @@ costs: Record<string, unknown>
 ### ModifierHookMap :id=modifierhookmap
 
 <p class="smt-member-path"><code>sandkit.api.hooks.ModifierHookMap</code></p>
-
 Defined in: [sandkit/api/hooks.d.ts:583](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L583)
 
 Modify hook argument shapes keyed by hook id.
@@ -1557,10 +1553,8 @@ shortfall: number
 
 ### InterceptHookOptions :id=intercepthookoptions
 
-<p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookOptions</code></p>
-
 ```ts
-InterceptHookOptions<K *extends* InterceptHookId> = HookOptions & K *extends* "item:use" ? object : K *extends* "entity:update" ? object : K *extends* "building:place" ? object : K *extends* "projectile:fire:overStructure" | "projectile:hit" ? object : Record<string, unknown>
+sandkit.api.hooks.InterceptHookOptions<K *extends* InterceptHookId> = HookOptions & K *extends* "item:use" ? object : K *extends* "entity:update" ? object : K *extends* "building:place" ? object : K *extends* "projectile:fire:overStructure" | "projectile:hit" ? object : Record<string, unknown>
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:412](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L412)
@@ -1577,10 +1571,8 @@ Options for [intercept](#intercept).
 
 ### ModifyHookOptions :id=modifyhookoptions
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookOptions</code></p>
-
 ```ts
-ModifyHookOptions = HookOptions & { weaponIds?: string[]; priority?: number; } | { projectileTypes?: string[]; priority?: number; } | { triggerIds?: string[]; priority?: number; } | { resourceIds?: string[]; priority?: number; } | Record<string, unknown>
+sandkit.api.hooks.ModifyHookOptions = HookOptions & { weaponIds?: string[]; priority?: number; } | { projectileTypes?: string[]; priority?: number; } | { triggerIds?: string[]; priority?: number; } | { resourceIds?: string[]; priority?: number; } | Record<string, unknown>
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L424)
@@ -1591,10 +1583,8 @@ Options for [modify](#modify).
 
 ### InterceptHookId :id=intercepthookid
 
-<p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookId</code></p>
-
 ```ts
-InterceptHookId = LooseString<"item:use" | "teleport:effect:create" | "teleport:effect" | "action:start" | "action:intercept" | "input:keyDown" | "input:keydown" | "input:keyUp" | "input:keyup" | "placePoints:suppress" | "placePoints:isSuppressed" | "placePoints:directionalArrows:suppress" | "placePoints:directionalArrows:isSuppressed" | "entity:update" | "building:place" | "building:clearShape" | "input:scroll" | "input:boostDown" | "input:boost-down" | "input:descendDown" | "input:descend-down" | "input:escape" | "interactable:suppressHover" | "fire:element:ignite" | "projectile:fire:overStructure" | "projectile:hit" | "player:position:commit" | "progression:purchase">
+sandkit.api.hooks.InterceptHookId = LooseString<"item:use" | "teleport:effect:create" | "teleport:effect" | "action:start" | "action:intercept" | "input:keyDown" | "input:keydown" | "input:keyUp" | "input:keyup" | "placePoints:suppress" | "placePoints:isSuppressed" | "placePoints:directionalArrows:suppress" | "placePoints:directionalArrows:isSuppressed" | "entity:update" | "building:place" | "building:clearShape" | "input:scroll" | "input:boostDown" | "input:boost-down" | "input:descendDown" | "input:descend-down" | "input:escape" | "interactable:suppressHover" | "fire:element:ignite" | "projectile:fire:overStructure" | "projectile:hit" | "player:position:commit" | "progression:purchase">
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:434](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L434)
@@ -1605,10 +1595,8 @@ Known main-thread intercept hook ids plus custom strings.
 
 ### ModifyHookId :id=modifyhookid
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookId</code></p>
-
 ```ts
-ModifyHookId = LooseString<"excavation:prepare" | "locator:scan:prepare" | "vacuum:prepare" | "vacuum:element:prepare" | "player:movement:prepare" | "player:movement" | "building:placementLimit:prepare" | "building:placementLimit" | "building:placement-limit" | "fluxEmanator:processing:prepare" | "fluxEmanator:processing" | "flux-emanator:processing" | "render:pipes:prepare" | "render:pipes" | "structures:moved:prepare" | "structures:removed:prepare" | "weapon:reload:prepare" | "projectile:travel:prepare" | "projectile:impact:prepare" | "player:collision:prepare" | "trigger:schedule:prepare" | "progression:cost:prepare" | "resource:collection:prepare" | "resource:delivery:prepare" | "resource:balance:prepare" | "gold:removal:prepare" | "gold:removal:settle">
+sandkit.api.hooks.ModifyHookId = LooseString<"excavation:prepare" | "locator:scan:prepare" | "vacuum:prepare" | "vacuum:element:prepare" | "player:movement:prepare" | "player:movement" | "building:placementLimit:prepare" | "building:placementLimit" | "building:placement-limit" | "fluxEmanator:processing:prepare" | "fluxEmanator:processing" | "flux-emanator:processing" | "render:pipes:prepare" | "render:pipes" | "structures:moved:prepare" | "structures:removed:prepare" | "weapon:reload:prepare" | "projectile:travel:prepare" | "projectile:impact:prepare" | "player:collision:prepare" | "trigger:schedule:prepare" | "progression:cost:prepare" | "resource:collection:prepare" | "resource:delivery:prepare" | "resource:balance:prepare" | "gold:removal:prepare" | "gold:removal:settle">
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:466](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L466)
@@ -1619,10 +1607,8 @@ Known main-thread modify hook ids plus custom strings.
 
 ### InterceptHookArgs :id=intercepthookargs
 
-<p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookArgs</code></p>
-
 ```ts
-InterceptHookArgs<K *extends* InterceptHookId> = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown
+sandkit.api.hooks.InterceptHookArgs<K *extends* InterceptHookId> = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:720](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L720)
@@ -1639,10 +1625,8 @@ Intercept hook args for a given hook id.
 
 ### ModifyHookArgs :id=modifyhookargs
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookArgs</code></p>
-
 ```ts
-ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof ModifierHookMap ? ModifierHookMap[K] : unknown
+sandkit.api.hooks.ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof ModifierHookMap ? ModifierHookMap[K] : unknown
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:725](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L725)
@@ -1659,10 +1643,8 @@ Modify hook args for a given hook id.
 
 ### intercept() :id=intercept
 
-<p class="smt-member-path"><code>sandkit.api.hooks.intercept()</code></p>
-
 ```ts
-intercept<K *extends* InterceptHookId>(hookId: K, callback: (args: InterceptHookArgs<K>, context: HookContext) => void, options?: InterceptHookOptions<K>): () => void
+sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (args: InterceptHookArgs<K>, context: HookContext) => void, options?: InterceptHookOptions<K>): () => void
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L178)
@@ -1890,10 +1872,8 @@ api.hooks.intercept("progression:purchase", (args, context) => {
 
 ### modify() :id=modify
 
-<p class="smt-member-path"><code>sandkit.api.hooks.modify()</code></p>
-
 ```ts
-modify<K *extends* ModifyHookId>(hookId: K, callback: (args: ModifyHookArgs<K>) => void, options?: ModifyHookOptions): () => void
+sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: ModifyHookArgs<K>) => void, options?: ModifyHookOptions): () => void
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:390](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L390)

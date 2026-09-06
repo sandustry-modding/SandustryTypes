@@ -2,9 +2,7 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### SandkitReact :id=sandkitreact
-
-<p class="smt-member-path"><code>sandkit.react.SandkitReact</code></p>
+### sandkit.react :id=sandkitreact
 
 ```ts
 SandkitReact = object

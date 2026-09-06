@@ -12,10 +12,8 @@ Temporary lights live under [lights.temporary](api/sandkit.api.lights.temporary.
 
 ### createAtWorld() :id=createatworld
 
-<p class="smt-member-path"><code>sandkit.api.effects.createAtWorld() (worker)</code></p>
-
 ```ts
-createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+sandkit.api.effects.createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
 Defined in: [worker/api/effects.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L26)
@@ -58,10 +56,10 @@ Duration, radius, and intensity settings.
 
 ***
 
-### ~~createEffectAtWorld()~~
+### ~~createEffectAtWorld()~~ :id=createeffectatworld
 
 ```ts
-createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
 Defined in: [worker/api/effects.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L38)
@@ -101,7 +99,6 @@ Use [createAtWorld](#createatworld) instead.
 ### EffectOptions :id=effectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.EffectOptions (worker)</code></p>
-
 Re-exports [EffectOptions](api/sandkit.api.effects.md#effectoptions)
 
 ***
@@ -109,7 +106,6 @@ Re-exports [EffectOptions](api/sandkit.api.effects.md#effectoptions)
 ### ParticleEffectOptions :id=particleeffectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.ParticleEffectOptions (worker)</code></p>
-
 Re-exports [ParticleEffectOptions](api/sandkit.api.effects.md#particleeffectoptions)
 
 ***
@@ -117,5 +113,4 @@ Re-exports [ParticleEffectOptions](api/sandkit.api.effects.md#particleeffectopti
 ### createParticlesAtWorld :id=createparticlesatworld
 
 <p class="smt-member-path"><code>sandkit.api.effects.createParticlesAtWorld (worker)</code></p>
-
 Re-exports [createParticlesAtWorld](api/sandkit.api.effects.md#createparticlesatworld)

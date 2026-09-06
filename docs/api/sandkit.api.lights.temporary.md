@@ -6,10 +6,8 @@ Short-lived visual effect lights.
 
 ### createAtWorld() :id=createatworld
 
-<p class="smt-member-path"><code>sandkit.api.lights.temporary.createAtWorld()</code></p>
-
 ```ts
-createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
+sandkit.api.lights.temporary.createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
 Defined in: [sandkit/api/lights.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L43)
@@ -77,10 +75,8 @@ api.lights.temporary.createAtWorld(worldX, worldY, {
 
 ### removeById() :id=removebyid
 
-<p class="smt-member-path"><code>sandkit.api.lights.temporary.removeById()</code></p>
-
 ```ts
-removeById(lightId: number): void
+sandkit.api.lights.temporary.removeById(lightId: number): void
 ```
 
 Defined in: [sandkit/api/lights.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L63)

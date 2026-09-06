@@ -6,10 +6,8 @@ Per-structure processing enablement and registration.
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.api.structures.processing.register()</code></p>
-
 ```ts
-register(id: string & object, definition: StructureProcessingDefinitionV1): void
+sandkit.api.structures.processing.register(id: string & object, definition: StructureProcessingDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:544](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L544)
@@ -60,10 +58,8 @@ api.structures.processing.register(
 
 ### setEnabledAtCell() :id=setenabledatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.processing.setEnabledAtCell()</code></p>
-
 ```ts
-setEnabledAtCell(...args: [number, number, boolean]): boolean
+sandkit.api.structures.processing.setEnabledAtCell(...args: [number, number, boolean]): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:556](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L556)
@@ -88,10 +84,10 @@ True when the enabled state changed.
 
 ***
 
-### ~~setEnabledAt()~~
+### ~~setEnabledAt()~~ :id=setenabledat
 
 ```ts
-setEnabledAt(...args: [number, number, boolean]): boolean
+sandkit.api.structures.processing.setEnabledAt(...args: [number, number, boolean]): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:563](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L563)
@@ -119,7 +115,6 @@ Use [setEnabledAtCell](#setenabledatcell) instead.
 ### isEnabledAtCell :id=isenabledatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAtCell</code></p>
-
 Re-exports [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md#isenabledatcell)
 
 ***
@@ -127,5 +122,4 @@ Re-exports [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md#ise
 ### isEnabledAt :id=isenabledat
 
 <p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAt</code></p>
-
 Re-exports [isEnabledAt](api/sandkit.api.structures.processing.worker.md#isenabledat)

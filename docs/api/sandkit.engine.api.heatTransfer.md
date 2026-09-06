@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### absorbAdjacentElements() :id=absorbadjacentelements
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.absorbAdjacentElements()</code></p>
-
 ```ts
-absorbAdjacentElements(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.absorbAdjacentElements(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### addTemperature() :id=addtemperature
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.addTemperature()</code></p>
-
 ```ts
-addTemperature(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.addTemperature(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### computeDiffusedTemperatures() :id=computediffusedtemperatures
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.computeDiffusedTemperatures()</code></p>
-
 ```ts
-computeDiffusedTemperatures(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.computeDiffusedTemperatures(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L25)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### computeEqualizedTemperature() :id=computeequalizedtemperature
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.computeEqualizedTemperature()</code></p>
-
 ```ts
-computeEqualizedTemperature(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.computeEqualizedTemperature(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L30)
@@ -116,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### consumeTemperatureNear() :id=consumetemperaturenear
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.consumeTemperatureNear()</code></p>
-
 ```ts
-consumeTemperatureNear(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.consumeTemperatureNear(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L35)
@@ -142,10 +132,8 @@ Game state first, then method-specific arguments.
 
 ### ensureTemperature() :id=ensuretemperature
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.ensureTemperature()</code></p>
-
 ```ts
-ensureTemperature(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.ensureTemperature(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L40)
@@ -168,10 +156,8 @@ Game state first, then method-specific arguments.
 
 ### equalizeConnected() :id=equalizeconnected
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.equalizeConnected()</code></p>
-
 ```ts
-equalizeConnected(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.equalizeConnected(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L45)

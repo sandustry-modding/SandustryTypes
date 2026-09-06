@@ -14,10 +14,10 @@ Use [grid](api/sandkit.api.grid.md) instead.
 
 ## Functions <!-- {docsify-ignore} -->
 
-### ~~runWhenSimulationIdle()~~
+### ~~runWhenSimulationIdle()~~ :id=runwhensimulationidle
 
 ```ts
-runWhenSimulationIdle(callback: () => void): void
+sandkit.api.world.runWhenSimulationIdle(callback: () => void): void
 ```
 
 Defined in: [sandkit/api/world.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L66)
@@ -42,10 +42,10 @@ Use [grid.mutate](api/sandkit.api.grid.md#mutate) instead.
 
 ***
 
-### ~~redrawAroundCellWhenIdle()~~
+### ~~redrawAroundCellWhenIdle()~~ :id=redrawaroundcellwhenidle
 
 ```ts
-redrawAroundCellWhenIdle(...args: [number, number, number]): void
+sandkit.api.world.redrawAroundCellWhenIdle(...args: [number, number, number]): void
 ```
 
 Defined in: [sandkit/api/world.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L73)
@@ -70,84 +70,98 @@ Use [grid.redrawAroundCell](api/sandkit.api.grid.md#redrawaroundcell) instead.
 
 ## References <!-- {docsify-ignore} -->
 
-### ~~getCellIdAtCell~~
+### ~~getCellIdAtCell~~ :id=getcellidatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.getCellIdAtCell</code></p>
 Re-exports [getCellIdAtCell](api/sandkit.api.grid.md#getcellidatcell)
 
 ***
 
-### ~~isCellEmptyAtCell~~
+### ~~isCellEmptyAtCell~~ :id=iscellemptyatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.isCellEmptyAtCell</code></p>
 Re-exports [isCellEmptyAtCell](api/sandkit.api.grid.md#iscellemptyatcell)
 
 ***
 
-### ~~isTerrainAtCell~~
+### ~~isTerrainAtCell~~ :id=isterrainatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.isTerrainAtCell</code></p>
 Re-exports [isTerrainAtCell](api/sandkit.api.grid.md#isterrainatcell)
 
 ***
 
-### ~~reportActivityAtCell~~
+### ~~reportActivityAtCell~~ :id=reportactivityatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.reportActivityAtCell</code></p>
 Re-exports [reportActivityAtCell](api/sandkit.api.grid.md#reportactivityatcell)
 
 ***
 
-### ~~excavateAtCell~~
+### ~~excavateAtCell~~ :id=excavateatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.excavateAtCell</code></p>
 Re-exports [excavateAtCell](api/sandkit.api.grid.md#excavateatcell)
 
 ***
 
-### ~~getDimensions~~
+### ~~getDimensions~~ :id=getdimensions
 
+<p class="smt-member-path"><code>sandkit.api.world.getDimensions</code></p>
 Re-exports [getDimensions](api/sandkit.api.grid.md#getdimensions)
 
 ***
 
-### ~~ExcavateOptions~~
+### ~~ExcavateOptions~~ :id=excavateoptions
 
+<p class="smt-member-path"><code>sandkit.api.world.ExcavateOptions</code></p>
 Re-exports [ExcavateOptions](api/sandkit.api.grid.md#excavateoptions)
 
 ***
 
-### ~~CellId~~
+### ~~CellId~~ :id=cellid
 
+<p class="smt-member-path"><code>sandkit.api.world.CellId</code></p>
 Re-exports [CellId](api/sandkit.api.grid.md#cellid)
 
 ***
 
-### ~~GridDimensions~~
+### ~~GridDimensions~~ :id=griddimensions
 
+<p class="smt-member-path"><code>sandkit.api.world.GridDimensions</code></p>
 Re-exports [GridDimensions](api/sandkit.api.grid.md#griddimensions)
 
 ***
 
-### ~~revealFogAtCell~~
+### ~~revealFogAtCell~~ :id=revealfogatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.revealFogAtCell</code></p>
 Re-exports [revealFogAtCell](api/sandkit.api.grid.md#revealfogatcell)
 
 ***
 
-### ~~WorldItemType~~
+### ~~WorldItemType~~ :id=worlditemtype
 
+<p class="smt-member-path"><code>sandkit.api.world.WorldItemType</code></p>
 Re-exports [WorldItemType](api/sandkit.api.pickups.md#worlditemtype)
 
 ***
 
-### ~~PickupType~~
+### ~~PickupType~~ :id=pickuptype
 
+<p class="smt-member-path"><code>sandkit.api.world.PickupType</code></p>
 Re-exports [PickupType](api/sandkit.api.pickups.md#pickuptype)
 
 ***
 
-### ~~WorldItemLight~~
+### ~~WorldItemLight~~ :id=worlditemlight
 
+<p class="smt-member-path"><code>sandkit.api.world.WorldItemLight</code></p>
 Re-exports [WorldItemLight](api/sandkit.api.pickups.md#worlditemlight)
 
 ***
 
-### ~~WorldItem~~
+### ~~WorldItem~~ :id=worlditem
 
+<p class="smt-member-path"><code>sandkit.api.world.WorldItem</code></p>
 Re-exports [WorldItem](api/sandkit.api.pickups.md#worlditem)

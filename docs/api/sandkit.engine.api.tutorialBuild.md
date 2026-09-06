@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### areAllTargetsBuilt() :id=arealltargetsbuilt
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.areAllTargetsBuilt()</code></p>
-
 ```ts
-areAllTargetsBuilt(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.areAllTargetsBuilt(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### areFamilyTargetsBuilt() :id=arefamilytargetsbuilt
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt()</code></p>
-
 ```ts
-areFamilyTargetsBuilt(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### canPlaceAtActiveTarget() :id=canplaceatactivetarget
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget()</code></p>
-
 ```ts
-canPlaceAtActiveTarget(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L25)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### getFoundationMoveDests() :id=getfoundationmovedests
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.getFoundationMoveDests()</code></p>
-
 ```ts
-getFoundationMoveDests(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.getFoundationMoveDests(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L30)
@@ -116,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### getFoundationMoveSources() :id=getfoundationmovesources
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.getFoundationMoveSources()</code></p>
-
 ```ts
-getFoundationMoveSources(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.getFoundationMoveSources(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L35)
@@ -142,10 +132,8 @@ Game state first, then method-specific arguments.
 
 ### getTargets() :id=gettargets
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.getTargets()</code></p>
-
 ```ts
-getTargets(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.getTargets(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L40)
@@ -168,10 +156,8 @@ Game state first, then method-specific arguments.
 
 ### hasDefinition() :id=hasdefinition
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.hasDefinition()</code></p>
-
 ```ts
-hasDefinition(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.hasDefinition(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L45)
@@ -194,10 +180,8 @@ Game state first, then method-specific arguments.
 
 ### isStepConstrained() :id=isstepconstrained
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.isStepConstrained()</code></p>
-
 ```ts
-isStepConstrained(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.isStepConstrained(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L50)
@@ -220,10 +204,8 @@ Game state first, then method-specific arguments.
 
 ### matchesFoundationMove() :id=matchesfoundationmove
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.matchesFoundationMove()</code></p>
-
 ```ts
-matchesFoundationMove(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.matchesFoundationMove(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L55)
@@ -246,10 +228,8 @@ Game state first, then method-specific arguments.
 
 ### matchesFoundationRemove() :id=matchesfoundationremove
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.matchesFoundationRemove()</code></p>
-
 ```ts
-matchesFoundationRemove(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.matchesFoundationRemove(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L60)
@@ -272,10 +252,8 @@ Game state first, then method-specific arguments.
 
 ### shouldProtectActiveTargetAt() :id=shouldprotectactivetargetat
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt()</code></p>
-
 ```ts
-shouldProtectActiveTargetAt(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L65)

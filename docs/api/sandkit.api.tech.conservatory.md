@@ -6,10 +6,8 @@ Conservatory unlock wiring for built-in tech nodes.
 
 ### appendUnlock() :id=appendunlock
 
-<p class="smt-member-path"><code>sandkit.api.tech.conservatory.appendUnlock()</code></p>
-
 ```ts
-appendUnlock(techId: TechGridId, unlocks: ConservatoryUnlocks): void
+sandkit.api.tech.conservatory.appendUnlock(techId: TechGridId, unlocks: ConservatoryUnlocks): void
 ```
 
 Defined in: [sandkit/api/tech.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L135)

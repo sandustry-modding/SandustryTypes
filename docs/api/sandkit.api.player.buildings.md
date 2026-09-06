@@ -6,10 +6,8 @@ Player building unlock helpers.
 
 ### unlockById() :id=unlockbyid
 
-<p class="smt-member-path"><code>sandkit.api.player.buildings.unlockById()</code></p>
-
 ```ts
-unlockById(structureId: string): void
+sandkit.api.player.buildings.unlockById(structureId: string): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L136)
@@ -34,10 +32,10 @@ Registered structure id string.
 
 ***
 
-### ~~unlockByType()~~
+### ~~unlockByType()~~ :id=unlockbytype
 
 ```ts
-unlockByType(structureId: string): void
+sandkit.api.player.buildings.unlockByType(structureId: string): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L143)
@@ -64,10 +62,8 @@ Use [unlockById](#unlockbyid) instead.
 
 ### removeById() :id=removebyid
 
-<p class="smt-member-path"><code>sandkit.api.player.buildings.removeById()</code></p>
-
 ```ts
-removeById(structureId: string): void
+sandkit.api.player.buildings.removeById(structureId: string): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:152](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L152)

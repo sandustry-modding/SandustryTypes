@@ -6,10 +6,8 @@ Player inventory helpers.
 
 ### addById() :id=addbyid
 
-<p class="smt-member-path"><code>sandkit.api.player.inventory.addById()</code></p>
-
 ```ts
-addById(itemId: string): void
+sandkit.api.player.inventory.addById(itemId: string): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L117)
@@ -34,10 +32,10 @@ Registered item id string.
 
 ***
 
-### ~~addFromId()~~
+### ~~addFromId()~~ :id=addfromid
 
 ```ts
-addFromId(itemId: string): void
+sandkit.api.player.inventory.addFromId(itemId: string): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L124)

@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### generate() :id=generate
 
-<p class="smt-member-path"><code>sandkit.engine.api.foliage.generate()</code></p>
-
 ```ts
-generate(...args: unknown[]): unknown
+sandkit.engine.api.foliage.generate(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/foliage.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### getClusters() :id=getclusters
 
-<p class="smt-member-path"><code>sandkit.engine.api.foliage.getClusters()</code></p>
-
 ```ts
-getClusters(...args: unknown[]): unknown
+sandkit.engine.api.foliage.getClusters(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/foliage.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### getContainer() :id=getcontainer
 
-<p class="smt-member-path"><code>sandkit.engine.api.foliage.getContainer()</code></p>
-
 ```ts
-getContainer(...args: unknown[]): unknown
+sandkit.engine.api.foliage.getContainer(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/foliage.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L25)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### hasProcgenData() :id=hasprocgendata
 
-<p class="smt-member-path"><code>sandkit.engine.api.foliage.hasProcgenData()</code></p>
-
 ```ts
-hasProcgenData(...args: unknown[]): unknown
+sandkit.engine.api.foliage.hasProcgenData(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/foliage.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L30)

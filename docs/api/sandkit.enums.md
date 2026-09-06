@@ -28,9 +28,7 @@
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### SandkitEnums :id=sandkitenums
-
-<p class="smt-member-path"><code>sandkit.enums.SandkitEnums</code></p>
+### sandkit.enums :id=sandkitenums
 
 ```ts
 SandkitEnums = object

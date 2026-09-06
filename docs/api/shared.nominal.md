@@ -4,10 +4,8 @@
 
 ### LooseString :id=loosestring
 
-<p class="smt-member-path"><code>shared.nominal.LooseString</code></p>
-
 ```ts
-LooseString<T *extends* string> = T | string & object
+shared.nominal.LooseString<T *extends* string> = T | string & object
 ```
 
 Defined in: [shared/nominal.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L16)
@@ -25,10 +23,8 @@ Known string literals plus any other string.
 
 ### LooseNumber :id=loosenumber
 
-<p class="smt-member-path"><code>shared.nominal.LooseNumber</code></p>
-
 ```ts
-LooseNumber<T *extends* number> = T | number & object
+shared.nominal.LooseNumber<T *extends* number> = T | number & object
 ```
 
 Defined in: [shared/nominal.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L22)
@@ -46,10 +42,8 @@ Known numeric literals plus any other number.
 
 ### TaggedNumber :id=taggednumber
 
-<p class="smt-member-path"><code>shared.nominal.TaggedNumber</code></p>
-
 ```ts
-TaggedNumber<Tag *extends* string> = number & object
+shared.nominal.TaggedNumber<Tag *extends* string> = number & object
 ```
 
 Defined in: [shared/nominal.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L28)
@@ -75,10 +69,8 @@ readonly optional \_\_tag?: Tag
 
 ### CellId :id=cellid
 
-<p class="smt-member-path"><code>shared.nominal.CellId</code></p>
-
 ```ts
-CellId = TaggedNumber<"cellId">
+shared.nominal.CellId = TaggedNumber<"cellId">
 ```
 
 Defined in: [shared/nominal.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L31)

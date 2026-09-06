@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### addViabilityGold() :id=addviabilitygold
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.addViabilityGold()</code></p>
-
 ```ts
-addViabilityGold(...args: unknown[]): unknown
+sandkit.engine.api.factory.addViabilityGold(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### canUnlockNextTier() :id=canunlocknexttier
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.canUnlockNextTier()</code></p>
-
 ```ts
-canUnlockNextTier(...args: unknown[]): unknown
+sandkit.engine.api.factory.canUnlockNextTier(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### ensureProcessAtLeast() :id=ensureprocessatleast
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.ensureProcessAtLeast()</code></p>
-
 ```ts
-ensureProcessAtLeast(...args: unknown[]): unknown
+sandkit.engine.api.factory.ensureProcessAtLeast(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L25)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### flushDeferredLevelUps() :id=flushdeferredlevelups
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.flushDeferredLevelUps()</code></p>
-
 ```ts
-flushDeferredLevelUps(...args: unknown[]): unknown
+sandkit.engine.api.factory.flushDeferredLevelUps(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L30)
@@ -116,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### getLevel() :id=getlevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.getLevel()</code></p>
-
 ```ts
-getLevel(...args: unknown[]): unknown
+sandkit.engine.api.factory.getLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L35)
@@ -142,10 +132,8 @@ Game state first, then method-specific arguments.
 
 ### getProcessCount() :id=getprocesscount
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.getProcessCount()</code></p>
-
 ```ts
-getProcessCount(...args: unknown[]): unknown
+sandkit.engine.api.factory.getProcessCount(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L40)
@@ -168,10 +156,8 @@ Game state first, then method-specific arguments.
 
 ### getProcessRate() :id=getprocessrate
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.getProcessRate()</code></p>
-
 ```ts
-getProcessRate(...args: unknown[]): unknown
+sandkit.engine.api.factory.getProcessRate(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L45)
@@ -194,10 +180,8 @@ Game state first, then method-specific arguments.
 
 ### recordProcess() :id=recordprocess
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.recordProcess()</code></p>
-
 ```ts
-recordProcess(...args: unknown[]): unknown
+sandkit.engine.api.factory.recordProcess(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L50)
@@ -220,10 +204,8 @@ Game state first, then method-specific arguments.
 
 ### unlockNextTier() :id=unlocknexttier
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.unlockNextTier()</code></p>
-
 ```ts
-unlockNextTier(...args: unknown[]): unknown
+sandkit.engine.api.factory.unlockNextTier(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L55)

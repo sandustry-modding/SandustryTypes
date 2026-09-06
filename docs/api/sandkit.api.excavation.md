@@ -12,7 +12,6 @@ Main thread only.
 ### ExcavationProfileDefinitionV1 :id=excavationprofiledefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationProfileDefinitionV1</code></p>
-
 Defined in: [sandkit/api/excavation.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L50)
 
 Excavation tool profile definition.
@@ -64,7 +63,6 @@ Per-terrain output and damage rules.
 ### ExcavationProfileOptions :id=excavationprofileoptions
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationProfileOptions</code></p>
-
 Defined in: [sandkit/api/excavation.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L62)
 
 Options attached to an excavation profile definition.
@@ -134,7 +132,6 @@ Clamped to 0–1000 when set.
 ### ExcavationTerrainRule :id=excavationterrainrule
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationTerrainRule</code></p>
-
 Defined in: [sandkit/api/excavation.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L74)
 
 Terrain match rule within an excavation profile.
@@ -191,10 +188,8 @@ Element type produced when this terrain is excavated.
 
 ### registerProfile() :id=registerprofile
 
-<p class="smt-member-path"><code>sandkit.api.excavation.registerProfile()</code></p>
-
 ```ts
-registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
+sandkit.api.excavation.registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/excavation.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L47)

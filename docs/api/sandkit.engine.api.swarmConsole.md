@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### decrementConvergenceBuffer() :id=decrementconvergencebuffer
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.decrementConvergenceBuffer()</code></p>
-
 ```ts
-decrementConvergenceBuffer(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.decrementConvergenceBuffer(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### getCrystalMined() :id=getcrystalmined
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getCrystalMined()</code></p>
-
 ```ts
-getCrystalMined(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getCrystalMined(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### getDiskRadiusCells() :id=getdiskradiuscells
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getDiskRadiusCells()</code></p>
-
 ```ts
-getDiskRadiusCells(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getDiskRadiusCells(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L25)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### getEntityType() :id=getentitytype
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getEntityType()</code></p>
-
 ```ts
-getEntityType(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getEntityType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L30)
@@ -116,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### getNearestConvergence() :id=getnearestconvergence
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getNearestConvergence()</code></p>
-
 ```ts
-getNearestConvergence(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getNearestConvergence(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L35)
@@ -142,10 +132,8 @@ Game state first, then method-specific arguments.
 
 ### getPendingConvergence() :id=getpendingconvergence
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getPendingConvergence()</code></p>
-
 ```ts
-getPendingConvergence(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getPendingConvergence(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L40)
@@ -168,10 +156,8 @@ Game state first, then method-specific arguments.
 
 ### getPlacedConsoles() :id=getplacedconsoles
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getPlacedConsoles()</code></p>
-
 ```ts
-getPlacedConsoles(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getPlacedConsoles(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L45)
@@ -194,10 +180,8 @@ Game state first, then method-specific arguments.
 
 ### getRadiusPx() :id=getradiuspx
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getRadiusPx()</code></p>
-
 ```ts
-getRadiusPx(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getRadiusPx(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L50)
@@ -220,10 +204,8 @@ Game state first, then method-specific arguments.
 
 ### isSpawnJammed() :id=isspawnjammed
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.isSpawnJammed()</code></p>
-
 ```ts
-isSpawnJammed(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.isSpawnJammed(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L55)
@@ -246,10 +228,8 @@ Game state first, then method-specific arguments.
 
 ### registerEntityType() :id=registerentitytype
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.registerEntityType()</code></p>
-
 ```ts
-registerEntityType(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.registerEntityType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L60)
@@ -272,10 +252,8 @@ Game state first, then method-specific arguments.
 
 ### resetAllConvergenceBuffers() :id=resetallconvergencebuffers
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.resetAllConvergenceBuffers()</code></p>
-
 ```ts
-resetAllConvergenceBuffers(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.resetAllConvergenceBuffers(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L65)
@@ -298,10 +276,8 @@ Game state first, then method-specific arguments.
 
 ### setSpawnJammed() :id=setspawnjammed
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.setSpawnJammed()</code></p>
-
 ```ts
-setSpawnJammed(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.setSpawnJammed(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L70)

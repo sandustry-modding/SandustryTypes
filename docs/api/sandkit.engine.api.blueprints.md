@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### delete() :id=delete
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.delete()</code></p>
-
 ```ts
-delete(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.delete(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### exportAllString() :id=exportallstring
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.exportAllString()</code></p>
-
 ```ts
-exportAllString(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.exportAllString(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L21)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### exportString() :id=exportstring
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.exportString()</code></p>
-
 ```ts
-exportString(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.exportString(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L26)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### getAll() :id=getall
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.getAll()</code></p>
-
 ```ts
-getAll(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.getAll(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L31)
@@ -116,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### importString() :id=importstring
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.importString()</code></p>
-
 ```ts
-importString(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.importString(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L36)
@@ -142,10 +132,8 @@ Game state first, then method-specific arguments.
 
 ### load() :id=load
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.load()</code></p>
-
 ```ts
-load(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.load(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L41)
@@ -168,10 +156,8 @@ Game state first, then method-specific arguments.
 
 ### save() :id=save
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.save()</code></p>
-
 ```ts
-save(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.save(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L46)

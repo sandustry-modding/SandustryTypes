@@ -4,6 +4,13 @@
   --smt-wiki-gold: #c99400;
   --smt-wiki-gold-bright: #ffb800;
   --smt-wiki-link: #ff9900;
+  --smt-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --smt-card-bg: #1e1e1e;
+  --smt-card-border: #2a2a2a;
+  --smt-card-hover-border: color-mix(in srgb, var(--smt-wiki-link) 45%, var(--smt-card-border));
+  --smt-worker-blue: #4a9eff;
+  --smt-worker-blue-soft: #7ec8ff;
+  --smt-muted-text: #9a9a9a;
 
   --color-bg: #121212;
   --sidebar-bg: #1c1c1c;
@@ -115,6 +122,11 @@ html {
 .markdown-section thead th,
 .markdown-section thead td {
   background: var(--table-header-bg);
+}
+
+.markdown-section :not(pre) > code {
+  font-family: var(--smt-font-mono, ui-monospace, monospace);
+  font-size: 0.88em;
 }
 
 .markdown-section blockquote {

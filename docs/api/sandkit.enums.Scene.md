@@ -8,10 +8,8 @@ Top-level game scene (menu, intro, deploy, in-game).
 
 ### MainMenu :id=mainmenu
 
-<p class="smt-member-path"><code>sandkit.enums.Scene.MainMenu</code></p>
-
 ```ts
-MainMenu: 1
+sandkit.enums.Scene.MainMenu: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L251)
@@ -20,10 +18,8 @@ Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/
 
 ### Intro :id=intro
 
-<p class="smt-member-path"><code>sandkit.enums.Scene.Intro</code></p>
-
 ```ts
-Intro: 2
+sandkit.enums.Scene.Intro: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L252)
@@ -32,10 +28,8 @@ Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/
 
 ### Deploy :id=deploy
 
-<p class="smt-member-path"><code>sandkit.enums.Scene.Deploy</code></p>
-
 ```ts
-Deploy: 3
+sandkit.enums.Scene.Deploy: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L253)
@@ -44,10 +38,8 @@ Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/
 
 ### Game :id=game
 
-<p class="smt-member-path"><code>sandkit.enums.Scene.Game</code></p>
-
 ```ts
-Game: 4
+sandkit.enums.Scene.Game: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L254)

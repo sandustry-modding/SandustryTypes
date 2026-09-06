@@ -8,10 +8,8 @@ Linear vs rectangular structure placement.
 
 ### Linear :id=linear
 
-<p class="smt-member-path"><code>sandkit.enums.BuildMode.Linear</code></p>
-
 ```ts
-Linear: 1
+sandkit.enums.BuildMode.Linear: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L43)
@@ -20,10 +18,8 @@ Defined in: [sandkit/enums/index.d.ts:43](https://github.com/sandustry-modding/S
 
 ### Rectangular :id=rectangular
 
-<p class="smt-member-path"><code>sandkit.enums.BuildMode.Rectangular</code></p>
-
 ```ts
-Rectangular: 2
+sandkit.enums.BuildMode.Rectangular: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L44)

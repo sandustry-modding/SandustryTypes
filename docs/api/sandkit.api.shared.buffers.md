@@ -6,10 +6,8 @@ Shared buffer ensure and lookup.
 
 ### ensure() :id=ensure
 
-<p class="smt-member-path"><code>sandkit.api.shared.buffers.ensure()</code></p>
-
 ```ts
-ensure(key: string, config: object): SharedArray
+sandkit.api.shared.buffers.ensure(key: string, config: object): SharedArray
 ```
 
 Defined in: [sandkit/api/shared.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L30)
@@ -55,10 +53,10 @@ const counts = api.shared.buffers.ensure("counts", {
 
 ***
 
-### ~~create()~~
+### ~~create()~~ :id=create
 
 ```ts
-create(key: string, config: object): SharedArray
+sandkit.api.shared.buffers.create(key: string, config: object): SharedArray
 ```
 
 Defined in: [sandkit/api/shared.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L40)
@@ -95,10 +93,8 @@ Use [ensure](#ensure) instead.
 
 ### get() :id=get
 
-<p class="smt-member-path"><code>sandkit.api.shared.buffers.get()</code></p>
-
 ```ts
-get(key: string): SharedArray | undefined
+sandkit.api.shared.buffers.get(key: string): SharedArray | undefined
 ```
 
 Defined in: [shared/api/shared.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L20)

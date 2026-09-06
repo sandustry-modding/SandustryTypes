@@ -5,7 +5,6 @@
 ### AssetRef :id=assetref
 
 <p class="smt-member-path"><code>shared.asset.AssetRef</code></p>
-
 Defined in: [shared/asset.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/asset.d.ts#L9)
 
 Reference to a loaded sprite or texture asset.

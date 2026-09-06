@@ -6,10 +6,8 @@ Local session storage without mod id scope.
 
 ### get() :id=get
 
-<p class="smt-member-path"><code>sandkit.api.storage.local.get()</code></p>
-
 ```ts
-get(key: string): JsonValueV1 | undefined
+sandkit.api.storage.local.get(key: string): JsonValueV1 | undefined
 ```
 
 Defined in: [sandkit/api/storage.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L42)
@@ -32,10 +30,8 @@ Storage key.
 
 ### set() :id=set
 
-<p class="smt-member-path"><code>sandkit.api.storage.local.set()</code></p>
-
 ```ts
-set(key: string, value: JsonValueV1): void
+sandkit.api.storage.local.set(key: string, value: JsonValueV1): void
 ```
 
 Defined in: [sandkit/api/storage.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L48)
@@ -64,10 +60,8 @@ JSON-serializable value.
 
 ### remove() :id=remove
 
-<p class="smt-member-path"><code>sandkit.api.storage.local.remove()</code></p>
-
 ```ts
-remove(key: string): void
+sandkit.api.storage.local.remove(key: string): void
 ```
 
 Defined in: [sandkit/api/storage.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L53)

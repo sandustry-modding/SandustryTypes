@@ -7,10 +7,8 @@ Main thread only.
 
 ### canBuildAtCell() :id=canbuildatcell
 
-<p class="smt-member-path"><code>sandkit.api.authorization.canBuildAtCell()</code></p>
-
 ```ts
-canBuildAtCell(...args: CellCoordinates): boolean
+sandkit.api.authorization.canBuildAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L14)
@@ -33,10 +31,8 @@ True when building is allowed in the authorization zone.
 
 ### canGrabAtCell() :id=cangrabatcell
 
-<p class="smt-member-path"><code>sandkit.api.authorization.canGrabAtCell()</code></p>
-
 ```ts
-canGrabAtCell(...args: CellCoordinates): boolean
+sandkit.api.authorization.canGrabAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L22)
@@ -59,10 +55,8 @@ True when grabbing is allowed in the authorization zone.
 
 ### canUseTool() :id=canusetool
 
-<p class="smt-member-path"><code>sandkit.api.authorization.canUseTool()</code></p>
-
 ```ts
-canUseTool(player: Player, isFlamethrower?: boolean): boolean
+sandkit.api.authorization.canUseTool(player: Player, isFlamethrower?: boolean): boolean
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L30)
@@ -93,10 +87,8 @@ True when tool use is allowed for the player.
 
 ### canUseToolAtCell() :id=canusetoolatcell
 
-<p class="smt-member-path"><code>sandkit.api.authorization.canUseToolAtCell()</code></p>
-
 ```ts
-canUseToolAtCell(...args: [number, number, boolean]): boolean
+sandkit.api.authorization.canUseToolAtCell(...args: [number, number, boolean]): boolean
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L39)
@@ -119,10 +111,8 @@ True when tool use is allowed at the cell.
 
 ### getZoneIdAtCell() :id=getzoneidatcell
 
-<p class="smt-member-path"><code>sandkit.api.authorization.getZoneIdAtCell()</code></p>
-
 ```ts
-getZoneIdAtCell(...args: CellCoordinates): number
+sandkit.api.authorization.getZoneIdAtCell(...args: CellCoordinates): number
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L49)
@@ -145,10 +135,8 @@ Numeric zone id for the cell.
 
 ### getPlayerZoneId() :id=getplayerzoneid
 
-<p class="smt-member-path"><code>sandkit.api.authorization.getPlayerZoneId()</code></p>
-
 ```ts
-getPlayerZoneId(): number
+sandkit.api.authorization.getPlayerZoneId(): number
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L55)

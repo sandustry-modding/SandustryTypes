@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### ensureProducedAtLeast() :id=ensureproducedatleast
 
-<p class="smt-member-path"><code>sandkit.engine.api.auralite.ensureProducedAtLeast()</code></p>
-
 ```ts
-ensureProducedAtLeast(...args: unknown[]): unknown
+sandkit.engine.api.auralite.ensureProducedAtLeast(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/auralite.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### getProduced() :id=getproduced
 
-<p class="smt-member-path"><code>sandkit.engine.api.auralite.getProduced()</code></p>
-
 ```ts
-getProduced(...args: unknown[]): unknown
+sandkit.engine.api.auralite.getProduced(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/auralite.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L20)

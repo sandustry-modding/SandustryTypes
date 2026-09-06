@@ -5,7 +5,6 @@
 ### ProjectileDefinition :id=projectiledefinition
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileDefinition</code></p>
-
 Defined in: [sandkit/api/projectiles.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L59)
 
 Mod-registered projectile definition.
@@ -89,7 +88,6 @@ Optional per-projectile mutable data factory.
 ### ProjectileBlueprint :id=projectileblueprint
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileBlueprint</code></p>
-
 Defined in: [sandkit/api/projectiles.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L73)
 
 Blueprint used to spawn a projectile.
@@ -117,7 +115,6 @@ Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-moddi
 ### Projectile :id=projectile
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.Projectile</code></p>
-
 Defined in: [sandkit/api/projectiles.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L79)
 
 Active projectile instance.
@@ -158,10 +155,8 @@ Defined in: [sandkit/api/projectiles.d.ts:82](https://github.com/sandustry-moddi
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.register()</code></p>
-
 ```ts
-register(definition: ProjectileDefinition): void
+sandkit.api.projectiles.register(definition: ProjectileDefinition): void
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L13)
@@ -184,10 +179,8 @@ Projectile id, sprite, and runtime options factory.
 
 ### getDefinitionById() :id=getdefinitionbyid
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.getDefinitionById()</code></p>
-
 ```ts
-getDefinitionById(projectileId: string): ProjectileDefinition | undefined
+sandkit.api.projectiles.getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L19)
@@ -210,10 +203,8 @@ Registered projectile id.
 
 ### createBlueprintFromId() :id=createblueprintfromid
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.createBlueprintFromId()</code></p>
-
 ```ts
-createBlueprintFromId(projectileId: string): ProjectileBlueprint
+sandkit.api.projectiles.createBlueprintFromId(projectileId: string): ProjectileBlueprint
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L26)
@@ -238,10 +229,8 @@ Blueprint passed to [spawnAtWorld](#spawnatworld).
 
 ### getAll() :id=getall
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.getAll()</code></p>
-
 ```ts
-getAll(): Projectile[]
+sandkit.api.projectiles.getAll(): Projectile[]
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L29)
@@ -256,10 +245,8 @@ Return all active projectiles.
 
 ### getById() :id=getbyid
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.getById()</code></p>
-
 ```ts
-getById(projectileId: number): Projectile | undefined
+sandkit.api.projectiles.getById(projectileId: number): Projectile | undefined
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L35)
@@ -282,10 +269,8 @@ Runtime projectile id.
 
 ### remove() :id=remove
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.remove()</code></p>
-
 ```ts
-remove(projectile: Projectile): void
+sandkit.api.projectiles.remove(projectile: Projectile): void
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L41)
@@ -308,10 +293,8 @@ Projectile instance to remove.
 
 ### spawnAtWorld() :id=spawnatworld
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.spawnAtWorld()</code></p>
-
 ```ts
-spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: ProjectileBlueprint): Projectile
+sandkit.api.projectiles.spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: ProjectileBlueprint): Projectile
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L51)

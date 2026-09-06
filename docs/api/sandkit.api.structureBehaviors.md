@@ -4,10 +4,8 @@
 
 ### registerConveyorType() :id=registerconveyortype
 
-<p class="smt-member-path"><code>sandkit.api.structureBehaviors.registerConveyorType()</code></p>
-
 ```ts
-registerConveyorType(structureId: string, options?: object): void
+sandkit.api.structureBehaviors.registerConveyorType(structureId: string, options?: object): void
 ```
 
 Defined in: [sandkit/api/structureBehaviors.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L24)
@@ -67,10 +65,8 @@ api.structureBehaviors.registerConveyorType(
 
 ### registerLauncherType() :id=registerlaunchertype
 
-<p class="smt-member-path"><code>sandkit.api.structureBehaviors.registerLauncherType()</code></p>
-
 ```ts
-registerLauncherType(definition: object): void
+sandkit.api.structureBehaviors.registerLauncherType(definition: object): void
 ```
 
 Defined in: [sandkit/api/structureBehaviors.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L39)

@@ -4,10 +4,8 @@
 
 ### nextTick() :id=nexttick
 
-<p class="smt-member-path"><code>sandkit.api.schedule.nextTick()</code></p>
-
 ```ts
-nextTick(callback: () => void): void
+sandkit.api.schedule.nextTick(callback: () => void): void
 ```
 
 Defined in: [sandkit/api/schedule.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/schedule.d.ts#L20)

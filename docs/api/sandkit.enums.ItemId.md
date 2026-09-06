@@ -8,10 +8,8 @@ Built-in hotbar item ids.
 
 ### Shovel :id=shovel
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Shovel</code></p>
-
 ```ts
-Shovel: 1
+sandkit.enums.ItemId.Shovel: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L154)
@@ -20,10 +18,8 @@ Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/
 
 ### Grabber :id=grabber
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Grabber</code></p>
-
 ```ts
-Grabber: 2
+sandkit.enums.ItemId.Grabber: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L155)
@@ -32,10 +28,8 @@ Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/
 
 ### Demolisher :id=demolisher
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Demolisher</code></p>
-
 ```ts
-Demolisher: 3
+sandkit.enums.ItemId.Demolisher: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L156)
@@ -44,10 +38,8 @@ Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/
 
 ### GrapplingHook :id=grapplinghook
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.GrapplingHook</code></p>
-
 ```ts
-GrapplingHook: 4
+sandkit.enums.ItemId.GrapplingHook: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L157)
@@ -56,10 +48,8 @@ Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/
 
 ### Vacuum :id=vacuum
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Vacuum</code></p>
-
 ```ts
-Vacuum: 5
+sandkit.enums.ItemId.Vacuum: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L158)
@@ -68,10 +58,8 @@ Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/
 
 ### Gun :id=gun
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Gun</code></p>
-
 ```ts
-Gun: 6
+sandkit.enums.ItemId.Gun: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L159)
@@ -80,10 +68,8 @@ Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/
 
 ### Copier :id=copier
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Copier</code></p>
-
 ```ts
-Copier: 7
+sandkit.enums.ItemId.Copier: 7
 ```
 
 Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L160)
@@ -92,10 +78,8 @@ Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/
 
 ### RocketLauncher :id=rocketlauncher
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.RocketLauncher</code></p>
-
 ```ts
-RocketLauncher: 8
+sandkit.enums.ItemId.RocketLauncher: 8
 ```
 
 Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L161)
@@ -104,10 +88,8 @@ Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/
 
 ### Digger :id=digger
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Digger</code></p>
-
 ```ts
-Digger: 9
+sandkit.enums.ItemId.Digger: 9
 ```
 
 Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L162)
@@ -116,10 +98,8 @@ Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/
 
 ### Shotgun :id=shotgun
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Shotgun</code></p>
-
 ```ts
-Shotgun: 10
+sandkit.enums.ItemId.Shotgun: 10
 ```
 
 Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L163)
@@ -128,10 +108,8 @@ Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/
 
 ### Teleporter :id=teleporter
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Teleporter</code></p>
-
 ```ts
-Teleporter: 11
+sandkit.enums.ItemId.Teleporter: 11
 ```
 
 Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L164)
@@ -140,10 +118,8 @@ Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/
 
 ### Flamethrower :id=flamethrower
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Flamethrower</code></p>
-
 ```ts
-Flamethrower: 12
+sandkit.enums.ItemId.Flamethrower: 12
 ```
 
 Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L165)
@@ -152,10 +128,8 @@ Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/
 
 ### PipeRemover :id=piperemover
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.PipeRemover</code></p>
-
 ```ts
-PipeRemover: 13
+sandkit.enums.ItemId.PipeRemover: 13
 ```
 
 Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L166)
@@ -164,10 +138,8 @@ Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/
 
 ### Hauler :id=hauler
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Hauler</code></p>
-
 ```ts
-Hauler: 14
+sandkit.enums.ItemId.Hauler: 14
 ```
 
 Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L167)
@@ -176,10 +148,8 @@ Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/
 
 ### Cryoblaster :id=cryoblaster
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Cryoblaster</code></p>
-
 ```ts
-Cryoblaster: 15
+sandkit.enums.ItemId.Cryoblaster: 15
 ```
 
 Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L168)
@@ -188,10 +158,8 @@ Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/
 
 ### MegaShotgun :id=megashotgun
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.MegaShotgun</code></p>
-
 ```ts
-MegaShotgun: 16
+sandkit.enums.ItemId.MegaShotgun: 16
 ```
 
 Defined in: [sandkit/enums/index.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L169)

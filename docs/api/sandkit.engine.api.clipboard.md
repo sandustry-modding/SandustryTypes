@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### activate() :id=activate
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.activate()</code></p>
-
 ```ts
-activate(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.activate(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### clear() :id=clear
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.clear()</code></p>
-
 ```ts
-clear(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.clear(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### get() :id=get
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.get()</code></p>
-
 ```ts
-get(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.get(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L25)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### getHistory() :id=gethistory
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.getHistory()</code></p>
-
 ```ts
-getHistory(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.getHistory(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L30)
@@ -116,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### getSignalLinks() :id=getsignallinks
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.getSignalLinks()</code></p>
-
 ```ts
-getSignalLinks(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.getSignalLinks(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L35)
@@ -142,10 +132,8 @@ Game state first, then method-specific arguments.
 
 ### selectFromHistory() :id=selectfromhistory
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.selectFromHistory()</code></p>
-
 ```ts
-selectFromHistory(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.selectFromHistory(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L40)
@@ -168,10 +156,8 @@ Game state first, then method-specific arguments.
 
 ### set() :id=set
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.set()</code></p>
-
 ```ts
-set(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.set(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L45)

@@ -16,8 +16,7 @@ Async methods use `ipcRenderer.invoke` unless noted (`openDevTools`, `log`).
 ### ElectronBridge :id=electronbridge
 
 <p class="smt-member-path"><code>electron.ElectronBridge</code></p>
-
-Defined in: electron/bridge.d.ts:33
+Defined in: [electron/bridge.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L33)
 
 #### Properties
 
@@ -27,7 +26,7 @@ Defined in: electron/bridge.d.ts:33
 localMods: ElectronLocalModsApi
 ```
 
-Defined in: electron/bridge.d.ts:301
+Defined in: [electron/bridge.d.ts:301](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L301)
 
 Local developer mod folder helpers (`electron.localMods`).
 
@@ -37,7 +36,7 @@ Local developer mod folder helpers (`electron.localMods`).
 macRightMouse: ElectronMacRightMouseApi
 ```
 
-Defined in: electron/bridge.d.ts:396
+Defined in: [electron/bridge.d.ts:396](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L396)
 
 macOS right-button emulation helpers (`electron.macRightMouse`).
 
@@ -47,7 +46,7 @@ macOS right-button emulation helpers (`electron.macRightMouse`).
 platform: ElectronPlatformApi
 ```
 
-Defined in: electron/bridge.d.ts:399
+Defined in: [electron/bridge.d.ts:399](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L399)
 
 Cross-store platform helpers (`electron.platform`).
 
@@ -57,7 +56,7 @@ Cross-store platform helpers (`electron.platform`).
 customMaps: ElectronCustomMapsApi
 ```
 
-Defined in: electron/bridge.d.ts:424
+Defined in: [electron/bridge.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L424)
 
 Custom map editor persistence helpers (`electron.customMaps`).
 
@@ -69,7 +68,7 @@ Custom map editor persistence helpers (`electron.customMaps`).
 getPlatformSync(): ElectronPlatform
 ```
 
-Defined in: electron/bridge.d.ts:41
+Defined in: [electron/bridge.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L41)
 
 Return the active distribution channel.
 
@@ -87,7 +86,7 @@ IPC: `get-platform-sync`.
 getModdingEnabledSync(): boolean
 ```
 
-Defined in: electron/bridge.d.ts:50
+Defined in: [electron/bridge.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L50)
 
 Return whether local modding is enabled for this build/session.
 
@@ -105,7 +104,7 @@ IPC: `get-modding-enabled-sync`.
 getIsSteamDeckSync(): boolean
 ```
 
-Defined in: electron/bridge.d.ts:59
+Defined in: [electron/bridge.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L59)
 
 Return true on Steam Deck / gamescope hosts.
 
@@ -123,7 +122,7 @@ IPC: `get-is-steam-deck-sync`.
 getPreferredSystemLanguagesSync(): string[]
 ```
 
-Defined in: electron/bridge.d.ts:68
+Defined in: [electron/bridge.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L68)
 
 Return BCP-47 language tags preferred by the OS.
 
@@ -141,7 +140,7 @@ IPC: `get-preferred-system-languages-sync`.
 onAppSuspend(callback: ElectronIpcListener): void
 ```
 
-Defined in: electron/bridge.d.ts:77
+Defined in: [electron/bridge.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L77)
 
 Register a callback for app suspend (sleep / Xbox quick suspend).
 
@@ -165,7 +164,7 @@ IPC: `app-suspend`.
 onAppResume(callback: ElectronIpcListener): void
 ```
 
-Defined in: electron/bridge.d.ts:86
+Defined in: [electron/bridge.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L86)
 
 Register a callback for app resume.
 
@@ -189,7 +188,7 @@ IPC: `app-resume`.
 diagnostics(): Promise<JsonValueV1>
 ```
 
-Defined in: electron/bridge.d.ts:95
+Defined in: [electron/bridge.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L95)
 
 Return platform diagnostics JSON.
 
@@ -207,7 +206,7 @@ IPC: `platform-diagnostics`.
 checkLicense(): Promise<ElectronLicenseCheckResult>
 ```
 
-Defined in: electron/bridge.d.ts:106
+Defined in: [electron/bridge.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L106)
 
 Check the MS Store license.
 
@@ -227,7 +226,7 @@ IPC: `platform-check-license`.
 writeGameEvent(eventName: string, dimensions?: Record<string, string>, measurements?: Record<string, number>): Promise<boolean>
 ```
 
-Defined in: electron/bridge.d.ts:118
+Defined in: [electron/bridge.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L118)
 
 Send one telemetry event to the platform SDK when available.
 
@@ -265,7 +264,7 @@ IPC: `platform-write-game-event`.
 platformPrimeAchievements(ids: string[]): Promise<ElectronPrimeAchievementsResult>
 ```
 
-Defined in: electron/bridge.d.ts:134
+Defined in: [electron/bridge.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L134)
 
 Prime the MS Store achievement cache after sign-in.
 
@@ -293,7 +292,7 @@ IPC: `platform-prime-achievements`.
 platformShowReauthPrompt(reason: string): Promise<ElectronReauthPromptResult>
 ```
 
-Defined in: electron/bridge.d.ts:146
+Defined in: [electron/bridge.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L146)
 
 Show the native MS Store re-auth dialog.
 
@@ -321,7 +320,7 @@ IPC: `platform-show-reauth-prompt`.
 appQuit(): Promise<ElectronSuccessResult>
 ```
 
-Defined in: electron/bridge.d.ts:157
+Defined in: [electron/bridge.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L157)
 
 Quit the application.
 
@@ -341,7 +340,7 @@ IPC: `app-quit`.
 openExternalBrowser(url: string): Promise<ElectronOpenUrlResult>
 ```
 
-Defined in: electron/bridge.d.ts:167
+Defined in: [electron/bridge.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L167)
 
 Open an external `https:` URL in the system browser.
 
@@ -367,7 +366,7 @@ IPC: `open-external-browser`.
 onXboxUserSignedOut(callback: ElectronIpcListener): void
 ```
 
-Defined in: electron/bridge.d.ts:178
+Defined in: [electron/bridge.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L178)
 
 Register a callback for Xbox user sign-out.
 
@@ -393,7 +392,7 @@ IPC: `xbox-user-signed-out`.
 onXboxLicenseLost(callback: ElectronIpcListener): void
 ```
 
-Defined in: electron/bridge.d.ts:189
+Defined in: [electron/bridge.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L189)
 
 Register a callback for Game Pass / Store license loss.
 
@@ -419,7 +418,7 @@ IPC: `xbox-license-lost`.
 onXboxUserSignedIn(callback: ElectronIpcListener): void
 ```
 
-Defined in: electron/bridge.d.ts:200
+Defined in: [electron/bridge.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L200)
 
 Register a callback for Xbox user sign-in.
 
@@ -445,7 +444,7 @@ IPC: `xbox-user-signed-in`.
 save(id: string, name: string, data: JsonValueV1): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:212
+Defined in: [electron/bridge.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L212)
 
 Write one compressed save file (`.save`).
 
@@ -483,7 +482,7 @@ IPC: `save`.
 saveSerialized(id: string, name: string, dataJson: string, metadata?: JsonValueV1): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:225
+Defined in: [electron/bridge.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L225)
 
 Write one save from pre-serialized JSON and metadata.
 
@@ -527,7 +526,7 @@ IPC: `save-serialized`.
 load(id: string): Promise<ElectronLoadResult>
 ```
 
-Defined in: electron/bridge.d.ts:240
+Defined in: [electron/bridge.d.ts:240](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L240)
 
 Load one save slot by id.
 
@@ -553,7 +552,7 @@ IPC: `load`.
 deleteSave(id: string): Promise<ElectronSuccessResult | ElectronFailureResult>
 ```
 
-Defined in: electron/bridge.d.ts:250
+Defined in: [electron/bridge.d.ts:250](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L250)
 
 Delete one save slot and its backup file.
 
@@ -579,7 +578,7 @@ IPC: `delete-save`.
 loadRaw(name: string): Promise<ElectronLoadResult | null>
 ```
 
-Defined in: electron/bridge.d.ts:260
+Defined in: [electron/bridge.d.ts:260](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L260)
 
 Load a raw save file by filename (including extension).
 
@@ -605,7 +604,7 @@ IPC: `load-raw`.
 exportSave(id: string): Promise<ElectronExportSaveResult>
 ```
 
-Defined in: electron/bridge.d.ts:270
+Defined in: [electron/bridge.d.ts:270](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L270)
 
 Export one save slot as raw bytes for backup/sharing.
 
@@ -631,7 +630,7 @@ IPC: `export-save`.
 importSave(bytes: ArrayBuffer | Uint8Array<ArrayBufferLike>): Promise<ElectronImportSaveResult>
 ```
 
-Defined in: electron/bridge.d.ts:280
+Defined in: [electron/bridge.d.ts:280](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L280)
 
 Import one save from raw exported bytes.
 
@@ -657,7 +656,7 @@ IPC: `import-save`.
 getSaveFiles(): Promise<ElectronSaveFileMetadata[]>
 ```
 
-Defined in: electron/bridge.d.ts:289
+Defined in: [electron/bridge.d.ts:289](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L289)
 
 List save slot metadata parsed from each `.save` header line.
 
@@ -675,7 +674,7 @@ IPC: `get-save-files`.
 getSaveFolder(): Promise<string>
 ```
 
-Defined in: electron/bridge.d.ts:298
+Defined in: [electron/bridge.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L298)
 
 Return the absolute path to the active saves folder.
 
@@ -693,7 +692,7 @@ IPC: `get-save-folder`.
 getLastPlayedGameSync(): string | null
 ```
 
-Defined in: electron/bridge.d.ts:310
+Defined in: [electron/bridge.d.ts:310](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L310)
 
 Return the last-played save id JSON string.
 
@@ -711,7 +710,7 @@ IPC: `get-last-played-game-sync`.
 saveLastPlayedGame(game: ElectronLastPlayedGame): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:320
+Defined in: [electron/bridge.d.ts:320](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L320)
 
 Persist the last-played save id.
 
@@ -737,7 +736,7 @@ IPC: `save-last-played-game`.
 clearLastPlayedGame(): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:329
+Defined in: [electron/bridge.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L329)
 
 Clear the persisted last-played save id.
 
@@ -755,7 +754,7 @@ IPC: `clear-last-played-game`.
 saveExistsSync(id: string): boolean
 ```
 
-Defined in: electron/bridge.d.ts:339
+Defined in: [electron/bridge.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L339)
 
 Return whether a save file exists for the given id.
 
@@ -781,7 +780,7 @@ IPC: `save-exists-sync`.
 getSettingsSync(): string | null
 ```
 
-Defined in: electron/bridge.d.ts:348
+Defined in: [electron/bridge.d.ts:348](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L348)
 
 Return the settings JSON string from disk.
 
@@ -799,7 +798,7 @@ IPC: `get-settings-sync`.
 saveSettings(settings: JsonValueV1): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:358
+Defined in: [electron/bridge.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L358)
 
 Persist renderer settings JSON to disk.
 
@@ -825,7 +824,7 @@ IPC: `save-settings`.
 setFullscreen(shouldBeFullscreen: boolean): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:368
+Defined in: [electron/bridge.d.ts:368](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L368)
 
 Enter or leave fullscreen mode.
 
@@ -851,7 +850,7 @@ IPC: `set-fullscreen`.
 toggleFullscreen(): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:377
+Defined in: [electron/bridge.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L377)
 
 Toggle fullscreen mode.
 
@@ -869,7 +868,7 @@ IPC: `toggle-fullscreen`.
 openDevTools(): void
 ```
 
-Defined in: electron/bridge.d.ts:384
+Defined in: [electron/bridge.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L384)
 
 Open Chromium DevTools for the game window.
 
@@ -885,7 +884,7 @@ IPC: `open-devtools` (`send`).
 isFilePatchingActiveSync(): boolean
 ```
 
-Defined in: electron/bridge.d.ts:393
+Defined in: [electron/bridge.d.ts:393](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L393)
 
 Return true when the Steam patch protocol interceptor is active.
 
@@ -903,7 +902,7 @@ IPC: `is-file-patching-active-sync`.
 log(level: ElectronLogLevel, scope: string, message: string): void
 ```
 
-Defined in: electron/bridge.d.ts:412
+Defined in: [electron/bridge.d.ts:412](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L412)
 
 Append one line to the host log file (`logs/main.log`).
 
@@ -941,7 +940,7 @@ IPC: `log:write` (`send`).
 getSystemInfo(): ElectronSystemInfo
 ```
 
-Defined in: electron/bridge.d.ts:421
+Defined in: [electron/bridge.d.ts:421](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L421)
 
 Return local process/runtime versions.
 
@@ -958,8 +957,7 @@ Version info read from the preload process object.
 ### ElectronCustomMapsApi :id=electroncustommapsapi
 
 <p class="smt-member-path"><code>electron.ElectronCustomMapsApi</code></p>
-
-Defined in: electron/custom-maps.d.ts:11
+Defined in: [electron/custom-maps.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L11)
 
 Custom map editor persistence helpers exposed as `electron.customMaps`.
 
@@ -971,7 +969,7 @@ Custom map editor persistence helpers exposed as `electron.customMaps`.
 save(id: string, name: string, data: JsonValueV1): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/custom-maps.d.ts:22
+Defined in: [electron/custom-maps.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L22)
 
 Write one custom map file (`.custommap`).
 
@@ -1009,7 +1007,7 @@ IPC: `custom-map-save`.
 load(id: string): Promise<JsonValueV1>
 ```
 
-Defined in: electron/custom-maps.d.ts:32
+Defined in: [electron/custom-maps.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L32)
 
 Load one custom map by id.
 
@@ -1035,7 +1033,7 @@ IPC: `custom-map-load`.
 list(): Promise<JsonValueV1[]>
 ```
 
-Defined in: electron/custom-maps.d.ts:41
+Defined in: [electron/custom-maps.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L41)
 
 List custom map metadata entries (newest first).
 
@@ -1053,7 +1051,7 @@ IPC: `custom-map-list`.
 delete(id: string): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/custom-maps.d.ts:51
+Defined in: [electron/custom-maps.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L51)
 
 Delete one custom map file.
 
@@ -1078,8 +1076,7 @@ IPC: `custom-map-delete`.
 ### ElectronLocalModsApi :id=electronlocalmodsapi
 
 <p class="smt-member-path"><code>electron.ElectronLocalModsApi</code></p>
-
-Defined in: electron/local-mods.d.ts:14
+Defined in: [electron/local-mods.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L14)
 
 Local developer mod folder helpers exposed as `electron.localMods`.
 
@@ -1091,7 +1088,7 @@ Local developer mod folder helpers exposed as `electron.localMods`.
 getFolder(): Promise<string>
 ```
 
-Defined in: electron/local-mods.d.ts:22
+Defined in: [electron/local-mods.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L22)
 
 Return the absolute path to the OS local-mods folder.
 
@@ -1109,7 +1106,7 @@ IPC: `get-local-mods-folder`.
 openFolder(): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/local-mods.d.ts:31
+Defined in: [electron/local-mods.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L31)
 
 Open the local-mods folder in the OS file manager.
 
@@ -1127,7 +1124,7 @@ IPC: `open-local-mods-folder`.
 list(): Promise<ElectronLocalModsListResult>
 ```
 
-Defined in: electron/local-mods.d.ts:42
+Defined in: [electron/local-mods.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L42)
 
 List installed local mod summaries.
 
@@ -1147,7 +1144,7 @@ IPC: `local-mods-list`.
 upload(modId: string): Promise<ElectronLocalModsUploadResult>
 ```
 
-Defined in: electron/local-mods.d.ts:52
+Defined in: [electron/local-mods.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L52)
 
 Upload one local mod folder to Steam Workshop.
 
@@ -1172,8 +1169,7 @@ IPC: `local-mods-upload`.
 ### ElectronMacRightMouseApi :id=electronmacrightmouseapi
 
 <p class="smt-member-path"><code>electron.ElectronMacRightMouseApi</code></p>
-
-Defined in: electron/mac-right-mouse.d.ts:8
+Defined in: [electron/mac-right-mouse.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L8)
 
 macOS right-button emulation helpers exposed as `electron.macRightMouse`.
 
@@ -1185,7 +1181,7 @@ macOS right-button emulation helpers exposed as `electron.macRightMouse`.
 watch(active: boolean, probeScript?: string): void
 ```
 
-Defined in: electron/mac-right-mouse.d.ts:17
+Defined in: [electron/mac-right-mouse.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L17)
 
 Enable or disable global right-button probing on macOS.
 
@@ -1215,7 +1211,7 @@ IPC: `mac-right-mouse-watch` (`send`).
 onPos(callback: (x: number, y: number) => void): void
 ```
 
-Defined in: electron/mac-right-mouse.d.ts:26
+Defined in: [electron/mac-right-mouse.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L26)
 
 Register a callback for synthetic right-button position updates.
 
@@ -1239,7 +1235,7 @@ IPC: `mac-right-mouse-pos`.
 onUp(callback: () => void): void
 ```
 
-Defined in: electron/mac-right-mouse.d.ts:35
+Defined in: [electron/mac-right-mouse.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L35)
 
 Register a callback for synthetic right-button release.
 
@@ -1262,8 +1258,7 @@ IPC: `mac-right-mouse-up`.
 ### ElectronPlatformOverlayApi :id=electronplatformoverlayapi
 
 <p class="smt-member-path"><code>electron.ElectronPlatformOverlayApi</code></p>
-
-Defined in: electron/platform.d.ts:11
+Defined in: [electron/platform.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L11)
 
 Platform overlay browser helpers exposed as `electron.platform.overlay`.
 
@@ -1275,7 +1270,7 @@ Platform overlay browser helpers exposed as `electron.platform.overlay`.
 openUrl(url: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:20
+Defined in: [electron/platform.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L20)
 
 Open an `https:` URL in the platform overlay browser when available.
 
@@ -1300,8 +1295,7 @@ IPC: `platform-overlay-open-url`.
 ### ElectronPlatformApi :id=electronplatformapi
 
 <p class="smt-member-path"><code>electron.ElectronPlatformApi</code></p>
-
-Defined in: electron/platform.d.ts:26
+Defined in: [electron/platform.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L26)
 
 Cross-store platform helpers exposed as `electron.platform`.
 
@@ -1313,7 +1307,7 @@ Cross-store platform helpers exposed as `electron.platform`.
 workshop: ElectronWorkshopApi
 ```
 
-Defined in: electron/platform.d.ts:144
+Defined in: [electron/platform.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L144)
 
 Steam Workshop helpers (Steam only; MS Store calls fail gracefully).
 
@@ -1323,7 +1317,7 @@ Steam Workshop helpers (Steam only; MS Store calls fail gracefully).
 overlay: ElectronPlatformOverlayApi
 ```
 
-Defined in: electron/platform.d.ts:147
+Defined in: [electron/platform.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L147)
 
 Platform overlay browser helpers.
 
@@ -1335,7 +1329,7 @@ Platform overlay browser helpers.
 isInitialized(): Promise<boolean>
 ```
 
-Defined in: electron/platform.d.ts:34
+Defined in: [electron/platform.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L34)
 
 Return true when the platform integration finished startup.
 
@@ -1353,7 +1347,7 @@ IPC: `platform-is-initialized`.
 getPlayerName(): Promise<string>
 ```
 
-Defined in: electron/platform.d.ts:43
+Defined in: [electron/platform.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L43)
 
 Return the signed-in player display name.
 
@@ -1371,7 +1365,7 @@ IPC: `platform-get-player-name`.
 getPlayerId(): Promise<string>
 ```
 
-Defined in: electron/platform.d.ts:52
+Defined in: [electron/platform.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L52)
 
 Return the stable platform player id string.
 
@@ -1389,7 +1383,7 @@ IPC: `platform-get-player-id`.
 getAppId(): Promise<number>
 ```
 
-Defined in: electron/platform.d.ts:61
+Defined in: [electron/platform.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L61)
 
 Return the platform app id number.
 
@@ -1407,7 +1401,7 @@ IPC: `platform-get-app-id`.
 unlockAchievement(achievementId: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:71
+Defined in: [electron/platform.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L71)
 
 Unlock one platform achievement.
 
@@ -1433,7 +1427,7 @@ IPC: `platform-unlock-achievement`.
 isAchievementUnlocked(achievementId: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:81
+Defined in: [electron/platform.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L81)
 
 Return whether an achievement is already unlocked.
 
@@ -1459,7 +1453,7 @@ IPC: `platform-is-achievement-unlocked`.
 clearAchievement(achievementId: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:91
+Defined in: [electron/platform.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L91)
 
 Clear one platform achievement (debug / QA).
 
@@ -1485,7 +1479,7 @@ IPC: `platform-clear-achievement`.
 cloudSave(fileName: string, data: JsonValueV1): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:102
+Defined in: [electron/platform.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L102)
 
 Write one named blob to platform cloud storage.
 
@@ -1517,7 +1511,7 @@ IPC: `platform-cloud-save`.
 cloudLoad(fileName: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:112
+Defined in: [electron/platform.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L112)
 
 Read one named blob from platform cloud storage.
 
@@ -1543,7 +1537,7 @@ IPC: `platform-cloud-load`.
 cloudFileExists(fileName: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:122
+Defined in: [electron/platform.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L122)
 
 Return whether a cloud file key exists.
 
@@ -1569,7 +1563,7 @@ IPC: `platform-cloud-file-exists`.
 cloudDelete(fileName: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:132
+Defined in: [electron/platform.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L132)
 
 Delete one named cloud file.
 
@@ -1595,7 +1589,7 @@ IPC: `platform-cloud-delete`.
 cloudSync(): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:141
+Defined in: [electron/platform.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L141)
 
 Sync local saves with platform cloud storage.
 
@@ -1612,8 +1606,7 @@ IPC: `platform-cloud-sync`.
 ### ElectronSuccessResult :id=electronsuccessresult
 
 <p class="smt-member-path"><code>electron.ElectronSuccessResult</code></p>
-
-Defined in: electron/results.d.ts:10
+Defined in: [electron/results.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L10)
 
 Successful invoke result from save, settings, and window handlers.
 
@@ -1625,7 +1618,7 @@ Successful invoke result from save, settings, and window handlers.
 success: true
 ```
 
-Defined in: electron/results.d.ts:12
+Defined in: [electron/results.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L12)
 
 Always `true` for this branch of the result union.
 
@@ -1635,7 +1628,7 @@ Always `true` for this branch of the result union.
 optional path?: string
 ```
 
-Defined in: electron/results.d.ts:14
+Defined in: [electron/results.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L14)
 
 Absolute path written when a handler persists a file (save/custom map).
 
@@ -1644,8 +1637,7 @@ Absolute path written when a handler persists a file (save/custom map).
 ### ElectronFailureResult :id=electronfailureresult
 
 <p class="smt-member-path"><code>electron.ElectronFailureResult</code></p>
-
-Defined in: electron/results.d.ts:20
+Defined in: [electron/results.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L20)
 
 Failed invoke result from save, settings, and window handlers.
 
@@ -1657,7 +1649,7 @@ Failed invoke result from save, settings, and window handlers.
 success: false
 ```
 
-Defined in: electron/results.d.ts:22
+Defined in: [electron/results.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L22)
 
 Always `false` for this branch of the result union.
 
@@ -1667,7 +1659,7 @@ Always `false` for this branch of the result union.
 error: string
 ```
 
-Defined in: electron/results.d.ts:24
+Defined in: [electron/results.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L24)
 
 Human-readable error message from the main process.
 
@@ -1676,8 +1668,7 @@ Human-readable error message from the main process.
 ### ElectronLicenseCheckResult :id=electronlicensecheckresult
 
 <p class="smt-member-path"><code>electron.ElectronLicenseCheckResult</code></p>
-
-Defined in: electron/results.d.ts:35
+Defined in: [electron/results.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L35)
 
 MS Store license check result from [ElectronBridge.checkLicense](#checklicense).
 
@@ -1689,7 +1680,7 @@ MS Store license check result from [ElectronBridge.checkLicense](#checklicense).
 valid: boolean
 ```
 
-Defined in: electron/results.d.ts:37
+Defined in: [electron/results.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L37)
 
 Whether the current license is valid for play.
 
@@ -1699,7 +1690,7 @@ Whether the current license is valid for play.
 reason: string | null
 ```
 
-Defined in: electron/results.d.ts:39
+Defined in: [electron/results.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L39)
 
 Failure reason when `valid` is false; otherwise `null`.
 
@@ -1709,7 +1700,7 @@ Failure reason when `valid` is false; otherwise `null`.
 networkError: boolean
 ```
 
-Defined in: electron/results.d.ts:41
+Defined in: [electron/results.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L41)
 
 True when the check failed due to network or platform errors.
 
@@ -1719,7 +1710,7 @@ True when the check failed due to network or platform errors.
 cached: boolean
 ```
 
-Defined in: electron/results.d.ts:43
+Defined in: [electron/results.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L43)
 
 True when the result came from a cached license check.
 
@@ -1728,8 +1719,7 @@ True when the result came from a cached license check.
 ### ElectronSaveInput :id=electronsaveinput
 
 <p class="smt-member-path"><code>electron.ElectronSaveInput</code></p>
-
-Defined in: electron/results.d.ts:49
+Defined in: [electron/results.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L49)
 
 Parsed game save payload passed to [ElectronBridge.save](#save).
 
@@ -1741,7 +1731,7 @@ Parsed game save payload passed to [ElectronBridge.save](#save).
 id: string
 ```
 
-Defined in: electron/results.d.ts:51
+Defined in: [electron/results.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L51)
 
 Save slot id (sanitized filename stem).
 
@@ -1751,7 +1741,7 @@ Save slot id (sanitized filename stem).
 name: string
 ```
 
-Defined in: electron/results.d.ts:53
+Defined in: [electron/results.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L53)
 
 Display name shown in the save UI.
 
@@ -1761,7 +1751,7 @@ Display name shown in the save UI.
 data: JsonValueV1
 ```
 
-Defined in: electron/results.d.ts:55
+Defined in: [electron/results.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L55)
 
 Full serialized game state (`{ store: … }` shape).
 
@@ -1770,8 +1760,7 @@ Full serialized game state (`{ store: … }` shape).
 ### ElectronLoadSuccessResult :id=electronloadsuccessresult
 
 <p class="smt-member-path"><code>electron.ElectronLoadSuccessResult</code></p>
-
-Defined in: electron/results.d.ts:61
+Defined in: [electron/results.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L61)
 
 Successful load result from [ElectronBridge.load](#load).
 
@@ -1783,7 +1772,7 @@ Successful load result from [ElectronBridge.load](#load).
 success: true
 ```
 
-Defined in: electron/results.d.ts:63
+Defined in: [electron/results.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L63)
 
 Always `true` for this branch of the result union.
 
@@ -1793,7 +1782,7 @@ Always `true` for this branch of the result union.
 data: JsonValueV1
 ```
 
-Defined in: electron/results.d.ts:65
+Defined in: [electron/results.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L65)
 
 Parsed save body (`{ store: … }`).
 
@@ -1802,8 +1791,7 @@ Parsed save body (`{ store: … }`).
 ### ElectronLoadFailureResult :id=electronloadfailureresult
 
 <p class="smt-member-path"><code>electron.ElectronLoadFailureResult</code></p>
-
-Defined in: electron/results.d.ts:71
+Defined in: [electron/results.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L71)
 
 Failed load result from [ElectronBridge.load](#load).
 
@@ -1815,7 +1803,7 @@ Failed load result from [ElectronBridge.load](#load).
 success: false
 ```
 
-Defined in: electron/results.d.ts:73
+Defined in: [electron/results.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L73)
 
 Always `false` for this branch of the result union.
 
@@ -1825,7 +1813,7 @@ Always `false` for this branch of the result union.
 error: string
 ```
 
-Defined in: electron/results.d.ts:75
+Defined in: [electron/results.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L75)
 
 Human-readable load failure message.
 
@@ -1834,8 +1822,7 @@ Human-readable load failure message.
 ### ElectronSaveFileMetadata :id=electronsavefilemetadata
 
 <p class="smt-member-path"><code>electron.ElectronSaveFileMetadata</code></p>
-
-Defined in: electron/results.d.ts:86
+Defined in: [electron/results.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L86)
 
 Metadata parsed from the first line of one `.save` file.
 
@@ -1849,7 +1836,7 @@ Returned by [ElectronBridge.getSaveFiles](#getsavefiles).
 id: string
 ```
 
-Defined in: electron/results.d.ts:88
+Defined in: [electron/results.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L88)
 
 Save slot id (filename stem).
 
@@ -1859,7 +1846,7 @@ Save slot id (filename stem).
 name: string
 ```
 
-Defined in: electron/results.d.ts:90
+Defined in: [electron/results.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L90)
 
 Display name stored in the save header.
 
@@ -1869,7 +1856,7 @@ Display name stored in the save header.
 timestamp: string
 ```
 
-Defined in: electron/results.d.ts:92
+Defined in: [electron/results.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L92)
 
 ISO timestamp string when the save was written.
 
@@ -1879,7 +1866,7 @@ ISO timestamp string when the save was written.
 optional playTime?: number
 ```
 
-Defined in: electron/results.d.ts:94
+Defined in: [electron/results.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L94)
 
 Total play time in milliseconds from the save body.
 
@@ -1889,7 +1876,7 @@ Total play time in milliseconds from the save body.
 optional worldId?: string | null
 ```
 
-Defined in: electron/results.d.ts:96
+Defined in: [electron/results.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L96)
 
 World template id, if present.
 
@@ -1899,7 +1886,7 @@ World template id, if present.
 optional worldName?: string | null
 ```
 
-Defined in: electron/results.d.ts:98
+Defined in: [electron/results.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L98)
 
 World display name, if present.
 
@@ -1909,7 +1896,7 @@ World display name, if present.
 optional seed?: number | null
 ```
 
-Defined in: electron/results.d.ts:100
+Defined in: [electron/results.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L100)
 
 World seed, if present.
 
@@ -1919,7 +1906,7 @@ World seed, if present.
 optional productionPoints?: number
 ```
 
-Defined in: electron/results.d.ts:102
+Defined in: [electron/results.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L102)
 
 Factory production points at save time.
 
@@ -1929,7 +1916,7 @@ Factory production points at save time.
 optional structureCount?: number
 ```
 
-Defined in: electron/results.d.ts:104
+Defined in: [electron/results.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L104)
 
 Number of placed structures at save time.
 
@@ -1939,7 +1926,7 @@ Number of placed structures at save time.
 optional resources?: JsonValueV1
 ```
 
-Defined in: electron/results.d.ts:106
+Defined in: [electron/results.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L106)
 
 Resource snapshot (`gold`, `fluxite`, `artifacts`, …).
 
@@ -1948,8 +1935,7 @@ Resource snapshot (`gold`, `fluxite`, `artifacts`, …).
 ### ElectronExportSaveSuccessResult :id=electronexportsavesuccessresult
 
 <p class="smt-member-path"><code>electron.ElectronExportSaveSuccessResult</code></p>
-
-Defined in: electron/results.d.ts:112
+Defined in: [electron/results.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L112)
 
 Successful export result from [ElectronBridge.exportSave](#exportsave).
 
@@ -1961,7 +1947,7 @@ Successful export result from [ElectronBridge.exportSave](#exportsave).
 success: true
 ```
 
-Defined in: electron/results.d.ts:114
+Defined in: [electron/results.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L114)
 
 Always `true` for this branch of the result union.
 
@@ -1971,7 +1957,7 @@ Always `true` for this branch of the result union.
 data: Uint8Array
 ```
 
-Defined in: electron/results.d.ts:116
+Defined in: [electron/results.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L116)
 
 Raw `.save` file bytes (metadata line + gzip payload).
 
@@ -1980,8 +1966,7 @@ Raw `.save` file bytes (metadata line + gzip payload).
 ### ElectronImportSaveSuccessResult :id=electronimportsavesuccessresult
 
 <p class="smt-member-path"><code>electron.ElectronImportSaveSuccessResult</code></p>
-
-Defined in: electron/results.d.ts:127
+Defined in: [electron/results.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L127)
 
 Successful import result from [ElectronBridge.importSave](#importsave).
 
@@ -1993,7 +1978,7 @@ Successful import result from [ElectronBridge.importSave](#importsave).
 success: true
 ```
 
-Defined in: electron/results.d.ts:129
+Defined in: [electron/results.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L129)
 
 Always `true` for this branch of the result union.
 
@@ -2003,7 +1988,7 @@ Always `true` for this branch of the result union.
 metaData: JsonValueV1
 ```
 
-Defined in: electron/results.d.ts:131
+Defined in: [electron/results.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L131)
 
 Metadata parsed from the imported file header line.
 
@@ -2012,8 +1997,7 @@ Metadata parsed from the imported file header line.
 ### ElectronLastPlayedGame :id=electronlastplayedgame
 
 <p class="smt-member-path"><code>electron.ElectronLastPlayedGame</code></p>
-
-Defined in: electron/results.d.ts:140
+Defined in: [electron/results.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L140)
 
 Last-played save marker written by [ElectronBridge.saveLastPlayedGame](#savelastplayedgame).
 
@@ -2025,7 +2009,7 @@ Last-played save marker written by [ElectronBridge.saveLastPlayedGame](#savelast
 optional id?: string
 ```
 
-Defined in: electron/results.d.ts:142
+Defined in: [electron/results.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L142)
 
 Save slot id of the last played game.
 
@@ -2034,8 +2018,7 @@ Save slot id of the last played game.
 ### ElectronSystemInfo :id=electronsysteminfo
 
 <p class="smt-member-path"><code>electron.ElectronSystemInfo</code></p>
-
-Defined in: electron/results.d.ts:150
+Defined in: [electron/results.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L150)
 
 Local process/runtime versions from [ElectronBridge.getSystemInfo](#getsysteminfo).
 
@@ -2049,7 +2032,7 @@ Read directly in the preload script — no IPC round trip.
 platform: string
 ```
 
-Defined in: electron/results.d.ts:152
+Defined in: [electron/results.d.ts:152](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L152)
 
 Node `process.platform` (for example `linux`, `win32`).
 
@@ -2059,7 +2042,7 @@ Node `process.platform` (for example `linux`, `win32`).
 arch: string
 ```
 
-Defined in: electron/results.d.ts:154
+Defined in: [electron/results.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L154)
 
 CPU architecture string from `process.arch`.
 
@@ -2069,7 +2052,7 @@ CPU architecture string from `process.arch`.
 electronVersion: string
 ```
 
-Defined in: electron/results.d.ts:156
+Defined in: [electron/results.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L156)
 
 Electron runtime version from `process.versions.electron`.
 
@@ -2079,7 +2062,7 @@ Electron runtime version from `process.versions.electron`.
 chromeVersion: string
 ```
 
-Defined in: electron/results.d.ts:158
+Defined in: [electron/results.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L158)
 
 Chromium version from `process.versions.chrome`.
 
@@ -2089,7 +2072,7 @@ Chromium version from `process.versions.chrome`.
 nodeVersion: string
 ```
 
-Defined in: electron/results.d.ts:160
+Defined in: [electron/results.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L160)
 
 Node.js version from `process.versions.node`.
 
@@ -2098,8 +2081,7 @@ Node.js version from `process.versions.node`.
 ### ElectronLocalModsListResult :id=electronlocalmodslistresult
 
 <p class="smt-member-path"><code>electron.ElectronLocalModsListResult</code></p>
-
-Defined in: electron/results.d.ts:166
+Defined in: [electron/results.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L166)
 
 Result from [ElectronLocalModsApi.list](#list-1).
 
@@ -2111,7 +2093,7 @@ Result from [ElectronLocalModsApi.list](#list-1).
 ok: boolean
 ```
 
-Defined in: electron/results.d.ts:168
+Defined in: [electron/results.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L168)
 
 True when the listing succeeded.
 
@@ -2121,7 +2103,7 @@ True when the listing succeeded.
 data: JsonValueV1[]
 ```
 
-Defined in: electron/results.d.ts:170
+Defined in: [electron/results.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L170)
 
 Local mod summary objects when `ok` is true; otherwise `[]`.
 
@@ -2131,7 +2113,7 @@ Local mod summary objects when `ok` is true; otherwise `[]`.
 optional errorCode?: string
 ```
 
-Defined in: electron/results.d.ts:172
+Defined in: [electron/results.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L172)
 
 Error code when `ok` is false (for example `unsupported_platform`).
 
@@ -2140,8 +2122,7 @@ Error code when `ok` is false (for example `unsupported_platform`).
 ### ElectronLocalModsUploadResult :id=electronlocalmodsuploadresult
 
 <p class="smt-member-path"><code>electron.ElectronLocalModsUploadResult</code></p>
-
-Defined in: electron/results.d.ts:178
+Defined in: [electron/results.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L178)
 
 Result from [ElectronLocalModsApi.upload](#upload).
 
@@ -2153,7 +2134,7 @@ Result from [ElectronLocalModsApi.upload](#upload).
 ok: boolean
 ```
 
-Defined in: electron/results.d.ts:180
+Defined in: [electron/results.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L180)
 
 True when Workshop upload succeeded.
 
@@ -2163,7 +2144,7 @@ True when Workshop upload succeeded.
 optional errorCode?: string
 ```
 
-Defined in: electron/results.d.ts:182
+Defined in: [electron/results.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L182)
 
 Error code when `ok` is false.
 
@@ -2173,7 +2154,7 @@ Error code when `ok` is false.
 optional detail?: string
 ```
 
-Defined in: electron/results.d.ts:184
+Defined in: [electron/results.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L184)
 
 Extra failure detail logged by the main process.
 
@@ -2182,8 +2163,7 @@ Extra failure detail logged by the main process.
 ### ElectronOpenUrlResult :id=electronopenurlresult
 
 <p class="smt-member-path"><code>electron.ElectronOpenUrlResult</code></p>
-
-Defined in: electron/results.d.ts:190
+Defined in: [electron/results.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L190)
 
 Result from [ElectronBridge.openExternalBrowser](#openexternalbrowser).
 
@@ -2195,7 +2175,7 @@ Result from [ElectronBridge.openExternalBrowser](#openexternalbrowser).
 success: boolean
 ```
 
-Defined in: electron/results.d.ts:192
+Defined in: [electron/results.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L192)
 
 True when the OS opened the URL.
 
@@ -2205,7 +2185,7 @@ True when the OS opened the URL.
 optional error?: string
 ```
 
-Defined in: electron/results.d.ts:194
+Defined in: [electron/results.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L194)
 
 Failure reason (for example `unsupported-url`).
 
@@ -2214,8 +2194,7 @@ Failure reason (for example `unsupported-url`).
 ### ElectronPrimeAchievementsResult :id=electronprimeachievementsresult
 
 <p class="smt-member-path"><code>electron.ElectronPrimeAchievementsResult</code></p>
-
-Defined in: electron/results.d.ts:200
+Defined in: [electron/results.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L200)
 
 Result from [ElectronBridge.platformPrimeAchievements](#platformprimeachievements).
 
@@ -2227,7 +2206,7 @@ Result from [ElectronBridge.platformPrimeAchievements](#platformprimeachievement
 success: boolean
 ```
 
-Defined in: electron/results.d.ts:202
+Defined in: [electron/results.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L202)
 
 True when the cache seed completed.
 
@@ -2237,7 +2216,7 @@ True when the cache seed completed.
 optional error?: string
 ```
 
-Defined in: electron/results.d.ts:204
+Defined in: [electron/results.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L204)
 
 Failure message when `success` is false.
 
@@ -2246,8 +2225,7 @@ Failure message when `success` is false.
 ### ElectronReauthPromptResult :id=electronreauthpromptresult
 
 <p class="smt-member-path"><code>electron.ElectronReauthPromptResult</code></p>
-
-Defined in: electron/results.d.ts:210
+Defined in: [electron/results.d.ts:210](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L210)
 
 Result from [ElectronBridge.platformShowReauthPrompt](#platformshowreauthprompt).
 
@@ -2259,7 +2237,7 @@ Result from [ElectronBridge.platformShowReauthPrompt](#platformshowreauthprompt)
 optional response?: number
 ```
 
-Defined in: electron/results.d.ts:212
+Defined in: [electron/results.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L212)
 
 Button index chosen in the native MS Store dialog.
 
@@ -2269,7 +2247,7 @@ Button index chosen in the native MS Store dialog.
 optional dismissed?: boolean
 ```
 
-Defined in: electron/results.d.ts:214
+Defined in: [electron/results.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L214)
 
 True on Steam where no dialog is shown.
 
@@ -2278,8 +2256,7 @@ True on Steam where no dialog is shown.
 ### ElectronWorkshopApi :id=electronworkshopapi
 
 <p class="smt-member-path"><code>electron.ElectronWorkshopApi</code></p>
-
-Defined in: electron/workshop.d.ts:12
+Defined in: [electron/workshop.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L12)
 
 Steam Workshop helpers exposed as `electron.platform.workshop`.
 
@@ -2293,7 +2270,7 @@ Steam only — calls fail gracefully on MS Store.
 subscribe(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:21
+Defined in: [electron/workshop.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L21)
 
 Subscribe to a Workshop item.
 
@@ -2319,7 +2296,7 @@ IPC: `platform-workshop-subscribe`.
 unsubscribe(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:31
+Defined in: [electron/workshop.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L31)
 
 Unsubscribe from a Workshop item.
 
@@ -2345,7 +2322,7 @@ IPC: `platform-workshop-unsubscribe`.
 installInfo(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:41
+Defined in: [electron/workshop.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L41)
 
 Return install state for a subscribed Workshop item.
 
@@ -2371,7 +2348,7 @@ IPC: `platform-workshop-install-info`.
 downloadInfo(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:51
+Defined in: [electron/workshop.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L51)
 
 Return download progress for a Workshop item.
 
@@ -2397,7 +2374,7 @@ IPC: `platform-workshop-download-info`.
 getState(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:61
+Defined in: [electron/workshop.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L61)
 
 Return the Steam Workshop item state flags.
 
@@ -2423,7 +2400,7 @@ IPC: `platform-workshop-state`.
 getSubscribedItems(): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:70
+Defined in: [electron/workshop.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L70)
 
 Return all subscribed Workshop item ids.
 
@@ -2441,7 +2418,7 @@ IPC: `platform-workshop-subscribed-list`.
 getItem(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:80
+Defined in: [electron/workshop.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L80)
 
 Fetch Workshop item metadata.
 
@@ -2467,7 +2444,7 @@ IPC: `platform-workshop-get-item`.
 download(itemId: string | number, highPriority?: boolean): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:91
+Defined in: [electron/workshop.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L91)
 
 Queue or prioritize a Workshop item download.
 
@@ -2499,7 +2476,7 @@ IPC: `platform-workshop-download`.
 getSandkitMods(): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:100
+Defined in: [electron/workshop.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L100)
 
 Discover Sandkit Workshop mods installed for the current session.
 
@@ -2515,13 +2492,11 @@ IPC: `platform-workshop-sandkit-mods`.
 
 ### ElectronPlatform :id=electronplatform
 
-<p class="smt-member-path"><code>electron.ElectronPlatform</code></p>
-
 ```ts
-ElectronPlatform = "steam" | "msstore" | "gog" | string & object
+electron.ElectronPlatform = "steam" | "msstore" | "gog" | string & object
 ```
 
-Defined in: electron/primitives.d.ts:10
+Defined in: [electron/primitives.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L10)
 
 Sandustry distribution channel string.
 
@@ -2531,13 +2506,11 @@ Returned by [ElectronBridge.getPlatformSync](#getplatformsync).
 
 ### ElectronLogLevel :id=electronloglevel
 
-<p class="smt-member-path"><code>electron.ElectronLogLevel</code></p>
-
 ```ts
-ElectronLogLevel = "debug" | "info" | "warn" | "error"
+electron.ElectronLogLevel = "debug" | "info" | "warn" | "error"
 ```
 
-Defined in: electron/primitives.d.ts:17
+Defined in: [electron/primitives.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L17)
 
 Severity level written through [ElectronBridge.log](#log).
 
@@ -2547,13 +2520,11 @@ Maps to the main-process file logger (`logs/main.log`).
 
 ### ElectronIpcListener :id=electronipclistener
 
-<p class="smt-member-path"><code>electron.ElectronIpcListener</code></p>
-
 ```ts
-ElectronIpcListener = (...args: unknown[]) => void
+electron.ElectronIpcListener = (...args: unknown[]) => void
 ```
 
-Defined in: electron/primitives.d.ts:24
+Defined in: [electron/primitives.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L24)
 
 Callback registered on IPC event channels such as `app-suspend`.
 
@@ -2573,13 +2544,11 @@ Event-specific payload from the main process (often empty).
 
 ### ElectronOperationResult :id=electronoperationresult
 
-<p class="smt-member-path"><code>electron.ElectronOperationResult</code></p>
-
 ```ts
-ElectronOperationResult = ElectronSuccessResult | ElectronFailureResult
+electron.ElectronOperationResult = ElectronSuccessResult | ElectronFailureResult
 ```
 
-Defined in: electron/results.d.ts:30
+Defined in: [electron/results.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L30)
 
 Result union returned by most save, settings, and window invoke handlers.
 
@@ -2587,13 +2556,11 @@ Result union returned by most save, settings, and window invoke handlers.
 
 ### ElectronLoadResult :id=electronloadresult
 
-<p class="smt-member-path"><code>electron.ElectronLoadResult</code></p>
-
 ```ts
-ElectronLoadResult = ElectronLoadSuccessResult | ElectronLoadFailureResult
+electron.ElectronLoadResult = ElectronLoadSuccessResult | ElectronLoadFailureResult
 ```
 
-Defined in: electron/results.d.ts:79
+Defined in: [electron/results.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L79)
 
 Result from [ElectronBridge.load](#load).
 
@@ -2601,13 +2568,11 @@ Result from [ElectronBridge.load](#load).
 
 ### ElectronExportSaveResult :id=electronexportsaveresult
 
-<p class="smt-member-path"><code>electron.ElectronExportSaveResult</code></p>
-
 ```ts
-ElectronExportSaveResult = ElectronExportSaveSuccessResult | ElectronFailureResult
+electron.ElectronExportSaveResult = ElectronExportSaveSuccessResult | ElectronFailureResult
 ```
 
-Defined in: electron/results.d.ts:120
+Defined in: [electron/results.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L120)
 
 Result from [ElectronBridge.exportSave](#exportsave).
 
@@ -2615,12 +2580,10 @@ Result from [ElectronBridge.exportSave](#exportsave).
 
 ### ElectronImportSaveResult :id=electronimportsaveresult
 
-<p class="smt-member-path"><code>electron.ElectronImportSaveResult</code></p>
-
 ```ts
-ElectronImportSaveResult = ElectronImportSaveSuccessResult | ElectronFailureResult
+electron.ElectronImportSaveResult = ElectronImportSaveSuccessResult | ElectronFailureResult
 ```
 
-Defined in: electron/results.d.ts:135
+Defined in: [electron/results.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L135)
 
 Result from [ElectronBridge.importSave](#importsave).

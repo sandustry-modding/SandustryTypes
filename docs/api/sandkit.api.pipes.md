@@ -13,7 +13,6 @@ Available as `sandkit.api.pipes`.
 ### PipeVentCell :id=pipeventcell
 
 <p class="smt-member-path"><code>sandkit.api.pipes.PipeVentCell</code></p>
-
 Defined in: [sandkit/api/pipes.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L53)
 
 Connected vent cell position.
@@ -46,10 +45,8 @@ Defined in: [sandkit/api/pipes.d.ts:55](https://github.com/sandustry-modding/San
 
 ### isAtCell() :id=isatcell
 
-<p class="smt-member-path"><code>sandkit.api.pipes.isAtCell()</code></p>
-
 ```ts
-isAtCell(...args: CellCoordinates): boolean
+sandkit.api.pipes.isAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/pipes.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L19)
@@ -74,10 +71,8 @@ Return true when a pipe occupies the cell.
 
 ### isEnabledAtCell() :id=isenabledatcell
 
-<p class="smt-member-path"><code>sandkit.api.pipes.isEnabledAtCell()</code></p>
-
 ```ts
-isEnabledAtCell(...args: CellCoordinates): boolean
+sandkit.api.pipes.isEnabledAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/pipes.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L29)
@@ -102,10 +97,8 @@ Return true when pipe flow is enabled at the cell.
 
 ### getConnectedVentsAtCell() :id=getconnectedventsatcell
 
-<p class="smt-member-path"><code>sandkit.api.pipes.getConnectedVentsAtCell()</code></p>
-
 ```ts
-getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[]
+sandkit.api.pipes.getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[]
 ```
 
 Defined in: [sandkit/api/pipes.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L39)
@@ -130,10 +123,8 @@ readonly [`PipeVentCell`](#pipeventcell)[]
 
 ### setEnabledAtCell() :id=setenabledatcell
 
-<p class="smt-member-path"><code>sandkit.api.pipes.setEnabledAtCell()</code></p>
-
 ```ts
-setEnabledAtCell(...args: [number, number, boolean]): void
+sandkit.api.pipes.setEnabledAtCell(...args: [number, number, boolean]): void
 ```
 
 Defined in: [sandkit/api/pipes.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L50)

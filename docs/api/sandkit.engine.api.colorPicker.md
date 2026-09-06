@@ -60,10 +60,8 @@ Sentinel value for a random palette color.
 
 ### closePalette() :id=closepalette
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.closePalette()</code></p>
-
 ```ts
-closePalette(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.closePalette(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L23)
@@ -86,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### getActivePalette() :id=getactivepalette
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.getActivePalette()</code></p>
-
 ```ts
-getActivePalette(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.getActivePalette(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L28)
@@ -112,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### getCycleColor() :id=getcyclecolor
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.getCycleColor()</code></p>
-
 ```ts
-getCycleColor(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.getCycleColor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L33)
@@ -138,10 +132,8 @@ Game state first, then method-specific arguments.
 
 ### getRandomColor() :id=getrandomcolor
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.getRandomColor()</code></p>
-
 ```ts
-getRandomColor(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.getRandomColor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L38)
@@ -164,10 +156,8 @@ Game state first, then method-specific arguments.
 
 ### hexToRgba() :id=hextorgba
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.hexToRgba()</code></p>
-
 ```ts
-hexToRgba(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.hexToRgba(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L43)
@@ -190,10 +180,8 @@ Game state first, then method-specific arguments.
 
 ### renderColorButton() :id=rendercolorbutton
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.renderColorButton()</code></p>
-
 ```ts
-renderColorButton(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.renderColorButton(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L48)
@@ -216,10 +204,8 @@ Game state first, then method-specific arguments.
 
 ### renderColorSection() :id=rendercolorsection
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.renderColorSection()</code></p>
-
 ```ts
-renderColorSection(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.renderColorSection(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L53)
@@ -242,10 +228,8 @@ Game state first, then method-specific arguments.
 
 ### renderPalette() :id=renderpalette
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.renderPalette()</code></p>
-
 ```ts
-renderPalette(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.renderPalette(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L58)
@@ -268,10 +252,8 @@ Game state first, then method-specific arguments.
 
 ### rgbaToHex() :id=rgbatohex
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.rgbaToHex()</code></p>
-
 ```ts
-rgbaToHex(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.rgbaToHex(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L63)
@@ -294,10 +276,8 @@ Game state first, then method-specific arguments.
 
 ### setActivePalette() :id=setactivepalette
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.setActivePalette()</code></p>
-
 ```ts
-setActivePalette(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.setActivePalette(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L68)
@@ -320,10 +300,8 @@ Game state first, then method-specific arguments.
 
 ### togglePalette() :id=togglepalette
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.togglePalette()</code></p>
-
 ```ts
-togglePalette(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.togglePalette(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L73)

@@ -6,10 +6,8 @@ Controller focus and scope navigation hooks.
 
 ### useFocusable() :id=usefocusable
 
-<p class="smt-member-path"><code>sandkit.api.ui.navigation.useFocusable()</code></p>
-
 ```ts
-useFocusable<T *extends* HTMLElement = HTMLDivElement>(options: FocusOptions): Focusable<T>
+sandkit.api.ui.navigation.useFocusable<T *extends* HTMLElement = HTMLDivElement>(options: FocusOptions): Focusable<T>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:248](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L248)
@@ -50,10 +48,8 @@ const focusable = api.ui.navigation.useFocusable({
 
 ### useFocusScope() :id=usefocusscope
 
-<p class="smt-member-path"><code>sandkit.api.ui.navigation.useFocusScope()</code></p>
-
 ```ts
-useFocusScope(options: object): void
+sandkit.api.ui.navigation.useFocusScope(options: object): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:265](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L265)
@@ -104,10 +100,8 @@ api.ui.navigation.useFocusScope({
 
 ### controllerFocusClass() :id=controllerfocusclass
 
-<p class="smt-member-path"><code>sandkit.api.ui.navigation.controllerFocusClass()</code></p>
-
 ```ts
-controllerFocusClass(focused: boolean): string
+sandkit.api.ui.navigation.controllerFocusClass(focused: boolean): string
 ```
 
 Defined in: [sandkit/api/ui.d.ts:278](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L278)

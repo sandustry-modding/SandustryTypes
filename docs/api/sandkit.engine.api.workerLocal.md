@@ -11,10 +11,8 @@ Available on worker threads only. Values do not persist across workers.
 
 ### clear() :id=clear
 
-<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.clear()</code></p>
-
 ```ts
-clear(...args: unknown[]): unknown
+sandkit.engine.api.workerLocal.clear(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/workerLocal.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L14)
@@ -37,10 +35,8 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 ### get() :id=get
 
-<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.get()</code></p>
-
 ```ts
-get(...args: unknown[]): unknown
+sandkit.engine.api.workerLocal.get(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/workerLocal.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L19)
@@ -63,10 +59,8 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 ### getOrInit() :id=getorinit
 
-<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.getOrInit()</code></p>
-
 ```ts
-getOrInit(...args: unknown[]): unknown
+sandkit.engine.api.workerLocal.getOrInit(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/workerLocal.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L24)
@@ -89,10 +83,8 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 ### set() :id=set
 
-<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.set()</code></p>
-
 ```ts
-set(...args: unknown[]): unknown
+sandkit.engine.api.workerLocal.set(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/workerLocal.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L29)

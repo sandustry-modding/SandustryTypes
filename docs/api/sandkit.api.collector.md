@@ -7,10 +7,8 @@ Main thread only.
 
 ### getValueFromCellId() :id=getvaluefromcellid
 
-<p class="smt-member-path"><code>sandkit.api.collector.getValueFromCellId()</code></p>
-
 ```ts
-getValueFromCellId(cellId: CellId): number
+sandkit.api.collector.getValueFromCellId(cellId: CellId): number
 ```
 
 Defined in: [sandkit/api/collector.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L14)
@@ -33,10 +31,8 @@ Packed cell identifier.
 
 ### getValueByType() :id=getvaluebytype
 
-<p class="smt-member-path"><code>sandkit.api.collector.getValueByType()</code></p>
-
 ```ts
-getValueByType(elementType: ElementType): number
+sandkit.api.collector.getValueByType(elementType: ElementType): number
 ```
 
 Defined in: [sandkit/api/collector.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L19)
@@ -59,10 +55,8 @@ Numeric element type id.
 
 ### isCellIdCollectable() :id=iscellidcollectable
 
-<p class="smt-member-path"><code>sandkit.api.collector.isCellIdCollectable()</code></p>
-
 ```ts
-isCellIdCollectable(cellId: CellId): boolean
+sandkit.api.collector.isCellIdCollectable(cellId: CellId): boolean
 ```
 
 Defined in: [sandkit/api/collector.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L24)
@@ -85,10 +79,8 @@ Packed cell identifier.
 
 ### isCellIdCollectableForSprite() :id=iscellidcollectableforsprite
 
-<p class="smt-member-path"><code>sandkit.api.collector.isCellIdCollectableForSprite()</code></p>
-
 ```ts
-isCellIdCollectableForSprite(cellId: CellId): boolean
+sandkit.api.collector.isCellIdCollectableForSprite(cellId: CellId): boolean
 ```
 
 Defined in: [sandkit/api/collector.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L29)
@@ -111,10 +103,8 @@ Packed cell identifier.
 
 ### notifyPickupAtCell() :id=notifypickupatcell
 
-<p class="smt-member-path"><code>sandkit.api.collector.notifyPickupAtCell()</code></p>
-
 ```ts
-notifyPickupAtCell(...args: CellCoordinates): void
+sandkit.api.collector.notifyPickupAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/collector.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L35)

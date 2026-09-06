@@ -13,10 +13,8 @@ main-thread APIs.
 
 ### getIndex() :id=getindex
 
-<p class="smt-member-path"><code>sandkit.api.worker.getIndex() (worker)</code></p>
-
 ```ts
-getIndex(): number
+sandkit.api.worker.getIndex(): number
 ```
 
 Defined in: [worker/api/worker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L14)
@@ -33,10 +31,8 @@ Worker index (`0` … `getCount() - 1`).
 
 ### getCount() :id=getcount
 
-<p class="smt-member-path"><code>sandkit.api.worker.getCount() (worker)</code></p>
-
 ```ts
-getCount(): number
+sandkit.api.worker.getCount(): number
 ```
 
 Defined in: [worker/api/worker.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L19)

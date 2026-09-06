@@ -70,8 +70,6 @@ Prefer these methods over [sandkit.engine](api/sandkit.md#engine-1) when both ex
 
 ## References <!-- {docsify-ignore} -->
 
-### SandkitApi :id=sandkitapi
-
-<p class="smt-member-path"><code>sandkit.api.SandkitApi</code></p>
+### sandkit.api :id=sandkitapi
 
 Re-exports [SandkitApi](api/sandkit.md#sandkitapi)

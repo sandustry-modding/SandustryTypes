@@ -13,7 +13,6 @@ Available as `sandkit.api.game`.
 ### GameStartOptions :id=gamestartoptions
 
 <p class="smt-member-path"><code>sandkit.api.game.GameStartOptions</code></p>
-
 Defined in: [sandkit/api/game.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L24)
 
 Options for [start](#start).
@@ -34,10 +33,8 @@ When true, skip the intro sequence.
 
 ### start() :id=start
 
-<p class="smt-member-path"><code>sandkit.api.game.start()</code></p>
-
 ```ts
-start(options?: GameStartOptions): void
+sandkit.api.game.start(options?: GameStartOptions): void
 ```
 
 Defined in: [sandkit/api/game.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L21)

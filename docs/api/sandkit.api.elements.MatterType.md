@@ -12,10 +12,8 @@ Physical behaviour category for an element.
 
 ### Solid :id=solid
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Solid</code></p>
-
 ```ts
-Solid: 1
+sandkit.api.elements.MatterType.Solid: 1
 ```
 
 Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L42)
@@ -24,10 +22,8 @@ Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/S
 
 ### Liquid :id=liquid
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Liquid</code></p>
-
 ```ts
-Liquid: 2
+sandkit.api.elements.MatterType.Liquid: 2
 ```
 
 Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L43)
@@ -36,10 +32,8 @@ Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/S
 
 ### Particle :id=particle
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Particle</code></p>
-
 ```ts
-Particle: 3
+sandkit.api.elements.MatterType.Particle: 3
 ```
 
 Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L44)
@@ -48,10 +42,8 @@ Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/S
 
 ### Gas :id=gas
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Gas</code></p>
-
 ```ts
-Gas: 4
+sandkit.api.elements.MatterType.Gas: 4
 ```
 
 Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L45)
@@ -60,10 +52,8 @@ Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/S
 
 ### Static :id=static
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Static</code></p>
-
 ```ts
-Static: 5
+sandkit.api.elements.MatterType.Static: 5
 ```
 
 Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L46)
@@ -72,10 +62,8 @@ Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/S
 
 ### Slushy :id=slushy
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Slushy</code></p>
-
 ```ts
-Slushy: 6
+sandkit.api.elements.MatterType.Slushy: 6
 ```
 
 Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L47)
@@ -84,10 +72,8 @@ Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/S
 
 ### Wisp :id=wisp
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Wisp</code></p>
-
 ```ts
-Wisp: 7
+sandkit.api.elements.MatterType.Wisp: 7
 ```
 
 Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L48)
@@ -96,10 +82,8 @@ Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/S
 
 ### Powder :id=powder
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Powder</code></p>
-
 ```ts
-Powder: 8
+sandkit.api.elements.MatterType.Powder: 8
 ```
 
 Defined in: [shared/api/elements.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L49)

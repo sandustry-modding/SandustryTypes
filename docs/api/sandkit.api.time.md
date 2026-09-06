@@ -4,10 +4,8 @@
 
 ### getTimeMs() :id=gettimems
 
-<p class="smt-member-path"><code>sandkit.api.time.getTimeMs()</code></p>
-
 ```ts
-getTimeMs(): number
+sandkit.api.time.getTimeMs(): number
 ```
 
 Defined in: [sandkit/api/time.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/time.d.ts#L10)
@@ -22,10 +20,8 @@ Return elapsed game time in milliseconds.
 
 ### getTick() :id=gettick
 
-<p class="smt-member-path"><code>sandkit.api.time.getTick()</code></p>
-
 ```ts
-getTick(): number
+sandkit.api.time.getTick(): number
 ```
 
 Defined in: [sandkit/api/time.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/time.d.ts#L12)

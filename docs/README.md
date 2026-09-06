@@ -25,6 +25,7 @@ Start with the step-by-step guides:
 
 ## Browse the API
 
+- [Search](search.md) — find methods by live `sandkit` path
 - [Namespaces](modules.md) — APIs by topic group
   - [sandkit](api/sandkit.md) — root object shape
   - [Main thread](api/sandkit.api.md) — `main.js` surface (`sandkit.api`)

@@ -6,10 +6,8 @@ Overlay slot registration and updates.
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.api.ui.overlays.register()</code></p>
-
 ```ts
-register(slot: OverlaySlot, overlayId: string, render: () => ReactNode): void
+sandkit.api.ui.overlays.register(slot: OverlaySlot, overlayId: string, render: () => ReactNode): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L216)
@@ -44,10 +42,8 @@ Function that returns React content.
 
 ### unregister() :id=unregister
 
-<p class="smt-member-path"><code>sandkit.api.ui.overlays.unregister()</code></p>
-
 ```ts
-unregister(slot: OverlaySlot, overlayId: string): void
+sandkit.api.ui.overlays.unregister(slot: OverlaySlot, overlayId: string): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L223)
@@ -76,10 +72,8 @@ Overlay id passed to [register](#register).
 
 ### update() :id=update
 
-<p class="smt-member-path"><code>sandkit.api.ui.overlays.update()</code></p>
-
 ```ts
-update(slot: OverlaySlot): void
+sandkit.api.ui.overlays.update(slot: OverlaySlot): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:229](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L229)

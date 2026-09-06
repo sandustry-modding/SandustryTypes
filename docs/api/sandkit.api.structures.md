@@ -10,7 +10,6 @@
 ### StructureBuildMode :id=structurebuildmode
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBuildMode</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:567](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L567)
 
 Build mode entry for a structure definition.
@@ -52,7 +51,6 @@ Fixed span length in tiles for line-linked structures.
 ### StructureVariant :id=structurevariant
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureVariant</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:579](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L579)
 
 Rotated variant entry for a structure definition.
@@ -80,7 +78,6 @@ Defined in: [sandkit/api/structures.d.ts:581](https://github.com/sandustry-moddi
 ### StructureTooltipHover :id=structuretooltiphover
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureTooltipHover</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:612](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L612)
 
 Custom hover tooltip driven by structure `data` fields.
@@ -156,7 +153,6 @@ fields: readonly StructureTooltipHoverField[]
 ### StructureTooltipHoverField :id=structuretooltiphoverfield
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureTooltipHoverField</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:622](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L622)
 
 One interpolated field in a [StructureTooltipHover](#structuretooltiphover) message.
@@ -216,7 +212,6 @@ Defined in: [sandkit/api/structures.d.ts:628](https://github.com/sandustry-moddi
 ### StructureSpritesheet :id=structurespritesheet
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureSpritesheet</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:632](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L632)
 
 Spritesheet animation on a structure render block.
@@ -274,7 +269,6 @@ When set, frame row follows this structure `data` field.
 ### StructureRenderUi :id=structurerenderui
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRenderUi</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:641](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L641)
 
 Hotbar / build-menu UI sprite settings.
@@ -366,7 +360,6 @@ Defined in: [sandkit/api/structures.d.ts:648](https://github.com/sandustry-moddi
 ### StructureRender :id=structurerender
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRender</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:652](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L652)
 
 Render settings for a structure definition.
@@ -458,7 +451,6 @@ Defined in: [sandkit/api/structures.d.ts:659](https://github.com/sandustry-moddi
 ### SandkitStructureDefinition :id=sandkitstructuredefinition
 
 <p class="smt-member-path"><code>sandkit.api.structures.SandkitStructureDefinition</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:663](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L663)
 
 Full structure definition registered with the game.
@@ -630,7 +622,6 @@ Values interpolated into the structure description string.
 ### StructureBuildOptions :id=structurebuildoptions
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBuildOptions</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:698](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L698)
 
 Options passed to [buildAtCell](#buildatcell).
@@ -646,7 +637,6 @@ Options passed to [buildAtCell](#buildatcell).
 ### StructureRemovalOptions :id=structureremovaloptions
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRemovalOptions</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:703](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L703)
 
 Options passed to [removeAtCell](#removeatcell).
@@ -678,7 +668,6 @@ Skip visual teardown effects.
 ### StructureBulkRemovalOptions :id=structurebulkremovaloptions
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBulkRemovalOptions</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:711](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L711)
 
 Options passed to bulk structure removal helpers.
@@ -724,7 +713,6 @@ Defined in: [sandkit/api/structures.d.ts:716](https://github.com/sandustry-moddi
 ### StructureProcessingContext :id=structureprocessingcontext
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureProcessingContext</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:724](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L724)
 
 Context passed to structure processing callbacks.
@@ -863,8 +851,9 @@ Mutation writer payload accepted by the runtime.
 
 ***
 
-### ~~StructureProcessorDefinitionV1~~
+### ~~StructureProcessorDefinitionV1~~ :id=structureprocessordefinitionv1
 
+<p class="smt-member-path"><code>sandkit.api.structures.StructureProcessorDefinitionV1</code></p>
 Defined in: [sandkit/api/structures.d.ts:768](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L768)
 
 #### Deprecated
@@ -916,7 +905,6 @@ Synchronous callback invoked for each structure instance.
 ### PlacementConfigIntegerField :id=placementconfigintegerfield
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigIntegerField</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:779](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L779)
 
 Integer placement field with optional bounds.
@@ -976,7 +964,6 @@ Defined in: [sandkit/api/structures.d.ts:785](https://github.com/sandustry-moddi
 ### PlacementConfigChoiceField :id=placementconfigchoicefield
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigChoiceField</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:789](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L789)
 
 Choice placement field with labeled options.
@@ -1020,7 +1007,6 @@ Defined in: [sandkit/api/structures.d.ts:793](https://github.com/sandustry-moddi
 ### PlacementConfigDefinition :id=placementconfigdefinition
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigDefinition</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:800](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L800)
 
 Placement rule definition for a structure type.
@@ -1048,7 +1034,6 @@ Defined in: [sandkit/api/structures.d.ts:802](https://github.com/sandustry-moddi
 ### WeightedRefineryRecipeDefinitionV1 :id=weightedrefineryrecipedefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.structures.WeightedRefineryRecipeDefinitionV1</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:813](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L813)
 
 Weighted refinery recipe definition shape.
@@ -1076,7 +1061,6 @@ Defined in: [sandkit/api/structures.d.ts:815](https://github.com/sandustry-moddi
 ### StructureProcessingDefinitionV1 :id=structureprocessingdefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureProcessingDefinitionV1</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:819](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L819)
 
 Custom structure processing definition shape.
@@ -1125,10 +1109,8 @@ Defined in: [sandkit/api/structures.d.ts:822](https://github.com/sandustry-moddi
 
 ### PlacementConfigField :id=placementconfigfield
 
-<p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigField</code></p>
-
 ```ts
-PlacementConfigField = PlacementConfigIntegerField | PlacementConfigChoiceField
+sandkit.api.structures.PlacementConfigField = PlacementConfigIntegerField | PlacementConfigChoiceField
 ```
 
 Defined in: [sandkit/api/structures.d.ts:776](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L776)
@@ -1139,10 +1121,8 @@ Placement hotbar field definition.
 
 ### PlanterBoxRecipeDefinitionV1 :id=planterboxrecipedefinitionv1
 
-<p class="smt-member-path"><code>sandkit.api.structures.PlanterBoxRecipeDefinitionV1</code></p>
-
 ```ts
-PlanterBoxRecipeDefinitionV1 = PlanterBoxRecipeDefinitionV1
+sandkit.api.structures.PlanterBoxRecipeDefinitionV1 = PlanterBoxRecipeDefinitionV1
 ```
 
 Defined in: [sandkit/api/structures.d.ts:806](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L806)
@@ -1153,10 +1133,8 @@ Planter box recipe definition shape.
 
 ### ShakerRecipeDefinitionV1 :id=shakerrecipedefinitionv1
 
-<p class="smt-member-path"><code>sandkit.api.structures.ShakerRecipeDefinitionV1</code></p>
-
 ```ts
-ShakerRecipeDefinitionV1 = ShakerRecipeDefinitionV1
+sandkit.api.structures.ShakerRecipeDefinitionV1 = ShakerRecipeDefinitionV1
 ```
 
 Defined in: [sandkit/api/structures.d.ts:808](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L808)
@@ -1167,10 +1145,8 @@ Shaker recipe definition shape.
 
 ### KineticPressRecipeDefinitionV1 :id=kineticpressrecipedefinitionv1
 
-<p class="smt-member-path"><code>sandkit.api.structures.KineticPressRecipeDefinitionV1</code></p>
-
 ```ts
-KineticPressRecipeDefinitionV1 = KineticPressRecipeDefinitionV1
+sandkit.api.structures.KineticPressRecipeDefinitionV1 = KineticPressRecipeDefinitionV1
 ```
 
 Defined in: [sandkit/api/structures.d.ts:810](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L810)
@@ -1181,10 +1157,8 @@ Kinetic press recipe definition shape.
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.api.structures.register()</code></p>
-
 ```ts
-register(definition: SandkitStructureDefinition, options?: object): void
+sandkit.api.structures.register(definition: SandkitStructureDefinition, options?: object): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:152](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L152)
@@ -1247,10 +1221,8 @@ api.structures.register({
 
 ### updateDefinition() :id=updatedefinition
 
-<p class="smt-member-path"><code>sandkit.api.structures.updateDefinition()</code></p>
-
 ```ts
-updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStructureDefinition>, options?: object): void
+sandkit.api.structures.updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStructureDefinition>, options?: object): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L177)
@@ -1303,10 +1275,8 @@ api.structures.updateDefinition("exampleJunction", {
 
 ### registerVariant() :id=registervariant
 
-<p class="smt-member-path"><code>sandkit.api.structures.registerVariant()</code></p>
-
 ```ts
-registerVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
+sandkit.api.structures.registerVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:210](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L210)
@@ -1370,10 +1340,10 @@ api.structures.registerVariant(
 
 ***
 
-### ~~addVariant()~~
+### ~~addVariant()~~ :id=addvariant
 
 ```ts
-addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
+sandkit.api.structures.addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:221](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L221)
@@ -1416,10 +1386,8 @@ Use [registerVariant](#registervariant) instead.
 
 ### registerPlacementConfig() :id=registerplacementconfig
 
-<p class="smt-member-path"><code>sandkit.api.structures.registerPlacementConfig()</code></p>
-
 ```ts
-registerPlacementConfig(definition: PlacementConfigDefinition): void
+sandkit.api.structures.registerPlacementConfig(definition: PlacementConfigDefinition): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:261](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L261)
@@ -1474,10 +1442,8 @@ api.structures.registerPlacementConfig({
 
 ### getAvailableTypes() :id=getavailabletypes
 
-<p class="smt-member-path"><code>sandkit.api.structures.getAvailableTypes()</code></p>
-
 ```ts
-getAvailableTypes(): Set<StructureRef>
+sandkit.api.structures.getAvailableTypes(): Set<StructureRef>
 ```
 
 Defined in: [sandkit/api/structures.d.ts:268](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L268)
@@ -1494,10 +1460,10 @@ Return structure types available for building.
 
 ***
 
-### ~~getUnlockedTypes()~~
+### ~~getUnlockedTypes()~~ :id=getunlockedtypes
 
 ```ts
-getUnlockedTypes(): Set<StructureRef>
+sandkit.api.structures.getUnlockedTypes(): Set<StructureRef>
 ```
 
 Defined in: [sandkit/api/structures.d.ts:275](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L275)
@@ -1518,10 +1484,8 @@ Use [getAvailableTypes](#getavailabletypes) instead.
 
 ### isBlockedByPlayerAtCell() :id=isblockedbyplayeratcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.isBlockedByPlayerAtCell()</code></p>
-
 ```ts
-isBlockedByPlayerAtCell(...args: CellCoordinates): boolean
+sandkit.api.structures.isBlockedByPlayerAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:285](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L285)
@@ -1546,10 +1510,8 @@ Return true when the player blocks building at the cell.
 
 ### isLauncherAtCell() :id=islauncheratcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.isLauncherAtCell()</code></p>
-
 ```ts
-isLauncherAtCell(...args: CellCoordinates): boolean
+sandkit.api.structures.isLauncherAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:295](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L295)
@@ -1574,10 +1536,8 @@ Return true when a launcher structure is at the cell.
 
 ### isLockedByType() :id=islockedbytype
 
-<p class="smt-member-path"><code>sandkit.api.structures.isLockedByType()</code></p>
-
 ```ts
-isLockedByType(structureType: StructureRef): boolean
+sandkit.api.structures.isLockedByType(structureType: StructureRef): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L307)
@@ -1605,10 +1565,10 @@ Structure type value or string id.
 
 ***
 
-### ~~isUnlockedByType()~~
+### ~~isUnlockedByType()~~ :id=isunlockedbytype
 
 ```ts
-isUnlockedByType(structureType: StructureRef): boolean
+sandkit.api.structures.isUnlockedByType(structureType: StructureRef): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:314](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L314)
@@ -1635,10 +1595,8 @@ Use [isLockedByType](#islockedbytype) instead. Same function as [isLockedByType]
 
 ### mapValueToSpritesheetIndex() :id=mapvaluetospritesheetindex
 
-<p class="smt-member-path"><code>sandkit.api.structures.mapValueToSpritesheetIndex()</code></p>
-
 ```ts
-mapValueToSpritesheetIndex(value: number, thresholds: number[]): number
+sandkit.api.structures.mapValueToSpritesheetIndex(value: number, thresholds: number[]): number
 ```
 
 Defined in: [sandkit/api/structures.d.ts:333](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L333)
@@ -1682,10 +1640,8 @@ const index = api.structures.mapValueToSpritesheetIndex(
 
 ### buildAtCell() :id=buildatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.buildAtCell()</code></p>
-
 ```ts
-buildAtCell(...args: number, number, [StructureRef, StructureBuildOptions]): void
+sandkit.api.structures.buildAtCell(...args: number, number, [StructureRef, StructureBuildOptions]): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:345](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L345)
@@ -1708,10 +1664,10 @@ Build a structure at a cell. Main-thread writes are deferred.
 
 ***
 
-### ~~buildAtCellWhenIdle()~~
+### ~~buildAtCellWhenIdle()~~ :id=buildatcellwhenidle
 
 ```ts
-buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOptions]): void
+sandkit.api.structures.buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOptions]): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:354](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L354)
@@ -1738,10 +1694,8 @@ Use [buildAtCell](#buildatcell) instead.
 
 ### removeAtCell() :id=removeatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.removeAtCell()</code></p>
-
 ```ts
-removeAtCell(...args: number, number, [StructureRemovalOptions]): void
+sandkit.api.structures.removeAtCell(...args: number, number, [StructureRemovalOptions]): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L367)
@@ -1764,10 +1718,10 @@ Remove a structure at a cell. Main-thread writes are deferred.
 
 ***
 
-### ~~removeAtCellWhenIdle()~~
+### ~~removeAtCellWhenIdle()~~ :id=removeatcellwhenidle
 
 ```ts
-removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
+sandkit.api.structures.removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:376](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L376)
@@ -1794,10 +1748,8 @@ Use [removeAtCell](#removeatcell) instead.
 
 ### removeBetweenCells() :id=removebetweencells
 
-<p class="smt-member-path"><code>sandkit.api.structures.removeBetweenCells()</code></p>
-
 ```ts
-removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
+sandkit.api.structures.removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:391](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L391)
@@ -1846,10 +1798,10 @@ Optional bulk-removal flags.
 
 ***
 
-### ~~removeBetweenCellsWhenIdle()~~
+### ~~removeBetweenCellsWhenIdle()~~ :id=removebetweencellswhenidle
 
 ```ts
-removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
+sandkit.api.structures.removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:404](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L404)
@@ -1892,10 +1844,8 @@ Use [removeBetweenCells](#removebetweencells) instead.
 
 ### removeAtCells() :id=removeatcells
 
-<p class="smt-member-path"><code>sandkit.api.structures.removeAtCells()</code></p>
-
 ```ts
-removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void
+sandkit.api.structures.removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:428](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L428)
@@ -1935,10 +1885,10 @@ api.structures.removeAtCells([
 
 ***
 
-### ~~removeAtCellsWhenIdle()~~
+### ~~removeAtCellsWhenIdle()~~ :id=removeatcellswhenidle
 
 ```ts
-removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOptions): void
+sandkit.api.structures.removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:435](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L435)
@@ -1967,10 +1917,10 @@ Use [removeAtCells](#removeatcells) instead.
 
 ***
 
-### ~~addProcessor()~~
+### ~~addProcessor()~~ :id=addprocessor
 
 ```ts
-addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void
+sandkit.api.structures.addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:445](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L445)
@@ -2002,7 +1952,6 @@ Use [processing.register](api/sandkit.api.structures.processing.md#register) ins
 ### forEachOfType :id=foreachoftype
 
 <p class="smt-member-path"><code>sandkit.api.structures.forEachOfType</code></p>
-
 Re-exports [forEachOfType](api/sandkit.api.structures.worker.md#foreachoftype)
 
 ***
@@ -2010,7 +1959,6 @@ Re-exports [forEachOfType](api/sandkit.api.structures.worker.md#foreachoftype)
 ### getAtCell :id=getatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.getAtCell</code></p>
-
 Re-exports [getAtCell](api/sandkit.api.structures.worker.md#getatcell)
 
 ***
@@ -2018,7 +1966,6 @@ Re-exports [getAtCell](api/sandkit.api.structures.worker.md#getatcell)
 ### getDefinitionByType :id=getdefinitionbytype
 
 <p class="smt-member-path"><code>sandkit.api.structures.getDefinitionByType</code></p>
-
 Re-exports [getDefinitionByType](api/sandkit.api.structures.worker.md#getdefinitionbytype)
 
 ***
@@ -2026,7 +1973,6 @@ Re-exports [getDefinitionByType](api/sandkit.api.structures.worker.md#getdefinit
 ### getTypeById :id=gettypebyid
 
 <p class="smt-member-path"><code>sandkit.api.structures.getTypeById</code></p>
-
 Re-exports [getTypeById](api/sandkit.api.structures.worker.md#gettypebyid)
 
 ***
@@ -2034,7 +1980,6 @@ Re-exports [getTypeById](api/sandkit.api.structures.worker.md#gettypebyid)
 ### hasBuiltAtCell :id=hasbuiltatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.hasBuiltAtCell</code></p>
-
 Re-exports [hasBuiltAtCell](api/sandkit.api.structures.worker.md#hasbuiltatcell)
 
 ***
@@ -2042,7 +1987,6 @@ Re-exports [hasBuiltAtCell](api/sandkit.api.structures.worker.md#hasbuiltatcell)
 ### isType :id=istype
 
 <p class="smt-member-path"><code>sandkit.api.structures.isType</code></p>
-
 Re-exports [isType](api/sandkit.api.structures.worker.md#istype)
 
 ***
@@ -2050,7 +1994,6 @@ Re-exports [isType](api/sandkit.api.structures.worker.md#istype)
 ### isTypeAtCell :id=istypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.isTypeAtCell</code></p>
-
 Re-exports [isTypeAtCell](api/sandkit.api.structures.worker.md#istypeatcell)
 
 ***
@@ -2058,7 +2001,6 @@ Re-exports [isTypeAtCell](api/sandkit.api.structures.worker.md#istypeatcell)
 ### setSpritesheetIndex :id=setspritesheetindex
 
 <p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndex</code></p>
-
 Re-exports [setSpritesheetIndex](api/sandkit.api.structures.worker.md#setspritesheetindex)
 
 ***
@@ -2066,7 +2008,6 @@ Re-exports [setSpritesheetIndex](api/sandkit.api.structures.worker.md#setsprites
 ### setSpritesheetIndexAtCell :id=setspritesheetindexatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndexAtCell</code></p>
-
 Re-exports [setSpritesheetIndexAtCell](api/sandkit.api.structures.worker.md#setspritesheetindexatcell)
 
 ***
@@ -2074,7 +2015,6 @@ Re-exports [setSpritesheetIndexAtCell](api/sandkit.api.structures.worker.md#sets
 ### setSpritesheetIndexByValue :id=setspritesheetindexbyvalue
 
 <p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndexByValue</code></p>
-
 Re-exports [setSpritesheetIndexByValue](api/sandkit.api.structures.worker.md#setspritesheetindexbyvalue)
 
 ***
@@ -2082,7 +2022,6 @@ Re-exports [setSpritesheetIndexByValue](api/sandkit.api.structures.worker.md#set
 ### setSpritesheetIndexByValueAtCell :id=setspritesheetindexbyvalueatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndexByValueAtCell</code></p>
-
 Re-exports [setSpritesheetIndexByValueAtCell](api/sandkit.api.structures.worker.md#setspritesheetindexbyvalueatcell)
 
 ***
@@ -2090,7 +2029,6 @@ Re-exports [setSpritesheetIndexByValueAtCell](api/sandkit.api.structures.worker.
 ### update :id=update
 
 <p class="smt-member-path"><code>sandkit.api.structures.update</code></p>
-
 Re-exports [update](api/sandkit.api.structures.worker.md#update)
 
 ***
@@ -2098,7 +2036,6 @@ Re-exports [update](api/sandkit.api.structures.worker.md#update)
 ### updateData :id=updatedata
 
 <p class="smt-member-path"><code>sandkit.api.structures.updateData</code></p>
-
 Re-exports [updateData](api/sandkit.api.structures.worker.md#updatedata)
 
 ***
@@ -2106,7 +2043,6 @@ Re-exports [updateData](api/sandkit.api.structures.worker.md#updatedata)
 ### Structure :id=structure
 
 <p class="smt-member-path"><code>sandkit.api.structures.Structure</code></p>
-
 Re-exports [Structure](api/sandkit.api.structures.worker.md#structure)
 
 ***
@@ -2114,7 +2050,6 @@ Re-exports [Structure](api/sandkit.api.structures.worker.md#structure)
 ### StructureType :id=structuretype
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureType</code></p>
-
 Re-exports [StructureType](api/sandkit.api.structures.worker.md#structuretype)
 
 ***
@@ -2122,7 +2057,6 @@ Re-exports [StructureType](api/sandkit.api.structures.worker.md#structuretype)
 ### StructureId :id=structureid
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureId</code></p>
-
 Re-exports [StructureId](api/sandkit.api.structures.worker.md#structureid)
 
 ***
@@ -2130,7 +2064,6 @@ Re-exports [StructureId](api/sandkit.api.structures.worker.md#structureid)
 ### StructureRef :id=structureref
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRef</code></p>
-
 Re-exports [StructureRef](api/sandkit.api.structures.worker.md#structureref)
 
 ***
@@ -2138,7 +2071,6 @@ Re-exports [StructureRef](api/sandkit.api.structures.worker.md#structureref)
 ### getTypeFromId :id=gettypefromid
 
 <p class="smt-member-path"><code>sandkit.api.structures.getTypeFromId</code></p>
-
 Re-exports [getTypeFromId](api/sandkit.api.structures.worker.md#gettypefromid)
 
 ***
@@ -2146,5 +2078,4 @@ Re-exports [getTypeFromId](api/sandkit.api.structures.worker.md#gettypefromid)
 ### setData :id=setdata
 
 <p class="smt-member-path"><code>sandkit.api.structures.setData</code></p>
-
 Re-exports [setData](api/sandkit.api.structures.worker.md#setdata)

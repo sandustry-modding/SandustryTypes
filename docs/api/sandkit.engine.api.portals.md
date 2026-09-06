@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### getMarkers() :id=getmarkers
 
-<p class="smt-member-path"><code>sandkit.engine.api.portals.getMarkers()</code></p>
-
 ```ts
-getMarkers(...args: unknown[]): unknown
+sandkit.engine.api.portals.getMarkers(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/portals.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/portals.d.ts#L15)

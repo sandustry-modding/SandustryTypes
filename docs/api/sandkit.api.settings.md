@@ -4,10 +4,8 @@
 
 ### FieldId :id=fieldid
 
-<p class="smt-member-path"><code>sandkit.api.settings.FieldId</code></p>
-
 ```ts
-FieldId = LooseString<never>
+sandkit.api.settings.FieldId = LooseString<never>
 ```
 
 Defined in: [sandkit/api/settings.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L34)
@@ -18,10 +16,8 @@ Settings field id. Any string is allowed.
 
 ### ConfigValueV1 :id=configvaluev1
 
-<p class="smt-member-path"><code>sandkit.api.settings.ConfigValueV1</code></p>
-
 ```ts
-ConfigValueV1 = string | number | boolean | null
+sandkit.api.settings.ConfigValueV1 = string | number | boolean | null
 ```
 
 Defined in: [sandkit/api/settings.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L37)
@@ -32,10 +28,8 @@ Settings field value shape.
 
 ### get() :id=get
 
-<p class="smt-member-path"><code>sandkit.api.settings.get()</code></p>
-
 ```ts
-get(fieldId: string & object): ConfigValueV1 | undefined
+sandkit.api.settings.get(fieldId: string & object): ConfigValueV1 | undefined
 ```
 
 Defined in: [sandkit/api/settings.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L15)
@@ -58,10 +52,8 @@ Settings field identifier.
 
 ### getAll() :id=getall
 
-<p class="smt-member-path"><code>sandkit.api.settings.getAll()</code></p>
-
 ```ts
-getAll(): Readonly<Record<string, ConfigValueV1>>
+sandkit.api.settings.getAll(): Readonly<Record<string, ConfigValueV1>>
 ```
 
 Defined in: [sandkit/api/settings.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L17)
@@ -76,10 +68,8 @@ Return all settings as a read-only map.
 
 ### onChange() :id=onchange
 
-<p class="smt-member-path"><code>sandkit.api.settings.onChange()</code></p>
-
 ```ts
-onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void
+sandkit.api.settings.onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void
 ```
 
 Defined in: [sandkit/api/settings.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L29)

@@ -13,7 +13,6 @@ Main thread only.
 ### GridMutationWriter :id=gridmutationwriter
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriter</code></p>
-
 Defined in: [sandkit/api/grid.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L166)
 
 Deferred element and terrain mutations passed to [mutate](#mutate).
@@ -45,7 +44,6 @@ Terrain cell mutations inside a [mutate](#mutate) callback.
 ### GridMutationWriterElements :id=gridmutationwriterelements
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriterElements</code></p>
-
 Defined in: [sandkit/api/grid.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L174)
 
 Element writers available on [GridMutationWriter.elements](#elements).
@@ -129,7 +127,6 @@ Remove the element at a cell inside a [mutate](#mutate) callback.
 ### GridMutationWriterTerrains :id=gridmutationwriterterrains
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriterTerrains</code></p>
-
 Defined in: [sandkit/api/grid.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L224)
 
 Terrain writers available on [GridMutationWriter.terrains](#terrains).
@@ -213,7 +210,6 @@ Remove terrain at a cell inside a [mutate](#mutate) callback.
 ### GridDimensions :id=griddimensions
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridDimensions</code></p>
-
 Defined in: [shared/api/grid.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L80)
 
 World grid width and height in cells.
@@ -245,7 +241,6 @@ Grid height in cells.
 ### ExcavateOptions :id=excavateoptions
 
 <p class="smt-member-path"><code>sandkit.api.grid.ExcavateOptions</code></p>
-
 Defined in: [shared/api/grid.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L88)
 
 Flags that control how [excavateAtCell](#excavateatcell) resolves damage and drops.
@@ -326,10 +321,8 @@ Extra drill-tier damage when [fromDrill](#fromdrill) is true. Clamped to 0–100
 
 ### CellId :id=cellid
 
-<p class="smt-member-path"><code>sandkit.api.grid.CellId</code></p>
-
 ```ts
-CellId = CellId
+sandkit.api.grid.CellId = CellId
 ```
 
 Defined in: [shared/api/grid.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L77)
@@ -340,10 +333,8 @@ Packed cell id from [getCellIdAtCell](#getcellidatcell).
 
 ### mutate() :id=mutate
 
-<p class="smt-member-path"><code>sandkit.api.grid.mutate()</code></p>
-
 ```ts
-mutate(callback: (writer: GridMutationWriter) => void): void
+sandkit.api.grid.mutate(callback: (writer: GridMutationWriter) => void): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L91)
@@ -396,10 +387,8 @@ api.events.on("item:used", ({ itemId, cellX, cellY }) => {
 
 ### revealFogAtCell() :id=revealfogatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.revealFogAtCell()</code></p>
-
 ```ts
-revealFogAtCell(...args: CellCoordinates): void
+sandkit.api.grid.revealFogAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L101)
@@ -424,10 +413,8 @@ Reveal fog of war at a cell.
 
 ### redrawAroundCell() :id=redrawaroundcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.redrawAroundCell()</code></p>
-
 ```ts
-redrawAroundCell(...args: [number, number, number]): void
+sandkit.api.grid.redrawAroundCell(...args: [number, number, number]): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L112)
@@ -452,10 +439,8 @@ Request redraw around a cell.
 
 ### forEachCellInCircle() :id=foreachcellincircle
 
-<p class="smt-member-path"><code>sandkit.api.grid.forEachCellInCircle()</code></p>
-
 ```ts
-forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) => void): void
+sandkit.api.grid.forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) => void): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L124)
@@ -500,10 +485,8 @@ Invoked for each cell with `(cellX, cellY)`.
 
 ### forEachCellInRectangle() :id=foreachcellinrectangle
 
-<p class="smt-member-path"><code>sandkit.api.grid.forEachCellInRectangle()</code></p>
-
 ```ts
-forEachCellInRectangle(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
+sandkit.api.grid.forEachCellInRectangle(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L142)
@@ -526,10 +509,10 @@ Calls the callback for each cell in a rectangle.
 
 ***
 
-### ~~forEachCellInRect()~~
+### ~~forEachCellInRect()~~ :id=foreachcellinrect
 
 ```ts
-forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
+sandkit.api.grid.forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L156)
@@ -556,10 +539,8 @@ Use [forEachCellInRectangle](#foreachcellinrectangle) instead.
 
 ### getCellIdAtCell() :id=getcellidatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.getCellIdAtCell()</code></p>
-
 ```ts
-getCellIdAtCell(...args: CellCoordinates): CellId
+sandkit.api.grid.getCellIdAtCell(...args: CellCoordinates): CellId
 ```
 
 Defined in: [shared/api/grid.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L22)
@@ -586,10 +567,8 @@ Packed cell id for the cell.
 
 ### isCellEmptyAtCell() :id=iscellemptyatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.isCellEmptyAtCell()</code></p>
-
 ```ts
-isCellEmptyAtCell(...args: CellCoordinates): boolean
+sandkit.api.grid.isCellEmptyAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/grid.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L32)
@@ -614,10 +593,8 @@ Return true when the cell has no element or terrain content.
 
 ### isTerrainAtCell() :id=isterrainatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.isTerrainAtCell()</code></p>
-
 ```ts
-isTerrainAtCell(...args: CellCoordinates): boolean
+sandkit.api.grid.isTerrainAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/grid.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L42)
@@ -642,10 +619,8 @@ Return true when the cell holds terrain (not an element).
 
 ### reportActivityAtCell() :id=reportactivityatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.reportActivityAtCell()</code></p>
-
 ```ts
-reportActivityAtCell(...args: CellCoordinates): void
+sandkit.api.grid.reportActivityAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [shared/api/grid.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L52)
@@ -670,10 +645,8 @@ Mark the cell active for simulation this tick.
 
 ### excavateAtCell() :id=excavateatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.excavateAtCell()</code></p>
-
 ```ts
-excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): void
+sandkit.api.grid.excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): void
 ```
 
 Defined in: [shared/api/grid.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L65)
@@ -698,10 +671,8 @@ Apply excavation damage and eject velocity at a cell.
 
 ### getDimensions() :id=getdimensions
 
-<p class="smt-member-path"><code>sandkit.api.grid.getDimensions()</code></p>
-
 ```ts
-getDimensions(): GridDimensions
+sandkit.api.grid.getDimensions(): GridDimensions
 ```
 
 Defined in: [shared/api/grid.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L74)

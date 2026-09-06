@@ -8,7 +8,6 @@ Main thread only.
 ### ItemDefinition :id=itemdefinition
 
 <p class="smt-member-path"><code>sandkit.api.items.ItemDefinition</code></p>
-
 Defined in: [sandkit/api/items.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L10)
 
 Definition for a mod-registered inventory item.
@@ -79,10 +78,8 @@ Called after the item is rendered each frame.
 
 ### ItemId :id=itemid
 
-<p class="smt-member-path"><code>sandkit.api.items.ItemId</code></p>
-
 ```ts
-ItemId = ItemId | LooseString<never>
+sandkit.api.items.ItemId = ItemId | LooseString<never>
 ```
 
 Defined in: [sandkit/api/items.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L59)
@@ -94,10 +91,8 @@ Built-in [ItemIdEnum](api/sandkit.enums.ItemId.md) values autocomplete; custom s
 
 ### ItemType :id=itemtype
 
-<p class="smt-member-path"><code>sandkit.api.items.ItemType</code></p>
-
 ```ts
-ItemType = ItemType | TaggedNumber<"itemType">
+sandkit.api.items.ItemType = ItemType | TaggedNumber<"itemType">
 ```
 
 Defined in: [sandkit/api/items.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L64)
@@ -109,10 +104,8 @@ Built-in [ItemTypeEnum](api/sandkit.enums.ItemType.md) values autocomplete.
 
 ### ModItem :id=moditem
 
-<p class="smt-member-path"><code>sandkit.api.items.ModItem</code></p>
-
 ```ts
-ModItem = unknown
+sandkit.api.items.ModItem = unknown
 ```
 
 Defined in: [sandkit/api/items.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L66)
@@ -123,10 +116,8 @@ Runtime item instance (not yet typed in declarations).
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.api.items.register()</code></p>
-
 ```ts
-register(definition: ItemDefinition): void
+sandkit.api.items.register(definition: ItemDefinition): void
 ```
 
 Defined in: [sandkit/api/items.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L22)
@@ -149,10 +140,8 @@ Item id, handlers, and display metadata.
 
 ### updateDefinition() :id=updatedefinition
 
-<p class="smt-member-path"><code>sandkit.api.items.updateDefinition()</code></p>
-
 ```ts
-updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
+sandkit.api.items.updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
 ```
 
 Defined in: [sandkit/api/items.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L35)
@@ -189,10 +178,8 @@ api.items.updateDefinition("exampleTool", {
 
 ### getDefinitionById() :id=getdefinitionbyid
 
-<p class="smt-member-path"><code>sandkit.api.items.getDefinitionById()</code></p>
-
 ```ts
-getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
+sandkit.api.items.getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 ```
 
 Defined in: [sandkit/api/items.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L40)
@@ -215,10 +202,8 @@ Registered item id.
 
 ### createFromId() :id=createfromid
 
-<p class="smt-member-path"><code>sandkit.api.items.createFromId()</code></p>
-
 ```ts
-createFromId(itemId: ItemId): unknown
+sandkit.api.items.createFromId(itemId: ItemId): unknown
 ```
 
 Defined in: [sandkit/api/items.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L45)
@@ -241,10 +226,8 @@ Registered item id.
 
 ### getActive() :id=getactive
 
-<p class="smt-member-path"><code>sandkit.api.items.getActive()</code></p>
-
 ```ts
-getActive(): ItemDefinition<unknown, unknown> | undefined
+sandkit.api.items.getActive(): ItemDefinition<unknown, unknown> | undefined
 ```
 
 Defined in: [sandkit/api/items.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L47)
@@ -259,10 +242,8 @@ Returns the item definition for the active hotbar slot.
 
 ### isActiveById() :id=isactivebyid
 
-<p class="smt-member-path"><code>sandkit.api.items.isActiveById()</code></p>
-
 ```ts
-isActiveById(itemId: ItemId, itemType?: ItemType): boolean
+sandkit.api.items.isActiveById(itemId: ItemId, itemType?: ItemType): boolean
 ```
 
 Defined in: [sandkit/api/items.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L53)

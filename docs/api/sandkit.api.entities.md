@@ -13,7 +13,6 @@ Available as `sandkit.api.entities`.
 ### Entity :id=entity
 
 <p class="smt-member-path"><code>sandkit.api.entities.Entity</code></p>
-
 Defined in: [sandkit/api/entities.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L78)
 
 Active entity instance in the world.
@@ -70,10 +69,8 @@ Defined in: [sandkit/api/entities.d.ts:83](https://github.com/sandustry-modding/
 
 ### getById() :id=getbyid
 
-<p class="smt-member-path"><code>sandkit.api.entities.getById()</code></p>
-
 ```ts
-getById(entityId: number): Entity | undefined
+sandkit.api.entities.getById(entityId: number): Entity | undefined
 ```
 
 Defined in: [sandkit/api/entities.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L16)
@@ -100,10 +97,8 @@ Runtime entity id.
 
 ### getAllByType() :id=getallbytype
 
-<p class="smt-member-path"><code>sandkit.api.entities.getAllByType()</code></p>
-
 ```ts
-getAllByType(entityTypeId: string): Entity[]
+sandkit.api.entities.getAllByType(entityTypeId: string): Entity[]
 ```
 
 Defined in: [sandkit/api/entities.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L25)
@@ -130,10 +125,8 @@ Registered entity type string id.
 
 ### spawnAtWorld() :id=spawnatworld
 
-<p class="smt-member-path"><code>sandkit.api.entities.spawnAtWorld()</code></p>
-
 ```ts
-spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
+sandkit.api.entities.spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
 ```
 
 Defined in: [sandkit/api/entities.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L37)
@@ -174,10 +167,8 @@ The spawned entity instance.
 
 ### remove() :id=remove
 
-<p class="smt-member-path"><code>sandkit.api.entities.remove()</code></p>
-
 ```ts
-remove(entityId: number): void
+sandkit.api.entities.remove(entityId: number): void
 ```
 
 Defined in: [sandkit/api/entities.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L46)
@@ -204,10 +195,8 @@ Runtime entity id.
 
 ### launch() :id=launch
 
-<p class="smt-member-path"><code>sandkit.api.entities.launch()</code></p>
-
 ```ts
-launch(entityId: number, angleRadians: number, speed?: number): void
+sandkit.api.entities.launch(entityId: number, angleRadians: number, speed?: number): void
 ```
 
 Defined in: [sandkit/api/entities.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L57)
@@ -246,10 +235,8 @@ Optional launch speed.
 
 ### startCapture() :id=startcapture
 
-<p class="smt-member-path"><code>sandkit.api.entities.startCapture()</code></p>
-
 ```ts
-startCapture(entityId: number): void
+sandkit.api.entities.startCapture(entityId: number): void
 ```
 
 Defined in: [sandkit/api/entities.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L66)
@@ -276,10 +263,8 @@ Runtime entity id.
 
 ### collect() :id=collect
 
-<p class="smt-member-path"><code>sandkit.api.entities.collect()</code></p>
-
 ```ts
-collect(entityId: number): void
+sandkit.api.entities.collect(entityId: number): void
 ```
 
 Defined in: [sandkit/api/entities.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L75)

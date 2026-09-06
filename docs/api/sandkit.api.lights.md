@@ -13,7 +13,6 @@ Main thread only.
 ### TemporaryLightHandle :id=temporarylighthandle
 
 <p class="smt-member-path"><code>sandkit.api.lights.TemporaryLightHandle</code></p>
-
 Defined in: [sandkit/api/lights.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L129)
 
 Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createatworld).
@@ -51,7 +50,6 @@ Use [lightId](#lightid) instead.
 ### PersistentLightOptions :id=persistentlightoptions
 
 <p class="smt-member-path"><code>sandkit.api.lights.PersistentLightOptions</code></p>
-
 Defined in: [sandkit/api/lights.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L144)
 
 Options for persistent world lights.
@@ -98,10 +96,8 @@ RGBA color components.
 
 ### TemporaryLightOptions :id=temporarylightoptions
 
-<p class="smt-member-path"><code>sandkit.api.lights.TemporaryLightOptions</code></p>
-
 ```ts
-TemporaryLightOptions = TemporaryLightOptions
+sandkit.api.lights.TemporaryLightOptions = TemporaryLightOptions
 ```
 
 Defined in: [sandkit/api/lights.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L141)
@@ -112,10 +108,8 @@ Options for temporary lights.
 
 ### PersistentLightHandle :id=persistentlighthandle
 
-<p class="smt-member-path"><code>sandkit.api.lights.PersistentLightHandle</code></p>
-
 ```ts
-PersistentLightHandle = unknown
+sandkit.api.lights.PersistentLightHandle = unknown
 ```
 
 Defined in: [sandkit/api/lights.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L155)
@@ -127,5 +121,4 @@ Handle returned from [persistent.createAtWorld](api/sandkit.api.lights.persisten
 ### vfx :id=vfx
 
 <p class="smt-member-path"><code>sandkit.api.lights.vfx</code></p>
-
 Renames and re-exports [temporary](api/sandkit.api.lights.temporary.md)

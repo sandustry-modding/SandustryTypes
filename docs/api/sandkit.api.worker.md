@@ -27,9 +27,7 @@ See [sandkit.api](api/sandkit.md#api-1) for the main-thread public API.
 
 ## Type Aliases <!-- {docsify-ignore} -->
 
-### WorkerSandkitApi :id=workersandkitapi
-
-<p class="smt-member-path"><code>sandkit.api.WorkerSandkitApi (worker)</code></p>
+### sandkit.api (worker) :id=workersandkitapi
 
 ```ts
 WorkerSandkitApi = object
@@ -232,7 +230,6 @@ Use [grid](api/sandkit.api.grid.worker.md) instead.
 ### collector :id=collector
 
 <p class="smt-member-path"><code>sandkit.api.collector (worker)</code></p>
-
 Re-exports [collector](api/sandkit.api.collector.md)
 
 ***
@@ -240,7 +237,6 @@ Re-exports [collector](api/sandkit.api.collector.md)
 ### constants :id=constants
 
 <p class="smt-member-path"><code>sandkit.api.constants (worker)</code></p>
-
 Re-exports [constants](api/sandkit.api.constants.md)
 
 ***
@@ -248,7 +244,6 @@ Re-exports [constants](api/sandkit.api.constants.md)
 ### patterns :id=patterns
 
 <p class="smt-member-path"><code>sandkit.api.patterns (worker)</code></p>
-
 Re-exports [patterns](api/sandkit.api.patterns.md)
 
 ***
@@ -256,7 +251,6 @@ Re-exports [patterns](api/sandkit.api.patterns.md)
 ### random :id=random
 
 <p class="smt-member-path"><code>sandkit.api.random (worker)</code></p>
-
 Re-exports [random](api/sandkit.api.random.md)
 
 ***
@@ -264,5 +258,4 @@ Re-exports [random](api/sandkit.api.random.md)
 ### utils :id=utils
 
 <p class="smt-member-path"><code>sandkit.api.utils (worker)</code></p>
-
 Re-exports [utils](api/sandkit.api.utils.md)

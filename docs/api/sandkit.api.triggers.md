@@ -5,7 +5,6 @@
 ### MainTriggerDefinition :id=maintriggerdefinition
 
 <p class="smt-member-path"><code>sandkit.api.triggers.MainTriggerDefinition</code></p>
-
 Defined in: [sandkit/api/triggers.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L27)
 
 Main-thread trigger definition shape.
@@ -46,10 +45,8 @@ Called each time the trigger fires.
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.api.triggers.register()</code></p>
-
 ```ts
-register(triggerId: string, definition: MainTriggerDefinition): void
+sandkit.api.triggers.register(triggerId: string, definition: MainTriggerDefinition): void
 ```
 
 Defined in: [sandkit/api/triggers.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L24)

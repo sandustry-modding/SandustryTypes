@@ -8,10 +8,8 @@ Autonomous drone kinds.
 
 ### Digger :id=digger
 
-<p class="smt-member-path"><code>sandkit.enums.DroneType.Digger</code></p>
-
 ```ts
-Digger: 1
+sandkit.enums.DroneType.Digger: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L124)
@@ -20,10 +18,8 @@ Defined in: [sandkit/enums/index.d.ts:124](https://github.com/sandustry-modding/
 
 ### Hauler :id=hauler
 
-<p class="smt-member-path"><code>sandkit.enums.DroneType.Hauler</code></p>
-
 ```ts
-Hauler: 2
+sandkit.enums.DroneType.Hauler: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L125)

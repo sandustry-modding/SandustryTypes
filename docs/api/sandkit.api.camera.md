@@ -7,10 +7,8 @@ Main thread only.
 
 ### snapToPlayer() :id=snaptoplayer
 
-<p class="smt-member-path"><code>sandkit.api.camera.snapToPlayer()</code></p>
-
 ```ts
-snapToPlayer(): void
+sandkit.api.camera.snapToPlayer(): void
 ```
 
 Defined in: [sandkit/api/camera.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L7)
@@ -25,10 +23,8 @@ Snap the camera to the player position.
 
 ### setFocusAtWorld() :id=setfocusatworld
 
-<p class="smt-member-path"><code>sandkit.api.camera.setFocusAtWorld()</code></p>
-
 ```ts
-setFocusAtWorld(worldX: number, worldY: number): boolean
+sandkit.api.camera.setFocusAtWorld(worldX: number, worldY: number): boolean
 ```
 
 Defined in: [sandkit/api/camera.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L15)
@@ -59,10 +55,8 @@ True when focus was applied.
 
 ### releaseFocus() :id=releasefocus
 
-<p class="smt-member-path"><code>sandkit.api.camera.releaseFocus()</code></p>
-
 ```ts
-releaseFocus(options?: object): boolean
+sandkit.api.camera.releaseFocus(options?: object): boolean
 ```
 
 Defined in: [sandkit/api/camera.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L27)

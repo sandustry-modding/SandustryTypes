@@ -8,7 +8,6 @@ Main thread only. The `events` object is frozen; do not replace `on` or `emit`.
 ### PlayerCollisionPreparePayload :id=playercollisionpreparepayload
 
 <p class="smt-member-path"><code>sandkit.api.events.PlayerCollisionPreparePayload</code></p>
-
 Defined in: [sandkit/api/events.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L177)
 
 Mutable payload for `player:collision:prepare`.
@@ -51,7 +50,6 @@ Max cells the player can step up when blocked horizontally (1–8).
 ### EventPayloadMap :id=eventpayloadmap
 
 <p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap</code></p>
-
 Defined in: [sandkit/api/events.d.ts:187](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L187)
 
 Known event payloads. Unlisted ids still use `unknown`.
@@ -584,10 +582,8 @@ optional state?: unknown
 
 ### EventId :id=eventid
 
-<p class="smt-member-path"><code>sandkit.api.events.EventId</code></p>
-
 ```ts
-EventId = LooseString<keyof EventPayloadMap>
+sandkit.api.events.EventId = LooseString<keyof EventPayloadMap>
 ```
 
 Defined in: [sandkit/api/events.d.ts:287](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L287)
@@ -598,10 +594,8 @@ Known event names plus any custom string id.
 
 ### EventPayload :id=eventpayload
 
-<p class="smt-member-path"><code>sandkit.api.events.EventPayload</code></p>
-
 ```ts
-EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
+sandkit.api.events.EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
 ```
 
 Defined in: [sandkit/api/events.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L290)
@@ -618,10 +612,8 @@ Event payload type for a given event id.
 
 ### on() :id=on
 
-<p class="smt-member-path"><code>sandkit.api.events.on()</code></p>
-
 ```ts
-on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void
+sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void
 ```
 
 Defined in: [sandkit/api/events.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L158)
@@ -824,10 +816,8 @@ api.events.on("resource:collected", (payload) => {
 
 ### emit() :id=emit
 
-<p class="smt-member-path"><code>sandkit.api.events.emit()</code></p>
-
 ```ts
-emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>): void
+sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>): void
 ```
 
 Defined in: [sandkit/api/events.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L171)

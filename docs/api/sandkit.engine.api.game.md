@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### load() :id=load
 
-<p class="smt-member-path"><code>sandkit.engine.api.game.load()</code></p>
-
 ```ts
-load(...args: unknown[]): unknown
+sandkit.engine.api.game.load(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/game.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### save() :id=save
 
-<p class="smt-member-path"><code>sandkit.engine.api.game.save()</code></p>
-
 ```ts
-save(...args: unknown[]): unknown
+sandkit.engine.api.game.save(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/game.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### start() :id=start
 
-<p class="smt-member-path"><code>sandkit.engine.api.game.start()</code></p>
-
 ```ts
-start(...args: unknown[]): unknown
+sandkit.engine.api.game.start(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/game.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L25)

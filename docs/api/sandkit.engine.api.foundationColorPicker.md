@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### getColor() :id=getcolor
 
-<p class="smt-member-path"><code>sandkit.engine.api.foundationColorPicker.getColor()</code></p>
-
 ```ts
-getColor(...args: unknown[]): unknown
+sandkit.engine.api.foundationColorPicker.getColor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/foundationColorPicker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foundationColorPicker.d.ts#L15)

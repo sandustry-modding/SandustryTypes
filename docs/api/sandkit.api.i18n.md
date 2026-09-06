@@ -8,7 +8,6 @@ Main thread only.
 ### I18nNumberFormatOptions :id=i18nnumberformatoptions
 
 <p class="smt-member-path"><code>sandkit.api.i18n.I18nNumberFormatOptions</code></p>
-
 Defined in: [sandkit/api/i18n.d.ts:227](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L227)
 
 Number format options for [formatNumber](#formatnumber).
@@ -55,10 +54,8 @@ When true, use grouping separators.
 
 ### Locale :id=locale
 
-<p class="smt-member-path"><code>sandkit.api.i18n.Locale</code></p>
-
 ```ts
-Locale = LooseString<"en">
+sandkit.api.i18n.Locale = LooseString<"en">
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L224)
@@ -69,10 +66,8 @@ Locale code. `"en"` autocompletes; any locale string is allowed.
 
 ### t() :id=t
 
-<p class="smt-member-path"><code>sandkit.api.i18n.t()</code></p>
-
 ```ts
-t(key: string, params?: Record<string, string | number>): string
+sandkit.api.i18n.t(key: string, params?: Record<string, string | number>): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L23)
@@ -113,10 +108,8 @@ const message = api.i18n.t("mods|example|count", {
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.api.i18n.register()</code></p>
-
 ```ts
-register(locale: Locale, translations: Record<string, string>): void
+sandkit.api.i18n.register(locale: Locale, translations: Record<string, string>): void
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L40)
@@ -157,10 +150,8 @@ api.i18n.register("en", {
 
 ### getLocale() :id=getlocale
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getLocale()</code></p>
-
 ```ts
-getLocale(): Locale
+sandkit.api.i18n.getLocale(): Locale
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L47)
@@ -179,10 +170,8 @@ Returns the active locale code.
 
 ### hasTranslation() :id=hastranslation
 
-<p class="smt-member-path"><code>sandkit.api.i18n.hasTranslation()</code></p>
-
 ```ts
-hasTranslation(key: string, locale?: Locale): boolean
+sandkit.api.i18n.hasTranslation(key: string, locale?: Locale): boolean
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L57)
@@ -215,10 +204,8 @@ Optional locale; defaults to the active locale.
 
 ### setLocale() :id=setlocale
 
-<p class="smt-member-path"><code>sandkit.api.i18n.setLocale()</code></p>
-
 ```ts
-setLocale(locale: Locale): Promise<void>
+sandkit.api.i18n.setLocale(locale: Locale): Promise<void>
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L66)
@@ -245,10 +232,8 @@ Locale code to activate.
 
 ### getLanguages() :id=getlanguages
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getLanguages()</code></p>
-
 ```ts
-getLanguages(): object[]
+sandkit.api.i18n.getLanguages(): object[]
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L73)
@@ -267,10 +252,8 @@ Returns metadata for all known languages.
 
 ### getAvailableLocales() :id=getavailablelocales
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getAvailableLocales()</code></p>
-
 ```ts
-getAvailableLocales(): Locale[]
+sandkit.api.i18n.getAvailableLocales(): Locale[]
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L85)
@@ -289,10 +272,8 @@ Returns locale codes that have registered translations.
 
 ### formatNumber() :id=formatnumber
 
-<p class="smt-member-path"><code>sandkit.api.i18n.formatNumber()</code></p>
-
 ```ts
-formatNumber(value: number, options?: I18nNumberFormatOptions): string
+sandkit.api.i18n.formatNumber(value: number, options?: I18nNumberFormatOptions): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L102)
@@ -333,10 +314,8 @@ const formatted = api.i18n.formatNumber(1234.5, {
 
 ### joinKey() :id=joinkey
 
-<p class="smt-member-path"><code>sandkit.api.i18n.joinKey()</code></p>
-
 ```ts
-joinKey(...parts: string[]): string
+sandkit.api.i18n.joinKey(...parts: string[]): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L111)
@@ -361,10 +340,10 @@ Key segments joined with `.`.
 
 ***
 
-### ~~key()~~
+### ~~key()~~ :id=key
 
 ```ts
-key(...parts: string[]): string
+sandkit.api.i18n.key(...parts: string[]): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L118)
@@ -391,10 +370,8 @@ Use [joinKey](#joinkey) instead.
 
 ### getName() :id=getname
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getName()</code></p>
-
 ```ts
-getName(definition: object): string
+sandkit.api.i18n.getName(definition: object): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L135)
@@ -436,10 +413,8 @@ const name = api.i18n.getName({
 
 ### getDescription() :id=getdescription
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getDescription()</code></p>
-
 ```ts
-getDescription(definition: object): string
+sandkit.api.i18n.getDescription(definition: object): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L144)
@@ -472,10 +447,8 @@ Object with `descriptionKey` or `description`.
 
 ### createTranslatable() :id=createtranslatable
 
-<p class="smt-member-path"><code>sandkit.api.i18n.createTranslatable()</code></p>
-
 ```ts
-createTranslatable(key: string, fallback: string): object
+sandkit.api.i18n.createTranslatable(key: string, fallback: string): object
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L157)
@@ -524,10 +497,10 @@ fallback: string
 
 ***
 
-### ~~translatable()~~
+### ~~translatable()~~ :id=translatable
 
 ```ts
-translatable(key: string, fallback: string): object
+sandkit.api.i18n.translatable(key: string, fallback: string): object
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L167)
@@ -576,10 +549,8 @@ Use [createTranslatable](#createtranslatable) instead.
 
 ### setGlobal() :id=setglobal
 
-<p class="smt-member-path"><code>sandkit.api.i18n.setGlobal()</code></p>
-
 ```ts
-setGlobal(key: string, value: string | (() => string)): void
+sandkit.api.i18n.setGlobal(key: string, value: string | (() => string)): void
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L180)
@@ -612,10 +583,8 @@ Static string or function that returns the current value.
 
 ### getGlobal() :id=getglobal
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getGlobal()</code></p>
-
 ```ts
-getGlobal(key: string): string | undefined
+sandkit.api.i18n.getGlobal(key: string): string | undefined
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L189)
@@ -642,10 +611,8 @@ Global helper key.
 
 ### removeGlobal() :id=removeglobal
 
-<p class="smt-member-path"><code>sandkit.api.i18n.removeGlobal()</code></p>
-
 ```ts
-removeGlobal(key: string): void
+sandkit.api.i18n.removeGlobal(key: string): void
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:198](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L198)
@@ -670,10 +637,10 @@ Global helper key.
 
 ***
 
-### ~~clearGlobal()~~
+### ~~clearGlobal()~~ :id=clearglobal
 
 ```ts
-clearGlobal(key: string): void
+sandkit.api.i18n.clearGlobal(key: string): void
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L205)
@@ -700,10 +667,8 @@ Use [removeGlobal](#removeglobal) instead.
 
 ### getGlobals() :id=getglobals
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getGlobals()</code></p>
-
 ```ts
-getGlobals(): Record<string, string>
+sandkit.api.i18n.getGlobals(): Record<string, string>
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L212)
@@ -722,10 +687,8 @@ Returns all global translation helper values.
 
 ### formatKeyForDisplay() :id=formatkeyfordisplay
 
-<p class="smt-member-path"><code>sandkit.api.i18n.formatKeyForDisplay()</code></p>
-
 ```ts
-formatKeyForDisplay(keyCode: string): string
+sandkit.api.i18n.formatKeyForDisplay(keyCode: string): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:221](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L221)

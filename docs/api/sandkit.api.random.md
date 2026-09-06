@@ -4,10 +4,8 @@
 
 ### int() :id=int
 
-<p class="smt-member-path"><code>sandkit.api.random.int()</code></p>
-
 ```ts
-int(min: number, max: number): number
+sandkit.api.random.int(min: number, max: number): number
 ```
 
 Defined in: [sandkit/api/random.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/random.d.ts#L14)
@@ -36,10 +34,8 @@ Maximum value (inclusive).
 
 ### float() :id=float
 
-<p class="smt-member-path"><code>sandkit.api.random.float()</code></p>
-
 ```ts
-float(min: number, max: number): number
+sandkit.api.random.float(min: number, max: number): number
 ```
 
 Defined in: [sandkit/api/random.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/random.d.ts#L20)

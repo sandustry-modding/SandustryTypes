@@ -11,10 +11,8 @@ Main thread only.
 
 ### canBurnElementAtCell() :id=canburnelementatcell
 
-<p class="smt-member-path"><code>sandkit.api.fire.canBurnElementAtCell()</code></p>
-
 ```ts
-canBurnElementAtCell(...args: CellCoordinates): boolean
+sandkit.api.fire.canBurnElementAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/fire.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L18)
@@ -39,10 +37,8 @@ Returns true when the element at the cell can burn.
 
 ### burnElementAtCell() :id=burnelementatcell
 
-<p class="smt-member-path"><code>sandkit.api.fire.burnElementAtCell()</code></p>
-
 ```ts
-burnElementAtCell(...args: CellCoordinates): void
+sandkit.api.fire.burnElementAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/fire.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L28)
@@ -65,10 +61,10 @@ Burn the element at the cell. Main-entry writes are deferred; reads see the old 
 
 ***
 
-### ~~burnElementAtCellWhenIdle()~~
+### ~~burnElementAtCellWhenIdle()~~ :id=burnelementatcellwhenidle
 
 ```ts
-burnElementAtCellWhenIdle(...args: CellCoordinates): void
+sandkit.api.fire.burnElementAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/fire.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L35)

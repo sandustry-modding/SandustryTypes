@@ -13,7 +13,6 @@ Available as `sandkit.api.blueprints`.
 ### BlueprintStructure :id=blueprintstructure
 
 <p class="smt-member-path"><code>sandkit.api.blueprints.BlueprintStructure</code></p>
-
 Defined in: [sandkit/api/blueprints.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L34)
 
 Serialized structure entry used in blueprints.
@@ -46,10 +45,8 @@ Defined in: [sandkit/api/blueprints.d.ts:36](https://github.com/sandustry-moddin
 
 ### serializeStructures() :id=serializestructures
 
-<p class="smt-member-path"><code>sandkit.api.blueprints.serializeStructures()</code></p>
-
 ```ts
-serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
+sandkit.api.blueprints.serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
 ```
 
 Defined in: [sandkit/api/blueprints.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L18)
@@ -76,10 +73,8 @@ Structure instances to encode.
 
 ### localizeStructures() :id=localizestructures
 
-<p class="smt-member-path"><code>sandkit.api.blueprints.localizeStructures()</code></p>
-
 ```ts
-localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]
+sandkit.api.blueprints.localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]
 ```
 
 Defined in: [sandkit/api/blueprints.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L29)

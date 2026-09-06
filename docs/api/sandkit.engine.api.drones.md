@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### kill() :id=kill
 
-<p class="smt-member-path"><code>sandkit.engine.api.drones.kill()</code></p>
-
 ```ts
-kill(...args: unknown[]): unknown
+sandkit.engine.api.drones.kill(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/drones.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/drones.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### spawn() :id=spawn
 
-<p class="smt-member-path"><code>sandkit.engine.api.drones.spawn()</code></p>
-
 ```ts
-spawn(...args: unknown[]): unknown
+sandkit.engine.api.drones.spawn(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/drones.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/drones.d.ts#L20)

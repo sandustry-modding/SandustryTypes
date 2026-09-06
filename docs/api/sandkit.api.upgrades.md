@@ -5,7 +5,6 @@
 ### UpgradeDefinition :id=upgradedefinition
 
 <p class="smt-member-path"><code>sandkit.api.upgrades.UpgradeDefinition</code></p>
-
 Defined in: [sandkit/api/upgrades.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L54)
 
 Upgrade definition registered for an item.
@@ -91,7 +90,6 @@ optional oneOff?: boolean
 ### UpgradeCategoryDefinition :id=upgradecategorydefinition
 
 <p class="smt-member-path"><code>sandkit.api.upgrades.UpgradeCategoryDefinition</code></p>
-
 Defined in: [sandkit/api/upgrades.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L70)
 
 Upgrade category definition shape.
@@ -128,10 +126,8 @@ Display name translation key.
 
 ### registerCategory() :id=registercategory
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.registerCategory()</code></p>
-
 ```ts
-registerCategory(definition: UpgradeCategoryDefinition): void
+sandkit.api.upgrades.registerCategory(definition: UpgradeCategoryDefinition): void
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L13)
@@ -154,10 +150,8 @@ Category id and display metadata.
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.register()</code></p>
-
 ```ts
-register(definition: UpgradeDefinition): void
+sandkit.api.upgrades.register(definition: UpgradeDefinition): void
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L18)
@@ -180,10 +174,8 @@ Item id, upgrade id, costs, and level metadata.
 
 ### updateDefinition() :id=updatedefinition
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.updateDefinition()</code></p>
-
 ```ts
-updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefinition>): void
+sandkit.api.upgrades.updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefinition>): void
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L25)
@@ -218,10 +210,8 @@ Fields to merge into the definition.
 
 ### getLevelById() :id=getlevelbyid
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.getLevelById()</code></p>
-
 ```ts
-getLevelById(itemId: string, upgradeId: string): number
+sandkit.api.upgrades.getLevelById(itemId: string, upgradeId: string): number
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L35)
@@ -250,10 +240,8 @@ Upgrade id within the item.
 
 ### getAvailableLevelById() :id=getavailablelevelbyid
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.getAvailableLevelById()</code></p>
-
 ```ts
-getAvailableLevelById(itemId: string, upgradeId: string): number
+sandkit.api.upgrades.getAvailableLevelById(itemId: string, upgradeId: string): number
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L41)
@@ -282,10 +270,8 @@ Upgrade id within the item.
 
 ### setLevelById() :id=setlevelbyid
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.setLevelById()</code></p>
-
 ```ts
-setLevelById(itemId: string, upgradeId: string, level: number): void
+sandkit.api.upgrades.setLevelById(itemId: string, upgradeId: string, level: number): void
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L51)

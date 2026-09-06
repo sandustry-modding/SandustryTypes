@@ -11,7 +11,6 @@ Shared `sandkit.api.maps` base — active custom map metadata.
 ### ActiveMapV1 :id=activemapv1
 
 <p class="smt-member-path"><code>sandkit.api.maps.ActiveMapV1 (worker)</code></p>
-
 Defined in: [shared/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L18)
 
 Active custom map record (version 1 schema).
@@ -90,10 +89,8 @@ Defined in: [shared/api/maps.d.ts:27](https://github.com/sandustry-modding/Sandu
 
 ### getActive() :id=getactive
 
-<p class="smt-member-path"><code>sandkit.api.maps.getActive() (worker)</code></p>
-
 ```ts
-getActive(): Readonly<ActiveMapV1> | null
+sandkit.api.maps.getActive(): Readonly<ActiveMapV1> | null
 ```
 
 Defined in: [shared/api/maps.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L11)

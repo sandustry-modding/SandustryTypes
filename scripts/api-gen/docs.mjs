@@ -12,11 +12,9 @@ import {
   apiPathToQualifiedName,
   apiPathToRouteFile,
   buildSearchIndex,
-  collectSearchPaths,
   mdFileToSearchPath,
   qualifyApiMarkdown,
   renderSearchIndexScript,
-  renderSearchPathsScript,
   rewriteApiHrefMap,
 } from "./api-search.mjs";
 
@@ -788,6 +786,7 @@ function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
   /** @type {string[]} */
   const lines = [
     "- [Home](/)",
+    ...ifDocs("search.md", 0, "Search"),
     "- [Namespaces](modules.md)",
     ...ifFile("sandkit.md", 1, "sandkit"),
     ...ifFile("sandkit.api.md", 1, "sandkit.api"),
@@ -893,8 +892,6 @@ function writeSearchPaths(docsDir) {
   const relFiles = walkMarkdownFiles(docsDir).map((filePath) =>
     toPosixPath(relative(docsDir, filePath)),
   );
-  const paths = collectSearchPaths(relFiles);
-  writeFileSync(join(docsDir, "assets/search-paths.js"), renderSearchPathsScript(paths));
 
   const indexFiles = [];
   for (const rel of relFiles) {

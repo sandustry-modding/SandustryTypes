@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### consume() :id=consume
 
-<p class="smt-member-path"><code>sandkit.engine.api.prismite.consume()</code></p>
-
 ```ts
-consume(...args: unknown[]): unknown
+sandkit.engine.api.prismite.consume(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prismite.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### getAvailable() :id=getavailable
 
-<p class="smt-member-path"><code>sandkit.engine.api.prismite.getAvailable()</code></p>
-
 ```ts
-getAvailable(...args: unknown[]): unknown
+sandkit.engine.api.prismite.getAvailable(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prismite.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### getConsumed() :id=getconsumed
 
-<p class="smt-member-path"><code>sandkit.engine.api.prismite.getConsumed()</code></p>
-
 ```ts
-getConsumed(...args: unknown[]): unknown
+sandkit.engine.api.prismite.getConsumed(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prismite.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L25)

@@ -7,7 +7,6 @@ Structure recipe registration by machine kind.
 ### register() :id=register
 
 <p class="smt-member-path"><code>sandkit.api.structures.recipes.register()</code></p>
-
 #### Call Signature
 
 ```ts

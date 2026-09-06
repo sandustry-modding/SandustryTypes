@@ -10,10 +10,8 @@ Shared `sandkit.api.player` base — player position and collision queries.
 
 ### getPositionAtWorld() :id=getpositionatworld
 
-<p class="smt-member-path"><code>sandkit.api.player.getPositionAtWorld() (worker)</code></p>
-
 ```ts
-getPositionAtWorld(): Vector2
+sandkit.api.player.getPositionAtWorld(): Vector2
 ```
 
 Defined in: [shared/api/player.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L16)
@@ -32,10 +30,10 @@ World position as `{ x, y }` in pixels.
 
 ***
 
-### ~~getWorldPosition()~~
+### ~~getWorldPosition()~~ :id=getworldposition
 
 ```ts
-getWorldPosition(): Vector2
+sandkit.api.player.getWorldPosition(): Vector2
 ```
 
 Defined in: [shared/api/player.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L23)
@@ -56,10 +54,8 @@ Use [getPositionAtWorld](#getpositionatworld) instead.
 
 ### isCollidingWithCell() :id=iscollidingwithcell
 
-<p class="smt-member-path"><code>sandkit.api.player.isCollidingWithCell() (worker)</code></p>
-
 ```ts
-isCollidingWithCell(...args: CellCoordinates): boolean
+sandkit.api.player.isCollidingWithCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L34)
@@ -86,10 +82,8 @@ True when the player overlaps the cell.
 
 ### isWithinRadiusOfCell() :id=iswithinradiusofcell
 
-<p class="smt-member-path"><code>sandkit.api.player.isWithinRadiusOfCell() (worker)</code></p>
-
 ```ts
-isWithinRadiusOfCell(...args: [number, number, number]): boolean
+sandkit.api.player.isWithinRadiusOfCell(...args: [number, number, number]): boolean
 ```
 
 Defined in: [shared/api/player.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L46)

@@ -7,10 +7,8 @@ Main thread only.
 
 ### Action :id=action
 
-<p class="smt-member-path"><code>sandkit.api.action.Action</code></p>
-
 ```ts
-Action = AssetRef
+sandkit.api.action.Action = AssetRef
 ```
 
 Defined in: [sandkit/api/action.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L9)
@@ -21,10 +19,8 @@ Hotbar action asset reference.
 
 ### getActive() :id=getactive
 
-<p class="smt-member-path"><code>sandkit.api.action.getActive()</code></p>
-
 ```ts
-getActive(): AssetRef
+sandkit.api.action.getActive(): AssetRef
 ```
 
 Defined in: [sandkit/api/action.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L15)
@@ -41,10 +37,8 @@ Active hotbar action reference.
 
 ### getSelected() :id=getselected
 
-<p class="smt-member-path"><code>sandkit.api.action.getSelected()</code></p>
-
 ```ts
-getSelected(): AssetRef
+sandkit.api.action.getSelected(): AssetRef
 ```
 
 Defined in: [sandkit/api/action.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L21)
@@ -61,10 +55,8 @@ Selected hotbar action reference.
 
 ### setCustomData() :id=setcustomdata
 
-<p class="smt-member-path"><code>sandkit.api.action.setCustomData()</code></p>
-
 ```ts
-setCustomData<Input>(data: Input): void
+sandkit.api.action.setCustomData<Input>(data: Input): void
 ```
 
 Defined in: [sandkit/api/action.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L32)

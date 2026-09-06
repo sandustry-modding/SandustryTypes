@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.engine.api.debug.register()</code></p>
-
 ```ts
-register(...args: unknown[]): unknown
+sandkit.engine.api.debug.register(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/debug.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/debug.d.ts#L15)

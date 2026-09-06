@@ -1,4 +1,5 @@
 - [Home](/)
+- [Search](search.md)
 - [Namespaces](modules.md)
   - [sandkit](api/sandkit.md)
   - [sandkit.api](api/sandkit.api.md)

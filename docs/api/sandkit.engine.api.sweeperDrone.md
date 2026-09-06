@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### cancelSelection() :id=cancelselection
 
-<p class="smt-member-path"><code>sandkit.engine.api.sweeperDrone.cancelSelection()</code></p>
-
 ```ts
-cancelSelection(...args: unknown[]): unknown
+sandkit.engine.api.sweeperDrone.cancelSelection(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/sweeperDrone.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/sweeperDrone.d.ts#L15)

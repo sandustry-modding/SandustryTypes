@@ -13,10 +13,8 @@ larger `sandkit.api` surface; do not assume parity.
 
 ### emitEvent() :id=emitevent
 
-<p class="smt-member-path"><code>sandkit.api.main.emitEvent() (worker)</code></p>
-
 ```ts
-emitEvent<Payload = any>(eventId: string, payload: Payload): void
+sandkit.api.main.emitEvent<Payload = any>(eventId: string, payload: Payload): void
 ```
 
 Defined in: [worker/api/main.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/main.d.ts#L15)

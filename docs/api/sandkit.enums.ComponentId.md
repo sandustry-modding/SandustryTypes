@@ -8,10 +8,8 @@ UI component ids for HUD and menu routing.
 
 ### Hotbar :id=hotbar
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Hotbar</code></p>
-
 ```ts
-Hotbar: 1
+sandkit.enums.ComponentId.Hotbar: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L92)
@@ -20,10 +18,8 @@ Defined in: [sandkit/enums/index.d.ts:92](https://github.com/sandustry-modding/S
 
 ### SoundBoxConfig :id=soundboxconfig
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.SoundBoxConfig</code></p>
-
 ```ts
-SoundBoxConfig: 2
+sandkit.enums.ComponentId.SoundBoxConfig: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L93)
@@ -32,10 +28,8 @@ Defined in: [sandkit/enums/index.d.ts:93](https://github.com/sandustry-modding/S
 
 ### Root :id=root
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Root</code></p>
-
 ```ts
-Root: 4
+sandkit.enums.ComponentId.Root: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L94)
@@ -44,10 +38,8 @@ Defined in: [sandkit/enums/index.d.ts:94](https://github.com/sandustry-modding/S
 
 ### Menu :id=menu
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Menu</code></p>
-
 ```ts
-Menu: 5
+sandkit.enums.ComponentId.Menu: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L95)
@@ -56,10 +48,8 @@ Defined in: [sandkit/enums/index.d.ts:95](https://github.com/sandustry-modding/S
 
 ### Management :id=management
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Management</code></p>
-
 ```ts
-Management: 6
+sandkit.enums.ComponentId.Management: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L96)
@@ -68,10 +58,8 @@ Defined in: [sandkit/enums/index.d.ts:96](https://github.com/sandustry-modding/S
 
 ### FilterConfig :id=filterconfig
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.FilterConfig</code></p>
-
 ```ts
-FilterConfig: 7
+sandkit.enums.ComponentId.FilterConfig: 7
 ```
 
 Defined in: [sandkit/enums/index.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L97)
@@ -80,10 +68,8 @@ Defined in: [sandkit/enums/index.d.ts:97](https://github.com/sandustry-modding/S
 
 ### Resources :id=resources
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Resources</code></p>
-
 ```ts
-Resources: 8
+sandkit.enums.ComponentId.Resources: 8
 ```
 
 Defined in: [sandkit/enums/index.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L98)
@@ -92,10 +78,8 @@ Defined in: [sandkit/enums/index.d.ts:98](https://github.com/sandustry-modding/S
 
 ### TechTree :id=techtree
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.TechTree</code></p>
-
 ```ts
-TechTree: 9
+sandkit.enums.ComponentId.TechTree: 9
 ```
 
 Defined in: [sandkit/enums/index.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L99)
@@ -104,10 +88,8 @@ Defined in: [sandkit/enums/index.d.ts:99](https://github.com/sandustry-modding/S
 
 ### Tutorial :id=tutorial
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Tutorial</code></p>
-
 ```ts
-Tutorial: 10
+sandkit.enums.ComponentId.Tutorial: 10
 ```
 
 Defined in: [sandkit/enums/index.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L100)
@@ -116,10 +98,8 @@ Defined in: [sandkit/enums/index.d.ts:100](https://github.com/sandustry-modding/
 
 ### Loader :id=loader
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Loader</code></p>
-
 ```ts
-Loader: 11
+sandkit.enums.ComponentId.Loader: 11
 ```
 
 Defined in: [sandkit/enums/index.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L101)
@@ -128,10 +108,8 @@ Defined in: [sandkit/enums/index.d.ts:101](https://github.com/sandustry-modding/
 
 ### Options :id=options
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Options</code></p>
-
 ```ts
-Options: 12
+sandkit.enums.ComponentId.Options: 12
 ```
 
 Defined in: [sandkit/enums/index.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L102)
@@ -140,10 +118,8 @@ Defined in: [sandkit/enums/index.d.ts:102](https://github.com/sandustry-modding/
 
 ### ShortcutHelper :id=shortcuthelper
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.ShortcutHelper</code></p>
-
 ```ts
-ShortcutHelper: 13
+sandkit.enums.ComponentId.ShortcutHelper: 13
 ```
 
 Defined in: [sandkit/enums/index.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L103)
@@ -152,10 +128,8 @@ Defined in: [sandkit/enums/index.d.ts:103](https://github.com/sandustry-modding/
 
 ### Upgrades :id=upgrades
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Upgrades</code></p>
-
 ```ts
-Upgrades: 14
+sandkit.enums.ComponentId.Upgrades: 14
 ```
 
 Defined in: [sandkit/enums/index.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L104)
@@ -164,10 +138,8 @@ Defined in: [sandkit/enums/index.d.ts:104](https://github.com/sandustry-modding/
 
 ### Tooltip :id=tooltip
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Tooltip</code></p>
-
 ```ts
-Tooltip: 15
+sandkit.enums.ComponentId.Tooltip: 15
 ```
 
 Defined in: [sandkit/enums/index.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L105)
@@ -176,10 +148,8 @@ Defined in: [sandkit/enums/index.d.ts:105](https://github.com/sandustry-modding/
 
 ### Notifications :id=notifications
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Notifications</code></p>
-
 ```ts
-Notifications: 16
+sandkit.enums.ComponentId.Notifications: 16
 ```
 
 Defined in: [sandkit/enums/index.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L106)
@@ -188,10 +158,8 @@ Defined in: [sandkit/enums/index.d.ts:106](https://github.com/sandustry-modding/
 
 ### Objectives :id=objectives
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Objectives</code></p>
-
 ```ts
-Objectives: 17
+sandkit.enums.ComponentId.Objectives: 17
 ```
 
 Defined in: [sandkit/enums/index.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L107)
@@ -200,10 +168,8 @@ Defined in: [sandkit/enums/index.d.ts:107](https://github.com/sandustry-modding/
 
 ### DroneAdminList :id=droneadminlist
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.DroneAdminList</code></p>
-
 ```ts
-DroneAdminList: 18
+sandkit.enums.ComponentId.DroneAdminList: 18
 ```
 
 Defined in: [sandkit/enums/index.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L108)
@@ -212,10 +178,8 @@ Defined in: [sandkit/enums/index.d.ts:108](https://github.com/sandustry-modding/
 
 ### HotbarOverlays :id=hotbaroverlays
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.HotbarOverlays</code></p>
-
 ```ts
-HotbarOverlays: 19
+sandkit.enums.ComponentId.HotbarOverlays: 19
 ```
 
 Defined in: [sandkit/enums/index.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L109)
@@ -224,10 +188,8 @@ Defined in: [sandkit/enums/index.d.ts:109](https://github.com/sandustry-modding/
 
 ### IntroScreen :id=introscreen
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.IntroScreen</code></p>
-
 ```ts
-IntroScreen: 20
+sandkit.enums.ComponentId.IntroScreen: 20
 ```
 
 Defined in: [sandkit/enums/index.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L110)
@@ -236,10 +198,8 @@ Defined in: [sandkit/enums/index.d.ts:110](https://github.com/sandustry-modding/
 
 ### StoryNotifications :id=storynotifications
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.StoryNotifications</code></p>
-
 ```ts
-StoryNotifications: 21
+sandkit.enums.ComponentId.StoryNotifications: 21
 ```
 
 Defined in: [sandkit/enums/index.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L111)
@@ -248,10 +208,8 @@ Defined in: [sandkit/enums/index.d.ts:111](https://github.com/sandustry-modding/
 
 ### FactoryProgress :id=factoryprogress
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.FactoryProgress</code></p>
-
 ```ts
-FactoryProgress: 22
+sandkit.enums.ComponentId.FactoryProgress: 22
 ```
 
 Defined in: [sandkit/enums/index.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L112)
@@ -260,10 +218,8 @@ Defined in: [sandkit/enums/index.d.ts:112](https://github.com/sandustry-modding/
 
 ### Dialogs :id=dialogs
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Dialogs</code></p>
-
 ```ts
-Dialogs: 23
+sandkit.enums.ComponentId.Dialogs: 23
 ```
 
 Defined in: [sandkit/enums/index.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L113)
@@ -272,10 +228,8 @@ Defined in: [sandkit/enums/index.d.ts:113](https://github.com/sandustry-modding/
 
 ### GlobalOverlays :id=globaloverlays
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.GlobalOverlays</code></p>
-
 ```ts
-GlobalOverlays: 24
+sandkit.enums.ComponentId.GlobalOverlays: 24
 ```
 
 Defined in: [sandkit/enums/index.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L114)
@@ -284,10 +238,8 @@ Defined in: [sandkit/enums/index.d.ts:114](https://github.com/sandustry-modding/
 
 ### Lexicon :id=lexicon
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Lexicon</code></p>
-
 ```ts
-Lexicon: 25
+sandkit.enums.ComponentId.Lexicon: 25
 ```
 
 Defined in: [sandkit/enums/index.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L115)
@@ -296,10 +248,8 @@ Defined in: [sandkit/enums/index.d.ts:115](https://github.com/sandustry-modding/
 
 ### ModsScreen :id=modsscreen
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.ModsScreen</code></p>
-
 ```ts
-ModsScreen: 26
+sandkit.enums.ComponentId.ModsScreen: 26
 ```
 
 Defined in: [sandkit/enums/index.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L116)
@@ -308,10 +258,8 @@ Defined in: [sandkit/enums/index.d.ts:116](https://github.com/sandustry-modding/
 
 ### CustomMapsScreen :id=custommapsscreen
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.CustomMapsScreen</code></p>
-
 ```ts
-CustomMapsScreen: 27
+sandkit.enums.ComponentId.CustomMapsScreen: 27
 ```
 
 Defined in: [sandkit/enums/index.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L117)
@@ -320,10 +268,8 @@ Defined in: [sandkit/enums/index.d.ts:117](https://github.com/sandustry-modding/
 
 ### CinematicPanel :id=cinematicpanel
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.CinematicPanel</code></p>
-
 ```ts
-CinematicPanel: 28
+sandkit.enums.ComponentId.CinematicPanel: 28
 ```
 
 Defined in: [sandkit/enums/index.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L118)
@@ -332,10 +278,8 @@ Defined in: [sandkit/enums/index.d.ts:118](https://github.com/sandustry-modding/
 
 ### Feedback :id=feedback
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Feedback</code></p>
-
 ```ts
-Feedback: 29
+sandkit.enums.ComponentId.Feedback: 29
 ```
 
 Defined in: [sandkit/enums/index.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L119)

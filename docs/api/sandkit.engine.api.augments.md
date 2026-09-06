@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### getDigLevel() :id=getdiglevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getDigLevel()</code></p>
-
 ```ts
-getDigLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getDigLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### getGunLevel() :id=getgunlevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getGunLevel()</code></p>
-
 ```ts
-getGunLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getGunLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### getPhaseLevel() :id=getphaselevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getPhaseLevel()</code></p>
-
 ```ts
-getPhaseLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getPhaseLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L25)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### getRocketAmmoLevel() :id=getrocketammolevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getRocketAmmoLevel()</code></p>
-
 ```ts
-getRocketAmmoLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getRocketAmmoLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L30)
@@ -116,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### getRocketReloadLevel() :id=getrocketreloadlevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getRocketReloadLevel()</code></p>
-
 ```ts
-getRocketReloadLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getRocketReloadLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L35)
@@ -142,10 +132,8 @@ Game state first, then method-specific arguments.
 
 ### getSprintCapLevel() :id=getsprintcaplevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getSprintCapLevel()</code></p>
-
 ```ts
-getSprintCapLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getSprintCapLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L40)
@@ -168,10 +156,8 @@ Game state first, then method-specific arguments.
 
 ### hasBigDig() :id=hasbigdig
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasBigDig()</code></p>
-
 ```ts
-hasBigDig(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasBigDig(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L45)
@@ -194,10 +180,8 @@ Game state first, then method-specific arguments.
 
 ### hasBulletSpeed() :id=hasbulletspeed
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasBulletSpeed()</code></p>
-
 ```ts
-hasBulletSpeed(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasBulletSpeed(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L50)
@@ -220,10 +204,8 @@ Game state first, then method-specific arguments.
 
 ### hasBulletTracer() :id=hasbullettracer
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasBulletTracer()</code></p>
-
 ```ts
-hasBulletTracer(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasBulletTracer(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L55)
@@ -246,10 +228,8 @@ Game state first, then method-specific arguments.
 
 ### hasKickstartBoost() :id=haskickstartboost
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasKickstartBoost()</code></p>
-
 ```ts
-hasKickstartBoost(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasKickstartBoost(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L60)
@@ -272,10 +252,8 @@ Game state first, then method-specific arguments.
 
 ### hasPhaseDash() :id=hasphasedash
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasPhaseDash()</code></p>
-
 ```ts
-hasPhaseDash(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasPhaseDash(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L65)
@@ -298,10 +276,8 @@ Game state first, then method-specific arguments.
 
 ### hasPhaseDashCharge() :id=hasphasedashcharge
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasPhaseDashCharge()</code></p>
-
 ```ts
-hasPhaseDashCharge(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasPhaseDashCharge(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L70)
@@ -324,10 +300,8 @@ Game state first, then method-specific arguments.
 
 ### hasRideBoost() :id=hasrideboost
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasRideBoost()</code></p>
-
 ```ts
-hasRideBoost(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasRideBoost(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L75)
@@ -350,10 +324,8 @@ Game state first, then method-specific arguments.
 
 ### hasRocketDamage() :id=hasrocketdamage
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasRocketDamage()</code></p>
-
 ```ts
-hasRocketDamage(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasRocketDamage(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L80)
@@ -376,10 +348,8 @@ Game state first, then method-specific arguments.
 
 ### hasRocketWarhead() :id=hasrocketwarhead
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasRocketWarhead()</code></p>
-
 ```ts
-hasRocketWarhead(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasRocketWarhead(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L85)
@@ -402,10 +372,8 @@ Game state first, then method-specific arguments.
 
 ### hasSprintPower() :id=hassprintpower
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasSprintPower()</code></p>
-
 ```ts
-hasSprintPower(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasSprintPower(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L90)
@@ -428,10 +396,8 @@ Game state first, then method-specific arguments.
 
 ### hasTripleShot() :id=hastripleshot
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasTripleShot()</code></p>
-
 ```ts
-hasTripleShot(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasTripleShot(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L95)

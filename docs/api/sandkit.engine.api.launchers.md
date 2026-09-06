@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### registerType() :id=registertype
 
-<p class="smt-member-path"><code>sandkit.engine.api.launchers.registerType()</code></p>
-
 ```ts
-registerType(...args: unknown[]): unknown
+sandkit.engine.api.launchers.registerType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/launchers.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/launchers.d.ts#L15)

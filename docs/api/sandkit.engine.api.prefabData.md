@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### getAll() :id=getall
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getAll()</code></p>
-
 ```ts
-getAll(...args: unknown[]): unknown
+sandkit.engine.api.prefabData.getAll(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabData.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### getAllMetadata() :id=getallmetadata
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getAllMetadata()</code></p>
-
 ```ts
-getAllMetadata(...args: unknown[]): unknown
+sandkit.engine.api.prefabData.getAllMetadata(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabData.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### getArtifactLocations() :id=getartifactlocations
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getArtifactLocations()</code></p>
-
 ```ts
-getArtifactLocations(...args: unknown[]): unknown
+sandkit.engine.api.prefabData.getArtifactLocations(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabData.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L25)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### getAtCell() :id=getatcell
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getAtCell()</code></p>
-
 ```ts
-getAtCell(...args: unknown[]): unknown
+sandkit.engine.api.prefabData.getAtCell(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabData.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L30)
@@ -116,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### getMetadata() :id=getmetadata
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getMetadata()</code></p>
-
 ```ts
-getMetadata(...args: unknown[]): unknown
+sandkit.engine.api.prefabData.getMetadata(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabData.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L35)

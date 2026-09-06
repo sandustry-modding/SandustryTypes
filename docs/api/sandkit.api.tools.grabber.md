@@ -6,10 +6,8 @@ Grabber tool size and state.
 
 ### setSize() :id=setsize
 
-<p class="smt-member-path"><code>sandkit.api.tools.grabber.setSize()</code></p>
-
 ```ts
-setSize(size: number): void
+sandkit.api.tools.grabber.setSize(size: number): void
 ```
 
 Defined in: [sandkit/api/tools.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L15)
@@ -32,10 +30,8 @@ Grab radius in cells.
 
 ### getSize() :id=getsize
 
-<p class="smt-member-path"><code>sandkit.api.tools.grabber.getSize()</code></p>
-
 ```ts
-getSize(): number
+sandkit.api.tools.grabber.getSize(): number
 ```
 
 Defined in: [sandkit/api/tools.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L21)
@@ -52,10 +48,8 @@ Grab radius in cells.
 
 ### isActive() :id=isactive
 
-<p class="smt-member-path"><code>sandkit.api.tools.grabber.isActive()</code></p>
-
 ```ts
-isActive(): boolean
+sandkit.api.tools.grabber.isActive(): boolean
 ```
 
 Defined in: [sandkit/api/tools.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L27)
@@ -72,10 +66,8 @@ True when the grabber is the active tool.
 
 ### isLoaded() :id=isloaded
 
-<p class="smt-member-path"><code>sandkit.api.tools.grabber.isLoaded()</code></p>
-
 ```ts
-isLoaded(): boolean
+sandkit.api.tools.grabber.isLoaded(): boolean
 ```
 
 Defined in: [sandkit/api/tools.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L33)

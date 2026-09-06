@@ -6,10 +6,8 @@ Signal target registration for structure types.
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.api.signals.targets.register()</code></p>
-
 ```ts
-register(structureTypeOrId: unknown, apply: (structure: unknown, payload: unknown) => void): void
+sandkit.api.signals.targets.register(structureTypeOrId: unknown, apply: (structure: unknown, payload: unknown) => void): void
 ```
 
 Defined in: [sandkit/api/signals.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L45)

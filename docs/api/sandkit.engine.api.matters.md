@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### getMatterTypeFromId() :id=getmattertypefromid
 
-<p class="smt-member-path"><code>sandkit.engine.api.matters.getMatterTypeFromId()</code></p>
-
 ```ts
-getMatterTypeFromId(...args: unknown[]): unknown
+sandkit.engine.api.matters.getMatterTypeFromId(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/matters.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### register() :id=register
 
-<p class="smt-member-path"><code>sandkit.engine.api.matters.register()</code></p>
-
 ```ts
-register(...args: unknown[]): unknown
+sandkit.engine.api.matters.register(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/matters.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### runSolidUpdate() :id=runsolidupdate
 
-<p class="smt-member-path"><code>sandkit.engine.api.matters.runSolidUpdate()</code></p>
-
 ```ts
-runSolidUpdate(...args: unknown[]): unknown
+sandkit.engine.api.matters.runSolidUpdate(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/matters.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L25)

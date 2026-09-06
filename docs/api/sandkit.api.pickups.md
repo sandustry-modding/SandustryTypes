@@ -13,7 +13,6 @@ Available as `sandkit.api.pickups`.
 ### WorldItemLight :id=worlditemlight
 
 <p class="smt-member-path"><code>sandkit.api.pickups.WorldItemLight</code></p>
-
 Defined in: [sandkit/api/pickups.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L22)
 
 Optional point light attached when spawning a pickup.
@@ -55,7 +54,6 @@ RGB or RGBA color components in 0–1 range.
 ### WorldItem :id=worlditem
 
 <p class="smt-member-path"><code>sandkit.api.pickups.WorldItem</code></p>
-
 Defined in: [sandkit/api/pickups.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L32)
 
 Active world pickup instance.
@@ -106,10 +104,8 @@ Defined in: [sandkit/api/pickups.d.ts:37](https://github.com/sandustry-modding/S
 
 ### PickupType :id=pickuptype
 
-<p class="smt-member-path"><code>sandkit.api.pickups.PickupType</code></p>
-
 ```ts
-PickupType = PickupType
+sandkit.api.pickups.PickupType = PickupType
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L12)
@@ -118,10 +114,10 @@ Official pickup type discriminator.
 
 ***
 
-### ~~WorldItemType~~
+### ~~WorldItemType~~ :id=worlditemtype
 
 ```ts
-WorldItemType = PickupType
+sandkit.api.pickups.WorldItemType = PickupType
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L19)
@@ -138,10 +134,8 @@ Use [PickupType](#pickuptype) instead.
 
 ### spawnAtWorld() :id=spawnatworld
 
-<p class="smt-member-path"><code>sandkit.api.pickups.spawnAtWorld()</code></p>
-
 ```ts
-spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem
+sandkit.api.pickups.spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L52)
@@ -194,10 +188,8 @@ The spawned pickup instance.
 
 ### remove() :id=remove
 
-<p class="smt-member-path"><code>sandkit.api.pickups.remove()</code></p>
-
 ```ts
-remove(pickup: WorldItem): void
+sandkit.api.pickups.remove(pickup: WorldItem): void
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L67)
@@ -222,10 +214,10 @@ Pickup returned from spawn or lookup helpers.
 
 ***
 
-### ~~destroy()~~
+### ~~destroy()~~ :id=destroy
 
 ```ts
-destroy(pickup: WorldItem): void
+sandkit.api.pickups.destroy(pickup: WorldItem): void
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L74)
@@ -252,10 +244,8 @@ Use [remove](#remove) instead.
 
 ### pickUp() :id=pickup
 
-<p class="smt-member-path"><code>sandkit.api.pickups.pickUp()</code></p>
-
 ```ts
-pickUp(pickup: WorldItem): boolean
+sandkit.api.pickups.pickUp(pickup: WorldItem): boolean
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L84)
@@ -284,10 +274,8 @@ True when the item was collected.
 
 ### getAll() :id=getall
 
-<p class="smt-member-path"><code>sandkit.api.pickups.getAll()</code></p>
-
 ```ts
-getAll(): WorldItem[]
+sandkit.api.pickups.getAll(): WorldItem[]
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L91)
@@ -306,10 +294,8 @@ Return all active pickups.
 
 ### getById() :id=getbyid
 
-<p class="smt-member-path"><code>sandkit.api.pickups.getById()</code></p>
-
 ```ts
-getById(pickupId: number): WorldItem | undefined
+sandkit.api.pickups.getById(pickupId: number): WorldItem | undefined
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L100)

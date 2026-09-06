@@ -10,54 +10,63 @@ Use [grid](api/sandkit.api.grid.worker.md) instead.
 
 ## References <!-- {docsify-ignore} -->
 
-### ~~getCellIdAtCell~~
+### ~~getCellIdAtCell~~ :id=getcellidatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.getCellIdAtCell (worker)</code></p>
 Re-exports [getCellIdAtCell](api/sandkit.api.grid.md#getcellidatcell)
 
 ***
 
-### ~~isCellEmptyAtCell~~
+### ~~isCellEmptyAtCell~~ :id=iscellemptyatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.isCellEmptyAtCell (worker)</code></p>
 Re-exports [isCellEmptyAtCell](api/sandkit.api.grid.md#iscellemptyatcell)
 
 ***
 
-### ~~isTerrainAtCell~~
+### ~~isTerrainAtCell~~ :id=isterrainatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.isTerrainAtCell (worker)</code></p>
 Re-exports [isTerrainAtCell](api/sandkit.api.grid.md#isterrainatcell)
 
 ***
 
-### ~~reportActivityAtCell~~
+### ~~reportActivityAtCell~~ :id=reportactivityatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.reportActivityAtCell (worker)</code></p>
 Re-exports [reportActivityAtCell](api/sandkit.api.grid.md#reportactivityatcell)
 
 ***
 
-### ~~excavateAtCell~~
+### ~~excavateAtCell~~ :id=excavateatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.excavateAtCell (worker)</code></p>
 Re-exports [excavateAtCell](api/sandkit.api.grid.md#excavateatcell)
 
 ***
 
-### ~~getDimensions~~
+### ~~getDimensions~~ :id=getdimensions
 
+<p class="smt-member-path"><code>sandkit.api.world.getDimensions (worker)</code></p>
 Re-exports [getDimensions](api/sandkit.api.grid.md#getdimensions)
 
 ***
 
-### ~~ExcavateOptions~~
+### ~~ExcavateOptions~~ :id=excavateoptions
 
+<p class="smt-member-path"><code>sandkit.api.world.ExcavateOptions (worker)</code></p>
 Re-exports [ExcavateOptions](api/sandkit.api.grid.md#excavateoptions)
 
 ***
 
-### ~~CellId~~
+### ~~CellId~~ :id=cellid
 
+<p class="smt-member-path"><code>sandkit.api.world.CellId (worker)</code></p>
 Re-exports [CellId](api/sandkit.api.grid.md#cellid)
 
 ***
 
-### ~~GridDimensions~~
+### ~~GridDimensions~~ :id=griddimensions
 
+<p class="smt-member-path"><code>sandkit.api.world.GridDimensions (worker)</code></p>
 Re-exports [GridDimensions](api/sandkit.api.grid.md#griddimensions)

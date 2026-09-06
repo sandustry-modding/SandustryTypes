@@ -8,7 +8,6 @@ Main thread only.
 ### EnergyRegisterTypeOptions :id=energyregistertypeoptions
 
 <p class="smt-member-path"><code>sandkit.api.energy.EnergyRegisterTypeOptions</code></p>
-
 Defined in: [sandkit/api/energy.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L75)
 
 Options for [registerType](#registertype).
@@ -46,7 +45,6 @@ Energy type id when multiple networks exist.
 ### EnergyAddOptions :id=energyaddoptions
 
 <p class="smt-member-path"><code>sandkit.api.energy.EnergyAddOptions</code></p>
-
 Defined in: [sandkit/api/energy.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L84)
 
 Options for [addAtCell](#addatcell).
@@ -73,10 +71,8 @@ Energy type id when multiple networks exist.
 
 ### registerType() :id=registertype
 
-<p class="smt-member-path"><code>sandkit.api.energy.registerType()</code></p>
-
 ```ts
-registerType(structureId: string, type: "storage" | "conductor", options?: EnergyRegisterTypeOptions): void
+sandkit.api.energy.registerType(structureId: string, type: "storage" | "conductor", options?: EnergyRegisterTypeOptions): void
 ```
 
 Defined in: [sandkit/api/energy.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L14)
@@ -111,10 +107,8 @@ Capacity and energy-type options for storage nodes.
 
 ### addAtCell() :id=addatcell
 
-<p class="smt-member-path"><code>sandkit.api.energy.addAtCell()</code></p>
-
 ```ts
-addAtCell(...args: number, number, number, [EnergyAddOptions]): number
+sandkit.api.energy.addAtCell(...args: number, number, number, [EnergyAddOptions]): number
 ```
 
 Defined in: [sandkit/api/energy.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L26)
@@ -135,10 +129,8 @@ Adds energy at a cell. Returns the amount actually added.
 
 ### consume() :id=consume
 
-<p class="smt-member-path"><code>sandkit.api.energy.consume()</code></p>
-
 ```ts
-consume(amount: number, options?: object): number
+sandkit.api.energy.consume(amount: number, options?: object): number
 ```
 
 Defined in: [sandkit/api/energy.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L34)
@@ -169,10 +161,8 @@ When `allOrNothing` is true, consume zero unless the full amount is available.
 
 ### consumeExcludingNetworkAtCell() :id=consumeexcludingnetworkatcell
 
-<p class="smt-member-path"><code>sandkit.api.energy.consumeExcludingNetworkAtCell()</code></p>
-
 ```ts
-consumeExcludingNetworkAtCell(...args: [number, number, number]): number
+sandkit.api.energy.consumeExcludingNetworkAtCell(...args: [number, number, number]): number
 ```
 
 Defined in: [sandkit/api/energy.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L46)
@@ -193,10 +183,8 @@ Consumes energy from networks other than the one at the cell.
 
 ### getNetworkAtCell() :id=getnetworkatcell
 
-<p class="smt-member-path"><code>sandkit.api.energy.getNetworkAtCell()</code></p>
-
 ```ts
-getNetworkAtCell(...args: CellCoordinates): object[]
+sandkit.api.energy.getNetworkAtCell(...args: CellCoordinates): object[]
 ```
 
 Defined in: [sandkit/api/energy.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L62)
@@ -226,10 +214,8 @@ for (const entry of network) {
 
 ### getNetworkFreeCapacityAtCell() :id=getnetworkfreecapacityatcell
 
-<p class="smt-member-path"><code>sandkit.api.energy.getNetworkFreeCapacityAtCell()</code></p>
-
 ```ts
-getNetworkFreeCapacityAtCell(...args: CellCoordinates): number
+sandkit.api.energy.getNetworkFreeCapacityAtCell(...args: CellCoordinates): number
 ```
 
 Defined in: [sandkit/api/energy.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L72)

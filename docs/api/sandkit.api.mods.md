@@ -4,10 +4,8 @@
 
 ### AssetProviderV1 :id=assetproviderv1
 
-<p class="smt-member-path"><code>sandkit.api.mods.AssetProviderV1</code></p>
-
 ```ts
-AssetProviderV1 = AssetProviderV1
+sandkit.api.mods.AssetProviderV1 = AssetProviderV1
 ```
 
 Defined in: [sandkit/api/mods.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L17)
@@ -18,10 +16,8 @@ Asset provider entry shape.
 
 ### getProviders() :id=getproviders
 
-<p class="smt-member-path"><code>sandkit.api.mods.getProviders()</code></p>
-
 ```ts
-getProviders(kind: string): readonly AssetProviderV1[]
+sandkit.api.mods.getProviders(kind: string): readonly AssetProviderV1[]
 ```
 
 Defined in: [sandkit/api/mods.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L15)

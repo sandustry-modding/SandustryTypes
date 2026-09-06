@@ -8,10 +8,8 @@ Visibility and research state of a tech node.
 
 ### Available :id=available
 
-<p class="smt-member-path"><code>sandkit.enums.TechStatus.Available</code></p>
-
 ```ts
-Available: 0
+sandkit.enums.TechStatus.Available: 0
 ```
 
 Defined in: [sandkit/enums/index.d.ts:405](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L405)
@@ -20,10 +18,8 @@ Defined in: [sandkit/enums/index.d.ts:405](https://github.com/sandustry-modding/
 
 ### Visible :id=visible
 
-<p class="smt-member-path"><code>sandkit.enums.TechStatus.Visible</code></p>
-
 ```ts
-Visible: 1
+sandkit.enums.TechStatus.Visible: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:406](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L406)
@@ -32,10 +28,8 @@ Defined in: [sandkit/enums/index.d.ts:406](https://github.com/sandustry-modding/
 
 ### Researched :id=researched
 
-<p class="smt-member-path"><code>sandkit.enums.TechStatus.Researched</code></p>
-
 ```ts
-Researched: 2
+sandkit.enums.TechStatus.Researched: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:407](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L407)
@@ -44,10 +38,8 @@ Defined in: [sandkit/enums/index.d.ts:407](https://github.com/sandustry-modding/
 
 ### Unknown :id=unknown
 
-<p class="smt-member-path"><code>sandkit.enums.TechStatus.Unknown</code></p>
-
 ```ts
-Unknown: 3
+sandkit.enums.TechStatus.Unknown: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:408](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L408)
@@ -56,10 +48,8 @@ Defined in: [sandkit/enums/index.d.ts:408](https://github.com/sandustry-modding/
 
 ### Hidden :id=hidden
 
-<p class="smt-member-path"><code>sandkit.enums.TechStatus.Hidden</code></p>
-
 ```ts
-Hidden: 4
+sandkit.enums.TechStatus.Hidden: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:409](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L409)

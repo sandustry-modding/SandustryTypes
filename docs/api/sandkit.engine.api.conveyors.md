@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### registerType() :id=registertype
 
-<p class="smt-member-path"><code>sandkit.engine.api.conveyors.registerType()</code></p>
-
 ```ts
-registerType(...args: unknown[]): unknown
+sandkit.engine.api.conveyors.registerType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/conveyors.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/conveyors.d.ts#L15)

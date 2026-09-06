@@ -12,9 +12,7 @@ Mirrors on-disk `src/sandkit/` and the host free variable: `api`, `engine`,
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
-#### SandkitApi :id=sandkit.sandkitapi
-
-<p class="smt-member-path"><code>sandkit.SandkitApi</code></p>
+#### sandkit.api :id=sandkit.sandkitapi
 
 ```ts
 SandkitApi = object
@@ -635,9 +633,7 @@ Use [grid](#grid) for cell APIs and [pickups](#pickups) for world items.
 
 ***
 
-#### Sandkit :id=sandkit.sandkit
-
-<p class="smt-member-path"><code>sandkit.Sandkit</code></p>
+#### sandkit :id=sandkit.sandkit
 
 ```ts
 Sandkit = object
@@ -729,7 +725,6 @@ See [SandkitState](api/sandkit.engine.md#sandkitstate).
 #### api :id=sandkit.api
 
 <p class="smt-member-path"><code>sandkit.api</code></p>
-
 Renames and re-exports [sandkit/api](api/sandkit.api.md)
 
 ***
@@ -737,7 +732,6 @@ Renames and re-exports [sandkit/api](api/sandkit.api.md)
 #### engine :id=sandkit.engine
 
 <p class="smt-member-path"><code>sandkit.engine</code></p>
-
 Re-exports [engine](api/sandkit.engine.md)
 
 ***
@@ -745,22 +739,17 @@ Re-exports [engine](api/sandkit.engine.md)
 #### enums :id=sandkit.enums
 
 <p class="smt-member-path"><code>sandkit.enums</code></p>
-
 Renames and re-exports [sandkit/enums](api/sandkit.enums.md)
 
 ***
 
-#### SandkitEngine :id=sandkit.sandkitengine
-
-<p class="smt-member-path"><code>sandkit.SandkitEngine</code></p>
+#### sandkit.engine :id=sandkit.sandkitengine
 
 Re-exports [SandkitEngine](api/sandkit.engine.md#sandkitengine)
 
 ***
 
-#### SandkitEngineApi :id=sandkit.sandkitengineapi
-
-<p class="smt-member-path"><code>sandkit.SandkitEngineApi</code></p>
+#### sandkit.engine.api :id=sandkit.sandkitengineapi
 
 Re-exports [SandkitEngineApi](api/sandkit.engine.md#sandkitengineapi)
 
@@ -769,30 +758,23 @@ Re-exports [SandkitEngineApi](api/sandkit.engine.md#sandkitengineapi)
 #### RetroConsoleApi :id=sandkit.retroconsoleapi
 
 <p class="smt-member-path"><code>sandkit.RetroConsoleApi</code></p>
-
 Re-exports [RetroConsoleApi](api/sandkit.engine.md#retroconsoleapi)
 
 ***
 
-#### SandkitState :id=sandkit.sandkitstate
-
-<p class="smt-member-path"><code>sandkit.SandkitState</code></p>
+#### sandkit.state :id=sandkit.sandkitstate
 
 Re-exports [SandkitState](api/sandkit.engine.md#sandkitstate)
 
 ***
 
-#### SandkitEnums :id=sandkit.sandkitenums
-
-<p class="smt-member-path"><code>sandkit.SandkitEnums</code></p>
+#### sandkit.enums :id=sandkit.sandkitenums
 
 Re-exports [SandkitEnums](api/sandkit.enums.md#sandkitenums)
 
 ***
 
-#### SandkitReact :id=sandkit.sandkitreact
-
-<p class="smt-member-path"><code>sandkit.SandkitReact</code></p>
+#### sandkit.react :id=sandkit.sandkitreact
 
 Re-exports [SandkitReact](api/sandkit.react.md#sandkitreact)
 
@@ -807,10 +789,8 @@ Main thread only.
 
 #### Action :id=sandkit.api.action.action
 
-<p class="smt-member-path"><code>sandkit.api.action.Action</code></p>
-
 ```ts
-Action = AssetRef
+sandkit.api.action.Action = AssetRef
 ```
 
 Defined in: [sandkit/api/action.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L9)
@@ -821,10 +801,8 @@ Hotbar action asset reference.
 
 #### getActive() :id=sandkit.api.action.getactive
 
-<p class="smt-member-path"><code>sandkit.api.action.getActive()</code></p>
-
 ```ts
-getActive(): AssetRef
+sandkit.api.action.getActive(): AssetRef
 ```
 
 Defined in: [sandkit/api/action.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L15)
@@ -841,10 +819,8 @@ Active hotbar action reference.
 
 #### getSelected() :id=sandkit.api.action.getselected
 
-<p class="smt-member-path"><code>sandkit.api.action.getSelected()</code></p>
-
 ```ts
-getSelected(): AssetRef
+sandkit.api.action.getSelected(): AssetRef
 ```
 
 Defined in: [sandkit/api/action.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L21)
@@ -861,10 +837,8 @@ Selected hotbar action reference.
 
 #### setCustomData() :id=sandkit.api.action.setcustomdata
 
-<p class="smt-member-path"><code>sandkit.api.action.setCustomData()</code></p>
-
 ```ts
-setCustomData<Input>(data: Input): void
+sandkit.api.action.setCustomData<Input>(data: Input): void
 ```
 
 Defined in: [sandkit/api/action.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L32)
@@ -906,10 +880,8 @@ Main thread only.
 
 #### AssetProviderV1 :id=sandkit.api.assets.assetproviderv1
 
-<p class="smt-member-path"><code>sandkit.api.assets.AssetProviderV1</code></p>
-
 ```ts
-AssetProviderV1 = object
+sandkit.api.assets.AssetProviderV1 = object
 ```
 
 Defined in: [sandkit/api/assets.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L7)
@@ -962,10 +934,8 @@ Defined in: [sandkit/api/assets.d.ts:12](https://github.com/sandustry-modding/Sa
 
 #### getUrl() :id=sandkit.api.assets.geturl
 
-<p class="smt-member-path"><code>sandkit.api.assets.getUrl()</code></p>
-
 ```ts
-getUrl(relativePath: string): string
+sandkit.api.assets.getUrl(relativePath: string): string
 ```
 
 Defined in: [sandkit/api/assets.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L18)
@@ -988,10 +958,8 @@ Path relative to the calling mod folder.
 
 #### getSelectedProvider() :id=sandkit.api.assets.getselectedprovider
 
-<p class="smt-member-path"><code>sandkit.api.assets.getSelectedProvider()</code></p>
-
 ```ts
-getSelectedProvider(kind: string): AssetProviderV1 | null
+sandkit.api.assets.getSelectedProvider(kind: string): AssetProviderV1 | null
 ```
 
 Defined in: [sandkit/api/assets.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L23)
@@ -1014,10 +982,8 @@ Asset kind identifier.
 
 #### selectProvider() :id=sandkit.api.assets.selectprovider
 
-<p class="smt-member-path"><code>sandkit.api.assets.selectProvider()</code></p>
-
 ```ts
-selectProvider(kind: string, providerId: string | null): boolean
+sandkit.api.assets.selectProvider(kind: string, providerId: string | null): boolean
 ```
 
 Defined in: [sandkit/api/assets.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L29)
@@ -1053,10 +1019,8 @@ Main thread only.
 
 #### canBuildAtCell() :id=sandkit.api.authorization.canbuildatcell
 
-<p class="smt-member-path"><code>sandkit.api.authorization.canBuildAtCell()</code></p>
-
 ```ts
-canBuildAtCell(...args: CellCoordinates): boolean
+sandkit.api.authorization.canBuildAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L14)
@@ -1079,10 +1043,8 @@ True when building is allowed in the authorization zone.
 
 #### canGrabAtCell() :id=sandkit.api.authorization.cangrabatcell
 
-<p class="smt-member-path"><code>sandkit.api.authorization.canGrabAtCell()</code></p>
-
 ```ts
-canGrabAtCell(...args: CellCoordinates): boolean
+sandkit.api.authorization.canGrabAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L22)
@@ -1105,10 +1067,8 @@ True when grabbing is allowed in the authorization zone.
 
 #### canUseTool() :id=sandkit.api.authorization.canusetool
 
-<p class="smt-member-path"><code>sandkit.api.authorization.canUseTool()</code></p>
-
 ```ts
-canUseTool(player: Player, isFlamethrower?: boolean): boolean
+sandkit.api.authorization.canUseTool(player: Player, isFlamethrower?: boolean): boolean
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L30)
@@ -1139,10 +1099,8 @@ True when tool use is allowed for the player.
 
 #### canUseToolAtCell() :id=sandkit.api.authorization.canusetoolatcell
 
-<p class="smt-member-path"><code>sandkit.api.authorization.canUseToolAtCell()</code></p>
-
 ```ts
-canUseToolAtCell(...args: [number, number, boolean]): boolean
+sandkit.api.authorization.canUseToolAtCell(...args: [number, number, boolean]): boolean
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L39)
@@ -1165,10 +1123,8 @@ True when tool use is allowed at the cell.
 
 #### getZoneIdAtCell() :id=sandkit.api.authorization.getzoneidatcell
 
-<p class="smt-member-path"><code>sandkit.api.authorization.getZoneIdAtCell()</code></p>
-
 ```ts
-getZoneIdAtCell(...args: CellCoordinates): number
+sandkit.api.authorization.getZoneIdAtCell(...args: CellCoordinates): number
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L49)
@@ -1191,10 +1147,8 @@ Numeric zone id for the cell.
 
 #### getPlayerZoneId() :id=sandkit.api.authorization.getplayerzoneid
 
-<p class="smt-member-path"><code>sandkit.api.authorization.getPlayerZoneId()</code></p>
-
 ```ts
-getPlayerZoneId(): number
+sandkit.api.authorization.getPlayerZoneId(): number
 ```
 
 Defined in: [sandkit/api/authorization.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L55)
@@ -1224,7 +1178,6 @@ Available as `sandkit.api.blueprints`.
 #### BlueprintStructure :id=sandkit.api.blueprints.blueprintstructure
 
 <p class="smt-member-path"><code>sandkit.api.blueprints.BlueprintStructure</code></p>
-
 Defined in: [sandkit/api/blueprints.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L34)
 
 Serialized structure entry used in blueprints.
@@ -1257,10 +1210,8 @@ Defined in: [sandkit/api/blueprints.d.ts:36](https://github.com/sandustry-moddin
 
 #### serializeStructures() :id=sandkit.api.blueprints.serializestructures
 
-<p class="smt-member-path"><code>sandkit.api.blueprints.serializeStructures()</code></p>
-
 ```ts
-serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
+sandkit.api.blueprints.serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
 ```
 
 Defined in: [sandkit/api/blueprints.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L18)
@@ -1287,10 +1238,8 @@ Structure instances to encode.
 
 #### localizeStructures() :id=sandkit.api.blueprints.localizestructures
 
-<p class="smt-member-path"><code>sandkit.api.blueprints.localizeStructures()</code></p>
-
 ```ts
-localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]
+sandkit.api.blueprints.localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructure[]
 ```
 
 Defined in: [sandkit/api/blueprints.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L29)
@@ -1328,10 +1277,8 @@ Main thread only.
 
 #### getSnappedPositionAtCell() :id=sandkit.api.building.getsnappedpositionatcell
 
-<p class="smt-member-path"><code>sandkit.api.building.getSnappedPositionAtCell()</code></p>
-
 ```ts
-getSnappedPositionAtCell(...args: CellCoordinates): Vector2
+sandkit.api.building.getSnappedPositionAtCell(...args: CellCoordinates): Vector2
 ```
 
 Defined in: [sandkit/api/building.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L73)
@@ -1354,10 +1301,8 @@ Snapped world position in pixels.
 
 #### isBlockedAtCell() :id=sandkit.api.building.isblockedatcell
 
-<p class="smt-member-path"><code>sandkit.api.building.isBlockedAtCell()</code></p>
-
 ```ts
-isBlockedAtCell(...args: CellCoordinates): boolean
+sandkit.api.building.isBlockedAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/building.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L81)
@@ -1380,10 +1325,8 @@ True when a structure cannot be placed at the cell.
 
 #### cancelPlacement() :id=sandkit.api.building.cancelplacement
 
-<p class="smt-member-path"><code>sandkit.api.building.cancelPlacement()</code></p>
-
 ```ts
-cancelPlacement(): void
+sandkit.api.building.cancelPlacement(): void
 ```
 
 Defined in: [sandkit/api/building.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L84)
@@ -1398,10 +1341,8 @@ Cancel the current structure placement preview.
 
 #### selectStructure() :id=sandkit.api.building.selectstructure
 
-<p class="smt-member-path"><code>sandkit.api.building.selectStructure()</code></p>
-
 ```ts
-selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef | null
+sandkit.api.building.selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef | null
 ```
 
 Defined in: [sandkit/api/building.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L91)
@@ -1433,10 +1374,8 @@ Main thread only.
 
 #### snapToPlayer() :id=sandkit.api.camera.snaptoplayer
 
-<p class="smt-member-path"><code>sandkit.api.camera.snapToPlayer()</code></p>
-
 ```ts
-snapToPlayer(): void
+sandkit.api.camera.snapToPlayer(): void
 ```
 
 Defined in: [sandkit/api/camera.d.ts:7](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L7)
@@ -1451,10 +1390,8 @@ Snap the camera to the player position.
 
 #### setFocusAtWorld() :id=sandkit.api.camera.setfocusatworld
 
-<p class="smt-member-path"><code>sandkit.api.camera.setFocusAtWorld()</code></p>
-
 ```ts
-setFocusAtWorld(worldX: number, worldY: number): boolean
+sandkit.api.camera.setFocusAtWorld(worldX: number, worldY: number): boolean
 ```
 
 Defined in: [sandkit/api/camera.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L15)
@@ -1485,10 +1422,8 @@ True when focus was applied.
 
 #### releaseFocus() :id=sandkit.api.camera.releasefocus
 
-<p class="smt-member-path"><code>sandkit.api.camera.releaseFocus()</code></p>
-
 ```ts
-releaseFocus(options?: object): boolean
+sandkit.api.camera.releaseFocus(options?: object): boolean
 ```
 
 Defined in: [sandkit/api/camera.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L27)
@@ -1528,10 +1463,8 @@ Main thread only.
 
 #### getValueFromCellId() :id=sandkit.api.collector.getvaluefromcellid
 
-<p class="smt-member-path"><code>sandkit.api.collector.getValueFromCellId()</code></p>
-
 ```ts
-getValueFromCellId(cellId: CellId): number
+sandkit.api.collector.getValueFromCellId(cellId: CellId): number
 ```
 
 Defined in: [sandkit/api/collector.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L14)
@@ -1554,10 +1487,8 @@ Packed cell identifier.
 
 #### getValueByType() :id=sandkit.api.collector.getvaluebytype
 
-<p class="smt-member-path"><code>sandkit.api.collector.getValueByType()</code></p>
-
 ```ts
-getValueByType(elementType: ElementType): number
+sandkit.api.collector.getValueByType(elementType: ElementType): number
 ```
 
 Defined in: [sandkit/api/collector.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L19)
@@ -1580,10 +1511,8 @@ Numeric element type id.
 
 #### isCellIdCollectable() :id=sandkit.api.collector.iscellidcollectable
 
-<p class="smt-member-path"><code>sandkit.api.collector.isCellIdCollectable()</code></p>
-
 ```ts
-isCellIdCollectable(cellId: CellId): boolean
+sandkit.api.collector.isCellIdCollectable(cellId: CellId): boolean
 ```
 
 Defined in: [sandkit/api/collector.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L24)
@@ -1606,10 +1535,8 @@ Packed cell identifier.
 
 #### isCellIdCollectableForSprite() :id=sandkit.api.collector.iscellidcollectableforsprite
 
-<p class="smt-member-path"><code>sandkit.api.collector.isCellIdCollectableForSprite()</code></p>
-
 ```ts
-isCellIdCollectableForSprite(cellId: CellId): boolean
+sandkit.api.collector.isCellIdCollectableForSprite(cellId: CellId): boolean
 ```
 
 Defined in: [sandkit/api/collector.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L29)
@@ -1632,10 +1559,8 @@ Packed cell identifier.
 
 #### notifyPickupAtCell() :id=sandkit.api.collector.notifypickupatcell
 
-<p class="smt-member-path"><code>sandkit.api.collector.notifyPickupAtCell()</code></p>
-
 ```ts
-notifyPickupAtCell(...args: CellCoordinates): void
+sandkit.api.collector.notifyPickupAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/collector.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L35)
@@ -1660,8 +1585,6 @@ Notifies collector logic that a pickup happened at the cell.
 
 #### physics :id=sandkit.api.constants.physics
 
-<p class="smt-member-path"><code>sandkit.api.constants.physics</code></p>
-
 ```ts
 const physics: Readonly<{ normal: 0; skip: 1; aggressiveSkip: 2; }>
 ```
@@ -1682,7 +1605,6 @@ Main thread only.
 #### Cooldown :id=sandkit.api.cooldown.cooldown
 
 <p class="smt-member-path"><code>sandkit.api.cooldown.Cooldown</code></p>
-
 Defined in: [sandkit/api/cooldown.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L20)
 
 Cooldown state object passed to [check](#check) and [isReady](#isready).
@@ -1713,10 +1635,8 @@ Cooldown duration in milliseconds.
 
 #### check() :id=sandkit.api.cooldown.check
 
-<p class="smt-member-path"><code>sandkit.api.cooldown.check()</code></p>
-
 ```ts
-check(cooldown: Cooldown, overrideTime?: number): boolean
+sandkit.api.cooldown.check(cooldown: Cooldown, overrideTime?: number): boolean
 ```
 
 Defined in: [sandkit/api/cooldown.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L11)
@@ -1745,10 +1665,8 @@ Optional timestamp (ms) instead of current game time.
 
 #### isReady() :id=sandkit.api.cooldown.isready
 
-<p class="smt-member-path"><code>sandkit.api.cooldown.isReady()</code></p>
-
 ```ts
-isReady(cooldown: Cooldown, overrideTime?: number): boolean
+sandkit.api.cooldown.isReady(cooldown: Cooldown, overrideTime?: number): boolean
 ```
 
 Defined in: [sandkit/api/cooldown.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L17)
@@ -1784,10 +1702,8 @@ Main thread only.
 
 #### addElementByType() :id=sandkit.api.discoveries.addelementbytype
 
-<p class="smt-member-path"><code>sandkit.api.discoveries.addElementByType()</code></p>
-
 ```ts
-addElementByType(elementType: ElementType): void
+sandkit.api.discoveries.addElementByType(elementType: ElementType): void
 ```
 
 Defined in: [sandkit/api/discoveries.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L12)
@@ -1810,10 +1726,8 @@ Numeric element type id.
 
 #### addTerrainByType() :id=sandkit.api.discoveries.addterrainbytype
 
-<p class="smt-member-path"><code>sandkit.api.discoveries.addTerrainByType()</code></p>
-
 ```ts
-addTerrainByType(terrainType: TerrainType): void
+sandkit.api.discoveries.addTerrainByType(terrainType: TerrainType): void
 ```
 
 Defined in: [sandkit/api/discoveries.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L17)
@@ -1844,7 +1758,6 @@ Main thread only. Temporary lights live under [lights.temporary](api/sandkit.api
 #### LaserEffectOptions :id=sandkit.api.effects.lasereffectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.LaserEffectOptions</code></p>
-
 Defined in: [sandkit/api/effects.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L122)
 
 Options for laser beam effects.
@@ -1896,7 +1809,6 @@ When true, draws a glow around the beam.
 #### LaserEffectHandle :id=sandkit.api.effects.lasereffecthandle
 
 <p class="smt-member-path"><code>sandkit.api.effects.LaserEffectHandle</code></p>
-
 Defined in: [sandkit/api/effects.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L134)
 
 Handle returned by createLaserAtWorld.
@@ -1922,7 +1834,6 @@ Removes the laser from the scene.
 #### DistortionEffectOptions :id=sandkit.api.effects.distortioneffectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.DistortionEffectOptions</code></p>
-
 Defined in: [sandkit/api/effects.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L140)
 
 Options for distortion wave effects.
@@ -1984,7 +1895,6 @@ RGBA color components for the effect.
 #### EffectOptions :id=sandkit.api.effects.effectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.EffectOptions</code></p>
-
 Defined in: [shared/api/effects.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L48)
 
 Generic duration and radius options for world effects.
@@ -2020,7 +1930,6 @@ Defined in: [shared/api/effects.d.ts:51](https://github.com/sandustry-modding/Sa
 #### TemporaryLightOptions :id=sandkit.api.effects.temporarylightoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.TemporaryLightOptions</code></p>
-
 Defined in: [shared/api/effects.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L54)
 
 Options for [createLightAtWorld](#createlightatworld).
@@ -2132,7 +2041,6 @@ Dedupe key when the light pool is full or dedup is enabled.
 #### ParticleEffectOptions :id=sandkit.api.effects.particleeffectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.ParticleEffectOptions</code></p>
-
 Defined in: [shared/api/effects.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L71)
 
 Options for [createParticlesAtWorld](#createparticlesatworld).
@@ -2265,10 +2173,8 @@ Defined in: [shared/api/effects.d.ts:87](https://github.com/sandustry-modding/Sa
 
 #### createAtWorld() :id=sandkit.api.effects.createatworld
 
-<p class="smt-member-path"><code>sandkit.api.effects.createAtWorld()</code></p>
-
 ```ts
-createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+sandkit.api.effects.createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
 Defined in: [sandkit/api/effects.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L25)
@@ -2311,10 +2217,10 @@ Duration, radius, and intensity settings.
 
 ***
 
-#### ~~createEffectAtWorld()~~
+#### ~~createEffectAtWorld()~~ :id=sandkit.api.effects.createeffectatworld
 
 ```ts
-createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
 Defined in: [sandkit/api/effects.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L37)
@@ -2351,10 +2257,10 @@ Use [createAtWorld](#createatworld) instead.
 
 ***
 
-#### ~~createLightAtWorld()~~
+#### ~~createLightAtWorld()~~ :id=sandkit.api.effects.createlightatworld
 
 ```ts
-createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): object
+sandkit.api.effects.createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): object
 ```
 
 Defined in: [sandkit/api/effects.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L67)
@@ -2401,10 +2307,8 @@ Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createa
 
 #### createDistortionWaveAtWorld() :id=sandkit.api.effects.createdistortionwaveatworld
 
-<p class="smt-member-path"><code>sandkit.api.effects.createDistortionWaveAtWorld()</code></p>
-
 ```ts
-createDistortionWaveAtWorld(worldX: number, worldY: number, options?: DistortionEffectOptions): void
+sandkit.api.effects.createDistortionWaveAtWorld(worldX: number, worldY: number, options?: DistortionEffectOptions): void
 ```
 
 Defined in: [sandkit/api/effects.d.ts:89](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L89)
@@ -2451,10 +2355,8 @@ api.effects.createDistortionWaveAtWorld(worldX, worldY, {
 
 #### createLaserAtWorld() :id=sandkit.api.effects.createlaseratworld
 
-<p class="smt-member-path"><code>sandkit.api.effects.createLaserAtWorld()</code></p>
-
 ```ts
-createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, endWorldY: number, options?: LaserEffectOptions): LaserEffectHandle
+sandkit.api.effects.createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, endWorldY: number, options?: LaserEffectOptions): LaserEffectHandle
 ```
 
 Defined in: [sandkit/api/effects.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L106)
@@ -2503,10 +2405,10 @@ Width, brightness, color, and glow options.
 
 ***
 
-#### ~~removeLightById()~~
+#### ~~removeLightById()~~ :id=sandkit.api.effects.removelightbyid
 
 ```ts
-removeLightById(lightId: number): void
+sandkit.api.effects.removeLightById(lightId: number): void
 ```
 
 Defined in: [sandkit/api/effects.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L119)
@@ -2533,10 +2435,8 @@ Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md#removebyid
 
 #### createParticlesAtWorld() :id=sandkit.api.effects.createparticlesatworld
 
-<p class="smt-member-path"><code>sandkit.api.effects.createParticlesAtWorld()</code></p>
-
 ```ts
-createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectOptions): void
+sandkit.api.effects.createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectOptions): void
 ```
 
 Defined in: [shared/api/effects.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L28)
@@ -2587,7 +2487,6 @@ Main thread only.
 #### InteractionStructureMetadata :id=sandkit.api.elements.interactionstructuremetadata
 
 <p class="smt-member-path"><code>sandkit.api.elements.InteractionStructureMetadata</code></p>
-
 Defined in: [sandkit/api/elements.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L87)
 
 Optional tooltip metadata on structure interactions.
@@ -2663,7 +2562,6 @@ Require the text key to exist in the active locale.
 #### ElementCreateOptions :id=sandkit.api.elements.elementcreateoptions
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementCreateOptions</code></p>
-
 Defined in: [shared/api/elements.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L86)
 
 Options for [createAtCell](#createatcell), replace, and related create helpers.
@@ -2799,7 +2697,6 @@ Skip collector accounting when placing the element.
 #### ElementRemovalOptions :id=sandkit.api.elements.elementremovaloptions
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementRemovalOptions</code></p>
-
 Defined in: [shared/api/elements.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L125)
 
 Options for element removal helpers.
@@ -2824,10 +2721,8 @@ Skip collector accounting when removing the element.
 
 #### InteractionDestroyer :id=sandkit.api.elements.interactiondestroyer
 
-<p class="smt-member-path"><code>sandkit.api.elements.InteractionDestroyer</code></p>
-
 ```ts
-InteractionDestroyer = object
+sandkit.api.elements.InteractionDestroyer = object
 ```
 
 Defined in: [sandkit/api/elements.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L99)
@@ -2858,10 +2753,8 @@ Item ids removed by this interaction (for example `"drill"`).
 
 #### InteractionStructure :id=sandkit.api.elements.interactionstructure
 
-<p class="smt-member-path"><code>sandkit.api.elements.InteractionStructure</code></p>
-
 ```ts
-InteractionStructure = InteractionStructureMetadata & object
+sandkit.api.elements.InteractionStructure = InteractionStructureMetadata & object
 ```
 
 Defined in: [sandkit/api/elements.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L106)
@@ -2888,10 +2781,8 @@ Structure ids shown in the interaction tooltip.
 
 #### InteractionEntity :id=sandkit.api.elements.interactionentity
 
-<p class="smt-member-path"><code>sandkit.api.elements.InteractionEntity</code></p>
-
 ```ts
-InteractionEntity = object
+sandkit.api.elements.InteractionEntity = object
 ```
 
 Defined in: [sandkit/api/elements.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L113)
@@ -2922,10 +2813,8 @@ Entity type ids referenced by the interaction.
 
 #### InteractionFlammable :id=sandkit.api.elements.interactionflammable
 
-<p class="smt-member-path"><code>sandkit.api.elements.InteractionFlammable</code></p>
-
 ```ts
-InteractionFlammable = object
+sandkit.api.elements.InteractionFlammable = object
 ```
 
 Defined in: [sandkit/api/elements.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L120)
@@ -2946,10 +2835,8 @@ Defined in: [sandkit/api/elements.d.ts:120](https://github.com/sandustry-modding
 
 #### InteractionMeltable :id=sandkit.api.elements.interactionmeltable
 
-<p class="smt-member-path"><code>sandkit.api.elements.InteractionMeltable</code></p>
-
 ```ts
-InteractionMeltable = object
+sandkit.api.elements.InteractionMeltable = object
 ```
 
 Defined in: [sandkit/api/elements.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L122)
@@ -2970,10 +2857,8 @@ Defined in: [sandkit/api/elements.d.ts:122](https://github.com/sandustry-modding
 
 #### InteractionFreezable :id=sandkit.api.elements.interactionfreezable
 
-<p class="smt-member-path"><code>sandkit.api.elements.InteractionFreezable</code></p>
-
 ```ts
-InteractionFreezable = object
+sandkit.api.elements.InteractionFreezable = object
 ```
 
 Defined in: [sandkit/api/elements.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L124)
@@ -2994,10 +2879,8 @@ Defined in: [sandkit/api/elements.d.ts:124](https://github.com/sandustry-modding
 
 #### InteractionCustom :id=sandkit.api.elements.interactioncustom
 
-<p class="smt-member-path"><code>sandkit.api.elements.InteractionCustom</code></p>
-
 ```ts
-InteractionCustom = InteractionStructureMetadata & object
+sandkit.api.elements.InteractionCustom = InteractionStructureMetadata & object
 ```
 
 Defined in: [sandkit/api/elements.d.ts:126](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L126)
@@ -3016,10 +2899,8 @@ kind: "custom"
 
 #### Interaction :id=sandkit.api.elements.interaction
 
-<p class="smt-member-path"><code>sandkit.api.elements.Interaction</code></p>
-
 ```ts
-Interaction = InteractionDestroyer | InteractionStructure | InteractionEntity | InteractionFlammable | InteractionMeltable | InteractionFreezable | InteractionCustom
+sandkit.api.elements.Interaction = InteractionDestroyer | InteractionStructure | InteractionEntity | InteractionFlammable | InteractionMeltable | InteractionFreezable | InteractionCustom
 ```
 
 Defined in: [sandkit/api/elements.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L129)
@@ -3030,10 +2911,8 @@ Union of element interaction kinds for tool and structure logic.
 
 #### ElementType :id=sandkit.api.elements.elementtype
 
-<p class="smt-member-path"><code>sandkit.api.elements.ElementType</code></p>
-
 ```ts
-ElementType = ElementType | TaggedNumber<"elementType">
+sandkit.api.elements.ElementType = ElementType | TaggedNumber<"elementType">
 ```
 
 Defined in: [shared/api/elements.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L20)
@@ -3049,10 +2928,8 @@ Built-in [ElementTypeEnum](api/sandkit.enums.ElementType.md) values autocomplete
 
 #### ElementId :id=sandkit.api.elements.elementid
 
-<p class="smt-member-path"><code>sandkit.api.elements.ElementId</code></p>
-
 ```ts
-ElementId = LooseString<never>
+sandkit.api.elements.ElementId = LooseString<never>
 ```
 
 Defined in: [shared/api/elements.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L27)
@@ -3067,10 +2944,8 @@ Mod or built-in element string id.
 
 #### ElementRef :id=sandkit.api.elements.elementref
 
-<p class="smt-member-path"><code>sandkit.api.elements.ElementRef</code></p>
-
 ```ts
-ElementRef = ElementType | ElementId
+sandkit.api.elements.ElementRef = ElementType | ElementId
 ```
 
 Defined in: [shared/api/elements.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L34)
@@ -3085,10 +2960,8 @@ Type handle or string id accepted by lookup helpers.
 
 #### ElementDefinition :id=sandkit.api.elements.elementdefinition
 
-<p class="smt-member-path"><code>sandkit.api.elements.ElementDefinition</code></p>
-
 ```ts
-ElementDefinition = object
+sandkit.api.elements.ElementDefinition = object
 ```
 
 Defined in: [shared/api/elements.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L57)
@@ -3241,10 +3114,8 @@ data: Record<PropertyKey, any>
 
 #### getRegisteredTypes() :id=sandkit.api.elements.getregisteredtypes
 
-<p class="smt-member-path"><code>sandkit.api.elements.getRegisteredTypes()</code></p>
-
 ```ts
-getRegisteredTypes(): ElementType[]
+sandkit.api.elements.getRegisteredTypes(): ElementType[]
 ```
 
 Defined in: [sandkit/api/elements.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L143)
@@ -3263,10 +3134,8 @@ Returns all registered element type ids.
 
 #### register() :id=sandkit.api.elements.register
 
-<p class="smt-member-path"><code>sandkit.api.elements.register()</code></p>
-
 ```ts
-register(definition: ElementDefinition): object
+sandkit.api.elements.register(definition: ElementDefinition): object
 ```
 
 Defined in: [sandkit/api/elements.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L153)
@@ -3301,10 +3170,8 @@ elementType: ElementType
 
 #### updateDefinition() :id=sandkit.api.elements.updatedefinition
 
-<p class="smt-member-path"><code>sandkit.api.elements.updateDefinition()</code></p>
-
 ```ts
-updateDefinition(elementTypeOrId: ElementRef, partial: Partial<ElementDefinition>): void
+sandkit.api.elements.updateDefinition(elementTypeOrId: ElementRef, partial: Partial<ElementDefinition>): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L170)
@@ -3345,10 +3212,8 @@ api.elements.updateDefinition("exampleElement", {
 
 #### addInteractionInfo() :id=sandkit.api.elements.addinteractioninfo
 
-<p class="smt-member-path"><code>sandkit.api.elements.addInteractionInfo()</code></p>
-
 ```ts
-addInteractionInfo(elementTypeOrId: ElementRef, interaction: Interaction): void
+sandkit.api.elements.addInteractionInfo(elementTypeOrId: ElementRef, interaction: Interaction): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L183)
@@ -3381,10 +3246,8 @@ Interaction entry to append.
 
 #### getNameByType() :id=sandkit.api.elements.getnamebytype
 
-<p class="smt-member-path"><code>sandkit.api.elements.getNameByType()</code></p>
-
 ```ts
-getNameByType(elementType: ElementType): string
+sandkit.api.elements.getNameByType(elementType: ElementType): string
 ```
 
 Defined in: [sandkit/api/elements.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L192)
@@ -3411,10 +3274,8 @@ Numeric element type.
 
 #### findFreeCellInStructure() :id=sandkit.api.elements.findfreecellinstructure
 
-<p class="smt-member-path"><code>sandkit.api.elements.findFreeCellInStructure()</code></p>
-
 ```ts
-findFreeCellInStructure(structureCellX: number, structureCellY: number, structureSizeCells: number): Vector2 | null
+sandkit.api.elements.findFreeCellInStructure(structureCellX: number, structureCellY: number, structureSizeCells: number): Vector2 | null
 ```
 
 Defined in: [sandkit/api/elements.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L204)
@@ -3455,10 +3316,8 @@ Cell coordinates of a free cell, or null when none.
 
 #### createAtCell() :id=sandkit.api.elements.createatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.createAtCell()</code></p>
-
 ```ts
-createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
+sandkit.api.elements.createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:234](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L234)
@@ -3499,10 +3358,10 @@ api.elements.createAtCell(cellX, cellY, "steam", {
 
 ***
 
-#### ~~createAtCellWhenIdle()~~
+#### ~~createAtCellWhenIdle()~~ :id=sandkit.api.elements.createatcellwhenidle
 
 ```ts
-createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]): void
+sandkit.api.elements.createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:243](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L243)
@@ -3529,10 +3388,8 @@ Use [createAtCell](#createatcell) instead.
 
 #### replaceAtCell() :id=sandkit.api.elements.replaceatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.replaceAtCell()</code></p>
-
 ```ts
-replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
+sandkit.api.elements.replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:257](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L257)
@@ -3555,10 +3412,10 @@ Replace the element at a cell. Main-entry writes are deferred; reads see the old
 
 ***
 
-#### ~~replaceAtCellWhenIdle()~~
+#### ~~replaceAtCellWhenIdle()~~ :id=sandkit.api.elements.replaceatcellwhenidle
 
 ```ts
-replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]): void
+sandkit.api.elements.replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:266](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L266)
@@ -3585,10 +3442,8 @@ Use [replaceAtCell](#replaceatcell) instead.
 
 #### removeAtCell() :id=sandkit.api.elements.removeatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.removeAtCell()</code></p>
-
 ```ts
-removeAtCell(...args: number, number, [ElementRemovalOptions]): void
+sandkit.api.elements.removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:279](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L279)
@@ -3611,10 +3466,10 @@ Remove the element at a cell. Main-entry writes are deferred; reads see the old 
 
 ***
 
-#### ~~removeAtCellWhenIdle()~~
+#### ~~removeAtCellWhenIdle()~~ :id=sandkit.api.elements.removeatcellwhenidle
 
 ```ts
-removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
+sandkit.api.elements.removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:288](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L288)
@@ -3641,10 +3496,8 @@ Use [removeAtCell](#removeatcell) instead.
 
 #### teleportBetweenCells() :id=sandkit.api.elements.teleportbetweencells
 
-<p class="smt-member-path"><code>sandkit.api.elements.teleportBetweenCells()</code></p>
-
 ```ts
-teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
+sandkit.api.elements.teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:302](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L302)
@@ -3687,10 +3540,10 @@ Destination cell row.
 
 ***
 
-#### ~~teleportBetweenCellsWhenIdle()~~
+#### ~~teleportBetweenCellsWhenIdle()~~ :id=sandkit.api.elements.teleportbetweencellswhenidle
 
 ```ts
-teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
+sandkit.api.elements.teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:314](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L314)
@@ -3729,10 +3582,8 @@ Use [teleportBetweenCells](#teleportbetweencells) instead.
 
 #### setVelocityAtCell() :id=sandkit.api.elements.setvelocityatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setVelocityAtCell()</code></p>
-
 ```ts
-setVelocityAtCell(...args: number, number, [Vector2]): void
+sandkit.api.elements.setVelocityAtCell(...args: number, number, [Vector2]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L335)
@@ -3761,10 +3612,10 @@ api.elements.setVelocityAtCell(cellX, cellY, { x: 0, y: -120 });
 
 ***
 
-#### ~~setVelocityAtCellWhenIdle()~~
+#### ~~setVelocityAtCellWhenIdle()~~ :id=sandkit.api.elements.setvelocityatcellwhenidle
 
 ```ts
-setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void
+sandkit.api.elements.setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:342](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L342)
@@ -3791,10 +3642,8 @@ Use [setVelocityAtCell](#setvelocityatcell) instead.
 
 #### addParticleVelocityAtCell() :id=sandkit.api.elements.addparticlevelocityatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.addParticleVelocityAtCell()</code></p>
-
 ```ts
-addParticleVelocityAtCell(...args: number, number, [Vector2, number]): void
+sandkit.api.elements.addParticleVelocityAtCell(...args: number, number, [Vector2, number]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:364](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L364)
@@ -3828,10 +3677,10 @@ api.elements.addParticleVelocityAtCell(
 
 ***
 
-#### ~~addParticleVelocityAtCellWhenIdle()~~
+#### ~~addParticleVelocityAtCellWhenIdle()~~ :id=sandkit.api.elements.addparticlevelocityatcellwhenidle
 
 ```ts
-addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): void
+sandkit.api.elements.addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:373](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L373)
@@ -3858,10 +3707,8 @@ Use [addParticleVelocityAtCell](#addparticlevelocityatcell) instead.
 
 #### convertToParticleAtCell() :id=sandkit.api.elements.converttoparticleatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.convertToParticleAtCell()</code></p>
-
 ```ts
-convertToParticleAtCell(...args: number, number, [Vector2]): void
+sandkit.api.elements.convertToParticleAtCell(...args: number, number, [Vector2]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:395](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L395)
@@ -3894,10 +3741,10 @@ api.elements.convertToParticleAtCell(
 
 ***
 
-#### ~~convertToParticleAtCellWhenIdle()~~
+#### ~~convertToParticleAtCellWhenIdle()~~ :id=sandkit.api.elements.converttoparticleatcellwhenidle
 
 ```ts
-convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void
+sandkit.api.elements.convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:402](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L402)
@@ -3924,10 +3771,8 @@ Use [convertToParticleAtCell](#converttoparticleatcell) instead.
 
 #### convertFromParticleAtCell() :id=sandkit.api.elements.convertfromparticleatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.convertFromParticleAtCell()</code></p>
-
 ```ts
-convertFromParticleAtCell(...args: CellCoordinates): void
+sandkit.api.elements.convertFromParticleAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:414](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L414)
@@ -3950,10 +3795,10 @@ Convert a particle back to a solid element. Main-entry writes are deferred; read
 
 ***
 
-#### ~~convertFromParticleAtCellWhenIdle()~~
+#### ~~convertFromParticleAtCellWhenIdle()~~ :id=sandkit.api.elements.convertfromparticleatcellwhenidle
 
 ```ts
-convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void
+sandkit.api.elements.convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:421](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L421)
@@ -3980,10 +3825,8 @@ Use [convertFromParticleAtCell](#convertfromparticleatcell) instead.
 
 #### setDataFieldAtCell() :id=sandkit.api.elements.setdatafieldatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setDataFieldAtCell()</code></p>
-
 ```ts
-setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): void
+sandkit.api.elements.setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:433](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L433)
@@ -4006,10 +3849,10 @@ Set a data field on the element at a cell. Main-entry writes are deferred; reads
 
 ***
 
-#### ~~setDataFieldAtCellWhenIdle()~~
+#### ~~setDataFieldAtCellWhenIdle()~~ :id=sandkit.api.elements.setdatafieldatcellwhenidle
 
 ```ts
-setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): void
+sandkit.api.elements.setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:442](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L442)
@@ -4036,10 +3879,8 @@ Use [setDataFieldAtCell](#setdatafieldatcell) instead.
 
 #### refreshColorAtCell() :id=sandkit.api.elements.refreshcoloratcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.refreshColorAtCell()</code></p>
-
 ```ts
-refreshColorAtCell(...args: CellCoordinates): void
+sandkit.api.elements.refreshColorAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:454](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L454)
@@ -4062,10 +3903,10 @@ Refresh the rendered color at a cell. Main-entry writes are deferred; reads see 
 
 ***
 
-#### ~~refreshColorAtCellWhenIdle()~~
+#### ~~refreshColorAtCellWhenIdle()~~ :id=sandkit.api.elements.refreshcoloratcellwhenidle
 
 ```ts
-refreshColorAtCellWhenIdle(...args: CellCoordinates): void
+sandkit.api.elements.refreshColorAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:461](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L461)
@@ -4092,10 +3933,8 @@ Use [refreshColorAtCell](#refreshcoloratcell) instead.
 
 #### setPhysicsAtCell() :id=sandkit.api.elements.setphysicsatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setPhysicsAtCell()</code></p>
-
 ```ts
-setPhysicsAtCell(...args: [number, number, number]): void
+sandkit.api.elements.setPhysicsAtCell(...args: [number, number, number]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:472](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L472)
@@ -4118,10 +3957,10 @@ Set the physics skip mode at a cell. Main-entry writes are deferred; reads see t
 
 ***
 
-#### ~~setPhysicsAtCellWhenIdle()~~
+#### ~~setPhysicsAtCellWhenIdle()~~ :id=sandkit.api.elements.setphysicsatcellwhenidle
 
 ```ts
-setPhysicsAtCellWhenIdle(...args: [number, number, number]): void
+sandkit.api.elements.setPhysicsAtCellWhenIdle(...args: [number, number, number]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:479](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L479)
@@ -4148,10 +3987,8 @@ Use [setPhysicsAtCell](#setphysicsatcell) instead.
 
 #### setDurationAtCell() :id=sandkit.api.elements.setdurationatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setDurationAtCell()</code></p>
-
 ```ts
-setDurationAtCell(...args: [number, number, number, object]): void
+sandkit.api.elements.setDurationAtCell(...args: [number, number, number, object]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:503](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L503)
@@ -4187,10 +4024,10 @@ api.elements.setDurationAtCell(
 
 ***
 
-#### ~~setDurationAtCellWhenIdle()~~
+#### ~~setDurationAtCellWhenIdle()~~ :id=sandkit.api.elements.setdurationatcellwhenidle
 
 ```ts
-setDurationAtCellWhenIdle(...args: [number, number, number, object]): void
+sandkit.api.elements.setDurationAtCellWhenIdle(...args: [number, number, number, object]): void
 ```
 
 Defined in: [sandkit/api/elements.d.ts:512](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L512)
@@ -4217,10 +4054,8 @@ Use [setDurationAtCell](#setdurationatcell) instead.
 
 #### getIdByType() :id=sandkit.api.elements.getidbytype
 
-<p class="smt-member-path"><code>sandkit.api.elements.getIdByType()</code></p>
-
 ```ts
-getIdByType(elementType: ElementType): string & object
+sandkit.api.elements.getIdByType(elementType: ElementType): string & object
 ```
 
 Defined in: [shared/api/elements.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L137)
@@ -4247,10 +4082,8 @@ Numeric element type.
 
 #### getTypeById() :id=sandkit.api.elements.gettypebyid
 
-<p class="smt-member-path"><code>sandkit.api.elements.getTypeById()</code></p>
-
 ```ts
-getTypeById(elementId: string & object): ElementType
+sandkit.api.elements.getTypeById(elementId: string & object): ElementType
 ```
 
 Defined in: [shared/api/elements.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L146)
@@ -4275,10 +4108,10 @@ Mod-registered element id.
 
 ***
 
-#### ~~getTypeFromId()~~
+#### ~~getTypeFromId()~~ :id=sandkit.api.elements.gettypefromid
 
 ```ts
-getTypeFromId(elementId: string & object): ElementType
+sandkit.api.elements.getTypeFromId(elementId: string & object): ElementType
 ```
 
 Defined in: [shared/api/elements.d.ts:153](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L153)
@@ -4305,10 +4138,8 @@ Use [getTypeById](#gettypebyid) instead.
 
 #### getDefinitionByType() :id=sandkit.api.elements.getdefinitionbytype
 
-<p class="smt-member-path"><code>sandkit.api.elements.getDefinitionByType()</code></p>
-
 ```ts
-getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
+sandkit.api.elements.getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 ```
 
 Defined in: [shared/api/elements.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L162)
@@ -4335,10 +4166,8 @@ Numeric element type.
 
 #### getTypeAtCell() :id=sandkit.api.elements.gettypeatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.getTypeAtCell()</code></p>
-
 ```ts
-getTypeAtCell(...args: CellCoordinates): ElementType | null
+sandkit.api.elements.getTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
 Defined in: [shared/api/elements.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L172)
@@ -4363,10 +4192,8 @@ Return the raw element type at a cell (may differ from resolved type).
 
 #### getResolvedTypeAtCell() :id=sandkit.api.elements.getresolvedtypeatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.getResolvedTypeAtCell()</code></p>
-
 ```ts
-getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
+sandkit.api.elements.getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 ```
 
 Defined in: [shared/api/elements.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L182)
@@ -4391,10 +4218,8 @@ Return the resolved element type after overlays and particles.
 
 #### getResolvedTypeFromCellId() :id=sandkit.api.elements.getresolvedtypefromcellid
 
-<p class="smt-member-path"><code>sandkit.api.elements.getResolvedTypeFromCellId()</code></p>
-
 ```ts
-getResolvedTypeFromCellId(cellId: CellId): ElementType | null
+sandkit.api.elements.getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 ```
 
 Defined in: [shared/api/elements.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L191)
@@ -4421,10 +4246,8 @@ Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md#getcellidatc
 
 #### getInfoAtCell() :id=sandkit.api.elements.getinfoatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.getInfoAtCell()</code></p>
-
 ```ts
-getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number; } | null
+sandkit.api.elements.getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number; } | null
 ```
 
 Defined in: [shared/api/elements.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L201)
@@ -4449,10 +4272,8 @@ Return element index, particle flag, and ids at a cell.
 
 #### getMatterTypeAtCell() :id=sandkit.api.elements.getmattertypeatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.getMatterTypeAtCell()</code></p>
-
 ```ts
-getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
+sandkit.api.elements.getMatterTypeAtCell(...args: CellCoordinates): MatterType | null
 ```
 
 Defined in: [shared/api/elements.d.ts:213](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L213)
@@ -4477,10 +4298,8 @@ Return the matter category at a cell, or null when empty.
 
 #### isTypeAtCell() :id=sandkit.api.elements.istypeatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.isTypeAtCell()</code></p>
-
 ```ts
-isTypeAtCell(...args: number, number, [ElementRef]): boolean
+sandkit.api.elements.isTypeAtCell(...args: number, number, [ElementRef]): boolean
 ```
 
 Defined in: [shared/api/elements.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L224)
@@ -4505,10 +4324,8 @@ Return true when the cell holds the given element type or id.
 
 #### isFreeFallingAtCell() :id=sandkit.api.elements.isfreefallingatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.isFreeFallingAtCell()</code></p>
-
 ```ts
-isFreeFallingAtCell(...args: CellCoordinates): boolean
+sandkit.api.elements.isFreeFallingAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/elements.d.ts:234](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L234)
@@ -4533,10 +4350,8 @@ Return true when the element at the cell is falling.
 
 #### getVelocityAtCell() :id=sandkit.api.elements.getvelocityatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.getVelocityAtCell()</code></p>
-
 ```ts
-getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
+sandkit.api.elements.getVelocityAtCell(...args: CellCoordinates): { x: number; y: number; } | null
 ```
 
 Defined in: [shared/api/elements.d.ts:244](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L244)
@@ -4561,10 +4376,8 @@ Return per-cell velocity for moving elements.
 
 #### getDataFieldAtCell() :id=sandkit.api.elements.getdatafieldatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.getDataFieldAtCell()</code></p>
-
 ```ts
-getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
+sandkit.api.elements.getDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4]): number | null
 ```
 
 Defined in: [shared/api/elements.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L255)
@@ -4597,7 +4410,6 @@ Main thread only.
 #### EnergyRegisterTypeOptions :id=sandkit.api.energy.energyregistertypeoptions
 
 <p class="smt-member-path"><code>sandkit.api.energy.EnergyRegisterTypeOptions</code></p>
-
 Defined in: [sandkit/api/energy.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L75)
 
 Options for [registerType](#registertype).
@@ -4635,7 +4447,6 @@ Energy type id when multiple networks exist.
 #### EnergyAddOptions :id=sandkit.api.energy.energyaddoptions
 
 <p class="smt-member-path"><code>sandkit.api.energy.EnergyAddOptions</code></p>
-
 Defined in: [sandkit/api/energy.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L84)
 
 Options for [addAtCell](#addatcell).
@@ -4662,10 +4473,8 @@ Energy type id when multiple networks exist.
 
 #### registerType() :id=sandkit.api.energy.registertype
 
-<p class="smt-member-path"><code>sandkit.api.energy.registerType()</code></p>
-
 ```ts
-registerType(structureId: string, type: "storage" | "conductor", options?: EnergyRegisterTypeOptions): void
+sandkit.api.energy.registerType(structureId: string, type: "storage" | "conductor", options?: EnergyRegisterTypeOptions): void
 ```
 
 Defined in: [sandkit/api/energy.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L14)
@@ -4700,10 +4509,8 @@ Capacity and energy-type options for storage nodes.
 
 #### addAtCell() :id=sandkit.api.energy.addatcell
 
-<p class="smt-member-path"><code>sandkit.api.energy.addAtCell()</code></p>
-
 ```ts
-addAtCell(...args: number, number, number, [EnergyAddOptions]): number
+sandkit.api.energy.addAtCell(...args: number, number, number, [EnergyAddOptions]): number
 ```
 
 Defined in: [sandkit/api/energy.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L26)
@@ -4724,10 +4531,8 @@ Adds energy at a cell. Returns the amount actually added.
 
 #### consume() :id=sandkit.api.energy.consume
 
-<p class="smt-member-path"><code>sandkit.api.energy.consume()</code></p>
-
 ```ts
-consume(amount: number, options?: object): number
+sandkit.api.energy.consume(amount: number, options?: object): number
 ```
 
 Defined in: [sandkit/api/energy.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L34)
@@ -4758,10 +4563,8 @@ When `allOrNothing` is true, consume zero unless the full amount is available.
 
 #### consumeExcludingNetworkAtCell() :id=sandkit.api.energy.consumeexcludingnetworkatcell
 
-<p class="smt-member-path"><code>sandkit.api.energy.consumeExcludingNetworkAtCell()</code></p>
-
 ```ts
-consumeExcludingNetworkAtCell(...args: [number, number, number]): number
+sandkit.api.energy.consumeExcludingNetworkAtCell(...args: [number, number, number]): number
 ```
 
 Defined in: [sandkit/api/energy.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L46)
@@ -4782,10 +4585,8 @@ Consumes energy from networks other than the one at the cell.
 
 #### getNetworkAtCell() :id=sandkit.api.energy.getnetworkatcell
 
-<p class="smt-member-path"><code>sandkit.api.energy.getNetworkAtCell()</code></p>
-
 ```ts
-getNetworkAtCell(...args: CellCoordinates): object[]
+sandkit.api.energy.getNetworkAtCell(...args: CellCoordinates): object[]
 ```
 
 Defined in: [sandkit/api/energy.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L62)
@@ -4815,10 +4616,8 @@ for (const entry of network) {
 
 #### getNetworkFreeCapacityAtCell() :id=sandkit.api.energy.getnetworkfreecapacityatcell
 
-<p class="smt-member-path"><code>sandkit.api.energy.getNetworkFreeCapacityAtCell()</code></p>
-
 ```ts
-getNetworkFreeCapacityAtCell(...args: CellCoordinates): number
+sandkit.api.energy.getNetworkFreeCapacityAtCell(...args: CellCoordinates): number
 ```
 
 Defined in: [sandkit/api/energy.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L72)
@@ -4852,7 +4651,6 @@ Available as `sandkit.api.entities`.
 #### Entity :id=sandkit.api.entities.entity
 
 <p class="smt-member-path"><code>sandkit.api.entities.Entity</code></p>
-
 Defined in: [sandkit/api/entities.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L78)
 
 Active entity instance in the world.
@@ -4909,10 +4707,8 @@ Defined in: [sandkit/api/entities.d.ts:83](https://github.com/sandustry-modding/
 
 #### getById() :id=sandkit.api.entities.getbyid
 
-<p class="smt-member-path"><code>sandkit.api.entities.getById()</code></p>
-
 ```ts
-getById(entityId: number): Entity | undefined
+sandkit.api.entities.getById(entityId: number): Entity | undefined
 ```
 
 Defined in: [sandkit/api/entities.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L16)
@@ -4939,10 +4735,8 @@ Runtime entity id.
 
 #### getAllByType() :id=sandkit.api.entities.getallbytype
 
-<p class="smt-member-path"><code>sandkit.api.entities.getAllByType()</code></p>
-
 ```ts
-getAllByType(entityTypeId: string): Entity[]
+sandkit.api.entities.getAllByType(entityTypeId: string): Entity[]
 ```
 
 Defined in: [sandkit/api/entities.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L25)
@@ -4969,10 +4763,8 @@ Registered entity type string id.
 
 #### spawnAtWorld() :id=sandkit.api.entities.spawnatworld
 
-<p class="smt-member-path"><code>sandkit.api.entities.spawnAtWorld()</code></p>
-
 ```ts
-spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
+sandkit.api.entities.spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
 ```
 
 Defined in: [sandkit/api/entities.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L37)
@@ -5013,10 +4805,8 @@ The spawned entity instance.
 
 #### remove() :id=sandkit.api.entities.remove
 
-<p class="smt-member-path"><code>sandkit.api.entities.remove()</code></p>
-
 ```ts
-remove(entityId: number): void
+sandkit.api.entities.remove(entityId: number): void
 ```
 
 Defined in: [sandkit/api/entities.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L46)
@@ -5043,10 +4833,8 @@ Runtime entity id.
 
 #### launch() :id=sandkit.api.entities.launch
 
-<p class="smt-member-path"><code>sandkit.api.entities.launch()</code></p>
-
 ```ts
-launch(entityId: number, angleRadians: number, speed?: number): void
+sandkit.api.entities.launch(entityId: number, angleRadians: number, speed?: number): void
 ```
 
 Defined in: [sandkit/api/entities.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L57)
@@ -5085,10 +4873,8 @@ Optional launch speed.
 
 #### startCapture() :id=sandkit.api.entities.startcapture
 
-<p class="smt-member-path"><code>sandkit.api.entities.startCapture()</code></p>
-
 ```ts
-startCapture(entityId: number): void
+sandkit.api.entities.startCapture(entityId: number): void
 ```
 
 Defined in: [sandkit/api/entities.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L66)
@@ -5115,10 +4901,8 @@ Runtime entity id.
 
 #### collect() :id=sandkit.api.entities.collect
 
-<p class="smt-member-path"><code>sandkit.api.entities.collect()</code></p>
-
 ```ts
-collect(entityId: number): void
+sandkit.api.entities.collect(entityId: number): void
 ```
 
 Defined in: [sandkit/api/entities.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L75)
@@ -5153,7 +4937,6 @@ Main thread only. The `events` object is frozen; do not replace `on` or `emit`.
 #### PlayerCollisionPreparePayload :id=sandkit.api.events.playercollisionpreparepayload
 
 <p class="smt-member-path"><code>sandkit.api.events.PlayerCollisionPreparePayload</code></p>
-
 Defined in: [sandkit/api/events.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L177)
 
 Mutable payload for `player:collision:prepare`.
@@ -5196,7 +4979,6 @@ Max cells the player can step up when blocked horizontally (1–8).
 #### EventPayloadMap :id=sandkit.api.events.eventpayloadmap
 
 <p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap</code></p>
-
 Defined in: [sandkit/api/events.d.ts:187](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L187)
 
 Known event payloads. Unlisted ids still use `unknown`.
@@ -5729,10 +5511,8 @@ optional state?: unknown
 
 #### EventId :id=sandkit.api.events.eventid
 
-<p class="smt-member-path"><code>sandkit.api.events.EventId</code></p>
-
 ```ts
-EventId = LooseString<keyof EventPayloadMap>
+sandkit.api.events.EventId = LooseString<keyof EventPayloadMap>
 ```
 
 Defined in: [sandkit/api/events.d.ts:287](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L287)
@@ -5743,10 +5523,8 @@ Known event names plus any custom string id.
 
 #### EventPayload :id=sandkit.api.events.eventpayload
 
-<p class="smt-member-path"><code>sandkit.api.events.EventPayload</code></p>
-
 ```ts
-EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
+sandkit.api.events.EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
 ```
 
 Defined in: [sandkit/api/events.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L290)
@@ -5763,10 +5541,8 @@ Event payload type for a given event id.
 
 #### on() :id=sandkit.api.events.on
 
-<p class="smt-member-path"><code>sandkit.api.events.on()</code></p>
-
 ```ts
-on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void
+sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void): () => void
 ```
 
 Defined in: [sandkit/api/events.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L158)
@@ -5969,10 +5745,8 @@ api.events.on("resource:collected", (payload) => {
 
 #### emit() :id=sandkit.api.events.emit
 
-<p class="smt-member-path"><code>sandkit.api.events.emit()</code></p>
-
 ```ts
-emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>): void
+sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>): void
 ```
 
 Defined in: [sandkit/api/events.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L171)
@@ -6023,7 +5797,6 @@ Main thread only.
 #### ExcavationProfileDefinitionV1 :id=sandkit.api.excavation.excavationprofiledefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationProfileDefinitionV1</code></p>
-
 Defined in: [sandkit/api/excavation.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L50)
 
 Excavation tool profile definition.
@@ -6075,7 +5848,6 @@ Per-terrain output and damage rules.
 #### ExcavationProfileOptions :id=sandkit.api.excavation.excavationprofileoptions
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationProfileOptions</code></p>
-
 Defined in: [sandkit/api/excavation.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L62)
 
 Options attached to an excavation profile definition.
@@ -6145,7 +5917,6 @@ Clamped to 0–1000 when set.
 #### ExcavationTerrainRule :id=sandkit.api.excavation.excavationterrainrule
 
 <p class="smt-member-path"><code>sandkit.api.excavation.ExcavationTerrainRule</code></p>
-
 Defined in: [sandkit/api/excavation.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L74)
 
 Terrain match rule within an excavation profile.
@@ -6202,10 +5973,8 @@ Element type produced when this terrain is excavated.
 
 #### registerProfile() :id=sandkit.api.excavation.registerprofile
 
-<p class="smt-member-path"><code>sandkit.api.excavation.registerProfile()</code></p>
-
 ```ts
-registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
+sandkit.api.excavation.registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/excavation.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L47)
@@ -6279,10 +6048,8 @@ Available as `sandkit.api.factory`.
 
 #### FactoryProcessId :id=sandkit.api.factory.factoryprocessid
 
-<p class="smt-member-path"><code>sandkit.api.factory.FactoryProcessId</code></p>
-
 ```ts
-FactoryProcessId = "shakeWetSand" | "pressBurntResidue" | "growFlowers" | "condenseFlorin"
+sandkit.api.factory.FactoryProcessId = "shakeWetSand" | "pressBurntResidue" | "growFlowers" | "condenseFlorin"
 ```
 
 Defined in: [sandkit/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L35)
@@ -6293,10 +6060,8 @@ Built-in factory process identifiers.
 
 #### getLevel() :id=sandkit.api.factory.getlevel
 
-<p class="smt-member-path"><code>sandkit.api.factory.getLevel()</code></p>
-
 ```ts
-getLevel(): number
+sandkit.api.factory.getLevel(): number
 ```
 
 Defined in: [sandkit/api/factory.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L14)
@@ -6315,10 +6080,8 @@ Return the current factory level.
 
 #### getProcessCount() :id=sandkit.api.factory.getprocesscount
 
-<p class="smt-member-path"><code>sandkit.api.factory.getProcessCount()</code></p>
-
 ```ts
-getProcessCount(processId: FactoryProcessId): number
+sandkit.api.factory.getProcessCount(processId: FactoryProcessId): number
 ```
 
 Defined in: [sandkit/api/factory.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L23)
@@ -6345,10 +6108,8 @@ Built-in factory process id.
 
 #### getProcessRate() :id=sandkit.api.factory.getprocessrate
 
-<p class="smt-member-path"><code>sandkit.api.factory.getProcessRate()</code></p>
-
 ```ts
-getProcessRate(processId: FactoryProcessId): number
+sandkit.api.factory.getProcessRate(processId: FactoryProcessId): number
 ```
 
 Defined in: [sandkit/api/factory.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L32)
@@ -6386,10 +6147,8 @@ Main thread only.
 
 #### canBurnElementAtCell() :id=sandkit.api.fire.canburnelementatcell
 
-<p class="smt-member-path"><code>sandkit.api.fire.canBurnElementAtCell()</code></p>
-
 ```ts
-canBurnElementAtCell(...args: CellCoordinates): boolean
+sandkit.api.fire.canBurnElementAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/fire.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L18)
@@ -6414,10 +6173,8 @@ Returns true when the element at the cell can burn.
 
 #### burnElementAtCell() :id=sandkit.api.fire.burnelementatcell
 
-<p class="smt-member-path"><code>sandkit.api.fire.burnElementAtCell()</code></p>
-
 ```ts
-burnElementAtCell(...args: CellCoordinates): void
+sandkit.api.fire.burnElementAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/fire.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L28)
@@ -6440,10 +6197,10 @@ Burn the element at the cell. Main-entry writes are deferred; reads see the old 
 
 ***
 
-#### ~~burnElementAtCellWhenIdle()~~
+#### ~~burnElementAtCellWhenIdle()~~ :id=sandkit.api.fire.burnelementatcellwhenidle
 
 ```ts
-burnElementAtCellWhenIdle(...args: CellCoordinates): void
+sandkit.api.fire.burnElementAtCellWhenIdle(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/fire.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L35)
@@ -6483,7 +6240,6 @@ Available as `sandkit.api.game`.
 #### GameStartOptions :id=sandkit.api.game.gamestartoptions
 
 <p class="smt-member-path"><code>sandkit.api.game.GameStartOptions</code></p>
-
 Defined in: [sandkit/api/game.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L24)
 
 Options for [start](#start).
@@ -6504,10 +6260,8 @@ When true, skip the intro sequence.
 
 #### start() :id=sandkit.api.game.start
 
-<p class="smt-member-path"><code>sandkit.api.game.start()</code></p>
-
 ```ts
-start(options?: GameStartOptions): void
+sandkit.api.game.start(options?: GameStartOptions): void
 ```
 
 Defined in: [sandkit/api/game.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L21)
@@ -6547,10 +6301,8 @@ Main thread only.
 
 #### get() :id=sandkit.api.gameConfig.get
 
-<p class="smt-member-path"><code>sandkit.api.gameConfig.get()</code></p>
-
 ```ts
-get(key: string): JsonValueV1 | undefined
+sandkit.api.gameConfig.get(key: string): JsonValueV1 | undefined
 ```
 
 Defined in: [sandkit/api/gameconfig.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L12)
@@ -6573,10 +6325,8 @@ Game config key (merged defaults and overrides).
 
 #### getAll() :id=sandkit.api.gameConfig.getall
 
-<p class="smt-member-path"><code>sandkit.api.gameConfig.getAll()</code></p>
-
 ```ts
-getAll(): JsonObjectV1
+sandkit.api.gameConfig.getAll(): JsonObjectV1
 ```
 
 Defined in: [sandkit/api/gameconfig.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L14)
@@ -6604,7 +6354,6 @@ Main thread only.
 #### GridMutationWriter :id=sandkit.api.grid.gridmutationwriter
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriter</code></p>
-
 Defined in: [sandkit/api/grid.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L166)
 
 Deferred element and terrain mutations passed to [mutate](#mutate).
@@ -6636,7 +6385,6 @@ Terrain cell mutations inside a [mutate](#mutate) callback.
 #### GridMutationWriterElements :id=sandkit.api.grid.gridmutationwriterelements
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriterElements</code></p>
-
 Defined in: [sandkit/api/grid.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L174)
 
 Element writers available on [GridMutationWriter.elements](#elements).
@@ -6720,7 +6468,6 @@ Remove the element at a cell inside a [mutate](#mutate) callback.
 #### GridMutationWriterTerrains :id=sandkit.api.grid.gridmutationwriterterrains
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridMutationWriterTerrains</code></p>
-
 Defined in: [sandkit/api/grid.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L224)
 
 Terrain writers available on [GridMutationWriter.terrains](#terrains).
@@ -6804,7 +6551,6 @@ Remove terrain at a cell inside a [mutate](#mutate) callback.
 #### GridDimensions :id=sandkit.api.grid.griddimensions
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridDimensions</code></p>
-
 Defined in: [shared/api/grid.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L80)
 
 World grid width and height in cells.
@@ -6836,7 +6582,6 @@ Grid height in cells.
 #### ExcavateOptions :id=sandkit.api.grid.excavateoptions
 
 <p class="smt-member-path"><code>sandkit.api.grid.ExcavateOptions</code></p>
-
 Defined in: [shared/api/grid.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L88)
 
 Flags that control how [excavateAtCell](#excavateatcell) resolves damage and drops.
@@ -6917,10 +6662,8 @@ Extra drill-tier damage when [fromDrill](#fromdrill) is true. Clamped to 0–100
 
 #### CellId :id=sandkit.api.grid.cellid
 
-<p class="smt-member-path"><code>sandkit.api.grid.CellId</code></p>
-
 ```ts
-CellId = CellId
+sandkit.api.grid.CellId = CellId
 ```
 
 Defined in: [shared/api/grid.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L77)
@@ -6931,10 +6674,8 @@ Packed cell id from [getCellIdAtCell](#getcellidatcell).
 
 #### mutate() :id=sandkit.api.grid.mutate
 
-<p class="smt-member-path"><code>sandkit.api.grid.mutate()</code></p>
-
 ```ts
-mutate(callback: (writer: GridMutationWriter) => void): void
+sandkit.api.grid.mutate(callback: (writer: GridMutationWriter) => void): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L91)
@@ -6987,10 +6728,8 @@ api.events.on("item:used", ({ itemId, cellX, cellY }) => {
 
 #### revealFogAtCell() :id=sandkit.api.grid.revealfogatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.revealFogAtCell()</code></p>
-
 ```ts
-revealFogAtCell(...args: CellCoordinates): void
+sandkit.api.grid.revealFogAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L101)
@@ -7015,10 +6754,8 @@ Reveal fog of war at a cell.
 
 #### redrawAroundCell() :id=sandkit.api.grid.redrawaroundcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.redrawAroundCell()</code></p>
-
 ```ts
-redrawAroundCell(...args: [number, number, number]): void
+sandkit.api.grid.redrawAroundCell(...args: [number, number, number]): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L112)
@@ -7043,10 +6780,8 @@ Request redraw around a cell.
 
 #### forEachCellInCircle() :id=sandkit.api.grid.foreachcellincircle
 
-<p class="smt-member-path"><code>sandkit.api.grid.forEachCellInCircle()</code></p>
-
 ```ts
-forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) => void): void
+sandkit.api.grid.forEachCellInCircle(centerCellX: number, centerCellY: number, radiusCells: number, callback: (...args: CellCoordinates) => void): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L124)
@@ -7091,10 +6826,8 @@ Invoked for each cell with `(cellX, cellY)`.
 
 #### forEachCellInRectangle() :id=sandkit.api.grid.foreachcellinrectangle
 
-<p class="smt-member-path"><code>sandkit.api.grid.forEachCellInRectangle()</code></p>
-
 ```ts
-forEachCellInRectangle(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
+sandkit.api.grid.forEachCellInRectangle(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L142)
@@ -7117,10 +6850,10 @@ Calls the callback for each cell in a rectangle.
 
 ***
 
-#### ~~forEachCellInRect()~~
+#### ~~forEachCellInRect()~~ :id=sandkit.api.grid.foreachcellinrect
 
 ```ts
-forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
+sandkit.api.grid.forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) => void]): void
 ```
 
 Defined in: [sandkit/api/grid.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L156)
@@ -7147,10 +6880,8 @@ Use [forEachCellInRectangle](#foreachcellinrectangle) instead.
 
 #### getCellIdAtCell() :id=sandkit.api.grid.getcellidatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.getCellIdAtCell()</code></p>
-
 ```ts
-getCellIdAtCell(...args: CellCoordinates): CellId
+sandkit.api.grid.getCellIdAtCell(...args: CellCoordinates): CellId
 ```
 
 Defined in: [shared/api/grid.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L22)
@@ -7177,10 +6908,8 @@ Packed cell id for the cell.
 
 #### isCellEmptyAtCell() :id=sandkit.api.grid.iscellemptyatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.isCellEmptyAtCell()</code></p>
-
 ```ts
-isCellEmptyAtCell(...args: CellCoordinates): boolean
+sandkit.api.grid.isCellEmptyAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/grid.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L32)
@@ -7205,10 +6934,8 @@ Return true when the cell has no element or terrain content.
 
 #### isTerrainAtCell() :id=sandkit.api.grid.isterrainatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.isTerrainAtCell()</code></p>
-
 ```ts
-isTerrainAtCell(...args: CellCoordinates): boolean
+sandkit.api.grid.isTerrainAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/grid.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L42)
@@ -7233,10 +6960,8 @@ Return true when the cell holds terrain (not an element).
 
 #### reportActivityAtCell() :id=sandkit.api.grid.reportactivityatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.reportActivityAtCell()</code></p>
-
 ```ts
-reportActivityAtCell(...args: CellCoordinates): void
+sandkit.api.grid.reportActivityAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [shared/api/grid.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L52)
@@ -7261,10 +6986,8 @@ Mark the cell active for simulation this tick.
 
 #### excavateAtCell() :id=sandkit.api.grid.excavateatcell
 
-<p class="smt-member-path"><code>sandkit.api.grid.excavateAtCell()</code></p>
-
 ```ts
-excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): void
+sandkit.api.grid.excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): void
 ```
 
 Defined in: [shared/api/grid.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L65)
@@ -7289,10 +7012,8 @@ Apply excavation damage and eject velocity at a cell.
 
 #### getDimensions() :id=sandkit.api.grid.getdimensions
 
-<p class="smt-member-path"><code>sandkit.api.grid.getDimensions()</code></p>
-
 ```ts
-getDimensions(): GridDimensions
+sandkit.api.grid.getDimensions(): GridDimensions
 ```
 
 Defined in: [shared/api/grid.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L74)
@@ -7319,7 +7040,6 @@ Main thread only.
 #### HookContext :id=sandkit.api.hooks.hookcontext
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookContext</code></p>
-
 Defined in: [sandkit/api/hooks.d.ts:397](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L397)
 
 Context passed to intercept hook callbacks.
@@ -7357,7 +7077,6 @@ When called, the intercepted action is skipped.
 #### HookOptions :id=sandkit.api.hooks.hookoptions
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookOptions</code></p>
-
 Defined in: [sandkit/api/hooks.d.ts:405](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L405)
 
 Options shared by intercept and modify hooks.
@@ -7385,7 +7104,6 @@ Run this hook before others with lower priority.
 #### InterceptHookMap :id=sandkit.api.hooks.intercepthookmap
 
 <p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookMap</code></p>
-
 Defined in: [sandkit/api/hooks.d.ts:497](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L497)
 
 Intercept hook argument shapes keyed by hook id.
@@ -8057,7 +7775,6 @@ costs: Record<string, unknown>
 #### ModifierHookMap :id=sandkit.api.hooks.modifierhookmap
 
 <p class="smt-member-path"><code>sandkit.api.hooks.ModifierHookMap</code></p>
-
 Defined in: [sandkit/api/hooks.d.ts:583](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L583)
 
 Modify hook argument shapes keyed by hook id.
@@ -8868,10 +8585,8 @@ shortfall: number
 
 #### InterceptHookOptions :id=sandkit.api.hooks.intercepthookoptions
 
-<p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookOptions</code></p>
-
 ```ts
-InterceptHookOptions<K *extends* InterceptHookId> = HookOptions & K *extends* "item:use" ? object : K *extends* "entity:update" ? object : K *extends* "building:place" ? object : K *extends* "projectile:fire:overStructure" | "projectile:hit" ? object : Record<string, unknown>
+sandkit.api.hooks.InterceptHookOptions<K *extends* InterceptHookId> = HookOptions & K *extends* "item:use" ? object : K *extends* "entity:update" ? object : K *extends* "building:place" ? object : K *extends* "projectile:fire:overStructure" | "projectile:hit" ? object : Record<string, unknown>
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:412](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L412)
@@ -8888,10 +8603,8 @@ Options for [intercept](#intercept).
 
 #### ModifyHookOptions :id=sandkit.api.hooks.modifyhookoptions
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookOptions</code></p>
-
 ```ts
-ModifyHookOptions = HookOptions & { weaponIds?: string[]; priority?: number; } | { projectileTypes?: string[]; priority?: number; } | { triggerIds?: string[]; priority?: number; } | { resourceIds?: string[]; priority?: number; } | Record<string, unknown>
+sandkit.api.hooks.ModifyHookOptions = HookOptions & { weaponIds?: string[]; priority?: number; } | { projectileTypes?: string[]; priority?: number; } | { triggerIds?: string[]; priority?: number; } | { resourceIds?: string[]; priority?: number; } | Record<string, unknown>
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L424)
@@ -8902,10 +8615,8 @@ Options for [modify](#modify).
 
 #### InterceptHookId :id=sandkit.api.hooks.intercepthookid
 
-<p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookId</code></p>
-
 ```ts
-InterceptHookId = LooseString<"item:use" | "teleport:effect:create" | "teleport:effect" | "action:start" | "action:intercept" | "input:keyDown" | "input:keydown" | "input:keyUp" | "input:keyup" | "placePoints:suppress" | "placePoints:isSuppressed" | "placePoints:directionalArrows:suppress" | "placePoints:directionalArrows:isSuppressed" | "entity:update" | "building:place" | "building:clearShape" | "input:scroll" | "input:boostDown" | "input:boost-down" | "input:descendDown" | "input:descend-down" | "input:escape" | "interactable:suppressHover" | "fire:element:ignite" | "projectile:fire:overStructure" | "projectile:hit" | "player:position:commit" | "progression:purchase">
+sandkit.api.hooks.InterceptHookId = LooseString<"item:use" | "teleport:effect:create" | "teleport:effect" | "action:start" | "action:intercept" | "input:keyDown" | "input:keydown" | "input:keyUp" | "input:keyup" | "placePoints:suppress" | "placePoints:isSuppressed" | "placePoints:directionalArrows:suppress" | "placePoints:directionalArrows:isSuppressed" | "entity:update" | "building:place" | "building:clearShape" | "input:scroll" | "input:boostDown" | "input:boost-down" | "input:descendDown" | "input:descend-down" | "input:escape" | "interactable:suppressHover" | "fire:element:ignite" | "projectile:fire:overStructure" | "projectile:hit" | "player:position:commit" | "progression:purchase">
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:434](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L434)
@@ -8916,10 +8627,8 @@ Known main-thread intercept hook ids plus custom strings.
 
 #### ModifyHookId :id=sandkit.api.hooks.modifyhookid
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookId</code></p>
-
 ```ts
-ModifyHookId = LooseString<"excavation:prepare" | "locator:scan:prepare" | "vacuum:prepare" | "vacuum:element:prepare" | "player:movement:prepare" | "player:movement" | "building:placementLimit:prepare" | "building:placementLimit" | "building:placement-limit" | "fluxEmanator:processing:prepare" | "fluxEmanator:processing" | "flux-emanator:processing" | "render:pipes:prepare" | "render:pipes" | "structures:moved:prepare" | "structures:removed:prepare" | "weapon:reload:prepare" | "projectile:travel:prepare" | "projectile:impact:prepare" | "player:collision:prepare" | "trigger:schedule:prepare" | "progression:cost:prepare" | "resource:collection:prepare" | "resource:delivery:prepare" | "resource:balance:prepare" | "gold:removal:prepare" | "gold:removal:settle">
+sandkit.api.hooks.ModifyHookId = LooseString<"excavation:prepare" | "locator:scan:prepare" | "vacuum:prepare" | "vacuum:element:prepare" | "player:movement:prepare" | "player:movement" | "building:placementLimit:prepare" | "building:placementLimit" | "building:placement-limit" | "fluxEmanator:processing:prepare" | "fluxEmanator:processing" | "flux-emanator:processing" | "render:pipes:prepare" | "render:pipes" | "structures:moved:prepare" | "structures:removed:prepare" | "weapon:reload:prepare" | "projectile:travel:prepare" | "projectile:impact:prepare" | "player:collision:prepare" | "trigger:schedule:prepare" | "progression:cost:prepare" | "resource:collection:prepare" | "resource:delivery:prepare" | "resource:balance:prepare" | "gold:removal:prepare" | "gold:removal:settle">
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:466](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L466)
@@ -8930,10 +8639,8 @@ Known main-thread modify hook ids plus custom strings.
 
 #### InterceptHookArgs :id=sandkit.api.hooks.intercepthookargs
 
-<p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookArgs</code></p>
-
 ```ts
-InterceptHookArgs<K *extends* InterceptHookId> = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown
+sandkit.api.hooks.InterceptHookArgs<K *extends* InterceptHookId> = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:720](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L720)
@@ -8950,10 +8657,8 @@ Intercept hook args for a given hook id.
 
 #### ModifyHookArgs :id=sandkit.api.hooks.modifyhookargs
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookArgs</code></p>
-
 ```ts
-ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof ModifierHookMap ? ModifierHookMap[K] : unknown
+sandkit.api.hooks.ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof ModifierHookMap ? ModifierHookMap[K] : unknown
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:725](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L725)
@@ -8970,10 +8675,8 @@ Modify hook args for a given hook id.
 
 #### intercept() :id=sandkit.api.hooks.intercept
 
-<p class="smt-member-path"><code>sandkit.api.hooks.intercept()</code></p>
-
 ```ts
-intercept<K *extends* InterceptHookId>(hookId: K, callback: (args: InterceptHookArgs<K>, context: HookContext) => void, options?: InterceptHookOptions<K>): () => void
+sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (args: InterceptHookArgs<K>, context: HookContext) => void, options?: InterceptHookOptions<K>): () => void
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L178)
@@ -9201,10 +8904,8 @@ api.hooks.intercept("progression:purchase", (args, context) => {
 
 #### modify() :id=sandkit.api.hooks.modify
 
-<p class="smt-member-path"><code>sandkit.api.hooks.modify()</code></p>
-
 ```ts
-modify<K *extends* ModifyHookId>(hookId: K, callback: (args: ModifyHookArgs<K>) => void, options?: ModifyHookOptions): () => void
+sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: ModifyHookArgs<K>) => void, options?: ModifyHookOptions): () => void
 ```
 
 Defined in: [sandkit/api/hooks.d.ts:390](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L390)
@@ -9477,7 +9178,6 @@ Main thread only.
 #### I18nNumberFormatOptions :id=sandkit.api.i18n.i18nnumberformatoptions
 
 <p class="smt-member-path"><code>sandkit.api.i18n.I18nNumberFormatOptions</code></p>
-
 Defined in: [sandkit/api/i18n.d.ts:227](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L227)
 
 Number format options for [formatNumber](#formatnumber).
@@ -9524,10 +9224,8 @@ When true, use grouping separators.
 
 #### Locale :id=sandkit.api.i18n.locale
 
-<p class="smt-member-path"><code>sandkit.api.i18n.Locale</code></p>
-
 ```ts
-Locale = LooseString<"en">
+sandkit.api.i18n.Locale = LooseString<"en">
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L224)
@@ -9538,10 +9236,8 @@ Locale code. `"en"` autocompletes; any locale string is allowed.
 
 #### t() :id=sandkit.api.i18n.t
 
-<p class="smt-member-path"><code>sandkit.api.i18n.t()</code></p>
-
 ```ts
-t(key: string, params?: Record<string, string | number>): string
+sandkit.api.i18n.t(key: string, params?: Record<string, string | number>): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L23)
@@ -9582,10 +9278,8 @@ const message = api.i18n.t("mods|example|count", {
 
 #### register() :id=sandkit.api.i18n.register
 
-<p class="smt-member-path"><code>sandkit.api.i18n.register()</code></p>
-
 ```ts
-register(locale: Locale, translations: Record<string, string>): void
+sandkit.api.i18n.register(locale: Locale, translations: Record<string, string>): void
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L40)
@@ -9626,10 +9320,8 @@ api.i18n.register("en", {
 
 #### getLocale() :id=sandkit.api.i18n.getlocale
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getLocale()</code></p>
-
 ```ts
-getLocale(): Locale
+sandkit.api.i18n.getLocale(): Locale
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L47)
@@ -9648,10 +9340,8 @@ Returns the active locale code.
 
 #### hasTranslation() :id=sandkit.api.i18n.hastranslation
 
-<p class="smt-member-path"><code>sandkit.api.i18n.hasTranslation()</code></p>
-
 ```ts
-hasTranslation(key: string, locale?: Locale): boolean
+sandkit.api.i18n.hasTranslation(key: string, locale?: Locale): boolean
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L57)
@@ -9684,10 +9374,8 @@ Optional locale; defaults to the active locale.
 
 #### setLocale() :id=sandkit.api.i18n.setlocale
 
-<p class="smt-member-path"><code>sandkit.api.i18n.setLocale()</code></p>
-
 ```ts
-setLocale(locale: Locale): Promise<void>
+sandkit.api.i18n.setLocale(locale: Locale): Promise<void>
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L66)
@@ -9714,10 +9402,8 @@ Locale code to activate.
 
 #### getLanguages() :id=sandkit.api.i18n.getlanguages
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getLanguages()</code></p>
-
 ```ts
-getLanguages(): object[]
+sandkit.api.i18n.getLanguages(): object[]
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L73)
@@ -9736,10 +9422,8 @@ Returns metadata for all known languages.
 
 #### getAvailableLocales() :id=sandkit.api.i18n.getavailablelocales
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getAvailableLocales()</code></p>
-
 ```ts
-getAvailableLocales(): Locale[]
+sandkit.api.i18n.getAvailableLocales(): Locale[]
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L85)
@@ -9758,10 +9442,8 @@ Returns locale codes that have registered translations.
 
 #### formatNumber() :id=sandkit.api.i18n.formatnumber
 
-<p class="smt-member-path"><code>sandkit.api.i18n.formatNumber()</code></p>
-
 ```ts
-formatNumber(value: number, options?: I18nNumberFormatOptions): string
+sandkit.api.i18n.formatNumber(value: number, options?: I18nNumberFormatOptions): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L102)
@@ -9802,10 +9484,8 @@ const formatted = api.i18n.formatNumber(1234.5, {
 
 #### joinKey() :id=sandkit.api.i18n.joinkey
 
-<p class="smt-member-path"><code>sandkit.api.i18n.joinKey()</code></p>
-
 ```ts
-joinKey(...parts: string[]): string
+sandkit.api.i18n.joinKey(...parts: string[]): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L111)
@@ -9830,10 +9510,10 @@ Key segments joined with `.`.
 
 ***
 
-#### ~~key()~~
+#### ~~key()~~ :id=sandkit.api.i18n.key
 
 ```ts
-key(...parts: string[]): string
+sandkit.api.i18n.key(...parts: string[]): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L118)
@@ -9860,10 +9540,8 @@ Use [joinKey](#joinkey) instead.
 
 #### getName() :id=sandkit.api.i18n.getname
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getName()</code></p>
-
 ```ts
-getName(definition: object): string
+sandkit.api.i18n.getName(definition: object): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L135)
@@ -9905,10 +9583,8 @@ const name = api.i18n.getName({
 
 #### getDescription() :id=sandkit.api.i18n.getdescription
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getDescription()</code></p>
-
 ```ts
-getDescription(definition: object): string
+sandkit.api.i18n.getDescription(definition: object): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L144)
@@ -9941,10 +9617,8 @@ Object with `descriptionKey` or `description`.
 
 #### createTranslatable() :id=sandkit.api.i18n.createtranslatable
 
-<p class="smt-member-path"><code>sandkit.api.i18n.createTranslatable()</code></p>
-
 ```ts
-createTranslatable(key: string, fallback: string): object
+sandkit.api.i18n.createTranslatable(key: string, fallback: string): object
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L157)
@@ -9993,10 +9667,10 @@ fallback: string
 
 ***
 
-#### ~~translatable()~~
+#### ~~translatable()~~ :id=sandkit.api.i18n.translatable
 
 ```ts
-translatable(key: string, fallback: string): object
+sandkit.api.i18n.translatable(key: string, fallback: string): object
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L167)
@@ -10045,10 +9719,8 @@ Use [createTranslatable](#createtranslatable) instead.
 
 #### setGlobal() :id=sandkit.api.i18n.setglobal
 
-<p class="smt-member-path"><code>sandkit.api.i18n.setGlobal()</code></p>
-
 ```ts
-setGlobal(key: string, value: string | (() => string)): void
+sandkit.api.i18n.setGlobal(key: string, value: string | (() => string)): void
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L180)
@@ -10081,10 +9753,8 @@ Static string or function that returns the current value.
 
 #### getGlobal() :id=sandkit.api.i18n.getglobal
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getGlobal()</code></p>
-
 ```ts
-getGlobal(key: string): string | undefined
+sandkit.api.i18n.getGlobal(key: string): string | undefined
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L189)
@@ -10111,10 +9781,8 @@ Global helper key.
 
 #### removeGlobal() :id=sandkit.api.i18n.removeglobal
 
-<p class="smt-member-path"><code>sandkit.api.i18n.removeGlobal()</code></p>
-
 ```ts
-removeGlobal(key: string): void
+sandkit.api.i18n.removeGlobal(key: string): void
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:198](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L198)
@@ -10139,10 +9807,10 @@ Global helper key.
 
 ***
 
-#### ~~clearGlobal()~~
+#### ~~clearGlobal()~~ :id=sandkit.api.i18n.clearglobal
 
 ```ts
-clearGlobal(key: string): void
+sandkit.api.i18n.clearGlobal(key: string): void
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L205)
@@ -10169,10 +9837,8 @@ Use [removeGlobal](#removeglobal) instead.
 
 #### getGlobals() :id=sandkit.api.i18n.getglobals
 
-<p class="smt-member-path"><code>sandkit.api.i18n.getGlobals()</code></p>
-
 ```ts
-getGlobals(): Record<string, string>
+sandkit.api.i18n.getGlobals(): Record<string, string>
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L212)
@@ -10191,10 +9857,8 @@ Returns all global translation helper values.
 
 #### formatKeyForDisplay() :id=sandkit.api.i18n.formatkeyfordisplay
 
-<p class="smt-member-path"><code>sandkit.api.i18n.formatKeyForDisplay()</code></p>
-
 ```ts
-formatKeyForDisplay(keyCode: string): string
+sandkit.api.i18n.formatKeyForDisplay(keyCode: string): string
 ```
 
 Defined in: [sandkit/api/i18n.d.ts:221](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L221)
@@ -10229,7 +9893,6 @@ Main thread only.
 #### InputBindingHandlers :id=sandkit.api.input.inputbindinghandlers
 
 <p class="smt-member-path"><code>sandkit.api.input.InputBindingHandlers</code></p>
-
 Defined in: [sandkit/api/input.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L117)
 
 Handlers invoked when a binding is pressed or released.
@@ -10269,7 +9932,6 @@ Called when the binding is released.
 #### InputBindingDefinition :id=sandkit.api.input.inputbindingdefinition
 
 <p class="smt-member-path"><code>sandkit.api.input.InputBindingDefinition</code></p>
-
 Defined in: [sandkit/api/input.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L125)
 
 Definition for a registered input binding.
@@ -10326,10 +9988,8 @@ Press and release handlers.
 
 #### BindingId :id=sandkit.api.input.bindingid
 
-<p class="smt-member-path"><code>sandkit.api.input.BindingId</code></p>
-
 ```ts
-BindingId = LooseString<` ${KeyBinding} `>
+sandkit.api.input.BindingId = LooseString<` ${KeyBinding} `>
 ```
 
 Defined in: [sandkit/api/input.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L96)
@@ -10340,10 +10000,8 @@ Binding id. Vanilla [KeyBindingEnum](api/sandkit.enums.KeyBinding.md) names auto
 
 #### KeyCode :id=sandkit.api.input.keycode
 
-<p class="smt-member-path"><code>sandkit.api.input.KeyCode</code></p>
-
 ```ts
-KeyCode = LooseString<"Shift" | "Alt" | "Control" | "Meta" | "ShiftLeft" | "ShiftRight" | "AltLeft" | "AltRight" | "ControlLeft" | "ControlRight" | "MetaLeft" | "MetaRight">
+sandkit.api.input.KeyCode = LooseString<"Shift" | "Alt" | "Control" | "Meta" | "ShiftLeft" | "ShiftRight" | "AltLeft" | "AltRight" | "ControlLeft" | "ControlRight" | "MetaLeft" | "MetaRight">
 ```
 
 Defined in: [sandkit/api/input.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L101)
@@ -10354,10 +10012,8 @@ KeyboardEvent.code, a modifier alias (`Shift`), or a chord (`Control+KeyC`).
 
 #### registerBinding() :id=sandkit.api.input.registerbinding
 
-<p class="smt-member-path"><code>sandkit.api.input.registerBinding()</code></p>
-
 ```ts
-registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputBindingDefinition): BindingId
+sandkit.api.input.registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputBindingDefinition): BindingId
 ```
 
 Defined in: [sandkit/api/input.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L31)
@@ -10410,10 +10066,8 @@ api.input.registerBinding("ExampleToggle", ["KeyO"], {
 
 #### getMouseCellPosition() :id=sandkit.api.input.getmousecellposition
 
-<p class="smt-member-path"><code>sandkit.api.input.getMouseCellPosition()</code></p>
-
 ```ts
-getMouseCellPosition(): object
+sandkit.api.input.getMouseCellPosition(): object
 ```
 
 Defined in: [sandkit/api/input.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L41)
@@ -10442,10 +10096,8 @@ y: number
 
 #### getBoundKeys() :id=sandkit.api.input.getboundkeys
 
-<p class="smt-member-path"><code>sandkit.api.input.getBoundKeys()</code></p>
-
 ```ts
-getBoundKeys(bindingId: BindingId): KeyCode[]
+sandkit.api.input.getBoundKeys(bindingId: BindingId): KeyCode[]
 ```
 
 Defined in: [sandkit/api/input.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L50)
@@ -10472,10 +10124,8 @@ Session `input.keys` is keyed by `KeyboardEvent.code`. Modifier aliases
 
 #### getDisplayKey() :id=sandkit.api.input.getdisplaykey
 
-<p class="smt-member-path"><code>sandkit.api.input.getDisplayKey()</code></p>
-
 ```ts
-getDisplayKey(bindingId: BindingId, defaultLabel?: string): string
+sandkit.api.input.getDisplayKey(bindingId: BindingId, defaultLabel?: string): string
 ```
 
 Defined in: [sandkit/api/input.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L58)
@@ -10506,10 +10156,8 @@ Human-readable key label for UI.
 
 #### triggerBinding() :id=sandkit.api.input.triggerbinding
 
-<p class="smt-member-path"><code>sandkit.api.input.triggerBinding()</code></p>
-
 ```ts
-triggerBinding(bindingId: BindingId): void
+sandkit.api.input.triggerBinding(bindingId: BindingId): void
 ```
 
 Defined in: [sandkit/api/input.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L64)
@@ -10532,10 +10180,8 @@ Registered binding id.
 
 #### pressBinding() :id=sandkit.api.input.pressbinding
 
-<p class="smt-member-path"><code>sandkit.api.input.pressBinding()</code></p>
-
 ```ts
-pressBinding(bindingId: BindingId): void
+sandkit.api.input.pressBinding(bindingId: BindingId): void
 ```
 
 Defined in: [sandkit/api/input.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L70)
@@ -10558,10 +10204,8 @@ Registered binding id.
 
 #### releaseBinding() :id=sandkit.api.input.releasebinding
 
-<p class="smt-member-path"><code>sandkit.api.input.releaseBinding()</code></p>
-
 ```ts
-releaseBinding(bindingId: BindingId): void
+sandkit.api.input.releaseBinding(bindingId: BindingId): void
 ```
 
 Defined in: [sandkit/api/input.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L76)
@@ -10584,10 +10228,8 @@ Registered binding id.
 
 #### resetMouseState() :id=sandkit.api.input.resetmousestate
 
-<p class="smt-member-path"><code>sandkit.api.input.resetMouseState()</code></p>
-
 ```ts
-resetMouseState(): void
+sandkit.api.input.resetMouseState(): void
 ```
 
 Defined in: [sandkit/api/input.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L79)
@@ -10602,10 +10244,8 @@ Clear internal mouse button state.
 
 #### isCtrlHeld() :id=sandkit.api.input.isctrlheld
 
-<p class="smt-member-path"><code>sandkit.api.input.isCtrlHeld()</code></p>
-
 ```ts
-isCtrlHeld(): boolean
+sandkit.api.input.isCtrlHeld(): boolean
 ```
 
 Defined in: [sandkit/api/input.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L85)
@@ -10622,10 +10262,8 @@ True when the Ctrl modifier is down.
 
 #### isAltHeld() :id=sandkit.api.input.isaltheld
 
-<p class="smt-member-path"><code>sandkit.api.input.isAltHeld()</code></p>
-
 ```ts
-isAltHeld(): boolean
+sandkit.api.input.isAltHeld(): boolean
 ```
 
 Defined in: [sandkit/api/input.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L91)
@@ -10650,7 +10288,6 @@ Main thread only.
 #### ItemDefinition :id=sandkit.api.items.itemdefinition
 
 <p class="smt-member-path"><code>sandkit.api.items.ItemDefinition</code></p>
-
 Defined in: [sandkit/api/items.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L10)
 
 Definition for a mod-registered inventory item.
@@ -10721,10 +10358,8 @@ Called after the item is rendered each frame.
 
 #### ItemId :id=sandkit.api.items.itemid
 
-<p class="smt-member-path"><code>sandkit.api.items.ItemId</code></p>
-
 ```ts
-ItemId = ItemId | LooseString<never>
+sandkit.api.items.ItemId = ItemId | LooseString<never>
 ```
 
 Defined in: [sandkit/api/items.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L59)
@@ -10736,10 +10371,8 @@ Built-in [ItemIdEnum](api/sandkit.enums.ItemId.md) values autocomplete; custom s
 
 #### ItemType :id=sandkit.api.items.itemtype
 
-<p class="smt-member-path"><code>sandkit.api.items.ItemType</code></p>
-
 ```ts
-ItemType = ItemType | TaggedNumber<"itemType">
+sandkit.api.items.ItemType = ItemType | TaggedNumber<"itemType">
 ```
 
 Defined in: [sandkit/api/items.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L64)
@@ -10751,10 +10384,8 @@ Built-in [ItemTypeEnum](api/sandkit.enums.ItemType.md) values autocomplete.
 
 #### ModItem :id=sandkit.api.items.moditem
 
-<p class="smt-member-path"><code>sandkit.api.items.ModItem</code></p>
-
 ```ts
-ModItem = unknown
+sandkit.api.items.ModItem = unknown
 ```
 
 Defined in: [sandkit/api/items.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L66)
@@ -10765,10 +10396,8 @@ Runtime item instance (not yet typed in declarations).
 
 #### register() :id=sandkit.api.items.register
 
-<p class="smt-member-path"><code>sandkit.api.items.register()</code></p>
-
 ```ts
-register(definition: ItemDefinition): void
+sandkit.api.items.register(definition: ItemDefinition): void
 ```
 
 Defined in: [sandkit/api/items.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L22)
@@ -10791,10 +10420,8 @@ Item id, handlers, and display metadata.
 
 #### updateDefinition() :id=sandkit.api.items.updatedefinition
 
-<p class="smt-member-path"><code>sandkit.api.items.updateDefinition()</code></p>
-
 ```ts
-updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
+sandkit.api.items.updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
 ```
 
 Defined in: [sandkit/api/items.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L35)
@@ -10831,10 +10458,8 @@ api.items.updateDefinition("exampleTool", {
 
 #### getDefinitionById() :id=sandkit.api.items.getdefinitionbyid
 
-<p class="smt-member-path"><code>sandkit.api.items.getDefinitionById()</code></p>
-
 ```ts
-getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
+sandkit.api.items.getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 ```
 
 Defined in: [sandkit/api/items.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L40)
@@ -10857,10 +10482,8 @@ Registered item id.
 
 #### createFromId() :id=sandkit.api.items.createfromid
 
-<p class="smt-member-path"><code>sandkit.api.items.createFromId()</code></p>
-
 ```ts
-createFromId(itemId: ItemId): unknown
+sandkit.api.items.createFromId(itemId: ItemId): unknown
 ```
 
 Defined in: [sandkit/api/items.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L45)
@@ -10883,10 +10506,8 @@ Registered item id.
 
 #### getActive() :id=sandkit.api.items.getactive
 
-<p class="smt-member-path"><code>sandkit.api.items.getActive()</code></p>
-
 ```ts
-getActive(): ItemDefinition<unknown, unknown> | undefined
+sandkit.api.items.getActive(): ItemDefinition<unknown, unknown> | undefined
 ```
 
 Defined in: [sandkit/api/items.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L47)
@@ -10901,10 +10522,8 @@ Returns the item definition for the active hotbar slot.
 
 #### isActiveById() :id=sandkit.api.items.isactivebyid
 
-<p class="smt-member-path"><code>sandkit.api.items.isActiveById()</code></p>
-
 ```ts
-isActiveById(itemId: ItemId, itemType?: ItemType): boolean
+sandkit.api.items.isActiveById(itemId: ItemId, itemType?: ItemType): boolean
 ```
 
 Defined in: [sandkit/api/items.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L53)
@@ -10946,7 +10565,6 @@ Main thread only.
 #### TemporaryLightHandle :id=sandkit.api.lights.temporarylighthandle
 
 <p class="smt-member-path"><code>sandkit.api.lights.TemporaryLightHandle</code></p>
-
 Defined in: [sandkit/api/lights.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L129)
 
 Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.md#createatworld).
@@ -10984,7 +10602,6 @@ Use [lightId](#lightid) instead.
 #### PersistentLightOptions :id=sandkit.api.lights.persistentlightoptions
 
 <p class="smt-member-path"><code>sandkit.api.lights.PersistentLightOptions</code></p>
-
 Defined in: [sandkit/api/lights.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L144)
 
 Options for persistent world lights.
@@ -11031,10 +10648,8 @@ RGBA color components.
 
 #### TemporaryLightOptions :id=sandkit.api.lights.temporarylightoptions
 
-<p class="smt-member-path"><code>sandkit.api.lights.TemporaryLightOptions</code></p>
-
 ```ts
-TemporaryLightOptions = TemporaryLightOptions
+sandkit.api.lights.TemporaryLightOptions = TemporaryLightOptions
 ```
 
 Defined in: [sandkit/api/lights.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L141)
@@ -11045,10 +10660,8 @@ Options for temporary lights.
 
 #### PersistentLightHandle :id=sandkit.api.lights.persistentlighthandle
 
-<p class="smt-member-path"><code>sandkit.api.lights.PersistentLightHandle</code></p>
-
 ```ts
-PersistentLightHandle = unknown
+sandkit.api.lights.PersistentLightHandle = unknown
 ```
 
 Defined in: [sandkit/api/lights.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L155)
@@ -11060,7 +10673,6 @@ Handle returned from [persistent.createAtWorld](api/sandkit.api.lights.persisten
 #### vfx :id=sandkit.api.lights.vfx
 
 <p class="smt-member-path"><code>sandkit.api.lights.vfx</code></p>
-
 Renames and re-exports [temporary](api/sandkit.api.lights.temporary.md)
 
 ---
@@ -11073,10 +10685,8 @@ Lights that persist in the world save.
 
 #### createAtWorld() :id=sandkit.api.lights.persistent.createatworld
 
-<p class="smt-member-path"><code>sandkit.api.lights.persistent.createAtWorld()</code></p>
-
 ```ts
-createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions): unknown
+sandkit.api.lights.persistent.createAtWorld(worldX: number, worldY: number, options?: PersistentLightOptions): unknown
 ```
 
 Defined in: [sandkit/api/lights.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L93)
@@ -11125,10 +10735,8 @@ const light = api.lights.persistent.createAtWorld(
 
 #### removeAtWorld() :id=sandkit.api.lights.persistent.removeatworld
 
-<p class="smt-member-path"><code>sandkit.api.lights.persistent.removeAtWorld()</code></p>
-
 ```ts
-removeAtWorld(worldX: number, worldY: number): void
+sandkit.api.lights.persistent.removeAtWorld(worldX: number, worldY: number): void
 ```
 
 Defined in: [sandkit/api/lights.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L107)
@@ -11161,10 +10769,8 @@ World Y coordinate in pixels.
 
 #### fadeAtWorld() :id=sandkit.api.lights.persistent.fadeatworld
 
-<p class="smt-member-path"><code>sandkit.api.lights.persistent.fadeAtWorld()</code></p>
-
 ```ts
-fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void
+sandkit.api.lights.persistent.fadeAtWorld(worldX: number, worldY: number, durationMs?: number): void
 ```
 
 Defined in: [sandkit/api/lights.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L118)
@@ -11203,10 +10809,8 @@ Fade duration in milliseconds.
 
 #### markDirty() :id=sandkit.api.lights.persistent.markdirty
 
-<p class="smt-member-path"><code>sandkit.api.lights.persistent.markDirty()</code></p>
-
 ```ts
-markDirty(): void
+sandkit.api.lights.persistent.markDirty(): void
 ```
 
 Defined in: [sandkit/api/lights.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L125)
@@ -11231,10 +10835,8 @@ Short-lived visual effect lights.
 
 #### createAtWorld() :id=sandkit.api.lights.temporary.createatworld
 
-<p class="smt-member-path"><code>sandkit.api.lights.temporary.createAtWorld()</code></p>
-
 ```ts
-createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
+sandkit.api.lights.temporary.createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
 Defined in: [sandkit/api/lights.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L43)
@@ -11302,10 +10904,8 @@ api.lights.temporary.createAtWorld(worldX, worldY, {
 
 #### removeById() :id=sandkit.api.lights.temporary.removebyid
 
-<p class="smt-member-path"><code>sandkit.api.lights.temporary.removeById()</code></p>
-
 ```ts
-removeById(lightId: number): void
+sandkit.api.lights.temporary.removeById(lightId: number): void
 ```
 
 Defined in: [sandkit/api/lights.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L63)
@@ -11345,7 +10945,6 @@ if (light.lightId !== null) {
 #### ArtifactLocation :id=sandkit.api.maps.artifactlocation
 
 <p class="smt-member-path"><code>sandkit.api.maps.ArtifactLocation</code></p>
-
 Defined in: [sandkit/api/maps.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L42)
 
 Artifact location entry from [getArtifactLocations](#getartifactlocations).
@@ -11387,7 +10986,6 @@ Defined in: [sandkit/api/maps.d.ts:45](https://github.com/sandustry-modding/Sand
 #### AvailableMapV1 :id=sandkit.api.maps.availablemapv1
 
 <p class="smt-member-path"><code>sandkit.api.maps.AvailableMapV1</code></p>
-
 Defined in: [sandkit/api/maps.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L50)
 
 Available map entry shape.
@@ -11424,10 +11022,8 @@ Display name or translation key.
 
 #### getAvailable() :id=sandkit.api.maps.getavailable
 
-<p class="smt-member-path"><code>sandkit.api.maps.getAvailable()</code></p>
-
 ```ts
-getAvailable(): readonly Readonly<AvailableMapV1>[]
+sandkit.api.maps.getAvailable(): readonly Readonly<AvailableMapV1>[]
 ```
 
 Defined in: [sandkit/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L18)
@@ -11442,10 +11038,8 @@ readonly `Readonly`\<[`AvailableMapV1`](#availablemapv1)\>[]
 
 #### start() :id=sandkit.api.maps.start
 
-<p class="smt-member-path"><code>sandkit.api.maps.start()</code></p>
-
 ```ts
-start(mapId: string): boolean
+sandkit.api.maps.start(mapId: string): boolean
 ```
 
 Defined in: [sandkit/api/maps.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L23)
@@ -11468,10 +11062,8 @@ Custom map identifier.
 
 #### getArtifactLocations() :id=sandkit.api.maps.getartifactlocations
 
-<p class="smt-member-path"><code>sandkit.api.maps.getArtifactLocations()</code></p>
-
 ```ts
-getArtifactLocations(): readonly ArtifactLocation[]
+sandkit.api.maps.getArtifactLocations(): readonly ArtifactLocation[]
 ```
 
 Defined in: [sandkit/api/maps.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L39)
@@ -11501,7 +11093,6 @@ api.events.on("game:ready", () => {
 #### getActive :id=sandkit.api.maps.getactive
 
 <p class="smt-member-path"><code>sandkit.api.maps.getActive</code></p>
-
 Re-exports [getActive](api/sandkit.api.maps.worker.md#getactive)
 
 ***
@@ -11509,7 +11100,6 @@ Re-exports [getActive](api/sandkit.api.maps.worker.md#getactive)
 #### ActiveMapV1 :id=sandkit.api.maps.activemapv1
 
 <p class="smt-member-path"><code>sandkit.api.maps.ActiveMapV1</code></p>
-
 Re-exports [ActiveMapV1](api/sandkit.api.maps.worker.md#activemapv1)
 
 ---
@@ -11520,10 +11110,8 @@ Re-exports [ActiveMapV1](api/sandkit.api.maps.worker.md#activemapv1)
 
 #### AssetProviderV1 :id=sandkit.api.mods.assetproviderv1
 
-<p class="smt-member-path"><code>sandkit.api.mods.AssetProviderV1</code></p>
-
 ```ts
-AssetProviderV1 = AssetProviderV1
+sandkit.api.mods.AssetProviderV1 = AssetProviderV1
 ```
 
 Defined in: [sandkit/api/mods.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L17)
@@ -11534,10 +11122,8 @@ Asset provider entry shape.
 
 #### getProviders() :id=sandkit.api.mods.getproviders
 
-<p class="smt-member-path"><code>sandkit.api.mods.getProviders()</code></p>
-
 ```ts
-getProviders(kind: string): readonly AssetProviderV1[]
+sandkit.api.mods.getProviders(kind: string): readonly AssetProviderV1[]
 ```
 
 Defined in: [sandkit/api/mods.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L15)
@@ -11564,10 +11150,8 @@ readonly [`AssetProviderV1`](api/sandkit.api.assets.md#assetproviderv1)[]
 
 #### PatternExcavateOptions :id=sandkit.api.patterns.patternexcavateoptions
 
-<p class="smt-member-path"><code>sandkit.api.patterns.PatternExcavateOptions</code></p>
-
 ```ts
-PatternExcavateOptions = ExcavateOptions
+sandkit.api.patterns.PatternExcavateOptions = ExcavateOptions
 ```
 
 Defined in: [sandkit/api/patterns.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L61)
@@ -11578,10 +11162,8 @@ Options for pattern-based excavation. Same shape as [shared.api.world.ExcavateOp
 
 #### createCircle() :id=sandkit.api.patterns.createcircle
 
-<p class="smt-member-path"><code>sandkit.api.patterns.createCircle()</code></p>
-
 ```ts
-createCircle(size: number): number[][]
+sandkit.api.patterns.createCircle(size: number): number[][]
 ```
 
 Defined in: [sandkit/api/patterns.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L17)
@@ -11606,10 +11188,8 @@ Square matrix with `1` inside the circle and `0` outside.
 
 #### excavateAtCell() :id=sandkit.api.patterns.excavateatcell
 
-<p class="smt-member-path"><code>sandkit.api.patterns.excavateAtCell()</code></p>
-
 ```ts
-excavateAtCell(...args: [number, number, number[][], Vector2, number, ExcavateOptions]): void
+sandkit.api.patterns.excavateAtCell(...args: [number, number, number[][], Vector2, number, ExcavateOptions]): void
 ```
 
 Defined in: [sandkit/api/patterns.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L50)
@@ -11669,7 +11249,6 @@ Available as `sandkit.api.pickups`.
 #### WorldItemLight :id=sandkit.api.pickups.worlditemlight
 
 <p class="smt-member-path"><code>sandkit.api.pickups.WorldItemLight</code></p>
-
 Defined in: [sandkit/api/pickups.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L22)
 
 Optional point light attached when spawning a pickup.
@@ -11711,7 +11290,6 @@ RGB or RGBA color components in 0–1 range.
 #### WorldItem :id=sandkit.api.pickups.worlditem
 
 <p class="smt-member-path"><code>sandkit.api.pickups.WorldItem</code></p>
-
 Defined in: [sandkit/api/pickups.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L32)
 
 Active world pickup instance.
@@ -11762,10 +11340,8 @@ Defined in: [sandkit/api/pickups.d.ts:37](https://github.com/sandustry-modding/S
 
 #### PickupType :id=sandkit.api.pickups.pickuptype
 
-<p class="smt-member-path"><code>sandkit.api.pickups.PickupType</code></p>
-
 ```ts
-PickupType = PickupType
+sandkit.api.pickups.PickupType = PickupType
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L12)
@@ -11774,10 +11350,10 @@ Official pickup type discriminator.
 
 ***
 
-#### ~~WorldItemType~~
+#### ~~WorldItemType~~ :id=sandkit.api.pickups.worlditemtype
 
 ```ts
-WorldItemType = PickupType
+sandkit.api.pickups.WorldItemType = PickupType
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L19)
@@ -11794,10 +11370,8 @@ Use [PickupType](#pickuptype) instead.
 
 #### spawnAtWorld() :id=sandkit.api.pickups.spawnatworld
 
-<p class="smt-member-path"><code>sandkit.api.pickups.spawnAtWorld()</code></p>
-
 ```ts
-spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem
+sandkit.api.pickups.spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<string, unknown>, light?: WorldItemLight): WorldItem
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L52)
@@ -11850,10 +11424,8 @@ The spawned pickup instance.
 
 #### remove() :id=sandkit.api.pickups.remove
 
-<p class="smt-member-path"><code>sandkit.api.pickups.remove()</code></p>
-
 ```ts
-remove(pickup: WorldItem): void
+sandkit.api.pickups.remove(pickup: WorldItem): void
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L67)
@@ -11878,10 +11450,10 @@ Pickup returned from spawn or lookup helpers.
 
 ***
 
-#### ~~destroy()~~
+#### ~~destroy()~~ :id=sandkit.api.pickups.destroy
 
 ```ts
-destroy(pickup: WorldItem): void
+sandkit.api.pickups.destroy(pickup: WorldItem): void
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L74)
@@ -11908,10 +11480,8 @@ Use [remove](#remove) instead.
 
 #### pickUp() :id=sandkit.api.pickups.pickup
 
-<p class="smt-member-path"><code>sandkit.api.pickups.pickUp()</code></p>
-
 ```ts
-pickUp(pickup: WorldItem): boolean
+sandkit.api.pickups.pickUp(pickup: WorldItem): boolean
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L84)
@@ -11940,10 +11510,8 @@ True when the item was collected.
 
 #### getAll() :id=sandkit.api.pickups.getall
 
-<p class="smt-member-path"><code>sandkit.api.pickups.getAll()</code></p>
-
 ```ts
-getAll(): WorldItem[]
+sandkit.api.pickups.getAll(): WorldItem[]
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L91)
@@ -11962,10 +11530,8 @@ Return all active pickups.
 
 #### getById() :id=sandkit.api.pickups.getbyid
 
-<p class="smt-member-path"><code>sandkit.api.pickups.getById()</code></p>
-
 ```ts
-getById(pickupId: number): WorldItem | undefined
+sandkit.api.pickups.getById(pickupId: number): WorldItem | undefined
 ```
 
 Defined in: [sandkit/api/pickups.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L100)
@@ -12005,7 +11571,6 @@ Available as `sandkit.api.pipes`.
 #### PipeVentCell :id=sandkit.api.pipes.pipeventcell
 
 <p class="smt-member-path"><code>sandkit.api.pipes.PipeVentCell</code></p>
-
 Defined in: [sandkit/api/pipes.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L53)
 
 Connected vent cell position.
@@ -12038,10 +11603,8 @@ Defined in: [sandkit/api/pipes.d.ts:55](https://github.com/sandustry-modding/San
 
 #### isAtCell() :id=sandkit.api.pipes.isatcell
 
-<p class="smt-member-path"><code>sandkit.api.pipes.isAtCell()</code></p>
-
 ```ts
-isAtCell(...args: CellCoordinates): boolean
+sandkit.api.pipes.isAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/pipes.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L19)
@@ -12066,10 +11629,8 @@ Return true when a pipe occupies the cell.
 
 #### isEnabledAtCell() :id=sandkit.api.pipes.isenabledatcell
 
-<p class="smt-member-path"><code>sandkit.api.pipes.isEnabledAtCell()</code></p>
-
 ```ts
-isEnabledAtCell(...args: CellCoordinates): boolean
+sandkit.api.pipes.isEnabledAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/pipes.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L29)
@@ -12094,10 +11655,8 @@ Return true when pipe flow is enabled at the cell.
 
 #### getConnectedVentsAtCell() :id=sandkit.api.pipes.getconnectedventsatcell
 
-<p class="smt-member-path"><code>sandkit.api.pipes.getConnectedVentsAtCell()</code></p>
-
 ```ts
-getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[]
+sandkit.api.pipes.getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[]
 ```
 
 Defined in: [sandkit/api/pipes.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L39)
@@ -12122,10 +11681,8 @@ readonly [`PipeVentCell`](#pipeventcell)[]
 
 #### setEnabledAtCell() :id=sandkit.api.pipes.setenabledatcell
 
-<p class="smt-member-path"><code>sandkit.api.pipes.setEnabledAtCell()</code></p>
-
 ```ts
-setEnabledAtCell(...args: [number, number, boolean]): void
+sandkit.api.pipes.setEnabledAtCell(...args: [number, number, boolean]): void
 ```
 
 Defined in: [sandkit/api/pipes.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L50)
@@ -12159,10 +11716,8 @@ Enable or disable pipe flow at a cell.
 
 #### setPositionAtWorld() :id=sandkit.api.player.setpositionatworld
 
-<p class="smt-member-path"><code>sandkit.api.player.setPositionAtWorld()</code></p>
-
 ```ts
-setPositionAtWorld(worldX: number, worldY: number): void
+sandkit.api.player.setPositionAtWorld(worldX: number, worldY: number): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L33)
@@ -12193,10 +11748,10 @@ World y position in pixels.
 
 ***
 
-#### ~~setWorldPosition()~~
+#### ~~setWorldPosition()~~ :id=sandkit.api.player.setworldposition
 
 ```ts
-setWorldPosition(worldX: number, worldY: number): void
+sandkit.api.player.setWorldPosition(worldX: number, worldY: number): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L40)
@@ -12227,10 +11782,8 @@ Use [setPositionAtWorld](#setpositionatworld) instead.
 
 #### setVelocity() :id=sandkit.api.player.setvelocity
 
-<p class="smt-member-path"><code>sandkit.api.player.setVelocity()</code></p>
-
 ```ts
-setVelocity(velocityX: number, velocityY: number): void
+sandkit.api.player.setVelocity(velocityX: number, velocityY: number): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L50)
@@ -12263,10 +11816,8 @@ Vertical velocity in pixels per second.
 
 #### setMovementSpeedMultiplier() :id=sandkit.api.player.setmovementspeedmultiplier
 
-<p class="smt-member-path"><code>sandkit.api.player.setMovementSpeedMultiplier()</code></p>
-
 ```ts
-setMovementSpeedMultiplier(multiplier: number): void
+sandkit.api.player.setMovementSpeedMultiplier(multiplier: number): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L60)
@@ -12294,10 +11845,8 @@ Vanilla Sprint Boost (Shift burst + meter) only runs when this value is exactly 
 
 #### setMovementMode() :id=sandkit.api.player.setmovementmode
 
-<p class="smt-member-path"><code>sandkit.api.player.setMovementMode()</code></p>
-
 ```ts
-setMovementMode(mode: "normal" | "hover"): boolean
+sandkit.api.player.setMovementMode(mode: "normal" | "hover"): boolean
 ```
 
 Defined in: [sandkit/api/player.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L70)
@@ -12326,10 +11875,8 @@ True when the mode changes.
 
 #### isOnGround() :id=sandkit.api.player.isonground
 
-<p class="smt-member-path"><code>sandkit.api.player.isOnGround()</code></p>
-
 ```ts
-isOnGround(): boolean
+sandkit.api.player.isOnGround(): boolean
 ```
 
 Defined in: [sandkit/api/player.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L81)
@@ -12352,10 +11899,8 @@ True when the player touches solid ground.
 
 #### teleportToGround() :id=sandkit.api.player.teleporttoground
 
-<p class="smt-member-path"><code>sandkit.api.player.teleportToGround()</code></p>
-
 ```ts
-teleportToGround(): void
+sandkit.api.player.teleportToGround(): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L88)
@@ -12374,10 +11919,8 @@ Move the player down until ground is found.
 
 #### isPositionClearAtWorld() :id=sandkit.api.player.ispositionclearatworld
 
-<p class="smt-member-path"><code>sandkit.api.player.isPositionClearAtWorld()</code></p>
-
 ```ts
-isPositionClearAtWorld(worldX: number, worldY: number): boolean
+sandkit.api.player.isPositionClearAtWorld(worldX: number, worldY: number): boolean
 ```
 
 Defined in: [sandkit/api/player.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L99)
@@ -12410,10 +11953,10 @@ True when the player hitbox fits at the position.
 
 ***
 
-#### ~~isWorldPositionClear()~~
+#### ~~isWorldPositionClear()~~ :id=sandkit.api.player.isworldpositionclear
 
 ```ts
-isWorldPositionClear(worldX: number, worldY: number): boolean
+sandkit.api.player.isWorldPositionClear(worldX: number, worldY: number): boolean
 ```
 
 Defined in: [sandkit/api/player.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L106)
@@ -12445,7 +11988,6 @@ Use [isPositionClearAtWorld](#ispositionclearatworld) instead.
 #### getPositionAtWorld :id=sandkit.api.player.getpositionatworld
 
 <p class="smt-member-path"><code>sandkit.api.player.getPositionAtWorld</code></p>
-
 Re-exports [getPositionAtWorld](api/sandkit.api.player.worker.md#getpositionatworld)
 
 ***
@@ -12453,7 +11995,6 @@ Re-exports [getPositionAtWorld](api/sandkit.api.player.worker.md#getpositionatwo
 #### isCollidingWithCell :id=sandkit.api.player.iscollidingwithcell
 
 <p class="smt-member-path"><code>sandkit.api.player.isCollidingWithCell</code></p>
-
 Re-exports [isCollidingWithCell](api/sandkit.api.player.worker.md#iscollidingwithcell)
 
 ***
@@ -12461,7 +12002,6 @@ Re-exports [isCollidingWithCell](api/sandkit.api.player.worker.md#iscollidingwit
 #### isWithinRadiusOfCell :id=sandkit.api.player.iswithinradiusofcell
 
 <p class="smt-member-path"><code>sandkit.api.player.isWithinRadiusOfCell</code></p>
-
 Re-exports [isWithinRadiusOfCell](api/sandkit.api.player.worker.md#iswithinradiusofcell)
 
 ***
@@ -12469,7 +12009,6 @@ Re-exports [isWithinRadiusOfCell](api/sandkit.api.player.worker.md#iswithinradiu
 #### getWorldPosition :id=sandkit.api.player.getworldposition
 
 <p class="smt-member-path"><code>sandkit.api.player.getWorldPosition</code></p>
-
 Re-exports [getWorldPosition](api/sandkit.api.player.worker.md#getworldposition)
 
 ---
@@ -12482,10 +12021,8 @@ Player building unlock helpers.
 
 #### unlockById() :id=sandkit.api.player.buildings.unlockbyid
 
-<p class="smt-member-path"><code>sandkit.api.player.buildings.unlockById()</code></p>
-
 ```ts
-unlockById(structureId: string): void
+sandkit.api.player.buildings.unlockById(structureId: string): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L136)
@@ -12510,10 +12047,10 @@ Registered structure id string.
 
 ***
 
-#### ~~unlockByType()~~
+#### ~~unlockByType()~~ :id=sandkit.api.player.buildings.unlockbytype
 
 ```ts
-unlockByType(structureId: string): void
+sandkit.api.player.buildings.unlockByType(structureId: string): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L143)
@@ -12540,10 +12077,8 @@ Use [unlockById](#unlockbyid) instead.
 
 #### removeById() :id=sandkit.api.player.buildings.removebyid
 
-<p class="smt-member-path"><code>sandkit.api.player.buildings.removeById()</code></p>
-
 ```ts
-removeById(structureId: string): void
+sandkit.api.player.buildings.removeById(structureId: string): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:152](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L152)
@@ -12576,10 +12111,8 @@ Player inventory helpers.
 
 #### addById() :id=sandkit.api.player.inventory.addbyid
 
-<p class="smt-member-path"><code>sandkit.api.player.inventory.addById()</code></p>
-
 ```ts
-addById(itemId: string): void
+sandkit.api.player.inventory.addById(itemId: string): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L117)
@@ -12604,10 +12137,10 @@ Registered item id string.
 
 ***
 
-#### ~~addFromId()~~
+#### ~~addFromId()~~ :id=sandkit.api.player.inventory.addfromid
 
 ```ts
-addFromId(itemId: string): void
+sandkit.api.player.inventory.addFromId(itemId: string): void
 ```
 
 Defined in: [sandkit/api/player.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L124)
@@ -12639,7 +12172,6 @@ Use [addById](#addbyid) instead.
 #### WeightedRecipeOutput :id=sandkit.api.processing.weightedrecipeoutput
 
 <p class="smt-member-path"><code>sandkit.api.processing.WeightedRecipeOutput</code></p>
-
 Defined in: [sandkit/api/processing.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L30)
 
 Weighted element output entry shared by machine recipes.
@@ -12671,7 +12203,6 @@ Output probability from 0 to 1.
 #### PlanterBoxRecipeDefinitionV1 :id=sandkit.api.processing.planterboxrecipedefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.processing.PlanterBoxRecipeDefinitionV1</code></p>
-
 Defined in: [sandkit/api/processing.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L38)
 
 Planter box grower recipe definition.
@@ -12713,7 +12244,6 @@ Success chance from 0 to 1. Default 1.
 #### ShakerRecipeDefinitionV1 :id=sandkit.api.processing.shakerrecipedefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.processing.ShakerRecipeDefinitionV1</code></p>
-
 Defined in: [sandkit/api/processing.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L48)
 
 Shaker recipe definition.
@@ -12755,7 +12285,6 @@ Weighted outputs ejected downward.
 #### KineticPressRecipeDefinitionV1 :id=sandkit.api.processing.kineticpressrecipedefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.processing.KineticPressRecipeDefinitionV1</code></p>
-
 Defined in: [sandkit/api/processing.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L58)
 
 Kinetic press recipe definition.
@@ -12796,10 +12325,8 @@ Weighted outputs produced by the press.
 
 #### registerGrower() :id=sandkit.api.processing.registergrower
 
-<p class="smt-member-path"><code>sandkit.api.processing.registerGrower()</code></p>
-
 ```ts
-registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
+sandkit.api.processing.registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/processing.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L15)
@@ -12822,10 +12349,8 @@ Grower input/output recipe.
 
 #### registerShaker() :id=sandkit.api.processing.registershaker
 
-<p class="smt-member-path"><code>sandkit.api.processing.registerShaker()</code></p>
-
 ```ts
-registerShaker(definition: ShakerRecipeDefinitionV1): void
+sandkit.api.processing.registerShaker(definition: ShakerRecipeDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/processing.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L21)
@@ -12848,10 +12373,8 @@ Shaker input and weighted outputs.
 
 #### registerKineticPress() :id=sandkit.api.processing.registerkineticpress
 
-<p class="smt-member-path"><code>sandkit.api.processing.registerKineticPress()</code></p>
-
 ```ts
-registerKineticPress(definition: KineticPressRecipeDefinitionV1): void
+sandkit.api.processing.registerKineticPress(definition: KineticPressRecipeDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/processing.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L27)
@@ -12879,7 +12402,6 @@ Press input, velocity threshold, and outputs.
 #### ProgressionCompletionRequestV1 :id=sandkit.api.progression.progressioncompletionrequestv1
 
 <p class="smt-member-path"><code>sandkit.api.progression.ProgressionCompletionRequestV1</code></p>
-
 Defined in: [sandkit/api/progression.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L25)
 
 Progression completion request shape.
@@ -12906,10 +12428,8 @@ Progression step or quest identifier.
 
 #### complete() :id=sandkit.api.progression.complete
 
-<p class="smt-member-path"><code>sandkit.api.progression.complete()</code></p>
-
 ```ts
-complete(request: ProgressionCompletionRequestV1): boolean
+sandkit.api.progression.complete(request: ProgressionCompletionRequestV1): boolean
 ```
 
 Defined in: [sandkit/api/progression.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L22)
@@ -12946,7 +12466,6 @@ const completed = api.progression.complete({
 #### ProjectileDefinition :id=sandkit.api.projectiles.projectiledefinition
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileDefinition</code></p>
-
 Defined in: [sandkit/api/projectiles.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L59)
 
 Mod-registered projectile definition.
@@ -13030,7 +12549,6 @@ Optional per-projectile mutable data factory.
 #### ProjectileBlueprint :id=sandkit.api.projectiles.projectileblueprint
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.ProjectileBlueprint</code></p>
-
 Defined in: [sandkit/api/projectiles.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L73)
 
 Blueprint used to spawn a projectile.
@@ -13058,7 +12576,6 @@ Defined in: [sandkit/api/projectiles.d.ts:75](https://github.com/sandustry-moddi
 #### Projectile :id=sandkit.api.projectiles.projectile
 
 <p class="smt-member-path"><code>sandkit.api.projectiles.Projectile</code></p>
-
 Defined in: [sandkit/api/projectiles.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L79)
 
 Active projectile instance.
@@ -13099,10 +12616,8 @@ Defined in: [sandkit/api/projectiles.d.ts:82](https://github.com/sandustry-moddi
 
 #### register() :id=sandkit.api.projectiles.register
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.register()</code></p>
-
 ```ts
-register(definition: ProjectileDefinition): void
+sandkit.api.projectiles.register(definition: ProjectileDefinition): void
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L13)
@@ -13125,10 +12640,8 @@ Projectile id, sprite, and runtime options factory.
 
 #### getDefinitionById() :id=sandkit.api.projectiles.getdefinitionbyid
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.getDefinitionById()</code></p>
-
 ```ts
-getDefinitionById(projectileId: string): ProjectileDefinition | undefined
+sandkit.api.projectiles.getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L19)
@@ -13151,10 +12664,8 @@ Registered projectile id.
 
 #### createBlueprintFromId() :id=sandkit.api.projectiles.createblueprintfromid
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.createBlueprintFromId()</code></p>
-
 ```ts
-createBlueprintFromId(projectileId: string): ProjectileBlueprint
+sandkit.api.projectiles.createBlueprintFromId(projectileId: string): ProjectileBlueprint
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L26)
@@ -13179,10 +12690,8 @@ Blueprint passed to [spawnAtWorld](#spawnatworld).
 
 #### getAll() :id=sandkit.api.projectiles.getall
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.getAll()</code></p>
-
 ```ts
-getAll(): Projectile[]
+sandkit.api.projectiles.getAll(): Projectile[]
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L29)
@@ -13197,10 +12706,8 @@ Return all active projectiles.
 
 #### getById() :id=sandkit.api.projectiles.getbyid
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.getById()</code></p>
-
 ```ts
-getById(projectileId: number): Projectile | undefined
+sandkit.api.projectiles.getById(projectileId: number): Projectile | undefined
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L35)
@@ -13223,10 +12730,8 @@ Runtime projectile id.
 
 #### remove() :id=sandkit.api.projectiles.remove
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.remove()</code></p>
-
 ```ts
-remove(projectile: Projectile): void
+sandkit.api.projectiles.remove(projectile: Projectile): void
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L41)
@@ -13249,10 +12754,8 @@ Projectile instance to remove.
 
 #### spawnAtWorld() :id=sandkit.api.projectiles.spawnatworld
 
-<p class="smt-member-path"><code>sandkit.api.projectiles.spawnAtWorld()</code></p>
-
 ```ts
-spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: ProjectileBlueprint): Projectile
+sandkit.api.projectiles.spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: ProjectileBlueprint): Projectile
 ```
 
 Defined in: [sandkit/api/projectiles.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L51)
@@ -13299,10 +12802,8 @@ The spawned projectile instance.
 
 #### int() :id=sandkit.api.random.int
 
-<p class="smt-member-path"><code>sandkit.api.random.int()</code></p>
-
 ```ts
-int(min: number, max: number): number
+sandkit.api.random.int(min: number, max: number): number
 ```
 
 Defined in: [sandkit/api/random.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/random.d.ts#L14)
@@ -13331,10 +12832,8 @@ Maximum value (inclusive).
 
 #### float() :id=sandkit.api.random.float
 
-<p class="smt-member-path"><code>sandkit.api.random.float()</code></p>
-
 ```ts
-float(min: number, max: number): number
+sandkit.api.random.float(min: number, max: number): number
 ```
 
 Defined in: [sandkit/api/random.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/random.d.ts#L20)
@@ -13367,10 +12866,8 @@ Maximum value (inclusive).
 
 #### castFromWorld() :id=sandkit.api.raycast.castfromworld
 
-<p class="smt-member-path"><code>sandkit.api.raycast.castFromWorld()</code></p>
-
 ```ts
-castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistance: number): Vector2 & object | null
+sandkit.api.raycast.castFromWorld(startWorldX: number, startWorldY: number, angle: number, maxDistance: number): Vector2 & object | null
 ```
 
 Defined in: [sandkit/api/raycast.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/raycast.d.ts#L18)
@@ -13416,7 +12913,6 @@ Maximum ray length in pixels.
 #### ContactRecipeDefinitionV1 :id=sandkit.api.reactions.contactrecipedefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.reactions.ContactRecipeDefinitionV1</code></p>
-
 Defined in: [sandkit/api/reactions.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L29)
 
 Contact reaction recipe definition.
@@ -13477,10 +12973,8 @@ Contact layout requirement. Default `"any"`.
 
 #### registerContact() :id=sandkit.api.reactions.registercontact
 
-<p class="smt-member-path"><code>sandkit.api.reactions.registerContact()</code></p>
-
 ```ts
-registerContact(definition: ContactRecipeDefinitionV1): void
+sandkit.api.reactions.registerContact(definition: ContactRecipeDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/reactions.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L26)
@@ -13519,10 +13013,8 @@ api.reactions.registerContact({
 
 #### getDrawPositionAtCell() :id=sandkit.api.rendering.getdrawpositionatcell
 
-<p class="smt-member-path"><code>sandkit.api.rendering.getDrawPositionAtCell()</code></p>
-
 ```ts
-getDrawPositionAtCell(...args: CellCoordinates): Vector2
+sandkit.api.rendering.getDrawPositionAtCell(...args: CellCoordinates): Vector2
 ```
 
 Defined in: [sandkit/api/rendering.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L16)
@@ -13543,10 +13035,8 @@ Return screen draw position for a grid cell.
 
 #### getDrawPositionAtWorld() :id=sandkit.api.rendering.getdrawpositionatworld
 
-<p class="smt-member-path"><code>sandkit.api.rendering.getDrawPositionAtWorld()</code></p>
-
 ```ts
-getDrawPositionAtWorld(worldX: number, worldY: number): Vector2
+sandkit.api.rendering.getDrawPositionAtWorld(worldX: number, worldY: number): Vector2
 ```
 
 Defined in: [sandkit/api/rendering.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L33)
@@ -13588,10 +13078,8 @@ api.events.on("frame:render", () => {
 
 #### getGridMetrics() :id=sandkit.api.rendering.getgridmetrics
 
-<p class="smt-member-path"><code>sandkit.api.rendering.getGridMetrics()</code></p>
-
 ```ts
-getGridMetrics(): object
+sandkit.api.rendering.getGridMetrics(): object
 ```
 
 Defined in: [sandkit/api/rendering.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L42)
@@ -13624,10 +13112,8 @@ const { cellSize, snapGridCellSize } = api.rendering.getGridMetrics();
 
 #### getOverlayViewportSize() :id=sandkit.api.rendering.getoverlayviewportsize
 
-<p class="smt-member-path"><code>sandkit.api.rendering.getOverlayViewportSize()</code></p>
-
 ```ts
-getOverlayViewportSize(): object
+sandkit.api.rendering.getOverlayViewportSize(): object
 ```
 
 Defined in: [sandkit/api/rendering.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L44)
@@ -13654,10 +13140,8 @@ height: number
 
 #### withOverlayContext() :id=sandkit.api.rendering.withoverlaycontext
 
-<p class="smt-member-path"><code>sandkit.api.rendering.withOverlayContext()</code></p>
-
 ```ts
-withOverlayContext<T>(callback: (context: CanvasRenderingContext2D) => T): T
+sandkit.api.rendering.withOverlayContext<T>(callback: (context: CanvasRenderingContext2D) => T): T
 ```
 
 Defined in: [sandkit/api/rendering.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L56)
@@ -13698,10 +13182,8 @@ api.rendering.withOverlayContext((context) => {
 
 #### collectFluxiteAtCell() :id=sandkit.api.resources.collectfluxiteatcell
 
-<p class="smt-member-path"><code>sandkit.api.resources.collectFluxiteAtCell()</code></p>
-
 ```ts
-collectFluxiteAtCell(...args: CellCoordinates): void
+sandkit.api.resources.collectFluxiteAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [sandkit/api/resources.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L16)
@@ -13722,10 +13204,8 @@ Collect fluxite at the given cell.
 
 #### updateEnergy() :id=sandkit.api.resources.updateenergy
 
-<p class="smt-member-path"><code>sandkit.api.resources.updateEnergy()</code></p>
-
 ```ts
-updateEnergy(amount: number, options?: object): void
+sandkit.api.resources.updateEnergy(amount: number, options?: object): void
 ```
 
 Defined in: [sandkit/api/resources.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L27)
@@ -13768,10 +13248,8 @@ api.resources.adjustEnergy(100, { deferUi: true });
 
 #### getActive() :id=sandkit.api.scene.getactive
 
-<p class="smt-member-path"><code>sandkit.api.scene.getActive()</code></p>
-
 ```ts
-getActive(): Scene
+sandkit.api.scene.getActive(): Scene
 ```
 
 Defined in: [sandkit/api/scene.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/scene.d.ts#L14)
@@ -13787,7 +13265,6 @@ Return the active scene.
 #### Scene :id=sandkit.api.scene.scene
 
 <p class="smt-member-path"><code>sandkit.api.scene.Scene</code></p>
-
 Re-exports [Scene](api/sandkit.enums.Scene.md)
 
 ---
@@ -13798,10 +13275,8 @@ Re-exports [Scene](api/sandkit.enums.Scene.md)
 
 #### nextTick() :id=sandkit.api.schedule.nexttick
 
-<p class="smt-member-path"><code>sandkit.api.schedule.nextTick()</code></p>
-
 ```ts
-nextTick(callback: () => void): void
+sandkit.api.schedule.nextTick(callback: () => void): void
 ```
 
 Defined in: [sandkit/api/schedule.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/schedule.d.ts#L20)
@@ -13836,10 +13311,8 @@ api.schedule.nextTick(() => {
 
 #### FieldId :id=sandkit.api.settings.fieldid
 
-<p class="smt-member-path"><code>sandkit.api.settings.FieldId</code></p>
-
 ```ts
-FieldId = LooseString<never>
+sandkit.api.settings.FieldId = LooseString<never>
 ```
 
 Defined in: [sandkit/api/settings.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L34)
@@ -13850,10 +13323,8 @@ Settings field id. Any string is allowed.
 
 #### ConfigValueV1 :id=sandkit.api.settings.configvaluev1
 
-<p class="smt-member-path"><code>sandkit.api.settings.ConfigValueV1</code></p>
-
 ```ts
-ConfigValueV1 = string | number | boolean | null
+sandkit.api.settings.ConfigValueV1 = string | number | boolean | null
 ```
 
 Defined in: [sandkit/api/settings.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L37)
@@ -13864,10 +13335,8 @@ Settings field value shape.
 
 #### get() :id=sandkit.api.settings.get
 
-<p class="smt-member-path"><code>sandkit.api.settings.get()</code></p>
-
 ```ts
-get(fieldId: string & object): ConfigValueV1 | undefined
+sandkit.api.settings.get(fieldId: string & object): ConfigValueV1 | undefined
 ```
 
 Defined in: [sandkit/api/settings.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L15)
@@ -13890,10 +13359,8 @@ Settings field identifier.
 
 #### getAll() :id=sandkit.api.settings.getall
 
-<p class="smt-member-path"><code>sandkit.api.settings.getAll()</code></p>
-
 ```ts
-getAll(): Readonly<Record<string, ConfigValueV1>>
+sandkit.api.settings.getAll(): Readonly<Record<string, ConfigValueV1>>
 ```
 
 Defined in: [sandkit/api/settings.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L17)
@@ -13908,10 +13375,8 @@ Return all settings as a read-only map.
 
 #### onChange() :id=sandkit.api.settings.onchange
 
-<p class="smt-member-path"><code>sandkit.api.settings.onChange()</code></p>
-
 ```ts
-onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void
+sandkit.api.settings.onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): () => void
 ```
 
 Defined in: [sandkit/api/settings.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L29)
@@ -13950,10 +13415,8 @@ const unsubscribe = api.settings.onChange((values) => {
 
 #### SharedArray :id=sandkit.api.shared.sharedarray
 
-<p class="smt-member-path"><code>sandkit.api.shared.SharedArray</code></p>
-
 ```ts
-SharedArray = Uint8Array | Uint16Array | Uint32Array | Int8Array | Int16Array | Int32Array | Float32Array | Float64Array
+sandkit.api.shared.SharedArray = Uint8Array | Uint16Array | Uint32Array | Int8Array | Int16Array | Int32Array | Float32Array | Float64Array
 ```
 
 Defined in: [shared/api/shared.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L29)
@@ -13967,10 +13430,8 @@ returns the matching `*Array` constructor for the configured type.
 
 #### SharedArrayType :id=sandkit.api.shared.sharedarraytype
 
-<p class="smt-member-path"><code>sandkit.api.shared.SharedArrayType</code></p>
-
 ```ts
-SharedArrayType = "uint8" | "uint16" | "uint32" | "int8" | "int16" | "int32" | "float32" | "float64"
+sandkit.api.shared.SharedArrayType = "uint8" | "uint16" | "uint32" | "int8" | "int16" | "int32" | "float32" | "float64"
 ```
 
 Defined in: [shared/api/shared.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L40)
@@ -13987,10 +13448,8 @@ Shared buffer ensure and lookup.
 
 #### ensure() :id=sandkit.api.shared.buffers.ensure
 
-<p class="smt-member-path"><code>sandkit.api.shared.buffers.ensure()</code></p>
-
 ```ts
-ensure(key: string, config: object): SharedArray
+sandkit.api.shared.buffers.ensure(key: string, config: object): SharedArray
 ```
 
 Defined in: [sandkit/api/shared.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L30)
@@ -14036,10 +13495,10 @@ const counts = api.shared.buffers.ensure("counts", {
 
 ***
 
-#### ~~create()~~
+#### ~~create()~~ :id=sandkit.api.shared.buffers.create
 
 ```ts
-create(key: string, config: object): SharedArray
+sandkit.api.shared.buffers.create(key: string, config: object): SharedArray
 ```
 
 Defined in: [sandkit/api/shared.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L40)
@@ -14076,10 +13535,8 @@ Use [ensure](#ensure) instead.
 
 #### get() :id=sandkit.api.shared.buffers.get
 
-<p class="smt-member-path"><code>sandkit.api.shared.buffers.get()</code></p>
-
 ```ts
-get(key: string): SharedArray | undefined
+sandkit.api.shared.buffers.get(key: string): SharedArray | undefined
 ```
 
 Defined in: [shared/api/shared.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L20)
@@ -14116,10 +13573,8 @@ The typed array, or `undefined` when the buffer does not exist.
 
 #### StructureType :id=sandkit.api.signals.structuretype
 
-<p class="smt-member-path"><code>sandkit.api.signals.StructureType</code></p>
-
 ```ts
-StructureType = unknown
+sandkit.api.signals.StructureType = unknown
 ```
 
 Defined in: [sandkit/api/signals.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L52)
@@ -14130,10 +13585,8 @@ Structure type id or enum value.
 
 #### Structure :id=sandkit.api.signals.structure
 
-<p class="smt-member-path"><code>sandkit.api.signals.Structure</code></p>
-
 ```ts
-Structure = unknown
+sandkit.api.signals.Structure = unknown
 ```
 
 Defined in: [sandkit/api/signals.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L54)
@@ -14144,10 +13597,8 @@ Structure instance in the world.
 
 #### SignalTargetPayloadV1 :id=sandkit.api.signals.signaltargetpayloadv1
 
-<p class="smt-member-path"><code>sandkit.api.signals.SignalTargetPayloadV1</code></p>
-
 ```ts
-SignalTargetPayloadV1 = unknown
+sandkit.api.signals.SignalTargetPayloadV1 = unknown
 ```
 
 Defined in: [sandkit/api/signals.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L56)
@@ -14164,10 +13615,8 @@ Signal target registration for structure types.
 
 #### register() :id=sandkit.api.signals.targets.register
 
-<p class="smt-member-path"><code>sandkit.api.signals.targets.register()</code></p>
-
 ```ts
-register(structureTypeOrId: unknown, apply: (structure: unknown, payload: unknown) => void): void
+sandkit.api.signals.targets.register(structureTypeOrId: unknown, apply: (structure: unknown, payload: unknown) => void): void
 ```
 
 Defined in: [sandkit/api/signals.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L45)
@@ -14209,7 +13658,6 @@ api.signals.targets.register("exampleMachine", (structure, payload) => {
 #### SoundHandle :id=sandkit.api.sound.soundhandle
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundHandle</code></p>
-
 Defined in: [sandkit/api/sound.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L85)
 
 Handle returned from a play call.
@@ -14235,7 +13683,6 @@ Stop this sound instance.
 #### SoundLayer :id=sandkit.api.sound.soundlayer
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundLayer</code></p>
-
 Defined in: [sandkit/api/sound.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L91)
 
 One layer in a layered sound.
@@ -14293,7 +13740,6 @@ Playback rate for this layer.
 #### SoundOptions :id=sandkit.api.sound.soundoptions
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundOptions</code></p>
-
 Defined in: [sandkit/api/sound.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L104)
 
 Options passed to sound play helpers.
@@ -14383,7 +13829,6 @@ Minimum ms between plays with the same rateLimitKey.
 #### SoundLayersOptions :id=sandkit.api.sound.soundlayersoptions
 
 <p class="smt-member-path"><code>sandkit.api.sound.SoundLayersOptions</code></p>
-
 Defined in: [sandkit/api/sound.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L121)
 
 Shared options for [playLayers](#playlayers).
@@ -14446,10 +13891,8 @@ Minimum ms between plays with the same rateLimitKey.
 
 #### play() :id=sandkit.api.sound.play
 
-<p class="smt-member-path"><code>sandkit.api.sound.play()</code></p>
-
 ```ts
-play(soundId: string, options?: SoundOptions): SoundHandle
+sandkit.api.sound.play(soundId: string, options?: SoundOptions): SoundHandle
 ```
 
 Defined in: [sandkit/api/sound.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L17)
@@ -14482,10 +13925,8 @@ Volume, position, playback rate, and rate-limit options.
 
 #### playActive() :id=sandkit.api.sound.playactive
 
-<p class="smt-member-path"><code>sandkit.api.sound.playActive()</code></p>
-
 ```ts
-playActive(soundId: string, options?: SoundOptions): SoundHandle
+sandkit.api.sound.playActive(soundId: string, options?: SoundOptions): SoundHandle
 ```
 
 Defined in: [sandkit/api/sound.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L27)
@@ -14518,10 +13959,8 @@ Volume, position, playback rate, and rate-limit options.
 
 #### playLayers() :id=sandkit.api.sound.playlayers
 
-<p class="smt-member-path"><code>sandkit.api.sound.playLayers()</code></p>
-
 ```ts
-playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[]
+sandkit.api.sound.playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[]
 ```
 
 Defined in: [sandkit/api/sound.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L37)
@@ -14554,10 +13993,8 @@ Shared position, volume, and rate-limit options for all layers.
 
 #### calculateDistanceOptionsAtWorld() :id=sandkit.api.sound.calculatedistanceoptionsatworld
 
-<p class="smt-member-path"><code>sandkit.api.sound.calculateDistanceOptionsAtWorld()</code></p>
-
 ```ts
-calculateDistanceOptionsAtWorld(worldX: number, worldY: number, baseVolume?: number): SoundOptions
+sandkit.api.sound.calculateDistanceOptionsAtWorld(worldX: number, worldY: number, baseVolume?: number): SoundOptions
 ```
 
 Defined in: [sandkit/api/sound.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L48)
@@ -14596,10 +14033,8 @@ Base volume before distance attenuation.
 
 #### stopBySoundId() :id=sandkit.api.sound.stopbysoundid
 
-<p class="smt-member-path"><code>sandkit.api.sound.stopBySoundId()</code></p>
-
 ```ts
-stopBySoundId(soundId: string): void
+sandkit.api.sound.stopBySoundId(soundId: string): void
 ```
 
 Defined in: [sandkit/api/sound.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L61)
@@ -14624,10 +14059,10 @@ Registered sound identifier to stop.
 
 ***
 
-#### ~~stopById()~~
+#### ~~stopById()~~ :id=sandkit.api.sound.stopbyid
 
 ```ts
-stopById(soundId: string): void
+sandkit.api.sound.stopById(soundId: string): void
 ```
 
 Defined in: [sandkit/api/sound.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L68)
@@ -14654,10 +14089,8 @@ Use [stopBySoundId](#stopbysoundid) instead.
 
 #### stopActive() :id=sandkit.api.sound.stopactive
 
-<p class="smt-member-path"><code>sandkit.api.sound.stopActive()</code></p>
-
 ```ts
-stopActive(): void
+sandkit.api.sound.stopActive(): void
 ```
 
 Defined in: [sandkit/api/sound.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L75)
@@ -14676,10 +14109,8 @@ Stop the active sound channel.
 
 #### stopAll() :id=sandkit.api.sound.stopall
 
-<p class="smt-member-path"><code>sandkit.api.sound.stopAll()</code></p>
-
 ```ts
-stopAll(): void
+sandkit.api.sound.stopAll(): void
 ```
 
 Defined in: [sandkit/api/sound.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L82)
@@ -14703,7 +14134,6 @@ Stop all playing sounds.
 #### SpriteLoadOptions :id=sandkit.api.sprites.spriteloadoptions
 
 <p class="smt-member-path"><code>sandkit.api.sprites.SpriteLoadOptions</code></p>
-
 Defined in: [sandkit/api/sprites.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L44)
 
 Options for [load](#load) and [loadFromMod](#loadfrommod).
@@ -14730,10 +14160,8 @@ Packed RGB tint applied after load.
 
 #### LoadedSprite :id=sandkit.api.sprites.loadedsprite
 
-<p class="smt-member-path"><code>sandkit.api.sprites.LoadedSprite</code></p>
-
 ```ts
-LoadedSprite = unknown
+sandkit.api.sprites.LoadedSprite = unknown
 ```
 
 Defined in: [sandkit/api/sprites.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L41)
@@ -14744,10 +14172,8 @@ Loaded sprite handle (runtime texture or display object).
 
 #### load() :id=sandkit.api.sprites.load
 
-<p class="smt-member-path"><code>sandkit.api.sprites.load()</code></p>
-
 ```ts
-load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
+sandkit.api.sprites.load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
 ```
 
 Defined in: [sandkit/api/sprites.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L15)
@@ -14782,10 +14208,8 @@ Optional tint and load options.
 
 #### loadFromMod() :id=sandkit.api.sprites.loadfrommod
 
-<p class="smt-member-path"><code>sandkit.api.sprites.loadFromMod()</code></p>
-
 ```ts
-loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions): Promise<void>
+sandkit.api.sprites.loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions): Promise<void>
 ```
 
 Defined in: [sandkit/api/sprites.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L22)
@@ -14820,10 +14244,8 @@ Optional tint and load options.
 
 #### getById() :id=sandkit.api.sprites.getbyid
 
-<p class="smt-member-path"><code>sandkit.api.sprites.getById()</code></p>
-
 ```ts
-getById(spriteId: string): unknown
+sandkit.api.sprites.getById(spriteId: string): unknown
 ```
 
 Defined in: [sandkit/api/sprites.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L31)
@@ -14846,10 +14268,8 @@ Sprite id from [load](#load) or [loadFromMod](#loadfrommod).
 
 #### hideAllPlayerModSprites() :id=sandkit.api.sprites.hideallplayermodsprites
 
-<p class="smt-member-path"><code>sandkit.api.sprites.hideAllPlayerModSprites()</code></p>
-
 ```ts
-hideAllPlayerModSprites(): void
+sandkit.api.sprites.hideAllPlayerModSprites(): void
 ```
 
 Defined in: [sandkit/api/sprites.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L33)
@@ -14864,10 +14284,8 @@ Hide all player mod-attached sprites.
 
 #### rotatePlayerModSprites() :id=sandkit.api.sprites.rotateplayermodsprites
 
-<p class="smt-member-path"><code>sandkit.api.sprites.rotatePlayerModSprites()</code></p>
-
 ```ts
-rotatePlayerModSprites(angle: number): void
+sandkit.api.sprites.rotatePlayerModSprites(angle: number): void
 ```
 
 Defined in: [sandkit/api/sprites.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L38)
@@ -14898,10 +14316,8 @@ Rotation in radians.
 
 #### ensure() :id=sandkit.api.storage.ensure
 
-<p class="smt-member-path"><code>sandkit.api.storage.ensure()</code></p>
-
 ```ts
-ensure(modId: string): JsonObjectV1
+sandkit.api.storage.ensure(modId: string): JsonObjectV1
 ```
 
 Defined in: [sandkit/api/storage.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L15)
@@ -14924,10 +14340,8 @@ Mod identifier (typically `modinfo.id`).
 
 #### get() :id=sandkit.api.storage.get
 
-<p class="smt-member-path"><code>sandkit.api.storage.get()</code></p>
-
 ```ts
-get(modId: string, key: string): JsonValueV1 | undefined
+sandkit.api.storage.get(modId: string, key: string): JsonValueV1 | undefined
 ```
 
 Defined in: [sandkit/api/storage.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L21)
@@ -14956,10 +14370,8 @@ Storage key.
 
 #### set() :id=sandkit.api.storage.set
 
-<p class="smt-member-path"><code>sandkit.api.storage.set()</code></p>
-
 ```ts
-set(modId: string, key: string, value: JsonValueV1): void
+sandkit.api.storage.set(modId: string, key: string, value: JsonValueV1): void
 ```
 
 Defined in: [sandkit/api/storage.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L28)
@@ -14994,10 +14406,8 @@ JSON-serializable value.
 
 #### remove() :id=sandkit.api.storage.remove
 
-<p class="smt-member-path"><code>sandkit.api.storage.remove()</code></p>
-
 ```ts
-remove(modId: string, key: string): void
+sandkit.api.storage.remove(modId: string, key: string): void
 ```
 
 Defined in: [sandkit/api/storage.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L34)
@@ -15032,10 +14442,8 @@ Local session storage without mod id scope.
 
 #### get() :id=sandkit.api.storage.local.get
 
-<p class="smt-member-path"><code>sandkit.api.storage.local.get()</code></p>
-
 ```ts
-get(key: string): JsonValueV1 | undefined
+sandkit.api.storage.local.get(key: string): JsonValueV1 | undefined
 ```
 
 Defined in: [sandkit/api/storage.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L42)
@@ -15058,10 +14466,8 @@ Storage key.
 
 #### set() :id=sandkit.api.storage.local.set
 
-<p class="smt-member-path"><code>sandkit.api.storage.local.set()</code></p>
-
 ```ts
-set(key: string, value: JsonValueV1): void
+sandkit.api.storage.local.set(key: string, value: JsonValueV1): void
 ```
 
 Defined in: [sandkit/api/storage.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L48)
@@ -15090,10 +14496,8 @@ JSON-serializable value.
 
 #### remove() :id=sandkit.api.storage.local.remove
 
-<p class="smt-member-path"><code>sandkit.api.storage.local.remove()</code></p>
-
 ```ts
-remove(key: string): void
+sandkit.api.storage.local.remove(key: string): void
 ```
 
 Defined in: [sandkit/api/storage.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L53)
@@ -15120,10 +14524,8 @@ Storage key.
 
 #### registerConveyorType() :id=sandkit.api.structureBehaviors.registerconveyortype
 
-<p class="smt-member-path"><code>sandkit.api.structureBehaviors.registerConveyorType()</code></p>
-
 ```ts
-registerConveyorType(structureId: string, options?: object): void
+sandkit.api.structureBehaviors.registerConveyorType(structureId: string, options?: object): void
 ```
 
 Defined in: [sandkit/api/structureBehaviors.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L24)
@@ -15183,10 +14585,8 @@ api.structureBehaviors.registerConveyorType(
 
 #### registerLauncherType() :id=sandkit.api.structureBehaviors.registerlaunchertype
 
-<p class="smt-member-path"><code>sandkit.api.structureBehaviors.registerLauncherType()</code></p>
-
 ```ts
-registerLauncherType(definition: object): void
+sandkit.api.structureBehaviors.registerLauncherType(definition: object): void
 ```
 
 Defined in: [sandkit/api/structureBehaviors.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L39)
@@ -15241,7 +14641,6 @@ Launcher type ids, velocities, and optional shared buffer key.
 #### StructureBuildMode :id=sandkit.api.structures.structurebuildmode
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBuildMode</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:567](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L567)
 
 Build mode entry for a structure definition.
@@ -15283,7 +14682,6 @@ Fixed span length in tiles for line-linked structures.
 #### StructureVariant :id=sandkit.api.structures.structurevariant
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureVariant</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:579](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L579)
 
 Rotated variant entry for a structure definition.
@@ -15311,7 +14709,6 @@ Defined in: [sandkit/api/structures.d.ts:581](https://github.com/sandustry-moddi
 #### StructureTooltipHover :id=sandkit.api.structures.structuretooltiphover
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureTooltipHover</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:612](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L612)
 
 Custom hover tooltip driven by structure `data` fields.
@@ -15387,7 +14784,6 @@ fields: readonly StructureTooltipHoverField[]
 #### StructureTooltipHoverField :id=sandkit.api.structures.structuretooltiphoverfield
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureTooltipHoverField</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:622](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L622)
 
 One interpolated field in a [StructureTooltipHover](#structuretooltiphover) message.
@@ -15447,7 +14843,6 @@ Defined in: [sandkit/api/structures.d.ts:628](https://github.com/sandustry-moddi
 #### StructureSpritesheet :id=sandkit.api.structures.structurespritesheet
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureSpritesheet</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:632](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L632)
 
 Spritesheet animation on a structure render block.
@@ -15505,7 +14900,6 @@ When set, frame row follows this structure `data` field.
 #### StructureRenderUi :id=sandkit.api.structures.structurerenderui
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRenderUi</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:641](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L641)
 
 Hotbar / build-menu UI sprite settings.
@@ -15597,7 +14991,6 @@ Defined in: [sandkit/api/structures.d.ts:648](https://github.com/sandustry-moddi
 #### StructureRender :id=sandkit.api.structures.structurerender
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRender</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:652](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L652)
 
 Render settings for a structure definition.
@@ -15689,7 +15082,6 @@ Defined in: [sandkit/api/structures.d.ts:659](https://github.com/sandustry-moddi
 #### SandkitStructureDefinition :id=sandkit.api.structures.sandkitstructuredefinition
 
 <p class="smt-member-path"><code>sandkit.api.structures.SandkitStructureDefinition</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:663](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L663)
 
 Full structure definition registered with the game.
@@ -15861,7 +15253,6 @@ Values interpolated into the structure description string.
 #### StructureBuildOptions :id=sandkit.api.structures.structurebuildoptions
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBuildOptions</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:698](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L698)
 
 Options passed to [buildAtCell](#buildatcell).
@@ -15877,7 +15268,6 @@ Options passed to [buildAtCell](#buildatcell).
 #### StructureRemovalOptions :id=sandkit.api.structures.structureremovaloptions
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRemovalOptions</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:703](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L703)
 
 Options passed to [removeAtCell](#removeatcell).
@@ -15909,7 +15299,6 @@ Skip visual teardown effects.
 #### StructureBulkRemovalOptions :id=sandkit.api.structures.structurebulkremovaloptions
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureBulkRemovalOptions</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:711](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L711)
 
 Options passed to bulk structure removal helpers.
@@ -15955,7 +15344,6 @@ Defined in: [sandkit/api/structures.d.ts:716](https://github.com/sandustry-moddi
 #### StructureProcessingContext :id=sandkit.api.structures.structureprocessingcontext
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureProcessingContext</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:724](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L724)
 
 Context passed to structure processing callbacks.
@@ -16094,8 +15482,9 @@ Mutation writer payload accepted by the runtime.
 
 ***
 
-#### ~~StructureProcessorDefinitionV1~~
+#### ~~StructureProcessorDefinitionV1~~ :id=sandkit.api.structures.structureprocessordefinitionv1
 
+<p class="smt-member-path"><code>sandkit.api.structures.StructureProcessorDefinitionV1</code></p>
 Defined in: [sandkit/api/structures.d.ts:768](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L768)
 
 ##### Deprecated
@@ -16147,7 +15536,6 @@ Synchronous callback invoked for each structure instance.
 #### PlacementConfigIntegerField :id=sandkit.api.structures.placementconfigintegerfield
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigIntegerField</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:779](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L779)
 
 Integer placement field with optional bounds.
@@ -16207,7 +15595,6 @@ Defined in: [sandkit/api/structures.d.ts:785](https://github.com/sandustry-moddi
 #### PlacementConfigChoiceField :id=sandkit.api.structures.placementconfigchoicefield
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigChoiceField</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:789](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L789)
 
 Choice placement field with labeled options.
@@ -16251,7 +15638,6 @@ Defined in: [sandkit/api/structures.d.ts:793](https://github.com/sandustry-moddi
 #### PlacementConfigDefinition :id=sandkit.api.structures.placementconfigdefinition
 
 <p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigDefinition</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:800](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L800)
 
 Placement rule definition for a structure type.
@@ -16279,7 +15665,6 @@ Defined in: [sandkit/api/structures.d.ts:802](https://github.com/sandustry-moddi
 #### WeightedRefineryRecipeDefinitionV1 :id=sandkit.api.structures.weightedrefineryrecipedefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.structures.WeightedRefineryRecipeDefinitionV1</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:813](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L813)
 
 Weighted refinery recipe definition shape.
@@ -16307,7 +15692,6 @@ Defined in: [sandkit/api/structures.d.ts:815](https://github.com/sandustry-moddi
 #### StructureProcessingDefinitionV1 :id=sandkit.api.structures.structureprocessingdefinitionv1
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureProcessingDefinitionV1</code></p>
-
 Defined in: [sandkit/api/structures.d.ts:819](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L819)
 
 Custom structure processing definition shape.
@@ -16356,10 +15740,8 @@ Defined in: [sandkit/api/structures.d.ts:822](https://github.com/sandustry-moddi
 
 #### PlacementConfigField :id=sandkit.api.structures.placementconfigfield
 
-<p class="smt-member-path"><code>sandkit.api.structures.PlacementConfigField</code></p>
-
 ```ts
-PlacementConfigField = PlacementConfigIntegerField | PlacementConfigChoiceField
+sandkit.api.structures.PlacementConfigField = PlacementConfigIntegerField | PlacementConfigChoiceField
 ```
 
 Defined in: [sandkit/api/structures.d.ts:776](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L776)
@@ -16370,10 +15752,8 @@ Placement hotbar field definition.
 
 #### PlanterBoxRecipeDefinitionV1 :id=sandkit.api.structures.planterboxrecipedefinitionv1
 
-<p class="smt-member-path"><code>sandkit.api.structures.PlanterBoxRecipeDefinitionV1</code></p>
-
 ```ts
-PlanterBoxRecipeDefinitionV1 = PlanterBoxRecipeDefinitionV1
+sandkit.api.structures.PlanterBoxRecipeDefinitionV1 = PlanterBoxRecipeDefinitionV1
 ```
 
 Defined in: [sandkit/api/structures.d.ts:806](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L806)
@@ -16384,10 +15764,8 @@ Planter box recipe definition shape.
 
 #### ShakerRecipeDefinitionV1 :id=sandkit.api.structures.shakerrecipedefinitionv1
 
-<p class="smt-member-path"><code>sandkit.api.structures.ShakerRecipeDefinitionV1</code></p>
-
 ```ts
-ShakerRecipeDefinitionV1 = ShakerRecipeDefinitionV1
+sandkit.api.structures.ShakerRecipeDefinitionV1 = ShakerRecipeDefinitionV1
 ```
 
 Defined in: [sandkit/api/structures.d.ts:808](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L808)
@@ -16398,10 +15776,8 @@ Shaker recipe definition shape.
 
 #### KineticPressRecipeDefinitionV1 :id=sandkit.api.structures.kineticpressrecipedefinitionv1
 
-<p class="smt-member-path"><code>sandkit.api.structures.KineticPressRecipeDefinitionV1</code></p>
-
 ```ts
-KineticPressRecipeDefinitionV1 = KineticPressRecipeDefinitionV1
+sandkit.api.structures.KineticPressRecipeDefinitionV1 = KineticPressRecipeDefinitionV1
 ```
 
 Defined in: [sandkit/api/structures.d.ts:810](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L810)
@@ -16412,10 +15788,8 @@ Kinetic press recipe definition shape.
 
 #### register() :id=sandkit.api.structures.register
 
-<p class="smt-member-path"><code>sandkit.api.structures.register()</code></p>
-
 ```ts
-register(definition: SandkitStructureDefinition, options?: object): void
+sandkit.api.structures.register(definition: SandkitStructureDefinition, options?: object): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:152](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L152)
@@ -16478,10 +15852,8 @@ api.structures.register({
 
 #### updateDefinition() :id=sandkit.api.structures.updatedefinition
 
-<p class="smt-member-path"><code>sandkit.api.structures.updateDefinition()</code></p>
-
 ```ts
-updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStructureDefinition>, options?: object): void
+sandkit.api.structures.updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStructureDefinition>, options?: object): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L177)
@@ -16534,10 +15906,8 @@ api.structures.updateDefinition("exampleJunction", {
 
 #### registerVariant() :id=sandkit.api.structures.registervariant
 
-<p class="smt-member-path"><code>sandkit.api.structures.registerVariant()</code></p>
-
 ```ts
-registerVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
+sandkit.api.structures.registerVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:210](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L210)
@@ -16601,10 +15971,10 @@ api.structures.registerVariant(
 
 ***
 
-#### ~~addVariant()~~
+#### ~~addVariant()~~ :id=sandkit.api.structures.addvariant
 
 ```ts
-addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
+sandkit.api.structures.addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:221](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L221)
@@ -16647,10 +16017,8 @@ Use [registerVariant](#registervariant) instead.
 
 #### registerPlacementConfig() :id=sandkit.api.structures.registerplacementconfig
 
-<p class="smt-member-path"><code>sandkit.api.structures.registerPlacementConfig()</code></p>
-
 ```ts
-registerPlacementConfig(definition: PlacementConfigDefinition): void
+sandkit.api.structures.registerPlacementConfig(definition: PlacementConfigDefinition): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:261](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L261)
@@ -16705,10 +16073,8 @@ api.structures.registerPlacementConfig({
 
 #### getAvailableTypes() :id=sandkit.api.structures.getavailabletypes
 
-<p class="smt-member-path"><code>sandkit.api.structures.getAvailableTypes()</code></p>
-
 ```ts
-getAvailableTypes(): Set<StructureRef>
+sandkit.api.structures.getAvailableTypes(): Set<StructureRef>
 ```
 
 Defined in: [sandkit/api/structures.d.ts:268](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L268)
@@ -16725,10 +16091,10 @@ Return structure types available for building.
 
 ***
 
-#### ~~getUnlockedTypes()~~
+#### ~~getUnlockedTypes()~~ :id=sandkit.api.structures.getunlockedtypes
 
 ```ts
-getUnlockedTypes(): Set<StructureRef>
+sandkit.api.structures.getUnlockedTypes(): Set<StructureRef>
 ```
 
 Defined in: [sandkit/api/structures.d.ts:275](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L275)
@@ -16749,10 +16115,8 @@ Use [getAvailableTypes](#getavailabletypes) instead.
 
 #### isBlockedByPlayerAtCell() :id=sandkit.api.structures.isblockedbyplayeratcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.isBlockedByPlayerAtCell()</code></p>
-
 ```ts
-isBlockedByPlayerAtCell(...args: CellCoordinates): boolean
+sandkit.api.structures.isBlockedByPlayerAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:285](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L285)
@@ -16777,10 +16141,8 @@ Return true when the player blocks building at the cell.
 
 #### isLauncherAtCell() :id=sandkit.api.structures.islauncheratcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.isLauncherAtCell()</code></p>
-
 ```ts
-isLauncherAtCell(...args: CellCoordinates): boolean
+sandkit.api.structures.isLauncherAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:295](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L295)
@@ -16805,10 +16167,8 @@ Return true when a launcher structure is at the cell.
 
 #### isLockedByType() :id=sandkit.api.structures.islockedbytype
 
-<p class="smt-member-path"><code>sandkit.api.structures.isLockedByType()</code></p>
-
 ```ts
-isLockedByType(structureType: StructureRef): boolean
+sandkit.api.structures.isLockedByType(structureType: StructureRef): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L307)
@@ -16836,10 +16196,10 @@ Structure type value or string id.
 
 ***
 
-#### ~~isUnlockedByType()~~
+#### ~~isUnlockedByType()~~ :id=sandkit.api.structures.isunlockedbytype
 
 ```ts
-isUnlockedByType(structureType: StructureRef): boolean
+sandkit.api.structures.isUnlockedByType(structureType: StructureRef): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:314](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L314)
@@ -16866,10 +16226,8 @@ Use [isLockedByType](#islockedbytype) instead. Same function as [isLockedByType]
 
 #### mapValueToSpritesheetIndex() :id=sandkit.api.structures.mapvaluetospritesheetindex
 
-<p class="smt-member-path"><code>sandkit.api.structures.mapValueToSpritesheetIndex()</code></p>
-
 ```ts
-mapValueToSpritesheetIndex(value: number, thresholds: number[]): number
+sandkit.api.structures.mapValueToSpritesheetIndex(value: number, thresholds: number[]): number
 ```
 
 Defined in: [sandkit/api/structures.d.ts:333](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L333)
@@ -16913,10 +16271,8 @@ const index = api.structures.mapValueToSpritesheetIndex(
 
 #### buildAtCell() :id=sandkit.api.structures.buildatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.buildAtCell()</code></p>
-
 ```ts
-buildAtCell(...args: number, number, [StructureRef, StructureBuildOptions]): void
+sandkit.api.structures.buildAtCell(...args: number, number, [StructureRef, StructureBuildOptions]): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:345](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L345)
@@ -16939,10 +16295,10 @@ Build a structure at a cell. Main-thread writes are deferred.
 
 ***
 
-#### ~~buildAtCellWhenIdle()~~
+#### ~~buildAtCellWhenIdle()~~ :id=sandkit.api.structures.buildatcellwhenidle
 
 ```ts
-buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOptions]): void
+sandkit.api.structures.buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOptions]): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:354](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L354)
@@ -16969,10 +16325,8 @@ Use [buildAtCell](#buildatcell) instead.
 
 #### removeAtCell() :id=sandkit.api.structures.removeatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.removeAtCell()</code></p>
-
 ```ts
-removeAtCell(...args: number, number, [StructureRemovalOptions]): void
+sandkit.api.structures.removeAtCell(...args: number, number, [StructureRemovalOptions]): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L367)
@@ -16995,10 +16349,10 @@ Remove a structure at a cell. Main-thread writes are deferred.
 
 ***
 
-#### ~~removeAtCellWhenIdle()~~
+#### ~~removeAtCellWhenIdle()~~ :id=sandkit.api.structures.removeatcellwhenidle
 
 ```ts
-removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
+sandkit.api.structures.removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:376](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L376)
@@ -17025,10 +16379,8 @@ Use [removeAtCell](#removeatcell) instead.
 
 #### removeBetweenCells() :id=sandkit.api.structures.removebetweencells
 
-<p class="smt-member-path"><code>sandkit.api.structures.removeBetweenCells()</code></p>
-
 ```ts
-removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
+sandkit.api.structures.removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:391](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L391)
@@ -17077,10 +16429,10 @@ Optional bulk-removal flags.
 
 ***
 
-#### ~~removeBetweenCellsWhenIdle()~~
+#### ~~removeBetweenCellsWhenIdle()~~ :id=sandkit.api.structures.removebetweencellswhenidle
 
 ```ts
-removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
+sandkit.api.structures.removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:404](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L404)
@@ -17123,10 +16475,8 @@ Use [removeBetweenCells](#removebetweencells) instead.
 
 #### removeAtCells() :id=sandkit.api.structures.removeatcells
 
-<p class="smt-member-path"><code>sandkit.api.structures.removeAtCells()</code></p>
-
 ```ts
-removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void
+sandkit.api.structures.removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:428](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L428)
@@ -17166,10 +16516,10 @@ api.structures.removeAtCells([
 
 ***
 
-#### ~~removeAtCellsWhenIdle()~~
+#### ~~removeAtCellsWhenIdle()~~ :id=sandkit.api.structures.removeatcellswhenidle
 
 ```ts
-removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOptions): void
+sandkit.api.structures.removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:435](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L435)
@@ -17198,10 +16548,10 @@ Use [removeAtCells](#removeatcells) instead.
 
 ***
 
-#### ~~addProcessor()~~
+#### ~~addProcessor()~~ :id=sandkit.api.structures.addprocessor
 
 ```ts
-addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void
+sandkit.api.structures.addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:445](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L445)
@@ -17233,7 +16583,6 @@ Use [processing.register](api/sandkit.api.structures.processing.md#register) ins
 #### forEachOfType :id=sandkit.api.structures.foreachoftype
 
 <p class="smt-member-path"><code>sandkit.api.structures.forEachOfType</code></p>
-
 Re-exports [forEachOfType](api/sandkit.api.structures.worker.md#foreachoftype)
 
 ***
@@ -17241,7 +16590,6 @@ Re-exports [forEachOfType](api/sandkit.api.structures.worker.md#foreachoftype)
 #### getAtCell :id=sandkit.api.structures.getatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.getAtCell</code></p>
-
 Re-exports [getAtCell](api/sandkit.api.structures.worker.md#getatcell)
 
 ***
@@ -17249,7 +16597,6 @@ Re-exports [getAtCell](api/sandkit.api.structures.worker.md#getatcell)
 #### getDefinitionByType :id=sandkit.api.structures.getdefinitionbytype
 
 <p class="smt-member-path"><code>sandkit.api.structures.getDefinitionByType</code></p>
-
 Re-exports [getDefinitionByType](api/sandkit.api.structures.worker.md#getdefinitionbytype)
 
 ***
@@ -17257,7 +16604,6 @@ Re-exports [getDefinitionByType](api/sandkit.api.structures.worker.md#getdefinit
 #### getTypeById :id=sandkit.api.structures.gettypebyid
 
 <p class="smt-member-path"><code>sandkit.api.structures.getTypeById</code></p>
-
 Re-exports [getTypeById](api/sandkit.api.structures.worker.md#gettypebyid)
 
 ***
@@ -17265,7 +16611,6 @@ Re-exports [getTypeById](api/sandkit.api.structures.worker.md#gettypebyid)
 #### hasBuiltAtCell :id=sandkit.api.structures.hasbuiltatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.hasBuiltAtCell</code></p>
-
 Re-exports [hasBuiltAtCell](api/sandkit.api.structures.worker.md#hasbuiltatcell)
 
 ***
@@ -17273,7 +16618,6 @@ Re-exports [hasBuiltAtCell](api/sandkit.api.structures.worker.md#hasbuiltatcell)
 #### isType :id=sandkit.api.structures.istype
 
 <p class="smt-member-path"><code>sandkit.api.structures.isType</code></p>
-
 Re-exports [isType](api/sandkit.api.structures.worker.md#istype)
 
 ***
@@ -17281,7 +16625,6 @@ Re-exports [isType](api/sandkit.api.structures.worker.md#istype)
 #### isTypeAtCell :id=sandkit.api.structures.istypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.isTypeAtCell</code></p>
-
 Re-exports [isTypeAtCell](api/sandkit.api.structures.worker.md#istypeatcell)
 
 ***
@@ -17289,7 +16632,6 @@ Re-exports [isTypeAtCell](api/sandkit.api.structures.worker.md#istypeatcell)
 #### setSpritesheetIndex :id=sandkit.api.structures.setspritesheetindex
 
 <p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndex</code></p>
-
 Re-exports [setSpritesheetIndex](api/sandkit.api.structures.worker.md#setspritesheetindex)
 
 ***
@@ -17297,7 +16639,6 @@ Re-exports [setSpritesheetIndex](api/sandkit.api.structures.worker.md#setsprites
 #### setSpritesheetIndexAtCell :id=sandkit.api.structures.setspritesheetindexatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndexAtCell</code></p>
-
 Re-exports [setSpritesheetIndexAtCell](api/sandkit.api.structures.worker.md#setspritesheetindexatcell)
 
 ***
@@ -17305,7 +16646,6 @@ Re-exports [setSpritesheetIndexAtCell](api/sandkit.api.structures.worker.md#sets
 #### setSpritesheetIndexByValue :id=sandkit.api.structures.setspritesheetindexbyvalue
 
 <p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndexByValue</code></p>
-
 Re-exports [setSpritesheetIndexByValue](api/sandkit.api.structures.worker.md#setspritesheetindexbyvalue)
 
 ***
@@ -17313,7 +16653,6 @@ Re-exports [setSpritesheetIndexByValue](api/sandkit.api.structures.worker.md#set
 #### setSpritesheetIndexByValueAtCell :id=sandkit.api.structures.setspritesheetindexbyvalueatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndexByValueAtCell</code></p>
-
 Re-exports [setSpritesheetIndexByValueAtCell](api/sandkit.api.structures.worker.md#setspritesheetindexbyvalueatcell)
 
 ***
@@ -17321,7 +16660,6 @@ Re-exports [setSpritesheetIndexByValueAtCell](api/sandkit.api.structures.worker.
 #### update :id=sandkit.api.structures.update
 
 <p class="smt-member-path"><code>sandkit.api.structures.update</code></p>
-
 Re-exports [update](api/sandkit.api.structures.worker.md#update)
 
 ***
@@ -17329,7 +16667,6 @@ Re-exports [update](api/sandkit.api.structures.worker.md#update)
 #### updateData :id=sandkit.api.structures.updatedata
 
 <p class="smt-member-path"><code>sandkit.api.structures.updateData</code></p>
-
 Re-exports [updateData](api/sandkit.api.structures.worker.md#updatedata)
 
 ***
@@ -17337,7 +16674,6 @@ Re-exports [updateData](api/sandkit.api.structures.worker.md#updatedata)
 #### Structure :id=sandkit.api.structures.structure
 
 <p class="smt-member-path"><code>sandkit.api.structures.Structure</code></p>
-
 Re-exports [Structure](api/sandkit.api.structures.worker.md#structure)
 
 ***
@@ -17345,7 +16681,6 @@ Re-exports [Structure](api/sandkit.api.structures.worker.md#structure)
 #### StructureType :id=sandkit.api.structures.structuretype
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureType</code></p>
-
 Re-exports [StructureType](api/sandkit.api.structures.worker.md#structuretype)
 
 ***
@@ -17353,7 +16688,6 @@ Re-exports [StructureType](api/sandkit.api.structures.worker.md#structuretype)
 #### StructureId :id=sandkit.api.structures.structureid
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureId</code></p>
-
 Re-exports [StructureId](api/sandkit.api.structures.worker.md#structureid)
 
 ***
@@ -17361,7 +16695,6 @@ Re-exports [StructureId](api/sandkit.api.structures.worker.md#structureid)
 #### StructureRef :id=sandkit.api.structures.structureref
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureRef</code></p>
-
 Re-exports [StructureRef](api/sandkit.api.structures.worker.md#structureref)
 
 ***
@@ -17369,7 +16702,6 @@ Re-exports [StructureRef](api/sandkit.api.structures.worker.md#structureref)
 #### getTypeFromId :id=sandkit.api.structures.gettypefromid
 
 <p class="smt-member-path"><code>sandkit.api.structures.getTypeFromId</code></p>
-
 Re-exports [getTypeFromId](api/sandkit.api.structures.worker.md#gettypefromid)
 
 ***
@@ -17377,7 +16709,6 @@ Re-exports [getTypeFromId](api/sandkit.api.structures.worker.md#gettypefromid)
 #### setData :id=sandkit.api.structures.setdata
 
 <p class="smt-member-path"><code>sandkit.api.structures.setData</code></p>
-
 Re-exports [setData](api/sandkit.api.structures.worker.md#setdata)
 
 ---
@@ -17390,10 +16721,8 @@ Per-structure processing enablement and registration.
 
 #### register() :id=sandkit.api.structures.processing.register
 
-<p class="smt-member-path"><code>sandkit.api.structures.processing.register()</code></p>
-
 ```ts
-register(id: string & object, definition: StructureProcessingDefinitionV1): void
+sandkit.api.structures.processing.register(id: string & object, definition: StructureProcessingDefinitionV1): void
 ```
 
 Defined in: [sandkit/api/structures.d.ts:544](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L544)
@@ -17444,10 +16773,8 @@ api.structures.processing.register(
 
 #### setEnabledAtCell() :id=sandkit.api.structures.processing.setenabledatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.processing.setEnabledAtCell()</code></p>
-
 ```ts
-setEnabledAtCell(...args: [number, number, boolean]): boolean
+sandkit.api.structures.processing.setEnabledAtCell(...args: [number, number, boolean]): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:556](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L556)
@@ -17472,10 +16799,10 @@ True when the enabled state changed.
 
 ***
 
-#### ~~setEnabledAt()~~
+#### ~~setEnabledAt()~~ :id=sandkit.api.structures.processing.setenabledat
 
 ```ts
-setEnabledAt(...args: [number, number, boolean]): boolean
+sandkit.api.structures.processing.setEnabledAt(...args: [number, number, boolean]): boolean
 ```
 
 Defined in: [sandkit/api/structures.d.ts:563](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L563)
@@ -17503,7 +16830,6 @@ Use [setEnabledAtCell](#setenabledatcell) instead.
 #### isEnabledAtCell :id=sandkit.api.structures.processing.isenabledatcell
 
 <p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAtCell</code></p>
-
 Re-exports [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md#isenabledatcell)
 
 ***
@@ -17511,7 +16837,6 @@ Re-exports [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md#ise
 #### isEnabledAt :id=sandkit.api.structures.processing.isenabledat
 
 <p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAt</code></p>
-
 Re-exports [isEnabledAt](api/sandkit.api.structures.processing.worker.md#isenabledat)
 
 ---
@@ -17525,7 +16850,6 @@ Structure recipe registration by machine kind.
 #### register() :id=sandkit.api.structures.recipes.register
 
 <p class="smt-member-path"><code>sandkit.api.structures.recipes.register()</code></p>
-
 ##### Call Signature
 
 ```ts
@@ -17679,7 +17003,6 @@ Weighted input/output recipe.
 #### TechDefinition :id=sandkit.api.tech.techdefinition
 
 <p class="smt-member-path"><code>sandkit.api.tech.TechDefinition</code></p>
-
 Defined in: [sandkit/api/tech.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L145)
 
 Tech definition shape.
@@ -17803,7 +17126,6 @@ Prerequisite tech ids.
 #### TechGridPosition :id=sandkit.api.tech.techgridposition
 
 <p class="smt-member-path"><code>sandkit.api.tech.TechGridPosition</code></p>
-
 Defined in: [sandkit/api/tech.d.ts:175](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L175)
 
 Position on the tech grid.
@@ -17831,7 +17153,6 @@ Defined in: [sandkit/api/tech.d.ts:177](https://github.com/sandustry-modding/San
 #### ConservatoryUnlocks :id=sandkit.api.tech.conservatoryunlocks
 
 <p class="smt-member-path"><code>sandkit.api.tech.ConservatoryUnlocks</code></p>
-
 Defined in: [sandkit/api/tech.d.ts:181](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L181)
 
 Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory.md#appendunlock).
@@ -17862,10 +17183,8 @@ Item ids to unlock.
 
 #### TechGridId :id=sandkit.api.tech.techgridid
 
-<p class="smt-member-path"><code>sandkit.api.tech.TechGridId</code></p>
-
 ```ts
-TechGridId = Tech | LooseString<never> | TaggedNumber<"tech">
+sandkit.api.tech.TechGridId = Tech | LooseString<never> | TaggedNumber<"tech">
 ```
 
 Defined in: [sandkit/api/tech.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L142)
@@ -17877,10 +17196,8 @@ Built-in [TechEnum](api/sandkit.enums.Tech.md) values autocomplete; custom strin
 
 #### getDefinitionById() :id=sandkit.api.tech.getdefinitionbyid
 
-<p class="smt-member-path"><code>sandkit.api.tech.getDefinitionById()</code></p>
-
 ```ts
-getDefinitionById(techId: TechGridId): TechDefinition | undefined
+sandkit.api.tech.getDefinitionById(techId: TechGridId): TechDefinition | undefined
 ```
 
 Defined in: [sandkit/api/tech.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L19)
@@ -17907,10 +17224,8 @@ Tech entry identifier.
 
 #### updateDefinition() :id=sandkit.api.tech.updatedefinition
 
-<p class="smt-member-path"><code>sandkit.api.tech.updateDefinition()</code></p>
-
 ```ts
-updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
+sandkit.api.tech.updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
 ```
 
 Defined in: [sandkit/api/tech.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L36)
@@ -17951,10 +17266,8 @@ api.tech.updateDefinition("exampleTech", {
 
 #### registerDefinition() :id=sandkit.api.tech.registerdefinition
 
-<p class="smt-member-path"><code>sandkit.api.tech.registerDefinition()</code></p>
-
 ```ts
-registerDefinition(techId: TechGridId, definition: TechDefinition): void
+sandkit.api.tech.registerDefinition(techId: TechGridId, definition: TechDefinition): void
 ```
 
 Defined in: [sandkit/api/tech.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L57)
@@ -17997,10 +17310,10 @@ api.tech.registerDefinition("exampleTech", {
 
 ***
 
-#### ~~addDefinition()~~
+#### ~~addDefinition()~~ :id=sandkit.api.tech.adddefinition
 
 ```ts
-addDefinition(techId: TechGridId, definition: TechDefinition): void
+sandkit.api.tech.addDefinition(techId: TechGridId, definition: TechDefinition): void
 ```
 
 Defined in: [sandkit/api/tech.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L64)
@@ -18031,10 +17344,8 @@ Use [registerDefinition](#registerdefinition) instead.
 
 #### registerNode() :id=sandkit.api.tech.registernode
 
-<p class="smt-member-path"><code>sandkit.api.tech.registerNode()</code></p>
-
 ```ts
-registerNode(techId: TechGridId, definition: TechDefinition, options: object): TechGridPosition
+sandkit.api.tech.registerNode(techId: TechGridId, definition: TechDefinition, options: object): TechGridPosition
 ```
 
 Defined in: [sandkit/api/tech.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L84)
@@ -18089,10 +17400,8 @@ const position = api.tech.registerNode(
 
 #### isLockedById() :id=sandkit.api.tech.islockedbyid
 
-<p class="smt-member-path"><code>sandkit.api.tech.isLockedById()</code></p>
-
 ```ts
-isLockedById(techId: TechGridId): boolean
+sandkit.api.tech.isLockedById(techId: TechGridId): boolean
 ```
 
 Defined in: [sandkit/api/tech.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L97)
@@ -18119,10 +17428,8 @@ Tech entry id (string or numeric enum).
 
 #### setLockedById() :id=sandkit.api.tech.setlockedbyid
 
-<p class="smt-member-path"><code>sandkit.api.tech.setLockedById()</code></p>
-
 ```ts
-setLockedById(techId: TechGridId, locked: boolean): void
+sandkit.api.tech.setLockedById(techId: TechGridId, locked: boolean): void
 ```
 
 Defined in: [sandkit/api/tech.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L107)
@@ -18155,10 +17462,8 @@ When true, the tech cannot be purchased.
 
 #### isResearchedById() :id=sandkit.api.tech.isresearchedbyid
 
-<p class="smt-member-path"><code>sandkit.api.tech.isResearchedById()</code></p>
-
 ```ts
-isResearchedById(techId: TechGridId): boolean
+sandkit.api.tech.isResearchedById(techId: TechGridId): boolean
 ```
 
 Defined in: [sandkit/api/tech.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L116)
@@ -18191,10 +17496,8 @@ Conservatory unlock wiring for built-in tech nodes.
 
 #### appendUnlock() :id=sandkit.api.tech.conservatory.appendunlock
 
-<p class="smt-member-path"><code>sandkit.api.tech.conservatory.appendUnlock()</code></p>
-
 ```ts
-appendUnlock(techId: TechGridId, unlocks: ConservatoryUnlocks): void
+sandkit.api.tech.conservatory.appendUnlock(techId: TechGridId, unlocks: ConservatoryUnlocks): void
 ```
 
 Defined in: [sandkit/api/tech.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L135)
@@ -18240,7 +17543,6 @@ api.tech.conservatory.appendUnlock(sandkit.enums.Tech.SignalDevices, {
 #### TerrainDefinition :id=sandkit.api.terrains.terraindefinition
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainDefinition</code></p>
-
 Defined in: [sandkit/api/terrains.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L55)
 
 Terrain definition shape with typed element interactions.
@@ -18279,10 +17581,8 @@ Tooltip interactions shown for this terrain.
 
 #### register() :id=sandkit.api.terrains.register
 
-<p class="smt-member-path"><code>sandkit.api.terrains.register()</code></p>
-
 ```ts
-register(definition: TerrainDefinition): object
+sandkit.api.terrains.register(definition: TerrainDefinition): object
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L71)
@@ -18317,10 +17617,8 @@ cellType: TerrainType
 
 #### updateDefinition() :id=sandkit.api.terrains.updatedefinition
 
-<p class="smt-member-path"><code>sandkit.api.terrains.updateDefinition()</code></p>
-
 ```ts
-updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>): void
+sandkit.api.terrains.updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>): void
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L81)
@@ -18353,10 +17651,8 @@ Fields to merge onto the definition.
 
 #### createAtCell() :id=sandkit.api.terrains.createatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.createAtCell()</code></p>
-
 ```ts
-createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
+sandkit.api.terrains.createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L96)
@@ -18379,10 +17675,10 @@ Create terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 ***
 
-#### ~~createAtCellWhenIdle()~~
+#### ~~createAtCellWhenIdle()~~ :id=sandkit.api.terrains.createatcellwhenidle
 
 ```ts
-createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
+sandkit.api.terrains.createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L105)
@@ -18409,10 +17705,8 @@ Use [createAtCell](#createatcell) instead.
 
 #### replaceAtCell() :id=sandkit.api.terrains.replaceatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.replaceAtCell()</code></p>
-
 ```ts
-replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
+sandkit.api.terrains.replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L119)
@@ -18435,10 +17729,10 @@ Replace terrain at a cell. Main-entry writes are deferred; reads see the old gri
 
 ***
 
-#### ~~replaceAtCellWhenIdle()~~
+#### ~~replaceAtCellWhenIdle()~~ :id=sandkit.api.terrains.replaceatcellwhenidle
 
 ```ts
-replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
+sandkit.api.terrains.replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L128)
@@ -18465,10 +17759,8 @@ Use [replaceAtCell](#replaceatcell) instead.
 
 #### removeAtCell() :id=sandkit.api.terrains.removeatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.removeAtCell()</code></p>
-
 ```ts
-removeAtCell(...args: number, number, [TerrainMutationOptions]): void
+sandkit.api.terrains.removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L141)
@@ -18491,10 +17783,10 @@ Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 ***
 
-#### ~~removeAtCellWhenIdle()~~
+#### ~~removeAtCellWhenIdle()~~ :id=sandkit.api.terrains.removeatcellwhenidle
 
 ```ts
-removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
+sandkit.api.terrains.removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L150)
@@ -18521,10 +17813,8 @@ Use [removeAtCell](#removeatcell) instead.
 
 #### setHitPointsAtCell() :id=sandkit.api.terrains.sethitpointsatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.setHitPointsAtCell()</code></p>
-
 ```ts
-setHitPointsAtCell(...args: [number, number, number]): void
+sandkit.api.terrains.setHitPointsAtCell(...args: [number, number, number]): void
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L163)
@@ -18547,10 +17837,10 @@ Set terrain hit points at a cell. Main-entry writes are deferred; reads see the 
 
 ***
 
-#### ~~setHpAtCell()~~
+#### ~~setHpAtCell()~~ :id=sandkit.api.terrains.sethpatcell
 
 ```ts
-setHpAtCell(...args: [number, number, number]): boolean
+sandkit.api.terrains.setHpAtCell(...args: [number, number, number]): boolean
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L170)
@@ -18575,10 +17865,10 @@ Use [setHitPointsAtCell](#sethitpointsatcell) instead.
 
 ***
 
-#### ~~setHpAtCellWhenIdle()~~
+#### ~~setHpAtCellWhenIdle()~~ :id=sandkit.api.terrains.sethpatcellwhenidle
 
 ```ts
-setHpAtCellWhenIdle(...args: [number, number, number]): void
+sandkit.api.terrains.setHpAtCellWhenIdle(...args: [number, number, number]): void
 ```
 
 Defined in: [sandkit/api/terrains.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L177)
@@ -18606,7 +17896,6 @@ Use [setHitPointsAtCell](#sethitpointsatcell) instead.
 #### getIdByType :id=sandkit.api.terrains.getidbytype
 
 <p class="smt-member-path"><code>sandkit.api.terrains.getIdByType</code></p>
-
 Re-exports [getIdByType](api/sandkit.api.terrains.worker.md#getidbytype)
 
 ***
@@ -18614,7 +17903,6 @@ Re-exports [getIdByType](api/sandkit.api.terrains.worker.md#getidbytype)
 #### getTypeById :id=sandkit.api.terrains.gettypebyid
 
 <p class="smt-member-path"><code>sandkit.api.terrains.getTypeById</code></p>
-
 Re-exports [getTypeById](api/sandkit.api.terrains.worker.md#gettypebyid)
 
 ***
@@ -18622,7 +17910,6 @@ Re-exports [getTypeById](api/sandkit.api.terrains.worker.md#gettypebyid)
 #### getTypeFromId :id=sandkit.api.terrains.gettypefromid
 
 <p class="smt-member-path"><code>sandkit.api.terrains.getTypeFromId</code></p>
-
 Re-exports [getTypeFromId](api/sandkit.api.terrains.worker.md#gettypefromid)
 
 ***
@@ -18630,7 +17917,6 @@ Re-exports [getTypeFromId](api/sandkit.api.terrains.worker.md#gettypefromid)
 #### getDefinitionByType :id=sandkit.api.terrains.getdefinitionbytype
 
 <p class="smt-member-path"><code>sandkit.api.terrains.getDefinitionByType</code></p>
-
 Re-exports [getDefinitionByType](api/sandkit.api.terrains.worker.md#getdefinitionbytype)
 
 ***
@@ -18638,7 +17924,6 @@ Re-exports [getDefinitionByType](api/sandkit.api.terrains.worker.md#getdefinitio
 #### getTypeAtCell :id=sandkit.api.terrains.gettypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.terrains.getTypeAtCell</code></p>
-
 Re-exports [getTypeAtCell](api/sandkit.api.terrains.worker.md#gettypeatcell)
 
 ***
@@ -18646,7 +17931,6 @@ Re-exports [getTypeAtCell](api/sandkit.api.terrains.worker.md#gettypeatcell)
 #### getDataAtCell :id=sandkit.api.terrains.getdataatcell
 
 <p class="smt-member-path"><code>sandkit.api.terrains.getDataAtCell</code></p>
-
 Re-exports [getDataAtCell](api/sandkit.api.terrains.worker.md#getdataatcell)
 
 ***
@@ -18654,7 +17938,6 @@ Re-exports [getDataAtCell](api/sandkit.api.terrains.worker.md#getdataatcell)
 #### isAtCell :id=sandkit.api.terrains.isatcell
 
 <p class="smt-member-path"><code>sandkit.api.terrains.isAtCell</code></p>
-
 Re-exports [isAtCell](api/sandkit.api.terrains.worker.md#isatcell)
 
 ***
@@ -18662,7 +17945,6 @@ Re-exports [isAtCell](api/sandkit.api.terrains.worker.md#isatcell)
 #### isTypeAtCell :id=sandkit.api.terrains.istypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.terrains.isTypeAtCell</code></p>
-
 Re-exports [isTypeAtCell](api/sandkit.api.terrains.worker.md#istypeatcell)
 
 ***
@@ -18670,7 +17952,6 @@ Re-exports [isTypeAtCell](api/sandkit.api.terrains.worker.md#istypeatcell)
 #### isCellIdTerrain :id=sandkit.api.terrains.iscellidterrain
 
 <p class="smt-member-path"><code>sandkit.api.terrains.isCellIdTerrain</code></p>
-
 Re-exports [isCellIdTerrain](api/sandkit.api.terrains.worker.md#iscellidterrain)
 
 ***
@@ -18678,7 +17959,6 @@ Re-exports [isCellIdTerrain](api/sandkit.api.terrains.worker.md#iscellidterrain)
 #### damageAtCell :id=sandkit.api.terrains.damageatcell
 
 <p class="smt-member-path"><code>sandkit.api.terrains.damageAtCell</code></p>
-
 Re-exports [damageAtCell](api/sandkit.api.terrains.worker.md#damageatcell)
 
 ***
@@ -18686,7 +17966,6 @@ Re-exports [damageAtCell](api/sandkit.api.terrains.worker.md#damageatcell)
 #### meltAtCell :id=sandkit.api.terrains.meltatcell
 
 <p class="smt-member-path"><code>sandkit.api.terrains.meltAtCell</code></p>
-
 Re-exports [meltAtCell](api/sandkit.api.terrains.worker.md#meltatcell)
 
 ***
@@ -18694,7 +17973,6 @@ Re-exports [meltAtCell](api/sandkit.api.terrains.worker.md#meltatcell)
 #### TerrainMutationOptions :id=sandkit.api.terrains.terrainmutationoptions
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainMutationOptions</code></p>
-
 Re-exports [TerrainMutationOptions](api/sandkit.api.terrains.worker.md#terrainmutationoptions)
 
 ***
@@ -18702,7 +17980,6 @@ Re-exports [TerrainMutationOptions](api/sandkit.api.terrains.worker.md#terrainmu
 #### TerrainType :id=sandkit.api.terrains.terraintype
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainType</code></p>
-
 Re-exports [TerrainType](api/sandkit.api.terrains.worker.md#terraintype)
 
 ***
@@ -18710,7 +17987,6 @@ Re-exports [TerrainType](api/sandkit.api.terrains.worker.md#terraintype)
 #### TerrainId :id=sandkit.api.terrains.terrainid
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainId</code></p>
-
 Re-exports [TerrainId](api/sandkit.api.terrains.worker.md#terrainid)
 
 ***
@@ -18718,7 +17994,6 @@ Re-exports [TerrainId](api/sandkit.api.terrains.worker.md#terrainid)
 #### TerrainRef :id=sandkit.api.terrains.terrainref
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainRef</code></p>
-
 Re-exports [TerrainRef](api/sandkit.api.terrains.worker.md#terrainref)
 
 ***
@@ -18726,7 +18001,6 @@ Re-exports [TerrainRef](api/sandkit.api.terrains.worker.md#terrainref)
 #### TerrainDataAtCell :id=sandkit.api.terrains.terraindataatcell
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainDataAtCell</code></p>
-
 Re-exports [TerrainDataAtCell](api/sandkit.api.terrains.worker.md#terraindataatcell)
 
 ---
@@ -18737,10 +18011,8 @@ Re-exports [TerrainDataAtCell](api/sandkit.api.terrains.worker.md#terraindataatc
 
 #### getTimeMs() :id=sandkit.api.time.gettimems
 
-<p class="smt-member-path"><code>sandkit.api.time.getTimeMs()</code></p>
-
 ```ts
-getTimeMs(): number
+sandkit.api.time.getTimeMs(): number
 ```
 
 Defined in: [sandkit/api/time.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/time.d.ts#L10)
@@ -18755,10 +18027,8 @@ Return elapsed game time in milliseconds.
 
 #### getTick() :id=sandkit.api.time.gettick
 
-<p class="smt-member-path"><code>sandkit.api.time.getTick()</code></p>
-
 ```ts
-getTick(): number
+sandkit.api.time.getTick(): number
 ```
 
 Defined in: [sandkit/api/time.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/time.d.ts#L12)
@@ -18787,10 +18057,8 @@ Grabber tool size and state.
 
 #### setSize() :id=sandkit.api.tools.grabber.setsize
 
-<p class="smt-member-path"><code>sandkit.api.tools.grabber.setSize()</code></p>
-
 ```ts
-setSize(size: number): void
+sandkit.api.tools.grabber.setSize(size: number): void
 ```
 
 Defined in: [sandkit/api/tools.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L15)
@@ -18813,10 +18081,8 @@ Grab radius in cells.
 
 #### getSize() :id=sandkit.api.tools.grabber.getsize
 
-<p class="smt-member-path"><code>sandkit.api.tools.grabber.getSize()</code></p>
-
 ```ts
-getSize(): number
+sandkit.api.tools.grabber.getSize(): number
 ```
 
 Defined in: [sandkit/api/tools.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L21)
@@ -18833,10 +18099,8 @@ Grab radius in cells.
 
 #### isActive() :id=sandkit.api.tools.grabber.isactive
 
-<p class="smt-member-path"><code>sandkit.api.tools.grabber.isActive()</code></p>
-
 ```ts
-isActive(): boolean
+sandkit.api.tools.grabber.isActive(): boolean
 ```
 
 Defined in: [sandkit/api/tools.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L27)
@@ -18853,10 +18117,8 @@ True when the grabber is the active tool.
 
 #### isLoaded() :id=sandkit.api.tools.grabber.isloaded
 
-<p class="smt-member-path"><code>sandkit.api.tools.grabber.isLoaded()</code></p>
-
 ```ts
-isLoaded(): boolean
+sandkit.api.tools.grabber.isLoaded(): boolean
 ```
 
 Defined in: [sandkit/api/tools.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L33)
@@ -18878,7 +18140,6 @@ True when the grabber buffer is not empty.
 #### MainTriggerDefinition :id=sandkit.api.triggers.maintriggerdefinition
 
 <p class="smt-member-path"><code>sandkit.api.triggers.MainTriggerDefinition</code></p>
-
 Defined in: [sandkit/api/triggers.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L27)
 
 Main-thread trigger definition shape.
@@ -18919,10 +18180,8 @@ Called each time the trigger fires.
 
 #### register() :id=sandkit.api.triggers.register
 
-<p class="smt-member-path"><code>sandkit.api.triggers.register()</code></p>
-
 ```ts
-register(triggerId: string, definition: MainTriggerDefinition): void
+sandkit.api.triggers.register(triggerId: string, definition: MainTriggerDefinition): void
 ```
 
 Defined in: [sandkit/api/triggers.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L24)
@@ -19080,7 +18339,6 @@ api.ui.useGameEvent("resource:collected", (payload) => {
 #### TooltipMessageData :id=sandkit.api.ui.tooltipmessagedata
 
 <p class="smt-member-path"><code>sandkit.api.ui.TooltipMessageData</code></p>
-
 Defined in: [sandkit/api/ui.d.ts:299](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L299)
 
 Message tooltip with localized body text.
@@ -19112,7 +18370,6 @@ Message body as localized text.
 #### Focusable :id=sandkit.api.ui.focusable
 
 <p class="smt-member-path"><code>sandkit.api.ui.Focusable</code></p>
-
 Defined in: [sandkit/api/ui.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L307)
 
 Focusable element state from useFocusable.
@@ -19164,7 +18421,6 @@ Move controller focus to this element.
 #### FocusOptions :id=sandkit.api.ui.focusoptions
 
 <p class="smt-member-path"><code>sandkit.api.ui.FocusOptions</code></p>
-
 Defined in: [sandkit/api/ui.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L317)
 
 Options for useFocusable registration.
@@ -19279,10 +18535,8 @@ When true, scroll the element into view on focus.
 
 #### OverlaySlot :id=sandkit.api.ui.overlayslot
 
-<p class="smt-member-path"><code>sandkit.api.ui.OverlaySlot</code></p>
-
 ```ts
-OverlaySlot = LooseString<"hotbar" | "global">
+sandkit.api.ui.OverlaySlot = LooseString<"hotbar" | "global">
 ```
 
 Defined in: [sandkit/api/ui.d.ts:284](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L284)
@@ -19293,10 +18547,8 @@ Overlay slot name. Known vanilla slots autocomplete; any string is allowed.
 
 #### ComponentId :id=sandkit.api.ui.componentid
 
-<p class="smt-member-path"><code>sandkit.api.ui.ComponentId</code></p>
-
 ```ts
-ComponentId = ComponentId | LooseString<never>
+sandkit.api.ui.ComponentId = ComponentId | LooseString<never>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L290)
@@ -19308,10 +18560,8 @@ Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) values autocomplete
 
 #### ComponentUpdateOptions :id=sandkit.api.ui.componentupdateoptions
 
-<p class="smt-member-path"><code>sandkit.api.ui.ComponentUpdateOptions</code></p>
-
 ```ts
-ComponentUpdateOptions = Record<string, unknown>
+sandkit.api.ui.ComponentUpdateOptions = Record<string, unknown>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:293](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L293)
@@ -19322,10 +18572,8 @@ Component-specific update payload passed to [update](#update).
 
 #### TooltipData :id=sandkit.api.ui.tooltipdata
 
-<p class="smt-member-path"><code>sandkit.api.ui.TooltipData</code></p>
-
 ```ts
-TooltipData = TooltipMessageData
+sandkit.api.ui.TooltipData = TooltipMessageData
 ```
 
 Defined in: [sandkit/api/ui.d.ts:296](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L296)
@@ -19336,10 +18584,8 @@ Tooltip payload shown near the cursor or UI target.
 
 #### update() :id=sandkit.api.ui.update
 
-<p class="smt-member-path"><code>sandkit.api.ui.update()</code></p>
-
 ```ts
-update(componentId: ComponentId, options?: ComponentUpdateOptions): void
+sandkit.api.ui.update(componentId: ComponentId, options?: ComponentUpdateOptions): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L130)
@@ -19368,10 +18614,8 @@ Component-specific update payload.
 
 #### openPauseMenu() :id=sandkit.api.ui.openpausemenu
 
-<p class="smt-member-path"><code>sandkit.api.ui.openPauseMenu()</code></p>
-
 ```ts
-openPauseMenu(): void
+sandkit.api.ui.openPauseMenu(): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L133)
@@ -19386,10 +18630,8 @@ Open the pause menu.
 
 #### showTooltip() :id=sandkit.api.ui.showtooltip
 
-<p class="smt-member-path"><code>sandkit.api.ui.showTooltip()</code></p>
-
 ```ts
-showTooltip(data: TooltipMessageData): void
+sandkit.api.ui.showTooltip(data: TooltipMessageData): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L139)
@@ -19412,10 +18654,8 @@ Tooltip type and localized content.
 
 #### alert() :id=sandkit.api.ui.alert
 
-<p class="smt-member-path"><code>sandkit.api.ui.alert()</code></p>
-
 ```ts
-alert(message: LocalizedText, title?: LocalizedText): Promise<void>
+sandkit.api.ui.alert(message: LocalizedText, title?: LocalizedText): Promise<void>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L155)
@@ -19455,10 +18695,8 @@ await api.ui.alert(
 
 #### confirm() :id=sandkit.api.ui.confirm
 
-<p class="smt-member-path"><code>sandkit.api.ui.confirm()</code></p>
-
 ```ts
-confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
+sandkit.api.ui.confirm(message: LocalizedText, title?: LocalizedText): Promise<boolean>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L170)
@@ -19497,10 +18735,8 @@ const confirmed = await api.ui.confirm(
 
 #### prompt() :id=sandkit.api.ui.prompt
 
-<p class="smt-member-path"><code>sandkit.api.ui.prompt()</code></p>
-
 ```ts
-prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>
+sandkit.api.ui.prompt(message: LocalizedText, defaultValue?: string, placeholder?: LocalizedText, title?: LocalizedText, allowCopy?: boolean): Promise<string | null>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L189)
@@ -19558,10 +18794,8 @@ const value = await api.ui.prompt(
 
 #### inject() :id=sandkit.api.ui.inject
 
-<p class="smt-member-path"><code>sandkit.api.ui.inject()</code></p>
-
 ```ts
-inject(componentId: ComponentId, component: ComponentType<Record<string, never>>): () => void
+sandkit.api.ui.inject(componentId: ComponentId, component: ComponentType<Record<string, never>>): () => void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L203)
@@ -19593,7 +18827,6 @@ Function that unmounts the injected component.
 #### toast :id=sandkit.api.ui.toast
 
 <p class="smt-member-path"><code>sandkit.api.ui.toast</code></p>
-
 Re-exports [toast](api/sandkit.api.ui.worker.md#toast)
 
 ***
@@ -19601,7 +18834,6 @@ Re-exports [toast](api/sandkit.api.ui.worker.md#toast)
 #### LocalizedText :id=sandkit.api.ui.localizedtext
 
 <p class="smt-member-path"><code>sandkit.api.ui.LocalizedText</code></p>
-
 Re-exports [LocalizedText](api/sandkit.api.ui.worker.md#localizedtext)
 
 ***
@@ -19609,7 +18841,6 @@ Re-exports [LocalizedText](api/sandkit.api.ui.worker.md#localizedtext)
 #### ToastOptions :id=sandkit.api.ui.toastoptions
 
 <p class="smt-member-path"><code>sandkit.api.ui.ToastOptions</code></p>
-
 Re-exports [ToastOptions](api/sandkit.api.ui.worker.md#toastoptions)
 
 ---
@@ -19622,10 +18853,8 @@ Controller focus and scope navigation hooks.
 
 #### useFocusable() :id=sandkit.api.ui.navigation.usefocusable
 
-<p class="smt-member-path"><code>sandkit.api.ui.navigation.useFocusable()</code></p>
-
 ```ts
-useFocusable<T *extends* HTMLElement = HTMLDivElement>(options: FocusOptions): Focusable<T>
+sandkit.api.ui.navigation.useFocusable<T *extends* HTMLElement = HTMLDivElement>(options: FocusOptions): Focusable<T>
 ```
 
 Defined in: [sandkit/api/ui.d.ts:248](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L248)
@@ -19666,10 +18895,8 @@ const focusable = api.ui.navigation.useFocusable({
 
 #### useFocusScope() :id=sandkit.api.ui.navigation.usefocusscope
 
-<p class="smt-member-path"><code>sandkit.api.ui.navigation.useFocusScope()</code></p>
-
 ```ts
-useFocusScope(options: object): void
+sandkit.api.ui.navigation.useFocusScope(options: object): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:265](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L265)
@@ -19720,10 +18947,8 @@ api.ui.navigation.useFocusScope({
 
 #### controllerFocusClass() :id=sandkit.api.ui.navigation.controllerfocusclass
 
-<p class="smt-member-path"><code>sandkit.api.ui.navigation.controllerFocusClass()</code></p>
-
 ```ts
-controllerFocusClass(focused: boolean): string
+sandkit.api.ui.navigation.controllerFocusClass(focused: boolean): string
 ```
 
 Defined in: [sandkit/api/ui.d.ts:278](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L278)
@@ -19754,10 +18979,8 @@ Overlay slot registration and updates.
 
 #### register() :id=sandkit.api.ui.overlays.register
 
-<p class="smt-member-path"><code>sandkit.api.ui.overlays.register()</code></p>
-
 ```ts
-register(slot: OverlaySlot, overlayId: string, render: () => ReactNode): void
+sandkit.api.ui.overlays.register(slot: OverlaySlot, overlayId: string, render: () => ReactNode): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L216)
@@ -19792,10 +19015,8 @@ Function that returns React content.
 
 #### unregister() :id=sandkit.api.ui.overlays.unregister
 
-<p class="smt-member-path"><code>sandkit.api.ui.overlays.unregister()</code></p>
-
 ```ts
-unregister(slot: OverlaySlot, overlayId: string): void
+sandkit.api.ui.overlays.unregister(slot: OverlaySlot, overlayId: string): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L223)
@@ -19824,10 +19045,8 @@ Overlay id passed to [register](#register).
 
 #### update() :id=sandkit.api.ui.overlays.update
 
-<p class="smt-member-path"><code>sandkit.api.ui.overlays.update()</code></p>
-
 ```ts
-update(slot: OverlaySlot): void
+sandkit.api.ui.overlays.update(slot: OverlaySlot): void
 ```
 
 Defined in: [sandkit/api/ui.d.ts:229](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L229)
@@ -19855,7 +19074,6 @@ Slot name to refresh.
 #### UpgradeDefinition :id=sandkit.api.upgrades.upgradedefinition
 
 <p class="smt-member-path"><code>sandkit.api.upgrades.UpgradeDefinition</code></p>
-
 Defined in: [sandkit/api/upgrades.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L54)
 
 Upgrade definition registered for an item.
@@ -19941,7 +19159,6 @@ optional oneOff?: boolean
 #### UpgradeCategoryDefinition :id=sandkit.api.upgrades.upgradecategorydefinition
 
 <p class="smt-member-path"><code>sandkit.api.upgrades.UpgradeCategoryDefinition</code></p>
-
 Defined in: [sandkit/api/upgrades.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L70)
 
 Upgrade category definition shape.
@@ -19978,10 +19195,8 @@ Display name translation key.
 
 #### registerCategory() :id=sandkit.api.upgrades.registercategory
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.registerCategory()</code></p>
-
 ```ts
-registerCategory(definition: UpgradeCategoryDefinition): void
+sandkit.api.upgrades.registerCategory(definition: UpgradeCategoryDefinition): void
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L13)
@@ -20004,10 +19219,8 @@ Category id and display metadata.
 
 #### register() :id=sandkit.api.upgrades.register
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.register()</code></p>
-
 ```ts
-register(definition: UpgradeDefinition): void
+sandkit.api.upgrades.register(definition: UpgradeDefinition): void
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L18)
@@ -20030,10 +19243,8 @@ Item id, upgrade id, costs, and level metadata.
 
 #### updateDefinition() :id=sandkit.api.upgrades.updatedefinition
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.updateDefinition()</code></p>
-
 ```ts
-updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefinition>): void
+sandkit.api.upgrades.updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefinition>): void
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L25)
@@ -20068,10 +19279,8 @@ Fields to merge into the definition.
 
 #### getLevelById() :id=sandkit.api.upgrades.getlevelbyid
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.getLevelById()</code></p>
-
 ```ts
-getLevelById(itemId: string, upgradeId: string): number
+sandkit.api.upgrades.getLevelById(itemId: string, upgradeId: string): number
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L35)
@@ -20100,10 +19309,8 @@ Upgrade id within the item.
 
 #### getAvailableLevelById() :id=sandkit.api.upgrades.getavailablelevelbyid
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.getAvailableLevelById()</code></p>
-
 ```ts
-getAvailableLevelById(itemId: string, upgradeId: string): number
+sandkit.api.upgrades.getAvailableLevelById(itemId: string, upgradeId: string): number
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L41)
@@ -20132,10 +19339,8 @@ Upgrade id within the item.
 
 #### setLevelById() :id=sandkit.api.upgrades.setlevelbyid
 
-<p class="smt-member-path"><code>sandkit.api.upgrades.setLevelById()</code></p>
-
 ```ts
-setLevelById(itemId: string, upgradeId: string, level: number): void
+sandkit.api.upgrades.setLevelById(itemId: string, upgradeId: string, level: number): void
 ```
 
 Defined in: [sandkit/api/upgrades.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L51)
@@ -20178,10 +19383,8 @@ Level to set.
 
 #### getDistance() :id=sandkit.api.utils.getdistance
 
-<p class="smt-member-path"><code>sandkit.api.utils.getDistance()</code></p>
-
 ```ts
-getDistance(pointA: Vector2, pointB: Vector2): number
+sandkit.api.utils.getDistance(pointA: Vector2, pointB: Vector2): number
 ```
 
 Defined in: [sandkit/api/utils.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L19)
@@ -20214,10 +19417,8 @@ Second point.
 
 #### getDirection() :id=sandkit.api.utils.getdirection
 
-<p class="smt-member-path"><code>sandkit.api.utils.getDirection()</code></p>
-
 ```ts
-getDirection(pointA: Vector2, pointB: Vector2): Vector2
+sandkit.api.utils.getDirection(pointA: Vector2, pointB: Vector2): Vector2
 ```
 
 Defined in: [sandkit/api/utils.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L29)
@@ -20250,10 +19451,8 @@ Target point.
 
 #### getAngle() :id=sandkit.api.utils.getangle
 
-<p class="smt-member-path"><code>sandkit.api.utils.getAngle()</code></p>
-
 ```ts
-getAngle(pointA: Vector2, pointB: Vector2): number
+sandkit.api.utils.getAngle(pointA: Vector2, pointB: Vector2): number
 ```
 
 Defined in: [sandkit/api/utils.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L39)
@@ -20286,10 +19485,8 @@ Target point.
 
 #### getCoordinatesBetweenCells() :id=sandkit.api.utils.getcoordinatesbetweencells
 
-<p class="smt-member-path"><code>sandkit.api.utils.getCoordinatesBetweenCells()</code></p>
-
 ```ts
-getCoordinatesBetweenCells(pointA: Vector2, pointB: Vector2): Vector2[]
+sandkit.api.utils.getCoordinatesBetweenCells(pointA: Vector2, pointB: Vector2): Vector2[]
 ```
 
 Defined in: [sandkit/api/utils.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L49)
@@ -20320,10 +19517,10 @@ Line end in cell coordinates.
 
 ***
 
-#### ~~getCoordinatesBetweenPoints()~~
+#### ~~getCoordinatesBetweenPoints()~~ :id=sandkit.api.utils.getcoordinatesbetweenpoints
 
 ```ts
-getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
+sandkit.api.utils.getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 ```
 
 Defined in: [sandkit/api/utils.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L56)
@@ -20358,10 +19555,8 @@ Use [getCoordinatesBetweenCells](#getcoordinatesbetweencells) instead.
 
 #### setPostUpdateEnabled() :id=sandkit.api.workers.setpostupdateenabled
 
-<p class="smt-member-path"><code>sandkit.api.workers.setPostUpdateEnabled()</code></p>
-
 ```ts
-setPostUpdateEnabled(enabled: boolean): void
+sandkit.api.workers.setPostUpdateEnabled(enabled: boolean): void
 ```
 
 Defined in: [sandkit/api/workers.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/workers.d.ts#L13)
@@ -20398,10 +19593,10 @@ Use [grid](api/sandkit.api.grid.md) instead.
 
 ### Functions <!-- {docsify-ignore} -->
 
-#### ~~runWhenSimulationIdle()~~
+#### ~~runWhenSimulationIdle()~~ :id=sandkit.api.world.runwhensimulationidle
 
 ```ts
-runWhenSimulationIdle(callback: () => void): void
+sandkit.api.world.runWhenSimulationIdle(callback: () => void): void
 ```
 
 Defined in: [sandkit/api/world.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L66)
@@ -20426,10 +19621,10 @@ Use [grid.mutate](api/sandkit.api.grid.md#mutate) instead.
 
 ***
 
-#### ~~redrawAroundCellWhenIdle()~~
+#### ~~redrawAroundCellWhenIdle()~~ :id=sandkit.api.world.redrawaroundcellwhenidle
 
 ```ts
-redrawAroundCellWhenIdle(...args: [number, number, number]): void
+sandkit.api.world.redrawAroundCellWhenIdle(...args: [number, number, number]): void
 ```
 
 Defined in: [sandkit/api/world.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L73)
@@ -20454,86 +19649,100 @@ Use [grid.redrawAroundCell](api/sandkit.api.grid.md#redrawaroundcell) instead.
 
 ### References <!-- {docsify-ignore} -->
 
-#### ~~getCellIdAtCell~~
+#### ~~getCellIdAtCell~~ :id=sandkit.api.world.getcellidatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.getCellIdAtCell</code></p>
 Re-exports [getCellIdAtCell](api/sandkit.api.grid.md#getcellidatcell)
 
 ***
 
-#### ~~isCellEmptyAtCell~~
+#### ~~isCellEmptyAtCell~~ :id=sandkit.api.world.iscellemptyatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.isCellEmptyAtCell</code></p>
 Re-exports [isCellEmptyAtCell](api/sandkit.api.grid.md#iscellemptyatcell)
 
 ***
 
-#### ~~isTerrainAtCell~~
+#### ~~isTerrainAtCell~~ :id=sandkit.api.world.isterrainatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.isTerrainAtCell</code></p>
 Re-exports [isTerrainAtCell](api/sandkit.api.grid.md#isterrainatcell)
 
 ***
 
-#### ~~reportActivityAtCell~~
+#### ~~reportActivityAtCell~~ :id=sandkit.api.world.reportactivityatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.reportActivityAtCell</code></p>
 Re-exports [reportActivityAtCell](api/sandkit.api.grid.md#reportactivityatcell)
 
 ***
 
-#### ~~excavateAtCell~~
+#### ~~excavateAtCell~~ :id=sandkit.api.world.excavateatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.excavateAtCell</code></p>
 Re-exports [excavateAtCell](api/sandkit.api.grid.md#excavateatcell)
 
 ***
 
-#### ~~getDimensions~~
+#### ~~getDimensions~~ :id=sandkit.api.world.getdimensions
 
+<p class="smt-member-path"><code>sandkit.api.world.getDimensions</code></p>
 Re-exports [getDimensions](api/sandkit.api.grid.md#getdimensions)
 
 ***
 
-#### ~~ExcavateOptions~~
+#### ~~ExcavateOptions~~ :id=sandkit.api.world.excavateoptions
 
+<p class="smt-member-path"><code>sandkit.api.world.ExcavateOptions</code></p>
 Re-exports [ExcavateOptions](api/sandkit.api.grid.md#excavateoptions)
 
 ***
 
-#### ~~CellId~~
+#### ~~CellId~~ :id=sandkit.api.world.cellid
 
+<p class="smt-member-path"><code>sandkit.api.world.CellId</code></p>
 Re-exports [CellId](api/sandkit.api.grid.md#cellid)
 
 ***
 
-#### ~~GridDimensions~~
+#### ~~GridDimensions~~ :id=sandkit.api.world.griddimensions
 
+<p class="smt-member-path"><code>sandkit.api.world.GridDimensions</code></p>
 Re-exports [GridDimensions](api/sandkit.api.grid.md#griddimensions)
 
 ***
 
-#### ~~revealFogAtCell~~
+#### ~~revealFogAtCell~~ :id=sandkit.api.world.revealfogatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.revealFogAtCell</code></p>
 Re-exports [revealFogAtCell](api/sandkit.api.grid.md#revealfogatcell)
 
 ***
 
-#### ~~WorldItemType~~
+#### ~~WorldItemType~~ :id=sandkit.api.world.worlditemtype
 
+<p class="smt-member-path"><code>sandkit.api.world.WorldItemType</code></p>
 Re-exports [WorldItemType](api/sandkit.api.pickups.md#worlditemtype)
 
 ***
 
-#### ~~PickupType~~
+#### ~~PickupType~~ :id=sandkit.api.world.pickuptype
 
+<p class="smt-member-path"><code>sandkit.api.world.PickupType</code></p>
 Re-exports [PickupType](api/sandkit.api.pickups.md#pickuptype)
 
 ***
 
-#### ~~WorldItemLight~~
+#### ~~WorldItemLight~~ :id=sandkit.api.world.worlditemlight
 
+<p class="smt-member-path"><code>sandkit.api.world.WorldItemLight</code></p>
 Re-exports [WorldItemLight](api/sandkit.api.pickups.md#worlditemlight)
 
 ***
 
-#### ~~WorldItem~~
+#### ~~WorldItem~~ :id=sandkit.api.world.worlditem
 
+<p class="smt-member-path"><code>sandkit.api.world.WorldItem</code></p>
 Re-exports [WorldItem](api/sandkit.api.pickups.md#worlditem)
 
 ---
@@ -20550,38 +19759,44 @@ Use pickups instead.
 
 ### References <!-- {docsify-ignore} -->
 
-#### ~~spawnAtWorld~~
+#### ~~spawnAtWorld~~ :id=sandkit.api.world.pickups.spawnatworld
 
+<p class="smt-member-path"><code>sandkit.api.world.pickups.spawnAtWorld</code></p>
 Re-exports [spawnAtWorld](api/sandkit.api.pickups.md#spawnatworld)
 
 ***
 
-#### ~~destroy~~
+#### ~~destroy~~ :id=sandkit.api.world.pickups.destroy
 
+<p class="smt-member-path"><code>sandkit.api.world.pickups.destroy</code></p>
 Re-exports [destroy](api/sandkit.api.pickups.md#destroy)
 
 ***
 
-#### ~~pickUp~~
+#### ~~pickUp~~ :id=sandkit.api.world.pickups.pickup
 
+<p class="smt-member-path"><code>sandkit.api.world.pickups.pickUp</code></p>
 Re-exports [pickUp](api/sandkit.api.pickups.md#pickup)
 
 ***
 
-#### ~~getAll~~
+#### ~~getAll~~ :id=sandkit.api.world.pickups.getall
 
+<p class="smt-member-path"><code>sandkit.api.world.pickups.getAll</code></p>
 Re-exports [getAll](api/sandkit.api.pickups.md#getall)
 
 ***
 
-#### ~~getById~~
+#### ~~getById~~ :id=sandkit.api.world.pickups.getbyid
 
+<p class="smt-member-path"><code>sandkit.api.world.pickups.getById</code></p>
 Re-exports [getById](api/sandkit.api.pickups.md#getbyid)
 
 ***
 
-#### ~~remove~~
+#### ~~remove~~ :id=sandkit.api.world.pickups.remove
 
+<p class="smt-member-path"><code>sandkit.api.world.pickups.remove</code></p>
 Re-exports [remove](api/sandkit.api.pickups.md#remove)
 
 ---
@@ -20600,10 +19815,8 @@ Temporary lights live under [lights.temporary](api/sandkit.api.lights.temporary.
 
 #### createAtWorld() :id=sandkit.api.effects.worker.createatworld
 
-<p class="smt-member-path"><code>sandkit.api.effects.createAtWorld() (worker)</code></p>
-
 ```ts
-createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+sandkit.api.effects.createAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
 Defined in: [worker/api/effects.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L26)
@@ -20646,10 +19859,10 @@ Duration, radius, and intensity settings.
 
 ***
 
-#### ~~createEffectAtWorld()~~
+#### ~~createEffectAtWorld()~~ :id=sandkit.api.effects.worker.createeffectatworld
 
 ```ts
-createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
+sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void
 ```
 
 Defined in: [worker/api/effects.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L38)
@@ -20689,7 +19902,6 @@ Use [createAtWorld](#createatworld) instead.
 #### EffectOptions :id=sandkit.api.effects.worker.effectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.EffectOptions (worker)</code></p>
-
 Re-exports [EffectOptions](api/sandkit.api.effects.md#effectoptions)
 
 ***
@@ -20697,7 +19909,6 @@ Re-exports [EffectOptions](api/sandkit.api.effects.md#effectoptions)
 #### ParticleEffectOptions :id=sandkit.api.effects.worker.particleeffectoptions
 
 <p class="smt-member-path"><code>sandkit.api.effects.ParticleEffectOptions (worker)</code></p>
-
 Re-exports [ParticleEffectOptions](api/sandkit.api.effects.md#particleeffectoptions)
 
 ***
@@ -20705,7 +19916,6 @@ Re-exports [ParticleEffectOptions](api/sandkit.api.effects.md#particleeffectopti
 #### createParticlesAtWorld :id=sandkit.api.effects.worker.createparticlesatworld
 
 <p class="smt-member-path"><code>sandkit.api.effects.createParticlesAtWorld (worker)</code></p>
-
 Re-exports [createParticlesAtWorld](api/sandkit.api.effects.md#createparticlesatworld)
 
 ---
@@ -20730,10 +19940,8 @@ Worker-entry mutations apply immediately. Main thread defers matching helpers in
 
 #### createAtCell() :id=sandkit.api.elements.worker.createatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.createAtCell() (worker)</code></p>
-
 ```ts
-createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
+sandkit.api.elements.createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
 Defined in: [worker/api/elements.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L79)
@@ -20768,10 +19976,8 @@ api.elements.createAtCell(cellX, cellY, "water", {
 
 #### replaceAtCell() :id=sandkit.api.elements.worker.replaceatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.replaceAtCell() (worker)</code></p>
-
 ```ts
-replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
+sandkit.api.elements.replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 ```
 
 Defined in: [worker/api/elements.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L93)
@@ -20796,10 +20002,8 @@ Replace the element at a cell immediately on this worker.
 
 #### removeAtCell() :id=sandkit.api.elements.worker.removeatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.removeAtCell() (worker)</code></p>
-
 ```ts
-removeAtCell(...args: number, number, [ElementRemovalOptions]): void
+sandkit.api.elements.removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 ```
 
 Defined in: [worker/api/elements.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L106)
@@ -20824,10 +20028,8 @@ Remove the element at a cell immediately on this worker.
 
 #### moveBetweenCells() :id=sandkit.api.elements.worker.movebetweencells
 
-<p class="smt-member-path"><code>sandkit.api.elements.moveBetweenCells() (worker)</code></p>
-
 ```ts
-moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): boolean
+sandkit.api.elements.moveBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:121](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L121)
@@ -20874,10 +20076,8 @@ True when the move succeeded.
 
 #### teleportBetweenCells() :id=sandkit.api.elements.worker.teleportbetweencells
 
-<p class="smt-member-path"><code>sandkit.api.elements.teleportBetweenCells() (worker)</code></p>
-
 ```ts
-teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
+sandkit.api.elements.teleportBetweenCells(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void
 ```
 
 Defined in: [worker/api/elements.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L138)
@@ -20922,10 +20122,8 @@ Destination cell row.
 
 #### swapBetweenCells() :id=sandkit.api.elements.worker.swapbetweencells
 
-<p class="smt-member-path"><code>sandkit.api.elements.swapBetweenCells() (worker)</code></p>
-
 ```ts
-swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
+sandkit.api.elements.swapBetweenCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L156)
@@ -20970,10 +20168,10 @@ True when the swap succeeded.
 
 ***
 
-#### ~~swapCells()~~
+#### ~~swapCells()~~ :id=sandkit.api.elements.worker.swapcells
 
 ```ts
-swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
+sandkit.api.elements.swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L168)
@@ -21012,10 +20210,8 @@ Use [swapBetweenCells](#swapbetweencells) instead.
 
 #### markMovementBlockedByIndex() :id=sandkit.api.elements.worker.markmovementblockedbyindex
 
-<p class="smt-member-path"><code>sandkit.api.elements.markMovementBlockedByIndex() (worker)</code></p>
-
 ```ts
-markMovementBlockedByIndex(elementIndex: number): void
+sandkit.api.elements.markMovementBlockedByIndex(elementIndex: number): void
 ```
 
 Defined in: [worker/api/elements.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L182)
@@ -21040,10 +20236,10 @@ Element index from [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell).
 
 ***
 
-#### ~~markMovementBlockedByElementIndex()~~
+#### ~~markMovementBlockedByElementIndex()~~ :id=sandkit.api.elements.worker.markmovementblockedbyelementindex
 
 ```ts
-markMovementBlockedByElementIndex(elementIndex: number): void
+sandkit.api.elements.markMovementBlockedByElementIndex(elementIndex: number): void
 ```
 
 Defined in: [worker/api/elements.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L189)
@@ -21070,10 +20266,8 @@ Use [markMovementBlockedByIndex](#markmovementblockedbyindex) instead.
 
 #### setVelocityAtCell() :id=sandkit.api.elements.worker.setvelocityatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setVelocityAtCell() (worker)</code></p>
-
 ```ts
-setVelocityAtCell(...args: number, number, [Vector2]): boolean
+sandkit.api.elements.setVelocityAtCell(...args: number, number, [Vector2]): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L201)
@@ -21100,10 +20294,8 @@ True when velocity was set.
 
 #### addParticleVelocityAtCell() :id=sandkit.api.elements.worker.addparticlevelocityatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.addParticleVelocityAtCell() (worker)</code></p>
-
 ```ts
-addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean
+sandkit.api.elements.addParticleVelocityAtCell(...args: number, number, [Vector2, number]): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L214)
@@ -21130,10 +20322,8 @@ True when velocity was updated.
 
 #### convertToParticleAtCell() :id=sandkit.api.elements.worker.converttoparticleatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.convertToParticleAtCell() (worker)</code></p>
-
 ```ts
-convertToParticleAtCell(...args: number, number, [Vector2]): boolean
+sandkit.api.elements.convertToParticleAtCell(...args: number, number, [Vector2]): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:228](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L228)
@@ -21160,10 +20350,8 @@ True when conversion succeeded.
 
 #### convertFromParticleAtCell() :id=sandkit.api.elements.worker.convertfromparticleatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.convertFromParticleAtCell() (worker)</code></p>
-
 ```ts
-convertFromParticleAtCell(...args: CellCoordinates): boolean
+sandkit.api.elements.convertFromParticleAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:241](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L241)
@@ -21190,10 +20378,8 @@ True when conversion succeeded.
 
 #### setDataFieldAtCell() :id=sandkit.api.elements.worker.setdatafieldatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setDataFieldAtCell() (worker)</code></p>
-
 ```ts
-setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
+sandkit.api.elements.setDataFieldAtCell(...args: [number, number, 1 | 2 | 3 | 4, number]): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L254)
@@ -21220,10 +20406,8 @@ True when the field was set.
 
 #### refreshColorAtCell() :id=sandkit.api.elements.worker.refreshcoloratcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.refreshColorAtCell() (worker)</code></p>
-
 ```ts
-refreshColorAtCell(...args: CellCoordinates): void
+sandkit.api.elements.refreshColorAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [worker/api/elements.d.ts:266](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L266)
@@ -21248,10 +20432,8 @@ Refresh the rendered color at a cell immediately on this worker.
 
 #### setPhysicsAtCell() :id=sandkit.api.elements.worker.setphysicsatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setPhysicsAtCell() (worker)</code></p>
-
 ```ts
-setPhysicsAtCell(...args: [number, number, number]): void
+sandkit.api.elements.setPhysicsAtCell(...args: [number, number, number]): void
 ```
 
 Defined in: [worker/api/elements.d.ts:277](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L277)
@@ -21276,10 +20458,8 @@ Set the physics skip mode at a cell immediately on this worker.
 
 #### setDurationAtCell() :id=sandkit.api.elements.worker.setdurationatcell
 
-<p class="smt-member-path"><code>sandkit.api.elements.setDurationAtCell() (worker)</code></p>
-
 ```ts
-setDurationAtCell(...args: [number, number, number, object]): boolean
+sandkit.api.elements.setDurationAtCell(...args: [number, number, number, object]): boolean
 ```
 
 Defined in: [worker/api/elements.d.ts:300](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L300)
@@ -21320,7 +20500,6 @@ const updated = api.elements.setDurationAtCell(
 #### ElementType :id=sandkit.api.elements.worker.elementtype
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementType (worker)</code></p>
-
 Re-exports [ElementType](api/sandkit.api.elements.md#elementtype)
 
 ***
@@ -21328,7 +20507,6 @@ Re-exports [ElementType](api/sandkit.api.elements.md#elementtype)
 #### ElementId :id=sandkit.api.elements.worker.elementid
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementId (worker)</code></p>
-
 Re-exports [ElementId](api/sandkit.api.elements.md#elementid)
 
 ***
@@ -21336,7 +20514,6 @@ Re-exports [ElementId](api/sandkit.api.elements.md#elementid)
 #### ElementRef :id=sandkit.api.elements.worker.elementref
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementRef (worker)</code></p>
-
 Re-exports [ElementRef](api/sandkit.api.elements.md#elementref)
 
 ***
@@ -21344,7 +20521,6 @@ Re-exports [ElementRef](api/sandkit.api.elements.md#elementref)
 #### MatterType :id=sandkit.api.elements.worker.mattertype
 
 <p class="smt-member-path"><code>sandkit.api.elements.MatterType (worker)</code></p>
-
 Re-exports [MatterType](api/sandkit.api.elements.MatterType.md)
 
 ***
@@ -21352,7 +20528,6 @@ Re-exports [MatterType](api/sandkit.api.elements.MatterType.md)
 #### ElementDefinition :id=sandkit.api.elements.worker.elementdefinition
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementDefinition (worker)</code></p>
-
 Re-exports [ElementDefinition](api/sandkit.api.elements.md#elementdefinition)
 
 ***
@@ -21360,7 +20535,6 @@ Re-exports [ElementDefinition](api/sandkit.api.elements.md#elementdefinition)
 #### ElementCreateOptions :id=sandkit.api.elements.worker.elementcreateoptions
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementCreateOptions (worker)</code></p>
-
 Re-exports [ElementCreateOptions](api/sandkit.api.elements.md#elementcreateoptions)
 
 ***
@@ -21368,7 +20542,6 @@ Re-exports [ElementCreateOptions](api/sandkit.api.elements.md#elementcreateoptio
 #### ElementRemovalOptions :id=sandkit.api.elements.worker.elementremovaloptions
 
 <p class="smt-member-path"><code>sandkit.api.elements.ElementRemovalOptions (worker)</code></p>
-
 Re-exports [ElementRemovalOptions](api/sandkit.api.elements.md#elementremovaloptions)
 
 ***
@@ -21376,7 +20549,6 @@ Re-exports [ElementRemovalOptions](api/sandkit.api.elements.md#elementremovalopt
 #### getIdByType :id=sandkit.api.elements.worker.getidbytype
 
 <p class="smt-member-path"><code>sandkit.api.elements.getIdByType (worker)</code></p>
-
 Re-exports [getIdByType](api/sandkit.api.elements.md#getidbytype)
 
 ***
@@ -21384,7 +20556,6 @@ Re-exports [getIdByType](api/sandkit.api.elements.md#getidbytype)
 #### getTypeById :id=sandkit.api.elements.worker.gettypebyid
 
 <p class="smt-member-path"><code>sandkit.api.elements.getTypeById (worker)</code></p>
-
 Re-exports [getTypeById](api/sandkit.api.elements.md#gettypebyid)
 
 ***
@@ -21392,7 +20563,6 @@ Re-exports [getTypeById](api/sandkit.api.elements.md#gettypebyid)
 #### getTypeFromId :id=sandkit.api.elements.worker.gettypefromid
 
 <p class="smt-member-path"><code>sandkit.api.elements.getTypeFromId (worker)</code></p>
-
 Re-exports [getTypeFromId](api/sandkit.api.elements.md#gettypefromid)
 
 ***
@@ -21400,7 +20570,6 @@ Re-exports [getTypeFromId](api/sandkit.api.elements.md#gettypefromid)
 #### getDefinitionByType :id=sandkit.api.elements.worker.getdefinitionbytype
 
 <p class="smt-member-path"><code>sandkit.api.elements.getDefinitionByType (worker)</code></p>
-
 Re-exports [getDefinitionByType](api/sandkit.api.elements.md#getdefinitionbytype)
 
 ***
@@ -21408,7 +20577,6 @@ Re-exports [getDefinitionByType](api/sandkit.api.elements.md#getdefinitionbytype
 #### getTypeAtCell :id=sandkit.api.elements.worker.gettypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getTypeAtCell (worker)</code></p>
-
 Re-exports [getTypeAtCell](api/sandkit.api.elements.md#gettypeatcell)
 
 ***
@@ -21416,7 +20584,6 @@ Re-exports [getTypeAtCell](api/sandkit.api.elements.md#gettypeatcell)
 #### getResolvedTypeAtCell :id=sandkit.api.elements.worker.getresolvedtypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getResolvedTypeAtCell (worker)</code></p>
-
 Re-exports [getResolvedTypeAtCell](api/sandkit.api.elements.md#getresolvedtypeatcell)
 
 ***
@@ -21424,7 +20591,6 @@ Re-exports [getResolvedTypeAtCell](api/sandkit.api.elements.md#getresolvedtypeat
 #### getResolvedTypeFromCellId :id=sandkit.api.elements.worker.getresolvedtypefromcellid
 
 <p class="smt-member-path"><code>sandkit.api.elements.getResolvedTypeFromCellId (worker)</code></p>
-
 Re-exports [getResolvedTypeFromCellId](api/sandkit.api.elements.md#getresolvedtypefromcellid)
 
 ***
@@ -21432,7 +20598,6 @@ Re-exports [getResolvedTypeFromCellId](api/sandkit.api.elements.md#getresolvedty
 #### getInfoAtCell :id=sandkit.api.elements.worker.getinfoatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getInfoAtCell (worker)</code></p>
-
 Re-exports [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell)
 
 ***
@@ -21440,7 +20605,6 @@ Re-exports [getInfoAtCell](api/sandkit.api.elements.md#getinfoatcell)
 #### getMatterTypeAtCell :id=sandkit.api.elements.worker.getmattertypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getMatterTypeAtCell (worker)</code></p>
-
 Re-exports [getMatterTypeAtCell](api/sandkit.api.elements.md#getmattertypeatcell)
 
 ***
@@ -21448,7 +20612,6 @@ Re-exports [getMatterTypeAtCell](api/sandkit.api.elements.md#getmattertypeatcell
 #### isTypeAtCell :id=sandkit.api.elements.worker.istypeatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.isTypeAtCell (worker)</code></p>
-
 Re-exports [isTypeAtCell](api/sandkit.api.elements.md#istypeatcell)
 
 ***
@@ -21456,7 +20619,6 @@ Re-exports [isTypeAtCell](api/sandkit.api.elements.md#istypeatcell)
 #### isFreeFallingAtCell :id=sandkit.api.elements.worker.isfreefallingatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.isFreeFallingAtCell (worker)</code></p>
-
 Re-exports [isFreeFallingAtCell](api/sandkit.api.elements.md#isfreefallingatcell)
 
 ***
@@ -21464,7 +20626,6 @@ Re-exports [isFreeFallingAtCell](api/sandkit.api.elements.md#isfreefallingatcell
 #### getVelocityAtCell :id=sandkit.api.elements.worker.getvelocityatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getVelocityAtCell (worker)</code></p>
-
 Re-exports [getVelocityAtCell](api/sandkit.api.elements.md#getvelocityatcell)
 
 ***
@@ -21472,7 +20633,6 @@ Re-exports [getVelocityAtCell](api/sandkit.api.elements.md#getvelocityatcell)
 #### getDataFieldAtCell :id=sandkit.api.elements.worker.getdatafieldatcell
 
 <p class="smt-member-path"><code>sandkit.api.elements.getDataFieldAtCell (worker)</code></p>
-
 Re-exports [getDataFieldAtCell](api/sandkit.api.elements.md#getdatafieldatcell)
 
 ---
@@ -21490,7 +20650,6 @@ Worker-thread `sandkit.api.events` — subscribe to and emit worker-scoped event
 #### EventGuard :id=sandkit.api.events.worker.eventguard
 
 <p class="smt-member-path"><code>sandkit.api.events.EventGuard (worker)</code></p>
-
 Defined in: [worker/api/events.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L68)
 
 Guard filter for worker events.
@@ -21522,7 +20681,6 @@ Required when subscribing to `terrain:updated`. Optional on emit.
 #### EventEmitOptions :id=sandkit.api.events.worker.eventemitoptions
 
 <p class="smt-member-path"><code>sandkit.api.events.EventEmitOptions (worker)</code></p>
-
 Defined in: [worker/api/events.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L83)
 
 Options for [emit](#emit).
@@ -21542,7 +20700,6 @@ Defined in: [worker/api/events.d.ts:84](https://github.com/sandustry-modding/San
 #### EventPayloadMap :id=sandkit.api.events.worker.eventpayloadmap
 
 <p class="smt-member-path"><code>sandkit.api.events.EventPayloadMap (worker)</code></p>
-
 Defined in: [worker/api/events.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L88)
 
 Known worker event payloads. Unlisted ids still use `unknown`.
@@ -21601,10 +20758,8 @@ Use `"worker:update:post"` instead.
 
 #### EventOnOptions :id=sandkit.api.events.worker.eventonoptions
 
-<p class="smt-member-path"><code>sandkit.api.events.EventOnOptions (worker)</code></p>
-
 ```ts
-EventOnOptions<K *extends* EventId> = K *extends* "element:moved" ? object : K *extends* "terrain:updated" | "terrain:update" ? object : object
+sandkit.api.events.EventOnOptions<K *extends* EventId> = K *extends* "element:moved" ? object : K *extends* "terrain:updated" | "terrain:update" ? object : object
 ```
 
 Defined in: [worker/api/events.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L76)
@@ -21621,10 +20776,8 @@ Options for [on](#on).
 
 #### EventId :id=sandkit.api.events.worker.eventid
 
-<p class="smt-member-path"><code>sandkit.api.events.EventId (worker)</code></p>
-
 ```ts
-EventId = LooseString<keyof EventPayloadMap>
+sandkit.api.events.EventId = LooseString<keyof EventPayloadMap>
 ```
 
 Defined in: [worker/api/events.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L99)
@@ -21635,10 +20788,8 @@ Known worker event names plus any custom string id.
 
 #### EventPayload :id=sandkit.api.events.worker.eventpayload
 
-<p class="smt-member-path"><code>sandkit.api.events.EventPayload (worker)</code></p>
-
 ```ts
-EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
+sandkit.api.events.EventPayload<K> = K *extends* keyof EventPayloadMap ? EventPayloadMap[K] : unknown
 ```
 
 Defined in: [worker/api/events.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L102)
@@ -21655,10 +20806,8 @@ Event payload type for a given event id.
 
 #### on() :id=sandkit.api.events.worker.on
 
-<p class="smt-member-path"><code>sandkit.api.events.on() (worker)</code></p>
-
 ```ts
-on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void, options?: EventOnOptions<K>): () => void
+sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: EventPayload<K>) => void, options?: EventOnOptions<K>): () => void
 ```
 
 Defined in: [worker/api/events.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L46)
@@ -21735,10 +20884,8 @@ api.events.on("worker:update:post", (payload) => {
 
 #### emit() :id=sandkit.api.events.worker.emit
 
-<p class="smt-member-path"><code>sandkit.api.events.emit() (worker)</code></p>
-
 ```ts
-emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>, options?: EventEmitOptions): void
+sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K>, options?: EventEmitOptions): void
 ```
 
 Defined in: [worker/api/events.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L61)
@@ -21795,10 +20942,8 @@ Worker burns are immediate. Main thread defers burns with `burnElementAtCell`.
 
 #### canBurnElementAtCell() :id=sandkit.api.fire.worker.canburnelementatcell
 
-<p class="smt-member-path"><code>sandkit.api.fire.canBurnElementAtCell() (worker)</code></p>
-
 ```ts
-canBurnElementAtCell(...args: CellCoordinates): boolean
+sandkit.api.fire.canBurnElementAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [worker/api/fire.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L19)
@@ -21823,10 +20968,8 @@ Return true when the element at the cell can burn.
 
 #### burnElementAtCell() :id=sandkit.api.fire.worker.burnelementatcell
 
-<p class="smt-member-path"><code>sandkit.api.fire.burnElementAtCell() (worker)</code></p>
-
 ```ts
-burnElementAtCell(...args: CellCoordinates): boolean
+sandkit.api.fire.burnElementAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [worker/api/fire.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L30)
@@ -21866,7 +21009,6 @@ Worker mutations are immediate. Main thread defers grid writes through `api.grid
 #### getCellIdAtCell :id=sandkit.api.grid.worker.getcellidatcell
 
 <p class="smt-member-path"><code>sandkit.api.grid.getCellIdAtCell (worker)</code></p>
-
 Re-exports [getCellIdAtCell](api/sandkit.api.grid.md#getcellidatcell)
 
 ***
@@ -21874,7 +21016,6 @@ Re-exports [getCellIdAtCell](api/sandkit.api.grid.md#getcellidatcell)
 #### isCellEmptyAtCell :id=sandkit.api.grid.worker.iscellemptyatcell
 
 <p class="smt-member-path"><code>sandkit.api.grid.isCellEmptyAtCell (worker)</code></p>
-
 Re-exports [isCellEmptyAtCell](api/sandkit.api.grid.md#iscellemptyatcell)
 
 ***
@@ -21882,7 +21023,6 @@ Re-exports [isCellEmptyAtCell](api/sandkit.api.grid.md#iscellemptyatcell)
 #### isTerrainAtCell :id=sandkit.api.grid.worker.isterrainatcell
 
 <p class="smt-member-path"><code>sandkit.api.grid.isTerrainAtCell (worker)</code></p>
-
 Re-exports [isTerrainAtCell](api/sandkit.api.grid.md#isterrainatcell)
 
 ***
@@ -21890,7 +21030,6 @@ Re-exports [isTerrainAtCell](api/sandkit.api.grid.md#isterrainatcell)
 #### reportActivityAtCell :id=sandkit.api.grid.worker.reportactivityatcell
 
 <p class="smt-member-path"><code>sandkit.api.grid.reportActivityAtCell (worker)</code></p>
-
 Re-exports [reportActivityAtCell](api/sandkit.api.grid.md#reportactivityatcell)
 
 ***
@@ -21898,7 +21037,6 @@ Re-exports [reportActivityAtCell](api/sandkit.api.grid.md#reportactivityatcell)
 #### excavateAtCell :id=sandkit.api.grid.worker.excavateatcell
 
 <p class="smt-member-path"><code>sandkit.api.grid.excavateAtCell (worker)</code></p>
-
 Re-exports [excavateAtCell](api/sandkit.api.grid.md#excavateatcell)
 
 ***
@@ -21906,7 +21044,6 @@ Re-exports [excavateAtCell](api/sandkit.api.grid.md#excavateatcell)
 #### getDimensions :id=sandkit.api.grid.worker.getdimensions
 
 <p class="smt-member-path"><code>sandkit.api.grid.getDimensions (worker)</code></p>
-
 Re-exports [getDimensions](api/sandkit.api.grid.md#getdimensions)
 
 ***
@@ -21914,7 +21051,6 @@ Re-exports [getDimensions](api/sandkit.api.grid.md#getdimensions)
 #### ExcavateOptions :id=sandkit.api.grid.worker.excavateoptions
 
 <p class="smt-member-path"><code>sandkit.api.grid.ExcavateOptions (worker)</code></p>
-
 Re-exports [ExcavateOptions](api/sandkit.api.grid.md#excavateoptions)
 
 ***
@@ -21922,7 +21058,6 @@ Re-exports [ExcavateOptions](api/sandkit.api.grid.md#excavateoptions)
 #### CellId :id=sandkit.api.grid.worker.cellid
 
 <p class="smt-member-path"><code>sandkit.api.grid.CellId (worker)</code></p>
-
 Re-exports [CellId](api/sandkit.api.grid.md#cellid)
 
 ***
@@ -21930,7 +21065,6 @@ Re-exports [CellId](api/sandkit.api.grid.md#cellid)
 #### GridDimensions :id=sandkit.api.grid.worker.griddimensions
 
 <p class="smt-member-path"><code>sandkit.api.grid.GridDimensions (worker)</code></p>
-
 Re-exports [GridDimensions](api/sandkit.api.grid.md#griddimensions)
 
 ---
@@ -21948,7 +21082,6 @@ Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook point
 #### HookContext :id=sandkit.api.hooks.worker.hookcontext
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookContext (worker)</code></p>
-
 Defined in: [worker/api/hooks.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L112)
 
 Context passed to intercept hook callbacks.
@@ -21986,7 +21119,6 @@ When called, the intercepted action is skipped.
 #### HookGuard :id=sandkit.api.hooks.worker.hookguard
 
 <p class="smt-member-path"><code>sandkit.api.hooks.HookGuard (worker)</code></p>
-
 Defined in: [worker/api/hooks.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L120)
 
 Guard filter for worker hook registration.
@@ -22018,7 +21150,6 @@ Required for terrain-scoped event guards; optional on emit.
 #### ModifyHookOptions :id=sandkit.api.hooks.worker.modifyhookoptions
 
 <p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookOptions (worker)</code></p>
-
 Defined in: [worker/api/hooks.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L136)
 
 Options for [modify](#modify).
@@ -22046,7 +21177,6 @@ Defined in: [worker/api/hooks.d.ts:138](https://github.com/sandustry-modding/San
 #### InterceptHookMap :id=sandkit.api.hooks.worker.intercepthookmap
 
 <p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookMap (worker)</code></p>
-
 Defined in: [worker/api/hooks.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L166)
 
 Intercept hook argument shapes keyed by hook id.
@@ -22145,10 +21275,8 @@ Defined in: [worker/api/hooks.d.ts:178](https://github.com/sandustry-modding/San
 
 #### InterceptHookOptions :id=sandkit.api.hooks.worker.intercepthookoptions
 
-<p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookOptions (worker)</code></p>
-
 ```ts
-InterceptHookOptions<K *extends* InterceptHookId> = K *extends* ElementGuardedInterceptHookId ? object : K *extends* TerrainGuardedInterceptHookId ? object : object
+sandkit.api.hooks.InterceptHookOptions<K *extends* InterceptHookId> = K *extends* ElementGuardedInterceptHookId ? object : K *extends* TerrainGuardedInterceptHookId ? object : object
 ```
 
 Defined in: [worker/api/hooks.d.ts:128](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L128)
@@ -22165,10 +21293,8 @@ Options for [intercept](#intercept).
 
 #### ElementGuardedInterceptHookId :id=sandkit.api.hooks.worker.elementguardedintercepthookid
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ElementGuardedInterceptHookId (worker)</code></p>
-
 ```ts
-ElementGuardedInterceptHookId = "cell:process" | "element:update" | "element:move:blocked" | "element:blocked" | "element:duration:expire" | "element:duration"
+sandkit.api.hooks.ElementGuardedInterceptHookId = "cell:process" | "element:update" | "element:move:blocked" | "element:blocked" | "element:duration:expire" | "element:duration"
 ```
 
 Defined in: [worker/api/hooks.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L142)
@@ -22179,10 +21305,8 @@ Intercept hook ids with a required element guard.
 
 #### TerrainGuardedInterceptHookId :id=sandkit.api.hooks.worker.terrainguardedintercepthookid
 
-<p class="smt-member-path"><code>sandkit.api.hooks.TerrainGuardedInterceptHookId (worker)</code></p>
-
 ```ts
-TerrainGuardedInterceptHookId = "fire:terrain:burn"
+sandkit.api.hooks.TerrainGuardedInterceptHookId = "fire:terrain:burn"
 ```
 
 Defined in: [worker/api/hooks.d.ts:151](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L151)
@@ -22193,10 +21317,8 @@ Intercept hook ids with a required terrain guard.
 
 #### InterceptHookId :id=sandkit.api.hooks.worker.intercepthookid
 
-<p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookId (worker)</code></p>
-
 ```ts
-InterceptHookId = LooseString<ElementGuardedInterceptHookId | TerrainGuardedInterceptHookId | "element:move" | "fire:element:burn" | "shaker:elementOn">
+sandkit.api.hooks.InterceptHookId = LooseString<ElementGuardedInterceptHookId | TerrainGuardedInterceptHookId | "element:move" | "fire:element:burn" | "shaker:elementOn">
 ```
 
 Defined in: [worker/api/hooks.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L154)
@@ -22207,10 +21329,8 @@ Known worker intercept hook ids plus custom strings.
 
 #### ModifyHookId :id=sandkit.api.hooks.worker.modifyhookid
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookId (worker)</code></p>
-
 ```ts
-ModifyHookId = LooseString<string>
+sandkit.api.hooks.ModifyHookId = LooseString<string>
 ```
 
 Defined in: [worker/api/hooks.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L163)
@@ -22221,10 +21341,8 @@ Known worker modify hook ids plus custom strings.
 
 #### ModifyHookMap :id=sandkit.api.hooks.worker.modifyhookmap
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookMap (worker)</code></p>
-
 ```ts
-ModifyHookMap = Record<string, unknown>
+sandkit.api.hooks.ModifyHookMap = Record<string, unknown>
 ```
 
 Defined in: [worker/api/hooks.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L182)
@@ -22235,10 +21353,8 @@ Modify hook argument shapes keyed by hook id. Unlisted ids use `unknown`.
 
 #### InterceptHookArgs :id=sandkit.api.hooks.worker.intercepthookargs
 
-<p class="smt-member-path"><code>sandkit.api.hooks.InterceptHookArgs (worker)</code></p>
-
 ```ts
-InterceptHookArgs<K *extends* InterceptHookId> = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown
+sandkit.api.hooks.InterceptHookArgs<K *extends* InterceptHookId> = K *extends* keyof InterceptHookMap ? InterceptHookMap[K] : unknown
 ```
 
 Defined in: [worker/api/hooks.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L185)
@@ -22255,10 +21371,8 @@ Intercept hook args for a given hook id.
 
 #### ModifyHookArgs :id=sandkit.api.hooks.worker.modifyhookargs
 
-<p class="smt-member-path"><code>sandkit.api.hooks.ModifyHookArgs (worker)</code></p>
-
 ```ts
-ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof ModifyHookMap ? ModifyHookMap[K] : unknown
+sandkit.api.hooks.ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof ModifyHookMap ? ModifyHookMap[K] : unknown
 ```
 
 Defined in: [worker/api/hooks.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L190)
@@ -22275,10 +21389,8 @@ Modify hook args for a given hook id.
 
 #### intercept() :id=sandkit.api.hooks.worker.intercept
 
-<p class="smt-member-path"><code>sandkit.api.hooks.intercept() (worker)</code></p>
-
 ```ts
-intercept<K *extends* InterceptHookId>(hookId: K, callback: (args: InterceptHookArgs<K>, context: HookContext) => void, options?: InterceptHookOptions<K>): () => void
+sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (args: InterceptHookArgs<K>, context: HookContext) => void, options?: InterceptHookOptions<K>): () => void
 ```
 
 Defined in: [worker/api/hooks.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L83)
@@ -22397,10 +21509,8 @@ api.hooks.intercept("shaker:elementOn", (args, context) => {
 
 #### modify() :id=sandkit.api.hooks.worker.modify
 
-<p class="smt-member-path"><code>sandkit.api.hooks.modify() (worker)</code></p>
-
 ```ts
-modify<K *extends* ModifyHookId>(hookId: K, callback: (args: ModifyHookArgs<K>) => void, options?: ModifyHookOptions): () => void
+sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: ModifyHookArgs<K>) => void, options?: ModifyHookOptions): () => void
 ```
 
 Defined in: [worker/api/hooks.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L105)
@@ -22480,7 +21590,6 @@ Short-lived visual effect lights.
 #### TemporaryLightHandle :id=sandkit.api.lights.temporary.worker.temporarylighthandle
 
 <p class="smt-member-path"><code>sandkit.api.lights.temporary.TemporaryLightHandle (worker)</code></p>
-
 Defined in: [worker/api/lights.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L19)
 
 Handle returned by [createAtWorld](#createatworld).
@@ -22517,10 +21626,8 @@ Use [lightId](#lightid) instead.
 
 #### TemporaryLightOptions :id=sandkit.api.lights.temporary.worker.temporarylightoptions
 
-<p class="smt-member-path"><code>sandkit.api.lights.temporary.TemporaryLightOptions (worker)</code></p>
-
 ```ts
-TemporaryLightOptions = TemporaryLightOptions
+sandkit.api.lights.temporary.TemporaryLightOptions = TemporaryLightOptions
 ```
 
 Defined in: [worker/api/lights.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L16)
@@ -22531,10 +21638,8 @@ Options for [createAtWorld](#createatworld).
 
 #### createAtWorld() :id=sandkit.api.lights.temporary.worker.createatworld
 
-<p class="smt-member-path"><code>sandkit.api.lights.temporary.createAtWorld() (worker)</code></p>
-
 ```ts
-createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
+sandkit.api.lights.temporary.createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): TemporaryLightHandle
 ```
 
 Defined in: [worker/api/lights.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L47)
@@ -22597,10 +21702,8 @@ larger `sandkit.api` surface; do not assume parity.
 
 #### emitEvent() :id=sandkit.api.main.worker.emitevent
 
-<p class="smt-member-path"><code>sandkit.api.main.emitEvent() (worker)</code></p>
-
 ```ts
-emitEvent<Payload = any>(eventId: string, payload: Payload): void
+sandkit.api.main.emitEvent<Payload = any>(eventId: string, payload: Payload): void
 ```
 
 Defined in: [worker/api/main.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/main.d.ts#L15)
@@ -22646,7 +21749,6 @@ Shared `sandkit.api.maps` base — active custom map metadata.
 #### ActiveMapV1 :id=sandkit.api.maps.worker.activemapv1
 
 <p class="smt-member-path"><code>sandkit.api.maps.ActiveMapV1 (worker)</code></p>
-
 Defined in: [shared/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L18)
 
 Active custom map record (version 1 schema).
@@ -22725,10 +21827,8 @@ Defined in: [shared/api/maps.d.ts:27](https://github.com/sandustry-modding/Sandu
 
 #### getActive() :id=sandkit.api.maps.worker.getactive
 
-<p class="smt-member-path"><code>sandkit.api.maps.getActive() (worker)</code></p>
-
 ```ts
-getActive(): Readonly<ActiveMapV1> | null
+sandkit.api.maps.getActive(): Readonly<ActiveMapV1> | null
 ```
 
 Defined in: [shared/api/maps.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L11)
@@ -22755,10 +21855,8 @@ Shared `sandkit.api.player` base — player position and collision queries.
 
 #### getPositionAtWorld() :id=sandkit.api.player.worker.getpositionatworld
 
-<p class="smt-member-path"><code>sandkit.api.player.getPositionAtWorld() (worker)</code></p>
-
 ```ts
-getPositionAtWorld(): Vector2
+sandkit.api.player.getPositionAtWorld(): Vector2
 ```
 
 Defined in: [shared/api/player.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L16)
@@ -22777,10 +21875,10 @@ World position as `{ x, y }` in pixels.
 
 ***
 
-#### ~~getWorldPosition()~~
+#### ~~getWorldPosition()~~ :id=sandkit.api.player.worker.getworldposition
 
 ```ts
-getWorldPosition(): Vector2
+sandkit.api.player.getWorldPosition(): Vector2
 ```
 
 Defined in: [shared/api/player.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L23)
@@ -22801,10 +21899,8 @@ Use [getPositionAtWorld](#getpositionatworld) instead.
 
 #### isCollidingWithCell() :id=sandkit.api.player.worker.iscollidingwithcell
 
-<p class="smt-member-path"><code>sandkit.api.player.isCollidingWithCell() (worker)</code></p>
-
 ```ts
-isCollidingWithCell(...args: CellCoordinates): boolean
+sandkit.api.player.isCollidingWithCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L34)
@@ -22831,10 +21927,8 @@ True when the player overlaps the cell.
 
 #### isWithinRadiusOfCell() :id=sandkit.api.player.worker.iswithinradiusofcell
 
-<p class="smt-member-path"><code>sandkit.api.player.isWithinRadiusOfCell() (worker)</code></p>
-
 ```ts
-isWithinRadiusOfCell(...args: [number, number, number]): boolean
+sandkit.api.player.isWithinRadiusOfCell(...args: [number, number, number]): boolean
 ```
 
 Defined in: [shared/api/player.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L46)
@@ -22882,7 +21976,6 @@ main-thread `sandkit.api.shared`.
 #### SharedArray :id=sandkit.api.shared.worker.sharedarray
 
 <p class="smt-member-path"><code>sandkit.api.shared.SharedArray (worker)</code></p>
-
 Re-exports [SharedArray](api/sandkit.api.shared.md#sharedarray)
 
 ***
@@ -22890,7 +21983,6 @@ Re-exports [SharedArray](api/sandkit.api.shared.md#sharedarray)
 #### SharedArrayType :id=sandkit.api.shared.worker.sharedarraytype
 
 <p class="smt-member-path"><code>sandkit.api.shared.SharedArrayType (worker)</code></p>
-
 Re-exports [SharedArrayType](api/sandkit.api.shared.md#sharedarraytype)
 
 ---
@@ -22903,10 +21995,8 @@ Named shared memory buffers for worker threads.
 
 #### require() :id=sandkit.api.shared.buffers.worker.require
 
-<p class="smt-member-path"><code>sandkit.api.shared.buffers.require() (worker)</code></p>
-
 ```ts
-require(key: string, config: object): SharedArray
+sandkit.api.shared.buffers.require(key: string, config: object): SharedArray
 ```
 
 Defined in: [worker/api/shared.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/shared.d.ts#L37)
@@ -22958,7 +22048,6 @@ const counts = api.shared.buffers.require("counts", {
 #### get :id=sandkit.api.shared.buffers.worker.get
 
 <p class="smt-member-path"><code>sandkit.api.shared.buffers.get (worker)</code></p>
-
 Re-exports [get](api/sandkit.api.shared.buffers.md#get)
 
 ---
@@ -22980,7 +22069,6 @@ Shared `sandkit.api.structures` base — structure lookup and mutation.
 #### StructureData :id=sandkit.api.structures.worker.structuredata
 
 <p class="smt-member-path"><code>sandkit.api.structures.StructureData (worker)</code></p>
-
 Defined in: [shared/api/structures.d.ts:218](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L218)
 
 Per-structure custom data bag.
@@ -23014,7 +22102,6 @@ Defined in: [shared/api/structures.d.ts:220](https://github.com/sandustry-moddin
 #### Structure :id=sandkit.api.structures.worker.structure
 
 <p class="smt-member-path"><code>sandkit.api.structures.Structure (worker)</code></p>
-
 Defined in: [shared/api/structures.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L225)
 
 Live structure instance in the world grid.
@@ -23063,10 +22150,8 @@ Defined in: [shared/api/structures.d.ts:229](https://github.com/sandustry-moddin
 
 #### StructureType :id=sandkit.api.structures.worker.structuretype
 
-<p class="smt-member-path"><code>sandkit.api.structures.StructureType (worker)</code></p>
-
 ```ts
-StructureType = StructureType | TaggedNumber<"structureType">
+sandkit.api.structures.StructureType = StructureType | TaggedNumber<"structureType">
 ```
 
 Defined in: [shared/api/structures.d.ts:234](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L234)
@@ -23077,10 +22162,8 @@ Numeric structure type handle. Built-in enum values autocomplete.
 
 #### StructureId :id=sandkit.api.structures.worker.structureid
 
-<p class="smt-member-path"><code>sandkit.api.structures.StructureId (worker)</code></p>
-
 ```ts
-StructureId = LooseString<never>
+sandkit.api.structures.StructureId = LooseString<never>
 ```
 
 Defined in: [shared/api/structures.d.ts:236](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L236)
@@ -23091,10 +22174,8 @@ Mod or built-in structure string id.
 
 #### StructureRef :id=sandkit.api.structures.worker.structureref
 
-<p class="smt-member-path"><code>sandkit.api.structures.StructureRef (worker)</code></p>
-
 ```ts
-StructureRef = StructureType | StructureId
+sandkit.api.structures.StructureRef = StructureType | StructureId
 ```
 
 Defined in: [shared/api/structures.d.ts:238](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L238)
@@ -23105,10 +22186,8 @@ Type handle or string id accepted by lookup helpers.
 
 #### forEachOfType() :id=sandkit.api.structures.worker.foreachoftype
 
-<p class="smt-member-path"><code>sandkit.api.structures.forEachOfType() (worker)</code></p>
-
 ```ts
-forEachOfType(structureTypeOrId: StructureRef, callback: (structure: Structure) => void): void
+sandkit.api.structures.forEachOfType(structureTypeOrId: StructureRef, callback: (structure: Structure) => void): void
 ```
 
 Defined in: [shared/api/structures.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L26)
@@ -23151,10 +22230,8 @@ api.structures.forEachOfType("exampleStructure", (structure) => {
 
 #### getAtCell() :id=sandkit.api.structures.worker.getatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.getAtCell() (worker)</code></p>
-
 ```ts
-getAtCell(...args: CellCoordinates): Structure | null
+sandkit.api.structures.getAtCell(...args: CellCoordinates): Structure | null
 ```
 
 Defined in: [shared/api/structures.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L39)
@@ -23179,10 +22256,8 @@ Return the structure at a cell, or null when none.
 
 #### getDefinitionByType() :id=sandkit.api.structures.worker.getdefinitionbytype
 
-<p class="smt-member-path"><code>sandkit.api.structures.getDefinitionByType() (worker)</code></p>
-
 ```ts
-getDefinitionByType(structureType: StructureRef): any
+sandkit.api.structures.getDefinitionByType(structureType: StructureRef): any
 ```
 
 Defined in: [shared/api/structures.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L48)
@@ -23209,10 +22284,8 @@ Structure type value or string id.
 
 #### getTypeById() :id=sandkit.api.structures.worker.gettypebyid
 
-<p class="smt-member-path"><code>sandkit.api.structures.getTypeById() (worker)</code></p>
-
 ```ts
-getTypeById(structureId: string & object): StructureType
+sandkit.api.structures.getTypeById(structureId: string & object): StructureType
 ```
 
 Defined in: [shared/api/structures.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L57)
@@ -23237,10 +22310,10 @@ Structure string id.
 
 ***
 
-#### ~~getTypeFromId()~~
+#### ~~getTypeFromId()~~ :id=sandkit.api.structures.worker.gettypefromid
 
 ```ts
-getTypeFromId(structureId: string & object): StructureType
+sandkit.api.structures.getTypeFromId(structureId: string & object): StructureType
 ```
 
 Defined in: [shared/api/structures.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L64)
@@ -23267,10 +22340,8 @@ Use [getTypeById](#gettypebyid) instead.
 
 #### hasBuiltAtCell() :id=sandkit.api.structures.worker.hasbuiltatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.hasBuiltAtCell() (worker)</code></p>
-
 ```ts
-hasBuiltAtCell(...args: CellCoordinates): boolean
+sandkit.api.structures.hasBuiltAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/structures.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L74)
@@ -23295,10 +22366,8 @@ Return true when a completed structure occupies the cell.
 
 #### isType() :id=sandkit.api.structures.worker.istype
 
-<p class="smt-member-path"><code>sandkit.api.structures.isType() (worker)</code></p>
-
 ```ts
-isType(structure: Structure | null, structureId: string & object): boolean
+sandkit.api.structures.isType(structure: Structure | null, structureId: string & object): boolean
 ```
 
 Defined in: [shared/api/structures.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L84)
@@ -23331,10 +22400,8 @@ Structure string id to compare.
 
 #### isTypeAtCell() :id=sandkit.api.structures.worker.istypeatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.isTypeAtCell() (worker)</code></p>
-
 ```ts
-isTypeAtCell(...args: [number, number, string & object]): boolean
+sandkit.api.structures.isTypeAtCell(...args: [number, number, string & object]): boolean
 ```
 
 Defined in: [shared/api/structures.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L95)
@@ -23359,10 +22426,8 @@ Return true when the cell structure matches the given id.
 
 #### setSpritesheetIndex() :id=sandkit.api.structures.worker.setspritesheetindex
 
-<p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndex() (worker)</code></p>
-
 ```ts
-setSpritesheetIndex(structure: Structure, index: number): void
+sandkit.api.structures.setSpritesheetIndex(structure: Structure, index: number): void
 ```
 
 Defined in: [shared/api/structures.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L105)
@@ -23395,10 +22460,8 @@ Spritesheet frame index.
 
 #### setSpritesheetIndexAtCell() :id=sandkit.api.structures.worker.setspritesheetindexatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndexAtCell() (worker)</code></p>
-
 ```ts
-setSpritesheetIndexAtCell(...args: [number, number, number]): void
+sandkit.api.structures.setSpritesheetIndexAtCell(...args: [number, number, number]): void
 ```
 
 Defined in: [shared/api/structures.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L116)
@@ -23423,10 +22486,8 @@ Set spritesheet frame index for the structure at a cell.
 
 #### setSpritesheetIndexByValue() :id=sandkit.api.structures.worker.setspritesheetindexbyvalue
 
-<p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndexByValue() (worker)</code></p>
-
 ```ts
-setSpritesheetIndexByValue(structure: Structure, value: number, thresholds: number[]): void
+sandkit.api.structures.setSpritesheetIndexByValue(structure: Structure, value: number, thresholds: number[]): void
 ```
 
 Defined in: [shared/api/structures.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L127)
@@ -23465,10 +22526,8 @@ Ascending threshold values.
 
 #### setSpritesheetIndexByValueAtCell() :id=sandkit.api.structures.worker.setspritesheetindexbyvalueatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.setSpritesheetIndexByValueAtCell() (worker)</code></p>
-
 ```ts
-setSpritesheetIndexByValueAtCell(...args: [number, number, number, number[]]): void
+sandkit.api.structures.setSpritesheetIndexByValueAtCell(...args: [number, number, number, number[]]): void
 ```
 
 Defined in: [shared/api/structures.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L143)
@@ -23493,10 +22552,8 @@ Same as [setSpritesheetIndexByValue](#setspritesheetindexbyvalue) for the struct
 
 #### update() :id=sandkit.api.structures.worker.update
 
-<p class="smt-member-path"><code>sandkit.api.structures.update() (worker)</code></p>
-
 ```ts
-update(structure: Structure, options?: object): void
+sandkit.api.structures.update(structure: Structure, options?: object): void
 ```
 
 Defined in: [shared/api/structures.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L160)
@@ -23539,10 +22596,8 @@ api.structures.update(structure, { propagateToWorkers: true });
 
 #### updateData() :id=sandkit.api.structures.worker.updatedata
 
-<p class="smt-member-path"><code>sandkit.api.structures.updateData() (worker)</code></p>
-
 ```ts
-updateData(structure: Structure, partial: any, options?: object): void
+sandkit.api.structures.updateData(structure: Structure, partial: any, options?: object): void
 ```
 
 Defined in: [shared/api/structures.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L180)
@@ -23593,10 +22648,10 @@ api.structures.updateData(
 
 ***
 
-#### ~~setData()~~
+#### ~~setData()~~ :id=sandkit.api.structures.worker.setdata
 
 ```ts
-setData(structure: Structure, partial: any, options?: object): void
+sandkit.api.structures.setData(structure: Structure, partial: any, options?: object): void
 ```
 
 Defined in: [shared/api/structures.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L191)
@@ -23639,10 +22694,8 @@ Structure processing enablement checks.
 
 #### isEnabledAtCell() :id=sandkit.api.structures.processing.worker.isenabledatcell
 
-<p class="smt-member-path"><code>sandkit.api.structures.processing.isEnabledAtCell() (worker)</code></p>
-
 ```ts
-isEnabledAtCell(...args: CellCoordinates): boolean
+sandkit.api.structures.processing.isEnabledAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/structures.d.ts:207](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L207)
@@ -23665,10 +22718,10 @@ Return true when processing is enabled at the cell.
 
 ***
 
-#### ~~isEnabledAt()~~
+#### ~~isEnabledAt()~~ :id=sandkit.api.structures.processing.worker.isenabledat
 
 ```ts
-isEnabledAt(...args: CellCoordinates): boolean
+sandkit.api.structures.processing.isEnabledAt(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/structures.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L214)
@@ -23709,7 +22762,6 @@ Worker-entry mutations are immediate. Main thread defers matching helpers in
 #### TerrainDefinition :id=sandkit.api.terrains.worker.terraindefinition
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainDefinition (worker)</code></p>
-
 Defined in: [shared/api/terrains.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L20)
 
 Terrain definition shape for register and [getDefinitionByType](#getdefinitionbytype).
@@ -23833,7 +22885,6 @@ chance: number
 #### TerrainDataAtCell :id=sandkit.api.terrains.worker.terraindataatcell
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainDataAtCell (worker)</code></p>
-
 Defined in: [shared/api/terrains.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L50)
 
 Terrain cell data returned by [getDataAtCell](#getdataatcell).
@@ -23889,7 +22940,6 @@ Use [hitPoints](#hitpoints) instead.
 #### TerrainMutationOptions :id=sandkit.api.terrains.worker.terrainmutationoptions
 
 <p class="smt-member-path"><code>sandkit.api.terrains.TerrainMutationOptions (worker)</code></p>
-
 Defined in: [shared/api/terrains.d.ts:238](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L238)
 
 Options for terrain create, replace, or remove calls.
@@ -23914,10 +22964,8 @@ Skip shadow updates around the changed cell.
 
 #### TerrainType :id=sandkit.api.terrains.worker.terraintype
 
-<p class="smt-member-path"><code>sandkit.api.terrains.TerrainType (worker)</code></p>
-
 ```ts
-TerrainType = CellType | TaggedNumber<"terrainType">
+sandkit.api.terrains.TerrainType = CellType | TaggedNumber<"terrainType">
 ```
 
 Defined in: [shared/api/terrains.d.ts:248](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L248)
@@ -23932,10 +22980,8 @@ Numeric terrain / [CellTypeEnum](api/sandkit.enums.CellType.md) handle.
 
 #### TerrainId :id=sandkit.api.terrains.worker.terrainid
 
-<p class="smt-member-path"><code>sandkit.api.terrains.TerrainId (worker)</code></p>
-
 ```ts
-TerrainId = LooseString<never>
+sandkit.api.terrains.TerrainId = LooseString<never>
 ```
 
 Defined in: [shared/api/terrains.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L255)
@@ -23950,10 +22996,8 @@ Mod or built-in terrain string id.
 
 #### TerrainRef :id=sandkit.api.terrains.worker.terrainref
 
-<p class="smt-member-path"><code>sandkit.api.terrains.TerrainRef (worker)</code></p>
-
 ```ts
-TerrainRef = TerrainType | TerrainId
+sandkit.api.terrains.TerrainRef = TerrainType | TerrainId
 ```
 
 Defined in: [shared/api/terrains.d.ts:262](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L262)
@@ -23968,10 +23012,8 @@ Type handle or string id accepted by mutation helpers.
 
 #### getIdByType() :id=sandkit.api.terrains.worker.getidbytype
 
-<p class="smt-member-path"><code>sandkit.api.terrains.getIdByType() (worker)</code></p>
-
 ```ts
-getIdByType(terrainType: TerrainType): string & object
+sandkit.api.terrains.getIdByType(terrainType: TerrainType): string & object
 ```
 
 Defined in: [shared/api/terrains.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L74)
@@ -23998,10 +23040,8 @@ Numeric terrain cell type.
 
 #### getTypeById() :id=sandkit.api.terrains.worker.gettypebyid
 
-<p class="smt-member-path"><code>sandkit.api.terrains.getTypeById() (worker)</code></p>
-
 ```ts
-getTypeById(terrainId: string & object): TerrainType
+sandkit.api.terrains.getTypeById(terrainId: string & object): TerrainType
 ```
 
 Defined in: [shared/api/terrains.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L83)
@@ -24026,10 +23066,10 @@ Mod-registered or built-in terrain id.
 
 ***
 
-#### ~~getTypeFromId()~~
+#### ~~getTypeFromId()~~ :id=sandkit.api.terrains.worker.gettypefromid
 
 ```ts
-getTypeFromId(terrainId: string & object): TerrainType
+sandkit.api.terrains.getTypeFromId(terrainId: string & object): TerrainType
 ```
 
 Defined in: [shared/api/terrains.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L90)
@@ -24056,10 +23096,8 @@ Use [getTypeById](#gettypebyid) instead.
 
 #### getDefinitionByType() :id=sandkit.api.terrains.worker.getdefinitionbytype
 
-<p class="smt-member-path"><code>sandkit.api.terrains.getDefinitionByType() (worker)</code></p>
-
 ```ts
-getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
+sandkit.api.terrains.getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 ```
 
 Defined in: [shared/api/terrains.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L99)
@@ -24086,10 +23124,8 @@ Numeric terrain cell type.
 
 #### getTypeAtCell() :id=sandkit.api.terrains.worker.gettypeatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.getTypeAtCell() (worker)</code></p>
-
 ```ts
-getTypeAtCell(...args: CellCoordinates): TerrainType | null
+sandkit.api.terrains.getTypeAtCell(...args: CellCoordinates): TerrainType | null
 ```
 
 Defined in: [shared/api/terrains.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L109)
@@ -24114,10 +23150,8 @@ Return the terrain cell type at a cell, or null when none.
 
 #### getDataAtCell() :id=sandkit.api.terrains.worker.getdataatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.getDataAtCell() (worker)</code></p>
-
 ```ts
-getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
+sandkit.api.terrains.getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 ```
 
 Defined in: [shared/api/terrains.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L120)
@@ -24144,10 +23178,8 @@ Cell type and hit points, or null when the cell is not terrain.
 
 #### isAtCell() :id=sandkit.api.terrains.worker.isatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.isAtCell() (worker)</code></p>
-
 ```ts
-isAtCell(...args: CellCoordinates): boolean
+sandkit.api.terrains.isAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [shared/api/terrains.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L130)
@@ -24172,10 +23204,8 @@ Return true when any terrain occupies the cell.
 
 #### isTypeAtCell() :id=sandkit.api.terrains.worker.istypeatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.isTypeAtCell() (worker)</code></p>
-
 ```ts
-isTypeAtCell(...args: [number, number, string & object]): boolean
+sandkit.api.terrains.isTypeAtCell(...args: [number, number, string & object]): boolean
 ```
 
 Defined in: [shared/api/terrains.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L141)
@@ -24200,10 +23230,8 @@ Return true when the cell terrain matches the given id.
 
 #### isCellIdTerrain() :id=sandkit.api.terrains.worker.iscellidterrain
 
-<p class="smt-member-path"><code>sandkit.api.terrains.isCellIdTerrain() (worker)</code></p>
-
 ```ts
-isCellIdTerrain(cellId: CellId): boolean
+sandkit.api.terrains.isCellIdTerrain(cellId: CellId): boolean
 ```
 
 Defined in: [shared/api/terrains.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L150)
@@ -24230,10 +23258,8 @@ Packed cell id from [world.getCellIdAtCell](api/sandkit.api.grid.md#getcellidatc
 
 #### damageAtCell() :id=sandkit.api.terrains.worker.damageatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.damageAtCell() (worker)</code></p>
-
 ```ts
-damageAtCell(...args: [number, number, number]): void
+sandkit.api.terrains.damageAtCell(...args: [number, number, number]): void
 ```
 
 Defined in: [shared/api/terrains.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L161)
@@ -24258,10 +23284,8 @@ Apply damage to terrain at a cell.
 
 #### meltAtCell() :id=sandkit.api.terrains.worker.meltatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.meltAtCell() (worker)</code></p>
-
 ```ts
-meltAtCell(...args: CellCoordinates): void
+sandkit.api.terrains.meltAtCell(...args: CellCoordinates): void
 ```
 
 Defined in: [shared/api/terrains.d.ts:171](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L171)
@@ -24286,10 +23310,8 @@ Melt terrain at a cell (for example ice to water). Worker-entry writes are immed
 
 #### createAtCell() :id=sandkit.api.terrains.worker.createatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.createAtCell() (worker)</code></p>
-
 ```ts
-createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
+sandkit.api.terrains.createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
 Defined in: [shared/api/terrains.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L183)
@@ -24314,10 +23336,8 @@ Place terrain at an empty cell. Worker-entry writes are immediate.
 
 #### replaceAtCell() :id=sandkit.api.terrains.worker.replaceatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.replaceAtCell() (worker)</code></p>
-
 ```ts
-replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
+sandkit.api.terrains.replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): void
 ```
 
 Defined in: [shared/api/terrains.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L197)
@@ -24342,10 +23362,8 @@ Replace existing terrain at a cell. Worker-entry writes are immediate.
 
 #### removeAtCell() :id=sandkit.api.terrains.worker.removeatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.removeAtCell() (worker)</code></p>
-
 ```ts
-removeAtCell(...args: number, number, [TerrainMutationOptions]): void
+sandkit.api.terrains.removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 ```
 
 Defined in: [shared/api/terrains.d.ts:210](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L210)
@@ -24370,10 +23388,8 @@ Remove terrain from a cell. Worker-entry writes are immediate.
 
 #### setHitPointsAtCell() :id=sandkit.api.terrains.worker.sethitpointsatcell
 
-<p class="smt-member-path"><code>sandkit.api.terrains.setHitPointsAtCell() (worker)</code></p>
-
 ```ts
-setHitPointsAtCell(...args: [number, number, number]): boolean
+sandkit.api.terrains.setHitPointsAtCell(...args: [number, number, number]): boolean
 ```
 
 Defined in: [shared/api/terrains.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L224)
@@ -24398,10 +23414,10 @@ True when hit points changed or the terrain was removed.
 
 ***
 
-#### ~~setHpAtCell()~~
+#### ~~setHpAtCell()~~ :id=sandkit.api.terrains.worker.sethpatcell
 
 ```ts
-setHpAtCell(...args: [number, number, number]): boolean
+sandkit.api.terrains.setHpAtCell(...args: [number, number, number]): boolean
 ```
 
 Defined in: [shared/api/terrains.d.ts:231](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L231)
@@ -24441,7 +23457,6 @@ Main thread adds richer UI APIs on top of this shape.
 #### I18nTextKey :id=sandkit.api.ui.worker.i18ntextkey
 
 <p class="smt-member-path"><code>sandkit.api.ui.I18nTextKey (worker)</code></p>
-
 Defined in: [shared/api/ui.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L25)
 
 Translation key with optional parameter substitution.
@@ -24473,7 +23488,6 @@ Values merged into the translated string.
 #### I18nTranslatable :id=sandkit.api.ui.worker.i18ntranslatable
 
 <p class="smt-member-path"><code>sandkit.api.ui.I18nTranslatable (worker)</code></p>
-
 Defined in: [shared/api/ui.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L33)
 
 Value returned by `sandkit.api.i18n.translatable`.
@@ -24509,7 +23523,6 @@ Defined in: [shared/api/ui.d.ts:36](https://github.com/sandustry-modding/Sandust
 #### ToastOptions :id=sandkit.api.ui.worker.toastoptions
 
 <p class="smt-member-path"><code>sandkit.api.ui.ToastOptions (worker)</code></p>
-
 Defined in: [shared/api/ui.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L40)
 
 Cooldown, style, and auto-dismiss options for [toast](#toast).
@@ -24562,10 +23575,8 @@ Visual style applied to the toast body.
 
 #### LocalizedText :id=sandkit.api.ui.worker.localizedtext
 
-<p class="smt-member-path"><code>sandkit.api.ui.LocalizedText (worker)</code></p>
-
 ```ts
-LocalizedText = string | I18nTextKey | I18nTranslatable
+sandkit.api.ui.LocalizedText = string | I18nTextKey | I18nTranslatable
 ```
 
 Defined in: [shared/api/ui.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L22)
@@ -24576,10 +23587,8 @@ Plain text, translation key object, or i18n translatable value.
 
 #### toast() :id=sandkit.api.ui.worker.toast
 
-<p class="smt-member-path"><code>sandkit.api.ui.toast() (worker)</code></p>
-
 ```ts
-toast(message: LocalizedText, options?: ToastOptions): void
+sandkit.api.ui.toast(message: LocalizedText, options?: ToastOptions): void
 ```
 
 Defined in: [shared/api/ui.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L19)
@@ -24629,10 +23638,8 @@ main-thread APIs.
 
 #### getIndex() :id=sandkit.api.worker.worker.getindex
 
-<p class="smt-member-path"><code>sandkit.api.worker.getIndex() (worker)</code></p>
-
 ```ts
-getIndex(): number
+sandkit.api.worker.getIndex(): number
 ```
 
 Defined in: [worker/api/worker.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L14)
@@ -24649,10 +23656,8 @@ Worker index (`0` … `getCount() - 1`).
 
 #### getCount() :id=sandkit.api.worker.worker.getcount
 
-<p class="smt-member-path"><code>sandkit.api.worker.getCount() (worker)</code></p>
-
 ```ts
-getCount(): number
+sandkit.api.worker.getCount(): number
 ```
 
 Defined in: [worker/api/worker.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L19)
@@ -24679,56 +23684,65 @@ Use [grid](api/sandkit.api.grid.worker.md) instead.
 
 ### References <!-- {docsify-ignore} -->
 
-#### ~~getCellIdAtCell~~
+#### ~~getCellIdAtCell~~ :id=sandkit.api.world.worker.getcellidatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.getCellIdAtCell (worker)</code></p>
 Re-exports [getCellIdAtCell](api/sandkit.api.grid.md#getcellidatcell)
 
 ***
 
-#### ~~isCellEmptyAtCell~~
+#### ~~isCellEmptyAtCell~~ :id=sandkit.api.world.worker.iscellemptyatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.isCellEmptyAtCell (worker)</code></p>
 Re-exports [isCellEmptyAtCell](api/sandkit.api.grid.md#iscellemptyatcell)
 
 ***
 
-#### ~~isTerrainAtCell~~
+#### ~~isTerrainAtCell~~ :id=sandkit.api.world.worker.isterrainatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.isTerrainAtCell (worker)</code></p>
 Re-exports [isTerrainAtCell](api/sandkit.api.grid.md#isterrainatcell)
 
 ***
 
-#### ~~reportActivityAtCell~~
+#### ~~reportActivityAtCell~~ :id=sandkit.api.world.worker.reportactivityatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.reportActivityAtCell (worker)</code></p>
 Re-exports [reportActivityAtCell](api/sandkit.api.grid.md#reportactivityatcell)
 
 ***
 
-#### ~~excavateAtCell~~
+#### ~~excavateAtCell~~ :id=sandkit.api.world.worker.excavateatcell
 
+<p class="smt-member-path"><code>sandkit.api.world.excavateAtCell (worker)</code></p>
 Re-exports [excavateAtCell](api/sandkit.api.grid.md#excavateatcell)
 
 ***
 
-#### ~~getDimensions~~
+#### ~~getDimensions~~ :id=sandkit.api.world.worker.getdimensions
 
+<p class="smt-member-path"><code>sandkit.api.world.getDimensions (worker)</code></p>
 Re-exports [getDimensions](api/sandkit.api.grid.md#getdimensions)
 
 ***
 
-#### ~~ExcavateOptions~~
+#### ~~ExcavateOptions~~ :id=sandkit.api.world.worker.excavateoptions
 
+<p class="smt-member-path"><code>sandkit.api.world.ExcavateOptions (worker)</code></p>
 Re-exports [ExcavateOptions](api/sandkit.api.grid.md#excavateoptions)
 
 ***
 
-#### ~~CellId~~
+#### ~~CellId~~ :id=sandkit.api.world.worker.cellid
 
+<p class="smt-member-path"><code>sandkit.api.world.CellId (worker)</code></p>
 Re-exports [CellId](api/sandkit.api.grid.md#cellid)
 
 ***
 
-#### ~~GridDimensions~~
+#### ~~GridDimensions~~ :id=sandkit.api.world.worker.griddimensions
 
+<p class="smt-member-path"><code>sandkit.api.world.GridDimensions (worker)</code></p>
 Re-exports [GridDimensions](api/sandkit.api.grid.md#griddimensions)
 
 ---
@@ -24747,10 +23761,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### getDigLevel() :id=sandkit.engine.api.augments.getdiglevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getDigLevel()</code></p>
-
 ```ts
-getDigLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getDigLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L15)
@@ -24773,10 +23785,8 @@ Game state first, then method-specific arguments.
 
 #### getGunLevel() :id=sandkit.engine.api.augments.getgunlevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getGunLevel()</code></p>
-
 ```ts
-getGunLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getGunLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L20)
@@ -24799,10 +23809,8 @@ Game state first, then method-specific arguments.
 
 #### getPhaseLevel() :id=sandkit.engine.api.augments.getphaselevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getPhaseLevel()</code></p>
-
 ```ts
-getPhaseLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getPhaseLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L25)
@@ -24825,10 +23833,8 @@ Game state first, then method-specific arguments.
 
 #### getRocketAmmoLevel() :id=sandkit.engine.api.augments.getrocketammolevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getRocketAmmoLevel()</code></p>
-
 ```ts
-getRocketAmmoLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getRocketAmmoLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L30)
@@ -24851,10 +23857,8 @@ Game state first, then method-specific arguments.
 
 #### getRocketReloadLevel() :id=sandkit.engine.api.augments.getrocketreloadlevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getRocketReloadLevel()</code></p>
-
 ```ts
-getRocketReloadLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getRocketReloadLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L35)
@@ -24877,10 +23881,8 @@ Game state first, then method-specific arguments.
 
 #### getSprintCapLevel() :id=sandkit.engine.api.augments.getsprintcaplevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.getSprintCapLevel()</code></p>
-
 ```ts
-getSprintCapLevel(...args: unknown[]): unknown
+sandkit.engine.api.augments.getSprintCapLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L40)
@@ -24903,10 +23905,8 @@ Game state first, then method-specific arguments.
 
 #### hasBigDig() :id=sandkit.engine.api.augments.hasbigdig
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasBigDig()</code></p>
-
 ```ts
-hasBigDig(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasBigDig(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L45)
@@ -24929,10 +23929,8 @@ Game state first, then method-specific arguments.
 
 #### hasBulletSpeed() :id=sandkit.engine.api.augments.hasbulletspeed
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasBulletSpeed()</code></p>
-
 ```ts
-hasBulletSpeed(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasBulletSpeed(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L50)
@@ -24955,10 +23953,8 @@ Game state first, then method-specific arguments.
 
 #### hasBulletTracer() :id=sandkit.engine.api.augments.hasbullettracer
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasBulletTracer()</code></p>
-
 ```ts
-hasBulletTracer(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasBulletTracer(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L55)
@@ -24981,10 +23977,8 @@ Game state first, then method-specific arguments.
 
 #### hasKickstartBoost() :id=sandkit.engine.api.augments.haskickstartboost
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasKickstartBoost()</code></p>
-
 ```ts
-hasKickstartBoost(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasKickstartBoost(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L60)
@@ -25007,10 +24001,8 @@ Game state first, then method-specific arguments.
 
 #### hasPhaseDash() :id=sandkit.engine.api.augments.hasphasedash
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasPhaseDash()</code></p>
-
 ```ts
-hasPhaseDash(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasPhaseDash(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L65)
@@ -25033,10 +24025,8 @@ Game state first, then method-specific arguments.
 
 #### hasPhaseDashCharge() :id=sandkit.engine.api.augments.hasphasedashcharge
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasPhaseDashCharge()</code></p>
-
 ```ts
-hasPhaseDashCharge(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasPhaseDashCharge(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L70)
@@ -25059,10 +24049,8 @@ Game state first, then method-specific arguments.
 
 #### hasRideBoost() :id=sandkit.engine.api.augments.hasrideboost
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasRideBoost()</code></p>
-
 ```ts
-hasRideBoost(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasRideBoost(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L75)
@@ -25085,10 +24073,8 @@ Game state first, then method-specific arguments.
 
 #### hasRocketDamage() :id=sandkit.engine.api.augments.hasrocketdamage
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasRocketDamage()</code></p>
-
 ```ts
-hasRocketDamage(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasRocketDamage(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L80)
@@ -25111,10 +24097,8 @@ Game state first, then method-specific arguments.
 
 #### hasRocketWarhead() :id=sandkit.engine.api.augments.hasrocketwarhead
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasRocketWarhead()</code></p>
-
 ```ts
-hasRocketWarhead(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasRocketWarhead(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L85)
@@ -25137,10 +24121,8 @@ Game state first, then method-specific arguments.
 
 #### hasSprintPower() :id=sandkit.engine.api.augments.hassprintpower
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasSprintPower()</code></p>
-
 ```ts
-hasSprintPower(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasSprintPower(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L90)
@@ -25163,10 +24145,8 @@ Game state first, then method-specific arguments.
 
 #### hasTripleShot() :id=sandkit.engine.api.augments.hastripleshot
 
-<p class="smt-member-path"><code>sandkit.engine.api.augments.hasTripleShot()</code></p>
-
 ```ts
-hasTripleShot(...args: unknown[]): unknown
+sandkit.engine.api.augments.hasTripleShot(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/augments.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L95)
@@ -25201,10 +24181,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### ensureProducedAtLeast() :id=sandkit.engine.api.auralite.ensureproducedatleast
 
-<p class="smt-member-path"><code>sandkit.engine.api.auralite.ensureProducedAtLeast()</code></p>
-
 ```ts
-ensureProducedAtLeast(...args: unknown[]): unknown
+sandkit.engine.api.auralite.ensureProducedAtLeast(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/auralite.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L15)
@@ -25227,10 +24205,8 @@ Game state first, then method-specific arguments.
 
 #### getProduced() :id=sandkit.engine.api.auralite.getproduced
 
-<p class="smt-member-path"><code>sandkit.engine.api.auralite.getProduced()</code></p>
-
 ```ts
-getProduced(...args: unknown[]): unknown
+sandkit.engine.api.auralite.getProduced(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/auralite.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L20)
@@ -25265,10 +24241,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### delete() :id=sandkit.engine.api.blueprints.delete
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.delete()</code></p>
-
 ```ts
-delete(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.delete(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L15)
@@ -25291,10 +24265,8 @@ Game state first, then method-specific arguments.
 
 #### exportAllString() :id=sandkit.engine.api.blueprints.exportallstring
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.exportAllString()</code></p>
-
 ```ts
-exportAllString(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.exportAllString(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L21)
@@ -25317,10 +24289,8 @@ Game state first, then method-specific arguments.
 
 #### exportString() :id=sandkit.engine.api.blueprints.exportstring
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.exportString()</code></p>
-
 ```ts
-exportString(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.exportString(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L26)
@@ -25343,10 +24313,8 @@ Game state first, then method-specific arguments.
 
 #### getAll() :id=sandkit.engine.api.blueprints.getall
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.getAll()</code></p>
-
 ```ts
-getAll(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.getAll(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L31)
@@ -25369,10 +24337,8 @@ Game state first, then method-specific arguments.
 
 #### importString() :id=sandkit.engine.api.blueprints.importstring
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.importString()</code></p>
-
 ```ts
-importString(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.importString(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L36)
@@ -25395,10 +24361,8 @@ Game state first, then method-specific arguments.
 
 #### load() :id=sandkit.engine.api.blueprints.load
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.load()</code></p>
-
 ```ts
-load(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.load(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L41)
@@ -25421,10 +24385,8 @@ Game state first, then method-specific arguments.
 
 #### save() :id=sandkit.engine.api.blueprints.save
 
-<p class="smt-member-path"><code>sandkit.engine.api.blueprints.save()</code></p>
-
 ```ts
-save(...args: unknown[]): unknown
+sandkit.engine.api.blueprints.save(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/blueprints.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L46)
@@ -25459,10 +24421,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### activate() :id=sandkit.engine.api.clipboard.activate
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.activate()</code></p>
-
 ```ts
-activate(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.activate(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L15)
@@ -25485,10 +24445,8 @@ Game state first, then method-specific arguments.
 
 #### clear() :id=sandkit.engine.api.clipboard.clear
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.clear()</code></p>
-
 ```ts
-clear(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.clear(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L20)
@@ -25511,10 +24469,8 @@ Game state first, then method-specific arguments.
 
 #### get() :id=sandkit.engine.api.clipboard.get
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.get()</code></p>
-
 ```ts
-get(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.get(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L25)
@@ -25537,10 +24493,8 @@ Game state first, then method-specific arguments.
 
 #### getHistory() :id=sandkit.engine.api.clipboard.gethistory
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.getHistory()</code></p>
-
 ```ts
-getHistory(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.getHistory(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L30)
@@ -25563,10 +24517,8 @@ Game state first, then method-specific arguments.
 
 #### getSignalLinks() :id=sandkit.engine.api.clipboard.getsignallinks
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.getSignalLinks()</code></p>
-
 ```ts
-getSignalLinks(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.getSignalLinks(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L35)
@@ -25589,10 +24541,8 @@ Game state first, then method-specific arguments.
 
 #### selectFromHistory() :id=sandkit.engine.api.clipboard.selectfromhistory
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.selectFromHistory()</code></p>
-
 ```ts
-selectFromHistory(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.selectFromHistory(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L40)
@@ -25615,10 +24565,8 @@ Game state first, then method-specific arguments.
 
 #### set() :id=sandkit.engine.api.clipboard.set
 
-<p class="smt-member-path"><code>sandkit.engine.api.clipboard.set()</code></p>
-
 ```ts
-set(...args: unknown[]): unknown
+sandkit.engine.api.clipboard.set(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/clipboard.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L45)
@@ -25653,10 +24601,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### colorStructure() :id=sandkit.engine.api.coloringTool.colorstructure
 
-<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.colorStructure()</code></p>
-
 ```ts
-colorStructure(...args: unknown[]): unknown
+sandkit.engine.api.coloringTool.colorStructure(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/coloringTool.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L15)
@@ -25679,10 +24625,8 @@ Game state first, then method-specific arguments.
 
 #### floodFillColor() :id=sandkit.engine.api.coloringTool.floodfillcolor
 
-<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.floodFillColor()</code></p>
-
 ```ts
-floodFillColor(...args: unknown[]): unknown
+sandkit.engine.api.coloringTool.floodFillColor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/coloringTool.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L20)
@@ -25705,10 +24649,8 @@ Game state first, then method-specific arguments.
 
 #### getColor() :id=sandkit.engine.api.coloringTool.getcolor
 
-<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.getColor()</code></p>
-
 ```ts
-getColor(...args: unknown[]): unknown
+sandkit.engine.api.coloringTool.getColor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/coloringTool.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L25)
@@ -25731,10 +24673,8 @@ Game state first, then method-specific arguments.
 
 #### isColorableStructure() :id=sandkit.engine.api.coloringTool.iscolorablestructure
 
-<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.isColorableStructure()</code></p>
-
 ```ts
-isColorableStructure(...args: unknown[]): unknown
+sandkit.engine.api.coloringTool.isColorableStructure(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/coloringTool.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L30)
@@ -25757,10 +24697,8 @@ Game state first, then method-specific arguments.
 
 #### isMatchColorMode() :id=sandkit.engine.api.coloringTool.ismatchcolormode
 
-<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.isMatchColorMode()</code></p>
-
 ```ts
-isMatchColorMode(...args: unknown[]): unknown
+sandkit.engine.api.coloringTool.isMatchColorMode(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/coloringTool.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L35)
@@ -25783,10 +24721,8 @@ Game state first, then method-specific arguments.
 
 #### isPaintBucketMode() :id=sandkit.engine.api.coloringTool.ispaintbucketmode
 
-<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.isPaintBucketMode()</code></p>
-
 ```ts
-isPaintBucketMode(...args: unknown[]): unknown
+sandkit.engine.api.coloringTool.isPaintBucketMode(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/coloringTool.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L40)
@@ -25809,10 +24745,8 @@ Game state first, then method-specific arguments.
 
 #### setColor() :id=sandkit.engine.api.coloringTool.setcolor
 
-<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.setColor()</code></p>
-
 ```ts
-setColor(...args: unknown[]): unknown
+sandkit.engine.api.coloringTool.setColor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/coloringTool.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L45)
@@ -25835,10 +24769,8 @@ Game state first, then method-specific arguments.
 
 #### toggleMatchColorMode() :id=sandkit.engine.api.coloringTool.togglematchcolormode
 
-<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.toggleMatchColorMode()</code></p>
-
 ```ts
-toggleMatchColorMode(...args: unknown[]): unknown
+sandkit.engine.api.coloringTool.toggleMatchColorMode(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/coloringTool.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L50)
@@ -25861,10 +24793,8 @@ Game state first, then method-specific arguments.
 
 #### togglePaintBucketMode() :id=sandkit.engine.api.coloringTool.togglepaintbucketmode
 
-<p class="smt-member-path"><code>sandkit.engine.api.coloringTool.togglePaintBucketMode()</code></p>
-
 ```ts
-togglePaintBucketMode(...args: unknown[]): unknown
+sandkit.engine.api.coloringTool.togglePaintBucketMode(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/coloringTool.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L55)
@@ -25947,10 +24877,8 @@ Sentinel value for a random palette color.
 
 #### closePalette() :id=sandkit.engine.api.colorPicker.closepalette
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.closePalette()</code></p>
-
 ```ts
-closePalette(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.closePalette(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L23)
@@ -25973,10 +24901,8 @@ Game state first, then method-specific arguments.
 
 #### getActivePalette() :id=sandkit.engine.api.colorPicker.getactivepalette
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.getActivePalette()</code></p>
-
 ```ts
-getActivePalette(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.getActivePalette(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L28)
@@ -25999,10 +24925,8 @@ Game state first, then method-specific arguments.
 
 #### getCycleColor() :id=sandkit.engine.api.colorPicker.getcyclecolor
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.getCycleColor()</code></p>
-
 ```ts
-getCycleColor(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.getCycleColor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L33)
@@ -26025,10 +24949,8 @@ Game state first, then method-specific arguments.
 
 #### getRandomColor() :id=sandkit.engine.api.colorPicker.getrandomcolor
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.getRandomColor()</code></p>
-
 ```ts
-getRandomColor(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.getRandomColor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L38)
@@ -26051,10 +24973,8 @@ Game state first, then method-specific arguments.
 
 #### hexToRgba() :id=sandkit.engine.api.colorPicker.hextorgba
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.hexToRgba()</code></p>
-
 ```ts
-hexToRgba(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.hexToRgba(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L43)
@@ -26077,10 +24997,8 @@ Game state first, then method-specific arguments.
 
 #### renderColorButton() :id=sandkit.engine.api.colorPicker.rendercolorbutton
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.renderColorButton()</code></p>
-
 ```ts
-renderColorButton(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.renderColorButton(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L48)
@@ -26103,10 +25021,8 @@ Game state first, then method-specific arguments.
 
 #### renderColorSection() :id=sandkit.engine.api.colorPicker.rendercolorsection
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.renderColorSection()</code></p>
-
 ```ts
-renderColorSection(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.renderColorSection(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L53)
@@ -26129,10 +25045,8 @@ Game state first, then method-specific arguments.
 
 #### renderPalette() :id=sandkit.engine.api.colorPicker.renderpalette
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.renderPalette()</code></p>
-
 ```ts
-renderPalette(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.renderPalette(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L58)
@@ -26155,10 +25069,8 @@ Game state first, then method-specific arguments.
 
 #### rgbaToHex() :id=sandkit.engine.api.colorPicker.rgbatohex
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.rgbaToHex()</code></p>
-
 ```ts
-rgbaToHex(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.rgbaToHex(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L63)
@@ -26181,10 +25093,8 @@ Game state first, then method-specific arguments.
 
 #### setActivePalette() :id=sandkit.engine.api.colorPicker.setactivepalette
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.setActivePalette()</code></p>
-
 ```ts
-setActivePalette(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.setActivePalette(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L68)
@@ -26207,10 +25117,8 @@ Game state first, then method-specific arguments.
 
 #### togglePalette() :id=sandkit.engine.api.colorPicker.togglepalette
 
-<p class="smt-member-path"><code>sandkit.engine.api.colorPicker.togglePalette()</code></p>
-
 ```ts
-togglePalette(...args: unknown[]): unknown
+sandkit.engine.api.colorPicker.togglePalette(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/colorPicker.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L73)
@@ -26245,10 +25153,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### registerType() :id=sandkit.engine.api.conveyors.registertype
 
-<p class="smt-member-path"><code>sandkit.engine.api.conveyors.registerType()</code></p>
-
 ```ts
-registerType(...args: unknown[]): unknown
+sandkit.engine.api.conveyors.registerType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/conveyors.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/conveyors.d.ts#L15)
@@ -26283,10 +25189,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### register() :id=sandkit.engine.api.debug.register
 
-<p class="smt-member-path"><code>sandkit.engine.api.debug.register()</code></p>
-
 ```ts
-register(...args: unknown[]): unknown
+sandkit.engine.api.debug.register(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/debug.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/debug.d.ts#L15)
@@ -26321,10 +25225,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### kill() :id=sandkit.engine.api.drones.kill
 
-<p class="smt-member-path"><code>sandkit.engine.api.drones.kill()</code></p>
-
 ```ts
-kill(...args: unknown[]): unknown
+sandkit.engine.api.drones.kill(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/drones.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/drones.d.ts#L15)
@@ -26347,10 +25249,8 @@ Game state first, then method-specific arguments.
 
 #### spawn() :id=sandkit.engine.api.drones.spawn
 
-<p class="smt-member-path"><code>sandkit.engine.api.drones.spawn()</code></p>
-
 ```ts
-spawn(...args: unknown[]): unknown
+sandkit.engine.api.drones.spawn(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/drones.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/drones.d.ts#L20)
@@ -26385,10 +25285,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### createLight() :id=sandkit.engine.api.entities.createlight
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.createLight()</code></p>
-
 ```ts
-createLight(...args: unknown[]): unknown
+sandkit.engine.api.entities.createLight(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L15)
@@ -26411,10 +25309,8 @@ Game state first, then method-specific arguments.
 
 #### getAll() :id=sandkit.engine.api.entities.getall
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.getAll()</code></p>
-
 ```ts
-getAll(...args: unknown[]): unknown
+sandkit.engine.api.entities.getAll(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L20)
@@ -26437,10 +25333,8 @@ Game state first, then method-specific arguments.
 
 #### getAllByType() :id=sandkit.engine.api.entities.getallbytype
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.getAllByType()</code></p>
-
 ```ts
-getAllByType(...args: unknown[]): unknown
+sandkit.engine.api.entities.getAllByType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L25)
@@ -26463,10 +25357,8 @@ Game state first, then method-specific arguments.
 
 #### getAllTypeDefs() :id=sandkit.engine.api.entities.getalltypedefs
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.getAllTypeDefs()</code></p>
-
 ```ts
-getAllTypeDefs(...args: unknown[]): unknown
+sandkit.engine.api.entities.getAllTypeDefs(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L30)
@@ -26489,10 +25381,8 @@ Game state first, then method-specific arguments.
 
 #### getSprite() :id=sandkit.engine.api.entities.getsprite
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.getSprite()</code></p>
-
 ```ts
-getSprite(...args: unknown[]): unknown
+sandkit.engine.api.entities.getSprite(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L35)
@@ -26515,10 +25405,8 @@ Game state first, then method-specific arguments.
 
 #### getTypeDef() :id=sandkit.engine.api.entities.gettypedef
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.getTypeDef()</code></p>
-
 ```ts
-getTypeDef(...args: unknown[]): unknown
+sandkit.engine.api.entities.getTypeDef(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L40)
@@ -26541,10 +25429,8 @@ Game state first, then method-specific arguments.
 
 #### launch() :id=sandkit.engine.api.entities.launch
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.launch()</code></p>
-
 ```ts
-launch(...args: unknown[]): unknown
+sandkit.engine.api.entities.launch(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L45)
@@ -26567,10 +25453,8 @@ Game state first, then method-specific arguments.
 
 #### registerSpawner() :id=sandkit.engine.api.entities.registerspawner
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.registerSpawner()</code></p>
-
 ```ts
-registerSpawner(...args: unknown[]): unknown
+sandkit.engine.api.entities.registerSpawner(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L50)
@@ -26593,10 +25477,8 @@ Game state first, then method-specific arguments.
 
 #### registerType() :id=sandkit.engine.api.entities.registertype
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.registerType()</code></p>
-
 ```ts
-registerType(...args: unknown[]): unknown
+sandkit.engine.api.entities.registerType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L55)
@@ -26619,10 +25501,8 @@ Game state first, then method-specific arguments.
 
 #### spawn() :id=sandkit.engine.api.entities.spawn
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.spawn()</code></p>
-
 ```ts
-spawn(...args: unknown[]): unknown
+sandkit.engine.api.entities.spawn(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L60)
@@ -26645,10 +25525,8 @@ Game state first, then method-specific arguments.
 
 #### startCapture() :id=sandkit.engine.api.entities.startcapture
 
-<p class="smt-member-path"><code>sandkit.engine.api.entities.startCapture()</code></p>
-
 ```ts
-startCapture(...args: unknown[]): unknown
+sandkit.engine.api.entities.startCapture(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/entities.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L65)
@@ -26683,10 +25561,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### define() :id=sandkit.engine.api.extensions.define
 
-<p class="smt-member-path"><code>sandkit.engine.api.extensions.define()</code></p>
-
 ```ts
-define(...args: unknown[]): unknown
+sandkit.engine.api.extensions.define(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/extensions.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/extensions.d.ts#L15)
@@ -26721,10 +25597,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### addViabilityGold() :id=sandkit.engine.api.factory.addviabilitygold
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.addViabilityGold()</code></p>
-
 ```ts
-addViabilityGold(...args: unknown[]): unknown
+sandkit.engine.api.factory.addViabilityGold(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L15)
@@ -26747,10 +25621,8 @@ Game state first, then method-specific arguments.
 
 #### canUnlockNextTier() :id=sandkit.engine.api.factory.canunlocknexttier
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.canUnlockNextTier()</code></p>
-
 ```ts
-canUnlockNextTier(...args: unknown[]): unknown
+sandkit.engine.api.factory.canUnlockNextTier(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L20)
@@ -26773,10 +25645,8 @@ Game state first, then method-specific arguments.
 
 #### ensureProcessAtLeast() :id=sandkit.engine.api.factory.ensureprocessatleast
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.ensureProcessAtLeast()</code></p>
-
 ```ts
-ensureProcessAtLeast(...args: unknown[]): unknown
+sandkit.engine.api.factory.ensureProcessAtLeast(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L25)
@@ -26799,10 +25669,8 @@ Game state first, then method-specific arguments.
 
 #### flushDeferredLevelUps() :id=sandkit.engine.api.factory.flushdeferredlevelups
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.flushDeferredLevelUps()</code></p>
-
 ```ts
-flushDeferredLevelUps(...args: unknown[]): unknown
+sandkit.engine.api.factory.flushDeferredLevelUps(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L30)
@@ -26825,10 +25693,8 @@ Game state first, then method-specific arguments.
 
 #### getLevel() :id=sandkit.engine.api.factory.getlevel
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.getLevel()</code></p>
-
 ```ts
-getLevel(...args: unknown[]): unknown
+sandkit.engine.api.factory.getLevel(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L35)
@@ -26851,10 +25717,8 @@ Game state first, then method-specific arguments.
 
 #### getProcessCount() :id=sandkit.engine.api.factory.getprocesscount
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.getProcessCount()</code></p>
-
 ```ts
-getProcessCount(...args: unknown[]): unknown
+sandkit.engine.api.factory.getProcessCount(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L40)
@@ -26877,10 +25741,8 @@ Game state first, then method-specific arguments.
 
 #### getProcessRate() :id=sandkit.engine.api.factory.getprocessrate
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.getProcessRate()</code></p>
-
 ```ts
-getProcessRate(...args: unknown[]): unknown
+sandkit.engine.api.factory.getProcessRate(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L45)
@@ -26903,10 +25765,8 @@ Game state first, then method-specific arguments.
 
 #### recordProcess() :id=sandkit.engine.api.factory.recordprocess
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.recordProcess()</code></p>
-
 ```ts
-recordProcess(...args: unknown[]): unknown
+sandkit.engine.api.factory.recordProcess(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L50)
@@ -26929,10 +25789,8 @@ Game state first, then method-specific arguments.
 
 #### unlockNextTier() :id=sandkit.engine.api.factory.unlocknexttier
 
-<p class="smt-member-path"><code>sandkit.engine.api.factory.unlockNextTier()</code></p>
-
 ```ts
-unlockNextTier(...args: unknown[]): unknown
+sandkit.engine.api.factory.unlockNextTier(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/factory.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L55)
@@ -26967,10 +25825,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### generate() :id=sandkit.engine.api.foliage.generate
 
-<p class="smt-member-path"><code>sandkit.engine.api.foliage.generate()</code></p>
-
 ```ts
-generate(...args: unknown[]): unknown
+sandkit.engine.api.foliage.generate(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/foliage.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L15)
@@ -26993,10 +25849,8 @@ Game state first, then method-specific arguments.
 
 #### getClusters() :id=sandkit.engine.api.foliage.getclusters
 
-<p class="smt-member-path"><code>sandkit.engine.api.foliage.getClusters()</code></p>
-
 ```ts
-getClusters(...args: unknown[]): unknown
+sandkit.engine.api.foliage.getClusters(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/foliage.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L20)
@@ -27019,10 +25873,8 @@ Game state first, then method-specific arguments.
 
 #### getContainer() :id=sandkit.engine.api.foliage.getcontainer
 
-<p class="smt-member-path"><code>sandkit.engine.api.foliage.getContainer()</code></p>
-
 ```ts
-getContainer(...args: unknown[]): unknown
+sandkit.engine.api.foliage.getContainer(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/foliage.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L25)
@@ -27045,10 +25897,8 @@ Game state first, then method-specific arguments.
 
 #### hasProcgenData() :id=sandkit.engine.api.foliage.hasprocgendata
 
-<p class="smt-member-path"><code>sandkit.engine.api.foliage.hasProcgenData()</code></p>
-
 ```ts
-hasProcgenData(...args: unknown[]): unknown
+sandkit.engine.api.foliage.hasProcgenData(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/foliage.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L30)
@@ -27083,10 +25933,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### getColor() :id=sandkit.engine.api.foundationColorPicker.getcolor
 
-<p class="smt-member-path"><code>sandkit.engine.api.foundationColorPicker.getColor()</code></p>
-
 ```ts
-getColor(...args: unknown[]): unknown
+sandkit.engine.api.foundationColorPicker.getColor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/foundationColorPicker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foundationColorPicker.d.ts#L15)
@@ -27121,10 +25969,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### load() :id=sandkit.engine.api.game.load
 
-<p class="smt-member-path"><code>sandkit.engine.api.game.load()</code></p>
-
 ```ts
-load(...args: unknown[]): unknown
+sandkit.engine.api.game.load(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/game.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L15)
@@ -27147,10 +25993,8 @@ Game state first, then method-specific arguments.
 
 #### save() :id=sandkit.engine.api.game.save
 
-<p class="smt-member-path"><code>sandkit.engine.api.game.save()</code></p>
-
 ```ts
-save(...args: unknown[]): unknown
+sandkit.engine.api.game.save(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/game.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L20)
@@ -27173,10 +26017,8 @@ Game state first, then method-specific arguments.
 
 #### start() :id=sandkit.engine.api.game.start
 
-<p class="smt-member-path"><code>sandkit.engine.api.game.start()</code></p>
-
 ```ts
-start(...args: unknown[]): unknown
+sandkit.engine.api.game.start(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/game.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L25)
@@ -27211,10 +26053,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### absorbAdjacentElements() :id=sandkit.engine.api.heatTransfer.absorbadjacentelements
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.absorbAdjacentElements()</code></p>
-
 ```ts
-absorbAdjacentElements(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.absorbAdjacentElements(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L15)
@@ -27237,10 +26077,8 @@ Game state first, then method-specific arguments.
 
 #### addTemperature() :id=sandkit.engine.api.heatTransfer.addtemperature
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.addTemperature()</code></p>
-
 ```ts
-addTemperature(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.addTemperature(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L20)
@@ -27263,10 +26101,8 @@ Game state first, then method-specific arguments.
 
 #### computeDiffusedTemperatures() :id=sandkit.engine.api.heatTransfer.computediffusedtemperatures
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.computeDiffusedTemperatures()</code></p>
-
 ```ts
-computeDiffusedTemperatures(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.computeDiffusedTemperatures(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L25)
@@ -27289,10 +26125,8 @@ Game state first, then method-specific arguments.
 
 #### computeEqualizedTemperature() :id=sandkit.engine.api.heatTransfer.computeequalizedtemperature
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.computeEqualizedTemperature()</code></p>
-
 ```ts
-computeEqualizedTemperature(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.computeEqualizedTemperature(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L30)
@@ -27315,10 +26149,8 @@ Game state first, then method-specific arguments.
 
 #### consumeTemperatureNear() :id=sandkit.engine.api.heatTransfer.consumetemperaturenear
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.consumeTemperatureNear()</code></p>
-
 ```ts
-consumeTemperatureNear(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.consumeTemperatureNear(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L35)
@@ -27341,10 +26173,8 @@ Game state first, then method-specific arguments.
 
 #### ensureTemperature() :id=sandkit.engine.api.heatTransfer.ensuretemperature
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.ensureTemperature()</code></p>
-
 ```ts
-ensureTemperature(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.ensureTemperature(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L40)
@@ -27367,10 +26197,8 @@ Game state first, then method-specific arguments.
 
 #### equalizeConnected() :id=sandkit.engine.api.heatTransfer.equalizeconnected
 
-<p class="smt-member-path"><code>sandkit.engine.api.heatTransfer.equalizeConnected()</code></p>
-
 ```ts
-equalizeConnected(...args: unknown[]): unknown
+sandkit.engine.api.heatTransfer.equalizeConnected(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/heatTransfer.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L45)
@@ -27405,10 +26233,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### registerType() :id=sandkit.engine.api.launchers.registertype
 
-<p class="smt-member-path"><code>sandkit.engine.api.launchers.registerType()</code></p>
-
 ```ts
-registerType(...args: unknown[]): unknown
+sandkit.engine.api.launchers.registerType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/launchers.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/launchers.d.ts#L15)
@@ -27443,10 +26269,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### getColor() :id=sandkit.engine.api.lightColorPicker.getcolor
 
-<p class="smt-member-path"><code>sandkit.engine.api.lightColorPicker.getColor()</code></p>
-
 ```ts
-getColor(...args: unknown[]): unknown
+sandkit.engine.api.lightColorPicker.getColor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/lightColorPicker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/lightColorPicker.d.ts#L15)
@@ -27481,10 +26305,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### getMatterTypeFromId() :id=sandkit.engine.api.matters.getmattertypefromid
 
-<p class="smt-member-path"><code>sandkit.engine.api.matters.getMatterTypeFromId()</code></p>
-
 ```ts
-getMatterTypeFromId(...args: unknown[]): unknown
+sandkit.engine.api.matters.getMatterTypeFromId(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/matters.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L15)
@@ -27507,10 +26329,8 @@ Game state first, then method-specific arguments.
 
 #### register() :id=sandkit.engine.api.matters.register
 
-<p class="smt-member-path"><code>sandkit.engine.api.matters.register()</code></p>
-
 ```ts
-register(...args: unknown[]): unknown
+sandkit.engine.api.matters.register(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/matters.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L20)
@@ -27533,10 +26353,8 @@ Game state first, then method-specific arguments.
 
 #### runSolidUpdate() :id=sandkit.engine.api.matters.runsolidupdate
 
-<p class="smt-member-path"><code>sandkit.engine.api.matters.runSolidUpdate()</code></p>
-
 ```ts
-runSolidUpdate(...args: unknown[]): unknown
+sandkit.engine.api.matters.runSolidUpdate(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/matters.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L25)
@@ -27571,10 +26389,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### register() :id=sandkit.engine.api.misc.register
 
-<p class="smt-member-path"><code>sandkit.engine.api.misc.register()</code></p>
-
 ```ts
-register(...args: unknown[]): unknown
+sandkit.engine.api.misc.register(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/misc.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/misc.d.ts#L15)
@@ -27609,10 +26425,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### getMarkers() :id=sandkit.engine.api.portals.getmarkers
 
-<p class="smt-member-path"><code>sandkit.engine.api.portals.getMarkers()</code></p>
-
 ```ts
-getMarkers(...args: unknown[]): unknown
+sandkit.engine.api.portals.getMarkers(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/portals.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/portals.d.ts#L15)
@@ -27647,10 +26461,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### getAll() :id=sandkit.engine.api.prefabData.getall
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getAll()</code></p>
-
 ```ts
-getAll(...args: unknown[]): unknown
+sandkit.engine.api.prefabData.getAll(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabData.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L15)
@@ -27673,10 +26485,8 @@ Game state first, then method-specific arguments.
 
 #### getAllMetadata() :id=sandkit.engine.api.prefabData.getallmetadata
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getAllMetadata()</code></p>
-
 ```ts
-getAllMetadata(...args: unknown[]): unknown
+sandkit.engine.api.prefabData.getAllMetadata(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabData.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L20)
@@ -27699,10 +26509,8 @@ Game state first, then method-specific arguments.
 
 #### getArtifactLocations() :id=sandkit.engine.api.prefabData.getartifactlocations
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getArtifactLocations()</code></p>
-
 ```ts
-getArtifactLocations(...args: unknown[]): unknown
+sandkit.engine.api.prefabData.getArtifactLocations(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabData.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L25)
@@ -27725,10 +26533,8 @@ Game state first, then method-specific arguments.
 
 #### getAtCell() :id=sandkit.engine.api.prefabData.getatcell
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getAtCell()</code></p>
-
 ```ts
-getAtCell(...args: unknown[]): unknown
+sandkit.engine.api.prefabData.getAtCell(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabData.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L30)
@@ -27751,10 +26557,8 @@ Game state first, then method-specific arguments.
 
 #### getMetadata() :id=sandkit.engine.api.prefabData.getmetadata
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabData.getMetadata()</code></p>
-
 ```ts
-getMetadata(...args: unknown[]): unknown
+sandkit.engine.api.prefabData.getMetadata(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabData.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L35)
@@ -27789,10 +26593,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### getPlacementByName() :id=sandkit.engine.api.prefabDecor.getplacementbyname
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabDecor.getPlacementByName()</code></p>
-
 ```ts
-getPlacementByName(...args: unknown[]): unknown
+sandkit.engine.api.prefabDecor.getPlacementByName(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabDecor.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabDecor.d.ts#L15)
@@ -27815,10 +26617,8 @@ Game state first, then method-specific arguments.
 
 #### replaceDecor() :id=sandkit.engine.api.prefabDecor.replacedecor
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabDecor.replaceDecor()</code></p>
-
 ```ts
-replaceDecor(...args: unknown[]): unknown
+sandkit.engine.api.prefabDecor.replaceDecor(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabDecor.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabDecor.d.ts#L20)
@@ -27853,10 +26653,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### localizeBlueprintStructures() :id=sandkit.engine.api.prefabulator.localizeblueprintstructures
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabulator.localizeBlueprintStructures()</code></p>
-
 ```ts
-localizeBlueprintStructures(...args: unknown[]): unknown
+sandkit.engine.api.prefabulator.localizeBlueprintStructures(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabulator.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabulator.d.ts#L15)
@@ -27879,10 +26677,8 @@ Game state first, then method-specific arguments.
 
 #### serializeBlueprintStructures() :id=sandkit.engine.api.prefabulator.serializeblueprintstructures
 
-<p class="smt-member-path"><code>sandkit.engine.api.prefabulator.serializeBlueprintStructures()</code></p>
-
 ```ts
-serializeBlueprintStructures(...args: unknown[]): unknown
+sandkit.engine.api.prefabulator.serializeBlueprintStructures(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prefabulator.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabulator.d.ts#L20)
@@ -27917,10 +26713,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### consume() :id=sandkit.engine.api.prismaline.consume
 
-<p class="smt-member-path"><code>sandkit.engine.api.prismaline.consume()</code></p>
-
 ```ts
-consume(...args: unknown[]): unknown
+sandkit.engine.api.prismaline.consume(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prismaline.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L15)
@@ -27943,10 +26737,8 @@ Game state first, then method-specific arguments.
 
 #### getAvailable() :id=sandkit.engine.api.prismaline.getavailable
 
-<p class="smt-member-path"><code>sandkit.engine.api.prismaline.getAvailable()</code></p>
-
 ```ts
-getAvailable(...args: unknown[]): unknown
+sandkit.engine.api.prismaline.getAvailable(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prismaline.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L20)
@@ -27969,10 +26761,8 @@ Game state first, then method-specific arguments.
 
 #### getConsumed() :id=sandkit.engine.api.prismaline.getconsumed
 
-<p class="smt-member-path"><code>sandkit.engine.api.prismaline.getConsumed()</code></p>
-
 ```ts
-getConsumed(...args: unknown[]): unknown
+sandkit.engine.api.prismaline.getConsumed(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prismaline.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L25)
@@ -28007,10 +26797,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### consume() :id=sandkit.engine.api.prismite.consume
 
-<p class="smt-member-path"><code>sandkit.engine.api.prismite.consume()</code></p>
-
 ```ts
-consume(...args: unknown[]): unknown
+sandkit.engine.api.prismite.consume(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prismite.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L15)
@@ -28033,10 +26821,8 @@ Game state first, then method-specific arguments.
 
 #### getAvailable() :id=sandkit.engine.api.prismite.getavailable
 
-<p class="smt-member-path"><code>sandkit.engine.api.prismite.getAvailable()</code></p>
-
 ```ts
-getAvailable(...args: unknown[]): unknown
+sandkit.engine.api.prismite.getAvailable(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prismite.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L20)
@@ -28059,10 +26845,8 @@ Game state first, then method-specific arguments.
 
 #### getConsumed() :id=sandkit.engine.api.prismite.getconsumed
 
-<p class="smt-member-path"><code>sandkit.engine.api.prismite.getConsumed()</code></p>
-
 ```ts
-getConsumed(...args: unknown[]): unknown
+sandkit.engine.api.prismite.getConsumed(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/prismite.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L25)
@@ -28097,10 +26881,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### enqueue() :id=sandkit.engine.api.queue.enqueue
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.enqueue()</code></p>
-
 ```ts
-enqueue(...args: unknown[]): unknown
+sandkit.engine.api.queue.enqueue(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L15)
@@ -28123,10 +26905,8 @@ Game state first, then method-specific arguments.
 
 #### enqueueInTicks() :id=sandkit.engine.api.queue.enqueueinticks
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.enqueueInTicks()</code></p>
-
 ```ts
-enqueueInTicks(...args: unknown[]): unknown
+sandkit.engine.api.queue.enqueueInTicks(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L20)
@@ -28149,10 +26929,8 @@ Game state first, then method-specific arguments.
 
 #### enqueueSkipTick() :id=sandkit.engine.api.queue.enqueueskiptick
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.enqueueSkipTick()</code></p>
-
 ```ts
-enqueueSkipTick(...args: unknown[]): unknown
+sandkit.engine.api.queue.enqueueSkipTick(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L25)
@@ -28175,10 +26953,8 @@ Game state first, then method-specific arguments.
 
 #### process() :id=sandkit.engine.api.queue.process
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.process()</code></p>
-
 ```ts
-process(...args: unknown[]): unknown
+sandkit.engine.api.queue.process(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L30)
@@ -28201,10 +26977,8 @@ Game state first, then method-specific arguments.
 
 #### registerHandler() :id=sandkit.engine.api.queue.registerhandler
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.registerHandler()</code></p>
-
 ```ts
-registerHandler(...args: unknown[]): unknown
+sandkit.engine.api.queue.registerHandler(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L35)
@@ -28227,10 +27001,8 @@ Game state first, then method-specific arguments.
 
 #### removeByKey() :id=sandkit.engine.api.queue.removebykey
 
-<p class="smt-member-path"><code>sandkit.engine.api.queue.removeByKey()</code></p>
-
 ```ts
-removeByKey(...args: unknown[]): unknown
+sandkit.engine.api.queue.removeByKey(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/queue.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L40)
@@ -28265,10 +27037,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### refresh() :id=sandkit.engine.api.shadows.refresh
 
-<p class="smt-member-path"><code>sandkit.engine.api.shadows.refresh()</code></p>
-
 ```ts
-refresh(...args: unknown[]): unknown
+sandkit.engine.api.shadows.refresh(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/shadows.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L15)
@@ -28291,10 +27061,8 @@ Game state first, then method-specific arguments.
 
 #### refreshRadius() :id=sandkit.engine.api.shadows.refreshradius
 
-<p class="smt-member-path"><code>sandkit.engine.api.shadows.refreshRadius()</code></p>
-
 ```ts
-refreshRadius(...args: unknown[]): unknown
+sandkit.engine.api.shadows.refreshRadius(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/shadows.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L20)
@@ -28317,10 +27085,8 @@ Game state first, then method-specific arguments.
 
 #### refreshRect() :id=sandkit.engine.api.shadows.refreshrect
 
-<p class="smt-member-path"><code>sandkit.engine.api.shadows.refreshRect()</code></p>
-
 ```ts
-refreshRect(...args: unknown[]): unknown
+sandkit.engine.api.shadows.refreshRect(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/shadows.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L25)
@@ -28355,10 +27121,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### getDefaultConfig() :id=sandkit.engine.api.strataform.getdefaultconfig
 
-<p class="smt-member-path"><code>sandkit.engine.api.strataform.getDefaultConfig()</code></p>
-
 ```ts
-getDefaultConfig(...args: unknown[]): unknown
+sandkit.engine.api.strataform.getDefaultConfig(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/strataform.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L15)
@@ -28381,10 +27145,8 @@ Game state first, then method-specific arguments.
 
 #### getRegisteredTypes() :id=sandkit.engine.api.strataform.getregisteredtypes
 
-<p class="smt-member-path"><code>sandkit.engine.api.strataform.getRegisteredTypes()</code></p>
-
 ```ts
-getRegisteredTypes(...args: unknown[]): unknown
+sandkit.engine.api.strataform.getRegisteredTypes(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/strataform.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L20)
@@ -28407,10 +27169,8 @@ Game state first, then method-specific arguments.
 
 #### registerType() :id=sandkit.engine.api.strataform.registertype
 
-<p class="smt-member-path"><code>sandkit.engine.api.strataform.registerType()</code></p>
-
 ```ts
-registerType(...args: unknown[]): unknown
+sandkit.engine.api.strataform.registerType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/strataform.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L25)
@@ -28433,10 +27193,8 @@ Game state first, then method-specific arguments.
 
 #### trigger() :id=sandkit.engine.api.strataform.trigger
 
-<p class="smt-member-path"><code>sandkit.engine.api.strataform.trigger()</code></p>
-
 ```ts
-trigger(...args: unknown[]): unknown
+sandkit.engine.api.strataform.trigger(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/strataform.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L30)
@@ -28459,10 +27217,8 @@ Game state first, then method-specific arguments.
 
 #### triggerByType() :id=sandkit.engine.api.strataform.triggerbytype
 
-<p class="smt-member-path"><code>sandkit.engine.api.strataform.triggerByType()</code></p>
-
 ```ts
-triggerByType(...args: unknown[]): unknown
+sandkit.engine.api.strataform.triggerByType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/strataform.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L35)
@@ -28497,10 +27253,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### decrementConvergenceBuffer() :id=sandkit.engine.api.swarmConsole.decrementconvergencebuffer
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.decrementConvergenceBuffer()</code></p>
-
 ```ts
-decrementConvergenceBuffer(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.decrementConvergenceBuffer(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L15)
@@ -28523,10 +27277,8 @@ Game state first, then method-specific arguments.
 
 #### getCrystalMined() :id=sandkit.engine.api.swarmConsole.getcrystalmined
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getCrystalMined()</code></p>
-
 ```ts
-getCrystalMined(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getCrystalMined(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L20)
@@ -28549,10 +27301,8 @@ Game state first, then method-specific arguments.
 
 #### getDiskRadiusCells() :id=sandkit.engine.api.swarmConsole.getdiskradiuscells
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getDiskRadiusCells()</code></p>
-
 ```ts
-getDiskRadiusCells(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getDiskRadiusCells(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L25)
@@ -28575,10 +27325,8 @@ Game state first, then method-specific arguments.
 
 #### getEntityType() :id=sandkit.engine.api.swarmConsole.getentitytype
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getEntityType()</code></p>
-
 ```ts
-getEntityType(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getEntityType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L30)
@@ -28601,10 +27349,8 @@ Game state first, then method-specific arguments.
 
 #### getNearestConvergence() :id=sandkit.engine.api.swarmConsole.getnearestconvergence
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getNearestConvergence()</code></p>
-
 ```ts
-getNearestConvergence(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getNearestConvergence(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L35)
@@ -28627,10 +27373,8 @@ Game state first, then method-specific arguments.
 
 #### getPendingConvergence() :id=sandkit.engine.api.swarmConsole.getpendingconvergence
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getPendingConvergence()</code></p>
-
 ```ts
-getPendingConvergence(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getPendingConvergence(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L40)
@@ -28653,10 +27397,8 @@ Game state first, then method-specific arguments.
 
 #### getPlacedConsoles() :id=sandkit.engine.api.swarmConsole.getplacedconsoles
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getPlacedConsoles()</code></p>
-
 ```ts
-getPlacedConsoles(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getPlacedConsoles(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L45)
@@ -28679,10 +27421,8 @@ Game state first, then method-specific arguments.
 
 #### getRadiusPx() :id=sandkit.engine.api.swarmConsole.getradiuspx
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.getRadiusPx()</code></p>
-
 ```ts
-getRadiusPx(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.getRadiusPx(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L50)
@@ -28705,10 +27445,8 @@ Game state first, then method-specific arguments.
 
 #### isSpawnJammed() :id=sandkit.engine.api.swarmConsole.isspawnjammed
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.isSpawnJammed()</code></p>
-
 ```ts
-isSpawnJammed(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.isSpawnJammed(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L55)
@@ -28731,10 +27469,8 @@ Game state first, then method-specific arguments.
 
 #### registerEntityType() :id=sandkit.engine.api.swarmConsole.registerentitytype
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.registerEntityType()</code></p>
-
 ```ts
-registerEntityType(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.registerEntityType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L60)
@@ -28757,10 +27493,8 @@ Game state first, then method-specific arguments.
 
 #### resetAllConvergenceBuffers() :id=sandkit.engine.api.swarmConsole.resetallconvergencebuffers
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.resetAllConvergenceBuffers()</code></p>
-
 ```ts
-resetAllConvergenceBuffers(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.resetAllConvergenceBuffers(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L65)
@@ -28783,10 +27517,8 @@ Game state first, then method-specific arguments.
 
 #### setSpawnJammed() :id=sandkit.engine.api.swarmConsole.setspawnjammed
 
-<p class="smt-member-path"><code>sandkit.engine.api.swarmConsole.setSpawnJammed()</code></p>
-
 ```ts
-setSpawnJammed(...args: unknown[]): unknown
+sandkit.engine.api.swarmConsole.setSpawnJammed(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/swarmConsole.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L70)
@@ -28821,10 +27553,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### cancelSelection() :id=sandkit.engine.api.sweeperDrone.cancelselection
 
-<p class="smt-member-path"><code>sandkit.engine.api.sweeperDrone.cancelSelection()</code></p>
-
 ```ts
-cancelSelection(...args: unknown[]): unknown
+sandkit.engine.api.sweeperDrone.cancelSelection(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/sweeperDrone.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/sweeperDrone.d.ts#L15)
@@ -28859,10 +27589,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### add() :id=sandkit.engine.api.teleportZones.add
 
-<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.add()</code></p>
-
 ```ts
-add(...args: unknown[]): unknown
+sandkit.engine.api.teleportZones.add(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/teleportZones.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L15)
@@ -28885,10 +27613,8 @@ Game state first, then method-specific arguments.
 
 #### getAll() :id=sandkit.engine.api.teleportZones.getall
 
-<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.getAll()</code></p>
-
 ```ts
-getAll(...args: unknown[]): unknown
+sandkit.engine.api.teleportZones.getAll(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/teleportZones.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L20)
@@ -28911,10 +27637,8 @@ Game state first, then method-specific arguments.
 
 #### getAtCell() :id=sandkit.engine.api.teleportZones.getatcell
 
-<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.getAtCell()</code></p>
-
 ```ts
-getAtCell(...args: unknown[]): unknown
+sandkit.engine.api.teleportZones.getAtCell(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/teleportZones.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L25)
@@ -28937,10 +27661,8 @@ Game state first, then method-specific arguments.
 
 #### getById() :id=sandkit.engine.api.teleportZones.getbyid
 
-<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.getById()</code></p>
-
 ```ts
-getById(...args: unknown[]): unknown
+sandkit.engine.api.teleportZones.getById(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/teleportZones.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L30)
@@ -28963,10 +27685,8 @@ Game state first, then method-specific arguments.
 
 #### remove() :id=sandkit.engine.api.teleportZones.remove
 
-<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.remove()</code></p>
-
 ```ts
-remove(...args: unknown[]): unknown
+sandkit.engine.api.teleportZones.remove(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/teleportZones.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L35)
@@ -28989,10 +27709,8 @@ Game state first, then method-specific arguments.
 
 #### spawnDefaultParticles() :id=sandkit.engine.api.teleportZones.spawndefaultparticles
 
-<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.spawnDefaultParticles()</code></p>
-
 ```ts
-spawnDefaultParticles(...args: unknown[]): unknown
+sandkit.engine.api.teleportZones.spawnDefaultParticles(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/teleportZones.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L40)
@@ -29015,10 +27733,8 @@ Game state first, then method-specific arguments.
 
 #### teleportPlayerTo() :id=sandkit.engine.api.teleportZones.teleportplayerto
 
-<p class="smt-member-path"><code>sandkit.engine.api.teleportZones.teleportPlayerTo()</code></p>
-
 ```ts
-teleportPlayerTo(...args: unknown[]): unknown
+sandkit.engine.api.teleportZones.teleportPlayerTo(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/teleportZones.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L45)
@@ -29053,10 +27769,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### areAllTargetsBuilt() :id=sandkit.engine.api.tutorialBuild.arealltargetsbuilt
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.areAllTargetsBuilt()</code></p>
-
 ```ts
-areAllTargetsBuilt(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.areAllTargetsBuilt(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L15)
@@ -29079,10 +27793,8 @@ Game state first, then method-specific arguments.
 
 #### areFamilyTargetsBuilt() :id=sandkit.engine.api.tutorialBuild.arefamilytargetsbuilt
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt()</code></p>
-
 ```ts
-areFamilyTargetsBuilt(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L20)
@@ -29105,10 +27817,8 @@ Game state first, then method-specific arguments.
 
 #### canPlaceAtActiveTarget() :id=sandkit.engine.api.tutorialBuild.canplaceatactivetarget
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget()</code></p>
-
 ```ts
-canPlaceAtActiveTarget(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L25)
@@ -29131,10 +27841,8 @@ Game state first, then method-specific arguments.
 
 #### getFoundationMoveDests() :id=sandkit.engine.api.tutorialBuild.getfoundationmovedests
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.getFoundationMoveDests()</code></p>
-
 ```ts
-getFoundationMoveDests(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.getFoundationMoveDests(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L30)
@@ -29157,10 +27865,8 @@ Game state first, then method-specific arguments.
 
 #### getFoundationMoveSources() :id=sandkit.engine.api.tutorialBuild.getfoundationmovesources
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.getFoundationMoveSources()</code></p>
-
 ```ts
-getFoundationMoveSources(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.getFoundationMoveSources(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L35)
@@ -29183,10 +27889,8 @@ Game state first, then method-specific arguments.
 
 #### getTargets() :id=sandkit.engine.api.tutorialBuild.gettargets
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.getTargets()</code></p>
-
 ```ts
-getTargets(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.getTargets(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L40)
@@ -29209,10 +27913,8 @@ Game state first, then method-specific arguments.
 
 #### hasDefinition() :id=sandkit.engine.api.tutorialBuild.hasdefinition
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.hasDefinition()</code></p>
-
 ```ts
-hasDefinition(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.hasDefinition(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L45)
@@ -29235,10 +27937,8 @@ Game state first, then method-specific arguments.
 
 #### isStepConstrained() :id=sandkit.engine.api.tutorialBuild.isstepconstrained
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.isStepConstrained()</code></p>
-
 ```ts
-isStepConstrained(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.isStepConstrained(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L50)
@@ -29261,10 +27961,8 @@ Game state first, then method-specific arguments.
 
 #### matchesFoundationMove() :id=sandkit.engine.api.tutorialBuild.matchesfoundationmove
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.matchesFoundationMove()</code></p>
-
 ```ts
-matchesFoundationMove(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.matchesFoundationMove(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L55)
@@ -29287,10 +27985,8 @@ Game state first, then method-specific arguments.
 
 #### matchesFoundationRemove() :id=sandkit.engine.api.tutorialBuild.matchesfoundationremove
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.matchesFoundationRemove()</code></p>
-
 ```ts
-matchesFoundationRemove(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.matchesFoundationRemove(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L60)
@@ -29313,10 +28009,8 @@ Game state first, then method-specific arguments.
 
 #### shouldProtectActiveTargetAt() :id=sandkit.engine.api.tutorialBuild.shouldprotectactivetargetat
 
-<p class="smt-member-path"><code>sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt()</code></p>
-
 ```ts
-shouldProtectActiveTargetAt(...args: unknown[]): unknown
+sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/tutorialBuild.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L65)
@@ -29351,10 +28045,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### clear() :id=sandkit.engine.api.usageTracker.clear
 
-<p class="smt-member-path"><code>sandkit.engine.api.usageTracker.clear()</code></p>
-
 ```ts
-clear(...args: unknown[]): unknown
+sandkit.engine.api.usageTracker.clear(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/usageTracker.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L15)
@@ -29377,10 +28069,8 @@ Game state first, then method-specific arguments.
 
 #### getLatest() :id=sandkit.engine.api.usageTracker.getlatest
 
-<p class="smt-member-path"><code>sandkit.engine.api.usageTracker.getLatest()</code></p>
-
 ```ts
-getLatest(...args: unknown[]): unknown
+sandkit.engine.api.usageTracker.getLatest(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/usageTracker.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L20)
@@ -29403,10 +28093,8 @@ Game state first, then method-specific arguments.
 
 #### getMostUsed() :id=sandkit.engine.api.usageTracker.getmostused
 
-<p class="smt-member-path"><code>sandkit.engine.api.usageTracker.getMostUsed()</code></p>
-
 ```ts
-getMostUsed(...args: unknown[]): unknown
+sandkit.engine.api.usageTracker.getMostUsed(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/usageTracker.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L25)
@@ -29441,10 +28129,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 #### getPaletteData() :id=sandkit.engine.api.wall.getpalettedata
 
-<p class="smt-member-path"><code>sandkit.engine.api.wall.getPaletteData()</code></p>
-
 ```ts
-getPaletteData(...args: unknown[]): unknown
+sandkit.engine.api.wall.getPaletteData(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/wall.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L15)
@@ -29467,10 +28153,8 @@ Game state first, then method-specific arguments.
 
 #### getWallDataAt() :id=sandkit.engine.api.wall.getwalldataat
 
-<p class="smt-member-path"><code>sandkit.engine.api.wall.getWallDataAt()</code></p>
-
 ```ts
-getWallDataAt(...args: unknown[]): unknown
+sandkit.engine.api.wall.getWallDataAt(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/wall.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L20)
@@ -29493,10 +28177,8 @@ Game state first, then method-specific arguments.
 
 #### getWallDataSize() :id=sandkit.engine.api.wall.getwalldatasize
 
-<p class="smt-member-path"><code>sandkit.engine.api.wall.getWallDataSize()</code></p>
-
 ```ts
-getWallDataSize(...args: unknown[]): unknown
+sandkit.engine.api.wall.getWallDataSize(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/wall.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L25)
@@ -29519,10 +28201,8 @@ Game state first, then method-specific arguments.
 
 #### setWallDataAt() :id=sandkit.engine.api.wall.setwalldataat
 
-<p class="smt-member-path"><code>sandkit.engine.api.wall.setWallDataAt()</code></p>
-
 ```ts
-setWallDataAt(...args: unknown[]): unknown
+sandkit.engine.api.wall.setWallDataAt(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/wall.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L30)
@@ -29556,10 +28236,8 @@ Available on worker threads only. Values do not persist across workers.
 
 #### clear() :id=sandkit.engine.api.workerLocal.clear
 
-<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.clear()</code></p>
-
 ```ts
-clear(...args: unknown[]): unknown
+sandkit.engine.api.workerLocal.clear(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/workerLocal.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L14)
@@ -29582,10 +28260,8 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 #### get() :id=sandkit.engine.api.workerLocal.get
 
-<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.get()</code></p>
-
 ```ts
-get(...args: unknown[]): unknown
+sandkit.engine.api.workerLocal.get(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/workerLocal.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L19)
@@ -29608,10 +28284,8 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 #### getOrInit() :id=sandkit.engine.api.workerLocal.getorinit
 
-<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.getOrInit()</code></p>
-
 ```ts
-getOrInit(...args: unknown[]): unknown
+sandkit.engine.api.workerLocal.getOrInit(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/workerLocal.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L24)
@@ -29634,10 +28308,8 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 #### set() :id=sandkit.engine.api.workerLocal.set
 
-<p class="smt-member-path"><code>sandkit.engine.api.workerLocal.set()</code></p>
-
 ```ts
-set(...args: unknown[]): unknown
+sandkit.engine.api.workerLocal.set(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/workerLocal.d.ts:29](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L29)
@@ -29688,9 +28360,7 @@ Worker-local context first on workers; otherwise game state first, then method-s
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
-#### SandkitEnums :id=sandkit.enums.sandkitenums
-
-<p class="smt-member-path"><code>sandkit.enums.SandkitEnums</code></p>
+#### sandkit.enums :id=sandkit.enums.sandkitenums
 
 ```ts
 SandkitEnums = object
@@ -29902,10 +28572,8 @@ Item ability categories (dig, shoot, spray, laser).
 
 #### Dig :id=sandkit.enums.AbilityType.dig
 
-<p class="smt-member-path"><code>sandkit.enums.AbilityType.Dig</code></p>
-
 ```ts
-Dig: 1
+sandkit.enums.AbilityType.Dig: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L10)
@@ -29914,10 +28582,8 @@ Defined in: [sandkit/enums/index.d.ts:10](https://github.com/sandustry-modding/S
 
 #### Shoot :id=sandkit.enums.AbilityType.shoot
 
-<p class="smt-member-path"><code>sandkit.enums.AbilityType.Shoot</code></p>
-
 ```ts
-Shoot: 2
+sandkit.enums.AbilityType.Shoot: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L11)
@@ -29926,10 +28592,8 @@ Defined in: [sandkit/enums/index.d.ts:11](https://github.com/sandustry-modding/S
 
 #### Spray :id=sandkit.enums.AbilityType.spray
 
-<p class="smt-member-path"><code>sandkit.enums.AbilityType.Spray</code></p>
-
 ```ts
-Spray: 3
+sandkit.enums.AbilityType.Spray: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L12)
@@ -29938,10 +28602,8 @@ Defined in: [sandkit/enums/index.d.ts:12](https://github.com/sandustry-modding/S
 
 #### Laser :id=sandkit.enums.AbilityType.laser
 
-<p class="smt-member-path"><code>sandkit.enums.AbilityType.Laser</code></p>
-
 ```ts
-Laser: 4
+sandkit.enums.AbilityType.Laser: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:13](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L13)
@@ -29958,10 +28620,8 @@ Phases of a held or repeated player action.
 
 #### Start :id=sandkit.enums.ActionState.start
 
-<p class="smt-member-path"><code>sandkit.enums.ActionState.Start</code></p>
-
 ```ts
-Start: 1
+sandkit.enums.ActionState.Start: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L18)
@@ -29970,10 +28630,8 @@ Defined in: [sandkit/enums/index.d.ts:18](https://github.com/sandustry-modding/S
 
 #### Active :id=sandkit.enums.ActionState.active
 
-<p class="smt-member-path"><code>sandkit.enums.ActionState.Active</code></p>
-
 ```ts
-Active: 2
+sandkit.enums.ActionState.Active: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:19](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L19)
@@ -29982,10 +28640,8 @@ Defined in: [sandkit/enums/index.d.ts:19](https://github.com/sandustry-modding/S
 
 #### End :id=sandkit.enums.ActionState.end
 
-<p class="smt-member-path"><code>sandkit.enums.ActionState.End</code></p>
-
 ```ts
-End: 3
+sandkit.enums.ActionState.End: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L20)
@@ -30002,10 +28658,8 @@ High-level action channel (weapon, building, tool, mod).
 
 #### Weapon :id=sandkit.enums.ActionType.weapon
 
-<p class="smt-member-path"><code>sandkit.enums.ActionType.Weapon</code></p>
-
 ```ts
-Weapon: 1
+sandkit.enums.ActionType.Weapon: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L25)
@@ -30014,10 +28668,8 @@ Defined in: [sandkit/enums/index.d.ts:25](https://github.com/sandustry-modding/S
 
 #### Building :id=sandkit.enums.ActionType.building
 
-<p class="smt-member-path"><code>sandkit.enums.ActionType.Building</code></p>
-
 ```ts
-Building: 2
+sandkit.enums.ActionType.Building: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L26)
@@ -30026,10 +28678,8 @@ Defined in: [sandkit/enums/index.d.ts:26](https://github.com/sandustry-modding/S
 
 #### Tool :id=sandkit.enums.ActionType.tool
 
-<p class="smt-member-path"><code>sandkit.enums.ActionType.Tool</code></p>
-
 ```ts
-Tool: 3
+sandkit.enums.ActionType.Tool: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:27](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L27)
@@ -30038,10 +28688,8 @@ Defined in: [sandkit/enums/index.d.ts:27](https://github.com/sandustry-modding/S
 
 #### Mod :id=sandkit.enums.ActionType.mod
 
-<p class="smt-member-path"><code>sandkit.enums.ActionType.Mod</code></p>
-
 ```ts
-Mod: 4
+sandkit.enums.ActionType.Mod: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L28)
@@ -30058,10 +28706,8 @@ Zone rules that restrict player abilities.
 
 #### NoJetpack :id=sandkit.enums.AuthorizationType.nojetpack
 
-<p class="smt-member-path"><code>sandkit.enums.AuthorizationType.NoJetpack</code></p>
-
 ```ts
-NoJetpack: 1
+sandkit.enums.AuthorizationType.NoJetpack: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L33)
@@ -30070,10 +28716,8 @@ Defined in: [sandkit/enums/index.d.ts:33](https://github.com/sandustry-modding/S
 
 #### NoGrab :id=sandkit.enums.AuthorizationType.nograb
 
-<p class="smt-member-path"><code>sandkit.enums.AuthorizationType.NoGrab</code></p>
-
 ```ts
-NoGrab: 2
+sandkit.enums.AuthorizationType.NoGrab: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L34)
@@ -30082,10 +28726,8 @@ Defined in: [sandkit/enums/index.d.ts:34](https://github.com/sandustry-modding/S
 
 #### NoBuild :id=sandkit.enums.AuthorizationType.nobuild
 
-<p class="smt-member-path"><code>sandkit.enums.AuthorizationType.NoBuild</code></p>
-
 ```ts
-NoBuild: 3
+sandkit.enums.AuthorizationType.NoBuild: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L35)
@@ -30094,10 +28736,8 @@ Defined in: [sandkit/enums/index.d.ts:35](https://github.com/sandustry-modding/S
 
 #### NoTool :id=sandkit.enums.AuthorizationType.notool
 
-<p class="smt-member-path"><code>sandkit.enums.AuthorizationType.NoTool</code></p>
-
 ```ts
-NoTool: 4
+sandkit.enums.AuthorizationType.NoTool: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L36)
@@ -30106,10 +28746,8 @@ Defined in: [sandkit/enums/index.d.ts:36](https://github.com/sandustry-modding/S
 
 #### NoExcavation :id=sandkit.enums.AuthorizationType.noexcavation
 
-<p class="smt-member-path"><code>sandkit.enums.AuthorizationType.NoExcavation</code></p>
-
 ```ts
-NoExcavation: 5
+sandkit.enums.AuthorizationType.NoExcavation: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L37)
@@ -30118,10 +28756,8 @@ Defined in: [sandkit/enums/index.d.ts:37](https://github.com/sandustry-modding/S
 
 #### NoToolExceptFlamethrower :id=sandkit.enums.AuthorizationType.notoolexceptflamethrower
 
-<p class="smt-member-path"><code>sandkit.enums.AuthorizationType.NoToolExceptFlamethrower</code></p>
-
 ```ts
-NoToolExceptFlamethrower: 6
+sandkit.enums.AuthorizationType.NoToolExceptFlamethrower: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L38)
@@ -30138,10 +28774,8 @@ Result of a build placement check.
 
 #### Available :id=sandkit.enums.BuildingClearance.available
 
-<p class="smt-member-path"><code>sandkit.enums.BuildingClearance.Available</code></p>
-
 ```ts
-Available: 1
+sandkit.enums.BuildingClearance.Available: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L49)
@@ -30150,10 +28784,8 @@ Defined in: [sandkit/enums/index.d.ts:49](https://github.com/sandustry-modding/S
 
 #### FullyBlocked :id=sandkit.enums.BuildingClearance.fullyblocked
 
-<p class="smt-member-path"><code>sandkit.enums.BuildingClearance.FullyBlocked</code></p>
-
 ```ts
-FullyBlocked: 2
+sandkit.enums.BuildingClearance.FullyBlocked: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L50)
@@ -30162,10 +28794,8 @@ Defined in: [sandkit/enums/index.d.ts:50](https://github.com/sandustry-modding/S
 
 #### PartiallyBlocked :id=sandkit.enums.BuildingClearance.partiallyblocked
 
-<p class="smt-member-path"><code>sandkit.enums.BuildingClearance.PartiallyBlocked</code></p>
-
 ```ts
-PartiallyBlocked: 3
+sandkit.enums.BuildingClearance.PartiallyBlocked: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L51)
@@ -30174,10 +28804,8 @@ Defined in: [sandkit/enums/index.d.ts:51](https://github.com/sandustry-modding/S
 
 #### CanBeReplaced :id=sandkit.enums.BuildingClearance.canbereplaced
 
-<p class="smt-member-path"><code>sandkit.enums.BuildingClearance.CanBeReplaced</code></p>
-
 ```ts
-CanBeReplaced: 4
+sandkit.enums.BuildingClearance.CanBeReplaced: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L52)
@@ -30194,10 +28822,8 @@ Linear vs rectangular structure placement.
 
 #### Linear :id=sandkit.enums.BuildMode.linear
 
-<p class="smt-member-path"><code>sandkit.enums.BuildMode.Linear</code></p>
-
 ```ts
-Linear: 1
+sandkit.enums.BuildMode.Linear: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L43)
@@ -30206,10 +28832,8 @@ Defined in: [sandkit/enums/index.d.ts:43](https://github.com/sandustry-modding/S
 
 #### Rectangular :id=sandkit.enums.BuildMode.rectangular
 
-<p class="smt-member-path"><code>sandkit.enums.BuildMode.Rectangular</code></p>
-
 ```ts
-Rectangular: 2
+sandkit.enums.BuildMode.Rectangular: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L44)
@@ -30226,10 +28850,8 @@ Terrain / special cell kinds in the simulation grid.
 
 #### Empty :id=sandkit.enums.CellType.empty
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Empty</code></p>
-
 ```ts
-Empty: 0
+sandkit.enums.CellType.Empty: 0
 ```
 
 Defined in: [sandkit/enums/index.d.ts:57](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L57)
@@ -30238,10 +28860,8 @@ Defined in: [sandkit/enums/index.d.ts:57](https://github.com/sandustry-modding/S
 
 #### Element :id=sandkit.enums.CellType.element
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Element</code></p>
-
 ```ts
-Element: 1
+sandkit.enums.CellType.Element: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L58)
@@ -30250,10 +28870,8 @@ Defined in: [sandkit/enums/index.d.ts:58](https://github.com/sandustry-modding/S
 
 #### Dirt :id=sandkit.enums.CellType.dirt
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Dirt</code></p>
-
 ```ts
-Dirt: 2
+sandkit.enums.CellType.Dirt: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L59)
@@ -30262,10 +28880,8 @@ Defined in: [sandkit/enums/index.d.ts:59](https://github.com/sandustry-modding/S
 
 #### SporeSoil :id=sandkit.enums.CellType.sporesoil
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.SporeSoil</code></p>
-
 ```ts
-SporeSoil: 3
+sandkit.enums.CellType.SporeSoil: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L60)
@@ -30274,10 +28890,8 @@ Defined in: [sandkit/enums/index.d.ts:60](https://github.com/sandustry-modding/S
 
 #### Fog :id=sandkit.enums.CellType.fog
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Fog</code></p>
-
 ```ts
-Fog: 4
+sandkit.enums.CellType.Fog: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L61)
@@ -30286,10 +28900,8 @@ Defined in: [sandkit/enums/index.d.ts:61](https://github.com/sandustry-modding/S
 
 #### FogJetpackBlock :id=sandkit.enums.CellType.fogjetpackblock
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.FogJetpackBlock</code></p>
-
 ```ts
-FogJetpackBlock: 5
+sandkit.enums.CellType.FogJetpackBlock: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L62)
@@ -30298,10 +28910,8 @@ Defined in: [sandkit/enums/index.d.ts:62](https://github.com/sandustry-modding/S
 
 #### FogWater :id=sandkit.enums.CellType.fogwater
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.FogWater</code></p>
-
 ```ts
-FogWater: 6
+sandkit.enums.CellType.FogWater: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L63)
@@ -30310,10 +28920,8 @@ Defined in: [sandkit/enums/index.d.ts:63](https://github.com/sandustry-modding/S
 
 #### FreezingIceSoil :id=sandkit.enums.CellType.freezingicesoil
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.FreezingIceSoil</code></p>
-
 ```ts
-FreezingIceSoil: 7
+sandkit.enums.CellType.FreezingIceSoil: 7
 ```
 
 Defined in: [sandkit/enums/index.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L64)
@@ -30322,10 +28930,8 @@ Defined in: [sandkit/enums/index.d.ts:64](https://github.com/sandustry-modding/S
 
 #### Divider :id=sandkit.enums.CellType.divider
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Divider</code></p>
-
 ```ts
-Divider: 8
+sandkit.enums.CellType.Divider: 8
 ```
 
 Defined in: [sandkit/enums/index.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L65)
@@ -30334,10 +28940,8 @@ Defined in: [sandkit/enums/index.d.ts:65](https://github.com/sandustry-modding/S
 
 #### Grass :id=sandkit.enums.CellType.grass
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Grass</code></p>
-
 ```ts
-Grass: 9
+sandkit.enums.CellType.Grass: 9
 ```
 
 Defined in: [sandkit/enums/index.d.ts:66](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L66)
@@ -30346,10 +28950,8 @@ Defined in: [sandkit/enums/index.d.ts:66](https://github.com/sandustry-modding/S
 
 #### Moss :id=sandkit.enums.CellType.moss
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Moss</code></p>
-
 ```ts
-Moss: 10
+sandkit.enums.CellType.Moss: 10
 ```
 
 Defined in: [sandkit/enums/index.d.ts:67](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L67)
@@ -30358,10 +28960,8 @@ Defined in: [sandkit/enums/index.d.ts:67](https://github.com/sandustry-modding/S
 
 #### GoldSoil :id=sandkit.enums.CellType.goldsoil
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.GoldSoil</code></p>
-
 ```ts
-GoldSoil: 11
+sandkit.enums.CellType.GoldSoil: 11
 ```
 
 Defined in: [sandkit/enums/index.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L68)
@@ -30370,10 +28970,8 @@ Defined in: [sandkit/enums/index.d.ts:68](https://github.com/sandustry-modding/S
 
 #### Petal :id=sandkit.enums.CellType.petal
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Petal</code></p>
-
 ```ts
-Petal: 12
+sandkit.enums.CellType.Petal: 12
 ```
 
 Defined in: [sandkit/enums/index.d.ts:69](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L69)
@@ -30382,10 +28980,8 @@ Defined in: [sandkit/enums/index.d.ts:69](https://github.com/sandustry-modding/S
 
 #### FogLava :id=sandkit.enums.CellType.foglava
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.FogLava</code></p>
-
 ```ts
-FogLava: 13
+sandkit.enums.CellType.FogLava: 13
 ```
 
 Defined in: [sandkit/enums/index.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L70)
@@ -30394,10 +28990,8 @@ Defined in: [sandkit/enums/index.d.ts:70](https://github.com/sandustry-modding/S
 
 #### Fluxite :id=sandkit.enums.CellType.fluxite
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Fluxite</code></p>
-
 ```ts
-Fluxite: 14
+sandkit.enums.CellType.Fluxite: 14
 ```
 
 Defined in: [sandkit/enums/index.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L71)
@@ -30406,10 +29000,8 @@ Defined in: [sandkit/enums/index.d.ts:71](https://github.com/sandustry-modding/S
 
 #### Block :id=sandkit.enums.CellType.block
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Block</code></p>
-
 ```ts
-Block: 15
+sandkit.enums.CellType.Block: 15
 ```
 
 Defined in: [sandkit/enums/index.d.ts:72](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L72)
@@ -30418,10 +29010,8 @@ Defined in: [sandkit/enums/index.d.ts:72](https://github.com/sandustry-modding/S
 
 #### SlidingBlock :id=sandkit.enums.CellType.slidingblock
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.SlidingBlock</code></p>
-
 ```ts
-SlidingBlock: 16
+sandkit.enums.CellType.SlidingBlock: 16
 ```
 
 Defined in: [sandkit/enums/index.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L73)
@@ -30430,10 +29020,8 @@ Defined in: [sandkit/enums/index.d.ts:73](https://github.com/sandustry-modding/S
 
 #### SlidingBlockLeft :id=sandkit.enums.CellType.slidingblockleft
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.SlidingBlockLeft</code></p>
-
 ```ts
-SlidingBlockLeft: 17
+sandkit.enums.CellType.SlidingBlockLeft: 17
 ```
 
 Defined in: [sandkit/enums/index.d.ts:74](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L74)
@@ -30442,10 +29030,8 @@ Defined in: [sandkit/enums/index.d.ts:74](https://github.com/sandustry-modding/S
 
 #### SlidingBlockRight :id=sandkit.enums.CellType.slidingblockright
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.SlidingBlockRight</code></p>
-
 ```ts
-SlidingBlockRight: 18
+sandkit.enums.CellType.SlidingBlockRight: 18
 ```
 
 Defined in: [sandkit/enums/index.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L75)
@@ -30454,10 +29040,8 @@ Defined in: [sandkit/enums/index.d.ts:75](https://github.com/sandustry-modding/S
 
 #### ConveyorLeft :id=sandkit.enums.CellType.conveyorleft
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.ConveyorLeft</code></p>
-
 ```ts
-ConveyorLeft: 19
+sandkit.enums.CellType.ConveyorLeft: 19
 ```
 
 Defined in: [sandkit/enums/index.d.ts:76](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L76)
@@ -30466,10 +29050,8 @@ Defined in: [sandkit/enums/index.d.ts:76](https://github.com/sandustry-modding/S
 
 #### ConveyorRight :id=sandkit.enums.CellType.conveyorright
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.ConveyorRight</code></p>
-
 ```ts
-ConveyorRight: 20
+sandkit.enums.CellType.ConveyorRight: 20
 ```
 
 Defined in: [sandkit/enums/index.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L77)
@@ -30478,10 +29060,8 @@ Defined in: [sandkit/enums/index.d.ts:77](https://github.com/sandustry-modding/S
 
 #### ShakerLeft :id=sandkit.enums.CellType.shakerleft
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.ShakerLeft</code></p>
-
 ```ts
-ShakerLeft: 21
+sandkit.enums.CellType.ShakerLeft: 21
 ```
 
 Defined in: [sandkit/enums/index.d.ts:78](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L78)
@@ -30490,10 +29070,8 @@ Defined in: [sandkit/enums/index.d.ts:78](https://github.com/sandustry-modding/S
 
 #### ShakerRight :id=sandkit.enums.CellType.shakerright
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.ShakerRight</code></p>
-
 ```ts
-ShakerRight: 22
+sandkit.enums.CellType.ShakerRight: 22
 ```
 
 Defined in: [sandkit/enums/index.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L79)
@@ -30502,10 +29080,8 @@ Defined in: [sandkit/enums/index.d.ts:79](https://github.com/sandustry-modding/S
 
 #### Stone :id=sandkit.enums.CellType.stone
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Stone</code></p>
-
 ```ts
-Stone: 23
+sandkit.enums.CellType.Stone: 23
 ```
 
 Defined in: [sandkit/enums/index.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L80)
@@ -30514,10 +29090,8 @@ Defined in: [sandkit/enums/index.d.ts:80](https://github.com/sandustry-modding/S
 
 #### VelocitySoaker :id=sandkit.enums.CellType.velocitysoaker
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.VelocitySoaker</code></p>
-
 ```ts
-VelocitySoaker: 24
+sandkit.enums.CellType.VelocitySoaker: 24
 ```
 
 Defined in: [sandkit/enums/index.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L81)
@@ -30526,10 +29100,8 @@ Defined in: [sandkit/enums/index.d.ts:81](https://github.com/sandustry-modding/S
 
 #### Ice :id=sandkit.enums.CellType.ice
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Ice</code></p>
-
 ```ts
-Ice: 25
+sandkit.enums.CellType.Ice: 25
 ```
 
 Defined in: [sandkit/enums/index.d.ts:82](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L82)
@@ -30538,10 +29110,8 @@ Defined in: [sandkit/enums/index.d.ts:82](https://github.com/sandustry-modding/S
 
 #### Grower :id=sandkit.enums.CellType.grower
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Grower</code></p>
-
 ```ts
-Grower: 26
+sandkit.enums.CellType.Grower: 26
 ```
 
 Defined in: [sandkit/enums/index.d.ts:83](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L83)
@@ -30550,10 +29120,8 @@ Defined in: [sandkit/enums/index.d.ts:83](https://github.com/sandustry-modding/S
 
 #### NascentWater :id=sandkit.enums.CellType.nascentwater
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.NascentWater</code></p>
-
 ```ts
-NascentWater: 27
+sandkit.enums.CellType.NascentWater: 27
 ```
 
 Defined in: [sandkit/enums/index.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L84)
@@ -30562,10 +29130,8 @@ Defined in: [sandkit/enums/index.d.ts:84](https://github.com/sandustry-modding/S
 
 #### SandiumSoil :id=sandkit.enums.CellType.sandiumsoil
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.SandiumSoil</code></p>
-
 ```ts
-SandiumSoil: 28
+sandkit.enums.CellType.SandiumSoil: 28
 ```
 
 Defined in: [sandkit/enums/index.d.ts:85](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L85)
@@ -30574,10 +29140,8 @@ Defined in: [sandkit/enums/index.d.ts:85](https://github.com/sandustry-modding/S
 
 #### Obsidian :id=sandkit.enums.CellType.obsidian
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Obsidian</code></p>
-
 ```ts
-Obsidian: 29
+sandkit.enums.CellType.Obsidian: 29
 ```
 
 Defined in: [sandkit/enums/index.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L86)
@@ -30586,10 +29150,8 @@ Defined in: [sandkit/enums/index.d.ts:86](https://github.com/sandustry-modding/S
 
 #### Crackstone :id=sandkit.enums.CellType.crackstone
 
-<p class="smt-member-path"><code>sandkit.enums.CellType.Crackstone</code></p>
-
 ```ts
-Crackstone: 30
+sandkit.enums.CellType.Crackstone: 30
 ```
 
 Defined in: [sandkit/enums/index.d.ts:87](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L87)
@@ -30606,10 +29168,8 @@ UI component ids for HUD and menu routing.
 
 #### Hotbar :id=sandkit.enums.ComponentId.hotbar
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Hotbar</code></p>
-
 ```ts
-Hotbar: 1
+sandkit.enums.ComponentId.Hotbar: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L92)
@@ -30618,10 +29178,8 @@ Defined in: [sandkit/enums/index.d.ts:92](https://github.com/sandustry-modding/S
 
 #### SoundBoxConfig :id=sandkit.enums.ComponentId.soundboxconfig
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.SoundBoxConfig</code></p>
-
 ```ts
-SoundBoxConfig: 2
+sandkit.enums.ComponentId.SoundBoxConfig: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:93](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L93)
@@ -30630,10 +29188,8 @@ Defined in: [sandkit/enums/index.d.ts:93](https://github.com/sandustry-modding/S
 
 #### Root :id=sandkit.enums.ComponentId.root
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Root</code></p>
-
 ```ts
-Root: 4
+sandkit.enums.ComponentId.Root: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L94)
@@ -30642,10 +29198,8 @@ Defined in: [sandkit/enums/index.d.ts:94](https://github.com/sandustry-modding/S
 
 #### Menu :id=sandkit.enums.ComponentId.menu
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Menu</code></p>
-
 ```ts
-Menu: 5
+sandkit.enums.ComponentId.Menu: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L95)
@@ -30654,10 +29208,8 @@ Defined in: [sandkit/enums/index.d.ts:95](https://github.com/sandustry-modding/S
 
 #### Management :id=sandkit.enums.ComponentId.management
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Management</code></p>
-
 ```ts
-Management: 6
+sandkit.enums.ComponentId.Management: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L96)
@@ -30666,10 +29218,8 @@ Defined in: [sandkit/enums/index.d.ts:96](https://github.com/sandustry-modding/S
 
 #### FilterConfig :id=sandkit.enums.ComponentId.filterconfig
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.FilterConfig</code></p>
-
 ```ts
-FilterConfig: 7
+sandkit.enums.ComponentId.FilterConfig: 7
 ```
 
 Defined in: [sandkit/enums/index.d.ts:97](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L97)
@@ -30678,10 +29228,8 @@ Defined in: [sandkit/enums/index.d.ts:97](https://github.com/sandustry-modding/S
 
 #### Resources :id=sandkit.enums.ComponentId.resources
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Resources</code></p>
-
 ```ts
-Resources: 8
+sandkit.enums.ComponentId.Resources: 8
 ```
 
 Defined in: [sandkit/enums/index.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L98)
@@ -30690,10 +29238,8 @@ Defined in: [sandkit/enums/index.d.ts:98](https://github.com/sandustry-modding/S
 
 #### TechTree :id=sandkit.enums.ComponentId.techtree
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.TechTree</code></p>
-
 ```ts
-TechTree: 9
+sandkit.enums.ComponentId.TechTree: 9
 ```
 
 Defined in: [sandkit/enums/index.d.ts:99](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L99)
@@ -30702,10 +29248,8 @@ Defined in: [sandkit/enums/index.d.ts:99](https://github.com/sandustry-modding/S
 
 #### Tutorial :id=sandkit.enums.ComponentId.tutorial
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Tutorial</code></p>
-
 ```ts
-Tutorial: 10
+sandkit.enums.ComponentId.Tutorial: 10
 ```
 
 Defined in: [sandkit/enums/index.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L100)
@@ -30714,10 +29258,8 @@ Defined in: [sandkit/enums/index.d.ts:100](https://github.com/sandustry-modding/
 
 #### Loader :id=sandkit.enums.ComponentId.loader
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Loader</code></p>
-
 ```ts
-Loader: 11
+sandkit.enums.ComponentId.Loader: 11
 ```
 
 Defined in: [sandkit/enums/index.d.ts:101](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L101)
@@ -30726,10 +29268,8 @@ Defined in: [sandkit/enums/index.d.ts:101](https://github.com/sandustry-modding/
 
 #### Options :id=sandkit.enums.ComponentId.options
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Options</code></p>
-
 ```ts
-Options: 12
+sandkit.enums.ComponentId.Options: 12
 ```
 
 Defined in: [sandkit/enums/index.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L102)
@@ -30738,10 +29278,8 @@ Defined in: [sandkit/enums/index.d.ts:102](https://github.com/sandustry-modding/
 
 #### ShortcutHelper :id=sandkit.enums.ComponentId.shortcuthelper
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.ShortcutHelper</code></p>
-
 ```ts
-ShortcutHelper: 13
+sandkit.enums.ComponentId.ShortcutHelper: 13
 ```
 
 Defined in: [sandkit/enums/index.d.ts:103](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L103)
@@ -30750,10 +29288,8 @@ Defined in: [sandkit/enums/index.d.ts:103](https://github.com/sandustry-modding/
 
 #### Upgrades :id=sandkit.enums.ComponentId.upgrades
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Upgrades</code></p>
-
 ```ts
-Upgrades: 14
+sandkit.enums.ComponentId.Upgrades: 14
 ```
 
 Defined in: [sandkit/enums/index.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L104)
@@ -30762,10 +29298,8 @@ Defined in: [sandkit/enums/index.d.ts:104](https://github.com/sandustry-modding/
 
 #### Tooltip :id=sandkit.enums.ComponentId.tooltip
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Tooltip</code></p>
-
 ```ts
-Tooltip: 15
+sandkit.enums.ComponentId.Tooltip: 15
 ```
 
 Defined in: [sandkit/enums/index.d.ts:105](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L105)
@@ -30774,10 +29308,8 @@ Defined in: [sandkit/enums/index.d.ts:105](https://github.com/sandustry-modding/
 
 #### Notifications :id=sandkit.enums.ComponentId.notifications
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Notifications</code></p>
-
 ```ts
-Notifications: 16
+sandkit.enums.ComponentId.Notifications: 16
 ```
 
 Defined in: [sandkit/enums/index.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L106)
@@ -30786,10 +29318,8 @@ Defined in: [sandkit/enums/index.d.ts:106](https://github.com/sandustry-modding/
 
 #### Objectives :id=sandkit.enums.ComponentId.objectives
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Objectives</code></p>
-
 ```ts
-Objectives: 17
+sandkit.enums.ComponentId.Objectives: 17
 ```
 
 Defined in: [sandkit/enums/index.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L107)
@@ -30798,10 +29328,8 @@ Defined in: [sandkit/enums/index.d.ts:107](https://github.com/sandustry-modding/
 
 #### DroneAdminList :id=sandkit.enums.ComponentId.droneadminlist
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.DroneAdminList</code></p>
-
 ```ts
-DroneAdminList: 18
+sandkit.enums.ComponentId.DroneAdminList: 18
 ```
 
 Defined in: [sandkit/enums/index.d.ts:108](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L108)
@@ -30810,10 +29338,8 @@ Defined in: [sandkit/enums/index.d.ts:108](https://github.com/sandustry-modding/
 
 #### HotbarOverlays :id=sandkit.enums.ComponentId.hotbaroverlays
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.HotbarOverlays</code></p>
-
 ```ts
-HotbarOverlays: 19
+sandkit.enums.ComponentId.HotbarOverlays: 19
 ```
 
 Defined in: [sandkit/enums/index.d.ts:109](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L109)
@@ -30822,10 +29348,8 @@ Defined in: [sandkit/enums/index.d.ts:109](https://github.com/sandustry-modding/
 
 #### IntroScreen :id=sandkit.enums.ComponentId.introscreen
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.IntroScreen</code></p>
-
 ```ts
-IntroScreen: 20
+sandkit.enums.ComponentId.IntroScreen: 20
 ```
 
 Defined in: [sandkit/enums/index.d.ts:110](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L110)
@@ -30834,10 +29358,8 @@ Defined in: [sandkit/enums/index.d.ts:110](https://github.com/sandustry-modding/
 
 #### StoryNotifications :id=sandkit.enums.ComponentId.storynotifications
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.StoryNotifications</code></p>
-
 ```ts
-StoryNotifications: 21
+sandkit.enums.ComponentId.StoryNotifications: 21
 ```
 
 Defined in: [sandkit/enums/index.d.ts:111](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L111)
@@ -30846,10 +29368,8 @@ Defined in: [sandkit/enums/index.d.ts:111](https://github.com/sandustry-modding/
 
 #### FactoryProgress :id=sandkit.enums.ComponentId.factoryprogress
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.FactoryProgress</code></p>
-
 ```ts
-FactoryProgress: 22
+sandkit.enums.ComponentId.FactoryProgress: 22
 ```
 
 Defined in: [sandkit/enums/index.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L112)
@@ -30858,10 +29378,8 @@ Defined in: [sandkit/enums/index.d.ts:112](https://github.com/sandustry-modding/
 
 #### Dialogs :id=sandkit.enums.ComponentId.dialogs
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Dialogs</code></p>
-
 ```ts
-Dialogs: 23
+sandkit.enums.ComponentId.Dialogs: 23
 ```
 
 Defined in: [sandkit/enums/index.d.ts:113](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L113)
@@ -30870,10 +29388,8 @@ Defined in: [sandkit/enums/index.d.ts:113](https://github.com/sandustry-modding/
 
 #### GlobalOverlays :id=sandkit.enums.ComponentId.globaloverlays
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.GlobalOverlays</code></p>
-
 ```ts
-GlobalOverlays: 24
+sandkit.enums.ComponentId.GlobalOverlays: 24
 ```
 
 Defined in: [sandkit/enums/index.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L114)
@@ -30882,10 +29398,8 @@ Defined in: [sandkit/enums/index.d.ts:114](https://github.com/sandustry-modding/
 
 #### Lexicon :id=sandkit.enums.ComponentId.lexicon
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Lexicon</code></p>
-
 ```ts
-Lexicon: 25
+sandkit.enums.ComponentId.Lexicon: 25
 ```
 
 Defined in: [sandkit/enums/index.d.ts:115](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L115)
@@ -30894,10 +29408,8 @@ Defined in: [sandkit/enums/index.d.ts:115](https://github.com/sandustry-modding/
 
 #### ModsScreen :id=sandkit.enums.ComponentId.modsscreen
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.ModsScreen</code></p>
-
 ```ts
-ModsScreen: 26
+sandkit.enums.ComponentId.ModsScreen: 26
 ```
 
 Defined in: [sandkit/enums/index.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L116)
@@ -30906,10 +29418,8 @@ Defined in: [sandkit/enums/index.d.ts:116](https://github.com/sandustry-modding/
 
 #### CustomMapsScreen :id=sandkit.enums.ComponentId.custommapsscreen
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.CustomMapsScreen</code></p>
-
 ```ts
-CustomMapsScreen: 27
+sandkit.enums.ComponentId.CustomMapsScreen: 27
 ```
 
 Defined in: [sandkit/enums/index.d.ts:117](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L117)
@@ -30918,10 +29428,8 @@ Defined in: [sandkit/enums/index.d.ts:117](https://github.com/sandustry-modding/
 
 #### CinematicPanel :id=sandkit.enums.ComponentId.cinematicpanel
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.CinematicPanel</code></p>
-
 ```ts
-CinematicPanel: 28
+sandkit.enums.ComponentId.CinematicPanel: 28
 ```
 
 Defined in: [sandkit/enums/index.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L118)
@@ -30930,10 +29438,8 @@ Defined in: [sandkit/enums/index.d.ts:118](https://github.com/sandustry-modding/
 
 #### Feedback :id=sandkit.enums.ComponentId.feedback
 
-<p class="smt-member-path"><code>sandkit.enums.ComponentId.Feedback</code></p>
-
 ```ts
-Feedback: 29
+sandkit.enums.ComponentId.Feedback: 29
 ```
 
 Defined in: [sandkit/enums/index.d.ts:119](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L119)
@@ -30950,10 +29456,8 @@ Autonomous drone kinds.
 
 #### Digger :id=sandkit.enums.DroneType.digger
 
-<p class="smt-member-path"><code>sandkit.enums.DroneType.Digger</code></p>
-
 ```ts
-Digger: 1
+sandkit.enums.DroneType.Digger: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:124](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L124)
@@ -30962,10 +29466,8 @@ Defined in: [sandkit/enums/index.d.ts:124](https://github.com/sandustry-modding/
 
 #### Hauler :id=sandkit.enums.DroneType.hauler
 
-<p class="smt-member-path"><code>sandkit.enums.DroneType.Hauler</code></p>
-
 ```ts
-Hauler: 2
+sandkit.enums.DroneType.Hauler: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:125](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L125)
@@ -30982,10 +29484,8 @@ Built-in element type ids (prefer API string ids when registering mods).
 
 #### Sand :id=sandkit.enums.ElementType.sand
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Sand</code></p>
-
 ```ts
-Sand: 1
+sandkit.enums.ElementType.Sand: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:130](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L130)
@@ -30994,10 +29494,8 @@ Defined in: [sandkit/enums/index.d.ts:130](https://github.com/sandustry-modding/
 
 #### Particle :id=sandkit.enums.ElementType.particle
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Particle</code></p>
-
 ```ts
-Particle: 2
+sandkit.enums.ElementType.Particle: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L131)
@@ -31006,10 +29504,8 @@ Defined in: [sandkit/enums/index.d.ts:131](https://github.com/sandustry-modding/
 
 #### Water :id=sandkit.enums.ElementType.water
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Water</code></p>
-
 ```ts
-Water: 3
+sandkit.enums.ElementType.Water: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L132)
@@ -31018,10 +29514,8 @@ Defined in: [sandkit/enums/index.d.ts:132](https://github.com/sandustry-modding/
 
 #### WetSand :id=sandkit.enums.ElementType.wetsand
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.WetSand</code></p>
-
 ```ts
-WetSand: 4
+sandkit.enums.ElementType.WetSand: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:133](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L133)
@@ -31030,10 +29524,8 @@ Defined in: [sandkit/enums/index.d.ts:133](https://github.com/sandustry-modding/
 
 #### Sandium :id=sandkit.enums.ElementType.sandium
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Sandium</code></p>
-
 ```ts
-Sandium: 5
+sandkit.enums.ElementType.Sandium: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L134)
@@ -31042,10 +29534,8 @@ Defined in: [sandkit/enums/index.d.ts:134](https://github.com/sandustry-modding/
 
 #### Residue :id=sandkit.enums.ElementType.residue
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Residue</code></p>
-
 ```ts
-Residue: 6
+sandkit.enums.ElementType.Residue: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L135)
@@ -31054,10 +29544,8 @@ Defined in: [sandkit/enums/index.d.ts:135](https://github.com/sandustry-modding/
 
 #### Gold :id=sandkit.enums.ElementType.gold
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Gold</code></p>
-
 ```ts
-Gold: 7
+sandkit.enums.ElementType.Gold: 7
 ```
 
 Defined in: [sandkit/enums/index.d.ts:136](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L136)
@@ -31066,10 +29554,8 @@ Defined in: [sandkit/enums/index.d.ts:136](https://github.com/sandustry-modding/
 
 #### Gloom :id=sandkit.enums.ElementType.gloom
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Gloom</code></p>
-
 ```ts
-Gloom: 8
+sandkit.enums.ElementType.Gloom: 8
 ```
 
 Defined in: [sandkit/enums/index.d.ts:137](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L137)
@@ -31078,10 +29564,8 @@ Defined in: [sandkit/enums/index.d.ts:137](https://github.com/sandustry-modding/
 
 #### Shake :id=sandkit.enums.ElementType.shake
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Shake</code></p>
-
 ```ts
-Shake: 9
+sandkit.enums.ElementType.Shake: 9
 ```
 
 Defined in: [sandkit/enums/index.d.ts:138](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L138)
@@ -31090,10 +29574,8 @@ Defined in: [sandkit/enums/index.d.ts:138](https://github.com/sandustry-modding/
 
 #### Steam :id=sandkit.enums.ElementType.steam
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Steam</code></p>
-
 ```ts
-Steam: 10
+sandkit.enums.ElementType.Steam: 10
 ```
 
 Defined in: [sandkit/enums/index.d.ts:139](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L139)
@@ -31102,10 +29584,8 @@ Defined in: [sandkit/enums/index.d.ts:139](https://github.com/sandustry-modding/
 
 #### Fire :id=sandkit.enums.ElementType.fire
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Fire</code></p>
-
 ```ts
-Fire: 11
+sandkit.enums.ElementType.Fire: 11
 ```
 
 Defined in: [sandkit/enums/index.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L140)
@@ -31114,10 +29594,8 @@ Defined in: [sandkit/enums/index.d.ts:140](https://github.com/sandustry-modding/
 
 #### FreezingIce :id=sandkit.enums.ElementType.freezingice
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.FreezingIce</code></p>
-
 ```ts
-FreezingIce: 12
+sandkit.enums.ElementType.FreezingIce: 12
 ```
 
 Defined in: [sandkit/enums/index.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L141)
@@ -31126,10 +29604,8 @@ Defined in: [sandkit/enums/index.d.ts:141](https://github.com/sandustry-modding/
 
 #### Flame :id=sandkit.enums.ElementType.flame
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Flame</code></p>
-
 ```ts
-Flame: 13
+sandkit.enums.ElementType.Flame: 13
 ```
 
 Defined in: [sandkit/enums/index.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L142)
@@ -31138,10 +29614,8 @@ Defined in: [sandkit/enums/index.d.ts:142](https://github.com/sandustry-modding/
 
 #### BurntResidue :id=sandkit.enums.ElementType.burntresidue
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.BurntResidue</code></p>
-
 ```ts
-BurntResidue: 14
+sandkit.enums.ElementType.BurntResidue: 14
 ```
 
 Defined in: [sandkit/enums/index.d.ts:143](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L143)
@@ -31150,10 +29624,8 @@ Defined in: [sandkit/enums/index.d.ts:143](https://github.com/sandustry-modding/
 
 #### Seed :id=sandkit.enums.ElementType.seed
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Seed</code></p>
-
 ```ts
-Seed: 15
+sandkit.enums.ElementType.Seed: 15
 ```
 
 Defined in: [sandkit/enums/index.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L144)
@@ -31162,10 +29634,8 @@ Defined in: [sandkit/enums/index.d.ts:144](https://github.com/sandustry-modding/
 
 #### WetSeed :id=sandkit.enums.ElementType.wetseed
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.WetSeed</code></p>
-
 ```ts
-WetSeed: 16
+sandkit.enums.ElementType.WetSeed: 16
 ```
 
 Defined in: [sandkit/enums/index.d.ts:145](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L145)
@@ -31174,10 +29644,8 @@ Defined in: [sandkit/enums/index.d.ts:145](https://github.com/sandustry-modding/
 
 #### Seedling :id=sandkit.enums.ElementType.seedling
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Seedling</code></p>
-
 ```ts
-Seedling: 17
+sandkit.enums.ElementType.Seedling: 17
 ```
 
 Defined in: [sandkit/enums/index.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L146)
@@ -31186,10 +29654,8 @@ Defined in: [sandkit/enums/index.d.ts:146](https://github.com/sandustry-modding/
 
 #### Petalium :id=sandkit.enums.ElementType.petalium
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Petalium</code></p>
-
 ```ts
-Petalium: 18
+sandkit.enums.ElementType.Petalium: 18
 ```
 
 Defined in: [sandkit/enums/index.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L147)
@@ -31198,10 +29664,8 @@ Defined in: [sandkit/enums/index.d.ts:147](https://github.com/sandustry-modding/
 
 #### Lava :id=sandkit.enums.ElementType.lava
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Lava</code></p>
-
 ```ts
-Lava: 19
+sandkit.enums.ElementType.Lava: 19
 ```
 
 Defined in: [sandkit/enums/index.d.ts:148](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L148)
@@ -31210,10 +29674,8 @@ Defined in: [sandkit/enums/index.d.ts:148](https://github.com/sandustry-modding/
 
 #### Basalt :id=sandkit.enums.ElementType.basalt
 
-<p class="smt-member-path"><code>sandkit.enums.ElementType.Basalt</code></p>
-
 ```ts
-Basalt: 20
+sandkit.enums.ElementType.Basalt: 20
 ```
 
 Defined in: [sandkit/enums/index.d.ts:149](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L149)
@@ -31230,10 +29692,8 @@ Built-in hotbar item ids.
 
 #### Shovel :id=sandkit.enums.ItemId.shovel
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Shovel</code></p>
-
 ```ts
-Shovel: 1
+sandkit.enums.ItemId.Shovel: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L154)
@@ -31242,10 +29702,8 @@ Defined in: [sandkit/enums/index.d.ts:154](https://github.com/sandustry-modding/
 
 #### Grabber :id=sandkit.enums.ItemId.grabber
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Grabber</code></p>
-
 ```ts
-Grabber: 2
+sandkit.enums.ItemId.Grabber: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L155)
@@ -31254,10 +29712,8 @@ Defined in: [sandkit/enums/index.d.ts:155](https://github.com/sandustry-modding/
 
 #### Demolisher :id=sandkit.enums.ItemId.demolisher
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Demolisher</code></p>
-
 ```ts
-Demolisher: 3
+sandkit.enums.ItemId.Demolisher: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L156)
@@ -31266,10 +29722,8 @@ Defined in: [sandkit/enums/index.d.ts:156](https://github.com/sandustry-modding/
 
 #### GrapplingHook :id=sandkit.enums.ItemId.grapplinghook
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.GrapplingHook</code></p>
-
 ```ts
-GrapplingHook: 4
+sandkit.enums.ItemId.GrapplingHook: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L157)
@@ -31278,10 +29732,8 @@ Defined in: [sandkit/enums/index.d.ts:157](https://github.com/sandustry-modding/
 
 #### Vacuum :id=sandkit.enums.ItemId.vacuum
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Vacuum</code></p>
-
 ```ts
-Vacuum: 5
+sandkit.enums.ItemId.Vacuum: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L158)
@@ -31290,10 +29742,8 @@ Defined in: [sandkit/enums/index.d.ts:158](https://github.com/sandustry-modding/
 
 #### Gun :id=sandkit.enums.ItemId.gun
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Gun</code></p>
-
 ```ts
-Gun: 6
+sandkit.enums.ItemId.Gun: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L159)
@@ -31302,10 +29752,8 @@ Defined in: [sandkit/enums/index.d.ts:159](https://github.com/sandustry-modding/
 
 #### Copier :id=sandkit.enums.ItemId.copier
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Copier</code></p>
-
 ```ts
-Copier: 7
+sandkit.enums.ItemId.Copier: 7
 ```
 
 Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L160)
@@ -31314,10 +29762,8 @@ Defined in: [sandkit/enums/index.d.ts:160](https://github.com/sandustry-modding/
 
 #### RocketLauncher :id=sandkit.enums.ItemId.rocketlauncher
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.RocketLauncher</code></p>
-
 ```ts
-RocketLauncher: 8
+sandkit.enums.ItemId.RocketLauncher: 8
 ```
 
 Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L161)
@@ -31326,10 +29772,8 @@ Defined in: [sandkit/enums/index.d.ts:161](https://github.com/sandustry-modding/
 
 #### Digger :id=sandkit.enums.ItemId.digger
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Digger</code></p>
-
 ```ts
-Digger: 9
+sandkit.enums.ItemId.Digger: 9
 ```
 
 Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L162)
@@ -31338,10 +29782,8 @@ Defined in: [sandkit/enums/index.d.ts:162](https://github.com/sandustry-modding/
 
 #### Shotgun :id=sandkit.enums.ItemId.shotgun
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Shotgun</code></p>
-
 ```ts
-Shotgun: 10
+sandkit.enums.ItemId.Shotgun: 10
 ```
 
 Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L163)
@@ -31350,10 +29792,8 @@ Defined in: [sandkit/enums/index.d.ts:163](https://github.com/sandustry-modding/
 
 #### Teleporter :id=sandkit.enums.ItemId.teleporter
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Teleporter</code></p>
-
 ```ts
-Teleporter: 11
+sandkit.enums.ItemId.Teleporter: 11
 ```
 
 Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L164)
@@ -31362,10 +29802,8 @@ Defined in: [sandkit/enums/index.d.ts:164](https://github.com/sandustry-modding/
 
 #### Flamethrower :id=sandkit.enums.ItemId.flamethrower
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Flamethrower</code></p>
-
 ```ts
-Flamethrower: 12
+sandkit.enums.ItemId.Flamethrower: 12
 ```
 
 Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L165)
@@ -31374,10 +29812,8 @@ Defined in: [sandkit/enums/index.d.ts:165](https://github.com/sandustry-modding/
 
 #### PipeRemover :id=sandkit.enums.ItemId.piperemover
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.PipeRemover</code></p>
-
 ```ts
-PipeRemover: 13
+sandkit.enums.ItemId.PipeRemover: 13
 ```
 
 Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L166)
@@ -31386,10 +29822,8 @@ Defined in: [sandkit/enums/index.d.ts:166](https://github.com/sandustry-modding/
 
 #### Hauler :id=sandkit.enums.ItemId.hauler
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Hauler</code></p>
-
 ```ts
-Hauler: 14
+sandkit.enums.ItemId.Hauler: 14
 ```
 
 Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L167)
@@ -31398,10 +29832,8 @@ Defined in: [sandkit/enums/index.d.ts:167](https://github.com/sandustry-modding/
 
 #### Cryoblaster :id=sandkit.enums.ItemId.cryoblaster
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.Cryoblaster</code></p>
-
 ```ts
-Cryoblaster: 15
+sandkit.enums.ItemId.Cryoblaster: 15
 ```
 
 Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L168)
@@ -31410,10 +29842,8 @@ Defined in: [sandkit/enums/index.d.ts:168](https://github.com/sandustry-modding/
 
 #### MegaShotgun :id=sandkit.enums.ItemId.megashotgun
 
-<p class="smt-member-path"><code>sandkit.enums.ItemId.MegaShotgun</code></p>
-
 ```ts
-MegaShotgun: 16
+sandkit.enums.ItemId.MegaShotgun: 16
 ```
 
 Defined in: [sandkit/enums/index.d.ts:169](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L169)
@@ -31430,10 +29860,8 @@ Item category (weapon, tool, consumable, mod).
 
 #### Weapon :id=sandkit.enums.ItemType.weapon
 
-<p class="smt-member-path"><code>sandkit.enums.ItemType.Weapon</code></p>
-
 ```ts
-Weapon: 1
+sandkit.enums.ItemType.Weapon: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:174](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L174)
@@ -31442,10 +29870,8 @@ Defined in: [sandkit/enums/index.d.ts:174](https://github.com/sandustry-modding/
 
 #### Tool :id=sandkit.enums.ItemType.tool
 
-<p class="smt-member-path"><code>sandkit.enums.ItemType.Tool</code></p>
-
 ```ts
-Tool: 2
+sandkit.enums.ItemType.Tool: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:175](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L175)
@@ -31454,10 +29880,8 @@ Defined in: [sandkit/enums/index.d.ts:175](https://github.com/sandustry-modding/
 
 #### Consumable :id=sandkit.enums.ItemType.consumable
 
-<p class="smt-member-path"><code>sandkit.enums.ItemType.Consumable</code></p>
-
 ```ts
-Consumable: 3
+sandkit.enums.ItemType.Consumable: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:176](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L176)
@@ -31466,10 +29890,8 @@ Defined in: [sandkit/enums/index.d.ts:176](https://github.com/sandustry-modding/
 
 #### Mod :id=sandkit.enums.ItemType.mod
 
-<p class="smt-member-path"><code>sandkit.enums.ItemType.Mod</code></p>
-
 ```ts
-Mod: 4
+sandkit.enums.ItemType.Mod: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:177](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L177)
@@ -31486,10 +29908,8 @@ Named input bindings (settings keys).
 
 #### OpenBuildMenu :id=sandkit.enums.KeyBinding.openbuildmenu
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.OpenBuildMenu</code></p>
-
 ```ts
-OpenBuildMenu: "OpenBuildMenu"
+sandkit.enums.KeyBinding.OpenBuildMenu: "OpenBuildMenu"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L182)
@@ -31498,10 +29918,8 @@ Defined in: [sandkit/enums/index.d.ts:182](https://github.com/sandustry-modding/
 
 #### GrapplingHook :id=sandkit.enums.KeyBinding.grapplinghook
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.GrapplingHook</code></p>
-
 ```ts
-GrapplingHook: "GrapplingHook"
+sandkit.enums.KeyBinding.GrapplingHook: "GrapplingHook"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:183](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L183)
@@ -31510,10 +29928,8 @@ Defined in: [sandkit/enums/index.d.ts:183](https://github.com/sandustry-modding/
 
 #### Escape :id=sandkit.enums.KeyBinding.escape
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Escape</code></p>
-
 ```ts
-Escape: "Escape"
+sandkit.enums.KeyBinding.Escape: "Escape"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L184)
@@ -31522,10 +29938,8 @@ Defined in: [sandkit/enums/index.d.ts:184](https://github.com/sandustry-modding/
 
 #### OpenTechTree :id=sandkit.enums.KeyBinding.opentechtree
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.OpenTechTree</code></p>
-
 ```ts
-OpenTechTree: "OpenTechTree"
+sandkit.enums.KeyBinding.OpenTechTree: "OpenTechTree"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:185](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L185)
@@ -31534,10 +29948,8 @@ Defined in: [sandkit/enums/index.d.ts:185](https://github.com/sandustry-modding/
 
 #### OpenInventory :id=sandkit.enums.KeyBinding.openinventory
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.OpenInventory</code></p>
-
 ```ts
-OpenInventory: "OpenInventory"
+sandkit.enums.KeyBinding.OpenInventory: "OpenInventory"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:186](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L186)
@@ -31546,10 +29958,8 @@ Defined in: [sandkit/enums/index.d.ts:186](https://github.com/sandustry-modding/
 
 #### ReverseBuildDirection :id=sandkit.enums.KeyBinding.reversebuilddirection
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.ReverseBuildDirection</code></p>
-
 ```ts
-ReverseBuildDirection: "ReverseBuildDirection"
+sandkit.enums.KeyBinding.ReverseBuildDirection: "ReverseBuildDirection"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:187](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L187)
@@ -31558,10 +29968,8 @@ Defined in: [sandkit/enums/index.d.ts:187](https://github.com/sandustry-modding/
 
 #### Marquee :id=sandkit.enums.KeyBinding.marquee
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Marquee</code></p>
-
 ```ts
-Marquee: "Marquee"
+sandkit.enums.KeyBinding.Marquee: "Marquee"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:188](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L188)
@@ -31570,10 +29978,8 @@ Defined in: [sandkit/enums/index.d.ts:188](https://github.com/sandustry-modding/
 
 #### Pause :id=sandkit.enums.KeyBinding.pause
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Pause</code></p>
-
 ```ts
-Pause: "Pause"
+sandkit.enums.KeyBinding.Pause: "Pause"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L189)
@@ -31582,10 +29988,8 @@ Defined in: [sandkit/enums/index.d.ts:189](https://github.com/sandustry-modding/
 
 #### Copy :id=sandkit.enums.KeyBinding.copy
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Copy</code></p>
-
 ```ts
-Copy: "Copy"
+sandkit.enums.KeyBinding.Copy: "Copy"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L190)
@@ -31594,10 +29998,8 @@ Defined in: [sandkit/enums/index.d.ts:190](https://github.com/sandustry-modding/
 
 #### Paste :id=sandkit.enums.KeyBinding.paste
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Paste</code></p>
-
 ```ts
-Paste: "Paste"
+sandkit.enums.KeyBinding.Paste: "Paste"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:191](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L191)
@@ -31606,10 +30008,8 @@ Defined in: [sandkit/enums/index.d.ts:191](https://github.com/sandustry-modding/
 
 #### Flip :id=sandkit.enums.KeyBinding.flip
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Flip</code></p>
-
 ```ts
-Flip: "Flip"
+sandkit.enums.KeyBinding.Flip: "Flip"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L192)
@@ -31618,10 +30018,8 @@ Defined in: [sandkit/enums/index.d.ts:192](https://github.com/sandustry-modding/
 
 #### Delete :id=sandkit.enums.KeyBinding.delete
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Delete</code></p>
-
 ```ts
-Delete: "Delete"
+sandkit.enums.KeyBinding.Delete: "Delete"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L193)
@@ -31630,10 +30028,8 @@ Defined in: [sandkit/enums/index.d.ts:193](https://github.com/sandustry-modding/
 
 #### PauseCamera :id=sandkit.enums.KeyBinding.pausecamera
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.PauseCamera</code></p>
-
 ```ts
-PauseCamera: "PauseCamera"
+sandkit.enums.KeyBinding.PauseCamera: "PauseCamera"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L194)
@@ -31642,10 +30038,8 @@ Defined in: [sandkit/enums/index.d.ts:194](https://github.com/sandustry-modding/
 
 #### OpenUpgrades :id=sandkit.enums.KeyBinding.openupgrades
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.OpenUpgrades</code></p>
-
 ```ts
-OpenUpgrades: "OpenUpgrades"
+sandkit.enums.KeyBinding.OpenUpgrades: "OpenUpgrades"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:195](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L195)
@@ -31654,10 +30048,8 @@ Defined in: [sandkit/enums/index.d.ts:195](https://github.com/sandustry-modding/
 
 #### BuildMode :id=sandkit.enums.KeyBinding.buildmode
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.BuildMode</code></p>
-
 ```ts
-BuildMode: "BuildMode"
+sandkit.enums.KeyBinding.BuildMode: "BuildMode"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:196](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L196)
@@ -31666,10 +30058,8 @@ Defined in: [sandkit/enums/index.d.ts:196](https://github.com/sandustry-modding/
 
 #### Demolish :id=sandkit.enums.KeyBinding.demolish
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Demolish</code></p>
-
 ```ts
-Demolish: "Demolish"
+sandkit.enums.KeyBinding.Demolish: "Demolish"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:197](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L197)
@@ -31678,10 +30068,8 @@ Defined in: [sandkit/enums/index.d.ts:197](https://github.com/sandustry-modding/
 
 #### Hover :id=sandkit.enums.KeyBinding.hover
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Hover</code></p>
-
 ```ts
-Hover: "Hover"
+sandkit.enums.KeyBinding.Hover: "Hover"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:198](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L198)
@@ -31690,10 +30078,8 @@ Defined in: [sandkit/enums/index.d.ts:198](https://github.com/sandustry-modding/
 
 #### Ruler :id=sandkit.enums.KeyBinding.ruler
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Ruler</code></p>
-
 ```ts
-Ruler: "Ruler"
+sandkit.enums.KeyBinding.Ruler: "Ruler"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L199)
@@ -31702,10 +30088,8 @@ Defined in: [sandkit/enums/index.d.ts:199](https://github.com/sandustry-modding/
 
 #### Left :id=sandkit.enums.KeyBinding.left
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Left</code></p>
-
 ```ts
-Left: "Left"
+sandkit.enums.KeyBinding.Left: "Left"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L200)
@@ -31714,10 +30098,8 @@ Defined in: [sandkit/enums/index.d.ts:200](https://github.com/sandustry-modding/
 
 #### Right :id=sandkit.enums.KeyBinding.right
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Right</code></p>
-
 ```ts
-Right: "Right"
+sandkit.enums.KeyBinding.Right: "Right"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:201](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L201)
@@ -31726,10 +30108,8 @@ Defined in: [sandkit/enums/index.d.ts:201](https://github.com/sandustry-modding/
 
 #### Boost :id=sandkit.enums.KeyBinding.boost
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Boost</code></p>
-
 ```ts
-Boost: "Boost"
+sandkit.enums.KeyBinding.Boost: "Boost"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L202)
@@ -31738,10 +30118,8 @@ Defined in: [sandkit/enums/index.d.ts:202](https://github.com/sandustry-modding/
 
 #### Descend :id=sandkit.enums.KeyBinding.descend
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.Descend</code></p>
-
 ```ts
-Descend: "Descend"
+sandkit.enums.KeyBinding.Descend: "Descend"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:203](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L203)
@@ -31750,10 +30128,8 @@ Defined in: [sandkit/enums/index.d.ts:203](https://github.com/sandustry-modding/
 
 #### SprintBoost :id=sandkit.enums.KeyBinding.sprintboost
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.SprintBoost</code></p>
-
 ```ts
-SprintBoost: "SprintBoost"
+sandkit.enums.KeyBinding.SprintBoost: "SprintBoost"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L204)
@@ -31762,10 +30138,8 @@ Defined in: [sandkit/enums/index.d.ts:204](https://github.com/sandustry-modding/
 
 #### OverrideReplaceStructures :id=sandkit.enums.KeyBinding.overridereplacestructures
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.OverrideReplaceStructures</code></p>
-
 ```ts
-OverrideReplaceStructures: "OverrideReplaceStructures"
+sandkit.enums.KeyBinding.OverrideReplaceStructures: "OverrideReplaceStructures"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:205](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L205)
@@ -31774,10 +30148,8 @@ Defined in: [sandkit/enums/index.d.ts:205](https://github.com/sandustry-modding/
 
 #### QuickSave :id=sandkit.enums.KeyBinding.quicksave
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.QuickSave</code></p>
-
 ```ts
-QuickSave: "QuickSave"
+sandkit.enums.KeyBinding.QuickSave: "QuickSave"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:206](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L206)
@@ -31786,10 +30158,8 @@ Defined in: [sandkit/enums/index.d.ts:206](https://github.com/sandustry-modding/
 
 #### QuickLoad :id=sandkit.enums.KeyBinding.quickload
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.QuickLoad</code></p>
-
 ```ts
-QuickLoad: "QuickLoad"
+sandkit.enums.KeyBinding.QuickLoad: "QuickLoad"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:207](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L207)
@@ -31798,10 +30168,8 @@ Defined in: [sandkit/enums/index.d.ts:207](https://github.com/sandustry-modding/
 
 #### ToggleGameHud :id=sandkit.enums.KeyBinding.togglegamehud
 
-<p class="smt-member-path"><code>sandkit.enums.KeyBinding.ToggleGameHud</code></p>
-
 ```ts
-ToggleGameHud: "ToggleGameHud"
+sandkit.enums.KeyBinding.ToggleGameHud: "ToggleGameHud"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:208](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L208)
@@ -31818,10 +30186,8 @@ Key transition state for input polling.
 
 #### Up :id=sandkit.enums.KeyState.up
 
-<p class="smt-member-path"><code>sandkit.enums.KeyState.Up</code></p>
-
 ```ts
-Up: 1
+sandkit.enums.KeyState.Up: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:213](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L213)
@@ -31830,10 +30196,8 @@ Defined in: [sandkit/enums/index.d.ts:213](https://github.com/sandustry-modding/
 
 #### Down :id=sandkit.enums.KeyState.down
 
-<p class="smt-member-path"><code>sandkit.enums.KeyState.Down</code></p>
-
 ```ts
-Down: 2
+sandkit.enums.KeyState.Down: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L214)
@@ -31842,10 +30206,8 @@ Defined in: [sandkit/enums/index.d.ts:214](https://github.com/sandustry-modding/
 
 #### Pressed :id=sandkit.enums.KeyState.pressed
 
-<p class="smt-member-path"><code>sandkit.enums.KeyState.Pressed</code></p>
-
 ```ts
-Pressed: 3
+sandkit.enums.KeyState.Pressed: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:215](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L215)
@@ -31854,10 +30216,8 @@ Defined in: [sandkit/enums/index.d.ts:215](https://github.com/sandustry-modding/
 
 #### Released :id=sandkit.enums.KeyState.released
 
-<p class="smt-member-path"><code>sandkit.enums.KeyState.Released</code></p>
-
 ```ts
-Released: 4
+sandkit.enums.KeyState.Released: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:216](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L216)
@@ -31866,10 +30226,8 @@ Defined in: [sandkit/enums/index.d.ts:216](https://github.com/sandustry-modding/
 
 #### All :id=sandkit.enums.KeyState.all
 
-<p class="smt-member-path"><code>sandkit.enums.KeyState.All</code></p>
-
 ```ts
-All: 5
+sandkit.enums.KeyState.All: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:217](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L217)
@@ -31886,10 +30244,8 @@ Physical behaviour category for elements (mirrors shared API enum).
 
 #### Solid :id=sandkit.enums.MatterType.solid
 
-<p class="smt-member-path"><code>sandkit.enums.MatterType.Solid</code></p>
-
 ```ts
-Solid: 1
+sandkit.enums.MatterType.Solid: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:222](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L222)
@@ -31898,10 +30254,8 @@ Defined in: [sandkit/enums/index.d.ts:222](https://github.com/sandustry-modding/
 
 #### Liquid :id=sandkit.enums.MatterType.liquid
 
-<p class="smt-member-path"><code>sandkit.enums.MatterType.Liquid</code></p>
-
 ```ts
-Liquid: 2
+sandkit.enums.MatterType.Liquid: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:223](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L223)
@@ -31910,10 +30264,8 @@ Defined in: [sandkit/enums/index.d.ts:223](https://github.com/sandustry-modding/
 
 #### Particle :id=sandkit.enums.MatterType.particle
 
-<p class="smt-member-path"><code>sandkit.enums.MatterType.Particle</code></p>
-
 ```ts
-Particle: 3
+sandkit.enums.MatterType.Particle: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:224](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L224)
@@ -31922,10 +30274,8 @@ Defined in: [sandkit/enums/index.d.ts:224](https://github.com/sandustry-modding/
 
 #### Gas :id=sandkit.enums.MatterType.gas
 
-<p class="smt-member-path"><code>sandkit.enums.MatterType.Gas</code></p>
-
 ```ts
-Gas: 4
+sandkit.enums.MatterType.Gas: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L225)
@@ -31934,10 +30284,8 @@ Defined in: [sandkit/enums/index.d.ts:225](https://github.com/sandustry-modding/
 
 #### Static :id=sandkit.enums.MatterType.static
 
-<p class="smt-member-path"><code>sandkit.enums.MatterType.Static</code></p>
-
 ```ts
-Static: 5
+sandkit.enums.MatterType.Static: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:226](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L226)
@@ -31946,10 +30294,8 @@ Defined in: [sandkit/enums/index.d.ts:226](https://github.com/sandustry-modding/
 
 #### Slushy :id=sandkit.enums.MatterType.slushy
 
-<p class="smt-member-path"><code>sandkit.enums.MatterType.Slushy</code></p>
-
 ```ts
-Slushy: 6
+sandkit.enums.MatterType.Slushy: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:227](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L227)
@@ -31958,10 +30304,8 @@ Defined in: [sandkit/enums/index.d.ts:227](https://github.com/sandustry-modding/
 
 #### Wisp :id=sandkit.enums.MatterType.wisp
 
-<p class="smt-member-path"><code>sandkit.enums.MatterType.Wisp</code></p>
-
 ```ts
-Wisp: 7
+sandkit.enums.MatterType.Wisp: 7
 ```
 
 Defined in: [sandkit/enums/index.d.ts:228](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L228)
@@ -31970,10 +30314,8 @@ Defined in: [sandkit/enums/index.d.ts:228](https://github.com/sandustry-modding/
 
 #### Powder :id=sandkit.enums.MatterType.powder
 
-<p class="smt-member-path"><code>sandkit.enums.MatterType.Powder</code></p>
-
 ```ts
-Powder: 8
+sandkit.enums.MatterType.Powder: 8
 ```
 
 Defined in: [sandkit/enums/index.d.ts:229](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L229)
@@ -31990,10 +30332,8 @@ Pickups and interactable world items.
 
 #### Artifact :id=sandkit.enums.PickupType.artifact
 
-<p class="smt-member-path"><code>sandkit.enums.PickupType.Artifact</code></p>
-
 ```ts
-Artifact: 1
+sandkit.enums.PickupType.Artifact: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:414](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L414)
@@ -32002,10 +30342,8 @@ Defined in: [sandkit/enums/index.d.ts:414](https://github.com/sandustry-modding/
 
 #### GlyphKey :id=sandkit.enums.PickupType.glyphkey
 
-<p class="smt-member-path"><code>sandkit.enums.PickupType.GlyphKey</code></p>
-
 ```ts
-GlyphKey: 2
+sandkit.enums.PickupType.GlyphKey: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:415](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L415)
@@ -32014,10 +30352,8 @@ Defined in: [sandkit/enums/index.d.ts:415](https://github.com/sandustry-modding/
 
 #### Stratacore :id=sandkit.enums.PickupType.stratacore
 
-<p class="smt-member-path"><code>sandkit.enums.PickupType.Stratacore</code></p>
-
 ```ts
-Stratacore: 3
+sandkit.enums.PickupType.Stratacore: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:416](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L416)
@@ -32026,10 +30362,8 @@ Defined in: [sandkit/enums/index.d.ts:416](https://github.com/sandustry-modding/
 
 #### Orb :id=sandkit.enums.PickupType.orb
 
-<p class="smt-member-path"><code>sandkit.enums.PickupType.Orb</code></p>
-
 ```ts
-Orb: 4
+sandkit.enums.PickupType.Orb: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:417](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L417)
@@ -32046,10 +30380,8 @@ Projectile kinds spawned by weapons and tools.
 
 #### Bullet :id=sandkit.enums.ProjectileType.bullet
 
-<p class="smt-member-path"><code>sandkit.enums.ProjectileType.Bullet</code></p>
-
 ```ts
-Bullet: 1
+sandkit.enums.ProjectileType.Bullet: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:234](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L234)
@@ -32058,10 +30390,8 @@ Defined in: [sandkit/enums/index.d.ts:234](https://github.com/sandustry-modding/
 
 #### Rocket :id=sandkit.enums.ProjectileType.rocket
 
-<p class="smt-member-path"><code>sandkit.enums.ProjectileType.Rocket</code></p>
-
 ```ts
-Rocket: 2
+sandkit.enums.ProjectileType.Rocket: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:235](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L235)
@@ -32070,10 +30400,8 @@ Defined in: [sandkit/enums/index.d.ts:235](https://github.com/sandustry-modding/
 
 #### GrapplingHook :id=sandkit.enums.ProjectileType.grapplinghook
 
-<p class="smt-member-path"><code>sandkit.enums.ProjectileType.GrapplingHook</code></p>
-
 ```ts
-GrapplingHook: 3
+sandkit.enums.ProjectileType.GrapplingHook: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:236](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L236)
@@ -32082,10 +30410,8 @@ Defined in: [sandkit/enums/index.d.ts:236](https://github.com/sandustry-modding/
 
 #### Fire :id=sandkit.enums.ProjectileType.fire
 
-<p class="smt-member-path"><code>sandkit.enums.ProjectileType.Fire</code></p>
-
 ```ts
-Fire: 4
+sandkit.enums.ProjectileType.Fire: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:237](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L237)
@@ -32094,10 +30420,8 @@ Defined in: [sandkit/enums/index.d.ts:237](https://github.com/sandustry-modding/
 
 #### Digger :id=sandkit.enums.ProjectileType.digger
 
-<p class="smt-member-path"><code>sandkit.enums.ProjectileType.Digger</code></p>
-
 ```ts
-Digger: 5
+sandkit.enums.ProjectileType.Digger: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:238](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L238)
@@ -32106,10 +30430,8 @@ Defined in: [sandkit/enums/index.d.ts:238](https://github.com/sandustry-modding/
 
 #### Mod :id=sandkit.enums.ProjectileType.mod
 
-<p class="smt-member-path"><code>sandkit.enums.ProjectileType.Mod</code></p>
-
 ```ts
-Mod: 6
+sandkit.enums.ProjectileType.Mod: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:239](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L239)
@@ -32126,10 +30448,8 @@ Weapon reload behaviour.
 
 #### Clip :id=sandkit.enums.ReloadType.clip
 
-<p class="smt-member-path"><code>sandkit.enums.ReloadType.Clip</code></p>
-
 ```ts
-Clip: 1
+sandkit.enums.ReloadType.Clip: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:244](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L244)
@@ -32138,10 +30458,8 @@ Defined in: [sandkit/enums/index.d.ts:244](https://github.com/sandustry-modding/
 
 #### Single :id=sandkit.enums.ReloadType.single
 
-<p class="smt-member-path"><code>sandkit.enums.ReloadType.Single</code></p>
-
 ```ts
-Single: 2
+sandkit.enums.ReloadType.Single: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:245](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L245)
@@ -32150,10 +30468,8 @@ Defined in: [sandkit/enums/index.d.ts:245](https://github.com/sandustry-modding/
 
 #### OverTime :id=sandkit.enums.ReloadType.overtime
 
-<p class="smt-member-path"><code>sandkit.enums.ReloadType.OverTime</code></p>
-
 ```ts
-OverTime: 3
+sandkit.enums.ReloadType.OverTime: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:246](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L246)
@@ -32170,10 +30486,8 @@ Top-level game scene (menu, intro, deploy, in-game).
 
 #### MainMenu :id=sandkit.enums.Scene.mainmenu
 
-<p class="smt-member-path"><code>sandkit.enums.Scene.MainMenu</code></p>
-
 ```ts
-MainMenu: 1
+sandkit.enums.Scene.MainMenu: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L251)
@@ -32182,10 +30496,8 @@ Defined in: [sandkit/enums/index.d.ts:251](https://github.com/sandustry-modding/
 
 #### Intro :id=sandkit.enums.Scene.intro
 
-<p class="smt-member-path"><code>sandkit.enums.Scene.Intro</code></p>
-
 ```ts
-Intro: 2
+sandkit.enums.Scene.Intro: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L252)
@@ -32194,10 +30506,8 @@ Defined in: [sandkit/enums/index.d.ts:252](https://github.com/sandustry-modding/
 
 #### Deploy :id=sandkit.enums.Scene.deploy
 
-<p class="smt-member-path"><code>sandkit.enums.Scene.Deploy</code></p>
-
 ```ts
-Deploy: 3
+sandkit.enums.Scene.Deploy: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L253)
@@ -32206,10 +30516,8 @@ Defined in: [sandkit/enums/index.d.ts:253](https://github.com/sandustry-modding/
 
 #### Game :id=sandkit.enums.Scene.game
 
-<p class="smt-member-path"><code>sandkit.enums.Scene.Game</code></p>
-
 ```ts
-Game: 4
+sandkit.enums.Scene.Game: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:254](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L254)
@@ -32226,10 +30534,8 @@ Built-in structure type ids.
 
 #### ConveyorLeft :id=sandkit.enums.StructureType.conveyorleft
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.ConveyorLeft</code></p>
-
 ```ts
-ConveyorLeft: 1
+sandkit.enums.StructureType.ConveyorLeft: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:259](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L259)
@@ -32238,10 +30544,8 @@ Defined in: [sandkit/enums/index.d.ts:259](https://github.com/sandustry-modding/
 
 #### ConveyorRight :id=sandkit.enums.StructureType.conveyorright
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.ConveyorRight</code></p>
-
 ```ts
-ConveyorRight: 2
+sandkit.enums.StructureType.ConveyorRight: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:260](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L260)
@@ -32250,10 +30554,8 @@ Defined in: [sandkit/enums/index.d.ts:260](https://github.com/sandustry-modding/
 
 #### ShakerLeft :id=sandkit.enums.StructureType.shakerleft
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.ShakerLeft</code></p>
-
 ```ts
-ShakerLeft: 3
+sandkit.enums.StructureType.ShakerLeft: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:261](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L261)
@@ -32262,10 +30564,8 @@ Defined in: [sandkit/enums/index.d.ts:261](https://github.com/sandustry-modding/
 
 #### ShakerRight :id=sandkit.enums.StructureType.shakerright
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.ShakerRight</code></p>
-
 ```ts
-ShakerRight: 4
+sandkit.enums.StructureType.ShakerRight: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:262](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L262)
@@ -32274,10 +30574,8 @@ Defined in: [sandkit/enums/index.d.ts:262](https://github.com/sandustry-modding/
 
 #### LauncherUp :id=sandkit.enums.StructureType.launcherup
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.LauncherUp</code></p>
-
 ```ts
-LauncherUp: 5
+sandkit.enums.StructureType.LauncherUp: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:263](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L263)
@@ -32286,10 +30584,8 @@ Defined in: [sandkit/enums/index.d.ts:263](https://github.com/sandustry-modding/
 
 #### LauncherLeft :id=sandkit.enums.StructureType.launcherleft
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.LauncherLeft</code></p>
-
 ```ts
-LauncherLeft: 6
+sandkit.enums.StructureType.LauncherLeft: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:264](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L264)
@@ -32298,10 +30594,8 @@ Defined in: [sandkit/enums/index.d.ts:264](https://github.com/sandustry-modding/
 
 #### LauncherRight :id=sandkit.enums.StructureType.launcherright
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.LauncherRight</code></p>
-
 ```ts
-LauncherRight: 7
+sandkit.enums.StructureType.LauncherRight: 7
 ```
 
 Defined in: [sandkit/enums/index.d.ts:265](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L265)
@@ -32310,10 +30604,8 @@ Defined in: [sandkit/enums/index.d.ts:265](https://github.com/sandustry-modding/
 
 #### SplitterLeft :id=sandkit.enums.StructureType.splitterleft
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.SplitterLeft</code></p>
-
 ```ts
-SplitterLeft: 8
+sandkit.enums.StructureType.SplitterLeft: 8
 ```
 
 Defined in: [sandkit/enums/index.d.ts:266](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L266)
@@ -32322,10 +30614,8 @@ Defined in: [sandkit/enums/index.d.ts:266](https://github.com/sandustry-modding/
 
 #### SplitterRight :id=sandkit.enums.StructureType.splitterright
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.SplitterRight</code></p>
-
 ```ts
-SplitterRight: 9
+sandkit.enums.StructureType.SplitterRight: 9
 ```
 
 Defined in: [sandkit/enums/index.d.ts:267](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L267)
@@ -32334,10 +30624,8 @@ Defined in: [sandkit/enums/index.d.ts:267](https://github.com/sandustry-modding/
 
 #### Dropper :id=sandkit.enums.StructureType.dropper
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.Dropper</code></p>
-
 ```ts
-Dropper: 10
+sandkit.enums.StructureType.Dropper: 10
 ```
 
 Defined in: [sandkit/enums/index.d.ts:268](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L268)
@@ -32346,10 +30634,8 @@ Defined in: [sandkit/enums/index.d.ts:268](https://github.com/sandustry-modding/
 
 #### Foundation :id=sandkit.enums.StructureType.foundation
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.Foundation</code></p>
-
 ```ts
-Foundation: 11
+sandkit.enums.StructureType.Foundation: 11
 ```
 
 Defined in: [sandkit/enums/index.d.ts:269](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L269)
@@ -32358,10 +30644,8 @@ Defined in: [sandkit/enums/index.d.ts:269](https://github.com/sandustry-modding/
 
 #### FoundationAngledLeft :id=sandkit.enums.StructureType.foundationangledleft
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.FoundationAngledLeft</code></p>
-
 ```ts
-FoundationAngledLeft: 12
+sandkit.enums.StructureType.FoundationAngledLeft: 12
 ```
 
 Defined in: [sandkit/enums/index.d.ts:270](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L270)
@@ -32370,10 +30654,8 @@ Defined in: [sandkit/enums/index.d.ts:270](https://github.com/sandustry-modding/
 
 #### FoundationTriangleLeftDel :id=sandkit.enums.StructureType.foundationtriangleleftdel
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.FoundationTriangleLeftDel</code></p>
-
 ```ts
-FoundationTriangleLeftDel: 13
+sandkit.enums.StructureType.FoundationTriangleLeftDel: 13
 ```
 
 Defined in: [sandkit/enums/index.d.ts:271](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L271)
@@ -32382,10 +30664,8 @@ Defined in: [sandkit/enums/index.d.ts:271](https://github.com/sandustry-modding/
 
 #### FoundationAngledRight :id=sandkit.enums.StructureType.foundationangledright
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.FoundationAngledRight</code></p>
-
 ```ts
-FoundationAngledRight: 14
+sandkit.enums.StructureType.FoundationAngledRight: 14
 ```
 
 Defined in: [sandkit/enums/index.d.ts:272](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L272)
@@ -32394,10 +30674,8 @@ Defined in: [sandkit/enums/index.d.ts:272](https://github.com/sandustry-modding/
 
 #### FoundationTriangleRightDel :id=sandkit.enums.StructureType.foundationtrianglerightdel
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.FoundationTriangleRightDel</code></p>
-
 ```ts
-FoundationTriangleRightDel: 15
+sandkit.enums.StructureType.FoundationTriangleRightDel: 15
 ```
 
 Defined in: [sandkit/enums/index.d.ts:273](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L273)
@@ -32406,10 +30684,8 @@ Defined in: [sandkit/enums/index.d.ts:273](https://github.com/sandustry-modding/
 
 #### Collector :id=sandkit.enums.StructureType.collector
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.Collector</code></p>
-
 ```ts
-Collector: 16
+sandkit.enums.StructureType.Collector: 16
 ```
 
 Defined in: [sandkit/enums/index.d.ts:274](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L274)
@@ -32418,10 +30694,8 @@ Defined in: [sandkit/enums/index.d.ts:274](https://github.com/sandustry-modding/
 
 #### FilterLeft :id=sandkit.enums.StructureType.filterleft
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.FilterLeft</code></p>
-
 ```ts
-FilterLeft: 17
+sandkit.enums.StructureType.FilterLeft: 17
 ```
 
 Defined in: [sandkit/enums/index.d.ts:275](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L275)
@@ -32430,10 +30704,8 @@ Defined in: [sandkit/enums/index.d.ts:275](https://github.com/sandustry-modding/
 
 #### FilterRight :id=sandkit.enums.StructureType.filterright
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.FilterRight</code></p>
-
 ```ts
-FilterRight: 18
+sandkit.enums.StructureType.FilterRight: 18
 ```
 
 Defined in: [sandkit/enums/index.d.ts:276](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L276)
@@ -32442,10 +30714,8 @@ Defined in: [sandkit/enums/index.d.ts:276](https://github.com/sandustry-modding/
 
 #### SlidingFoundation :id=sandkit.enums.StructureType.slidingfoundation
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.SlidingFoundation</code></p>
-
 ```ts
-SlidingFoundation: 19
+sandkit.enums.StructureType.SlidingFoundation: 19
 ```
 
 Defined in: [sandkit/enums/index.d.ts:277](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L277)
@@ -32454,10 +30724,8 @@ Defined in: [sandkit/enums/index.d.ts:277](https://github.com/sandustry-modding/
 
 #### VelocitySoaker :id=sandkit.enums.StructureType.velocitysoaker
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.VelocitySoaker</code></p>
-
 ```ts
-VelocitySoaker: 20
+sandkit.enums.StructureType.VelocitySoaker: 20
 ```
 
 Defined in: [sandkit/enums/index.d.ts:278](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L278)
@@ -32466,10 +30734,8 @@ Defined in: [sandkit/enums/index.d.ts:278](https://github.com/sandustry-modding/
 
 #### Grower :id=sandkit.enums.StructureType.grower
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.Grower</code></p>
-
 ```ts
-Grower: 21
+sandkit.enums.StructureType.Grower: 21
 ```
 
 Defined in: [sandkit/enums/index.d.ts:279](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L279)
@@ -32478,10 +30744,8 @@ Defined in: [sandkit/enums/index.d.ts:279](https://github.com/sandustry-modding/
 
 #### SoundBox :id=sandkit.enums.StructureType.soundbox
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.SoundBox</code></p>
-
 ```ts
-SoundBox: 22
+sandkit.enums.StructureType.SoundBox: 22
 ```
 
 Defined in: [sandkit/enums/index.d.ts:280](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L280)
@@ -32490,10 +30754,8 @@ Defined in: [sandkit/enums/index.d.ts:280](https://github.com/sandustry-modding/
 
 #### Pipe :id=sandkit.enums.StructureType.pipe
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.Pipe</code></p>
-
 ```ts
-Pipe: 23
+sandkit.enums.StructureType.Pipe: 23
 ```
 
 Defined in: [sandkit/enums/index.d.ts:281](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L281)
@@ -32502,10 +30764,8 @@ Defined in: [sandkit/enums/index.d.ts:281](https://github.com/sandustry-modding/
 
 #### Pump :id=sandkit.enums.StructureType.pump
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.Pump</code></p>
-
 ```ts
-Pump: 24
+sandkit.enums.StructureType.Pump: 24
 ```
 
 Defined in: [sandkit/enums/index.d.ts:282](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L282)
@@ -32514,10 +30774,8 @@ Defined in: [sandkit/enums/index.d.ts:282](https://github.com/sandustry-modding/
 
 #### LiquidVent :id=sandkit.enums.StructureType.liquidvent
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.LiquidVent</code></p>
-
 ```ts
-LiquidVent: 25
+sandkit.enums.StructureType.LiquidVent: 25
 ```
 
 Defined in: [sandkit/enums/index.d.ts:283](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L283)
@@ -32526,10 +30784,8 @@ Defined in: [sandkit/enums/index.d.ts:283](https://github.com/sandustry-modding/
 
 #### Light :id=sandkit.enums.StructureType.light
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.Light</code></p>
-
 ```ts
-Light: 26
+sandkit.enums.StructureType.Light: 26
 ```
 
 Defined in: [sandkit/enums/index.d.ts:284](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L284)
@@ -32538,10 +30794,8 @@ Defined in: [sandkit/enums/index.d.ts:284](https://github.com/sandustry-modding/
 
 #### FluxEmanator :id=sandkit.enums.StructureType.fluxemanator
 
-<p class="smt-member-path"><code>sandkit.enums.StructureType.FluxEmanator</code></p>
-
 ```ts
-FluxEmanator: 27
+sandkit.enums.StructureType.FluxEmanator: 27
 ```
 
 Defined in: [sandkit/enums/index.d.ts:285](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L285)
@@ -32558,10 +30812,8 @@ Tech tree node ids (mixed numeric and string keys).
 
 #### Shaker :id=sandkit.enums.Tech.shaker
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Shaker</code></p>
-
 ```ts
-Shaker: 1
+sandkit.enums.Tech.Shaker: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:290](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L290)
@@ -32570,10 +30822,8 @@ Defined in: [sandkit/enums/index.d.ts:290](https://github.com/sandustry-modding/
 
 #### Conveyors :id=sandkit.enums.Tech.conveyors
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Conveyors</code></p>
-
 ```ts
-Conveyors: 2
+sandkit.enums.Tech.Conveyors: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:291](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L291)
@@ -32582,10 +30832,8 @@ Defined in: [sandkit/enums/index.d.ts:291](https://github.com/sandustry-modding/
 
 #### Guns1 :id=sandkit.enums.Tech.guns1
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Guns1</code></p>
-
 ```ts
-Guns1: 3
+sandkit.enums.Tech.Guns1: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:292](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L292)
@@ -32594,10 +30842,8 @@ Defined in: [sandkit/enums/index.d.ts:292](https://github.com/sandustry-modding/
 
 #### Filters1 :id=sandkit.enums.Tech.filters1
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Filters1</code></p>
-
 ```ts
-Filters1: 4
+sandkit.enums.Tech.Filters1: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:293](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L293)
@@ -32606,10 +30852,8 @@ Defined in: [sandkit/enums/index.d.ts:293](https://github.com/sandustry-modding/
 
 #### Flamethrower :id=sandkit.enums.Tech.flamethrower
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Flamethrower</code></p>
-
 ```ts
-Flamethrower: 5
+sandkit.enums.Tech.Flamethrower: 5
 ```
 
 Defined in: [sandkit/enums/index.d.ts:294](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L294)
@@ -32618,10 +30862,8 @@ Defined in: [sandkit/enums/index.d.ts:294](https://github.com/sandustry-modding/
 
 #### Gun :id=sandkit.enums.Tech.gun
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Gun</code></p>
-
 ```ts
-Gun: 6
+sandkit.enums.Tech.Gun: 6
 ```
 
 Defined in: [sandkit/enums/index.d.ts:295](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L295)
@@ -32630,10 +30872,8 @@ Defined in: [sandkit/enums/index.d.ts:295](https://github.com/sandustry-modding/
 
 #### KineticPress :id=sandkit.enums.Tech.kineticpress
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.KineticPress</code></p>
-
 ```ts
-KineticPress: 7
+sandkit.enums.Tech.KineticPress: 7
 ```
 
 Defined in: [sandkit/enums/index.d.ts:296](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L296)
@@ -32642,10 +30882,8 @@ Defined in: [sandkit/enums/index.d.ts:296](https://github.com/sandustry-modding/
 
 #### Guns2 :id=sandkit.enums.Tech.guns2
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Guns2</code></p>
-
 ```ts
-Guns2: 8
+sandkit.enums.Tech.Guns2: 8
 ```
 
 Defined in: [sandkit/enums/index.d.ts:297](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L297)
@@ -32654,10 +30892,8 @@ Defined in: [sandkit/enums/index.d.ts:297](https://github.com/sandustry-modding/
 
 #### Drones1 :id=sandkit.enums.Tech.drones1
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Drones1</code></p>
-
 ```ts
-Drones1: 9
+sandkit.enums.Tech.Drones1: 9
 ```
 
 Defined in: [sandkit/enums/index.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L298)
@@ -32666,10 +30902,8 @@ Defined in: [sandkit/enums/index.d.ts:298](https://github.com/sandustry-modding/
 
 #### Upgrading2 :id=sandkit.enums.Tech.upgrading2
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Upgrading2</code></p>
-
 ```ts
-Upgrading2: 10
+sandkit.enums.Tech.Upgrading2: 10
 ```
 
 Defined in: [sandkit/enums/index.d.ts:299](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L299)
@@ -32678,10 +30912,8 @@ Defined in: [sandkit/enums/index.d.ts:299](https://github.com/sandustry-modding/
 
 #### Filters2 :id=sandkit.enums.Tech.filters2
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Filters2</code></p>
-
 ```ts
-Filters2: 11
+sandkit.enums.Tech.Filters2: 11
 ```
 
 Defined in: [sandkit/enums/index.d.ts:300](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L300)
@@ -32690,10 +30922,8 @@ Defined in: [sandkit/enums/index.d.ts:300](https://github.com/sandustry-modding/
 
 #### Upgrading3 :id=sandkit.enums.Tech.upgrading3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Upgrading3</code></p>
-
 ```ts
-Upgrading3: 12
+sandkit.enums.Tech.Upgrading3: 12
 ```
 
 Defined in: [sandkit/enums/index.d.ts:301](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L301)
@@ -32702,10 +30932,8 @@ Defined in: [sandkit/enums/index.d.ts:301](https://github.com/sandustry-modding/
 
 #### Upgrading4 :id=sandkit.enums.Tech.upgrading4
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Upgrading4</code></p>
-
 ```ts
-Upgrading4: 13
+sandkit.enums.Tech.Upgrading4: 13
 ```
 
 Defined in: [sandkit/enums/index.d.ts:302](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L302)
@@ -32714,10 +30942,8 @@ Defined in: [sandkit/enums/index.d.ts:302](https://github.com/sandustry-modding/
 
 #### Upgrading5 :id=sandkit.enums.Tech.upgrading5
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Upgrading5</code></p>
-
 ```ts
-Upgrading5: 14
+sandkit.enums.Tech.Upgrading5: 14
 ```
 
 Defined in: [sandkit/enums/index.d.ts:303](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L303)
@@ -32726,10 +30952,8 @@ Defined in: [sandkit/enums/index.d.ts:303](https://github.com/sandustry-modding/
 
 #### Upgrading6 :id=sandkit.enums.Tech.upgrading6
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Upgrading6</code></p>
-
 ```ts
-Upgrading6: 15
+sandkit.enums.Tech.Upgrading6: 15
 ```
 
 Defined in: [sandkit/enums/index.d.ts:304](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L304)
@@ -32738,10 +30962,8 @@ Defined in: [sandkit/enums/index.d.ts:304](https://github.com/sandustry-modding/
 
 #### Upgrading7 :id=sandkit.enums.Tech.upgrading7
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Upgrading7</code></p>
-
 ```ts
-Upgrading7: 16
+sandkit.enums.Tech.Upgrading7: 16
 ```
 
 Defined in: [sandkit/enums/index.d.ts:305](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L305)
@@ -32750,10 +30972,8 @@ Defined in: [sandkit/enums/index.d.ts:305](https://github.com/sandustry-modding/
 
 #### Upgrading8 :id=sandkit.enums.Tech.upgrading8
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Upgrading8</code></p>
-
 ```ts
-Upgrading8: 17
+sandkit.enums.Tech.Upgrading8: 17
 ```
 
 Defined in: [sandkit/enums/index.d.ts:306](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L306)
@@ -32762,10 +30982,8 @@ Defined in: [sandkit/enums/index.d.ts:306](https://github.com/sandustry-modding/
 
 #### Upgrading9 :id=sandkit.enums.Tech.upgrading9
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Upgrading9</code></p>
-
 ```ts
-Upgrading9: 18
+sandkit.enums.Tech.Upgrading9: 18
 ```
 
 Defined in: [sandkit/enums/index.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L307)
@@ -32774,10 +30992,8 @@ Defined in: [sandkit/enums/index.d.ts:307](https://github.com/sandustry-modding/
 
 #### Upgrading10 :id=sandkit.enums.Tech.upgrading10
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Upgrading10</code></p>
-
 ```ts
-Upgrading10: 19
+sandkit.enums.Tech.Upgrading10: 19
 ```
 
 Defined in: [sandkit/enums/index.d.ts:308](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L308)
@@ -32786,10 +31002,8 @@ Defined in: [sandkit/enums/index.d.ts:308](https://github.com/sandustry-modding/
 
 #### PlanterBox :id=sandkit.enums.Tech.planterbox
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.PlanterBox</code></p>
-
 ```ts
-PlanterBox: 20
+sandkit.enums.Tech.PlanterBox: 20
 ```
 
 Defined in: [sandkit/enums/index.d.ts:309](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L309)
@@ -32798,10 +31012,8 @@ Defined in: [sandkit/enums/index.d.ts:309](https://github.com/sandustry-modding/
 
 #### Thermo :id=sandkit.enums.Tech.thermo
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Thermo</code></p>
-
 ```ts
-Thermo: 21
+sandkit.enums.Tech.Thermo: 21
 ```
 
 Defined in: [sandkit/enums/index.d.ts:310](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L310)
@@ -32810,10 +31022,8 @@ Defined in: [sandkit/enums/index.d.ts:310](https://github.com/sandustry-modding/
 
 #### Rocket :id=sandkit.enums.Tech.rocket
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Rocket</code></p>
-
 ```ts
-Rocket: 22
+sandkit.enums.Tech.Rocket: 22
 ```
 
 Defined in: [sandkit/enums/index.d.ts:311](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L311)
@@ -32822,10 +31032,8 @@ Defined in: [sandkit/enums/index.d.ts:311](https://github.com/sandustry-modding/
 
 #### Pipes :id=sandkit.enums.Tech.pipes
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Pipes</code></p>
-
 ```ts
-Pipes: 23
+sandkit.enums.Tech.Pipes: 23
 ```
 
 Defined in: [sandkit/enums/index.d.ts:312](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L312)
@@ -32834,10 +31042,8 @@ Defined in: [sandkit/enums/index.d.ts:312](https://github.com/sandustry-modding/
 
 #### StaticLights :id=sandkit.enums.Tech.staticlights
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.StaticLights</code></p>
-
 ```ts
-StaticLights: 24
+sandkit.enums.Tech.StaticLights: 24
 ```
 
 Defined in: [sandkit/enums/index.d.ts:313](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L313)
@@ -32846,10 +31052,8 @@ Defined in: [sandkit/enums/index.d.ts:313](https://github.com/sandustry-modding/
 
 #### Drones2 :id=sandkit.enums.Tech.drones2
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Drones2</code></p>
-
 ```ts
-Drones2: 25
+sandkit.enums.Tech.Drones2: 25
 ```
 
 Defined in: [sandkit/enums/index.d.ts:314](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L314)
@@ -32858,10 +31062,8 @@ Defined in: [sandkit/enums/index.d.ts:314](https://github.com/sandustry-modding/
 
 #### Smelter :id=sandkit.enums.Tech.smelter
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Smelter</code></p>
-
 ```ts
-Smelter: 26
+sandkit.enums.Tech.Smelter: 26
 ```
 
 Defined in: [sandkit/enums/index.d.ts:315](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L315)
@@ -32870,10 +31072,8 @@ Defined in: [sandkit/enums/index.d.ts:315](https://github.com/sandustry-modding/
 
 #### Tools4 :id=sandkit.enums.Tech.tools4
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Tools4</code></p>
-
 ```ts
-Tools4: 27
+sandkit.enums.Tech.Tools4: 27
 ```
 
 Defined in: [sandkit/enums/index.d.ts:316](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L316)
@@ -32882,10 +31082,8 @@ Defined in: [sandkit/enums/index.d.ts:316](https://github.com/sandustry-modding/
 
 #### Guns3 :id=sandkit.enums.Tech.guns3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Guns3</code></p>
-
 ```ts
-Guns3: 28
+sandkit.enums.Tech.Guns3: 28
 ```
 
 Defined in: [sandkit/enums/index.d.ts:317](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L317)
@@ -32894,10 +31092,8 @@ Defined in: [sandkit/enums/index.d.ts:317](https://github.com/sandustry-modding/
 
 #### Pipes2 :id=sandkit.enums.Tech.pipes2
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Pipes2</code></p>
-
 ```ts
-Pipes2: 29
+sandkit.enums.Tech.Pipes2: 29
 ```
 
 Defined in: [sandkit/enums/index.d.ts:318](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L318)
@@ -32906,10 +31102,8 @@ Defined in: [sandkit/enums/index.d.ts:318](https://github.com/sandustry-modding/
 
 #### ConveyorsMk2 :id=sandkit.enums.Tech.conveyorsmk2
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.ConveyorsMk2</code></p>
-
 ```ts
-ConveyorsMk2: 30
+sandkit.enums.Tech.ConveyorsMk2: 30
 ```
 
 Defined in: [sandkit/enums/index.d.ts:319](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L319)
@@ -32918,10 +31112,8 @@ Defined in: [sandkit/enums/index.d.ts:319](https://github.com/sandustry-modding/
 
 #### Lights2 :id=sandkit.enums.Tech.lights2
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Lights2</code></p>
-
 ```ts
-Lights2: 31
+sandkit.enums.Tech.Lights2: 31
 ```
 
 Defined in: [sandkit/enums/index.d.ts:320](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L320)
@@ -32930,10 +31122,8 @@ Defined in: [sandkit/enums/index.d.ts:320](https://github.com/sandustry-modding/
 
 #### Refining6 :id=sandkit.enums.Tech.refining6
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Refining6</code></p>
-
 ```ts
-Refining6: 32
+sandkit.enums.Tech.Refining6: 32
 ```
 
 Defined in: [sandkit/enums/index.d.ts:321](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L321)
@@ -32942,10 +31132,8 @@ Defined in: [sandkit/enums/index.d.ts:321](https://github.com/sandustry-modding/
 
 #### Refining7 :id=sandkit.enums.Tech.refining7
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Refining7</code></p>
-
 ```ts
-Refining7: 33
+sandkit.enums.Tech.Refining7: 33
 ```
 
 Defined in: [sandkit/enums/index.d.ts:322](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L322)
@@ -32954,10 +31142,8 @@ Defined in: [sandkit/enums/index.d.ts:322](https://github.com/sandustry-modding/
 
 #### Guns4 :id=sandkit.enums.Tech.guns4
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Guns4</code></p>
-
 ```ts
-Guns4: 34
+sandkit.enums.Tech.Guns4: 34
 ```
 
 Defined in: [sandkit/enums/index.d.ts:323](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L323)
@@ -32966,10 +31152,8 @@ Defined in: [sandkit/enums/index.d.ts:323](https://github.com/sandustry-modding/
 
 #### Guns5 :id=sandkit.enums.Tech.guns5
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Guns5</code></p>
-
 ```ts
-Guns5: 35
+sandkit.enums.Tech.Guns5: 35
 ```
 
 Defined in: [sandkit/enums/index.d.ts:324](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L324)
@@ -32978,10 +31162,8 @@ Defined in: [sandkit/enums/index.d.ts:324](https://github.com/sandustry-modding/
 
 #### Tools5 :id=sandkit.enums.Tech.tools5
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Tools5</code></p>
-
 ```ts
-Tools5: 36
+sandkit.enums.Tech.Tools5: 36
 ```
 
 Defined in: [sandkit/enums/index.d.ts:325](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L325)
@@ -32990,10 +31172,8 @@ Defined in: [sandkit/enums/index.d.ts:325](https://github.com/sandustry-modding/
 
 #### Tools6 :id=sandkit.enums.Tech.tools6
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Tools6</code></p>
-
 ```ts
-Tools6: 37
+sandkit.enums.Tech.Tools6: 37
 ```
 
 Defined in: [sandkit/enums/index.d.ts:326](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L326)
@@ -33002,10 +31182,8 @@ Defined in: [sandkit/enums/index.d.ts:326](https://github.com/sandustry-modding/
 
 #### Filters3 :id=sandkit.enums.Tech.filters3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Filters3</code></p>
-
 ```ts
-Filters3: 38
+sandkit.enums.Tech.Filters3: 38
 ```
 
 Defined in: [sandkit/enums/index.d.ts:327](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L327)
@@ -33014,10 +31192,8 @@ Defined in: [sandkit/enums/index.d.ts:327](https://github.com/sandustry-modding/
 
 #### Filters4 :id=sandkit.enums.Tech.filters4
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Filters4</code></p>
-
 ```ts
-Filters4: 39
+sandkit.enums.Tech.Filters4: 39
 ```
 
 Defined in: [sandkit/enums/index.d.ts:328](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L328)
@@ -33026,10 +31202,8 @@ Defined in: [sandkit/enums/index.d.ts:328](https://github.com/sandustry-modding/
 
 #### Pipes3 :id=sandkit.enums.Tech.pipes3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Pipes3</code></p>
-
 ```ts
-Pipes3: 40
+sandkit.enums.Tech.Pipes3: 40
 ```
 
 Defined in: [sandkit/enums/index.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L329)
@@ -33038,10 +31212,8 @@ Defined in: [sandkit/enums/index.d.ts:329](https://github.com/sandustry-modding/
 
 #### Pipes4 :id=sandkit.enums.Tech.pipes4
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Pipes4</code></p>
-
 ```ts
-Pipes4: 41
+sandkit.enums.Tech.Pipes4: 41
 ```
 
 Defined in: [sandkit/enums/index.d.ts:330](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L330)
@@ -33050,10 +31222,8 @@ Defined in: [sandkit/enums/index.d.ts:330](https://github.com/sandustry-modding/
 
 #### Logistics3 :id=sandkit.enums.Tech.logistics3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Logistics3</code></p>
-
 ```ts
-Logistics3: 42
+sandkit.enums.Tech.Logistics3: 42
 ```
 
 Defined in: [sandkit/enums/index.d.ts:331](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L331)
@@ -33062,10 +31232,8 @@ Defined in: [sandkit/enums/index.d.ts:331](https://github.com/sandustry-modding/
 
 #### Logistics4 :id=sandkit.enums.Tech.logistics4
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Logistics4</code></p>
-
 ```ts
-Logistics4: 43
+sandkit.enums.Tech.Logistics4: 43
 ```
 
 Defined in: [sandkit/enums/index.d.ts:332](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L332)
@@ -33074,10 +31242,8 @@ Defined in: [sandkit/enums/index.d.ts:332](https://github.com/sandustry-modding/
 
 #### Lights3 :id=sandkit.enums.Tech.lights3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Lights3</code></p>
-
 ```ts
-Lights3: 44
+sandkit.enums.Tech.Lights3: 44
 ```
 
 Defined in: [sandkit/enums/index.d.ts:333](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L333)
@@ -33086,10 +31252,8 @@ Defined in: [sandkit/enums/index.d.ts:333](https://github.com/sandustry-modding/
 
 #### Lights4 :id=sandkit.enums.Tech.lights4
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Lights4</code></p>
-
 ```ts
-Lights4: 45
+sandkit.enums.Tech.Lights4: 45
 ```
 
 Defined in: [sandkit/enums/index.d.ts:334](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L334)
@@ -33098,10 +31262,8 @@ Defined in: [sandkit/enums/index.d.ts:334](https://github.com/sandustry-modding/
 
 #### Drones3 :id=sandkit.enums.Tech.drones3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Drones3</code></p>
-
 ```ts
-Drones3: 46
+sandkit.enums.Tech.Drones3: 46
 ```
 
 Defined in: [sandkit/enums/index.d.ts:335](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L335)
@@ -33110,10 +31272,8 @@ Defined in: [sandkit/enums/index.d.ts:335](https://github.com/sandustry-modding/
 
 #### Drones4 :id=sandkit.enums.Tech.drones4
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Drones4</code></p>
-
 ```ts
-Drones4: 47
+sandkit.enums.Tech.Drones4: 47
 ```
 
 Defined in: [sandkit/enums/index.d.ts:336](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L336)
@@ -33122,10 +31282,8 @@ Defined in: [sandkit/enums/index.d.ts:336](https://github.com/sandustry-modding/
 
 #### Alien :id=sandkit.enums.Tech.alien
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Alien</code></p>
-
 ```ts
-Alien: 48
+sandkit.enums.Tech.Alien: 48
 ```
 
 Defined in: [sandkit/enums/index.d.ts:337](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L337)
@@ -33134,10 +31292,8 @@ Defined in: [sandkit/enums/index.d.ts:337](https://github.com/sandustry-modding/
 
 #### Electricity :id=sandkit.enums.Tech.electricity
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Electricity</code></p>
-
 ```ts
-Electricity: 49
+sandkit.enums.Tech.Electricity: 49
 ```
 
 Defined in: [sandkit/enums/index.d.ts:338](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L338)
@@ -33146,10 +31302,8 @@ Defined in: [sandkit/enums/index.d.ts:338](https://github.com/sandustry-modding/
 
 #### AlienCore :id=sandkit.enums.Tech.aliencore
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.AlienCore</code></p>
-
 ```ts
-AlienCore: 50
+sandkit.enums.Tech.AlienCore: 50
 ```
 
 Defined in: [sandkit/enums/index.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L339)
@@ -33158,10 +31312,8 @@ Defined in: [sandkit/enums/index.d.ts:339](https://github.com/sandustry-modding/
 
 #### Emanators1 :id=sandkit.enums.Tech.emanators1
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Emanators1</code></p>
-
 ```ts
-Emanators1: 51
+sandkit.enums.Tech.Emanators1: 51
 ```
 
 Defined in: [sandkit/enums/index.d.ts:340](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L340)
@@ -33170,10 +31322,8 @@ Defined in: [sandkit/enums/index.d.ts:340](https://github.com/sandustry-modding/
 
 #### AlienPlasmaConduits :id=sandkit.enums.Tech.alienplasmaconduits
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.AlienPlasmaConduits</code></p>
-
 ```ts
-AlienPlasmaConduits: 52
+sandkit.enums.Tech.AlienPlasmaConduits: 52
 ```
 
 Defined in: [sandkit/enums/index.d.ts:341](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L341)
@@ -33182,10 +31332,8 @@ Defined in: [sandkit/enums/index.d.ts:341](https://github.com/sandustry-modding/
 
 #### AlienQuantumMatrix :id=sandkit.enums.Tech.alienquantummatrix
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.AlienQuantumMatrix</code></p>
-
 ```ts
-AlienQuantumMatrix: 53
+sandkit.enums.Tech.AlienQuantumMatrix: 53
 ```
 
 Defined in: [sandkit/enums/index.d.ts:342](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L342)
@@ -33194,10 +31342,8 @@ Defined in: [sandkit/enums/index.d.ts:342](https://github.com/sandustry-modding/
 
 #### AlienPlasmaCore :id=sandkit.enums.Tech.alienplasmacore
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.AlienPlasmaCore</code></p>
-
 ```ts
-AlienPlasmaCore: 54
+sandkit.enums.Tech.AlienPlasmaCore: 54
 ```
 
 Defined in: [sandkit/enums/index.d.ts:343](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L343)
@@ -33206,10 +31352,8 @@ Defined in: [sandkit/enums/index.d.ts:343](https://github.com/sandustry-modding/
 
 #### AlienVoidEngine :id=sandkit.enums.Tech.alienvoidengine
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.AlienVoidEngine</code></p>
-
 ```ts
-AlienVoidEngine: 55
+sandkit.enums.Tech.AlienVoidEngine: 55
 ```
 
 Defined in: [sandkit/enums/index.d.ts:344](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L344)
@@ -33218,10 +31362,8 @@ Defined in: [sandkit/enums/index.d.ts:344](https://github.com/sandustry-modding/
 
 #### FlareGun :id=sandkit.enums.Tech.flaregun
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.FlareGun</code></p>
-
 ```ts
-FlareGun: 56
+sandkit.enums.Tech.FlareGun: 56
 ```
 
 Defined in: [sandkit/enums/index.d.ts:345](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L345)
@@ -33230,10 +31372,8 @@ Defined in: [sandkit/enums/index.d.ts:345](https://github.com/sandustry-modding/
 
 #### Sweeper :id=sandkit.enums.Tech.sweeper
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Sweeper</code></p>
-
 ```ts
-Sweeper: 57
+sandkit.enums.Tech.Sweeper: 57
 ```
 
 Defined in: [sandkit/enums/index.d.ts:346](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L346)
@@ -33242,10 +31382,8 @@ Defined in: [sandkit/enums/index.d.ts:346](https://github.com/sandustry-modding/
 
 #### Utilities3 :id=sandkit.enums.Tech.utilities3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Utilities3</code></p>
-
 ```ts
-Utilities3: 58
+sandkit.enums.Tech.Utilities3: 58
 ```
 
 Defined in: [sandkit/enums/index.d.ts:347](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L347)
@@ -33254,10 +31392,8 @@ Defined in: [sandkit/enums/index.d.ts:347](https://github.com/sandustry-modding/
 
 #### Cryoblaster :id=sandkit.enums.Tech.cryoblaster
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Cryoblaster</code></p>
-
 ```ts
-Cryoblaster: 59
+sandkit.enums.Tech.Cryoblaster: 59
 ```
 
 Defined in: [sandkit/enums/index.d.ts:348](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L348)
@@ -33266,10 +31402,8 @@ Defined in: [sandkit/enums/index.d.ts:348](https://github.com/sandustry-modding/
 
 #### Vacuum :id=sandkit.enums.Tech.vacuum
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Vacuum</code></p>
-
 ```ts
-Vacuum: 60
+sandkit.enums.Tech.Vacuum: 60
 ```
 
 Defined in: [sandkit/enums/index.d.ts:349](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L349)
@@ -33278,10 +31412,8 @@ Defined in: [sandkit/enums/index.d.ts:349](https://github.com/sandustry-modding/
 
 #### Utilities6 :id=sandkit.enums.Tech.utilities6
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Utilities6</code></p>
-
 ```ts
-Utilities6: 61
+sandkit.enums.Tech.Utilities6: 61
 ```
 
 Defined in: [sandkit/enums/index.d.ts:350](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L350)
@@ -33290,10 +31422,8 @@ Defined in: [sandkit/enums/index.d.ts:350](https://github.com/sandustry-modding/
 
 #### Utilities7 :id=sandkit.enums.Tech.utilities7
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Utilities7</code></p>
-
 ```ts
-Utilities7: 62
+sandkit.enums.Tech.Utilities7: 62
 ```
 
 Defined in: [sandkit/enums/index.d.ts:351](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L351)
@@ -33302,10 +31432,8 @@ Defined in: [sandkit/enums/index.d.ts:351](https://github.com/sandustry-modding/
 
 #### Filters :id=sandkit.enums.Tech.filters
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Filters</code></p>
-
 ```ts
-Filters: 63
+sandkit.enums.Tech.Filters: 63
 ```
 
 Defined in: [sandkit/enums/index.d.ts:352](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L352)
@@ -33314,10 +31442,8 @@ Defined in: [sandkit/enums/index.d.ts:352](https://github.com/sandustry-modding/
 
 #### AdvancedFilters :id=sandkit.enums.Tech.advancedfilters
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.AdvancedFilters</code></p>
-
 ```ts
-AdvancedFilters: 64
+sandkit.enums.Tech.AdvancedFilters: 64
 ```
 
 Defined in: [sandkit/enums/index.d.ts:353](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L353)
@@ -33326,10 +31452,8 @@ Defined in: [sandkit/enums/index.d.ts:353](https://github.com/sandustry-modding/
 
 #### Infrastructure3 :id=sandkit.enums.Tech.infrastructure3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Infrastructure3</code></p>
-
 ```ts
-Infrastructure3: 65
+sandkit.enums.Tech.Infrastructure3: 65
 ```
 
 Defined in: [sandkit/enums/index.d.ts:354](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L354)
@@ -33338,10 +31462,8 @@ Defined in: [sandkit/enums/index.d.ts:354](https://github.com/sandustry-modding/
 
 #### Decorations1 :id=sandkit.enums.Tech.decorations1
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Decorations1</code></p>
-
 ```ts
-Decorations1: 66
+sandkit.enums.Tech.Decorations1: 66
 ```
 
 Defined in: [sandkit/enums/index.d.ts:355](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L355)
@@ -33350,10 +31472,8 @@ Defined in: [sandkit/enums/index.d.ts:355](https://github.com/sandustry-modding/
 
 #### Decorations2 :id=sandkit.enums.Tech.decorations2
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Decorations2</code></p>
-
 ```ts
-Decorations2: 67
+sandkit.enums.Tech.Decorations2: 67
 ```
 
 Defined in: [sandkit/enums/index.d.ts:356](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L356)
@@ -33362,10 +31482,8 @@ Defined in: [sandkit/enums/index.d.ts:356](https://github.com/sandustry-modding/
 
 #### Decorations3 :id=sandkit.enums.Tech.decorations3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Decorations3</code></p>
-
 ```ts
-Decorations3: 68
+sandkit.enums.Tech.Decorations3: 68
 ```
 
 Defined in: [sandkit/enums/index.d.ts:357](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L357)
@@ -33374,10 +31492,8 @@ Defined in: [sandkit/enums/index.d.ts:357](https://github.com/sandustry-modding/
 
 #### Blocks1 :id=sandkit.enums.Tech.blocks1
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Blocks1</code></p>
-
 ```ts
-Blocks1: 69
+sandkit.enums.Tech.Blocks1: 69
 ```
 
 Defined in: [sandkit/enums/index.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L358)
@@ -33386,10 +31502,8 @@ Defined in: [sandkit/enums/index.d.ts:358](https://github.com/sandustry-modding/
 
 #### Drill :id=sandkit.enums.Tech.drill
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Drill</code></p>
-
 ```ts
-Drill: 70
+sandkit.enums.Tech.Drill: 70
 ```
 
 Defined in: [sandkit/enums/index.d.ts:359](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L359)
@@ -33398,10 +31512,8 @@ Defined in: [sandkit/enums/index.d.ts:359](https://github.com/sandustry-modding/
 
 #### SteamTurbine :id=sandkit.enums.Tech.steamturbine
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.SteamTurbine</code></p>
-
 ```ts
-SteamTurbine: 71
+sandkit.enums.Tech.SteamTurbine: 71
 ```
 
 Defined in: [sandkit/enums/index.d.ts:360](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L360)
@@ -33410,10 +31522,8 @@ Defined in: [sandkit/enums/index.d.ts:360](https://github.com/sandustry-modding/
 
 #### Electricity3 :id=sandkit.enums.Tech.electricity3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Electricity3</code></p>
-
 ```ts
-Electricity3: 72
+sandkit.enums.Tech.Electricity3: 72
 ```
 
 Defined in: [sandkit/enums/index.d.ts:361](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L361)
@@ -33422,10 +31532,8 @@ Defined in: [sandkit/enums/index.d.ts:361](https://github.com/sandustry-modding/
 
 #### Electricity4 :id=sandkit.enums.Tech.electricity4
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Electricity4</code></p>
-
 ```ts
-Electricity4: 73
+sandkit.enums.Tech.Electricity4: 73
 ```
 
 Defined in: [sandkit/enums/index.d.ts:362](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L362)
@@ -33434,10 +31542,8 @@ Defined in: [sandkit/enums/index.d.ts:362](https://github.com/sandustry-modding/
 
 #### Logic1 :id=sandkit.enums.Tech.logic1
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Logic1</code></p>
-
 ```ts
-Logic1: 74
+sandkit.enums.Tech.Logic1: 74
 ```
 
 Defined in: [sandkit/enums/index.d.ts:363](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L363)
@@ -33446,10 +31552,8 @@ Defined in: [sandkit/enums/index.d.ts:363](https://github.com/sandustry-modding/
 
 #### Logic2 :id=sandkit.enums.Tech.logic2
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Logic2</code></p>
-
 ```ts
-Logic2: 75
+sandkit.enums.Tech.Logic2: 75
 ```
 
 Defined in: [sandkit/enums/index.d.ts:364](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L364)
@@ -33458,10 +31562,8 @@ Defined in: [sandkit/enums/index.d.ts:364](https://github.com/sandustry-modding/
 
 #### Logic3 :id=sandkit.enums.Tech.logic3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Logic3</code></p>
-
 ```ts
-Logic3: 76
+sandkit.enums.Tech.Logic3: 76
 ```
 
 Defined in: [sandkit/enums/index.d.ts:365](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L365)
@@ -33470,10 +31572,8 @@ Defined in: [sandkit/enums/index.d.ts:365](https://github.com/sandustry-modding/
 
 #### Logic4 :id=sandkit.enums.Tech.logic4
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Logic4</code></p>
-
 ```ts
-Logic4: 77
+sandkit.enums.Tech.Logic4: 77
 ```
 
 Defined in: [sandkit/enums/index.d.ts:366](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L366)
@@ -33482,10 +31582,8 @@ Defined in: [sandkit/enums/index.d.ts:366](https://github.com/sandustry-modding/
 
 #### Various1 :id=sandkit.enums.Tech.various1
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Various1</code></p>
-
 ```ts
-Various1: 78
+sandkit.enums.Tech.Various1: 78
 ```
 
 Defined in: [sandkit/enums/index.d.ts:367](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L367)
@@ -33494,10 +31592,8 @@ Defined in: [sandkit/enums/index.d.ts:367](https://github.com/sandustry-modding/
 
 #### Various2 :id=sandkit.enums.Tech.various2
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Various2</code></p>
-
 ```ts
-Various2: 79
+sandkit.enums.Tech.Various2: 79
 ```
 
 Defined in: [sandkit/enums/index.d.ts:368](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L368)
@@ -33506,10 +31602,8 @@ Defined in: [sandkit/enums/index.d.ts:368](https://github.com/sandustry-modding/
 
 #### Various3 :id=sandkit.enums.Tech.various3
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Various3</code></p>
-
 ```ts
-Various3: 80
+sandkit.enums.Tech.Various3: 80
 ```
 
 Defined in: [sandkit/enums/index.d.ts:369](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L369)
@@ -33518,10 +31612,8 @@ Defined in: [sandkit/enums/index.d.ts:369](https://github.com/sandustry-modding/
 
 #### Locator :id=sandkit.enums.Tech.locator
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Locator</code></p>
-
 ```ts
-Locator: 81
+sandkit.enums.Tech.Locator: 81
 ```
 
 Defined in: [sandkit/enums/index.d.ts:370](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L370)
@@ -33530,10 +31622,8 @@ Defined in: [sandkit/enums/index.d.ts:370](https://github.com/sandustry-modding/
 
 #### QuantumPortal :id=sandkit.enums.Tech.quantumportal
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.QuantumPortal</code></p>
-
 ```ts
-QuantumPortal: 82
+sandkit.enums.Tech.QuantumPortal: 82
 ```
 
 Defined in: [sandkit/enums/index.d.ts:371](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L371)
@@ -33542,10 +31632,8 @@ Defined in: [sandkit/enums/index.d.ts:371](https://github.com/sandustry-modding/
 
 #### VoidRift :id=sandkit.enums.Tech.voidrift
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.VoidRift</code></p>
-
 ```ts
-VoidRift: 83
+sandkit.enums.Tech.VoidRift: 83
 ```
 
 Defined in: [sandkit/enums/index.d.ts:372](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L372)
@@ -33554,10 +31642,8 @@ Defined in: [sandkit/enums/index.d.ts:372](https://github.com/sandustry-modding/
 
 #### Blink :id=sandkit.enums.Tech.blink
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Blink</code></p>
-
 ```ts
-Blink: 84
+sandkit.enums.Tech.Blink: 84
 ```
 
 Defined in: [sandkit/enums/index.d.ts:373](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L373)
@@ -33566,10 +31652,8 @@ Defined in: [sandkit/enums/index.d.ts:373](https://github.com/sandustry-modding/
 
 #### Recall :id=sandkit.enums.Tech.recall
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Recall</code></p>
-
 ```ts
-Recall: 85
+sandkit.enums.Tech.Recall: 85
 ```
 
 Defined in: [sandkit/enums/index.d.ts:374](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L374)
@@ -33578,10 +31662,8 @@ Defined in: [sandkit/enums/index.d.ts:374](https://github.com/sandustry-modding/
 
 #### ImplosionGun :id=sandkit.enums.Tech.implosiongun
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.ImplosionGun</code></p>
-
 ```ts
-ImplosionGun: 86
+sandkit.enums.Tech.ImplosionGun: 86
 ```
 
 Defined in: [sandkit/enums/index.d.ts:375](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L375)
@@ -33590,10 +31672,8 @@ Defined in: [sandkit/enums/index.d.ts:375](https://github.com/sandustry-modding/
 
 #### Refining8 :id=sandkit.enums.Tech.refining8
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Refining8</code></p>
-
 ```ts
-Refining8: 87
+sandkit.enums.Tech.Refining8: 87
 ```
 
 Defined in: [sandkit/enums/index.d.ts:376](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L376)
@@ -33602,10 +31682,8 @@ Defined in: [sandkit/enums/index.d.ts:376](https://github.com/sandustry-modding/
 
 #### Tools7 :id=sandkit.enums.Tech.tools7
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Tools7</code></p>
-
 ```ts
-Tools7: 88
+sandkit.enums.Tech.Tools7: 88
 ```
 
 Defined in: [sandkit/enums/index.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L377)
@@ -33614,10 +31692,8 @@ Defined in: [sandkit/enums/index.d.ts:377](https://github.com/sandustry-modding/
 
 #### Diggers :id=sandkit.enums.Tech.diggers
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Diggers</code></p>
-
 ```ts
-Diggers: 89
+sandkit.enums.Tech.Diggers: 89
 ```
 
 Defined in: [sandkit/enums/index.d.ts:378](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L378)
@@ -33626,10 +31702,8 @@ Defined in: [sandkit/enums/index.d.ts:378](https://github.com/sandustry-modding/
 
 #### Haulers :id=sandkit.enums.Tech.haulers
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Haulers</code></p>
-
 ```ts
-Haulers: 90
+sandkit.enums.Tech.Haulers: 90
 ```
 
 Defined in: [sandkit/enums/index.d.ts:379](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L379)
@@ -33638,10 +31712,8 @@ Defined in: [sandkit/enums/index.d.ts:379](https://github.com/sandustry-modding/
 
 #### Map :id=sandkit.enums.Tech.map
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Map</code></p>
-
 ```ts
-Map: 91
+sandkit.enums.Tech.Map: 91
 ```
 
 Defined in: [sandkit/enums/index.d.ts:380](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L380)
@@ -33650,10 +31722,8 @@ Defined in: [sandkit/enums/index.d.ts:380](https://github.com/sandustry-modding/
 
 #### ColoringTool :id=sandkit.enums.Tech.coloringtool
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.ColoringTool</code></p>
-
 ```ts
-ColoringTool: 92
+sandkit.enums.Tech.ColoringTool: 92
 ```
 
 Defined in: [sandkit/enums/index.d.ts:381](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L381)
@@ -33662,10 +31732,8 @@ Defined in: [sandkit/enums/index.d.ts:381](https://github.com/sandustry-modding/
 
 #### SignalGate :id=sandkit.enums.Tech.signalgate
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.SignalGate</code></p>
-
 ```ts
-SignalGate: 93
+sandkit.enums.Tech.SignalGate: 93
 ```
 
 Defined in: [sandkit/enums/index.d.ts:382](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L382)
@@ -33674,10 +31742,8 @@ Defined in: [sandkit/enums/index.d.ts:382](https://github.com/sandustry-modding/
 
 #### GrapplingHook :id=sandkit.enums.Tech.grapplinghook
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.GrapplingHook</code></p>
-
 ```ts
-GrapplingHook: 94
+sandkit.enums.Tech.GrapplingHook: 94
 ```
 
 Defined in: [sandkit/enums/index.d.ts:383](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L383)
@@ -33686,10 +31752,8 @@ Defined in: [sandkit/enums/index.d.ts:383](https://github.com/sandustry-modding/
 
 #### GlassFoundation :id=sandkit.enums.Tech.glassfoundation
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.GlassFoundation</code></p>
-
 ```ts
-GlassFoundation: 95
+sandkit.enums.Tech.GlassFoundation: 95
 ```
 
 Defined in: [sandkit/enums/index.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L384)
@@ -33698,10 +31762,8 @@ Defined in: [sandkit/enums/index.d.ts:384](https://github.com/sandustry-modding/
 
 #### PrecisionTools :id=sandkit.enums.Tech.precisiontools
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.PrecisionTools</code></p>
-
 ```ts
-PrecisionTools: 96
+sandkit.enums.Tech.PrecisionTools: 96
 ```
 
 Defined in: [sandkit/enums/index.d.ts:385](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L385)
@@ -33710,10 +31772,8 @@ Defined in: [sandkit/enums/index.d.ts:385](https://github.com/sandustry-modding/
 
 #### SignalDevices :id=sandkit.enums.Tech.signaldevices
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.SignalDevices</code></p>
-
 ```ts
-SignalDevices: 97
+sandkit.enums.Tech.SignalDevices: 97
 ```
 
 Defined in: [sandkit/enums/index.d.ts:386](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L386)
@@ -33722,10 +31782,8 @@ Defined in: [sandkit/enums/index.d.ts:386](https://github.com/sandustry-modding/
 
 #### SignalControls :id=sandkit.enums.Tech.signalcontrols
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.SignalControls</code></p>
-
 ```ts
-SignalControls: 98
+sandkit.enums.Tech.SignalControls: 98
 ```
 
 Defined in: [sandkit/enums/index.d.ts:387](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L387)
@@ -33734,10 +31792,8 @@ Defined in: [sandkit/enums/index.d.ts:387](https://github.com/sandustry-modding/
 
 #### LogicGates :id=sandkit.enums.Tech.logicgates
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.LogicGates</code></p>
-
 ```ts
-LogicGates: 99
+sandkit.enums.Tech.LogicGates: 99
 ```
 
 Defined in: [sandkit/enums/index.d.ts:388](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L388)
@@ -33746,10 +31802,8 @@ Defined in: [sandkit/enums/index.d.ts:388](https://github.com/sandustry-modding/
 
 #### RetroConsole :id=sandkit.enums.Tech.retroconsole
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.RetroConsole</code></p>
-
 ```ts
-RetroConsole: 100
+sandkit.enums.Tech.RetroConsole: 100
 ```
 
 Defined in: [sandkit/enums/index.d.ts:389](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L389)
@@ -33758,10 +31812,8 @@ Defined in: [sandkit/enums/index.d.ts:389](https://github.com/sandustry-modding/
 
 #### WallTool :id=sandkit.enums.Tech.walltool
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.WallTool</code></p>
-
 ```ts
-WallTool: 101
+sandkit.enums.Tech.WallTool: 101
 ```
 
 Defined in: [sandkit/enums/index.d.ts:390](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L390)
@@ -33770,10 +31822,8 @@ Defined in: [sandkit/enums/index.d.ts:390](https://github.com/sandustry-modding/
 
 #### Corraller :id=sandkit.enums.Tech.corraller
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Corraller</code></p>
-
 ```ts
-Corraller: 102
+sandkit.enums.Tech.Corraller: 102
 ```
 
 Defined in: [sandkit/enums/index.d.ts:391](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L391)
@@ -33782,10 +31832,8 @@ Defined in: [sandkit/enums/index.d.ts:391](https://github.com/sandustry-modding/
 
 #### PlainFoundation :id=sandkit.enums.Tech.plainfoundation
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.PlainFoundation</code></p>
-
 ```ts
-PlainFoundation: 103
+sandkit.enums.Tech.PlainFoundation: 103
 ```
 
 Defined in: [sandkit/enums/index.d.ts:392](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L392)
@@ -33794,10 +31842,8 @@ Defined in: [sandkit/enums/index.d.ts:392](https://github.com/sandustry-modding/
 
 #### ClearingFrame :id=sandkit.enums.Tech.clearingframe
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.ClearingFrame</code></p>
-
 ```ts
-ClearingFrame: 104
+sandkit.enums.Tech.ClearingFrame: 104
 ```
 
 Defined in: [sandkit/enums/index.d.ts:393](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L393)
@@ -33806,10 +31852,8 @@ Defined in: [sandkit/enums/index.d.ts:393](https://github.com/sandustry-modding/
 
 #### Heatmap :id=sandkit.enums.Tech.heatmap
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Heatmap</code></p>
-
 ```ts
-Heatmap: 105
+sandkit.enums.Tech.Heatmap: 105
 ```
 
 Defined in: [sandkit/enums/index.d.ts:394](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L394)
@@ -33818,10 +31862,8 @@ Defined in: [sandkit/enums/index.d.ts:394](https://github.com/sandustry-modding/
 
 #### MiningLaser :id=sandkit.enums.Tech.mininglaser
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.MiningLaser</code></p>
-
 ```ts
-MiningLaser: 106
+sandkit.enums.Tech.MiningLaser: 106
 ```
 
 Defined in: [sandkit/enums/index.d.ts:395](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L395)
@@ -33830,10 +31872,8 @@ Defined in: [sandkit/enums/index.d.ts:395](https://github.com/sandustry-modding/
 
 #### GoldBattery :id=sandkit.enums.Tech.goldbattery
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.GoldBattery</code></p>
-
 ```ts
-GoldBattery: 107
+sandkit.enums.Tech.GoldBattery: 107
 ```
 
 Defined in: [sandkit/enums/index.d.ts:396](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L396)
@@ -33842,10 +31882,8 @@ Defined in: [sandkit/enums/index.d.ts:396](https://github.com/sandustry-modding/
 
 #### Hover :id=sandkit.enums.Tech.hover
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.Hover</code></p>
-
 ```ts
-Hover: 108
+sandkit.enums.Tech.Hover: 108
 ```
 
 Defined in: [sandkit/enums/index.d.ts:397](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L397)
@@ -33854,10 +31892,8 @@ Defined in: [sandkit/enums/index.d.ts:397](https://github.com/sandustry-modding/
 
 #### SprintBoost :id=sandkit.enums.Tech.sprintboost
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.SprintBoost</code></p>
-
 ```ts
-SprintBoost: 109
+sandkit.enums.Tech.SprintBoost: 109
 ```
 
 Defined in: [sandkit/enums/index.d.ts:398](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L398)
@@ -33866,10 +31902,8 @@ Defined in: [sandkit/enums/index.d.ts:398](https://github.com/sandustry-modding/
 
 #### CritterFence :id=sandkit.enums.Tech.critterfence
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.CritterFence</code></p>
-
 ```ts
-CritterFence: 110
+sandkit.enums.Tech.CritterFence: 110
 ```
 
 Defined in: [sandkit/enums/index.d.ts:399](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L399)
@@ -33878,10 +31912,8 @@ Defined in: [sandkit/enums/index.d.ts:399](https://github.com/sandustry-modding/
 
 #### FluxEmanator :id=sandkit.enums.Tech.fluxemanator
 
-<p class="smt-member-path"><code>sandkit.enums.Tech.FluxEmanator</code></p>
-
 ```ts
-FluxEmanator: "fluxEmanator"
+sandkit.enums.Tech.FluxEmanator: "fluxEmanator"
 ```
 
 Defined in: [sandkit/enums/index.d.ts:400](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L400)
@@ -33898,10 +31930,8 @@ Visibility and research state of a tech node.
 
 #### Available :id=sandkit.enums.TechStatus.available
 
-<p class="smt-member-path"><code>sandkit.enums.TechStatus.Available</code></p>
-
 ```ts
-Available: 0
+sandkit.enums.TechStatus.Available: 0
 ```
 
 Defined in: [sandkit/enums/index.d.ts:405](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L405)
@@ -33910,10 +31940,8 @@ Defined in: [sandkit/enums/index.d.ts:405](https://github.com/sandustry-modding/
 
 #### Visible :id=sandkit.enums.TechStatus.visible
 
-<p class="smt-member-path"><code>sandkit.enums.TechStatus.Visible</code></p>
-
 ```ts
-Visible: 1
+sandkit.enums.TechStatus.Visible: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:406](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L406)
@@ -33922,10 +31950,8 @@ Defined in: [sandkit/enums/index.d.ts:406](https://github.com/sandustry-modding/
 
 #### Researched :id=sandkit.enums.TechStatus.researched
 
-<p class="smt-member-path"><code>sandkit.enums.TechStatus.Researched</code></p>
-
 ```ts
-Researched: 2
+sandkit.enums.TechStatus.Researched: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:407](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L407)
@@ -33934,10 +31960,8 @@ Defined in: [sandkit/enums/index.d.ts:407](https://github.com/sandustry-modding/
 
 #### Unknown :id=sandkit.enums.TechStatus.unknown
 
-<p class="smt-member-path"><code>sandkit.enums.TechStatus.Unknown</code></p>
-
 ```ts
-Unknown: 3
+sandkit.enums.TechStatus.Unknown: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:408](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L408)
@@ -33946,10 +31970,8 @@ Defined in: [sandkit/enums/index.d.ts:408](https://github.com/sandustry-modding/
 
 #### Hidden :id=sandkit.enums.TechStatus.hidden
 
-<p class="smt-member-path"><code>sandkit.enums.TechStatus.Hidden</code></p>
-
 ```ts
-Hidden: 4
+sandkit.enums.TechStatus.Hidden: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:409](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L409)
@@ -33966,40 +31988,40 @@ Use [PickupType](api/sandkit.enums.PickupType.md) instead.
 
 ### Enumeration Members <!-- {docsify-ignore} -->
 
-#### ~~Artifact~~
+#### ~~Artifact~~ :id=sandkit.enums.WorldItemType.artifact
 
 ```ts
-Artifact: 1
+sandkit.enums.WorldItemType.Artifact: 1
 ```
 
 Defined in: [sandkit/enums/index.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L424)
 
 ***
 
-#### ~~GlyphKey~~
+#### ~~GlyphKey~~ :id=sandkit.enums.WorldItemType.glyphkey
 
 ```ts
-GlyphKey: 2
+sandkit.enums.WorldItemType.GlyphKey: 2
 ```
 
 Defined in: [sandkit/enums/index.d.ts:425](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L425)
 
 ***
 
-#### ~~Stratacore~~
+#### ~~Stratacore~~ :id=sandkit.enums.WorldItemType.stratacore
 
 ```ts
-Stratacore: 3
+sandkit.enums.WorldItemType.Stratacore: 3
 ```
 
 Defined in: [sandkit/enums/index.d.ts:426](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L426)
 
 ***
 
-#### ~~Orb~~
+#### ~~Orb~~ :id=sandkit.enums.WorldItemType.orb
 
 ```ts
-Orb: 4
+sandkit.enums.WorldItemType.Orb: 4
 ```
 
 Defined in: [sandkit/enums/index.d.ts:427](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L427)
@@ -34010,9 +32032,7 @@ Defined in: [sandkit/enums/index.d.ts:427](https://github.com/sandustry-modding/
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
-#### SandkitReact :id=sandkit.react.sandkitreact
-
-<p class="smt-member-path"><code>sandkit.react.SandkitReact</code></p>
+#### sandkit.react :id=sandkit.react.sandkitreact
 
 ```ts
 SandkitReact = object
@@ -34381,7 +32401,6 @@ https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
 #### ConfigSchemaNumber :id=configs.configschemanumber
 
 <p class="smt-member-path"><code>configs.ConfigSchemaNumber</code></p>
-
 Defined in: [configs/modinfo.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L135)
 
 Number setting in `modinfo.json` `configSchema`.
@@ -34519,7 +32538,6 @@ i18n key for the setting help text.
 #### ConfigSchemaBoolean :id=configs.configschemaboolean
 
 <p class="smt-member-path"><code>configs.ConfigSchemaBoolean</code></p>
-
 Defined in: [configs/modinfo.d.ts:193](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L193)
 
 Boolean setting in `modinfo.json` `configSchema`.
@@ -34615,7 +32633,6 @@ i18n key for the setting help text.
 #### ConfigSchemaChoiceOption :id=configs.configschemachoiceoption
 
 <p class="smt-member-path"><code>configs.ConfigSchemaChoiceOption</code></p>
-
 Defined in: [configs/modinfo.d.ts:233](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L233)
 
 One option inside a [ConfigSchemaChoice](#configschemachoice).
@@ -34669,7 +32686,6 @@ i18n key for the option label.
 #### ConfigSchemaChoice :id=configs.configschemachoice
 
 <p class="smt-member-path"><code>configs.ConfigSchemaChoice</code></p>
-
 Defined in: [configs/modinfo.d.ts:255](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L255)
 
 Choice setting in `modinfo.json` `configSchema`.
@@ -34779,7 +32795,6 @@ Allowed choices for this setting.
 #### TextureOverride :id=configs.textureoverride
 
 <p class="smt-member-path"><code>configs.TextureOverride</code></p>
-
 Defined in: [configs/modinfo.d.ts:314](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L314)
 
 Animated (or static) texture replacement for a vanilla asset id.
@@ -34851,7 +32866,6 @@ Milliseconds between animation frames.
 #### ModProvide :id=configs.modprovide
 
 <p class="smt-member-path"><code>configs.ModProvide</code></p>
-
 Defined in: [configs/modinfo.d.ts:346](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L346)
 
 Optional content pack exposed by this mod for other mods or the game to consume.
@@ -34909,7 +32923,6 @@ Texture paths keyed by the vanilla or structure texture id they replace.
 #### ModMapBlueprints :id=configs.modmapblueprints
 
 <p class="smt-member-path"><code>configs.ModMapBlueprints</code></p>
-
 Defined in: [configs/modinfo.d.ts:374](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L374)
 
 Blueprint image paths for a custom map pack.
@@ -35039,7 +33052,6 @@ Map config JSON path.
 #### ModMapPoint :id=configs.modmappoint
 
 <p class="smt-member-path"><code>configs.ModMapPoint</code></p>
-
 Defined in: [configs/modinfo.d.ts:430](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L430)
 
 World-pixel spawn or unstuck point.
@@ -35083,7 +33095,6 @@ World Y in pixels.
 #### ModMapTopBounds :id=configs.modmaptopbounds
 
 <p class="smt-member-path"><code>configs.ModMapTopBounds</code></p>
-
 Defined in: [configs/modinfo.d.ts:450](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L450)
 
 Vertical camera / travel bounds for the custom map.
@@ -35127,7 +33138,6 @@ Soft top bound in world pixels.
 #### ModMapDepthLight :id=configs.modmapdepthlight
 
 <p class="smt-member-path"><code>configs.ModMapDepthLight</code></p>
-
 Defined in: [configs/modinfo.d.ts:470](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L470)
 
 Depth-based light sizing for the custom map.
@@ -35199,7 +33209,6 @@ Minimum light size at the deep end of the range.
 #### ModMapParallax :id=configs.modmapparallax
 
 <p class="smt-member-path"><code>configs.ModMapParallax</code></p>
-
 Defined in: [configs/modinfo.d.ts:502](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L502)
 
 Parallax background tuning for the custom map.
@@ -35243,7 +33252,6 @@ Vertical offset of the parallax layer in pixels.
 #### ModMapColorMappingLayers :id=configs.modmapcolormappinglayers
 
 <p class="smt-member-path"><code>configs.ModMapColorMappingLayers</code></p>
-
 Defined in: [configs/modinfo.d.ts:522](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L522)
 
 Color-map cell that paints both background and foreground terrain.
@@ -35287,7 +33295,6 @@ Foreground terrain id for this blueprint RGB.
 #### ModMapDefinition :id=configs.modmapdefinition
 
 <p class="smt-member-path"><code>configs.ModMapDefinition</code></p>
-
 Defined in: [configs/modinfo.d.ts:549](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L549)
 
 Custom map pack block in `modinfo.json`.
@@ -35443,7 +33450,6 @@ Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain.
 #### ModGameVersion :id=configs.modgameversion
 
 <p class="smt-member-path"><code>configs.ModGameVersion</code></p>
-
 Defined in: [configs/modinfo.d.ts:617](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L617)
 
 Compatible game version range for the mod.
@@ -35487,7 +33493,6 @@ Highest supported game version string.
 #### ModInfo :id=configs.modinfo
 
 <p class="smt-member-path"><code>configs.ModInfo</code></p>
-
 Defined in: [configs/modinfo.d.ts:645](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L645)
 
 Sandkit mod manifest (`modinfo.json`).
@@ -35794,7 +33799,6 @@ Embedded custom map pack definition for this mod.
 #### BundlePatchRegex :id=configs.bundlepatchregex
 
 <p class="smt-member-path"><code>configs.BundlePatchRegex</code></p>
-
 Defined in: [configs/patches.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L52)
 
 Regex finder when the target is not a plain [BundlePatch.find](#find) string.
@@ -35839,7 +33843,6 @@ Optional regex flags (for example `"g"` or `"m"`).
 #### BundlePatch :id=configs.bundlepatch
 
 <p class="smt-member-path"><code>configs.BundlePatch</code></p>
-
 Defined in: [configs/patches.d.ts:107](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L107)
 
 One entry in `patches.json`.
@@ -36075,7 +34078,6 @@ Human-readable note for maintainers. Not required by the official schema.
 #### BundlePatchesDocument :id=configs.bundlepatchesdocument
 
 <p class="smt-member-path"><code>configs.BundlePatchesDocument</code></p>
-
 Defined in: [configs/patches.d.ts:199](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L199)
 
 Editor-friendly `patches.json` wrapper with an optional `$schema` URL.
@@ -36111,7 +34113,6 @@ Ordered patch list (same as the bare-array game format).
 #### WorkshopJson :id=configs.workshopjson
 
 <p class="smt-member-path"><code>configs.WorkshopJson</code></p>
-
 Defined in: [configs/workshop.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/workshop.d.ts#L21)
 
 Links a local mod folder to its Steam Workshop item.
@@ -36153,10 +34154,8 @@ Steam Workshop published file id. Managed by the publisher.
 
 #### ConfigSchemaEntry :id=configs.configschemaentry
 
-<p class="smt-member-path"><code>configs.ConfigSchemaEntry</code></p>
-
 ```ts
-ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice
+configs.ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | ConfigSchemaChoice
 ```
 
 Defined in: [configs/modinfo.d.ts:307](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L307)
@@ -36173,10 +34172,8 @@ Keys of `configSchema` are setting ids read via `api.settings.get`.
 
 #### ModMapColorMapping :id=configs.modmapcolormapping
 
-<p class="smt-member-path"><code>configs.ModMapColorMapping</code></p>
-
 ```ts
-ModMapColorMapping = string | ModMapColorMappingLayers
+configs.ModMapColorMapping = string | ModMapColorMappingLayers
 ```
 
 Defined in: [configs/modinfo.d.ts:542](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L542)
@@ -36191,10 +34188,8 @@ One `map.colorMappings` value: a single terrain id, or layered background/foregr
 
 #### PatchTargetFile :id=configs.patchtargetfile
 
-<p class="smt-member-path"><code>configs.PatchTargetFile</code></p>
-
 ```ts
-PatchTargetFile = "js/bundle.js" | "js/simulation-worker.js" | "js/manager-worker.js" | "js/utility-worker.js" | string & object
+configs.PatchTargetFile = "js/bundle.js" | "js/simulation-worker.js" | "js/manager-worker.js" | "js/utility-worker.js" | string & object
 ```
 
 Defined in: [configs/patches.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L25)
@@ -36216,10 +34211,8 @@ Known compiled bundle paths the loader can patch.
 
 #### PatchOperation :id=configs.patchoperation
 
-<p class="smt-member-path"><code>configs.PatchOperation</code></p>
-
 ```ts
-PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfter" | "wrap"
+configs.PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfter" | "wrap"
 ```
 
 Defined in: [configs/patches.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L45)
@@ -36242,10 +34235,8 @@ Supported patch operations.
 
 #### BundlePatchesFile :id=configs.bundlepatchesfile
 
-<p class="smt-member-path"><code>configs.BundlePatchesFile</code></p>
-
 ```ts
-BundlePatchesFile = BundlePatch[] | BundlePatchesDocument
+configs.BundlePatchesFile = BundlePatch[] | BundlePatchesDocument
 ```
 
 Defined in: [configs/patches.d.ts:217](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L217)
@@ -36277,8 +34268,7 @@ Async methods use `ipcRenderer.invoke` unless noted (`openDevTools`, `log`).
 #### ElectronBridge :id=electron.electronbridge
 
 <p class="smt-member-path"><code>electron.ElectronBridge</code></p>
-
-Defined in: electron/bridge.d.ts:33
+Defined in: [electron/bridge.d.ts:33](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L33)
 
 ##### Properties
 
@@ -36288,7 +34278,7 @@ Defined in: electron/bridge.d.ts:33
 localMods: ElectronLocalModsApi
 ```
 
-Defined in: electron/bridge.d.ts:301
+Defined in: [electron/bridge.d.ts:301](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L301)
 
 Local developer mod folder helpers (`electron.localMods`).
 
@@ -36298,7 +34288,7 @@ Local developer mod folder helpers (`electron.localMods`).
 macRightMouse: ElectronMacRightMouseApi
 ```
 
-Defined in: electron/bridge.d.ts:396
+Defined in: [electron/bridge.d.ts:396](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L396)
 
 macOS right-button emulation helpers (`electron.macRightMouse`).
 
@@ -36308,7 +34298,7 @@ macOS right-button emulation helpers (`electron.macRightMouse`).
 platform: ElectronPlatformApi
 ```
 
-Defined in: electron/bridge.d.ts:399
+Defined in: [electron/bridge.d.ts:399](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L399)
 
 Cross-store platform helpers (`electron.platform`).
 
@@ -36318,7 +34308,7 @@ Cross-store platform helpers (`electron.platform`).
 customMaps: ElectronCustomMapsApi
 ```
 
-Defined in: electron/bridge.d.ts:424
+Defined in: [electron/bridge.d.ts:424](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L424)
 
 Custom map editor persistence helpers (`electron.customMaps`).
 
@@ -36330,7 +34320,7 @@ Custom map editor persistence helpers (`electron.customMaps`).
 getPlatformSync(): ElectronPlatform
 ```
 
-Defined in: electron/bridge.d.ts:41
+Defined in: [electron/bridge.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L41)
 
 Return the active distribution channel.
 
@@ -36348,7 +34338,7 @@ IPC: `get-platform-sync`.
 getModdingEnabledSync(): boolean
 ```
 
-Defined in: electron/bridge.d.ts:50
+Defined in: [electron/bridge.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L50)
 
 Return whether local modding is enabled for this build/session.
 
@@ -36366,7 +34356,7 @@ IPC: `get-modding-enabled-sync`.
 getIsSteamDeckSync(): boolean
 ```
 
-Defined in: electron/bridge.d.ts:59
+Defined in: [electron/bridge.d.ts:59](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L59)
 
 Return true on Steam Deck / gamescope hosts.
 
@@ -36384,7 +34374,7 @@ IPC: `get-is-steam-deck-sync`.
 getPreferredSystemLanguagesSync(): string[]
 ```
 
-Defined in: electron/bridge.d.ts:68
+Defined in: [electron/bridge.d.ts:68](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L68)
 
 Return BCP-47 language tags preferred by the OS.
 
@@ -36402,7 +34392,7 @@ IPC: `get-preferred-system-languages-sync`.
 onAppSuspend(callback: ElectronIpcListener): void
 ```
 
-Defined in: electron/bridge.d.ts:77
+Defined in: [electron/bridge.d.ts:77](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L77)
 
 Register a callback for app suspend (sleep / Xbox quick suspend).
 
@@ -36426,7 +34416,7 @@ IPC: `app-suspend`.
 onAppResume(callback: ElectronIpcListener): void
 ```
 
-Defined in: electron/bridge.d.ts:86
+Defined in: [electron/bridge.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L86)
 
 Register a callback for app resume.
 
@@ -36450,7 +34440,7 @@ IPC: `app-resume`.
 diagnostics(): Promise<JsonValueV1>
 ```
 
-Defined in: electron/bridge.d.ts:95
+Defined in: [electron/bridge.d.ts:95](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L95)
 
 Return platform diagnostics JSON.
 
@@ -36468,7 +34458,7 @@ IPC: `platform-diagnostics`.
 checkLicense(): Promise<ElectronLicenseCheckResult>
 ```
 
-Defined in: electron/bridge.d.ts:106
+Defined in: [electron/bridge.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L106)
 
 Check the MS Store license.
 
@@ -36488,7 +34478,7 @@ IPC: `platform-check-license`.
 writeGameEvent(eventName: string, dimensions?: Record<string, string>, measurements?: Record<string, number>): Promise<boolean>
 ```
 
-Defined in: electron/bridge.d.ts:118
+Defined in: [electron/bridge.d.ts:118](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L118)
 
 Send one telemetry event to the platform SDK when available.
 
@@ -36526,7 +34516,7 @@ IPC: `platform-write-game-event`.
 platformPrimeAchievements(ids: string[]): Promise<ElectronPrimeAchievementsResult>
 ```
 
-Defined in: electron/bridge.d.ts:134
+Defined in: [electron/bridge.d.ts:134](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L134)
 
 Prime the MS Store achievement cache after sign-in.
 
@@ -36554,7 +34544,7 @@ IPC: `platform-prime-achievements`.
 platformShowReauthPrompt(reason: string): Promise<ElectronReauthPromptResult>
 ```
 
-Defined in: electron/bridge.d.ts:146
+Defined in: [electron/bridge.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L146)
 
 Show the native MS Store re-auth dialog.
 
@@ -36582,7 +34572,7 @@ IPC: `platform-show-reauth-prompt`.
 appQuit(): Promise<ElectronSuccessResult>
 ```
 
-Defined in: electron/bridge.d.ts:157
+Defined in: [electron/bridge.d.ts:157](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L157)
 
 Quit the application.
 
@@ -36602,7 +34592,7 @@ IPC: `app-quit`.
 openExternalBrowser(url: string): Promise<ElectronOpenUrlResult>
 ```
 
-Defined in: electron/bridge.d.ts:167
+Defined in: [electron/bridge.d.ts:167](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L167)
 
 Open an external `https:` URL in the system browser.
 
@@ -36628,7 +34618,7 @@ IPC: `open-external-browser`.
 onXboxUserSignedOut(callback: ElectronIpcListener): void
 ```
 
-Defined in: electron/bridge.d.ts:178
+Defined in: [electron/bridge.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L178)
 
 Register a callback for Xbox user sign-out.
 
@@ -36654,7 +34644,7 @@ IPC: `xbox-user-signed-out`.
 onXboxLicenseLost(callback: ElectronIpcListener): void
 ```
 
-Defined in: electron/bridge.d.ts:189
+Defined in: [electron/bridge.d.ts:189](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L189)
 
 Register a callback for Game Pass / Store license loss.
 
@@ -36680,7 +34670,7 @@ IPC: `xbox-license-lost`.
 onXboxUserSignedIn(callback: ElectronIpcListener): void
 ```
 
-Defined in: electron/bridge.d.ts:200
+Defined in: [electron/bridge.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L200)
 
 Register a callback for Xbox user sign-in.
 
@@ -36706,7 +34696,7 @@ IPC: `xbox-user-signed-in`.
 save(id: string, name: string, data: JsonValueV1): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:212
+Defined in: [electron/bridge.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L212)
 
 Write one compressed save file (`.save`).
 
@@ -36744,7 +34734,7 @@ IPC: `save`.
 saveSerialized(id: string, name: string, dataJson: string, metadata?: JsonValueV1): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:225
+Defined in: [electron/bridge.d.ts:225](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L225)
 
 Write one save from pre-serialized JSON and metadata.
 
@@ -36788,7 +34778,7 @@ IPC: `save-serialized`.
 load(id: string): Promise<ElectronLoadResult>
 ```
 
-Defined in: electron/bridge.d.ts:240
+Defined in: [electron/bridge.d.ts:240](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L240)
 
 Load one save slot by id.
 
@@ -36814,7 +34804,7 @@ IPC: `load`.
 deleteSave(id: string): Promise<ElectronSuccessResult | ElectronFailureResult>
 ```
 
-Defined in: electron/bridge.d.ts:250
+Defined in: [electron/bridge.d.ts:250](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L250)
 
 Delete one save slot and its backup file.
 
@@ -36840,7 +34830,7 @@ IPC: `delete-save`.
 loadRaw(name: string): Promise<ElectronLoadResult | null>
 ```
 
-Defined in: electron/bridge.d.ts:260
+Defined in: [electron/bridge.d.ts:260](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L260)
 
 Load a raw save file by filename (including extension).
 
@@ -36866,7 +34856,7 @@ IPC: `load-raw`.
 exportSave(id: string): Promise<ElectronExportSaveResult>
 ```
 
-Defined in: electron/bridge.d.ts:270
+Defined in: [electron/bridge.d.ts:270](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L270)
 
 Export one save slot as raw bytes for backup/sharing.
 
@@ -36892,7 +34882,7 @@ IPC: `export-save`.
 importSave(bytes: ArrayBuffer | Uint8Array<ArrayBufferLike>): Promise<ElectronImportSaveResult>
 ```
 
-Defined in: electron/bridge.d.ts:280
+Defined in: [electron/bridge.d.ts:280](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L280)
 
 Import one save from raw exported bytes.
 
@@ -36918,7 +34908,7 @@ IPC: `import-save`.
 getSaveFiles(): Promise<ElectronSaveFileMetadata[]>
 ```
 
-Defined in: electron/bridge.d.ts:289
+Defined in: [electron/bridge.d.ts:289](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L289)
 
 List save slot metadata parsed from each `.save` header line.
 
@@ -36936,7 +34926,7 @@ IPC: `get-save-files`.
 getSaveFolder(): Promise<string>
 ```
 
-Defined in: electron/bridge.d.ts:298
+Defined in: [electron/bridge.d.ts:298](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L298)
 
 Return the absolute path to the active saves folder.
 
@@ -36954,7 +34944,7 @@ IPC: `get-save-folder`.
 getLastPlayedGameSync(): string | null
 ```
 
-Defined in: electron/bridge.d.ts:310
+Defined in: [electron/bridge.d.ts:310](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L310)
 
 Return the last-played save id JSON string.
 
@@ -36972,7 +34962,7 @@ IPC: `get-last-played-game-sync`.
 saveLastPlayedGame(game: ElectronLastPlayedGame): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:320
+Defined in: [electron/bridge.d.ts:320](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L320)
 
 Persist the last-played save id.
 
@@ -36998,7 +34988,7 @@ IPC: `save-last-played-game`.
 clearLastPlayedGame(): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:329
+Defined in: [electron/bridge.d.ts:329](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L329)
 
 Clear the persisted last-played save id.
 
@@ -37016,7 +35006,7 @@ IPC: `clear-last-played-game`.
 saveExistsSync(id: string): boolean
 ```
 
-Defined in: electron/bridge.d.ts:339
+Defined in: [electron/bridge.d.ts:339](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L339)
 
 Return whether a save file exists for the given id.
 
@@ -37042,7 +35032,7 @@ IPC: `save-exists-sync`.
 getSettingsSync(): string | null
 ```
 
-Defined in: electron/bridge.d.ts:348
+Defined in: [electron/bridge.d.ts:348](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L348)
 
 Return the settings JSON string from disk.
 
@@ -37060,7 +35050,7 @@ IPC: `get-settings-sync`.
 saveSettings(settings: JsonValueV1): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:358
+Defined in: [electron/bridge.d.ts:358](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L358)
 
 Persist renderer settings JSON to disk.
 
@@ -37086,7 +35076,7 @@ IPC: `save-settings`.
 setFullscreen(shouldBeFullscreen: boolean): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:368
+Defined in: [electron/bridge.d.ts:368](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L368)
 
 Enter or leave fullscreen mode.
 
@@ -37112,7 +35102,7 @@ IPC: `set-fullscreen`.
 toggleFullscreen(): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/bridge.d.ts:377
+Defined in: [electron/bridge.d.ts:377](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L377)
 
 Toggle fullscreen mode.
 
@@ -37130,7 +35120,7 @@ IPC: `toggle-fullscreen`.
 openDevTools(): void
 ```
 
-Defined in: electron/bridge.d.ts:384
+Defined in: [electron/bridge.d.ts:384](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L384)
 
 Open Chromium DevTools for the game window.
 
@@ -37146,7 +35136,7 @@ IPC: `open-devtools` (`send`).
 isFilePatchingActiveSync(): boolean
 ```
 
-Defined in: electron/bridge.d.ts:393
+Defined in: [electron/bridge.d.ts:393](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L393)
 
 Return true when the Steam patch protocol interceptor is active.
 
@@ -37164,7 +35154,7 @@ IPC: `is-file-patching-active-sync`.
 log(level: ElectronLogLevel, scope: string, message: string): void
 ```
 
-Defined in: electron/bridge.d.ts:412
+Defined in: [electron/bridge.d.ts:412](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L412)
 
 Append one line to the host log file (`logs/main.log`).
 
@@ -37202,7 +35192,7 @@ IPC: `log:write` (`send`).
 getSystemInfo(): ElectronSystemInfo
 ```
 
-Defined in: electron/bridge.d.ts:421
+Defined in: [electron/bridge.d.ts:421](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L421)
 
 Return local process/runtime versions.
 
@@ -37219,8 +35209,7 @@ Version info read from the preload process object.
 #### ElectronCustomMapsApi :id=electron.electroncustommapsapi
 
 <p class="smt-member-path"><code>electron.ElectronCustomMapsApi</code></p>
-
-Defined in: electron/custom-maps.d.ts:11
+Defined in: [electron/custom-maps.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L11)
 
 Custom map editor persistence helpers exposed as `electron.customMaps`.
 
@@ -37232,7 +35221,7 @@ Custom map editor persistence helpers exposed as `electron.customMaps`.
 save(id: string, name: string, data: JsonValueV1): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/custom-maps.d.ts:22
+Defined in: [electron/custom-maps.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L22)
 
 Write one custom map file (`.custommap`).
 
@@ -37270,7 +35259,7 @@ IPC: `custom-map-save`.
 load(id: string): Promise<JsonValueV1>
 ```
 
-Defined in: electron/custom-maps.d.ts:32
+Defined in: [electron/custom-maps.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L32)
 
 Load one custom map by id.
 
@@ -37296,7 +35285,7 @@ IPC: `custom-map-load`.
 list(): Promise<JsonValueV1[]>
 ```
 
-Defined in: electron/custom-maps.d.ts:41
+Defined in: [electron/custom-maps.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L41)
 
 List custom map metadata entries (newest first).
 
@@ -37314,7 +35303,7 @@ IPC: `custom-map-list`.
 delete(id: string): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/custom-maps.d.ts:51
+Defined in: [electron/custom-maps.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L51)
 
 Delete one custom map file.
 
@@ -37339,8 +35328,7 @@ IPC: `custom-map-delete`.
 #### ElectronLocalModsApi :id=electron.electronlocalmodsapi
 
 <p class="smt-member-path"><code>electron.ElectronLocalModsApi</code></p>
-
-Defined in: electron/local-mods.d.ts:14
+Defined in: [electron/local-mods.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L14)
 
 Local developer mod folder helpers exposed as `electron.localMods`.
 
@@ -37352,7 +35340,7 @@ Local developer mod folder helpers exposed as `electron.localMods`.
 getFolder(): Promise<string>
 ```
 
-Defined in: electron/local-mods.d.ts:22
+Defined in: [electron/local-mods.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L22)
 
 Return the absolute path to the OS local-mods folder.
 
@@ -37370,7 +35358,7 @@ IPC: `get-local-mods-folder`.
 openFolder(): Promise<ElectronOperationResult>
 ```
 
-Defined in: electron/local-mods.d.ts:31
+Defined in: [electron/local-mods.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L31)
 
 Open the local-mods folder in the OS file manager.
 
@@ -37388,7 +35376,7 @@ IPC: `open-local-mods-folder`.
 list(): Promise<ElectronLocalModsListResult>
 ```
 
-Defined in: electron/local-mods.d.ts:42
+Defined in: [electron/local-mods.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L42)
 
 List installed local mod summaries.
 
@@ -37408,7 +35396,7 @@ IPC: `local-mods-list`.
 upload(modId: string): Promise<ElectronLocalModsUploadResult>
 ```
 
-Defined in: electron/local-mods.d.ts:52
+Defined in: [electron/local-mods.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L52)
 
 Upload one local mod folder to Steam Workshop.
 
@@ -37433,8 +35421,7 @@ IPC: `local-mods-upload`.
 #### ElectronMacRightMouseApi :id=electron.electronmacrightmouseapi
 
 <p class="smt-member-path"><code>electron.ElectronMacRightMouseApi</code></p>
-
-Defined in: electron/mac-right-mouse.d.ts:8
+Defined in: [electron/mac-right-mouse.d.ts:8](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L8)
 
 macOS right-button emulation helpers exposed as `electron.macRightMouse`.
 
@@ -37446,7 +35433,7 @@ macOS right-button emulation helpers exposed as `electron.macRightMouse`.
 watch(active: boolean, probeScript?: string): void
 ```
 
-Defined in: electron/mac-right-mouse.d.ts:17
+Defined in: [electron/mac-right-mouse.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L17)
 
 Enable or disable global right-button probing on macOS.
 
@@ -37476,7 +35463,7 @@ IPC: `mac-right-mouse-watch` (`send`).
 onPos(callback: (x: number, y: number) => void): void
 ```
 
-Defined in: electron/mac-right-mouse.d.ts:26
+Defined in: [electron/mac-right-mouse.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L26)
 
 Register a callback for synthetic right-button position updates.
 
@@ -37500,7 +35487,7 @@ IPC: `mac-right-mouse-pos`.
 onUp(callback: () => void): void
 ```
 
-Defined in: electron/mac-right-mouse.d.ts:35
+Defined in: [electron/mac-right-mouse.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L35)
 
 Register a callback for synthetic right-button release.
 
@@ -37523,8 +35510,7 @@ IPC: `mac-right-mouse-up`.
 #### ElectronPlatformOverlayApi :id=electron.electronplatformoverlayapi
 
 <p class="smt-member-path"><code>electron.ElectronPlatformOverlayApi</code></p>
-
-Defined in: electron/platform.d.ts:11
+Defined in: [electron/platform.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L11)
 
 Platform overlay browser helpers exposed as `electron.platform.overlay`.
 
@@ -37536,7 +35522,7 @@ Platform overlay browser helpers exposed as `electron.platform.overlay`.
 openUrl(url: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:20
+Defined in: [electron/platform.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L20)
 
 Open an `https:` URL in the platform overlay browser when available.
 
@@ -37561,8 +35547,7 @@ IPC: `platform-overlay-open-url`.
 #### ElectronPlatformApi :id=electron.electronplatformapi
 
 <p class="smt-member-path"><code>electron.ElectronPlatformApi</code></p>
-
-Defined in: electron/platform.d.ts:26
+Defined in: [electron/platform.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L26)
 
 Cross-store platform helpers exposed as `electron.platform`.
 
@@ -37574,7 +35559,7 @@ Cross-store platform helpers exposed as `electron.platform`.
 workshop: ElectronWorkshopApi
 ```
 
-Defined in: electron/platform.d.ts:144
+Defined in: [electron/platform.d.ts:144](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L144)
 
 Steam Workshop helpers (Steam only; MS Store calls fail gracefully).
 
@@ -37584,7 +35569,7 @@ Steam Workshop helpers (Steam only; MS Store calls fail gracefully).
 overlay: ElectronPlatformOverlayApi
 ```
 
-Defined in: electron/platform.d.ts:147
+Defined in: [electron/platform.d.ts:147](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L147)
 
 Platform overlay browser helpers.
 
@@ -37596,7 +35581,7 @@ Platform overlay browser helpers.
 isInitialized(): Promise<boolean>
 ```
 
-Defined in: electron/platform.d.ts:34
+Defined in: [electron/platform.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L34)
 
 Return true when the platform integration finished startup.
 
@@ -37614,7 +35599,7 @@ IPC: `platform-is-initialized`.
 getPlayerName(): Promise<string>
 ```
 
-Defined in: electron/platform.d.ts:43
+Defined in: [electron/platform.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L43)
 
 Return the signed-in player display name.
 
@@ -37632,7 +35617,7 @@ IPC: `platform-get-player-name`.
 getPlayerId(): Promise<string>
 ```
 
-Defined in: electron/platform.d.ts:52
+Defined in: [electron/platform.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L52)
 
 Return the stable platform player id string.
 
@@ -37650,7 +35635,7 @@ IPC: `platform-get-player-id`.
 getAppId(): Promise<number>
 ```
 
-Defined in: electron/platform.d.ts:61
+Defined in: [electron/platform.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L61)
 
 Return the platform app id number.
 
@@ -37668,7 +35653,7 @@ IPC: `platform-get-app-id`.
 unlockAchievement(achievementId: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:71
+Defined in: [electron/platform.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L71)
 
 Unlock one platform achievement.
 
@@ -37694,7 +35679,7 @@ IPC: `platform-unlock-achievement`.
 isAchievementUnlocked(achievementId: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:81
+Defined in: [electron/platform.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L81)
 
 Return whether an achievement is already unlocked.
 
@@ -37720,7 +35705,7 @@ IPC: `platform-is-achievement-unlocked`.
 clearAchievement(achievementId: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:91
+Defined in: [electron/platform.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L91)
 
 Clear one platform achievement (debug / QA).
 
@@ -37746,7 +35731,7 @@ IPC: `platform-clear-achievement`.
 cloudSave(fileName: string, data: JsonValueV1): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:102
+Defined in: [electron/platform.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L102)
 
 Write one named blob to platform cloud storage.
 
@@ -37778,7 +35763,7 @@ IPC: `platform-cloud-save`.
 cloudLoad(fileName: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:112
+Defined in: [electron/platform.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L112)
 
 Read one named blob from platform cloud storage.
 
@@ -37804,7 +35789,7 @@ IPC: `platform-cloud-load`.
 cloudFileExists(fileName: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:122
+Defined in: [electron/platform.d.ts:122](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L122)
 
 Return whether a cloud file key exists.
 
@@ -37830,7 +35815,7 @@ IPC: `platform-cloud-file-exists`.
 cloudDelete(fileName: string): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:132
+Defined in: [electron/platform.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L132)
 
 Delete one named cloud file.
 
@@ -37856,7 +35841,7 @@ IPC: `platform-cloud-delete`.
 cloudSync(): Promise<unknown>
 ```
 
-Defined in: electron/platform.d.ts:141
+Defined in: [electron/platform.d.ts:141](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L141)
 
 Sync local saves with platform cloud storage.
 
@@ -37873,8 +35858,7 @@ IPC: `platform-cloud-sync`.
 #### ElectronSuccessResult :id=electron.electronsuccessresult
 
 <p class="smt-member-path"><code>electron.ElectronSuccessResult</code></p>
-
-Defined in: electron/results.d.ts:10
+Defined in: [electron/results.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L10)
 
 Successful invoke result from save, settings, and window handlers.
 
@@ -37886,7 +35870,7 @@ Successful invoke result from save, settings, and window handlers.
 success: true
 ```
 
-Defined in: electron/results.d.ts:12
+Defined in: [electron/results.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L12)
 
 Always `true` for this branch of the result union.
 
@@ -37896,7 +35880,7 @@ Always `true` for this branch of the result union.
 optional path?: string
 ```
 
-Defined in: electron/results.d.ts:14
+Defined in: [electron/results.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L14)
 
 Absolute path written when a handler persists a file (save/custom map).
 
@@ -37905,8 +35889,7 @@ Absolute path written when a handler persists a file (save/custom map).
 #### ElectronFailureResult :id=electron.electronfailureresult
 
 <p class="smt-member-path"><code>electron.ElectronFailureResult</code></p>
-
-Defined in: electron/results.d.ts:20
+Defined in: [electron/results.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L20)
 
 Failed invoke result from save, settings, and window handlers.
 
@@ -37918,7 +35901,7 @@ Failed invoke result from save, settings, and window handlers.
 success: false
 ```
 
-Defined in: electron/results.d.ts:22
+Defined in: [electron/results.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L22)
 
 Always `false` for this branch of the result union.
 
@@ -37928,7 +35911,7 @@ Always `false` for this branch of the result union.
 error: string
 ```
 
-Defined in: electron/results.d.ts:24
+Defined in: [electron/results.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L24)
 
 Human-readable error message from the main process.
 
@@ -37937,8 +35920,7 @@ Human-readable error message from the main process.
 #### ElectronLicenseCheckResult :id=electron.electronlicensecheckresult
 
 <p class="smt-member-path"><code>electron.ElectronLicenseCheckResult</code></p>
-
-Defined in: electron/results.d.ts:35
+Defined in: [electron/results.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L35)
 
 MS Store license check result from [ElectronBridge.checkLicense](#checklicense).
 
@@ -37950,7 +35932,7 @@ MS Store license check result from [ElectronBridge.checkLicense](#checklicense).
 valid: boolean
 ```
 
-Defined in: electron/results.d.ts:37
+Defined in: [electron/results.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L37)
 
 Whether the current license is valid for play.
 
@@ -37960,7 +35942,7 @@ Whether the current license is valid for play.
 reason: string | null
 ```
 
-Defined in: electron/results.d.ts:39
+Defined in: [electron/results.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L39)
 
 Failure reason when `valid` is false; otherwise `null`.
 
@@ -37970,7 +35952,7 @@ Failure reason when `valid` is false; otherwise `null`.
 networkError: boolean
 ```
 
-Defined in: electron/results.d.ts:41
+Defined in: [electron/results.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L41)
 
 True when the check failed due to network or platform errors.
 
@@ -37980,7 +35962,7 @@ True when the check failed due to network or platform errors.
 cached: boolean
 ```
 
-Defined in: electron/results.d.ts:43
+Defined in: [electron/results.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L43)
 
 True when the result came from a cached license check.
 
@@ -37989,8 +35971,7 @@ True when the result came from a cached license check.
 #### ElectronSaveInput :id=electron.electronsaveinput
 
 <p class="smt-member-path"><code>electron.ElectronSaveInput</code></p>
-
-Defined in: electron/results.d.ts:49
+Defined in: [electron/results.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L49)
 
 Parsed game save payload passed to [ElectronBridge.save](#save).
 
@@ -38002,7 +35983,7 @@ Parsed game save payload passed to [ElectronBridge.save](#save).
 id: string
 ```
 
-Defined in: electron/results.d.ts:51
+Defined in: [electron/results.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L51)
 
 Save slot id (sanitized filename stem).
 
@@ -38012,7 +35993,7 @@ Save slot id (sanitized filename stem).
 name: string
 ```
 
-Defined in: electron/results.d.ts:53
+Defined in: [electron/results.d.ts:53](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L53)
 
 Display name shown in the save UI.
 
@@ -38022,7 +36003,7 @@ Display name shown in the save UI.
 data: JsonValueV1
 ```
 
-Defined in: electron/results.d.ts:55
+Defined in: [electron/results.d.ts:55](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L55)
 
 Full serialized game state (`{ store: … }` shape).
 
@@ -38031,8 +36012,7 @@ Full serialized game state (`{ store: … }` shape).
 #### ElectronLoadSuccessResult :id=electron.electronloadsuccessresult
 
 <p class="smt-member-path"><code>electron.ElectronLoadSuccessResult</code></p>
-
-Defined in: electron/results.d.ts:61
+Defined in: [electron/results.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L61)
 
 Successful load result from [ElectronBridge.load](#load).
 
@@ -38044,7 +36024,7 @@ Successful load result from [ElectronBridge.load](#load).
 success: true
 ```
 
-Defined in: electron/results.d.ts:63
+Defined in: [electron/results.d.ts:63](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L63)
 
 Always `true` for this branch of the result union.
 
@@ -38054,7 +36034,7 @@ Always `true` for this branch of the result union.
 data: JsonValueV1
 ```
 
-Defined in: electron/results.d.ts:65
+Defined in: [electron/results.d.ts:65](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L65)
 
 Parsed save body (`{ store: … }`).
 
@@ -38063,8 +36043,7 @@ Parsed save body (`{ store: … }`).
 #### ElectronLoadFailureResult :id=electron.electronloadfailureresult
 
 <p class="smt-member-path"><code>electron.ElectronLoadFailureResult</code></p>
-
-Defined in: electron/results.d.ts:71
+Defined in: [electron/results.d.ts:71](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L71)
 
 Failed load result from [ElectronBridge.load](#load).
 
@@ -38076,7 +36055,7 @@ Failed load result from [ElectronBridge.load](#load).
 success: false
 ```
 
-Defined in: electron/results.d.ts:73
+Defined in: [electron/results.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L73)
 
 Always `false` for this branch of the result union.
 
@@ -38086,7 +36065,7 @@ Always `false` for this branch of the result union.
 error: string
 ```
 
-Defined in: electron/results.d.ts:75
+Defined in: [electron/results.d.ts:75](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L75)
 
 Human-readable load failure message.
 
@@ -38095,8 +36074,7 @@ Human-readable load failure message.
 #### ElectronSaveFileMetadata :id=electron.electronsavefilemetadata
 
 <p class="smt-member-path"><code>electron.ElectronSaveFileMetadata</code></p>
-
-Defined in: electron/results.d.ts:86
+Defined in: [electron/results.d.ts:86](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L86)
 
 Metadata parsed from the first line of one `.save` file.
 
@@ -38110,7 +36088,7 @@ Returned by [ElectronBridge.getSaveFiles](#getsavefiles).
 id: string
 ```
 
-Defined in: electron/results.d.ts:88
+Defined in: [electron/results.d.ts:88](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L88)
 
 Save slot id (filename stem).
 
@@ -38120,7 +36098,7 @@ Save slot id (filename stem).
 name: string
 ```
 
-Defined in: electron/results.d.ts:90
+Defined in: [electron/results.d.ts:90](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L90)
 
 Display name stored in the save header.
 
@@ -38130,7 +36108,7 @@ Display name stored in the save header.
 timestamp: string
 ```
 
-Defined in: electron/results.d.ts:92
+Defined in: [electron/results.d.ts:92](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L92)
 
 ISO timestamp string when the save was written.
 
@@ -38140,7 +36118,7 @@ ISO timestamp string when the save was written.
 optional playTime?: number
 ```
 
-Defined in: electron/results.d.ts:94
+Defined in: [electron/results.d.ts:94](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L94)
 
 Total play time in milliseconds from the save body.
 
@@ -38150,7 +36128,7 @@ Total play time in milliseconds from the save body.
 optional worldId?: string | null
 ```
 
-Defined in: electron/results.d.ts:96
+Defined in: [electron/results.d.ts:96](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L96)
 
 World template id, if present.
 
@@ -38160,7 +36138,7 @@ World template id, if present.
 optional worldName?: string | null
 ```
 
-Defined in: electron/results.d.ts:98
+Defined in: [electron/results.d.ts:98](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L98)
 
 World display name, if present.
 
@@ -38170,7 +36148,7 @@ World display name, if present.
 optional seed?: number | null
 ```
 
-Defined in: electron/results.d.ts:100
+Defined in: [electron/results.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L100)
 
 World seed, if present.
 
@@ -38180,7 +36158,7 @@ World seed, if present.
 optional productionPoints?: number
 ```
 
-Defined in: electron/results.d.ts:102
+Defined in: [electron/results.d.ts:102](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L102)
 
 Factory production points at save time.
 
@@ -38190,7 +36168,7 @@ Factory production points at save time.
 optional structureCount?: number
 ```
 
-Defined in: electron/results.d.ts:104
+Defined in: [electron/results.d.ts:104](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L104)
 
 Number of placed structures at save time.
 
@@ -38200,7 +36178,7 @@ Number of placed structures at save time.
 optional resources?: JsonValueV1
 ```
 
-Defined in: electron/results.d.ts:106
+Defined in: [electron/results.d.ts:106](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L106)
 
 Resource snapshot (`gold`, `fluxite`, `artifacts`, …).
 
@@ -38209,8 +36187,7 @@ Resource snapshot (`gold`, `fluxite`, `artifacts`, …).
 #### ElectronExportSaveSuccessResult :id=electron.electronexportsavesuccessresult
 
 <p class="smt-member-path"><code>electron.ElectronExportSaveSuccessResult</code></p>
-
-Defined in: electron/results.d.ts:112
+Defined in: [electron/results.d.ts:112](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L112)
 
 Successful export result from [ElectronBridge.exportSave](#exportsave).
 
@@ -38222,7 +36199,7 @@ Successful export result from [ElectronBridge.exportSave](#exportsave).
 success: true
 ```
 
-Defined in: electron/results.d.ts:114
+Defined in: [electron/results.d.ts:114](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L114)
 
 Always `true` for this branch of the result union.
 
@@ -38232,7 +36209,7 @@ Always `true` for this branch of the result union.
 data: Uint8Array
 ```
 
-Defined in: electron/results.d.ts:116
+Defined in: [electron/results.d.ts:116](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L116)
 
 Raw `.save` file bytes (metadata line + gzip payload).
 
@@ -38241,8 +36218,7 @@ Raw `.save` file bytes (metadata line + gzip payload).
 #### ElectronImportSaveSuccessResult :id=electron.electronimportsavesuccessresult
 
 <p class="smt-member-path"><code>electron.ElectronImportSaveSuccessResult</code></p>
-
-Defined in: electron/results.d.ts:127
+Defined in: [electron/results.d.ts:127](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L127)
 
 Successful import result from [ElectronBridge.importSave](#importsave).
 
@@ -38254,7 +36230,7 @@ Successful import result from [ElectronBridge.importSave](#importsave).
 success: true
 ```
 
-Defined in: electron/results.d.ts:129
+Defined in: [electron/results.d.ts:129](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L129)
 
 Always `true` for this branch of the result union.
 
@@ -38264,7 +36240,7 @@ Always `true` for this branch of the result union.
 metaData: JsonValueV1
 ```
 
-Defined in: electron/results.d.ts:131
+Defined in: [electron/results.d.ts:131](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L131)
 
 Metadata parsed from the imported file header line.
 
@@ -38273,8 +36249,7 @@ Metadata parsed from the imported file header line.
 #### ElectronLastPlayedGame :id=electron.electronlastplayedgame
 
 <p class="smt-member-path"><code>electron.ElectronLastPlayedGame</code></p>
-
-Defined in: electron/results.d.ts:140
+Defined in: [electron/results.d.ts:140](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L140)
 
 Last-played save marker written by [ElectronBridge.saveLastPlayedGame](#savelastplayedgame).
 
@@ -38286,7 +36261,7 @@ Last-played save marker written by [ElectronBridge.saveLastPlayedGame](#savelast
 optional id?: string
 ```
 
-Defined in: electron/results.d.ts:142
+Defined in: [electron/results.d.ts:142](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L142)
 
 Save slot id of the last played game.
 
@@ -38295,8 +36270,7 @@ Save slot id of the last played game.
 #### ElectronSystemInfo :id=electron.electronsysteminfo
 
 <p class="smt-member-path"><code>electron.ElectronSystemInfo</code></p>
-
-Defined in: electron/results.d.ts:150
+Defined in: [electron/results.d.ts:150](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L150)
 
 Local process/runtime versions from [ElectronBridge.getSystemInfo](#getsysteminfo).
 
@@ -38310,7 +36284,7 @@ Read directly in the preload script — no IPC round trip.
 platform: string
 ```
 
-Defined in: electron/results.d.ts:152
+Defined in: [electron/results.d.ts:152](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L152)
 
 Node `process.platform` (for example `linux`, `win32`).
 
@@ -38320,7 +36294,7 @@ Node `process.platform` (for example `linux`, `win32`).
 arch: string
 ```
 
-Defined in: electron/results.d.ts:154
+Defined in: [electron/results.d.ts:154](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L154)
 
 CPU architecture string from `process.arch`.
 
@@ -38330,7 +36304,7 @@ CPU architecture string from `process.arch`.
 electronVersion: string
 ```
 
-Defined in: electron/results.d.ts:156
+Defined in: [electron/results.d.ts:156](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L156)
 
 Electron runtime version from `process.versions.electron`.
 
@@ -38340,7 +36314,7 @@ Electron runtime version from `process.versions.electron`.
 chromeVersion: string
 ```
 
-Defined in: electron/results.d.ts:158
+Defined in: [electron/results.d.ts:158](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L158)
 
 Chromium version from `process.versions.chrome`.
 
@@ -38350,7 +36324,7 @@ Chromium version from `process.versions.chrome`.
 nodeVersion: string
 ```
 
-Defined in: electron/results.d.ts:160
+Defined in: [electron/results.d.ts:160](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L160)
 
 Node.js version from `process.versions.node`.
 
@@ -38359,8 +36333,7 @@ Node.js version from `process.versions.node`.
 #### ElectronLocalModsListResult :id=electron.electronlocalmodslistresult
 
 <p class="smt-member-path"><code>electron.ElectronLocalModsListResult</code></p>
-
-Defined in: electron/results.d.ts:166
+Defined in: [electron/results.d.ts:166](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L166)
 
 Result from [ElectronLocalModsApi.list](#list-1).
 
@@ -38372,7 +36345,7 @@ Result from [ElectronLocalModsApi.list](#list-1).
 ok: boolean
 ```
 
-Defined in: electron/results.d.ts:168
+Defined in: [electron/results.d.ts:168](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L168)
 
 True when the listing succeeded.
 
@@ -38382,7 +36355,7 @@ True when the listing succeeded.
 data: JsonValueV1[]
 ```
 
-Defined in: electron/results.d.ts:170
+Defined in: [electron/results.d.ts:170](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L170)
 
 Local mod summary objects when `ok` is true; otherwise `[]`.
 
@@ -38392,7 +36365,7 @@ Local mod summary objects when `ok` is true; otherwise `[]`.
 optional errorCode?: string
 ```
 
-Defined in: electron/results.d.ts:172
+Defined in: [electron/results.d.ts:172](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L172)
 
 Error code when `ok` is false (for example `unsupported_platform`).
 
@@ -38401,8 +36374,7 @@ Error code when `ok` is false (for example `unsupported_platform`).
 #### ElectronLocalModsUploadResult :id=electron.electronlocalmodsuploadresult
 
 <p class="smt-member-path"><code>electron.ElectronLocalModsUploadResult</code></p>
-
-Defined in: electron/results.d.ts:178
+Defined in: [electron/results.d.ts:178](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L178)
 
 Result from [ElectronLocalModsApi.upload](#upload).
 
@@ -38414,7 +36386,7 @@ Result from [ElectronLocalModsApi.upload](#upload).
 ok: boolean
 ```
 
-Defined in: electron/results.d.ts:180
+Defined in: [electron/results.d.ts:180](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L180)
 
 True when Workshop upload succeeded.
 
@@ -38424,7 +36396,7 @@ True when Workshop upload succeeded.
 optional errorCode?: string
 ```
 
-Defined in: electron/results.d.ts:182
+Defined in: [electron/results.d.ts:182](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L182)
 
 Error code when `ok` is false.
 
@@ -38434,7 +36406,7 @@ Error code when `ok` is false.
 optional detail?: string
 ```
 
-Defined in: electron/results.d.ts:184
+Defined in: [electron/results.d.ts:184](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L184)
 
 Extra failure detail logged by the main process.
 
@@ -38443,8 +36415,7 @@ Extra failure detail logged by the main process.
 #### ElectronOpenUrlResult :id=electron.electronopenurlresult
 
 <p class="smt-member-path"><code>electron.ElectronOpenUrlResult</code></p>
-
-Defined in: electron/results.d.ts:190
+Defined in: [electron/results.d.ts:190](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L190)
 
 Result from [ElectronBridge.openExternalBrowser](#openexternalbrowser).
 
@@ -38456,7 +36427,7 @@ Result from [ElectronBridge.openExternalBrowser](#openexternalbrowser).
 success: boolean
 ```
 
-Defined in: electron/results.d.ts:192
+Defined in: [electron/results.d.ts:192](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L192)
 
 True when the OS opened the URL.
 
@@ -38466,7 +36437,7 @@ True when the OS opened the URL.
 optional error?: string
 ```
 
-Defined in: electron/results.d.ts:194
+Defined in: [electron/results.d.ts:194](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L194)
 
 Failure reason (for example `unsupported-url`).
 
@@ -38475,8 +36446,7 @@ Failure reason (for example `unsupported-url`).
 #### ElectronPrimeAchievementsResult :id=electron.electronprimeachievementsresult
 
 <p class="smt-member-path"><code>electron.ElectronPrimeAchievementsResult</code></p>
-
-Defined in: electron/results.d.ts:200
+Defined in: [electron/results.d.ts:200](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L200)
 
 Result from [ElectronBridge.platformPrimeAchievements](#platformprimeachievements).
 
@@ -38488,7 +36458,7 @@ Result from [ElectronBridge.platformPrimeAchievements](#platformprimeachievement
 success: boolean
 ```
 
-Defined in: electron/results.d.ts:202
+Defined in: [electron/results.d.ts:202](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L202)
 
 True when the cache seed completed.
 
@@ -38498,7 +36468,7 @@ True when the cache seed completed.
 optional error?: string
 ```
 
-Defined in: electron/results.d.ts:204
+Defined in: [electron/results.d.ts:204](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L204)
 
 Failure message when `success` is false.
 
@@ -38507,8 +36477,7 @@ Failure message when `success` is false.
 #### ElectronReauthPromptResult :id=electron.electronreauthpromptresult
 
 <p class="smt-member-path"><code>electron.ElectronReauthPromptResult</code></p>
-
-Defined in: electron/results.d.ts:210
+Defined in: [electron/results.d.ts:210](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L210)
 
 Result from [ElectronBridge.platformShowReauthPrompt](#platformshowreauthprompt).
 
@@ -38520,7 +36489,7 @@ Result from [ElectronBridge.platformShowReauthPrompt](#platformshowreauthprompt)
 optional response?: number
 ```
 
-Defined in: electron/results.d.ts:212
+Defined in: [electron/results.d.ts:212](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L212)
 
 Button index chosen in the native MS Store dialog.
 
@@ -38530,7 +36499,7 @@ Button index chosen in the native MS Store dialog.
 optional dismissed?: boolean
 ```
 
-Defined in: electron/results.d.ts:214
+Defined in: [electron/results.d.ts:214](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L214)
 
 True on Steam where no dialog is shown.
 
@@ -38539,8 +36508,7 @@ True on Steam where no dialog is shown.
 #### ElectronWorkshopApi :id=electron.electronworkshopapi
 
 <p class="smt-member-path"><code>electron.ElectronWorkshopApi</code></p>
-
-Defined in: electron/workshop.d.ts:12
+Defined in: [electron/workshop.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L12)
 
 Steam Workshop helpers exposed as `electron.platform.workshop`.
 
@@ -38554,7 +36522,7 @@ Steam only — calls fail gracefully on MS Store.
 subscribe(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:21
+Defined in: [electron/workshop.d.ts:21](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L21)
 
 Subscribe to a Workshop item.
 
@@ -38580,7 +36548,7 @@ IPC: `platform-workshop-subscribe`.
 unsubscribe(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:31
+Defined in: [electron/workshop.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L31)
 
 Unsubscribe from a Workshop item.
 
@@ -38606,7 +36574,7 @@ IPC: `platform-workshop-unsubscribe`.
 installInfo(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:41
+Defined in: [electron/workshop.d.ts:41](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L41)
 
 Return install state for a subscribed Workshop item.
 
@@ -38632,7 +36600,7 @@ IPC: `platform-workshop-install-info`.
 downloadInfo(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:51
+Defined in: [electron/workshop.d.ts:51](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L51)
 
 Return download progress for a Workshop item.
 
@@ -38658,7 +36626,7 @@ IPC: `platform-workshop-download-info`.
 getState(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:61
+Defined in: [electron/workshop.d.ts:61](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L61)
 
 Return the Steam Workshop item state flags.
 
@@ -38684,7 +36652,7 @@ IPC: `platform-workshop-state`.
 getSubscribedItems(): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:70
+Defined in: [electron/workshop.d.ts:70](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L70)
 
 Return all subscribed Workshop item ids.
 
@@ -38702,7 +36670,7 @@ IPC: `platform-workshop-subscribed-list`.
 getItem(itemId: string | number): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:80
+Defined in: [electron/workshop.d.ts:80](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L80)
 
 Fetch Workshop item metadata.
 
@@ -38728,7 +36696,7 @@ IPC: `platform-workshop-get-item`.
 download(itemId: string | number, highPriority?: boolean): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:91
+Defined in: [electron/workshop.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L91)
 
 Queue or prioritize a Workshop item download.
 
@@ -38760,7 +36728,7 @@ IPC: `platform-workshop-download`.
 getSandkitMods(): Promise<unknown>
 ```
 
-Defined in: electron/workshop.d.ts:100
+Defined in: [electron/workshop.d.ts:100](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L100)
 
 Discover Sandkit Workshop mods installed for the current session.
 
@@ -38776,13 +36744,11 @@ IPC: `platform-workshop-sandkit-mods`.
 
 #### ElectronPlatform :id=electron.electronplatform
 
-<p class="smt-member-path"><code>electron.ElectronPlatform</code></p>
-
 ```ts
-ElectronPlatform = "steam" | "msstore" | "gog" | string & object
+electron.ElectronPlatform = "steam" | "msstore" | "gog" | string & object
 ```
 
-Defined in: electron/primitives.d.ts:10
+Defined in: [electron/primitives.d.ts:10](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L10)
 
 Sandustry distribution channel string.
 
@@ -38792,13 +36758,11 @@ Returned by [ElectronBridge.getPlatformSync](#getplatformsync).
 
 #### ElectronLogLevel :id=electron.electronloglevel
 
-<p class="smt-member-path"><code>electron.ElectronLogLevel</code></p>
-
 ```ts
-ElectronLogLevel = "debug" | "info" | "warn" | "error"
+electron.ElectronLogLevel = "debug" | "info" | "warn" | "error"
 ```
 
-Defined in: electron/primitives.d.ts:17
+Defined in: [electron/primitives.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L17)
 
 Severity level written through [ElectronBridge.log](#log).
 
@@ -38808,13 +36772,11 @@ Maps to the main-process file logger (`logs/main.log`).
 
 #### ElectronIpcListener :id=electron.electronipclistener
 
-<p class="smt-member-path"><code>electron.ElectronIpcListener</code></p>
-
 ```ts
-ElectronIpcListener = (...args: unknown[]) => void
+electron.ElectronIpcListener = (...args: unknown[]) => void
 ```
 
-Defined in: electron/primitives.d.ts:24
+Defined in: [electron/primitives.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L24)
 
 Callback registered on IPC event channels such as `app-suspend`.
 
@@ -38834,13 +36796,11 @@ Event-specific payload from the main process (often empty).
 
 #### ElectronOperationResult :id=electron.electronoperationresult
 
-<p class="smt-member-path"><code>electron.ElectronOperationResult</code></p>
-
 ```ts
-ElectronOperationResult = ElectronSuccessResult | ElectronFailureResult
+electron.ElectronOperationResult = ElectronSuccessResult | ElectronFailureResult
 ```
 
-Defined in: electron/results.d.ts:30
+Defined in: [electron/results.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L30)
 
 Result union returned by most save, settings, and window invoke handlers.
 
@@ -38848,13 +36808,11 @@ Result union returned by most save, settings, and window invoke handlers.
 
 #### ElectronLoadResult :id=electron.electronloadresult
 
-<p class="smt-member-path"><code>electron.ElectronLoadResult</code></p>
-
 ```ts
-ElectronLoadResult = ElectronLoadSuccessResult | ElectronLoadFailureResult
+electron.ElectronLoadResult = ElectronLoadSuccessResult | ElectronLoadFailureResult
 ```
 
-Defined in: electron/results.d.ts:79
+Defined in: [electron/results.d.ts:79](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L79)
 
 Result from [ElectronBridge.load](#load).
 
@@ -38862,13 +36820,11 @@ Result from [ElectronBridge.load](#load).
 
 #### ElectronExportSaveResult :id=electron.electronexportsaveresult
 
-<p class="smt-member-path"><code>electron.ElectronExportSaveResult</code></p>
-
 ```ts
-ElectronExportSaveResult = ElectronExportSaveSuccessResult | ElectronFailureResult
+electron.ElectronExportSaveResult = ElectronExportSaveSuccessResult | ElectronFailureResult
 ```
 
-Defined in: electron/results.d.ts:120
+Defined in: [electron/results.d.ts:120](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L120)
 
 Result from [ElectronBridge.exportSave](#exportsave).
 
@@ -38876,13 +36832,11 @@ Result from [ElectronBridge.exportSave](#exportsave).
 
 #### ElectronImportSaveResult :id=electron.electronimportsaveresult
 
-<p class="smt-member-path"><code>electron.ElectronImportSaveResult</code></p>
-
 ```ts
-ElectronImportSaveResult = ElectronImportSaveSuccessResult | ElectronFailureResult
+electron.ElectronImportSaveResult = ElectronImportSaveSuccessResult | ElectronFailureResult
 ```
 
-Defined in: electron/results.d.ts:135
+Defined in: [electron/results.d.ts:135](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L135)
 
 Result from [ElectronBridge.importSave](#importsave).
 
@@ -38895,7 +36849,6 @@ Result from [ElectronBridge.importSave](#importsave).
 #### AssetRef :id=shared.asset.assetref
 
 <p class="smt-member-path"><code>shared.asset.AssetRef</code></p>
-
 Defined in: [shared/asset.d.ts:9](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/asset.d.ts#L9)
 
 Reference to a loaded sprite or texture asset.
@@ -38930,10 +36883,8 @@ Asset category discriminator used by the renderer.
 
 #### EngineFn :id=shared.engine.enginefn
 
-<p class="smt-member-path"><code>shared.engine.EngineFn</code></p>
-
 ```ts
-EngineFn = (...args: unknown[]) => unknown
+shared.engine.EngineFn = (...args: unknown[]) => unknown
 ```
 
 Defined in: [shared/engine.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L11)
@@ -38956,10 +36907,8 @@ Stub for an unresolved engine method.
 
 #### EngineOverlapNs :id=shared.engine.engineoverlapns
 
-<p class="smt-member-path"><code>shared.engine.EngineOverlapNs</code></p>
-
 ```ts
-EngineOverlapNs = Record<string, EngineFn | Record<string, unknown> | unknown>
+shared.engine.EngineOverlapNs = Record<string, EngineFn | Record<string, unknown> | unknown>
 ```
 
 Defined in: [shared/engine.d.ts:17](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L17)
@@ -38977,7 +36926,6 @@ Loose bag for namespaces that overlap `sandkit.api` (different names / state-fir
 #### JsonObjectV1 :id=shared.jsonvalue.jsonobjectv1
 
 <p class="smt-member-path"><code>shared.jsonvalue.JsonObjectV1</code></p>
-
 Defined in: [shared/jsonvalue.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/jsonvalue.d.ts#L15)
 
 JSON object with string keys and [JsonValueV1](#jsonvaluev1) values.
@@ -38994,10 +36942,8 @@ Use for open-ended config bags and serialized mod data.
 
 #### JsonValueV1 :id=shared.jsonvalue.jsonvaluev1
 
-<p class="smt-member-path"><code>shared.jsonvalue.JsonValueV1</code></p>
-
 ```ts
-JsonValueV1 = string | number | boolean | JsonObjectV1 | JsonValueV1[] | null
+shared.jsonvalue.JsonValueV1 = string | number | boolean | JsonObjectV1 | JsonValueV1[] | null
 ```
 
 Defined in: [shared/jsonvalue.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/jsonvalue.d.ts#L24)
@@ -39014,10 +36960,8 @@ Does not include `undefined` — omit keys instead.
 
 #### LooseString :id=shared.nominal.loosestring
 
-<p class="smt-member-path"><code>shared.nominal.LooseString</code></p>
-
 ```ts
-LooseString<T *extends* string> = T | string & object
+shared.nominal.LooseString<T *extends* string> = T | string & object
 ```
 
 Defined in: [shared/nominal.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L16)
@@ -39035,10 +36979,8 @@ Known string literals plus any other string.
 
 #### LooseNumber :id=shared.nominal.loosenumber
 
-<p class="smt-member-path"><code>shared.nominal.LooseNumber</code></p>
-
 ```ts
-LooseNumber<T *extends* number> = T | number & object
+shared.nominal.LooseNumber<T *extends* number> = T | number & object
 ```
 
 Defined in: [shared/nominal.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L22)
@@ -39056,10 +36998,8 @@ Known numeric literals plus any other number.
 
 #### TaggedNumber :id=shared.nominal.taggednumber
 
-<p class="smt-member-path"><code>shared.nominal.TaggedNumber</code></p>
-
 ```ts
-TaggedNumber<Tag *extends* string> = number & object
+shared.nominal.TaggedNumber<Tag *extends* string> = number & object
 ```
 
 Defined in: [shared/nominal.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L28)
@@ -39085,10 +37025,8 @@ readonly optional \_\_tag?: Tag
 
 #### CellId :id=shared.nominal.cellid
 
-<p class="smt-member-path"><code>shared.nominal.CellId</code></p>
-
 ```ts
-CellId = TaggedNumber<"cellId">
+shared.nominal.CellId = TaggedNumber<"cellId">
 ```
 
 Defined in: [shared/nominal.d.ts:31](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L31)
@@ -39104,7 +37042,6 @@ Packed simulation cell id from `world.getCellIdAtCell`.
 #### Player :id=shared.player.player
 
 <p class="smt-member-path"><code>shared.player.Player</code></p>
-
 Defined in: [shared/player.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L34)
 
 Live player state snapshot (read-only shape for mods).
@@ -39481,7 +37418,6 @@ reloading: boolean
 #### InventoryItem :id=shared.player.inventoryitem
 
 <p class="smt-member-path"><code>shared.player.InventoryItem</code></p>
-
 Defined in: [shared/player.d.ts:146](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L146)
 
 One hotbar or inventory item entry.
@@ -39588,10 +37524,8 @@ Defined in: [shared/player.d.ts:172](https://github.com/sandustry-modding/Sandus
 
 #### CellCoordinates :id=shared.player.cellcoordinates
 
-<p class="smt-member-path"><code>shared.player.CellCoordinates</code></p>
-
 ```ts
-CellCoordinates = [number, number]
+shared.player.CellCoordinates = [number, number]
 ```
 
 Defined in: [shared/player.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L14)
@@ -39604,10 +37538,8 @@ Cell coordinates match `sandkit.api.*AtCell` helpers: column first, then row.
 
 #### Vector2 :id=shared.player.vector2
 
-<p class="smt-member-path"><code>shared.player.Vector2</code></p>
-
 ```ts
-Vector2 = object
+shared.player.Vector2 = object
 ```
 
 Defined in: [shared/player.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L22)
@@ -39651,10 +37583,8 @@ Built-in structure type ids used during placement.
 
 #### ConveyorLeft :id=sandkit.api.building.StructureType.conveyorleft
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.ConveyorLeft</code></p>
-
 ```ts
-ConveyorLeft: 1
+sandkit.api.building.StructureType.ConveyorLeft: 1
 ```
 
 Defined in: [sandkit/api/building.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L12)
@@ -39665,10 +37595,8 @@ Left-facing conveyor belt.
 
 #### ConveyorRight :id=sandkit.api.building.StructureType.conveyorright
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.ConveyorRight</code></p>
-
 ```ts
-ConveyorRight: 2
+sandkit.api.building.StructureType.ConveyorRight: 2
 ```
 
 Defined in: [sandkit/api/building.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L14)
@@ -39679,10 +37607,8 @@ Right-facing conveyor belt.
 
 #### ShakerLeft :id=sandkit.api.building.StructureType.shakerleft
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.ShakerLeft</code></p>
-
 ```ts
-ShakerLeft: 3
+sandkit.api.building.StructureType.ShakerLeft: 3
 ```
 
 Defined in: [sandkit/api/building.d.ts:16](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L16)
@@ -39693,10 +37619,8 @@ Left-facing shaker.
 
 #### ShakerRight :id=sandkit.api.building.StructureType.shakerright
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.ShakerRight</code></p>
-
 ```ts
-ShakerRight: 4
+sandkit.api.building.StructureType.ShakerRight: 4
 ```
 
 Defined in: [sandkit/api/building.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L18)
@@ -39707,10 +37631,8 @@ Right-facing shaker.
 
 #### LauncherUp :id=sandkit.api.building.StructureType.launcherup
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.LauncherUp</code></p>
-
 ```ts
-LauncherUp: 5
+sandkit.api.building.StructureType.LauncherUp: 5
 ```
 
 Defined in: [sandkit/api/building.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L20)
@@ -39721,10 +37643,8 @@ Up-facing launcher.
 
 #### LauncherLeft :id=sandkit.api.building.StructureType.launcherleft
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.LauncherLeft</code></p>
-
 ```ts
-LauncherLeft: 6
+sandkit.api.building.StructureType.LauncherLeft: 6
 ```
 
 Defined in: [sandkit/api/building.d.ts:22](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L22)
@@ -39735,10 +37655,8 @@ Left-facing launcher.
 
 #### LauncherRight :id=sandkit.api.building.StructureType.launcherright
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.LauncherRight</code></p>
-
 ```ts
-LauncherRight: 7
+sandkit.api.building.StructureType.LauncherRight: 7
 ```
 
 Defined in: [sandkit/api/building.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L24)
@@ -39749,10 +37667,8 @@ Right-facing launcher.
 
 #### SplitterLeft :id=sandkit.api.building.StructureType.splitterleft
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.SplitterLeft</code></p>
-
 ```ts
-SplitterLeft: 8
+sandkit.api.building.StructureType.SplitterLeft: 8
 ```
 
 Defined in: [sandkit/api/building.d.ts:26](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L26)
@@ -39763,10 +37679,8 @@ Left-facing splitter.
 
 #### SplitterRight :id=sandkit.api.building.StructureType.splitterright
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.SplitterRight</code></p>
-
 ```ts
-SplitterRight: 9
+sandkit.api.building.StructureType.SplitterRight: 9
 ```
 
 Defined in: [sandkit/api/building.d.ts:28](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L28)
@@ -39777,10 +37691,8 @@ Right-facing splitter.
 
 #### Dropper :id=sandkit.api.building.StructureType.dropper
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.Dropper</code></p>
-
 ```ts
-Dropper: 10
+sandkit.api.building.StructureType.Dropper: 10
 ```
 
 Defined in: [sandkit/api/building.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L30)
@@ -39791,10 +37703,8 @@ Dropper structure.
 
 #### Foundation :id=sandkit.api.building.StructureType.foundation
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.Foundation</code></p>
-
 ```ts
-Foundation: 11
+sandkit.api.building.StructureType.Foundation: 11
 ```
 
 Defined in: [sandkit/api/building.d.ts:32](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L32)
@@ -39805,10 +37715,8 @@ Foundation block.
 
 #### FoundationAngledLeft :id=sandkit.api.building.StructureType.foundationangledleft
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.FoundationAngledLeft</code></p>
-
 ```ts
-FoundationAngledLeft: 12
+sandkit.api.building.StructureType.FoundationAngledLeft: 12
 ```
 
 Defined in: [sandkit/api/building.d.ts:34](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L34)
@@ -39819,10 +37727,8 @@ Angled foundation facing left.
 
 #### FoundationTriangleLeftDel :id=sandkit.api.building.StructureType.foundationtriangleleftdel
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.FoundationTriangleLeftDel</code></p>
-
 ```ts
-FoundationTriangleLeftDel: 13
+sandkit.api.building.StructureType.FoundationTriangleLeftDel: 13
 ```
 
 Defined in: [sandkit/api/building.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L36)
@@ -39833,10 +37739,8 @@ Left triangle foundation (deprecated id).
 
 #### FoundationAngledRight :id=sandkit.api.building.StructureType.foundationangledright
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.FoundationAngledRight</code></p>
-
 ```ts
-FoundationAngledRight: 14
+sandkit.api.building.StructureType.FoundationAngledRight: 14
 ```
 
 Defined in: [sandkit/api/building.d.ts:38](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L38)
@@ -39847,10 +37751,8 @@ Angled foundation facing right.
 
 #### FoundationTriangleRightDel :id=sandkit.api.building.StructureType.foundationtrianglerightdel
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.FoundationTriangleRightDel</code></p>
-
 ```ts
-FoundationTriangleRightDel: 15
+sandkit.api.building.StructureType.FoundationTriangleRightDel: 15
 ```
 
 Defined in: [sandkit/api/building.d.ts:40](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L40)
@@ -39861,10 +37763,8 @@ Right triangle foundation (deprecated id).
 
 #### Collector :id=sandkit.api.building.StructureType.collector
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.Collector</code></p>
-
 ```ts
-Collector: 16
+sandkit.api.building.StructureType.Collector: 16
 ```
 
 Defined in: [sandkit/api/building.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L42)
@@ -39875,10 +37775,8 @@ Collector structure.
 
 #### FilterLeft :id=sandkit.api.building.StructureType.filterleft
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.FilterLeft</code></p>
-
 ```ts
-FilterLeft: 17
+sandkit.api.building.StructureType.FilterLeft: 17
 ```
 
 Defined in: [sandkit/api/building.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L44)
@@ -39889,10 +37787,8 @@ Left-facing filter.
 
 #### FilterRight :id=sandkit.api.building.StructureType.filterright
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.FilterRight</code></p>
-
 ```ts
-FilterRight: 18
+sandkit.api.building.StructureType.FilterRight: 18
 ```
 
 Defined in: [sandkit/api/building.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L46)
@@ -39903,10 +37799,8 @@ Right-facing filter.
 
 #### SlidingFoundation :id=sandkit.api.building.StructureType.slidingfoundation
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.SlidingFoundation</code></p>
-
 ```ts
-SlidingFoundation: 19
+sandkit.api.building.StructureType.SlidingFoundation: 19
 ```
 
 Defined in: [sandkit/api/building.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L48)
@@ -39917,10 +37811,8 @@ Sliding foundation block.
 
 #### VelocitySoaker :id=sandkit.api.building.StructureType.velocitysoaker
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.VelocitySoaker</code></p>
-
 ```ts
-VelocitySoaker: 20
+sandkit.api.building.StructureType.VelocitySoaker: 20
 ```
 
 Defined in: [sandkit/api/building.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L50)
@@ -39931,10 +37823,8 @@ Velocity soaker structure.
 
 #### Grower :id=sandkit.api.building.StructureType.grower
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.Grower</code></p>
-
 ```ts
-Grower: 21
+sandkit.api.building.StructureType.Grower: 21
 ```
 
 Defined in: [sandkit/api/building.d.ts:52](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L52)
@@ -39945,10 +37835,8 @@ Grower structure.
 
 #### SoundBox :id=sandkit.api.building.StructureType.soundbox
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.SoundBox</code></p>
-
 ```ts
-SoundBox: 22
+sandkit.api.building.StructureType.SoundBox: 22
 ```
 
 Defined in: [sandkit/api/building.d.ts:54](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L54)
@@ -39959,10 +37847,8 @@ Sound box structure.
 
 #### Pipe :id=sandkit.api.building.StructureType.pipe
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.Pipe</code></p>
-
 ```ts
-Pipe: 23
+sandkit.api.building.StructureType.Pipe: 23
 ```
 
 Defined in: [sandkit/api/building.d.ts:56](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L56)
@@ -39973,10 +37859,8 @@ Pipe segment.
 
 #### Pump :id=sandkit.api.building.StructureType.pump
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.Pump</code></p>
-
 ```ts
-Pump: 24
+sandkit.api.building.StructureType.Pump: 24
 ```
 
 Defined in: [sandkit/api/building.d.ts:58](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L58)
@@ -39987,10 +37871,8 @@ Pump structure.
 
 #### LiquidVent :id=sandkit.api.building.StructureType.liquidvent
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.LiquidVent</code></p>
-
 ```ts
-LiquidVent: 25
+sandkit.api.building.StructureType.LiquidVent: 25
 ```
 
 Defined in: [sandkit/api/building.d.ts:60](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L60)
@@ -40001,10 +37883,8 @@ Liquid vent structure.
 
 #### Light :id=sandkit.api.building.StructureType.light
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.Light</code></p>
-
 ```ts
-Light: 26
+sandkit.api.building.StructureType.Light: 26
 ```
 
 Defined in: [sandkit/api/building.d.ts:62](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L62)
@@ -40015,10 +37895,8 @@ Light structure.
 
 #### GloomEmitter :id=sandkit.api.building.StructureType.gloomemitter
 
-<p class="smt-member-path"><code>sandkit.api.building.StructureType.GloomEmitter</code></p>
-
 ```ts
-GloomEmitter: 27
+sandkit.api.building.StructureType.GloomEmitter: 27
 ```
 
 Defined in: [sandkit/api/building.d.ts:64](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L64)
@@ -40041,10 +37919,8 @@ Physical behaviour category for an element.
 
 #### Solid :id=sandkit.api.elements.MatterType.solid
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Solid</code></p>
-
 ```ts
-Solid: 1
+sandkit.api.elements.MatterType.Solid: 1
 ```
 
 Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L42)
@@ -40053,10 +37929,8 @@ Defined in: [shared/api/elements.d.ts:42](https://github.com/sandustry-modding/S
 
 #### Liquid :id=sandkit.api.elements.MatterType.liquid
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Liquid</code></p>
-
 ```ts
-Liquid: 2
+sandkit.api.elements.MatterType.Liquid: 2
 ```
 
 Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L43)
@@ -40065,10 +37939,8 @@ Defined in: [shared/api/elements.d.ts:43](https://github.com/sandustry-modding/S
 
 #### Particle :id=sandkit.api.elements.MatterType.particle
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Particle</code></p>
-
 ```ts
-Particle: 3
+sandkit.api.elements.MatterType.Particle: 3
 ```
 
 Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L44)
@@ -40077,10 +37949,8 @@ Defined in: [shared/api/elements.d.ts:44](https://github.com/sandustry-modding/S
 
 #### Gas :id=sandkit.api.elements.MatterType.gas
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Gas</code></p>
-
 ```ts
-Gas: 4
+sandkit.api.elements.MatterType.Gas: 4
 ```
 
 Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L45)
@@ -40089,10 +37959,8 @@ Defined in: [shared/api/elements.d.ts:45](https://github.com/sandustry-modding/S
 
 #### Static :id=sandkit.api.elements.MatterType.static
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Static</code></p>
-
 ```ts
-Static: 5
+sandkit.api.elements.MatterType.Static: 5
 ```
 
 Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L46)
@@ -40101,10 +37969,8 @@ Defined in: [shared/api/elements.d.ts:46](https://github.com/sandustry-modding/S
 
 #### Slushy :id=sandkit.api.elements.MatterType.slushy
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Slushy</code></p>
-
 ```ts
-Slushy: 6
+sandkit.api.elements.MatterType.Slushy: 6
 ```
 
 Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L47)
@@ -40113,10 +37979,8 @@ Defined in: [shared/api/elements.d.ts:47](https://github.com/sandustry-modding/S
 
 #### Wisp :id=sandkit.api.elements.MatterType.wisp
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Wisp</code></p>
-
 ```ts
-Wisp: 7
+sandkit.api.elements.MatterType.Wisp: 7
 ```
 
 Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L48)
@@ -40125,10 +37989,8 @@ Defined in: [shared/api/elements.d.ts:48](https://github.com/sandustry-modding/S
 
 #### Powder :id=sandkit.api.elements.MatterType.powder
 
-<p class="smt-member-path"><code>sandkit.api.elements.MatterType.Powder</code></p>
-
 ```ts
-Powder: 8
+sandkit.api.elements.MatterType.Powder: 8
 ```
 
 Defined in: [shared/api/elements.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L49)
@@ -40207,9 +38069,7 @@ Prefer these methods over [sandkit.engine](api/sandkit.md#engine-1) when both ex
 
 ### References <!-- {docsify-ignore} -->
 
-#### SandkitApi :id=sandkit.api.sandkitapi
-
-<p class="smt-member-path"><code>sandkit.api.SandkitApi</code></p>
+#### sandkit.api :id=sandkit.api.sandkitapi
 
 Re-exports [SandkitApi](api/sandkit.md#sandkitapi)
 
@@ -40244,9 +38104,7 @@ See [sandkit.api](api/sandkit.md#api-1) for the main-thread public API.
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
-#### WorkerSandkitApi :id=sandkit.api.worker.workersandkitapi
-
-<p class="smt-member-path"><code>sandkit.api.WorkerSandkitApi (worker)</code></p>
+#### sandkit.api (worker) :id=sandkit.api.worker.workersandkitapi
 
 ```ts
 WorkerSandkitApi = object
@@ -40449,7 +38307,6 @@ Use [grid](api/sandkit.api.grid.worker.md) instead.
 #### collector :id=sandkit.api.worker.collector
 
 <p class="smt-member-path"><code>sandkit.api.collector (worker)</code></p>
-
 Re-exports [collector](api/sandkit.api.collector.md)
 
 ***
@@ -40457,7 +38314,6 @@ Re-exports [collector](api/sandkit.api.collector.md)
 #### constants :id=sandkit.api.worker.constants
 
 <p class="smt-member-path"><code>sandkit.api.constants (worker)</code></p>
-
 Re-exports [constants](api/sandkit.api.constants.md)
 
 ***
@@ -40465,7 +38321,6 @@ Re-exports [constants](api/sandkit.api.constants.md)
 #### patterns :id=sandkit.api.worker.patterns
 
 <p class="smt-member-path"><code>sandkit.api.patterns (worker)</code></p>
-
 Re-exports [patterns](api/sandkit.api.patterns.md)
 
 ***
@@ -40473,7 +38328,6 @@ Re-exports [patterns](api/sandkit.api.patterns.md)
 #### random :id=sandkit.api.worker.random
 
 <p class="smt-member-path"><code>sandkit.api.random (worker)</code></p>
-
 Re-exports [random](api/sandkit.api.random.md)
 
 ***
@@ -40481,7 +38335,6 @@ Re-exports [random](api/sandkit.api.random.md)
 #### utils :id=sandkit.api.worker.utils
 
 <p class="smt-member-path"><code>sandkit.api.utils (worker)</code></p>
-
 Re-exports [utils](api/sandkit.api.utils.md)
 
 ---
@@ -40542,9 +38395,7 @@ complete or correct.
 
 ### Interfaces <!-- {docsify-ignore} -->
 
-#### SandkitEngine :id=sandkit.engine.sandkitengine
-
-<p class="smt-member-path"><code>sandkit.engine.SandkitEngine</code></p>
+#### sandkit.engine :id=sandkit.engine.sandkitengine
 
 Defined in: [sandkit/engine/index.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L132)
 
@@ -40578,7 +38429,6 @@ Defined in: [sandkit/engine/index.d.ts:134](https://github.com/sandustry-modding
 #### RetroConsoleDisplay :id=sandkit.engine.retroconsoledisplay
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsoleDisplay</code></p>
-
 Defined in: [sandkit/engine/retro-console.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L14)
 
 **`Internal`**
@@ -40658,7 +38508,6 @@ Set one pixel in the framebuffer.
 #### RetroConsoleInput :id=sandkit.engine.retroconsoleinput
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsoleInput</code></p>
-
 Defined in: [sandkit/engine/retro-console.d.ts:24](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L24)
 
 **`Internal`**
@@ -40688,7 +38537,6 @@ Defined in: [sandkit/engine/retro-console.d.ts:26](https://github.com/sandustry-
 #### RetroConsoleGameOptions :id=sandkit.engine.retroconsolegameoptions
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsoleGameOptions</code></p>
-
 Defined in: [sandkit/engine/retro-console.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L30)
 
 **`Internal`**
@@ -40718,7 +38566,6 @@ Defined in: [sandkit/engine/retro-console.d.ts:32](https://github.com/sandustry-
 #### RetroConsoleGame :id=sandkit.engine.retroconsolegame
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsoleGame</code></p>
-
 Defined in: [sandkit/engine/retro-console.d.ts:36](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L36)
 
 **`Internal`**
@@ -40836,7 +38683,6 @@ Handle player input when provided.
 #### RetroConsoleApi :id=sandkit.engine.retroconsoleapi
 
 <p class="smt-member-path"><code>sandkit.engine.RetroConsoleApi</code></p>
-
 Defined in: [sandkit/engine/retro-console.d.ts:49](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L49)
 
 **`Internal`**
@@ -40873,9 +38719,7 @@ Register a Retro Console mini-game.
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
-#### SandkitEngineApi :id=sandkit.engine.sandkitengineapi
-
-<p class="smt-member-path"><code>sandkit.engine.SandkitEngineApi</code></p>
+#### sandkit.engine.api :id=sandkit.engine.sandkitengineapi
 
 ```ts
 SandkitEngineApi = object
@@ -41584,10 +39428,8 @@ Defined in: [sandkit/engine/index.d.ts:121](https://github.com/sandustry-modding
 
 #### RetroConsolePixel :id=sandkit.engine.retroconsolepixel
 
-<p class="smt-member-path"><code>sandkit.engine.RetroConsolePixel</code></p>
-
 ```ts
-RetroConsolePixel = boolean | number
+sandkit.engine.RetroConsolePixel = boolean | number
 ```
 
 Defined in: [sandkit/engine/retro-console.d.ts:11](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L11)
@@ -41598,9 +39440,7 @@ Pixel value for the Retro Console framebuffer.
 
 ***
 
-#### SandkitState :id=sandkit.engine.sandkitstate
-
-<p class="smt-member-path"><code>sandkit.engine.SandkitState</code></p>
+#### sandkit.state :id=sandkit.engine.sandkitstate
 
 ```ts
 SandkitState = object

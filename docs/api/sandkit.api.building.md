@@ -11,10 +11,8 @@ Main thread only.
 
 ### getSnappedPositionAtCell() :id=getsnappedpositionatcell
 
-<p class="smt-member-path"><code>sandkit.api.building.getSnappedPositionAtCell()</code></p>
-
 ```ts
-getSnappedPositionAtCell(...args: CellCoordinates): Vector2
+sandkit.api.building.getSnappedPositionAtCell(...args: CellCoordinates): Vector2
 ```
 
 Defined in: [sandkit/api/building.d.ts:73](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L73)
@@ -37,10 +35,8 @@ Snapped world position in pixels.
 
 ### isBlockedAtCell() :id=isblockedatcell
 
-<p class="smt-member-path"><code>sandkit.api.building.isBlockedAtCell()</code></p>
-
 ```ts
-isBlockedAtCell(...args: CellCoordinates): boolean
+sandkit.api.building.isBlockedAtCell(...args: CellCoordinates): boolean
 ```
 
 Defined in: [sandkit/api/building.d.ts:81](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L81)
@@ -63,10 +59,8 @@ True when a structure cannot be placed at the cell.
 
 ### cancelPlacement() :id=cancelplacement
 
-<p class="smt-member-path"><code>sandkit.api.building.cancelPlacement()</code></p>
-
 ```ts
-cancelPlacement(): void
+sandkit.api.building.cancelPlacement(): void
 ```
 
 Defined in: [sandkit/api/building.d.ts:84](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L84)
@@ -81,10 +75,8 @@ Cancel the current structure placement preview.
 
 ### selectStructure() :id=selectstructure
 
-<p class="smt-member-path"><code>sandkit.api.building.selectStructure()</code></p>
-
 ```ts
-selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef | null
+sandkit.api.building.selectStructure(structureTypeOrId: StructureRef | StructureType): StructureRef | null
 ```
 
 Defined in: [sandkit/api/building.d.ts:91](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L91)

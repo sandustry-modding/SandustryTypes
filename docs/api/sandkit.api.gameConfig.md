@@ -7,10 +7,8 @@ Main thread only.
 
 ### get() :id=get
 
-<p class="smt-member-path"><code>sandkit.api.gameConfig.get()</code></p>
-
 ```ts
-get(key: string): JsonValueV1 | undefined
+sandkit.api.gameConfig.get(key: string): JsonValueV1 | undefined
 ```
 
 Defined in: [sandkit/api/gameconfig.d.ts:12](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L12)
@@ -33,10 +31,8 @@ Game config key (merged defaults and overrides).
 
 ### getAll() :id=getall
 
-<p class="smt-member-path"><code>sandkit.api.gameConfig.getAll()</code></p>
-
 ```ts
-getAll(): JsonObjectV1
+sandkit.api.gameConfig.getAll(): JsonObjectV1
 ```
 
 Defined in: [sandkit/api/gameconfig.d.ts:14](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L14)

@@ -5,7 +5,6 @@
 ### ArtifactLocation :id=artifactlocation
 
 <p class="smt-member-path"><code>sandkit.api.maps.ArtifactLocation</code></p>
-
 Defined in: [sandkit/api/maps.d.ts:42](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L42)
 
 Artifact location entry from [getArtifactLocations](#getartifactlocations).
@@ -47,7 +46,6 @@ Defined in: [sandkit/api/maps.d.ts:45](https://github.com/sandustry-modding/Sand
 ### AvailableMapV1 :id=availablemapv1
 
 <p class="smt-member-path"><code>sandkit.api.maps.AvailableMapV1</code></p>
-
 Defined in: [sandkit/api/maps.d.ts:50](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L50)
 
 Available map entry shape.
@@ -84,10 +82,8 @@ Display name or translation key.
 
 ### getAvailable() :id=getavailable
 
-<p class="smt-member-path"><code>sandkit.api.maps.getAvailable()</code></p>
-
 ```ts
-getAvailable(): readonly Readonly<AvailableMapV1>[]
+sandkit.api.maps.getAvailable(): readonly Readonly<AvailableMapV1>[]
 ```
 
 Defined in: [sandkit/api/maps.d.ts:18](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L18)
@@ -102,10 +98,8 @@ readonly `Readonly`\<[`AvailableMapV1`](#availablemapv1)\>[]
 
 ### start() :id=start
 
-<p class="smt-member-path"><code>sandkit.api.maps.start()</code></p>
-
 ```ts
-start(mapId: string): boolean
+sandkit.api.maps.start(mapId: string): boolean
 ```
 
 Defined in: [sandkit/api/maps.d.ts:23](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L23)
@@ -128,10 +122,8 @@ Custom map identifier.
 
 ### getArtifactLocations() :id=getartifactlocations
 
-<p class="smt-member-path"><code>sandkit.api.maps.getArtifactLocations()</code></p>
-
 ```ts
-getArtifactLocations(): readonly ArtifactLocation[]
+sandkit.api.maps.getArtifactLocations(): readonly ArtifactLocation[]
 ```
 
 Defined in: [sandkit/api/maps.d.ts:39](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L39)
@@ -161,7 +153,6 @@ api.events.on("game:ready", () => {
 ### getActive :id=getactive
 
 <p class="smt-member-path"><code>sandkit.api.maps.getActive</code></p>
-
 Re-exports [getActive](api/sandkit.api.maps.worker.md#getactive)
 
 ***
@@ -169,5 +160,4 @@ Re-exports [getActive](api/sandkit.api.maps.worker.md#getactive)
 ### ActiveMapV1 :id=activemapv1
 
 <p class="smt-member-path"><code>sandkit.api.maps.ActiveMapV1</code></p>
-
 Re-exports [ActiveMapV1](api/sandkit.api.maps.worker.md#activemapv1)

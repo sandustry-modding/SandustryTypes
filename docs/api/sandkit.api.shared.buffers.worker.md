@@ -6,10 +6,8 @@ Named shared memory buffers for worker threads.
 
 ### require() :id=require
 
-<p class="smt-member-path"><code>sandkit.api.shared.buffers.require() (worker)</code></p>
-
 ```ts
-require(key: string, config: object): SharedArray
+sandkit.api.shared.buffers.require(key: string, config: object): SharedArray
 ```
 
 Defined in: [worker/api/shared.d.ts:37](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/shared.d.ts#L37)
@@ -61,5 +59,4 @@ const counts = api.shared.buffers.require("counts", {
 ### get :id=get
 
 <p class="smt-member-path"><code>sandkit.api.shared.buffers.get (worker)</code></p>
-
 Re-exports [get](api/sandkit.api.shared.buffers.md#get)

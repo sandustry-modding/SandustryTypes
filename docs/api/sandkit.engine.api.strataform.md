@@ -12,10 +12,8 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 ### getDefaultConfig() :id=getdefaultconfig
 
-<p class="smt-member-path"><code>sandkit.engine.api.strataform.getDefaultConfig()</code></p>
-
 ```ts
-getDefaultConfig(...args: unknown[]): unknown
+sandkit.engine.api.strataform.getDefaultConfig(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/strataform.d.ts:15](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L15)
@@ -38,10 +36,8 @@ Game state first, then method-specific arguments.
 
 ### getRegisteredTypes() :id=getregisteredtypes
 
-<p class="smt-member-path"><code>sandkit.engine.api.strataform.getRegisteredTypes()</code></p>
-
 ```ts
-getRegisteredTypes(...args: unknown[]): unknown
+sandkit.engine.api.strataform.getRegisteredTypes(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/strataform.d.ts:20](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L20)
@@ -64,10 +60,8 @@ Game state first, then method-specific arguments.
 
 ### registerType() :id=registertype
 
-<p class="smt-member-path"><code>sandkit.engine.api.strataform.registerType()</code></p>
-
 ```ts
-registerType(...args: unknown[]): unknown
+sandkit.engine.api.strataform.registerType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/strataform.d.ts:25](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L25)
@@ -90,10 +84,8 @@ Game state first, then method-specific arguments.
 
 ### trigger() :id=trigger
 
-<p class="smt-member-path"><code>sandkit.engine.api.strataform.trigger()</code></p>
-
 ```ts
-trigger(...args: unknown[]): unknown
+sandkit.engine.api.strataform.trigger(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/strataform.d.ts:30](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L30)
@@ -116,10 +108,8 @@ Game state first, then method-specific arguments.
 
 ### triggerByType() :id=triggerbytype
 
-<p class="smt-member-path"><code>sandkit.engine.api.strataform.triggerByType()</code></p>
-
 ```ts
-triggerByType(...args: unknown[]): unknown
+sandkit.engine.api.strataform.triggerByType(...args: unknown[]): unknown
 ```
 
 Defined in: [sandkit/engine/api/strataform.d.ts:35](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L35)
