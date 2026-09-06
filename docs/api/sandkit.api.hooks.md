@@ -67,96 +67,318 @@ Options shared by intercept and modify hooks.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L495" target="_blank" rel="noopener">hooks.d.ts:495</a></p>
 
-| Hook | Args | Notes |
-| --- | --- | --- |
-| `item:use` | <code>{ itemId: string; useId: string; kind: &quot;instant&quot; &#124; &quot;sustained&quot; &#124; &quot;chargeThenFire&quot;; baseline: Readonly&lt;Record&lt;string, unknown&gt;&gt;; prepared: Record&lt;string, unknown&gt; }</code> |  |
-| `teleport:effect:create` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`teleport:effect`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `action:start` | <code>{ action: object &amp; Record&lt;string, unknown&gt;; id: string }</code> |  |
-| ~~`action:intercept`~~ | <code>{ action: object &amp; Record&lt;string, unknown&gt;; id: string }</code> | Deprecated alias. |
-| `input:keyDown` | <code>{ key: string; code: string; event: Event }</code> |  |
-| ~~`input:keydown`~~ | <code>{ key: string; code: string; event: Event }</code> | Deprecated alias. |
-| `input:keyUp` | <code>{ key: string; code: string; event: Event }</code> |  |
-| ~~`input:keyup`~~ | <code>{ key: string; code: string; event: Event }</code> | Deprecated alias. |
-| `placePoints:suppress` | <code>{ type: string }</code> |  |
-| ~~`placePoints:isSuppressed`~~ | <code>{ type: string }</code> | Deprecated alias. |
-| `placePoints:directionalArrows:suppress` | <code>{ type: string }</code> |  |
-| ~~`placePoints:directionalArrows:isSuppressed`~~ | <code>{ type: string }</code> | Deprecated alias. |
-| `entity:update` | <code>{ entityTypeId: string; entity: Record&lt;string, unknown&gt;; deltaTimeSeconds: number; phase: &quot;normal&quot; &#124; &quot;capturing&quot; &#124; &quot;launching&quot;; isVisible: boolean; playerWorldX: number; playerWorldY: number; worldMinX: number; worldMinY: number; worldMaxX: number; worldMaxY: number; cellSize: number; timeSeconds: number }</code> |  |
-| `building:place` | <code>{ structureId: string; x: number; y: number; data: Record&lt;string, unknown&gt; }</code> |  |
-| `building:clearShape` | <code>{ structure: Record&lt;string, unknown&gt; }</code> |  |
-| `input:scroll` | <code>{ deltaY: number }</code> |  |
-| `input:boostDown` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`input:boost-down`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `input:descendDown` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`input:descend-down`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `input:escape` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `interactable:suppressHover` | <code>{ type: string; structure: Record&lt;string, unknown&gt; }</code> |  |
-| `fire:element:ignite` | <code>{ x: number; y: number; elementType: number }</code> |  |
-| `projectile:fire:overStructure` | <code>{ projectile: Record&lt;string, unknown&gt;; x: number; y: number }</code> |  |
-| `projectile:hit` | <code>{ projectile: Record&lt;string, unknown&gt;; travelResult: Record&lt;string, unknown&gt; }</code> |  |
-| `player:position:commit` | <code>{ previousWorldX: number; previousWorldY: number; proposedWorldX: number; proposedWorldY: number; velocityX: number; velocityY: number }</code> |  |
-| `progression:purchase` | <code>{ domain: &quot;tech&quot; &#124; &quot;upgrade&quot;; id: string; itemId: string; costs: Record&lt;string, unknown&gt; }</code> |  |
+<h4 class="smt-hook-heading" id="item-use"><code>item:use</code></h4>
 
-<div class="smt-member-anchors">
+```ts
+{
+  itemId: string;
+  useId: string;
+  kind: "instant" | "sustained" | "chargeThenFire";
+  baseline: Readonly<Record<string, unknown>>;
+  prepared: Record<string, unknown>;
+}
+```
 
-##### item:use <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="teleport-effect-create"><code>teleport:effect:create</code></h4>
 
-##### teleport:effect:create <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-##### ~~teleport:effect~~ <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="teleport-effect"><code>teleport:effect</code></h4>
 
-##### action:start <!-- {docsify-ignore} -->
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-##### ~~action:intercept~~ <!-- {docsify-ignore} -->
-
-##### input:keyDown <!-- {docsify-ignore} -->
-
-##### ~~input:keydown~~ <!-- {docsify-ignore} -->
-
-##### input:keyUp <!-- {docsify-ignore} -->
-
-##### ~~input:keyup~~ <!-- {docsify-ignore} -->
-
-##### placePoints:suppress <!-- {docsify-ignore} -->
-
-##### ~~placePoints:isSuppressed~~ <!-- {docsify-ignore} -->
-
-##### placePoints:directionalArrows:suppress <!-- {docsify-ignore} -->
-
-##### ~~placePoints:directionalArrows:isSuppressed~~ <!-- {docsify-ignore} -->
-
-##### entity:update <!-- {docsify-ignore} -->
-
-##### building:place <!-- {docsify-ignore} -->
-
-##### building:clearShape <!-- {docsify-ignore} -->
-
-##### input:scroll <!-- {docsify-ignore} -->
-
-##### input:boostDown <!-- {docsify-ignore} -->
-
-##### ~~input:boost-down~~ <!-- {docsify-ignore} -->
-
-##### input:descendDown <!-- {docsify-ignore} -->
-
-##### ~~input:descend-down~~ <!-- {docsify-ignore} -->
-
-##### input:escape <!-- {docsify-ignore} -->
-
-##### interactable:suppressHover <!-- {docsify-ignore} -->
-
-##### fire:element:ignite <!-- {docsify-ignore} -->
-
-##### projectile:fire:overStructure <!-- {docsify-ignore} -->
-
-##### projectile:hit <!-- {docsify-ignore} -->
-
-##### player:position:commit <!-- {docsify-ignore} -->
-
-##### progression:purchase <!-- {docsify-ignore} -->
+Deprecated alias.
 
 </div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="action-start"><code>action:start</code></h4>
+
+```ts
+{
+  action: object & Record<string, unknown>;
+  id: string;
+}
+```
+
+<h4 class="smt-hook-heading" id="action-intercept"><code>action:intercept</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{
+  action: object & Record<string, unknown>;
+  id: string;
+}
+```
+
+<h4 class="smt-hook-heading" id="input-keyDown"><code>input:keyDown</code></h4>
+
+```ts
+{
+  key: string;
+  code: string;
+  event: Event;
+}
+```
+
+<h4 class="smt-hook-heading" id="input-keydown"><code>input:keydown</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{
+  key: string;
+  code: string;
+  event: Event;
+}
+```
+
+<h4 class="smt-hook-heading" id="input-keyUp"><code>input:keyUp</code></h4>
+
+```ts
+{
+  key: string;
+  code: string;
+  event: Event;
+}
+```
+
+<h4 class="smt-hook-heading" id="input-keyup"><code>input:keyup</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{
+  key: string;
+  code: string;
+  event: Event;
+}
+```
+
+<h4 class="smt-hook-heading" id="placePoints-suppress"><code>placePoints:suppress</code></h4>
+
+```ts
+{ type: string }
+```
+
+<h4 class="smt-hook-heading" id="placePoints-isSuppressed"><code>placePoints:isSuppressed</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ type: string }
+```
+
+<h4 class="smt-hook-heading" id="placePoints-directionalArrows-suppress"><code>placePoints:directionalArrows:suppress</code></h4>
+
+```ts
+{ type: string }
+```
+
+<h4 class="smt-hook-heading" id="placePoints-directionalArrows-isSuppressed"><code>placePoints:directionalArrows:isSuppressed</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ type: string }
+```
+
+<h4 class="smt-hook-heading" id="entity-update"><code>entity:update</code></h4>
+
+```ts
+{
+  entityTypeId: string;
+  entity: Record<string, unknown>;
+  deltaTimeSeconds: number;
+  phase: "normal" | "capturing" | "launching";
+  isVisible: boolean;
+  playerWorldX: number;
+  playerWorldY: number;
+  worldMinX: number;
+  worldMinY: number;
+  worldMaxX: number;
+  worldMaxY: number;
+  cellSize: number;
+  timeSeconds: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="building-place"><code>building:place</code></h4>
+
+```ts
+{
+  structureId: string;
+  x: number;
+  y: number;
+  data: Record<string, unknown>;
+}
+```
+
+<h4 class="smt-hook-heading" id="building-clearShape"><code>building:clearShape</code></h4>
+
+```ts
+{ structure: Record<string, unknown> }
+```
+
+<h4 class="smt-hook-heading" id="input-scroll"><code>input:scroll</code></h4>
+
+```ts
+{ deltaY: number }
+```
+
+<h4 class="smt-hook-heading" id="input-boostDown"><code>input:boostDown</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="input-boost-down"><code>input:boost-down</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="input-descendDown"><code>input:descendDown</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="input-descend-down"><code>input:descend-down</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="input-escape"><code>input:escape</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="interactable-suppressHover"><code>interactable:suppressHover</code></h4>
+
+```ts
+{
+  type: string;
+  structure: Record<string, unknown>;
+}
+```
+
+<h4 class="smt-hook-heading" id="fire-element-ignite"><code>fire:element:ignite</code></h4>
+
+```ts
+{
+  x: number;
+  y: number;
+  elementType: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="projectile-fire-overStructure"><code>projectile:fire:overStructure</code></h4>
+
+```ts
+{
+  projectile: Record<string, unknown>;
+  x: number;
+  y: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="projectile-hit"><code>projectile:hit</code></h4>
+
+```ts
+{
+  projectile: Record<string, unknown>;
+  travelResult: Record<string, unknown>;
+}
+```
+
+<h4 class="smt-hook-heading" id="player-position-commit"><code>player:position:commit</code></h4>
+
+```ts
+{
+  previousWorldX: number;
+  previousWorldY: number;
+  proposedWorldX: number;
+  proposedWorldY: number;
+  velocityX: number;
+  velocityY: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="progression-purchase"><code>progression:purchase</code></h4>
+
+```ts
+{
+  domain: "tech" | "upgrade";
+  id: string;
+  itemId: string;
+  costs: Record<string, unknown>;
+}
+```
 
 Intercept hook argument shapes keyed by hook id.
 
@@ -168,93 +390,320 @@ Intercept hook argument shapes keyed by hook id.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L581" target="_blank" rel="noopener">hooks.d.ts:581</a></p>
 
-| Hook | Args | Notes |
-| --- | --- | --- |
-| `excavation:prepare` | <code>{ sourceId: string; sourceKind: &quot;structure&quot; &#124; &quot;tool&quot; &#124; &quot;projectile&quot; &#124; &quot;drone&quot;; originCellX: number; originCellY: number; consumedVoid: boolean; profileId: string; patternDiameterCells: number; drillTierDamage: number }</code> |  |
-| `locator:scan:prepare` | <code>{ originWorldX: number; originWorldY: number; hasTarget: boolean; targetCellX: number; targetCellY: number; outerTint: [number, number, number]; innerTint: [number, number, number]; noTargetToast: string; noTargetToastKey: string; triangulationLensOverride: boolean &#124; null }</code> |  |
-| `vacuum:prepare` | <code>{ nozzleCellX: number; nozzleCellY: number; targetCellX: number; targetCellY: number; pattern: number[][] }</code> |  |
-| `vacuum:element:prepare` | <code>{ elementType: number; matterType: number; isTransportable: boolean; collectable: boolean; visibleInPicker: boolean }</code> |  |
-| `player:movement:prepare` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`player:movement`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `building:placementLimit:prepare` | <code>{ maxCount: number &#124; null }</code> |  |
-| ~~`building:placementLimit`~~ | <code>{ maxCount: number &#124; null }</code> | Deprecated alias. |
-| ~~`building:placement-limit`~~ | <code>{ maxCount: number &#124; null }</code> | Deprecated alias. |
-| `fluxEmanator:processing:prepare` | <code>{ speedMultiplier: number }</code> |  |
-| ~~`fluxEmanator:processing`~~ | <code>{ speedMultiplier: number }</code> | Deprecated alias. |
-| ~~`flux-emanator:processing`~~ | <code>{ speedMultiplier: number }</code> | Deprecated alias. |
-| `render:pipes:prepare` | <code>{ layer: string }</code> |  |
-| ~~`render:pipes`~~ | <code>{ layer: string }</code> | Deprecated alias. |
-| `structures:moved:prepare` | <code>{ moved: unknown[]; failedToPlace: unknown[] }</code> |  |
-| `structures:removed:prepare` | <code>{ removed: unknown[]; structures: unknown[]; byMove: boolean }</code> |  |
-| `weapon:reload:prepare` | <code>{ weaponId: string; reloadMs: number; maxAmmo: number }</code> |  |
-| `projectile:travel:prepare` | <code>{ projectileType: string; firstCollisionStep: number; maxCollisionSteps: number; collidesWithTerrain: boolean; collidesWithStructures: boolean }</code> |  |
-| `projectile:impact:prepare` | <code>{ projectileType: string; impactKind: string; profileId: string; power: number; centerPower: number; radiusCells: number; radius: number }</code> |  |
-| `player:collision:prepare` | <code>{ phaseThroughTerrain: boolean; phaseThroughStructures: boolean; maxStepCells: number }</code> |  |
-| `trigger:schedule:prepare` | <code>{ triggerId: string; intervalMs: number; sequentialRuns: number }</code> |  |
-| `progression:cost:prepare` | <code>{ domain: &quot;tech&quot; &#124; &quot;upgrade&quot;; id: string; itemId: string; currencyId: string; amount: number }</code> |  |
-| `resource:collection:prepare` | <code>{ resourceId: string; sourceKind: string; cellX: number; cellY: number; amount: number; feedback: &quot;silent&quot; &#124; &quot;default&quot; &#124; &quot;reduced&quot; }</code> |  |
-| `resource:delivery:prepare` | <code>{ resourceId: string; sourceKind: string; sourceId: string; sourceCellX: number; sourceCellY: number; targetCellX: number; targetCellY: number; mode: &quot;world&quot; &#124; &quot;collection&quot;; amount: number; feedback: &quot;silent&quot; &#124; &quot;default&quot; }</code> |  |
-| `resource:balance:prepare` | <code>{ resourceId: string; balance: number }</code> |  |
-| `gold:removal:prepare` | <code>{ requestedAmount: number; shortfall: number }</code> |  |
-| `gold:removal:settle` | <code>{ requestedAmount: number; physicalRemoved: number; shortfall: number }</code> |  |
+<h4 class="smt-hook-heading" id="excavation-prepare"><code>excavation:prepare</code></h4>
 
-<div class="smt-member-anchors">
+```ts
+{
+  sourceId: string;
+  sourceKind: "structure" | "tool" | "projectile" | "drone";
+  originCellX: number;
+  originCellY: number;
+  consumedVoid: boolean;
+  profileId: string;
+  patternDiameterCells: number;
+  drillTierDamage: number;
+}
+```
 
-##### excavation:prepare <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="locator-scan-prepare"><code>locator:scan:prepare</code></h4>
 
-##### locator:scan:prepare <!-- {docsify-ignore} -->
+```ts
+{
+  originWorldX: number;
+  originWorldY: number;
+  hasTarget: boolean;
+  targetCellX: number;
+  targetCellY: number;
+  outerTint: [number, number, number];
+  innerTint: [number, number, number];
+  noTargetToast: string;
+  noTargetToastKey: string;
+  triangulationLensOverride: boolean | null;
+}
+```
 
-##### vacuum:prepare <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="vacuum-prepare"><code>vacuum:prepare</code></h4>
 
-##### vacuum:element:prepare <!-- {docsify-ignore} -->
+```ts
+{
+  nozzleCellX: number;
+  nozzleCellY: number;
+  targetCellX: number;
+  targetCellY: number;
+  pattern: number[][];
+}
+```
 
-##### player:movement:prepare <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="vacuum-element-prepare"><code>vacuum:element:prepare</code></h4>
 
-##### ~~player:movement~~ <!-- {docsify-ignore} -->
+```ts
+{
+  elementType: number;
+  matterType: number;
+  isTransportable: boolean;
+  collectable: boolean;
+  visibleInPicker: boolean;
+}
+```
 
-##### building:placementLimit:prepare <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="player-movement-prepare"><code>player:movement:prepare</code></h4>
 
-##### ~~building:placementLimit~~ <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-##### ~~building:placement-limit~~ <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="player-movement"><code>player:movement</code></h4>
 
-##### fluxEmanator:processing:prepare <!-- {docsify-ignore} -->
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-##### ~~fluxEmanator:processing~~ <!-- {docsify-ignore} -->
-
-##### ~~flux-emanator:processing~~ <!-- {docsify-ignore} -->
-
-##### render:pipes:prepare <!-- {docsify-ignore} -->
-
-##### ~~render:pipes~~ <!-- {docsify-ignore} -->
-
-##### structures:moved:prepare <!-- {docsify-ignore} -->
-
-##### structures:removed:prepare <!-- {docsify-ignore} -->
-
-##### weapon:reload:prepare <!-- {docsify-ignore} -->
-
-##### projectile:travel:prepare <!-- {docsify-ignore} -->
-
-##### projectile:impact:prepare <!-- {docsify-ignore} -->
-
-##### player:collision:prepare <!-- {docsify-ignore} -->
-
-##### trigger:schedule:prepare <!-- {docsify-ignore} -->
-
-##### progression:cost:prepare <!-- {docsify-ignore} -->
-
-##### resource:collection:prepare <!-- {docsify-ignore} -->
-
-##### resource:delivery:prepare <!-- {docsify-ignore} -->
-
-##### resource:balance:prepare <!-- {docsify-ignore} -->
-
-##### gold:removal:prepare <!-- {docsify-ignore} -->
-
-##### gold:removal:settle <!-- {docsify-ignore} -->
+Deprecated alias.
 
 </div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="building-placementLimit-prepare"><code>building:placementLimit:prepare</code></h4>
+
+```ts
+{ maxCount: number | null }
+```
+
+<h4 class="smt-hook-heading" id="building-placementLimit"><code>building:placementLimit</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ maxCount: number | null }
+```
+
+<h4 class="smt-hook-heading" id="building-placement-limit"><code>building:placement-limit</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ maxCount: number | null }
+```
+
+<h4 class="smt-hook-heading" id="fluxEmanator-processing-prepare"><code>fluxEmanator:processing:prepare</code></h4>
+
+```ts
+{ speedMultiplier: number }
+```
+
+<h4 class="smt-hook-heading" id="fluxEmanator-processing"><code>fluxEmanator:processing</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ speedMultiplier: number }
+```
+
+<h4 class="smt-hook-heading" id="flux-emanator-processing"><code>flux-emanator:processing</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ speedMultiplier: number }
+```
+
+<h4 class="smt-hook-heading" id="render-pipes-prepare"><code>render:pipes:prepare</code></h4>
+
+```ts
+{ layer: string }
+```
+
+<h4 class="smt-hook-heading" id="render-pipes"><code>render:pipes</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ layer: string }
+```
+
+<h4 class="smt-hook-heading" id="structures-moved-prepare"><code>structures:moved:prepare</code></h4>
+
+```ts
+{
+  moved: unknown[];
+  failedToPlace: unknown[];
+}
+```
+
+<h4 class="smt-hook-heading" id="structures-removed-prepare"><code>structures:removed:prepare</code></h4>
+
+```ts
+{
+  removed: unknown[];
+  structures: unknown[];
+  byMove: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="weapon-reload-prepare"><code>weapon:reload:prepare</code></h4>
+
+```ts
+{
+  weaponId: string;
+  reloadMs: number;
+  maxAmmo: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="projectile-travel-prepare"><code>projectile:travel:prepare</code></h4>
+
+```ts
+{
+  projectileType: string;
+  firstCollisionStep: number;
+  maxCollisionSteps: number;
+  collidesWithTerrain: boolean;
+  collidesWithStructures: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="projectile-impact-prepare"><code>projectile:impact:prepare</code></h4>
+
+```ts
+{
+  projectileType: string;
+  impactKind: string;
+  profileId: string;
+  power: number;
+  centerPower: number;
+  radiusCells: number;
+  radius: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="player-collision-prepare"><code>player:collision:prepare</code></h4>
+
+```ts
+{
+  phaseThroughTerrain: boolean;
+  phaseThroughStructures: boolean;
+  maxStepCells: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="trigger-schedule-prepare"><code>trigger:schedule:prepare</code></h4>
+
+```ts
+{
+  triggerId: string;
+  intervalMs: number;
+  sequentialRuns: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="progression-cost-prepare"><code>progression:cost:prepare</code></h4>
+
+```ts
+{
+  domain: "tech" | "upgrade";
+  id: string;
+  itemId: string;
+  currencyId: string;
+  amount: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="resource-collection-prepare"><code>resource:collection:prepare</code></h4>
+
+```ts
+{
+  resourceId: string;
+  sourceKind: string;
+  cellX: number;
+  cellY: number;
+  amount: number;
+  feedback: "silent" | "default" | "reduced";
+}
+```
+
+<h4 class="smt-hook-heading" id="resource-delivery-prepare"><code>resource:delivery:prepare</code></h4>
+
+```ts
+{
+  resourceId: string;
+  sourceKind: string;
+  sourceId: string;
+  sourceCellX: number;
+  sourceCellY: number;
+  targetCellX: number;
+  targetCellY: number;
+  mode: "world" | "collection";
+  amount: number;
+  feedback: "silent" | "default";
+}
+```
+
+<h4 class="smt-hook-heading" id="resource-balance-prepare"><code>resource:balance:prepare</code></h4>
+
+```ts
+{
+  resourceId: string;
+  balance: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="gold-removal-prepare"><code>gold:removal:prepare</code></h4>
+
+```ts
+{
+  requestedAmount: number;
+  shortfall: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="gold-removal-settle"><code>gold:removal:settle</code></h4>
+
+```ts
+{
+  requestedAmount: number;
+  physicalRemoved: number;
+  shortfall: number;
+}
+```
 
 Modify hook argument shapes keyed by hook id.
 

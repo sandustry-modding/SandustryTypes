@@ -89,6 +89,8 @@ npm run docs:archive-sandkit      # Fetch official sandkit.html into docs/offici
 ```
 
 Output lands in `docs/api/` and `docs/schemas/`.
+`npm run generate` overwrites those API pages in place.
+It does not delete `docs/api/`.
 Browse namespaces from Search on the docs site.
 `npm run generate` writes `docs/_sidebar.md` for direct pages.
 On an API namespace page the sidebar also lists that namespace and its children.

@@ -673,6 +673,15 @@ api.elements.createAtCell(cellX, cellY, "steam", {
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L226" target="_blank" rel="noopener">elements.d.ts:226</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [createAtCell](api/sandkit.api.elements.md?id=createatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]): void">
 
 ```ts
@@ -689,15 +698,6 @@ createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [createAtCell](api/sandkit.api.elements.md?id=createatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -736,6 +736,15 @@ Replace the element at a cell. Main-entry writes are deferred; reads see the old
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L247" target="_blank" rel="noopener">elements.d.ts:247</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [replaceAtCell](api/sandkit.api.elements.md?id=replaceatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]): void">
 
 ```ts
@@ -752,15 +761,6 @@ replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [replaceAtCell](api/sandkit.api.elements.md?id=replaceatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -799,6 +799,15 @@ Remove the element at a cell. Main-entry writes are deferred; reads see the old 
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L267" target="_blank" rel="noopener">elements.d.ts:267</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeAtCell](api/sandkit.api.elements.md?id=removeatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void">
 
 ```ts
@@ -815,15 +824,6 @@ removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeAtCell](api/sandkit.api.elements.md?id=removeatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -871,6 +871,15 @@ Move an element between cells. Main-entry writes are deferred; reads see the old
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L291" target="_blank" rel="noopener">elements.d.ts:291</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [teleportBetweenCells](api/sandkit.api.elements.md?id=teleportbetweencells) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void">
 
 ```ts
@@ -896,15 +905,6 @@ teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: numb
 
 ##### toCellY <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [teleportBetweenCells](api/sandkit.api.elements.md?id=teleportbetweencells) instead.
-
-</div>
 </div>
 
 </div>
@@ -949,6 +949,15 @@ api.elements.setVelocityAtCell(cellX, cellY, { x: 0, y: -120 });
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L317" target="_blank" rel="noopener">elements.d.ts:317</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setVelocityAtCell](api/sandkit.api.elements.md?id=setvelocityatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void">
 
 ```ts
@@ -965,15 +974,6 @@ setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setVelocityAtCell](api/sandkit.api.elements.md?id=setvelocityatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -1023,6 +1023,15 @@ api.elements.addParticleVelocityAtCell(
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L346" target="_blank" rel="noopener">elements.d.ts:346</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [addParticleVelocityAtCell](api/sandkit.api.elements.md?id=addparticlevelocityatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): void">
 
 ```ts
@@ -1039,15 +1048,6 @@ addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): v
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [addParticleVelocityAtCell](api/sandkit.api.elements.md?id=addparticlevelocityatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -1096,6 +1096,15 @@ api.elements.convertToParticleAtCell(
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L373" target="_blank" rel="noopener">elements.d.ts:373</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [convertToParticleAtCell](api/sandkit.api.elements.md?id=converttoparticleatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void">
 
 ```ts
@@ -1112,15 +1121,6 @@ convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [convertToParticleAtCell](api/sandkit.api.elements.md?id=converttoparticleatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -1159,6 +1159,15 @@ Convert a particle back to a solid element. Main-entry writes are deferred; read
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L390" target="_blank" rel="noopener">elements.d.ts:390</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [convertFromParticleAtCell](api/sandkit.api.elements.md?id=convertfromparticleatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void">
 
 ```ts
@@ -1175,15 +1184,6 @@ convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [convertFromParticleAtCell](api/sandkit.api.elements.md?id=convertfromparticleatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -1222,6 +1222,15 @@ Set a data field on the element at a cell. Main-entry writes are deferred; reads
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L409" target="_blank" rel="noopener">elements.d.ts:409</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setDataFieldAtCell](api/sandkit.api.elements.md?id=setdatafieldatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): void">
 
 ```ts
@@ -1238,15 +1247,6 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setDataFieldAtCell](api/sandkit.api.elements.md?id=setdatafieldatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -1285,6 +1285,15 @@ Refresh the rendered color at a cell. Main-entry writes are deferred; reads see 
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L426" target="_blank" rel="noopener">elements.d.ts:426</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [refreshColorAtCell](api/sandkit.api.elements.md?id=refreshcoloratcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.refreshColorAtCellWhenIdle(...args: CellCoordinates): void">
 
 ```ts
@@ -1301,15 +1310,6 @@ refreshColorAtCellWhenIdle(...args: CellCoordinates): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [refreshColorAtCell](api/sandkit.api.elements.md?id=refreshcoloratcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -1348,6 +1348,15 @@ Set the physics skip mode at a cell. Main-entry writes are deferred; reads see t
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L442" target="_blank" rel="noopener">elements.d.ts:442</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setPhysicsAtCell](api/sandkit.api.elements.md?id=setphysicsatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setPhysicsAtCellWhenIdle(...args: [number, number, number]): void">
 
 ```ts
@@ -1364,15 +1373,6 @@ setPhysicsAtCellWhenIdle(...args: [number, number, number]): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setPhysicsAtCell](api/sandkit.api.elements.md?id=setphysicsatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -1424,6 +1424,15 @@ api.elements.setDurationAtCell(
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L473" target="_blank" rel="noopener">elements.d.ts:473</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setDurationAtCell](api/sandkit.api.elements.md?id=setdurationatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setDurationAtCellWhenIdle(...args: [number, number, number, object]): void">
 
 ```ts
@@ -1440,15 +1449,6 @@ setDurationAtCellWhenIdle(...args: [number, number, number, object]): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setDurationAtCell](api/sandkit.api.elements.md?id=setdurationatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -1519,6 +1519,15 @@ Resolve a mod element string id to a type handle.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L141" target="_blank" rel="noopener">elements.d.ts:141</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getTypeById](api/sandkit.api.elements.md?id=gettypebyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.getTypeFromId(elementId: string &amp; object): ElementType">
 
 ```ts
@@ -1538,15 +1547,6 @@ getTypeFromId(elementId: string & object): ElementType
 </div>
 
 [`ElementType`](?id=elementtype)
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getTypeById](api/sandkit.api.elements.md?id=gettypebyid) instead.
-
-</div>
-</div>
 
 </div>
 

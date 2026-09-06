@@ -265,6 +265,15 @@ Map a structure string id to its runtime type value.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L59" target="_blank" rel="noopener">structures.d.ts:59</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getTypeById](api/sandkit.api.structures.worker.md?id=gettypebyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.getTypeFromId(structureId: string &amp; object): StructureType">
 
 ```ts
@@ -284,15 +293,6 @@ getTypeFromId(structureId: string & object): StructureType
 </div>
 
 [`StructureType`](?id=structuretype)
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getTypeById](api/sandkit.api.structures.worker.md?id=gettypebyid) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -595,6 +595,15 @@ api.structures.updateData(
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L176" target="_blank" rel="noopener">structures.d.ts:176</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [updateData](api/sandkit.api.structures.worker.md?id=updatedata) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.setData(structure: Structure, partial: any, options?: object): void">
 
 ```ts
@@ -617,15 +626,6 @@ setData(structure: Structure, partial: any, options?: object): void
 
 ##### options? <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [updateData](api/sandkit.api.structures.worker.md?id=updatedata) instead.
-
-</div>
 </div>
 
 </div>

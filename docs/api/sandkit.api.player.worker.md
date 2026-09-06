@@ -34,6 +34,15 @@ Return the player center position in world pixels.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L21" target="_blank" rel="noopener">player.d.ts:21</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getPositionAtWorld](api/sandkit.api.player.worker.md?id=getpositionatworld) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.player.getWorldPosition(): Vector2">
 
 ```ts
@@ -43,15 +52,6 @@ getWorldPosition(): Vector2
 </div>
 
 [`Vector2`](api/shared.player.md?id=vector2)
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getPositionAtWorld](api/sandkit.api.player.worker.md?id=getpositionatworld) instead.
-
-</div>
-</div>
 
 </div>
 

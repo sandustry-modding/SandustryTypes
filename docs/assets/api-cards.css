@@ -79,12 +79,39 @@
 
 .markdown-section .smt-member-card tbody td:nth-child(2) {
   font-family: var(--smt-font-mono, ui-monospace, monospace);
-  white-space: normal;
-  overflow-wrap: anywhere;
-  font-size: 0.88em;
 }
 
-.markdown-section .smt-member-card > :is(h4, h5) {
+.markdown-section .smt-member-card > ul {
+  margin: 0 0 1.15rem;
+}
+
+.markdown-section .smt-member-card > h4.smt-hook-heading {
+  margin: 1.35rem 0 0.5rem;
+  padding: 0;
+  border: 0;
+  color: var(--link-color);
+  font-family: var(--smt-font-mono, ui-monospace, monospace);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.markdown-section .smt-member-card > h4.smt-hook-heading:first-of-type {
+  margin-top: 0.25rem;
+}
+
+.markdown-section .smt-member-card > h4.smt-hook-heading code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+}
+
+.markdown-section .smt-hook-heading + .smt-member-deprecated {
+  margin: 0.45rem 0 0.7rem;
+}
+
+.markdown-section .smt-member-card > :is(h4, h5):not(.smt-hook-heading) {
   margin: 1rem 0 0.45rem;
   padding: 0;
   border: 0;
@@ -97,7 +124,7 @@
   display: flex;
   align-items: flex-start;
   gap: 0.75rem;
-  margin: 1.15rem 0 0;
+  margin: 0 0 1.15rem;
   padding: 0.75rem 0.95rem;
   border: 1px solid color-mix(in srgb, var(--theme-color) 28%, var(--smt-card-border, #2a2a2a));
   border-radius: 0.4rem;

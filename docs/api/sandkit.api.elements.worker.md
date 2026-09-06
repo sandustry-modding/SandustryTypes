@@ -227,6 +227,15 @@ True when the swap succeeded.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L159" target="_blank" rel="noopener">elements.d.ts:159</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [swapBetweenCells](api/sandkit.api.elements.worker.md?id=swapbetweencells) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean">
 
 ```ts
@@ -252,15 +261,6 @@ swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCel
 
 ##### secondCellY <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [swapBetweenCells](api/sandkit.api.elements.worker.md?id=swapbetweencells) instead.
-
-</div>
 </div>
 
 </div>
@@ -299,6 +299,15 @@ Mark an element index as movement-blocked for this tick.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L178" target="_blank" rel="noopener">elements.d.ts:178</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [markMovementBlockedByIndex](api/sandkit.api.elements.worker.md?id=markmovementblockedbyindex) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.markMovementBlockedByElementIndex(elementIndex: number): void">
 
 ```ts
@@ -315,15 +324,6 @@ markMovementBlockedByElementIndex(elementIndex: number): void
 
 ##### elementIndex <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [markMovementBlockedByIndex](api/sandkit.api.elements.worker.md?id=markmovementblockedbyindex) instead.
-
-</div>
 </div>
 
 </div>

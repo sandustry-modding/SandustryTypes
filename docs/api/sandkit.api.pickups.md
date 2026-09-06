@@ -90,14 +90,6 @@ Official pickup type discriminator.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L17" target="_blank" rel="noopener">pickups.d.ts:17</a></p>
 
-<div class="smt-member-sig" data-sig="sandkit.api.pickups.WorldItemType = PickupType">
-
-```ts
-WorldItemType = PickupType
-```
-
-</div>
-
 <div class="smt-member-deprecated">
 <span class="smt-member-deprecated-label">Deprecated</span>
 <div class="smt-member-deprecated-note" markdown="1">
@@ -105,6 +97,14 @@ WorldItemType = PickupType
 Use [PickupType](api/sandkit.api.pickups.md?id=pickuptype) instead.
 
 </div>
+</div>
+
+<div class="smt-member-sig" data-sig="sandkit.api.pickups.WorldItemType = PickupType">
+
+```ts
+WorldItemType = PickupType
+```
+
 </div>
 
 </div>
@@ -187,6 +187,15 @@ Remove a pickup instance from the world.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L69" target="_blank" rel="noopener">pickups.d.ts:69</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [remove](api/sandkit.api.pickups.md?id=remove) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.pickups.destroy(pickup: WorldItem): void">
 
 ```ts
@@ -203,15 +212,6 @@ destroy(pickup: WorldItem): void
 
 ##### pickup <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [remove](api/sandkit.api.pickups.md?id=remove) instead.
-
-</div>
 </div>
 
 </div>

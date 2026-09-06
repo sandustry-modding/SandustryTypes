@@ -90,42 +90,83 @@ Options for [modify](?id=modify).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L164" target="_blank" rel="noopener">hooks.d.ts:164</a></p>
 
-| Hook | Args | Notes |
-| --- | --- | --- |
-| `cell:process` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `element:update` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `element:move` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `element:move:blocked` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`element:blocked`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `element:duration:expire` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`element:duration`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `fire:element:burn` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `fire:terrain:burn` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `shaker:elementOn` | <code>Record&lt;string, unknown&gt;</code> |  |
+<h4 class="smt-hook-heading" id="cell-process"><code>cell:process</code></h4>
 
-<div class="smt-member-anchors">
+```ts
+Record<string, unknown>
+```
 
-##### cell:process <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="element-update"><code>element:update</code></h4>
 
-##### element:update <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-##### element:move <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="element-move"><code>element:move</code></h4>
 
-##### element:move:blocked <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-##### ~~element:blocked~~ <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="element-move-blocked"><code>element:move:blocked</code></h4>
 
-##### element:duration:expire <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-##### ~~element:duration~~ <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="element-blocked"><code>element:blocked</code></h4>
 
-##### fire:element:burn <!-- {docsify-ignore} -->
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-##### fire:terrain:burn <!-- {docsify-ignore} -->
-
-##### shaker:elementOn <!-- {docsify-ignore} -->
+Deprecated alias.
 
 </div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="element-duration-expire"><code>element:duration:expire</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="element-duration"><code>element:duration</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="fire-element-burn"><code>fire:element:burn</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="fire-terrain-burn"><code>fire:terrain:burn</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="shaker-elementOn"><code>shaker:elementOn</code></h4>
+
+```ts
+Record<string, unknown>
+```
 
 Intercept hook argument shapes keyed by hook id.
 

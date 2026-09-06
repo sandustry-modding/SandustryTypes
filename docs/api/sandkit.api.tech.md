@@ -239,6 +239,15 @@ api.tech.registerDefinition("exampleTech", {
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L60" target="_blank" rel="noopener">tech.d.ts:60</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [registerDefinition](api/sandkit.api.tech.md?id=registerdefinition) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.tech.addDefinition(techId: TechGridId, definition: TechDefinition): void">
 
 ```ts
@@ -258,15 +267,6 @@ addDefinition(techId: TechGridId, definition: TechDefinition): void
 
 ##### definition <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [registerDefinition](api/sandkit.api.tech.md?id=registerdefinition) instead.
-
-</div>
 </div>
 
 </div>

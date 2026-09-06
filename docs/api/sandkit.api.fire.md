@@ -67,6 +67,15 @@ Burn the element at the cell. Main-entry writes are deferred; reads see the old 
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L31" target="_blank" rel="noopener">fire.d.ts:31</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [burnElementAtCell](api/sandkit.api.fire.md?id=burnelementatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.fire.burnElementAtCellWhenIdle(...args: CellCoordinates): void">
 
 ```ts
@@ -83,15 +92,6 @@ burnElementAtCellWhenIdle(...args: CellCoordinates): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [burnElementAtCell](api/sandkit.api.fire.md?id=burnelementatcell) instead.
-
-</div>
 </div>
 
 </div>

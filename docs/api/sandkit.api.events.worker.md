@@ -57,27 +57,53 @@ Options for [emit](?id=emit).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L86" target="_blank" rel="noopener">events.d.ts:86</a></p>
 
-| Hook | Args | Notes |
-| --- | --- | --- |
-| `element:moved` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `terrain:updated` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`terrain:update`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `worker:update:post` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`update:post`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+<h4 class="smt-hook-heading" id="element-moved"><code>element:moved</code></h4>
 
-<div class="smt-member-anchors">
+```ts
+Record<string, unknown>
+```
 
-##### element:moved <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="terrain-updated"><code>terrain:updated</code></h4>
 
-##### terrain:updated <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-##### ~~terrain:update~~ <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="terrain-update"><code>terrain:update</code></h4>
 
-##### worker:update:post <!-- {docsify-ignore} -->
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-##### ~~update:post~~ <!-- {docsify-ignore} -->
+Deprecated alias.
 
 </div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="worker-update-post"><code>worker:update:post</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="update-post"><code>update:post</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+Record<string, unknown>
+```
 
 Known worker event payloads. Unlisted ids still use `unknown`.
 

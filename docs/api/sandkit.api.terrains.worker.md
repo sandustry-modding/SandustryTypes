@@ -231,6 +231,15 @@ Resolve a terrain string id to a numeric cell type.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L83" target="_blank" rel="noopener">terrains.d.ts:83</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getTypeById](api/sandkit.api.terrains.worker.md?id=gettypebyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.getTypeFromId(terrainId: string &amp; object): TerrainType">
 
 ```ts
@@ -250,15 +259,6 @@ getTypeFromId(terrainId: string & object): TerrainType
 </div>
 
 [`TerrainType`](?id=terraintype)
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getTypeById](api/sandkit.api.terrains.worker.md?id=gettypebyid) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -612,6 +612,15 @@ True when hit points changed or the terrain was removed.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L211" target="_blank" rel="noopener">terrains.d.ts:211</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setHitPointsAtCell](api/sandkit.api.terrains.worker.md?id=sethitpointsatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.setHpAtCell(...args: [number, number, number]): boolean">
 
 ```ts
@@ -628,15 +637,6 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setHitPointsAtCell](api/sandkit.api.terrains.worker.md?id=sethitpointsatcell) instead.
-
-</div>
 </div>
 
 </div>

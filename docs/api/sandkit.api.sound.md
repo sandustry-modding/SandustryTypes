@@ -298,6 +298,15 @@ Stop a sound by id.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L62" target="_blank" rel="noopener">sound.d.ts:62</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [stopBySoundId](api/sandkit.api.sound.md?id=stopbysoundid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.sound.stopById(soundId: string): void">
 
 ```ts
@@ -314,15 +323,6 @@ stopById(soundId: string): void
 
 ##### soundId <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [stopBySoundId](api/sandkit.api.sound.md?id=stopbysoundid) instead.
-
-</div>
 </div>
 
 </div>

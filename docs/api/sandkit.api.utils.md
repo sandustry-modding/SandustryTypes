@@ -136,6 +136,15 @@ Return grid cells along a line between two points.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L51" target="_blank" rel="noopener">utils.d.ts:51</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getCoordinatesBetweenCells](api/sandkit.api.utils.md?id=getcoordinatesbetweencells) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.utils.getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]">
 
 ```ts
@@ -158,14 +167,5 @@ getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 </div>
 
 [`Vector2`](api/shared.player.md?id=vector2)[]
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getCoordinatesBetweenCells](api/sandkit.api.utils.md?id=getcoordinatesbetweencells) instead.
-
-</div>
-</div>
 
 </div>

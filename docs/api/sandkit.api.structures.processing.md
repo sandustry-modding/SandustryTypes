@@ -89,6 +89,15 @@ True when the enabled state changed.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L532" target="_blank" rel="noopener">structures.d.ts:532</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setEnabledAtCell](api/sandkit.api.structures.processing.md?id=setenabledatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.processing.setEnabledAt(...args: [number, number, boolean]): boolean">
 
 ```ts
@@ -105,15 +114,6 @@ setEnabledAt(...args: [number, number, boolean]): boolean
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setEnabledAtCell](api/sandkit.api.structures.processing.md?id=setenabledatcell) instead.
-
-</div>
 </div>
 
 </div>

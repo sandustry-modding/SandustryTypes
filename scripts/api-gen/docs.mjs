@@ -5,7 +5,7 @@
  * After TypeDoc, pages are flattened to runtime-style routes (`api/sandkit.api.action.md`).
  */
 import { spawnSync } from "node:child_process";
-import { existsSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { dirname, join, normalize, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -29,6 +29,7 @@ const API_GEN = dirname(fileURLToPath(import.meta.url));
 const ROOT = dirname(dirname(API_GEN));
 const DOCS = join(ROOT, "docs");
 const OUT = join(DOCS, "api");
+const TYPEDOC_OUT = join(ROOT, ".tmp", "typedoc-api");
 const TYPEDOC = join(API_GEN, "node_modules/typedoc/bin/typedoc");
 const CONFIG = join(API_GEN, "typedoc.json");
 
@@ -46,11 +47,10 @@ function ensureDocsDeps() {
 export function runDocs() {
   ensureDocsDeps();
 
-  if (existsSync(OUT)) {
-    rmSync(OUT, { recursive: true, force: true });
-  }
+  rmSync(TYPEDOC_OUT, { recursive: true, force: true });
+  mkdirSync(TYPEDOC_OUT, { recursive: true });
 
-  const result = spawnSync(process.execPath, [TYPEDOC, "--options", CONFIG], {
+  const result = spawnSync(process.execPath, [TYPEDOC, "--options", CONFIG, "--out", TYPEDOC_OUT], {
     stdio: "inherit",
     cwd: ROOT,
   });
@@ -59,21 +59,18 @@ export function runDocs() {
     process.exit(result.status ?? 1);
   }
 
-  fixDocsifyLinks(OUT);
-  highlightTypeDocSignatures(OUT);
-  qualifyApiPages(OUT);
+  fixDocsifyLinks(TYPEDOC_OUT);
+  highlightTypeDocSignatures(TYPEDOC_OUT);
+  qualifyApiPages(TYPEDOC_OUT);
 
-  const mainNs = snapshotNamespaceTree(OUT, "sandkit/api");
-  const workerNs = snapshotNamespaceTree(OUT, "worker");
-  const engineNs = snapshotNamespaceTree(OUT, "engine");
+  const mainNs = snapshotNamespaceTree(TYPEDOC_OUT, "sandkit/api");
+  const workerNs = snapshotNamespaceTree(TYPEDOC_OUT, "worker");
+  const engineNs = snapshotNamespaceTree(TYPEDOC_OUT, "engine");
 
-  const linkMap = flattenApiRoutes(OUT);
+  mkdirSync(OUT, { recursive: true });
+  const linkMap = flattenApiRoutes(TYPEDOC_OUT, OUT);
   restyleFlattenedApiPages(OUT);
   rewriteDocsifyMarkdownLinks(DOCS);
-  const leftoverTypedocIndex = join(OUT, "modules.md");
-  if (existsSync(leftoverTypedocIndex)) {
-    rmSync(leftoverTypedocIndex, { force: true });
-  }
   writeNamespaceBrowseScript(DOCS, linkMap, mainNs, workerNs, engineNs);
   writeFullPage(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
   writeApiSidebar(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
@@ -125,20 +122,21 @@ function listNamespaceNodes(dir, relPosix) {
 }
 
 /**
- * Move TypeDoc tree to flat runtime-style files (`sandkit.api.action.md`).
+ * Write TypeDoc tree to flat runtime-style files (`sandkit.api.action.md`).
+ * Overwrites destination files. Does not delete the destination folder.
  * @returns {Map<string, string>} `api/old/path.md` → `api/sandkit.api.action.md`
  */
-function flattenApiRoutes(outDir) {
+function flattenApiRoutes(srcDir, destDir) {
   /** @type {Map<string, string>} */
   const linkMap = new Map();
   /** @type {{ routeFile: string, content: string }[]} */
   const pages = [];
 
-  for (const filePath of walkMarkdownFiles(outDir)) {
+  for (const filePath of walkMarkdownFiles(srcDir)) {
     const base = filePath.split(/[/\\]/).pop() || "";
     if (base === "_sidebar.md" || base === "modules.md" || base.startsWith("_media")) continue;
 
-    const rel = toPosixPath(filePath.slice(outDir.length + 1));
+    const rel = toPosixPath(filePath.slice(srcDir.length + 1));
     const routeFile = apiPathToRouteFile(rel);
     if (!routeFile) continue;
 
@@ -153,26 +151,9 @@ function flattenApiRoutes(outDir) {
     });
   }
 
+  mkdirSync(destDir, { recursive: true });
   for (const page of pages) {
-    writeFileSync(join(outDir, page.routeFile), rewriteApiHrefMap(page.content, linkMap));
-  }
-
-  for (const entry of readdirSync(outDir, { withFileTypes: true })) {
-    const full = join(outDir, entry.name);
-    if (entry.isDirectory()) {
-      rmSync(full, { recursive: true, force: true });
-      continue;
-    }
-    if (!entry.isFile() || !entry.name.endsWith(".md")) continue;
-    if (entry.name === "_sidebar.md" || entry.name === "modules.md") continue;
-    if (entry.name.startsWith("_media")) {
-      rmSync(full, { force: true });
-      continue;
-    }
-    if (pages.some((p) => p.routeFile === entry.name)) continue;
-    if (linkMap.has(`api/${entry.name}`)) {
-      rmSync(full, { force: true });
-    }
+    writeFileSync(join(destDir, page.routeFile), rewriteApiHrefMap(page.content, linkMap));
   }
 
   return linkMap;
@@ -416,9 +397,6 @@ function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
     sharedNames,
   });
   writeFileSync(join(docsDir, "assets", "api-sidebar-tree.js"), renderSidebarTreeScript(roots));
-
-  const nestedSidebar = join(outDir, "_sidebar.md");
-  if (existsSync(nestedSidebar)) rmSync(nestedSidebar, { force: true });
 }
 
 /**

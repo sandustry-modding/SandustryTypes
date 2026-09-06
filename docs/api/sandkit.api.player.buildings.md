@@ -38,6 +38,15 @@ Unlock a structure type for building.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L129" target="_blank" rel="noopener">player.d.ts:129</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [unlockById](api/sandkit.api.player.buildings.md?id=unlockbyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.player.buildings.unlockByType(structureId: string): void">
 
 ```ts
@@ -54,15 +63,6 @@ unlockByType(structureId: string): void
 
 ##### structureId <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [unlockById](api/sandkit.api.player.buildings.md?id=unlockbyid) instead.
-
-</div>
 </div>
 
 </div>

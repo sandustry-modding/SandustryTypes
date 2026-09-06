@@ -331,6 +331,15 @@ Joins key parts into a single translation key.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L108" target="_blank" rel="noopener">i18n.d.ts:108</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [joinKey](api/sandkit.api.i18n.md?id=joinkey) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.i18n.key(...parts: string[]): string">
 
 ```ts
@@ -347,15 +356,6 @@ key(...parts: string[]): string
 
 ##### parts <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [joinKey](api/sandkit.api.i18n.md?id=joinkey) instead.
-
-</div>
 </div>
 
 </div>
@@ -464,6 +464,15 @@ Creates a translatable string object with a fallback.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L153" target="_blank" rel="noopener">i18n.d.ts:153</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [createTranslatable](api/sandkit.api.i18n.md?id=createtranslatable) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.i18n.translatable(key: string, fallback: string): object">
 
 ```ts
@@ -486,15 +495,6 @@ translatable(key: string, fallback: string): object
 </div>
 
 \_\_translatable: true key: string fallback: string
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [createTranslatable](api/sandkit.api.i18n.md?id=createtranslatable) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -593,6 +593,15 @@ Removes a global translation helper value.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L187" target="_blank" rel="noopener">i18n.d.ts:187</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeGlobal](api/sandkit.api.i18n.md?id=removeglobal) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.i18n.clearGlobal(key: string): void">
 
 ```ts
@@ -609,15 +618,6 @@ clearGlobal(key: string): void
 
 ##### key <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeGlobal](api/sandkit.api.i18n.md?id=removeglobal) instead.
-
-</div>
 </div>
 
 </div>

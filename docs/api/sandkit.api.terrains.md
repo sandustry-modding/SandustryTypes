@@ -133,6 +133,15 @@ Create terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L99" target="_blank" rel="noopener">terrains.d.ts:99</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [createAtCell](api/sandkit.api.terrains.md?id=createatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void">
 
 ```ts
@@ -149,15 +158,6 @@ createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOption
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [createAtCell](api/sandkit.api.terrains.md?id=createatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -196,6 +196,15 @@ Replace terrain at a cell. Main-entry writes are deferred; reads see the old gri
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L120" target="_blank" rel="noopener">terrains.d.ts:120</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [replaceAtCell](api/sandkit.api.terrains.md?id=replaceatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void">
 
 ```ts
@@ -212,15 +221,6 @@ replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptio
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [replaceAtCell](api/sandkit.api.terrains.md?id=replaceatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -259,6 +259,15 @@ Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L140" target="_blank" rel="noopener">terrains.d.ts:140</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeAtCell](api/sandkit.api.terrains.md?id=removeatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void">
 
 ```ts
@@ -275,15 +284,6 @@ removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeAtCell](api/sandkit.api.terrains.md?id=removeatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -322,6 +322,15 @@ Set terrain hit points at a cell. Main-entry writes are deferred; reads see the 
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L158" target="_blank" rel="noopener">terrains.d.ts:158</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setHitPointsAtCell](api/sandkit.api.terrains.md?id=sethitpointsatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.setHpAtCell(...args: [number, number, number]): boolean">
 
 ```ts
@@ -340,6 +349,14 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 </div>
 
+</div>
+
+<div class="smt-member-card">
+
+### ~~sandkit.api.terrains.setHpAtCellWhenIdle~~ :id=sethpatcellwhenidle
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L164" target="_blank" rel="noopener">terrains.d.ts:164</a></p>
+
 <div class="smt-member-deprecated">
 <span class="smt-member-deprecated-label">Deprecated</span>
 <div class="smt-member-deprecated-note" markdown="1">
@@ -348,14 +365,6 @@ Use [setHitPointsAtCell](api/sandkit.api.terrains.md?id=sethitpointsatcell) inst
 
 </div>
 </div>
-
-</div>
-
-<div class="smt-member-card">
-
-### ~~sandkit.api.terrains.setHpAtCellWhenIdle~~ :id=sethpatcellwhenidle
-
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L164" target="_blank" rel="noopener">terrains.d.ts:164</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.setHpAtCellWhenIdle(...args: [number, number, number]): void">
 
@@ -373,15 +382,6 @@ setHpAtCellWhenIdle(...args: [number, number, number]): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setHitPointsAtCell](api/sandkit.api.terrains.md?id=sethitpointsatcell) instead.
-
-</div>
 </div>
 
 </div>

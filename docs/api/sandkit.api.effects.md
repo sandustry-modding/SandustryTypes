@@ -272,6 +272,15 @@ Creates a named screen effect at world coordinates.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L35" target="_blank" rel="noopener">effects.d.ts:35</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [createAtWorld](api/sandkit.api.effects.md?id=createatworld) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void">
 
 ```ts
@@ -299,15 +308,6 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 </div>
 
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [createAtWorld](api/sandkit.api.effects.md?id=createatworld) instead.
-
-</div>
-</div>
-
 </div>
 
 <div class="smt-member-card">
@@ -315,6 +315,15 @@ Use [createAtWorld](api/sandkit.api.effects.md?id=createatworld) instead.
 ### ~~sandkit.api.effects.createLightAtWorld~~ :id=createlightatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L63" target="_blank" rel="noopener">effects.d.ts:63</a></p>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md?id=createatworld) instead.
+
+</div>
+</div>
 
 <div class="smt-member-sig" data-sig="sandkit.api.effects.createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): object">
 
@@ -341,15 +350,6 @@ createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptio
 </div>
 
 lightId: number | null optional index?: number | null
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md?id=createatworld) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -443,6 +443,15 @@ Creates a laser beam between two world points. Returns a handle to destroy it.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L112" target="_blank" rel="noopener">effects.d.ts:112</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md?id=removebyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.effects.removeLightById(lightId: number): void">
 
 ```ts
@@ -459,15 +468,6 @@ removeLightById(lightId: number): void
 
 ##### lightId <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md?id=removebyid) instead.
-
-</div>
 </div>
 
 </div>

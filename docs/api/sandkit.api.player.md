@@ -39,6 +39,15 @@ Set the player world position.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L37" target="_blank" rel="noopener">player.d.ts:37</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setPositionAtWorld](api/sandkit.api.player.md?id=setpositionatworld) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.player.setWorldPosition(worldX: number, worldY: number): void">
 
 ```ts
@@ -58,15 +67,6 @@ setWorldPosition(worldX: number, worldY: number): void
 
 ##### worldY <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setPositionAtWorld](api/sandkit.api.player.md?id=setpositionatworld) instead.
-
-</div>
 </div>
 
 </div>
@@ -239,6 +239,15 @@ True when the player hitbox fits at the position.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L96" target="_blank" rel="noopener">player.d.ts:96</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [isPositionClearAtWorld](api/sandkit.api.player.md?id=ispositionclearatworld) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.player.isWorldPositionClear(worldX: number, worldY: number): boolean">
 
 ```ts
@@ -258,15 +267,6 @@ isWorldPositionClear(worldX: number, worldY: number): boolean
 
 ##### worldY <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [isPositionClearAtWorld](api/sandkit.api.player.md?id=ispositionclearatworld) instead.
-
-</div>
 </div>
 
 </div>

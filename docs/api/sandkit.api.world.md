@@ -12,6 +12,15 @@ Use [grid](api/sandkit.api.grid.md) instead.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L54" target="_blank" rel="noopener">world.d.ts:54</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.world.runWhenSimulationIdle(callback: () =&gt; void): void">
 
 ```ts
@@ -30,15 +39,6 @@ runWhenSimulationIdle(callback: () => void): void
 
 </div>
 
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.
-
-</div>
-</div>
-
 </div>
 
 <div class="smt-member-card">
@@ -46,6 +46,15 @@ Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.
 ### ~~sandkit.api.world.redrawAroundCellWhenIdle~~ :id=redrawaroundcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L60" target="_blank" rel="noopener">world.d.ts:60</a></p>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [grid.redrawAroundCell](api/sandkit.api.grid.md?id=redrawaroundcell) instead.
+
+</div>
+</div>
 
 <div class="smt-member-sig" data-sig="sandkit.api.world.redrawAroundCellWhenIdle(...args: [number, number, number]): void">
 
@@ -63,15 +72,6 @@ redrawAroundCellWhenIdle(...args: [number, number, number]): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [grid.redrawAroundCell](api/sandkit.api.grid.md?id=redrawaroundcell) instead.
-
-</div>
 </div>
 
 </div>

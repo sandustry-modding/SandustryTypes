@@ -420,6 +420,15 @@ Context passed to structure processing callbacks.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L726" target="_blank" rel="noopener">structures.d.ts:726</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [StructureProcessingDefinitionV1](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1) with [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
+
+</div>
+</div>
+
 | Property | Type | Description |
 | --- | --- | --- |
 | ~~intervalMs~~ | <code>number</code> | Tick interval in milliseconds. Must be > 0. |
@@ -431,15 +440,6 @@ Context passed to structure processing callbacks.
 
 ##### ~~process~~ <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [StructureProcessingDefinitionV1](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1) with [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
-
-</div>
 </div>
 
 </div>
@@ -820,6 +820,15 @@ api.structures.registerVariant(
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L215" target="_blank" rel="noopener">structures.d.ts:215</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [registerVariant](api/sandkit.api.structures.md?id=registervariant) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void">
 
 ```ts
@@ -842,15 +851,6 @@ addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: objec
 
 ##### options? <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [registerVariant](api/sandkit.api.structures.md?id=registervariant) instead.
-
-</div>
 </div>
 
 </div>
@@ -937,6 +937,15 @@ Return structure types available for building.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L266" target="_blank" rel="noopener">structures.d.ts:266</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getAvailableTypes](api/sandkit.api.structures.md?id=getavailabletypes) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.getUnlockedTypes(): Set&lt;StructureRef&gt;">
 
 ```ts
@@ -946,15 +955,6 @@ getUnlockedTypes(): Set<StructureRef>
 </div>
 
 `Set`\<[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)\>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getAvailableTypes](api/sandkit.api.structures.md?id=getavailabletypes) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -1051,6 +1051,15 @@ function (same implementation and return value; names differ only).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L301" target="_blank" rel="noopener">structures.d.ts:301</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype) instead. Same function as [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype); return value is not inverted.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.isUnlockedByType(structureType: StructureRef): boolean">
 
 ```ts
@@ -1067,15 +1076,6 @@ isUnlockedByType(structureType: StructureRef): boolean
 
 ##### structureType <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype) instead. Same function as [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype); return value is not inverted.
-
-</div>
 </div>
 
 </div>
@@ -1156,6 +1156,15 @@ Build a structure at a cell. Main-thread writes are deferred.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L338" target="_blank" rel="noopener">structures.d.ts:338</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [buildAtCell](api/sandkit.api.structures.md?id=buildatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOptions]): void">
 
 ```ts
@@ -1172,15 +1181,6 @@ buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOption
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [buildAtCell](api/sandkit.api.structures.md?id=buildatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -1219,6 +1219,15 @@ Remove a structure at a cell. Main-thread writes are deferred.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L358" target="_blank" rel="noopener">structures.d.ts:358</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeAtCell](api/sandkit.api.structures.md?id=removeatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void">
 
 ```ts
@@ -1235,15 +1244,6 @@ removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeAtCell](api/sandkit.api.structures.md?id=removeatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -1294,6 +1294,15 @@ Remove structures between two cells. Main-thread writes are deferred.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L384" target="_blank" rel="noopener">structures.d.ts:384</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeBetweenCells](api/sandkit.api.structures.md?id=removebetweencells) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void">
 
 ```ts
@@ -1322,15 +1331,6 @@ removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: num
 
 ##### options? <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeBetweenCells](api/sandkit.api.structures.md?id=removebetweencells) instead.
-
-</div>
 </div>
 
 </div>
@@ -1381,6 +1381,15 @@ api.structures.removeAtCells([
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L413" target="_blank" rel="noopener">structures.d.ts:413</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeAtCells](api/sandkit.api.structures.md?id=removeatcells) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOptions): void">
 
 ```ts
@@ -1402,15 +1411,6 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 
 </div>
 
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeAtCells](api/sandkit.api.structures.md?id=removeatcells) instead.
-
-</div>
-</div>
-
 </div>
 
 <div class="smt-member-card">
@@ -1418,6 +1418,15 @@ Use [removeAtCells](api/sandkit.api.structures.md?id=removeatcells) instead.
 ### ~~sandkit.api.structures.addProcessor~~ :id=addprocessor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L422" target="_blank" rel="noopener">structures.d.ts:422</a></p>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
+
+</div>
+</div>
 
 <div class="smt-member-sig" data-sig="sandkit.api.structures.addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void">
 
@@ -1438,15 +1447,6 @@ addProcessor(structureId: StructureRef, definition: StructureProcessorDefinition
 
 ##### definition <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
-
-</div>
 </div>
 
 </div>

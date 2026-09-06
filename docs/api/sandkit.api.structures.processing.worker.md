@@ -38,6 +38,15 @@ Return true when processing is enabled at the cell.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L197" target="_blank" rel="noopener">structures.d.ts:197</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md?id=isenabledatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.processing.isEnabledAt(...args: CellCoordinates): boolean">
 
 ```ts
@@ -54,15 +63,6 @@ isEnabledAt(...args: CellCoordinates): boolean
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md?id=isenabledatcell) instead.
-
-</div>
 </div>
 
 </div>

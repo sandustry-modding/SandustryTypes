@@ -38,6 +38,15 @@ Add an item to inventory by item id.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L112" target="_blank" rel="noopener">player.d.ts:112</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [addById](api/sandkit.api.player.inventory.md?id=addbyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.player.inventory.addFromId(itemId: string): void">
 
 ```ts
@@ -54,15 +63,6 @@ addFromId(itemId: string): void
 
 ##### itemId <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [addById](api/sandkit.api.player.inventory.md?id=addbyid) instead.
-
-</div>
 </div>
 
 </div>

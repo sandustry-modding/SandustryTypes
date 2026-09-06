@@ -38,84 +38,229 @@ Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L185" target="_blank" rel="noopener">events.d.ts:185</a></p>
 
-| Hook | Args | Notes |
-| --- | --- | --- |
-| `item:used` | <code>{ itemId: string; useId: string; kind: string; cellX: number; cellY: number; prepared: Readonly&lt;Record&lt;string, unknown&gt;&gt; }</code> |  |
-| `frame:render` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `scene:game:started` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`scene:started:game`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `earlyAccess:completed` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`earlyAccess:complete`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `terrain:destroyed` | <code>{ cellX: number; cellY: number; cellType: number; x: number; y: number }</code> |  |
-| `fog:cellRevealed` | <code>{ cellX: number; cellY: number; x: number; y: number }</code> |  |
-| `upgrade:levelSelected` | <code>{ itemId: string; upgradeId: string; level: number }</code> |  |
-| `building:placed` | <code>{ structure: Record&lt;string, unknown&gt;; x: number; y: number; isBatch: boolean; isCopied: boolean }</code> |  |
-| `building:removing` | <code>{ structureId: string; x: number; y: number; byMove: boolean }</code> | Fires before `building:removed`. |
-| `building:removed` | <code>{ structureId: string; x: number; y: number; isBatch: boolean }</code> |  |
-| `structures:placed` | <code>{ structures: unknown[] }</code> |  |
-| `structures:removed` | <code>{ removed: unknown[]; structures: unknown[]; byMove: boolean }</code> |  |
-| `structures:moved` | <code>{ moved: unknown[]; failedToPlace: unknown[] }</code> |  |
-| `game:ready` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `game:started` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `tutorial:stepChanged` | <code>{ step: unknown }</code> |  |
-| `tutorial:completed` | <code>{ skipped: boolean }</code> |  |
-| `tech:unlocked` | <code>{ techId: string; suppressMusic: boolean }</code> |  |
-| `worldItem:pickedUp` | <code>{ worldItemId: number; type: string }</code> |  |
-| `resource:collected` | <code>{ resourceId: string; amount: number; sourceKind: string; cellX: number; cellY: number }</code> |  |
-| `player:collision:prepare` | <code>PlayerCollisionPreparePayload</code> |  |
-| `player:moved` | <code>{ dt: number; state: unknown }</code> |  |
+<h4 class="smt-hook-heading" id="item-used"><code>item:used</code></h4>
 
-<div class="smt-member-anchors">
+```ts
+{
+  itemId: string;
+  useId: string;
+  kind: string;
+  cellX: number;
+  cellY: number;
+  prepared: Readonly<Record<string, unknown>>;
+}
+```
 
-##### item:used <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="frame-render"><code>frame:render</code></h4>
 
-##### frame:render <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-##### scene:game:started <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="scene-game-started"><code>scene:game:started</code></h4>
 
-##### ~~scene:started:game~~ <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-##### earlyAccess:completed <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="scene-started-game"><code>scene:started:game</code></h4>
 
-##### ~~earlyAccess:complete~~ <!-- {docsify-ignore} -->
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-##### terrain:destroyed <!-- {docsify-ignore} -->
-
-##### fog:cellRevealed <!-- {docsify-ignore} -->
-
-##### upgrade:levelSelected <!-- {docsify-ignore} -->
-
-##### building:placed <!-- {docsify-ignore} -->
-
-##### building:removing <!-- {docsify-ignore} -->
-
-##### building:removed <!-- {docsify-ignore} -->
-
-##### structures:placed <!-- {docsify-ignore} -->
-
-##### structures:removed <!-- {docsify-ignore} -->
-
-##### structures:moved <!-- {docsify-ignore} -->
-
-##### game:ready <!-- {docsify-ignore} -->
-
-##### game:started <!-- {docsify-ignore} -->
-
-##### tutorial:stepChanged <!-- {docsify-ignore} -->
-
-##### tutorial:completed <!-- {docsify-ignore} -->
-
-##### tech:unlocked <!-- {docsify-ignore} -->
-
-##### worldItem:pickedUp <!-- {docsify-ignore} -->
-
-##### resource:collected <!-- {docsify-ignore} -->
-
-##### player:collision:prepare <!-- {docsify-ignore} -->
-
-##### player:moved <!-- {docsify-ignore} -->
+Deprecated alias.
 
 </div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="earlyAccess-completed"><code>earlyAccess:completed</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="earlyAccess-complete"><code>earlyAccess:complete</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="terrain-destroyed"><code>terrain:destroyed</code></h4>
+
+```ts
+{
+  cellX: number;
+  cellY: number;
+  cellType: number;
+  x: number;
+  y: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="fog-cellRevealed"><code>fog:cellRevealed</code></h4>
+
+```ts
+{
+  cellX: number;
+  cellY: number;
+  x: number;
+  y: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="upgrade-levelSelected"><code>upgrade:levelSelected</code></h4>
+
+```ts
+{
+  itemId: string;
+  upgradeId: string;
+  level: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="building-placed"><code>building:placed</code></h4>
+
+```ts
+{
+  structure: Record<string, unknown>;
+  x: number;
+  y: number;
+  isBatch: boolean;
+  isCopied: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="building-removing"><code>building:removing</code></h4>
+
+Fires before `building:removed`.
+
+```ts
+{
+  structureId: string;
+  x: number;
+  y: number;
+  byMove: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="building-removed"><code>building:removed</code></h4>
+
+```ts
+{
+  structureId: string;
+  x: number;
+  y: number;
+  isBatch: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="structures-placed"><code>structures:placed</code></h4>
+
+```ts
+{ structures: unknown[] }
+```
+
+<h4 class="smt-hook-heading" id="structures-removed"><code>structures:removed</code></h4>
+
+```ts
+{
+  removed: unknown[];
+  structures: unknown[];
+  byMove: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="structures-moved"><code>structures:moved</code></h4>
+
+```ts
+{
+  moved: unknown[];
+  failedToPlace: unknown[];
+}
+```
+
+<h4 class="smt-hook-heading" id="game-ready"><code>game:ready</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="game-started"><code>game:started</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="tutorial-stepChanged"><code>tutorial:stepChanged</code></h4>
+
+```ts
+{ step: unknown }
+```
+
+<h4 class="smt-hook-heading" id="tutorial-completed"><code>tutorial:completed</code></h4>
+
+```ts
+{ skipped: boolean }
+```
+
+<h4 class="smt-hook-heading" id="tech-unlocked"><code>tech:unlocked</code></h4>
+
+```ts
+{
+  techId: string;
+  suppressMusic: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="worldItem-pickedUp"><code>worldItem:pickedUp</code></h4>
+
+```ts
+{
+  worldItemId: number;
+  type: string;
+}
+```
+
+<h4 class="smt-hook-heading" id="resource-collected"><code>resource:collected</code></h4>
+
+```ts
+{
+  resourceId: string;
+  amount: number;
+  sourceKind: string;
+  cellX: number;
+  cellY: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="player-collision-prepare"><code>player:collision:prepare</code></h4>
+
+```ts
+PlayerCollisionPreparePayload
+```
+
+<h4 class="smt-hook-heading" id="player-moved"><code>player:moved</code></h4>
+
+```ts
+{
+  dt: number;
+  state: unknown;
+}
+```
 
 Known event payloads. Unlisted ids still use `unknown`.
 

@@ -345,6 +345,15 @@ Calls the callback for each cell in a rectangle.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L140" target="_blank" rel="noopener">grid.d.ts:140</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [forEachCellInRectangle](api/sandkit.api.grid.md?id=foreachcellinrectangle) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.grid.forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) =&gt; void]): void">
 
 ```ts
@@ -361,15 +370,6 @@ forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordi
 
 ##### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [forEachCellInRectangle](api/sandkit.api.grid.md?id=foreachcellinrectangle) instead.
-
-</div>
 </div>
 
 </div>

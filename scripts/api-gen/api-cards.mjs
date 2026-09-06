@@ -223,14 +223,100 @@ function formatTableType(type) {
   return `<code>${escapeHtml(t).replace(/\|/g, "&#124;")}</code>`;
 }
 
+function decodeTypeText(type) {
+  return stripCodeTicks(String(type || "").replace(/\s+/g, " ").trim())
+    .replace(/<code>|<\/code>/g, "")
+    .replace(/&quot;/g, '"')
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&#124;/g, "|")
+    .replace(/&amp;/g, "&");
+}
+
+/**
+ * @param {string} inner
+ * @returns {string[]}
+ */
+function splitTypeFields(inner) {
+  const parts = [];
+  let depth = 0;
+  let cur = "";
+  for (const ch of inner) {
+    if ("{<[(".includes(ch)) depth += 1;
+    else if ("}>])".includes(ch)) depth -= 1;
+    if (ch === ";" && depth === 0) {
+      if (cur.trim()) parts.push(cur.trim());
+      cur = "";
+      continue;
+    }
+    cur += ch;
+  }
+  if (cur.trim()) parts.push(cur.trim());
+  return parts;
+}
+
+/**
+ * @param {string} type
+ */
+function prettyTsType(type) {
+  const t = decodeTypeText(type);
+  if (!(t.startsWith("{") && t.endsWith("}"))) return t;
+  const fields = splitTypeFields(t.slice(1, -1).trim());
+  if (fields.length < 2) return t;
+  return `{\n  ${fields.join(";\n  ")};\n}`;
+}
+
+/**
+ * @param {string} title
+ * @param {{ name: string }[]} rows
+ */
+function isHookIdList(title, rows) {
+  return (
+    title === "Properties" &&
+    rows.length > 0 &&
+    rows.every((row) => unwrapHeadingName(row.name).includes(":"))
+  );
+}
+
+function hookHeadingId(name) {
+  return unwrapHeadingName(name)
+    .replace(/[^A-Za-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/**
+ * @param {{ name: string, type: string, desc: string }[]} rows
+ * @param {string} pageRel
+ * @returns {string[]}
+ */
+function renderHookList(rows, pageRel) {
+  const out = [""];
+  for (const row of rows) {
+    const strike = /^~~(.+)~~$/.exec(row.name);
+    const id = unwrapHeadingName(row.name);
+    out.push(
+      `<h4 class="smt-hook-heading" id="${escapeHtml(hookHeadingId(row.name))}"><code>${escapeHtml(id)}</code></h4>`,
+      "",
+    );
+    if (strike) {
+      out.push(renderDeprecatedHtml(row.desc || "Deprecated alias.", pageRel), "");
+    } else if (row.desc) {
+      out.push(row.desc, "");
+    }
+    const pretty = prettyTsType(row.type);
+    if (pretty) {
+      out.push("```ts", pretty, "```", "");
+    }
+  }
+  return out;
+}
+
 /**
  * @param {string} title
  * @param {{ name: string }[]} rows
  */
 function tableHeaders(title, rows) {
   if (title === "Methods") return { name: "Method", type: "Signature", desc: "Description" };
-  const hookish = rows.length > 0 && rows.every((row) => unwrapHeadingName(row.name).includes(":"));
-  if (title === "Properties" && hookish) return { name: "Hook", type: "Args", desc: "Notes" };
   if (title === "Properties") return { name: "Property", type: "Type", desc: "Description" };
   return { name: "Argument", type: "Type", desc: "Description" };
 }
@@ -249,9 +335,10 @@ function formatTableName(name) {
 /**
  * @param {string} title
  * @param {string} body
+ * @param {string} [pageRel]
  * @returns {string[]}
  */
-function flattenH5Table(title, body) {
+function flattenH5Table(title, body, pageRel = "") {
   const lines = body.split(/\n/);
   /** @type {{ name: string, type: string, desc: string }[]} */
   const rows = [];
@@ -300,10 +387,14 @@ function flattenH5Table(title, body) {
       type = `{ ${nested.join("; ")} }`;
     }
     if (/^~~/.test(name) && !desc) desc = "Deprecated alias.";
-    rows.push({ name, type: formatTableType(type), desc });
+    rows.push({ name, type, desc });
   }
   if (!rows.length) return [];
+  if (isHookIdList(title, rows)) {
+    return renderHookList(rows, pageRel);
+  }
   const headers = tableHeaders(title, rows);
+  /** @type {string[]} */
   const out = [
     "",
     `| ${headers.name} | ${headers.type} | ${headers.desc} |`,
@@ -311,7 +402,7 @@ function flattenH5Table(title, body) {
   ];
   for (const row of rows) {
     out.push(
-      `| ${escapeTableCell(formatTableName(row.name))} | ${escapeTableCell(row.type)} | ${escapeTableCell(row.desc)} |`,
+      `| ${escapeTableCell(formatTableName(row.name))} | ${escapeTableCell(formatTableType(row.type))} | ${escapeTableCell(row.desc)} |`,
     );
   }
   out.push("", `<div class="smt-member-anchors">`, "");
@@ -543,6 +634,7 @@ export function restyleApiCards(content, qualified) {
     out.push(`<div class="smt-member-card">`, "");
     out.push(`### ${title} :id=${parsedH3.id}`);
     if (badge) out.push("", badge);
+    if (deprecatedNote) out.push("", renderDeprecatedHtml(deprecatedNote, pageRel));
     out.push("");
 
     if (sigLine) {
@@ -550,7 +642,7 @@ export function restyleApiCards(content, qualified) {
     }
 
     for (const section of tables) {
-      const table = flattenH5Table(section.title, section.body);
+      const table = flattenH5Table(section.title, section.body, pageRel);
       if (table.length) out.push(...table);
     }
 
@@ -577,8 +669,6 @@ export function restyleApiCards(content, qualified) {
       }
       out.push("", `#### ${section.title}`, section.body.trimEnd(), "");
     }
-
-    if (deprecatedNote) out.push("", renderDeprecatedHtml(deprecatedNote, pageRel));
 
     out.push("", `</div>`, "");
   }

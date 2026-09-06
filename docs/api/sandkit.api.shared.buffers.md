@@ -52,6 +52,15 @@ const counts = api.shared.buffers.ensure("counts", {
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L38" target="_blank" rel="noopener">shared.d.ts:38</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [ensure](api/sandkit.api.shared.buffers.md?id=ensure) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.shared.buffers.create(key: string, config: object): SharedArray">
 
 ```ts
@@ -74,15 +83,6 @@ create(key: string, config: object): SharedArray
 </div>
 
 [`SharedArray`](api/sandkit.api.shared.md?id=sharedarray)
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [ensure](api/sandkit.api.shared.buffers.md?id=ensure) instead.
-
-</div>
-</div>
 
 </div>
 

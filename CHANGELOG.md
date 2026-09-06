@@ -15,7 +15,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Generated API members use a request-style card (signature, argument table, description) with the site gold and orange colours
 - Argument table union types use an HTML pipe so Docsify does not show a backslash
-- Hook-id property tables show the argument shape in one Args column
+- Deprecated member callouts sit directly below the member heading.
+- Hook-id maps use a small heading and a TypeScript fence for the args type.
+  Deprecated hook ids use the same Deprecated marker as other members.
+- `npm run generate` overwrites `docs/api/` pages in place and does not delete that folder
 - The current in-page heading uses the gold header colour
 - In-page TypeDoc hashes are rewritten to Docsify `?id=` heading links
 - Docs sidebar lists direct pages.

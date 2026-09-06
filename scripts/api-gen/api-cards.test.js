@@ -162,13 +162,16 @@ teleport:effect: Record<string, unknown>
 \`\`\`
 `;
   const out = restyleApiCards(src, "sandkit.api.hooks");
-  assert.match(out, /\| Hook \| Args \| Notes \|/);
-  assert.match(out, /`item:use`/);
-  assert.match(out, /itemId: string/);
-  assert.match(out, /useId: string/);
-  assert.doesNotMatch(out, /use: object/);
+  assert.match(out, /class="smt-hook-heading"/);
+  assert.match(out, /id="item-use"/);
+  assert.match(out, /<code>item:use<\/code>/);
+  assert.match(out, /```ts\n\{\n  itemId: string;\n  useId: string;\n\}\n```/);
+  assert.match(out, /smt-member-deprecated-label/);
   assert.match(out, /Deprecated alias/);
-  assert.doesNotMatch(out, /Deprecated: Use/);
+  assert.doesNotMatch(out, /^- `item:use`$/m);
+  assert.doesNotMatch(out, /~~`teleport:effect`~~/);
+  assert.doesNotMatch(out, /\| Hook \|/);
+  assert.doesNotMatch(out, /use: object/);
 });
 
 test("restyleApiCards table cells use HTML pipe for union types", () => {
@@ -234,6 +237,9 @@ Use [setPositionAtWorld](?id=setpositionatworld) instead.
   assert.doesNotMatch(out, /Official docs/);
   assert.match(out, /smt-member-deprecated/);
   assert.match(out, /smt-member-deprecated-note" markdown="1"/);
+  const depAt = out.indexOf("smt-member-deprecated");
+  const sigAt = out.indexOf("setWorldPosition(): void");
+  assert.ok(depAt >= 0 && sigAt > depAt);
   assert.match(out, /\[setPositionAtWorld\]\(api\/sandkit\.api\.player\.md\?id=setpositionatworld\)/);
   assert.doesNotMatch(out, /\]\(\?id=/);
   assert.doesNotMatch(out, /^#### Deprecated$/m);

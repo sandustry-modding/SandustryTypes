@@ -53,6 +53,15 @@ Spawn a named screen-space or world effect.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L36" target="_blank" rel="noopener">effects.d.ts:36</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [createAtWorld](api/sandkit.api.effects.worker.md?id=createatworld) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void">
 
 ```ts
@@ -78,15 +87,6 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 ##### options? <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [createAtWorld](api/sandkit.api.effects.worker.md?id=createatworld) instead.
-
-</div>
 </div>
 
 </div>

@@ -2039,6 +2039,15 @@ Creates a named screen effect at world coordinates.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L35" target="_blank" rel="noopener">effects.d.ts:35</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [createAtWorld](api/sandkit.api.effects.md?id=createatworld) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void">
 
 ```ts
@@ -2066,15 +2075,6 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 </div>
 
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [createAtWorld](api/sandkit.api.effects.md?id=createatworld) instead.
-
-</div>
-</div>
-
 </div>
 
 <div class="smt-member-card">
@@ -2082,6 +2082,15 @@ Use [createAtWorld](api/sandkit.api.effects.md?id=createatworld) instead.
 #### ~~sandkit.api.effects.createLightAtWorld~~ :id=sandkit.api.effects.createlightatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L63" target="_blank" rel="noopener">effects.d.ts:63</a></p>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md?id=createatworld) instead.
+
+</div>
+</div>
 
 <div class="smt-member-sig" data-sig="sandkit.api.effects.createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): object">
 
@@ -2108,15 +2117,6 @@ createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptio
 </div>
 
 lightId: number | null optional index?: number | null
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [lights.temporary.createAtWorld](api/sandkit.api.lights.temporary.md?id=createatworld) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -2210,6 +2210,15 @@ Creates a laser beam between two world points. Returns a handle to destroy it.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L112" target="_blank" rel="noopener">effects.d.ts:112</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md?id=removebyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.effects.removeLightById(lightId: number): void">
 
 ```ts
@@ -2226,15 +2235,6 @@ removeLightById(lightId: number): void
 
 ###### lightId <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [lights.temporary.removeById](api/sandkit.api.lights.temporary.md?id=removebyid) instead.
-
-</div>
 </div>
 
 </div>
@@ -2950,6 +2950,15 @@ api.elements.createAtCell(cellX, cellY, "steam", {
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L226" target="_blank" rel="noopener">elements.d.ts:226</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [createAtCell](api/sandkit.api.elements.md?id=createatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]): void">
 
 ```ts
@@ -2966,15 +2975,6 @@ createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [createAtCell](api/sandkit.api.elements.md?id=createatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3013,6 +3013,15 @@ Replace the element at a cell. Main-entry writes are deferred; reads see the old
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L247" target="_blank" rel="noopener">elements.d.ts:247</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [replaceAtCell](api/sandkit.api.elements.md?id=replaceatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]): void">
 
 ```ts
@@ -3029,15 +3038,6 @@ replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [replaceAtCell](api/sandkit.api.elements.md?id=replaceatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3076,6 +3076,15 @@ Remove the element at a cell. Main-entry writes are deferred; reads see the old 
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L267" target="_blank" rel="noopener">elements.d.ts:267</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeAtCell](api/sandkit.api.elements.md?id=removeatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void">
 
 ```ts
@@ -3092,15 +3101,6 @@ removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeAtCell](api/sandkit.api.elements.md?id=removeatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3148,6 +3148,15 @@ Move an element between cells. Main-entry writes are deferred; reads see the old
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L291" target="_blank" rel="noopener">elements.d.ts:291</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [teleportBetweenCells](api/sandkit.api.elements.md?id=teleportbetweencells) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: number, toCellY: number): void">
 
 ```ts
@@ -3173,15 +3182,6 @@ teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: numb
 
 ###### toCellY <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [teleportBetweenCells](api/sandkit.api.elements.md?id=teleportbetweencells) instead.
-
-</div>
 </div>
 
 </div>
@@ -3226,6 +3226,15 @@ api.elements.setVelocityAtCell(cellX, cellY, { x: 0, y: -120 });
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L317" target="_blank" rel="noopener">elements.d.ts:317</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setVelocityAtCell](api/sandkit.api.elements.md?id=setvelocityatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void">
 
 ```ts
@@ -3242,15 +3251,6 @@ setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setVelocityAtCell](api/sandkit.api.elements.md?id=setvelocityatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3300,6 +3300,15 @@ api.elements.addParticleVelocityAtCell(
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L346" target="_blank" rel="noopener">elements.d.ts:346</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [addParticleVelocityAtCell](api/sandkit.api.elements.md?id=addparticlevelocityatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): void">
 
 ```ts
@@ -3316,15 +3325,6 @@ addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): v
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [addParticleVelocityAtCell](api/sandkit.api.elements.md?id=addparticlevelocityatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3373,6 +3373,15 @@ api.elements.convertToParticleAtCell(
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L373" target="_blank" rel="noopener">elements.d.ts:373</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [convertToParticleAtCell](api/sandkit.api.elements.md?id=converttoparticleatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void">
 
 ```ts
@@ -3389,15 +3398,6 @@ convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [convertToParticleAtCell](api/sandkit.api.elements.md?id=converttoparticleatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3436,6 +3436,15 @@ Convert a particle back to a solid element. Main-entry writes are deferred; read
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L390" target="_blank" rel="noopener">elements.d.ts:390</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [convertFromParticleAtCell](api/sandkit.api.elements.md?id=convertfromparticleatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void">
 
 ```ts
@@ -3452,15 +3461,6 @@ convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [convertFromParticleAtCell](api/sandkit.api.elements.md?id=convertfromparticleatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3499,6 +3499,15 @@ Set a data field on the element at a cell. Main-entry writes are deferred; reads
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L409" target="_blank" rel="noopener">elements.d.ts:409</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setDataFieldAtCell](api/sandkit.api.elements.md?id=setdatafieldatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): void">
 
 ```ts
@@ -3515,15 +3524,6 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setDataFieldAtCell](api/sandkit.api.elements.md?id=setdatafieldatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3562,6 +3562,15 @@ Refresh the rendered color at a cell. Main-entry writes are deferred; reads see 
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L426" target="_blank" rel="noopener">elements.d.ts:426</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [refreshColorAtCell](api/sandkit.api.elements.md?id=refreshcoloratcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.refreshColorAtCellWhenIdle(...args: CellCoordinates): void">
 
 ```ts
@@ -3578,15 +3587,6 @@ refreshColorAtCellWhenIdle(...args: CellCoordinates): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [refreshColorAtCell](api/sandkit.api.elements.md?id=refreshcoloratcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3625,6 +3625,15 @@ Set the physics skip mode at a cell. Main-entry writes are deferred; reads see t
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L442" target="_blank" rel="noopener">elements.d.ts:442</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setPhysicsAtCell](api/sandkit.api.elements.md?id=setphysicsatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setPhysicsAtCellWhenIdle(...args: [number, number, number]): void">
 
 ```ts
@@ -3641,15 +3650,6 @@ setPhysicsAtCellWhenIdle(...args: [number, number, number]): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setPhysicsAtCell](api/sandkit.api.elements.md?id=setphysicsatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3701,6 +3701,15 @@ api.elements.setDurationAtCell(
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L473" target="_blank" rel="noopener">elements.d.ts:473</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setDurationAtCell](api/sandkit.api.elements.md?id=setdurationatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.setDurationAtCellWhenIdle(...args: [number, number, number, object]): void">
 
 ```ts
@@ -3717,15 +3726,6 @@ setDurationAtCellWhenIdle(...args: [number, number, number, object]): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setDurationAtCell](api/sandkit.api.elements.md?id=setdurationatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -3796,6 +3796,15 @@ Resolve a mod element string id to a type handle.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L141" target="_blank" rel="noopener">elements.d.ts:141</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getTypeById](api/sandkit.api.elements.md?id=gettypebyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.getTypeFromId(elementId: string &amp; object): ElementType">
 
 ```ts
@@ -3815,15 +3824,6 @@ getTypeFromId(elementId: string & object): ElementType
 </div>
 
 [`ElementType`](?id=sandkit.api.elements.elementtype)
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getTypeById](api/sandkit.api.elements.md?id=gettypebyid) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -4683,84 +4683,229 @@ Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L185" target="_blank" rel="noopener">events.d.ts:185</a></p>
 
-| Hook | Args | Notes |
-| --- | --- | --- |
-| `item:used` | <code>{ itemId: string; useId: string; kind: string; cellX: number; cellY: number; prepared: Readonly&lt;Record&lt;string, unknown&gt;&gt; }</code> |  |
-| `frame:render` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `scene:game:started` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`scene:started:game`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `earlyAccess:completed` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`earlyAccess:complete`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `terrain:destroyed` | <code>{ cellX: number; cellY: number; cellType: number; x: number; y: number }</code> |  |
-| `fog:cellRevealed` | <code>{ cellX: number; cellY: number; x: number; y: number }</code> |  |
-| `upgrade:levelSelected` | <code>{ itemId: string; upgradeId: string; level: number }</code> |  |
-| `building:placed` | <code>{ structure: Record&lt;string, unknown&gt;; x: number; y: number; isBatch: boolean; isCopied: boolean }</code> |  |
-| `building:removing` | <code>{ structureId: string; x: number; y: number; byMove: boolean }</code> | Fires before `building:removed`. |
-| `building:removed` | <code>{ structureId: string; x: number; y: number; isBatch: boolean }</code> |  |
-| `structures:placed` | <code>{ structures: unknown[] }</code> |  |
-| `structures:removed` | <code>{ removed: unknown[]; structures: unknown[]; byMove: boolean }</code> |  |
-| `structures:moved` | <code>{ moved: unknown[]; failedToPlace: unknown[] }</code> |  |
-| `game:ready` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `game:started` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `tutorial:stepChanged` | <code>{ step: unknown }</code> |  |
-| `tutorial:completed` | <code>{ skipped: boolean }</code> |  |
-| `tech:unlocked` | <code>{ techId: string; suppressMusic: boolean }</code> |  |
-| `worldItem:pickedUp` | <code>{ worldItemId: number; type: string }</code> |  |
-| `resource:collected` | <code>{ resourceId: string; amount: number; sourceKind: string; cellX: number; cellY: number }</code> |  |
-| `player:collision:prepare` | <code>PlayerCollisionPreparePayload</code> |  |
-| `player:moved` | <code>{ dt: number; state: unknown }</code> |  |
+<h4 class="smt-hook-heading" id="item-used"><code>item:used</code></h4>
 
-<div class="smt-member-anchors">
+```ts
+{
+  itemId: string;
+  useId: string;
+  kind: string;
+  cellX: number;
+  cellY: number;
+  prepared: Readonly<Record<string, unknown>>;
+}
+```
 
-###### item:used <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="frame-render"><code>frame:render</code></h4>
 
-###### frame:render <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-###### scene:game:started <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="scene-game-started"><code>scene:game:started</code></h4>
 
-###### ~~scene:started:game~~ <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-###### earlyAccess:completed <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="scene-started-game"><code>scene:started:game</code></h4>
 
-###### ~~earlyAccess:complete~~ <!-- {docsify-ignore} -->
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-###### terrain:destroyed <!-- {docsify-ignore} -->
-
-###### fog:cellRevealed <!-- {docsify-ignore} -->
-
-###### upgrade:levelSelected <!-- {docsify-ignore} -->
-
-###### building:placed <!-- {docsify-ignore} -->
-
-###### building:removing <!-- {docsify-ignore} -->
-
-###### building:removed <!-- {docsify-ignore} -->
-
-###### structures:placed <!-- {docsify-ignore} -->
-
-###### structures:removed <!-- {docsify-ignore} -->
-
-###### structures:moved <!-- {docsify-ignore} -->
-
-###### game:ready <!-- {docsify-ignore} -->
-
-###### game:started <!-- {docsify-ignore} -->
-
-###### tutorial:stepChanged <!-- {docsify-ignore} -->
-
-###### tutorial:completed <!-- {docsify-ignore} -->
-
-###### tech:unlocked <!-- {docsify-ignore} -->
-
-###### worldItem:pickedUp <!-- {docsify-ignore} -->
-
-###### resource:collected <!-- {docsify-ignore} -->
-
-###### player:collision:prepare <!-- {docsify-ignore} -->
-
-###### player:moved <!-- {docsify-ignore} -->
+Deprecated alias.
 
 </div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="earlyAccess-completed"><code>earlyAccess:completed</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="earlyAccess-complete"><code>earlyAccess:complete</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="terrain-destroyed"><code>terrain:destroyed</code></h4>
+
+```ts
+{
+  cellX: number;
+  cellY: number;
+  cellType: number;
+  x: number;
+  y: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="fog-cellRevealed"><code>fog:cellRevealed</code></h4>
+
+```ts
+{
+  cellX: number;
+  cellY: number;
+  x: number;
+  y: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="upgrade-levelSelected"><code>upgrade:levelSelected</code></h4>
+
+```ts
+{
+  itemId: string;
+  upgradeId: string;
+  level: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="building-placed"><code>building:placed</code></h4>
+
+```ts
+{
+  structure: Record<string, unknown>;
+  x: number;
+  y: number;
+  isBatch: boolean;
+  isCopied: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="building-removing"><code>building:removing</code></h4>
+
+Fires before `building:removed`.
+
+```ts
+{
+  structureId: string;
+  x: number;
+  y: number;
+  byMove: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="building-removed"><code>building:removed</code></h4>
+
+```ts
+{
+  structureId: string;
+  x: number;
+  y: number;
+  isBatch: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="structures-placed"><code>structures:placed</code></h4>
+
+```ts
+{ structures: unknown[] }
+```
+
+<h4 class="smt-hook-heading" id="structures-removed"><code>structures:removed</code></h4>
+
+```ts
+{
+  removed: unknown[];
+  structures: unknown[];
+  byMove: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="structures-moved"><code>structures:moved</code></h4>
+
+```ts
+{
+  moved: unknown[];
+  failedToPlace: unknown[];
+}
+```
+
+<h4 class="smt-hook-heading" id="game-ready"><code>game:ready</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="game-started"><code>game:started</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="tutorial-stepChanged"><code>tutorial:stepChanged</code></h4>
+
+```ts
+{ step: unknown }
+```
+
+<h4 class="smt-hook-heading" id="tutorial-completed"><code>tutorial:completed</code></h4>
+
+```ts
+{ skipped: boolean }
+```
+
+<h4 class="smt-hook-heading" id="tech-unlocked"><code>tech:unlocked</code></h4>
+
+```ts
+{
+  techId: string;
+  suppressMusic: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="worldItem-pickedUp"><code>worldItem:pickedUp</code></h4>
+
+```ts
+{
+  worldItemId: number;
+  type: string;
+}
+```
+
+<h4 class="smt-hook-heading" id="resource-collected"><code>resource:collected</code></h4>
+
+```ts
+{
+  resourceId: string;
+  amount: number;
+  sourceKind: string;
+  cellX: number;
+  cellY: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="player-collision-prepare"><code>player:collision:prepare</code></h4>
+
+```ts
+PlayerCollisionPreparePayload
+```
+
+<h4 class="smt-hook-heading" id="player-moved"><code>player:moved</code></h4>
+
+```ts
+{
+  dt: number;
+  state: unknown;
+}
+```
 
 Known event payloads. Unlisted ids still use `unknown`.
 
@@ -5380,6 +5525,15 @@ Burn the element at the cell. Main-entry writes are deferred; reads see the old 
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L31" target="_blank" rel="noopener">fire.d.ts:31</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [burnElementAtCell](api/sandkit.api.fire.md?id=burnelementatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.fire.burnElementAtCellWhenIdle(...args: CellCoordinates): void">
 
 ```ts
@@ -5396,15 +5550,6 @@ burnElementAtCellWhenIdle(...args: CellCoordinates): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [burnElementAtCell](api/sandkit.api.fire.md?id=burnelementatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -5883,6 +6028,15 @@ Calls the callback for each cell in a rectangle.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L140" target="_blank" rel="noopener">grid.d.ts:140</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [forEachCellInRectangle](api/sandkit.api.grid.md?id=foreachcellinrectangle) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.grid.forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordinates) =&gt; void]): void">
 
 ```ts
@@ -5899,15 +6053,6 @@ forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordi
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [forEachCellInRectangle](api/sandkit.api.grid.md?id=foreachcellinrectangle) instead.
-
-</div>
 </div>
 
 </div>
@@ -6145,96 +6290,318 @@ Options shared by intercept and modify hooks.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L495" target="_blank" rel="noopener">hooks.d.ts:495</a></p>
 
-| Hook | Args | Notes |
-| --- | --- | --- |
-| `item:use` | <code>{ itemId: string; useId: string; kind: &quot;instant&quot; &#124; &quot;sustained&quot; &#124; &quot;chargeThenFire&quot;; baseline: Readonly&lt;Record&lt;string, unknown&gt;&gt;; prepared: Record&lt;string, unknown&gt; }</code> |  |
-| `teleport:effect:create` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`teleport:effect`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `action:start` | <code>{ action: object &amp; Record&lt;string, unknown&gt;; id: string }</code> |  |
-| ~~`action:intercept`~~ | <code>{ action: object &amp; Record&lt;string, unknown&gt;; id: string }</code> | Deprecated alias. |
-| `input:keyDown` | <code>{ key: string; code: string; event: Event }</code> |  |
-| ~~`input:keydown`~~ | <code>{ key: string; code: string; event: Event }</code> | Deprecated alias. |
-| `input:keyUp` | <code>{ key: string; code: string; event: Event }</code> |  |
-| ~~`input:keyup`~~ | <code>{ key: string; code: string; event: Event }</code> | Deprecated alias. |
-| `placePoints:suppress` | <code>{ type: string }</code> |  |
-| ~~`placePoints:isSuppressed`~~ | <code>{ type: string }</code> | Deprecated alias. |
-| `placePoints:directionalArrows:suppress` | <code>{ type: string }</code> |  |
-| ~~`placePoints:directionalArrows:isSuppressed`~~ | <code>{ type: string }</code> | Deprecated alias. |
-| `entity:update` | <code>{ entityTypeId: string; entity: Record&lt;string, unknown&gt;; deltaTimeSeconds: number; phase: &quot;normal&quot; &#124; &quot;capturing&quot; &#124; &quot;launching&quot;; isVisible: boolean; playerWorldX: number; playerWorldY: number; worldMinX: number; worldMinY: number; worldMaxX: number; worldMaxY: number; cellSize: number; timeSeconds: number }</code> |  |
-| `building:place` | <code>{ structureId: string; x: number; y: number; data: Record&lt;string, unknown&gt; }</code> |  |
-| `building:clearShape` | <code>{ structure: Record&lt;string, unknown&gt; }</code> |  |
-| `input:scroll` | <code>{ deltaY: number }</code> |  |
-| `input:boostDown` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`input:boost-down`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `input:descendDown` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`input:descend-down`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `input:escape` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `interactable:suppressHover` | <code>{ type: string; structure: Record&lt;string, unknown&gt; }</code> |  |
-| `fire:element:ignite` | <code>{ x: number; y: number; elementType: number }</code> |  |
-| `projectile:fire:overStructure` | <code>{ projectile: Record&lt;string, unknown&gt;; x: number; y: number }</code> |  |
-| `projectile:hit` | <code>{ projectile: Record&lt;string, unknown&gt;; travelResult: Record&lt;string, unknown&gt; }</code> |  |
-| `player:position:commit` | <code>{ previousWorldX: number; previousWorldY: number; proposedWorldX: number; proposedWorldY: number; velocityX: number; velocityY: number }</code> |  |
-| `progression:purchase` | <code>{ domain: &quot;tech&quot; &#124; &quot;upgrade&quot;; id: string; itemId: string; costs: Record&lt;string, unknown&gt; }</code> |  |
+<h4 class="smt-hook-heading" id="item-use"><code>item:use</code></h4>
 
-<div class="smt-member-anchors">
+```ts
+{
+  itemId: string;
+  useId: string;
+  kind: "instant" | "sustained" | "chargeThenFire";
+  baseline: Readonly<Record<string, unknown>>;
+  prepared: Record<string, unknown>;
+}
+```
 
-###### item:use <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="teleport-effect-create"><code>teleport:effect:create</code></h4>
 
-###### teleport:effect:create <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-###### ~~teleport:effect~~ <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="teleport-effect"><code>teleport:effect</code></h4>
 
-###### action:start <!-- {docsify-ignore} -->
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-###### ~~action:intercept~~ <!-- {docsify-ignore} -->
-
-###### input:keyDown <!-- {docsify-ignore} -->
-
-###### ~~input:keydown~~ <!-- {docsify-ignore} -->
-
-###### input:keyUp <!-- {docsify-ignore} -->
-
-###### ~~input:keyup~~ <!-- {docsify-ignore} -->
-
-###### placePoints:suppress <!-- {docsify-ignore} -->
-
-###### ~~placePoints:isSuppressed~~ <!-- {docsify-ignore} -->
-
-###### placePoints:directionalArrows:suppress <!-- {docsify-ignore} -->
-
-###### ~~placePoints:directionalArrows:isSuppressed~~ <!-- {docsify-ignore} -->
-
-###### entity:update <!-- {docsify-ignore} -->
-
-###### building:place <!-- {docsify-ignore} -->
-
-###### building:clearShape <!-- {docsify-ignore} -->
-
-###### input:scroll <!-- {docsify-ignore} -->
-
-###### input:boostDown <!-- {docsify-ignore} -->
-
-###### ~~input:boost-down~~ <!-- {docsify-ignore} -->
-
-###### input:descendDown <!-- {docsify-ignore} -->
-
-###### ~~input:descend-down~~ <!-- {docsify-ignore} -->
-
-###### input:escape <!-- {docsify-ignore} -->
-
-###### interactable:suppressHover <!-- {docsify-ignore} -->
-
-###### fire:element:ignite <!-- {docsify-ignore} -->
-
-###### projectile:fire:overStructure <!-- {docsify-ignore} -->
-
-###### projectile:hit <!-- {docsify-ignore} -->
-
-###### player:position:commit <!-- {docsify-ignore} -->
-
-###### progression:purchase <!-- {docsify-ignore} -->
+Deprecated alias.
 
 </div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="action-start"><code>action:start</code></h4>
+
+```ts
+{
+  action: object & Record<string, unknown>;
+  id: string;
+}
+```
+
+<h4 class="smt-hook-heading" id="action-intercept"><code>action:intercept</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{
+  action: object & Record<string, unknown>;
+  id: string;
+}
+```
+
+<h4 class="smt-hook-heading" id="input-keyDown"><code>input:keyDown</code></h4>
+
+```ts
+{
+  key: string;
+  code: string;
+  event: Event;
+}
+```
+
+<h4 class="smt-hook-heading" id="input-keydown"><code>input:keydown</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{
+  key: string;
+  code: string;
+  event: Event;
+}
+```
+
+<h4 class="smt-hook-heading" id="input-keyUp"><code>input:keyUp</code></h4>
+
+```ts
+{
+  key: string;
+  code: string;
+  event: Event;
+}
+```
+
+<h4 class="smt-hook-heading" id="input-keyup"><code>input:keyup</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{
+  key: string;
+  code: string;
+  event: Event;
+}
+```
+
+<h4 class="smt-hook-heading" id="placePoints-suppress"><code>placePoints:suppress</code></h4>
+
+```ts
+{ type: string }
+```
+
+<h4 class="smt-hook-heading" id="placePoints-isSuppressed"><code>placePoints:isSuppressed</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ type: string }
+```
+
+<h4 class="smt-hook-heading" id="placePoints-directionalArrows-suppress"><code>placePoints:directionalArrows:suppress</code></h4>
+
+```ts
+{ type: string }
+```
+
+<h4 class="smt-hook-heading" id="placePoints-directionalArrows-isSuppressed"><code>placePoints:directionalArrows:isSuppressed</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ type: string }
+```
+
+<h4 class="smt-hook-heading" id="entity-update"><code>entity:update</code></h4>
+
+```ts
+{
+  entityTypeId: string;
+  entity: Record<string, unknown>;
+  deltaTimeSeconds: number;
+  phase: "normal" | "capturing" | "launching";
+  isVisible: boolean;
+  playerWorldX: number;
+  playerWorldY: number;
+  worldMinX: number;
+  worldMinY: number;
+  worldMaxX: number;
+  worldMaxY: number;
+  cellSize: number;
+  timeSeconds: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="building-place"><code>building:place</code></h4>
+
+```ts
+{
+  structureId: string;
+  x: number;
+  y: number;
+  data: Record<string, unknown>;
+}
+```
+
+<h4 class="smt-hook-heading" id="building-clearShape"><code>building:clearShape</code></h4>
+
+```ts
+{ structure: Record<string, unknown> }
+```
+
+<h4 class="smt-hook-heading" id="input-scroll"><code>input:scroll</code></h4>
+
+```ts
+{ deltaY: number }
+```
+
+<h4 class="smt-hook-heading" id="input-boostDown"><code>input:boostDown</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="input-boost-down"><code>input:boost-down</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="input-descendDown"><code>input:descendDown</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="input-descend-down"><code>input:descend-down</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="input-escape"><code>input:escape</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="interactable-suppressHover"><code>interactable:suppressHover</code></h4>
+
+```ts
+{
+  type: string;
+  structure: Record<string, unknown>;
+}
+```
+
+<h4 class="smt-hook-heading" id="fire-element-ignite"><code>fire:element:ignite</code></h4>
+
+```ts
+{
+  x: number;
+  y: number;
+  elementType: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="projectile-fire-overStructure"><code>projectile:fire:overStructure</code></h4>
+
+```ts
+{
+  projectile: Record<string, unknown>;
+  x: number;
+  y: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="projectile-hit"><code>projectile:hit</code></h4>
+
+```ts
+{
+  projectile: Record<string, unknown>;
+  travelResult: Record<string, unknown>;
+}
+```
+
+<h4 class="smt-hook-heading" id="player-position-commit"><code>player:position:commit</code></h4>
+
+```ts
+{
+  previousWorldX: number;
+  previousWorldY: number;
+  proposedWorldX: number;
+  proposedWorldY: number;
+  velocityX: number;
+  velocityY: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="progression-purchase"><code>progression:purchase</code></h4>
+
+```ts
+{
+  domain: "tech" | "upgrade";
+  id: string;
+  itemId: string;
+  costs: Record<string, unknown>;
+}
+```
 
 Intercept hook argument shapes keyed by hook id.
 
@@ -6246,93 +6613,320 @@ Intercept hook argument shapes keyed by hook id.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L581" target="_blank" rel="noopener">hooks.d.ts:581</a></p>
 
-| Hook | Args | Notes |
-| --- | --- | --- |
-| `excavation:prepare` | <code>{ sourceId: string; sourceKind: &quot;structure&quot; &#124; &quot;tool&quot; &#124; &quot;projectile&quot; &#124; &quot;drone&quot;; originCellX: number; originCellY: number; consumedVoid: boolean; profileId: string; patternDiameterCells: number; drillTierDamage: number }</code> |  |
-| `locator:scan:prepare` | <code>{ originWorldX: number; originWorldY: number; hasTarget: boolean; targetCellX: number; targetCellY: number; outerTint: [number, number, number]; innerTint: [number, number, number]; noTargetToast: string; noTargetToastKey: string; triangulationLensOverride: boolean &#124; null }</code> |  |
-| `vacuum:prepare` | <code>{ nozzleCellX: number; nozzleCellY: number; targetCellX: number; targetCellY: number; pattern: number[][] }</code> |  |
-| `vacuum:element:prepare` | <code>{ elementType: number; matterType: number; isTransportable: boolean; collectable: boolean; visibleInPicker: boolean }</code> |  |
-| `player:movement:prepare` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`player:movement`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `building:placementLimit:prepare` | <code>{ maxCount: number &#124; null }</code> |  |
-| ~~`building:placementLimit`~~ | <code>{ maxCount: number &#124; null }</code> | Deprecated alias. |
-| ~~`building:placement-limit`~~ | <code>{ maxCount: number &#124; null }</code> | Deprecated alias. |
-| `fluxEmanator:processing:prepare` | <code>{ speedMultiplier: number }</code> |  |
-| ~~`fluxEmanator:processing`~~ | <code>{ speedMultiplier: number }</code> | Deprecated alias. |
-| ~~`flux-emanator:processing`~~ | <code>{ speedMultiplier: number }</code> | Deprecated alias. |
-| `render:pipes:prepare` | <code>{ layer: string }</code> |  |
-| ~~`render:pipes`~~ | <code>{ layer: string }</code> | Deprecated alias. |
-| `structures:moved:prepare` | <code>{ moved: unknown[]; failedToPlace: unknown[] }</code> |  |
-| `structures:removed:prepare` | <code>{ removed: unknown[]; structures: unknown[]; byMove: boolean }</code> |  |
-| `weapon:reload:prepare` | <code>{ weaponId: string; reloadMs: number; maxAmmo: number }</code> |  |
-| `projectile:travel:prepare` | <code>{ projectileType: string; firstCollisionStep: number; maxCollisionSteps: number; collidesWithTerrain: boolean; collidesWithStructures: boolean }</code> |  |
-| `projectile:impact:prepare` | <code>{ projectileType: string; impactKind: string; profileId: string; power: number; centerPower: number; radiusCells: number; radius: number }</code> |  |
-| `player:collision:prepare` | <code>{ phaseThroughTerrain: boolean; phaseThroughStructures: boolean; maxStepCells: number }</code> |  |
-| `trigger:schedule:prepare` | <code>{ triggerId: string; intervalMs: number; sequentialRuns: number }</code> |  |
-| `progression:cost:prepare` | <code>{ domain: &quot;tech&quot; &#124; &quot;upgrade&quot;; id: string; itemId: string; currencyId: string; amount: number }</code> |  |
-| `resource:collection:prepare` | <code>{ resourceId: string; sourceKind: string; cellX: number; cellY: number; amount: number; feedback: &quot;silent&quot; &#124; &quot;default&quot; &#124; &quot;reduced&quot; }</code> |  |
-| `resource:delivery:prepare` | <code>{ resourceId: string; sourceKind: string; sourceId: string; sourceCellX: number; sourceCellY: number; targetCellX: number; targetCellY: number; mode: &quot;world&quot; &#124; &quot;collection&quot;; amount: number; feedback: &quot;silent&quot; &#124; &quot;default&quot; }</code> |  |
-| `resource:balance:prepare` | <code>{ resourceId: string; balance: number }</code> |  |
-| `gold:removal:prepare` | <code>{ requestedAmount: number; shortfall: number }</code> |  |
-| `gold:removal:settle` | <code>{ requestedAmount: number; physicalRemoved: number; shortfall: number }</code> |  |
+<h4 class="smt-hook-heading" id="excavation-prepare"><code>excavation:prepare</code></h4>
 
-<div class="smt-member-anchors">
+```ts
+{
+  sourceId: string;
+  sourceKind: "structure" | "tool" | "projectile" | "drone";
+  originCellX: number;
+  originCellY: number;
+  consumedVoid: boolean;
+  profileId: string;
+  patternDiameterCells: number;
+  drillTierDamage: number;
+}
+```
 
-###### excavation:prepare <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="locator-scan-prepare"><code>locator:scan:prepare</code></h4>
 
-###### locator:scan:prepare <!-- {docsify-ignore} -->
+```ts
+{
+  originWorldX: number;
+  originWorldY: number;
+  hasTarget: boolean;
+  targetCellX: number;
+  targetCellY: number;
+  outerTint: [number, number, number];
+  innerTint: [number, number, number];
+  noTargetToast: string;
+  noTargetToastKey: string;
+  triangulationLensOverride: boolean | null;
+}
+```
 
-###### vacuum:prepare <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="vacuum-prepare"><code>vacuum:prepare</code></h4>
 
-###### vacuum:element:prepare <!-- {docsify-ignore} -->
+```ts
+{
+  nozzleCellX: number;
+  nozzleCellY: number;
+  targetCellX: number;
+  targetCellY: number;
+  pattern: number[][];
+}
+```
 
-###### player:movement:prepare <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="vacuum-element-prepare"><code>vacuum:element:prepare</code></h4>
 
-###### ~~player:movement~~ <!-- {docsify-ignore} -->
+```ts
+{
+  elementType: number;
+  matterType: number;
+  isTransportable: boolean;
+  collectable: boolean;
+  visibleInPicker: boolean;
+}
+```
 
-###### building:placementLimit:prepare <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="player-movement-prepare"><code>player:movement:prepare</code></h4>
 
-###### ~~building:placementLimit~~ <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-###### ~~building:placement-limit~~ <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="player-movement"><code>player:movement</code></h4>
 
-###### fluxEmanator:processing:prepare <!-- {docsify-ignore} -->
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-###### ~~fluxEmanator:processing~~ <!-- {docsify-ignore} -->
-
-###### ~~flux-emanator:processing~~ <!-- {docsify-ignore} -->
-
-###### render:pipes:prepare <!-- {docsify-ignore} -->
-
-###### ~~render:pipes~~ <!-- {docsify-ignore} -->
-
-###### structures:moved:prepare <!-- {docsify-ignore} -->
-
-###### structures:removed:prepare <!-- {docsify-ignore} -->
-
-###### weapon:reload:prepare <!-- {docsify-ignore} -->
-
-###### projectile:travel:prepare <!-- {docsify-ignore} -->
-
-###### projectile:impact:prepare <!-- {docsify-ignore} -->
-
-###### player:collision:prepare <!-- {docsify-ignore} -->
-
-###### trigger:schedule:prepare <!-- {docsify-ignore} -->
-
-###### progression:cost:prepare <!-- {docsify-ignore} -->
-
-###### resource:collection:prepare <!-- {docsify-ignore} -->
-
-###### resource:delivery:prepare <!-- {docsify-ignore} -->
-
-###### resource:balance:prepare <!-- {docsify-ignore} -->
-
-###### gold:removal:prepare <!-- {docsify-ignore} -->
-
-###### gold:removal:settle <!-- {docsify-ignore} -->
+Deprecated alias.
 
 </div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="building-placementLimit-prepare"><code>building:placementLimit:prepare</code></h4>
+
+```ts
+{ maxCount: number | null }
+```
+
+<h4 class="smt-hook-heading" id="building-placementLimit"><code>building:placementLimit</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ maxCount: number | null }
+```
+
+<h4 class="smt-hook-heading" id="building-placement-limit"><code>building:placement-limit</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ maxCount: number | null }
+```
+
+<h4 class="smt-hook-heading" id="fluxEmanator-processing-prepare"><code>fluxEmanator:processing:prepare</code></h4>
+
+```ts
+{ speedMultiplier: number }
+```
+
+<h4 class="smt-hook-heading" id="fluxEmanator-processing"><code>fluxEmanator:processing</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ speedMultiplier: number }
+```
+
+<h4 class="smt-hook-heading" id="flux-emanator-processing"><code>flux-emanator:processing</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ speedMultiplier: number }
+```
+
+<h4 class="smt-hook-heading" id="render-pipes-prepare"><code>render:pipes:prepare</code></h4>
+
+```ts
+{ layer: string }
+```
+
+<h4 class="smt-hook-heading" id="render-pipes"><code>render:pipes</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+{ layer: string }
+```
+
+<h4 class="smt-hook-heading" id="structures-moved-prepare"><code>structures:moved:prepare</code></h4>
+
+```ts
+{
+  moved: unknown[];
+  failedToPlace: unknown[];
+}
+```
+
+<h4 class="smt-hook-heading" id="structures-removed-prepare"><code>structures:removed:prepare</code></h4>
+
+```ts
+{
+  removed: unknown[];
+  structures: unknown[];
+  byMove: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="weapon-reload-prepare"><code>weapon:reload:prepare</code></h4>
+
+```ts
+{
+  weaponId: string;
+  reloadMs: number;
+  maxAmmo: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="projectile-travel-prepare"><code>projectile:travel:prepare</code></h4>
+
+```ts
+{
+  projectileType: string;
+  firstCollisionStep: number;
+  maxCollisionSteps: number;
+  collidesWithTerrain: boolean;
+  collidesWithStructures: boolean;
+}
+```
+
+<h4 class="smt-hook-heading" id="projectile-impact-prepare"><code>projectile:impact:prepare</code></h4>
+
+```ts
+{
+  projectileType: string;
+  impactKind: string;
+  profileId: string;
+  power: number;
+  centerPower: number;
+  radiusCells: number;
+  radius: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="player-collision-prepare"><code>player:collision:prepare</code></h4>
+
+```ts
+{
+  phaseThroughTerrain: boolean;
+  phaseThroughStructures: boolean;
+  maxStepCells: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="trigger-schedule-prepare"><code>trigger:schedule:prepare</code></h4>
+
+```ts
+{
+  triggerId: string;
+  intervalMs: number;
+  sequentialRuns: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="progression-cost-prepare"><code>progression:cost:prepare</code></h4>
+
+```ts
+{
+  domain: "tech" | "upgrade";
+  id: string;
+  itemId: string;
+  currencyId: string;
+  amount: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="resource-collection-prepare"><code>resource:collection:prepare</code></h4>
+
+```ts
+{
+  resourceId: string;
+  sourceKind: string;
+  cellX: number;
+  cellY: number;
+  amount: number;
+  feedback: "silent" | "default" | "reduced";
+}
+```
+
+<h4 class="smt-hook-heading" id="resource-delivery-prepare"><code>resource:delivery:prepare</code></h4>
+
+```ts
+{
+  resourceId: string;
+  sourceKind: string;
+  sourceId: string;
+  sourceCellX: number;
+  sourceCellY: number;
+  targetCellX: number;
+  targetCellY: number;
+  mode: "world" | "collection";
+  amount: number;
+  feedback: "silent" | "default";
+}
+```
+
+<h4 class="smt-hook-heading" id="resource-balance-prepare"><code>resource:balance:prepare</code></h4>
+
+```ts
+{
+  resourceId: string;
+  balance: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="gold-removal-prepare"><code>gold:removal:prepare</code></h4>
+
+```ts
+{
+  requestedAmount: number;
+  shortfall: number;
+}
+```
+
+<h4 class="smt-hook-heading" id="gold-removal-settle"><code>gold:removal:settle</code></h4>
+
+```ts
+{
+  requestedAmount: number;
+  physicalRemoved: number;
+  shortfall: number;
+}
+```
 
 Modify hook argument shapes keyed by hook id.
 
@@ -7270,6 +7864,15 @@ Joins key parts into a single translation key.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L108" target="_blank" rel="noopener">i18n.d.ts:108</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [joinKey](api/sandkit.api.i18n.md?id=joinkey) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.i18n.key(...parts: string[]): string">
 
 ```ts
@@ -7286,15 +7889,6 @@ key(...parts: string[]): string
 
 ###### parts <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [joinKey](api/sandkit.api.i18n.md?id=joinkey) instead.
-
-</div>
 </div>
 
 </div>
@@ -7403,6 +7997,15 @@ Creates a translatable string object with a fallback.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L153" target="_blank" rel="noopener">i18n.d.ts:153</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [createTranslatable](api/sandkit.api.i18n.md?id=createtranslatable) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.i18n.translatable(key: string, fallback: string): object">
 
 ```ts
@@ -7425,15 +8028,6 @@ translatable(key: string, fallback: string): object
 </div>
 
 \_\_translatable: true key: string fallback: string
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [createTranslatable](api/sandkit.api.i18n.md?id=createtranslatable) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -7532,6 +8126,15 @@ Removes a global translation helper value.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L187" target="_blank" rel="noopener">i18n.d.ts:187</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeGlobal](api/sandkit.api.i18n.md?id=removeglobal) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.i18n.clearGlobal(key: string): void">
 
 ```ts
@@ -7548,15 +8151,6 @@ clearGlobal(key: string): void
 
 ###### key <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeGlobal](api/sandkit.api.i18n.md?id=removeglobal) instead.
-
-</div>
 </div>
 
 </div>
@@ -9022,14 +9616,6 @@ Official pickup type discriminator.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L17" target="_blank" rel="noopener">pickups.d.ts:17</a></p>
 
-<div class="smt-member-sig" data-sig="sandkit.api.pickups.WorldItemType = PickupType">
-
-```ts
-WorldItemType = PickupType
-```
-
-</div>
-
 <div class="smt-member-deprecated">
 <span class="smt-member-deprecated-label">Deprecated</span>
 <div class="smt-member-deprecated-note" markdown="1">
@@ -9037,6 +9623,14 @@ WorldItemType = PickupType
 Use [PickupType](api/sandkit.api.pickups.md?id=pickuptype) instead.
 
 </div>
+</div>
+
+<div class="smt-member-sig" data-sig="sandkit.api.pickups.WorldItemType = PickupType">
+
+```ts
+WorldItemType = PickupType
+```
+
 </div>
 
 </div>
@@ -9119,6 +9713,15 @@ Remove a pickup instance from the world.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L69" target="_blank" rel="noopener">pickups.d.ts:69</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [remove](api/sandkit.api.pickups.md?id=remove) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.pickups.destroy(pickup: WorldItem): void">
 
 ```ts
@@ -9135,15 +9738,6 @@ destroy(pickup: WorldItem): void
 
 ###### pickup <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [remove](api/sandkit.api.pickups.md?id=remove) instead.
-
-</div>
 </div>
 
 </div>
@@ -9426,6 +10020,15 @@ Set the player world position.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L37" target="_blank" rel="noopener">player.d.ts:37</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setPositionAtWorld](api/sandkit.api.player.md?id=setpositionatworld) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.player.setWorldPosition(worldX: number, worldY: number): void">
 
 ```ts
@@ -9445,15 +10048,6 @@ setWorldPosition(worldX: number, worldY: number): void
 
 ###### worldY <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setPositionAtWorld](api/sandkit.api.player.md?id=setpositionatworld) instead.
-
-</div>
 </div>
 
 </div>
@@ -9626,6 +10220,15 @@ True when the player hitbox fits at the position.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L96" target="_blank" rel="noopener">player.d.ts:96</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [isPositionClearAtWorld](api/sandkit.api.player.md?id=ispositionclearatworld) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.player.isWorldPositionClear(worldX: number, worldY: number): boolean">
 
 ```ts
@@ -9645,15 +10248,6 @@ isWorldPositionClear(worldX: number, worldY: number): boolean
 
 ###### worldY <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [isPositionClearAtWorld](api/sandkit.api.player.md?id=ispositionclearatworld) instead.
-
-</div>
 </div>
 
 </div>
@@ -9700,6 +10294,15 @@ Unlock a structure type for building.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L129" target="_blank" rel="noopener">player.d.ts:129</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [unlockById](api/sandkit.api.player.buildings.md?id=unlockbyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.player.buildings.unlockByType(structureId: string): void">
 
 ```ts
@@ -9716,15 +10319,6 @@ unlockByType(structureId: string): void
 
 ###### structureId <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [unlockById](api/sandkit.api.player.buildings.md?id=unlockbyid) instead.
-
-</div>
 </div>
 
 </div>
@@ -9799,6 +10393,15 @@ Add an item to inventory by item id.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L112" target="_blank" rel="noopener">player.d.ts:112</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [addById](api/sandkit.api.player.inventory.md?id=addbyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.player.inventory.addFromId(itemId: string): void">
 
 ```ts
@@ -9815,15 +10418,6 @@ addFromId(itemId: string): void
 
 ###### itemId <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [addById](api/sandkit.api.player.inventory.md?id=addbyid) instead.
-
-</div>
 </div>
 
 </div>
@@ -11122,6 +11716,15 @@ const counts = api.shared.buffers.ensure("counts", {
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L38" target="_blank" rel="noopener">shared.d.ts:38</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [ensure](api/sandkit.api.shared.buffers.md?id=ensure) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.shared.buffers.create(key: string, config: object): SharedArray">
 
 ```ts
@@ -11144,15 +11747,6 @@ create(key: string, config: object): SharedArray
 </div>
 
 [`SharedArray`](api/sandkit.api.shared.md?id=sharedarray)
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [ensure](api/sandkit.api.shared.buffers.md?id=ensure) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -11595,6 +12189,15 @@ Stop a sound by id.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L62" target="_blank" rel="noopener">sound.d.ts:62</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [stopBySoundId](api/sandkit.api.sound.md?id=stopbysoundid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.sound.stopById(soundId: string): void">
 
 ```ts
@@ -11611,15 +12214,6 @@ stopById(soundId: string): void
 
 ###### soundId <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [stopBySoundId](api/sandkit.api.sound.md?id=stopbysoundid) instead.
-
-</div>
 </div>
 
 </div>
@@ -12589,6 +13183,15 @@ Context passed to structure processing callbacks.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L726" target="_blank" rel="noopener">structures.d.ts:726</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [StructureProcessingDefinitionV1](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1) with [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
+
+</div>
+</div>
+
 | Property | Type | Description |
 | --- | --- | --- |
 | ~~intervalMs~~ | <code>number</code> | Tick interval in milliseconds. Must be > 0. |
@@ -12600,15 +13203,6 @@ Context passed to structure processing callbacks.
 
 ###### ~~process~~ <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [StructureProcessingDefinitionV1](api/sandkit.api.structures.md?id=structureprocessingdefinitionv1) with [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
-
-</div>
 </div>
 
 </div>
@@ -12989,6 +13583,15 @@ api.structures.registerVariant(
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L215" target="_blank" rel="noopener">structures.d.ts:215</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [registerVariant](api/sandkit.api.structures.md?id=registervariant) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: object): void">
 
 ```ts
@@ -13011,15 +13614,6 @@ addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: objec
 
 ###### options? <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [registerVariant](api/sandkit.api.structures.md?id=registervariant) instead.
-
-</div>
 </div>
 
 </div>
@@ -13106,6 +13700,15 @@ Return structure types available for building.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L266" target="_blank" rel="noopener">structures.d.ts:266</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getAvailableTypes](api/sandkit.api.structures.md?id=getavailabletypes) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.getUnlockedTypes(): Set&lt;StructureRef&gt;">
 
 ```ts
@@ -13115,15 +13718,6 @@ getUnlockedTypes(): Set<StructureRef>
 </div>
 
 `Set`\<[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)\>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getAvailableTypes](api/sandkit.api.structures.md?id=getavailabletypes) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -13220,6 +13814,15 @@ function (same implementation and return value; names differ only).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L301" target="_blank" rel="noopener">structures.d.ts:301</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype) instead. Same function as [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype); return value is not inverted.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.isUnlockedByType(structureType: StructureRef): boolean">
 
 ```ts
@@ -13236,15 +13839,6 @@ isUnlockedByType(structureType: StructureRef): boolean
 
 ###### structureType <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype) instead. Same function as [isLockedByType](api/sandkit.api.structures.md?id=islockedbytype); return value is not inverted.
-
-</div>
 </div>
 
 </div>
@@ -13325,6 +13919,15 @@ Build a structure at a cell. Main-thread writes are deferred.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L338" target="_blank" rel="noopener">structures.d.ts:338</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [buildAtCell](api/sandkit.api.structures.md?id=buildatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOptions]): void">
 
 ```ts
@@ -13341,15 +13944,6 @@ buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOption
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [buildAtCell](api/sandkit.api.structures.md?id=buildatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -13388,6 +13982,15 @@ Remove a structure at a cell. Main-thread writes are deferred.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L358" target="_blank" rel="noopener">structures.d.ts:358</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeAtCell](api/sandkit.api.structures.md?id=removeatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void">
 
 ```ts
@@ -13404,15 +14007,6 @@ removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeAtCell](api/sandkit.api.structures.md?id=removeatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -13463,6 +14057,15 @@ Remove structures between two cells. Main-thread writes are deferred.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L384" target="_blank" rel="noopener">structures.d.ts:384</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeBetweenCells](api/sandkit.api.structures.md?id=removebetweencells) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: number, endCellY: number, options?: StructureBulkRemovalOptions): void">
 
 ```ts
@@ -13491,15 +14094,6 @@ removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: num
 
 ###### options? <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeBetweenCells](api/sandkit.api.structures.md?id=removebetweencells) instead.
-
-</div>
 </div>
 
 </div>
@@ -13550,6 +14144,15 @@ api.structures.removeAtCells([
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L413" target="_blank" rel="noopener">structures.d.ts:413</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeAtCells](api/sandkit.api.structures.md?id=removeatcells) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOptions): void">
 
 ```ts
@@ -13571,15 +14174,6 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 
 </div>
 
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeAtCells](api/sandkit.api.structures.md?id=removeatcells) instead.
-
-</div>
-</div>
-
 </div>
 
 <div class="smt-member-card">
@@ -13587,6 +14181,15 @@ Use [removeAtCells](api/sandkit.api.structures.md?id=removeatcells) instead.
 #### ~~sandkit.api.structures.addProcessor~~ :id=sandkit.api.structures.addprocessor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L422" target="_blank" rel="noopener">structures.d.ts:422</a></p>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
+
+</div>
+</div>
 
 <div class="smt-member-sig" data-sig="sandkit.api.structures.addProcessor(structureId: StructureRef, definition: StructureProcessorDefinitionV1): void">
 
@@ -13607,15 +14210,6 @@ addProcessor(structureId: StructureRef, definition: StructureProcessorDefinition
 
 ###### definition <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [processing.register](api/sandkit.api.structures.processing.md?id=register) instead.
-
-</div>
 </div>
 
 </div>
@@ -13713,6 +14307,15 @@ True when the enabled state changed.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L532" target="_blank" rel="noopener">structures.d.ts:532</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setEnabledAtCell](api/sandkit.api.structures.processing.md?id=setenabledatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.processing.setEnabledAt(...args: [number, number, boolean]): boolean">
 
 ```ts
@@ -13729,15 +14332,6 @@ setEnabledAt(...args: [number, number, boolean]): boolean
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setEnabledAtCell](api/sandkit.api.structures.processing.md?id=setenabledatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -14123,6 +14717,15 @@ api.tech.registerDefinition("exampleTech", {
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L60" target="_blank" rel="noopener">tech.d.ts:60</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [registerDefinition](api/sandkit.api.tech.md?id=registerdefinition) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.tech.addDefinition(techId: TechGridId, definition: TechDefinition): void">
 
 ```ts
@@ -14142,15 +14745,6 @@ addDefinition(techId: TechGridId, definition: TechDefinition): void
 
 ###### definition <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [registerDefinition](api/sandkit.api.tech.md?id=registerdefinition) instead.
-
-</div>
 </div>
 
 </div>
@@ -14472,6 +15066,15 @@ Create terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L99" target="_blank" rel="noopener">terrains.d.ts:99</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [createAtCell](api/sandkit.api.terrains.md?id=createatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void">
 
 ```ts
@@ -14488,15 +15091,6 @@ createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOption
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [createAtCell](api/sandkit.api.terrains.md?id=createatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -14535,6 +15129,15 @@ Replace terrain at a cell. Main-entry writes are deferred; reads see the old gri
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L120" target="_blank" rel="noopener">terrains.d.ts:120</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [replaceAtCell](api/sandkit.api.terrains.md?id=replaceatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptions]): void">
 
 ```ts
@@ -14551,15 +15154,6 @@ replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptio
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [replaceAtCell](api/sandkit.api.terrains.md?id=replaceatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -14598,6 +15192,15 @@ Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L140" target="_blank" rel="noopener">terrains.d.ts:140</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [removeAtCell](api/sandkit.api.terrains.md?id=removeatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void">
 
 ```ts
@@ -14614,15 +15217,6 @@ removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [removeAtCell](api/sandkit.api.terrains.md?id=removeatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -14661,6 +15255,15 @@ Set terrain hit points at a cell. Main-entry writes are deferred; reads see the 
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L158" target="_blank" rel="noopener">terrains.d.ts:158</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setHitPointsAtCell](api/sandkit.api.terrains.md?id=sethitpointsatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.setHpAtCell(...args: [number, number, number]): boolean">
 
 ```ts
@@ -14679,6 +15282,14 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 </div>
 
+</div>
+
+<div class="smt-member-card">
+
+#### ~~sandkit.api.terrains.setHpAtCellWhenIdle~~ :id=sandkit.api.terrains.sethpatcellwhenidle
+
+<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L164" target="_blank" rel="noopener">terrains.d.ts:164</a></p>
+
 <div class="smt-member-deprecated">
 <span class="smt-member-deprecated-label">Deprecated</span>
 <div class="smt-member-deprecated-note" markdown="1">
@@ -14687,14 +15298,6 @@ Use [setHitPointsAtCell](api/sandkit.api.terrains.md?id=sethitpointsatcell) inst
 
 </div>
 </div>
-
-</div>
-
-<div class="smt-member-card">
-
-#### ~~sandkit.api.terrains.setHpAtCellWhenIdle~~ :id=sandkit.api.terrains.sethpatcellwhenidle
-
-<p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L164" target="_blank" rel="noopener">terrains.d.ts:164</a></p>
 
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.setHpAtCellWhenIdle(...args: [number, number, number]): void">
 
@@ -14712,15 +15315,6 @@ setHpAtCellWhenIdle(...args: [number, number, number]): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setHitPointsAtCell](api/sandkit.api.terrains.md?id=sethitpointsatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -16093,6 +16687,15 @@ Return grid cells along a line between two points.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L51" target="_blank" rel="noopener">utils.d.ts:51</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getCoordinatesBetweenCells](api/sandkit.api.utils.md?id=getcoordinatesbetweencells) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.utils.getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]">
 
 ```ts
@@ -16115,15 +16718,6 @@ getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 </div>
 
 [`Vector2`](api/shared.player.md?id=vector2)[]
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getCoordinatesBetweenCells](api/sandkit.api.utils.md?id=getcoordinatesbetweencells) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -16177,6 +16771,15 @@ Use [grid](api/sandkit.api.grid.md) instead.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L54" target="_blank" rel="noopener">world.d.ts:54</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.world.runWhenSimulationIdle(callback: () =&gt; void): void">
 
 ```ts
@@ -16195,15 +16798,6 @@ runWhenSimulationIdle(callback: () => void): void
 
 </div>
 
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.
-
-</div>
-</div>
-
 </div>
 
 <div class="smt-member-card">
@@ -16211,6 +16805,15 @@ Use [grid.mutate](api/sandkit.api.grid.md?id=mutate) instead.
 #### ~~sandkit.api.world.redrawAroundCellWhenIdle~~ :id=sandkit.api.world.redrawaroundcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L60" target="_blank" rel="noopener">world.d.ts:60</a></p>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [grid.redrawAroundCell](api/sandkit.api.grid.md?id=redrawaroundcell) instead.
+
+</div>
+</div>
 
 <div class="smt-member-sig" data-sig="sandkit.api.world.redrawAroundCellWhenIdle(...args: [number, number, number]): void">
 
@@ -16228,15 +16831,6 @@ redrawAroundCellWhenIdle(...args: [number, number, number]): void
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [grid.redrawAroundCell](api/sandkit.api.grid.md?id=redrawaroundcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -16306,6 +16900,15 @@ Spawn a named screen-space or world effect.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L36" target="_blank" rel="noopener">effects.d.ts:36</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [createAtWorld](api/sandkit.api.effects.worker.md?id=createatworld) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.effects.createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: EffectOptions): void">
 
 ```ts
@@ -16331,15 +16934,6 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 ###### options? <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [createAtWorld](api/sandkit.api.effects.worker.md?id=createatworld) instead.
-
-</div>
 </div>
 
 </div>
@@ -16575,6 +17169,15 @@ True when the swap succeeded.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L159" target="_blank" rel="noopener">elements.d.ts:159</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [swapBetweenCells](api/sandkit.api.elements.worker.md?id=swapbetweencells) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCellY: number): boolean">
 
 ```ts
@@ -16600,15 +17203,6 @@ swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCel
 
 ###### secondCellY <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [swapBetweenCells](api/sandkit.api.elements.worker.md?id=swapbetweencells) instead.
-
-</div>
 </div>
 
 </div>
@@ -16647,6 +17241,15 @@ Mark an element index as movement-blocked for this tick.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L178" target="_blank" rel="noopener">elements.d.ts:178</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [markMovementBlockedByIndex](api/sandkit.api.elements.worker.md?id=markmovementblockedbyindex) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.elements.markMovementBlockedByElementIndex(elementIndex: number): void">
 
 ```ts
@@ -16663,15 +17266,6 @@ markMovementBlockedByElementIndex(elementIndex: number): void
 
 ###### elementIndex <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [markMovementBlockedByIndex](api/sandkit.api.elements.worker.md?id=markmovementblockedbyindex) instead.
-
-</div>
 </div>
 
 </div>
@@ -16986,27 +17580,53 @@ Options for [emit](?id=sandkit.api.events.worker.emit).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L86" target="_blank" rel="noopener">events.d.ts:86</a></p>
 
-| Hook | Args | Notes |
-| --- | --- | --- |
-| `element:moved` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `terrain:updated` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`terrain:update`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `worker:update:post` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`update:post`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
+<h4 class="smt-hook-heading" id="element-moved"><code>element:moved</code></h4>
 
-<div class="smt-member-anchors">
+```ts
+Record<string, unknown>
+```
 
-###### element:moved <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="terrain-updated"><code>terrain:updated</code></h4>
 
-###### terrain:updated <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-###### ~~terrain:update~~ <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="terrain-update"><code>terrain:update</code></h4>
 
-###### worker:update:post <!-- {docsify-ignore} -->
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-###### ~~update:post~~ <!-- {docsify-ignore} -->
+Deprecated alias.
 
 </div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="worker-update-post"><code>worker:update:post</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="update-post"><code>update:post</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+Record<string, unknown>
+```
 
 Known worker event payloads. Unlisted ids still use `unknown`.
 
@@ -17356,42 +17976,83 @@ Options for [modify](?id=sandkit.api.hooks.worker.modify).
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L164" target="_blank" rel="noopener">hooks.d.ts:164</a></p>
 
-| Hook | Args | Notes |
-| --- | --- | --- |
-| `cell:process` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `element:update` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `element:move` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `element:move:blocked` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`element:blocked`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `element:duration:expire` | <code>Record&lt;string, unknown&gt;</code> |  |
-| ~~`element:duration`~~ | <code>Record&lt;string, unknown&gt;</code> | Deprecated alias. |
-| `fire:element:burn` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `fire:terrain:burn` | <code>Record&lt;string, unknown&gt;</code> |  |
-| `shaker:elementOn` | <code>Record&lt;string, unknown&gt;</code> |  |
+<h4 class="smt-hook-heading" id="cell-process"><code>cell:process</code></h4>
 
-<div class="smt-member-anchors">
+```ts
+Record<string, unknown>
+```
 
-###### cell:process <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="element-update"><code>element:update</code></h4>
 
-###### element:update <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-###### element:move <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="element-move"><code>element:move</code></h4>
 
-###### element:move:blocked <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-###### ~~element:blocked~~ <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="element-move-blocked"><code>element:move:blocked</code></h4>
 
-###### element:duration:expire <!-- {docsify-ignore} -->
+```ts
+Record<string, unknown>
+```
 
-###### ~~element:duration~~ <!-- {docsify-ignore} -->
+<h4 class="smt-hook-heading" id="element-blocked"><code>element:blocked</code></h4>
 
-###### fire:element:burn <!-- {docsify-ignore} -->
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
 
-###### fire:terrain:burn <!-- {docsify-ignore} -->
-
-###### shaker:elementOn <!-- {docsify-ignore} -->
+Deprecated alias.
 
 </div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="element-duration-expire"><code>element:duration:expire</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="element-duration"><code>element:duration</code></h4>
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Deprecated alias.
+
+</div>
+</div>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="fire-element-burn"><code>fire:element:burn</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="fire-terrain-burn"><code>fire:terrain:burn</code></h4>
+
+```ts
+Record<string, unknown>
+```
+
+<h4 class="smt-hook-heading" id="shaker-elementOn"><code>shaker:elementOn</code></h4>
+
+```ts
+Record<string, unknown>
+```
 
 Intercept hook argument shapes keyed by hook id.
 
@@ -17984,6 +18645,15 @@ Return the player center position in world pixels.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L21" target="_blank" rel="noopener">player.d.ts:21</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getPositionAtWorld](api/sandkit.api.player.worker.md?id=getpositionatworld) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.player.getWorldPosition(): Vector2">
 
 ```ts
@@ -17993,15 +18663,6 @@ getWorldPosition(): Vector2
 </div>
 
 [`Vector2`](api/shared.player.md?id=vector2)
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getPositionAtWorld](api/sandkit.api.player.worker.md?id=getpositionatworld) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -18403,6 +19064,15 @@ Map a structure string id to its runtime type value.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L59" target="_blank" rel="noopener">structures.d.ts:59</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getTypeById](api/sandkit.api.structures.worker.md?id=gettypebyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.getTypeFromId(structureId: string &amp; object): StructureType">
 
 ```ts
@@ -18422,15 +19092,6 @@ getTypeFromId(structureId: string & object): StructureType
 </div>
 
 [`StructureType`](?id=sandkit.api.structures.worker.structuretype)
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getTypeById](api/sandkit.api.structures.worker.md?id=gettypebyid) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -18733,6 +19394,15 @@ api.structures.updateData(
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L176" target="_blank" rel="noopener">structures.d.ts:176</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [updateData](api/sandkit.api.structures.worker.md?id=updatedata) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.setData(structure: Structure, partial: any, options?: object): void">
 
 ```ts
@@ -18755,15 +19425,6 @@ setData(structure: Structure, partial: any, options?: object): void
 
 ###### options? <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [updateData](api/sandkit.api.structures.worker.md?id=updatedata) instead.
-
-</div>
 </div>
 
 </div>
@@ -18810,6 +19471,15 @@ Return true when processing is enabled at the cell.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L197" target="_blank" rel="noopener">structures.d.ts:197</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md?id=isenabledatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.structures.processing.isEnabledAt(...args: CellCoordinates): boolean">
 
 ```ts
@@ -18826,15 +19496,6 @@ isEnabledAt(...args: CellCoordinates): boolean
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [isEnabledAtCell](api/sandkit.api.structures.processing.worker.md?id=isenabledatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -19074,6 +19735,15 @@ Resolve a terrain string id to a numeric cell type.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L83" target="_blank" rel="noopener">terrains.d.ts:83</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [getTypeById](api/sandkit.api.terrains.worker.md?id=gettypebyid) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.getTypeFromId(terrainId: string &amp; object): TerrainType">
 
 ```ts
@@ -19093,15 +19763,6 @@ getTypeFromId(terrainId: string & object): TerrainType
 </div>
 
 [`TerrainType`](?id=sandkit.api.terrains.worker.terraintype)
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [getTypeById](api/sandkit.api.terrains.worker.md?id=gettypebyid) instead.
-
-</div>
-</div>
 
 </div>
 
@@ -19455,6 +20116,15 @@ True when hit points changed or the terrain was removed.
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L211" target="_blank" rel="noopener">terrains.d.ts:211</a></p>
 
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+<div class="smt-member-deprecated-note" markdown="1">
+
+Use [setHitPointsAtCell](api/sandkit.api.terrains.worker.md?id=sethitpointsatcell) instead.
+
+</div>
+</div>
+
 <div class="smt-member-sig" data-sig="sandkit.api.terrains.setHpAtCell(...args: [number, number, number]): boolean">
 
 ```ts
@@ -19471,15 +20141,6 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 ###### args <!-- {docsify-ignore} -->
 
-</div>
-
-<div class="smt-member-deprecated">
-<span class="smt-member-deprecated-label">Deprecated</span>
-<div class="smt-member-deprecated-note" markdown="1">
-
-Use [setHitPointsAtCell](api/sandkit.api.terrains.worker.md?id=sethitpointsatcell) instead.
-
-</div>
 </div>
 
 </div>
@@ -35245,6 +35906,8 @@ npm run docs:archive-sandkit      # Fetch official sandkit.html into docs/offici
 ```
 
 Output lands in `docs/api/` and `docs/schemas/`.
+`npm run generate` overwrites those API pages in place.
+It does not delete `docs/api/`.
 Browse namespaces from Search on the docs site.
 `npm run generate` writes `docs/_sidebar.md` for direct pages.
 On an API namespace page the sidebar also lists that namespace and its children.

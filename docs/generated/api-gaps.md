@@ -6,7 +6,7 @@ Edit descriptions and expected members in `scripts/api-gen/overrides.json`.
 ## Summary
 
 - Official source: https://sandustry.com/sandkit.html
-- Generated: 2026-09-06T21:59:47.705Z
+- Generated: 2026-09-06T22:16:12.838Z
 - Namespaces: 67
 - Official methods (HTML): 268
 - Declared methods (types): 441
