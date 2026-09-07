@@ -1,0 +1,4382 @@
+{
+  "version": 1,
+  "scrapedAt": "2026-09-07T16:13:36.255Z",
+  "source": {
+    "cdpPort": "9222",
+    "pageTitle": "Sandustry",
+    "pageUrl": "file:///home/econn/games/SteamLibrary/steamapps/common/Sandustry/resources/app.asar/dist/index.html?db_load=2j5e8akr5ft",
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) sandustry/0.5.6 Chrome/130.0.6723.137 Electron/33.2.1 Safari/537.36"
+  },
+  "apiVersion": 1,
+  "topLevelKeys": [
+    "api",
+    "apiVersion",
+    "engine",
+    "enums",
+    "react",
+    "state"
+  ],
+  "surfaces": {
+    "api": [
+      {
+        "path": "action.getActive",
+        "kind": "function"
+      },
+      {
+        "path": "action.getSelected",
+        "kind": "function"
+      },
+      {
+        "path": "action.setCustomData",
+        "kind": "function"
+      },
+      {
+        "path": "assets.getSelectedProvider",
+        "kind": "function"
+      },
+      {
+        "path": "assets.getUrl",
+        "kind": "function"
+      },
+      {
+        "path": "assets.selectProvider",
+        "kind": "function"
+      },
+      {
+        "path": "assets.setSelectedProvider",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.canBuildAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.canGrabAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.canUseTool",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.canUseToolAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.getPlayerZoneId",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.getZoneIdAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "blueprints.localizeStructures",
+        "kind": "function"
+      },
+      {
+        "path": "blueprints.serializeStructures",
+        "kind": "function"
+      },
+      {
+        "path": "building.cancelPlacement",
+        "kind": "function"
+      },
+      {
+        "path": "building.getSnappedPositionAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "building.isBlockedAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "building.selectStructure",
+        "kind": "function"
+      },
+      {
+        "path": "camera.releaseFocus",
+        "kind": "function"
+      },
+      {
+        "path": "camera.setFocusAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "camera.snapToPlayer",
+        "kind": "function"
+      },
+      {
+        "path": "collector.getValueByType",
+        "kind": "function"
+      },
+      {
+        "path": "collector.getValueFromCellId",
+        "kind": "function"
+      },
+      {
+        "path": "collector.isCellIdCollectable",
+        "kind": "function"
+      },
+      {
+        "path": "collector.isCellIdCollectableForSprite",
+        "kind": "function"
+      },
+      {
+        "path": "collector.notifyPickupAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "cooldown.check",
+        "kind": "function"
+      },
+      {
+        "path": "cooldown.isReady",
+        "kind": "function"
+      },
+      {
+        "path": "cooldown.start",
+        "kind": "function"
+      },
+      {
+        "path": "discoveries.addElementByType",
+        "kind": "function"
+      },
+      {
+        "path": "discoveries.addTerrainByType",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createDistortionWaveAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createEffectAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createLaserAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createLightAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createParticlesAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "effects.removeLightById",
+        "kind": "function"
+      },
+      {
+        "path": "elements.addInteractionInfo",
+        "kind": "function"
+      },
+      {
+        "path": "elements.addParticleVelocityAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.addParticleVelocityAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.convertFromParticleAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.convertFromParticleAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.convertToParticleAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.convertToParticleAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.createAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.createAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.findFreeCellInStructure",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getDataFieldAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getDefinitionByType",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getIdByType",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getInfoAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getMatterTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getNameByType",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getRegisteredTypes",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getResolvedTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getResolvedTypeFromCellId",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getTypeById",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getTypeFromId",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getVelocityAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.isFreeFallingAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.isTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.refreshColorAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.refreshColorAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.register",
+        "kind": "function"
+      },
+      {
+        "path": "elements.removeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.removeAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.replaceAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.replaceAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setDataFieldAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setDataFieldAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setDurationAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setDurationAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setPhysicsAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setPhysicsAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setVelocityAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setVelocityAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.teleportBetweenCells",
+        "kind": "function"
+      },
+      {
+        "path": "elements.teleportBetweenCellsWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "energy.addAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "energy.consume",
+        "kind": "function"
+      },
+      {
+        "path": "energy.consumeExcludingNetworkAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "energy.getNetworkAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "energy.getNetworkFreeCapacityAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "energy.registerType",
+        "kind": "function"
+      },
+      {
+        "path": "entities.collect",
+        "kind": "function"
+      },
+      {
+        "path": "entities.getAllByType",
+        "kind": "function"
+      },
+      {
+        "path": "entities.getById",
+        "kind": "function"
+      },
+      {
+        "path": "entities.launch",
+        "kind": "function"
+      },
+      {
+        "path": "entities.remove",
+        "kind": "function"
+      },
+      {
+        "path": "entities.spawnAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "entities.startCapture",
+        "kind": "function"
+      },
+      {
+        "path": "events.emit",
+        "kind": "function"
+      },
+      {
+        "path": "events.on",
+        "kind": "function"
+      },
+      {
+        "path": "excavation.registerProfile",
+        "kind": "function"
+      },
+      {
+        "path": "factory.getLevel",
+        "kind": "function"
+      },
+      {
+        "path": "factory.getProcessCount",
+        "kind": "function"
+      },
+      {
+        "path": "factory.getProcessRate",
+        "kind": "function"
+      },
+      {
+        "path": "fire.burnElementAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "fire.burnElementAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "fire.canBurnElementAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "game.start",
+        "kind": "function"
+      },
+      {
+        "path": "gameConfig.get",
+        "kind": "function"
+      },
+      {
+        "path": "gameConfig.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "grid.excavateAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "grid.forEachCellInCircle",
+        "kind": "function"
+      },
+      {
+        "path": "grid.forEachCellInRect",
+        "kind": "function"
+      },
+      {
+        "path": "grid.forEachCellInRectangle",
+        "kind": "function"
+      },
+      {
+        "path": "grid.getCellIdAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "grid.getDimensions",
+        "kind": "function"
+      },
+      {
+        "path": "grid.isCellEmptyAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "grid.isTerrainAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "grid.mutate",
+        "kind": "function"
+      },
+      {
+        "path": "grid.redrawAroundCell",
+        "kind": "function"
+      },
+      {
+        "path": "grid.reportActivityAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "grid.revealFogAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.intercept",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.modify",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.clearGlobal",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.createTranslatable",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.formatKeyForDisplay",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.formatNumber",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getAvailableLocales",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getDescription",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getGlobal",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getGlobals",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getLanguages",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getLocale",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getName",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.hasTranslation",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.joinKey",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.key",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.register",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.removeGlobal",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.setGlobal",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.setLocale",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.t",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.translatable",
+        "kind": "function"
+      },
+      {
+        "path": "input.getBoundKeys",
+        "kind": "function"
+      },
+      {
+        "path": "input.getDisplayKey",
+        "kind": "function"
+      },
+      {
+        "path": "input.getMouseCellPosition",
+        "kind": "function"
+      },
+      {
+        "path": "input.getMousePositionAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "input.getMousePositionAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "input.isAltHeld",
+        "kind": "function"
+      },
+      {
+        "path": "input.isCtrlHeld",
+        "kind": "function"
+      },
+      {
+        "path": "input.pressBinding",
+        "kind": "function"
+      },
+      {
+        "path": "input.registerBinding",
+        "kind": "function"
+      },
+      {
+        "path": "input.releaseBinding",
+        "kind": "function"
+      },
+      {
+        "path": "input.resetMouseState",
+        "kind": "function"
+      },
+      {
+        "path": "input.triggerBinding",
+        "kind": "function"
+      },
+      {
+        "path": "items.createById",
+        "kind": "function"
+      },
+      {
+        "path": "items.createFromId",
+        "kind": "function"
+      },
+      {
+        "path": "items.getActive",
+        "kind": "function"
+      },
+      {
+        "path": "items.getDefinitionById",
+        "kind": "function"
+      },
+      {
+        "path": "items.getRegisteredIds",
+        "kind": "function"
+      },
+      {
+        "path": "items.isActiveById",
+        "kind": "function"
+      },
+      {
+        "path": "items.register",
+        "kind": "function"
+      },
+      {
+        "path": "items.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "lights.persistent.createAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "lights.persistent.fadeAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "lights.persistent.markDirty",
+        "kind": "function"
+      },
+      {
+        "path": "lights.persistent.removeAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "lights.temporary.createAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "lights.temporary.removeById",
+        "kind": "function"
+      },
+      {
+        "path": "lights.vfx.createAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "lights.vfx.removeById",
+        "kind": "function"
+      },
+      {
+        "path": "maps.getActive",
+        "kind": "function"
+      },
+      {
+        "path": "maps.getArtifactLocations",
+        "kind": "function"
+      },
+      {
+        "path": "maps.getAvailable",
+        "kind": "function"
+      },
+      {
+        "path": "maps.start",
+        "kind": "function"
+      },
+      {
+        "path": "mods.getProviders",
+        "kind": "function"
+      },
+      {
+        "path": "patterns.createCircle",
+        "kind": "function"
+      },
+      {
+        "path": "patterns.excavateAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "pickups.destroy",
+        "kind": "function"
+      },
+      {
+        "path": "pickups.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "pickups.getById",
+        "kind": "function"
+      },
+      {
+        "path": "pickups.pickUp",
+        "kind": "function"
+      },
+      {
+        "path": "pickups.remove",
+        "kind": "function"
+      },
+      {
+        "path": "pickups.spawnAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "pipes.getConnectedVentsAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "pipes.isAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "pipes.isEnabledAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "pipes.setEnabledAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "player.buildings.removeById",
+        "kind": "function"
+      },
+      {
+        "path": "player.buildings.unlockById",
+        "kind": "function"
+      },
+      {
+        "path": "player.buildings.unlockByType",
+        "kind": "function"
+      },
+      {
+        "path": "player.getPositionAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "player.getWorldPosition",
+        "kind": "function"
+      },
+      {
+        "path": "player.inventory.addById",
+        "kind": "function"
+      },
+      {
+        "path": "player.inventory.addFromId",
+        "kind": "function"
+      },
+      {
+        "path": "player.inventory.hasById",
+        "kind": "function"
+      },
+      {
+        "path": "player.isCollidingWithCell",
+        "kind": "function"
+      },
+      {
+        "path": "player.isOnGround",
+        "kind": "function"
+      },
+      {
+        "path": "player.isPositionClearAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "player.isWithinRadiusOfCell",
+        "kind": "function"
+      },
+      {
+        "path": "player.isWorldPositionClear",
+        "kind": "function"
+      },
+      {
+        "path": "player.setMovementMode",
+        "kind": "function"
+      },
+      {
+        "path": "player.setMovementSpeedMultiplier",
+        "kind": "function"
+      },
+      {
+        "path": "player.setPositionAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "player.setVelocity",
+        "kind": "function"
+      },
+      {
+        "path": "player.setWorldPosition",
+        "kind": "function"
+      },
+      {
+        "path": "player.teleportToGround",
+        "kind": "function"
+      },
+      {
+        "path": "processing.registerGrower",
+        "kind": "function"
+      },
+      {
+        "path": "processing.registerKineticPress",
+        "kind": "function"
+      },
+      {
+        "path": "processing.registerShaker",
+        "kind": "function"
+      },
+      {
+        "path": "progression.complete",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.createBlueprintById",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.createBlueprintFromId",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.getById",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.getDefinitionById",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.register",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.remove",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.spawnAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "random.float",
+        "kind": "function"
+      },
+      {
+        "path": "random.int",
+        "kind": "function"
+      },
+      {
+        "path": "raycast.castAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "raycast.castFromWorld",
+        "kind": "function"
+      },
+      {
+        "path": "reactions.registerContact",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.getDrawPositionAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.getDrawPositionAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.getGridMetrics",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.getOverlayViewportSize",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.withOverlayContext",
+        "kind": "function"
+      },
+      {
+        "path": "resources.adjustEnergy",
+        "kind": "function"
+      },
+      {
+        "path": "resources.collectFluxiteAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "resources.refresh",
+        "kind": "function"
+      },
+      {
+        "path": "resources.updateEnergy",
+        "kind": "function"
+      },
+      {
+        "path": "scene.getActive",
+        "kind": "function"
+      },
+      {
+        "path": "schedule.nextTick",
+        "kind": "function"
+      },
+      {
+        "path": "settings.get",
+        "kind": "function"
+      },
+      {
+        "path": "settings.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "settings.onChange",
+        "kind": "function"
+      },
+      {
+        "path": "shared.buffers.create",
+        "kind": "function"
+      },
+      {
+        "path": "shared.buffers.ensure",
+        "kind": "function"
+      },
+      {
+        "path": "shared.buffers.get",
+        "kind": "function"
+      },
+      {
+        "path": "signals.interactables.register",
+        "kind": "function"
+      },
+      {
+        "path": "signals.registerSenderType",
+        "kind": "function"
+      },
+      {
+        "path": "signals.setOutputAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "signals.targets.register",
+        "kind": "function"
+      },
+      {
+        "path": "sound.calculateDistanceOptionsAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "sound.play",
+        "kind": "function"
+      },
+      {
+        "path": "sound.playActive",
+        "kind": "function"
+      },
+      {
+        "path": "sound.playLayers",
+        "kind": "function"
+      },
+      {
+        "path": "sound.stopActive",
+        "kind": "function"
+      },
+      {
+        "path": "sound.stopAll",
+        "kind": "function"
+      },
+      {
+        "path": "sound.stopById",
+        "kind": "function"
+      },
+      {
+        "path": "sound.stopBySoundId",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.getById",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.hideAllForPlayer",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.hideAllPlayerModSprites",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.load",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.loadFromMod",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.rotateAllForPlayer",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.rotatePlayerModSprites",
+        "kind": "function"
+      },
+      {
+        "path": "storage.ensure",
+        "kind": "function"
+      },
+      {
+        "path": "storage.get",
+        "kind": "function"
+      },
+      {
+        "path": "storage.local.get",
+        "kind": "function"
+      },
+      {
+        "path": "storage.local.remove",
+        "kind": "function"
+      },
+      {
+        "path": "storage.local.set",
+        "kind": "function"
+      },
+      {
+        "path": "storage.remove",
+        "kind": "function"
+      },
+      {
+        "path": "storage.set",
+        "kind": "function"
+      },
+      {
+        "path": "structureBehaviors.registerConveyorType",
+        "kind": "function"
+      },
+      {
+        "path": "structureBehaviors.registerLauncherType",
+        "kind": "function"
+      },
+      {
+        "path": "structures.addProcessor",
+        "kind": "function"
+      },
+      {
+        "path": "structures.addVariant",
+        "kind": "function"
+      },
+      {
+        "path": "structures.buildAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.buildAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "structures.forEachOfType",
+        "kind": "function"
+      },
+      {
+        "path": "structures.getAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.getAvailableTypes",
+        "kind": "function"
+      },
+      {
+        "path": "structures.getDefinitionByType",
+        "kind": "function"
+      },
+      {
+        "path": "structures.getTypeById",
+        "kind": "function"
+      },
+      {
+        "path": "structures.getTypeFromId",
+        "kind": "function"
+      },
+      {
+        "path": "structures.getUnlockedTypes",
+        "kind": "function"
+      },
+      {
+        "path": "structures.hasBuiltAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isBlockedByPlayerAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isLauncherAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isLockedByType",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isType",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isUnlockedByType",
+        "kind": "function"
+      },
+      {
+        "path": "structures.mapValueToSpritesheetIndex",
+        "kind": "function"
+      },
+      {
+        "path": "structures.processing.isEnabledAt",
+        "kind": "function"
+      },
+      {
+        "path": "structures.processing.isEnabledAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.processing.register",
+        "kind": "function"
+      },
+      {
+        "path": "structures.processing.setEnabledAt",
+        "kind": "function"
+      },
+      {
+        "path": "structures.processing.setEnabledAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.recipes.register",
+        "kind": "function"
+      },
+      {
+        "path": "structures.register",
+        "kind": "function"
+      },
+      {
+        "path": "structures.registerPlacementConfig",
+        "kind": "function"
+      },
+      {
+        "path": "structures.registerVariant",
+        "kind": "function"
+      },
+      {
+        "path": "structures.removeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.removeAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "structures.removeAtCells",
+        "kind": "function"
+      },
+      {
+        "path": "structures.removeAtCellsWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "structures.removeBetweenCells",
+        "kind": "function"
+      },
+      {
+        "path": "structures.removeBetweenCellsWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "structures.setData",
+        "kind": "function"
+      },
+      {
+        "path": "structures.setSpritesheetIndex",
+        "kind": "function"
+      },
+      {
+        "path": "structures.setSpritesheetIndexAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.setSpritesheetIndexByValue",
+        "kind": "function"
+      },
+      {
+        "path": "structures.setSpritesheetIndexByValueAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.update",
+        "kind": "function"
+      },
+      {
+        "path": "structures.updateData",
+        "kind": "function"
+      },
+      {
+        "path": "structures.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "tech.addDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "tech.conservatory.appendUnlock",
+        "kind": "function"
+      },
+      {
+        "path": "tech.getDefinitionById",
+        "kind": "function"
+      },
+      {
+        "path": "tech.isLockedById",
+        "kind": "function"
+      },
+      {
+        "path": "tech.isResearchedById",
+        "kind": "function"
+      },
+      {
+        "path": "tech.registerDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "tech.registerNode",
+        "kind": "function"
+      },
+      {
+        "path": "tech.setLockedById",
+        "kind": "function"
+      },
+      {
+        "path": "tech.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.createAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.createAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.damageAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getDataAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getDefinitionByType",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getIdByType",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getTypeById",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getTypeFromId",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.isAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.isCellIdTerrain",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.isTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.meltAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.register",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.removeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.removeAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.replaceAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.replaceAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.setHitPointsAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.setHpAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.setHpAtCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "time.getElapsedMs",
+        "kind": "function"
+      },
+      {
+        "path": "time.getTick",
+        "kind": "function"
+      },
+      {
+        "path": "time.getTimeMs",
+        "kind": "function"
+      },
+      {
+        "path": "tools.grabber.getSize",
+        "kind": "function"
+      },
+      {
+        "path": "tools.grabber.isActive",
+        "kind": "function"
+      },
+      {
+        "path": "tools.grabber.isLoaded",
+        "kind": "function"
+      },
+      {
+        "path": "tools.grabber.setSize",
+        "kind": "function"
+      },
+      {
+        "path": "triggers.register",
+        "kind": "function"
+      },
+      {
+        "path": "ui.alert",
+        "kind": "function"
+      },
+      {
+        "path": "ui.components.ActionSlot",
+        "kind": "function"
+      },
+      {
+        "path": "ui.components.Button",
+        "kind": "function"
+      },
+      {
+        "path": "ui.components.Panel",
+        "kind": "function"
+      },
+      {
+        "path": "ui.confirm",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.createBankSource",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.getActiveBankIndex",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.getActiveSlotIndex",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.getBankCount",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.getSlotKeyLabel",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.selectAction",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.useHotbar",
+        "kind": "function"
+      },
+      {
+        "path": "ui.inject",
+        "kind": "function"
+      },
+      {
+        "path": "ui.navigation.controllerFocusClass",
+        "kind": "function"
+      },
+      {
+        "path": "ui.navigation.getControllerFocusClass",
+        "kind": "function"
+      },
+      {
+        "path": "ui.navigation.useFocusScope",
+        "kind": "function"
+      },
+      {
+        "path": "ui.navigation.useFocusable",
+        "kind": "function"
+      },
+      {
+        "path": "ui.openPauseMenu",
+        "kind": "function"
+      },
+      {
+        "path": "ui.overlays.register",
+        "kind": "function"
+      },
+      {
+        "path": "ui.overlays.unregister",
+        "kind": "function"
+      },
+      {
+        "path": "ui.overlays.update",
+        "kind": "function"
+      },
+      {
+        "path": "ui.overrides.register",
+        "kind": "function"
+      },
+      {
+        "path": "ui.prompt",
+        "kind": "function"
+      },
+      {
+        "path": "ui.regions.mount",
+        "kind": "function"
+      },
+      {
+        "path": "ui.regions.setVisible",
+        "kind": "function"
+      },
+      {
+        "path": "ui.select",
+        "kind": "function"
+      },
+      {
+        "path": "ui.showTooltip",
+        "kind": "function"
+      },
+      {
+        "path": "ui.toast",
+        "kind": "function"
+      },
+      {
+        "path": "ui.update",
+        "kind": "function"
+      },
+      {
+        "path": "ui.useGameEvent",
+        "kind": "function"
+      },
+      {
+        "path": "ui.useRefresh",
+        "kind": "function"
+      },
+      {
+        "path": "ui.useScale",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.getAvailableLevelById",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.getLevelById",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.register",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.registerCategory",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.setLevelById",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getAngle",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getCoordinatesBetweenCells",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getCoordinatesBetweenPoints",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getDirection",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getDistance",
+        "kind": "function"
+      },
+      {
+        "path": "workers.setPostUpdateEnabled",
+        "kind": "function"
+      },
+      {
+        "path": "world.excavateAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "world.getCellIdAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "world.getDimensions",
+        "kind": "function"
+      },
+      {
+        "path": "world.isCellEmptyAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "world.isTerrainAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "world.mutate",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.destroy",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.getById",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.pickUp",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.remove",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.spawnAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "world.redrawAroundCell",
+        "kind": "function"
+      },
+      {
+        "path": "world.redrawAroundCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "world.reportActivityAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "world.revealFogAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "world.runWhenSimulationIdle",
+        "kind": "function"
+      }
+    ],
+    "engine.api": [
+      {
+        "path": "action.getActive",
+        "kind": "function"
+      },
+      {
+        "path": "action.getSelected",
+        "kind": "function"
+      },
+      {
+        "path": "action.setCustomData",
+        "kind": "function"
+      },
+      {
+        "path": "augments.getDigLevel",
+        "kind": "function"
+      },
+      {
+        "path": "augments.getGunLevel",
+        "kind": "function"
+      },
+      {
+        "path": "augments.getPhaseLevel",
+        "kind": "function"
+      },
+      {
+        "path": "augments.getRocketAmmoLevel",
+        "kind": "function"
+      },
+      {
+        "path": "augments.getRocketReloadLevel",
+        "kind": "function"
+      },
+      {
+        "path": "augments.getSprintCapLevel",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasBigDig",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasBulletSpeed",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasBulletTracer",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasKickstartBoost",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasPhaseDash",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasPhaseDashCharge",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasRideBoost",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasRocketDamage",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasRocketWarhead",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasSprintPower",
+        "kind": "function"
+      },
+      {
+        "path": "augments.hasTripleShot",
+        "kind": "function"
+      },
+      {
+        "path": "auralite.ensureProducedAtLeast",
+        "kind": "function"
+      },
+      {
+        "path": "auralite.getProduced",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.canBuild",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.canGrab",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.canUseTool",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.canUseToolAt",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.getPlayerZoneId",
+        "kind": "function"
+      },
+      {
+        "path": "authorization.getZoneIdAt",
+        "kind": "function"
+      },
+      {
+        "path": "blueprints.delete",
+        "kind": "function"
+      },
+      {
+        "path": "blueprints.exportAllString",
+        "kind": "function"
+      },
+      {
+        "path": "blueprints.exportString",
+        "kind": "function"
+      },
+      {
+        "path": "blueprints.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "blueprints.importString",
+        "kind": "function"
+      },
+      {
+        "path": "blueprints.load",
+        "kind": "function"
+      },
+      {
+        "path": "blueprints.save",
+        "kind": "function"
+      },
+      {
+        "path": "building.cancelPlacement",
+        "kind": "function"
+      },
+      {
+        "path": "building.getSnappedCellPosition",
+        "kind": "function"
+      },
+      {
+        "path": "building.isBlockedByTerrainOrElements",
+        "kind": "function"
+      },
+      {
+        "path": "building.selectStructure",
+        "kind": "function"
+      },
+      {
+        "path": "camera.releaseFocusToPlayer",
+        "kind": "function"
+      },
+      {
+        "path": "camera.setFocusAtWorld",
+        "kind": "function"
+      },
+      {
+        "path": "camera.snapToPlayer",
+        "kind": "function"
+      },
+      {
+        "path": "clipboard.activate",
+        "kind": "function"
+      },
+      {
+        "path": "clipboard.clear",
+        "kind": "function"
+      },
+      {
+        "path": "clipboard.get",
+        "kind": "function"
+      },
+      {
+        "path": "clipboard.getHistory",
+        "kind": "function"
+      },
+      {
+        "path": "clipboard.getSignalLinks",
+        "kind": "function"
+      },
+      {
+        "path": "clipboard.selectFromHistory",
+        "kind": "function"
+      },
+      {
+        "path": "clipboard.set",
+        "kind": "function"
+      },
+      {
+        "path": "collector.getValueFromCellId",
+        "kind": "function"
+      },
+      {
+        "path": "collector.getValueFromElementType",
+        "kind": "function"
+      },
+      {
+        "path": "collector.isCellCollectable",
+        "kind": "function"
+      },
+      {
+        "path": "collector.isCellCollectableForSprite",
+        "kind": "function"
+      },
+      {
+        "path": "collector.notifyPickup",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.closePalette",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.getActivePalette",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.getCycleColor",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.getRandomColor",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.hexToRgba",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.renderColorButton",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.renderColorSection",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.renderPalette",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.rgbaToHex",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.setActivePalette",
+        "kind": "function"
+      },
+      {
+        "path": "colorPicker.togglePalette",
+        "kind": "function"
+      },
+      {
+        "path": "coloringTool.colorStructure",
+        "kind": "function"
+      },
+      {
+        "path": "coloringTool.floodFillColor",
+        "kind": "function"
+      },
+      {
+        "path": "coloringTool.getColor",
+        "kind": "function"
+      },
+      {
+        "path": "coloringTool.isColorableStructure",
+        "kind": "function"
+      },
+      {
+        "path": "coloringTool.isMatchColorMode",
+        "kind": "function"
+      },
+      {
+        "path": "coloringTool.isPaintBucketMode",
+        "kind": "function"
+      },
+      {
+        "path": "coloringTool.setColor",
+        "kind": "function"
+      },
+      {
+        "path": "coloringTool.toggleMatchColorMode",
+        "kind": "function"
+      },
+      {
+        "path": "coloringTool.togglePaintBucketMode",
+        "kind": "function"
+      },
+      {
+        "path": "config",
+        "kind": "function"
+      },
+      {
+        "path": "conveyors.registerType",
+        "kind": "function"
+      },
+      {
+        "path": "cooldown.check",
+        "kind": "function"
+      },
+      {
+        "path": "cooldown.isReady",
+        "kind": "function"
+      },
+      {
+        "path": "debug.register",
+        "kind": "function"
+      },
+      {
+        "path": "discoveries.addElement",
+        "kind": "function"
+      },
+      {
+        "path": "discoveries.addTerrain",
+        "kind": "function"
+      },
+      {
+        "path": "drones.kill",
+        "kind": "function"
+      },
+      {
+        "path": "drones.spawn",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createDistortionWave",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createEffect",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createLaser",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createLight",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createParticles",
+        "kind": "function"
+      },
+      {
+        "path": "effects.createShockwave",
+        "kind": "function"
+      },
+      {
+        "path": "effects.removeLight",
+        "kind": "function"
+      },
+      {
+        "path": "elements.addInteractionInfo",
+        "kind": "function"
+      },
+      {
+        "path": "elements.addParticleVelocity",
+        "kind": "function"
+      },
+      {
+        "path": "elements.convertFromParticle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.convertToParticle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.createAt",
+        "kind": "function"
+      },
+      {
+        "path": "elements.findFreePositionInStructure",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getConfig",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getDataField",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getDataField1",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getDataField2",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getDataField3",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getDataField4",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getElementIdFromType",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getElementTypeAtPos",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getElementTypeFromId",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getInfoAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getInfoAtPos",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getMatterTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getMatterTypeAtPos",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getName",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getRegisteredTypes",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getResolvedTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getResolvedTypeAtPos",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getResolvedTypeFromCellId",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "elements.getVelocity",
+        "kind": "function"
+      },
+      {
+        "path": "elements.isFreeFalling",
+        "kind": "function"
+      },
+      {
+        "path": "elements.isTypeAt",
+        "kind": "function"
+      },
+      {
+        "path": "elements.markMovementBlocked",
+        "kind": "function"
+      },
+      {
+        "path": "elements.move",
+        "kind": "function"
+      },
+      {
+        "path": "elements.moveAtSimulationIdle",
+        "kind": "function"
+      },
+      {
+        "path": "elements.refreshColorAt",
+        "kind": "function"
+      },
+      {
+        "path": "elements.register",
+        "kind": "function"
+      },
+      {
+        "path": "elements.removeAt",
+        "kind": "function"
+      },
+      {
+        "path": "elements.removeAtDeferred",
+        "kind": "function"
+      },
+      {
+        "path": "elements.replaceAt",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setDataField",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setDataField1",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setDataField2",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setDataField3",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setDataField4",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setDuration",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setPhysics",
+        "kind": "function"
+      },
+      {
+        "path": "elements.setVelocity",
+        "kind": "function"
+      },
+      {
+        "path": "elements.swap",
+        "kind": "function"
+      },
+      {
+        "path": "elements.teleport",
+        "kind": "function"
+      },
+      {
+        "path": "elements.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "energy.add",
+        "kind": "function"
+      },
+      {
+        "path": "energy.addBatch",
+        "kind": "function"
+      },
+      {
+        "path": "energy.consume",
+        "kind": "function"
+      },
+      {
+        "path": "energy.consumeExcludingNetwork",
+        "kind": "function"
+      },
+      {
+        "path": "energy.getNetwork",
+        "kind": "function"
+      },
+      {
+        "path": "energy.getNetworkFreeCapacity",
+        "kind": "function"
+      },
+      {
+        "path": "energy.registerType",
+        "kind": "function"
+      },
+      {
+        "path": "entities.collectById",
+        "kind": "function"
+      },
+      {
+        "path": "entities.createLight",
+        "kind": "function"
+      },
+      {
+        "path": "entities.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "entities.getAllByType",
+        "kind": "function"
+      },
+      {
+        "path": "entities.getAllTypeDefs",
+        "kind": "function"
+      },
+      {
+        "path": "entities.getById",
+        "kind": "function"
+      },
+      {
+        "path": "entities.getSprite",
+        "kind": "function"
+      },
+      {
+        "path": "entities.getTypeDef",
+        "kind": "function"
+      },
+      {
+        "path": "entities.launch",
+        "kind": "function"
+      },
+      {
+        "path": "entities.launchById",
+        "kind": "function"
+      },
+      {
+        "path": "entities.registerSpawner",
+        "kind": "function"
+      },
+      {
+        "path": "entities.registerType",
+        "kind": "function"
+      },
+      {
+        "path": "entities.removeById",
+        "kind": "function"
+      },
+      {
+        "path": "entities.spawn",
+        "kind": "function"
+      },
+      {
+        "path": "entities.startCapture",
+        "kind": "function"
+      },
+      {
+        "path": "events.emit",
+        "kind": "function"
+      },
+      {
+        "path": "events.on",
+        "kind": "function"
+      },
+      {
+        "path": "excavation.prepare",
+        "kind": "function"
+      },
+      {
+        "path": "excavation.registerProfile",
+        "kind": "function"
+      },
+      {
+        "path": "extend",
+        "kind": "function"
+      },
+      {
+        "path": "extensions.define",
+        "kind": "function"
+      },
+      {
+        "path": "factory.addViabilityGold",
+        "kind": "function"
+      },
+      {
+        "path": "factory.canUnlockNextTier",
+        "kind": "function"
+      },
+      {
+        "path": "factory.ensureProcessAtLeast",
+        "kind": "function"
+      },
+      {
+        "path": "factory.flushDeferredLevelUps",
+        "kind": "function"
+      },
+      {
+        "path": "factory.getLevel",
+        "kind": "function"
+      },
+      {
+        "path": "factory.getProcessCount",
+        "kind": "function"
+      },
+      {
+        "path": "factory.getProcessRate",
+        "kind": "function"
+      },
+      {
+        "path": "factory.recordProcess",
+        "kind": "function"
+      },
+      {
+        "path": "factory.unlockNextTier",
+        "kind": "function"
+      },
+      {
+        "path": "filterGroupEditor.apply",
+        "kind": "function"
+      },
+      {
+        "path": "filterGroupEditor.cancel",
+        "kind": "function"
+      },
+      {
+        "path": "filterGroupEditor.getPlacementBlockedRevision",
+        "kind": "function"
+      },
+      {
+        "path": "filterGroupEditor.getRevision",
+        "kind": "function"
+      },
+      {
+        "path": "filterGroupEditor.getSelectedAnchor",
+        "kind": "function"
+      },
+      {
+        "path": "filterGroupEditor.getSelection",
+        "kind": "function"
+      },
+      {
+        "path": "filterGroupEditor.hasLastPlaced",
+        "kind": "function"
+      },
+      {
+        "path": "filterGroupEditor.selectAt",
+        "kind": "function"
+      },
+      {
+        "path": "filterGroupEditor.selectLastPlaced",
+        "kind": "function"
+      },
+      {
+        "path": "filterGroupEditor.setDraft",
+        "kind": "function"
+      },
+      {
+        "path": "fire.burnElementAt",
+        "kind": "function"
+      },
+      {
+        "path": "fire.canBurnElementAt",
+        "kind": "function"
+      },
+      {
+        "path": "foliage.generate",
+        "kind": "function"
+      },
+      {
+        "path": "foliage.getClusters",
+        "kind": "function"
+      },
+      {
+        "path": "foliage.getContainer",
+        "kind": "function"
+      },
+      {
+        "path": "foliage.hasProcgenData",
+        "kind": "function"
+      },
+      {
+        "path": "foundationColorPicker.getColor",
+        "kind": "function"
+      },
+      {
+        "path": "game.load",
+        "kind": "function"
+      },
+      {
+        "path": "game.save",
+        "kind": "function"
+      },
+      {
+        "path": "game.start",
+        "kind": "function"
+      },
+      {
+        "path": "grid.iterateCircle",
+        "kind": "function"
+      },
+      {
+        "path": "grid.iterateRect",
+        "kind": "function"
+      },
+      {
+        "path": "heatTransfer.absorbAdjacentElements",
+        "kind": "function"
+      },
+      {
+        "path": "heatTransfer.addTemperature",
+        "kind": "function"
+      },
+      {
+        "path": "heatTransfer.computeDiffusedTemperatures",
+        "kind": "function"
+      },
+      {
+        "path": "heatTransfer.computeEqualizedTemperature",
+        "kind": "function"
+      },
+      {
+        "path": "heatTransfer.consumeTemperatureNear",
+        "kind": "function"
+      },
+      {
+        "path": "heatTransfer.ensureTemperature",
+        "kind": "function"
+      },
+      {
+        "path": "heatTransfer.equalizeConnected",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.applyModifiers",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.applyModifiersSafe",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.countInterceptors",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.countModifiers",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.hasGuardedInterceptors",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.hasGuardedModifiers",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.hasInterceptors",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.hasModifiers",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.intercept",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.modify",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.offAll",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.offInterceptor",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.offModifier",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.runInterceptors",
+        "kind": "function"
+      },
+      {
+        "path": "hooks.runInterceptorsSafe",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.clearGlobal",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.formatKeyForDisplay",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.formatNumber",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getAvailableLocales",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getDescription",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getGlobal",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getGlobals",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getLanguages",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getLocale",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.getName",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.hasTranslation",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.key",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.register",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.setGlobal",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.setLocale",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.syncKeyBindings",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.t",
+        "kind": "function"
+      },
+      {
+        "path": "i18n.translatable",
+        "kind": "function"
+      },
+      {
+        "path": "input.getBoundKeys",
+        "kind": "function"
+      },
+      {
+        "path": "input.getDisplayKey",
+        "kind": "function"
+      },
+      {
+        "path": "input.getMouseCellPosition",
+        "kind": "function"
+      },
+      {
+        "path": "input.getMouseWorldPosition",
+        "kind": "function"
+      },
+      {
+        "path": "input.isAltHeld",
+        "kind": "function"
+      },
+      {
+        "path": "input.isCtrlHeld",
+        "kind": "function"
+      },
+      {
+        "path": "input.pressBinding",
+        "kind": "function"
+      },
+      {
+        "path": "input.registerKeyBinding",
+        "kind": "function"
+      },
+      {
+        "path": "input.releaseBinding",
+        "kind": "function"
+      },
+      {
+        "path": "input.resetMouseState",
+        "kind": "function"
+      },
+      {
+        "path": "input.triggerBinding",
+        "kind": "function"
+      },
+      {
+        "path": "items.commitUse",
+        "kind": "function"
+      },
+      {
+        "path": "items.create",
+        "kind": "function"
+      },
+      {
+        "path": "items.endUse",
+        "kind": "function"
+      },
+      {
+        "path": "items.getActive",
+        "kind": "function"
+      },
+      {
+        "path": "items.getRegisteredIds",
+        "kind": "function"
+      },
+      {
+        "path": "items.isActive",
+        "kind": "function"
+      },
+      {
+        "path": "items.register",
+        "kind": "function"
+      },
+      {
+        "path": "items.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "launchers.registerType",
+        "kind": "function"
+      },
+      {
+        "path": "lightColorPicker.getColor",
+        "kind": "function"
+      },
+      {
+        "path": "lights.persistent.create",
+        "kind": "function"
+      },
+      {
+        "path": "lights.persistent.fadeAt",
+        "kind": "function"
+      },
+      {
+        "path": "lights.persistent.markDirty",
+        "kind": "function"
+      },
+      {
+        "path": "lights.persistent.removeAt",
+        "kind": "function"
+      },
+      {
+        "path": "lights.temporary.create",
+        "kind": "function"
+      },
+      {
+        "path": "lights.temporary.remove",
+        "kind": "function"
+      },
+      {
+        "path": "lights.vfx.create",
+        "kind": "function"
+      },
+      {
+        "path": "lights.vfx.remove",
+        "kind": "function"
+      },
+      {
+        "path": "maps.getActive",
+        "kind": "function"
+      },
+      {
+        "path": "maps.getArtifactLocations",
+        "kind": "function"
+      },
+      {
+        "path": "maps.getAvailable",
+        "kind": "function"
+      },
+      {
+        "path": "maps.start",
+        "kind": "function"
+      },
+      {
+        "path": "matters.getMatterTypeFromId",
+        "kind": "function"
+      },
+      {
+        "path": "matters.register",
+        "kind": "function"
+      },
+      {
+        "path": "matters.runSolidUpdate",
+        "kind": "function"
+      },
+      {
+        "path": "misc.register",
+        "kind": "function"
+      },
+      {
+        "path": "patterns.createCircle",
+        "kind": "function"
+      },
+      {
+        "path": "patterns.excavate",
+        "kind": "function"
+      },
+      {
+        "path": "pipes.getConnectedVentsAt",
+        "kind": "function"
+      },
+      {
+        "path": "pipes.isAt",
+        "kind": "function"
+      },
+      {
+        "path": "pipes.isEnabledAt",
+        "kind": "function"
+      },
+      {
+        "path": "pipes.setEnabledAt",
+        "kind": "function"
+      },
+      {
+        "path": "player.buildings.add",
+        "kind": "function"
+      },
+      {
+        "path": "player.buildings.remove",
+        "kind": "function"
+      },
+      {
+        "path": "player.getPosition",
+        "kind": "function"
+      },
+      {
+        "path": "player.inventory.add",
+        "kind": "function"
+      },
+      {
+        "path": "player.inventory.has",
+        "kind": "function"
+      },
+      {
+        "path": "player.isCollidingWithCell",
+        "kind": "function"
+      },
+      {
+        "path": "player.isOnGround",
+        "kind": "function"
+      },
+      {
+        "path": "player.isPositionClear",
+        "kind": "function"
+      },
+      {
+        "path": "player.isWithinRadius",
+        "kind": "function"
+      },
+      {
+        "path": "player.setMovementMode",
+        "kind": "function"
+      },
+      {
+        "path": "player.setMovementSpeedMultiplier",
+        "kind": "function"
+      },
+      {
+        "path": "player.setPosition",
+        "kind": "function"
+      },
+      {
+        "path": "player.setVelocity",
+        "kind": "function"
+      },
+      {
+        "path": "player.teleportToGround",
+        "kind": "function"
+      },
+      {
+        "path": "portals.getMarkers",
+        "kind": "function"
+      },
+      {
+        "path": "prefabData.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "prefabData.getAllMetadata",
+        "kind": "function"
+      },
+      {
+        "path": "prefabData.getArtifactLocations",
+        "kind": "function"
+      },
+      {
+        "path": "prefabData.getAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "prefabData.getMetadata",
+        "kind": "function"
+      },
+      {
+        "path": "prefabDecor.getPlacementByName",
+        "kind": "function"
+      },
+      {
+        "path": "prefabDecor.replaceDecor",
+        "kind": "function"
+      },
+      {
+        "path": "prefabulator.localizeBlueprintStructures",
+        "kind": "function"
+      },
+      {
+        "path": "prefabulator.serializeBlueprintStructures",
+        "kind": "function"
+      },
+      {
+        "path": "prismaline.consume",
+        "kind": "function"
+      },
+      {
+        "path": "prismaline.getAvailable",
+        "kind": "function"
+      },
+      {
+        "path": "prismaline.getConsumed",
+        "kind": "function"
+      },
+      {
+        "path": "prismite.consume",
+        "kind": "function"
+      },
+      {
+        "path": "prismite.getAvailable",
+        "kind": "function"
+      },
+      {
+        "path": "prismite.getConsumed",
+        "kind": "function"
+      },
+      {
+        "path": "processing.registerGrower",
+        "kind": "function"
+      },
+      {
+        "path": "processing.registerKineticPress",
+        "kind": "function"
+      },
+      {
+        "path": "processing.registerShaker",
+        "kind": "function"
+      },
+      {
+        "path": "progression.complete",
+        "kind": "function"
+      },
+      {
+        "path": "progression.getCurrentStep",
+        "kind": "function"
+      },
+      {
+        "path": "progression.getIntroText",
+        "kind": "function"
+      },
+      {
+        "path": "progression.getObjectivePosition",
+        "kind": "function"
+      },
+      {
+        "path": "progression.getSteps",
+        "kind": "function"
+      },
+      {
+        "path": "progression.getWaypoints",
+        "kind": "function"
+      },
+      {
+        "path": "progression.isStepCompleted",
+        "kind": "function"
+      },
+      {
+        "path": "progression.setIntroText",
+        "kind": "function"
+      },
+      {
+        "path": "progression.setSteps",
+        "kind": "function"
+      },
+      {
+        "path": "progression.triggerCurrentWaypoint",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.createBlueprint",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.register",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.remove",
+        "kind": "function"
+      },
+      {
+        "path": "projectiles.spawn",
+        "kind": "function"
+      },
+      {
+        "path": "queue.enqueue",
+        "kind": "function"
+      },
+      {
+        "path": "queue.enqueueInTicks",
+        "kind": "function"
+      },
+      {
+        "path": "queue.enqueueSkipTick",
+        "kind": "function"
+      },
+      {
+        "path": "queue.process",
+        "kind": "function"
+      },
+      {
+        "path": "queue.registerHandler",
+        "kind": "function"
+      },
+      {
+        "path": "queue.removeByKey",
+        "kind": "function"
+      },
+      {
+        "path": "random.float",
+        "kind": "function"
+      },
+      {
+        "path": "random.int",
+        "kind": "function"
+      },
+      {
+        "path": "raycast.cast",
+        "kind": "function"
+      },
+      {
+        "path": "reactions.registerContact",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.getCellDrawPos",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.getDrawPos",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.getGridMetrics",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.getOverlayViewportSize",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.shaders.register",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.shaders.warmup",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.stepVideoZoom",
+        "kind": "function"
+      },
+      {
+        "path": "rendering.withOverlayContext",
+        "kind": "function"
+      },
+      {
+        "path": "resources.collectFluxiteAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "resources.refresh",
+        "kind": "function"
+      },
+      {
+        "path": "resources.updateEnergy",
+        "kind": "function"
+      },
+      {
+        "path": "retroConsole.registerGame",
+        "kind": "function"
+      },
+      {
+        "path": "scene.getActive",
+        "kind": "function"
+      },
+      {
+        "path": "schedule.nextTick",
+        "kind": "function"
+      },
+      {
+        "path": "shadows.refresh",
+        "kind": "function"
+      },
+      {
+        "path": "shadows.refreshRadius",
+        "kind": "function"
+      },
+      {
+        "path": "shadows.refreshRect",
+        "kind": "function"
+      },
+      {
+        "path": "signals.drawWireSegment",
+        "kind": "function"
+      },
+      {
+        "path": "signals.getAnchorPoint",
+        "kind": "function"
+      },
+      {
+        "path": "signals.getCombinedAt",
+        "kind": "function"
+      },
+      {
+        "path": "signals.getIncomingCountAt",
+        "kind": "function"
+      },
+      {
+        "path": "signals.getOnCountAt",
+        "kind": "function"
+      },
+      {
+        "path": "signals.handleClickAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "signals.hasLink",
+        "kind": "function"
+      },
+      {
+        "path": "signals.link",
+        "kind": "function"
+      },
+      {
+        "path": "signals.registerInteractable",
+        "kind": "function"
+      },
+      {
+        "path": "signals.registerSenderType",
+        "kind": "function"
+      },
+      {
+        "path": "signals.set",
+        "kind": "function"
+      },
+      {
+        "path": "signals.setAll",
+        "kind": "function"
+      },
+      {
+        "path": "signals.targets.register",
+        "kind": "function"
+      },
+      {
+        "path": "signals.unlink",
+        "kind": "function"
+      },
+      {
+        "path": "signals.unlinkAllAt",
+        "kind": "function"
+      },
+      {
+        "path": "sound.calculateDistanceOptions",
+        "kind": "function"
+      },
+      {
+        "path": "sound.play",
+        "kind": "function"
+      },
+      {
+        "path": "sound.playActive",
+        "kind": "function"
+      },
+      {
+        "path": "sound.playLayers",
+        "kind": "function"
+      },
+      {
+        "path": "sound.stop",
+        "kind": "function"
+      },
+      {
+        "path": "sound.stopActive",
+        "kind": "function"
+      },
+      {
+        "path": "sound.stopAll",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.get",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.hideAllPlayerModSprites",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.load",
+        "kind": "function"
+      },
+      {
+        "path": "sprites.rotatePlayerModSprites",
+        "kind": "function"
+      },
+      {
+        "path": "storage.ensure",
+        "kind": "function"
+      },
+      {
+        "path": "storage.get",
+        "kind": "function"
+      },
+      {
+        "path": "storage.local.get",
+        "kind": "function"
+      },
+      {
+        "path": "storage.local.remove",
+        "kind": "function"
+      },
+      {
+        "path": "storage.local.set",
+        "kind": "function"
+      },
+      {
+        "path": "storage.remove",
+        "kind": "function"
+      },
+      {
+        "path": "storage.set",
+        "kind": "function"
+      },
+      {
+        "path": "strataform.getDefaultConfig",
+        "kind": "function"
+      },
+      {
+        "path": "strataform.getRegisteredTypes",
+        "kind": "function"
+      },
+      {
+        "path": "strataform.registerType",
+        "kind": "function"
+      },
+      {
+        "path": "strataform.trigger",
+        "kind": "function"
+      },
+      {
+        "path": "strataform.triggerByType",
+        "kind": "function"
+      },
+      {
+        "path": "structures.addProcessor",
+        "kind": "function"
+      },
+      {
+        "path": "structures.addVariant",
+        "kind": "function"
+      },
+      {
+        "path": "structures.beginBatchWrite",
+        "kind": "function"
+      },
+      {
+        "path": "structures.build",
+        "kind": "function"
+      },
+      {
+        "path": "structures.endBatchWrite",
+        "kind": "function"
+      },
+      {
+        "path": "structures.forEachOfType",
+        "kind": "function"
+      },
+      {
+        "path": "structures.getAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.getConfig",
+        "kind": "function"
+      },
+      {
+        "path": "structures.getUnlockedTypes",
+        "kind": "function"
+      },
+      {
+        "path": "structures.hasBuiltAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isBlockedByPlayer",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isLauncherAt",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isType",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isTypeAt",
+        "kind": "function"
+      },
+      {
+        "path": "structures.isUnlocked",
+        "kind": "function"
+      },
+      {
+        "path": "structures.mapValueToSpritesheetIndex",
+        "kind": "function"
+      },
+      {
+        "path": "structures.processing.isEnabledAt",
+        "kind": "function"
+      },
+      {
+        "path": "structures.processing.register",
+        "kind": "function"
+      },
+      {
+        "path": "structures.processing.setEnabledAt",
+        "kind": "function"
+      },
+      {
+        "path": "structures.recipes.getWeightedRecipe",
+        "kind": "function"
+      },
+      {
+        "path": "structures.recipes.register",
+        "kind": "function"
+      },
+      {
+        "path": "structures.recipes.selectWeightedOutput",
+        "kind": "function"
+      },
+      {
+        "path": "structures.register",
+        "kind": "function"
+      },
+      {
+        "path": "structures.registerPlacementConfig",
+        "kind": "function"
+      },
+      {
+        "path": "structures.removeAt",
+        "kind": "function"
+      },
+      {
+        "path": "structures.removeAtPositions",
+        "kind": "function"
+      },
+      {
+        "path": "structures.removeBetween",
+        "kind": "function"
+      },
+      {
+        "path": "structures.resolveTypeName",
+        "kind": "function"
+      },
+      {
+        "path": "structures.setData",
+        "kind": "function"
+      },
+      {
+        "path": "structures.setSpritesheetIndex",
+        "kind": "function"
+      },
+      {
+        "path": "structures.setSpritesheetIndexAt",
+        "kind": "function"
+      },
+      {
+        "path": "structures.setSpritesheetIndexByValue",
+        "kind": "function"
+      },
+      {
+        "path": "structures.setSpritesheetIndexByValueAt",
+        "kind": "function"
+      },
+      {
+        "path": "structures.update",
+        "kind": "function"
+      },
+      {
+        "path": "structures.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "structures.updateMany",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.decrementConvergenceBuffer",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.getCrystalMined",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.getDiskRadiusCells",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.getEntityType",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.getNearestConvergence",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.getPendingConvergence",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.getPlacedConsoles",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.getRadiusPx",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.isSpawnJammed",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.registerEntityType",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.resetAllConvergenceBuffers",
+        "kind": "function"
+      },
+      {
+        "path": "swarmConsole.setSpawnJammed",
+        "kind": "function"
+      },
+      {
+        "path": "sweeperDrone.cancelSelection",
+        "kind": "function"
+      },
+      {
+        "path": "tech.addDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "tech.conservatory.appendUnlock",
+        "kind": "function"
+      },
+      {
+        "path": "tech.getDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "tech.isLocked",
+        "kind": "function"
+      },
+      {
+        "path": "tech.isResearched",
+        "kind": "function"
+      },
+      {
+        "path": "tech.registerNode",
+        "kind": "function"
+      },
+      {
+        "path": "tech.setLocked",
+        "kind": "function"
+      },
+      {
+        "path": "tech.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "teleportZones.add",
+        "kind": "function"
+      },
+      {
+        "path": "teleportZones.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "teleportZones.getAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "teleportZones.getById",
+        "kind": "function"
+      },
+      {
+        "path": "teleportZones.remove",
+        "kind": "function"
+      },
+      {
+        "path": "teleportZones.spawnDefaultParticles",
+        "kind": "function"
+      },
+      {
+        "path": "teleportZones.teleportPlayerTo",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.createAt",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.damageTerrain",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getConfig",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getGroundCellTypeAtPos",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getIdByType",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getTerrainData",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.getTypeByName",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.isAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.isCellIdTerrain",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.isPosTerrain",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.isPosTerrainId",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.isTerrain",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.isTypeAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.meltAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.register",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.removeAt",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.removeAtWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.replaceAt",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.setTerrainHP",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.transform",
+        "kind": "function"
+      },
+      {
+        "path": "terrains.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "tools.blockSwitchIfGrabberLoaded",
+        "kind": "function"
+      },
+      {
+        "path": "tools.getGrabberSize",
+        "kind": "function"
+      },
+      {
+        "path": "tools.isGrabberActive",
+        "kind": "function"
+      },
+      {
+        "path": "tools.isGrabberLoaded",
+        "kind": "function"
+      },
+      {
+        "path": "tools.setGrabberSize",
+        "kind": "function"
+      },
+      {
+        "path": "triggers.register",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.areAllTargetsBuilt",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.areFamilyTargetsBuilt",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.canPlaceAtActiveTarget",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.getFoundationMoveDests",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.getFoundationMoveSources",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.getTargets",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.hasDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.isStepConstrained",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.matchesFoundationMove",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.matchesFoundationRemove",
+        "kind": "function"
+      },
+      {
+        "path": "tutorialBuild.shouldProtectActiveTargetAt",
+        "kind": "function"
+      },
+      {
+        "path": "ui.alert",
+        "kind": "function"
+      },
+      {
+        "path": "ui.components.ActionSlot",
+        "kind": "function"
+      },
+      {
+        "path": "ui.components.Button",
+        "kind": "function"
+      },
+      {
+        "path": "ui.components.Panel",
+        "kind": "function"
+      },
+      {
+        "path": "ui.confirm",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.createBankSource",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.getActiveBankIndex",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.getActiveSlotIndex",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.getBankCount",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.getSlotKeyLabel",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.selectAction",
+        "kind": "function"
+      },
+      {
+        "path": "ui.hotbar.useHotbar",
+        "kind": "function"
+      },
+      {
+        "path": "ui.openPauseMenu",
+        "kind": "function"
+      },
+      {
+        "path": "ui.overlays.register",
+        "kind": "function"
+      },
+      {
+        "path": "ui.overlays.unregister",
+        "kind": "function"
+      },
+      {
+        "path": "ui.overlays.update",
+        "kind": "function"
+      },
+      {
+        "path": "ui.overrides.register",
+        "kind": "function"
+      },
+      {
+        "path": "ui.prompt",
+        "kind": "function"
+      },
+      {
+        "path": "ui.radialMenu.addItem",
+        "kind": "function"
+      },
+      {
+        "path": "ui.radialMenu.clear",
+        "kind": "function"
+      },
+      {
+        "path": "ui.radialMenu.close",
+        "kind": "function"
+      },
+      {
+        "path": "ui.radialMenu.isOpen",
+        "kind": "function"
+      },
+      {
+        "path": "ui.radialMenu.open",
+        "kind": "function"
+      },
+      {
+        "path": "ui.radialMenu.release",
+        "kind": "function"
+      },
+      {
+        "path": "ui.radialMenu.setDirection",
+        "kind": "function"
+      },
+      {
+        "path": "ui.radialMenu.setItemsProvider",
+        "kind": "function"
+      },
+      {
+        "path": "ui.radialMenu.setOnOpen",
+        "kind": "function"
+      },
+      {
+        "path": "ui.regions.mount",
+        "kind": "function"
+      },
+      {
+        "path": "ui.regions.setVisible",
+        "kind": "function"
+      },
+      {
+        "path": "ui.select",
+        "kind": "function"
+      },
+      {
+        "path": "ui.showTooltip",
+        "kind": "function"
+      },
+      {
+        "path": "ui.toast",
+        "kind": "function"
+      },
+      {
+        "path": "ui.update",
+        "kind": "function"
+      },
+      {
+        "path": "ui.useGameEvent",
+        "kind": "function"
+      },
+      {
+        "path": "ui.useRefresh",
+        "kind": "function"
+      },
+      {
+        "path": "ui.useScale",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.getAvailableLevel",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.getLevel",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.register",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.registerCategory",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.setLevel",
+        "kind": "function"
+      },
+      {
+        "path": "upgrades.updateDefinition",
+        "kind": "function"
+      },
+      {
+        "path": "usageTracker.clear",
+        "kind": "function"
+      },
+      {
+        "path": "usageTracker.getLatest",
+        "kind": "function"
+      },
+      {
+        "path": "usageTracker.getMostUsed",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getAngle",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getCoordinatesBetweenPoints",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getDirection",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getDistance",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getRandomFloatBetween",
+        "kind": "function"
+      },
+      {
+        "path": "utils.getRandomIntBetween",
+        "kind": "function"
+      },
+      {
+        "path": "wall.getPaletteData",
+        "kind": "function"
+      },
+      {
+        "path": "wall.getWallDataAt",
+        "kind": "function"
+      },
+      {
+        "path": "wall.getWallDataSize",
+        "kind": "function"
+      },
+      {
+        "path": "wall.setWallDataAt",
+        "kind": "function"
+      },
+      {
+        "path": "workerLocal.clear",
+        "kind": "function"
+      },
+      {
+        "path": "workerLocal.get",
+        "kind": "function"
+      },
+      {
+        "path": "workerLocal.getOrInit",
+        "kind": "function"
+      },
+      {
+        "path": "workerLocal.set",
+        "kind": "function"
+      },
+      {
+        "path": "workers.emitToMain",
+        "kind": "function"
+      },
+      {
+        "path": "workers.events.emit",
+        "kind": "function"
+      },
+      {
+        "path": "workers.events.on",
+        "kind": "function"
+      },
+      {
+        "path": "workers.hooks.intercept",
+        "kind": "function"
+      },
+      {
+        "path": "workers.hooks.modify",
+        "kind": "function"
+      },
+      {
+        "path": "workers.messages.getIdByName",
+        "kind": "function"
+      },
+      {
+        "path": "workers.messages.postToEachThreadColumnSequentiallyAwait",
+        "kind": "function"
+      },
+      {
+        "path": "workers.shared.create",
+        "kind": "function"
+      },
+      {
+        "path": "workers.shared.get",
+        "kind": "function"
+      },
+      {
+        "path": "workers.triggers.register",
+        "kind": "function"
+      },
+      {
+        "path": "world.createLightSource",
+        "kind": "function"
+      },
+      {
+        "path": "world.excavate",
+        "kind": "function"
+      },
+      {
+        "path": "world.fadeLightSourceAt",
+        "kind": "function"
+      },
+      {
+        "path": "world.getCellId",
+        "kind": "function"
+      },
+      {
+        "path": "world.getCellTypeByName",
+        "kind": "function"
+      },
+      {
+        "path": "world.getDimensions",
+        "kind": "function"
+      },
+      {
+        "path": "world.isCellEmpty",
+        "kind": "function"
+      },
+      {
+        "path": "world.isTerrainAt",
+        "kind": "function"
+      },
+      {
+        "path": "world.items.destroy",
+        "kind": "function"
+      },
+      {
+        "path": "world.items.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "world.items.getById",
+        "kind": "function"
+      },
+      {
+        "path": "world.items.pickUp",
+        "kind": "function"
+      },
+      {
+        "path": "world.items.spawn",
+        "kind": "function"
+      },
+      {
+        "path": "world.markLightsDirty",
+        "kind": "function"
+      },
+      {
+        "path": "world.mutateCellWhenIdle",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.destroy",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.getAll",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.getById",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.pickUp",
+        "kind": "function"
+      },
+      {
+        "path": "world.pickups.spawn",
+        "kind": "function"
+      },
+      {
+        "path": "world.redrawSurroundingCells",
+        "kind": "function"
+      },
+      {
+        "path": "world.removeLightSourcesAt",
+        "kind": "function"
+      },
+      {
+        "path": "world.reportActivityToChunk",
+        "kind": "function"
+      },
+      {
+        "path": "world.revealFogAtCell",
+        "kind": "function"
+      },
+      {
+        "path": "world.runAfterMutations",
+        "kind": "function"
+      },
+      {
+        "path": "world.runWhenSimulationIdle",
+        "kind": "function"
+      },
+      {
+        "path": "world.setCellId",
+        "kind": "function"
+      },
+      {
+        "path": "world.setCellIdWhenIdle",
+        "kind": "function"
+      }
+    ],
+    "electron": [
+      {
+        "path": "appQuit",
+        "kind": "function"
+      },
+      {
+        "path": "checkLicense",
+        "kind": "function"
+      },
+      {
+        "path": "clearLastPlayedGame",
+        "kind": "function"
+      },
+      {
+        "path": "customMaps.delete",
+        "kind": "function"
+      },
+      {
+        "path": "customMaps.list",
+        "kind": "function"
+      },
+      {
+        "path": "customMaps.load",
+        "kind": "function"
+      },
+      {
+        "path": "customMaps.save",
+        "kind": "function"
+      },
+      {
+        "path": "deleteSave",
+        "kind": "function"
+      },
+      {
+        "path": "diagnostics",
+        "kind": "function"
+      },
+      {
+        "path": "exportSave",
+        "kind": "function"
+      },
+      {
+        "path": "getIsSteamDeckSync",
+        "kind": "function"
+      },
+      {
+        "path": "getLastPlayedGameSync",
+        "kind": "function"
+      },
+      {
+        "path": "getModdingEnabledSync",
+        "kind": "function"
+      },
+      {
+        "path": "getPlatformSync",
+        "kind": "function"
+      },
+      {
+        "path": "getPreferredSystemLanguagesSync",
+        "kind": "function"
+      },
+      {
+        "path": "getSaveFiles",
+        "kind": "function"
+      },
+      {
+        "path": "getSaveFolder",
+        "kind": "function"
+      },
+      {
+        "path": "getSettingsSync",
+        "kind": "function"
+      },
+      {
+        "path": "getSystemInfo",
+        "kind": "function"
+      },
+      {
+        "path": "importSave",
+        "kind": "function"
+      },
+      {
+        "path": "isFilePatchingActiveSync",
+        "kind": "function"
+      },
+      {
+        "path": "load",
+        "kind": "function"
+      },
+      {
+        "path": "loadRaw",
+        "kind": "function"
+      },
+      {
+        "path": "localMods.getFolder",
+        "kind": "function"
+      },
+      {
+        "path": "localMods.list",
+        "kind": "function"
+      },
+      {
+        "path": "localMods.openFolder",
+        "kind": "function"
+      },
+      {
+        "path": "localMods.upload",
+        "kind": "function"
+      },
+      {
+        "path": "log",
+        "kind": "function"
+      },
+      {
+        "path": "macRightMouse.onPos",
+        "kind": "function"
+      },
+      {
+        "path": "macRightMouse.onUp",
+        "kind": "function"
+      },
+      {
+        "path": "macRightMouse.watch",
+        "kind": "function"
+      },
+      {
+        "path": "onAppResume",
+        "kind": "function"
+      },
+      {
+        "path": "onAppSuspend",
+        "kind": "function"
+      },
+      {
+        "path": "onXboxLicenseLost",
+        "kind": "function"
+      },
+      {
+        "path": "onXboxUserSignedIn",
+        "kind": "function"
+      },
+      {
+        "path": "onXboxUserSignedOut",
+        "kind": "function"
+      },
+      {
+        "path": "openDevTools",
+        "kind": "function"
+      },
+      {
+        "path": "openExternalBrowser",
+        "kind": "function"
+      },
+      {
+        "path": "platform.clearAchievement",
+        "kind": "function"
+      },
+      {
+        "path": "platform.cloudDelete",
+        "kind": "function"
+      },
+      {
+        "path": "platform.cloudFileExists",
+        "kind": "function"
+      },
+      {
+        "path": "platform.cloudLoad",
+        "kind": "function"
+      },
+      {
+        "path": "platform.cloudSave",
+        "kind": "function"
+      },
+      {
+        "path": "platform.cloudSync",
+        "kind": "function"
+      },
+      {
+        "path": "platform.getAppId",
+        "kind": "function"
+      },
+      {
+        "path": "platform.getPlayerId",
+        "kind": "function"
+      },
+      {
+        "path": "platform.getPlayerName",
+        "kind": "function"
+      },
+      {
+        "path": "platform.isAchievementUnlocked",
+        "kind": "function"
+      },
+      {
+        "path": "platform.isInitialized",
+        "kind": "function"
+      },
+      {
+        "path": "platform.overlay.openUrl",
+        "kind": "function"
+      },
+      {
+        "path": "platform.unlockAchievement",
+        "kind": "function"
+      },
+      {
+        "path": "platform.workshop.download",
+        "kind": "function"
+      },
+      {
+        "path": "platform.workshop.downloadInfo",
+        "kind": "function"
+      },
+      {
+        "path": "platform.workshop.getItem",
+        "kind": "function"
+      },
+      {
+        "path": "platform.workshop.getSandkitMods",
+        "kind": "function"
+      },
+      {
+        "path": "platform.workshop.getState",
+        "kind": "function"
+      },
+      {
+        "path": "platform.workshop.getSubscribedItems",
+        "kind": "function"
+      },
+      {
+        "path": "platform.workshop.installInfo",
+        "kind": "function"
+      },
+      {
+        "path": "platform.workshop.subscribe",
+        "kind": "function"
+      },
+      {
+        "path": "platform.workshop.unsubscribe",
+        "kind": "function"
+      },
+      {
+        "path": "platformPrimeAchievements",
+        "kind": "function"
+      },
+      {
+        "path": "platformShowReauthPrompt",
+        "kind": "function"
+      },
+      {
+        "path": "save",
+        "kind": "function"
+      },
+      {
+        "path": "saveExistsSync",
+        "kind": "function"
+      },
+      {
+        "path": "saveLastPlayedGame",
+        "kind": "function"
+      },
+      {
+        "path": "saveSerialized",
+        "kind": "function"
+      },
+      {
+        "path": "saveSettings",
+        "kind": "function"
+      },
+      {
+        "path": "setFullscreen",
+        "kind": "function"
+      },
+      {
+        "path": "toggleFullscreen",
+        "kind": "function"
+      },
+      {
+        "path": "writeGameEvent",
+        "kind": "function"
+      }
+    ]
+  },
+  "enums": [
+    "AbilityType",
+    "ActionState",
+    "ActionType",
+    "AuthorizationType",
+    "BuildMode",
+    "BuildingClearance",
+    "CellType",
+    "ComponentId",
+    "DroneType",
+    "ElementType",
+    "ItemId",
+    "ItemType",
+    "KeyBinding",
+    "KeyState",
+    "MatterType",
+    "PickupType",
+    "ProjectileType",
+    "ReloadType",
+    "Scene",
+    "StructureType",
+    "Tech",
+    "TechStatus",
+    "WorldItemType"
+  ],
+  "react": [
+    "Children",
+    "Component",
+    "Fragment",
+    "Profiler",
+    "PureComponent",
+    "StrictMode",
+    "Suspense",
+    "__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED",
+    "act",
+    "cloneElement",
+    "createContext",
+    "createElement",
+    "createFactory",
+    "createRef",
+    "default",
+    "forwardRef",
+    "isValidElement",
+    "lazy",
+    "memo",
+    "startTransition",
+    "unstable_act",
+    "useCallback",
+    "useContext",
+    "useDebugValue",
+    "useDeferredValue",
+    "useEffect",
+    "useId",
+    "useImperativeHandle",
+    "useInsertionEffect",
+    "useLayoutEffect",
+    "useMemo",
+    "useReducer",
+    "useRef",
+    "useState",
+    "useSyncExternalStore",
+    "useTransition",
+    "version"
+  ],
+  "stats": {
+    "apiFunctionCount": 409,
+    "engineFunctionCount": 592,
+    "electronFunctionCount": 70,
+    "enumNamespaceCount": 23,
+    "reactExportCount": 37
+  }
+}
