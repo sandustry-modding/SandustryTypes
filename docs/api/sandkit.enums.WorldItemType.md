@@ -8,7 +8,7 @@ Use [PickupType](api/sandkit.enums.PickupType.md) instead.
 
 ## Enumeration Members <!-- {docsify-ignore} -->
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.enums.WorldItemType.Artifact~~ :id=artifact
 
@@ -24,7 +24,7 @@ Artifact: 1
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.enums.WorldItemType.GlyphKey~~ :id=glyphkey
 
@@ -40,7 +40,7 @@ GlyphKey: 2
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.enums.WorldItemType.Stratacore~~ :id=stratacore
 
@@ -56,7 +56,7 @@ Stratacore: 3
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.enums.WorldItemType.Orb~~ :id=orb
 

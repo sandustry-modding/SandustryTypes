@@ -225,7 +225,7 @@ Resolve a terrain string id to a numeric cell type.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.terrains.getTypeFromId~~ :id=gettypefromid
 
@@ -606,7 +606,7 @@ True when hit points changed or the terrain was removed.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.terrains.setHpAtCell~~ :id=sethpatcell
 

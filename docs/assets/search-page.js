@@ -269,7 +269,15 @@
         return;
       }
 
-      var found = api.searchIndex(window.SMT_SEARCH_INDEX, q, scopeId, MAX_RESULTS);
+      var hideDeprecated =
+        document.documentElement.classList.contains("smt-hide-deprecated");
+      var found = api.searchIndex(
+        window.SMT_SEARCH_INDEX,
+        q,
+        scopeId,
+        MAX_RESULTS,
+        hideDeprecated,
+      );
       if (!found.total) {
         list.innerHTML = "";
         status.textContent = "No matches for “" + q + "”.";
@@ -361,6 +369,7 @@
 
     scopeButtons(route.scope);
     input.value = route.q;
+    window.smtRefreshSearch = scheduleRender;
     loadCards(function () {
       loadIndex(function () {
         render();
@@ -372,6 +381,9 @@
   function bindHotkeys() {
     if (hotkeysBound) return;
     hotkeysBound = true;
+    document.addEventListener("smt-docs-settings", function () {
+      if (typeof window.smtRefreshSearch === "function") window.smtRefreshSearch();
+    });
     document.addEventListener("keydown", function (e) {
       var tag = (e.target && e.target.tagName) || "";
       var typing = /input|textarea|select/i.test(tag) || (e.target && e.target.isContentEditable);

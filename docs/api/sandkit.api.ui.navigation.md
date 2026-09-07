@@ -114,7 +114,7 @@ Class name string for the focus ring.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.ui.navigation.controllerFocusClass~~ :id=controllerfocusclass
 

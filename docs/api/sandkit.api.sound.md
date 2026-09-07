@@ -292,7 +292,7 @@ Stop a sound by id.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.sound.stopById~~ :id=stopbyid
 

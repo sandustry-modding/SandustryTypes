@@ -221,7 +221,7 @@ True when the swap succeeded.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.swapCells~~ :id=swapcells
 
@@ -293,7 +293,7 @@ Mark an element index as movement-blocked for this tick.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.markMovementBlockedByElementIndex~~ :id=markmovementblockedbyelementindex
 

@@ -2033,7 +2033,7 @@ Creates a named screen effect at world coordinates.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.effects.createEffectAtWorld~~ :id=sandkit.api.effects.createeffectatworld
 
@@ -2077,7 +2077,7 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.effects.createLightAtWorld~~ :id=sandkit.api.effects.createlightatworld
 
@@ -2204,7 +2204,7 @@ Creates a laser beam between two world points. Returns a handle to destroy it.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.effects.removeLightById~~ :id=sandkit.api.effects.removelightbyid
 
@@ -2944,7 +2944,7 @@ api.elements.createAtCell(cellX, cellY, "steam", {
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.createAtCellWhenIdle~~ :id=sandkit.api.elements.createatcellwhenidle
 
@@ -3007,7 +3007,7 @@ Replace the element at a cell. Main-entry writes are deferred; reads see the old
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.replaceAtCellWhenIdle~~ :id=sandkit.api.elements.replaceatcellwhenidle
 
@@ -3070,7 +3070,7 @@ Remove the element at a cell. Main-entry writes are deferred; reads see the old 
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.removeAtCellWhenIdle~~ :id=sandkit.api.elements.removeatcellwhenidle
 
@@ -3142,7 +3142,7 @@ Move an element between cells. Main-entry writes are deferred; reads see the old
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.teleportBetweenCellsWhenIdle~~ :id=sandkit.api.elements.teleportbetweencellswhenidle
 
@@ -3220,7 +3220,7 @@ api.elements.setVelocityAtCell(cellX, cellY, { x: 0, y: -120 });
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.setVelocityAtCellWhenIdle~~ :id=sandkit.api.elements.setvelocityatcellwhenidle
 
@@ -3294,7 +3294,7 @@ api.elements.addParticleVelocityAtCell(
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.addParticleVelocityAtCellWhenIdle~~ :id=sandkit.api.elements.addparticlevelocityatcellwhenidle
 
@@ -3367,7 +3367,7 @@ api.elements.convertToParticleAtCell(
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.convertToParticleAtCellWhenIdle~~ :id=sandkit.api.elements.converttoparticleatcellwhenidle
 
@@ -3430,7 +3430,7 @@ Convert a particle back to a solid element. Main-entry writes are deferred; read
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.convertFromParticleAtCellWhenIdle~~ :id=sandkit.api.elements.convertfromparticleatcellwhenidle
 
@@ -3493,7 +3493,7 @@ Set a data field on the element at a cell. Main-entry writes are deferred; reads
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.setDataFieldAtCellWhenIdle~~ :id=sandkit.api.elements.setdatafieldatcellwhenidle
 
@@ -3556,7 +3556,7 @@ Refresh the rendered color at a cell. Main-entry writes are deferred; reads see 
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.refreshColorAtCellWhenIdle~~ :id=sandkit.api.elements.refreshcoloratcellwhenidle
 
@@ -3619,7 +3619,7 @@ Set the physics skip mode at a cell. Main-entry writes are deferred; reads see t
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.setPhysicsAtCellWhenIdle~~ :id=sandkit.api.elements.setphysicsatcellwhenidle
 
@@ -3695,7 +3695,7 @@ api.elements.setDurationAtCell(
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.setDurationAtCellWhenIdle~~ :id=sandkit.api.elements.setdurationatcellwhenidle
 
@@ -3790,7 +3790,7 @@ Resolve a mod element string id to a type handle.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.getTypeFromId~~ :id=sandkit.api.elements.gettypefromid
 
@@ -5519,7 +5519,7 @@ Burn the element at the cell. Main-entry writes are deferred; reads see the old 
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.fire.burnElementAtCellWhenIdle~~ :id=sandkit.api.fire.burnelementatcellwhenidle
 
@@ -6022,7 +6022,7 @@ Calls the callback for each cell in a rectangle.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.grid.forEachCellInRect~~ :id=sandkit.api.grid.foreachcellinrect
 
@@ -7858,7 +7858,7 @@ Joins key parts into a single translation key.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.i18n.key~~ :id=sandkit.api.i18n.key
 
@@ -7991,7 +7991,7 @@ Creates a translatable string object with a fallback.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.i18n.translatable~~ :id=sandkit.api.i18n.translatable
 
@@ -8120,7 +8120,7 @@ Removes a global translation helper value.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.i18n.clearGlobal~~ :id=sandkit.api.i18n.clearglobal
 
@@ -9610,7 +9610,7 @@ Official pickup type discriminator.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.pickups.WorldItemType~~ :id=sandkit.api.pickups.worlditemtype
 
@@ -9707,7 +9707,7 @@ Remove a pickup instance from the world.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.pickups.destroy~~ :id=sandkit.api.pickups.destroy
 
@@ -10014,7 +10014,7 @@ Set the player world position.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.player.setWorldPosition~~ :id=sandkit.api.player.setworldposition
 
@@ -10214,7 +10214,7 @@ True when the player hitbox fits at the position.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.player.isWorldPositionClear~~ :id=sandkit.api.player.isworldpositionclear
 
@@ -10288,7 +10288,7 @@ Unlock a structure type for building.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.player.buildings.unlockByType~~ :id=sandkit.api.player.buildings.unlockbytype
 
@@ -10387,7 +10387,7 @@ Add an item to inventory by item id.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.player.inventory.addFromId~~ :id=sandkit.api.player.inventory.addfromid
 
@@ -11710,7 +11710,7 @@ const counts = api.shared.buffers.ensure("counts", {
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.shared.buffers.create~~ :id=sandkit.api.shared.buffers.create
 
@@ -12183,7 +12183,7 @@ Stop a sound by id.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.sound.stopById~~ :id=sandkit.api.sound.stopbyid
 
@@ -13177,7 +13177,7 @@ Context passed to structure processing callbacks.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.StructureProcessorDefinitionV1~~ :id=sandkit.api.structures.structureprocessordefinitionv1
 
@@ -13577,7 +13577,7 @@ api.structures.registerVariant(
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.addVariant~~ :id=sandkit.api.structures.addvariant
 
@@ -13694,7 +13694,7 @@ Return structure types available for building.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.getUnlockedTypes~~ :id=sandkit.api.structures.getunlockedtypes
 
@@ -13808,7 +13808,7 @@ function (same implementation and return value; names differ only).
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.isUnlockedByType~~ :id=sandkit.api.structures.isunlockedbytype
 
@@ -13913,7 +13913,7 @@ Build a structure at a cell. Main-thread writes are deferred.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.buildAtCellWhenIdle~~ :id=sandkit.api.structures.buildatcellwhenidle
 
@@ -13976,7 +13976,7 @@ Remove a structure at a cell. Main-thread writes are deferred.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.removeAtCellWhenIdle~~ :id=sandkit.api.structures.removeatcellwhenidle
 
@@ -14051,7 +14051,7 @@ Remove structures between two cells. Main-thread writes are deferred.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.removeBetweenCellsWhenIdle~~ :id=sandkit.api.structures.removebetweencellswhenidle
 
@@ -14138,7 +14138,7 @@ api.structures.removeAtCells([
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.removeAtCellsWhenIdle~~ :id=sandkit.api.structures.removeatcellswhenidle
 
@@ -14176,7 +14176,7 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.addProcessor~~ :id=sandkit.api.structures.addprocessor
 
@@ -14301,7 +14301,7 @@ True when the enabled state changed.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.processing.setEnabledAt~~ :id=sandkit.api.structures.processing.setenabledat
 
@@ -14711,7 +14711,7 @@ api.tech.registerDefinition("exampleTech", {
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.tech.addDefinition~~ :id=sandkit.api.tech.adddefinition
 
@@ -15060,7 +15060,7 @@ Create terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.terrains.createAtCellWhenIdle~~ :id=sandkit.api.terrains.createatcellwhenidle
 
@@ -15123,7 +15123,7 @@ Replace terrain at a cell. Main-entry writes are deferred; reads see the old gri
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.terrains.replaceAtCellWhenIdle~~ :id=sandkit.api.terrains.replaceatcellwhenidle
 
@@ -15186,7 +15186,7 @@ Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.terrains.removeAtCellWhenIdle~~ :id=sandkit.api.terrains.removeatcellwhenidle
 
@@ -15249,7 +15249,7 @@ Set terrain hit points at a cell. Main-entry writes are deferred; reads see the 
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.terrains.setHpAtCell~~ :id=sandkit.api.terrains.sethpatcell
 
@@ -15284,7 +15284,7 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.terrains.setHpAtCellWhenIdle~~ :id=sandkit.api.terrains.sethpatcellwhenidle
 
@@ -16932,7 +16932,7 @@ Class name string for the focus ring.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.ui.navigation.controllerFocusClass~~ :id=sandkit.api.ui.navigation.controllerfocusclass
 
@@ -16983,7 +16983,7 @@ Use [regions](api/sandkit.api.ui.regions.md) instead.
 
 ### Functions <!-- {docsify-ignore} -->
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.ui.overlays.register~~ :id=sandkit.api.ui.overlays.register
 
@@ -17026,7 +17026,7 @@ Register a render function in an overlay slot.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.ui.overlays.unregister~~ :id=sandkit.api.ui.overlays.unregister
 
@@ -17066,7 +17066,7 @@ Remove an overlay from a slot.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.ui.overlays.update~~ :id=sandkit.api.ui.overlays.update
 
@@ -17643,7 +17643,7 @@ Return grid cells along a line between two points.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.utils.getCoordinatesBetweenPoints~~ :id=sandkit.api.utils.getcoordinatesbetweenpoints
 
@@ -17727,7 +17727,7 @@ Use [grid](api/sandkit.api.grid.md) instead.
 
 ### Functions <!-- {docsify-ignore} -->
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.world.runWhenSimulationIdle~~ :id=sandkit.api.world.runwhensimulationidle
 
@@ -17762,7 +17762,7 @@ runWhenSimulationIdle(callback: () => void): void
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.world.redrawAroundCellWhenIdle~~ :id=sandkit.api.world.redrawaroundcellwhenidle
 
@@ -17856,7 +17856,7 @@ Spawn a named screen-space or world effect.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.effects.createEffectAtWorld~~ :id=sandkit.api.effects.worker.createeffectatworld
 
@@ -18125,7 +18125,7 @@ True when the swap succeeded.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.swapCells~~ :id=sandkit.api.elements.worker.swapcells
 
@@ -18197,7 +18197,7 @@ Mark an element index as movement-blocked for this tick.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.elements.markMovementBlockedByElementIndex~~ :id=sandkit.api.elements.worker.markmovementblockedbyelementindex
 
@@ -19605,7 +19605,7 @@ Return the player center position in world pixels.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.player.getWorldPosition~~ :id=sandkit.api.player.worker.getworldposition
 
@@ -20028,7 +20028,7 @@ Map a structure string id to its runtime type value.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.getTypeFromId~~ :id=sandkit.api.structures.worker.gettypefromid
 
@@ -20358,7 +20358,7 @@ api.structures.updateData(
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.setData~~ :id=sandkit.api.structures.worker.setdata
 
@@ -20435,7 +20435,7 @@ Return true when processing is enabled at the cell.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.structures.processing.isEnabledAt~~ :id=sandkit.api.structures.processing.worker.isenabledat
 
@@ -20699,7 +20699,7 @@ Resolve a terrain string id to a numeric cell type.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.terrains.getTypeFromId~~ :id=sandkit.api.terrains.worker.gettypefromid
 
@@ -21080,7 +21080,7 @@ True when hit points changed or the terrain was removed.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.api.terrains.setHpAtCell~~ :id=sandkit.api.terrains.worker.sethpatcell
 
@@ -32312,7 +32312,7 @@ Use [PickupType](api/sandkit.enums.PickupType.md) instead.
 
 ### Enumeration Members <!-- {docsify-ignore} -->
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.enums.WorldItemType.Artifact~~ :id=sandkit.enums.WorldItemType.artifact
 
@@ -32328,7 +32328,7 @@ Artifact: 1
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.enums.WorldItemType.GlyphKey~~ :id=sandkit.enums.WorldItemType.glyphkey
 
@@ -32344,7 +32344,7 @@ GlyphKey: 2
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.enums.WorldItemType.Stratacore~~ :id=sandkit.enums.WorldItemType.stratacore
 
@@ -32360,7 +32360,7 @@ Stratacore: 3
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 #### ~~sandkit.enums.WorldItemType.Orb~~ :id=sandkit.enums.WorldItemType.orb
 

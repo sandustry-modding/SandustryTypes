@@ -266,7 +266,7 @@ Creates a named screen effect at world coordinates.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.effects.createEffectAtWorld~~ :id=createeffectatworld
 
@@ -310,7 +310,7 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.effects.createLightAtWorld~~ :id=createlightatworld
 
@@ -437,7 +437,7 @@ Creates a laser beam between two world points. Returns a handle to destroy it.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.effects.removeLightById~~ :id=removelightbyid
 

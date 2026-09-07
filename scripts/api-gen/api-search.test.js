@@ -197,6 +197,36 @@ Settings field value shape.
   assert.equal(entries[2]?.title, "sandkit.api.settings.ConfigValueV1");
 });
 
+test("buildSearchIndex marks deprecated members and pages", () => {
+  const entries = buildSearchIndex([
+    {
+      path: "/api/sandkit.api.ui.overlays",
+      content: `# sandkit.api.ui.overlays
+
+## Deprecated
+
+Use regions instead.
+
+## Functions <!-- {docsify-ignore} -->
+
+<div class="smt-member-card" data-deprecated="true">
+
+### ~~sandkit.api.ui.overlays.register~~ :id=register
+
+<div class="smt-member-deprecated">
+<span class="smt-member-deprecated-label">Deprecated</span>
+</div>
+
+</div>
+`,
+    },
+  ]);
+  assert.equal(entries[0]?.title, "sandkit.api.ui.overlays");
+  assert.equal(entries[0]?.deprecated, true);
+  assert.equal(entries[1]?.title, "sandkit.api.ui.overlays.register");
+  assert.equal(entries[1]?.deprecated, true);
+});
+
 test("mdFileToSearchPath matches Docsify getFile paths", () => {
   assert.equal(mdFileToSearchPath("README.md"), "/");
   assert.equal(mdFileToSearchPath("quick-start.md"), "/quick-start");

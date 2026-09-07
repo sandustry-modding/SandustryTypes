@@ -117,12 +117,13 @@
     return 0;
   }
 
-  function searchIndex(index, query, scope, limit) {
+  function searchIndex(index, query, scope, limit, hideDeprecated) {
     if (!Array.isArray(index) || !query) return { hits: [], total: 0 };
     var cap = typeof limit === "number" ? limit : 80;
     var ranked = [];
     for (var i = 0; i < index.length; i++) {
       var entry = index[i];
+      if (hideDeprecated && entry && entry.deprecated) continue;
       if (scope && scope !== "all") {
         var cls = classifyEntry(entry);
         if (cls.scope !== scope) continue;

@@ -325,7 +325,7 @@ Joins key parts into a single translation key.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.i18n.key~~ :id=key
 
@@ -458,7 +458,7 @@ Creates a translatable string object with a fallback.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.i18n.translatable~~ :id=translatable
 
@@ -587,7 +587,7 @@ Removes a global translation helper value.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.i18n.clearGlobal~~ :id=clearglobal
 

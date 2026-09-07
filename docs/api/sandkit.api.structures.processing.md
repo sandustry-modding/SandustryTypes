@@ -83,7 +83,7 @@ True when the enabled state changed.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.processing.setEnabledAt~~ :id=setenabledat
 

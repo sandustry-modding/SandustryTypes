@@ -667,7 +667,7 @@ api.elements.createAtCell(cellX, cellY, "steam", {
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.createAtCellWhenIdle~~ :id=createatcellwhenidle
 
@@ -730,7 +730,7 @@ Replace the element at a cell. Main-entry writes are deferred; reads see the old
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.replaceAtCellWhenIdle~~ :id=replaceatcellwhenidle
 
@@ -793,7 +793,7 @@ Remove the element at a cell. Main-entry writes are deferred; reads see the old 
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.removeAtCellWhenIdle~~ :id=removeatcellwhenidle
 
@@ -865,7 +865,7 @@ Move an element between cells. Main-entry writes are deferred; reads see the old
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.teleportBetweenCellsWhenIdle~~ :id=teleportbetweencellswhenidle
 
@@ -943,7 +943,7 @@ api.elements.setVelocityAtCell(cellX, cellY, { x: 0, y: -120 });
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.setVelocityAtCellWhenIdle~~ :id=setvelocityatcellwhenidle
 
@@ -1017,7 +1017,7 @@ api.elements.addParticleVelocityAtCell(
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.addParticleVelocityAtCellWhenIdle~~ :id=addparticlevelocityatcellwhenidle
 
@@ -1090,7 +1090,7 @@ api.elements.convertToParticleAtCell(
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.convertToParticleAtCellWhenIdle~~ :id=converttoparticleatcellwhenidle
 
@@ -1153,7 +1153,7 @@ Convert a particle back to a solid element. Main-entry writes are deferred; read
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.convertFromParticleAtCellWhenIdle~~ :id=convertfromparticleatcellwhenidle
 
@@ -1216,7 +1216,7 @@ Set a data field on the element at a cell. Main-entry writes are deferred; reads
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.setDataFieldAtCellWhenIdle~~ :id=setdatafieldatcellwhenidle
 
@@ -1279,7 +1279,7 @@ Refresh the rendered color at a cell. Main-entry writes are deferred; reads see 
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.refreshColorAtCellWhenIdle~~ :id=refreshcoloratcellwhenidle
 
@@ -1342,7 +1342,7 @@ Set the physics skip mode at a cell. Main-entry writes are deferred; reads see t
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.setPhysicsAtCellWhenIdle~~ :id=setphysicsatcellwhenidle
 
@@ -1418,7 +1418,7 @@ api.elements.setDurationAtCell(
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.setDurationAtCellWhenIdle~~ :id=setdurationatcellwhenidle
 
@@ -1513,7 +1513,7 @@ Resolve a mod element string id to a type handle.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.elements.getTypeFromId~~ :id=gettypefromid
 

@@ -32,7 +32,7 @@ Add an item to inventory by item id.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.player.inventory.addFromId~~ :id=addfromid
 

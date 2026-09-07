@@ -84,7 +84,7 @@ Official pickup type discriminator.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.pickups.WorldItemType~~ :id=worlditemtype
 
@@ -181,7 +181,7 @@ Remove a pickup instance from the world.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.pickups.destroy~~ :id=destroy
 

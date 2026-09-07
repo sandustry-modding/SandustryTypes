@@ -130,7 +130,7 @@ Return grid cells along a line between two points.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.utils.getCoordinatesBetweenPoints~~ :id=getcoordinatesbetweenpoints
 

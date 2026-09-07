@@ -233,7 +233,7 @@ api.tech.registerDefinition("exampleTech", {
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.tech.addDefinition~~ :id=adddefinition
 

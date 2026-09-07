@@ -6,7 +6,7 @@ Use [grid](api/sandkit.api.grid.md) instead.
 
 ## Functions <!-- {docsify-ignore} -->
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.world.runWhenSimulationIdle~~ :id=runwhensimulationidle
 
@@ -41,7 +41,7 @@ runWhenSimulationIdle(callback: () => void): void
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.world.redrawAroundCellWhenIdle~~ :id=redrawaroundcellwhenidle
 

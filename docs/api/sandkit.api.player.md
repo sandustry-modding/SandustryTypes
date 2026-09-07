@@ -33,7 +33,7 @@ Set the player world position.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.player.setWorldPosition~~ :id=setworldposition
 
@@ -233,7 +233,7 @@ True when the player hitbox fits at the position.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.player.isWorldPositionClear~~ :id=isworldpositionclear
 

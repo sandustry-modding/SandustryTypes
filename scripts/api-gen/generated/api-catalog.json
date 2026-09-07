@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-06T23:02:10.005Z",
+  "generatedAt": "2026-09-07T00:17:37.615Z",
   "officialSource": "https://sandustry.com/sandkit.html",
   "stats": {
     "namespaceCount": 67,
     "officialMethodCount": 268,
-    "declaredMethodCount": 441,
-    "openGapCount": 45
+    "declaredMethodCount": 472,
+    "openGapCount": 28
   },
   "namespaces": {
     "action": {
@@ -1471,7 +1471,7 @@
       "worker": true,
       "methodCount": {
         "official": 11,
-        "declared": 21
+        "declared": 52
       },
       "officialMethods": [
         "ui.hotbar.getActiveBankIndex",
@@ -1487,108 +1487,60 @@
         "ui.useScale"
       ],
       "declaredMethods": [
+        "ui.ActionSlot",
+        "ui.Button",
         "ui.LocalizedText",
+        "ui.Panel",
         "ui.ToastOptions",
         "ui.alert",
+        "ui.components.ActionSlot",
+        "ui.components.Button",
+        "ui.components.Panel",
         "ui.confirm",
         "ui.controllerFocusClass",
+        "ui.createBankSource",
+        "ui.getActiveBankIndex",
+        "ui.getActiveSlotIndex",
+        "ui.getBankCount",
+        "ui.getControllerFocusClass",
+        "ui.getSlotKeyLabel",
+        "ui.hotbar.createBankSource",
+        "ui.hotbar.getActiveBankIndex",
+        "ui.hotbar.getActiveSlotIndex",
+        "ui.hotbar.getBankCount",
+        "ui.hotbar.getSlotKeyLabel",
+        "ui.hotbar.selectAction",
+        "ui.hotbar.useHotbar",
         "ui.inject",
+        "ui.mount",
         "ui.navigation.controllerFocusClass",
+        "ui.navigation.getControllerFocusClass",
         "ui.navigation.useFocusScope",
         "ui.navigation.useFocusable",
         "ui.openPauseMenu",
         "ui.overlays.register",
         "ui.overlays.unregister",
         "ui.overlays.update",
+        "ui.overrides.register",
         "ui.prompt",
+        "ui.regions.mount",
+        "ui.regions.setVisible",
         "ui.register",
+        "ui.select",
+        "ui.selectAction",
+        "ui.setVisible",
         "ui.showTooltip",
         "ui.toast",
         "ui.unregister",
         "ui.update",
         "ui.useFocusScope",
-        "ui.useFocusable"
+        "ui.useFocusable",
+        "ui.useGameEvent",
+        "ui.useHotbar",
+        "ui.useRefresh",
+        "ui.useScale"
       ],
-      "gaps": [
-        {
-          "path": "ui.useRefresh",
-          "source": "official"
-        },
-        {
-          "path": "ui.useScale",
-          "source": "official"
-        },
-        {
-          "path": "ui.hotbar.selectAction",
-          "source": "official"
-        },
-        {
-          "path": "ui.hotbar.getBankCount",
-          "source": "official"
-        },
-        {
-          "path": "ui.hotbar.getActiveBankIndex",
-          "source": "official"
-        },
-        {
-          "path": "ui.hotbar.getActiveSlotIndex",
-          "source": "official"
-        },
-        {
-          "path": "ui.hotbar.getSlotKeyLabel",
-          "source": "official"
-        },
-        {
-          "path": "ui.components.ActionSlot",
-          "note": "React hotbar action slot component",
-          "source": "expected"
-        },
-        {
-          "path": "ui.components.Button",
-          "note": "React button component",
-          "source": "expected"
-        },
-        {
-          "path": "ui.components.Panel",
-          "note": "React panel component",
-          "source": "expected"
-        },
-        {
-          "path": "ui.hotbar.createBankSource",
-          "note": "Create a hotbar bank source",
-          "source": "expected"
-        },
-        {
-          "path": "ui.hotbar.useHotbar",
-          "note": "React hook for hotbar state",
-          "source": "expected"
-        },
-        {
-          "path": "ui.select",
-          "note": "Modal choice picker",
-          "source": "expected"
-        },
-        {
-          "path": "ui.useGameEvent",
-          "note": "React hook subscribing to game events",
-          "source": "expected"
-        },
-        {
-          "path": "ui.overrides.register",
-          "note": "Wrap a built-in UI component",
-          "source": "expected"
-        },
-        {
-          "path": "ui.regions.mount",
-          "note": "Mount a React region in a UI slot",
-          "source": "expected"
-        },
-        {
-          "path": "ui.regions.setVisible",
-          "note": "Show or hide a mounted region",
-          "source": "expected"
-        }
-      ]
+      "gaps": []
     },
     "upgrades": {
       "description": "Register upgrade categories and trees; read chosen and unlocked levels.",

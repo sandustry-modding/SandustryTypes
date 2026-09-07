@@ -837,13 +837,15 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.effects.createEffectAtWorld",
     "body": "Deprecated Use createAtWorld instead. Argument Type Description --- --- --- effectId string worldX number worldY number options? EffectOptions effectId worldX worldY options?",
     "path": "/api/sandkit.api.effects",
-    "id": "createeffectatworld"
+    "id": "createeffectatworld",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.effects.createLightAtWorld",
     "body": "Deprecated Use lights.temporary.createAtWorld instead. Argument Type Description --- --- --- worldX number worldY number options? TemporaryLightOptions worldX worldY options? lightId: number & 124; null optional index?: number & 124; null",
     "path": "/api/sandkit.api.effects",
-    "id": "createlightatworld"
+    "id": "createlightatworld",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.effects.createDistortionWaveAtWorld()",
@@ -861,7 +863,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.effects.removeLightById",
     "body": "Deprecated Use lights.temporary.removeById instead. Argument Type Description --- --- --- lightId number lightId",
     "path": "/api/sandkit.api.effects",
-    "id": "removelightbyid"
+    "id": "removelightbyid",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.effects.createParticlesAtWorld()",
@@ -885,7 +888,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.effects.createEffectAtWorld",
     "body": "Deprecated Use createAtWorld instead. Argument Type Description --- --- --- effectId string worldX number worldY number options? EffectOptions effectId worldX worldY options?",
     "path": "/api/sandkit.api.effects.worker",
-    "id": "createeffectatworld"
+    "id": "createeffectatworld",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.MatterType",
@@ -1083,7 +1087,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.createAtCellWhenIdle",
     "body": "Deprecated Use createAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] args",
     "path": "/api/sandkit.api.elements",
-    "id": "createatcellwhenidle"
+    "id": "createatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.replaceAtCell()",
@@ -1095,7 +1100,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.replaceAtCellWhenIdle",
     "body": "Deprecated Use replaceAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [ElementRef, ElementCreateOptions\\] args",
     "path": "/api/sandkit.api.elements",
-    "id": "replaceatcellwhenidle"
+    "id": "replaceatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.removeAtCell()",
@@ -1107,7 +1113,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.removeAtCellWhenIdle",
     "body": "Deprecated Use removeAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [ElementRemovalOptions\\] args",
     "path": "/api/sandkit.api.elements",
-    "id": "removeatcellwhenidle"
+    "id": "removeatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.teleportBetweenCells()",
@@ -1119,7 +1126,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.teleportBetweenCellsWhenIdle",
     "body": "Deprecated Use teleportBetweenCells instead. Argument Type Description --- --- --- fromCellX number fromCellY number toCellX number toCellY number fromCellX fromCellY toCellX toCellY",
     "path": "/api/sandkit.api.elements",
-    "id": "teleportbetweencellswhenidle"
+    "id": "teleportbetweencellswhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.setVelocityAtCell()",
@@ -1131,7 +1139,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.setVelocityAtCellWhenIdle",
     "body": "Deprecated Use setVelocityAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] args",
     "path": "/api/sandkit.api.elements",
-    "id": "setvelocityatcellwhenidle"
+    "id": "setvelocityatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.addParticleVelocityAtCell()",
@@ -1143,7 +1152,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.addParticleVelocityAtCellWhenIdle",
     "body": "Deprecated Use addParticleVelocityAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [Vector2, number\\] args",
     "path": "/api/sandkit.api.elements",
-    "id": "addparticlevelocityatcellwhenidle"
+    "id": "addparticlevelocityatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.convertToParticleAtCell()",
@@ -1155,7 +1165,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.convertToParticleAtCellWhenIdle",
     "body": "Deprecated Use convertToParticleAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [Vector2\\] args",
     "path": "/api/sandkit.api.elements",
-    "id": "converttoparticleatcellwhenidle"
+    "id": "converttoparticleatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.convertFromParticleAtCell()",
@@ -1167,7 +1178,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.convertFromParticleAtCellWhenIdle",
     "body": "Deprecated Use convertFromParticleAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates args",
     "path": "/api/sandkit.api.elements",
-    "id": "convertfromparticleatcellwhenidle"
+    "id": "convertfromparticleatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.setDataFieldAtCell()",
@@ -1179,7 +1191,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.setDataFieldAtCellWhenIdle",
     "body": "Deprecated Use setDataFieldAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, 1 & 124; 2 & 124; 3 & 124; 4, number\\] args",
     "path": "/api/sandkit.api.elements",
-    "id": "setdatafieldatcellwhenidle"
+    "id": "setdatafieldatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.refreshColorAtCell()",
@@ -1191,7 +1204,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.refreshColorAtCellWhenIdle",
     "body": "Deprecated Use refreshColorAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates args",
     "path": "/api/sandkit.api.elements",
-    "id": "refreshcoloratcellwhenidle"
+    "id": "refreshcoloratcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.setPhysicsAtCell()",
@@ -1203,7 +1217,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.setPhysicsAtCellWhenIdle",
     "body": "Deprecated Use setPhysicsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] args",
     "path": "/api/sandkit.api.elements",
-    "id": "setphysicsatcellwhenidle"
+    "id": "setphysicsatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.setDurationAtCell()",
@@ -1215,7 +1230,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.setDurationAtCellWhenIdle",
     "body": "Deprecated Use setDurationAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number, object\\] args",
     "path": "/api/sandkit.api.elements",
-    "id": "setdurationatcellwhenidle"
+    "id": "setdurationatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.getIdByType()",
@@ -1233,7 +1249,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.getTypeFromId",
     "body": "Deprecated Use getTypeById instead. Argument Type Description --- --- --- elementId string & object elementId ElementType",
     "path": "/api/sandkit.api.elements",
-    "id": "gettypefromid"
+    "id": "gettypefromid",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.getDefinitionByType()",
@@ -1341,7 +1358,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.swapCells",
     "body": "Deprecated Use swapBetweenCells instead. Argument Type Description --- --- --- firstCellX number firstCellY number secondCellX number secondCellY number firstCellX firstCellY secondCellX secondCellY",
     "path": "/api/sandkit.api.elements.worker",
-    "id": "swapcells"
+    "id": "swapcells",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.markMovementBlockedByIndex()",
@@ -1353,7 +1371,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.elements.markMovementBlockedByElementIndex",
     "body": "Deprecated Use markMovementBlockedByIndex instead. Argument Type Description --- --- --- elementIndex number elementIndex",
     "path": "/api/sandkit.api.elements.worker",
-    "id": "markmovementblockedbyelementindex"
+    "id": "markmovementblockedbyelementindex",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.elements.setVelocityAtCell()",
@@ -1527,7 +1546,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "item:used",
     "body": "item:used frame:render scene:game:started scene:started:game Deprecated Deprecated alias. earlyAccess:completed earlyAccess:complete Deprecated Deprecated alias. terrain:destroyed fog:cellRevealed upgrade:levelSelected building:placed building:removing Fires before building:removed. building:removed structures:placed structures:removed structures:moved game:ready game:started tutorial:stepChanged tutorial:completed tech:unlocked worldItem:pickedUp resource:collected player:collision:prepare player:moved Known event payloads. Unlisted ids still use unknown.",
     "path": "/api/sandkit.api.events",
-    "id": "eventpayloadmap"
+    "id": "eventpayloadmap",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.events.EventId",
@@ -1575,7 +1595,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "element:moved",
     "body": "element:moved terrain:updated terrain:update Deprecated Deprecated alias. worker:update:post update:post Deprecated Deprecated alias. Known worker event payloads. Unlisted ids still use unknown.",
     "path": "/api/sandkit.api.events.worker",
-    "id": "eventpayloadmap"
+    "id": "eventpayloadmap",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.events.EventOnOptions",
@@ -1689,7 +1710,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.fire.burnElementAtCellWhenIdle",
     "body": "Deprecated Use burnElementAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates args",
     "path": "/api/sandkit.api.fire",
-    "id": "burnelementatcellwhenidle"
+    "id": "burnelementatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.fire (worker)",
@@ -1821,7 +1843,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.grid.forEachCellInRect",
     "body": "Deprecated Use forEachCellInRectangle instead. Argument Type Description --- --- --- args ...\\number, number, number, number, (...args: [CellCoordinates) =&gt; void\\] args",
     "path": "/api/sandkit.api.grid",
-    "id": "foreachcellinrect"
+    "id": "foreachcellinrect",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.grid.getCellIdAtCell()",
@@ -1887,13 +1910,15 @@ window.SMT_SEARCH_INDEX = [
     "title": "item:use",
     "body": "item:use teleport:effect:create teleport:effect Deprecated Deprecated alias. action:start action:intercept Deprecated Deprecated alias. input:keyDown input:keydown Deprecated Deprecated alias. input:keyUp input:keyup Deprecated Deprecated alias. placePoints:suppress placePoints:isSuppressed Deprecated Deprecated alias. placePoints:directionalArrows:suppress placePoints:directionalArrows:isSuppressed Deprecated Deprecated alias. entity:update building:place building:clearShape input:scroll input:boostDown input:boost-down Deprecated Deprecated alias. input:descendDown input:descend-down Deprecated Deprecated alias. input:escape interactable:suppressHover fire:element:ignite projectile:fire:overStructure projectile:hit player:position:commit progression:purchase Intercept hook argument shapes keyed by hook id.",
     "path": "/api/sandkit.api.hooks",
-    "id": "intercepthookmap"
+    "id": "intercepthookmap",
+    "deprecated": true
   },
   {
     "title": "excavation:prepare",
     "body": "excavation:prepare locator:scan:prepare vacuum:prepare vacuum:element:prepare player:movement:prepare player:movement Deprecated Deprecated alias. building:placementLimit:prepare building:placementLimit Deprecated Deprecated alias. building:placement-limit Deprecated Deprecated alias. fluxEmanator:processing:prepare fluxEmanator:processing Deprecated Deprecated alias. flux-emanator:processing Deprecated Deprecated alias. render:pipes:prepare render:pipes Deprecated Deprecated alias. structures:moved:prepare structures:removed:prepare weapon:reload:prepare projectile:travel:prepare projectile:impact:prepare player:collision:prepare trigger:schedule:prepare progression:cost:prepare resource:collection:prepare resource:delivery:prepare resource:balance:prepare gold:removal:prepare gold:removal:settle Modify hook argument shapes keyed by hook id.",
     "path": "/api/sandkit.api.hooks",
-    "id": "modifierhookmap"
+    "id": "modifierhookmap",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.hooks.InterceptHookOptions",
@@ -1971,7 +1996,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "cell:process",
     "body": "cell:process element:update element:move element:move:blocked element:blocked Deprecated Deprecated alias. element:duration:expire element:duration Deprecated Deprecated alias. fire:element:burn fire:terrain:burn shaker:elementOn Intercept hook argument shapes keyed by hook id.",
     "path": "/api/sandkit.api.hooks.worker",
-    "id": "intercepthookmap"
+    "id": "intercepthookmap",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.hooks.InterceptHookOptions",
@@ -2109,7 +2135,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.i18n.key",
     "body": "Deprecated Use joinKey instead. Argument Type Description --- --- --- parts ...string[] parts",
     "path": "/api/sandkit.api.i18n",
-    "id": "key"
+    "id": "key",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.i18n.getName()",
@@ -2133,7 +2160,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.i18n.translatable",
     "body": "Deprecated Use createTranslatable instead. Argument Type Description --- --- --- key string fallback string key fallback \\ \\ translatable: true key: string fallback: string",
     "path": "/api/sandkit.api.i18n",
-    "id": "translatable"
+    "id": "translatable",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.i18n.setGlobal()",
@@ -2157,7 +2185,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.i18n.clearGlobal",
     "body": "Deprecated Use removeGlobal instead. Argument Type Description --- --- --- key string key",
     "path": "/api/sandkit.api.i18n",
-    "id": "clearglobal"
+    "id": "clearglobal",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.i18n.getGlobals()",
@@ -2577,7 +2606,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.pickups.WorldItemType",
     "body": "Deprecated Use PickupType instead.",
     "path": "/api/sandkit.api.pickups",
-    "id": "worlditemtype"
+    "id": "worlditemtype",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.pickups.spawnAtWorld()",
@@ -2595,7 +2625,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.pickups.destroy",
     "body": "Deprecated Use remove instead. Argument Type Description --- --- --- pickup WorldItem pickup",
     "path": "/api/sandkit.api.pickups",
-    "id": "destroy"
+    "id": "destroy",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.pickups.pickUp()",
@@ -2667,7 +2698,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.player.buildings.unlockByType",
     "body": "Deprecated Use unlockById instead. Argument Type Description --- --- --- structureId string structureId",
     "path": "/api/sandkit.api.player.buildings",
-    "id": "unlockbytype"
+    "id": "unlockbytype",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.player.buildings.removeById()",
@@ -2691,7 +2723,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.player.inventory.addFromId",
     "body": "Deprecated Use addById instead. Argument Type Description --- --- --- itemId string itemId",
     "path": "/api/sandkit.api.player.inventory",
-    "id": "addfromid"
+    "id": "addfromid",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.player",
@@ -2709,7 +2742,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.player.setWorldPosition",
     "body": "Deprecated Use setPositionAtWorld instead. Argument Type Description --- --- --- worldX number World x position in pixels. worldY number World y position in pixels. worldX worldY",
     "path": "/api/sandkit.api.player",
-    "id": "setworldposition"
+    "id": "setworldposition",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.player.setVelocity()",
@@ -2751,7 +2785,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.player.isWorldPositionClear",
     "body": "Deprecated Use isPositionClearAtWorld instead. Argument Type Description --- --- --- worldX number worldY number worldX worldY",
     "path": "/api/sandkit.api.player",
-    "id": "isworldpositionclear"
+    "id": "isworldpositionclear",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.player (worker)",
@@ -2769,7 +2804,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.player.getWorldPosition",
     "body": "Deprecated Use getPositionAtWorld instead. Vector2",
     "path": "/api/sandkit.api.player.worker",
-    "id": "getworldposition"
+    "id": "getworldposition",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.player.isCollidingWithCell()",
@@ -3093,7 +3129,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.shared.buffers.create",
     "body": "Deprecated Use ensure instead. Argument Type Description --- --- --- key string config { type: SharedArrayType; length: number } key config SharedArray",
     "path": "/api/sandkit.api.shared.buffers",
-    "id": "create"
+    "id": "create",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.shared.buffers.get()",
@@ -3237,7 +3274,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.sound.stopById",
     "body": "Deprecated Use stopBySoundId instead. Argument Type Description --- --- --- soundId string soundId",
     "path": "/api/sandkit.api.sound",
-    "id": "stopbyid"
+    "id": "stopbyid",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.sound.stopActive()",
@@ -3453,7 +3491,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.StructureProcessorDefinitionV1",
     "body": "Deprecated Use StructureProcessingDefinitionV1 with processing.register instead. Property Type Description --- --- --- intervalMs number Tick interval in milliseconds. Must be 0. process (structure: Structure, context: StructureProcessingContext) =&gt; void Synchronous callback invoked for each structure instance. intervalMs process",
     "path": "/api/sandkit.api.structures",
-    "id": "structureprocessordefinitionv1"
+    "id": "structureprocessordefinitionv1",
+    "deprecated": true
   },
   {
     "title": "&quot;integer&quot;",
@@ -3531,7 +3570,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.addVariant",
     "body": "Deprecated Use registerVariant instead. Argument Type Description --- --- --- baseStructureTypeOrId StructureRef variant { id: StructureRef; angles: number[] } options? { addBuildMode: unknown } baseStructureTypeOrId variant options?",
     "path": "/api/sandkit.api.structures",
-    "id": "addvariant"
+    "id": "addvariant",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.registerPlacementConfig()",
@@ -3549,7 +3589,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.getUnlockedTypes",
     "body": "Deprecated Use getAvailableTypes instead. Set&lt;StructureRef&gt;",
     "path": "/api/sandkit.api.structures",
-    "id": "getunlockedtypes"
+    "id": "getunlockedtypes",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.isBlockedByPlayerAtCell()",
@@ -3573,7 +3614,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.isUnlockedByType",
     "body": "Deprecated Use isLockedByType instead. Same function as isLockedByType; return value is not inverted. Argument Type Description --- --- --- structureType StructureRef structureType",
     "path": "/api/sandkit.api.structures",
-    "id": "isunlockedbytype"
+    "id": "isunlockedbytype",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.mapValueToSpritesheetIndex()",
@@ -3591,7 +3633,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.buildAtCellWhenIdle",
     "body": "Deprecated Use buildAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [StructureRef, StructureBuildOptions\\] args",
     "path": "/api/sandkit.api.structures",
-    "id": "buildatcellwhenidle"
+    "id": "buildatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.removeAtCell()",
@@ -3603,7 +3646,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.removeAtCellWhenIdle",
     "body": "Deprecated Use removeAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [StructureRemovalOptions\\] args",
     "path": "/api/sandkit.api.structures",
-    "id": "removeatcellwhenidle"
+    "id": "removeatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.removeBetweenCells()",
@@ -3615,7 +3659,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.removeBetweenCellsWhenIdle",
     "body": "Deprecated Use removeBetweenCells instead. Argument Type Description --- --- --- startCellX number startCellY number endCellX number endCellY number options? StructureBulkRemovalOptions startCellX startCellY endCellX endCellY options?",
     "path": "/api/sandkit.api.structures",
-    "id": "removebetweencellswhenidle"
+    "id": "removebetweencellswhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.removeAtCells()",
@@ -3627,13 +3672,15 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.removeAtCellsWhenIdle",
     "body": "Deprecated Use removeAtCells instead. Argument Type Description --- --- --- positions Vector2[] options? StructureBulkRemovalOptions positions options?",
     "path": "/api/sandkit.api.structures",
-    "id": "removeatcellswhenidle"
+    "id": "removeatcellswhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.addProcessor",
     "body": "Deprecated Use processing.register instead. Argument Type Description --- --- --- structureId StructureRef definition StructureProcessorDefinitionV1 structureId definition",
     "path": "/api/sandkit.api.structures",
-    "id": "addprocessor"
+    "id": "addprocessor",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.processing",
@@ -3657,7 +3704,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.processing.setEnabledAt",
     "body": "Deprecated Use setEnabledAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, boolean\\] args",
     "path": "/api/sandkit.api.structures.processing",
-    "id": "setenabledat"
+    "id": "setenabledat",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.processing (worker)",
@@ -3675,7 +3723,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.processing.isEnabledAt",
     "body": "Deprecated Use isEnabledAtCell instead. Argument Type Description --- --- --- args ...CellCoordinates args",
     "path": "/api/sandkit.api.structures.processing.worker",
-    "id": "isenabledat"
+    "id": "isenabledat",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.recipes",
@@ -3753,7 +3802,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.getTypeFromId",
     "body": "Deprecated Use getTypeById instead. Argument Type Description --- --- --- structureId string & object structureId StructureType",
     "path": "/api/sandkit.api.structures.worker",
-    "id": "gettypefromid"
+    "id": "gettypefromid",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.structures.hasBuiltAtCell()",
@@ -3813,7 +3863,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.structures.setData",
     "body": "Deprecated Use updateData instead. Argument Type Description --- --- --- structure Structure partial any options? { propagateToWorkers: boolean } structure partial options?",
     "path": "/api/sandkit.api.structures.worker",
-    "id": "setdata"
+    "id": "setdata",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.tech.conservatory",
@@ -3879,7 +3930,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.tech.addDefinition",
     "body": "Deprecated Use registerDefinition instead. Argument Type Description --- --- --- techId TechGridId definition TechDefinition techId definition",
     "path": "/api/sandkit.api.tech",
-    "id": "adddefinition"
+    "id": "adddefinition",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.tech.registerNode()",
@@ -3939,7 +3991,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.terrains.createAtCellWhenIdle",
     "body": "Deprecated Use createAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args",
     "path": "/api/sandkit.api.terrains",
-    "id": "createatcellwhenidle"
+    "id": "createatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.terrains.replaceAtCell()",
@@ -3951,7 +4004,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.terrains.replaceAtCellWhenIdle",
     "body": "Deprecated Use replaceAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [TerrainRef, TerrainMutationOptions\\] args",
     "path": "/api/sandkit.api.terrains",
-    "id": "replaceatcellwhenidle"
+    "id": "replaceatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.terrains.removeAtCell()",
@@ -3963,7 +4017,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.terrains.removeAtCellWhenIdle",
     "body": "Deprecated Use removeAtCell instead. Argument Type Description --- --- --- args ...\\number, number, [TerrainMutationOptions\\] args",
     "path": "/api/sandkit.api.terrains",
-    "id": "removeatcellwhenidle"
+    "id": "removeatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.terrains.setHitPointsAtCell()",
@@ -3975,13 +4030,15 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.terrains.setHpAtCell",
     "body": "Deprecated Use setHitPointsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] args",
     "path": "/api/sandkit.api.terrains",
-    "id": "sethpatcell"
+    "id": "sethpatcell",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.terrains.setHpAtCellWhenIdle",
     "body": "Deprecated Use setHitPointsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] args",
     "path": "/api/sandkit.api.terrains",
-    "id": "sethpatcellwhenidle"
+    "id": "sethpatcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.terrains (worker)",
@@ -4041,7 +4098,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.terrains.getTypeFromId",
     "body": "Deprecated Use getTypeById instead. Argument Type Description --- --- --- terrainId string & object terrainId TerrainType",
     "path": "/api/sandkit.api.terrains.worker",
-    "id": "gettypefromid"
+    "id": "gettypefromid",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.terrains.getDefinitionByType()",
@@ -4119,7 +4177,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.terrains.setHpAtCell",
     "body": "Deprecated Use setHitPointsAtCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] args",
     "path": "/api/sandkit.api.terrains.worker",
-    "id": "sethpatcell"
+    "id": "sethpatcell",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.time",
@@ -4491,31 +4550,36 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.ui.navigation.controllerFocusClass",
     "body": "Deprecated Use getControllerFocusClass instead. Argument Type Description --- --- --- focused boolean True when the element has controller focus. focused Return CSS class for controller focus ring state. Class name string for the focus ring.",
     "path": "/api/sandkit.api.ui.navigation",
-    "id": "controllerfocusclass"
+    "id": "controllerfocusclass",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.ui.overlays",
     "body": "Overlay slot registration and updates. Use regions instead.",
     "path": "/api/sandkit.api.ui.overlays",
-    "id": ""
+    "id": "",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.ui.overlays.register",
     "body": "Deprecated Use regions.mount instead. Argument Type Description --- --- --- slot OverlaySlot Slot name (for example \"hotbar\"). overlayId string Unique id for this overlay within the slot. render () =&gt; ReactNode Function that returns React content. slot overlayId render Register a render function in an overlay slot.",
     "path": "/api/sandkit.api.ui.overlays",
-    "id": "register"
+    "id": "register",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.ui.overlays.unregister",
     "body": "Deprecated Use RegionMountHandle instead. Argument Type Description --- --- --- slot OverlaySlot Slot name the overlay was registered in. overlayId string Overlay id passed to register. slot overlayId Remove an overlay from a slot.",
     "path": "/api/sandkit.api.ui.overlays",
-    "id": "unregister"
+    "id": "unregister",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.ui.overlays.update",
     "body": "Deprecated Use RegionMountHandle instead. Argument Type Description --- --- --- slot OverlaySlot Slot name to refresh. slot Request a re-render for all overlays in a slot.",
     "path": "/api/sandkit.api.ui.overlays",
-    "id": "update"
+    "id": "update",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.ui.overrides",
@@ -4671,7 +4735,8 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.utils.getCoordinatesBetweenPoints",
     "body": "Deprecated Use getCoordinatesBetweenCells instead. Argument Type Description --- --- --- pointA Vector2 pointB Vector2 pointA pointB Vector2[]",
     "path": "/api/sandkit.api.utils",
-    "id": "getcoordinatesbetweenpoints"
+    "id": "getcoordinatesbetweenpoints",
+    "deprecated": true
   },
   {
     "title": "sandkit.api (worker)",
@@ -4719,31 +4784,36 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.api.world",
     "body": "Use grid instead.",
     "path": "/api/sandkit.api.world",
-    "id": ""
+    "id": "",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.world.runWhenSimulationIdle",
     "body": "Deprecated Use grid.mutate instead. Argument Type Description --- --- --- callback () =&gt; void callback",
     "path": "/api/sandkit.api.world",
-    "id": "runwhensimulationidle"
+    "id": "runwhensimulationidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.world.redrawAroundCellWhenIdle",
     "body": "Deprecated Use grid.redrawAroundCell instead. Argument Type Description --- --- --- args ...\\[number, number, number\\] args",
     "path": "/api/sandkit.api.world",
-    "id": "redrawaroundcellwhenidle"
+    "id": "redrawaroundcellwhenidle",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.world.pickups",
     "body": "Use pickups instead.",
     "path": "/api/sandkit.api.world.pickups",
-    "id": ""
+    "id": "",
+    "deprecated": true
   },
   {
     "title": "sandkit.api.world (worker)",
     "body": "Use grid instead.",
     "path": "/api/sandkit.api.world.worker",
-    "id": ""
+    "id": "",
+    "deprecated": true
   },
   {
     "title": "sandkit.engine.api.augments",
@@ -8151,31 +8221,36 @@ window.SMT_SEARCH_INDEX = [
     "title": "sandkit.enums.WorldItemType",
     "body": "Defined in: sandkit/enums/index.d.ts:423 Use PickupType instead.",
     "path": "/api/sandkit.enums.WorldItemType",
-    "id": ""
+    "id": "",
+    "deprecated": true
   },
   {
     "title": "sandkit.enums.WorldItemType.Artifact",
     "body": "",
     "path": "/api/sandkit.enums.WorldItemType",
-    "id": "artifact"
+    "id": "artifact",
+    "deprecated": true
   },
   {
     "title": "sandkit.enums.WorldItemType.GlyphKey",
     "body": "",
     "path": "/api/sandkit.enums.WorldItemType",
-    "id": "glyphkey"
+    "id": "glyphkey",
+    "deprecated": true
   },
   {
     "title": "sandkit.enums.WorldItemType.Stratacore",
     "body": "",
     "path": "/api/sandkit.enums.WorldItemType",
-    "id": "stratacore"
+    "id": "stratacore",
+    "deprecated": true
   },
   {
     "title": "sandkit.enums.WorldItemType.Orb",
     "body": "",
     "path": "/api/sandkit.enums.WorldItemType",
-    "id": "orb"
+    "id": "orb",
+    "deprecated": true
   },
   {
     "title": "sandkit.enums",
@@ -8347,13 +8422,7 @@ window.SMT_SEARCH_INDEX = [
   },
   {
     "title": "API catalog gaps",
-    "body": "Generated by npm run generate. Edit descriptions and expected members in scripts/api-gen/overrides.json. - Official source: https://sandustry.com/sandkit.html - Generated: 2026-09-06T23:02:10.005Z - Namespaces: 67 - Official methods (HTML): 268 - Declared methods (types): 441 - Open gaps: 45",
-    "path": "/generated/api-gaps",
-    "id": ""
-  },
-  {
-    "title": "API catalog gaps.ui",
-    "body": "- ui.useRefresh - ui.useScale - ui.hotbar.selectAction - ui.hotbar.getBankCount - ui.hotbar.getActiveBankIndex - ui.hotbar.getActiveSlotIndex - ui.hotbar.getSlotKeyLabel - ui.components.ActionSlot — React hotbar action slot component - ui.components.Button — React button component - ui.components.Panel — React panel component - ui.hotbar.createBankSource — Create a hotbar bank source - ui.hotbar.useHotbar — React hook for hotbar state - ui.select — Modal choice picker - ui.useGameEvent — React hook subscribing to game events - ui.overrides.register — Wrap a built-in UI component - ui.regions.mount — Mount a React region in a UI slot - ui.regions.setVisible — Show or hide a mounted region",
+    "body": "Generated by npm run generate. Edit descriptions and expected members in scripts/api-gen/overrides.json. - Official source: https://sandustry.com/sandkit.html - Generated: 2026-09-07T00:17:37.615Z - Namespaces: 67 - Official methods (HTML): 268 - Declared methods (types): 472 - Open gaps: 28",
     "path": "/generated/api-gaps",
     "id": ""
   },

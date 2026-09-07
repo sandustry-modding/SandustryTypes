@@ -259,7 +259,7 @@ Map a structure string id to its runtime type value.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.getTypeFromId~~ :id=gettypefromid
 
@@ -589,7 +589,7 @@ api.structures.updateData(
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.setData~~ :id=setdata
 

@@ -47,7 +47,7 @@ Spawn a named screen-space or world effect.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.effects.createEffectAtWorld~~ :id=createeffectatworld
 

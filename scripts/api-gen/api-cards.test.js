@@ -304,6 +304,7 @@ Use [setPositionAtWorld](?id=setpositionatworld) instead.
   assert.doesNotMatch(out, /^#### See$/m);
   assert.doesNotMatch(out, /Official docs/);
   assert.match(out, /smt-member-deprecated/);
+  assert.match(out, /smt-member-card" data-deprecated="true"/);
   assert.match(out, /smt-member-deprecated-note" markdown="1"/);
   const depAt = out.indexOf("smt-member-deprecated");
   const sigAt = out.indexOf("setWorldPosition(): void");

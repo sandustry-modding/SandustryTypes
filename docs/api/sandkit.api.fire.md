@@ -61,7 +61,7 @@ Burn the element at the cell. Main-entry writes are deferred; reads see the old 
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.fire.burnElementAtCellWhenIdle~~ :id=burnelementatcellwhenidle
 

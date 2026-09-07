@@ -46,7 +46,7 @@ const counts = api.shared.buffers.ensure("counts", {
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.shared.buffers.create~~ :id=create
 

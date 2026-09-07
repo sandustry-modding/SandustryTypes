@@ -317,18 +317,25 @@ export function buildSearchIndex(files) {
     const route = file.path;
     const lines = String(file.content || "").split(/\r?\n/);
     let pageTitle = route === "/" ? "Home" : route.replace(/^\//, "");
-    /** @type {{ title: string, id: string, bodyLines: string[] } | null} */
+    /** @type {{ title: string, id: string, bodyLines: string[], deprecated: boolean } | null} */
     let current = null;
 
     const flush = () => {
       if (!current) return;
-      const body = markdownToSearchText(current.bodyLines.join("\n"));
-      out.push({
+      const joined = current.bodyLines.join("\n");
+      const body = markdownToSearchText(joined);
+      const deprecated =
+        current.deprecated ||
+        (Boolean(current.id) && /class="smt-member-deprecated"/.test(joined));
+      /** @type {{ title: string, body: string, path: string, id: string, deprecated?: boolean }} */
+      const entry = {
         title: current.title,
         body,
         path: route,
         id: current.id,
-      });
+      };
+      if (deprecated) entry.deprecated = true;
+      out.push(entry);
       current = null;
     };
 
@@ -338,7 +345,7 @@ export function buildSearchIndex(files) {
       if (h1) {
         flush();
         pageTitle = h1[1].replace(/\s+<!--.*?-->\s*$/, "").trim();
-        current = { title: pageTitle, id: "", bodyLines: [] };
+        current = { title: pageTitle, id: "", bodyLines: [], deprecated: false };
         continue;
       }
 
@@ -398,11 +405,17 @@ export function buildSearchIndex(files) {
           title = local.endsWith("()") ? `${pageTitle}.${bare}()` : `${pageTitle}.${local}`;
         }
 
-        current = { title, id, bodyLines: [] };
+        current = {
+          title,
+          id,
+          bodyLines: [],
+          deprecated: /~~/.test(raw),
+        };
         continue;
       }
 
       if (/^##\s+/.test(line)) {
+        if (current && /^## Deprecated(?:\s|$)/.test(line)) current.deprecated = true;
         // Section banners are ignored headings; keep body under the page/member.
         continue;
       }

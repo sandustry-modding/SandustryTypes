@@ -6,33 +6,13 @@ Edit descriptions and expected members in `scripts/api-gen/overrides.json`.
 ## Summary
 
 - Official source: https://sandustry.com/sandkit.html
-- Generated: 2026-09-06T23:02:10.005Z
+- Generated: 2026-09-07T00:17:37.615Z
 - Namespaces: 67
 - Official methods (HTML): 268
-- Declared methods (types): 441
-- Open gaps: 45
+- Declared methods (types): 472
+- Open gaps: 28
 
 ## Gaps by namespace
-
-### ui
-
-- `ui.useRefresh`
-- `ui.useScale`
-- `ui.hotbar.selectAction`
-- `ui.hotbar.getBankCount`
-- `ui.hotbar.getActiveBankIndex`
-- `ui.hotbar.getActiveSlotIndex`
-- `ui.hotbar.getSlotKeyLabel`
-- `ui.components.ActionSlot` — React hotbar action slot component
-- `ui.components.Button` — React button component
-- `ui.components.Panel` — React panel component
-- `ui.hotbar.createBankSource` — Create a hotbar bank source
-- `ui.hotbar.useHotbar` — React hook for hotbar state
-- `ui.select` — Modal choice picker
-- `ui.useGameEvent` — React hook subscribing to game events
-- `ui.overrides.register` — Wrap a built-in UI component
-- `ui.regions.mount` — Mount a React region in a UI slot
-- `ui.regions.setVisible` — Show or hide a mounted region
 
 ### source
 

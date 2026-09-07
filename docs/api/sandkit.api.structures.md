@@ -414,7 +414,7 @@ Context passed to structure processing callbacks.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.StructureProcessorDefinitionV1~~ :id=structureprocessordefinitionv1
 
@@ -814,7 +814,7 @@ api.structures.registerVariant(
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.addVariant~~ :id=addvariant
 
@@ -931,7 +931,7 @@ Return structure types available for building.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.getUnlockedTypes~~ :id=getunlockedtypes
 
@@ -1045,7 +1045,7 @@ function (same implementation and return value; names differ only).
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.isUnlockedByType~~ :id=isunlockedbytype
 
@@ -1150,7 +1150,7 @@ Build a structure at a cell. Main-thread writes are deferred.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.buildAtCellWhenIdle~~ :id=buildatcellwhenidle
 
@@ -1213,7 +1213,7 @@ Remove a structure at a cell. Main-thread writes are deferred.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.removeAtCellWhenIdle~~ :id=removeatcellwhenidle
 
@@ -1288,7 +1288,7 @@ Remove structures between two cells. Main-thread writes are deferred.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.removeBetweenCellsWhenIdle~~ :id=removebetweencellswhenidle
 
@@ -1375,7 +1375,7 @@ api.structures.removeAtCells([
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.removeAtCellsWhenIdle~~ :id=removeatcellswhenidle
 
@@ -1413,7 +1413,7 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.addProcessor~~ :id=addprocessor
 

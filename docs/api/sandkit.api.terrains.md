@@ -127,7 +127,7 @@ Create terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.terrains.createAtCellWhenIdle~~ :id=createatcellwhenidle
 
@@ -190,7 +190,7 @@ Replace terrain at a cell. Main-entry writes are deferred; reads see the old gri
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.terrains.replaceAtCellWhenIdle~~ :id=replaceatcellwhenidle
 
@@ -253,7 +253,7 @@ Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.terrains.removeAtCellWhenIdle~~ :id=removeatcellwhenidle
 
@@ -316,7 +316,7 @@ Set terrain hit points at a cell. Main-entry writes are deferred; reads see the 
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.terrains.setHpAtCell~~ :id=sethpatcell
 
@@ -351,7 +351,7 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.terrains.setHpAtCellWhenIdle~~ :id=sethpatcellwhenidle
 

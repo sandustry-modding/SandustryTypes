@@ -8,7 +8,7 @@ Use [regions](api/sandkit.api.ui.regions.md) instead.
 
 ## Functions <!-- {docsify-ignore} -->
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.ui.overlays.register~~ :id=register
 
@@ -51,7 +51,7 @@ Register a render function in an overlay slot.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.ui.overlays.unregister~~ :id=unregister
 
@@ -91,7 +91,7 @@ Remove an overlay from a slot.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.ui.overlays.update~~ :id=update
 

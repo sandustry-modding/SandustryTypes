@@ -32,7 +32,7 @@ Unlock a structure type for building.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.player.buildings.unlockByType~~ :id=unlockbytype
 

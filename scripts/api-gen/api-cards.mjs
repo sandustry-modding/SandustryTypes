@@ -750,8 +750,12 @@ export function restyleApiCards(content, qualified, options = {}) {
     const deprecatedSection = rest.find((s) => s.title === "Deprecated");
     const deprecatedNote = deprecatedSection ? parseDeprecatedNote(deprecatedSection.body) : "";
     const restSections = rest.filter((s) => s.title !== "Deprecated");
+    const deprecated = Boolean(deprecatedNote) || parsedH3.strike;
 
-    out.push(`<div class="smt-member-card">`, "");
+    out.push(
+      deprecated ? `<div class="smt-member-card" data-deprecated="true">` : `<div class="smt-member-card">`,
+      "",
+    );
     out.push(`### ${title} :id=${parsedH3.id}`);
     if (badge) out.push("", badge);
     if (deprecatedNote) out.push("", renderDeprecatedHtml(deprecatedNote, pageRel));

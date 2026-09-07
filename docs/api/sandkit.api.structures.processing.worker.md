@@ -32,7 +32,7 @@ Return true when processing is enabled at the cell.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.structures.processing.isEnabledAt~~ :id=isenabledat
 

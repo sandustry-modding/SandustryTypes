@@ -28,7 +28,7 @@ Return the player center position in world pixels.
 
 </div>
 
-<div class="smt-member-card">
+<div class="smt-member-card" data-deprecated="true">
 
 ### ~~sandkit.api.player.getWorldPosition~~ :id=getworldposition
 

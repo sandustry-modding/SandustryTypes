@@ -70,3 +70,27 @@ test("searchIndex ranks an exact method path first", () => {
   const guides = search.searchIndex(index, "camera", "guide", 10);
   assert.equal(guides.total, 1);
 });
+
+test("searchIndex can hide deprecated entries", () => {
+  const index = [
+    {
+      title: "sandkit.api.ui.overlays.register()",
+      body: "Deprecated overlay register",
+      path: "/api/sandkit.api.ui.overlays",
+      id: "register",
+      deprecated: true,
+    },
+    {
+      title: "sandkit.api.ui.regions.mount()",
+      body: "Mount a region",
+      path: "/api/sandkit.api.ui.regions",
+      id: "mount",
+    },
+  ];
+  const shown = search.searchIndex(index, "mount", "all", 10, false);
+  assert.equal(shown.total, 1);
+  const hidden = search.searchIndex(index, "register", "all", 10, true);
+  assert.equal(hidden.total, 0);
+  const visible = search.searchIndex(index, "mount", "all", 10, true);
+  assert.equal(visible.hits[0]?.entry.title, "sandkit.api.ui.regions.mount()");
+});
