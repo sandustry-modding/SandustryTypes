@@ -76,6 +76,9 @@ Edit `.d.ts` files under `src/`. Regenerate the Docsify API reference and JSON S
 It writes `scripts/api-gen/generated/api-catalog.json`, refreshes `scripts/api-gen/generated/namespace-summaries.json`, and reports gaps in `docs/generated/api-gaps.md`.
 Edit namespace descriptions and alias mappings in `scripts/api-gen/overrides.json`.
 
+`npm run scrape` walks the live `sandkit` object in a running Sandustry renderer (CDP `:9222`) and writes `scripts/api-gen/generated/runtime-api.json`.
+Start the game with the debug port open (F5 or `npm run sandustry` from the mod template), load a save, then run scrape from this repo.
+
 ## Docs site
 
 Guides live under `docs/guides/` (getting started, mod lifecycle, manifest, patches, workers, Workshop).
@@ -83,6 +86,7 @@ Regenerate the Docsify API reference and JSON Schema from these declarations:
 
 ```bash
 npm run generate                  # catalog + API markdown + docs/schemas/*.json
+npm run scrape                    # live sandkit inventory from running Sandustry (CDP :9222)
 npm run generate -- --catalog     # overrides + official HTML + declarations → catalog + gaps
 npm run generate -- --schemas     # JSON Schema only
 npm run docs:archive-sandkit      # Fetch official sandkit.html into docs/official-api/

@@ -99,6 +99,7 @@
   "scripts": {
     "docs": "npm run generate && npm run docs:serve",
     "generate": "node scripts/api-gen/generate.mjs",
+    "scrape": "node scripts/scrape.mjs",
     "docs:archive-sandkit": "node scripts/archive-sandkit.mjs",
     "docs:serve": "npx --yes docsify-cli serve docs",
     "test": "node --test scripts/*.test.js scripts/api-gen/*.test.js scripts/lib/*.test.js",

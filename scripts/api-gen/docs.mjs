@@ -19,7 +19,7 @@ import {
 } from "./api-search.mjs";
 import { buildBrowseCatalog, buildSidebarRoots, renderBrowseScript, renderSidebarTreeScript } from "./namespace-cards.mjs";
 import { restyleApiCards } from "./api-cards.mjs";
-import { rewriteMarkdownLinks } from "./docsify-links.mjs";
+import { qualifyFullPageAnchors, rewriteMarkdownLinks } from "./docsify-links.mjs";
 
 function npmCli(platform = process.platform) {
   return platform === "win32" ? "npm.cmd" : "npm";
@@ -335,8 +335,7 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
     const slug = file.replace(/\.md$/, "");
     let body = readFileSync(join(outDir, file), "utf8").trim();
     body = demoteMarkdownHeadings(body);
-    body = body.replace(/ :id=([A-Za-z0-9_-]+)/g, (_m, id) => ` :id=${slug}.${id}`);
-    body = body.replace(/\]\(\?id=([A-Za-z0-9_.-]+)\)/g, (_m, id) => `](?id=${slug}.${id})`);
+    body = qualifyFullPageAnchors(body, slug);
     parts.push(body, "", "---", "");
   }
 

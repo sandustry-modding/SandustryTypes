@@ -156,6 +156,42 @@ export function qualifyDocsifyPageLinks(content, pageRel) {
  * @param {(s: string) => string} slugify
  * @returns {string}
  */
+/**
+ * Docsify heading `:id=` values only match `[A-Za-z0-9_-%]`.
+ * Dots in a token leak into the visible heading text.
+ *
+ * @param {string} id
+ * @returns {string}
+ */
+export function docsifyHeadingIdToken(id) {
+  return String(id || "").replace(/\./g, "-");
+}
+
+/**
+ * Prefix per-page heading ids so they stay unique on `full.md`.
+ *
+ * @param {string} pageSlug file slug such as `sandkit.api.effects`
+ * @param {string} localId heading id on that page such as `createeffectatworld`
+ * @returns {string}
+ */
+export function fullPageHeadingId(pageSlug, localId) {
+  return docsifyHeadingIdToken(`${pageSlug}.${localId}`);
+}
+
+/**
+ * Rewrite `:id=` and bare `?id=` anchors after a page is inlined into `full.md`.
+ *
+ * @param {string} body
+ * @param {string} pageSlug
+ * @returns {string}
+ */
+export function qualifyFullPageAnchors(body, pageSlug) {
+  let out = String(body || "");
+  out = out.replace(/ :id=([A-Za-z0-9_-]+)/g, (_m, id) => ` :id=${fullPageHeadingId(pageSlug, id)}`);
+  out = out.replace(/\]\(\?id=([A-Za-z0-9_.-]+)\)/g, (_m, id) => `](?id=${fullPageHeadingId(pageSlug, id)})`);
+  return out;
+}
+
 export function headingIdFromText(headingText, slugify) {
   let text = String(headingText || "").trim();
   text = text.replace(/\s+<!--.*?-->\s*$/, "");

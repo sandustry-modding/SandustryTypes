@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `sandkit.api.ui.select` and related dialog, region, override, hotbar, and component APIs
 - `npm run docs:links` checks markdown links against Docsify routes and heading ids
 - Docs sidebar Settings toggle hides deprecated API members and search hits
+- Full API page heading ids use hyphens so Docsify does not print the id after the member name
 
 ### Changed
 

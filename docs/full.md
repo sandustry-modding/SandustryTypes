@@ -12,7 +12,7 @@ Mirrors on-disk `src/sandkit/` and the host free variable: `api`, `engine`,
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
-#### sandkit.api :id=sandkit.sandkitapi
+#### sandkit.api :id=sandkit-sandkitapi
 
 ```ts
 SandkitApi = object
@@ -629,11 +629,11 @@ Defined in: [sandkit/api/sandkit-api.d.ts:133](https://github.com/sandustry-modd
 
 ###### Deprecated
 
-Use [grid](?id=sandkit.grid) for cell APIs and [pickups](?id=sandkit.pickups) for world items.
+Use [grid](?id=sandkit-grid) for cell APIs and [pickups](?id=sandkit-pickups) for world items.
 
 <div class="smt-member-card">
 
-#### sandkit.sandkit :id=sandkit.sandkit
+#### sandkit.sandkit :id=sandkit-sandkit
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/index.d.ts#L33" target="_blank" rel="noopener">index.d.ts:33</a></p>
 
@@ -697,7 +697,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.action.Action :id=sandkit.api.action.action
+#### sandkit.api.action.Action :id=sandkit-api-action-action
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L9" target="_blank" rel="noopener">action.d.ts:9</a></p>
 
@@ -717,7 +717,7 @@ Hotbar action asset reference.
 
 <div class="smt-member-card">
 
-#### sandkit.api.action.getActive :id=sandkit.api.action.getactive
+#### sandkit.api.action.getActive :id=sandkit-api-action-getactive
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L15" target="_blank" rel="noopener">action.d.ts:15</a></p>
 
@@ -737,7 +737,7 @@ Return the action slot the player is using.
 
 <div class="smt-member-card">
 
-#### sandkit.api.action.getSelected :id=sandkit.api.action.getselected
+#### sandkit.api.action.getSelected :id=sandkit-api-action-getselected
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L21" target="_blank" rel="noopener">action.d.ts:21</a></p>
 
@@ -757,7 +757,7 @@ Return the action slot selected in the hotbar.
 
 <div class="smt-member-card">
 
-#### sandkit.api.action.setCustomData :id=sandkit.api.action.setcustomdata
+#### sandkit.api.action.setCustomData :id=sandkit-api-action-setcustomdata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/action.d.ts#L32" target="_blank" rel="noopener">action.d.ts:32</a></p>
 
@@ -800,7 +800,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.assets.AssetProviderV1 :id=sandkit.api.assets.assetproviderv1
+#### sandkit.api.assets.AssetProviderV1 :id=sandkit-api-assets-assetproviderv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L7" target="_blank" rel="noopener">assets.d.ts:7</a></p>
 
@@ -842,7 +842,7 @@ Describes a mod or pack that supplies assets for a kind.
 
 <div class="smt-member-card">
 
-#### sandkit.api.assets.getUrl :id=sandkit.api.assets.geturl
+#### sandkit.api.assets.getUrl :id=sandkit-api-assets-geturl
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L18" target="_blank" rel="noopener">assets.d.ts:18</a></p>
 
@@ -870,7 +870,7 @@ Resolves a path under the mod folder to a loadable URL.
 
 <div class="smt-member-card">
 
-#### sandkit.api.assets.getSelectedProvider :id=sandkit.api.assets.getselectedprovider
+#### sandkit.api.assets.getSelectedProvider :id=sandkit-api-assets-getselectedprovider
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L23" target="_blank" rel="noopener">assets.d.ts:23</a></p>
 
@@ -894,13 +894,13 @@ getSelectedProvider(kind: string): AssetProviderV1 | null
 
 Returns the selected provider for an asset kind, or null.
 
-[`AssetProviderV1`](?id=sandkit.api.assets.assetproviderv1) &#124; `null`
+[`AssetProviderV1`](?id=sandkit-api-assets-assetproviderv1) &#124; `null`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.assets.selectProvider :id=sandkit.api.assets.selectprovider
+#### sandkit.api.assets.selectProvider :id=sandkit-api-assets-selectprovider
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/assets.d.ts#L29" target="_blank" rel="noopener">assets.d.ts:29</a></p>
 
@@ -915,7 +915,7 @@ selectProvider(kind: string, providerId: string | null): boolean
 | Argument | Type | Description |
 | --- | --- | --- |
 | kind | `string` | Asset kind identifier. |
-| providerId | `string` &#124; `null` | Provider id from [getSelectedProvider](?id=sandkit.api.assets.getselectedprovider), or null to clear. |
+| providerId | `string` &#124; `null` | Provider id from [getSelectedProvider](?id=sandkit-api-assets-getselectedprovider), or null to clear. |
 
 <div class="smt-member-anchors">
 
@@ -940,7 +940,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.authorization.canBuildAtCell :id=sandkit.api.authorization.canbuildatcell
+#### sandkit.api.authorization.canBuildAtCell :id=sandkit-api-authorization-canbuildatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L14" target="_blank" rel="noopener">authorization.d.ts:14</a></p>
 
@@ -970,7 +970,7 @@ True when building is allowed in the authorization zone.
 
 <div class="smt-member-card">
 
-#### sandkit.api.authorization.canGrabAtCell :id=sandkit.api.authorization.cangrabatcell
+#### sandkit.api.authorization.canGrabAtCell :id=sandkit-api-authorization-cangrabatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L22" target="_blank" rel="noopener">authorization.d.ts:22</a></p>
 
@@ -1000,7 +1000,7 @@ True when grabbing is allowed in the authorization zone.
 
 <div class="smt-member-card">
 
-#### sandkit.api.authorization.canUseTool :id=sandkit.api.authorization.canusetool
+#### sandkit.api.authorization.canUseTool :id=sandkit-api-authorization-canusetool
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L30" target="_blank" rel="noopener">authorization.d.ts:30</a></p>
 
@@ -1033,7 +1033,7 @@ True when tool use is allowed for the player.
 
 <div class="smt-member-card">
 
-#### sandkit.api.authorization.canUseToolAtCell :id=sandkit.api.authorization.canusetoolatcell
+#### sandkit.api.authorization.canUseToolAtCell :id=sandkit-api-authorization-canusetoolatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L39" target="_blank" rel="noopener">authorization.d.ts:39</a></p>
 
@@ -1063,7 +1063,7 @@ True when tool use is allowed at the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.authorization.getZoneIdAtCell :id=sandkit.api.authorization.getzoneidatcell
+#### sandkit.api.authorization.getZoneIdAtCell :id=sandkit-api-authorization-getzoneidatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L49" target="_blank" rel="noopener">authorization.d.ts:49</a></p>
 
@@ -1093,7 +1093,7 @@ Numeric zone id for the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.authorization.getPlayerZoneId :id=sandkit.api.authorization.getplayerzoneid
+#### sandkit.api.authorization.getPlayerZoneId :id=sandkit-api-authorization-getplayerzoneid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/authorization.d.ts#L55" target="_blank" rel="noopener">authorization.d.ts:55</a></p>
 
@@ -1123,7 +1123,7 @@ Available as `sandkit.api.blueprints`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.blueprints.BlueprintStructure :id=sandkit.api.blueprints.blueprintstructure
+#### sandkit.api.blueprints.BlueprintStructure :id=sandkit-api-blueprints-blueprintstructure
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L31" target="_blank" rel="noopener">blueprints.d.ts:31</a></p>
 
@@ -1154,7 +1154,7 @@ Serialized structure entry used in blueprints.
 
 <div class="smt-member-card">
 
-#### sandkit.api.blueprints.serializeStructures :id=sandkit.api.blueprints.serializestructures
+#### sandkit.api.blueprints.serializeStructures :id=sandkit-api-blueprints-serializestructures
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L16" target="_blank" rel="noopener">blueprints.d.ts:16</a></p>
 
@@ -1178,13 +1178,13 @@ serializeStructures(structures: readonly Structure[]): BlueprintStructure[]
 
 Serialize live structure instances into blueprint records.
 
-[`BlueprintStructure`](?id=sandkit.api.blueprints.blueprintstructure)[]
+[`BlueprintStructure`](?id=sandkit-api-blueprints-blueprintstructure)[]
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.blueprints.localizeStructures :id=sandkit.api.blueprints.localizestructures
+#### sandkit.api.blueprints.localizeStructures :id=sandkit-api-blueprints-localizestructures
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/blueprints.d.ts#L26" target="_blank" rel="noopener">blueprints.d.ts:26</a></p>
 
@@ -1198,7 +1198,7 @@ localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructur
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structures | <code>[`BlueprintStructure`](?id=sandkit.api.blueprints.blueprintstructure)[]</code> | Blueprint structure records to localize. |
+| structures | <code>[`BlueprintStructure`](?id=sandkit-api-blueprints-blueprintstructure)[]</code> | Blueprint structure records to localize. |
 
 <div class="smt-member-anchors">
 
@@ -1208,7 +1208,7 @@ localizeStructures(structures: readonly BlueprintStructure[]): BlueprintStructur
 
 Localize blueprint structure records for placement.
 
-[`BlueprintStructure`](?id=sandkit.api.blueprints.blueprintstructure)[]
+[`BlueprintStructure`](?id=sandkit-api-blueprints-blueprintstructure)[]
 
 </div>
 
@@ -1227,7 +1227,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.getSnappedPositionAtCell :id=sandkit.api.building.getsnappedpositionatcell
+#### sandkit.api.building.getSnappedPositionAtCell :id=sandkit-api-building-getsnappedpositionatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L73" target="_blank" rel="noopener">building.d.ts:73</a></p>
 
@@ -1257,7 +1257,7 @@ Return the snapped world position for placement at the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.isBlockedAtCell :id=sandkit.api.building.isblockedatcell
+#### sandkit.api.building.isBlockedAtCell :id=sandkit-api-building-isblockedatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L81" target="_blank" rel="noopener">building.d.ts:81</a></p>
 
@@ -1287,7 +1287,7 @@ True when a structure cannot be placed at the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.cancelPlacement :id=sandkit.api.building.cancelplacement
+#### sandkit.api.building.cancelPlacement :id=sandkit-api-building-cancelplacement
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L84" target="_blank" rel="noopener">building.d.ts:84</a></p>
 
@@ -1305,7 +1305,7 @@ Cancel the current structure placement preview.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.selectStructure :id=sandkit.api.building.selectstructure
+#### sandkit.api.building.selectStructure :id=sandkit-api-building-selectstructure
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L91" target="_blank" rel="noopener">building.d.ts:91</a></p>
 
@@ -1344,7 +1344,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.camera.snapToPlayer :id=sandkit.api.camera.snaptoplayer
+#### sandkit.api.camera.snapToPlayer :id=sandkit-api-camera-snaptoplayer
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L7" target="_blank" rel="noopener">camera.d.ts:7</a></p>
 
@@ -1362,7 +1362,7 @@ Snap the camera to the player position.
 
 <div class="smt-member-card">
 
-#### sandkit.api.camera.setFocusAtWorld :id=sandkit.api.camera.setfocusatworld
+#### sandkit.api.camera.setFocusAtWorld :id=sandkit-api-camera-setfocusatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L15" target="_blank" rel="noopener">camera.d.ts:15</a></p>
 
@@ -1395,7 +1395,7 @@ True when focus was applied.
 
 <div class="smt-member-card">
 
-#### sandkit.api.camera.releaseFocus :id=sandkit.api.camera.releasefocus
+#### sandkit.api.camera.releaseFocus :id=sandkit-api-camera-releasefocus
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/camera.d.ts#L27" target="_blank" rel="noopener">camera.d.ts:27</a></p>
 
@@ -1440,7 +1440,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.collector.getValueFromCellId :id=sandkit.api.collector.getvaluefromcellid
+#### sandkit.api.collector.getValueFromCellId :id=sandkit-api-collector-getvaluefromcellid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L14" target="_blank" rel="noopener">collector.d.ts:14</a></p>
 
@@ -1468,7 +1468,7 @@ Returns the collector value for a cell id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.collector.getValueByType :id=sandkit.api.collector.getvaluebytype
+#### sandkit.api.collector.getValueByType :id=sandkit-api-collector-getvaluebytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L19" target="_blank" rel="noopener">collector.d.ts:19</a></p>
 
@@ -1496,7 +1496,7 @@ Returns the collector value for an element type.
 
 <div class="smt-member-card">
 
-#### sandkit.api.collector.isCellIdCollectable :id=sandkit.api.collector.iscellidcollectable
+#### sandkit.api.collector.isCellIdCollectable :id=sandkit-api-collector-iscellidcollectable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L24" target="_blank" rel="noopener">collector.d.ts:24</a></p>
 
@@ -1524,7 +1524,7 @@ Returns true when the cell id can be collected.
 
 <div class="smt-member-card">
 
-#### sandkit.api.collector.isCellIdCollectableForSprite :id=sandkit.api.collector.iscellidcollectableforsprite
+#### sandkit.api.collector.isCellIdCollectableForSprite :id=sandkit-api-collector-iscellidcollectableforsprite
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L29" target="_blank" rel="noopener">collector.d.ts:29</a></p>
 
@@ -1552,7 +1552,7 @@ Returns true when the cell id can be collected for sprite display.
 
 <div class="smt-member-card">
 
-#### sandkit.api.collector.notifyPickupAtCell :id=sandkit.api.collector.notifypickupatcell
+#### sandkit.api.collector.notifyPickupAtCell :id=sandkit-api-collector-notifypickupatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/collector.d.ts#L35" target="_blank" rel="noopener">collector.d.ts:35</a></p>
 
@@ -1586,7 +1586,7 @@ Notifies collector logic that a pickup happened at the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.constants.physics :id=sandkit.api.constants.physics
+#### sandkit.api.constants.physics :id=sandkit-api-constants-physics
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/constants.d.ts#L13" target="_blank" rel="noopener">constants.d.ts:13</a></p>
 
@@ -1613,7 +1613,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.cooldown.Cooldown :id=sandkit.api.cooldown.cooldown
+#### sandkit.api.cooldown.Cooldown :id=sandkit-api-cooldown-cooldown
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L20" target="_blank" rel="noopener">cooldown.d.ts:20</a></p>
 
@@ -1630,7 +1630,7 @@ Main thread only.
 
 </div>
 
-Cooldown state object passed to [check](?id=sandkit.api.cooldown.check) and [isReady](?id=sandkit.api.cooldown.isready).
+Cooldown state object passed to [check](?id=sandkit-api-cooldown-check) and [isReady](?id=sandkit-api-cooldown-isready).
 
 </div>
 
@@ -1638,7 +1638,7 @@ Cooldown state object passed to [check](?id=sandkit.api.cooldown.check) and [isR
 
 <div class="smt-member-card">
 
-#### sandkit.api.cooldown.check :id=sandkit.api.cooldown.check
+#### sandkit.api.cooldown.check :id=sandkit-api-cooldown-check
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L11" target="_blank" rel="noopener">cooldown.d.ts:11</a></p>
 
@@ -1652,7 +1652,7 @@ check(cooldown: Cooldown, overrideTime?: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cooldown | <code>[`Cooldown`](?id=sandkit.api.cooldown.cooldown)</code> | Cooldown state object to check and update. |
+| cooldown | <code>[`Cooldown`](?id=sandkit-api-cooldown-cooldown)</code> | Cooldown state object to check and update. |
 | overrideTime? | `number` | Optional timestamp (ms) instead of current game time. |
 
 <div class="smt-member-anchors">
@@ -1669,7 +1669,7 @@ Starts the cooldown when ready and returns true; otherwise returns false.
 
 <div class="smt-member-card">
 
-#### sandkit.api.cooldown.isReady :id=sandkit.api.cooldown.isready
+#### sandkit.api.cooldown.isReady :id=sandkit-api-cooldown-isready
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/cooldown.d.ts#L17" target="_blank" rel="noopener">cooldown.d.ts:17</a></p>
 
@@ -1683,7 +1683,7 @@ isReady(cooldown: Cooldown, overrideTime?: number): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| cooldown | <code>[`Cooldown`](?id=sandkit.api.cooldown.cooldown)</code> | Cooldown state object to check. |
+| cooldown | <code>[`Cooldown`](?id=sandkit-api-cooldown-cooldown)</code> | Cooldown state object to check. |
 | overrideTime? | `number` | Optional timestamp (ms) instead of current game time. |
 
 <div class="smt-member-anchors">
@@ -1709,7 +1709,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.discoveries.addElementByType :id=sandkit.api.discoveries.addelementbytype
+#### sandkit.api.discoveries.addElementByType :id=sandkit-api-discoveries-addelementbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L12" target="_blank" rel="noopener">discoveries.d.ts:12</a></p>
 
@@ -1737,7 +1737,7 @@ Marks an element type as discovered for the player.
 
 <div class="smt-member-card">
 
-#### sandkit.api.discoveries.addTerrainByType :id=sandkit.api.discoveries.addterrainbytype
+#### sandkit.api.discoveries.addTerrainByType :id=sandkit-api-discoveries-addterrainbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/discoveries.d.ts#L17" target="_blank" rel="noopener">discoveries.d.ts:17</a></p>
 
@@ -1774,7 +1774,7 @@ Main thread only. Temporary lights live under [lights.temporary](api/sandkit.api
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.LaserEffectOptions :id=sandkit.api.effects.lasereffectoptions
+#### sandkit.api.effects.LaserEffectOptions :id=sandkit-api-effects-lasereffectoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L115" target="_blank" rel="noopener">effects.d.ts:115</a></p>
 
@@ -1803,7 +1803,7 @@ Options for laser beam effects.
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.LaserEffectHandle :id=sandkit.api.effects.lasereffecthandle
+#### sandkit.api.effects.LaserEffectHandle :id=sandkit-api-effects-lasereffecthandle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L127" target="_blank" rel="noopener">effects.d.ts:127</a></p>
 
@@ -1823,7 +1823,7 @@ Handle returned by createLaserAtWorld.
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.DistortionEffectOptions :id=sandkit.api.effects.distortioneffectoptions
+#### sandkit.api.effects.DistortionEffectOptions :id=sandkit-api-effects-distortioneffectoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L133" target="_blank" rel="noopener">effects.d.ts:133</a></p>
 
@@ -1855,7 +1855,7 @@ Options for distortion wave effects.
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.EffectOptions :id=sandkit.api.effects.effectoptions
+#### sandkit.api.effects.EffectOptions :id=sandkit-api-effects-effectoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L48" target="_blank" rel="noopener">effects.d.ts:48</a></p>
 
@@ -1881,7 +1881,7 @@ Generic duration and radius options for world effects.
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.TemporaryLightOptions :id=sandkit.api.effects.temporarylightoptions
+#### sandkit.api.effects.TemporaryLightOptions :id=sandkit-api-effects-temporarylightoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L54" target="_blank" rel="noopener">effects.d.ts:54</a></p>
 
@@ -1928,13 +1928,13 @@ Generic duration and radius options for world effects.
 
 </div>
 
-Options for [createLightAtWorld](?id=sandkit.api.effects.createlightatworld).
+Options for [createLightAtWorld](?id=sandkit-api-effects-createlightatworld).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.ParticleEffectOptions :id=sandkit.api.effects.particleeffectoptions
+#### sandkit.api.effects.ParticleEffectOptions :id=sandkit-api-effects-particleeffectoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L71" target="_blank" rel="noopener">effects.d.ts:71</a></p>
 
@@ -1990,7 +1990,7 @@ Options for [createLightAtWorld](?id=sandkit.api.effects.createlightatworld).
 
 </div>
 
-Options for [createParticlesAtWorld](?id=sandkit.api.effects.createparticlesatworld).
+Options for [createParticlesAtWorld](?id=sandkit-api-effects-createparticlesatworld).
 
 </div>
 
@@ -1998,7 +1998,7 @@ Options for [createParticlesAtWorld](?id=sandkit.api.effects.createparticlesatwo
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.createAtWorld :id=sandkit.api.effects.createatworld
+#### sandkit.api.effects.createAtWorld :id=sandkit-api-effects-createatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L24" target="_blank" rel="noopener">effects.d.ts:24</a></p>
 
@@ -2015,7 +2015,7 @@ createAtWorld(effectId: string, worldX: number, worldY: number, options?: Effect
 | effectId | `string` | Registered effect id (for example `heatWave`). |
 | worldX | `number` | World X coordinate in pixels. |
 | worldY | `number` | World Y coordinate in pixels. |
-| options? | <code>[`EffectOptions`](?id=sandkit.api.effects.effectoptions)</code> | Duration, radius, and intensity settings. |
+| options? | <code>[`EffectOptions`](?id=sandkit-api-effects-effectoptions)</code> | Duration, radius, and intensity settings. |
 
 <div class="smt-member-anchors">
 
@@ -2035,7 +2035,7 @@ Creates a named screen effect at world coordinates.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.effects.createEffectAtWorld~~ :id=sandkit.api.effects.createeffectatworld
+#### ~~sandkit.api.effects.createEffectAtWorld~~ :id=sandkit-api-effects-createeffectatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L35" target="_blank" rel="noopener">effects.d.ts:35</a></p>
 
@@ -2061,7 +2061,7 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 | effectId | `string` |  |
 | worldX | `number` |  |
 | worldY | `number` |  |
-| options? | <code>[`EffectOptions`](?id=sandkit.api.effects.effectoptions)</code> |  |
+| options? | <code>[`EffectOptions`](?id=sandkit-api-effects-effectoptions)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -2079,7 +2079,7 @@ createEffectAtWorld(effectId: string, worldX: number, worldY: number, options?: 
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.effects.createLightAtWorld~~ :id=sandkit.api.effects.createlightatworld
+#### ~~sandkit.api.effects.createLightAtWorld~~ :id=sandkit-api-effects-createlightatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L63" target="_blank" rel="noopener">effects.d.ts:63</a></p>
 
@@ -2104,7 +2104,7 @@ createLightAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptio
 | --- | --- | --- |
 | worldX | `number` |  |
 | worldY | `number` |  |
-| options? | <code>[`TemporaryLightOptions`](?id=sandkit.api.effects.temporarylightoptions)</code> |  |
+| options? | <code>[`TemporaryLightOptions`](?id=sandkit-api-effects-temporarylightoptions)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -2122,7 +2122,7 @@ lightId: number &#124; null optional index?: number &#124; null
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.createDistortionWaveAtWorld :id=sandkit.api.effects.createdistortionwaveatworld
+#### sandkit.api.effects.createDistortionWaveAtWorld :id=sandkit-api-effects-createdistortionwaveatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L84" target="_blank" rel="noopener">effects.d.ts:84</a></p>
 
@@ -2138,7 +2138,7 @@ createDistortionWaveAtWorld(worldX: number, worldY: number, options?: Distortion
 | --- | --- | --- |
 | worldX | `number` | World X coordinate in pixels. |
 | worldY | `number` | World Y coordinate in pixels. |
-| options? | <code>[`DistortionEffectOptions`](?id=sandkit.api.effects.distortioneffectoptions)</code> | Style, duration, radius, intensity, and color. |
+| options? | <code>[`DistortionEffectOptions`](?id=sandkit-api-effects-distortioneffectoptions)</code> | Style, duration, radius, intensity, and color. |
 
 <div class="smt-member-anchors">
 
@@ -2164,7 +2164,7 @@ api.effects.createDistortionWaveAtWorld(worldX, worldY, {
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.createLaserAtWorld :id=sandkit.api.effects.createlaseratworld
+#### sandkit.api.effects.createLaserAtWorld :id=sandkit-api-effects-createlaseratworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L100" target="_blank" rel="noopener">effects.d.ts:100</a></p>
 
@@ -2182,7 +2182,7 @@ createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, 
 | startWorldY | `number` | Beam start world Y in pixels. |
 | endWorldX | `number` | Beam end world X in pixels. |
 | endWorldY | `number` | Beam end world Y in pixels. |
-| options? | <code>[`LaserEffectOptions`](?id=sandkit.api.effects.lasereffectoptions)</code> | Width, brightness, color, and glow options. |
+| options? | <code>[`LaserEffectOptions`](?id=sandkit-api-effects-lasereffectoptions)</code> | Width, brightness, color, and glow options. |
 
 <div class="smt-member-anchors">
 
@@ -2200,13 +2200,13 @@ createLaserAtWorld(startWorldX: number, startWorldY: number, endWorldX: number, 
 
 Creates a laser beam between two world points. Returns a handle to destroy it.
 
-[`LaserEffectHandle`](?id=sandkit.api.effects.lasereffecthandle)
+[`LaserEffectHandle`](?id=sandkit-api-effects-lasereffecthandle)
 
 </div>
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.effects.removeLightById~~ :id=sandkit.api.effects.removelightbyid
+#### ~~sandkit.api.effects.removeLightById~~ :id=sandkit-api-effects-removelightbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/effects.d.ts#L112" target="_blank" rel="noopener">effects.d.ts:112</a></p>
 
@@ -2241,7 +2241,7 @@ removeLightById(lightId: number): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.createParticlesAtWorld :id=sandkit.api.effects.createparticlesatworld
+#### sandkit.api.effects.createParticlesAtWorld :id=sandkit-api-effects-createparticlesatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/effects.d.ts#L28" target="_blank" rel="noopener">effects.d.ts:28</a></p>
 
@@ -2257,7 +2257,7 @@ createParticlesAtWorld(worldX: number, worldY: number, options?: ParticleEffectO
 | --- | --- | --- |
 | worldX | `number` | World x position in pixels. |
 | worldY | `number` | World y position in pixels. |
-| options? | <code>[`ParticleEffectOptions`](?id=sandkit.api.effects.particleeffectoptions)</code> | Count, velocity, colour, and lifetime settings. |
+| options? | <code>[`ParticleEffectOptions`](?id=sandkit-api-effects-particleeffectoptions)</code> | Count, velocity, colour, and lifetime settings. |
 
 <div class="smt-member-anchors">
 
@@ -2288,7 +2288,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.InteractionStructureMetadata :id=sandkit.api.elements.interactionstructuremetadata
+#### sandkit.api.elements.InteractionStructureMetadata :id=sandkit-api-elements-interactionstructuremetadata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L78" target="_blank" rel="noopener">elements.d.ts:78</a></p>
 
@@ -2317,7 +2317,7 @@ Optional tooltip metadata on structure interactions.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.ElementCreateOptions :id=sandkit.api.elements.elementcreateoptions
+#### sandkit.api.elements.ElementCreateOptions :id=sandkit-api-elements-elementcreateoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L80" target="_blank" rel="noopener">elements.d.ts:80</a></p>
 
@@ -2352,13 +2352,13 @@ Optional tooltip metadata on structure interactions.
 
 </div>
 
-Options for [createAtCell](?id=sandkit.api.elements.createatcell), replace, and related create helpers.
+Options for [createAtCell](?id=sandkit-api-elements-createatcell), replace, and related create helpers.
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.ElementRemovalOptions :id=sandkit.api.elements.elementremovaloptions
+#### sandkit.api.elements.ElementRemovalOptions :id=sandkit-api-elements-elementremovaloptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L116" target="_blank" rel="noopener">elements.d.ts:116</a></p>
 
@@ -2380,7 +2380,7 @@ Options for element removal helpers.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.InteractionDestroyer :id=sandkit.api.elements.interactiondestroyer
+#### sandkit.api.elements.InteractionDestroyer :id=sandkit-api-elements-interactiondestroyer
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L90" target="_blank" rel="noopener">elements.d.ts:90</a></p>
 
@@ -2411,7 +2411,7 @@ Interaction that destroys specific items.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.InteractionStructure :id=sandkit.api.elements.interactionstructure
+#### sandkit.api.elements.InteractionStructure :id=sandkit-api-elements-interactionstructure
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L97" target="_blank" rel="noopener">elements.d.ts:97</a></p>
 
@@ -2445,7 +2445,7 @@ Structure ids shown in the interaction tooltip.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.InteractionEntity :id=sandkit.api.elements.interactionentity
+#### sandkit.api.elements.InteractionEntity :id=sandkit-api-elements-interactionentity
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L104" target="_blank" rel="noopener">elements.d.ts:104</a></p>
 
@@ -2476,7 +2476,7 @@ Interaction that affects specific entities.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.InteractionFlammable :id=sandkit.api.elements.interactionflammable
+#### sandkit.api.elements.InteractionFlammable :id=sandkit-api-elements-interactionflammable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L111" target="_blank" rel="noopener">elements.d.ts:111</a></p>
 
@@ -2504,7 +2504,7 @@ Interaction that marks the element as flammable.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.InteractionMeltable :id=sandkit.api.elements.interactionmeltable
+#### sandkit.api.elements.InteractionMeltable :id=sandkit-api-elements-interactionmeltable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L113" target="_blank" rel="noopener">elements.d.ts:113</a></p>
 
@@ -2532,7 +2532,7 @@ Interaction that marks the element as meltable.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.InteractionFreezable :id=sandkit.api.elements.interactionfreezable
+#### sandkit.api.elements.InteractionFreezable :id=sandkit-api-elements-interactionfreezable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L115" target="_blank" rel="noopener">elements.d.ts:115</a></p>
 
@@ -2560,7 +2560,7 @@ Interaction that marks the element as freezable.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.InteractionCustom :id=sandkit.api.elements.interactioncustom
+#### sandkit.api.elements.InteractionCustom :id=sandkit-api-elements-interactioncustom
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L117" target="_blank" rel="noopener">elements.d.ts:117</a></p>
 
@@ -2586,7 +2586,7 @@ kind: "custom"
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.Interaction :id=sandkit.api.elements.interaction
+#### sandkit.api.elements.Interaction :id=sandkit-api-elements-interaction
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L120" target="_blank" rel="noopener">elements.d.ts:120</a></p>
 
@@ -2604,7 +2604,7 @@ Union of element interaction kinds for tool and structure logic.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.ElementType :id=sandkit.api.elements.elementtype
+#### sandkit.api.elements.ElementType :id=sandkit-api-elements-elementtype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L19" target="_blank" rel="noopener">elements.d.ts:19</a></p>
 
@@ -2617,13 +2617,13 @@ ElementType = ElementType | TaggedNumber<"elementType">
 </div>
 
 Numeric element type handle.
-Built-in [ElementTypeEnum](api/sandkit.enums.ElementType.md) values autocomplete; [getTypeById](?id=sandkit.api.elements.gettypebyid) returns a tagged handle.
+Built-in [ElementTypeEnum](api/sandkit.enums.ElementType.md) values autocomplete; [getTypeById](?id=sandkit-api-elements-gettypebyid) returns a tagged handle.
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.ElementId :id=sandkit.api.elements.elementid
+#### sandkit.api.elements.ElementId :id=sandkit-api-elements-elementid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L25" target="_blank" rel="noopener">elements.d.ts:25</a></p>
 
@@ -2641,7 +2641,7 @@ Mod or built-in element string id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.ElementRef :id=sandkit.api.elements.elementref
+#### sandkit.api.elements.ElementRef :id=sandkit-api-elements-elementref
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L31" target="_blank" rel="noopener">elements.d.ts:31</a></p>
 
@@ -2659,7 +2659,7 @@ Type handle or string id accepted by lookup helpers.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.ElementDefinition :id=sandkit.api.elements.elementdefinition
+#### sandkit.api.elements.ElementDefinition :id=sandkit-api-elements-elementdefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L52" target="_blank" rel="noopener">elements.d.ts:52</a></p>
 
@@ -2716,7 +2716,7 @@ Mod-registered element definition snapshot.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getRegisteredTypes :id=sandkit.api.elements.getregisteredtypes
+#### sandkit.api.elements.getRegisteredTypes :id=sandkit-api-elements-getregisteredtypes
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L133" target="_blank" rel="noopener">elements.d.ts:133</a></p>
 
@@ -2730,13 +2730,13 @@ getRegisteredTypes(): ElementType[]
 
 Returns all registered element type ids.
 
-[`ElementType`](?id=sandkit.api.elements.elementtype)[]
+[`ElementType`](?id=sandkit-api-elements-elementtype)[]
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.register :id=sandkit.api.elements.register
+#### sandkit.api.elements.register :id=sandkit-api-elements-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L142" target="_blank" rel="noopener">elements.d.ts:142</a></p>
 
@@ -2750,7 +2750,7 @@ register(definition: ElementDefinition): object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition)</code> | Full element definition to register. |
+| definition | <code>[`ElementDefinition`](?id=sandkit-api-elements-elementdefinition)</code> | Full element definition to register. |
 
 <div class="smt-member-anchors">
 
@@ -2766,7 +2766,7 @@ Object with the assigned `elementType`. elementType: ElementType
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.updateDefinition :id=sandkit.api.elements.updatedefinition
+#### sandkit.api.elements.updateDefinition :id=sandkit-api-elements-updatedefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L158" target="_blank" rel="noopener">elements.d.ts:158</a></p>
 
@@ -2780,8 +2780,8 @@ updateDefinition(elementTypeOrId: ElementRef, partial: Partial<ElementDefinition
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementTypeOrId | <code>[`ElementRef`](?id=sandkit.api.elements.elementref)</code> | Numeric type or string id. |
-| partial | `Partial`<[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition)> | Fields to merge onto the definition. |
+| elementTypeOrId | <code>[`ElementRef`](?id=sandkit-api-elements-elementref)</code> | Numeric type or string id. |
+| partial | `Partial`<[`ElementDefinition`](?id=sandkit-api-elements-elementdefinition)> | Fields to merge onto the definition. |
 
 <div class="smt-member-anchors">
 
@@ -2805,7 +2805,7 @@ api.elements.updateDefinition("exampleElement", {
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.addInteractionInfo :id=sandkit.api.elements.addinteractioninfo
+#### sandkit.api.elements.addInteractionInfo :id=sandkit-api-elements-addinteractioninfo
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L170" target="_blank" rel="noopener">elements.d.ts:170</a></p>
 
@@ -2819,8 +2819,8 @@ addInteractionInfo(elementTypeOrId: ElementRef, interaction: Interaction): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementTypeOrId | <code>[`ElementRef`](?id=sandkit.api.elements.elementref)</code> | Numeric type or string id. |
-| interaction | <code>[`Interaction`](?id=sandkit.api.elements.interaction)</code> | Interaction entry to append. |
+| elementTypeOrId | <code>[`ElementRef`](?id=sandkit-api-elements-elementref)</code> | Numeric type or string id. |
+| interaction | <code>[`Interaction`](?id=sandkit-api-elements-interaction)</code> | Interaction entry to append. |
 
 <div class="smt-member-anchors">
 
@@ -2836,7 +2836,7 @@ Adds an interaction entry to an element definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getNameByType :id=sandkit.api.elements.getnamebytype
+#### sandkit.api.elements.getNameByType :id=sandkit-api-elements-getnamebytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L178" target="_blank" rel="noopener">elements.d.ts:178</a></p>
 
@@ -2850,7 +2850,7 @@ getNameByType(elementType: ElementType): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | <code>[`ElementType`](?id=sandkit.api.elements.elementtype)</code> | Numeric element type. |
+| elementType | <code>[`ElementType`](?id=sandkit-api-elements-elementtype)</code> | Numeric element type. |
 
 <div class="smt-member-anchors">
 
@@ -2864,7 +2864,7 @@ Returns the display name for an element type.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.findFreeCellInStructure :id=sandkit.api.elements.findfreecellinstructure
+#### sandkit.api.elements.findFreeCellInStructure :id=sandkit-api-elements-findfreecellinstructure
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L189" target="_blank" rel="noopener">elements.d.ts:189</a></p>
 
@@ -2900,7 +2900,7 @@ Finds a free cell inside a structure footprint, or null.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.createAtCell :id=sandkit.api.elements.createatcell
+#### sandkit.api.elements.createAtCell :id=sandkit-api-elements-createatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L218" target="_blank" rel="noopener">elements.d.ts:218</a></p>
 
@@ -2914,7 +2914,7 @@ createAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit-api-elements-elementref), [`ElementCreateOptions`](?id=sandkit-api-elements-elementcreateoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -2946,7 +2946,7 @@ api.elements.createAtCell(cellX, cellY, "steam", {
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.createAtCellWhenIdle~~ :id=sandkit.api.elements.createatcellwhenidle
+#### ~~sandkit.api.elements.createAtCellWhenIdle~~ :id=sandkit-api-elements-createatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L226" target="_blank" rel="noopener">elements.d.ts:226</a></p>
 
@@ -2969,7 +2969,7 @@ createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit-api-elements-elementref), [`ElementCreateOptions`](?id=sandkit-api-elements-elementcreateoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -2981,7 +2981,7 @@ createAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions]
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.replaceAtCell :id=sandkit.api.elements.replaceatcell
+#### sandkit.api.elements.replaceAtCell :id=sandkit-api-elements-replaceatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L239" target="_blank" rel="noopener">elements.d.ts:239</a></p>
 
@@ -2995,7 +2995,7 @@ replaceAtCell(...args: number, number, [ElementRef, ElementCreateOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit-api-elements-elementref), [`ElementCreateOptions`](?id=sandkit-api-elements-elementcreateoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -3009,7 +3009,7 @@ Replace the element at a cell. Main-entry writes are deferred; reads see the old
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.replaceAtCellWhenIdle~~ :id=sandkit.api.elements.replaceatcellwhenidle
+#### ~~sandkit.api.elements.replaceAtCellWhenIdle~~ :id=sandkit-api-elements-replaceatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L247" target="_blank" rel="noopener">elements.d.ts:247</a></p>
 
@@ -3032,7 +3032,7 @@ replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref), [`ElementCreateOptions`](?id=sandkit.api.elements.elementcreateoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit-api-elements-elementref), [`ElementCreateOptions`](?id=sandkit-api-elements-elementcreateoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -3044,7 +3044,7 @@ replaceAtCellWhenIdle(...args: number, number, [ElementRef, ElementCreateOptions
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.removeAtCell :id=sandkit.api.elements.removeatcell
+#### sandkit.api.elements.removeAtCell :id=sandkit-api-elements-removeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L259" target="_blank" rel="noopener">elements.d.ts:259</a></p>
 
@@ -3058,7 +3058,7 @@ removeAtCell(...args: number, number, [ElementRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](?id=sandkit.api.elements.elementremovaloptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](?id=sandkit-api-elements-elementremovaloptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -3072,7 +3072,7 @@ Remove the element at a cell. Main-entry writes are deferred; reads see the old 
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.removeAtCellWhenIdle~~ :id=sandkit.api.elements.removeatcellwhenidle
+#### ~~sandkit.api.elements.removeAtCellWhenIdle~~ :id=sandkit-api-elements-removeatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L267" target="_blank" rel="noopener">elements.d.ts:267</a></p>
 
@@ -3095,7 +3095,7 @@ removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](?id=sandkit.api.elements.elementremovaloptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`ElementRemovalOptions`](?id=sandkit-api-elements-elementremovaloptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -3107,7 +3107,7 @@ removeAtCellWhenIdle(...args: number, number, [ElementRemovalOptions]): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.teleportBetweenCells :id=sandkit.api.elements.teleportbetweencells
+#### sandkit.api.elements.teleportBetweenCells :id=sandkit-api-elements-teleportbetweencells
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L280" target="_blank" rel="noopener">elements.d.ts:280</a></p>
 
@@ -3144,7 +3144,7 @@ Move an element between cells. Main-entry writes are deferred; reads see the old
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.teleportBetweenCellsWhenIdle~~ :id=sandkit.api.elements.teleportbetweencellswhenidle
+#### ~~sandkit.api.elements.teleportBetweenCellsWhenIdle~~ :id=sandkit-api-elements-teleportbetweencellswhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L291" target="_blank" rel="noopener">elements.d.ts:291</a></p>
 
@@ -3188,7 +3188,7 @@ teleportBetweenCellsWhenIdle(fromCellX: number, fromCellY: number, toCellX: numb
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.setVelocityAtCell :id=sandkit.api.elements.setvelocityatcell
+#### sandkit.api.elements.setVelocityAtCell :id=sandkit-api-elements-setvelocityatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L311" target="_blank" rel="noopener">elements.d.ts:311</a></p>
 
@@ -3222,7 +3222,7 @@ api.elements.setVelocityAtCell(cellX, cellY, { x: 0, y: -120 });
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.setVelocityAtCellWhenIdle~~ :id=sandkit.api.elements.setvelocityatcellwhenidle
+#### ~~sandkit.api.elements.setVelocityAtCellWhenIdle~~ :id=sandkit-api-elements-setvelocityatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L317" target="_blank" rel="noopener">elements.d.ts:317</a></p>
 
@@ -3257,7 +3257,7 @@ setVelocityAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.addParticleVelocityAtCell :id=sandkit.api.elements.addparticlevelocityatcell
+#### sandkit.api.elements.addParticleVelocityAtCell :id=sandkit-api-elements-addparticlevelocityatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L338" target="_blank" rel="noopener">elements.d.ts:338</a></p>
 
@@ -3296,7 +3296,7 @@ api.elements.addParticleVelocityAtCell(
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.addParticleVelocityAtCellWhenIdle~~ :id=sandkit.api.elements.addparticlevelocityatcellwhenidle
+#### ~~sandkit.api.elements.addParticleVelocityAtCellWhenIdle~~ :id=sandkit-api-elements-addparticlevelocityatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L346" target="_blank" rel="noopener">elements.d.ts:346</a></p>
 
@@ -3331,7 +3331,7 @@ addParticleVelocityAtCellWhenIdle(...args: number, number, [Vector2, number]): v
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.convertToParticleAtCell :id=sandkit.api.elements.converttoparticleatcell
+#### sandkit.api.elements.convertToParticleAtCell :id=sandkit-api-elements-converttoparticleatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L367" target="_blank" rel="noopener">elements.d.ts:367</a></p>
 
@@ -3369,7 +3369,7 @@ api.elements.convertToParticleAtCell(
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.convertToParticleAtCellWhenIdle~~ :id=sandkit.api.elements.converttoparticleatcellwhenidle
+#### ~~sandkit.api.elements.convertToParticleAtCellWhenIdle~~ :id=sandkit-api-elements-converttoparticleatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L373" target="_blank" rel="noopener">elements.d.ts:373</a></p>
 
@@ -3404,7 +3404,7 @@ convertToParticleAtCellWhenIdle(...args: number, number, [Vector2]): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.convertFromParticleAtCell :id=sandkit.api.elements.convertfromparticleatcell
+#### sandkit.api.elements.convertFromParticleAtCell :id=sandkit-api-elements-convertfromparticleatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L384" target="_blank" rel="noopener">elements.d.ts:384</a></p>
 
@@ -3432,7 +3432,7 @@ Convert a particle back to a solid element. Main-entry writes are deferred; read
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.convertFromParticleAtCellWhenIdle~~ :id=sandkit.api.elements.convertfromparticleatcellwhenidle
+#### ~~sandkit.api.elements.convertFromParticleAtCellWhenIdle~~ :id=sandkit-api-elements-convertfromparticleatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L390" target="_blank" rel="noopener">elements.d.ts:390</a></p>
 
@@ -3467,7 +3467,7 @@ convertFromParticleAtCellWhenIdle(...args: CellCoordinates): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.setDataFieldAtCell :id=sandkit.api.elements.setdatafieldatcell
+#### sandkit.api.elements.setDataFieldAtCell :id=sandkit-api-elements-setdatafieldatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L401" target="_blank" rel="noopener">elements.d.ts:401</a></p>
 
@@ -3495,7 +3495,7 @@ Set a data field on the element at a cell. Main-entry writes are deferred; reads
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.setDataFieldAtCellWhenIdle~~ :id=sandkit.api.elements.setdatafieldatcellwhenidle
+#### ~~sandkit.api.elements.setDataFieldAtCellWhenIdle~~ :id=sandkit-api-elements-setdatafieldatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L409" target="_blank" rel="noopener">elements.d.ts:409</a></p>
 
@@ -3530,7 +3530,7 @@ setDataFieldAtCellWhenIdle(...args: [number, number, 1 | 2 | 3 | 4, number]): vo
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.refreshColorAtCell :id=sandkit.api.elements.refreshcoloratcell
+#### sandkit.api.elements.refreshColorAtCell :id=sandkit-api-elements-refreshcoloratcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L420" target="_blank" rel="noopener">elements.d.ts:420</a></p>
 
@@ -3558,7 +3558,7 @@ Refresh the rendered color at a cell. Main-entry writes are deferred; reads see 
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.refreshColorAtCellWhenIdle~~ :id=sandkit.api.elements.refreshcoloratcellwhenidle
+#### ~~sandkit.api.elements.refreshColorAtCellWhenIdle~~ :id=sandkit-api-elements-refreshcoloratcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L426" target="_blank" rel="noopener">elements.d.ts:426</a></p>
 
@@ -3593,7 +3593,7 @@ refreshColorAtCellWhenIdle(...args: CellCoordinates): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.setPhysicsAtCell :id=sandkit.api.elements.setphysicsatcell
+#### sandkit.api.elements.setPhysicsAtCell :id=sandkit-api-elements-setphysicsatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L436" target="_blank" rel="noopener">elements.d.ts:436</a></p>
 
@@ -3621,7 +3621,7 @@ Set the physics skip mode at a cell. Main-entry writes are deferred; reads see t
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.setPhysicsAtCellWhenIdle~~ :id=sandkit.api.elements.setphysicsatcellwhenidle
+#### ~~sandkit.api.elements.setPhysicsAtCellWhenIdle~~ :id=sandkit-api-elements-setphysicsatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L442" target="_blank" rel="noopener">elements.d.ts:442</a></p>
 
@@ -3656,7 +3656,7 @@ setPhysicsAtCellWhenIdle(...args: [number, number, number]): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.setDurationAtCell :id=sandkit.api.elements.setdurationatcell
+#### sandkit.api.elements.setDurationAtCell :id=sandkit-api-elements-setdurationatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L465" target="_blank" rel="noopener">elements.d.ts:465</a></p>
 
@@ -3697,7 +3697,7 @@ api.elements.setDurationAtCell(
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.setDurationAtCellWhenIdle~~ :id=sandkit.api.elements.setdurationatcellwhenidle
+#### ~~sandkit.api.elements.setDurationAtCellWhenIdle~~ :id=sandkit-api-elements-setdurationatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/elements.d.ts#L473" target="_blank" rel="noopener">elements.d.ts:473</a></p>
 
@@ -3732,7 +3732,7 @@ setDurationAtCellWhenIdle(...args: [number, number, number, object]): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getIdByType :id=sandkit.api.elements.getidbytype
+#### sandkit.api.elements.getIdByType :id=sandkit-api-elements-getidbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L127" target="_blank" rel="noopener">elements.d.ts:127</a></p>
 
@@ -3746,7 +3746,7 @@ getIdByType(elementType: ElementType): string & object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | <code>[`ElementType`](?id=sandkit.api.elements.elementtype)</code> | Numeric element type. |
+| elementType | <code>[`ElementType`](?id=sandkit-api-elements-elementtype)</code> | Numeric element type. |
 
 <div class="smt-member-anchors">
 
@@ -3762,7 +3762,7 @@ Return the mod string id for a numeric element type.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getTypeById :id=sandkit.api.elements.gettypebyid
+#### sandkit.api.elements.getTypeById :id=sandkit-api-elements-gettypebyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L135" target="_blank" rel="noopener">elements.d.ts:135</a></p>
 
@@ -3786,13 +3786,13 @@ getTypeById(elementId: string & object): ElementType
 
 Resolve a mod element string id to a type handle.
 
-[`ElementType`](?id=sandkit.api.elements.elementtype)
+[`ElementType`](?id=sandkit-api-elements-elementtype)
 
 </div>
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.getTypeFromId~~ :id=sandkit.api.elements.gettypefromid
+#### ~~sandkit.api.elements.getTypeFromId~~ :id=sandkit-api-elements-gettypefromid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L141" target="_blank" rel="noopener">elements.d.ts:141</a></p>
 
@@ -3823,13 +3823,13 @@ getTypeFromId(elementId: string & object): ElementType
 
 </div>
 
-[`ElementType`](?id=sandkit.api.elements.elementtype)
+[`ElementType`](?id=sandkit-api-elements-elementtype)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getDefinitionByType :id=sandkit.api.elements.getdefinitionbytype
+#### sandkit.api.elements.getDefinitionByType :id=sandkit-api-elements-getdefinitionbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L149" target="_blank" rel="noopener">elements.d.ts:149</a></p>
 
@@ -3843,7 +3843,7 @@ getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| elementType | <code>[`ElementType`](?id=sandkit.api.elements.elementtype)</code> | Numeric element type. |
+| elementType | <code>[`ElementType`](?id=sandkit-api-elements-elementtype)</code> | Numeric element type. |
 
 <div class="smt-member-anchors">
 
@@ -3853,13 +3853,13 @@ getDefinitionByType(elementType: ElementType): ElementDefinition | undefined
 
 Look up the definition for a type handle.
 
-[`ElementDefinition`](?id=sandkit.api.elements.elementdefinition) &#124; `undefined`
+[`ElementDefinition`](?id=sandkit-api-elements-elementdefinition) &#124; `undefined`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getTypeAtCell :id=sandkit.api.elements.gettypeatcell
+#### sandkit.api.elements.getTypeAtCell :id=sandkit-api-elements-gettypeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L158" target="_blank" rel="noopener">elements.d.ts:158</a></p>
 
@@ -3883,13 +3883,13 @@ getTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the raw element type at a cell (may differ from resolved type).
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
+[`ElementType`](?id=sandkit-api-elements-elementtype) &#124; `null`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getResolvedTypeAtCell :id=sandkit.api.elements.getresolvedtypeatcell
+#### sandkit.api.elements.getResolvedTypeAtCell :id=sandkit-api-elements-getresolvedtypeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L167" target="_blank" rel="noopener">elements.d.ts:167</a></p>
 
@@ -3913,13 +3913,13 @@ getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null
 
 Return the resolved element type after overlays and particles.
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
+[`ElementType`](?id=sandkit-api-elements-elementtype) &#124; `null`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getResolvedTypeFromCellId :id=sandkit.api.elements.getresolvedtypefromcellid
+#### sandkit.api.elements.getResolvedTypeFromCellId :id=sandkit-api-elements-getresolvedtypefromcellid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L175" target="_blank" rel="noopener">elements.d.ts:175</a></p>
 
@@ -3943,13 +3943,13 @@ getResolvedTypeFromCellId(cellId: CellId): ElementType | null
 
 Return the resolved element type from a packed cell id.
 
-[`ElementType`](?id=sandkit.api.elements.elementtype) &#124; `null`
+[`ElementType`](?id=sandkit-api-elements-elementtype) &#124; `null`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getInfoAtCell :id=sandkit.api.elements.getinfoatcell
+#### sandkit.api.elements.getInfoAtCell :id=sandkit-api-elements-getinfoatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L184" target="_blank" rel="noopener">elements.d.ts:184</a></p>
 
@@ -3973,13 +3973,13 @@ getInfoAtCell(...args: CellCoordinates): { elementType: ElementType; isParticle:
 
 Return element index, particle flag, and ids at a cell.
 
-\{ `elementType`: [`ElementType`](?id=sandkit.api.elements.elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} &#124; `null`
+\{ `elementType`: [`ElementType`](?id=sandkit-api-elements-elementtype); `isParticle`: `boolean`; `cellId`: [`CellId`](api/shared.nominal.md?id=cellid); `elementIndex`: `number`; \} &#124; `null`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getMatterTypeAtCell :id=sandkit.api.elements.getmattertypeatcell
+#### sandkit.api.elements.getMatterTypeAtCell :id=sandkit-api-elements-getmattertypeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L195" target="_blank" rel="noopener">elements.d.ts:195</a></p>
 
@@ -4009,7 +4009,7 @@ Return the matter category at a cell, or null when empty.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.isTypeAtCell :id=sandkit.api.elements.istypeatcell
+#### sandkit.api.elements.isTypeAtCell :id=sandkit-api-elements-istypeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L205" target="_blank" rel="noopener">elements.d.ts:205</a></p>
 
@@ -4023,7 +4023,7 @@ isTypeAtCell(...args: number, number, [ElementRef]): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit.api.elements.elementref)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`ElementRef`](?id=sandkit-api-elements-elementref)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -4037,7 +4037,7 @@ Return true when the cell holds the given element type or id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.isFreeFallingAtCell :id=sandkit.api.elements.isfreefallingatcell
+#### sandkit.api.elements.isFreeFallingAtCell :id=sandkit-api-elements-isfreefallingatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L214" target="_blank" rel="noopener">elements.d.ts:214</a></p>
 
@@ -4065,7 +4065,7 @@ Return true when the element at the cell is falling.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getVelocityAtCell :id=sandkit.api.elements.getvelocityatcell
+#### sandkit.api.elements.getVelocityAtCell :id=sandkit-api-elements-getvelocityatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L223" target="_blank" rel="noopener">elements.d.ts:223</a></p>
 
@@ -4095,7 +4095,7 @@ Return per-cell velocity for moving elements.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.getDataFieldAtCell :id=sandkit.api.elements.getdatafieldatcell
+#### sandkit.api.elements.getDataFieldAtCell :id=sandkit-api-elements-getdatafieldatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L233" target="_blank" rel="noopener">elements.d.ts:233</a></p>
 
@@ -4134,7 +4134,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.energy.EnergyRegisterTypeOptions :id=sandkit.api.energy.energyregistertypeoptions
+#### sandkit.api.energy.EnergyRegisterTypeOptions :id=sandkit-api-energy-energyregistertypeoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L75" target="_blank" rel="noopener">energy.d.ts:75</a></p>
 
@@ -4151,7 +4151,7 @@ Main thread only.
 
 </div>
 
-Options for [registerType](?id=sandkit.api.energy.registertype).
+Options for [registerType](?id=sandkit-api-energy-registertype).
 
 ##### Indexable
 
@@ -4163,7 +4163,7 @@ Options for [registerType](?id=sandkit.api.energy.registertype).
 
 <div class="smt-member-card">
 
-#### sandkit.api.energy.EnergyAddOptions :id=sandkit.api.energy.energyaddoptions
+#### sandkit.api.energy.EnergyAddOptions :id=sandkit-api-energy-energyaddoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L84" target="_blank" rel="noopener">energy.d.ts:84</a></p>
 
@@ -4177,7 +4177,7 @@ Options for [registerType](?id=sandkit.api.energy.registertype).
 
 </div>
 
-Options for [addAtCell](?id=sandkit.api.energy.addatcell).
+Options for [addAtCell](?id=sandkit-api-energy-addatcell).
 
 ##### Indexable
 
@@ -4191,7 +4191,7 @@ Options for [addAtCell](?id=sandkit.api.energy.addatcell).
 
 <div class="smt-member-card">
 
-#### sandkit.api.energy.registerType :id=sandkit.api.energy.registertype
+#### sandkit.api.energy.registerType :id=sandkit-api-energy-registertype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L14" target="_blank" rel="noopener">energy.d.ts:14</a></p>
 
@@ -4207,7 +4207,7 @@ registerType(structureId: string, type: "storage" | "conductor", options?: Energ
 | --- | --- | --- |
 | structureId | `string` | Structure type id string. |
 | type | `"storage"` &#124; `"conductor"` | `conductor` forwards energy; `storage` holds energy. |
-| options? | <code>[`EnergyRegisterTypeOptions`](?id=sandkit.api.energy.energyregistertypeoptions)</code> | Capacity and energy-type options for storage nodes. |
+| options? | <code>[`EnergyRegisterTypeOptions`](?id=sandkit-api-energy-energyregistertypeoptions)</code> | Capacity and energy-type options for storage nodes. |
 
 <div class="smt-member-anchors">
 
@@ -4225,7 +4225,7 @@ Registers an energy type on a structure as conductor or storage.
 
 <div class="smt-member-card">
 
-#### sandkit.api.energy.addAtCell :id=sandkit.api.energy.addatcell
+#### sandkit.api.energy.addAtCell :id=sandkit-api-energy-addatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L26" target="_blank" rel="noopener">energy.d.ts:26</a></p>
 
@@ -4239,7 +4239,7 @@ addAtCell(...args: number, number, number, [EnergyAddOptions]): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, `number`, [`EnergyAddOptions`](?id=sandkit.api.energy.energyaddoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, `number`, [`EnergyAddOptions`](?id=sandkit-api-energy-energyaddoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -4253,7 +4253,7 @@ Adds energy at a cell. Returns the amount actually added.
 
 <div class="smt-member-card">
 
-#### sandkit.api.energy.consume :id=sandkit.api.energy.consume
+#### sandkit.api.energy.consume :id=sandkit-api-energy-consume
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L34" target="_blank" rel="noopener">energy.d.ts:34</a></p>
 
@@ -4284,7 +4284,7 @@ Consumes energy from the global pool. Returns the amount consumed.
 
 <div class="smt-member-card">
 
-#### sandkit.api.energy.consumeExcludingNetworkAtCell :id=sandkit.api.energy.consumeexcludingnetworkatcell
+#### sandkit.api.energy.consumeExcludingNetworkAtCell :id=sandkit-api-energy-consumeexcludingnetworkatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L46" target="_blank" rel="noopener">energy.d.ts:46</a></p>
 
@@ -4312,7 +4312,7 @@ Consumes energy from networks other than the one at the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.energy.getNetworkAtCell :id=sandkit.api.energy.getnetworkatcell
+#### sandkit.api.energy.getNetworkAtCell :id=sandkit-api-energy-getnetworkatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L62" target="_blank" rel="noopener">energy.d.ts:62</a></p>
 
@@ -4351,7 +4351,7 @@ for (const entry of network) {
 
 <div class="smt-member-card">
 
-#### sandkit.api.energy.getNetworkFreeCapacityAtCell :id=sandkit.api.energy.getnetworkfreecapacityatcell
+#### sandkit.api.energy.getNetworkFreeCapacityAtCell :id=sandkit-api-energy-getnetworkfreecapacityatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/energy.d.ts#L72" target="_blank" rel="noopener">energy.d.ts:72</a></p>
 
@@ -4389,7 +4389,7 @@ Available as `sandkit.api.entities`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.entities.Entity :id=sandkit.api.entities.entity
+#### sandkit.api.entities.Entity :id=sandkit-api-entities-entity
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L70" target="_blank" rel="noopener">entities.d.ts:70</a></p>
 
@@ -4429,7 +4429,7 @@ Active entity instance in the world.
 
 <div class="smt-member-card">
 
-#### sandkit.api.entities.getById :id=sandkit.api.entities.getbyid
+#### sandkit.api.entities.getById :id=sandkit-api-entities-getbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L14" target="_blank" rel="noopener">entities.d.ts:14</a></p>
 
@@ -4453,13 +4453,13 @@ getById(entityId: number): Entity | undefined
 
 Return one live entity by runtime id.
 
-[`Entity`](?id=sandkit.api.entities.entity) &#124; `undefined`
+[`Entity`](?id=sandkit-api-entities-entity) &#124; `undefined`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.entities.getAllByType :id=sandkit.api.entities.getallbytype
+#### sandkit.api.entities.getAllByType :id=sandkit-api-entities-getallbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L22" target="_blank" rel="noopener">entities.d.ts:22</a></p>
 
@@ -4483,13 +4483,13 @@ getAllByType(entityTypeId: string): Entity[]
 
 Return all live entities of one type.
 
-[`Entity`](?id=sandkit.api.entities.entity)[]
+[`Entity`](?id=sandkit-api-entities-entity)[]
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.entities.spawnAtWorld :id=sandkit.api.entities.spawnatworld
+#### sandkit.api.entities.spawnAtWorld :id=sandkit-api-entities-spawnatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L33" target="_blank" rel="noopener">entities.d.ts:33</a></p>
 
@@ -4519,13 +4519,13 @@ spawnAtWorld(entityTypeId: string, worldX: number, worldY: number): Entity
 
 Spawn an entity at world position.
 
-[`Entity`](?id=sandkit.api.entities.entity) The spawned entity instance.
+[`Entity`](?id=sandkit-api-entities-entity) The spawned entity instance.
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.entities.remove :id=sandkit.api.entities.remove
+#### sandkit.api.entities.remove :id=sandkit-api-entities-remove
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L41" target="_blank" rel="noopener">entities.d.ts:41</a></p>
 
@@ -4553,7 +4553,7 @@ Remove an entity from the world.
 
 <div class="smt-member-card">
 
-#### sandkit.api.entities.launch :id=sandkit.api.entities.launch
+#### sandkit.api.entities.launch :id=sandkit-api-entities-launch
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L51" target="_blank" rel="noopener">entities.d.ts:51</a></p>
 
@@ -4587,7 +4587,7 @@ Launch an entity with angle and optional speed.
 
 <div class="smt-member-card">
 
-#### sandkit.api.entities.startCapture :id=sandkit.api.entities.startcapture
+#### sandkit.api.entities.startCapture :id=sandkit-api-entities-startcapture
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L59" target="_blank" rel="noopener">entities.d.ts:59</a></p>
 
@@ -4615,7 +4615,7 @@ Start capture for an entity (for example vacuum capture).
 
 <div class="smt-member-card">
 
-#### sandkit.api.entities.collect :id=sandkit.api.entities.collect
+#### sandkit.api.entities.collect :id=sandkit-api-entities-collect
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/entities.d.ts#L67" target="_blank" rel="noopener">entities.d.ts:67</a></p>
 
@@ -4652,7 +4652,7 @@ Main thread only. The `events` object is frozen; do not replace `on` or `emit`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.PlayerCollisionPreparePayload :id=sandkit.api.events.playercollisionpreparepayload
+#### sandkit.api.events.PlayerCollisionPreparePayload :id=sandkit-api-events-playercollisionpreparepayload
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L175" target="_blank" rel="noopener">events.d.ts:175</a></p>
 
@@ -4679,7 +4679,7 @@ Listeners may change `maxStepCells` (clamped 1–8) and phasing flags.
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.EventPayloadMap :id=sandkit.api.events.eventpayloadmap
+#### sandkit.api.events.EventPayloadMap :id=sandkit-api-events-eventpayloadmap
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L185" target="_blank" rel="noopener">events.d.ts:185</a></p>
 
@@ -4915,7 +4915,7 @@ Known event payloads. Unlisted ids still use `unknown`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.EventId :id=sandkit.api.events.eventid
+#### sandkit.api.events.EventId :id=sandkit-api-events-eventid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L285" target="_blank" rel="noopener">events.d.ts:285</a></p>
 
@@ -4933,7 +4933,7 @@ Known event names plus any custom string id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.EventPayload :id=sandkit.api.events.eventpayload
+#### sandkit.api.events.EventPayload :id=sandkit-api-events-eventpayload
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L288" target="_blank" rel="noopener">events.d.ts:288</a></p>
 
@@ -4953,7 +4953,7 @@ Event payload type for a given event id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.on :id=sandkit.api.events.on
+#### sandkit.api.events.on :id=sandkit-api-events-on
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L157" target="_blank" rel="noopener">events.d.ts:157</a></p>
 
@@ -4968,7 +4968,7 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| callback | <code>(`payload`: [`EventPayload`](?id=sandkit.api.events.eventpayload)&lt;`K`&gt;) =&gt; `void`</code> | Called when the event is emitted. |
+| callback | <code>(`payload`: [`EventPayload`](?id=sandkit-api-events-eventpayload)&lt;`K`&gt;) =&gt; `void`</code> | Called when the event is emitted. |
 
 <div class="smt-member-anchors">
 
@@ -4980,7 +4980,7 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 
 Subscribes to an event. Returns an unsubscribe function.
 
-`K` *extends* [`EventId`](?id=sandkit.api.events.eventid)
+`K` *extends* [`EventId`](?id=sandkit-api-events-eventid)
 
 () => `void`
 
@@ -5152,7 +5152,7 @@ api.events.on("resource:collected", (payload) => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.emit :id=sandkit.api.events.emit
+#### sandkit.api.events.emit :id=sandkit-api-events-emit
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/events.d.ts#L169" target="_blank" rel="noopener">events.d.ts:169</a></p>
 
@@ -5167,7 +5167,7 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| payload | <code>[`EventPayload`](?id=sandkit.api.events.eventpayload)&lt;`K`&gt;</code> | Serializable payload passed to listeners. |
+| payload | <code>[`EventPayload`](?id=sandkit-api-events-eventpayload)&lt;`K`&gt;</code> | Serializable payload passed to listeners. |
 
 <div class="smt-member-anchors">
 
@@ -5179,7 +5179,7 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 
 Emits an event with a payload to all subscribers.
 
-`K` *extends* [`EventId`](?id=sandkit.api.events.eventid)
+`K` *extends* [`EventId`](?id=sandkit-api-events-eventid)
 
 </div>
 
@@ -5194,7 +5194,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.excavation.ExcavationProfileDefinitionV1 :id=sandkit.api.excavation.excavationprofiledefinitionv1
+#### sandkit.api.excavation.ExcavationProfileDefinitionV1 :id=sandkit-api-excavation-excavationprofiledefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L48" target="_blank" rel="noopener">excavation.d.ts:48</a></p>
 
@@ -5223,7 +5223,7 @@ Excavation tool profile definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.excavation.ExcavationProfileOptions :id=sandkit.api.excavation.excavationprofileoptions
+#### sandkit.api.excavation.ExcavationProfileOptions :id=sandkit-api-excavation-excavationprofileoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L60" target="_blank" rel="noopener">excavation.d.ts:60</a></p>
 
@@ -5261,7 +5261,7 @@ Options attached to an excavation profile definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.excavation.ExcavationTerrainRule :id=sandkit.api.excavation.excavationterrainrule
+#### sandkit.api.excavation.ExcavationTerrainRule :id=sandkit-api-excavation-excavationterrainrule
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L72" target="_blank" rel="noopener">excavation.d.ts:72</a></p>
 
@@ -5292,7 +5292,7 @@ Terrain match rule within an excavation profile.
 
 <div class="smt-member-card">
 
-#### sandkit.api.excavation.registerProfile :id=sandkit.api.excavation.registerprofile
+#### sandkit.api.excavation.registerProfile :id=sandkit-api-excavation-registerprofile
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/excavation.d.ts#L45" target="_blank" rel="noopener">excavation.d.ts:45</a></p>
 
@@ -5307,7 +5307,7 @@ registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | id | `string` | Unique profile id (1–128 chars: letters, numbers, `.`, `_`, `:`, `-`). |
-| definition | <code>[`ExcavationProfileDefinitionV1`](?id=sandkit.api.excavation.excavationprofiledefinitionv1)</code> | Pattern, power, terrain rules, and profile options. |
+| definition | <code>[`ExcavationProfileDefinitionV1`](?id=sandkit-api-excavation-excavationprofiledefinitionv1)</code> | Pattern, power, terrain rules, and profile options. |
 
 <div class="smt-member-anchors">
 
@@ -5362,7 +5362,7 @@ Available as `sandkit.api.factory`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.factory.FactoryProcessId :id=sandkit.api.factory.factoryprocessid
+#### sandkit.api.factory.FactoryProcessId :id=sandkit-api-factory-factoryprocessid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L31" target="_blank" rel="noopener">factory.d.ts:31</a></p>
 
@@ -5382,7 +5382,7 @@ Built-in factory process identifiers.
 
 <div class="smt-member-card">
 
-#### sandkit.api.factory.getLevel :id=sandkit.api.factory.getlevel
+#### sandkit.api.factory.getLevel :id=sandkit-api-factory-getlevel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L12" target="_blank" rel="noopener">factory.d.ts:12</a></p>
 
@@ -5400,7 +5400,7 @@ Return the current factory level.
 
 <div class="smt-member-card">
 
-#### sandkit.api.factory.getProcessCount :id=sandkit.api.factory.getprocesscount
+#### sandkit.api.factory.getProcessCount :id=sandkit-api-factory-getprocesscount
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L20" target="_blank" rel="noopener">factory.d.ts:20</a></p>
 
@@ -5414,7 +5414,7 @@ getProcessCount(processId: FactoryProcessId): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| processId | <code>[`FactoryProcessId`](?id=sandkit.api.factory.factoryprocessid)</code> | Built-in factory process id. |
+| processId | <code>[`FactoryProcessId`](?id=sandkit-api-factory-factoryprocessid)</code> | Built-in factory process id. |
 
 <div class="smt-member-anchors">
 
@@ -5428,7 +5428,7 @@ Return completed count for a factory process.
 
 <div class="smt-member-card">
 
-#### sandkit.api.factory.getProcessRate :id=sandkit.api.factory.getprocessrate
+#### sandkit.api.factory.getProcessRate :id=sandkit-api-factory-getprocessrate
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/factory.d.ts#L28" target="_blank" rel="noopener">factory.d.ts:28</a></p>
 
@@ -5442,7 +5442,7 @@ getProcessRate(processId: FactoryProcessId): number
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| processId | <code>[`FactoryProcessId`](?id=sandkit.api.factory.factoryprocessid)</code> | Built-in factory process id. |
+| processId | <code>[`FactoryProcessId`](?id=sandkit-api-factory-factoryprocessid)</code> | Built-in factory process id. |
 
 <div class="smt-member-anchors">
 
@@ -5465,7 +5465,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.fire.canBurnElementAtCell :id=sandkit.api.fire.canburnelementatcell
+#### sandkit.api.fire.canBurnElementAtCell :id=sandkit-api-fire-canburnelementatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L16" target="_blank" rel="noopener">fire.d.ts:16</a></p>
 
@@ -5493,7 +5493,7 @@ Returns true when the element at the cell can burn.
 
 <div class="smt-member-card">
 
-#### sandkit.api.fire.burnElementAtCell :id=sandkit.api.fire.burnelementatcell
+#### sandkit.api.fire.burnElementAtCell :id=sandkit-api-fire-burnelementatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L25" target="_blank" rel="noopener">fire.d.ts:25</a></p>
 
@@ -5521,7 +5521,7 @@ Burn the element at the cell. Main-entry writes are deferred; reads see the old 
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.fire.burnElementAtCellWhenIdle~~ :id=sandkit.api.fire.burnelementatcellwhenidle
+#### ~~sandkit.api.fire.burnElementAtCellWhenIdle~~ :id=sandkit-api-fire-burnelementatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/fire.d.ts#L31" target="_blank" rel="noopener">fire.d.ts:31</a></p>
 
@@ -5566,7 +5566,7 @@ Available as `sandkit.api.game`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.game.GameStartOptions :id=sandkit.api.game.gamestartoptions
+#### sandkit.api.game.GameStartOptions :id=sandkit-api-game-gamestartoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L22" target="_blank" rel="noopener">game.d.ts:22</a></p>
 
@@ -5580,7 +5580,7 @@ Available as `sandkit.api.game`.
 
 </div>
 
-Options for [start](?id=sandkit.api.game.start).
+Options for [start](?id=sandkit-api-game-start).
 
 </div>
 
@@ -5588,7 +5588,7 @@ Options for [start](?id=sandkit.api.game.start).
 
 <div class="smt-member-card">
 
-#### sandkit.api.game.start :id=sandkit.api.game.start
+#### sandkit.api.game.start :id=sandkit-api-game-start
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/game.d.ts#L19" target="_blank" rel="noopener">game.d.ts:19</a></p>
 
@@ -5602,7 +5602,7 @@ start(options?: GameStartOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options? | <code>[`GameStartOptions`](?id=sandkit.api.game.gamestartoptions)</code> | Optional session start flags. |
+| options? | <code>[`GameStartOptions`](?id=sandkit-api-game-gamestartoptions)</code> | Optional session start flags. |
 
 <div class="smt-member-anchors">
 
@@ -5631,7 +5631,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.gameConfig.get :id=sandkit.api.gameConfig.get
+#### sandkit.api.gameConfig.get :id=sandkit-api-gameConfig-get
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L12" target="_blank" rel="noopener">gameconfig.d.ts:12</a></p>
 
@@ -5661,7 +5661,7 @@ Returns a config value by key, or undefined when missing.
 
 <div class="smt-member-card">
 
-#### sandkit.api.gameConfig.getAll :id=sandkit.api.gameConfig.getall
+#### sandkit.api.gameConfig.getAll :id=sandkit-api-gameConfig-getall
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/gameconfig.d.ts#L14" target="_blank" rel="noopener">gameconfig.d.ts:14</a></p>
 
@@ -5691,14 +5691,14 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.GridMutationWriter :id=sandkit.api.grid.gridmutationwriter
+#### sandkit.api.grid.GridMutationWriter :id=sandkit-api-grid-gridmutationwriter
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L150" target="_blank" rel="noopener">grid.d.ts:150</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
-| elements | <code>GridMutationWriterElements</code> | Element cell mutations inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
-| terrains | <code>GridMutationWriterTerrains</code> | Terrain cell mutations inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+| elements | <code>GridMutationWriterElements</code> | Element cell mutations inside a [mutate](?id=sandkit-api-grid-mutate) callback. |
+| terrains | <code>GridMutationWriterTerrains</code> | Terrain cell mutations inside a [mutate](?id=sandkit-api-grid-mutate) callback. |
 
 <div class="smt-member-anchors">
 
@@ -5708,21 +5708,21 @@ Main thread only.
 
 </div>
 
-Deferred element and terrain mutations passed to [mutate](?id=sandkit.api.grid.mutate).
+Deferred element and terrain mutations passed to [mutate](?id=sandkit-api-grid-mutate).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.GridMutationWriterElements :id=sandkit.api.grid.gridmutationwriterelements
+#### sandkit.api.grid.GridMutationWriterElements :id=sandkit-api-grid-gridmutationwriterelements
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L158" target="_blank" rel="noopener">grid.d.ts:158</a></p>
 
 | Method | Signature | Description |
 | --- | --- | --- |
-| createAtCell() | <code>(...args: number, number, [ElementRef, ElementCreateOptions]): void</code> | Create an element at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
-| replaceAtCell() | <code>(...args: number, number, [ElementRef, ElementCreateOptions]): void</code> | Replace the element at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
-| removeAtCell() | <code>(...args: number, number, [ElementRemovalOptions]): void</code> | Remove the element at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+| createAtCell() | <code>(...args: number, number, [ElementRef, ElementCreateOptions]): void</code> | Create an element at a cell inside a [mutate](?id=sandkit-api-grid-mutate) callback. |
+| replaceAtCell() | <code>(...args: number, number, [ElementRef, ElementCreateOptions]): void</code> | Replace the element at a cell inside a [mutate](?id=sandkit-api-grid-mutate) callback. |
+| removeAtCell() | <code>(...args: number, number, [ElementRemovalOptions]): void</code> | Remove the element at a cell inside a [mutate](?id=sandkit-api-grid-mutate) callback. |
 
 <div class="smt-member-anchors">
 
@@ -5734,21 +5734,21 @@ Deferred element and terrain mutations passed to [mutate](?id=sandkit.api.grid.m
 
 </div>
 
-Element writers available on [GridMutationWriter.elements](?id=sandkit.api.grid.elements).
+Element writers available on [GridMutationWriter.elements](?id=sandkit-api-grid-elements).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.GridMutationWriterTerrains :id=sandkit.api.grid.gridmutationwriterterrains
+#### sandkit.api.grid.GridMutationWriterTerrains :id=sandkit-api-grid-gridmutationwriterterrains
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L205" target="_blank" rel="noopener">grid.d.ts:205</a></p>
 
 | Method | Signature | Description |
 | --- | --- | --- |
-| createAtCell() | <code>(...args: number, number, [TerrainRef, TerrainMutationOptions]): void</code> | Create terrain at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
-| replaceAtCell() | <code>(...args: number, number, [TerrainRef, TerrainMutationOptions]): void</code> | Replace terrain at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
-| removeAtCell() | <code>(...args: number, number, [TerrainMutationOptions]): void</code> | Remove terrain at a cell inside a [mutate](?id=sandkit.api.grid.mutate) callback. |
+| createAtCell() | <code>(...args: number, number, [TerrainRef, TerrainMutationOptions]): void</code> | Create terrain at a cell inside a [mutate](?id=sandkit-api-grid-mutate) callback. |
+| replaceAtCell() | <code>(...args: number, number, [TerrainRef, TerrainMutationOptions]): void</code> | Replace terrain at a cell inside a [mutate](?id=sandkit-api-grid-mutate) callback. |
+| removeAtCell() | <code>(...args: number, number, [TerrainMutationOptions]): void</code> | Remove terrain at a cell inside a [mutate](?id=sandkit-api-grid-mutate) callback. |
 
 <div class="smt-member-anchors">
 
@@ -5760,13 +5760,13 @@ Element writers available on [GridMutationWriter.elements](?id=sandkit.api.grid.
 
 </div>
 
-Terrain writers available on [GridMutationWriter.terrains](?id=sandkit.api.grid.terrains).
+Terrain writers available on [GridMutationWriter.terrains](?id=sandkit-api-grid-terrains).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.GridDimensions :id=sandkit.api.grid.griddimensions
+#### sandkit.api.grid.GridDimensions :id=sandkit-api-grid-griddimensions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L74" target="_blank" rel="noopener">grid.d.ts:74</a></p>
 
@@ -5789,7 +5789,7 @@ World grid width and height in cells.
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.ExcavateOptions :id=sandkit.api.grid.excavateoptions
+#### sandkit.api.grid.ExcavateOptions :id=sandkit-api-grid-excavateoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L82" target="_blank" rel="noopener">grid.d.ts:82</a></p>
 
@@ -5801,7 +5801,7 @@ World grid width and height in cells.
 | useLiteralOutVelocity? | <code>boolean</code> | Use outVelocity literally instead of deriving ejection speed. |
 | destroyNonDestructible? | <code>boolean</code> | Allow removing terrain marked non-destructible. |
 | forceRemoveAll? | <code>boolean</code> | Force-remove all matched cells regardless of normal rules. |
-| drillTierDamage? | <code>number</code> | Extra drill-tier damage when [fromDrill](?id=sandkit.api.grid.fromdrill) is true. Clamped to 0–1000. |
+| drillTierDamage? | <code>number</code> | Extra drill-tier damage when [fromDrill](?id=sandkit-api-grid-fromdrill) is true. Clamped to 0–1000. |
 
 <div class="smt-member-anchors">
 
@@ -5821,7 +5821,7 @@ World grid width and height in cells.
 
 </div>
 
-Flags that control how [excavateAtCell](?id=sandkit.api.grid.excavateatcell) resolves damage and drops.
+Flags that control how [excavateAtCell](?id=sandkit-api-grid-excavateatcell) resolves damage and drops.
 
 </div>
 
@@ -5829,7 +5829,7 @@ Flags that control how [excavateAtCell](?id=sandkit.api.grid.excavateatcell) res
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.CellId :id=sandkit.api.grid.cellid
+#### sandkit.api.grid.CellId :id=sandkit-api-grid-cellid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L71" target="_blank" rel="noopener">grid.d.ts:71</a></p>
 
@@ -5841,7 +5841,7 @@ CellId = CellId
 
 </div>
 
-Packed cell id from [getCellIdAtCell](?id=sandkit.api.grid.getcellidatcell).
+Packed cell id from [getCellIdAtCell](?id=sandkit-api-grid-getcellidatcell).
 
 </div>
 
@@ -5849,7 +5849,7 @@ Packed cell id from [getCellIdAtCell](?id=sandkit.api.grid.getcellidatcell).
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.mutate :id=sandkit.api.grid.mutate
+#### sandkit.api.grid.mutate :id=sandkit-api-grid-mutate
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L80" target="_blank" rel="noopener">grid.d.ts:80</a></p>
 
@@ -5863,7 +5863,7 @@ mutate(callback: (writer: GridMutationWriter) => void): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | <code>(`writer`: [`GridMutationWriter`](?id=sandkit.api.grid.gridmutationwriter)) =&gt; `void`</code> | Receives a writer for element and terrain cell mutations. |
+| callback | <code>(`writer`: [`GridMutationWriter`](?id=sandkit-api-grid-gridmutationwriter)) =&gt; `void`</code> | Receives a writer for element and terrain cell mutations. |
 
 <div class="smt-member-anchors">
 
@@ -5903,7 +5903,7 @@ api.events.on("item:used", ({ itemId, cellX, cellY }) => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.revealFogAtCell :id=sandkit.api.grid.revealfogatcell
+#### sandkit.api.grid.revealFogAtCell :id=sandkit-api-grid-revealfogatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L89" target="_blank" rel="noopener">grid.d.ts:89</a></p>
 
@@ -5931,7 +5931,7 @@ Reveal fog of war at a cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.redrawAroundCell :id=sandkit.api.grid.redrawaroundcell
+#### sandkit.api.grid.redrawAroundCell :id=sandkit-api-grid-redrawaroundcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L99" target="_blank" rel="noopener">grid.d.ts:99</a></p>
 
@@ -5959,7 +5959,7 @@ Request redraw around a cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.forEachCellInCircle :id=sandkit.api.grid.foreachcellincircle
+#### sandkit.api.grid.forEachCellInCircle :id=sandkit-api-grid-foreachcellincircle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L110" target="_blank" rel="noopener">grid.d.ts:110</a></p>
 
@@ -5996,7 +5996,7 @@ Calls the callback for each cell inside a circle.
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.forEachCellInRectangle :id=sandkit.api.grid.foreachcellinrectangle
+#### sandkit.api.grid.forEachCellInRectangle :id=sandkit-api-grid-foreachcellinrectangle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L127" target="_blank" rel="noopener">grid.d.ts:127</a></p>
 
@@ -6024,7 +6024,7 @@ Calls the callback for each cell in a rectangle.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.grid.forEachCellInRect~~ :id=sandkit.api.grid.foreachcellinrect
+#### ~~sandkit.api.grid.forEachCellInRect~~ :id=sandkit-api-grid-foreachcellinrect
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/grid.d.ts#L140" target="_blank" rel="noopener">grid.d.ts:140</a></p>
 
@@ -6059,7 +6059,7 @@ forEachCellInRect(...args: number, number, number, number, (...args: [CellCoordi
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.getCellIdAtCell :id=sandkit.api.grid.getcellidatcell
+#### sandkit.api.grid.getCellIdAtCell :id=sandkit-api-grid-getcellidatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L21" target="_blank" rel="noopener">grid.d.ts:21</a></p>
 
@@ -6089,7 +6089,7 @@ Return the packed cell id at grid coordinates.
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.isCellEmptyAtCell :id=sandkit.api.grid.iscellemptyatcell
+#### sandkit.api.grid.isCellEmptyAtCell :id=sandkit-api-grid-iscellemptyatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L30" target="_blank" rel="noopener">grid.d.ts:30</a></p>
 
@@ -6117,7 +6117,7 @@ Return true when the cell has no element or terrain content.
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.isTerrainAtCell :id=sandkit.api.grid.isterrainatcell
+#### sandkit.api.grid.isTerrainAtCell :id=sandkit-api-grid-isterrainatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L39" target="_blank" rel="noopener">grid.d.ts:39</a></p>
 
@@ -6145,7 +6145,7 @@ Return true when the cell holds terrain (not an element).
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.reportActivityAtCell :id=sandkit.api.grid.reportactivityatcell
+#### sandkit.api.grid.reportActivityAtCell :id=sandkit-api-grid-reportactivityatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L48" target="_blank" rel="noopener">grid.d.ts:48</a></p>
 
@@ -6173,7 +6173,7 @@ Mark the cell active for simulation this tick.
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.excavateAtCell :id=sandkit.api.grid.excavateatcell
+#### sandkit.api.grid.excavateAtCell :id=sandkit-api-grid-excavateatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L60" target="_blank" rel="noopener">grid.d.ts:60</a></p>
 
@@ -6187,7 +6187,7 @@ excavateAtCell(...args: number, number, [Vector2, number, ExcavateOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=sandkit.api.grid.excavateoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`Vector2`](api/shared.player.md?id=vector2), `number`, [`ExcavateOptions`](?id=sandkit-api-grid-excavateoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -6201,7 +6201,7 @@ Apply excavation damage and eject velocity at a cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.grid.getDimensions :id=sandkit.api.grid.getdimensions
+#### sandkit.api.grid.getDimensions :id=sandkit-api-grid-getdimensions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/grid.d.ts#L68" target="_blank" rel="noopener">grid.d.ts:68</a></p>
 
@@ -6215,7 +6215,7 @@ getDimensions(): GridDimensions
 
 Return the world grid size in cells.
 
-[`GridDimensions`](?id=sandkit.api.grid.griddimensions)
+[`GridDimensions`](?id=sandkit-api-grid-griddimensions)
 
 </div>
 
@@ -6230,13 +6230,13 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.HookContext :id=sandkit.api.hooks.hookcontext
+#### sandkit.api.hooks.HookContext :id=sandkit-api-hooks-hookcontext
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L395" target="_blank" rel="noopener">hooks.d.ts:395</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cancelled | <code>boolean</code> | True after [cancel](?id=sandkit.api.hooks.cancel) was called on this context. |
+| cancelled | <code>boolean</code> | True after [cancel](?id=sandkit-api-hooks-cancel) was called on this context. |
 
 <div class="smt-member-anchors">
 
@@ -6260,7 +6260,7 @@ Context passed to intercept hook callbacks.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.HookOptions :id=sandkit.api.hooks.hookoptions
+#### sandkit.api.hooks.HookOptions :id=sandkit-api-hooks-hookoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L403" target="_blank" rel="noopener">hooks.d.ts:403</a></p>
 
@@ -6286,7 +6286,7 @@ Options shared by intercept and modify hooks.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.InterceptHookMap :id=sandkit.api.hooks.intercepthookmap
+#### sandkit.api.hooks.InterceptHookMap :id=sandkit-api-hooks-intercepthookmap
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L495" target="_blank" rel="noopener">hooks.d.ts:495</a></p>
 
@@ -6609,7 +6609,7 @@ Intercept hook argument shapes keyed by hook id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.ModifierHookMap :id=sandkit.api.hooks.modifierhookmap
+#### sandkit.api.hooks.ModifierHookMap :id=sandkit-api-hooks-modifierhookmap
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L581" target="_blank" rel="noopener">hooks.d.ts:581</a></p>
 
@@ -6936,7 +6936,7 @@ Modify hook argument shapes keyed by hook id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.InterceptHookOptions :id=sandkit.api.hooks.intercepthookoptions
+#### sandkit.api.hooks.InterceptHookOptions :id=sandkit-api-hooks-intercepthookoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L410" target="_blank" rel="noopener">hooks.d.ts:410</a></p>
 
@@ -6948,15 +6948,15 @@ sandkit.api.hooks.InterceptHookOptions<K *extends* InterceptHookId> = HookOption
 
 </div>
 
-Options for [intercept](?id=sandkit.api.hooks.intercept).
+Options for [intercept](?id=sandkit-api-hooks-intercept).
 
-`K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.intercepthookid)
+`K` *extends* [`InterceptHookId`](?id=sandkit-api-hooks-intercepthookid)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.ModifyHookOptions :id=sandkit.api.hooks.modifyhookoptions
+#### sandkit.api.hooks.ModifyHookOptions :id=sandkit-api-hooks-modifyhookoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L422" target="_blank" rel="noopener">hooks.d.ts:422</a></p>
 
@@ -6968,13 +6968,13 @@ ModifyHookOptions = HookOptions & { weaponIds?: string[]; priority?: number; } |
 
 </div>
 
-Options for [modify](?id=sandkit.api.hooks.modify).
+Options for [modify](?id=sandkit-api-hooks-modify).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.InterceptHookId :id=sandkit.api.hooks.intercepthookid
+#### sandkit.api.hooks.InterceptHookId :id=sandkit-api-hooks-intercepthookid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L432" target="_blank" rel="noopener">hooks.d.ts:432</a></p>
 
@@ -6992,7 +6992,7 @@ Known main-thread intercept hook ids plus custom strings.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.ModifyHookId :id=sandkit.api.hooks.modifyhookid
+#### sandkit.api.hooks.ModifyHookId :id=sandkit-api-hooks-modifyhookid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L464" target="_blank" rel="noopener">hooks.d.ts:464</a></p>
 
@@ -7010,7 +7010,7 @@ Known main-thread modify hook ids plus custom strings.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.InterceptHookArgs :id=sandkit.api.hooks.intercepthookargs
+#### sandkit.api.hooks.InterceptHookArgs :id=sandkit-api-hooks-intercepthookargs
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L718" target="_blank" rel="noopener">hooks.d.ts:718</a></p>
 
@@ -7024,13 +7024,13 @@ sandkit.api.hooks.InterceptHookArgs<K *extends* InterceptHookId> = K *extends* k
 
 Intercept hook args for a given hook id.
 
-`K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.intercepthookid)
+`K` *extends* [`InterceptHookId`](?id=sandkit-api-hooks-intercepthookid)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.ModifyHookArgs :id=sandkit.api.hooks.modifyhookargs
+#### sandkit.api.hooks.ModifyHookArgs :id=sandkit-api-hooks-modifyhookargs
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L723" target="_blank" rel="noopener">hooks.d.ts:723</a></p>
 
@@ -7044,7 +7044,7 @@ sandkit.api.hooks.ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof M
 
 Modify hook args for a given hook id.
 
-`K` *extends* [`ModifyHookId`](?id=sandkit.api.hooks.modifyhookid)
+`K` *extends* [`ModifyHookId`](?id=sandkit-api-hooks-modifyhookid)
 
 </div>
 
@@ -7052,7 +7052,7 @@ Modify hook args for a given hook id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.intercept :id=sandkit.api.hooks.intercept
+#### sandkit.api.hooks.intercept :id=sandkit-api-hooks-intercept
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L177" target="_blank" rel="noopener">hooks.d.ts:177</a></p>
 
@@ -7067,8 +7067,8 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 | Argument | Type | Description |
 | --- | --- | --- |
 | hookId | `K` | Registered hook identifier. |
-| callback | <code>(`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.intercepthookargs)&lt;`K`&gt;, `context`: [`HookContext`](?id=sandkit.api.hooks.hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
-| options? | <code>[`InterceptHookOptions`](?id=sandkit.api.hooks.intercepthookoptions)&lt;`K`&gt;</code> | Optional priority and filter options. |
+| callback | <code>(`args`: [`InterceptHookArgs`](?id=sandkit-api-hooks-intercepthookargs)&lt;`K`&gt;, `context`: [`HookContext`](?id=sandkit-api-hooks-hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
+| options? | <code>[`InterceptHookOptions`](?id=sandkit-api-hooks-intercepthookoptions)&lt;`K`&gt;</code> | Optional priority and filter options. |
 
 <div class="smt-member-anchors">
 
@@ -7082,7 +7082,7 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 
 Registers an intercept hook. Returns an unsubscribe function.
 
-`K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.intercepthookid)
+`K` *extends* [`InterceptHookId`](?id=sandkit-api-hooks-intercepthookid)
 
 () => `void`
 
@@ -7273,7 +7273,7 @@ api.hooks.intercept("progression:purchase", (args, context) => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.modify :id=sandkit.api.hooks.modify
+#### sandkit.api.hooks.modify :id=sandkit-api-hooks-modify
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/hooks.d.ts#L388" target="_blank" rel="noopener">hooks.d.ts:388</a></p>
 
@@ -7288,8 +7288,8 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 | Argument | Type | Description |
 | --- | --- | --- |
 | hookId | `K` | Registered hook identifier. |
-| callback | <code>(`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.modifyhookargs)&lt;`K`&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
-| options? | <code>[`ModifyHookOptions`](?id=sandkit.api.hooks.modifyhookoptions)</code> | Optional priority and filter options. |
+| callback | <code>(`args`: [`ModifyHookArgs`](?id=sandkit-api-hooks-modifyhookargs)&lt;`K`&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
+| options? | <code>[`ModifyHookOptions`](?id=sandkit-api-hooks-modifyhookoptions)</code> | Optional priority and filter options. |
 
 <div class="smt-member-anchors">
 
@@ -7303,7 +7303,7 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 
 Registers a modifier hook. Returns an unsubscribe function.
 
-`K` *extends* [`ModifyHookId`](?id=sandkit.api.hooks.modifyhookid)
+`K` *extends* [`ModifyHookId`](?id=sandkit-api-hooks-modifyhookid)
 
 () => `void`
 
@@ -7540,7 +7540,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.I18nNumberFormatOptions :id=sandkit.api.i18n.i18nnumberformatoptions
+#### sandkit.api.i18n.I18nNumberFormatOptions :id=sandkit-api-i18n-i18nnumberformatoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L207" target="_blank" rel="noopener">i18n.d.ts:207</a></p>
 
@@ -7560,7 +7560,7 @@ Main thread only.
 
 </div>
 
-Number format options for [formatNumber](?id=sandkit.api.i18n.formatnumber).
+Number format options for [formatNumber](?id=sandkit-api-i18n-formatnumber).
 
 ##### Indexable
 
@@ -7574,7 +7574,7 @@ Number format options for [formatNumber](?id=sandkit.api.i18n.formatnumber).
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.Locale :id=sandkit.api.i18n.locale
+#### sandkit.api.i18n.Locale :id=sandkit-api-i18n-locale
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L204" target="_blank" rel="noopener">i18n.d.ts:204</a></p>
 
@@ -7594,7 +7594,7 @@ Locale code. `"en"` autocompletes; any locale string is allowed.
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.t :id=sandkit.api.i18n.t
+#### sandkit.api.i18n.t :id=sandkit-api-i18n-t
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L22" target="_blank" rel="noopener">i18n.d.ts:22</a></p>
 
@@ -7633,7 +7633,7 @@ const message = api.i18n.t("mods|example|count", {
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.register :id=sandkit.api.i18n.register
+#### sandkit.api.i18n.register :id=sandkit-api-i18n-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L38" target="_blank" rel="noopener">i18n.d.ts:38</a></p>
 
@@ -7647,7 +7647,7 @@ register(locale: Locale, translations: Record<string, string>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| locale | <code>[`Locale`](?id=sandkit.api.i18n.locale)</code> | Locale code (e.g. `en`). |
+| locale | <code>[`Locale`](?id=sandkit-api-i18n-locale)</code> | Locale code (e.g. `en`). |
 | translations | `Record`<`string`, `string`> | Map of keys to translated strings. |
 
 <div class="smt-member-anchors">
@@ -7672,7 +7672,7 @@ api.i18n.register("en", {
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.getLocale :id=sandkit.api.i18n.getlocale
+#### sandkit.api.i18n.getLocale :id=sandkit-api-i18n-getlocale
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L44" target="_blank" rel="noopener">i18n.d.ts:44</a></p>
 
@@ -7686,13 +7686,13 @@ getLocale(): Locale
 
 Returns the active locale code.
 
-[`Locale`](?id=sandkit.api.i18n.locale)
+[`Locale`](?id=sandkit-api-i18n-locale)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.hasTranslation :id=sandkit.api.i18n.hastranslation
+#### sandkit.api.i18n.hasTranslation :id=sandkit-api-i18n-hastranslation
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L53" target="_blank" rel="noopener">i18n.d.ts:53</a></p>
 
@@ -7707,7 +7707,7 @@ hasTranslation(key: string, locale?: Locale): boolean
 | Argument | Type | Description |
 | --- | --- | --- |
 | key | `string` | Translation key. |
-| locale? | <code>[`Locale`](?id=sandkit.api.i18n.locale)</code> | Optional locale; defaults to the active locale. |
+| locale? | <code>[`Locale`](?id=sandkit-api-i18n-locale)</code> | Optional locale; defaults to the active locale. |
 
 <div class="smt-member-anchors">
 
@@ -7723,7 +7723,7 @@ Returns true when a translation exists for the key.
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.setLocale :id=sandkit.api.i18n.setlocale
+#### sandkit.api.i18n.setLocale :id=sandkit-api-i18n-setlocale
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L61" target="_blank" rel="noopener">i18n.d.ts:61</a></p>
 
@@ -7737,7 +7737,7 @@ setLocale(locale: Locale): Promise<void>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| locale | <code>[`Locale`](?id=sandkit.api.i18n.locale)</code> | Locale code to activate. |
+| locale | <code>[`Locale`](?id=sandkit-api-i18n-locale)</code> | Locale code to activate. |
 
 <div class="smt-member-anchors">
 
@@ -7753,7 +7753,7 @@ Sets the active locale.
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.getLanguages :id=sandkit.api.i18n.getlanguages
+#### sandkit.api.i18n.getLanguages :id=sandkit-api-i18n-getlanguages
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L67" target="_blank" rel="noopener">i18n.d.ts:67</a></p>
 
@@ -7773,7 +7773,7 @@ Returns metadata for all known languages.
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.getAvailableLocales :id=sandkit.api.i18n.getavailablelocales
+#### sandkit.api.i18n.getAvailableLocales :id=sandkit-api-i18n-getavailablelocales
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L78" target="_blank" rel="noopener">i18n.d.ts:78</a></p>
 
@@ -7787,13 +7787,13 @@ getAvailableLocales(): Locale[]
 
 Returns locale codes that have registered translations.
 
-[`Locale`](?id=sandkit.api.i18n.locale)[]
+[`Locale`](?id=sandkit-api-i18n-locale)[]
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.formatNumber :id=sandkit.api.i18n.formatnumber
+#### sandkit.api.i18n.formatNumber :id=sandkit-api-i18n-formatnumber
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L94" target="_blank" rel="noopener">i18n.d.ts:94</a></p>
 
@@ -7808,7 +7808,7 @@ formatNumber(value: number, options?: I18nNumberFormatOptions): string
 | Argument | Type | Description |
 | --- | --- | --- |
 | value | `number` | Number to format. |
-| options? | <code>[`I18nNumberFormatOptions`](?id=sandkit.api.i18n.i18nnumberformatoptions)</code> | Intl-style number format options. |
+| options? | <code>[`I18nNumberFormatOptions`](?id=sandkit-api-i18n-i18nnumberformatoptions)</code> | Intl-style number format options. |
 
 <div class="smt-member-anchors">
 
@@ -7832,7 +7832,7 @@ const formatted = api.i18n.formatNumber(1234.5, {
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.joinKey :id=sandkit.api.i18n.joinkey
+#### sandkit.api.i18n.joinKey :id=sandkit-api-i18n-joinkey
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L102" target="_blank" rel="noopener">i18n.d.ts:102</a></p>
 
@@ -7860,7 +7860,7 @@ Joins key parts into a single translation key.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.i18n.key~~ :id=sandkit.api.i18n.key
+#### ~~sandkit.api.i18n.key~~ :id=sandkit-api-i18n-key
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L108" target="_blank" rel="noopener">i18n.d.ts:108</a></p>
 
@@ -7895,7 +7895,7 @@ key(...parts: string[]): string
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.getName :id=sandkit.api.i18n.getname
+#### sandkit.api.i18n.getName :id=sandkit-api-i18n-getname
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L124" target="_blank" rel="noopener">i18n.d.ts:124</a></p>
 
@@ -7932,7 +7932,7 @@ const name = api.i18n.getName({
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.getDescription :id=sandkit.api.i18n.getdescription
+#### sandkit.api.i18n.getDescription :id=sandkit-api-i18n-getdescription
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L132" target="_blank" rel="noopener">i18n.d.ts:132</a></p>
 
@@ -7960,7 +7960,7 @@ Returns the description from a definition with descriptionKey or description.
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.createTranslatable :id=sandkit.api.i18n.createtranslatable
+#### sandkit.api.i18n.createTranslatable :id=sandkit-api-i18n-createtranslatable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L144" target="_blank" rel="noopener">i18n.d.ts:144</a></p>
 
@@ -7993,7 +7993,7 @@ Creates a translatable string object with a fallback.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.i18n.translatable~~ :id=sandkit.api.i18n.translatable
+#### ~~sandkit.api.i18n.translatable~~ :id=sandkit-api-i18n-translatable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L153" target="_blank" rel="noopener">i18n.d.ts:153</a></p>
 
@@ -8033,7 +8033,7 @@ translatable(key: string, fallback: string): object
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.setGlobal :id=sandkit.api.i18n.setglobal
+#### sandkit.api.i18n.setGlobal :id=sandkit-api-i18n-setglobal
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L165" target="_blank" rel="noopener">i18n.d.ts:165</a></p>
 
@@ -8064,7 +8064,7 @@ Sets a global string or lazy resolver used in translations.
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.getGlobal :id=sandkit.api.i18n.getglobal
+#### sandkit.api.i18n.getGlobal :id=sandkit-api-i18n-getglobal
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L173" target="_blank" rel="noopener">i18n.d.ts:173</a></p>
 
@@ -8094,7 +8094,7 @@ Returns a global translation helper value.
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.removeGlobal :id=sandkit.api.i18n.removeglobal
+#### sandkit.api.i18n.removeGlobal :id=sandkit-api-i18n-removeglobal
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L181" target="_blank" rel="noopener">i18n.d.ts:181</a></p>
 
@@ -8122,7 +8122,7 @@ Removes a global translation helper value.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.i18n.clearGlobal~~ :id=sandkit.api.i18n.clearglobal
+#### ~~sandkit.api.i18n.clearGlobal~~ :id=sandkit-api-i18n-clearglobal
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L187" target="_blank" rel="noopener">i18n.d.ts:187</a></p>
 
@@ -8157,7 +8157,7 @@ clearGlobal(key: string): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.getGlobals :id=sandkit.api.i18n.getglobals
+#### sandkit.api.i18n.getGlobals :id=sandkit-api-i18n-getglobals
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L193" target="_blank" rel="noopener">i18n.d.ts:193</a></p>
 
@@ -8177,7 +8177,7 @@ Returns all global translation helper values.
 
 <div class="smt-member-card">
 
-#### sandkit.api.i18n.formatKeyForDisplay :id=sandkit.api.i18n.formatkeyfordisplay
+#### sandkit.api.i18n.formatKeyForDisplay :id=sandkit-api-i18n-formatkeyfordisplay
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/i18n.d.ts#L201" target="_blank" rel="noopener">i18n.d.ts:201</a></p>
 
@@ -8214,7 +8214,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.InputBindingHandlers :id=sandkit.api.input.inputbindinghandlers
+#### sandkit.api.input.InputBindingHandlers :id=sandkit-api-input-inputbindinghandlers
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L117" target="_blank" rel="noopener">input.d.ts:117</a></p>
 
@@ -8237,7 +8237,7 @@ Handlers invoked when a binding is pressed or released.
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.InputBindingDefinition :id=sandkit.api.input.inputbindingdefinition
+#### sandkit.api.input.InputBindingDefinition :id=sandkit-api-input-inputbindingdefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L125" target="_blank" rel="noopener">input.d.ts:125</a></p>
 
@@ -8274,7 +8274,7 @@ Definition for a registered input binding.
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.BindingId :id=sandkit.api.input.bindingid
+#### sandkit.api.input.BindingId :id=sandkit-api-input-bindingid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L96" target="_blank" rel="noopener">input.d.ts:96</a></p>
 
@@ -8292,7 +8292,7 @@ Binding id. Vanilla [KeyBindingEnum](api/sandkit.enums.KeyBinding.md) names auto
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.KeyCode :id=sandkit.api.input.keycode
+#### sandkit.api.input.KeyCode :id=sandkit-api-input-keycode
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L101" target="_blank" rel="noopener">input.d.ts:101</a></p>
 
@@ -8312,7 +8312,7 @@ KeyboardEvent.code, a modifier alias (`Shift`), or a chord (`Control+KeyC`).
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.registerBinding :id=sandkit.api.input.registerbinding
+#### sandkit.api.input.registerBinding :id=sandkit-api-input-registerbinding
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L31" target="_blank" rel="noopener">input.d.ts:31</a></p>
 
@@ -8326,9 +8326,9 @@ registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputB
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | Unique id for the binding (also used in settings). |
-| defaultKeys | <code>[`KeyCode`](?id=sandkit.api.input.keycode)[]</code> | Default key codes (for example `"Control+KeyC"`). |
-| definition | <code>[`InputBindingDefinition`](?id=sandkit.api.input.inputbindingdefinition)</code> | Display metadata and press/release handlers. |
+| bindingId | <code>[`BindingId`](?id=sandkit-api-input-bindingid)</code> | Unique id for the binding (also used in settings). |
+| defaultKeys | <code>[`KeyCode`](?id=sandkit-api-input-keycode)[]</code> | Default key codes (for example `"Control+KeyC"`). |
+| definition | <code>[`InputBindingDefinition`](?id=sandkit-api-input-inputbindingdefinition)</code> | Display metadata and press/release handlers. |
 
 <div class="smt-member-anchors">
 
@@ -8342,7 +8342,7 @@ registerBinding(bindingId: BindingId, defaultKeys: KeyCode[], definition: InputB
 
 Register a key binding and return its binding id.
 
-[`BindingId`](?id=sandkit.api.input.bindingid) The registered binding id.
+[`BindingId`](?id=sandkit-api-input-bindingid) The registered binding id.
 
 ##### Example
 
@@ -8364,7 +8364,7 @@ api.input.registerBinding("ExampleToggle", ["KeyO"], {
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.getMouseCellPosition :id=sandkit.api.input.getmousecellposition
+#### sandkit.api.input.getMouseCellPosition :id=sandkit-api-input-getmousecellposition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L41" target="_blank" rel="noopener">input.d.ts:41</a></p>
 
@@ -8384,7 +8384,7 @@ Cell `{ x, y }` under the cursor. x: number y: number
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.getBoundKeys :id=sandkit.api.input.getboundkeys
+#### sandkit.api.input.getBoundKeys :id=sandkit-api-input-getboundkeys
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L50" target="_blank" rel="noopener">input.d.ts:50</a></p>
 
@@ -8398,7 +8398,7 @@ getBoundKeys(bindingId: BindingId): KeyCode[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=sandkit-api-input-bindingid)</code> | Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -8408,13 +8408,13 @@ getBoundKeys(bindingId: BindingId): KeyCode[]
 
 Return the keys currently bound to a binding id.
 
-[`KeyCode`](?id=sandkit.api.input.keycode)[] Key strings from settings (for example `"KeyA"` or `"Shift"`). Session `input.keys` is keyed by `KeyboardEvent.code`. Modifier aliases (`Shift`, `Alt`, `Control`, `Meta`) expand to `ShiftLeft` / `ShiftRight` and the same for the other modifiers.
+[`KeyCode`](?id=sandkit-api-input-keycode)[] Key strings from settings (for example `"KeyA"` or `"Shift"`). Session `input.keys` is keyed by `KeyboardEvent.code`. Modifier aliases (`Shift`, `Alt`, `Control`, `Meta`) expand to `ShiftLeft` / `ShiftRight` and the same for the other modifiers.
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.getDisplayKey :id=sandkit.api.input.getdisplaykey
+#### sandkit.api.input.getDisplayKey :id=sandkit-api-input-getdisplaykey
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L58" target="_blank" rel="noopener">input.d.ts:58</a></p>
 
@@ -8428,7 +8428,7 @@ getDisplayKey(bindingId: BindingId, defaultLabel?: string): string
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=sandkit-api-input-bindingid)</code> | Registered binding id. |
 | defaultLabel? | `string` | Fallback label when no key is bound. |
 
 <div class="smt-member-anchors">
@@ -8447,7 +8447,7 @@ Human-readable key label for UI.
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.triggerBinding :id=sandkit.api.input.triggerbinding
+#### sandkit.api.input.triggerBinding :id=sandkit-api-input-triggerbinding
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L64" target="_blank" rel="noopener">input.d.ts:64</a></p>
 
@@ -8461,7 +8461,7 @@ triggerBinding(bindingId: BindingId): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=sandkit-api-input-bindingid)</code> | Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -8475,7 +8475,7 @@ Fire the binding down handler as if the key was pressed.
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.pressBinding :id=sandkit.api.input.pressbinding
+#### sandkit.api.input.pressBinding :id=sandkit-api-input-pressbinding
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L70" target="_blank" rel="noopener">input.d.ts:70</a></p>
 
@@ -8489,7 +8489,7 @@ pressBinding(bindingId: BindingId): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=sandkit-api-input-bindingid)</code> | Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -8503,7 +8503,7 @@ Fire the binding down handler without a matching release.
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.releaseBinding :id=sandkit.api.input.releasebinding
+#### sandkit.api.input.releaseBinding :id=sandkit-api-input-releasebinding
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L76" target="_blank" rel="noopener">input.d.ts:76</a></p>
 
@@ -8517,7 +8517,7 @@ releaseBinding(bindingId: BindingId): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| bindingId | <code>[`BindingId`](?id=sandkit.api.input.bindingid)</code> | Registered binding id. |
+| bindingId | <code>[`BindingId`](?id=sandkit-api-input-bindingid)</code> | Registered binding id. |
 
 <div class="smt-member-anchors">
 
@@ -8531,7 +8531,7 @@ Fire the binding up handler.
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.resetMouseState :id=sandkit.api.input.resetmousestate
+#### sandkit.api.input.resetMouseState :id=sandkit-api-input-resetmousestate
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L79" target="_blank" rel="noopener">input.d.ts:79</a></p>
 
@@ -8549,7 +8549,7 @@ Clear internal mouse button state.
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.isCtrlHeld :id=sandkit.api.input.isctrlheld
+#### sandkit.api.input.isCtrlHeld :id=sandkit-api-input-isctrlheld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L85" target="_blank" rel="noopener">input.d.ts:85</a></p>
 
@@ -8569,7 +8569,7 @@ True when the Ctrl modifier is down.
 
 <div class="smt-member-card">
 
-#### sandkit.api.input.isAltHeld :id=sandkit.api.input.isaltheld
+#### sandkit.api.input.isAltHeld :id=sandkit-api-input-isaltheld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/input.d.ts#L91" target="_blank" rel="noopener">input.d.ts:91</a></p>
 
@@ -8598,7 +8598,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.items.ItemDefinition :id=sandkit.api.items.itemdefinition
+#### sandkit.api.items.ItemDefinition :id=sandkit-api-items-itemdefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L10" target="_blank" rel="noopener">items.d.ts:10</a></p>
 
@@ -8631,7 +8631,7 @@ Definition for a mod-registered inventory item.
 
 <div class="smt-member-card">
 
-#### sandkit.api.items.ItemId :id=sandkit.api.items.itemid
+#### sandkit.api.items.ItemId :id=sandkit-api-items-itemid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L59" target="_blank" rel="noopener">items.d.ts:59</a></p>
 
@@ -8650,7 +8650,7 @@ Built-in [ItemIdEnum](api/sandkit.enums.ItemId.md) values autocomplete; custom s
 
 <div class="smt-member-card">
 
-#### sandkit.api.items.ItemType :id=sandkit.api.items.itemtype
+#### sandkit.api.items.ItemType :id=sandkit-api-items-itemtype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L64" target="_blank" rel="noopener">items.d.ts:64</a></p>
 
@@ -8669,7 +8669,7 @@ Built-in [ItemTypeEnum](api/sandkit.enums.ItemType.md) values autocomplete.
 
 <div class="smt-member-card">
 
-#### sandkit.api.items.ModItem :id=sandkit.api.items.moditem
+#### sandkit.api.items.ModItem :id=sandkit-api-items-moditem
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L66" target="_blank" rel="noopener">items.d.ts:66</a></p>
 
@@ -8689,7 +8689,7 @@ Runtime item instance (not yet typed in declarations).
 
 <div class="smt-member-card">
 
-#### sandkit.api.items.register :id=sandkit.api.items.register
+#### sandkit.api.items.register :id=sandkit-api-items-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L22" target="_blank" rel="noopener">items.d.ts:22</a></p>
 
@@ -8703,7 +8703,7 @@ register(definition: ItemDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)</code> | Item id, handlers, and display metadata. |
+| definition | <code>[`ItemDefinition`](?id=sandkit-api-items-itemdefinition)</code> | Item id, handlers, and display metadata. |
 
 <div class="smt-member-anchors">
 
@@ -8717,7 +8717,7 @@ Registers a new item definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.items.updateDefinition :id=sandkit.api.items.updatedefinition
+#### sandkit.api.items.updateDefinition :id=sandkit-api-items-updatedefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L35" target="_blank" rel="noopener">items.d.ts:35</a></p>
 
@@ -8731,8 +8731,8 @@ updateDefinition(itemId: ItemId, partial: Partial<ItemDefinition>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | <code>[`ItemId`](?id=sandkit.api.items.itemid)</code> | Registered item id. |
-| partial | `Partial`<[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)> | Fields to merge into the definition. |
+| itemId | <code>[`ItemId`](?id=sandkit-api-items-itemid)</code> | Registered item id. |
+| partial | `Partial`<[`ItemDefinition`](?id=sandkit-api-items-itemdefinition)> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -8756,7 +8756,7 @@ api.items.updateDefinition("exampleTool", {
 
 <div class="smt-member-card">
 
-#### sandkit.api.items.getDefinitionById :id=sandkit.api.items.getdefinitionbyid
+#### sandkit.api.items.getDefinitionById :id=sandkit-api-items-getdefinitionbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L40" target="_blank" rel="noopener">items.d.ts:40</a></p>
 
@@ -8770,7 +8770,7 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | <code>[`ItemId`](?id=sandkit.api.items.itemid)</code> | Registered item id. |
+| itemId | <code>[`ItemId`](?id=sandkit-api-items-itemid)</code> | Registered item id. |
 
 <div class="smt-member-anchors">
 
@@ -8780,13 +8780,13 @@ getDefinitionById(itemId: ItemId): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for an id, or undefined.
 
-[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)&lt;`unknown`, `unknown`&gt; &#124; `undefined`
+[`ItemDefinition`](?id=sandkit-api-items-itemdefinition)&lt;`unknown`, `unknown`&gt; &#124; `undefined`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.items.createFromId :id=sandkit.api.items.createfromid
+#### sandkit.api.items.createFromId :id=sandkit-api-items-createfromid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L45" target="_blank" rel="noopener">items.d.ts:45</a></p>
 
@@ -8800,7 +8800,7 @@ createFromId(itemId: ItemId): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | <code>[`ItemId`](?id=sandkit.api.items.itemid)</code> | Registered item id. |
+| itemId | <code>[`ItemId`](?id=sandkit-api-items-itemid)</code> | Registered item id. |
 
 <div class="smt-member-anchors">
 
@@ -8814,7 +8814,7 @@ Creates a runtime item instance from an id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.items.getActive :id=sandkit.api.items.getactive
+#### sandkit.api.items.getActive :id=sandkit-api-items-getactive
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L47" target="_blank" rel="noopener">items.d.ts:47</a></p>
 
@@ -8828,13 +8828,13 @@ getActive(): ItemDefinition<unknown, unknown> | undefined
 
 Returns the item definition for the active hotbar slot.
 
-[`ItemDefinition`](?id=sandkit.api.items.itemdefinition)&lt;`unknown`, `unknown`&gt; &#124; `undefined`
+[`ItemDefinition`](?id=sandkit-api-items-itemdefinition)&lt;`unknown`, `unknown`&gt; &#124; `undefined`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.items.isActiveById :id=sandkit.api.items.isactivebyid
+#### sandkit.api.items.isActiveById :id=sandkit-api-items-isactivebyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/items.d.ts#L53" target="_blank" rel="noopener">items.d.ts:53</a></p>
 
@@ -8848,8 +8848,8 @@ isActiveById(itemId: ItemId, itemType?: ItemType): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| itemId | <code>[`ItemId`](?id=sandkit.api.items.itemid)</code> | Item id or numeric type to compare. |
-| itemType? | <code>[`ItemType`](?id=sandkit.api.items.itemtype)</code> | Optional item type discriminator. |
+| itemId | <code>[`ItemId`](?id=sandkit-api-items-itemid)</code> | Item id or numeric type to compare. |
+| itemType? | <code>[`ItemType`](?id=sandkit-api-items-itemtype)</code> | Optional item type discriminator. |
 
 <div class="smt-member-anchors">
 
@@ -8874,7 +8874,7 @@ Main thread only.
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.TemporaryLightHandle :id=sandkit.api.lights.temporarylighthandle
+#### sandkit.api.lights.TemporaryLightHandle :id=sandkit-api-lights-temporarylighthandle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L122" target="_blank" rel="noopener">lights.d.ts:122</a></p>
 
@@ -8897,7 +8897,7 @@ Handle returned from [temporary.createAtWorld](api/sandkit.api.lights.temporary.
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.PersistentLightOptions :id=sandkit.api.lights.persistentlightoptions
+#### sandkit.api.lights.PersistentLightOptions :id=sandkit-api-lights-persistentlightoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L136" target="_blank" rel="noopener">lights.d.ts:136</a></p>
 
@@ -8931,7 +8931,7 @@ Options for persistent world lights.
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.TemporaryLightOptions :id=sandkit.api.lights.temporarylightoptions
+#### sandkit.api.lights.TemporaryLightOptions :id=sandkit-api-lights-temporarylightoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L133" target="_blank" rel="noopener">lights.d.ts:133</a></p>
 
@@ -8949,7 +8949,7 @@ Options for temporary lights.
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.PersistentLightHandle :id=sandkit.api.lights.persistentlighthandle
+#### sandkit.api.lights.PersistentLightHandle :id=sandkit-api-lights-persistentlighthandle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L147" target="_blank" rel="noopener">lights.d.ts:147</a></p>
 
@@ -8975,7 +8975,7 @@ Lights that persist in the world save.
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.persistent.createAtWorld :id=sandkit.api.lights.persistent.createatworld
+#### sandkit.api.lights.persistent.createAtWorld :id=sandkit-api-lights-persistent-createatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L89" target="_blank" rel="noopener">lights.d.ts:89</a></p>
 
@@ -9019,7 +9019,7 @@ const light = api.lights.persistent.createAtWorld(
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.persistent.removeAtWorld :id=sandkit.api.lights.persistent.removeatworld
+#### sandkit.api.lights.persistent.removeAtWorld :id=sandkit-api-lights-persistent-removeatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L102" target="_blank" rel="noopener">lights.d.ts:102</a></p>
 
@@ -9050,7 +9050,7 @@ Remove the persistent light at world coordinates.
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.persistent.fadeAtWorld :id=sandkit.api.lights.persistent.fadeatworld
+#### sandkit.api.lights.persistent.fadeAtWorld :id=sandkit-api-lights-persistent-fadeatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L112" target="_blank" rel="noopener">lights.d.ts:112</a></p>
 
@@ -9084,7 +9084,7 @@ Fade out the persistent light at world coordinates over durationMs.
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.persistent.markDirty :id=sandkit.api.lights.persistent.markdirty
+#### sandkit.api.lights.persistent.markDirty :id=sandkit-api-lights-persistent-markdirty
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L118" target="_blank" rel="noopener">lights.d.ts:118</a></p>
 
@@ -9110,7 +9110,7 @@ Short-lived visual effect lights.
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.temporary.createAtWorld :id=sandkit.api.lights.temporary.createatworld
+#### sandkit.api.lights.temporary.createAtWorld :id=sandkit-api-lights-temporary-createatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L42" target="_blank" rel="noopener">lights.d.ts:42</a></p>
 
@@ -9175,7 +9175,7 @@ api.lights.temporary.createAtWorld(worldX, worldY, {
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.temporary.removeById :id=sandkit.api.lights.temporary.removebyid
+#### sandkit.api.lights.temporary.removeById :id=sandkit-api-lights-temporary-removebyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/lights.d.ts#L61" target="_blank" rel="noopener">lights.d.ts:61</a></p>
 
@@ -9189,7 +9189,7 @@ removeById(lightId: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| lightId | `number` | Light id returned from [createAtWorld](?id=sandkit.api.lights.temporary.createatworld). |
+| lightId | `number` | Light id returned from [createAtWorld](?id=sandkit-api-lights-temporary-createatworld). |
 
 <div class="smt-member-anchors">
 
@@ -9217,7 +9217,7 @@ if (light.lightId !== null) {
 
 <div class="smt-member-card">
 
-#### sandkit.api.maps.ArtifactLocation :id=sandkit.api.maps.artifactlocation
+#### sandkit.api.maps.ArtifactLocation :id=sandkit-api-maps-artifactlocation
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L41" target="_blank" rel="noopener">maps.d.ts:41</a></p>
 
@@ -9237,7 +9237,7 @@ if (light.lightId !== null) {
 
 </div>
 
-Artifact location entry from [getArtifactLocations](?id=sandkit.api.maps.getartifactlocations).
+Artifact location entry from [getArtifactLocations](?id=sandkit-api-maps-getartifactlocations).
 
 ##### Indexable
 
@@ -9249,13 +9249,13 @@ Artifact location entry from [getArtifactLocations](?id=sandkit.api.maps.getarti
 
 <div class="smt-member-card">
 
-#### sandkit.api.maps.AvailableMapV1 :id=sandkit.api.maps.availablemapv1
+#### sandkit.api.maps.AvailableMapV1 :id=sandkit-api-maps-availablemapv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L49" target="_blank" rel="noopener">maps.d.ts:49</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
-| id | <code>string</code> | Map identifier passed to [start](?id=sandkit.api.maps.start). |
+| id | <code>string</code> | Map identifier passed to [start](?id=sandkit-api-maps-start). |
 | name? | <code>string</code> | Display name or translation key. |
 
 <div class="smt-member-anchors">
@@ -9280,7 +9280,7 @@ Available map entry shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.maps.getAvailable :id=sandkit.api.maps.getavailable
+#### sandkit.api.maps.getAvailable :id=sandkit-api-maps-getavailable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L18" target="_blank" rel="noopener">maps.d.ts:18</a></p>
 
@@ -9294,13 +9294,13 @@ getAvailable(): readonly Readonly<AvailableMapV1>[]
 
 Return maps the player can start.
 
-readonly `Readonly`&lt;[`AvailableMapV1`](?id=sandkit.api.maps.availablemapv1)&gt;[]
+readonly `Readonly`&lt;[`AvailableMapV1`](?id=sandkit-api-maps-availablemapv1)&gt;[]
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.maps.start :id=sandkit.api.maps.start
+#### sandkit.api.maps.start :id=sandkit-api-maps-start
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L23" target="_blank" rel="noopener">maps.d.ts:23</a></p>
 
@@ -9328,7 +9328,7 @@ Start a map by id. Return true when start succeeds.
 
 <div class="smt-member-card">
 
-#### sandkit.api.maps.getArtifactLocations :id=sandkit.api.maps.getartifactlocations
+#### sandkit.api.maps.getArtifactLocations :id=sandkit-api-maps-getartifactlocations
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/maps.d.ts#L38" target="_blank" rel="noopener">maps.d.ts:38</a></p>
 
@@ -9342,7 +9342,7 @@ getArtifactLocations(): readonly ArtifactLocation[]
 
 Return artifact marker locations for the active map.
 
-readonly [`ArtifactLocation`](?id=sandkit.api.maps.artifactlocation)[]
+readonly [`ArtifactLocation`](?id=sandkit-api-maps-artifactlocation)[]
 
 ##### Example
 
@@ -9364,7 +9364,7 @@ api.events.on("game:ready", () => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.mods.AssetProviderV1 :id=sandkit.api.mods.assetproviderv1
+#### sandkit.api.mods.AssetProviderV1 :id=sandkit-api-mods-assetproviderv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L17" target="_blank" rel="noopener">mods.d.ts:17</a></p>
 
@@ -9384,7 +9384,7 @@ Asset provider entry shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.mods.getProviders :id=sandkit.api.mods.getproviders
+#### sandkit.api.mods.getProviders :id=sandkit-api-mods-getproviders
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/mods.d.ts#L15" target="_blank" rel="noopener">mods.d.ts:15</a></p>
 
@@ -9420,7 +9420,7 @@ readonly [`AssetProviderV1`](api/sandkit.api.assets.md?id=assetproviderv1)[]
 
 <div class="smt-member-card">
 
-#### sandkit.api.patterns.PatternExcavateOptions :id=sandkit.api.patterns.patternexcavateoptions
+#### sandkit.api.patterns.PatternExcavateOptions :id=sandkit-api-patterns-patternexcavateoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L61" target="_blank" rel="noopener">patterns.d.ts:61</a></p>
 
@@ -9440,7 +9440,7 @@ Options for pattern-based excavation. Same shape as [shared.api.world.ExcavateOp
 
 <div class="smt-member-card">
 
-#### sandkit.api.patterns.createCircle :id=sandkit.api.patterns.createcircle
+#### sandkit.api.patterns.createCircle :id=sandkit-api-patterns-createcircle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L17" target="_blank" rel="noopener">patterns.d.ts:17</a></p>
 
@@ -9470,7 +9470,7 @@ Build a circular excavation pattern matrix for the given size.
 
 <div class="smt-member-card">
 
-#### sandkit.api.patterns.excavateAtCell :id=sandkit.api.patterns.excavateatcell
+#### sandkit.api.patterns.excavateAtCell :id=sandkit-api-patterns-excavateatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/patterns.d.ts#L50" target="_blank" rel="noopener">patterns.d.ts:50</a></p>
 
@@ -9534,7 +9534,7 @@ Available as `sandkit.api.pickups`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.pickups.WorldItemLight :id=sandkit.api.pickups.worlditemlight
+#### sandkit.api.pickups.WorldItemLight :id=sandkit-api-pickups-worlditemlight
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L20" target="_blank" rel="noopener">pickups.d.ts:20</a></p>
 
@@ -9560,7 +9560,7 @@ Optional point light attached when spawning a pickup.
 
 <div class="smt-member-card">
 
-#### sandkit.api.pickups.WorldItem :id=sandkit.api.pickups.worlditem
+#### sandkit.api.pickups.WorldItem :id=sandkit-api-pickups-worlditem
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L30" target="_blank" rel="noopener">pickups.d.ts:30</a></p>
 
@@ -9594,7 +9594,7 @@ Active world pickup instance.
 
 <div class="smt-member-card">
 
-#### sandkit.api.pickups.PickupType :id=sandkit.api.pickups.pickuptype
+#### sandkit.api.pickups.PickupType :id=sandkit-api-pickups-pickuptype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L11" target="_blank" rel="noopener">pickups.d.ts:11</a></p>
 
@@ -9612,7 +9612,7 @@ Official pickup type discriminator.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.pickups.WorldItemType~~ :id=sandkit.api.pickups.worlditemtype
+#### ~~sandkit.api.pickups.WorldItemType~~ :id=sandkit-api-pickups-worlditemtype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L17" target="_blank" rel="noopener">pickups.d.ts:17</a></p>
 
@@ -9639,7 +9639,7 @@ WorldItemType = PickupType
 
 <div class="smt-member-card">
 
-#### sandkit.api.pickups.spawnAtWorld :id=sandkit.api.pickups.spawnatworld
+#### sandkit.api.pickups.spawnAtWorld :id=sandkit-api-pickups-spawnatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L49" target="_blank" rel="noopener">pickups.d.ts:49</a></p>
 
@@ -9657,7 +9657,7 @@ spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<str
 | worldX | `number` | World x position in pixels. |
 | worldY | `number` | World y position in pixels. |
 | data? | `Record`<`string`, `unknown`> | Optional per-item data bag copied onto the instance. |
-| light? | <code>[`WorldItemLight`](?id=sandkit.api.pickups.worlditemlight)</code> | Optional point light spawned with the pickup. |
+| light? | <code>[`WorldItemLight`](?id=sandkit-api-pickups-worlditemlight)</code> | Optional point light spawned with the pickup. |
 
 <div class="smt-member-anchors">
 
@@ -9675,13 +9675,13 @@ spawnAtWorld(type: PickupType, worldX: number, worldY: number, data?: Record<str
 
 Spawn a pickup at world position.
 
-[`WorldItem`](?id=sandkit.api.pickups.worlditem) The spawned pickup instance.
+[`WorldItem`](?id=sandkit-api-pickups-worlditem) The spawned pickup instance.
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.pickups.remove :id=sandkit.api.pickups.remove
+#### sandkit.api.pickups.remove :id=sandkit-api-pickups-remove
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L63" target="_blank" rel="noopener">pickups.d.ts:63</a></p>
 
@@ -9695,7 +9695,7 @@ remove(pickup: WorldItem): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | <code>[`WorldItem`](?id=sandkit.api.pickups.worlditem)</code> | Pickup returned from spawn or lookup helpers. |
+| pickup | <code>[`WorldItem`](?id=sandkit-api-pickups-worlditem)</code> | Pickup returned from spawn or lookup helpers. |
 
 <div class="smt-member-anchors">
 
@@ -9709,7 +9709,7 @@ Remove a pickup instance from the world.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.pickups.destroy~~ :id=sandkit.api.pickups.destroy
+#### ~~sandkit.api.pickups.destroy~~ :id=sandkit-api-pickups-destroy
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L69" target="_blank" rel="noopener">pickups.d.ts:69</a></p>
 
@@ -9732,7 +9732,7 @@ destroy(pickup: WorldItem): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | <code>[`WorldItem`](?id=sandkit.api.pickups.worlditem)</code> |  |
+| pickup | <code>[`WorldItem`](?id=sandkit-api-pickups-worlditem)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -9744,7 +9744,7 @@ destroy(pickup: WorldItem): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.pickups.pickUp :id=sandkit.api.pickups.pickup
+#### sandkit.api.pickups.pickUp :id=sandkit-api-pickups-pickup
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L78" target="_blank" rel="noopener">pickups.d.ts:78</a></p>
 
@@ -9758,7 +9758,7 @@ pickUp(pickup: WorldItem): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| pickup | <code>[`WorldItem`](?id=sandkit.api.pickups.worlditem)</code> | Pickup to collect. |
+| pickup | <code>[`WorldItem`](?id=sandkit-api-pickups-worlditem)</code> | Pickup to collect. |
 
 <div class="smt-member-anchors">
 
@@ -9774,7 +9774,7 @@ True when the item was collected.
 
 <div class="smt-member-card">
 
-#### sandkit.api.pickups.getAll :id=sandkit.api.pickups.getall
+#### sandkit.api.pickups.getAll :id=sandkit-api-pickups-getall
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L84" target="_blank" rel="noopener">pickups.d.ts:84</a></p>
 
@@ -9788,13 +9788,13 @@ getAll(): WorldItem[]
 
 Return all active pickups.
 
-[`WorldItem`](?id=sandkit.api.pickups.worlditem)[]
+[`WorldItem`](?id=sandkit-api-pickups-worlditem)[]
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.pickups.getById :id=sandkit.api.pickups.getbyid
+#### sandkit.api.pickups.getById :id=sandkit-api-pickups-getbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pickups.d.ts#L92" target="_blank" rel="noopener">pickups.d.ts:92</a></p>
 
@@ -9818,7 +9818,7 @@ getById(pickupId: number): WorldItem | undefined
 
 Return a pickup by numeric id.
 
-[`WorldItem`](?id=sandkit.api.pickups.worlditem) &#124; `undefined`
+[`WorldItem`](?id=sandkit-api-pickups-worlditem) &#124; `undefined`
 
 </div>
 
@@ -9834,7 +9834,7 @@ Available as `sandkit.api.pipes`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.pipes.PipeVentCell :id=sandkit.api.pipes.pipeventcell
+#### sandkit.api.pipes.PipeVentCell :id=sandkit-api-pipes-pipeventcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L48" target="_blank" rel="noopener">pipes.d.ts:48</a></p>
 
@@ -9865,7 +9865,7 @@ Connected vent cell position.
 
 <div class="smt-member-card">
 
-#### sandkit.api.pipes.isAtCell :id=sandkit.api.pipes.isatcell
+#### sandkit.api.pipes.isAtCell :id=sandkit-api-pipes-isatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L17" target="_blank" rel="noopener">pipes.d.ts:17</a></p>
 
@@ -9893,7 +9893,7 @@ Return true when a pipe occupies the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.pipes.isEnabledAtCell :id=sandkit.api.pipes.isenabledatcell
+#### sandkit.api.pipes.isEnabledAtCell :id=sandkit-api-pipes-isenabledatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L26" target="_blank" rel="noopener">pipes.d.ts:26</a></p>
 
@@ -9921,7 +9921,7 @@ Return true when pipe flow is enabled at the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.pipes.getConnectedVentsAtCell :id=sandkit.api.pipes.getconnectedventsatcell
+#### sandkit.api.pipes.getConnectedVentsAtCell :id=sandkit-api-pipes-getconnectedventsatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L35" target="_blank" rel="noopener">pipes.d.ts:35</a></p>
 
@@ -9945,13 +9945,13 @@ getConnectedVentsAtCell(...args: CellCoordinates): readonly PipeVentCell[]
 
 Return connected liquid vent cell positions for the pipe at a cell.
 
-readonly [`PipeVentCell`](?id=sandkit.api.pipes.pipeventcell)[]
+readonly [`PipeVentCell`](?id=sandkit-api-pipes-pipeventcell)[]
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.pipes.setEnabledAtCell :id=sandkit.api.pipes.setenabledatcell
+#### sandkit.api.pipes.setEnabledAtCell :id=sandkit-api-pipes-setenabledatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/pipes.d.ts#L45" target="_blank" rel="noopener">pipes.d.ts:45</a></p>
 
@@ -9985,7 +9985,7 @@ Enable or disable pipe flow at a cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.setPositionAtWorld :id=sandkit.api.player.setpositionatworld
+#### sandkit.api.player.setPositionAtWorld :id=sandkit-api-player-setpositionatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L31" target="_blank" rel="noopener">player.d.ts:31</a></p>
 
@@ -10016,7 +10016,7 @@ Set the player world position.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.player.setWorldPosition~~ :id=sandkit.api.player.setworldposition
+#### ~~sandkit.api.player.setWorldPosition~~ :id=sandkit-api-player-setworldposition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L40" target="_blank" rel="noopener">player.d.ts:40</a></p>
 
@@ -10054,7 +10054,7 @@ setWorldPosition(worldX: number, worldY: number): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.setVelocity :id=sandkit.api.player.setvelocity
+#### sandkit.api.player.setVelocity :id=sandkit-api-player-setvelocity
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L49" target="_blank" rel="noopener">player.d.ts:49</a></p>
 
@@ -10085,7 +10085,7 @@ Set the player velocity.
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.setMovementSpeedMultiplier :id=sandkit.api.player.setmovementspeedmultiplier
+#### sandkit.api.player.setMovementSpeedMultiplier :id=sandkit-api-player-setmovementspeedmultiplier
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L58" target="_blank" rel="noopener">player.d.ts:58</a></p>
 
@@ -10113,7 +10113,7 @@ Set the movement speed multiplier.
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.setMovementMode :id=sandkit.api.player.setmovementmode
+#### sandkit.api.player.setMovementMode :id=sandkit-api-player-setmovementmode
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L67" target="_blank" rel="noopener">player.d.ts:67</a></p>
 
@@ -10143,7 +10143,7 @@ True when the mode changes.
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.isOnGround :id=sandkit.api.player.isonground
+#### sandkit.api.player.isOnGround :id=sandkit-api-player-isonground
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L77" target="_blank" rel="noopener">player.d.ts:77</a></p>
 
@@ -10165,7 +10165,7 @@ True when the player touches solid ground.
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.teleportToGround :id=sandkit.api.player.teleporttoground
+#### sandkit.api.player.teleportToGround :id=sandkit-api-player-teleporttoground
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L83" target="_blank" rel="noopener">player.d.ts:83</a></p>
 
@@ -10183,7 +10183,7 @@ Move the player down until ground is found.
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.isPositionClearAtWorld :id=sandkit.api.player.ispositionclearatworld
+#### sandkit.api.player.isPositionClearAtWorld :id=sandkit-api-player-ispositionclearatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L93" target="_blank" rel="noopener">player.d.ts:93</a></p>
 
@@ -10216,7 +10216,7 @@ True when the player hitbox fits at the position.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.player.isWorldPositionClear~~ :id=sandkit.api.player.isworldpositionclear
+#### ~~sandkit.api.player.isWorldPositionClear~~ :id=sandkit-api-player-isworldpositionclear
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L99" target="_blank" rel="noopener">player.d.ts:99</a></p>
 
@@ -10262,7 +10262,7 @@ Player building unlock helpers.
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.buildings.unlockById :id=sandkit.api.player.buildings.unlockbyid
+#### sandkit.api.player.buildings.unlockById :id=sandkit-api-player-buildings-unlockbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L126" target="_blank" rel="noopener">player.d.ts:126</a></p>
 
@@ -10290,7 +10290,7 @@ Unlock a structure type for building.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.player.buildings.unlockByType~~ :id=sandkit.api.player.buildings.unlockbytype
+#### ~~sandkit.api.player.buildings.unlockByType~~ :id=sandkit-api-player-buildings-unlockbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L132" target="_blank" rel="noopener">player.d.ts:132</a></p>
 
@@ -10325,7 +10325,7 @@ unlockByType(structureId: string): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.buildings.removeById :id=sandkit.api.player.buildings.removebyid
+#### sandkit.api.player.buildings.removeById :id=sandkit-api-player-buildings-removebyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L140" target="_blank" rel="noopener">player.d.ts:140</a></p>
 
@@ -10361,7 +10361,7 @@ Player inventory helpers.
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.inventory.addById :id=sandkit.api.player.inventory.addbyid
+#### sandkit.api.player.inventory.addById :id=sandkit-api-player-inventory-addbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L109" target="_blank" rel="noopener">player.d.ts:109</a></p>
 
@@ -10389,7 +10389,7 @@ Add an item to inventory by item id.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.player.inventory.addFromId~~ :id=sandkit.api.player.inventory.addfromid
+#### ~~sandkit.api.player.inventory.addFromId~~ :id=sandkit-api-player-inventory-addfromid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/player.d.ts#L115" target="_blank" rel="noopener">player.d.ts:115</a></p>
 
@@ -10430,7 +10430,7 @@ addFromId(itemId: string): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.processing.WeightedRecipeOutput :id=sandkit.api.processing.weightedrecipeoutput
+#### sandkit.api.processing.WeightedRecipeOutput :id=sandkit-api-processing-weightedrecipeoutput
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L30" target="_blank" rel="noopener">processing.d.ts:30</a></p>
 
@@ -10453,7 +10453,7 @@ Weighted element output entry shared by machine recipes.
 
 <div class="smt-member-card">
 
-#### sandkit.api.processing.PlanterBoxRecipeDefinitionV1 :id=sandkit.api.processing.planterboxrecipedefinitionv1
+#### sandkit.api.processing.PlanterBoxRecipeDefinitionV1 :id=sandkit-api-processing-planterboxrecipedefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L38" target="_blank" rel="noopener">processing.d.ts:38</a></p>
 
@@ -10479,7 +10479,7 @@ Planter box grower recipe definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.processing.ShakerRecipeDefinitionV1 :id=sandkit.api.processing.shakerrecipedefinitionv1
+#### sandkit.api.processing.ShakerRecipeDefinitionV1 :id=sandkit-api-processing-shakerrecipedefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L48" target="_blank" rel="noopener">processing.d.ts:48</a></p>
 
@@ -10505,7 +10505,7 @@ Shaker recipe definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.processing.KineticPressRecipeDefinitionV1 :id=sandkit.api.processing.kineticpressrecipedefinitionv1
+#### sandkit.api.processing.KineticPressRecipeDefinitionV1 :id=sandkit-api-processing-kineticpressrecipedefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L58" target="_blank" rel="noopener">processing.d.ts:58</a></p>
 
@@ -10533,7 +10533,7 @@ Kinetic press recipe definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.processing.registerGrower :id=sandkit.api.processing.registergrower
+#### sandkit.api.processing.registerGrower :id=sandkit-api-processing-registergrower
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L15" target="_blank" rel="noopener">processing.d.ts:15</a></p>
 
@@ -10547,7 +10547,7 @@ registerGrower(definition: PlanterBoxRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`PlanterBoxRecipeDefinitionV1`](?id=sandkit.api.processing.planterboxrecipedefinitionv1)</code> | Grower input/output recipe. |
+| definition | <code>[`PlanterBoxRecipeDefinitionV1`](?id=sandkit-api-processing-planterboxrecipedefinitionv1)</code> | Grower input/output recipe. |
 
 <div class="smt-member-anchors">
 
@@ -10561,7 +10561,7 @@ Register a planter box grower recipe.
 
 <div class="smt-member-card">
 
-#### sandkit.api.processing.registerShaker :id=sandkit.api.processing.registershaker
+#### sandkit.api.processing.registerShaker :id=sandkit-api-processing-registershaker
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L21" target="_blank" rel="noopener">processing.d.ts:21</a></p>
 
@@ -10575,7 +10575,7 @@ registerShaker(definition: ShakerRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`ShakerRecipeDefinitionV1`](?id=sandkit.api.processing.shakerrecipedefinitionv1)</code> | Shaker input and weighted outputs. |
+| definition | <code>[`ShakerRecipeDefinitionV1`](?id=sandkit-api-processing-shakerrecipedefinitionv1)</code> | Shaker input and weighted outputs. |
 
 <div class="smt-member-anchors">
 
@@ -10589,7 +10589,7 @@ Register a shaker recipe.
 
 <div class="smt-member-card">
 
-#### sandkit.api.processing.registerKineticPress :id=sandkit.api.processing.registerkineticpress
+#### sandkit.api.processing.registerKineticPress :id=sandkit-api-processing-registerkineticpress
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/processing.d.ts#L27" target="_blank" rel="noopener">processing.d.ts:27</a></p>
 
@@ -10603,7 +10603,7 @@ registerKineticPress(definition: KineticPressRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`KineticPressRecipeDefinitionV1`](?id=sandkit.api.processing.kineticpressrecipedefinitionv1)</code> | Press input, velocity threshold, and outputs. |
+| definition | <code>[`KineticPressRecipeDefinitionV1`](?id=sandkit-api-processing-kineticpressrecipedefinitionv1)</code> | Press input, velocity threshold, and outputs. |
 
 <div class="smt-member-anchors">
 
@@ -10623,7 +10623,7 @@ Register a kinetic press recipe.
 
 <div class="smt-member-card">
 
-#### sandkit.api.progression.ProgressionCompletionRequestV1 :id=sandkit.api.progression.progressioncompletionrequestv1
+#### sandkit.api.progression.ProgressionCompletionRequestV1 :id=sandkit-api-progression-progressioncompletionrequestv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L25" target="_blank" rel="noopener">progression.d.ts:25</a></p>
 
@@ -10651,7 +10651,7 @@ Progression completion request shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.progression.complete :id=sandkit.api.progression.complete
+#### sandkit.api.progression.complete :id=sandkit-api-progression-complete
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/progression.d.ts#L22" target="_blank" rel="noopener">progression.d.ts:22</a></p>
 
@@ -10665,7 +10665,7 @@ complete(request: ProgressionCompletionRequestV1): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| request | <code>[`ProgressionCompletionRequestV1`](?id=sandkit.api.progression.progressioncompletionrequestv1)</code> | Progression id and optional metadata for the step. |
+| request | <code>[`ProgressionCompletionRequestV1`](?id=sandkit-api-progression-progressioncompletionrequestv1)</code> | Progression id and optional metadata for the step. |
 
 <div class="smt-member-anchors">
 
@@ -10694,7 +10694,7 @@ const completed = api.progression.complete({
 
 <div class="smt-member-card">
 
-#### sandkit.api.projectiles.ProjectileDefinition :id=sandkit.api.projectiles.projectiledefinition
+#### sandkit.api.projectiles.ProjectileDefinition :id=sandkit-api-projectiles-projectiledefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L59" target="_blank" rel="noopener">projectiles.d.ts:59</a></p>
 
@@ -10729,7 +10729,7 @@ Mod-registered projectile definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.projectiles.ProjectileBlueprint :id=sandkit.api.projectiles.projectileblueprint
+#### sandkit.api.projectiles.ProjectileBlueprint :id=sandkit-api-projectiles-projectileblueprint
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L73" target="_blank" rel="noopener">projectiles.d.ts:73</a></p>
 
@@ -10752,7 +10752,7 @@ Blueprint used to spawn a projectile.
 
 <div class="smt-member-card">
 
-#### sandkit.api.projectiles.Projectile :id=sandkit.api.projectiles.projectile
+#### sandkit.api.projectiles.Projectile :id=sandkit-api-projectiles-projectile
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L79" target="_blank" rel="noopener">projectiles.d.ts:79</a></p>
 
@@ -10786,7 +10786,7 @@ Active projectile instance.
 
 <div class="smt-member-card">
 
-#### sandkit.api.projectiles.register :id=sandkit.api.projectiles.register
+#### sandkit.api.projectiles.register :id=sandkit-api-projectiles-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L13" target="_blank" rel="noopener">projectiles.d.ts:13</a></p>
 
@@ -10800,7 +10800,7 @@ register(definition: ProjectileDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition)</code> | Projectile id, sprite, and runtime options factory. |
+| definition | <code>[`ProjectileDefinition`](?id=sandkit-api-projectiles-projectiledefinition)</code> | Projectile id, sprite, and runtime options factory. |
 
 <div class="smt-member-anchors">
 
@@ -10814,7 +10814,7 @@ Register a projectile definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.projectiles.getDefinitionById :id=sandkit.api.projectiles.getdefinitionbyid
+#### sandkit.api.projectiles.getDefinitionById :id=sandkit-api-projectiles-getdefinitionbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L19" target="_blank" rel="noopener">projectiles.d.ts:19</a></p>
 
@@ -10838,13 +10838,13 @@ getDefinitionById(projectileId: string): ProjectileDefinition | undefined
 
 Return a projectile definition by string id.
 
-[`ProjectileDefinition`](?id=sandkit.api.projectiles.projectiledefinition) &#124; `undefined`
+[`ProjectileDefinition`](?id=sandkit-api-projectiles-projectiledefinition) &#124; `undefined`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.projectiles.createBlueprintFromId :id=sandkit.api.projectiles.createblueprintfromid
+#### sandkit.api.projectiles.createBlueprintFromId :id=sandkit-api-projectiles-createblueprintfromid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L26" target="_blank" rel="noopener">projectiles.d.ts:26</a></p>
 
@@ -10868,13 +10868,13 @@ createBlueprintFromId(projectileId: string): ProjectileBlueprint
 
 Build a spawn blueprint from a projectile string id.
 
-[`ProjectileBlueprint`](?id=sandkit.api.projectiles.projectileblueprint) Blueprint passed to [spawnAtWorld](?id=sandkit.api.projectiles.spawnatworld).
+[`ProjectileBlueprint`](?id=sandkit-api-projectiles-projectileblueprint) Blueprint passed to [spawnAtWorld](?id=sandkit-api-projectiles-spawnatworld).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.projectiles.getAll :id=sandkit.api.projectiles.getall
+#### sandkit.api.projectiles.getAll :id=sandkit-api-projectiles-getall
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L29" target="_blank" rel="noopener">projectiles.d.ts:29</a></p>
 
@@ -10888,13 +10888,13 @@ getAll(): Projectile[]
 
 Return all active projectiles.
 
-[`Projectile`](?id=sandkit.api.projectiles.projectile)[]
+[`Projectile`](?id=sandkit-api-projectiles-projectile)[]
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.projectiles.getById :id=sandkit.api.projectiles.getbyid
+#### sandkit.api.projectiles.getById :id=sandkit-api-projectiles-getbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L35" target="_blank" rel="noopener">projectiles.d.ts:35</a></p>
 
@@ -10918,13 +10918,13 @@ getById(projectileId: number): Projectile | undefined
 
 Return a projectile by numeric id.
 
-[`Projectile`](?id=sandkit.api.projectiles.projectile) &#124; `undefined`
+[`Projectile`](?id=sandkit-api-projectiles-projectile) &#124; `undefined`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.projectiles.remove :id=sandkit.api.projectiles.remove
+#### sandkit.api.projectiles.remove :id=sandkit-api-projectiles-remove
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L41" target="_blank" rel="noopener">projectiles.d.ts:41</a></p>
 
@@ -10938,7 +10938,7 @@ remove(projectile: Projectile): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| projectile | <code>[`Projectile`](?id=sandkit.api.projectiles.projectile)</code> | Projectile instance to remove. |
+| projectile | <code>[`Projectile`](?id=sandkit-api-projectiles-projectile)</code> | Projectile instance to remove. |
 
 <div class="smt-member-anchors">
 
@@ -10952,7 +10952,7 @@ Remove a projectile from the world.
 
 <div class="smt-member-card">
 
-#### sandkit.api.projectiles.spawnAtWorld :id=sandkit.api.projectiles.spawnatworld
+#### sandkit.api.projectiles.spawnAtWorld :id=sandkit-api-projectiles-spawnatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/projectiles.d.ts#L51" target="_blank" rel="noopener">projectiles.d.ts:51</a></p>
 
@@ -10969,7 +10969,7 @@ spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: Projectil
 | worldX | `number` | Spawn x position in world pixels. |
 | worldY | `number` | Spawn y position in world pixels. |
 | angle | `number` | Launch angle in radians. |
-| blueprint | <code>[`ProjectileBlueprint`](?id=sandkit.api.projectiles.projectileblueprint)</code> | Blueprint from [createBlueprintFromId](?id=sandkit.api.projectiles.createblueprintfromid). |
+| blueprint | <code>[`ProjectileBlueprint`](?id=sandkit-api-projectiles-projectileblueprint)</code> | Blueprint from [createBlueprintFromId](?id=sandkit-api-projectiles-createblueprintfromid). |
 
 <div class="smt-member-anchors">
 
@@ -10985,7 +10985,7 @@ spawnAtWorld(worldX: number, worldY: number, angle: number, blueprint: Projectil
 
 Spawn a projectile at world position with angle and blueprint.
 
-[`Projectile`](?id=sandkit.api.projectiles.projectile) The spawned projectile instance.
+[`Projectile`](?id=sandkit-api-projectiles-projectile) The spawned projectile instance.
 
 </div>
 
@@ -10997,7 +10997,7 @@ Spawn a projectile at world position with angle and blueprint.
 
 <div class="smt-member-card">
 
-#### sandkit.api.random.int :id=sandkit.api.random.int
+#### sandkit.api.random.int :id=sandkit-api-random-int
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/random.d.ts#L14" target="_blank" rel="noopener">random.d.ts:14</a></p>
 
@@ -11028,7 +11028,7 @@ Return a random integer in the inclusive range.
 
 <div class="smt-member-card">
 
-#### sandkit.api.random.float :id=sandkit.api.random.float
+#### sandkit.api.random.float :id=sandkit-api-random-float
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/random.d.ts#L20" target="_blank" rel="noopener">random.d.ts:20</a></p>
 
@@ -11065,7 +11065,7 @@ Return a random float in the inclusive range.
 
 <div class="smt-member-card">
 
-#### sandkit.api.raycast.castFromWorld :id=sandkit.api.raycast.castfromworld
+#### sandkit.api.raycast.castFromWorld :id=sandkit-api-raycast-castfromworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/raycast.d.ts#L18" target="_blank" rel="noopener">raycast.d.ts:18</a></p>
 
@@ -11110,7 +11110,7 @@ Cast a ray from world position. Return hit point and distance, or null.
 
 <div class="smt-member-card">
 
-#### sandkit.api.reactions.ContactRecipeDefinitionV1 :id=sandkit.api.reactions.contactrecipedefinitionv1
+#### sandkit.api.reactions.ContactRecipeDefinitionV1 :id=sandkit-api-reactions-contactrecipedefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L29" target="_blank" rel="noopener">reactions.d.ts:29</a></p>
 
@@ -11144,7 +11144,7 @@ Contact reaction recipe definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.reactions.registerContact :id=sandkit.api.reactions.registercontact
+#### sandkit.api.reactions.registerContact :id=sandkit-api-reactions-registercontact
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/reactions.d.ts#L26" target="_blank" rel="noopener">reactions.d.ts:26</a></p>
 
@@ -11158,7 +11158,7 @@ registerContact(definition: ContactRecipeDefinitionV1): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`ContactRecipeDefinitionV1`](?id=sandkit.api.reactions.contactrecipedefinitionv1)</code> | Contact recipe inputs, outputs, and orientation. |
+| definition | <code>[`ContactRecipeDefinitionV1`](?id=sandkit-api-reactions-contactrecipedefinitionv1)</code> | Contact recipe inputs, outputs, and orientation. |
 
 <div class="smt-member-anchors">
 
@@ -11190,7 +11190,7 @@ api.reactions.registerContact({
 
 <div class="smt-member-card">
 
-#### sandkit.api.rendering.getDrawPositionAtCell :id=sandkit.api.rendering.getdrawpositionatcell
+#### sandkit.api.rendering.getDrawPositionAtCell :id=sandkit-api-rendering-getdrawpositionatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L16" target="_blank" rel="noopener">rendering.d.ts:16</a></p>
 
@@ -11220,7 +11220,7 @@ Return screen draw position for a grid cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.rendering.getDrawPositionAtWorld :id=sandkit.api.rendering.getdrawpositionatworld
+#### sandkit.api.rendering.getDrawPositionAtWorld :id=sandkit-api-rendering-getdrawpositionatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L32" target="_blank" rel="noopener">rendering.d.ts:32</a></p>
 
@@ -11262,7 +11262,7 @@ api.events.on("frame:render", () => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.rendering.getGridMetrics :id=sandkit.api.rendering.getgridmetrics
+#### sandkit.api.rendering.getGridMetrics :id=sandkit-api-rendering-getgridmetrics
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L41" target="_blank" rel="noopener">rendering.d.ts:41</a></p>
 
@@ -11288,7 +11288,7 @@ const { cellSize, snapGridCellSize } = api.rendering.getGridMetrics();
 
 <div class="smt-member-card">
 
-#### sandkit.api.rendering.getOverlayViewportSize :id=sandkit.api.rendering.getoverlayviewportsize
+#### sandkit.api.rendering.getOverlayViewportSize :id=sandkit-api-rendering-getoverlayviewportsize
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L43" target="_blank" rel="noopener">rendering.d.ts:43</a></p>
 
@@ -11308,7 +11308,7 @@ width: number height: number
 
 <div class="smt-member-card">
 
-#### sandkit.api.rendering.withOverlayContext :id=sandkit.api.rendering.withoverlaycontext
+#### sandkit.api.rendering.withOverlayContext :id=sandkit-api-rendering-withoverlaycontext
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/rendering.d.ts#L55" target="_blank" rel="noopener">rendering.d.ts:55</a></p>
 
@@ -11350,7 +11350,7 @@ api.rendering.withOverlayContext((context) => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.resources.collectFluxiteAtCell :id=sandkit.api.resources.collectfluxiteatcell
+#### sandkit.api.resources.collectFluxiteAtCell :id=sandkit-api-resources-collectfluxiteatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L16" target="_blank" rel="noopener">resources.d.ts:16</a></p>
 
@@ -11378,7 +11378,7 @@ Collect fluxite at the given cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.resources.updateEnergy :id=sandkit.api.resources.updateenergy
+#### sandkit.api.resources.updateEnergy :id=sandkit-api-resources-updateenergy
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/resources.d.ts#L27" target="_blank" rel="noopener">resources.d.ts:27</a></p>
 
@@ -11423,7 +11423,7 @@ api.resources.adjustEnergy(100, { deferUi: true });
 
 <div class="smt-member-card">
 
-#### sandkit.api.scene.getActive :id=sandkit.api.scene.getactive
+#### sandkit.api.scene.getActive :id=sandkit-api-scene-getactive
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/scene.d.ts#L14" target="_blank" rel="noopener">scene.d.ts:14</a></p>
 
@@ -11449,7 +11449,7 @@ Return the active scene.
 
 <div class="smt-member-card">
 
-#### sandkit.api.schedule.nextTick :id=sandkit.api.schedule.nexttick
+#### sandkit.api.schedule.nextTick :id=sandkit-api-schedule-nexttick
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/schedule.d.ts#L20" target="_blank" rel="noopener">schedule.d.ts:20</a></p>
 
@@ -11491,7 +11491,7 @@ api.schedule.nextTick(() => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.settings.FieldId :id=sandkit.api.settings.fieldid
+#### sandkit.api.settings.FieldId :id=sandkit-api-settings-fieldid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L34" target="_blank" rel="noopener">settings.d.ts:34</a></p>
 
@@ -11509,7 +11509,7 @@ Settings field id. Any string is allowed.
 
 <div class="smt-member-card">
 
-#### sandkit.api.settings.ConfigValueV1 :id=sandkit.api.settings.configvaluev1
+#### sandkit.api.settings.ConfigValueV1 :id=sandkit-api-settings-configvaluev1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L37" target="_blank" rel="noopener">settings.d.ts:37</a></p>
 
@@ -11529,7 +11529,7 @@ Settings field value shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.settings.get :id=sandkit.api.settings.get
+#### sandkit.api.settings.get :id=sandkit-api-settings-get
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L15" target="_blank" rel="noopener">settings.d.ts:15</a></p>
 
@@ -11553,13 +11553,13 @@ get(fieldId: string & object): ConfigValueV1 | undefined
 
 Return a settings field value by id.
 
-[`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1) &#124; `undefined`
+[`ConfigValueV1`](?id=sandkit-api-settings-configvaluev1) &#124; `undefined`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.settings.getAll :id=sandkit.api.settings.getall
+#### sandkit.api.settings.getAll :id=sandkit-api-settings-getall
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L17" target="_blank" rel="noopener">settings.d.ts:17</a></p>
 
@@ -11573,13 +11573,13 @@ getAll(): Readonly<Record<string, ConfigValueV1>>
 
 Return all settings as a read-only map.
 
-`Readonly`&lt;`Record`&lt;`string`, [`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1)&gt;&gt;
+`Readonly`&lt;`Record`&lt;`string`, [`ConfigValueV1`](?id=sandkit-api-settings-configvaluev1)&gt;&gt;
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.settings.onChange :id=sandkit.api.settings.onchange
+#### sandkit.api.settings.onChange :id=sandkit-api-settings-onchange
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/settings.d.ts#L29" target="_blank" rel="noopener">settings.d.ts:29</a></p>
 
@@ -11593,7 +11593,7 @@ onChange(callback: (values: Readonly<Record<string, ConfigValueV1>>) => void): (
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| callback | <code>(`values`: `Readonly`&lt;`Record`&lt;`string`, [`ConfigValueV1`](?id=sandkit.api.settings.configvaluev1)&gt;&gt;) =&gt; `void`</code> | Called with the full settings map after a change. |
+| callback | <code>(`values`: `Readonly`&lt;`Record`&lt;`string`, [`ConfigValueV1`](?id=sandkit-api-settings-configvaluev1)&gt;&gt;) =&gt; `void`</code> | Called with the full settings map after a change. |
 
 <div class="smt-member-anchors">
 
@@ -11623,7 +11623,7 @@ const unsubscribe = api.settings.onChange((values) => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.shared.SharedArray :id=sandkit.api.shared.sharedarray
+#### sandkit.api.shared.SharedArray :id=sandkit-api-shared-sharedarray
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L28" target="_blank" rel="noopener">shared.d.ts:28</a></p>
 
@@ -11637,14 +11637,14 @@ SharedArray = Uint8Array | Uint16Array | Uint32Array | Int8Array | Int16Array | 
 
 Typed array backing a shared buffer.
 
-Use [SharedArrayType](?id=sandkit.api.shared.sharedarraytype) when creating or requiring a buffer. The runtime
+Use [SharedArrayType](?id=sandkit-api-shared-sharedarraytype) when creating or requiring a buffer. The runtime
 returns the matching `*Array` constructor for the configured type.
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.shared.SharedArrayType :id=sandkit.api.shared.sharedarraytype
+#### sandkit.api.shared.SharedArrayType :id=sandkit-api-shared-sharedarraytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L39" target="_blank" rel="noopener">shared.d.ts:39</a></p>
 
@@ -11670,7 +11670,7 @@ Shared buffer ensure and lookup.
 
 <div class="smt-member-card">
 
-#### sandkit.api.shared.buffers.ensure :id=sandkit.api.shared.buffers.ensure
+#### sandkit.api.shared.buffers.ensure :id=sandkit-api-shared-buffers-ensure
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L29" target="_blank" rel="noopener">shared.d.ts:29</a></p>
 
@@ -11712,7 +11712,7 @@ const counts = api.shared.buffers.ensure("counts", {
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.shared.buffers.create~~ :id=sandkit.api.shared.buffers.create
+#### ~~sandkit.api.shared.buffers.create~~ :id=sandkit-api-shared-buffers-create
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/shared.d.ts#L38" target="_blank" rel="noopener">shared.d.ts:38</a></p>
 
@@ -11752,7 +11752,7 @@ create(key: string, config: object): SharedArray
 
 <div class="smt-member-card">
 
-#### sandkit.api.shared.buffers.get :id=sandkit.api.shared.buffers.get
+#### sandkit.api.shared.buffers.get :id=sandkit-api-shared-buffers-get
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/shared.d.ts#L19" target="_blank" rel="noopener">shared.d.ts:19</a></p>
 
@@ -11788,7 +11788,7 @@ Look up a named shared buffer without creating it.
 
 <div class="smt-member-card">
 
-#### sandkit.api.signals.StructureType :id=sandkit.api.signals.structuretype
+#### sandkit.api.signals.StructureType :id=sandkit-api-signals-structuretype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L52" target="_blank" rel="noopener">signals.d.ts:52</a></p>
 
@@ -11806,7 +11806,7 @@ Structure type id or enum value.
 
 <div class="smt-member-card">
 
-#### sandkit.api.signals.Structure :id=sandkit.api.signals.structure
+#### sandkit.api.signals.Structure :id=sandkit-api-signals-structure
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L54" target="_blank" rel="noopener">signals.d.ts:54</a></p>
 
@@ -11824,7 +11824,7 @@ Structure instance in the world.
 
 <div class="smt-member-card">
 
-#### sandkit.api.signals.SignalTargetPayloadV1 :id=sandkit.api.signals.signaltargetpayloadv1
+#### sandkit.api.signals.SignalTargetPayloadV1 :id=sandkit-api-signals-signaltargetpayloadv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L56" target="_blank" rel="noopener">signals.d.ts:56</a></p>
 
@@ -11850,7 +11850,7 @@ Signal target registration for structure types.
 
 <div class="smt-member-card">
 
-#### sandkit.api.signals.targets.register :id=sandkit.api.signals.targets.register
+#### sandkit.api.signals.targets.register :id=sandkit-api-signals-targets-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/signals.d.ts#L45" target="_blank" rel="noopener">signals.d.ts:45</a></p>
 
@@ -11895,7 +11895,7 @@ api.signals.targets.register("exampleMachine", (structure, payload) => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.SoundHandle :id=sandkit.api.sound.soundhandle
+#### sandkit.api.sound.SoundHandle :id=sandkit-api-sound-soundhandle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L77" target="_blank" rel="noopener">sound.d.ts:77</a></p>
 
@@ -11915,7 +11915,7 @@ Handle returned from a play call.
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.SoundLayer :id=sandkit.api.sound.soundlayer
+#### sandkit.api.sound.SoundLayer :id=sandkit-api-sound-soundlayer
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L83" target="_blank" rel="noopener">sound.d.ts:83</a></p>
 
@@ -11950,7 +11950,7 @@ One layer in a layered sound.
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.SoundOptions :id=sandkit.api.sound.soundoptions
+#### sandkit.api.sound.SoundOptions :id=sandkit-api-sound-soundoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L96" target="_blank" rel="noopener">sound.d.ts:96</a></p>
 
@@ -11991,7 +11991,7 @@ Options passed to sound play helpers.
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.SoundLayersOptions :id=sandkit.api.sound.soundlayersoptions
+#### sandkit.api.sound.SoundLayersOptions :id=sandkit-api-sound-soundlayersoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L113" target="_blank" rel="noopener">sound.d.ts:113</a></p>
 
@@ -12014,7 +12014,7 @@ Options passed to sound play helpers.
 
 </div>
 
-Shared options for [playLayers](?id=sandkit.api.sound.playlayers).
+Shared options for [playLayers](?id=sandkit-api-sound-playlayers).
 
 </div>
 
@@ -12022,7 +12022,7 @@ Shared options for [playLayers](?id=sandkit.api.sound.playlayers).
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.play :id=sandkit.api.sound.play
+#### sandkit.api.sound.play :id=sandkit-api-sound-play
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L16" target="_blank" rel="noopener">sound.d.ts:16</a></p>
 
@@ -12037,7 +12037,7 @@ play(soundId: string, options?: SoundOptions): SoundHandle
 | Argument | Type | Description |
 | --- | --- | --- |
 | soundId | `string` | Registered sound identifier. |
-| options? | <code>[`SoundOptions`](?id=sandkit.api.sound.soundoptions)</code> | Volume, position, playback rate, and rate-limit options. |
+| options? | <code>[`SoundOptions`](?id=sandkit-api-sound-soundoptions)</code> | Volume, position, playback rate, and rate-limit options. |
 
 <div class="smt-member-anchors">
 
@@ -12049,13 +12049,13 @@ play(soundId: string, options?: SoundOptions): SoundHandle
 
 Play a sound by id with optional options.
 
-[`SoundHandle`](?id=sandkit.api.sound.soundhandle)
+[`SoundHandle`](?id=sandkit-api-sound-soundhandle)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.playActive :id=sandkit.api.sound.playactive
+#### sandkit.api.sound.playActive :id=sandkit-api-sound-playactive
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L25" target="_blank" rel="noopener">sound.d.ts:25</a></p>
 
@@ -12070,7 +12070,7 @@ playActive(soundId: string, options?: SoundOptions): SoundHandle
 | Argument | Type | Description |
 | --- | --- | --- |
 | soundId | `string` | Registered sound identifier. |
-| options? | <code>[`SoundOptions`](?id=sandkit.api.sound.soundoptions)</code> | Volume, position, playback rate, and rate-limit options. |
+| options? | <code>[`SoundOptions`](?id=sandkit-api-sound-soundoptions)</code> | Volume, position, playback rate, and rate-limit options. |
 
 <div class="smt-member-anchors">
 
@@ -12082,13 +12082,13 @@ playActive(soundId: string, options?: SoundOptions): SoundHandle
 
 Play a sound on the active sound channel.
 
-[`SoundHandle`](?id=sandkit.api.sound.soundhandle)
+[`SoundHandle`](?id=sandkit-api-sound-soundhandle)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.playLayers :id=sandkit.api.sound.playlayers
+#### sandkit.api.sound.playLayers :id=sandkit-api-sound-playlayers
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L34" target="_blank" rel="noopener">sound.d.ts:34</a></p>
 
@@ -12102,8 +12102,8 @@ playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[]
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| layers | <code>[`SoundLayer`](?id=sandkit.api.sound.soundlayer)[]</code> | Layer definitions (sound id, volume, delay, and per-layer options). |
-| options? | <code>[`SoundLayersOptions`](?id=sandkit.api.sound.soundlayersoptions)</code> | Shared position, volume, and rate-limit options for all layers. |
+| layers | <code>[`SoundLayer`](?id=sandkit-api-sound-soundlayer)[]</code> | Layer definitions (sound id, volume, delay, and per-layer options). |
+| options? | <code>[`SoundLayersOptions`](?id=sandkit-api-sound-soundlayersoptions)</code> | Shared position, volume, and rate-limit options for all layers. |
 
 <div class="smt-member-anchors">
 
@@ -12115,13 +12115,13 @@ playLayers(layers: SoundLayer[], options?: SoundLayersOptions): SoundHandle[]
 
 Play multiple sound layers with shared options.
 
-[`SoundHandle`](?id=sandkit.api.sound.soundhandle)[]
+[`SoundHandle`](?id=sandkit-api-sound-soundhandle)[]
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.calculateDistanceOptionsAtWorld :id=sandkit.api.sound.calculatedistanceoptionsatworld
+#### sandkit.api.sound.calculateDistanceOptionsAtWorld :id=sandkit-api-sound-calculatedistanceoptionsatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L44" target="_blank" rel="noopener">sound.d.ts:44</a></p>
 
@@ -12151,13 +12151,13 @@ calculateDistanceOptionsAtWorld(worldX: number, worldY: number, baseVolume?: num
 
 Build distance-based volume options for a world position.
 
-[`SoundOptions`](?id=sandkit.api.sound.soundoptions)
+[`SoundOptions`](?id=sandkit-api-sound-soundoptions)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.stopBySoundId :id=sandkit.api.sound.stopbysoundid
+#### sandkit.api.sound.stopBySoundId :id=sandkit-api-sound-stopbysoundid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L56" target="_blank" rel="noopener">sound.d.ts:56</a></p>
 
@@ -12185,7 +12185,7 @@ Stop a sound by id.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.sound.stopById~~ :id=sandkit.api.sound.stopbyid
+#### ~~sandkit.api.sound.stopById~~ :id=sandkit-api-sound-stopbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L62" target="_blank" rel="noopener">sound.d.ts:62</a></p>
 
@@ -12220,7 +12220,7 @@ stopById(soundId: string): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.stopActive :id=sandkit.api.sound.stopactive
+#### sandkit.api.sound.stopActive :id=sandkit-api-sound-stopactive
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L68" target="_blank" rel="noopener">sound.d.ts:68</a></p>
 
@@ -12238,7 +12238,7 @@ Stop the active sound channel.
 
 <div class="smt-member-card">
 
-#### sandkit.api.sound.stopAll :id=sandkit.api.sound.stopall
+#### sandkit.api.sound.stopAll :id=sandkit-api-sound-stopall
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sound.d.ts#L74" target="_blank" rel="noopener">sound.d.ts:74</a></p>
 
@@ -12262,7 +12262,7 @@ Stop all playing sounds.
 
 <div class="smt-member-card">
 
-#### sandkit.api.sprites.SpriteLoadOptions :id=sandkit.api.sprites.spriteloadoptions
+#### sandkit.api.sprites.SpriteLoadOptions :id=sandkit-api-sprites-spriteloadoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L44" target="_blank" rel="noopener">sprites.d.ts:44</a></p>
 
@@ -12276,7 +12276,7 @@ Stop all playing sounds.
 
 </div>
 
-Options for [load](?id=sandkit.api.sprites.load) and [loadFromMod](?id=sandkit.api.sprites.loadfrommod).
+Options for [load](?id=sandkit-api-sprites-load) and [loadFromMod](?id=sandkit-api-sprites-loadfrommod).
 
 ##### Indexable
 
@@ -12290,7 +12290,7 @@ Options for [load](?id=sandkit.api.sprites.load) and [loadFromMod](?id=sandkit.a
 
 <div class="smt-member-card">
 
-#### sandkit.api.sprites.LoadedSprite :id=sandkit.api.sprites.loadedsprite
+#### sandkit.api.sprites.LoadedSprite :id=sandkit-api-sprites-loadedsprite
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L41" target="_blank" rel="noopener">sprites.d.ts:41</a></p>
 
@@ -12310,7 +12310,7 @@ Loaded sprite handle (runtime texture or display object).
 
 <div class="smt-member-card">
 
-#### sandkit.api.sprites.load :id=sandkit.api.sprites.load
+#### sandkit.api.sprites.load :id=sandkit-api-sprites-load
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L15" target="_blank" rel="noopener">sprites.d.ts:15</a></p>
 
@@ -12324,9 +12324,9 @@ load(spriteId: string, path: string, options?: SpriteLoadOptions): Promise<void>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| spriteId | `string` | Id used with [getById](?id=sandkit.api.sprites.getbyid). |
+| spriteId | `string` | Id used with [getById](?id=sandkit-api-sprites-getbyid). |
 | path | `string` | URL or asset path to load. |
-| options? | <code>[`SpriteLoadOptions`](?id=sandkit.api.sprites.spriteloadoptions)</code> | Optional tint and load options. |
+| options? | <code>[`SpriteLoadOptions`](?id=sandkit-api-sprites-spriteloadoptions)</code> | Optional tint and load options. |
 
 <div class="smt-member-anchors">
 
@@ -12346,7 +12346,7 @@ Load a sprite from a URL path.
 
 <div class="smt-member-card">
 
-#### sandkit.api.sprites.loadFromMod :id=sandkit.api.sprites.loadfrommod
+#### sandkit.api.sprites.loadFromMod :id=sandkit-api-sprites-loadfrommod
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L22" target="_blank" rel="noopener">sprites.d.ts:22</a></p>
 
@@ -12360,9 +12360,9 @@ loadFromMod(spriteId: string, relativePath: string, options?: SpriteLoadOptions)
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| spriteId | `string` | Id used with [getById](?id=sandkit.api.sprites.getbyid). |
+| spriteId | `string` | Id used with [getById](?id=sandkit-api-sprites-getbyid). |
 | relativePath | `string` | Path relative to the mod folder. |
-| options? | <code>[`SpriteLoadOptions`](?id=sandkit.api.sprites.spriteloadoptions)</code> | Optional tint and load options. |
+| options? | <code>[`SpriteLoadOptions`](?id=sandkit-api-sprites-spriteloadoptions)</code> | Optional tint and load options. |
 
 <div class="smt-member-anchors">
 
@@ -12382,7 +12382,7 @@ Load a sprite from the calling mod folder.
 
 <div class="smt-member-card">
 
-#### sandkit.api.sprites.getById :id=sandkit.api.sprites.getbyid
+#### sandkit.api.sprites.getById :id=sandkit-api-sprites-getbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L31" target="_blank" rel="noopener">sprites.d.ts:31</a></p>
 
@@ -12396,7 +12396,7 @@ getById(spriteId: string): unknown
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| spriteId | `string` | Sprite id from [load](?id=sandkit.api.sprites.load) or [loadFromMod](?id=sandkit.api.sprites.loadfrommod). |
+| spriteId | `string` | Sprite id from [load](?id=sandkit-api-sprites-load) or [loadFromMod](?id=sandkit-api-sprites-loadfrommod). |
 
 <div class="smt-member-anchors">
 
@@ -12410,7 +12410,7 @@ Return a loaded sprite by id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.sprites.hideAllPlayerModSprites :id=sandkit.api.sprites.hideallplayermodsprites
+#### sandkit.api.sprites.hideAllPlayerModSprites :id=sandkit-api-sprites-hideallplayermodsprites
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L33" target="_blank" rel="noopener">sprites.d.ts:33</a></p>
 
@@ -12428,7 +12428,7 @@ Hide all player mod-attached sprites.
 
 <div class="smt-member-card">
 
-#### sandkit.api.sprites.rotatePlayerModSprites :id=sandkit.api.sprites.rotateplayermodsprites
+#### sandkit.api.sprites.rotatePlayerModSprites :id=sandkit-api-sprites-rotateplayermodsprites
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/sprites.d.ts#L38" target="_blank" rel="noopener">sprites.d.ts:38</a></p>
 
@@ -12462,7 +12462,7 @@ Rotate all player mod-attached sprites by angle.
 
 <div class="smt-member-card">
 
-#### sandkit.api.storage.ensure :id=sandkit.api.storage.ensure
+#### sandkit.api.storage.ensure :id=sandkit-api-storage-ensure
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L15" target="_blank" rel="noopener">storage.d.ts:15</a></p>
 
@@ -12492,7 +12492,7 @@ Ensure storage exists for a mod id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.storage.get :id=sandkit.api.storage.get
+#### sandkit.api.storage.get :id=sandkit-api-storage-get
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L21" target="_blank" rel="noopener">storage.d.ts:21</a></p>
 
@@ -12525,7 +12525,7 @@ Read a value from mod storage by key.
 
 <div class="smt-member-card">
 
-#### sandkit.api.storage.set :id=sandkit.api.storage.set
+#### sandkit.api.storage.set :id=sandkit-api-storage-set
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L28" target="_blank" rel="noopener">storage.d.ts:28</a></p>
 
@@ -12559,7 +12559,7 @@ Write a value to mod storage by key.
 
 <div class="smt-member-card">
 
-#### sandkit.api.storage.remove :id=sandkit.api.storage.remove
+#### sandkit.api.storage.remove :id=sandkit-api-storage-remove
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L34" target="_blank" rel="noopener">storage.d.ts:34</a></p>
 
@@ -12598,7 +12598,7 @@ Local session storage without mod id scope.
 
 <div class="smt-member-card">
 
-#### sandkit.api.storage.local.get :id=sandkit.api.storage.local.get
+#### sandkit.api.storage.local.get :id=sandkit-api-storage-local-get
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L42" target="_blank" rel="noopener">storage.d.ts:42</a></p>
 
@@ -12628,7 +12628,7 @@ Read a local storage value by key.
 
 <div class="smt-member-card">
 
-#### sandkit.api.storage.local.set :id=sandkit.api.storage.local.set
+#### sandkit.api.storage.local.set :id=sandkit-api-storage-local-set
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L48" target="_blank" rel="noopener">storage.d.ts:48</a></p>
 
@@ -12659,7 +12659,7 @@ Write a local storage value by key.
 
 <div class="smt-member-card">
 
-#### sandkit.api.storage.local.remove :id=sandkit.api.storage.local.remove
+#### sandkit.api.storage.local.remove :id=sandkit-api-storage-local-remove
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/storage.d.ts#L53" target="_blank" rel="noopener">storage.d.ts:53</a></p>
 
@@ -12693,7 +12693,7 @@ Remove a local storage key.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structureBehaviors.registerConveyorType :id=sandkit.api.structureBehaviors.registerconveyortype
+#### sandkit.api.structureBehaviors.registerConveyorType :id=sandkit-api-structureBehaviors-registerconveyortype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L24" target="_blank" rel="noopener">structureBehaviors.d.ts:24</a></p>
 
@@ -12733,7 +12733,7 @@ api.structureBehaviors.registerConveyorType(
 
 <div class="smt-member-card">
 
-#### sandkit.api.structureBehaviors.registerLauncherType :id=sandkit.api.structureBehaviors.registerlaunchertype
+#### sandkit.api.structureBehaviors.registerLauncherType :id=sandkit-api-structureBehaviors-registerlaunchertype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structureBehaviors.d.ts#L39" target="_blank" rel="noopener">structureBehaviors.d.ts:39</a></p>
 
@@ -12767,7 +12767,7 @@ Register launcher behavior for up, left, and right launcher types.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureBuildMode :id=sandkit.api.structures.structurebuildmode
+#### sandkit.api.structures.StructureBuildMode :id=sandkit-api-structures-structurebuildmode
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L536" target="_blank" rel="noopener">structures.d.ts:536</a></p>
 
@@ -12793,7 +12793,7 @@ Build mode entry for a structure definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureVariant :id=sandkit.api.structures.structurevariant
+#### sandkit.api.structures.StructureVariant :id=sandkit-api-structures-structurevariant
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L547" target="_blank" rel="noopener">structures.d.ts:547</a></p>
 
@@ -12816,7 +12816,7 @@ Rotated variant entry for a structure definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureTooltipHover :id=sandkit.api.structures.structuretooltiphover
+#### sandkit.api.structures.StructureTooltipHover :id=sandkit-api-structures-structuretooltiphover
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L579" target="_blank" rel="noopener">structures.d.ts:579</a></p>
 
@@ -12865,7 +12865,7 @@ tooltipHover: {
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureTooltipHoverField :id=sandkit.api.structures.structuretooltiphoverfield
+#### sandkit.api.structures.StructureTooltipHoverField :id=sandkit-api-structures-structuretooltiphoverfield
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L589" target="_blank" rel="noopener">structures.d.ts:589</a></p>
 
@@ -12894,13 +12894,13 @@ tooltipHover: {
 
 </div>
 
-One interpolated field in a [StructureTooltipHover](?id=sandkit.api.structures.structuretooltiphover) message.
+One interpolated field in a [StructureTooltipHover](?id=sandkit-api-structures-structuretooltiphover) message.
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureSpritesheet :id=sandkit.api.structures.structurespritesheet
+#### sandkit.api.structures.StructureSpritesheet :id=sandkit-api-structures-structurespritesheet
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L599" target="_blank" rel="noopener">structures.d.ts:599</a></p>
 
@@ -12929,7 +12929,7 @@ Spritesheet animation on a structure render block.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureRenderUi :id=sandkit.api.structures.structurerenderui
+#### sandkit.api.structures.StructureRenderUi :id=sandkit-api-structures-structurerenderui
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L608" target="_blank" rel="noopener">structures.d.ts:608</a></p>
 
@@ -12967,7 +12967,7 @@ Hotbar / build-menu UI sprite settings.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureRender :id=sandkit.api.structures.structurerender
+#### sandkit.api.structures.StructureRender :id=sandkit-api-structures-structurerender
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L619" target="_blank" rel="noopener">structures.d.ts:619</a></p>
 
@@ -13005,7 +13005,7 @@ Render settings for a structure definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.SandkitStructureDefinition :id=sandkit.api.structures.sandkitstructuredefinition
+#### sandkit.api.structures.SandkitStructureDefinition :id=sandkit-api-structures-sandkitstructuredefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L630" target="_blank" rel="noopener">structures.d.ts:630</a></p>
 
@@ -13079,11 +13079,11 @@ Full structure definition registered with the game.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureBuildOptions :id=sandkit.api.structures.structurebuildoptions
+#### sandkit.api.structures.StructureBuildOptions :id=sandkit-api-structures-structurebuildoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L663" target="_blank" rel="noopener">structures.d.ts:663</a></p>
 
-Options passed to [buildAtCell](?id=sandkit.api.structures.buildatcell).
+Options passed to [buildAtCell](?id=sandkit-api-structures-buildatcell).
 
 ##### Indexable
 
@@ -13095,7 +13095,7 @@ Options passed to [buildAtCell](?id=sandkit.api.structures.buildatcell).
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureRemovalOptions :id=sandkit.api.structures.structureremovaloptions
+#### sandkit.api.structures.StructureRemovalOptions :id=sandkit-api-structures-structureremovaloptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L668" target="_blank" rel="noopener">structures.d.ts:668</a></p>
 
@@ -13112,13 +13112,13 @@ Options passed to [buildAtCell](?id=sandkit.api.structures.buildatcell).
 
 </div>
 
-Options passed to [removeAtCell](?id=sandkit.api.structures.removeatcell).
+Options passed to [removeAtCell](?id=sandkit-api-structures-removeatcell).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureBulkRemovalOptions :id=sandkit.api.structures.structurebulkremovaloptions
+#### sandkit.api.structures.StructureBulkRemovalOptions :id=sandkit-api-structures-structurebulkremovaloptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L676" target="_blank" rel="noopener">structures.d.ts:676</a></p>
 
@@ -13147,7 +13147,7 @@ Options passed to bulk structure removal helpers.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureProcessingContext :id=sandkit.api.structures.structureprocessingcontext
+#### sandkit.api.structures.StructureProcessingContext :id=sandkit-api-structures-structureprocessingcontext
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L688" target="_blank" rel="noopener">structures.d.ts:688</a></p>
 
@@ -13179,7 +13179,7 @@ Context passed to structure processing callbacks.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.StructureProcessorDefinitionV1~~ :id=sandkit.api.structures.structureprocessordefinitionv1
+#### ~~sandkit.api.structures.StructureProcessorDefinitionV1~~ :id=sandkit-api-structures-structureprocessordefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L726" target="_blank" rel="noopener">structures.d.ts:726</a></p>
 
@@ -13209,7 +13209,7 @@ Use [StructureProcessingDefinitionV1](api/sandkit.api.structures.md?id=structure
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.PlacementConfigIntegerField :id=sandkit.api.structures.placementconfigintegerfield
+#### sandkit.api.structures.PlacementConfigIntegerField :id=sandkit-api-structures-placementconfigintegerfield
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L737" target="_blank" rel="noopener">structures.d.ts:737</a></p>
 
@@ -13244,7 +13244,7 @@ Integer placement field with optional bounds.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.PlacementConfigChoiceField :id=sandkit.api.structures.placementconfigchoicefield
+#### sandkit.api.structures.PlacementConfigChoiceField :id=sandkit-api-structures-placementconfigchoicefield
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L747" target="_blank" rel="noopener">structures.d.ts:747</a></p>
 
@@ -13273,7 +13273,7 @@ Choice placement field with labeled options.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.PlacementConfigDefinition :id=sandkit.api.structures.placementconfigdefinition
+#### sandkit.api.structures.PlacementConfigDefinition :id=sandkit-api-structures-placementconfigdefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L758" target="_blank" rel="noopener">structures.d.ts:758</a></p>
 
@@ -13296,7 +13296,7 @@ Placement rule definition for a structure type.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.WeightedRefineryRecipeDefinitionV1 :id=sandkit.api.structures.weightedrefineryrecipedefinitionv1
+#### sandkit.api.structures.WeightedRefineryRecipeDefinitionV1 :id=sandkit-api-structures-weightedrefineryrecipedefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L771" target="_blank" rel="noopener">structures.d.ts:771</a></p>
 
@@ -13319,7 +13319,7 @@ Weighted refinery recipe definition shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureProcessingDefinitionV1 :id=sandkit.api.structures.structureprocessingdefinitionv1
+#### sandkit.api.structures.StructureProcessingDefinitionV1 :id=sandkit-api-structures-structureprocessingdefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L777" target="_blank" rel="noopener">structures.d.ts:777</a></p>
 
@@ -13347,7 +13347,7 @@ Custom structure processing definition shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.PlacementConfigField :id=sandkit.api.structures.placementconfigfield
+#### sandkit.api.structures.PlacementConfigField :id=sandkit-api-structures-placementconfigfield
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L734" target="_blank" rel="noopener">structures.d.ts:734</a></p>
 
@@ -13365,7 +13365,7 @@ Placement hotbar field definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.PlanterBoxRecipeDefinitionV1 :id=sandkit.api.structures.planterboxrecipedefinitionv1
+#### sandkit.api.structures.PlanterBoxRecipeDefinitionV1 :id=sandkit-api-structures-planterboxrecipedefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L764" target="_blank" rel="noopener">structures.d.ts:764</a></p>
 
@@ -13383,7 +13383,7 @@ Planter box recipe definition shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.ShakerRecipeDefinitionV1 :id=sandkit.api.structures.shakerrecipedefinitionv1
+#### sandkit.api.structures.ShakerRecipeDefinitionV1 :id=sandkit-api-structures-shakerrecipedefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L766" target="_blank" rel="noopener">structures.d.ts:766</a></p>
 
@@ -13401,7 +13401,7 @@ Shaker recipe definition shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.KineticPressRecipeDefinitionV1 :id=sandkit.api.structures.kineticpressrecipedefinitionv1
+#### sandkit.api.structures.KineticPressRecipeDefinitionV1 :id=sandkit-api-structures-kineticpressrecipedefinitionv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L768" target="_blank" rel="noopener">structures.d.ts:768</a></p>
 
@@ -13421,7 +13421,7 @@ Kinetic press recipe definition shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.register :id=sandkit.api.structures.register
+#### sandkit.api.structures.register :id=sandkit-api-structures-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L149" target="_blank" rel="noopener">structures.d.ts:149</a></p>
 
@@ -13435,7 +13435,7 @@ register(definition: SandkitStructureDefinition, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`SandkitStructureDefinition`](?id=sandkit.api.structures.sandkitstructuredefinition)</code> | Full structure definition. |
+| definition | <code>[`SandkitStructureDefinition`](?id=sandkit-api-structures-sandkitstructuredefinition)</code> | Full structure definition. |
 | options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> |  |
 
 <div class="smt-member-anchors">
@@ -13480,7 +13480,7 @@ api.structures.register({
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.updateDefinition :id=sandkit.api.structures.updatedefinition
+#### sandkit.api.structures.updateDefinition :id=sandkit-api-structures-updatedefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L173" target="_blank" rel="noopener">structures.d.ts:173</a></p>
 
@@ -13495,7 +13495,7 @@ updateDefinition(structureTypeOrId: StructureRef, partial: Partial<SandkitStruct
 | Argument | Type | Description |
 | --- | --- | --- |
 | structureTypeOrId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> | Structure type value or string id. |
-| partial | `Partial`<[`SandkitStructureDefinition`](?id=sandkit.api.structures.sandkitstructuredefinition)> | Fields to merge onto the definition. |
+| partial | `Partial`<[`SandkitStructureDefinition`](?id=sandkit-api-structures-sandkitstructuredefinition)> | Fields to merge onto the definition. |
 | options? | <code>When `useRawShape` is true, keep the shape matrix as-is.</code> |  |
 
 <div class="smt-member-anchors">
@@ -13526,7 +13526,7 @@ api.structures.updateDefinition("exampleJunction", {
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.registerVariant :id=sandkit.api.structures.registervariant
+#### sandkit.api.structures.registerVariant :id=sandkit-api-structures-registervariant
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L205" target="_blank" rel="noopener">structures.d.ts:205</a></p>
 
@@ -13579,7 +13579,7 @@ api.structures.registerVariant(
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.addVariant~~ :id=sandkit.api.structures.addvariant
+#### ~~sandkit.api.structures.addVariant~~ :id=sandkit-api-structures-addvariant
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L215" target="_blank" rel="noopener">structures.d.ts:215</a></p>
 
@@ -13620,7 +13620,7 @@ addVariant(baseStructureTypeOrId: StructureRef, variant: object, options?: objec
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.registerPlacementConfig :id=sandkit.api.structures.registerplacementconfig
+#### sandkit.api.structures.registerPlacementConfig :id=sandkit-api-structures-registerplacementconfig
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L254" target="_blank" rel="noopener">structures.d.ts:254</a></p>
 
@@ -13634,7 +13634,7 @@ registerPlacementConfig(definition: PlacementConfigDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`PlacementConfigDefinition`](?id=sandkit.api.structures.placementconfigdefinition)</code> | Hotbar placement field configuration. |
+| definition | <code>[`PlacementConfigDefinition`](?id=sandkit-api-structures-placementconfigdefinition)</code> | Hotbar placement field configuration. |
 
 <div class="smt-member-anchors">
 
@@ -13676,7 +13676,7 @@ api.structures.registerPlacementConfig({
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.getAvailableTypes :id=sandkit.api.structures.getavailabletypes
+#### sandkit.api.structures.getAvailableTypes :id=sandkit-api-structures-getavailabletypes
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L260" target="_blank" rel="noopener">structures.d.ts:260</a></p>
 
@@ -13696,7 +13696,7 @@ Return structure types available for building.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.getUnlockedTypes~~ :id=sandkit.api.structures.getunlockedtypes
+#### ~~sandkit.api.structures.getUnlockedTypes~~ :id=sandkit-api-structures-getunlockedtypes
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L266" target="_blank" rel="noopener">structures.d.ts:266</a></p>
 
@@ -13723,7 +13723,7 @@ getUnlockedTypes(): Set<StructureRef>
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.isBlockedByPlayerAtCell :id=sandkit.api.structures.isblockedbyplayeratcell
+#### sandkit.api.structures.isBlockedByPlayerAtCell :id=sandkit-api-structures-isblockedbyplayeratcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L275" target="_blank" rel="noopener">structures.d.ts:275</a></p>
 
@@ -13751,7 +13751,7 @@ Return true when the player blocks building at the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.isLauncherAtCell :id=sandkit.api.structures.islauncheratcell
+#### sandkit.api.structures.isLauncherAtCell :id=sandkit-api-structures-islauncheratcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L284" target="_blank" rel="noopener">structures.d.ts:284</a></p>
 
@@ -13779,7 +13779,7 @@ Return true when a launcher structure is at the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.isLockedByType :id=sandkit.api.structures.islockedbytype
+#### sandkit.api.structures.isLockedByType :id=sandkit-api-structures-islockedbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L295" target="_blank" rel="noopener">structures.d.ts:295</a></p>
 
@@ -13803,14 +13803,14 @@ isLockedByType(structureType: StructureRef): boolean
 
 Return structure lock state for a type.
 
-Official docs list [isUnlockedByType](?id=sandkit.api.structures.isunlockedbytype) as a deprecated alias of this
+Official docs list [isUnlockedByType](?id=sandkit-api-structures-isunlockedbytype) as a deprecated alias of this
 function (same implementation and return value; names differ only).
 
 </div>
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.isUnlockedByType~~ :id=sandkit.api.structures.isunlockedbytype
+#### ~~sandkit.api.structures.isUnlockedByType~~ :id=sandkit-api-structures-isunlockedbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L301" target="_blank" rel="noopener">structures.d.ts:301</a></p>
 
@@ -13845,7 +13845,7 @@ isUnlockedByType(structureType: StructureRef): boolean
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.mapValueToSpritesheetIndex :id=sandkit.api.structures.mapvaluetospritesheetindex
+#### sandkit.api.structures.mapValueToSpritesheetIndex :id=sandkit-api-structures-mapvaluetospritesheetindex
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L319" target="_blank" rel="noopener">structures.d.ts:319</a></p>
 
@@ -13887,7 +13887,7 @@ const index = api.structures.mapValueToSpritesheetIndex(
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.buildAtCell :id=sandkit.api.structures.buildatcell
+#### sandkit.api.structures.buildAtCell :id=sandkit-api-structures-buildatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L330" target="_blank" rel="noopener">structures.d.ts:330</a></p>
 
@@ -13901,7 +13901,7 @@ buildAtCell(...args: number, number, [StructureRef, StructureBuildOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=sandkit.api.structures.structurebuildoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=sandkit-api-structures-structurebuildoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -13915,7 +13915,7 @@ Build a structure at a cell. Main-thread writes are deferred.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.buildAtCellWhenIdle~~ :id=sandkit.api.structures.buildatcellwhenidle
+#### ~~sandkit.api.structures.buildAtCellWhenIdle~~ :id=sandkit-api-structures-buildatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L338" target="_blank" rel="noopener">structures.d.ts:338</a></p>
 
@@ -13938,7 +13938,7 @@ buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOption
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=sandkit.api.structures.structurebuildoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref), [`StructureBuildOptions`](?id=sandkit-api-structures-structurebuildoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -13950,7 +13950,7 @@ buildAtCellWhenIdle(...args: number, number, [StructureRef, StructureBuildOption
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.removeAtCell :id=sandkit.api.structures.removeatcell
+#### sandkit.api.structures.removeAtCell :id=sandkit-api-structures-removeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L350" target="_blank" rel="noopener">structures.d.ts:350</a></p>
 
@@ -13964,7 +13964,7 @@ removeAtCell(...args: number, number, [StructureRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=sandkit.api.structures.structureremovaloptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=sandkit-api-structures-structureremovaloptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -13978,7 +13978,7 @@ Remove a structure at a cell. Main-thread writes are deferred.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.removeAtCellWhenIdle~~ :id=sandkit.api.structures.removeatcellwhenidle
+#### ~~sandkit.api.structures.removeAtCellWhenIdle~~ :id=sandkit-api-structures-removeatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L358" target="_blank" rel="noopener">structures.d.ts:358</a></p>
 
@@ -14001,7 +14001,7 @@ removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=sandkit.api.structures.structureremovaloptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`StructureRemovalOptions`](?id=sandkit-api-structures-structureremovaloptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -14013,7 +14013,7 @@ removeAtCellWhenIdle(...args: number, number, [StructureRemovalOptions]): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.removeBetweenCells :id=sandkit.api.structures.removebetweencells
+#### sandkit.api.structures.removeBetweenCells :id=sandkit-api-structures-removebetweencells
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L372" target="_blank" rel="noopener">structures.d.ts:372</a></p>
 
@@ -14031,7 +14031,7 @@ removeBetweenCells(startCellX: number, startCellY: number, endCellX: number, end
 | startCellY | `number` | Start cell row. |
 | endCellX | `number` | End cell column. |
 | endCellY | `number` | End cell row. |
-| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions)</code> | Optional bulk-removal flags. |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit-api-structures-structurebulkremovaloptions)</code> | Optional bulk-removal flags. |
 
 <div class="smt-member-anchors">
 
@@ -14053,7 +14053,7 @@ Remove structures between two cells. Main-thread writes are deferred.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.removeBetweenCellsWhenIdle~~ :id=sandkit.api.structures.removebetweencellswhenidle
+#### ~~sandkit.api.structures.removeBetweenCellsWhenIdle~~ :id=sandkit-api-structures-removebetweencellswhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L384" target="_blank" rel="noopener">structures.d.ts:384</a></p>
 
@@ -14080,7 +14080,7 @@ removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: num
 | startCellY | `number` |  |
 | endCellX | `number` |  |
 | endCellY | `number` |  |
-| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions)</code> |  |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit-api-structures-structurebulkremovaloptions)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -14100,7 +14100,7 @@ removeBetweenCellsWhenIdle(startCellX: number, startCellY: number, endCellX: num
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.removeAtCells :id=sandkit.api.structures.removeatcells
+#### sandkit.api.structures.removeAtCells :id=sandkit-api-structures-removeatcells
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L407" target="_blank" rel="noopener">structures.d.ts:407</a></p>
 
@@ -14115,7 +14115,7 @@ removeAtCells(positions: Vector2[], options?: StructureBulkRemovalOptions): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | positions | <code>[`Vector2`](api/shared.player.md?id=vector2)[]</code> | Cell positions to clear. |
-| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions)</code> | Optional bulk-removal flags. |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit-api-structures-structurebulkremovaloptions)</code> | Optional bulk-removal flags. |
 
 <div class="smt-member-anchors">
 
@@ -14140,7 +14140,7 @@ api.structures.removeAtCells([
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.removeAtCellsWhenIdle~~ :id=sandkit.api.structures.removeatcellswhenidle
+#### ~~sandkit.api.structures.removeAtCellsWhenIdle~~ :id=sandkit-api-structures-removeatcellswhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L413" target="_blank" rel="noopener">structures.d.ts:413</a></p>
 
@@ -14164,7 +14164,7 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 | Argument | Type | Description |
 | --- | --- | --- |
 | positions | <code>[`Vector2`](api/shared.player.md?id=vector2)[]</code> |  |
-| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit.api.structures.structurebulkremovaloptions)</code> |  |
+| options? | <code>[`StructureBulkRemovalOptions`](?id=sandkit-api-structures-structurebulkremovaloptions)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -14178,7 +14178,7 @@ removeAtCellsWhenIdle(positions: Vector2[], options?: StructureBulkRemovalOption
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.addProcessor~~ :id=sandkit.api.structures.addprocessor
+#### ~~sandkit.api.structures.addProcessor~~ :id=sandkit-api-structures-addprocessor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L422" target="_blank" rel="noopener">structures.d.ts:422</a></p>
 
@@ -14202,7 +14202,7 @@ addProcessor(structureId: StructureRef, definition: StructureProcessorDefinition
 | Argument | Type | Description |
 | --- | --- | --- |
 | structureId | <code>[`StructureRef`](api/sandkit.api.structures.worker.md?id=structureref)</code> |  |
-| definition | <code>[`StructureProcessorDefinitionV1`](?id=sandkit.api.structures.structureprocessordefinitionv1)</code> |  |
+| definition | <code>[`StructureProcessorDefinitionV1`](?id=sandkit-api-structures-structureprocessordefinitionv1)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -14224,7 +14224,7 @@ Per-structure processing enablement and registration.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.processing.register :id=sandkit.api.structures.processing.register
+#### sandkit.api.structures.processing.register :id=sandkit-api-structures-processing-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L515" target="_blank" rel="noopener">structures.d.ts:515</a></p>
 
@@ -14273,7 +14273,7 @@ api.structures.processing.register(
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.processing.setEnabledAtCell :id=sandkit.api.structures.processing.setenabledatcell
+#### sandkit.api.structures.processing.setEnabledAtCell :id=sandkit-api-structures-processing-setenabledatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L526" target="_blank" rel="noopener">structures.d.ts:526</a></p>
 
@@ -14303,7 +14303,7 @@ True when the enabled state changed.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.processing.setEnabledAt~~ :id=sandkit.api.structures.processing.setenabledat
+#### ~~sandkit.api.structures.processing.setEnabledAt~~ :id=sandkit-api-structures-processing-setenabledat
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/structures.d.ts#L532" target="_blank" rel="noopener">structures.d.ts:532</a></p>
 
@@ -14346,7 +14346,7 @@ Structure recipe registration by machine kind.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.recipes.register :id=sandkit.api.structures.recipes.register
+#### sandkit.api.structures.recipes.register :id=sandkit-api-structures-recipes-register
 
 ##### Call Signature
 
@@ -14482,18 +14482,18 @@ Weighted input/output recipe.
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.TechDefinition :id=sandkit.api.tech.techdefinition
+#### sandkit.api.tech.TechDefinition :id=sandkit-api-tech-techdefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L136" target="_blank" rel="noopener">tech.d.ts:136</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
-| name? | <code>string</code> | Plain display name (when not using [nameKey](?id=sandkit.api.tech.namekey)). |
+| name? | <code>string</code> | Plain display name (when not using [nameKey](?id=sandkit-api-tech-namekey)). |
 | nameKey? | <code>string</code> | Display name translation key. |
-| description? | <code>string</code> | Plain description (when not using [descriptionKey](?id=sandkit.api.tech.descriptionkey)). |
+| description? | <code>string</code> | Plain description (when not using [descriptionKey](?id=sandkit-api-tech-descriptionkey)). |
 | descriptionKey? | <code>string</code> | Description translation key. |
 | cost? | <code>number</code> | Research cost. |
-| currencyType? | <code>string</code> | Currency used for [cost](?id=sandkit.api.tech.cost) (for example `"gold"`). |
+| currencyType? | <code>string</code> | Currency used for [cost](?id=sandkit-api-tech-cost) (for example `"gold"`). |
 | branch? | <code>string</code> | Tech tree branch id (often copied from the parent node). |
 | unlocks? | <code>{ structures: readonly string[]; items: readonly string[] }</code> | Content unlocked when this tech is researched. |
 | requires? | <code>readonly string[]</code> | Prerequisite tech ids. |
@@ -14532,7 +14532,7 @@ Tech definition shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.TechGridPosition :id=sandkit.api.tech.techgridposition
+#### sandkit.api.tech.TechGridPosition :id=sandkit-api-tech-techgridposition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L165" target="_blank" rel="noopener">tech.d.ts:165</a></p>
 
@@ -14555,7 +14555,7 @@ Position on the tech grid.
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.ConservatoryUnlocks :id=sandkit.api.tech.conservatoryunlocks
+#### sandkit.api.tech.ConservatoryUnlocks :id=sandkit-api-tech-conservatoryunlocks
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L171" target="_blank" rel="noopener">tech.d.ts:171</a></p>
 
@@ -14580,7 +14580,7 @@ Unlock payload for [conservatory.appendUnlock](api/sandkit.api.tech.conservatory
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.TechGridId :id=sandkit.api.tech.techgridid
+#### sandkit.api.tech.TechGridId :id=sandkit-api-tech-techgridid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L133" target="_blank" rel="noopener">tech.d.ts:133</a></p>
 
@@ -14601,7 +14601,7 @@ Built-in [TechEnum](api/sandkit.enums.Tech.md) values autocomplete; custom strin
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.getDefinitionById :id=sandkit.api.tech.getdefinitionbyid
+#### sandkit.api.tech.getDefinitionById :id=sandkit-api-tech-getdefinitionbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L18" target="_blank" rel="noopener">tech.d.ts:18</a></p>
 
@@ -14615,7 +14615,7 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | Tech entry identifier. |
+| techId | <code>[`TechGridId`](?id=sandkit-api-tech-techgridid)</code> | Tech entry identifier. |
 
 <div class="smt-member-anchors">
 
@@ -14625,13 +14625,13 @@ getDefinitionById(techId: TechGridId): TechDefinition | undefined
 
 Return a tech definition by string id.
 
-[`TechDefinition`](?id=sandkit.api.tech.techdefinition) &#124; `undefined`
+[`TechDefinition`](?id=sandkit-api-tech-techdefinition) &#124; `undefined`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.updateDefinition :id=sandkit.api.tech.updatedefinition
+#### sandkit.api.tech.updateDefinition :id=sandkit-api-tech-updatedefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L34" target="_blank" rel="noopener">tech.d.ts:34</a></p>
 
@@ -14645,8 +14645,8 @@ updateDefinition(techId: TechGridId, updates: Partial<TechDefinition>): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | Tech entry identifier. |
-| updates | `Partial`<[`TechDefinition`](?id=sandkit.api.tech.techdefinition)> | Fields to merge into the definition. |
+| techId | <code>[`TechGridId`](?id=sandkit-api-tech-techgridid)</code> | Tech entry identifier. |
+| updates | `Partial`<[`TechDefinition`](?id=sandkit-api-tech-techdefinition)> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -14670,7 +14670,7 @@ api.tech.updateDefinition("exampleTech", {
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.registerDefinition :id=sandkit.api.tech.registerdefinition
+#### sandkit.api.tech.registerDefinition :id=sandkit-api-tech-registerdefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L54" target="_blank" rel="noopener">tech.d.ts:54</a></p>
 
@@ -14684,8 +14684,8 @@ registerDefinition(techId: TechGridId, definition: TechDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | Tech entry identifier. |
-| definition | <code>[`TechDefinition`](?id=sandkit.api.tech.techdefinition)</code> | Full tech definition to register. |
+| techId | <code>[`TechGridId`](?id=sandkit-api-tech-techgridid)</code> | Tech entry identifier. |
+| definition | <code>[`TechDefinition`](?id=sandkit-api-tech-techdefinition)</code> | Full tech definition to register. |
 
 <div class="smt-member-anchors">
 
@@ -14713,7 +14713,7 @@ api.tech.registerDefinition("exampleTech", {
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.tech.addDefinition~~ :id=sandkit.api.tech.adddefinition
+#### ~~sandkit.api.tech.addDefinition~~ :id=sandkit-api-tech-adddefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L60" target="_blank" rel="noopener">tech.d.ts:60</a></p>
 
@@ -14736,8 +14736,8 @@ addDefinition(techId: TechGridId, definition: TechDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> |  |
-| definition | <code>[`TechDefinition`](?id=sandkit.api.tech.techdefinition)</code> |  |
+| techId | <code>[`TechGridId`](?id=sandkit-api-tech-techgridid)</code> |  |
+| definition | <code>[`TechDefinition`](?id=sandkit-api-tech-techdefinition)</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -14751,7 +14751,7 @@ addDefinition(techId: TechGridId, definition: TechDefinition): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.registerNode :id=sandkit.api.tech.registernode
+#### sandkit.api.tech.registerNode :id=sandkit-api-tech-registernode
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L79" target="_blank" rel="noopener">tech.d.ts:79</a></p>
 
@@ -14765,8 +14765,8 @@ registerNode(techId: TechGridId, definition: TechDefinition, options: object): T
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | Tech grid node id. |
-| definition | <code>[`TechDefinition`](?id=sandkit.api.tech.techdefinition)</code> | Tech definition for the node. |
+| techId | <code>[`TechGridId`](?id=sandkit-api-tech-techgridid)</code> | Tech grid node id. |
+| definition | <code>[`TechDefinition`](?id=sandkit-api-tech-techdefinition)</code> | Tech definition for the node. |
 | options | <code>Parent node id and optional preferred grid position.</code> |  |
 
 <div class="smt-member-anchors">
@@ -14781,7 +14781,7 @@ registerNode(techId: TechGridId, definition: TechDefinition, options: object): T
 
 Register a tech node on the grid with parent and position options.
 
-[`TechGridPosition`](?id=sandkit.api.tech.techgridposition)
+[`TechGridPosition`](?id=sandkit-api-tech-techgridposition)
 
 ##### Example
 
@@ -14797,7 +14797,7 @@ const position = api.tech.registerNode(
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.isLockedById :id=sandkit.api.tech.islockedbyid
+#### sandkit.api.tech.isLockedById :id=sandkit-api-tech-islockedbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L91" target="_blank" rel="noopener">tech.d.ts:91</a></p>
 
@@ -14811,7 +14811,7 @@ isLockedById(techId: TechGridId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | Tech entry id (string or numeric enum). |
+| techId | <code>[`TechGridId`](?id=sandkit-api-tech-techgridid)</code> | Tech entry id (string or numeric enum). |
 
 <div class="smt-member-anchors">
 
@@ -14825,7 +14825,7 @@ Return true when a tech entry is locked.
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.setLockedById :id=sandkit.api.tech.setlockedbyid
+#### sandkit.api.tech.setLockedById :id=sandkit-api-tech-setlockedbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L100" target="_blank" rel="noopener">tech.d.ts:100</a></p>
 
@@ -14839,7 +14839,7 @@ setLockedById(techId: TechGridId, locked: boolean): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | Tech entry id (string or numeric enum). |
+| techId | <code>[`TechGridId`](?id=sandkit-api-tech-techgridid)</code> | Tech entry id (string or numeric enum). |
 | locked | `boolean` | When true, the tech cannot be purchased. |
 
 <div class="smt-member-anchors">
@@ -14856,7 +14856,7 @@ Set locked state for a tech entry by id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.isResearchedById :id=sandkit.api.tech.isresearchedbyid
+#### sandkit.api.tech.isResearchedById :id=sandkit-api-tech-isresearchedbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L108" target="_blank" rel="noopener">tech.d.ts:108</a></p>
 
@@ -14870,7 +14870,7 @@ isResearchedById(techId: TechGridId): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| techId | <code>[`TechGridId`](?id=sandkit.api.tech.techgridid)</code> | Tech entry id (string or numeric enum). |
+| techId | <code>[`TechGridId`](?id=sandkit-api-tech-techgridid)</code> | Tech entry id (string or numeric enum). |
 
 <div class="smt-member-anchors">
 
@@ -14892,7 +14892,7 @@ Conservatory unlock wiring for built-in tech nodes.
 
 <div class="smt-member-card">
 
-#### sandkit.api.tech.conservatory.appendUnlock :id=sandkit.api.tech.conservatory.appendunlock
+#### sandkit.api.tech.conservatory.appendUnlock :id=sandkit-api-tech-conservatory-appendunlock
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tech.d.ts#L126" target="_blank" rel="noopener">tech.d.ts:126</a></p>
 
@@ -14937,7 +14937,7 @@ api.tech.conservatory.appendUnlock(sandkit.enums.Tech.SignalDevices, {
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.TerrainDefinition :id=sandkit.api.terrains.terraindefinition
+#### sandkit.api.terrains.TerrainDefinition :id=sandkit-api-terrains-terraindefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L53" target="_blank" rel="noopener">terrains.d.ts:53</a></p>
 
@@ -14973,7 +14973,7 @@ Terrain definition shape with typed element interactions.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.register :id=sandkit.api.terrains.register
+#### sandkit.api.terrains.register :id=sandkit-api-terrains-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L68" target="_blank" rel="noopener">terrains.d.ts:68</a></p>
 
@@ -14987,7 +14987,7 @@ register(definition: TerrainDefinition): object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`TerrainDefinition`](?id=sandkit.api.terrains.terraindefinition)</code> | Terrain definition to register. |
+| definition | <code>[`TerrainDefinition`](?id=sandkit-api-terrains-terraindefinition)</code> | Terrain definition to register. |
 
 <div class="smt-member-anchors">
 
@@ -15003,7 +15003,7 @@ Object with the assigned `cellType`. cellType: TerrainType
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.updateDefinition :id=sandkit.api.terrains.updatedefinition
+#### sandkit.api.terrains.updateDefinition :id=sandkit-api-terrains-updatedefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L77" target="_blank" rel="noopener">terrains.d.ts:77</a></p>
 
@@ -15018,7 +15018,7 @@ updateDefinition(cellTypeOrId: TerrainRef, partial: Partial<TerrainDefinition>):
 | Argument | Type | Description |
 | --- | --- | --- |
 | cellTypeOrId | <code>[`TerrainRef`](api/sandkit.api.terrains.worker.md?id=terrainref)</code> | Numeric cell type or terrain string id. |
-| partial | `Partial`<[`TerrainDefinition`](?id=sandkit.api.terrains.terraindefinition)> | Fields to merge onto the definition. |
+| partial | `Partial`<[`TerrainDefinition`](?id=sandkit-api-terrains-terraindefinition)> | Fields to merge onto the definition. |
 
 <div class="smt-member-anchors">
 
@@ -15034,7 +15034,7 @@ Patch fields on an existing terrain definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.createAtCell :id=sandkit.api.terrains.createatcell
+#### sandkit.api.terrains.createAtCell :id=sandkit-api-terrains-createatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L91" target="_blank" rel="noopener">terrains.d.ts:91</a></p>
 
@@ -15062,7 +15062,7 @@ Create terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.terrains.createAtCellWhenIdle~~ :id=sandkit.api.terrains.createatcellwhenidle
+#### ~~sandkit.api.terrains.createAtCellWhenIdle~~ :id=sandkit-api-terrains-createatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L99" target="_blank" rel="noopener">terrains.d.ts:99</a></p>
 
@@ -15097,7 +15097,7 @@ createAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOption
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.replaceAtCell :id=sandkit.api.terrains.replaceatcell
+#### sandkit.api.terrains.replaceAtCell :id=sandkit-api-terrains-replaceatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L112" target="_blank" rel="noopener">terrains.d.ts:112</a></p>
 
@@ -15125,7 +15125,7 @@ Replace terrain at a cell. Main-entry writes are deferred; reads see the old gri
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.terrains.replaceAtCellWhenIdle~~ :id=sandkit.api.terrains.replaceatcellwhenidle
+#### ~~sandkit.api.terrains.replaceAtCellWhenIdle~~ :id=sandkit-api-terrains-replaceatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L120" target="_blank" rel="noopener">terrains.d.ts:120</a></p>
 
@@ -15160,7 +15160,7 @@ replaceAtCellWhenIdle(...args: number, number, [TerrainRef, TerrainMutationOptio
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.removeAtCell :id=sandkit.api.terrains.removeatcell
+#### sandkit.api.terrains.removeAtCell :id=sandkit-api-terrains-removeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L132" target="_blank" rel="noopener">terrains.d.ts:132</a></p>
 
@@ -15188,7 +15188,7 @@ Remove terrain at a cell. Main-entry writes are deferred; reads see the old grid
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.terrains.removeAtCellWhenIdle~~ :id=sandkit.api.terrains.removeatcellwhenidle
+#### ~~sandkit.api.terrains.removeAtCellWhenIdle~~ :id=sandkit-api-terrains-removeatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L140" target="_blank" rel="noopener">terrains.d.ts:140</a></p>
 
@@ -15223,7 +15223,7 @@ removeAtCellWhenIdle(...args: number, number, [TerrainMutationOptions]): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.setHitPointsAtCell :id=sandkit.api.terrains.sethitpointsatcell
+#### sandkit.api.terrains.setHitPointsAtCell :id=sandkit-api-terrains-sethitpointsatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L152" target="_blank" rel="noopener">terrains.d.ts:152</a></p>
 
@@ -15251,7 +15251,7 @@ Set terrain hit points at a cell. Main-entry writes are deferred; reads see the 
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.terrains.setHpAtCell~~ :id=sandkit.api.terrains.sethpatcell
+#### ~~sandkit.api.terrains.setHpAtCell~~ :id=sandkit-api-terrains-sethpatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L158" target="_blank" rel="noopener">terrains.d.ts:158</a></p>
 
@@ -15286,7 +15286,7 @@ setHpAtCell(...args: [number, number, number]): boolean
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.terrains.setHpAtCellWhenIdle~~ :id=sandkit.api.terrains.sethpatcellwhenidle
+#### ~~sandkit.api.terrains.setHpAtCellWhenIdle~~ :id=sandkit-api-terrains-sethpatcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/terrains.d.ts#L164" target="_blank" rel="noopener">terrains.d.ts:164</a></p>
 
@@ -15327,7 +15327,7 @@ setHpAtCellWhenIdle(...args: [number, number, number]): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.time.getTimeMs :id=sandkit.api.time.gettimems
+#### sandkit.api.time.getTimeMs :id=sandkit-api-time-gettimems
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/time.d.ts#L10" target="_blank" rel="noopener">time.d.ts:10</a></p>
 
@@ -15345,7 +15345,7 @@ Return elapsed game time in milliseconds.
 
 <div class="smt-member-card">
 
-#### sandkit.api.time.getTick :id=sandkit.api.time.gettick
+#### sandkit.api.time.getTick :id=sandkit-api-time-gettick
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/time.d.ts#L12" target="_blank" rel="noopener">time.d.ts:12</a></p>
 
@@ -15381,7 +15381,7 @@ Available as `sandkit.api.tools.grabber`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.tools.grabber.setSize :id=sandkit.api.tools.grabber.setsize
+#### sandkit.api.tools.grabber.setSize :id=sandkit-api-tools-grabber-setsize
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L20" target="_blank" rel="noopener">tools.d.ts:20</a></p>
 
@@ -15409,7 +15409,7 @@ Set grabber radius size.
 
 <div class="smt-member-card">
 
-#### sandkit.api.tools.grabber.getSize :id=sandkit.api.tools.grabber.getsize
+#### sandkit.api.tools.grabber.getSize :id=sandkit-api-tools-grabber-getsize
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L26" target="_blank" rel="noopener">tools.d.ts:26</a></p>
 
@@ -15429,7 +15429,7 @@ Grab radius in cells.
 
 <div class="smt-member-card">
 
-#### sandkit.api.tools.grabber.isActive :id=sandkit.api.tools.grabber.isactive
+#### sandkit.api.tools.grabber.isActive :id=sandkit-api-tools-grabber-isactive
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L32" target="_blank" rel="noopener">tools.d.ts:32</a></p>
 
@@ -15449,7 +15449,7 @@ True when the grabber is the active tool.
 
 <div class="smt-member-card">
 
-#### sandkit.api.tools.grabber.isLoaded :id=sandkit.api.tools.grabber.isloaded
+#### sandkit.api.tools.grabber.isLoaded :id=sandkit-api-tools-grabber-isloaded
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/tools.d.ts#L38" target="_blank" rel="noopener">tools.d.ts:38</a></p>
 
@@ -15475,7 +15475,7 @@ True when the grabber buffer is not empty.
 
 <div class="smt-member-card">
 
-#### sandkit.api.triggers.MainTriggerDefinition :id=sandkit.api.triggers.maintriggerdefinition
+#### sandkit.api.triggers.MainTriggerDefinition :id=sandkit-api-triggers-maintriggerdefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L27" target="_blank" rel="noopener">triggers.d.ts:27</a></p>
 
@@ -15506,7 +15506,7 @@ Main-thread trigger definition shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.triggers.register :id=sandkit.api.triggers.register
+#### sandkit.api.triggers.register :id=sandkit-api-triggers-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/triggers.d.ts#L24" target="_blank" rel="noopener">triggers.d.ts:24</a></p>
 
@@ -15521,7 +15521,7 @@ register(triggerId: string, definition: MainTriggerDefinition): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | triggerId | `string` | Unique trigger identifier. |
-| definition | <code>[`MainTriggerDefinition`](?id=sandkit.api.triggers.maintriggerdefinition)</code> | Interval in ticks and callback to invoke. |
+| definition | <code>[`MainTriggerDefinition`](?id=sandkit-api-triggers-maintriggerdefinition)</code> | Interval in ticks and callback to invoke. |
 
 <div class="smt-member-anchors">
 
@@ -15554,7 +15554,7 @@ api.triggers.register("example:update", {
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.SelectChoice :id=sandkit.api.ui.selectchoice
+#### sandkit.api.ui.SelectChoice :id=sandkit-api-ui-selectchoice
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L440" target="_blank" rel="noopener">ui.d.ts:440</a></p>
 
@@ -15571,7 +15571,7 @@ api.triggers.register("example:update", {
 
 </div>
 
-One choice in [select](?id=sandkit.api.ui.select).
+One choice in [select](?id=sandkit-api-ui-select).
 
 `T` = `string`
 
@@ -15579,7 +15579,7 @@ One choice in [select](?id=sandkit.api.ui.select).
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.SelectDialogOptions :id=sandkit.api.ui.selectdialogoptions
+#### sandkit.api.ui.SelectDialogOptions :id=sandkit-api-ui-selectdialogoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L448" target="_blank" rel="noopener">ui.d.ts:448</a></p>
 
@@ -15602,7 +15602,7 @@ One choice in [select](?id=sandkit.api.ui.select).
 
 </div>
 
-Dialog options for [select](?id=sandkit.api.ui.select).
+Dialog options for [select](?id=sandkit-api-ui-select).
 
 `T` = `string`
 
@@ -15610,7 +15610,7 @@ Dialog options for [select](?id=sandkit.api.ui.select).
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.RegionMountOptions :id=sandkit.api.ui.regionmountoptions
+#### sandkit.api.ui.RegionMountOptions :id=sandkit-api-ui-regionmountoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L460" target="_blank" rel="noopener">ui.d.ts:460</a></p>
 
@@ -15636,7 +15636,7 @@ Options for [regions.mount](api/sandkit.api.ui.regions.md?id=mount).
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.RegionMountUpdateOptions :id=sandkit.api.ui.regionmountupdateoptions
+#### sandkit.api.ui.RegionMountUpdateOptions :id=sandkit-api-ui-regionmountupdateoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L473" target="_blank" rel="noopener">ui.d.ts:473</a></p>
 
@@ -15656,13 +15656,13 @@ Options for [regions.mount](api/sandkit.api.ui.regions.md?id=mount).
 
 </div>
 
-Partial options for [RegionMountHandle](?id=sandkit.api.ui.regionmounthandle).
+Partial options for [RegionMountHandle](?id=sandkit-api-ui-regionmounthandle).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.RegionMountHandle :id=sandkit.api.ui.regionmounthandle
+#### sandkit.api.ui.RegionMountHandle :id=sandkit-api-ui-regionmounthandle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L486" target="_blank" rel="noopener">ui.d.ts:486</a></p>
 
@@ -15685,7 +15685,7 @@ Handle returned from [regions.mount](api/sandkit.api.ui.regions.md?id=mount).
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.VisibilityHandle :id=sandkit.api.ui.visibilityhandle
+#### sandkit.api.ui.VisibilityHandle :id=sandkit-api-ui-visibilityhandle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L505" target="_blank" rel="noopener">ui.d.ts:505</a></p>
 
@@ -15705,7 +15705,7 @@ Handle returned from [regions.setVisible](api/sandkit.api.ui.regions.md?id=setvi
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.OverrideHandle :id=sandkit.api.ui.overridehandle
+#### sandkit.api.ui.OverrideHandle :id=sandkit-api-ui-overridehandle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L511" target="_blank" rel="noopener">ui.d.ts:511</a></p>
 
@@ -15725,7 +15725,7 @@ Handle returned from [overrides.register](api/sandkit.api.ui.overrides.md?id=reg
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.HotbarBankSourceOptions :id=sandkit.api.ui.hotbarbanksourceoptions
+#### sandkit.api.ui.HotbarBankSourceOptions :id=sandkit-api-ui-hotbarbanksourceoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L517" target="_blank" rel="noopener">ui.d.ts:517</a></p>
 
@@ -15748,7 +15748,7 @@ Options for [hotbar.createBankSource](api/sandkit.api.ui.hotbar.md?id=createbank
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.HotbarBankSource :id=sandkit.api.ui.hotbarbanksource
+#### sandkit.api.ui.HotbarBankSource :id=sandkit-api-ui-hotbarbanksource
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L525" target="_blank" rel="noopener">ui.d.ts:525</a></p>
 
@@ -15786,7 +15786,7 @@ Hotbar bank source used by [components.ActionSlot](api/sandkit.api.ui.components
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.HotbarState :id=sandkit.api.ui.hotbarstate
+#### sandkit.api.ui.HotbarState :id=sandkit-api-ui-hotbarstate
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L552" target="_blank" rel="noopener">ui.d.ts:552</a></p>
 
@@ -15812,7 +15812,7 @@ State returned from [hotbar.useHotbar](api/sandkit.api.ui.hotbar.md?id=usehotbar
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.ActionSlotProps :id=sandkit.api.ui.actionslotprops
+#### sandkit.api.ui.ActionSlotProps :id=sandkit-api-ui-actionslotprops
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L562" target="_blank" rel="noopener">ui.d.ts:562</a></p>
 
@@ -15850,7 +15850,7 @@ Props for [components.ActionSlot](api/sandkit.api.ui.components.md?id=actionslot
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.PanelProps :id=sandkit.api.ui.panelprops
+#### sandkit.api.ui.PanelProps :id=sandkit-api-ui-panelprops
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L580" target="_blank" rel="noopener">ui.d.ts:580</a></p>
 
@@ -15879,7 +15879,7 @@ Props for [components.Panel](api/sandkit.api.ui.components.md?id=panel).
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.ButtonProps :id=sandkit.api.ui.buttonprops
+#### sandkit.api.ui.ButtonProps :id=sandkit-api-ui-buttonprops
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L592" target="_blank" rel="noopener">ui.d.ts:592</a></p>
 
@@ -15923,7 +15923,7 @@ Props for [components.Button](api/sandkit.api.ui.components.md?id=button).
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.TooltipMessageData :id=sandkit.api.ui.tooltipmessagedata
+#### sandkit.api.ui.TooltipMessageData :id=sandkit-api-ui-tooltipmessagedata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L614" target="_blank" rel="noopener">ui.d.ts:614</a></p>
 
@@ -15946,7 +15946,7 @@ Message tooltip with localized body text.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.Focusable :id=sandkit.api.ui.focusable
+#### sandkit.api.ui.Focusable :id=sandkit-api-ui-focusable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L622" target="_blank" rel="noopener">ui.d.ts:622</a></p>
 
@@ -15974,7 +15974,7 @@ Focusable element state from useFocusable.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.FocusOptions :id=sandkit.api.ui.focusoptions
+#### sandkit.api.ui.FocusOptions :id=sandkit-api-ui-focusoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L632" target="_blank" rel="noopener">ui.d.ts:632</a></p>
 
@@ -16018,7 +16018,7 @@ Options for useFocusable registration.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.FocusScopeOptions :id=sandkit.api.ui.focusscopeoptions
+#### sandkit.api.ui.FocusScopeOptions :id=sandkit-api-ui-focusscopeoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L654" target="_blank" rel="noopener">ui.d.ts:654</a></p>
 
@@ -16052,7 +16052,7 @@ Options for [navigation.useFocusScope](api/sandkit.api.ui.navigation.md?id=usefo
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.OverlaySlot :id=sandkit.api.ui.overlayslot
+#### sandkit.api.ui.OverlaySlot :id=sandkit-api-ui-overlayslot
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L425" target="_blank" rel="noopener">ui.d.ts:425</a></p>
 
@@ -16070,7 +16070,7 @@ Overlay slot name. Known vanilla slots autocomplete; any string is allowed.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.ComponentId :id=sandkit.api.ui.componentid
+#### sandkit.api.ui.ComponentId :id=sandkit-api-ui-componentid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L431" target="_blank" rel="noopener">ui.d.ts:431</a></p>
 
@@ -16089,7 +16089,7 @@ Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) values autocomplete
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.ComponentUpdateOptions :id=sandkit.api.ui.componentupdateoptions
+#### sandkit.api.ui.ComponentUpdateOptions :id=sandkit-api-ui-componentupdateoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L434" target="_blank" rel="noopener">ui.d.ts:434</a></p>
 
@@ -16101,13 +16101,13 @@ ComponentUpdateOptions = Record<string, unknown>
 
 </div>
 
-Component-specific update payload passed to [update](?id=sandkit.api.ui.update).
+Component-specific update payload passed to [update](?id=sandkit-api-ui-update).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.TooltipData :id=sandkit.api.ui.tooltipdata
+#### sandkit.api.ui.TooltipData :id=sandkit-api-ui-tooltipdata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L437" target="_blank" rel="noopener">ui.d.ts:437</a></p>
 
@@ -16127,7 +16127,7 @@ Tooltip payload shown near the cursor or UI target.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.update :id=sandkit.api.ui.update
+#### sandkit.api.ui.update :id=sandkit-api-ui-update
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L35" target="_blank" rel="noopener">ui.d.ts:35</a></p>
 
@@ -16141,8 +16141,8 @@ update(componentId: ComponentId, options?: ComponentUpdateOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| componentId | <code>[`ComponentId`](?id=sandkit.api.ui.componentid)</code> | Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) value or custom string id. |
-| options? | <code>[`ComponentUpdateOptions`](?id=sandkit.api.ui.componentupdateoptions)</code> | Component-specific update payload. |
+| componentId | <code>[`ComponentId`](?id=sandkit-api-ui-componentid)</code> | Built-in [ComponentIdEnum](api/sandkit.enums.ComponentId.md) value or custom string id. |
+| options? | <code>[`ComponentUpdateOptions`](?id=sandkit-api-ui-componentupdateoptions)</code> | Component-specific update payload. |
 
 <div class="smt-member-anchors">
 
@@ -16158,7 +16158,7 @@ Update a registered UI component by id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.openPauseMenu :id=sandkit.api.ui.openpausemenu
+#### sandkit.api.ui.openPauseMenu :id=sandkit-api-ui-openpausemenu
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L38" target="_blank" rel="noopener">ui.d.ts:38</a></p>
 
@@ -16176,7 +16176,7 @@ Open the pause menu.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.showTooltip :id=sandkit.api.ui.showtooltip
+#### sandkit.api.ui.showTooltip :id=sandkit-api-ui-showtooltip
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L44" target="_blank" rel="noopener">ui.d.ts:44</a></p>
 
@@ -16190,7 +16190,7 @@ showTooltip(data: TooltipMessageData): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| data | <code>[`TooltipMessageData`](?id=sandkit.api.ui.tooltipmessagedata)</code> | Tooltip type and localized content. |
+| data | <code>[`TooltipMessageData`](?id=sandkit-api-ui-tooltipmessagedata)</code> | Tooltip type and localized content. |
 
 <div class="smt-member-anchors">
 
@@ -16204,7 +16204,7 @@ Show a tooltip with the given data.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.alert :id=sandkit.api.ui.alert
+#### sandkit.api.ui.alert :id=sandkit-api-ui-alert
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L60" target="_blank" rel="noopener">ui.d.ts:60</a></p>
 
@@ -16246,7 +16246,7 @@ await api.ui.alert(
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.confirm :id=sandkit.api.ui.confirm
+#### sandkit.api.ui.confirm :id=sandkit-api-ui-confirm
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L75" target="_blank" rel="noopener">ui.d.ts:75</a></p>
 
@@ -16287,7 +16287,7 @@ const confirmed = await api.ui.confirm(
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.prompt :id=sandkit.api.ui.prompt
+#### sandkit.api.ui.prompt :id=sandkit-api-ui-prompt
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L94" target="_blank" rel="noopener">ui.d.ts:94</a></p>
 
@@ -16338,7 +16338,7 @@ const value = await api.ui.prompt(
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.select :id=sandkit.api.ui.select
+#### sandkit.api.ui.select :id=sandkit-api-ui-select
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L119" target="_blank" rel="noopener">ui.d.ts:119</a></p>
 
@@ -16352,8 +16352,8 @@ sandkit.api.ui.select<T = string>(options: readonly SelectChoice<T>[], opts?: Se
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| options | <code>[`SelectChoice`](?id=sandkit.api.ui.selectchoice)&lt;`T`&gt;[]</code> | Choices shown in the picker. |
-| opts? | <code>[`SelectDialogOptions`](?id=sandkit.api.ui.selectdialogoptions)&lt;`T`&gt;</code> | Dialog title, default, and confirm label. |
+| options | <code>[`SelectChoice`](?id=sandkit-api-ui-selectchoice)&lt;`T`&gt;[]</code> | Choices shown in the picker. |
+| opts? | <code>[`SelectDialogOptions`](?id=sandkit-api-ui-selectdialogoptions)&lt;`T`&gt;</code> | Dialog title, default, and confirm label. |
 
 <div class="smt-member-anchors">
 
@@ -16385,7 +16385,7 @@ const selected = await api.ui.select(
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.useRefresh :id=sandkit.api.ui.userefresh
+#### sandkit.api.ui.useRefresh :id=sandkit-api-ui-userefresh
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L128" target="_blank" rel="noopener">ui.d.ts:128</a></p>
 
@@ -16399,7 +16399,7 @@ useRefresh(componentIds: readonly ComponentId[]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| componentIds | <code>[`ComponentId`](?id=sandkit.api.ui.componentid)[]</code> | Component ids to subscribe to. |
+| componentIds | <code>[`ComponentId`](?id=sandkit-api-ui-componentid)[]</code> | Component ids to subscribe to. |
 
 <div class="smt-member-anchors">
 
@@ -16413,7 +16413,7 @@ React hook that re-renders when the listed UI components update.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.useScale :id=sandkit.api.ui.usescale
+#### sandkit.api.ui.useScale :id=sandkit-api-ui-usescale
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L134" target="_blank" rel="noopener">ui.d.ts:134</a></p>
 
@@ -16433,7 +16433,7 @@ UI scale factor.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.useGameEvent :id=sandkit.api.ui.usegameevent
+#### sandkit.api.ui.useGameEvent :id=sandkit-api-ui-usegameevent
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L148" target="_blank" rel="noopener">ui.d.ts:148</a></p>
 
@@ -16474,7 +16474,7 @@ api.ui.useGameEvent("resource:collected", (payload) => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.inject :id=sandkit.api.ui.inject
+#### sandkit.api.ui.inject :id=sandkit-api-ui-inject
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L159" target="_blank" rel="noopener">ui.d.ts:159</a></p>
 
@@ -16488,7 +16488,7 @@ inject(componentId: ComponentId, component: ComponentType<Record<string, never>>
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| componentId | <code>[`ComponentId`](?id=sandkit.api.ui.componentid)</code> | Overlay slot or custom mount point id. |
+| componentId | <code>[`ComponentId`](?id=sandkit-api-ui-componentid)</code> | Overlay slot or custom mount point id. |
 | component | `ComponentType`<`Record`<`string`, `never`>> | React component to render. |
 
 <div class="smt-member-anchors">
@@ -16515,7 +16515,7 @@ Built-in React UI components.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.components.ActionSlot :id=sandkit.api.ui.components.actionslot
+#### sandkit.api.ui.components.ActionSlot :id=sandkit-api-ui-components-actionslot
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L308" target="_blank" rel="noopener">ui.d.ts:308</a></p>
 
@@ -16552,7 +16552,7 @@ const slot = sandkit.react.createElement(
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.components.Panel :id=sandkit.api.ui.components.panel
+#### sandkit.api.ui.components.Panel :id=sandkit-api-ui-components-panel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L323" target="_blank" rel="noopener">ui.d.ts:323</a></p>
 
@@ -16590,7 +16590,7 @@ const panel = sandkit.react.createElement(
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.components.Button :id=sandkit.api.ui.components.button
+#### sandkit.api.ui.components.Button :id=sandkit-api-ui-components-button
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L338" target="_blank" rel="noopener">ui.d.ts:338</a></p>
 
@@ -16636,7 +16636,7 @@ Hotbar bank sources, selection, and slot queries.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.hotbar.createBankSource :id=sandkit.api.ui.hotbar.createbanksource
+#### sandkit.api.ui.hotbar.createBankSource :id=sandkit-api-ui-hotbar-createbanksource
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L248" target="_blank" rel="noopener">ui.d.ts:248</a></p>
 
@@ -16675,7 +16675,7 @@ const source = api.ui.hotbar.createBankSource({
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.hotbar.selectAction :id=sandkit.api.ui.hotbar.selectaction
+#### sandkit.api.ui.hotbar.selectAction :id=sandkit-api-ui-hotbar-selectaction
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L254" target="_blank" rel="noopener">ui.d.ts:254</a></p>
 
@@ -16703,7 +16703,7 @@ Select a hotbar action programmatically.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.hotbar.getBankCount :id=sandkit.api.ui.hotbar.getbankcount
+#### sandkit.api.ui.hotbar.getBankCount :id=sandkit-api-ui-hotbar-getbankcount
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L259" target="_blank" rel="noopener">ui.d.ts:259</a></p>
 
@@ -16721,7 +16721,7 @@ Return the number of hotbar banks.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.hotbar.getActiveBankIndex :id=sandkit.api.ui.hotbar.getactivebankindex
+#### sandkit.api.ui.hotbar.getActiveBankIndex :id=sandkit-api-ui-hotbar-getactivebankindex
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L264" target="_blank" rel="noopener">ui.d.ts:264</a></p>
 
@@ -16739,7 +16739,7 @@ Return the active hotbar bank index.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.hotbar.getActiveSlotIndex :id=sandkit.api.ui.hotbar.getactiveslotindex
+#### sandkit.api.ui.hotbar.getActiveSlotIndex :id=sandkit-api-ui-hotbar-getactiveslotindex
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L269" target="_blank" rel="noopener">ui.d.ts:269</a></p>
 
@@ -16757,7 +16757,7 @@ Return the active hotbar slot index.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.hotbar.getSlotKeyLabel :id=sandkit.api.ui.hotbar.getslotkeylabel
+#### sandkit.api.ui.hotbar.getSlotKeyLabel :id=sandkit-api-ui-hotbar-getslotkeylabel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L275" target="_blank" rel="noopener">ui.d.ts:275</a></p>
 
@@ -16785,7 +16785,7 @@ Return the key label for a hotbar slot binding.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.hotbar.useHotbar :id=sandkit.api.ui.hotbar.usehotbar
+#### sandkit.api.ui.hotbar.useHotbar :id=sandkit-api-ui-hotbar-usehotbar
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L291" target="_blank" rel="noopener">ui.d.ts:291</a></p>
 
@@ -16824,7 +16824,7 @@ Controller focus and scope navigation hooks.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.navigation.useFocusable :id=sandkit.api.ui.navigation.usefocusable
+#### sandkit.api.ui.navigation.useFocusable :id=sandkit-api-ui-navigation-usefocusable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L387" target="_blank" rel="noopener">ui.d.ts:387</a></p>
 
@@ -16866,7 +16866,7 @@ const focusable = api.ui.navigation.useFocusable({
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.navigation.useFocusScope :id=sandkit.api.ui.navigation.usefocusscope
+#### sandkit.api.ui.navigation.useFocusScope :id=sandkit-api-ui-navigation-usefocusscope
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L404" target="_blank" rel="noopener">ui.d.ts:404</a></p>
 
@@ -16904,7 +16904,7 @@ api.ui.navigation.useFocusScope({
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.navigation.getControllerFocusClass :id=sandkit.api.ui.navigation.getcontrollerfocusclass
+#### sandkit.api.ui.navigation.getControllerFocusClass :id=sandkit-api-ui-navigation-getcontrollerfocusclass
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L411" target="_blank" rel="noopener">ui.d.ts:411</a></p>
 
@@ -16934,7 +16934,7 @@ Class name string for the focus ring.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.ui.navigation.controllerFocusClass~~ :id=sandkit.api.ui.navigation.controllerfocusclass
+#### ~~sandkit.api.ui.navigation.controllerFocusClass~~ :id=sandkit-api-ui-navigation-controllerfocusclass
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L419" target="_blank" rel="noopener">ui.d.ts:419</a></p>
 
@@ -16985,7 +16985,7 @@ Use [regions](api/sandkit.api.ui.regions.md) instead.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.ui.overlays.register~~ :id=sandkit.api.ui.overlays.register
+#### ~~sandkit.api.ui.overlays.register~~ :id=sandkit-api-ui-overlays-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L353" target="_blank" rel="noopener">ui.d.ts:353</a></p>
 
@@ -17028,7 +17028,7 @@ Register a render function in an overlay slot.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.ui.overlays.unregister~~ :id=sandkit.api.ui.overlays.unregister
+#### ~~sandkit.api.ui.overlays.unregister~~ :id=sandkit-api-ui-overlays-unregister
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L361" target="_blank" rel="noopener">ui.d.ts:361</a></p>
 
@@ -17052,7 +17052,7 @@ unregister(slot: OverlaySlot, overlayId: string): void
 | Argument | Type | Description |
 | --- | --- | --- |
 | slot | <code>[`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot)</code> | Slot name the overlay was registered in. |
-| overlayId | `string` | Overlay id passed to [register](?id=sandkit.api.ui.overlays.register). |
+| overlayId | `string` | Overlay id passed to [register](?id=sandkit-api-ui-overlays-register). |
 
 <div class="smt-member-anchors">
 
@@ -17068,7 +17068,7 @@ Remove an overlay from a slot.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.ui.overlays.update~~ :id=sandkit.api.ui.overlays.update
+#### ~~sandkit.api.ui.overlays.update~~ :id=sandkit-api-ui-overlays-update
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L368" target="_blank" rel="noopener">ui.d.ts:368</a></p>
 
@@ -17113,7 +17113,7 @@ Wrap a built-in UI component.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.overrides.register :id=sandkit.api.ui.overrides.register
+#### sandkit.api.ui.overrides.register :id=sandkit-api-ui-overrides-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L224" target="_blank" rel="noopener">ui.d.ts:224</a></p>
 
@@ -17168,7 +17168,7 @@ Mount React content in a named UI region.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.regions.mount :id=sandkit.api.ui.regions.mount
+#### sandkit.api.ui.regions.mount :id=sandkit-api-ui-regions-mount
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L188" target="_blank" rel="noopener">ui.d.ts:188</a></p>
 
@@ -17220,7 +17220,7 @@ const mountHandle = api.ui.regions.mount(
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.regions.setVisible :id=sandkit.api.ui.regions.setvisible
+#### sandkit.api.ui.regions.setVisible :id=sandkit-api-ui-regions-setvisible
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/ui.d.ts#L200" target="_blank" rel="noopener">ui.d.ts:200</a></p>
 
@@ -17234,7 +17234,7 @@ setVisible(regionId: OverlaySlot, visible: boolean): VisibilityHandle
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| regionId | <code>[`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot)</code> | Region name passed to [mount](?id=sandkit.api.ui.regions.mount). |
+| regionId | <code>[`OverlaySlot`](api/sandkit.api.ui.md?id=overlayslot)</code> | Region name passed to [mount](?id=sandkit-api-ui-regions-mount). |
 | visible | `boolean` | When false, hide the region until restored. |
 
 <div class="smt-member-anchors">
@@ -17259,7 +17259,7 @@ Show or hide a mounted region.
 
 <div class="smt-member-card">
 
-#### sandkit.api.upgrades.UpgradeDefinition :id=sandkit.api.upgrades.upgradedefinition
+#### sandkit.api.upgrades.UpgradeDefinition :id=sandkit-api-upgrades-upgradedefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L53" target="_blank" rel="noopener">upgrades.d.ts:53</a></p>
 
@@ -17294,7 +17294,7 @@ Upgrade definition registered for an item.
 
 <div class="smt-member-card">
 
-#### sandkit.api.upgrades.UpgradeCategoryDefinition :id=sandkit.api.upgrades.upgradecategorydefinition
+#### sandkit.api.upgrades.UpgradeCategoryDefinition :id=sandkit-api-upgrades-upgradecategorydefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L69" target="_blank" rel="noopener">upgrades.d.ts:69</a></p>
 
@@ -17325,7 +17325,7 @@ Upgrade category definition shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.upgrades.registerCategory :id=sandkit.api.upgrades.registercategory
+#### sandkit.api.upgrades.registerCategory :id=sandkit-api-upgrades-registercategory
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L13" target="_blank" rel="noopener">upgrades.d.ts:13</a></p>
 
@@ -17339,7 +17339,7 @@ registerCategory(definition: UpgradeCategoryDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`UpgradeCategoryDefinition`](?id=sandkit.api.upgrades.upgradecategorydefinition)</code> | Category id and display metadata. |
+| definition | <code>[`UpgradeCategoryDefinition`](?id=sandkit-api-upgrades-upgradecategorydefinition)</code> | Category id and display metadata. |
 
 <div class="smt-member-anchors">
 
@@ -17353,7 +17353,7 @@ Register an upgrade category.
 
 <div class="smt-member-card">
 
-#### sandkit.api.upgrades.register :id=sandkit.api.upgrades.register
+#### sandkit.api.upgrades.register :id=sandkit-api-upgrades-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L18" target="_blank" rel="noopener">upgrades.d.ts:18</a></p>
 
@@ -17367,7 +17367,7 @@ register(definition: UpgradeDefinition): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| definition | <code>[`UpgradeDefinition`](?id=sandkit.api.upgrades.upgradedefinition)</code> | Item id, upgrade id, costs, and level metadata. |
+| definition | <code>[`UpgradeDefinition`](?id=sandkit-api-upgrades-upgradedefinition)</code> | Item id, upgrade id, costs, and level metadata. |
 
 <div class="smt-member-anchors">
 
@@ -17381,7 +17381,7 @@ Register an upgrade definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.upgrades.updateDefinition :id=sandkit.api.upgrades.updatedefinition
+#### sandkit.api.upgrades.updateDefinition :id=sandkit-api-upgrades-updatedefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L25" target="_blank" rel="noopener">upgrades.d.ts:25</a></p>
 
@@ -17397,7 +17397,7 @@ updateDefinition(itemId: string, upgradeId: string, partial: Partial<UpgradeDefi
 | --- | --- | --- |
 | itemId | `string` | Parent item id. |
 | upgradeId | `string` | Upgrade id within the item. |
-| partial | `Partial`<[`UpgradeDefinition`](?id=sandkit.api.upgrades.upgradedefinition)> | Fields to merge into the definition. |
+| partial | `Partial`<[`UpgradeDefinition`](?id=sandkit-api-upgrades-upgradedefinition)> | Fields to merge into the definition. |
 
 <div class="smt-member-anchors">
 
@@ -17415,7 +17415,7 @@ Patch fields on an existing upgrade definition.
 
 <div class="smt-member-card">
 
-#### sandkit.api.upgrades.getLevelById :id=sandkit.api.upgrades.getlevelbyid
+#### sandkit.api.upgrades.getLevelById :id=sandkit-api-upgrades-getlevelbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L35" target="_blank" rel="noopener">upgrades.d.ts:35</a></p>
 
@@ -17446,7 +17446,7 @@ Return the current purchased level for an upgrade.
 
 <div class="smt-member-card">
 
-#### sandkit.api.upgrades.getAvailableLevelById :id=sandkit.api.upgrades.getavailablelevelbyid
+#### sandkit.api.upgrades.getAvailableLevelById :id=sandkit-api-upgrades-getavailablelevelbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L41" target="_blank" rel="noopener">upgrades.d.ts:41</a></p>
 
@@ -17477,7 +17477,7 @@ Return the maximum available level for an upgrade.
 
 <div class="smt-member-card">
 
-#### sandkit.api.upgrades.setLevelById :id=sandkit.api.upgrades.setlevelbyid
+#### sandkit.api.upgrades.setLevelById :id=sandkit-api-upgrades-setlevelbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/upgrades.d.ts#L50" target="_blank" rel="noopener">upgrades.d.ts:50</a></p>
 
@@ -17517,7 +17517,7 @@ Set the purchased level for an upgrade.
 
 <div class="smt-member-card">
 
-#### sandkit.api.utils.getDistance :id=sandkit.api.utils.getdistance
+#### sandkit.api.utils.getDistance :id=sandkit-api-utils-getdistance
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L18" target="_blank" rel="noopener">utils.d.ts:18</a></p>
 
@@ -17548,7 +17548,7 @@ Return distance between two points.
 
 <div class="smt-member-card">
 
-#### sandkit.api.utils.getDirection :id=sandkit.api.utils.getdirection
+#### sandkit.api.utils.getDirection :id=sandkit-api-utils-getdirection
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L27" target="_blank" rel="noopener">utils.d.ts:27</a></p>
 
@@ -17581,7 +17581,7 @@ Return normalized direction from point A to point B.
 
 <div class="smt-member-card">
 
-#### sandkit.api.utils.getAngle :id=sandkit.api.utils.getangle
+#### sandkit.api.utils.getAngle :id=sandkit-api-utils-getangle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L36" target="_blank" rel="noopener">utils.d.ts:36</a></p>
 
@@ -17612,7 +17612,7 @@ Return angle in radians from point A to point B.
 
 <div class="smt-member-card">
 
-#### sandkit.api.utils.getCoordinatesBetweenCells :id=sandkit.api.utils.getcoordinatesbetweencells
+#### sandkit.api.utils.getCoordinatesBetweenCells :id=sandkit-api-utils-getcoordinatesbetweencells
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L45" target="_blank" rel="noopener">utils.d.ts:45</a></p>
 
@@ -17645,7 +17645,7 @@ Return grid cells along a line between two points.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.utils.getCoordinatesBetweenPoints~~ :id=sandkit.api.utils.getcoordinatesbetweenpoints
+#### ~~sandkit.api.utils.getCoordinatesBetweenPoints~~ :id=sandkit-api-utils-getcoordinatesbetweenpoints
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/utils.d.ts#L51" target="_blank" rel="noopener">utils.d.ts:51</a></p>
 
@@ -17691,7 +17691,7 @@ getCoordinatesBetweenPoints(pointA: Vector2, pointB: Vector2): Vector2[]
 
 <div class="smt-member-card">
 
-#### sandkit.api.workers.setPostUpdateEnabled :id=sandkit.api.workers.setpostupdateenabled
+#### sandkit.api.workers.setPostUpdateEnabled :id=sandkit-api-workers-setpostupdateenabled
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/workers.d.ts#L13" target="_blank" rel="noopener">workers.d.ts:13</a></p>
 
@@ -17729,7 +17729,7 @@ Use [grid](api/sandkit.api.grid.md) instead.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.world.runWhenSimulationIdle~~ :id=sandkit.api.world.runwhensimulationidle
+#### ~~sandkit.api.world.runWhenSimulationIdle~~ :id=sandkit-api-world-runwhensimulationidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L54" target="_blank" rel="noopener">world.d.ts:54</a></p>
 
@@ -17764,7 +17764,7 @@ runWhenSimulationIdle(callback: () => void): void
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.world.redrawAroundCellWhenIdle~~ :id=sandkit.api.world.redrawaroundcellwhenidle
+#### ~~sandkit.api.world.redrawAroundCellWhenIdle~~ :id=sandkit-api-world-redrawaroundcellwhenidle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/world.d.ts#L60" target="_blank" rel="noopener">world.d.ts:60</a></p>
 
@@ -17821,7 +17821,7 @@ Temporary lights live under [lights.temporary](api/sandkit.api.lights.temporary.
 
 <div class="smt-member-card">
 
-#### sandkit.api.effects.createAtWorld :id=sandkit.api.effects.worker.createatworld
+#### sandkit.api.effects.createAtWorld :id=sandkit-api-effects-worker-createatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L25" target="_blank" rel="noopener">effects.d.ts:25</a></p>
 
@@ -17858,7 +17858,7 @@ Spawn a named screen-space or world effect.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.effects.createEffectAtWorld~~ :id=sandkit.api.effects.worker.createeffectatworld
+#### ~~sandkit.api.effects.createEffectAtWorld~~ :id=sandkit-api-effects-worker-createeffectatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/effects.d.ts#L36" target="_blank" rel="noopener">effects.d.ts:36</a></p>
 
@@ -17918,7 +17918,7 @@ Worker-entry mutations apply immediately. Main thread defers matching helpers in
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.createAtCell :id=sandkit.api.elements.worker.createatcell
+#### sandkit.api.elements.createAtCell :id=sandkit-api-elements-worker-createatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L76" target="_blank" rel="noopener">elements.d.ts:76</a></p>
 
@@ -17956,7 +17956,7 @@ api.elements.createAtCell(cellX, cellY, "water", {
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.replaceAtCell :id=sandkit.api.elements.worker.replaceatcell
+#### sandkit.api.elements.replaceAtCell :id=sandkit-api-elements-worker-replaceatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L89" target="_blank" rel="noopener">elements.d.ts:89</a></p>
 
@@ -17984,7 +17984,7 @@ Replace the element at a cell immediately on this worker.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.removeAtCell :id=sandkit.api.elements.worker.removeatcell
+#### sandkit.api.elements.removeAtCell :id=sandkit-api-elements-worker-removeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L101" target="_blank" rel="noopener">elements.d.ts:101</a></p>
 
@@ -18012,7 +18012,7 @@ Remove the element at a cell immediately on this worker.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.moveBetweenCells :id=sandkit.api.elements.worker.movebetweencells
+#### sandkit.api.elements.moveBetweenCells :id=sandkit-api-elements-worker-movebetweencells
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L115" target="_blank" rel="noopener">elements.d.ts:115</a></p>
 
@@ -18051,7 +18051,7 @@ True when the move succeeded.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.teleportBetweenCells :id=sandkit.api.elements.worker.teleportbetweencells
+#### sandkit.api.elements.teleportBetweenCells :id=sandkit-api-elements-worker-teleportbetweencells
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L131" target="_blank" rel="noopener">elements.d.ts:131</a></p>
 
@@ -18088,7 +18088,7 @@ Teleport an element between cells immediately on this worker.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.swapBetweenCells :id=sandkit.api.elements.worker.swapbetweencells
+#### sandkit.api.elements.swapBetweenCells :id=sandkit-api-elements-worker-swapbetweencells
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L148" target="_blank" rel="noopener">elements.d.ts:148</a></p>
 
@@ -18127,7 +18127,7 @@ True when the swap succeeded.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.swapCells~~ :id=sandkit.api.elements.worker.swapcells
+#### ~~sandkit.api.elements.swapCells~~ :id=sandkit-api-elements-worker-swapcells
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L159" target="_blank" rel="noopener">elements.d.ts:159</a></p>
 
@@ -18171,7 +18171,7 @@ swapCells(firstCellX: number, firstCellY: number, secondCellX: number, secondCel
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.markMovementBlockedByIndex :id=sandkit.api.elements.worker.markmovementblockedbyindex
+#### sandkit.api.elements.markMovementBlockedByIndex :id=sandkit-api-elements-worker-markmovementblockedbyindex
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L172" target="_blank" rel="noopener">elements.d.ts:172</a></p>
 
@@ -18199,7 +18199,7 @@ Mark an element index as movement-blocked for this tick.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.elements.markMovementBlockedByElementIndex~~ :id=sandkit.api.elements.worker.markmovementblockedbyelementindex
+#### ~~sandkit.api.elements.markMovementBlockedByElementIndex~~ :id=sandkit-api-elements-worker-markmovementblockedbyelementindex
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L178" target="_blank" rel="noopener">elements.d.ts:178</a></p>
 
@@ -18234,7 +18234,7 @@ markMovementBlockedByElementIndex(elementIndex: number): void
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.setVelocityAtCell :id=sandkit.api.elements.worker.setvelocityatcell
+#### sandkit.api.elements.setVelocityAtCell :id=sandkit-api-elements-worker-setvelocityatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L189" target="_blank" rel="noopener">elements.d.ts:189</a></p>
 
@@ -18264,7 +18264,7 @@ True when velocity was set.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.addParticleVelocityAtCell :id=sandkit.api.elements.worker.addparticlevelocityatcell
+#### sandkit.api.elements.addParticleVelocityAtCell :id=sandkit-api-elements-worker-addparticlevelocityatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L201" target="_blank" rel="noopener">elements.d.ts:201</a></p>
 
@@ -18294,7 +18294,7 @@ True when velocity was updated.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.convertToParticleAtCell :id=sandkit.api.elements.worker.converttoparticleatcell
+#### sandkit.api.elements.convertToParticleAtCell :id=sandkit-api-elements-worker-converttoparticleatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L214" target="_blank" rel="noopener">elements.d.ts:214</a></p>
 
@@ -18324,7 +18324,7 @@ True when conversion succeeded.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.convertFromParticleAtCell :id=sandkit.api.elements.worker.convertfromparticleatcell
+#### sandkit.api.elements.convertFromParticleAtCell :id=sandkit-api-elements-worker-convertfromparticleatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L226" target="_blank" rel="noopener">elements.d.ts:226</a></p>
 
@@ -18354,7 +18354,7 @@ True when conversion succeeded.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.setDataFieldAtCell :id=sandkit.api.elements.worker.setdatafieldatcell
+#### sandkit.api.elements.setDataFieldAtCell :id=sandkit-api-elements-worker-setdatafieldatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L238" target="_blank" rel="noopener">elements.d.ts:238</a></p>
 
@@ -18384,7 +18384,7 @@ True when the field was set.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.refreshColorAtCell :id=sandkit.api.elements.worker.refreshcoloratcell
+#### sandkit.api.elements.refreshColorAtCell :id=sandkit-api-elements-worker-refreshcoloratcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L249" target="_blank" rel="noopener">elements.d.ts:249</a></p>
 
@@ -18412,7 +18412,7 @@ Refresh the rendered color at a cell immediately on this worker.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.setPhysicsAtCell :id=sandkit.api.elements.worker.setphysicsatcell
+#### sandkit.api.elements.setPhysicsAtCell :id=sandkit-api-elements-worker-setphysicsatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L259" target="_blank" rel="noopener">elements.d.ts:259</a></p>
 
@@ -18440,7 +18440,7 @@ Set the physics skip mode at a cell immediately on this worker.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.setDurationAtCell :id=sandkit.api.elements.worker.setdurationatcell
+#### sandkit.api.elements.setDurationAtCell :id=sandkit-api-elements-worker-setdurationatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/elements.d.ts#L281" target="_blank" rel="noopener">elements.d.ts:281</a></p>
 
@@ -18495,7 +18495,7 @@ Worker-thread `sandkit.api.events` — subscribe to and emit worker-scoped event
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.EventGuard :id=sandkit.api.events.worker.eventguard
+#### sandkit.api.events.EventGuard :id=sandkit-api-events-worker-eventguard
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L66" target="_blank" rel="noopener">events.d.ts:66</a></p>
 
@@ -18518,7 +18518,7 @@ Guard filter for worker events.
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.EventEmitOptions :id=sandkit.api.events.worker.eventemitoptions
+#### sandkit.api.events.EventEmitOptions :id=sandkit-api-events-worker-eventemitoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L81" target="_blank" rel="noopener">events.d.ts:81</a></p>
 
@@ -18532,13 +18532,13 @@ Guard filter for worker events.
 
 </div>
 
-Options for [emit](?id=sandkit.api.events.worker.emit).
+Options for [emit](?id=sandkit-api-events-worker-emit).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.EventPayloadMap :id=sandkit.api.events.worker.eventpayloadmap
+#### sandkit.api.events.EventPayloadMap :id=sandkit-api-events-worker-eventpayloadmap
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L86" target="_blank" rel="noopener">events.d.ts:86</a></p>
 
@@ -18598,7 +18598,7 @@ Known worker event payloads. Unlisted ids still use `unknown`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.EventOnOptions :id=sandkit.api.events.worker.eventonoptions
+#### sandkit.api.events.EventOnOptions :id=sandkit-api-events-worker-eventonoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L74" target="_blank" rel="noopener">events.d.ts:74</a></p>
 
@@ -18610,15 +18610,15 @@ sandkit.api.events.EventOnOptions<K *extends* EventId> = K *extends* "element:mo
 
 </div>
 
-Options for [on](?id=sandkit.api.events.worker.on).
+Options for [on](?id=sandkit-api-events-worker-on).
 
-`K` *extends* [`EventId`](?id=sandkit.api.events.worker.eventid)
+`K` *extends* [`EventId`](?id=sandkit-api-events-worker-eventid)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.EventId :id=sandkit.api.events.worker.eventid
+#### sandkit.api.events.EventId :id=sandkit-api-events-worker-eventid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L97" target="_blank" rel="noopener">events.d.ts:97</a></p>
 
@@ -18636,7 +18636,7 @@ Known worker event names plus any custom string id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.EventPayload :id=sandkit.api.events.worker.eventpayload
+#### sandkit.api.events.EventPayload :id=sandkit-api-events-worker-eventpayload
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L100" target="_blank" rel="noopener">events.d.ts:100</a></p>
 
@@ -18656,7 +18656,7 @@ Event payload type for a given event id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.on :id=sandkit.api.events.worker.on
+#### sandkit.api.events.on :id=sandkit-api-events-worker-on
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L45" target="_blank" rel="noopener">events.d.ts:45</a></p>
 
@@ -18671,8 +18671,8 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| callback | <code>(`payload`: [`EventPayload`](?id=sandkit.api.events.worker.eventpayload)&lt;`K`&gt;) =&gt; `void`</code> | Called when the event is emitted. |
-| options? | <code>[`EventOnOptions`](?id=sandkit.api.events.worker.eventonoptions)&lt;`K`&gt;</code> | Required guard for filtered events. |
+| callback | <code>(`payload`: [`EventPayload`](?id=sandkit-api-events-worker-eventpayload)&lt;`K`&gt;) =&gt; `void`</code> | Called when the event is emitted. |
+| options? | <code>[`EventOnOptions`](?id=sandkit-api-events-worker-eventonoptions)&lt;`K`&gt;</code> | Required guard for filtered events. |
 
 <div class="smt-member-anchors">
 
@@ -18686,7 +18686,7 @@ sandkit.api.events.on<K *extends* EventId>(eventId: K, callback: (payload: Event
 
 Subscribe to a worker event. Returns an unsubscribe function.
 
-`K` *extends* [`EventId`](?id=sandkit.api.events.worker.eventid)
+`K` *extends* [`EventId`](?id=sandkit-api-events-worker-eventid)
 
 () => `void`
 
@@ -18726,7 +18726,7 @@ api.events.on("worker:update:post", (payload) => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.events.emit :id=sandkit.api.events.worker.emit
+#### sandkit.api.events.emit :id=sandkit-api-events-worker-emit
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/events.d.ts#L59" target="_blank" rel="noopener">events.d.ts:59</a></p>
 
@@ -18741,8 +18741,8 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 | Argument | Type | Description |
 | --- | --- | --- |
 | eventId | `K` | Registered event name. |
-| payload | <code>[`EventPayload`](?id=sandkit.api.events.worker.eventpayload)&lt;`K`&gt;</code> | Serializable payload passed to listeners. |
-| options? | <code>[`EventEmitOptions`](?id=sandkit.api.events.worker.eventemitoptions)</code> | Optional guard forwarded to filtered listeners. |
+| payload | <code>[`EventPayload`](?id=sandkit-api-events-worker-eventpayload)&lt;`K`&gt;</code> | Serializable payload passed to listeners. |
+| options? | <code>[`EventEmitOptions`](?id=sandkit-api-events-worker-eventemitoptions)</code> | Optional guard forwarded to filtered listeners. |
 
 <div class="smt-member-anchors">
 
@@ -18756,7 +18756,7 @@ sandkit.api.events.emit<K *extends* EventId>(eventId: K, payload: EventPayload<K
 
 Emit a worker event with a payload to subscribers.
 
-`K` *extends* [`EventId`](?id=sandkit.api.events.worker.eventid)
+`K` *extends* [`EventId`](?id=sandkit-api-events-worker-eventid)
 
 </div>
 
@@ -18776,7 +18776,7 @@ Worker burns are immediate. Main thread defers burns with `burnElementAtCell`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.fire.canBurnElementAtCell :id=sandkit.api.fire.worker.canburnelementatcell
+#### sandkit.api.fire.canBurnElementAtCell :id=sandkit-api-fire-worker-canburnelementatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L18" target="_blank" rel="noopener">fire.d.ts:18</a></p>
 
@@ -18804,7 +18804,7 @@ Return true when the element at the cell can burn.
 
 <div class="smt-member-card">
 
-#### sandkit.api.fire.burnElementAtCell :id=sandkit.api.fire.worker.burnelementatcell
+#### sandkit.api.fire.burnElementAtCell :id=sandkit-api-fire-worker-burnelementatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/fire.d.ts#L28" target="_blank" rel="noopener">fire.d.ts:28</a></p>
 
@@ -18858,13 +18858,13 @@ Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook point
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.HookContext :id=sandkit.api.hooks.worker.hookcontext
+#### sandkit.api.hooks.HookContext :id=sandkit-api-hooks-worker-hookcontext
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L110" target="_blank" rel="noopener">hooks.d.ts:110</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
-| cancelled | <code>boolean</code> | True after [cancel](?id=sandkit.api.hooks.worker.cancel) was called on this context. |
+| cancelled | <code>boolean</code> | True after [cancel](?id=sandkit-api-hooks-worker-cancel) was called on this context. |
 
 <div class="smt-member-anchors">
 
@@ -18888,7 +18888,7 @@ Context passed to intercept hook callbacks.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.HookGuard :id=sandkit.api.hooks.worker.hookguard
+#### sandkit.api.hooks.HookGuard :id=sandkit-api-hooks-worker-hookguard
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L118" target="_blank" rel="noopener">hooks.d.ts:118</a></p>
 
@@ -18911,7 +18911,7 @@ Guard filter for worker hook registration.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.ModifyHookOptions :id=sandkit.api.hooks.worker.modifyhookoptions
+#### sandkit.api.hooks.ModifyHookOptions :id=sandkit-api-hooks-worker-modifyhookoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L134" target="_blank" rel="noopener">hooks.d.ts:134</a></p>
 
@@ -18928,13 +18928,13 @@ Guard filter for worker hook registration.
 
 </div>
 
-Options for [modify](?id=sandkit.api.hooks.worker.modify).
+Options for [modify](?id=sandkit-api-hooks-worker-modify).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.InterceptHookMap :id=sandkit.api.hooks.worker.intercepthookmap
+#### sandkit.api.hooks.InterceptHookMap :id=sandkit-api-hooks-worker-intercepthookmap
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L164" target="_blank" rel="noopener">hooks.d.ts:164</a></p>
 
@@ -19024,7 +19024,7 @@ Intercept hook argument shapes keyed by hook id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.InterceptHookOptions :id=sandkit.api.hooks.worker.intercepthookoptions
+#### sandkit.api.hooks.InterceptHookOptions :id=sandkit-api-hooks-worker-intercepthookoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L126" target="_blank" rel="noopener">hooks.d.ts:126</a></p>
 
@@ -19036,15 +19036,15 @@ sandkit.api.hooks.InterceptHookOptions<K *extends* InterceptHookId> = K *extends
 
 </div>
 
-Options for [intercept](?id=sandkit.api.hooks.worker.intercept).
+Options for [intercept](?id=sandkit-api-hooks-worker-intercept).
 
-`K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.worker.intercepthookid)
+`K` *extends* [`InterceptHookId`](?id=sandkit-api-hooks-worker-intercepthookid)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.ElementGuardedInterceptHookId :id=sandkit.api.hooks.worker.elementguardedintercepthookid
+#### sandkit.api.hooks.ElementGuardedInterceptHookId :id=sandkit-api-hooks-worker-elementguardedintercepthookid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L140" target="_blank" rel="noopener">hooks.d.ts:140</a></p>
 
@@ -19062,7 +19062,7 @@ Intercept hook ids with a required element guard.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.TerrainGuardedInterceptHookId :id=sandkit.api.hooks.worker.terrainguardedintercepthookid
+#### sandkit.api.hooks.TerrainGuardedInterceptHookId :id=sandkit-api-hooks-worker-terrainguardedintercepthookid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L149" target="_blank" rel="noopener">hooks.d.ts:149</a></p>
 
@@ -19080,7 +19080,7 @@ Intercept hook ids with a required terrain guard.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.InterceptHookId :id=sandkit.api.hooks.worker.intercepthookid
+#### sandkit.api.hooks.InterceptHookId :id=sandkit-api-hooks-worker-intercepthookid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L152" target="_blank" rel="noopener">hooks.d.ts:152</a></p>
 
@@ -19098,7 +19098,7 @@ Known worker intercept hook ids plus custom strings.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.ModifyHookId :id=sandkit.api.hooks.worker.modifyhookid
+#### sandkit.api.hooks.ModifyHookId :id=sandkit-api-hooks-worker-modifyhookid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L161" target="_blank" rel="noopener">hooks.d.ts:161</a></p>
 
@@ -19116,7 +19116,7 @@ Known worker modify hook ids plus custom strings.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.ModifyHookMap :id=sandkit.api.hooks.worker.modifyhookmap
+#### sandkit.api.hooks.ModifyHookMap :id=sandkit-api-hooks-worker-modifyhookmap
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L180" target="_blank" rel="noopener">hooks.d.ts:180</a></p>
 
@@ -19134,7 +19134,7 @@ Modify hook argument shapes keyed by hook id. Unlisted ids use `unknown`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.InterceptHookArgs :id=sandkit.api.hooks.worker.intercepthookargs
+#### sandkit.api.hooks.InterceptHookArgs :id=sandkit-api-hooks-worker-intercepthookargs
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L183" target="_blank" rel="noopener">hooks.d.ts:183</a></p>
 
@@ -19148,13 +19148,13 @@ sandkit.api.hooks.InterceptHookArgs<K *extends* InterceptHookId> = K *extends* k
 
 Intercept hook args for a given hook id.
 
-`K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.worker.intercepthookid)
+`K` *extends* [`InterceptHookId`](?id=sandkit-api-hooks-worker-intercepthookid)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.ModifyHookArgs :id=sandkit.api.hooks.worker.modifyhookargs
+#### sandkit.api.hooks.ModifyHookArgs :id=sandkit-api-hooks-worker-modifyhookargs
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L188" target="_blank" rel="noopener">hooks.d.ts:188</a></p>
 
@@ -19168,7 +19168,7 @@ sandkit.api.hooks.ModifyHookArgs<K *extends* ModifyHookId> = K *extends* keyof M
 
 Modify hook args for a given hook id.
 
-`K` *extends* [`ModifyHookId`](?id=sandkit.api.hooks.worker.modifyhookid)
+`K` *extends* [`ModifyHookId`](?id=sandkit-api-hooks-worker-modifyhookid)
 
 </div>
 
@@ -19176,7 +19176,7 @@ Modify hook args for a given hook id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.intercept :id=sandkit.api.hooks.worker.intercept
+#### sandkit.api.hooks.intercept :id=sandkit-api-hooks-worker-intercept
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L82" target="_blank" rel="noopener">hooks.d.ts:82</a></p>
 
@@ -19191,8 +19191,8 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 | Argument | Type | Description |
 | --- | --- | --- |
 | hookId | `K` | Registered hook identifier. |
-| callback | <code>(`args`: [`InterceptHookArgs`](?id=sandkit.api.hooks.worker.intercepthookargs)&lt;`K`&gt;, `context`: [`HookContext`](?id=sandkit.api.hooks.worker.hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
-| options? | <code>[`InterceptHookOptions`](?id=sandkit.api.hooks.worker.intercepthookoptions)&lt;`K`&gt;</code> | Optional guard and priority. |
+| callback | <code>(`args`: [`InterceptHookArgs`](?id=sandkit-api-hooks-worker-intercepthookargs)&lt;`K`&gt;, `context`: [`HookContext`](?id=sandkit-api-hooks-worker-hookcontext)) =&gt; `void`</code> | Called with hook arguments and context; may cancel the hook. |
+| options? | <code>[`InterceptHookOptions`](?id=sandkit-api-hooks-worker-intercepthookoptions)&lt;`K`&gt;</code> | Optional guard and priority. |
 
 <div class="smt-member-anchors">
 
@@ -19206,7 +19206,7 @@ sandkit.api.hooks.intercept<K *extends* InterceptHookId>(hookId: K, callback: (a
 
 Register an intercept hook on this worker. Returns an unsubscribe function.
 
-`K` *extends* [`InterceptHookId`](?id=sandkit.api.hooks.worker.intercepthookid)
+`K` *extends* [`InterceptHookId`](?id=sandkit-api-hooks-worker-intercepthookid)
 
 () => `void`
 
@@ -19288,7 +19288,7 @@ api.hooks.intercept("shaker:elementOn", (args, context) => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.hooks.modify :id=sandkit.api.hooks.worker.modify
+#### sandkit.api.hooks.modify :id=sandkit-api-hooks-worker-modify
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/hooks.d.ts#L103" target="_blank" rel="noopener">hooks.d.ts:103</a></p>
 
@@ -19303,8 +19303,8 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 | Argument | Type | Description |
 | --- | --- | --- |
 | hookId | `K` | Registered hook identifier. |
-| callback | <code>(`args`: [`ModifyHookArgs`](?id=sandkit.api.hooks.worker.modifyhookargs)&lt;`K`&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
-| options? | <code>[`ModifyHookOptions`](?id=sandkit.api.hooks.worker.modifyhookoptions)</code> | Optional guard and priority. |
+| callback | <code>(`args`: [`ModifyHookArgs`](?id=sandkit-api-hooks-worker-modifyhookargs)&lt;`K`&gt;) =&gt; `void`</code> | Called with hook arguments; may mutate hook payload. |
+| options? | <code>[`ModifyHookOptions`](?id=sandkit-api-hooks-worker-modifyhookoptions)</code> | Optional guard and priority. |
 
 <div class="smt-member-anchors">
 
@@ -19318,7 +19318,7 @@ sandkit.api.hooks.modify<K *extends* ModifyHookId>(hookId: K, callback: (args: M
 
 Register a modifier hook on this worker. Returns an unsubscribe function.
 
-`K` *extends* [`ModifyHookId`](?id=sandkit.api.hooks.worker.modifyhookid)
+`K` *extends* [`ModifyHookId`](?id=sandkit-api-hooks-worker-modifyhookid)
 
 () => `void`
 
@@ -19358,7 +19358,7 @@ Short-lived visual effect lights.
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.temporary.TemporaryLightHandle :id=sandkit.api.lights.temporary.worker.temporarylighthandle
+#### sandkit.api.lights.temporary.TemporaryLightHandle :id=sandkit-api-lights-temporary-worker-temporarylighthandle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L18" target="_blank" rel="noopener">lights.d.ts:18</a></p>
 
@@ -19375,7 +19375,7 @@ Short-lived visual effect lights.
 
 </div>
 
-Handle returned by [createAtWorld](?id=sandkit.api.lights.temporary.worker.createatworld).
+Handle returned by [createAtWorld](?id=sandkit-api-lights-temporary-worker-createatworld).
 
 </div>
 
@@ -19383,7 +19383,7 @@ Handle returned by [createAtWorld](?id=sandkit.api.lights.temporary.worker.creat
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.temporary.TemporaryLightOptions :id=sandkit.api.lights.temporary.worker.temporarylightoptions
+#### sandkit.api.lights.temporary.TemporaryLightOptions :id=sandkit-api-lights-temporary-worker-temporarylightoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L15" target="_blank" rel="noopener">lights.d.ts:15</a></p>
 
@@ -19395,7 +19395,7 @@ TemporaryLightOptions = TemporaryLightOptions
 
 </div>
 
-Options for [createAtWorld](?id=sandkit.api.lights.temporary.worker.createatworld).
+Options for [createAtWorld](?id=sandkit-api-lights-temporary-worker-createatworld).
 
 </div>
 
@@ -19403,7 +19403,7 @@ Options for [createAtWorld](?id=sandkit.api.lights.temporary.worker.createatworl
 
 <div class="smt-member-card">
 
-#### sandkit.api.lights.temporary.createAtWorld :id=sandkit.api.lights.temporary.worker.createatworld
+#### sandkit.api.lights.temporary.createAtWorld :id=sandkit-api-lights-temporary-worker-createatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/lights.d.ts#L44" target="_blank" rel="noopener">lights.d.ts:44</a></p>
 
@@ -19433,7 +19433,7 @@ createAtWorld(worldX: number, worldY: number, options?: TemporaryLightOptions): 
 
 Create a temporary light at world coordinates.
 
-[`TemporaryLightHandle`](?id=sandkit.api.lights.temporary.worker.temporarylighthandle)
+[`TemporaryLightHandle`](?id=sandkit-api-lights-temporary-worker-temporarylighthandle)
 
 ##### Example
 
@@ -19465,7 +19465,7 @@ larger `sandkit.api` surface; do not assume parity.
 
 <div class="smt-member-card">
 
-#### sandkit.api.main.emitEvent :id=sandkit.api.main.worker.emitevent
+#### sandkit.api.main.emitEvent :id=sandkit-api-main-worker-emitevent
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/main.d.ts#L15" target="_blank" rel="noopener">main.d.ts:15</a></p>
 
@@ -19510,7 +19510,7 @@ Shared `sandkit.api.maps` base — active custom map metadata.
 
 <div class="smt-member-card">
 
-#### sandkit.api.maps.ActiveMapV1 :id=sandkit.api.maps.worker.activemapv1
+#### sandkit.api.maps.ActiveMapV1 :id=sandkit-api-maps-worker-activemapv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L18" target="_blank" rel="noopener">maps.d.ts:18</a></p>
 
@@ -19555,7 +19555,7 @@ Shape varies by map. Known fields are optional; additional keys may exist.
 
 <div class="smt-member-card">
 
-#### sandkit.api.maps.getActive :id=sandkit.api.maps.worker.getactive
+#### sandkit.api.maps.getActive :id=sandkit-api-maps-worker-getactive
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/maps.d.ts#L11" target="_blank" rel="noopener">maps.d.ts:11</a></p>
 
@@ -19569,7 +19569,7 @@ getActive(): Readonly<ActiveMapV1> | null
 
 Return the currently loaded custom map definition.
 
-`Readonly`&lt;[`ActiveMapV1`](?id=sandkit.api.maps.worker.activemapv1)&gt; &#124; `null` Active map metadata, or `null` outside custom maps.
+`Readonly`&lt;[`ActiveMapV1`](?id=sandkit-api-maps-worker-activemapv1)&gt; &#124; `null` Active map metadata, or `null` outside custom maps.
 
 </div>
 
@@ -19587,7 +19587,7 @@ Shared `sandkit.api.player` base — player position and collision queries.
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.getPositionAtWorld :id=sandkit.api.player.worker.getpositionatworld
+#### sandkit.api.player.getPositionAtWorld :id=sandkit-api-player-worker-getpositionatworld
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L15" target="_blank" rel="noopener">player.d.ts:15</a></p>
 
@@ -19607,7 +19607,7 @@ Return the player center position in world pixels.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.player.getWorldPosition~~ :id=sandkit.api.player.worker.getworldposition
+#### ~~sandkit.api.player.getWorldPosition~~ :id=sandkit-api-player-worker-getworldposition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L21" target="_blank" rel="noopener">player.d.ts:21</a></p>
 
@@ -19634,7 +19634,7 @@ getWorldPosition(): Vector2
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.isCollidingWithCell :id=sandkit.api.player.worker.iscollidingwithcell
+#### sandkit.api.player.isCollidingWithCell :id=sandkit-api-player-worker-iscollidingwithcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L31" target="_blank" rel="noopener">player.d.ts:31</a></p>
 
@@ -19664,7 +19664,7 @@ True when the player overlaps the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.player.isWithinRadiusOfCell :id=sandkit.api.player.worker.iswithinradiusofcell
+#### sandkit.api.player.isWithinRadiusOfCell :id=sandkit-api-player-worker-iswithinradiusofcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/player.d.ts#L42" target="_blank" rel="noopener">player.d.ts:42</a></p>
 
@@ -19722,7 +19722,7 @@ Named shared memory buffers for worker threads.
 
 <div class="smt-member-card">
 
-#### sandkit.api.shared.buffers.require :id=sandkit.api.shared.buffers.worker.require
+#### sandkit.api.shared.buffers.require :id=sandkit-api-shared-buffers-worker-require
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/shared.d.ts#L36" target="_blank" rel="noopener">shared.d.ts:36</a></p>
 
@@ -19779,7 +19779,7 @@ Shared `sandkit.api.structures` base — structure lookup and mutation.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureData :id=sandkit.api.structures.worker.structuredata
+#### sandkit.api.structures.StructureData :id=sandkit-api-structures-worker-structuredata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L201" target="_blank" rel="noopener">structures.d.ts:201</a></p>
 
@@ -19808,7 +19808,7 @@ Per-structure custom data bag.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.Structure :id=sandkit.api.structures.worker.structure
+#### sandkit.api.structures.Structure :id=sandkit-api-structures-worker-structure
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L208" target="_blank" rel="noopener">structures.d.ts:208</a></p>
 
@@ -19845,7 +19845,7 @@ Live structure instance in the world grid.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureType :id=sandkit.api.structures.worker.structuretype
+#### sandkit.api.structures.StructureType :id=sandkit-api-structures-worker-structuretype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L217" target="_blank" rel="noopener">structures.d.ts:217</a></p>
 
@@ -19863,7 +19863,7 @@ Numeric structure type handle. Built-in enum values autocomplete.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureId :id=sandkit.api.structures.worker.structureid
+#### sandkit.api.structures.StructureId :id=sandkit-api-structures-worker-structureid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L219" target="_blank" rel="noopener">structures.d.ts:219</a></p>
 
@@ -19881,7 +19881,7 @@ Mod or built-in structure string id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.StructureRef :id=sandkit.api.structures.worker.structureref
+#### sandkit.api.structures.StructureRef :id=sandkit-api-structures-worker-structureref
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L221" target="_blank" rel="noopener">structures.d.ts:221</a></p>
 
@@ -19901,7 +19901,7 @@ Type handle or string id accepted by lookup helpers.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.forEachOfType :id=sandkit.api.structures.worker.foreachoftype
+#### sandkit.api.structures.forEachOfType :id=sandkit-api-structures-worker-foreachoftype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L25" target="_blank" rel="noopener">structures.d.ts:25</a></p>
 
@@ -19915,8 +19915,8 @@ forEachOfType(structureTypeOrId: StructureRef, callback: (structure: Structure) 
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureTypeOrId | <code>[`StructureRef`](?id=sandkit.api.structures.worker.structureref)</code> | Structure type value or string id. |
-| callback | <code>(`structure`: [`Structure`](?id=sandkit.api.structures.worker.structure)) =&gt; `void`</code> | Called once per matching structure instance. |
+| structureTypeOrId | <code>[`StructureRef`](?id=sandkit-api-structures-worker-structureref)</code> | Structure type value or string id. |
+| callback | <code>(`structure`: [`Structure`](?id=sandkit-api-structures-worker-structure)) =&gt; `void`</code> | Called once per matching structure instance. |
 
 <div class="smt-member-anchors">
 
@@ -19942,7 +19942,7 @@ api.structures.forEachOfType("exampleStructure", (structure) => {
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.getAtCell :id=sandkit.api.structures.worker.getatcell
+#### sandkit.api.structures.getAtCell :id=sandkit-api-structures-worker-getatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L37" target="_blank" rel="noopener">structures.d.ts:37</a></p>
 
@@ -19966,13 +19966,13 @@ getAtCell(...args: CellCoordinates): Structure | null
 
 Return the structure at a cell, or null when none.
 
-[`Structure`](?id=sandkit.api.structures.worker.structure) &#124; `null`
+[`Structure`](?id=sandkit-api-structures-worker-structure) &#124; `null`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.getDefinitionByType :id=sandkit.api.structures.worker.getdefinitionbytype
+#### sandkit.api.structures.getDefinitionByType :id=sandkit-api-structures-worker-getdefinitionbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L45" target="_blank" rel="noopener">structures.d.ts:45</a></p>
 
@@ -19986,7 +19986,7 @@ getDefinitionByType(structureType: StructureRef): any
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structureType | <code>[`StructureRef`](?id=sandkit.api.structures.worker.structureref)</code> | Structure type value or string id. |
+| structureType | <code>[`StructureRef`](?id=sandkit-api-structures-worker-structureref)</code> | Structure type value or string id. |
 
 <div class="smt-member-anchors">
 
@@ -20000,7 +20000,7 @@ Return the mod-registered or built-in definition for a structure type.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.getTypeById :id=sandkit.api.structures.worker.gettypebyid
+#### sandkit.api.structures.getTypeById :id=sandkit-api-structures-worker-gettypebyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L53" target="_blank" rel="noopener">structures.d.ts:53</a></p>
 
@@ -20024,13 +20024,13 @@ getTypeById(structureId: string & object): StructureType
 
 Map a structure string id to its runtime type value.
 
-[`StructureType`](?id=sandkit.api.structures.worker.structuretype)
+[`StructureType`](?id=sandkit-api-structures-worker-structuretype)
 
 </div>
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.getTypeFromId~~ :id=sandkit.api.structures.worker.gettypefromid
+#### ~~sandkit.api.structures.getTypeFromId~~ :id=sandkit-api-structures-worker-gettypefromid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L59" target="_blank" rel="noopener">structures.d.ts:59</a></p>
 
@@ -20061,13 +20061,13 @@ getTypeFromId(structureId: string & object): StructureType
 
 </div>
 
-[`StructureType`](?id=sandkit.api.structures.worker.structuretype)
+[`StructureType`](?id=sandkit-api-structures-worker-structuretype)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.hasBuiltAtCell :id=sandkit.api.structures.worker.hasbuiltatcell
+#### sandkit.api.structures.hasBuiltAtCell :id=sandkit-api-structures-worker-hasbuiltatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L68" target="_blank" rel="noopener">structures.d.ts:68</a></p>
 
@@ -20095,7 +20095,7 @@ Return true when a completed structure occupies the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.isType :id=sandkit.api.structures.worker.istype
+#### sandkit.api.structures.isType :id=sandkit-api-structures-worker-istype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L77" target="_blank" rel="noopener">structures.d.ts:77</a></p>
 
@@ -20109,7 +20109,7 @@ isType(structure: Structure | null, structureId: string & object): boolean
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure) &#124; `null`</code> | Structure instance, or null. |
+| structure | <code>[`Structure`](?id=sandkit-api-structures-worker-structure) &#124; `null`</code> | Structure instance, or null. |
 | structureId | `string` & `object` | Structure string id to compare. |
 
 <div class="smt-member-anchors">
@@ -20126,7 +20126,7 @@ Return true when the structure matches the given id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.isTypeAtCell :id=sandkit.api.structures.worker.istypeatcell
+#### sandkit.api.structures.isTypeAtCell :id=sandkit-api-structures-worker-istypeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L87" target="_blank" rel="noopener">structures.d.ts:87</a></p>
 
@@ -20154,7 +20154,7 @@ Return true when the cell structure matches the given id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.setSpritesheetIndex :id=sandkit.api.structures.worker.setspritesheetindex
+#### sandkit.api.structures.setSpritesheetIndex :id=sandkit-api-structures-worker-setspritesheetindex
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L96" target="_blank" rel="noopener">structures.d.ts:96</a></p>
 
@@ -20168,7 +20168,7 @@ setSpritesheetIndex(structure: Structure, index: number): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure)</code> | Target structure instance. |
+| structure | <code>[`Structure`](?id=sandkit-api-structures-worker-structure)</code> | Target structure instance. |
 | index | `number` | Spritesheet frame index. |
 
 <div class="smt-member-anchors">
@@ -20185,7 +20185,7 @@ Set the spritesheet frame index on a structure instance.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.setSpritesheetIndexAtCell :id=sandkit.api.structures.worker.setspritesheetindexatcell
+#### sandkit.api.structures.setSpritesheetIndexAtCell :id=sandkit-api-structures-worker-setspritesheetindexatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L106" target="_blank" rel="noopener">structures.d.ts:106</a></p>
 
@@ -20213,7 +20213,7 @@ Set spritesheet frame index for the structure at a cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.setSpritesheetIndexByValue :id=sandkit.api.structures.worker.setspritesheetindexbyvalue
+#### sandkit.api.structures.setSpritesheetIndexByValue :id=sandkit-api-structures-worker-setspritesheetindexbyvalue
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L116" target="_blank" rel="noopener">structures.d.ts:116</a></p>
 
@@ -20227,7 +20227,7 @@ setSpritesheetIndexByValue(structure: Structure, value: number, thresholds: numb
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure)</code> | Target structure instance. |
+| structure | <code>[`Structure`](?id=sandkit-api-structures-worker-structure)</code> | Target structure instance. |
 | value | `number` | Numeric value mapped through thresholds. |
 | thresholds | `number`[] | Ascending threshold values. |
 
@@ -20247,7 +20247,7 @@ Pick spritesheet index from a value and threshold table on a structure.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.setSpritesheetIndexByValueAtCell :id=sandkit.api.structures.worker.setspritesheetindexbyvalueatcell
+#### sandkit.api.structures.setSpritesheetIndexByValueAtCell :id=sandkit-api-structures-worker-setspritesheetindexbyvalueatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L131" target="_blank" rel="noopener">structures.d.ts:131</a></p>
 
@@ -20269,13 +20269,13 @@ setSpritesheetIndexByValueAtCell(...args: [number, number, number, number[]]): v
 
 </div>
 
-Same as [setSpritesheetIndexByValue](?id=sandkit.api.structures.worker.setspritesheetindexbyvalue) for the structure at a cell.
+Same as [setSpritesheetIndexByValue](?id=sandkit-api-structures-worker-setspritesheetindexbyvalue) for the structure at a cell.
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.update :id=sandkit.api.structures.worker.update
+#### sandkit.api.structures.update :id=sandkit-api-structures-worker-update
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L147" target="_blank" rel="noopener">structures.d.ts:147</a></p>
 
@@ -20289,7 +20289,7 @@ update(structure: Structure, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure)</code> | Structure instance to update. |
+| structure | <code>[`Structure`](?id=sandkit-api-structures-worker-structure)</code> | Structure instance to update. |
 | options? | <code>When `propagateToWorkers` is true, sync to worker threads.</code> |  |
 
 <div class="smt-member-anchors">
@@ -20314,7 +20314,7 @@ api.structures.update(structure, { propagateToWorkers: true });
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.updateData :id=sandkit.api.structures.worker.updatedata
+#### sandkit.api.structures.updateData :id=sandkit-api-structures-worker-updatedata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L166" target="_blank" rel="noopener">structures.d.ts:166</a></p>
 
@@ -20328,7 +20328,7 @@ updateData(structure: Structure, partial: any, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure)</code> | Structure instance to update. |
+| structure | <code>[`Structure`](?id=sandkit-api-structures-worker-structure)</code> | Structure instance to update. |
 | partial | `any` | Fields to merge onto `structure.data`. |
 | options? | <code>When `propagateToWorkers` is true, sync to worker threads.</code> |  |
 
@@ -20360,7 +20360,7 @@ api.structures.updateData(
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.setData~~ :id=sandkit.api.structures.worker.setdata
+#### ~~sandkit.api.structures.setData~~ :id=sandkit-api-structures-worker-setdata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L176" target="_blank" rel="noopener">structures.d.ts:176</a></p>
 
@@ -20383,7 +20383,7 @@ setData(structure: Structure, partial: any, options?: object): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| structure | <code>[`Structure`](?id=sandkit.api.structures.worker.structure)</code> |  |
+| structure | <code>[`Structure`](?id=sandkit-api-structures-worker-structure)</code> |  |
 | partial | `any` |  |
 | options? | <code>{ propagateToWorkers: boolean }</code> |  |
 
@@ -20409,7 +20409,7 @@ Structure processing enablement checks.
 
 <div class="smt-member-card">
 
-#### sandkit.api.structures.processing.isEnabledAtCell :id=sandkit.api.structures.processing.worker.isenabledatcell
+#### sandkit.api.structures.processing.isEnabledAtCell :id=sandkit-api-structures-processing-worker-isenabledatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L191" target="_blank" rel="noopener">structures.d.ts:191</a></p>
 
@@ -20437,7 +20437,7 @@ Return true when processing is enabled at the cell.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.structures.processing.isEnabledAt~~ :id=sandkit.api.structures.processing.worker.isenabledat
+#### ~~sandkit.api.structures.processing.isEnabledAt~~ :id=sandkit-api-structures-processing-worker-isenabledat
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/structures.d.ts#L197" target="_blank" rel="noopener">structures.d.ts:197</a></p>
 
@@ -20487,7 +20487,7 @@ Worker-entry mutations are immediate. Main thread defers matching helpers in
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.TerrainDefinition :id=sandkit.api.terrains.worker.terraindefinition
+#### sandkit.api.terrains.TerrainDefinition :id=sandkit-api-terrains-worker-terraindefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L19" target="_blank" rel="noopener">terrains.d.ts:19</a></p>
 
@@ -20525,7 +20525,7 @@ Worker-entry mutations are immediate. Main thread defers matching helpers in
 
 </div>
 
-Terrain definition shape for register and [getDefinitionByType](?id=sandkit.api.terrains.worker.getdefinitionbytype).
+Terrain definition shape for register and [getDefinitionByType](?id=sandkit-api-terrains-worker-getdefinitionbytype).
 
 ##### Indexable
 
@@ -20537,7 +20537,7 @@ Terrain definition shape for register and [getDefinitionByType](?id=sandkit.api.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.TerrainDataAtCell :id=sandkit.api.terrains.worker.terraindataatcell
+#### sandkit.api.terrains.TerrainDataAtCell :id=sandkit-api-terrains-worker-terraindataatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L48" target="_blank" rel="noopener">terrains.d.ts:48</a></p>
 
@@ -20557,13 +20557,13 @@ Terrain definition shape for register and [getDefinitionByType](?id=sandkit.api.
 
 </div>
 
-Terrain cell data returned by [getDataAtCell](?id=sandkit.api.terrains.worker.getdataatcell).
+Terrain cell data returned by [getDataAtCell](?id=sandkit-api-terrains-worker-getdataatcell).
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.TerrainMutationOptions :id=sandkit.api.terrains.worker.terrainmutationoptions
+#### sandkit.api.terrains.TerrainMutationOptions :id=sandkit-api-terrains-worker-terrainmutationoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L217" target="_blank" rel="noopener">terrains.d.ts:217</a></p>
 
@@ -20585,7 +20585,7 @@ Options for terrain create, replace, or remove calls.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.TerrainType :id=sandkit.api.terrains.worker.terraintype
+#### sandkit.api.terrains.TerrainType :id=sandkit-api-terrains-worker-terraintype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L226" target="_blank" rel="noopener">terrains.d.ts:226</a></p>
 
@@ -20603,7 +20603,7 @@ Numeric terrain / [CellTypeEnum](api/sandkit.enums.CellType.md) handle.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.TerrainId :id=sandkit.api.terrains.worker.terrainid
+#### sandkit.api.terrains.TerrainId :id=sandkit-api-terrains-worker-terrainid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L232" target="_blank" rel="noopener">terrains.d.ts:232</a></p>
 
@@ -20621,7 +20621,7 @@ Mod or built-in terrain string id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.TerrainRef :id=sandkit.api.terrains.worker.terrainref
+#### sandkit.api.terrains.TerrainRef :id=sandkit-api-terrains-worker-terrainref
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L238" target="_blank" rel="noopener">terrains.d.ts:238</a></p>
 
@@ -20641,7 +20641,7 @@ Type handle or string id accepted by mutation helpers.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.getIdByType :id=sandkit.api.terrains.worker.getidbytype
+#### sandkit.api.terrains.getIdByType :id=sandkit-api-terrains-worker-getidbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L69" target="_blank" rel="noopener">terrains.d.ts:69</a></p>
 
@@ -20655,7 +20655,7 @@ getIdByType(terrainType: TerrainType): string & object
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainType | <code>[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype)</code> | Numeric terrain cell type. |
+| terrainType | <code>[`TerrainType`](?id=sandkit-api-terrains-worker-terraintype)</code> | Numeric terrain cell type. |
 
 <div class="smt-member-anchors">
 
@@ -20671,7 +20671,7 @@ Return the mod string id for a numeric terrain type.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.getTypeById :id=sandkit.api.terrains.worker.gettypebyid
+#### sandkit.api.terrains.getTypeById :id=sandkit-api-terrains-worker-gettypebyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L77" target="_blank" rel="noopener">terrains.d.ts:77</a></p>
 
@@ -20695,13 +20695,13 @@ getTypeById(terrainId: string & object): TerrainType
 
 Resolve a terrain string id to a numeric cell type.
 
-[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype)
+[`TerrainType`](?id=sandkit-api-terrains-worker-terraintype)
 
 </div>
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.terrains.getTypeFromId~~ :id=sandkit.api.terrains.worker.gettypefromid
+#### ~~sandkit.api.terrains.getTypeFromId~~ :id=sandkit-api-terrains-worker-gettypefromid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L83" target="_blank" rel="noopener">terrains.d.ts:83</a></p>
 
@@ -20732,13 +20732,13 @@ getTypeFromId(terrainId: string & object): TerrainType
 
 </div>
 
-[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype)
+[`TerrainType`](?id=sandkit-api-terrains-worker-terraintype)
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.getDefinitionByType :id=sandkit.api.terrains.worker.getdefinitionbytype
+#### sandkit.api.terrains.getDefinitionByType :id=sandkit-api-terrains-worker-getdefinitionbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L91" target="_blank" rel="noopener">terrains.d.ts:91</a></p>
 
@@ -20752,7 +20752,7 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| terrainType | <code>[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype)</code> | Numeric terrain cell type. |
+| terrainType | <code>[`TerrainType`](?id=sandkit-api-terrains-worker-terraintype)</code> | Numeric terrain cell type. |
 
 <div class="smt-member-anchors">
 
@@ -20762,13 +20762,13 @@ getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined
 
 Look up the definition for a terrain type.
 
-[`TerrainDefinition`](?id=sandkit.api.terrains.worker.terraindefinition) &#124; `undefined`
+[`TerrainDefinition`](?id=sandkit-api-terrains-worker-terraindefinition) &#124; `undefined`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.getTypeAtCell :id=sandkit.api.terrains.worker.gettypeatcell
+#### sandkit.api.terrains.getTypeAtCell :id=sandkit-api-terrains-worker-gettypeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L100" target="_blank" rel="noopener">terrains.d.ts:100</a></p>
 
@@ -20792,13 +20792,13 @@ getTypeAtCell(...args: CellCoordinates): TerrainType | null
 
 Return the terrain cell type at a cell, or null when none.
 
-[`TerrainType`](?id=sandkit.api.terrains.worker.terraintype) &#124; `null`
+[`TerrainType`](?id=sandkit-api-terrains-worker-terraintype) &#124; `null`
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.getDataAtCell :id=sandkit.api.terrains.worker.getdataatcell
+#### sandkit.api.terrains.getDataAtCell :id=sandkit-api-terrains-worker-getdataatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L110" target="_blank" rel="noopener">terrains.d.ts:110</a></p>
 
@@ -20822,13 +20822,13 @@ getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null
 
 Return terrain cell type and hit points at a cell.
 
-[`TerrainDataAtCell`](?id=sandkit.api.terrains.worker.terraindataatcell) &#124; `null` Cell type and hit points, or null when the cell is not terrain.
+[`TerrainDataAtCell`](?id=sandkit-api-terrains-worker-terraindataatcell) &#124; `null` Cell type and hit points, or null when the cell is not terrain.
 
 </div>
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.isAtCell :id=sandkit.api.terrains.worker.isatcell
+#### sandkit.api.terrains.isAtCell :id=sandkit-api-terrains-worker-isatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L119" target="_blank" rel="noopener">terrains.d.ts:119</a></p>
 
@@ -20856,7 +20856,7 @@ Return true when any terrain occupies the cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.isTypeAtCell :id=sandkit.api.terrains.worker.istypeatcell
+#### sandkit.api.terrains.isTypeAtCell :id=sandkit-api-terrains-worker-istypeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L129" target="_blank" rel="noopener">terrains.d.ts:129</a></p>
 
@@ -20884,7 +20884,7 @@ Return true when the cell terrain matches the given id.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.isCellIdTerrain :id=sandkit.api.terrains.worker.iscellidterrain
+#### sandkit.api.terrains.isCellIdTerrain :id=sandkit-api-terrains-worker-iscellidterrain
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L137" target="_blank" rel="noopener">terrains.d.ts:137</a></p>
 
@@ -20912,7 +20912,7 @@ Return true when a packed cell id refers to terrain.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.damageAtCell :id=sandkit.api.terrains.worker.damageatcell
+#### sandkit.api.terrains.damageAtCell :id=sandkit-api-terrains-worker-damageatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L147" target="_blank" rel="noopener">terrains.d.ts:147</a></p>
 
@@ -20940,7 +20940,7 @@ Apply damage to terrain at a cell.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.meltAtCell :id=sandkit.api.terrains.worker.meltatcell
+#### sandkit.api.terrains.meltAtCell :id=sandkit-api-terrains-worker-meltatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L156" target="_blank" rel="noopener">terrains.d.ts:156</a></p>
 
@@ -20968,7 +20968,7 @@ Melt terrain at a cell (for example ice to water). Worker-entry writes are immed
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.createAtCell :id=sandkit.api.terrains.worker.createatcell
+#### sandkit.api.terrains.createAtCell :id=sandkit-api-terrains-worker-createatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L167" target="_blank" rel="noopener">terrains.d.ts:167</a></p>
 
@@ -20982,7 +20982,7 @@ createAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): voi
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=sandkit.api.terrains.worker.terrainref), [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=sandkit-api-terrains-worker-terrainref), [`TerrainMutationOptions`](?id=sandkit-api-terrains-worker-terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -20996,7 +20996,7 @@ Place terrain at an empty cell. Worker-entry writes are immediate.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.replaceAtCell :id=sandkit.api.terrains.worker.replaceatcell
+#### sandkit.api.terrains.replaceAtCell :id=sandkit-api-terrains-worker-replaceatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L180" target="_blank" rel="noopener">terrains.d.ts:180</a></p>
 
@@ -21010,7 +21010,7 @@ replaceAtCell(...args: number, number, [TerrainRef, TerrainMutationOptions]): vo
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=sandkit.api.terrains.worker.terrainref), [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`TerrainRef`](?id=sandkit-api-terrains-worker-terrainref), [`TerrainMutationOptions`](?id=sandkit-api-terrains-worker-terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -21024,7 +21024,7 @@ Replace existing terrain at a cell. Worker-entry writes are immediate.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.removeAtCell :id=sandkit.api.terrains.worker.removeatcell
+#### sandkit.api.terrains.removeAtCell :id=sandkit-api-terrains-worker-removeatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L192" target="_blank" rel="noopener">terrains.d.ts:192</a></p>
 
@@ -21038,7 +21038,7 @@ removeAtCell(...args: number, number, [TerrainMutationOptions]): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](?id=sandkit.api.terrains.worker.terrainmutationoptions)\]</code> |  |
+| args | <code>...\[`number`, `number`, [`TerrainMutationOptions`](?id=sandkit-api-terrains-worker-terrainmutationoptions)\]</code> |  |
 
 <div class="smt-member-anchors">
 
@@ -21052,7 +21052,7 @@ Remove terrain from a cell. Worker-entry writes are immediate.
 
 <div class="smt-member-card">
 
-#### sandkit.api.terrains.setHitPointsAtCell :id=sandkit.api.terrains.worker.sethitpointsatcell
+#### sandkit.api.terrains.setHitPointsAtCell :id=sandkit-api-terrains-worker-sethitpointsatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L205" target="_blank" rel="noopener">terrains.d.ts:205</a></p>
 
@@ -21082,7 +21082,7 @@ True when hit points changed or the terrain was removed.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.api.terrains.setHpAtCell~~ :id=sandkit.api.terrains.worker.sethpatcell
+#### ~~sandkit.api.terrains.setHpAtCell~~ :id=sandkit-api-terrains-worker-sethpatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/terrains.d.ts#L211" target="_blank" rel="noopener">terrains.d.ts:211</a></p>
 
@@ -21131,7 +21131,7 @@ Main thread adds richer UI APIs on top of this shape.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.I18nTextKey :id=sandkit.api.ui.worker.i18ntextkey
+#### sandkit.api.ui.I18nTextKey :id=sandkit-api-ui-worker-i18ntextkey
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L25" target="_blank" rel="noopener">ui.d.ts:25</a></p>
 
@@ -21154,7 +21154,7 @@ Translation key with optional parameter substitution.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.I18nTranslatable :id=sandkit.api.ui.worker.i18ntranslatable
+#### sandkit.api.ui.I18nTranslatable :id=sandkit-api-ui-worker-i18ntranslatable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L33" target="_blank" rel="noopener">ui.d.ts:33</a></p>
 
@@ -21180,14 +21180,14 @@ Value returned by `sandkit.api.i18n.translatable`.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.ToastOptions :id=sandkit.api.ui.worker.toastoptions
+#### sandkit.api.ui.ToastOptions :id=sandkit-api-ui-worker-toastoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L40" target="_blank" rel="noopener">ui.d.ts:40</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
 | cooldown? | <code>number</code> | Minimum ms before the same toast can show again. |
-| cooldownKey? | <code>string</code> | Dedupe key paired with [ToastOptions.cooldown](?id=sandkit.api.ui.worker.cooldown). Defaults to the message string or `message.key`. |
+| cooldownKey? | <code>string</code> | Dedupe key paired with [ToastOptions.cooldown](?id=sandkit-api-ui-worker-cooldown). Defaults to the message string or `message.key`. |
 | duration? | <code>number &#124; false</code> | Auto-dismiss delay in ms. Default `5000`. Set `false` to keep the toast until another toast replaces it. |
 | variant? | <code>string &amp; object &#124; &quot;danger&quot; &#124; &quot;hint&quot; &#124; &quot;hole&quot;</code> | Visual style applied to the toast body. |
 
@@ -21203,7 +21203,7 @@ Value returned by `sandkit.api.i18n.translatable`.
 
 </div>
 
-Cooldown, style, and auto-dismiss options for [toast](?id=sandkit.api.ui.worker.toast).
+Cooldown, style, and auto-dismiss options for [toast](?id=sandkit-api-ui-worker-toast).
 
 </div>
 
@@ -21211,7 +21211,7 @@ Cooldown, style, and auto-dismiss options for [toast](?id=sandkit.api.ui.worker.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.LocalizedText :id=sandkit.api.ui.worker.localizedtext
+#### sandkit.api.ui.LocalizedText :id=sandkit-api-ui-worker-localizedtext
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L22" target="_blank" rel="noopener">ui.d.ts:22</a></p>
 
@@ -21231,7 +21231,7 @@ Plain text, translation key object, or i18n translatable value.
 
 <div class="smt-member-card">
 
-#### sandkit.api.ui.toast :id=sandkit.api.ui.worker.toast
+#### sandkit.api.ui.toast :id=sandkit-api-ui-worker-toast
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/ui.d.ts#L19" target="_blank" rel="noopener">ui.d.ts:19</a></p>
 
@@ -21245,8 +21245,8 @@ toast(message: LocalizedText, options?: ToastOptions): void
 
 | Argument | Type | Description |
 | --- | --- | --- |
-| message | <code>[`LocalizedText`](?id=sandkit.api.ui.worker.localizedtext)</code> | Plain text, translation key, or translatable value. |
-| options? | <code>[`ToastOptions`](?id=sandkit.api.ui.worker.toastoptions)</code> | Cooldown, style, and auto-dismiss options. |
+| message | <code>[`LocalizedText`](?id=sandkit-api-ui-worker-localizedtext)</code> | Plain text, translation key, or translatable value. |
+| options? | <code>[`ToastOptions`](?id=sandkit-api-ui-worker-toastoptions)</code> | Cooldown, style, and auto-dismiss options. |
 
 <div class="smt-member-anchors">
 
@@ -21285,7 +21285,7 @@ main-thread APIs.
 
 <div class="smt-member-card">
 
-#### sandkit.api.worker.getIndex :id=sandkit.api.worker.worker.getindex
+#### sandkit.api.worker.getIndex :id=sandkit-api-worker-worker-getindex
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L14" target="_blank" rel="noopener">worker.d.ts:14</a></p>
 
@@ -21305,7 +21305,7 @@ Worker index (`0` … `getCount() - 1`).
 
 <div class="smt-member-card">
 
-#### sandkit.api.worker.getCount :id=sandkit.api.worker.worker.getcount
+#### sandkit.api.worker.getCount :id=sandkit-api-worker-worker-getcount
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/worker/api/worker.d.ts#L19" target="_blank" rel="noopener">worker.d.ts:19</a></p>
 
@@ -21347,7 +21347,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.getDigLevel :id=sandkit.engine.api.augments.getdiglevel
+#### sandkit.engine.api.augments.getDigLevel :id=sandkit-engine-api-augments-getdiglevel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L15" target="_blank" rel="noopener">augments.d.ts:15</a></p>
 
@@ -21375,7 +21375,7 @@ Return the current dig augment level.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.getGunLevel :id=sandkit.engine.api.augments.getgunlevel
+#### sandkit.engine.api.augments.getGunLevel :id=sandkit-engine-api-augments-getgunlevel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L20" target="_blank" rel="noopener">augments.d.ts:20</a></p>
 
@@ -21403,7 +21403,7 @@ Return the current gun augment level.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.getPhaseLevel :id=sandkit.engine.api.augments.getphaselevel
+#### sandkit.engine.api.augments.getPhaseLevel :id=sandkit-engine-api-augments-getphaselevel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L25" target="_blank" rel="noopener">augments.d.ts:25</a></p>
 
@@ -21431,7 +21431,7 @@ Return the current phase augment level.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.getRocketAmmoLevel :id=sandkit.engine.api.augments.getrocketammolevel
+#### sandkit.engine.api.augments.getRocketAmmoLevel :id=sandkit-engine-api-augments-getrocketammolevel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L30" target="_blank" rel="noopener">augments.d.ts:30</a></p>
 
@@ -21459,7 +21459,7 @@ Return the current rocket ammo augment level.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.getRocketReloadLevel :id=sandkit.engine.api.augments.getrocketreloadlevel
+#### sandkit.engine.api.augments.getRocketReloadLevel :id=sandkit-engine-api-augments-getrocketreloadlevel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L35" target="_blank" rel="noopener">augments.d.ts:35</a></p>
 
@@ -21487,7 +21487,7 @@ Return the current rocket reload augment level.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.getSprintCapLevel :id=sandkit.engine.api.augments.getsprintcaplevel
+#### sandkit.engine.api.augments.getSprintCapLevel :id=sandkit-engine-api-augments-getsprintcaplevel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L40" target="_blank" rel="noopener">augments.d.ts:40</a></p>
 
@@ -21515,7 +21515,7 @@ Return the current sprint cap augment level.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasBigDig :id=sandkit.engine.api.augments.hasbigdig
+#### sandkit.engine.api.augments.hasBigDig :id=sandkit-engine-api-augments-hasbigdig
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L45" target="_blank" rel="noopener">augments.d.ts:45</a></p>
 
@@ -21543,7 +21543,7 @@ Return whether the big-dig augment is unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasBulletSpeed :id=sandkit.engine.api.augments.hasbulletspeed
+#### sandkit.engine.api.augments.hasBulletSpeed :id=sandkit-engine-api-augments-hasbulletspeed
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L50" target="_blank" rel="noopener">augments.d.ts:50</a></p>
 
@@ -21571,7 +21571,7 @@ Return whether the bullet-speed augment is unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasBulletTracer :id=sandkit.engine.api.augments.hasbullettracer
+#### sandkit.engine.api.augments.hasBulletTracer :id=sandkit-engine-api-augments-hasbullettracer
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L55" target="_blank" rel="noopener">augments.d.ts:55</a></p>
 
@@ -21599,7 +21599,7 @@ Return whether the bullet-tracer augment is unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasKickstartBoost :id=sandkit.engine.api.augments.haskickstartboost
+#### sandkit.engine.api.augments.hasKickstartBoost :id=sandkit-engine-api-augments-haskickstartboost
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L60" target="_blank" rel="noopener">augments.d.ts:60</a></p>
 
@@ -21627,7 +21627,7 @@ Return whether the kickstart-boost augment is unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasPhaseDash :id=sandkit.engine.api.augments.hasphasedash
+#### sandkit.engine.api.augments.hasPhaseDash :id=sandkit-engine-api-augments-hasphasedash
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L65" target="_blank" rel="noopener">augments.d.ts:65</a></p>
 
@@ -21655,7 +21655,7 @@ Return whether the phase-dash augment is unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasPhaseDashCharge :id=sandkit.engine.api.augments.hasphasedashcharge
+#### sandkit.engine.api.augments.hasPhaseDashCharge :id=sandkit-engine-api-augments-hasphasedashcharge
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L70" target="_blank" rel="noopener">augments.d.ts:70</a></p>
 
@@ -21683,7 +21683,7 @@ Return whether the phase-dash-charge augment is unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasRideBoost :id=sandkit.engine.api.augments.hasrideboost
+#### sandkit.engine.api.augments.hasRideBoost :id=sandkit-engine-api-augments-hasrideboost
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L75" target="_blank" rel="noopener">augments.d.ts:75</a></p>
 
@@ -21711,7 +21711,7 @@ Return whether the ride-boost augment is unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasRocketDamage :id=sandkit.engine.api.augments.hasrocketdamage
+#### sandkit.engine.api.augments.hasRocketDamage :id=sandkit-engine-api-augments-hasrocketdamage
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L80" target="_blank" rel="noopener">augments.d.ts:80</a></p>
 
@@ -21739,7 +21739,7 @@ Return whether the rocket-damage augment is unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasRocketWarhead :id=sandkit.engine.api.augments.hasrocketwarhead
+#### sandkit.engine.api.augments.hasRocketWarhead :id=sandkit-engine-api-augments-hasrocketwarhead
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L85" target="_blank" rel="noopener">augments.d.ts:85</a></p>
 
@@ -21767,7 +21767,7 @@ Return whether the rocket-warhead augment is unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasSprintPower :id=sandkit.engine.api.augments.hassprintpower
+#### sandkit.engine.api.augments.hasSprintPower :id=sandkit-engine-api-augments-hassprintpower
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L90" target="_blank" rel="noopener">augments.d.ts:90</a></p>
 
@@ -21795,7 +21795,7 @@ Return whether the sprint-power augment is unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.augments.hasTripleShot :id=sandkit.engine.api.augments.hastripleshot
+#### sandkit.engine.api.augments.hasTripleShot :id=sandkit-engine-api-augments-hastripleshot
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/augments.d.ts#L95" target="_blank" rel="noopener">augments.d.ts:95</a></p>
 
@@ -21837,7 +21837,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.auralite.ensureProducedAtLeast :id=sandkit.engine.api.auralite.ensureproducedatleast
+#### sandkit.engine.api.auralite.ensureProducedAtLeast :id=sandkit-engine-api-auralite-ensureproducedatleast
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L15" target="_blank" rel="noopener">auralite.d.ts:15</a></p>
 
@@ -21865,7 +21865,7 @@ Ensure at least the given amount of auralite has been produced.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.auralite.getProduced :id=sandkit.engine.api.auralite.getproduced
+#### sandkit.engine.api.auralite.getProduced :id=sandkit-engine-api-auralite-getproduced
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/auralite.d.ts#L20" target="_blank" rel="noopener">auralite.d.ts:20</a></p>
 
@@ -21907,7 +21907,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.blueprints.delete :id=sandkit.engine.api.blueprints.delete
+#### sandkit.engine.api.blueprints.delete :id=sandkit-engine-api-blueprints-delete
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L15" target="_blank" rel="noopener">blueprints.d.ts:15</a></p>
 
@@ -21935,7 +21935,7 @@ Delete a saved blueprint. Runtime property name is `delete`.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.blueprints.exportAllString :id=sandkit.engine.api.blueprints.exportallstring
+#### sandkit.engine.api.blueprints.exportAllString :id=sandkit-engine-api-blueprints-exportallstring
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L21" target="_blank" rel="noopener">blueprints.d.ts:21</a></p>
 
@@ -21963,7 +21963,7 @@ Export all blueprints as one string.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.blueprints.exportString :id=sandkit.engine.api.blueprints.exportstring
+#### sandkit.engine.api.blueprints.exportString :id=sandkit-engine-api-blueprints-exportstring
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L26" target="_blank" rel="noopener">blueprints.d.ts:26</a></p>
 
@@ -21991,7 +21991,7 @@ Export one blueprint as a string.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.blueprints.getAll :id=sandkit.engine.api.blueprints.getall
+#### sandkit.engine.api.blueprints.getAll :id=sandkit-engine-api-blueprints-getall
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L31" target="_blank" rel="noopener">blueprints.d.ts:31</a></p>
 
@@ -22019,7 +22019,7 @@ Return all saved blueprints.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.blueprints.importString :id=sandkit.engine.api.blueprints.importstring
+#### sandkit.engine.api.blueprints.importString :id=sandkit-engine-api-blueprints-importstring
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L36" target="_blank" rel="noopener">blueprints.d.ts:36</a></p>
 
@@ -22047,7 +22047,7 @@ Import a blueprint from a string.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.blueprints.load :id=sandkit.engine.api.blueprints.load
+#### sandkit.engine.api.blueprints.load :id=sandkit-engine-api-blueprints-load
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L41" target="_blank" rel="noopener">blueprints.d.ts:41</a></p>
 
@@ -22075,7 +22075,7 @@ Load a blueprint into the active session.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.blueprints.save :id=sandkit.engine.api.blueprints.save
+#### sandkit.engine.api.blueprints.save :id=sandkit-engine-api-blueprints-save
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/blueprints.d.ts#L46" target="_blank" rel="noopener">blueprints.d.ts:46</a></p>
 
@@ -22117,7 +22117,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.clipboard.activate :id=sandkit.engine.api.clipboard.activate
+#### sandkit.engine.api.clipboard.activate :id=sandkit-engine-api-clipboard-activate
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L15" target="_blank" rel="noopener">clipboard.d.ts:15</a></p>
 
@@ -22145,7 +22145,7 @@ Activate the clipboard tool or mode.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.clipboard.clear :id=sandkit.engine.api.clipboard.clear
+#### sandkit.engine.api.clipboard.clear :id=sandkit-engine-api-clipboard-clear
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L20" target="_blank" rel="noopener">clipboard.d.ts:20</a></p>
 
@@ -22173,7 +22173,7 @@ Clear the current clipboard contents.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.clipboard.get :id=sandkit.engine.api.clipboard.get
+#### sandkit.engine.api.clipboard.get :id=sandkit-engine-api-clipboard-get
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L25" target="_blank" rel="noopener">clipboard.d.ts:25</a></p>
 
@@ -22201,7 +22201,7 @@ Return the current clipboard payload.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.clipboard.getHistory :id=sandkit.engine.api.clipboard.gethistory
+#### sandkit.engine.api.clipboard.getHistory :id=sandkit-engine-api-clipboard-gethistory
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L30" target="_blank" rel="noopener">clipboard.d.ts:30</a></p>
 
@@ -22229,7 +22229,7 @@ Return clipboard history entries.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.clipboard.getSignalLinks :id=sandkit.engine.api.clipboard.getsignallinks
+#### sandkit.engine.api.clipboard.getSignalLinks :id=sandkit-engine-api-clipboard-getsignallinks
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L35" target="_blank" rel="noopener">clipboard.d.ts:35</a></p>
 
@@ -22257,7 +22257,7 @@ Return signal links stored on the clipboard.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.clipboard.selectFromHistory :id=sandkit.engine.api.clipboard.selectfromhistory
+#### sandkit.engine.api.clipboard.selectFromHistory :id=sandkit-engine-api-clipboard-selectfromhistory
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L40" target="_blank" rel="noopener">clipboard.d.ts:40</a></p>
 
@@ -22285,7 +22285,7 @@ Restore a clipboard entry from history.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.clipboard.set :id=sandkit.engine.api.clipboard.set
+#### sandkit.engine.api.clipboard.set :id=sandkit-engine-api-clipboard-set
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/clipboard.d.ts#L45" target="_blank" rel="noopener">clipboard.d.ts:45</a></p>
 
@@ -22327,7 +22327,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.coloringTool.colorStructure :id=sandkit.engine.api.coloringTool.colorstructure
+#### sandkit.engine.api.coloringTool.colorStructure :id=sandkit-engine-api-coloringTool-colorstructure
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L15" target="_blank" rel="noopener">coloringTool.d.ts:15</a></p>
 
@@ -22355,7 +22355,7 @@ Apply a color to one structure.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.coloringTool.floodFillColor :id=sandkit.engine.api.coloringTool.floodfillcolor
+#### sandkit.engine.api.coloringTool.floodFillColor :id=sandkit-engine-api-coloringTool-floodfillcolor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L20" target="_blank" rel="noopener">coloringTool.d.ts:20</a></p>
 
@@ -22383,7 +22383,7 @@ Flood-fill connected structures with a color.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.coloringTool.getColor :id=sandkit.engine.api.coloringTool.getcolor
+#### sandkit.engine.api.coloringTool.getColor :id=sandkit-engine-api-coloringTool-getcolor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L25" target="_blank" rel="noopener">coloringTool.d.ts:25</a></p>
 
@@ -22411,7 +22411,7 @@ Return the color on a structure.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.coloringTool.isColorableStructure :id=sandkit.engine.api.coloringTool.iscolorablestructure
+#### sandkit.engine.api.coloringTool.isColorableStructure :id=sandkit-engine-api-coloringTool-iscolorablestructure
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L30" target="_blank" rel="noopener">coloringTool.d.ts:30</a></p>
 
@@ -22439,7 +22439,7 @@ Return whether a structure can be colored.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.coloringTool.isMatchColorMode :id=sandkit.engine.api.coloringTool.ismatchcolormode
+#### sandkit.engine.api.coloringTool.isMatchColorMode :id=sandkit-engine-api-coloringTool-ismatchcolormode
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L35" target="_blank" rel="noopener">coloringTool.d.ts:35</a></p>
 
@@ -22467,7 +22467,7 @@ Return whether match-color mode is active.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.coloringTool.isPaintBucketMode :id=sandkit.engine.api.coloringTool.ispaintbucketmode
+#### sandkit.engine.api.coloringTool.isPaintBucketMode :id=sandkit-engine-api-coloringTool-ispaintbucketmode
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L40" target="_blank" rel="noopener">coloringTool.d.ts:40</a></p>
 
@@ -22495,7 +22495,7 @@ Return whether paint-bucket mode is active.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.coloringTool.setColor :id=sandkit.engine.api.coloringTool.setcolor
+#### sandkit.engine.api.coloringTool.setColor :id=sandkit-engine-api-coloringTool-setcolor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L45" target="_blank" rel="noopener">coloringTool.d.ts:45</a></p>
 
@@ -22523,7 +22523,7 @@ Set the color on a structure.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.coloringTool.toggleMatchColorMode :id=sandkit.engine.api.coloringTool.togglematchcolormode
+#### sandkit.engine.api.coloringTool.toggleMatchColorMode :id=sandkit-engine-api-coloringTool-togglematchcolormode
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L50" target="_blank" rel="noopener">coloringTool.d.ts:50</a></p>
 
@@ -22551,7 +22551,7 @@ Toggle match-color mode on or off.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.coloringTool.togglePaintBucketMode :id=sandkit.engine.api.coloringTool.togglepaintbucketmode
+#### sandkit.engine.api.coloringTool.togglePaintBucketMode :id=sandkit-engine-api-coloringTool-togglepaintbucketmode
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/coloringTool.d.ts#L55" target="_blank" rel="noopener">coloringTool.d.ts:55</a></p>
 
@@ -22635,7 +22635,7 @@ Sentinel value for a random palette color.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.closePalette :id=sandkit.engine.api.colorPicker.closepalette
+#### sandkit.engine.api.colorPicker.closePalette :id=sandkit-engine-api-colorPicker-closepalette
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L23" target="_blank" rel="noopener">colorPicker.d.ts:23</a></p>
 
@@ -22663,7 +22663,7 @@ Close the active color palette UI.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.getActivePalette :id=sandkit.engine.api.colorPicker.getactivepalette
+#### sandkit.engine.api.colorPicker.getActivePalette :id=sandkit-engine-api-colorPicker-getactivepalette
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L28" target="_blank" rel="noopener">colorPicker.d.ts:28</a></p>
 
@@ -22691,7 +22691,7 @@ Return the active palette identifier.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.getCycleColor :id=sandkit.engine.api.colorPicker.getcyclecolor
+#### sandkit.engine.api.colorPicker.getCycleColor :id=sandkit-engine-api-colorPicker-getcyclecolor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L33" target="_blank" rel="noopener">colorPicker.d.ts:33</a></p>
 
@@ -22719,7 +22719,7 @@ Return the next color in the cycle.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.getRandomColor :id=sandkit.engine.api.colorPicker.getrandomcolor
+#### sandkit.engine.api.colorPicker.getRandomColor :id=sandkit-engine-api-colorPicker-getrandomcolor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L38" target="_blank" rel="noopener">colorPicker.d.ts:38</a></p>
 
@@ -22747,7 +22747,7 @@ Return a random predefined color.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.hexToRgba :id=sandkit.engine.api.colorPicker.hextorgba
+#### sandkit.engine.api.colorPicker.hexToRgba :id=sandkit-engine-api-colorPicker-hextorgba
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L43" target="_blank" rel="noopener">colorPicker.d.ts:43</a></p>
 
@@ -22775,7 +22775,7 @@ Convert a hex color string to RGBA components.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.renderColorButton :id=sandkit.engine.api.colorPicker.rendercolorbutton
+#### sandkit.engine.api.colorPicker.renderColorButton :id=sandkit-engine-api-colorPicker-rendercolorbutton
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L48" target="_blank" rel="noopener">colorPicker.d.ts:48</a></p>
 
@@ -22803,7 +22803,7 @@ Render a color-picker button in the UI.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.renderColorSection :id=sandkit.engine.api.colorPicker.rendercolorsection
+#### sandkit.engine.api.colorPicker.renderColorSection :id=sandkit-engine-api-colorPicker-rendercolorsection
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L53" target="_blank" rel="noopener">colorPicker.d.ts:53</a></p>
 
@@ -22831,7 +22831,7 @@ Render a color section in the UI.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.renderPalette :id=sandkit.engine.api.colorPicker.renderpalette
+#### sandkit.engine.api.colorPicker.renderPalette :id=sandkit-engine-api-colorPicker-renderpalette
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L58" target="_blank" rel="noopener">colorPicker.d.ts:58</a></p>
 
@@ -22859,7 +22859,7 @@ Render the full color palette UI.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.rgbaToHex :id=sandkit.engine.api.colorPicker.rgbatohex
+#### sandkit.engine.api.colorPicker.rgbaToHex :id=sandkit-engine-api-colorPicker-rgbatohex
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L63" target="_blank" rel="noopener">colorPicker.d.ts:63</a></p>
 
@@ -22887,7 +22887,7 @@ Convert RGBA components to a hex color string.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.setActivePalette :id=sandkit.engine.api.colorPicker.setactivepalette
+#### sandkit.engine.api.colorPicker.setActivePalette :id=sandkit-engine-api-colorPicker-setactivepalette
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L68" target="_blank" rel="noopener">colorPicker.d.ts:68</a></p>
 
@@ -22915,7 +22915,7 @@ Set the active palette identifier.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.colorPicker.togglePalette :id=sandkit.engine.api.colorPicker.togglepalette
+#### sandkit.engine.api.colorPicker.togglePalette :id=sandkit-engine-api-colorPicker-togglepalette
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/colorPicker.d.ts#L73" target="_blank" rel="noopener">colorPicker.d.ts:73</a></p>
 
@@ -22957,7 +22957,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.conveyors.registerType :id=sandkit.engine.api.conveyors.registertype
+#### sandkit.engine.api.conveyors.registerType :id=sandkit-engine-api-conveyors-registertype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/conveyors.d.ts#L15" target="_blank" rel="noopener">conveyors.d.ts:15</a></p>
 
@@ -22999,7 +22999,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.debug.register :id=sandkit.engine.api.debug.register
+#### sandkit.engine.api.debug.register :id=sandkit-engine-api-debug-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/debug.d.ts#L15" target="_blank" rel="noopener">debug.d.ts:15</a></p>
 
@@ -23041,7 +23041,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.drones.kill :id=sandkit.engine.api.drones.kill
+#### sandkit.engine.api.drones.kill :id=sandkit-engine-api-drones-kill
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/drones.d.ts#L15" target="_blank" rel="noopener">drones.d.ts:15</a></p>
 
@@ -23069,7 +23069,7 @@ Remove one or more drones.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.drones.spawn :id=sandkit.engine.api.drones.spawn
+#### sandkit.engine.api.drones.spawn :id=sandkit-engine-api-drones-spawn
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/drones.d.ts#L20" target="_blank" rel="noopener">drones.d.ts:20</a></p>
 
@@ -23111,7 +23111,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.createLight :id=sandkit.engine.api.entities.createlight
+#### sandkit.engine.api.entities.createLight :id=sandkit-engine-api-entities-createlight
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L15" target="_blank" rel="noopener">entities.d.ts:15</a></p>
 
@@ -23139,7 +23139,7 @@ Create a light entity attached to a parent.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.getAll :id=sandkit.engine.api.entities.getall
+#### sandkit.engine.api.entities.getAll :id=sandkit-engine-api-entities-getall
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L20" target="_blank" rel="noopener">entities.d.ts:20</a></p>
 
@@ -23167,7 +23167,7 @@ Return all live entities.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.getAllByType :id=sandkit.engine.api.entities.getallbytype
+#### sandkit.engine.api.entities.getAllByType :id=sandkit-engine-api-entities-getallbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L25" target="_blank" rel="noopener">entities.d.ts:25</a></p>
 
@@ -23195,7 +23195,7 @@ Return all entities of one type.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.getAllTypeDefs :id=sandkit.engine.api.entities.getalltypedefs
+#### sandkit.engine.api.entities.getAllTypeDefs :id=sandkit-engine-api-entities-getalltypedefs
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L30" target="_blank" rel="noopener">entities.d.ts:30</a></p>
 
@@ -23223,7 +23223,7 @@ Return all registered entity type definitions.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.getSprite :id=sandkit.engine.api.entities.getsprite
+#### sandkit.engine.api.entities.getSprite :id=sandkit-engine-api-entities-getsprite
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L35" target="_blank" rel="noopener">entities.d.ts:35</a></p>
 
@@ -23251,7 +23251,7 @@ Return the sprite for an entity.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.getTypeDef :id=sandkit.engine.api.entities.gettypedef
+#### sandkit.engine.api.entities.getTypeDef :id=sandkit-engine-api-entities-gettypedef
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L40" target="_blank" rel="noopener">entities.d.ts:40</a></p>
 
@@ -23279,7 +23279,7 @@ Return one entity type definition by id.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.launch :id=sandkit.engine.api.entities.launch
+#### sandkit.engine.api.entities.launch :id=sandkit-engine-api-entities-launch
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L45" target="_blank" rel="noopener">entities.d.ts:45</a></p>
 
@@ -23307,7 +23307,7 @@ Launch an entity with velocity or trajectory.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.registerSpawner :id=sandkit.engine.api.entities.registerspawner
+#### sandkit.engine.api.entities.registerSpawner :id=sandkit-engine-api-entities-registerspawner
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L50" target="_blank" rel="noopener">entities.d.ts:50</a></p>
 
@@ -23335,7 +23335,7 @@ Register an entity spawner behavior.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.registerType :id=sandkit.engine.api.entities.registertype
+#### sandkit.engine.api.entities.registerType :id=sandkit-engine-api-entities-registertype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L55" target="_blank" rel="noopener">entities.d.ts:55</a></p>
 
@@ -23363,7 +23363,7 @@ Register a custom entity type.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.spawn :id=sandkit.engine.api.entities.spawn
+#### sandkit.engine.api.entities.spawn :id=sandkit-engine-api-entities-spawn
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L60" target="_blank" rel="noopener">entities.d.ts:60</a></p>
 
@@ -23391,7 +23391,7 @@ Spawn an entity instance.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.entities.startCapture :id=sandkit.engine.api.entities.startcapture
+#### sandkit.engine.api.entities.startCapture :id=sandkit-engine-api-entities-startcapture
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/entities.d.ts#L65" target="_blank" rel="noopener">entities.d.ts:65</a></p>
 
@@ -23433,7 +23433,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.extensions.define :id=sandkit.engine.api.extensions.define
+#### sandkit.engine.api.extensions.define :id=sandkit-engine-api-extensions-define
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/extensions.d.ts#L15" target="_blank" rel="noopener">extensions.d.ts:15</a></p>
 
@@ -23475,7 +23475,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.factory.addViabilityGold :id=sandkit.engine.api.factory.addviabilitygold
+#### sandkit.engine.api.factory.addViabilityGold :id=sandkit-engine-api-factory-addviabilitygold
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L15" target="_blank" rel="noopener">factory.d.ts:15</a></p>
 
@@ -23503,7 +23503,7 @@ Add viability gold toward the next factory tier.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.factory.canUnlockNextTier :id=sandkit.engine.api.factory.canunlocknexttier
+#### sandkit.engine.api.factory.canUnlockNextTier :id=sandkit-engine-api-factory-canunlocknexttier
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L20" target="_blank" rel="noopener">factory.d.ts:20</a></p>
 
@@ -23531,7 +23531,7 @@ Return whether the next factory tier can be unlocked.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.factory.ensureProcessAtLeast :id=sandkit.engine.api.factory.ensureprocessatleast
+#### sandkit.engine.api.factory.ensureProcessAtLeast :id=sandkit-engine-api-factory-ensureprocessatleast
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L25" target="_blank" rel="noopener">factory.d.ts:25</a></p>
 
@@ -23559,7 +23559,7 @@ Ensure at least the given process count has been recorded.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.factory.flushDeferredLevelUps :id=sandkit.engine.api.factory.flushdeferredlevelups
+#### sandkit.engine.api.factory.flushDeferredLevelUps :id=sandkit-engine-api-factory-flushdeferredlevelups
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L30" target="_blank" rel="noopener">factory.d.ts:30</a></p>
 
@@ -23587,7 +23587,7 @@ Apply deferred factory level-ups.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.factory.getLevel :id=sandkit.engine.api.factory.getlevel
+#### sandkit.engine.api.factory.getLevel :id=sandkit-engine-api-factory-getlevel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L35" target="_blank" rel="noopener">factory.d.ts:35</a></p>
 
@@ -23615,7 +23615,7 @@ Return the current factory level.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.factory.getProcessCount :id=sandkit.engine.api.factory.getprocesscount
+#### sandkit.engine.api.factory.getProcessCount :id=sandkit-engine-api-factory-getprocesscount
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L40" target="_blank" rel="noopener">factory.d.ts:40</a></p>
 
@@ -23643,7 +23643,7 @@ Return total recorded process count.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.factory.getProcessRate :id=sandkit.engine.api.factory.getprocessrate
+#### sandkit.engine.api.factory.getProcessRate :id=sandkit-engine-api-factory-getprocessrate
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L45" target="_blank" rel="noopener">factory.d.ts:45</a></p>
 
@@ -23671,7 +23671,7 @@ Return the current process rate.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.factory.recordProcess :id=sandkit.engine.api.factory.recordprocess
+#### sandkit.engine.api.factory.recordProcess :id=sandkit-engine-api-factory-recordprocess
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L50" target="_blank" rel="noopener">factory.d.ts:50</a></p>
 
@@ -23699,7 +23699,7 @@ Record one factory process event.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.factory.unlockNextTier :id=sandkit.engine.api.factory.unlocknexttier
+#### sandkit.engine.api.factory.unlockNextTier :id=sandkit-engine-api-factory-unlocknexttier
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/factory.d.ts#L55" target="_blank" rel="noopener">factory.d.ts:55</a></p>
 
@@ -23741,7 +23741,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.foliage.generate :id=sandkit.engine.api.foliage.generate
+#### sandkit.engine.api.foliage.generate :id=sandkit-engine-api-foliage-generate
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L15" target="_blank" rel="noopener">foliage.d.ts:15</a></p>
 
@@ -23769,7 +23769,7 @@ Generate foliage for a region or world chunk.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.foliage.getClusters :id=sandkit.engine.api.foliage.getclusters
+#### sandkit.engine.api.foliage.getClusters :id=sandkit-engine-api-foliage-getclusters
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L20" target="_blank" rel="noopener">foliage.d.ts:20</a></p>
 
@@ -23797,7 +23797,7 @@ Return foliage cluster data.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.foliage.getContainer :id=sandkit.engine.api.foliage.getcontainer
+#### sandkit.engine.api.foliage.getContainer :id=sandkit-engine-api-foliage-getcontainer
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L25" target="_blank" rel="noopener">foliage.d.ts:25</a></p>
 
@@ -23825,7 +23825,7 @@ Return the foliage render container.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.foliage.hasProcgenData :id=sandkit.engine.api.foliage.hasprocgendata
+#### sandkit.engine.api.foliage.hasProcgenData :id=sandkit-engine-api-foliage-hasprocgendata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foliage.d.ts#L30" target="_blank" rel="noopener">foliage.d.ts:30</a></p>
 
@@ -23867,7 +23867,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.foundationColorPicker.getColor :id=sandkit.engine.api.foundationColorPicker.getcolor
+#### sandkit.engine.api.foundationColorPicker.getColor :id=sandkit-engine-api-foundationColorPicker-getcolor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/foundationColorPicker.d.ts#L15" target="_blank" rel="noopener">foundationColorPicker.d.ts:15</a></p>
 
@@ -23909,7 +23909,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.game.load :id=sandkit.engine.api.game.load
+#### sandkit.engine.api.game.load :id=sandkit-engine-api-game-load
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L15" target="_blank" rel="noopener">game.d.ts:15</a></p>
 
@@ -23937,7 +23937,7 @@ Load a saved game into the session.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.game.save :id=sandkit.engine.api.game.save
+#### sandkit.engine.api.game.save :id=sandkit-engine-api-game-save
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L20" target="_blank" rel="noopener">game.d.ts:20</a></p>
 
@@ -23965,7 +23965,7 @@ Save the current session.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.game.start :id=sandkit.engine.api.game.start
+#### sandkit.engine.api.game.start :id=sandkit-engine-api-game-start
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/game.d.ts#L25" target="_blank" rel="noopener">game.d.ts:25</a></p>
 
@@ -24007,7 +24007,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.heatTransfer.absorbAdjacentElements :id=sandkit.engine.api.heatTransfer.absorbadjacentelements
+#### sandkit.engine.api.heatTransfer.absorbAdjacentElements :id=sandkit-engine-api-heatTransfer-absorbadjacentelements
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L15" target="_blank" rel="noopener">heatTransfer.d.ts:15</a></p>
 
@@ -24035,7 +24035,7 @@ Absorb heat from adjacent elements into a cell.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.heatTransfer.addTemperature :id=sandkit.engine.api.heatTransfer.addtemperature
+#### sandkit.engine.api.heatTransfer.addTemperature :id=sandkit-engine-api-heatTransfer-addtemperature
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L20" target="_blank" rel="noopener">heatTransfer.d.ts:20</a></p>
 
@@ -24063,7 +24063,7 @@ Add temperature to a cell or region.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.heatTransfer.computeDiffusedTemperatures :id=sandkit.engine.api.heatTransfer.computediffusedtemperatures
+#### sandkit.engine.api.heatTransfer.computeDiffusedTemperatures :id=sandkit-engine-api-heatTransfer-computediffusedtemperatures
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L25" target="_blank" rel="noopener">heatTransfer.d.ts:25</a></p>
 
@@ -24091,7 +24091,7 @@ Compute diffused temperatures for connected cells.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.heatTransfer.computeEqualizedTemperature :id=sandkit.engine.api.heatTransfer.computeequalizedtemperature
+#### sandkit.engine.api.heatTransfer.computeEqualizedTemperature :id=sandkit-engine-api-heatTransfer-computeequalizedtemperature
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L30" target="_blank" rel="noopener">heatTransfer.d.ts:30</a></p>
 
@@ -24119,7 +24119,7 @@ Compute one equalized temperature across connected cells.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.heatTransfer.consumeTemperatureNear :id=sandkit.engine.api.heatTransfer.consumetemperaturenear
+#### sandkit.engine.api.heatTransfer.consumeTemperatureNear :id=sandkit-engine-api-heatTransfer-consumetemperaturenear
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L35" target="_blank" rel="noopener">heatTransfer.d.ts:35</a></p>
 
@@ -24147,7 +24147,7 @@ Consume temperature near a point or cell.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.heatTransfer.ensureTemperature :id=sandkit.engine.api.heatTransfer.ensuretemperature
+#### sandkit.engine.api.heatTransfer.ensureTemperature :id=sandkit-engine-api-heatTransfer-ensuretemperature
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L40" target="_blank" rel="noopener">heatTransfer.d.ts:40</a></p>
 
@@ -24175,7 +24175,7 @@ Ensure a cell has at least the given temperature.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.heatTransfer.equalizeConnected :id=sandkit.engine.api.heatTransfer.equalizeconnected
+#### sandkit.engine.api.heatTransfer.equalizeConnected :id=sandkit-engine-api-heatTransfer-equalizeconnected
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/heatTransfer.d.ts#L45" target="_blank" rel="noopener">heatTransfer.d.ts:45</a></p>
 
@@ -24217,7 +24217,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.launchers.registerType :id=sandkit.engine.api.launchers.registertype
+#### sandkit.engine.api.launchers.registerType :id=sandkit-engine-api-launchers-registertype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/launchers.d.ts#L15" target="_blank" rel="noopener">launchers.d.ts:15</a></p>
 
@@ -24259,7 +24259,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.lightColorPicker.getColor :id=sandkit.engine.api.lightColorPicker.getcolor
+#### sandkit.engine.api.lightColorPicker.getColor :id=sandkit-engine-api-lightColorPicker-getcolor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/lightColorPicker.d.ts#L15" target="_blank" rel="noopener">lightColorPicker.d.ts:15</a></p>
 
@@ -24301,7 +24301,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.matters.getMatterTypeFromId :id=sandkit.engine.api.matters.getmattertypefromid
+#### sandkit.engine.api.matters.getMatterTypeFromId :id=sandkit-engine-api-matters-getmattertypefromid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L15" target="_blank" rel="noopener">matters.d.ts:15</a></p>
 
@@ -24329,7 +24329,7 @@ Resolve a matter type from an id string.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.matters.register :id=sandkit.engine.api.matters.register
+#### sandkit.engine.api.matters.register :id=sandkit-engine-api-matters-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L20" target="_blank" rel="noopener">matters.d.ts:20</a></p>
 
@@ -24357,7 +24357,7 @@ Register a custom matter type.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.matters.runSolidUpdate :id=sandkit.engine.api.matters.runsolidupdate
+#### sandkit.engine.api.matters.runSolidUpdate :id=sandkit-engine-api-matters-runsolidupdate
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/matters.d.ts#L25" target="_blank" rel="noopener">matters.d.ts:25</a></p>
 
@@ -24399,7 +24399,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.misc.register :id=sandkit.engine.api.misc.register
+#### sandkit.engine.api.misc.register :id=sandkit-engine-api-misc-register
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/misc.d.ts#L15" target="_blank" rel="noopener">misc.d.ts:15</a></p>
 
@@ -24441,7 +24441,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.portals.getMarkers :id=sandkit.engine.api.portals.getmarkers
+#### sandkit.engine.api.portals.getMarkers :id=sandkit-engine-api-portals-getmarkers
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/portals.d.ts#L15" target="_blank" rel="noopener">portals.d.ts:15</a></p>
 
@@ -24483,7 +24483,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prefabData.getAll :id=sandkit.engine.api.prefabData.getall
+#### sandkit.engine.api.prefabData.getAll :id=sandkit-engine-api-prefabData-getall
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L15" target="_blank" rel="noopener">prefabData.d.ts:15</a></p>
 
@@ -24511,7 +24511,7 @@ Return all prefab data entries.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prefabData.getAllMetadata :id=sandkit.engine.api.prefabData.getallmetadata
+#### sandkit.engine.api.prefabData.getAllMetadata :id=sandkit-engine-api-prefabData-getallmetadata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L20" target="_blank" rel="noopener">prefabData.d.ts:20</a></p>
 
@@ -24539,7 +24539,7 @@ Return metadata for all prefabs.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prefabData.getArtifactLocations :id=sandkit.engine.api.prefabData.getartifactlocations
+#### sandkit.engine.api.prefabData.getArtifactLocations :id=sandkit-engine-api-prefabData-getartifactlocations
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L25" target="_blank" rel="noopener">prefabData.d.ts:25</a></p>
 
@@ -24567,7 +24567,7 @@ Return artifact locations for prefabs.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prefabData.getAtCell :id=sandkit.engine.api.prefabData.getatcell
+#### sandkit.engine.api.prefabData.getAtCell :id=sandkit-engine-api-prefabData-getatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L30" target="_blank" rel="noopener">prefabData.d.ts:30</a></p>
 
@@ -24595,7 +24595,7 @@ Return prefab data at one grid cell.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prefabData.getMetadata :id=sandkit.engine.api.prefabData.getmetadata
+#### sandkit.engine.api.prefabData.getMetadata :id=sandkit-engine-api-prefabData-getmetadata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabData.d.ts#L35" target="_blank" rel="noopener">prefabData.d.ts:35</a></p>
 
@@ -24637,7 +24637,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prefabDecor.getPlacementByName :id=sandkit.engine.api.prefabDecor.getplacementbyname
+#### sandkit.engine.api.prefabDecor.getPlacementByName :id=sandkit-engine-api-prefabDecor-getplacementbyname
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabDecor.d.ts#L15" target="_blank" rel="noopener">prefabDecor.d.ts:15</a></p>
 
@@ -24665,7 +24665,7 @@ Return a decor placement definition by name.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prefabDecor.replaceDecor :id=sandkit.engine.api.prefabDecor.replacedecor
+#### sandkit.engine.api.prefabDecor.replaceDecor :id=sandkit-engine-api-prefabDecor-replacedecor
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabDecor.d.ts#L20" target="_blank" rel="noopener">prefabDecor.d.ts:20</a></p>
 
@@ -24707,7 +24707,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prefabulator.localizeBlueprintStructures :id=sandkit.engine.api.prefabulator.localizeblueprintstructures
+#### sandkit.engine.api.prefabulator.localizeBlueprintStructures :id=sandkit-engine-api-prefabulator-localizeblueprintstructures
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabulator.d.ts#L15" target="_blank" rel="noopener">prefabulator.d.ts:15</a></p>
 
@@ -24735,7 +24735,7 @@ Convert serialized blueprint structures to world-local coordinates.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prefabulator.serializeBlueprintStructures :id=sandkit.engine.api.prefabulator.serializeblueprintstructures
+#### sandkit.engine.api.prefabulator.serializeBlueprintStructures :id=sandkit-engine-api-prefabulator-serializeblueprintstructures
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prefabulator.d.ts#L20" target="_blank" rel="noopener">prefabulator.d.ts:20</a></p>
 
@@ -24777,7 +24777,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prismaline.consume :id=sandkit.engine.api.prismaline.consume
+#### sandkit.engine.api.prismaline.consume :id=sandkit-engine-api-prismaline-consume
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L15" target="_blank" rel="noopener">prismaline.d.ts:15</a></p>
 
@@ -24805,7 +24805,7 @@ Consume prismaline from the player or world.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prismaline.getAvailable :id=sandkit.engine.api.prismaline.getavailable
+#### sandkit.engine.api.prismaline.getAvailable :id=sandkit-engine-api-prismaline-getavailable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L20" target="_blank" rel="noopener">prismaline.d.ts:20</a></p>
 
@@ -24833,7 +24833,7 @@ Return available prismaline amount.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prismaline.getConsumed :id=sandkit.engine.api.prismaline.getconsumed
+#### sandkit.engine.api.prismaline.getConsumed :id=sandkit-engine-api-prismaline-getconsumed
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismaline.d.ts#L25" target="_blank" rel="noopener">prismaline.d.ts:25</a></p>
 
@@ -24875,7 +24875,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prismite.consume :id=sandkit.engine.api.prismite.consume
+#### sandkit.engine.api.prismite.consume :id=sandkit-engine-api-prismite-consume
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L15" target="_blank" rel="noopener">prismite.d.ts:15</a></p>
 
@@ -24903,7 +24903,7 @@ Consume prismite from the player or world.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prismite.getAvailable :id=sandkit.engine.api.prismite.getavailable
+#### sandkit.engine.api.prismite.getAvailable :id=sandkit-engine-api-prismite-getavailable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L20" target="_blank" rel="noopener">prismite.d.ts:20</a></p>
 
@@ -24931,7 +24931,7 @@ Return available prismite amount.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.prismite.getConsumed :id=sandkit.engine.api.prismite.getconsumed
+#### sandkit.engine.api.prismite.getConsumed :id=sandkit-engine-api-prismite-getconsumed
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/prismite.d.ts#L25" target="_blank" rel="noopener">prismite.d.ts:25</a></p>
 
@@ -24973,7 +24973,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.queue.enqueue :id=sandkit.engine.api.queue.enqueue
+#### sandkit.engine.api.queue.enqueue :id=sandkit-engine-api-queue-enqueue
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L15" target="_blank" rel="noopener">queue.d.ts:15</a></p>
 
@@ -25001,7 +25001,7 @@ Enqueue work to run on a future tick.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.queue.enqueueInTicks :id=sandkit.engine.api.queue.enqueueinticks
+#### sandkit.engine.api.queue.enqueueInTicks :id=sandkit-engine-api-queue-enqueueinticks
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L20" target="_blank" rel="noopener">queue.d.ts:20</a></p>
 
@@ -25029,7 +25029,7 @@ Enqueue work to run after a tick delay.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.queue.enqueueSkipTick :id=sandkit.engine.api.queue.enqueueskiptick
+#### sandkit.engine.api.queue.enqueueSkipTick :id=sandkit-engine-api-queue-enqueueskiptick
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L25" target="_blank" rel="noopener">queue.d.ts:25</a></p>
 
@@ -25057,7 +25057,7 @@ Enqueue work that skips the current tick.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.queue.process :id=sandkit.engine.api.queue.process
+#### sandkit.engine.api.queue.process :id=sandkit-engine-api-queue-process
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L30" target="_blank" rel="noopener">queue.d.ts:30</a></p>
 
@@ -25085,7 +25085,7 @@ Process pending queue items for the current tick.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.queue.registerHandler :id=sandkit.engine.api.queue.registerhandler
+#### sandkit.engine.api.queue.registerHandler :id=sandkit-engine-api-queue-registerhandler
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L35" target="_blank" rel="noopener">queue.d.ts:35</a></p>
 
@@ -25113,7 +25113,7 @@ Register a handler for a queue item type.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.queue.removeByKey :id=sandkit.engine.api.queue.removebykey
+#### sandkit.engine.api.queue.removeByKey :id=sandkit-engine-api-queue-removebykey
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/queue.d.ts#L40" target="_blank" rel="noopener">queue.d.ts:40</a></p>
 
@@ -25155,7 +25155,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.shadows.refresh :id=sandkit.engine.api.shadows.refresh
+#### sandkit.engine.api.shadows.refresh :id=sandkit-engine-api-shadows-refresh
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L15" target="_blank" rel="noopener">shadows.d.ts:15</a></p>
 
@@ -25183,7 +25183,7 @@ Refresh shadows for the whole visible area.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.shadows.refreshRadius :id=sandkit.engine.api.shadows.refreshradius
+#### sandkit.engine.api.shadows.refreshRadius :id=sandkit-engine-api-shadows-refreshradius
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L20" target="_blank" rel="noopener">shadows.d.ts:20</a></p>
 
@@ -25211,7 +25211,7 @@ Refresh shadows within a circular radius.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.shadows.refreshRect :id=sandkit.engine.api.shadows.refreshrect
+#### sandkit.engine.api.shadows.refreshRect :id=sandkit-engine-api-shadows-refreshrect
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/shadows.d.ts#L25" target="_blank" rel="noopener">shadows.d.ts:25</a></p>
 
@@ -25253,7 +25253,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.strataform.getDefaultConfig :id=sandkit.engine.api.strataform.getdefaultconfig
+#### sandkit.engine.api.strataform.getDefaultConfig :id=sandkit-engine-api-strataform-getdefaultconfig
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L15" target="_blank" rel="noopener">strataform.d.ts:15</a></p>
 
@@ -25281,7 +25281,7 @@ Return the default strataform configuration.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.strataform.getRegisteredTypes :id=sandkit.engine.api.strataform.getregisteredtypes
+#### sandkit.engine.api.strataform.getRegisteredTypes :id=sandkit-engine-api-strataform-getregisteredtypes
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L20" target="_blank" rel="noopener">strataform.d.ts:20</a></p>
 
@@ -25309,7 +25309,7 @@ Return all registered strataform types.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.strataform.registerType :id=sandkit.engine.api.strataform.registertype
+#### sandkit.engine.api.strataform.registerType :id=sandkit-engine-api-strataform-registertype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L25" target="_blank" rel="noopener">strataform.d.ts:25</a></p>
 
@@ -25337,7 +25337,7 @@ Register a custom strataform type.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.strataform.trigger :id=sandkit.engine.api.strataform.trigger
+#### sandkit.engine.api.strataform.trigger :id=sandkit-engine-api-strataform-trigger
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L30" target="_blank" rel="noopener">strataform.d.ts:30</a></p>
 
@@ -25365,7 +25365,7 @@ Trigger a strataform event at a location.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.strataform.triggerByType :id=sandkit.engine.api.strataform.triggerbytype
+#### sandkit.engine.api.strataform.triggerByType :id=sandkit-engine-api-strataform-triggerbytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/strataform.d.ts#L35" target="_blank" rel="noopener">strataform.d.ts:35</a></p>
 
@@ -25407,7 +25407,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.decrementConvergenceBuffer :id=sandkit.engine.api.swarmConsole.decrementconvergencebuffer
+#### sandkit.engine.api.swarmConsole.decrementConvergenceBuffer :id=sandkit-engine-api-swarmConsole-decrementconvergencebuffer
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L15" target="_blank" rel="noopener">swarmConsole.d.ts:15</a></p>
 
@@ -25435,7 +25435,7 @@ Decrease the convergence buffer by one step.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.getCrystalMined :id=sandkit.engine.api.swarmConsole.getcrystalmined
+#### sandkit.engine.api.swarmConsole.getCrystalMined :id=sandkit-engine-api-swarmConsole-getcrystalmined
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L20" target="_blank" rel="noopener">swarmConsole.d.ts:20</a></p>
 
@@ -25463,7 +25463,7 @@ Return total crystal mined for swarm consoles.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.getDiskRadiusCells :id=sandkit.engine.api.swarmConsole.getdiskradiuscells
+#### sandkit.engine.api.swarmConsole.getDiskRadiusCells :id=sandkit-engine-api-swarmConsole-getdiskradiuscells
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L25" target="_blank" rel="noopener">swarmConsole.d.ts:25</a></p>
 
@@ -25491,7 +25491,7 @@ Return the disk radius in cells for a console.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.getEntityType :id=sandkit.engine.api.swarmConsole.getentitytype
+#### sandkit.engine.api.swarmConsole.getEntityType :id=sandkit-engine-api-swarmConsole-getentitytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L30" target="_blank" rel="noopener">swarmConsole.d.ts:30</a></p>
 
@@ -25519,7 +25519,7 @@ Return the entity type used by swarm consoles.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.getNearestConvergence :id=sandkit.engine.api.swarmConsole.getnearestconvergence
+#### sandkit.engine.api.swarmConsole.getNearestConvergence :id=sandkit-engine-api-swarmConsole-getnearestconvergence
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L35" target="_blank" rel="noopener">swarmConsole.d.ts:35</a></p>
 
@@ -25547,7 +25547,7 @@ Return the nearest convergence point.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.getPendingConvergence :id=sandkit.engine.api.swarmConsole.getpendingconvergence
+#### sandkit.engine.api.swarmConsole.getPendingConvergence :id=sandkit-engine-api-swarmConsole-getpendingconvergence
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L40" target="_blank" rel="noopener">swarmConsole.d.ts:40</a></p>
 
@@ -25575,7 +25575,7 @@ Return the pending convergence target.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.getPlacedConsoles :id=sandkit.engine.api.swarmConsole.getplacedconsoles
+#### sandkit.engine.api.swarmConsole.getPlacedConsoles :id=sandkit-engine-api-swarmConsole-getplacedconsoles
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L45" target="_blank" rel="noopener">swarmConsole.d.ts:45</a></p>
 
@@ -25603,7 +25603,7 @@ Return all placed swarm console structures.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.getRadiusPx :id=sandkit.engine.api.swarmConsole.getradiuspx
+#### sandkit.engine.api.swarmConsole.getRadiusPx :id=sandkit-engine-api-swarmConsole-getradiuspx
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L50" target="_blank" rel="noopener">swarmConsole.d.ts:50</a></p>
 
@@ -25631,7 +25631,7 @@ Return the console effect radius in pixels.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.isSpawnJammed :id=sandkit.engine.api.swarmConsole.isspawnjammed
+#### sandkit.engine.api.swarmConsole.isSpawnJammed :id=sandkit-engine-api-swarmConsole-isspawnjammed
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L55" target="_blank" rel="noopener">swarmConsole.d.ts:55</a></p>
 
@@ -25659,7 +25659,7 @@ Return whether swarm spawn is currently jammed.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.registerEntityType :id=sandkit.engine.api.swarmConsole.registerentitytype
+#### sandkit.engine.api.swarmConsole.registerEntityType :id=sandkit-engine-api-swarmConsole-registerentitytype
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L60" target="_blank" rel="noopener">swarmConsole.d.ts:60</a></p>
 
@@ -25687,7 +25687,7 @@ Register the entity type for swarm consoles.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.resetAllConvergenceBuffers :id=sandkit.engine.api.swarmConsole.resetallconvergencebuffers
+#### sandkit.engine.api.swarmConsole.resetAllConvergenceBuffers :id=sandkit-engine-api-swarmConsole-resetallconvergencebuffers
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L65" target="_blank" rel="noopener">swarmConsole.d.ts:65</a></p>
 
@@ -25715,7 +25715,7 @@ Reset convergence buffers on all consoles.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.swarmConsole.setSpawnJammed :id=sandkit.engine.api.swarmConsole.setspawnjammed
+#### sandkit.engine.api.swarmConsole.setSpawnJammed :id=sandkit-engine-api-swarmConsole-setspawnjammed
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/swarmConsole.d.ts#L70" target="_blank" rel="noopener">swarmConsole.d.ts:70</a></p>
 
@@ -25757,7 +25757,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.sweeperDrone.cancelSelection :id=sandkit.engine.api.sweeperDrone.cancelselection
+#### sandkit.engine.api.sweeperDrone.cancelSelection :id=sandkit-engine-api-sweeperDrone-cancelselection
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/sweeperDrone.d.ts#L15" target="_blank" rel="noopener">sweeperDrone.d.ts:15</a></p>
 
@@ -25799,7 +25799,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.teleportZones.add :id=sandkit.engine.api.teleportZones.add
+#### sandkit.engine.api.teleportZones.add :id=sandkit-engine-api-teleportZones-add
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L15" target="_blank" rel="noopener">teleportZones.d.ts:15</a></p>
 
@@ -25827,7 +25827,7 @@ Add a teleport zone to the world.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.teleportZones.getAll :id=sandkit.engine.api.teleportZones.getall
+#### sandkit.engine.api.teleportZones.getAll :id=sandkit-engine-api-teleportZones-getall
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L20" target="_blank" rel="noopener">teleportZones.d.ts:20</a></p>
 
@@ -25855,7 +25855,7 @@ Return all teleport zones.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.teleportZones.getAtCell :id=sandkit.engine.api.teleportZones.getatcell
+#### sandkit.engine.api.teleportZones.getAtCell :id=sandkit-engine-api-teleportZones-getatcell
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L25" target="_blank" rel="noopener">teleportZones.d.ts:25</a></p>
 
@@ -25883,7 +25883,7 @@ Return the teleport zone at one grid cell.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.teleportZones.getById :id=sandkit.engine.api.teleportZones.getbyid
+#### sandkit.engine.api.teleportZones.getById :id=sandkit-engine-api-teleportZones-getbyid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L30" target="_blank" rel="noopener">teleportZones.d.ts:30</a></p>
 
@@ -25911,7 +25911,7 @@ Return one teleport zone by id.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.teleportZones.remove :id=sandkit.engine.api.teleportZones.remove
+#### sandkit.engine.api.teleportZones.remove :id=sandkit-engine-api-teleportZones-remove
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L35" target="_blank" rel="noopener">teleportZones.d.ts:35</a></p>
 
@@ -25939,7 +25939,7 @@ Remove a teleport zone.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.teleportZones.spawnDefaultParticles :id=sandkit.engine.api.teleportZones.spawndefaultparticles
+#### sandkit.engine.api.teleportZones.spawnDefaultParticles :id=sandkit-engine-api-teleportZones-spawndefaultparticles
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L40" target="_blank" rel="noopener">teleportZones.d.ts:40</a></p>
 
@@ -25967,7 +25967,7 @@ Spawn default particles at a teleport zone.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.teleportZones.teleportPlayerTo :id=sandkit.engine.api.teleportZones.teleportplayerto
+#### sandkit.engine.api.teleportZones.teleportPlayerTo :id=sandkit-engine-api-teleportZones-teleportplayerto
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/teleportZones.d.ts#L45" target="_blank" rel="noopener">teleportZones.d.ts:45</a></p>
 
@@ -26009,7 +26009,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.areAllTargetsBuilt :id=sandkit.engine.api.tutorialBuild.arealltargetsbuilt
+#### sandkit.engine.api.tutorialBuild.areAllTargetsBuilt :id=sandkit-engine-api-tutorialBuild-arealltargetsbuilt
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L15" target="_blank" rel="noopener">tutorialBuild.d.ts:15</a></p>
 
@@ -26037,7 +26037,7 @@ Return whether all active tutorial targets are built.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt :id=sandkit.engine.api.tutorialBuild.arefamilytargetsbuilt
+#### sandkit.engine.api.tutorialBuild.areFamilyTargetsBuilt :id=sandkit-engine-api-tutorialBuild-arefamilytargetsbuilt
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L20" target="_blank" rel="noopener">tutorialBuild.d.ts:20</a></p>
 
@@ -26065,7 +26065,7 @@ Return whether all targets in a structure family are built.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget :id=sandkit.engine.api.tutorialBuild.canplaceatactivetarget
+#### sandkit.engine.api.tutorialBuild.canPlaceAtActiveTarget :id=sandkit-engine-api-tutorialBuild-canplaceatactivetarget
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L25" target="_blank" rel="noopener">tutorialBuild.d.ts:25</a></p>
 
@@ -26093,7 +26093,7 @@ Return whether placement is allowed at the active target.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.getFoundationMoveDests :id=sandkit.engine.api.tutorialBuild.getfoundationmovedests
+#### sandkit.engine.api.tutorialBuild.getFoundationMoveDests :id=sandkit-engine-api-tutorialBuild-getfoundationmovedests
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L30" target="_blank" rel="noopener">tutorialBuild.d.ts:30</a></p>
 
@@ -26121,7 +26121,7 @@ Return foundation move destination cells for the tutorial step.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.getFoundationMoveSources :id=sandkit.engine.api.tutorialBuild.getfoundationmovesources
+#### sandkit.engine.api.tutorialBuild.getFoundationMoveSources :id=sandkit-engine-api-tutorialBuild-getfoundationmovesources
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L35" target="_blank" rel="noopener">tutorialBuild.d.ts:35</a></p>
 
@@ -26149,7 +26149,7 @@ Return foundation move source cells for the tutorial step.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.getTargets :id=sandkit.engine.api.tutorialBuild.gettargets
+#### sandkit.engine.api.tutorialBuild.getTargets :id=sandkit-engine-api-tutorialBuild-gettargets
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L40" target="_blank" rel="noopener">tutorialBuild.d.ts:40</a></p>
 
@@ -26177,7 +26177,7 @@ Return build targets for the current tutorial step.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.hasDefinition :id=sandkit.engine.api.tutorialBuild.hasdefinition
+#### sandkit.engine.api.tutorialBuild.hasDefinition :id=sandkit-engine-api-tutorialBuild-hasdefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L45" target="_blank" rel="noopener">tutorialBuild.d.ts:45</a></p>
 
@@ -26205,7 +26205,7 @@ Return whether a tutorial build definition exists.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.isStepConstrained :id=sandkit.engine.api.tutorialBuild.isstepconstrained
+#### sandkit.engine.api.tutorialBuild.isStepConstrained :id=sandkit-engine-api-tutorialBuild-isstepconstrained
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L50" target="_blank" rel="noopener">tutorialBuild.d.ts:50</a></p>
 
@@ -26233,7 +26233,7 @@ Return whether the current step restricts building.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.matchesFoundationMove :id=sandkit.engine.api.tutorialBuild.matchesfoundationmove
+#### sandkit.engine.api.tutorialBuild.matchesFoundationMove :id=sandkit-engine-api-tutorialBuild-matchesfoundationmove
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L55" target="_blank" rel="noopener">tutorialBuild.d.ts:55</a></p>
 
@@ -26261,7 +26261,7 @@ Return whether a foundation move matches tutorial rules.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.matchesFoundationRemove :id=sandkit.engine.api.tutorialBuild.matchesfoundationremove
+#### sandkit.engine.api.tutorialBuild.matchesFoundationRemove :id=sandkit-engine-api-tutorialBuild-matchesfoundationremove
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L60" target="_blank" rel="noopener">tutorialBuild.d.ts:60</a></p>
 
@@ -26289,7 +26289,7 @@ Return whether a foundation remove matches tutorial rules.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt :id=sandkit.engine.api.tutorialBuild.shouldprotectactivetargetat
+#### sandkit.engine.api.tutorialBuild.shouldProtectActiveTargetAt :id=sandkit-engine-api-tutorialBuild-shouldprotectactivetargetat
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/tutorialBuild.d.ts#L65" target="_blank" rel="noopener">tutorialBuild.d.ts:65</a></p>
 
@@ -26331,7 +26331,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.usageTracker.clear :id=sandkit.engine.api.usageTracker.clear
+#### sandkit.engine.api.usageTracker.clear :id=sandkit-engine-api-usageTracker-clear
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L15" target="_blank" rel="noopener">usageTracker.d.ts:15</a></p>
 
@@ -26359,7 +26359,7 @@ Clear recorded usage statistics.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.usageTracker.getLatest :id=sandkit.engine.api.usageTracker.getlatest
+#### sandkit.engine.api.usageTracker.getLatest :id=sandkit-engine-api-usageTracker-getlatest
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L20" target="_blank" rel="noopener">usageTracker.d.ts:20</a></p>
 
@@ -26387,7 +26387,7 @@ Return the most recently used item or structure.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.usageTracker.getMostUsed :id=sandkit.engine.api.usageTracker.getmostused
+#### sandkit.engine.api.usageTracker.getMostUsed :id=sandkit-engine-api-usageTracker-getmostused
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/usageTracker.d.ts#L25" target="_blank" rel="noopener">usageTracker.d.ts:25</a></p>
 
@@ -26429,7 +26429,7 @@ Engine methods pass game state as the first argument (args[0]); remaining entrie
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.wall.getPaletteData :id=sandkit.engine.api.wall.getpalettedata
+#### sandkit.engine.api.wall.getPaletteData :id=sandkit-engine-api-wall-getpalettedata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L15" target="_blank" rel="noopener">wall.d.ts:15</a></p>
 
@@ -26457,7 +26457,7 @@ Return wall palette data for rendering.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.wall.getWallDataAt :id=sandkit.engine.api.wall.getwalldataat
+#### sandkit.engine.api.wall.getWallDataAt :id=sandkit-engine-api-wall-getwalldataat
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L20" target="_blank" rel="noopener">wall.d.ts:20</a></p>
 
@@ -26485,7 +26485,7 @@ Return wall tile data at one cell.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.wall.getWallDataSize :id=sandkit.engine.api.wall.getwalldatasize
+#### sandkit.engine.api.wall.getWallDataSize :id=sandkit-engine-api-wall-getwalldatasize
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L25" target="_blank" rel="noopener">wall.d.ts:25</a></p>
 
@@ -26513,7 +26513,7 @@ Return the byte size of wall tile data.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.wall.setWallDataAt :id=sandkit.engine.api.wall.setwalldataat
+#### sandkit.engine.api.wall.setWallDataAt :id=sandkit-engine-api-wall-setwalldataat
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/wall.d.ts#L30" target="_blank" rel="noopener">wall.d.ts:30</a></p>
 
@@ -26554,7 +26554,7 @@ Available on worker threads only. Values do not persist across workers.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.workerLocal.clear :id=sandkit.engine.api.workerLocal.clear
+#### sandkit.engine.api.workerLocal.clear :id=sandkit-engine-api-workerLocal-clear
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L14" target="_blank" rel="noopener">workerLocal.d.ts:14</a></p>
 
@@ -26582,7 +26582,7 @@ Remove all keys from worker-local storage.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.workerLocal.get :id=sandkit.engine.api.workerLocal.get
+#### sandkit.engine.api.workerLocal.get :id=sandkit-engine-api-workerLocal-get
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L19" target="_blank" rel="noopener">workerLocal.d.ts:19</a></p>
 
@@ -26610,7 +26610,7 @@ Return a value by key, or undefined when missing.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.workerLocal.getOrInit :id=sandkit.engine.api.workerLocal.getorinit
+#### sandkit.engine.api.workerLocal.getOrInit :id=sandkit-engine-api-workerLocal-getorinit
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L24" target="_blank" rel="noopener">workerLocal.d.ts:24</a></p>
 
@@ -26638,7 +26638,7 @@ Return a value by key, initializing it when missing.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.api.workerLocal.set :id=sandkit.engine.api.workerLocal.set
+#### sandkit.engine.api.workerLocal.set :id=sandkit-engine-api-workerLocal-set
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/api/workerLocal.d.ts#L29" target="_blank" rel="noopener">workerLocal.d.ts:29</a></p>
 
@@ -26696,7 +26696,7 @@ Store a value by key.
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
-#### sandkit.enums :id=sandkit.enums.sandkitenums
+#### sandkit.enums :id=sandkit-enums-sandkitenums
 
 ```ts
 SandkitEnums = object
@@ -26908,7 +26908,7 @@ Item ability categories (dig, shoot, spray, laser).
 
 <div class="smt-member-card">
 
-#### sandkit.enums.AbilityType.Dig :id=sandkit.enums.AbilityType.dig
+#### sandkit.enums.AbilityType.Dig :id=sandkit-enums-AbilityType-dig
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L10" target="_blank" rel="noopener">index.d.ts:10</a></p>
 
@@ -26924,7 +26924,7 @@ Dig: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.AbilityType.Shoot :id=sandkit.enums.AbilityType.shoot
+#### sandkit.enums.AbilityType.Shoot :id=sandkit-enums-AbilityType-shoot
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L11" target="_blank" rel="noopener">index.d.ts:11</a></p>
 
@@ -26940,7 +26940,7 @@ Shoot: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.AbilityType.Spray :id=sandkit.enums.AbilityType.spray
+#### sandkit.enums.AbilityType.Spray :id=sandkit-enums-AbilityType-spray
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L12" target="_blank" rel="noopener">index.d.ts:12</a></p>
 
@@ -26956,7 +26956,7 @@ Spray: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.AbilityType.Laser :id=sandkit.enums.AbilityType.laser
+#### sandkit.enums.AbilityType.Laser :id=sandkit-enums-AbilityType-laser
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L13" target="_blank" rel="noopener">index.d.ts:13</a></p>
 
@@ -26982,7 +26982,7 @@ Phases of a held or repeated player action.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ActionState.Start :id=sandkit.enums.ActionState.start
+#### sandkit.enums.ActionState.Start :id=sandkit-enums-ActionState-start
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L18" target="_blank" rel="noopener">index.d.ts:18</a></p>
 
@@ -26998,7 +26998,7 @@ Start: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ActionState.Active :id=sandkit.enums.ActionState.active
+#### sandkit.enums.ActionState.Active :id=sandkit-enums-ActionState-active
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L19" target="_blank" rel="noopener">index.d.ts:19</a></p>
 
@@ -27014,7 +27014,7 @@ Active: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ActionState.End :id=sandkit.enums.ActionState.end
+#### sandkit.enums.ActionState.End :id=sandkit-enums-ActionState-end
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L20" target="_blank" rel="noopener">index.d.ts:20</a></p>
 
@@ -27040,7 +27040,7 @@ High-level action channel (weapon, building, tool, mod).
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ActionType.Weapon :id=sandkit.enums.ActionType.weapon
+#### sandkit.enums.ActionType.Weapon :id=sandkit-enums-ActionType-weapon
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L25" target="_blank" rel="noopener">index.d.ts:25</a></p>
 
@@ -27056,7 +27056,7 @@ Weapon: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ActionType.Building :id=sandkit.enums.ActionType.building
+#### sandkit.enums.ActionType.Building :id=sandkit-enums-ActionType-building
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L26" target="_blank" rel="noopener">index.d.ts:26</a></p>
 
@@ -27072,7 +27072,7 @@ Building: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ActionType.Tool :id=sandkit.enums.ActionType.tool
+#### sandkit.enums.ActionType.Tool :id=sandkit-enums-ActionType-tool
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L27" target="_blank" rel="noopener">index.d.ts:27</a></p>
 
@@ -27088,7 +27088,7 @@ Tool: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ActionType.Mod :id=sandkit.enums.ActionType.mod
+#### sandkit.enums.ActionType.Mod :id=sandkit-enums-ActionType-mod
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L28" target="_blank" rel="noopener">index.d.ts:28</a></p>
 
@@ -27114,7 +27114,7 @@ Zone rules that restrict player abilities.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.AuthorizationType.NoJetpack :id=sandkit.enums.AuthorizationType.nojetpack
+#### sandkit.enums.AuthorizationType.NoJetpack :id=sandkit-enums-AuthorizationType-nojetpack
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L33" target="_blank" rel="noopener">index.d.ts:33</a></p>
 
@@ -27130,7 +27130,7 @@ NoJetpack: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.AuthorizationType.NoGrab :id=sandkit.enums.AuthorizationType.nograb
+#### sandkit.enums.AuthorizationType.NoGrab :id=sandkit-enums-AuthorizationType-nograb
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L34" target="_blank" rel="noopener">index.d.ts:34</a></p>
 
@@ -27146,7 +27146,7 @@ NoGrab: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.AuthorizationType.NoBuild :id=sandkit.enums.AuthorizationType.nobuild
+#### sandkit.enums.AuthorizationType.NoBuild :id=sandkit-enums-AuthorizationType-nobuild
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L35" target="_blank" rel="noopener">index.d.ts:35</a></p>
 
@@ -27162,7 +27162,7 @@ NoBuild: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.AuthorizationType.NoTool :id=sandkit.enums.AuthorizationType.notool
+#### sandkit.enums.AuthorizationType.NoTool :id=sandkit-enums-AuthorizationType-notool
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L36" target="_blank" rel="noopener">index.d.ts:36</a></p>
 
@@ -27178,7 +27178,7 @@ NoTool: 4
 
 <div class="smt-member-card">
 
-#### sandkit.enums.AuthorizationType.NoExcavation :id=sandkit.enums.AuthorizationType.noexcavation
+#### sandkit.enums.AuthorizationType.NoExcavation :id=sandkit-enums-AuthorizationType-noexcavation
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L37" target="_blank" rel="noopener">index.d.ts:37</a></p>
 
@@ -27194,7 +27194,7 @@ NoExcavation: 5
 
 <div class="smt-member-card">
 
-#### sandkit.enums.AuthorizationType.NoToolExceptFlamethrower :id=sandkit.enums.AuthorizationType.notoolexceptflamethrower
+#### sandkit.enums.AuthorizationType.NoToolExceptFlamethrower :id=sandkit-enums-AuthorizationType-notoolexceptflamethrower
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L38" target="_blank" rel="noopener">index.d.ts:38</a></p>
 
@@ -27220,7 +27220,7 @@ Result of a build placement check.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.BuildingClearance.Available :id=sandkit.enums.BuildingClearance.available
+#### sandkit.enums.BuildingClearance.Available :id=sandkit-enums-BuildingClearance-available
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L49" target="_blank" rel="noopener">index.d.ts:49</a></p>
 
@@ -27236,7 +27236,7 @@ Available: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.BuildingClearance.FullyBlocked :id=sandkit.enums.BuildingClearance.fullyblocked
+#### sandkit.enums.BuildingClearance.FullyBlocked :id=sandkit-enums-BuildingClearance-fullyblocked
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L50" target="_blank" rel="noopener">index.d.ts:50</a></p>
 
@@ -27252,7 +27252,7 @@ FullyBlocked: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.BuildingClearance.PartiallyBlocked :id=sandkit.enums.BuildingClearance.partiallyblocked
+#### sandkit.enums.BuildingClearance.PartiallyBlocked :id=sandkit-enums-BuildingClearance-partiallyblocked
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L51" target="_blank" rel="noopener">index.d.ts:51</a></p>
 
@@ -27268,7 +27268,7 @@ PartiallyBlocked: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.BuildingClearance.CanBeReplaced :id=sandkit.enums.BuildingClearance.canbereplaced
+#### sandkit.enums.BuildingClearance.CanBeReplaced :id=sandkit-enums-BuildingClearance-canbereplaced
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L52" target="_blank" rel="noopener">index.d.ts:52</a></p>
 
@@ -27294,7 +27294,7 @@ Linear vs rectangular structure placement.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.BuildMode.Linear :id=sandkit.enums.BuildMode.linear
+#### sandkit.enums.BuildMode.Linear :id=sandkit-enums-BuildMode-linear
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L43" target="_blank" rel="noopener">index.d.ts:43</a></p>
 
@@ -27310,7 +27310,7 @@ Linear: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.BuildMode.Rectangular :id=sandkit.enums.BuildMode.rectangular
+#### sandkit.enums.BuildMode.Rectangular :id=sandkit-enums-BuildMode-rectangular
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L44" target="_blank" rel="noopener">index.d.ts:44</a></p>
 
@@ -27336,7 +27336,7 @@ Terrain / special cell kinds in the simulation grid.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Empty :id=sandkit.enums.CellType.empty
+#### sandkit.enums.CellType.Empty :id=sandkit-enums-CellType-empty
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L57" target="_blank" rel="noopener">index.d.ts:57</a></p>
 
@@ -27352,7 +27352,7 @@ Empty: 0
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Element :id=sandkit.enums.CellType.element
+#### sandkit.enums.CellType.Element :id=sandkit-enums-CellType-element
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L58" target="_blank" rel="noopener">index.d.ts:58</a></p>
 
@@ -27368,7 +27368,7 @@ Element: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Dirt :id=sandkit.enums.CellType.dirt
+#### sandkit.enums.CellType.Dirt :id=sandkit-enums-CellType-dirt
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L59" target="_blank" rel="noopener">index.d.ts:59</a></p>
 
@@ -27384,7 +27384,7 @@ Dirt: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.SporeSoil :id=sandkit.enums.CellType.sporesoil
+#### sandkit.enums.CellType.SporeSoil :id=sandkit-enums-CellType-sporesoil
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L60" target="_blank" rel="noopener">index.d.ts:60</a></p>
 
@@ -27400,7 +27400,7 @@ SporeSoil: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Fog :id=sandkit.enums.CellType.fog
+#### sandkit.enums.CellType.Fog :id=sandkit-enums-CellType-fog
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L61" target="_blank" rel="noopener">index.d.ts:61</a></p>
 
@@ -27416,7 +27416,7 @@ Fog: 4
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.FogJetpackBlock :id=sandkit.enums.CellType.fogjetpackblock
+#### sandkit.enums.CellType.FogJetpackBlock :id=sandkit-enums-CellType-fogjetpackblock
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L62" target="_blank" rel="noopener">index.d.ts:62</a></p>
 
@@ -27432,7 +27432,7 @@ FogJetpackBlock: 5
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.FogWater :id=sandkit.enums.CellType.fogwater
+#### sandkit.enums.CellType.FogWater :id=sandkit-enums-CellType-fogwater
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L63" target="_blank" rel="noopener">index.d.ts:63</a></p>
 
@@ -27448,7 +27448,7 @@ FogWater: 6
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.FreezingIceSoil :id=sandkit.enums.CellType.freezingicesoil
+#### sandkit.enums.CellType.FreezingIceSoil :id=sandkit-enums-CellType-freezingicesoil
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L64" target="_blank" rel="noopener">index.d.ts:64</a></p>
 
@@ -27464,7 +27464,7 @@ FreezingIceSoil: 7
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Divider :id=sandkit.enums.CellType.divider
+#### sandkit.enums.CellType.Divider :id=sandkit-enums-CellType-divider
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L65" target="_blank" rel="noopener">index.d.ts:65</a></p>
 
@@ -27480,7 +27480,7 @@ Divider: 8
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Grass :id=sandkit.enums.CellType.grass
+#### sandkit.enums.CellType.Grass :id=sandkit-enums-CellType-grass
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L66" target="_blank" rel="noopener">index.d.ts:66</a></p>
 
@@ -27496,7 +27496,7 @@ Grass: 9
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Moss :id=sandkit.enums.CellType.moss
+#### sandkit.enums.CellType.Moss :id=sandkit-enums-CellType-moss
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L67" target="_blank" rel="noopener">index.d.ts:67</a></p>
 
@@ -27512,7 +27512,7 @@ Moss: 10
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.GoldSoil :id=sandkit.enums.CellType.goldsoil
+#### sandkit.enums.CellType.GoldSoil :id=sandkit-enums-CellType-goldsoil
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L68" target="_blank" rel="noopener">index.d.ts:68</a></p>
 
@@ -27528,7 +27528,7 @@ GoldSoil: 11
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Petal :id=sandkit.enums.CellType.petal
+#### sandkit.enums.CellType.Petal :id=sandkit-enums-CellType-petal
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L69" target="_blank" rel="noopener">index.d.ts:69</a></p>
 
@@ -27544,7 +27544,7 @@ Petal: 12
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.FogLava :id=sandkit.enums.CellType.foglava
+#### sandkit.enums.CellType.FogLava :id=sandkit-enums-CellType-foglava
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L70" target="_blank" rel="noopener">index.d.ts:70</a></p>
 
@@ -27560,7 +27560,7 @@ FogLava: 13
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Fluxite :id=sandkit.enums.CellType.fluxite
+#### sandkit.enums.CellType.Fluxite :id=sandkit-enums-CellType-fluxite
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L71" target="_blank" rel="noopener">index.d.ts:71</a></p>
 
@@ -27576,7 +27576,7 @@ Fluxite: 14
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Block :id=sandkit.enums.CellType.block
+#### sandkit.enums.CellType.Block :id=sandkit-enums-CellType-block
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L72" target="_blank" rel="noopener">index.d.ts:72</a></p>
 
@@ -27592,7 +27592,7 @@ Block: 15
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.SlidingBlock :id=sandkit.enums.CellType.slidingblock
+#### sandkit.enums.CellType.SlidingBlock :id=sandkit-enums-CellType-slidingblock
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L73" target="_blank" rel="noopener">index.d.ts:73</a></p>
 
@@ -27608,7 +27608,7 @@ SlidingBlock: 16
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.SlidingBlockLeft :id=sandkit.enums.CellType.slidingblockleft
+#### sandkit.enums.CellType.SlidingBlockLeft :id=sandkit-enums-CellType-slidingblockleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L74" target="_blank" rel="noopener">index.d.ts:74</a></p>
 
@@ -27624,7 +27624,7 @@ SlidingBlockLeft: 17
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.SlidingBlockRight :id=sandkit.enums.CellType.slidingblockright
+#### sandkit.enums.CellType.SlidingBlockRight :id=sandkit-enums-CellType-slidingblockright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L75" target="_blank" rel="noopener">index.d.ts:75</a></p>
 
@@ -27640,7 +27640,7 @@ SlidingBlockRight: 18
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.ConveyorLeft :id=sandkit.enums.CellType.conveyorleft
+#### sandkit.enums.CellType.ConveyorLeft :id=sandkit-enums-CellType-conveyorleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L76" target="_blank" rel="noopener">index.d.ts:76</a></p>
 
@@ -27656,7 +27656,7 @@ ConveyorLeft: 19
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.ConveyorRight :id=sandkit.enums.CellType.conveyorright
+#### sandkit.enums.CellType.ConveyorRight :id=sandkit-enums-CellType-conveyorright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L77" target="_blank" rel="noopener">index.d.ts:77</a></p>
 
@@ -27672,7 +27672,7 @@ ConveyorRight: 20
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.ShakerLeft :id=sandkit.enums.CellType.shakerleft
+#### sandkit.enums.CellType.ShakerLeft :id=sandkit-enums-CellType-shakerleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L78" target="_blank" rel="noopener">index.d.ts:78</a></p>
 
@@ -27688,7 +27688,7 @@ ShakerLeft: 21
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.ShakerRight :id=sandkit.enums.CellType.shakerright
+#### sandkit.enums.CellType.ShakerRight :id=sandkit-enums-CellType-shakerright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L79" target="_blank" rel="noopener">index.d.ts:79</a></p>
 
@@ -27704,7 +27704,7 @@ ShakerRight: 22
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Stone :id=sandkit.enums.CellType.stone
+#### sandkit.enums.CellType.Stone :id=sandkit-enums-CellType-stone
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L80" target="_blank" rel="noopener">index.d.ts:80</a></p>
 
@@ -27720,7 +27720,7 @@ Stone: 23
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.VelocitySoaker :id=sandkit.enums.CellType.velocitysoaker
+#### sandkit.enums.CellType.VelocitySoaker :id=sandkit-enums-CellType-velocitysoaker
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L81" target="_blank" rel="noopener">index.d.ts:81</a></p>
 
@@ -27736,7 +27736,7 @@ VelocitySoaker: 24
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Ice :id=sandkit.enums.CellType.ice
+#### sandkit.enums.CellType.Ice :id=sandkit-enums-CellType-ice
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L82" target="_blank" rel="noopener">index.d.ts:82</a></p>
 
@@ -27752,7 +27752,7 @@ Ice: 25
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Grower :id=sandkit.enums.CellType.grower
+#### sandkit.enums.CellType.Grower :id=sandkit-enums-CellType-grower
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L83" target="_blank" rel="noopener">index.d.ts:83</a></p>
 
@@ -27768,7 +27768,7 @@ Grower: 26
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.NascentWater :id=sandkit.enums.CellType.nascentwater
+#### sandkit.enums.CellType.NascentWater :id=sandkit-enums-CellType-nascentwater
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L84" target="_blank" rel="noopener">index.d.ts:84</a></p>
 
@@ -27784,7 +27784,7 @@ NascentWater: 27
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.SandiumSoil :id=sandkit.enums.CellType.sandiumsoil
+#### sandkit.enums.CellType.SandiumSoil :id=sandkit-enums-CellType-sandiumsoil
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L85" target="_blank" rel="noopener">index.d.ts:85</a></p>
 
@@ -27800,7 +27800,7 @@ SandiumSoil: 28
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Obsidian :id=sandkit.enums.CellType.obsidian
+#### sandkit.enums.CellType.Obsidian :id=sandkit-enums-CellType-obsidian
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L86" target="_blank" rel="noopener">index.d.ts:86</a></p>
 
@@ -27816,7 +27816,7 @@ Obsidian: 29
 
 <div class="smt-member-card">
 
-#### sandkit.enums.CellType.Crackstone :id=sandkit.enums.CellType.crackstone
+#### sandkit.enums.CellType.Crackstone :id=sandkit-enums-CellType-crackstone
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L87" target="_blank" rel="noopener">index.d.ts:87</a></p>
 
@@ -27842,7 +27842,7 @@ UI component ids for HUD and menu routing.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Hotbar :id=sandkit.enums.ComponentId.hotbar
+#### sandkit.enums.ComponentId.Hotbar :id=sandkit-enums-ComponentId-hotbar
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L92" target="_blank" rel="noopener">index.d.ts:92</a></p>
 
@@ -27858,7 +27858,7 @@ Hotbar: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.SoundBoxConfig :id=sandkit.enums.ComponentId.soundboxconfig
+#### sandkit.enums.ComponentId.SoundBoxConfig :id=sandkit-enums-ComponentId-soundboxconfig
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L93" target="_blank" rel="noopener">index.d.ts:93</a></p>
 
@@ -27874,7 +27874,7 @@ SoundBoxConfig: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Root :id=sandkit.enums.ComponentId.root
+#### sandkit.enums.ComponentId.Root :id=sandkit-enums-ComponentId-root
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L94" target="_blank" rel="noopener">index.d.ts:94</a></p>
 
@@ -27890,7 +27890,7 @@ Root: 4
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Menu :id=sandkit.enums.ComponentId.menu
+#### sandkit.enums.ComponentId.Menu :id=sandkit-enums-ComponentId-menu
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L95" target="_blank" rel="noopener">index.d.ts:95</a></p>
 
@@ -27906,7 +27906,7 @@ Menu: 5
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Management :id=sandkit.enums.ComponentId.management
+#### sandkit.enums.ComponentId.Management :id=sandkit-enums-ComponentId-management
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L96" target="_blank" rel="noopener">index.d.ts:96</a></p>
 
@@ -27922,7 +27922,7 @@ Management: 6
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.FilterConfig :id=sandkit.enums.ComponentId.filterconfig
+#### sandkit.enums.ComponentId.FilterConfig :id=sandkit-enums-ComponentId-filterconfig
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L97" target="_blank" rel="noopener">index.d.ts:97</a></p>
 
@@ -27938,7 +27938,7 @@ FilterConfig: 7
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Resources :id=sandkit.enums.ComponentId.resources
+#### sandkit.enums.ComponentId.Resources :id=sandkit-enums-ComponentId-resources
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L98" target="_blank" rel="noopener">index.d.ts:98</a></p>
 
@@ -27954,7 +27954,7 @@ Resources: 8
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.TechTree :id=sandkit.enums.ComponentId.techtree
+#### sandkit.enums.ComponentId.TechTree :id=sandkit-enums-ComponentId-techtree
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L99" target="_blank" rel="noopener">index.d.ts:99</a></p>
 
@@ -27970,7 +27970,7 @@ TechTree: 9
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Tutorial :id=sandkit.enums.ComponentId.tutorial
+#### sandkit.enums.ComponentId.Tutorial :id=sandkit-enums-ComponentId-tutorial
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L100" target="_blank" rel="noopener">index.d.ts:100</a></p>
 
@@ -27986,7 +27986,7 @@ Tutorial: 10
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Loader :id=sandkit.enums.ComponentId.loader
+#### sandkit.enums.ComponentId.Loader :id=sandkit-enums-ComponentId-loader
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L101" target="_blank" rel="noopener">index.d.ts:101</a></p>
 
@@ -28002,7 +28002,7 @@ Loader: 11
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Options :id=sandkit.enums.ComponentId.options
+#### sandkit.enums.ComponentId.Options :id=sandkit-enums-ComponentId-options
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L102" target="_blank" rel="noopener">index.d.ts:102</a></p>
 
@@ -28018,7 +28018,7 @@ Options: 12
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.ShortcutHelper :id=sandkit.enums.ComponentId.shortcuthelper
+#### sandkit.enums.ComponentId.ShortcutHelper :id=sandkit-enums-ComponentId-shortcuthelper
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L103" target="_blank" rel="noopener">index.d.ts:103</a></p>
 
@@ -28034,7 +28034,7 @@ ShortcutHelper: 13
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Upgrades :id=sandkit.enums.ComponentId.upgrades
+#### sandkit.enums.ComponentId.Upgrades :id=sandkit-enums-ComponentId-upgrades
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L104" target="_blank" rel="noopener">index.d.ts:104</a></p>
 
@@ -28050,7 +28050,7 @@ Upgrades: 14
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Tooltip :id=sandkit.enums.ComponentId.tooltip
+#### sandkit.enums.ComponentId.Tooltip :id=sandkit-enums-ComponentId-tooltip
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L105" target="_blank" rel="noopener">index.d.ts:105</a></p>
 
@@ -28066,7 +28066,7 @@ Tooltip: 15
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Notifications :id=sandkit.enums.ComponentId.notifications
+#### sandkit.enums.ComponentId.Notifications :id=sandkit-enums-ComponentId-notifications
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L106" target="_blank" rel="noopener">index.d.ts:106</a></p>
 
@@ -28082,7 +28082,7 @@ Notifications: 16
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Objectives :id=sandkit.enums.ComponentId.objectives
+#### sandkit.enums.ComponentId.Objectives :id=sandkit-enums-ComponentId-objectives
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L107" target="_blank" rel="noopener">index.d.ts:107</a></p>
 
@@ -28098,7 +28098,7 @@ Objectives: 17
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.DroneAdminList :id=sandkit.enums.ComponentId.droneadminlist
+#### sandkit.enums.ComponentId.DroneAdminList :id=sandkit-enums-ComponentId-droneadminlist
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L108" target="_blank" rel="noopener">index.d.ts:108</a></p>
 
@@ -28114,7 +28114,7 @@ DroneAdminList: 18
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.HotbarOverlays :id=sandkit.enums.ComponentId.hotbaroverlays
+#### sandkit.enums.ComponentId.HotbarOverlays :id=sandkit-enums-ComponentId-hotbaroverlays
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L109" target="_blank" rel="noopener">index.d.ts:109</a></p>
 
@@ -28130,7 +28130,7 @@ HotbarOverlays: 19
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.IntroScreen :id=sandkit.enums.ComponentId.introscreen
+#### sandkit.enums.ComponentId.IntroScreen :id=sandkit-enums-ComponentId-introscreen
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L110" target="_blank" rel="noopener">index.d.ts:110</a></p>
 
@@ -28146,7 +28146,7 @@ IntroScreen: 20
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.StoryNotifications :id=sandkit.enums.ComponentId.storynotifications
+#### sandkit.enums.ComponentId.StoryNotifications :id=sandkit-enums-ComponentId-storynotifications
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L111" target="_blank" rel="noopener">index.d.ts:111</a></p>
 
@@ -28162,7 +28162,7 @@ StoryNotifications: 21
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.FactoryProgress :id=sandkit.enums.ComponentId.factoryprogress
+#### sandkit.enums.ComponentId.FactoryProgress :id=sandkit-enums-ComponentId-factoryprogress
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L112" target="_blank" rel="noopener">index.d.ts:112</a></p>
 
@@ -28178,7 +28178,7 @@ FactoryProgress: 22
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Dialogs :id=sandkit.enums.ComponentId.dialogs
+#### sandkit.enums.ComponentId.Dialogs :id=sandkit-enums-ComponentId-dialogs
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L113" target="_blank" rel="noopener">index.d.ts:113</a></p>
 
@@ -28194,7 +28194,7 @@ Dialogs: 23
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.GlobalOverlays :id=sandkit.enums.ComponentId.globaloverlays
+#### sandkit.enums.ComponentId.GlobalOverlays :id=sandkit-enums-ComponentId-globaloverlays
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L114" target="_blank" rel="noopener">index.d.ts:114</a></p>
 
@@ -28210,7 +28210,7 @@ GlobalOverlays: 24
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Lexicon :id=sandkit.enums.ComponentId.lexicon
+#### sandkit.enums.ComponentId.Lexicon :id=sandkit-enums-ComponentId-lexicon
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L115" target="_blank" rel="noopener">index.d.ts:115</a></p>
 
@@ -28226,7 +28226,7 @@ Lexicon: 25
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.ModsScreen :id=sandkit.enums.ComponentId.modsscreen
+#### sandkit.enums.ComponentId.ModsScreen :id=sandkit-enums-ComponentId-modsscreen
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L116" target="_blank" rel="noopener">index.d.ts:116</a></p>
 
@@ -28242,7 +28242,7 @@ ModsScreen: 26
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.CustomMapsScreen :id=sandkit.enums.ComponentId.custommapsscreen
+#### sandkit.enums.ComponentId.CustomMapsScreen :id=sandkit-enums-ComponentId-custommapsscreen
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L117" target="_blank" rel="noopener">index.d.ts:117</a></p>
 
@@ -28258,7 +28258,7 @@ CustomMapsScreen: 27
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.CinematicPanel :id=sandkit.enums.ComponentId.cinematicpanel
+#### sandkit.enums.ComponentId.CinematicPanel :id=sandkit-enums-ComponentId-cinematicpanel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L118" target="_blank" rel="noopener">index.d.ts:118</a></p>
 
@@ -28274,7 +28274,7 @@ CinematicPanel: 28
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ComponentId.Feedback :id=sandkit.enums.ComponentId.feedback
+#### sandkit.enums.ComponentId.Feedback :id=sandkit-enums-ComponentId-feedback
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L119" target="_blank" rel="noopener">index.d.ts:119</a></p>
 
@@ -28300,7 +28300,7 @@ Autonomous drone kinds.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.DroneType.Digger :id=sandkit.enums.DroneType.digger
+#### sandkit.enums.DroneType.Digger :id=sandkit-enums-DroneType-digger
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L124" target="_blank" rel="noopener">index.d.ts:124</a></p>
 
@@ -28316,7 +28316,7 @@ Digger: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.DroneType.Hauler :id=sandkit.enums.DroneType.hauler
+#### sandkit.enums.DroneType.Hauler :id=sandkit-enums-DroneType-hauler
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L125" target="_blank" rel="noopener">index.d.ts:125</a></p>
 
@@ -28342,7 +28342,7 @@ Built-in element type ids (prefer API string ids when registering mods).
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Sand :id=sandkit.enums.ElementType.sand
+#### sandkit.enums.ElementType.Sand :id=sandkit-enums-ElementType-sand
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L130" target="_blank" rel="noopener">index.d.ts:130</a></p>
 
@@ -28358,7 +28358,7 @@ Sand: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Particle :id=sandkit.enums.ElementType.particle
+#### sandkit.enums.ElementType.Particle :id=sandkit-enums-ElementType-particle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L131" target="_blank" rel="noopener">index.d.ts:131</a></p>
 
@@ -28374,7 +28374,7 @@ Particle: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Water :id=sandkit.enums.ElementType.water
+#### sandkit.enums.ElementType.Water :id=sandkit-enums-ElementType-water
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L132" target="_blank" rel="noopener">index.d.ts:132</a></p>
 
@@ -28390,7 +28390,7 @@ Water: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.WetSand :id=sandkit.enums.ElementType.wetsand
+#### sandkit.enums.ElementType.WetSand :id=sandkit-enums-ElementType-wetsand
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L133" target="_blank" rel="noopener">index.d.ts:133</a></p>
 
@@ -28406,7 +28406,7 @@ WetSand: 4
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Sandium :id=sandkit.enums.ElementType.sandium
+#### sandkit.enums.ElementType.Sandium :id=sandkit-enums-ElementType-sandium
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L134" target="_blank" rel="noopener">index.d.ts:134</a></p>
 
@@ -28422,7 +28422,7 @@ Sandium: 5
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Residue :id=sandkit.enums.ElementType.residue
+#### sandkit.enums.ElementType.Residue :id=sandkit-enums-ElementType-residue
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L135" target="_blank" rel="noopener">index.d.ts:135</a></p>
 
@@ -28438,7 +28438,7 @@ Residue: 6
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Gold :id=sandkit.enums.ElementType.gold
+#### sandkit.enums.ElementType.Gold :id=sandkit-enums-ElementType-gold
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L136" target="_blank" rel="noopener">index.d.ts:136</a></p>
 
@@ -28454,7 +28454,7 @@ Gold: 7
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Gloom :id=sandkit.enums.ElementType.gloom
+#### sandkit.enums.ElementType.Gloom :id=sandkit-enums-ElementType-gloom
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L137" target="_blank" rel="noopener">index.d.ts:137</a></p>
 
@@ -28470,7 +28470,7 @@ Gloom: 8
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Shake :id=sandkit.enums.ElementType.shake
+#### sandkit.enums.ElementType.Shake :id=sandkit-enums-ElementType-shake
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L138" target="_blank" rel="noopener">index.d.ts:138</a></p>
 
@@ -28486,7 +28486,7 @@ Shake: 9
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Steam :id=sandkit.enums.ElementType.steam
+#### sandkit.enums.ElementType.Steam :id=sandkit-enums-ElementType-steam
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L139" target="_blank" rel="noopener">index.d.ts:139</a></p>
 
@@ -28502,7 +28502,7 @@ Steam: 10
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Fire :id=sandkit.enums.ElementType.fire
+#### sandkit.enums.ElementType.Fire :id=sandkit-enums-ElementType-fire
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L140" target="_blank" rel="noopener">index.d.ts:140</a></p>
 
@@ -28518,7 +28518,7 @@ Fire: 11
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.FreezingIce :id=sandkit.enums.ElementType.freezingice
+#### sandkit.enums.ElementType.FreezingIce :id=sandkit-enums-ElementType-freezingice
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L141" target="_blank" rel="noopener">index.d.ts:141</a></p>
 
@@ -28534,7 +28534,7 @@ FreezingIce: 12
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Flame :id=sandkit.enums.ElementType.flame
+#### sandkit.enums.ElementType.Flame :id=sandkit-enums-ElementType-flame
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L142" target="_blank" rel="noopener">index.d.ts:142</a></p>
 
@@ -28550,7 +28550,7 @@ Flame: 13
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.BurntResidue :id=sandkit.enums.ElementType.burntresidue
+#### sandkit.enums.ElementType.BurntResidue :id=sandkit-enums-ElementType-burntresidue
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L143" target="_blank" rel="noopener">index.d.ts:143</a></p>
 
@@ -28566,7 +28566,7 @@ BurntResidue: 14
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Seed :id=sandkit.enums.ElementType.seed
+#### sandkit.enums.ElementType.Seed :id=sandkit-enums-ElementType-seed
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L144" target="_blank" rel="noopener">index.d.ts:144</a></p>
 
@@ -28582,7 +28582,7 @@ Seed: 15
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.WetSeed :id=sandkit.enums.ElementType.wetseed
+#### sandkit.enums.ElementType.WetSeed :id=sandkit-enums-ElementType-wetseed
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L145" target="_blank" rel="noopener">index.d.ts:145</a></p>
 
@@ -28598,7 +28598,7 @@ WetSeed: 16
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Seedling :id=sandkit.enums.ElementType.seedling
+#### sandkit.enums.ElementType.Seedling :id=sandkit-enums-ElementType-seedling
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L146" target="_blank" rel="noopener">index.d.ts:146</a></p>
 
@@ -28614,7 +28614,7 @@ Seedling: 17
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Petalium :id=sandkit.enums.ElementType.petalium
+#### sandkit.enums.ElementType.Petalium :id=sandkit-enums-ElementType-petalium
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L147" target="_blank" rel="noopener">index.d.ts:147</a></p>
 
@@ -28630,7 +28630,7 @@ Petalium: 18
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Lava :id=sandkit.enums.ElementType.lava
+#### sandkit.enums.ElementType.Lava :id=sandkit-enums-ElementType-lava
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L148" target="_blank" rel="noopener">index.d.ts:148</a></p>
 
@@ -28646,7 +28646,7 @@ Lava: 19
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ElementType.Basalt :id=sandkit.enums.ElementType.basalt
+#### sandkit.enums.ElementType.Basalt :id=sandkit-enums-ElementType-basalt
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L149" target="_blank" rel="noopener">index.d.ts:149</a></p>
 
@@ -28672,7 +28672,7 @@ Built-in hotbar item ids.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Shovel :id=sandkit.enums.ItemId.shovel
+#### sandkit.enums.ItemId.Shovel :id=sandkit-enums-ItemId-shovel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L154" target="_blank" rel="noopener">index.d.ts:154</a></p>
 
@@ -28688,7 +28688,7 @@ Shovel: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Grabber :id=sandkit.enums.ItemId.grabber
+#### sandkit.enums.ItemId.Grabber :id=sandkit-enums-ItemId-grabber
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L155" target="_blank" rel="noopener">index.d.ts:155</a></p>
 
@@ -28704,7 +28704,7 @@ Grabber: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Demolisher :id=sandkit.enums.ItemId.demolisher
+#### sandkit.enums.ItemId.Demolisher :id=sandkit-enums-ItemId-demolisher
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L156" target="_blank" rel="noopener">index.d.ts:156</a></p>
 
@@ -28720,7 +28720,7 @@ Demolisher: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.GrapplingHook :id=sandkit.enums.ItemId.grapplinghook
+#### sandkit.enums.ItemId.GrapplingHook :id=sandkit-enums-ItemId-grapplinghook
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L157" target="_blank" rel="noopener">index.d.ts:157</a></p>
 
@@ -28736,7 +28736,7 @@ GrapplingHook: 4
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Vacuum :id=sandkit.enums.ItemId.vacuum
+#### sandkit.enums.ItemId.Vacuum :id=sandkit-enums-ItemId-vacuum
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L158" target="_blank" rel="noopener">index.d.ts:158</a></p>
 
@@ -28752,7 +28752,7 @@ Vacuum: 5
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Gun :id=sandkit.enums.ItemId.gun
+#### sandkit.enums.ItemId.Gun :id=sandkit-enums-ItemId-gun
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L159" target="_blank" rel="noopener">index.d.ts:159</a></p>
 
@@ -28768,7 +28768,7 @@ Gun: 6
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Copier :id=sandkit.enums.ItemId.copier
+#### sandkit.enums.ItemId.Copier :id=sandkit-enums-ItemId-copier
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L160" target="_blank" rel="noopener">index.d.ts:160</a></p>
 
@@ -28784,7 +28784,7 @@ Copier: 7
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.RocketLauncher :id=sandkit.enums.ItemId.rocketlauncher
+#### sandkit.enums.ItemId.RocketLauncher :id=sandkit-enums-ItemId-rocketlauncher
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L161" target="_blank" rel="noopener">index.d.ts:161</a></p>
 
@@ -28800,7 +28800,7 @@ RocketLauncher: 8
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Digger :id=sandkit.enums.ItemId.digger
+#### sandkit.enums.ItemId.Digger :id=sandkit-enums-ItemId-digger
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L162" target="_blank" rel="noopener">index.d.ts:162</a></p>
 
@@ -28816,7 +28816,7 @@ Digger: 9
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Shotgun :id=sandkit.enums.ItemId.shotgun
+#### sandkit.enums.ItemId.Shotgun :id=sandkit-enums-ItemId-shotgun
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L163" target="_blank" rel="noopener">index.d.ts:163</a></p>
 
@@ -28832,7 +28832,7 @@ Shotgun: 10
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Teleporter :id=sandkit.enums.ItemId.teleporter
+#### sandkit.enums.ItemId.Teleporter :id=sandkit-enums-ItemId-teleporter
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L164" target="_blank" rel="noopener">index.d.ts:164</a></p>
 
@@ -28848,7 +28848,7 @@ Teleporter: 11
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Flamethrower :id=sandkit.enums.ItemId.flamethrower
+#### sandkit.enums.ItemId.Flamethrower :id=sandkit-enums-ItemId-flamethrower
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L165" target="_blank" rel="noopener">index.d.ts:165</a></p>
 
@@ -28864,7 +28864,7 @@ Flamethrower: 12
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.PipeRemover :id=sandkit.enums.ItemId.piperemover
+#### sandkit.enums.ItemId.PipeRemover :id=sandkit-enums-ItemId-piperemover
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L166" target="_blank" rel="noopener">index.d.ts:166</a></p>
 
@@ -28880,7 +28880,7 @@ PipeRemover: 13
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Hauler :id=sandkit.enums.ItemId.hauler
+#### sandkit.enums.ItemId.Hauler :id=sandkit-enums-ItemId-hauler
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L167" target="_blank" rel="noopener">index.d.ts:167</a></p>
 
@@ -28896,7 +28896,7 @@ Hauler: 14
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.Cryoblaster :id=sandkit.enums.ItemId.cryoblaster
+#### sandkit.enums.ItemId.Cryoblaster :id=sandkit-enums-ItemId-cryoblaster
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L168" target="_blank" rel="noopener">index.d.ts:168</a></p>
 
@@ -28912,7 +28912,7 @@ Cryoblaster: 15
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemId.MegaShotgun :id=sandkit.enums.ItemId.megashotgun
+#### sandkit.enums.ItemId.MegaShotgun :id=sandkit-enums-ItemId-megashotgun
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L169" target="_blank" rel="noopener">index.d.ts:169</a></p>
 
@@ -28938,7 +28938,7 @@ Item category (weapon, tool, consumable, mod).
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemType.Weapon :id=sandkit.enums.ItemType.weapon
+#### sandkit.enums.ItemType.Weapon :id=sandkit-enums-ItemType-weapon
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L174" target="_blank" rel="noopener">index.d.ts:174</a></p>
 
@@ -28954,7 +28954,7 @@ Weapon: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemType.Tool :id=sandkit.enums.ItemType.tool
+#### sandkit.enums.ItemType.Tool :id=sandkit-enums-ItemType-tool
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L175" target="_blank" rel="noopener">index.d.ts:175</a></p>
 
@@ -28970,7 +28970,7 @@ Tool: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemType.Consumable :id=sandkit.enums.ItemType.consumable
+#### sandkit.enums.ItemType.Consumable :id=sandkit-enums-ItemType-consumable
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L176" target="_blank" rel="noopener">index.d.ts:176</a></p>
 
@@ -28986,7 +28986,7 @@ Consumable: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ItemType.Mod :id=sandkit.enums.ItemType.mod
+#### sandkit.enums.ItemType.Mod :id=sandkit-enums-ItemType-mod
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L177" target="_blank" rel="noopener">index.d.ts:177</a></p>
 
@@ -29012,7 +29012,7 @@ Named input bindings (settings keys).
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.OpenBuildMenu :id=sandkit.enums.KeyBinding.openbuildmenu
+#### sandkit.enums.KeyBinding.OpenBuildMenu :id=sandkit-enums-KeyBinding-openbuildmenu
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L182" target="_blank" rel="noopener">index.d.ts:182</a></p>
 
@@ -29028,7 +29028,7 @@ OpenBuildMenu: "OpenBuildMenu"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.GrapplingHook :id=sandkit.enums.KeyBinding.grapplinghook
+#### sandkit.enums.KeyBinding.GrapplingHook :id=sandkit-enums-KeyBinding-grapplinghook
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L183" target="_blank" rel="noopener">index.d.ts:183</a></p>
 
@@ -29044,7 +29044,7 @@ GrapplingHook: "GrapplingHook"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Escape :id=sandkit.enums.KeyBinding.escape
+#### sandkit.enums.KeyBinding.Escape :id=sandkit-enums-KeyBinding-escape
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L184" target="_blank" rel="noopener">index.d.ts:184</a></p>
 
@@ -29060,7 +29060,7 @@ Escape: "Escape"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.OpenTechTree :id=sandkit.enums.KeyBinding.opentechtree
+#### sandkit.enums.KeyBinding.OpenTechTree :id=sandkit-enums-KeyBinding-opentechtree
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L185" target="_blank" rel="noopener">index.d.ts:185</a></p>
 
@@ -29076,7 +29076,7 @@ OpenTechTree: "OpenTechTree"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.OpenInventory :id=sandkit.enums.KeyBinding.openinventory
+#### sandkit.enums.KeyBinding.OpenInventory :id=sandkit-enums-KeyBinding-openinventory
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L186" target="_blank" rel="noopener">index.d.ts:186</a></p>
 
@@ -29092,7 +29092,7 @@ OpenInventory: "OpenInventory"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.ReverseBuildDirection :id=sandkit.enums.KeyBinding.reversebuilddirection
+#### sandkit.enums.KeyBinding.ReverseBuildDirection :id=sandkit-enums-KeyBinding-reversebuilddirection
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L187" target="_blank" rel="noopener">index.d.ts:187</a></p>
 
@@ -29108,7 +29108,7 @@ ReverseBuildDirection: "ReverseBuildDirection"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Marquee :id=sandkit.enums.KeyBinding.marquee
+#### sandkit.enums.KeyBinding.Marquee :id=sandkit-enums-KeyBinding-marquee
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L188" target="_blank" rel="noopener">index.d.ts:188</a></p>
 
@@ -29124,7 +29124,7 @@ Marquee: "Marquee"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Pause :id=sandkit.enums.KeyBinding.pause
+#### sandkit.enums.KeyBinding.Pause :id=sandkit-enums-KeyBinding-pause
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L189" target="_blank" rel="noopener">index.d.ts:189</a></p>
 
@@ -29140,7 +29140,7 @@ Pause: "Pause"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Copy :id=sandkit.enums.KeyBinding.copy
+#### sandkit.enums.KeyBinding.Copy :id=sandkit-enums-KeyBinding-copy
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L190" target="_blank" rel="noopener">index.d.ts:190</a></p>
 
@@ -29156,7 +29156,7 @@ Copy: "Copy"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Paste :id=sandkit.enums.KeyBinding.paste
+#### sandkit.enums.KeyBinding.Paste :id=sandkit-enums-KeyBinding-paste
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L191" target="_blank" rel="noopener">index.d.ts:191</a></p>
 
@@ -29172,7 +29172,7 @@ Paste: "Paste"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Flip :id=sandkit.enums.KeyBinding.flip
+#### sandkit.enums.KeyBinding.Flip :id=sandkit-enums-KeyBinding-flip
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L192" target="_blank" rel="noopener">index.d.ts:192</a></p>
 
@@ -29188,7 +29188,7 @@ Flip: "Flip"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Delete :id=sandkit.enums.KeyBinding.delete
+#### sandkit.enums.KeyBinding.Delete :id=sandkit-enums-KeyBinding-delete
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L193" target="_blank" rel="noopener">index.d.ts:193</a></p>
 
@@ -29204,7 +29204,7 @@ Delete: "Delete"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.PauseCamera :id=sandkit.enums.KeyBinding.pausecamera
+#### sandkit.enums.KeyBinding.PauseCamera :id=sandkit-enums-KeyBinding-pausecamera
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L194" target="_blank" rel="noopener">index.d.ts:194</a></p>
 
@@ -29220,7 +29220,7 @@ PauseCamera: "PauseCamera"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.OpenUpgrades :id=sandkit.enums.KeyBinding.openupgrades
+#### sandkit.enums.KeyBinding.OpenUpgrades :id=sandkit-enums-KeyBinding-openupgrades
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L195" target="_blank" rel="noopener">index.d.ts:195</a></p>
 
@@ -29236,7 +29236,7 @@ OpenUpgrades: "OpenUpgrades"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.BuildMode :id=sandkit.enums.KeyBinding.buildmode
+#### sandkit.enums.KeyBinding.BuildMode :id=sandkit-enums-KeyBinding-buildmode
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L196" target="_blank" rel="noopener">index.d.ts:196</a></p>
 
@@ -29252,7 +29252,7 @@ BuildMode: "BuildMode"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Demolish :id=sandkit.enums.KeyBinding.demolish
+#### sandkit.enums.KeyBinding.Demolish :id=sandkit-enums-KeyBinding-demolish
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L197" target="_blank" rel="noopener">index.d.ts:197</a></p>
 
@@ -29268,7 +29268,7 @@ Demolish: "Demolish"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Hover :id=sandkit.enums.KeyBinding.hover
+#### sandkit.enums.KeyBinding.Hover :id=sandkit-enums-KeyBinding-hover
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L198" target="_blank" rel="noopener">index.d.ts:198</a></p>
 
@@ -29284,7 +29284,7 @@ Hover: "Hover"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Ruler :id=sandkit.enums.KeyBinding.ruler
+#### sandkit.enums.KeyBinding.Ruler :id=sandkit-enums-KeyBinding-ruler
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L199" target="_blank" rel="noopener">index.d.ts:199</a></p>
 
@@ -29300,7 +29300,7 @@ Ruler: "Ruler"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Left :id=sandkit.enums.KeyBinding.left
+#### sandkit.enums.KeyBinding.Left :id=sandkit-enums-KeyBinding-left
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L200" target="_blank" rel="noopener">index.d.ts:200</a></p>
 
@@ -29316,7 +29316,7 @@ Left: "Left"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Right :id=sandkit.enums.KeyBinding.right
+#### sandkit.enums.KeyBinding.Right :id=sandkit-enums-KeyBinding-right
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L201" target="_blank" rel="noopener">index.d.ts:201</a></p>
 
@@ -29332,7 +29332,7 @@ Right: "Right"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Boost :id=sandkit.enums.KeyBinding.boost
+#### sandkit.enums.KeyBinding.Boost :id=sandkit-enums-KeyBinding-boost
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L202" target="_blank" rel="noopener">index.d.ts:202</a></p>
 
@@ -29348,7 +29348,7 @@ Boost: "Boost"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.Descend :id=sandkit.enums.KeyBinding.descend
+#### sandkit.enums.KeyBinding.Descend :id=sandkit-enums-KeyBinding-descend
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L203" target="_blank" rel="noopener">index.d.ts:203</a></p>
 
@@ -29364,7 +29364,7 @@ Descend: "Descend"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.SprintBoost :id=sandkit.enums.KeyBinding.sprintboost
+#### sandkit.enums.KeyBinding.SprintBoost :id=sandkit-enums-KeyBinding-sprintboost
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L204" target="_blank" rel="noopener">index.d.ts:204</a></p>
 
@@ -29380,7 +29380,7 @@ SprintBoost: "SprintBoost"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.OverrideReplaceStructures :id=sandkit.enums.KeyBinding.overridereplacestructures
+#### sandkit.enums.KeyBinding.OverrideReplaceStructures :id=sandkit-enums-KeyBinding-overridereplacestructures
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L205" target="_blank" rel="noopener">index.d.ts:205</a></p>
 
@@ -29396,7 +29396,7 @@ OverrideReplaceStructures: "OverrideReplaceStructures"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.QuickSave :id=sandkit.enums.KeyBinding.quicksave
+#### sandkit.enums.KeyBinding.QuickSave :id=sandkit-enums-KeyBinding-quicksave
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L206" target="_blank" rel="noopener">index.d.ts:206</a></p>
 
@@ -29412,7 +29412,7 @@ QuickSave: "QuickSave"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.QuickLoad :id=sandkit.enums.KeyBinding.quickload
+#### sandkit.enums.KeyBinding.QuickLoad :id=sandkit-enums-KeyBinding-quickload
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L207" target="_blank" rel="noopener">index.d.ts:207</a></p>
 
@@ -29428,7 +29428,7 @@ QuickLoad: "QuickLoad"
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyBinding.ToggleGameHud :id=sandkit.enums.KeyBinding.togglegamehud
+#### sandkit.enums.KeyBinding.ToggleGameHud :id=sandkit-enums-KeyBinding-togglegamehud
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L208" target="_blank" rel="noopener">index.d.ts:208</a></p>
 
@@ -29454,7 +29454,7 @@ Key transition state for input polling.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyState.Up :id=sandkit.enums.KeyState.up
+#### sandkit.enums.KeyState.Up :id=sandkit-enums-KeyState-up
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L213" target="_blank" rel="noopener">index.d.ts:213</a></p>
 
@@ -29470,7 +29470,7 @@ Up: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyState.Down :id=sandkit.enums.KeyState.down
+#### sandkit.enums.KeyState.Down :id=sandkit-enums-KeyState-down
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L214" target="_blank" rel="noopener">index.d.ts:214</a></p>
 
@@ -29486,7 +29486,7 @@ Down: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyState.Pressed :id=sandkit.enums.KeyState.pressed
+#### sandkit.enums.KeyState.Pressed :id=sandkit-enums-KeyState-pressed
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L215" target="_blank" rel="noopener">index.d.ts:215</a></p>
 
@@ -29502,7 +29502,7 @@ Pressed: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyState.Released :id=sandkit.enums.KeyState.released
+#### sandkit.enums.KeyState.Released :id=sandkit-enums-KeyState-released
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L216" target="_blank" rel="noopener">index.d.ts:216</a></p>
 
@@ -29518,7 +29518,7 @@ Released: 4
 
 <div class="smt-member-card">
 
-#### sandkit.enums.KeyState.All :id=sandkit.enums.KeyState.all
+#### sandkit.enums.KeyState.All :id=sandkit-enums-KeyState-all
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L217" target="_blank" rel="noopener">index.d.ts:217</a></p>
 
@@ -29544,7 +29544,7 @@ Physical behaviour category for elements (mirrors shared API enum).
 
 <div class="smt-member-card">
 
-#### sandkit.enums.MatterType.Solid :id=sandkit.enums.MatterType.solid
+#### sandkit.enums.MatterType.Solid :id=sandkit-enums-MatterType-solid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L222" target="_blank" rel="noopener">index.d.ts:222</a></p>
 
@@ -29560,7 +29560,7 @@ Solid: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.MatterType.Liquid :id=sandkit.enums.MatterType.liquid
+#### sandkit.enums.MatterType.Liquid :id=sandkit-enums-MatterType-liquid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L223" target="_blank" rel="noopener">index.d.ts:223</a></p>
 
@@ -29576,7 +29576,7 @@ Liquid: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.MatterType.Particle :id=sandkit.enums.MatterType.particle
+#### sandkit.enums.MatterType.Particle :id=sandkit-enums-MatterType-particle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L224" target="_blank" rel="noopener">index.d.ts:224</a></p>
 
@@ -29592,7 +29592,7 @@ Particle: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.MatterType.Gas :id=sandkit.enums.MatterType.gas
+#### sandkit.enums.MatterType.Gas :id=sandkit-enums-MatterType-gas
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L225" target="_blank" rel="noopener">index.d.ts:225</a></p>
 
@@ -29608,7 +29608,7 @@ Gas: 4
 
 <div class="smt-member-card">
 
-#### sandkit.enums.MatterType.Static :id=sandkit.enums.MatterType.static
+#### sandkit.enums.MatterType.Static :id=sandkit-enums-MatterType-static
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L226" target="_blank" rel="noopener">index.d.ts:226</a></p>
 
@@ -29624,7 +29624,7 @@ Static: 5
 
 <div class="smt-member-card">
 
-#### sandkit.enums.MatterType.Slushy :id=sandkit.enums.MatterType.slushy
+#### sandkit.enums.MatterType.Slushy :id=sandkit-enums-MatterType-slushy
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L227" target="_blank" rel="noopener">index.d.ts:227</a></p>
 
@@ -29640,7 +29640,7 @@ Slushy: 6
 
 <div class="smt-member-card">
 
-#### sandkit.enums.MatterType.Wisp :id=sandkit.enums.MatterType.wisp
+#### sandkit.enums.MatterType.Wisp :id=sandkit-enums-MatterType-wisp
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L228" target="_blank" rel="noopener">index.d.ts:228</a></p>
 
@@ -29656,7 +29656,7 @@ Wisp: 7
 
 <div class="smt-member-card">
 
-#### sandkit.enums.MatterType.Powder :id=sandkit.enums.MatterType.powder
+#### sandkit.enums.MatterType.Powder :id=sandkit-enums-MatterType-powder
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L229" target="_blank" rel="noopener">index.d.ts:229</a></p>
 
@@ -29682,7 +29682,7 @@ Pickups and interactable world items.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.PickupType.Artifact :id=sandkit.enums.PickupType.artifact
+#### sandkit.enums.PickupType.Artifact :id=sandkit-enums-PickupType-artifact
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L414" target="_blank" rel="noopener">index.d.ts:414</a></p>
 
@@ -29698,7 +29698,7 @@ Artifact: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.PickupType.GlyphKey :id=sandkit.enums.PickupType.glyphkey
+#### sandkit.enums.PickupType.GlyphKey :id=sandkit-enums-PickupType-glyphkey
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L415" target="_blank" rel="noopener">index.d.ts:415</a></p>
 
@@ -29714,7 +29714,7 @@ GlyphKey: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.PickupType.Stratacore :id=sandkit.enums.PickupType.stratacore
+#### sandkit.enums.PickupType.Stratacore :id=sandkit-enums-PickupType-stratacore
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L416" target="_blank" rel="noopener">index.d.ts:416</a></p>
 
@@ -29730,7 +29730,7 @@ Stratacore: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.PickupType.Orb :id=sandkit.enums.PickupType.orb
+#### sandkit.enums.PickupType.Orb :id=sandkit-enums-PickupType-orb
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L417" target="_blank" rel="noopener">index.d.ts:417</a></p>
 
@@ -29756,7 +29756,7 @@ Projectile kinds spawned by weapons and tools.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ProjectileType.Bullet :id=sandkit.enums.ProjectileType.bullet
+#### sandkit.enums.ProjectileType.Bullet :id=sandkit-enums-ProjectileType-bullet
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L234" target="_blank" rel="noopener">index.d.ts:234</a></p>
 
@@ -29772,7 +29772,7 @@ Bullet: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ProjectileType.Rocket :id=sandkit.enums.ProjectileType.rocket
+#### sandkit.enums.ProjectileType.Rocket :id=sandkit-enums-ProjectileType-rocket
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L235" target="_blank" rel="noopener">index.d.ts:235</a></p>
 
@@ -29788,7 +29788,7 @@ Rocket: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ProjectileType.GrapplingHook :id=sandkit.enums.ProjectileType.grapplinghook
+#### sandkit.enums.ProjectileType.GrapplingHook :id=sandkit-enums-ProjectileType-grapplinghook
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L236" target="_blank" rel="noopener">index.d.ts:236</a></p>
 
@@ -29804,7 +29804,7 @@ GrapplingHook: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ProjectileType.Fire :id=sandkit.enums.ProjectileType.fire
+#### sandkit.enums.ProjectileType.Fire :id=sandkit-enums-ProjectileType-fire
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L237" target="_blank" rel="noopener">index.d.ts:237</a></p>
 
@@ -29820,7 +29820,7 @@ Fire: 4
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ProjectileType.Digger :id=sandkit.enums.ProjectileType.digger
+#### sandkit.enums.ProjectileType.Digger :id=sandkit-enums-ProjectileType-digger
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L238" target="_blank" rel="noopener">index.d.ts:238</a></p>
 
@@ -29836,7 +29836,7 @@ Digger: 5
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ProjectileType.Mod :id=sandkit.enums.ProjectileType.mod
+#### sandkit.enums.ProjectileType.Mod :id=sandkit-enums-ProjectileType-mod
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L239" target="_blank" rel="noopener">index.d.ts:239</a></p>
 
@@ -29862,7 +29862,7 @@ Weapon reload behaviour.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ReloadType.Clip :id=sandkit.enums.ReloadType.clip
+#### sandkit.enums.ReloadType.Clip :id=sandkit-enums-ReloadType-clip
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L244" target="_blank" rel="noopener">index.d.ts:244</a></p>
 
@@ -29878,7 +29878,7 @@ Clip: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ReloadType.Single :id=sandkit.enums.ReloadType.single
+#### sandkit.enums.ReloadType.Single :id=sandkit-enums-ReloadType-single
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L245" target="_blank" rel="noopener">index.d.ts:245</a></p>
 
@@ -29894,7 +29894,7 @@ Single: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.ReloadType.OverTime :id=sandkit.enums.ReloadType.overtime
+#### sandkit.enums.ReloadType.OverTime :id=sandkit-enums-ReloadType-overtime
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L246" target="_blank" rel="noopener">index.d.ts:246</a></p>
 
@@ -29920,7 +29920,7 @@ Top-level game scene (menu, intro, deploy, in-game).
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Scene.MainMenu :id=sandkit.enums.Scene.mainmenu
+#### sandkit.enums.Scene.MainMenu :id=sandkit-enums-Scene-mainmenu
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L251" target="_blank" rel="noopener">index.d.ts:251</a></p>
 
@@ -29936,7 +29936,7 @@ MainMenu: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Scene.Intro :id=sandkit.enums.Scene.intro
+#### sandkit.enums.Scene.Intro :id=sandkit-enums-Scene-intro
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L252" target="_blank" rel="noopener">index.d.ts:252</a></p>
 
@@ -29952,7 +29952,7 @@ Intro: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Scene.Deploy :id=sandkit.enums.Scene.deploy
+#### sandkit.enums.Scene.Deploy :id=sandkit-enums-Scene-deploy
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L253" target="_blank" rel="noopener">index.d.ts:253</a></p>
 
@@ -29968,7 +29968,7 @@ Deploy: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Scene.Game :id=sandkit.enums.Scene.game
+#### sandkit.enums.Scene.Game :id=sandkit-enums-Scene-game
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L254" target="_blank" rel="noopener">index.d.ts:254</a></p>
 
@@ -29994,7 +29994,7 @@ Built-in structure type ids.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.ConveyorLeft :id=sandkit.enums.StructureType.conveyorleft
+#### sandkit.enums.StructureType.ConveyorLeft :id=sandkit-enums-StructureType-conveyorleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L259" target="_blank" rel="noopener">index.d.ts:259</a></p>
 
@@ -30010,7 +30010,7 @@ ConveyorLeft: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.ConveyorRight :id=sandkit.enums.StructureType.conveyorright
+#### sandkit.enums.StructureType.ConveyorRight :id=sandkit-enums-StructureType-conveyorright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L260" target="_blank" rel="noopener">index.d.ts:260</a></p>
 
@@ -30026,7 +30026,7 @@ ConveyorRight: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.ShakerLeft :id=sandkit.enums.StructureType.shakerleft
+#### sandkit.enums.StructureType.ShakerLeft :id=sandkit-enums-StructureType-shakerleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L261" target="_blank" rel="noopener">index.d.ts:261</a></p>
 
@@ -30042,7 +30042,7 @@ ShakerLeft: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.ShakerRight :id=sandkit.enums.StructureType.shakerright
+#### sandkit.enums.StructureType.ShakerRight :id=sandkit-enums-StructureType-shakerright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L262" target="_blank" rel="noopener">index.d.ts:262</a></p>
 
@@ -30058,7 +30058,7 @@ ShakerRight: 4
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.LauncherUp :id=sandkit.enums.StructureType.launcherup
+#### sandkit.enums.StructureType.LauncherUp :id=sandkit-enums-StructureType-launcherup
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L263" target="_blank" rel="noopener">index.d.ts:263</a></p>
 
@@ -30074,7 +30074,7 @@ LauncherUp: 5
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.LauncherLeft :id=sandkit.enums.StructureType.launcherleft
+#### sandkit.enums.StructureType.LauncherLeft :id=sandkit-enums-StructureType-launcherleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L264" target="_blank" rel="noopener">index.d.ts:264</a></p>
 
@@ -30090,7 +30090,7 @@ LauncherLeft: 6
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.LauncherRight :id=sandkit.enums.StructureType.launcherright
+#### sandkit.enums.StructureType.LauncherRight :id=sandkit-enums-StructureType-launcherright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L265" target="_blank" rel="noopener">index.d.ts:265</a></p>
 
@@ -30106,7 +30106,7 @@ LauncherRight: 7
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.SplitterLeft :id=sandkit.enums.StructureType.splitterleft
+#### sandkit.enums.StructureType.SplitterLeft :id=sandkit-enums-StructureType-splitterleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L266" target="_blank" rel="noopener">index.d.ts:266</a></p>
 
@@ -30122,7 +30122,7 @@ SplitterLeft: 8
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.SplitterRight :id=sandkit.enums.StructureType.splitterright
+#### sandkit.enums.StructureType.SplitterRight :id=sandkit-enums-StructureType-splitterright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L267" target="_blank" rel="noopener">index.d.ts:267</a></p>
 
@@ -30138,7 +30138,7 @@ SplitterRight: 9
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.Dropper :id=sandkit.enums.StructureType.dropper
+#### sandkit.enums.StructureType.Dropper :id=sandkit-enums-StructureType-dropper
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L268" target="_blank" rel="noopener">index.d.ts:268</a></p>
 
@@ -30154,7 +30154,7 @@ Dropper: 10
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.Foundation :id=sandkit.enums.StructureType.foundation
+#### sandkit.enums.StructureType.Foundation :id=sandkit-enums-StructureType-foundation
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L269" target="_blank" rel="noopener">index.d.ts:269</a></p>
 
@@ -30170,7 +30170,7 @@ Foundation: 11
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.FoundationAngledLeft :id=sandkit.enums.StructureType.foundationangledleft
+#### sandkit.enums.StructureType.FoundationAngledLeft :id=sandkit-enums-StructureType-foundationangledleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L270" target="_blank" rel="noopener">index.d.ts:270</a></p>
 
@@ -30186,7 +30186,7 @@ FoundationAngledLeft: 12
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.FoundationTriangleLeftDel :id=sandkit.enums.StructureType.foundationtriangleleftdel
+#### sandkit.enums.StructureType.FoundationTriangleLeftDel :id=sandkit-enums-StructureType-foundationtriangleleftdel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L271" target="_blank" rel="noopener">index.d.ts:271</a></p>
 
@@ -30202,7 +30202,7 @@ FoundationTriangleLeftDel: 13
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.FoundationAngledRight :id=sandkit.enums.StructureType.foundationangledright
+#### sandkit.enums.StructureType.FoundationAngledRight :id=sandkit-enums-StructureType-foundationangledright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L272" target="_blank" rel="noopener">index.d.ts:272</a></p>
 
@@ -30218,7 +30218,7 @@ FoundationAngledRight: 14
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.FoundationTriangleRightDel :id=sandkit.enums.StructureType.foundationtrianglerightdel
+#### sandkit.enums.StructureType.FoundationTriangleRightDel :id=sandkit-enums-StructureType-foundationtrianglerightdel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L273" target="_blank" rel="noopener">index.d.ts:273</a></p>
 
@@ -30234,7 +30234,7 @@ FoundationTriangleRightDel: 15
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.Collector :id=sandkit.enums.StructureType.collector
+#### sandkit.enums.StructureType.Collector :id=sandkit-enums-StructureType-collector
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L274" target="_blank" rel="noopener">index.d.ts:274</a></p>
 
@@ -30250,7 +30250,7 @@ Collector: 16
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.FilterLeft :id=sandkit.enums.StructureType.filterleft
+#### sandkit.enums.StructureType.FilterLeft :id=sandkit-enums-StructureType-filterleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L275" target="_blank" rel="noopener">index.d.ts:275</a></p>
 
@@ -30266,7 +30266,7 @@ FilterLeft: 17
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.FilterRight :id=sandkit.enums.StructureType.filterright
+#### sandkit.enums.StructureType.FilterRight :id=sandkit-enums-StructureType-filterright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L276" target="_blank" rel="noopener">index.d.ts:276</a></p>
 
@@ -30282,7 +30282,7 @@ FilterRight: 18
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.SlidingFoundation :id=sandkit.enums.StructureType.slidingfoundation
+#### sandkit.enums.StructureType.SlidingFoundation :id=sandkit-enums-StructureType-slidingfoundation
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L277" target="_blank" rel="noopener">index.d.ts:277</a></p>
 
@@ -30298,7 +30298,7 @@ SlidingFoundation: 19
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.VelocitySoaker :id=sandkit.enums.StructureType.velocitysoaker
+#### sandkit.enums.StructureType.VelocitySoaker :id=sandkit-enums-StructureType-velocitysoaker
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L278" target="_blank" rel="noopener">index.d.ts:278</a></p>
 
@@ -30314,7 +30314,7 @@ VelocitySoaker: 20
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.Grower :id=sandkit.enums.StructureType.grower
+#### sandkit.enums.StructureType.Grower :id=sandkit-enums-StructureType-grower
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L279" target="_blank" rel="noopener">index.d.ts:279</a></p>
 
@@ -30330,7 +30330,7 @@ Grower: 21
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.SoundBox :id=sandkit.enums.StructureType.soundbox
+#### sandkit.enums.StructureType.SoundBox :id=sandkit-enums-StructureType-soundbox
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L280" target="_blank" rel="noopener">index.d.ts:280</a></p>
 
@@ -30346,7 +30346,7 @@ SoundBox: 22
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.Pipe :id=sandkit.enums.StructureType.pipe
+#### sandkit.enums.StructureType.Pipe :id=sandkit-enums-StructureType-pipe
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L281" target="_blank" rel="noopener">index.d.ts:281</a></p>
 
@@ -30362,7 +30362,7 @@ Pipe: 23
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.Pump :id=sandkit.enums.StructureType.pump
+#### sandkit.enums.StructureType.Pump :id=sandkit-enums-StructureType-pump
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L282" target="_blank" rel="noopener">index.d.ts:282</a></p>
 
@@ -30378,7 +30378,7 @@ Pump: 24
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.LiquidVent :id=sandkit.enums.StructureType.liquidvent
+#### sandkit.enums.StructureType.LiquidVent :id=sandkit-enums-StructureType-liquidvent
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L283" target="_blank" rel="noopener">index.d.ts:283</a></p>
 
@@ -30394,7 +30394,7 @@ LiquidVent: 25
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.Light :id=sandkit.enums.StructureType.light
+#### sandkit.enums.StructureType.Light :id=sandkit-enums-StructureType-light
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L284" target="_blank" rel="noopener">index.d.ts:284</a></p>
 
@@ -30410,7 +30410,7 @@ Light: 26
 
 <div class="smt-member-card">
 
-#### sandkit.enums.StructureType.FluxEmanator :id=sandkit.enums.StructureType.fluxemanator
+#### sandkit.enums.StructureType.FluxEmanator :id=sandkit-enums-StructureType-fluxemanator
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L285" target="_blank" rel="noopener">index.d.ts:285</a></p>
 
@@ -30436,7 +30436,7 @@ Tech tree node ids (mixed numeric and string keys).
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Shaker :id=sandkit.enums.Tech.shaker
+#### sandkit.enums.Tech.Shaker :id=sandkit-enums-Tech-shaker
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L290" target="_blank" rel="noopener">index.d.ts:290</a></p>
 
@@ -30452,7 +30452,7 @@ Shaker: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Conveyors :id=sandkit.enums.Tech.conveyors
+#### sandkit.enums.Tech.Conveyors :id=sandkit-enums-Tech-conveyors
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L291" target="_blank" rel="noopener">index.d.ts:291</a></p>
 
@@ -30468,7 +30468,7 @@ Conveyors: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Guns1 :id=sandkit.enums.Tech.guns1
+#### sandkit.enums.Tech.Guns1 :id=sandkit-enums-Tech-guns1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L292" target="_blank" rel="noopener">index.d.ts:292</a></p>
 
@@ -30484,7 +30484,7 @@ Guns1: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Filters1 :id=sandkit.enums.Tech.filters1
+#### sandkit.enums.Tech.Filters1 :id=sandkit-enums-Tech-filters1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L293" target="_blank" rel="noopener">index.d.ts:293</a></p>
 
@@ -30500,7 +30500,7 @@ Filters1: 4
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Flamethrower :id=sandkit.enums.Tech.flamethrower
+#### sandkit.enums.Tech.Flamethrower :id=sandkit-enums-Tech-flamethrower
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L294" target="_blank" rel="noopener">index.d.ts:294</a></p>
 
@@ -30516,7 +30516,7 @@ Flamethrower: 5
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Gun :id=sandkit.enums.Tech.gun
+#### sandkit.enums.Tech.Gun :id=sandkit-enums-Tech-gun
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L295" target="_blank" rel="noopener">index.d.ts:295</a></p>
 
@@ -30532,7 +30532,7 @@ Gun: 6
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.KineticPress :id=sandkit.enums.Tech.kineticpress
+#### sandkit.enums.Tech.KineticPress :id=sandkit-enums-Tech-kineticpress
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L296" target="_blank" rel="noopener">index.d.ts:296</a></p>
 
@@ -30548,7 +30548,7 @@ KineticPress: 7
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Guns2 :id=sandkit.enums.Tech.guns2
+#### sandkit.enums.Tech.Guns2 :id=sandkit-enums-Tech-guns2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L297" target="_blank" rel="noopener">index.d.ts:297</a></p>
 
@@ -30564,7 +30564,7 @@ Guns2: 8
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Drones1 :id=sandkit.enums.Tech.drones1
+#### sandkit.enums.Tech.Drones1 :id=sandkit-enums-Tech-drones1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L298" target="_blank" rel="noopener">index.d.ts:298</a></p>
 
@@ -30580,7 +30580,7 @@ Drones1: 9
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Upgrading2 :id=sandkit.enums.Tech.upgrading2
+#### sandkit.enums.Tech.Upgrading2 :id=sandkit-enums-Tech-upgrading2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L299" target="_blank" rel="noopener">index.d.ts:299</a></p>
 
@@ -30596,7 +30596,7 @@ Upgrading2: 10
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Filters2 :id=sandkit.enums.Tech.filters2
+#### sandkit.enums.Tech.Filters2 :id=sandkit-enums-Tech-filters2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L300" target="_blank" rel="noopener">index.d.ts:300</a></p>
 
@@ -30612,7 +30612,7 @@ Filters2: 11
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Upgrading3 :id=sandkit.enums.Tech.upgrading3
+#### sandkit.enums.Tech.Upgrading3 :id=sandkit-enums-Tech-upgrading3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L301" target="_blank" rel="noopener">index.d.ts:301</a></p>
 
@@ -30628,7 +30628,7 @@ Upgrading3: 12
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Upgrading4 :id=sandkit.enums.Tech.upgrading4
+#### sandkit.enums.Tech.Upgrading4 :id=sandkit-enums-Tech-upgrading4
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L302" target="_blank" rel="noopener">index.d.ts:302</a></p>
 
@@ -30644,7 +30644,7 @@ Upgrading4: 13
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Upgrading5 :id=sandkit.enums.Tech.upgrading5
+#### sandkit.enums.Tech.Upgrading5 :id=sandkit-enums-Tech-upgrading5
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L303" target="_blank" rel="noopener">index.d.ts:303</a></p>
 
@@ -30660,7 +30660,7 @@ Upgrading5: 14
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Upgrading6 :id=sandkit.enums.Tech.upgrading6
+#### sandkit.enums.Tech.Upgrading6 :id=sandkit-enums-Tech-upgrading6
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L304" target="_blank" rel="noopener">index.d.ts:304</a></p>
 
@@ -30676,7 +30676,7 @@ Upgrading6: 15
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Upgrading7 :id=sandkit.enums.Tech.upgrading7
+#### sandkit.enums.Tech.Upgrading7 :id=sandkit-enums-Tech-upgrading7
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L305" target="_blank" rel="noopener">index.d.ts:305</a></p>
 
@@ -30692,7 +30692,7 @@ Upgrading7: 16
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Upgrading8 :id=sandkit.enums.Tech.upgrading8
+#### sandkit.enums.Tech.Upgrading8 :id=sandkit-enums-Tech-upgrading8
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L306" target="_blank" rel="noopener">index.d.ts:306</a></p>
 
@@ -30708,7 +30708,7 @@ Upgrading8: 17
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Upgrading9 :id=sandkit.enums.Tech.upgrading9
+#### sandkit.enums.Tech.Upgrading9 :id=sandkit-enums-Tech-upgrading9
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L307" target="_blank" rel="noopener">index.d.ts:307</a></p>
 
@@ -30724,7 +30724,7 @@ Upgrading9: 18
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Upgrading10 :id=sandkit.enums.Tech.upgrading10
+#### sandkit.enums.Tech.Upgrading10 :id=sandkit-enums-Tech-upgrading10
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L308" target="_blank" rel="noopener">index.d.ts:308</a></p>
 
@@ -30740,7 +30740,7 @@ Upgrading10: 19
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.PlanterBox :id=sandkit.enums.Tech.planterbox
+#### sandkit.enums.Tech.PlanterBox :id=sandkit-enums-Tech-planterbox
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L309" target="_blank" rel="noopener">index.d.ts:309</a></p>
 
@@ -30756,7 +30756,7 @@ PlanterBox: 20
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Thermo :id=sandkit.enums.Tech.thermo
+#### sandkit.enums.Tech.Thermo :id=sandkit-enums-Tech-thermo
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L310" target="_blank" rel="noopener">index.d.ts:310</a></p>
 
@@ -30772,7 +30772,7 @@ Thermo: 21
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Rocket :id=sandkit.enums.Tech.rocket
+#### sandkit.enums.Tech.Rocket :id=sandkit-enums-Tech-rocket
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L311" target="_blank" rel="noopener">index.d.ts:311</a></p>
 
@@ -30788,7 +30788,7 @@ Rocket: 22
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Pipes :id=sandkit.enums.Tech.pipes
+#### sandkit.enums.Tech.Pipes :id=sandkit-enums-Tech-pipes
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L312" target="_blank" rel="noopener">index.d.ts:312</a></p>
 
@@ -30804,7 +30804,7 @@ Pipes: 23
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.StaticLights :id=sandkit.enums.Tech.staticlights
+#### sandkit.enums.Tech.StaticLights :id=sandkit-enums-Tech-staticlights
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L313" target="_blank" rel="noopener">index.d.ts:313</a></p>
 
@@ -30820,7 +30820,7 @@ StaticLights: 24
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Drones2 :id=sandkit.enums.Tech.drones2
+#### sandkit.enums.Tech.Drones2 :id=sandkit-enums-Tech-drones2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L314" target="_blank" rel="noopener">index.d.ts:314</a></p>
 
@@ -30836,7 +30836,7 @@ Drones2: 25
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Smelter :id=sandkit.enums.Tech.smelter
+#### sandkit.enums.Tech.Smelter :id=sandkit-enums-Tech-smelter
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L315" target="_blank" rel="noopener">index.d.ts:315</a></p>
 
@@ -30852,7 +30852,7 @@ Smelter: 26
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Tools4 :id=sandkit.enums.Tech.tools4
+#### sandkit.enums.Tech.Tools4 :id=sandkit-enums-Tech-tools4
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L316" target="_blank" rel="noopener">index.d.ts:316</a></p>
 
@@ -30868,7 +30868,7 @@ Tools4: 27
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Guns3 :id=sandkit.enums.Tech.guns3
+#### sandkit.enums.Tech.Guns3 :id=sandkit-enums-Tech-guns3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L317" target="_blank" rel="noopener">index.d.ts:317</a></p>
 
@@ -30884,7 +30884,7 @@ Guns3: 28
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Pipes2 :id=sandkit.enums.Tech.pipes2
+#### sandkit.enums.Tech.Pipes2 :id=sandkit-enums-Tech-pipes2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L318" target="_blank" rel="noopener">index.d.ts:318</a></p>
 
@@ -30900,7 +30900,7 @@ Pipes2: 29
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.ConveyorsMk2 :id=sandkit.enums.Tech.conveyorsmk2
+#### sandkit.enums.Tech.ConveyorsMk2 :id=sandkit-enums-Tech-conveyorsmk2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L319" target="_blank" rel="noopener">index.d.ts:319</a></p>
 
@@ -30916,7 +30916,7 @@ ConveyorsMk2: 30
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Lights2 :id=sandkit.enums.Tech.lights2
+#### sandkit.enums.Tech.Lights2 :id=sandkit-enums-Tech-lights2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L320" target="_blank" rel="noopener">index.d.ts:320</a></p>
 
@@ -30932,7 +30932,7 @@ Lights2: 31
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Refining6 :id=sandkit.enums.Tech.refining6
+#### sandkit.enums.Tech.Refining6 :id=sandkit-enums-Tech-refining6
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L321" target="_blank" rel="noopener">index.d.ts:321</a></p>
 
@@ -30948,7 +30948,7 @@ Refining6: 32
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Refining7 :id=sandkit.enums.Tech.refining7
+#### sandkit.enums.Tech.Refining7 :id=sandkit-enums-Tech-refining7
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L322" target="_blank" rel="noopener">index.d.ts:322</a></p>
 
@@ -30964,7 +30964,7 @@ Refining7: 33
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Guns4 :id=sandkit.enums.Tech.guns4
+#### sandkit.enums.Tech.Guns4 :id=sandkit-enums-Tech-guns4
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L323" target="_blank" rel="noopener">index.d.ts:323</a></p>
 
@@ -30980,7 +30980,7 @@ Guns4: 34
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Guns5 :id=sandkit.enums.Tech.guns5
+#### sandkit.enums.Tech.Guns5 :id=sandkit-enums-Tech-guns5
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L324" target="_blank" rel="noopener">index.d.ts:324</a></p>
 
@@ -30996,7 +30996,7 @@ Guns5: 35
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Tools5 :id=sandkit.enums.Tech.tools5
+#### sandkit.enums.Tech.Tools5 :id=sandkit-enums-Tech-tools5
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L325" target="_blank" rel="noopener">index.d.ts:325</a></p>
 
@@ -31012,7 +31012,7 @@ Tools5: 36
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Tools6 :id=sandkit.enums.Tech.tools6
+#### sandkit.enums.Tech.Tools6 :id=sandkit-enums-Tech-tools6
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L326" target="_blank" rel="noopener">index.d.ts:326</a></p>
 
@@ -31028,7 +31028,7 @@ Tools6: 37
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Filters3 :id=sandkit.enums.Tech.filters3
+#### sandkit.enums.Tech.Filters3 :id=sandkit-enums-Tech-filters3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L327" target="_blank" rel="noopener">index.d.ts:327</a></p>
 
@@ -31044,7 +31044,7 @@ Filters3: 38
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Filters4 :id=sandkit.enums.Tech.filters4
+#### sandkit.enums.Tech.Filters4 :id=sandkit-enums-Tech-filters4
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L328" target="_blank" rel="noopener">index.d.ts:328</a></p>
 
@@ -31060,7 +31060,7 @@ Filters4: 39
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Pipes3 :id=sandkit.enums.Tech.pipes3
+#### sandkit.enums.Tech.Pipes3 :id=sandkit-enums-Tech-pipes3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L329" target="_blank" rel="noopener">index.d.ts:329</a></p>
 
@@ -31076,7 +31076,7 @@ Pipes3: 40
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Pipes4 :id=sandkit.enums.Tech.pipes4
+#### sandkit.enums.Tech.Pipes4 :id=sandkit-enums-Tech-pipes4
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L330" target="_blank" rel="noopener">index.d.ts:330</a></p>
 
@@ -31092,7 +31092,7 @@ Pipes4: 41
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Logistics3 :id=sandkit.enums.Tech.logistics3
+#### sandkit.enums.Tech.Logistics3 :id=sandkit-enums-Tech-logistics3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L331" target="_blank" rel="noopener">index.d.ts:331</a></p>
 
@@ -31108,7 +31108,7 @@ Logistics3: 42
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Logistics4 :id=sandkit.enums.Tech.logistics4
+#### sandkit.enums.Tech.Logistics4 :id=sandkit-enums-Tech-logistics4
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L332" target="_blank" rel="noopener">index.d.ts:332</a></p>
 
@@ -31124,7 +31124,7 @@ Logistics4: 43
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Lights3 :id=sandkit.enums.Tech.lights3
+#### sandkit.enums.Tech.Lights3 :id=sandkit-enums-Tech-lights3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L333" target="_blank" rel="noopener">index.d.ts:333</a></p>
 
@@ -31140,7 +31140,7 @@ Lights3: 44
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Lights4 :id=sandkit.enums.Tech.lights4
+#### sandkit.enums.Tech.Lights4 :id=sandkit-enums-Tech-lights4
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L334" target="_blank" rel="noopener">index.d.ts:334</a></p>
 
@@ -31156,7 +31156,7 @@ Lights4: 45
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Drones3 :id=sandkit.enums.Tech.drones3
+#### sandkit.enums.Tech.Drones3 :id=sandkit-enums-Tech-drones3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L335" target="_blank" rel="noopener">index.d.ts:335</a></p>
 
@@ -31172,7 +31172,7 @@ Drones3: 46
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Drones4 :id=sandkit.enums.Tech.drones4
+#### sandkit.enums.Tech.Drones4 :id=sandkit-enums-Tech-drones4
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L336" target="_blank" rel="noopener">index.d.ts:336</a></p>
 
@@ -31188,7 +31188,7 @@ Drones4: 47
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Alien :id=sandkit.enums.Tech.alien
+#### sandkit.enums.Tech.Alien :id=sandkit-enums-Tech-alien
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L337" target="_blank" rel="noopener">index.d.ts:337</a></p>
 
@@ -31204,7 +31204,7 @@ Alien: 48
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Electricity :id=sandkit.enums.Tech.electricity
+#### sandkit.enums.Tech.Electricity :id=sandkit-enums-Tech-electricity
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L338" target="_blank" rel="noopener">index.d.ts:338</a></p>
 
@@ -31220,7 +31220,7 @@ Electricity: 49
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.AlienCore :id=sandkit.enums.Tech.aliencore
+#### sandkit.enums.Tech.AlienCore :id=sandkit-enums-Tech-aliencore
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L339" target="_blank" rel="noopener">index.d.ts:339</a></p>
 
@@ -31236,7 +31236,7 @@ AlienCore: 50
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Emanators1 :id=sandkit.enums.Tech.emanators1
+#### sandkit.enums.Tech.Emanators1 :id=sandkit-enums-Tech-emanators1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L340" target="_blank" rel="noopener">index.d.ts:340</a></p>
 
@@ -31252,7 +31252,7 @@ Emanators1: 51
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.AlienPlasmaConduits :id=sandkit.enums.Tech.alienplasmaconduits
+#### sandkit.enums.Tech.AlienPlasmaConduits :id=sandkit-enums-Tech-alienplasmaconduits
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L341" target="_blank" rel="noopener">index.d.ts:341</a></p>
 
@@ -31268,7 +31268,7 @@ AlienPlasmaConduits: 52
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.AlienQuantumMatrix :id=sandkit.enums.Tech.alienquantummatrix
+#### sandkit.enums.Tech.AlienQuantumMatrix :id=sandkit-enums-Tech-alienquantummatrix
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L342" target="_blank" rel="noopener">index.d.ts:342</a></p>
 
@@ -31284,7 +31284,7 @@ AlienQuantumMatrix: 53
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.AlienPlasmaCore :id=sandkit.enums.Tech.alienplasmacore
+#### sandkit.enums.Tech.AlienPlasmaCore :id=sandkit-enums-Tech-alienplasmacore
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L343" target="_blank" rel="noopener">index.d.ts:343</a></p>
 
@@ -31300,7 +31300,7 @@ AlienPlasmaCore: 54
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.AlienVoidEngine :id=sandkit.enums.Tech.alienvoidengine
+#### sandkit.enums.Tech.AlienVoidEngine :id=sandkit-enums-Tech-alienvoidengine
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L344" target="_blank" rel="noopener">index.d.ts:344</a></p>
 
@@ -31316,7 +31316,7 @@ AlienVoidEngine: 55
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.FlareGun :id=sandkit.enums.Tech.flaregun
+#### sandkit.enums.Tech.FlareGun :id=sandkit-enums-Tech-flaregun
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L345" target="_blank" rel="noopener">index.d.ts:345</a></p>
 
@@ -31332,7 +31332,7 @@ FlareGun: 56
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Sweeper :id=sandkit.enums.Tech.sweeper
+#### sandkit.enums.Tech.Sweeper :id=sandkit-enums-Tech-sweeper
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L346" target="_blank" rel="noopener">index.d.ts:346</a></p>
 
@@ -31348,7 +31348,7 @@ Sweeper: 57
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Utilities3 :id=sandkit.enums.Tech.utilities3
+#### sandkit.enums.Tech.Utilities3 :id=sandkit-enums-Tech-utilities3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L347" target="_blank" rel="noopener">index.d.ts:347</a></p>
 
@@ -31364,7 +31364,7 @@ Utilities3: 58
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Cryoblaster :id=sandkit.enums.Tech.cryoblaster
+#### sandkit.enums.Tech.Cryoblaster :id=sandkit-enums-Tech-cryoblaster
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L348" target="_blank" rel="noopener">index.d.ts:348</a></p>
 
@@ -31380,7 +31380,7 @@ Cryoblaster: 59
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Vacuum :id=sandkit.enums.Tech.vacuum
+#### sandkit.enums.Tech.Vacuum :id=sandkit-enums-Tech-vacuum
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L349" target="_blank" rel="noopener">index.d.ts:349</a></p>
 
@@ -31396,7 +31396,7 @@ Vacuum: 60
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Utilities6 :id=sandkit.enums.Tech.utilities6
+#### sandkit.enums.Tech.Utilities6 :id=sandkit-enums-Tech-utilities6
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L350" target="_blank" rel="noopener">index.d.ts:350</a></p>
 
@@ -31412,7 +31412,7 @@ Utilities6: 61
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Utilities7 :id=sandkit.enums.Tech.utilities7
+#### sandkit.enums.Tech.Utilities7 :id=sandkit-enums-Tech-utilities7
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L351" target="_blank" rel="noopener">index.d.ts:351</a></p>
 
@@ -31428,7 +31428,7 @@ Utilities7: 62
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Filters :id=sandkit.enums.Tech.filters
+#### sandkit.enums.Tech.Filters :id=sandkit-enums-Tech-filters
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L352" target="_blank" rel="noopener">index.d.ts:352</a></p>
 
@@ -31444,7 +31444,7 @@ Filters: 63
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.AdvancedFilters :id=sandkit.enums.Tech.advancedfilters
+#### sandkit.enums.Tech.AdvancedFilters :id=sandkit-enums-Tech-advancedfilters
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L353" target="_blank" rel="noopener">index.d.ts:353</a></p>
 
@@ -31460,7 +31460,7 @@ AdvancedFilters: 64
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Infrastructure3 :id=sandkit.enums.Tech.infrastructure3
+#### sandkit.enums.Tech.Infrastructure3 :id=sandkit-enums-Tech-infrastructure3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L354" target="_blank" rel="noopener">index.d.ts:354</a></p>
 
@@ -31476,7 +31476,7 @@ Infrastructure3: 65
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Decorations1 :id=sandkit.enums.Tech.decorations1
+#### sandkit.enums.Tech.Decorations1 :id=sandkit-enums-Tech-decorations1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L355" target="_blank" rel="noopener">index.d.ts:355</a></p>
 
@@ -31492,7 +31492,7 @@ Decorations1: 66
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Decorations2 :id=sandkit.enums.Tech.decorations2
+#### sandkit.enums.Tech.Decorations2 :id=sandkit-enums-Tech-decorations2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L356" target="_blank" rel="noopener">index.d.ts:356</a></p>
 
@@ -31508,7 +31508,7 @@ Decorations2: 67
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Decorations3 :id=sandkit.enums.Tech.decorations3
+#### sandkit.enums.Tech.Decorations3 :id=sandkit-enums-Tech-decorations3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L357" target="_blank" rel="noopener">index.d.ts:357</a></p>
 
@@ -31524,7 +31524,7 @@ Decorations3: 68
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Blocks1 :id=sandkit.enums.Tech.blocks1
+#### sandkit.enums.Tech.Blocks1 :id=sandkit-enums-Tech-blocks1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L358" target="_blank" rel="noopener">index.d.ts:358</a></p>
 
@@ -31540,7 +31540,7 @@ Blocks1: 69
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Drill :id=sandkit.enums.Tech.drill
+#### sandkit.enums.Tech.Drill :id=sandkit-enums-Tech-drill
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L359" target="_blank" rel="noopener">index.d.ts:359</a></p>
 
@@ -31556,7 +31556,7 @@ Drill: 70
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.SteamTurbine :id=sandkit.enums.Tech.steamturbine
+#### sandkit.enums.Tech.SteamTurbine :id=sandkit-enums-Tech-steamturbine
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L360" target="_blank" rel="noopener">index.d.ts:360</a></p>
 
@@ -31572,7 +31572,7 @@ SteamTurbine: 71
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Electricity3 :id=sandkit.enums.Tech.electricity3
+#### sandkit.enums.Tech.Electricity3 :id=sandkit-enums-Tech-electricity3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L361" target="_blank" rel="noopener">index.d.ts:361</a></p>
 
@@ -31588,7 +31588,7 @@ Electricity3: 72
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Electricity4 :id=sandkit.enums.Tech.electricity4
+#### sandkit.enums.Tech.Electricity4 :id=sandkit-enums-Tech-electricity4
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L362" target="_blank" rel="noopener">index.d.ts:362</a></p>
 
@@ -31604,7 +31604,7 @@ Electricity4: 73
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Logic1 :id=sandkit.enums.Tech.logic1
+#### sandkit.enums.Tech.Logic1 :id=sandkit-enums-Tech-logic1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L363" target="_blank" rel="noopener">index.d.ts:363</a></p>
 
@@ -31620,7 +31620,7 @@ Logic1: 74
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Logic2 :id=sandkit.enums.Tech.logic2
+#### sandkit.enums.Tech.Logic2 :id=sandkit-enums-Tech-logic2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L364" target="_blank" rel="noopener">index.d.ts:364</a></p>
 
@@ -31636,7 +31636,7 @@ Logic2: 75
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Logic3 :id=sandkit.enums.Tech.logic3
+#### sandkit.enums.Tech.Logic3 :id=sandkit-enums-Tech-logic3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L365" target="_blank" rel="noopener">index.d.ts:365</a></p>
 
@@ -31652,7 +31652,7 @@ Logic3: 76
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Logic4 :id=sandkit.enums.Tech.logic4
+#### sandkit.enums.Tech.Logic4 :id=sandkit-enums-Tech-logic4
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L366" target="_blank" rel="noopener">index.d.ts:366</a></p>
 
@@ -31668,7 +31668,7 @@ Logic4: 77
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Various1 :id=sandkit.enums.Tech.various1
+#### sandkit.enums.Tech.Various1 :id=sandkit-enums-Tech-various1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L367" target="_blank" rel="noopener">index.d.ts:367</a></p>
 
@@ -31684,7 +31684,7 @@ Various1: 78
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Various2 :id=sandkit.enums.Tech.various2
+#### sandkit.enums.Tech.Various2 :id=sandkit-enums-Tech-various2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L368" target="_blank" rel="noopener">index.d.ts:368</a></p>
 
@@ -31700,7 +31700,7 @@ Various2: 79
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Various3 :id=sandkit.enums.Tech.various3
+#### sandkit.enums.Tech.Various3 :id=sandkit-enums-Tech-various3
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L369" target="_blank" rel="noopener">index.d.ts:369</a></p>
 
@@ -31716,7 +31716,7 @@ Various3: 80
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Locator :id=sandkit.enums.Tech.locator
+#### sandkit.enums.Tech.Locator :id=sandkit-enums-Tech-locator
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L370" target="_blank" rel="noopener">index.d.ts:370</a></p>
 
@@ -31732,7 +31732,7 @@ Locator: 81
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.QuantumPortal :id=sandkit.enums.Tech.quantumportal
+#### sandkit.enums.Tech.QuantumPortal :id=sandkit-enums-Tech-quantumportal
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L371" target="_blank" rel="noopener">index.d.ts:371</a></p>
 
@@ -31748,7 +31748,7 @@ QuantumPortal: 82
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.VoidRift :id=sandkit.enums.Tech.voidrift
+#### sandkit.enums.Tech.VoidRift :id=sandkit-enums-Tech-voidrift
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L372" target="_blank" rel="noopener">index.d.ts:372</a></p>
 
@@ -31764,7 +31764,7 @@ VoidRift: 83
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Blink :id=sandkit.enums.Tech.blink
+#### sandkit.enums.Tech.Blink :id=sandkit-enums-Tech-blink
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L373" target="_blank" rel="noopener">index.d.ts:373</a></p>
 
@@ -31780,7 +31780,7 @@ Blink: 84
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Recall :id=sandkit.enums.Tech.recall
+#### sandkit.enums.Tech.Recall :id=sandkit-enums-Tech-recall
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L374" target="_blank" rel="noopener">index.d.ts:374</a></p>
 
@@ -31796,7 +31796,7 @@ Recall: 85
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.ImplosionGun :id=sandkit.enums.Tech.implosiongun
+#### sandkit.enums.Tech.ImplosionGun :id=sandkit-enums-Tech-implosiongun
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L375" target="_blank" rel="noopener">index.d.ts:375</a></p>
 
@@ -31812,7 +31812,7 @@ ImplosionGun: 86
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Refining8 :id=sandkit.enums.Tech.refining8
+#### sandkit.enums.Tech.Refining8 :id=sandkit-enums-Tech-refining8
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L376" target="_blank" rel="noopener">index.d.ts:376</a></p>
 
@@ -31828,7 +31828,7 @@ Refining8: 87
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Tools7 :id=sandkit.enums.Tech.tools7
+#### sandkit.enums.Tech.Tools7 :id=sandkit-enums-Tech-tools7
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L377" target="_blank" rel="noopener">index.d.ts:377</a></p>
 
@@ -31844,7 +31844,7 @@ Tools7: 88
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Diggers :id=sandkit.enums.Tech.diggers
+#### sandkit.enums.Tech.Diggers :id=sandkit-enums-Tech-diggers
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L378" target="_blank" rel="noopener">index.d.ts:378</a></p>
 
@@ -31860,7 +31860,7 @@ Diggers: 89
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Haulers :id=sandkit.enums.Tech.haulers
+#### sandkit.enums.Tech.Haulers :id=sandkit-enums-Tech-haulers
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L379" target="_blank" rel="noopener">index.d.ts:379</a></p>
 
@@ -31876,7 +31876,7 @@ Haulers: 90
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Map :id=sandkit.enums.Tech.map
+#### sandkit.enums.Tech.Map :id=sandkit-enums-Tech-map
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L380" target="_blank" rel="noopener">index.d.ts:380</a></p>
 
@@ -31892,7 +31892,7 @@ Map: 91
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.ColoringTool :id=sandkit.enums.Tech.coloringtool
+#### sandkit.enums.Tech.ColoringTool :id=sandkit-enums-Tech-coloringtool
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L381" target="_blank" rel="noopener">index.d.ts:381</a></p>
 
@@ -31908,7 +31908,7 @@ ColoringTool: 92
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.SignalGate :id=sandkit.enums.Tech.signalgate
+#### sandkit.enums.Tech.SignalGate :id=sandkit-enums-Tech-signalgate
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L382" target="_blank" rel="noopener">index.d.ts:382</a></p>
 
@@ -31924,7 +31924,7 @@ SignalGate: 93
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.GrapplingHook :id=sandkit.enums.Tech.grapplinghook
+#### sandkit.enums.Tech.GrapplingHook :id=sandkit-enums-Tech-grapplinghook
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L383" target="_blank" rel="noopener">index.d.ts:383</a></p>
 
@@ -31940,7 +31940,7 @@ GrapplingHook: 94
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.GlassFoundation :id=sandkit.enums.Tech.glassfoundation
+#### sandkit.enums.Tech.GlassFoundation :id=sandkit-enums-Tech-glassfoundation
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L384" target="_blank" rel="noopener">index.d.ts:384</a></p>
 
@@ -31956,7 +31956,7 @@ GlassFoundation: 95
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.PrecisionTools :id=sandkit.enums.Tech.precisiontools
+#### sandkit.enums.Tech.PrecisionTools :id=sandkit-enums-Tech-precisiontools
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L385" target="_blank" rel="noopener">index.d.ts:385</a></p>
 
@@ -31972,7 +31972,7 @@ PrecisionTools: 96
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.SignalDevices :id=sandkit.enums.Tech.signaldevices
+#### sandkit.enums.Tech.SignalDevices :id=sandkit-enums-Tech-signaldevices
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L386" target="_blank" rel="noopener">index.d.ts:386</a></p>
 
@@ -31988,7 +31988,7 @@ SignalDevices: 97
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.SignalControls :id=sandkit.enums.Tech.signalcontrols
+#### sandkit.enums.Tech.SignalControls :id=sandkit-enums-Tech-signalcontrols
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L387" target="_blank" rel="noopener">index.d.ts:387</a></p>
 
@@ -32004,7 +32004,7 @@ SignalControls: 98
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.LogicGates :id=sandkit.enums.Tech.logicgates
+#### sandkit.enums.Tech.LogicGates :id=sandkit-enums-Tech-logicgates
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L388" target="_blank" rel="noopener">index.d.ts:388</a></p>
 
@@ -32020,7 +32020,7 @@ LogicGates: 99
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.RetroConsole :id=sandkit.enums.Tech.retroconsole
+#### sandkit.enums.Tech.RetroConsole :id=sandkit-enums-Tech-retroconsole
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L389" target="_blank" rel="noopener">index.d.ts:389</a></p>
 
@@ -32036,7 +32036,7 @@ RetroConsole: 100
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.WallTool :id=sandkit.enums.Tech.walltool
+#### sandkit.enums.Tech.WallTool :id=sandkit-enums-Tech-walltool
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L390" target="_blank" rel="noopener">index.d.ts:390</a></p>
 
@@ -32052,7 +32052,7 @@ WallTool: 101
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Corraller :id=sandkit.enums.Tech.corraller
+#### sandkit.enums.Tech.Corraller :id=sandkit-enums-Tech-corraller
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L391" target="_blank" rel="noopener">index.d.ts:391</a></p>
 
@@ -32068,7 +32068,7 @@ Corraller: 102
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.PlainFoundation :id=sandkit.enums.Tech.plainfoundation
+#### sandkit.enums.Tech.PlainFoundation :id=sandkit-enums-Tech-plainfoundation
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L392" target="_blank" rel="noopener">index.d.ts:392</a></p>
 
@@ -32084,7 +32084,7 @@ PlainFoundation: 103
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.ClearingFrame :id=sandkit.enums.Tech.clearingframe
+#### sandkit.enums.Tech.ClearingFrame :id=sandkit-enums-Tech-clearingframe
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L393" target="_blank" rel="noopener">index.d.ts:393</a></p>
 
@@ -32100,7 +32100,7 @@ ClearingFrame: 104
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Heatmap :id=sandkit.enums.Tech.heatmap
+#### sandkit.enums.Tech.Heatmap :id=sandkit-enums-Tech-heatmap
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L394" target="_blank" rel="noopener">index.d.ts:394</a></p>
 
@@ -32116,7 +32116,7 @@ Heatmap: 105
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.MiningLaser :id=sandkit.enums.Tech.mininglaser
+#### sandkit.enums.Tech.MiningLaser :id=sandkit-enums-Tech-mininglaser
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L395" target="_blank" rel="noopener">index.d.ts:395</a></p>
 
@@ -32132,7 +32132,7 @@ MiningLaser: 106
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.GoldBattery :id=sandkit.enums.Tech.goldbattery
+#### sandkit.enums.Tech.GoldBattery :id=sandkit-enums-Tech-goldbattery
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L396" target="_blank" rel="noopener">index.d.ts:396</a></p>
 
@@ -32148,7 +32148,7 @@ GoldBattery: 107
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.Hover :id=sandkit.enums.Tech.hover
+#### sandkit.enums.Tech.Hover :id=sandkit-enums-Tech-hover
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L397" target="_blank" rel="noopener">index.d.ts:397</a></p>
 
@@ -32164,7 +32164,7 @@ Hover: 108
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.SprintBoost :id=sandkit.enums.Tech.sprintboost
+#### sandkit.enums.Tech.SprintBoost :id=sandkit-enums-Tech-sprintboost
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L398" target="_blank" rel="noopener">index.d.ts:398</a></p>
 
@@ -32180,7 +32180,7 @@ SprintBoost: 109
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.CritterFence :id=sandkit.enums.Tech.critterfence
+#### sandkit.enums.Tech.CritterFence :id=sandkit-enums-Tech-critterfence
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L399" target="_blank" rel="noopener">index.d.ts:399</a></p>
 
@@ -32196,7 +32196,7 @@ CritterFence: 110
 
 <div class="smt-member-card">
 
-#### sandkit.enums.Tech.FluxEmanator :id=sandkit.enums.Tech.fluxemanator
+#### sandkit.enums.Tech.FluxEmanator :id=sandkit-enums-Tech-fluxemanator
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L400" target="_blank" rel="noopener">index.d.ts:400</a></p>
 
@@ -32222,7 +32222,7 @@ Visibility and research state of a tech node.
 
 <div class="smt-member-card">
 
-#### sandkit.enums.TechStatus.Available :id=sandkit.enums.TechStatus.available
+#### sandkit.enums.TechStatus.Available :id=sandkit-enums-TechStatus-available
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L405" target="_blank" rel="noopener">index.d.ts:405</a></p>
 
@@ -32238,7 +32238,7 @@ Available: 0
 
 <div class="smt-member-card">
 
-#### sandkit.enums.TechStatus.Visible :id=sandkit.enums.TechStatus.visible
+#### sandkit.enums.TechStatus.Visible :id=sandkit-enums-TechStatus-visible
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L406" target="_blank" rel="noopener">index.d.ts:406</a></p>
 
@@ -32254,7 +32254,7 @@ Visible: 1
 
 <div class="smt-member-card">
 
-#### sandkit.enums.TechStatus.Researched :id=sandkit.enums.TechStatus.researched
+#### sandkit.enums.TechStatus.Researched :id=sandkit-enums-TechStatus-researched
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L407" target="_blank" rel="noopener">index.d.ts:407</a></p>
 
@@ -32270,7 +32270,7 @@ Researched: 2
 
 <div class="smt-member-card">
 
-#### sandkit.enums.TechStatus.Unknown :id=sandkit.enums.TechStatus.unknown
+#### sandkit.enums.TechStatus.Unknown :id=sandkit-enums-TechStatus-unknown
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L408" target="_blank" rel="noopener">index.d.ts:408</a></p>
 
@@ -32286,7 +32286,7 @@ Unknown: 3
 
 <div class="smt-member-card">
 
-#### sandkit.enums.TechStatus.Hidden :id=sandkit.enums.TechStatus.hidden
+#### sandkit.enums.TechStatus.Hidden :id=sandkit-enums-TechStatus-hidden
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L409" target="_blank" rel="noopener">index.d.ts:409</a></p>
 
@@ -32314,7 +32314,7 @@ Use [PickupType](api/sandkit.enums.PickupType.md) instead.
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.enums.WorldItemType.Artifact~~ :id=sandkit.enums.WorldItemType.artifact
+#### ~~sandkit.enums.WorldItemType.Artifact~~ :id=sandkit-enums-WorldItemType-artifact
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L424" target="_blank" rel="noopener">index.d.ts:424</a></p>
 
@@ -32330,7 +32330,7 @@ Artifact: 1
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.enums.WorldItemType.GlyphKey~~ :id=sandkit.enums.WorldItemType.glyphkey
+#### ~~sandkit.enums.WorldItemType.GlyphKey~~ :id=sandkit-enums-WorldItemType-glyphkey
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L425" target="_blank" rel="noopener">index.d.ts:425</a></p>
 
@@ -32346,7 +32346,7 @@ GlyphKey: 2
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.enums.WorldItemType.Stratacore~~ :id=sandkit.enums.WorldItemType.stratacore
+#### ~~sandkit.enums.WorldItemType.Stratacore~~ :id=sandkit-enums-WorldItemType-stratacore
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L426" target="_blank" rel="noopener">index.d.ts:426</a></p>
 
@@ -32362,7 +32362,7 @@ Stratacore: 3
 
 <div class="smt-member-card" data-deprecated="true">
 
-#### ~~sandkit.enums.WorldItemType.Orb~~ :id=sandkit.enums.WorldItemType.orb
+#### ~~sandkit.enums.WorldItemType.Orb~~ :id=sandkit-enums-WorldItemType-orb
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/enums/index.d.ts#L427" target="_blank" rel="noopener">index.d.ts:427</a></p>
 
@@ -32382,7 +32382,7 @@ Orb: 4
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
-#### sandkit.react :id=sandkit.react.sandkitreact
+#### sandkit.react :id=sandkit-react-sandkitreact
 
 ```ts
 SandkitReact = object
@@ -32750,7 +32750,7 @@ https://sandustry-modding.github.io/SandustryTypes/schemas/workshop.json
 
 <div class="smt-member-card">
 
-#### configs.ConfigSchemaNumber :id=configs.configschemanumber
+#### configs.ConfigSchemaNumber :id=configs-configschemanumber
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L134" target="_blank" rel="noopener">modinfo.d.ts:134</a></p>
 
@@ -32762,7 +32762,7 @@ https://sandustry-modding.github.io/SandustryTypes/schemas/workshop.json
 | max? | <code>number</code> | Inclusive upper bound for the setting. |
 | step? | <code>number</code> | UI step size for the number control. |
 | label? | <code>string</code> | Plain-text label shown in the settings UI. |
-| labelKey? | <code>string</code> | i18n key for the settings label (preferred over [label](?id=configs.label) when both exist). |
+| labelKey? | <code>string</code> | i18n key for the settings label (preferred over [label](?id=configs-label) when both exist). |
 | description? | <code>string</code> | Plain-text help text for the setting. |
 | descriptionKey? | <code>string</code> | i18n key for the setting help text. |
 
@@ -32794,7 +32794,7 @@ Number setting in `modinfo.json` `configSchema`.
 
 <div class="smt-member-card">
 
-#### configs.ConfigSchemaBoolean :id=configs.configschemaboolean
+#### configs.ConfigSchemaBoolean :id=configs-configschemaboolean
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L174" target="_blank" rel="noopener">modinfo.d.ts:174</a></p>
 
@@ -32829,7 +32829,7 @@ Boolean setting in `modinfo.json` `configSchema`.
 
 <div class="smt-member-card">
 
-#### configs.ConfigSchemaChoiceOption :id=configs.configschemachoiceoption
+#### configs.ConfigSchemaChoiceOption :id=configs-configschemachoiceoption
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L202" target="_blank" rel="noopener">modinfo.d.ts:202</a></p>
 
@@ -32849,20 +32849,20 @@ Boolean setting in `modinfo.json` `configSchema`.
 
 </div>
 
-One option inside a [ConfigSchemaChoice](?id=configs.configschemachoice).
+One option inside a [ConfigSchemaChoice](?id=configs-configschemachoice).
 
 </div>
 
 <div class="smt-member-card">
 
-#### configs.ConfigSchemaChoice :id=configs.configschemachoice
+#### configs.ConfigSchemaChoice :id=configs-configschemachoice
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L218" target="_blank" rel="noopener">modinfo.d.ts:218</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
 | type | <code>&quot;choice&quot;</code> | Discriminator. Must be `"choice"`. |
-| default | <code>string</code> | Default option [ConfigSchemaChoiceOption.value](?id=configs.value). |
+| default | <code>string</code> | Default option [ConfigSchemaChoiceOption.value](?id=configs-value). |
 | label? | <code>string</code> | Plain-text label shown in the settings UI. |
 | labelKey? | <code>string</code> | i18n key for the settings label. |
 | description? | <code>string</code> | Plain-text help text for the setting. |
@@ -32893,7 +32893,7 @@ Choice setting in `modinfo.json` `configSchema`.
 
 <div class="smt-member-card">
 
-#### configs.TextureOverride :id=configs.textureoverride
+#### configs.TextureOverride :id=configs-textureoverride
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L261" target="_blank" rel="noopener">modinfo.d.ts:261</a></p>
 
@@ -32922,7 +32922,7 @@ Animated (or static) texture replacement for a vanilla asset id.
 
 <div class="smt-member-card">
 
-#### configs.ModProvide :id=configs.modprovide
+#### configs.ModProvide :id=configs-modprovide
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L284" target="_blank" rel="noopener">modinfo.d.ts:284</a></p>
 
@@ -32948,7 +32948,7 @@ Optional content pack exposed by this mod for other mods or the game to consume.
 
 <div class="smt-member-card">
 
-#### configs.ModMapBlueprints :id=configs.modmapblueprints
+#### configs.ModMapBlueprints :id=configs-modmapblueprints
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L305" target="_blank" rel="noopener">modinfo.d.ts:305</a></p>
 
@@ -32991,7 +32991,7 @@ Paths are relative to the mod root.
 
 <div class="smt-member-card">
 
-#### configs.ModMapPoint :id=configs.modmappoint
+#### configs.ModMapPoint :id=configs-modmappoint
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L344" target="_blank" rel="noopener">modinfo.d.ts:344</a></p>
 
@@ -33014,7 +33014,7 @@ World-pixel spawn or unstuck point.
 
 <div class="smt-member-card">
 
-#### configs.ModMapTopBounds :id=configs.modmaptopbounds
+#### configs.ModMapTopBounds :id=configs-modmaptopbounds
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L359" target="_blank" rel="noopener">modinfo.d.ts:359</a></p>
 
@@ -33037,7 +33037,7 @@ Vertical camera / travel bounds for the custom map.
 
 <div class="smt-member-card">
 
-#### configs.ModMapDepthLight :id=configs.modmapdepthlight
+#### configs.ModMapDepthLight :id=configs-modmapdepthlight
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L374" target="_blank" rel="noopener">modinfo.d.ts:374</a></p>
 
@@ -33066,7 +33066,7 @@ Depth-based light sizing for the custom map.
 
 <div class="smt-member-card">
 
-#### configs.ModMapParallax :id=configs.modmapparallax
+#### configs.ModMapParallax :id=configs-modmapparallax
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L397" target="_blank" rel="noopener">modinfo.d.ts:397</a></p>
 
@@ -33089,7 +33089,7 @@ Parallax background tuning for the custom map.
 
 <div class="smt-member-card">
 
-#### configs.ModMapColorMappingLayers :id=configs.modmapcolormappinglayers
+#### configs.ModMapColorMappingLayers :id=configs-modmapcolormappinglayers
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L412" target="_blank" rel="noopener">modinfo.d.ts:412</a></p>
 
@@ -33112,7 +33112,7 @@ Color-map cell that paints both background and foreground terrain.
 
 <div class="smt-member-card">
 
-#### configs.ModMapDefinition :id=configs.modmapdefinition
+#### configs.ModMapDefinition :id=configs-modmapdefinition
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L433" target="_blank" rel="noopener">modinfo.d.ts:433</a></p>
 
@@ -33159,7 +33159,7 @@ Custom map pack block in `modinfo.json`.
 
 <div class="smt-member-card">
 
-#### configs.ModGameVersion :id=configs.modgameversion
+#### configs.ModGameVersion :id=configs-modgameversion
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L480" target="_blank" rel="noopener">modinfo.d.ts:480</a></p>
 
@@ -33182,7 +33182,7 @@ Compatible game version range for the mod.
 
 <div class="smt-member-card">
 
-#### configs.ModInfo :id=configs.modinfo
+#### configs.ModInfo :id=configs-modinfo
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L503" target="_blank" rel="noopener">modinfo.d.ts:503</a></p>
 
@@ -33256,24 +33256,24 @@ Compatible game version range for the mod.
 Sandkit mod manifest (`modinfo.json`).
 
 Required for every mod folder. Minimal script mods need
-[manifestVersion](?id=configs.manifestversion), [id](?id=configs.id-1), [name](?id=configs.name), [version](?id=configs.version),
-[apiVersion](?id=configs.apiversion), and [entry](?id=configs.entry).
+[manifestVersion](?id=configs-manifestversion), [id](?id=configs-id-1), [name](?id=configs-name), [version](?id=configs-version),
+[apiVersion](?id=configs-apiversion), and [entry](?id=configs-entry).
 
-At least one capability is required: [entry](?id=configs.entry), [workerEntry](?id=configs.workerentry),
-[configOverrides](?id=configs.configoverrides), [textureOverrides](?id=configs.textureoverrides-1), [provides](?id=configs.provides), or
-[map](?id=configs.map). `configSchema` alone does not count.
+At least one capability is required: [entry](?id=configs-entry), [workerEntry](?id=configs-workerentry),
+[configOverrides](?id=configs-configoverrides), [textureOverrides](?id=configs-textureoverrides-1), [provides](?id=configs-provides), or
+[map](?id=configs-map). `configSchema` alone does not count.
 
 </div>
 
 <div class="smt-member-card">
 
-#### configs.BundlePatchRegex :id=configs.bundlepatchregex
+#### configs.BundlePatchRegex :id=configs-bundlepatchregex
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L48" target="_blank" rel="noopener">patches.d.ts:48</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
-| pattern | <code>string</code> | JavaScript regex pattern source (without surrounding `/` delimiters). Capture groups may be referenced from [BundlePatch.code](?id=configs.code) as `$1`, `$2`, … |
+| pattern | <code>string</code> | JavaScript regex pattern source (without surrounding `/` delimiters). Capture groups may be referenced from [BundlePatch.code](?id=configs-code) as `$1`, `$2`, … |
 | flags? | <code>string</code> | Optional regex flags (for example `"g"` or `"m"`). |
 
 <div class="smt-member-anchors">
@@ -33284,30 +33284,30 @@ At least one capability is required: [entry](?id=configs.entry), [workerEntry](?
 
 </div>
 
-Regex finder when the target is not a plain [BundlePatch.find](?id=configs.find) string.
+Regex finder when the target is not a plain [BundlePatch.find](?id=configs-find) string.
 
 </div>
 
 <div class="smt-member-card">
 
-#### configs.BundlePatch :id=configs.bundlepatch
+#### configs.BundlePatch :id=configs-bundlepatch
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L100" target="_blank" rel="noopener">patches.d.ts:100</a></p>
 
 | Property | Type | Description |
 | --- | --- | --- |
 | file | <code>PatchTargetFile</code> | Compiled bundle to modify. |
-| find? | <code>string</code> | Exact source substring to locate in the bundle. Mutually exclusive with [regex](?id=configs.regex) in typical patches. |
-| code? | <code>string</code> | Replacement or inserted source text. Official examples use `code`; some loaders also accept [replace](?id=configs.replace). |
-| replace? | <code>string</code> | Alias of [code](?id=configs.code) used by some patch loaders and workshop mods. |
+| find? | <code>string</code> | Exact source substring to locate in the bundle. Mutually exclusive with [regex](?id=configs-regex) in typical patches. |
+| code? | <code>string</code> | Replacement or inserted source text. Official examples use `code`; some loaders also accept [replace](?id=configs-replace). |
+| replace? | <code>string</code> | Alias of [code](?id=configs-code) used by some patch loaders and workshop mods. |
 | operation? | <code>PatchOperation</code> | How to apply the match. Defaults to replace-style behaviour when omitted in common workshop patches. |
 | expectedMatches? | <code>number &#124; &quot;any&quot;</code> | How many times `find` / `regex` must match. Use a number (often `1`) so the load fails on miss or over-match. Some loaders accept `"any"`. |
-| regex? | <code>BundlePatchRegex</code> | Regex-based locator instead of a literal [find](?id=configs.find) string. |
-| before? | <code>string</code> | Text inserted before the match when [operation](?id=configs.operation) is `"wrap"`. |
-| after? | <code>string</code> | Text inserted after the match when [operation](?id=configs.operation) is `"wrap"`. |
+| regex? | <code>BundlePatchRegex</code> | Regex-based locator instead of a literal [find](?id=configs-find) string. |
+| before? | <code>string</code> | Text inserted before the match when [operation](?id=configs-operation) is `"wrap"`. |
+| after? | <code>string</code> | Text inserted after the match when [operation](?id=configs-operation) is `"wrap"`. |
 | id? | <code>string</code> | Optional stable id for logging and tooling. |
 | atomicGroup? | <code>string</code> | Group id shared by patches that must all succeed or all fail together. Use the same string on paired main (`js/bundle.js`) and worker (`js/simulation-worker.js`) patches. |
-| occurrence? | <code>number &#124; &quot;all&quot;</code> | Which match to rewrite when `find` / `regex` hits more than once. `"all"` (default when omitted in the loader) or a 1-based index. Must not exceed [expectedMatches](?id=configs.expectedmatches) when both are numbers. |
+| occurrence? | <code>number &#124; &quot;all&quot;</code> | Which match to rewrite when `find` / `regex` hits more than once. `"all"` (default when omitted in the loader) or a 1-based index. Must not exceed [expectedMatches](?id=configs-expectedmatches) when both are numbers. |
 | description? | <code>string</code> | Human-readable note for maintainers. Not required by the official schema. |
 
 <div class="smt-member-anchors">
@@ -33344,7 +33344,7 @@ One entry in `patches.json`.
 
 The file is an array of these objects. Prefer `expectedMatches` so a missed
 or duplicated match fails loudly. When several patches must succeed together
-(for example main + worker), set the same [atomicGroup](?id=configs.atomicgroup) on each.
+(for example main + worker), set the same [atomicGroup](?id=configs-atomicgroup) on each.
 
 ##### Example
 
@@ -33383,7 +33383,7 @@ or duplicated match fails loudly. When several patches must succeed together
 
 <div class="smt-member-card">
 
-#### configs.BundlePatchesDocument :id=configs.bundlepatchesdocument
+#### configs.BundlePatchesDocument :id=configs-bundlepatchesdocument
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L181" target="_blank" rel="noopener">patches.d.ts:181</a></p>
 
@@ -33402,14 +33402,14 @@ or duplicated match fails loudly. When several patches must succeed together
 
 Editor-friendly `patches.json` wrapper with an optional `$schema` URL.
 
-The game loader expects a bare [BundlePatch](?id=configs.bundlepatch) array. Prefer that array in
+The game loader expects a bare [BundlePatch](?id=configs-bundlepatch) array. Prefer that array in
 shipped mods. Use this object shape only when your editor needs inline `$schema`.
 
 </div>
 
 <div class="smt-member-card">
 
-#### configs.WorkshopJson :id=configs.workshopjson
+#### configs.WorkshopJson :id=configs-workshopjson
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/workshop.d.ts#L21" target="_blank" rel="noopener">workshop.d.ts:21</a></p>
 
@@ -33445,7 +33445,7 @@ Links a local mod folder to its Steam Workshop item.
 
 <div class="smt-member-card">
 
-#### configs.ConfigSchemaEntry :id=configs.configschemaentry
+#### configs.ConfigSchemaEntry :id=configs-configschemaentry
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L255" target="_blank" rel="noopener">modinfo.d.ts:255</a></p>
 
@@ -33465,7 +33465,7 @@ Keys of `configSchema` are setting ids read via `api.settings.get`.
 
 <div class="smt-member-card">
 
-#### configs.ModMapColorMapping :id=configs.modmapcolormapping
+#### configs.ModMapColorMapping :id=configs-modmapcolormapping
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/modinfo.d.ts#L427" target="_blank" rel="noopener">modinfo.d.ts:427</a></p>
 
@@ -33483,7 +33483,7 @@ One `map.colorMappings` value: a single terrain id, or layered background/foregr
 
 <div class="smt-member-card">
 
-#### configs.PatchTargetFile :id=configs.patchtargetfile
+#### configs.PatchTargetFile :id=configs-patchtargetfile
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L23" target="_blank" rel="noopener">patches.d.ts:23</a></p>
 
@@ -33508,7 +33508,7 @@ Known compiled bundle paths the loader can patch.
 
 <div class="smt-member-card">
 
-#### configs.PatchOperation :id=configs.patchoperation
+#### configs.PatchOperation :id=configs-patchoperation
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L42" target="_blank" rel="noopener">patches.d.ts:42</a></p>
 
@@ -33524,17 +33524,17 @@ Supported patch operations.
 
 | Value | Behaviour |
 | --- | --- |
-| `replace` | Replace the matched text with [BundlePatch.code](?id=configs.code) / [BundlePatch.replace](?id=configs.replace) |
+| `replace` | Replace the matched text with [BundlePatch.code](?id=configs-code) / [BundlePatch.replace](?id=configs-replace) |
 | `remove` | Delete the matched text |
-| `insertBefore` | Insert [BundlePatch.code](?id=configs.code) before the match |
-| `insertAfter` | Insert [BundlePatch.code](?id=configs.code) after the match |
-| `wrap` | Surround the match with [BundlePatch.before](?id=configs.before) and [BundlePatch.after](?id=configs.after) |
+| `insertBefore` | Insert [BundlePatch.code](?id=configs-code) before the match |
+| `insertAfter` | Insert [BundlePatch.code](?id=configs-code) after the match |
+| `wrap` | Surround the match with [BundlePatch.before](?id=configs-before) and [BundlePatch.after](?id=configs-after) |
 
 </div>
 
 <div class="smt-member-card">
 
-#### configs.BundlePatchesFile :id=configs.bundlepatchesfile
+#### configs.BundlePatchesFile :id=configs-bundlepatchesfile
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/configs/patches.d.ts#L198" target="_blank" rel="noopener">patches.d.ts:198</a></p>
 
@@ -33546,8 +33546,8 @@ BundlePatchesFile = BundlePatch[] | BundlePatchesDocument
 
 </div>
 
-Root shape of `patches.json`: a bare [BundlePatch](?id=configs.bundlepatch) array (game format),
-or a [BundlePatchesDocument](?id=configs.bundlepatchesdocument) object when the file includes `$schema`.
+Root shape of `patches.json`: a bare [BundlePatch](?id=configs-bundlepatch) array (game format),
+or a [BundlePatchesDocument](?id=configs-bundlepatchesdocument) object when the file includes `$schema`.
 
 </div>
 
@@ -33570,7 +33570,7 @@ Async methods use `ipcRenderer.invoke` unless noted (`openDevTools`, `log`).
 
 <div class="smt-member-card">
 
-#### electron.ElectronBridge :id=electron.electronbridge
+#### electron.ElectronBridge :id=electron-electronbridge
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/bridge.d.ts#L33" target="_blank" rel="noopener">bridge.d.ts:33</a></p>
 
@@ -33715,7 +33715,7 @@ Async methods use `ipcRenderer.invoke` unless noted (`openDevTools`, `log`).
 
 <div class="smt-member-card">
 
-#### electron.ElectronCustomMapsApi :id=electron.electroncustommapsapi
+#### electron.ElectronCustomMapsApi :id=electron-electroncustommapsapi
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/custom-maps.d.ts#L11" target="_blank" rel="noopener">custom-maps.d.ts:11</a></p>
 
@@ -33744,7 +33744,7 @@ Custom map editor persistence helpers exposed as `electron.customMaps`.
 
 <div class="smt-member-card">
 
-#### electron.ElectronLocalModsApi :id=electron.electronlocalmodsapi
+#### electron.ElectronLocalModsApi :id=electron-electronlocalmodsapi
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/local-mods.d.ts#L14" target="_blank" rel="noopener">local-mods.d.ts:14</a></p>
 
@@ -33773,7 +33773,7 @@ Local developer mod folder helpers exposed as `electron.localMods`.
 
 <div class="smt-member-card">
 
-#### electron.ElectronMacRightMouseApi :id=electron.electronmacrightmouseapi
+#### electron.ElectronMacRightMouseApi :id=electron-electronmacrightmouseapi
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/mac-right-mouse.d.ts#L8" target="_blank" rel="noopener">mac-right-mouse.d.ts:8</a></p>
 
@@ -33799,7 +33799,7 @@ macOS right-button emulation helpers exposed as `electron.macRightMouse`.
 
 <div class="smt-member-card">
 
-#### electron.ElectronPlatformOverlayApi :id=electron.electronplatformoverlayapi
+#### electron.ElectronPlatformOverlayApi :id=electron-electronplatformoverlayapi
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L11" target="_blank" rel="noopener">platform.d.ts:11</a></p>
 
@@ -33819,7 +33819,7 @@ Platform overlay browser helpers exposed as `electron.platform.overlay`.
 
 <div class="smt-member-card">
 
-#### electron.ElectronPlatformApi :id=electron.electronplatformapi
+#### electron.ElectronPlatformApi :id=electron-electronplatformapi
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/platform.d.ts#L26" target="_blank" rel="noopener">platform.d.ts:26</a></p>
 
@@ -33885,7 +33885,7 @@ Cross-store platform helpers exposed as `electron.platform`.
 
 <div class="smt-member-card">
 
-#### electron.ElectronSuccessResult :id=electron.electronsuccessresult
+#### electron.ElectronSuccessResult :id=electron-electronsuccessresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L10" target="_blank" rel="noopener">results.d.ts:10</a></p>
 
@@ -33908,7 +33908,7 @@ Successful invoke result from save, settings, and window handlers.
 
 <div class="smt-member-card">
 
-#### electron.ElectronFailureResult :id=electron.electronfailureresult
+#### electron.ElectronFailureResult :id=electron-electronfailureresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L20" target="_blank" rel="noopener">results.d.ts:20</a></p>
 
@@ -33931,7 +33931,7 @@ Failed invoke result from save, settings, and window handlers.
 
 <div class="smt-member-card">
 
-#### electron.ElectronLicenseCheckResult :id=electron.electronlicensecheckresult
+#### electron.ElectronLicenseCheckResult :id=electron-electronlicensecheckresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L35" target="_blank" rel="noopener">results.d.ts:35</a></p>
 
@@ -33954,13 +33954,13 @@ Failed invoke result from save, settings, and window handlers.
 
 </div>
 
-MS Store license check result from [ElectronBridge.checkLicense](?id=electron.checklicense).
+MS Store license check result from [ElectronBridge.checkLicense](?id=electron-checklicense).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronSaveInput :id=electron.electronsaveinput
+#### electron.ElectronSaveInput :id=electron-electronsaveinput
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L49" target="_blank" rel="noopener">results.d.ts:49</a></p>
 
@@ -33980,13 +33980,13 @@ MS Store license check result from [ElectronBridge.checkLicense](?id=electron.ch
 
 </div>
 
-Parsed game save payload passed to [ElectronBridge.save](?id=electron.save).
+Parsed game save payload passed to [ElectronBridge.save](?id=electron-save).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronLoadSuccessResult :id=electron.electronloadsuccessresult
+#### electron.ElectronLoadSuccessResult :id=electron-electronloadsuccessresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L61" target="_blank" rel="noopener">results.d.ts:61</a></p>
 
@@ -34003,13 +34003,13 @@ Parsed game save payload passed to [ElectronBridge.save](?id=electron.save).
 
 </div>
 
-Successful load result from [ElectronBridge.load](?id=electron.load).
+Successful load result from [ElectronBridge.load](?id=electron-load).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronLoadFailureResult :id=electron.electronloadfailureresult
+#### electron.ElectronLoadFailureResult :id=electron-electronloadfailureresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L71" target="_blank" rel="noopener">results.d.ts:71</a></p>
 
@@ -34026,13 +34026,13 @@ Successful load result from [ElectronBridge.load](?id=electron.load).
 
 </div>
 
-Failed load result from [ElectronBridge.load](?id=electron.load).
+Failed load result from [ElectronBridge.load](?id=electron-load).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronSaveFileMetadata :id=electron.electronsavefilemetadata
+#### electron.ElectronSaveFileMetadata :id=electron-electronsavefilemetadata
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L86" target="_blank" rel="noopener">results.d.ts:86</a></p>
 
@@ -34075,13 +34075,13 @@ Failed load result from [ElectronBridge.load](?id=electron.load).
 
 Metadata parsed from the first line of one `.save` file.
 
-Returned by [ElectronBridge.getSaveFiles](?id=electron.getsavefiles).
+Returned by [ElectronBridge.getSaveFiles](?id=electron-getsavefiles).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronExportSaveSuccessResult :id=electron.electronexportsavesuccessresult
+#### electron.ElectronExportSaveSuccessResult :id=electron-electronexportsavesuccessresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L112" target="_blank" rel="noopener">results.d.ts:112</a></p>
 
@@ -34098,13 +34098,13 @@ Returned by [ElectronBridge.getSaveFiles](?id=electron.getsavefiles).
 
 </div>
 
-Successful export result from [ElectronBridge.exportSave](?id=electron.exportsave).
+Successful export result from [ElectronBridge.exportSave](?id=electron-exportsave).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronImportSaveSuccessResult :id=electron.electronimportsavesuccessresult
+#### electron.ElectronImportSaveSuccessResult :id=electron-electronimportsavesuccessresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L127" target="_blank" rel="noopener">results.d.ts:127</a></p>
 
@@ -34121,13 +34121,13 @@ Successful export result from [ElectronBridge.exportSave](?id=electron.exportsav
 
 </div>
 
-Successful import result from [ElectronBridge.importSave](?id=electron.importsave).
+Successful import result from [ElectronBridge.importSave](?id=electron-importsave).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronLastPlayedGame :id=electron.electronlastplayedgame
+#### electron.ElectronLastPlayedGame :id=electron-electronlastplayedgame
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L140" target="_blank" rel="noopener">results.d.ts:140</a></p>
 
@@ -34141,13 +34141,13 @@ Successful import result from [ElectronBridge.importSave](?id=electron.importsav
 
 </div>
 
-Last-played save marker written by [ElectronBridge.saveLastPlayedGame](?id=electron.savelastplayedgame).
+Last-played save marker written by [ElectronBridge.saveLastPlayedGame](?id=electron-savelastplayedgame).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronSystemInfo :id=electron.electronsysteminfo
+#### electron.ElectronSystemInfo :id=electron-electronsysteminfo
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L150" target="_blank" rel="noopener">results.d.ts:150</a></p>
 
@@ -34173,7 +34173,7 @@ Last-played save marker written by [ElectronBridge.saveLastPlayedGame](?id=elect
 
 </div>
 
-Local process/runtime versions from [ElectronBridge.getSystemInfo](?id=electron.getsysteminfo).
+Local process/runtime versions from [ElectronBridge.getSystemInfo](?id=electron-getsysteminfo).
 
 Read directly in the preload script — no IPC round trip.
 
@@ -34181,7 +34181,7 @@ Read directly in the preload script — no IPC round trip.
 
 <div class="smt-member-card">
 
-#### electron.ElectronLocalModsListResult :id=electron.electronlocalmodslistresult
+#### electron.ElectronLocalModsListResult :id=electron-electronlocalmodslistresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L166" target="_blank" rel="noopener">results.d.ts:166</a></p>
 
@@ -34201,13 +34201,13 @@ Read directly in the preload script — no IPC round trip.
 
 </div>
 
-Result from [ElectronLocalModsApi.list](?id=electron.list-1).
+Result from [ElectronLocalModsApi.list](?id=electron-list-1).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronLocalModsUploadResult :id=electron.electronlocalmodsuploadresult
+#### electron.ElectronLocalModsUploadResult :id=electron-electronlocalmodsuploadresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L178" target="_blank" rel="noopener">results.d.ts:178</a></p>
 
@@ -34227,13 +34227,13 @@ Result from [ElectronLocalModsApi.list](?id=electron.list-1).
 
 </div>
 
-Result from [ElectronLocalModsApi.upload](?id=electron.upload).
+Result from [ElectronLocalModsApi.upload](?id=electron-upload).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronOpenUrlResult :id=electron.electronopenurlresult
+#### electron.ElectronOpenUrlResult :id=electron-electronopenurlresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L190" target="_blank" rel="noopener">results.d.ts:190</a></p>
 
@@ -34250,13 +34250,13 @@ Result from [ElectronLocalModsApi.upload](?id=electron.upload).
 
 </div>
 
-Result from [ElectronBridge.openExternalBrowser](?id=electron.openexternalbrowser).
+Result from [ElectronBridge.openExternalBrowser](?id=electron-openexternalbrowser).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronPrimeAchievementsResult :id=electron.electronprimeachievementsresult
+#### electron.ElectronPrimeAchievementsResult :id=electron-electronprimeachievementsresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L200" target="_blank" rel="noopener">results.d.ts:200</a></p>
 
@@ -34273,13 +34273,13 @@ Result from [ElectronBridge.openExternalBrowser](?id=electron.openexternalbrowse
 
 </div>
 
-Result from [ElectronBridge.platformPrimeAchievements](?id=electron.platformprimeachievements).
+Result from [ElectronBridge.platformPrimeAchievements](?id=electron-platformprimeachievements).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronReauthPromptResult :id=electron.electronreauthpromptresult
+#### electron.ElectronReauthPromptResult :id=electron-electronreauthpromptresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L210" target="_blank" rel="noopener">results.d.ts:210</a></p>
 
@@ -34296,13 +34296,13 @@ Result from [ElectronBridge.platformPrimeAchievements](?id=electron.platformprim
 
 </div>
 
-Result from [ElectronBridge.platformShowReauthPrompt](?id=electron.platformshowreauthprompt).
+Result from [ElectronBridge.platformShowReauthPrompt](?id=electron-platformshowreauthprompt).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronWorkshopApi :id=electron.electronworkshopapi
+#### electron.ElectronWorkshopApi :id=electron-electronworkshopapi
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/workshop.d.ts#L12" target="_blank" rel="noopener">workshop.d.ts:12</a></p>
 
@@ -34350,7 +34350,7 @@ Steam only — calls fail gracefully on MS Store.
 
 <div class="smt-member-card">
 
-#### electron.ElectronPlatform :id=electron.electronplatform
+#### electron.ElectronPlatform :id=electron-electronplatform
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L10" target="_blank" rel="noopener">primitives.d.ts:10</a></p>
 
@@ -34364,13 +34364,13 @@ ElectronPlatform = "steam" | "msstore" | "gog" | string & object
 
 Sandustry distribution channel string.
 
-Returned by [ElectronBridge.getPlatformSync](?id=electron.getplatformsync).
+Returned by [ElectronBridge.getPlatformSync](?id=electron-getplatformsync).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronLogLevel :id=electron.electronloglevel
+#### electron.ElectronLogLevel :id=electron-electronloglevel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L17" target="_blank" rel="noopener">primitives.d.ts:17</a></p>
 
@@ -34382,7 +34382,7 @@ ElectronLogLevel = "debug" | "info" | "warn" | "error"
 
 </div>
 
-Severity level written through [ElectronBridge.log](?id=electron.log).
+Severity level written through [ElectronBridge.log](?id=electron-log).
 
 Maps to the main-process file logger (`logs/main.log`).
 
@@ -34390,7 +34390,7 @@ Maps to the main-process file logger (`logs/main.log`).
 
 <div class="smt-member-card">
 
-#### electron.ElectronIpcListener :id=electron.electronipclistener
+#### electron.ElectronIpcListener :id=electron-electronipclistener
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/primitives.d.ts#L24" target="_blank" rel="noopener">primitives.d.ts:24</a></p>
 
@@ -34418,7 +34418,7 @@ Callback registered on IPC event channels such as `app-suspend`.
 
 <div class="smt-member-card">
 
-#### electron.ElectronOperationResult :id=electron.electronoperationresult
+#### electron.ElectronOperationResult :id=electron-electronoperationresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L30" target="_blank" rel="noopener">results.d.ts:30</a></p>
 
@@ -34436,7 +34436,7 @@ Result union returned by most save, settings, and window invoke handlers.
 
 <div class="smt-member-card">
 
-#### electron.ElectronLoadResult :id=electron.electronloadresult
+#### electron.ElectronLoadResult :id=electron-electronloadresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L79" target="_blank" rel="noopener">results.d.ts:79</a></p>
 
@@ -34448,13 +34448,13 @@ ElectronLoadResult = ElectronLoadSuccessResult | ElectronLoadFailureResult
 
 </div>
 
-Result from [ElectronBridge.load](?id=electron.load).
+Result from [ElectronBridge.load](?id=electron-load).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronExportSaveResult :id=electron.electronexportsaveresult
+#### electron.ElectronExportSaveResult :id=electron-electronexportsaveresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L120" target="_blank" rel="noopener">results.d.ts:120</a></p>
 
@@ -34466,13 +34466,13 @@ ElectronExportSaveResult = ElectronExportSaveSuccessResult | ElectronFailureResu
 
 </div>
 
-Result from [ElectronBridge.exportSave](?id=electron.exportsave).
+Result from [ElectronBridge.exportSave](?id=electron-exportsave).
 
 </div>
 
 <div class="smt-member-card">
 
-#### electron.ElectronImportSaveResult :id=electron.electronimportsaveresult
+#### electron.ElectronImportSaveResult :id=electron-electronimportsaveresult
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/electron/results.d.ts#L135" target="_blank" rel="noopener">results.d.ts:135</a></p>
 
@@ -34484,7 +34484,7 @@ ElectronImportSaveResult = ElectronImportSaveSuccessResult | ElectronFailureResu
 
 </div>
 
-Result from [ElectronBridge.importSave](?id=electron.importsave).
+Result from [ElectronBridge.importSave](?id=electron-importsave).
 
 </div>
 
@@ -34496,7 +34496,7 @@ Result from [ElectronBridge.importSave](?id=electron.importsave).
 
 <div class="smt-member-card">
 
-#### shared.asset.AssetRef :id=shared.asset.assetref
+#### shared.asset.AssetRef :id=shared-asset-assetref
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/asset.d.ts#L9" target="_blank" rel="noopener">asset.d.ts:9</a></p>
 
@@ -34525,7 +34525,7 @@ Reference to a loaded sprite or texture asset.
 
 <div class="smt-member-card">
 
-#### shared.engine.EngineFn :id=shared.engine.enginefn
+#### shared.engine.EngineFn :id=shared-engine-enginefn
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L11" target="_blank" rel="noopener">engine.d.ts:11</a></p>
 
@@ -34555,7 +34555,7 @@ Stub for an unresolved engine method.
 
 <div class="smt-member-card">
 
-#### shared.engine.EngineOverlapNs :id=shared.engine.engineoverlapns
+#### shared.engine.EngineOverlapNs :id=shared-engine-engineoverlapns
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/engine.d.ts#L17" target="_blank" rel="noopener">engine.d.ts:17</a></p>
 
@@ -34581,11 +34581,11 @@ Loose bag for namespaces that overlap `sandkit.api` (different names / state-fir
 
 <div class="smt-member-card">
 
-#### shared.jsonvalue.JsonObjectV1 :id=shared.jsonvalue.jsonobjectv1
+#### shared.jsonvalue.JsonObjectV1 :id=shared-jsonvalue-jsonobjectv1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/jsonvalue.d.ts#L15" target="_blank" rel="noopener">jsonvalue.d.ts:15</a></p>
 
-JSON object with string keys and [JsonValueV1](?id=shared.jsonvalue.jsonvaluev1) values.
+JSON object with string keys and [JsonValueV1](?id=shared-jsonvalue-jsonvaluev1) values.
 
 Use for open-ended config bags and serialized mod data.
 
@@ -34601,7 +34601,7 @@ Use for open-ended config bags and serialized mod data.
 
 <div class="smt-member-card">
 
-#### shared.jsonvalue.JsonValueV1 :id=shared.jsonvalue.jsonvaluev1
+#### shared.jsonvalue.JsonValueV1 :id=shared-jsonvalue-jsonvaluev1
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/jsonvalue.d.ts#L24" target="_blank" rel="noopener">jsonvalue.d.ts:24</a></p>
 
@@ -34627,7 +34627,7 @@ Does not include `undefined` — omit keys instead.
 
 <div class="smt-member-card">
 
-#### shared.nominal.LooseString :id=shared.nominal.loosestring
+#### shared.nominal.LooseString :id=shared-nominal-loosestring
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L16" target="_blank" rel="noopener">nominal.d.ts:16</a></p>
 
@@ -34648,7 +34648,7 @@ Known string literals plus any other string.
 
 <div class="smt-member-card">
 
-#### shared.nominal.LooseNumber :id=shared.nominal.loosenumber
+#### shared.nominal.LooseNumber :id=shared-nominal-loosenumber
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L22" target="_blank" rel="noopener">nominal.d.ts:22</a></p>
 
@@ -34669,7 +34669,7 @@ Known numeric literals plus any other number.
 
 <div class="smt-member-card">
 
-#### shared.nominal.TaggedNumber :id=shared.nominal.taggednumber
+#### shared.nominal.TaggedNumber :id=shared-nominal-taggednumber
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L28" target="_blank" rel="noopener">nominal.d.ts:28</a></p>
 
@@ -34698,7 +34698,7 @@ readonly optional \_\_tag?: Tag
 
 <div class="smt-member-card">
 
-#### shared.nominal.CellId :id=shared.nominal.cellid
+#### shared.nominal.CellId :id=shared-nominal-cellid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/nominal.d.ts#L31" target="_blank" rel="noopener">nominal.d.ts:31</a></p>
 
@@ -34722,7 +34722,7 @@ Packed simulation cell id from `world.getCellIdAtCell`.
 
 <div class="smt-member-card">
 
-#### shared.player.Player :id=shared.player.player
+#### shared.player.Player :id=shared-player-player
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L34" target="_blank" rel="noopener">player.d.ts:34</a></p>
 
@@ -34795,7 +34795,7 @@ Reflects `sandkit.engine.state` / store player fields exposed to mods.
 
 <div class="smt-member-card">
 
-#### shared.player.InventoryItem :id=shared.player.inventoryitem
+#### shared.player.InventoryItem :id=shared-player-inventoryitem
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L146" target="_blank" rel="noopener">player.d.ts:146</a></p>
 
@@ -34835,7 +34835,7 @@ One hotbar or inventory item entry.
 
 <div class="smt-member-card">
 
-#### shared.player.CellCoordinates :id=shared.player.cellcoordinates
+#### shared.player.CellCoordinates :id=shared-player-cellcoordinates
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L14" target="_blank" rel="noopener">player.d.ts:14</a></p>
 
@@ -34855,7 +34855,7 @@ Cell coordinates match `sandkit.api.*AtCell` helpers: column first, then row.
 
 <div class="smt-member-card">
 
-#### shared.player.Vector2 :id=shared.player.vector2
+#### shared.player.Vector2 :id=shared-player-vector2
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/player.d.ts#L22" target="_blank" rel="noopener">player.d.ts:22</a></p>
 
@@ -34899,7 +34899,7 @@ Built-in structure type ids used during placement.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.ConveyorLeft :id=sandkit.api.building.StructureType.conveyorleft
+#### sandkit.api.building.StructureType.ConveyorLeft :id=sandkit-api-building-StructureType-conveyorleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L12" target="_blank" rel="noopener">building.d.ts:12</a></p>
 
@@ -34917,7 +34917,7 @@ Left-facing conveyor belt.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.ConveyorRight :id=sandkit.api.building.StructureType.conveyorright
+#### sandkit.api.building.StructureType.ConveyorRight :id=sandkit-api-building-StructureType-conveyorright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L14" target="_blank" rel="noopener">building.d.ts:14</a></p>
 
@@ -34935,7 +34935,7 @@ Right-facing conveyor belt.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.ShakerLeft :id=sandkit.api.building.StructureType.shakerleft
+#### sandkit.api.building.StructureType.ShakerLeft :id=sandkit-api-building-StructureType-shakerleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L16" target="_blank" rel="noopener">building.d.ts:16</a></p>
 
@@ -34953,7 +34953,7 @@ Left-facing shaker.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.ShakerRight :id=sandkit.api.building.StructureType.shakerright
+#### sandkit.api.building.StructureType.ShakerRight :id=sandkit-api-building-StructureType-shakerright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L18" target="_blank" rel="noopener">building.d.ts:18</a></p>
 
@@ -34971,7 +34971,7 @@ Right-facing shaker.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.LauncherUp :id=sandkit.api.building.StructureType.launcherup
+#### sandkit.api.building.StructureType.LauncherUp :id=sandkit-api-building-StructureType-launcherup
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L20" target="_blank" rel="noopener">building.d.ts:20</a></p>
 
@@ -34989,7 +34989,7 @@ Up-facing launcher.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.LauncherLeft :id=sandkit.api.building.StructureType.launcherleft
+#### sandkit.api.building.StructureType.LauncherLeft :id=sandkit-api-building-StructureType-launcherleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L22" target="_blank" rel="noopener">building.d.ts:22</a></p>
 
@@ -35007,7 +35007,7 @@ Left-facing launcher.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.LauncherRight :id=sandkit.api.building.StructureType.launcherright
+#### sandkit.api.building.StructureType.LauncherRight :id=sandkit-api-building-StructureType-launcherright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L24" target="_blank" rel="noopener">building.d.ts:24</a></p>
 
@@ -35025,7 +35025,7 @@ Right-facing launcher.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.SplitterLeft :id=sandkit.api.building.StructureType.splitterleft
+#### sandkit.api.building.StructureType.SplitterLeft :id=sandkit-api-building-StructureType-splitterleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L26" target="_blank" rel="noopener">building.d.ts:26</a></p>
 
@@ -35043,7 +35043,7 @@ Left-facing splitter.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.SplitterRight :id=sandkit.api.building.StructureType.splitterright
+#### sandkit.api.building.StructureType.SplitterRight :id=sandkit-api-building-StructureType-splitterright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L28" target="_blank" rel="noopener">building.d.ts:28</a></p>
 
@@ -35061,7 +35061,7 @@ Right-facing splitter.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.Dropper :id=sandkit.api.building.StructureType.dropper
+#### sandkit.api.building.StructureType.Dropper :id=sandkit-api-building-StructureType-dropper
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L30" target="_blank" rel="noopener">building.d.ts:30</a></p>
 
@@ -35079,7 +35079,7 @@ Dropper structure.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.Foundation :id=sandkit.api.building.StructureType.foundation
+#### sandkit.api.building.StructureType.Foundation :id=sandkit-api-building-StructureType-foundation
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L32" target="_blank" rel="noopener">building.d.ts:32</a></p>
 
@@ -35097,7 +35097,7 @@ Foundation block.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.FoundationAngledLeft :id=sandkit.api.building.StructureType.foundationangledleft
+#### sandkit.api.building.StructureType.FoundationAngledLeft :id=sandkit-api-building-StructureType-foundationangledleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L34" target="_blank" rel="noopener">building.d.ts:34</a></p>
 
@@ -35115,7 +35115,7 @@ Angled foundation facing left.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.FoundationTriangleLeftDel :id=sandkit.api.building.StructureType.foundationtriangleleftdel
+#### sandkit.api.building.StructureType.FoundationTriangleLeftDel :id=sandkit-api-building-StructureType-foundationtriangleleftdel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L36" target="_blank" rel="noopener">building.d.ts:36</a></p>
 
@@ -35133,7 +35133,7 @@ Left triangle foundation (deprecated id).
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.FoundationAngledRight :id=sandkit.api.building.StructureType.foundationangledright
+#### sandkit.api.building.StructureType.FoundationAngledRight :id=sandkit-api-building-StructureType-foundationangledright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L38" target="_blank" rel="noopener">building.d.ts:38</a></p>
 
@@ -35151,7 +35151,7 @@ Angled foundation facing right.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.FoundationTriangleRightDel :id=sandkit.api.building.StructureType.foundationtrianglerightdel
+#### sandkit.api.building.StructureType.FoundationTriangleRightDel :id=sandkit-api-building-StructureType-foundationtrianglerightdel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L40" target="_blank" rel="noopener">building.d.ts:40</a></p>
 
@@ -35169,7 +35169,7 @@ Right triangle foundation (deprecated id).
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.Collector :id=sandkit.api.building.StructureType.collector
+#### sandkit.api.building.StructureType.Collector :id=sandkit-api-building-StructureType-collector
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L42" target="_blank" rel="noopener">building.d.ts:42</a></p>
 
@@ -35187,7 +35187,7 @@ Collector structure.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.FilterLeft :id=sandkit.api.building.StructureType.filterleft
+#### sandkit.api.building.StructureType.FilterLeft :id=sandkit-api-building-StructureType-filterleft
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L44" target="_blank" rel="noopener">building.d.ts:44</a></p>
 
@@ -35205,7 +35205,7 @@ Left-facing filter.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.FilterRight :id=sandkit.api.building.StructureType.filterright
+#### sandkit.api.building.StructureType.FilterRight :id=sandkit-api-building-StructureType-filterright
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L46" target="_blank" rel="noopener">building.d.ts:46</a></p>
 
@@ -35223,7 +35223,7 @@ Right-facing filter.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.SlidingFoundation :id=sandkit.api.building.StructureType.slidingfoundation
+#### sandkit.api.building.StructureType.SlidingFoundation :id=sandkit-api-building-StructureType-slidingfoundation
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L48" target="_blank" rel="noopener">building.d.ts:48</a></p>
 
@@ -35241,7 +35241,7 @@ Sliding foundation block.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.VelocitySoaker :id=sandkit.api.building.StructureType.velocitysoaker
+#### sandkit.api.building.StructureType.VelocitySoaker :id=sandkit-api-building-StructureType-velocitysoaker
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L50" target="_blank" rel="noopener">building.d.ts:50</a></p>
 
@@ -35259,7 +35259,7 @@ Velocity soaker structure.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.Grower :id=sandkit.api.building.StructureType.grower
+#### sandkit.api.building.StructureType.Grower :id=sandkit-api-building-StructureType-grower
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L52" target="_blank" rel="noopener">building.d.ts:52</a></p>
 
@@ -35277,7 +35277,7 @@ Grower structure.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.SoundBox :id=sandkit.api.building.StructureType.soundbox
+#### sandkit.api.building.StructureType.SoundBox :id=sandkit-api-building-StructureType-soundbox
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L54" target="_blank" rel="noopener">building.d.ts:54</a></p>
 
@@ -35295,7 +35295,7 @@ Sound box structure.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.Pipe :id=sandkit.api.building.StructureType.pipe
+#### sandkit.api.building.StructureType.Pipe :id=sandkit-api-building-StructureType-pipe
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L56" target="_blank" rel="noopener">building.d.ts:56</a></p>
 
@@ -35313,7 +35313,7 @@ Pipe segment.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.Pump :id=sandkit.api.building.StructureType.pump
+#### sandkit.api.building.StructureType.Pump :id=sandkit-api-building-StructureType-pump
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L58" target="_blank" rel="noopener">building.d.ts:58</a></p>
 
@@ -35331,7 +35331,7 @@ Pump structure.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.LiquidVent :id=sandkit.api.building.StructureType.liquidvent
+#### sandkit.api.building.StructureType.LiquidVent :id=sandkit-api-building-StructureType-liquidvent
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L60" target="_blank" rel="noopener">building.d.ts:60</a></p>
 
@@ -35349,7 +35349,7 @@ Liquid vent structure.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.Light :id=sandkit.api.building.StructureType.light
+#### sandkit.api.building.StructureType.Light :id=sandkit-api-building-StructureType-light
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L62" target="_blank" rel="noopener">building.d.ts:62</a></p>
 
@@ -35367,7 +35367,7 @@ Light structure.
 
 <div class="smt-member-card">
 
-#### sandkit.api.building.StructureType.GloomEmitter :id=sandkit.api.building.StructureType.gloomemitter
+#### sandkit.api.building.StructureType.GloomEmitter :id=sandkit-api-building-StructureType-gloomemitter
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/api/building.d.ts#L64" target="_blank" rel="noopener">building.d.ts:64</a></p>
 
@@ -35395,7 +35395,7 @@ Physical behaviour category for an element.
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.MatterType.Solid :id=sandkit.api.elements.MatterType.solid
+#### sandkit.api.elements.MatterType.Solid :id=sandkit-api-elements-MatterType-solid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L38" target="_blank" rel="noopener">elements.d.ts:38</a></p>
 
@@ -35411,7 +35411,7 @@ Solid: 1
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.MatterType.Liquid :id=sandkit.api.elements.MatterType.liquid
+#### sandkit.api.elements.MatterType.Liquid :id=sandkit-api-elements-MatterType-liquid
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L39" target="_blank" rel="noopener">elements.d.ts:39</a></p>
 
@@ -35427,7 +35427,7 @@ Liquid: 2
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.MatterType.Particle :id=sandkit.api.elements.MatterType.particle
+#### sandkit.api.elements.MatterType.Particle :id=sandkit-api-elements-MatterType-particle
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L40" target="_blank" rel="noopener">elements.d.ts:40</a></p>
 
@@ -35443,7 +35443,7 @@ Particle: 3
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.MatterType.Gas :id=sandkit.api.elements.MatterType.gas
+#### sandkit.api.elements.MatterType.Gas :id=sandkit-api-elements-MatterType-gas
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L41" target="_blank" rel="noopener">elements.d.ts:41</a></p>
 
@@ -35459,7 +35459,7 @@ Gas: 4
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.MatterType.Static :id=sandkit.api.elements.MatterType.static
+#### sandkit.api.elements.MatterType.Static :id=sandkit-api-elements-MatterType-static
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L42" target="_blank" rel="noopener">elements.d.ts:42</a></p>
 
@@ -35475,7 +35475,7 @@ Static: 5
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.MatterType.Slushy :id=sandkit.api.elements.MatterType.slushy
+#### sandkit.api.elements.MatterType.Slushy :id=sandkit-api-elements-MatterType-slushy
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L43" target="_blank" rel="noopener">elements.d.ts:43</a></p>
 
@@ -35491,7 +35491,7 @@ Slushy: 6
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.MatterType.Wisp :id=sandkit.api.elements.MatterType.wisp
+#### sandkit.api.elements.MatterType.Wisp :id=sandkit-api-elements-MatterType-wisp
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L44" target="_blank" rel="noopener">elements.d.ts:44</a></p>
 
@@ -35507,7 +35507,7 @@ Wisp: 7
 
 <div class="smt-member-card">
 
-#### sandkit.api.elements.MatterType.Powder :id=sandkit.api.elements.MatterType.powder
+#### sandkit.api.elements.MatterType.Powder :id=sandkit-api-elements-MatterType-powder
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/shared/api/elements.d.ts#L45" target="_blank" rel="noopener">elements.d.ts:45</a></p>
 
@@ -35598,12 +35598,12 @@ Prefer these methods over [sandkit.engine](api/sandkit.engine.md) when both exis
 Worker-thread `sandkit.api` namespaces.
 
 Prefer these declarations in `worker.js`. Type `sandkit.api` as
-[WorkerSandkitApi](?id=sandkit.api.worker.workersandkitapi). Do not assume main-thread methods exist here.
+[WorkerSandkitApi](?id=sandkit-api-worker-workersandkitapi). Do not assume main-thread methods exist here.
 See [sandkit.api](api/sandkit.api.md) for the main-thread public API.
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
-#### sandkit.api (worker) :id=sandkit.api.worker.workersandkitapi
+#### sandkit.api (worker) :id=sandkit-api-worker-workersandkitapi
 
 ```ts
 WorkerSandkitApi = object
@@ -35816,7 +35816,7 @@ complete or correct.
 
 ### Interfaces <!-- {docsify-ignore} -->
 
-#### sandkit.engine :id=sandkit.engine.sandkitengine
+#### sandkit.engine :id=sandkit-engine-sandkitengine
 
 Defined in: [sandkit/engine/index.d.ts:132](https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/index.d.ts#L132)
 
@@ -35847,7 +35847,7 @@ Defined in: [sandkit/engine/index.d.ts:134](https://github.com/sandustry-modding
 
 <div class="smt-member-card">
 
-#### sandkit.engine.RetroConsoleDisplay :id=sandkit.engine.retroconsoledisplay
+#### sandkit.engine.RetroConsoleDisplay :id=sandkit-engine-retroconsoledisplay
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L14" target="_blank" rel="noopener">retro-console.d.ts:14</a></p>
 
@@ -35885,7 +35885,7 @@ Low-resolution display buffer for a Retro Console game.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.RetroConsoleInput :id=sandkit.engine.retroconsoleinput
+#### sandkit.engine.RetroConsoleInput :id=sandkit-engine-retroconsoleinput
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L24" target="_blank" rel="noopener">retro-console.d.ts:24</a></p>
 
@@ -35910,7 +35910,7 @@ Directional input from the Retro Console controls.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.RetroConsoleGameOptions :id=sandkit.engine.retroconsolegameoptions
+#### sandkit.engine.RetroConsoleGameOptions :id=sandkit-engine-retroconsolegameoptions
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L30" target="_blank" rel="noopener">retro-console.d.ts:30</a></p>
 
@@ -35935,7 +35935,7 @@ Display size options for a registered Retro Console game.
 
 <div class="smt-member-card">
 
-#### sandkit.engine.RetroConsoleGame :id=sandkit.engine.retroconsolegame
+#### sandkit.engine.RetroConsoleGame :id=sandkit-engine-retroconsolegame
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L36" target="_blank" rel="noopener">retro-console.d.ts:36</a></p>
 
@@ -35973,7 +35973,7 @@ Display size options for a registered Retro Console game.
 
 **`Internal`**
 
-Retro Console game definition passed to [RetroConsoleApi.registerGame](?id=sandkit.engine.registergame).
+Retro Console game definition passed to [RetroConsoleApi.registerGame](?id=sandkit-engine-registergame).
 
 `TState` = `unknown`
 
@@ -35981,7 +35981,7 @@ Retro Console game definition passed to [RetroConsoleApi.registerGame](?id=sandk
 
 <div class="smt-member-card">
 
-#### sandkit.engine.RetroConsoleApi :id=sandkit.engine.retroconsoleapi
+#### sandkit.engine.RetroConsoleApi :id=sandkit-engine-retroconsoleapi
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L49" target="_blank" rel="noopener">retro-console.d.ts:49</a></p>
 
@@ -36003,7 +36003,7 @@ Retro Console game definition passed to [RetroConsoleApi.registerGame](?id=sandk
 
 ### Type Aliases <!-- {docsify-ignore} -->
 
-#### sandkit.engine.api :id=sandkit.engine.sandkitengineapi
+#### sandkit.engine.api :id=sandkit-engine-sandkitengineapi
 
 ```ts
 SandkitEngineApi = object
@@ -36710,7 +36710,7 @@ Defined in: [sandkit/engine/index.d.ts:121](https://github.com/sandustry-modding
 
 <div class="smt-member-card">
 
-#### sandkit.engine.RetroConsolePixel :id=sandkit.engine.retroconsolepixel
+#### sandkit.engine.RetroConsolePixel :id=sandkit-engine-retroconsolepixel
 
 <p class="smt-member-badge"><a href="https://github.com/sandustry-modding/SandustryTypes/blob/main/src/sandkit/engine/retro-console.d.ts#L11" target="_blank" rel="noopener">retro-console.d.ts:11</a></p>
 
@@ -36728,7 +36728,7 @@ Pixel value for the Retro Console framebuffer.
 
 </div>
 
-#### sandkit.state :id=sandkit.engine.sandkitstate
+#### sandkit.state :id=sandkit-engine-sandkitstate
 
 ```ts
 SandkitState = object

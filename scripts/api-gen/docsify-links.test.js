@@ -2,14 +2,54 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import {
   collectHeadingIds,
+  createDocsifySlugify,
+  docsifyHeadingIdToken,
   fixSandkitNamespaceLinks,
+  fullPageHeadingId,
+  headingIdFromText,
   qualifyDocsifyPageLinks,
+  qualifyFullPageAnchors,
   resolveDocsifyTarget,
   rewriteDocsifyHref,
   rewriteMarkdownLinks,
   validateDeprecatedCallouts,
   validateDocsifyLinks,
 } from "./docsify-links.mjs";
+
+test("full-page heading ids drop dots so Docsify :id= does not leak into the title", () => {
+  assert.equal(
+    fullPageHeadingId("sandkit.api.effects", "createeffectatworld"),
+    "sandkit-api-effects-createeffectatworld",
+  );
+  assert.equal(docsifyHeadingIdToken("sandkit.api.effects.createeffectatworld"), "sandkit-api-effects-createeffectatworld");
+  const slugify = createDocsifySlugify();
+  assert.equal(
+    headingIdFromText(
+      "~~sandkit.api.effects.createEffectAtWorld~~ :id=sandkit-api-effects-createeffectatworld",
+      slugify,
+    ),
+    "sandkit-api-effects-createeffectatworld",
+  );
+  const dotted = createDocsifySlugify();
+  assert.equal(
+    headingIdFromText(
+      "~~sandkit.api.effects.createEffectAtWorld~~ :id=sandkit.api.effects.createeffectatworld",
+      dotted,
+    ),
+    "sandkit",
+  );
+});
+
+test("qualifyFullPageAnchors prefixes ids without dots", () => {
+  const src = `#### ~~sandkit.api.effects.createEffectAtWorld~~ :id=createeffectatworld
+
+Use [createAtWorld](?id=createatworld) instead.
+`;
+  const out = qualifyFullPageAnchors(src, "sandkit.api.effects");
+  assert.match(out, /:id=sandkit-api-effects-createeffectatworld/);
+  assert.match(out, /\]\(\?id=sandkit-api-effects-createatworld\)/);
+  assert.doesNotMatch(out, /:id=sandkit\.api\./);
+});
 
 test("rewriteDocsifyHref turns heading hashes into Docsify ?id= query params", () => {
   assert.equal(rewriteDocsifyHref("#start"), "?id=start");
