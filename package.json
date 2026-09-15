@@ -2,7 +2,7 @@
   "name": "@sandustry-modding/types",
   "version": "0.6.0",
   "description": "TypeScript declarations and API docs for the Sandustry Sandkit host API",
-  "homepage": "https://sandustry-modding.github.io/SandustryTypes/",
+  "homepage": "https://sandustry-modding.github.io/",
   "bugs": {
     "url": "https://github.com/sandustry-modding/SandustryTypes/issues"
   },
@@ -101,7 +101,7 @@
     "generate": "node scripts/api-gen/generate.mjs",
     "scrape": "node scripts/scrape.mjs",
     "docs:archive-sandkit": "node scripts/archive-sandkit.mjs",
-    "docs:serve": "npx --yes docsify-cli serve docs",
+    "docs:serve": "node scripts/docs-serve.mjs",
     "test": "node --test scripts/*.test.js scripts/api-gen/*.test.js scripts/lib/*.test.js",
     "docs:links": "node scripts/api-gen/validate-links.mjs",
     "lint": "node scripts/api-gen/validate-callouts.mjs",

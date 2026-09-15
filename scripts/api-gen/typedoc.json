@@ -20,7 +20,7 @@
   "tsconfig": "../../tsconfig.json",
   "plugin": ["typedoc-plugin-markdown"],
   "readme": "../../README.md",
-  "out": "../../docs/api",
+  "out": "../../.tmp/typedoc-api",
   "excludePrivate": true,
   "excludeInternal": false,
   "hidePageHeader": true,

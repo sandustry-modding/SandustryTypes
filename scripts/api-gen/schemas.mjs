@@ -4,16 +4,16 @@
 import { spawnSync } from "node:child_process";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { createRequire } from "node:module";
-import { dirname, join } from "node:path";
+import { dirname, join, relative } from "node:path";
 import { fileURLToPath } from "node:url";
+import { resolveDocsDir, TYPES_ROOT } from "./docs-dir.mjs";
 
 function npmCli(platform = process.platform) {
   return platform === "win32" ? "npm.cmd" : "npm";
 }
 
 const API_GEN = dirname(fileURLToPath(import.meta.url));
-const ROOT = dirname(dirname(API_GEN));
-const OUT_DIR = join(ROOT, "docs", "schemas");
+const ROOT = TYPES_ROOT;
 const ENTRY = join(ROOT, "src", "configs", "index.d.ts");
 const TSCONFIG = join(ROOT, "tsconfig.json");
 const GENERATOR_PKG = join(API_GEN, "node_modules", "ts-json-schema-generator");
@@ -107,6 +107,7 @@ function formatSchema(schema) {
 export function runSchemas(options = {}) {
   const { check = false } = options;
   ensureDeps();
+  const OUT_DIR = join(resolveDocsDir(), "schemas");
 
   const require = createRequire(join(API_GEN, "package.json"));
   const { createGenerator } = require("ts-json-schema-generator");
@@ -143,16 +144,16 @@ export function runSchemas(options = {}) {
       }
       const existing = readFileSync(outPath, "utf8");
       if (existing !== text) {
-        console.error(`api-gen: stale schema: docs/schemas/${target.fileName} (run npm run generate)`);
+        console.error(`api-gen: stale schema: ${relative(ROOT, outPath)} (run npm run generate)`);
         drifted = true;
       } else {
-        console.log(`api-gen: ok  docs/schemas/${target.fileName}`);
+        console.log(`api-gen: ok  ${relative(ROOT, outPath)}`);
       }
       continue;
     }
 
     writeFileSync(outPath, text);
-    console.log(`api-gen: wrote docs/schemas/${target.fileName} ← ${target.typeName}`);
+    console.log(`api-gen: wrote ${relative(ROOT, outPath)} ← ${target.typeName}`);
   }
 
   if (check && drifted) process.exit(1);

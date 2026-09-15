@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Fetch https://sandustry.com/sandkit.html and save Markdown under docs/official-api/.
+ * Fetch https://sandustry.com/sandkit.html and save Markdown under official-api/ on the docs site clone.
  *
  * Usage:
  *   npm run docs:archive-sandkit
@@ -11,11 +11,9 @@
 import { createInterface } from "node:readline/promises";
 import { stdin as input, stdout as output } from "node:process";
 import { mkdirSync, writeFileSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
+import { resolveDocsDir } from "./api-gen/docs-dir.mjs";
 
-const ROOT = dirname(dirname(fileURLToPath(import.meta.url)));
-const OUT_DIR = join(ROOT, "docs", "official-api");
 const SOURCE_URL = "https://sandustry.com/sandkit.html";
 
 const VOID_TAGS = new Set([
@@ -522,8 +520,9 @@ async function askBaseName(question, defaultValue = "") {
 
 async function main() {
   const argvDefault = process.argv[2] ? normalizeBaseName(process.argv[2]) : "";
-  const answered = await askBaseName("Base file name for docs/official-api/<name>.md", argvDefault);
+  const answered = await askBaseName("Base file name for official-api/<name>.md on the docs site", argvDefault);
   const baseName = normalizeBaseName(answered);
+  const OUT_DIR = join(resolveDocsDir(), "official-api");
 
   mkdirSync(OUT_DIR, { recursive: true });
   const mdPath = join(OUT_DIR, `${baseName}.md`);

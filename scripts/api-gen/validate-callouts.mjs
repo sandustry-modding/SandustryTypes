@@ -4,15 +4,12 @@
  *
  * Usage:
  *   node scripts/api-gen/validate-callouts.mjs
- *   node scripts/api-gen/validate-callouts.mjs docs/api
+ *   node scripts/api-gen/validate-callouts.mjs /abs/path/to/api
  */
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { isAbsolute, join } from "node:path";
 import { validateDeprecatedCallouts } from "./docsify-links.mjs";
-
-const API_GEN = dirname(fileURLToPath(import.meta.url));
-const ROOT = dirname(dirname(API_GEN));
+import { resolveDocsDir } from "./docs-dir.mjs";
 
 function toPosix(path) {
   return path.split("\\").join("/");
@@ -34,13 +31,17 @@ function walkMarkdownFiles(dir) {
 }
 
 function main() {
-  const docsDir = join(ROOT, process.argv[2] || "docs/api");
+  const docsRoot = resolveDocsDir();
+  const docsDir = process.argv[2]
+    ? isAbsolute(process.argv[2])
+      ? process.argv[2]
+      : join(docsRoot, process.argv[2])
+    : join(docsRoot, "api");
   if (!existsSync(docsDir) || !statSync(docsDir).isDirectory()) {
     console.error(`validate-callouts: docs folder not found: ${docsDir}`);
     process.exit(1);
   }
 
-  const docsRoot = join(ROOT, "docs");
   const files = walkMarkdownFiles(docsDir).map((filePath) => ({
     rel: toPosix(filePath.slice(docsRoot.length + 1)),
     content: readFileSync(filePath, "utf8"),

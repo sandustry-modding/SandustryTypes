@@ -20,15 +20,14 @@ import {
 import { buildBrowseCatalog, buildSidebarRoots, renderBrowseScript, renderSidebarTreeScript } from "./namespace-cards.mjs";
 import { restyleApiCards } from "./api-cards.mjs";
 import { qualifyFullPageAnchors, rewriteMarkdownLinks } from "./docsify-links.mjs";
+import { resolveDocsDir, TYPES_ROOT } from "./docs-dir.mjs";
 
 function npmCli(platform = process.platform) {
   return platform === "win32" ? "npm.cmd" : "npm";
 }
 
 const API_GEN = dirname(fileURLToPath(import.meta.url));
-const ROOT = dirname(dirname(API_GEN));
-const DOCS = join(ROOT, "docs");
-const OUT = join(DOCS, "api");
+const ROOT = TYPES_ROOT;
 const TYPEDOC_OUT = join(ROOT, ".tmp", "typedoc-api");
 const TYPEDOC = join(API_GEN, "node_modules/typedoc/bin/typedoc");
 const CONFIG = join(API_GEN, "typedoc.json");
@@ -67,16 +66,19 @@ export function runDocs() {
   const workerNs = snapshotNamespaceTree(TYPEDOC_OUT, "worker");
   const engineNs = snapshotNamespaceTree(TYPEDOC_OUT, "engine");
 
-  mkdirSync(OUT, { recursive: true });
-  const linkMap = flattenApiRoutes(TYPEDOC_OUT, OUT);
-  restyleFlattenedApiPages(OUT);
-  rewriteDocsifyMarkdownLinks(DOCS);
-  writeNamespaceBrowseScript(DOCS, linkMap, mainNs, workerNs, engineNs);
-  writeFullPage(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
-  writeApiSidebar(DOCS, OUT, linkMap, mainNs, workerNs, engineNs);
-  writeSearchPaths(DOCS);
+  const docsDir = resolveDocsDir();
+  const outDir = join(docsDir, "api");
 
-  console.log("api-gen: wrote docs/api/ (browse: docs/search.md, combined: docs/full.md)");
+  mkdirSync(outDir, { recursive: true });
+  const linkMap = flattenApiRoutes(TYPEDOC_OUT, outDir);
+  restyleFlattenedApiPages(outDir);
+  rewriteDocsifyMarkdownLinks(docsDir);
+  writeNamespaceBrowseScript(docsDir, linkMap, mainNs, workerNs, engineNs);
+  writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs);
+  writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs);
+  writeSearchPaths(docsDir);
+
+  console.log(`api-gen: wrote ${relative(ROOT, outDir)} (combined: full.md)`);
 }
 
 /**
@@ -160,7 +162,7 @@ function flattenApiRoutes(srcDir, destDir) {
 }
 
 /**
- * Empty-search browse cards (`docs/assets/namespace-cards.js`).
+ * Empty-search browse cards (`assets/namespace-cards.js` on the docs site).
  *
  * @param {string} docsDir
  * @param {Map<string, string>} linkMap
@@ -186,7 +188,7 @@ function writeNamespaceBrowseScript(docsDir, linkMap, mainNs, workerNs, engineNs
 
 /**
  * Docsify resolves links from the docs root, not the current page. Rewrite relative
- * TypeDoc links so they include the `api/` prefix from `docs/`.
+ * TypeDoc links so they include the `api/` prefix on the docs site.
  */
 function fixDocsifyLinks(outDir) {
   for (const filePath of walkMarkdownFiles(outDir)) {
@@ -327,7 +329,7 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
   const parts = [
     "# Sandkit API (full) <!-- {docsify-ignore-all} -->",
     "",
-    "Every generated API page on one document. Use [Search](search.md) when you only need one namespace.",
+    "Every generated API page on one document. Use [Search](types/search.md) when you only need one namespace.",
     "",
   ];
 
@@ -354,32 +356,6 @@ function writeFullPage(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
  */
 function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
   const href = (typedocRel) => linkMap.get(`api/${typedocRel}`) || `api/${typedocRel}`;
-  const pad = (level) => "  ".repeat(level);
-  const heading = (level, title) => `${pad(level)}- ${title}`;
-  const ifFile = (filename, level, label) => {
-    if (!existsSync(join(outDir, filename))) return [];
-    return [`${pad(level)}- [${label}](api/${filename})`];
-  };
-  const ifDocs = (filename, level, label) => {
-    if (!existsSync(join(docsDir, filename))) return [];
-    return [`${pad(level)}- [${label}](${filename})`];
-  };
-
-  const lines = [
-    "- [Home](/)",
-    ...ifDocs("search.md", 0, "Search"),
-    "- [Full API reference](full.md)",
-    ...ifDocs("Changelog.md", 0, "Changelog"),
-    heading(0, "Electron"),
-    ...ifDocs("electron-bridge.md", 1, "Overview"),
-    ...ifFile("electron.md", 1, "API"),
-    heading(0, "Mod files"),
-    ...ifFile("configs.md", 1, "TypeScript types"),
-    ...ifDocs("schemas.md", 1, "JSON Schema"),
-    "",
-  ];
-  writeFileSync(join(docsDir, "_sidebar.md"), `${lines.join("\n").trimEnd()}\n`);
-
   const enumFiles = [...linkMap.values()]
     .filter((h) => /^api\/sandkit\.enums\.[A-Za-z][\w]*\.md$/.test(h))
     .map((h) => h.replace(/^api\//, ""))

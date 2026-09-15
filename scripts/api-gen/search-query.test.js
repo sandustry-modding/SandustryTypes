@@ -1,11 +1,12 @@
 import assert from "node:assert/strict";
-import { createRequire } from "node:module";
 import test from "node:test";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
+import { pathToFileURL } from "node:url";
+import { resolveDocsDir } from "./docs-dir.mjs";
 
-const require = createRequire(import.meta.url);
-const search = require(join(dirname(fileURLToPath(import.meta.url)), "../../docs/assets/search-query.js"));
+const searchFile = join(resolveDocsDir(), "assets", "search-query.js");
+await import(pathToFileURL(searchFile).href);
+const search = globalThis.SMT_SEARCH_QUERY;
 
 test("classifyEntry tags worker, engine, enum, and methods", () => {
   assert.deepEqual(

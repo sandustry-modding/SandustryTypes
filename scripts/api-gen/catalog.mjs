@@ -21,7 +21,7 @@ const OVERRIDES_PATH = join(API_GEN, "overrides.json");
 const GENERATED_DIR = join(API_GEN, "generated");
 const CATALOG_PATH = join(GENERATED_DIR, "api-catalog.json");
 const SUMMARIES_PATH = join(GENERATED_DIR, "namespace-summaries.json");
-const GAPS_PATH = join(ROOT, "docs", "generated", "api-gaps.md");
+const GAPS_PATH = join(GENERATED_DIR, "api-gaps.md");
 const CACHE_PATH = join(ROOT, ".tmp", "sandkit.html");
 const SRC = join(ROOT, "src");
 

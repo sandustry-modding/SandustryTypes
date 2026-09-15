@@ -1,18 +1,15 @@
 #!/usr/bin/env node
 /**
- * Check markdown links under a Docsify `docs/` folder.
+ * Check markdown links under the Docsify site clone (`../docs`).
  *
  * Usage:
  *   node scripts/api-gen/validate-links.mjs
- *   node scripts/api-gen/validate-links.mjs docs
+ *   node scripts/api-gen/validate-links.mjs /abs/path/to/docs
  */
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { isAbsolute, join } from "node:path";
 import { validateDocsifyLinks } from "./docsify-links.mjs";
-
-const API_GEN = dirname(fileURLToPath(import.meta.url));
-const ROOT = dirname(dirname(API_GEN));
+import { resolveDocsDir } from "./docs-dir.mjs";
 
 function toPosix(path) {
   return path.split("\\").join("/");
@@ -34,7 +31,11 @@ function walkMarkdownFiles(dir) {
 }
 
 function main() {
-  const docsDir = join(ROOT, process.argv[2] || "docs");
+  const docsDir = process.argv[2]
+    ? isAbsolute(process.argv[2])
+      ? process.argv[2]
+      : join(resolveDocsDir(), process.argv[2])
+    : resolveDocsDir();
   if (!existsSync(docsDir) || !statSync(docsDir).isDirectory()) {
     console.error(`validate-links: docs folder not found: ${docsDir}`);
     process.exit(1);

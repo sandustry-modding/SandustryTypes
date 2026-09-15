@@ -7,8 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+
+- Generate writes API pages, schemas, and search assets into the sibling docs site clone (`../docs`).
+- This package no longer keeps a `docs/` tree.
+
 ### Added
 
+- Domain guides for world, factory, energy, player, UI, progression, entities, runtime services, and engine vs public API
 - `sandkit.api.ui.select` and related dialog, region, override, hotbar, and component APIs
 - `npm run docs:links` checks markdown links against Docsify routes and heading ids
 - Docs sidebar Settings toggle hides deprecated API members and search hits

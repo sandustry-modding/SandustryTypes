@@ -4,7 +4,6 @@
  * Checks (before npm publish):
  * - clean git working tree
  * - CHANGELOG.md has a dated section for package.json version
- * - docs/Changelog.md matches CHANGELOG.md
  * - version is not already on the npm registry
  * - npm auth works (runs `npm login` when whoami fails)
  * - gh auth works (`gh auth login` when needed)
@@ -242,15 +241,9 @@ if (status.stdout.trim()) {
 
 // --- changelog ---
 const changelogPath = path.join(root, "CHANGELOG.md");
-const docsChangelogPath = path.join(root, "docs", "Changelog.md");
 if (!fs.existsSync(changelogPath)) fail("missing CHANGELOG.md");
-if (!fs.existsSync(docsChangelogPath)) fail("missing docs/Changelog.md");
 
 const changelog = fs.readFileSync(changelogPath, "utf8");
-const docsChangelog = fs.readFileSync(docsChangelogPath, "utf8");
-if (changelog !== docsChangelog) {
-  fail("docs/Changelog.md must match CHANGELOG.md");
-}
 
 if (!versionHeadingPattern(version).test(changelog)) {
   fail(`CHANGELOG.md must include a dated section "## ${version} - YYYY-MM-DD" before release`);
