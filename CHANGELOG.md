@@ -7,10 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 0.7.0 - 2026-09-16
+
+https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.7.0
+
 ### Changed
 
 - Generate writes API pages, schemas, and search assets into the sibling docs site clone (`../docs`).
 - This package no longer keeps a `docs/` tree.
+- `verify-package` runs the `tsc` CLI so TypeScript 7 still typechecks the packed tarball.
 
 ### Added
 

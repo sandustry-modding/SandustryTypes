@@ -10,8 +10,8 @@ import { fileURLToPath } from "node:url";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const require = createRequire(import.meta.url);
-const ts = require("typescript");
 const pkg = JSON.parse(fs.readFileSync(path.join(root, "package.json"), "utf8"));
+const tscBin = path.join(path.dirname(require.resolve("typescript/package.json")), "bin", "tsc");
 
 const tmpRoot = path.join(root, ".tmp", "verify-package");
 fs.rmSync(tmpRoot, { recursive: true, force: true });
@@ -196,24 +196,14 @@ const deepConfig = writeTsconfig("tsconfig.deep.json", ["deep.ts"]);
  * @param {string} label
  */
 function typecheckConsumer(configPath, label) {
-  const configFile = ts.readConfigFile(configPath, ts.sys.readFile);
-  if (configFile.error) {
-    fail(`${label}: ${ts.flattenDiagnosticMessageText(configFile.error.messageText, "\n")}`);
-  }
-  const parsed = ts.parseJsonConfigFileContent(configFile.config, ts.sys, consumerDir);
-  const program = ts.createProgram({
-    rootNames: parsed.fileNames,
-    options: parsed.options,
+  const result = spawnSync(process.execPath, [tscBin, "--pretty", "false", "-p", configPath], {
+    cwd: consumerDir,
+    encoding: "utf8",
   });
-  const diagnostics = ts.getPreEmitDiagnostics(program);
-  if (diagnostics.length) {
-    for (const d of diagnostics) {
-      const msg = ts.flattenDiagnosticMessageText(d.messageText, "\n");
-      const file = d.file ? `${path.relative(consumerDir, d.file.fileName)}:` : "";
-      console.error(`${label}: ${file}${msg}`);
-    }
-    fail(`${label} typecheck failed (${diagnostics.length} diagnostic(s))`);
-  }
+  if (result.status === 0) return;
+  if (result.stdout?.trim()) console.error(result.stdout);
+  if (result.stderr?.trim()) console.error(result.stderr);
+  fail(`${label} typecheck failed (exit ${result.status})`);
 }
 
 typecheckConsumer(ambientConfig, "ambient");
