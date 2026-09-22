@@ -5,9 +5,9 @@
  * `@sandustry-modding/types/configs` when typing mod folder config files.
  *
  * JSON Schema (GitHub Pages):
- * https://sandustry-modding.github.io/SandustryTypes/schemas/modinfo.json
- * https://sandustry-modding.github.io/SandustryTypes/schemas/patches.json
- * https://sandustry-modding.github.io/SandustryTypes/schemas/workshop.json
+ * https://sandustry-modding.github.io/schemas/modinfo.json
+ * https://sandustry-modding.github.io/schemas/patches.json
+ * https://sandustry-modding.github.io/schemas/workshop.json
  *
  * @module
  *

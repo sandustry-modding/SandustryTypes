@@ -17,7 +17,7 @@ const ROOT = TYPES_ROOT;
 const ENTRY = join(ROOT, "src", "configs", "index.d.ts");
 const TSCONFIG = join(ROOT, "tsconfig.json");
 const GENERATOR_PKG = join(API_GEN, "node_modules", "ts-json-schema-generator");
-const PAGES_BASE = "https://sandustry-modding.github.io/SandustryTypes/schemas";
+const PAGES_BASE = "https://sandustry-modding.github.io/schemas";
 
 /** @type {{ typeName: string, fileName: string, title: string }[]} */
 const TARGETS = [

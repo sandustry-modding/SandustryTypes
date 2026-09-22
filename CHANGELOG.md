@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Changed
+
+- JSON Schema `$id` and docs URLs use `https://sandustry-modding.github.io/schemas/` (not `/SandustryTypes/schemas/`).
+
 ## 0.8.0 - 2026-09-22
 
 https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.8.0
