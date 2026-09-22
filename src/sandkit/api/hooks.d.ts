@@ -541,6 +541,26 @@ export namespace hooks {
     amount: number;
   }
 
+  /** Cell origin used on structure move and remove payloads. */
+  export interface StructureCellRef {
+    x: number;
+    y: number;
+  }
+
+  /** Successful move row on {@link ModifierHookMap} `"structures:moved:prepare"`. */
+  export interface StructureMoveRecord {
+    from: Vector2;
+    to: Vector2;
+  }
+
+  /** Failed place row on structure move and by-move remove payloads. */
+  export interface StructureMoveFailure {
+    from?: Vector2;
+    type?: structures.StructureType;
+    data?: structures.StructureData;
+    [key: string]: unknown;
+  }
+
   /** Intercept hook argument shapes keyed by hook id. */
   export interface InterceptHookMap {
     "item:use": {
@@ -670,35 +690,47 @@ export namespace hooks {
       pattern: number[][];
     };
     "vacuum:element:prepare": {
-      elementType: number;
-      matterType: number;
+      elementType: elements.ElementType;
+      matterType: elements.MatterType;
       isTransportable: boolean;
       collectable: boolean;
       visibleInPicker: boolean;
     };
-    "player:movement:prepare": Record<string, unknown>;
+    "player:movement:prepare": {
+      horizontalMaxSpeed: number;
+      verticalMaxSpeed: number;
+      horizontalAcceleration: number;
+      verticalAcceleration: number;
+      verticalDeceleration: number;
+      kickstartVelocity: number;
+      fallbackKickstartVelocity: number;
+    };
     /** @deprecated Use `"player:movement:prepare"` instead. */
     "player:movement": ModifierHookMap["player:movement:prepare"];
-    "building:placementLimit:prepare": { maxCount: number | null } & Record<string, unknown>;
+    "building:placementLimit:prepare": {
+      structureType: structures.StructureRef;
+      currentCount: number;
+      maxCount: number | null;
+    };
     /** @deprecated Use `"building:placementLimit:prepare"` instead. */
     "building:placementLimit": ModifierHookMap["building:placementLimit:prepare"];
     /** @deprecated Use `"building:placementLimit:prepare"` instead. */
     "building:placement-limit": ModifierHookMap["building:placementLimit:prepare"];
-    "fluxEmanator:processing:prepare": { speedMultiplier: number } & Record<string, unknown>;
+    "fluxEmanator:processing:prepare": { speedMultiplier: number };
     /** @deprecated Use `"fluxEmanator:processing:prepare"` instead. */
     "fluxEmanator:processing": ModifierHookMap["fluxEmanator:processing:prepare"];
     /** @deprecated Use `"fluxEmanator:processing:prepare"` instead. */
     "flux-emanator:processing": ModifierHookMap["fluxEmanator:processing:prepare"];
-    "render:pipes:prepare": { layer?: string } & Record<string, unknown>;
+    "render:pipes:prepare": { layer: "foreground" | "background" };
     /** @deprecated Use `"render:pipes:prepare"` instead. */
     "render:pipes": ModifierHookMap["render:pipes:prepare"];
     "structures:moved:prepare": {
-      moved: unknown[];
-      failedToPlace: unknown[];
+      moved: StructureMoveRecord[];
+      failedToPlace: StructureMoveFailure[];
     };
     "structures:removed:prepare": {
-      removed: unknown[];
-      structures?: unknown[];
+      removed: Array<structures.Structure | StructureCellRef | StructureMoveFailure>;
+      structures?: structures.Structure[];
       byMove: boolean;
     };
     "weapon:reload:prepare": {

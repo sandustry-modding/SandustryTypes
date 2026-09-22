@@ -1,5 +1,7 @@
 import type { elements as sharedElements } from "../../shared/api/elements";
 import type { LooseString } from "../../shared/nominal";
+import type { terrains } from "../../shared/api/terrains";
+import type { hooks } from "./hooks";
 
 /**
  * Worker-thread `sandkit.api.events` — subscribe to and emit worker-scoped events.
@@ -67,14 +69,14 @@ export namespace events {
     /** Required when subscribing to `element:moved`. Optional on emit. */
     elementType?: sharedElements.ElementType;
     /** Required when subscribing to `terrain:updated`. Optional on emit. */
-    terrainType?: number;
+    terrainType?: terrains.TerrainType;
   }
 
   /** Options for {@link on}. */
   export type EventOnOptions<K extends EventId> = K extends "element:moved"
     ? { guard: { elementType: sharedElements.ElementType } }
     : K extends "terrain:updated" | "terrain:update"
-      ? { guard: { terrainType: number } }
+      ? { guard: { terrainType: terrains.TerrainType } }
       : { guard?: EventGuard };
 
   /** Options for {@link emit}. */
@@ -84,11 +86,11 @@ export namespace events {
 
   /** Known worker event payloads. Unlisted ids still use `unknown`. */
   export interface EventPayloadMap {
-    "element:moved": Record<string, unknown>;
-    "terrain:updated": Record<string, unknown>;
+    "element:moved": hooks.InterceptHookMap["element:move"];
+    "terrain:updated": hooks.InterceptHookMap["cell:process"];
     /** @deprecated Use `"terrain:updated"` instead. */
     "terrain:update": EventPayloadMap["terrain:updated"];
-    "worker:update:post": Record<string, unknown>;
+    "worker:update:post": { dt: number };
     /** @deprecated Use `"worker:update:post"` instead. */
     "update:post": EventPayloadMap["worker:update:post"];
   }

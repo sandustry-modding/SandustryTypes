@@ -1,3 +1,5 @@
+import type { ProjectileType } from "../enums/index";
+
 /**
  * Projectile definitions, spawning, and lifecycle.
  *
@@ -72,7 +74,7 @@ export namespace projectiles {
   /** Blueprint used to spawn a projectile. */
   export interface ProjectileBlueprint {
     opts: Record<string, unknown>;
-    type: unknown;
+    type: ProjectileType;
   }
 
   /** Active projectile instance. */
@@ -80,6 +82,7 @@ export namespace projectiles {
     id: number;
     x: number;
     y: number;
+    type: ProjectileType;
     [key: string]: unknown;
   }
 }

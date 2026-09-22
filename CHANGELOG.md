@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - JSON Schema `$id` and docs URLs use `https://sandustry-modding.github.io/schemas/` (not `/SandustryTypes/schemas/`).
 - Intercept hook `args` use emit-site fields from official Sandkit and the 0.5.6 extract.
+- Modify hook `args`, event payloads, signal target payload, and projectile `type` use emit-site fields from official Sandkit and the 0.5.6 extract.
 
 ## 0.8.0 - 2026-09-22
 

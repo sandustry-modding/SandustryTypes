@@ -1,3 +1,5 @@
+import type { structures } from "../../shared/api/structures";
+
 /**
  * Signal target registration for structures.
  *
@@ -43,7 +45,7 @@ export namespace signals {
      * ```
      */
     export function register(
-      structureTypeOrId: string | StructureType,
+      structureTypeOrId: structures.StructureRef,
       apply: (structure: Structure, payload: SignalTargetPayloadV1) => void,
     ): void;
   }
@@ -64,7 +66,7 @@ export namespace signals {
      * ```
      */
     export function register(
-      structureTypeOrId: string | StructureType,
+      structureTypeOrId: structures.StructureRef,
       handler: (structure: Structure) => void,
     ): void;
   }
@@ -101,10 +103,14 @@ export namespace signals {
    */
   export function setOutputAtCell(cellX: number, cellY: number, on: boolean): void;
 
-  /** Structure type id or enum value. */
-  export type StructureType = unknown;
-  /** Structure instance in the world. */
-  export type Structure = unknown;
+  /** Structure type handle. */
+  export type StructureType = structures.StructureType;
+  /** Live structure instance. */
+  export type Structure = structures.Structure;
   /** Payload delivered to a signal target handler. */
-  export type SignalTargetPayloadV1 = unknown;
+  export interface SignalTargetPayloadV1 {
+    combined: boolean;
+    inputCount: number;
+    onCount: number;
+  }
 }

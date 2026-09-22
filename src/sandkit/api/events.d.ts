@@ -1,4 +1,7 @@
 import type { LooseString } from "../../shared/nominal";
+import type { structures } from "../../shared/api/structures";
+import type { terrains } from "../../shared/api/terrains";
+import type { hooks } from "./hooks";
 
 /**
  * `sandkit.api.events` — subscribe to and emit named game events.
@@ -189,19 +192,19 @@ export namespace events {
       kind: string;
       cellX: number;
       cellY: number;
-      prepared: Readonly<Record<string, unknown>>;
+      prepared: Readonly<hooks.ItemUseStats>;
     };
-    "frame:render": Record<string, unknown>;
-    "scene:game:started": Record<string, unknown>;
+    "frame:render": Record<string, never>;
+    "scene:game:started": Record<string, never>;
     /** @deprecated Use `"scene:game:started"` instead. */
     "scene:started:game": EventPayloadMap["scene:game:started"];
-    "earlyAccess:completed": Record<string, unknown>;
+    "earlyAccess:completed": Record<string, never>;
     /** @deprecated Use `"earlyAccess:completed"` instead. */
     "earlyAccess:complete": EventPayloadMap["earlyAccess:completed"];
     "terrain:destroyed": {
       cellX: number;
       cellY: number;
-      cellType: number;
+      cellType: terrains.TerrainType;
       /** @deprecated Use {@link cellX} instead. */
       x?: number;
       /** @deprecated Use {@link cellY} instead. */
@@ -221,7 +224,7 @@ export namespace events {
       level: number;
     };
     "building:placed": {
-      structure: Record<string, unknown>;
+      structure: structures.Structure;
       x: number;
       y: number;
       isBatch: boolean;
@@ -240,19 +243,19 @@ export namespace events {
       y: number;
       isBatch: boolean;
     };
-    "structures:placed": { structures: unknown[] };
+    "structures:placed": { structures: structures.Structure[] };
     "structures:removed": {
-      removed: unknown[];
-      structures?: unknown[];
+      removed: Array<structures.Structure | hooks.StructureCellRef | hooks.StructureMoveFailure>;
+      structures?: structures.Structure[];
       byMove: boolean;
     };
     "structures:moved": {
-      moved: unknown[];
-      failedToPlace: unknown[];
+      moved: hooks.StructureMoveRecord[];
+      failedToPlace: hooks.StructureMoveFailure[];
     };
-    "game:ready": Record<string, unknown>;
-    "game:started": Record<string, unknown>;
-    "tutorial:stepChanged": { step: unknown };
+    "game:ready": Record<string, never>;
+    "game:started": Record<string, never>;
+    "tutorial:stepChanged": { step: number };
     "tutorial:completed": { skipped: boolean };
     "tech:unlocked": {
       techId: string;
@@ -277,6 +280,7 @@ export namespace events {
        * zeroes `velocity.y`. Vanilla gravity is applied after this event.
        */
       dt?: number;
+      teleportMapLerpMs?: number;
       state?: unknown;
     };
   }
