@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T17:49:00.743Z",
+  "generatedAt": "2026-09-22T19:54:57.941Z",
   "officialSource": "https://sandustry.com/sandkit.html",
   "stats": {
-    "namespaceCount": 67,
-    "officialMethodCount": 268,
-    "declaredMethodCount": 472,
-    "openGapCount": 28
+    "namespaceCount": 62,
+    "officialMethodCount": 256,
+    "declaredMethodCount": 493,
+    "openGapCount": 0
   },
   "namespaces": {
     "action": {
@@ -153,10 +153,14 @@
       "description": "Read-only engine constants, including per-cell physics modes.",
       "worker": true,
       "methodCount": {
-        "official": 0,
+        "official": 3,
         "declared": 1
       },
-      "officialMethods": [],
+      "officialMethods": [
+        "constants.physics.aggressiveSkip",
+        "constants.physics.normal",
+        "constants.physics.skip"
+      ],
       "declaredMethods": [
         "constants.physics"
       ],
@@ -167,22 +171,17 @@
       "worker": false,
       "methodCount": {
         "official": 1,
-        "declared": 2
+        "declared": 3
       },
       "officialMethods": [
         "cooldown.isReady"
       ],
       "declaredMethods": [
         "cooldown.check",
-        "cooldown.isReady"
+        "cooldown.isReady",
+        "cooldown.start"
       ],
-      "gaps": [
-        {
-          "path": "cooldown.start",
-          "note": "Official name; types expose check and isReady",
-          "source": "expected"
-        }
-      ]
+      "gaps": []
     },
     "discoveries": {
       "description": "Mark elements and terrains as discovered in the player's log.",
@@ -230,7 +229,7 @@
       "worker": true,
       "methodCount": {
         "official": 24,
-        "declared": 50
+        "declared": 55
       },
       "officialMethods": [
         "elements.addParticleVelocityAtCell",
@@ -291,6 +290,9 @@
         "elements.getVelocityAtCell",
         "elements.isFreeFallingAtCell",
         "elements.isTypeAtCell",
+        "elements.markMovementBlockedByElementIndex",
+        "elements.markMovementBlockedByIndex",
+        "elements.moveBetweenCells",
         "elements.refreshColorAtCell",
         "elements.refreshColorAtCellWhenIdle",
         "elements.register",
@@ -306,16 +308,13 @@
         "elements.setPhysicsAtCellWhenIdle",
         "elements.setVelocityAtCell",
         "elements.setVelocityAtCellWhenIdle",
+        "elements.swapBetweenCells",
+        "elements.swapCells",
         "elements.teleportBetweenCells",
         "elements.teleportBetweenCellsWhenIdle",
         "elements.updateDefinition"
       ],
-      "gaps": [
-        {
-          "path": "elements.moveBetweenCells",
-          "source": "official"
-        }
-      ]
+      "gaps": []
     },
     "energy": {
       "description": "Register energy types and add, consume, or read power on the network at a cell.",
@@ -556,7 +555,7 @@
       "worker": false,
       "methodCount": {
         "official": 9,
-        "declared": 10
+        "declared": 12
       },
       "officialMethods": [
         "input.getBoundKeys",
@@ -573,6 +572,8 @@
         "input.getBoundKeys",
         "input.getDisplayKey",
         "input.getMouseCellPosition",
+        "input.getMousePositionAtCell",
+        "input.getMousePositionAtWorld",
         "input.isAltHeld",
         "input.isCtrlHeld",
         "input.pressBinding",
@@ -581,19 +582,14 @@
         "input.resetMouseState",
         "input.triggerBinding"
       ],
-      "gaps": [
-        {
-          "path": "input.getMousePositionAtWorld",
-          "source": "official"
-        }
-      ]
+      "gaps": []
     },
     "items": {
       "description": "Register custom items and create or query item instances.",
       "worker": false,
       "methodCount": {
         "official": 6,
-        "declared": 6
+        "declared": 8
       },
       "officialMethods": [
         "items.getActive",
@@ -607,20 +603,13 @@
         "items.createFromId",
         "items.getActive",
         "items.getDefinitionById",
+        "items.getRegisteredIds",
         "items.isActiveById",
         "items.register",
+        "items.spriteMounts",
         "items.updateDefinition"
       ],
-      "gaps": [
-        {
-          "path": "items.getRegisteredIds",
-          "source": "official"
-        },
-        {
-          "path": "items.spriteMounts",
-          "source": "official"
-        }
-      ]
+      "gaps": []
     },
     "lights": {
       "description": "Transient VFX lights and long-lived managed lights at world positions.",
@@ -650,51 +639,20 @@
       ],
       "gaps": []
     },
-    "local": {
-      "description": "",
-      "worker": false,
-      "methodCount": {
-        "official": 3,
-        "declared": 0
-      },
-      "officialMethods": [
-        "local.get",
-        "local.remove",
-        "local.set"
-      ],
-      "declaredMethods": [],
-      "gaps": [
-        {
-          "path": "local.get",
-          "source": "official"
-        },
-        {
-          "path": "local.set",
-          "source": "official"
-        },
-        {
-          "path": "local.remove",
-          "source": "official"
-        }
-      ]
-    },
     "main": {
       "description": "",
       "worker": true,
       "methodCount": {
         "official": 1,
-        "declared": 0
+        "declared": 1
       },
       "officialMethods": [
         "main.emitEvent"
       ],
-      "declaredMethods": [],
-      "gaps": [
-        {
-          "path": "main.emitEvent",
-          "source": "official"
-        }
-      ]
+      "declaredMethods": [
+        "main.emitEvent"
+      ],
+      "gaps": []
     },
     "maps": {
       "description": "List available maps and start a custom or vanilla map.",
@@ -732,24 +690,6 @@
       ],
       "gaps": []
     },
-    "overrideHandle": {
-      "description": "",
-      "worker": false,
-      "methodCount": {
-        "official": 1,
-        "declared": 0
-      },
-      "officialMethods": [
-        "overrideHandle.remove"
-      ],
-      "declaredMethods": [],
-      "gaps": [
-        {
-          "path": "overrideHandle.remove",
-          "source": "official"
-        }
-      ]
-    },
     "patterns": {
       "description": "Define reusable excavation shapes and apply them at a cell.",
       "worker": true,
@@ -765,34 +705,6 @@
         "patterns.excavateAtCell"
       ],
       "gaps": []
-    },
-    "physics": {
-      "description": "",
-      "worker": false,
-      "methodCount": {
-        "official": 3,
-        "declared": 0
-      },
-      "officialMethods": [
-        "physics.aggressiveSkip",
-        "physics.normal",
-        "physics.skip"
-      ],
-      "declaredMethods": [],
-      "gaps": [
-        {
-          "path": "physics.normal",
-          "source": "official"
-        },
-        {
-          "path": "physics.skip",
-          "source": "official"
-        },
-        {
-          "path": "physics.aggressiveSkip",
-          "source": "official"
-        }
-      ]
     },
     "pickups": {
       "description": "Spawn, query, remove, and collect loose items lying in the world.",
@@ -842,7 +754,7 @@
       "worker": true,
       "methodCount": {
         "official": 7,
-        "declared": 23
+        "declared": 25
       },
       "officialMethods": [
         "player.buildings.removeById",
@@ -861,8 +773,10 @@
         "player.buildings.unlockByType",
         "player.getPositionAtWorld",
         "player.getWorldPosition",
+        "player.hasById",
         "player.inventory.addById",
         "player.inventory.addFromId",
+        "player.inventory.hasById",
         "player.isCollidingWithCell",
         "player.isOnGround",
         "player.isPositionClearAtWorld",
@@ -878,13 +792,7 @@
         "player.unlockById",
         "player.unlockByType"
       ],
-      "gaps": [
-        {
-          "path": "player.inventory.hasById",
-          "note": "Test whether inventory contains an item id",
-          "source": "expected"
-        }
-      ]
+      "gaps": []
     },
     "processing": {
       "description": "Register recipes for built-in Grower, Shaker, and Kinetic Press structures.",
@@ -1008,7 +916,7 @@
       "worker": false,
       "methodCount": {
         "official": 2,
-        "declared": 2
+        "declared": 3
       },
       "officialMethods": [
         "resources.collectFluxiteAtCell",
@@ -1016,14 +924,10 @@
       ],
       "declaredMethods": [
         "resources.collectFluxiteAtCell",
+        "resources.refresh",
         "resources.updateEnergy"
       ],
-      "gaps": [
-        {
-          "path": "resources.refresh",
-          "source": "official"
-        }
-      ]
+      "gaps": []
     },
     "scene": {
       "description": "Read which scene is currently active.",
@@ -1077,7 +981,7 @@
       "worker": true,
       "methodCount": {
         "official": 1,
-        "declared": 8
+        "declared": 10
       },
       "officialMethods": [
         "shared.buffers.get"
@@ -1088,9 +992,11 @@
         "shared.buffers.create",
         "shared.buffers.ensure",
         "shared.buffers.get",
+        "shared.buffers.require",
         "shared.create",
         "shared.ensure",
-        "shared.get"
+        "shared.get",
+        "shared.require"
       ],
       "gaps": []
     },
@@ -1099,25 +1005,17 @@
       "worker": false,
       "methodCount": {
         "official": 0,
-        "declared": 2
+        "declared": 5
       },
       "officialMethods": [],
       "declaredMethods": [
+        "signals.interactables.register",
         "signals.register",
+        "signals.registerSenderType",
+        "signals.setOutputAtCell",
         "signals.targets.register"
       ],
-      "gaps": [
-        {
-          "path": "signals.registerSenderType",
-          "note": "Register a signal sender structure type",
-          "source": "expected"
-        },
-        {
-          "path": "signals.setOutputAtCell",
-          "note": "Write signal output at a structure cell",
-          "source": "expected"
-        }
-      ]
+      "gaps": []
     },
     "sound": {
       "description": "Play, layer, and stop sounds with optional distance-based volume and pan.",
@@ -1146,54 +1044,6 @@
       ],
       "gaps": []
     },
-    "source": {
-      "description": "",
-      "worker": false,
-      "methodCount": {
-        "official": 7,
-        "declared": 0
-      },
-      "officialMethods": [
-        "source.activateSlot",
-        "source.clearSlot",
-        "source.dispose",
-        "source.getAction",
-        "source.getBankIndex",
-        "source.getSlotCount",
-        "source.isAvailable"
-      ],
-      "declaredMethods": [],
-      "gaps": [
-        {
-          "path": "source.isAvailable",
-          "source": "official"
-        },
-        {
-          "path": "source.getBankIndex",
-          "source": "official"
-        },
-        {
-          "path": "source.getSlotCount",
-          "source": "official"
-        },
-        {
-          "path": "source.getAction",
-          "source": "official"
-        },
-        {
-          "path": "source.activateSlot",
-          "source": "official"
-        },
-        {
-          "path": "source.clearSlot",
-          "source": "official"
-        },
-        {
-          "path": "source.dispose",
-          "source": "official"
-        }
-      ]
-    },
     "sprites": {
       "description": "Load mod sprites, look them up by id, and manage player mod sprites.",
       "worker": false,
@@ -1219,12 +1069,15 @@
       "description": "Persistent per-mod key-value storage and a device-local store.",
       "worker": false,
       "methodCount": {
-        "official": 4,
+        "official": 7,
         "declared": 7
       },
       "officialMethods": [
         "storage.ensure",
         "storage.get",
+        "storage.local.get",
+        "storage.local.remove",
+        "storage.local.set",
         "storage.remove",
         "storage.set"
       ],
@@ -1257,7 +1110,7 @@
       "description": "Register buildings, recipes, and processors; place, remove, and query structures on the grid.",
       "worker": true,
       "methodCount": {
-        "official": 12,
+        "official": 11,
         "declared": 50
       },
       "officialMethods": [
@@ -1268,7 +1121,6 @@
         "structures.isLauncherAtCell",
         "structures.isType",
         "structures.isTypeAtCell",
-        "structures.processing.context.commit",
         "structures.setSpritesheetIndex",
         "structures.setSpritesheetIndexAtCell",
         "structures.setSpritesheetIndexByValue",
@@ -1326,12 +1178,7 @@
         "structures.updateData",
         "structures.updateDefinition"
       ],
-      "gaps": [
-        {
-          "path": "structures.processing.context.commit",
-          "source": "official"
-        }
-      ]
+      "gaps": []
     },
     "tech": {
       "description": "Register tech-tree nodes and read or change their locked state.",
@@ -1588,46 +1435,22 @@
       ],
       "gaps": []
     },
-    "visibilityHandle": {
-      "description": "",
-      "worker": false,
-      "methodCount": {
-        "official": 1,
-        "declared": 0
-      },
-      "officialMethods": [
-        "visibilityHandle.restore"
-      ],
-      "declaredMethods": [],
-      "gaps": [
-        {
-          "path": "visibilityHandle.restore",
-          "source": "official"
-        }
-      ]
-    },
     "worker": {
       "description": "",
       "worker": true,
       "methodCount": {
         "official": 2,
-        "declared": 0
+        "declared": 2
       },
       "officialMethods": [
         "worker.getCount",
         "worker.getIndex"
       ],
-      "declaredMethods": [],
-      "gaps": [
-        {
-          "path": "worker.getIndex",
-          "source": "official"
-        },
-        {
-          "path": "worker.getCount",
-          "source": "official"
-        }
-      ]
+      "declaredMethods": [
+        "worker.getCount",
+        "worker.getIndex"
+      ],
+      "gaps": []
     },
     "workers": {
       "description": "Enable this mod's post-update worker hook.",

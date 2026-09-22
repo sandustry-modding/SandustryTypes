@@ -101,6 +101,15 @@ export namespace player {
   /** Player inventory helpers. */
   export namespace inventory {
     /**
+     * Return true when inventory contains the item id.
+     *
+     * @param itemId - Registered item id or numeric {@link items.ItemId}.
+     * Live checks use numeric vanilla ids; string enum names may return false.
+     *
+     */
+    export function hasById(itemId: string | number): boolean;
+
+    /**
      * Add an item to inventory by item id.
      *
      * @param itemId - Registered item id string.

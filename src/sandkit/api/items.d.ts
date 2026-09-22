@@ -43,6 +43,16 @@ export namespace items {
    * @param itemId - Registered item id.
    */
   export function createFromId(itemId: ItemId): ModItem;
+  /**
+   * Return registered item ids.
+   * Mix of numeric vanilla {@link ItemId} values and string mod ids.
+   */
+  export function getRegisteredIds(): Array<ItemId | string | number>;
+  /**
+   * Sprite mount id map for item display.
+   * Live keys include `onehand`, `backhand`, and `cryoblaster`.
+   */
+  export const spriteMounts: Readonly<Record<string, string>>;
   /** Returns the item definition for the active hotbar slot. */
   export function getActive(): ItemDefinition | undefined;
   /**

@@ -54,11 +54,33 @@ test("resolveAlias maps official paths to declared names", () => {
     "world.mutate": "grid.mutate",
     "lights.vfx.createAtWorld": "lights.temporary.createAtWorld",
   };
-  assert.equal(resolveAlias("time.getElapsedMs", aliases), "getTimeMs");
+  assert.equal(resolveAlias("time.getElapsedMs", aliases), "time.getTimeMs");
   assert.equal(resolveAlias("world.mutate", aliases), "grid.mutate");
   assert.equal(
     resolveAlias("lights.vfx.createAtWorld", aliases),
     "lights.temporary.createAtWorld",
   );
   assert.equal(resolveAlias("action.getActive", aliases), "action.getActive");
+});
+
+test("qualifyOfficialPath prefixes nested dotted signatures", async () => {
+  const { parseOfficialApiInventory } = await import("./lib/sandkit-html.mjs");
+  const html = readFileSync(CACHE, "utf8");
+  const members = parseOfficialApiInventory(html);
+  assert.ok(
+    members.some((m) => m.path === "storage.local.get"),
+    "local.get under api.storage should qualify as storage.local.get",
+  );
+  assert.ok(
+    members.some((m) => m.path === "constants.physics.normal"),
+    "physics.normal under api.constants should qualify as constants.physics.normal",
+  );
+  assert.ok(
+    !members.some((m) => m.path.startsWith("source.")),
+    "return-handle source.* signatures should be skipped",
+  );
+  assert.ok(
+    !members.some((m) => m.path.includes(".context.") || m.path.includes(".writer.")),
+    "callback context and writer methods should be skipped",
+  );
 });

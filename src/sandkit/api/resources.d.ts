@@ -15,6 +15,11 @@ export namespace resources {
    */
   export function collectFluxiteAtCell(...args: CellCoordinates): void;
   /**
+   * Refresh a resource HUD display by id.
+   * @param resourceId - Resource display id (not limited to energy).
+   */
+  export function refresh(resourceId: string): void;
+  /**
    * Update stored energy by amount with optional UI deferral.
    * @param amount - Energy delta (positive or negative).
    * @param options - When `deferUi` is true, skip immediate UI refresh.

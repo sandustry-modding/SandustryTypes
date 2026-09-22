@@ -38,7 +38,17 @@ export namespace input {
    * Return the mouse position in cell coordinates.
    * @returns Cell `{ x, y }` under the cursor.
    */
+  export function getMousePositionAtCell(): { x: number; y: number };
+  /**
+   * @deprecated Use {@link getMousePositionAtCell} instead.
+   * @returns Cell `{ x, y }` under the cursor.
+   */
   export function getMouseCellPosition(): { x: number; y: number };
+  /**
+   * Return the mouse position in world pixels.
+   * @returns World `{ x, y }` under the cursor.
+   */
+  export function getMousePositionAtWorld(): { x: number; y: number };
 
   /**
    * Return the keys currently bound to a binding id.

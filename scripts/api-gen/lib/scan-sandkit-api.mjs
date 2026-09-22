@@ -13,13 +13,12 @@ const FILE_TO_NAMESPACE = {
 };
 
 /**
- * @param {string} srcRoot Repo `src/` directory.
+ * Scan one `*.d.ts` API directory into declared member paths.
+ * @param {string} apiDir
+ * @param {DeclaredMember[]} members
  */
-export function scanDeclaredSandkitApi(srcRoot) {
-  const apiDir = join(srcRoot, "sandkit", "api");
-  /** @type {DeclaredMember[]} */
-  const members = [];
-
+function scanApiDirectory(apiDir, members) {
+  if (!existsSync(apiDir)) return;
   for (const entry of readdirSync(apiDir)) {
     const full = join(apiDir, entry);
     if (statSync(full).isDirectory()) continue;
@@ -29,7 +28,16 @@ export function scanDeclaredSandkitApi(srcRoot) {
     const ns = FILE_TO_NAMESPACE[stem] ?? stem;
     members.push(...scanDeclarationFile(full, [ns]));
   }
+}
 
+/**
+ * @param {string} srcRoot Repo `src/` directory.
+ */
+export function scanDeclaredSandkitApi(srcRoot) {
+  /** @type {DeclaredMember[]} */
+  const members = [];
+  scanApiDirectory(join(srcRoot, "sandkit", "api"), members);
+  scanApiDirectory(join(srcRoot, "worker", "api"), members);
   return dedupeMembers(members);
 }
 
@@ -163,10 +171,34 @@ export function scanWorkerNamespaces(srcRoot) {
 
 /**
  * Resolve a catalog path through alias map (official → declared).
+ * Bare alias targets replace only the last path segment.
  * @param {string} path
  * @param {Record<string, string>} aliases
  */
 export function resolveAlias(path, aliases) {
-  if (aliases[path]) return aliases[path];
-  return path;
+  const target = aliases[path];
+  if (!target) return path;
+  if (target.includes(".")) return target;
+  const parts = path.split(".");
+  parts[parts.length - 1] = target;
+  return parts.join(".");
+}
+
+/**
+ * @param {Set<string>} declaredPaths
+ * @param {DeclaredMember[]} declaredMembers
+ * @param {Record<string, string>} aliases
+ * @param {string} path
+ */
+export function isPathDeclared(declaredPaths, declaredMembers, aliases, path) {
+  if (declaredPaths.has(path)) return true;
+  const aliased = resolveAlias(path, aliases);
+  if (declaredPaths.has(aliased)) return true;
+  for (const member of declaredMembers) {
+    if (member.kind !== "const") continue;
+    if (path.startsWith(`${member.path}.`) || aliased.startsWith(`${member.path}.`)) {
+      return true;
+    }
+  }
+  return false;
 }

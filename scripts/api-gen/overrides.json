@@ -250,8 +250,6 @@
     "raycast.castAtWorld": "castFromWorld",
     "resources.adjustEnergy": "updateEnergy",
     "time.getElapsedMs": "getTimeMs",
-    "input.getMousePositionAtCell": "getMouseCellPosition",
-    "input.getMousePositionAtWorld": "getMouseCellPosition",
     "sprites.hideAllForPlayer": "hideAllPlayerModSprites",
     "sprites.rotateAllForPlayer": "rotatePlayerModSprites",
     "lights.vfx.createAtWorld": "lights.temporary.createAtWorld",
@@ -261,38 +259,9 @@
     "shared.buffers.create": "shared.create",
     "shared.buffers.ensure": "shared.ensure",
     "shared.buffers.get": "shared.get",
-    "signals.interactables.register": "signals.targets.register",
     "tech.conservatory.appendUnlock": "tech.appendUnlock"
   },
   "expectedMembers": [
-    {
-      "path": "cooldown.start",
-      "note": "Official name; types expose check and isReady"
-    },
-    {
-      "path": "resources.refresh",
-      "note": "Refresh resource UI after energy changes"
-    },
-    {
-      "path": "player.inventory.hasById",
-      "note": "Test whether inventory contains an item id"
-    },
-    {
-      "path": "items.getRegisteredIds",
-      "note": "List registered custom item ids"
-    },
-    {
-      "path": "items.spriteMounts",
-      "note": "Sprite mount metadata for items"
-    },
-    {
-      "path": "signals.registerSenderType",
-      "note": "Register a signal sender structure type"
-    },
-    {
-      "path": "signals.setOutputAtCell",
-      "note": "Write signal output at a structure cell"
-    },
     {
       "path": "ui.components.ActionSlot",
       "note": "React hotbar action slot component"

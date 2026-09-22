@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- Missing Sandkit declarations: `cooldown.start`, `resources.refresh`, `player.inventory.hasById`, `items.getRegisteredIds`, `items.spriteMounts`, `signals.registerSenderType`, `signals.setOutputAtCell`, `signals.interactables`, `input.getMousePositionAtCell`, `input.getMousePositionAtWorld`
+
+### Changed
+
+- API catalog generation fails when official or expected members are undeclared.
+- Catalog scans `src/worker/api/` as well as `src/sandkit/api/`.
+- Official HTML path qualification prefixes nested dotted signatures and skips return-handle docs.
+- Removed `scripts/api-gen/generated/api-gaps.md` (gaps stay in `api-catalog.json` and must be zero).
+
 ## 0.7.0 - 2026-09-16
 
 https://github.com/sandustry-modding/SandustryTypes/releases/tag/v0.7.0

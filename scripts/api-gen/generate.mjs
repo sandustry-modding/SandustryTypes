@@ -9,7 +9,7 @@
  *   npm run generate
  *   npm run generate -- --offline    # use .tmp/sandkit.html cache only
  *   npm run generate -- --check      # fail when catalog or schemas are stale
- *   npm run generate -- --catalog    # catalog + gaps only
+ *   npm run generate -- --catalog    # catalog only
  *   npm run generate -- --docs         # API markdown only
  *   npm run generate -- --schemas      # JSON Schema only
  */

@@ -86,12 +86,21 @@ export function parseOfficialApiInventory(html) {
 }
 
 /**
+ * Return true when the signature documents a return-handle method, not a namespace API.
+ * @param {string} bare
+ */
+function isReturnHandlePath(bare) {
+  const head = bare.split(".")[0] ?? "";
+  return head === "source" || /Handle$/u.test(head);
+}
+
+/**
  * @param {string[]} stack
  * @param {string} bare Method name or dotted path from signature.
  * @returns {string | null}
  */
 function qualifyOfficialPath(stack, bare) {
-  if (bare.includes(".") && !bare.includes(" ")) return bare;
+  if (isReturnHandlePath(bare)) return null;
 
   /** @type {string[]} */
   const parts = [];
@@ -104,10 +113,17 @@ function qualifyOfficialPath(stack, bare) {
     }
     if (label.startsWith("Deprecated")) continue;
     if (label.includes("(") || label.includes(":") || label.includes(" ")) continue;
+    // Callback-argument subsections (processing context, grid.mutate writer).
+    if (label === "context" || label === "writer") return null;
     parts.push(label);
   }
 
-  if (!parts.length) return bare.includes(".") ? bare : null;
+  if (bare.includes(".") && !bare.includes(" ")) {
+    if (!parts.length) return bare;
+    return `${parts.join(".")}.${bare}`;
+  }
+
+  if (!parts.length) return null;
   return `${parts.join(".")}.${bare}`;
 }
 
