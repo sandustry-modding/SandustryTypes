@@ -42,7 +42,9 @@ export namespace structures {
    * @param structureType - Structure type value or string id.
    *
    */
-  export function getDefinitionByType(structureType: StructureRef): any;
+  export function getDefinitionByType(
+    structureType: StructureRef,
+  ): StructureDefinition | undefined;
 
   /**
    * Map a structure string id to its runtime type value.
@@ -165,7 +167,7 @@ export namespace structures {
    */
   export function updateData(
     structure: Structure,
-    partial: any,
+    partial: Partial<StructureData>,
     options?: { propagateToWorkers?: boolean },
   ): void;
 
@@ -175,7 +177,7 @@ export namespace structures {
    */
   export function setData(
     structure: Structure,
-    partial: any,
+    partial: Partial<StructureData>,
     options?: { propagateToWorkers?: boolean },
   ): void;
 
@@ -195,6 +197,15 @@ export namespace structures {
      *
      */
     export function isEnabledAt(...args: CellCoordinates): boolean;
+  }
+
+  /**
+   * Registered structure definition snapshot (built-in or mod).
+   *
+   */
+  export interface StructureDefinition {
+    id: StructureId;
+    [key: string]: unknown;
   }
 
   /** Per-structure custom data bag. */

@@ -1,3 +1,5 @@
+import type { events as mainEvents } from "../../sandkit/api/events";
+
 /**
  * Worker thread only.
  *
@@ -8,9 +10,12 @@
  */
 export namespace main {
   /**
-   * Emit a custom event on the main thread.
-   * @param eventId - Registered event name.
-   * @param payload - Serializable payload passed to main-thread listeners.
+   * Emit an event on the main thread (`sandkit.api.events`).
+   * @param eventId - Main-thread event name (known ids or a custom string).
+   * @param payload - Payload for that event. Custom ids use `unknown`.
    */
-  export function emitEvent<Payload = any>(eventId: string, payload: Payload): void;
+  export function emitEvent<K extends mainEvents.EventId>(
+    eventId: K,
+    payload: mainEvents.EventPayload<K>,
+  ): void;
 }

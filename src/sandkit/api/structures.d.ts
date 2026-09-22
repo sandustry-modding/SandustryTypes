@@ -205,7 +205,7 @@ export namespace structures {
   export function registerVariant(
     baseStructureTypeOrId: StructureRef,
     variant: { id: StructureRef; angles: number[] },
-    options?: { addBuildMode?: unknown },
+    options?: { addBuildMode?: StructureBuildMode },
   ): void;
 
   /**
@@ -215,7 +215,7 @@ export namespace structures {
   export function addVariant(
     baseStructureTypeOrId: StructureRef,
     variant: { id: StructureRef; angles: number[] },
-    options?: { addBuildMode?: unknown },
+    options?: { addBuildMode?: StructureBuildMode },
   ): void;
 
   /**
@@ -627,8 +627,7 @@ export namespace structures {
   }
 
   /** Full structure definition registered with the game. */
-  export interface SandkitStructureDefinition {
-    id: StructureId;
+  export interface SandkitStructureDefinition extends shared.api.structures.StructureDefinition {
     name?: string;
     nameKey?: string;
     description?: string;
@@ -639,7 +638,7 @@ export namespace structures {
     shape?: number[][];
     variants?: StructureVariant[];
     render?: StructureRender;
-    defaultData?: Record<string, unknown>;
+    defaultData?: Partial<shared.api.structures.StructureData>;
     /**
      * Linked placement clearance mode (for example `"allOrNothing"`).
      *

@@ -122,7 +122,7 @@ export namespace hooks {
     /** Required for element-scoped intercept hooks and optional on emit. */
     elementType?: sharedElements.ElementType;
     /** Required for terrain-scoped event guards; optional on emit. */
-    terrainType?: number;
+    terrainType?: terrains.TerrainType;
   }
 
   /** Options for {@link intercept}. */
@@ -130,7 +130,7 @@ export namespace hooks {
     K extends ElementGuardedInterceptHookId
       ? { guard: { elementType: sharedElements.ElementType }; priority?: number }
       : K extends TerrainGuardedInterceptHookId
-        ? { guard: { terrainType: number }; priority?: number }
+        ? { guard: { terrainType: terrains.TerrainType }; priority?: number }
         : { guard?: HookGuard; priority?: number };
 
   /** Options for {@link modify}. */
@@ -199,7 +199,6 @@ export namespace hooks {
     dataField2: Int16Array;
     dataField3: Uint16Array;
     dataField4: Float32Array;
-    [key: string]: ArrayBufferView | unknown;
   }
 
   /** Intercept hook argument shapes keyed by hook id. */

@@ -8,6 +8,12 @@ import type { LooseString, TaggedNumber } from "../../shared/nominal";
 export namespace items {
   /** Definition for a mod-registered inventory item. */
   export interface ItemDefinition<State = unknown, Action = unknown> {
+    /** Registered item id. */
+    id: ItemId;
+    /** Plain display name (when not using {@link nameKey}). */
+    name?: string;
+    /** Display name translation key. */
+    nameKey?: string;
     /** Handles item use actions. */
     handleAction?: (state: State, action: Action) => unknown;
     /** Called after the item is rendered each frame. */

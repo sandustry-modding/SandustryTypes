@@ -17,7 +17,7 @@ export interface ElectronPlatformOverlayApi {
    *
    * IPC: `platform-overlay-open-url`.
    */
-  openUrl(url: string): Promise<unknown>;
+  openUrl(url: string): Promise<{ ok: boolean; error?: string } | false>;
 }
 
 /**
@@ -68,7 +68,7 @@ export interface ElectronPlatformApi {
    *
    * IPC: `platform-unlock-achievement`.
    */
-  unlockAchievement(achievementId: string): Promise<unknown>;
+  unlockAchievement(achievementId: string): Promise<boolean>;
 
   /**
    * Return whether an achievement is already unlocked.
@@ -78,7 +78,7 @@ export interface ElectronPlatformApi {
    *
    * IPC: `platform-is-achievement-unlocked`.
    */
-  isAchievementUnlocked(achievementId: string): Promise<unknown>;
+  isAchievementUnlocked(achievementId: string): Promise<boolean>;
 
   /**
    * Clear one platform achievement (debug / QA).
@@ -88,7 +88,7 @@ export interface ElectronPlatformApi {
    *
    * IPC: `platform-clear-achievement`.
    */
-  clearAchievement(achievementId: string): Promise<unknown>;
+  clearAchievement(achievementId: string): Promise<boolean>;
 
   /**
    * Write one named blob to platform cloud storage.
@@ -99,7 +99,7 @@ export interface ElectronPlatformApi {
    *
    * IPC: `platform-cloud-save`.
    */
-  cloudSave(fileName: string, data: JsonValueV1): Promise<unknown>;
+  cloudSave(fileName: string, data: JsonValueV1): Promise<boolean>;
 
   /**
    * Read one named blob from platform cloud storage.
@@ -109,7 +109,7 @@ export interface ElectronPlatformApi {
    *
    * IPC: `platform-cloud-load`.
    */
-  cloudLoad(fileName: string): Promise<unknown>;
+  cloudLoad(fileName: string): Promise<JsonValueV1 | null>;
 
   /**
    * Return whether a cloud file key exists.
@@ -119,7 +119,7 @@ export interface ElectronPlatformApi {
    *
    * IPC: `platform-cloud-file-exists`.
    */
-  cloudFileExists(fileName: string): Promise<unknown>;
+  cloudFileExists(fileName: string): Promise<boolean>;
 
   /**
    * Delete one named cloud file.
@@ -129,7 +129,7 @@ export interface ElectronPlatformApi {
    *
    * IPC: `platform-cloud-delete`.
    */
-  cloudDelete(fileName: string): Promise<unknown>;
+  cloudDelete(fileName: string): Promise<boolean>;
 
   /**
    * Sync local saves with platform cloud storage.

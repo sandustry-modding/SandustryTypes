@@ -393,7 +393,7 @@ export namespace hooks {
   export function modify<K extends ModifyHookId>(
     hookId: K,
     callback: (args: ModifyHookArgs<K>) => void,
-    options?: ModifyHookOptions,
+    options?: ModifyHookOptions<K>,
   ): () => void;
 
   /** Context passed to intercept hook callbacks. */
@@ -408,30 +408,35 @@ export namespace hooks {
   export interface HookOptions {
     /** Run this hook before others with lower priority. */
     priority?: number;
-    [key: string]: unknown;
+  }
+
+  /** Extra filters for {@link intercept}, keyed by hook id. Other ids use {@link HookOptions} only. */
+  export interface InterceptHookFilterMap {
+    "item:use": { itemIds?: string[] };
+    "entity:update": { entityTypes?: string[] };
+    "building:place": { structureTypes?: string[] };
+    "projectile:fire:overStructure": { projectileTypes?: string[] };
+    "projectile:hit": { projectileTypes?: string[] };
+  }
+
+  /** Extra filters for {@link modify}, keyed by hook id. Other ids use {@link HookOptions} only. */
+  export interface ModifyHookFilterMap {
+    "weapon:reload:prepare": { weaponIds?: string[] };
+    "projectile:travel:prepare": { projectileTypes?: string[] };
+    "projectile:impact:prepare": { projectileTypes?: string[] };
+    "trigger:schedule:prepare": { triggerIds?: string[] };
+    "resource:collection:prepare": { resourceIds?: string[] };
+    "resource:delivery:prepare": { resourceIds?: string[] };
+    "resource:balance:prepare": { resourceIds?: string[] };
   }
 
   /** Options for {@link intercept}. */
   export type InterceptHookOptions<K extends InterceptHookId> = HookOptions &
-    (K extends "item:use"
-      ? { itemIds?: string[]; priority?: number }
-      : K extends "entity:update"
-        ? { entityTypes?: string[]; priority?: number }
-        : K extends "building:place"
-          ? { structureTypes?: string[]; priority?: number }
-          : K extends "projectile:fire:overStructure" | "projectile:hit"
-            ? { projectileTypes?: string[]; priority?: number }
-            : Record<string, unknown>);
+    (K extends keyof InterceptHookFilterMap ? InterceptHookFilterMap[K] : {});
 
   /** Options for {@link modify}. */
-  export type ModifyHookOptions = HookOptions &
-    (
-      | { weaponIds?: string[]; priority?: number }
-      | { projectileTypes?: string[]; priority?: number }
-      | { triggerIds?: string[]; priority?: number }
-      | { resourceIds?: string[]; priority?: number }
-      | Record<string, unknown>
-    );
+  export type ModifyHookOptions<K extends ModifyHookId> = HookOptions &
+    (K extends keyof ModifyHookFilterMap ? ModifyHookFilterMap[K] : {});
 
   /** Known main-thread intercept hook ids plus custom strings. */
   export type InterceptHookId = LooseString<
@@ -503,8 +508,7 @@ export namespace hooks {
    */
   export type ItemUseStats = {
     energyCost?: number;
-    [key: string]: unknown;
-  };
+  } & Record<string, unknown>;
 
   /** Keyboard intercept payload for {@link InterceptHookMap} `"input:keyDown"` and `"input:keyUp"`. */
   export interface InputKeyInterceptArgs {
@@ -558,7 +562,6 @@ export namespace hooks {
     from?: Vector2;
     type?: structures.StructureType;
     data?: structures.StructureData;
-    [key: string]: unknown;
   }
 
   /** Intercept hook argument shapes keyed by hook id. */
@@ -616,7 +619,7 @@ export namespace hooks {
       readonly timeSeconds: number;
     };
     "building:place": {
-      structureId: string;
+      structureId: structures.StructureRef;
       x: number;
       y: number;
       data?: structures.StructureData;
@@ -797,12 +800,12 @@ export namespace hooks {
       balance: number;
     };
     "gold:removal:prepare": {
-      requestedAmount: number;
+      readonly requestedAmount: number;
       shortfall: number;
     };
     "gold:removal:settle": {
-      requestedAmount: number;
-      physicalRemoved: number;
+      readonly requestedAmount: number;
+      readonly physicalRemoved: number;
       shortfall: number;
     };
   }

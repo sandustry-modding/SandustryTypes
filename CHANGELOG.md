@@ -9,9 +9,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Event payloads `frame:render`, `game:ready`, `game:started`, and `player:moved` type `state` as `SandkitState` (same object as `sandkit.state`).
+- Projectile `getModData` receives `SandkitState` as its first argument.
+- Worker `HookGuard.terrainType` and `fire:terrain:burn` intercept guard options use `terrains.TerrainType`, aligned with worker `events.EventGuard`.
+- Worker `ElementSimData` lists only the documented SOA fields (no open index signature).
+- Worker `main.emitEvent` keys `eventId` and `payload` to main-thread `events.EventId` / `EventPayload`.
 - JSON Schema `$id` and docs URLs use `https://sandustry-modding.github.io/schemas/` (not `/SandustryTypes/schemas/`).
 - Intercept hook `args` use emit-site fields from official Sandkit and the 0.5.6 extract.
 - Modify hook `args`, event payloads, signal target payload, and projectile `type` use emit-site fields from official Sandkit and the 0.5.6 extract.
+- `building:place` intercept args type `structureId` as `structures.StructureRef`.
+- Intercept and modify hook options use filter maps keyed by hook id (`InterceptHookFilterMap`, `ModifyHookFilterMap`).
+- `HookOptions` documents only `priority` (no open index signature).
+- `ItemUseStats` keeps `energyCost` as `number` while allowing extra item-definition keys.
+- Gold removal modify hooks mark official read-only args fields as `readonly`.
+- `StructureMoveFailure` lists only `from`, `type`, and `data` (no open index signature).
+- Event payloads `frame:render`, `game:ready`, and `game:started` include `{ state: unknown }` per runtime emit sites.
+- Event payload `player:moved` uses required `state` and `dt`, with optional `teleportMapLerpMs`.
+- `structures.updateData` / `setData` take `Partial<StructureData>`; `getDefinitionByType` returns `StructureDefinition | undefined`; `registerVariant` `addBuildMode` is `StructureBuildMode`; `SandkitStructureDefinition.defaultData` is `Partial<StructureData>`.
+- `elements.ElementDefinition.getExtraProps` `data` is `JsonObjectV1` instead of `any`.
+- `items.ItemDefinition` includes `id`, optional `name`, and optional `nameKey` from official examples.
+- `projectiles.createBlueprintById` is the primary blueprint helper; `createBlueprintFromId` is deprecated.
+- `electron.platform` achievement, cloud, and overlay IPC helpers use `boolean`, `JsonValueV1 | null`, or overlay result types from `steam.js` / `main.js` JSDoc.
 
 ## 0.8.0 - 2026-09-22
 

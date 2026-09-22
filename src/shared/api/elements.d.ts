@@ -1,6 +1,7 @@
 import type { ElementType as ElementTypeEnum } from "../../sandkit/enums/index";
 import type { CellCoordinates, Vector2 } from "../geometry";
 import type { CellId, LooseString, TaggedNumber } from "../nominal";
+import type { JsonObjectV1 } from "../jsonvalue";
 
 /**
  * Shared `sandkit.api.elements` base — element reads and definitions.
@@ -70,7 +71,7 @@ export namespace elements {
     isGrabbable?: boolean;
     /** When true, conveyors can move this element. */
     isTransportable?: boolean;
-    getExtraProps?: () => { data: Record<PropertyKey, any> };
+    getExtraProps?: () => { data: JsonObjectV1 };
   };
 
   /**

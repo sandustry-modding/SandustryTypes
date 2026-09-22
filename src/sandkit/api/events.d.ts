@@ -1,6 +1,7 @@
 import type { LooseString } from "../../shared/nominal";
 import type { structures } from "../../shared/api/structures";
 import type { terrains } from "../../shared/api/terrains";
+import type { SandkitState } from "../engine/state";
 import type { hooks } from "./hooks";
 
 /**
@@ -194,7 +195,7 @@ export namespace events {
       cellY: number;
       prepared: Readonly<hooks.ItemUseStats>;
     };
-    "frame:render": Record<string, never>;
+    "frame:render": { state: SandkitState };
     "scene:game:started": Record<string, never>;
     /** @deprecated Use `"scene:game:started"` instead. */
     "scene:started:game": EventPayloadMap["scene:game:started"];
@@ -253,8 +254,8 @@ export namespace events {
       moved: hooks.StructureMoveRecord[];
       failedToPlace: hooks.StructureMoveFailure[];
     };
-    "game:ready": Record<string, never>;
-    "game:started": Record<string, never>;
+    "game:ready": { state: SandkitState };
+    "game:started": { state: SandkitState };
     "tutorial:stepChanged": { step: number };
     "tutorial:completed": { skipped: boolean };
     "tech:unlocked": {
@@ -274,14 +275,15 @@ export namespace events {
     };
     "player:collision:prepare": PlayerCollisionPreparePayload;
     "player:moved": {
+      /** Same object as `sandkit.state`. */
+      state: SandkitState;
       /**
        * Simulation step duration in seconds.
        * `0` on teleports. The event runs after collision; landing already
        * zeroes `velocity.y`. Vanilla gravity is applied after this event.
        */
-      dt?: number;
+      dt: number;
       teleportMapLerpMs?: number;
-      state?: unknown;
     };
   }
 

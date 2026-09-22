@@ -1,4 +1,5 @@
 import type { ProjectileType } from "../enums/index";
+import type { SandkitState } from "../engine/state";
 
 /**
  * Projectile definitions, spawning, and lifecycle.
@@ -25,6 +26,12 @@ export namespace projectiles {
    * @param projectileId - Registered projectile id.
    * @returns Blueprint passed to {@link spawnAtWorld}.
    */
+  export function createBlueprintById(projectileId: string): ProjectileBlueprint;
+
+  /**
+   * @deprecated Use {@link createBlueprintById} instead.
+   * @param projectileId - Registered projectile id.
+   */
   export function createBlueprintFromId(projectileId: string): ProjectileBlueprint;
 
   /** Return all active projectiles. */
@@ -47,7 +54,7 @@ export namespace projectiles {
    * @param worldX - Spawn x position in world pixels.
    * @param worldY - Spawn y position in world pixels.
    * @param angle - Launch angle in radians.
-   * @param blueprint - Blueprint from {@link createBlueprintFromId}.
+   * @param blueprint - Blueprint from {@link createBlueprintById}.
    * @returns The spawned projectile instance.
    */
   export function spawnAtWorld(
@@ -67,7 +74,7 @@ export namespace projectiles {
     /** Returns spawn-time physics and visual options. */
     getOptions: () => Record<string, unknown>;
     /** Optional per-projectile mutable data factory. */
-    getModData?: (state: unknown, projectile: Projectile) => Record<string, unknown>;
+    getModData?: (state: SandkitState, projectile: Projectile) => Record<string, unknown>;
     [key: string]: unknown;
   }
 
