@@ -5,7 +5,7 @@
 /**
  * macOS right-button emulation helpers exposed as `electron.macRightMouse`.
  */
-export interface ElectronMacRightMouseApi {
+export type ElectronMacRightMouseApi = {
   /**
    * Enable or disable global right-button probing on macOS.
    *
@@ -33,4 +33,4 @@ export interface ElectronMacRightMouseApi {
    * IPC: `mac-right-mouse-up`.
    */
   onUp(callback: () => void): void;
-}
+};

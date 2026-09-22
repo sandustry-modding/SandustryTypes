@@ -9,7 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Event payloads `frame:render`, `game:ready`, `game:started`, and `player:moved` type `state` as `SandkitState` (same object as `sandkit.state`).
+- Public declarations use `type` aliases instead of `interface` (except ambient `Window` merge).
+- `electron.platform.workshop` methods use `steam.js` JSDoc result objects instead of `Promise<unknown>`.
+- `electron.platform.cloudSync` returns `{ synced, uploaded, error? }`.
+- `items.createById` is the official name; `createFromId` is deprecated.
+- `sprites.hideAllForPlayer` / `rotateAllForPlayer` are the official names; previous names are deprecated.
+- Energy network nodes, structure instance fields, and energy storage `data` fields match official docs and live 0.5.6 probes.
 - Projectile `getModData` receives `SandkitState` as its first argument.
 - Worker `HookGuard.terrainType` and `fire:terrain:burn` intercept guard options use `terrains.TerrainType`, aligned with worker `events.EventGuard`.
 - Worker `ElementSimData` lists only the documented SOA fields (no open index signature).

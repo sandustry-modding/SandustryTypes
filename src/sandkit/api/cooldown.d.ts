@@ -23,10 +23,10 @@ export namespace cooldown {
   export function isReady(cooldown: Cooldown, overrideTime?: number): boolean;
 
   /** Cooldown state object passed to {@link start} and {@link isReady}. */
-  export interface Cooldown {
+  export type Cooldown = {
     /** Timestamp when the cooldown was last triggered (game time). */
     last: number;
     /** Cooldown duration in milliseconds. */
     time: number;
-  }
+  };
 }

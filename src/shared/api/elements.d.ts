@@ -78,7 +78,7 @@ export namespace elements {
    * Options for {@link createAtCell}, replace, and related create helpers.
    *
    */
-  export interface ElementCreateOptions {
+  export type ElementCreateOptions = {
     /** Initial element data bag. */
     data?: Record<string, unknown>;
     /** Override element density. */
@@ -108,16 +108,16 @@ export namespace elements {
     };
     /** Skip collector accounting when placing the element. */
     skipCollectorCheck?: boolean;
-  }
+  };
 
   /**
    * Options for element removal helpers.
    *
    */
-  export interface ElementRemovalOptions {
+  export type ElementRemovalOptions = {
     /** Skip collector accounting when removing the element. */
     skipCollectorCheck?: boolean;
-  }
+  };
 
   /**
    * Return the mod string id for a numeric element type.

@@ -75,7 +75,7 @@ export namespace elements {
   export import getDataFieldAtCell = shared.api.elements.getDataFieldAtCell;
 
   /** Optional tooltip metadata on structure interactions. */
-  export interface InteractionStructureMetadata {
+  export type InteractionStructureMetadata = {
     /** i18n key for custom interaction label text. */
     textKey?: string;
     /** Hide the label when a data field matches a value. */
@@ -84,7 +84,7 @@ export namespace elements {
     visibleWhen?: { dataField: number; equals: number };
     /** Require the text key to exist in the active locale. */
     onlyWhenTranslated?: boolean;
-  }
+  };
 
   /** Interaction that destroys specific items. */
   export type InteractionDestroyer = {

@@ -7,22 +7,22 @@ import type { JsonValueV1 } from "../shared/jsonvalue";
 /**
  * Successful invoke result from save, settings, and window handlers.
  */
-export interface ElectronSuccessResult {
+export type ElectronSuccessResult = {
   /** Always `true` for this branch of the result union. */
   success: true;
   /** Absolute path written when a handler persists a file (save/custom map). */
   path?: string;
-}
+};
 
 /**
  * Failed invoke result from save, settings, and window handlers.
  */
-export interface ElectronFailureResult {
+export type ElectronFailureResult = {
   /** Always `false` for this branch of the result union. */
   success: false;
   /** Human-readable error message from the main process. */
   error: string;
-}
+};
 
 /**
  * Result union returned by most save, settings, and window invoke handlers.
@@ -32,7 +32,7 @@ export type ElectronOperationResult = ElectronSuccessResult | ElectronFailureRes
 /**
  * MS Store license check result from {@link ElectronBridge.checkLicense}.
  */
-export interface ElectronLicenseCheckResult {
+export type ElectronLicenseCheckResult = {
   /** Whether the current license is valid for play. */
   valid: boolean;
   /** Failure reason when `valid` is false; otherwise `null`. */
@@ -41,39 +41,39 @@ export interface ElectronLicenseCheckResult {
   networkError: boolean;
   /** True when the result came from a cached license check. */
   cached: boolean;
-}
+};
 
 /**
  * Parsed game save payload passed to {@link ElectronBridge.save}.
  */
-export interface ElectronSaveInput {
+export type ElectronSaveInput = {
   /** Save slot id (sanitized filename stem). */
   id: string;
   /** Display name shown in the save UI. */
   name: string;
   /** Full serialized game state (`{ store: … }` shape). */
   data: JsonValueV1;
-}
+};
 
 /**
  * Successful load result from {@link ElectronBridge.load}.
  */
-export interface ElectronLoadSuccessResult {
+export type ElectronLoadSuccessResult = {
   /** Always `true` for this branch of the result union. */
   success: true;
   /** Parsed save body (`{ store: … }`). */
   data: JsonValueV1;
-}
+};
 
 /**
  * Failed load result from {@link ElectronBridge.load}.
  */
-export interface ElectronLoadFailureResult {
+export type ElectronLoadFailureResult = {
   /** Always `false` for this branch of the result union. */
   success: false;
   /** Human-readable load failure message. */
   error: string;
-}
+};
 
 /** Result from {@link ElectronBridge.load}. */
 export type ElectronLoadResult = ElectronLoadSuccessResult | ElectronLoadFailureResult;
@@ -83,7 +83,7 @@ export type ElectronLoadResult = ElectronLoadSuccessResult | ElectronLoadFailure
  *
  * Returned by {@link ElectronBridge.getSaveFiles}.
  */
-export interface ElectronSaveFileMetadata {
+export type ElectronSaveFileMetadata = {
   /** Save slot id (filename stem). */
   id: string;
   /** Display name stored in the save header. */
@@ -104,17 +104,17 @@ export interface ElectronSaveFileMetadata {
   structureCount?: number;
   /** Resource snapshot (`gold`, `fluxite`, `artifacts`, …). */
   resources?: JsonValueV1;
-}
+};
 
 /**
  * Successful export result from {@link ElectronBridge.exportSave}.
  */
-export interface ElectronExportSaveSuccessResult {
+export type ElectronExportSaveSuccessResult = {
   /** Always `true` for this branch of the result union. */
   success: true;
   /** Raw `.save` file bytes (metadata line + gzip payload). */
   data: Uint8Array;
-}
+};
 
 /** Result from {@link ElectronBridge.exportSave}. */
 export type ElectronExportSaveResult =
@@ -124,12 +124,12 @@ export type ElectronExportSaveResult =
 /**
  * Successful import result from {@link ElectronBridge.importSave}.
  */
-export interface ElectronImportSaveSuccessResult {
+export type ElectronImportSaveSuccessResult = {
   /** Always `true` for this branch of the result union. */
   success: true;
   /** Metadata parsed from the imported file header line. */
   metaData: JsonValueV1;
-}
+};
 
 /** Result from {@link ElectronBridge.importSave}. */
 export type ElectronImportSaveResult = ElectronImportSaveSuccessResult | ElectronFailureResult;
@@ -137,17 +137,17 @@ export type ElectronImportSaveResult = ElectronImportSaveSuccessResult | Electro
 /**
  * Last-played save marker written by {@link ElectronBridge.saveLastPlayedGame}.
  */
-export interface ElectronLastPlayedGame {
+export type ElectronLastPlayedGame = {
   /** Save slot id of the last played game. */
   id?: string;
-}
+};
 
 /**
  * Local process/runtime versions from {@link ElectronBridge.getSystemInfo}.
  *
  * Read directly in the preload script — no IPC round trip.
  */
-export interface ElectronSystemInfo {
+export type ElectronSystemInfo = {
   /** Node `process.platform` (for example `linux`, `win32`). */
   platform: string;
   /** CPU architecture string from `process.arch`. */
@@ -158,58 +158,58 @@ export interface ElectronSystemInfo {
   chromeVersion: string;
   /** Node.js version from `process.versions.node`. */
   nodeVersion: string;
-}
+};
 
 /**
  * Result from {@link ElectronLocalModsApi.list}.
  */
-export interface ElectronLocalModsListResult {
+export type ElectronLocalModsListResult = {
   /** True when the listing succeeded. */
   ok: boolean;
   /** Local mod summary objects when `ok` is true; otherwise `[]`. */
   data: JsonValueV1[];
   /** Error code when `ok` is false (for example `unsupported_platform`). */
   errorCode?: string;
-}
+};
 
 /**
  * Result from {@link ElectronLocalModsApi.upload}.
  */
-export interface ElectronLocalModsUploadResult {
+export type ElectronLocalModsUploadResult = {
   /** True when Workshop upload succeeded. */
   ok: boolean;
   /** Error code when `ok` is false. */
   errorCode?: string;
   /** Extra failure detail logged by the main process. */
   detail?: string;
-}
+};
 
 /**
  * Result from {@link ElectronBridge.openExternalBrowser}.
  */
-export interface ElectronOpenUrlResult {
+export type ElectronOpenUrlResult = {
   /** True when the OS opened the URL. */
   success: boolean;
   /** Failure reason (for example `unsupported-url`). */
   error?: string;
-}
+};
 
 /**
  * Result from {@link ElectronBridge.platformPrimeAchievements}.
  */
-export interface ElectronPrimeAchievementsResult {
+export type ElectronPrimeAchievementsResult = {
   /** True when the cache seed completed. */
   success: boolean;
   /** Failure message when `success` is false. */
   error?: string;
-}
+};
 
 /**
  * Result from {@link ElectronBridge.platformShowReauthPrompt}.
  */
-export interface ElectronReauthPromptResult {
+export type ElectronReauthPromptResult = {
   /** Button index chosen in the native MS Store dialog. */
   response?: number;
   /** True on Steam where no dialog is shown. */
   dismissed?: boolean;
-}
+};

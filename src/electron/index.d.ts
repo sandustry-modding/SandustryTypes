@@ -39,7 +39,15 @@ export type {
 } from "./results";
 
 export type { ElectronLocalModsApi } from "./local-mods";
-export type { ElectronWorkshopApi } from "./workshop";
+export type {
+  ElectronWorkshopApi,
+  ElectronWorkshopAck,
+  ElectronWorkshopResult,
+  ElectronWorkshopInstallInfo,
+  ElectronWorkshopDownloadInfo,
+  ElectronWorkshopItem,
+  ElectronWorkshopSandkitModsResult,
+} from "./workshop";
 export type { ElectronPlatformOverlayApi, ElectronPlatformApi } from "./platform";
 export type { ElectronMacRightMouseApi } from "./mac-right-mouse";
 export type { ElectronCustomMapsApi } from "./custom-maps";

@@ -22,7 +22,7 @@ export type {
  *
  * Reflects `sandkit.engine.state` / store player fields exposed to mods.
  */
-export interface Player {
+export type Player = {
   /** Player hitbox left edge in world pixels. */
   x: number;
   /** Player hitbox top edge in world pixels. */
@@ -131,10 +131,10 @@ export interface Player {
       };
     };
   };
-}
+};
 
 /** One hotbar or inventory item entry. */
-export interface InventoryItem {
+export type InventoryItem = {
   id: number;
   itemType: number;
   abilities: {
@@ -161,4 +161,4 @@ export interface InventoryItem {
   descriptionKey: string;
   categoryKey: "excavation" | "utility" | "drones";
   sprite?: AssetRef;
-}
+};

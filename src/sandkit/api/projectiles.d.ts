@@ -65,7 +65,7 @@ export namespace projectiles {
   ): Projectile;
 
   /** Mod-registered projectile definition. */
-  export interface ProjectileDefinition {
+  export type ProjectileDefinition = {
     id: string;
     sprite: {
       id: string;
@@ -76,20 +76,20 @@ export namespace projectiles {
     /** Optional per-projectile mutable data factory. */
     getModData?: (state: SandkitState, projectile: Projectile) => Record<string, unknown>;
     [key: string]: unknown;
-  }
+  };
 
   /** Blueprint used to spawn a projectile. */
-  export interface ProjectileBlueprint {
+  export type ProjectileBlueprint = {
     opts: Record<string, unknown>;
     type: ProjectileType;
-  }
+  };
 
   /** Active projectile instance. */
-  export interface Projectile {
+  export type Projectile = {
     id: number;
     x: number;
     y: number;
     type: ProjectileType;
     [key: string]: unknown;
-  }
+  };
 }

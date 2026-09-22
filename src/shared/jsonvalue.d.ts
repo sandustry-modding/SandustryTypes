@@ -12,9 +12,9 @@
  *
  * Use for open-ended config bags and serialized mod data.
  */
-export interface JsonObjectV1 {
+export type JsonObjectV1 = {
   [key: string]: JsonValueV1;
-}
+};
 
 /**
  * JSON value: primitive, object, array, or null.

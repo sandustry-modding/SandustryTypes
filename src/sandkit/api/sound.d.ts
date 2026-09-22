@@ -76,13 +76,13 @@ export namespace sound {
   export function stopAll(): void;
 
   /** Handle returned from a play call. */
-  export interface SoundHandle {
+  export type SoundHandle = {
     /** Stop this sound instance. */
     stop(): void;
-  }
+  };
 
   /** One layer in a layered sound. */
-  export interface SoundLayer {
+  export type SoundLayer = {
     /** Sound id for this layer. */
     soundId: string;
     /** Layer volume multiplier. */
@@ -92,10 +92,10 @@ export namespace sound {
     /** Playback rate for this layer. */
     playbackRate?: number;
     [key: string]: unknown;
-  }
+  };
 
   /** Options passed to sound play helpers. */
-  export interface SoundOptions {
+  export type SoundOptions = {
     /** Volume multiplier (0–1 typical). */
     volume?: number;
     /** Playback rate multiplier. */
@@ -109,10 +109,10 @@ export namespace sound {
     /** Minimum ms between plays with the same rateLimitKey. */
     rateLimitMs?: number;
     [key: string]: unknown;
-  }
+  };
 
   /** Shared options for {@link playLayers}. */
-  export interface SoundLayersOptions {
+  export type SoundLayersOptions = {
     /** World position applied to all layers. */
     position?: Vector2;
     /** Volume multiplier applied to all layers. */
@@ -121,5 +121,5 @@ export namespace sound {
     rateLimitKey?: string;
     /** Minimum ms between plays with the same rateLimitKey. */
     rateLimitMs?: number;
-  }
+  };
 }

@@ -203,26 +203,33 @@ export namespace structures {
    * Registered structure definition snapshot (built-in or mod).
    *
    */
-  export interface StructureDefinition {
+  export type StructureDefinition = {
     id: StructureId;
     [key: string]: unknown;
-  }
+  };
 
   /** Per-structure custom data bag. */
-  export interface StructureData {
+  export type StructureData = {
     elementId?: string | null;
     elementType?: TaggedNumber<"elementType"> | null;
+    storedEnergy?: number;
+    maxEnergy?: number;
     [key: string]: unknown;
-  }
+  };
 
   /** Live structure instance in the world grid. */
-  export interface Structure {
+  export type Structure = {
     x: number;
     y: number;
+    type?: StructureRef;
+    queued?: boolean;
+    filter?: { elementType?: TaggedNumber<"elementType">; mode?: string };
     trapped?: boolean;
     data?: StructureData;
+    color?: string;
+    frame?: boolean;
     [key: string]: unknown;
-  }
+  };
 
   /** Numeric structure type handle. Built-in enum values autocomplete. */
   export type StructureType = StructureTypeEnum | TaggedNumber<"structureType">;

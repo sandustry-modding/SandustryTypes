@@ -26,7 +26,7 @@ export namespace reactions {
   export function registerContact(definition: ContactRecipeDefinitionV1): void;
 
   /** Contact reaction recipe definition. */
-  export interface ContactRecipeDefinitionV1 {
+  export type ContactRecipeDefinitionV1 = {
     /** First reacting element type. */
     inputA: elements.ElementType;
     /** Second reacting element type. */
@@ -37,5 +37,5 @@ export namespace reactions {
     outputB: elements.ElementType | null;
     /** Contact layout requirement. Default `"any"`. */
     orientation?: "any" | "stacked";
-  }
+  };
 }

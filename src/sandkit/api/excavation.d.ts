@@ -45,7 +45,7 @@ export namespace excavation {
   export function registerProfile(id: string, definition: ExcavationProfileDefinitionV1): void;
 
   /** Excavation tool profile definition. */
-  export interface ExcavationProfileDefinitionV1 {
+  export type ExcavationProfileDefinitionV1 = {
     /** Dig pattern grid; non-zero cells are removed. */
     pattern?: number[][];
     /** Dig strength applied to matched cells. Clamped to 0–1000. */
@@ -54,10 +54,10 @@ export namespace excavation {
     options?: ExcavationProfileOptions;
     /** Per-terrain output and damage rules. */
     terrainRules?: readonly ExcavationTerrainRule[];
-  }
+  };
 
   /** Options attached to an excavation profile definition. */
-  export interface ExcavationProfileOptions {
+  export type ExcavationProfileOptions = {
     fromGun?: boolean;
     fromRocketExplosion?: boolean;
     fromDrill?: boolean;
@@ -66,10 +66,10 @@ export namespace excavation {
     forceRemoveAll?: boolean;
     /** Clamped to 0–1000 when set. */
     drillTierDamage?: number;
-  }
+  };
 
   /** Terrain match rule within an excavation profile. */
-  export interface ExcavationTerrainRule {
+  export type ExcavationTerrainRule = {
     /** Terrain cell type to match. */
     cellType: terrains.TerrainRef;
     /**
@@ -81,5 +81,5 @@ export namespace excavation {
     damage?: number;
     /** Element type produced when this terrain is excavated. */
     outputElementType?: elements.ElementRef;
-  }
+  };
 }

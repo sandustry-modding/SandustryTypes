@@ -11,7 +11,7 @@ import type {
 /**
  * Local developer mod folder helpers exposed as `electron.localMods`.
  */
-export interface ElectronLocalModsApi {
+export type ElectronLocalModsApi = {
   /**
    * Return the absolute path to the OS local-mods folder.
    *
@@ -50,4 +50,4 @@ export interface ElectronLocalModsApi {
    * IPC: `local-mods-upload`.
    */
   upload(modId: string): Promise<ElectronLocalModsUploadResult>;
-}
+};

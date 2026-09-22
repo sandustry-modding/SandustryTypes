@@ -45,13 +45,13 @@ export namespace effects {
   ): void;
 
   /** Generic duration and radius options for world effects. */
-  export interface EffectOptions {
+  export type EffectOptions = {
     duration?: number;
     maxRadius?: number;
     intensity?: number;
-  }
+  };
   /** Options for {@link createLightAtWorld}. */
-  export interface TemporaryLightOptions {
+  export type TemporaryLightOptions = {
     brightness?: number;
     duration?: number;
     durationMs?: number;
@@ -66,9 +66,9 @@ export namespace effects {
     priority?: number;
     /** Dedupe key when the light pool is full or dedup is enabled. */
     dedupKey: string;
-  }
+  };
   /** Options for {@link createParticlesAtWorld}. */
-  export interface ParticleEffectOptions {
+  export type ParticleEffectOptions = {
     count?: number;
     velocity?: Vector2;
     minSpeed?: number;
@@ -85,5 +85,5 @@ export namespace effects {
     fadeStart?: number;
     fadeEnd?: number;
     damp?: number;
-  }
+  };
 }

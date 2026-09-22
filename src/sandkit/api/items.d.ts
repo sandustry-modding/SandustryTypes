@@ -7,7 +7,7 @@ import type { LooseString, TaggedNumber } from "../../shared/nominal";
  */
 export namespace items {
   /** Definition for a mod-registered inventory item. */
-  export interface ItemDefinition<State = unknown, Action = unknown> {
+  export type ItemDefinition<State = unknown, Action = unknown> = {
     /** Registered item id. */
     id: ItemId;
     /** Plain display name (when not using {@link nameKey}). */
@@ -19,7 +19,7 @@ export namespace items {
     /** Called after the item is rendered each frame. */
     afterRender?: (state: State) => void;
     [key: string]: unknown;
-  }
+  };
 
   /**
    * Registers a new item definition.
@@ -46,6 +46,11 @@ export namespace items {
   export function getDefinitionById(itemId: ItemId): ItemDefinition | undefined;
   /**
    * Creates a runtime item instance from an id.
+   * @param itemId - Registered item id.
+   */
+  export function createById(itemId: ItemId): ModItem;
+  /**
+   * @deprecated Use {@link createById} instead.
    * @param itemId - Registered item id.
    */
   export function createFromId(itemId: ItemId): ModItem;

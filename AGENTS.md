@@ -4,6 +4,9 @@ This folder is the Sandkit types package.
 Types and generated API pages describe **Sandustry the game** and its **public Sandkit surface** only.
 Official signatures: do not invent APIs.
 
+Prefer `type` aliases over `interface`.
+Keep `interface` only for declaration merging (for example ambient `Window`).
+
 Markdown prose in this repo: one sentence per line.
 
 The Docsify site lives in [sandustry-modding.github.io](https://github.com/sandustry-modding/sandustry-modding.github.io) (template `docs/`).

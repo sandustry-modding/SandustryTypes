@@ -45,7 +45,7 @@ export type PatchOperation = "replace" | "remove" | "insertBefore" | "insertAfte
  * Regex finder when the target is not a plain {@link BundlePatch.find} string.
  *
  */
-export interface BundlePatchRegex {
+export type BundlePatchRegex = {
   /**
    * JavaScript regex pattern source (without surrounding `/` delimiters).
    * Capture groups may be referenced from {@link BundlePatch.code} as `$1`, `$2`, …
@@ -57,7 +57,7 @@ export interface BundlePatchRegex {
    *
    */
   flags?: string;
-}
+};
 
 /**
  * One entry in `patches.json`.
@@ -97,7 +97,7 @@ export interface BundlePatchRegex {
  * ```
  *
  */
-export interface BundlePatch {
+export type BundlePatch = {
   /**
    * Compiled bundle to modify.
    *
@@ -170,7 +170,7 @@ export interface BundlePatch {
    * Human-readable note for maintainers. Not required by the official schema.
    */
   description?: string;
-}
+};
 
 /**
  * Editor-friendly `patches.json` wrapper with an optional `$schema` URL.
@@ -178,7 +178,7 @@ export interface BundlePatch {
  * The game loader expects a bare {@link BundlePatch} array. Prefer that array in
  * shipped mods. Use this object shape only when your editor needs inline `$schema`.
  */
-export interface BundlePatchesDocument {
+export type BundlePatchesDocument = {
   /**
    * Optional JSON Schema URL for editors (for example VS Code).
    * Not read by the game loader.
@@ -188,7 +188,7 @@ export interface BundlePatchesDocument {
    * Ordered patch list (same as the bare-array game format).
    */
   patches: BundlePatch[];
-}
+};
 
 /**
  * Root shape of `patches.json`: a bare {@link BundlePatch} array (game format),

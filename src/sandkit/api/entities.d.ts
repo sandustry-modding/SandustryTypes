@@ -67,12 +67,12 @@ export namespace entities {
   export function collect(entityId: number): void;
 
   /** Active entity instance in the world. */
-  export interface Entity {
+  export type Entity = {
     id: number;
     x: number;
     y: number;
     targetX?: number;
     targetY?: number;
     [key: string]: unknown;
-  }
+  };
 }

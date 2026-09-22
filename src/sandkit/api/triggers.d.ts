@@ -24,11 +24,11 @@ export namespace triggers {
   export function register(triggerId: string, definition: MainTriggerDefinition): void;
 
   /** Main-thread trigger definition shape. */
-  export interface MainTriggerDefinition {
+  export type MainTriggerDefinition = {
     /** Interval between callbacks in simulation ticks. */
     interval: number;
     /** Called each time the trigger fires. */
     callback: () => void;
     [key: string]: unknown;
-  }
+  };
 }

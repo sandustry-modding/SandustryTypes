@@ -8,7 +8,7 @@ import type { ElectronOperationResult } from "./results";
 /**
  * Custom map editor persistence helpers exposed as `electron.customMaps`.
  */
-export interface ElectronCustomMapsApi {
+export type ElectronCustomMapsApi = {
   /**
    * Write one custom map file (`.custommap`).
    *
@@ -49,4 +49,4 @@ export interface ElectronCustomMapsApi {
    * IPC: `custom-map-delete`.
    */
   delete(id: string): Promise<ElectronOperationResult>;
-}
+};

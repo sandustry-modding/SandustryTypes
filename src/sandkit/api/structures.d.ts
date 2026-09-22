@@ -533,7 +533,7 @@ export namespace structures {
   }
 
   /** Build mode entry for a structure definition. */
-  export interface StructureBuildMode {
+  export type StructureBuildMode = {
     type: string;
     directions?: string[];
     /**
@@ -541,13 +541,13 @@ export namespace structures {
      *
      */
     spanTiles?: number;
-  }
+  };
 
   /** Rotated variant entry for a structure definition. */
-  export interface StructureVariant {
+  export type StructureVariant = {
     id: StructureRef;
     angles: number[];
-  }
+  };
 
   /**
    * Custom hover tooltip driven by structure `data` fields.
@@ -576,36 +576,36 @@ export namespace structures {
    * ```
    *
    */
-  export interface StructureTooltipHover {
+  export type StructureTooltipHover = {
     type: "custom";
     dataFieldMessage: {
       message?: string;
       messageKey?: string;
       fields: readonly StructureTooltipHoverField[];
     };
-  }
+  };
 
   /** One interpolated field in a {@link StructureTooltipHover} message. */
-  export interface StructureTooltipHoverField {
+  export type StructureTooltipHoverField = {
     param: string;
     field: string;
     fallback?: string | number;
     round?: boolean;
     valueLabels?: Record<string, string>;
     valueKeys?: Record<string, string>;
-  }
+  };
 
   /** Spritesheet animation on a structure render block. */
-  export interface StructureSpritesheet {
+  export type StructureSpritesheet = {
     frameSize: Size2;
     frames: number;
     intervalMs: number;
     /** When set, frame row follows this structure `data` field. */
     rowDataField?: string;
-  }
+  };
 
   /** Hotbar / build-menu UI sprite settings. */
-  export interface StructureRenderUi {
+  export type StructureRenderUi = {
     imageName?: string;
     size?: Size2;
     offset?: Vector2;
@@ -613,10 +613,10 @@ export namespace structures {
     width?: string;
     height?: string;
     clipToBounds?: boolean;
-  }
+  };
 
   /** Render settings for a structure definition. */
-  export interface StructureRender {
+  export type StructureRender = {
     imageName?: string;
     size?: Size2;
     offset?: Vector2;
@@ -624,10 +624,10 @@ export namespace structures {
     ambienceGroup?: string;
     ui?: StructureRenderUi;
     spritesheet?: StructureSpritesheet;
-  }
+  };
 
   /** Full structure definition registered with the game. */
-  export interface SandkitStructureDefinition extends shared.api.structures.StructureDefinition {
+  export type SandkitStructureDefinition = shared.api.structures.StructureDefinition & {
     name?: string;
     nameKey?: string;
     description?: string;
@@ -656,35 +656,35 @@ export namespace structures {
     /** Values interpolated into the structure description string. */
     descriptionParams?: Record<string, string | number>;
     [key: string]: unknown;
-  }
+  };
 
   /** Options passed to {@link buildAtCell}. */
-  export interface StructureBuildOptions {
+  export type StructureBuildOptions = {
     [key: string]: unknown;
-  }
+  };
 
   /** Options passed to {@link removeAtCell}. */
-  export interface StructureRemovalOptions {
+  export type StructureRemovalOptions = {
     /** Also remove underlying terrain cells in the footprint. */
     removeCells?: boolean;
     /** Skip visual teardown effects. */
     skipVisuals?: boolean;
-  }
+  };
 
   /** Options passed to bulk structure removal helpers. */
-  export interface StructureBulkRemovalOptions {
+  export type StructureBulkRemovalOptions = {
     removeCells?: boolean;
     skipVisuals?: boolean;
     /** When set, only remove structures at these positions. */
     preserveUnselectable?: boolean;
     onlyPositions?: Vector2[];
-  }
+  };
 
   /**
    * Context passed to structure processing callbacks.
    *
    */
-  export interface StructureProcessingContext {
+  export type StructureProcessingContext = {
     /**
      * Return the resolved element type at a cell, or null.
      *
@@ -716,34 +716,34 @@ export namespace structures {
      *
      */
     commit(mutations: unknown): void;
-  }
+  };
 
   /**
    * @deprecated Use {@link StructureProcessingDefinitionV1} with {@link processing.register} instead.
    *
    */
-  export interface StructureProcessorDefinitionV1 {
+  export type StructureProcessorDefinitionV1 = {
     /** Tick interval in milliseconds. Must be > 0. */
     intervalMs: number;
     /** Synchronous callback invoked for each structure instance. */
     process: (structure: Structure, context: StructureProcessingContext) => void;
-  }
+  };
 
   /** Placement hotbar field definition. */
   export type PlacementConfigField = PlacementConfigIntegerField | PlacementConfigChoiceField;
 
   /** Integer placement field with optional bounds. */
-  export interface PlacementConfigIntegerField {
+  export type PlacementConfigIntegerField = {
     type: "integer";
     id: string;
     labelKey: string;
     min?: number;
     max?: number;
     default?: number;
-  }
+  };
 
   /** Choice placement field with labeled options. */
-  export interface PlacementConfigChoiceField {
+  export type PlacementConfigChoiceField = {
     type: "choice";
     id: string;
     labelKey: string;
@@ -751,13 +751,13 @@ export namespace structures {
       value: string;
       labelKey: string;
     }[];
-  }
+  };
 
   /** Placement rule definition for a structure type. */
-  export interface PlacementConfigDefinition {
+  export type PlacementConfigDefinition = {
     structureId: StructureId;
     fields: PlacementConfigField[];
-  }
+  };
 
   /** Planter box recipe definition shape. */
   export type PlanterBoxRecipeDefinitionV1 = processingApi.PlanterBoxRecipeDefinitionV1;
@@ -767,15 +767,15 @@ export namespace structures {
   export type KineticPressRecipeDefinitionV1 = processingApi.KineticPressRecipeDefinitionV1;
 
   /** Weighted refinery recipe definition shape. */
-  export interface WeightedRefineryRecipeDefinitionV1 {
+  export type WeightedRefineryRecipeDefinitionV1 = {
     input: processingApi.WeightedRecipeOutput["elementType"];
     outputs: processingApi.WeightedRecipeOutput[];
-  }
+  };
 
   /** Custom structure processing definition shape. */
-  export interface StructureProcessingDefinitionV1 {
+  export type StructureProcessingDefinitionV1 = {
     structureType: StructureRef;
     intervalMs: number;
     process: (structure: Structure, context: StructureProcessingContext) => void;
-  }
+  };
 }

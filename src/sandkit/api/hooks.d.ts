@@ -397,30 +397,30 @@ export namespace hooks {
   ): () => void;
 
   /** Context passed to intercept hook callbacks. */
-  export interface HookContext {
+  export type HookContext = {
     /** When called, the intercepted action is skipped. */
     cancel(): void;
     /** True after {@link cancel} was called on this context. */
     cancelled: boolean;
-  }
+  };
 
   /** Options shared by intercept and modify hooks. */
-  export interface HookOptions {
+  export type HookOptions = {
     /** Run this hook before others with lower priority. */
     priority?: number;
-  }
+  };
 
   /** Extra filters for {@link intercept}, keyed by hook id. Other ids use {@link HookOptions} only. */
-  export interface InterceptHookFilterMap {
+  export type InterceptHookFilterMap = {
     "item:use": { itemIds?: string[] };
     "entity:update": { entityTypes?: string[] };
     "building:place": { structureTypes?: string[] };
     "projectile:fire:overStructure": { projectileTypes?: string[] };
     "projectile:hit": { projectileTypes?: string[] };
-  }
+  };
 
   /** Extra filters for {@link modify}, keyed by hook id. Other ids use {@link HookOptions} only. */
-  export interface ModifyHookFilterMap {
+  export type ModifyHookFilterMap = {
     "weapon:reload:prepare": { weaponIds?: string[] };
     "projectile:travel:prepare": { projectileTypes?: string[] };
     "projectile:impact:prepare": { projectileTypes?: string[] };
@@ -428,7 +428,7 @@ export namespace hooks {
     "resource:collection:prepare": { resourceIds?: string[] };
     "resource:delivery:prepare": { resourceIds?: string[] };
     "resource:balance:prepare": { resourceIds?: string[] };
-  }
+  };
 
   /** Options for {@link intercept}. */
   export type InterceptHookOptions<K extends InterceptHookId> = HookOptions &
@@ -511,24 +511,24 @@ export namespace hooks {
   } & Record<string, unknown>;
 
   /** Keyboard intercept payload for {@link InterceptHookMap} `"input:keyDown"` and `"input:keyUp"`. */
-  export interface InputKeyInterceptArgs {
+  export type InputKeyInterceptArgs = {
     key: string;
     code: string;
     event: KeyboardEvent;
-  }
+  };
 
   /** Teleport zone snapshot on {@link InterceptHookMap} `"teleport:effect:create"`. */
-  export interface TeleportEffectZone {
+  export type TeleportEffectZone = {
     id: string;
     exitX: number;
     exitY: number;
     cooldown?: number;
     lastUsed?: number;
     [key: string]: unknown;
-  }
+  };
 
   /** Projectile travel hit from {@link InterceptHookMap} `"projectile:hit"`. */
-  export interface ProjectileTravelResult {
+  export type ProjectileTravelResult = {
     x: number;
     y: number;
     cX: number;
@@ -537,35 +537,35 @@ export namespace hooks {
     outOfBounds?: boolean;
     blockedByZone?: boolean;
     lastFreePosition?: Vector2;
-  }
+  };
 
   /** One currency line on {@link InterceptHookMap} `"progression:purchase"`. */
-  export interface ProgressionPurchaseCost {
+  export type ProgressionPurchaseCost = {
     currencyId: string;
     amount: number;
-  }
+  };
 
   /** Cell origin used on structure move and remove payloads. */
-  export interface StructureCellRef {
+  export type StructureCellRef = {
     x: number;
     y: number;
-  }
+  };
 
   /** Successful move row on {@link ModifierHookMap} `"structures:moved:prepare"`. */
-  export interface StructureMoveRecord {
+  export type StructureMoveRecord = {
     from: Vector2;
     to: Vector2;
-  }
+  };
 
   /** Failed place row on structure move and by-move remove payloads. */
-  export interface StructureMoveFailure {
+  export type StructureMoveFailure = {
     from?: Vector2;
     type?: structures.StructureType;
     data?: structures.StructureData;
-  }
+  };
 
   /** Intercept hook argument shapes keyed by hook id. */
-  export interface InterceptHookMap {
+  export type InterceptHookMap = {
     "item:use": {
       itemId: string;
       useId: string;
@@ -659,10 +659,10 @@ export namespace hooks {
       itemId?: string;
       costs: readonly ProgressionPurchaseCost[];
     };
-  }
+  };
 
   /** Modify hook argument shapes keyed by hook id. */
-  export interface ModifierHookMap {
+  export type ModifierHookMap = {
     "excavation:prepare": {
       sourceId: string;
       sourceKind: "tool" | "projectile" | "structure" | "drone";
@@ -808,7 +808,7 @@ export namespace hooks {
       readonly physicalRemoved: number;
       shortfall: number;
     };
-  }
+  };
 
   /** Intercept hook args for a given hook id. */
   export type InterceptHookArgs<K extends InterceptHookId> = K extends keyof InterceptHookMap

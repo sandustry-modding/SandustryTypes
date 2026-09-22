@@ -119,7 +119,7 @@ export namespace lights {
   }
 
   /** Handle returned from {@link temporary.createAtWorld}. */
-  export interface TemporaryLightHandle {
+  export type TemporaryLightHandle = {
     /** Assigned temporary light id, or null when creation failed. */
     lightId: number | null;
     /**
@@ -127,21 +127,20 @@ export namespace lights {
      *
      */
     index: number | null;
-  }
+  };
 
   /** Options for temporary lights. */
   export type TemporaryLightOptions = shared.api.effects.TemporaryLightOptions;
 
   /** Options for persistent world lights. */
-  export interface PersistentLightOptions {
+  export type PersistentLightOptions = {
     /** Light brightness multiplier. */
     brightness?: number;
     /** Light radius in pixels. */
     size?: number;
     /** RGBA color components. */
     color?: [number, number, number, number];
-    [key: string]: unknown;
-  }
+  };
 
   /** Handle returned from {@link persistent.createAtWorld}. */
   export type PersistentLightHandle = unknown;

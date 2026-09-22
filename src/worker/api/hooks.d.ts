@@ -110,20 +110,20 @@ export namespace hooks {
   ): () => void;
 
   /** Context passed to intercept hook callbacks. */
-  export interface HookContext {
+  export type HookContext = {
     /** When called, the intercepted action is skipped. */
     cancel(): void;
     /** True after {@link cancel} was called on this context. */
     cancelled: boolean;
-  }
+  };
 
   /** Guard filter for worker hook registration. */
-  export interface HookGuard {
+  export type HookGuard = {
     /** Required for element-scoped intercept hooks and optional on emit. */
     elementType?: sharedElements.ElementType;
     /** Required for terrain-scoped event guards; optional on emit. */
     terrainType?: terrains.TerrainType;
-  }
+  };
 
   /** Options for {@link intercept}. */
   export type InterceptHookOptions<K extends InterceptHookId> =
@@ -134,10 +134,10 @@ export namespace hooks {
         : { guard?: HookGuard; priority?: number };
 
   /** Options for {@link modify}. */
-  export interface ModifyHookOptions {
+  export type ModifyHookOptions = {
     guard?: HookGuard;
     priority?: number;
-  }
+  };
 
   /** Intercept hook ids with a required element guard. */
   export type ElementGuardedInterceptHookId =
@@ -173,7 +173,7 @@ export namespace hooks {
    * Shared `elementData` SOA passed to {@link InterceptHookMap} `"element:update"`.
    * Index with `elementIndex`.
    */
-  export interface ElementSimData {
+  export type ElementSimData = {
     type: Uint8Array;
     x: Uint16Array;
     y: Uint16Array;
@@ -199,10 +199,10 @@ export namespace hooks {
     dataField2: Int16Array;
     dataField3: Uint16Array;
     dataField4: Float32Array;
-  }
+  };
 
   /** Intercept hook argument shapes keyed by hook id. */
-  export interface InterceptHookMap {
+  export type InterceptHookMap = {
     "cell:process": {
       cellId: CellId;
       x: number;
@@ -265,7 +265,7 @@ export namespace hooks {
       elementType: sharedElements.ElementType;
       structureType: structures.StructureType;
     };
-  }
+  };
 
   /** Modify hook argument shapes keyed by hook id. Unlisted ids use `unknown`. */
   export type ModifyHookMap = Record<string, unknown>;

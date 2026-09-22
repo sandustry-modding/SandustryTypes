@@ -437,15 +437,15 @@ export namespace ui {
   export type TooltipData = TooltipMessageData;
 
   /** One choice in {@link select}. */
-  export interface SelectChoice<T = string> {
+  export type SelectChoice<T = string> = {
     /** Display label for the choice. */
     label: LocalizedText;
     /** Value returned when the player picks this choice. */
     value: T;
-  }
+  };
 
   /** Dialog options for {@link select}. */
-  export interface SelectDialogOptions<T = string> {
+  export type SelectDialogOptions<T = string> = {
     /** Optional dialog body text. */
     message?: LocalizedText;
     /** Optional dialog title. */
@@ -454,10 +454,10 @@ export namespace ui {
     defaultValue?: T;
     /** Confirm button label. */
     buttonLabel?: LocalizedText;
-  }
+  };
 
   /** Options for {@link regions.mount}. */
-  export interface RegionMountOptions {
+  export type RegionMountOptions = {
     /**
      * `"docked"` sits on the hotbar.
      * `"raised"` sits above panels such as Filter Config.
@@ -467,10 +467,10 @@ export namespace ui {
     order?: number;
     /** Function that returns React content. */
     render: () => ReactNode;
-  }
+  };
 
   /** Partial options for {@link RegionMountHandle}. */
-  export interface RegionMountUpdateOptions {
+  export type RegionMountUpdateOptions = {
     /**
      * `"docked"` sits on the hotbar.
      * `"raised"` sits above panels such as Filter Config.
@@ -480,10 +480,10 @@ export namespace ui {
     order?: number;
     /** Function that returns React content. */
     render?: () => ReactNode;
-  }
+  };
 
   /** Handle returned from {@link regions.mount}. */
-  export interface RegionMountHandle {
+  export type RegionMountHandle = {
     /**
      * Update placement, order, or render for this mount.
      * @param options - Fields to change.
@@ -499,30 +499,30 @@ export namespace ui {
     update(options: RegionMountUpdateOptions): void;
     /** Remove this mount from the region. */
     unmount(): void;
-  }
+  };
 
   /** Handle returned from {@link regions.setVisible}. */
-  export interface VisibilityHandle {
+  export type VisibilityHandle = {
     /** Show the region again. */
     restore(): void;
-  }
+  };
 
   /** Handle returned from {@link overrides.register}. */
-  export interface OverrideHandle {
+  export type OverrideHandle = {
     /** Drop this wrapper. */
     remove(): void;
-  }
+  };
 
   /** Options for {@link hotbar.createBankSource}. */
-  export interface HotbarBankSourceOptions {
+  export type HotbarBankSourceOptions = {
     /** Bank index offset for this source. */
     bankOffset: number;
     /** Minimum number of banks to keep available. */
     minimumBankCount?: number;
-  }
+  };
 
   /** Hotbar bank source used by {@link components.ActionSlot}. */
-  export interface HotbarBankSource {
+  export type HotbarBankSource = {
     /** Return true when this bank source can show slots. */
     isAvailable(): boolean;
     /** Return the bank index for this source. */
@@ -546,20 +546,20 @@ export namespace ui {
     clearSlot(slotIndex: number): void;
     /** Release this bank source. */
     dispose(): void;
-  }
+  };
 
   /** State returned from {@link hotbar.useHotbar}. */
-  export interface HotbarState {
+  export type HotbarState = {
     /** Number of hotbar banks. */
     bankCount: number;
     /** Active bank index. */
     activeBankIndex: number;
     /** Active slot index. */
     activeSlotIndex: number;
-  }
+  };
 
   /** Props for {@link components.ActionSlot}. */
-  export interface ActionSlotProps {
+  export type ActionSlotProps = {
     /** Bank source from {@link hotbar.createBankSource}. */
     source: HotbarBankSource;
     /** Slot index in the bank. */
@@ -574,10 +574,10 @@ export namespace ui {
     onSelect?: () => void;
     /** Called when the player clears the slot. */
     onClear?: () => void;
-  }
+  };
 
   /** Props for {@link components.Panel}. */
-  export interface PanelProps {
+  export type PanelProps = {
     /** Optional panel title. */
     title?: LocalizedText;
     /** Panel body. */
@@ -586,10 +586,10 @@ export namespace ui {
     className?: string;
     /** Inline style. */
     style?: CSSProperties;
-  }
+  };
 
   /** Props for {@link components.Button}. */
-  export interface ButtonProps {
+  export type ButtonProps = {
     /** Button label or content. */
     children?: ReactNode;
     /** When true, draw the button as selected. */
@@ -608,28 +608,28 @@ export namespace ui {
     style?: CSSProperties;
     /** Click handler. */
     onClick?: () => void;
-  }
+  };
 
   /** Message tooltip with localized body text. */
-  export interface TooltipMessageData {
+  export type TooltipMessageData = {
     /** Discriminator for tooltip renderer selection. */
     type: "message";
     /** Message body as localized text. */
     text: LocalizedText;
-  }
+  };
 
   /** Focusable element state from useFocusable. */
-  export interface Focusable<T extends HTMLElement = HTMLDivElement> {
+  export type Focusable<T extends HTMLElement = HTMLDivElement> = {
     /** Ref to attach to the focusable element. */
     readonly ref: RefObject<T>;
     /** True when the element has controller focus. */
     readonly focused: boolean;
     /** Move controller focus to this element. */
     readonly focus: () => void;
-  }
+  };
 
   /** Options for useFocusable registration. */
-  export interface FocusOptions {
+  export type FocusOptions = {
     /** Unique id within the focus scope. */
     readonly id: string;
     /** Focus scope id this element belongs to. */
@@ -648,10 +648,10 @@ export namespace ui {
     readonly neighbors?: Partial<Record<"left" | "right" | "up" | "down", string>>;
     /** When true, scroll the element into view on focus. */
     readonly scrollIntoView?: boolean;
-  }
+  };
 
   /** Options for {@link navigation.useFocusScope}. */
-  export interface FocusScopeOptions {
+  export type FocusScopeOptions = {
     /** Unique scope id. */
     readonly id: string;
     /** When true, this scope can receive focus. */
@@ -662,5 +662,5 @@ export namespace ui {
     readonly defaultId?: string;
     /** Called on back. Return true when the scope handled back. */
     readonly onBack?: () => boolean | void;
-  }
+  };
 }

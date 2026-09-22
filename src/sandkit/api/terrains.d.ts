@@ -50,13 +50,13 @@ export namespace terrains {
    * Terrain definition shape with typed element interactions.
    *
    */
-  export interface TerrainDefinition extends Omit<
+  export type TerrainDefinition = Omit<
     shared.api.terrains.TerrainDefinition,
     "interactions"
-  > {
+  > & {
     /** Tooltip interactions shown for this terrain. */
     interactions?: readonly elements.Interaction[];
-  }
+  };
 
   /**
    * Register a new terrain definition.

@@ -22,22 +22,22 @@ export namespace ui {
   export type LocalizedText = string | I18nTextKey | I18nTranslatable;
 
   /** Translation key with optional parameter substitution. */
-  export interface I18nTextKey {
+  export type I18nTextKey = {
     /** Namespaced translation key (for example `ui|save|save`). */
     key: string;
     /** Values merged into the translated string. */
     params?: Record<string, string | number>;
-  }
+  };
 
   /** Value returned by `sandkit.api.i18n.translatable`. */
-  export interface I18nTranslatable {
+  export type I18nTranslatable = {
     __translatable: true;
     key: string;
     fallback: string;
-  }
+  };
 
   /** Cooldown, style, and auto-dismiss options for {@link toast}. */
-  export interface ToastOptions {
+  export type ToastOptions = {
     /** Minimum ms before the same toast can show again. */
     cooldown?: number;
     /**
@@ -52,5 +52,5 @@ export namespace ui {
     duration?: number | false;
     /** Visual style applied to the toast body. */
     variant?: "danger" | "hint" | "hole" | (string & {});
-  }
+  };
 }

@@ -65,12 +65,12 @@ export namespace events {
   ): void;
 
   /** Guard filter for worker events. */
-  export interface EventGuard {
+  export type EventGuard = {
     /** Required when subscribing to `element:moved`. Optional on emit. */
     elementType?: sharedElements.ElementType;
     /** Required when subscribing to `terrain:updated`. Optional on emit. */
     terrainType?: terrains.TerrainType;
-  }
+  };
 
   /** Options for {@link on}. */
   export type EventOnOptions<K extends EventId> = K extends "element:moved"
@@ -80,12 +80,12 @@ export namespace events {
       : { guard?: EventGuard };
 
   /** Options for {@link emit}. */
-  export interface EventEmitOptions {
+  export type EventEmitOptions = {
     guard?: EventGuard;
-  }
+  };
 
   /** Known worker event payloads. Unlisted ids still use `unknown`. */
-  export interface EventPayloadMap {
+  export type EventPayloadMap = {
     "element:moved": hooks.InterceptHookMap["element:move"];
     "terrain:updated": hooks.InterceptHookMap["cell:process"];
     /** @deprecated Use `"terrain:updated"` instead. */
@@ -93,7 +93,7 @@ export namespace events {
     "worker:update:post": { dt: number };
     /** @deprecated Use `"worker:update:post"` instead. */
     "update:post": EventPayloadMap["worker:update:post"];
-  }
+  };
 
   /** Known worker event names plus any custom string id. */
   export type EventId = LooseString<keyof EventPayloadMap>;

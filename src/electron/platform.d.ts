@@ -8,7 +8,7 @@ import type { ElectronWorkshopApi } from "./workshop";
 /**
  * Platform overlay browser helpers exposed as `electron.platform.overlay`.
  */
-export interface ElectronPlatformOverlayApi {
+export type ElectronPlatformOverlayApi = {
   /**
    * Open an `https:` URL in the platform overlay browser when available.
    *
@@ -18,12 +18,12 @@ export interface ElectronPlatformOverlayApi {
    * IPC: `platform-overlay-open-url`.
    */
   openUrl(url: string): Promise<{ ok: boolean; error?: string } | false>;
-}
+};
 
 /**
  * Cross-store platform helpers exposed as `electron.platform`.
  */
-export interface ElectronPlatformApi {
+export type ElectronPlatformApi = {
   /**
    * Return true when the platform integration finished startup.
    *
@@ -134,15 +134,15 @@ export interface ElectronPlatformApi {
   /**
    * Sync local saves with platform cloud storage.
    *
-   * @returns Cloud sync summary from the platform integration.
+   * @returns `{ synced, uploaded }` counts; `error` is set when sync throws.
    *
    * IPC: `platform-cloud-sync`.
    */
-  cloudSync(): Promise<unknown>;
+  cloudSync(): Promise<{ synced: number; uploaded: number; error?: string }>;
 
   /** Steam Workshop helpers (Steam only; MS Store calls fail gracefully). */
   workshop: ElectronWorkshopApi;
 
   /** Platform overlay browser helpers. */
   overlay: ElectronPlatformOverlayApi;
-}
+};

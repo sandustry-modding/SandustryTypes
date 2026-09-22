@@ -19,8 +19,8 @@ export namespace game {
   export function start(options?: GameStartOptions): void;
 
   /** Options for {@link start}. */
-  export interface GameStartOptions {
+  export type GameStartOptions = {
     /** When true, skip the intro sequence. */
     skipIntro?: boolean;
-  }
+  };
 }

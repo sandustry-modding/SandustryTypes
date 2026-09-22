@@ -18,9 +18,9 @@
  * }
  * ```
  */
-export interface WorkshopJson {
+export type WorkshopJson = {
   /** File format version. Must be `1`. */
   schemaVersion: 1;
   /** Steam Workshop published file id. Managed by the publisher. */
   publishedFileId: string;
-}
+};

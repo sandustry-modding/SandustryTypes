@@ -147,15 +147,15 @@ export namespace grid {
   ): void;
 
   /** Deferred element and terrain mutations passed to {@link mutate}. */
-  export interface GridMutationWriter {
+  export type GridMutationWriter = {
     /** Element cell mutations inside a {@link mutate} callback. */
     elements: GridMutationWriterElements;
     /** Terrain cell mutations inside a {@link mutate} callback. */
     terrains: GridMutationWriterTerrains;
-  }
+  };
 
   /** Element writers available on {@link GridMutationWriter.elements}. */
-  export interface GridMutationWriterElements {
+  export type GridMutationWriterElements = {
     /**
      * Create an element at a cell inside a {@link mutate} callback.
      *
@@ -199,10 +199,10 @@ export namespace grid {
      *
      */
     removeAtCell(...args: [...CellCoordinates, options?: elements.ElementRemovalOptions]): void;
-  }
+  };
 
   /** Terrain writers available on {@link GridMutationWriter.terrains}. */
-  export interface GridMutationWriterTerrains {
+  export type GridMutationWriterTerrains = {
     /**
      * Create terrain at a cell inside a {@link mutate} callback.
      *
@@ -246,5 +246,5 @@ export namespace grid {
      *
      */
     removeAtCell(...args: [...CellCoordinates, options?: terrains.TerrainMutationOptions]): void;
-  }
+  };
 }

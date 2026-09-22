@@ -22,9 +22,9 @@ export namespace progression {
   export function complete(request: ProgressionCompletionRequestV1): boolean;
 
   /** Progression completion request shape. */
-  export interface ProgressionCompletionRequestV1 {
+  export type ProgressionCompletionRequestV1 = {
     /** Progression step or quest identifier. */
     id: string;
     [key: string]: unknown;
-  }
+  };
 }

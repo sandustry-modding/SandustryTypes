@@ -30,7 +30,7 @@ import type {
 } from "./results";
 import type { ElectronIpcListener, ElectronLogLevel, ElectronPlatform } from "./primitives";
 
-export interface ElectronBridge {
+export type ElectronBridge = {
   /**
    * Return the active distribution channel.
    *
@@ -422,4 +422,4 @@ export interface ElectronBridge {
 
   /** Custom map editor persistence helpers (`electron.customMaps`). */
   customMaps: ElectronCustomMapsApi;
-}
+};

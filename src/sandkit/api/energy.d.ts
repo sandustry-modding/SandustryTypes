@@ -59,11 +59,7 @@ export namespace energy {
    * }
    * ```
    */
-  export function getNetworkAtCell(...args: CellCoordinates): {
-    x: number;
-    y: number;
-    type: string;
-  }[];
+  export function getNetworkAtCell(...args: CellCoordinates): EnergyNetworkNode[];
   /**
    * Returns free storage capacity in the network at the cell.
    * @param cellX - Grid cell X coordinate.
@@ -71,19 +67,30 @@ export namespace energy {
    */
   export function getNetworkFreeCapacityAtCell(...args: CellCoordinates): number;
 
+  /**
+   * One node from {@link getNetworkAtCell}.
+   * Official docs use `cellX` / `cellY`.
+   * The 0.5.6 engine object uses `x` / `y` for the same cell.
+   */
+  export type EnergyNetworkNode = {
+    type: string;
+    cellX?: number;
+    cellY?: number;
+    x?: number;
+    y?: number;
+  };
+
   /** Options for {@link registerType}. */
-  export interface EnergyRegisterTypeOptions {
+  export type EnergyRegisterTypeOptions = {
     /** Maximum stored energy for storage nodes. */
     capacity?: number;
     /** Energy type id when multiple networks exist. */
     energyType?: string;
-    [key: string]: unknown;
-  }
+  };
 
   /** Options for {@link addAtCell}. */
-  export interface EnergyAddOptions {
+  export type EnergyAddOptions = {
     /** Energy type id when multiple networks exist. */
     energyType?: string;
-    [key: string]: unknown;
-  }
+  };
 }

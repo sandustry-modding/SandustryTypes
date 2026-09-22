@@ -28,9 +28,9 @@ export namespace blueprints {
   ): BlueprintStructure[];
 
   /** Serialized structure entry used in blueprints. */
-  export interface BlueprintStructure {
+  export type BlueprintStructure = {
     x: number;
     y: number;
     [key: string]: unknown;
-  }
+  };
 }

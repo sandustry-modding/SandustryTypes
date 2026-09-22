@@ -134,7 +134,7 @@ export namespace tech {
   export type TechGridId = TechEnum | LooseString<never> | TaggedNumber<"tech">;
 
   /** Tech definition shape. */
-  export interface TechDefinition {
+  export type TechDefinition = {
     /** Plain display name (when not using {@link nameKey}). */
     name?: string;
     /** Display name translation key. */
@@ -160,16 +160,16 @@ export namespace tech {
     /** Prerequisite tech ids. */
     requires?: readonly string[];
     [key: string]: unknown;
-  }
+  };
 
   /** Position on the tech grid. */
-  export interface TechGridPosition extends Vector2 {}
+  export type TechGridPosition = Vector2;
 
   /** Unlock payload for {@link conservatory.appendUnlock}. */
-  export interface ConservatoryUnlocks {
+  export type ConservatoryUnlocks = {
     /** Structure ids to unlock. */
     structures?: readonly string[];
     /** Item ids to unlock. */
     items?: readonly string[];
-  }
+  };
 }

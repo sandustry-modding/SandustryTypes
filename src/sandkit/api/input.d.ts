@@ -125,15 +125,15 @@ export namespace input {
   >;
 
   /** Handlers invoked when a binding is pressed or released. */
-  export interface InputBindingHandlers {
+  export type InputBindingHandlers = {
     /** Called when the binding is pressed. */
     down?: () => void;
     /** Called when the binding is released. */
     up?: () => void;
-  }
+  };
 
   /** Definition for a registered input binding. */
-  export interface InputBindingDefinition {
+  export type InputBindingDefinition = {
     /** Display name shown in settings. */
     displayName: string;
     /** i18n key for the display name (overrides displayName when set). */
@@ -145,5 +145,5 @@ export namespace input {
 
     // Temporary until we're sure we have the full definition.
     [key: string]: unknown;
-  }
+  };
 }

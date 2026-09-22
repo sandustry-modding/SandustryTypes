@@ -30,9 +30,18 @@ export namespace sprites {
    */
   export function getById(spriteId: string): LoadedSprite | undefined;
   /** Hide all player mod-attached sprites. */
+  export function hideAllForPlayer(): void;
+  /**
+   * @deprecated Use {@link hideAllForPlayer} instead.
+   */
   export function hideAllPlayerModSprites(): void;
   /**
    * Rotate all player mod-attached sprites by angle.
+   * @param angleRadians - Rotation in radians.
+   */
+  export function rotateAllForPlayer(angleRadians: number): void;
+  /**
+   * @deprecated Use {@link rotateAllForPlayer} instead.
    * @param angle - Rotation in radians.
    */
   export function rotatePlayerModSprites(angle: number): void;
@@ -41,9 +50,8 @@ export namespace sprites {
   export type LoadedSprite = unknown;
 
   /** Options for {@link load} and {@link loadFromMod}. */
-  export interface SpriteLoadOptions {
+  export type SpriteLoadOptions = {
     /** Packed RGB tint applied after load. */
     tint?: number;
-    [key: string]: unknown;
-  }
+  };
 }

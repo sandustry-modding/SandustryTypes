@@ -133,7 +133,7 @@
 import type { Vector2 } from "../shared/geometry";
 
 /** Number setting in `modinfo.json` `configSchema`. */
-export interface ConfigSchemaNumber {
+export type ConfigSchemaNumber = {
   /**
    * Discriminator. Must be `"number"`.
    */
@@ -170,10 +170,10 @@ export interface ConfigSchemaNumber {
    * i18n key for the setting help text.
    */
   descriptionKey?: string;
-}
+};
 
 /** Boolean setting in `modinfo.json` `configSchema`. */
-export interface ConfigSchemaBoolean {
+export type ConfigSchemaBoolean = {
   /**
    * Discriminator. Must be `"boolean"`.
    */
@@ -198,10 +198,10 @@ export interface ConfigSchemaBoolean {
    * i18n key for the setting help text.
    */
   descriptionKey?: string;
-}
+};
 
 /** One option inside a {@link ConfigSchemaChoice}. */
-export interface ConfigSchemaChoiceOption {
+export type ConfigSchemaChoiceOption = {
   /**
    * Stored value written when the player picks this option.
    */
@@ -214,10 +214,10 @@ export interface ConfigSchemaChoiceOption {
    * i18n key for the option label.
    */
   labelKey?: string;
-}
+};
 
 /** Choice setting in `modinfo.json` `configSchema`. */
-export interface ConfigSchemaChoice {
+export type ConfigSchemaChoice = {
   /**
    * Discriminator. Must be `"choice"`.
    */
@@ -246,7 +246,7 @@ export interface ConfigSchemaChoice {
    * Allowed choices for this setting.
    */
   options: readonly ConfigSchemaChoiceOption[];
-}
+};
 
 /**
  * One entry under `modinfo.json` `configSchema`.
@@ -260,7 +260,7 @@ export type ConfigSchemaEntry = ConfigSchemaNumber | ConfigSchemaBoolean | Confi
  * Animated (or static) texture replacement for a vanilla asset id.
  *
  */
-export interface TextureOverride {
+export type TextureOverride = {
   /**
    * Path to the replacement image, relative to the mod root.
    */
@@ -277,13 +277,13 @@ export interface TextureOverride {
    * Milliseconds between animation frames.
    */
   intervalMs?: number;
-}
+};
 
 /**
  * Optional content pack exposed by this mod for other mods or the game to consume.
  *
  */
-export interface ModProvide {
+export type ModProvide = {
   /**
    * Kind of provided content (for example `"structureTextures"`).
    */
@@ -296,7 +296,7 @@ export interface ModProvide {
    * Texture paths keyed by the vanilla or structure texture id they replace.
    */
   textureOverrides?: Record<string, string>;
-}
+};
 
 /**
  * Blueprint image paths for a custom map pack.
@@ -304,7 +304,7 @@ export interface ModProvide {
  * Paths are relative to the mod root.
  *
  */
-export interface ModMapBlueprints {
+export type ModMapBlueprints = {
   /**
    * Terrain color map image.
    */
@@ -337,20 +337,20 @@ export interface ModMapBlueprints {
    * Map config JSON path.
    */
   config?: string;
-}
+};
 
 /**
  * World-pixel spawn or unstuck point.
  *
  * Same shape as {@link Vector2}.
  */
-export interface ModMapPoint extends Vector2 {}
+export type ModMapPoint = Vector2;
 
 /**
  * Vertical camera / travel bounds for the custom map.
  *
  */
-export interface ModMapTopBounds {
+export type ModMapTopBounds = {
   /**
    * Hard top bound in world pixels.
    */
@@ -359,13 +359,13 @@ export interface ModMapTopBounds {
    * Soft top bound in world pixels.
    */
   soft?: number;
-}
+};
 
 /**
  * Depth-based light sizing for the custom map.
  *
  */
-export interface ModMapDepthLight {
+export type ModMapDepthLight = {
   /**
    * World Y where depth light scaling starts.
    */
@@ -382,13 +382,13 @@ export interface ModMapDepthLight {
    * Minimum light size at the deep end of the range.
    */
   minSize?: number;
-}
+};
 
 /**
  * Parallax background tuning for the custom map.
  *
  */
-export interface ModMapParallax {
+export type ModMapParallax = {
   /**
    * Horizontal scale of the parallax layer.
    */
@@ -397,13 +397,13 @@ export interface ModMapParallax {
    * Vertical offset of the parallax layer in pixels.
    */
   offsetY?: number;
-}
+};
 
 /**
  * Color-map cell that paints both background and foreground terrain.
  *
  */
-export interface ModMapColorMappingLayers {
+export type ModMapColorMappingLayers = {
   /**
    * Background terrain id for this blueprint RGB.
    */
@@ -412,7 +412,7 @@ export interface ModMapColorMappingLayers {
    * Foreground terrain id for this blueprint RGB.
    */
   foreground?: string;
-}
+};
 
 /**
  * One `map.colorMappings` value: a single terrain id, or layered background/foreground ids.
@@ -424,7 +424,7 @@ export type ModMapColorMapping = string | ModMapColorMappingLayers;
  * Custom map pack block in `modinfo.json`.
  *
  */
-export interface ModMapDefinition {
+export type ModMapDefinition = {
   /**
    * Paths to blueprint images and map config under the mod root.
    */
@@ -465,13 +465,13 @@ export interface ModMapDefinition {
    * Maps blueprint RGB keys (`"r, g, b"`) to terrain ids or layered terrain.
    */
   colorMappings?: Record<string, ModMapColorMapping>;
-}
+};
 
 /**
  * Compatible game version range for the mod.
  *
  */
-export interface ModGameVersion {
+export type ModGameVersion = {
   /**
    * Lowest supported game version string.
    */
@@ -480,7 +480,7 @@ export interface ModGameVersion {
    * Highest supported game version string.
    */
   maximum?: string;
-}
+};
 
 /**
  * Sandkit mod manifest (`modinfo.json`).
@@ -494,7 +494,7 @@ export interface ModGameVersion {
  * {@link map}. `configSchema` alone does not count.
  *
  */
-export interface ModInfo {
+export type ModInfo = {
   /**
    * Optional JSON Schema URL for editors (for example VS Code).
    * Not read by the game loader.
@@ -582,4 +582,4 @@ export interface ModInfo {
    * Embedded custom map pack definition for this mod.
    */
   map?: ModMapDefinition;
-}
+};

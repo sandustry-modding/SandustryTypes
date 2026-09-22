@@ -71,15 +71,15 @@ export namespace grid {
   export type CellId = PackedCellId;
 
   /** World grid width and height in cells. */
-  export interface GridDimensions {
+  export type GridDimensions = {
     /** Grid width in cells. */
     widthCells: number;
     /** Grid height in cells. */
     heightCells: number;
-  }
+  };
 
   /** Flags that control how {@link excavateAtCell} resolves damage and drops. */
-  export interface ExcavateOptions {
+  export type ExcavateOptions = {
     /** Treat the dig as gun fire for terrain resistance checks. */
     fromGun?: boolean;
     /** Treat the dig as rocket or dynamite explosion damage. */
@@ -94,5 +94,5 @@ export namespace grid {
     forceRemoveAll?: boolean;
     /** Extra drill-tier damage when {@link fromDrill} is true. Clamped to 0–1000. */
     drillTierDamage?: number;
-  }
+  };
 }

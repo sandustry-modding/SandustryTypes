@@ -45,7 +45,7 @@ export namespace pipes {
   export function setEnabledAtCell(...args: [...CellCoordinates, enabled: boolean]): void;
 
   /** Connected vent cell position. */
-  export interface PipeVentCell extends CellXY {
+  export type PipeVentCell = CellXY & {
     [key: string]: unknown;
-  }
+  };
 }

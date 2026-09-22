@@ -16,7 +16,7 @@ export namespace terrains {
    * Terrain definition shape for {@link register} and {@link getDefinitionByType}.
    *
    */
-  export interface TerrainDefinition {
+  export type TerrainDefinition = {
     /** Unique mod-scoped terrain id. */
     id: string;
     /** i18n key for the terrain display name. */
@@ -39,13 +39,13 @@ export namespace terrains {
       chance: number;
     };
     [key: string]: unknown;
-  }
+  };
 
   /**
    * Terrain cell data returned by {@link getDataAtCell}.
    *
    */
-  export interface TerrainDataAtCell {
+  export type TerrainDataAtCell = {
     /** Numeric terrain cell type. */
     cellType: TerrainType;
     /**
@@ -58,7 +58,7 @@ export namespace terrains {
      *
      */
     hp?: number | null;
-  }
+  };
 
   /**
    * Return the mod string id for a numeric terrain type.
@@ -214,10 +214,10 @@ export namespace terrains {
    * Options for terrain create, replace, or remove calls.
    *
    */
-  export interface TerrainMutationOptions {
+  export type TerrainMutationOptions = {
     /** Skip shadow updates around the changed cell. */
     skipShadow?: boolean;
-  }
+  };
 
   /**
    * Numeric terrain / {@link CellTypeEnum} handle.

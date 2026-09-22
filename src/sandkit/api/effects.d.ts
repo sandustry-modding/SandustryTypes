@@ -112,7 +112,7 @@ export namespace effects {
   export function removeLightById(lightId: number): void;
 
   /** Options for laser beam effects. */
-  export interface LaserEffectOptions {
+  export type LaserEffectOptions = {
     /** Beam width in pixels. */
     width?: number;
     /** Beam brightness multiplier. */
@@ -121,16 +121,16 @@ export namespace effects {
     color?: number;
     /** When true, draws a glow around the beam. */
     glow?: boolean;
-  }
+  };
 
   /** Handle returned by createLaserAtWorld. */
-  export interface LaserEffectHandle {
+  export type LaserEffectHandle = {
     /** Removes the laser from the scene. */
     destroy(): void;
-  }
+  };
 
   /** Options for distortion wave effects. */
-  export interface DistortionEffectOptions {
+  export type DistortionEffectOptions = {
     /** Distortion style: implode or explode. */
     style?: "implode" | "explode";
     /** Effect duration in seconds. */
@@ -141,5 +141,5 @@ export namespace effects {
     intensity?: number;
     /** RGBA color components for the effect. */
     color?: [number, number, number, number];
-  }
+  };
 }

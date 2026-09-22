@@ -204,7 +204,7 @@ export namespace i18n {
   export type Locale = LooseString<"en">;
 
   /** Number format options for {@link formatNumber}. */
-  export interface I18nNumberFormatOptions {
+  export type I18nNumberFormatOptions = {
     /** Minimum fraction digits. */
     minimumFractionDigits?: number;
     /** Maximum fraction digits. */
@@ -212,5 +212,5 @@ export namespace i18n {
     /** When true, use grouping separators. */
     useGrouping?: boolean;
     [key: string]: unknown;
-  }
+  };
 }

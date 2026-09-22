@@ -17,23 +17,23 @@ export namespace pickups {
   export type WorldItemType = PickupType;
 
   /** Optional point light attached when spawning a pickup. */
-  export interface WorldItemLight {
+  export type WorldItemLight = {
     /** Light brightness multiplier. Default 1. */
     brightness?: number;
     /** Light radius in world pixels. Default 100. */
     size?: number;
     /** RGB or RGBA color components in 0–1 range. */
     color?: [number, number, number] | [number, number, number, number];
-  }
+  };
 
   /** Active world pickup instance. */
-  export interface WorldItem {
+  export type WorldItem = {
     id: number;
     x: number;
     y: number;
     type: PickupType;
     data: Record<string, unknown>;
-  }
+  };
 
   /**
    * Spawn a pickup at world position.

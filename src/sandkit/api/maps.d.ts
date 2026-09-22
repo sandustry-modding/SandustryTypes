@@ -39,17 +39,16 @@ export namespace maps {
   export function getArtifactLocations(): readonly ArtifactLocation[];
 
   /** Artifact location entry from {@link getArtifactLocations}. */
-  export interface ArtifactLocation extends CellXY {
+  export type ArtifactLocation = CellXY & {
     name: string;
-    [key: string]: unknown;
-  }
+  };
 
   /** Available map entry shape. */
-  export interface AvailableMapV1 {
+  export type AvailableMapV1 = {
     /** Map identifier passed to {@link start}. */
     id: string;
     /** Display name or translation key. */
     name?: string;
     [key: string]: unknown;
-  }
+  };
 }

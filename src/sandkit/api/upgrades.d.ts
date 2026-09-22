@@ -50,7 +50,7 @@ export namespace upgrades {
   export function setLevelById(itemId: string, upgradeId: string, level: number): void;
 
   /** Upgrade definition registered for an item. */
-  export interface UpgradeDefinition {
+  export type UpgradeDefinition = {
     itemId: string;
     itemNameKey?: string;
     categoryId?: string;
@@ -63,14 +63,14 @@ export namespace upgrades {
       oneOff?: boolean;
     };
     [key: string]: unknown;
-  }
+  };
 
   /** Upgrade category definition shape. */
-  export interface UpgradeCategoryDefinition {
+  export type UpgradeCategoryDefinition = {
     /** Category identifier referenced by upgrades. */
     id: string;
     /** Display name translation key. */
     nameKey?: string;
     [key: string]: unknown;
-  }
+  };
 }

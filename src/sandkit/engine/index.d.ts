@@ -129,7 +129,7 @@ export type SandkitEngineApi = {
  *
  * @internal
  */
-export interface SandkitEngine {
+export type SandkitEngine = {
   api: SandkitEngineApi;
   state: SandkitState;
-}
+};

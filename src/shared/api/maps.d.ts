@@ -15,7 +15,7 @@ export namespace maps {
    *
    * Shape varies by map. Known fields are optional; additional keys may exist.
    */
-  export interface ActiveMapV1 {
+  export type ActiveMapV1 = {
     id?: string;
     deployment?: unknown;
     spawn?: unknown;
@@ -26,5 +26,5 @@ export namespace maps {
     parallax?: unknown;
     depthLight?: unknown;
     [key: string]: unknown;
-  }
+  };
 }

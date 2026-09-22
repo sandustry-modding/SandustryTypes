@@ -108,9 +108,9 @@ export namespace signals {
   /** Live structure instance. */
   export type Structure = structures.Structure;
   /** Payload delivered to a signal target handler. */
-  export interface SignalTargetPayloadV1 {
+  export type SignalTargetPayloadV1 = {
     combined: boolean;
     inputCount: number;
     onCount: number;
-  }
+  };
 }

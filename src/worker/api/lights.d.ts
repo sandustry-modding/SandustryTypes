@@ -15,7 +15,7 @@ export namespace lights {
     export type TemporaryLightOptions = shared.api.effects.TemporaryLightOptions;
 
     /** Handle returned by {@link createAtWorld}. */
-    export interface TemporaryLightHandle {
+    export type TemporaryLightHandle = {
       /** Runtime light id, or null when the pool is full. */
       lightId: number | null;
       /**
@@ -23,7 +23,7 @@ export namespace lights {
        *
        */
       index?: number | null;
-    }
+    };
 
     /**
      * Create a temporary light at world coordinates.
