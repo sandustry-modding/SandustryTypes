@@ -130,6 +130,8 @@
  *
  */
 
+import type { Vector2 } from "../shared/geometry";
+
 /** Number setting in `modinfo.json` `configSchema`. */
 export interface ConfigSchemaNumber {
   /**
@@ -340,17 +342,9 @@ export interface ModMapBlueprints {
 /**
  * World-pixel spawn or unstuck point.
  *
+ * Same shape as {@link Vector2}.
  */
-export interface ModMapPoint {
-  /**
-   * World X in pixels.
-   */
-  x: number;
-  /**
-   * World Y in pixels.
-   */
-  y: number;
-}
+export interface ModMapPoint extends Vector2 {}
 
 /**
  * Vertical camera / travel bounds for the custom map.

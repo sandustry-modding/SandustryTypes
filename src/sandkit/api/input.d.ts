@@ -1,4 +1,5 @@
 import type { KeyBinding as KeyBindingEnum } from "../enums/index";
+import type { Vector2 } from "../../shared/geometry";
 import type { LooseString } from "../../shared/nominal";
 
 /**
@@ -36,19 +37,19 @@ export namespace input {
 
   /**
    * Return the mouse position in cell coordinates.
-   * @returns Cell `{ x, y }` under the cursor.
+   * @returns Cell {@link Vector2} under the cursor.
    */
-  export function getMousePositionAtCell(): { x: number; y: number };
+  export function getMousePositionAtCell(): Vector2;
   /**
    * @deprecated Use {@link getMousePositionAtCell} instead.
-   * @returns Cell `{ x, y }` under the cursor.
+   * @returns Cell {@link Vector2} under the cursor.
    */
-  export function getMouseCellPosition(): { x: number; y: number };
+  export function getMouseCellPosition(): Vector2;
   /**
    * Return the mouse position in world pixels.
-   * @returns World `{ x, y }` under the cursor.
+   * @returns World {@link Vector2} under the cursor.
    */
-  export function getMousePositionAtWorld(): { x: number; y: number };
+  export function getMousePositionAtWorld(): Vector2;
 
   /**
    * Return the keys currently bound to a binding id.

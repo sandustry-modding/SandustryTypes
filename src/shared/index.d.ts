@@ -9,6 +9,13 @@ import { maps as mapsNs } from "./api/maps";
 import { effects as effectsNs } from "./api/effects";
 import { shared as sharedBuffersNs } from "./api/shared";
 
+export type {
+  CellCoordinates,
+  CellXY,
+  Size2,
+  Vector2,
+} from "./geometry";
+
 /** Shared main/worker API namespaces grouped under `shared.api`. */
 export namespace shared {
   export namespace api {

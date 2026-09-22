@@ -5,7 +5,7 @@
  *
  * @module
  */
-import { CellCoordinates, Vector2 } from "../../shared/player";
+import { CellCoordinates, Size2, Vector2 } from "../../shared/geometry";
 import { shared } from "../../shared";
 // Aliased: `structures` declares a nested `processing` namespace that would
 // otherwise shadow this import.
@@ -597,7 +597,7 @@ export namespace structures {
 
   /** Spritesheet animation on a structure render block. */
   export interface StructureSpritesheet {
-    frameSize: { width: number; height: number };
+    frameSize: Size2;
     frames: number;
     intervalMs: number;
     /** When set, frame row follows this structure `data` field. */
@@ -607,8 +607,8 @@ export namespace structures {
   /** Hotbar / build-menu UI sprite settings. */
   export interface StructureRenderUi {
     imageName?: string;
-    size?: { width: number; height: number };
-    offset?: { x: number; y: number };
+    size?: Size2;
+    offset?: Vector2;
     outline?: boolean;
     width?: string;
     height?: string;
@@ -618,8 +618,8 @@ export namespace structures {
   /** Render settings for a structure definition. */
   export interface StructureRender {
     imageName?: string;
-    size?: { width: number; height: number };
-    offset?: { x: number; y: number };
+    size?: Size2;
+    offset?: Vector2;
     z?: number;
     ambienceGroup?: string;
     ui?: StructureRenderUi;

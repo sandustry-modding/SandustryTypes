@@ -1,4 +1,5 @@
 import type { LooseString } from "../../shared/nominal";
+import type { Vector2 } from "../../shared/geometry";
 
 /**
  * `sandkit.api.hooks` — intercept and modify internal game hook points.
@@ -555,8 +556,10 @@ export namespace hooks {
       string,
       unknown
     >;
-    "fire:element:ignite": { x: number; y: number; elementType: number };
-    "projectile:fire:overStructure": { projectile: Record<string, unknown>; x: number; y: number };
+    "fire:element:ignite": Vector2 & { elementType: number };
+    "projectile:fire:overStructure": Vector2 & {
+      projectile: Record<string, unknown>;
+    };
     "projectile:hit": {
       projectile: Record<string, unknown>;
       travelResult: Record<string, unknown>;

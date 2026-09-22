@@ -1,4 +1,4 @@
-import type { CellCoordinates } from "../../shared/player";
+import type { CellCoordinates, CellXY } from "../../shared/geometry";
 
 /**
  * Pipe network queries and enablement at grid cells.
@@ -45,9 +45,7 @@ export namespace pipes {
   export function setEnabledAtCell(...args: [...CellCoordinates, enabled: boolean]): void;
 
   /** Connected vent cell position. */
-  export interface PipeVentCell {
-    cellX: number;
-    cellY: number;
+  export interface PipeVentCell extends CellXY {
     [key: string]: unknown;
   }
 }

@@ -6,6 +6,7 @@
  * @module
  */
 import { shared } from "../../shared";
+import type { CellXY } from "../../shared/geometry";
 
 export namespace maps {
   // Shared
@@ -38,9 +39,7 @@ export namespace maps {
   export function getArtifactLocations(): readonly ArtifactLocation[];
 
   /** Artifact location entry from {@link getArtifactLocations}. */
-  export interface ArtifactLocation {
-    cellX: number;
-    cellY: number;
+  export interface ArtifactLocation extends CellXY {
     name: string;
     [key: string]: unknown;
   }

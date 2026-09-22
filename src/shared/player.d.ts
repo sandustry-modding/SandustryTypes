@@ -1,30 +1,21 @@
 /**
- * Shared player and coordinate domain shapes.
+ * Shared player domain shapes.
  *
  * @internal Base types reused by main and worker API declarations. Not a
  * runtime `sandkit` namespace.
+ *
+ * Geometry types live in {@link ./geometry}.
+ * This file re-exports them for existing `shared/player` imports.
  */
 import { AssetRef } from "./asset";
+import type { Vector2 } from "./geometry";
 
-/**
- * Grid cell position as `[cellX, cellY]`.
- *
- * Cell coordinates match `sandkit.api.*AtCell` helpers: column first, then row.
- */
-export type CellCoordinates = [cellX: number, cellY: number];
-
-/**
- * 2D vector in world or cell space.
- *
- * World positions use pixels. Cell helpers may return pixel or cell units
- * depending on the API.
- */
-export type Vector2 = {
-  /** Horizontal component. */
-  x: number;
-  /** Vertical component. */
-  y: number;
-};
+export type {
+  CellCoordinates,
+  CellXY,
+  Size2,
+  Vector2,
+} from "./geometry";
 
 /**
  * Live player state snapshot (read-only shape for mods).

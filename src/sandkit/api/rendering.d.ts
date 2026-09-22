@@ -5,7 +5,7 @@
  *
  * @module
  */
-import type { CellCoordinates, Vector2 } from "../../shared/player";
+import type { CellCoordinates, Size2, Vector2 } from "../../shared/geometry";
 
 export namespace rendering {
   /**
@@ -40,7 +40,7 @@ export namespace rendering {
    */
   export function getGridMetrics(): { cellSize: number; snapGridCellSize: number };
   /** Return overlay viewport width and height in pixels. */
-  export function getOverlayViewportSize(): { width: number; height: number };
+  export function getOverlayViewportSize(): Size2;
   /**
    * Run a callback with the overlay canvas context.
    * @param callback - Receives the overlay 2D context; return value is passed through.

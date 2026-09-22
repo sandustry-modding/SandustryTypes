@@ -1,5 +1,5 @@
 import type { ElementType as ElementTypeEnum } from "../../sandkit/enums/index";
-import type { CellCoordinates, Vector2 } from "../player";
+import type { CellCoordinates, Vector2 } from "../geometry";
 import type { CellId, LooseString, TaggedNumber } from "../nominal";
 
 /**
@@ -220,7 +220,7 @@ export namespace elements {
    * @param cellY - Grid row of the target cell.
    *
    */
-  export function getVelocityAtCell(...args: CellCoordinates): { x: number; y: number } | null;
+  export function getVelocityAtCell(...args: CellCoordinates): Vector2 | null;
 
   /**
    * Read element data field 1–4 at a cell.

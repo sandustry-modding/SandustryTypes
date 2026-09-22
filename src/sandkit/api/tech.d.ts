@@ -1,4 +1,5 @@
 import type { Tech as TechEnum } from "../enums/index";
+import type { Vector2 } from "../../shared/geometry";
 import type { LooseString, TaggedNumber } from "../../shared/nominal";
 
 /**
@@ -162,10 +163,7 @@ export namespace tech {
   }
 
   /** Position on the tech grid. */
-  export interface TechGridPosition {
-    x: number;
-    y: number;
-  }
+  export interface TechGridPosition extends Vector2 {}
 
   /** Unlock payload for {@link conservatory.appendUnlock}. */
   export interface ConservatoryUnlocks {

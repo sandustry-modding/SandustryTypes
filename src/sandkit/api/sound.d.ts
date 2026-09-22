@@ -1,3 +1,5 @@
+import type { Vector2 } from "../../shared/geometry";
+
 /**
  * Sound playback, layers, and stop controls.
  *
@@ -99,7 +101,7 @@ export namespace sound {
     /** Playback rate multiplier. */
     playbackRate?: number;
     /** World position for distance attenuation. */
-    position?: { x: number; y: number };
+    position?: Vector2;
     /** When true, loop until stopped. */
     loop?: boolean;
     /** Key used with rateLimitMs to dedupe rapid replays. */
@@ -112,7 +114,7 @@ export namespace sound {
   /** Shared options for {@link playLayers}. */
   export interface SoundLayersOptions {
     /** World position applied to all layers. */
-    position?: { x: number; y: number };
+    position?: Vector2;
     /** Volume multiplier applied to all layers. */
     volume?: number;
     /** Key used with rateLimitMs to dedupe rapid replays. */
