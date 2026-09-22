@@ -1,5 +1,9 @@
+import type { CellXY, Vector2 } from "../../shared/geometry";
 import type { LooseString } from "../../shared/nominal";
-import type { Vector2 } from "../../shared/geometry";
+import type { structures } from "../../shared/api/structures";
+import type { elements } from "../../shared/api/elements";
+import type { entities } from "./entities";
+import type { projectiles } from "./projectiles";
 
 /**
  * `sandkit.api.hooks` — intercept and modify internal game hook points.
@@ -492,77 +496,131 @@ export namespace hooks {
     | "gold:removal:settle"
   >;
 
+  /**
+   * Per-use stats copied into {@link InterceptHookMap} `"item:use"`.
+   * `energyCost` is the field shown in official Sandkit.
+   * Extra keys depend on the item definition.
+   */
+  export type ItemUseStats = {
+    energyCost?: number;
+    [key: string]: unknown;
+  };
+
+  /** Keyboard intercept payload for {@link InterceptHookMap} `"input:keyDown"` and `"input:keyUp"`. */
+  export interface InputKeyInterceptArgs {
+    key: string;
+    code: string;
+    event: KeyboardEvent;
+  }
+
+  /** Teleport zone snapshot on {@link InterceptHookMap} `"teleport:effect:create"`. */
+  export interface TeleportEffectZone {
+    id: string;
+    exitX: number;
+    exitY: number;
+    cooldown?: number;
+    lastUsed?: number;
+    [key: string]: unknown;
+  }
+
+  /** Projectile travel hit from {@link InterceptHookMap} `"projectile:hit"`. */
+  export interface ProjectileTravelResult {
+    x: number;
+    y: number;
+    cX: number;
+    cY: number;
+    collidedCell?: boolean;
+    outOfBounds?: boolean;
+    blockedByZone?: boolean;
+    lastFreePosition?: Vector2;
+  }
+
+  /** One currency line on {@link InterceptHookMap} `"progression:purchase"`. */
+  export interface ProgressionPurchaseCost {
+    currencyId: string;
+    amount: number;
+  }
+
   /** Intercept hook argument shapes keyed by hook id. */
   export interface InterceptHookMap {
     "item:use": {
       itemId: string;
       useId: string;
       kind: "instant" | "sustained" | "chargeThenFire";
-      baseline: Readonly<Record<string, unknown>>;
-      prepared: Record<string, unknown>;
+      baseline: Readonly<ItemUseStats>;
+      prepared: ItemUseStats;
     };
-    "teleport:effect:create": Record<string, unknown>;
+    "teleport:effect:create": {
+      zone: TeleportEffectZone;
+      originX: number;
+      originY: number;
+      destX: number;
+      destY: number;
+    };
     /** @deprecated Use `"teleport:effect:create"` instead. */
     "teleport:effect": InterceptHookMap["teleport:effect:create"];
-    "action:start": { action?: { id?: string } & Record<string, unknown> } & Record<
-      string,
-      unknown
-    >;
+    "action:start": CellXY & {
+      action: { id: string | number; type: number } | null;
+    };
     /** @deprecated Use `"action:start"` instead. */
     "action:intercept": InterceptHookMap["action:start"];
-    "input:keyDown": { key?: string; code?: string; event?: Event };
+    "input:keyDown": InputKeyInterceptArgs;
     /** @deprecated Use `"input:keyDown"` instead. */
     "input:keydown": InterceptHookMap["input:keyDown"];
-    "input:keyUp": { key?: string; code?: string; event?: Event };
+    "input:keyUp": InputKeyInterceptArgs;
     /** @deprecated Use `"input:keyUp"` instead. */
     "input:keyup": InterceptHookMap["input:keyUp"];
-    "placePoints:suppress": { type?: string } & Record<string, unknown>;
+    "placePoints:suppress": { type: structures.StructureRef };
     /** @deprecated Use `"placePoints:suppress"` instead. */
     "placePoints:isSuppressed": InterceptHookMap["placePoints:suppress"];
-    "placePoints:directionalArrows:suppress": { type?: string } & Record<string, unknown>;
+    "placePoints:directionalArrows:suppress": {
+      type: structures.StructureRef;
+      x: number;
+      y: number;
+    };
     /** @deprecated Use `"placePoints:directionalArrows:suppress"` instead. */
     "placePoints:directionalArrows:isSuppressed": InterceptHookMap["placePoints:directionalArrows:suppress"];
     "entity:update": {
-      entityTypeId: string;
-      entity: Record<string, unknown>;
-      deltaTimeSeconds: number;
-      phase: "normal" | "capturing" | "launching";
-      isVisible: boolean;
-      playerWorldX: number;
-      playerWorldY: number;
-      worldMinX: number;
-      worldMinY: number;
-      worldMaxX: number;
-      worldMaxY: number;
-      cellSize: number;
-      timeSeconds: number;
+      readonly entityTypeId: string;
+      entity: entities.Entity;
+      readonly deltaTimeSeconds: number;
+      readonly phase: "normal" | "capturing" | "launching";
+      readonly isVisible: boolean;
+      readonly playerWorldX: number;
+      readonly playerWorldY: number;
+      readonly worldMinX: number;
+      readonly worldMinY: number;
+      readonly worldMaxX: number;
+      readonly worldMaxY: number;
+      readonly cellSize: number;
+      readonly timeSeconds: number;
     };
     "building:place": {
       structureId: string;
       x: number;
       y: number;
-      data?: Record<string, unknown>;
+      data?: structures.StructureData;
     };
-    "building:clearShape": { structure: Record<string, unknown> };
-    "input:scroll": { deltaY: number } & Record<string, unknown>;
-    "input:boostDown": Record<string, unknown>;
+    "building:clearShape": { structure: structures.Structure };
+    "input:scroll": { deltaY: number };
+    "input:boostDown": Record<string, never>;
     /** @deprecated Use `"input:boostDown"` instead. */
     "input:boost-down": InterceptHookMap["input:boostDown"];
-    "input:descendDown": Record<string, unknown>;
+    "input:descendDown": Record<string, never>;
     /** @deprecated Use `"input:descendDown"` instead. */
     "input:descend-down": InterceptHookMap["input:descendDown"];
-    "input:escape": Record<string, unknown>;
-    "interactable:suppressHover": { type?: string; structure?: Record<string, unknown> } & Record<
-      string,
-      unknown
-    >;
-    "fire:element:ignite": Vector2 & { elementType: number };
+    "input:escape": Record<string, never>;
+    "interactable:suppressHover": {
+      type: structures.StructureRef;
+      structure: structures.Structure;
+    };
+    "fire:element:ignite": Vector2 & { elementType: elements.ElementType };
     "projectile:fire:overStructure": Vector2 & {
-      projectile: Record<string, unknown>;
+      projectile: projectiles.Projectile;
     };
     "projectile:hit": {
-      projectile: Record<string, unknown>;
-      travelResult: Record<string, unknown>;
+      projectile: projectiles.Projectile;
+      travelResult: ProjectileTravelResult;
     };
     "player:position:commit": {
       previousWorldX: number;
@@ -576,7 +634,7 @@ export namespace hooks {
       domain: "tech" | "upgrade";
       id: string;
       itemId?: string;
-      costs: Record<string, unknown>;
+      costs: readonly ProgressionPurchaseCost[];
     };
   }
 

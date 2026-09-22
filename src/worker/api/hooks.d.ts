@@ -1,5 +1,8 @@
 import type { elements as sharedElements } from "../../shared/api/elements";
-import type { LooseString } from "../../shared/nominal";
+import type { CellId, LooseString } from "../../shared/nominal";
+import type { Vector2 } from "../../shared/geometry";
+import type { structures } from "../../shared/api/structures";
+import type { terrains } from "../../shared/api/terrains";
 
 /**
  * Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook points.
@@ -160,20 +163,109 @@ export namespace hooks {
   /** Known worker modify hook ids plus custom strings. */
   export type ModifyHookId = LooseString<string>;
 
+  /** What an element collided with on {@link InterceptHookMap} `"element:move:blocked"`. */
+  export type ElementBlockedCollider = LooseString<"terrain" | "element" | "unauthorized">;
+
+  /** Blocked-move direction on {@link InterceptHookMap} `"element:move:blocked"`. */
+  export type ElementBlockedDirection = LooseString<"down" | "up" | "horizontal">;
+
+  /**
+   * Shared `elementData` SOA passed to {@link InterceptHookMap} `"element:update"`.
+   * Index with `elementIndex`.
+   */
+  export interface ElementSimData {
+    type: Uint8Array;
+    x: Uint16Array;
+    y: Uint16Array;
+    velocityX: Float32Array;
+    velocityY: Float32Array;
+    minVelocityX: Float32Array;
+    minVelocityY: Float32Array;
+    thresholdX: Float32Array;
+    thresholdY: Float32Array;
+    hasBeenUpdated: Uint8Array;
+    isFreeFalling: Uint8Array;
+    density: Float32Array;
+    variantIndex: Uint8Array;
+    durationMax: Float32Array;
+    durationLeft: Float32Array;
+    skipPhysics: Uint8Array;
+    movesYAxis: Uint16Array;
+    movesYAxisCount: Uint16Array;
+    lastSideChecked: Int16Array;
+    linkedElementIndex: Uint32Array;
+    hasDuration: Uint8Array;
+    dataField1: Uint16Array;
+    dataField2: Int16Array;
+    dataField3: Uint16Array;
+    dataField4: Float32Array;
+    [key: string]: ArrayBufferView | unknown;
+  }
+
   /** Intercept hook argument shapes keyed by hook id. */
   export interface InterceptHookMap {
-    "cell:process": Record<string, unknown>;
-    "element:update": Record<string, unknown>;
-    "element:move": Record<string, unknown>;
-    "element:move:blocked": Record<string, unknown>;
+    "cell:process": {
+      cellId: CellId;
+      x: number;
+      y: number;
+      dt: number;
+      runOrder: number;
+    };
+    "element:update": {
+      cellId: CellId;
+      x: number;
+      y: number;
+      dt: number;
+      elementIndex: number;
+      elementData: ElementSimData;
+      elementType: sharedElements.ElementType;
+      matterType: sharedElements.MatterType;
+      matterConfig: unknown;
+    };
+    "element:move": {
+      cellId: CellId;
+      elementIndex: number;
+      elementType: sharedElements.ElementType;
+      source: Vector2;
+      destination: Vector2;
+    };
+    "element:move:blocked": {
+      cellId: CellId;
+      elementIndex: number;
+      elementType: sharedElements.ElementType;
+      position: Vector2;
+      collidedAt: Vector2;
+      velocity: Vector2;
+      collidedWith: ElementBlockedCollider;
+      collidedElementType?: sharedElements.ElementType;
+      collidedCellId: CellId;
+      direction: ElementBlockedDirection;
+      linkedElementType?: sharedElements.ElementType;
+    };
     /** @deprecated Use `"element:move:blocked"` instead. */
     "element:blocked": InterceptHookMap["element:move:blocked"];
-    "element:duration:expire": Record<string, unknown>;
+    "element:duration:expire": {
+      elementIndex: number;
+      elementType: sharedElements.ElementType;
+      x: number;
+      y: number;
+    };
     /** @deprecated Use `"element:duration:expire"` instead. */
     "element:duration": InterceptHookMap["element:duration:expire"];
-    "fire:element:burn": Record<string, unknown>;
-    "fire:terrain:burn": Record<string, unknown>;
-    "shaker:elementOn": Record<string, unknown>;
+    "fire:element:burn": Vector2 & { elementType: sharedElements.ElementType };
+    "fire:terrain:burn": Vector2 & {
+      terrainType: terrains.TerrainType;
+      sourceElementType: sharedElements.ElementType;
+      sourceX: number;
+      sourceY: number;
+      wasUndamaged: boolean;
+    };
+    "shaker:elementOn": Vector2 & {
+      cellId: CellId;
+      elementIndex: number;
+      elementType: sharedElements.ElementType;
+      structureType: structures.StructureType;
+    };
   }
 
   /** Modify hook argument shapes keyed by hook id. Unlisted ids use `unknown`. */
