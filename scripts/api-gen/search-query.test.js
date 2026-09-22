@@ -68,8 +68,10 @@ test("searchIndex ranks an exact method path first", () => {
   assert.equal(found.hits[0]?.entry.title, "sandkit.api.camera.setFocusAtWorld()");
   const mainOnly = search.searchIndex(index, "camera", "main", 10);
   assert.equal(mainOnly.total, 2);
-  const guides = search.searchIndex(index, "camera", "guide", 10);
-  assert.equal(guides.total, 1);
+  const allHits = search.searchIndex(index, "camera", "all", 10);
+  assert.equal(allHits.total, 2);
+  assert.ok(allHits.hits.every((hit) => hit.entry.path.indexOf("/api/") === 0));
+  assert.equal(search.isApiEntry({ path: "/guides/getting-started", title: "Guides" }), false);
 });
 
 test("searchIndex can hide deprecated entries", () => {

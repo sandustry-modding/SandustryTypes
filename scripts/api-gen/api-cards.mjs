@@ -797,7 +797,102 @@ export function restyleApiCards(content, qualified, options = {}) {
     out.push("", `</div>`, "");
   }
 
-  return collapseOfficialSee(out.join("\n").replace(/\n{3,}/g, "\n\n").trimEnd() + "\n");
+  const styled = collapseOfficialSee(out.join("\n").replace(/\n{3,}/g, "\n\n").trimEnd() + "\n");
+  if (base === "electron") return expandInterfaceMethodCards(styled);
+  return styled;
+}
+
+/**
+ * Turn interface method tables on the electron page into one signature card per method.
+ * @param {string} content
+ */
+export function expandInterfaceMethodCards(content) {
+  const chunks = String(content || "").split(/(?=<div class="smt-member-card")/);
+  return chunks.map(expandOneMemberCard).join("");
+}
+
+/**
+ * @param {string} text
+ */
+function decodeTableHtml(text) {
+  return String(text || "")
+    .replace(/<code>/gi, "")
+    .replace(/<\/code>/gi, "")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&")
+    .replace(/&#124;/g, "|")
+    .replace(/&quot;/g, '"')
+    .trim();
+}
+
+/**
+ * @param {string} row
+ * @returns {{ name: string, signature: string, description: string } | null}
+ */
+function parseMethodRow(row) {
+  const cells = row
+    .trim()
+    .replace(/^\|/, "")
+    .replace(/\|$/, "")
+    .split("|")
+    .map((cell) => cell.trim());
+  if (cells.length < 3) return null;
+  const name = cells[0].replace(/\(\)$/, "").trim();
+  if (!name || name === "Method" || /^-+$/.test(name)) return null;
+  const signature = decodeTableHtml(cells[1]);
+  const description = decodeTableHtml(cells.slice(2).join("|"));
+  if (!signature.startsWith("(")) return null;
+  return { name, signature, description };
+}
+
+/**
+ * @param {string} chunk
+ */
+function expandOneMemberCard(chunk) {
+  const heading = /^([\s\S]*?)<div class="smt-member-card"([^>]*)>\n\n### ([^\n]+)\n/.exec(chunk);
+  if (!heading) return chunk;
+  const titleLine = heading[3];
+  const title = /^(.+?) :id=(\S+)$/.exec(titleLine);
+  if (!title) return chunk;
+  const parent = title[1].replace(/^~~|~~$/g, "");
+  const parentId = title[2];
+
+  const table = /\| Method \| Signature \| Description \|\n\| --- \| --- \| --- \|\n((?:\|.*\|\n)+)/.exec(chunk);
+  if (!table) return chunk;
+
+  const methods = table[1]
+    .split("\n")
+    .map(parseMethodRow)
+    .filter(Boolean);
+  if (!methods.length) return chunk;
+
+  const names = new Set(methods.map((method) => method.name));
+  let body = chunk.replace(table[0], "");
+  body = body.replace(/<div class="smt-member-anchors">[\s\S]*?<\/div>\n*/g, (block) => {
+    const heads = [...block.matchAll(/^##### (\S+)/gm)].map((match) => match[1].replace(/\(\)$/, ""));
+    if (heads.length && heads.every((head) => names.has(head))) return "";
+    return block;
+  });
+
+  const cards = methods.map((method) => {
+    const id = `${parentId}-${method.name.toLowerCase()}`;
+    const sig = `${method.name}${method.signature}`;
+    const parsed = parseSignatureLine(sig);
+    const desc = method.description ? `\n${method.description}\n` : "";
+    return [
+      `<div class="smt-member-card">`,
+      "",
+      `### ${parent}.${method.name} :id=${id}`,
+      "",
+      renderSignatureHtml(parsed),
+      desc,
+      `</div>`,
+      "",
+    ].join("\n");
+  });
+
+  return `${body.trimEnd()}\n\n${cards.join("\n")}`;
 }
 
 /**

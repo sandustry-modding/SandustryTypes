@@ -17,7 +17,13 @@ import {
   renderSearchIndexScript,
   rewriteApiHrefMap,
 } from "./api-search.mjs";
-import { buildBrowseCatalog, buildSidebarRoots, renderBrowseScript, renderSidebarTreeScript } from "./namespace-cards.mjs";
+import {
+  buildBrowseCatalog,
+  buildSidebarRoots,
+  renderBrowseScript,
+  renderSidebarMarkdown,
+  renderSidebarTreeScript,
+} from "./namespace-cards.mjs";
 import { restyleApiCards } from "./api-cards.mjs";
 import { qualifyFullPageAnchors, rewriteMarkdownLinks } from "./docsify-links.mjs";
 import { resolveDocsDir, TYPES_ROOT } from "./docs-dir.mjs";
@@ -372,6 +378,27 @@ function writeApiSidebar(docsDir, outDir, linkMap, mainNs, workerNs, engineNs) {
     sharedNames,
   });
   writeFileSync(join(docsDir, "assets", "api-sidebar-tree.js"), renderSidebarTreeScript(roots));
+  writeTypesSidebarApiList(docsDir, renderSidebarMarkdown(roots));
+}
+
+/**
+ * Insert the generated namespace list into the Types block of `_sidebar.md`.
+ * The list stays indented under Types so Docsify does not treat it as a new tab.
+ *
+ * @param {string} docsDir
+ * @param {string} markdown
+ */
+function writeTypesSidebarApiList(docsDir, markdown) {
+  const file = join(docsDir, "_sidebar.md");
+  if (!existsSync(file)) return;
+  const anchor = "    - [API](api/electron.md)\n";
+  const nextHeading = "\n- Template\n";
+  let text = readFileSync(file, "utf8");
+  const start = text.indexOf(anchor);
+  const end = text.indexOf(nextHeading, start + anchor.length);
+  if (start < 0 || end < 0) return;
+  text = `${text.slice(0, start + anchor.length)}${markdown.trimEnd()}\n${text.slice(end)}`;
+  writeFileSync(file, text);
 }
 
 /**

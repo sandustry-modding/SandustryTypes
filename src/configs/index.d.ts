@@ -11,7 +11,7 @@
  *
  * @module
  *
- * @see [JSON Schema docs](https://sandustry-modding.github.io/SandustryTypes/#/schemas)
+ * @see [JSON Schema docs](https://sandustry-modding.github.io/#/types/schemas)
  */
 
 export type {

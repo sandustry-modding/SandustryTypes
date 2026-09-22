@@ -297,6 +297,137 @@ export function renderSidebarTreeScript(roots) {
 }
 
 /**
+ * @param {string} name
+ */
+function makeFolder(name) {
+  return { kind: "folder", name, children: [] };
+}
+
+/**
+ * @param {{ kind: string, name: string, children: unknown[] }} parent
+ * @param {string} name
+ */
+function findFolder(parent, name) {
+  const found = parent.children.find((child) => child.kind === "folder" && child.name === name);
+  if (found) return found;
+  const folder = makeFolder(name);
+  parent.children.push(folder);
+  return folder;
+}
+
+/**
+ * @param {{ kind: string, children: unknown[] }} parent
+ */
+function sortTree(parent) {
+  parent.children.sort((a, b) => {
+    if (a.kind === "folder" && b.kind !== "folder") return -1;
+    if (b.kind === "folder" && a.kind !== "folder") return 1;
+    return String(a.name).localeCompare(String(b.name));
+  });
+  for (const child of parent.children) {
+    if (child.kind === "folder" || (child.children && child.children.length)) sortTree(child);
+  }
+}
+
+/**
+ * Group flat sidebar roots into sandkit / api / main|worker|engine folders.
+ *
+ * @param {SidebarNode[]} roots
+ */
+export function groupSidebarForest(roots) {
+  const forest = makeFolder("");
+  for (const node of roots) {
+    const slug = String(node.slug || "");
+    let parent = forest;
+    if (slug.startsWith("sandkit.engine.api.")) {
+      parent = findFolder(findFolder(findFolder(forest, "sandkit"), "engine"), "api");
+    } else if (slug.startsWith("sandkit.enums.")) {
+      parent = findFolder(findFolder(forest, "sandkit"), "enums");
+    } else if (slug.startsWith("sandkit.api.") && (slug.endsWith(".worker") || slug.includes(".worker."))) {
+      parent = findFolder(findFolder(findFolder(forest, "sandkit"), "api"), "worker");
+    } else if (slug.startsWith("sandkit.api.")) {
+      parent = findFolder(findFolder(findFolder(forest, "sandkit"), "api"), "main");
+    } else if (slug.startsWith("shared.")) {
+      parent = findFolder(forest, "shared");
+    } else {
+      parent = findFolder(forest, "other");
+    }
+    parent.children.push({
+      kind: "namespace",
+      name: node.name,
+      href: node.href,
+      children: (node.children || []).map(function nest(child) {
+        return {
+          kind: "namespace",
+          name: child.name,
+          href: child.href,
+          children: (child.children || []).map(nest),
+        };
+      }),
+    });
+  }
+  sortTree(forest);
+  return forest;
+}
+
+/**
+ * @param {string} href `#/api/sandkit.api.player`
+ */
+function sidebarHref(href) {
+  const path = String(href || "").replace(/^#\//, "");
+  return path.endsWith(".md") ? path : `${path}.md`;
+}
+
+/**
+ * Docsify `_sidebar.md` list for the Types section (2-space base indent).
+ * One folder per area so namespace names show after a single expand.
+ *
+ * @param {SidebarNode[]} roots
+ */
+export function renderSidebarMarkdown(roots) {
+  const forest = groupSidebarForest(roots);
+  /** @type {{ title: string, nodes: unknown[] }[]} */
+  const sections = [];
+
+  /**
+   * @param {unknown} node
+   * @param {string[]} path
+   */
+  function collect(node, path) {
+    if (!node || node.kind !== "folder") return;
+    const next = node.name ? path.concat(node.name) : path;
+    const namespaces = node.children.filter((child) => child.kind === "namespace");
+    if (namespaces.length && next.length) {
+      sections.push({ title: next.join("."), nodes: namespaces });
+    }
+    for (const child of node.children) {
+      if (child.kind === "folder") collect(child, next);
+    }
+  }
+
+  collect(forest, []);
+
+  /**
+   * @param {unknown} node
+   * @param {number} indent
+   */
+  function renderNamespace(node, indent) {
+    const pad = " ".repeat(indent);
+    const link = `[${node.name}](${sidebarHref(node.href)})`;
+    const kids = (node.children || []).map((child) => renderNamespace(child, indent + 2)).join("");
+    return `${pad}- ${link}\n${kids}`;
+  }
+
+  return sections
+    .map((section) => {
+      const kids = section.nodes.map((node) => renderNamespace(node, 4)).join("");
+      return `  - ${section.title}\n${kids}`;
+    })
+    .join("")
+    .trimEnd();
+}
+
+/**
  * Build namespace nodes from flattened `docs/api/*.md` files.
  *
  * @param {string} apiDir
