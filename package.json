@@ -62,6 +62,9 @@
     "./worker": {
       "types": "./src/worker/index.d.ts"
     },
+    "./worker/global": {
+      "types": "./src/worker/global.d.ts"
+    },
     "./worker/*": {
       "types": [
         "./src/worker/*.d.ts",

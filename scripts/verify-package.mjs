@@ -55,6 +55,9 @@ for (const rel of probes) {
 }
 
 const exportsMap = pkg.exports;
+if (!exportsMap?.["./worker/global"]?.types) {
+  fail('package.json exports must define "./worker/global" with a "types" entry');
+}
 if (!exportsMap?.["./sandkit/*"]) {
   fail('package.json exports must define "./sandkit/*" for deep imports');
 }
@@ -188,8 +191,44 @@ function writeTsconfig(configName, include, extraOptions = {}) {
   return configPath;
 }
 
+fs.writeFileSync(
+  path.join(consumerDir, "worker.ts"),
+  [
+    "const index: number = sandkit.api.worker.getIndex();",
+    "void index;",
+    "",
+  ].join("\n"),
+);
+
+const workerGlobalTypes = path.join(
+  consumerPkg,
+  "src",
+  "worker",
+  "global.d.ts",
+);
+
 const ambientConfig = writeTsconfig("tsconfig.ambient.json", ["ambient.ts"]);
 const deepConfig = writeTsconfig("tsconfig.deep.json", ["deep.ts"]);
+const workerConfigPath = path.join(consumerDir, "tsconfig.worker.json");
+fs.writeFileSync(
+  workerConfigPath,
+  JSON.stringify(
+    {
+      compilerOptions: {
+        module: "esnext",
+        moduleResolution: "bundler",
+        strict: true,
+        noEmit: true,
+        lib: ["ES2020", "DOM"],
+        skipLibCheck: false,
+      },
+      files: [workerGlobalTypes],
+      include: ["worker.ts"],
+    },
+    null,
+    2,
+  ),
+);
 
 /**
  * @param {string} configPath
@@ -208,5 +247,6 @@ function typecheckConsumer(configPath, label) {
 
 typecheckConsumer(ambientConfig, "ambient");
 typecheckConsumer(deepConfig, "deep-imports");
+typecheckConsumer(workerConfigPath, "worker-global-only");
 
 console.log(`verify-package: ok (${tarballName})`);

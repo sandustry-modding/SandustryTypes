@@ -34,7 +34,9 @@ declare global {
   type SandkitReact = import("./sandkit").SandkitReact;
   /** Retro Console API surface on supported engine namespaces. */
   type RetroConsoleApi = import("./sandkit").RetroConsoleApi;
-  /** Worker-thread `sandkit.api` shape — use in `worker.ts`. */
+  /** Worker-thread `sandkit` root. Ambient `sandkit` in worker files is this type. */
+  type WorkerSandkit = import("./worker/sandkit-api").WorkerSandkit;
+  /** Worker-thread `sandkit.api`. Ambient in `worker.ts` / `*.worker.ts`. */
   type WorkerSandkitApi = import("./worker/sandkit-api").WorkerSandkitApi;
 
   /**

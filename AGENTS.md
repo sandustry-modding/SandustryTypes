@@ -46,6 +46,7 @@ Done when the name exists in exactly one of these trees (plus worker aliases bel
 | Main-thread `sandkit.api.*` | `src/sandkit/api/<name>.d.ts` |
 | Worker `sandkit.api.*` that differs from main | `src/worker/api/<name>.d.ts` |
 | Worker `sandkit.api.*` identical to main | Re-export the sandkit module from `src/worker/index.d.ts` |
+| Worker ambient `sandkit` (`src/worker/global.d.ts`) | Not compiled with `src/global.d.ts`; consumers load it via a worker-only tsconfig |
 
 `src/shared/` is primitives only (`Vector2`, `CellCoordinates`, nominal ids).
 `sandkit.api.shared.buffers` is a runtime namespace declared under `src/sandkit/api/shared.d.ts` (worker: `src/worker/api/shared.d.ts`).

@@ -1,5 +1,6 @@
 {
   "include": ["./src/**/*.d.ts"],
+  "exclude": ["./src/worker/global.d.ts"],
   "compilerOptions": {
     "rootDir": "./src",
     "module": "ESNext",

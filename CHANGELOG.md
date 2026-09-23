@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Worker ambient `src/worker/global.d.ts` and filename-based `tsconfig` split (`tsconfig.worker.json` in the mod template) so `worker.ts` / `*.worker.ts` typecheck with `WorkerSandkit` without triple-slash shims.
 - `elements.ElementDefinition` fields used by `register` / `updateDefinition` and live snapshots: `name`, `description`, `descriptionKey`, `hidden`, `duration` (seconds), `durationRandom`, `horizontalSpeed`, `showInFilterPicker`, `materialId`, `flammable`, `collectable`, `mixes`, `interactions`.
 - `ElementColorVariant`, `ElementFlammable`, `ElementCollectable`, and `ElementMix`.
 - Color `variants` accept RGB or RGBA tuples.

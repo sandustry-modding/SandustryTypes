@@ -1,8 +1,9 @@
 /**
  * Worker-thread `sandkit.api` namespaces.
  *
- * Prefer these declarations in `worker.js`. Type `sandkit.api` as
- * {@link WorkerSandkitApi}. Do not assume main-thread methods exist here.
+ * Prefer these declarations in `worker.js`.
+ * Ambient `sandkit.api` is {@link WorkerSandkitApi} when worker globals load.
+ * Do not assume main-thread methods exist here.
  * See {@link sandkit.api} for the main-thread public API.
  *
  * @module worker
@@ -29,4 +30,4 @@ export * from "./api/terrains";
 export * from "./api/ui";
 export * from "../sandkit/api/utils";
 
-export type { WorkerSandkitApi } from "./sandkit-api";
+export type { WorkerSandkit, WorkerSandkitApi } from "./sandkit-api";

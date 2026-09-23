@@ -1,12 +1,9 @@
 /**
  * Composed worker-thread `sandkit.api` object.
  *
- * Namespace members are documented under {@link worker}. Use this type in
- * `worker.js` / `worker.ts`:
- *
- * ```ts
- * const api = sandkit.api as unknown as WorkerSandkitApi;
- * ```
+ * Namespace members are documented under {@link worker}.
+ * Load {@link WorkerSandkit} ambient types in `worker.ts` / `*.worker.ts`
+ * so `sandkit.api` is this shape with no cast.
  *
  * Main and worker surfaces overlap but are not interchangeable. Do not use
  * {@link sandkit.SandkitApi} on worker threads.
@@ -38,3 +35,29 @@ export type WorkerSandkitApi = {
    */
   world: typeof import("./api/grid").world;
 };
+
+/**
+ * Host-injected `sandkit` free variable in `workerEntry` scripts.
+ * Same root keys as {@link sandkit.Sandkit}; `api` is {@link WorkerSandkitApi}.
+ */
+export type WorkerSandkit = {
+  /** Worker-thread public API. See {@link WorkerSandkitApi}. */
+  api: WorkerSandkitApi;
+  /** Sandkit API version number (live value is `1`). */
+  apiVersion: number;
+  /**
+   * State-first internals. See {@link sandkit.SandkitEngine}.
+   * @internal
+   */
+  engine: import("../sandkit").SandkitEngine;
+  /** Runtime enum bags. See {@link sandkit.SandkitEnums}. */
+  enums: import("../sandkit").SandkitEnums;
+  /** Host React package. See {@link sandkit.SandkitReact}. */
+  react: import("../sandkit").SandkitReact;
+  /**
+   * Game state. Same object as `sandkit.engine.state` at runtime.
+   * See {@link sandkit.SandkitState}.
+   */
+  state: import("../sandkit").SandkitState;
+};
+
