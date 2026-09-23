@@ -33,6 +33,14 @@ export namespace elements {
    *
    */
   export import ElementDefinition = shared.api.elements.ElementDefinition;
+  /** RGB or RGBA palette tuple. */
+  export import ElementColorVariant = shared.api.elements.ElementColorVariant;
+  /** Burn product fields on a definition. */
+  export import ElementFlammable = shared.api.elements.ElementFlammable;
+  /** Collector gold on a definition. */
+  export import ElementCollectable = shared.api.elements.ElementCollectable;
+  /** Contact mix row on a definition. */
+  export import ElementMix = shared.api.elements.ElementMix;
   /**
    * Options for create and replace calls.
    *
@@ -74,57 +82,16 @@ export namespace elements {
   /** Returns a data field value at a cell, or null. */
   export import getDataFieldAtCell = shared.api.elements.getDataFieldAtCell;
 
-  /** Optional tooltip metadata on structure interactions. */
-  export type InteractionStructureMetadata = {
-    /** i18n key for custom interaction label text. */
-    textKey?: string;
-    /** Hide the label when a data field matches a value. */
-    crossedOutWhen?: { dataField: number; equals: number };
-    /** Show the label only when a data field matches a value. */
-    visibleWhen?: { dataField: number; equals: number };
-    /** Require the text key to exist in the active locale. */
-    onlyWhenTranslated?: boolean;
-  };
-
-  /** Interaction that destroys specific items. */
-  export type InteractionDestroyer = {
-    kind: "destroyer";
-    /** Item ids removed by this interaction (for example `"drill"`). */
-    items: readonly string[];
-  };
-
-  /** Interaction that affects specific structures. */
-  export type InteractionStructure = InteractionStructureMetadata & {
-    kind: "structure";
-    /** Structure ids shown in the interaction tooltip. */
-    structures: readonly string[];
-  };
-
-  /** Interaction that affects specific entities. */
-  export type InteractionEntity = {
-    kind: "entity";
-    /** Entity type ids referenced by the interaction. */
-    entities: readonly string[];
-  };
-
-  /** Interaction that marks the element as flammable. */
-  export type InteractionFlammable = { kind: "flammable" };
-  /** Interaction that marks the element as meltable. */
-  export type InteractionMeltable = { kind: "meltable" };
-  /** Interaction that marks the element as freezable. */
-  export type InteractionFreezable = { kind: "freezable" };
-  /** Interaction handled by custom mod logic and tooltip text. */
-  export type InteractionCustom = InteractionStructureMetadata & { kind: "custom" };
-
+  export import InteractionStructureMetadata = shared.api.elements.InteractionStructureMetadata;
+  export import InteractionDestroyer = shared.api.elements.InteractionDestroyer;
+  export import InteractionStructure = shared.api.elements.InteractionStructure;
+  export import InteractionEntity = shared.api.elements.InteractionEntity;
+  export import InteractionFlammable = shared.api.elements.InteractionFlammable;
+  export import InteractionMeltable = shared.api.elements.InteractionMeltable;
+  export import InteractionFreezable = shared.api.elements.InteractionFreezable;
+  export import InteractionCustom = shared.api.elements.InteractionCustom;
   /** Union of element interaction kinds for tool and structure logic. */
-  export type Interaction =
-    | InteractionDestroyer
-    | InteractionStructure
-    | InteractionEntity
-    | InteractionFlammable
-    | InteractionMeltable
-    | InteractionFreezable
-    | InteractionCustom;
+  export import Interaction = shared.api.elements.Interaction;
 
   /**
    * Returns all registered element type ids.

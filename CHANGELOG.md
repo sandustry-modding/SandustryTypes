@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+### Added
+
+- `elements.ElementDefinition` fields used by `register` / `updateDefinition` and live snapshots: `name`, `description`, `descriptionKey`, `hidden`, `duration` (seconds), `durationRandom`, `horizontalSpeed`, `showInFilterPicker`, `materialId`, `flammable`, `collectable`, `mixes`, `interactions`.
+- `ElementColorVariant`, `ElementFlammable`, `ElementCollectable`, and `ElementMix`.
+- Color `variants` accept RGB or RGBA tuples.
+
 ### Changed
 
 - Public declarations use `type` aliases instead of `interface` (except ambient `Window` merge).

@@ -46,13 +46,103 @@ export namespace elements {
     Powder = 8,
   }
 
+  /** Palette entry: RGB, or RGBA when alpha is set. */
+  export type ElementColorVariant =
+    | readonly [r: number, g: number, b: number]
+    | readonly [r: number, g: number, b: number, a: number];
+
+  /** Tooltip metadata shared by structure and custom interaction kinds. */
+  export type InteractionStructureMetadata = {
+    /** i18n key for custom interaction label text. */
+    textKey?: string;
+    /** Hide the label when a data field matches a value. */
+    crossedOutWhen?: { dataField: number; equals: number };
+    /** Show the label only when a data field matches a value. */
+    visibleWhen?: { dataField: number; equals: number };
+    /** Require the text key to exist in the active locale. */
+    onlyWhenTranslated?: boolean;
+  };
+
+  /** Interaction that destroys specific items. */
+  export type InteractionDestroyer = {
+    kind: "destroyer";
+    /** Item ids removed by this interaction (for example `"drill"`). */
+    items: readonly string[];
+  };
+
+  /** Interaction that affects specific structures. */
+  export type InteractionStructure = InteractionStructureMetadata & {
+    kind: "structure";
+    /** Structure ids shown in the interaction tooltip. */
+    structures: readonly string[];
+  };
+
+  /** Interaction that affects specific entities. */
+  export type InteractionEntity = {
+    kind: "entity";
+    /** Entity type ids referenced by the interaction. */
+    entities: readonly string[];
+  };
+
+  /** Interaction that marks the element as flammable. */
+  export type InteractionFlammable = { kind: "flammable" };
+  /** Interaction that marks the element as meltable. */
+  export type InteractionMeltable = { kind: "meltable" };
+  /** Interaction that marks the element as freezable. */
+  export type InteractionFreezable = { kind: "freezable" };
+  /** Interaction handled by custom mod logic and tooltip text. */
+  export type InteractionCustom = InteractionStructureMetadata & { kind: "custom" };
+
+  /** Union of element interaction kinds for tool and structure logic. */
+  export type Interaction =
+    | InteractionDestroyer
+    | InteractionStructure
+    | InteractionEntity
+    | InteractionFlammable
+    | InteractionMeltable
+    | InteractionFreezable
+    | InteractionCustom;
+
+  /**
+   * Burn product when fire or flame consumes this element.
+   * Residue may omit this object and keep only `kind: "flammable"` in {@link interactions}.
+   */
+  export type ElementFlammable = {
+    /** Element id written in place of the burned cell. */
+    outputElementId?: string;
+    /** Chance that the output is written (0–1). */
+    outputChance?: number;
+    /** When true, spawned fire copies this cell's remaining duration. */
+    fireInheritsDuration?: boolean;
+    /** Fire lifetime seconds, or `[min, max]`. */
+    duration?: number | readonly number[];
+  };
+
+  /** Collector gold for this element. */
+  export type ElementCollectable = {
+    value?: number;
+  };
+
+  /** Contact mix row: this type plus `elementType` becomes `result`. */
+  export type ElementMix = {
+    elementType?: ElementType;
+    result?: ElementType;
+  };
+
   /**
    * Mod-registered element definition snapshot.
-   *
+   * Pass to `register` / `updateDefinition`.
+   * `getDefinitionByType` may omit `id` on builtins.
    */
   export type ElementDefinition = {
     id: string;
     nameKey: string;
+    /** Plain display name when not using {@link nameKey}. */
+    name?: string;
+    /** Lexicon description i18n key. */
+    descriptionKey?: string;
+    /** Plain lexicon copy when not using {@link descriptionKey}. */
+    description?: string;
     defaultDataFields?: { [key: string]: number };
     colors: {
       variantFromDataField1?: {
@@ -61,7 +151,7 @@ export namespace elements {
         invert?: boolean;
         useGradient?: boolean;
       };
-      variants: [number, number, number][];
+      variants: ElementColorVariant[];
     };
     density: number;
     matterType: MatterType;
@@ -71,6 +161,29 @@ export namespace elements {
     isGrabbable?: boolean;
     /** When true, conveyors can move this element. */
     isTransportable?: boolean;
+    /** Hide from some picker and lexicon lists. */
+    hidden?: boolean;
+    /**
+     * Lifetime in **seconds** (copied to `durationMax` / `durationLeft`).
+     * Lava is `0.28`; Fire is `1.28`.
+     */
+    duration?: number;
+    /** Random extra lifetime seconds (`min` / `max`). */
+    durationRandom?: { min?: number; max?: number };
+    /** Sideways motion (Lava uses `0.1`). */
+    horizontalSpeed?: number;
+    /** When false, the element is omitted from the filter picker. */
+    showInFilterPicker?: boolean;
+    /** Render / sim material index on live snapshots. */
+    materialId?: number;
+    /** Burn output when this element is flammable. */
+    flammable?: ElementFlammable;
+    /** Collector gold. */
+    collectable?: ElementCollectable;
+    /** Contact mix partners. */
+    mixes?: readonly ElementMix[];
+    /** Tooltip interaction kinds. */
+    interactions?: readonly Interaction[];
     getExtraProps?: () => { data: JsonObjectV1 };
   };
 
