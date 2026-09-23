@@ -1,5 +1,7 @@
-import { CellCoordinates, Vector2 } from "../../shared/player";
-import { shared } from "../../shared";
+import type { ElementType as ElementTypeEnum } from "../enums/index";
+import type { CellCoordinates, Vector2 } from "../../shared/geometry";
+import type { CellId, LooseString, TaggedNumber } from "../../shared/nominal";
+import type { JsonObjectV1 } from "../../shared/jsonvalue";
 
 /**
  * `sandkit.api.elements` — register elements and read or change cells on the main thread.
@@ -7,91 +9,341 @@ import { shared } from "../../shared";
  *
  */
 export namespace elements {
-  // Shared types
   /**
-   * Numeric id for a registered element type.
+   * Numeric element type handle.
+   * Built-in {@link ElementTypeEnum} values autocomplete; {@link getTypeById} returns a tagged handle.
    *
    */
-  export import ElementType = shared.api.elements.ElementType;
+  export type ElementType = ElementTypeEnum | TaggedNumber<"elementType">;
+
   /**
    * Mod or built-in element string id.
    *
    */
-  export import ElementId = shared.api.elements.ElementId;
+  export type ElementId = LooseString<never>;
+
   /**
    * Type handle or string id accepted by lookup helpers.
    *
    */
-  export import ElementRef = shared.api.elements.ElementRef;
-  /**
-   * Matter category for element physics behavior.
-   *
-   */
-  export import MatterType = shared.api.elements.MatterType;
-  /**
-   * Full definition used to register a custom element.
-   *
-   */
-  export import ElementDefinition = shared.api.elements.ElementDefinition;
-  /** RGB or RGBA palette tuple. */
-  export import ElementColorVariant = shared.api.elements.ElementColorVariant;
-  /** Burn product fields on a definition. */
-  export import ElementFlammable = shared.api.elements.ElementFlammable;
-  /** Collector gold on a definition. */
-  export import ElementCollectable = shared.api.elements.ElementCollectable;
-  /** Contact mix row on a definition. */
-  export import ElementMix = shared.api.elements.ElementMix;
-  /**
-   * Options for create and replace calls.
-   *
-   */
-  export import ElementCreateOptions = shared.api.elements.ElementCreateOptions;
-  /**
-   * Options for element removal.
-   *
-   */
-  export import ElementRemovalOptions = shared.api.elements.ElementRemovalOptions;
+  export type ElementRef = ElementType | ElementId;
 
-  /** Returns the mod string id for a numeric element type. */
-  export import getIdByType = shared.api.elements.getIdByType;
-  /** Resolves a string element id to its numeric type. */
-  export import getTypeById = shared.api.elements.getTypeById;
+  /**
+   * Physical behaviour category for an element.
+   *
+   */
+  export enum MatterType {
+    Solid = 1,
+    Liquid = 2,
+    Particle = 3,
+    Gas = 4,
+    Static = 5,
+    Slushy = 6,
+    Wisp = 7,
+    Powder = 8,
+  }
+
+  /** Palette entry: RGB, or RGBA when alpha is set. */
+  export type ElementColorVariant =
+    | readonly [r: number, g: number, b: number]
+    | readonly [r: number, g: number, b: number, a: number];
+
+  /** Tooltip metadata shared by structure and custom interaction kinds. */
+  export type InteractionStructureMetadata = {
+    /** i18n key for custom interaction label text. */
+    textKey?: string;
+    /** Hide the label when a data field matches a value. */
+    crossedOutWhen?: { dataField: number; equals: number };
+    /** Show the label only when a data field matches a value. */
+    visibleWhen?: { dataField: number; equals: number };
+    /** Require the text key to exist in the active locale. */
+    onlyWhenTranslated?: boolean;
+  };
+
+  /** Interaction that destroys specific items. */
+  export type InteractionDestroyer = {
+    kind: "destroyer";
+    /** Item ids removed by this interaction (for example `"drill"`). */
+    items: readonly string[];
+  };
+
+  /** Interaction that affects specific structures. */
+  export type InteractionStructure = InteractionStructureMetadata & {
+    kind: "structure";
+    /** Structure ids shown in the interaction tooltip. */
+    structures: readonly string[];
+  };
+
+  /** Interaction that affects specific entities. */
+  export type InteractionEntity = {
+    kind: "entity";
+    /** Entity type ids referenced by the interaction. */
+    entities: readonly string[];
+  };
+
+  /** Interaction that marks the element as flammable. */
+  export type InteractionFlammable = { kind: "flammable" };
+  /** Interaction that marks the element as meltable. */
+  export type InteractionMeltable = { kind: "meltable" };
+  /** Interaction that marks the element as freezable. */
+  export type InteractionFreezable = { kind: "freezable" };
+  /** Interaction handled by custom mod logic and tooltip text. */
+  export type InteractionCustom = InteractionStructureMetadata & { kind: "custom" };
+
+  /** Union of element interaction kinds for tool and structure logic. */
+  export type Interaction =
+    | InteractionDestroyer
+    | InteractionStructure
+    | InteractionEntity
+    | InteractionFlammable
+    | InteractionMeltable
+    | InteractionFreezable
+    | InteractionCustom;
+
+  /**
+   * Burn product when fire or flame consumes this element.
+   * Residue may omit this object and keep only `kind: "flammable"` in {@link interactions}.
+   */
+  export type ElementFlammable = {
+    /** Element id written in place of the burned cell. */
+    outputElementId?: string;
+    /** Chance that the output is written (0–1). */
+    outputChance?: number;
+    /** When true, spawned fire copies this cell's remaining duration. */
+    fireInheritsDuration?: boolean;
+    /** Fire lifetime seconds, or `[min, max]`. */
+    duration?: number | readonly number[];
+  };
+
+  /** Collector gold for this element. */
+  export type ElementCollectable = {
+    value?: number;
+  };
+
+  /** Contact mix row: this type plus `elementType` becomes `result`. */
+  export type ElementMix = {
+    elementType?: ElementType;
+    result?: ElementType;
+  };
+
+  /**
+   * Mod-registered element definition snapshot.
+   * Pass to `register` / `updateDefinition`.
+   * `getDefinitionByType` may omit `id` on builtins.
+   */
+  export type ElementDefinition = {
+    id: string;
+    nameKey: string;
+    /** Plain display name when not using {@link nameKey}. */
+    name?: string;
+    /** Lexicon description i18n key. */
+    descriptionKey?: string;
+    /** Plain lexicon copy when not using {@link descriptionKey}. */
+    description?: string;
+    defaultDataFields?: { [key: string]: number };
+    colors: {
+      variantFromDataField1?: {
+        rangeMin?: number;
+        rangeMax?: number;
+        invert?: boolean;
+        useGradient?: boolean;
+      };
+      variants: ElementColorVariant[];
+    };
+    density: number;
+    matterType: MatterType;
+    /** UI/meta color as 0xRRGGBB. */
+    metaColor?: number;
+    /** When true, the grabber can pick up this element. */
+    isGrabbable?: boolean;
+    /** When true, conveyors can move this element. */
+    isTransportable?: boolean;
+    /** Hide from some picker and lexicon lists. */
+    hidden?: boolean;
+    /**
+     * Lifetime in **seconds** (copied to `durationMax` / `durationLeft`).
+     * Lava is `0.28`; Fire is `1.28`.
+     */
+    duration?: number;
+    /** Random extra lifetime seconds (`min` / `max`). */
+    durationRandom?: { min?: number; max?: number };
+    /** Sideways motion (Lava uses `0.1`). */
+    horizontalSpeed?: number;
+    /** When false, the element is omitted from the filter picker. */
+    showInFilterPicker?: boolean;
+    /** Render / sim material index on live snapshots. */
+    materialId?: number;
+    /** Burn output when this element is flammable. */
+    flammable?: ElementFlammable;
+    /** Collector gold. */
+    collectable?: ElementCollectable;
+    /** Contact mix partners. */
+    mixes?: readonly ElementMix[];
+    /** Tooltip interaction kinds. */
+    interactions?: readonly Interaction[];
+    getExtraProps?: () => { data: JsonObjectV1 };
+  };
+
+  /**
+   * Options for {@link createAtCell}, replace, and related create helpers.
+   *
+   */
+  export type ElementCreateOptions = {
+    /** Initial element data bag. */
+    data?: Record<string, unknown>;
+    /** Override element density. */
+    density?: number;
+    /**
+     * Set both max and remaining duration in simulation ticks.
+     *
+     */
+    durationTicks?: number;
+    /**
+     * @deprecated Use {@link durationTicks} instead.
+     *
+     */
+    duration?: number;
+    /** Override free-fall state on spawn. */
+    isFreeFalling?: boolean;
+    /** Override default data fields 1–4. */
+    dataFields?: {
+      field1?: number;
+      field2?: number;
+      field3?: number;
+      field4?: number;
+    };
+    /** Spawn as a particle with the given velocity. */
+    particle?: {
+      velocity: Vector2;
+    };
+    /** Skip collector accounting when placing the element. */
+    skipCollectorCheck?: boolean;
+  };
+
+  /**
+   * Options for element removal helpers.
+   *
+   */
+  export type ElementRemovalOptions = {
+    /** Skip collector accounting when removing the element. */
+    skipCollectorCheck?: boolean;
+  };
+
+  /**
+   * Return the mod string id for a numeric element type.
+   *
+   * @param elementType - Numeric element type.
+   *
+   */
+  export function getIdByType(elementType: ElementType): ElementId;
+
+  /**
+   * Resolve a mod element string id to a type handle.
+   *
+   * @param elementId - Mod-registered element id.
+   *
+   */
+  export function getTypeById(elementId: ElementId): ElementType;
+
   /**
    * @deprecated Use {@link getTypeById} instead.
    *
    */
-  export import getTypeFromId = shared.api.elements.getTypeFromId;
-  /** Returns the definition for an element type. */
-  export import getDefinitionByType = shared.api.elements.getDefinitionByType;
-  /** Returns the element type at a cell, or null. */
-  export import getTypeAtCell = shared.api.elements.getTypeAtCell;
-  /** Returns the resolved element type at a cell, or null. */
-  export import getResolvedTypeAtCell = shared.api.elements.getResolvedTypeAtCell;
-  /** Returns the resolved element type from a cell id, or null. */
-  export import getResolvedTypeFromCellId = shared.api.elements.getResolvedTypeFromCellId;
-  /** Returns element info at a cell, or null. */
-  export import getInfoAtCell = shared.api.elements.getInfoAtCell;
-  /** Returns the matter type at a cell, or null. */
-  export import getMatterTypeAtCell = shared.api.elements.getMatterTypeAtCell;
-  /** Returns true when the cell contains the given element type or id. */
-  export import isTypeAtCell = shared.api.elements.isTypeAtCell;
-  /** Returns true when the element at the cell is free-falling. */
-  export import isFreeFallingAtCell = shared.api.elements.isFreeFallingAtCell;
-  /** Returns particle velocity at a cell, or null. */
-  export import getVelocityAtCell = shared.api.elements.getVelocityAtCell;
-  /** Returns a data field value at a cell, or null. */
-  export import getDataFieldAtCell = shared.api.elements.getDataFieldAtCell;
+  export function getTypeFromId(elementId: ElementId): ElementType;
 
-  export import InteractionStructureMetadata = shared.api.elements.InteractionStructureMetadata;
-  export import InteractionDestroyer = shared.api.elements.InteractionDestroyer;
-  export import InteractionStructure = shared.api.elements.InteractionStructure;
-  export import InteractionEntity = shared.api.elements.InteractionEntity;
-  export import InteractionFlammable = shared.api.elements.InteractionFlammable;
-  export import InteractionMeltable = shared.api.elements.InteractionMeltable;
-  export import InteractionFreezable = shared.api.elements.InteractionFreezable;
-  export import InteractionCustom = shared.api.elements.InteractionCustom;
-  /** Union of element interaction kinds for tool and structure logic. */
-  export import Interaction = shared.api.elements.Interaction;
+  /**
+   * Look up the definition for a type handle.
+   *
+   * @param elementType - Numeric element type.
+   *
+   */
+  export function getDefinitionByType(elementType: ElementType): ElementDefinition | undefined;
+
+  /**
+   * Return the raw element type at a cell (may differ from resolved type).
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function getTypeAtCell(...args: CellCoordinates): ElementType | null;
+
+  /**
+   * Return the resolved element type after overlays and particles.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null;
+
+  /**
+   * Return the resolved element type from a packed cell id.
+   *
+   * @param cellId - Packed cell id from {@link grid.getCellIdAtCell}.
+   *
+   */
+  export function getResolvedTypeFromCellId(cellId: CellId): ElementType | null;
+
+  /**
+   * Return element index, particle flag, and ids at a cell.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function getInfoAtCell(
+    ...args: CellCoordinates
+  ): { elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number } | null;
+
+  /**
+   * Return the matter category at a cell, or null when empty.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function getMatterTypeAtCell(...args: CellCoordinates): MatterType | null;
+
+  /**
+   * Return true when the cell holds the given element type or id.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   * @param elementTypeOrId - Numeric type or string id.
+   *
+   */
+  export function isTypeAtCell(...args: [...CellCoordinates, elementTypeOrId: ElementRef]): boolean;
+
+  /**
+   * Return true when the element at the cell is falling.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function isFreeFallingAtCell(...args: CellCoordinates): boolean;
+
+  /**
+   * Return per-cell velocity for moving elements.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function getVelocityAtCell(...args: CellCoordinates): Vector2 | null;
+
+  /**
+   * Read element data field 1–4 at a cell.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   * @param fieldNumber - Data field index (1–4).
+   *
+   */
+  export function getDataFieldAtCell(
+    ...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4]
+  ): number | null;
 
   /**
    * Returns all registered element type ids.

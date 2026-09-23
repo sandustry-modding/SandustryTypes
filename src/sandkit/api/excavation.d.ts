@@ -1,5 +1,5 @@
-import type { elements } from "../../shared/api/elements";
-import type { terrains } from "../../shared/api/terrains";
+import type { elements } from "./elements";
+import type { terrains } from "./terrains";
 
 /**
  * `sandkit.api.excavation` — register custom excavation tool dig profiles.

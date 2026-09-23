@@ -1,7 +1,7 @@
 import type { CellXY, Vector2 } from "../../shared/geometry";
 import type { LooseString } from "../../shared/nominal";
-import type { structures } from "../../shared/api/structures";
-import type { elements } from "../../shared/api/elements";
+import type { structures } from "./structures";
+import type { elements } from "./elements";
 import type { entities } from "./entities";
 import type { projectiles } from "./projectiles";
 

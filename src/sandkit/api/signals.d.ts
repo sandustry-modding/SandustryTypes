@@ -1,4 +1,4 @@
-import type { structures } from "../../shared/api/structures";
+import type { structures } from "./structures";
 
 /**
  * Signal target registration for structures.

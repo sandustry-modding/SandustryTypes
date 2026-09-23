@@ -1,5 +1,4 @@
-// Aliased: this module declares its own `shared` namespace below.
-import { shared as sharedApi } from "../../shared";
+import type { shared as MainShared } from "../../sandkit/api/shared";
 
 /**
  * Worker thread only.
@@ -42,13 +41,14 @@ export namespace shared {
      * Read an existing buffer without validating type or length.
      *
      * @param key - Buffer name shared across threads.
+     * @returns The typed array, or `undefined` when the buffer does not exist.
      *
      */
-    export import get = sharedApi.api.shared.buffers.get;
+    export function get(key: string): SharedArray | undefined;
   }
 
   /** Typed array backing store for a shared buffer. */
-  export import SharedArray = sharedApi.api.shared.SharedArray;
+  export type SharedArray = MainShared.SharedArray;
   /** Discriminator for the underlying typed array kind. */
-  export import SharedArrayType = sharedApi.api.shared.SharedArrayType;
+  export type SharedArrayType = MainShared.SharedArrayType;
 }

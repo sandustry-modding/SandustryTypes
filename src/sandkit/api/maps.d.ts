@@ -5,15 +5,33 @@
  *
  * @module
  */
-import { shared } from "../../shared";
 import type { CellXY } from "../../shared/geometry";
 
 export namespace maps {
-  // Shared
-  /** Return the active map for this session. */
-  export import getActive = shared.api.maps.getActive;
-  /** Active map data shape. */
-  export import ActiveMapV1 = shared.api.maps.ActiveMapV1;
+  /**
+   * Return the currently loaded custom map definition.
+   *
+   * @returns Active map metadata, or `null` outside custom maps.
+   */
+  export function getActive(): Readonly<ActiveMapV1> | null;
+
+  /**
+   * Active custom map record (version 1 schema).
+   *
+   * Shape varies by map. Known fields are optional; additional keys may exist.
+   */
+  export type ActiveMapV1 = {
+    id?: string;
+    deployment?: unknown;
+    spawn?: unknown;
+    topBounds?: {
+      soft?: number;
+      hard?: number;
+    };
+    parallax?: unknown;
+    depthLight?: unknown;
+    [key: string]: unknown;
+  };
 
   /** Return maps the player can start. */
   export function getAvailable(): readonly Readonly<AvailableMapV1>[];

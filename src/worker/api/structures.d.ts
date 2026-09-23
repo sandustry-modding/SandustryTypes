@@ -1,13 +1,24 @@
-import type { CellCoordinates } from "../player";
-import type { LooseString, TaggedNumber } from "../nominal";
-import type { StructureType as StructureTypeEnum } from "../../sandkit/enums/index";
+import type { CellCoordinates } from "../../shared/geometry";
+import type { structures as MainStructures } from "../../sandkit/api/structures";
 
 /**
- * Shared `sandkit.api.structures` base — structure lookup and mutation.
+ * Worker-thread `sandkit.api.structures` — structure lookup and immediate updates.
  *
- * @internal Base namespace reused by main and worker declarations.
+ * Worker-entry updates apply immediately. Main thread defers build and remove helpers in
+ * `sandkit.api.structures`.
+ *
+ * @internal Worker subset; not interchangeable with main-thread
+ * `sandkit.api.structures`.
+ *
  */
 export namespace structures {
+  export type StructureDefinition = MainStructures.StructureDefinition;
+  export type StructureData = MainStructures.StructureData;
+  export type Structure = MainStructures.Structure;
+  export type StructureType = MainStructures.StructureType;
+  export type StructureId = MainStructures.StructureId;
+  export type StructureRef = MainStructures.StructureRef;
+
   /**
    * Invoke a callback for every structure of the given type.
    *
@@ -198,43 +209,4 @@ export namespace structures {
      */
     export function isEnabledAt(...args: CellCoordinates): boolean;
   }
-
-  /**
-   * Registered structure definition snapshot (built-in or mod).
-   *
-   */
-  export type StructureDefinition = {
-    id: StructureId;
-    [key: string]: unknown;
-  };
-
-  /** Per-structure custom data bag. */
-  export type StructureData = {
-    elementId?: string | null;
-    elementType?: TaggedNumber<"elementType"> | null;
-    storedEnergy?: number;
-    maxEnergy?: number;
-    [key: string]: unknown;
-  };
-
-  /** Live structure instance in the world grid. */
-  export type Structure = {
-    x: number;
-    y: number;
-    type?: StructureRef;
-    queued?: boolean;
-    filter?: { elementType?: TaggedNumber<"elementType">; mode?: string };
-    trapped?: boolean;
-    data?: StructureData;
-    color?: string;
-    frame?: boolean;
-    [key: string]: unknown;
-  };
-
-  /** Numeric structure type handle. Built-in enum values autocomplete. */
-  export type StructureType = StructureTypeEnum | TaggedNumber<"structureType">;
-  /** Mod or built-in structure string id. */
-  export type StructureId = LooseString<never>;
-  /** Type handle or string id accepted by lookup helpers. */
-  export type StructureRef = StructureType | StructureId;
 }

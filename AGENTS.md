@@ -35,6 +35,32 @@ Do not add mod-framework wrappers to `src/` unless they are part of the shipping
 
 Vanilla game facts for agents also live in OKF: see [okf/AGENTS.md](https://github.com/sandustry-modding/sandustry-modding.github.io/blob/main/okf/AGENTS.md) on the docs site (`docs/okf/AGENTS.md` in the template clone).
 
+## Layout
+
+Pick one home for each declaration.
+Done when the name exists in exactly one of these trees (plus worker aliases below).
+
+| Kind | Home |
+| --- | --- |
+| Geometry, tags, JSON, asset ids | `src/shared/` |
+| Main-thread `sandkit.api.*` | `src/sandkit/api/<name>.d.ts` |
+| Worker `sandkit.api.*` that differs from main | `src/worker/api/<name>.d.ts` |
+| Worker `sandkit.api.*` identical to main | Re-export the sandkit module from `src/worker/index.d.ts` |
+
+`src/shared/` is primitives only (`Vector2`, `CellCoordinates`, nominal ids).
+`sandkit.api.shared.buffers` is a runtime namespace declared under `src/sandkit/api/shared.d.ts` (worker: `src/worker/api/shared.d.ts`).
+
+When the worker bag overlaps main but is not the same object:
+
+1. Define types and enums on the sandkit file.
+2. On the worker file, `export type Foo = MainNs.Foo`.
+3. For a value+type enum, `export import MatterType = MainNs.MatterType`.
+4. Write overlapping functions as `export function` on the worker file, with worker JSDoc (immediate writes).
+5. Add worker-only members on the worker file only.
+
+`export import` aliases a name that already exists in this thread (deprecated `world` → `grid` in the same file).
+It is not a third API tree under `src/shared/`.
+
 ## Member cards
 
 Each generated member is one `.smt-member-card`.

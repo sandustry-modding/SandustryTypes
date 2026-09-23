@@ -1,5 +1,5 @@
-import { CellCoordinates } from "../../shared/player";
-import { shared } from "../../shared";
+import type { CellCoordinates, Vector2 } from "../../shared/player";
+import type { CellId as PackedCellId } from "../../shared/nominal";
 import type { elements } from "./elements";
 import type { terrains } from "./terrains";
 
@@ -11,18 +11,51 @@ import type { terrains } from "./terrains";
  */
 export namespace grid {
   /**
+   * Return the packed cell id at grid coordinates.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   * @returns Packed cell id for the cell.
+   *
    */
-  export import getCellIdAtCell = shared.api.grid.getCellIdAtCell;
+  export function getCellIdAtCell(...args: CellCoordinates): CellId;
+
   /**
+   * Return true when the cell has no element or terrain content.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
    */
-  export import isCellEmptyAtCell = shared.api.grid.isCellEmptyAtCell;
+  export function isCellEmptyAtCell(...args: CellCoordinates): boolean;
+
   /**
+   * Return true when the cell holds terrain (not an element).
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
    */
-  export import isTerrainAtCell = shared.api.grid.isTerrainAtCell;
+  export function isTerrainAtCell(...args: CellCoordinates): boolean;
+
   /**
+   * Mark the cell active for simulation this tick.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
    */
-  export import reportActivityAtCell = shared.api.grid.reportActivityAtCell;
+  export function reportActivityAtCell(...args: CellCoordinates): void;
+
   /**
+   * Apply excavation damage and eject velocity at a cell.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   * @param outVelocity - Ejection velocity written into this vector.
+   * @param damage - Damage applied to terrain in the pattern.
+   * @param options - Optional excavation source flags.
+   *
    * @example
    * ```ts
    * api.grid.excavateAtCell(
@@ -34,18 +67,49 @@ export namespace grid {
    * ```
    *
    */
-  export import excavateAtCell = shared.api.grid.excavateAtCell;
+  export function excavateAtCell(
+    ...args: [...CellCoordinates, outVelocity: Vector2, damage: number, options?: ExcavateOptions]
+  ): void;
+
   /**
+   * Return the world grid size in cells.
+   *
    * @example Main entry
    * ```ts
    * const { widthCells, heightCells } = api.grid.getDimensions();
    * ```
    *
    */
-  export import getDimensions = shared.api.grid.getDimensions;
-  export import ExcavateOptions = shared.api.grid.ExcavateOptions;
-  export import CellId = shared.api.grid.CellId;
-  export import GridDimensions = shared.api.grid.GridDimensions;
+  export function getDimensions(): GridDimensions;
+
+  /** Packed cell id from {@link getCellIdAtCell}. */
+  export type CellId = PackedCellId;
+
+  /** World grid width and height in cells. */
+  export type GridDimensions = {
+    /** Grid width in cells. */
+    widthCells: number;
+    /** Grid height in cells. */
+    heightCells: number;
+  };
+
+  /** Flags that control how {@link excavateAtCell} resolves damage and drops. */
+  export type ExcavateOptions = {
+    /** Treat the dig as gun fire for terrain resistance checks. */
+    fromGun?: boolean;
+    /** Treat the dig as rocket or dynamite explosion damage. */
+    fromRocketExplosion?: boolean;
+    /** Treat the dig as drill damage. */
+    fromDrill?: boolean;
+    /** Use {@link outVelocity} literally instead of deriving ejection speed. */
+    useLiteralOutVelocity?: boolean;
+    /** Allow removing terrain marked non-destructible. */
+    destroyNonDestructible?: boolean;
+    /** Force-remove all matched cells regardless of normal rules. */
+    forceRemoveAll?: boolean;
+    /** Extra drill-tier damage when {@link fromDrill} is true. Clamped to 0–1000. */
+    drillTierDamage?: number;
+  };
 
   /**
    * Run deferred grid mutations on the main thread. Reads see the old grid until

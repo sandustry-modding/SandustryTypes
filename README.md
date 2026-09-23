@@ -19,8 +19,8 @@ Folder layout mirrors runtime shape so you can jump from code to the matching `.
 | `src/sandkit/react.d.ts`        | `sandkit.react`                                                         |
 | `src/sandkit/index.d.ts`        | Composed `Sandkit` root type                                            |
 | `src/global.d.ts`               | Ambient `sandkit` free variable and type aliases                        |
-| `src/worker/`                   | Worker-thread `sandkit.api` (see `WorkerSandkitApi`)                    |
-| `src/shared/`                   | Internal base shapes reused by main and worker declarations             |
+| `src/worker/`                   | Worker-thread `sandkit.api` (`WorkerSandkitApi`; namespaces in `api/`)  |
+| `src/shared/`                   | Primitives only (`geometry`, `nominal`, …). Not a runtime namespace.    |
 | `src/configs/`                  | `modinfo.json` / `patches.json` TypeScript types (not a runtime object) |
 | `src/electron/`                 | Renderer preload bridge (`window.electron`; not a runtime `sandkit` object) |
 
@@ -31,9 +31,9 @@ At runtime, every API bag is a **plain object** with function properties — not
 - `sandkit.api`, `sandkit.api.ui`, `sandkit.api.ui.overlays`, and `sandkit.engine.api.game` are all `typeof "object"` with `Object.prototype`
 - Nested keys hold functions or further plain objects
 
-Declaration files use `export namespace` because it is the usual `.d.ts` pattern for nested object APIs. It matches how you call the API (`sandkit.api.ui.update`) and supports `export import` when main and worker share base shapes under `shared/`.
-
-`interface` or `type` object literals would also work for runtime shape, but they do not support the `export import` re-export style used across main, worker, and shared modules.
+Declaration files use `export namespace` so nested calls match the object (`sandkit.api.ui.update`).
+Where to put a new declaration: [AGENTS.md](./AGENTS.md) → Layout.
+Runtime `sandkit.api.shared` (buffers) is not the `src/shared/` folder.
 
 ## Install
 
@@ -65,7 +65,7 @@ import type { Vector2, CellCoordinates, CellXY, Size2 } from "@sandustry-modding
 
 - **Main mod (`main.js`):** use the ambient free name `sandkit`. Type aliases such as `SandkitApi` are global; do not import a value binding.
 - **Worker mod (`worker.js`):** type `sandkit.api` as `WorkerSandkitApi`. Worker and main APIs overlap but are not interchangeable.
-- **Shared folder:** not a runtime namespace. It holds domain shapes and API bases that main and worker modules extend.
+- **Shared folder:** primitives only. Import `Vector2` / `CellCoordinates` from `@sandustry-modding/types/shared`.
 - **Configs folder:** `modinfo.json` and `patches.json` TypeScript types (`@sandustry-modding/types/configs`). Not part of the live `sandkit` object. JSON Schema: https://sandustry-modding.github.io/schemas/modinfo.json and https://sandustry-modding.github.io/schemas/patches.json
 - **Electron folder:** renderer preload bridge (`@sandustry-modding/types/electron`). Ambient `electron` on `@sandustry-modding/types`. Docs: [Electron bridge](https://sandustry-modding.github.io/#/electron-bridge).
 

@@ -5,21 +5,43 @@
  *
  * @module
  */
-import { shared } from "../../shared";
+import type { CellCoordinates, Vector2 } from "../../shared/player";
 
 export namespace player {
-  /** Return the player world position. */
-  export import getPositionAtWorld = shared.api.player.getPositionAtWorld;
-  /** Return true when the player overlaps the given cell. */
-  export import isCollidingWithCell = shared.api.player.isCollidingWithCell;
-  /** Return true when the player is within radius of the given cell. */
-  export import isWithinRadiusOfCell = shared.api.player.isWithinRadiusOfCell;
+  /**
+   * Return the player center position in world pixels.
+   *
+   * @returns World position as `{ x, y }` in pixels.
+   *
+   */
+  export function getPositionAtWorld(): Vector2;
+
+  /**
+   * Return true when the player hitbox overlaps the cell.
+   *
+   * @param cellX - Grid column of the cell.
+   * @param cellY - Grid row of the cell.
+   * @returns True when the player overlaps the cell.
+   *
+   */
+  export function isCollidingWithCell(...args: CellCoordinates): boolean;
+
+  /**
+   * Return true when the player is within `radius` cells of the point.
+   *
+   * @param cellX - Grid column of the reference cell.
+   * @param cellY - Grid row of the reference cell.
+   * @param radius - Maximum distance in cells (inclusive).
+   * @returns True when the player is inside the radius.
+   *
+   */
+  export function isWithinRadiusOfCell(...args: [...CellCoordinates, radius: number]): boolean;
 
   /**
    * @deprecated Use {@link getPositionAtWorld} instead.
    *
    */
-  export import getWorldPosition = shared.api.player.getWorldPosition;
+  export function getWorldPosition(): Vector2;
 
   /**
    * Set the player world position.

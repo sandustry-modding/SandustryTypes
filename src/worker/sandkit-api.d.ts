@@ -22,14 +22,14 @@ export type WorkerSandkitApi = {
   hooks: typeof import("./api/hooks").hooks;
   lights: typeof import("./api/lights").lights;
   main: typeof import("./api/main").main;
-  maps: typeof import("../shared/api/maps").maps;
+  maps: typeof import("./api/maps").maps;
   patterns: typeof import("../sandkit/api/patterns").patterns;
-  player: typeof import("../shared/api/player").player;
+  player: typeof import("./api/player").player;
   random: typeof import("../sandkit/api/random").random;
   shared: typeof import("./api/shared").shared;
-  structures: typeof import("../shared/api/structures").structures;
-  terrains: typeof import("../shared/api/terrains").terrains;
-  ui: typeof import("../shared/api/ui").ui;
+  structures: typeof import("./api/structures").structures;
+  terrains: typeof import("./api/terrains").terrains;
+  ui: typeof import("./api/ui").ui;
   utils: typeof import("../sandkit/api/utils").utils;
   worker: typeof import("./api/worker").worker;
   /**

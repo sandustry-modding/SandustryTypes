@@ -1,4 +1,5 @@
-import { grid as sharedGrid } from "../../shared/api/grid";
+import type { CellCoordinates, Vector2 } from "../../shared/player";
+import type { grid as MainGrid } from "../../sandkit/api/grid";
 
 /**
  * Worker-thread `sandkit.api.grid` — grid reads, activity, and excavation.
@@ -9,15 +10,22 @@ import { grid as sharedGrid } from "../../shared/api/grid";
  */
 export namespace grid {
   /** Return the packed cell id at grid coordinates. */
-  export import getCellIdAtCell = sharedGrid.getCellIdAtCell;
+  export function getCellIdAtCell(...args: CellCoordinates): CellId;
+
   /** Return true when the cell has no element or terrain content. */
-  export import isCellEmptyAtCell = sharedGrid.isCellEmptyAtCell;
+  export function isCellEmptyAtCell(...args: CellCoordinates): boolean;
+
   /** Return true when the cell holds terrain (not an element). */
-  export import isTerrainAtCell = sharedGrid.isTerrainAtCell;
+  export function isTerrainAtCell(...args: CellCoordinates): boolean;
+
   /** Mark the cell active for simulation this tick. */
-  export import reportActivityAtCell = sharedGrid.reportActivityAtCell;
+  export function reportActivityAtCell(...args: CellCoordinates): void;
+
   /** Apply excavation damage and eject velocity at a cell. */
-  export import excavateAtCell = sharedGrid.excavateAtCell;
+  export function excavateAtCell(
+    ...args: [...CellCoordinates, outVelocity: Vector2, damage: number, options?: ExcavateOptions]
+  ): void;
+
   /**
    * Return the world grid size in cells.
    *
@@ -26,13 +34,14 @@ export namespace grid {
    * const { widthCells, heightCells } = api.grid.getDimensions();
    * ```
    */
-  export import getDimensions = sharedGrid.getDimensions;
+  export function getDimensions(): GridDimensions;
+
   /** Options for {@link excavateAtCell}. */
-  export import ExcavateOptions = sharedGrid.ExcavateOptions;
+  export type ExcavateOptions = MainGrid.ExcavateOptions;
   /** Packed cell id from {@link getCellIdAtCell}. */
-  export import CellId = sharedGrid.CellId;
+  export type CellId = MainGrid.CellId;
   /** World grid width and height in cells. */
-  export import GridDimensions = sharedGrid.GridDimensions;
+  export type GridDimensions = MainGrid.GridDimensions;
 }
 
 /**

@@ -5,8 +5,9 @@
  *
  * @module
  */
-import { CellCoordinates, Size2, Vector2 } from "../../shared/geometry";
-import { shared } from "../../shared";
+import type { CellCoordinates, Size2, Vector2 } from "../../shared/geometry";
+import type { LooseString, TaggedNumber } from "../../shared/nominal";
+import type { StructureType as StructureTypeEnum } from "../enums/index";
 // Aliased: `structures` declares a nested `processing` namespace that would
 // otherwise shadow this import.
 import { processing as processingApi } from "./processing";
@@ -23,23 +24,37 @@ export namespace structures {
    * });
    * ```
    */
-  export import forEachOfType = shared.api.structures.forEachOfType;
+  export function forEachOfType(
+    structureTypeOrId: StructureRef,
+    callback: (structure: Structure) => void,
+  ): void;
+
   /** Return the structure at a cell, or null. */
-  export import getAtCell = shared.api.structures.getAtCell;
+  export function getAtCell(...args: CellCoordinates): Structure | null;
+
   /** Return the definition for a structure type. */
-  export import getDefinitionByType = shared.api.structures.getDefinitionByType;
+  export function getDefinitionByType(
+    structureType: StructureRef,
+  ): StructureDefinition | undefined;
+
   /** Resolve a string structure id to its type. */
-  export import getTypeById = shared.api.structures.getTypeById;
+  export function getTypeById(structureId: StructureId): StructureType;
+
   /** Return true when a built structure exists at the cell. */
-  export import hasBuiltAtCell = shared.api.structures.hasBuiltAtCell;
+  export function hasBuiltAtCell(...args: CellCoordinates): boolean;
+
   /** Return true when a structure matches a string id. */
-  export import isType = shared.api.structures.isType;
+  export function isType(structure: Structure | null, structureId: StructureId): boolean;
+
   /** Return true when the cell structure matches a string id. */
-  export import isTypeAtCell = shared.api.structures.isTypeAtCell;
+  export function isTypeAtCell(...args: [...CellCoordinates, structureId: StructureId]): boolean;
+
   /** Set spritesheet index on a structure instance. */
-  export import setSpritesheetIndex = shared.api.structures.setSpritesheetIndex;
+  export function setSpritesheetIndex(structure: Structure, index: number): void;
+
   /** Set spritesheet index on the structure at a cell. */
-  export import setSpritesheetIndexAtCell = shared.api.structures.setSpritesheetIndexAtCell;
+  export function setSpritesheetIndexAtCell(...args: [...CellCoordinates, index: number]): void;
+
   /**
    * Map a value through thresholds to a spritesheet index on a structure.
    *
@@ -52,7 +67,12 @@ export namespace structures {
    * );
    * ```
    */
-  export import setSpritesheetIndexByValue = shared.api.structures.setSpritesheetIndexByValue;
+  export function setSpritesheetIndexByValue(
+    structure: Structure,
+    value: number,
+    thresholds: number[],
+  ): void;
+
   /**
    * Map a value through thresholds to a spritesheet index at a cell.
    *
@@ -66,7 +86,10 @@ export namespace structures {
    * );
    * ```
    */
-  export import setSpritesheetIndexByValueAtCell = shared.api.structures.setSpritesheetIndexByValueAtCell;
+  export function setSpritesheetIndexByValueAtCell(
+    ...args: [...CellCoordinates, value: number, thresholds: number[]]
+  ): void;
+
   /**
    * Push structure state updates to the game and workers.
    *
@@ -77,7 +100,8 @@ export namespace structures {
    * });
    * ```
    */
-  export import update = shared.api.structures.update;
+  export function update(structure: Structure, options?: { propagateToWorkers?: boolean }): void;
+
   /**
    * Merge partial data onto a structure instance.
    *
@@ -90,27 +114,27 @@ export namespace structures {
    * );
    * ```
    */
-  export import updateData = shared.api.structures.updateData;
-  /** Structure instance in the world. */
-  export import Structure = shared.api.structures.Structure;
-  /** Structure type id or enum value. */
-  export import StructureType = shared.api.structures.StructureType;
-  /** Mod or built-in structure string id. */
-  export import StructureId = shared.api.structures.StructureId;
-  /** Type handle or string id accepted by lookup helpers. */
-  export import StructureRef = shared.api.structures.StructureRef;
+  export function updateData(
+    structure: Structure,
+    partial: Partial<StructureData>,
+    options?: { propagateToWorkers?: boolean },
+  ): void;
 
   /**
    * @deprecated Use {@link getTypeById} instead.
    *
    */
-  export import getTypeFromId = shared.api.structures.getTypeFromId;
+  export function getTypeFromId(structureId: StructureId): StructureType;
 
   /**
    * @deprecated Use {@link updateData} instead.
    *
    */
-  export import setData = shared.api.structures.setData;
+  export function setData(
+    structure: Structure,
+    partial: Partial<StructureData>,
+    options?: { propagateToWorkers?: boolean },
+  ): void;
 
   /**
    * Register a new structure definition.
@@ -479,14 +503,20 @@ export namespace structures {
 
   /** Per-structure processing enablement and registration. */
   export namespace processing {
-    /** Return true when processing is enabled at a cell. */
-    export import isEnabledAtCell = shared.api.structures.processing.isEnabledAtCell;
+    /**
+     * Return true when processing is enabled at a cell.
+     *
+     * @param cellX - Grid column of the target cell.
+     * @param cellY - Grid row of the target cell.
+     *
+     */
+    export function isEnabledAtCell(...args: CellCoordinates): boolean;
 
     /**
      * @deprecated Use {@link isEnabledAtCell} instead.
      *
      */
-    export import isEnabledAt = shared.api.structures.processing.isEnabledAt;
+    export function isEnabledAt(...args: CellCoordinates): boolean;
 
     /**
      * Register a custom processing definition by id.
@@ -626,8 +656,47 @@ export namespace structures {
     spritesheet?: StructureSpritesheet;
   };
 
+  /**
+   * Registered structure definition snapshot (built-in or mod).
+   *
+   */
+  export type StructureDefinition = {
+    id: StructureId;
+    [key: string]: unknown;
+  };
+
+  /** Per-structure custom data bag. */
+  export type StructureData = {
+    elementId?: string | null;
+    elementType?: TaggedNumber<"elementType"> | null;
+    storedEnergy?: number;
+    maxEnergy?: number;
+    [key: string]: unknown;
+  };
+
+  /** Live structure instance in the world grid. */
+  export type Structure = {
+    x: number;
+    y: number;
+    type?: StructureRef;
+    queued?: boolean;
+    filter?: { elementType?: TaggedNumber<"elementType">; mode?: string };
+    trapped?: boolean;
+    data?: StructureData;
+    color?: string;
+    frame?: boolean;
+    [key: string]: unknown;
+  };
+
+  /** Numeric structure type handle. Built-in enum values autocomplete. */
+  export type StructureType = StructureTypeEnum | TaggedNumber<"structureType">;
+  /** Mod or built-in structure string id. */
+  export type StructureId = LooseString<never>;
+  /** Type handle or string id accepted by lookup helpers. */
+  export type StructureRef = StructureType | StructureId;
+
   /** Full structure definition registered with the game. */
-  export type SandkitStructureDefinition = shared.api.structures.StructureDefinition & {
+  export type SandkitStructureDefinition = StructureDefinition & {
     name?: string;
     nameKey?: string;
     description?: string;
@@ -638,7 +707,7 @@ export namespace structures {
     shape?: number[][];
     variants?: StructureVariant[];
     render?: StructureRender;
-    defaultData?: Partial<shared.api.structures.StructureData>;
+    defaultData?: Partial<StructureData>;
     /**
      * Linked placement clearance mode (for example `"allOrNothing"`).
      *

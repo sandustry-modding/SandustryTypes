@@ -6,7 +6,7 @@
  * @module
  */
 import type { CellCoordinates, Vector2 } from "../../shared/player";
-import type { shared } from "../../shared";
+import type { grid } from "./grid";
 
 export namespace patterns {
   /**
@@ -57,6 +57,6 @@ export namespace patterns {
     ]
   ): void;
 
-  /** Options for pattern-based excavation. Same shape as {@link shared.api.world.ExcavateOptions}. */
-  export type PatternExcavateOptions = shared.api.world.ExcavateOptions;
+  /** Options for pattern-based excavation. Same shape as {@link grid.ExcavateOptions}. */
+  export type PatternExcavateOptions = grid.ExcavateOptions;
 }

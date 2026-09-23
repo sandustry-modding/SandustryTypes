@@ -5,57 +5,90 @@
  *
  * @module
  */
-import { CellCoordinates } from "../../shared/player";
-import { shared } from "../../shared";
+import type { CellCoordinates } from "../../shared/player";
+import type { CellId, LooseString, TaggedNumber } from "../../shared/nominal";
+import type { CellType as CellTypeEnum } from "../enums/index";
 import type { elements } from "./elements";
 
 export namespace terrains {
-  /** Return the mod string id for a numeric terrain type. */
-  export import getIdByType = shared.api.terrains.getIdByType;
-  /** Resolve a terrain string id to its cell type number. */
-  export import getTypeById = shared.api.terrains.getTypeById;
+  /**
+   * Return the mod string id for a numeric terrain type.
+   *
+   * @param terrainType - Numeric terrain cell type.
+   *
+   */
+  export function getIdByType(terrainType: TerrainType): TerrainId;
+
+  /**
+   * Resolve a terrain string id to a numeric cell type.
+   *
+   * @param terrainId - Mod-registered or built-in terrain id.
+   *
+   */
+  export function getTypeById(terrainId: TerrainId): TerrainType;
+
   /**
    * @deprecated Use {@link getTypeById} instead.
    *
    */
-  export import getTypeFromId = shared.api.terrains.getTypeFromId;
-  /** Look up the definition for a terrain type. */
-  export import getDefinitionByType = shared.api.terrains.getDefinitionByType;
+  export function getTypeFromId(terrainId: TerrainId): TerrainType;
+
+  /**
+   * Look up the definition for a terrain type.
+   *
+   * @param terrainType - Numeric terrain cell type.
+   *
+   */
+  export function getDefinitionByType(terrainType: TerrainType): TerrainDefinition | undefined;
+
   /** Return terrain cell type at a cell, or null. */
-  export import getTypeAtCell = shared.api.terrains.getTypeAtCell;
+  export function getTypeAtCell(...args: CellCoordinates): TerrainType | null;
+
   /** Return terrain data at a cell, or null. */
-  export import getDataAtCell = shared.api.terrains.getDataAtCell;
+  export function getDataAtCell(...args: CellCoordinates): TerrainDataAtCell | null;
+
   /** Return true when any terrain exists at the cell. */
-  export import isAtCell = shared.api.terrains.isAtCell;
+  export function isAtCell(...args: CellCoordinates): boolean;
+
   /** Return true when terrain at the cell matches a string id. */
-  export import isTypeAtCell = shared.api.terrains.isTypeAtCell;
+  export function isTypeAtCell(...args: [...CellCoordinates, terrainId: TerrainId]): boolean;
+
   /** Return true when a cell id represents terrain. */
-  export import isCellIdTerrain = shared.api.terrains.isCellIdTerrain;
+  export function isCellIdTerrain(cellId: CellId): boolean;
+
   /** Apply damage to terrain at a cell. */
-  export import damageAtCell = shared.api.terrains.damageAtCell;
+  export function damageAtCell(...args: [...CellCoordinates, damage: number]): void;
+
   /** Melt terrain at a cell (for example ice to water). */
-  export import meltAtCell = shared.api.terrains.meltAtCell;
-  /** Options for terrain create, replace, and remove calls. */
-  export import TerrainMutationOptions = shared.api.terrains.TerrainMutationOptions;
-  /** Numeric terrain cell type handle. */
-  export import TerrainType = shared.api.terrains.TerrainType;
-  /** Mod or built-in terrain string id. */
-  export import TerrainId = shared.api.terrains.TerrainId;
-  /** Type handle or string id accepted by mutation helpers. */
-  export import TerrainRef = shared.api.terrains.TerrainRef;
-  /** Terrain cell data returned by {@link getDataAtCell}. */
-  export import TerrainDataAtCell = shared.api.terrains.TerrainDataAtCell;
+  export function meltAtCell(...args: CellCoordinates): void;
 
   /**
    * Terrain definition shape with typed element interactions.
    *
    */
-  export type TerrainDefinition = Omit<
-    shared.api.terrains.TerrainDefinition,
-    "interactions"
-  > & {
+  export type TerrainDefinition = {
+    /** Unique mod-scoped terrain id. */
+    id: string;
+    /** i18n key for the terrain display name. */
+    nameKey?: string;
+    /** Default terrain hit points. */
+    hp?: number;
+    /** Material id used for rendering. Must be > obstacle breakpoint and < 150. */
+    materialId?: number;
+    /** UI/meta color as 0xRRGGBB. */
+    metaColor?: number;
+    /** Base terrain color as HSL components. */
+    colorHSL?: [number, number, number];
+    /** Tool item ids required to excavate this terrain. */
+    excavationRequirements?: readonly string[];
     /** Tooltip interactions shown for this terrain. */
     interactions?: readonly elements.Interaction[];
+    /** Default element drop when the terrain is destroyed. */
+    output?: {
+      elementType: elements.ElementType;
+      chance: number;
+    };
+    [key: string]: unknown;
   };
 
   /**
@@ -162,4 +195,50 @@ export namespace terrains {
    *
    */
   export function setHpAtCellWhenIdle(...args: [...CellCoordinates, hitPoints: number]): void;
+
+  /**
+   * Terrain cell data returned by {@link getDataAtCell}.
+   *
+   */
+  export type TerrainDataAtCell = {
+    /** Numeric terrain cell type. */
+    cellType: TerrainType;
+    /**
+     * Current hit points, or null when the terrain has no hp.
+     *
+     */
+    hitPoints: number | null;
+    /**
+     * @deprecated Use {@link hitPoints} instead.
+     *
+     */
+    hp?: number | null;
+  };
+
+  /**
+   * Options for terrain create, replace, or remove calls.
+   *
+   */
+  export type TerrainMutationOptions = {
+    /** Skip shadow updates around the changed cell. */
+    skipShadow?: boolean;
+  };
+
+  /**
+   * Numeric terrain / {@link CellTypeEnum} handle.
+   *
+   */
+  export type TerrainType = CellTypeEnum | TaggedNumber<"terrainType">;
+
+  /**
+   * Mod or built-in terrain string id.
+   *
+   */
+  export type TerrainId = LooseString<never>;
+
+  /**
+   * Type handle or string id accepted by mutation helpers.
+   *
+   */
+  export type TerrainRef = TerrainType | TerrainId;
 }

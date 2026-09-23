@@ -1,16 +1,54 @@
-import { shared } from "../../shared";
+import type { Vector2 } from "../../shared/player";
 
 /**
  * `sandkit.api.effects` — visual effects, particles, and lasers at world positions.
  * Main thread only. Temporary lights live under {@link lights.temporary}.
  */
 export namespace effects {
-  /** Options for generic screen effects. */
-  export import EffectOptions = shared.api.effects.EffectOptions;
+  /** Generic duration and radius options for world effects. */
+  export type EffectOptions = {
+    duration?: number;
+    maxRadius?: number;
+    intensity?: number;
+  };
+
   /** Options for temporary lights. */
-  export import TemporaryLightOptions = shared.api.effects.TemporaryLightOptions;
-  /** Options for particle effects. */
-  export import ParticleEffectOptions = shared.api.effects.ParticleEffectOptions;
+  export type TemporaryLightOptions = {
+    brightness?: number;
+    duration?: number;
+    durationMs?: number;
+    size?: number;
+    color?: [number, number, number, number];
+    /** Light decay rate after spawn. */
+    decay: number;
+    unclamped?: boolean;
+    skipDedup?: boolean;
+    useLightZones?: boolean;
+    noopIfFull?: boolean;
+    priority?: number;
+    /** Dedupe key when the light pool is full or dedup is enabled. */
+    dedupKey: string;
+  };
+
+  /** Options for {@link createParticlesAtWorld}. */
+  export type ParticleEffectOptions = {
+    count?: number;
+    velocity?: Vector2;
+    minSpeed?: number;
+    maxSpeed?: number;
+    /** Hex code. No alpha. */
+    color?: number;
+    minSize?: number;
+    maxSize?: number;
+    minLifetime?: number;
+    maxLifetime?: number;
+    background?: boolean;
+    imageName?: string;
+    fadeOutOnly?: boolean;
+    fadeStart?: number;
+    fadeEnd?: number;
+    damp?: number;
+  };
 
   /**
    * Creates a named screen effect at world coordinates.
@@ -54,7 +92,11 @@ export namespace effects {
    * ```
    *
    */
-  export import createParticlesAtWorld = shared.api.effects.createParticlesAtWorld;
+  export function createParticlesAtWorld(
+    worldX: number,
+    worldY: number,
+    options?: ParticleEffectOptions,
+  ): void;
 
   /**
    * @deprecated Use {@link lights.temporary.createAtWorld} instead.

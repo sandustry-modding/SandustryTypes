@@ -1,5 +1,6 @@
-import type { CellCoordinates, Vector2 } from "../../shared/player";
-import { shared } from "../../shared";
+import { elements as MainElements } from "../../sandkit/api/elements";
+import type { CellCoordinates, Vector2 } from "../../shared/geometry";
+import type { CellId } from "../../shared/nominal";
 
 /**
  * Worker-thread `sandkit.api.elements` — shared reads plus immediate grid mutations.
@@ -13,49 +14,135 @@ import { shared } from "../../shared";
  */
 export namespace elements {
   /** Numeric id for a registered element type. */
-  export import ElementType = shared.api.elements.ElementType;
+  export type ElementType = MainElements.ElementType;
   /** Mod or built-in element string id. */
-  export import ElementId = shared.api.elements.ElementId;
+  export type ElementId = MainElements.ElementId;
   /** Type handle or string id accepted by lookup helpers. */
-  export import ElementRef = shared.api.elements.ElementRef;
+  export type ElementRef = MainElements.ElementRef;
   /** Matter category for element physics behavior. */
-  export import MatterType = shared.api.elements.MatterType;
+  export import MatterType = MainElements.MatterType;
   /** Full definition used to register a custom element. */
-  export import ElementDefinition = shared.api.elements.ElementDefinition;
+  export type ElementDefinition = MainElements.ElementDefinition;
   /** Options for {@link createAtCell} and replace helpers. */
-  export import ElementCreateOptions = shared.api.elements.ElementCreateOptions;
+  export type ElementCreateOptions = MainElements.ElementCreateOptions;
   /** Options for {@link removeAtCell}. */
-  export import ElementRemovalOptions = shared.api.elements.ElementRemovalOptions;
+  export type ElementRemovalOptions = MainElements.ElementRemovalOptions;
 
-  /** Returns the mod string id for a numeric element type. */
-  export import getIdByType = shared.api.elements.getIdByType;
-  /** Resolves a string element id to its numeric type. */
-  export import getTypeById = shared.api.elements.getTypeById;
+  /**
+   * Return the mod string id for a numeric element type.
+   *
+   * @param elementType - Numeric element type.
+   *
+   */
+  export function getIdByType(elementType: ElementType): ElementId;
+
+  /**
+   * Resolve a mod element string id to a type handle.
+   *
+   * @param elementId - Mod-registered element id.
+   *
+   */
+  export function getTypeById(elementId: ElementId): ElementType;
+
   /**
    * @deprecated Use {@link getTypeById} instead.
    *
    */
-  export import getTypeFromId = shared.api.elements.getTypeFromId;
-  /** Returns the definition for an element type. */
-  export import getDefinitionByType = shared.api.elements.getDefinitionByType;
-  /** Returns the element type at a cell, or null. */
-  export import getTypeAtCell = shared.api.elements.getTypeAtCell;
-  /** Returns the resolved element type at a cell, or null. */
-  export import getResolvedTypeAtCell = shared.api.elements.getResolvedTypeAtCell;
-  /** Returns the resolved element type from a cell id, or null. */
-  export import getResolvedTypeFromCellId = shared.api.elements.getResolvedTypeFromCellId;
-  /** Returns element info at a cell, or null. */
-  export import getInfoAtCell = shared.api.elements.getInfoAtCell;
-  /** Returns the matter type at a cell, or null. */
-  export import getMatterTypeAtCell = shared.api.elements.getMatterTypeAtCell;
-  /** Returns true when the cell contains the given element type or id. */
-  export import isTypeAtCell = shared.api.elements.isTypeAtCell;
-  /** Returns true when the element at the cell is free-falling. */
-  export import isFreeFallingAtCell = shared.api.elements.isFreeFallingAtCell;
-  /** Returns particle velocity at a cell, or null. */
-  export import getVelocityAtCell = shared.api.elements.getVelocityAtCell;
-  /** Returns a data field value at a cell, or null. */
-  export import getDataFieldAtCell = shared.api.elements.getDataFieldAtCell;
+  export function getTypeFromId(elementId: ElementId): ElementType;
+
+  /**
+   * Look up the definition for a type handle.
+   *
+   * @param elementType - Numeric element type.
+   *
+   */
+  export function getDefinitionByType(elementType: ElementType): ElementDefinition | undefined;
+
+  /**
+   * Return the raw element type at a cell (may differ from resolved type).
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function getTypeAtCell(...args: CellCoordinates): ElementType | null;
+
+  /**
+   * Return the resolved element type after overlays and particles.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function getResolvedTypeAtCell(...args: CellCoordinates): ElementType | null;
+
+  /**
+   * Return the resolved element type from a packed cell id.
+   *
+   * @param cellId - Packed cell id from {@link grid.getCellIdAtCell}.
+   *
+   */
+  export function getResolvedTypeFromCellId(cellId: CellId): ElementType | null;
+
+  /**
+   * Return element index, particle flag, and ids at a cell.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function getInfoAtCell(
+    ...args: CellCoordinates
+  ): { elementType: ElementType; isParticle: boolean; cellId: CellId; elementIndex: number } | null;
+
+  /**
+   * Return the matter category at a cell, or null when empty.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function getMatterTypeAtCell(...args: CellCoordinates): MatterType | null;
+
+  /**
+   * Return true when the cell holds the given element type or id.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   * @param elementTypeOrId - Numeric type or string id.
+   *
+   */
+  export function isTypeAtCell(...args: [...CellCoordinates, elementTypeOrId: ElementRef]): boolean;
+
+  /**
+   * Return true when the element at the cell is falling.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function isFreeFallingAtCell(...args: CellCoordinates): boolean;
+
+  /**
+   * Return per-cell velocity for moving elements.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   *
+   */
+  export function getVelocityAtCell(...args: CellCoordinates): Vector2 | null;
+
+  /**
+   * Read element data field 1–4 at a cell.
+   *
+   * @param cellX - Grid column of the target cell.
+   * @param cellY - Grid row of the target cell.
+   * @param fieldNumber - Data field index (1–4).
+   *
+   */
+  export function getDataFieldAtCell(
+    ...args: [...CellCoordinates, fieldNumber: 1 | 2 | 3 | 4]
+  ): number | null;
 
   /**
    * Create an element at a cell immediately on this worker.

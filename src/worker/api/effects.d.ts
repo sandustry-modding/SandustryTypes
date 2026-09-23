@@ -1,4 +1,4 @@
-import { shared } from "../../shared";
+import type { effects as MainEffects } from "../../sandkit/api/effects";
 
 /**
  * Worker-thread `sandkit.api.effects` — world-space visual effects on workers.
@@ -9,9 +9,9 @@ import { shared } from "../../shared";
  */
 export namespace effects {
   /** Options for generic screen effects. */
-  export import EffectOptions = shared.api.effects.EffectOptions;
+  export type EffectOptions = MainEffects.EffectOptions;
   /** Options for particle effects. */
-  export import ParticleEffectOptions = shared.api.effects.ParticleEffectOptions;
+  export type ParticleEffectOptions = MainEffects.ParticleEffectOptions;
 
   /**
    * Spawn a named screen-space or world effect.
@@ -53,5 +53,9 @@ export namespace effects {
    * ```
    *
    */
-  export import createParticlesAtWorld = shared.api.effects.createParticlesAtWorld;
+  export function createParticlesAtWorld(
+    worldX: number,
+    worldY: number,
+    options?: ParticleEffectOptions,
+  ): void;
 }

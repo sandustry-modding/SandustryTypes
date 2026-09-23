@@ -1,4 +1,4 @@
-import type { shared } from "../../shared";
+import type { effects } from "./effects";
 
 /**
  * `sandkit.api.lights` — temporary lights and persistent world lights.
@@ -130,7 +130,7 @@ export namespace lights {
   };
 
   /** Options for temporary lights. */
-  export type TemporaryLightOptions = shared.api.effects.TemporaryLightOptions;
+  export type TemporaryLightOptions = effects.TemporaryLightOptions;
 
   /** Options for persistent world lights. */
   export type PersistentLightOptions = {

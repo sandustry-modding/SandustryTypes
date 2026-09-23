@@ -1,6 +1,6 @@
 import type { LooseString } from "../../shared/nominal";
-import type { structures } from "../../shared/api/structures";
-import type { terrains } from "../../shared/api/terrains";
+import type { structures } from "./structures";
+import type { terrains } from "./terrains";
 import type { SandkitState } from "../engine/state";
 import type { hooks } from "./hooks";
 

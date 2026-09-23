@@ -21,12 +21,12 @@ export * from "./api/lights";
 export * from "../sandkit/api/collector";
 export * from "../sandkit/api/constants";
 export * from "../sandkit/api/patterns";
-export * from "../shared/api/maps";
-export * from "../shared/api/player";
+export * from "./api/maps";
+export * from "./api/player";
 export * from "../sandkit/api/random";
-export * from "../shared/api/structures";
-export * from "../shared/api/terrains";
-export * from "../shared/api/ui";
+export * from "./api/structures";
+export * from "./api/terrains";
+export * from "./api/ui";
 export * from "../sandkit/api/utils";
 
 export type { WorkerSandkitApi } from "./sandkit-api";

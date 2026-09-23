@@ -1,8 +1,8 @@
-import type { elements as sharedElements } from "../../shared/api/elements";
+import type { elements } from "../../sandkit/api/elements";
 import type { CellId, LooseString } from "../../shared/nominal";
 import type { Vector2 } from "../../shared/geometry";
-import type { structures } from "../../shared/api/structures";
-import type { terrains } from "../../shared/api/terrains";
+import type { structures } from "../../sandkit/api/structures";
+import type { terrains } from "../../sandkit/api/terrains";
 
 /**
  * Worker-thread `sandkit.api.hooks` — intercept and modify simulation hook points.
@@ -120,7 +120,7 @@ export namespace hooks {
   /** Guard filter for worker hook registration. */
   export type HookGuard = {
     /** Required for element-scoped intercept hooks and optional on emit. */
-    elementType?: sharedElements.ElementType;
+    elementType?: elements.ElementType;
     /** Required for terrain-scoped event guards; optional on emit. */
     terrainType?: terrains.TerrainType;
   };
@@ -128,7 +128,7 @@ export namespace hooks {
   /** Options for {@link intercept}. */
   export type InterceptHookOptions<K extends InterceptHookId> =
     K extends ElementGuardedInterceptHookId
-      ? { guard: { elementType: sharedElements.ElementType }; priority?: number }
+      ? { guard: { elementType: elements.ElementType }; priority?: number }
       : K extends TerrainGuardedInterceptHookId
         ? { guard: { terrainType: terrains.TerrainType }; priority?: number }
         : { guard?: HookGuard; priority?: number };
@@ -217,44 +217,44 @@ export namespace hooks {
       dt: number;
       elementIndex: number;
       elementData: ElementSimData;
-      elementType: sharedElements.ElementType;
-      matterType: sharedElements.MatterType;
+      elementType: elements.ElementType;
+      matterType: elements.MatterType;
       matterConfig: unknown;
     };
     "element:move": {
       cellId: CellId;
       elementIndex: number;
-      elementType: sharedElements.ElementType;
+      elementType: elements.ElementType;
       source: Vector2;
       destination: Vector2;
     };
     "element:move:blocked": {
       cellId: CellId;
       elementIndex: number;
-      elementType: sharedElements.ElementType;
+      elementType: elements.ElementType;
       position: Vector2;
       collidedAt: Vector2;
       velocity: Vector2;
       collidedWith: ElementBlockedCollider;
-      collidedElementType?: sharedElements.ElementType;
+      collidedElementType?: elements.ElementType;
       collidedCellId: CellId;
       direction: ElementBlockedDirection;
-      linkedElementType?: sharedElements.ElementType;
+      linkedElementType?: elements.ElementType;
     };
     /** @deprecated Use `"element:move:blocked"` instead. */
     "element:blocked": InterceptHookMap["element:move:blocked"];
     "element:duration:expire": {
       elementIndex: number;
-      elementType: sharedElements.ElementType;
+      elementType: elements.ElementType;
       x: number;
       y: number;
     };
     /** @deprecated Use `"element:duration:expire"` instead. */
     "element:duration": InterceptHookMap["element:duration:expire"];
-    "fire:element:burn": Vector2 & { elementType: sharedElements.ElementType };
+    "fire:element:burn": Vector2 & { elementType: elements.ElementType };
     "fire:terrain:burn": Vector2 & {
       terrainType: terrains.TerrainType;
-      sourceElementType: sharedElements.ElementType;
+      sourceElementType: elements.ElementType;
       sourceX: number;
       sourceY: number;
       wasUndamaged: boolean;
@@ -262,7 +262,7 @@ export namespace hooks {
     "shaker:elementOn": Vector2 & {
       cellId: CellId;
       elementIndex: number;
-      elementType: sharedElements.ElementType;
+      elementType: elements.ElementType;
       structureType: structures.StructureType;
     };
   };

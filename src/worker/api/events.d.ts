@@ -1,6 +1,6 @@
-import type { elements as sharedElements } from "../../shared/api/elements";
+import type { elements } from "../../sandkit/api/elements";
 import type { LooseString } from "../../shared/nominal";
-import type { terrains } from "../../shared/api/terrains";
+import type { terrains } from "../../sandkit/api/terrains";
 import type { hooks } from "./hooks";
 
 /**
@@ -67,14 +67,14 @@ export namespace events {
   /** Guard filter for worker events. */
   export type EventGuard = {
     /** Required when subscribing to `element:moved`. Optional on emit. */
-    elementType?: sharedElements.ElementType;
+    elementType?: elements.ElementType;
     /** Required when subscribing to `terrain:updated`. Optional on emit. */
     terrainType?: terrains.TerrainType;
   };
 
   /** Options for {@link on}. */
   export type EventOnOptions<K extends EventId> = K extends "element:moved"
-    ? { guard: { elementType: sharedElements.ElementType } }
+    ? { guard: { elementType: elements.ElementType } }
     : K extends "terrain:updated" | "terrain:update"
       ? { guard: { terrainType: terrains.TerrainType } }
       : { guard?: EventGuard };

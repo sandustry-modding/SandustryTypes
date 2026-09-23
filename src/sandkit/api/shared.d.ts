@@ -5,9 +5,6 @@
  *
  * @module
  */
-// Aliased: this module declares its own `shared` namespace below.
-import { shared as sharedApi } from "../../shared";
-
 export namespace shared {
   /** Shared buffer ensure and lookup. */
   export namespace buffers {
@@ -43,12 +40,37 @@ export namespace shared {
     /**
      * Look up a named shared buffer without creating it.
      *
+     * @param key - Buffer name shared across threads.
+     * @returns The typed array, or `undefined` when the buffer does not exist.
+     *
      */
-    export import get = sharedApi.api.shared.buffers.get;
+    export function get(key: string): SharedArray | undefined;
   }
 
-  /** Opaque shared array backing store. */
-  export import SharedArray = sharedApi.api.shared.SharedArray;
+  /**
+   * Typed array backing a shared buffer.
+   *
+   * Use {@link SharedArrayType} when creating or requiring a buffer. The runtime
+   * returns the matching `*Array` constructor for the configured type.
+   */
+  export type SharedArray =
+    | Uint8Array
+    | Uint16Array
+    | Uint32Array
+    | Int8Array
+    | Int16Array
+    | Int32Array
+    | Float32Array
+    | Float64Array;
+
   /** Discriminator for the underlying typed array kind. */
-  export import SharedArrayType = sharedApi.api.shared.SharedArrayType;
+  export type SharedArrayType =
+    | "uint8"
+    | "uint16"
+    | "uint32"
+    | "int8"
+    | "int16"
+    | "int32"
+    | "float32"
+    | "float64";
 }

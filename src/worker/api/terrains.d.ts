@@ -1,64 +1,24 @@
-import type { CellCoordinates } from "../player";
-import type { CellId, LooseString, TaggedNumber } from "../nominal";
-import type { CellType as CellTypeEnum } from "../../sandkit/enums/index";
-import type { elements } from "./elements";
+import type { CellCoordinates } from "../../shared/player";
+import type { CellId } from "../../shared/nominal";
+import type { terrains as MainTerrains } from "../../sandkit/api/terrains";
 
 /**
- * Shared `sandkit.api.terrains` base — terrain type lookup and cell mutation.
+ * Worker-thread `sandkit.api.terrains` — terrain lookup and immediate cell mutations.
  *
- * Worker-entry mutations are immediate. Main thread defers matching helpers in
+ * Worker-entry mutations apply immediately. Main thread defers matching helpers in
  * `sandkit.api.terrains`.
  *
- * @internal Base namespace reused by main and worker declarations.
+ * @internal Worker subset; not interchangeable with main-thread
+ * `sandkit.api.terrains`.
+ *
  */
 export namespace terrains {
-  /**
-   * Terrain definition shape for {@link register} and {@link getDefinitionByType}.
-   *
-   */
-  export type TerrainDefinition = {
-    /** Unique mod-scoped terrain id. */
-    id: string;
-    /** i18n key for the terrain display name. */
-    nameKey?: string;
-    /** Default terrain hit points. */
-    hp?: number;
-    /** Material id used for rendering. Must be > obstacle breakpoint and < 150. */
-    materialId?: number;
-    /** UI/meta color as 0xRRGGBB. */
-    metaColor?: number;
-    /** Base terrain color as HSL components. */
-    colorHSL?: [number, number, number];
-    /** Tool item ids required to excavate this terrain. */
-    excavationRequirements?: readonly string[];
-    /** Tooltip interactions shown for this terrain. */
-    interactions?: readonly { kind: string; [key: string]: unknown }[];
-    /** Default element drop when the terrain is destroyed. */
-    output?: {
-      elementType: elements.ElementType;
-      chance: number;
-    };
-    [key: string]: unknown;
-  };
-
-  /**
-   * Terrain cell data returned by {@link getDataAtCell}.
-   *
-   */
-  export type TerrainDataAtCell = {
-    /** Numeric terrain cell type. */
-    cellType: TerrainType;
-    /**
-     * Current hit points, or null when the terrain has no hp.
-     *
-     */
-    hitPoints: number | null;
-    /**
-     * @deprecated Use {@link hitPoints} instead.
-     *
-     */
-    hp?: number | null;
-  };
+  export type TerrainDefinition = MainTerrains.TerrainDefinition;
+  export type TerrainDataAtCell = MainTerrains.TerrainDataAtCell;
+  export type TerrainMutationOptions = MainTerrains.TerrainMutationOptions;
+  export type TerrainType = MainTerrains.TerrainType;
+  export type TerrainId = MainTerrains.TerrainId;
+  export type TerrainRef = MainTerrains.TerrainRef;
 
   /**
    * Return the mod string id for a numeric terrain type.
@@ -209,31 +169,4 @@ export namespace terrains {
    *
    */
   export function setHpAtCell(...args: [...CellCoordinates, hitPoints: number]): boolean;
-
-  /**
-   * Options for terrain create, replace, or remove calls.
-   *
-   */
-  export type TerrainMutationOptions = {
-    /** Skip shadow updates around the changed cell. */
-    skipShadow?: boolean;
-  };
-
-  /**
-   * Numeric terrain / {@link CellTypeEnum} handle.
-   *
-   */
-  export type TerrainType = CellTypeEnum | TaggedNumber<"terrainType">;
-
-  /**
-   * Mod or built-in terrain string id.
-   *
-   */
-  export type TerrainId = LooseString<never>;
-
-  /**
-   * Type handle or string id accepted by mutation helpers.
-   *
-   */
-  export type TerrainRef = TerrainType | TerrainId;
 }

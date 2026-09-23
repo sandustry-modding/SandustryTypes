@@ -1,6 +1,6 @@
 import { CellCoordinates } from "../../shared/player";
 import type { CellId } from "../../shared/nominal";
-import { shared } from "../../shared";
+import type { elements } from "./elements";
 
 /**
  * `sandkit.api.collector` — collector structure value and pickup handling.
@@ -16,7 +16,7 @@ export namespace collector {
    * Returns the collector value for an element type.
    * @param elementType - Numeric element type id.
    */
-  export function getValueByType(elementType: shared.api.elements.ElementType): number;
+  export function getValueByType(elementType: elements.ElementType): number;
   /**
    * Returns true when the cell id can be collected.
    * @param cellId - Packed cell identifier.

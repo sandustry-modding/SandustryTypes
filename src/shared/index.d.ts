@@ -1,34 +1,15 @@
-import { ui as uiNs } from "./api/ui";
-import { player as playerNs } from "./api/player";
-import { grid as gridNs } from "./api/grid";
-import { world as worldNs } from "./api/world";
-import { terrains as terrainsNs } from "./api/terrains";
-import { structures as structuresNs } from "./api/structures";
-import { elements as elementsNs } from "./api/elements";
-import { maps as mapsNs } from "./api/maps";
-import { effects as effectsNs } from "./api/effects";
-import { shared as sharedBuffersNs } from "./api/shared";
-
+/**
+ * Shared primitives for Sandkit declarations.
+ *
+ * Not a runtime `sandkit` namespace.
+ * Main-thread API modules live under `src/sandkit/api/`.
+ * Worker-thread API modules live under `src/worker/api/`.
+ *
+ * At runtime, `sandkit.api.shared` is the shared-memory buffer API — not this folder.
+ */
 export type {
   CellCoordinates,
   CellXY,
   Size2,
   Vector2,
 } from "./geometry";
-
-/** Shared main/worker API namespaces grouped under `shared.api`. */
-export namespace shared {
-  export namespace api {
-    export import ui = uiNs;
-    export import player = playerNs;
-    export import grid = gridNs;
-    export import world = worldNs;
-    export import terrains = terrainsNs;
-    export import structures = structuresNs;
-    export import elements = elementsNs;
-    export import maps = mapsNs;
-    export import effects = effectsNs;
-    /** Cross-thread shared memory buffers. */
-    export import shared = sharedBuffersNs;
-  }
-}

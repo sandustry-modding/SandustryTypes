@@ -7,25 +7,59 @@
  */
 import type { CSSProperties, ComponentType, ReactNode, RefObject } from "react";
 import type { ComponentId as ComponentIdEnum, KeyBinding } from "../enums/index";
-import { shared } from "../../shared";
 import type { LooseString } from "../../shared/nominal";
 import { action } from "./action";
 import { events } from "./events";
 
 export namespace ui {
   /**
-   * Show a toast message.
+   * Show a short on-screen toast message.
+   *
+   * @param message - Plain text, translation key, or translatable value.
+   * @param options - Cooldown, style, and auto-dismiss options.
    *
    * @example
    * ```ts
    * api.ui.toast({ key: "mods|example|saved" });
    * ```
    */
-  export import toast = shared.api.ui.toast;
-  /** Localized text value for UI strings. */
-  export import LocalizedText = shared.api.ui.LocalizedText;
-  /** Options for toast display. */
-  export import ToastOptions = shared.api.ui.ToastOptions;
+  export function toast(message: LocalizedText, options?: ToastOptions): void;
+
+  /** Plain text, translation key object, or i18n translatable value. */
+  export type LocalizedText = string | I18nTextKey | I18nTranslatable;
+
+  /** Translation key with optional parameter substitution. */
+  export type I18nTextKey = {
+    /** Namespaced translation key (for example `ui|save|save`). */
+    key: string;
+    /** Values merged into the translated string. */
+    params?: Record<string, string | number>;
+  };
+
+  /** Value returned by `sandkit.api.i18n.translatable`. */
+  export type I18nTranslatable = {
+    __translatable: true;
+    key: string;
+    fallback: string;
+  };
+
+  /** Cooldown, style, and auto-dismiss options for {@link toast}. */
+  export type ToastOptions = {
+    /** Minimum ms before the same toast can show again. */
+    cooldown?: number;
+    /**
+     * Dedupe key paired with {@link ToastOptions.cooldown}.
+     * Defaults to the message string or `message.key`.
+     */
+    cooldownKey?: string;
+    /**
+     * Auto-dismiss delay in ms. Default `5000`.
+     * Set `false` to keep the toast until another toast replaces it.
+     */
+    duration?: number | false;
+    /** Visual style applied to the toast body. */
+    variant?: "danger" | "hint" | "hole" | (string & {});
+  };
 
   /**
    * Update a registered UI component by id.

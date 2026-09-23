@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Remove `shared.api` barrel types under `src/shared/api/`. `src/shared/` is primitives only; main and worker Sandkit API declarations live in `src/sandkit/api/` and `src/worker/api/` respectively.
 - Public declarations use `type` aliases instead of `interface` (except ambient `Window` merge).
 - `electron.platform.workshop` methods use `steam.js` JSDoc result objects instead of `Promise<unknown>`.
 - `electron.platform.cloudSync` returns `{ synced, uploaded, error? }`.

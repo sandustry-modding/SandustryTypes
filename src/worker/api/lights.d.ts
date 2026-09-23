@@ -1,4 +1,4 @@
-import type { shared } from "../../shared";
+import type { effects } from "../../sandkit/api/effects";
 
 /**
  * Worker-thread `sandkit.api.lights` — temporary visual effect lights.
@@ -12,7 +12,7 @@ export namespace lights {
    */
   export namespace temporary {
     /** Options for {@link createAtWorld}. */
-    export type TemporaryLightOptions = shared.api.effects.TemporaryLightOptions;
+    export type TemporaryLightOptions = effects.TemporaryLightOptions;
 
     /** Handle returned by {@link createAtWorld}. */
     export type TemporaryLightHandle = {
