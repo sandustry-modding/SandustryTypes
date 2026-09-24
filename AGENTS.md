@@ -27,7 +27,7 @@ Do **not** add types or docs for:
 | `@modkit/*`, modkit helpers, template-only patches | [SandustryModTemplate](https://github.com/sandustry-modding/SandustryModTemplate) / `docs/modkit/` |
 | Mod template npm scripts, dev workflow, release tooling | Template root `README.md` |
 | Third-party mod APIs, options, or behavior | That mod's repo |
-| Sample mod tutorials | [SandustryExamples](https://github.com/sandustry-modding/SandustryExamples) |
+| Sample mod tutorials | [SandustryModTemplate `src/examples`](https://github.com/sandustry-modding/SandustryModTemplate/tree/main/src/examples) |
 | Guides, site chrome, OKF | Docs site clone |
 
 Do not document individual mods in this repo.
